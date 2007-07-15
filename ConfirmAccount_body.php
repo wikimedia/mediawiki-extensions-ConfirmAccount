@@ -424,7 +424,8 @@ class ConfirmAccountsPage extends SpecialPage
 			# Check if the user already confirmed email address
 			$dbw = wfGetDB( DB_MASTER );
 			$dbw->update( 'user', 
-				array( 'user_email_authenticated' => $row->acr_email_authenticated ),
+				array( 'user_email_authenticated' => $row->acr_email_authenticated,
+					'user_email_token_expires' => $row->acr_email_token_expires ),
 				array( 'user_id' => $user->getID() ),
 				__METHOD__ );
 				
