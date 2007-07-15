@@ -68,7 +68,7 @@ This confirmation code will expire at $4.',
 	'confirmaccount-real'   => 'Name',
 	'confirmaccount-email'  => 'Email',
 	'confirmaccount-bio'    => 'Biography',
-	'confirmaccount-review' => 'Review this request in detail',
+	'confirmaccount-review' => 'Approve/Reject',
 	'confirmacount-confirm' => 'Use the buttons below to irreversibly confirm this request and create the account or deny it.',
 	'confirmaccount-econf'  => '(confirmed)',
 	'confirmacount-create'  => 'Confirm (create account)',
@@ -85,4 +85,9 @@ Password: $2
 
 You may have been granted a slightly different name than requested. This could be due to name collisions 
 or policy reasons. Also, please immediatly login, go to your preferences options, and set a new password.',
+	'confirmaccount-email-body2' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
+
+There are several ways this can happen. You may not have filled out the form correctly, did not provide adequate 
+length in your responses, or otherwise failed to meet some policy criteria. There may be contact lists on site that 
+you can use if you want to know more about user account policy.',
 );

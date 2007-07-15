@@ -359,7 +359,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$this->acrID = $wgRequest->getIntOrNull( 'acrid' );
 		# For renaming to alot for collisions with other local requests
 		# that were added to some global $wgAuth system first.
-		$this->mUsername = $wgRequest->getIntOrNull( 'wpNewName' );
+		$this->mUsername = $wgRequest->getText( 'wpNewName' );
 
 		$this->skin = $wgUser->getSkin();
 
@@ -381,46 +381,60 @@ class ConfirmAccountsPage extends SpecialPage
 			$wgOut->returnToMain( null, $wgTitle );
 			return;
 		}
-		
+
 		if( $action == 'reject' ) {
+			# Make proxy user to email a rejection message :(
+			$u = User::newFromName( $row->acr_name, 'creatable' );
+			$u->setEmail( $row->acr_email );
+			$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+				wfMsg( 'confirmaccount-email-body2', $u->getName() ) );
+			if( WikiError::isError( $result ) ) {
+				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+				$this->showForm( $error );
+				return false;
+			}
+
 			$dbw = wfGetDB( DB_MASTER );
 			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
-			
+
 			$this->showSuccess( $action );
 		} else if( $action == 'accept' ) {
 			global $wgMakeUserPageFromBio;
 			# Check if the name is to be overridden
 			$name = $this->mUsername ? trim($this->mUsername) : $row->acr_name;
-			# Now create a dummy user ($u) and check if it is valid
-			$u = User::newFromName( $name, 'creatable' );	
-			if( is_null( $u ) ) {
+			# Now create user and check if the name is valid
+			$user = User::newFromName( $name, 'creatable' );	
+			if( is_null( $user ) ) {
 				$this->showForm( wfMsgHtml('noname') );
 				return;
 			}
 			# Check if already in use
-			if( 0 != $u->idForName() || $wgAuth->userExists( $u->getName() ) ) {
+			if( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
 				$this->showForm( wfMsgHtml('userexists') );
 				return;
 			}
-			
+			# Make a random password
 			$pass = User::randomPassword();
-			if( !$wgAuth->addUser( $u, $pass, $row->acr_email, $row->acr_real_name ) ) {
-				$this->showForm( wfMsg( 'externaldberror' ) );
-				return false;
-			}
-			# Now that name is validated, create the stub account
-			$user = User::createNew( $name );
 			# VERY important to set email now. Otherwise user will have to request
 			# a new password at the login screen...
 			$user->setEmail( $row->acr_email );
-			$user->setRealName( $row->acr_real_name );
-			$user->setPassword( $pass );
-			$user->saveSettings(); // Save this stuff now
-			# Email this password
-			$user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+			$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
 				wfMsg( 'confirmaccount-email-body',
 					$user->getName(),
 					$pass ) );
+			if( WikiError::isError( $result ) ) {
+				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+				$this->showForm( $error );
+				return false;
+			}
+			if( !$wgAuth->addUser( $user, $pass, $row->acr_email, $row->acr_real_name ) ) {
+				$this->showForm( wfMsg( 'externaldberror' ) );
+				return false;
+			}
+			# Set password and realname
+			$user->setPassword( $pass );
+			$user->setRealName( $row->acr_real_name );
+			$user->saveSettings(); // Save this into the DB
 			# Check if the user already confirmed email address
 			$dbw = wfGetDB( DB_MASTER );
 			$dbw->update( 'user', 
@@ -428,17 +442,16 @@ class ConfirmAccountsPage extends SpecialPage
 					'user_email_token_expires' => $row->acr_email_token_expires ),
 				array( 'user_id' => $user->getID() ),
 				__METHOD__ );
-				
 			# OK, now remove the request
 			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
-				
+
 			wfRunHooks( 'AddNewAccount', array( $user ) );
 			# Start up the user's brand new userpage
 			if( $wgMakeUserPageFromBio ) {
 				$userpage = new Article( $user->getUserPage() );
 				$userpage->doEdit( $row->acr_bio, wfMsg('confirmaccount-summary'), EDIT_NEW );
 			}
-			
+
 			$this->showSuccess( $action, $user->getName() );
 		}
 	}
@@ -472,14 +485,14 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
 		$form .= "<tr><td>".wfMsgHtml('requestaccount-email')."</td>";
-		$form .= "<td>".$row->acr_email.$econf."</td></tr>\n";
+		$form .= "<td>".htmlspecialchars($row->acr_email).$econf."</td></tr>\n";
 		$form .= '</table></fieldset>';
 		
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsg('requestacount-legend2') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".wfMsgHtml('requestaccount-real')."</td>";
-		$form .= "<td>".$row->acr_real_name."</td></tr>\n";
+		$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
 		$form .= '</table cellpadding=\'4\'>';
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."</p>";
 		$form .= "<p><textarea tabindex='1' readonly name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
@@ -491,11 +504,11 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= '<legend>' . wfMsg('requestacount-legend3') . '</legend>';
 		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
-			$row->acr_notes .
+			htmlspecialchars($row->acr_notes) .
 			"</textarea></p>";
 		$form .= "<p>".wfMsgHtml('requestaccount-urls')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
-			$row->acr_urls .
+			htmlspecialchars($row->acr_urls) .
 			"</textarea></p>";
 		$form .= '</fieldset>';
 		
@@ -565,12 +578,15 @@ class ConfirmAccountsPage extends SpecialPage
 		$r = '<li>';
 		$r .= $time." ($link)".'<br/>';
 		$r .= '<table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
-		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-name').'</strong></td><td width=\'100%\'>'.$row->acr_name.'</td></tr>';
-		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-real').'</strong></td><td width=\'100%\'>'.$row->acr_real_name.'</td></tr>';
+		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
+			htmlspecialchars($row->acr_name) . '</td></tr>';
+		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-real').'</strong></td><td width=\'100%\'>' .
+			htmlspecialchars($row->acr_real_name) . '</td></tr>';
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
-		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-email').'</strong></td><td width=\'100%\'>'.$row->acr_email.$econf.'</td></tr>';
+		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-email').'</strong></td><td width=\'100%\'>' .
+			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
 		# Truncate this, blah blah...
-		$bio = substr( $row->acr_bio, 0, 500 );
+		$bio = substr( htmlspecialchars($row->acr_bio), 0, 500 );
 		$bio = strlen($bio) < strlen($row->acr_bio) ? "$bio . . ." : $bio;
 		
 		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-bio').'</strong></td><td width=\'100%\'><i>'.$bio.'</i></td></tr>';
