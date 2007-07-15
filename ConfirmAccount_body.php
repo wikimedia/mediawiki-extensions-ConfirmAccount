@@ -413,6 +413,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$this->showForm( wfMsgHtml('userexists') );
 				return;
 			}
+			$user = User::createNew( $name );
 			# Make a random password
 			$pass = User::randomPassword();
 			# VERY important to set email now. Otherwise user will have to request
@@ -449,7 +450,7 @@ class ConfirmAccountsPage extends SpecialPage
 			# Start up the user's brand new userpage
 			if( $wgMakeUserPageFromBio ) {
 				$userpage = new Article( $user->getUserPage() );
-				$userpage->doEdit( $row->acr_bio, wfMsg('confirmaccount-summary'), EDIT_NEW );
+				$userpage->doEdit( $row->acr_bio, wfMsg('confirmaccount-summary'), EDIT_MINOR );
 			}
 
 			$this->showSuccess( $action, $user->getName() );
