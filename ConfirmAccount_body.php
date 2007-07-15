@@ -603,7 +603,10 @@ class ConfirmAccountsPage extends SpecialPage
 
 		$pager = new ConfirmAccountsPager( $this, array(), $this->showRejects );	
 		if ( $pager->getNumRows() ) {
-			$wgOut->addHTML( wfMsgExt('confirmacount-list', array('parse') ) );
+			if( $this->showRejects )
+				$wgOut->addHTML( wfMsgExt('confirmacount-list2', array('parse') ) );
+			else
+				$wgOut->addHTML( wfMsgExt('confirmacount-list', array('parse') ) );
 			$wgOut->addHTML( $pager->getNavigationBar() );
 			$wgOut->addHTML( "<ul>" . $pager->getBody() . "</ul>" );
 			$wgOut->addHTML( $pager->getNavigationBar() );
