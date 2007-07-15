@@ -406,7 +406,7 @@ class ConfirmAccountsPage extends SpecialPage
 				# Request can later be recovered
 				$dbw->update( 'account_requests', 
 					array( 'acr_rejected' => 1, 'acr_user' => $wgUser->getID() ), 
-					array( 'acr_id' => $this->acrID ), 
+					array( 'acr_id' => $this->acrID, 'acr_rejected' => 0 ), 
 					__METHOD__ );
 			} else {
 				$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
