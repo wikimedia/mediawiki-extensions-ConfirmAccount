@@ -586,13 +586,13 @@ class ConfirmAccountsPage extends SpecialPage
 		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-email').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
 		# Truncate this, blah blah...
-		$bio = substr( htmlspecialchars($row->acr_bio), 0, 500 );
-		if(  strlen($bio) < strlen($row->acr_bio) ) {
-			$bio = substr( $bio, 0, strrpos($bio,' ') );
-			$bio .= " . . .";
+		$bio = htmlspecialchars($row->acr_bio);
+		$preview = $wgLang->truncate( $bio, 400 );
+		if( strlen($preview) < strlen($bio) ) {
+			$preview = substr( $preview, 0, strrpos($preview,' ') );
+			$preview .= " . . .";
 		}
-		
-		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-bio').'</strong></td><td width=\'100%\'><i>'.$bio.'</i></td></tr>';
+		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-bio').'</strong></td><td width=\'100%\'><i>'.$preview.'</i></td></tr>';
 		$r .= '</table></li>';
 		
 		return $r;
