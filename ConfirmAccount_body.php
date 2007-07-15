@@ -252,10 +252,10 @@ class RequestAccountPage extends SpecialPage {
 	}
 	
 	/**
-	 * Get a request ID from an emailconfirm token
+	 * Get a request name from an emailconfirm token
 	 *
-	 * @param Sring $code
-	 * @returns Integer $reqID
+	 * @param sring $code
+	 * @returns string $name
 	 */		
 	function requestFromEmailToken( $code ) {	
 		$dbr = wfGetDB( DB_SLAVE );
@@ -378,7 +378,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$row = $this->getRequest();
 		if( !$row ) {
 			$wgOut->addHTML( wfMsg('confirmaccount-badid') );
-			$wgOut->returnToMain( null, $wgTitle );
+			$wgOut->returnToMain( true, $wgTitle );
 			return;
 		}
 
@@ -440,7 +440,8 @@ class ConfirmAccountsPage extends SpecialPage
 			$dbw = wfGetDB( DB_MASTER );
 			$dbw->update( 'user', 
 				array( 'user_email_authenticated' => $row->acr_email_authenticated,
-					'user_email_token_expires' => $row->acr_email_token_expires ),
+					'user_email_token_expires' => $row->acr_email_token_expires,
+					'user_email_token' => $row->acr_email_token ),
 				array( 'user_id' => $user->getID() ),
 				__METHOD__ );
 			# OK, now remove the request
@@ -471,7 +472,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$row = $this->getRequest();
 		if( !$row ) {
 			$wgOut->addHTML( wfMsg('confirmaccount-badid') );
-			$wgOut->returnToMain( null, $wgTitle );
+			$wgOut->returnToMain( true, $wgTitle );
 			return;
 		}
 		
@@ -552,7 +553,7 @@ class ConfirmAccountsPage extends SpecialPage
 		else
 			$wgOut->addWikiText( wfMsg( "confirmaccount-del" ) );
 		
-		$wgOut->returnToMain( null, $wgTitle );
+		$wgOut->returnToMain( true, $wgTitle );
 	}
 
 	function showList() {
