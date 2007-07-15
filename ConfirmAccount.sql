@@ -40,6 +40,8 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   acr_registration char(14) NOT NULL,
   -- Flag for rejected requests
   acr_rejected bool NOT NULL,
+  -- The user who rejected it
+  acr_user int unsigned NOT NULL default 0,
   
   PRIMARY KEY (acr_id),
   UNIQUE KEY (acr_name),

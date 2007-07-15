@@ -23,12 +23,12 @@ $wgExtensionCredits['specialpage'][] = array(
 $wgMakeUserPageFromBio = true;
 $wgSaveRejectedAccountReqs = true;
 $wgRejectedAccountMaxAge = 7 * 24 * 3600; // One week
+# How many requests can an IP make at once?
+$wgAccountRequestThrottle = 1;
 
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['sysop']['createaccount'] = false;
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
-
-$wgAccountRequestThrottle = 1;
 
 # Internationalisation
 require_once( 'ConfirmAccount.i18n.php' );
@@ -57,7 +57,7 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 	$dup = $dbw->selectField( 'account_requests', '1',
 		array( 'acr_name' => $user->getName() ),
 		__METHOD__ );
-		
+
 	if ( $dup ) {
 		$abortError = wfMsgHtml('requestaccount-inuse');
 	}

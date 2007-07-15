@@ -8,7 +8,7 @@ BEGIN;
 CREATE SEQUENCE account_requests_acr_id_seq;
 CREATE TABLE account_requests (
   acr_id                   INTEGER  NOT NULL DEFAULT nextval('account_requests_acr_id_seq'),
-  acr_name                 TEXT     NOT NULL  UNIQUE,
+  acr_name                 TEXT     NOT NULL UNIQUE,
   acr_real_name            TEXT,
   acr_email                TEXT,
   acr_email_token          CHAR(32),
@@ -20,6 +20,7 @@ CREATE TABLE account_requests (
   acr_url                  TEXT,
   acr_ip                   CIDR,
   acr_rejected             BOOL     NOT NULL,
+  acr_user                 INTEGER                REFERENCES mwuser(user_id) ON DELETE SET NULL,
 );
 
 CREATE INDEX acr_rejected_reg ON account_requests (acr_rejected,acr_registration),

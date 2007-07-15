@@ -385,24 +385,28 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 
 		if( $action == 'reject' ) {
+			global $wgSaveRejectedAccountReqs;
 			# Make proxy user to email a rejection message :(
 			$u = User::newFromName( $row->acr_name, 'creatable' );
 			$u->setEmail( $row->acr_email );
-			$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-				wfMsg( 'confirmaccount-email-body2', $u->getName() ) );
-			if( WikiError::isError( $result ) ) {
-				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
-				$this->showForm( $error );
-				return false;
+			# Do not send multiple times
+			if( !$row->acr_rejected ) {
+				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+					wfMsg( 'confirmaccount-email-body2', $u->getName() ) );
+				if( WikiError::isError( $result ) ) {
+					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+					$this->showForm( $error );
+					return false;
+				}
 			}
-
 			$dbw = wfGetDB( DB_MASTER );
 			# Either mark off the row as deleted or wipe it completely
-			global $wgSaveRejectedAccountReqs;
 			if( $wgSaveRejectedAccountReqs ) {
+				global $wgUser;
 				# Request can later be recovered
-				$dbw->update( 'account_requests', array('acr_rejected' => 1), 
-					array('acr_id' => $this->acrID), 
+				$dbw->update( 'account_requests', 
+					array( 'acr_rejected' => 1, 'acr_user' => $wgUser->getID() ), 
+					array( 'acr_id' => $this->acrID ), 
 					__METHOD__ );
 			} else {
 				$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
@@ -566,7 +570,7 @@ class ConfirmAccountsPage extends SpecialPage
 		if( $action == 'accept' )
 			$wgOut->addWikiText( wfMsg( "confirmaccount-acc", $name ) );
 		else
-			$wgOut->addWikiText( wfMsg( "confirmaccount-del" ) );
+			$wgOut->addWikiText( wfMsg( "confirmaccount-rej" ) );
 		
 		$wgOut->returnToMain( true, $wgTitle );
 	}
@@ -624,8 +628,10 @@ class ConfirmAccountsPage extends SpecialPage
 		$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_registration), true );
 		
 		$r = '<li>';
-		$r .= $time." ($link)".'<br/>';
-		$r .= '<table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
+		$r .= $time." ($link)";
+		if( $this->showRejects )
+			$r .= ' <strong>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name ).'</strong>';
+		$r .= '<br/><table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
 		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_name) . '</td></tr>';
 		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-real').'</strong></td><td width=\'100%\'>' .
@@ -667,10 +673,12 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 
 	function getQueryInfo() {
 		$conds = $this->mConds;
+		$conds[] = 'acr_user = user_id';
+		
 		return array(
-			'tables' => array('account_requests'),
+			'tables' => array('account_requests','user'),
 			'fields' => 'acr_id,acr_name,acr_real_name,acr_registration,acr_email,acr_email_authenticated,
-				acr_bio,acr_notes,acr_urls',
+				acr_bio,acr_notes,acr_urls,acr_user,user_name',
 			'conds' => $conds
 		);
 	}
