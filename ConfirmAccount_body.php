@@ -480,8 +480,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$form = "<form name='accountconfirm' action='$action' method='post'><fieldset>";
 		$form .= '<legend>' . wfMsg('requestacount-legend1') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
-		$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpUsername' )."</td>";
-		$form .= "<td>".Xml::input( 'wpUsername', 30, $row->acr_name, array('id' => 'wpUsername') )."</td></tr>\n";
+		$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpNewName' )."</td>";
+		$form .= "<td>".Xml::input( 'wpNewName', 30, $row->acr_name, array('id' => 'wpNewName') )."</td></tr>\n";
 		
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
 		$form .= "<tr><td>".wfMsgHtml('requestaccount-email')."</td>";
