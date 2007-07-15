@@ -49,7 +49,7 @@ This confirmation code will expire at $4.',
 	'acct_request_throttle_hit' => "Sorry, you have already requested $1 accounts. You can't make any more requests.",
 	
 	# Add to Special:Login
-	'requestacount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]].\'\'\'',
+	'requestacount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
 	# Confirm account page
 	'confirmaccounts'       => 'Confirm account requests', 
