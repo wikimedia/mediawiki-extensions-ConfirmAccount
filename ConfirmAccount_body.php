@@ -587,7 +587,10 @@ class ConfirmAccountsPage extends SpecialPage
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
 		# Truncate this, blah blah...
 		$bio = substr( htmlspecialchars($row->acr_bio), 0, 500 );
-		$bio = strlen($bio) < strlen($row->acr_bio) ? "$bio . . ." : $bio;
+		if(  strlen($bio) < strlen($row->acr_bio) ) {
+			$bio = substr( $bio, 0, strrpos($bio,' ') );
+			$bio .= " . . .";
+		}
 		
 		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-bio').'</strong></td><td width=\'100%\'><i>'.$bio.'</i></td></tr>';
 		$r .= '</table></li>';
