@@ -21,6 +21,8 @@ $wgExtensionCredits['specialpage'][] = array(
 
 # Set the person's bio as their userpage?
 $wgMakeUserPageFromBio = true;
+$wgSaveRejectedAccountReqs = true;
+$wgRejectedAccountMaxAge = 7 * 24 * 3600; // One week
 
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['sysop']['createaccount'] = false;

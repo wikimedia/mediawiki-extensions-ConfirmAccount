@@ -27,9 +27,6 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   acr_email_token binary(32),
   -- Expiration date for the user_email_token
   acr_email_token_expires binary(14),
-  -- Timestamp of account registration.
-  -- Accounts predating this schema addition may contain NULL.
-  acr_registration char(14) NOT NULL,
   -- A little about this user
   acr_bio mediumblob default '',
   -- Private info for reviewers to look at when considering request
@@ -39,8 +36,13 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   -- IP address
   acr_ip VARCHAR(255) NULL default '',
   
+  -- Timestamp of account registration.
+  acr_registration char(14) NOT NULL,
+  -- Flag for rejected requests
+  acr_rejected bool NOT NULL,
+  
   PRIMARY KEY (acr_id),
   UNIQUE KEY (acr_name),
-  INDEX (acr_registration),
-  INDEX (acr_email_token)
+  INDEX (acr_email_token),
+  INDEX acr_rejected_reg (acr_rejected,acr_registration)
 ) TYPE=InnoDB;

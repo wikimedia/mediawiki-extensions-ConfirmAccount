@@ -360,6 +360,8 @@ class ConfirmAccountsPage extends SpecialPage
 		# For renaming to alot for collisions with other local requests
 		# that were added to some global $wgAuth system first.
 		$this->mUsername = $wgRequest->getText( 'wpNewName' );
+		# For viewing rejects
+		$this->showRejects = $wgRequest->getBool( 'wpShowRejects' );
 
 		$this->skin = $wgUser->getSkin();
 
@@ -395,7 +397,16 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 
 			$dbw = wfGetDB( DB_MASTER );
-			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
+			# Either mark off the row as deleted or wipe it completely
+			global $wgSaveRejectedAccountReqs;
+			if( $wgSaveRejectedAccountReqs ) {
+				# Request can later be recovered
+				$dbw->update( 'account_requests', array('acr_rejected' => 1), 
+					array('acr_id' => $this->acrID), 
+					__METHOD__ );
+			} else {
+				$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
+			}
 
 			$this->showSuccess( $action );
 		} else if( $action == 'accept' ) {
@@ -466,15 +477,19 @@ class ConfirmAccountsPage extends SpecialPage
 			$wgOut->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
 		}
 		
-		$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) );
-		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
-		
 		$row = $this->getRequest();
-		if( !$row ) {
+		if( !$row || $row->acr_rejected && !$this->showRejects ) {
 			$wgOut->addHTML( wfMsg('confirmaccount-badid') );
 			$wgOut->returnToMain( true, $wgTitle );
 			return;
 		}
+		
+		$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) );
+		if( $this->showRejects ) {
+			$listLink .= ' / '.$this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back2' ),
+				wfArrayToCGI( array('wpShowRejects' => 1 ) ) );
+		}
+		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
 		
 		$wgOut->addWikiText( wfMsg( "confirmacount-text" ) );
 		
@@ -557,16 +572,42 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 
 	function showList() {
-		global $wgOut, $wgUser, $wgLang;
+		global $wgOut, $wgUser, $wgTitle, $wgLang;
+		
+		if( $this->showRejects ) {
+			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) );
+		} else {
+			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back2' ),
+				wfArrayToCGI( array('wpShowRejects' => 1 ) ) );
+		}
+		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
+		
+		global $wgSaveRejectedAccountReqs;
+		if( $wgSaveRejectedAccountReqs ) {
+			# Every 100th view, prune old deleted items
+			wfSeedRandom();
+			if( 0 == mt_rand( 0, 99 ) ) {
+				global $wgRejectedAccountMaxAge;
 
-		$pager = new ConfirmAccountsPager( $this, array() );	
+				$dbw = wfGetDB( DB_MASTER );
+				$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
+				$accountrequests = $dbw->tableName( 'account_requests' );
+				$sql = "DELETE FROM $accountrequests WHERE acr_registration < '{$cutoff}'";
+				$dbw->query( $sql );
+			}
+		}
+
+		$pager = new ConfirmAccountsPager( $this, array(), $this->showRejects );	
 		if ( $pager->getNumRows() ) {
 			$wgOut->addHTML( wfMsgExt('confirmacount-list', array('parse') ) );
 			$wgOut->addHTML( $pager->getNavigationBar() );
 			$wgOut->addHTML( "<ul>" . $pager->getBody() . "</ul>" );
 			$wgOut->addHTML( $pager->getNavigationBar() );
 		} else {
-			$wgOut->addHTML( wfMsgExt('confirmacount-none', array('parse')) );
+			if( $this->showRejects )
+				$wgOut->addHTML( wfMsgExt('confirmacount-none2', array('parse')) );
+			else
+				$wgOut->addHTML( wfMsgExt('confirmacount-none', array('parse')) );
 		}
 	}
 	
@@ -574,7 +615,12 @@ class ConfirmAccountsPage extends SpecialPage
 		global $wgLang, $wgUser;
 
 		$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
-		$link = $this->skin->makeKnownLinkObj( $title, wfMsg('confirmaccount-review'), 'acrid='.$row->acr_id );
+		if( $this->showRejects ) {
+			$link = $this->skin->makeKnownLinkObj( $title, wfMsg('confirmaccount-review'), 
+				'acrid='.$row->acr_id.'&wpShowRejects=1' );
+		} else {
+			$link = $this->skin->makeKnownLinkObj( $title, wfMsg('confirmaccount-review'), 'acrid='.$row->acr_id );
+		}
 		$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_registration), true );
 		
 		$r = '<li>';
@@ -607,9 +653,10 @@ class ConfirmAccountsPage extends SpecialPage
 class ConfirmAccountsPager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
 
-	function __construct( $form, $conds = array() ) {
+	function __construct( $form, $conds = array(), $rejects=0 ) {
 		$this->mForm = $form;
 		$this->mConds = $conds;
+		$this->mConds['acr_rejected'] = $rejects;
 		parent::__construct();
 	}
 	

@@ -18,10 +18,11 @@ CREATE TABLE account_requests (
   acr_bio                  TEXT,
   acr_notes                TEXT,
   acr_url                  TEXT,
-  acr_ip                   CIDR
+  acr_ip                   CIDR,
+  acr_rejected             BOOL     NOT NULL,
 );
 
-CREATE INDEX acr_registration ON account_requests (acr_registration),
+CREATE INDEX acr_rejected_reg ON account_requests (acr_rejected,acr_registration),
 CREATE INDEX acr_email_token ON account_requests (acr_email_token);
 
 COMMIT;
