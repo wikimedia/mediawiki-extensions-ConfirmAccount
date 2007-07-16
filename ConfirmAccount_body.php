@@ -595,7 +595,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$dbw = wfGetDB( DB_MASTER );
 				$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
 				$accountrequests = $dbw->tableName( 'account_requests' );
-				$sql = "DELETE FROM $accountrequests WHERE acr_registration < '{$cutoff}'";
+				$sql = "DELETE FROM $accountrequests WHERE acr_rejected = 1 AND acr_registration < '{$cutoff}'";
 				$dbw->query( $sql );
 			}
 		}
