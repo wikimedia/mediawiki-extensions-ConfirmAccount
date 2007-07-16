@@ -576,17 +576,16 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 
 	function showList() {
-		global $wgOut, $wgUser, $wgTitle, $wgLang;
+		global $wgOut, $wgUser, $wgTitle, $wgLang, $wgSaveRejectedAccountReqs;
 		
 		if( $this->showRejects ) {
 			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) );
-		} else {
+		} else if( $wgSaveRejectedAccountReqs ) {
 			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back2' ),
 				wfArrayToCGI( array('wpShowRejects' => 1 ) ) );
 		}
 		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
-		
-		global $wgSaveRejectedAccountReqs;
+
 		if( $wgSaveRejectedAccountReqs ) {
 			# Every 100th view, prune old deleted items
 			wfSeedRandom();
