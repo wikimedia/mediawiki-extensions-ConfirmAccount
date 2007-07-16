@@ -666,6 +666,7 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		$this->mForm = $form;
 		$this->mConds = $conds;
 		$this->mConds['acr_rejected'] = $rejects;
+		$this->rejects = $rejects;
 		parent::__construct();
 	}
 	
@@ -676,12 +677,17 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 
 	function getQueryInfo() {
 		$conds = $this->mConds;
-		$conds[] = 'acr_user = user_id';
-		
+		$tables = array('account_requests');
+		$fields = array('acr_id','acr_name','acr_real_name','acr_registration',
+			'acr_email','acr_email_authenticated','acr_bio','acr_notes','acr_urls');
+		if( $this->rejects ) {
+			$tables[] = 'user';
+			$conds[] = 'acr_user = user_id';
+			$fields[] = 'user_name';
+		}
 		return array(
-			'tables' => array('account_requests','user'),
-			'fields' => 'acr_id,acr_name,acr_real_name,acr_registration,acr_email,acr_email_authenticated,
-				acr_bio,acr_notes,acr_urls,acr_user,user_name',
+			'tables' => $tables,
+			'fields' => $fields,
 			'conds' => $conds
 		);
 	}
