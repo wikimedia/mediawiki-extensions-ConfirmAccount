@@ -14,7 +14,7 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function execute( $subpage ) {
-		global $wgUser, $wgOut, $wgRequest, $action ;
+		global $wgUser, $wgOut, $wgRequest, $action, $wgUseRealNamesOnly;
 
 		if( $wgUser->isBlocked() ) {
 			$wgOut->blockedPage();
@@ -26,13 +26,20 @@ class RequestAccountPage extends SpecialPage {
 		}
 
 		$this->setHeaders();
-
-		$this->mUsername = $wgRequest->getText( 'wpUsername' );
+		# We may only want real names being used
+		if( $wgUseRealNamesOnly )
+			$this->mUsername =  $wgRequest->getText( 'wpRealName' );
+		else
+			$this->mUsername = $wgRequest->getText( 'wpUsername' );
+		# Grab other info fields...
 		$this->mRealName = $wgRequest->getText( 'wpRealName' );
 		$this->mEmail = $wgRequest->getText( 'wpEmail' );
 		$this->mBio = $wgRequest->getText( 'wpBio' );
 		$this->mNotes = $wgRequest->getText( 'wpNotes' );
 		$this->mUrls = $wgRequest->getText( 'wpUrls' );
+		$this->mCorrect = $wgRequest->getBool('wpCorrect');
+		$this->mToS = $wgRequest->getBool('wpToS');
+		# We may be confirming an email address here
 		$emailCode = $wgRequest->getText( 'wpEmailToken' );
 
 		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
@@ -45,33 +52,38 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function showForm( $msg='' ) {
-		global $wgOut, $wgUser, $wgTitle, $wgAuth;
+		global $wgOut, $wgUser, $wgTitle, $wgAuth, $wgUseRealNamesOnly;
 
-		$wgOut->setPagetitle( wfMsg( "requestaccount" ) );
+		$wgOut->setPagetitle( wfMsgHtml( "requestaccount" ) );
 		# Output failure message
 		if( $msg ) {
 			$wgOut->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
 		}
 		# Give notice to users that are logged in
 		if( $wgUser->getID() ) {
-			$wgOut->addWikiText( wfMsg( "requestaccount-dup" ) );
+			$wgOut->addWikiText( wfMsgHtml( "requestaccount-dup" ) );
 		}
 
-		$wgOut->addWikiText( wfMsg( "requestacount-text" ) );
+		$wgOut->addWikiText( wfMsgHtml( "requestacount-text" ) );
 
 		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
 		$form = "<form name='accountrequest' action='$action' method='post'><fieldset>";
-		$form .= '<legend>' . wfMsg('requestacount-legend1') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestacount-legend1') . '</legend>';
 		$form .= "<p>".wfMsgExt( 'requestacount-acc-text', array('parse') )."</p>\n";
 		$form .= '<table cellpadding=\'4\'>';
-		$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpUsername' )."</td>";
-		$form .= "<td>".Xml::input( 'wpUsername', 30, $this->mUsername, array('id' => 'wpUsername') )."</td></tr>\n";
+		if( $wgUseRealNamesOnly ) {
+			$form .= "<tr><td>".wfMsgHtml('username')."</td>";
+			$form .= "<td>".wfMsgHtml('requestaccount-same')."</td></tr>\n";
+		} else {
+			$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpUsername' )."</td>";
+			$form .= "<td>".Xml::input( 'wpUsername', 30, $this->mUsername, array('id' => 'wpUsername') )."</td></tr>\n";
+		}
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-email'), 'wpEmail' )."</td>";
 		$form .= "<td>".Xml::input( 'wpEmail', 30, $this->mEmail, array('id' => 'wpEmail') )."</td></tr>\n";
 		$form .= '</table></fieldset>';
 
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsg('requestacount-legend2') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestacount-legend2') . '</legend>';
 		$form .= "<p>".wfMsgExt( 'requestaccount-bio-text', array('parse') )."</p>\n";
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-real'), 'wpRealName' )."</td>";
@@ -84,7 +96,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= '</fieldset>';
 
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsg('requestacount-legend3') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestacount-legend3') . '</legend>';
 		$form .= "<p>".wfMsgExt( 'requestacount-ext-text', array('parse') )."</p>\n";
 
 		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
@@ -95,9 +107,6 @@ class RequestAccountPage extends SpecialPage {
 		$form .= "<p><textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
 			$this->mUrls .
 			"</textarea></p>";
-
-		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
-		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .= '</fieldset>';
 
 		# Pseudo template for extensions
@@ -113,8 +122,12 @@ class RequestAccountPage extends SpecialPage {
 				$form .= '</fieldset>';
 			}
 		}
-
-		$form .= "<p>".wfMsgExt( 'requestacount-confirm', array('parse') )."</p>\n";
+		$form .= "<p>".Xml::checkLabel( wfMsgExt( 'requestaccount-correct', 
+			array('parseinline') ), 'wpCorrect', 'wpCorrect', $this->mCorrect )."</p>\n";
+		$form .= "<p>".Xml::checkLabel( wfMsgExt( 'requestaccount-tos', 
+			array('parseinline') ), 'wpToS', 'wpToS', $this->mToS )."</p>\n";
+		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
+		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestacount-submit') ) . "</p></fieldset>";
 		$form .=  '</form>';
 
@@ -145,9 +158,20 @@ class RequestAccountPage extends SpecialPage {
 			$this->showForm( wfMsgHtml('requestaccount-inuse') );
 			return;
 		}
+		# Make sure user agrees to policy here
+		if( !$this->mCorrect || !$this->mToS ) {
+			$this->showForm( wfMsgHtml('requestaccount-agree') );
+			return;
+		}
 		# Validate email address
 		if( !$u->isValidEmailAddr( $this->mEmail ) ) {
 			$this->showForm( wfMsgHtml('invalidemailaddress') );
+			return;
+		}
+		global $wgAccountRequestMinWords;
+		# Check if biography is long enough
+		if( str_word_count($this->mBio) < $wgAccountRequestMinWords ) {
+			$this->showForm( wfMsgHtml('requestaccount-tooshort',$wgAccountRequestMinWords) );
 			return;
 		}
 		# Set some additional data so the AbortNewAccount hook can be
@@ -219,7 +243,7 @@ class RequestAccountPage extends SpecialPage {
 	function throttleHit( $limit ) {
 		global $wgOut;
 
-		$wgOut->addWikiText( wfMsg( 'acct_request_throttle_hit', $limit ) );
+		$wgOut->addWikiText( wfMsgHtml( 'acct_request_throttle_hit', $limit ) );
 	}
 	
 	function confirmEmailToken( $code ) {
@@ -228,8 +252,7 @@ class RequestAccountPage extends SpecialPage {
 		$name = $this->requestFromEmailToken( $code );
 		if( $name !== false ) {
 			$this->confirmEmail( $name );
-			$message = $wgUser->isLoggedIn() ? 'confirmemail_loggedin' : 'confirmemail_success';
-			$wgOut->addWikiText( wfMsg( $message ) );
+			$wgOut->addWikiText( wfMsgHtml( 'request-account-econf' ) );
 			$wgOut->returnToMain();
 			return;
 		}
@@ -362,6 +385,9 @@ class ConfirmAccountsPage extends SpecialPage
 		$this->mUsername = $wgRequest->getText( 'wpNewName' );
 		# For viewing rejects
 		$this->showRejects = $wgRequest->getBool( 'wpShowRejects' );
+		
+		$this->submitType = $wgRequest->getVal( 'wpSubmitType' );
+		$this->reason = $wgRequest->getText( 'wpReason' );
 
 		$this->skin = $wgUser->getSkin();
 
@@ -375,24 +401,29 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 	
 	function doSubmit() {
-		global $wgOut, $wgTitle, $wgAuth, $action;
+		global $wgOut, $wgTitle, $wgAuth;
 
 		$row = $this->getRequest();
 		if( !$row ) {
-			$wgOut->addHTML( wfMsg('confirmaccount-badid') );
+			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
 			$wgOut->returnToMain( true, $wgTitle );
 			return;
 		}
 
-		if( $action == 'reject' ) {
+		if( $this->submitType == 'reject' ) {
 			global $wgSaveRejectedAccountReqs;
 			# Make proxy user to email a rejection message :(
 			$u = User::newFromName( $row->acr_name, 'creatable' );
 			$u->setEmail( $row->acr_email );
 			# Do not send multiple times
 			if( !$row->acr_rejected ) {
-				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsg( 'confirmaccount-email-body2', $u->getName() ) );
+				if( $this->reason ) {
+					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+						wfMsg( 'confirmaccount-email-body4', $u->getName(), $this->reason ) );
+				} else {
+					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+						wfMsg( 'confirmaccount-email-body3', $u->getName() ) );
+				}
 				if( WikiError::isError( $result ) ) {
 					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
 					$this->showForm( $error );
@@ -413,7 +444,7 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 
 			$this->showSuccess( $action );
-		} else if( $action == 'accept' ) {
+		} else if( $this->submitType == 'accept' ) {
 			global $wgMakeUserPageFromBio;
 			# Check if the name is to be overridden
 			$name = $this->mUsername ? trim($this->mUsername) : $row->acr_name;
@@ -434,17 +465,20 @@ class ConfirmAccountsPage extends SpecialPage
 			# VERY important to set email now. Otherwise user will have to request
 			# a new password at the login screen...
 			$user->setEmail( $row->acr_email );
-			$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-				wfMsg( 'confirmaccount-email-body',
-					$user->getName(),
-					$pass ) );
+			if( $this->reason ) {
+				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+					wfMsg( 'confirmaccount-email-body2', $user->getName(), $pass, $this->reason ) );
+			} else {
+				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+					wfMsg( 'confirmaccount-email-body', $user->getName(), $pass ) );
+			}
 			if( WikiError::isError( $result ) ) {
 				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
 				$this->showForm( $error );
 				return false;
 			}
 			if( !$wgAuth->addUser( $user, $pass, $row->acr_email, $row->acr_real_name ) ) {
-				$this->showForm( wfMsg( 'externaldberror' ) );
+				$this->showForm( wfMsgHtml( 'externaldberror' ) );
 				return false;
 			}
 			# Set password and realname
@@ -470,6 +504,8 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 
 			$this->showSuccess( $action, $user->getName() );
+		} else {
+			$this->showForm();
 		}
 	}
 	
@@ -483,7 +519,7 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$row = $this->getRequest();
 		if( !$row || $row->acr_rejected && !$this->showRejects ) {
-			$wgOut->addHTML( wfMsg('confirmaccount-badid') );
+			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
 			$wgOut->returnToMain( true, $wgTitle );
 			return;
 		}
@@ -499,18 +535,18 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
 		$form = "<form name='accountconfirm' action='$action' method='post'><fieldset>";
-		$form .= '<legend>' . wfMsg('requestacount-legend1') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestacount-legend1') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpNewName' )."</td>";
 		$form .= "<td>".Xml::input( 'wpNewName', 30, $row->acr_name, array('id' => 'wpNewName') )."</td></tr>\n";
 		
-		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
+		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsgHtml('confirmaccount-econf').'</strong>' : '';
 		$form .= "<tr><td>".wfMsgHtml('requestaccount-email')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acr_email).$econf."</td></tr>\n";
 		$form .= '</table></fieldset>';
 		
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsg('requestacount-legend2') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestacount-legend2') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".wfMsgHtml('requestaccount-real')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
@@ -522,28 +558,27 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= '</fieldset>';
 		
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsg('requestacount-legend3') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestacount-legend3') . '</legend>';
 		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_notes) .
 			"</textarea></p>";
-		$form .= "<p>".wfMsgHtml('requestaccount-urls')."</p>\n";
-		$form .= "<p><textarea tabindex='1' readonly name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
-			htmlspecialchars($row->acr_urls) .
-			"</textarea></p>";
+		$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
+		$form .= "<p>".$this->parseLinks($row->acr_urls)."</p>";
 		$form .= '</fieldset>';
 		
-		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
-		$form .= Xml::hidden( 'action', 'accept' );
-		$form .= Xml::hidden( 'acrid', $row->acr_id );
-		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
-		
 		$form .= "<p>".wfMsgExt( 'confirmacount-confirm', array('parse') )."</p>\n";
-		$form .= '<div style="float: left">'.Xml::submitButton( wfMsgHtml( 'confirmacount-create') ).'</div>';
-		$form .=  '</form>';
-		# Make deny use a separate form to avoid problems with people pressing enter
-		$form .= "<form name='accountreject' action='$action' method='post'>";
-		$form .= '<div style="float: right">'.Xml::submitButton( wfMsgHtml( 'confirmacount-deny') ) . "</div>";
+		$form .= "<p>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept', array('id' => 'submitCreate') );
+		$form .= ' '.Xml::label( wfMsg('confirmacount-create'), 'submitCreate' )."</p>\n";
+		$form .= "<p>".Xml::radio( 'wpSubmitType', 'reject', $this->submitType=='reject', array('id' => 'submitDeny') );
+		$form .= ' '.Xml::label( wfMsg('confirmacount-deny'), 'submitDeny' )."</p>\n";
+
+		$form .= "<p>".wfMsgHtml('requestaccount-reason')."</p>\n";
+		$form .= "<p><textarea tabindex='1' name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%'>" .
+			htmlspecialchars($this->reason) .
+			"</textarea></p>";
+		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmacount-submit') )."</p>\n";
+		
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
 		$form .= Xml::hidden( 'acrid', $row->acr_id );
@@ -551,6 +586,29 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .=  '</form>';
 		
 		$wgOut->addHTML( $form );
+	}
+	
+	/**
+	 * Extract a list of all recognized HTTP links in the text.
+	 * @param string $text
+	 * @return string $linkList, list of clickable links
+	 */
+	function parseLinks( $text ) {
+		global $wgParser, $wgTitle, $wgUser;
+
+		$linkList = '';
+		$links = explode( "\n", htmlspecialchars($text) );
+		foreach( $links as $link ) {
+			if( strpos($link,'.') )
+				$linkList .= "<li><a href='$link'>$link</a></li>\n";
+		}
+		if( $linkList == '' ) {
+			$linkList = wfMsgHtml( 'confirmaccount-nourls' );
+		} else {
+			$linkList = "<ul>$linkList</ul>";
+		}
+
+		return $linkList;
 	}
 	
 	function getRequest() {
@@ -567,9 +625,9 @@ class ConfirmAccountsPage extends SpecialPage
 		global $wgOut, $wgTitle;
 
 		$wgOut->setPagetitle( wfMsg( "requestaccount" ) );
-		if( $action == 'accept' )
+		if( $this->submitType == 'accept' )
 			$wgOut->addWikiText( wfMsg( "confirmaccount-acc", $name ) );
-		else
+		else if( $this->submitType == 'reject' )
 			$wgOut->addWikiText( wfMsg( "confirmaccount-rej" ) );
 		
 		$wgOut->returnToMain( true, $wgTitle );
@@ -622,10 +680,10 @@ class ConfirmAccountsPage extends SpecialPage
 
 		$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
 		if( $this->showRejects ) {
-			$link = $this->skin->makeKnownLinkObj( $title, wfMsg('confirmaccount-review'), 
+			$link = $this->skin->makeKnownLinkObj( $title, wfMsgHtml('confirmaccount-review'), 
 				'acrid='.$row->acr_id.'&wpShowRejects=1' );
 		} else {
-			$link = $this->skin->makeKnownLinkObj( $title, wfMsg('confirmaccount-review'), 'acrid='.$row->acr_id );
+			$link = $this->skin->makeKnownLinkObj( $title, wfMsgHtml('confirmaccount-review'), 'acrid='.$row->acr_id );
 		}
 		$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_registration), true );
 		
@@ -634,12 +692,12 @@ class ConfirmAccountsPage extends SpecialPage
 		if( $this->showRejects )
 			$r .= ' <strong>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name ).'</strong>';
 		$r .= '<br/><table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
-		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
+		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_name) . '</td></tr>';
-		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-real').'</strong></td><td width=\'100%\'>' .
+		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_real_name) . '</td></tr>';
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
-		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-email').'</strong></td><td width=\'100%\'>' .
+		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-email').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
 		# Truncate this, blah blah...
 		$bio = htmlspecialchars($row->acr_bio);
@@ -648,7 +706,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$preview = substr( $preview, 0, strrpos($preview,' ') );
 			$preview .= " . . .";
 		}
-		$r .= '<tr><td><strong>'.wfMsg('confirmaccount-bio').'</strong></td><td width=\'100%\'><i>'.$preview.'</i></td></tr>';
+		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-bio').'</strong></td><td width=\'100%\'><i>'.$preview.'</i></td></tr>';
 		$r .= '</table></li>';
 		
 		return $r;

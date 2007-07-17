@@ -1,5 +1,5 @@
 <?php
-#(c) Aaron Schulz
+#(c) Aaron Schulz 2007, GPL
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo "ConfirmAccount extension\n";
@@ -21,10 +21,14 @@ $wgExtensionCredits['specialpage'][] = array(
 
 # Set the person's bio as their userpage?
 $wgMakeUserPageFromBio = true;
+# Make the username of the real name?
+$wgUseRealNamesOnly = true;
 $wgSaveRejectedAccountReqs = true;
 $wgRejectedAccountMaxAge = 7 * 24 * 3600; // One week
 # How many requests can an IP make at once?
 $wgAccountRequestThrottle = 1;
+# Minimum biography specs
+$wgAccountRequestMinWords = 50;
 
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['sysop']['createaccount'] = false;
@@ -57,11 +61,9 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 	$dup = $dbw->selectField( 'account_requests', '1',
 		array( 'acr_name' => $user->getName() ),
 		__METHOD__ );
-
 	if ( $dup ) {
 		$abortError = wfMsgHtml('requestaccount-inuse');
 	}
-
 	return true;
 }
 

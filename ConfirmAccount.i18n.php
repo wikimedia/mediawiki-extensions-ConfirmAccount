@@ -12,8 +12,7 @@ $wgConfirmAccountMessages['en'] = array(
 	'requestaccount'          => 'Request account',
 	'requestacount-text'      => '\'\'\'Complete and submit the following form to request a user account\'\'\'. 
 	
-	Your email address will be sent a confirmation message once this request is submited. Please respond by clicking 
-	on the confirmation link provided by the the email.
+	Make sure that you first read the [[{{NS:PROJECT}}:Terms of Service|Terms of Service]] before requesting an account.
 	
 	Once the account is approved, you will be emailed a notification message and the account will be usable at 
 	[[Special:Userlogin]].',
@@ -21,20 +20,27 @@ $wgConfirmAccountMessages['en'] = array(
 	'requestacount-legend1'   => 'User account:',
 	'requestacount-legend2'   => 'Personal information:',
 	'requestacount-legend3'   => 'Other information:',
-	'requestacount-acc-text'  => 'Your password will be emailed to you when your account is confirmed.',
+	'requestacount-acc-text'  => 'Your email address will be sent a confirmation message once this request is submited. Please respond by clicking 
+	on the confirmation link provided by the the email. Also, your password will be emailed to you when your account is created.',
 	'requestacount-ext-text'  => 'The following information is kept private and will only be used for this request. 
-	You may want to list contacts such as fax/phone numbers to aid in identify confirmation.',
+	You may want to list contacts such a phone number to aid in identify confirmation.',
 	'requestaccount-bio-text' => "Your biography will be set as the default content for your userpage. Try to include 
 	any credentials. Make sure you are comfortable publishing such information. Your name can be changed via [[Special:Preferences]].",
 	'requestaccount-real'     => 'Real name:',
+	'requestaccount-same'     => '(same as real name)',
 	'requestaccount-email'    => 'Email address:',
 	'requestaccount-bio'      => 'Personal biography:',
 	'requestaccount-notes'    => 'Additional notes:',
-	'requestaccount-urls'     => 'Websites:',
+	'requestaccount-urls'     => 'List of websites (separated by newlines):',
+	'requestaccount-agree'    => 'You must certify that your real name is correct and that you agree to our Terms of Service.',
 	'requestaccount-inuse'    => 'Username is already in use in a pending account request.',
-	'requestacount-confirm'   => 'Press the submit button below once you have confirmed that all the above is correct.',
+	'requestaccount-tooshort' => 'Your biography must be at least be $1 words long.',
+	'requestaccount-tos'      => 'I have read and agree to abide by the Terms of Service of {{SITENAME}}.',
+	'requestaccount-correct'  => 'I certify that the name I have specified under "Real name" is in fact my own real name.',
 	'requestacount-submit'    => 'Request account',
 	'requestaccount-sent'     => 'Your account request has successfully been sent and is now pending review.',
+	'request-account-econf'   => 'Your e-mail address has been confirmed and will be listed as such in your account 
+	request.',
 	'requestaccount-email-subj' => '{{SITENAME}} e-mail address confirmation',
 	'requestaccount-email-body' => 'Someone, probably you from IP address $1, has requested an
 account "$2" with this e-mail address on {{SITENAME}}.
@@ -73,12 +79,16 @@ This confirmation code will expire at $4.',
 	'confirmaccount-real'   => 'Name',
 	'confirmaccount-email'  => 'Email',
 	'confirmaccount-bio'    => 'Biography',
+	'confirmaccount-urls'   => 'List of websites:',
+	'confirmaccount-nourls' => '(None provided)',
 	'confirmaccount-review' => 'Approve/Reject',
-	'confirmacount-confirm' => 'Use the buttons below to irreversibly confirm this request and create the account or deny it.',
+	'confirmacount-confirm' => 'Use the buttons below to confirm this request or deny it.',
 	'confirmaccount-econf'  => '(confirmed)',
 	'confirmaccount-reject' => '(rejected by [[User:$1|$1]])',
 	'confirmacount-create'  => 'Confirm (create account)',
 	'confirmacount-deny'    => 'Reject (delist)',
+	'requestaccount-reason' => 'Comment (will be included in email):',
+	'confirmacount-submit' => 'Confirm',
 	'confirmaccount-acc'    => 'Account request confirmed successfully; created new user account [[User:$1]].',
 	'confirmaccount-rej'    => 'Account request rejected successfully.',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
@@ -91,9 +101,24 @@ Password: $2
 
 You may have been granted a slightly different name than requested. This could be due to name collisions 
 or policy reasons. Also, please immediatly login, go to your preferences options, and set a new password.',
-	'confirmaccount-email-body2' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
+	'confirmaccount-email-body2' => 'Your request for an account has been approved on {{SITENAME}}.
+
+Account name: $1
+
+Password: $2
+
+$3
+
+You may have been granted a slightly different name than requested. This could be due to name collisions 
+or policy reasons. Also, please immediatly login, go to your preferences options, and set a new password.',
+	'confirmaccount-email-body3' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
 
 There are several ways this can happen. You may not have filled out the form correctly, did not provide adequate 
 length in your responses, or otherwise failed to meet some policy criteria. There may be contact lists on site that 
 you can use if you want to know more about user account policy.',
+	'confirmaccount-email-body4' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
+
+$1
+
+There may be contact lists on site that you can use if you want to know more about user account policy.',
 );
