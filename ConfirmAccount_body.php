@@ -597,8 +597,10 @@ class ConfirmAccountsPage extends SpecialPage
 		global $wgParser, $wgTitle, $wgUser;
 
 		$linkList = '';
-		$links = explode( "\n", htmlspecialchars($text) );
-		foreach( $links as $link ) {
+		$lines = explode( "\n", htmlspecialchars($text) );
+		foreach( $lines as $line ) {
+			$links = explode("\n",$line);
+			$link = $links[0];
 			if( strpos($link,'.') )
 				$linkList .= "<li><a href='$link'>$link</a></li>\n";
 		}
