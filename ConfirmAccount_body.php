@@ -419,10 +419,10 @@ class ConfirmAccountsPage extends SpecialPage
 			if( !$row->acr_rejected ) {
 				if( $this->reason ) {
 					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsg( 'confirmaccount-email-body4', $u->getName(), $this->reason ) );
+						wfMsgExt( 'confirmaccount-email-body4', array('parseinline'), $u->getName(), $this->reason ) );
 				} else {
 					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsg( 'confirmaccount-email-body3', $u->getName() ) );
+						wfMsgExt( 'confirmaccount-email-body3', array('parseinline'), $u->getName() ) );
 				}
 				if( WikiError::isError( $result ) ) {
 					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
@@ -461,28 +461,28 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 			$user = User::createNew( $name );
 			# Make a random password
-			$pass = User::randomPassword();
+			$p = User::randomPassword();
 			# VERY important to set email now. Otherwise user will have to request
 			# a new password at the login screen...
 			$user->setEmail( $row->acr_email );
 			if( $this->reason ) {
 				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsg( 'confirmaccount-email-body2', $user->getName(), $pass, $this->reason ) );
+					wfMsgExt( 'confirmaccount-email-body2', array('parseinline'), $user->getName(), $p, $this->reason ) );
 			} else {
 				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsg( 'confirmaccount-email-body', $user->getName(), $pass ) );
+					wfMsgExt( 'confirmaccount-email-body', array('parseinline'), $user->getName(), $p ) );
 			}
 			if( WikiError::isError( $result ) ) {
 				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
 				$this->showForm( $error );
 				return false;
 			}
-			if( !$wgAuth->addUser( $user, $pass, $row->acr_email, $row->acr_real_name ) ) {
+			if( !$wgAuth->addUser( $user, $p, $row->acr_email, $row->acr_real_name ) ) {
 				$this->showForm( wfMsgHtml( 'externaldberror' ) );
 				return false;
 			}
 			# Set password and realname
-			$user->setPassword( $pass );
+			$user->setPassword( $p );
 			$user->setRealName( $row->acr_real_name );
 			$user->saveSettings(); // Save this into the DB
 			# Check if the user already confirmed email address

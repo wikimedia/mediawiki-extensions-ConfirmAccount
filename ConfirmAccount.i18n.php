@@ -99,8 +99,11 @@ Account name: $1
 
 Password: $2
 
-You may have been granted a slightly different name than requested. This could be due to name collisions 
-or policy reasons. Also, please immediatly login, go to your preferences options, and set a new password.',
+If you have been granted a slightly different name than requested, this could be due to name collisions 
+or policy reasons.
+
+For security reasons you will need to change your password on first login. To login, please go to 
+{{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body2' => 'Your request for an account has been approved on {{SITENAME}}.
 
 Account name: $1
@@ -109,8 +112,11 @@ Password: $2
 
 $3
 
-You may have been granted a slightly different name than requested. This could be due to name collisions 
-or policy reasons. Also, please immediatly login, go to your preferences options, and set a new password.',
+If you have been granted a slightly different name than requested, this could be due to name collisions 
+or policy reasons.
+
+For security reasons you will need to change your password on first login. To login, please go to 
+{{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
 
 There are several ways this can happen. You may not have filled out the form correctly, did not provide adequate 
