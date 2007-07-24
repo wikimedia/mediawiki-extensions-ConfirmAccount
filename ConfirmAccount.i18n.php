@@ -124,7 +124,7 @@ length in your responses, or otherwise failed to meet some policy criteria. Ther
 you can use if you want to know more about user account policy.',
 	'confirmaccount-email-body4' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
 
-$1
+$2
 
 There may be contact lists on site that you can use if you want to know more about user account policy.',
 );
