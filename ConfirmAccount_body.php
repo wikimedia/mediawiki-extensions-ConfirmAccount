@@ -722,10 +722,13 @@ class ConfirmAccountsPage extends SpecialPage
 class ConfirmAccountsPager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
 
-	function __construct( $form, $conds = array(), $rejects=0 ) {
+	function __construct( $form, $conds = array(), $rejects=false ) {
 		$this->mForm = $form;
 		$this->mConds = $conds;
-		$this->mConds['acr_rejected'] = $rejects;
+		if( $rejects )
+			$this->mConds[] = 'acr_rejected IS NULL';
+		else
+			$this->mConds[] = 'acr_rejected IS NOT NULL';
 		$this->rejects = $rejects;
 		parent::__construct();
 	}
