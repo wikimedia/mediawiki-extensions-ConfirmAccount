@@ -692,8 +692,10 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$r = '<li>';
 		$r .= $time." ($link)";
-		if( $this->showRejects )
-			$r .= ' <strong>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name ).'</strong>';
+		if( $this->showRejects ) {
+			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$r .= ' <b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name, $time ).'</b>';
+		}
 		$r .= '<br/><table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
 		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_name) . '</td></tr>';
@@ -726,9 +728,9 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		$this->mForm = $form;
 		$this->mConds = $conds;
 		if( $rejects )
-			$this->mConds[] = 'acr_rejected IS NULL';
-		else
 			$this->mConds[] = 'acr_rejected IS NOT NULL';
+		else
+			$this->mConds[] = 'acr_rejected IS NULL';
 		$this->rejects = $rejects;
 		parent::__construct();
 	}
