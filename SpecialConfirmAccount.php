@@ -31,7 +31,6 @@ $wgAccountRequestThrottle = 1;
 $wgAccountRequestMinWords = 50;
 
 $wgGroupPermissions['*']['createaccount'] = false;
-$wgGroupPermissions['sysop']['createaccount'] = false;
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
 
 # Internationalisation
