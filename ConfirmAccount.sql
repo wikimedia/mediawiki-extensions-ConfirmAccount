@@ -38,8 +38,8 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   
   -- Timestamp of account registration.
   acr_registration char(14) NOT NULL,
-  -- Flag for rejected requests
-  acr_rejected bool NOT NULL,
+  -- Time of rejection (if rejected)
+  acr_rejected binary(14),
   -- The user who rejected it
   acr_user int unsigned NOT NULL default 0,
   

@@ -437,8 +437,8 @@ class ConfirmAccountsPage extends SpecialPage
 				global $wgUser;
 				# Request can later be recovered
 				$dbw->update( 'account_requests', 
-					array( 'acr_rejected' => 1, 'acr_user' => $wgUser->getID() ), 
-					array( 'acr_id' => $this->acrID, 'acr_rejected' => 0 ), 
+					array( 'acr_rejected' => wfTimestampNow(), 'acr_user' => $wgUser->getID() ), 
+					array( 'acr_id' => $this->acrID, 'acr_rejected IS NULL' ), 
 					__METHOD__ );
 			} else {
 				$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
@@ -656,7 +656,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$dbw = wfGetDB( DB_MASTER );
 				$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
 				$accountrequests = $dbw->tableName( 'account_requests' );
-				$sql = "DELETE FROM $accountrequests WHERE acr_rejected = 1 AND acr_registration < '{$cutoff}'";
+				$sql = "DELETE FROM $accountrequests WHERE acr_rejected < '{$cutoff}'";
 				$dbw->query( $sql );
 			}
 		}

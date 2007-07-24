@@ -19,7 +19,7 @@ CREATE TABLE account_requests (
   acr_notes                TEXT,
   acr_url                  TEXT,
   acr_ip                   CIDR,
-  acr_rejected             BOOL     NOT NULL,
+  acr_rejected             TIMESTAMPTZ,
   acr_user                 INTEGER                REFERENCES mwuser(user_id) ON DELETE SET NULL,
 );
 
