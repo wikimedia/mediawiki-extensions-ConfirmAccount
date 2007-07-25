@@ -420,10 +420,10 @@ class ConfirmAccountsPage extends SpecialPage
 			if( !$row->acr_rejected ) {
 				if( $this->reason ) {
 					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsgExt( 'confirmaccount-email-body4', array('parseinline'), $u->getName(), $this->reason ) );
+						wfMsgExt( 'confirmaccount-email-body4', array('parsemag'), $u->getName(), $this->reason ) );
 				} else {
 					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsgExt( 'confirmaccount-email-body3', array('parseinline'), $u->getName() ) );
+						wfMsgExt( 'confirmaccount-email-body3', array('parsemag'), $u->getName() ) );
 				}
 				if( WikiError::isError( $result ) ) {
 					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
@@ -446,7 +446,7 @@ class ConfirmAccountsPage extends SpecialPage
 
 			$this->showSuccess( $action );
 		} else if( $this->submitType == 'accept' ) {
-			global $wgMakeUserPageFromBio;
+			global $wgMakeUserPageFromBio, $wgAutoWelcomeNewUsers;
 			# Check if the name is to be overridden
 			$name = $this->mUsername ? trim($this->mUsername) : $row->acr_name;
 			# Now create user and check if the name is valid
@@ -468,10 +468,10 @@ class ConfirmAccountsPage extends SpecialPage
 			$user->setEmail( $row->acr_email );
 			if( $this->reason ) {
 				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body2', array('parseinline'), $user->getName(), $p, $this->reason ) );
+					wfMsgExt( 'confirmaccount-email-body2', array('parsemag'), $user->getName(), $p, $this->reason ) );
 			} else {
 				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body', array('parseinline'), $user->getName(), $p ) );
+					wfMsgExt( 'confirmaccount-email-body', array('parsemag'), $user->getName(), $p ) );
 			}
 			if( WikiError::isError( $result ) ) {
 				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
@@ -498,10 +498,15 @@ class ConfirmAccountsPage extends SpecialPage
 			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
 
 			wfRunHooks( 'AddNewAccount', array( $user ) );
-			# Start up the user's brand new userpage
+			# Start up the user's (presumedly brand new) userpages
+			# Will not append, so previous content will be blanked
 			if( $wgMakeUserPageFromBio ) {
 				$userpage = new Article( $user->getUserPage() );
 				$userpage->doEdit( $row->acr_bio, wfMsg('confirmaccount-summary'), EDIT_MINOR );
+			}
+			if( $wgAutoWelcomeNewUsers ) {
+				$utalk = new Article( $user->getTalkPage() );
+				$utalk->doEdit( wfMsg('confirmaccount-welc'), wfMsg('confirmaccount-wsum'), EDIT_MINOR );
 			}
 
 			$this->showSuccess( $action, $user->getName() );
@@ -627,7 +632,7 @@ class ConfirmAccountsPage extends SpecialPage
 	function showSuccess( $action, $name = NULL ) {
 		global $wgOut, $wgTitle;
 
-		$wgOut->setPagetitle( wfMsg( "requestaccount" ) );
+		$wgOut->setPagetitle( wfMsgHtml('actioncomplete') );
 		if( $this->submitType == 'accept' )
 			$wgOut->addWikiText( wfMsg( "confirmaccount-acc", $name ) );
 		else if( $this->submitType == 'reject' )

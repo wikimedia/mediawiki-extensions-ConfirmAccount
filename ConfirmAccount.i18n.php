@@ -71,7 +71,7 @@ This confirmation code will expire at $4.',
 	
 	If you simply leave this page without confirming or denying this request, it will remain pending.',
 	'confirmacount-none'    => 'There are currently no pending account requests.',
-	'confirmacount-none2'    => 'There are currently no recently rejected account requests.',
+	'confirmacount-none2'   => 'There are currently no recently rejected account requests.',
 	'confirmaccount-badid'  => 'There is no pending request corresponding to the given ID. It may have already been handled.',
 	'confirmaccount-back'   => 'View pending account list',
 	'confirmaccount-back2'  => 'View recently rejected account list',
@@ -88,19 +88,20 @@ This confirmation code will expire at $4.',
 	'confirmacount-create'  => 'Accept (create account)',
 	'confirmacount-deny'    => 'Reject (delist)',
 	'requestaccount-reason' => 'Comment (will be included in email):',
-	'confirmacount-submit' => 'Confirm',
+	'confirmacount-submit'  => 'Confirm',
 	'confirmaccount-acc'    => 'Account request confirmed successfully; created new user account [[User:$1]].',
 	'confirmaccount-rej'    => 'Account request rejected successfully.',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
+	'confirmaccount-welc'   => "'''Welcome to ''{{SITENAME}}''!''' We hope you will contribute much and well. 
+	You'll probably want to read [[{{NS:PROJECT}}:Getting started|Getting started]]. Again, welcome and have fun! 
+	~~~~",
+	'confirmaccount-wsum'   => 'Welcome!',
 	'confirmaccount-email-subj' => '{{SITENAME}} account request',
 	'confirmaccount-email-body' => 'Your request for an account has been approved on {{SITENAME}}.
 
 Account name: $1
 
 Password: $2
-
-If you have been granted a slightly different name than requested, this could be due to name collisions 
-or policy reasons.
 
 For security reasons you will need to change your password on first login. To login, please go to 
 {{fullurl:Special:Userlogin}}.',
@@ -111,9 +112,6 @@ Account name: $1
 Password: $2
 
 $3
-
-If you have been granted a slightly different name than requested, this could be due to name collisions 
-or policy reasons.
 
 For security reasons you will need to change your password on first login. To login, please go to 
 {{fullurl:Special:Userlogin}}.',

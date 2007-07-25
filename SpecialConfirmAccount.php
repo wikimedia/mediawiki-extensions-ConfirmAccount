@@ -21,6 +21,7 @@ $wgExtensionCredits['specialpage'][] = array(
 
 # Set the person's bio as their userpage?
 $wgMakeUserPageFromBio = true;
+$wgAutoWelcomeNewUsers = true;
 # Make the username of the real name?
 $wgUseRealNamesOnly = true;
 $wgSaveRejectedAccountReqs = true;
