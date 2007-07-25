@@ -16,7 +16,7 @@ CREATE TABLE account_requests (
   acr_registration         TIMESTAMPTZ,
   acr_bio                  TEXT,
   acr_notes                TEXT,
-  acr_url                  TEXT,
+  acr_urls                 TEXT,
   acr_ip                   CIDR,
   acr_rejected             TIMESTAMPTZ,
   acr_user                 INTEGER                REFERENCES mwuser(user_id) ON DELETE SET NULL
