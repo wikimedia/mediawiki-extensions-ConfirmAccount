@@ -16,7 +16,8 @@ if( !$wgEnableEmail ) {
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Confirm user accounts',
 	'description' => 'Gives bureaucrats the ability to confirm account requests',
-	'author' => 'Aaron Schulz'
+	'author' => 'Aaron Schulz',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount'
 );
 
 # Set the person's bio as their userpage?
