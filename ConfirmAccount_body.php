@@ -437,8 +437,10 @@ class ConfirmAccountsPage extends SpecialPage
 				global $wgUser;
 				# Request can later be recovered
 				$dbw->update( 'account_requests', 
-					array( 'acr_rejected' => wfTimestampNow(), 'acr_user' => $wgUser->getID() ), 
-					array( 'acr_id' => $this->acrID, 'acr_rejected IS NULL' ), 
+					array( 'acr_rejected' => wfTimestampNow(), 
+						'acr_user' => $wgUser->getID(),
+						'acr_deleted' => 1 ), 
+					array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ), 
 					__METHOD__ );
 			} else {
 				$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
@@ -733,9 +735,9 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		$this->mForm = $form;
 		$this->mConds = $conds;
 		if( $rejects )
-			$this->mConds[] = 'acr_rejected IS NOT NULL';
+			$this->mConds['acr_deleted'] = 1;
 		else
-			$this->mConds[] = 'acr_rejected IS NULL';
+			$this->mConds['acr_deleted'] = 0;
 		$this->rejects = $rejects;
 		parent::__construct();
 	}

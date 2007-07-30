@@ -38,6 +38,9 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   
   -- Timestamp of account registration.
   acr_registration char(14) NOT NULL,
+  
+  -- Flag for rejected accounts
+  acr_deleted bool NOT NULL,
   -- Time of rejection (if rejected)
   acr_rejected binary(14),
   -- The user who rejected it
@@ -46,5 +49,5 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   PRIMARY KEY (acr_id),
   UNIQUE KEY (acr_name),
   INDEX (acr_email_token),
-  INDEX acr_rejected_reg (acr_rejected,acr_registration)
+  INDEX acr_deleted_reg (acr_deleted,acr_registration)
 ) TYPE=InnoDB;

@@ -18,11 +18,12 @@ CREATE TABLE account_requests (
   acr_notes                TEXT,
   acr_urls                 TEXT,
   acr_ip                   CIDR,
+  acr_deleted              BOOL     NOT NULL,
   acr_rejected             TIMESTAMPTZ,
   acr_user                 INTEGER                REFERENCES mwuser(user_id) ON DELETE SET NULL
 );
 
-CREATE INDEX acr_rejected_reg ON account_requests (acr_rejected,acr_registration);
+CREATE INDEX acr_deleted_reg ON account_requests (acr_deleted,acr_registration);
 CREATE INDEX acr_email_token ON account_requests (acr_email_token);
 
 COMMIT;
