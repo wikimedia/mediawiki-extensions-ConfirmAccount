@@ -28,11 +28,11 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   -- Expiration date for the user_email_token
   acr_email_token_expires binary(14),
   -- A little about this user
-  acr_bio mediumblob default '',
+  acr_bio mediumblob NOT NULL,
   -- Private info for reviewers to look at when considering request
-  acr_notes mediumblob default '',
+  acr_notes mediumblob NOT NULL,
   -- Links to recognize/identify this user, CSV, may not be public
-  acr_urls mediumblob default '',
+  acr_urls mediumblob NOT NULL,
   -- IP address
   acr_ip VARCHAR(255) NULL default '',
   

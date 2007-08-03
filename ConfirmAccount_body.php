@@ -34,9 +34,9 @@ class RequestAccountPage extends SpecialPage {
 		# Grab other info fields...
 		$this->mRealName = $wgRequest->getText( 'wpRealName' );
 		$this->mEmail = $wgRequest->getText( 'wpEmail' );
-		$this->mBio = $wgRequest->getText( 'wpBio' );
-		$this->mNotes = $wgRequest->getText( 'wpNotes' );
-		$this->mUrls = $wgRequest->getText( 'wpUrls' );
+		$this->mBio = $wgRequest->getText( 'wpBio', '' );
+		$this->mNotes = $wgRequest->getText( 'wpNotes', '' );
+		$this->mUrls = $wgRequest->getText( 'wpUrls', '' );
 		$this->mCorrect = $wgRequest->getBool('wpCorrect');
 		$this->mToS = $wgRequest->getBool('wpToS');
 		# We may be confirming an email address here
