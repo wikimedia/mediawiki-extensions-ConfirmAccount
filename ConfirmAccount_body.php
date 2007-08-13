@@ -182,7 +182,7 @@ class RequestAccountPage extends SpecialPage {
 		global $wgCaptcha;
 		if( isset($wgCaptcha) ) {
 			$abortError = '';
-			$wgCaptcha->confirmUserCreate( $u, &$abortError );
+			$wgCaptcha->confirmUserCreate( $u, $abortError );
 			if( $abortError ) {
 				$this->showForm( $abortError );
 				return false;
