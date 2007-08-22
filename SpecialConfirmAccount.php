@@ -36,11 +36,9 @@ $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
 
 # Internationalisation
-require_once( 'ConfirmAccount.i18n.php' );
-
 function efLoadConfirmAccountsMessages() {
 	global $wgMessageCache, $wgConfirmAccountMessages;
-
+	require_once( dirname (__FILE__) . '/ConfirmAccount.i18n.php');
 	foreach( $wgConfirmAccountMessages as $key => $value ) {
 		$wgMessageCache->addMessages( $wgConfirmAccountMessages[$key], $key );
 	}
