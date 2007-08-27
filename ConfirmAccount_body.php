@@ -69,7 +69,7 @@ class RequestAccountPage extends SpecialPage {
 		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
 		$form = "<form name='accountrequest' action='$action' method='post'><fieldset>";
 		$form .= '<legend>' . wfMsgHtml('requestacount-legend1') . '</legend>';
-		$form .= "<p>".wfMsgExt( 'requestacount-acc-text', array('parse') )."</p>\n";
+		$form .= wfMsgExt( 'requestacount-acc-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
 		if( $wgUseRealNamesOnly ) {
 			$form .= "<tr><td>".wfMsgHtml('username')."</td>";
@@ -84,11 +84,11 @@ class RequestAccountPage extends SpecialPage {
 
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('requestacount-legend2') . '</legend>';
-		$form .= "<p>".wfMsgExt( 'requestaccount-bio-text', array('parse') )."</p>\n";
+		$form .= wfMsgExt( 'requestaccount-bio-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-real'), 'wpRealName' )."</td>";
 		$form .= "<td>".Xml::input( 'wpRealName', 35, $this->mRealName, array('id' => 'wpRealName') )."</td></tr>\n";
-		$form .= '</table cellpadding=\'4\'>';
+		$form .= '</table>';
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."</p>";
 		$form .= "<p><textarea tabindex='1' name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
 			$this->mBio .
@@ -97,7 +97,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('requestacount-legend3') . '</legend>';
-		$form .= "<p>".wfMsgExt( 'requestacount-ext-text', array('parse') )."</p>\n";
+		$form .= wfMsgExt( 'requestacount-ext-text', array('parse') )."\n";
 
 		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
@@ -128,7 +128,7 @@ class RequestAccountPage extends SpecialPage {
 			array('parseinline') ), 'wpToS', 'wpToS', $this->mToS )."</p>\n";
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
-		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestacount-submit') ) . "</p></fieldset>";
+		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestacount-submit') ) . "</p>";
 		$form .=  '</form>';
 
 		$wgOut->addHTML( $form );
