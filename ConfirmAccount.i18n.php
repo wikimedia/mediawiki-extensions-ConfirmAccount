@@ -707,6 +707,7 @@ $2
 在這個網站中度提供了聯絡人列表，您可以用去知道更多用戶帳戶方針的資料。',
 );
 
+$wgConfirmAccountMessages['zh'] = $wgConfirmAccountMessages['zh-hans'];
 $wgConfirmAccountMessages['zh-cn'] = $wgConfirmAccountMessages['zh-hans'];
 $wgConfirmAccountMessages['zh-hk'] = $wgConfirmAccountMessages['zh-hant'];
 $wgConfirmAccountMessages['zh-sg'] = $wgConfirmAccountMessages['zh-hans'];
