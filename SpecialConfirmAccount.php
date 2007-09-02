@@ -9,7 +9,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 # This extension needs email enabled!
 # Otherwise users can't get their passwords...
 if( !$wgEnableEmail ) {
-	echo "ConfirmAccount extension requeires \$wgEnableEmail set to true \n";
+	echo "ConfirmAccount extension requires \$wgEnableEmail set to true \n";
 	exit( 1 ) ;
 }
 
