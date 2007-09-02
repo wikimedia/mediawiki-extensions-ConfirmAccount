@@ -212,7 +212,7 @@ class RequestAccountPage extends SpecialPage {
 			return false;
 		}
 		$dbw->commit();
-		# Now request spamming.
+		# No request spamming...
 		# BC: check if isPingLimitable() exists
 		if( $wgAccountRequestThrottle && ( !method_exists($u,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
