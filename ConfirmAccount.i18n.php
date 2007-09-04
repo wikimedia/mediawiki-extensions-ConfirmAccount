@@ -256,6 +256,42 @@ MÃ¶glicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr Ã¼ber die Anforderungen wissen mÃ¶chtest.',
 );
 
+$wgConfirmAccountMessages['hsb'] = array(
+	'requestaccount'              => 'Wuiwarske konto sej adac',
+	'requestaccount-dup'          => '\'\'\'Kedzbu: Sy hio ze zregistrowanym wuiwarskim kontom prizjewjeny.\'\'\'',
+	'requestacount-legend1'       => 'Wuiwarske konto:',
+	'requestacount-legend2'       => 'Wosobinske informacije:',
+	'requestacount-legend3'       => 'Dalše informacije',
+	'requestaccount-real'         => 'Woprawdzite mjeno:',
+	'requestaccount-same'         => '(ka woprawdzite mjeno)',
+	'requestaccount-email'        => 'E-mejlowa adresa:',
+	'requestaccount-bio'          => 'Wosobinska biografija:',
+	'requestaccount-notes'        => 'Pridatne podaca:',
+	'requestaccount-urls'         => 'Liscina webowych sydlow (prez linkowe lamanja wotdzelene)',
+	'requestaccount-inuse'        => 'Wuiwarske mjeno so hio w druhim kontowym poadanju wuiwa.',
+	'requestaccount-tooshort'     => 'Twoja biografija dyrbi znajmjenša $1 slowow dolho byc.',
+	'requestaccount-correct'      => 'Wobkrucam, zo mjeno, kotre sym pod "Woprawdzite mjeno" podal, je woprawdze moje woprawdzite mjeno.',
+	'requestacount-submit'        => 'Wuiwarske konto sej adac',
+	'requestaccount-email-subj'   => '{{SITENAME}} Pruwowanje e-mejloweje adresy',
+	'acct_request_throttle_hit'   => 'Sy hio $1 wuiwarskich kontow poadal, njemóeš sej we wokomiku dalše konta adac.',
+	'confirmaccounts'             => 'Kontowe poadanja potwjerdzic',
+	'confirmaccount-name'         => 'Wuiwarske mjeno',
+	'confirmaccount-real'         => 'Mjeno',
+	'confirmaccount-email'        => 'E-mejl',
+	'confirmaccount-bio'          => 'Biografija',
+	'confirmaccount-urls'         => 'Liscina webowych sydlow:',
+	'confirmaccount-nourls'       => '(Nico podate)',
+	'confirmaccount-review'       => 'Dowolic/Wotpokazac',
+	'confirmaccount-econf'        => '(potwjerdzene)',
+	'confirmaccount-reject'       => '(wot [[Wuiwar:$1|$1]] na $2 wotpokazany)',
+	'confirmacount-create'        => 'Akceptowac (Konto wutworic)',
+	'confirmacount-deny'          => 'Wotpokazac (Poadanje wotstronic)',
+	'requestaccount-reason'       => 'Komentar (zasunje so do mejlki)',
+	'confirmacount-submit'        => 'Potwjerdzic',
+	'confirmaccount-summary'      => 'Wutworja so wuiwarska strona z biografiju noweho wuiwarja.',
+	'confirmaccount-wsum'         => 'Witaj!',
+);
+
 $wgConfirmAccountMessages['nl'] = array(
 	# Request account page
 	'requestaccount'          => 'Gebruiker aanvragen',
