@@ -238,6 +238,14 @@ $2
 ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
 );
 
+$wgConfirmAccountMessages['bcl'] = array(
+	'requestaccount-real'         => 'Totoong pangaran:',
+	'requestaccount-same'         => '(pareho sa  totoong pangaran)',
+	'confirmaccount-real'         => 'Pangaran',
+	'confirmacount-submit'        => 'Kompermaron',
+	'confirmaccount-wsum'         => 'Dagos!',
+);
+
 // German translations (by Rrosenfeld)
 $wgConfirmAccountMessages['de'] = array(
 	# Request account page
