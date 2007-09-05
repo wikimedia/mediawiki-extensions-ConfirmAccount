@@ -404,39 +404,38 @@ $wgConfirmAccountMessages['hsb'] = array(
 );
 
 $wgConfirmAccountMessages['nl'] = array(
-	# Request account page
-	'requestaccount'          => 'Gebruiker aanvragen',
-	'requestacount-text'      => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
+	'requestaccount'              => 'Gebruiker aanvragen',
+	'requestacount-text'          => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
 	
 	Zorg ervoor dat u eerst de [[{{NS:PROJECT}}:Terms of Service|Voorwaarden]] leest voordat u een gebruiker aanvraagt.
 	
 	Als uw gebruiker is goedgekeurd, krijgt u een e-mail en daarna kunt u aanmelden via [[Special:Userlogin]].',
-	'requestaccount-dup'      => '\'\'\'Note bene: U bent al aangemeld met een geregistreede gebruiker.\'\'\'',
-	'requestacount-legend1'   => 'Gebruiker',
-	'requestacount-legend2'   => 'Persoonlijke informatie',
-	'requestacount-legend3'   => 'Overige informatie',
-	'requestacount-acc-text'  => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen. Reageer daar alstublieft op 
+	'requestaccount-dup'          => '\'\'\'Note bene: U bent al aangemeld met een geregistreede gebruiker.\'\'\'',
+	'requestacount-legend1'       => 'Gebruiker',
+	'requestacount-legend2'       => 'Persoonlijke informatie',
+	'requestacount-legend3'       => 'Overige informatie',
+	'requestacount-acc-text'      => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen. Reageer daar alstublieft op 
 	door de klikken op de bevesitigngslink die in de e-mail staat. U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
-	'requestacount-ext-text'  => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
+	'requestacount-ext-text'      => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
 	U kunt contactgegevens zoals een telefoonummer opgeven om te helpen bij het vaststellen van uw identiteit.',
-	'requestaccount-bio-text' => "Uw biografie wordt opgenomen in uw gebruikerspagina. Probeer uw belangrijkste gegevens 
-	op te nemen. Zorg ervoor dat u achter het publiceren van dergelijke informatie staat. U kunt uw naam wijzigen via uw [[Special:Preferences|voorkeuren]].",
-	'requestaccount-real'     => 'Uw naam:',
-	'requestaccount-same'     => '(gelijk aan uw naam)',
-	'requestaccount-email'    => 'E-mailadres:',
-	'requestaccount-bio'      => 'Persoonlijke biografie:',
-	'requestaccount-notes'    => 'Opmerkingen:',
-	'requestaccount-urls'     => 'Lijst van websites, als van toepassing (iedere site op een aparte regel):',
-	'requestaccount-agree'    => 'U moet aangegeven dat uw naam juist is en dat u akkoord gaat met de Voorwaarden.',
-	'requestaccount-inuse'    => 'De gebruiker is al bekend in een aanvraagprocedure.',
-	'requestaccount-tooshort' => 'Uw biografie moet tenminste $1 woorden bevatten.',
-	'requestaccount-tos'      => 'Ik heb de Voorwaarden van {{SITENAME}} gelezen en ga ermee akkoord.',
-	'requestaccount-correct'  => 'Ik bevestig dat de naam die ik heb opgegeven onder "Uw naam" inderdaad mijn eigen naam is.',
-	'requestacount-submit'    => 'Gebruiker aanvragen',
-	'requestaccount-sent'     => 'Uw gebruikersaanvraag is verstuurd en wacht op review.',
-	'request-account-econf'   => 'Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.',
-	'requestaccount-email-subj' => '{{SITENAME}} bevestiging e-mailadres',
-	'requestaccount-email-body' => 'Iemand, waarschijnlijk u, heeft vanaf  IP-adres $1 op {{SITENAME}} een verzoek gedaan
+	'requestaccount-bio-text'     => 'Uw biografie wordt opgenomen in uw gebruikerspagina. Probeer uw belangrijkste gegevens 
+	op te nemen. Zorg ervoor dat u achter het publiceren van dergelijke informatie staat. U kunt uw naam wijzigen via uw [[Special:Preferences|voorkeuren]].',
+	'requestaccount-real'         => 'Uw naam:',
+	'requestaccount-same'         => '(gelijk aan uw naam)',
+	'requestaccount-email'        => 'E-mailadres:',
+	'requestaccount-bio'          => 'Persoonlijke biografie:',
+	'requestaccount-notes'        => 'Opmerkingen:',
+	'requestaccount-urls'         => 'Lijst van websites, als van toepassing (iedere site op een aparte regel):',
+	'requestaccount-agree'        => 'U moet aangegeven dat uw naam juist is en dat u akkoord gaat met de Voorwaarden.',
+	'requestaccount-inuse'        => 'De gebruiker is al bekend in een aanvraagprocedure.',
+	'requestaccount-tooshort'     => 'Uw biografie moet tenminste $1 woorden bevatten.',
+	'requestaccount-tos'          => 'Ik heb de Voorwaarden van {{SITENAME}} gelezen en ga ermee akkoord.',
+	'requestaccount-correct'      => 'Ik bevestig dat de naam die ik heb opgegeven onder "Uw naam" inderdaad mijn eigen naam is.',
+	'requestacount-submit'        => 'Gebruiker aanvragen',
+	'requestaccount-sent'         => 'Uw gebruikersaanvraag is verstuurd en wacht op review.',
+	'request-account-econf'       => 'Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.',
+	'requestaccount-email-subj'   => '{{SITENAME}} bevestiging e-mailadres',
+	'requestaccount-email-body'   => 'Iemand, waarschijnlijk u, heeft vanaf  IP-adres $1 op {{SITENAME}} een verzoek gedaan
 voor het aanmaken van gebruiker "$2" met dit e-mailadres.
 
 Open de onderstaande link in uw browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij u hoort:
@@ -445,53 +444,48 @@ $3
 
 Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de link dan *niet*. 
 Deze bevestigingse-mail verloop op $4.',
-
-	'acct_request_throttle_hit' => "Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.",
-	
-	# Add to Special:Login
-	'requestacount-loginnotice' => 'Om een gebruiker te krijgen, moet u \'\'\'[[Special:RequestAccount|een verzoek doen]]\'\'\'.',
-	
-	# Confirm account page
-	'confirmaccounts'       => 'Bevestig gebruikersverzoeken',
-	'confirmacount-list'    => 'Hieronder staan de gebruikersverzoeken die op afhandeling wachten. 
+	'acct_request_throttle_hit'   => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
+	'requestacount-loginnotice'   => 'Om een gebruiker te krijgen, moet u \'\'\'[[Special:RequestAccount|een verzoek doen]]\'\'\'.',
+	'confirmaccounts'             => 'Bevestig gebruikersverzoeken',
+	'confirmacount-list'          => 'Hieronder staan de gebruikersverzoeken die op afhandeling wachten. 
 	Voor goedgekeurde gebruikersverzoeken worden gebruikers aangemaakt en dat verzoek komt niet langer voor in deze lijst. 
 	Afgewezen gebruikersverzoeken worden van de lijst verwijderd.',
-	'confirmacount-list2'    => 'Hieronder staan recentelijk afgewezen gebruikersverzoeken die die over een aantal dagen
+	'confirmacount-list2'         => 'Hieronder staan recentelijk afgewezen gebruikersverzoeken die die over een aantal dagen
 	automatisch worden verwijderd. Ze kunnen nog steeds goedgekeurd worden, hoewel het verstandig is voorafgaand contact te
 	zoeken met de beheerder die het verzoek heeft afgewezen.',
-	'confirmacount-text'    => 'Dit is een openstaand gebruikersverzoek voor \'\'\'{{SITENAME}}\'\'\'. Beoordeel het
+	'confirmacount-text'          => 'Dit is een openstaand gebruikersverzoek voor \'\'\'{{SITENAME}}\'\'\'. Beoordeel het
 	alstublieft zorgvuldig en bevestig, als nodig, alle onderstaande informatie. U kunt een gebruiker aanmaken met een andere
 	naam. Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
 	
 	Als u deze pagina verlaat zonder het gebruikersverzoek te bevestigen of af te wijzen, dan blijft het open staan.',
-	'confirmacount-none'    => 'Er zijn op dit moment geen openstaande gebruikersverzoeken.',
-	'confirmacount-none2'   => 'Er zijn op het moment geen recent afgewezen gebruikersverzoeken.',
-	'confirmaccount-badid'  => 'Er is geen openstaand gebruikersverzoeken voor het opgegeven ID. Wellicht is het al afgehandeld.',
-	'confirmaccount-back'   => 'Bekijk openstaande gebruikersverzoeken',
-	'confirmaccount-back2'  => 'Bekijk recent afgewezen verzoeken',
-	'confirmaccount-name'   => 'Gebruikersnaam',
-	'confirmaccount-real'   => 'Naam',
-	'confirmaccount-email'  => 'E-mail',
-	'confirmaccount-bio'    => 'Biografie',
-	'confirmaccount-urls'   => 'Lijst met websites:',
-	'confirmaccount-nourls' => '(niet opgegeven)',
-	'confirmaccount-review' => 'toegelaten/afgewezen',
-	'confirmacount-confirm' => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
-	'confirmaccount-econf'  => '(bevestigd)',
-	'confirmaccount-reject' => '(afgewezen door [[User:$1|$1]] op $2)',
-	'confirmacount-create'  => 'Toelaten (gebruiker aanmaken)',
-	'confirmacount-deny'    => 'Afwijzen (verwijderen)',
-	'requestaccount-reason' => 'Opmerking (wordt opgenomen in de e-mail):',
-	'confirmacount-submit'  => 'Bevestigen',
-	'confirmaccount-acc'    => 'Gebruikersverzoek goedgekeurd. De gebruiker [[User:$1]] is aangemaakt.',
-	'confirmaccount-rej'    => 'Gebruikersverzoek afgewezen.',
-	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
-	'confirmaccount-welc'   => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goed bijdragen levert. 
+	'confirmacount-none'          => 'Er zijn op dit moment geen openstaande gebruikersverzoeken.',
+	'confirmacount-none2'         => 'Er zijn op het moment geen recent afgewezen gebruikersverzoeken.',
+	'confirmaccount-badid'        => 'Er is geen openstaand gebruikersverzoeken voor het opgegeven ID. Wellicht is het al afgehandeld.',
+	'confirmaccount-back'         => 'Bekijk openstaande gebruikersverzoeken',
+	'confirmaccount-back2'        => 'Bekijk recent afgewezen verzoeken',
+	'confirmaccount-name'         => 'Gebruikersnaam',
+	'confirmaccount-real'         => 'Naam',
+	'confirmaccount-email'        => 'E-mail',
+	'confirmaccount-bio'          => 'Biografie',
+	'confirmaccount-urls'         => 'Lijst met websites:',
+	'confirmaccount-nourls'       => '(niet opgegeven)',
+	'confirmaccount-review'       => 'toegelaten/afgewezen',
+	'confirmacount-confirm'       => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
+	'confirmaccount-econf'        => '(bevestigd)',
+	'confirmaccount-reject'       => '(afgewezen door [[User:$1|$1]] op $2)',
+	'confirmacount-create'        => 'Toelaten (gebruiker aanmaken)',
+	'confirmacount-deny'          => 'Afwijzen (verwijderen)',
+	'requestaccount-reason'       => 'Opmerking (wordt opgenomen in de e-mail):',
+	'confirmacount-submit'        => 'Bevestigen',
+	'confirmaccount-acc'          => 'Gebruikersverzoek goedgekeurd. De gebruiker [[User:$1]] is aangemaakt.',
+	'confirmaccount-rej'          => 'Gebruikersverzoek afgewezen.',
+	'confirmaccount-summary'      => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
+	'confirmaccount-welc'         => '\'\'\'Welkom bij \'\'{{SITENAME}}\'\'!\'\'\' We hopen dat u veel goed bijdragen levert. 
 	Waarschijnlijk wilt u kennis nemen van [[{{NS:PROJECT}}:Getting started|Eerste stappen]]. Nogmaals, welkom en veel plezier! 
-	~~~~",
-	'confirmaccount-wsum'   => 'Welkom!',
-	'confirmaccount-email-subj' => '{{SITENAME}} gebruikersverzoek',
-	'confirmaccount-email-body' => 'Uw gebruikersverzoek op {{SITENAME}} is goedgekeurd.
+	~~~~',
+	'confirmaccount-wsum'         => 'Welkom!',
+	'confirmaccount-email-subj'   => '{{SITENAME}} gebruikersverzoek',
+	'confirmaccount-email-body'   => 'Uw gebruikersverzoek op {{SITENAME}} is goedgekeurd.
 
 Gebruiker: $1
 
@@ -499,7 +493,7 @@ Wachtwoord: $2
 
 Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body2' => 'Uw gebruikersverzoek op {{SITENAME}} is goedekeurd.
+	'confirmaccount-email-body2'  => 'Uw gebruikersverzoek op {{SITENAME}} is goedekeurd.
 
 Gebruikersnaam: $1
 
@@ -509,12 +503,12 @@ $3
 
 Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3' => 'Sorry, uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
+	'confirmaccount-email-body3'  => 'Sorry, uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
 
 Dit kan meerdere oorzaken hebben. Mogelijk heeft u het formulier niet volledig ingevuld, waren uw antwoorden 
 onvoldoende compleet, of heeft u om een andere reden niet voldaan aan de eisen. Op de site staan mogelijk 
 lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
-	'confirmaccount-email-body4' => 'Sorry, uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
+	'confirmaccount-email-body4'  => 'Sorry, uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
 
 $2
 
