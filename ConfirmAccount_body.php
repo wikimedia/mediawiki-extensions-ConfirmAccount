@@ -485,7 +485,7 @@ class ConfirmAccountsPage extends SpecialPage
 				return false;
 			}
 			# Set password and realname
-			$user->setPassword( $p );
+			$user->setNewpassword( $p );
 			$user->setRealName( $row->acr_real_name );
 			$user->saveSettings(); // Save this into the DB
 			# Check if the user already confirmed email address
