@@ -17,9 +17,9 @@ $wgConfirmAccountMessages['en'] = array(
 	Once the account is approved, you will be emailed a notification message and the account will be usable at 
 	[[Special:Userlogin]].',
 	'requestaccount-dup'      => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
-	'requestacount-legend1'   => 'User account:',
-	'requestacount-legend2'   => 'Personal information:',
-	'requestacount-legend3'   => 'Other information:',
+	'requestacount-legend1'   => 'User account',
+	'requestacount-legend2'   => 'Personal information',
+	'requestacount-legend3'   => 'Other information',
 	'requestacount-acc-text'  => 'Your email address will be sent a confirmation message once this request is submited. Please respond by clicking 
 	on the confirmation link provided by the the email. Also, your password will be emailed to you when your account is created.',
 	'requestacount-ext-text'  => 'The following information is kept private and will only be used for this request. 
@@ -137,9 +137,9 @@ $wgConfirmAccountMessages['de'] = array(
 
 	Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[{{ns:special}}:Userlogin|Anmelden]]“ einloggen.',
 	'requestaccount-dup'      => '\'\'\'Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.\'\'\'',
-	'requestacount-legend1'   => 'Benutzerkonto:',
-	'requestacount-legend2'   => 'Persönliche Informationen:',
-	'requestacount-legend3'   => 'Weitere Informationen:',
+	'requestacount-legend1'   => 'Benutzerkonto',
+	'requestacount-legend2'   => 'Persönliche Informationen',
+	'requestacount-legend3'   => 'Weitere Informationen',
 	'requestacount-acc-text'  => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
 	Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst. Sobald dein Konto angelegt wurde,
 	wird dir dein Passwort per E-Mail zugeschickt.',
@@ -259,8 +259,8 @@ kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 $wgConfirmAccountMessages['hsb'] = array(
 	'requestaccount'              => 'Wu�iwarske konto sej �adac',
 	'requestaccount-dup'          => '\'\'\'Kedzbu: Sy hi�o ze zregistrowanym wu�iwarskim kontom prizjewjeny.\'\'\'',
-	'requestacount-legend1'       => 'Wu�iwarske konto:',
-	'requestacount-legend2'       => 'Wosobinske informacije:',
+	'requestacount-legend1'       => 'Wu�iwarske konto',
+	'requestacount-legend2'       => 'Wosobinske informacije',
 	'requestacount-legend3'       => 'Dal�e informacije',
 	'requestaccount-real'         => 'Woprawdzite mjeno:',
 	'requestaccount-same'         => '(ka� woprawdzite mjeno)',
@@ -301,9 +301,9 @@ $wgConfirmAccountMessages['nl'] = array(
 	
 	Als uw gebruiker is goedgekeurd, krijgt u een e-mail en daarna kunt u aanmelden via [[Special:Userlogin]].',
 	'requestaccount-dup'      => '\'\'\'Note bene: U bent al aangemeld met een geregistreede gebruiker.\'\'\'',
-	'requestacount-legend1'   => 'Gebruiker:',
-	'requestacount-legend2'   => 'Persoonlijke informatie:',
-	'requestacount-legend3'   => 'Overige informatie:',
+	'requestacount-legend1'   => 'Gebruiker',
+	'requestacount-legend2'   => 'Persoonlijke informatie',
+	'requestacount-legend3'   => 'Overige informatie',
 	'requestacount-acc-text'  => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen. Reageer daar alstublieft op 
 	door de klikken op de bevesitigngslink die in de e-mail staat. U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
 	'requestacount-ext-text'  => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
@@ -419,9 +419,9 @@ $wgConfirmAccountMessages['yue'] = array(
 	
 	一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。',
 	'requestaccount-dup'      => '\'\'\'留意: 你已經登入咗做一個已經註冊咗嘅戶口。\'\'\'',
-	'requestacount-legend1'   => '用戶戶口:',
-	'requestacount-legend2'   => '個人資料:',
-	'requestacount-legend3'   => '其它資料:',
+	'requestacount-legend1'   => '用戶戶口',
+	'requestacount-legend2'   => '個人資料',
+	'requestacount-legend3'   => '其它資料',
 	'requestacount-acc-text'  => '當完成請求時，一封確認訊息會發到你嘅電郵地址。
 	請響封電郵度撳個確認連結去回應佢。同時，當你個戶口開咗之後，你戶口個密碼將會電郵畀你。',
 	'requestacount-ext-text'  => '下面嘅資料會保密，而且只係會用響呢次請求度。 
@@ -530,9 +530,9 @@ $wgConfirmAccountMessages['zh-hans'] = array(
 	
 	一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:Userlogin]]中使用。',
 	'requestaccount-dup'      => '\'\'\'注意: 您已经登入成一个已注册的账户。\'\'\'',
-	'requestacount-legend1'   => '用户账户:',
-	'requestacount-legend2'   => '个人资料:',
-	'requestacount-legend3'   => '其它资料:',
+	'requestacount-legend1'   => '用户账户',
+	'requestacount-legend2'   => '个人资料',
+	'requestacount-legend3'   => '其它资料',
 	'requestacount-acc-text'  => '当完成请求时，一封确认信息会发到您的电邮地址。
 	请在该封电邮中点击确认连结去反应它。同时，当您的账户被创建后，您账户的个密码将会电邮给您。',
 	'requestacount-ext-text'  => '以下的资料将会保密，而且只是会用在这次请求中。 
@@ -641,9 +641,9 @@ $wgConfirmAccountMessages['zh-hant'] = array(
 	
 	一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:Userlogin]]中使用。',
 	'requestaccount-dup'      => '\'\'\'注意: 您已經登入成一個已註冊的帳戶。\'\'\'',
-	'requestacount-legend1'   => '用戶帳戶:',
-	'requestacount-legend2'   => '個人資料:',
-	'requestacount-legend3'   => '其它資料:',
+	'requestacount-legend1'   => '用戶帳戶',
+	'requestacount-legend2'   => '個人資料',
+	'requestacount-legend3'   => '其它資料',
 	'requestacount-acc-text'  => '當完成請求時，一封確認訊息會發到您的電郵地址。
 	請在該封電郵中點擊確認連結去回應它。同時，當您的帳戶被創建後，您帳戶的個密碼將會電郵給您。',
 	'requestacount-ext-text'  => '以下的資料將會保密，而且只是會用在這次請求中。 
