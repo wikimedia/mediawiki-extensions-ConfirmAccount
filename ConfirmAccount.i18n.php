@@ -515,6 +515,16 @@ $2
 Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
 );
 
+$wgConfirmAccountMessages['oc'] = array(
+	'requestacount-legend1'       => 'Compte d\'utilizaire:',
+	'requestacount-legend2'       => 'Informacion personala:',
+	'requestacount-legend3'       => 'Autra informacion:',
+	'requestaccount-real'         => 'Nom vertadièr:',
+	'requestaccount-email'        => 'Adreça electronica:',
+	'confirmaccount-name'         => 'Nom d\'utilizaire',
+	'confirmaccount-real'         => 'Nom',
+);
+
 $wgConfirmAccountMessages['yue'] = array(
 	# Request account page
 	'requestaccount'          => '請求戶口',
