@@ -127,6 +127,117 @@ $2
 There may be contact lists on site that you can use if you want to know more about user account policy.',
 );
 
+$wgConfirmAccountMessages['ar'] = array(
+	'requestaccount'              => 'طلب حساب',
+	'requestacount-text'          => '\'\'\'أكمل و ابعث الاستمارة التالية لطلب حساب\'\'\'. 
+	
+	تأكد أولا من قراءة [[{{NS:PROJECT}}:Terms of Service|شروط الخدمة]] قبل طلب حساب.
+	
+	متى تمت الموافقة على الحساب, سيتم إرسال رسالة إخطار إليك و الحساب سيصبح قابلا للاستخدام في 
+	[[Special:Userlogin]].',
+	'requestaccount-dup'          => '\'\'\'ملاحظة: أنت مسجل الدخول بالفعل بحساب مسجل.\'\'\'',
+	'requestacount-legend1'       => 'حساب المستخدم:',
+	'requestacount-legend2'       => 'معلومات شخصية:',
+	'requestacount-legend3'       => 'معلومات أخرى:',
+	'requestacount-acc-text'      => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب. من فضلك استجب عن طريق الضغط 
+	على وصلة التأكيد المعطاة في البريد الإلكتروني. أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
+	'requestacount-ext-text'      => 'المعلومات التالية سرية و سيتم استخدامها فقط لهذا الطلب. 
+ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة في تأكيد الهوية.',
+	'requestaccount-bio-text'     => 'سيرتك الشخصية ستعرض كالمحتوى الافتراضي لصفحة المستخدم الخاصة بك. حاول تضمين 
+	أية شهادات. تأكد من ارتياحك لنشر هذه المعلومات. اسمك يمكن تغييره بواسطة [[Special:Preferences]].',
+	'requestaccount-real'         => 'الاسم الحقيقي:',
+	'requestaccount-same'         => '(مثل الاسم الحقيقي)',
+	'requestaccount-email'        => 'عنوان البريد الإلكتروني:',
+	'requestaccount-bio'          => 'السيرة الشخصية:',
+	'requestaccount-notes'        => 'ملاحظات إضافية:',
+	'requestaccount-urls'         => 'قائمة مواقع الويب، إن وجدت (افصل بسطور جديدة):',
+	'requestaccount-agree'        => 'يجب أن تثبت أن اسمك الحقيقي صحيح و أنك توافق على شروط خدمتنا.',
+	'requestaccount-inuse'        => 'اسم المستخدم مستعمل بالفعل في طلب حساب قيد الانتظار',
+	'requestaccount-tooshort'     => 'سيرتك يجب أن تتكون على الأقل من $1 كلمة.',
+	'requestaccount-tos'          => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.',
+	'requestaccount-correct'      => 'أنا أؤكد أن الاسم الذي حددته تحت "الاسم الحقيقي" هو في الواقع اسمي الحقيقي.',
+	'requestacount-submit'        => 'طلب حساب',
+	'requestaccount-sent'         => 'طلبك للحساب تم إرساله بنجاح و هو بانتظار المراجعة الآن.',
+	'request-account-econf'       => 'عنوان بريدك الإلكتروني تم تأكيده وسيتم عرضه كما هو في 
+طلب حسابك.',
+	'requestaccount-email-subj'   => '{{SITENAME}} تأكيد عنوان البريد الإلكتروني من',
+	'requestaccount-email-body'   => 'شخص ما، على الأرجح أنت من عنوان الأيبي $1, طلب حساب "$2" بعنوان البريد الإلكتروني هذا على {{SITENAME}}.
+
+لتأكيد أن هذا الحساب ينتمي إليك فعلا على {{SITENAME}}، افتح هذه الوصلة في متصفحك:
+
+$3
+
+لو أن الحساب تم إنشاؤه، فقط أنت سيتم إرسال كلمة السر إليه. لو أن هذا *ليس* أنت، لا تتبع الوصلة. 
+كود التأكيد سينتهي في $4.',
+	'acct_request_throttle_hit'   => 'عذرا، لقد طلبت بالفعل $1 حساب. لا يمكنك عمل المزيد من الطلبات.',
+	'requestacount-loginnotice'   => 'للحصول على حساب، يجب عليك \'\'\'[[Special:RequestAccount|طلب واحد]]\'\'\'.',
+	'confirmaccounts'             => 'تأكيد طلبات الحسابات',
+	'confirmacount-list'          => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار. 
+	الحسابات التي تمت الموافقة عليها سيتم إنشاؤها و إزالتها من هذه القائمة. الحسابات المرفوضة سيتم ببساطة حذفها من هذه 
+القائمة.',
+	'confirmacount-list2'         => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا و التي ربما يتم حذفها تلقائيا 
+	عندما يكون عمرها عدة أيام. مازال بالإمكان الموافقة عليهم كحسابات، و لكنك ربما ترغب في استشارة الإداري الرافض 
+قبل فعل هذا.',
+	'confirmacount-text'          => 'هذا طلب حساب قيد الانتظار في \'\'\'{{SITENAME}}\'\'\'. 
+	راجعه بحرص و لو دعت الحاجة, أكد, كل المعلومات بالأسفل. لاحظ أنه يمكنك اختيار إنشاء الحساب باسم مستخدم آخر 
+	. استخدم هذا فقط لتجنب 	الاصطدامات مع الأسماء الأخرى.
+	
+لو تركت ببساطة هذه الصفحة بدون تأكيد أو رفض الحساب, سيبقى قيد الانتظار.',
+	'confirmacount-none'          => 'لا توجد حاليا طلبات حساب قيد الانتظار.',
+	'confirmacount-none2'         => 'لا توجد حاليا طلبات حسابات مرفوضة حديثا.',
+	'confirmaccount-badid'        => 'لا يوجد طلب قيد الانتظار يوافق الرقم المعطى. ربما يكون قد تمت معالجته.',
+	'confirmaccount-back'         => 'عرض قائمة الحسابات قيد الانتظار',
+	'confirmaccount-back2'        => 'عرض قائمة الحسابات المرفوضة حديثا',
+	'confirmaccount-name'         => 'اسم المستخدم',
+	'confirmaccount-real'         => 'الاسم',
+	'confirmaccount-email'        => 'البريد الإلكتروني',
+	'confirmaccount-bio'          => 'السيرة',
+	'confirmaccount-urls'         => 'قائمة مواقع الويب:',
+	'confirmaccount-nourls'       => '(لا شيء معطى)',
+	'confirmaccount-review'       => 'قبول/رفض',
+	'confirmacount-confirm'       => 'استخدم الأزرار بالأسفل لقبول هذا الطلب أو رفضه.',
+	'confirmaccount-econf'        => '(تم تأكيده)',
+	'confirmaccount-reject'       => '(تم رفضه بواسطته [[User:$1|$1]] في $2)',
+	'confirmacount-create'        => 'قبول (إنشاب الحساب)',
+	'confirmacount-deny'          => 'رفض (إزالة من القائمة)',
+	'requestaccount-reason'       => 'تعليق (سيضمن في البريد الإلكتروني):',
+	'confirmacount-submit'        => 'تأكيد',
+	'confirmaccount-acc'          => 'طلب الحساب تم تأكيده بنجاح؛ أنشأ حسابا جديدا [[User:$1]].',
+	'confirmaccount-rej'          => 'طلب الحساب تم رفضه بنجاح.',
+	'confirmaccount-summary'      => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.',
+	'confirmaccount-welc'         => '\'\'\'مرحبا إلى \'\'{{SITENAME}}\'\'!\'\'\' نأمل أن تساهم كثيرا وجيدا. 
+	على الأرجح ستريد قراءة [[{{NS:PROJECT}}:Getting started|البداية]]. مجددا، مرحبا و استمتع! 
+	<nowiki>~~~~</nowiki>',
+	'confirmaccount-wsum'         => 'مرحبا!',
+	'confirmaccount-email-subj'   => '{{SITENAME}} طلب حساب',
+	'confirmaccount-email-body'   => 'طلبك لحساب تمت الموافقة عليه في {{SITENAME}}.
+
+اسم الحساب: $1
+
+كلمة السر: $2
+
+لمتطلبات السرية ستضطر إلى تغيير كلمة السر الخاصة بك عند أول دخول. للدخول، من فضلك اذهب إلى 
+{{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'  => 'طلبك لحساب تمت الموافقة عليه في {{SITENAME}}.
+
+اسم الحساب: $1
+
+كلمة السر: $2
+
+$3
+
+لمتطلبات السرية ستضطر إلى تغيير كلمة السر الخاصة بك عند أول دخول. للدخول، من فضلك اذهب إلى 
+{{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'  => 'عذرا, طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
+
+هناك عدة طرق لحدوث هذا. ربما تكون لم تملأ الاستمارة بشكل صحيح, أو لم توفر الطول اللازم في ردودك, أو فشلت في موافاة بعد بنود السياسة. ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
+	'confirmaccount-email-body4'  => 'عذرا, طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
+
+$2
+
+ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
+);
+
 // German translations (by Rrosenfeld)
 $wgConfirmAccountMessages['de'] = array(
 	# Request account page
@@ -257,25 +368,25 @@ kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
 $wgConfirmAccountMessages['hsb'] = array(
-	'requestaccount'              => 'Wu�iwarske konto sej �adac',
-	'requestaccount-dup'          => '\'\'\'Kedzbu: Sy hi�o ze zregistrowanym wu�iwarskim kontom prizjewjeny.\'\'\'',
-	'requestacount-legend1'       => 'Wu�iwarske konto',
+	'requestaccount'              => 'Wuiwarske konto sej adac',
+	'requestaccount-dup'          => '\'\'\'Kedzbu: Sy hio ze zregistrowanym wuiwarskim kontom prizjewjeny.\'\'\'',
+	'requestacount-legend1'       => 'Wuiwarske konto',
 	'requestacount-legend2'       => 'Wosobinske informacije',
-	'requestacount-legend3'       => 'Dal�e informacije',
+	'requestacount-legend3'       => 'Dale informacije',
 	'requestaccount-real'         => 'Woprawdzite mjeno:',
-	'requestaccount-same'         => '(ka� woprawdzite mjeno)',
+	'requestaccount-same'         => '(ka woprawdzite mjeno)',
 	'requestaccount-email'        => 'E-mejlowa adresa:',
 	'requestaccount-bio'          => 'Wosobinska biografija:',
 	'requestaccount-notes'        => 'Pridatne podaca:',
 	'requestaccount-urls'         => 'Liscina webowych sydlow (prez linkowe lamanja wotdzelene)',
-	'requestaccount-inuse'        => 'Wu�iwarske mjeno so hi�o w druhim kontowym po�adanju wu�iwa.',
-	'requestaccount-tooshort'     => 'Twoja biografija dyrbi znajmjen�a $1 slowow dolho byc.',
-	'requestaccount-correct'      => 'Wobkrucam, zo mjeno, kotre� sym pod "Woprawdzite mjeno" podal, je woprawdze moje woprawdzite mjeno.',
-	'requestacount-submit'        => 'Wu�iwarske konto sej �adac',
+	'requestaccount-inuse'        => 'Wuiwarske mjeno so hio w druhim kontowym poadanju wuiwa.',
+	'requestaccount-tooshort'     => 'Twoja biografija dyrbi znajmjena $1 slowow dolho byc.',
+	'requestaccount-correct'      => 'Wobkrucam, zo mjeno, kotre sym pod "Woprawdzite mjeno" podal, je woprawdze moje woprawdzite mjeno.',
+	'requestacount-submit'        => 'Wuiwarske konto sej adac',
 	'requestaccount-email-subj'   => '{{SITENAME}} Pruwowanje e-mejloweje adresy',
-	'acct_request_throttle_hit'   => 'Sy hi�o $1 wu�iwarskich kontow po�adal, njem�e� sej we wokomiku dal�e konta �adac.',
-	'confirmaccounts'             => 'Kontowe po�adanja potwjerdzic',
-	'confirmaccount-name'         => 'Wu�iwarske mjeno',
+	'acct_request_throttle_hit'   => 'Sy hio $1 wuiwarskich kontow poadal, njeme sej we wokomiku dale konta adac.',
+	'confirmaccounts'             => 'Kontowe poadanja potwjerdzic',
+	'confirmaccount-name'         => 'Wuiwarske mjeno',
 	'confirmaccount-real'         => 'Mjeno',
 	'confirmaccount-email'        => 'E-mejl',
 	'confirmaccount-bio'          => 'Biografija',
@@ -283,12 +394,12 @@ $wgConfirmAccountMessages['hsb'] = array(
 	'confirmaccount-nourls'       => '(Nico podate)',
 	'confirmaccount-review'       => 'Dowolic/Wotpokazac',
 	'confirmaccount-econf'        => '(potwjerdzene)',
-	'confirmaccount-reject'       => '(wot [[Wu�iwar:$1|$1]] na $2 wotpokazany)',
+	'confirmaccount-reject'       => '(wot [[Wuiwar:$1|$1]] na $2 wotpokazany)',
 	'confirmacount-create'        => 'Akceptowac (Konto wutworic)',
-	'confirmacount-deny'          => 'Wotpokazac (Po�adanje wotstronic)',
+	'confirmacount-deny'          => 'Wotpokazac (Poadanje wotstronic)',
 	'requestaccount-reason'       => 'Komentar (zasunje so do mejlki)',
 	'confirmacount-submit'        => 'Potwjerdzic',
-	'confirmaccount-summary'      => 'Wutworja so wu�iwarska strona z biografiju noweho wu�iwarja.',
+	'confirmaccount-summary'      => 'Wutworja so wuiwarska strona z biografiju noweho wuiwarja.',
 	'confirmaccount-wsum'         => 'Witaj!',
 );
 
