@@ -504,6 +504,7 @@ $wgConfirmAccountMessages['hsb'] = array(
 	'requestacount-submit'        => 'Wužiwarske konto sej žadać',
 	'requestaccount-email-subj'   => '{{SITENAME}} Pruwowanje e-mejloweje adresy',
 	'acct_request_throttle_hit'   => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
+	'requestacount-loginnotice'   => 'Zo by wužiwarske konto dóstał, dyrbiš wo nje \'\'\'[[{{ns:special}}:RequestAccount|prosyć]]\'\'\'.',
 	'confirmaccounts'             => 'Kontowe požadanja potwjerdźić',
 	'confirmaccount-name'         => 'Wužiwarske mjeno',
 	'confirmaccount-real'         => 'Mjeno',
