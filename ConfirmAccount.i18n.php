@@ -535,6 +535,10 @@ $wgConfirmAccountMessages['hsb'] = array(
 	'confirmaccount-email-subj'   => '{{SITENAME}} Požadanje za wužiwarskim kontom',
 );
 
+$wgConfirmAccountMessages['la'] = array(
+	'requestaccount-real'         => 'Nomen verum:',
+);
+
 $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount'              => 'Gebruiker aanvragen',
 	'requestacount-text'          => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
