@@ -91,7 +91,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= '</table>';
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."</p>";
 		$form .= "<p><textarea tabindex='1' name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
-			$this->mBio .
+			htmlspecialchars($this->mBio) .
 			"</textarea></p>";
 		$form .= '</fieldset>';
 
@@ -101,11 +101,11 @@ class RequestAccountPage extends SpecialPage {
 
 		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
-			$this->mNotes .
+			htmlspecialchars($this->mNotes) .
 			"</textarea></p>";
 		$form .= "<p>".wfMsgHtml('requestaccount-urls')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
-			$this->mUrls .
+			htmlspecialchars($this->mUrls) .
 			"</textarea></p>";
 		$form .= '</fieldset>';
 
@@ -561,7 +561,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= '</table cellpadding=\'4\'>';
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."</p>";
 		$form .= "<p><textarea tabindex='1' readonly name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
-			$row->acr_bio .
+			htmlspecialchars($row->acr_bio) .
 			"</textarea></p>";
 		$form .= '</fieldset>';
 		
