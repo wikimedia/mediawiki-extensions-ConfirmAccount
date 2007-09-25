@@ -492,6 +492,7 @@ $wgConfirmAccountMessages['hsb'] = array(
 	'requestacount-legend1'       => 'Wužiwarske konto:',
 	'requestacount-legend2'       => 'Wosobinske informacije:',
 	'requestacount-legend3'       => 'Dalše informacije',
+	'requestacount-ext-text'      => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
 	'requestaccount-real'         => 'Woprawdźite mjeno:',
 	'requestaccount-same'         => '(kaž woprawdźite mjeno)',
 	'requestaccount-email'        => 'E-mejlowa adresa:',
@@ -512,6 +513,7 @@ $wgConfirmAccountMessages['hsb'] = array(
 	'confirmaccounts'             => 'Kontowe požadanja potwjerdźić',
 	'confirmacount-none'          => 'Tuchwilu njerozsudźene wužiwarske požadanja njejsu.',
 	'confirmacount-none2'         => 'Tuchwilu njedawno wotpokazane wužiwarske požadanja njejsu.',
+	'confirmaccount-badid'        => 'Tuchwilu požadane k podatemu ID. Snano bu hižo sčinjene.',
 	'confirmaccount-back'         => 'Lisćinu njerozsudźenych požadanjow wobhladać',
 	'confirmaccount-back2'        => 'Lisćinu njedawno wotpokazanych požadanjow wobhladać',
 	'confirmaccount-name'         => 'Wužiwarske mjeno',
@@ -531,12 +533,19 @@ $wgConfirmAccountMessages['hsb'] = array(
 	'confirmaccount-acc'          => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[{{ns:User}}:$1]] bu wutworjene.',
 	'confirmaccount-rej'          => 'Požadanje za kontom bu wotpokazane.',
 	'confirmaccount-summary'      => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
+	'confirmaccount-welc'         => '\'\'\'Witaj do \'\'{{SITENAME}}\'\'!\'\'\' Nadźijemy so, zo dodaš wjele dobrych přinoškow.
+	Snano chceš najprjedy [[Pomoc:Prěnje kroki|Prěnje kroki]] čitać. Hišće raz: Witaj a wjele wjesela! 
+	[[User:Michawiki|Michawiki]] 17:08, 24 September 2007 (UTC)',
 	'confirmaccount-wsum'         => 'Witaj!',
 	'confirmaccount-email-subj'   => '{{SITENAME}} Požadanje za wužiwarskim kontom',
 );
 
 $wgConfirmAccountMessages['la'] = array(
 	'requestaccount-real'         => 'Nomen verum:',
+	'requestaccount-same'         => '(aequus ad nomine vero)',
+	'confirmaccount-name'         => 'Nomen usoris',
+	'confirmaccount-real'         => 'Nomen',
+	'confirmaccount-wsum'         => 'Salve!',
 );
 
 $wgConfirmAccountMessages['nl'] = array(
