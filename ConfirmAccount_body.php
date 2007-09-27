@@ -37,7 +37,6 @@ class RequestAccountPage extends SpecialPage {
 		$this->mBio = $wgRequest->getText( 'wpBio', '' );
 		$this->mNotes = $wgRequest->getText( 'wpNotes', '' );
 		$this->mUrls = $wgRequest->getText( 'wpUrls', '' );
-		$this->mCorrect = $wgRequest->getBool('wpCorrect');
 		$this->mToS = $wgRequest->getBool('wpToS');
 		# We may be confirming an email address here
 		$emailCode = $wgRequest->getText( 'wpEmailToken' );
@@ -122,8 +121,6 @@ class RequestAccountPage extends SpecialPage {
 				$form .= '</fieldset>';
 			}
 		}
-		$form .= "<p>".Xml::checkLabel( wfMsgExt( 'requestaccount-correct', 
-			array('parseinline') ), 'wpCorrect', 'wpCorrect', $this->mCorrect )."</p>\n";
 		$form .= "<p>".Xml::checkLabel( wfMsgExt( 'requestaccount-tos', 
 			array('parseinline') ), 'wpToS', 'wpToS', $this->mToS )."</p>\n";
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
@@ -159,7 +156,7 @@ class RequestAccountPage extends SpecialPage {
 			return;
 		}
 		# Make sure user agrees to policy here
-		if( !$this->mCorrect || !$this->mToS ) {
+		if( !$this->mToS ) {
 			$this->showForm( wfMsgHtml('requestaccount-agree') );
 			return;
 		}
