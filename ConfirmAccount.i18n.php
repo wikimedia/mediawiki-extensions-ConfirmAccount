@@ -276,8 +276,8 @@ $wgConfirmAccountMessages['de'] = array(
 	'requestaccount-agree'    => 'Du musst bestätigen, dass Dein Real-Name korrekt ist und du die Benutzerbedingungen akzeptierst.',
 	'requestaccount-inuse'    => 'Der Benutzername ist bereits in einem anderen Benutzerantrag in Verwendung.',
 	'requestaccount-tooshort' => 'Deine Biographie sollte mindestens $1 Worte lang sein.',
-	'requestaccount-tos'      => 'Ich habe die Benutzerbedingungen von {{SITENAME}} gelesen und akzeptiere sie.',
-	'requestaccount-correct'  => 'Ich bestätige, dass der Name, den ich unter „Real-Name“ angegeben habe, mein wirklicher Name ist.',
+	'requestaccount-tos'      => 'Ich habe die Benutzerbedingungen von {{SITENAME}} gelesen und akzeptiere sie.
+	Ich bestätige, dass der Name, den ich unter „Real-Name“ angegeben habe, mein wirklicher Name ist.',
 	'requestacount-submit'    => 'Benutzerkonto beantragen',
 	'requestaccount-sent'     => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
 	'request-account-econf'   => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
