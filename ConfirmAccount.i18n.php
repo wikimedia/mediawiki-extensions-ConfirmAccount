@@ -239,6 +239,8 @@ $2
 );
 
 $wgConfirmAccountMessages['bcl'] = array(
+	'requestacount-legend2'       => 'Personal na impormasyon',
+	'requestacount-legend3'       => 'Ibang impormasyon',
 	'requestaccount-real'         => 'Totoong pangaran:',
 	'requestaccount-same'         => '(pareho sa  totoong pangaran)',
 	'confirmaccount-real'         => 'Pangaran',
