@@ -20,7 +20,7 @@ $wgConfirmAccountMessages['en'] = array(
 	'requestacount-legend1'   => 'User account',
 	'requestacount-legend2'   => 'Personal information',
 	'requestacount-legend3'   => 'Other information',
-	'requestacount-acc-text'  => 'Your email address will be sent a confirmation message once this request is submited. Please respond by clicking 
+	'requestacount-acc-text'  => 'Your email address will be sent a confirmation message once this request is submitted. Please respond by clicking 
 	on the confirmation link provided by the the email. Also, your password will be emailed to you when your account is created.',
 	'requestacount-ext-text'  => 'The following information is kept private and will only be used for this request. 
 	You may want to list contacts such a phone number to aid in identify confirmation.',
