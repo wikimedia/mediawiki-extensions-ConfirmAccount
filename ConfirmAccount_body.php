@@ -723,7 +723,7 @@ class ConfirmAccountsPage extends SpecialPage
 }
 
 /**
- * Query to list out stable versions for a page
+ * Query to list out pending accounts
  */
 class ConfirmAccountsPager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
