@@ -93,8 +93,7 @@ This confirmation code will expire at $4.',
 	'confirmaccount-rej'    => 'Account request rejected successfully.',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
 	'confirmaccount-welc'   => "'''Welcome to ''{{SITENAME}}''!''' We hope you will contribute much and well. 
-	You'll probably want to read [[{{NS:PROJECT}}:Getting started|Getting started]]. Again, welcome and have fun! 
-	~~~~",
+	You'll probably want to read [[{{NS:PROJECT}}:Getting started|Getting started]]. Again, welcome and have fun!",
 	'confirmaccount-wsum'   => 'Welcome!',
 	'confirmaccount-email-subj' => '{{SITENAME}} account request',
 	'confirmaccount-email-body' => 'Your request for an account has been approved on {{SITENAME}}.

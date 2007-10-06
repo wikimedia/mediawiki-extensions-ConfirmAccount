@@ -512,7 +512,7 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
-				$utalk->doEdit( wfMsg('confirmaccount-welc'), wfMsg('confirmaccount-wsum'), EDIT_MINOR );
+				$utalk->doEdit( wfMsg('confirmaccount-welc') . ' ~~~~', wfMsg('confirmaccount-wsum'), EDIT_MINOR );
 			}
 
 			$this->showSuccess( $action, $user->getName() );
