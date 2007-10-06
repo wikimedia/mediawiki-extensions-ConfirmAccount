@@ -63,12 +63,12 @@ class RequestAccountPage extends SpecialPage {
 			$wgOut->addWikiText( wfMsgHtml( "requestaccount-dup" ) );
 		}
 
-		$wgOut->addWikiText( wfMsgHtml( "requestacount-text" ) );
+		$wgOut->addWikiText( wfMsgHtml( "requestaccount-text" ) );
 
 		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
 		$form = "<form name='accountrequest' action='$action' method='post'><fieldset>";
-		$form .= '<legend>' . wfMsgHtml('requestacount-legend1') . '</legend>';
-		$form .= wfMsgExt( 'requestacount-acc-text', array('parse') )."\n";
+		$form .= '<legend>' . wfMsgHtml('requestaccount-legend1') . '</legend>';
+		$form .= wfMsgExt( 'requestaccount-acc-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
 		if( $wgUseRealNamesOnly ) {
 			$form .= "<tr><td>".wfMsgHtml('username')."</td>";
@@ -82,7 +82,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= '</table></fieldset>';
 
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('requestacount-legend2') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestaccount-legend2') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-bio-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-real'), 'wpRealName' )."</td>";
@@ -95,13 +95,13 @@ class RequestAccountPage extends SpecialPage {
 		$form .= '</fieldset>';
 
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('requestacount-legend3') . '</legend>';
-		$form .= wfMsgExt( 'requestacount-ext-text', array('parse') )."\n";
+		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
+		$form .= wfMsgExt( 'requestaccount-ext-text', array('parse') )."\n";
 
 		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($this->mNotes) .
-			"</textarea></p>";
+			"</textarea></p>\n";
 		$form .= "<p>".wfMsgHtml('requestaccount-urls')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
 			htmlspecialchars($this->mUrls) .
@@ -121,11 +121,12 @@ class RequestAccountPage extends SpecialPage {
 				$form .= '</fieldset>';
 			}
 		}
-		$form .= "<p>".Xml::checkLabel( wfMsgExt( 'requestaccount-tos', 
-			array('parseinline') ), 'wpToS', 'wpToS', $this->mToS )."</p>\n";
+		$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
+			' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
+		
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
-		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestacount-submit') ) . "</p>";
+		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestaccount-submit') ) . "</p>";
 		$form .=  '</form>';
 
 		$wgOut->addHTML( $form );
@@ -540,7 +541,7 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
 		$form = "<form name='accountconfirm' action='$action' method='post'><fieldset>";
-		$form .= '<legend>' . wfMsgHtml('requestacount-legend1') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestaccount-legend1') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpNewName' )."</td>";
 		$form .= "<td>".Xml::input( 'wpNewName', 30, $row->acr_name, array('id' => 'wpNewName') )."</td></tr>\n";
@@ -551,7 +552,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= '</table></fieldset>';
 		
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('requestacount-legend2') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestaccount-legend2') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".wfMsgHtml('requestaccount-real')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
@@ -563,11 +564,11 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= '</fieldset>';
 		
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('requestacount-legend3') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
 		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_notes) .
-			"</textarea></p>";
+			"</textarea></p>\n";
 		$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
 		$form .= "<p>".$this->parseLinks($row->acr_urls)."</p>";
 		$form .= '</fieldset>';
