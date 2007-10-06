@@ -10,19 +10,19 @@ $wgConfirmAccountMessages = array();
 $wgConfirmAccountMessages['en'] = array(
 	# Request account page
 	'requestaccount'          => 'Request account',
-	'requestacount-text'      => '\'\'\'Complete and submit the following form to request a user account\'\'\'. 
+	'requestaccount-text'      => '\'\'\'Complete and submit the following form to request a user account\'\'\'. 
 	
 	Make sure that you first read the [[{{NS:PROJECT}}:Terms of Service|Terms of Service]] before requesting an account.
 	
 	Once the account is approved, you will be emailed a notification message and the account will be usable at 
 	[[Special:Userlogin]].',
 	'requestaccount-dup'      => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
-	'requestacount-legend1'   => 'User account',
-	'requestacount-legend2'   => 'Personal information',
-	'requestacount-legend3'   => 'Other information',
-	'requestacount-acc-text'  => 'Your email address will be sent a confirmation message once this request is submitted. Please respond by clicking 
+	'requestaccount-legend1'   => 'User account',
+	'requestaccount-legend2'   => 'Personal information',
+	'requestaccount-legend3'   => 'Other information',
+	'requestaccount-acc-text'  => 'Your email address will be sent a confirmation message once this request is submitted. Please respond by clicking 
 	on the confirmation link provided by the the email. Also, your password will be emailed to you when your account is created.',
-	'requestacount-ext-text'  => 'The following information is kept private and will only be used for this request. 
+	'requestaccount-ext-text'  => 'The following information is kept private and will only be used for this request. 
 	You may want to list contacts such a phone number to aid in identify confirmation.',
 	'requestaccount-bio-text' => "Your biography will be set as the default content for your userpage. Try to include 
 	any credentials. Make sure you are comfortable publishing such information. Your name can be changed via [[Special:Preferences]].",
@@ -37,7 +37,7 @@ $wgConfirmAccountMessages['en'] = array(
 	'requestaccount-tooshort' => 'Your biography must be at least be $1 words long.',
 	'requestaccount-tos'      => 'I have read and agree to abide by the Terms of Service of {{SITENAME}}. The name I have specified 
 	under "Real name" is in fact my own real name.',
-	'requestacount-submit'    => 'Request account',
+	'requestaccount-submit'    => 'Request account',
 	'requestaccount-sent'     => 'Your account request has successfully been sent and is now pending review.',
 	'request-account-econf'   => 'Your e-mail address has been confirmed and will be listed as such in your account 
 	request.',
@@ -55,7 +55,7 @@ This confirmation code will expire at $4.',
 	'acct_request_throttle_hit' => "Sorry, you have already requested $1 accounts. You can't make any more requests.",
 	
 	# Add to Special:Login
-	'requestacount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
+	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
 	# Confirm account page
 	'confirmaccounts'       => 'Confirm account requests', 
@@ -129,19 +129,19 @@ There may be contact lists on site that you can use if you want to know more abo
 
 $wgConfirmAccountMessages['ar'] = array(
 	'requestaccount'              => 'طلب حساب',
-	'requestacount-text'          => '\'\'\'أكمل و ابعث الاستمارة التالية لطلب حساب\'\'\'. 
+	'requestaccount-text'          => '\'\'\'أكمل و ابعث الاستمارة التالية لطلب حساب\'\'\'. 
 	
 	تأكد أولا من قراءة [[{{NS:PROJECT}}:Terms of Service|شروط الخدمة]] قبل طلب حساب.
 	
 	متى تمت الموافقة على الحساب, سيتم إرسال رسالة إخطار إليك و الحساب سيصبح قابلا للاستخدام في 
 	[[Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'ملاحظة: أنت مسجل الدخول بالفعل بحساب مسجل.\'\'\'',
-	'requestacount-legend1'       => 'حساب المستخدم:',
-	'requestacount-legend2'       => 'معلومات شخصية:',
-	'requestacount-legend3'       => 'معلومات أخرى:',
-	'requestacount-acc-text'      => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب. من فضلك استجب عن طريق الضغط 
+	'requestaccount-legend1'       => 'حساب المستخدم:',
+	'requestaccount-legend2'       => 'معلومات شخصية:',
+	'requestaccount-legend3'       => 'معلومات أخرى:',
+	'requestaccount-acc-text'      => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب. من فضلك استجب عن طريق الضغط 
 	على وصلة التأكيد المعطاة في البريد الإلكتروني. أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
-	'requestacount-ext-text'      => 'المعلومات التالية سرية و سيتم استخدامها فقط لهذا الطلب. 
+	'requestaccount-ext-text'      => 'المعلومات التالية سرية و سيتم استخدامها فقط لهذا الطلب. 
 ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة في تأكيد الهوية.',
 	'requestaccount-bio-text'     => 'سيرتك الشخصية ستعرض كالمحتوى الافتراضي لصفحة المستخدم الخاصة بك. حاول تضمين 
 	أية شهادات. تأكد من ارتياحك لنشر هذه المعلومات. اسمك يمكن تغييره بواسطة [[Special:Preferences]].',
@@ -156,7 +156,7 @@ $wgConfirmAccountMessages['ar'] = array(
 	'requestaccount-tooshort'     => 'سيرتك يجب أن تتكون على الأقل من $1 كلمة.',
 	'requestaccount-tos'          => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.',
 	'requestaccount-correct'      => 'أنا أؤكد أن الاسم الذي حددته تحت "الاسم الحقيقي" هو في الواقع اسمي الحقيقي.',
-	'requestacount-submit'        => 'طلب حساب',
+	'requestaccount-submit'        => 'طلب حساب',
 	'requestaccount-sent'         => 'طلبك للحساب تم إرساله بنجاح و هو بانتظار المراجعة الآن.',
 	'request-account-econf'       => 'عنوان بريدك الإلكتروني تم تأكيده وسيتم عرضه كما هو في 
 طلب حسابك.',
@@ -170,7 +170,7 @@ $3
 لو أن الحساب تم إنشاؤه، فقط أنت سيتم إرسال كلمة السر إليه. لو أن هذا *ليس* أنت، لا تتبع الوصلة. 
 كود التأكيد سينتهي في $4.',
 	'acct_request_throttle_hit'   => 'عذرا، لقد طلبت بالفعل $1 حساب. لا يمكنك عمل المزيد من الطلبات.',
-	'requestacount-loginnotice'   => 'للحصول على حساب، يجب عليك \'\'\'[[Special:RequestAccount|طلب واحد]]\'\'\'.',
+	'requestaccount-loginnotice'   => 'للحصول على حساب، يجب عليك \'\'\'[[Special:RequestAccount|طلب واحد]]\'\'\'.',
 	'confirmaccounts'             => 'تأكيد طلبات الحسابات',
 	'confirmacount-list'          => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار. 
 	الحسابات التي تمت الموافقة عليها سيتم إنشاؤها و إزالتها من هذه القائمة. الحسابات المرفوضة سيتم ببساطة حذفها من هذه 
@@ -239,8 +239,8 @@ $2
 );
 
 $wgConfirmAccountMessages['bcl'] = array(
-	'requestacount-legend2'       => 'Personal na impormasyon',
-	'requestacount-legend3'       => 'Ibang impormasyon',
+	'requestaccount-legend2'       => 'Personal na impormasyon',
+	'requestaccount-legend3'       => 'Ibang impormasyon',
 	'requestaccount-real'         => 'Totoong pangaran:',
 	'requestaccount-same'         => '(pareho sa  totoong pangaran)',
 	'confirmaccount-real'         => 'Pangaran',
@@ -252,19 +252,19 @@ $wgConfirmAccountMessages['bcl'] = array(
 $wgConfirmAccountMessages['de'] = array(
 	# Request account page
 	'requestaccount'          => 'Benutzerkonto beantragen',
-	'requestacount-text'      => '\'\'\'Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen\'\'\'. 
+	'requestaccount-text'      => '\'\'\'Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen\'\'\'. 
 
 	Bitte lies zunächst die [[{{NS:PROJECT}}:Nutzungsbedingungen|Nutzungsbedingungen]] bevor du ein Benutzerkonto beantragst.
 
 	Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[{{ns:special}}:Userlogin|Anmelden]]“ einloggen.',
 	'requestaccount-dup'      => '\'\'\'Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.\'\'\'',
-	'requestacount-legend1'   => 'Benutzerkonto',
-	'requestacount-legend2'   => 'Persönliche Informationen',
-	'requestacount-legend3'   => 'Weitere Informationen',
-	'requestacount-acc-text'  => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
+	'requestaccount-legend1'   => 'Benutzerkonto',
+	'requestaccount-legend2'   => 'Persönliche Informationen',
+	'requestaccount-legend3'   => 'Weitere Informationen',
+	'requestaccount-acc-text'  => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
 	Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst. Sobald dein Konto angelegt wurde,
 	wird dir dein Passwort per E-Mail zugeschickt.',
-	'requestacount-ext-text'  => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag
+	'requestaccount-ext-text'  => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag
 	verwendet. Du kannst Kontakt-Angaben wie eine Telefonnummer machen, um die Bearbeitung deines Antrags zu vereinfachen.',
 	'requestaccount-bio-text' => "Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert. Versuche alle nötigen
 	Empfehlungen zu erwähnen, aber stelle sicher, dass du die Informationen auch wirklich veröffentlichen möchtest. Du kannst deinen
@@ -280,7 +280,7 @@ $wgConfirmAccountMessages['de'] = array(
 	'requestaccount-tooshort' => 'Deine Biographie sollte mindestens $1 Worte lang sein.',
 	'requestaccount-tos'      => 'Ich habe die Benutzerbedingungen von {{SITENAME}} gelesen und akzeptiere sie.
 	Ich bestätige, dass der Name, den ich unter „Real-Name“ angegeben habe, mein wirklicher Name ist.',
-	'requestacount-submit'    => 'Benutzerkonto beantragen',
+	'requestaccount-submit'    => 'Benutzerkonto beantragen',
 	'requestaccount-sent'     => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
 	'request-account-econf'   => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
 	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adressen Prüfung',
@@ -302,7 +302,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'acct_request_throttle_hit' => "Du hast bereits $1 Benutzerkonten beantragt, du kannst momentan keine weiteren beantragen.",
 
 	# Add to Special:Login
-	'requestacount-loginnotice' => 'Um ein neues Benutzerkonto zu erhalten, musst du es \'\'\'[[{{ns:special}}:RequestAccount|beantragen]]\'\'\'.',
+	'requestaccount-loginnotice' => 'Um ein neues Benutzerkonto zu erhalten, musst du es \'\'\'[[{{ns:special}}:RequestAccount|beantragen]]\'\'\'.',
 
 	# Confirm account page
 	'confirmaccounts'       => 'Benutzerkonto-Anträge bestätigen', 
@@ -378,9 +378,9 @@ kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
 $wgConfirmAccountMessages['ext'] = array(
-	'requestacount-legend1'       => 'Cuenta d´usuáriu',
-	'requestacount-legend2'       => 'Enhormación presonal',
-	'requestacount-legend3'       => 'Mas enhormación',
+	'requestaccount-legend1'       => 'Cuenta d´usuáriu',
+	'requestaccount-legend2'       => 'Enhormación presonal',
+	'requestaccount-legend3'       => 'Mas enhormación',
 	'requestaccount-real'         => 'Nombri verdaeru:',
 	'confirmaccount-name'         => 'Nombri d´usuáriu',
 	'confirmaccount-real'         => 'Nombri',
@@ -391,18 +391,18 @@ $wgConfirmAccountMessages['ext'] = array(
 $wgConfirmAccountMessages['fr'] = array(
 	# Request account page
 	'requestaccount'          => 'Demande de compte utilisateur',
-	'requestacount-text'      => '\'\'\'Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur.\'\'\'. 
+	'requestaccount-text'      => '\'\'\'Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur.\'\'\'. 
 	
 	Assurez-vous que vous ayez déjà lu [[{{NS:PROJECT}}:Conditions d’utilisation|les conditions d’utilisation]] avant de faire votre demande de compte.
 	
 	Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur
 	[[Special:Userlogin]].',
 	'requestaccount-dup'      => '\'\'\'Note : Vous êtes déjà sur une session avec un compte enregistré.\'\'\'',
-	'requestacount-legend1'   => 'Compte utilisateur',
-	'requestacount-legend2'   => 'Informations personnelles',
-	'requestacount-legend3'   => 'Autres informations',
-	'requestacount-acc-text'  => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
-	'requestacount-ext-text'  => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
+	'requestaccount-legend1'   => 'Compte utilisateur',
+	'requestaccount-legend2'   => 'Informations personnelles',
+	'requestaccount-legend3'   => 'Autres informations',
+	'requestaccount-acc-text'  => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
+	'requestaccount-ext-text'  => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
 	Vous avez la possibilité de lister des contact tel qu’un numéro de téléphone pour obtenir une assistance pour confirmer votre identité.',
 	'requestaccount-bio-text' => "Votre biographie sera mise par défaut sur votre page utilisateur. Essayez d’y mettre vos recommandations. Assurez-vous que vous pouvez diffuser sans crainte les informations. Votre nom peut être changé en utilisant [[Special:Preferences]].",
 	'requestaccount-real'     => 'Nom réel :',
@@ -416,7 +416,7 @@ $wgConfirmAccountMessages['fr'] = array(
 	'requestaccount-tooshort' => 'Votre biographie doit avoir au moins $1 mots.',
 	'requestaccount-tos'      => 'J’ai lu et j’accepte de respecter les termes concernant les conditions d’utilisation des services de {{SITENAME}}.',
 	'requestaccount-correct'  => 'Je certifie que le nom que j’ai inscrit dans « Nom réel » est bien le mien.',
-	'requestacount-submit'    => 'Demande de compte utilisateur.',
+	'requestaccount-submit'    => 'Demande de compte utilisateur.',
 	'requestaccount-sent'     => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.',
 	'request-account-econf'   => 'Votre adresse courrielle a été confirmée et sera listée telle quelle dans votre demande de compte.',
 	'requestaccount-email-subj' => '{{SITENAME}} confirmation d’adresse courriel.',
@@ -432,7 +432,7 @@ Ce code de confirmation expirera le $4.',
 	'acct_request_throttle_hit' => "Désolé, vous avec demandé $1 comptes. Vous ne pouvez plus faire de demande.",
 	
 	# Add to Special:Login
-	'requestacount-loginnotice' => 'Pour obtenir un compte utilisateur, vous devez en faire \'\'\'[[Special:RequestAccount|la demande]]\'\'\'.',
+	'requestaccount-loginnotice' => 'Pour obtenir un compte utilisateur, vous devez en faire \'\'\'[[Special:RequestAccount|la demande]]\'\'\'.',
 	
 	# Confirm account page
 	'confirmaccounts'       => 'Demande de confirmation de comptes', 
@@ -500,17 +500,17 @@ Il est possible d’être sur la liste des contacts afin de mieux connaître les
 
 $wgConfirmAccountMessages['hsb'] = array(
 	'requestaccount'              => 'Wužiwarske konto sej žadać',
-	'requestacount-text'          => '\'\'\'Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał\'\'\'. 
+	'requestaccount-text'          => '\'\'\'Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał\'\'\'. 
 
 	Prošu přečitaj najprjedy [[{{NS:PROJECT}}:Terms of Service|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
 Tak ruče kaž konto je so potwjerdźiło, dóstaš powesć přez mejlku a móžeš so pod "[[{{ns:special}}:Userlogin|Anmelden]]" přizjewić.',
 	'requestaccount-dup'          => '\'\'\'Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.\'\'\'',
-	'requestacount-legend1'       => 'Wužiwarske konto:',
-	'requestacount-legend2'       => 'Wosobinske informacije:',
-	'requestacount-legend3'       => 'Dalše informacije',
-	'requestacount-acc-text'      => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
-	'requestacount-ext-text'      => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
+	'requestaccount-legend1'       => 'Wužiwarske konto:',
+	'requestaccount-legend2'       => 'Wosobinske informacije:',
+	'requestaccount-legend3'       => 'Dalše informacije',
+	'requestaccount-acc-text'      => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
+	'requestaccount-ext-text'      => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
 	'requestaccount-bio-text'     => 'Twoja biografija so jako spočatny wobsah twojeje wužiwarskeje strony składuje. Spytaj wšě trěbne doporučenja naspomnić, ale zawěsć, zo chceš te informacije woprawdźe wozjewić. Móžeš swoje wužiwarske mjeno pod "[[{{ns:special}}:Preferences|Nastajenja]]" změnić.',
 	'requestaccount-real'         => 'Woprawdźite mjeno:',
 	'requestaccount-same'         => '(kaž woprawdźite mjeno)',
@@ -522,7 +522,7 @@ Tak ruče kaž konto je so potwjerdźiło, dóstaš powesć přez mejlku a móž
 	'requestaccount-inuse'        => 'Wužiwarske mjeno so hižo w druhim kontowym požadanju wužiwa.',
 	'requestaccount-tooshort'     => 'Twoja biografija dyrbi znajmjeńša $1 słowow dołho być.',
 	'requestaccount-tos'          => 'Sym wužiwarske wuměnjenja strony {{SITENAME}} přečitał a budu do nich dźeržeć.',
-	'requestacount-submit'        => 'Wužiwarske konto sej žadać',
+	'requestaccount-submit'        => 'Wužiwarske konto sej žadać',
 	'requestaccount-sent'         => 'Twoje kontowe požadanje  bu wuspěšnje wotpósłane a dyrbi so nětko přepruwować.',
 	'request-account-econf'       => 'Twoja e-mejlowa adresa bu wobkrućena a budźe so w twojim kontowym požadanju nalistować.',
 	'requestaccount-email-subj'   => '{{SITENAME}} Pruwowanje e-mejloweje adresy',
@@ -538,7 +538,7 @@ Jeli *njej*sy wužiwarske konto požadał, njewočiń prošu tutón wotkaz!
 
 Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'acct_request_throttle_hit'   => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
-	'requestacount-loginnotice'   => 'Zo by wužiwarske konto dóstał, dyrbiš wo nje \'\'\'[[{{ns:special}}:RequestAccount|prosyć]]\'\'\'.',
+	'requestaccount-loginnotice'   => 'Zo by wužiwarske konto dóstał, dyrbiš wo nje \'\'\'[[{{ns:special}}:RequestAccount|prosyć]]\'\'\'.',
 	'confirmaccounts'             => 'Kontowe požadanja potwjerdźić',
 	'confirmacount-list'          => 'Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.',
 	'confirmacount-list2'         => 'Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.',
@@ -610,18 +610,18 @@ $wgConfirmAccountMessages['la'] = array(
 
 $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount'              => 'Gebruiker aanvragen',
-	'requestacount-text'          => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
+	'requestaccount-text'          => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
 	
 	Zorg ervoor dat u eerst de [[{{NS:PROJECT}}:Terms of Service|Voorwaarden]] leest voordat u een gebruiker aanvraagt.
 	
 	Als uw gebruiker is goedgekeurd, krijgt u een e-mail en daarna kunt u aanmelden via [[Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'Note bene: U bent al aangemeld met een geregistreede gebruiker.\'\'\'',
-	'requestacount-legend1'       => 'Gebruiker',
-	'requestacount-legend2'       => 'Persoonlijke informatie',
-	'requestacount-legend3'       => 'Overige informatie',
-	'requestacount-acc-text'      => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen. Reageer daar alstublieft op 
+	'requestaccount-legend1'       => 'Gebruiker',
+	'requestaccount-legend2'       => 'Persoonlijke informatie',
+	'requestaccount-legend3'       => 'Overige informatie',
+	'requestaccount-acc-text'      => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen. Reageer daar alstublieft op 
 	door de klikken op de bevesitigngslink die in de e-mail staat. U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
-	'requestacount-ext-text'      => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
+	'requestaccount-ext-text'      => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
 	U kunt contactgegevens zoals een telefoonummer opgeven om te helpen bij het vaststellen van uw identiteit.',
 	'requestaccount-bio-text'     => 'Uw biografie wordt opgenomen in uw gebruikerspagina. Probeer uw belangrijkste gegevens 
 	op te nemen. Zorg ervoor dat u achter het publiceren van dergelijke informatie staat. U kunt uw naam wijzigen via uw [[Special:Preferences|voorkeuren]].',
@@ -636,7 +636,7 @@ $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount-tooshort'     => 'Uw biografie moet tenminste $1 woorden bevatten.',
 	'requestaccount-tos'          => 'Ik heb de Voorwaarden van {{SITENAME}} gelezen en ga ermee akkoord.',
 	'requestaccount-correct'      => 'Ik bevestig dat de naam die ik heb opgegeven onder "Uw naam" inderdaad mijn eigen naam is.',
-	'requestacount-submit'        => 'Gebruiker aanvragen',
+	'requestaccount-submit'        => 'Gebruiker aanvragen',
 	'requestaccount-sent'         => 'Uw gebruikersaanvraag is verstuurd en wacht op review.',
 	'request-account-econf'       => 'Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.',
 	'requestaccount-email-subj'   => '{{SITENAME}} bevestiging e-mailadres',
@@ -650,7 +650,7 @@ $3
 Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de link dan *niet*. 
 Deze bevestigingse-mail verloop op $4.',
 	'acct_request_throttle_hit'   => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
-	'requestacount-loginnotice'   => 'Om een gebruiker te krijgen, moet u \'\'\'[[Special:RequestAccount|een verzoek doen]]\'\'\'.',
+	'requestaccount-loginnotice'   => 'Om een gebruiker te krijgen, moet u \'\'\'[[Special:RequestAccount|een verzoek doen]]\'\'\'.',
 	'confirmaccounts'             => 'Bevestig gebruikersverzoeken',
 	'confirmacount-list'          => 'Hieronder staan de gebruikersverzoeken die op afhandeling wachten. 
 	Voor goedgekeurde gebruikersverzoeken worden gebruikers aangemaakt en dat verzoek komt niet langer voor in deze lijst. 
@@ -721,9 +721,9 @@ Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over
 );
 
 $wgConfirmAccountMessages['oc'] = array(
-	'requestacount-legend1'       => 'Compte d\'utilizaire:',
-	'requestacount-legend2'       => 'Informacion personala:',
-	'requestacount-legend3'       => 'Autra informacion:',
+	'requestaccount-legend1'       => 'Compte d\'utilizaire:',
+	'requestaccount-legend2'       => 'Informacion personala:',
+	'requestaccount-legend3'       => 'Autra informacion:',
 	'requestaccount-real'         => 'Nom vertadièr:',
 	'requestaccount-email'        => 'Adreça electronica:',
 	'confirmaccount-name'         => 'Nom d\'utilizaire',
@@ -732,13 +732,13 @@ $wgConfirmAccountMessages['oc'] = array(
 
 $wgConfirmAccountMessages['sk'] = array(
 	'requestaccount'              => 'Vyžiadať účet',
-	'requestacount-text'          => '\'\'\'Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet\'\'\'. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{NS:PROJECT}}:Podmienky použitia|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].',
+	'requestaccount-text'          => '\'\'\'Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet\'\'\'. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{NS:PROJECT}}:Podmienky použitia|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'Pozn.: Už ste prihlásený ako zaregistrovaný používateľ.\'\'\'',
-	'requestacount-legend1'       => 'Používateľský účet',
-	'requestacount-legend2'       => 'Osobné informácie',
-	'requestacount-legend3'       => 'Ostatné informácie',
-	'requestacount-acc-text'      => 'Na vašu emailovú adresu bude po odoslaní žiadosti zaslaná potvrdzujúca správa. Prosím, reagujte na ňu kliknutím na odkaz v nej. Potom ako bude váš účet vytvorený, dostanete emailom heslo k nemu.',
-	'requestacount-ext-text'      => 'Nasledovné informácie budú držané v tajnosti a použijú sa iba na účel tejto žiadosti. Možno budete chcieť uviesť kontakty ako telefónne číslo, ktoré môžu pomôcť pri potvrdení.',
+	'requestaccount-legend1'       => 'Používateľský účet',
+	'requestaccount-legend2'       => 'Osobné informácie',
+	'requestaccount-legend3'       => 'Ostatné informácie',
+	'requestaccount-acc-text'      => 'Na vašu emailovú adresu bude po odoslaní žiadosti zaslaná potvrdzujúca správa. Prosím, reagujte na ňu kliknutím na odkaz v nej. Potom ako bude váš účet vytvorený, dostanete emailom heslo k nemu.',
+	'requestaccount-ext-text'      => 'Nasledovné informácie budú držané v tajnosti a použijú sa iba na účel tejto žiadosti. Možno budete chcieť uviesť kontakty ako telefónne číslo, ktoré môžu pomôcť pri potvrdení.',
 	'requestaccount-bio-text'     => 'Vaša biografia bude prvotným obsahom vašej používateľskej stránky. Pokúste sa uviesť všetky referencie. Zvážte, či ste ochotní zverejniť tieto informácie. Vaše meno je možné zmeniť pomocou [[Special:Preferences]].',
 	'requestaccount-real'         => 'Skutočné meno:',
 	'requestaccount-same'         => '(rovnaké ako skutočné meno)',
@@ -752,18 +752,18 @@ $wgConfirmAccountMessages['sk'] = array(
 $wgConfirmAccountMessages['yue'] = array(
 	# Request account page
 	'requestaccount'          => '請求戶口',
-	'requestacount-text'      => '\'\'\'完成並遞交下面嘅表格去請求一個用戶戶口\'\'\'。 
+	'requestaccount-text'      => '\'\'\'完成並遞交下面嘅表格去請求一個用戶戶口\'\'\'。 
 	
 	請確認你響請求一個戶口之前，先讀過[[{{NS:PROJECT}}:服務細則|服務細則]]。
 	
 	一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。',
 	'requestaccount-dup'      => '\'\'\'留意: 你已經登入咗做一個已經註冊咗嘅戶口。\'\'\'',
-	'requestacount-legend1'   => '用戶戶口',
-	'requestacount-legend2'   => '個人資料',
-	'requestacount-legend3'   => '其它資料',
-	'requestacount-acc-text'  => '當完成請求時，一封確認訊息會發到你嘅電郵地址。
+	'requestaccount-legend1'   => '用戶戶口',
+	'requestaccount-legend2'   => '個人資料',
+	'requestaccount-legend3'   => '其它資料',
+	'requestaccount-acc-text'  => '當完成請求時，一封確認訊息會發到你嘅電郵地址。
 	請響封電郵度撳個確認連結去回應佢。同時，當你個戶口開咗之後，你戶口個密碼將會電郵畀你。',
-	'requestacount-ext-text'  => '下面嘅資料會保密，而且只係會用響呢次請求度。 
+	'requestaccount-ext-text'  => '下面嘅資料會保密，而且只係會用響呢次請求度。 
 	你可能需要列示聯絡資料，好似電話號碼等去幫手證明你嘅確認。',
 	'requestaccount-bio-text' => "你嘅傳記將會設定做響你用戶頁度嘅預設內容。試吓包含任何嘅憑據。
 	而且你係肯定你係可以發佈呢啲資料。你嘅名可以透過[[Special:Preferences]]改到。",
@@ -778,7 +778,7 @@ $wgConfirmAccountMessages['yue'] = array(
 	'requestaccount-tooshort' => '你嘅傳記一定要最少有$1個字長。',
 	'requestaccount-tos'      => '我已經讀咗同埋同意持續遵守{{SITENAME}}嘅服務細則。',
 	'requestaccount-correct'  => '我證明我響"真名"度指定嘅名係我自己實際上嘅真名。',
-	'requestacount-submit'    => '請求戶口',
+	'requestaccount-submit'    => '請求戶口',
 	'requestaccount-sent'     => '你個戶口請求已經成功發出，現正等候複審。',
 	'request-account-econf'   => '你嘅電郵地址已經確認，將會響你嘅戶口請求度列示。',
 	'requestaccount-email-subj' => '{{SITENAME}}電郵地址確認',
@@ -794,7 +794,7 @@ $3
 	'acct_request_throttle_hit' => "對唔住，你已經請求咗$1個戶口。你唔可以請求更多個戶口。",
 	
 	# Add to Special:Login
-	'requestacount-loginnotice' => '要拎一個用戶戶口，你一定要\'\'\'[[Special:RequestAccount|請求一個]]\'\'\'。',
+	'requestaccount-loginnotice' => '要拎一個用戶戶口，你一定要\'\'\'[[Special:RequestAccount|請求一個]]\'\'\'。',
 	
 	# Confirm account page
 	'confirmaccounts'       => '確認戶口請求', 
@@ -863,18 +863,18 @@ $2
 $wgConfirmAccountMessages['zh-hans'] = array(
 	# Request account page
 	'requestaccount'          => '请求账户',
-	'requestacount-text'      => '\'\'\'完成并递交以下的表格去请求一个用户账户\'\'\'。 
+	'requestaccount-text'      => '\'\'\'完成并递交以下的表格去请求一个用户账户\'\'\'。 
 	
 	请确认您在请求一个账户之前，先读过[[{{NS:PROJECT}}:服务细则|服务细则]]。
 	
 	一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:Userlogin]]中使用。',
 	'requestaccount-dup'      => '\'\'\'注意: 您已经登入成一个已注册的账户。\'\'\'',
-	'requestacount-legend1'   => '用户账户',
-	'requestacount-legend2'   => '个人资料',
-	'requestacount-legend3'   => '其它资料',
-	'requestacount-acc-text'  => '当完成请求时，一封确认信息会发到您的电邮地址。
+	'requestaccount-legend1'   => '用户账户',
+	'requestaccount-legend2'   => '个人资料',
+	'requestaccount-legend3'   => '其它资料',
+	'requestaccount-acc-text'  => '当完成请求时，一封确认信息会发到您的电邮地址。
 	请在该封电邮中点击确认连结去反应它。同时，当您的账户被创建后，您账户的个密码将会电邮给您。',
-	'requestacount-ext-text'  => '以下的资料将会保密，而且只是会用在这次请求中。 
+	'requestaccount-ext-text'  => '以下的资料将会保密，而且只是会用在这次请求中。 
 	您可能需要列示联络资料，像电话号码等去帮助证明您的确认。',
 	'requestaccount-bio-text' => "您传记将会设置成在您用户页中的预设内容。尝试包含任何的凭据。
 	而且你是肯定您是可以发布这些资料。您的名字可以通过[[Special:Preferences]]更改。",
@@ -889,7 +889,7 @@ $wgConfirmAccountMessages['zh-hans'] = array(
 	'requestaccount-tooshort' => '您的传记必须最少有$1个字的长度。',
 	'requestaccount-tos'      => '我已经阅读以及同意持续遵守{{SITENAME}}的服务细则。',
 	'requestaccount-correct'  => '我证明我在"真实名字"中指定的名是我自己实际上的真名。',
-	'requestacount-submit'    => '请求账户',
+	'requestaccount-submit'    => '请求账户',
 	'requestaccount-sent'     => '您的账户请求已经成功发出，现正等候复审。',
 	'request-account-econf'   => '您的电邮地址已经确认，将会在您的账户口请求中列示。',
 	'requestaccount-email-subj' => '{{SITENAME}}电邮地址确认',
@@ -905,7 +905,7 @@ $3
 	'acct_request_throttle_hit' => "抱歉，您已经请求了$1个户口。您不可以请求更多个账户。",
 	
 	# Add to Special:Login
-	'requestacount-loginnotice' => '要取得个用户账户，您一定要\'\'\'[[Special:RequestAccount|请求一个]]\'\'\'。',
+	'requestaccount-loginnotice' => '要取得个用户账户，您一定要\'\'\'[[Special:RequestAccount|请求一个]]\'\'\'。',
 	
 	# Confirm account page
 	'confirmaccounts'       => '确认户口请求', 
@@ -974,18 +974,18 @@ $2
 $wgConfirmAccountMessages['zh-hant'] = array(
 	# Request account page
 	'requestaccount'          => '請求帳戶',
-	'requestacount-text'      => '\'\'\'完成並遞交以下的表格去請求一個用戶帳戶\'\'\'。 
+	'requestaccount-text'      => '\'\'\'完成並遞交以下的表格去請求一個用戶帳戶\'\'\'。 
 	
 	請確認您在請求一個帳戶之前，先讀過[[{{NS:PROJECT}}:服務細則|服務細則]]。
 	
 	一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:Userlogin]]中使用。',
 	'requestaccount-dup'      => '\'\'\'注意: 您已經登入成一個已註冊的帳戶。\'\'\'',
-	'requestacount-legend1'   => '用戶帳戶',
-	'requestacount-legend2'   => '個人資料',
-	'requestacount-legend3'   => '其它資料',
-	'requestacount-acc-text'  => '當完成請求時，一封確認訊息會發到您的電郵地址。
+	'requestaccount-legend1'   => '用戶帳戶',
+	'requestaccount-legend2'   => '個人資料',
+	'requestaccount-legend3'   => '其它資料',
+	'requestaccount-acc-text'  => '當完成請求時，一封確認訊息會發到您的電郵地址。
 	請在該封電郵中點擊確認連結去回應它。同時，當您的帳戶被創建後，您帳戶的個密碼將會電郵給您。',
-	'requestacount-ext-text'  => '以下的資料將會保密，而且只是會用在這次請求中。 
+	'requestaccount-ext-text'  => '以下的資料將會保密，而且只是會用在這次請求中。 
 	您可能需要列示聯絡資料，像電話號碼等去幫助證明您的確認。',
 	'requestaccount-bio-text' => "您傳記將會設定成在您用戶頁中的預設內容。嘗試包含任何的憑據。
 	而且你是肯定您是可以發佈這些資料。您的名字可以透過[[Special:Preferences]]更改。",
@@ -1000,7 +1000,7 @@ $wgConfirmAccountMessages['zh-hant'] = array(
 	'requestaccount-tooshort' => '您的傳記必須最少有$1個字的長度。',
 	'requestaccount-tos'      => '我已經閱讀以及同意持續遵守{{SITENAME}}的服務細則。',
 	'requestaccount-correct'  => '我證明我在"真實名字"中指定的名是我自己實際上的真名。',
-	'requestacount-submit'    => '請求帳戶',
+	'requestaccount-submit'    => '請求帳戶',
 	'requestaccount-sent'     => '您的帳戶請求已經成功發出，現正等候複審。',
 	'request-account-econf'   => '您的電郵地址已經確認，將會在您的帳戶口請求中列示。',
 	'requestaccount-email-subj' => '{{SITENAME}}電郵地址確認',
@@ -1016,7 +1016,7 @@ $3
 	'acct_request_throttle_hit' => "抱歉，您已經請求了$1個戶口。您不可以請求更多個帳戶。",
 	
 	# Add to Special:Login
-	'requestacount-loginnotice' => '要取得個用戶帳戶，您一定要\'\'\'[[Special:RequestAccount|請求一個]]\'\'\'。',
+	'requestaccount-loginnotice' => '要取得個用戶帳戶，您一定要\'\'\'[[Special:RequestAccount|請求一個]]\'\'\'。',
 	
 	# Confirm account page
 	'confirmaccounts'       => '確認戶口請求', 
