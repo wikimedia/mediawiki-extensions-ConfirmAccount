@@ -730,6 +730,25 @@ $wgConfirmAccountMessages['oc'] = array(
 	'confirmaccount-real'         => 'Nom',
 );
 
+$wgConfirmAccountMessages['sk'] = array(
+	'requestaccount'              => 'Vyžiadať účet',
+	'requestacount-text'          => '\'\'\'Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet\'\'\'. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{NS:PROJECT}}:Podmienky použitia|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].',
+	'requestaccount-dup'          => '\'\'\'Pozn.: Už ste prihlásený ako zaregistrovaný používateľ.\'\'\'',
+	'requestacount-legend1'       => 'Používateľský účet',
+	'requestacount-legend2'       => 'Osobné informácie',
+	'requestacount-legend3'       => 'Ostatné informácie',
+	'requestacount-acc-text'      => 'Na vašu emailovú adresu bude po odoslaní žiadosti zaslaná potvrdzujúca správa. Prosím, reagujte na ňu kliknutím na odkaz v nej. Potom ako bude váš účet vytvorený, dostanete emailom heslo k nemu.',
+	'requestacount-ext-text'      => 'Nasledovné informácie budú držané v tajnosti a použijú sa iba na účel tejto žiadosti. Možno budete chcieť uviesť kontakty ako telefónne číslo, ktoré môžu pomôcť pri potvrdení.',
+	'requestaccount-bio-text'     => 'Vaša biografia bude prvotným obsahom vašej používateľskej stránky. Pokúste sa uviesť všetky referencie. Zvážte, či ste ochotní zverejniť tieto informácie. Vaše meno je možné zmeniť pomocou [[Special:Preferences]].',
+	'requestaccount-real'         => 'Skutočné meno:',
+	'requestaccount-same'         => '(rovnaké ako skutočné meno)',
+	'requestaccount-email'        => 'Emailová adresa:',
+	'requestaccount-bio'          => 'Osobná biografia:',
+	'requestaccount-notes'        => 'Ďalšie poznámky:',
+	'requestaccount-urls'         => 'Zoznam webstránok, ak nejaké sú (jednu na každý riadok):',
+	'requestaccount-agree'        => 'Musíte osvedčiť, že vaše skutočné meno je správne a že súhlasíte s našimi Podmienkami použitia.',
+);
+
 $wgConfirmAccountMessages['yue'] = array(
 	# Request account page
 	'requestaccount'          => '請求戶口',
