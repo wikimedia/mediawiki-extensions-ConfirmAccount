@@ -501,8 +501,14 @@ class ConfirmAccountsPage extends SpecialPage
 			# Start up the user's (presumedly brand new) userpages
 			# Will not append, so previous content will be blanked
 			if( $wgMakeUserPageFromBio ) {
+				global $wgAutoUserBioText;
+				
 				$userpage = new Article( $user->getUserPage() );
-				$userpage->doEdit( $row->acr_bio, wfMsg('confirmaccount-summary'), EDIT_MINOR );
+				
+				$autotext = strval($wgAutoUserBioText);
+				$body = $autotext ? "$body\n$autotext" : $body;
+				
+				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
 			}
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
