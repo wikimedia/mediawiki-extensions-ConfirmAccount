@@ -193,7 +193,7 @@ class RequestAccountPage extends SpecialPage {
 				'acr_name' => $u->mName,
 				'acr_email' => $u->mEmail,
 				'acr_real_name' => $u->mRealName,
-				'acr_registration' => wfTimestampNow(),
+				'acr_registration' => $dbw->timestamp(),
 				'acr_bio' => $this->mBio,
 				'acr_notes' => $this->mNotes,
 				'acr_urls' => $this->mUrls,
@@ -297,7 +297,7 @@ class RequestAccountPage extends SpecialPage {
 	function confirmEmail( $name ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->update( 'account_requests', 
-			array( 'acr_email_authenticated' => wfTimestampNow() ),
+			array( 'acr_email_authenticated' => $dbw->timestamp() ),
 			array( 'acr_name' => $name ),
 			__METHOD__ );
 	}
@@ -435,7 +435,7 @@ class ConfirmAccountsPage extends SpecialPage
 				global $wgUser;
 				# Request can later be recovered
 				$dbw->update( 'account_requests', 
-					array( 'acr_rejected' => wfTimestampNow(), 
+					array( 'acr_rejected' => $dbw->timestamp(),
 						'acr_user' => $wgUser->getID(),
 						'acr_deleted' => 1 ), 
 					array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ), 
