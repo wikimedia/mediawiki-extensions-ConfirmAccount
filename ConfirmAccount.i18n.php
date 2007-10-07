@@ -59,19 +59,19 @@ This confirmation code will expire at $4.',
 	
 	# Confirm account page
 	'confirmaccounts'       => 'Confirm account requests', 
-	'confirmacount-list'    => 'Below is a list of account requests awaiting approval. 
+	'confirmaccount-list'    => 'Below is a list of account requests awaiting approval. 
 	Approved accounts will be created and removed from this list. Rejected accounts will simply be deleted from this 
 	list.',
-	'confirmacount-list2'    => 'Below is a list recently rejected account requests which may automatically be deleted 
+	'confirmaccount-list2'    => 'Below is a list recently rejected account requests which may automatically be deleted 
 	once several days old. They can still be approved into accounts, though you may want to first consult the rejecting 
 	admin before doing so.',
-	'confirmacount-text'    => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. Carefully 
+	'confirmaccount-text'    => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. Carefully 
 	review and if needed, confirm, all the below information. Note that you can choose to create the account under a 
 	different username. Use this only to avoid 	collisions with other names.
 	
 	If you simply leave this page without confirming or denying this request, it will remain pending.',
-	'confirmacount-none'    => 'There are currently no pending account requests.',
-	'confirmacount-none2'   => 'There are currently no recently rejected account requests.',
+	'confirmaccount-none'    => 'There are currently no pending account requests.',
+	'confirmaccount-none2'   => 'There are currently no recently rejected account requests.',
 	'confirmaccount-badid'  => 'There is no pending request corresponding to the given ID. It may have already been handled.',
 	'confirmaccount-back'   => 'View pending account list',
 	'confirmaccount-back2'  => 'View recently rejected account list',
@@ -82,13 +82,13 @@ This confirmation code will expire at $4.',
 	'confirmaccount-urls'   => 'List of websites:',
 	'confirmaccount-nourls' => '(None provided)',
 	'confirmaccount-review' => 'Approve/Reject',
-	'confirmacount-confirm' => 'Use the buttons below to accept this request or deny it.',
+	'confirmaccount-confirm' => 'Use the buttons below to accept this request or deny it.',
 	'confirmaccount-econf'  => '(confirmed)',
 	'confirmaccount-reject' => '(rejected by [[User:$1|$1]] on $2)',
-	'confirmacount-create'  => 'Accept (create account)',
-	'confirmacount-deny'    => 'Reject (delist)',
+	'confirmaccount-create'  => 'Accept (create account)',
+	'confirmaccount-deny'    => 'Reject (delist)',
 	'requestaccount-reason' => 'Comment (will be included in email):',
-	'confirmacount-submit'  => 'Confirm',
+	'confirmaccount-submit'  => 'Confirm',
 	'confirmaccount-acc'    => 'Account request confirmed successfully; created new user account [[User:$1]].',
 	'confirmaccount-rej'    => 'Account request rejected successfully.',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
@@ -171,19 +171,19 @@ $3
 	'acct_request_throttle_hit'   => 'عذرا، لقد طلبت بالفعل $1 حساب. لا يمكنك عمل المزيد من الطلبات.',
 	'requestaccount-loginnotice'   => 'للحصول على حساب، يجب عليك \'\'\'[[Special:RequestAccount|طلب واحد]]\'\'\'.',
 	'confirmaccounts'             => 'تأكيد طلبات الحسابات',
-	'confirmacount-list'          => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار. 
+	'confirmaccount-list'          => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار. 
 	الحسابات التي تمت الموافقة عليها سيتم إنشاؤها و إزالتها من هذه القائمة. الحسابات المرفوضة سيتم ببساطة حذفها من هذه 
 القائمة.',
-	'confirmacount-list2'         => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا و التي ربما يتم حذفها تلقائيا 
+	'confirmaccount-list2'         => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا و التي ربما يتم حذفها تلقائيا 
 	عندما يكون عمرها عدة أيام. مازال بالإمكان الموافقة عليهم كحسابات، و لكنك ربما ترغب في استشارة الإداري الرافض 
 قبل فعل هذا.',
-	'confirmacount-text'          => 'هذا طلب حساب قيد الانتظار في \'\'\'{{SITENAME}}\'\'\'. 
+	'confirmaccount-text'          => 'هذا طلب حساب قيد الانتظار في \'\'\'{{SITENAME}}\'\'\'. 
 	راجعه بحرص و لو دعت الحاجة, أكد, كل المعلومات بالأسفل. لاحظ أنه يمكنك اختيار إنشاء الحساب باسم مستخدم آخر 
 	. استخدم هذا فقط لتجنب 	الاصطدامات مع الأسماء الأخرى.
 	
 لو تركت ببساطة هذه الصفحة بدون تأكيد أو رفض الحساب, سيبقى قيد الانتظار.',
-	'confirmacount-none'          => 'لا توجد حاليا طلبات حساب قيد الانتظار.',
-	'confirmacount-none2'         => 'لا توجد حاليا طلبات حسابات مرفوضة حديثا.',
+	'confirmaccount-none'          => 'لا توجد حاليا طلبات حساب قيد الانتظار.',
+	'confirmaccount-none2'         => 'لا توجد حاليا طلبات حسابات مرفوضة حديثا.',
 	'confirmaccount-badid'        => 'لا يوجد طلب قيد الانتظار يوافق الرقم المعطى. ربما يكون قد تمت معالجته.',
 	'confirmaccount-back'         => 'عرض قائمة الحسابات قيد الانتظار',
 	'confirmaccount-back2'        => 'عرض قائمة الحسابات المرفوضة حديثا',
@@ -194,13 +194,13 @@ $3
 	'confirmaccount-urls'         => 'قائمة مواقع الويب:',
 	'confirmaccount-nourls'       => '(لا شيء معطى)',
 	'confirmaccount-review'       => 'قبول/رفض',
-	'confirmacount-confirm'       => 'استخدم الأزرار بالأسفل لقبول هذا الطلب أو رفضه.',
+	'confirmaccount-confirm'       => 'استخدم الأزرار بالأسفل لقبول هذا الطلب أو رفضه.',
 	'confirmaccount-econf'        => '(تم تأكيده)',
 	'confirmaccount-reject'       => '(تم رفضه بواسطته [[User:$1|$1]] في $2)',
-	'confirmacount-create'        => 'قبول (إنشاب الحساب)',
-	'confirmacount-deny'          => 'رفض (إزالة من القائمة)',
+	'confirmaccount-create'        => 'قبول (إنشاب الحساب)',
+	'confirmaccount-deny'          => 'رفض (إزالة من القائمة)',
 	'requestaccount-reason'       => 'تعليق (سيضمن في البريد الإلكتروني):',
-	'confirmacount-submit'        => 'تأكيد',
+	'confirmaccount-submit'        => 'تأكيد',
 	'confirmaccount-acc'          => 'طلب الحساب تم تأكيده بنجاح؛ أنشأ حسابا جديدا [[User:$1]].',
 	'confirmaccount-rej'          => 'طلب الحساب تم رفضه بنجاح.',
 	'confirmaccount-summary'      => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.',
@@ -243,7 +243,7 @@ $wgConfirmAccountMessages['bcl'] = array(
 	'requestaccount-real'         => 'Totoong pangaran:',
 	'requestaccount-same'         => '(pareho sa  totoong pangaran)',
 	'confirmaccount-real'         => 'Pangaran',
-	'confirmacount-submit'        => 'Kompermaron',
+	'confirmaccount-submit'        => 'Kompermaron',
 	'confirmaccount-wsum'         => 'Dagos!',
 );
 
@@ -305,15 +305,15 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 
 	# Confirm account page
 	'confirmaccounts'       => 'Benutzerkonto-Anträge bestätigen', 
-	'confirmacount-list'    => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
+	'confirmaccount-list'    => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
 	Bestätigte Konten werden angelegt und aus der Liste entfernt. Abgelehnte Konten werden einfach aus der Liste gelöscht.',
-	'confirmacount-text'    => 'Dies ist ein Antrag auf ein Benutzerkonto bei \'\'\'{{SITENAME}}\'\'\'. Prüfe alle unten
+	'confirmaccount-text'    => 'Dies ist ein Antrag auf ein Benutzerkonto bei \'\'\'{{SITENAME}}\'\'\'. Prüfe alle unten
 	stehenden Informationen gründlich und bestätige die Informationen wenn möglich. Bitte beachte, dass du den Zugang bei Bedarf unter
 	einem anderen Benutzernamen anlegen kannst. Du solltest dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.
 
 	Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.',
-	'confirmacount-none'    => 'Momentan gibt es keine offenen Benutzeranträge.',
-	'confirmacount-none2'   => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge.',
+	'confirmaccount-none'    => 'Momentan gibt es keine offenen Benutzeranträge.',
+	'confirmaccount-none2'   => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge.',
 	'confirmaccount-badid'  => 'Momentan gibt es keinen Benutzerantrag zur angegebenen ID. Möglicherweise wurde er bereits bearbeitet.',
 	'confirmaccount-back'   => 'Liste der offenen Anträge ansehen',
 	'confirmaccount-back2'  => 'Liste der kürzlich abgelehnten Anträge ansehen',
@@ -324,12 +324,12 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'confirmaccount-urls'   => 'Liste der Webseiten:',
 	'confirmaccount-nourls' => '(Nichts angegeben)',
 	'confirmaccount-review' => 'Bestätigen/Ablehnen',
-	'confirmacount-confirm' => 'Benutze die folgende Auswahl, um den Antrag zu akzeptieren oder abzulehnen.',
+	'confirmaccount-confirm' => 'Benutze die folgende Auswahl, um den Antrag zu akzeptieren oder abzulehnen.',
 	'confirmaccount-econf'  => '(bestätigt)',
-	'confirmacount-create'  => 'Bestätigen (Konto anlegen)',
-	'confirmacount-deny'    => 'Ablehnen (Antrag löschen)',
+	'confirmaccount-create'  => 'Bestätigen (Konto anlegen)',
+	'confirmaccount-deny'    => 'Ablehnen (Antrag löschen)',
 	'requestaccount-reason' => 'Kommentar (wird in die Mail an den Antragsteller eingefügt):',
-	'confirmacount-submit'  => 'Abschicken',
+	'confirmaccount-submit'  => 'Abschicken',
 	'confirmaccount-acc'    => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[{{ns:User}}:$1]] wurde angelegt.',
 	'confirmaccount-rej'    => 'Benutzerantrag wurde abgelehnt.',
 	'confirmaccount-summary' => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
@@ -435,14 +435,14 @@ Ce code de confirmation expirera le $4.',
 	
 	# Confirm account page
 	'confirmaccounts'       => 'Demande de confirmation de comptes', 
-	'confirmacount-list'    => 'Voici, ci-dessous, la liste des comptes en attente d’approbation.
+	'confirmaccount-list'    => 'Voici, ci-dessous, la liste des comptes en attente d’approbation.
 	Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront tout simplement supprimé de cette même liste.',
-	'confirmacount-list2'    => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
-	'confirmacount-text'    => 'Voici une demande en cours pour un compte utilisateur sur \'\'\'{{SITENAME}}\'\'\'. Attention, vérifier et, si nécessaire, confirmez toutes les information ci-dessous. Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres noms.
+	'confirmaccount-list2'    => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
+	'confirmaccount-text'    => 'Voici une demande en cours pour un compte utilisateur sur \'\'\'{{SITENAME}}\'\'\'. Attention, vérifier et, si nécessaire, confirmez toutes les information ci-dessous. Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres noms.
 
 	Si vous quittez cette page sans confirmer ou rejeter cette demande, elle sera toujours mise en attente.',
-	'confirmacount-none'    => 'Il n’a pas actuellement de demande d’approbation en cours.',
-	'confirmacount-none2'   => 'Il n’y a pas actuellement de rejet de demande de comptes.',
+	'confirmaccount-none'    => 'Il n’a pas actuellement de demande d’approbation en cours.',
+	'confirmaccount-none2'   => 'Il n’y a pas actuellement de rejet de demande de comptes.',
 	'confirmaccount-badid'  => 'Il n’y a aucune demande en cours correspondant à l’ID indiquée. Il est possible qu‘il ait subi une maintenance.',
 	'confirmaccount-back'   => 'Voir la liste des demandes en cours',
 	'confirmaccount-back2'  => 'Voir la liste des comptes rejetés récemment.',
@@ -453,13 +453,13 @@ Ce code de confirmation expirera le $4.',
 	'confirmaccount-urls'   => 'Liste des site web :',
 	'confirmaccount-nourls' => '(Aucun site)',
 	'confirmaccount-review' => 'Approbation/Rejet',
-	'confirmacount-confirm' => 'Utilisez les boutons ci-dessous pour accepter ou rejeter la demande.',
+	'confirmaccount-confirm' => 'Utilisez les boutons ci-dessous pour accepter ou rejeter la demande.',
 	'confirmaccount-econf'  => '(confirmé)',
 	'confirmaccount-reject' => '(rejeté par [[User:$1|$1]] le $2)',
-	'confirmacount-create'  => 'Approbation (crée le compte)',
-	'confirmacount-deny'    => 'Rejet (supprime le compte)',
+	'confirmaccount-create'  => 'Approbation (crée le compte)',
+	'confirmaccount-deny'    => 'Rejet (supprime le compte)',
 	'requestaccount-reason' => 'Commentaire (figurera dans le courriel) :',
-	'confirmacount-submit'  => 'Confirmation',
+	'confirmaccount-submit'  => 'Confirmation',
 	'confirmaccount-acc'    => 'La demande de compte a été confirmée avec succès ; création du nouvel utilisateur [[User:$1]].',
 	'confirmaccount-rej'    => 'La demande a été rejetée avec succès.',
 	'confirmaccount-summary' => 'Création de la page utilisateur avec sa biographie.',
@@ -539,13 +539,13 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'acct_request_throttle_hit'   => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
 	'requestaccount-loginnotice'   => 'Zo by wužiwarske konto dóstał, dyrbiš wo nje \'\'\'[[{{ns:special}}:RequestAccount|prosyć]]\'\'\'.',
 	'confirmaccounts'             => 'Kontowe požadanja potwjerdźić',
-	'confirmacount-list'          => 'Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.',
-	'confirmacount-list2'         => 'Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.',
-	'confirmacount-text'          => 'To je njerozsudźene požadanje za wužiwarskim kontom pola \'\'\'{{SITENAME}}\'\'\'. Pruwuj wšě deleka stejace informacije dokładnje a potwjerdź je. Prošu wobkedźbuj, zo móžeš konto, jeli trjeba, pod druhim wužiwarskim mjenom wutworić. Wužij to jenož, zo by kolizije z druhimi mjenami wobešoł.
+	'confirmaccount-list'          => 'Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.',
+	'confirmaccount-list2'         => 'Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.',
+	'confirmaccount-text'          => 'To je njerozsudźene požadanje za wužiwarskim kontom pola \'\'\'{{SITENAME}}\'\'\'. Pruwuj wšě deleka stejace informacije dokładnje a potwjerdź je. Prošu wobkedźbuj, zo móžeš konto, jeli trjeba, pod druhim wužiwarskim mjenom wutworić. Wužij to jenož, zo by kolizije z druhimi mjenami wobešoł.
 
 Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wotpokazał, budźe požadanje njerozsudźene wostać.',
-	'confirmacount-none'          => 'Tuchwilu njerozsudźene wužiwarske požadanja njejsu.',
-	'confirmacount-none2'         => 'Tuchwilu njedawno wotpokazane wužiwarske požadanja njejsu.',
+	'confirmaccount-none'          => 'Tuchwilu njerozsudźene wužiwarske požadanja njejsu.',
+	'confirmaccount-none2'         => 'Tuchwilu njedawno wotpokazane wužiwarske požadanja njejsu.',
 	'confirmaccount-badid'        => 'Tuchwilu požadane k podatemu ID. Snano bu hižo sčinjene.',
 	'confirmaccount-back'         => 'Lisćinu njerozsudźenych požadanjow wobhladać',
 	'confirmaccount-back2'        => 'Lisćinu njedawno wotpokazanych požadanjow wobhladać',
@@ -556,13 +556,13 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-urls'         => 'Lisćina webowych sydłow:',
 	'confirmaccount-nourls'       => '(Ničo podate)',
 	'confirmaccount-review'       => 'Dowolić/Wotpokazać',
-	'confirmacount-confirm'       => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
+	'confirmaccount-confirm'       => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
 	'confirmaccount-econf'        => '(potwjerdźene)',
 	'confirmaccount-reject'       => '(wot [[Wužiwar:$1|$1]] na $2 wotpokazany)',
-	'confirmacount-create'        => 'Akceptować (Konto wutworić)',
-	'confirmacount-deny'          => 'Wotpokazać (Požadanje wotstronić)',
+	'confirmaccount-create'        => 'Akceptować (Konto wutworić)',
+	'confirmaccount-deny'          => 'Wotpokazać (Požadanje wotstronić)',
 	'requestaccount-reason'       => 'Komentar (zasunje so do mejlki)',
-	'confirmacount-submit'        => 'Potwjerdźić',
+	'confirmaccount-submit'        => 'Potwjerdźić',
 	'confirmaccount-acc'          => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[{{ns:User}}:$1]] bu wutworjene.',
 	'confirmaccount-rej'          => 'Požadanje za kontom bu wotpokazane.',
 	'confirmaccount-summary'      => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
@@ -651,19 +651,19 @@ Deze bevestigingse-mail verloop op $4.',
 	'acct_request_throttle_hit'   => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
 	'requestaccount-loginnotice'   => 'Om een gebruiker te krijgen, moet u \'\'\'[[Special:RequestAccount|een verzoek doen]]\'\'\'.',
 	'confirmaccounts'             => 'Bevestig gebruikersverzoeken',
-	'confirmacount-list'          => 'Hieronder staan de gebruikersverzoeken die op afhandeling wachten. 
+	'confirmaccount-list'          => 'Hieronder staan de gebruikersverzoeken die op afhandeling wachten. 
 	Voor goedgekeurde gebruikersverzoeken worden gebruikers aangemaakt en dat verzoek komt niet langer voor in deze lijst. 
 	Afgewezen gebruikersverzoeken worden van de lijst verwijderd.',
-	'confirmacount-list2'         => 'Hieronder staan recentelijk afgewezen gebruikersverzoeken die die over een aantal dagen
+	'confirmaccount-list2'         => 'Hieronder staan recentelijk afgewezen gebruikersverzoeken die die over een aantal dagen
 	automatisch worden verwijderd. Ze kunnen nog steeds goedgekeurd worden, hoewel het verstandig is voorafgaand contact te
 	zoeken met de beheerder die het verzoek heeft afgewezen.',
-	'confirmacount-text'          => 'Dit is een openstaand gebruikersverzoek voor \'\'\'{{SITENAME}}\'\'\'. Beoordeel het
+	'confirmaccount-text'          => 'Dit is een openstaand gebruikersverzoek voor \'\'\'{{SITENAME}}\'\'\'. Beoordeel het
 	alstublieft zorgvuldig en bevestig, als nodig, alle onderstaande informatie. U kunt een gebruiker aanmaken met een andere
 	naam. Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
 	
 	Als u deze pagina verlaat zonder het gebruikersverzoek te bevestigen of af te wijzen, dan blijft het open staan.',
-	'confirmacount-none'          => 'Er zijn op dit moment geen openstaande gebruikersverzoeken.',
-	'confirmacount-none2'         => 'Er zijn op het moment geen recent afgewezen gebruikersverzoeken.',
+	'confirmaccount-none'          => 'Er zijn op dit moment geen openstaande gebruikersverzoeken.',
+	'confirmaccount-none2'         => 'Er zijn op het moment geen recent afgewezen gebruikersverzoeken.',
 	'confirmaccount-badid'        => 'Er is geen openstaand gebruikersverzoeken voor het opgegeven ID. Wellicht is het al afgehandeld.',
 	'confirmaccount-back'         => 'Bekijk openstaande gebruikersverzoeken',
 	'confirmaccount-back2'        => 'Bekijk recent afgewezen verzoeken',
@@ -674,13 +674,13 @@ Deze bevestigingse-mail verloop op $4.',
 	'confirmaccount-urls'         => 'Lijst met websites:',
 	'confirmaccount-nourls'       => '(niet opgegeven)',
 	'confirmaccount-review'       => 'toegelaten/afgewezen',
-	'confirmacount-confirm'       => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
+	'confirmaccount-confirm'       => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
 	'confirmaccount-econf'        => '(bevestigd)',
 	'confirmaccount-reject'       => '(afgewezen door [[User:$1|$1]] op $2)',
-	'confirmacount-create'        => 'Toelaten (gebruiker aanmaken)',
-	'confirmacount-deny'          => 'Afwijzen (verwijderen)',
+	'confirmaccount-create'        => 'Toelaten (gebruiker aanmaken)',
+	'confirmaccount-deny'          => 'Afwijzen (verwijderen)',
 	'requestaccount-reason'       => 'Opmerking (wordt opgenomen in de e-mail):',
-	'confirmacount-submit'        => 'Bevestigen',
+	'confirmaccount-submit'        => 'Bevestigen',
 	'confirmaccount-acc'          => 'Gebruikersverzoek goedgekeurd. De gebruiker [[User:$1]] is aangemaakt.',
 	'confirmaccount-rej'          => 'Gebruikersverzoek afgewezen.',
 	'confirmaccount-summary'      => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
@@ -797,17 +797,17 @@ $3
 	
 	# Confirm account page
 	'confirmaccounts'       => '確認戶口請求', 
-	'confirmacount-list'    => '下面係等緊批准嘅用戶請求一覽。 
+	'confirmaccount-list'    => '下面係等緊批准嘅用戶請求一覽。 
 	已經批准嘅戶口將會建立同埋響呢個表度拎走。拒絕咗嘅用戶將會就噉響呢個表度拎走。',
-	'confirmacount-list2'    => '下面係一個先前拒絕過嘅戶口請求，可能會響幾日之後刪除。
+	'confirmaccount-list2'    => '下面係一個先前拒絕過嘅戶口請求，可能會響幾日之後刪除。
 	佢哋仍舊可以批准去開一個戶口，但係響你做之前請問吓拒絕嘅管理員先。',
-	'confirmacount-text'    => '呢個係響\'\'\'{{SITENAME}}\'\'\'度等候請求戶口嘅一版。
+	'confirmaccount-text'    => '呢個係響\'\'\'{{SITENAME}}\'\'\'度等候請求戶口嘅一版。
 	請小心去睇過，有需要嘅話，就要確認埋佢下面全部嘅資料。
 	要留意嘅係你可以用另一個用戶名去開一個戶口。只係同其他嘅名有衝突嗰陣先至去做。
 	
 	如果你無確認或者拒絕呢個請求，就噉留低呢版嘅話，佢就會維持等候狀態。',
-	'confirmacount-none'    => '現時無未決定嘅請求。',
-	'confirmacount-none2'   => '現時無最近拒絕嘅戶口請求。',
+	'confirmaccount-none'    => '現時無未決定嘅請求。',
+	'confirmaccount-none2'   => '現時無最近拒絕嘅戶口請求。',
 	'confirmaccount-badid'  => '提供嘅ID係無未決定嘅請求。佢可能已經被處理咗。',
 	'confirmaccount-back'   => '去睇未決定嘅戶口一覽',
 	'confirmaccount-back2'  => '去睇先前拒絕咗嘅戶口一覽',
@@ -818,13 +818,13 @@ $3
 	'confirmaccount-urls'   => '網站一覽:',
 	'confirmaccount-nourls' => '(無提供)',
 	'confirmaccount-review' => '批准/拒絕',
-	'confirmacount-confirm' => '用下面嘅掣去批准或拒絕呢個請求。',
+	'confirmaccount-confirm' => '用下面嘅掣去批准或拒絕呢個請求。',
 	'confirmaccount-econf'  => '(已批准)',
 	'confirmaccount-reject' => '(響$2被[[User:$1|$1]]拒絕)',
-	'confirmacount-create'  => '接受 (開戶口)',
-	'confirmacount-deny'    => '拒絕 (反列示)',
+	'confirmaccount-create'  => '接受 (開戶口)',
+	'confirmaccount-deny'    => '拒絕 (反列示)',
 	'requestaccount-reason' => '註解 (會用響封電郵度):',
-	'confirmacount-submit'  => '確認',
+	'confirmaccount-submit'  => '確認',
 	'confirmaccount-acc'    => '戶口請求已經成功噉確認；開咗一個新嘅用戶戶口[[User:$1]]。',
 	'confirmaccount-rej'    => '戶口請求已經成功噉拒絕。',
 	'confirmaccount-summary' => '開緊一個新用戶擁有傳記嘅用戶頁。',
@@ -908,17 +908,17 @@ $3
 	
 	# Confirm account page
 	'confirmaccounts'       => '确认户口请求', 
-	'confirmacount-list'    => '以下是正在等候批准的用户请求列表。 
+	'confirmaccount-list'    => '以下是正在等候批准的用户请求列表。 
 	已经批准的账户将会创建以及在这个列表中移除。已拒绝的用户将只会在这个表中移除。',
-	'confirmacount-list2'   => '以下是一个先前拒绝过的帐口请求，可能会在数日后删除。
+	'confirmaccount-list2'   => '以下是一个先前拒绝过的帐口请求，可能会在数日后删除。
 	它们仍旧可以批准创建一个账户，但是在您作之前请先问拒绝该账户的管理员。',
-	'confirmacount-text'    => '这个是在\'\'\'{{SITENAME}}\'\'\'中等候请求账户的页面。
+	'confirmaccount-text'    => '这个是在\'\'\'{{SITENAME}}\'\'\'中等候请求账户的页面。
 	请小心阅读，有需要的话，就要同时确认它下面的全部资料。
 	要留意的是您可以用另一个用户名字去创建一个账户。只有其他的名字有冲突时才需要去作。
 	
 	如果你无确认或者拒绝这个请求，只留下这页面的话，它便会维持等候状态。',
-	'confirmacount-none'    => '现时没有未决定的请求。',
-	'confirmacount-none2'   => '现时没有最近拒绝的账户请求。',
+	'confirmaccount-none'    => '现时没有未决定的请求。',
+	'confirmaccount-none2'   => '现时没有最近拒绝的账户请求。',
 	'confirmaccount-badid'  => '提供的ID是没有未决定的请求。它可能已经被处理。',
 	'confirmaccount-back'   => '查看未决定的账户列表',
 	'confirmaccount-back2'  => '查看先前拒绝过的账户列表',
@@ -929,13 +929,13 @@ $3
 	'confirmaccount-urls'   => '网站列表:',
 	'confirmaccount-nourls' => '(没有提供)',
 	'confirmaccount-review' => '批准/拒绝',
-	'confirmacount-confirm' => '用以下的按钮去批准或拒绝这个请求。',
+	'confirmaccount-confirm' => '用以下的按钮去批准或拒绝这个请求。',
 	'confirmaccount-econf'  => '(已批准)',
 	'confirmaccount-reject' => '(于$2被[[User:$1|$1]]拒绝)',
-	'confirmacount-create'  => '接受 (创建账户)',
-	'confirmacount-deny'    => '拒绝 (反列示)',
+	'confirmaccount-create'  => '接受 (创建账户)',
+	'confirmaccount-deny'    => '拒绝 (反列示)',
 	'requestaccount-reason' => '注解 (在电邮中使用):',
-	'confirmacount-submit'  => '确认',
+	'confirmaccount-submit'  => '确认',
 	'confirmaccount-acc'    => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
 	'confirmaccount-rej'    => '账户请求已经成功拒绝。',
 	'confirmaccount-summary' => '正在创建一个新用户拥有传记的用户页面。',
@@ -1019,17 +1019,17 @@ $3
 	
 	# Confirm account page
 	'confirmaccounts'       => '確認戶口請求', 
-	'confirmacount-list'    => '以下是正在等候批准的用戶請求列表。 
+	'confirmaccount-list'    => '以下是正在等候批准的用戶請求列表。 
 	已經批准的帳戶將會創建以及在這個列表中移除。已拒絕的用戶將只會在這個表中移除。',
-	'confirmacount-list2'   => '以下是一個先前拒絕過的帳口請求，可能會在數日後刪除。
+	'confirmaccount-list2'   => '以下是一個先前拒絕過的帳口請求，可能會在數日後刪除。
 	它們仍舊可以批准創建一個帳戶，但是在您作之前請先問拒絕該帳戶的管理員。',
-	'confirmacount-text'    => '這個是在\'\'\'{{SITENAME}}\'\'\'中等候請求帳戶的頁面。
+	'confirmaccount-text'    => '這個是在\'\'\'{{SITENAME}}\'\'\'中等候請求帳戶的頁面。
 	請小心閱讀，有需要的話，就要同時確認它下面的全部資料。
 	要留意的是您可以用另一個用戶名字去創建一個帳戶。只有其他的名字有衝突時才需要去作。
 	
 	如果你無確認或者拒絕這個請求，只留下這頁面的話，它便會維持等候狀態。',
-	'confirmacount-none'    => '現時沒有未決定的請求。',
-	'confirmacount-none2'   => '現時沒有最近拒絕的帳戶請求。',
+	'confirmaccount-none'    => '現時沒有未決定的請求。',
+	'confirmaccount-none2'   => '現時沒有最近拒絕的帳戶請求。',
 	'confirmaccount-badid'  => '提供的ID是沒有未決定的請求。它可能已經被處理。',
 	'confirmaccount-back'   => '檢視未決定的帳戶列表',
 	'confirmaccount-back2'  => '檢視先前拒絕過的帳戶列表',
@@ -1040,13 +1040,13 @@ $3
 	'confirmaccount-urls'   => '網站列表:',
 	'confirmaccount-nourls' => '(沒有提供)',
 	'confirmaccount-review' => '批准/拒絕',
-	'confirmacount-confirm' => '用以下的按鈕去批准或拒絕這個請求。',
+	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。',
 	'confirmaccount-econf'  => '(已批准)',
 	'confirmaccount-reject' => '(於$2被[[User:$1|$1]]拒絕)',
-	'confirmacount-create'  => '接受 (創建帳戶)',
-	'confirmacount-deny'    => '拒絕 (反列示)',
+	'confirmaccount-create'  => '接受 (創建帳戶)',
+	'confirmaccount-deny'    => '拒絕 (反列示)',
 	'requestaccount-reason' => '註解 (在電郵中使用):',
-	'confirmacount-submit'  => '確認',
+	'confirmaccount-submit'  => '確認',
 	'confirmaccount-acc'    => '帳戶請求已經成功確認；已經創建一個新的用戶帳號[[User:$1]]。',
 	'confirmaccount-rej'    => '帳戶請求已經成功拒絕。',
 	'confirmaccount-summary' => '正在創建一個新用戶擁有傳記的用戶頁面。',

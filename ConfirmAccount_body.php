@@ -543,7 +543,7 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
 		
-		$wgOut->addWikiText( wfMsg( "confirmacount-text" ) );
+		$wgOut->addWikiText( wfMsg( "confirmaccount-text" ) );
 		
 		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
 		$form = "<form name='accountconfirm' action='$action' method='post'><fieldset>";
@@ -579,17 +579,17 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<p>".$this->parseLinks($row->acr_urls)."</p>";
 		$form .= '</fieldset>';
 		
-		$form .= "<p>".wfMsgExt( 'confirmacount-confirm', array('parse') )."</p>\n";
+		$form .= "<p>".wfMsgExt( 'confirmaccount-confirm', array('parse') )."</p>\n";
 		$form .= "<p>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept', array('id' => 'submitCreate') );
-		$form .= ' '.Xml::label( wfMsg('confirmacount-create'), 'submitCreate' )."</p>\n";
+		$form .= ' '.Xml::label( wfMsg('confirmaccount-create'), 'submitCreate' )."</p>\n";
 		$form .= "<p>".Xml::radio( 'wpSubmitType', 'reject', $this->submitType=='reject', array('id' => 'submitDeny') );
-		$form .= ' '.Xml::label( wfMsg('confirmacount-deny'), 'submitDeny' )."</p>\n";
+		$form .= ' '.Xml::label( wfMsg('confirmaccount-deny'), 'submitDeny' )."</p>\n";
 
 		$form .= "<p>".wfMsgHtml('requestaccount-reason')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%'>" .
 			htmlspecialchars($this->reason) .
 			"</textarea></p>";
-		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmacount-submit') )."</p>\n";
+		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
 		
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
@@ -675,17 +675,17 @@ class ConfirmAccountsPage extends SpecialPage
 		$pager = new ConfirmAccountsPager( $this, array(), $this->showRejects );	
 		if ( $pager->getNumRows() ) {
 			if( $this->showRejects )
-				$wgOut->addHTML( wfMsgExt('confirmacount-list2', array('parse') ) );
+				$wgOut->addHTML( wfMsgExt('confirmaccount-list2', array('parse') ) );
 			else
-				$wgOut->addHTML( wfMsgExt('confirmacount-list', array('parse') ) );
+				$wgOut->addHTML( wfMsgExt('confirmaccount-list', array('parse') ) );
 			$wgOut->addHTML( $pager->getNavigationBar() );
 			$wgOut->addHTML( "<ul>" . $pager->getBody() . "</ul>" );
 			$wgOut->addHTML( $pager->getNavigationBar() );
 		} else {
 			if( $this->showRejects )
-				$wgOut->addHTML( wfMsgExt('confirmacount-none2', array('parse')) );
+				$wgOut->addHTML( wfMsgExt('confirmaccount-none2', array('parse')) );
 			else
-				$wgOut->addHTML( wfMsgExt('confirmacount-none', array('parse')) );
+				$wgOut->addHTML( wfMsgExt('confirmaccount-none', array('parse')) );
 		}
 	}
 	

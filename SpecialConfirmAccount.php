@@ -50,7 +50,7 @@ function efLoadConfirmAccountsMessages() {
 function efAddRequestLoginText( &$template ) {
 	efLoadConfirmAccountsMessages();
 	
-	$template->set( 'header', wfMsgExt('requestacount-loginnotice', array('parse') ) );
+	$template->set( 'header', wfMsgExt('requestaccount-loginnotice', array('parse') ) );
 	
 	return true;
 }
