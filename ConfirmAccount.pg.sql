@@ -18,9 +18,9 @@ CREATE TABLE account_requests (
   acr_notes                TEXT,
   acr_urls                 TEXT,
   acr_ip                   CIDR,
-  acr_deleted              BOOL     NOT NULL,
+  acr_deleted              BOOL     NOT NULL DEFAULT 'false',
   acr_rejected             TIMESTAMPTZ,
-  acr_user                 INTEGER                REFERENCES mwuser(user_id) ON DELETE SET NULL
+  acr_user                 INTEGER  REFERENCES mwuser(user_id) ON DELETE SET NULL
 );
 
 CREATE INDEX acr_deleted_reg ON account_requests (acr_deleted,acr_registration);
