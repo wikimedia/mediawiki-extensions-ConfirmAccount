@@ -48,9 +48,13 @@ function efLoadConfirmAccountsMessages() {
 }
 
 function efAddRequestLoginText( &$template ) {
+	global $wgUser;
+
 	efLoadConfirmAccountsMessages();
 	
-	$template->set( 'header', wfMsgExt('requestaccount-loginnotice', array('parse') ) );
+	if( !$wgUser->isAllowed('createaccount') ) {
+		$template->set( 'header', wfMsgExt('requestaccount-loginnotice', array('parse') ) );
+	}
 	
 	return true;
 }
