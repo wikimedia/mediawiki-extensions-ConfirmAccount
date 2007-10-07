@@ -16,7 +16,7 @@ class RequestAccountPage extends SpecialPage {
 	function execute( $subpage ) {
 		global $wgUser, $wgOut, $wgRequest, $action, $wgUseRealNamesOnly;
 
-		if( $wgUser->isBlocked() ) {
+		if( $wgUser->isBlockedFromCreateAccount() ) {
 			$wgOut->blockedPage();
 			return;
 		}
