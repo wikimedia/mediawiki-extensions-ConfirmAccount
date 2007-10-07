@@ -35,7 +35,7 @@ $wgAccountRequestThrottle = 1;
 # Minimum biography specs
 $wgAccountRequestMinWords = 50;
 
-$wgGroupPermissions['*']['createaccount'] = false;
+$wgGroupPermissions['*']['confirmaccount'] = false;
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
 
 # Internationalisation
