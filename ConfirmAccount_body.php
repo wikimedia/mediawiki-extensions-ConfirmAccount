@@ -672,7 +672,8 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 		}
 
-		$pager = new ConfirmAccountsPager( $this, array(), $this->showRejects );	
+		$pager = new ConfirmAccountsPager( $this, array(), $this->showRejects );
+			
 		if ( $pager->getNumRows() ) {
 			if( $this->showRejects )
 				$wgOut->addHTML( wfMsgExt('confirmaccount-list2', array('parse') ) );
@@ -744,6 +745,9 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 			$this->mConds['acr_deleted'] = 0;
 		$this->rejects = $rejects;
 		parent::__construct();
+		# Treat 20 as the default limit, since each entry takes up 5 rows.
+		$urlLimit = $this->mRequest->getInt( 'limit' );
+		$this->mLimit = $urlLimit ? $urlLimit : 20;
 	}
 	
 	function formatRow( $row ) {
