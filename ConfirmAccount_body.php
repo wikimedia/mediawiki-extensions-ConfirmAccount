@@ -26,13 +26,14 @@ class RequestAccountPage extends SpecialPage {
 		}
 
 		$this->setHeaders();
+
+		$this->mRealName = $wgRequest->getText( 'wpRealName' );
 		# We may only want real names being used
 		if( $wgUseRealNamesOnly )
-			$this->mUsername =  $wgRequest->getText( 'wpRealName' );
+			$this->mUsername = $this->mRealName;
 		else
 			$this->mUsername = $wgRequest->getText( 'wpUsername' );
-		# Grab other info fields...
-		$this->mRealName = $wgRequest->getText( 'wpRealName' );
+		# Other fields...
 		$this->mEmail = $wgRequest->getText( 'wpEmail' );
 		$this->mBio = $wgRequest->getText( 'wpBio', '' );
 		$this->mNotes = $wgRequest->getText( 'wpNotes', '' );
@@ -691,7 +692,7 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 	
 	function formatRow( $row ) {
-		global $wgLang, $wgUser;
+		global $wgLang, $wgUser, $wgUseRealNamesOnly;
 
 		$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
 		if( $this->showRejects ) {
@@ -709,8 +710,10 @@ class ConfirmAccountsPage extends SpecialPage
 			$r .= ' <b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name, $time ).'</b>';
 		}
 		$r .= '<br/><table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
-		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
-			htmlspecialchars($row->acr_name) . '</td></tr>';
+		if( !$wgUseRealNamesOnly ) {
+			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
+				htmlspecialchars($row->acr_name) . '</td></tr>';
+		}
 		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_real_name) . '</td></tr>';
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
