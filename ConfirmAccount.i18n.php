@@ -268,17 +268,17 @@ $wgConfirmAccountMessages['de'] = array(
 	'requestaccount-bio-text' => "Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert. Versuche alle nötigen
 	Empfehlungen zu erwähnen, aber stelle sicher, dass du die Informationen auch wirklich veröffentlichen möchtest. Du kannst deinen
 	Namen unter „[[{{ns:special}}:preferences|Einstellungen]]“ ändern.",
-	'requestaccount-real'     => 'Real-Name:',
-	'requestaccount-same'     => '(wie der Real-Name)',
+	'requestaccount-real'     => 'Realname:',
+	'requestaccount-same'     => '(wie der Realname)',
 	'requestaccount-email'    => 'E-Mail-Adresse:',
 	'requestaccount-bio'      => 'Persönliche Biographie:',
 	'requestaccount-notes'    => 'Zusätzliche Angaben:',
 	'requestaccount-urls'     => 'Liste von Webseiten (durch Zeilenumbrüche getrennt):',
-	'requestaccount-agree'    => 'Du musst bestätigen, dass Dein Real-Name korrekt ist und du die Benutzerbedingungen akzeptierst.',
+	'requestaccount-agree'    => 'Du musst bestätigen, dass Dein Realname korrekt ist und du die Benutzerbedingungen akzeptierst.',
 	'requestaccount-inuse'    => 'Der Benutzername ist bereits in einem anderen Benutzerantrag in Verwendung.',
 	'requestaccount-tooshort' => 'Deine Biographie sollte mindestens $1 Worte lang sein.',
-	'requestaccount-tos'      => 'Ich habe die Benutzerbedingungen von {{SITENAME}} gelesen und akzeptiere sie.
-	Ich bestätige, dass der Name, den ich unter „Real-Name“ angegeben habe, mein wirklicher Name ist.',
+	'requestaccount-tos'      => 'Ich habe die [[{{NS:PROJECT}}:Benutzungsbedingungen|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
+	Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
 	'requestaccount-submit'    => 'Benutzerkonto beantragen',
 	'requestaccount-sent'     => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
 	'request-account-econf'   => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
@@ -334,8 +334,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'confirmaccount-rej'    => 'Benutzerantrag wurde abgelehnt.',
 	'confirmaccount-summary' => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
 	'confirmaccount-welc'   => "'''Willkommen bei ''{{SITENAME}}''!''' Wir hoffen, dass du viele gute Informationen beisteuerst.
-	Möglicherweise möchtest Du zunächst [[{{NS:PROJECT}}:Erste Schritte|Erste Schritte]]. Nochmal: Willkommen und hab' Spaß! 
-	~~~~",
+	Möglicherweise möchtest Du zunächst [[{{NS:PROJECT}}:Erste Schritte|Erste Schritte]]. Nochmal: Willkommen und hab' Spaß!~",
 	'confirmaccount-wsum'   => 'Willkommen!',
 	'confirmaccount-email-subj' => '{{SITENAME}} Antrag auf Benutzerkonto',
 	'confirmaccount-email-body' => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
