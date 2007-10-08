@@ -608,6 +608,9 @@ class ConfirmAccountsPage extends SpecialPage
 	 */
 	function parseLinks( $text ) {
 		global $wgParser, $wgTitle, $wgUser;
+		# Don't let this get flooded
+		$max = 10;
+		$count = 0;
 
 		$linkList = '';
 		$lines = explode( "\n", htmlspecialchars($text) );
@@ -616,6 +619,9 @@ class ConfirmAccountsPage extends SpecialPage
 			$link = $links[0];
 			if( strpos($link,'.') )
 				$linkList .= "<li><a href='$link'>$link</a></li>\n";
+			$count++;
+			if( $count >= $max )
+				break;
 		}
 		if( $linkList == '' ) {
 			$linkList = wfMsgHtml( 'confirmaccount-nourls' );
