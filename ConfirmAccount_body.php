@@ -92,7 +92,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."</p>";
 		$form .= "<p><textarea tabindex='1' name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
 			htmlspecialchars($this->mBio) .
-			"</textarea></p>";
+			"</textarea></p>\n";
 		$form .= '</fieldset>';
 
 		$form .= '<fieldset>';
@@ -106,7 +106,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= "<p>".wfMsgHtml('requestaccount-urls')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
 			htmlspecialchars($this->mUrls) .
-			"</textarea></p>";
+			"</textarea></p>\n";
 		$form .= '</fieldset>';
 
 		# Pseudo template for extensions
@@ -124,7 +124,6 @@ class RequestAccountPage extends SpecialPage {
 		}
 		$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
 			' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
-		
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestaccount-submit') ) . "</p>";
@@ -567,7 +566,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."</p>";
 		$form .= "<p><textarea tabindex='1' readonly name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_bio) .
-			"</textarea></p>";
+			"</textarea></p>\n";
 		$form .= '</fieldset>';
 		
 		$form .= '<fieldset>';
@@ -589,9 +588,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<p>".wfMsgHtml('requestaccount-reason')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%'>" .
 			htmlspecialchars($this->reason) .
-			"</textarea></p>";
+			"</textarea></p>\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
-		
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
 		$form .= Xml::hidden( 'acrid', $row->acr_id );
