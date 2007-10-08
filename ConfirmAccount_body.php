@@ -488,7 +488,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$user->saveSettings(); // Save this into the DB
 			# Check if the user already confirmed email address
 			$dbw = wfGetDB( DB_MASTER );
-			$dbw->update( 'user', 
+			$dbw->update( 'user',
 				array( 'user_email_authenticated' => $row->acr_email_authenticated,
 					'user_email_token_expires' => $row->acr_email_token_expires,
 					'user_email_token' => $row->acr_email_token ),
@@ -506,7 +506,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$userpage = new Article( $user->getUserPage() );
 				
 				$autotext = strval($wgAutoUserBioText);
-				$body = $autotext ? "$body\n$autotext" : $body;
+				$body = $autotext ? "{$row->acr_bio}\n{$autotext}" : $row->acr_bio;
 				
 				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
 			}
