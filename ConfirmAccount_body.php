@@ -619,8 +619,10 @@ class ConfirmAccountsPage extends SpecialPage
 		foreach( $lines as $line ) {
 			$links = explode("\n",$line);
 			$link = $links[0];
-			if( strpos($link,'.') )
+			if( strpos($link,'.') ) {
+				$link = ( strpos($link,'http://')===false ) ? 'http://'.$link : $link;
 				$linkList .= "<li><a href='$link'>$link</a></li>\n";
+			}
 			$count++;
 			if( $count >= $max )
 				break;
