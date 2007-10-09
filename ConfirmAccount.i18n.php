@@ -253,19 +253,19 @@ $wgConfirmAccountMessages['bcl'] = array(
 $wgConfirmAccountMessages['de'] = array(
 	# Request account page
 	'requestaccount'          => 'Benutzerkonto beantragen',
-	'requestaccount-text'      => '\'\'\'Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen\'\'\'. 
+	'requestaccount-text'     => '\'\'\'Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen\'\'\'. 
 
 	Bitte lies zunächst die [[{{NS:PROJECT}}:Nutzungsbedingungen|Nutzungsbedingungen]] bevor du ein Benutzerkonto beantragst.
 
 	Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[{{ns:special}}:Userlogin|Anmelden]]“ einloggen.',
 	'requestaccount-dup'      => '\'\'\'Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.\'\'\'',
-	'requestaccount-legend1'   => 'Benutzerkonto',
-	'requestaccount-legend2'   => 'Persönliche Informationen',
-	'requestaccount-legend3'   => 'Weitere Informationen',
-	'requestaccount-acc-text'  => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
+	'requestaccount-legend1'  => 'Benutzerkonto',
+	'requestaccount-legend2'  => 'Persönliche Informationen',
+	'requestaccount-legend3'  => 'Weitere Informationen',
+	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
 	Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst. Sobald dein Konto angelegt wurde,
 	wird dir dein Passwort per E-Mail zugeschickt.',
-	'requestaccount-ext-text'  => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag
+	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag
 	verwendet. Du kannst Kontakt-Angaben wie eine Telefonnummer machen, um die Bearbeitung deines Antrags zu vereinfachen.',
 	'requestaccount-bio-text' => "Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert. Versuche alle nötigen
 	Empfehlungen zu erwähnen, aber stelle sicher, dass du die Informationen auch wirklich veröffentlichen möchtest. Du kannst deinen
@@ -281,7 +281,7 @@ $wgConfirmAccountMessages['de'] = array(
 	'requestaccount-tooshort' => 'Deine Biographie sollte mindestens $1 Worte lang sein.',
 	'requestaccount-tos'      => 'Ich habe die [[{{NS:PROJECT}}:Benutzungsbedingungen|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
 	Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
-	'requestaccount-submit'    => 'Benutzerkonto beantragen',
+	'requestaccount-submit'   => 'Benutzerkonto beantragen',
 	'requestaccount-sent'     => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
 	'request-account-econf'   => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
 	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adressen Prüfung',
@@ -306,7 +306,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'requestaccount-loginnotice' => 'Um ein neues Benutzerkonto zu erhalten, musst du es \'\'\'[[{{ns:special}}:RequestAccount|beantragen]]\'\'\'.',
 
 	# Confirm account page
-	'confirmaccounts'       => 'Benutzerkonto-Anträge bestätigen', 
+	'confirmaccounts'        => 'Benutzerkonto-Anträge bestätigen', 
 	'confirmaccount-list'    => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
 	Bestätigte Konten werden angelegt und aus der Liste entfernt. Abgelehnte Konten werden einfach aus der Liste gelöscht.',
 	'confirmaccount-text'    => 'Dies ist ein Antrag auf ein Benutzerkonto bei \'\'\'{{SITENAME}}\'\'\'. Prüfe alle unten
@@ -316,28 +316,28 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.',
 	'confirmaccount-none'    => 'Momentan gibt es keine offenen Benutzeranträge.',
 	'confirmaccount-none2'   => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge.',
-	'confirmaccount-badid'  => 'Momentan gibt es keinen Benutzerantrag zur angegebenen ID. Möglicherweise wurde er bereits bearbeitet.',
-	'confirmaccount-back'   => 'Liste der offenen Anträge ansehen',
-	'confirmaccount-back2'  => 'Liste der kürzlich abgelehnten Anträge ansehen',
-	'confirmaccount-name'   => 'Benutzername',
-	'confirmaccount-real'   => 'Name',
-	'confirmaccount-email'  => 'E-Mail',
-	'confirmaccount-bio'    => 'Biographie',
-	'confirmaccount-urls'   => 'Liste der Webseiten:',
-	'confirmaccount-nourls' => '(Nichts angegeben)',
-	'confirmaccount-review' => 'Bestätigen/Ablehnen',
+	'confirmaccount-badid'   => 'Momentan gibt es keinen Benutzerantrag zur angegebenen ID. Möglicherweise wurde er bereits bearbeitet.',
+	'confirmaccount-back'    => 'Liste der offenen Anträge ansehen',
+	'confirmaccount-back2'   => 'Liste der kürzlich abgelehnten Anträge ansehen',
+	'confirmaccount-name'    => 'Benutzername',
+	'confirmaccount-real'    => 'Name',
+	'confirmaccount-email'   => 'E-Mail',
+	'confirmaccount-bio'     => 'Biographie',
+	'confirmaccount-urls'    => 'Liste der Webseiten:',
+	'confirmaccount-nourls'  => '(Nichts angegeben)',
+	'confirmaccount-review'  => 'Bestätigen/Ablehnen',
 	'confirmaccount-confirm' => 'Benutze die folgende Auswahl, um den Antrag zu akzeptieren oder abzulehnen.',
-	'confirmaccount-econf'  => '(bestätigt)',
+	'confirmaccount-econf'   => '(bestätigt)',
 	'confirmaccount-create'  => 'Bestätigen (Konto anlegen)',
 	'confirmaccount-deny'    => 'Ablehnen (Antrag löschen)',
-	'requestaccount-reason' => 'Kommentar (wird in die Mail an den Antragsteller eingefügt):',
+	'confirmaccount-reason'  => 'Kommentar (wird in die Mail an den Antragsteller eingefügt):',
 	'confirmaccount-submit'  => 'Abschicken',
-	'confirmaccount-acc'    => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[{{ns:User}}:$1]] wurde angelegt.',
-	'confirmaccount-rej'    => 'Benutzerantrag wurde abgelehnt.',
+	'confirmaccount-acc'     => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[{{ns:User}}:$1]] wurde angelegt.',
+	'confirmaccount-rej'     => 'Benutzerantrag wurde abgelehnt.',
 	'confirmaccount-summary' => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
-	'confirmaccount-welc'   => "'''Willkommen bei ''{{SITENAME}}''!''' Wir hoffen, dass du viele gute Informationen beisteuerst.
+	'confirmaccount-welc'    => "'''Willkommen bei ''{{SITENAME}}''!''' Wir hoffen, dass du viele gute Informationen beisteuerst.
 	Möglicherweise möchtest Du zunächst [[{{NS:PROJECT}}:Erste Schritte|Erste Schritte]]. Nochmal: Willkommen und hab' Spaß!~",
-	'confirmaccount-wsum'   => 'Willkommen!',
+	'confirmaccount-wsum'    => 'Willkommen!',
 	'confirmaccount-email-subj' => '{{SITENAME}} Antrag auf Benutzerkonto',
 	'confirmaccount-email-body' => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
 
