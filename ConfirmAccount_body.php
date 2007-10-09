@@ -134,13 +134,21 @@ class RequestAccountPage extends SpecialPage {
 
 	function doSubmit() {
 		global $wgOut, $wgUser, $wgAuth, $wgAccountRequestThrottle, $wgMemc;
-
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );	
 		if( is_null( $u ) ) {
 			$this->showForm( wfMsgHtml('noname') );
 			return;
+		}
+		# No request spamming...
+		if( $wgAccountRequestThrottle && ( !method_exists($u,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
+			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
+			$value = $wgMemc->get( $key );
+			if( $value > $wgAccountRequestThrottle ) {
+				$this->throttleHit( $wgAccountRequestThrottle );
+				return;
+			}
 		}
 		# Check if already in use
 		if( 0 != $u->idForName() || $wgAuth->userExists( $u->getName() ) ) {
@@ -220,7 +228,7 @@ class RequestAccountPage extends SpecialPage {
 			}
 			if( $value > $wgAccountRequestThrottle ) {
 				$this->throttleHit( $wgAccountRequestThrottle );
-				return false;
+				return;
 			}
 		}
 		# Done!
