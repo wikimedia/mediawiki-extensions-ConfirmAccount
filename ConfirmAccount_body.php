@@ -564,10 +564,10 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('requestaccount-legend2') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
-		$form .= "<tr><td>".wfMsgHtml('requestaccount-real')."</td>";
+		$form .= "<tr><td>".wfMsgHtml('confirmaccount-real')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
 		$form .= '</table cellpadding=\'4\'>';
-		$form .= "<p>".wfMsgHtml('requestaccount-bio')."</p>";
+		$form .= "<p>".wfMsgHtml('confirmaccount-bio')."</p>";
 		$form .= "<p><textarea tabindex='1' readonly name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_bio) .
 			"</textarea></p>\n";
@@ -575,7 +575,7 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
-		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
+		$form .= "<p>".wfMsgHtml('confirmaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_notes) .
 			"</textarea></p>\n";
@@ -589,7 +589,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<p>".Xml::radio( 'wpSubmitType', 'reject', $this->submitType=='reject', array('id' => 'submitDeny') );
 		$form .= ' '.Xml::label( wfMsg('confirmaccount-deny'), 'submitDeny' )."</p>\n";
 
-		$form .= "<p>".wfMsgHtml('requestaccount-reason')."</p>\n";
+		$form .= "<p>".wfMsgHtml('confirmaccount-reason')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%'>" .
 			htmlspecialchars($this->reason) .
 			"</textarea></p>\n";
@@ -722,7 +722,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 				htmlspecialchars($row->acr_name) . '</td></tr>';
 		}
-		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real').'</strong></td><td width=\'100%\'>' .
+		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real-q').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_real_name) . '</td></tr>';
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
 		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-email').'</strong></td><td width=\'100%\'>' .
