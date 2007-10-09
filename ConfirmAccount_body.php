@@ -142,7 +142,7 @@ class RequestAccountPage extends SpecialPage {
 			return;
 		}
 		# No request spamming...
-		if( $wgAccountRequestThrottle && ( !method_exists($u,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
+		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			$value = $wgMemc->get( $key );
 			if( $value > $wgAccountRequestThrottle ) {
@@ -220,15 +220,11 @@ class RequestAccountPage extends SpecialPage {
 		$dbw->commit();
 		# No request spamming...
 		# BC: check if isPingLimitable() exists
-		if( $wgAccountRequestThrottle && ( !method_exists($u,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
+		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			$value = $wgMemc->incr( $key );
 			if( !$value ) {
 				$wgMemc->set( $key, 1, 86400 );
-			}
-			if( $value > $wgAccountRequestThrottle ) {
-				$this->throttleHit( $wgAccountRequestThrottle );
-				return;
 			}
 		}
 		# Done!
