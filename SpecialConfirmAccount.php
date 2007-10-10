@@ -43,7 +43,7 @@ function efLoadConfirmAccountsMessages() {
 	global $wgMessageCache, $wgConfirmAccountMessages;
 	require_once( dirname (__FILE__) . '/ConfirmAccount.i18n.php');
 	foreach( $wgConfirmAccountMessages as $key => $value ) {
-		$wgMessageCache->addMessages( $wgConfirmAccountMessages[$key], $key );
+		$wgMessageCache->addMessages( $value, $key );
 	}
 }
 
@@ -69,6 +69,7 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 		__METHOD__ );
 	if ( $dup ) {
 		$abortError = wfMsgHtml('requestaccount-inuse');
+		return false;
 	}
 	return true;
 }
