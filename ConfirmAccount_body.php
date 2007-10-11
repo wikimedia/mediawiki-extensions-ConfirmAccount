@@ -557,7 +557,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<td>".Xml::input( 'wpNewName', 30, $row->acr_name, array('id' => 'wpNewName') )."</td></tr>\n";
 		
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsgHtml('confirmaccount-econf').'</strong>' : '';
-		$form .= "<tr><td>".wfMsgHtml('requestaccount-email')."</td>";
+		$form .= "<tr><td>".wfMsgHtml('confirmaccount-email')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acr_email).$econf."</td></tr>\n";
 		$form .= '</table></fieldset>';
 		
@@ -727,7 +727,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real-q').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_real_name) . '</td></tr>';
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
-		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-email').'</strong></td><td width=\'100%\'>' .
+		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-email-q').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
 		# Truncate this, blah blah...
 		$bio = htmlspecialchars($row->acr_bio);
@@ -736,7 +736,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$preview = substr( $preview, 0, strrpos($preview,' ') );
 			$preview .= " . . .";
 		}
-		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-bio').'</strong></td><td width=\'100%\'><i>'.$preview.'</i></td></tr>';
+		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-bio-q').'</strong></td><td width=\'100%\'><i>'.$preview.'</i></td></tr>';
 		$r .= '</table></li>';
 		
 		return $r;
