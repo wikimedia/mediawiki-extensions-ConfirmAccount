@@ -132,19 +132,19 @@ There may be contact lists on site that you can use if you want to know more abo
 
 $wgConfirmAccountMessages['ar'] = array(
 	'requestaccount'              => 'طلب حساب',
-	'requestaccount-text'          => '\'\'\'أكمل و ابعث الاستمارة التالية لطلب حساب\'\'\'. 
+	'requestaccount-text'         => '\'\'\'أكمل و ابعث الاستمارة التالية لطلب حساب\'\'\'. 
 	
 	تأكد أولا من قراءة [[{{NS:PROJECT}}:Terms of Service|شروط الخدمة]] قبل طلب حساب.
 	
 	متى تمت الموافقة على الحساب, سيتم إرسال رسالة إخطار إليك و الحساب سيصبح قابلا للاستخدام في 
 	[[Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'ملاحظة: أنت مسجل الدخول بالفعل بحساب مسجل.\'\'\'',
-	'requestaccount-legend1'       => 'حساب المستخدم:',
-	'requestaccount-legend2'       => 'معلومات شخصية:',
-	'requestaccount-legend3'       => 'معلومات أخرى:',
-	'requestaccount-acc-text'      => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب. من فضلك استجب عن طريق الضغط 
+	'requestaccount-legend1'      => 'حساب المستخدم:',
+	'requestaccount-legend2'      => 'معلومات شخصية:',
+	'requestaccount-legend3'      => 'معلومات أخرى:',
+	'requestaccount-acc-text'     => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب. من فضلك استجب عن طريق الضغط 
 	على وصلة التأكيد المعطاة في البريد الإلكتروني. أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
-	'requestaccount-ext-text'      => 'المعلومات التالية سرية و سيتم استخدامها فقط لهذا الطلب. 
+	'requestaccount-ext-text'     => 'المعلومات التالية سرية و سيتم استخدامها فقط لهذا الطلب. 
 ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة في تأكيد الهوية.',
 	'requestaccount-bio-text'     => 'سيرتك الشخصية ستعرض كالمحتوى الافتراضي لصفحة المستخدم الخاصة بك. حاول تضمين 
 	أية شهادات. تأكد من ارتياحك لنشر هذه المعلومات. اسمك يمكن تغييره بواسطة [[Special:Preferences]].',
@@ -158,8 +158,7 @@ $wgConfirmAccountMessages['ar'] = array(
 	'requestaccount-inuse'        => 'اسم المستخدم مستعمل بالفعل في طلب حساب قيد الانتظار',
 	'requestaccount-tooshort'     => 'سيرتك يجب أن تتكون على الأقل من $1 كلمة.',
 	'requestaccount-tos'          => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.',
-	'requestaccount-correct'      => 'أنا أؤكد أن الاسم الذي حددته تحت "الاسم الحقيقي" هو في الواقع اسمي الحقيقي.',
-	'requestaccount-submit'        => 'طلب حساب',
+	'requestaccount-submit'       => 'طلب حساب',
 	'requestaccount-sent'         => 'طلبك للحساب تم إرساله بنجاح و هو بانتظار المراجعة الآن.',
 	'request-account-econf'       => 'عنوان بريدك الإلكتروني تم تأكيده وسيتم عرضه كما هو في 
 طلب حسابك.',
@@ -173,38 +172,42 @@ $3
 لو أن الحساب تم إنشاؤه، فقط أنت سيتم إرسال كلمة السر إليه. لو أن هذا *ليس* أنت، لا تتبع الوصلة. 
 كود التأكيد سينتهي في $4.',
 	'acct_request_throttle_hit'   => 'عذرا، لقد طلبت بالفعل $1 حساب. لا يمكنك عمل المزيد من الطلبات.',
-	'requestaccount-loginnotice'   => 'للحصول على حساب، يجب عليك \'\'\'[[Special:RequestAccount|طلب واحد]]\'\'\'.',
+	'requestaccount-loginnotice'  => 'للحصول على حساب، يجب عليك \'\'\'[[Special:RequestAccount|طلب واحد]]\'\'\'.',
 	'confirmaccounts'             => 'تأكيد طلبات الحسابات',
-	'confirmaccount-list'          => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار. 
+	'confirmaccount-list'         => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار. 
 	الحسابات التي تمت الموافقة عليها سيتم إنشاؤها و إزالتها من هذه القائمة. الحسابات المرفوضة سيتم ببساطة حذفها من هذه 
 القائمة.',
-	'confirmaccount-list2'         => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا و التي ربما يتم حذفها تلقائيا 
+	'confirmaccount-list2'        => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا و التي ربما يتم حذفها تلقائيا 
 	عندما يكون عمرها عدة أيام. مازال بالإمكان الموافقة عليهم كحسابات، و لكنك ربما ترغب في استشارة الإداري الرافض 
 قبل فعل هذا.',
-	'confirmaccount-text'          => 'هذا طلب حساب قيد الانتظار في \'\'\'{{SITENAME}}\'\'\'. 
+	'confirmaccount-text'         => 'هذا طلب حساب قيد الانتظار في \'\'\'{{SITENAME}}\'\'\'. 
 	راجعه بحرص و لو دعت الحاجة, أكد, كل المعلومات بالأسفل. لاحظ أنه يمكنك اختيار إنشاء الحساب باسم مستخدم آخر 
 	. استخدم هذا فقط لتجنب 	الاصطدامات مع الأسماء الأخرى.
 	
 لو تركت ببساطة هذه الصفحة بدون تأكيد أو رفض الحساب, سيبقى قيد الانتظار.',
-	'confirmaccount-none'          => 'لا توجد حاليا طلبات حساب قيد الانتظار.',
-	'confirmaccount-none2'         => 'لا توجد حاليا طلبات حسابات مرفوضة حديثا.',
+	'confirmaccount-none'         => 'لا توجد حاليا طلبات حساب قيد الانتظار.',
+	'confirmaccount-none2'        => 'لا توجد حاليا طلبات حسابات مرفوضة حديثا.',
 	'confirmaccount-badid'        => 'لا يوجد طلب قيد الانتظار يوافق الرقم المعطى. ربما يكون قد تمت معالجته.',
 	'confirmaccount-back'         => 'عرض قائمة الحسابات قيد الانتظار',
 	'confirmaccount-back2'        => 'عرض قائمة الحسابات المرفوضة حديثا',
 	'confirmaccount-name'         => 'اسم المستخدم',
 	'confirmaccount-real'         => 'الاسم',
+	'confirmaccount-real-q'       => 'الاسم',
 	'confirmaccount-email'        => 'البريد الإلكتروني',
+	'confirmaccount-email-q'      => 'البريد الإلكتروني',
 	'confirmaccount-bio'          => 'السيرة',
+	'confirmaccount-bio-q'        => 'السيرة الشخصية',
+	'confirmaccount-notes'        => 'ملاحظات إضافية:',
 	'confirmaccount-urls'         => 'قائمة مواقع الويب:',
 	'confirmaccount-nourls'       => '(لا شيء معطى)',
 	'confirmaccount-review'       => 'قبول/رفض',
-	'confirmaccount-confirm'       => 'استخدم الأزرار بالأسفل لقبول هذا الطلب أو رفضه.',
+	'confirmaccount-confirm'      => 'استخدم الأزرار بالأسفل لقبول هذا الطلب أو رفضه.',
 	'confirmaccount-econf'        => '(تم تأكيده)',
 	'confirmaccount-reject'       => '(تم رفضه بواسطته [[User:$1|$1]] في $2)',
-	'confirmaccount-create'        => 'قبول (إنشاب الحساب)',
-	'confirmaccount-deny'          => 'رفض (إزالة من القائمة)',
-	'requestaccount-reason'       => 'تعليق (سيضمن في البريد الإلكتروني):',
-	'confirmaccount-submit'        => 'تأكيد',
+	'confirmaccount-create'       => 'قبول (إنشاب الحساب)',
+	'confirmaccount-deny'         => 'رفض (إزالة من القائمة)',
+	'confirmaccount-reason'       => 'تعليق (سيضم في البريد الإلكتروني):',
+	'confirmaccount-submit'       => 'تأكيد',
 	'confirmaccount-acc'          => 'طلب الحساب تم تأكيده بنجاح؛ أنشأ حسابا جديدا [[User:$1]].',
 	'confirmaccount-rej'          => 'طلب الحساب تم رفضه بنجاح.',
 	'confirmaccount-summary'      => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.',
