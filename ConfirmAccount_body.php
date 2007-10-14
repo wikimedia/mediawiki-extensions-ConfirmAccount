@@ -597,6 +597,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
 		$form .= Xml::hidden( 'acrid', $row->acr_id );
+		$form .= Xml::hidden( 'wpShowRejects', $this->showRejects );
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .=  '</form>';
 		
