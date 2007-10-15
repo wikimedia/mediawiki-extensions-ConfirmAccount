@@ -507,17 +507,17 @@ Il est possible d’être sur la liste des contacts afin de mieux connaître les
 
 $wgConfirmAccountMessages['hsb'] = array(
 	'requestaccount'              => 'Wužiwarske konto sej žadać',
-	'requestaccount-text'          => '\'\'\'Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał\'\'\'. 
+	'requestaccount-text'         => '\'\'\'Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał\'\'\'. 
 
 	Prošu přečitaj najprjedy [[{{NS:PROJECT}}:Terms of Service|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
-Tak ruče kaž konto je so potwjerdźiło, dóstaš powesć přez mejlku a móžeš so pod "[[{{ns:special}}:Userlogin|Anmelden]]" přizjewić.',
+Tak ruče kaž konto je so potwjerdźiło, dóstaš powesć přez mejlku a móžeš so pod "[[{{ns:special}}:Userlogin|Konto wutworić abo so přizjewić]]" přizjewić.',
 	'requestaccount-dup'          => '\'\'\'Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.\'\'\'',
-	'requestaccount-legend1'       => 'Wužiwarske konto:',
-	'requestaccount-legend2'       => 'Wosobinske informacije:',
-	'requestaccount-legend3'       => 'Dalše informacije',
-	'requestaccount-acc-text'      => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
-	'requestaccount-ext-text'      => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
+	'requestaccount-legend1'      => 'Wužiwarske konto:',
+	'requestaccount-legend2'      => 'Wosobinske informacije:',
+	'requestaccount-legend3'      => 'Dalše informacije',
+	'requestaccount-acc-text'     => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
+	'requestaccount-ext-text'     => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
 	'requestaccount-bio-text'     => 'Twoja biografija so jako spočatny wobsah twojeje wužiwarskeje strony składuje. Spytaj wšě trěbne doporučenja naspomnić, ale zawěsć, zo chceš te informacije woprawdźe wozjewić. Móžeš swoje wužiwarske mjeno pod "[[{{ns:special}}:Preferences|Nastajenja]]" změnić.',
 	'requestaccount-real'         => 'Woprawdźite mjeno:',
 	'requestaccount-same'         => '(kaž woprawdźite mjeno)',
@@ -529,7 +529,7 @@ Tak ruče kaž konto je so potwjerdźiło, dóstaš powesć přez mejlku a móž
 	'requestaccount-inuse'        => 'Wužiwarske mjeno so hižo w druhim kontowym požadanju wužiwa.',
 	'requestaccount-tooshort'     => 'Twoja biografija dyrbi znajmjeńša $1 słowow dołho być.',
 	'requestaccount-tos'          => 'Sym wužiwarske wuměnjenja strony {{SITENAME}} přečitał a budu do nich dźeržeć.',
-	'requestaccount-submit'        => 'Wužiwarske konto sej žadać',
+	'requestaccount-submit'       => 'Wužiwarske konto sej žadać',
 	'requestaccount-sent'         => 'Twoje kontowe požadanje  bu wuspěšnje wotpósłane a dyrbi so nětko přepruwować.',
 	'request-account-econf'       => 'Twoja e-mejlowa adresa bu wobkrućena a budźe so w twojim kontowym požadanju nalistować.',
 	'requestaccount-email-subj'   => '{{SITENAME}} Pruwowanje e-mejloweje adresy',
@@ -545,32 +545,36 @@ Jeli *njej*sy wužiwarske konto požadał, njewočiń prošu tutón wotkaz!
 
 Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'acct_request_throttle_hit'   => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
-	'requestaccount-loginnotice'   => 'Zo by wužiwarske konto dóstał, dyrbiš wo nje \'\'\'[[{{ns:special}}:RequestAccount|prosyć]]\'\'\'.',
+	'requestaccount-loginnotice'  => 'Zo by wužiwarske konto dóstał, dyrbiš wo nje \'\'\'[[{{ns:special}}:RequestAccount|prosyć]]\'\'\'.',
 	'confirmaccounts'             => 'Kontowe požadanja potwjerdźić',
-	'confirmaccount-list'          => 'Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.',
-	'confirmaccount-list2'         => 'Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.',
-	'confirmaccount-text'          => 'To je njerozsudźene požadanje za wužiwarskim kontom pola \'\'\'{{SITENAME}}\'\'\'. Pruwuj wšě deleka stejace informacije dokładnje a potwjerdź je. Prošu wobkedźbuj, zo móžeš konto, jeli trjeba, pod druhim wužiwarskim mjenom wutworić. Wužij to jenož, zo by kolizije z druhimi mjenami wobešoł.
+	'confirmaccount-list'         => 'Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.',
+	'confirmaccount-list2'        => 'Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.',
+	'confirmaccount-text'         => 'To je njerozsudźene požadanje za wužiwarskim kontom pola \'\'\'{{SITENAME}}\'\'\'. Pruwuj wšě deleka stejace informacije dokładnje a potwjerdź je. Prošu wobkedźbuj, zo móžeš konto, jeli trjeba, pod druhim wužiwarskim mjenom wutworić. Wužij to jenož, zo by kolizije z druhimi mjenami wobešoł.
 
 Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wotpokazał, budźe požadanje njerozsudźene wostać.',
-	'confirmaccount-none'          => 'Tuchwilu njerozsudźene wužiwarske požadanja njejsu.',
-	'confirmaccount-none2'         => 'Tuchwilu njedawno wotpokazane wužiwarske požadanja njejsu.',
+	'confirmaccount-none'         => 'Tuchwilu njerozsudźene wužiwarske požadanja njejsu.',
+	'confirmaccount-none2'        => 'Tuchwilu njedawno wotpokazane wužiwarske požadanja njejsu.',
 	'confirmaccount-badid'        => 'Tuchwilu požadane k podatemu ID. Snano bu hižo sčinjene.',
 	'confirmaccount-back'         => 'Lisćinu njerozsudźenych požadanjow wobhladać',
 	'confirmaccount-back2'        => 'Lisćinu njedawno wotpokazanych požadanjow wobhladać',
 	'confirmaccount-name'         => 'Wužiwarske mjeno',
 	'confirmaccount-real'         => 'Mjeno',
+	'confirmaccount-real-q'       => 'Mjeno',
 	'confirmaccount-email'        => 'E-mejl',
+	'confirmaccount-email-q'      => 'E-mejl',
 	'confirmaccount-bio'          => 'Biografija',
+	'confirmaccount-bio-q'        => 'Biografija',
+	'confirmaccount-notes'        => 'Přidatne přispomnjenki:',
 	'confirmaccount-urls'         => 'Lisćina webowych sydłow:',
 	'confirmaccount-nourls'       => '(Ničo podate)',
 	'confirmaccount-review'       => 'Dowolić/Wotpokazać',
-	'confirmaccount-confirm'       => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
+	'confirmaccount-confirm'      => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
 	'confirmaccount-econf'        => '(potwjerdźene)',
 	'confirmaccount-reject'       => '(wot [[Wužiwar:$1|$1]] na $2 wotpokazany)',
-	'confirmaccount-create'        => 'Akceptować (Konto wutworić)',
-	'confirmaccount-deny'          => 'Wotpokazać (Požadanje wotstronić)',
-	'requestaccount-reason'       => 'Komentar (zasunje so do mejlki)',
-	'confirmaccount-submit'        => 'Potwjerdźić',
+	'confirmaccount-create'       => 'Akceptować (Konto wutworić)',
+	'confirmaccount-deny'         => 'Wotpokazać (Požadanje wotstronić)',
+	'confirmaccount-reason'       => 'Komentar (budźe so do mejlki k próstwarjej zasunyć):',
+	'confirmaccount-submit'       => 'Potwjerdźić',
 	'confirmaccount-acc'          => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[{{ns:User}}:$1]] bu wutworjene.',
 	'confirmaccount-rej'          => 'Požadanje za kontom bu wotpokazane.',
 	'confirmaccount-summary'      => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
@@ -607,6 +611,7 @@ $2
 Snano su na sydle kontaktowe adresy, na kotrež so móžeš wobroćeć, jeli chceš wjace wo žadanjach wužiwarskich kontow wědźeć.',
 );
 
+
 $wgConfirmAccountMessages['la'] = array(
 	'requestaccount-real'         => 'Nomen verum:',
 	'requestaccount-same'         => '(aequus ad nomine vero)',
@@ -617,18 +622,18 @@ $wgConfirmAccountMessages['la'] = array(
 
 $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount'              => 'Gebruiker aanvragen',
-	'requestaccount-text'          => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
+	'requestaccount-text'         => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
 	
 	Zorg ervoor dat u eerst de [[{{NS:PROJECT}}:Terms of Service|Voorwaarden]] leest voordat u een gebruiker aanvraagt.
 	
 	Als uw gebruiker is goedgekeurd, krijgt u een e-mail en daarna kunt u aanmelden via [[Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'Note bene: U bent al aangemeld met een geregistreede gebruiker.\'\'\'',
-	'requestaccount-legend1'       => 'Gebruiker',
-	'requestaccount-legend2'       => 'Persoonlijke informatie',
-	'requestaccount-legend3'       => 'Overige informatie',
-	'requestaccount-acc-text'      => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen. Reageer daar alstublieft op 
+	'requestaccount-legend1'      => 'Gebruiker',
+	'requestaccount-legend2'      => 'Persoonlijke informatie',
+	'requestaccount-legend3'      => 'Overige informatie',
+	'requestaccount-acc-text'     => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen. Reageer daar alstublieft op 
 	door de klikken op de bevesitigngslink die in de e-mail staat. U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
-	'requestaccount-ext-text'      => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
+	'requestaccount-ext-text'     => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
 	U kunt contactgegevens zoals een telefoonummer opgeven om te helpen bij het vaststellen van uw identiteit.',
 	'requestaccount-bio-text'     => 'Uw biografie wordt opgenomen in uw gebruikerspagina. Probeer uw belangrijkste gegevens 
 	op te nemen. Zorg ervoor dat u achter het publiceren van dergelijke informatie staat. U kunt uw naam wijzigen via uw [[Special:Preferences|voorkeuren]].',
@@ -642,8 +647,7 @@ $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount-inuse'        => 'De gebruiker is al bekend in een aanvraagprocedure.',
 	'requestaccount-tooshort'     => 'Uw biografie moet tenminste $1 woorden bevatten.',
 	'requestaccount-tos'          => 'Ik heb de Voorwaarden van {{SITENAME}} gelezen en ga ermee akkoord.',
-	'requestaccount-correct'      => 'Ik bevestig dat de naam die ik heb opgegeven onder "Uw naam" inderdaad mijn eigen naam is.',
-	'requestaccount-submit'        => 'Gebruiker aanvragen',
+	'requestaccount-submit'       => 'Gebruiker aanvragen',
 	'requestaccount-sent'         => 'Uw gebruikersaanvraag is verstuurd en wacht op review.',
 	'request-account-econf'       => 'Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.',
 	'requestaccount-email-subj'   => '{{SITENAME}} bevestiging e-mailadres',
@@ -657,38 +661,42 @@ $3
 Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de link dan *niet*. 
 Deze bevestigingse-mail verloop op $4.',
 	'acct_request_throttle_hit'   => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
-	'requestaccount-loginnotice'   => 'Om een gebruiker te krijgen, moet u \'\'\'[[Special:RequestAccount|een verzoek doen]]\'\'\'.',
+	'requestaccount-loginnotice'  => 'Om een gebruiker te krijgen, moet u \'\'\'[[Special:RequestAccount|een verzoek doen]]\'\'\'.',
 	'confirmaccounts'             => 'Bevestig gebruikersverzoeken',
-	'confirmaccount-list'          => 'Hieronder staan de gebruikersverzoeken die op afhandeling wachten. 
+	'confirmaccount-list'         => 'Hieronder staan de gebruikersverzoeken die op afhandeling wachten. 
 	Voor goedgekeurde gebruikersverzoeken worden gebruikers aangemaakt en dat verzoek komt niet langer voor in deze lijst. 
 	Afgewezen gebruikersverzoeken worden van de lijst verwijderd.',
-	'confirmaccount-list2'         => 'Hieronder staan recentelijk afgewezen gebruikersverzoeken die die over een aantal dagen
+	'confirmaccount-list2'        => 'Hieronder staan recentelijk afgewezen gebruikersverzoeken die die over een aantal dagen
 	automatisch worden verwijderd. Ze kunnen nog steeds goedgekeurd worden, hoewel het verstandig is voorafgaand contact te
 	zoeken met de beheerder die het verzoek heeft afgewezen.',
-	'confirmaccount-text'          => 'Dit is een openstaand gebruikersverzoek voor \'\'\'{{SITENAME}}\'\'\'. Beoordeel het
+	'confirmaccount-text'         => 'Dit is een openstaand gebruikersverzoek voor \'\'\'{{SITENAME}}\'\'\'. Beoordeel het
 	alstublieft zorgvuldig en bevestig, als nodig, alle onderstaande informatie. U kunt een gebruiker aanmaken met een andere
 	naam. Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
 	
 	Als u deze pagina verlaat zonder het gebruikersverzoek te bevestigen of af te wijzen, dan blijft het open staan.',
-	'confirmaccount-none'          => 'Er zijn op dit moment geen openstaande gebruikersverzoeken.',
-	'confirmaccount-none2'         => 'Er zijn op het moment geen recent afgewezen gebruikersverzoeken.',
+	'confirmaccount-none'         => 'Er zijn op dit moment geen openstaande gebruikersverzoeken.',
+	'confirmaccount-none2'        => 'Er zijn op het moment geen recent afgewezen gebruikersverzoeken.',
 	'confirmaccount-badid'        => 'Er is geen openstaand gebruikersverzoeken voor het opgegeven ID. Wellicht is het al afgehandeld.',
 	'confirmaccount-back'         => 'Bekijk openstaande gebruikersverzoeken',
 	'confirmaccount-back2'        => 'Bekijk recent afgewezen verzoeken',
 	'confirmaccount-name'         => 'Gebruikersnaam',
 	'confirmaccount-real'         => 'Naam',
+	'confirmaccount-real-q'       => 'Naam',
 	'confirmaccount-email'        => 'E-mail',
+	'confirmaccount-email-q'      => 'E-mail',
 	'confirmaccount-bio'          => 'Biografie',
+	'confirmaccount-bio-q'        => 'Biografie',
+	'confirmaccount-notes'        => 'Extra toevoegingen:',
 	'confirmaccount-urls'         => 'Lijst met websites:',
 	'confirmaccount-nourls'       => '(niet opgegeven)',
 	'confirmaccount-review'       => 'toegelaten/afgewezen',
-	'confirmaccount-confirm'       => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
+	'confirmaccount-confirm'      => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
 	'confirmaccount-econf'        => '(bevestigd)',
 	'confirmaccount-reject'       => '(afgewezen door [[User:$1|$1]] op $2)',
-	'confirmaccount-create'        => 'Toelaten (gebruiker aanmaken)',
-	'confirmaccount-deny'          => 'Afwijzen (verwijderen)',
-	'requestaccount-reason'       => 'Opmerking (wordt opgenomen in de e-mail):',
-	'confirmaccount-submit'        => 'Bevestigen',
+	'confirmaccount-create'       => 'Toelaten (gebruiker aanmaken)',
+	'confirmaccount-deny'         => 'Afwijzen (verwijderen)',
+	'confirmaccount-reason'       => 'Opmerking (zal worden toegevoegd aan de email):',
+	'confirmaccount-submit'       => 'Bevestigen',
 	'confirmaccount-acc'          => 'Gebruikersverzoek goedgekeurd. De gebruiker [[User:$1]] is aangemaakt.',
 	'confirmaccount-rej'          => 'Gebruikersverzoek afgewezen.',
 	'confirmaccount-summary'      => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
@@ -739,13 +747,13 @@ $wgConfirmAccountMessages['oc'] = array(
 
 $wgConfirmAccountMessages['sk'] = array(
 	'requestaccount'              => 'Vyžiadať účet',
-	'requestaccount-text'          => '\'\'\'Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet\'\'\'. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{NS:PROJECT}}:Podmienky použitia|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].',
+	'requestaccount-text'         => '\'\'\'Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet\'\'\'. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{NS:PROJECT}}:Podmienky použitia|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'Pozn.: Už ste prihlásený ako zaregistrovaný používateľ.\'\'\'',
-	'requestaccount-legend1'       => 'Používateľský účet',
-	'requestaccount-legend2'       => 'Osobné informácie',
-	'requestaccount-legend3'       => 'Ostatné informácie',
-	'requestaccount-acc-text'      => 'Na vašu emailovú adresu bude po odoslaní žiadosti zaslaná potvrdzujúca správa. Prosím, reagujte na ňu kliknutím na odkaz v nej. Potom ako bude váš účet vytvorený, dostanete emailom heslo k nemu.',
-	'requestaccount-ext-text'      => 'Nasledovné informácie budú držané v tajnosti a použijú sa iba na účel tejto žiadosti. Možno budete chcieť uviesť kontakty ako telefónne číslo, ktoré môžu pomôcť pri potvrdení.',
+	'requestaccount-legend1'      => 'Používateľský účet',
+	'requestaccount-legend2'      => 'Osobné informácie',
+	'requestaccount-legend3'      => 'Ostatné informácie',
+	'requestaccount-acc-text'     => 'Na vašu emailovú adresu bude po odoslaní žiadosti zaslaná potvrdzujúca správa. Prosím, reagujte na ňu kliknutím na odkaz v nej. Potom ako bude váš účet vytvorený, dostanete emailom heslo k nemu.',
+	'requestaccount-ext-text'     => 'Nasledovné informácie budú držané v tajnosti a použijú sa iba na účel tejto žiadosti. Možno budete chcieť uviesť kontakty ako telefónne číslo, ktoré môžu pomôcť pri potvrdení.',
 	'requestaccount-bio-text'     => 'Vaša biografia bude prvotným obsahom vašej používateľskej stránky. Pokúste sa uviesť všetky referencie. Zvážte, či ste ochotní zverejniť tieto informácie. Vaše meno je možné zmeniť pomocou [[Special:Preferences]].',
 	'requestaccount-real'         => 'Skutočné meno:',
 	'requestaccount-same'         => '(rovnaké ako skutočné meno)',
@@ -754,6 +762,62 @@ $wgConfirmAccountMessages['sk'] = array(
 	'requestaccount-notes'        => 'Ďalšie poznámky:',
 	'requestaccount-urls'         => 'Zoznam webstránok, ak nejaké sú (jednu na každý riadok):',
 	'requestaccount-agree'        => 'Musíte osvedčiť, že vaše skutočné meno je správne a že súhlasíte s našimi Podmienkami použitia.',
+	'requestaccount-inuse'        => 'Používateľské meno už bolo vyžiadané v prebiehajúcej žiadosti o účet.',
+	'requestaccount-tooshort'     => 'Vaša biografia musí mať aspoň $1 slov.',
+	'requestaccount-tos'          => 'Prečítal som a súhlasím, že budem dodržiavať [[{{NS:PROJECT}}:Podmienky používania služby|Podmienky používania služby]] {{GRAMMAR:genitív|{{SITENAME}}}}. Meno, ktoré som uviedol ako „Skutočné meno“ je naozaj moje občianske meno.',
+	'requestaccount-submit'       => 'Požiadať o účet',
+	'requestaccount-sent'         => 'Vaša žiadosť o účet bola úspešne odoslaná a teraz sa čaká na jej kontrolu.',
+	'request-account-econf'       => 'Vaša emailová adresa bola potvrdená a v takomto tvare sa uvedie vo vašej žiadosti o účet.',
+	'requestaccount-email-subj'   => 'potvrdenie e-mailovej adresy pre {{GRAMMAR:akuzatív|{{SITENAME}}}}',
+	'requestaccount-email-body'   => 'Niekto, pravdepodobne vy z IP adresy $1, zaregistroval účet
+"$2" s touto e-mailovou adresou na {{GRAMMAR:lokál|{{SITENAME}}}}.
+
+Pre potvrdenie, že tento účet skutočne patrí vám a pre aktivovanie
+e-mailových funkcií na {{GRAMMAR:lokál|{{SITENAME}}}}, otvorte tento odkaz vo vašom prehliadači:
+
+$3
+
+Ak ste to *neboli* vy, neotvárajte odkaz. Tento potvrdzovací kód
+vyprší o $4.',
+	'acct_request_throttle_hit'   => 'Prepáčte, už ste požiadali o vytvorenie $1 účtov. Nemôžete ich odoslať viac žiadostí.',
+	'requestaccount-loginnotice'  => 'Aby ste dostali používateľský účet, musíte \'\'\'[[Special:RequestAccount|oň požiadať]]\'\'\'.',
+	'confirmaccounts'             => 'Potvrdiť žiadosti o účet',
+	'confirmaccount-list'         => 'Nižšie je zoznam žiadostí o účet, ktoré čakajú na schválenie. Schválené účty budú vytvorené a odstránené z tohoto zoznamu. Odmietnuté účty budú jednoducho odstránené z tohoto zoznamu.',
+	'confirmaccount-list2'        => 'Nižšie je zoznam nedávno odmietnutých žiadostí o účet, ktoré môžu byť automaticky odstránené po niekoľkých dňoch. Ešte stále ich môžete schváliť a vytvoriť z nich platné účty, hoci by ste sa mali predtým, než tak učiníte, poradiť so správcom, ktorý ich odmietol.',
+	'confirmaccount-text'         => 'Toto je žiadosť o používateľský účet na \'\'\'{{GRAMMAR:lokál|{{SITENAME}}}}\'\'\' v štádiu spracovania. Pozorne ju skontrolujte a ak treba, overte všetky dolu uvedené informácie. Máte tiež možnosť vytvoriť účet pod odlišným používateľským menom, to však používajte iba na odstránenie konfliktov s inými menami. Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odmietli, zostane v štádiu spracovania.',
+	'confirmaccount-none'         => 'Momentálne nie sú žiadne nespracované žiadosti o účet.',
+	'confirmaccount-none2'        => 'Momentálne nie sú žiadne odmietnuté žiadosti o účet.',
+	'confirmaccount-badid'        => 'Neexistuje žiadna nespracovaná žiadosť o účet zodpovedajúca zadanému ID. Je možné, že už bola spracovaná.',
+	'confirmaccount-back'         => 'Zobraziť zoznam nespracovaných účtov',
+	'confirmaccount-back2'        => 'Zobraziť zoznam nedávno odmietnutých účtov',
+	'confirmaccount-name'         => 'Používateľské meno',
+	'confirmaccount-real'         => 'Meno:',
+	'confirmaccount-real-q'       => 'Meno',
+	'confirmaccount-email'        => 'Email:',#identical but defined
+	'confirmaccount-email-q'      => 'Email',#identical but defined
+	'confirmaccount-bio'          => 'Biografia:',
+	'confirmaccount-bio-q'        => 'Biografia',
+	'confirmaccount-notes'        => 'Ďalšie poznámky:',
+	'confirmaccount-urls'         => 'Zoznam webstránok:',
+	'confirmaccount-nourls'       => '(žiadne neboli poskytnuté)',
+	'confirmaccount-review'       => 'Schváliť/odmietnuť',
+	'confirmaccount-confirm'      => 'Tlačidlami nižšie môžete prijať alebo odmietnuť túto žiadosť.',
+	'confirmaccount-econf'        => '(potvrdený)',
+	'confirmaccount-reject'       => '(odmietol [[User:$1|$1]] $2)',
+	'confirmaccount-create'       => 'Prijať (vytvoriť účet)',
+	'confirmaccount-deny'         => 'Odmietnuť (odstrániť žiadosť)',
+	'confirmaccount-reason'       => 'Komentár (bude súčasťou emailu email):',
+	'confirmaccount-submit'       => 'Potvrdiť',
+	'confirmaccount-acc'          => 'Žiadosť o účet bola úspešne potvrdená; bol vytvorený nový používateľský účet [[User:$1]].',
+	'confirmaccount-rej'          => 'Žiadosť o účet bola úspešne odmietnutá.',
+	'confirmaccount-summary'      => 'Vytvára sa používateľská stránka s biografiou nového používateľa.',
+	'confirmaccount-welc'         => '\'\'\'Vitajte v \'\'{{GRAMMAR:lokál|{{SITENAME}}}}\'\'!\'\'\' Dúfame, že budete prispievať vo veľkom množstve a kvalitne. Pravdepodobne si budete chcieť prečítať [[{{NS:PROJECT}}:Začíname|Začíname]]. Tak ešte raz vitajte a bavte sa!',
+	'confirmaccount-wsum'         => 'Vitajte!',
+	'confirmaccount-email-subj'   => 'žiadosť o účet {{GRAMMAR:genitív|{{SITENAME}}}}',
+	'confirmaccount-email-body'   => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'  => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 $3 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'  => 'Je nám ľúto, ale vaša žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} bola zamietnutá. Je niekoľko dôvodov, prečo sa to mohlo stať. Buď ste nevyplnili formulár správne, neposkytli ste požadovanú dĺžku vašich odpovedí alebo inak ste nesplnili kritériá. Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
+	'confirmaccount-email-body4'  => 'Je nám ľúto, ale vaša žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} bola zamietnutá. Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
 );
 
 $wgConfirmAccountMessages['yue'] = array(
