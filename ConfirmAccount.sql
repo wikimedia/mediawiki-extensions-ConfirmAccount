@@ -35,7 +35,7 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   acr_urls mediumblob NOT NULL,
   -- IP address
   acr_ip VARCHAR(255) NULL default '',
-  -- Name of attached file (.pdf,.doc,.txt ect...)
+  -- Name of attached file (.pdf,.doc,.txt etc...)
   acr_filename VARCHAR(255) NULL,
   acr_storage_key VARCHAR(64) NULL,
   
