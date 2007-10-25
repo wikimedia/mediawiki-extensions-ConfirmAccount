@@ -34,6 +34,11 @@ $wgAccountRequestThrottle = 1;
 # Minimum biography specs
 $wgAccountRequestMinWords = 50;
 
+# Show ToS checkbox
+$wgAccountRequestToS = true;
+# Show confirmation info fields
+$wgAccountRequestExtraInfo = true;
+
 # Location of attached files
 $wgAllowAccountRequestFiles = true;
 $wgAccountRequestExts = array('txt','pdf','doc','latex','rtf','text','wp','wpd' );

@@ -14,7 +14,8 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function execute( $subpage ) {
-		global $wgUser, $wgOut, $wgRequest, $action, $wgUseRealNamesOnly;
+		global $wgUser, $wgOut, $wgRequest, $action, $wgUseRealNamesOnly,
+			$wgAccountRequestToS, $wgAccountRequestExtraInfo;
 
 		if( $wgUser->isBlockedFromCreateAccount() ) {
 			$wgOut->blockedPage();
@@ -40,9 +41,12 @@ class RequestAccountPage extends SpecialPage {
 		# Other fields...
 		$this->mEmail = $wgRequest->getText( 'wpEmail' );
 		$this->mBio = $wgRequest->getText( 'wpBio', '' );
-		$this->mNotes = $wgRequest->getText( 'wpNotes', '' );
-		$this->mUrls = $wgRequest->getText( 'wpUrls', '' );
-		$this->mToS = $wgRequest->getBool('wpToS');
+		$this->mNotes = $wgAccountRequestExtraInfo ? 
+			$wgRequest->getText( 'wpNotes', '' ) : '';
+		$this->mUrls = $wgAccountRequestExtraInfo ? 
+			$wgRequest->getText( 'wpUrls', '' ) : '';
+		$this->mToS = $wgAccountRequestToS ? 
+			$wgRequest->getBool('wpToS') : false;
 		# We may be confirming an email address here
 		$emailCode = $wgRequest->getText( 'wpEmailToken' );
 
@@ -58,7 +62,8 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function showForm( $msg='', $forgotFile=0 ) {
-		global $wgOut, $wgUser, $wgTitle, $wgAuth, $wgUseRealNamesOnly;
+		global $wgOut, $wgUser, $wgTitle, $wgUseRealNamesOnly, $wgAccountRequestToS,
+			$wgAccountRequestExtraInfo, $wgAllowAccountRequestFiles;
 
 		$this->mForgotAttachment = $forgotFile;
 
@@ -102,24 +107,25 @@ class RequestAccountPage extends SpecialPage {
 			htmlspecialchars($this->mBio) .
 			"</textarea></p>\n";
 		$form .= '</fieldset>';
-
-		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
-		$form .= wfMsgExt( 'requestaccount-ext-text', array('parse') )."\n";
-
-		$form .= "<p>".wfMsgHtml('requestaccount-attach')." ";
-		$form .= Xml::input( 'wpUploadFile', 35, '', array('id' => 'wpUploadFile', 'type' => 'file') )."</p>\n";
-
-		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
-		$form .= "<p><textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
-			htmlspecialchars($this->mNotes) .
-			"</textarea></p>\n";
-		$form .= "<p>".wfMsgHtml('requestaccount-urls')."</p>\n";
-		$form .= "<p><textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
-			htmlspecialchars($this->mUrls) .
-			"</textarea></p>\n";
-		$form .= '</fieldset>';
-
+		if( $wgAccountRequestExtraInfo ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
+			$form .= wfMsgExt( 'requestaccount-ext-text', array('parse') )."\n";
+			if( $wgAllowAccountRequestFiles ) {
+				$form .= "<p>".wfMsgHtml('requestaccount-attach')." ";
+				$form .= Xml::input( 'wpUploadFile', 35, '', 
+					array('id' => 'wpUploadFile', 'type' => 'file') )."</p>\n";
+			}
+			$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
+			$form .= "<p><textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+				htmlspecialchars($this->mNotes) .
+				"</textarea></p>\n";
+			$form .= "<p>".wfMsgHtml('requestaccount-urls')."</p>\n";
+			$form .= "<p><textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
+				htmlspecialchars($this->mUrls) .
+				"</textarea></p>\n";
+			$form .= '</fieldset>';
+		}
 		# Pseudo template for extensions
 		global $wgCaptcha;
 		if( isset($wgCaptcha) ) {
@@ -133,8 +139,10 @@ class RequestAccountPage extends SpecialPage {
 				$form .= '</fieldset>';
 			}
 		}
-		$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
-			' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
+		if( $wgAccountRequestToS ) {
+			$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
+				' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
+		}
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedUrl() )."\n";
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .= Xml::hidden( 'attachment', $this->mPrevAttachment )."\n";
@@ -178,7 +186,8 @@ class RequestAccountPage extends SpecialPage {
 			return;
 		}
 		# Make sure user agrees to policy here
-		if( !$this->mToS ) {
+		global $wgAccountRequestToS;
+		if( $wgAccountRequestToS && !$this->mToS ) {
 			$this->showForm( wfMsgHtml('requestaccount-agree') );
 			return;
 		}
@@ -209,8 +218,10 @@ class RequestAccountPage extends SpecialPage {
 		}
 		# Per security reasons, file dir cannot be pulled from client,
 		# so ask them to resubmit it then...
-		global $wgAllowAccountRequestFiles;
-		if( $wgAllowAccountRequestFiles && $this->mPrevAttachment && !$this->mSrcName ) {
+		global $wgAllowAccountRequestFiles, $wgAccountRequestExtraInfo;
+		# If the extra fields are off, then uploads are off
+		$allowFiles = $wgAccountRequestExtraInfo && $wgAllowAccountRequestFiles;
+		if( $allowFiles && $this->mPrevAttachment && !$this->mSrcName ) {
 			# If the user is submitting forgotAttachment as true with no file, 
 			# then they saw the notice and choose not to re-select the file. 
 			# Assume that they don't want to send one anymore.
@@ -221,7 +232,7 @@ class RequestAccountPage extends SpecialPage {
 			}
 		}
 		# Process upload...
-		if( $wgAllowAccountRequestFiles && $this->mSrcName ) {
+		if( $allowFiles && $this->mSrcName ) {
 			$ext = explode('.',$this->mSrcName);
 			$finalExt = $ext[count($ext)-1];
 			# File must have size.
