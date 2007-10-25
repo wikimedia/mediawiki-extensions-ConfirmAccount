@@ -33,6 +33,10 @@ class RequestAccountPage extends SpecialPage {
 			$this->mUsername = $this->mRealName;
 		else
 			$this->mUsername = $wgRequest->getText( 'wpUsername' );
+		# Attachments...
+		$this->initializeUpload( $wgRequest );
+		$this->mPrevAttachment = $wgRequest->getText( 'attachment' );
+		$this->mForgotAttachment = $wgRequest->getBool( 'forgotAttachment' );
 		# Other fields...
 		$this->mEmail = $wgRequest->getText( 'wpEmail' );
 		$this->mBio = $wgRequest->getText( 'wpBio', '' );
@@ -43,6 +47,8 @@ class RequestAccountPage extends SpecialPage {
 		$emailCode = $wgRequest->getText( 'wpEmailToken' );
 
 		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
+			if( !$this->mPrevAttachment )
+				$this->mPrevAttachment = $this->mSrcName;
 			$this->doSubmit();
 		} else if( $action == 'confirmemail' ) {
 			$this->confirmEmailToken( $emailCode );
@@ -51,13 +57,15 @@ class RequestAccountPage extends SpecialPage {
 		}
 	}
 
-	function showForm( $msg='' ) {
+	function showForm( $msg='', $forgetFile=0 ) {
 		global $wgOut, $wgUser, $wgTitle, $wgAuth, $wgUseRealNamesOnly;
 
+		$this->mForgotAttachment = $forgetFile;
+
 		$wgOut->setPagetitle( wfMsgHtml( "requestaccount" ) );
-		# Output failure message
+		# Output failure message if any
 		if( $msg ) {
-			$wgOut->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
+			$wgOut->addHTML( '<div class="errorbox">'.$msg.'</div><div class="visualClear"></div>' );
 		}
 		# Give notice to users that are logged in
 		if( $wgUser->getID() ) {
@@ -67,8 +75,8 @@ class RequestAccountPage extends SpecialPage {
 		$wgOut->addWikiText( wfMsgHtml( "requestaccount-text" ) );
 
 		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
-		$form = "<form name='accountrequest' action='$action' method='post'><fieldset>";
-		$form .= '<legend>' . wfMsgHtml('requestaccount-legend1') . '</legend>';
+		$form = "<form name='accountrequest' action='$action' enctype='multipart/form-data' method='post'>";
+		$form .= '<fieldset><legend>' . wfMsgHtml('requestaccount-legend1') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-acc-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
 		if( $wgUseRealNamesOnly ) {
@@ -99,6 +107,9 @@ class RequestAccountPage extends SpecialPage {
 		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-ext-text', array('parse') )."\n";
 
+		$form .= "<p>".wfMsgHtml('requestaccount-attach')." ";
+		$form .= Xml::input( 'wpUploadFile', 35, '', array('id' => 'wpUploadFile', 'type' => 'file') )."</p>\n";
+
 		$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($this->mNotes) .
@@ -124,10 +135,12 @@ class RequestAccountPage extends SpecialPage {
 		}
 		$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
 			' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
-		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
+		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedUrl() )."\n";
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
-		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestaccount-submit') ) . "</p>";
-		$form .=  '</form>';
+		$form .= Xml::hidden( 'attachment', $this->mPrevAttachment )."\n";
+		$form .= Xml::hidden( 'forgotAttachment', $this->mForgotAttachment )."\n";
+		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestaccount-submit') )."</p>";
+		$form .= '</form>';
 
 		$wgOut->addHTML( $form );
 	}
@@ -184,7 +197,7 @@ class RequestAccountPage extends SpecialPage {
 		# used for more than just username validation
 		$u->setEmail( $this->mEmail );
 		$u->setRealName( $this->mRealName );
-		# Let captchas confirm
+		# Let captchas deny request...
 		global $wgCaptcha;
 		if( isset($wgCaptcha) ) {
 			$abortError = '';
@@ -194,10 +207,66 @@ class RequestAccountPage extends SpecialPage {
 				return false;
 			}
 		}
+		# Per security reasons, file dir cannot be pulled from client,
+		# so ask them to resubmit it then...
+		global $wgAllowAccountRequestFiles;
+		if( $wgAllowAccountRequestFiles && $this->mPrevAttachment && !$this->mSrcName ) {
+			# If the user is submitting forgotAttachment as true with no file, 
+			# then they saw the notice and choose not to re-select the file. 
+			# Assume that they don't want to send one anymore.
+			if( !$this->mForgotAttachment ) {
+				$this->mPrevAttachment = '';
+				$this->showForm( wfMsgHtml('requestaccount-resub'), 1 );
+				return false;
+			}
+		}
+		# Process upload...
+		if( $wgAllowAccountRequestFiles && $this->mSrcName ) {
+			$ext = explode('.',$this->mSrcName);
+			$finalExt = $ext[count($ext)-1];
+			# File must have size.
+			if( trim( $this->mSrcName ) == '' || empty( $this->mFileSize ) ) {
+				$this->mPrevAttachment = '';
+				$this->showForm( wfMsgHtml( 'emptyfile' ) );
+				return false;
+			}
+    		# Look at the contents of the file; if we can recognize the
+		 	# type but it's corrupt or data of the wrong type, we should
+		 	# probably not accept it.
+		 	global $wgAccountRequestExts;
+		 	if( !in_array($finalExt,$wgAccountRequestExts) ) {
+		 		$this->mPrevAttachment = '';
+				$this->showForm( wfMsgHtml( 'requestaccount-exts' ) );
+				return false;
+		 	}
+			$fileProps = File::getPropsFromPath( $this->mTempPath, $finalExt );
+			$veri = $this->verify( $this->mTempPath, $finalExt );
+			if( $veri !== true ) {
+				$this->mPrevAttachment = '';
+				$this->showForm( wfMsgHtml( 'uploadcorrupt' ) );
+				return false;
+			}
+			# Start a transaction, move file from temp to account request directory.
+			$transaction = new FSTransaction();
+			if( !FileStore::lock() ) {
+				wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
+				return false;
+			}
+			$store = FileStore::get( 'accountreqs' );
+			$key = FileStore::calculateKey( $this->mTempPath, $finalExt );
+			
+			$transaction->add( $store->insert( $key, $this->mTempPath, FileStore::DELETE_ORIGINAL ) );
+			if( $transaction === false ) {
+				// Failed to move?
+				wfDebug( __METHOD__.": import to file store failed, aborting\n" );
+				throw new MWException( "Could not archive and delete file $oldpath" );
+				return false;
+			}
+		}
 		# Insert into pending requests...
 		$dbw->begin();
 		$dbw->insert( 'account_requests', 
-			array(
+			array( 
 				'acr_name' => $u->mName,
 				'acr_email' => $u->mEmail,
 				'acr_real_name' => $u->mRealName,
@@ -205,6 +274,8 @@ class RequestAccountPage extends SpecialPage {
 				'acr_bio' => $this->mBio,
 				'acr_notes' => $this->mNotes,
 				'acr_urls' => $this->mUrls,
+				'acr_filename' => isset($this->mSrcName) ? $this->mSrcName : null,
+				'acr_storage_key' => isset($key) ? $key : null,
 				'acr_ip' => wfGetIP() // Possible use for spam blocking
 			),
 			__METHOD__ 
@@ -212,12 +283,18 @@ class RequestAccountPage extends SpecialPage {
 		# Send confirmation, required!
 		$result = $this->sendConfirmationMail( $u );
 		if( WikiError::isError( $result ) ) {
+			$dbw->rollback(); // Nevermind
+			#$transaction->rollback();
 			$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
 			$this->showForm( $error );
-			$dbw->rollback(); // Nevermind
 			return false;
 		}
 		$dbw->commit();
+		if( isset($transaction) ) {
+			wfDebug( __METHOD__.": set db items, applying file transactions\n" );
+			$transaction->commit();
+			FileStore::unlock();
+		}
 		# No request spamming...
 		# BC: check if isPingLimitable() exists
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
@@ -238,6 +315,101 @@ class RequestAccountPage extends SpecialPage {
 		$wgOut->addWikiText( wfMsg( "requestaccount-sent" ) );
 
 		$wgOut->returnToMain();
+	}
+	
+	/**
+	 * Initialize the uploaded file from PHP data
+	 * @access private
+	 */
+	function initializeUpload( $request ) {
+		$this->mTempPath       = $request->getFileTempName( 'wpUploadFile' );
+		$this->mFileSize       = $request->getFileSize( 'wpUploadFile' );
+		$this->mSrcName        = $request->getFileName( 'wpUploadFile' );
+		$this->mRemoveTempFile = false; // PHP will handle this
+	}
+	
+	/**
+	 * Verifies that it's ok to include the uploaded file
+	 *
+	 * @param string $tmpfile the full path of the temporary file to verify
+	 * @param string $extension The filename extension that the file is to be served with
+	 * @return mixed true of the file is verified, a WikiError object otherwise.
+	 */
+	function verify( $tmpfile, $extension ) {
+		#magically determine mime type
+		$magic=& MimeMagic::singleton();
+		$mime = $magic->guessMimeType($tmpfile,false);
+
+		#check mime type, if desired
+		global $wgVerifyMimeType;
+		if ($wgVerifyMimeType) {
+
+		  wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n");
+			#check mime type against file extension
+			if( !$this->verifyExtension( $mime, $extension ) ) {
+				return new WikiErrorMsg( 'uploadcorrupt' );
+			}
+
+			#check mime type blacklist
+			global $wgMimeTypeBlacklist;
+			if( isset($wgMimeTypeBlacklist) && !is_null($wgMimeTypeBlacklist)
+				&& $this->checkFileExtension( $mime, $wgMimeTypeBlacklist ) ) {
+				return new WikiErrorMsg( 'filetype-badmime', htmlspecialchars( $mime ) );
+			}
+		}
+
+		wfDebug( __METHOD__.": all clear; passing.\n" );
+		return true;
+	}
+	
+	/**
+	 * Checks if the mime type of the uploaded file matches the file extension.
+	 *
+	 * @param string $mime the mime type of the uploaded file
+	 * @param string $extension The filename extension that the file is to be served with
+	 * @return bool
+	 */
+	function verifyExtension( $mime, $extension ) {
+		$magic =& MimeMagic::singleton();
+
+		if ( ! $mime || $mime == 'unknown' || $mime == 'unknown/unknown' )
+			if ( ! $magic->isRecognizableExtension( $extension ) ) {
+				wfDebug( __METHOD__.": passing file with unknown detected mime type; " .
+					"unrecognized extension '$extension', can't verify\n" );
+				return true;
+			} else {
+				wfDebug( __METHOD__.": rejecting file with unknown detected mime type; ".
+					"recognized extension '$extension', so probably invalid file\n" );
+				return false;
+			}
+
+		$match = $magic->isMatchingExtension($extension,$mime);
+
+		if ($match===NULL) {
+			wfDebug( __METHOD__.": no file extension known for mime type $mime, passing file\n" );
+			return true;
+		} elseif ($match===true) {
+			wfDebug( __METHOD__.": mime type $mime matches extension $extension, passing file\n" );
+
+			#TODO: if it's a bitmap, make sure PHP or ImageMagic resp. can handle it!
+			return true;
+
+		} else {
+			wfDebug( __METHOD__.": mime type $mime mismatches file extension $extension, rejecting file\n" );
+			return false;
+		}
+	}
+	
+	/**
+	 * Perform case-insensitive match against a list of file extensions.
+	 * Returns true if the extension is in the list.
+	 *
+	 * @param string $ext
+	 * @param array $list
+	 * @return bool
+	 */
+	function checkFileExtension( $ext, $list ) {
+		return in_array( strtolower( $ext ), $list );
 	}
 	
 	/**
@@ -267,7 +439,7 @@ class RequestAccountPage extends SpecialPage {
 				$wgOut->addWikiText( wfMsg( $message ) );
 				if( !$wgUser->isLoggedIn() ) {
 					$title = SpecialPage::getTitleFor( 'Userlogin' );
-					$wgOut->returnToMain( true, $title->getPrefixedText() );
+					$wgOut->returnToMain( true, $title->getPrefixedUrl() );
 				}
 			} else {
 				$wgOut->addWikiText( wfMsg( 'confirmemail_error' ) );
@@ -383,6 +555,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$this->setHeaders();
 		# A target user
 		$this->acrID = $wgRequest->getIntOrNull( 'acrid' );
+		# Attachments
+		$this->file = $wgRequest->getVal( 'file' );
 		# For renaming to alot for collisions with other local requests
 		# that were added to some global $wgAuth system first.
 		$this->mUsername = $wgRequest->getText( 'wpNewName' );
@@ -396,11 +570,32 @@ class ConfirmAccountsPage extends SpecialPage
 
 		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
 			$this->doSubmit();
+		} else if( $this->file ) {
+			$this->showFile( $this->file );
 		} else if( $this->acrID ) {
 			$this->showForm();
 		} else {
 			$this->showList();
 		}
+	}
+	
+	/**
+	 * Show a private file requested by the visitor.
+	 */
+	function showFile( $key ) {
+		global $wgOut, $wgRequest;
+		$wgOut->disable();
+		
+		# We mustn't allow the output to be Squid cached, otherwise
+		# if an admin previews a private image, and it's cached, then
+		# a user without appropriate permissions can toddle off and
+		# nab the image, and Squid will serve it
+		$wgRequest->response()->header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', 0 ) . ' GMT' );
+		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
+		$wgRequest->response()->header( 'Pragma: no-cache' );
+		
+		$store = FileStore::get( 'accountreqs' );
+		$store->stream( $key );
 	}
 	
 	function doSubmit() {
@@ -414,7 +609,6 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 
 		if( $this->submitType == 'reject' ) {
-			global $wgSaveRejectedAccountReqs;
 			# Make proxy user to email a rejection message :(
 			$u = User::newFromName( $row->acr_name, 'creatable' );
 			$u->setEmail( $row->acr_email );
@@ -434,19 +628,15 @@ class ConfirmAccountsPage extends SpecialPage
 				}
 			}
 			$dbw = wfGetDB( DB_MASTER );
-			# Either mark off the row as deleted or wipe it completely
-			if( $wgSaveRejectedAccountReqs ) {
-				global $wgUser;
-				# Request can later be recovered
-				$dbw->update( 'account_requests', 
-					array( 'acr_rejected' => $dbw->timestamp(),
-						'acr_user' => $wgUser->getID(),
-						'acr_deleted' => 1 ), 
-					array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ), 
-					__METHOD__ );
-			} else {
-				$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
-			}
+			# Mark off the row as deleted
+			global $wgUser;
+			# Request can later be recovered
+			$dbw->update( 'account_requests', 
+				array( 'acr_rejected' => $dbw->timestamp(),
+					'acr_user' => $wgUser->getID(),
+					'acr_deleted' => 1 ), 
+				array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ), 
+				__METHOD__ );
 
 			$this->showSuccess( $action );
 		} else if( $this->submitType == 'accept' ) {
@@ -516,17 +706,49 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
-				$utalk->doEdit( wfMsg('confirmaccount-welc') . ' ~~~~', wfMsg('confirmaccount-wsum'), EDIT_MINOR );
+				$utalk->doEdit( wfMsg('confirmaccount-welc') . ' ~~~~', 
+					wfMsg('confirmaccount-wsum'), EDIT_MINOR );
 			}
 
 			$this->showSuccess( $action, $user->getName() );
+		} else if( $this->submitType == 'hold' ) {
+			global $wgUser;
+			# Make proxy user to email a message
+			$u = User::newFromName( $row->acr_name, 'creatable' );
+			$u->setEmail( $row->acr_email );
+			# Pointless without a summary...
+			if( !$this->reason ) {
+				$error = wfMsg( 'confirmaccount-needreason' );
+				$this->showForm( $error );
+				return false;
+			}
+			# If not already held or deleted, mark as held
+			$dbw = wfGetDB( DB_MASTER );
+			$dbw->begin();
+			$dbw->update( 'account_requests',
+				array( 'acr_held' => $dbw->timestamp(), 
+					'acr_user' => $wgUser->getID() ),
+				array( 'acr_id' => $this->acrID, 'acr_held IS NULL', 'acr_deleted' => 0 ), 
+					__METHOD__ );
+			# Do not send multiple times
+			if( !$row->acr_held && !$row->acr_deleted ) {
+				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+						wfMsgExt( 'confirmaccount-email-body5', array('parsemag'), $u->getName(), $this->reason ) );
+				if( WikiError::isError( $result ) ) {
+					$dbw->rollback();
+					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+					$this->showForm( $error );
+					return false;
+				}
+			}
+			$this->showSuccess( $action );
 		} else {
 			$this->showForm();
 		}
 	}
 	
 	function showForm( $msg='' ) {
-		global $wgOut, $wgTitle, $wgUser;
+		global $wgOut, $wgTitle, $wgUser, $wgLang;
 		
 		# Output failure message
 		if( $msg ) {
@@ -548,6 +770,16 @@ class ConfirmAccountsPage extends SpecialPage
 		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
 		
 		$wgOut->addWikiText( wfMsg( "confirmaccount-text" ) );
+		
+		if( $this->showRejects ) {
+			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$wgOut->addHTML('<b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), 
+				User::whoIs($row->acr_user), $time ).'</b>');
+		} else if( $row->acr_held ) {
+			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
+			$wgOut->addHTML('<b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'), 
+				User::whoIs($row->acr_user), $time ).'</b>');
+		}
 		
 		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
 		$form = "<form name='accountconfirm' action='$action' method='post'><fieldset>";
@@ -575,12 +807,22 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
+		$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ' .
+			$this->skin->makeKnownLinkObj( $wgTitle, htmlspecialchars($row->acr_filename),
+				'file=' . $row->acr_storage_key );
+		
 		$form .= "<p>".wfMsgHtml('confirmaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_notes) .
 			"</textarea></p>\n";
 		$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
 		$form .= "<p>".$this->parseLinks($row->acr_urls)."</p>";
+		if( $wgUser->isAllowed( 'requestips' ) ) {
+			$blokip = SpecialPage::getTitleFor( 'blockip' );
+			$form .= "<p>".wfMsgHtml('confirmaccount-ip')." ".htmlspecialchars($row->acr_ip).
+			" (" . $this->skin->makeKnownLinkObj( $blokip, wfMsgHtml('blockip'), 
+				'ip=' . $row->acr_ip ).")</p>\n";
+		}
 		$form .= '</fieldset>';
 		
 		$form .= "<p>".wfMsgExt( 'confirmaccount-confirm', array('parse') )."</p>\n";
@@ -588,13 +830,15 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= ' '.Xml::label( wfMsg('confirmaccount-create'), 'submitCreate' )."</p>\n";
 		$form .= "<p>".Xml::radio( 'wpSubmitType', 'reject', $this->submitType=='reject', array('id' => 'submitDeny') );
 		$form .= ' '.Xml::label( wfMsg('confirmaccount-deny'), 'submitDeny' )."</p>\n";
+		$form .= "<p>".Xml::radio( 'wpSubmitType', 'hold', $this->submitType=='hold', array('id' => 'submitHold') );
+		$form .= ' '.Xml::label( wfMsg('confirmaccount-hold'), 'submitHold' )."</p>\n";
 
 		$form .= "<p>".wfMsgHtml('confirmaccount-reason')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%'>" .
 			htmlspecialchars($this->reason) .
 			"</textarea></p>\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
-		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedText() )."\n";
+		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedUrl() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
 		$form .= Xml::hidden( 'acrid', $row->acr_id );
 		$form .= Xml::hidden( 'wpShowRejects', $this->showRejects );
@@ -655,33 +899,53 @@ class ConfirmAccountsPage extends SpecialPage
 			$wgOut->addWikiText( wfMsg( "confirmaccount-acc", $name ) );
 		else if( $this->submitType == 'reject' )
 			$wgOut->addWikiText( wfMsg( "confirmaccount-rej" ) );
+		else
+			$wgOut->redirect( $wgTitle->getFullUrl() );
 		
 		$wgOut->returnToMain( true, $wgTitle );
 	}
 
 	function showList() {
-		global $wgOut, $wgUser, $wgTitle, $wgLang, $wgSaveRejectedAccountReqs;
+		global $wgOut, $wgUser, $wgTitle, $wgLang;
 		
 		if( $this->showRejects ) {
 			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) );
-		} else if( $wgSaveRejectedAccountReqs ) {
+		} else {
 			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back2' ),
 				wfArrayToCGI( array('wpShowRejects' => 1 ) ) );
 		}
 		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
 
-		if( $wgSaveRejectedAccountReqs ) {
-			# Every 100th view, prune old deleted items
-			wfSeedRandom();
-			if( 0 == mt_rand( 0, 99 ) ) {
-				global $wgRejectedAccountMaxAge;
+		# Every 100th view, prune old deleted items
+		wfSeedRandom();
+		if( 0 == mt_rand( 0, 99 ) ) {
+			global $wgRejectedAccountMaxAge;
 
-				$dbw = wfGetDB( DB_MASTER );
-				$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
-				$accountrequests = $dbw->tableName( 'account_requests' );
-				$sql = "DELETE FROM $accountrequests WHERE acr_rejected < '{$cutoff}'";
-				$dbw->query( $sql );
+			$dbw = wfGetDB( DB_MASTER );
+			$transaction = new FSTransaction();
+			if( !FileStore::lock() ) {
+				wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
+				return false;
 			}
+			# Select all items older than time $cutoff
+			$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
+			$accountrequests = $dbw->tableName( 'account_requests' );
+			$sql = "SELECT acr_storage_key,acr_id FROM $accountrequests WHERE acr_rejected < '{$cutoff}'";
+			$res = $dbw->query( $sql );
+
+			$store = FileStore::get( 'accountreqs' );
+			# Clear out any associated attachments and delete those rows
+			while( $row = $dbw->fetchObject( $res ) ) {
+				$key = $row->acr_storage_key;
+				if( $key ) {
+					$path = $store->filePath( $key );
+					if( $path && file_exists($path) ) {
+						$transaction->addCommit( FSTransaction::DELETE_FILE, $path );
+						$dbw->query( "DELETE FROM $tbl_arch WHERE acr_id = {$row->acr_id}" );
+					}
+				}
+			}
+			$transaction->commit();
 		}
 
 		$pager = new ConfirmAccountsPager( $this, array(), $this->showRejects );
@@ -710,15 +974,23 @@ class ConfirmAccountsPage extends SpecialPage
 			$link = $this->skin->makeKnownLinkObj( $title, wfMsgHtml('confirmaccount-review'), 
 				'acrid='.$row->acr_id.'&wpShowRejects=1' );
 		} else {
-			$link = $this->skin->makeKnownLinkObj( $title, wfMsgHtml('confirmaccount-review'), 'acrid='.$row->acr_id );
+			$link = $this->skin->makeKnownLinkObj( $title, wfMsgHtml('confirmaccount-review'), 
+				'acrid='.$row->acr_id );
 		}
 		$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_registration), true );
 		
 		$r = '<li>';
+		if( $row->acr_held ) {
+			$r .= '<span class="confirmaccount-held">';
+		}
+		
 		$r .= $time." ($link)";
 		if( $this->showRejects ) {
 			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
 			$r .= ' <b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name, $time ).'</b>';
+		} else if( $row->acr_held ) {
+			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
+			$r .= ' <b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'), User::whoIs($row->acr_user), $time ).'</b>';
 		}
 		$r .= '<br/><table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
 		if( !$wgUseRealNamesOnly ) {
@@ -737,8 +1009,13 @@ class ConfirmAccountsPage extends SpecialPage
 			$preview = substr( $preview, 0, strrpos($preview,' ') );
 			$preview .= " . . .";
 		}
-		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-bio-q').'</strong></td><td width=\'100%\'><i>'.$preview.'</i></td></tr>';
-		$r .= '</table></li>';
+		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-bio-q') .
+			'</strong></td><td width=\'100%\'><i>'.$preview.'</i></td></tr>';
+		$r .= '</table>';
+		if( $row->acr_held ) {
+			$r .= '</span>';
+		}
+		$r .= '</li>';
 		
 		return $r;
 	}
@@ -772,8 +1049,8 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 	function getQueryInfo() {
 		$conds = $this->mConds;
 		$tables = array('account_requests');
-		$fields = array('acr_id','acr_name','acr_real_name','acr_registration',
-			'acr_email','acr_email_authenticated','acr_bio','acr_notes','acr_urls');
+		$fields = array('acr_id','acr_name','acr_real_name','acr_registration','acr_held',
+			'acr_email','acr_email_authenticated','acr_bio','acr_notes','acr_urls','acr_user');
 		if( $this->rejects ) {
 			$tables[] = 'user';
 			$conds[] = 'acr_user = user_id';

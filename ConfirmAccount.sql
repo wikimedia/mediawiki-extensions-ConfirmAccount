@@ -35,6 +35,9 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   acr_urls mediumblob NOT NULL,
   -- IP address
   acr_ip VARCHAR(255) NULL default '',
+  --Name of attached file (.pdf,.doc,.txt ect...)
+  acr_filename VARCHAR(255) NULL,
+  acr_storage_key VARCHAR(64) NULL,
   
   -- Timestamp of account registration.
   acr_registration char(14) NOT NULL,
@@ -43,8 +46,12 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   acr_deleted bool NOT NULL,
   -- Time of rejection (if rejected)
   acr_rejected binary(14),
-  -- The user who rejected it
+  -- Time request was put on hold (if held)
+  acr_held binary(14),
+  -- The user who rejected/held it
   acr_user int unsigned NOT NULL default 0,
+  -- Reason
+  acr_comment varchar(255) NOT NULL default '',
   
   PRIMARY KEY (acr_id),
   UNIQUE KEY (acr_name),

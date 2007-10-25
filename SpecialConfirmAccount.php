@@ -28,15 +28,22 @@ $wgAutoUserBioText = '';
 $wgAutoWelcomeNewUsers = true;
 # Make the username of the real name?
 $wgUseRealNamesOnly = true;
-$wgSaveRejectedAccountReqs = true;
 $wgRejectedAccountMaxAge = 7 * 24 * 3600; // One week
 # How many requests can an IP make at once?
 $wgAccountRequestThrottle = 1;
 # Minimum biography specs
 $wgAccountRequestMinWords = 50;
 
+# Location of attached files
+$wgAllowAccountRequestFiles = true;
+$wgAccountRequestExts = array('txt','pdf','doc','latex','rtf','text','wp','wpd' );
+$wgFileStore['accountreqs']['directory'] = "{$wgUploadDirectory}/accountreqs";
+$wgFileStore['accountreqs']['url'] = null; // Private
+$wgFileStore['accountreqs']['hash'] = 3;
+
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
+$wgGroupPermissions['bureaucrat']['requestips'] = true;
 
 # Internationalisation
 function efLoadConfirmAccountsMessages() {
@@ -88,3 +95,21 @@ $wgHooks['UserCreateForm'][] = 'efAddRequestLoginText';
 $wgHooks['UserLoginForm'][] = 'efAddRequestLoginText';
 # Check for collisions
 $wgHooks['AbortNewAccount'][] = 'efCheckIfAccountNameIsPending';
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
+
+function efConfirmAccountSchemaUpdates() {
+	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields;
+	
+	$base = dirname(__FILE__);
+	if ($wgDBtype == 'mysql') {
+		$wgExtNewFields[] = array('account_requests', 'acr_filename',
+			"$base/archives/patch-acr_filename.sql" );
+	} else {
+		$wgExtPGNewFields[] = array('account_requests', 'acr_filename', "TEXT" );
+		$wgExtPGNewFields[] = array('account_requests', 'acr_held', "TIMESTAMPTZ" );
+		$wgExtPGNewFields[] = array('account_requests', 'acr_storage_key', "TEXT" );
+		$wgExtPGNewFields[] = array('account_requests', 'acr_comment', "TEXT" );
+	}
+	
+	return true;
+}

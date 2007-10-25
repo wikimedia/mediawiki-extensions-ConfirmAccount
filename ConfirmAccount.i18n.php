@@ -30,14 +30,18 @@ $wgConfirmAccountMessages['en'] = array(
 	'requestaccount-same'     => '(same as real name)',
 	'requestaccount-email'    => 'Email address:',
 	'requestaccount-bio'      => 'Personal biography:',
+	'requestaccount-attach'   => 'Resume or CV (optional):',
 	'requestaccount-notes'    => 'Additional notes:',
 	'requestaccount-urls'     => 'List of websites, if any (separate with newlines):',
 	'requestaccount-agree'    => 'You must certify that your real name is correct and that you agree to our Terms of Service.',
 	'requestaccount-inuse'    => 'Username is already in use in a pending account request.',
 	'requestaccount-tooshort' => 'Your biography must be at least be $1 words long.',
+	'requestaccount-exts'     => 'Attachment file type is disallowed.',
+	'requestaccount-resub'    => 'Your CV/resume file must be re-selected for security reasons. Leave the field blank 
+	if you no longer want to include one.',
 	'requestaccount-tos'      => 'I have read and agree to abide by the [[{{NS:PROJECT}}:Terms of Service|Terms of Service]] of {{SITENAME}}. 
 	The name I have specified under "Real name" is in fact my own real name.',
-	'requestaccount-submit'    => 'Request account',
+	'requestaccount-submit'   => 'Request account',
 	'requestaccount-sent'     => 'Your account request has successfully been sent and is now pending review.',
 	'request-account-econf'   => 'Your e-mail address has been confirmed and will be listed as such in your account 
 	request.',
@@ -82,17 +86,22 @@ This confirmation code will expire at $4.',
 	'confirmaccount-email-q' => 'Email',
 	'confirmaccount-bio'     => 'Biography:',
 	'confirmaccount-bio-q'   => 'Biography',
+	'confirmaccount-attach'  => 'Resume/CV:',
 	'confirmaccount-notes'   => 'Additional notes:',
 	'confirmaccount-urls'    => 'List of websites:',
 	'confirmaccount-nourls'  => '(None provided)',
 	'confirmaccount-review'  => 'Approve/Reject',
-	'confirmaccount-confirm' => 'Use the buttons below to accept this request or deny it.',
+	'confirmaccount-confirm' => 'Use the options below to accept, deny, or hold this request:',
 	'confirmaccount-econf'   => '(confirmed)',
 	'confirmaccount-reject'  => '(rejected by [[User:$1|$1]] on $2)',
+	'confirmaccount-held'    => '(marked "on hold" by [[User:$1|$1]] on $2)',
 	'confirmaccount-create'  => 'Accept (create account)',
 	'confirmaccount-deny'    => 'Reject (delist)',
+	'confirmaccount-hold'    => 'Mark as "on hold"',
 	'confirmaccount-reason'  => 'Comment (will be included in email):',
+	'confirmaccount-ip'      => 'IP address:',
 	'confirmaccount-submit'  => 'Confirm',
+	'confirmaccount-needreason' => 'You must provide a reason in the comment box below.',
 	'confirmaccount-acc'     => 'Account request confirmed successfully; created new user account [[User:$1]].',
 	'confirmaccount-rej'     => 'Account request rejected successfully.',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
@@ -124,6 +133,12 @@ There are several ways this can happen. You may not have filled out the form cor
 length in your responses, or otherwise failed to meet some policy criteria. There may be contact lists on site that 
 you can use if you want to know more about user account policy.',
 	'confirmaccount-email-body4' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
+
+$2
+
+There may be contact lists on site that you can use if you want to know more about user account policy.',
+	'confirmaccount-email-body5' => 'Before your request for an account "$1" can be accepted on {{SITENAME}} 
+	you must first provide some additional information.
 
 $2
 
