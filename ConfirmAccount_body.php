@@ -860,13 +860,18 @@ class ConfirmAccountsPage extends SpecialPage
 		$count = 0;
 
 		$linkList = '';
-		$lines = explode( "\n", htmlspecialchars($text) );
+		# Normalize space characters
+		$text = str_replace( array("\r","\t"), array("\n"," "), htmlspecialchars($text) );
+		# Split out each line as a link
+		$lines = explode( "\n", $text );
 		foreach( $lines as $line ) {
-			$links = explode("\n",$line);
+			$links = explode(" ",$line,2);
 			$link = $links[0];
+			# Any explanation text is not part of the link...
+			$extra = isset($links[1]) ? ' '.$links[1] : '';
 			if( strpos($link,'.') ) {
 				$link = ( strpos($link,'http://')===false ) ? 'http://'.$link : $link;
-				$linkList .= "<li><a href='$link'>$link</a></li>\n";
+				$linkList .= "<li><a href='$link'>$link</a>$extra</li>\n";
 			}
 			$count++;
 			if( $count >= $max )
