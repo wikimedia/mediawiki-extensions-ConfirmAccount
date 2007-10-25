@@ -265,8 +265,14 @@ class RequestAccountPage extends SpecialPage {
 		}
 		# Insert into pending requests...
 		$dbw->begin();
+		
+		$expires = null; // passed by reference
+		$token = $this->getConfirmationToken( $u, $expires );
+		
+		$acr_id = $dbw->nextSequenceValue( 'account_requests_acr_id_seq' );
 		$dbw->insert( 'account_requests', 
 			array( 
+				'acr_id' => $acr_id,
 				'acr_name' => $u->mName,
 				'acr_email' => $u->mEmail,
 				'acr_real_name' => $u->mRealName,
@@ -276,15 +282,17 @@ class RequestAccountPage extends SpecialPage {
 				'acr_urls' => $this->mUrls,
 				'acr_filename' => isset($this->mSrcName) ? $this->mSrcName : null,
 				'acr_storage_key' => isset($key) ? $key : null,
+				'acr_comment' => '',
+				'acr_email_token' => md5($token),
+			    'acr_email_token_expires' => $dbw->timestamp( $expires ),
 				'acr_ip' => wfGetIP() // Possible use for spam blocking
 			),
 			__METHOD__ 
 		);
 		# Send confirmation, required!
-		$result = $this->sendConfirmationMail( $u );
+		$result = $this->sendConfirmationMail( $u, $token, $expires );
 		if( WikiError::isError( $result ) ) {
 			$dbw->rollback(); // Nevermind
-			$transaction->rollback();
 			$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
 			$this->showForm( $error );
 			return false;
@@ -458,7 +466,7 @@ class RequestAccountPage extends SpecialPage {
 	function requestFromEmailToken( $code ) {	
 		$dbr = wfGetDB( DB_SLAVE );
 		$reqID = $dbr->selectField( 'account_requests', 'acr_name', 
-			array( 'acr_email_token' => md5( $code ),
+			array( 'acr_email_token' => md5($code),
 				'acr_email_token_expires > ' . $dbr->addQuotes( $dbr->timestamp() ),
 			) 
 		);
@@ -468,7 +476,7 @@ class RequestAccountPage extends SpecialPage {
 	/**
 	 * Flag a user's email as confirmed in the db
 	 *
-	 * @param Sring $name
+	 * @param sring $name
 	 */	
 	function confirmEmail( $name ) {
 		$dbw = wfGetDB( DB_MASTER );
@@ -483,12 +491,13 @@ class RequestAccountPage extends SpecialPage {
 	 * mail to the user's given address.
 	 *
 	 * @param User $user
+	 * @param string $token
+	 * @param string $expiration
 	 * @return mixed True on success, a WikiError object on failure.
 	 */
-	function sendConfirmationMail( $user ) {
+	function sendConfirmationMail( $user, $token, $expiration ) {
 		global $wgContLang;
-		$expiration = null; // gets passed-by-ref and defined in next line.
-		$url = $this->confirmationTokenUrl( $user, $expiration );
+		$url = $this->confirmationTokenUrl( $token );
 		return $user->sendMail( wfMsg( 'requestaccount-email-subj' ),
 			wfMsg( 'requestaccount-email-body',
 				wfGetIP(),
@@ -500,12 +509,11 @@ class RequestAccountPage extends SpecialPage {
 	/**
 	 * Generate and store a new e-mail confirmation token, and return
 	 * the URL the user can use to confirm.
-	 * @param User $user
+	 * @param string $token
 	 * @return string
 	 * @private
 	 */
-	function confirmationTokenUrl( $user, &$expiration ) {
-		$token = $this->confirmationToken( $user, $expiration );
+	function confirmationTokenUrl( $token ) {
 		$title = Title::makeTitle( NS_SPECIAL, 'RequestAccount' );
 		return $title->getFullUrl( 'action=confirmemail&wpEmailToken='.$token );
 	}
@@ -514,23 +522,15 @@ class RequestAccountPage extends SpecialPage {
 	 * Generate, store, and return a new e-mail confirmation code.
 	 * A hash (unsalted since it's used as a key) is stored.
 	 * @param User $user
+	 * @param string $expiration
 	 * @return string
 	 * @private
 	 */
-	function confirmationToken( $user, &$expiration ) {
-		$now = time();
-		$expires = $now + 7 * 24 * 60 * 60;
+	function getConfirmationToken( $user, &$expiration ) {
+		$expires = time() + 7 * 24 * 60 * 60;
 		$expiration = wfTimestamp( TS_MW, $expires );
 
 		$token = $user->generateToken( $user->getName() . $user->getEmail() . $expires );
-		$hash = md5( $token );
-
-		$dbw = wfGetDB( DB_MASTER );
-		$dbw->update( 'account_requests',
-			array( 'acr_email_token'         => $hash,
-			       'acr_email_token_expires' => $dbw->timestamp( $expires ) ),
-			array( 'acr_name'                => $user->getName() ),
-			__METHOD__ );
 
 		return $token;
 	}
@@ -562,7 +562,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$this->mUsername = $wgRequest->getText( 'wpNewName' );
 		# For viewing rejects
 		$this->showRejects = $wgRequest->getBool( 'wpShowRejects' );
-		
+
 		$this->submitType = $wgRequest->getVal( 'wpSubmitType' );
 		$this->reason = $wgRequest->getText( 'wpReason' );
 
@@ -754,7 +754,6 @@ class ConfirmAccountsPage extends SpecialPage
 		if( $msg ) {
 			$wgOut->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
 		}
-		
 		$row = $this->getRequest();
 		if( !$row || $row->acr_rejected && !$this->showRejects ) {
 			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
@@ -807,10 +806,11 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
-		$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ' .
-			$this->skin->makeKnownLinkObj( $wgTitle, htmlspecialchars($row->acr_filename),
+		if( $row->acr_filename ) {
+			$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ' .
+				$this->skin->makeKnownLinkObj( $wgTitle, htmlspecialchars($row->acr_filename),
 				'file=' . $row->acr_storage_key );
-		
+		}
 		$form .= "<p>".wfMsgHtml('confirmaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_notes) .
