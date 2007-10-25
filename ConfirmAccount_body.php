@@ -806,12 +806,14 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
+		$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ';
 		if( $row->acr_filename ) {
-			$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ' .
-				$this->skin->makeKnownLinkObj( $wgTitle, htmlspecialchars($row->acr_filename),
+			$form .= $this->skin->makeKnownLinkObj( $wgTitle, htmlspecialchars($row->acr_filename),
 				'file=' . $row->acr_storage_key );
+		} else {
+			$form .= wfMsgHtml('confirmaccount-none');
 		}
-		$form .= "<p>".wfMsgHtml('confirmaccount-notes')."</p>\n";
+		$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_notes) .
 			"</textarea></p>\n";
@@ -878,7 +880,7 @@ class ConfirmAccountsPage extends SpecialPage
 				break;
 		}
 		if( $linkList == '' ) {
-			$linkList = wfMsgHtml( 'confirmaccount-nourls' );
+			$linkList = wfMsgHtml( 'confirmaccount-none' );
 		} else {
 			$linkList = "<ul>$linkList</ul>";
 		}
