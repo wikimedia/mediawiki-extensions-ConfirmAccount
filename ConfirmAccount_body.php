@@ -284,7 +284,7 @@ class RequestAccountPage extends SpecialPage {
 		$result = $this->sendConfirmationMail( $u );
 		if( WikiError::isError( $result ) ) {
 			$dbw->rollback(); // Nevermind
-			#$transaction->rollback();
+			$transaction->rollback();
 			$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
 			$this->showForm( $error );
 			return false;
