@@ -57,10 +57,10 @@ class RequestAccountPage extends SpecialPage {
 		}
 	}
 
-	function showForm( $msg='', $forgetFile=0 ) {
+	function showForm( $msg='', $forgotFile=0 ) {
 		global $wgOut, $wgUser, $wgTitle, $wgAuth, $wgUseRealNamesOnly;
 
-		$this->mForgotAttachment = $forgetFile;
+		$this->mForgotAttachment = $forgotFile;
 
 		$wgOut->setPagetitle( wfMsgHtml( "requestaccount" ) );
 		# Output failure message if any
@@ -579,174 +579,6 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 	}
 	
-	/**
-	 * Show a private file requested by the visitor.
-	 */
-	function showFile( $key ) {
-		global $wgOut, $wgRequest;
-		$wgOut->disable();
-		
-		# We mustn't allow the output to be Squid cached, otherwise
-		# if an admin previews a private image, and it's cached, then
-		# a user without appropriate permissions can toddle off and
-		# nab the image, and Squid will serve it
-		$wgRequest->response()->header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', 0 ) . ' GMT' );
-		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
-		$wgRequest->response()->header( 'Pragma: no-cache' );
-		
-		$store = FileStore::get( 'accountreqs' );
-		$store->stream( $key );
-	}
-	
-	function doSubmit() {
-		global $wgOut, $wgTitle, $wgAuth;
-
-		$row = $this->getRequest();
-		if( !$row ) {
-			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
-			$wgOut->returnToMain( true, $wgTitle );
-			return;
-		}
-
-		if( $this->submitType == 'reject' ) {
-			# Make proxy user to email a rejection message :(
-			$u = User::newFromName( $row->acr_name, 'creatable' );
-			$u->setEmail( $row->acr_email );
-			# Do not send multiple times
-			if( !$row->acr_rejected ) {
-				if( $this->reason ) {
-					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsgExt( 'confirmaccount-email-body4', array('parsemag'), $u->getName(), $this->reason ) );
-				} else {
-					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsgExt( 'confirmaccount-email-body3', array('parsemag'), $u->getName() ) );
-				}
-				if( WikiError::isError( $result ) ) {
-					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
-					$this->showForm( $error );
-					return false;
-				}
-			}
-			$dbw = wfGetDB( DB_MASTER );
-			# Mark off the row as deleted
-			global $wgUser;
-			# Request can later be recovered
-			$dbw->update( 'account_requests', 
-				array( 'acr_rejected' => $dbw->timestamp(),
-					'acr_user' => $wgUser->getID(),
-					'acr_deleted' => 1 ), 
-				array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ), 
-				__METHOD__ );
-
-			$this->showSuccess( $action );
-		} else if( $this->submitType == 'accept' ) {
-			global $wgMakeUserPageFromBio, $wgAutoWelcomeNewUsers;
-			# Check if the name is to be overridden
-			$name = $this->mUsername ? trim($this->mUsername) : $row->acr_name;
-			# Now create user and check if the name is valid
-			$user = User::newFromName( $name, 'creatable' );	
-			if( is_null( $user ) ) {
-				$this->showForm( wfMsgHtml('noname') );
-				return;
-			}
-			# Check if already in use
-			if( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
-				$this->showForm( wfMsgHtml('userexists') );
-				return;
-			}
-			$user = User::createNew( $name );
-			# Make a random password
-			$p = User::randomPassword();
-			# VERY important to set email now. Otherwise user will have to request
-			# a new password at the login screen...
-			$user->setEmail( $row->acr_email );
-			if( $this->reason ) {
-				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body2', array('parsemag'), $user->getName(), $p, $this->reason ) );
-			} else {
-				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body', array('parsemag'), $user->getName(), $p ) );
-			}
-			if( WikiError::isError( $result ) ) {
-				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
-				$this->showForm( $error );
-				return false;
-			}
-			if( !$wgAuth->addUser( $user, $p, $row->acr_email, $row->acr_real_name ) ) {
-				$this->showForm( wfMsgHtml( 'externaldberror' ) );
-				return false;
-			}
-			# Set password and realname
-			$user->setNewpassword( $p );
-			$user->setRealName( $row->acr_real_name );
-			$user->saveSettings(); // Save this into the DB
-			# Check if the user already confirmed email address
-			$dbw = wfGetDB( DB_MASTER );
-			$dbw->update( 'user',
-				array( 'user_email_authenticated' => $row->acr_email_authenticated,
-					'user_email_token_expires' => $row->acr_email_token_expires,
-					'user_email_token' => $row->acr_email_token ),
-				array( 'user_id' => $user->getID() ),
-				__METHOD__ );
-			# OK, now remove the request
-			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
-
-			wfRunHooks( 'AddNewAccount', array( $user ) );
-			# Start up the user's (presumedly brand new) userpages
-			# Will not append, so previous content will be blanked
-			if( $wgMakeUserPageFromBio ) {
-				global $wgAutoUserBioText;
-				
-				$userpage = new Article( $user->getUserPage() );
-				
-				$autotext = strval($wgAutoUserBioText);
-				$body = $autotext ? "{$row->acr_bio}\n{$autotext}" : $row->acr_bio;
-				
-				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
-			}
-			if( $wgAutoWelcomeNewUsers ) {
-				$utalk = new Article( $user->getTalkPage() );
-				$utalk->doEdit( wfMsg('confirmaccount-welc') . ' ~~~~', 
-					wfMsg('confirmaccount-wsum'), EDIT_MINOR );
-			}
-
-			$this->showSuccess( $action, $user->getName() );
-		} else if( $this->submitType == 'hold' ) {
-			global $wgUser;
-			# Make proxy user to email a message
-			$u = User::newFromName( $row->acr_name, 'creatable' );
-			$u->setEmail( $row->acr_email );
-			# Pointless without a summary...
-			if( !$this->reason ) {
-				$error = wfMsg( 'confirmaccount-needreason' );
-				$this->showForm( $error );
-				return false;
-			}
-			# If not already held or deleted, mark as held
-			$dbw = wfGetDB( DB_MASTER );
-			$dbw->begin();
-			$dbw->update( 'account_requests',
-				array( 'acr_held' => $dbw->timestamp(), 
-					'acr_user' => $wgUser->getID() ),
-				array( 'acr_id' => $this->acrID, 'acr_held IS NULL', 'acr_deleted' => 0 ), 
-					__METHOD__ );
-			# Do not send multiple times
-			if( !$row->acr_held && !$row->acr_deleted ) {
-				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsgExt( 'confirmaccount-email-body5', array('parsemag'), $u->getName(), $this->reason ) );
-				if( WikiError::isError( $result ) ) {
-					$dbw->rollback();
-					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
-					$this->showForm( $error );
-					return false;
-				}
-			}
-			$this->showSuccess( $action );
-		} else {
-			$this->showForm();
-		}
-	}
-	
 	function showForm( $msg='' ) {
 		global $wgOut, $wgTitle, $wgUser, $wgLang;
 		
@@ -828,12 +660,16 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= '</fieldset>';
 		
 		$form .= "<p>".wfMsgExt( 'confirmaccount-confirm', array('parse') )."</p>\n";
-		$form .= "<p>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept', array('id' => 'submitCreate') );
-		$form .= ' '.Xml::label( wfMsg('confirmaccount-create'), 'submitCreate' )."</p>\n";
-		$form .= "<p>".Xml::radio( 'wpSubmitType', 'reject', $this->submitType=='reject', array('id' => 'submitDeny') );
-		$form .= ' '.Xml::label( wfMsg('confirmaccount-deny'), 'submitDeny' )."</p>\n";
-		$form .= "<p>".Xml::radio( 'wpSubmitType', 'hold', $this->submitType=='hold', array('id' => 'submitHold') );
-		$form .= ' '.Xml::label( wfMsg('confirmaccount-hold'), 'submitHold' )."</p>\n";
+		$form .= "<table cellpadding='5'><tr>";
+		$form .= "<td>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept', array('id' => 'submitCreate') );
+		$form .= ' '.Xml::label( wfMsg('confirmaccount-create'), 'submitCreate' )."</td>\n";
+		$form .= "<td>".Xml::radio( 'wpSubmitType', 'reject', $this->submitType=='reject', array('id' => 'submitDeny') );
+		$form .= ' '.Xml::label( wfMsg('confirmaccount-deny'), 'submitDeny' )."</td>\n";
+		$form .= "<td>".Xml::radio( 'wpSubmitType', 'hold', $this->submitType=='hold', array('id' => 'submitHold') );
+		$form .= ' '.Xml::label( wfMsg('confirmaccount-hold'), 'submitHold' )."</td>\n";
+		$form .= "<td>".Xml::radio( 'wpSubmitType', 'spam', $this->submitType=='spam', array('id' => 'submitSpam') );
+		$form .= ' '.Xml::label( wfMsg('confirmaccount-spam'), 'submitSpam' )."</td>\n";
+		$form .= "</tr></table>";
 
 		$form .= "<p>".wfMsgHtml('confirmaccount-reason')."</p>\n";
 		$form .= "<p><textarea tabindex='1' name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%'>" .
@@ -848,6 +684,174 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .=  '</form>';
 		
 		$wgOut->addHTML( $form );
+	}
+	
+	/**
+	 * Show a private file requested by the visitor.
+	 */
+	function showFile( $key ) {
+		global $wgOut, $wgRequest;
+		$wgOut->disable();
+		
+		# We mustn't allow the output to be Squid cached, otherwise
+		# if an admin previews a private image, and it's cached, then
+		# a user without appropriate permissions can toddle off and
+		# nab the image, and Squid will serve it
+		$wgRequest->response()->header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', 0 ) . ' GMT' );
+		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
+		$wgRequest->response()->header( 'Pragma: no-cache' );
+		
+		$store = FileStore::get( 'accountreqs' );
+		$store->stream( $key );
+	}
+	
+	function doSubmit() {
+		global $wgOut, $wgTitle, $wgAuth;
+
+		$row = $this->getRequest();
+		if( !$row ) {
+			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
+			$wgOut->returnToMain( true, $wgTitle );
+			return;
+		}
+
+		if( $this->submitType == 'reject' || $this->submitType == 'spam' ) {
+			# Make proxy user to email a rejection message :(
+			$u = User::newFromName( $row->acr_name, 'creatable' );
+			$u->setEmail( $row->acr_email );
+			# Do not send multiple times, don't send for "spam" requests
+			if( !$row->acr_rejected && $this->submitType != 'spam' ) {
+				if( $this->reason ) {
+					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+						wfMsgExt( 'confirmaccount-email-body4', array('parsemag'), $u->getName(), $this->reason ) );
+				} else {
+					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+						wfMsgExt( 'confirmaccount-email-body3', array('parsemag'), $u->getName() ) );
+				}
+				if( WikiError::isError( $result ) ) {
+					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+					$this->showForm( $error );
+					return false;
+				}
+			}
+			$dbw = wfGetDB( DB_MASTER );
+			# Mark off the row as deleted
+			global $wgUser;
+			# Request can later be recovered
+			$dbw->update( 'account_requests', 
+				array( 'acr_rejected' => $dbw->timestamp(),
+					'acr_user' => $wgUser->getID(),
+					'acr_deleted' => 1 ), 
+				array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ), 
+				__METHOD__ );
+
+			$this->showSuccess( $this->submitType );
+		} else if( $this->submitType == 'accept' ) {
+			global $wgMakeUserPageFromBio, $wgAutoWelcomeNewUsers;
+			# Check if the name is to be overridden
+			$name = $this->mUsername ? trim($this->mUsername) : $row->acr_name;
+			# Now create user and check if the name is valid
+			$user = User::newFromName( $name, 'creatable' );	
+			if( is_null( $user ) ) {
+				$this->showForm( wfMsgHtml('noname') );
+				return;
+			}
+			# Check if already in use
+			if( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
+				$this->showForm( wfMsgHtml('userexists') );
+				return;
+			}
+			$user = User::createNew( $name );
+			# Make a random password
+			$p = User::randomPassword();
+			# VERY important to set email now. Otherwise user will have to request
+			# a new password at the login screen...
+			$user->setEmail( $row->acr_email );
+			if( $this->reason ) {
+				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+					wfMsgExt( 'confirmaccount-email-body2', array('parsemag'), $user->getName(), $p, $this->reason ) );
+			} else {
+				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+					wfMsgExt( 'confirmaccount-email-body', array('parsemag'), $user->getName(), $p ) );
+			}
+			if( WikiError::isError( $result ) ) {
+				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+				$this->showForm( $error );
+				return false;
+			}
+			if( !$wgAuth->addUser( $user, $p, $row->acr_email, $row->acr_real_name ) ) {
+				$this->showForm( wfMsgHtml( 'externaldberror' ) );
+				return false;
+			}
+			# Set password and realname
+			$user->setNewpassword( $p );
+			$user->setRealName( $row->acr_real_name );
+			$user->saveSettings(); // Save this into the DB
+			# Check if the user already confirmed email address
+			$dbw = wfGetDB( DB_MASTER );
+			$dbw->update( 'user',
+				array( 'user_email_authenticated' => $row->acr_email_authenticated,
+					'user_email_token_expires' => $row->acr_email_token_expires,
+					'user_email_token' => $row->acr_email_token ),
+				array( 'user_id' => $user->getID() ),
+				__METHOD__ );
+			# OK, now remove the request
+			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
+
+			wfRunHooks( 'AddNewAccount', array( $user ) );
+			# Start up the user's (presumedly brand new) userpages
+			# Will not append, so previous content will be blanked
+			if( $wgMakeUserPageFromBio ) {
+				global $wgAutoUserBioText;
+				
+				$userpage = new Article( $user->getUserPage() );
+				
+				$autotext = strval($wgAutoUserBioText);
+				$body = $autotext ? "{$row->acr_bio}\n{$autotext}" : $row->acr_bio;
+				
+				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
+			}
+			if( $wgAutoWelcomeNewUsers ) {
+				$utalk = new Article( $user->getTalkPage() );
+				$utalk->doEdit( wfMsg('confirmaccount-welc') . ' ~~~~', 
+					wfMsg('confirmaccount-wsum'), EDIT_MINOR );
+			}
+
+			$this->showSuccess( $this->submitType, $user->getName() );
+		} else if( $this->submitType == 'hold' ) {
+			global $wgUser;
+			# Make proxy user to email a message
+			$u = User::newFromName( $row->acr_name, 'creatable' );
+			$u->setEmail( $row->acr_email );
+			# Pointless without a summary...
+			if( !$this->reason ) {
+				$error = wfMsg( 'confirmaccount-needreason' );
+				$this->showForm( $error );
+				return false;
+			}
+			# If not already held or deleted, mark as held
+			$dbw = wfGetDB( DB_MASTER );
+			$dbw->begin();
+			$dbw->update( 'account_requests',
+				array( 'acr_held' => $dbw->timestamp(), 
+					'acr_user' => $wgUser->getID() ),
+				array( 'acr_id' => $this->acrID, 'acr_held IS NULL', 'acr_deleted' => 0 ), 
+					__METHOD__ );
+			# Do not send multiple times
+			if( !$row->acr_held && !$row->acr_deleted ) {
+				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
+						wfMsgExt( 'confirmaccount-email-body5', array('parsemag'), $u->getName(), $this->reason ) );
+				if( WikiError::isError( $result ) ) {
+					$dbw->rollback();
+					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+					$this->showForm( $error );
+					return false;
+				}
+			}
+			$this->showSuccess( $this->submitType );
+		} else {
+			$this->showForm();
+		}
 	}
 	
 	/**
@@ -902,13 +906,15 @@ class ConfirmAccountsPage extends SpecialPage
 		global $wgOut, $wgTitle;
 
 		$wgOut->setPagetitle( wfMsgHtml('actioncomplete') );
-		if( $this->submitType == 'accept' )
+		if( $this->submitType == 'accept' ) {
 			$wgOut->addWikiText( wfMsg( "confirmaccount-acc", $name ) );
-		else if( $this->submitType == 'reject' )
+		} else if( $this->submitType == 'reject' || $this->submitType == 'spam' ) {
 			$wgOut->addWikiText( wfMsg( "confirmaccount-rej" ) );
-		else
+		} else {
 			$wgOut->redirect( $wgTitle->getFullUrl() );
-		
+			return;
+		}
+		# Give link to see other requests
 		$wgOut->returnToMain( true, $wgTitle );
 	}
 
@@ -1062,6 +1068,7 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 			$tables[] = 'user';
 			$conds[] = 'acr_user = user_id';
 			$fields[] = 'user_name';
+			$fields[] = 'acr_rejected';
 		}
 		return array(
 			'tables' => $tables,
