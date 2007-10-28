@@ -168,11 +168,15 @@ $wgConfirmAccountMessages['ar'] = array(
 	'requestaccount-same'         => '(مثل الاسم الحقيقي)',
 	'requestaccount-email'        => 'عنوان البريد الإلكتروني:',
 	'requestaccount-bio'          => 'السيرة الشخصية:',
+	'requestaccount-attach'       => 'استكمال أو السيرة الذاتية (اختياري):',
 	'requestaccount-notes'        => 'ملاحظات إضافية:',
 	'requestaccount-urls'         => 'قائمة مواقع الويب، إن وجدت (افصل بسطور جديدة):',
 	'requestaccount-agree'        => 'يجب أن تثبت أن اسمك الحقيقي صحيح و أنك توافق على شروط خدمتنا.',
 	'requestaccount-inuse'        => 'اسم المستخدم مستعمل بالفعل في طلب حساب قيد الانتظار',
 	'requestaccount-tooshort'     => 'سيرتك يجب أن تتكون على الأقل من $1 كلمة.',
+	'requestaccount-exts'         => 'نوع الملف المرفق غير مسموح به.',
+	'requestaccount-resub'        => 'ملف سيرتك الذاتية/استكمالك يجب أن يتم إعادة اختياره لأسباب أمنية. اترك الحقل فارغا 
+	لو كنت لم تعد تريد إضافة واحد.',
 	'requestaccount-tos'          => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.',
 	'requestaccount-submit'       => 'طلب حساب',
 	'requestaccount-sent'         => 'طلبك للحساب تم إرساله بنجاح و هو بانتظار المراجعة الآن.',
@@ -213,17 +217,22 @@ $3
 	'confirmaccount-email-q'      => 'البريد الإلكتروني',
 	'confirmaccount-bio'          => 'السيرة',
 	'confirmaccount-bio-q'        => 'السيرة الشخصية',
+	'confirmaccount-attach'       => 'الاستكمال/السيرة الذاتية:',
 	'confirmaccount-notes'        => 'ملاحظات إضافية:',
 	'confirmaccount-urls'         => 'قائمة مواقع الويب:',
-	'confirmaccount-nourls'       => '(لا شيء معطى)',
 	'confirmaccount-review'       => 'قبول/رفض',
 	'confirmaccount-confirm'      => 'استخدم الأزرار بالأسفل لقبول هذا الطلب أو رفضه.',
 	'confirmaccount-econf'        => '(تم تأكيده)',
 	'confirmaccount-reject'       => '(تم رفضه بواسطته [[User:$1|$1]] في $2)',
+	'confirmaccount-held'         => '(تم التعليم "قيد الانتظار" بواسطة [[User:$1|$1]] في $2)',
 	'confirmaccount-create'       => 'قبول (إنشاب الحساب)',
 	'confirmaccount-deny'         => 'رفض (إزالة من القائمة)',
+	'confirmaccount-hold'         => 'انتظر',
+	'confirmaccount-spam'         => 'سبام (لا ترسل البريد الإلكتروني)',
 	'confirmaccount-reason'       => 'تعليق (سيضم في البريد الإلكتروني):',
+	'confirmaccount-ip'           => 'عنوان الأيبي:',
 	'confirmaccount-submit'       => 'تأكيد',
+	'confirmaccount-needreason'   => 'يجب أن تحدد سببا في صندوق التعليق بالأسفل.',
 	'confirmaccount-acc'          => 'طلب الحساب تم تأكيده بنجاح؛ أنشأ حسابا جديدا [[User:$1]].',
 	'confirmaccount-rej'          => 'طلب الحساب تم رفضه بنجاح.',
 	'confirmaccount-summary'      => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.',
@@ -258,6 +267,12 @@ $3
 $2
 
 ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
+	'confirmaccount-email-body5'  => 'قبل أن يتم قبول طلبك للحساب "$1" في {{SITENAME}} 
+	يجب أن توفر أولا بعض المعلومات الإضافية.
+
+$2
+
+ربما تكون هناك قوائم اتصال في الموقع يمكنك استخدامها لو أردت أن تعرف المزيد حول سياسة حساب المستخدم.',
 );
 
 $wgConfirmAccountMessages['bcl'] = array(
@@ -544,11 +559,14 @@ Tak ruče kaž konto je so potwjerdźiło, dóstaš powesć přez mejlku a móž
 	'requestaccount-same'         => '(kaž woprawdźite mjeno)',
 	'requestaccount-email'        => 'E-mejlowa adresa:',
 	'requestaccount-bio'          => 'Wosobinska biografija:',
+	'requestaccount-attach'       => 'Žiwjenjoběh',
 	'requestaccount-notes'        => 'Přidatne podaća:',
 	'requestaccount-urls'         => 'Lisćina webowych sydłow (přez linkowe łamanja wotdźělene)',
 	'requestaccount-agree'        => 'Dyrbiš potwjerdźić, zo twoje woprawdźite mjeno je korektne a wužiwarske wuměnjenja akceptuješ.',
 	'requestaccount-inuse'        => 'Wužiwarske mjeno so hižo w druhim kontowym požadanju wužiwa.',
 	'requestaccount-tooshort'     => 'Twoja biografija dyrbi znajmjeńša $1 słowow dołho być.',
+	'requestaccount-exts'         => 'Datajowy typ přiwěška je njedowoleny.',
+	'requestaccount-resub'        => 'Twoja žiwjenjoběhowa dataja dyrbi so z přičinow wěstoty znowa wubrać. Wostaj polo prózdne, jeli hižo nochceš tajku zapřijimać.',
 	'requestaccount-tos'          => 'Sym wužiwarske wuměnjenja strony {{SITENAME}} přečitał a budu do nich dźeržeć.',
 	'requestaccount-submit'       => 'Wužiwarske konto sej žadać',
 	'requestaccount-sent'         => 'Twoje kontowe požadanje  bu wuspěšnje wotpósłane a dyrbi so nětko přepruwować.',
@@ -585,17 +603,22 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-email-q'      => 'E-mejl',
 	'confirmaccount-bio'          => 'Biografija',
 	'confirmaccount-bio-q'        => 'Biografija',
+	'confirmaccount-attach'       => 'Žiwjenjoběh:',
 	'confirmaccount-notes'        => 'Přidatne přispomnjenki:',
 	'confirmaccount-urls'         => 'Lisćina webowych sydłow:',
-	'confirmaccount-nourls'       => '(Ničo podate)',
 	'confirmaccount-review'       => 'Dowolić/Wotpokazać',
 	'confirmaccount-confirm'      => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
 	'confirmaccount-econf'        => '(potwjerdźene)',
 	'confirmaccount-reject'       => '(wot [[Wužiwar:$1|$1]] na $2 wotpokazany)',
+	'confirmaccount-held'         => '(wot [[User:$1|$1]] on $2 jako "čakacy" markěrowany)',
 	'confirmaccount-create'       => 'Akceptować (Konto wutworić)',
 	'confirmaccount-deny'         => 'Wotpokazać (Požadanje wotstronić)',
+	'confirmaccount-hold'         => 'Čakać dać',
+	'confirmaccount-spam'         => 'Spam (njesćel mejlku)',
 	'confirmaccount-reason'       => 'Komentar (budźe so do mejlki k próstwarjej zasunyć):',
+	'confirmaccount-ip'           => 'IP-adresa',
 	'confirmaccount-submit'       => 'Potwjerdźić',
+	'confirmaccount-needreason'   => 'Dyrbiš deleka w komentarowym polu přičinu podać.',
 	'confirmaccount-acc'          => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[{{ns:User}}:$1]] bu wutworjene.',
 	'confirmaccount-rej'          => 'Požadanje za kontom bu wotpokazane.',
 	'confirmaccount-summary'      => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
@@ -630,8 +653,12 @@ Snano je na stronje kontaktowe adresy, na kotrež móžeš so wobroćić, jeli c
 $2
 
 Snano su na sydle kontaktowe adresy, na kotrež so móžeš wobroćeć, jeli chceš wjace wo žadanjach wužiwarskich kontow wědźeć.',
-);
+	'confirmaccount-email-body5'  => 'Prjedy hač konto "$1" požadaš, kotrež hodźi so na {{SITENAME}} akceptować, dyrbiš najprjedy někotre přidatne informacije podać.
 
+$2
+
+Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš wjace wo prawidłach za wužiwarske konta wědźeć.',
+);
 
 $wgConfirmAccountMessages['la'] = array(
 	'requestaccount-real'         => 'Nomen verum:',
@@ -764,6 +791,87 @@ $wgConfirmAccountMessages['oc'] = array(
 	'requestaccount-email'        => 'Adreça electronica:',
 	'confirmaccount-name'         => 'Nom d\'utilizaire',
 	'confirmaccount-real'         => 'Nom',
+);
+
+$wgConfirmAccountMessages['pms'] = array(
+	'requestaccount'              => 'Ciamé un cont',
+	'requestaccount-text'         => '\'\'\'Ch\'a completa e ch\'a manda sta domanda-sì për ciamé ch\'a-j deurbo sò cont utent\'\'\'. Per piasì, ch\'a varda d\'avej present le [[{{NS:PROJECT}}:Condission ëd servissi|Condission ëd servissi]], anans che deurb-se un cont. Na vira che \'l cont a sia aprovà, a l\'arseivrà na notìfica për pòsta eletrònica e sò cont a sarà bon da dovré a l\'adrëssa [Special:Userlogin]].',
+	'requestaccount-dup'          => '\'\'\'Ch\'a ten-a present: al moment a l\'é già andrinta al sistema ën dovrand un cont registrà.\'\'\'',
+	'requestaccount-legend1'      => 'Cont utent',
+	'requestaccount-legend2'      => 'Anformassion personaj',
+	'requestaccount-legend3'      => 'Àotre anformassion',
+	'requestaccount-acc-text'     => 'A soa adrëssa ëd pòsta eletrònica a-i rivërà un messagi, na vira che sta domanda a la sia mandà. Per piasì, ch\'a n\'arsponda ën dand-ie un colp col rat ansima a l\'aniura ch\'a treuva ant ël messagi. Ëdcò soa ciav a sarà recapità për pòsta eletrònica, na vira che sò cont a sia creà.',
+	'requestaccount-ext-text'     => 'St\'anformassion-sì as ten privà e as dòvra mach për sta question-sì. S\'a veul a peul buté dij contat coma un nùmer ëd telèfono për giuté a identifichesse sensa dubi.',
+	'requestaccount-bio-text'     => 'Soa biografìa a sarà buta coma contnù base për soa pàgine utent. S\'a peul, ch\'a buta soe credensiaj, cole ch\'a sio. Ch\'a varda mach però dë buté dj\'anformassion ch\'a-j da gnun fastudi publiché. An tute le manere, a peul sempe cambiesse \'d nòm ën dovrand l\'adrëssa [[Special:Preferences]].',
+	'requestaccount-real'         => 'Nòm vèir:',
+	'requestaccount-same'         => '(istess che sò nòm vèir)',
+	'requestaccount-email'        => 'Adrëssa ëd pòsta eletrònica:',
+	'requestaccount-bio'          => 'Biografìa personal:',
+	'requestaccount-attach'       => 'Curriculum vitae (opsional):',
+	'requestaccount-notes'        => 'Nòte adissionaj:',
+	'requestaccount-urls'         => 'Lista ëd sit ant sla Ragnà, s\'a-i n\'a-i é (buté un për riga):',
+	'requestaccount-agree'        => 'A venta ch\'a sertìfica che sò nòm vèir a l\'é giust e ch\'a l\'é d\'acòrdi con nòstre Condission ëd Servissi.',
+	'requestaccount-inuse'        => 'Stë stranòm-sì a l\'é già dovrà ant na domanda ch\'a la speta d\'esse aprovà.',
+	'requestaccount-tooshort'     => 'Soa biografìa a l\'ha dë esse longa almanch $1 paròle.',
+	'requestaccount-exts'         => 'Sta sòrt d\'archivi as peul pa tachesse.',
+	'requestaccount-resub'        => 'Për na question ëd sigurëssa a venta torna ch\'a selession-a l\'archivi ëd sò Curriculum Vitae. Ch\'a lassa pura ël camp veujd s\'a veul pì nen butelo.',
+	'requestaccount-tos'          => 'I l\'hai lesù le [[{{NS:PROJECT}}:Terms of Service|Condission ëd Servissi]] ëd {{SITENAME}} e i son d\'acòrdi d\'osserveje. Ël nòm ch\'i l\'hai butà sot a "Nòm vèir" a l\'é mè nòm da bon.',
+	'requestaccount-submit'       => 'Fé domanda për ël cont',
+	'requestaccount-sent'         => 'Soa domanda dë deurb-se un cont a l\'é staita arseivùa e a la speta d\'esse aprovà.',
+	'request-account-econf'       => 'Soa adrëssa ëd pòsta eletrònica a l\'é staita confermà e a la sarà listà coma bon-a an soa domanda dë deurbe \'l cont.',
+	'requestaccount-email-subj'   => 'Arcesta ëd conferma d\'adrëssa ëd pòsta eletrònica da {{SITENAME}}',
+	'requestaccount-email-body'   => 'Cheidun, ch\'a l\'é belfé ch\'a sia chiel/chila, da \'nt l\'adrëssa IP $1 a l\'ha ciamà dë deurbe un cont antestà a "$2" ansima a {{SITENAME}} e a l\'ha lassà st\'adrëssa ëd pòsta eletrònica-sì. Për confermé che ës cont ansima a {{SITENAME}} a sarìa sò da bon, për piasì ch\'a deurba ant sò navigator st\'anliura-sì: $3 
+
+Quand ël cont a vnirà creà, soa la ciav a sarà mandà mach a st\'adrëssa-sì. Se për cas a fussa PA stait chiel/chila a fé la domanda, a basta ch\'a n\'arsponda nen d\'autut. Ës còdes ëd conferma-sì a scad dël $4.',
+	'acct_request_throttle_hit'   => 'A l\'ha gia ciamà $1 cont. Për darmagi ant ës moment-sì i podoma nen aceté dj\'àotre domande da chiel/chila.',
+	'requestaccount-loginnotice'  => 'Për deurb-se un sò cont utent, a venta \'\'\'[[Special:RequestAccount|ch<nowiki>\'</nowiki>a në ciama un]]\'\'\'.',
+	'confirmaccounts'             => 'Conferma dle domande ëd cont neuv da deurbe',
+	'confirmaccount-list'         => 'Ambelessì sota a-i é na lista ëd domanda ch\'a speto d\'esse aprovà. Ij cont aprovà a saran creà e peuj gavà via da \'n sta lista. Ij cont arfudà a saran mach dëscancelà da \'nt la lista.',
+	'confirmaccount-list2'        => 'Ambelessì sota a-i é na lista ëd coint ch\'a son stait arfudà ant j\'ùltim temp, e ch\'a l\'é belfé ch\'a ven-o scancelà n\'aotomàtich na vira ch\'a sia passa-ie chèich dì dal giudissi negativ. Ën vorend as peulo anco\' sempe aprovesse bele che adess, ma miraco un a veul sente l\'aministrator ch\'a l\'ha arfudaje, anans che fé che fé.',
+	'confirmaccount-text'         => 'A-i é na domanda duvèrta për deurbe un cont utent a \'\'\'{{SITENAME}}\'\'\'. Për piasì, ch\'a varda lòn ch\'a lé e se a fa da manca ch\'a conferma j\'anformassion ambelessì sota. Ch\'a ten-a present ch\'a peul decide dë creé ël cont con në stranòm diferent da col ciamà, se col-lì a fussa già dovrà da cheidun d\'àotr. S\'a va via da sta pàgina-sì sensa pijé ëd decision a-i riva gnente, la domanda a la resta duvèrta.',
+	'confirmaccount-none'         => '(nen fornì)',
+	'confirmaccount-none2'        => 'A-i é gnun-a domanda arfudà ch\'a la sia anco\' registrà',
+	'confirmaccount-badid'        => 'A-i é gnun-a domanda duvèrta ch\'a-j corisponda a l\'identificativ ch\'a l\'ha butà. A peul esse ch\'a la sia già staita tratà da cheidun d\'àotr.',
+	'confirmaccount-back'         => 'Vardé la lista dle domande duvèrte',
+	'confirmaccount-back2'        => 'Vardé la lista dle domande arfudà ant j\'ùltim temp',
+	'confirmaccount-name'         => 'Stranòm',
+	'confirmaccount-real'         => 'Nòm:',
+	'confirmaccount-real-q'       => 'Nòm',
+	'confirmaccount-email'        => 'Adrëssa ëd pòsta eletrònica:',
+	'confirmaccount-email-q'      => 'Adrëssa ëd pòsta eletrònica',
+	'confirmaccount-bio'          => 'Biografìa:',
+	'confirmaccount-bio-q'        => 'Biografìa',
+	'confirmaccount-attach'       => 'Curriculum Vitae:',
+	'confirmaccount-notes'        => 'Nòte adissionaj:',
+	'confirmaccount-urls'         => 'Lista ëd sit ant sla Ragnà:',
+	'confirmaccount-review'       => 'Aprové/Arfudé',
+	'confirmaccount-confirm'      => 'Ch\'a dòvra j\'opsion ambelessì sota për aprové, arfudé ò lassé an coa la domanda:',
+	'confirmaccount-econf'        => '(confermà)',
+	'confirmaccount-reject'       => '(arfudà da [[User:$1|$1]] dël $2)',
+	'confirmaccount-held'         => '(marcà "an coa" da [[User:$1|$1]] dël $2)',
+	'confirmaccount-create'       => 'Aceté (deurbe \'l cont)',
+	'confirmaccount-deny'         => 'Arfudé (e gavé da \'nt la lista)',
+	'confirmaccount-hold'         => 'Lassé an coa',
+	'confirmaccount-spam'         => 'Rumenta ëd reclam (mand-je nen pòsta)',
+	'confirmaccount-reason'       => 'Coment (a-i resta andrinta al messagi postal):',
+	'confirmaccount-ip'           => 'Adrëssa IP:',
+	'confirmaccount-submit'       => 'Confermé',
+	'confirmaccount-needreason'   => 'A venta specifiché na rason ant ël quàder ëd coment ambelessì sota.',
+	'confirmaccount-acc'          => 'Conferma dla domanda andaita a bonfin; a l\'é dorbusse ël cont utent [[User:$1]].',
+	'confirmaccount-rej'          => 'Arfud dla domanda andait a bonfin.',
+	'confirmaccount-summary'      => 'I soma antramentr ch\'i foma na neuva pàgina utent con la biografìa dl\'utent neuv.',
+	'confirmaccount-welc'         => '\'\'Bin ëvnù/a  an \'\'{{SITENAME}}\'\'!\'\'\' I speroma d\'arsèive sò contribut e deje bon servissi. Miraco a peul ess-je d\'agiut lese la session [[{{NS:PROJECT}}:Getting started|Amprende a travajé da zero]]. N\'àotra vira, bin ëvnù/a e tante bele còse!',
+	'confirmaccount-wsum'         => 'Bin ëvnù/a!',
+	'confirmaccount-email-subj'   => 'Domanda dë deurbe un cont neuv ansima a {{SITENAME}}',
+	'confirmaccount-email-body'   => 'Soa domanda dë deurbe un cont neuv ansima a {{SITENAME}} a l\'é staita aprovà. Stranòm: $1 Ciav: $2 
+
+Për na question ëd sigurëssa a fa da manca che un as cambia soa ciav la prima vira ch\'a rintra ant ël sistema. Për rintré, për piasì ch\'a vada a l\'adrëssa {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'  => 'Soa domanda dë deurbe un cont neuv ansima a {{SITENAME}} a l\'é staita aprovà. Stranòm: $1 Ciav: $2 $3 
+
+Për na question ëd sigurëssa un a venta ch\'as cambia soa ciav la prima vira ch\'a rintra ant ël sistema. Për rintré, për piasì ch\'a vada a l\'adrëssa {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'  => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a l\'é staita bocià. A-i son vàire rason përchè sossì a peula esse rivà. A peul esse ch\'a l\'abia pa compilà giust la domanda, che soe arspòste a sio staite tròp curte, ò pura che an chèich àotra manera a l\'abia falì da rintré ant ël criteri d\'aprovassion. A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
+	'confirmaccount-email-body4'  => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a Betawiki a l\'é staita bocià. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
+	'confirmaccount-email-body5'  => 'Anans che soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a peula esse acetà, a dovrìa lassene dj\'anformassion adissionaj. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 );
 
 $wgConfirmAccountMessages['sk'] = array(
