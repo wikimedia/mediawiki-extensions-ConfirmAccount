@@ -540,6 +540,120 @@ $2
 Il est possible d’être sur la liste des contacts afin de mieux connaître les critères pour pouvoir s’inscrire.',
 );
 
+$wgConfirmAccountMessages['gl'] = array(
+	'requestaccount'              => 'Solicitar unha conta',
+	'requestaccount-text'         => '\'\'\'Complete e envíe o formulario seguinte para solicitar unha conta de usuario\'\'\'.
+
+	Asegúrese de ter lido primeiro as [[{{NS:PROJECT}}:Terms of Service|Condicións de Servizo]] antes de solicitar unha conta.
+
+	Unha vez que se aprobe a conta recibirá unha mensaxe de notificación por correo electrónico e poderá usar a conta en
+	[[Special:Userlogin]].',
+	'requestaccount-dup'          => '\'\'\'Nota: Xa está no sistema cunha conta rexistrada.\'\'\'',
+	'requestaccount-legend1'      => 'Conta de usuario',
+	'requestaccount-legend2'      => 'Información persoal',
+	'requestaccount-legend3'      => 'Información adicional',
+	'requestaccount-acc-text'     => 'Enviaráselle unha mensaxe de confirmación ao seu enderezo de correo electrónico unha vez enviada esta solicitude. Responda premendo
+	na ligazón de confirmación que lle aparecerá no correo electrónico. Así mesmo, enviaráselle o seu contrasinal cando se cree a conta.',
+	'requestaccount-ext-text'     => 'A información seguinte mantense como reservada e só se usará para esta solicitude.
+	Pode querer listar contactos, como un número de teléfono, para axudar a identificar a confirmación.',
+	'requestaccount-bio-text'     => 'A súa biografía aparecerá como contido predefinido da súa páxina de usuario. Tente incluír
+	credenciais. Asegúrese de non ter problema coa publicación desa información. O seu nome pódese cambiar mediante [[Special:Preferences]].',
+	'requestaccount-real'         => 'Nome real:',
+	'requestaccount-same'         => '(o mesmo que o nome real)',
+	'requestaccount-email'        => 'Enderezo de correo electrónico:',
+	'requestaccount-bio'          => 'Biografía persoal:',
+	'requestaccount-notes'        => 'Notas adicionais:',
+	'requestaccount-urls'         => 'Lista de sitios web, de habelos, (separados cun parágrafo novo):',
+	'requestaccount-agree'        => 'Debe certificar que o seu nome real é correcto e que está de acordo coas nosas Condicións de Servizo.',
+	'requestaccount-inuse'        => 'Este nome de usuario xa se usou nunha solicitude de conta aínda pendente.',
+	'requestaccount-tooshort'     => 'A súa biografía debe ter un mínimo de $1 palabras.',
+	'requestaccount-tos'          => 'Lin e estou de acordo en respectar as [[{{NS:PROJECT}}:Terms of Service|Condicións de Servizo]] de {{SITENAME}}. 
+	O nome especificado como "Nome real" é, efectivamente, o meu propio nome real.',
+	'requestaccount-submit'       => 'Solicitar unha conta',
+	'requestaccount-sent'         => 'Enviouse sen problemas a súa solicitude de conta e agora está pendente de exame.',
+	'request-account-econf'       => 'Confirmouse o seu enderezo de correo electrónico e listarase como tal na súa
+	solicitude de conta.',
+	'requestaccount-email-subj'   => 'Confirmación de enderezo de correo electrónico de {{SITENAME}}',
+	'requestaccount-email-body'   => 'Alguén, probabelmente vostede desde o enderezo IP $1, solicitou unha
+conta "$2" con este enderezo de correo electrónico en {{SITENAME}}.
+
+Para confirmar que esta conta lle pertence a vostede en {{SITENAME}}, abra esta ligazón no seu navegador:
+
+$3
+
+Se se crea a conta, só vostede recibirá o contrasinal. Se *non* se trata de vostede, non siga a ligazón.
+Este código de confirmación caducará o $4.',
+	'acct_request_throttle_hit'   => 'Perdón, xa solicitou $1 contas. Non pode facer máis solicitudes.',
+	'requestaccount-loginnotice'  => 'Para obter unha conta de usuario ten que \'\'\'[[Special:RequestAccount|solicitar unha]]\'\'\'.',
+	'confirmaccounts'             => 'Confirmar solicitudes de contas',
+	'confirmaccount-list'         => 'Abaixo aparece unha listaxe de contas pendentes de aprobación.
+	As contas aprobadas crearanse e eliminaranse desta listaxe. As contas rexeitadas simplemente eliminaranse desta listaxe.',
+	'confirmaccount-list2'        => 'Abaixo aparece unha listaxe con solicitudes de contas rexeitadas recentemente que poden eliminarse automaticamente
+	unha vez que teñan varios días. Poden aínda ser aceptadas como contas, aínda que pode ser mellor que consulte primeiro
+	co administrador que as rexeitou antes de facelo.',
+	'confirmaccount-text'         => 'Esta é unha solicitude pendente dunha conta de usuario en \'\'\'{{SITENAME}}\'\'\'. Examínea
+	coidadosamente e, se é necesario, confirme toda a información que aparece. Observe que pode escoller crear a conta
+	cun nome diferente. Use isto só para evitar conflitos con outros nomes.
+
+	Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, ficará como pendente.',
+	'confirmaccount-none'         => 'Non existen solicitudes de contas pendentes neste momento.',
+	'confirmaccount-none2'        => 'Non existen solicitudes de contas rexeitadas recentemente neste momento.',
+	'confirmaccount-badid'        => 'Non existe unha solicitude pendente que corresponda co ID fornecido. Pode que xa fose examinada.',
+	'confirmaccount-back'         => 'Ver a lista de contas pendentes',
+	'confirmaccount-back2'        => 'Ver a lista de contas rexeitadas recentemente',
+	'confirmaccount-name'         => 'Nome de usuario',
+	'confirmaccount-real'         => 'Nome:',
+	'confirmaccount-real-q'       => 'Nome',
+	'confirmaccount-email'        => 'Correo electrónico:',
+	'confirmaccount-email-q'      => 'Correo electrónico',
+	'confirmaccount-bio'          => 'Biografía:',
+	'confirmaccount-bio-q'        => 'Biografía',
+	'confirmaccount-notes'        => 'Notas adicionais:',
+	'confirmaccount-urls'         => 'Lista de sitios web:',
+	'confirmaccount-review'       => 'Aprovar/Rexeitar',
+	'confirmaccount-confirm'      => 'Use os botóns de embaixo para aceptar ou rexeitar esta solicitude.',
+	'confirmaccount-econf'        => '(confirmada)',
+	'confirmaccount-reject'       => '(rexeitada por [[User:$1|$1]] en $2)',
+	'confirmaccount-create'       => 'Aceptar (crear a conta)',
+	'confirmaccount-deny'         => 'Rexeitar (eliminar da listaxe)',
+	'confirmaccount-reason'       => 'Comentario (incluirase na mensaxe de correo electrónico):',
+	'confirmaccount-submit'       => 'Confirmar',
+	'confirmaccount-acc'          => 'Confirmouse sen problemas a solicitude de conta; creouse a nova conta de usuario [[User:$1]].',
+	'confirmaccount-rej'          => 'Rexeitouse sen problemas a solicitude de conta.',
+	'confirmaccount-summary'      => 'A crear a páxina de usuario coa biografía do novo usuario.',
+	'confirmaccount-welc'         => '\'\'\'Reciba a benvida a \'\'{{SITENAME}}\'\'!\'\'\' Esperamos que contribúa moito e ben.
+	Será ben que lea [[{{NS:PROJECT}}:Getting started|Como comezar]]. De novo, reciba a nosa benvida e divírtase!',
+	'confirmaccount-wsum'         => 'Reciba a nosa benvida!',
+	'confirmaccount-email-subj'   => 'solicitude de conta en {{SITENAME}}',
+	'confirmaccount-email-body'   => 'Aprobouse a súa solicitude de conta en {{SITENAME}}.
+
+Nome da conta: $1
+
+Contrasinal: $2
+
+Por razóns de seguranza terá que mudar o contrasinal a primeira vez que se rexistre. Para rexistrarse,
+vaia a {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'  => 'Aprobouse a súa solicitude de conta en {{SITENAME}}.
+
+Nome da conta: $1
+
+Contrasinal: $2
+
+$3
+
+Por razóns de seguranza terá que mudar o contrasinal a primeira vez que se rexistre. Para rexistrarse,
+vaia a {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'  => 'Perdón, pero a súa solicitude de conta $1 foi rexeitada en {{SITENAME}}.
+
+Isto pode deberse a varias causas. Pode que non enchese o formulario correctamente, non respondese na extensión
+adecuada ou non cumprise con algún outro criterio. Pode que existan listaxes de contacto no sitio que poida
+usar se quere saber máis acerca da política de contas de usuario.',
+	'confirmaccount-email-body4'  => 'Perdón, pero a súa solicitude de conta "$1" foi rexeitada en {{SITENAME}}.
+
+$2
+
+Poden existir listaxes de contacto no sitio que pode usar se quere saber máis acerca da política de contas de usuario.',
+);
 
 $wgConfirmAccountMessages['hsb'] = array(
 	'requestaccount'              => 'Wužiwarske konto sej žadać',
@@ -791,6 +905,13 @@ $wgConfirmAccountMessages['oc'] = array(
 	'requestaccount-email'        => 'Adreça electronica:',
 	'confirmaccount-name'         => 'Nom d\'utilizaire',
 	'confirmaccount-real'         => 'Nom',
+);
+
+$wgConfirmAccountMessages['pl'] = array(
+	'acct_request_throttle_hit'   => 'Przepraszamy, zamówiłeś (-aś) już o $1 kont. Nie możesz wykonać więcej zamówień.',
+	'confirmaccount-email'        => 'E-mail:',
+	'confirmaccount-email-q'      => 'E-mail',
+	'confirmaccount-ip'           => 'Adres IP:',
 );
 
 $wgConfirmAccountMessages['pms'] = array(
