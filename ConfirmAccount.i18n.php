@@ -310,11 +310,15 @@ $wgConfirmAccountMessages['de'] = array(
 	'requestaccount-same'     => '(wie der Realname)',
 	'requestaccount-email'    => 'E-Mail-Adresse:',
 	'requestaccount-bio'      => 'Persönliche Biographie:',
+	'requestaccount-attach'   => 'Lebenslauf (optional):',
 	'requestaccount-notes'    => 'Zusätzliche Angaben:',
 	'requestaccount-urls'     => 'Liste von Webseiten (durch Zeilenumbrüche getrennt):',
 	'requestaccount-agree'    => 'Du musst bestätigen, dass Dein Realname korrekt ist und du die Benutzerbedingungen akzeptierst.',
 	'requestaccount-inuse'    => 'Der Benutzername ist bereits in einem anderen Benutzerantrag in Verwendung.',
 	'requestaccount-tooshort' => 'Deine Biographie sollte mindestens $1 Worte lang sein.',
+	'requestaccount-exts'     => 'Der Dateityp des Anhangs ist nicht erlaubt.',
+	'requestaccount-resub'    => 'Die Datei mit deinem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
+	Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
 	'requestaccount-tos'      => 'Ich habe die [[{{NS:PROJECT}}:Benutzungsbedingungen|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
 	Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
 	'requestaccount-submit'   => 'Benutzerkonto beantragen',
@@ -362,15 +366,21 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'confirmaccount-email-q' => 'E-Mail',
 	'confirmaccount-bio'     => 'Biographie:',
 	'confirmaccount-bio-q'   => 'Biographie',
+	'confirmaccount-attach'  => 'Lebenslauf:',
 	'confirmaccount-urls'    => 'Liste der Webseiten:',
 	'confirmaccount-nourls'  => '(Nichts angegeben)',
 	'confirmaccount-review'  => 'Bestätigen/Ablehnen',
-	'confirmaccount-confirm' => 'Benutze die folgende Auswahl, um den Antrag zu akzeptieren oder abzulehnen.',
+	'confirmaccount-confirm' => 'Benutze die folgende Auswahl, um den Antrag zu akzeptieren, abzulehnen oder noch zu warten.',
 	'confirmaccount-econf'   => '(bestätigt)',
+	'confirmaccount-reject'  => '(abgelehnt durch [[User:$1|$1]] am $2)',
+	'confirmaccount-held'    => '(markiert als „abwarten“ durch [[User:$1|$1]] am $2)',
 	'confirmaccount-create'  => 'Bestätigen (Konto anlegen)',
 	'confirmaccount-deny'    => 'Ablehnen (Antrag löschen)',
-	'confirmaccount-reason'  => 'Kommentar (wird in die Mail an den Antragsteller eingefügt):',
+	'confirmaccount-hold'    => 'Markiert als „abwarten“',
+	'confirmaccount-reason'  => 'Begründung (wird in die Mail an den Antragsteller eingefügt):',
+	'confirmaccount-ip'      => 'IP-Addresse:',
 	'confirmaccount-submit'  => 'Abschicken',
+	'confirmaccount-needreason' => 'Du musst eine Begründung eingeben.',
 	'confirmaccount-acc'     => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[{{ns:User}}:$1]] wurde angelegt.',
 	'confirmaccount-rej'     => 'Benutzerantrag wurde abgelehnt.',
 	'confirmaccount-summary' => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
@@ -398,7 +408,7 @@ $3
 Aus Sicherheitsgründen solltest du Dein Passwort unbedingt beim ersten
 Einloggen ändern. Um dich einzuloggen gehst du auf die Seite
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto "$1" 
+	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
 
 Dies kann viele Gründe haben. Möglicherweise hast du das Antragsformular
@@ -407,8 +417,15 @@ die Anforderungen auf andere Weise nicht erfüllt.
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
-	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto "$1" 
+	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
+
+$2
+
+Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
+kannst, wenn du mehr über die Anforderungen wissen möchtest.',
+'confirmaccount-email-body5' => 'Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
+       musst du zusätzliche Informationen übermitteln.
 
 $2
 
