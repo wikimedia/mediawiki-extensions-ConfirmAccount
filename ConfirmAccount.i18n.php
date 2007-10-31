@@ -579,11 +579,15 @@ $wgConfirmAccountMessages['gl'] = array(
 	'requestaccount-same'         => '(o mesmo que o nome real)',
 	'requestaccount-email'        => 'Enderezo de correo electrónico:',
 	'requestaccount-bio'          => 'Biografía persoal:',
+	'requestaccount-attach'       => 'Curriculum Vitae (opcional):',
 	'requestaccount-notes'        => 'Notas adicionais:',
 	'requestaccount-urls'         => 'Lista de sitios web, de habelos, (separados cun parágrafo novo):',
 	'requestaccount-agree'        => 'Debe certificar que o seu nome real é correcto e que está de acordo coas nosas Condicións de Servizo.',
 	'requestaccount-inuse'        => 'Este nome de usuario xa se usou nunha solicitude de conta aínda pendente.',
 	'requestaccount-tooshort'     => 'A súa biografía debe ter un mínimo de $1 palabras.',
+	'requestaccount-exts'         => 'Non se permite este tipo de ficheiro como anexo.',
+	'requestaccount-resub'        => 'Ten que volver a seleccionar o ficheiro do seu curriculum vitae por razóns de seguranza. Deixe o campo en branco
+	se non o quere incluír máis.',
 	'requestaccount-tos'          => 'Lin e estou de acordo en respectar as [[{{NS:PROJECT}}:Terms of Service|Condicións de Servizo]] de {{SITENAME}}. 
 	O nome especificado como "Nome real" é, efectivamente, o meu propio nome real.',
 	'requestaccount-submit'       => 'Solicitar unha conta',
@@ -625,6 +629,7 @@ Este código de confirmación caducará o $4.',
 	'confirmaccount-email-q'      => 'Correo electrónico',
 	'confirmaccount-bio'          => 'Biografía:',
 	'confirmaccount-bio-q'        => 'Biografía',
+	'confirmaccount-attach'       => 'Curriculum Vitae:',
 	'confirmaccount-notes'        => 'Notas adicionais:',
 	'confirmaccount-urls'         => 'Lista de sitios web:',
 	'confirmaccount-review'       => 'Aprovar/Rexeitar',
@@ -633,8 +638,11 @@ Este código de confirmación caducará o $4.',
 	'confirmaccount-reject'       => '(rexeitada por [[User:$1|$1]] en $2)',
 	'confirmaccount-create'       => 'Aceptar (crear a conta)',
 	'confirmaccount-deny'         => 'Rexeitar (eliminar da listaxe)',
+	'confirmaccount-spam'         => 'Spam (non enviar correo electrónico)',
 	'confirmaccount-reason'       => 'Comentario (incluirase na mensaxe de correo electrónico):',
+	'confirmaccount-ip'           => 'Enderezo IP:',
 	'confirmaccount-submit'       => 'Confirmar',
+	'confirmaccount-needreason'   => 'Debe incluír un motivo na caixa de comentarios de embaixo.',
 	'confirmaccount-acc'          => 'Confirmouse sen problemas a solicitude de conta; creouse a nova conta de usuario [[User:$1]].',
 	'confirmaccount-rej'          => 'Rexeitouse sen problemas a solicitude de conta.',
 	'confirmaccount-summary'      => 'A crear a páxina de usuario coa biografía do novo usuario.',
@@ -820,11 +828,14 @@ $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount-same'         => '(gelijk aan uw naam)',
 	'requestaccount-email'        => 'E-mailadres:',
 	'requestaccount-bio'          => 'Persoonlijke biografie:',
+	'requestaccount-attach'       => 'CV (optioneel):',
 	'requestaccount-notes'        => 'Opmerkingen:',
 	'requestaccount-urls'         => 'Lijst van websites, als van toepassing (iedere site op een aparte regel):',
 	'requestaccount-agree'        => 'U moet aangegeven dat uw naam juist is en dat u akkoord gaat met de Voorwaarden.',
 	'requestaccount-inuse'        => 'De gebruiker is al bekend in een aanvraagprocedure.',
 	'requestaccount-tooshort'     => 'Uw biografie moet tenminste $1 woorden bevatten.',
+	'requestaccount-exts'         => 'Bestandstype van de bijlage is niet toegestaan.',
+	'requestaccount-resub'        => 'Uw CV-bestand moet herselecteerd worden voor veiligheidsredenen. Laat het veld open als u geen bestand meer wil bijvoegen.',
 	'requestaccount-tos'          => 'Ik heb de Voorwaarden van {{SITENAME}} gelezen en ga ermee akkoord.',
 	'requestaccount-submit'       => 'Gebruiker aanvragen',
 	'requestaccount-sent'         => 'Uw gebruikersaanvraag is verstuurd en wacht op review.',
@@ -841,7 +852,7 @@ Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Al
 Deze bevestigingse-mail verloop op $4.',
 	'acct_request_throttle_hit'   => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
 	'requestaccount-loginnotice'  => 'Om een gebruiker te krijgen, moet u \'\'\'[[Special:RequestAccount|een verzoek doen]]\'\'\'.',
-	'confirmaccounts'             => 'Bevestig gebruikersverzoeken',
+	'confirmaccounts'             => 'Gebruikersverzoeken bevestigen',
 	'confirmaccount-list'         => 'Hieronder staan de gebruikersverzoeken die op afhandeling wachten. 
 	Voor goedgekeurde gebruikersverzoeken worden gebruikers aangemaakt en dat verzoek komt niet langer voor in deze lijst. 
 	Afgewezen gebruikersverzoeken worden van de lijst verwijderd.',
@@ -865,17 +876,22 @@ Deze bevestigingse-mail verloop op $4.',
 	'confirmaccount-email-q'      => 'E-mail',
 	'confirmaccount-bio'          => 'Biografie',
 	'confirmaccount-bio-q'        => 'Biografie',
+	'confirmaccount-attach'       => 'CV (informatie over u):',
 	'confirmaccount-notes'        => 'Extra toevoegingen:',
 	'confirmaccount-urls'         => 'Lijst met websites:',
-	'confirmaccount-nourls'       => '(niet opgegeven)',
 	'confirmaccount-review'       => 'toegelaten/afgewezen',
 	'confirmaccount-confirm'      => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
 	'confirmaccount-econf'        => '(bevestigd)',
 	'confirmaccount-reject'       => '(afgewezen door [[User:$1|$1]] op $2)',
+	'confirmaccount-held'         => '(als "uitgesteld" aangemerkt door [[User:$1|$1]] op $2)',
 	'confirmaccount-create'       => 'Toelaten (gebruiker aanmaken)',
 	'confirmaccount-deny'         => 'Afwijzen (verwijderen)',
+	'confirmaccount-hold'         => 'Uitstellen',
+	'confirmaccount-spam'         => 'Spam (geen e-mail sturen)',
 	'confirmaccount-reason'       => 'Opmerking (zal worden toegevoegd aan de email):',
+	'confirmaccount-ip'           => 'IP-adres:',
 	'confirmaccount-submit'       => 'Bevestigen',
+	'confirmaccount-needreason'   => 'U moet een reden geven in het onderstaande veld.',
 	'confirmaccount-acc'          => 'Gebruikersverzoek goedgekeurd. De gebruiker [[User:$1]] is aangemaakt.',
 	'confirmaccount-rej'          => 'Gebruikersverzoek afgewezen.',
 	'confirmaccount-summary'      => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
@@ -912,7 +928,14 @@ lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
 $2
 
 Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
+	'confirmaccount-email-body5'  => 'Voordat uw aanvraag voor een account "$1" aanvaard kan worden op {{SITENAME}},
+	moet u eerst extra informatie geven.
+
+$2
+
+Er kunnen contacteerlijsten zijn die u kan gebruiken als u meer wil te weten komen over het beleid van gebruikersaccounts.',
 );
+
 
 $wgConfirmAccountMessages['oc'] = array(
 	'requestaccount-legend1'       => 'Compte d\'utilizaire:',
@@ -1010,6 +1033,12 @@ Për na question ëd sigurëssa un a venta ch\'as cambia soa ciav la prima vira 
 	'confirmaccount-email-body3'  => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a l\'é staita bocià. A-i son vàire rason përchè sossì a peula esse rivà. A peul esse ch\'a l\'abia pa compilà giust la domanda, che soe arspòste a sio staite tròp curte, ò pura che an chèich àotra manera a l\'abia falì da rintré ant ël criteri d\'aprovassion. A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 	'confirmaccount-email-body4'  => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a Betawiki a l\'é staita bocià. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 	'confirmaccount-email-body5'  => 'Anans che soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a peula esse acetà, a dovrìa lassene dj\'anformassion adissionaj. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
+);
+
+$wgConfirmAccountMessages['rm'] = array(
+	'confirmaccount-name'         => 'Num d\'utilisader',
+	'confirmaccount-real'         => 'Num:',
+	'confirmaccount-real-q'       => 'Num',
 );
 
 $wgConfirmAccountMessages['sk'] = array(
