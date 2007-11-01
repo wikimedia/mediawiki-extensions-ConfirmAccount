@@ -465,6 +465,8 @@ $wgConfirmAccountMessages['fr'] = array(
 	'requestaccount-same'     => '(Nom figurant dans votre état-civil)',
 	'requestaccount-email'    => 'Adresse électronique :',
 	'requestaccount-bio'      => 'Biographie personnelle:',
+	'requestaccount-attach'   => 'CV/Résumé (facultatif)',
+	'requestaccount-exts'	  => 'Le téléchargement des fichiers joints n’est pas permis.',
 	'requestaccount-notes'    => 'Notes supplémentaires :',
 	'requestaccount-urls'     => 'Liste des sites web. En cas de plusieurs sites (séparez-les par une nouvelle ligne) :',
 	'requestaccount-agree'    => 'Vous devez certifier que votre nom réel soit correct que vous acceptiez les conditions d’utilisations du service.',
@@ -510,6 +512,7 @@ Ce code de confirmation expirera le $4.',
 	'confirmaccount-email-q'  => 'Courriel',
 	'confirmaccount-bio'    => 'Biographie :',
 	'confirmaccount-bio-q'    => 'Biographie',
+	'confirmaccount-attach' =>'Résumé/CV :',
 	'confirmaccount-notes'   => 'Notes supplémentaires :',
 	'confirmaccount-urls'   => 'Liste des site web :',
 	'confirmaccount-nourls' => '(Aucun site)',
@@ -529,6 +532,11 @@ Ce code de confirmation expirera le $4.',
 	~~~~",
 	'confirmaccount-wsum'   => 'Bienvenue !',
 	'confirmaccount-email-subj' => '{{SITENAME}} demande de compte',
+	'confirmaccount-held' => 'Marqué « détenu » par [[User:$1|$1]] sur $2',
+	'confirmaccount-hold' => 'Détenu',
+	'confirmaccount-ip' => 'Adresse IP',
+	'confirmaccount-needreason' => 'Vous devez indiquer un motif dans le cadre ci-après.',
+	'confirmaccount-spam' => 'Spam (n’envoyez pas de courriel)',
 	'confirmaccount-email-body' => 'Votre demande de compte a été acceptée sur {{SITENAME}}.
 
 Nom du compte utilisateur : $1
@@ -555,6 +563,13 @@ Plusieurs raisons peuvent expliquer ce cas de figure. Il est possible que vous a
 $2
 
 Il est possible d’être sur la liste des contacts afin de mieux connaître les critères pour pouvoir s’inscrire.',
+	'confirmaccount-email-body5' => 'Avant que votre requête pour le compte « $1 » puisse être acceptée sur {{SITENAME}} 
+	Vous devez produire quelques informations suplémentaires.
+
+$2
+
+Ceci permet d’être sur la liste des contacts du site si vous désirez en savoir plus sur les règles concernant les comptes.',
+
 );
 
 $wgConfirmAccountMessages['gl'] = array(
