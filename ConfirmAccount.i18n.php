@@ -472,6 +472,7 @@ $wgConfirmAccountMessages['fr'] = array(
 	'requestaccount-agree'    => 'Vous devez certifier que votre nom réel soit correct que vous acceptiez les conditions d’utilisations du service.',
 	'requestaccount-inuse'    => 'Le nom d’utilisateur est déjà utilisé dans une requête en cours d’approbation.',
 	'requestaccount-tooshort' => 'Votre biographie doit avoir au moins $1 mots.',
+	'requestaccount-resub'    => 'Votre fichier de CV/r�sum� doit �tre s�lectionn� une nouvelle fois pour des raisons de s�curit�. Laissez le champ vierge si vous de d�sirez plus le joindre.',
 	'requestaccount-tos'      => 'J’ai lu et j’accepte de respecter les termes concernant les conditions d’utilisation des services de {{SITENAME}}.',
 	'requestaccount-correct'  => 'Je certifie que le nom que j’ai inscrit dans « Nom réel » est bien le mien.',
 	'requestaccount-submit'    => 'Demande de compte utilisateur.',
