@@ -445,100 +445,91 @@ $wgConfirmAccountMessages['ext'] = array(
 
 # French translation by Bertrand GRONDIN
 $wgConfirmAccountMessages['fr'] = array(
-	# Request account page
-	'requestaccount'          => 'Demande de compte utilisateur',
-	'requestaccount-text'      => '\'\'\'Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur.\'\'\'. 
+	'requestaccount'              => 'Demande de compte utilisateur',
+	'requestaccount-text'         => '\'\'\'Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur.\'\'\'. 
 	
 	Assurez-vous que vous ayez déjà lu [[{{NS:PROJECT}}:Conditions d’utilisation|les conditions d’utilisation]] avant de faire votre demande de compte.
 	
 	Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur
 	[[Special:Userlogin]].',
-	'requestaccount-dup'      => '\'\'\'Note : Vous êtes déjà sur une session avec un compte enregistré.\'\'\'',
-	'requestaccount-legend1'   => 'Compte utilisateur',
-	'requestaccount-legend2'   => 'Informations personnelles',
-	'requestaccount-legend3'   => 'Autres informations',
-	'requestaccount-acc-text'  => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
-	'requestaccount-ext-text'  => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
+	'requestaccount-dup'          => '\'\'\'Note : Vous êtes déjà sur une session avec un compte enregistré.\'\'\'',
+	'requestaccount-legend1'      => 'Compte utilisateur',
+	'requestaccount-legend2'      => 'Informations personnelles',
+	'requestaccount-legend3'      => 'Autres informations',
+	'requestaccount-acc-text'     => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
+	'requestaccount-ext-text'     => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
 	Vous avez la possibilité de lister des contact tel qu’un numéro de téléphone pour obtenir une assistance pour confirmer votre identité.',
-	'requestaccount-bio-text' => "Votre biographie sera mise par défaut sur votre page utilisateur. Essayez d’y mettre vos recommandations. Assurez-vous que vous pouvez diffuser sans crainte les informations. Votre nom peut être changé en utilisant [[Special:Preferences]].",
-	'requestaccount-real'     => 'Nom réel :',
-	'requestaccount-same'     => '(Nom figurant dans votre état-civil)',
-	'requestaccount-email'    => 'Adresse électronique :',
-	'requestaccount-bio'      => 'Biographie personnelle:',
-	'requestaccount-attach'   => 'CV/Résumé (facultatif)',
-	'requestaccount-exts'	  => 'Le téléchargement des fichiers joints n’est pas permis.',
-	'requestaccount-notes'    => 'Notes supplémentaires :',
-	'requestaccount-urls'     => 'Liste des sites web. En cas de plusieurs sites (séparez-les par une nouvelle ligne) :',
-	'requestaccount-agree'    => 'Vous devez certifier que votre nom réel soit correct que vous acceptiez les conditions d’utilisations du service.',
-	'requestaccount-inuse'    => 'Le nom d’utilisateur est déjà utilisé dans une requête en cours d’approbation.',
-	'requestaccount-tooshort' => 'Votre biographie doit avoir au moins $1 mots.',
-	'requestaccount-resub'    => 'Votre fichier de CV/résumé doit être sélectionné une nouvelle fois pour des raisons de sécurité. Laissez le champ vierge si vous de désirez plus le joindre.',
-	'requestaccount-tos'      => 'J’ai lu et j’accepte de respecter les termes concernant les conditions d’utilisation des services de {{SITENAME}}.',
-	'requestaccount-correct'  => 'Je certifie que le nom que j’ai inscrit dans « Nom réel » est bien le mien.',
-	'requestaccount-submit'    => 'Demande de compte utilisateur.',
-	'requestaccount-sent'     => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.',
-	'request-account-econf'   => 'Votre adresse courrielle a été confirmée et sera listée telle quelle dans votre demande de compte.',
-	'requestaccount-email-subj' => '{{SITENAME}} confirmation d’adresse courriel.',
-	'requestaccount-email-body' => 'Quelqu’un, vous probablement, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur "$2" avec cette adresse courriel sur {{SITENAME}}.
+	'requestaccount-bio-text'     => 'Votre biographie sera mise par défaut sur votre page utilisateur. Essayez d’y mettre vos recommandations. Assurez-vous que vous pouvez diffuser sans crainte les informations. Votre nom peut être changé en utilisant [[Special:Preferences]].',
+	'requestaccount-real'         => 'Nom réel :',
+	'requestaccount-same'         => '(nom figurant dans votre état civil)',
+	'requestaccount-email'        => 'Adresse électronique :',
+	'requestaccount-bio'          => 'Biographie personnelle:',
+	'requestaccount-attach'       => 'CV/Résumé (facultatif)',
+	'requestaccount-notes'        => 'Notes supplémentaires :',
+	'requestaccount-urls'         => 'Liste des sites Web. Si plusieurs, séparez-les par un saut de ligne :',
+	'requestaccount-agree'        => 'Vous devez certifier que votre nom réel est correct et vous acceptez les conditions d’utilisations du service.',
+	'requestaccount-inuse'        => 'Le nom d’utilisateur est déjà utilisé dans une requête en cours d’approbation.',
+	'requestaccount-tooshort'     => 'Votre biographie doit avoir au moins {{PLURAL:$1|$1 mot|$1 mots}}.',
+	'requestaccount-exts'         => 'Le téléchargement des fichiers joints n’est pas permis.',
+	'requestaccount-resub'        => 'Votre fichier de CV/résumé doit être sélectionné une nouvelle fois pour des raisons de sécurité. Laissez le champ vierge si vous ne désirez plus le joindre.',
+	'requestaccount-tos'          => 'J’ai lu et j’accepte de respecter les termes concernant les conditions d’utilisation des services de {{SITENAME}}.',
+	'requestaccount-submit'       => 'Demande de compte utilisateur.',
+	'requestaccount-sent'         => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.',
+	'request-account-econf'       => 'Votre adresse courriel a été confirmée et sera listée telle quelle dans votre demande de compte.',
+	'requestaccount-email-subj'   => '{{SITENAME}} confirmation d’adresse courriel.',
+	'requestaccount-email-body'   => 'Quelqu’un, vous probablement, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur « $2 » avec cette adresse courriel sur {{SITENAME}}.
 
-Pour confirmer que ce compte vous appartient réelement sur {{SITENAME}}, vous êtes prié d’ouvrir ce lien dans votre navigateur :
+Pour confirmer que ce compte vous appartient réelement sur {{SITENAME}}, vous êtes prié d’ouvrir ce lien dans votre navigateur Web :
 
 $3
 
 Votre mot de passe vous sera envoyé uniquement si votre compte est créé. Si tel n’était pas le cas, n’utilisez pas ce lien.
-Ce code de confirmation expirera le $4.',
-
-	'acct_request_throttle_hit' => "Désolé, vous avec demandé $1 comptes. Vous ne pouvez plus faire de demande.",
-	
-	# Add to Special:Login
-	'requestaccount-loginnotice' => 'Pour obtenir un compte utilisateur, vous devez en faire \'\'\'[[Special:RequestAccount|la demande]]\'\'\'.',
-	
-	# Confirm account page
-	'confirmaccounts'       => 'Demande de confirmation de comptes', 
-	'confirmaccount-list'    => 'Voici, ci-dessous, la liste des comptes en attente d’approbation.
-	Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront tout simplement supprimé de cette même liste.',
-	'confirmaccount-list2'    => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
-	'confirmaccount-text'    => 'Voici une demande en cours pour un compte utilisateur sur \'\'\'{{SITENAME}}\'\'\'. Attention, vérifier et, si nécessaire, confirmez toutes les information ci-dessous. Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres noms.
+Ce code de confirmation expire le $4.',
+	'acct_request_throttle_hit'   => 'Désolé, vous avec demandé $1 comptes. Vous ne pouvez plus faire de demande.',
+	'requestaccount-loginnotice'  => 'Pour obtenir un compte utilisateur, vous devez en faire \'\'\'[[Special:RequestAccount|la demande]]\'\'\'.',
+	'confirmaccounts'             => 'Demande de confirmation de comptes',
+	'confirmaccount-list'         => 'Voici, ci-dessous, la liste des comptes en attente d’approbation. Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront supprimés de cette même liste.',
+	'confirmaccount-list2'        => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
+	'confirmaccount-text'         => 'Voici une demande en cours pour un compte utilisateur sur \'\'\'{{SITENAME}}\'\'\'. Attention, vérifier et, si nécessaire, confirmez toutes les information ci-dessous. Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres noms.
 
 	Si vous quittez cette page sans confirmer ou rejeter cette demande, elle sera toujours mise en attente.',
-	'confirmaccount-none'    => 'Il n’a pas actuellement de demande d’approbation en cours.',
-	'confirmaccount-none2'   => 'Il n’y a pas actuellement de rejet de demande de comptes.',
-	'confirmaccount-badid'  => 'Il n’y a aucune demande en cours correspondant à l’ID indiquée. Il est possible qu‘il ait subi une maintenance.',
-	'confirmaccount-back'   => 'Voir la liste des demandes en cours',
-	'confirmaccount-back2'  => 'Voir la liste des comptes rejetés récemment.',
-	'confirmaccount-name'   => 'Nom d’utilisateur',
-	'confirmaccount-real'   => 'Nom :',
-	'confirmaccount-real-q'   => 'Nom',
-	'confirmaccount-email'  => 'Courriel :',
-	'confirmaccount-email-q'  => 'Courriel',
-	'confirmaccount-bio'    => 'Biographie :',
-	'confirmaccount-bio-q'    => 'Biographie',
-	'confirmaccount-attach' =>'Résumé/CV :',
-	'confirmaccount-notes'   => 'Notes supplémentaires :',
-	'confirmaccount-urls'   => 'Liste des site web :',
-	'confirmaccount-nourls' => '(Aucun site)',
-	'confirmaccount-review' => 'Approbation/Rejet',
-	'confirmaccount-confirm' => 'Utilisez les boutons ci-dessous pour accepter ou rejeter la demande.',
-	'confirmaccount-econf'  => '(confirmé)',
-	'confirmaccount-reject' => '(rejeté par [[User:$1|$1]] le $2)',
-	'confirmaccount-create'  => 'Approbation (crée le compte)',
-	'confirmaccount-deny'    => 'Rejet (supprime le compte)',
-	'confirmaccount-reason' => 'Commentaire (figurera dans le courriel) :',
-	'confirmaccount-submit'  => 'Confirmation',
-	'confirmaccount-acc'    => 'La demande de compte a été confirmée avec succès ; création du nouvel utilisateur [[User:$1]].',
-	'confirmaccount-rej'    => 'La demande a été rejetée avec succès.',
-	'confirmaccount-summary' => 'Création de la page utilisateur avec sa biographie.',
-	'confirmaccount-welc'   => "'''Bienvenue sur ''{{SITENAME}}'' !''' Nous espérons que vous contribuerez beaucoup et bien. 
+	'confirmaccount-none'         => 'Il n’y a pas actuellement de demande d’approbation en cours.',
+	'confirmaccount-none2'        => 'Il n’y a pas actuellement de rejet de demande de comptes.',
+	'confirmaccount-badid'        => 'Il n’y a aucune demande en cours correspondant à l’ID indiqué. Il est possible qu‘il ait subi une maintenance.',
+	'confirmaccount-back'         => 'Voir la liste des demandes en cours',
+	'confirmaccount-back2'        => 'Voir la liste des comptes rejetés récemment.',
+	'confirmaccount-name'         => 'Nom d’utilisateur',
+	'confirmaccount-real'         => 'Nom :',
+	'confirmaccount-real-q'       => 'Nom',
+	'confirmaccount-email'        => 'Courriel :',
+	'confirmaccount-email-q'      => 'Courriel',
+	'confirmaccount-bio'          => 'Biographie :',
+	'confirmaccount-bio-q'        => 'Biographie',
+	'confirmaccount-attach'       => 'CV/Résumé :',
+	'confirmaccount-notes'        => 'Notes supplémentaires :',
+	'confirmaccount-urls'         => 'Liste des site web :',
+	'confirmaccount-review'       => 'Approbation/Rejet',
+	'confirmaccount-confirm'      => 'Utilisez les boutons ci-dessous pour accepter ou rejeter la demande.',
+	'confirmaccount-econf'        => '(confirmé)',
+	'confirmaccount-reject'       => '(rejeté par [[User:$1|$1]] le $2)',
+	'confirmaccount-held'         => 'Marqué « détenu » par [[User:$1|$1]] sur $2',
+	'confirmaccount-create'       => 'Approbation (crée le compte)',
+	'confirmaccount-deny'         => 'Rejet (supprime le compte)',
+	'confirmaccount-hold'         => 'Détenu',
+	'confirmaccount-spam'         => 'Pourriel (n’envoyez pas de courriel)',
+	'confirmaccount-reason'       => 'Commentaire (figurera dans le courriel) :',
+	'confirmaccount-ip'           => 'Adresse IP',
+	'confirmaccount-submit'       => 'Confirmation',
+	'confirmaccount-needreason'   => 'Vous devez indiquer un motif dans le cadre ci-après.',
+	'confirmaccount-acc'          => 'La demande de compte a été confirmée avec succès ; création du nouvel utilisateur [[User:$1]].',
+	'confirmaccount-rej'          => 'La demande a été rejetée avec succès.',
+	'confirmaccount-summary'      => 'Création de la page utilisateur avec sa biographie.',
+	'confirmaccount-welc'         => '\'\'\'Bienvenue sur \'\'{{SITENAME}}\'\' !\'\'\' Nous espérons que vous contribuerez beaucoup et bien. 
 	Vous désirerez, peut-être, lire [[{{NS:PROJECT}}:Comment débuter|comment bien débuter]]. Bienvenue encore et bonne contributions.
-	~~~~",
-	'confirmaccount-wsum'   => 'Bienvenue !',
-	'confirmaccount-email-subj' => '{{SITENAME}} demande de compte',
-	'confirmaccount-held' => 'Marqué « détenu » par [[User:$1|$1]] sur $2',
-	'confirmaccount-hold' => 'Détenu',
-	'confirmaccount-ip' => 'Adresse IP',
-	'confirmaccount-needreason' => 'Vous devez indiquer un motif dans le cadre ci-après.',
-	'confirmaccount-spam' => 'Spam (n’envoyez pas de courriel)',
-	'confirmaccount-email-body' => 'Votre demande de compte a été acceptée sur {{SITENAME}}.
+	~~~~',
+	'confirmaccount-wsum'         => 'Bienvenue !',
+	'confirmaccount-email-subj'   => '{{SITENAME}} demande de compte',
+	'confirmaccount-email-body'   => 'Votre demande de compte a été acceptée sur {{SITENAME}}.
 
 Nom du compte utilisateur : $1
 
@@ -546,7 +537,7 @@ Mot de passe : $2
 
 Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connectez, allez sur
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body2' => 'Votre demande de compte utilisateur a été acceptée sur {{SITENAME}}.
+	'confirmaccount-email-body2'  => 'Votre demande de compte utilisateur a été acceptée sur {{SITENAME}}.
 
 Nom du compte utilisateur : $1
 
@@ -556,21 +547,19 @@ $3
 
 Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connectez, allez sur 
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3' => 'Désolé, votre demande de compte utilisateur "$1" a été rejetée sur {{SITENAME}}.
+	'confirmaccount-email-body3'  => 'Désolé, votre demande de compte utilisateur "$1" a été rejetée sur {{SITENAME}}.
 
 Plusieurs raisons peuvent expliquer ce cas de figure. Il est possible que vous ayez mal rempli le formulaire, ou que vous n’ayez pas indiqué suffisamment d’informations dans vos réponses. Il est encore possible que vous ne remplissiez pas les critères d’éligibilité pour obtenir votre compte. Il est possible d’être sur la liste des contact si vous désirez mieux connaître les conditions requises.',
-	'confirmaccount-email-body4' => 'Désolé, votre demande de compte utilisateur "$1" a été rejetée sur {{SITENAME}}.
+	'confirmaccount-email-body4'  => 'Désolé, votre demande de compte utilisateur "$1" a été rejetée sur {{SITENAME}}.
 
 $2
 
 Il est possible d’être sur la liste des contacts afin de mieux connaître les critères pour pouvoir s’inscrire.',
-	'confirmaccount-email-body5' => 'Avant que votre requête pour le compte « $1 » puisse être acceptée sur {{SITENAME}} 
-	Vous devez produire quelques informations suplémentaires.
+	'confirmaccount-email-body5'  => 'Avant que votre requête pour le compte « $1 » ne puisse être acceptée sur {{SITENAME}}, vous devez produire quelques informations suplémentaires.
 
 $2
 
-Ceci permet d’être sur la liste des contacts du site si vous désirez en savoir plus sur les règles concernant les comptes.',
-
+Ceci permet d’être sur la liste des contacts du site, si vous désirez en savoir plus sur les règles concernant les comptes.',
 );
 
 $wgConfirmAccountMessages['gl'] = array(
