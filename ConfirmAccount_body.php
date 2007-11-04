@@ -654,7 +654,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$form .= $this->skin->makeKnownLinkObj( $wgTitle, htmlspecialchars($row->acr_filename),
 				'file=' . $row->acr_storage_key );
 		} else {
-			$form .= wfMsgHtml('confirmaccount-none');
+			$form .= wfMsgHtml('confirmaccount-none-p');
 		}
 		$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
@@ -895,7 +895,7 @@ class ConfirmAccountsPage extends SpecialPage
 				break;
 		}
 		if( $linkList == '' ) {
-			$linkList = wfMsgHtml( 'confirmaccount-none' );
+			$linkList = wfMsgHtml( 'confirmaccount-none-p' );
 		} else {
 			$linkList = "<ul>$linkList</ul>";
 		}
