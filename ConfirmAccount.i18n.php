@@ -586,7 +586,7 @@ $wgConfirmAccountMessages['gl'] = array(
 	'requestaccount-bio'          => 'Biografía persoal:',
 	'requestaccount-attach'       => 'Curriculum Vitae (opcional):',
 	'requestaccount-notes'        => 'Notas adicionais:',
-	'requestaccount-urls'         => 'Lista de sitios web, de habelos, (separados cun parágrafo novo):',
+	'requestaccount-urls'         => 'Listaxe de sitios web, de habelos, (separados cun parágrafo novo):',
 	'requestaccount-agree'        => 'Debe certificar que o seu nome real é correcto e que está de acordo coas nosas Condicións de Servizo.',
 	'requestaccount-inuse'        => 'Este nome de usuario xa se usou nunha solicitude de conta aínda pendente.',
 	'requestaccount-tooshort'     => 'A súa biografía debe ter un mínimo de $1 palabras.',
@@ -636,11 +636,12 @@ Este código de confirmación caducará o $4.',
 	'confirmaccount-bio-q'        => 'Biografía',
 	'confirmaccount-attach'       => 'Curriculum Vitae:',
 	'confirmaccount-notes'        => 'Notas adicionais:',
-	'confirmaccount-urls'         => 'Lista de sitios web:',
-	'confirmaccount-review'       => 'Aprovar/Rexeitar',
-	'confirmaccount-confirm'      => 'Use os botóns de embaixo para aceptar ou rexeitar esta solicitude.',
+	'confirmaccount-urls'         => 'Listaxe de sitios web:',
+	'confirmaccount-review'       => 'Aprobar/Rexeitar',
+	'confirmaccount-confirm'      => 'Use os botóns de embaixo para aceptar, rexeitar ou suspender esta solicitude:',
 	'confirmaccount-econf'        => '(confirmada)',
 	'confirmaccount-reject'       => '(rexeitada por [[User:$1|$1]] en $2)',
+	'confirmaccount-held'         => '(marcada "en suspenso" por [[User:$1|$1]] en $2)',
 	'confirmaccount-create'       => 'Aceptar (crear a conta)',
 	'confirmaccount-deny'         => 'Rexeitar (eliminar da listaxe)',
 	'confirmaccount-spam'         => 'Spam (non enviar correo electrónico)',
@@ -683,6 +684,12 @@ usar se quere saber máis acerca da política de contas de usuario.',
 $2
 
 Poden existir listaxes de contacto no sitio que pode usar se quere saber máis acerca da política de contas de usuario.',
+	'confirmaccount-email-body5'  => 'Antes de que se poida aceptar a súa solicitude dunha conta para "$1" en {{SITENAME}}
+	ten que fornecer algunhas informacións adicionais.
+
+$2
+
+Poden existir listas de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
 );
 
 $wgConfirmAccountMessages['hsb'] = array(
@@ -750,6 +757,7 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-attach'       => 'Žiwjenjoběh:',
 	'confirmaccount-notes'        => 'Přidatne přispomnjenki:',
 	'confirmaccount-urls'         => 'Lisćina webowych sydłow:',
+	'confirmaccount-none-p'       => '(njepodaty)',
 	'confirmaccount-review'       => 'Dowolić/Wotpokazać',
 	'confirmaccount-confirm'      => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
 	'confirmaccount-econf'        => '(potwjerdźene)',
