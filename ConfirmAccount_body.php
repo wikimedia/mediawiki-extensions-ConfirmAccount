@@ -874,6 +874,7 @@ class ConfirmAccountsPage extends SpecialPage
 					return false;
 				}
 			}
+			$dbw->commit();
 			$this->showSuccess( $this->submitType );
 		} else {
 			$this->showForm();
