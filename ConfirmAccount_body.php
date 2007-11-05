@@ -808,6 +808,21 @@ class ConfirmAccountsPage extends SpecialPage
 				__METHOD__ );
 			# OK, now remove the request
 			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
+			# Delete any attached file
+			$transaction = new FSTransaction();
+			if( !FileStore::lock() ) {
+				wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
+			}
+			$store = FileStore::get( 'accountreqs' );
+			# Clear out any associated attachments and delete those rows
+			$key = $row->acr_storage_key;
+			if( $key ) {
+				$path = $store->filePath( $key );
+				if( $path && file_exists($path) ) {
+					$transaction->addCommit( FSTransaction::DELETE_FILE, $path );
+				}
+			}
+			$transaction->commit();
 
 			wfRunHooks( 'AddNewAccount', array( $user ) );
 			# Start up the user's (presumedly brand new) userpages
