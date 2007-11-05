@@ -666,7 +666,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$blokip = SpecialPage::getTitleFor( 'blockip' );
 			$form .= "<p>".wfMsgHtml('confirmaccount-ip')." ".htmlspecialchars($row->acr_ip).
 			" (" . $this->skin->makeKnownLinkObj( $blokip, wfMsgHtml('blockip'), 
-				'ip=' . $row->acr_ip ).")</p>\n";
+				'ip=' . $row->acr_ip . '&wpCreateAccount=1' ).")</p>\n";
 		}
 		$form .= '</fieldset>';
 		
