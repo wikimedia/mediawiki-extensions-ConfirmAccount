@@ -850,7 +850,11 @@ class ConfirmAccountsPage extends SpecialPage
 			$u = User::newFromName( $row->acr_name, 'creatable' );
 			$u->setEmail( $row->acr_email );
 			# Pointless without a summary...
-			if( !$this->reason ) {
+			if( $row->acr_held || $row->acr_deleted ) {
+				$error = wfMsg( 'confirmaccount-canthold' );
+				$this->showForm( $error );
+				return false;
+			} else if( !$this->reason ) {
 				$error = wfMsg( 'confirmaccount-needreason' );
 				$this->showForm( $error );
 				return false;
