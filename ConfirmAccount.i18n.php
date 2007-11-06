@@ -285,6 +285,10 @@ $wgConfirmAccountMessages['bcl'] = array(
 	'confirmaccount-wsum'         => 'Dagos!',
 );
 
+$wgConfirmAccountMessages['br'] = array(
+	'confirmaccount-email-q'      => 'Postel',
+);
+
 // German translations (by Rrosenfeld)
 $wgConfirmAccountMessages['de'] = array(
 	# Request account page
@@ -892,6 +896,7 @@ Deze bevestigingse-mail verloop op $4.',
 	'confirmaccount-attach'       => 'CV (informatie over u):',
 	'confirmaccount-notes'        => 'Extra toevoegingen:',
 	'confirmaccount-urls'         => 'Lijst met websites:',
+	'confirmaccount-none-p'       => '(niet opgegeven)',
 	'confirmaccount-review'       => 'toegelaten/afgewezen',
 	'confirmaccount-confirm'      => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
 	'confirmaccount-econf'        => '(bevestigd)',
@@ -942,13 +947,12 @@ $2
 
 Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
 	'confirmaccount-email-body5'  => 'Voordat uw aanvraag voor een account "$1" aanvaard kan worden op {{SITENAME}},
-	moet u eerst extra informatie geven.
+moet u eerst extra informatie geven.
 
 $2
 
 Er kunnen contacteerlijsten zijn die u kan gebruiken als u meer wil te weten komen over het beleid van gebruikersaccounts.',
 );
-
 
 $wgConfirmAccountMessages['oc'] = array(
 	'requestaccount-legend1'       => 'Compte d\'utilizaire:',
