@@ -642,6 +642,7 @@ Este código de confirmación caducará o $4.',
 	'confirmaccount-attach'       => 'Curriculum Vitae:',
 	'confirmaccount-notes'        => 'Notas adicionais:',
 	'confirmaccount-urls'         => 'Listaxe de sitios web:',
+	'confirmaccount-none-p'       => '(non fornecido)',
 	'confirmaccount-review'       => 'Aprobar/Rexeitar',
 	'confirmaccount-confirm'      => 'Use os botóns de embaixo para aceptar, rexeitar ou deixar en suspenso esta solicitude:',
 	'confirmaccount-econf'        => '(confirmada)',
@@ -948,7 +949,7 @@ $2
 
 Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
 	'confirmaccount-email-body5'  => 'Voordat uw aanvraag voor een account "$1" aanvaard kan worden op {{SITENAME}},
-moet u eerst extra informatie geven.
+	moet u eerst extra informatie geven.
 
 $2
 
