@@ -9,14 +9,15 @@ $wgConfirmAccountMessages = array();
 
 $wgConfirmAccountMessages['en'] = array(
 	# Request account page
-	'requestaccount'          => 'Request account',
+	'requestaccount'           => 'Request account',
 	'requestaccount-text'      => '\'\'\'Complete and submit the following form to request a user account\'\'\'. 
 	
-	Make sure that you first read the [[{{NS:PROJECT}}:Terms of Service|Terms of Service]] before requesting an account.
+	Make sure that you first read the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] before requesting an account.
 	
 	Once the account is approved, you will be emailed a notification message and the account will be usable at 
 	[[Special:Userlogin]].',
-	'requestaccount-dup'      => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
+	'requestaccount-page'      => '{{ns:project}}:Terms of Service',
+	'requestaccount-dup'       => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
 	'requestaccount-legend1'   => 'User account',
 	'requestaccount-legend2'   => 'Personal information',
 	'requestaccount-legend3'   => 'Other information',
@@ -108,7 +109,7 @@ This confirmation code will expire at $4.',
 	'confirmaccount-rej'     => 'Account request rejected successfully.',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
 	'confirmaccount-welc'    => "'''Welcome to ''{{SITENAME}}''!''' We hope you will contribute much and well. 
-	You'll probably want to read [[{{NS:PROJECT}}:Getting started|Getting started]]. Again, welcome and have fun!",
+	You'll probably want to read the [[{{MediaWiki:Helppage}}|help pages]]. Again, welcome and have fun!",
 	'confirmaccount-wsum'    => 'Welcome!',
 	'confirmaccount-email-subj' => '{{SITENAME}} account request',
 	'confirmaccount-email-body' => 'Your request for an account has been approved on {{SITENAME}}.
@@ -151,7 +152,7 @@ $wgConfirmAccountMessages['ar'] = array(
 	'requestaccount'              => 'طلب حساب',
 	'requestaccount-text'         => '\'\'\'أكمل و ابعث الاستمارة التالية لطلب حساب\'\'\'. 
 	
-	تأكد أولا من قراءة [[{{NS:PROJECT}}:Terms of Service|شروط الخدمة]] قبل طلب حساب.
+	تأكد أولا من قراءة [[{{MediaWiki:Requestaccount-page}}|شروط الخدمة]] قبل طلب حساب.
 	
 	متى تمت الموافقة على الحساب, سيتم إرسال رسالة إخطار إليك و الحساب سيصبح قابلا للاستخدام في 
 	[[Special:Userlogin]].',
@@ -238,7 +239,7 @@ $3
 	'confirmaccount-rej'          => 'طلب الحساب تم رفضه بنجاح.',
 	'confirmaccount-summary'      => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.',
 	'confirmaccount-welc'         => '\'\'\'مرحبا إلى \'\'{{SITENAME}}\'\'!\'\'\' نأمل أن تساهم كثيرا وجيدا. 
-	على الأرجح ستريد قراءة [[{{NS:PROJECT}}:Getting started|البداية]]. مجددا، مرحبا و استمتع! 
+	على الأرجح ستريد قراءة [[{{MediaWiki:Helppage}}|البداية]]. مجددا، مرحبا و استمتع! 
 	<nowiki>~~~~</nowiki>',
 	'confirmaccount-wsum'         => 'مرحبا!',
 	'confirmaccount-email-subj'   => '{{SITENAME}} طلب حساب',
@@ -296,9 +297,10 @@ $wgConfirmAccountMessages['de'] = array(
 	'requestaccount'          => 'Benutzerkonto beantragen',
 	'requestaccount-text'     => '\'\'\'Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen\'\'\'. 
 
-	Bitte lies zunächst die [[{{NS:PROJECT}}:Nutzungsbedingungen|Nutzungsbedingungen]] bevor du ein Benutzerkonto beantragst.
+	Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]] bevor du ein Benutzerkonto beantragst.
 
 	Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[{{ns:special}}:Userlogin|Anmelden]]“ einloggen.',
+	'requestaccount-page'     => '{{ns:project}}:Nutzungsbedingungen',
 	'requestaccount-dup'      => '\'\'\'Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.\'\'\'',
 	'requestaccount-legend1'  => 'Benutzerkonto',
 	'requestaccount-legend2'  => 'Persönliche Informationen',
@@ -390,7 +392,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'confirmaccount-rej'     => 'Benutzerantrag wurde abgelehnt.',
 	'confirmaccount-summary' => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
 	'confirmaccount-welc'    => "'''Willkommen bei ''{{SITENAME}}''!''' Wir hoffen, dass du viele gute Informationen beisteuerst.
-	Möglicherweise möchtest Du zunächst [[{{NS:PROJECT}}:Erste Schritte|Erste Schritte]]. Nochmal: Willkommen und hab' Spaß!~",
+	Möglicherweise möchtest Du zunächst [[{{MediaWiki:Helppage}}|Erste Schritte]]. Nochmal: Willkommen und hab' Spaß!~",
 	'confirmaccount-wsum'    => 'Willkommen!',
 	'confirmaccount-email-subj' => '{{SITENAME}} Antrag auf Benutzerkonto',
 	'confirmaccount-email-body' => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
@@ -453,7 +455,7 @@ $wgConfirmAccountMessages['fr'] = array(
 	'requestaccount'              => 'Demande de compte utilisateur',
 	'requestaccount-text'         => '\'\'\'Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur.\'\'\'. 
 	
-	Assurez-vous que vous ayez déjà lu [[{{NS:PROJECT}}:Conditions d’utilisation|les conditions d’utilisation]] avant de faire votre demande de compte.
+	Assurez-vous que vous ayez déjà lu [[{{MediaWiki:Requestaccount-page}}|les conditions d’utilisation]] avant de faire votre demande de compte.
 	
 	Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur
 	[[Special:Userlogin]].',
@@ -530,7 +532,7 @@ Ce code de confirmation expire le $4.',
 	'confirmaccount-rej'          => 'La demande a été rejetée avec succès.',
 	'confirmaccount-summary'      => 'Création de la page utilisateur avec sa biographie.',
 	'confirmaccount-welc'         => '\'\'\'Bienvenue sur \'\'{{SITENAME}}\'\' !\'\'\' Nous espérons que vous contribuerez beaucoup et bien. 
-	Vous désirerez, peut-être, lire [[{{NS:PROJECT}}:Comment débuter|comment bien débuter]]. Bienvenue encore et bonne contributions.
+	Vous désirerez, peut-être, lire [[{{MediaWiki:Helppage}}|comment bien débuter]]. Bienvenue encore et bonne contributions.
 	~~~~',
 	'confirmaccount-wsum'         => 'Bienvenue !',
 	'confirmaccount-email-subj'   => '{{SITENAME}} demande de compte',
@@ -571,7 +573,7 @@ $wgConfirmAccountMessages['gl'] = array(
 	'requestaccount'              => 'Solicitar unha conta',
 	'requestaccount-text'         => '\'\'\'Complete e envíe o formulario seguinte para solicitar unha conta de usuario\'\'\'.
 
-	Asegúrese de ter lido primeiro as [[{{NS:PROJECT}}:Terms of Service|Condicións de Servizo]] antes de solicitar unha conta.
+	Asegúrese de ter lido primeiro as [[{{MediaWiki:Requestaccount-page}}|Condicións de Servizo]] antes de solicitar unha conta.
 
 	Unha vez que se aprobe a conta recibirá unha mensaxe de notificación por correo electrónico e poderá usar a conta en
 	[[Special:Userlogin]].',
@@ -659,7 +661,7 @@ Este código de confirmación caducará o $4.',
 	'confirmaccount-rej'          => 'Rexeitouse sen problemas a solicitude de conta.',
 	'confirmaccount-summary'      => 'A crear a páxina de usuario coa biografía do novo usuario.',
 	'confirmaccount-welc'         => '\'\'\'Reciba a benvida a \'\'{{SITENAME}}\'\'!\'\'\' Esperamos que contribúa moito e ben.
-	Será ben que lea [[{{NS:PROJECT}}:Getting started|Como comezar]]. De novo, reciba a nosa benvida e divírtase!',
+	Será ben que lea [[{{MediaWiki:Helppage}}|Como comezar]]. De novo, reciba a nosa benvida e divírtase!',
 	'confirmaccount-wsum'         => 'Reciba a nosa benvida!',
 	'confirmaccount-email-subj'   => 'solicitude de conta en {{SITENAME}}',
 	'confirmaccount-email-body'   => 'Aprobouse a súa solicitude de conta en {{SITENAME}}.
@@ -702,7 +704,7 @@ $wgConfirmAccountMessages['hsb'] = array(
 	'requestaccount'              => 'Wužiwarske konto sej žadać',
 	'requestaccount-text'         => '\'\'\'Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał\'\'\'. 
 
-	Prošu přečitaj najprjedy [[{{NS:PROJECT}}:Terms of Service|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
+	Prošu přečitaj najprjedy [[{{MediaWiki:Requestaccount-page}}|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
 Tak ruče kaž konto je so potwjerdźiło, dóstaš powesć přez mejlku a móžeš so pod "[[{{ns:special}}:Userlogin|Konto wutworić abo so přizjewić]]" přizjewić.',
 	'requestaccount-dup'          => '\'\'\'Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.\'\'\'',
@@ -781,7 +783,7 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-rej'          => 'Požadanje za kontom bu wotpokazane.',
 	'confirmaccount-summary'      => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
 	'confirmaccount-welc'         => '\'\'\'Witaj do \'\'{{SITENAME}}\'\'!\'\'\' Nadźijemy so, zo dodaš wjele dobrych přinoškow.
-	Snano chceš najprjedy [[Pomoc:Prěnje kroki|Prěnje kroki]] čitać. Hišće raz: Witaj a wjele wjesela! 
+	Snano chceš najprjedy [[{{MediaWiki:Helppage}}|Prěnje kroki]] čitać. Hišće raz: Witaj a wjele wjesela! 
 	[[User:Michawiki|Michawiki]] 17:08, 24 September 2007 (UTC)',
 	'confirmaccount-wsum'         => 'Witaj!',
 	'confirmaccount-email-subj'   => '{{SITENAME}} Požadanje za wužiwarskim kontom',
@@ -830,9 +832,10 @@ $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount'              => 'Gebruiker aanvragen',
 	'requestaccount-text'         => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
 	
-	Zorg ervoor dat u eerst de [[{{NS:PROJECT}}:Terms of Service|Voorwaarden]] leest voordat u een gebruiker aanvraagt.
+	Zorg ervoor dat u eerst de [[{{MediaWiki:Requestaccount-page}}|Voorwaarden]] leest voordat u een gebruiker aanvraagt.
 	
 	Als uw gebruiker is goedgekeurd, krijgt u een e-mail en daarna kunt u aanmelden via [[Special:Userlogin]].',
+	'requestaccount-page'         => '{{ns:project}}:Voorwaarden',
 	'requestaccount-dup'          => '\'\'\'Note bene: U bent al aangemeld met een geregistreede gebruiker.\'\'\'',
 	'requestaccount-legend1'      => 'Gebruiker',
 	'requestaccount-legend2'      => 'Persoonlijke informatie',
@@ -916,7 +919,7 @@ Deze bevestigingse-mail verloop op $4.',
 	'confirmaccount-rej'          => 'Gebruikersverzoek afgewezen.',
 	'confirmaccount-summary'      => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
 	'confirmaccount-welc'         => '\'\'\'Welkom bij \'\'{{SITENAME}}\'\'!\'\'\' We hopen dat u veel goed bijdragen levert. 
-	Waarschijnlijk wilt u kennis nemen van [[{{NS:PROJECT}}:Getting started|Eerste stappen]]. Nogmaals, welkom en veel plezier! 
+	Waarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina\'s]] lezen. Nogmaals, welkom en veel plezier! 
 	~~~~',
 	'confirmaccount-wsum'         => 'Welkom!',
 	'confirmaccount-email-subj'   => '{{SITENAME}} gebruikersverzoek',
@@ -975,7 +978,7 @@ $wgConfirmAccountMessages['pl'] = array(
 
 $wgConfirmAccountMessages['pms'] = array(
 	'requestaccount'              => 'Ciamé un cont',
-	'requestaccount-text'         => '\'\'\'Ch\'a completa e ch\'a manda sta domanda-sì për ciamé ch\'a-j deurbo sò cont utent\'\'\'. Per piasì, ch\'a varda d\'avej present le [[{{NS:PROJECT}}:Condission ëd servissi|Condission ëd servissi]], anans che deurb-se un cont. Na vira che \'l cont a sia aprovà, a l\'arseivrà na notìfica për pòsta eletrònica e sò cont a sarà bon da dovré a l\'adrëssa [Special:Userlogin]].',
+	'requestaccount-text'         => '\'\'\'Ch\'a completa e ch\'a manda sta domanda-sì për ciamé ch\'a-j deurbo sò cont utent\'\'\'. Per piasì, ch\'a varda d\'avej present le [[{{MediaWiki:Requestaccount-page}}|Condission ëd servissi]], anans che deurb-se un cont. Na vira che \'l cont a sia aprovà, a l\'arseivrà na notìfica për pòsta eletrònica e sò cont a sarà bon da dovré a l\'adrëssa [Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'Ch\'a ten-a present: al moment a l\'é già andrinta al sistema ën dovrand un cont registrà.\'\'\'',
 	'requestaccount-legend1'      => 'Cont utent',
 	'requestaccount-legend2'      => 'Anformassion personaj',
@@ -1040,7 +1043,7 @@ Quand ël cont a vnirà creà, soa la ciav a sarà mandà mach a st\'adrëssa-s�
 	'confirmaccount-acc'          => 'Conferma dla domanda andaita a bonfin; a l\'é dorbusse ël cont utent [[User:$1]].',
 	'confirmaccount-rej'          => 'Arfud dla domanda andait a bonfin.',
 	'confirmaccount-summary'      => 'I soma antramentr ch\'i foma na neuva pàgina utent con la biografìa dl\'utent neuv.',
-	'confirmaccount-welc'         => '\'\'Bin ëvnù/a  an \'\'{{SITENAME}}\'\'!\'\'\' I speroma d\'arsèive sò contribut e deje bon servissi. Miraco a peul ess-je d\'agiut lese la session [[{{NS:PROJECT}}:Getting started|Amprende a travajé da zero]]. N\'àotra vira, bin ëvnù/a e tante bele còse!',
+	'confirmaccount-welc'         => '\'\'Bin ëvnù/a  an \'\'{{SITENAME}}\'\'!\'\'\' I speroma d\'arsèive sò contribut e deje bon servissi. Miraco a peul ess-je d\'agiut lese la session [[{{MediaWiki:Helppage}}|Amprende a travajé da zero]]. N\'àotra vira, bin ëvnù/a e tante bele còse!',
 	'confirmaccount-wsum'         => 'Bin ëvnù/a!',
 	'confirmaccount-email-subj'   => 'Domanda dë deurbe un cont neuv ansima a {{SITENAME}}',
 	'confirmaccount-email-body'   => 'Soa domanda dë deurbe un cont neuv ansima a {{SITENAME}} a l\'é staita aprovà. Stranòm: $1 Ciav: $2 
@@ -1062,7 +1065,7 @@ $wgConfirmAccountMessages['rm'] = array(
 
 $wgConfirmAccountMessages['sk'] = array(
 	'requestaccount'              => 'Vyžiadať účet',
-	'requestaccount-text'         => '\'\'\'Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet\'\'\'. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{NS:PROJECT}}:Podmienky použitia|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].',
+	'requestaccount-text'         => '\'\'\'Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet\'\'\'. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{MediaWiki:Requestaccount-page}}|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'Pozn.: Už ste prihlásený ako zaregistrovaný používateľ.\'\'\'',
 	'requestaccount-legend1'      => 'Používateľský účet',
 	'requestaccount-legend2'      => 'Osobné informácie',
@@ -1126,7 +1129,7 @@ vyprší o $4.',
 	'confirmaccount-acc'          => 'Žiadosť o účet bola úspešne potvrdená; bol vytvorený nový používateľský účet [[User:$1]].',
 	'confirmaccount-rej'          => 'Žiadosť o účet bola úspešne odmietnutá.',
 	'confirmaccount-summary'      => 'Vytvára sa používateľská stránka s biografiou nového používateľa.',
-	'confirmaccount-welc'         => '\'\'\'Vitajte v \'\'{{GRAMMAR:lokál|{{SITENAME}}}}\'\'!\'\'\' Dúfame, že budete prispievať vo veľkom množstve a kvalitne. Pravdepodobne si budete chcieť prečítať [[{{NS:PROJECT}}:Začíname|Začíname]]. Tak ešte raz vitajte a bavte sa!',
+	'confirmaccount-welc'         => '\'\'\'Vitajte v \'\'{{GRAMMAR:lokál|{{SITENAME}}}}\'\'!\'\'\' Dúfame, že budete prispievať vo veľkom množstve a kvalitne. Pravdepodobne si budete chcieť prečítať [[{{MediaWiki:Helppage}}|Začíname]]. Tak ešte raz vitajte a bavte sa!',
 	'confirmaccount-wsum'         => 'Vitajte!',
 	'confirmaccount-email-subj'   => 'žiadosť o účet {{GRAMMAR:genitív|{{SITENAME}}}}',
 	'confirmaccount-email-body'   => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:Userlogin}}.',
@@ -1140,7 +1143,7 @@ $wgConfirmAccountMessages['yue'] = array(
 	'requestaccount'          => '請求戶口',
 	'requestaccount-text'      => '\'\'\'完成並遞交下面嘅表格去請求一個用戶戶口\'\'\'。 
 	
-	請確認你響請求一個戶口之前，先讀過[[{{NS:PROJECT}}:服務細則|服務細則]]。
+	請確認你響請求一個戶口之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。
 	
 	一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。',
 	'requestaccount-dup'      => '\'\'\'留意: 你已經登入咗做一個已經註冊咗嘅戶口。\'\'\'',
@@ -1216,7 +1219,7 @@ $3
 	'confirmaccount-rej'    => '戶口請求已經成功噉拒絕。',
 	'confirmaccount-summary' => '開緊一個新用戶擁有傳記嘅用戶頁。',
 	'confirmaccount-welc'   => "'''歡迎來到''{{SITENAME}}''！'''我哋希望你會作出更多更好的貢獻。 
-	你可能會去睇吓[[{{NS:PROJECT}}:開始|開始]]。再一次歡迎你！ 
+	你可能會去睇吓[[{{MediaWiki:Helppage}}|開始]]。再一次歡迎你！ 
 	~~~~",
 	'confirmaccount-wsum'   => '歡迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}戶口請求',
@@ -1251,7 +1254,7 @@ $wgConfirmAccountMessages['zh-hans'] = array(
 	'requestaccount'          => '请求账户',
 	'requestaccount-text'      => '\'\'\'完成并递交以下的表格去请求一个用户账户\'\'\'。 
 	
-	请确认您在请求一个账户之前，先读过[[{{NS:PROJECT}}:服务细则|服务细则]]。
+	请确认您在请求一个账户之前，先读过[[{{MediaWiki:Requestaccount-page}}|服务细则]]。
 	
 	一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:Userlogin]]中使用。',
 	'requestaccount-dup'      => '\'\'\'注意: 您已经登入成一个已注册的账户。\'\'\'',
@@ -1327,7 +1330,7 @@ $3
 	'confirmaccount-rej'    => '账户请求已经成功拒绝。',
 	'confirmaccount-summary' => '正在创建一个新用户拥有传记的用户页面。',
 	'confirmaccount-welc'   => "'''欢迎来到''{{SITENAME}}''！'''我们希望您会作出更多更好的贡献。 
-	您可能会去参看[[{{NS:PROJECT}}:开始|开始]]。再一次欢迎你！ 
+	您可能会去参看[[{{MediaWiki:Helppage}}|开始]]。再一次欢迎你！ 
 	~~~~",
 	'confirmaccount-wsum'   => '欢迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}账户请求',
@@ -1362,7 +1365,7 @@ $wgConfirmAccountMessages['zh-hant'] = array(
 	'requestaccount'          => '請求帳戶',
 	'requestaccount-text'      => '\'\'\'完成並遞交以下的表格去請求一個用戶帳戶\'\'\'。 
 	
-	請確認您在請求一個帳戶之前，先讀過[[{{NS:PROJECT}}:服務細則|服務細則]]。
+	請確認您在請求一個帳戶之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。
 	
 	一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:Userlogin]]中使用。',
 	'requestaccount-dup'      => '\'\'\'注意: 您已經登入成一個已註冊的帳戶。\'\'\'',
@@ -1438,7 +1441,7 @@ $3
 	'confirmaccount-rej'    => '帳戶請求已經成功拒絕。',
 	'confirmaccount-summary' => '正在創建一個新用戶擁有傳記的用戶頁面。',
 	'confirmaccount-welc'   => "'''歡迎來到''{{SITENAME}}''！'''我們希望您會作出更多更好嘅貢獻。 
-	您可能會去參看[[{{NS:PROJECT}}:開始|開始]]。再一次歡迎你！ 
+	您可能會去參看[[{{MediaWiki:Helppage}}|開始]]。再一次歡迎你！ 
 	~~~~",
 	'confirmaccount-wsum'   => '歡迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}帳戶請求',
