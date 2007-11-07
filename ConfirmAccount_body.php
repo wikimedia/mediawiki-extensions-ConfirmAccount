@@ -672,20 +672,24 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$form .= "<p>".wfMsgExt( 'confirmaccount-confirm', array('parse') )."</p>\n";
 		$form .= "<table cellpadding='5'><tr>";
-		$form .= "<td>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept', array('id' => 'submitCreate') );
+		$form .= "<td>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept', 
+			array('id' => 'submitCreate', 'onClick' => 'document.getElementById("wpComment").style.display="block"') );
 		$form .= ' '.Xml::label( wfMsg('confirmaccount-create'), 'submitCreate' )."</td>\n";
-		$form .= "<td>".Xml::radio( 'wpSubmitType', 'reject', $this->submitType=='reject', array('id' => 'submitDeny') );
+		$form .= "<td>".Xml::radio( 'wpSubmitType', 'reject', $this->submitType=='reject', 
+			array('id' => 'submitDeny', 'onClick' => 'document.getElementById("wpComment").style.display="block"') );
 		$form .= ' '.Xml::label( wfMsg('confirmaccount-deny'), 'submitDeny' )."</td>\n";
-		$form .= "<td>".Xml::radio( 'wpSubmitType', 'hold', $this->submitType=='hold', array('id' => 'submitHold') );
+		$form .= "<td>".Xml::radio( 'wpSubmitType', 'hold', $this->submitType=='hold', 
+			array('id' => 'submitHold', 'onClick' => 'document.getElementById("wpComment").style.display="block"') );
 		$form .= ' '.Xml::label( wfMsg('confirmaccount-hold'), 'submitHold' )."</td>\n";
-		$form .= "<td>".Xml::radio( 'wpSubmitType', 'spam', $this->submitType=='spam', array('id' => 'submitSpam') );
+		$form .= "<td>".Xml::radio( 'wpSubmitType', 'spam', $this->submitType=='spam', 
+			array('id' => 'submitSpam', 'onClick' => 'document.getElementById("wpComment").style.display="none"') );
 		$form .= ' '.Xml::label( wfMsg('confirmaccount-spam'), 'submitSpam' )."</td>\n";
 		$form .= "</tr></table>";
 
-		$form .= "<p>".wfMsgHtml('confirmaccount-reason')."</p>\n";
-		$form .= "<p><textarea tabindex='1' name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%'>" .
+		$form .= "<div id=wpComment><p>".wfMsgHtml('confirmaccount-reason')."</p>\n";
+		$form .= "<p><textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
 			htmlspecialchars($this->reason) .
-			"</textarea></p>\n";
+			"</textarea></p></div>\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
 		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedUrl() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
