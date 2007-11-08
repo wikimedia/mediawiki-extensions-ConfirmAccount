@@ -854,7 +854,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$u = User::newFromName( $row->acr_name, 'creatable' );
 			$u->setEmail( $row->acr_email );
 			# Pointless without a summary...
-			if( $row->acr_held || $row->acr_deleted ) {
+			if( $row->acr_held || ($row->acr_deleted && $row->acr_deleted !='f') ) {
 				$error = wfMsg( 'confirmaccount-canthold' );
 				$this->showForm( $error );
 				return false;
@@ -872,7 +872,7 @@ class ConfirmAccountsPage extends SpecialPage
 				array( 'acr_id' => $this->acrID, 'acr_held IS NULL', 'acr_deleted' => 0 ), 
 					__METHOD__ );
 			# Do not send multiple times
-			if( !$row->acr_held && !$row->acr_deleted ) {
+			if( !$row->acr_held && !($row->acr_deleted && $row->acr_deleted !='f') ) {
 				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
 						wfMsgExt( 'confirmaccount-email-body5', array('parsemag'), $u->getName(), $this->reason ) );
 				if( WikiError::isError( $result ) ) {
