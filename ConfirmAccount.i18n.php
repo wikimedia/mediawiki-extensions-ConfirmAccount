@@ -156,10 +156,11 @@ $wgConfirmAccountMessages['ar'] = array(
 	
 	متى تمت الموافقة على الحساب, سيتم إرسال رسالة إخطار إليك و الحساب سيصبح قابلا للاستخدام في 
 	[[Special:Userlogin]].',
+	'requestaccount-page'         => '{{ns:project}}:شروط الخدمة',
 	'requestaccount-dup'          => '\'\'\'ملاحظة: أنت مسجل الدخول بالفعل بحساب مسجل.\'\'\'',
-	'requestaccount-legend1'      => 'حساب المستخدم:',
-	'requestaccount-legend2'      => 'معلومات شخصية:',
-	'requestaccount-legend3'      => 'معلومات أخرى:',
+	'requestaccount-legend1'      => 'حساب المستخدم',
+	'requestaccount-legend2'      => 'معلومات شخصية',
+	'requestaccount-legend3'      => 'معلومات أخرى',
 	'requestaccount-acc-text'     => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب. من فضلك استجب عن طريق الضغط 
 	على وصلة التأكيد المعطاة في البريد الإلكتروني. أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
 	'requestaccount-ext-text'     => 'المعلومات التالية سرية و سيتم استخدامها فقط لهذا الطلب. 
@@ -213,15 +214,16 @@ $3
 	'confirmaccount-back'         => 'عرض قائمة الحسابات قيد الانتظار',
 	'confirmaccount-back2'        => 'عرض قائمة الحسابات المرفوضة حديثا',
 	'confirmaccount-name'         => 'اسم المستخدم',
-	'confirmaccount-real'         => 'الاسم',
+	'confirmaccount-real'         => 'الاسم:',
 	'confirmaccount-real-q'       => 'الاسم',
-	'confirmaccount-email'        => 'البريد الإلكتروني',
+	'confirmaccount-email'        => 'البريد الإلكتروني:',
 	'confirmaccount-email-q'      => 'البريد الإلكتروني',
-	'confirmaccount-bio'          => 'السيرة',
+	'confirmaccount-bio'          => 'السيرة الشخصية:',
 	'confirmaccount-bio-q'        => 'السيرة الشخصية',
 	'confirmaccount-attach'       => 'الاستكمال/السيرة الذاتية:',
 	'confirmaccount-notes'        => 'ملاحظات إضافية:',
 	'confirmaccount-urls'         => 'قائمة مواقع الويب:',
+	'confirmaccount-none-p'       => '(غير متوفرة)',
 	'confirmaccount-review'       => 'قبول/رفض',
 	'confirmaccount-confirm'      => 'استخدم الأزرار بالأسفل لقبول هذا الطلب أو رفضه.',
 	'confirmaccount-econf'        => '(تم تأكيده)',
@@ -235,12 +237,12 @@ $3
 	'confirmaccount-ip'           => 'عنوان الأيبي:',
 	'confirmaccount-submit'       => 'تأكيد',
 	'confirmaccount-needreason'   => 'يجب أن تحدد سببا في صندوق التعليق بالأسفل.',
+	'confirmaccount-canthold'     => 'هذا الطلب بالفعل إما قيد الانتظار أو محذوف.',
 	'confirmaccount-acc'          => 'طلب الحساب تم تأكيده بنجاح؛ أنشأ حسابا جديدا [[User:$1]].',
 	'confirmaccount-rej'          => 'طلب الحساب تم رفضه بنجاح.',
 	'confirmaccount-summary'      => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.',
 	'confirmaccount-welc'         => '\'\'\'مرحبا إلى \'\'{{SITENAME}}\'\'!\'\'\' نأمل أن تساهم كثيرا وجيدا. 
-	على الأرجح ستريد قراءة [[{{MediaWiki:Helppage}}|البداية]]. مجددا، مرحبا و استمتع! 
-	<nowiki>~~~~</nowiki>',
+	على الأرجح ستريد قراءة [[{{MediaWiki:Helppage}}|البداية]]. مجددا، مرحبا واستمتع!',
 	'confirmaccount-wsum'         => 'مرحبا!',
 	'confirmaccount-email-subj'   => '{{SITENAME}} طلب حساب',
 	'confirmaccount-email-body'   => 'طلبك لحساب تمت الموافقة عليه في {{SITENAME}}.
@@ -570,6 +572,43 @@ $2
 Ceci permet d’être sur la liste des contacts du site, si vous désirez en savoir plus sur les règles concernant les comptes.',
 );
 
+$wgConfirmAccountMessages['frp'] = array(
+	'requestaccount'              => 'Demanda de compto utilisator',
+	'requestaccount-text'         => '\'\'\'Rempléd et emmandâd lo formulèro ce-desot por demandar un compto utilisator.\'\'\'
+	
+	Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto.
+	
+	Un côp que lo compto est accèptâ, vos recevréd un mèl vos notifient que voutron compto porrat étre utilisâ dessus
+	[[Special:Userlogin]].',
+	'requestaccount-page'         => '{{ns:project}}:Condicions d’usâjo',
+	'requestaccount-dup'          => '\'\'\'Nota : vos éte ja sur una sèssion avouéc un compto enregistrâ.\'\'\'',
+	'requestaccount-legend1'      => 'Compto utilisator',
+	'requestaccount-legend2'      => 'Enformacions a sè',
+	'requestaccount-legend3'      => 'Ôtres enformacions',
+	'requestaccount-acc-text'     => 'Un mèssâjo de confirmacion serat emmandâ a voutra adrèce èlèctronica un côp que la demanda arat étâ emmandâ. Dens lo mèl reçu, clicâd sur lo lim corrèspondent a la confirmacion de voutra demanda. Et pués, un mot de pâssa serat emmandâ per mèl quand voutron compto serat crèâ.',
+	'requestaccount-ext-text'     => 'L’enformacion siuventa réste privâ et porrat étre utilisâ ren que por ceta requéta. 
+	Vos avéd la possibilitât de listar des contactes tâl qu’un numerô de tèlèfone por obtegnir una assistance por confirmar voutra identitât.',
+	'requestaccount-bio-text'     => 'Voutra biografia serat betâ per dèfôt sur voutra pâge utilisator. Tâchiéd d’y betar voutres recomandacions. Assurâd-vos que vos pouede difusar sen crenta les enformacions. Voutron nom pôt étre changiê en utilisent [[Special:Preferences]].',
+	'requestaccount-real'         => 'Veré nom :',
+	'requestaccount-same'         => '(nom figurent dens voutron ètat civilo)',
+	'requestaccount-email'        => 'Adrèce èlèctronica :',
+	'requestaccount-bio'          => 'Biografia a sè :',
+	'requestaccount-attach'       => 'CV/Rèsumâ (u chouèx) :',
+	'requestaccount-notes'        => 'Notes suplèmentères :',
+	'requestaccount-urls'         => 'Lista des setos Malyâjo. S’y at plusiors, sèparâd-los per un sôt de legne :',
+	'requestaccount-agree'        => 'Vos dête cèrtifiar que voutron veré nom est corrèct et que vos accèptâd les condicions d’usâjo du sèrviço.',
+	'requestaccount-inuse'        => 'Lo nom d’utilisator est ja utilisâ dens una requéta en cors d’aprobacion.',
+	'requestaccount-tooshort'     => 'Voutra biografia dêt avêr u muens {{PLURAL:$1|$1 mot|$1 mots}}.',
+	'requestaccount-exts'         => 'Lo tèlèchargement des fichiérs juents est pas pèrmês.',
+	'requestaccount-resub'        => 'Voutron fichiér de CV/rèsumâ dêt étre sèlèccionâ un côp de ples por des rêsons de sècuritât. Lèssiéd lo champ vouedo se vos dèsirâd pas més l’apondre.',
+	'requestaccount-tos'          => 'J/y’é liesu et j/y’accèpto de rèspèctar los tèrmos regardent les [[{{ns:project}}:Condicions d’usâjo|condicions d’usâjo]] des sèrviços de {{SITENAME}}. 
+	Lo nom que j/y’é endicâ dens lo champ « Veré nom » est verément mon nom pèrsonèl.',
+	'requestaccount-submit'       => 'Demanda de compto utilisator.',
+	'requestaccount-sent'         => 'Voutra demanda de compto utilisator at étâ emmandâ avouéc reusséta et at étâ betâ dens la lista d’atenta d’aprobacion.',
+	'request-account-econf'       => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ tâla qu’el est dens voutra demanda de compto.',
+	'requestaccount-email-subj'   => '{{SITENAME}} confirmacion d’adrèce de mèl.',
+);
+
 $wgConfirmAccountMessages['gl'] = array(
 	'requestaccount'              => 'Solicitar unha conta',
 	'requestaccount-text'         => '\'\'\'Complete e envíe o formulario seguinte para solicitar unha conta de usuario\'\'\'.
@@ -705,9 +744,10 @@ $wgConfirmAccountMessages['hsb'] = array(
 	'requestaccount'              => 'Wužiwarske konto sej žadać',
 	'requestaccount-text'         => '\'\'\'Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał\'\'\'. 
 
-	Prošu přečitaj najprjedy [[{{NS:PROJECT}}:Terms of Service|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
+	Prošu přečitaj najprjedy [[{{MediaWiki:Requestaccount-page}}|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
-Tak ruče kaž konto je so potwjerdźiło, dóstaš powesć přez mejlku a móžeš so pod "[[{{ns:special}}:Userlogin|Konto wutworić abo so přizjewić]]" přizjewić.',
+Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a móžeš so pod "[[{{ns:special}}:Userlogin|Konto wutworić abo so přizjewić]]" přizjewić.',
+	'requestaccount-page'         => '{{ns:project}}:Wužiwanske wuměnjenja',
 	'requestaccount-dup'          => '\'\'\'Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.\'\'\'',
 	'requestaccount-legend1'      => 'Wužiwarske konto:',
 	'requestaccount-legend2'      => 'Wosobinske informacije:',
@@ -821,7 +861,6 @@ $2
 
 Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš wjace wo prawidłach za wužiwarske konta wědźeć.',
 );
-
 
 $wgConfirmAccountMessages['la'] = array(
 	'requestaccount-real'         => 'Nomen verum:',
@@ -965,7 +1004,7 @@ Er kunnen contacteerlijsten zijn die u kan gebruiken als u meer wil te weten kom
 
 $wgConfirmAccountMessages['oc'] = array(
 	'requestaccount'              => 'Demanda de compte d\'utilizaire',
-	'requestaccount-text'         => '\'\'\'Emplenatz e mandatz lo formulari çai jos per demandar un compte d’utilizaire.\'\'\'. Asseguratz-vos qu\'avètz ja legit [[{{NS:PROJECT}}:Condicions d’utilizacion|las condicions d’utilizacion]] abans de far vòstra demanda de compte. Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus [[Special:Userlogin]].',
+	'requestaccount-text'         => '\'\'\'Emplenatz e mandatz lo formulari çai jos per demandar un compte d’utilizaire.\'\'\'. Asseguratz-vos qu\'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte. Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus [[Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'Nòta : Sètz ja sus una session amb un compte enregistrat.\'\'\'',
 	'requestaccount-legend1'      => 'Compte d\'utilizaire:',
 	'requestaccount-legend2'      => 'Informacions personalas',
@@ -1027,7 +1066,7 @@ $wgConfirmAccountMessages['oc'] = array(
 	'confirmaccount-acc'          => 'La demanda de compte es estada confirmada amb succès ; creacion de l\'utilizaire novèl [[User:$1]].',
 	'confirmaccount-rej'          => 'La demanda es estada regetada amb succès.',
 	'confirmaccount-summary'      => 'Creacion de la pagina d\'utilizaire amb sa biografia.',
-	'confirmaccount-welc'         => '\'\'\'Benvenguda sus \'\'{{SITENAME}}\'\' !\'\'\' Esperam que contribuiretz fòrça e plan. Desiraratz, benlèu, legir [[{{NS:PROJECT}}:Cossí amodar|cossí plan amodar]]. Benvenguda encara e bonas contribucions. [[User:Cedric31|Cedric31]] 09:47, 9 November 2007 (UTC)',
+	'confirmaccount-welc'         => '\'\'\'Benvenguda sus \'\'{{SITENAME}}\'\' !\'\'\' Esperam que contribuiretz fòrça e plan. Desiraratz, benlèu, legir [[{{NS:PROJECT}}:Cossí amodar|cossí plan amodar]]. Benvenguda encara e bona contribucions.',
 	'confirmaccount-wsum'         => 'Benvenguda !',
 	'confirmaccount-email-subj'   => '{{SITENAME}} demanda de compte',
 	'confirmaccount-email-body'   => 'Vòstra demanda de compte es estada acceptada sus {{SITENAME}}. Nom del compte d\'utilizaire : $1 Senhal : $2 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:Userlogin}}.',
