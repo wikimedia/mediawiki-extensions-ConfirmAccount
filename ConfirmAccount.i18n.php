@@ -608,6 +608,16 @@ $wgConfirmAccountMessages['frp'] = array(
 	'requestaccount-sent'         => 'Voutra demanda de compto utilisator at étâ emmandâ avouéc reusséta et at étâ betâ dens la lista d’atenta d’aprobacion.',
 	'request-account-econf'       => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ tâla qu’el est dens voutra demanda de compto.',
 	'requestaccount-email-subj'   => '{{SITENAME}} confirmacion d’adrèce de mèl.',
+	'requestaccount-email-body'   => 'Quârqu’un, probâblament vos, at formulâ, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » dessus {{SITENAME}} avouéc ceta adrèce de mèl.
+
+Por confirmar que cél compto dessus {{SITENAME}} est verément a vos, vos éte preyê d’uvrir ceti lim dens voutron navigator Malyâjo :
+
+$3
+
+Voutron mot de pâssa vos serat emmandâ solament se voutron compto est crèâ. Se tâl ére *pas* lo câs, utilisâd pas ceti lim. 
+Ceti code de confirmacion èxpire lo $4.',
+	'acct_request_throttle_hit'   => 'Dèsolâ, vos éd ja demandâ $1 comptos. Vos pouede pas més nen fâre la demanda.',
+	'requestaccount-loginnotice'  => 'Por obtegnir un compto utilisator, vos dête nen fâre la \'\'\'[[Special:RequestAccount|demanda]]\'\'\'.',
 );
 
 $wgConfirmAccountMessages['gl'] = array(
