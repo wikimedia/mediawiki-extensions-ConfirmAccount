@@ -628,6 +628,7 @@ $wgConfirmAccountMessages['gl'] = array(
 
 	Unha vez que se aprobe a conta recibirá unha mensaxe de notificación por correo electrónico e poderá usar a conta en
 	[[Special:Userlogin]].',
+	'requestaccount-page'         => '{{ns:project}}:Condicións de Servizo',
 	'requestaccount-dup'          => '\'\'\'Nota: Xa está no sistema cunha conta rexistrada.\'\'\'',
 	'requestaccount-legend1'      => 'Conta de usuario',
 	'requestaccount-legend2'      => 'Información persoal',
@@ -683,8 +684,8 @@ Este código de confirmación caducará o $4.',
 	'confirmaccount-none'         => 'Non existen solicitudes de contas pendentes neste momento.',
 	'confirmaccount-none2'        => 'Non existen solicitudes de contas rexeitadas recentemente neste momento.',
 	'confirmaccount-badid'        => 'Non existe unha solicitude pendente que corresponda co ID fornecido. Pode que xa fose examinada.',
-	'confirmaccount-back'         => 'Ver a lista de contas pendentes',
-	'confirmaccount-back2'        => 'Ver a lista de contas rexeitadas recentemente',
+	'confirmaccount-back'         => 'Ver a listaxe de contas pendentes',
+	'confirmaccount-back2'        => 'Ver a listaxe de contas rexeitadas recentemente',
 	'confirmaccount-name'         => 'Nome de usuario',
 	'confirmaccount-real'         => 'Nome:',
 	'confirmaccount-real-q'       => 'Nome',
@@ -748,7 +749,7 @@ Poden existir listaxes de contacto no sitio que pode usar se quere saber máis a
 
 $2
 
-Poden existir listas de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
+Poden existir listaxes de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
 );
 
 $wgConfirmAccountMessages['hsb'] = array(
