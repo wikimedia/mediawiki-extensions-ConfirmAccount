@@ -668,7 +668,7 @@ $3
 
 Se se crea a conta, só vostede recibirá o contrasinal. Se *non* se trata de vostede, non siga a ligazón.
 Este código de confirmación caducará o $4.',
-	'acct_request_throttle_hit'   => 'Perdón, xa solicitou $1 contas. Non pode facer máis solicitudes.',
+	'acct_request_throttle_hit'   => 'Sentímolo, xa solicitou $1 contas. Non pode facer máis solicitudes.',
 	'requestaccount-loginnotice'  => 'Para obter unha conta de usuario ten que \'\'\'[[Special:RequestAccount|solicitar unha]]\'\'\'.',
 	'confirmaccounts'             => 'Confirmar solicitudes de contas',
 	'confirmaccount-list'         => 'Abaixo aparece unha listaxe de contas pendentes de aprobación.
@@ -734,12 +734,12 @@ $3
 
 Por razóns de seguranza terá que mudar o contrasinal a primeira vez que se rexistre. Para rexistrarse,
 vaia a {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3'  => 'Perdón, pero a súa solicitude de conta $1 foi rexeitada en {{SITENAME}}.
+	'confirmaccount-email-body3'  => 'Sentímolo, pero a súa solicitude de conta $1 foi rexeitada en {{SITENAME}}.
 
 Isto pode deberse a varias causas. Pode que non enchese o formulario correctamente, non respondese na extensión
 adecuada ou non cumprise con algún outro criterio. Pode que existan listaxes de contacto no sitio que poida
 usar se quere saber máis acerca da política de contas de usuario.',
-	'confirmaccount-email-body4'  => 'Perdón, pero a súa solicitude de conta "$1" foi rexeitada en {{SITENAME}}.
+	'confirmaccount-email-body4'  => 'Sentímolo, pero a súa solicitude de conta "$1" foi rexeitada en {{SITENAME}}.
 
 $2
 
