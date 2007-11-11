@@ -613,7 +613,7 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$wgOut->addWikiText( wfMsg( "confirmaccount-text" ) );
 		
-		if( $this->showRejects ) {
+		if( $row->acr_rejected ) {
 			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
 			$wgOut->addHTML('<b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), 
 				User::whoIs($row->acr_user), $time ).'</b>');
@@ -932,7 +932,9 @@ class ConfirmAccountsPage extends SpecialPage
 			return false;
 
 		$dbw = wfGetDB( DB_SLAVE );
-		$row = $dbw->selectRow( 'account_requests', '*', array('acr_id' => $this->acrID ), __METHOD__ );
+		$row = $dbw->selectRow( 'account_requests', '*', 
+			array('acr_id' => $this->acrID ), 
+			__METHOD__ );
 
 		return $row;
 	}
