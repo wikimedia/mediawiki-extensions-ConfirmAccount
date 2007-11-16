@@ -991,7 +991,7 @@ class ConfirmAccountsPage extends SpecialPage
 					$path = $store->filePath( $key );
 					if( $path && file_exists($path) ) {
 						$transaction->addCommit( FSTransaction::DELETE_FILE, $path );
-						$dbw->query( "DELETE FROM $tbl_arch WHERE acr_id = {$row->acr_id}" );
+						$dbw->query( "DELETE FROM $accountrequests WHERE acr_id = {$row->acr_id}" );
 					}
 				}
 			}
