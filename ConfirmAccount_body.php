@@ -573,6 +573,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$this->mUsername = $wgRequest->getText( 'wpNewName' );
 		# For viewing rejects
 		$this->showRejects = $wgRequest->getBool( 'wpShowRejects' );
+		# Held requests hidden by default
+		$this->showHeld = $wgRequest->getBool( 'wpShowHeld' );
 
 		$this->submitType = $wgRequest->getVal( 'wpSubmitType' );
 		$this->reason = $wgRequest->getText( 'wpReason' );
@@ -961,8 +963,14 @@ class ConfirmAccountsPage extends SpecialPage
 		if( $this->showRejects ) {
 			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) );
 		} else {
-			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back2' ),
-				wfArrayToCGI( array('wpShowRejects' => 1 ) ) );
+			if( $this->showHeld ) {
+				$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) ) . ' / ';
+			} else {
+				$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-showheld' ),
+					wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) ) . ' / ';
+			}
+			$listLink .= $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back2' ),
+				wfArrayToCGI( array( 'wpShowRejects' => 1 ) ) );
 		}
 		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
 
@@ -998,7 +1006,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$transaction->commit();
 		}
 
-		$pager = new ConfirmAccountsPager( $this, array(), $this->showRejects );
+		$pager = new ConfirmAccountsPager( $this, array(), $this->showRejects, $this->showHeld );
 			
 		if ( $pager->getNumRows() ) {
 			if( $this->showRejects )
@@ -1077,13 +1085,16 @@ class ConfirmAccountsPage extends SpecialPage
 class ConfirmAccountsPager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
 
-	function __construct( $form, $conds = array(), $rejects=false ) {
+	function __construct( $form, $conds = array(), $rejects=false, $showHeld=false ) {
 		$this->mForm = $form;
 		$this->mConds = $conds;
-		if( $rejects )
+		if( $rejects ) {
 			$this->mConds['acr_deleted'] = 1;
-		else
+		} else {
 			$this->mConds['acr_deleted'] = 0;
+			if( !$showHeld )
+				$this->mConds[] = 'acr_held IS NULL';
+		}
 		$this->rejects = $rejects;
 		parent::__construct();
 		# Treat 20 as the default limit, since each entry takes up 5 rows.
