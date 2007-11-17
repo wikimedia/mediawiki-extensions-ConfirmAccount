@@ -40,7 +40,7 @@ $wgConfirmAccountMessages['en'] = array(
 	'requestaccount-exts'     => 'Attachment file type is disallowed.',
 	'requestaccount-resub'    => 'Your CV/resume file must be re-selected for security reasons. Leave the field blank 
 	if you no longer want to include one.',
-	'requestaccount-tos'      => 'I have read and agree to abide by the [[{{NS:PROJECT}}:Terms of Service|Terms of Service]] of {{SITENAME}}. 
+	'requestaccount-tos'      => 'I have read and agree to abide by the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] of {{SITENAME}}. 
 	The name I have specified under "Real name" is in fact my own real name.',
 	'requestaccount-submit'   => 'Request account',
 	'requestaccount-sent'     => 'Your account request has successfully been sent and is now pending review.',
@@ -331,7 +331,7 @@ $wgConfirmAccountMessages['de'] = array(
 	'requestaccount-exts'     => 'Der Dateityp des Anhangs ist nicht erlaubt.',
 	'requestaccount-resub'    => 'Die Datei mit deinem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
 	Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
-	'requestaccount-tos'      => 'Ich habe die [[{{NS:PROJECT}}:Benutzungsbedingungen|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
+	'requestaccount-tos'      => 'Ich habe die [[{{MediaWiki:Requestaccount-page}}|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
 	Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
 	'requestaccount-submit'   => 'Benutzerkonto beantragen',
 	'requestaccount-sent'     => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
