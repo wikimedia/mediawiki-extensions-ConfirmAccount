@@ -471,7 +471,7 @@ $wgConfirmAccountMessages['fr'] = array(
 	'requestaccount-legend3'      => 'Autres informations',
 	'requestaccount-acc-text'     => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
 	'requestaccount-ext-text'     => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
-	Vous avez la possibilité de lister des contact tel qu’un numéro de téléphone pour obtenir une assistance pour confirmer votre identité.',
+	Vous avez la possibilité de lister des contacts tels qu’un numéro de téléphone pour obtenir une assistance pour confirmer votre identité.',
 	'requestaccount-bio-text'     => 'Votre biographie sera mise par défaut sur votre page utilisateur. Essayez d’y mettre vos recommandations. Assurez-vous que vous pouvez diffuser sans crainte les informations. Votre nom peut être changé en utilisant [[Special:Preferences]].',
 	'requestaccount-real'         => 'Nom réel :',
 	'requestaccount-same'         => '(nom figurant dans votre état civil)',
@@ -503,14 +503,13 @@ Ce code de confirmation expire le $4.',
 	'confirmaccounts'             => 'Demande de confirmation de comptes',
 	'confirmaccount-list'         => 'Voici, ci-dessous, la liste des comptes en attente d’approbation. Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront supprimés de cette même liste.',
 	'confirmaccount-list2'        => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
-	'confirmaccount-text'         => 'Voici une demande en cours pour un compte utilisateur sur \'\'\'{{SITENAME}}\'\'\'. Attention, vérifier et, si nécessaire, confirmez toutes les information ci-dessous. Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres noms.
+	'confirmaccount-text'         => 'Voici une demande en cours pour un compte utilisateur sur \'\'\'{{SITENAME}}\'\'\'. Attention, vérifiez et, si nécessaire, confirmez toutes les informations ci-dessous. Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres noms.
 
 	Si vous quittez cette page sans confirmer ou rejeter cette demande, elle sera toujours mise en attente.',
-	'confirmaccount-none'         => 'Il n’y a pas actuellement de demande d’approbation en cours.',
-	'confirmaccount-none2'        => 'Il n’y a pas actuellement de rejet de demande de comptes.',
 	'confirmaccount-badid'        => 'Il n’y a aucune demande en cours correspondant à l’ID indiqué. Il est possible qu‘il ait subi une maintenance.',
 	'confirmaccount-back'         => 'Voir la liste des demandes en cours',
 	'confirmaccount-back2'        => 'Voir la liste des comptes rejetés récemment.',
+	'confirmaccount-showheld'     => 'Voir la liste des comptes réservés en cours de traitement',
 	'confirmaccount-name'         => 'Nom d’utilisateur',
 	'confirmaccount-real'         => 'Nom :',
 	'confirmaccount-real-q'       => 'Nom',
