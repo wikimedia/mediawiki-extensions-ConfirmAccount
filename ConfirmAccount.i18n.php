@@ -152,11 +152,11 @@ There may be contact lists on site that you can use if you want to know more abo
 
 $wgConfirmAccountMessages['ar'] = array(
 	'requestaccount'              => 'طلب حساب',
-	'requestaccount-text'         => '\'\'\'أكمل و ابعث الاستمارة التالية لطلب حساب\'\'\'. 
+	'requestaccount-text'         => '\'\'\'أكمل وابعث الاستمارة التالية لطلب حساب\'\'\'. 
 	
 	تأكد أولا من قراءة [[{{MediaWiki:Requestaccount-page}}|شروط الخدمة]] قبل طلب حساب.
 	
-	متى تمت الموافقة على الحساب, سيتم إرسال رسالة إخطار إليك و الحساب سيصبح قابلا للاستخدام في 
+	متى تمت الموافقة على الحساب، سيتم إرسال رسالة إخطار إليك والحساب سيصبح قابلا للاستخدام في 
 	[[Special:Userlogin]].',
 	'requestaccount-page'         => '{{ns:project}}:شروط الخدمة',
 	'requestaccount-dup'          => '\'\'\'ملاحظة: أنت مسجل الدخول بالفعل بحساب مسجل.\'\'\'',
@@ -165,7 +165,7 @@ $wgConfirmAccountMessages['ar'] = array(
 	'requestaccount-legend3'      => 'معلومات أخرى',
 	'requestaccount-acc-text'     => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب. من فضلك استجب عن طريق الضغط 
 	على وصلة التأكيد المعطاة في البريد الإلكتروني. أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
-	'requestaccount-ext-text'     => 'المعلومات التالية سرية و سيتم استخدامها فقط لهذا الطلب. 
+	'requestaccount-ext-text'     => 'المعلومات التالية سرية وسيتم استخدامها فقط لهذا الطلب. 
 ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة في تأكيد الهوية.',
 	'requestaccount-bio-text'     => 'سيرتك الشخصية ستعرض كالمحتوى الافتراضي لصفحة المستخدم الخاصة بك. حاول تضمين 
 	أية شهادات. تأكد من ارتياحك لنشر هذه المعلومات. اسمك يمكن تغييره بواسطة [[Special:Preferences]].',
@@ -184,11 +184,11 @@ $wgConfirmAccountMessages['ar'] = array(
 	لو كنت لم تعد تريد إضافة واحد.',
 	'requestaccount-tos'          => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.',
 	'requestaccount-submit'       => 'طلب حساب',
-	'requestaccount-sent'         => 'طلبك للحساب تم إرساله بنجاح و هو بانتظار المراجعة الآن.',
+	'requestaccount-sent'         => 'طلبك للحساب تم إرساله بنجاح وهو بانتظار المراجعة الآن.',
 	'request-account-econf'       => 'عنوان بريدك الإلكتروني تم تأكيده وسيتم عرضه كما هو في 
 طلب حسابك.',
 	'requestaccount-email-subj'   => '{{SITENAME}} تأكيد عنوان البريد الإلكتروني من',
-	'requestaccount-email-body'   => 'شخص ما، على الأرجح أنت من عنوان الأيبي $1, طلب حساب "$2" بعنوان البريد الإلكتروني هذا على {{SITENAME}}.
+	'requestaccount-email-body'   => 'شخص ما، على الأرجح أنت من عنوان الأيبي $1، طلب حساب "$2" بعنوان البريد الإلكتروني هذا على {{SITENAME}}.
 
 لتأكيد أن هذا الحساب ينتمي إليك فعلا على {{SITENAME}}، افتح هذه الوصلة في متصفحك:
 
@@ -200,18 +200,16 @@ $3
 	'requestaccount-loginnotice'  => 'للحصول على حساب، يجب عليك \'\'\'[[Special:RequestAccount|طلب واحد]]\'\'\'.',
 	'confirmaccounts'             => 'تأكيد طلبات الحسابات',
 	'confirmaccount-list'         => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار. 
-	الحسابات التي تمت الموافقة عليها سيتم إنشاؤها و إزالتها من هذه القائمة. الحسابات المرفوضة سيتم ببساطة حذفها من هذه 
+	الحسابات التي تمت الموافقة عليها سيتم إنشاؤها وإزالتها من هذه القائمة. الحسابات المرفوضة سيتم ببساطة حذفها من هذه 
 القائمة.',
-	'confirmaccount-list2'        => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا و التي ربما يتم حذفها تلقائيا 
-	عندما يكون عمرها عدة أيام. مازال بالإمكان الموافقة عليهم كحسابات، و لكنك ربما ترغب في استشارة الإداري الرافض 
+	'confirmaccount-list2'        => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا والتي ربما يتم حذفها تلقائيا 
+	عندما يكون عمرها عدة أيام. مازال بالإمكان الموافقة عليهم كحسابات، ولكنك ربما ترغب في استشارة الإداري الرافض 
 قبل فعل هذا.',
 	'confirmaccount-text'         => 'هذا طلب حساب قيد الانتظار في \'\'\'{{SITENAME}}\'\'\'. 
-	راجعه بحرص و لو دعت الحاجة, أكد, كل المعلومات بالأسفل. لاحظ أنه يمكنك اختيار إنشاء الحساب باسم مستخدم آخر 
-	. استخدم هذا فقط لتجنب 	الاصطدامات مع الأسماء الأخرى.
+	راجعه بحرص و لو دعت الحاجة، أكد، كل المعلومات بالأسفل. لاحظ أنه يمكنك اختيار إنشاء الحساب باسم مستخدم آخر 
+	. استخدم هذا فقط لتجنب	الاصطدامات مع الأسماء الأخرى.
 	
-لو تركت ببساطة هذه الصفحة بدون تأكيد أو رفض الحساب, سيبقى قيد الانتظار.',
-	'confirmaccount-none'         => 'لا توجد حاليا طلبات حساب قيد الانتظار.',
-	'confirmaccount-none2'        => 'لا توجد حاليا طلبات حسابات مرفوضة حديثا.',
+لو تركت ببساطة هذه الصفحة بدون تأكيد أو رفض الحساب، سيبقى قيد الانتظار.',
 	'confirmaccount-badid'        => 'لا يوجد طلب قيد الانتظار يوافق الرقم المعطى. ربما يكون قد تمت معالجته.',
 	'confirmaccount-back'         => 'عرض قائمة الحسابات قيد الانتظار',
 	'confirmaccount-back2'        => 'عرض قائمة الحسابات المرفوضة حديثا',
@@ -268,8 +266,8 @@ $3
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3'  => 'عذرا, طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
 
-هناك عدة طرق لحدوث هذا. ربما تكون لم تملأ الاستمارة بشكل صحيح, أو لم توفر الطول اللازم في ردودك, أو فشلت في موافاة بعد بنود السياسة. ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
-	'confirmaccount-email-body4'  => 'عذرا, طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
+هناك عدة طرق لحدوث هذا. ربما تكون لم تملأ الاستمارة بشكل صحيح، أو لم توفر الطول اللازم في ردودك، أو فشلت في موافاة بعد بنود السياسة. ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
+	'confirmaccount-email-body4'  => 'عذرا، طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
 
 $2
 
@@ -485,7 +483,7 @@ $wgConfirmAccountMessages['fr'] = array(
 	'requestaccount-tooshort'     => 'Votre biographie doit avoir au moins {{PLURAL:$1|$1 mot|$1 mots}}.',
 	'requestaccount-exts'         => 'Le téléchargement des fichiers joints n’est pas permis.',
 	'requestaccount-resub'        => 'Votre fichier de CV/résumé doit être sélectionné une nouvelle fois pour des raisons de sécurité. Laissez le champ vierge si vous ne désirez plus le joindre.',
-	'requestaccount-tos'          => 'J’ai lu et j’accepte de respecter les termes concernant les conditions d’utilisation des services de {{SITENAME}}.',
+	'requestaccount-tos'          => 'J’ai lu et j’accepte de respecter les [[{{MediaWiki:Requestaccount-page}}|termes concernant les conditions d’utilisation des services]] de {{SITENAME}}.',
 	'requestaccount-submit'       => 'Demande de compte utilisateur.',
 	'requestaccount-sent'         => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.',
 	'request-account-econf'       => 'Votre adresse courriel a été confirmée et sera listée telle quelle dans votre demande de compte.',
@@ -605,7 +603,7 @@ $wgConfirmAccountMessages['frp'] = array(
 	'requestaccount-tooshort'     => 'Voutra biografia dêt avêr u muens {{PLURAL:$1|$1 mot|$1 mots}}.',
 	'requestaccount-exts'         => 'Lo tèlèchargement des fichiérs juents est pas pèrmês.',
 	'requestaccount-resub'        => 'Voutron fichiér de CV/rèsumâ dêt étre sèlèccionâ un côp de ples por des rêsons de sècuritât. Lèssiéd lo champ vouedo se vos dèsirâd pas més l’apondre.',
-	'requestaccount-tos'          => 'J/y’é liesu et j/y’accèpto de rèspèctar los tèrmos regardent les [[{{ns:project}}:Condicions d’usâjo|condicions d’usâjo]] des sèrviços de {{SITENAME}}. 
+	'requestaccount-tos'          => 'J/y’é liesu et j/y’accèpto de rèspèctar los tèrmos regardent les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] des sèrviços de {{SITENAME}}. 
 	Lo nom que j/y’é endicâ dens lo champ « Veré nom » est verément mon nom pèrsonèl.',
 	'requestaccount-submit'       => 'Demanda de compto utilisator.',
 	'requestaccount-sent'         => 'Voutra demanda de compto utilisator at étâ emmandâ avouéc reusséta et at étâ betâ dens la lista d’atenta d’aprobacion.',
@@ -657,7 +655,7 @@ $wgConfirmAccountMessages['gl'] = array(
 	'requestaccount-exts'         => 'Non se permite este tipo de ficheiro como anexo.',
 	'requestaccount-resub'        => 'Ten que volver a seleccionar o ficheiro do seu curriculum vitae por razóns de seguranza. Deixe o campo en branco
 	se non o quere incluír máis.',
-	'requestaccount-tos'          => 'Lin e estou de acordo en respectar as [[{{NS:PROJECT}}:Terms of Service|Condicións de Servizo]] de {{SITENAME}}. 
+	'requestaccount-tos'          => 'Lin e estou de acordo en respectar as [[{{MediaWiki:Requestaccount-page}}|Condicións de Servizo]] de {{SITENAME}}. 
 	O nome especificado como "Nome real" é, efectivamente, o meu propio nome real.',
 	'requestaccount-submit'       => 'Solicitar unha conta',
 	'requestaccount-sent'         => 'Enviouse sen problemas a súa solicitude de conta e agora está pendente de exame.',
@@ -686,8 +684,6 @@ Este código de confirmación caducará o $4.',
 	cun nome diferente. Use isto só para evitar conflitos con outros nomes.
 
 	Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, ficará como pendente.',
-	'confirmaccount-none'         => 'Non existen solicitudes de contas pendentes neste momento.',
-	'confirmaccount-none2'        => 'Non existen solicitudes de contas rexeitadas recentemente neste momento.',
 	'confirmaccount-badid'        => 'Non existe unha solicitude pendente que corresponda co ID fornecido. Pode que xa fose examinada.',
 	'confirmaccount-back'         => 'Ver a listaxe de contas pendentes',
 	'confirmaccount-back2'        => 'Ver a listaxe de contas rexeitadas recentemente',
@@ -808,8 +804,9 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'confirmaccount-text'         => 'To je njerozsudźene požadanje za wužiwarskim kontom pola \'\'\'{{SITENAME}}\'\'\'. Pruwuj wšě deleka stejace informacije dokładnje a potwjerdź je. Prošu wobkedźbuj, zo móžeš konto, jeli trjeba, pod druhim wužiwarskim mjenom wutworić. Wužij to jenož, zo by kolizije z druhimi mjenami wobešoł.
 
 Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wotpokazał, budźe požadanje njerozsudźene wostać.',
-	'confirmaccount-none'         => 'Tuchwilu njerozsudźene wužiwarske požadanja njejsu.',
-	'confirmaccount-none2'        => 'Tuchwilu njedawno wotpokazane wužiwarske požadanja njejsu.',
+	'confirmaccount-none-o'       => 'Tuchwilu žane wotewrjene kontowe požadanja w tutej lisćinje njejsu.',
+	'confirmaccount-none-h'       => 'Tuchwilu žane kontowe požadanja w tutej lisćinje w čakanskej sekli njejsu.',
+	'confirmaccount-none-r'       => 'Tuchwilu žane runje wotpokazane kontowe požadanja w tutej lisćinje njejsu.',
 	'confirmaccount-badid'        => 'Tuchwilu požadane k podatemu ID. Snano bu hižo sčinjene.',
 	'confirmaccount-back'         => 'Lisćinu njerozsudźenych požadanjow wobhladać',
 	'confirmaccount-back2'        => 'Lisćinu njedawno wotpokazanych požadanjow wobhladać',
@@ -896,7 +893,7 @@ $wgConfirmAccountMessages['nl'] = array(
 	
 	Als uw gebruiker is goedgekeurd, krijgt u een e-mail en daarna kunt u aanmelden via [[Special:Userlogin]].',
 	'requestaccount-page'         => '{{ns:project}}:Voorwaarden',
-	'requestaccount-dup'          => '\'\'\'Note bene: U bent al aangemeld met een geregistreede gebruiker.\'\'\'',
+	'requestaccount-dup'          => '\'\'\'Let op: U bent al aangemeld met een geregistreede gebruiker.\'\'\'',
 	'requestaccount-legend1'      => 'Gebruiker',
 	'requestaccount-legend2'      => 'Persoonlijke informatie',
 	'requestaccount-legend3'      => 'Overige informatie',
@@ -918,9 +915,10 @@ $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount-tooshort'     => 'Uw biografie moet tenminste $1 woorden bevatten.',
 	'requestaccount-exts'         => 'Bestandstype van de bijlage is niet toegestaan.',
 	'requestaccount-resub'        => 'Uw CV-bestand moet herselecteerd worden voor veiligheidsredenen. Laat het veld open als u geen bestand meer wil bijvoegen.',
-	'requestaccount-tos'          => 'Ik heb de Voorwaarden van {{SITENAME}} gelezen en ga ermee akkoord.',
+	'requestaccount-tos'          => 'Ik heb de [[{{MediaWiki:Requestaccount-page}}|Voorwaarden]] van {{SITENAME}} gelezen en ga ermee akkoord.
+De naam die ik heb opgegeven onder "Echte naam" is inderdaad mijn eigen echte naam',
 	'requestaccount-submit'       => 'Gebruiker aanvragen',
-	'requestaccount-sent'         => 'Uw gebruikersaanvraag is verstuurd en wacht op review.',
+	'requestaccount-sent'         => 'Uw gebruikersaanvraag is verstuurd en wacht om nagekeken te worden.',
 	'request-account-econf'       => 'Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.',
 	'requestaccount-email-subj'   => '{{SITENAME}} bevestiging e-mailadres',
 	'requestaccount-email-body'   => 'Iemand, waarschijnlijk u, heeft vanaf  IP-adres $1 op {{SITENAME}} een verzoek gedaan
@@ -946,12 +944,13 @@ Deze bevestigingse-mail verloop op $4.',
 	naam. Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
 	
 	Als u deze pagina verlaat zonder het gebruikersverzoek te bevestigen of af te wijzen, dan blijft het open staan.',
-	'confirmaccount-none'         => 'Er zijn op dit moment geen openstaande gebruikersverzoeken.',
-	'confirmaccount-none2'        => 'Er zijn op het moment geen recent afgewezen gebruikersverzoeken.',
+	'confirmaccount-none-o'       => 'Er zijn momenteel geen openstaande gebruikersaanvragen in deze lijst.',
+	'confirmaccount-none-h'       => 'Er zijn momenteel geen uitgestelde gebruikersaanvragen in deze lijst.',
+	'confirmaccount-none-r'       => 'Er zijn momenteel geen recent afgewezen gebruikersaanvragen in deze lijst.',
 	'confirmaccount-badid'        => 'Er is geen openstaand gebruikersverzoeken voor het opgegeven ID. Wellicht is het al afgehandeld.',
-	'confirmaccount-back'         => 'Bekijk openstaande gebruikersverzoeken',
-	'confirmaccount-back2'        => 'Bekijk recent afgewezen verzoeken',
-	'confirmaccount-showheld'     => 'Lijst met aangehouden gebruikersaanvragen bekijken',
+	'confirmaccount-back'         => 'Openstaande gebruikersverzoeken bekijken',
+	'confirmaccount-back2'        => 'Recent afgewezen verzoeken bekijken',
+	'confirmaccount-showheld'     => 'Lijst met uitgestelde gebruikersaanvragen bekijken',
 	'confirmaccount-name'         => 'Gebruikersnaam',
 	'confirmaccount-real'         => 'Naam',
 	'confirmaccount-real-q'       => 'Naam',
@@ -964,7 +963,7 @@ Deze bevestigingse-mail verloop op $4.',
 	'confirmaccount-urls'         => 'Lijst met websites:',
 	'confirmaccount-none-p'       => '(niet opgegeven)',
 	'confirmaccount-review'       => 'toegelaten/afgewezen',
-	'confirmaccount-confirm'      => 'Gebruik de onderUse the buttons below to accept this request or deny it.',
+	'confirmaccount-confirm'      => 'Gebruik de onderstaande opties om dit verzoek te aanvaarden, negeren, of uit te stellen:',
 	'confirmaccount-econf'        => '(bevestigd)',
 	'confirmaccount-reject'       => '(afgewezen door [[User:$1|$1]] op $2)',
 	'confirmaccount-held'         => '(als "uitgesteld" aangemerkt door [[User:$1|$1]] op $2)',
@@ -976,7 +975,7 @@ Deze bevestigingse-mail verloop op $4.',
 	'confirmaccount-ip'           => 'IP-adres:',
 	'confirmaccount-submit'       => 'Bevestigen',
 	'confirmaccount-needreason'   => 'U moet een reden geven in het onderstaande veld.',
-	'confirmaccount-canthold'     => 'Dit verzoek heeft al de status aangehouden of verwijderd.',
+	'confirmaccount-canthold'     => 'Dit verzoek heeft al de status uitgesteld of verwijderd.',
 	'confirmaccount-acc'          => 'Gebruikersverzoek goedgekeurd. De gebruiker [[User:$1]] is aangemaakt.',
 	'confirmaccount-rej'          => 'Gebruikersverzoek afgewezen.',
 	'confirmaccount-summary'      => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
@@ -1127,7 +1126,7 @@ $wgConfirmAccountMessages['pms'] = array(
 	'requestaccount-tooshort'     => 'Soa biografìa a l\'ha dë esse longa almanch $1 paròle.',
 	'requestaccount-exts'         => 'Sta sòrt d\'archivi as peul pa tachesse.',
 	'requestaccount-resub'        => 'Për na question ëd sigurëssa a venta torna ch\'a selession-a l\'archivi ëd sò Curriculum Vitae. Ch\'a lassa pura ël camp veujd s\'a veul pì nen butelo.',
-	'requestaccount-tos'          => 'I l\'hai lesù le [[{{NS:PROJECT}}:Terms of Service|Condission ëd Servissi]] ëd {{SITENAME}} e i son d\'acòrdi d\'osserveje. Ël nòm ch\'i l\'hai butà sot a "Nòm vèir" a l\'é mè nòm da bon.',
+	'requestaccount-tos'          => 'I l\'hai lesù le [[{{MediaWiki:Requestaccount-page}}|Condission ëd Servissi]] ëd {{SITENAME}} e i son d\'acòrdi d\'osserveje. Ël nòm ch\'i l\'hai butà sot a "Nòm vèir" a l\'é mè nòm da bon.',
 	'requestaccount-submit'       => 'Fé domanda për ël cont',
 	'requestaccount-sent'         => 'Soa domanda dë deurb-se un cont a l\'é staita arseivùa e a la speta d\'esse aprovà.',
 	'request-account-econf'       => 'Soa adrëssa ëd pòsta eletrònica a l\'é staita confermà e a la sarà listà coma bon-a an soa domanda dë deurbe \'l cont.',
@@ -1141,8 +1140,6 @@ Quand ël cont a vnirà creà, soa la ciav a sarà mandà mach a st\'adrëssa-s�
 	'confirmaccount-list'         => 'Ambelessì sota a-i é na lista ëd domanda ch\'a speto d\'esse aprovà. Ij cont aprovà a saran creà e peuj gavà via da \'n sta lista. Ij cont arfudà a saran mach dëscancelà da \'nt la lista.',
 	'confirmaccount-list2'        => 'Ambelessì sota a-i é na lista ëd coint ch\'a son stait arfudà ant j\'ùltim temp, e ch\'a l\'é belfé ch\'a ven-o scancelà n\'aotomàtich na vira ch\'a sia passa-ie chèich dì dal giudissi negativ. Ën vorend as peulo anco\' sempe aprovesse bele che adess, ma miraco un a veul sente l\'aministrator ch\'a l\'ha arfudaje, anans che fé che fé.',
 	'confirmaccount-text'         => 'A-i é na domanda duvèrta për deurbe un cont utent a \'\'\'{{SITENAME}}\'\'\'. Për piasì, ch\'a varda lòn ch\'a lé e se a fa da manca ch\'a conferma j\'anformassion ambelessì sota. Ch\'a ten-a present ch\'a peul decide dë creé ël cont con në stranòm diferent da col ciamà, se col-lì a fussa già dovrà da cheidun d\'àotr. S\'a va via da sta pàgina-sì sensa pijé ëd decision a-i riva gnente, la domanda a la resta duvèrta.',
-	'confirmaccount-none'         => '(nen fornì)',
-	'confirmaccount-none2'        => 'A-i é gnun-a domanda arfudà ch\'a la sia anco\' registrà',
 	'confirmaccount-badid'        => 'A-i é gnun-a domanda duvèrta ch\'a-j corisponda a l\'identificativ ch\'a l\'ha butà. A peul esse ch\'a la sia già staita tratà da cheidun d\'àotr.',
 	'confirmaccount-back'         => 'Vardé la lista dle domande duvèrte',
 	'confirmaccount-back2'        => 'Vardé la lista dle domande arfudà ant j\'ùltim temp',
@@ -1211,7 +1208,7 @@ $wgConfirmAccountMessages['sk'] = array(
 	'requestaccount-agree'        => 'Musíte osvedčiť, že vaše skutočné meno je správne a že súhlasíte s našimi Podmienkami použitia.',
 	'requestaccount-inuse'        => 'Používateľské meno už bolo vyžiadané v prebiehajúcej žiadosti o účet.',
 	'requestaccount-tooshort'     => 'Vaša biografia musí mať aspoň $1 slov.',
-	'requestaccount-tos'          => 'Prečítal som a súhlasím, že budem dodržiavať [[{{NS:PROJECT}}:Podmienky používania služby|Podmienky používania služby]] {{GRAMMAR:genitív|{{SITENAME}}}}. Meno, ktoré som uviedol ako „Skutočné meno“ je naozaj moje občianske meno.',
+	'requestaccount-tos'          => 'Prečítal som a súhlasím, že budem dodržiavať [[{{MediaWiki:Requestaccount-page}}|Podmienky používania služby]] {{GRAMMAR:genitív|{{SITENAME}}}}. Meno, ktoré som uviedol ako „Skutočné meno“ je naozaj moje občianske meno.',
 	'requestaccount-submit'       => 'Požiadať o účet',
 	'requestaccount-sent'         => 'Vaša žiadosť o účet bola úspešne odoslaná a teraz sa čaká na jej kontrolu.',
 	'request-account-econf'       => 'Vaša emailová adresa bola potvrdená a v takomto tvare sa uvedie vo vašej žiadosti o účet.',
@@ -1232,8 +1229,6 @@ vyprší o $4.',
 	'confirmaccount-list'         => 'Nižšie je zoznam žiadostí o účet, ktoré čakajú na schválenie. Schválené účty budú vytvorené a odstránené z tohoto zoznamu. Odmietnuté účty budú jednoducho odstránené z tohoto zoznamu.',
 	'confirmaccount-list2'        => 'Nižšie je zoznam nedávno odmietnutých žiadostí o účet, ktoré môžu byť automaticky odstránené po niekoľkých dňoch. Ešte stále ich môžete schváliť a vytvoriť z nich platné účty, hoci by ste sa mali predtým, než tak učiníte, poradiť so správcom, ktorý ich odmietol.',
 	'confirmaccount-text'         => 'Toto je žiadosť o používateľský účet na \'\'\'{{GRAMMAR:lokál|{{SITENAME}}}}\'\'\' v štádiu spracovania. Pozorne ju skontrolujte a ak treba, overte všetky dolu uvedené informácie. Máte tiež možnosť vytvoriť účet pod odlišným používateľským menom, to však používajte iba na odstránenie konfliktov s inými menami. Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odmietli, zostane v štádiu spracovania.',
-	'confirmaccount-none'         => 'Momentálne nie sú žiadne nespracované žiadosti o účet.',
-	'confirmaccount-none2'        => 'Momentálne nie sú žiadne odmietnuté žiadosti o účet.',
 	'confirmaccount-badid'        => 'Neexistuje žiadna nespracovaná žiadosť o účet zodpovedajúca zadanému ID. Je možné, že už bola spracovaná.',
 	'confirmaccount-back'         => 'Zobraziť zoznam nespracovaných účtov',
 	'confirmaccount-back2'        => 'Zobraziť zoznam nedávno odmietnutých účtov',
@@ -1246,7 +1241,6 @@ vyprší o $4.',
 	'confirmaccount-bio-q'        => 'Biografia',
 	'confirmaccount-notes'        => 'Ďalšie poznámky:',
 	'confirmaccount-urls'         => 'Zoznam webstránok:',
-	'confirmaccount-nourls'       => '(žiadne neboli poskytnuté)',
 	'confirmaccount-review'       => 'Schváliť/odmietnuť',
 	'confirmaccount-confirm'      => 'Tlačidlami nižšie môžete prijať alebo odmietnuť túto žiadosť.',
 	'confirmaccount-econf'        => '(potvrdený)',
