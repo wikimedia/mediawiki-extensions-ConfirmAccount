@@ -75,8 +75,9 @@ This confirmation code will expire at $4.',
 	different username. Use this only to avoid 	collisions with other names.
 	
 	If you simply leave this page without confirming or denying this request, it will remain pending.',
-	'confirmaccount-none'     => 'There are currently no pending account requests in this list.',
-	'confirmaccount-none2'    => 'There are currently no recently rejected account requests.',
+	'confirmaccount-none-o'   => 'There are currently no open pending account requests in this list.',
+	'confirmaccount-none-h'   => 'There are currently no held pending account requests in this list.',
+	'confirmaccount-none-r'   => 'There are currently no recently rejected account requests in this list.',
 	'confirmaccount-badid'    => 'There is no pending request corresponding to the given ID. It may have already been handled.',
 	'confirmaccount-back'     => 'View open pending account list',
 	'confirmaccount-back2'    => 'View recently rejected account list',
