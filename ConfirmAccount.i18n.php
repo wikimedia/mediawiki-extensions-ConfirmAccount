@@ -210,6 +210,9 @@ $3
 	. استخدم هذا فقط لتجنب	الاصطدامات مع الأسماء الأخرى.
 	
 لو تركت ببساطة هذه الصفحة بدون تأكيد أو رفض الحساب، سيبقى قيد الانتظار.',
+	'confirmaccount-none-o'       => 'لا توجد حاليا طلبات حساب قيد الانتظار مفتوحة في هذه القائمة.',
+	'confirmaccount-none-h'       => 'لا توجد حاليا طلبات حساب قيد الانتظار محجوزة في هذه القائمة.',
+	'confirmaccount-none-r'       => 'لا توجد حاليا طلبات حساب مرفوضة حديثا في هذه القائمة.',
 	'confirmaccount-badid'        => 'لا يوجد طلب قيد الانتظار يوافق الرقم المعطى. ربما يكون قد تمت معالجته.',
 	'confirmaccount-back'         => 'عرض قائمة الحسابات قيد الانتظار',
 	'confirmaccount-back2'        => 'عرض قائمة الحسابات المرفوضة حديثا',
@@ -504,6 +507,9 @@ Ce code de confirmation expire le $4.',
 	'confirmaccount-text'         => 'Voici une demande en cours pour un compte utilisateur sur \'\'\'{{SITENAME}}\'\'\'. Attention, vérifiez et, si nécessaire, confirmez toutes les informations ci-dessous. Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres noms.
 
 	Si vous quittez cette page sans confirmer ou rejeter cette demande, elle sera toujours mise en attente.',
+	'confirmaccount-none-o'       => 'Il n\'y a actuellement aucune demande de compte utilisateur en cours dans cette liste.',
+	'confirmaccount-none-h'       => 'Il n\'y a actuellement aucune réservation de compte utilisateur en cours dans cette liste.',
+	'confirmaccount-none-r'       => 'Il n\'y a actuellement aucun rejet récent de demande de compte utilisateur dans cette liste.',
 	'confirmaccount-badid'        => 'Il n’y a aucune demande en cours correspondant à l’ID indiqué. Il est possible qu‘il ait subi une maintenance.',
 	'confirmaccount-back'         => 'Voir la liste des demandes en cours',
 	'confirmaccount-back2'        => 'Voir la liste des comptes rejetés récemment.',
@@ -1042,7 +1048,7 @@ $wgConfirmAccountMessages['oc'] = array(
 	'requestaccount-tooshort'     => 'Vòstra biografia deu aver al mens {{PLURAL:$1|$1 mot|$1 mots}}.',
 	'requestaccount-exts'         => 'Lo telecargament dels fiquièrs junts es pas permés.',
 	'requestaccount-resub'        => 'Vòstre fiquièr de CV/resumit deu èsser seleccionat un còp de mai per de rasons de seguretat. Daissatz lo camp void se desiratz pas mai lo jonher.',
-	'requestaccount-tos'          => 'Ai legit e accèpti de respectar los tèrmes concernent las condicions d’utilizacion dels servicis de {{SITENAME}}.',
+	'requestaccount-tos'          => 'Ai legit e accèpti de respectar los [[{{MediaWiki:Requestaccount-page}}|tèrmes concernent las condicions d’utilizacion dels servicis]] de {{SITENAME}}.',
 	'requestaccount-submit'       => 'Demanda de compte d\'utilizaire.',
 	'requestaccount-sent'         => 'Vòstra demanda de compte d\'utilizaire es estada mandada amb succès e es estada mesa dins la lista d’espèra d’aprobacion.',
 	'request-account-econf'       => 'Vòstra adreça de corrièr electronic es estada confirmada e serà listada tala coma es dins vòstra demanda de compte.',
@@ -1054,8 +1060,6 @@ $wgConfirmAccountMessages['oc'] = array(
 	'confirmaccount-list'         => 'Vaquí, çai jos, la lista dels comptes en espèra d’aprobacion. Los comptes acceptats seràn creats e levats d\'aquesta lista. Los comptes regetats seràn suprimits d\'aquesta meteissa lista.',
 	'confirmaccount-list2'        => 'Veire la lista dels comptes recentament regetats losquals seràn suprimits automaticament aprèp qualques jorns. Pòdon encara èsser aprobats, e mai podètz consultar los regets abans d\'o far.',
 	'confirmaccount-text'         => 'Vaquí una demanda en cors per un compte d\'utilizaire sus \'\'\'{{SITENAME}}\'\'\'. Atencion, verificatz e, se fe mestièr, confirmatz totas las informacions çai jos. Notatz que podètz causir de crear un compte jos un autre nom. Fasetz aquò unicament per evitar de conflictes amb d’autres noms. Se quitatz aquesta pagina sens confirmar o rejetar aquesta demanda, serà totjorn mesa en espèra.',
-	'confirmaccount-none'         => 'Actualament i a pas de demanda d’aprobacion en cors.',
-	'confirmaccount-none2'        => 'Actualament i a pas de reget de demanda de comptes.',
 	'confirmaccount-badid'        => 'I a pas cap de demanda en cors correspondent a l’ID indicat. Es possible que aja subit una mantenença.',
 	'confirmaccount-back'         => 'Veire la lista de las demandas en cors',
 	'confirmaccount-back2'        => 'Veire la lista dels comptes regetats recentament.',
