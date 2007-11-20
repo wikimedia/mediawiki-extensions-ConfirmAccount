@@ -1267,6 +1267,11 @@ vyprší o $4.',
 	'confirmaccount-email-body4'  => 'Je nám ľúto, ale vaša žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} bola zamietnutá. Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
 );
 
+$wgConfirmAccountMessages['ss'] = array(
+	'confirmaccount-real'         => 'Ligama:',
+	'confirmaccount-real-q'       => 'Ligama',
+);
+
 $wgConfirmAccountMessages['yue'] = array(
 	# Request account page
 	'requestaccount'          => '請求戶口',
