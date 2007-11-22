@@ -449,6 +449,20 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
+$wgConfirmAccountMessages['el'] = array(
+	'requestaccount-legend1'      => 'Λογαριασμός χρήστη',
+	'requestaccount-legend3'      => 'Άλλες πληροφορίες',
+	'requestaccount-real'         => 'Πραγματικό όνομα:',
+	'confirmaccount-name'         => 'Όνομα χρήστη',
+	'confirmaccount-real'         => 'Όνομα:',
+	'confirmaccount-real-q'       => 'Όνομα',
+	'confirmaccount-email'        => 'Ηλεκτρονικό Ταχυδρομείο:',
+	'confirmaccount-email-q'      => 'Ηλεκτρονικό Ταχυδρομείο:',
+	'confirmaccount-bio'          => 'Βιογραφία:',
+	'confirmaccount-bio-q'        => 'Βιογραφία',
+	'confirmaccount-wsum'         => 'Καλός ήρθατε!',
+);
+
 $wgConfirmAccountMessages['ext'] = array(
 	'requestaccount-legend1'       => 'Cuenta d´usuáriu',
 	'requestaccount-legend2'       => 'Enhormación presonal',
@@ -567,10 +581,10 @@ $3
 
 Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connectez, allez sur 
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3'  => 'Désolé, votre demande de compte utilisateur "$1" a été rejetée sur {{SITENAME}}.
+	'confirmaccount-email-body3'  => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
 Plusieurs raisons peuvent expliquer ce cas de figure. Il est possible que vous ayez mal rempli le formulaire, ou que vous n’ayez pas indiqué suffisamment d’informations dans vos réponses. Il est encore possible que vous ne remplissiez pas les critères d’éligibilité pour obtenir votre compte. Il est possible d’être sur la liste des contact si vous désirez mieux connaître les conditions requises.',
-	'confirmaccount-email-body4'  => 'Désolé, votre demande de compte utilisateur "$1" a été rejetée sur {{SITENAME}}.
+	'confirmaccount-email-body4'  => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
 $2
 
