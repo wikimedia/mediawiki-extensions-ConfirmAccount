@@ -451,6 +451,7 @@ kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 
 $wgConfirmAccountMessages['el'] = array(
 	'requestaccount-legend1'      => 'Λογαριασμός χρήστη',
+	'requestaccount-legend2'      => 'Προσωπικές πληροφορίες',
 	'requestaccount-legend3'      => 'Άλλες πληροφορίες',
 	'requestaccount-real'         => 'Πραγματικό όνομα:',
 	'confirmaccount-name'         => 'Όνομα χρήστη',
