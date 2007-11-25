@@ -461,6 +461,9 @@ $wgConfirmAccountMessages['el'] = array(
 	'confirmaccount-email-q'      => 'Ηλεκτρονικό Ταχυδρομείο:',
 	'confirmaccount-bio'          => 'Βιογραφία:',
 	'confirmaccount-bio-q'        => 'Βιογραφία',
+	'confirmaccount-urls'         => 'Λίστα των ιστοσελίδων:',
+	'confirmaccount-create'       => 'Αποδοχή (Δημιουργία λογαριασμού)',
+	'confirmaccount-ip'           => 'διεύθυνση ΙΡ:',
 	'confirmaccount-wsum'         => 'Καλός ήρθατε!',
 );
 
@@ -644,6 +647,19 @@ Ceti code de confirmacion èxpire lo $4.',
 	'requestaccount-loginnotice'  => 'Por obtegnir un compto utilisator, vos dête nen fâre la \'\'\'[[Special:RequestAccount|demanda]]\'\'\'.',
 	'confirmaccounts'             => 'Demanda de confirmacion de comptos',
 	'confirmaccount-list'         => 'Vê-que, ce-desot, la lista des comptos en atenta d’aprobacion. Los comptos accèptâs seront crèâs et reteriês de ceta lista. Los comptos refusâs seront suprimâs de ceta méma lista.',
+	'confirmaccount-name'         => 'Nom d’utilisator',
+	'confirmaccount-real'         => 'Nom :',
+	'confirmaccount-real-q'       => 'Nom',
+	'confirmaccount-email'        => 'Mèl :',
+	'confirmaccount-email-q'      => 'Mèl',
+	'confirmaccount-bio'          => 'Biografia :',
+	'confirmaccount-bio-q'        => 'Biografia',
+	'confirmaccount-attach'       => 'CV/Rèsumâ :',
+	'confirmaccount-notes'        => 'Notes suplèmentères :',
+	'confirmaccount-urls'         => 'Lista des setos Malyâjo :',
+	'confirmaccount-none-p'       => '(pas porvu)',
+	'confirmaccount-review'       => 'Aprobacion/Refus',
+	'confirmaccount-econf'        => '(confirmâ)',
 );
 
 $wgConfirmAccountMessages['gl'] = array(
