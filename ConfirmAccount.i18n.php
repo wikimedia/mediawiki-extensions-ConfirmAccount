@@ -454,6 +454,7 @@ $wgConfirmAccountMessages['el'] = array(
 	'requestaccount-legend2'      => 'Προσωπικές πληροφορίες',
 	'requestaccount-legend3'      => 'Άλλες πληροφορίες',
 	'requestaccount-real'         => 'Πραγματικό όνομα:',
+	'requestaccount-bio'          => 'Προσωπική βιογραφία:',
 	'confirmaccount-name'         => 'Όνομα χρήστη',
 	'confirmaccount-real'         => 'Όνομα:',
 	'confirmaccount-real-q'       => 'Όνομα',
@@ -1218,6 +1219,18 @@ Për na question ëd sigurëssa un a venta ch\'as cambia soa ciav la prima vira 
 	'confirmaccount-email-body3'  => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a l\'é staita bocià. A-i son vàire rason përchè sossì a peula esse rivà. A peul esse ch\'a l\'abia pa compilà giust la domanda, che soe arspòste a sio staite tròp curte, ò pura che an chèich àotra manera a l\'abia falì da rintré ant ël criteri d\'aprovassion. A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 	'confirmaccount-email-body4'  => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a Betawiki a l\'é staita bocià. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 	'confirmaccount-email-body5'  => 'Anans che soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a peula esse acetà, a dovrìa lassene dj\'anformassion adissionaj. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
+);
+
+$wgConfirmAccountMessages['pt'] = array(
+	'requestaccount'              => 'Requerer conta',
+	'requestaccount-legend1'      => 'Conta de utilizador',
+	'requestaccount-legend2'      => 'Informação pessoal',
+	'requestaccount-legend3'      => 'Outra informação',
+	'requestaccount-real'         => 'Nome real:',
+	'requestaccount-notes'        => 'Notas adicionais:',
+	'requestaccount-exts'         => 'O tipo de ficheiro do anexo não é permitido.',
+	'requestaccount-submit'       => 'Requerer conta',
+	'confirmaccounts'             => 'Confirmar requerimentos de conta',
 );
 
 $wgConfirmAccountMessages['rm'] = array(
