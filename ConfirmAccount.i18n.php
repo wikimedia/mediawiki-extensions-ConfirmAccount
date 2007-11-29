@@ -925,6 +925,10 @@ $wgConfirmAccountMessages['la'] = array(
 	'confirmaccount-wsum'         => 'Salve!',
 );
 
+$wgConfirmAccountMessages['io'] = array(
+	'confirmaccount-wsum'         => 'Bonveno!',
+);
+
 $wgConfirmAccountMessages['nl'] = array(
 	'requestaccount'              => 'Gebruiker aanvragen',
 	'requestaccount-text'         => '\'\'\'Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen\'\'\'. 
@@ -1227,10 +1231,23 @@ $wgConfirmAccountMessages['pt'] = array(
 	'requestaccount-legend2'      => 'Informação pessoal',
 	'requestaccount-legend3'      => 'Outra informação',
 	'requestaccount-real'         => 'Nome real:',
+	'requestaccount-same'         => '(igual ao nome real)',
+	'requestaccount-bio'          => 'Biografia pessoal:',
+	'requestaccount-attach'       => 'Curriculum Vitae (opcional):',
 	'requestaccount-notes'        => 'Notas adicionais:',
+	'requestaccount-tooshort'     => 'A sua biografia tem que ter pelo menos $1 palavras.',
 	'requestaccount-exts'         => 'O tipo de ficheiro do anexo não é permitido.',
 	'requestaccount-submit'       => 'Requerer conta',
+	'requestaccount-email-subj'   => 'Confirmação de endereço de email para {{SITENAME}}',
 	'confirmaccounts'             => 'Confirmar requerimentos de conta',
+	'confirmaccount-bio'          => 'Biografia:',
+	'confirmaccount-bio-q'        => 'Biografia',
+	'confirmaccount-notes'        => 'Notas adicionais:',
+	'confirmaccount-review'       => 'Aprovar/Rejeitar',
+	'confirmaccount-econf'        => '(confirmado)',
+	'confirmaccount-ip'           => 'Endereço IP:',
+	'confirmaccount-submit'       => 'Confirmar',
+	'confirmaccount-wsum'         => 'Bem-vindo!',
 );
 
 $wgConfirmAccountMessages['rm'] = array(
