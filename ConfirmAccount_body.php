@@ -250,7 +250,6 @@ class RequestAccountPage extends SpecialPage {
 				$this->showForm( wfMsgHtml( 'requestaccount-exts' ) );
 				return false;
 		 	}
-			$fileProps = File::getPropsFromPath( $this->mTempPath, $finalExt );
 			$veri = $this->verify( $this->mTempPath, $finalExt );
 			if( $veri !== true ) {
 				$this->mPrevAttachment = '';
@@ -1095,7 +1094,7 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		} else {
 			$this->mConds['acr_deleted'] = 0;
 			if( !$showHeld )
-				$this->mConds[] = 'acr_held IS NULL';
+				$this->mConds[] = 'acr_held IS NOT NULL';
 		}
 		$this->rejects = $rejects;
 		parent::__construct();
