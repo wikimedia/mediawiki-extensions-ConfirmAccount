@@ -1093,8 +1093,11 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 			$this->mConds['acr_deleted'] = 1;
 		} else {
 			$this->mConds['acr_deleted'] = 0;
-			if( !$showHeld )
+			if ( $showHeld )
 				$this->mConds[] = 'acr_held IS NOT NULL';
+			else
+				$this->mConds[] = 'acr_held IS NULL';
+			  
 		}
 		$this->rejects = $rejects;
 		parent::__construct();
