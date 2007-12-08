@@ -62,7 +62,7 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function showForm( $msg='', $forgotFile=0 ) {
-		global $wgOut, $wgUser, $wgTitle, $wgUseRealNamesOnly, $wgAccountRequestToS,
+		global $wgOut, $wgUser, $wgUseRealNamesOnly, $wgAccountRequestToS,
 			$wgAccountRequestExtraInfo, $wgAllowAccountRequestFiles;
 
 		$this->mForgotAttachment = $forgotFile;
@@ -79,8 +79,10 @@ class RequestAccountPage extends SpecialPage {
 
 		$wgOut->addWikiText( wfMsgHtml( "requestaccount-text" ) );
 
-		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
-		$form = "<form name='accountrequest' action='$action' enctype='multipart/form-data' method='post'>";
+		$titleObj = Title::makeTitle( NS_SPECIAL, 'RequestAccount' );
+		
+		$form  = wfOpenElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
+			'action' => $titleObj->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
 		$form .= '<fieldset><legend>' . wfMsgHtml('requestaccount-legend1') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-acc-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
@@ -143,12 +145,12 @@ class RequestAccountPage extends SpecialPage {
 			$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
 				' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
 		}
-		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedUrl() )."\n";
+		$form .= Xml::hidden( 'title', $titleObj->getPrefixedUrl() )."\n";
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .= Xml::hidden( 'attachment', $this->mPrevAttachment )."\n";
 		$form .= Xml::hidden( 'forgotAttachment', $this->mForgotAttachment )."\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestaccount-submit') )."</p>";
-		$form .= '</form>';
+		$form .= wfCloseElement( 'form' );
 
 		$wgOut->addHTML( $form );
 	}
@@ -592,8 +594,9 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 	
 	function showForm( $msg='' ) {
-		global $wgOut, $wgTitle, $wgUser, $wgLang;
+		global $wgOut, $wgUser, $wgLang;
 		
+		$titleObj = Title::makeTitle( NS_SPECIAL, 'ConfirmAccounts' );
 		# Output failure message
 		if( $msg ) {
 			$wgOut->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
@@ -601,13 +604,13 @@ class ConfirmAccountsPage extends SpecialPage
 		$row = $this->getRequest();
 		if( !$row || $row->acr_rejected && !$this->showRejects ) {
 			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
-			$wgOut->returnToMain( true, $wgTitle );
+			$wgOut->returnToMain( true, $titleObj );
 			return;
 		}
 		
-		$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) );
+		$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back' ) );
 		if( $this->showRejects ) {
-			$listLink .= ' / '.$this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back2' ),
+			$listLink .= ' / '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back2' ),
 				wfArrayToCGI( array('wpShowRejects' => 1 ) ) );
 		}
 		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
@@ -624,8 +627,9 @@ class ConfirmAccountsPage extends SpecialPage
 				User::whoIs($row->acr_user), $time ).'</b>');
 		}
 		
-		$action = $wgTitle->escapeLocalUrl( 'action=submit' );
-		$form = "<form name='accountconfirm' action='$action' method='post'><fieldset>";
+		$form  = wfOpenElement( 'form', array( 'method' => 'post', 'name' => 'accountconfirm',
+			'action' => $titleObj->getLocalUrl() ) );
+		$form .= "<fieldset>";
 		$form .= '<legend>' . wfMsgHtml('requestaccount-legend1') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpNewName' )."</td>";
@@ -652,7 +656,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
 		$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ';
 		if( $row->acr_filename ) {
-			$form .= $this->skin->makeKnownLinkObj( $wgTitle, htmlspecialchars($row->acr_filename),
+			$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars($row->acr_filename),
 				'file=' . $row->acr_storage_key );
 		} else {
 			$form .= wfMsgHtml('confirmaccount-none-p');
@@ -692,12 +696,12 @@ class ConfirmAccountsPage extends SpecialPage
 			htmlspecialchars($this->reason) .
 			"</textarea></p></div>\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
-		$form .= Xml::hidden( 'title', $wgTitle->getPrefixedUrl() )."\n";
+		$form .= Xml::hidden( 'title', $titleObj->getPrefixedUrl() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
 		$form .= Xml::hidden( 'acrid', $row->acr_id );
 		$form .= Xml::hidden( 'wpShowRejects', $this->showRejects );
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
-		$form .=  '</form>';
+		$form .= wfCloseElement( 'form' );
 		
 		$wgOut->addHTML( $form );
 	}
@@ -722,12 +726,13 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 	
 	function doSubmit() {
-		global $wgOut, $wgTitle, $wgAuth;
+		global $wgOut, $wgAuth;
 
+		$titleObj = Title::makeTitle( NS_SPECIAL, 'ConfirmAccounts' );
 		$row = $this->getRequest();
 		if( !$row ) {
 			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
-			$wgOut->returnToMain( true, $wgTitle );
+			$wgOut->returnToMain( true, $titleObj );
 			return;
 		}
 
@@ -896,7 +901,7 @@ class ConfirmAccountsPage extends SpecialPage
 	 * @return string $linkList, list of clickable links
 	 */
 	function parseLinks( $text ) {
-		global $wgParser, $wgTitle, $wgUser;
+		global $wgParser, $wgUser;
 		# Don't let this get flooded
 		$max = 10;
 		$count = 0;
@@ -940,35 +945,37 @@ class ConfirmAccountsPage extends SpecialPage
 		return $row;
 	}
 	
-	function showSuccess( $action, $name = NULL ) {
-		global $wgOut, $wgTitle;
+	function showSuccess( $titleObj, $name = NULL ) {
+		global $wgOut;
 
+		$titleObj = Title::makeTitle( NS_SPECIAL, 'ConfirmAccounts' );
 		$wgOut->setPagetitle( wfMsgHtml('actioncomplete') );
 		if( $this->submitType == 'accept' ) {
 			$wgOut->addWikiText( wfMsg( "confirmaccount-acc", $name ) );
 		} else if( $this->submitType == 'reject' || $this->submitType == 'spam' ) {
 			$wgOut->addWikiText( wfMsg( "confirmaccount-rej" ) );
 		} else {
-			$wgOut->redirect( $wgTitle->getFullUrl() );
+			$wgOut->redirect( $titleObj->getFullUrl() );
 			return;
 		}
 		# Give link to see other requests
-		$wgOut->returnToMain( true, $wgTitle );
+		$wgOut->returnToMain( true, $titleObj );
 	}
 
 	function showList() {
-		global $wgOut, $wgUser, $wgTitle, $wgLang;
+		global $wgOut, $wgUser, $wgLang;
 		
+		$titleObj = Title::makeTitle( NS_SPECIAL, 'ConfirmAccounts' );
 		if( $this->showRejects ) {
-			$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) );
+			$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back' ) );
 		} else {
 			if( $this->showHeld ) {
-				$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back' ) ) . ' / ';
+				$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back' ) ) . ' / ';
 			} else {
-				$listLink = $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-showheld' ),
+				$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showheld' ),
 					wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) ) . ' / ';
 			}
-			$listLink .= $this->skin->makeKnownLinkObj( $wgTitle, wfMsgHtml( 'confirmaccount-back2' ),
+			$listLink .= $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back2' ),
 				wfArrayToCGI( array( 'wpShowRejects' => 1 ) ) );
 		}
 		$wgOut->setSubtitle( '<p>'.$listLink.'</p>' );
