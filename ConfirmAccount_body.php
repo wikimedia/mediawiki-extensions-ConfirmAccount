@@ -269,7 +269,7 @@ class RequestAccountPage extends SpecialPage {
 			if( $transaction === false ) {
 				// Failed to move?
 				wfDebug( __METHOD__.": import to file store failed, aborting\n" );
-				throw new MWException( "Could not archive and delete file $oldpath" );
+				throw new MWException( "Could not insert file {$this->mTempPath}" );
 				return false;
 			}
 		}
