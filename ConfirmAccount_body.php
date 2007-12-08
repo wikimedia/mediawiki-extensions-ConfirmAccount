@@ -305,7 +305,7 @@ class RequestAccountPage extends SpecialPage {
 		$result = $this->sendConfirmationMail( $u, $token, $expires );
 		if( WikiError::isError( $result ) ) {
 			$dbw->rollback(); // Nevermind
-			$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+			$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
 			$this->showForm( $error );
 			return false;
 		}
@@ -750,7 +750,7 @@ class ConfirmAccountsPage extends SpecialPage
 						wfMsgExt( 'confirmaccount-email-body3', array('parsemag'), $u->getName() ) );
 				}
 				if( WikiError::isError( $result ) ) {
-					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+					$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
 					$this->showForm( $error );
 					return false;
 				}
@@ -796,7 +796,7 @@ class ConfirmAccountsPage extends SpecialPage
 					wfMsgExt( 'confirmaccount-email-body', array('parsemag'), $user->getName(), $p ) );
 			}
 			if( WikiError::isError( $result ) ) {
-				$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+				$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
 				$this->showForm( $error );
 				return false;
 			}
@@ -883,7 +883,7 @@ class ConfirmAccountsPage extends SpecialPage
 						wfMsgExt( 'confirmaccount-email-body5', array('parsemag'), $u->getName(), $this->reason ) );
 				if( WikiError::isError( $result ) ) {
 					$dbw->rollback();
-					$error = wfMsg( 'mailerror', htmlspecialchars( $result->getMessage() ) );
+					$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
 					$this->showForm( $error );
 					return false;
 				}
