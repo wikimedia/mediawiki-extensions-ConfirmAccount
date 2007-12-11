@@ -487,6 +487,7 @@ $wgConfirmAccountMessages['fr'] = array(
 	
 	Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur
 	[[Special:Userlogin]].',
+	'requestaccount-page'         => '{{ns:project}}:Conditions d\'utilisation',
 	'requestaccount-dup'          => '\'\'\'Note : Vous êtes déjà sur une session avec un compte enregistré.\'\'\'',
 	'requestaccount-legend1'      => 'Compte utilisateur',
 	'requestaccount-legend2'      => 'Informations personnelles',
@@ -724,6 +725,7 @@ Este código de confirmación caducará o $4.',
 	cun nome diferente. Use isto só para evitar conflitos con outros nomes.
 
 	Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, ficará como pendente.',
+	'confirmaccount-none-o'       => 'Neste momento non hai peticións de contas pendentes nesta listaxe.',
 	'confirmaccount-badid'        => 'Non existe unha solicitude pendente que corresponda co ID fornecido. Pode que xa fose examinada.',
 	'confirmaccount-back'         => 'Ver a listaxe de contas pendentes',
 	'confirmaccount-back2'        => 'Ver a listaxe de contas rexeitadas recentemente',
