@@ -454,6 +454,7 @@ $wgConfirmAccountMessages['el'] = array(
 	'requestaccount-legend2'      => 'Προσωπικές πληροφορίες',
 	'requestaccount-legend3'      => 'Άλλες πληροφορίες',
 	'requestaccount-real'         => 'Πραγματικό όνομα:',
+	'requestaccount-email'        => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
 	'requestaccount-bio'          => 'Προσωπική βιογραφία:',
 	'confirmaccount-name'         => 'Όνομα χρήστη',
 	'confirmaccount-real'         => 'Όνομα:',
