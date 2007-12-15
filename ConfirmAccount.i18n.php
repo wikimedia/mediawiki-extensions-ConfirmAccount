@@ -1380,6 +1380,30 @@ $wgConfirmAccountMessages['ss'] = array(
 	'confirmaccount-real-q'       => 'Ligama',
 );
 
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$wgConfirmAccountMessages['stq'] = array(
+	'requestaccount'          => 'Benutserkonto fräigje',
+	'requestaccount-text'     => "'''Fäl dät foulgjende Formular uut un ferseend dät, uum n Benutserkonto tou fräigjen'''. 
+
+	Läs eerste do [[{{MediaWiki:Requestaccount-page}}|Nutsengsbedingengen]] eer du n Benutserkonto fräigest.
+
+	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Bescheed un du koast die unner „[[{{ns:special}}:Userlogin|Anmäldje]]“ ienlogje.",
+	'requestaccount-page'     => '{{ns:project}}:Nutsengsbedingengen',
+	'requestaccount-dup'      => "'''Oachtenge: Du bäst al mäd n registrierd Benutserkonto ienlogged.'''",
+	'requestaccount-legend1'  => 'Benutserkonto',
+	'requestaccount-legend2'  => 'Persöönelke Informatione',
+	'requestaccount-legend3'  => 'Wiedere Informatione',
+	'requestaccount-acc-text' => 'An dien E-Mail-Adresse wäd ätter dät Ouseenden fon dit Formular ne Bestäätigengsmail soand.
+        Reagier deerap, wan du ap ju in ju Mail äntheeldene Bestäätigengsferbiendenge klikst.
+Sobolde n dien Konto anlaid wuude,
+        wäd die dien Paaswoud per E-Mail tousoand.',
+	'requestaccount-ext-text' => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
+ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaidenge fon din Andraach eenfacher tou moakjen.',
+
+);
+
 $wgConfirmAccountMessages['yue'] = array(
 	# Request account page
 	'requestaccount'          => '請求戶口',
