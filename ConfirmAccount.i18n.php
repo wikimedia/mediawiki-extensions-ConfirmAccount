@@ -1395,13 +1395,31 @@ $wgConfirmAccountMessages['stq'] = array(
 	'requestaccount-legend1'  => 'Benutserkonto',
 	'requestaccount-legend2'  => 'Persöönelke Informatione',
 	'requestaccount-legend3'  => 'Wiedere Informatione',
-	'requestaccount-acc-text' => 'An dien E-Mail-Adresse wäd ätter dät Ouseenden fon dit Formular ne Bestäätigengsmail soand.
-        Reagier deerap, wan du ap ju in ju Mail äntheeldene Bestäätigengsferbiendenge klikst.
+	'requestaccount-acc-text' => 'An dien E-Mail-Adresse wäd ätter dät Ouseenden fon dit Formular ne Bestäätigengsmail soand. 
+Reagier deerap, wan du ap ju in ju Mail äntheeldene Bestäätigengsferbiendenge klikst.
 Sobolde n dien Konto anlaid wuude,
-        wäd die dien Paaswoud per E-Mail tousoand.',
+wäd die dien Paaswoud per E-Mail tousoand.',
 	'requestaccount-ext-text' => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
 ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaidenge fon din Andraach eenfacher tou moakjen.',
+	'confirmaccount-text'     => "Dit is n Andraach ap n Benutserkonto bie '''{{SITENAME}}'''. Wröigje aal hier unner stoundene Informatione gruundelk un bestäätigje do Informatione wan muugelk. Beoachtje, dät du dän Tougong bie Bedarf unner 
+n uur Benutsernoome anlääse koast. Du schuust dät bloot nutsje, uum Kollisione mäd uur Noomen tou fermieden.
 
+Wan du disse Siede ferlätst, sunner dät Konto tou bestäätigjen of outoulienen, dan blift die Andraach eepen stounde.",
+	'confirmaccount-none-o'   => 'Apstuuns rakt et neen eepene Benutserandraage ap disse Lieste.',
+	'confirmaccount-none-h'   => 'Apstuuns rakt et neen Andraage in dän „outäiwe“-Stoatus ap disse Lieste.',
+	'confirmaccount-none-r'   => 'Apstuuns rakt et neen knu ouliende Benutserandraage ap disse Lieste.',
+	'confirmaccount-badid'    => 'Apstuuns rakt et neen Benutserandraach tou ju anroate ID. Muugelkerwiese wuude hie al beoarbaided.',
+	'confirmaccount-back'     => 'Lieste fon do eepene Andraage ankiekje',
+	'confirmaccount-back2'    => 'Lieste fon do knu ouliende Andraage ankiekje',
+	'confirmaccount-showheld' => 'Lieste fon do Andraage ap „outäiwe“-Stoatus anwiese',
+	'confirmaccount-name'     => 'Benutsernoome',
+	'confirmaccount-real'     => 'Noome:',
+	'confirmaccount-real-q'   => 'Noome',
+	'confirmaccount-email'    => 'E-Mail:',
+	'confirmaccount-email-q'  => 'E-Mail',
+	'confirmaccount-bio'      => 'Biographie:',
+	'confirmaccount-bio-q'    => 'Biographie',
+	'confirmaccount-confirm'  => 'Benutsje ju foulgjende Uutwoal, uum dän Andraach tou akzeptierjen, outoulienen of noch tou täiwen.',
 );
 
 $wgConfirmAccountMessages['yue'] = array(
