@@ -15,10 +15,9 @@ if( !$wgEnableEmail ) {
 
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Confirm user accounts',
-	'version' => '1.1',
 	'description' => 'Gives bureaucrats the ability to confirm account requests',
 	'author' => 'Aaron Schulz',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount'
 );
 
 # Set the person's bio as their userpage?
@@ -64,11 +63,11 @@ function efAddRequestLoginText( &$template ) {
 	global $wgUser;
 
 	efLoadConfirmAccountsMessages();
-
+	
 	if( !$wgUser->isAllowed('createaccount') ) {
 		$template->set( 'header', wfMsgExt('requestaccount-loginnotice', array('parse') ) );
 	}
-
+	
 	return true;
 }
 
@@ -105,7 +104,7 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
 
 function efConfirmAccountSchemaUpdates() {
 	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields;
-
+	
 	$base = dirname(__FILE__);
 	if ($wgDBtype == 'mysql') {
 		$wgExtNewFields[] = array('account_requests', 'acr_filename',
@@ -116,6 +115,6 @@ function efConfirmAccountSchemaUpdates() {
 		$wgExtPGNewFields[] = array('account_requests', 'acr_storage_key', "TEXT" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_comment', "TEXT" );
 	}
-
+	
 	return true;
 }
