@@ -1082,7 +1082,7 @@ Er kunnen contacteerlijsten zijn die u kan gebruiken als u meer wil te weten kom
  */
 $wgConfirmAccountMessages['oc'] = array(
 	'requestaccount'             => "Demanda de compte d'utilizaire",
-	'requestaccount-text'        => "'''Emplenatz e mandatz lo formulari çai jos per demandar un compte d’utilizaire.'''. Asseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte. Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus [[Special:Userlogin]].",
+	'requestaccount-text'        => "'''Emplenatz e mandatz lo formulari çaijós per demandar un compte d’utilizaire.'''. Asseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte. Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus [[Special:Userlogin]].",
 	'requestaccount-page'        => "{{ns:project}}:Condicions d'utilizacion",
 	'requestaccount-dup'         => "'''Nòta : Sètz ja sus una session amb un compte enregistrat.'''",
 	'requestaccount-legend1'     => "Compte d'utilizaire:",
@@ -1112,9 +1112,9 @@ $wgConfirmAccountMessages['oc'] = array(
 	'acct_request_throttle_hit'  => 'O planhem, avètz demandat $1 comptes. Podètz pas far mai de demanda',
 	'requestaccount-loginnotice' => "Per obténer un compte d'utilizaire, devètz ne far '''[[Special:RequestAccount|la demanda]]'''.",
 	'confirmaccounts'            => 'Demanda de confirmacion de comptes',
-	'confirmaccount-list'        => "Vaquí, çai jos, la lista dels comptes en espèra d’aprobacion. Los comptes acceptats seràn creats e levats d'aquesta lista. Los comptes regetats seràn suprimits d'aquesta meteissa lista.",
+	'confirmaccount-list'        => "Vaquí, çaijós, la lista dels comptes en espèra d’aprobacion. Los comptes acceptats seràn creats e levats d'aquesta lista. Los comptes regetats seràn suprimits d'aquesta meteissa lista.",
 	'confirmaccount-list2'       => "Veire la lista dels comptes recentament regetats losquals seràn suprimits automaticament aprèp qualques jorns. Pòdon encara èsser aprobats, e mai podètz consultar los regets abans d'o far.",
-	'confirmaccount-text'        => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''. Atencion, verificatz e, se fe mestièr, confirmatz totas las informacions çai jos. Notatz que podètz causir de crear un compte jos un autre nom. Fasetz aquò unicament per evitar de conflictes amb d’autres noms. Se quitatz aquesta pagina sens confirmar o rejetar aquesta demanda, serà totjorn mesa en espèra.",
+	'confirmaccount-text'        => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''. Atencion, verificatz e, se fe mestièr, confirmatz totas las informacions çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasetz aquò unicament per evitar de conflictes amb d’autres noms. Se quitatz aquesta pagina sens confirmar o rejetar aquesta demanda, serà totjorn mesa en espèra.",
 	'confirmaccount-none-o'      => "Actualament i a pas cap de demanda de compte d'utilizaire en cors dins aquesta lista.",
 	'confirmaccount-none-h'      => "Actualament i a pas cap de reservacion de compte d'utilizaire en cors dins aquesta lista.",
 	'confirmaccount-none-r'      => "Actualament i a pas cap de regèt recent de demanda de compte d'utilizaire dins aquesta lista.",
@@ -1158,7 +1158,6 @@ $wgConfirmAccountMessages['oc'] = array(
 	'confirmaccount-email-body3' => 'O planhem, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. Mantuna rason pòdon explicar aqueste cas de figura. Es possible que ajatz mal emplenat lo formulari, o que ajatz pas indicat sufisentament d’informacions dins vòstras responsas. Es encara possible que emplenetz pas los critèris d’eligibilitat per obténer vòstre compte. Es possible d’èsser sus la liste dels contactes se desiratz conéisser melhor las condicions requesas.',
 	'confirmaccount-email-body4' => 'O planhem, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. $2 Es possible d’èsser sus la lista dels contactes per conéisser melhor los critèris per poder s’inscriure.',
 	'confirmaccount-email-body5' => 'Abans que vòstra requèsta pel compte « $1 » pòsca èsser acceptada sus {{SITENAME}}, devètz produire qualques informacions suplementàrias. $2 Aquò permetís d’èsser sus la lista dels contactes del site, se desiratz ne saber mai sus las règlas concernent los comptes.',
-
 );
 
 $wgConfirmAccountMessages['pl'] = array(
@@ -1384,42 +1383,122 @@ $wgConfirmAccountMessages['ss'] = array(
  * @author Pyt
  */
 $wgConfirmAccountMessages['stq'] = array(
-	'requestaccount'          => 'Benutserkonto fräigje',
-	'requestaccount-text'     => "'''Fäl dät foulgjende Formular uut un ferseend dät, uum n Benutserkonto tou fräigjen'''. 
+	'requestaccount'             => 'Benutserkonto fräigje',
+	'requestaccount-text'        => "'''Fäl dät foulgjende Formular uut un ferseend dät, uum n Benutserkonto tou fräigjen'''. 
 
 	Läs eerste do [[{{MediaWiki:Requestaccount-page}}|Nutsengsbedingengen]] eer du n Benutserkonto fräigest.
 
 	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Bescheed un du koast die unner „[[{{ns:special}}:Userlogin|Anmäldje]]“ ienlogje.",
-	'requestaccount-page'     => '{{ns:project}}:Nutsengsbedingengen',
-	'requestaccount-dup'      => "'''Oachtenge: Du bäst al mäd n registrierd Benutserkonto ienlogged.'''",
-	'requestaccount-legend1'  => 'Benutserkonto',
-	'requestaccount-legend2'  => 'Persöönelke Informatione',
-	'requestaccount-legend3'  => 'Wiedere Informatione',
-	'requestaccount-acc-text' => 'An dien E-Mail-Adresse wäd ätter dät Ouseenden fon dit Formular ne Bestäätigengsmail soand. 
+	'requestaccount-page'        => '{{ns:project}}:Nutsengsbedingengen',
+	'requestaccount-dup'         => "'''Oachtenge: Du bäst al mäd n registrierd Benutserkonto ienlogged.'''",
+	'requestaccount-legend1'     => 'Benutserkonto',
+	'requestaccount-legend2'     => 'Persöönelke Informatione',
+	'requestaccount-legend3'     => 'Wiedere Informatione',
+	'requestaccount-acc-text'    => 'An dien E-Mail-Adresse wäd ätter dät Ouseenden fon dit Formular ne Bestäätigengsmail soand. 
 Reagier deerap, wan du ap ju in ju Mail äntheeldene Bestäätigengsferbiendenge klikst.
 Sobolde n dien Konto anlaid wuude,
 wäd die dien Paaswoud per E-Mail tousoand.',
-	'requestaccount-ext-text' => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
+	'requestaccount-ext-text'    => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
 ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaidenge fon din Andraach eenfacher tou moakjen.',
-	'confirmaccount-text'     => "Dit is n Andraach ap n Benutserkonto bie '''{{SITENAME}}'''. Wröigje aal hier unner stoundene Informatione gruundelk un bestäätigje do Informatione wan muugelk. Beoachtje, dät du dän Tougong bie Bedarf unner 
+	'requestaccount-bio-text'    => 'Dien Biographie wäd as initioale Inhoold fon dien Benutsersiede spiekerd. Fersäik aal do nöödige Referenzen tou ärwäänen, man staal sicher, dät du do Informatione wuddelk eepentelk bekoand moakje moatest. Du koast din Noome unner „[[{{ns:special}}:preferences|Ienstaalengen]]“ annerje.',
+	'requestaccount-urls'        => 'Lieste fon Websieden (truch Riegenuumbreeke tränd):',
+	'requestaccount-agree'       => 'Du moast bestäätigje, dät din Realname so gjucht is un du do Benutserbedingengen akzeptierst.',
+	'requestaccount-inuse'       => 'Die Benutsernoome is al in n uur Benutserandraach in Ferweendenge.',
+	'requestaccount-tooshort'    => 'Dien Biographie schuul mindestens $1 Woude loang weese.',
+	'requestaccount-exts'        => 'Die Doatäityp fon dän Anhong is nit ferlööwed.',
+	'requestaccount-resub'       => 'Ju Doatäi mäd din Lieuwensloop mout uut Sicherhaidsgruunden näi uutwääld wäide.
+Läit dät Fäild loos, wan du naan Lieuwensloop moor anföigje moatest.',
+	'requestaccount-tos'         => 'Iek hääbe do [[{{MediaWiki:Requestaccount-page}}|Benutsengsbedingengen]] fon {{SITENAME}} leesen un akzeptierje do.
+Iek bestäätigje, dät die Noome, dän iek unner „Realname“ ounroat hääbe, min wuddelke Noome is.',
+	'requestaccount-submit'      => 'Fräigje uum n Benutserkonto',
+	'requestaccount-sent'        => 'Dien Andraach wuude mäd Ärfoulch fersoand un mout nu noch wröiged wäide.',
+	'request-account-econf'      => 'Dien E-Mail-Adresse wuude bestäätiged un wäd nu as sodoane in dien  Account-Froage fierd.',
+	'requestaccount-email-subj'  => '{{SITENAME}} E-Mail-Adressen Wröich',
+	'requestaccount-email-body'  => 'Wäl mäd ju IP-Adresse $1, muugelkerwiese du, häd bie {{SITENAME}} uum dät Benutserkonto "$2" mäd dien E-Mail Adresse fräiged.
+
+Uum tou bestäätigjen, dät wuddelk du uum dit Konto bie {{SITENAME}} fräiged hääst, eepenje foulgjende Ferbiendenge in din Browser:
+
+$3
+
+Wan dät Benutserkonto moaked wuude, krichst du ne E-Mail mäd dät Paaswoud.
+
+Wan du *nit* uum dät Benutserkonto fräiged hääst, eepenje ju Ferbiendenge nit!
+
+Disse Bestäätigengscode wäd uum $4 uungultich.',
+	'acct_request_throttle_hit'  => 'Du hääst al $1 uum Benutserkonten fräiged, du koast apstuuns neen wiedere fräigje.',
+	'requestaccount-loginnotice' => "Uum n näi Benutserkonto tou kriegen, moast du 
+der uum '''[[{{ns:special}}:RequestAccount|fräigje]]'''.",
+	'confirmaccounts'            => 'Benutserkonto-Froagen bestäätigje',
+	'confirmaccount-list'        => 'Hier unner finst du ne Lieste fon noch tou beoarbaidjen Benutserkonto-Froagen.
+Bestäätigede Konten wäide anlaid un uut ju Lieste wächhoald. Ouliende Konten wäide eenfach uut ju Lieste läsked.',
+	'confirmaccount-text'        => "Dit is n Andraach ap n Benutserkonto bie '''{{SITENAME}}'''. Wröigje aal hier unner stoundene Informatione gruundelk un bestäätigje do Informatione wan muugelk. Beoachtje, dät du dän Tougong bie Bedarf unner 
 n uur Benutsernoome anlääse koast. Du schuust dät bloot nutsje, uum Kollisione mäd uur Noomen tou fermieden.
 
 Wan du disse Siede ferlätst, sunner dät Konto tou bestäätigjen of outoulienen, dan blift die Andraach eepen stounde.",
-	'confirmaccount-none-o'   => 'Apstuuns rakt et neen eepene Benutserandraage ap disse Lieste.',
-	'confirmaccount-none-h'   => 'Apstuuns rakt et neen Andraage in dän „outäiwe“-Stoatus ap disse Lieste.',
-	'confirmaccount-none-r'   => 'Apstuuns rakt et neen knu ouliende Benutserandraage ap disse Lieste.',
-	'confirmaccount-badid'    => 'Apstuuns rakt et neen Benutserandraach tou ju anroate ID. Muugelkerwiese wuude hie al beoarbaided.',
-	'confirmaccount-back'     => 'Lieste fon do eepene Andraage ankiekje',
-	'confirmaccount-back2'    => 'Lieste fon do knu ouliende Andraage ankiekje',
-	'confirmaccount-showheld' => 'Lieste fon do Andraage ap „outäiwe“-Stoatus anwiese',
-	'confirmaccount-name'     => 'Benutsernoome',
-	'confirmaccount-real'     => 'Noome:',
-	'confirmaccount-real-q'   => 'Noome',
-	'confirmaccount-email'    => 'E-Mail:',
-	'confirmaccount-email-q'  => 'E-Mail',
-	'confirmaccount-bio'      => 'Biographie:',
-	'confirmaccount-bio-q'    => 'Biographie',
-	'confirmaccount-confirm'  => 'Benutsje ju foulgjende Uutwoal, uum dän Andraach tou akzeptierjen, outoulienen of noch tou täiwen.',
+	'confirmaccount-none-o'      => 'Apstuuns rakt et neen eepene Benutserandraage ap disse Lieste.',
+	'confirmaccount-none-h'      => 'Apstuuns rakt et neen Andraage in dän „outäiwe“-Stoatus ap disse Lieste.',
+	'confirmaccount-none-r'      => 'Apstuuns rakt et neen knu ouliende Benutserandraage ap disse Lieste.',
+	'confirmaccount-badid'       => 'Apstuuns rakt et neen Benutserandraach tou ju anroate ID. Muugelkerwiese wuude hie al beoarbaided.',
+	'confirmaccount-back'        => 'Lieste fon do eepene Andraage ankiekje',
+	'confirmaccount-back2'       => 'Lieste fon do knu ouliende Andraage ankiekje',
+	'confirmaccount-showheld'    => 'Lieste fon do Andraage ap „outäiwe“-Stoatus anwiese',
+	'confirmaccount-name'        => 'Benutsernoome',
+	'confirmaccount-real'        => 'Noome:',
+	'confirmaccount-real-q'      => 'Noome',
+	'confirmaccount-email'       => 'E-Mail:',
+	'confirmaccount-email-q'     => 'E-Mail',
+	'confirmaccount-bio'         => 'Biographie:',
+	'confirmaccount-bio-q'       => 'Biographie',
+	'confirmaccount-attach'      => 'Lieuwensloop:',
+	'confirmaccount-urls'        => 'Lieste fon do Websieden:',
+	'confirmaccount-none-p'      => '(Niks ounroat)',
+	'confirmaccount-review'      => 'Bestäätigje/Ouliene',
+	'confirmaccount-confirm'     => 'Benutsje ju foulgjende Uutwoal, uum dän Andraach tou akzeptierjen, outoulienen of noch tou täiwen.',
+	'confirmaccount-econf'       => '(bestäätiged)',
+	'confirmaccount-reject'      => '(ouliend truch [[User:$1|$1]] ap n $2)',
+	'confirmaccount-held'        => '(markierd as „outäiwe“ truch [[User:$1|$1]] ap n $2)',
+	'confirmaccount-create'      => 'Bestäätigje (Konto anlääse)',
+	'confirmaccount-deny'        => 'Ouliene (Andraach läskje)',
+	'confirmaccount-hold'        => 'Markierd as „outäiwe“',
+	'confirmaccount-reason'      => 'Begruundenge (wäd in ju Mail an dän Andraachstaaler ienföiged):',
+	'confirmaccount-needreason'  => 'Du moast ne Begruundenge ounreeke.',
+	'confirmaccount-canthold'    => 'Disse Froage wuude al as „outäiwe“ markierd of läsked.',
+	'confirmaccount-acc'         => 'Benutserandraach mäd Ärfoulch bestäätiged; Benutser [[{{ns:User}}:$1]] wuude anlaid.',
+	'confirmaccount-rej'         => 'Benutserandraach wuude ouliend.',
+	'confirmaccount-summary'     => 'Moak Benutsersiede mäd ju Biographie fon dän näie Benutser.',
+	'confirmaccount-welc'        => "'''Wäilkuumen bie ''{{SITENAME}}''!''' Wie hoopje, dät du fuul goude Informatione biedrächst.
+	Muugelkerwiese moatest du eerste do [[{{MediaWiki:Helppage}}|Eerste Stappe]] leese. Nochmoal: Wäilkuumen un hääb Spoas!~",
+	'confirmaccount-wsum'        => 'Wäilkuumen!',
+	'confirmaccount-email-subj'  => '{{SITENAME}} Froage uum n Benutserkonto',
+	'confirmaccount-email-body'  => 'Dien Froage uum n Benutserkonto bie {{SITENAME}} wuude bestäätiged.
+
+Benutsernoome: $1
+
+Paaswoud: $2
+
+Uut Sicherhaidsgruunden schuust du dien Paaswoud uunbedingd bie dät eerste
+Ienlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede
+{{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2' => 'Dien Froage uum n Benutserkonto bie {{SITENAME}} wuude bestäätiged. 
+
+Benutsernoome: $1 
+
+Paaswoud: $2 
+
+Uut Sicherhaidsgruunden schuust du dien Paaswoud uunbedingd bie dät eerste Ienlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3' => 'Spietelk wuude dien Froage uum n Benutserkonto „$1“ 
+bie {{SITENAME}} ouliend.
+
+Dit kon fuul Gruunde hääbe. Muugelkerwiese hääst du dät Froageformular
+nit gjucht uutfäld, hääst nit genöigjend Angoawen moaked of hääst
+do Anfoarderengen ap uur Wiese nit uutfierd.',
+	'confirmaccount-email-body4' => 'Spietelk wuude dien Froage uum n Benutserkonto „$1“ 
+bie {{SITENAME}} ouliend.
+
+$2
+
+Muugelkerwiese rakt dät ap ju Siede Kontaktadressen, an do du die weende
+koast, wan du moor uut do Anfoarderengen wiete moatest.',
 );
 
 $wgConfirmAccountMessages['yue'] = array(
