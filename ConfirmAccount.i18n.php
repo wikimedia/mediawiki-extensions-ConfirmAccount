@@ -297,7 +297,16 @@ $wgConfirmAccountMessages['bcl'] = array(
  * @author DCLXVI
  */
 $wgConfirmAccountMessages['bg'] = array(
-	'requestaccount-email' => 'Електронна поща:',
+	'requestaccount-dup'     => "'''Забележка: Вече сте влезли с регистрирана потребителска сметка.'''",
+	'requestaccount-legend1' => 'Потребителска сметка',
+	'requestaccount-legend2' => 'Лични данни',
+	'requestaccount-legend3' => 'Друга информация',
+	'requestaccount-real'    => 'Име и фамилия:',
+	'requestaccount-same'    => '(съвпада с името)',
+	'requestaccount-email'   => 'Електронна поща:',
+	'confirmaccount-name'    => 'Потребителско име',
+	'confirmaccount-email'   => 'Електронна поща:',
+	'confirmaccount-ip'      => 'IP адрес:',
 );
 
 $wgConfirmAccountMessages['br'] = array(
@@ -739,7 +748,7 @@ Este código de confirmación caducará o $4.',
 
 	Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, ficará como pendente.",
 	'confirmaccount-none-o'      => 'Neste momento non hai peticións de contas pendentes nesta listaxe.',
-	'confirmaccount-none-h'      => 'Actualmente non hai solicitudes pendentes tidas en conta nesta listaxe.',
+	'confirmaccount-none-h'      => 'Actualmente non hai solicitudes pendentes a ter en conta nesta listaxe.',
 	'confirmaccount-none-r'      => 'Actualmente non hai contas rexeitas recentemente nesta listaxe.',
 	'confirmaccount-badid'       => 'Non existe unha solicitude pendente que corresponda co ID fornecido. Pode que xa fose examinada.',
 	'confirmaccount-back'        => 'Ver a listaxe de contas pendentes',
@@ -809,7 +818,17 @@ Poden existir listaxes de contacto no sitio que pode usar se quere saber máis a
 $2
 
 Poden existir listaxes de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
+);
 
+/** Croatian (Hrvatski)
+ * @author Dnik
+ */
+$wgConfirmAccountMessages['hr'] = array(
+	'requestaccount-legend2' => 'Osobne informacije',
+	'requestaccount-legend3' => 'Ostale informacije',
+	'requestaccount-real'    => 'Pravo ime:',
+	'confirmaccount-real'    => 'Ime:',
+	'confirmaccount-real-q'  => 'Ime',
 );
 
 $wgConfirmAccountMessages['hsb'] = array(
@@ -1408,6 +1427,12 @@ wäd die dien Paaswoud per E-Mail tousoand.',
 	'requestaccount-ext-text'    => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
 ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaidenge fon din Andraach eenfacher tou moakjen.',
 	'requestaccount-bio-text'    => 'Dien Biographie wäd as initioale Inhoold fon dien Benutsersiede spiekerd. Fersäik aal do nöödige Referenzen tou ärwäänen, man staal sicher, dät du do Informatione wuddelk eepentelk bekoand moakje moatest. Du koast din Noome unner „[[{{ns:special}}:preferences|Ienstaalengen]]“ annerje.',
+	'requestaccount-real'        => 'Realname:',
+	'requestaccount-same'        => '(as die Realname)',
+	'requestaccount-email'       => 'E-Mail-Adresse:',
+	'requestaccount-bio'         => 'Persöönelke Biographie:',
+	'requestaccount-attach'      => 'Lieuwensloop (optional):',
+	'requestaccount-notes'       => 'Bietoukuumende Angoawen:',
 	'requestaccount-urls'        => 'Lieste fon Websieden (truch Riegenuumbreeke tränd):',
 	'requestaccount-agree'       => 'Du moast bestäätigje, dät din Realname so gjucht is un du do Benutserbedingengen akzeptierst.',
 	'requestaccount-inuse'       => 'Die Benutsernoome is al in n uur Benutserandraach in Ferweendenge.',
@@ -1468,6 +1493,7 @@ Wan du disse Siede ferlätst, sunner dät Konto tou bestäätigjen of outouliene
 	'confirmaccount-deny'        => 'Ouliene (Andraach läskje)',
 	'confirmaccount-hold'        => 'Markierd as „outäiwe“',
 	'confirmaccount-reason'      => 'Begruundenge (wäd in ju Mail an dän Andraachstaaler ienföiged):',
+	'confirmaccount-submit'      => 'Ouseende',
 	'confirmaccount-needreason'  => 'Du moast ne Begruundenge ounreeke.',
 	'confirmaccount-canthold'    => 'Disse Froage wuude al as „outäiwe“ markierd of läsked.',
 	'confirmaccount-acc'         => 'Benutserandraach mäd Ärfoulch bestäätiged; Benutser [[{{ns:User}}:$1]] wuude anlaid.',
@@ -1506,6 +1532,16 @@ $2
 
 Muugelkerwiese rakt dät ap ju Siede Kontaktadressen, an do du die weende
 koast, wan du moor uut do Anfoarderengen wiete moatest.',
+	'confirmaccount-email-body5' => 'Eer dien Anfroage foar dät Benutserkonto „$1“ fon {{SITENAME}} akzeptierd wäide kon,
+       moast du bietoukuumende Informatione touseende.
+
+$2
+
+Muugelkerwiese rakt et ap ju Siede Kontaktadressen, an do du die weende
+koast, wan du moor uur do Anfoarderengen wiete moatest.
+
+Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
+       musst du zusätzliche Informationen übermitteln.',
 );
 
 $wgConfirmAccountMessages['yue'] = array(
