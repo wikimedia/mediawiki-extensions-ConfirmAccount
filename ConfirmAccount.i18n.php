@@ -293,6 +293,13 @@ $wgConfirmAccountMessages['bcl'] = array(
 	'confirmaccount-wsum'         => 'Dagos!',
 );
 
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
+$wgConfirmAccountMessages['bg'] = array(
+	'requestaccount-email' => 'Електронна поща:',
+);
+
 $wgConfirmAccountMessages['br'] = array(
 	'confirmaccount-email-q'      => 'Postel',
 );
