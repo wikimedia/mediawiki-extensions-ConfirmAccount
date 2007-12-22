@@ -297,16 +297,25 @@ $wgConfirmAccountMessages['bcl'] = array(
  * @author DCLXVI
  */
 $wgConfirmAccountMessages['bg'] = array(
-	'requestaccount-dup'     => "'''Забележка: Вече сте влезли с регистрирана потребителска сметка.'''",
-	'requestaccount-legend1' => 'Потребителска сметка',
-	'requestaccount-legend2' => 'Лични данни',
-	'requestaccount-legend3' => 'Друга информация',
-	'requestaccount-real'    => 'Име и фамилия:',
-	'requestaccount-same'    => '(съвпада с името)',
-	'requestaccount-email'   => 'Електронна поща:',
-	'confirmaccount-name'    => 'Потребителско име',
-	'confirmaccount-email'   => 'Електронна поща:',
-	'confirmaccount-ip'      => 'IP адрес:',
+	'requestaccount-page'        => '{{ns:project}}:Условия за ползване',
+	'requestaccount-dup'         => "'''Забележка: Вече сте влезли с регистрирана потребителска сметка.'''",
+	'requestaccount-legend1'     => 'Потребителска сметка',
+	'requestaccount-legend2'     => 'Лични данни',
+	'requestaccount-legend3'     => 'Друга информация',
+	'requestaccount-real'        => 'Име и фамилия:',
+	'requestaccount-same'        => '(съвпада с името)',
+	'requestaccount-email'       => 'Електронна поща:',
+	'requestaccount-notes'       => 'Допълнителни бележки:',
+	'requestaccount-submit'      => 'Изпращане на заявката',
+	'requestaccount-loginnotice' => "За да получите потребителска сметка, необходимо е да '''[[Special:RequestAccount|изпратите заявка]]'''.",
+	'confirmaccount-name'        => 'Потребителско име',
+	'confirmaccount-real'        => 'Име:',
+	'confirmaccount-real-q'      => 'Име',
+	'confirmaccount-email'       => 'Електронна поща:',
+	'confirmaccount-notes'       => 'Допълнителни бележки:',
+	'confirmaccount-urls'        => 'Списък с уебсайтове:',
+	'confirmaccount-hold'        => 'Задържане',
+	'confirmaccount-ip'          => 'IP адрес:',
 );
 
 $wgConfirmAccountMessages['br'] = array(
