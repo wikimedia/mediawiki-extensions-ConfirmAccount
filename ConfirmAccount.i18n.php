@@ -829,6 +829,15 @@ $2
 Poden existir listaxes de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author Aksi great
+ */
+$wgConfirmAccountMessages['gu'] = array(
+	'requestaccount-legend2' => 'વ્યક્તિગત માહિતી',
+	'requestaccount-legend3' => 'અન્ય માહિતી',
+	'requestaccount-real'    => 'સાચુ નામ:',
+);
+
 /** Croatian (Hrvatski)
  * @author Dnik
  */
@@ -964,6 +973,10 @@ $2
 Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš wjace wo prawidłach za wužiwarske konta wědźeć.',
 );
 
+$wgConfirmAccountMessages['io'] = array(
+	'confirmaccount-wsum'         => 'Bonveno!',
+);
+
 $wgConfirmAccountMessages['la'] = array(
 	'requestaccount-real'         => 'Nomen verum:',
 	'requestaccount-same'         => '(aequus ad nomine vero)',
@@ -972,8 +985,23 @@ $wgConfirmAccountMessages['la'] = array(
 	'confirmaccount-wsum'         => 'Salve!',
 );
 
-$wgConfirmAccountMessages['io'] = array(
-	'confirmaccount-wsum'         => 'Bonveno!',
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$wgConfirmAccountMessages['lb'] = array(
+	'requestaccount-legend1' => 'Benotzerkonto',
+	'requestaccount-legend2' => 'Perséinlech Informatiounen',
+	'requestaccount-legend3' => 'Aner Informatiounen',
+	'requestaccount-real'    => 'Richtege Numm:',
+	'requestaccount-email'   => 'E-mail-Adress:',
+	'requestaccount-bio'     => 'Peréinlech Biographie:',
+	'confirmaccount-name'    => 'Benotzernumm',
+	'confirmaccount-real'    => 'Numm:',
+	'confirmaccount-real-q'  => 'Numm',
+	'confirmaccount-email'   => 'E-mail:',
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-bio'     => 'Biographie:',
+	'confirmaccount-bio-q'   => 'Biographie',
 );
 
 $wgConfirmAccountMessages['nl'] = array(
