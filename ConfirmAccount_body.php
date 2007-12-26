@@ -156,7 +156,7 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function doSubmit() {
-		global $wgOut, $wgUser, $wgAuth, $wgAccountRequestThrottle, $wgMemc;
+		global $wgOut, $wgUser, $wgAuth, $wgAccountRequestThrottle;
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );	
@@ -166,6 +166,8 @@ class RequestAccountPage extends SpecialPage {
 		}
 		# No request spamming...
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
+			global $wgMemc;
+			
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			$value = $wgMemc->get( $key );
 			if( $value > $wgAccountRequestThrottle ) {
@@ -318,6 +320,8 @@ class RequestAccountPage extends SpecialPage {
 		# No request spamming...
 		# BC: check if isPingLimitable() exists
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
+			global $wgMemc;
+			
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			$value = $wgMemc->incr( $key );
 			if( !$value ) {
@@ -704,6 +708,12 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= wfCloseElement( 'form' );
 		
 		$wgOut->addHTML( $form );
+		
+		global $wgMemc;
+		# Set a key to who is looking at this request.
+		# Have it expire in 10 minutes...
+		$key = wfMemcKey( 'acctrequest', 'view', $row->acr_id );
+		$wgMemc->set( $key, $wgUser->getID(), 1000*10 );
 	}
 	
 	/**
@@ -1057,7 +1067,16 @@ class ConfirmAccountsPage extends SpecialPage
 		} else if( $row->acr_held ) {
 			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
 			$r .= ' <b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'), User::whoIs($row->acr_user), $time ).'</b>';
+		} else {
+			global $wgMemc;
+			
+			$key = wfMemcKey( 'acctrequest', 'view', $row->acr_id );
+			$value = $wgMemc->get( $key );
+			if( $value ) {
+				$r .= ' <b>'.wfMsgExt( 'confirmaccount-viewing', array('parseinline'), User::whoIs($value) ).'</b>';
+			}
 		}
+		
 		$r .= '<br/><table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
 		if( !$wgUseRealNamesOnly ) {
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .

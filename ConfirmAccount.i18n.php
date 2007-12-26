@@ -109,6 +109,7 @@ This confirmation code will expire at $4.',
 	'confirmaccount-canthold' => 'This request is already either on hold or deleted.',
 	'confirmaccount-acc'     => 'Account request confirmed successfully; created new user account [[User:$1]].',
 	'confirmaccount-rej'     => 'Account request rejected successfully.',
+	'confirmaccount-viewing' => '(currently being viewed by [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
 	'confirmaccount-welc'    => "'''Welcome to ''{{SITENAME}}''!''' We hope you will contribute much and well. 
 	You'll probably want to read the [[{{MediaWiki:Helppage}}|help pages]]. Again, welcome and have fun!",
