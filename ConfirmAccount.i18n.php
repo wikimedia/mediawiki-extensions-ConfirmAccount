@@ -840,14 +840,35 @@ $wgConfirmAccountMessages['gu'] = array(
 );
 
 /** Croatian (Hrvatski)
+ * @author SpeedyGonsales
  * @author Dnik
  */
 $wgConfirmAccountMessages['hr'] = array(
-	'requestaccount-legend2' => 'Osobne informacije',
-	'requestaccount-legend3' => 'Ostale informacije',
-	'requestaccount-real'    => 'Pravo ime:',
-	'confirmaccount-real'    => 'Ime:',
-	'confirmaccount-real-q'  => 'Ime',
+	'requestaccount-legend2'  => 'Osobne informacije',
+	'requestaccount-legend3'  => 'Ostale informacije',
+	'requestaccount-real'     => 'Pravo ime:',
+	'confirmaccount-none-h'   => 'Nema zahtjeva u popisu čekanja.',
+	'confirmaccount-none-r'   => 'Nema nedavno odbijenih zahtjeva na popisu.',
+	'confirmaccount-badid'    => 'Nema zahtjeva koji ima dani ID. Najvjerojatnije je zahtjev već obrađen.',
+	'confirmaccount-back'     => 'Vidi popis zahtjeva za suradnički račun',
+	'confirmaccount-back2'    => 'Vidi popis nedavno odbijenih zahtjeva',
+	'confirmaccount-showheld' => 'Vidi popis zahtjeva na čekanju',
+	'confirmaccount-name'     => 'Suradničko ime',
+	'confirmaccount-real'     => 'Ime:',
+	'confirmaccount-real-q'   => 'Ime',
+	'confirmaccount-email-q'  => 'E-pošta (e-mail)',
+	'confirmaccount-bio'      => 'Biografija:',
+	'confirmaccount-bio-q'    => 'Biografija',
+	'confirmaccount-attach'   => 'Biografija/CV:',
+	'confirmaccount-notes'    => 'Dodatne bilješke:',
+	'confirmaccount-urls'     => 'Popis web stranica:',
+	'confirmaccount-none-p'   => '(nije naveden)',
+	'confirmaccount-review'   => 'Potvrdi/odbij',
+	'confirmaccount-econf'    => '(potvrđen)',
+	'confirmaccount-reject'   => '(zahtjev odbio [[User:$1|$1]] dana $2)',
+	'confirmaccount-create'   => 'Prihvati zahtjev (otvori suradnički račun)',
+	'confirmaccount-deny'     => 'Odbij (i skini s popisa)',
+	'confirmaccount-hold'     => 'Zadrži',
 );
 
 $wgConfirmAccountMessages['hsb'] = array(
@@ -1446,6 +1467,9 @@ $wgConfirmAccountMessages['ss'] = array(
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
 $wgConfirmAccountMessages['stq'] = array(
 	'requestaccount'             => 'Benutserkonto fräigje',
 	'requestaccount-text'        => "'''Fäl dät foulgjende Formular uut un ferseend dät, uum n Benutserkonto tou fräigjen'''. 
@@ -1531,6 +1555,7 @@ Wan du disse Siede ferlätst, sunner dät Konto tou bestäätigjen of outouliene
 	'confirmaccount-deny'        => 'Ouliene (Andraach läskje)',
 	'confirmaccount-hold'        => 'Markierd as „outäiwe“',
 	'confirmaccount-reason'      => 'Begruundenge (wäd in ju Mail an dän Andraachstaaler ienföiged):',
+	'confirmaccount-ip'          => 'IP-Addresse:',
 	'confirmaccount-submit'      => 'Ouseende',
 	'confirmaccount-needreason'  => 'Du moast ne Begruundenge ounreeke.',
 	'confirmaccount-canthold'    => 'Disse Froage wuude al as „outäiwe“ markierd of läsked.',
