@@ -5,9 +5,9 @@
  * @addtogroup Extensions
 */
 
-$wgConfirmAccountMessages = array();
+$messages = array();
 
-$wgConfirmAccountMessages['en'] = array(
+$messages['en'] = array(
 	# Request account page
 	'requestaccount'           => 'Request account',
 	'requestaccount-text'      => '\'\'\'Complete and submit the following form to request a user account\'\'\'. 
@@ -154,7 +154,7 @@ There may be contact lists on site that you can use if you want to know more abo
 /** Arabic (العربية)
  * @author Meno25
  */
-$wgConfirmAccountMessages['ar'] = array(
+$messages['ar'] = array(
 	'requestaccount'             => 'طلب حساب',
 	'requestaccount-text'        => "'''أكمل وابعث الاستمارة التالية لطلب حساب'''. 
 	
@@ -288,7 +288,7 @@ $2
 ربما تكون هناك قوائم اتصال في الموقع يمكنك استخدامها لو أردت أن تعرف المزيد حول سياسة حساب المستخدم.',
 );
 
-$wgConfirmAccountMessages['bcl'] = array(
+$messages['bcl'] = array(
 	'requestaccount-legend2'       => 'Personal na impormasyon',
 	'requestaccount-legend3'       => 'Ibang impormasyon',
 	'requestaccount-real'         => 'Totoong pangaran:',
@@ -301,7 +301,7 @@ $wgConfirmAccountMessages['bcl'] = array(
 /** Bulgarian (Български)
  * @author DCLXVI
  */
-$wgConfirmAccountMessages['bg'] = array(
+$messages['bg'] = array(
 	'requestaccount-page'        => '{{ns:project}}:Условия за ползване',
 	'requestaccount-dup'         => "'''Забележка: Вече сте влезли с регистрирана потребителска сметка.'''",
 	'requestaccount-legend1'     => 'Потребителска сметка',
@@ -325,12 +325,12 @@ $wgConfirmAccountMessages['bg'] = array(
 	'confirmaccount-ip'          => 'IP адрес:',
 );
 
-$wgConfirmAccountMessages['br'] = array(
+$messages['br'] = array(
 	'confirmaccount-email-q'      => 'Postel',
 );
 
 // German translations (by Rrosenfeld)
-$wgConfirmAccountMessages['de'] = array(
+$messages['de'] = array(
 	# Request account page
 	'requestaccount'          => 'Benutzerkonto beantragen',
 	'requestaccount-text'     => '\'\'\'Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen\'\'\'. 
@@ -481,7 +481,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
-$wgConfirmAccountMessages['el'] = array(
+$messages['el'] = array(
 	'requestaccount-legend1'      => 'Λογαριασμός χρήστη',
 	'requestaccount-legend2'      => 'Προσωπικές πληροφορίες',
 	'requestaccount-legend3'      => 'Άλλες πληροφορίες',
@@ -501,7 +501,7 @@ $wgConfirmAccountMessages['el'] = array(
 	'confirmaccount-wsum'         => 'Καλός ήρθατε!',
 );
 
-$wgConfirmAccountMessages['ext'] = array(
+$messages['ext'] = array(
 	'requestaccount-legend1'       => 'Cuenta d´usuáriu',
 	'requestaccount-legend2'       => 'Enhormación presonal',
 	'requestaccount-legend3'       => 'Mas enhormación',
@@ -517,7 +517,7 @@ $wgConfirmAccountMessages['ext'] = array(
  * @author SPQRobin
  * @author Dereckson
  */
-$wgConfirmAccountMessages['fr'] = array(
+$messages['fr'] = array(
 	'requestaccount'             => 'Demande de compte utilisateur',
 	'requestaccount-text'        => "'''Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur.'''. 
 	
@@ -641,7 +641,7 @@ $2
 Ceci permet d’être sur la liste des contacts du site, si vous désirez en savoir plus sur les règles concernant les comptes.',
 );
 
-$wgConfirmAccountMessages['frp'] = array(
+$messages['frp'] = array(
 	'requestaccount'              => 'Demanda de compto utilisator',
 	'requestaccount-text'         => '\'\'\'Rempléd et emmandâd lo formulèro ce-desot por demandar un compto utilisator.\'\'\'
 	
@@ -708,7 +708,7 @@ Ceti code de confirmacion èxpire lo $4.',
  * @author Alma
  * @author SPQRobin
  */
-$wgConfirmAccountMessages['gl'] = array(
+$messages['gl'] = array(
 	'requestaccount'             => 'Solicitar unha conta',
 	'requestaccount-text'        => "'''Complete e envíe o formulario seguinte para solicitar unha conta de usuario'''.
 
@@ -845,7 +845,7 @@ Poden existir listaxes de contacto no sitio que poida usar se quere saber máis 
 /** Gujarati (ગુજરાતી)
  * @author Aksi great
  */
-$wgConfirmAccountMessages['gu'] = array(
+$messages['gu'] = array(
 	'requestaccount-legend2' => 'વ્યક્તિગત માહિતી',
 	'requestaccount-legend3' => 'અન્ય માહિતી',
 	'requestaccount-real'    => 'સાચુ નામ:',
@@ -855,7 +855,7 @@ $wgConfirmAccountMessages['gu'] = array(
  * @author SpeedyGonsales
  * @author Dnik
  */
-$wgConfirmAccountMessages['hr'] = array(
+$messages['hr'] = array(
 	'requestaccount-legend2'  => 'Osobne informacije',
 	'requestaccount-legend3'  => 'Ostale informacije',
 	'requestaccount-real'     => 'Pravo ime:',
@@ -883,7 +883,7 @@ $wgConfirmAccountMessages['hr'] = array(
 	'confirmaccount-hold'     => 'Zadrži',
 );
 
-$wgConfirmAccountMessages['hsb'] = array(
+$messages['hsb'] = array(
 	'requestaccount'              => 'Wužiwarske konto sej žadać',
 	'requestaccount-text'         => '\'\'\'Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał\'\'\'. 
 
@@ -1007,11 +1007,11 @@ $2
 Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš wjace wo prawidłach za wužiwarske konta wědźeć.',
 );
 
-$wgConfirmAccountMessages['io'] = array(
+$messages['io'] = array(
 	'confirmaccount-wsum'         => 'Bonveno!',
 );
 
-$wgConfirmAccountMessages['la'] = array(
+$messages['la'] = array(
 	'requestaccount-real'         => 'Nomen verum:',
 	'requestaccount-same'         => '(aequus ad nomine vero)',
 	'confirmaccount-name'         => 'Nomen usoris',
@@ -1022,7 +1022,7 @@ $wgConfirmAccountMessages['la'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
-$wgConfirmAccountMessages['lb'] = array(
+$messages['lb'] = array(
 	'requestaccount-legend1' => 'Benotzerkonto',
 	'requestaccount-legend2' => 'Perséinlech Informatiounen',
 	'requestaccount-legend3' => 'Aner Informatiounen',
@@ -1043,7 +1043,7 @@ $wgConfirmAccountMessages['lb'] = array(
  * @author Siebrand
  * @author Annabel
  */
-$wgConfirmAccountMessages['nl'] = array(
+$messages['nl'] = array(
 	'requestaccount'             => 'Gebruiker aanvragen',
 	'requestaccount-text'        => "'''Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen'''. 
 	
@@ -1183,7 +1183,7 @@ Er kunnen contacteerlijsten zijn die u kan gebruiken als u meer wil te weten kom
  * @author Cedric31
  * @author SPQRobin
  */
-$wgConfirmAccountMessages['oc'] = array(
+$messages['oc'] = array(
 	'requestaccount'             => "Demanda de compte d'utilizaire",
 	'requestaccount-text'        => "'''Emplenatz e mandatz lo formulari çaijós per demandar un compte d’utilizaire.'''. Asseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte. Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus [[Special:Userlogin]].",
 	'requestaccount-page'        => "{{ns:project}}:Condicions d'utilizacion",
@@ -1263,14 +1263,14 @@ $wgConfirmAccountMessages['oc'] = array(
 	'confirmaccount-email-body5' => 'Abans que vòstra requèsta pel compte « $1 » pòsca èsser acceptada sus {{SITENAME}}, devètz produire qualques informacions suplementàrias. $2 Aquò permetís d’èsser sus la lista dels contactes del site, se desiratz ne saber mai sus las règlas concernent los comptes.',
 );
 
-$wgConfirmAccountMessages['pl'] = array(
+$messages['pl'] = array(
 	'acct_request_throttle_hit'   => 'Przepraszamy, zamówiłeś (-aś) już o $1 kont. Nie możesz wykonać więcej zamówień.',
 	'confirmaccount-email'        => 'E-mail:',
 	'confirmaccount-email-q'      => 'E-mail',
 	'confirmaccount-ip'           => 'Adres IP:',
 );
 
-$wgConfirmAccountMessages['pms'] = array(
+$messages['pms'] = array(
 	'requestaccount'              => 'Ciamé un cont',
 	'requestaccount-text'         => '\'\'\'Ch\'a completa e ch\'a manda sta domanda-sì për ciamé ch\'a-j deurbo sò cont utent\'\'\'. Per piasì, ch\'a varda d\'avej present le [[{{MediaWiki:Requestaccount-page}}|Condission ëd servissi]], anans che deurb-se un cont. Na vira che \'l cont a sia aprovà, a l\'arseivrà na notìfica për pòsta eletrònica e sò cont a sarà bon da dovré a l\'adrëssa [Special:Userlogin]].',
 	'requestaccount-dup'          => '\'\'\'Ch\'a ten-a present: al moment a l\'é già andrinta al sistema ën dovrand un cont registrà.\'\'\'',
@@ -1349,7 +1349,7 @@ Për na question ëd sigurëssa un a venta ch\'as cambia soa ciav la prima vira 
 	'confirmaccount-email-body5'  => 'Anans che soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a peula esse acetà, a dovrìa lassene dj\'anformassion adissionaj. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 );
 
-$wgConfirmAccountMessages['pt'] = array(
+$messages['pt'] = array(
 	'requestaccount'              => 'Requerer conta',
 	'requestaccount-legend1'      => 'Conta de utilizador',
 	'requestaccount-legend2'      => 'Informação pessoal',
@@ -1376,7 +1376,7 @@ $wgConfirmAccountMessages['pt'] = array(
 	'confirmaccount-wsum'         => 'Bem-vindo!',
 );
 
-$wgConfirmAccountMessages['rm'] = array(
+$messages['rm'] = array(
 	'confirmaccount-name'         => 'Num d\'utilisader',
 	'confirmaccount-real'         => 'Num:',
 	'confirmaccount-real-q'       => 'Num',
@@ -1385,7 +1385,7 @@ $wgConfirmAccountMessages['rm'] = array(
 /** Russian (Русский)
  * @author .:Ajvol:.
  */
-$wgConfirmAccountMessages['ru'] = array(
+$messages['ru'] = array(
 	'requestaccount'            => 'Запрос учётной записи',
 	'requestaccount-text'       => "'''Заполните и отправьте следующую форму запроса учётной записи.'''
 	
@@ -1432,7 +1432,7 @@ $3
 Этот код активации прекратит действие $4.',
 );
 
-$wgConfirmAccountMessages['sk'] = array(
+$messages['sk'] = array(
 	'requestaccount'              => 'Vyžiadať účet',
 	'requestaccount-text'         => '\'\'\'Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet\'\'\'. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{MediaWiki:Requestaccount-page}}|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].',
 	'requestaccount-page'         => '{{ns:project}}:Podmienky použitia',
@@ -1527,7 +1527,7 @@ $2
 Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak sa chcete dozvedieť viac o politike používateľských účtov.',
 );
 
-$wgConfirmAccountMessages['ss'] = array(
+$messages['ss'] = array(
 	'confirmaccount-real'         => 'Ligama:',
 	'confirmaccount-real-q'       => 'Ligama',
 );
@@ -1538,7 +1538,7 @@ $wgConfirmAccountMessages['ss'] = array(
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
-$wgConfirmAccountMessages['stq'] = array(
+$messages['stq'] = array(
 	'requestaccount'             => 'Benutserkonto fräigje',
 	'requestaccount-text'        => "'''Fäl dät foulgjende Formular uut un ferseend dät, uum n Benutserkonto tou fräigjen'''. 
 
@@ -1675,7 +1675,7 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
        musst du zusätzliche Informationen übermitteln.',
 );
 
-$wgConfirmAccountMessages['yue'] = array(
+$messages['yue'] = array(
 	# Request account page
 	'requestaccount'          => '請求戶口',
 	'requestaccount-text'      => '\'\'\'完成並遞交下面嘅表格去請求一個用戶戶口\'\'\'。 
@@ -1786,7 +1786,7 @@ $2
 響呢個網站度提供咗聯絡人一覽，你可以用去知道更多用戶戶口政策嘅資料。',
 );
 
-$wgConfirmAccountMessages['zh-hans'] = array(
+$messages['zh-hans'] = array(
 	# Request account page
 	'requestaccount'          => '请求账户',
 	'requestaccount-text'      => '\'\'\'完成并递交以下的表格去请求一个用户账户\'\'\'。 
@@ -1897,7 +1897,7 @@ $2
 在这个网站中度提供了联络人列表，您可以用去知道更多用户账户方针的资料。',
 );
 
-$wgConfirmAccountMessages['zh-hant'] = array(
+$messages['zh-hant'] = array(
 	# Request account page
 	'requestaccount'          => '請求帳戶',
 	'requestaccount-text'      => '\'\'\'完成並遞交以下的表格去請求一個用戶帳戶\'\'\'。 
@@ -2008,9 +2008,9 @@ $2
 在這個網站中度提供了聯絡人列表，您可以用去知道更多用戶帳戶方針的資料。',
 );
 
-$wgConfirmAccountMessages['zh'] = $wgConfirmAccountMessages['zh-hans'];
-$wgConfirmAccountMessages['zh-cn'] = $wgConfirmAccountMessages['zh-hans'];
-$wgConfirmAccountMessages['zh-hk'] = $wgConfirmAccountMessages['zh-hant'];
-$wgConfirmAccountMessages['zh-sg'] = $wgConfirmAccountMessages['zh-hans'];
-$wgConfirmAccountMessages['zh-tw'] = $wgConfirmAccountMessages['zh-hant'];
-$wgConfirmAccountMessages['zh-yue'] = $wgConfirmAccountMessages['yue'];
+$messages['zh'] = $messages['zh-hans'];
+$messages['zh-cn'] = $messages['zh-hans'];
+$messages['zh-hk'] = $messages['zh-hant'];
+$messages['zh-sg'] = $messages['zh-hans'];
+$messages['zh-tw'] = $messages['zh-hant'];
+$messages['zh-yue'] = $messages['yue'];

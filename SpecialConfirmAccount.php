@@ -49,14 +49,12 @@ $wgFileStore['accountreqs']['hash'] = 3;
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
 $wgGroupPermissions['bureaucrat']['requestips'] = true;
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 
 # Internationalisation
 function efLoadConfirmAccountsMessages() {
-	global $wgMessageCache, $wgConfirmAccountMessages;
-	require_once( dirname (__FILE__) . '/ConfirmAccount.i18n.php');
-	foreach( $wgConfirmAccountMessages as $key => $value ) {
-		$wgMessageCache->addMessages( $value, $key );
-	}
+	wfLoadExtensionMessages['ConfirmAccount'];
 }
 
 function efAddRequestLoginText( &$template ) {
