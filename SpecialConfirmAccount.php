@@ -54,7 +54,7 @@ $wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 
 # Internationalisation
 function efLoadConfirmAccountsMessages() {
-	wfLoadExtensionMessages['ConfirmAccount'];
+	wfLoadExtensionMessages( 'ConfirmAccount' );
 }
 
 function efAddRequestLoginText( &$template ) {
