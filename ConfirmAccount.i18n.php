@@ -30,6 +30,9 @@ $messages['en'] = array(
 	'requestaccount-real'     => 'Real name:',
 	'requestaccount-same'     => '(same as real name)',
 	'requestaccount-email'    => 'Email address:',
+	'requestaccount-reqtype'  => 'Position:',
+	'requestaccount-level-0'  => 'author',
+	'requestaccount-level-1'  => 'editor',
 	'requestaccount-bio'      => 'Personal biography:',
 	'requestaccount-attach'   => 'Resume or CV (optional):',
 	'requestaccount-notes'    => 'Additional notes:',
@@ -63,14 +66,22 @@ This confirmation code will expire at $4.',
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
 	# Confirm account page
-	'confirmaccounts'       => 'Confirm account requests', 
-	'confirmaccount-list'    => 'Below is a list of account requests awaiting approval. 
+	'confirmaccounts'         => 'Confirm account requests', 
+	'confirmaccount-maintext' => '\'\'\'This page is used to confirm pending account requests at \'\'{{SITENAME}}\'\'\'\'\'.
+	
+Each account request queue consists of three subqueues, one for open request, one for those that have been put on 
+hold by other administrators pending further information, and another for recently rejected requests.	
+	
+When responding to a request, carefully review it and, if needed, confirm the information contain therein. 
+Your actions will be privately logged. You are also expected to review any activity that takes place here aside 
+from what you do yourself.', 
+	'confirmaccount-list'     => 'Below is a list of account requests awaiting approval. 
 	Approved accounts will be created and removed from this list. Rejected accounts will simply be deleted from this 
 	list.',
 	'confirmaccount-list2'    => 'Below is a list recently rejected account requests which may automatically be deleted 
 	once several days old. They can still be approved into accounts, though you may want to first consult the rejecting 
 	admin before doing so.',
-	'confirmaccount-text'    => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. Carefully 
+	'confirmaccount-text'     => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. Carefully 
 	review and if needed, confirm, all the below information. Note that you can choose to create the account under a 
 	different username. Use this only to avoid 	collisions with other names.
 	
@@ -78,25 +89,42 @@ This confirmation code will expire at $4.',
 	'confirmaccount-none-o'   => 'There are currently no open pending account requests in this list.',
 	'confirmaccount-none-h'   => 'There are currently no held pending account requests in this list.',
 	'confirmaccount-none-r'   => 'There are currently no recently rejected account requests in this list.',
-	'confirmaccount-badid'    => 'There is no pending request corresponding to the given ID. It may have already been handled.',
+	'confirmaccount-real-q'   => 'Name',
+	'confirmaccount-email-q'  => 'Email',
+	'confirmaccount-bio-q'    => 'Biography',
 	'confirmaccount-back'     => 'View open pending account list',
 	'confirmaccount-back2'    => 'View recently rejected account list',
 	'confirmaccount-showheld' => 'View held pending account list',
+	'confirmaccount-review'   => 'Review',
+	'confirmaccount-types'    => 'Select an account confirmation queue from below:',
+	'confirmaccount-all'      => '(show all queues)',
+	'confirmaccount-type'     => 'Selected queue:',
+	'confirmaccount-type-0'   => 'prospective authors',
+	'confirmaccount-type-1'   => 'prospective editors',
+	'confirmaccount-q-open'   => 'open requests',
+	'confirmaccount-q-held'   => 'held requests',
+	'confirmaccount-q-rej'    => 'recently rejected requests',
+	
+	'confirmaccount-badid'    => 'There is no pending request corresponding to the given ID. It may have already been handled.',
+	'confirmaccount-legend1'  => 'User account',
+	'confirmaccount-legend2'  => 'Personal information',
+	'confirmaccount-legend3'  => 'Other information',
 	'confirmaccount-name'     => 'Username',
 	'confirmaccount-real'     => 'Name:',
-	'confirmaccount-real-q'   => 'Name',
 	'confirmaccount-email'    => 'Email:',
-	'confirmaccount-email-q'  => 'Email',
+	'confirmaccount-reqtype'  => 'Position:',
+	'confirmaccount-pos-0'    => 'author',
+	'confirmaccount-pos-1'    => 'editor',
 	'confirmaccount-bio'      => 'Biography:',
-	'confirmaccount-bio-q'    => 'Biography',
 	'confirmaccount-attach'   => 'Resume/CV:',
 	'confirmaccount-notes'    => 'Additional notes:',
 	'confirmaccount-urls'     => 'List of websites:',
 	'confirmaccount-none-p'   => '(not provided)',
-	'confirmaccount-review'   => 'Approve/Reject',
 	'confirmaccount-confirm'  => 'Use the options below to accept, deny, or hold this request:',
 	'confirmaccount-econf'    => '(confirmed)',
 	'confirmaccount-reject'   => '(rejected by [[User:$1|$1]] on $2)',
+	'confirmaccount-rational' => 'Rationale given to applicant:',
+	'confirmaccount-noreason' => '(none)',
 	'confirmaccount-held'     => '(marked "on hold" by [[User:$1|$1]] on $2)',
 	'confirmaccount-create'   => 'Accept (create account)',
 	'confirmaccount-deny'     => 'Reject (delist)',
@@ -149,6 +177,22 @@ There may be contact lists on site that you can use if you want to know more abo
 $2
 
 There may be contact lists on site that you can use if you want to know more about user account policy.',
+
+	'usercredentials'        => 'User credentials',
+	'usercredentials-leg'    => 'Lookup confirmed credentials for a user',
+	'usercredentials-user'   => 'Username:',
+	'usercredentials-text'   => 'Below are the validated credentials of the selected user account.',
+	'usercredentials-leg1'   => 'User account',
+	'usercredentials-leg2'   => 'Personal information',
+	'usercredentials-leg3'   => 'Other information',
+	'usercredentials-email'  => 'Email:',
+	'usercredentials-real'   => 'Real name:',
+	'usercredentials-bio'    => 'Biography:',
+	'usercredentials-attach' => 'Resume/CV:',
+	'usercredentials-notes'  => 'Additional notes:',
+	'usercredentials-urls'   => 'List of websites:',
+	'usercredentials-ip'     => 'Original IP address:',
+	'usercredentials-badid'  => 'No credentials found for this user. Check that the name is spelled correctly.',
 );
 
 /** Arabic (العربية)

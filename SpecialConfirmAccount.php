@@ -17,7 +17,8 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Confirm user accounts',
 	'description' => 'Gives bureaucrats the ability to confirm account requests',
 	'author' => 'Aaron Schulz',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount'
+	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
+	'version' => '1.0',
 );
 
 # Set the person's bio as their userpage?
@@ -39,18 +40,39 @@ $wgAccountRequestToS = true;
 # Show confirmation info fields
 $wgAccountRequestExtraInfo = true;
 
-# Location of attached files
+# Prospective account access levels. 
+# Should be integer -> (special page param,user group) pairs.
+# The special page param is used at Special:ConfirmAccount.
+$wgAccountRequestTypes = array(
+	0 => array( 'authors', 'user' )
+);
+
+# IMPORTANT: do we store the user's notes and credentials
+# for sucessful account request? This will be stored indefinetely
+# and will be accessible to users with crediential lookup permissions
+$wgConfirmAccountSaveInfo = true;
+
+# Location of attached files for pending requests
 $wgAllowAccountRequestFiles = true;
-$wgAccountRequestExts = array('txt','pdf','doc','latex','rtf','text','wp','wpd' );
+$wgAccountRequestExts = array('txt','pdf','doc','latex','rtf','text','wp','wpd','sxw');
 $wgFileStore['accountreqs']['directory'] = "{$wgUploadDirectory}/accountreqs";
 $wgFileStore['accountreqs']['url'] = null; // Private
 $wgFileStore['accountreqs']['hash'] = 3;
 
+# Location of credential files
+$wgFileStore['accountcreds']['directory'] = "{$wgUploadDirectory}/accountcreds";
+$wgFileStore['accountcreds']['url'] = null; // Private
+$wgFileStore['accountcreds']['hash'] = 3;
+
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
+# This right has the request IP show when confirming accounts
 $wgGroupPermissions['bureaucrat']['requestips'] = true;
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
+
+# If credentials are stored, this right lets users look them up
+$wgGroupPermissions['bureaucrat']['lookupcredentials'] = true;
 
 # Internationalisation
 function efLoadConfirmAccountsMessages() {
@@ -65,7 +87,6 @@ function efAddRequestLoginText( &$template ) {
 	if( !$wgUser->isAllowed('createaccount') ) {
 		$template->set( 'header', wfMsgExt('requestaccount-loginnotice', array('parse') ) );
 	}
-	
 	return true;
 }
 
@@ -92,6 +113,8 @@ if ( !function_exists( 'extAddSpecialPage' ) ) {
 extAddSpecialPage( dirname(__FILE__) . '/ConfirmAccount_body.php', 'RequestAccount', 'RequestAccountPage' );
 # Confirm accounts
 extAddSpecialPage( dirname(__FILE__) . '/ConfirmAccount_body.php', 'ConfirmAccounts', 'ConfirmAccountsPage' );
+# Account credentials
+extAddSpecialPage( dirname(__FILE__) . '/ConfirmAccount_body.php', 'UserCredentials', 'UserCredentialsPage' );
 
 # Add notice of where to request an account
 $wgHooks['UserCreateForm'][] = 'efAddRequestLoginText';
@@ -101,17 +124,22 @@ $wgHooks['AbortNewAccount'][] = 'efCheckIfAccountNameIsPending';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
 
 function efConfirmAccountSchemaUpdates() {
-	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields;
+	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields, $wgExtNewTables;
 	
 	$base = dirname(__FILE__);
-	if ($wgDBtype == 'mysql') {
+	if( $wgDBtype == 'mysql' ) {
 		$wgExtNewFields[] = array('account_requests', 'acr_filename',
 			"$base/archives/patch-acr_filename.sql" );
-	} else {
+			
+		$wgExtNewTables[] = array('account_credentials', "$base/archives/patch-account_credentials.sql" );
+	} else if( $wgDBtype == 'postgres' ) {
 		$wgExtPGNewFields[] = array('account_requests', 'acr_filename', "TEXT" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_held', "TIMESTAMPTZ" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_storage_key', "TEXT" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_comment', "TEXT" );
+		
+		$wgExtPGNewFields[] = array('account_requests', 'acr_level', "INTEGER" );
+		$wgExtNewTables[] = array('account_credentials', "$base/postgres/patch-account_credentials.sql" );
 	}
 	
 	return true;
