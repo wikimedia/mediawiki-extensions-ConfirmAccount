@@ -9,11 +9,12 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 efLoadConfirmAccountsMessages();
 
 class RequestAccountPage extends SpecialPage {
+
 	function __construct() {
 		parent::__construct( 'RequestAccount' );
 	}
 
-	function execute( $par = '' ) {
+	function execute( $par ) {
 		global $wgUser, $wgOut, $wgRequest, $action, $wgUseRealNamesOnly,
 			$wgAccountRequestToS, $wgAccountRequestExtraInfo, $wgAccountRequestTypes;
 		# If a user cannot make accounts, don't let them request them either
@@ -587,7 +588,7 @@ class ConfirmAccountsPage extends SpecialPage
         SpecialPage::SpecialPage('ConfirmAccounts','confirmaccount');
     }
 
-    function execute( $requestType = '' ) {
+    function execute( $par ) {
         global $wgRequest, $wgOut, $wgUser, $wgAccountRequestTypes;
         
 		if( !$wgUser->isAllowed( 'confirmaccount' ) ) {
@@ -597,12 +598,12 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$this->setHeaders();
 		
-		$this->specialPageParameter = $requestType;
+		$this->specialPageParameter = $par;
 		# Use the special page param to act as a super type.
 		# Convert this to its integer form.
 		$this->type = -1;
 		foreach( $wgAccountRequestTypes as $i => $params ) {
-			if( $params[0] == $requestType ) {
+			if( $params[0] == $par ) {
 				$this->type = $i;
 				break;
 			}
@@ -1359,7 +1360,7 @@ class UserCredentialsPage extends SpecialPage
         SpecialPage::SpecialPage('UserCredentials','lookupcredentials');
     }
 
-    function execute( $par = '' ) {
+    function execute( $par ) {
         global $wgRequest, $wgOut, $wgUser, $wgAccountRequestTypes;
         
 		if( !$wgUser->isAllowed( 'lookupcredentials' ) ) {
