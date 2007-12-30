@@ -138,7 +138,7 @@ function efConfirmAccountSchemaUpdates() {
 		$wgExtPGNewFields[] = array('account_requests', 'acr_storage_key', "TEXT" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_comment', "TEXT" );
 		
-		$wgExtPGNewFields[] = array('account_requests', 'acr_level', "INTEGER" );
+		$wgExtPGNewFields[] = array('account_requests', 'acr_type', "INTEGER" );
 		$wgExtNewTables[] = array('account_credentials', "$base/postgres/patch-account_credentials.sql" );
 	}
 	
