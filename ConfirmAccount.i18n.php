@@ -59,6 +59,9 @@ $3
 
 If the account is created, only you will be emailed the password. If this is *not* you, don\'t follow the link. 
 This confirmation code will expire at $4.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} account request',
+	'requestaccount-email-body-admin' => 'The account "$1" has request an account and is waiting for confirmation. 
+	The e-mail address has been confirmed. You can confirm the request here "$2".',
 
 	'acct_request_throttle_hit' => "Sorry, you have already requested $1 accounts. You can't make any more requests.",
 	

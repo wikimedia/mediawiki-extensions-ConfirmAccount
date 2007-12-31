@@ -478,7 +478,18 @@ class RequestAccountPage extends SpecialPage {
 		# Confirm if this token is in the pending requests
 		$name = $this->requestFromEmailToken( $code );
 		if( $name !== false ) {
+			# Send confirmation email to prospective user
 			$this->confirmEmail( $name );
+			# Send mail to admin after e-mail has been confirmed;
+			global $wgConfirmAccountContact;
+			if( $wgConfirmAccountContact ) {
+				$u = User::newFromName( $name, 'creatable' );
+				$u->setEmail( $wgConfirmAccountContact );
+				$title = Title::makeTitle( NS_SPECIAL, 'ConfirmAccounts' );
+				$url = $title->getFullUrl();
+				$u->sendMail( wfMsg('requestaccount-email-subj-admin'),
+					wfMsg( 'requestaccount-email-body-admin', $name, $url ) );
+			}
 			$wgOut->addWikiText( wfMsgHtml( 'request-account-econf' ) );
 			$wgOut->returnToMain();
 			return;

@@ -52,6 +52,10 @@ $wgAccountRequestTypes = array(
 # and will be accessible to users with crediential lookup permissions
 $wgConfirmAccountSaveInfo = true;
 
+# Send an email to ddress when account requests confirm their email.
+# Set to false to skip this.
+$wgConfirmAccountContact = false;
+
 # Location of attached files for pending requests
 $wgAllowAccountRequestFiles = true;
 $wgAccountRequestExts = array('txt','pdf','doc','latex','rtf','text','wp','wpd','sxw');
