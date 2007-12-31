@@ -9,7 +9,7 @@ ALTER TABLE /*$wgDBprefix*/account_requests
 -- When accounts are confirmed, the identity info goes here
 CREATE TABLE /*$wgDBprefix*/account_credentials (
   -- Revision ID #
-  acr_id int unsigned NOT NULL auto_increment,
+  acd_id int unsigned NOT NULL auto_increment,
   -- Foreign key to user.user_id
   acd_user_id int unsigned NOT NULL,
   -- Optional 'real name' to be displayed in credit listings
@@ -44,6 +44,6 @@ CREATE TABLE /*$wgDBprefix*/account_credentials (
   acd_comment varchar(255) NOT NULL default '',
   
   PRIMARY KEY (acd_user_id,acd_id),
-  UNIQUE KEY (acd_id),
+  UNIQUE KEY (acd_id)
   
 ) TYPE=InnoDB;

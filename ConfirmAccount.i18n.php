@@ -559,8 +559,8 @@ $messages['ext'] = array(
 );
 
 /** French (Français)
- * @author Sherbrooke
  * @author Grondin
+ * @author Sherbrooke
  * @author SPQRobin
  * @author Dereckson
  */
@@ -584,11 +584,14 @@ $messages['fr'] = array(
 	'requestaccount-real'        => 'Nom réel :',
 	'requestaccount-same'        => '(nom figurant dans votre état civil)',
 	'requestaccount-email'       => 'Adresse électronique :',
+	'requestaccount-reqtype'     => 'Situation :',
+	'requestaccount-level-0'     => 'auteur',
+	'requestaccount-level-1'     => 'éditeur',
 	'requestaccount-bio'         => 'Biographie personnelle:',
 	'requestaccount-attach'      => 'CV/Résumé (facultatif)',
 	'requestaccount-notes'       => 'Notes supplémentaires :',
-	'requestaccount-urls'        => 'Liste des sites Web. Si plusieurs, séparez-les par un saut de ligne :',
-	'requestaccount-agree'       => 'Vous devez certifier que votre nom réel est correct et vous acceptez les conditions d’utilisations du service.',
+	'requestaccount-urls'        => "Liste des sites Web. S'il y en a plusieurs, séparez-les par un saut de ligne :",
+	'requestaccount-agree'       => 'Vous devez certifier que votre nom réel est correct et que vous acceptez les conditions d’utilisations du service.',
 	'requestaccount-inuse'       => 'Le nom d’utilisateur est déjà utilisé dans une requête en cours d’approbation.',
 	'requestaccount-tooshort'    => 'Votre biographie doit avoir au moins {{PLURAL:$1|$1 mot|$1 mots}}.',
 	'requestaccount-exts'        => 'Le téléchargement des fichiers joints n’est pas permis.',
@@ -609,33 +612,58 @@ Ce code de confirmation expire le $4.',
 	'acct_request_throttle_hit'  => 'Désolé, vous avec demandé $1 comptes. Vous ne pouvez plus faire de demande.',
 	'requestaccount-loginnotice' => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
 	'confirmaccounts'            => 'Demande de confirmation de comptes',
+	'confirmaccount-maintext'    => "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.
+
+Chaque demande de compte utilisateur consiste en trois sous-listes : une pour les demandes non traitées, une pour les comptes réservés dans l'attente de plus amples informations, et une dernière pour les comptes récemments rejetés.
+
+Lors de la réponse à une demande, vérifier la attentivement et, le cas échéant, confirmez les informations qui y sont mentionnées. Vos actions seront inscrites séparément dans un journal. Vous pouvez aussi attendre la vérification de chaque activité qui prendront de la place séparément par rapport à ce que vous ferez vous-même.",
 	'confirmaccount-list'        => 'Voici, ci-dessous, la liste des comptes en attente d’approbation. Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront supprimés de cette même liste.',
 	'confirmaccount-list2'       => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
-	'confirmaccount-text'        => "Voici une demande en cours pour un compte utilisateur sur '''{{SITENAME}}'''. Attention, vérifiez et, si nécessaire, confirmez toutes les informations ci-dessous. Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres noms.
+	'confirmaccount-text'        => "Voici une demande en cours pour un compte utilisateur sur '''{{SITENAME}}'''.
 
-	Si vous quittez cette page sans confirmer ou rejeter cette demande, elle sera toujours mise en attente.",
+Vérifiez soigneusement toutes les informations ci-dessous. Si vous approuvez cette demande, utiliser la liste des situations à donner à l'utilisateur. Les éditions faites pour les biographies de l'application n'affecteront pas les références permanentes déjà stockées.
+
+Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres.
+
+Si vous quittez cette page sans confirmer ou rejeter cette demande, elle sera toujours mise en attente.",
 	'confirmaccount-none-o'      => "Il n'y a actuellement aucune demande de compte utilisateur en cours dans cette liste.",
 	'confirmaccount-none-h'      => "Il n'y a actuellement aucune réservation de compte utilisateur en cours dans cette liste.",
 	'confirmaccount-none-r'      => "Il n'y a actuellement aucun rejet récent de demande de compte utilisateur dans cette liste.",
-	'confirmaccount-badid'       => 'Il n’y a aucune demande en cours correspondant à l’ID indiqué. Il est possible qu‘il ait subi une maintenance.',
+	'confirmaccount-real-q'      => 'Nom',
+	'confirmaccount-email-q'     => 'Courriel',
+	'confirmaccount-bio-q'       => 'Biographie',
 	'confirmaccount-back'        => 'Voir la liste des demandes en cours',
 	'confirmaccount-back2'       => 'Voir la liste des comptes rejetés récemment.',
 	'confirmaccount-showheld'    => 'Voir la liste des comptes réservés en cours de traitement',
+	'confirmaccount-review'      => 'Approbation/Rejet',
+	'confirmaccount-types'       => "Sélectionnez un compte dans la liste d'attente ci-dessous :",
+	'confirmaccount-all'         => "(Voir toutes les listes d'attente)",
+	'confirmaccount-type'        => "Liste d'attente sélectionnée :",
+	'confirmaccount-type-0'      => 'auteurs éventuels',
+	'confirmaccount-type-1'      => 'éditeurs éventuels',
+	'confirmaccount-q-open'      => 'demandes faites',
+	'confirmaccount-q-held'      => 'demandes mises en attente',
+	'confirmaccount-q-rej'       => 'demandes rejetées récemment',
+	'confirmaccount-badid'       => 'Il n’y a aucune demande en cours correspondant à l’ID indiqué. Il est possible qu‘il ait subi une maintenance.',
+	'confirmaccount-legend1'     => 'Compte utilisateur',
+	'confirmaccount-legend2'     => 'Informations personnelles',
+	'confirmaccount-legend3'     => 'Autres informations',
 	'confirmaccount-name'        => 'Nom d’utilisateur',
 	'confirmaccount-real'        => 'Nom :',
-	'confirmaccount-real-q'      => 'Nom',
 	'confirmaccount-email'       => 'Courriel :',
-	'confirmaccount-email-q'     => 'Courriel',
+	'confirmaccount-reqtype'     => 'Situation :',
+	'confirmaccount-pos-0'       => 'auteur',
+	'confirmaccount-pos-1'       => 'éditeur',
 	'confirmaccount-bio'         => 'Biographie :',
-	'confirmaccount-bio-q'       => 'Biographie',
 	'confirmaccount-attach'      => 'CV/Résumé :',
 	'confirmaccount-notes'       => 'Notes supplémentaires :',
 	'confirmaccount-urls'        => 'Liste des site web :',
 	'confirmaccount-none-p'      => '(non pourvu)',
-	'confirmaccount-review'      => 'Approbation/Rejet',
 	'confirmaccount-confirm'     => 'Utilisez les boutons ci-dessous pour accepter ou rejeter la demande.',
 	'confirmaccount-econf'       => '(confirmé)',
 	'confirmaccount-reject'      => '(rejeté par [[User:$1|$1]] le $2)',
+	'confirmaccount-rational'    => 'Motif donné au candidat',
+	'confirmaccount-noreason'    => '(néant)',
 	'confirmaccount-held'        => 'Marqué « réservé » par [[User:$1|$1]] sur $2',
 	'confirmaccount-create'      => 'Approbation (crée le compte)',
 	'confirmaccount-deny'        => 'Rejet (supprime le compte)',
@@ -686,6 +714,21 @@ Il est possible d’être sur la liste des contacts afin de mieux connaître les
 $2
 
 Ceci permet d’être sur la liste des contacts du site, si vous désirez en savoir plus sur les règles concernant les comptes.',
+	'usercredentials'            => "Références de l'utilisateur",
+	'usercredentials-leg'        => "Vérification confirmée des références d'un utilisateur.",
+	'usercredentials-user'       => "Nom d'utilisateur :",
+	'usercredentials-text'       => 'Ci-dessous figurent les justificatifs validés pour le compte utilisateur sélectionné.',
+	'usercredentials-leg1'       => 'Compte utilisateur',
+	'usercredentials-leg2'       => 'Informations personnelles',
+	'usercredentials-leg3'       => 'Autres informations',
+	'usercredentials-email'      => 'Courriel :',
+	'usercredentials-real'       => 'Nom réel :',
+	'usercredentials-bio'        => 'Biographie :',
+	'usercredentials-attach'     => 'CV/Résumé :',
+	'usercredentials-notes'      => 'Notes supplémentaires :',
+	'usercredentials-urls'       => 'Liste des sites internet :',
+	'usercredentials-ip'         => 'Adresse IP initiale :',
+	'usercredentials-badid'      => 'Aucune référence de trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé.',
 );
 
 $messages['frp'] = array(
