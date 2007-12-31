@@ -81,9 +81,12 @@ from what you do yourself.',
 	'confirmaccount-list2'    => 'Below is a list recently rejected account requests which may automatically be deleted 
 	once several days old. They can still be approved into accounts, though you may want to first consult the rejecting 
 	admin before doing so.',
-	'confirmaccount-text'     => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. Carefully 
-	review and if needed, confirm, all the below information. Note that you can choose to create the account under a 
-	different username. Use this only to avoid 	collisions with other names.
+	'confirmaccount-text'     => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. 
+	
+	Carefully review the below information. If you are approving this request, use the position dropdown to set the 
+	account status of the user. Edits made to the the application biography will not affect any permanent credential
+	storage. Note that you can choose to create the account under a different username. Use this only to avoid 
+	collisions with other names.
 	
 	If you simply leave this page without confirming or denying this request, it will remain pending.',
 	'confirmaccount-none-o'   => 'There are currently no open pending account requests in this list.',
