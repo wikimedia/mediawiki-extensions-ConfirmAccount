@@ -539,6 +539,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'confirmaccount-canthold'   => 'Dieser Antrag wurde bereits als „abwarten“ markiert oder gelöscht.',
 	'confirmaccount-acc'        => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[{{ns:User}}:$1]] wurde angelegt.',
 	'confirmaccount-rej'        => 'Benutzerantrag wurde abgelehnt.',
+	'confirmaccount-viewing'    => '(wird aktuell angeschaut durch [[User:$1|$1]])',
 	'confirmaccount-summary'    => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
 	'confirmaccount-welc'       => "'''Willkommen bei ''{{SITENAME}}''!''' Wir hoffen, dass du viele gute Informationen beisteuerst.
 	Möglicherweise möchtest Du zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen. Nochmal: Willkommen und hab' Spaß!~",
