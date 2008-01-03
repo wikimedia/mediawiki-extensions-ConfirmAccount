@@ -403,6 +403,8 @@ $messages['bg'] = array(
 	'requestaccount-real'        => 'Име и фамилия:',
 	'requestaccount-same'        => '(съвпада с името)',
 	'requestaccount-email'       => 'Електронна поща:',
+	'requestaccount-level-0'     => 'автор',
+	'requestaccount-level-1'     => 'редактор',
 	'requestaccount-notes'       => 'Допълнителни бележки:',
 	'requestaccount-submit'      => 'Изпращане на заявката',
 	'requestaccount-loginnotice' => "За да получите потребителска сметка, необходимо е да '''[[Special:RequestAccount|изпратите заявка]]'''.",
@@ -411,6 +413,8 @@ $messages['bg'] = array(
 	'confirmaccount-q-open'      => 'отворени заявки',
 	'confirmaccount-q-held'      => 'задържани заявки',
 	'confirmaccount-legend1'     => 'Потребителска сметка',
+	'confirmaccount-legend2'     => 'Лична информация',
+	'confirmaccount-legend3'     => 'Друга информация',
 	'confirmaccount-name'        => 'Потребителско име',
 	'confirmaccount-real'        => 'Име:',
 	'confirmaccount-email'       => 'Електронна поща:',
@@ -423,6 +427,7 @@ $messages['bg'] = array(
 	'confirmaccount-hold'        => 'Задържане',
 	'confirmaccount-ip'          => 'IP адрес:',
 	'confirmaccount-submit'      => 'Потвърждаване',
+	'confirmaccount-wsum'        => 'Здравейте!',
 	'usercredentials-user'       => 'Потребителско име:',
 	'usercredentials-leg1'       => 'Потребителска сметка',
 	'usercredentials-leg2'       => 'Лична информация',
@@ -1980,6 +1985,17 @@ koast, wan du moor uur do Anfoarderengen wiete moatest.
 
 Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
        musst du zusätzliche Informationen übermitteln.',
+);
+
+/** Volapük (Volapük)
+ * @author Malafaya
+ */
+$messages['vo'] = array(
+	'confirmaccount-real-q' => 'Nem',
+	'confirmaccount-real'   => 'Nem:',
+	'confirmaccount-wsum'   => 'Benokömö!',
+	'usercredentials-leg3'  => 'Nüns votik',
+	'usercredentials-real'  => 'Nem jenöfik:',
 );
 
 $messages['yue'] = array(
