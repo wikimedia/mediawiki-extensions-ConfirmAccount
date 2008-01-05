@@ -1,6 +1,6 @@
 -- (c) Aaron Schulz, 2007
 
--- Table structure for table `Confirm account`
+-- Postgres schema for Confirm Account extension
 
 BEGIN;
 

@@ -140,9 +140,8 @@ function efConfirmAccountSchemaUpdates() {
 		$wgExtPGNewFields[] = array('account_requests', 'acr_filename', "TEXT" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_held', "TIMESTAMPTZ" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_storage_key', "TEXT" );
-		$wgExtPGNewFields[] = array('account_requests', 'acr_comment', "TEXT" );
-		
-		$wgExtPGNewFields[] = array('account_requests', 'acr_type', "INTEGER default 0" );
+		$wgExtPGNewFields[] = array('account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" );
+		$wgExtPGNewFields[] = array('account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" );
 		$wgExtNewTables[] = array('account_credentials', "$base/postgres/patch-account_credentials.sql" );
 	}
 	
