@@ -115,8 +115,8 @@ class RequestAccountPage extends SpecialPage {
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-real'), 'wpRealName' )."</td>";
 		$form .= "<td>".Xml::input( 'wpRealName', 35, $this->mRealName, array('id' => 'wpRealName') )."</td></tr>\n";
 		$form .= '</table>';
-		$form .= "<p>".wfMsgHtml('requestaccount-bio')."</p>";
-		$form .= "<p><textarea tabindex='1' name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
+		$form .= "<p>".wfMsgHtml('requestaccount-bio')."\n";
+		$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
 			htmlspecialchars($this->mBio) . "</textarea></p>\n";
 		$form .= '</fieldset>';
 		if( $wgAccountRequestExtraInfo ) {
@@ -128,12 +128,12 @@ class RequestAccountPage extends SpecialPage {
 				$form .= Xml::input( 'wpUploadFile', 35, '', 
 					array('id' => 'wpUploadFile', 'type' => 'file') )."</p>\n";
 			}
-			$form .= "<p>".wfMsgHtml('requestaccount-notes')."</p>\n";
-			$form .= "<p><textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+			$form .= "<p>".wfMsgHtml('requestaccount-notes')."\n";
+			$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 				htmlspecialchars($this->mNotes) .
 				"</textarea></p>\n";
-			$form .= "<p>".wfMsgHtml('requestaccount-urls')."</p>\n";
-			$form .= "<p><textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
+			$form .= "<p>".wfMsgHtml('requestaccount-urls')."\n";
+			$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
 				htmlspecialchars($this->mUrls) .
 				"</textarea></p>\n";
 			$form .= '</fieldset>';
@@ -758,8 +758,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<tr><td>".wfMsgHtml('confirmaccount-real')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
 		$form .= '</table>';
-		$form .= "<p>".wfMsgHtml('confirmaccount-bio')."</p>";
-		$form .= "<p><textarea tabindex='1' name='wpBio' id='wpNewBio' rows='10' cols='80' style='width:100%'>" .
+		$form .= "<p>".wfMsgHtml('confirmaccount-bio')."\n";
+		$form .= "<textarea tabindex='1' name='wpBio' id='wpNewBio' rows='10' cols='80' style='width:100%'>" .
 			htmlspecialchars($this->mBio) .
 			"</textarea></p>\n";
 		$form .= '</fieldset>';
@@ -773,8 +773,8 @@ class ConfirmAccountsPage extends SpecialPage
 		} else {
 			$form .= wfMsgHtml('confirmaccount-none-p');
 		}
-		$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."</p>\n";
-		$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+		$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."\n";
+		$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 			htmlspecialchars($row->acr_notes) .
 			"</textarea></p>\n";
 		$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
