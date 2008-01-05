@@ -40,9 +40,9 @@ $wgAccountRequestToS = true;
 # Show confirmation info fields
 $wgAccountRequestExtraInfo = true;
 
-# Prospective account access levels. 
+# Prospective account access levels.
 # Should be integer -> (special page param,user group,autotext) pairs.
-# The special page param is used at Special:ConfirmAccount.
+# The account queues are at Special:ConfirmAccount/param.
 $wgAccountRequestTypes = array(
 	0 => array( 'authors', 'user' )
 );
@@ -52,7 +52,7 @@ $wgAccountRequestTypes = array(
 # and will be accessible to users with crediential lookup permissions
 $wgConfirmAccountSaveInfo = true;
 
-# Send an email to ddress when account requests confirm their email.
+# Send an email to address when account requests confirm their email.
 # Set to false to skip this.
 $wgConfirmAccountContact = false;
 

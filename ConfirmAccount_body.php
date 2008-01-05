@@ -945,6 +945,7 @@ class ConfirmAccountsPage extends SpecialPage
 						$transaction->add( $storeNew->insert( $key, $path, 0 ) );
 					}
 				}
+				$acd_id = $dbw->nextSequenceValue( 'account_credentials_acd_id_seq' );
 				$dbw->begin();
 				# Move request data into a separate table
 				$dbw->insert( 'account_credentials',
@@ -961,7 +962,8 @@ class ConfirmAccountsPage extends SpecialPage
 						'acd_registration' => $row->acr_registration,
 						'acd_accepted' => $dbw->timestamp(),
 						'acd_user' => $wgUser->getID(),
-						'acd_comment' => $this->reason ),
+						'acd_comment' => $this->reason,
+						'acd_id' => $acd_id ),
 					__METHOD__ );
 			}
 			# Add to global user login system (if there is one)
@@ -1513,10 +1515,9 @@ class UserCredentialsPage extends SpecialPage
 		# For now, just get the first revision...
 		$dbr = wfGetDB( DB_SLAVE );
 		$row = $dbr->selectRow( 'account_credentials', '*', 
-			array( 'acd_id' => $uid ), 
+			array( 'acd_user_id' => $uid ), 
 			__METHOD__,
 			array( 'ORDER BY' => 'acd_user_id,acd_id ASC' ) );
-		
 		return $row;
 	}
 
