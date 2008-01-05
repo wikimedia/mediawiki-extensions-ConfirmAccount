@@ -741,7 +741,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<td>".htmlspecialchars($row->acr_email).$econf."</td></tr>\n";
 		
 		$options = array();
-		$form .= "<tr><td>".wfMsgHtml('confirmaccount-reqtype')."</td><td>";
+		$form .= "<tr><td><strong>".wfMsgHtml('confirmaccount-reqtype')."</strong></td><td>";
 		foreach( $wgAccountRequestTypes as $i => $params ) {
 			$options[] = Xml::option( wfMsg( "confirmaccount-pos-$i" ), $i, ($i == $this->mType) );
 		}
@@ -787,7 +787,7 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 		$form .= '</fieldset>';
 		
-		$form .= wfMsgExt( 'confirmaccount-confirm', array('parse') )."\n";
+		$form .= "<strong>".wfMsgExt( 'confirmaccount-confirm', array('parse') )."</strong>\n";
 		$form .= "<table cellpadding='5'><tr>";
 		$form .= "<td>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept', 
 			array('id' => 'submitCreate','onclick' => 'document.getElementById("wpComment").style.display="block"') );
@@ -1015,11 +1015,13 @@ class ConfirmAccountsPage extends SpecialPage
 					$transaction->commit();
 				}
 			}
-			# Grant any necessary rights	
+			$grouptext = $group = '';
+			# Grant any necessary rights
 			global $wgAccountRequestTypes;
 			if( array_key_exists($this->mType,$wgAccountRequestTypes) ) {
 				$params = $wgAccountRequestTypes[$this->mType];
 				$group = isset($params[1]) ? $params[1] : false;
+				$grouptext = isset($params[2]) ? $params[2] : '';
 				// Do not add blank or dummy groups
 				if( $group && $group !='user' && $group !='*' ) {
 					$user->addGroup( $group );
@@ -1035,13 +1037,18 @@ class ConfirmAccountsPage extends SpecialPage
 				
 				$autotext = strval($wgAutoUserBioText);
 				$body = $autotext ? "{$this->mBio}\n{$autotext}" : $this->mBio;
+				$body = $grouptext ? "{$body}\n{$grouptext}" : $body;
 				
 				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
 			}
 			global $wgAutoWelcomeNewUsers;
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
-				$utalk->doEdit( wfMsg('confirmaccount-welc') . ' ~~~~', 
+				# Is there a custom message?
+				$groupwelcome = wfMsg("confirmaccount-welc-{$group}");
+				$welcome = $groupwelcome ? $groupwelcome : wfMsg('confirmaccount-welc');
+				
+				$utalk->doEdit( $welcome . ' ~~~~', 
 					wfMsg('confirmaccount-wsum'), EDIT_MINOR );
 			}
 			

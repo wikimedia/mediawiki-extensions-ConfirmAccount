@@ -41,7 +41,7 @@ $wgAccountRequestToS = true;
 $wgAccountRequestExtraInfo = true;
 
 # Prospective account access levels. 
-# Should be integer -> (special page param,user group) pairs.
+# Should be integer -> (special page param,user group,autotext) pairs.
 # The special page param is used at Special:ConfirmAccount.
 $wgAccountRequestTypes = array(
 	0 => array( 'authors', 'user' )
