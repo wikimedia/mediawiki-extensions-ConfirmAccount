@@ -2029,11 +2029,20 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
  * @author Malafaya
  */
 $messages['vo'] = array(
-	'confirmaccount-real-q' => 'Nem',
-	'confirmaccount-real'   => 'Nem:',
-	'confirmaccount-wsum'   => 'Benokömö!',
-	'usercredentials-leg3'  => 'Nüns votik',
-	'usercredentials-real'  => 'Nem jenöfik:',
+	'requestaccount'            => 'Begön kali',
+	'requestaccount-real'       => 'Nem jenöfik:',
+	'requestaccount-level-0'    => 'lautan',
+	'requestaccount-submit'     => 'Begön kali',
+	'confirmaccount-real-q'     => 'Nem',
+	'confirmaccount-bio-q'      => 'Lifajenäd',
+	'confirmaccount-name'       => 'Gebananem',
+	'confirmaccount-real'       => 'Nem:',
+	'confirmaccount-noreason'   => '(nonik)',
+	'confirmaccount-wsum'       => 'Benokömö!',
+	'confirmaccount-email-subj' => 'Beg kala ela {{SITENAME}}',
+	'usercredentials-user'      => 'Gebananem:',
+	'usercredentials-leg3'      => 'Nüns votik',
+	'usercredentials-real'      => 'Nem jenöfik:',
 );
 
 $messages['yue'] = array(
