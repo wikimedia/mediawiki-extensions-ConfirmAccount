@@ -1048,10 +1048,9 @@ class ConfirmAccountsPage extends SpecialPage
 				$utalk = new Article( $user->getTalkPage() );
 				# Is there a custom message?
 				$welcome = wfEmptyMsg("confirmaccount-welc-{$group}") ? 
-					wfMsg('confirmaccount-welc') : wfMsg("confirmaccount-welc-{$group}")
+					wfMsg('confirmaccount-welc') : wfMsg("confirmaccount-welc-{$group}");
 				
-				$utalk->doEdit( $welcome . ' ~~~~', 
-					wfMsg('confirmaccount-wsum'), EDIT_MINOR );
+				$utalk->doEdit( $welcome . ' ~~~~', wfMsg('confirmaccount-wsum'), EDIT_MINOR );
 			}
 			
 			$this->showSuccess( $this->submitType, $user->getName(), $errors );
