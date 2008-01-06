@@ -136,13 +136,19 @@ function efConfirmAccountSchemaUpdates() {
 			"$base/archives/patch-acr_filename.sql" );
 			
 		$wgExtNewTables[] = array('account_credentials', "$base/archives/patch-account_credentials.sql" );
+		
+		$wgExtNewFields[] = array('account_requests', 'acr_areas',
+			"$base/archives/patch-acr_areas.sql" );
 	} else if( $wgDBtype == 'postgres' ) {
-		$wgExtPGNewFields[] = array('account_requests', 'acr_filename', "TEXT" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_held', "TIMESTAMPTZ" );
+		$wgExtPGNewFields[] = array('account_requests', 'acr_filename', "TEXT" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_storage_key', "TEXT" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" );
+		
 		$wgExtPGNewFields[] = array('account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" );
 		$wgExtNewTables[] = array('account_credentials', "$base/postgres/patch-account_credentials.sql" );
+		$wgExtPGNewFields[] = array('account_requests', 'acr_areas', "TEXT" );
+		$wgExtPGNewFields[] = array('account_credentials', 'acd_areas', "TEXT" );
 	}
 	
 	return true;

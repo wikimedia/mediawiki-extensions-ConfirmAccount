@@ -40,6 +40,8 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   acr_storage_key VARCHAR(64) NULL,
   -- Prospective account access level
   acr_type tinyint(255) unsigned default 0,
+  -- Areas of interest
+  acr_areas mediumblob NOT NULL,
   
   -- Timestamp of account registration.
   acr_registration char(14) NOT NULL,
@@ -88,6 +90,8 @@ CREATE TABLE /*$wgDBprefix*/account_credentials (
   -- Name of attached file (.pdf,.doc,.txt etc...)
   acd_filename VARCHAR(255) NULL,
   acd_storage_key VARCHAR(64) NULL,
+  -- Areas of interest
+  acd_areas mediumblob NOT NULL,
   
   -- Timestamp of account registration.
   acd_registration char(14) NOT NULL,

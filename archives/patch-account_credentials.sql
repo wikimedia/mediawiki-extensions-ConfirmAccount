@@ -32,6 +32,8 @@ CREATE TABLE /*$wgDBprefix*/account_credentials (
   -- Name of attached file (.pdf,.doc,.txt etc...)
   acd_filename VARCHAR(255) NULL,
   acd_storage_key VARCHAR(64) NULL,
+  -- Areas of interest
+  acd_areas mediumblob NOT NULL,
   
   -- Timestamp of account registration.
   acd_registration char(14) NOT NULL,
