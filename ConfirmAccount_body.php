@@ -1047,8 +1047,8 @@ class ConfirmAccountsPage extends SpecialPage
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
 				# Is there a custom message?
-				$groupwelcome = wfMsg("confirmaccount-welc-{$group}");
-				$welcome = $groupwelcome ? $groupwelcome : wfMsg('confirmaccount-welc');
+				$welcome = wfEmptyMsg("confirmaccount-welc-{$group}") ? 
+					wfMsg('confirmaccount-welc') : wfMsg("confirmaccount-welc-{$group}")
 				
 				$utalk->doEdit( $welcome . ' ~~~~', 
 					wfMsg('confirmaccount-wsum'), EDIT_MINOR );
