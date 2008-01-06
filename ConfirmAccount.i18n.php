@@ -1058,39 +1058,44 @@ $messages['hr'] = array(
 	'confirmaccount-hold'     => 'Zadrži',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
 $messages['hsb'] = array(
-	'requestaccount'              => 'Wužiwarske konto sej žadać',
-	'requestaccount-text'         => '\'\'\'Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał\'\'\'. 
+	'requestaccount'                  => 'Wužiwarske konto sej žadać',
+	'requestaccount-text'             => "'''Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał'''. 
 
 	Prošu přečitaj najprjedy [[{{MediaWiki:Requestaccount-page}}|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
-Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a móžeš so pod "[[{{ns:special}}:Userlogin|Konto wutworić abo so přizjewić]]" přizjewić.',
-	'requestaccount-page'         => '{{ns:project}}:Wužiwanske wuměnjenja',
-	'requestaccount-dup'          => '\'\'\'Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.\'\'\'',
-	'requestaccount-legend1'      => 'Wužiwarske konto:',
-	'requestaccount-legend2'      => 'Wosobinske informacije:',
-	'requestaccount-legend3'      => 'Dalše informacije',
-	'requestaccount-acc-text'     => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
-	'requestaccount-ext-text'     => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
-	'requestaccount-bio-text'     => 'Twoja biografija so jako spočatny wobsah twojeje wužiwarskeje strony składuje. Spytaj wšě trěbne doporučenja naspomnić, ale zawěsć, zo chceš te informacije woprawdźe wozjewić. Móžeš swoje wužiwarske mjeno pod "[[{{ns:special}}:Preferences|Nastajenja]]" změnić.',
-	'requestaccount-real'         => 'Woprawdźite mjeno:',
-	'requestaccount-same'         => '(kaž woprawdźite mjeno)',
-	'requestaccount-email'        => 'E-mejlowa adresa:',
-	'requestaccount-bio'          => 'Wosobinska biografija:',
-	'requestaccount-attach'       => 'Žiwjenjoběh',
-	'requestaccount-notes'        => 'Přidatne podaća:',
-	'requestaccount-urls'         => 'Lisćina webowych sydłow (přez linkowe łamanja wotdźělene)',
-	'requestaccount-agree'        => 'Dyrbiš potwjerdźić, zo twoje woprawdźite mjeno je korektne a wužiwarske wuměnjenja akceptuješ.',
-	'requestaccount-inuse'        => 'Wužiwarske mjeno so hižo w druhim kontowym požadanju wužiwa.',
-	'requestaccount-tooshort'     => 'Twoja biografija dyrbi znajmjeńša $1 słowow dołho być.',
-	'requestaccount-exts'         => 'Datajowy typ přiwěška je njedowoleny.',
-	'requestaccount-resub'        => 'Twoja žiwjenjoběhowa dataja dyrbi so z přičinow wěstoty znowa wubrać. Wostaj polo prózdne, jeli hižo nochceš tajku zapřijimać.',
-	'requestaccount-tos'          => 'Sym wužiwarske wuměnjenja strony {{SITENAME}} přečitał a budu do nich dźeržeć.',
-	'requestaccount-submit'       => 'Wužiwarske konto sej žadać',
-	'requestaccount-sent'         => 'Twoje kontowe požadanje  bu wuspěšnje wotpósłane a dyrbi so nětko přepruwować.',
-	'request-account-econf'       => 'Twoja e-mejlowa adresa bu wobkrućena a budźe so w twojim kontowym požadanju nalistować.',
-	'requestaccount-email-subj'   => '{{SITENAME}} Pruwowanje e-mejloweje adresy',
-	'requestaccount-email-body'   => 'Něštó z IP-adresu $1, snano ty, je pola {{SITENAME}} wužiwarske konto "$2" z twojej e-mejlowej adresu požadał.
+Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a móžeš so pod \"[[{{ns:special}}:Userlogin|Konto wutworić abo so přizjewić]]\" přizjewić.",
+	'requestaccount-page'             => '{{ns:project}}:Wužiwanske wuměnjenja',
+	'requestaccount-dup'              => "'''Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.'''",
+	'requestaccount-legend1'          => 'Wužiwarske konto:',
+	'requestaccount-legend2'          => 'Wosobinske informacije:',
+	'requestaccount-legend3'          => 'Dalše informacije',
+	'requestaccount-acc-text'         => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
+	'requestaccount-ext-text'         => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
+	'requestaccount-bio-text'         => 'Twoja biografija so jako spočatny wobsah twojeje wužiwarskeje strony składuje. Spytaj wšě trěbne doporučenja naspomnić, ale zawěsć, zo chceš te informacije woprawdźe wozjewić. Móžeš swoje wužiwarske mjeno pod "[[{{ns:special}}:Preferences|Nastajenja]]" změnić.',
+	'requestaccount-real'             => 'Woprawdźite mjeno:',
+	'requestaccount-same'             => '(kaž woprawdźite mjeno)',
+	'requestaccount-email'            => 'E-mejlowa adresa:',
+	'requestaccount-reqtype'          => 'Pozicija:',
+	'requestaccount-level-0'          => 'awtor',
+	'requestaccount-bio'              => 'Wosobinska biografija:',
+	'requestaccount-attach'           => 'Žiwjenjoběh',
+	'requestaccount-notes'            => 'Přidatne podaća:',
+	'requestaccount-urls'             => 'Lisćina webowych sydłow (přez linkowe łamanja wotdźělene)',
+	'requestaccount-agree'            => 'Dyrbiš potwjerdźić, zo twoje woprawdźite mjeno je korektne a wužiwarske wuměnjenja akceptuješ.',
+	'requestaccount-inuse'            => 'Wužiwarske mjeno so hižo w druhim kontowym požadanju wužiwa.',
+	'requestaccount-tooshort'         => 'Twoja biografija dyrbi znajmjeńša $1 słowow dołho być.',
+	'requestaccount-exts'             => 'Datajowy typ přiwěška je njedowoleny.',
+	'requestaccount-resub'            => 'Twoja žiwjenjoběhowa dataja dyrbi so z přičinow wěstoty znowa wubrać. Wostaj polo prózdne, jeli hižo nochceš tajku zapřijimać.',
+	'requestaccount-tos'              => 'Sym wužiwarske wuměnjenja strony {{SITENAME}} přečitał a budu do nich dźeržeć.',
+	'requestaccount-submit'           => 'Wužiwarske konto sej žadać',
+	'requestaccount-sent'             => 'Twoje kontowe požadanje  bu wuspěšnje wotpósłane a dyrbi so nětko přepruwować.',
+	'request-account-econf'           => 'Twoja e-mejlowa adresa bu wobkrućena a budźe so w twojim kontowym požadanju nalistować.',
+	'requestaccount-email-subj'       => '{{SITENAME}} Pruwowanje e-mejloweje adresy',
+	'requestaccount-email-body'       => 'Něštó z IP-adresu $1, snano ty, je pola {{SITENAME}} wužiwarske konto "$2" z twojej e-mejlowej adresu požadał.
 
 Zo by wobkrućił, zo woprawdźe ty sy tute konto pola {{SITENAME}} požadał, wočiń prošu slědowacy wotkaz we swojim wobhladowaku:
 
@@ -1101,62 +1106,64 @@ Hdyž je so wužiwarske konto wutworiło, dóstanješ dalšu mejlku z hesłom.
 Jeli *njej*sy wužiwarske konto požadał, njewočiń prošu tutón wotkaz!
 
 Tutón wobkrućenski kod budźe w $4 płaciwy.',
-	'acct_request_throttle_hit'   => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
-	'requestaccount-loginnotice'  => 'Zo by wužiwarske konto dóstał, dyrbiš wo nje \'\'\'[[{{ns:special}}:RequestAccount|prosyć]]\'\'\'.',
-	'confirmaccounts'             => 'Kontowe požadanja potwjerdźić',
-	'confirmaccount-list'         => 'Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.',
-	'confirmaccount-list2'        => 'Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.',
-	'confirmaccount-text'         => 'To je njerozsudźene požadanje za wužiwarskim kontom pola \'\'\'{{SITENAME}}\'\'\'. Pruwuj wšě deleka stejace informacije dokładnje a potwjerdź je. Prošu wobkedźbuj, zo móžeš konto, jeli trjeba, pod druhim wužiwarskim mjenom wutworić. Wužij to jenož, zo by kolizije z druhimi mjenami wobešoł.
+	'requestaccount-email-subj-admin' => 'Požadanje konta za {{SITENAME}}',
+	'requestaccount-email-body-admin' => 'Konto "$1" je konto požadał a čaka na potwjerdźenje. E-mejlowa adresa bu potwjerdźena. Móžeš požadanje tu "$" potwjerdźić.',
+	'acct_request_throttle_hit'       => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
+	'requestaccount-loginnotice'      => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[{{ns:special}}:RequestAccount|prosyć]]'''.",
+	'confirmaccounts'                 => 'Kontowe požadanja potwjerdźić',
+	'confirmaccount-list'             => 'Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.',
+	'confirmaccount-list2'            => 'Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.',
+	'confirmaccount-text'             => "To je njerozsudźene požadanje za wužiwarskim kontom pola '''{{SITENAME}}'''. Pruwuj wšě deleka stejace informacije dokładnje a potwjerdź je. Prošu wobkedźbuj, zo móžeš konto, jeli trjeba, pod druhim wužiwarskim mjenom wutworić. Wužij to jenož, zo by kolizije z druhimi mjenami wobešoł.
 
-Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wotpokazał, budźe požadanje njerozsudźene wostać.',
-	'confirmaccount-none-o'       => 'Tuchwilu žane wotewrjene kontowe požadanja w tutej lisćinje njejsu.',
-	'confirmaccount-none-h'       => 'Tuchwilu žane kontowe požadanja w tutej lisćinje w čakanskej sekli njejsu.',
-	'confirmaccount-none-r'       => 'Tuchwilu žane runje wotpokazane kontowe požadanja w tutej lisćinje njejsu.',
-	'confirmaccount-badid'        => 'Tuchwilu požadane k podatemu ID. Snano bu hižo sčinjene.',
-	'confirmaccount-back'         => 'Lisćinu njerozsudźenych požadanjow wobhladać',
-	'confirmaccount-back2'        => 'Lisćinu njedawno wotpokazanych požadanjow wobhladać',
-	'confirmaccount-showheld'     => 'Lisćina wotewrjenych kontow pokazać',
-	'confirmaccount-name'         => 'Wužiwarske mjeno',
-	'confirmaccount-real'         => 'Mjeno',
-	'confirmaccount-real-q'       => 'Mjeno',
-	'confirmaccount-email'        => 'E-mejl',
-	'confirmaccount-email-q'      => 'E-mejl',
-	'confirmaccount-bio'          => 'Biografija',
-	'confirmaccount-bio-q'        => 'Biografija',
-	'confirmaccount-attach'       => 'Žiwjenjoběh:',
-	'confirmaccount-notes'        => 'Přidatne přispomnjenki:',
-	'confirmaccount-urls'         => 'Lisćina webowych sydłow:',
-	'confirmaccount-none-p'       => '(njepodaty)',
-	'confirmaccount-review'       => 'Dowolić/Wotpokazać',
-	'confirmaccount-confirm'      => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
-	'confirmaccount-econf'        => '(potwjerdźene)',
-	'confirmaccount-reject'       => '(wot [[Wužiwar:$1|$1]] na $2 wotpokazany)',
-	'confirmaccount-held'         => '(wot [[User:$1|$1]] on $2 jako "čakacy" markěrowany)',
-	'confirmaccount-create'       => 'Akceptować (Konto wutworić)',
-	'confirmaccount-deny'         => 'Wotpokazać (Požadanje wotstronić)',
-	'confirmaccount-hold'         => 'Čakać dać',
-	'confirmaccount-spam'         => 'Spam (njesćel mejlku)',
-	'confirmaccount-reason'       => 'Komentar (budźe so do mejlki k próstwarjej zasunyć):',
-	'confirmaccount-ip'           => 'IP-adresa',
-	'confirmaccount-submit'       => 'Potwjerdźić',
-	'confirmaccount-needreason'   => 'Dyrbiš deleka w komentarowym polu přičinu podać.',
-	'confirmaccount-canthold'     => 'Tute požadanje je pak hižo čakanskej sekli pak wušmórnjene.',
-	'confirmaccount-acc'          => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[{{ns:User}}:$1]] bu wutworjene.',
-	'confirmaccount-rej'          => 'Požadanje za kontom bu wotpokazane.',
-	'confirmaccount-summary'      => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
-	'confirmaccount-welc'         => '\'\'\'Witaj do \'\'{{SITENAME}}\'\'!\'\'\' Nadźijemy so, zo dodaš wjele dobrych přinoškow.
+Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wotpokazał, budźe požadanje njerozsudźene wostać.",
+	'confirmaccount-none-o'           => 'Tuchwilu žane wotewrjene kontowe požadanja w tutej lisćinje njejsu.',
+	'confirmaccount-none-h'           => 'Tuchwilu žane kontowe požadanja w tutej lisćinje w čakanskej sekli njejsu.',
+	'confirmaccount-none-r'           => 'Tuchwilu žane runje wotpokazane kontowe požadanja w tutej lisćinje njejsu.',
+	'confirmaccount-real-q'           => 'Mjeno',
+	'confirmaccount-email-q'          => 'E-mejl',
+	'confirmaccount-bio-q'            => 'Biografija',
+	'confirmaccount-back'             => 'Lisćinu njerozsudźenych požadanjow wobhladać',
+	'confirmaccount-back2'            => 'Lisćinu njedawno wotpokazanych požadanjow wobhladać',
+	'confirmaccount-showheld'         => 'Lisćina wotewrjenych kontow pokazać',
+	'confirmaccount-review'           => 'Dowolić/Wotpokazać',
+	'confirmaccount-badid'            => 'Tuchwilu požadane k podatemu ID. Snano bu hižo sčinjene.',
+	'confirmaccount-name'             => 'Wužiwarske mjeno',
+	'confirmaccount-real'             => 'Mjeno',
+	'confirmaccount-email'            => 'E-mejl',
+	'confirmaccount-bio'              => 'Biografija',
+	'confirmaccount-attach'           => 'Žiwjenjoběh:',
+	'confirmaccount-notes'            => 'Přidatne přispomnjenki:',
+	'confirmaccount-urls'             => 'Lisćina webowych sydłow:',
+	'confirmaccount-none-p'           => '(njepodaty)',
+	'confirmaccount-confirm'          => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
+	'confirmaccount-econf'            => '(potwjerdźene)',
+	'confirmaccount-reject'           => '(wot [[Wužiwar:$1|$1]] na $2 wotpokazany)',
+	'confirmaccount-held'             => '(wot [[User:$1|$1]] on $2 jako "čakacy" markěrowany)',
+	'confirmaccount-create'           => 'Akceptować (Konto wutworić)',
+	'confirmaccount-deny'             => 'Wotpokazać (Požadanje wotstronić)',
+	'confirmaccount-hold'             => 'Čakać dać',
+	'confirmaccount-spam'             => 'Spam (njesćel mejlku)',
+	'confirmaccount-reason'           => 'Komentar (budźe so do mejlki k próstwarjej zasunyć):',
+	'confirmaccount-ip'               => 'IP-adresa',
+	'confirmaccount-submit'           => 'Potwjerdźić',
+	'confirmaccount-needreason'       => 'Dyrbiš deleka w komentarowym polu přičinu podać.',
+	'confirmaccount-canthold'         => 'Tute požadanje je pak hižo čakanskej sekli pak wušmórnjene.',
+	'confirmaccount-acc'              => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[{{ns:User}}:$1]] bu wutworjene.',
+	'confirmaccount-rej'              => 'Požadanje za kontom bu wotpokazane.',
+	'confirmaccount-summary'          => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
+	'confirmaccount-welc'             => "'''Witaj do ''{{SITENAME}}''!''' Nadźijemy so, zo dodaš wjele dobrych přinoškow.
 	Snano chceš najprjedy [[Pomoc:Prěnje kroki|Prěnje kroki]] čitać. Hišće raz: Witaj a wjele wjesela! 
-	[[User:Michawiki|Michawiki]] 17:08, 24 September 2007 (UTC)',
-	'confirmaccount-wsum'         => 'Witaj!',
-	'confirmaccount-email-subj'   => '{{SITENAME}} Požadanje za wužiwarskim kontom',
-	'confirmaccount-email-body'   => 'Twoje požadanje za wužiwarskim kontom bu na {{SITENAME}} schwalene.
+	[[User:Michawiki|Michawiki]] 17:08, 24 September 2007 (UTC)",
+	'confirmaccount-wsum'             => 'Witaj!',
+	'confirmaccount-email-subj'       => '{{SITENAME}} Požadanje za wužiwarskim kontom',
+	'confirmaccount-email-body'       => 'Twoje požadanje za wužiwarskim kontom bu na {{SITENAME}} schwalene.
 
 Wužiwarske mjeno: $1
 
 Hesło: $2
 
 Z přičinow wěstoty, měł ty swoje hesło při prěnim přizjewjenju na kóždy pad změnić. Zo by přizjewił, dźi přosu na stronu {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body2'  => 'Twoje požadanje za wužiwarskim kontom pola {{SITENAME}} bu schwalene.
+	'confirmaccount-email-body2'      => 'Twoje požadanje za wužiwarskim kontom pola {{SITENAME}} bu schwalene.
 
 Wužiwarske mjeno: $1
 
@@ -1165,17 +1172,17 @@ Hesło: $2
 $3
 
 Z přičinow wěstoty měł ty swoje hesło při prěnim přizjewjenu nak kóďy pad změnić. Zo by přizjewil, dźi prošu na stronu {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3'  => 'Bohužel bu twoje požadanje za wužiwarskim kontom "$1" pola {{SITENAME}} wotpokazane.
+	'confirmaccount-email-body3'      => 'Bohužel bu twoje požadanje za wužiwarskim kontom "$1" pola {{SITENAME}} wotpokazane.
 
 To móže wjele přičinow měć. Snano njejsy formular korektnje wupjelnił, njejsy dosć podaćow činił abo njejsy druhe kriterije spjelnił.
 
 Snano je na stronje kontaktowe adresy, na kotrež móžeš so wobroćić, jeli chceš wjace wo žadanjach wědźeć.',
-	'confirmaccount-email-body4'  => 'Bohužel bu twoje požadanje za wužiwarskim kontom "$1" na {{SITENAME}} wotpokazane.
+	'confirmaccount-email-body4'      => 'Bohužel bu twoje požadanje za wužiwarskim kontom "$1" na {{SITENAME}} wotpokazane.
 
 $2
 
 Snano su na sydle kontaktowe adresy, na kotrež so móžeš wobroćeć, jeli chceš wjace wo žadanjach wužiwarskich kontow wědźeć.',
-	'confirmaccount-email-body5'  => 'Prjedy hač konto "$1" požadaš, kotrež hodźi so na {{SITENAME}} akceptować, dyrbiš najprjedy někotre přidatne informacije podać.
+	'confirmaccount-email-body5'      => 'Prjedy hač konto "$1" požadaš, kotrež hodźi so na {{SITENAME}} akceptować, dyrbiš najprjedy někotre přidatne informacije podać.
 
 $2
 
@@ -1241,6 +1248,17 @@ $messages['lb'] = array(
 	'usercredentials-real'            => 'Richtege Numm:',
 	'usercredentials-bio'             => 'Biographie:',
 	'usercredentials-ip'              => 'Original IP-Adress:',
+);
+
+/** Low German (Plattdüütsch)
+ * @author Slomox
+ */
+$messages['nds'] = array(
+	'confirmaccount-name'  => 'Brukernaam',
+	'confirmaccount-real'  => 'Naam:',
+	'confirmaccount-ip'    => 'IP-Adress:',
+	'confirmaccount-wsum'  => 'Willkamen!',
+	'usercredentials-user' => 'Brukernaam:',
 );
 
 /** Dutch (Nederlands)
