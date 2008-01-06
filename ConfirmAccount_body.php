@@ -1468,7 +1468,7 @@ class UserCredentialsPage extends SpecialPage
 			$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars($row->acd_filename),
 				'file=' . $row->acd_storage_key );
 		} else {
-			$form .= wfMsgHtml('usercredentials-none-p');
+			$form .= wfMsgHtml('confirmaccount-none-p');
 		}
 		$form .= "</p><p>".wfMsgHtml('usercredentials-notes')."</p>\n";
 		$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
