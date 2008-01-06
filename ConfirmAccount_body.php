@@ -1391,7 +1391,7 @@ class UserCredentialsPage extends SpecialPage
 		$this->setHeaders();
 		
 		# A target user
-		$this->target = $wgRequest->getText( 'wpUsername' );
+		$this->target = $wgRequest->getText( 'target' );
 		# Attachments
 		$this->file = $wgRequest->getVal( 'file' );
 
@@ -1416,7 +1416,7 @@ class UserCredentialsPage extends SpecialPage
 		$form .= "<table><tr>";
 		$form .= "<td>".Xml::hidden( 'title', $wgTitle->getPrefixedText() )."</td>";
 		$form .= "<td>".wfMsgHtml("usercredentials-user")."</td>";
-		$form .= "<td>".Xml::input('wpUsername', 35, $username, array( 'id' => 'wpUsername' ) )."</td>";
+		$form .= "<td>".Xml::input('target', 35, $username, array( 'id' => 'wpUsername' ) )."</td>";
 		$form .= "<td>".Xml::submitButton( wfMsg( 'go' ) )."</td>";
 		$form .= "</tr></table>";
 		$form .= "</fieldset></form>\n";
