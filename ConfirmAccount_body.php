@@ -1576,7 +1576,7 @@ class UserCredentialsPage extends SpecialPage
 	function showCredentials() {
 		global $wgOut, $wgUser, $wgLang, $wgAccountRequestTypes;
 		
-		$titleObj = Title::makeTitle( NS_SPECIAL, "usercredentials" );
+		$titleObj = Title::makeTitle( NS_SPECIAL, "UserCredentials" );
 		
 		$row = $this->getRequest();
 		if( !$row ) {
