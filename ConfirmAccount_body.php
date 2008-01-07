@@ -57,7 +57,7 @@ class RequestAccountPage extends SpecialPage {
 			foreach( $areas as $n => $area ) {
 				$set = explode("|",$area,2);
 				if( $set[0] ) {
-					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					$formName = "wpArea-" . htmlspecialchars($set[0]);
 					$this->mAreas[$formName] = $wgRequest->getInt( $formName, -1 );
 					# Make a simple list of interests
 					if( $this->mAreas[$formName] > 0 )
@@ -141,7 +141,7 @@ class RequestAccountPage extends SpecialPage {
 						$form .= "</tr><tr valign='top'>";
 						$count = 1;
 					}
-					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					$formName = "wpArea-" . htmlspecialchars($set[0]);
 					if( isset($set[1]) ) {
 						$pg = $this->skin->makeKnownLink( $set[1], wfMsgHtml('requestaccount-info') );
 					} else {
@@ -716,7 +716,7 @@ class ConfirmAccountsPage extends SpecialPage
 			foreach( $areas as $area ) {
 				$set = explode("|",$area,2);
 				if( $set[0] ) {
-					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					$formName = "wpArea-" . htmlspecialchars($set[0]);
 					$this->mAreas[$formName] = $wgRequest->getInt( $formName, -1 );
 					# Make a simple list of interests
 					if( $this->mAreas[$formName] > 0 )
@@ -853,7 +853,7 @@ class ConfirmAccountsPage extends SpecialPage
 						$form .= "</tr><tr valign='top'>";
 						$count = 1;
 					}
-					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					$formName = "wpArea-" . htmlspecialchars($set[0]);
 					if( isset($set[1]) ) {
 						$pg = $this->skin->makeKnownLink( $set[1], wfMsgHtml('requestaccount-info') );
 					} else {
@@ -1618,7 +1618,7 @@ class UserCredentialsPage extends SpecialPage
 						$form .= "</tr><tr valign='top'>";
 						$count = 1;
 					}
-					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					$formName = "wpArea-" . htmlspecialchars($set[0]);
 					if( isset($set[1]) ) {
 						$pg = $this->skin->makeKnownLink( $set[1], wfMsgHtml('requestaccount-info') );
 					} else {
