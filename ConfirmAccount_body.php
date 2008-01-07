@@ -50,11 +50,27 @@ class RequestAccountPage extends SpecialPage {
 			$wgRequest->getBool('wpToS') : false;
 		$this->mType = $wgRequest->getInt( 'wpType' );
 		$this->mType = isset($wgAccountRequestTypes[$this->mType]) ? $this->mType : 0;
-			
+		# Load areas user plans to be active in...
+		$this->mAreas = $this->mAreaSet = array();
+		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
+			foreach( $areas as $n => $area ) {
+				$set = explode("|",$area,2);
+				if( $set[0] ) {
+					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					$this->mAreas[$formName] = $wgRequest->getInt( $formName, -1 );
+					# Make a simple list of interests
+					if( $this->mAreas[$formName] > 0 )
+						$this->mAreaSet[] = str_replace( '_', ' ', $set[0] );
+				}
+			}
+		}
 		# We may be confirming an email address here
 		$emailCode = $wgRequest->getText( 'wpEmailToken' );
 
-		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
+		$this->skin = $wgUser->getSkin();
+
+		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal('wpEditToken') ) ) {
 			if( !$this->mPrevAttachment )
 				$this->mPrevAttachment = $this->mSrcName;
 			$this->doSubmit();
@@ -87,7 +103,7 @@ class RequestAccountPage extends SpecialPage {
 		
 		$form  = wfOpenElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
 			'action' => $titleObj->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
-		$form .= '<fieldset><legend>' . wfMsgHtml('requestaccount-legend1') . '</legend>';
+		$form .= '<fieldset><legend>' . wfMsgHtml('requestaccount-leg-user') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-acc-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
 		if( $wgUseRealNamesOnly ) {
@@ -107,21 +123,52 @@ class RequestAccountPage extends SpecialPage {
 		$form .= implode( "\n", $options );
 		$form .= Xml::closeElement('select')."\n";
 		$form .= '</td></tr></table></fieldset>';
+		
+		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('requestaccount-leg-areas') . '</legend>';
+			$form .=  wfMsgExt( 'requestaccount-areas-text', array('parse') )."\n";
+			
+			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
+			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
+			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
+			$count = 0;
+			foreach( $areas as $area ) {
+				$set = explode("|",$area,3);
+				if( $set[0] ) {
+					$count++;
+					if( $count > 5 ) {
+						$form .= "</tr><tr valign='top'>";
+						$count = 1;
+					}
+					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					if( isset($set[1]) ) {
+						$pg = $this->skin->makeKnownLink( $set[1], wfMsgHtml('requestaccount-info') );
+					} else {
+						$pg = '';
+					}
+					
+					$form .= "<td>".wfCheckLabel( $set[0], $formName, $formName, $this->mAreas[$formName] > 0 )." {$pg}</td>\n";
+				}
+			}
+			$form .= "</tr></table></div>";
+			$form .= '</fieldset>';
+		}
 
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('requestaccount-legend2') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('requestaccount-leg-person') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-bio-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-real'), 'wpRealName' )."</td>";
 		$form .= "<td>".Xml::input( 'wpRealName', 35, $this->mRealName, array('id' => 'wpRealName') )."</td></tr>\n";
 		$form .= '</table>';
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."\n";
-		$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%'>" .
+		$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 			htmlspecialchars($this->mBio) . "</textarea></p>\n";
 		$form .= '</fieldset>';
 		if( $wgAccountRequestExtraInfo ) {
 			$form .= '<fieldset>';
-			$form .= '<legend>' . wfMsgHtml('requestaccount-legend3') . '</legend>';
+			$form .= '<legend>' . wfMsgHtml('requestaccount-leg-other') . '</legend>';
 			$form .= wfMsgExt( 'requestaccount-ext-text', array('parse') )."\n";
 			if( $wgAllowAccountRequestFiles ) {
 				$form .= "<p>".wfMsgHtml('requestaccount-attach')." ";
@@ -129,11 +176,11 @@ class RequestAccountPage extends SpecialPage {
 					array('id' => 'wpUploadFile', 'type' => 'file') )."</p>\n";
 			}
 			$form .= "<p>".wfMsgHtml('requestaccount-notes')."\n";
-			$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+			$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%;background-color:#f9f9f9;'>" .
 				htmlspecialchars($this->mNotes) .
 				"</textarea></p>\n";
 			$form .= "<p>".wfMsgHtml('requestaccount-urls')."\n";
-			$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%'>" .
+			$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 				htmlspecialchars($this->mUrls) .
 				"</textarea></p>\n";
 			$form .= '</fieldset>';
@@ -323,6 +370,7 @@ class RequestAccountPage extends SpecialPage {
 				'acr_urls' => $this->mUrls,
 				'acr_filename' => isset($this->mSrcName) ? $this->mSrcName : null,
 				'acr_type' => $this->mType,
+				'acr_areas' => self::flattenAreas( $this->mAreaSet ),
 				'acr_storage_key' => isset($key) ? $key : null,
 				'acr_comment' => '',
 				'acr_email_token' => md5($token),
@@ -367,6 +415,27 @@ class RequestAccountPage extends SpecialPage {
 		$wgOut->addWikiText( wfMsg( "requestaccount-sent" ) );
 
 		$wgOut->returnToMain();
+	}
+	
+	/**
+	 * Flatten an areas of interest array
+	 * @access private
+	 */
+	static function flattenAreas( $areas ) {
+		$flatAreas = '';
+		foreach( $areas as $area ) {
+			$flatAreas .= $area."\n";
+		}
+		return $flatAreas;
+	}
+	
+	static function expandAreas( $areas ) {
+		$list = explode("\n",$areas);
+		foreach( $list as $n => $item ) {
+			$list[$n] = trim("wpArea-".str_replace( ' ', '_', $item ));
+		}
+		unset( $list[count($list)-1] );
+		return $list;
 	}
 	
 	/**
@@ -639,6 +708,22 @@ class ConfirmAccountsPage extends SpecialPage
 
 		$this->submitType = $wgRequest->getVal( 'wpSubmitType' );
 		$this->reason = $wgRequest->getText( 'wpReason' );
+		
+		# Load areas user plans to be active in...
+		$this->mAreas = $this->mAreaSet = array();
+		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
+			foreach( $areas as $area ) {
+				$set = explode("|",$area,2);
+				if( $set[0] ) {
+					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					$this->mAreas[$formName] = $wgRequest->getInt( $formName, -1 );
+					# Make a simple list of interests
+					if( $this->mAreas[$formName] > 0 )
+						$this->mAreaSet[] = str_replace( '_', ' ', $set[0] );
+				}
+			}
+		}
 
 		$this->skin = $wgUser->getSkin();
 		
@@ -731,7 +816,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form  = wfOpenElement( 'form', array( 'method' => 'post', 'name' => 'accountconfirm',
 			'action' => $titleObj->getLocalUrl() ) );
 		$form .= "<fieldset>";
-		$form .= '<legend>' . wfMsgHtml('confirmaccount-legend1') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-user') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpNewName' )."</td>";
 		$form .= "<td>".Xml::input( 'wpNewName', 30, $this->mUsername, array('id' => 'wpNewName') )."</td></tr>\n";
@@ -752,20 +837,51 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$form .= '</table></fieldset>';
 		
+		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-areas') . '</legend>';
+			$form .=  wfMsgExt( 'requestaccount-areas-text', array('parse') )."\n";
+			
+			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
+			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
+			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
+			$count = 0;
+			foreach( $areas as $area ) {
+				$set = explode("|",$area,3);
+				if( $set[0] ) {
+					$count++;
+					if( $count > 5 ) {
+						$form .= "</tr><tr valign='top'>";
+						$count = 1;
+					}
+					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					if( isset($set[1]) ) {
+						$pg = $this->skin->makeKnownLink( $set[1], wfMsgHtml('requestaccount-info') );
+					} else {
+						$pg = '';
+					}
+					
+					$form .= "<td>".wfCheckLabel( $set[0], $formName, $formName, $this->mAreas[$formName] > 0 )." {$pg}</td>\n";
+				}
+			}
+			$form .= "</tr></table></div>";
+			$form .= '</fieldset>';
+		}
+		
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('confirmaccount-legend2') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-person') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".wfMsgHtml('confirmaccount-real')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
 		$form .= '</table>';
 		$form .= "<p>".wfMsgHtml('confirmaccount-bio')."\n";
-		$form .= "<textarea tabindex='1' name='wpBio' id='wpNewBio' rows='10' cols='80' style='width:100%'>" .
+		$form .= "<textarea tabindex='1' name='wpBio' id='wpNewBio' rows='10' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 			htmlspecialchars($this->mBio) .
 			"</textarea></p>\n";
 		$form .= '</fieldset>';
 		
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('confirmaccount-legend3') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-other') . '</legend>';
 		$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ';
 		if( $row->acr_filename ) {
 			$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars($row->acr_filename),
@@ -787,7 +903,7 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 		$form .= '</fieldset>';
 		
-		$form .= "<strong>".wfMsgExt( 'confirmaccount-confirm', array('parse') )."</strong>\n";
+		$form .= "<strong>".wfMsgExt( 'confirmaccount-confirm', array('parseinline') )."</strong>\n";
 		$form .= "<table cellpadding='5'><tr>";
 		$form .= "<td>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept', 
 			array('id' => 'submitCreate','onclick' => 'document.getElementById("wpComment").style.display="block"') );
@@ -959,6 +1075,7 @@ class ConfirmAccountsPage extends SpecialPage
 						'acd_ip' => $row->acr_ip,
 						'acd_filename' => $row->acr_filename,
 						'acd_storage_key' => $row->acr_storage_key,
+						'acd_areas' => $row->acr_areas,
 						'acd_registration' => $row->acr_registration,
 						'acd_accepted' => $dbw->timestamp(),
 						'acd_user' => $wgUser->getID(),
@@ -1040,6 +1157,24 @@ class ConfirmAccountsPage extends SpecialPage
 				$autotext = strval($wgAutoUserBioText);
 				$body = $autotext ? "{$this->mBio}\n{$autotext}" : $this->mBio;
 				$body = $grouptext ? "{$body}\n{$grouptext}" : $body;
+				# Add any interest categories
+				if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+					$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
+					foreach( $areas as $n => $line ) {
+						$set = explode("|",$line);
+						$name = str_replace("_"," ",$set[0]);
+						
+						if( in_array($set[0],$this->mAreaSet) ) {
+							# General userpage text for anyone with this interest
+							if( isset($set[2]) )
+								$body .= $set[2];
+							# Message for users with this interested with the given account type
+							# MW: message of format <name>|<wiki page>|<anyone>|<group0>|<group1>...
+							if( isset($set[3+$this->mType]) && $set[3+$this->mType] )
+								$body .= $set[3+$this->mType];
+						}
+					}
+				}
 				
 				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
 			}
@@ -1047,7 +1182,7 @@ class ConfirmAccountsPage extends SpecialPage
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
 				# Is there a custom message?
-				$welcome = wfEmptyMsg("confirmaccount-welc-{$group}") ? 
+				$welcome = wfEmptyMsg( "confirmaccount-welc-{$group}", wfMsg("confirmaccount-welc-{$group}") ) ? 
 					wfMsg('confirmaccount-welc') : wfMsg("confirmaccount-welc-{$group}");
 				
 				$utalk->doEdit( $welcome . ' ~~~~', wfMsg('confirmaccount-wsum'), EDIT_MINOR );
@@ -1105,10 +1240,21 @@ class ConfirmAccountsPage extends SpecialPage
 			__METHOD__ );
 		
 		# Check if parameters are to be overridden
-		if( $row  ) {
+		if( $row ) {
 			$this->mUsername = $this->mUsername ? $this->mUsername : $row->acr_name;
 			$this->mBio = $this->mBio ? $this->mBio : $row->acr_bio;
 			$this->mType = $this->mType ? $this->mType : $row->acr_type;
+			$rowareas = RequestAccountPage::expandAreas( $row->acr_areas );	
+			
+			foreach( $this->mAreas as $area => $within ) {
+				# If admin didn't set any of these checks, go back to how the user set them
+				if( $within == -1 ) {
+					if( in_array($area,$rowareas) )
+						$this->mAreas[$area] = 1;
+					else
+						$this->mAreas[$area] = 0;
+				}
+			}
 		}
 		return $row;
 	}
@@ -1344,6 +1490,10 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		$this->mLimit = $urlLimit ? $urlLimit : 20;
 	}
 	
+	function getTitle() {
+		return Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->mForm->specialPageParameter}" );
+	}
+	
 	function formatRow( $row ) {
 		$block = new Block;
 		return $this->mForm->formatRow( $row );
@@ -1437,7 +1587,7 @@ class UserCredentialsPage extends SpecialPage
 		$wgOut->addWikiText( wfMsg( "usercredentials-text" ) );
 		
 		$form  = "<fieldset>";
-		$form .= '<legend>' . wfMsgHtml('usercredentials-leg1') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('usercredentials-leg-user') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".wfMsgHtml('username')."</td>";
 		$form .= "<td>".htmlspecialchars($this->target)."</td></tr>\n";
@@ -1448,8 +1598,41 @@ class UserCredentialsPage extends SpecialPage
 		
 		$form .= '</table></fieldset>';
 		
+		$areaSet = RequestAccountPage::expandAreas( $row->acd_areas );
+		
+		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-areas') . '</legend>';
+			
+			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
+			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
+			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
+			$count = 0;
+			
+			$att = array('disabled' => 'disabled');
+			foreach( $areas as $area ) {
+				$set = explode("|",$area,3);
+				if( $set[0] ) {
+					$count++;
+					if( $count > 5 ) {
+						$form .= "</tr><tr valign='top'>";
+						$count = 1;
+					}
+					$formName = "wpArea-" . str_replace( ' ', '_', $set[0] );
+					if( isset($set[1]) ) {
+						$pg = $this->skin->makeKnownLink( $set[1], wfMsgHtml('requestaccount-info') );
+					} else {
+						$pg = '';
+					}
+					$form .= "<td>".wfCheckLabel( $set[0], $formName, $formName, in_array($formName,$areaSet), $att )." {$pg}</td>\n";
+				}
+			}
+			$form .= "</tr></table></div>";
+			$form .= '</fieldset>';
+		}
+		
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('usercredentials-leg2') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('usercredentials-leg-person') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".wfMsgHtml('usercredentials-real')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acd_real_name)."</td></tr>\n";
@@ -1461,7 +1644,7 @@ class UserCredentialsPage extends SpecialPage
 		$form .= '</fieldset>';
 		
 		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('usercredentials-leg3') . '</legend>';
+		$form .= '<legend>' . wfMsgHtml('usercredentials-leg-other') . '</legend>';
 		$form .= '<p>'.wfMsgHtml('usercredentials-attach') . ' ';
 		if( $row->acd_filename ) {
 			$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars($row->acd_filename),
