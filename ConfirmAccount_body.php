@@ -56,7 +56,7 @@ class RequestAccountPage extends SpecialPage {
 			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
 			foreach( $areas as $n => $area ) {
 				$set = explode("|",$area,2);
-				if( $set[0] ) {
+				if( $set[0] && isset($set[1]) ) {
 					$formName = "wpArea-" . htmlspecialchars(str_replace(' ','_',$set[0]));
 					$this->mAreas[$formName] = $wgRequest->getInt( $formName, -1 );
 					# Make a simple list of interests
@@ -135,7 +135,7 @@ class RequestAccountPage extends SpecialPage {
 			$count = 0;
 			foreach( $areas as $area ) {
 				$set = explode("|",$area,3);
-				if( $set[0] ) {
+				if( $set[0] && isset($set[1]) ) {
 					$count++;
 					if( $count > 5 ) {
 						$form .= "</tr><tr valign='top'>";
@@ -715,7 +715,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
 			foreach( $areas as $area ) {
 				$set = explode("|",$area,2);
-				if( $set[0] ) {
+				if( $set[0] && isset($set[1]) ) {
 					$formName = "wpArea-" . htmlspecialchars(str_replace(' ','_',$set[0]));
 					$this->mAreas[$formName] = $wgRequest->getInt( $formName, -1 );
 					# Make a simple list of interests
@@ -847,7 +847,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$count = 0;
 			foreach( $areas as $area ) {
 				$set = explode("|",$area,3);
-				if( $set[0] ) {
+				if( $set[0] && isset($set[1]) ) {
 					$count++;
 					if( $count > 5 ) {
 						$form .= "</tr><tr valign='top'>";
@@ -1612,7 +1612,7 @@ class UserCredentialsPage extends SpecialPage
 			$att = array('disabled' => 'disabled');
 			foreach( $areas as $area ) {
 				$set = explode("|",$area,3);
-				if( $set[0] ) {
+				if( $set[0] && isset($set[1]) ) {
 					$count++;
 					if( $count > 5 ) {
 						$form .= "</tr><tr valign='top'>";
