@@ -840,7 +840,6 @@ class ConfirmAccountsPage extends SpecialPage
 		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-areas') . '</legend>';
-			$form .=  wfMsgExt( 'requestaccount-areas-text', array('parse') )."\n";
 			
 			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
