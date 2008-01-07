@@ -1208,7 +1208,8 @@ class ConfirmAccountsPage extends SpecialPage
 			$dbw->begin();
 			$dbw->update( 'account_requests',
 				array( 'acr_held' => $dbw->timestamp(), 
-					'acr_user' => $wgUser->getID() ),
+					'acr_user' => $wgUser->getID(),
+					'acd_comment' => $this->reason ),
 				array( 'acr_id' => $this->acrID, 'acr_held IS NULL', 'acr_deleted' => 0 ), 
 					__METHOD__ );
 			# Do not send multiple times
