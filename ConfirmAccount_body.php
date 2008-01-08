@@ -1603,15 +1603,28 @@ class UserCredentialsPage extends SpecialPage
 		
 		$wgOut->addWikiText( wfMsg( "usercredentials-text" ) );
 		
+		$user = User::newFromName( $this->target );
+		
+		$list = array();
+		foreach( $user->getGroups() as $group )
+			$list[] = self::buildGroupLink( $group );
+
+		$grouplist = '';
+		if( count( $list ) > 0 ) {
+			$grouplist = '<tr><td>'.wfMsgHtml( 'usercredentials-member' ).'</td><td>'.implode( ', ', $list ).'</td></tr>';
+		}
+		
 		$form  = "<fieldset>";
 		$form .= '<legend>' . wfMsgHtml('usercredentials-leg-user') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".wfMsgHtml('username')."</td>";
-		$form .= "<td>".htmlspecialchars($this->target)."</td></tr>\n";
+		$form .= "<td>".$this->skin->makeLinkObj( $user->getUserPage(), $user->getUserPage()->getText() )."</td></tr>\n";
 		
 		$econf = $row->acd_email_authenticated ? ' <strong>'.wfMsgHtml('confirmaccount-econf').'</strong>' : '';
 		$form .= "<tr><td>".wfMsgHtml('usercredentials-email')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acd_email).$econf."</td></tr>\n";
+		
+		$form .= $grouplist;
 		
 		$form .= '</table></fieldset>';
 		
@@ -1682,6 +1695,19 @@ class UserCredentialsPage extends SpecialPage
 		$form .= '</fieldset>';
 		
 		$wgOut->addHTML( $form );
+	}
+	
+	/**
+	 * Format a link to a group description page
+	 *
+	 * @param string $group
+	 * @return string
+	 */
+	private static function buildGroupLink( $group ) {
+		static $cache = array();
+		if( !isset( $cache[$group] ) )
+			$cache[$group] = User::makeGroupLinkHtml( $group, User::getGroupMember( $group ) );
+		return $cache[$group];
 	}
 	
 	/**

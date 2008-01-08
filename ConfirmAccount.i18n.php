@@ -203,6 +203,7 @@ There may be contact lists on site that you can use if you want to know more abo
 	'usercredentials-notes'  => 'Additional notes:',
 	'usercredentials-urls'   => 'List of websites:',
 	'usercredentials-ip'     => 'Original IP address:',
+	'usercredentials-member' => 'Rights:',
 	'usercredentials-badid'  => 'No credentials found for this user. Check that the name is spelled correctly.',
 );
 
