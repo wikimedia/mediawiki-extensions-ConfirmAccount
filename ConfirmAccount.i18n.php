@@ -670,24 +670,27 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
+/** Greek (Ελληνικά)
+ * @author Consta
+ */
 $messages['el'] = array(
-	'requestaccount-legend1'      => 'Λογαριασμός χρήστη',
-	'requestaccount-legend2'      => 'Προσωπικές πληροφορίες',
-	'requestaccount-legend3'      => 'Άλλες πληροφορίες',
-	'requestaccount-real'         => 'Πραγματικό όνομα:',
-	'requestaccount-email'        => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
-	'requestaccount-bio'          => 'Προσωπική βιογραφία:',
-	'confirmaccount-name'         => 'Όνομα χρήστη',
-	'confirmaccount-real'         => 'Όνομα:',
-	'confirmaccount-real-q'       => 'Όνομα',
-	'confirmaccount-email'        => 'Ηλεκτρονικό Ταχυδρομείο:',
-	'confirmaccount-email-q'      => 'Ηλεκτρονικό Ταχυδρομείο:',
-	'confirmaccount-bio'          => 'Βιογραφία:',
-	'confirmaccount-bio-q'        => 'Βιογραφία',
-	'confirmaccount-urls'         => 'Λίστα των ιστοσελίδων:',
-	'confirmaccount-create'       => 'Αποδοχή (Δημιουργία λογαριασμού)',
-	'confirmaccount-ip'           => 'διεύθυνση ΙΡ:',
-	'confirmaccount-wsum'         => 'Καλός ήρθατε!',
+	'requestaccount-real'    => 'Πραγματικό όνομα:',
+	'requestaccount-email'   => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
+	'requestaccount-reqtype' => 'Θέση:',
+	'requestaccount-bio'     => 'Προσωπική βιογραφία:',
+	'confirmaccount-real-q'  => 'Όνομα',
+	'confirmaccount-email-q' => 'Ηλεκτρονικό Ταχυδρομείο:',
+	'confirmaccount-bio-q'   => 'Βιογραφία',
+	'confirmaccount-name'    => 'Όνομα χρήστη',
+	'confirmaccount-real'    => 'Όνομα:',
+	'confirmaccount-email'   => 'Ηλεκτρονικό Ταχυδρομείο:',
+	'confirmaccount-bio'     => 'Βιογραφία:',
+	'confirmaccount-urls'    => 'Λίστα των ιστοσελίδων:',
+	'confirmaccount-create'  => 'Αποδοχή (Δημιουργία λογαριασμού)',
+	'confirmaccount-ip'      => 'διεύθυνση ΙΡ:',
+	'confirmaccount-wsum'    => 'Καλός ήρθατε!',
+	'usercredentials-email'  => 'Ηλεκτρονικό ταχυδρομείο:',
+	'usercredentials-bio'    => 'Βιογραφία:',
 );
 
 $messages['ext'] = array(
@@ -886,6 +889,7 @@ Ceci permet d’être sur la liste des contacts du site, si vous désirez en sav
 	'usercredentials-notes'           => 'Notes supplémentaires :',
 	'usercredentials-urls'            => 'Liste des sites internet :',
 	'usercredentials-ip'              => 'Adresse IP initiale :',
+	'usercredentials-member'          => 'Droits :',
 	'usercredentials-badid'           => 'Aucune référence de trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé.',
 );
 
@@ -1186,6 +1190,12 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'acct_request_throttle_hit'       => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
 	'requestaccount-loginnotice'      => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[{{ns:special}}:RequestAccount|prosyć]]'''.",
 	'confirmaccounts'                 => 'Kontowe požadanja potwjerdźić',
+	'confirmaccount-maintext'         => "'''Tuta strona wužiwa so, zo by njesčinjene kontowe požadanja na ''{{SITENAME}}'' potwjerdźiło'''.
+
+Kóžde čakanski rynk kontowych požadanjow wobsteji z třoch čakanskich podrynkow, jedyn za wotewrjene požadanje, jedyn za te, kotrež buchu wot administratorow falowacych informacijow dla do čakanskeje sekle stajili a třeći za tuchwilu wotpokazane požadanja.
+
+Wotmołwjejo na požadanje, pruwuj je starosćiwje a, jeli trjeba, potwjerdź w nim wobsahowane informacije.
+Twoje akcije so protokuluja. Wot tebje so wočakuje, zo by aktiwnosć pruwował, kotraž tu wotměwa, wothladajo to, štož sam činiš.",
 	'confirmaccount-list'             => 'Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.',
 	'confirmaccount-list2'            => 'Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.',
 	'confirmaccount-text'             => "To je njerozsudźene požadanje za wužiwarskim kontom pola '''{{SITENAME}}'''. Pruwuj wšě deleka stejace informacije dokładnje a potwjerdź je. Prošu wobkedźbuj, zo móžeš konto, jeli trjeba, pod druhim wužiwarskim mjenom wutworić. Wužij to jenož, zo by kolizije z druhimi mjenami wobešoł.
@@ -1201,10 +1211,24 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-back2'            => 'Lisćinu njedawno wotpokazanych požadanjow wobhladać',
 	'confirmaccount-showheld'         => 'Lisćina wotewrjenych kontow pokazać',
 	'confirmaccount-review'           => 'Dowolić/Wotpokazać',
+	'confirmaccount-types'            => 'Wubjer rynk za kontowe potwjerdźenje:',
+	'confirmaccount-all'              => '(pokazaj wšě rynki)',
+	'confirmaccount-type'             => 'Wubrany čakanski rynk:',
+	'confirmaccount-type-0'           => 'přichodni awtorojo',
+	'confirmaccount-type-1'           => 'přichodne editory',
+	'confirmaccount-q-open'           => 'njesčinjene požadanja',
+	'confirmaccount-q-held'           => 'čakace požadanja',
+	'confirmaccount-q-rej'            => 'tuchwilu wotpokazane požadanja',
 	'confirmaccount-badid'            => 'Tuchwilu požadane k podatemu ID. Snano bu hižo sčinjene.',
+	'confirmaccount-leg-user'         => 'Wužiwarske konto',
+	'confirmaccount-leg-areas'        => 'Hłowne zajimowe wobwody',
+	'confirmaccount-leg-person'       => 'Wosobinske informacije',
+	'confirmaccount-leg-other'        => 'Druhe informacije',
 	'confirmaccount-name'             => 'Wužiwarske mjeno',
 	'confirmaccount-real'             => 'Mjeno',
 	'confirmaccount-email'            => 'E-mejl',
+	'confirmaccount-reqtype'          => 'Pozicija:',
+	'confirmaccount-pos-0'            => 'awtor',
 	'confirmaccount-bio'              => 'Biografija',
 	'confirmaccount-attach'           => 'Žiwjenjoběh:',
 	'confirmaccount-notes'            => 'Přidatne přispomnjenki:',
@@ -1213,6 +1237,8 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-confirm'          => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
 	'confirmaccount-econf'            => '(potwjerdźene)',
 	'confirmaccount-reject'           => '(wot [[Wužiwar:$1|$1]] na $2 wotpokazany)',
+	'confirmaccount-rational'         => 'Rozjasnjenje požadarjej:',
+	'confirmaccount-noreason'         => '(žane)',
 	'confirmaccount-held'             => '(wot [[User:$1|$1]] on $2 jako "čakacy" markěrowany)',
 	'confirmaccount-create'           => 'Akceptować (Konto wutworić)',
 	'confirmaccount-deny'             => 'Wotpokazać (Požadanje wotstronić)',
@@ -1225,6 +1251,7 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-canthold'         => 'Tute požadanje je pak hižo čakanskej sekli pak wušmórnjene.',
 	'confirmaccount-acc'              => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[{{ns:User}}:$1]] bu wutworjene.',
 	'confirmaccount-rej'              => 'Požadanje za kontom bu wotpokazane.',
+	'confirmaccount-viewing'          => '(wobhladuje so runje wot [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
 	'confirmaccount-welc'             => "'''Witaj do ''{{SITENAME}}''!''' Nadźijemy so, zo dodaš wjele dobrych přinoškow.
 	Snano chceš najprjedy [[Pomoc:Prěnje kroki|Prěnje kroki]] čitać. Hišće raz: Witaj a wjele wjesela! 
@@ -1262,6 +1289,23 @@ Snano su na sydle kontaktowe adresy, na kotrež so móžeš wobroćeć, jeli chc
 $2
 
 Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš wjace wo prawidłach za wužiwarske konta wědźeć.',
+	'usercredentials'                 => 'Wužiwarske daty',
+	'usercredentials-leg'             => 'Pytanje potwjerdźi daty za wužiwarja',
+	'usercredentials-user'            => 'Wužiwarske mjeno',
+	'usercredentials-text'            => 'Deleka su přepruwowane daty wubraneho wužiwarskeho konta.',
+	'usercredentials-leg-user'        => 'Wužiwarske konto',
+	'usercredentials-leg-areas'       => 'Hłowne zajimowe wobwody',
+	'usercredentials-leg-person'      => 'Wosobinske informacije',
+	'usercredentials-leg-other'       => 'Druhe informacije',
+	'usercredentials-email'           => 'E-mejl:',
+	'usercredentials-real'            => 'Woprawdźite mjeno:',
+	'usercredentials-bio'             => 'Biografija:',
+	'usercredentials-attach'          => 'Žiwjenjoběh:',
+	'usercredentials-notes'           => 'Přidatne přispomnjenki:',
+	'usercredentials-urls'            => 'Lisćina websydłow:',
+	'usercredentials-ip'              => 'Originalna IP-adresa:',
+	'usercredentials-member'          => 'Prawa:',
+	'usercredentials-badid'           => 'Žane daty za tutoho wužiwarja namakane. Kontroluj, hač mjeno je prawje napisane.',
 );
 
 $messages['io'] = array(
