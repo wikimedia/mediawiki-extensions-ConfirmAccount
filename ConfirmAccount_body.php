@@ -29,12 +29,12 @@ class RequestAccountPage extends SpecialPage {
 
 		$this->setHeaders();
 
-		$this->mRealName = $wgRequest->getText( 'wpRealName' );
+		$this->mRealName = trim( $wgRequest->getText( 'wpRealName' ) );
 		# We may only want real names being used
 		if( $wgUseRealNamesOnly )
 			$this->mUsername = $this->mRealName;
 		else
-			$this->mUsername = $wgRequest->getText( 'wpUsername' );
+			$this->mUsername = trim( $wgRequest->getText( 'wpUsername' ) );
 		# Attachments...
 		$this->initializeUpload( $wgRequest );
 		$this->mPrevAttachment = $wgRequest->getText( 'attachment' );
@@ -361,9 +361,9 @@ class RequestAccountPage extends SpecialPage {
 		$dbw->insert( 'account_requests',
 			array( 
 				'acr_id' => $acr_id,
-				'acr_name' => $u->mName,
-				'acr_email' => $u->mEmail,
-				'acr_real_name' => $u->mRealName,
+				'acr_name' => $u->getName(),
+				'acr_email' => $u->getEmail(),
+				'acr_real_name' => $u->getRealName(),
 				'acr_registration' => $dbw->timestamp(),
 				'acr_bio' => $this->mBio,
 				'acr_notes' => $this->mNotes,
@@ -695,7 +695,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$this->file = $wgRequest->getVal( 'file' );
 		# For renaming to alot for collisions with other local requests
 		# that were added to some global $wgAuth system first.
-		$this->mUsername = trim($wgRequest->getText( 'wpNewName' ));
+		$this->mUsername = trim( $wgRequest->getText( 'wpNewName' ) );
 		# Position sought
 		$this->mType = $wgRequest->getInt( 'wpType' );
 		$this->mType = isset($wgAccountRequestTypes[$this->mType]) ? $this->mType : 0;
@@ -1013,15 +1013,15 @@ class ConfirmAccountsPage extends SpecialPage
 				$this->showForm( wfMsgHtml('noname') );
 				return;
 			}
+			# Make a random password
+			$p = User::randomPassword();
 			# Check if already in use
-			if( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
+			if( 0 != $user->idForName() || $wgAuth->userExists($this->mUsername) || !$wgAuth->authenticate($this->mUsername,$p) ) {
 				$this->showForm( wfMsgHtml('userexists') );
 				return;
 			}
 			# Add user to DB
 			$user = User::createNew( $this->mUsername );
-			# Make a random password
-			$p = User::randomPassword();
 			# VERY important to set email now. Otherwise user will have to request
 			# a new password at the login screen...
 			$user->setEmail( $row->acr_email );
