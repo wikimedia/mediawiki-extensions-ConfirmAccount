@@ -1100,14 +1100,43 @@ class ConfirmAccountsPage extends SpecialPage
 				if( isset($transaction) )
 					$transaction->commit();
 			}
+			
+			$grouptext = $group = '';
+			# Grant any necessary rights
+			global $wgAccountRequestTypes;
+			if( array_key_exists($this->mType,$wgAccountRequestTypes) ) {
+				$params = $wgAccountRequestTypes[$this->mType];
+				$group = isset($params[1]) ? $params[1] : false;
+				$grouptext = isset($params[2]) ? $params[2] : '';
+				// Do not add blank or dummy groups
+				if( $group && $group !='user' && $group !='*' ) {
+					$user->addGroup( $group );
+				}
+			}
+			
+			$ebody = '';
 			# Send out password
 			if( $this->reason ) {
-				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body2', array('parsemag'), $user->getName(), $p, $this->reason ) );
+				# If the user is in a group and there is a welcome for that group, use it
+				if( $group && !wfEmptyMsg( "confirmaccount-email-body2-pos{$this->mType}", wfMsg("confirmaccount-email-body2-pos{$this->mType}") ) ) {
+					$ebody = wfMsgExt("confirmaccount-email-body2-pos{$this->mType}", array('parsemag'), $user->getName(), $p, $this->reason );
+				}
+				# Use standard if none found...
+				if( !$ewelcome ) {
+					$ebody = wfMsgExt( 'confirmaccount-email-body2', array('parsemag'), $user->getName(), $p, $this->reason );
+				}
 			} else {
-				$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body', array('parsemag'), $user->getName(), $p ) );
+				# If the user is in a group and there is a welcome for that group, use it
+				if( $group && !wfEmptyMsg( "confirmaccount-email-body-pos{$this->mType}", wfMsg("confirmaccount-email-body-pos{$this->mType}") ) ) {
+					$ebody = wfMsgExt("confirmaccount-email-body-pos{$this->mType}", array('parsemag'), $user->getName(), $p, $this->reason );
+				}
+				# Use standard if none found...
+				if( !$ewelcome ) {
+					$ebody = wfMsgExt( 'confirmaccount-email-body', array('parsemag'), $user->getName(), $p, $this->reason );
+				}
 			}
+			$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ), $ebody );
+			
 			if( WikiError::isError( $result ) ) {
 				$errors[] = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
 			}
@@ -1131,18 +1160,6 @@ class ConfirmAccountsPage extends SpecialPage
 						$transaction->addCommit( FSTransaction::DELETE_FILE, $path );
 					}
 					$transaction->commit();
-				}
-			}
-			$grouptext = $group = '';
-			# Grant any necessary rights
-			global $wgAccountRequestTypes;
-			if( array_key_exists($this->mType,$wgAccountRequestTypes) ) {
-				$params = $wgAccountRequestTypes[$this->mType];
-				$group = isset($params[1]) ? $params[1] : false;
-				$grouptext = isset($params[2]) ? $params[2] : '';
-				// Do not add blank or dummy groups
-				if( $group && $group !='user' && $group !='*' ) {
-					$user->addGroup( $group );
 				}
 			}
 			# Start up the user's (presumedly brand new) userpages
