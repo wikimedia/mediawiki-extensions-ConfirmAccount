@@ -225,7 +225,7 @@ class RequestAccountPage extends SpecialPage {
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );	
-		if( is_null( $u ) ) {
+		if( is_null($u) ) {
 			$this->showForm( wfMsgHtml('noname') );
 			return;
 		}
@@ -1016,12 +1016,12 @@ class ConfirmAccountsPage extends SpecialPage
 			# Make a random password
 			$p = User::randomPassword();
 			# Check if already in use
-			if( 0 != $user->idForName() || $wgAuth->userExists($this->mUsername) || !$wgAuth->authenticate($this->mUsername,$p) ) {
+			if( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
 				$this->showForm( wfMsgHtml('userexists') );
 				return;
 			}
 			# Add user to DB
-			$user = User::createNew( $this->mUsername );
+			$user = User::createNew( $user->getName() );
 			# VERY important to set email now. Otherwise user will have to request
 			# a new password at the login screen...
 			$user->setEmail( $row->acr_email );
@@ -1131,7 +1131,7 @@ class ConfirmAccountsPage extends SpecialPage
 					$ebody = wfMsgExt("confirmaccount-email-body-pos{$this->mType}", array('parsemag'), $user->getName(), $p, $this->reason );
 				}
 				# Use standard if none found...
-				if( !$ewelcome ) {
+				if( !$ebody ) {
 					$ebody = wfMsgExt( 'confirmaccount-email-body', array('parsemag'), $user->getName(), $p, $this->reason );
 				}
 			}
@@ -1191,7 +1191,7 @@ class ConfirmAccountsPage extends SpecialPage
 						}
 					}
 				}
-				
+				# Create userpage!
 				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
 			}
 			global $wgAutoWelcomeNewUsers;
@@ -1200,7 +1200,7 @@ class ConfirmAccountsPage extends SpecialPage
 				# Is there a custom message?
 				$welcome = wfEmptyMsg( "confirmaccount-welc-{$group}", wfMsg("confirmaccount-welc-{$group}") ) ? 
 					wfMsg('confirmaccount-welc') : wfMsg("confirmaccount-welc-{$group}");
-				
+				# Add user welcome message!
 				$utalk->doEdit( $welcome . ' ~~~~', wfMsg('confirmaccount-wsum'), EDIT_MINOR );
 			}
 			
