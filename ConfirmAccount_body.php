@@ -163,7 +163,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= "<td>".Xml::input( 'wpRealName', 35, $this->mRealName, array('id' => 'wpRealName') )."</td></tr>\n";
 		$form .= '</table>';
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."\n";
-		$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='10' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
+		$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='15' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 			htmlspecialchars($this->mBio) . "</textarea></p>\n";
 		$form .= '</fieldset>';
 		if( $wgAccountRequestExtraInfo ) {
@@ -874,7 +874,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
 		$form .= '</table>';
 		$form .= "<p>".wfMsgHtml('confirmaccount-bio')."\n";
-		$form .= "<textarea tabindex='1' name='wpBio' id='wpNewBio' rows='10' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
+		$form .= "<textarea tabindex='1' name='wpBio' id='wpNewBio' rows='15' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 			htmlspecialchars($this->mBio) .
 			"</textarea></p>\n";
 		$form .= '</fieldset>';
