@@ -1365,7 +1365,7 @@ class ConfirmAccountsPage extends SpecialPage
 			else
 				$wgOut->addHTML( wfMsgExt('confirmaccount-list', array('parse') ) );
 			$wgOut->addHTML( $pager->getNavigationBar() );
-			$wgOut->addHTML( "<ul>" . $pager->getBody() . "</ul>" );
+			$wgOut->addHTML( $pager->getBody() );
 			$wgOut->addHTML( $pager->getNavigationBar() );
 		} else {
 			if( $this->showRejects )
