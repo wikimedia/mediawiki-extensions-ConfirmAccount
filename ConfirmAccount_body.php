@@ -1515,6 +1515,22 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		$block = new Block;
 		return $this->mForm->formatRow( $row );
 	}
+	
+	function getStartBody() {
+		if ( $this->getNumRows() ) {
+			return '<ul>';
+		} else {
+			return '';
+		}
+	}
+
+	function getEndBody() {
+		if ( $this->getNumRows() ) {
+			return '</ul>';
+		} else {
+			return '';
+		}
+	}
 
 	function getQueryInfo() {
 		$conds = $this->mConds;
