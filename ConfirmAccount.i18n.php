@@ -776,6 +776,7 @@ Ce code de confirmation expire le $4.',
 L'adresse courriel a été confirmée. Vous pouvez, d’ores et déjà, approuver la demande ici « $2 ».",
 	'acct_request_throttle_hit'       => 'Désolé, vous avec demandé $1 comptes. Vous ne pouvez plus faire de demande.',
 	'requestaccount-loginnotice'      => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
+	'confirmaccount-newrequests'      => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
 	'confirmaccounts'                 => 'Demande de confirmation de comptes',
 	'confirmaccount-maintext'         => "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.
 
