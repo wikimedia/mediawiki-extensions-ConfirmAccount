@@ -379,6 +379,10 @@ class RequestAccountPage extends SpecialPage {
 			),
 			__METHOD__ 
 		);
+		# Clear cache for notice of how many account requests there are
+		global $wgMemc;
+		$key = wfMemcKey( 'confirmaccount', 'notice' );
+		$wgMemc->delete( $key );
 		# Send confirmation, required!
 		$result = $this->sendConfirmationMail( $u, $token, $expires );
 		if( WikiError::isError( $result ) ) {
@@ -1003,6 +1007,10 @@ class ConfirmAccountsPage extends SpecialPage
 					'acr_deleted' => 1 ), 
 				array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ), 
 				__METHOD__ );
+			# Clear cache for notice of how many account requests there are
+			global $wgMemc;
+			$key = wfMemcKey( 'confirmaccount', 'notice' );
+			$wgMemc->delete( $key );
 
 			$this->showSuccess( $this->submitType );
 		} else if( $this->submitType == 'accept' ) {
@@ -1144,6 +1152,10 @@ class ConfirmAccountsPage extends SpecialPage
 			wfRunHooks( 'AddNewAccount', array( $user ) );
 			# OK, now remove the request from the queue
 			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
+			# Clear cache for notice of how many account requests there are
+			global $wgMemc;
+			$key = wfMemcKey( 'confirmaccount', 'notice' );
+			$wgMemc->delete( $key );
 			# Delete any attached file. Do not stop the whole process if this fails
 			$key = $row->acr_storage_key;
 			if( $key ) {
@@ -1229,6 +1241,10 @@ class ConfirmAccountsPage extends SpecialPage
 					'acr_comment' => $this->reason ),
 				array( 'acr_id' => $this->acrID, 'acr_held IS NULL', 'acr_deleted' => 0 ), 
 					__METHOD__ );
+			# Clear cache for notice of how many account requests there are
+			global $wgMemc;
+			$key = wfMemcKey( 'confirmaccount', 'notice' );
+			$wgMemc->delete( $key );
 			# Do not send multiple times
 			if( !$row->acr_held && !($row->acr_deleted && $row->acr_deleted !='f') ) {
 				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),

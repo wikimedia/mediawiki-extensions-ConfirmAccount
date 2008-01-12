@@ -121,23 +121,32 @@ function efConfirmAccountInjectStyle() {
 }
 
 function wfConfirmAccountsNotice( $notice ) {
-	global $wgConfirmAccountNotice, $wgUser;
+	global $wgConfirmAccountNotice, $wgUser, $wgMemc;
 
 	if( !$wgConfirmAccountNotice || !$wgUser->isAllowed('confirmaccount') )
 		return true;
+	# Check cached results
+	$key = wfMemcKey( 'confirmaccount', 'notice' );
+	$message = $wgMemc->get( $key );
 	
-	$dbr = wfGetDB( DB_SLAVE );
-	$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
-		array( 'acr_deleted' => 0, 'acr_held IS NULL' ),
-		__METHOD__ );
-	
-	if( !$count )
-		return true;
+	if( !$message )  {
+		$dbr = wfGetDB( DB_SLAVE );
+		$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
+			array( 'acr_deleted' => 0, 'acr_held IS NULL' ),
+			__METHOD__ );
 		
-	wfLoadExtensionMessages( 'ConfirmAccount' );
+		if( $count ) {
+			wfLoadExtensionMessages( 'ConfirmAccount' );
+			$message = '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
+				wfMsgExt( 'confirmaccount-newrequests', array('parseinline'), $count ) . '</div>';
+		} else {
+			$message = '';
+		}
+	}
+	# Cache results
+	$wgMemc->set( $key, $message, 3600*24*7 );
 	
-	$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
-		wfMsgExt( 'confirmaccount-newrequests', array('parseinline'), $count ) . '</div>';
+	$notice .= $message;
 
 	return true;
 }
