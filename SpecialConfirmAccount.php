@@ -141,7 +141,7 @@ function wfConfirmAccountsNotice( $notice ) {
 	if( !$count )
 		return true;
 	
-	$notice = '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
+	$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
 		wfMsgExt( 'confirmaccount-newrequests', array('parseinline'), $count ) . '</div>';
 
 	return true;
