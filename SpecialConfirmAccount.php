@@ -6,13 +6,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 ) ;
 }
 
-# This extension needs email enabled!
-# Otherwise users can't get their passwords...
-if( !$wgEnableEmail ) {
-	echo "ConfirmAccount extension requires \$wgEnableEmail set to true \n";
-	exit( 1 ) ;
-}
-
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Confirm user accounts',
 	'description' => 'Gives bureaucrats the ability to confirm account requests',
@@ -20,6 +13,17 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
 	'version' => '1.0',
 );
+
+# This extension needs email enabled!
+# Otherwise users can't get their passwords...
+if( !$wgEnableEmail ) {
+	echo "ConfirmAccount extension requires \$wgEnableEmail set to true \n";
+	exit( 1 ) ;
+}
+
+global $wgScriptPath;
+if( !defined( 'CONFIRMACCOUNT_CSS' ) )
+	define('CONFIRMACCOUNT_CSS', $wgScriptPath.'/extensions/ConfirmAccount/confirmaccount.css' );
 
 # Set the person's bio as their userpage?
 $wgMakeUserPageFromBio = true;
@@ -78,15 +82,14 @@ $wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 # If credentials are stored, this right lets users look them up
 $wgGroupPermissions['bureaucrat']['lookupcredentials'] = true;
 
-# Internationalisation
-function efLoadConfirmAccountsMessages() {
-	wfLoadExtensionMessages( 'ConfirmAccount' );
-}
+# Show notice for open requests to admins?
+# This is cached, but still can be expensive on sites with thousands of requests.
+$wgConfirmAccountNotice = true;
 
 function efAddRequestLoginText( &$template ) {
 	global $wgUser;
 
-	efLoadConfirmAccountsMessages();
+	wfLoadExtensionMessages( 'ConfirmAccount' );
 	
 	if( !$wgUser->isAllowed('createaccount') ) {
 		$template->set( 'header', wfMsgExt('requestaccount-loginnotice', array('parse') ) );
@@ -95,7 +98,7 @@ function efAddRequestLoginText( &$template ) {
 }
 
 function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
-	efLoadConfirmAccountsMessages();
+	wfLoadExtensionMessages( 'ConfirmAccount' );
 	# If an account is made with name X, and one is pending with name X
 	# we will have problems if the pending one is later confirmed
 	$dbw = wfGetDB( DB_MASTER );
@@ -106,6 +109,41 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 		$abortError = wfMsgHtml('requestaccount-inuse');
 		return false;
 	}
+	return true;
+}
+
+function efConfirmAccountInjectStyle( $out, $parserOut ) {
+	global $wgJsMimeType;
+	# UI CSS
+	$out->addLink( array(
+		'rel'	=> 'stylesheet',
+		'type'	=> 'text/css',
+		'media'	=> 'screen, projection',
+		'href'	=> CONFIRMACCOUNT_CSS,
+	) );
+
+	return true;
+}
+
+function wfConfirmAccountsNotice( $notice ) {
+	global $wgConfirmAccountNotice, $wgUser;
+
+	if( !$wgConfirmAccountNotice || !$wgUser->isAllowed('confirmaccount') )
+		return true;
+	
+	wfLoadExtensionMessages( 'ConfirmAccount' );
+	
+	$dbr = wfGetDB( DB_SLAVE );
+	$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
+		array( 'acr_deleted' => 0, 'acr_held IS NULL' ),
+		__METHOD__ );
+	
+	if( !$count )
+		return true;
+	
+	$notice = '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
+		wfMsgExt( 'confirmaccount-newrequests', array('parseinline'), $count ) . '</div>';
+
 	return true;
 }
 
@@ -126,6 +164,10 @@ $wgHooks['UserLoginForm'][] = 'efAddRequestLoginText';
 # Check for collisions
 $wgHooks['AbortNewAccount'][] = 'efCheckIfAccountNameIsPending';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
+# Status header like "new messages" bar
+$wgHooks['SiteNoticeAfter'][] = 'wfConfirmAccountsNotice';
+# CSS
+$wgHooks['OutputPageParserOutput'][] = 'efConfirmAccountInjectStyle';
 
 function efConfirmAccountSchemaUpdates() {
 	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields, $wgExtNewTables;

@@ -6,7 +6,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 # Add messages
-efLoadConfirmAccountsMessages();
+wfLoadExtensionMessages( 'ConfirmAccount' );
 
 class RequestAccountPage extends SpecialPage {
 
