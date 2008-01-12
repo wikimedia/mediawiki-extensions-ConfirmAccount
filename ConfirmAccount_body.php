@@ -760,6 +760,8 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-types') . '</strong></p>' );
 		$wgOut->addHTML( '<ul>' );
+		
+		$dbr = wfGetDB( DB_SLAVE );
 		# List each queue
 		foreach( $wgAccountRequestTypes as $i => $params ) {
 			$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$params[0]}" );
@@ -770,7 +772,23 @@ class ConfirmAccountsPage extends SpecialPage
 				wfArrayToCGI( array('wpShowHeld' => 1) ) );
 			$rejected = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-q-rej' ),
 				wfArrayToCGI( array('wpShowRejects' => 1) ) );
-			$wgOut->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> [$open] [$held] [$rejected]</li>" );
+			
+			$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
+				array( 'acr_type' => $i, 'acr_deleted' => 0, 'acr_held IS NULL' ),
+				__METHOD__ );
+			$open = $open . " [$count]";
+			
+			$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
+				array( 'acr_type' => $i, 'acr_held IS NOT NULL' ),
+				__METHOD__ );
+			$held = $held . " [$count]";
+			
+			$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
+				array( 'acr_type' => $i, 'acr_deleted' => 1 ),
+				__METHOD__ );
+			$rejected = $rejected . " [$count]";
+				
+			$wgOut->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> ($open | $held | $rejected)</li>" );
 		}
 		$wgOut->addHTML( '</ul>' );
 	}
