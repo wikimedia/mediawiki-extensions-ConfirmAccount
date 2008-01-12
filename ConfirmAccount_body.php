@@ -1259,10 +1259,6 @@ class ConfirmAccountsPage extends SpecialPage
 					'acr_comment' => $this->reason ),
 				array( 'acr_id' => $this->acrID, 'acr_held IS NULL', 'acr_deleted' => 0 ), 
 					__METHOD__ );
-			# Clear cache for notice of how many account requests there are
-			global $wgMemc;
-			$key = wfMemcKey( 'confirmaccount', 'notice' );
-			$wgMemc->delete( $key );
 			# Do not send multiple times
 			if( !$row->acr_held && !($row->acr_deleted && $row->acr_deleted !='f') ) {
 				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
@@ -1275,6 +1271,11 @@ class ConfirmAccountsPage extends SpecialPage
 				}
 			}
 			$dbw->commit();
+			# Clear cache for notice of how many account requests there are
+			global $wgMemc;
+			$key = wfMemcKey( 'confirmaccount', 'notice' );
+			$wgMemc->delete( $key );
+			
 			$this->showSuccess( $this->submitType );
 		} else {
 			$this->showForm();
@@ -1444,6 +1445,11 @@ class ConfirmAccountsPage extends SpecialPage
 				$dbw->query( "DELETE FROM $accountrequests WHERE acr_id = {$row->acr_id}" );
 			}
 			$transaction->commit();
+			
+			# Clear cache for notice of how many account requests there are
+			global $wgMemc;
+			$key = wfMemcKey( 'confirmaccount', 'notice' );
+			$wgMemc->delete( $key );
 		}
 	}
 	

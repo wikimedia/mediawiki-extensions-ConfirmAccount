@@ -130,8 +130,8 @@ function wfConfirmAccountsNotice( $notice ) {
 	$message = $wgMemc->get( $key );
 	
 	if( !$message )  {
-		$dbr = wfGetDB( DB_SLAVE );
-		$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
+		$dbw = wfGetDB( DB_MASTER );
+		$count = $dbw->selectField( 'account_requests', 'COUNT(*)',
 			array( 'acr_deleted' => 0, 'acr_held IS NULL' ),
 			__METHOD__ );
 		
