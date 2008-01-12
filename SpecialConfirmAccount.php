@@ -108,16 +108,15 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 	return true;
 }
 
-function efConfirmAccountInjectStyle( $out, $parserOut ) {
-	global $wgJsMimeType;
+function efConfirmAccountInjectStyle() {
+	global $wgOut;
 	# UI CSS
-	$out->addLink( array(
+	$wgOut->addLink( array(
 		'rel'	=> 'stylesheet',
 		'type'	=> 'text/css',
 		'media'	=> 'screen, projection',
 		'href'	=> CONFIRMACCOUNT_CSS,
 	) );
-
 	return true;
 }
 
@@ -127,8 +126,6 @@ function wfConfirmAccountsNotice( $notice ) {
 	if( !$wgConfirmAccountNotice || !$wgUser->isAllowed('confirmaccount') )
 		return true;
 	
-	wfLoadExtensionMessages( 'ConfirmAccount' );
-	
 	$dbr = wfGetDB( DB_SLAVE );
 	$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
 		array( 'acr_deleted' => 0, 'acr_held IS NULL' ),
@@ -136,6 +133,8 @@ function wfConfirmAccountsNotice( $notice ) {
 	
 	if( !$count )
 		return true;
+		
+	wfLoadExtensionMessages( 'ConfirmAccount' );
 	
 	$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
 		wfMsgExt( 'confirmaccount-newrequests', array('parseinline'), $count ) . '</div>';
@@ -163,13 +162,12 @@ $wgHooks['AbortNewAccount'][] = 'efCheckIfAccountNameIsPending';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
 # Status header like "new messages" bar
 $wgHooks['SiteNoticeAfter'][] = 'wfConfirmAccountsNotice';
-# CSS
-$wgHooks['OutputPageParserOutput'][] = 'efConfirmAccountInjectStyle';
 
 function efLoadConfirmAccount() {
 	global $wgScriptPath;
 	if( !defined( 'CONFIRMACCOUNT_CSS' ) )
 		define('CONFIRMACCOUNT_CSS', $wgScriptPath.'/extensions/ConfirmAccount/confirmaccount.css' );
+	efConfirmAccountInjectStyle();
 }
 
 function efConfirmAccountSchemaUpdates() {
