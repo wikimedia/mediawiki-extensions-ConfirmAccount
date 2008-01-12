@@ -121,7 +121,7 @@ function efConfirmAccountInjectStyle() {
 }
 
 function wfConfirmAccountsNotice( $notice ) {
-	global $wgConfirmAccountNotice, $wgUser, $wgMemc;
+	global $wgConfirmAccountNotice, $wgUser, $wgMemc, $wgOut;
 
 	if( !$wgConfirmAccountNotice || !$wgUser->isAllowed('confirmaccount') )
 		return true;
@@ -137,8 +137,7 @@ function wfConfirmAccountsNotice( $notice ) {
 		
 		if( $count ) {
 			wfLoadExtensionMessages( 'ConfirmAccount' );
-			$message = '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
-				wfMsgExt( 'confirmaccount-newrequests', array('parseinline'), $count ) . '</div>';
+			$message = wfMsgExt( 'confirmaccount-newrequests', array('parsemag'), $count );
 		} else {
 			$message = '';
 		}
@@ -146,7 +145,7 @@ function wfConfirmAccountsNotice( $notice ) {
 	# Cache results
 	$wgMemc->set( $key, $message, 3600*24*7 );
 	
-	$notice .= $message;
+	$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse($message) . '</div>';
 
 	return true;
 }

@@ -72,7 +72,8 @@ This confirmation code will expire at $4.',
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
 	# Site message for admins
-	'confirmaccount-newrequests' => 'There are currently \'\'\'$1\'\'\' open [[Special:ConfirmAccounts|account requests]] pending.',
+	'confirmaccount-newrequests' => 'There {{PLURAL:$1|is|are}} currently \'\'\'$1\'\'\' open 
+	{{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending.',
 	
 	# Confirm account page
 	'confirmaccounts'         => 'Confirm account requests', 
