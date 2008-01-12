@@ -139,11 +139,13 @@ function wfConfirmAccountsNotice( $notice ) {
 			wfLoadExtensionMessages( 'ConfirmAccount' );
 			$message = wfMsgExt( 'confirmaccount-newrequests', array('parsemag'), $count );
 		} else {
-			$message = '';
+			$message = '-';
 		}
+		# Cache results
+		$wgMemc->set( $key, $message, 3600*24*7 );
 	}
-	# Cache results
-	$wgMemc->set( $key, $message, 3600*24*7 );
+	if( $message == '-' )
+		return true;
 	
 	$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse($message) . '</div>';
 
