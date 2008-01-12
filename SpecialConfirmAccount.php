@@ -21,10 +21,6 @@ if( !$wgEnableEmail ) {
 	exit( 1 ) ;
 }
 
-global $wgScriptPath;
-if( !defined( 'CONFIRMACCOUNT_CSS' ) )
-	define('CONFIRMACCOUNT_CSS', $wgScriptPath.'/extensions/ConfirmAccount/confirmaccount.css' );
-
 # Set the person's bio as their userpage?
 $wgMakeUserPageFromBio = true;
 # Text to add to bio pages if the above option is on
@@ -158,6 +154,7 @@ extAddSpecialPage( dirname(__FILE__) . '/ConfirmAccount_body.php', 'ConfirmAccou
 # Account credentials
 extAddSpecialPage( dirname(__FILE__) . '/ConfirmAccount_body.php', 'UserCredentials', 'UserCredentialsPage' );
 
+$wgExtensionFunctions[] = 'efLoadConfirmAccount';
 # Add notice of where to request an account
 $wgHooks['UserCreateForm'][] = 'efAddRequestLoginText';
 $wgHooks['UserLoginForm'][] = 'efAddRequestLoginText';
@@ -168,6 +165,12 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
 $wgHooks['SiteNoticeAfter'][] = 'wfConfirmAccountsNotice';
 # CSS
 $wgHooks['OutputPageParserOutput'][] = 'efConfirmAccountInjectStyle';
+
+function efLoadConfirmAccount() {
+	global $wgScriptPath;
+	if( !defined( 'CONFIRMACCOUNT_CSS' ) )
+		define('CONFIRMACCOUNT_CSS', $wgScriptPath.'/extensions/ConfirmAccount/confirmaccount.css' );
+}
 
 function efConfirmAccountSchemaUpdates() {
 	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields, $wgExtNewTables;
