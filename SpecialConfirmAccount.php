@@ -109,7 +109,11 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 }
 
 function efConfirmAccountInjectStyle() {
-	global $wgOut;
+	global $wgOut, $wgUser;
+	
+	if( !$wgUser->isAllowed('confirmaccount') )
+		return true;
+	# FIXME: find better load place
 	# UI CSS
 	$wgOut->addLink( array(
 		'rel'	=> 'stylesheet',
