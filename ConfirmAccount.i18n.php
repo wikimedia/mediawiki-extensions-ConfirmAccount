@@ -271,6 +271,8 @@ $3
 عنوان البريد الإلكتروني تم تأكيده. يمكنك تأكيد الطلب هنا "$2".',
 	'acct_request_throttle_hit'       => 'عذرا، لقد طلبت بالفعل $1 حساب. لا يمكنك عمل المزيد من الطلبات.',
 	'requestaccount-loginnotice'      => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
+	'confirmaccount-newrequests'      => "{{PLURAL:$1|يوجد|يوجد}} حاليا '''$1'''  
+{{PLURAL:$1|[[Special:ConfirmAccounts|طلب حساب]]|[[Special:ConfirmAccounts|طلب حساب]]}} مفتوح قيد الانتظار.",
 	'confirmaccounts'                 => 'تأكيد طلبات الحسابات',
 	'confirmaccount-maintext'         => "'''هذه الصفحة تستخدم لتأكيد طلبات الحساب قيد الانتظار في ''{{SITENAME}}'''''.
 
@@ -1110,6 +1112,12 @@ Poden existir listaxes de contacto no sitio que poida usar se quere saber máis 
 	'usercredentials-leg-person' => 'Información persoal',
 	'usercredentials-leg-other'  => 'Outra información:',
 	'usercredentials-email'      => 'Correo electrónico:',
+	'usercredentials-real'       => 'Nome real:',
+	'usercredentials-bio'        => 'Biografía:',
+	'usercredentials-attach'     => 'Currículo/CV:',
+	'usercredentials-notes'      => 'Notas adicionais:',
+	'usercredentials-urls'       => 'Listaxe de sitios web:',
+	'usercredentials-member'     => 'Dereitos:',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -1207,6 +1215,7 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'requestaccount-email-body-admin' => 'Konto "$1" je konto požadał a čaka na potwjerdźenje. E-mejlowa adresa bu potwjerdźena. Móžeš požadanje tu "$" potwjerdźić.',
 	'acct_request_throttle_hit'       => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
 	'requestaccount-loginnotice'      => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[{{ns:special}}:RequestAccount|prosyć]]'''.",
+	'confirmaccount-newrequests'      => "{{PLURAL:$1|Čaka|Čakatej|Čakaja|Čaka}} tuchwilu '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|kontowe požadanje]]|[[Special:ConfirmAccounts|kontowej požadani]]|[[Special:ConfirmAccounts|kontowe požadanja]]|[[Special:ConfirmAccountskontowych požadanjow]]}}.",
 	'confirmaccounts'                 => 'Kontowe požadanja potwjerdźić',
 	'confirmaccount-maintext'         => "'''Tuta strona wužiwa so, zo by njesčinjene kontowe požadanja na ''{{SITENAME}}'' potwjerdźiło'''.
 
@@ -1984,6 +1993,8 @@ vyprší o $4.',
 Emailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu „$2“.',
 	'acct_request_throttle_hit'       => 'Prepáčte, už ste požiadali o vytvorenie $1 účtov. Nemôžete ich odoslať viac žiadostí.',
 	'requestaccount-loginnotice'      => "Aby ste dostali používateľský účet, musíte '''[[Special:RequestAccount|oň požiadať]]'''.",
+	'confirmaccount-newrequests'      => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}} 
+[[Special:ConfirmAccounts|{{PLURAL:$1|žiadosť o účet|žiadosti o účet|žiadostí o účet}}]].",
 	'confirmaccounts'                 => 'Potvrdiť žiadosti o účet',
 	'confirmaccount-maintext'         => "'''Táto stránka sa používa na potvrdzovanie nevybavencýh žiadostí o účet na ''{{GRAMMAR:lokál|{{SITENAME}}}}''''''.
 
