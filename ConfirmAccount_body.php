@@ -1466,10 +1466,7 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 		$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_registration), true );
 		
-		$r = '<li>';
-		if( $row->acr_held ) {
-			$r .= '<span class="confirmaccount-held">';
-		}
+		$r = "<li class='mw-confirmaccount-time-{$this->mType}'>";
 		
 		$r .= $time." (<strong>{$link}</strong>)";
 		
@@ -1489,7 +1486,7 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 		}
 		
-		$r .= '<br/><table cellspacing=\'1\' cellpadding=\'3\' border=\'1\' width=\'100%\'>';
+		$r .= "<br/><table class='mw-confirmaccount-body-{$this->mType}' cellspacing='1' cellpadding='3' border='1' width=\'100%\'>";
 		if( !$wgUseRealNamesOnly ) {
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 				htmlspecialchars($row->acr_name) . '</td></tr>';
@@ -1509,9 +1506,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-bio-q') .
 			'</strong></td><td width=\'100%\'><i>'.$preview.'</i></td></tr>';
 		$r .= '</table>';
-		if( $row->acr_held ) {
-			$r .= '</span>';
-		}
+		
 		$r .= '</li>';
 		
 		return $r;
