@@ -1465,6 +1465,8 @@ Deze bevestigingse-mail verloop op $4.',
 Het e-mail adres werd bevestigd. U kan het verzoek hier "$2" bevestigen.',
 	'acct_request_throttle_hit'       => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
 	'requestaccount-loginnotice'      => "Om een gebruiker te krijgen, moet u '''[[Special:RequestAccount|een verzoek doen]]'''.",
+	'confirmaccount-newrequests'      => "Op dit moment {{PLURAL:$1|staat|staan}} er '''$1''' 
+{{PLURAL:$1|[[Special:ConfirmAccounts|gebruikersverzoek]]|[[Special:ConfirmAccounts|gebruikersverzoeken]]}} open.",
 	'confirmaccounts'                 => 'Gebruikersverzoeken bevestigen',
 	'confirmaccount-maintext'         => "'''Deze pagina wordt gebruikt om openstaande accountverzoeken te bevestigen op ''{{SITENAME}}'''''.
 
