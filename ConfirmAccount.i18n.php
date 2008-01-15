@@ -43,6 +43,7 @@ $messages['en'] = array(
 	'requestaccount-agree'    => 'You must certify that your real name is correct and that you agree to our Terms of Service.',
 	'requestaccount-inuse'    => 'Username is already in use in a pending account request.',
 	'requestaccount-tooshort' => 'Your biography must be at least be $1 words long.',
+	'requestaccount-emaildup' => 'Another pending account request uses the same email address.',
 	'requestaccount-exts'     => 'Attachment file type is disallowed.',
 	'requestaccount-resub'    => 'Your CV/resume file must be re-selected for security reasons. Leave the field blank 
 	if you no longer want to include one.',

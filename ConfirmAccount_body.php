@@ -40,7 +40,7 @@ class RequestAccountPage extends SpecialPage {
 		$this->mPrevAttachment = $wgRequest->getText( 'attachment' );
 		$this->mForgotAttachment = $wgRequest->getBool( 'forgotAttachment' );
 		# Other fields...
-		$this->mEmail = $wgRequest->getText( 'wpEmail' );
+		$this->mEmail = trim( $wgRequest->getText( 'wpEmail' ) );
 		$this->mBio = $wgRequest->getText( 'wpBio', '' );
 		$this->mNotes = $wgAccountRequestExtraInfo ? 
 			$wgRequest->getText( 'wpNotes', '' ) : '';
@@ -274,6 +274,15 @@ class RequestAccountPage extends SpecialPage {
 		# Set some additional data so the AbortNewAccount hook can be
 		# used for more than just username validation
 		$u->setEmail( $this->mEmail );
+		# Check if someone else has an account request with the same email
+		$dup = $dbw->selectField( 'account_requests', '1',
+			array( 'acr_email' => $u->getEmail() ),
+			__METHOD__ );
+		if( $dup ) {
+			$this->showForm( wfMsgHtml('requestaccount-emaildup') );
+			return;
+		}
+		
 		$u->setRealName( $this->mRealName );
 		# Let captchas deny request...
 		global $wgCaptchaClass;

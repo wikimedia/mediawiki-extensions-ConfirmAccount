@@ -185,7 +185,7 @@ function efLoadConfirmAccount() {
 }
 
 function efConfirmAccountSchemaUpdates() {
-	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields, $wgExtNewTables;
+	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields, $wgExtNewTables, $wgExtNewIndexes;
 	
 	$base = dirname(__FILE__);
 	if( $wgDBtype == 'mysql' ) {
@@ -194,8 +194,9 @@ function efConfirmAccountSchemaUpdates() {
 			
 		$wgExtNewTables[] = array('account_credentials', "$base/archives/patch-account_credentials.sql" );
 		
-		$wgExtNewFields[] = array('account_requests', 'acr_areas',
-			"$base/archives/patch-acr_areas.sql" );
+		$wgExtNewFields[] = array('account_requests', 'acr_areas', "$base/archives/patch-acr_areas.sql" );
+		
+		$wgExtNewIndexes[] = array('account_requests', 'acr_email', "$base/archives/patch-email-index.sql" );
 	} else if( $wgDBtype == 'postgres' ) {
 		$wgExtPGNewFields[] = array('account_requests', 'acr_held', "TIMESTAMPTZ" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_filename', "TEXT" );
@@ -206,6 +207,8 @@ function efConfirmAccountSchemaUpdates() {
 		$wgExtNewTables[] = array('account_credentials', "$base/postgres/patch-account_credentials.sql" );
 		$wgExtPGNewFields[] = array('account_requests', 'acr_areas', "TEXT" );
 		$wgExtPGNewFields[] = array('account_credentials', 'acd_areas', "TEXT" );
+		
+		$wgExtNewIndexes[] = array('account_requests', 'acr_email', "$base/postgres/patch-email-index.sql" );
 	}
 	
 	return true;

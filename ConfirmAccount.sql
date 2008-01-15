@@ -59,6 +59,7 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   
   PRIMARY KEY (acr_id),
   UNIQUE KEY (acr_name),
+  UNIQUE KEY (acr_email(255)),
   INDEX (acr_email_token),
   INDEX acr_type_del_reg (acr_type,acr_deleted,acr_registration)
 ) TYPE=InnoDB;
