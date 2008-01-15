@@ -32,6 +32,7 @@ CREATE TABLE account_requests (
 
 CREATE INDEX acr_type_del_reg ON account_requests (acr_type,acr_deleted,acr_registration);
 CREATE INDEX acr_email_token ON account_requests (acr_email_token);
+CREATE UNIQUE INDEX acr_email ON account_requests (acr_email);
 
 CREATE SEQUENCE account_credentials_acd_id_seq;
 CREATE TABLE account_credentials (
