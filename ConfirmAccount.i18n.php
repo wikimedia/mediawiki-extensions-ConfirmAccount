@@ -758,6 +758,7 @@ $messages['fr'] = array(
 	'requestaccount-agree'            => 'Vous devez certifier que votre nom réel est correct et que vous acceptez les conditions d’utilisations du service.',
 	'requestaccount-inuse'            => 'Le nom d’utilisateur est déjà utilisé dans une requête en cours d’approbation.',
 	'requestaccount-tooshort'         => 'Votre biographie doit avoir au moins {{PLURAL:$1|$1 mot|$1 mots}}.',
+	'requestaccount-emaildup'         => 'Une autre demande en cours utilise la même adresse électronique.',
 	'requestaccount-exts'             => 'Le téléchargement des fichiers joints n’est pas permis.',
 	'requestaccount-resub'            => 'Veuillez sélectionnez à nouveau votre curriculum vitæ pour des raisons de sécurité. Si vous ne souhaitez plus inclure celui-ci, laissez ce champs vierge.',
 	'requestaccount-tos'              => 'J’ai lu et j’accepte de respecter les [[{{MediaWiki:Requestaccount-page}}|termes concernant les conditions d’utilisation des services]] de {{SITENAME}}.',
@@ -1194,6 +1195,7 @@ Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a mó�
 	'requestaccount-agree'            => 'Dyrbiš potwjerdźić, zo twoje woprawdźite mjeno je korektne a wužiwarske wuměnjenja akceptuješ.',
 	'requestaccount-inuse'            => 'Wužiwarske mjeno so hižo w druhim kontowym požadanju wužiwa.',
 	'requestaccount-tooshort'         => 'Twoja biografija dyrbi znajmjeńša $1 słowow dołho być.',
+	'requestaccount-emaildup'         => 'Druhe předležace kontowe požadanje samsnu e-mejlowu adresu wužiwa.',
 	'requestaccount-exts'             => 'Datajowy typ přiwěška je njedowoleny.',
 	'requestaccount-resub'            => 'Twoja žiwjenjoběhowa dataja dyrbi so z přičinow wěstoty znowa wubrać. Wostaj polo prózdne, jeli hižo nochceš tajku zapřijimać.',
 	'requestaccount-tos'              => 'Sym wužiwarske wuměnjenja strony {{SITENAME}} přečitał a budu do nich dźeržeć.',
@@ -1354,6 +1356,7 @@ $messages['la'] = array(
 $messages['lb'] = array(
 	'requestaccount'                  => 'Benotzerkont ufroën',
 	'requestaccount-dup'              => "'''Opgepasst: Dir sidd scho matt engem registréierte Benotzerkont ugemellt.'''",
+	'requestaccount-leg-user'         => 'Benotzerkont',
 	'requestaccount-bio-text'         => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert. Versicht all néideg Recommandatiounnen unzeginn, awer vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt. Äre Numm kann op [[Special:Preferences|meng Preferenzen]] geännert ginn.',
 	'requestaccount-real'             => 'Richtege Numm:',
 	'requestaccount-same'             => "(d'selwescht wéi de richtege Numm)",
@@ -1444,6 +1447,7 @@ Als uw gebruikersnaam is goedgekeurd, krijgt u een e-mail en daarna kunt u aanme
 	'requestaccount-agree'            => 'U moet aangegeven dat uw naam juist is en dat u akkoord gaat met de Voorwaarden.',
 	'requestaccount-inuse'            => 'De gebruiker is al bekend in een aanvraagprocedure.',
 	'requestaccount-tooshort'         => 'Uw biografie moet tenminste $1 woorden bevatten.',
+	'requestaccount-emaildup'         => 'Een ander openstaand gebruikersverzoek gebruik hetzelfde e-mailadres.',
 	'requestaccount-exts'             => 'Bestandstype van de bijlage is niet toegestaan.',
 	'requestaccount-resub'            => 'Uw CV-bestand moet herselecteerd worden voor veiligheidsredenen. Laat het veld open als u geen bestand meer wil bijvoegen.',
 	'requestaccount-tos'              => 'Ik heb de [[{{MediaWiki:Requestaccount-page}}|Voorwaarden]] van {{SITENAME}} gelezen en ga ermee akkoord.
@@ -1839,6 +1843,7 @@ $messages['ru'] = array(
 	'requestaccount-agree'            => 'Вы должны подтвердить, что ваше настоящее имя указано правильно и вы согласны с нашими Условиями предоставления услуг.',
 	'requestaccount-inuse'            => 'Имя участника уже указано в одном из запросов на учётную запись.',
 	'requestaccount-tooshort'         => 'Ваша биография должна содержать не менее $1 слов.',
+	'requestaccount-emaildup'         => 'В другом необработанном запросе на получение учётной записи указан такой же адрес электронной почты.',
 	'requestaccount-exts'             => 'Присоединение данного типа файлов запрещено.',
 	'requestaccount-resub'            => 'В целях безопасности, ваш файл с резюме должен быть заменён. Оставьте поле пустым,
 	если вы не желаете отправлять резюме.',
@@ -1865,6 +1870,8 @@ $3
 Адрес электронной почты был подтверждён. Вы можете подтвердить заявку здесь «$2».',
 	'acct_request_throttle_hit'       => 'Извините, вы уже запросили $1 учётных записей. Больше делать запросов вы не можете.',
 	'requestaccount-loginnotice'      => 'Чтобы получить учётную запись, вы должны её [[Special:RequestAccount|запросить]].',
+	'confirmaccount-newrequests'      => "Ожидается обработка '''$1'''  
+{{PLURAL:$1|[[Special:ConfirmAccounts|запроса на учётную запись]]|[[Special:ConfirmAccounts|запросов на учётные записи]]|[[Special:ConfirmAccounts|запросов на учётные записи]]}}.",
 	'confirmaccounts'                 => 'Подтверждение запросов учётных записей',
 	'confirmaccount-maintext'         => "'''Эта страница используется для подтверждения заявок на учётные записи проекта «{{SITENAME}}»'''.
 
@@ -1927,6 +1934,7 @@ $3
 	'confirmaccount-submit'           => 'Подтвердить',
 	'confirmaccount-needreason'       => 'Вы должны указать причину в поле комментария.',
 	'confirmaccount-canthold'         => 'Этот запрос уже удалён или отложен.',
+	'confirmaccount-acc'              => 'Запрос на учётную запись успешно обработан, создана новая учётная запись [[User:$1]].',
 	'confirmaccount-wsum'             => 'Добро пожаловать!',
 	'usercredentials-leg-user'        => 'Учётная запись',
 	'usercredentials-leg-areas'       => 'Основные области интересов',
@@ -1973,6 +1981,7 @@ $messages['sk'] = array(
 	'requestaccount-agree'            => 'Musíte osvedčiť, že vaše skutočné meno je správne a že súhlasíte s našimi Podmienkami použitia.',
 	'requestaccount-inuse'            => 'Používateľské meno už bolo vyžiadané v prebiehajúcej žiadosti o účet.',
 	'requestaccount-tooshort'         => 'Vaša biografia musí mať aspoň $1 slov.',
+	'requestaccount-emaildup'         => 'Iný účet čakajúci na schválenie používa rovnakú emailovú adresu.',
 	'requestaccount-exts'             => 'Tento typ prílohy nie je povolený.',
 	'requestaccount-resub'            => 'Váš súbor s CV/resumé je potrebné z bezpečnostných dôvodov znova vybrať. nechajte pole prázdne
 	ak ste sa rozhodli žiadny nepriložiť.',
