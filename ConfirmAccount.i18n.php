@@ -983,6 +983,8 @@ $messages['gl'] = array(
 	[[Special:Userlogin]].",
 	'requestaccount-page'        => '{{ns:project}}:Condicións de Servizo',
 	'requestaccount-dup'         => "'''Nota: Xa está no sistema cunha conta rexistrada.'''",
+	'requestaccount-leg-user'    => 'Conta de Usuario',
+	'requestaccount-leg-areas'   => 'Principais áreas de interese',
 	'requestaccount-leg-person'  => 'Información persoal',
 	'requestaccount-leg-other'   => 'Outra información',
 	'requestaccount-acc-text'    => 'Enviaráselle unha mensaxe de confirmación ao seu enderezo de correo electrónico unha vez enviada esta solicitude. Responda premendo
@@ -994,6 +996,7 @@ $messages['gl'] = array(
 	'requestaccount-real'        => 'Nome real:',
 	'requestaccount-same'        => '(o mesmo que o nome real)',
 	'requestaccount-email'       => 'Enderezo de correo electrónico:',
+	'requestaccount-reqtype'     => 'Posición:',
 	'requestaccount-level-0'     => 'autor',
 	'requestaccount-level-1'     => 'editor',
 	'requestaccount-bio'         => 'Biografía persoal:',
@@ -1046,6 +1049,8 @@ Este código de confirmación caducará o $4.',
 	'confirmaccount-showheld'    => 'Ver as contas pendentes de ter en conta na listaxe',
 	'confirmaccount-review'      => 'Aprobar/Rexeitar',
 	'confirmaccount-badid'       => 'Non existe unha solicitude pendente que corresponda co ID fornecido. Pode que xa fose examinada.',
+	'confirmaccount-leg-user'    => 'Conta de Usuario',
+	'confirmaccount-leg-areas'   => 'Principais áreas de interese',
 	'confirmaccount-leg-person'  => 'Información persoal',
 	'confirmaccount-leg-other'   => 'Outra información',
 	'confirmaccount-name'        => 'Nome de usuario',
@@ -1062,6 +1067,7 @@ Este código de confirmación caducará o $4.',
 	'confirmaccount-confirm'     => 'Use os botóns de embaixo para aceptar, rexeitar ou deixar en suspenso esta solicitude:',
 	'confirmaccount-econf'       => '(confirmada)',
 	'confirmaccount-reject'      => '(rexeitada por [[User:$1|$1]] en $2)',
+	'confirmaccount-noreason'    => '(ningún)',
 	'confirmaccount-held'        => '(marcada "en suspenso" por [[User:$1|$1]] en $2)',
 	'confirmaccount-create'      => 'Aceptar (crear a conta)',
 	'confirmaccount-deny'        => 'Rexeitar (eliminar da listaxe)',
@@ -1113,6 +1119,8 @@ $2
 Poden existir listaxes de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
 	'usercredentials'            => 'Credenciais do usuario',
 	'usercredentials-user'       => 'Nome do usuario:',
+	'usercredentials-leg-user'   => 'Conta de Usuario',
+	'usercredentials-leg-areas'  => 'Principais áreas de interese',
 	'usercredentials-leg-person' => 'Información persoal',
 	'usercredentials-leg-other'  => 'Outra información:',
 	'usercredentials-email'      => 'Correo electrónico:',
@@ -1121,7 +1129,9 @@ Poden existir listaxes de contacto no sitio que poida usar se quere saber máis 
 	'usercredentials-attach'     => 'Currículo/CV:',
 	'usercredentials-notes'      => 'Notas adicionais:',
 	'usercredentials-urls'       => 'Listaxe de sitios web:',
+	'usercredentials-ip'         => 'Enderezo IP orixinal:',
 	'usercredentials-member'     => 'Dereitos:',
+	'usercredentials-badid'      => 'Non se atoparon credenciais para este usuario. Comprobe que o nome estea escrito correctamente.',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -1987,7 +1997,53 @@ $3
 	'confirmaccount-needreason'       => 'Вы должны указать причину в поле комментария.',
 	'confirmaccount-canthold'         => 'Этот запрос уже удалён или отложен.',
 	'confirmaccount-acc'              => 'Запрос на учётную запись успешно обработан, создана новая учётная запись [[User:$1]].',
+	'confirmaccount-rej'              => 'Запрос на учётную запись был отклонён.',
+	'confirmaccount-viewing'          => '(сейчас просматривается участником [[User:$1|$1]])',
+	'confirmaccount-summary'          => 'Создание страницы участника с биографией нового участника',
+	'confirmaccount-welc'             => "'''Добро пожаловать в ''{{SITENAME}}''!''' Мы надеемся на ваше плодотворное участие.
+Возможно, вам будет интересно ознакомиться со [[{{MediaWiki:Helppage}}|справочными страницами]]. Ещё раз добро пожаловать, приятного времяпрепровождения.",
 	'confirmaccount-wsum'             => 'Добро пожаловать!',
+	'confirmaccount-email-subj'       => 'Запрос учётной записи в {{SITENAME}}',
+	'confirmaccount-email-body'       => 'Ваш запрос на создание учётной записи в {{SITENAME}} был утверждён.
+
+Название учётной записи: $1
+
+Пароль: $2
+
+По соображениям безопасности, после первого входа в систему вам нужно будет изменить пароль. Представиться системе можно на странице 
+{{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'      => 'Ваш запрос на создание учётной записи в {{SITENAME}} был утверждён.
+
+Название учётной записи: $1
+
+Пароль: $2
+
+$3
+
+По соображениям безопасности, после первого входа в систему вам нужно будет изменить пароль. Представиться системе можно на странице 
+{{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'      => 'Извините, ваш запрос на создание учётной записи «$1» на сайте {{SITENAME}} был отклонён.
+
+Это могло произойти по различным причинам. Возможно, вы неверно заполнили поля формы, ваши ответы были недостаточно полными
+или не удовлетворительными с точки зрения правил проекта. На сайте могут быть списки контактов, которыми вы можете воспользоваться,
+чтобы получить более подробную информацию о правилах, касающихся учётных записей участников.',
+	'confirmaccount-email-body4'      => 'Извините, ваш запрос на создание учётной записи «$1» на сайте {{SITENAME}} был отклонён.
+
+$2
+
+На сайте могут быть списки контактов, которыми вы можете воспользоваться,
+чтобы получить более подробную информацию о правилах, касающихся учётных записей участников.',
+	'confirmaccount-email-body5'      => 'Чтобы ваш запрос на создание учётной записи на сайте {{SITENAME}} был утверждён, вам следует
+предоставить дополнительную информацию.
+
+$2
+
+На сайте могут быть списки контактов, которыми вы можете воспользоваться,
+чтобы получить более подробную информацию о правилах, касающихся учётных записей участников.',
+	'usercredentials'                 => 'Удостоверяющая информация об участнике',
+	'usercredentials-leg'             => 'Поиск подтверждённой удостоверяющей информации об участнике',
+	'usercredentials-user'            => 'Имя участника:',
+	'usercredentials-text'            => 'Ниже показана проверенная удостоверяющая информация о выбранной учётной записи участника.',
 	'usercredentials-leg-user'        => 'Учётная запись',
 	'usercredentials-leg-areas'       => 'Основные области интересов',
 	'usercredentials-leg-person'      => 'Личные сведения',
@@ -2000,6 +2056,7 @@ $3
 	'usercredentials-urls'            => 'Список веб-сайтов:',
 	'usercredentials-ip'              => 'IP-адрес:',
 	'usercredentials-member'          => 'Права:',
+	'usercredentials-badid'           => 'Не найдена удостоверяющая информация об участнике. Проверьте правильность написания имени.',
 );
 
 /** Slovak (Slovenčina)
