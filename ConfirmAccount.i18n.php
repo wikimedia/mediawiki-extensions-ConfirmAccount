@@ -2362,6 +2362,17 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
        musst du zusätzliche Informationen übermitteln.',
 );
 
+/** Turkish (Türkçe)
+ * @author Karduelis
+ */
+$messages['tr'] = array(
+	'requestaccount-email'   => 'E-posta adresi:',
+	'confirmaccount-email-q' => 'E-posta',
+	'confirmaccount-email'   => 'E-posta:',
+	'confirmaccount-ip'      => 'IP adresi:',
+	'confirmaccount-wsum'    => 'Hoşgeldiniz!',
+);
+
 /** Volapük (Volapük)
  * @author Malafaya
  */
