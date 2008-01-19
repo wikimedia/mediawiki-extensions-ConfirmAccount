@@ -1636,6 +1636,8 @@ $messages['oc'] = array(
 	'requestaccount-email'            => 'Adreça electronica:',
 	'requestaccount-reqtype'          => 'Situacion :',
 	'requestaccount-level-0'          => 'autor',
+	'requestaccount-level-1'          => 'editor',
+	'requestaccount-info'             => '(?)',
 	'requestaccount-bio'              => 'Biografia personala:',
 	'requestaccount-attach'           => 'CV/Resumit (facultatiu)',
 	'requestaccount-notes'            => 'Nòtas suplementàrias :',
@@ -1667,7 +1669,11 @@ Cada demanda de compte d'utilizaire consistís en tres soslistas : una per las d
 Al moment de la responsa a una demanda, verificatz-la atentivament e, se fa mestèr, confirmatz las informaxions qu'i son mencionadas. Vòstras accions seràn inscrichas separadament dins un jornal. Tanben podètz esperar la verificacion de cada activitat que prendràn de plaça separadament per rapòrt a çò que faretz vos-meteis.",
 	'confirmaccount-list'             => "Vaquí, çaijós, la lista dels comptes en espèra d’aprobacion. Los comptes acceptats seràn creats e levats d'aquesta lista. Los comptes regetats seràn suprimits d'aquesta meteissa lista.",
 	'confirmaccount-list2'            => "Veire la lista dels comptes recentament regetats losquals seràn suprimits automaticament aprèp qualques jorns. Pòdon encara èsser aprobats, e mai podètz consultar los regets abans d'o far.",
-	'confirmaccount-text'             => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''. Atencion, verificatz e, se fe mestièr, confirmatz totas las informacions çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasetz aquò unicament per evitar de conflictes amb d’autres noms. Se quitatz aquesta pagina sens confirmar o rejetar aquesta demanda, serà totjorn mesa en espèra.",
+	'confirmaccount-text'             => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''.
+
+Atencion, verificatz e, se fe mestièr, confirmatz totas las informacions çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasetz aquò unicament per evitar de conflictes amb d’autres noms. 
+
+Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjorn mesa en espèra.",
 	'confirmaccount-none-o'           => "Actualament i a pas cap de demanda de compte d'utilizaire en cors dins aquesta lista.",
 	'confirmaccount-none-h'           => "Actualament i a pas cap de reservacion de compte d'utilizaire en cors dins aquesta lista.",
 	'confirmaccount-none-r'           => "Actualament i a pas cap de regèt recent de demanda de compte d'utilizaire dins aquesta lista.",
