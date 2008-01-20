@@ -1377,6 +1377,20 @@ Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš w
 	'usercredentials-badid'           => 'Žane daty za tutoho wužiwarja namakane. Kontroluj, hač mjeno je prawje napisane.',
 );
 
+/** Hungarian (Magyar)
+ * @author Dorgan
+ */
+$messages['hu'] = array(
+	'requestaccount-email'      => 'E-mail cím:',
+	'requestaccount-level-0'    => 'szerző',
+	'requestaccount-level-1'    => 'szerkesztő',
+	'requestaccount-email-subj' => '{{SITENAME}} e-mail cím megerősítés',
+	'confirmaccount-real-q'     => 'Név',
+	'confirmaccount-leg-user'   => 'Felhasználói fiók',
+	'confirmaccount-ip'         => 'IP-cím:',
+	'usercredentials-leg-user'  => 'Felhasználói fiók',
+);
+
 $messages['io'] = array(
 	'confirmaccount-wsum'         => 'Bonveno!',
 );
@@ -2394,6 +2408,21 @@ koast, wan du moor uur do Anfoarderengen wiete moatest.
 
 Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
        musst du zusätzliche Informationen übermitteln.',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'requestaccount-leg-user'    => 'వాడుకరి ఖాతా',
+	'confirmaccount-real-q'      => 'పేరు',
+	'confirmaccount-review'      => 'సమీక్ష',
+	'confirmaccount-leg-user'    => 'వాడుకరి ఖాతా',
+	'confirmaccount-real'        => 'పేరు:',
+	'confirmaccount-notes'       => 'అదనపు గమనికలు:',
+	'confirmaccount-wsum'        => 'స్వాగతం!',
+	'usercredentials-leg-user'   => 'వాడుకరి ఖాతా',
+	'usercredentials-leg-person' => 'వ్యక్తిగత సమాచారం',
 );
 
 /** Turkish (Türkçe)
