@@ -1884,6 +1884,19 @@ Për na question ëd sigurëssa un a venta ch'as cambia soa ciav la prima vira c
 	'confirmaccount-email-body5' => 'Anans che soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a peula esse acetà, a dovrìa lassene dj\'anformassion adissionaj. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'requestaccount-real'    => 'اصلي نوم:',
+	'requestaccount-email'   => 'د برېښناليک پته:',
+	'confirmaccount-real-q'  => 'نوم',
+	'confirmaccount-email-q' => 'برېښنالیک',
+	'usercredentials-email'  => 'برېښناليک:',
+	'usercredentials-real'   => 'اصلي نوم:',
+	'usercredentials-bio'    => 'ژوندليک:',
+);
+
 $messages['pt'] = array(
 	'requestaccount'              => 'Requerer conta',
 	'requestaccount-legend1'      => 'Conta de utilizador',
