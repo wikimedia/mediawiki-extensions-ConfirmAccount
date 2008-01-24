@@ -218,6 +218,8 @@ class RequestAccountPage extends SpecialPage {
 		$form .= wfCloseElement( 'form' );
 
 		$wgOut->addHTML( $form );
+		
+		$wgOut->addWikiText( wfMsgHtml( "requestaccount-footer" ) );
 	}
 
 	function doSubmit() {

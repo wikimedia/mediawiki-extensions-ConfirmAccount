@@ -16,6 +16,7 @@ $messages['en'] = array(
 	
 	Once the account is approved, you will be emailed a notification message and the account will be usable at 
 	[[Special:Userlogin]].',
+	'requestaccount-footer'    => '',
 	'requestaccount-page'      => '{{ns:project}}:Terms of Service',
 	'requestaccount-dup'       => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
 	'requestaccount-leg-user'   => 'User account',
@@ -51,6 +52,8 @@ $messages['en'] = array(
 	The name I have specified under "Real name" is in fact my own real name.',
 	'requestaccount-submit'   => 'Request account',
 	'requestaccount-sent'     => 'Your account request has successfully been sent and is now pending review.',
+	
+	
 	'request-account-econf'   => 'Your e-mail address has been confirmed and will be listed as such in your account 
 	request.',
 	'requestaccount-email-subj' => '{{SITENAME}} e-mail address confirmation',
