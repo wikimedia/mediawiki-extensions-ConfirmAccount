@@ -16,7 +16,7 @@ $messages['en'] = array(
 	
 	Once the account is approved, you will be emailed a notification message and the account will be usable at 
 	[[Special:Userlogin]].',
-	'requestaccount-footer'    => '',
+	'requestaccount-footer'    => '', # only translate this message to other languages if you have to change it
 	'requestaccount-page'      => '{{ns:project}}:Terms of Service',
 	'requestaccount-dup'       => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
 	'requestaccount-leg-user'   => 'User account',
