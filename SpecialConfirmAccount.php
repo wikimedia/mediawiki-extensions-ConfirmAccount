@@ -11,7 +11,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'description' => 'Gives bureaucrats the ability to confirm account requests',
 	'author' => 'Aaron Schulz',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
-	'version' => '1.0',
+	'version' => '1.1',
 );
 
 # This extension needs email enabled!
