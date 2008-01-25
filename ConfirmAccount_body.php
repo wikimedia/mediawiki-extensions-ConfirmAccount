@@ -712,8 +712,8 @@ class ConfirmAccountsPage extends SpecialPage
 		# that were added to some global $wgAuth system first.
 		$this->mUsername = trim( $wgRequest->getText( 'wpNewName' ) );
 		# Position sought
-		$this->mType = $wgRequest->getInt( 'wpType' );
-		$this->mType = isset($wgAccountRequestTypes[$this->mType]) ? $this->mType : 0;
+		$this->mType = $wgRequest->getIntOrNull( 'wpType' );
+		$this->mType = ( !is_null($this->mType) && isset($wgAccountRequestTypes[$this->mType]) ) ? $this->mType : null;
 		# For removing private info or such from bios
 		$this->mBio = $wgRequest->getText( 'wpNewBio' );
 		# For viewing rejects
@@ -1306,7 +1306,7 @@ class ConfirmAccountsPage extends SpecialPage
 		if( $row ) {
 			$this->mUsername = $this->mUsername ? $this->mUsername : $row->acr_name;
 			$this->mBio = $this->mBio ? $this->mBio : $row->acr_bio;
-			$this->mType = $this->mType ? $this->mType : $row->acr_type;
+			$this->mType = !is_null($this->mType) ? $this->mType : $row->acr_type;
 			$rowareas = RequestAccountPage::expandAreas( $row->acr_areas );	
 			
 			foreach( $this->mAreas as $area => $within ) {
