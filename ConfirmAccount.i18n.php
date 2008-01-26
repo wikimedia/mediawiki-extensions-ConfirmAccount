@@ -2287,7 +2287,6 @@ $messages['ss'] = array(
 
 /** Seeltersk (Seeltersk)
  * @author Pyt
- * @author SPQRobin
  */
 $messages['stq'] = array(
 	'requestaccount'             => 'Benutserkonto fräigje',
@@ -2298,9 +2297,6 @@ $messages['stq'] = array(
 	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Bescheed un du koast die unner „[[{{ns:special}}:Userlogin|Anmäldje]]“ ienlogje.",
 	'requestaccount-page'        => '{{ns:project}}:Nutsengsbedingengen',
 	'requestaccount-dup'         => "'''Oachtenge: Du bäst al mäd n registrierd Benutserkonto ienlogged.'''",
-	'requestaccount-legend1'     => 'Benutserkonto',
-	'requestaccount-legend2'     => 'Persöönelke Informatione',
-	'requestaccount-legend3'     => 'Wiedere Informatione',
 	'requestaccount-acc-text'    => 'An dien E-Mail-Adresse wäd ätter dät Ouseenden fon dit Formular ne Bestäätigengsmail soand. 
 Reagier deerap, wan du ap ju in ju Mail äntheeldene Bestäätigengsferbiendenge klikst.
 Sobolde n dien Konto anlaid wuude,
