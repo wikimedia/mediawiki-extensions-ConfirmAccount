@@ -743,8 +743,10 @@ $messages['ext'] = array(
 
 /** Finnish (Suomi)
  * @author Nike
+ * @author Cimon Avaro
  */
 $messages['fi'] = array(
+	'requestaccount-dup'    => "'''Huomio: Olet jo kirjautunut sisälle rekisteröidyllä käyttäjätunnuksella.'''",
 	'confirmaccount-real-q' => 'Nimi',
 );
 
