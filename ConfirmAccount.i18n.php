@@ -1545,6 +1545,22 @@ $3
 
 Biztonsági okok miatt meg kell változtatnod a jelszavadat az első bejelentkezésed során. A bejelentkezéshez menj a
 {{fullurl:Special:Userlogin}} lapra.',
+	'confirmaccount-email-body3'      => 'Sajnálattal közöljük, hogy a felhasználói fiók-kérelmedet elutasították a(z) {{SITENAME}} wikin.
+
+Számos oka lehet a dolognak. Lehet, hogy nem töltötted ki helyesen az űrlapot, nem adtál meg megfelelő mennyiségű
+információt, vagy más irányelv miatt utasítottak vissza.  Ha több információt szeretnél megtudni a felhasználói fiókokkal
+kapcsolatos irányelvekről, az oldalon megtalálhatod a kapcsolattartási listát.',
+	'confirmaccount-email-body4'      => 'Sajnálattal közöljük, hogy a felhasználói fiók-kérelmedet elutasították a(z) {{SITENAME}} wikin.
+
+$2
+
+Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolatos irányelvekről, az oldalon megtalálhatod a kapcsolattartási listát.',
+	'confirmaccount-email-body5'      => 'Ahhoz, hogy elfogadjuk "$1" felhasználói fiók-kérelmedet a(z) {{SITENAME}} wikin,
+néhány további információt kell megadnod.
+
+$2
+
+Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolatos irányelvekről, az oldalon megtalálhatod a kapcsolattartási listát.',
 	'usercredentials'                 => 'Személyi adatok',
 	'usercredentials-leg'             => 'Megerősített felhasználói adatok kikeresése',
 	'usercredentials-user'            => 'Felhasználói név:',
@@ -1644,6 +1660,8 @@ $messages['lb'] = array(
 	'requestaccount'                  => 'Benotzerkont ufroën',
 	'requestaccount-dup'              => "'''Opgepasst: Dir sidd scho matt engem registréierte Benotzerkont ugemellt.'''",
 	'requestaccount-leg-user'         => 'Benotzerkont',
+	'requestaccount-leg-person'       => 'Perséinlech Informatiounen',
+	'requestaccount-leg-other'        => 'Aner Informatiounen',
 	'requestaccount-bio-text'         => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert. Versicht all néideg Recommandatiounnen unzeginn, awer vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt. Äre Numm kann op [[Special:Preferences|meng Preferenzen]] geännert ginn.',
 	'requestaccount-real'             => 'Richtege Numm:',
 	'requestaccount-same'             => "(d'selwescht wéi de richtege Numm)",
@@ -1653,6 +1671,7 @@ $messages['lb'] = array(
 	'requestaccount-level-1'          => 'Editeur',
 	'requestaccount-bio'              => 'Peréinlech Biographie:',
 	'requestaccount-attach'           => 'Liewenslaf oder CV (optional):',
+	'requestaccount-notes'            => 'Zousätzlech Bemierkungen:',
 	'requestaccount-urls'             => 'Lëscht vu Websäiten (all Säit an enger neier Zeil)',
 	'requestaccount-inuse'            => 'De Benotzernumm ass scho bäi enger anere Benotzerufro a Gebrauch.',
 	'requestaccount-tooshort'         => 'Är Biographie muss mindestens $1 Wierder hunn.',
@@ -1665,6 +1684,8 @@ $messages['lb'] = array(
 	'confirmaccount-bio-q'            => 'Biographie',
 	'confirmaccount-review'           => 'Konfirméieren/Refüséieren',
 	'confirmaccount-leg-user'         => 'Benotzerkont',
+	'confirmaccount-leg-person'       => 'Perséinlech Informatiounen',
+	'confirmaccount-leg-other'        => 'Aner Informatioun',
 	'confirmaccount-name'             => 'Benotzernumm',
 	'confirmaccount-real'             => 'Numm:',
 	'confirmaccount-email'            => 'E-mail:',
@@ -1678,6 +1699,8 @@ $messages['lb'] = array(
 	'confirmaccount-wsum'             => 'Wëllkomm!',
 	'usercredentials-user'            => 'Benotzernumm:',
 	'usercredentials-leg-user'        => 'Benotzerkont',
+	'usercredentials-leg-person'      => 'Perséinlech Informatiounen',
+	'usercredentials-leg-other'       => 'Aner Informatiounen',
 	'usercredentials-email'           => 'E-mail:',
 	'usercredentials-real'            => 'Richtege Numm:',
 	'usercredentials-bio'             => 'Biographie:',
@@ -2651,6 +2674,31 @@ koast, wan du moor uur do Anfoarderengen wiete moatest.
 
 Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
        musst du zusätzliche Informationen übermitteln.',
+);
+
+/** Swedish (Svenska)
+ * @author Lejonel
+ * @author Max sonnelid
+ */
+$messages['sv'] = array(
+	'requestaccount'            => 'Begär konto',
+	'requestaccount-text'       => "'''Fyll i och skicka följande formulär för att begära ett konto.'''
+
+Se till att du har läst [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] innan  du begär ett konto.
+
+När din begäran om ett konto har godkänts, så kommer ett e-postmeddelande skickas till dig och ditt konto kan användas på [[Special:Userlogin]].",
+	'requestaccount-page'       => '{{ns:project}}:Användningsvillkor',
+	'requestaccount-dup'        => "'''Notera: Du är redan inloggad med ett registrerat konto.'''",
+	'requestaccount-leg-user'   => 'Användarkonto',
+	'requestaccount-leg-areas'  => 'Intresseområden',
+	'requestaccount-leg-person' => 'Personlig information',
+	'requestaccount-leg-other'  => 'Annan information',
+	'requestaccount-acc-text'   => 'När du skickar in den här begäran så kommer ett bekräftelsemeddelande skickas till din e-postadress. Svara på det meddelandet genom att klicka på bekräftelselänken i e-brevet. Till din e-postadress kommer även ditt lösenord skickas när ditt konto har skapats.',
+	'requestaccount-areas-text' => 'Välj de ämnen härunder som du har expertkunskap om eller som du kommer att arbeta mest med.',
+	'requestaccount-ext-text'   => 'Följande information kommer hållas hemlig och bara användas för denna begäran.
+Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.',
+	'requestaccount-real'       => 'Riktigt namn:',
+	'requestaccount-same'       => '(samma som ditt riktiga namn)',
 );
 
 /** Telugu (తెలుగు)
