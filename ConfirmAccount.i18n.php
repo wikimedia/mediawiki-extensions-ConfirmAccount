@@ -1424,14 +1424,14 @@ Megadhatsz kapcsolati adatokat, pl. telefonszámot, hogy segíts a személyazono
 	'requestaccount-attach'           => 'CV (nem kötelező)',
 	'requestaccount-notes'            => 'További megjegyzések:',
 	'requestaccount-urls'             => 'Weboldalak listája, ha van (külön sorba írd őket):',
-	'requestaccount-agree'            => 'Igazolnod kell, hogy neved valódi és hogy egyetértesz a használati feltételekkel.',
+	'requestaccount-agree'            => 'Igazolnod kell, hogy neved valódi és hogy elfogadod a használati feltételekkel.',
 	'requestaccount-inuse'            => 'A felhasználói nevet már használták egy elfogadásra váró kérelemnél.',
 	'requestaccount-tooshort'         => 'Az életrajzodnak minimum $1 szót kell tartalmaznia.',
 	'requestaccount-emaildup'         => 'Egy másik kérelemnél már megadták ugyanezt az e-mail címet.',
 	'requestaccount-exts'             => 'A csatolt fájl típusa nem engedélyezett.',
 	'requestaccount-resub'            => 'A CV-fájlodat újra ki kell választani biztonsági okok miatt. Hagyd a mezőt üresen,
 ha már nem akarod mellékelni.',
-	'requestaccount-tos'              => 'Elolvastam és egyetértek a(z) {{SITENAME}} [[{{MediaWiki:Requestaccount-page}}|használati feltételeivel]].  
+	'requestaccount-tos'              => 'Elolvastam és elfogadom a(z) {{SITENAME}} [[{{MediaWiki:Requestaccount-page}}|használati feltételeivel]].  
 A „Valódi név” mezőben megadott név az én valódi nevem.',
 	'requestaccount-submit'           => 'Felhasználói fiók kérése',
 	'requestaccount-sent'             => 'A kérelmed sikeresen el lett küldve, és most elfogadásra vár.',
@@ -1450,13 +1450,13 @@ Ennek a megerősítésre szánt kódnak a felhasználhatósági ideje lejár: $4
 	'requestaccount-email-subj-admin' => '{{SITENAME}} felhasználói fiók kérelem',
 	'requestaccount-email-body-admin' => 'A(z) "$1" felhasználói fiók kérelme megerősítésre vár.
 Az e-mail cím meg lett erősítve. Itt erősítheted meg: "$2".',
-	'acct_request_throttle_hit'       => 'Sajnáljuk, de már kérték $1 felhasználói fiókot, így nem igényelhetsz újabbakat.',
+	'acct_request_throttle_hit'       => 'Sajnáljuk, de már $1 felhasználói fiókot kértél, így nem igényelhetsz újabbakat.',
 	'requestaccount-loginnotice'      => "Ha felhasználói fiókot szeretnél, akkor '''[[Special:RequestAccount|kérned kell egyet]]'''.",
 	'confirmaccount-newrequests'      => "Jelenleg '''$1''' [[Special:ConfirmAccounts|felhasználói fiók-kérelem]] vár megerősítésre.",
 	'confirmaccounts'                 => 'Felhasználói fiók-kérelem megerősítése',
 	'confirmaccount-maintext'         => "'''Ezen a lapon lehet megerősíteni a felhasználói fiókokra vonatkozó kérelmeket'''.
 
-A várósor három részre oszlik: egy az új kérelmeket, egy azokat a kérelmeket, melyekhez tocábbi adatok szükségesek és egy a visszautasított kérelmeket tartalmazza.
+A várósor három részre oszlik: egy az új kérelmeket, egy azokat a kérelmeket, melyekhez további adatok szükségesek és egy a visszautasított kérelmeket tartalmazza.
 
 Mikor egy kérelemre válaszolsz, gondosan nézd át, és ha szükséges, erősítsd meg a benne található információkat.
 Az általad végzett műveleteket titokban naplózzuk.",
@@ -1480,7 +1480,7 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-back2'            => 'Visszautasított fiókok listájának megtekintése',
 	'confirmaccount-showheld'         => 'Visszatartott fiókok listájának megtekintése',
 	'confirmaccount-review'           => 'Áttekintés',
-	'confirmaccount-types'            => 'Válassz egy várólistáta az alábbiak közül:',
+	'confirmaccount-types'            => 'Válassz egy várólistát az alábbiak közül:',
 	'confirmaccount-all'              => '(összes várólista megtekintése)',
 	'confirmaccount-type'             => 'Kiválasztott várólista:',
 	'confirmaccount-type-0'           => 'leendő szerzők',
@@ -1493,7 +1493,7 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-leg-areas'        => 'Érdeklődési területek',
 	'confirmaccount-leg-person'       => 'Személyes információ',
 	'confirmaccount-leg-other'        => 'További információ',
-	'confirmaccount-name'             => 'Felhasználó név',
+	'confirmaccount-name'             => 'Felhasználói név',
 	'confirmaccount-real'             => 'Név:',
 	'confirmaccount-email'            => 'E-mail cím:',
 	'confirmaccount-reqtype'          => 'Pozíció:',
@@ -1577,7 +1577,7 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
 	'usercredentials-urls'            => 'Weboldalak listája:',
 	'usercredentials-ip'              => 'Valódi IP-cím:',
 	'usercredentials-member'          => 'Jogok:',
-	'usercredentials-badid'           => 'A felhasználó nem rendelkezik személyi adatokkal Ellenőrízd, hogy helyesen adtad-e meg a nevét.',
+	'usercredentials-badid'           => 'A felhasználó nem rendelkezik személyes adatokkal. Ellenőrizd, hogy helyesen adtad-e meg a nevét.',
 );
 
 $messages['io'] = array(
@@ -2699,6 +2699,12 @@ När din begäran om ett konto har godkänts, så kommer ett e-postmeddelande sk
 Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.',
 	'requestaccount-real'       => 'Riktigt namn:',
 	'requestaccount-same'       => '(samma som ditt riktiga namn)',
+	'requestaccount-email'      => 'E-postadress:',
+	'requestaccount-bio'        => 'Personlig biografi:',
+	'requestaccount-attach'     => 'Meritförteckning/CV (frivilligt):',
+	'requestaccount-tos'        => 'Jag har läst och lovar att följa [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] på {{SITENAME}}.
+Namnet som jag angivit som "Riktigt namn" är verkligen mitt egna riktiga namn.',
+	'requestaccount-submit'     => 'Begär konto',
 );
 
 /** Telugu (తెలుగు)
