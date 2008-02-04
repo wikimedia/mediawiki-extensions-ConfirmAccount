@@ -20,7 +20,7 @@ CREATE TABLE account_requests (
   acr_ip                   CIDR,
   acr_filename             TEXT,
   acr_storage_key          TEXT,
-  acr_type                 INTEGER,
+  acr_type                 INTEGER NOT NULL DEFAULT 0,
   acr_areas                TEXT,
   acr_deleted              BOOL      NOT NULL DEFAULT 'false',
   acr_rejected             TIMESTAMPTZ,
