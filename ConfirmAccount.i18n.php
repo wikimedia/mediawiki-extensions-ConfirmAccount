@@ -1120,6 +1120,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-needreason'       => 'Debe incluír un motivo na caixa de comentarios de embaixo.',
 	'confirmaccount-acc'              => 'Confirmouse sen problemas a solicitude de conta; creouse a nova conta de usuario [[User:$1]].',
 	'confirmaccount-rej'              => 'Rexeitouse sen problemas a solicitude de conta.',
+	'confirmaccount-viewing'          => '(actualmente visto polo [[Usuario:$1|$1]])',
 	'confirmaccount-summary'          => 'A crear a páxina de usuario coa biografía do novo usuario.',
 	'confirmaccount-welc'             => "'''Reciba a benvida a ''{{SITENAME}}''!''' Esperamos que contribúa moito e ben.
 	Será ben que lea [[{{MediaWiki:Helppage}}|Como comezar]]. De novo, reciba a nosa benvida e divírtase!",
@@ -1242,6 +1243,7 @@ Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a mó�
 	'requestaccount-email'            => 'E-mejlowa adresa:',
 	'requestaccount-reqtype'          => 'Pozicija:',
 	'requestaccount-level-0'          => 'awtor',
+	'requestaccount-level-1'          => 'Wobdźěłowar',
 	'requestaccount-bio'              => 'Wosobinska biografija:',
 	'requestaccount-attach'           => 'Žiwjenjoběh',
 	'requestaccount-notes'            => 'Přidatne podaća:',
@@ -1313,6 +1315,7 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-email'            => 'E-mejl',
 	'confirmaccount-reqtype'          => 'Pozicija:',
 	'confirmaccount-pos-0'            => 'awtor',
+	'confirmaccount-pos-1'            => 'Wobdźěłowar',
 	'confirmaccount-bio'              => 'Biografija',
 	'confirmaccount-attach'           => 'Žiwjenjoběh:',
 	'confirmaccount-notes'            => 'Přidatne přispomnjenki:',
@@ -2178,6 +2181,8 @@ $messages['pt'] = array(
 	'requestaccount-submit'           => 'Requerer conta',
 	'requestaccount-email-subj'       => 'Confirmação de endereço de email para {{SITENAME}}',
 	'requestaccount-email-subj-admin' => 'Pedido de conta em {{SITENAME}}',
+	'acct_request_throttle_hit'       => 'Desculpe, mas já pediu $1 contas. Não pode fazer mais pedidos.',
+	'requestaccount-loginnotice'      => "Para obter uma conta de utilizador, deverá '''[[{{ns:special}}:RequestAccount|pedi-la]]'''.",
 	'confirmaccounts'                 => 'Confirmar requerimentos de conta',
 	'confirmaccount-real-q'           => 'Nome',
 	'confirmaccount-bio-q'            => 'Biografia',
@@ -2197,12 +2202,32 @@ $messages['pt'] = array(
 	'confirmaccount-none-p'           => '(não fornecido)',
 	'confirmaccount-econf'            => '(confirmado)',
 	'confirmaccount-reject'           => '(rejeitado por [[{{ns:user}}:$1|$1]] em $2)',
+	'confirmaccount-create'           => 'Aceitar (criar conta)',
 	'confirmaccount-ip'               => 'Endereço IP:',
 	'confirmaccount-submit'           => 'Confirmar',
 	'confirmaccount-wsum'             => 'Bem-vindo!',
+	'confirmaccount-email-body'       => 'O seu pedido de conta foi aprovado em {{SITENAME}}.
+
+Nome da conta: $1
+
+Palavra-chave: $2
+
+Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
+	'confirmaccount-email-body2'      => 'O seu pedido de conta foi aprovado em {{SITENAME}}.
+
+Nome da conta: $1
+
+Palavra-chave: $2
+
+$3
+
+Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
 	'usercredentials-leg-areas'       => 'Principais áreas de interesse',
 	'usercredentials-leg-person'      => 'Informação pessoal',
+	'usercredentials-leg-other'       => 'Outras informações',
 	'usercredentials-bio'             => 'Biografia:',
+	'usercredentials-attach'          => 'Curriculum Vitae:',
+	'usercredentials-notes'           => 'Notas adicionais:',
 );
 
 $messages['rm'] = array(
