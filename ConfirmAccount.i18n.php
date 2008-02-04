@@ -1278,6 +1278,7 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'requestaccount-loginnotice'      => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[{{ns:special}}:RequestAccount|prosyć]]'''.",
 	'confirmaccount-newrequests'      => "{{PLURAL:$1|Čaka|Čakatej|Čakaja|Čaka}} tuchwilu '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|kontowe požadanje]]|[[Special:ConfirmAccounts|kontowej požadani]]|[[Special:ConfirmAccounts|kontowe požadanja]]|[[Special:ConfirmAccountskontowych požadanjow]]}}.",
 	'confirmaccounts'                 => 'Kontowe požadanja potwjerdźić',
+	'confirmedit-desc'                => 'Dawa běrokratam móžnosć kontowe požadanja potwjerdźić',
 	'confirmaccount-maintext'         => "'''Tuta strona wužiwa so, zo by njesčinjene kontowe požadanja na ''{{SITENAME}}'' potwjerdźiło'''.
 
 Kóžde čakanski rynk kontowych požadanjow wobsteji z třoch čakanskich podrynkow, jedyn za wotewrjene požadanje, jedyn za te, kotrež buchu wot administratorow falowacych informacijow dla do čakanskeje sekle stajili a třeći za tuchwilu wotpokazane požadanja.
@@ -1756,7 +1757,6 @@ Als uw gebruikersnaam is goedgekeurd, krijgt u een e-mail en daarna kunt u aanme
 	'requestaccount-reqtype'          => 'Positie:',
 	'requestaccount-level-0'          => 'auteur',
 	'requestaccount-level-1'          => 'redacteur',
-	'requestaccount-info'             => '(?)',
 	'requestaccount-bio'              => 'Persoonlijke biografie:',
 	'requestaccount-attach'           => 'CV (optioneel):',
 	'requestaccount-notes'            => 'Opmerkingen:',
@@ -1790,6 +1790,7 @@ Het e-mail adres werd bevestigd. U kan het verzoek hier "$2" bevestigen.',
 	'confirmaccount-newrequests'      => "Op dit moment {{PLURAL:$1|staat|staan}} er '''$1''' 
 {{PLURAL:$1|[[Special:ConfirmAccounts|gebruikersverzoek]]|[[Special:ConfirmAccounts|gebruikersverzoeken]]}} open.",
 	'confirmaccounts'                 => 'Gebruikersverzoeken bevestigen',
+	'confirmedit-desc'                => 'Geeft bureaucraten de mogelijkheid om gebruikersverzoeken te behandelen',
 	'confirmaccount-maintext'         => "'''Deze pagina wordt gebruikt om openstaande accountverzoeken te bevestigen op ''{{SITENAME}}'''''.
 
 Elke lijst met accountverzoeken bevat drie sublijsten: één voor openstaande verzoeken, één voor verzoeken die werden gemarkeerd als \"in behandeling\" door andere beheerders wegens ontbrekende informatie en één voor recent geweigerde verzoeken.
@@ -2205,9 +2206,11 @@ $messages['pt'] = array(
 	'confirmaccount-econf'            => '(confirmado)',
 	'confirmaccount-reject'           => '(rejeitado por [[{{ns:user}}:$1|$1]] em $2)',
 	'confirmaccount-create'           => 'Aceitar (criar conta)',
+	'confirmaccount-reason'           => 'Comentário (será incluído no email):',
 	'confirmaccount-ip'               => 'Endereço IP:',
 	'confirmaccount-submit'           => 'Confirmar',
 	'confirmaccount-wsum'             => 'Bem-vindo!',
+	'confirmaccount-email-subj'       => 'Pedido de conta em {{SITENAME}}',
 	'confirmaccount-email-body'       => 'O seu pedido de conta foi aprovado em {{SITENAME}}.
 
 Nome da conta: $1
@@ -2224,6 +2227,7 @@ Palavra-chave: $2
 $3
 
 Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
+	'usercredentials'                 => 'Credenciais do utilizador',
 	'usercredentials-leg-areas'       => 'Principais áreas de interesse',
 	'usercredentials-leg-person'      => 'Informação pessoal',
 	'usercredentials-leg-other'       => 'Outras informações',
