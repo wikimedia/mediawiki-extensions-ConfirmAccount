@@ -26,7 +26,6 @@ CREATE TABLE account_requests (
   acr_rejected             TIMESTAMPTZ,
   acr_held                 TIMESTAMPTZ,
   acr_user                 INTEGER  REFERENCES mwuser(user_id) ON DELETE SET NULL,
-  acr_type                 INTEGER NOT NULL DEFAULT 0,
   acr_comment              TEXT     NOT NULL DEFAULT ''
 );
 
