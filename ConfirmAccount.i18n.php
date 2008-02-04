@@ -81,6 +81,7 @@ This confirmation code will expire at $4.',
 	
 	# Confirm account page
 	'confirmaccounts'         => 'Confirm account requests', 
+	'confirmedit-desc'        => 'Gives bureaucrats the ability to confirm account requests',
 	'confirmaccount-maintext' => '\'\'\'This page is used to confirm pending account requests at \'\'{{SITENAME}}\'\'\'\'\'.
 	
 Each account request queue consists of three subqueues, one for open request, one for those that have been put on 
@@ -814,6 +815,7 @@ L'adresse courriel a été confirmée. Vous pouvez, d’ores et déjà, approuve
 	'requestaccount-loginnotice'      => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
 	'confirmaccount-newrequests'      => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
 	'confirmaccounts'                 => 'Demande de confirmation de comptes',
+	'confirmedit-desc'        => 'Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs.',
 	'confirmaccount-maintext'         => "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.
 
 Chaque demande de compte utilisateur consiste en trois sous-listes : une pour les demandes non traitées, une pour les comptes réservés dans l'attente de plus amples informations, et une dernière pour les comptes récemments rejetés.

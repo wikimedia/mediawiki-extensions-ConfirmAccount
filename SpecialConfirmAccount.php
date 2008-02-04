@@ -9,6 +9,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Confirm user accounts',
 	'description' => 'Gives bureaucrats the ability to confirm account requests',
+	'descriptionmsg' => 'confirmedit-desc',
 	'author' => 'Aaron Schulz',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
 	'version' => '1.1',
