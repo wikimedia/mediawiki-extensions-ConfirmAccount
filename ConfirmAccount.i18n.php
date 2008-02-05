@@ -1917,6 +1917,24 @@ Er kunnen contacteerlijsten zijn die u kan gebruiken als u meer wil te weten kom
 	'usercredentials-badid'           => 'Geen referenties gevonden voor deze gebruiker. Kijk na of de naam correct gespeld is.',
 );
 
+/** Norwegian (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['no'] = array(
+	'requestaccount'            => 'Etterspør konto',
+	'requestaccount-dup'        => "'''Merk: Du er allerede logget inn med en registrert konto.'''",
+	'requestaccount-leg-user'   => 'Brukerkonto',
+	'requestaccount-leg-areas'  => 'Hovedinteresseområder',
+	'requestaccount-leg-person' => 'Personlig informasjon',
+	'requestaccount-leg-other'  => 'Annen informasjon',
+	'requestaccount-acc-text'   => 'Du vil få en e-post med bekreftelse med en gang denne forespørselen postes. Vennligst svar ved å klikke på bekreftelseslenka i e-posten. Passordet ditt vil også sendes til deg når kontoen opprettes.',
+	'requestaccount-areas-text' => 'Velg det eller de områdene nedenfor som du har formell ekspertise i eller vil jobbe mest med.',
+	'requestaccount-ext-text'   => 'Følgende informasjon vil holdes privat, og vil kun brukes for denne forespørselen. Du vil kanskje liste opp kontaktinformasjon som et telefonnummer for å hjelpe til i bekreftelsesprosessen.',
+	'requestaccount-real'       => 'Virkelig navn:',
+	'requestaccount-same'       => '(samme som virkelig navn)',
+	'requestaccount-email'      => 'E-postadresse:',
+);
+
 /** Occitan (Occitan)
  * @author Cedric31
  * @author SPQRobin
@@ -2455,7 +2473,6 @@ $messages['sk'] = array(
 	'requestaccount-reqtype'          => 'Pozícia:',
 	'requestaccount-level-0'          => 'autor',
 	'requestaccount-level-1'          => 'redaktor',
-	'requestaccount-info'             => '(?)',
 	'requestaccount-bio'              => 'Osobná biografia:',
 	'requestaccount-attach'           => 'Resumé alebo CV (nepovinné):',
 	'requestaccount-notes'            => 'Ďalšie poznámky:',
@@ -2490,6 +2507,7 @@ Emailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu „$2“.',
 	'confirmaccount-newrequests'      => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}} 
 [[Special:ConfirmAccounts|{{PLURAL:$1|žiadosť o účet|žiadosti o účet|žiadostí o účet}}]].",
 	'confirmaccounts'                 => 'Potvrdiť žiadosti o účet',
+	'confirmedit-desc'                => 'Dáva byroktatom schopnosť potvrdzovať žiadosti o účet',
 	'confirmaccount-maintext'         => "'''Táto stránka sa používa na potvrdzovanie nevybavencýh žiadostí o účet na ''{{GRAMMAR:lokál|{{SITENAME}}}}''''''.
 
 Každý front žiadostí o účet pozostáva z troch podfront -- jednej pre otvorené požiadavky, druhej pre tie, ktoré boli pozdržané sptávcami kvôli chýbajúcim informáciám a tretej pre nedávno zamietnuté žiadosti.
