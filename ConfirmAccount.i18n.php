@@ -3261,10 +3261,3 @@ $2
 
 在這個網站中度提供了聯絡人列表，您可以用去知道更多用戶帳戶方針的資料。',
 );
-
-$messages['zh'] = $messages['zh-hans'];
-$messages['zh-cn'] = $messages['zh-hans'];
-$messages['zh-hk'] = $messages['zh-hant'];
-$messages['zh-sg'] = $messages['zh-hans'];
-$messages['zh-tw'] = $messages['zh-hant'];
-$messages['zh-yue'] = $messages['yue'];
