@@ -1056,6 +1056,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-newrequests'      => "Hai {{PLURAL:$1}} actualmente '''$1''' aberto 
  {{PLURAL:$1|[[Special:ConfirmAccounts|solicitude de conta]]|[[Special:ConfirmAccounts|solicitudes de contas]]}} pendente.",
 	'confirmaccounts'                 => 'Confirmar solicitudes de contas',
+	'confirmedit-desc'                => 'Dar aos burócratas a capacidade para confirmar as solicitudes de contas',
 	'confirmaccount-list'             => 'Abaixo aparece unha listaxe de contas pendentes de aprobación.
 	As contas aprobadas crearanse e eliminaranse desta listaxe. As contas rexeitadas simplemente eliminaranse desta listaxe.',
 	'confirmaccount-list2'            => 'Abaixo aparece unha listaxe con solicitudes de contas rexeitadas recentemente que poden eliminarse automaticamente
@@ -1912,18 +1913,57 @@ Er kunnen contacteerlijsten zijn die u kan gebruiken als u meer wil te weten kom
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
-	'requestaccount'            => 'Etterspør konto',
-	'requestaccount-dup'        => "'''Merk: Du er allerede logget inn med en registrert konto.'''",
-	'requestaccount-leg-user'   => 'Brukerkonto',
-	'requestaccount-leg-areas'  => 'Hovedinteresseområder',
-	'requestaccount-leg-person' => 'Personlig informasjon',
-	'requestaccount-leg-other'  => 'Annen informasjon',
-	'requestaccount-acc-text'   => 'Du vil få en e-post med bekreftelse med en gang denne forespørselen postes. Vennligst svar ved å klikke på bekreftelseslenka i e-posten. Passordet ditt vil også sendes til deg når kontoen opprettes.',
-	'requestaccount-areas-text' => 'Velg det eller de områdene nedenfor som du har formell ekspertise i eller vil jobbe mest med.',
-	'requestaccount-ext-text'   => 'Følgende informasjon vil holdes privat, og vil kun brukes for denne forespørselen. Du vil kanskje liste opp kontaktinformasjon som et telefonnummer for å hjelpe til i bekreftelsesprosessen.',
-	'requestaccount-real'       => 'Virkelig navn:',
-	'requestaccount-same'       => '(samme som virkelig navn)',
-	'requestaccount-email'      => 'E-postadresse:',
+	'requestaccount'                  => 'Etterspør konto',
+	'requestaccount-text'             => "'''Fullfør og lever følgende skjema for å etterspørre en brukerkonto.'''
+
+Forsikre deg om at du først leser [[{{MediaWiki:Requestaccount-page}}|tjenestevilkårene]] før du etterspør en konto.
+
+Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne logge inn via [[Special:Userlogin]].",
+	'requestaccount-page'             => 'Project:Tjenestevilkår',
+	'requestaccount-dup'              => "'''Merk: Du er allerede logget inn med en registrert konto.'''",
+	'requestaccount-leg-user'         => 'Brukerkonto',
+	'requestaccount-leg-areas'        => 'Hovedinteresseområder',
+	'requestaccount-leg-person'       => 'Personlig informasjon',
+	'requestaccount-leg-other'        => 'Annen informasjon',
+	'requestaccount-acc-text'         => 'Du vil få en e-post med bekreftelse med en gang denne forespørselen postes. Vennligst svar ved å klikke på bekreftelseslenka i e-posten. Passordet ditt vil også sendes til deg når kontoen opprettes.',
+	'requestaccount-areas-text'       => 'Velg det eller de områdene nedenfor som du har formell ekspertise i eller vil jobbe mest med.',
+	'requestaccount-ext-text'         => 'Følgende informasjon vil holdes privat, og vil kun brukes for denne forespørselen. Du vil kanskje liste opp kontaktinformasjon som et telefonnummer for å hjelpe til i bekreftelsesprosessen.',
+	'requestaccount-bio-text'         => 'Biografien din vil settes som standardinnhold på brukersiden din. Prøv å inkludere attestinformasjon, men kun om du føler deg tilpass med å frigi slik informasjon. Navnet ditt kan endres via [[Special:Preferences|innstillingene]].',
+	'requestaccount-real'             => 'Virkelig navn:',
+	'requestaccount-same'             => '(samme som virkelig navn)',
+	'requestaccount-email'            => 'E-postadresse:',
+	'requestaccount-reqtype'          => 'Posisjon:',
+	'requestaccount-level-0'          => 'forfatter',
+	'requestaccount-level-1'          => 'redaktør',
+	'requestaccount-bio'              => 'Personlig biografi:',
+	'requestaccount-attach'           => 'Resyme eller CV (valgfri):',
+	'requestaccount-notes'            => 'Andre merknader:',
+	'requestaccount-urls'             => 'Liste over nettsider, om det er noen (skill dem fra hverandre med linjeskift):',
+	'requestaccount-agree'            => 'Du må bekrefte at ditt virkelige navn er korrekt og at du går med på våre tjenestevilkår.',
+	'requestaccount-inuse'            => 'Brukernavnet er allerede i bruk i en ventende kontoforespørsel.',
+	'requestaccount-tooshort'         => 'Biografien din må være minst $1 ord lang.',
+	'requestaccount-emaildup'         => 'En annen ventende kontoforespørsel bruker samme e-postadresse.',
+	'requestaccount-exts'             => 'Filtypen på vedlegget er ikke tillatt.',
+	'requestaccount-resub'            => 'CV-/resyme-filen din må velges på nytt av sikkerhetshensyn. La feltet være tomt om du ikke lenger ønsker å legge ved en.',
+	'requestaccount-tos'              => 'Jeg har lest og vil følge [[{{MediaWiki:Requestaccount-page}}|tjenestevilkårene]] til {{SITENAME}}. Navnet jeg har oppgitt under «Virkelig navn» er mitt faktiske navn.',
+	'requestaccount-submit'           => 'Etterspør konto',
+	'requestaccount-sent'             => 'Kontoforespørselen din har blitt sendt, og venter på godkjenning.',
+	'request-account-econf'           => 'E-postadressen din er nå bekreftet, og vil listes slik i kontoforespørselen.',
+	'requestaccount-email-subj'       => 'E-postbekreftelse hos {{SITENAME}}',
+	'requestaccount-email-body'       => 'Noen, antageligvis deg fra IP-adressen $1, har etterspurt en konto «$2» med denne e-postadressen på {{SITENAME}}.
+
+For å bekrefte at denne forespørselen virkelig kommer fra deg, åpne denne lenken i nettleseren din:
+
+$3
+
+Om kontoen blir opprettet vil kun du motta passordet. Om forespørselen *ikke* kommer fra deg, ikke følg lenken. Denne bekreftelseskoden utløper $4.',
+	'requestaccount-email-subj-admin' => 'Kontoforespørsel på {{SITENAME}}',
+	'requestaccount-email-body-admin' => '«$1» har etterspurt en konto og venter på godkjenning. E-postadressen er bekreftet. Du kan godkjenne forespørselen her: «$2».',
+	'acct_request_throttle_hit'       => 'Beklager, du har allerede etterspurt $1 kontoer. Du kan ikke etterspørre flere.',
+	'requestaccount-loginnotice'      => "For å få en brukerkonto må du '''[[Special:RequestAccount|etterspørre en]]'''.",
+	'confirmaccount-newrequests'      => "Det er foreløpig '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}.",
+	'confirmaccounts'                 => 'Godkjenn kontoforespørsler',
+	'confirmedit-desc'                => 'Gir byråkrater muligheten til å godkjenne kontoforespørsler.',
 );
 
 /** Occitan (Occitan)
@@ -2186,6 +2226,7 @@ Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de not
 	'requestaccount-leg-areas'        => 'Principais áreas de interesse',
 	'requestaccount-leg-person'       => 'Informação pessoal',
 	'requestaccount-leg-other'        => 'Outras informações',
+	'requestaccount-acc-text'         => 'Será enviada um mensagem de confirmação para o seu endereço de email assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação fornecida no email. A sua palavra-chave também lhe será enviada por email assim que a sua conta estiver criada.',
 	'requestaccount-areas-text'       => 'Seleccione em baixo as áreas em que possui experiência formal ou em que gostaria de trabalhar mais.',
 	'requestaccount-real'             => 'Nome real:',
 	'requestaccount-same'             => '(igual ao nome real)',
@@ -2833,32 +2874,43 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
  * @author Max sonnelid
  */
 $messages['sv'] = array(
-	'requestaccount'            => 'Begär konto',
-	'requestaccount-text'       => "'''Fyll i och skicka följande formulär för att begära ett konto.'''
+	'requestaccount'            => 'Ansök om konto',
+	'requestaccount-text'       => "'''Fyll i och skicka följande formulär för att ansöka om ett konto.'''
 
-Se till att du har läst [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] innan  du begär ett konto.
+Se till att du har läst [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] innan du frågar efter ett konto.
 
-När din begäran om ett konto har godkänts, så kommer ett e-postmeddelande skickas till dig och ditt konto kan användas på [[Special:Userlogin]].",
+När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till dig och ditt konto kan användas på [[Special:Userlogin]].",
 	'requestaccount-page'       => '{{ns:project}}:Användningsvillkor',
 	'requestaccount-dup'        => "'''Notera: Du är redan inloggad med ett registrerat konto.'''",
 	'requestaccount-leg-user'   => 'Användarkonto',
 	'requestaccount-leg-areas'  => 'Intresseområden',
 	'requestaccount-leg-person' => 'Personlig information',
 	'requestaccount-leg-other'  => 'Annan information',
-	'requestaccount-acc-text'   => 'När du skickar in den här begäran så kommer ett bekräftelsemeddelande skickas till din e-postadress. Svara på det meddelandet genom att klicka på bekräftelselänken i e-brevet. Till din e-postadress kommer även ditt lösenord skickas när ditt konto har skapats.',
-	'requestaccount-areas-text' => 'Välj de ämnen härunder som du har expertkunskap om eller som du kommer att arbeta mest med.',
-	'requestaccount-ext-text'   => 'Följande information kommer hållas hemlig och bara användas för denna begäran.
+	'requestaccount-acc-text'   => 'När du skickar in den här ansökningen så kommer ett bekräftelsemeddelande skickas till din e-postadress. Svara på det meddelandet genom att klicka på bekräftelselänken i e-brevet. Till din e-postadress kommer även ditt lösenord skickas när ditt konto har skapats.',
+	'requestaccount-areas-text' => 'Välj de ämnesområden härunder som du har expertkunskap om eller som du kommer att arbeta mest med.',
+	'requestaccount-ext-text'   => 'Följande information kommer hållas hemlig och bara användas för denna ansökan.
 Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.',
+	'requestaccount-bio-text'   => 'Din biografi kommer användas som innehåll på din användarsida. Försök att ange dina meriter och referenser. Men se till att du inte besväras av att publicera sådan information. Ditt namn kan du ändra i dina  [[Special:Preferences|inställningar]].',
 	'requestaccount-real'       => 'Riktigt namn:',
 	'requestaccount-same'       => '(samma som ditt riktiga namn)',
 	'requestaccount-email'      => 'E-postadress:',
+	'requestaccount-reqtype'    => 'Position:',
 	'requestaccount-level-0'    => 'författare',
 	'requestaccount-level-1'    => 'redaktör',
 	'requestaccount-bio'        => 'Personlig biografi:',
 	'requestaccount-attach'     => 'Meritförteckning/CV (frivilligt):',
+	'requestaccount-notes'      => 'Andra anmärkningar',
+	'requestaccount-urls'       => 'Lista över webbplatser (skriv en per rad om det är flera):',
+	'requestaccount-agree'      => 'Du måste bekräfta att ditt namn är riktigt och att du accepterar våra användningsvillkor.',
+	'requestaccount-inuse'      => 'Användarnamnet används redan i en kontoansökan som väntar på att godkännas.',
+	'requestaccount-tooshort'   => 'Din biografi måste innehålla minst $1 ord.',
+	'requestaccount-emaildup'   => 'Samma e-postadress används i en annan kontoansökan som väntar på att godkännas.',
+	'requestaccount-exts'       => 'Den bifogade filen har en otillåten filtyp.',
 	'requestaccount-tos'        => 'Jag har läst och lovar att följa [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] på {{SITENAME}}.
 Namnet som jag angivit som "Riktigt namn" är verkligen mitt egna riktiga namn.',
-	'requestaccount-submit'     => 'Begär konto',
+	'requestaccount-submit'     => 'Ansök om konto',
+	'requestaccount-sent'       => 'Din kontoansökan har nu skickats och väntar på att godkännas.',
+	'requestaccount-email-subj' => 'Bekräftelse av e-postadress på {{SITENAME}}',
 	'confirmaccount-real-q'     => 'Namn',
 	'confirmaccount-email-q'    => 'E-post',
 	'confirmaccount-bio-q'      => 'Biografi',
@@ -3251,3 +3303,4 @@ $2
 
 在這個網站中度提供了聯絡人列表，您可以用去知道更多用戶帳戶方針的資料。',
 );
+
