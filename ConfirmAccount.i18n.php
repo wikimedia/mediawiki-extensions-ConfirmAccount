@@ -12,10 +12,9 @@ $messages['en'] = array(
 	'requestaccount'           => 'Request account',
 	'requestaccount-text'      => '\'\'\'Complete and submit the following form to request a user account\'\'\'. 
 	
-	Make sure that you first read the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] before requesting an account.
+Make sure that you first read the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] before requesting an account.
 	
-	Once the account is approved, you will be emailed a notification message and the account will be usable at 
-	[[Special:Userlogin]].',
+Once the account is approved, you will be emailed a notification message and the account will be usable at [[Special:Userlogin]].',
 	'requestaccount-footer'    => '', # only translate this message to other languages if you have to change it
 	'requestaccount-page'      => '{{ns:project}}:Terms of Service',
 	'requestaccount-dup'       => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
@@ -23,13 +22,14 @@ $messages['en'] = array(
 	'requestaccount-leg-areas'  => 'Main areas of interest',
 	'requestaccount-leg-person' => 'Personal information',
 	'requestaccount-leg-other' => 'Other information',
-	'requestaccount-acc-text'  => 'Your email address will be sent a confirmation message once this request is submitted. Please respond by 
-	clicking on the confirmation link provided by the the email. Also, your password will be emailed to you when your account is created.',
+	'requestaccount-acc-text'  => 'Your email address will be sent a confirmation message once this request is submitted. Please respond by clicking on the confirmation link provided by the email. Also, your password will be emailed to you when your account is created.',
 	'requestaccount-areas-text' => 'Select the topic areas below in which you have formal expertise or would like to do the most work in.',
-	'requestaccount-ext-text'  => 'The following information is kept private and will only be used for this request. 
-	You may want to list contacts such a phone number to aid in identify confirmation.',
-	'requestaccount-bio-text' => "Your biography will be set as the default content for your userpage. Try to include 
-	any credentials. Make sure you are comfortable publishing such information. Your name can be changed via [[Special:Preferences]].",
+	'requestaccount-ext-text'  => 'The following information is kept private and will only be used for this request.
+You may want to list contacts such a phone number to aid in identify confirmation.',
+	'requestaccount-bio-text' => "Your biography will be set as the default content for your userpage.
+Try to include any credentials.
+Make sure you are comfortable publishing such information.
+Your name can be changed via [[Special:Preferences]].",
 	'requestaccount-real'     => 'Real name:',
 	'requestaccount-same'     => '(same as real name)',
 	'requestaccount-email'    => 'Email address:',
@@ -46,29 +46,26 @@ $messages['en'] = array(
 	'requestaccount-tooshort' => 'Your biography must be at least be $1 words long.',
 	'requestaccount-emaildup' => 'Another pending account request uses the same email address.',
 	'requestaccount-exts'     => 'Attachment file type is disallowed.',
-	'requestaccount-resub'    => 'Your CV/resume file must be re-selected for security reasons. Leave the field blank 
-	if you no longer want to include one.',
-	'requestaccount-tos'      => 'I have read and agree to abide by the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] of {{SITENAME}}. 
-	The name I have specified under "Real name" is in fact my own real name.',
+	'requestaccount-resub'    => 'Your CV/resume file must be re-selected for security reasons.
+Leave the field blank if you no longer want to include one.',
+	'requestaccount-tos'      => 'I have read and agree to abide by the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] of {{SITENAME}}.
+The name I have specified under "Real name" is in fact my own real name.',
 	'requestaccount-submit'   => 'Request account',
 	'requestaccount-sent'     => 'Your account request has successfully been sent and is now pending review.',
-	
-	
-	'request-account-econf'   => 'Your e-mail address has been confirmed and will be listed as such in your account 
-	request.',
+
+	'request-account-econf'   => 'Your e-mail address has been confirmed and will be listed as such in your account request.',
 	'requestaccount-email-subj' => '{{SITENAME}} e-mail address confirmation',
-	'requestaccount-email-body' => 'Someone, probably you from IP address $1, has requested an
-account "$2" with this e-mail address on {{SITENAME}}.
+	'requestaccount-email-body' => 'Someone, probably you from IP address $1, has requested an account "$2" with this e-mail address on {{SITENAME}}.
 
 To confirm that this account really does belong to you on {{SITENAME}}, open this link in your browser:
 
 $3
 
-If the account is created, only you will be emailed the password. If this is *not* you, don\'t follow the link. 
+If the account is created, only you will be emailed the password. If this is *not* you, don\'t follow the link.
 This confirmation code will expire at $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} account request',
-	'requestaccount-email-body-admin' => 'The account "$1" has requested an account and is waiting for confirmation. 
-	The e-mail address has been confirmed. You can confirm the request here "$2".',
+	'requestaccount-email-body-admin' => 'The account "$1" has requested an account and is waiting for confirmation.
+The e-mail address has been confirmed. You can confirm the request here "$2".',
 
 	'acct_request_throttle_hit' => "Sorry, you have already requested $1 accounts. You can't make any more requests.",
 	
@@ -76,8 +73,7 @@ This confirmation code will expire at $4.',
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
 	# Site message for admins
-	'confirmaccount-newrequests' => 'There {{PLURAL:$1|is|are}} currently \'\'\'$1\'\'\' open 
-	{{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending.',
+	'confirmaccount-newrequests' => 'There {{PLURAL:$1|is|are}} currently \'\'\'$1\'\'\' open {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending.',
 	
 	# Confirm account page
 	'confirmaccounts'         => 'Confirm account requests', 
@@ -88,22 +84,18 @@ Each account request queue consists of three subqueues, one for open request, on
 hold by other administrators pending further information, and another for recently rejected requests.	
 	
 When responding to a request, carefully review it and, if needed, confirm the information contain therein. 
-Your actions will be privately logged. You are also expected to review any activity that takes place here aside 
-from what you do yourself.', 
+Your actions will be privately logged. You are also expected to review any activity that takes place here aside from what you do yourself.', 
 	'confirmaccount-list'     => 'Below is a list of account requests awaiting approval. 
-	Approved accounts will be created and removed from this list. Rejected accounts will simply be deleted from this 
-	list.',
-	'confirmaccount-list2'    => 'Below is a list recently rejected account requests which may automatically be deleted 
-	once several days old. They can still be approved into accounts, though you may want to first consult the rejecting 
-	admin before doing so.',
+Approved accounts will be created and removed from this list. Rejected accounts will simply be deleted from this list.',
+	'confirmaccount-list2'    => 'Below is a list recently rejected account requests which may automatically be deleted once several days old.
+They can still be approved into accounts, though you may want to first consult the rejecting admin before doing so.',
 	'confirmaccount-text'     => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. 
 	
-	Carefully review the below information. If you are approving this request, use the position dropdown to set the 
-	account status of the user. Edits made to the the application biography will not affect any permanent credential
-	storage. Note that you can choose to create the account under a different username. Use this only to avoid 
-	collisions with other names.
+Carefully review the below information. If you are approving this request, use the position dropdown to set the account status of the user.
+Edits made to the application biography will not affect any permanent credential storage. Note that you can choose to create the account under a different username.
+Use this only to avoid  collisions with other names.
 	
-	If you simply leave this page without confirming or denying this request, it will remain pending.',
+If you simply leave this page without confirming or denying this request, it will remain pending.',
 	'confirmaccount-none-o'   => 'There are currently no open pending account requests in this list.',
 	'confirmaccount-none-h'   => 'There are currently no held pending account requests in this list.',
 	'confirmaccount-none-r'   => 'There are currently no recently rejected account requests in this list.',
@@ -123,7 +115,8 @@ from what you do yourself.',
 	'confirmaccount-q-held'   => 'held requests',
 	'confirmaccount-q-rej'    => 'recently rejected requests',
 	
-	'confirmaccount-badid'    => 'There is no pending request corresponding to the given ID. It may have already been handled.',
+	'confirmaccount-badid'    => 'There is no pending request corresponding to the given ID.
+It may have already been handled.',
 	'confirmaccount-leg-user'  => 'User account',
 	'confirmaccount-leg-areas' => 'Main areas of interest',
 	'confirmaccount-leg-person' => 'Personal information',
@@ -159,7 +152,7 @@ from what you do yourself.',
 	'confirmaccount-viewing' => '(currently being viewed by [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
 	'confirmaccount-welc'    => "'''Welcome to ''{{SITENAME}}''!''' We hope you will contribute much and well. 
-	You'll probably want to read the [[{{MediaWiki:Helppage}}|help pages]]. Again, welcome and have fun!",
+You'll probably want to read the [[{{MediaWiki:Helppage}}|help pages]]. Again, welcome and have fun!",
 	'confirmaccount-wsum'    => 'Welcome!',
 	'confirmaccount-email-subj' => '{{SITENAME}} account request',
 	'confirmaccount-email-body' => 'Your request for an account has been approved on {{SITENAME}}.
@@ -168,8 +161,7 @@ Account name: $1
 
 Password: $2
 
-For security reasons you will need to change your password on first login. To login, please go to 
-{{fullurl:Special:Userlogin}}.',
+For security reasons you will need to change your password on first login. To login, please go to {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body2' => 'Your request for an account has been approved on {{SITENAME}}.
 
 Account name: $1
@@ -178,20 +170,18 @@ Password: $2
 
 $3
 
-For security reasons you will need to change your password on first login. To login, please go to 
-{{fullurl:Special:Userlogin}}.',
+For security reasons you will need to change your password on first login. To login, please go to {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
 
-There are several ways this can happen. You may not have filled out the form correctly, did not provide adequate 
-length in your responses, or otherwise failed to meet some policy criteria. There may be contact lists on site that 
-you can use if you want to know more about user account policy.',
+There are several ways this can happen.
+You may not have filled out the form correctly, did not provide adequate length in your responses, or otherwise failed to meet some policy criteria.
+There may be contact lists on site that you can use if you want to know more about user account policy.',
 	'confirmaccount-email-body4' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
 
 $2
 
 There may be contact lists on site that you can use if you want to know more about user account policy.',
-	'confirmaccount-email-body5' => 'Before your request for an account "$1" can be accepted on {{SITENAME}} 
-	you must first provide some additional information.
+	'confirmaccount-email-body5' => 'Before your request for an account "$1" can be accepted on {{SITENAME}} you must first provide some additional information.
 
 $2
 
