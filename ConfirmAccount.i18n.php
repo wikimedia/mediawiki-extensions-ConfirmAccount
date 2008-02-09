@@ -206,6 +206,13 @@ There may be contact lists on site that you can use if you want to know more abo
 	'usercredentials-badid'  => 'No credentials found for this user. Check that the name is spelled correctly.',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author SPQRobin
+ */
+$messages['af'] = array(
+	'usercredentials-user' => 'Gebruikersnaam:',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
@@ -721,6 +728,17 @@ $messages['el'] = array(
 	'confirmaccount-wsum'    => 'Καλός ήρθατε!',
 	'usercredentials-email'  => 'Ηλεκτρονικό ταχυδρομείο:',
 	'usercredentials-bio'    => 'Βιογραφία:',
+);
+
+/** Spanish (Español)
+ * @author Lin linao
+ */
+$messages['es'] = array(
+	'requestaccount-text' => "'''Completa y envía el siguiente formulario para solicitar una cuenta de usuario'''.  
+
+Antes de solicitar una cuenta, asegúrate de haber leído los [[{{MediaWiki:Requestaccount-page}}|Términos del servicio]].
+
+Una vez que la cuenta sea aprobada, se te enviará una notificación a través de correo electrónico y la cuenta se podrá usar entrando a [[Especial:Entrar]].",
 );
 
 $messages['ext'] = array(
@@ -2269,6 +2287,13 @@ Cada fila de pedidos de conta consiste em três sub-filas, uma para pedidos em a
 
 Quando responder a um pedido, reveja-o cuidadosamente e, se necessário, confirme a informação nele contida.  
 As suas acções será registadas privadamente. Também é esperado que vocês reveja qualquer actividade que  ocorra aqui para além das suas próprias acções.",
+	'confirmaccount-text'             => "Isto é um pedido pendente para uma conta de utilizador em '''{{SITENAME}}'''.  
+
+Reveja cuidadosamente a informação abaixo. Se está a aprovar este pedido, use a caixa de selecção de posição para esetabelecer o estado da conta do utilizador.
+Edições feitas à biografia da candidatura não afectarão nenhum armazenamento de credenciais permanente. Note que pode optar por criar a conta com um nome de utilizador diferente.
+Use esta possibilidade apenas para evitar colisões com outros nomes.
+
+Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, ele continuará pendente.",
 	'confirmaccount-none-o'           => 'Actualmente não existem pedidos de conta pendentes em aberto nesta lista.',
 	'confirmaccount-none-h'           => 'Actualmente não existem pedidos de conta pendentes em espera nesta lista.',
 	'confirmaccount-none-r'           => 'Actualmente não existem pedidos de conta recentemente rejeitados nesta lista.',
@@ -2870,59 +2895,104 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
 );
 
 /** Swedish (Svenska)
- * @author Lejonel
  * @author Max sonnelid
+ * @author Lejonel
  */
 $messages['sv'] = array(
-	'requestaccount'            => 'Ansök om konto',
-	'requestaccount-text'       => "'''Fyll i och skicka följande formulär för att ansöka om ett konto.'''
+	'requestaccount'                  => 'Ansök om konto',
+	'requestaccount-text'             => "'''Fyll i och skicka följande formulär för att ansöka om ett konto.'''
 
 Se till att du har läst [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] innan du frågar efter ett konto.
 
 När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till dig och ditt konto kan användas på [[Special:Userlogin]].",
-	'requestaccount-page'       => '{{ns:project}}:Användningsvillkor',
-	'requestaccount-dup'        => "'''Notera: Du är redan inloggad med ett registrerat konto.'''",
-	'requestaccount-leg-user'   => 'Användarkonto',
-	'requestaccount-leg-areas'  => 'Intresseområden',
-	'requestaccount-leg-person' => 'Personlig information',
-	'requestaccount-leg-other'  => 'Annan information',
-	'requestaccount-acc-text'   => 'När du skickar in den här ansökningen så kommer ett bekräftelsemeddelande skickas till din e-postadress. Svara på det meddelandet genom att klicka på bekräftelselänken i e-brevet. Till din e-postadress kommer även ditt lösenord skickas när ditt konto har skapats.',
-	'requestaccount-areas-text' => 'Välj de ämnesområden härunder som du har expertkunskap om eller som du kommer att arbeta mest med.',
-	'requestaccount-ext-text'   => 'Följande information kommer hållas hemlig och bara användas för denna ansökan.
+	'requestaccount-page'             => '{{ns:project}}:Användningsvillkor',
+	'requestaccount-dup'              => "'''Notera: Du är redan inloggad med ett registrerat konto.'''",
+	'requestaccount-leg-user'         => 'Användarkonto',
+	'requestaccount-leg-areas'        => 'Intresseområden',
+	'requestaccount-leg-person'       => 'Personlig information',
+	'requestaccount-leg-other'        => 'Annan information',
+	'requestaccount-acc-text'         => 'När du skickar in den här ansökningen så kommer ett bekräftelsemeddelande skickas till din e-postadress. Svara på det meddelandet genom att klicka på bekräftelselänken i e-brevet. Till din e-postadress kommer även ditt lösenord skickas när ditt konto har skapats.',
+	'requestaccount-areas-text'       => 'Välj de ämnesområden härunder som du har expertkunskap om eller som du kommer att arbeta mest med.',
+	'requestaccount-ext-text'         => 'Följande information kommer hållas hemlig och bara användas för denna ansökan.
 Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.',
-	'requestaccount-bio-text'   => 'Din biografi kommer användas som innehåll på din användarsida. Försök att ange dina meriter och referenser. Men se till att du inte besväras av att publicera sådan information. Ditt namn kan du ändra i dina  [[Special:Preferences|inställningar]].',
-	'requestaccount-real'       => 'Riktigt namn:',
-	'requestaccount-same'       => '(samma som ditt riktiga namn)',
-	'requestaccount-email'      => 'E-postadress:',
-	'requestaccount-reqtype'    => 'Position:',
-	'requestaccount-level-0'    => 'författare',
-	'requestaccount-level-1'    => 'redaktör',
-	'requestaccount-bio'        => 'Personlig biografi:',
-	'requestaccount-attach'     => 'Meritförteckning/CV (frivilligt):',
-	'requestaccount-notes'      => 'Andra anmärkningar',
-	'requestaccount-urls'       => 'Lista över webbplatser (skriv en per rad om det är flera):',
-	'requestaccount-agree'      => 'Du måste bekräfta att ditt namn är riktigt och att du accepterar våra användningsvillkor.',
-	'requestaccount-inuse'      => 'Användarnamnet används redan i en kontoansökan som väntar på att godkännas.',
-	'requestaccount-tooshort'   => 'Din biografi måste innehålla minst $1 ord.',
-	'requestaccount-emaildup'   => 'Samma e-postadress används i en annan kontoansökan som väntar på att godkännas.',
-	'requestaccount-exts'       => 'Den bifogade filen har en otillåten filtyp.',
-	'requestaccount-tos'        => 'Jag har läst och lovar att följa [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] på {{SITENAME}}.
+	'requestaccount-bio-text'         => 'Din biografi kommer användas som innehåll på din användarsida. Försök att ange dina meriter och referenser. Men se till att du inte besväras av att publicera sådan information. Ditt namn kan du ändra i dina  [[Special:Preferences|inställningar]].',
+	'requestaccount-real'             => 'Riktigt namn:',
+	'requestaccount-same'             => '(samma som ditt riktiga namn)',
+	'requestaccount-email'            => 'E-postadress:',
+	'requestaccount-reqtype'          => 'Position:',
+	'requestaccount-level-0'          => 'författare',
+	'requestaccount-level-1'          => 'redaktör',
+	'requestaccount-bio'              => 'Personlig biografi:',
+	'requestaccount-attach'           => 'Meritförteckning/CV (frivilligt):',
+	'requestaccount-notes'            => 'Andra anmärkningar',
+	'requestaccount-urls'             => 'Lista över webbplatser (skriv en per rad om det är flera):',
+	'requestaccount-agree'            => 'Du måste bekräfta att ditt namn är riktigt och att du accepterar våra användningsvillkor.',
+	'requestaccount-inuse'            => 'Användarnamnet används redan i en kontoansökan som väntar på att godkännas.',
+	'requestaccount-tooshort'         => 'Din biografi måste innehålla minst $1 ord.',
+	'requestaccount-emaildup'         => 'Samma e-postadress används i en annan kontoansökan som väntar på att godkännas.',
+	'requestaccount-exts'             => 'Den bifogade filen har en otillåten filtyp.',
+	'requestaccount-tos'              => 'Jag har läst och lovar att följa [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] på {{SITENAME}}.
 Namnet som jag angivit som "Riktigt namn" är verkligen mitt egna riktiga namn.',
-	'requestaccount-submit'     => 'Ansök om konto',
-	'requestaccount-sent'       => 'Din kontoansökan har nu skickats och väntar på att godkännas.',
-	'requestaccount-email-subj' => 'Bekräftelse av e-postadress på {{SITENAME}}',
-	'confirmaccount-real-q'     => 'Namn',
-	'confirmaccount-email-q'    => 'E-post',
-	'confirmaccount-bio-q'      => 'Biografi',
-	'confirmaccount-leg-user'   => 'Användarkonto',
-	'confirmaccount-leg-person' => 'Personlig information',
-	'confirmaccount-leg-other'  => 'Annan information',
-	'confirmaccount-name'       => 'Användarnamn',
-	'confirmaccount-real'       => 'Namn:',
-	'confirmaccount-email'      => 'E-post:',
-	'confirmaccount-pos-0'      => 'upphovsman',
-	'confirmaccount-pos-1'      => 'redaktör',
-	'confirmaccount-wsum'       => 'Välkommen!',
+	'requestaccount-submit'           => 'Ansök om konto',
+	'requestaccount-sent'             => 'Din kontoansökan har nu skickats och väntar på att godkännas.',
+	'requestaccount-email-subj'       => 'Bekräftelse av e-postadress på {{SITENAME}}',
+	'requestaccount-email-body'       => 'Någon, förmodligen du från IP-adressen $1, har ansökt om kontot "$2" med den här e-postadressen på {{SITENAME}}.
+
+För att bekräfta att det är du som ansökt om detta konto på {{SITENAME}} så måste du öppna följande länk i din webbläsare:
+
+$3
+
+Om kontot skapas så kommer lösenordet skickas via e-post endast till dig. Om det *inte* är du som gjort ansökan, följ då inte länken.
+Den här bekräftelsekoden slutar gälla den $4.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} konto begäran',
+	'acct_request_throttle_hit'       => 'Beklagar, du har redan begärt $1 konton. Du kan inte göra några mer begäringar.',
+	'confirmaccounts'                 => 'Konfrimera konto begäringar',
+	'confirmaccount-real-q'           => 'Namn',
+	'confirmaccount-email-q'          => 'E-post',
+	'confirmaccount-bio-q'            => 'Biografi',
+	'confirmaccount-review'           => 'Granska',
+	'confirmaccount-q-open'           => 'öppna begäringar',
+	'confirmaccount-leg-user'         => 'Användarkonto',
+	'confirmaccount-leg-person'       => 'Personlig information',
+	'confirmaccount-leg-other'        => 'Annan information',
+	'confirmaccount-name'             => 'Användarnamn',
+	'confirmaccount-real'             => 'Namn:',
+	'confirmaccount-email'            => 'E-post:',
+	'confirmaccount-pos-0'            => 'upphovsman',
+	'confirmaccount-pos-1'            => 'redaktör',
+	'confirmaccount-bio'              => 'Biografi:',
+	'confirmaccount-urls'             => 'Lista över websidor:',
+	'confirmaccount-econf'            => '(konfirmerad)',
+	'confirmaccount-reject'           => '(avvisad av [[User:$1|$1]] på $2)',
+	'confirmaccount-noreason'         => '(ingen)',
+	'confirmaccount-create'           => 'Acceptera (skapa konto)',
+	'confirmaccount-deny'             => 'Avslå (stryk från listan)',
+	'confirmaccount-hold'             => 'Inflytande',
+	'confirmaccount-spam'             => 'Spam (sänd inte e-post)',
+	'confirmaccount-reason'           => 'Kommentar (blir inkluderad i e-post):',
+	'confirmaccount-ip'               => 'IP adress:',
+	'confirmaccount-submit'           => 'Konfirmera',
+	'confirmaccount-wsum'             => 'Välkommen!',
+	'confirmaccount-email-body'       => 'Din begäran för ett konto har blivigt godkänd på {{SITENAME}}.
+
+Konto namn: $1
+
+Lösenord: $2
+
+Av säkerhetsskäl ska du ändra ditt lösenord på första inloggningen. För att logga in, var god att gå till {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'      => 'Din begäran för ett konto har blivigt godkänd på {{SITENAME}}.
+
+Konto namn: $1
+
+Lösenord: $2
+
+$3
+
+Av säkerhetsskäl ska du ändra ditt lösenord på första inloggningen. För att logga in, var god att gå till {{fullurl:Special:Userlogin}}.',
+	'usercredentials-user'            => 'Användarnamn:',
+	'usercredentials-leg-user'        => 'Användarkonto',
+	'usercredentials-leg-person'      => 'Personlig information',
+	'usercredentials-leg-other'       => 'Annan information',
 );
 
 /** Telugu (తెలుగు)
