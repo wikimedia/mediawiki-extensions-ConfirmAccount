@@ -1721,8 +1721,26 @@ $messages['lb'] = array(
 	'usercredentials-email'           => 'E-mail:',
 	'usercredentials-real'            => 'Richtege Numm:',
 	'usercredentials-bio'             => 'Biographie:',
+	'usercredentials-urls'            => 'Lëscht vun Internetsiten:',
 	'usercredentials-ip'              => 'Original IP-Adress:',
 	'usercredentials-member'          => 'Rechter:',
+);
+
+/** Malayalam (മലയാളം)
+ * @author Jacob.jose
+ */
+$messages['ml'] = array(
+	'requestaccount-real'    => 'യഥാര്‍ത്ഥ പേര്:',
+	'requestaccount-same'    => '(യഥാര്‍ത്ഥ പേരുതന്നെ)',
+	'requestaccount-email'   => 'ഇ-മെയില്‍ വിലാസം:',
+	'requestaccount-level-0' => 'രചയിതാവ്',
+	'confirmaccount-email-q' => 'ഇ-മെയില്‍',
+	'confirmaccount-bio-q'   => 'ജീവചരിത്രം',
+	'confirmaccount-review'  => 'പുനഃപരിശോധന',
+	'confirmaccount-ip'      => 'IP വിലാസം:',
+	'confirmaccount-submit'  => 'സ്ഥിരീകരിക്കുക',
+	'confirmaccount-wsum'    => 'സ്വാഗതം!',
+	'usercredentials-user'   => 'ഉപയോക്തൃനാമം:',
 );
 
 /** Low German (Plattdüütsch)
@@ -2944,7 +2962,7 @@ $3
 
 Om kontot skapas så kommer lösenordet skickas via e-post endast till dig. Om det *inte* är du som gjort ansökan, följ då inte länken.
 Den här bekräftelsekoden slutar gälla den $4.',
-	'requestaccount-email-subj-admin' => '{{SITENAME}} konto begäran',
+	'requestaccount-email-subj-admin' => 'Ansökan om konto på {{SITENAME}}',
 	'acct_request_throttle_hit'       => 'Beklagar, du har redan begärt $1 konton. Du kan inte göra några mer begäringar.',
 	'confirmaccounts'                 => 'Konfrimera konto begäringar',
 	'confirmaccount-real-q'           => 'Namn',
@@ -2952,6 +2970,7 @@ Den här bekräftelsekoden slutar gälla den $4.',
 	'confirmaccount-bio-q'            => 'Biografi',
 	'confirmaccount-review'           => 'Granska',
 	'confirmaccount-q-open'           => 'öppna begäringar',
+	'confirmaccount-q-held'           => 'inflytande begäringar',
 	'confirmaccount-leg-user'         => 'Användarkonto',
 	'confirmaccount-leg-person'       => 'Personlig information',
 	'confirmaccount-leg-other'        => 'Annan information',
