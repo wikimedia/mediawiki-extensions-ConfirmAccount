@@ -550,8 +550,21 @@ $2
 	'usercredentials-badid'           => 'Не са открити препоръки за този потребител. Проверете дали името е изписано правилно.',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
 $messages['br'] = array(
-	'confirmaccount-email-q'      => 'Postel',
+	'requestaccount-email'   => "Chomlec'h postel :",
+	'requestaccount-level-0' => 'aozer',
+	'requestaccount-level-1' => 'embanner',
+	'confirmaccount-real-q'  => 'Anv',
+	'confirmaccount-email-q' => 'Postel',
+	'confirmaccount-bio-q'   => 'Levrlennadur',
+	'confirmaccount-name'    => 'Anv implijer',
+	'confirmaccount-real'    => 'Anv :',
+	'confirmaccount-email'   => 'Postel :',
+	'confirmaccount-wsum'    => 'Degemer mat !',
+	'usercredentials-email'  => 'Postel :',
 );
 
 // German translations (by Rrosenfeld)
@@ -2237,13 +2250,42 @@ Për na question ëd sigurëssa un a venta ch'as cambia soa ciav la prima vira c
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'requestaccount-real'    => 'اصلي نوم:',
-	'requestaccount-email'   => 'د برېښناليک پته:',
-	'confirmaccount-real-q'  => 'نوم',
-	'confirmaccount-email-q' => 'برېښنالیک',
-	'usercredentials-email'  => 'برېښناليک:',
-	'usercredentials-real'   => 'اصلي نوم:',
-	'usercredentials-bio'    => 'ژوندليک:',
+	'requestaccount-real'        => 'اصلي نوم:',
+	'requestaccount-email'       => 'د برېښناليک پته:',
+	'confirmaccount-real-q'      => 'نوم',
+	'confirmaccount-email-q'     => 'برېښنالیک',
+	'confirmaccount-bio-q'       => 'ژوندليک',
+	'confirmaccount-review'      => 'مخکتنه',
+	'confirmaccount-leg-other'   => 'نور مالومات',
+	'confirmaccount-name'        => 'کارن-نوم',
+	'confirmaccount-real'        => 'نوم:',
+	'confirmaccount-email'       => 'برېښناليک:',
+	'confirmaccount-pos-0'       => 'ليکوال',
+	'confirmaccount-bio'         => 'ژوندليک:',
+	'confirmaccount-urls'        => 'د وېبځايونو لړليک:',
+	'confirmaccount-ip'          => 'IP پته:',
+	'confirmaccount-email-body'  => 'په {{SITENAME}} باندې د يوه کارن-حساب لپاره غوښتنه مو ومنل شوه .
+
+د کارن-حساب نوم: $1
+
+پټنوم: $2
+
+د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:Userlogin}} ولاړ شی.',
+	'confirmaccount-email-body2' => 'په {{SITENAME}} باندې د يوه کارن-حساب لپاره غوښتنه مو ومنل شوه .
+
+د کارن-حساب نوم: $1
+
+پټنوم: $2
+
+$3
+
+د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:Userlogin}} ولاړ شی.',
+	'usercredentials-user'       => 'کارن-نوم:',
+	'usercredentials-leg-other'  => 'نور مالومات',
+	'usercredentials-email'      => 'برېښناليک:',
+	'usercredentials-real'       => 'اصلي نوم:',
+	'usercredentials-bio'        => 'ژوندليک:',
+	'usercredentials-urls'       => 'د وېبځايونو لړليک:',
 );
 
 /** Portuguese (Português)
@@ -2264,6 +2306,8 @@ Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de not
 	'requestaccount-leg-other'        => 'Outras informações',
 	'requestaccount-acc-text'         => 'Será enviada um mensagem de confirmação para o seu endereço de email assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação fornecida no email. A sua palavra-chave também lhe será enviada por email assim que a sua conta estiver criada.',
 	'requestaccount-areas-text'       => 'Seleccione em baixo as áreas em que possui experiência formal ou em que gostaria de trabalhar mais.',
+	'requestaccount-ext-text'         => 'A seguinte informação é mantida privada e só será usada para este pedido.
+Poderá querer listar contactos tal como o número de telefone para ajudar na confirmação da identificação.',
 	'requestaccount-real'             => 'Nome real:',
 	'requestaccount-same'             => '(igual ao nome real)',
 	'requestaccount-email'            => 'Endereço de email:',
@@ -2295,6 +2339,8 @@ $3
 Se a conta for criada, apenas lhe será enviada a palavra-chave a si. Se esta pessoa *não* for você, não siga a ligação.
 Este código de confirmação expirará em $4.',
 	'requestaccount-email-subj-admin' => 'Pedido de conta em {{SITENAME}}',
+	'requestaccount-email-body-admin' => 'A conta "$1" pediu uma conta e aguarda confirmação.
+O endereço de email foi confirmado. Você pode confirmar o pedido aqui "$2".',
 	'acct_request_throttle_hit'       => 'Desculpe, mas já pediu $1 contas. Não pode fazer mais pedidos.',
 	'requestaccount-loginnotice'      => "Para obter uma conta de utilizador, deverá '''[[{{ns:special}}:RequestAccount|pedi-la]]'''.",
 	'confirmaccounts'                 => 'Confirmar requerimentos de conta',
