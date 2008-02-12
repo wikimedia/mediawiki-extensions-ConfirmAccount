@@ -73,8 +73,6 @@ $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
 # This right has the request IP show when confirming accounts
 $wgGroupPermissions['bureaucrat']['requestips'] = true;
-$dir = dirname(__FILE__) . '/';
-$wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 
 # If credentials are stored, this right lets users look them up
 $wgGroupPermissions['bureaucrat']['lookupcredentials'] = true;
@@ -82,6 +80,9 @@ $wgGroupPermissions['bureaucrat']['lookupcredentials'] = true;
 # Show notice for open requests to admins?
 # This is cached, but still can be expensive on sites with thousands of requests.
 $wgConfirmAccountNotice = true;
+
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 
 function efAddRequestLoginText( &$template ) {
 	global $wgUser;
