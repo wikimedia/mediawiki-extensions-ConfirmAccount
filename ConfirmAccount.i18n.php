@@ -720,6 +720,13 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
+/** Ewe (Eʋegbe)
+ * @author M.M.S.
+ */
+$messages['ee'] = array(
+	'confirmaccount-wsum' => 'Woezɔ loo!',
+);
+
 /** Greek (Ελληνικά)
  * @author Consta
  */
@@ -804,7 +811,6 @@ $messages['fr'] = array(
 	'requestaccount-reqtype'          => 'Situation :',
 	'requestaccount-level-0'          => 'auteur',
 	'requestaccount-level-1'          => 'éditeur',
-	'requestaccount-info'             => '(?)',
 	'requestaccount-bio'              => 'Biographie personnelle:',
 	'requestaccount-attach'           => 'CV/Résumé (facultatif)',
 	'requestaccount-notes'            => 'Notes supplémentaires :',
@@ -836,7 +842,7 @@ L'adresse courriel a été confirmée. Vous pouvez, d’ores et déjà, approuve
 	'requestaccount-loginnotice'      => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
 	'confirmaccount-newrequests'      => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
 	'confirmaccounts'                 => 'Demande de confirmation de comptes',
-	'confirmedit-desc'        => 'Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs.',
+	'confirmedit-desc'                => 'Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs.',
 	'confirmaccount-maintext'         => "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.
 
 Chaque demande de compte utilisateur consiste en trois sous-listes : une pour les demandes non traitées, une pour les comptes réservés dans l'attente de plus amples informations, et une dernière pour les comptes récemments rejetés.
@@ -1295,7 +1301,7 @@ Jeli *njej*sy wužiwarske konto požadał, njewočiń prošu tutón wotkaz!
 
 Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'requestaccount-email-subj-admin' => 'Požadanje konta za {{SITENAME}}',
-	'requestaccount-email-body-admin' => 'Konto "$1" je konto požadał a čaka na potwjerdźenje. E-mejlowa adresa bu potwjerdźena. Móžeš požadanje tu "$" potwjerdźić.',
+	'requestaccount-email-body-admin' => '"$1" je konto požadał a čaka na potwjerdźenje. E-mejlowa adresa bu potwjerdźena. Móžeš požadanje tu "$2" potwjerdźić.',
 	'acct_request_throttle_hit'       => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
 	'requestaccount-loginnotice'      => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[{{ns:special}}:RequestAccount|prosyć]]'''.",
 	'confirmaccount-newrequests'      => "{{PLURAL:$1|Čaka|Čakatej|Čakaja|Čaka}} tuchwilu '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|kontowe požadanje]]|[[Special:ConfirmAccounts|kontowej požadani]]|[[Special:ConfirmAccounts|kontowe požadanja]]|[[Special:ConfirmAccountskontowych požadanjow]]}}.",
@@ -1824,8 +1830,7 @@ $3
 Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de link dan *niet*. 
 Deze bevestigingse-mail verloop op $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} accountverzoeken',
-	'requestaccount-email-body-admin' => 'Het account "$1" heeft een account aangevraagd en wacht op bevestiging.
-Het e-mail adres werd bevestigd. U kan het verzoek hier "$2" bevestigen.',
+	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging. Het e-mail adres is bevestigd. U kan het verzoek hier "$2" bevestigen.',
 	'acct_request_throttle_hit'       => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
 	'requestaccount-loginnotice'      => "Om een gebruiker te krijgen, moet u '''[[Special:RequestAccount|een verzoek doen]]'''.",
 	'confirmaccount-newrequests'      => "Op dit moment {{PLURAL:$1|staat|staan}} er '''$1''' 
@@ -2015,6 +2020,22 @@ Om kontoen blir opprettet vil kun du motta passordet. Om forespørselen *ikke* k
 	'confirmedit-desc'                => 'Gir byråkrater muligheten til å godkjenne kontoforespørsler.',
 );
 
+/** Northern Sotho (Sesotho sa Leboa)
+ * @author Mohau
+ */
+$messages['nso'] = array(
+	'requestaccount-real'    => 'Leina la nnete:',
+	'requestaccount-email'   => 'Atrese ya email:',
+	'requestaccount-level-0' => 'mongwadi',
+	'requestaccount-level-1' => 'morulaganyi',
+	'confirmaccount-real-q'  => 'Leina',
+	'confirmaccount-real'    => 'Leina:',
+	'confirmaccount-pos-0'   => 'mongwadi',
+	'confirmaccount-pos-1'   => 'morulaganyi',
+	'usercredentials-user'   => 'Liena la mošomiši:',
+	'usercredentials-real'   => 'Leina la nnete',
+);
+
 /** Occitan (Occitan)
  * @author Cedric31
  * @author SPQRobin
@@ -2038,7 +2059,6 @@ $messages['oc'] = array(
 	'requestaccount-reqtype'          => 'Situacion :',
 	'requestaccount-level-0'          => 'autor',
 	'requestaccount-level-1'          => 'editor',
-	'requestaccount-info'             => '(?)',
 	'requestaccount-bio'              => 'Biografia personala:',
 	'requestaccount-attach'           => 'CV/Resumit (facultatiu)',
 	'requestaccount-notes'            => 'Nòtas suplementàrias :',
@@ -2308,6 +2328,10 @@ Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de not
 	'requestaccount-areas-text'       => 'Seleccione em baixo as áreas em que possui experiência formal ou em que gostaria de trabalhar mais.',
 	'requestaccount-ext-text'         => 'A seguinte informação é mantida privada e só será usada para este pedido.
 Poderá querer listar contactos tal como o número de telefone para ajudar na confirmação da identificação.',
+	'requestaccount-bio-text'         => 'A sua biografia será usada como conteúdo por defeito da sua página de utilizador.
+Tente incluir algumas credenciais.
+Assegure-se de que se encontra confortável em publicar tal informação.
+O seu nome pode ser alterado em [[{{ns:special}}:Preferences]].',
 	'requestaccount-real'             => 'Nome real:',
 	'requestaccount-same'             => '(igual ao nome real)',
 	'requestaccount-email'            => 'Endereço de email:',
@@ -2343,6 +2367,7 @@ Este código de confirmação expirará em $4.',
 O endereço de email foi confirmado. Você pode confirmar o pedido aqui "$2".',
 	'acct_request_throttle_hit'       => 'Desculpe, mas já pediu $1 contas. Não pode fazer mais pedidos.',
 	'requestaccount-loginnotice'      => "Para obter uma conta de utilizador, deverá '''[[{{ns:special}}:RequestAccount|pedi-la]]'''.",
+	'confirmaccount-newrequests'      => "Há actualmente '''$1''' {{PLURAL:$1|[[{{ns:Special}}:ConfirmAccounts|pedido de conta]] aberto pendente|[[{{ns:Special}}:ConfirmAccounts|pedidos de conta]] abertos pendentes}}.",
 	'confirmaccounts'                 => 'Confirmar requerimentos de conta',
 	'confirmedit-desc'                => 'Possibilita aos burocratas confirmar pedidos de conta',
 	'confirmaccount-maintext'         => "'''Esta página é usada para confirmar pedidos de conta pendentes em ''{{SITENAME}}'''''.
@@ -2351,6 +2376,10 @@ Cada fila de pedidos de conta consiste em três sub-filas, uma para pedidos em a
 
 Quando responder a um pedido, reveja-o cuidadosamente e, se necessário, confirme a informação nele contida.  
 As suas acções será registadas privadamente. Também é esperado que vocês reveja qualquer actividade que  ocorra aqui para além das suas próprias acções.",
+	'confirmaccount-list'             => 'Abaixo encontra-se uma lista de pedidos de conta à espera de aprovação.
+Contas aprovadas serão criadas e removidas desta lista. Contas rejeitadas serão simplesmente eliminadas desta lista.',
+	'confirmaccount-list2'            => 'Abaixo encontra-se uma lista de pedidos de conta recentemente rejeitados que serão automaticamente eliminados após alguns dias.
+Estes podem ainda ser aprovados para novas contas, mas deverá verificar primeiro com o administrador que rejeitou o pedido antes de o aprovar.',
 	'confirmaccount-text'             => "Isto é um pedido pendente para uma conta de utilizador em '''{{SITENAME}}'''.  
 
 Reveja cuidadosamente a informação abaixo. Se está a aprovar este pedido, use a caixa de selecção de posição para esetabelecer o estado da conta do utilizador.
@@ -2497,7 +2526,6 @@ $messages['ru'] = array(
 	'requestaccount-reqtype'          => 'Должность:',
 	'requestaccount-level-0'          => 'автор',
 	'requestaccount-level-1'          => 'редактор',
-	'requestaccount-info'             => '(?)',
 	'requestaccount-bio'              => 'Личная биография:',
 	'requestaccount-attach'           => 'Резюме (необязательно):',
 	'requestaccount-notes'            => 'Дополнительные замечания:',
@@ -2959,8 +2987,9 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
 );
 
 /** Swedish (Svenska)
- * @author Max sonnelid
  * @author Lejonel
+ * @author Max sonnelid
+ * @author M.M.S.
  */
 $messages['sv'] = array(
 	'requestaccount'                  => 'Ansök om konto',
@@ -3058,6 +3087,9 @@ Av säkerhetsskäl ska du ändra ditt lösenord på första inloggningen. För a
 	'usercredentials-leg-user'        => 'Användarkonto',
 	'usercredentials-leg-person'      => 'Personlig information',
 	'usercredentials-leg-other'       => 'Annan information',
+	'usercredentials-email'           => 'E-post:',
+	'usercredentials-real'            => 'Riktigt namn:',
+	'usercredentials-bio'             => 'Biografi:',
 );
 
 /** Telugu (తెలుగు)
