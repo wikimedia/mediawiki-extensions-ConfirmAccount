@@ -269,7 +269,7 @@ $3
 لو أن الحساب تم إنشاؤه، فقط أنت سيتم إرسال كلمة السر إليه. لو أن هذا *ليس* أنت، لا تتبع الوصلة. 
 كود التأكيد سينتهي في $4.',
 	'requestaccount-email-subj-admin' => 'طلب حساب {{SITENAME}}',
-	'requestaccount-email-body-admin' => 'الحساب "$1" طلب حسابا وينتظر التأكيد.  
+	'requestaccount-email-body-admin' => '"$1" طلب حسابا وينتظر التأكيد.  
 عنوان البريد الإلكتروني تم تأكيده. يمكنك تأكيد الطلب هنا "$2".',
 	'acct_request_throttle_hit'       => 'عذرا، لقد طلبت بالفعل $1 حساب. لا يمكنك عمل المزيد من الطلبات.',
 	'requestaccount-loginnotice'      => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
@@ -835,9 +835,9 @@ $3
 Votre mot de passe vous sera envoyé uniquement si votre compte est créé. Si tel n’était pas le cas, n’utilisez pas ce lien.
 Ce code de confirmation expire le $4.',
 	'requestaccount-email-subj-admin' => 'Demande de compte sur {{SITENAME}}',
-	'requestaccount-email-body-admin' => "Le compte « $1 » a demandé un compte et se trouve en attente de confirmation.
+	'requestaccount-email-body-admin' => "« $1 » a demandé un compte et se trouve en attente de confirmation.
 
-L'adresse courriel a été confirmée. Vous pouvez, d’ores et déjà, approuver la demande ici « $2 ».",
+L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $2 ».",
 	'acct_request_throttle_hit'       => 'Désolé, vous avec demandé $1 comptes. Vous ne pouvez plus faire de demande.',
 	'requestaccount-loginnotice'      => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
 	'confirmaccount-newrequests'      => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
@@ -2363,7 +2363,7 @@ $3
 Se a conta for criada, apenas lhe será enviada a palavra-chave a si. Se esta pessoa *não* for você, não siga a ligação.
 Este código de confirmação expirará em $4.',
 	'requestaccount-email-subj-admin' => 'Pedido de conta em {{SITENAME}}',
-	'requestaccount-email-body-admin' => 'A conta "$1" pediu uma conta e aguarda confirmação.
+	'requestaccount-email-body-admin' => '"$1" pediu uma conta e aguarda confirmação.
 O endereço de email foi confirmado. Você pode confirmar o pedido aqui "$2".',
 	'acct_request_throttle_hit'       => 'Desculpe, mas já pediu $1 contas. Não pode fazer mais pedidos.',
 	'requestaccount-loginnotice'      => "Para obter uma conta de utilizador, deverá '''[[{{ns:special}}:RequestAccount|pedi-la]]'''.",
