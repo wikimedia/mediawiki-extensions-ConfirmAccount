@@ -550,6 +550,43 @@ $2
 	'usercredentials-badid'           => 'Не са открити препоръки за този потребител. Проверете дали името е изписано правилно.',
 );
 
+/** Bengali (বাংলা)
+ * @author Zaheen
+ */
+$messages['bn'] = array(
+	'requestaccount-real'             => 'প্রকৃত নাম:',
+	'requestaccount-same'             => '(প্রকৃত নামের মত)',
+	'requestaccount-email'            => 'ইমেইল ঠিকানা:',
+	'requestaccount-reqtype'          => 'পদ:',
+	'requestaccount-level-0'          => 'লেখক',
+	'requestaccount-level-1'          => 'সম্পাদক',
+	'requestaccount-bio'              => 'ব্যক্তিগত জীবনী:',
+	'requestaccount-attach'           => 'রেজুমে বা সিভি (আবশ্যকীয় নয়):',
+	'requestaccount-notes'            => 'অতিরিক্ত মন্তব্য:',
+	'requestaccount-urls'             => 'ওয়েবসাইটের তালিকা, যদি থাকে (নতুন লাইন দিয়ে পৃথক করুন):',
+	'requestaccount-agree'            => 'আপনি যে প্রকৃত নাম ব্যবহার করেছেন এবং আমাদের সেবার শর্তের সাথে একমত হয়েছেন, তা নিশ্চিত করতে হবে।',
+	'requestaccount-inuse'            => 'এই ব্যবহারকারী নামটি ইতিমধ্যেই একটি অপেক্ষারত অ্যাকাউন্ট অনুরোধে ব্যবহৃত হচ্ছে।',
+	'requestaccount-tooshort'         => 'আপনার জীবনী কমপক্ষে $1 শব্দ দীর্ঘ হতে হবে।',
+	'requestaccount-emaildup'         => 'আরেকটি অপেক্ষারত অ্যাকাউন্ট অনুরোধে একই ইমেইল ঠিকানা ব্যবহার করা হয়েছে।',
+	'requestaccount-exts'             => 'সংযুক্ত ফাইলের ধরন অনুমোদিত নয়।',
+	'requestaccount-submit'           => 'অ্যাকাউন্ট অনুরোধ করুন',
+	'requestaccount-email-subj-admin' => '{{SITENAME}}-এ অ্যাকাউন্ট অনুরোধ',
+	'confirmaccount-real-q'           => 'নাম',
+	'confirmaccount-email-q'          => 'ইমেইল',
+	'confirmaccount-bio-q'            => 'জীবনী',
+	'confirmaccount-name'             => 'ব্যবহারকারী নাম',
+	'confirmaccount-real'             => 'নাম:',
+	'confirmaccount-email'            => 'ইমেইল:',
+	'confirmaccount-reqtype'          => 'পদ:',
+	'confirmaccount-pos-0'            => 'লেখক',
+	'confirmaccount-pos-1'            => 'সম্পাদক',
+	'confirmaccount-bio'              => 'জীবনী:',
+	'confirmaccount-attach'           => 'রেজুমে/সিভি:',
+	'confirmaccount-notes'            => 'অতিরিক্ত মন্তব্য:',
+	'confirmaccount-urls'             => 'ওয়েবসাইটের তালিকা:',
+	'confirmaccount-none-p'           => '(দেয়া হয়নি)',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
@@ -1830,7 +1867,7 @@ $3
 Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de link dan *niet*. 
 Deze bevestigingse-mail verloop op $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} accountverzoeken',
-	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging. Het e-mail adres is bevestigd. U kan het verzoek hier "$2" bevestigen.',
+	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging. Het e-mailadres is bevestigd. U kan het verzoek hier "$2" bevestigen.',
 	'acct_request_throttle_hit'       => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
 	'requestaccount-loginnotice'      => "Om een gebruiker te krijgen, moet u '''[[Special:RequestAccount|een verzoek doen]]'''.",
 	'confirmaccount-newrequests'      => "Op dit moment {{PLURAL:$1|staat|staan}} er '''$1''' 
@@ -2076,13 +2113,14 @@ $messages['oc'] = array(
 	'requestaccount-email-subj'       => '{{SITENAME}} confirmacion d’adreça de corrièr electronic.',
 	'requestaccount-email-body'       => "Qualqu’un, probablament vos, a formulat, dempuèi l’adreca IP $1, una demanda de compte d'utilizaire « $2 » amb aquesta adreça de corrièr electronic sus {{SITENAME}}. Per confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navegaire Web : $3 Vòstre senhal vos serà mandat unicament se vòstre compte es creat. Se èra pas lo cas, utilizetz pas aqueste ligam. Aqueste còde de confirmacion expira lo $4.",
 	'requestaccount-email-subj-admin' => 'Demanda de compte sus {{SITENAME}}',
-	'requestaccount-email-body-admin' => "Lo compte « $1 » a demandat un compte e se tròba en espèra de confirmacion.
+	'requestaccount-email-body-admin' => "« $1 » a demandat un compte e se tròba en espèra de confirmacion.
 
 L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprobar la demanda aicí « $2 ».",
 	'acct_request_throttle_hit'       => 'O planhem, avètz demandat $1 comptes. Podètz pas far mai de demanda',
 	'requestaccount-loginnotice'      => "Per obténer un compte d'utilizaire, devètz ne far '''[[Special:RequestAccount|la demanda]]'''.",
 	'confirmaccount-newrequests'      => "Actualament i a '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compte]]|[[Special:ConfirmAccounts|demandas de compte]]}} en cors.",
 	'confirmaccounts'                 => 'Demanda de confirmacion de comptes',
+	'confirmedit-desc'                => 'Balha als burocratas la possibilitat de confirmar las demandas de comptes d’utilizaires.',
 	'confirmaccount-maintext'         => "'''Aquesta pagina es utilizada per confirmar las demandas de compte d'utilizaire sus ''{{SITENAME}}'''''.
 
 Cada demanda de compte d'utilizaire consistís en tres soslistas : una per las demandas non tractadas, una pels comptes reservats dins l'espèra d'informacions mai amplas, e una darrièra pels comptes regetats recentament.
@@ -2175,12 +2213,29 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'usercredentials-badid'           => 'Cap de referéncia pas trobada per aqueste utilizaire. Verificatz que lo nom siá ben redigit.',
 );
 
-/*Polisk (Polski*/
+/** Polish (Polski)
+ * @author Equadus
+ * @author Derbeth
+ * @author Sp5uhe
+ */
 $messages['pl'] = array(
-	'acct_request_throttle_hit'   => 'Przepraszamy, zamówiłeś (-aś) już o $1 kont. Nie możesz wykonać więcej zamówień.',
-	'confirmaccount-email'        => 'E-mail:',
-	'confirmaccount-email-q'      => 'E-mail',
-	'confirmaccount-ip'           => 'Adres IP:',
+	'requestaccount'            => 'Prośba o konto',
+	'requestaccount-leg-other'  => 'Inne informacje',
+	'requestaccount-email'      => 'Adres e-mail:',
+	'requestaccount-reqtype'    => 'Pozycja:',
+	'requestaccount-level-0'    => 'autor',
+	'requestaccount-email-body' => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, zarejestrował w {{GRAMMAR:Ms.pl|{{SITENAME}}}} konto "$2", podając przy tym niniejszy adres e-mail.
+
+Jeśli to Ty zakładałaś konto w {{GRAMMAR:Ms.pl|{{SITENAME}}}}, potwierdź to otwierając w swojej przeglądarce poniższy link:
+
+$3
+
+Jeśli konto jest utworzone, tylko Ty będziesz mieć możliwość uzyskania hasła drogą elektroniczną. Jeśli to nie Ty zakładałaś/eś konto, *nie klikaj* w powyższy link. Powyższy kod potwierdzający straci ważność $4.',
+	'acct_request_throttle_hit' => 'Przepraszamy, zamówiłeś (-aś) już o $1 kont. Nie możesz wykonać więcej zamówień.',
+	'confirmaccount-email-q'    => 'E-mail',
+	'confirmaccount-email'      => 'E-mail:',
+	'confirmaccount-pos-0'      => 'autor',
+	'confirmaccount-ip'         => 'Adres IP:',
 );
 
 /** Piemontèis (Piemontèis)
@@ -2737,8 +2792,8 @@ $3
 Ak ste to *neboli* vy, neotvárajte odkaz. Tento potvrdzovací kód
 vyprší o $4.',
 	'requestaccount-email-subj-admin' => 'Žiadosť o účet vo {{GRAMMAR:lokál|{{SITENAME}}}}',
-	'requestaccount-email-body-admin' => 'Účet „$1“ požiadal o účet a čaká na vaše potvrdenie.
-Emailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu „$2“.',
+	'requestaccount-email-body-admin' => '„$1“ požiadal o účet a čaká na potvrdenie.
+Emailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu: „$2“.',
 	'acct_request_throttle_hit'       => 'Prepáčte, už ste požiadali o vytvorenie $1 účtov. Nemôžete ich odoslať viac žiadostí.',
 	'requestaccount-loginnotice'      => "Aby ste dostali používateľský účet, musíte '''[[Special:RequestAccount|oň požiadať]]'''.",
 	'confirmaccount-newrequests'      => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}} 
@@ -3044,6 +3099,8 @@ Den här bekräftelsekoden slutar gälla den $4.',
 	'confirmaccount-email-q'          => 'E-post',
 	'confirmaccount-bio-q'            => 'Biografi',
 	'confirmaccount-review'           => 'Granska',
+	'confirmaccount-all'              => '(visa alla köer)',
+	'confirmaccount-type'             => 'Vald kö:',
 	'confirmaccount-q-open'           => 'öppna begäringar',
 	'confirmaccount-q-held'           => 'inflytande begäringar',
 	'confirmaccount-leg-user'         => 'Användarkonto',
@@ -3067,6 +3124,7 @@ Den här bekräftelsekoden slutar gälla den $4.',
 	'confirmaccount-ip'               => 'IP adress:',
 	'confirmaccount-submit'           => 'Konfirmera',
 	'confirmaccount-wsum'             => 'Välkommen!',
+	'confirmaccount-email-subj'       => 'Begäran om konto på {{SITENAME}}',
 	'confirmaccount-email-body'       => 'Din begäran för ett konto har blivigt godkänd på {{SITENAME}}.
 
 Konto namn: $1
@@ -3090,6 +3148,7 @@ Av säkerhetsskäl ska du ändra ditt lösenord på första inloggningen. För a
 	'usercredentials-email'           => 'E-post:',
 	'usercredentials-real'            => 'Riktigt namn:',
 	'usercredentials-bio'             => 'Biografi:',
+	'usercredentials-urls'            => 'Lista över websidor:',
 );
 
 /** Telugu (తెలుగు)
