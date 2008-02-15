@@ -757,6 +757,29 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'usercredentials'            => 'Wósobinske pódaśa wužywarja',
+	'usercredentials-leg'        => 'Pytanje jo wósobinske pódaśa wužywarja wobkšuśiło',
+	'usercredentials-user'       => 'Wužywarske mě:',
+	'usercredentials-text'       => 'Dołojce su wobkšuśone wósobinske pódaśa wubranego wužywarskego konta.',
+	'usercredentials-leg-user'   => 'Wužywarske konto',
+	'usercredentials-leg-areas'  => 'Głowne zajmowe wobcerki',
+	'usercredentials-leg-person' => 'Wósobinske informacije',
+	'usercredentials-leg-other'  => 'Druge informacije',
+	'usercredentials-email'      => 'E-mail:',
+	'usercredentials-real'       => 'Napšawdne mě:',
+	'usercredentials-bio'        => 'Biografija:',
+	'usercredentials-attach'     => 'Žywjenjoběg:',
+	'usercredentials-notes'      => 'Pśidatne pśipiski:',
+	'usercredentials-urls'       => 'Lisćina websedłow',
+	'usercredentials-ip'         => 'Originalna IP-adresa:',
+	'usercredentials-member'     => 'Pšawa:',
+	'usercredentials-badid'      => 'Za toś togo wužywarja njebuchu žedne wósobinske pódaśa namakane. Pśekontrolěruj, lěc te mě jo pšawje napisane.',
+);
+
 /** Ewe (Eʋegbe)
  * @author M.M.S.
  */
@@ -821,6 +844,7 @@ $messages['fi'] = array(
  * @author Grondin
  * @author Dereckson
  * @author Sherbrooke
+ * @author Urhixidur
  * @author SPQRobin
  */
 $messages['fr'] = array(
@@ -838,7 +862,7 @@ $messages['fr'] = array(
 	'requestaccount-leg-person'       => 'Informations personnelles',
 	'requestaccount-leg-other'        => 'Autres informations',
 	'requestaccount-acc-text'         => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
-	'requestaccount-areas-text'       => 'Choisissez les domaines dans lesquels vous avez une expertise démontrée, ou dans lesquels vous êtes enclin à contribuez le plus.',
+	'requestaccount-areas-text'       => 'Choisissez les domaines dans lesquels vous avez une expertise démontrée, ou dans lesquels vous êtes enclin à contribuer le plus.',
 	'requestaccount-ext-text'         => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
 	Vous avez la possibilité de lister des contacts tels qu’un numéro de téléphone pour obtenir une assistance pour confirmer votre identité.',
 	'requestaccount-bio-text'         => 'Votre biographie sera mise par défaut sur votre page utilisateur. Essayez d’y mettre vos recommandations. Assurez-vous que vous pouvez diffuser sans crainte les informations. Votre nom peut être changé en utilisant [[Special:Preferences]].',
@@ -857,7 +881,7 @@ $messages['fr'] = array(
 	'requestaccount-tooshort'         => 'Votre biographie doit avoir au moins {{PLURAL:$1|$1 mot|$1 mots}}.',
 	'requestaccount-emaildup'         => 'Une autre demande en cours utilise la même adresse électronique.',
 	'requestaccount-exts'             => 'Le téléchargement des fichiers joints n’est pas permis.',
-	'requestaccount-resub'            => 'Veuillez sélectionnez à nouveau votre curriculum vitæ pour des raisons de sécurité. Si vous ne souhaitez plus inclure celui-ci, laissez ce champs vierge.',
+	'requestaccount-resub'            => 'Veuillez sélectionner à nouveau votre curriculum vitæ pour des raisons de sécurité. Si vous ne souhaitez plus inclure celui-ci, laissez ce champ vierge.',
 	'requestaccount-tos'              => 'J’ai lu et j’accepte de respecter les [[{{MediaWiki:Requestaccount-page}}|termes concernant les conditions d’utilisation des services]] de {{SITENAME}}.',
 	'requestaccount-submit'           => 'Demande de compte utilisateur.',
 	'requestaccount-sent'             => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.',
@@ -882,18 +906,18 @@ L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $
 	'confirmedit-desc'                => 'Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs.',
 	'confirmaccount-maintext'         => "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.
 
-Chaque demande de compte utilisateur consiste en trois sous-listes : une pour les demandes non traitées, une pour les comptes réservés dans l'attente de plus amples informations, et une dernière pour les comptes récemments rejetés.
+Chaque demande de compte utilisateur consiste en trois sous-listes : une pour les demandes non traitées, une pour les comptes réservés dans l'attente de plus amples informations, et une dernière pour les comptes récemment rejetés.
 
-Lors de la réponse à une demande, vérifier la attentivement et, le cas échéant, confirmez les informations qui y sont mentionnées. Vos actions seront inscrites séparément dans un journal. Vous pouvez aussi attendre la vérification de chaque activité qui prendront de la place séparément par rapport à ce que vous ferez vous-même.",
+Lors de la réponse à une demande, vérifiez-la attentivement et, le cas échéant, confirmez les informations qui y sont mentionnées. Vos actions seront inscrites séparément dans un journal. Vous devez aussi vérifier l'activité sur {{SITENAME}} en plus de la vôtre.",
 	'confirmaccount-list'             => 'Voici, ci-dessous, la liste des comptes en attente d’approbation. Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront supprimés de cette même liste.',
 	'confirmaccount-list2'            => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
 	'confirmaccount-text'             => "Voici une demande en cours pour un compte utilisateur sur '''{{SITENAME}}'''.
 
-Vérifiez soigneusement toutes les informations ci-dessous. Si vous approuvez cette demande, utiliser la liste des situations à donner à l'utilisateur. Les éditions faites pour les biographies de l'application n'affecteront pas les références permanentes déjà stockées.
+Vérifiez soigneusement toutes les informations ci-dessous. Si vous approuvez cette demande, sélectionnez la situation à donner à l'utilisateur. Les changements apportés aux biographies de l'application n'affecteront pas les références permanentes déjà stockées.
 
 Notez que vous pouvez choisir de créer un compte sous un autre nom. Faites ceci uniquement pour éviter des conflits avec d’autres.
 
-Si vous quittez cette page sans confirmer ou rejeter cette demande, elle sera toujours mise en attente.",
+Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera en attente.",
 	'confirmaccount-none-o'           => "Il n'y a actuellement aucune demande de compte utilisateur en cours dans cette liste.",
 	'confirmaccount-none-h'           => "Il n'y a actuellement aucune réservation de compte utilisateur en cours dans cette liste.",
 	'confirmaccount-none-r'           => "Il n'y a actuellement aucun rejet récent de demande de compte utilisateur dans cette liste.",
@@ -1068,6 +1092,7 @@ Ceti code de confirmacion èxpire lo $4.',
  * @author Xosé
  * @author Alma
  * @author SPQRobin
+ * @author Toliño
  */
 $messages['gl'] = array(
 	'requestaccount'                  => 'Solicitar unha conta',
@@ -1222,7 +1247,7 @@ $2
 
 Poden existir listaxes de contacto no sitio que pode usar se quere saber máis acerca da política de contas de usuario.',
 	'confirmaccount-email-body5'      => 'Antes de que se poida aceptar a súa solicitude dunha conta para "$1" en {{SITENAME}}
-	ten que fornecer algunhas informacións adicionais.
+	ten que fornecer algunha información adicional.
 
 $2
 
@@ -1715,6 +1740,25 @@ $messages['is'] = array(
 	'usercredentials-urls'       => 'Listi yfir vefsíður:',
 	'usercredentials-ip'         => 'Upprunalegt vistfang:',
 	'usercredentials-member'     => 'Réttindi:',
+);
+
+/** Japanese (日本語)
+ * @author JtFuruhata
+ */
+$messages['ja'] = array(
+	'requestaccount'            => 'アカウント登録申請',
+	'requestaccount-text'       => "'''利用者アカウントを申請する方は、以下の項目全てに記入の上、送信してください'''  
+
+アカウント申請を行う前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用条件]]をご一読下さい。
+
+申請が承認されると、通知メッセージと[[{{ns:Special}}:Userlogin|ログイン]]のためのアカウントが、あなたの電子メールアドレスへ送信されます。",
+	'requestaccount-page'       => '{{ns:project}}:サービス利用条件',
+	'requestaccount-dup'        => "'''注: あなたは既に登録済みアカウントでログインしています。'''",
+	'requestaccount-leg-user'   => '利用者アカウント',
+	'requestaccount-leg-areas'  => '関心のある分野',
+	'requestaccount-leg-person' => '自己紹介',
+	'requestaccount-leg-other'  => 'その他',
+	'requestaccount-acc-text'   => '申請を行うと、確認メッセージがあなたの電子メールアドレスへ送信されます。その電子メールにある確認のためのリンクをクリックすると申請が承認されます。また、アカウントが作成された際には、電子メールでパスワードが送られます。',
 );
 
 $messages['la'] = array(
