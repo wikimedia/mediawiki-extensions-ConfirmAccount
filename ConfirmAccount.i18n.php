@@ -1747,7 +1747,7 @@ $messages['is'] = array(
  */
 $messages['ja'] = array(
 	'requestaccount'            => 'アカウント登録申請',
-	'requestaccount-text'       => "'''利用者アカウントを申請する方は、以下の項目全てに記入の上、送信してください'''  
+	'requestaccount-text'       => "'''利用者アカウントを申請する方は、以下の項目を記入の上、送信してください'''  
 
 アカウント申請を行う前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用条件]]をご一読下さい。
 
@@ -1759,6 +1759,36 @@ $messages['ja'] = array(
 	'requestaccount-leg-person' => '自己紹介',
 	'requestaccount-leg-other'  => 'その他',
 	'requestaccount-acc-text'   => '申請を行うと、確認メッセージがあなたの電子メールアドレスへ送信されます。その電子メールにある確認のためのリンクをクリックすると申請が承認されます。また、アカウントが作成された際には、電子メールでパスワードが送られます。',
+	'requestaccount-areas-text' => 'あなたが見識をお持ちの分野、または主に活動したい分野を選択してください。',
+	'requestaccount-ext-text'   => '以下の個人情報は公開されず、この申請処理にのみ利用されます。
+電話番号をはじめとする連絡先は、あなたが本人確認の補助を目的として記入いただけます。',
+	'requestaccount-bio-text'   => 'あなたの自己紹介は利用者ページの初期内容として登録されます。
+他の利用者から信頼が得られるよう心掛けてください。
+それは、あなたが気持ちよく投稿するために重要です。
+あなたの名前は [[{{ns:Special}}:Preferences|{{int:preferences}}]] から変更できます。',
+	'requestaccount-real'       => '本名:',
+	'requestaccount-same'       => '（本名での登録に限定されます）',
+	'requestaccount-email'      => '電子メールアドレス:',
+	'requestaccount-reqtype'    => 'サイトでの役割:',
+	'requestaccount-level-0'    => '著者',
+	'requestaccount-level-1'    => '編集者',
+	'requestaccount-bio'        => '自己紹介',
+	'requestaccount-attach'     => '研究概要（レジュメ）や略歴（CV）　（任意回答）',
+	'requestaccount-notes'      => '特記事項',
+	'requestaccount-urls'       => 'ウェブサイトのリスト（任意回答、改行で区切ります）:',
+	'requestaccount-agree'      => '本名が正しいこと、および、サービス利用規約に同意したことを宣誓していただく必要があります。',
+	'requestaccount-inuse'      => 'この利用者名は、承認待ちのアカウントにて既に申請済みです。',
+	'requestaccount-tooshort'   => "自己紹介は、最低限 $1 以上の単語で構成される必要があります。''（訳注：この機能は日本語版ではうまく動作しないかもしれません。あなたが管理者であるならば、この制約の使用に慎重であってください。あなたが一般利用者である場合、このサイトの管理者と相談してください。）''",
+	'requestaccount-emaildup'   => '承認待ちのアカウントと同一の電子メールアドレスが指定されました。',
+	'requestaccount-exts'       => 'この添付ファイルのタイプは許可されていません。',
+	'requestaccount-resub'      => 'セキュリティ上の理由により、研究概要/略歴のファイルを再指定する必要があります。
+これらの公開を既に望んでいない場合、回答項目を空欄に戻してください。',
+	'requestaccount-tos'        => '私は {{SITENAME}} の [[{{MediaWiki:Requestaccount-page}}|サービス利用規約]] を既に熟読しており、これに同意し、遵守します。
+私が"本名"欄に記入した名前は、自分の本名であることに間違いありません。',
+	'requestaccount-submit'     => 'アカウント申請',
+	'requestaccount-sent'       => 'アカウント申請は正常に送信され、承認待ち状態になりました。',
+	'request-account-econf'     => 'あなたの電子メールアドレスは、承認リストに登録されました。アカウント申請などに利用できます。',
+	'requestaccount-email-subj' => '{{SITENAME}} 電子メールアドレスの確認',
 );
 
 $messages['la'] = array(
