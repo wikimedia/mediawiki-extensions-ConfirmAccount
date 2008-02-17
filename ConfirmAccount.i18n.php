@@ -604,48 +604,56 @@ $messages['br'] = array(
 	'usercredentials-email'  => 'Postel :',
 );
 
-// German translations (by Rrosenfeld)
+/** German (Deutsch)
+ * @author Rrosenfeld
+ * @author MF-Warburg
+ */
 $messages['de'] = array(
-	# Request account page
-	'requestaccount'          => 'Benutzerkonto beantragen',
-	'requestaccount-text'     => '\'\'\'Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen\'\'\'. 
+	'requestaccount'                  => 'Benutzerkonto beantragen',
+	'requestaccount-text'             => "'''Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen'''. 
 
 	Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]] bevor du ein Benutzerkonto beantragst.
 
-	Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[{{ns:special}}:Userlogin|Anmelden]]“ einloggen.',
-	'requestaccount-page'     => '{{ns:project}}:Nutzungsbedingungen',
-	'requestaccount-dup'      => '\'\'\'Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.\'\'\'',
-	'requestaccount-legend1'  => 'Benutzerkonto',
-	'requestaccount-legend2'  => 'Persönliche Informationen',
-	'requestaccount-legend3'  => 'Weitere Informationen',
-	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
+	Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[{{ns:special}}:Userlogin|Anmelden]]“ einloggen.",
+	'requestaccount-page'             => '{{ns:project}}:Nutzungsbedingungen',
+	'requestaccount-dup'              => "'''Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.'''",
+	'requestaccount-leg-user'         => 'Benutzerkonto',
+	'requestaccount-leg-areas'        => 'Hauptinteressensgebiete',
+	'requestaccount-leg-person'       => 'Persönliche Informationen',
+	'requestaccount-leg-other'        => 'Weitere Informationen',
+	'requestaccount-acc-text'         => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
 	Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst. Sobald dein Konto angelegt wurde,
 	wird dir dein Passwort per E-Mail zugeschickt.',
-	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag
+	'requestaccount-areas-text'       => 'Wähle die Themengebiete aus, in denen du das meiste Fachwissen hast oder wo du am meisten involviert sein wirst.',
+	'requestaccount-ext-text'         => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag
 	verwendet. Du kannst Kontakt-Angaben wie eine Telefonnummer machen, um die Bearbeitung deines Antrags zu vereinfachen.',
-	'requestaccount-bio-text' => "Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert. Versuche alle nötigen
+	'requestaccount-bio-text'         => 'Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert. Versuche alle nötigen
 	Empfehlungen zu erwähnen, aber stelle sicher, dass du die Informationen auch wirklich veröffentlichen möchtest. Du kannst deinen
-	Namen unter „[[{{ns:special}}:preferences|Einstellungen]]“ ändern.",
-	'requestaccount-real'     => 'Realname:',
-	'requestaccount-same'     => '(wie der Realname)',
-	'requestaccount-email'    => 'E-Mail-Adresse:',
-	'requestaccount-bio'      => 'Persönliche Biographie:',
-	'requestaccount-attach'   => 'Lebenslauf (optional):',
-	'requestaccount-notes'    => 'Zusätzliche Angaben:',
-	'requestaccount-urls'     => 'Liste von Webseiten (durch Zeilenumbrüche getrennt):',
-	'requestaccount-agree'    => 'Du musst bestätigen, dass Dein Realname korrekt ist und du die Benutzerbedingungen akzeptierst.',
-	'requestaccount-inuse'    => 'Der Benutzername ist bereits in einem anderen Benutzerantrag in Verwendung.',
-	'requestaccount-tooshort' => 'Deine Biographie sollte mindestens $1 Worte lang sein.',
-	'requestaccount-exts'     => 'Der Dateityp des Anhangs ist nicht erlaubt.',
-	'requestaccount-resub'    => 'Die Datei mit deinem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
+	Namen unter „[[{{ns:special}}:preferences|Einstellungen]]“ ändern.',
+	'requestaccount-real'             => 'Realname:',
+	'requestaccount-same'             => '(wie der Realname)',
+	'requestaccount-email'            => 'E-Mail-Adresse:',
+	'requestaccount-reqtype'          => 'Position:',
+	'requestaccount-level-0'          => 'Autor',
+	'requestaccount-level-1'          => 'Bearbeiter',
+	'requestaccount-bio'              => 'Persönliche Biographie:',
+	'requestaccount-attach'           => 'Lebenslauf (optional):',
+	'requestaccount-notes'            => 'Zusätzliche Angaben:',
+	'requestaccount-urls'             => 'Liste von Webseiten (durch Zeilenumbrüche getrennt):',
+	'requestaccount-agree'            => 'Du musst bestätigen, dass Dein Realname korrekt ist und du die Benutzerbedingungen akzeptierst.',
+	'requestaccount-inuse'            => 'Der Benutzername ist bereits in einem anderen Benutzerantrag in Verwendung.',
+	'requestaccount-tooshort'         => 'Deine Biographie sollte mindestens $1 Worte lang sein.',
+	'requestaccount-emaildup'         => 'Ein weiterer noch nicht erledigter Antrag benutzt die gleiche E-Mail-Adresse.',
+	'requestaccount-exts'             => 'Der Dateityp des Anhangs ist nicht erlaubt.',
+	'requestaccount-resub'            => 'Die Datei mit deinem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
 	Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
-	'requestaccount-tos'      => 'Ich habe die [[{{MediaWiki:Requestaccount-page}}|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
+	'requestaccount-tos'              => 'Ich habe die [[{{MediaWiki:Requestaccount-page}}|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
 	Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
-	'requestaccount-submit'   => 'Benutzerkonto beantragen',
-	'requestaccount-sent'     => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
-	'request-account-econf'   => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
-	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adressen Prüfung',
-	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise du, hat bei {{SITENAME}} 
+	'requestaccount-submit'           => 'Benutzerkonto beantragen',
+	'requestaccount-sent'             => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
+	'request-account-econf'           => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
+	'requestaccount-email-subj'       => '{{SITENAME}} E-Mail-Adressen Prüfung',
+	'requestaccount-email-body'       => 'Jemand, mit der IP Adresse $1, möglicherweise du, hat bei {{SITENAME}} 
 das Benutzerkonto "$2" mit deiner E-Mail-Adresse beantragt.
 
 Um zu bestätigen, dass wirklich du dieses Konto bei {{SITENAME}}
@@ -659,60 +667,77 @@ mit dem Passwort.
 Wenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!
 
 Dieser Bestätigungscode wird um $4 ungültig.',
-
-	'acct_request_throttle_hit' => "Du hast bereits $1 Benutzerkonten beantragt, du kannst momentan keine weiteren beantragen.",
-
-	# Add to Special:Login
-	'requestaccount-loginnotice' => 'Um ein neues Benutzerkonto zu erhalten, musst du es \'\'\'[[{{ns:special}}:RequestAccount|beantragen]]\'\'\'.',
-
-	# Confirm account page
-	'confirmaccounts'           => 'Benutzerkonto-Anträge bestätigen', 
-	'confirmaccount-list'       => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
+	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutzerkontenantrag',
+	'requestaccount-email-body-admin' => '"$1" hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
+Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2".',
+	'acct_request_throttle_hit'       => 'Du hast bereits $1 Benutzerkonten beantragt, du kannst momentan keine weiteren beantragen.',
+	'requestaccount-loginnotice'      => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[{{ns:special}}:RequestAccount|beantragen]]'''.",
+	'confirmaccounts'                 => 'Benutzerkonto-Anträge bestätigen',
+	'confirmedit-desc'                => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
+	'confirmaccount-list'             => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
 	Bestätigte Konten werden angelegt und aus der Liste entfernt. Abgelehnte Konten werden einfach aus der Liste gelöscht.',
-	'confirmaccount-text'       => 'Dies ist ein Antrag auf ein Benutzerkonto bei \'\'\'{{SITENAME}}\'\'\'. Prüfe alle unten
+	'confirmaccount-list2'            => 'Unten ist eine Liste kürzlich abgelehnter Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind.
+Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden Administrator kontaktieren.',
+	'confirmaccount-text'             => "Dies ist ein Antrag auf ein Benutzerkonto bei '''{{SITENAME}}'''. Prüfe alle unten
 	stehenden Informationen gründlich und bestätige die Informationen wenn möglich. Bitte beachte, dass du den Zugang bei Bedarf unter
 	einem anderen Benutzernamen anlegen kannst. Du solltest dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.
 
-	Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.',
-	'confirmaccount-none-o'     => 'Momentan gibt es keine offenen Benutzeranträge auf dieser Liste.',
-	'confirmaccount-none-h'     => 'Momentan gibt es keine Anträge im „abwarten“-Status auf dieser Liste.',
-	'confirmaccount-none-r'     => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge auf dieser Liste.',
-	'confirmaccount-badid'      => 'Momentan gibt es keinen Benutzerantrag zur angegebenen ID. Möglicherweise wurde er bereits bearbeitet.',
-	'confirmaccount-back'       => 'Liste der offenen Anträge ansehen',
-	'confirmaccount-back2'      => 'Liste der kürzlich abgelehnten Anträge ansehen',
-	'confirmaccount-showheld'   => 'Liste der Anträge auf „abwarten“-Status anzeigen',
-	'confirmaccount-name'       => 'Benutzername',
-	'confirmaccount-real'       => 'Name:',
-	'confirmaccount-real-q'     => 'Name',
-	'confirmaccount-email'      => 'E-Mail:',
-	'confirmaccount-email-q'    => 'E-Mail',
-	'confirmaccount-bio'        => 'Biographie:',
-	'confirmaccount-bio-q'      => 'Biographie',
-	'confirmaccount-attach'     => 'Lebenslauf:',
-	'confirmaccount-urls'       => 'Liste der Webseiten:',
-	'confirmaccount-none-p'     => '(Nichts angegeben)',
-	'confirmaccount-review'     => 'Bestätigen/Ablehnen',
-	'confirmaccount-confirm'    => 'Benutze die folgende Auswahl, um den Antrag zu akzeptieren, abzulehnen oder noch zu warten.',
-	'confirmaccount-econf'      => '(bestätigt)',
-	'confirmaccount-reject'     => '(abgelehnt durch [[User:$1|$1]] am $2)',
-	'confirmaccount-held'       => '(markiert als „abwarten“ durch [[User:$1|$1]] am $2)',
-	'confirmaccount-create'     => 'Bestätigen (Konto anlegen)',
-	'confirmaccount-deny'       => 'Ablehnen (Antrag löschen)',
-	'confirmaccount-hold'       => 'Markiert als „abwarten“',
-	'confirmaccount-reason'     => 'Begründung (wird in die Mail an den Antragsteller eingefügt):',
-	'confirmaccount-ip'         => 'IP-Addresse:',
-	'confirmaccount-submit'     => 'Abschicken',
-	'confirmaccount-needreason' => 'Du musst eine Begründung eingeben.',
-	'confirmaccount-canthold'   => 'Dieser Antrag wurde bereits als „abwarten“ markiert oder gelöscht.',
-	'confirmaccount-acc'        => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[{{ns:User}}:$1]] wurde angelegt.',
-	'confirmaccount-rej'        => 'Benutzerantrag wurde abgelehnt.',
-	'confirmaccount-viewing'    => '(wird aktuell angeschaut durch [[User:$1|$1]])',
-	'confirmaccount-summary'    => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
-	'confirmaccount-welc'       => "'''Willkommen bei ''{{SITENAME}}''!''' Wir hoffen, dass du viele gute Informationen beisteuerst.
+	Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.",
+	'confirmaccount-none-o'           => 'Momentan gibt es keine offenen Benutzeranträge auf dieser Liste.',
+	'confirmaccount-none-h'           => 'Momentan gibt es keine Anträge im „abwarten“-Status auf dieser Liste.',
+	'confirmaccount-none-r'           => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge auf dieser Liste.',
+	'confirmaccount-email-q'          => 'E-Mail',
+	'confirmaccount-bio-q'            => 'Biographie',
+	'confirmaccount-back'             => 'Liste der offenen Anträge ansehen',
+	'confirmaccount-back2'            => 'Liste der kürzlich abgelehnten Anträge ansehen',
+	'confirmaccount-showheld'         => 'Liste der Anträge auf „abwarten“-Status anzeigen',
+	'confirmaccount-review'           => 'Bestätigen/Ablehnen',
+	'confirmaccount-types'            => 'Wähle eine Benutzerkontenbestätigungswarteschlange aus den unten stehenden aus:',
+	'confirmaccount-all'              => '(zeige alle Warteschlangen)',
+	'confirmaccount-type'             => 'Ausgewählte Warteschlange:',
+	'confirmaccount-type-0'           => 'zukünftige Autoren',
+	'confirmaccount-type-1'           => 'zukünftige Bearbeiter',
+	'confirmaccount-q-open'           => 'offene Anträge',
+	'confirmaccount-q-rej'            => 'kürzlich abgelehnte Anträge',
+	'confirmaccount-badid'            => 'Momentan gibt es keinen Benutzerantrag zur angegebenen ID. Möglicherweise wurde er bereits bearbeitet.',
+	'confirmaccount-leg-user'         => 'Benutzerkonto',
+	'confirmaccount-leg-areas'        => 'Hauptinteressensgebiete',
+	'confirmaccount-leg-person'       => 'Persönliche Informationen',
+	'confirmaccount-leg-other'        => 'Weitere Informationen',
+	'confirmaccount-name'             => 'Benutzername',
+	'confirmaccount-email'            => 'E-Mail:',
+	'confirmaccount-reqtype'          => 'Position:',
+	'confirmaccount-pos-0'            => 'Autor',
+	'confirmaccount-pos-1'            => 'Bearbeiter',
+	'confirmaccount-bio'              => 'Biographie:',
+	'confirmaccount-attach'           => 'Lebenslauf:',
+	'confirmaccount-notes'            => 'Zusätzliche Hinweise:',
+	'confirmaccount-urls'             => 'Liste der Webseiten:',
+	'confirmaccount-none-p'           => '(Nichts angegeben)',
+	'confirmaccount-confirm'          => 'Benutze die folgende Auswahl, um den Antrag zu akzeptieren, abzulehnen oder noch zu warten.',
+	'confirmaccount-econf'            => '(bestätigt)',
+	'confirmaccount-reject'           => '(abgelehnt durch [[User:$1|$1]] am $2)',
+	'confirmaccount-rational'         => 'Begründung für den Antragssteller:',
+	'confirmaccount-noreason'         => '(nichts)',
+	'confirmaccount-held'             => '(markiert als „abwarten“ durch [[User:$1|$1]] am $2)',
+	'confirmaccount-create'           => 'Bestätigen (Konto anlegen)',
+	'confirmaccount-deny'             => 'Ablehnen (Antrag löschen)',
+	'confirmaccount-hold'             => 'Markiert als „abwarten“',
+	'confirmaccount-spam'             => 'Spam (keine E-Mail verschicken)',
+	'confirmaccount-reason'           => 'Begründung (wird in die Mail an den Antragsteller eingefügt):',
+	'confirmaccount-ip'               => 'IP-Addresse:',
+	'confirmaccount-submit'           => 'Abschicken',
+	'confirmaccount-needreason'       => 'Du musst eine Begründung eingeben.',
+	'confirmaccount-canthold'         => 'Dieser Antrag wurde bereits als „abwarten“ markiert oder gelöscht.',
+	'confirmaccount-acc'              => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[{{ns:User}}:$1]] wurde angelegt.',
+	'confirmaccount-rej'              => 'Benutzerantrag wurde abgelehnt.',
+	'confirmaccount-viewing'          => '(wird aktuell angeschaut durch [[User:$1|$1]])',
+	'confirmaccount-summary'          => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
+	'confirmaccount-welc'             => "'''Willkommen bei ''{{SITENAME}}''!''' Wir hoffen, dass du viele gute Informationen beisteuerst.
 	Möglicherweise möchtest Du zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen. Nochmal: Willkommen und hab' Spaß!~",
-	'confirmaccount-wsum'       => 'Willkommen!',
-	'confirmaccount-email-subj' => '{{SITENAME}} Antrag auf Benutzerkonto',
-	'confirmaccount-email-body' => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
+	'confirmaccount-wsum'             => 'Willkommen!',
+	'confirmaccount-email-subj'       => '{{SITENAME}} Antrag auf Benutzerkonto',
+	'confirmaccount-email-body'       => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
 
 Benutzername: $1
 
@@ -721,7 +746,7 @@ Passwort: $2
 Aus Sicherheitsgründen solltest du dein Passwort unbedingt beim ersten
 Einloggen ändern. Um dich einzuloggen gehst du auf die Seite
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body2' => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
+	'confirmaccount-email-body2'      => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
 
 Benutzername: $1
 
@@ -732,7 +757,7 @@ $3
 Aus Sicherheitsgründen solltest du Dein Passwort unbedingt beim ersten
 Einloggen ändern. Um dich einzuloggen gehst du auf die Seite
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
+	'confirmaccount-email-body3'      => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
 
 Dies kann viele Gründe haben. Möglicherweise hast du das Antragsformular
@@ -741,20 +766,24 @@ die Anforderungen auf andere Weise nicht erfüllt.
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
-	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
+	'confirmaccount-email-body4'      => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
 
 $2
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
-'confirmaccount-email-body5' => 'Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
+	'confirmaccount-email-body5'      => 'Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
        musst du zusätzliche Informationen übermitteln.
 
 $2
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
+	'usercredentials-user'            => 'Benutzername:',
+	'usercredentials-leg-user'        => 'Benutzerkonto',
+	'usercredentials-email'           => 'E-Mail:',
+	'usercredentials-real'            => 'Echter Name:',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -1148,7 +1177,7 @@ $3
 Se se crea a conta, só vostede recibirá o contrasinal. Se *non* se trata de vostede, non siga a ligazón.
 Este código de confirmación caducará o $4.',
 	'requestaccount-email-subj-admin' => 'solicitude de conta en {{SITENAME}}',
-	'requestaccount-email-body-admin' => 'A conta "$1" foi solicitada como conta e está pendente de confirmación.
+	'requestaccount-email-body-admin' => '"$1" solicitou unha conta e está pendente de confirmación.
 O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aquí "$2".',
 	'acct_request_throttle_hit'       => 'Sentímolo, xa solicitou $1 contas. Non pode facer máis solicitudes.',
 	'requestaccount-loginnotice'      => "Para obter unha conta de usuario ten que '''[[Special:RequestAccount|solicitar unha]]'''.",
@@ -1809,7 +1838,7 @@ $messages['lb'] = array(
 	'requestaccount-leg-areas'        => 'Haaptinteressen',
 	'requestaccount-leg-person'       => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other'        => 'Aner Informatiounen',
-	'requestaccount-bio-text'         => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert. Versicht all néideg Recommandatiounnen unzeginn, awer vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt. Äre Numm kann op [[Special:Preferences|meng Preferenzen]] geännert ginn.',
+	'requestaccount-bio-text'         => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert. Versicht all néideg Recommandatiounnen unzeginn, awer vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt. Äre Numm kann op [[Special:Preferences|meng Astellunge]] geännert ginn.',
 	'requestaccount-real'             => 'Richtege Numm:',
 	'requestaccount-same'             => "(d'selwescht wéi de richtege Numm)",
 	'requestaccount-email'            => 'E-mail-Adress:',
@@ -3197,6 +3226,7 @@ Den här bekräftelsekoden slutar gälla den $4.',
 	'confirmaccount-reason'           => 'Kommentar (blir inkluderad i e-post):',
 	'confirmaccount-ip'               => 'IP adress:',
 	'confirmaccount-submit'           => 'Konfirmera',
+	'confirmaccount-summary'          => 'Skapar användarsida med biografi av den nya användaren.',
 	'confirmaccount-wsum'             => 'Välkommen!',
 	'confirmaccount-email-subj'       => 'Begäran om konto på {{SITENAME}}',
 	'confirmaccount-email-body'       => 'Din begäran för ett konto har blivigt godkänd på {{SITENAME}}.
@@ -3227,14 +3257,34 @@ Av säkerhetsskäl ska du ändra ditt lösenord på första inloggningen. För a
 
 /** Telugu (తెలుగు)
  * @author Veeven
+ * @author వైజాసత్య
  */
 $messages['te'] = array(
+	'requestaccount'             => 'ఖాతాను అభ్యర్ధించండి',
+	'requestaccount-page'        => '{{ns:project}}:సేవా నియమాలు',
 	'requestaccount-leg-user'    => 'వాడుకరి ఖాతా',
+	'requestaccount-leg-person'  => 'వ్యక్తిగత సమాచారం',
+	'requestaccount-leg-other'   => 'ఇతర సమాచారం',
+	'requestaccount-real'        => 'అసలు పేరు:',
+	'requestaccount-email'       => 'ఈమెయిలు చిరునామా:',
+	'requestaccount-reqtype'     => 'స్థానము:',
+	'requestaccount-level-0'     => 'రచయిత',
+	'requestaccount-level-1'     => 'సంపాదకులు',
+	'requestaccount-bio'         => 'వ్యక్తిగత జీవితచరిత్ర:',
+	'requestaccount-notes'       => 'అదనపు గమనికలు:',
 	'confirmaccount-real-q'      => 'పేరు',
+	'confirmaccount-email-q'     => 'ఈ-మెయిల్',
 	'confirmaccount-review'      => 'సమీక్ష',
 	'confirmaccount-leg-user'    => 'వాడుకరి ఖాతా',
+	'confirmaccount-leg-person'  => 'వ్యక్తిగత సమాచారం',
+	'confirmaccount-leg-other'   => 'ఇతర సమాచారం',
 	'confirmaccount-real'        => 'పేరు:',
 	'confirmaccount-notes'       => 'అదనపు గమనికలు:',
+	'confirmaccount-urls'        => 'వెబ్ సైట్ల జాబితా:',
+	'confirmaccount-none-p'      => '(ఇవ్వలేదు)',
+	'confirmaccount-econf'       => '(ధృవీకరించబడినది)',
+	'confirmaccount-ip'          => 'ఐపీ చిరునామా:',
+	'confirmaccount-rej'         => 'ఖాతా కోసం చేసిన అభ్యర్ధన తిరస్కరించబడినది',
 	'confirmaccount-wsum'        => 'స్వాగతం!',
 	'usercredentials-leg-user'   => 'వాడుకరి ఖాతా',
 	'usercredentials-leg-person' => 'వ్యక్తిగత సమాచారం',
