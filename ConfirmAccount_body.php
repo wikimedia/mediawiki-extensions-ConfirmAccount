@@ -1235,6 +1235,10 @@ class ConfirmAccountsPage extends SpecialPage
 				# Create userpage!
 				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
 			}
+			# Update user count
+			$ssUpdate = new SiteStatsUpdate( 0, 0, 0, 0, 1 );
+			$ssUpdate->doUpdate();
+			# Great user...
 			global $wgAutoWelcomeNewUsers;
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
