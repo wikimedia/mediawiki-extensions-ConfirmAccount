@@ -2158,6 +2158,117 @@ Om kontoen blir opprettet vil kun du motta passordet. Om forespørselen *ikke* k
 	'confirmaccount-newrequests'      => "Det er foreløpig '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}.",
 	'confirmaccounts'                 => 'Godkjenn kontoforespørsler',
 	'confirmedit-desc'                => 'Gir byråkrater muligheten til å godkjenne kontoforespørsler.',
+	'confirmaccount-maintext'         => "'''Denne siden brukes for å bekrefte ventende kontoforespørsel på ''{{SITENAME}}'''''.
+
+Hver kontoforespørselkø består av tre underkøer, én for åpne forespørsler, én for forespørsler som er satt på avventing av andre administratorer, og én for nylig avvise forespørsler.
+
+Når du reagerer på en forespørsel, gå gjennom den  og, om det er nødvendig, bekreft informasjonen som blir gitt. Handlingene dine vil logges privat. Det forventes også at du gjennomgår den aktiviteten som er her fra andre enn deg selv.",
+	'confirmaccount-list'             => 'Under er en liste over kontoforespørsler som venter på godkjenning. Godkjente kontoer vil opprettes og fjernes fra denne listen. Avviste kontoer vil kun slettes fra listen.',
+	'confirmaccount-list2'            => 'Nedenfor er en liste over nylig avviste kontoforespørsler, som vil slettes automatisk når de er et visst antall dager gamle.
+De kan fortsatt godkjennes, men du burde først konferere med administratoren som avviste dem.',
+	'confirmaccount-text'             => "Dette er en ventende kontoforespørsel på '''{{SITENAME}}'''.
+
+Gå nøye gjennom informasjonen nedenfor. Om du godkjenner forespørselen, bruk posisjonslisten for å sette brukerens kontostatus. Redigeringer gjort i søknadsbiografien vil ikke ha noen effekt på lagring av krediteringsinformasjon. Merk at du kan velge å opprette kontoen med et annet brukernavn, men gjør det kun for å unngå kollisjon med andre navn.
+
+Om du forlater denne siden uten å godkjenne eller avvise forespørselen, vil den beholde avventningsstatusen.",
+	'confirmaccount-none-o'           => 'Det er for tiden ingen ventende forespørsler.',
+	'confirmaccount-none-h'           => 'Det er for tiden ingen ventende kontoforespørsler på denne listen.',
+	'confirmaccount-none-r'           => 'Det er for tiden ingen nylig avviste kontoforespørsler på denne listen.',
+	'confirmaccount-real-q'           => 'Navn',
+	'confirmaccount-email-q'          => 'E-post',
+	'confirmaccount-bio-q'            => 'Biografi',
+	'confirmaccount-back'             => 'Vis listen over ventende kontoer',
+	'confirmaccount-back2'            => 'Vis listen over nylig avviste kontoer',
+	'confirmaccount-showheld'         => 'Vis listen over kontoer som holdes på avventning',
+	'confirmaccount-review'           => 'Gransk',
+	'confirmaccount-types'            => 'Velg en kontogodkjenningskø av de nedenstående:',
+	'confirmaccount-all'              => '(vis alle køer)',
+	'confirmaccount-type'             => 'Valgt kø:',
+	'confirmaccount-type-0'           => 'prospektive forfattere',
+	'confirmaccount-type-1'           => 'prospektive redaktører',
+	'confirmaccount-q-open'           => 'åpne forespørsler',
+	'confirmaccount-q-held'           => 'forespørsler holdt på avventning',
+	'confirmaccount-q-rej'            => 'nylig avviste forespørsler',
+	'confirmaccount-badid'            => 'Det er ingen ventende forespørsler med den oppgitte ID-en. De kan allerede ha blitt behandlet.',
+	'confirmaccount-leg-user'         => 'Brukerkonto',
+	'confirmaccount-leg-areas'        => 'Hovedinteresse',
+	'confirmaccount-leg-person'       => 'Personlig informasjon',
+	'confirmaccount-leg-other'        => 'Annen informasjon',
+	'confirmaccount-name'             => 'Brukernavn',
+	'confirmaccount-real'             => 'Navn:',
+	'confirmaccount-email'            => 'E-post:',
+	'confirmaccount-reqtype'          => 'Posisjon:',
+	'confirmaccount-pos-0'            => 'forfatter',
+	'confirmaccount-pos-1'            => 'redaktør',
+	'confirmaccount-bio'              => 'Biografi:',
+	'confirmaccount-attach'           => 'CV:',
+	'confirmaccount-notes'            => 'Andre merknader:',
+	'confirmaccount-urls'             => 'Liste over nettsider:',
+	'confirmaccount-none-p'           => '(ikke oppgitt)',
+	'confirmaccount-confirm'          => 'Bruk valgene nedenfor for å godkjenne, avvise eller putte forespørselen på avventning:',
+	'confirmaccount-econf'            => '(bekreftet)',
+	'confirmaccount-reject'           => '(avvist av [[User:$1|$1]] på $2)',
+	'confirmaccount-rational'         => 'Begrunnelse gitt til søkeren:',
+	'confirmaccount-noreason'         => '(ingen)',
+	'confirmaccount-held'             => '(merket for «avventning» av [[User:$1|$1]] på $2)',
+	'confirmaccount-create'           => 'Godta (opprett konto)',
+	'confirmaccount-deny'             => 'Avvis (fjern fra listen)',
+	'confirmaccount-hold'             => 'Sett på avventning',
+	'confirmaccount-spam'             => 'Søppel (ikke send e-post)',
+	'confirmaccount-reason'           => 'Kommentar (blir inkludert i e-post):',
+	'confirmaccount-ip'               => 'IP-adresse:',
+	'confirmaccount-submit'           => 'Bekreft',
+	'confirmaccount-needreason'       => 'Du må oppgi en grunn i kommentarfeltet nedenfor.',
+	'confirmaccount-canthold'         => 'Denne forespørselen er allerede slettet eller på avventning.',
+	'confirmaccount-acc'              => 'Kontoforespørsel godkjent; opprettet kontoen [[User:$1|$1]].',
+	'confirmaccount-rej'              => 'Kontoforespørsel avvist.',
+	'confirmaccount-viewing'          => '(undersøkes nå av [[User:$1|$1]])',
+	'confirmaccount-summary'          => 'Oppretter brukerside med biografi for den nye brukeren.',
+	'confirmaccount-welc'             => "'''Velkommen til ''{{SITENAME}}''!''' Vi håper at du vil bidra mye og bra. Du ønsker trolig å lese [[{{MediaWiki:Helppage}}|hjelpesidene]]. Igjen, velkommen, og mor deg!",
+	'confirmaccount-wsum'             => 'Velkommen!',
+	'confirmaccount-email-subj'       => 'Kontoforespørsel på {{SITENAME}}',
+	'confirmaccount-email-body'       => 'Din forespørsel om en konto på {{SITENAME}} har blitt godkjent.
+
+Kontonavn: $1
+
+Passord: $2
+
+Av sikkerhetsgrunner må du endre passordet etter første innlogging. For å logge inn, gå til {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'      => 'Din forespørsel om en konto på {{SITENAME}} har blitt godkjent.
+
+Kontonavn: $1
+
+Passord: $2
+
+$3
+
+Av sikkerhetsgrunner må du endre passordet etter første innlogging. For å logge inn, gå til {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'      => 'Beklager, din forespørsel om kontoen «$1» på {{SITENAME}} har blitt avvist.
+
+Det er flere mulige grunner til at dette har skjedd. Du har muligens ikke fylt inn skjemaet korrekt, har ikke svart utfyllende nok, eller møter på en annen måte ikke kriteriene. Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.',
+	'confirmaccount-email-body4'      => 'Beklager, din forespørsel om å få en konto på {{SITENAME}} har blitt avvist.
+
+$2
+
+Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.',
+	'confirmaccount-email-body5'      => 'Før din forespørsel om en konto «$1» på {{SITENAME}} kan godkjennes, må du oppgi mer informasjon.
+
+$2
+
+Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.',
+	'usercredentials-user'            => 'Brukernavn:',
+	'usercredentials-leg-user'        => 'Brukerkonto',
+	'usercredentials-leg-areas'       => 'Hovedinteresser',
+	'usercredentials-leg-person'      => 'Personlig informasjon',
+	'usercredentials-leg-other'       => 'Annen informasjon',
+	'usercredentials-email'           => 'E-post:',
+	'usercredentials-real'            => 'Virkelig navn:',
+	'usercredentials-bio'             => 'Biografi:',
+	'usercredentials-attach'          => 'CV:',
+	'usercredentials-notes'           => 'Andre merknader:',
+	'usercredentials-urls'            => 'Liste over nettsteder:',
+	'usercredentials-ip'              => 'Opprinnelig IP-adresse:',
+	'usercredentials-member'          => 'Rettigheter:',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -3278,16 +3389,23 @@ $messages['te'] = array(
 	'confirmaccount-leg-user'    => 'వాడుకరి ఖాతా',
 	'confirmaccount-leg-person'  => 'వ్యక్తిగత సమాచారం',
 	'confirmaccount-leg-other'   => 'ఇతర సమాచారం',
+	'confirmaccount-name'        => 'వాడుకరి పేరు',
 	'confirmaccount-real'        => 'పేరు:',
+	'confirmaccount-email'       => 'ఈ-మెయిల్:',
 	'confirmaccount-notes'       => 'అదనపు గమనికలు:',
 	'confirmaccount-urls'        => 'వెబ్ సైట్ల జాబితా:',
 	'confirmaccount-none-p'      => '(ఇవ్వలేదు)',
 	'confirmaccount-econf'       => '(ధృవీకరించబడినది)',
 	'confirmaccount-ip'          => 'ఐపీ చిరునామా:',
+	'confirmaccount-submit'      => 'నిర్ధారించు',
 	'confirmaccount-rej'         => 'ఖాతా కోసం చేసిన అభ్యర్ధన తిరస్కరించబడినది',
 	'confirmaccount-wsum'        => 'స్వాగతం!',
+	'confirmaccount-email-subj'  => '{{SITENAME}} ఖాతా అభ్యర్థన',
+	'usercredentials-user'       => 'వాడుకరి పేరు:',
 	'usercredentials-leg-user'   => 'వాడుకరి ఖాతా',
 	'usercredentials-leg-person' => 'వ్యక్తిగత సమాచారం',
+	'usercredentials-leg-other'  => 'ఇతర సమాచారం',
+	'usercredentials-notes'      => 'అదనపు గమనికలు:',
 );
 
 /** Turkish (Türkçe)
