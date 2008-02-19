@@ -3377,12 +3377,14 @@ $messages['te'] = array(
 	'requestaccount-leg-person'  => 'వ్యక్తిగత సమాచారం',
 	'requestaccount-leg-other'   => 'ఇతర సమాచారం',
 	'requestaccount-real'        => 'అసలు పేరు:',
+	'requestaccount-same'        => '(వాస్తవిక పేరు ఏదో అదే)',
 	'requestaccount-email'       => 'ఈమెయిలు చిరునామా:',
 	'requestaccount-reqtype'     => 'స్థానము:',
 	'requestaccount-level-0'     => 'రచయిత',
 	'requestaccount-level-1'     => 'సంపాదకులు',
 	'requestaccount-bio'         => 'వ్యక్తిగత జీవితచరిత్ర:',
 	'requestaccount-notes'       => 'అదనపు గమనికలు:',
+	'requestaccount-email-subj'  => '{{SITENAME}} ఈ-మెయిల్ చిరునామా నిర్ధారణ',
 	'confirmaccount-real-q'      => 'పేరు',
 	'confirmaccount-email-q'     => 'ఈ-మెయిల్',
 	'confirmaccount-review'      => 'సమీక్ష',
@@ -3405,7 +3407,10 @@ $messages['te'] = array(
 	'usercredentials-leg-user'   => 'వాడుకరి ఖాతా',
 	'usercredentials-leg-person' => 'వ్యక్తిగత సమాచారం',
 	'usercredentials-leg-other'  => 'ఇతర సమాచారం',
+	'usercredentials-email'      => 'ఈ-మెయిల్:',
+	'usercredentials-real'       => 'నిజమైన పేరు:',
 	'usercredentials-notes'      => 'అదనపు గమనికలు:',
+	'usercredentials-urls'       => 'వెబ్&zwnj;సైట్ల జాబితా:',
 );
 
 /** Turkish (Türkçe)
