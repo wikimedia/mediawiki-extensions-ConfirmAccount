@@ -604,6 +604,17 @@ $messages['br'] = array(
 	'usercredentials-email'  => 'Postel :',
 );
 
+/** Danish (Dansk)
+ * @author M.M.S.
+ */
+$messages['da'] = array(
+	'confirmaccount-real-q' => 'Navn',
+	'confirmaccount-name'   => 'Brugernavn',
+	'confirmaccount-real'   => 'Navn:',
+	'confirmaccount-wsum'   => 'Velkommen!',
+	'usercredentials-user'  => 'Brugernavn:',
+);
+
 /** German (Deutsch)
  * @author Rrosenfeld
  * @author MF-Warburg
@@ -1865,6 +1876,7 @@ $messages['lb'] = array(
 	'confirmaccount-name'             => 'Benotzernumm',
 	'confirmaccount-real'             => 'Numm:',
 	'confirmaccount-email'            => 'E-mail:',
+	'confirmaccount-reqtype'          => 'Positioun:',
 	'confirmaccount-pos-0'            => 'Auteur',
 	'confirmaccount-bio'              => 'Biographie:',
 	'confirmaccount-attach'           => 'Liewenslaf:',
