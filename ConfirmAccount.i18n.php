@@ -604,6 +604,16 @@ $messages['br'] = array(
 	'usercredentials-email'  => 'Postel :',
 );
 
+/** Czech (Česky)
+ * @author Matěj Grabovský
+ */
+$messages['cs'] = array(
+	'requestaccount'          => 'Vyžádat účet',
+	'requestaccount-leg-user' => 'Uživatelský účet',
+	'requestaccount-real'     => 'Skutečné jméno:',
+	'requestaccount-reqtype'  => 'Pozice:',
+);
+
 /** Danish (Dansk)
  * @author M.M.S.
  */
@@ -2282,7 +2292,7 @@ Om du forlater denne siden uten å godkjenne eller avvise forespørselen, vil de
 	'confirmaccount-reason'           => 'Kommentar (blir inkludert i e-post):',
 	'confirmaccount-ip'               => 'IP-adresse:',
 	'confirmaccount-submit'           => 'Bekreft',
-	'confirmaccount-needreason'       => 'Du må oppgi en grunn i kommentarfeltet nedenfor.',
+	'confirmaccount-needreason'       => 'Du må angi en grunn i kommentarfeltet nedenfor.',
 	'confirmaccount-canthold'         => 'Denne forespørselen er allerede slettet eller på avventning.',
 	'confirmaccount-acc'              => 'Kontoforespørsel godkjent; opprettet kontoen [[User:$1|$1]].',
 	'confirmaccount-rej'              => 'Kontoforespørsel avvist.',
@@ -2889,13 +2899,14 @@ $3
 
 Этот код активации прекратит действие $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}}: запрос учётной записи',
-	'requestaccount-email-body-admin' => 'Было запрошено создание учётной записи «$1», ожидается подтверждение.
+	'requestaccount-email-body-admin' => '«$1» запросил создание учётной записи и ожидает подтверждения.
 Адрес электронной почты был подтверждён. Вы можете подтвердить заявку здесь «$2».',
 	'acct_request_throttle_hit'       => 'Извините, вы уже запросили $1 учётных записей. Больше делать запросов вы не можете.',
 	'requestaccount-loginnotice'      => 'Чтобы получить учётную запись, вы должны её [[Special:RequestAccount|запросить]].',
 	'confirmaccount-newrequests'      => "Ожидается обработка '''$1'''  
 {{PLURAL:$1|[[Special:ConfirmAccounts|запроса на учётную запись]]|[[Special:ConfirmAccounts|запросов на учётные записи]]|[[Special:ConfirmAccounts|запросов на учётные записи]]}}.",
 	'confirmaccounts'                 => 'Подтверждение запросов учётных записей',
+	'confirmedit-desc'                => 'Даёт бюрократам возможность подтверждать запросы на учётные записи',
 	'confirmaccount-maintext'         => "'''Эта страница используется для подтверждения заявок на учётные записи проекта «{{SITENAME}}»'''.
 
 Каждая очередь заявок состоит из трёх частей: открытые заявки; заявки отложенные администраторами до получения дополнительной информации; недавно отклонённые заявки.
@@ -3381,34 +3392,55 @@ $2',
 	'requestaccount-loginnotice'      => "För att få ett användarkonto måste du '''[[Special:RequestAccount|ansöka om det]]'''.",
 	'confirmaccount-newrequests'      => "Just nu  väntar '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|kontoansökning|kontoansökningar}}]] på att behandlas.",
 	'confirmaccounts'                 => 'Behandla kontoansökningar',
+	'confirmedit-desc'                => 'Gör att nya användare måste ansöka om ett konto och bekräftas av byråkrater',
+	'confirmaccount-list'             => 'Härunder finns en lista över kontoansökningar som väntar på att godkännas.
+När konton som godkänns skapas och tas bort från listan. Kontoansökningar som avslås tas bara bort från listan.',
+	'confirmaccount-list2'            => 'Härunder finns en lista över kontoansökningar som avslagits. De kommer automatiskt att raderas efter ett visst antal dagar.
+Du kan fortfarande godkänna ansökningarna, men i så fall bör du först diskutera det med den administratör som avslog ansökningen.',
+	'confirmaccount-none-o'           => 'För närvarande finns inga obehandlade kontoansökningar.',
+	'confirmaccount-none-h'           => 'För närvarande finns inga avvaktande kontoansökningar.',
+	'confirmaccount-none-r'           => 'Inga kontoansökningar har avslagits nyligen.',
 	'confirmaccount-real-q'           => 'Namn',
 	'confirmaccount-email-q'          => 'E-post',
 	'confirmaccount-bio-q'            => 'Biografi',
+	'confirmaccount-back'             => 'Visa obehandlade ansökningar',
+	'confirmaccount-back2'            => 'Visa nyligen avslagna ansökningar',
+	'confirmaccount-showheld'         => 'Visa avvaktande ansökningar',
 	'confirmaccount-review'           => 'Granska',
+	'confirmaccount-types'            => 'Välj någon av ansökningslistorna härunder:',
 	'confirmaccount-all'              => '(visa alla köer)',
 	'confirmaccount-type'             => 'Vald kö:',
-	'confirmaccount-q-open'           => 'öppna begäringar',
-	'confirmaccount-q-held'           => 'inflytande begäringar',
+	'confirmaccount-q-open'           => 'obehandlade ansökningar',
+	'confirmaccount-q-held'           => 'avvaktande ansökningar',
+	'confirmaccount-q-rej'            => 'nyligen avslagna ansökningar',
+	'confirmaccount-badid'            => 'Det finns ingen ansökan med det ID som angavs.
+Ansökan kanske redan har behandlats.',
 	'confirmaccount-leg-user'         => 'Användarkonto',
+	'confirmaccount-leg-areas'        => 'Intresseområden',
 	'confirmaccount-leg-person'       => 'Personlig information',
 	'confirmaccount-leg-other'        => 'Annan information',
 	'confirmaccount-name'             => 'Användarnamn',
 	'confirmaccount-real'             => 'Namn:',
 	'confirmaccount-email'            => 'E-post:',
-	'confirmaccount-pos-0'            => 'upphovsman',
+	'confirmaccount-pos-0'            => 'författare',
 	'confirmaccount-pos-1'            => 'redaktör',
 	'confirmaccount-bio'              => 'Biografi:',
-	'confirmaccount-urls'             => 'Lista över websidor:',
-	'confirmaccount-econf'            => '(konfirmerad)',
-	'confirmaccount-reject'           => '(avvisad av [[User:$1|$1]] på $2)',
+	'confirmaccount-attach'           => 'Meritförteckning/CV:',
+	'confirmaccount-notes'            => 'Andra anmärkningar:',
+	'confirmaccount-urls'             => 'Lista över webbplatser:',
+	'confirmaccount-none-p'           => '(bifogades ej)',
+	'confirmaccount-confirm'          => 'Välj något av alterantiven nedan för att godkänna, avslå, eller avvakta med ansökan:',
+	'confirmaccount-econf'            => '(bekräftad)',
+	'confirmaccount-reject'           => '(avslogs av [[User:$1|$1]] den $2)',
+	'confirmaccount-rational'         => 'Motivering som gavs till den sökande:',
 	'confirmaccount-noreason'         => '(ingen)',
-	'confirmaccount-create'           => 'Acceptera (skapa konto)',
+	'confirmaccount-create'           => 'Godkänn (skapa konto)',
 	'confirmaccount-deny'             => 'Avslå (stryk från listan)',
-	'confirmaccount-hold'             => 'Inflytande',
+	'confirmaccount-hold'             => 'Avvakta',
 	'confirmaccount-spam'             => 'Spam (sänd inte e-post)',
-	'confirmaccount-reason'           => 'Kommentar (blir inkluderad i e-post):',
-	'confirmaccount-ip'               => 'IP adress:',
-	'confirmaccount-submit'           => 'Konfirmera',
+	'confirmaccount-reason'           => 'Kommentar (skickas som e-post):',
+	'confirmaccount-ip'               => 'IP-adress:',
+	'confirmaccount-submit'           => 'Bekräfta',
 	'confirmaccount-summary'          => 'Skapar användarsida med biografi av den nya användaren.',
 	'confirmaccount-wsum'             => 'Välkommen!',
 	'confirmaccount-email-subj'       => 'Begäran om konto på {{SITENAME}}',
