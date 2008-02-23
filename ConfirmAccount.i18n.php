@@ -882,12 +882,20 @@ $messages['ext'] = array(
 );
 
 /** Finnish (Suomi)
- * @author Nike
  * @author Cimon Avaro
+ * @author Nike
  */
 $messages['fi'] = array(
-	'requestaccount-dup'    => "'''Huomio: Olet jo kirjautunut sisälle rekisteröidyllä käyttäjätunnuksella.'''",
-	'confirmaccount-real-q' => 'Nimi',
+	'requestaccount-dup'        => "'''Huomio: Olet jo kirjautunut sisälle rekisteröidyllä käyttäjätunnuksella.'''",
+	'requestaccount-leg-areas'  => 'Kiinnostuksen kohteet',
+	'requestaccount-leg-person' => 'Henkilötiedot',
+	'requestaccount-leg-other'  => 'Muut tiedot',
+	'requestaccount-email'      => 'Sähköpostiosoite:',
+	'requestaccount-notes'      => 'Lisähuomautukset:',
+	'confirmaccount-real-q'     => 'Nimi',
+	'confirmaccount-email-q'    => 'Sähköposti',
+	'confirmaccount-leg-person' => 'Henkilötiedot',
+	'confirmaccount-wsum'       => 'Tervetuloa!',
 );
 
 /** French (Français)
@@ -1000,7 +1008,7 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-bio'              => 'Biographie :',
 	'confirmaccount-attach'           => 'CV/Résumé :',
 	'confirmaccount-notes'            => 'Notes supplémentaires :',
-	'confirmaccount-urls'             => 'Liste des site web :',
+	'confirmaccount-urls'             => 'Liste des sites web :',
 	'confirmaccount-none-p'           => '(non pourvu)',
 	'confirmaccount-confirm'          => 'Utilisez les boutons ci-dessous pour accepter ou rejeter la demande.',
 	'confirmaccount-econf'            => '(confirmé)',
@@ -1046,7 +1054,7 @@ Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de v
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3'      => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
-Plusieurs raisons peuvent expliquer ce cas de figure. Il est possible que vous ayez mal rempli le formulaire, ou que vous n’ayez pas indiqué suffisamment d’informations dans vos réponses. Il est encore possible que vous ne remplissiez pas les critères d’éligibilité pour obtenir votre compte. Il est possible d’être sur la liste des contact si vous désirez mieux connaître les conditions requises.',
+Plusieurs raisons peuvent expliquer ce cas de figure. Il est possible que vous ayez mal rempli le formulaire, ou que vous n’ayez pas indiqué suffisamment d’informations dans vos réponses. Il est encore possible que vous ne remplissiez pas les critères d’éligibilité pour obtenir votre compte. Il est possible d’être sur la liste des contacts si vous désirez mieux connaître les conditions requises.',
 	'confirmaccount-email-body4'      => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
 $2
@@ -1073,7 +1081,7 @@ Ceci permet d’être sur la liste des contacts du site, si vous désirez en sav
 	'usercredentials-urls'            => 'Liste des sites internet :',
 	'usercredentials-ip'              => 'Adresse IP initiale :',
 	'usercredentials-member'          => 'Droits :',
-	'usercredentials-badid'           => 'Aucune référence de trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé.',
+	'usercredentials-badid'           => 'Aucune référence trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé.',
 );
 
 $messages['frp'] = array(
@@ -1891,6 +1899,25 @@ $3
 	'confirmaccount-q-open'           => '申請受理',
 	'confirmaccount-q-held'           => '承認保留',
 	'confirmaccount-q-rej'            => '最近の申請棄却',
+	'confirmaccount-badid'            => '指定されたIDに該当する承認待ちの申請はありません。
+おそらく既に処理済みです。',
+	'confirmaccount-leg-user'         => '利用者アカウント',
+	'confirmaccount-leg-areas'        => '関心のある分野',
+	'confirmaccount-leg-person'       => '個人情報',
+	'confirmaccount-leg-other'        => 'その他',
+	'confirmaccount-name'             => '利用者名',
+	'confirmaccount-real'             => '本名:',
+	'confirmaccount-email'            => '電子メールアドレス:',
+	'confirmaccount-reqtype'          => 'サイトでの役割:',
+	'confirmaccount-pos-0'            => '著者',
+	'confirmaccount-pos-1'            => '編集者',
+	'confirmaccount-bio'              => '自己紹介:',
+	'confirmaccount-attach'           => '研究概要（レジュメ）や略歴（CV）:',
+	'confirmaccount-notes'            => '特記事項:',
+	'confirmaccount-urls'             => 'ウェブサイトのリスト:',
+	'confirmaccount-none-p'           => '（記述なし）',
+	'confirmaccount-confirm'          => 'この申請に対する承認、棄却、保留判断を以下から選択:',
+	'confirmaccount-econf'            => '（確認済）',
 );
 
 $messages['la'] = array(
@@ -1954,6 +1981,7 @@ $messages['lb'] = array(
 	'usercredentials-email'           => 'E-mail:',
 	'usercredentials-real'            => 'Richtege Numm:',
 	'usercredentials-bio'             => 'Biographie:',
+	'usercredentials-notes'           => 'Zousätzlech Notizen:',
 	'usercredentials-urls'            => 'Lëscht vun Internetsiten:',
 	'usercredentials-ip'              => 'Original IP-Adress:',
 	'usercredentials-member'          => 'Rechter:',
@@ -2330,7 +2358,10 @@ Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om ko
 $2
 
 Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.',
+	'usercredentials'                 => 'Brukerattester',
+	'usercredentials-leg'             => 'Finn bekreftede attester for en bruker',
 	'usercredentials-user'            => 'Brukernavn:',
+	'usercredentials-text'            => 'Nedenfor er de bekreftede attestene til de valgte brukerkontoene.',
 	'usercredentials-leg-user'        => 'Brukerkonto',
 	'usercredentials-leg-areas'       => 'Hovedinteresser',
 	'usercredentials-leg-person'      => 'Personlig informasjon',
@@ -2343,6 +2374,7 @@ Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om ko
 	'usercredentials-urls'            => 'Liste over nettsteder:',
 	'usercredentials-ip'              => 'Opprinnelig IP-adresse:',
 	'usercredentials-member'          => 'Rettigheter:',
+	'usercredentials-badid'           => 'Ingen attester funnet for denne brukeren. Sjekk at navnet er stavet riktig.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -3356,7 +3388,7 @@ Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att l�
 	'requestaccount-real'             => 'Riktigt namn:',
 	'requestaccount-same'             => '(samma som ditt riktiga namn)',
 	'requestaccount-email'            => 'E-postadress:',
-	'requestaccount-reqtype'          => 'Position:',
+	'requestaccount-reqtype'          => 'Ställning:',
 	'requestaccount-level-0'          => 'författare',
 	'requestaccount-level-1'          => 'redaktör',
 	'requestaccount-bio'              => 'Personlig biografi:',
@@ -3410,6 +3442,8 @@ Du kan fortfarande godkänna ansökningarna, men i så fall bör du först disku
 	'confirmaccount-types'            => 'Välj någon av ansökningslistorna härunder:',
 	'confirmaccount-all'              => '(visa alla köer)',
 	'confirmaccount-type'             => 'Vald kö:',
+	'confirmaccount-type-0'           => 'ansökande författare',
+	'confirmaccount-type-1'           => 'ansökande redaktörer',
 	'confirmaccount-q-open'           => 'obehandlade ansökningar',
 	'confirmaccount-q-held'           => 'avvaktande ansökningar',
 	'confirmaccount-q-rej'            => 'nyligen avslagna ansökningar',
@@ -3422,6 +3456,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-name'             => 'Användarnamn',
 	'confirmaccount-real'             => 'Namn:',
 	'confirmaccount-email'            => 'E-post:',
+	'confirmaccount-reqtype'          => 'Ställning:',
 	'confirmaccount-pos-0'            => 'författare',
 	'confirmaccount-pos-1'            => 'redaktör',
 	'confirmaccount-bio'              => 'Biografi:',
@@ -3429,7 +3464,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-notes'            => 'Andra anmärkningar:',
 	'confirmaccount-urls'             => 'Lista över webbplatser:',
 	'confirmaccount-none-p'           => '(bifogades ej)',
-	'confirmaccount-confirm'          => 'Välj något av alterantiven nedan för att godkänna, avslå, eller avvakta med ansökan:',
+	'confirmaccount-confirm'          => 'Välj något av alternativen nedan för att godkänna, avslå, eller avvakta med ansökan:',
 	'confirmaccount-econf'            => '(bekräftad)',
 	'confirmaccount-reject'           => '(avslogs av [[User:$1|$1]] den $2)',
 	'confirmaccount-rational'         => 'Motivering som gavs till den sökande:',
@@ -3441,33 +3476,62 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-reason'           => 'Kommentar (skickas som e-post):',
 	'confirmaccount-ip'               => 'IP-adress:',
 	'confirmaccount-submit'           => 'Bekräfta',
-	'confirmaccount-summary'          => 'Skapar användarsida med biografi av den nya användaren.',
+	'confirmaccount-needreason'       => 'Du måste skriva en motivering i kommentarrutan nedan.',
+	'confirmaccount-canthold'         => 'Ansökningen är antingen redan avvaktande eller har avslagits.',
+	'confirmaccount-acc'              => 'Kontoansökningen har godkänts och användarkontot [[User:$1|$1]] har skapats.',
+	'confirmaccount-rej'              => 'Ansökningen har avslagits.',
+	'confirmaccount-summary'          => 'Skapar användarsida med biografi för en ny användare.',
+	'confirmaccount-welc'             => "'''Välkommen till ''{{SITENAME}}''!''' Vi hoppas att du kommer skriva många bra bidrag.
+Du kommer formodligen ha nytta av att läsa [[{{MediaWiki:Helppage}}|hjälpsidorna]]. Vi önskar igen välkommen och ha kul!",
 	'confirmaccount-wsum'             => 'Välkommen!',
-	'confirmaccount-email-subj'       => 'Begäran om konto på {{SITENAME}}',
-	'confirmaccount-email-body'       => 'Din begäran för ett konto har blivigt godkänd på {{SITENAME}}.
+	'confirmaccount-email-subj'       => 'Ansökan om konto på {{SITENAME}}',
+	'confirmaccount-email-body'       => 'Din ansökan om ett konto på {{SITENAME}} har godkänts.
 
-Konto namn: $1
+Användarnamn: $1
 
 Lösenord: $2
 
-Av säkerhetsskäl ska du ändra ditt lösenord på första inloggningen. För att logga in, var god att gå till {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body2'      => 'Din begäran för ett konto har blivigt godkänd på {{SITENAME}}.
+Av säkerhetsskäl måste du byta lösenord första gången du loggar in. För att logga in, gå till {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'      => 'Din ansökan om ett konto på {{SITENAME}} har godkänts.
 
-Konto namn: $1
+Användarnamn: $1
 
 Lösenord: $2
 
 $3
 
-Av säkerhetsskäl ska du ändra ditt lösenord på första inloggningen. För att logga in, var god att gå till {{fullurl:Special:Userlogin}}.',
+Av säkerhetsskäl måste du byta lösenord första gången du loggar in. För att logga in, gå till {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'      => 'Tyvärr har din ansökan om kontot "$1" på {{SITENAME}} avslagits.
+
+Det kan finnas flera orsaker till det.
+Det är möjligt att du inte fyllde i formuläret på rätt sätt, att du inte gav tillräckligt utförliga svar, eller att du på något annat sätt inte uppfyller villkoren för att få ett användarkonto.
+Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill få mer information om reglerna för användarkonton.',
+	'confirmaccount-email-body4'      => 'Tyvärr har din ansökan om kontot "$1" på {{SITENAME}} avslagits.
+
+$2
+
+Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill få mer information om reglerna för användarkonton.',
+	'confirmaccount-email-body5'      => 'Innan din ansökan om kontot "$1" på {{SITENAME}} kan godkännas så måste du lämna ytterligare information.
+
+$2
+
+Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill få mer information om reglerna för användarkonton.',
+	'usercredentials'                 => 'Referenser för användare',
+	'usercredentials-leg'             => 'Se bekräftade referenser för en användare',
 	'usercredentials-user'            => 'Användarnamn:',
+	'usercredentials-text'            => 'Härunder visas de bekräftade referenserna för det valda användarkontot.',
 	'usercredentials-leg-user'        => 'Användarkonto',
+	'usercredentials-leg-areas'       => 'Intresseområden:',
 	'usercredentials-leg-person'      => 'Personlig information',
 	'usercredentials-leg-other'       => 'Annan information',
 	'usercredentials-email'           => 'E-post:',
 	'usercredentials-real'            => 'Riktigt namn:',
 	'usercredentials-bio'             => 'Biografi:',
-	'usercredentials-urls'            => 'Lista över websidor:',
+	'usercredentials-attach'          => 'Meritförteckning/CV:',
+	'usercredentials-notes'           => 'Andra anmärkningar:',
+	'usercredentials-urls'            => 'Lista över webbplatser:',
+	'usercredentials-ip'              => 'Ursprunglig IP-adress:',
+	'usercredentials-badid'           => 'Hittade inga referenser för denna användare. Kontrollera att namnet är rättstavat.',
 );
 
 /** Telugu (తెలుగు)
@@ -3477,7 +3541,9 @@ Av säkerhetsskäl ska du ändra ditt lösenord på första inloggningen. För a
 $messages['te'] = array(
 	'requestaccount'                  => 'ఖాతాను అభ్యర్ధించండి',
 	'requestaccount-page'             => '{{ns:project}}:సేవా నియమాలు',
+	'requestaccount-dup'              => "'''గమనిక: మీరు ఈసరికే నమోదైన ఖాతాతో లోనికి ప్రవేశించారు.'''",
 	'requestaccount-leg-user'         => 'వాడుకరి ఖాతా',
+	'requestaccount-leg-areas'        => 'ప్రధాన ఆసక్తులు',
 	'requestaccount-leg-person'       => 'వ్యక్తిగత సమాచారం',
 	'requestaccount-leg-other'        => 'ఇతర సమాచారం',
 	'requestaccount-real'             => 'అసలు పేరు:',
@@ -3488,11 +3554,16 @@ $messages['te'] = array(
 	'requestaccount-level-1'          => 'సంపాదకులు',
 	'requestaccount-bio'              => 'వ్యక్తిగత జీవితచరిత్ర:',
 	'requestaccount-notes'            => 'అదనపు గమనికలు:',
+	'requestaccount-urls'             => 'వెబ్&zwnj;సైట్ల జాబితా, ఉంటే గనక (లైనుకి ఒకటి చొప్పున):',
+	'requestaccount-submit'           => 'ఖాతాని అభ్యర్థించండి',
 	'requestaccount-email-subj'       => '{{SITENAME}} ఈ-మెయిల్ చిరునామా నిర్ధారణ',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} ఖాతా అభ్యర్థన',
+	'acct_request_throttle_hit'       => 'క్షమించండి, మీరిప్పటికే $1 ఖాతాలను అభ్యర్ధించారు. ఇంకా ఎక్కవ అభ్యర్థనలు చెయ్యలేరు.',
+	'confirmaccounts'                 => 'ఖాతా అభ్యర్థనలను నిర్ధారించండి',
 	'confirmaccount-real-q'           => 'పేరు',
 	'confirmaccount-email-q'          => 'ఈ-మెయిల్',
 	'confirmaccount-review'           => 'సమీక్ష',
+	'confirmaccount-q-rej'            => 'ఇటీవల తిరస్కరించిన అభ్యర్థనలు',
 	'confirmaccount-leg-user'         => 'వాడుకరి ఖాతా',
 	'confirmaccount-leg-person'       => 'వ్యక్తిగత సమాచారం',
 	'confirmaccount-leg-other'        => 'ఇతర సమాచారం',
@@ -3503,8 +3574,12 @@ $messages['te'] = array(
 	'confirmaccount-urls'             => 'వెబ్ సైట్ల జాబితా:',
 	'confirmaccount-none-p'           => '(ఇవ్వలేదు)',
 	'confirmaccount-econf'            => '(ధృవీకరించబడినది)',
+	'confirmaccount-rational'         => 'అభ్యర్థికి తెలుపాల్సిన కారణం:',
+	'confirmaccount-noreason'         => '(ఏమీలేదు)',
+	'confirmaccount-create'           => 'అంగీకరించు (ఖాతా సృష్టించు)',
 	'confirmaccount-ip'               => 'ఐపీ చిరునామా:',
 	'confirmaccount-submit'           => 'నిర్ధారించు',
+	'confirmaccount-needreason'       => 'క్రిందనిచ్చిన వ్యాఖ్య పెట్టెలో తప్పనిసరిగా ఓ కారణం ఇవ్వాలి',
 	'confirmaccount-rej'              => 'ఖాతా కోసం చేసిన అభ్యర్ధన తిరస్కరించబడినది',
 	'confirmaccount-wsum'             => 'స్వాగతం!',
 	'confirmaccount-email-subj'       => '{{SITENAME}} ఖాతా అభ్యర్థన',
