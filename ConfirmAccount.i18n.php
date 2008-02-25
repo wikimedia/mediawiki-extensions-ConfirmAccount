@@ -885,6 +885,7 @@ $messages['ext'] = array(
  * @author Taleman
  * @author Cimon Avaro
  * @author Nike
+ * @author Siebrand
  */
 $messages['fi'] = array(
 	'requestaccount'                  => 'Ano käyttäjätiliä',
@@ -945,7 +946,7 @@ Sähköpostiosoite on tarkistettu. Käyttäjätili myönnetään klikkaamalla t�
 	'requestaccount-loginnotice'      => "Saadaksesi käyttäjätilin on tehtävä '''[[Special:RequestAccount|anomus]]'''.",
 	'confirmaccount-newrequests'      => "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa} {{PLURAL:$1|[[Special:ConfirmAccounts|anomus]]|[[Special:ConfirmAccounts|anomusta]]}} käsiteltävänä.",
 	'confirmaccounts'                 => 'Myönnä käyttäjätilejä.',
-	'confirmedit-desc'                => 'Byrokraatit saavat oikeuden myöntää käyttäjätilejä.',
+	'confirmedit-desc'                => 'Byrokraatit saavat oikeuden myöntää käyttäjätilejä',
 	'confirmaccount-maintext'         => "'''Tällä sivulla myönnetään käyttäjätilejä sivustolle \"{{SITENAME}}\"'''.
 
 Jokaisessa anomusjonossa on kolme alijonoa, käsittelemättömille hakemuksille, 
@@ -2172,7 +2173,36 @@ $2
  * @author Chhorran
  */
 $messages['km'] = array(
-	'confirmaccount-bio-q' => 'ជីវប្រវត្តិ',
+	'requestaccount-leg-user'   => 'គណនីអ្នកប្រើប្រាស់',
+	'requestaccount-leg-person' => 'ពត៌មានផ្ទាល់ខ្លួន',
+	'requestaccount-leg-other'  => 'ពត៌មាន ដទៃទៀត',
+	'requestaccount-real'       => 'ឈ្មោះពិត៖',
+	'requestaccount-same'       => '(ដូច ឈ្មោះពិត)',
+	'requestaccount-email'      => 'អាស័យដ្ឋាន អ៊ីមែវល៍ ៖',
+	'requestaccount-reqtype'    => 'តួនាទី៖',
+	'requestaccount-level-0'    => 'អ្នកនិពន្ធ៖',
+	'requestaccount-bio'        => 'ជីវប្រវត្តិ ផ្ទាល់ខ្លួន៖',
+	'requestaccount-notes'      => 'សំគាល់បន្ថែម៖',
+	'requestaccount-email-subj' => 'ការបញ្ជាក់ទទួលស្គាល់ អាស័យដ្ឋានអ៊ីមែវល៍ {{SITENAME}}',
+	'confirmaccounts'           => 'បញ្ជាក់ទទួលស្គាល់ សំណើគណនី',
+	'confirmaccount-real-q'     => 'ឈ្មោះ',
+	'confirmaccount-email-q'    => 'អ៊ីមែវល៍',
+	'confirmaccount-bio-q'      => 'ជីវប្រវត្តិ',
+	'confirmaccount-review'     => 'មើលឡើងវិញ',
+	'confirmaccount-leg-user'   => 'គណនីអ្នកប្រើប្រាស់',
+	'confirmaccount-name'       => 'ឈ្មោះ អ្នកប្រើប្រាស់',
+	'confirmaccount-real'       => 'ឈ្មោះ ៖',
+	'confirmaccount-email'      => 'អ៊ីមែវល៍ ៖',
+	'confirmaccount-econf'      => '(បានបញ្ជាក់ទទួលស្គាល់)',
+	'confirmaccount-noreason'   => '(ទទេ)',
+	'confirmaccount-ip'         => 'អាស័យដ្ឋាន IP ៖',
+	'confirmaccount-submit'     => 'បញ្ជាក់ទទួលស្គាល់',
+	'confirmaccount-needreason' => 'អ្នកត្រូវផ្តល់ ហេតុផល ក្នុងប្រអប់វិចារ ខាងក្រោម​។',
+	'usercredentials-user'      => 'ឈ្មោះអ្នកប្រើប្រាស់៖',
+	'usercredentials-leg-user'  => 'គណនីអ្នកប្រើប្រាស់',
+	'usercredentials-email'     => 'អ៊ីមែវល៍ ៖',
+	'usercredentials-real'      => 'ឈ្មោះពិត ៖',
+	'usercredentials-ip'        => 'អាស័យដ្ឋាន IP ដើមដំបូង ៖',
 );
 
 $messages['la'] = array(
@@ -3836,6 +3866,7 @@ $messages['te'] = array(
 	'confirmaccount-review'           => 'సమీక్ష',
 	'confirmaccount-q-rej'            => 'ఇటీవల తిరస్కరించిన అభ్యర్థనలు',
 	'confirmaccount-leg-user'         => 'వాడుకరి ఖాతా',
+	'confirmaccount-leg-areas'        => 'ప్రధాన ఆసక్తులు',
 	'confirmaccount-leg-person'       => 'వ్యక్తిగత సమాచారం',
 	'confirmaccount-leg-other'        => 'ఇతర సమాచారం',
 	'confirmaccount-name'             => 'వాడుకరి పేరు',
@@ -3845,17 +3876,36 @@ $messages['te'] = array(
 	'confirmaccount-urls'             => 'వెబ్ సైట్ల జాబితా:',
 	'confirmaccount-none-p'           => '(ఇవ్వలేదు)',
 	'confirmaccount-econf'            => '(ధృవీకరించబడినది)',
+	'confirmaccount-reject'           => '($2 నాడు [[User:$1|$1]] తిరస్కరించారు)',
 	'confirmaccount-rational'         => 'అభ్యర్థికి తెలుపాల్సిన కారణం:',
 	'confirmaccount-noreason'         => '(ఏమీలేదు)',
 	'confirmaccount-create'           => 'అంగీకరించు (ఖాతా సృష్టించు)',
+	'confirmaccount-reason'           => 'వ్యాఖ్య (ఈ-మెయిల్&zwnj;లో చేర్చుతాం):',
 	'confirmaccount-ip'               => 'ఐపీ చిరునామా:',
 	'confirmaccount-submit'           => 'నిర్ధారించు',
 	'confirmaccount-needreason'       => 'క్రిందనిచ్చిన వ్యాఖ్య పెట్టెలో తప్పనిసరిగా ఓ కారణం ఇవ్వాలి',
 	'confirmaccount-rej'              => 'ఖాతా కోసం చేసిన అభ్యర్ధన తిరస్కరించబడినది',
 	'confirmaccount-wsum'             => 'స్వాగతం!',
 	'confirmaccount-email-subj'       => '{{SITENAME}} ఖాతా అభ్యర్థన',
+	'confirmaccount-email-body'       => '{{SITENAME}}లో ఖాతా కొరకు మీ అభ్యర్థనని సమ్మతించాము.
+
+ఖాతా పేరు: $1
+
+సంకేతపదం: $2
+
+భద్రతా కారణాల వల్ల మీ మొదటి ప్రవేశంలో మీ సంకేతపదాన్ని మార్చుకోవాలి. ప్రవేశించడానికి, {{fullurl:Special:Userlogin}}కి వెళ్ళండి.',
+	'confirmaccount-email-body2'      => '{{SITENAME}}లో ఖాతా కొరకు మీ అభ్యర్థనని సమ్మతించాము.
+
+ఖాతా పేరు: $1
+
+సంకేతపదం: $2
+
+$3
+
+భద్రతా కారణాల వల్ల మీ మొదటి ప్రవేశంలో మీ సంకేతపదాన్ని మార్చుకోవాలి. ప్రవేశించడానికి, {{fullurl:Special:Userlogin}}కి వెళ్ళండి.',
 	'usercredentials-user'            => 'వాడుకరి పేరు:',
 	'usercredentials-leg-user'        => 'వాడుకరి ఖాతా',
+	'usercredentials-leg-areas'       => 'ప్రధాన ఆసక్తులు',
 	'usercredentials-leg-person'      => 'వ్యక్తిగత సమాచారం',
 	'usercredentials-leg-other'       => 'ఇతర సమాచారం',
 	'usercredentials-email'           => 'ఈ-మెయిల్:',
