@@ -2353,6 +2353,25 @@ $messages['ml'] = array(
 	'usercredentials-user'   => 'ഉപയോക്തൃനാമം:',
 );
 
+/** Marathi (मराठी)
+ * @author Mahitgar
+ */
+$messages['mr'] = array(
+	'requestaccount-real'     => 'खरे नाव:',
+	'requestaccount-reqtype'  => 'हुद्दा:',
+	'requestaccount-level-0'  => 'लेखक',
+	'requestaccount-level-1'  => 'संपादक',
+	'confirmaccount-real-q'   => 'नाव',
+	'confirmaccount-email-q'  => 'विपत्र',
+	'confirmaccount-review'   => 'समीक्षण',
+	'confirmaccount-leg-user' => 'सदस्य खाते',
+	'confirmaccount-real'     => 'नाव:',
+	'confirmaccount-ip'       => 'अंक पत्ता:',
+	'usercredentials-email'   => 'विपत्र:',
+	'usercredentials-urls'    => 'संकेतस्थळांची यादी:',
+	'usercredentials-member'  => 'अधिकार:',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
