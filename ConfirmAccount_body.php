@@ -1511,7 +1511,7 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 		}
 		
-		$r .= "<br/><table class='mw-confirmaccount-body-{$this->queueType}' cellspacing='1' cellpadding='3' border='1' width=\'100%\'>";
+		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' cellspacing='1' cellpadding='3' border='1' width=\'100%\'>";
 		if( !$wgUseRealNamesOnly ) {
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 				htmlspecialchars($row->acr_name) . '</td></tr>';
