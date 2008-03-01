@@ -12,7 +12,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'confirmedit-desc',
 	'author' => 'Aaron Schulz',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
-	'version' => '1.1',
+	'version' => '1.2',
 );
 
 # This extension needs email enabled!
@@ -53,7 +53,7 @@ $wgAccountRequestTypes = array(
 # (regexp) with the second. Set this variable to false to avoid sortkey use.
 $wgConfirmAccountSortkey = false;
 // For example, the below will do {{DEFAULTSORT:firstname, lastname}}
-#$wgConfirmAccountSortkey = array( '^([^ ]+) (.+)', '$3, $2' );
+#$wgConfirmAccountSortkey = array( '/^(.+) ([^ ]+)$/', '$2, $1' );
 
 # IMPORTANT: do we store the user's notes and credentials
 # for sucessful account request? This will be stored indefinetely
