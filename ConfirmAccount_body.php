@@ -1159,7 +1159,7 @@ class ConfirmAccountsPage extends SpecialPage
 					$ebody = wfMsgExt("confirmaccount-email-body2-pos{$this->mType}", array('parsemag'), $user->getName(), $p, $this->reason );
 				}
 				# Use standard if none found...
-				if( !$ewelcome ) {
+				if( !$ebody ) {
 					$ebody = wfMsgExt( 'confirmaccount-email-body2', array('parsemag'), $user->getName(), $p, $this->reason );
 				}
 			} else {
@@ -1209,11 +1209,12 @@ class ConfirmAccountsPage extends SpecialPage
 			if( $wgMakeUserPageFromBio ) {
 				global $wgAutoUserBioText;
 				
-				$userpage = new Article( $user->getUserPage() );
+				$usertitle = $user->getUserPage();
+				$userpage = new Article( $usertitle );
 				
 				$autotext = strval($wgAutoUserBioText);
-				$body = $autotext ? "{$this->mBio}\n{$autotext}" : $this->mBio;
-				$body = $grouptext ? "{$body}\n{$grouptext}" : $body;
+				$body = $autotext ? "{$this->mBio}\n\n{$autotext}" : $this->mBio;
+				$body = $grouptext ? "{$body}\n\n{$grouptext}" : $body;
 				# Add any interest categories
 				if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
 					$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
@@ -1223,14 +1224,23 @@ class ConfirmAccountsPage extends SpecialPage
 						
 						if( in_array($set[0],$this->mAreaSet) ) {
 							# General userpage text for anyone with this interest
-							if( isset($set[2]) )
+							if( isset($set[2]) ) {
 								$body .= $set[2];
+							}
 							# Message for users with this interested with the given account type
 							# MW: message of format <name>|<wiki page>|<anyone>|<group0>|<group1>...
-							if( isset($set[3+$this->mType]) && $set[3+$this->mType] )
+							if( isset($set[3+$this->mType]) && $set[3+$this->mType] ) {
 								$body .= $set[3+$this->mType];
+							}
 						}
 					}
+				}
+				# Set sortkey
+				global $wgConfirmAccountSortkey;
+				if( !empty($wgConfirmAccountSortkey) ) {
+					$sortKey = $usertitle->getText();
+					$sortKey = preg_replace( $wgConfirmAccountSortkey[0], $wgConfirmAccountSortkey[1], $sortKey );
+					$body .= "\n{{DEFAULTSORT:{$sortKey}}}";
 				}
 				# Create userpage!
 				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );

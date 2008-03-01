@@ -48,6 +48,13 @@ $wgAccountRequestTypes = array(
 	0 => array( 'authors', 'user' )
 );
 
+# If set, will add {{DEFAULTSORT:sortkey}} to userpages for auto-categories.
+# The sortkey will be made be replacing the first element of this array
+# (regexp) with the second. Set this variable to false to avoid sortkey use.
+$wgConfirmAccountSortkey = false;
+// For example, the below will do {{DEFAULTSORT:firstname, lastname}}
+#$wgConfirmAccountSortkey = array( '^([^ ]+) (.+)', '$3, $2' );
+
 # IMPORTANT: do we store the user's notes and credentials
 # for sucessful account request? This will be stored indefinetely
 # and will be accessible to users with crediential lookup permissions
