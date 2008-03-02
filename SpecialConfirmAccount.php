@@ -36,6 +36,8 @@ $wgAccountRequestThrottle = 1;
 # Minimum biography specs
 $wgAccountRequestMinWords = 50;
 
+$wgAccountRequestWhileBlocked = false;
+
 # Show ToS checkbox
 $wgAccountRequestToS = true;
 # Show confirmation info fields

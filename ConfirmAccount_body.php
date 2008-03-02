@@ -18,7 +18,8 @@ class RequestAccountPage extends SpecialPage {
 		global $wgUser, $wgOut, $wgRequest, $action, $wgUseRealNamesOnly,
 			$wgAccountRequestToS, $wgAccountRequestExtraInfo, $wgAccountRequestTypes;
 		# If a user cannot make accounts, don't let them request them either
-		if( $wgUser->isBlockedFromCreateAccount() ) {
+		global $wgAccountRequestWhileBlocked;
+		if( !$wgAccountRequestWhileBlocked && $wgUser->isBlockedFromCreateAccount() ) {
 			$wgOut->blockedPage();
 			return;
 		}
