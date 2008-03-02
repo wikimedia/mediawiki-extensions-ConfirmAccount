@@ -1391,8 +1391,8 @@ Ceti code de confirmacion èxpire lo $4.',
 /** Galician (Galego)
  * @author Xosé
  * @author Alma
- * @author SPQRobin
  * @author Toliño
+ * @author SPQRobin
  */
 $messages['gl'] = array(
 	'requestaccount'                  => 'Solicitar unha conta',
@@ -1515,7 +1515,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-viewing'          => '(actualmente visto polo [[Usuario:$1|$1]])',
 	'confirmaccount-summary'          => 'A crear a páxina de usuario coa biografía do novo usuario.',
 	'confirmaccount-welc'             => "'''Reciba a benvida a ''{{SITENAME}}''!''' Esperamos que contribúa moito e ben.
-	Será ben que lea [[{{MediaWiki:Helppage}}|Como comezar]]. De novo, reciba a nosa benvida e divírtase!",
+Quizais queira ler as [[{{MediaWiki:Helppage}}|páxinas de axuda]]. De novo, reciba a nosa benvida e divírtase!",
 	'confirmaccount-wsum'             => 'Reciba a nosa benvida!',
 	'confirmaccount-email-subj'       => 'solicitude de conta en {{SITENAME}}',
 	'confirmaccount-email-body'       => 'Aprobouse a súa solicitude de conta en {{SITENAME}}.
@@ -2254,9 +2254,13 @@ $messages['km'] = array(
 	'confirmaccount-bio-q'      => 'ជីវប្រវត្តិ',
 	'confirmaccount-review'     => 'មើលឡើងវិញ',
 	'confirmaccount-leg-user'   => 'គណនីអ្នកប្រើប្រាស់',
+	'confirmaccount-leg-person' => 'ពត៌មាន ផ្ទាល់ខ្លួន',
+	'confirmaccount-leg-other'  => 'ពត៌មាន ដទៃ',
 	'confirmaccount-name'       => 'ឈ្មោះ អ្នកប្រើប្រាស់',
 	'confirmaccount-real'       => 'ឈ្មោះ ៖',
 	'confirmaccount-email'      => 'អ៊ីមែវល៍ ៖',
+	'confirmaccount-bio'        => 'ជីវប្រវត្តិ ៖',
+	'confirmaccount-urls'       => 'បញ្ជី នៃ វ៉ែបសៃថ៍ ៖',
 	'confirmaccount-econf'      => '(បានបញ្ជាក់ទទួលស្គាល់)',
 	'confirmaccount-noreason'   => '(ទទេ)',
 	'confirmaccount-ip'         => 'អាស័យដ្ឋាន IP ៖',
@@ -2769,7 +2773,7 @@ $messages['oc'] = array(
 	'requestaccount'                  => "Demanda de compte d'utilizaire",
 	'requestaccount-text'             => "'''Emplenatz e mandatz lo formulari çaijós per demandar un compte d’utilizaire.'''. Asseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte. Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus [[Special:Userlogin]].",
 	'requestaccount-page'             => "{{ns:project}}:Condicions d'utilizacion",
-	'requestaccount-dup'              => "'''Nòta : Sètz ja sus una session amb un compte enregistrat.'''",
+	'requestaccount-dup'              => "'''Nòta : Ja sètz sus una session amb un compte enregistrat.'''",
 	'requestaccount-leg-user'         => "Compte d'utilizaire",
 	'requestaccount-leg-areas'        => "Centres d'interès principals",
 	'requestaccount-leg-person'       => 'Informacions personalas',
@@ -2804,7 +2808,7 @@ $messages['oc'] = array(
 	'requestaccount-email-body-admin' => "« $1 » a demandat un compte e se tròba en espèra de confirmacion.
 
 L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprobar la demanda aicí « $2 ».",
-	'acct_request_throttle_hit'       => 'O planhem, avètz demandat $1 comptes. Podètz pas far mai de demanda',
+	'acct_request_throttle_hit'       => 'O planhèm, ja avètz demandat $1 comptes. Podètz pas far mai de demanda.',
 	'requestaccount-loginnotice'      => "Per obténer un compte d'utilizaire, devètz ne far '''[[Special:RequestAccount|la demanda]]'''.",
 	'confirmaccount-newrequests'      => "Actualament i a '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compte]]|[[Special:ConfirmAccounts|demandas de compte]]}} en cors.",
 	'confirmaccounts'                 => 'Demanda de confirmacion de comptes',
@@ -2879,8 +2883,8 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-email-subj'       => '{{SITENAME}} demanda de compte',
 	'confirmaccount-email-body'       => "Vòstra demanda de compte es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal : $2 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:Userlogin}}.",
 	'confirmaccount-email-body2'      => "Vòstra demanda de compte d'utilizaire es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal: $2 $3 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:Userlogin}}.",
-	'confirmaccount-email-body3'      => 'O planhem, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. Mantuna rason pòdon explicar aqueste cas de figura. Es possible que ajatz mal emplenat lo formulari, o que ajatz pas indicat sufisentament d’informacions dins vòstras responsas. Es encara possible que emplenetz pas los critèris d’eligibilitat per obténer vòstre compte. Es possible d’èsser sus la liste dels contactes se desiratz conéisser melhor las condicions requesas.',
-	'confirmaccount-email-body4'      => 'O planhem, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. $2 Es possible d’èsser sus la lista dels contactes per conéisser melhor los critèris per poder s’inscriure.',
+	'confirmaccount-email-body3'      => 'O planhèm, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. Mantuna rason pòdon explicar aqueste cas de figura. Es possible que ajatz mal emplenat lo formulari, o que ajatz pas indicat sufisentament d’informacions dins vòstras responsas. Es encara possible que emplenetz pas los critèris d’eligibilitat per obténer vòstre compte. Es possible d’èsser sus la lista dels contactes se desiratz conéisser melhor las condicions requesas.',
+	'confirmaccount-email-body4'      => 'O planhèm, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. $2 Es possible d’èsser sus la lista dels contactes per conéisser melhor los critèris per poder s’inscriure.',
 	'confirmaccount-email-body5'      => 'Abans que vòstra requèsta pel compte « $1 » pòsca èsser acceptada sus {{SITENAME}}, devètz produire qualques informacions suplementàrias. $2 Aquò permetís d’èsser sus la lista dels contactes del site, se desiratz ne saber mai sus las règlas concernent los comptes.',
 	'usercredentials'                 => "Referéncias de l'utilizaire",
 	'usercredentials-leg'             => "Verificacion confirmada de las referéncias d'un utilizaire.",
