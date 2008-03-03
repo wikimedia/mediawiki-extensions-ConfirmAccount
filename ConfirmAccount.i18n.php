@@ -692,12 +692,13 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Rrosenfeld
  * @author MF-Warburg
+ * @author Raimond Spekking
  */
 $messages['de'] = array(
 	'requestaccount'                  => 'Benutzerkonto beantragen',
 	'requestaccount-text'             => "'''Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen'''. 
 
-	Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]] bevor du ein Benutzerkonto beantragst.
+	Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor du ein Benutzerkonto beantragst.
 
 	Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[{{ns:special}}:Userlogin|Anmelden]]“ einloggen.",
 	'requestaccount-page'             => '{{ns:project}}:Nutzungsbedingungen',
@@ -757,8 +758,15 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2".',
 	'acct_request_throttle_hit'       => 'Du hast bereits $1 Benutzerkonten beantragt, du kannst momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice'      => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[{{ns:special}}:RequestAccount|beantragen]]'''.",
+	'confirmaccount-newrequests'      => 'Es gibt aktuell \'\'\'$1\'\'\' {{PLURAL:$1|[[Special:ConfirmAccounts|offenen Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene Benutzerkontenanträge]]}}.',
 	'confirmaccounts'                 => 'Benutzerkonto-Anträge bestätigen',
 	'confirmedit-desc'                => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
+	'confirmaccount-maintext'         => '\'\'\'Diese Seite dient dazu, wartende Benutzerkontenanträge für \'\'{{SITENAME}}\'\'\'\'\' zu bearbeiten.
+	
+	Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
+
+	Wenn du auf einen Antrag antwortest, überprüfe die Informationen sorgfältig und bestätige die enthaltenen Informationen.
+	Deine Aktionen werden nichtöffentlich protokolloert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.', 
 	'confirmaccount-list'             => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
 	Bestätigte Konten werden angelegt und aus der Liste entfernt. Abgelehnte Konten werden einfach aus der Liste gelöscht.',
 	'confirmaccount-list2'            => 'Unten ist eine Liste kürzlich abgelehnter Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind.
@@ -771,6 +779,7 @@ Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden
 	'confirmaccount-none-o'           => 'Momentan gibt es keine offenen Benutzeranträge auf dieser Liste.',
 	'confirmaccount-none-h'           => 'Momentan gibt es keine Anträge im „abwarten“-Status auf dieser Liste.',
 	'confirmaccount-none-r'           => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge auf dieser Liste.',
+	'confirmaccount-real-q'           => 'Name',
 	'confirmaccount-email-q'          => 'E-Mail',
 	'confirmaccount-bio-q'            => 'Biographie',
 	'confirmaccount-back'             => 'Liste der offenen Anträge ansehen',
@@ -783,6 +792,7 @@ Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden
 	'confirmaccount-type-0'           => 'zukünftige Autoren',
 	'confirmaccount-type-1'           => 'zukünftige Bearbeiter',
 	'confirmaccount-q-open'           => 'offene Anträge',
+	'confirmaccount-q-held'           => 'wartende Anträge',
 	'confirmaccount-q-rej'            => 'kürzlich abgelehnte Anträge',
 	'confirmaccount-badid'            => 'Momentan gibt es keinen Benutzerantrag zur angegebenen ID. Möglicherweise wurde er bereits bearbeitet.',
 	'confirmaccount-leg-user'         => 'Benutzerkonto',
@@ -790,6 +800,7 @@ Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden
 	'confirmaccount-leg-person'       => 'Persönliche Informationen',
 	'confirmaccount-leg-other'        => 'Weitere Informationen',
 	'confirmaccount-name'             => 'Benutzername',
+	'confirmaccount-real'             => 'Name:',
 	'confirmaccount-email'            => 'E-Mail:',
 	'confirmaccount-reqtype'          => 'Position:',
 	'confirmaccount-pos-0'            => 'Autor',
@@ -865,10 +876,23 @@ $2
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
+	'usercredentials'                 => 'Benutzer-Berechtigungsnachweis',
+	'usercredentials-leg'             => 'Bestätigte Benutzer-Berechtigungsnachweise nachsehen',
 	'usercredentials-user'            => 'Benutzername:',
+	'usercredentials-text'            => 'Es folgen die bestätigten Benutzer-Berechtigungsnachweise für das gewählte Benutzerkonto.',
 	'usercredentials-leg-user'        => 'Benutzerkonto',
+	'usercredentials-leg-areas'       => 'Haupt-Interessensgebietet',
+	'usercredentials-leg-person'      => 'Persönliche Informationen',
+	'usercredentials-leg-other'       => 'Weitere Informationen',
 	'usercredentials-email'           => 'E-Mail:',
 	'usercredentials-real'            => 'Echter Name:',
+	'usercredentials-bio'             => 'Biographie:',
+	'usercredentials-attach'          => 'Resume/CV:',
+	'usercredentials-notes'           => 'Zusätzliche Bemerkungen:',
+	'usercredentials-urls'            => 'Liste der Webseiten:',
+	'usercredentials-ip'              => 'Originale IP-Adresse:',
+	'usercredentials-member'          => 'Rechte:',
+	'usercredentials-badid'           => 'Es wurden keinen Berechtigungsnachweis für diesen Benutzer gefunden. Bitte die Schreibweise prüfen.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
