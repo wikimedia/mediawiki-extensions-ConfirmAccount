@@ -12,7 +12,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'confirmedit-desc',
 	'author' => 'Aaron Schulz',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
-	'version' => '1.2',
+	'version' => '1.3',
 );
 
 # This extension needs email enabled!
@@ -167,16 +167,16 @@ function wfConfirmAccountsNotice( $notice ) {
 	return true;
 }
 
-# Register special page
-if ( !function_exists( 'extAddSpecialPage' ) ) {
-	require( dirname(__FILE__) . '/../ExtensionFunctions.php' );
-}
+$dir = dirname(__FILE__) . '/';
 # Request an account
-extAddSpecialPage( dirname(__FILE__) . '/ConfirmAccount_body.php', 'RequestAccount', 'RequestAccountPage' );
+$wgSpecialPages['RequestAccount'] = 'RequestAccountPage';
+$wgAutoloadClasses['RequestAccountPage'] = $dir . 'ConfirmAccount_body.php';
 # Confirm accounts
-extAddSpecialPage( dirname(__FILE__) . '/ConfirmAccount_body.php', 'ConfirmAccounts', 'ConfirmAccountsPage' );
+$wgSpecialPages['ConfirmAccounts'] = 'ConfirmAccountsPage';
+$wgAutoloadClasses['ConfirmAccountsPage'] = $dir . 'ConfirmAccount_body.php';
 # Account credentials
-extAddSpecialPage( dirname(__FILE__) . '/ConfirmAccount_body.php', 'UserCredentials', 'UserCredentialsPage' );
+$wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
+$wgAutoloadClasses['UserCredentialsPage'] = $dir . 'ConfirmAccount_body.php';
 
 $wgExtensionFunctions[] = 'efLoadConfirmAccount';
 # Add notice of where to request an account
