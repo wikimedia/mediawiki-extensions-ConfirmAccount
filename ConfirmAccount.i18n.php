@@ -1037,110 +1037,106 @@ $messages['ext'] = array(
  * @author Taleman
  * @author Cimon Avaro
  * @author Nike
- * @author Siebrand
  */
 $messages['fi'] = array(
-	'requestaccount'                  => 'Ano käyttäjätiliä',
-	'requestaccount-text'             => "'''Ano käyttäjätiliä täyttämällä ja lähettämällä alla oleva lomake'''.
+	'requestaccount'                  => 'Pyydä käyttäjätunnusta',
+	'requestaccount-text'             => "'''Pyydä käyttäjätunnusta täyttämällä ja lähettämällä alla oleva lomake'''.
 
-Muista ennen käyttäjätilin anomista lukea [[{{MediaWiki:Requestaccount-page}}|Terms of Service]].
+Muista ennen käyttäjätunnuksen pyytämistä lukea [[{{MediaWiki:Requestaccount-page}}|Käyttöehdot]].
 
-Saat sähköpostilla ilmoituksen kun tili on hyväksytty ja tiliä voi käyttää osoitteessa [[Special:Userlogin]].",
+Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sitä voi käyttää osoitteessa [[Special:Userlogin]].",
 	'requestaccount-page'             => '{{ns:project}}:Terms of Service',
 	'requestaccount-dup'              => "'''Huomio: Olet jo kirjautuneena rekisteröidyllä käyttäjätunnuksella.'''",
-	'requestaccount-leg-user'         => 'Käyttäjätili',
+	'requestaccount-leg-user'         => 'Käyttäjätunnus',
 	'requestaccount-leg-areas'        => 'Tärkeimmät kiinnostuksen kohteet',
 	'requestaccount-leg-person'       => 'Henkilötiedot',
 	'requestaccount-leg-other'        => 'Muut tiedot',
-	'requestaccount-acc-text'         => 'Lähetettyäsi anomuksen saat sähköpostitse vahvistuksen. Sinun pitää painaa sähköpostissa olevaa kuittauslinkkiä. Myöskin salasanasi lähetetään sinulle kun tili luodaan.',
-	'requestaccount-areas-text'       => 'Valitse alta alueet joissa olet asiantuntija tai joiden parissa haluaisit enimmäkseen työskennellä.',
-	'requestaccount-ext-text'         => 'Seuraavat tiedot pidetään luottamuksellisina ja niitä käytetään vain tämän anomuksen käsittelyssä.
+	'requestaccount-acc-text'         => 'Lähetettyäsi pyynnön saat sähköpostitse vahvistuksen. Sinun pitää napsauttaa sähköpostissa olevaa kuittauslinkkiä. Myöskin salasanasi lähetetään sinulle, kun tunnus luodaan.',
+	'requestaccount-areas-text'       => 'Valitse alta alueet, joissa olet asiantuntija tai joiden parissa haluaisit enimmäkseen työskennellä.',
+	'requestaccount-ext-text'         => 'Seuraavat tiedot pidetään luottamuksellisina ja niitä käytetään vain tämän pyynnön käsittelyssä.
 Haluat ehkä antaa tunnistamista helpottavia yhteystietoja, puhelinnumeron esimerkiksi.',
 	'requestaccount-bio-text'         => 'Kuvauksestasi tulee käyttäjäsivusi oletussisältö.
-Pyri kirjoittamaan kaikki pätevyytesi.
-Varmistu että tiedot voidaan julkistaa.
-Nimesi voit muuttaa sivulla [[Special:Preferences]].',
+Kirjoita omiin tietoihisi erikoisosaamisistasi ja pätevyyksistäsi. Muista, että nämä tiedot julkaistaan.
+Voit muuttaa nimeäsi sivulla [[Special:Preferences]].',
 	'requestaccount-real'             => 'Oikea nimi:',
 	'requestaccount-same'             => '(sama kuin oikea nimi)',
 	'requestaccount-email'            => 'Sähköpostiosoite:',
 	'requestaccount-reqtype'          => 'Asema:',
-	'requestaccount-level-0'          => 'kirjailija',
-	'requestaccount-level-1'          => 'toimittaja',
+	'requestaccount-level-0'          => 'kirjoittaja',
+	'requestaccount-level-1'          => 'ylläpitäjä',
 	'requestaccount-bio'              => 'Kuvaus itsestäsi:',
 	'requestaccount-attach'           => 'Ansioluettelo tai CV (vapaaehtoinen):',
 	'requestaccount-notes'            => 'Lisähuomautukset:',
 	'requestaccount-urls'             => 'Webbisivujen luettelo, jos on (yksi per rivi):',
-	'requestaccount-agree'            => 'Vahvista nimesi olevan oikein ja hyväksyväsi käyttöehdot.',
-	'requestaccount-inuse'            => 'Käyttäjätunnus on jo käytössä käsiteltävänä olevassa käyttäjätilianomuksessa.',
+	'requestaccount-agree'            => 'Vahvista, etä antamasi oikea nimesi on oikea ja että hyväksyt käyttöehdot.',
+	'requestaccount-inuse'            => 'Käyttäjätunnusta on jo pyydetty toisessa käsiteltävänä olevassa käyttäjätunnuspyynnössä.',
 	'requestaccount-tooshort'         => 'Kuvauksesi pituuden on oltava vähintään $1 sanaa.',
-	'requestaccount-emaildup'         => 'Toisessa käsiteltävänä olevassa käyttäjätilianomuksessa on sama sähköpostiosoite.',
+	'requestaccount-emaildup'         => 'Samaa sähköpostiosoitetta on käytetty toisessa parhailaan käsiteltävänä olevassa käyttäjätunnuspyynnössä.',
 	'requestaccount-exts'             => 'Liitetiedosto ei ole sallittua tyyppiä.',
-	'requestaccount-resub'            => 'Tietoturvasyistä antamasi ansioluettelo/CV -tiedosto on valittava uudestaan.
-Jätä kenttä tyhjäksi jos et enää halua liittää tiedostoa.',
-	'requestaccount-tos'              => 'Olen lukenut ja hyväksyn sivuston {{SITENAME}} [[{{MediaWiki:Requestaccount-page}}|Käyttöehdot]].
+	'requestaccount-resub'            => 'Tietoturvasyistä antamasi ansioluettelo/CV-tiedosto on valittava uudestaan.
+Jätä kenttä tyhjäksi, jos et enää halua liittää tiedostoa.',
+	'requestaccount-tos'              => 'Olen lukenut ja hyväksyn sivuston {{SITENAME}} [[{{MediaWiki:Requestaccount-page}}|käyttöehdot]].
 Kohdasssa "Oikea nimi" olen antanut oman virallisen nimeni.',
-	'requestaccount-submit'           => 'Ano käyttäjätili',
-	'requestaccount-sent'             => 'Anomuksesi käyttäjätilistä on lähetetty onnistuneesti ja odottaa nyt käsittelyä.',
-	'request-account-econf'           => 'Sähköpostiosoitteesi on tarkistettu ja merkitään tarkistetuksi käyttäjätilianomukseesi.',
-	'requestaccount-email-subj'       => '{{SITENAME}} sähköpostiosoitteen tarkistus',
-	'requestaccount-email-body'       => 'Joku, luultavasti sinä itse IP-osoitteesta $1, on anonut käyttäjätiliä "$2" sivustoon {{SITENAME}} tällä sähköpostiosoitteella.
+	'requestaccount-submit'           => 'Pyydä käyttäjätunnusta',
+	'requestaccount-sent'             => 'Käyttäjätunnuspyyntösi on lähetetty onnistuneesti ja odottaa nyt käsittelyä.',
+	'request-account-econf'           => 'Sähköpostiosoitteesi on tarkistettu ja merkitään tarkistetuksi käyttäjätunnuspyyntöösi.',
+	'requestaccount-email-subj'       => '{{SITENAME}}: sähköpostiosoitteen tarkistus',
+	'requestaccount-email-body'       => 'Joku, luultavasti sinä itse IP-osoitteesta $1, on pyytänyt käyttäjätunnusta "$2" sivustoon {{SITENAME}} ja käyttänyt tätä sähköpostiosoitetta.
 
-Vahvistat tämän käyttäjätilin todella kuuluvan sinulle sivustolla {{SITENAME}} avaamalla tämän osoitteen selaimessasi:
+Vahvista, että tämä käyttäjätunnus sivustolle {{SITENAME}} kuuluu sinulle avaamalla tämä osoite selaimessasi:
 
 $3
 
-Jos käyttäjätili luodaan lähetetään salasana vain sinulle. Jos et ole tämä käyttäjä, *älä* avaa osoitetta.
-Tämän tarkistuskoodin viimeinen käyttöpäivä on $4.',
-	'requestaccount-email-subj-admin' => 'Sivuston {{SITENAME}} käyttäjätilianomus',
-	'requestaccount-email-body-admin' => '"$1" on anonut käyttäjätilia ja odottaa vahvistusta.
-Sähköpostiosoite on tarkistettu. Käyttäjätili myönnetään klikkaamalla tästä "$2".',
-	'acct_request_throttle_hit'       => 'Valitettavasti et voi tehdä enempää anomuksia, koska olet jo anonut $1 käyttäjätiliä.',
-	'requestaccount-loginnotice'      => "Saadaksesi käyttäjätilin on tehtävä '''[[Special:RequestAccount|anomus]]'''.",
-	'confirmaccount-newrequests'      => "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa} {{PLURAL:$1|[[Special:ConfirmAccounts|anomus]]|[[Special:ConfirmAccounts|anomusta]]}} käsiteltävänä.",
-	'confirmaccounts'                 => 'Myönnä käyttäjätilejä.',
-	'confirmedit-desc'                => 'Byrokraatit saavat oikeuden myöntää käyttäjätilejä',
-	'confirmaccount-maintext'         => "'''Tällä sivulla myönnetään käyttäjätilejä sivustolle \"{{SITENAME}}\"'''.
+Jos käyttäjätunnus luodaan, salasana lähetetään vain sinulle. Jos et ole pyytänyt käyttäjätunnusa, *älä* avaa osoitetta.
+Tämän vahvistuskoodi vanhenee $4.',
+	'requestaccount-email-subj-admin' => 'Sivuston {{SITENAME}} käyttäjätunnuspyyntö',
+	'requestaccount-email-body-admin' => '"$1" on pyytänyt käyttäjätunnusta ja odottaa vahvistusta.
+Sähköpostiosoite on tarkistettu. Käyttäjätunnus myönnetään napsauttamalla tästä "$2".',
+	'acct_request_throttle_hit'       => 'Valitettavasti et voi tehdä enempää pyyntöjä, koska olet jo pyytänyt $1 käyttäjätunnusta.',
+	'requestaccount-loginnotice'      => "Saadaksesi käyttäjätunnuksen on tehtävä '''[[Special:RequestAccount|käyttäjätunnuspyyntö]]'''.",
+	'confirmaccount-newrequests'      => "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} käsiteltävänä.",
+	'confirmaccounts'                 => 'Myönnä käyttäjätunnuksia.',
+	'confirmedit-desc'                => 'Byrokraatit saavat oikeuden myöntää käyttäjätunnuksia.',
+	'confirmaccount-maintext'         => "'''Tällä sivulla myönnetään käyttäjätunnuksia sivustolle \"{{SITENAME}}\"'''.
 
-Jokaisessa anomusjonossa on kolme alijonoa, käsittelemättömille hakemuksille, 
-muiden byrokraattien lisätietoja odottamaan pysäyttämille hakemuksille ja
-kolmas hiljattain hylätyille hakemuksille.
+Jokaisessa pyyntöjonossa on kolme alijonoa, käsittelemättömille pyynnöille,
+muiden byrokraattien lisätietoja odottamaan pysäyttämille pyynnöille ja
+kolmas hiljattain hylätyille pyynnöille.
 
-Tarkista anomus huolellisesti ennen vastaamista ja vahvista anomuksen tiedot tarvittaessa.
+Tarkista pyyntö huolellisesti ennen vastaamista ja vahvista pyynnön tiedot tarvittaessa.
 Toimenpiteesi kirjoitetaan yksityiseen lokiin. Tarkoitus on valvoa kaikkia täällä tehtäviä 
 toimia omien puuhiesi lisäksi.",
-	'confirmaccount-list'             => 'Alla on lista hyväksymistä odottavista anomuksista.
-Hyväksytyt käyttäjätilit luodaan ja poistetaan listasta. Hylätyt anomukset vain poistetaan listasta.',
-	'confirmaccount-list2'            => 'Alla on luettelo hiljattain hylätyistä anomuksista jotka voidaan poistaa automaattisesti kun ne ovat useiden päivien ikäisiä.\\n
-Ne voidaan vieläkin hyväksyä käyttäjätileiksi, mutta neuvottelethan ensin hylkäyksen tehneen byrokraatin kanssa.',
-	'confirmaccount-text'             => "Tämä on käsittelyä odottava käyttäjätilianomus sivustolle '''{{SITENAME}}'''.
+	'confirmaccount-list'             => 'Alla on luettelo hyväksymistä odottavista pyynnöistä.
+Hyväksytyt käyttäjätunnukset luodaan ja poistetaan luettelosta. Hylätyt pyynnöt vain poistetaan luettelosta.',
+	'confirmaccount-list2'            => 'Alla on luettelo hiljattain hylätyistä pyynnöistä jotka voidaan poistaa automaattisesti, kun ne ovat useiden päivien ikäisiä.\\n
+Ne voidaan vieläkin hyväksyä käyttäjätunnuksiksi, mutta neuvottelethan ensin hylkäyksen tehneen ylläpitäjän kanssa.',
+	'confirmaccount-text'             => "Tämä on käsittelyä odottava käyttäjätunnuspyyntö sivustolle '''{{SITENAME}}'''.
 
-Tarkista alla olevat tiedot huolellisesti. Jos olet hyväksymässä tätä anomusta, aseta käyttäjän asema pudotusvalikosta.
-Anomuksen omien tietojen muokkaaminen ei vaikuta pysyviin pätevyystietoihin. Huomaa voivasi muuttaa luotavan käyttäjätilin käyttäjätunnusta.
+Tarkista alla olevat tiedot huolellisesti. Jos olet hyväksymässä tätä pyyntöä, aseta käyttäjän asema pudotusvalikosta.
+Pyytäjän omien tietojen muokkaaminen ei vaikuta pysyviin pätevyystietoihin. Huomaa voivasi muuttaa luotavan käyttäjätunnuksen. Käytä tätä vain nimiyhteentörmäysten välttämiseen.
 
-Käytä tätä vain nimiyhteentörmäysten välttämiseen.
-
-Jos jätät tämän sivun vahvistamatta tai hylkäämättä anomusta, se jää odottamaan käsittelyä.",
-	'confirmaccount-none-o'           => 'Tässä luettelossa ei ole nyt yhtään käsiteltävänä olevaa anomusta.',
-	'confirmaccount-none-h'           => 'Tässä luettelossa ei ole nyt yhtään pysäytettyä käsiteltävänä olevaa anomusta.',
-	'confirmaccount-none-r'           => 'Täss luettelossa ei ole nyt yhtään äskettäin hylättyä anomusta.',
+Jos jätät tämän sivun vahvistamatta tai hylkäämättä pyyntöä, se jää odottamaan käsittelyä.",
+	'confirmaccount-none-o'           => 'Tässä luettelossa ei ole nyt yhtään käsiteltävänä olevaa pyyntöä.',
+	'confirmaccount-none-h'           => 'Tässä luettelossa ei ole nyt yhtään pysäytettyä käsiteltävänä olevaa pyyntöä.',
+	'confirmaccount-none-r'           => 'Täss luettelossa ei ole nyt yhtään äskettäin hylättyä pyyntöä.',
 	'confirmaccount-real-q'           => 'Nimi',
 	'confirmaccount-email-q'          => 'Sähköposti',
 	'confirmaccount-bio-q'            => 'Omat tiedot',
-	'confirmaccount-back'             => 'Katso luettelo käsiteltävänä olevista anomuksista',
-	'confirmaccount-back2'            => 'Katso luettelo äskettäin hylättyistä anomuksista',
-	'confirmaccount-showheld'         => 'Katso luettelo käsiteltävänä olevista anomuksista',
+	'confirmaccount-back'             => 'Katso luettelo käsiteltävänä olevista pyynnöistä',
+	'confirmaccount-back2'            => 'Katso luettelo äskettäin hylätyistä pyynnöistä',
+	'confirmaccount-showheld'         => 'Katso luettelo käsiteltävänä olevista pyynnöistä',
 	'confirmaccount-review'           => 'Tarkista',
-	'confirmaccount-types'            => 'Valitse vahvistettavien anomusten jono alla olevista:',
+	'confirmaccount-types'            => 'Valitse vahvistettavien pyyntöjen jono alla olevista:',
 	'confirmaccount-all'              => '(näytä kaikki jonot)',
 	'confirmaccount-type'             => 'Valittu jono:',
-	'confirmaccount-type-0'           => 'kirjailijaehdokkaat',
+	'confirmaccount-type-0'           => 'kirjoittajaehdokkaat',
 	'confirmaccount-type-1'           => 'toimittajaehdokkaat',
-	'confirmaccount-q-open'           => 'avoimet anomukset',
-	'confirmaccount-q-held'           => 'pysäytetyt anomukset',
-	'confirmaccount-q-rej'            => 'äskettäin hylätyt anomukset',
-	'confirmaccount-badid'            => 'Annettua tunnistetta vastavaa käsiteltävänä olevaa anomusta ei ole.
+	'confirmaccount-q-open'           => 'avoimet pyynnöt',
+	'confirmaccount-q-held'           => 'pysäytetyt pyynnöt',
+	'confirmaccount-q-rej'            => 'äskettäin hylätyt pyynnöt',
+	'confirmaccount-badid'            => 'Annettua tunnistetta vastavaa käsiteltävänä olevaa pyyntöä ei ole.
 Se voi olla jo käsitelty.',
-	'confirmaccount-leg-user'         => 'Käyttäjätili',
+	'confirmaccount-leg-user'         => 'Käyttäjätunnus',
 	'confirmaccount-leg-areas'        => 'Tärkeimmät kiinnostuksen kohteet',
 	'confirmaccount-leg-person'       => 'Henkilötiedot',
 	'confirmaccount-leg-other'        => 'Muut tiedot',
@@ -1148,20 +1144,20 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-real'             => 'Nimi:',
 	'confirmaccount-email'            => 'Sähköpostiosoite:',
 	'confirmaccount-reqtype'          => 'Asema:',
-	'confirmaccount-pos-0'            => 'kirjailija',
+	'confirmaccount-pos-0'            => 'kirjoittaja',
 	'confirmaccount-pos-1'            => 'toimittaja',
 	'confirmaccount-bio'              => 'Omat tiedot:',
 	'confirmaccount-attach'           => 'Ansioluettelo/CV:',
 	'confirmaccount-notes'            => 'Lisätietoja:',
 	'confirmaccount-urls'             => 'Luettelo webbisivuista:',
 	'confirmaccount-none-p'           => '(ei annettu)',
-	'confirmaccount-confirm'          => 'Hyväksy, hylkää tai pysäytä tämä anomus alla olevilla valinnoilla:',
+	'confirmaccount-confirm'          => 'Hyväksy, hylkää tai pysäytä tämä pyyntö alla olevilla valinnoilla:',
 	'confirmaccount-econf'            => '(tarkistettu)',
 	'confirmaccount-reject'           => '(hylätty, hylkääjänä [[User:$1|$1]] osoitteesta $2)',
 	'confirmaccount-rational'         => 'Hakijalle kerrotut perustelut:',
 	'confirmaccount-noreason'         => '(ei mitään)',
 	'confirmaccount-held'             => '("pysäytetty", pysäyttäjänä [[User:$1|$1]] osoitteessa $2)',
-	'confirmaccount-create'           => 'Hyväksy (luo käyttäjätili)',
+	'confirmaccount-create'           => 'Hyväksy (luo käyttäjätunnus)',
 	'confirmaccount-deny'             => 'Hylkää (poista jonosta)',
 	'confirmaccount-hold'             => 'Pysäytä',
 	'confirmaccount-spam'             => 'Roskaa (sähköpostia ei lähetetä)',
@@ -1169,23 +1165,23 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-ip'               => 'IP-osoite:',
 	'confirmaccount-submit'           => 'Vahvista',
 	'confirmaccount-needreason'       => 'Alla olevaan huomautuslaatikkoon on kirjoitettava perustelu.',
-	'confirmaccount-canthold'         => 'Tämä anomus on jo joko pysäytetty tai poistettu.',
-	'confirmaccount-acc'              => 'Anomuksen vahvistaminen onnistui; luotu uusi käyttäjätili [[User:$1]].',
-	'confirmaccount-rej'              => 'Anomuksen hylkääminen onnistui.',
+	'confirmaccount-canthold'         => 'Tämä pyyntöf on jo joko pysäytetty tai poistettu.',
+	'confirmaccount-acc'              => 'Pyynnön vahvistaminen onnistui; luotu uusi käyttäjätunnus [[User:$1]].',
+	'confirmaccount-rej'              => 'Pyynnön hylkääminen onnistui.',
 	'confirmaccount-viewing'          => '(juuri nyt katseltavana käyttäjällä [[User:$1|$1]])',
-	'confirmaccount-summary'          => 'Luodaan käyttäsivu jossa uuden käyttäjän omat tiedot.',
-	'confirmaccount-welc'             => "'''Tervetuloa ''{{SITENAME}}''!-sivustolle''' Toivomme runsasta ja laadukasta kirjoittelua.
+	'confirmaccount-summary'          => 'Luodaan uuden käyttäjän tiedost sisältävä käyttäjäsivu.',
+	'confirmaccount-welc'             => "'''Tervetuloa ''{{SITENAME}}''-sivustolle!''' Toivomme runsasta ja laadukasta kirjoittelua.
 Haluat varmaan lukea [[{{MediaWiki:Helppage}}|ohjesivut]]. Vielä kerran tervetuloa ja pidä hauskaa!",
 	'confirmaccount-wsum'             => 'Tervetuloa!',
-	'confirmaccount-email-subj'       => 'Käyttäjätilianomus sivustolle {{SITENAME}}',
-	'confirmaccount-email-body'       => 'Anomuksesi käyttäjätilistä sivulle {{SITENAME}} on hyväksytty.
+	'confirmaccount-email-subj'       => 'Käyttäjätunnuspyyntö sivustolle {{SITENAME}}',
+	'confirmaccount-email-body'       => 'Pyytämäsi käyttäjätunnus sivulle {{SITENAME}} on hyväksytty.
 
 Käyttäjätunnus: $1
 
 Salasana: $2
 
 Salasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body2'      => 'Anomuksesi käyttäjätilistä sivulle {{SITENAME}} on hyväksytty.
+	'confirmaccount-email-body2'      => 'Pyytämäsi käyttäjätunnus sivulle {{SITENAME}} on hyväksytty.
 
 Käyttäjätunnus: $1
 
@@ -1193,27 +1189,27 @@ Salasana: $2
 
 $3
 
-Salasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään s vulla {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3'      => 'Valitettavasti anomuksesi käyttäjätilistä "$1" sivulle {{SITENAME}} on hylätty.
+Salasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'      => 'Valitettavasti pyyntösi käyttäjätunnuksesta "$1" sivulle {{SITENAME}} on hylätty.
 
 Hylkäämisen mahdollisia syitä on useita.
-Lomaketta ei ehkä ole täytetty oikein, kuvaus ei ollut tarpeeksi pitkä tai joku muu toimintaperiaatteen ehdoista jäi saavuttamatta.
-Jos haluat tietää enemmän toimintaperiaatteista käyttäjätilien myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.',
-	'confirmaccount-email-body4'      => 'Valitettavasti anomuksesi käyttäjätilistä "$1" sivulle {{SITENAME}} on hylätty.
+Lomaketta ei ehkä ole täytetty oikein, kuvaus ei ollut tarpeeksi pitkä tai joku muu toimintaperiaatteen ehdoista jäi täyttämättä.
+Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnusten myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.',
+	'confirmaccount-email-body4'      => 'Valitettavasti pyyntösi käyttäjätunnuksesta "$1" sivulle {{SITENAME}} on hylätty.
 
 $2
 
-Jos haluat tietää enemmän toimintaperiaatteista käyttäjätilien myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.',
-	'confirmaccount-email-body5'      => 'Ennenkuin anomuksesi käyttäjätilistä "$1" sivulle {{SITENAME}} voidaan hyväksyä tarvitaan lisätietoja.
+Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnusten myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.',
+	'confirmaccount-email-body5'      => 'Ennenkuin pyytämäsi käyttäjätunnus "$1" sivulle {{SITENAME}} voidaan hyväksyä tarvitaan lisätietoja.
 
 $2
 
-Jos haluat tietää enemmän toimintaperiaatteista käyttäjätilien myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.',
+Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.',
 	'usercredentials'                 => 'Käyttäjän valtuudet',
 	'usercredentials-leg'             => 'Etsi käyttäjän vahvistetut valtuudet',
 	'usercredentials-user'            => 'Käyttäjätunnus',
-	'usercredentials-text'            => 'Valitun käyttäjätilin vahvistetut valtuudet ovat alla.',
-	'usercredentials-leg-user'        => 'Käyttäjätili',
+	'usercredentials-text'            => 'Valitun käyttäjätunnuksen vahvistetut valtuudet ovat alla.',
+	'usercredentials-leg-user'        => 'Käyttäjätunnus',
 	'usercredentials-leg-areas'       => 'Tärkeimmät kiinnostuksen kohteet',
 	'usercredentials-leg-person'      => 'Henkilötiedot',
 	'usercredentials-leg-other'       => 'Muut tiedot',
@@ -1225,7 +1221,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätilien myöntämis
 	'usercredentials-urls'            => 'Webbisivujen luettelo:',
 	'usercredentials-ip'              => 'Käyttäjän IP-osoite:',
 	'usercredentials-member'          => 'Oikeudet:',
-	'usercredentials-badid'           => 'Tämän käyttäjän valtuutuksia ei löytynyt. Tarkista nimen oikeikirjoitus.',
+	'usercredentials-badid'           => 'Tämän käyttäjän valtuutuksia ei löytynyt. Tarkista nimen oikeinkirjoitus.',
 );
 
 /** French (Français)
@@ -2338,6 +2334,8 @@ $messages['km'] = array(
 	'requestaccount-bio'         => 'ជីវប្រវត្តិ ផ្ទាល់ខ្លួន៖',
 	'requestaccount-attach'      => 'ប្រវត្តិរូប (ជំរើស) ៖',
 	'requestaccount-notes'       => 'សំគាល់បន្ថែម៖',
+	'requestaccount-agree'       => 'អ្នកត្រូវតែ បញ្ជាក់ថា ឈ្មោះពិត របស់អ្នក ត្រឹមត្រូវ និងថា អ្នកព្រមព្រៀង ចំពោះ លក្ខណ្ឌ ប្រើប្រាស់សេវា ។',
+	'requestaccount-tooshort'    => 'ជីវប្រវត្តិ របស់អ្នក ត្រូវតែ វែង យ៉ាងតិច $1 ពាក្យ ។',
 	'requestaccount-email-subj'  => 'ការបញ្ជាក់ទទួលស្គាល់ អាស័យដ្ឋានអ៊ីមែវល៍ {{SITENAME}}',
 	'confirmaccounts'            => 'បញ្ជាក់ទទួលស្គាល់ សំណើគណនី',
 	'confirmaccount-real-q'      => 'ឈ្មោះ',
@@ -4086,6 +4084,7 @@ $messages['te'] = array(
 	'confirmaccount-ip'               => 'ఐపీ చిరునామా:',
 	'confirmaccount-submit'           => 'నిర్ధారించు',
 	'confirmaccount-needreason'       => 'క్రిందనిచ్చిన వ్యాఖ్య పెట్టెలో తప్పనిసరిగా ఓ కారణం ఇవ్వాలి',
+	'confirmaccount-acc'              => 'ఖాతా అభ్యర్థనని విజయవంతంగా నిర్థారించారు; [[User:$1]] అనే కొత్త వాడుకరి ఖాతాని సృష్టించాం.',
 	'confirmaccount-rej'              => 'ఖాతా కోసం చేసిన అభ్యర్ధన తిరస్కరించబడినది',
 	'confirmaccount-wsum'             => 'స్వాగతం!',
 	'confirmaccount-email-subj'       => '{{SITENAME}} ఖాతా అభ్యర్థన',
