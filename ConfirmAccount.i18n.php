@@ -769,7 +769,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2".',
 	'acct_request_throttle_hit'       => 'Du hast bereits $1 Benutzerkonten beantragt, du kannst momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice'      => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[{{ns:special}}:RequestAccount|beantragen]]'''.",
-	'confirmaccount-newrequests'      => 'Es gibt aktuell \'\'\'$1\'\'\' {{PLURAL:$1|[[Special:ConfirmAccounts|offenen Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene Benutzerkontenanträge]]}}.',
+	'confirmaccount-newrequests'      => '\'\'\'$1\'\'\' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge]]}} warten auf Bearbeitung.',
 	'confirmaccounts'                 => 'Benutzerkonto-Anträge bestätigen',
 	'confirmedit-desc'                => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
 	'confirmaccount-maintext'         => '\'\'\'Diese Seite dient dazu, wartende Benutzerkontenanträge für \'\'{{SITENAME}}\'\'\'\'\' zu bearbeiten.
@@ -780,7 +780,7 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	Deine Aktionen werden nichtöffentlich protokolloert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.', 
 	'confirmaccount-list'             => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
 	Bestätigte Konten werden angelegt und aus der Liste entfernt. Abgelehnte Konten werden einfach aus der Liste gelöscht.',
-	'confirmaccount-list2'            => 'Unten ist eine Liste kürzlich abgelehnter Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind.
+	'confirmaccount-list2'            => 'Unten ist eine Liste kürzlich abgelehnter oder abgelaufener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind.
 Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden Administrator kontaktieren.',
 	'confirmaccount-text'             => "Dies ist ein Antrag auf ein Benutzerkonto bei '''{{SITENAME}}'''. Prüfe alle unten
 	stehenden Informationen gründlich und bestätige die Informationen wenn möglich. Bitte beachte, dass du den Zugang bei Bedarf unter
@@ -805,6 +805,7 @@ Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden
 	'confirmaccount-q-open'           => 'offene Anträge',
 	'confirmaccount-q-held'           => 'wartende Anträge',
 	'confirmaccount-q-rej'            => 'kürzlich abgelehnte Anträge',
+	'confirmaccount-q-stale'          => 'abgelaufene Anträge',
 	'confirmaccount-badid'            => 'Momentan gibt es keinen Benutzerantrag zur angegebenen ID. Möglicherweise wurde er bereits bearbeitet.',
 	'confirmaccount-leg-user'         => 'Benutzerkonto',
 	'confirmaccount-leg-areas'        => 'Hauptinteressensgebiete',
@@ -826,6 +827,7 @@ Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden
 	'confirmaccount-reject'           => '(abgelehnt durch [[User:$1|$1]] am $2)',
 	'confirmaccount-rational'         => 'Begründung für den Antragssteller:',
 	'confirmaccount-noreason'         => '(nichts)',
+	'confirmaccount-autorej'          => '(dieser Antrag wurde automatisch wegen Inaktivität gestrichen)',
 	'confirmaccount-held'             => '(markiert als „abwarten“ durch [[User:$1|$1]] am $2)',
 	'confirmaccount-create'           => 'Bestätigen (Konto anlegen)',
 	'confirmaccount-deny'             => 'Ablehnen (Antrag löschen)',
