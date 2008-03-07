@@ -73,7 +73,7 @@ The e-mail address has been confirmed. You can confirm the request here "$2".',
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
 	# Site message for admins
-	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open email-confirmed {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending.',
+	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open email-confirmed {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending',
 	
 	# Confirm account page
 	'confirmaccounts'         => 'Confirm account requests', 

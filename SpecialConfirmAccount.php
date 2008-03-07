@@ -150,27 +150,26 @@ function wfConfirmAccountsNotice( $notice ) {
 	global $wgMemc, $wgOut;
 	# Check cached results
 	$key = wfMemcKey( 'confirmaccount', 'notice' );
-	$message = $wgMemc->get( $key );
+	$count = $wgMemc->get( $key );
 	# Only show message if there are any such requests
-	if( !$message )  {
+	if( !$count )  {
 		$dbw = wfGetDB( DB_MASTER );
 		$count = $dbw->selectField( 'account_requests', 'COUNT(*)',
 			array( 'acr_deleted' => 0, 'acr_held IS NULL', 'acr_email_authenticated IS NOT NULL' ),
 			__METHOD__ );
-		if( $count ) {
-			wfLoadExtensionMessages( 'ConfirmAccount' );
-			$message = wfMsgExt( 'confirmaccount-newrequests', array('parsemag'), $count );
-		} else {
-			$message = '-';
+		# Use '-' for zero, to avoid any confusion over key existence
+		if( !$count ) {
+			$count = '-';
 		}
 		# Cache results
-		$wgMemc->set( $key, $message, 3600*24*7 );
+		$wgMemc->set( $key, $count, 3600*24*7 );
 	}
-	if( $message == '-' ) {
-		return true;
+	if( $count !== '-' ) {
+		wfLoadExtensionMessages( 'ConfirmAccount' );
+		$message = wfMsgExt( 'confirmaccount-newrequests', array('parsemag'), $count );
+	
+		$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse($message) . '</div>';
 	}
-	$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse($message) . '</div>';
-
 	return true;
 }
 
