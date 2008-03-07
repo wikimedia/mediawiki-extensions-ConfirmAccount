@@ -624,6 +624,10 @@ class RequestAccountPage extends SpecialPage {
 			array( 'acr_email_authenticated' => $dbw->timestamp() ),
 			array( 'acr_name' => $name ),
 			__METHOD__ );
+		# Clear cache for notice of how many account requests there are
+		global $wgMemc;
+		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
+		$wgMemc->delete( $key );
 	}
 	
 	/**
