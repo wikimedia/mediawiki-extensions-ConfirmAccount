@@ -73,7 +73,7 @@ The e-mail address has been confirmed. You can confirm the request here "$2".',
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
 	# Site message for admins
-	'confirmaccount-newrequests' => 'There {{PLURAL:$1|is|are}} currently \'\'\'$1\'\'\' open {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending.',
+	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open email-confirmed {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending.',
 	
 	# Confirm account page
 	'confirmaccounts'         => 'Confirm account requests', 
@@ -114,6 +114,7 @@ If you simply leave this page without confirming or denying this request, it wil
 	'confirmaccount-q-open'   => 'open requests',
 	'confirmaccount-q-held'   => 'held requests',
 	'confirmaccount-q-rej'    => 'recently rejected requests',
+	'confirmaccount-q-stale'  => 'expired requests',
 	
 	'confirmaccount-badid'    => 'There is no pending request corresponding to the given ID.
 It may have already been handled.',
@@ -137,6 +138,7 @@ It may have already been handled.',
 	'confirmaccount-reject'   => '(rejected by [[User:$1|$1]] on $2)',
 	'confirmaccount-rational' => 'Rationale given to applicant:',
 	'confirmaccount-noreason' => '(none)',
+	'confirmaccount-autorej'  => '(this request has automatically been discarded due to inactivity)',
 	'confirmaccount-held'     => '(marked "on hold" by [[User:$1|$1]] on $2)',
 	'confirmaccount-create'   => 'Accept (create account)',
 	'confirmaccount-deny'     => 'Reject (delist)',

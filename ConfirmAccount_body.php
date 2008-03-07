@@ -714,13 +714,16 @@ class ConfirmAccountsPage extends SpecialPage
 		$this->mUsername = trim( $wgRequest->getText( 'wpNewName' ) );
 		# Position sought
 		$this->mType = $wgRequest->getIntOrNull( 'wpType' );
-		$this->mType = ( !is_null($this->mType) && isset($wgAccountRequestTypes[$this->mType]) ) ? $this->mType : null;
+		$this->mType = ( !is_null($this->mType) && isset($wgAccountRequestTypes[$this->mType]) ) ? 
+			$this->mType : null;
 		# For removing private info or such from bios
 		$this->mBio = $wgRequest->getText( 'wpNewBio' );
-		# For viewing rejects
-		$this->showRejects = $wgRequest->getBool( 'wpShowRejects' );
 		# Held requests hidden by default
 		$this->showHeld = $wgRequest->getBool( 'wpShowHeld' );
+		# Show stale requests
+		$this->showStale = $wgRequest->getBool( 'wpShowStale' );
+		# For viewing rejected requests (stale requests count as rejected)
+		$this->showRejects = $this->showStale ? true : $wgRequest->getBool( 'wpShowRejects' );
 
 		$this->submitType = $wgRequest->getVal( 'wpSubmitType' );
 		$this->reason = $wgRequest->getText( 'wpReason' );
@@ -778,29 +781,31 @@ class ConfirmAccountsPage extends SpecialPage
 		foreach( $wgAccountRequestTypes as $i => $params ) {
 			$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$params[0]}" );
 		
-			$open = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-q-open' ),
-				wfArrayToCGI( array('wpShowHeld' => 0) ) );
+			$open = '<b>'.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-q-open' ),
+				wfArrayToCGI( array('wpShowHeld' => 0) ) ).'</b>';
 			$held = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-q-held' ),
 				wfArrayToCGI( array('wpShowHeld' => 1) ) );
-			$rejected = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-q-rej' ),
+			$rejects = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-q-rej' ),
 				wfArrayToCGI( array('wpShowRejects' => 1) ) );
+			$stale = '<i>'.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-q-stale' ),
+				wfArrayToCGI( array('wpShowStale' => 1) ) ).'</i>';;
 			
 			$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
 				array( 'acr_type' => $i, 'acr_deleted' => 0, 'acr_held IS NULL' ),
 				__METHOD__ );
-			$open = $open . " [$count]";
+			$open .= " [$count]";
 			
 			$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
-				array( 'acr_type' => $i, 'acr_held IS NOT NULL' ),
+				array( 'acr_type' => $i, 'acr_deleted' => 0, 'acr_held IS NOT NULL' ),
 				__METHOD__ );
-			$held = $held . " [$count]";
+			$held .= " [$count]";
 			
 			$count = $dbr->selectField( 'account_requests', 'COUNT(*)',
-				array( 'acr_type' => $i, 'acr_deleted' => 1 ),
+				array( 'acr_type' => $i, 'acr_deleted' => 1, 'acr_user != 0' ),
 				__METHOD__ );
-			$rejected = $rejected . " [$count]";
+			$rejects .= " [$count]";
 				
-			$wgOut->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> ($open | $held | $rejected)</li>" );
+			$wgOut->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> ($open | $held | $rejects | $stale)</li>" );
 		}
 		$wgOut->addHTML( '</ul>' );
 	}
@@ -832,11 +837,15 @@ class ConfirmAccountsPage extends SpecialPage
 		if( $row->acr_rejected ) {
 			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
 			$reason = $row->acr_comment ? $row->acr_comment : wfMsgHtml('confirmaccount-noreason');
-			
-			$wgOut->addHTML('<p><b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), 
-				User::whoIs($row->acr_user), $time ).'</b></p>');
-			$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-rational') . '</strong><i> ' . 
-				$reason . '</i></p>' );
+			# Auto-rejected requests have a user ID of zero
+			if( $row->acr_user ) {
+				$wgOut->addHTML('<p><b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), 
+					User::whoIs($row->acr_user), $time ).'</b></p>');
+				$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-rational') . '</strong><i> ' . 
+					$reason . '</i></p>' );
+			} else {
+				$wgOut->addHTML( '<p><i> ' . $reason . '</i></p>' );
+			}
 		} else if( $row->acr_held ) {
 			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
 			$reason = $row->acr_comment ? $row->acr_comment : wfMsgHtml('confirmaccount-noreason');
@@ -1035,7 +1044,7 @@ class ConfirmAccountsPage extends SpecialPage
 					'acr_user' => $wgUser->getID(),
 					'acr_comment' => ($this->submitType == 'spam') ? '' : $this->reason,
 					'acr_deleted' => 1 ), 
-				array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ), 
+				array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ),
 				__METHOD__ );
 			# Clear cache for notice of how many account requests there are
 			global $wgMemc;
@@ -1402,8 +1411,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
 		if( $this->showRejects ) {
 			$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back' ) );
-			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showheld' ),
-					wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) );
+			$listLink .= ' | ' . $this->skin->makeKnownLinkObj( $titleObj, 
+				wfMsgHtml( 'confirmaccount-showheld' ), wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) );
 		} else {
 			if( $this->showHeld ) {
 				$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back' ) );
@@ -1418,7 +1427,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$wgOut->addHTML( '(' . $listLink . ')<hr/>' );
 		
 		# Output the list
-		$pager = new ConfirmAccountsPager( $this, array(), $this->queueType, $this->showRejects, $this->showHeld );
+		$pager = new ConfirmAccountsPager( $this, array(), 
+			$this->queueType, $this->showRejects, $this->showHeld, $this->showStale );
 			
 		if ( $pager->getNumRows() ) {
 			if( $this->showRejects )
@@ -1429,54 +1439,74 @@ class ConfirmAccountsPage extends SpecialPage
 			$wgOut->addHTML( $pager->getBody() );
 			$wgOut->addHTML( $pager->getNavigationBar() );
 		} else {
-			if( $this->showRejects )
+			if( $this->showRejects ) {
 				$wgOut->addHTML( wfMsgExt('confirmaccount-none-r', array('parse')) );
-			else if( $this->showHeld )
+			} else if( $this->showHeld ) {
 				$wgOut->addHTML( wfMsgExt('confirmaccount-none-h', array('parse')) );
-			else
+			} else {
 				$wgOut->addHTML( wfMsgExt('confirmaccount-none-o', array('parse')) );
+			}
 		}
 		
-		# Every 100th view, prune old deleted items
+		# Every 50th view, prune old deleted items
 		wfSeedRandom();
-		if( 0 == mt_rand( 0, 99 ) ) {
-			global $wgRejectedAccountMaxAge;
-
-			$dbw = wfGetDB( DB_MASTER );
-			$transaction = new FSTransaction();
-			if( !FileStore::lock() ) {
-				wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
-				return;
-			}
-			# Select all items older than time $cutoff
-			$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
-			$accountrequests = $dbw->tableName( 'account_requests' );
-			$sql = "SELECT acr_storage_key,acr_id FROM $accountrequests WHERE acr_rejected < '{$cutoff}'";
-			$res = $dbw->query( $sql );
-
-			$store = FileStore::get( 'accountreqs' );
-			if( !$store ) {
-				wfDebug( __METHOD__.": invalid storage group '{$store}'.\n" );
-				return false;
-			}
-			# Clear out any associated attachments and delete those rows
-			while( $row = $dbw->fetchObject( $res ) ) {
-				$key = $row->acr_storage_key;
-				if( $key ) {
-					$path = $store->filePath( $key );
-					if( $path && file_exists($path) ) {
-						$transaction->addCommit( FSTransaction::DELETE_FILE, $path );
-					}
-				}
-				$dbw->query( "DELETE FROM $accountrequests WHERE acr_id = {$row->acr_id}" );
-			}
-			$transaction->commit();
-			
-			# Clear cache for notice of how many account requests there are
-			global $wgMemc;
-			$key = wfMemcKey( 'confirmaccount', 'notice' );
-			$wgMemc->delete( $key );
+		if( 0 == mt_rand( 0, 49 ) ) {
+			$this->runAutoMaintenance();
 		}
+	}
+	
+	/*
+	* Move old stale requests to rejected list. Delete old rejected requests.
+	*/
+	private function runAutoMaintenance() {
+		global $wgRejectedAccountMaxAge;
+
+		$dbw = wfGetDB( DB_MASTER );
+		$transaction = new FSTransaction();
+		if( !FileStore::lock() ) {
+			wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
+			return;
+		}
+		# Select all items older than time $cutoff
+		$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
+		$accountrequests = $dbw->tableName( 'account_requests' );
+		$sql = "SELECT acr_storage_key,acr_id FROM $accountrequests WHERE acr_rejected < '{$cutoff}'";
+		$res = $dbw->query( $sql );
+
+		$store = FileStore::get( 'accountreqs' );
+		if( !$store ) {
+			wfDebug( __METHOD__.": invalid storage group '{$store}'.\n" );
+			return false;
+		}
+		# Clear out any associated attachments and delete those rows
+		while( $row = $dbw->fetchObject( $res ) ) {
+			$key = $row->acr_storage_key;
+			if( $key ) {
+				$path = $store->filePath( $key );
+				if( $path && file_exists($path) ) {
+					$transaction->addCommit( FSTransaction::DELETE_FILE, $path );
+				}
+			}
+			$dbw->query( "DELETE FROM $accountrequests WHERE acr_id = {$row->acr_id}" );
+		}
+		$transaction->commit();
+			
+		# Select all items older than time $cutoff
+		global $wgConfirmAccountRejectAge;
+		$cutoff = $dbw->timestamp( time() - $wgConfirmAccountRejectAge );
+		# Old stale accounts will count as rejected. If the request was held, give it more time.
+		$dbw->update( 'account_requests',
+			array( 'acr_rejected' => $dbw->timestamp(),
+				'acr_user' => 0, // dummy
+				'acr_comment' => wfMsgForContent('confirmaccount-autorej'),
+				'acr_deleted' => 1 ), 
+			array( "acr_rejected IS NULL", "acr_registration < '{$cutoff}'", "acr_held < '{$cutoff}'" ),
+			__METHOD__ );
+			
+		# Clear cache for notice of how many account requests there are
+		global $wgMemc;
+		$key = wfMemcKey( 'confirmaccount', 'notice' );
+		$wgMemc->delete( $key );
 	}
 	
 	function formatRow( $row ) {
@@ -1495,21 +1525,20 @@ class ConfirmAccountsPage extends SpecialPage
 		$r = "<li class='mw-confirmaccount-time-{$this->queueType}'>";
 		
 		$r .= $time." (<strong>{$link}</strong>)";
-		
-		if( $this->showRejects ) {
+		# Auto-rejected accounts have a user ID of zero
+		if( $row->acr_rejected && $row->acr_user ) {
 			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
 			$r .= ' <b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name, $time ).'</b>';
-		} else if( $row->acr_held ) {
+		} else if( $row->acr_held && !$row->acr_rejected ) {
 			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
 			$r .= ' <b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'), User::whoIs($row->acr_user), $time ).'</b>';
-		} else {
-			global $wgMemc;
-			
-			$key = wfMemcKey( 'acctrequest', 'view', $row->acr_id );
-			$value = $wgMemc->get( $key );
-			if( $value ) {
-				$r .= ' <b>'.wfMsgExt( 'confirmaccount-viewing', array('parseinline'), User::whoIs($value) ).'</b>';
-			}
+		}
+		# Check if someone is viewing this request
+		global $wgMemc;
+		$key = wfMemcKey( 'acctrequest', 'view', $row->acr_id );
+		$value = $wgMemc->get( $key );
+		if( $value ) {
+			$r .= ' <b>'.wfMsgExt( 'confirmaccount-viewing', array('parseinline'), User::whoIs($value) ).'</b>';
 		}
 		
 		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' cellspacing='1' cellpadding='3' border='1' width=\'100%\'>";
@@ -1545,13 +1574,15 @@ class ConfirmAccountsPage extends SpecialPage
 class ConfirmAccountsPager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
 
-	function __construct( $form, $conds = array(), $type, $rejects=false, $showHeld=false ) {
+	function __construct( $form, $conds = array(), $type, $rejects=false, $showHeld=false, $showStale=false ) {
 		$this->mForm = $form;
 		$this->mConds = $conds;
 		
 		$this->mConds['acr_type'] = $type;
 		
-		if( $rejects ) {
+		$this->rejects = $rejects;
+		$this->stale = $showStale;
+		if( $rejects || $showStale ) {
 			$this->mConds['acr_deleted'] = 1;
 		} else {
 			$this->mConds['acr_deleted'] = 0;
@@ -1561,7 +1592,6 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 				$this->mConds[] = 'acr_held IS NULL';
 			  
 		}
-		$this->rejects = $rejects;
 		parent::__construct();
 		# Treat 20 as the default limit, since each entry takes up 5 rows.
 		$urlLimit = $this->mRequest->getInt( 'limit' );
@@ -1595,10 +1625,11 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 
 	function getQueryInfo() {
 		$conds = $this->mConds;
-		$tables = array('account_requests');
-		$fields = array('acr_id','acr_name','acr_real_name','acr_registration','acr_held','acr_user',
-			'acr_email','acr_email_authenticated','acr_bio','acr_notes','acr_urls','acr_type');
-		if( $this->rejects ) {
+		$tables = array( 'account_requests' );
+		$fields = array( 'acr_id','acr_name','acr_real_name','acr_registration','acr_held','acr_user',
+			'acr_email','acr_email_authenticated','acr_bio','acr_notes','acr_urls','acr_type','acr_rejected' );
+		# Stale requests have a user ID of zero
+		if( $this->rejects && !$this->stale ) {
 			$tables[] = 'user';
 			$conds[] = 'acr_user = user_id';
 			$fields[] = 'user_name';

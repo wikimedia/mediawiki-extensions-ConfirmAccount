@@ -12,7 +12,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'confirmedit-desc',
 	'author' => 'Aaron Schulz',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
-	'version' => '1.3',
+	'version' => '1.4',
 );
 
 # This extension needs email enabled!
@@ -30,13 +30,19 @@ $wgAutoUserBioText = '';
 $wgAutoWelcomeNewUsers = true;
 # Make the username of the real name?
 $wgUseRealNamesOnly = true;
+
+# How long to store rejected requests
 $wgRejectedAccountMaxAge = 7 * 24 * 3600; // One week
+# How long after accounts have been requested/held before they count as 'rejected'
+$wgConfirmAccountRejectAge = 30 * 24 * 3600; // 1 month
+
 # How many requests can an IP make at once?
 $wgAccountRequestThrottle = 1;
+# Can blocked users request accounts?
+$wgAccountRequestWhileBlocked = false;
+
 # Minimum biography specs
 $wgAccountRequestMinWords = 50;
-
-$wgAccountRequestWhileBlocked = false;
 
 # Show ToS checkbox
 $wgAccountRequestToS = true;
@@ -136,20 +142,21 @@ function efConfirmAccountInjectStyle() {
 }
 
 function wfConfirmAccountsNotice( $notice ) {
-	global $wgConfirmAccountNotice, $wgUser, $wgMemc, $wgOut;
+	global $wgConfirmAccountNotice, $wgUser;
 
 	if( !$wgConfirmAccountNotice || !$wgUser->isAllowed('confirmaccount') )
 		return true;
+		
+	global $wgMemc, $wgOut;
 	# Check cached results
 	$key = wfMemcKey( 'confirmaccount', 'notice' );
 	$message = $wgMemc->get( $key );
-	
+	# Only show message if there are any such requests
 	if( !$message )  {
 		$dbw = wfGetDB( DB_MASTER );
 		$count = $dbw->selectField( 'account_requests', 'COUNT(*)',
-			array( 'acr_deleted' => 0, 'acr_held IS NULL' ),
+			array( 'acr_deleted' => 0, 'acr_held IS NULL', 'acr_email_authenticated IS NOT NULL' ),
 			__METHOD__ );
-		
 		if( $count ) {
 			wfLoadExtensionMessages( 'ConfirmAccount' );
 			$message = wfMsgExt( 'confirmaccount-newrequests', array('parsemag'), $count );
@@ -159,9 +166,9 @@ function wfConfirmAccountsNotice( $notice ) {
 		# Cache results
 		$wgMemc->set( $key, $message, 3600*24*7 );
 	}
-	if( $message == '-' )
+	if( $message == '-' ) {
 		return true;
-	
+	}
 	$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse($message) . '</div>';
 
 	return true;
