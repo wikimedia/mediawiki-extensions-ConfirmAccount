@@ -1629,7 +1629,9 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		$fields = array( 'acr_id','acr_name','acr_real_name','acr_registration','acr_held','acr_user',
 			'acr_email','acr_email_authenticated','acr_bio','acr_notes','acr_urls','acr_type','acr_rejected' );
 		# Stale requests have a user ID of zero
-		if( $this->rejects && !$this->stale ) {
+		if( $this->stale ) {
+			$conds[] = 'acr_user = 0';
+		} else if( $this->rejects ) {
 			$tables[] = 'user';
 			$conds[] = 'acr_user = user_id';
 			$fields[] = 'user_name';
