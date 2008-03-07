@@ -149,7 +149,7 @@ function wfConfirmAccountsNotice( $notice ) {
 		
 	global $wgMemc, $wgOut;
 	# Check cached results
-	$key = wfMemcKey( 'confirmaccount', 'notice' );
+	$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 	$count = $wgMemc->get( $key );
 	# Only show message if there are any such requests
 	if( !$count )  {

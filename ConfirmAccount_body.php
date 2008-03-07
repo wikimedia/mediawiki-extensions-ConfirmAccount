@@ -393,7 +393,7 @@ class RequestAccountPage extends SpecialPage {
 		);
 		# Clear cache for notice of how many account requests there are
 		global $wgMemc;
-		$key = wfMemcKey( 'confirmaccount', 'notice' );
+		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 		$wgMemc->delete( $key );
 		# Send confirmation, required!
 		$result = $this->sendConfirmationMail( $u, $token, $expires );
@@ -1048,7 +1048,7 @@ class ConfirmAccountsPage extends SpecialPage
 				__METHOD__ );
 			# Clear cache for notice of how many account requests there are
 			global $wgMemc;
-			$key = wfMemcKey( 'confirmaccount', 'notice' );
+			$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 			$wgMemc->delete( $key );
 
 			$this->showSuccess( $this->submitType );
@@ -1193,7 +1193,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
 			# Clear cache for notice of how many account requests there are
 			global $wgMemc;
-			$key = wfMemcKey( 'confirmaccount', 'notice' );
+			$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 			$wgMemc->delete( $key );
 			# Delete any attached file. Do not stop the whole process if this fails
 			$key = $row->acr_storage_key;
@@ -1308,7 +1308,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$dbw->commit();
 			# Clear cache for notice of how many account requests there are
 			global $wgMemc;
-			$key = wfMemcKey( 'confirmaccount', 'notice' );
+			$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 			$wgMemc->delete( $key );
 			
 			$this->showSuccess( $this->submitType );
@@ -1505,7 +1505,7 @@ class ConfirmAccountsPage extends SpecialPage
 			
 		# Clear cache for notice of how many account requests there are
 		global $wgMemc;
-		$key = wfMemcKey( 'confirmaccount', 'notice' );
+		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 		$wgMemc->delete( $key );
 	}
 	
