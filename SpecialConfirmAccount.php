@@ -12,7 +12,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'confirmedit-desc',
 	'author' => 'Aaron Schulz',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
-	'version' => '1.44',
+	'version' => '1.45',
 );
 
 # This extension needs email enabled!

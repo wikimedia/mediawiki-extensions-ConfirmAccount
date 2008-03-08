@@ -733,7 +733,7 @@ class ConfirmAccountsPage extends SpecialPage
 		# Show stale requests
 		$this->showStale = $wgRequest->getBool( 'wpShowStale' );
 		# For viewing rejected requests (stale requests count as rejected)
-		$this->showRejects = $this->showStale ? true : $wgRequest->getBool( 'wpShowRejects' );
+		$this->showRejects = $wgRequest->getBool( 'wpShowRejects' );
 
 		$this->submitType = $wgRequest->getVal( 'wpSubmitType' );
 		$this->reason = $wgRequest->getText( 'wpReason' );
@@ -756,16 +756,44 @@ class ConfirmAccountsPage extends SpecialPage
 
 		$this->skin = $wgUser->getSkin();
 		
+		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
+		
+		# Show other sub-queue links. Grey out the current one...
+		if( $this->showStale || $this->showRejects || $this->showHeld ) {
+			$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showopen' ) );
+		} else {
+			$listLink = wfMsgHtml( 'confirmaccount-showopen' );
+		}
+		if( !$this->showHeld ) {
+			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, 
+				wfMsgHtml( 'confirmaccount-showheld' ), wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) );
+		} else {
+			$listLink .= ' | '.wfMsgHtml( 'confirmaccount-showheld' );
+		}
+		if( !$this->showRejects ) {
+			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showrej' ),
+				wfArrayToCGI( array( 'wpShowRejects' => 1 ) ) );
+		} else {
+			$listLink .= ' | '.wfMsgHtml( 'confirmaccount-showrej' );
+		}
+		if( !$this->showStale ) {
+			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showexp' ),
+				wfArrayToCGI( array( 'wpShowStale' => 1 ) ) );
+		} else {
+			$listLink .= ' | '.wfMsgHtml( 'confirmaccount-showexp' );
+		}
+		
 		# Say what queue we are in...
 		if( $this->queueType != -1 ) {
 			$titleObj = Title::makeTitle( NS_SPECIAL, 'ConfirmAccounts' );
 			$viewall = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml('confirmaccount-all') );
 		
 			$wgOut->setSubtitle( "<strong>" . wfMsgHtml('confirmaccount-type') . " <i>" .
-				wfMsgHtml("confirmaccount-type-{$this->queueType}") . "</i> {$viewall} </strong>" );
+				wfMsgHtml("confirmaccount-type-{$this->queueType}") . 
+				"</i></strong> [{$listLink}] <strong>{$viewall}</strong>" );
 		}
 
-		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
+		if( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
 			$this->doSubmit();
 		} else if( $this->file ) {
 			$this->showFile( $this->file );
@@ -824,10 +852,7 @@ class ConfirmAccountsPage extends SpecialPage
 		global $wgOut, $wgUser, $wgLang, $wgAccountRequestTypes;
 		
 		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
-		# Output failure message
-		if( $msg ) {
-			$wgOut->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
-		}
+		
 		$row = $this->getRequest();
 		if( !$row || $row->acr_rejected && !$this->showRejects ) {
 			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
@@ -835,13 +860,11 @@ class ConfirmAccountsPage extends SpecialPage
 			return;
 		}
 		
-		$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back' ) );
-		$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showheld' ),
-			wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) );
-		$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back2' ),
-			wfArrayToCGI( array('wpShowRejects' => 1 ) ) );
+		# Output any failure message
+		if( $msg ) {
+			$wgOut->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
+		}
 		
-		$wgOut->addHTML( '(' . $listLink . ')<hr/>' );
 		$wgOut->addWikiText( wfMsg( "confirmaccount-text" ) );
 		
 		if( $row->acr_rejected ) {
@@ -1419,28 +1442,12 @@ class ConfirmAccountsPage extends SpecialPage
 		global $wgOut, $wgUser, $wgLang;
 		
 		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
-		if( $this->showRejects ) {
-			$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back' ) );
-			$listLink .= ' | ' . $this->skin->makeKnownLinkObj( $titleObj, 
-				wfMsgHtml( 'confirmaccount-showheld' ), wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) );
-		} else {
-			if( $this->showHeld ) {
-				$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back' ) );
-			} else {
-				$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showheld' ),
-					wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) );
-			}
-			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-back2' ),
-				wfArrayToCGI( array( 'wpShowRejects' => 1 ) ) );
-		}
-		
-		$wgOut->addHTML( '(' . $listLink . ')<hr/>' );
 		
 		# Output the list
 		$pager = new ConfirmAccountsPager( $this, array(), 
 			$this->queueType, $this->showRejects, $this->showHeld, $this->showStale );
 			
-		if ( $pager->getNumRows() ) {
+		if( $pager->getNumRows() ) {
 			if( $this->showStale ) {
 				$wgOut->addHTML( wfMsgExt('confirmaccount-list3', array('parse') ) );
 			} else if( $this->showRejects ) {
@@ -1526,7 +1533,7 @@ class ConfirmAccountsPage extends SpecialPage
 		global $wgLang, $wgUser, $wgUseRealNamesOnly;
 
 		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
-		if( $this->showRejects ) {
+		if( $this->showRejects || $this->showStale ) {
 			$link = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml('confirmaccount-review'), 
 				'acrid='.$row->acr_id.'&wpShowRejects=1' );
 		} else {
@@ -1554,7 +1561,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$r .= ' <b>'.wfMsgExt( 'confirmaccount-viewing', array('parseinline'), User::whoIs($value) ).'</b>';
 		}
 		
-		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' cellspacing='1' cellpadding='3' border='1' width=\'100%\'>";
+		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' cellspacing='1' cellpadding='3' border='1' width='100%'>";
 		if( !$wgUseRealNamesOnly ) {
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 				htmlspecialchars($row->acr_name) . '</td></tr>';
