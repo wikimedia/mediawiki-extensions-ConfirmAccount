@@ -27,6 +27,10 @@ class RequestAccountPage extends SpecialPage {
 			$wgOut->readOnlyPage();
 			return;
 		}
+		if( !$wgUser->getID() ) {
+			$wgOut->permissionRequired( 'user' );
+			return;
+		}
 
 		$this->setHeaders();
 
@@ -1437,10 +1441,13 @@ class ConfirmAccountsPage extends SpecialPage
 			$this->queueType, $this->showRejects, $this->showHeld, $this->showStale );
 			
 		if ( $pager->getNumRows() ) {
-			if( $this->showRejects )
+			if( $this->showStale ) {
+				$wgOut->addHTML( wfMsgExt('confirmaccount-list3', array('parse') ) );
+			} else if( $this->showRejects ) {
 				$wgOut->addHTML( wfMsgExt('confirmaccount-list2', array('parse') ) );
-			else
+			} else {
 				$wgOut->addHTML( wfMsgExt('confirmaccount-list', array('parse') ) );
+			}
 			$wgOut->addHTML( $pager->getNavigationBar() );
 			$wgOut->addHTML( $pager->getBody() );
 			$wgOut->addHTML( $pager->getNavigationBar() );

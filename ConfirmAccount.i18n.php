@@ -85,10 +85,9 @@ hold by other administrators pending further information, and another for recent
 	
 When responding to a request, carefully review it and, if needed, confirm the information contain therein. 
 Your actions will be privately logged. You are also expected to review any activity that takes place here aside from what you do yourself.', 
-	'confirmaccount-list'     => 'Below is a list of account requests awaiting approval. 
-Approved accounts will be created and removed from this list. Rejected accounts will simply be deleted from this list.',
-	'confirmaccount-list2'    => 'Below is a list recently rejected or expired account requests which may automatically be deleted once several days old.
-They can still be approved into accounts, though you may want to first consult the rejecting admin before doing so.',
+	'confirmaccount-list'     => 'Below is a list of account requests awaiting approval. Approved accounts will be created and removed from this list. Rejected accounts will simply be deleted from this list.',
+	'confirmaccount-list2'    => 'Below is a list recently rejected account requests which may automatically be deleted once several days old. They can still be approved into accounts, though you may want to first consult the rejecting admin before doing so.',
+	'confirmaccount-list3'    => 'Below is a list expired account requests which may automatically be deleted once several days old. They can still be approved into accounts.',
 	'confirmaccount-text'     => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. 
 	
 Carefully review the below information. If you are approving this request, use the position dropdown to set the account status of the user.
