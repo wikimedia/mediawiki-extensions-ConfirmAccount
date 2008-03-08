@@ -27,10 +27,6 @@ class RequestAccountPage extends SpecialPage {
 			$wgOut->readOnlyPage();
 			return;
 		}
-		if( !$wgUser->getID() ) {
-			$wgOut->permissionRequired( 'user' );
-			return;
-		}
 
 		$this->setHeaders();
 
@@ -699,6 +695,10 @@ class ConfirmAccountsPage extends SpecialPage
         
 		if( !$wgUser->isAllowed( 'confirmaccount' ) ) {
 			$wgOut->permissionRequired( 'confirmaccount' );
+			return;
+		}
+		if( !$wgUser->getID() ) {
+			$wgOut->permissionRequired( 'user' );
 			return;
 		}
 		
