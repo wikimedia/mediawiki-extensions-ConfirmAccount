@@ -216,6 +216,7 @@ $messages['af'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author ترجمان05
  */
 $messages['ar'] = array(
 	'requestaccount'                  => 'طلب حساب',
@@ -313,6 +314,7 @@ $3
 	'confirmaccount-q-open'           => 'طلبات مفتوحة',
 	'confirmaccount-q-held'           => 'طلبات قيد الانتظار',
 	'confirmaccount-q-rej'            => 'طلبات مرفوضة حديثا',
+	'confirmaccount-q-stale'          => 'طلبات منتهية',
 	'confirmaccount-badid'            => 'لا يوجد طلب قيد الانتظار يوافق الرقم المعطى. ربما يكون قد تمت معالجته.',
 	'confirmaccount-leg-user'         => 'حساب المستخدم',
 	'confirmaccount-leg-areas'        => 'الاهتمامات الرئيسية',
@@ -334,6 +336,7 @@ $3
 	'confirmaccount-reject'           => '(تم رفضه بواسطته [[User:$1|$1]] في $2)',
 	'confirmaccount-rational'         => 'السبب المعطى للمتقدم:',
 	'confirmaccount-noreason'         => '(لا شيء)',
+	'confirmaccount-autorej'          => '(ألغي هذا الطلّب آليا بسبب الخمول)',
 	'confirmaccount-held'             => '(تم التعليم "قيد الانتظار" بواسطة [[User:$1|$1]] في $2)',
 	'confirmaccount-create'           => 'قبول (إنشاب الحساب)',
 	'confirmaccount-deny'             => 'رفض (إزالة من القائمة)',
@@ -1038,17 +1041,17 @@ $messages['ext'] = array(
 
 /** Finnish (Suomi)
  * @author Taleman
- * @author Cimon Avaro
  * @author Nike
+ * @author Cimon Avaro
  */
 $messages['fi'] = array(
 	'requestaccount'                  => 'Pyydä käyttäjätunnusta',
 	'requestaccount-text'             => "'''Pyydä käyttäjätunnusta täyttämällä ja lähettämällä alla oleva lomake'''.
 
-Muista ennen käyttäjätunnuksen pyytämistä lukea [[{{MediaWiki:Requestaccount-page}}|Käyttöehdot]].
+Muista ennen käyttäjätunnuksen pyytämistä lukea [[{{MediaWiki:Requestaccount-page}}|käyttöehdot]].
 
-Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sitä voi käyttää osoitteessa [[Special:Userlogin]].",
-	'requestaccount-page'             => '{{ns:project}}:Terms of Service',
+Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sillä voi [[Special:Userlogin|kirjautua sisään]].",
+	'requestaccount-page'             => '{{ns:project}}:Käyttöehdot',
 	'requestaccount-dup'              => "'''Huomio: Olet jo kirjautuneena rekisteröidyllä käyttäjätunnuksella.'''",
 	'requestaccount-leg-user'         => 'Käyttäjätunnus',
 	'requestaccount-leg-areas'        => 'Tärkeimmät kiinnostuksen kohteet',
@@ -1060,7 +1063,7 @@ Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sitä voi käytt�
 Haluat ehkä antaa tunnistamista helpottavia yhteystietoja, puhelinnumeron esimerkiksi.',
 	'requestaccount-bio-text'         => 'Kuvauksestasi tulee käyttäjäsivusi oletussisältö.
 Kirjoita omiin tietoihisi erikoisosaamisistasi ja pätevyyksistäsi. Muista, että nämä tiedot julkaistaan.
-Voit muuttaa nimeäsi sivulla [[Special:Preferences]].',
+Voit muuttaa nimeäsi [[Special:Preferences|asetussivulla]].',
 	'requestaccount-real'             => 'Oikea nimi:',
 	'requestaccount-same'             => '(sama kuin oikea nimi)',
 	'requestaccount-email'            => 'Sähköpostiosoite:',
@@ -1078,8 +1081,8 @@ Voit muuttaa nimeäsi sivulla [[Special:Preferences]].',
 	'requestaccount-exts'             => 'Liitetiedosto ei ole sallittua tyyppiä.',
 	'requestaccount-resub'            => 'Tietoturvasyistä antamasi ansioluettelo/CV-tiedosto on valittava uudestaan.
 Jätä kenttä tyhjäksi, jos et enää halua liittää tiedostoa.',
-	'requestaccount-tos'              => 'Olen lukenut ja hyväksyn sivuston {{SITENAME}} [[{{MediaWiki:Requestaccount-page}}|käyttöehdot]].
-Kohdasssa "Oikea nimi" olen antanut oman virallisen nimeni.',
+	'requestaccount-tos'              => "Olen lukenut ja hyväksyn {{GRAMMAR:genitive|{{SITENAME}}}} [[{{MediaWiki:Requestaccount-page}}|käyttöehdot]].
+Kohdasssa ''Oikea nimi'' olen antanut oman virallisen nimeni.",
 	'requestaccount-submit'           => 'Pyydä käyttäjätunnusta',
 	'requestaccount-sent'             => 'Käyttäjätunnuspyyntösi on lähetetty onnistuneesti ja odottaa nyt käsittelyä.',
 	'request-account-econf'           => 'Sähköpostiosoitteesi on tarkistettu ja merkitään tarkistetuksi käyttäjätunnuspyyntöösi.',
@@ -1111,7 +1114,7 @@ Toimenpiteesi kirjoitetaan yksityiseen lokiin. Tarkoitus on valvoa kaikkia tää
 toimia omien puuhiesi lisäksi.",
 	'confirmaccount-list'             => 'Alla on luettelo hyväksymistä odottavista pyynnöistä.
 Hyväksytyt käyttäjätunnukset luodaan ja poistetaan luettelosta. Hylätyt pyynnöt vain poistetaan luettelosta.',
-	'confirmaccount-list2'            => 'Alla on luettelo hiljattain hylätyistä pyynnöistä jotka voidaan poistaa automaattisesti, kun ne ovat useiden päivien ikäisiä.\\n
+	'confirmaccount-list2'            => 'Alla on luettelo hiljattain hylätyistä pyynnöistä jotka voidaan poistaa automaattisesti, kun ne ovat useiden päivien ikäisiä.
 Ne voidaan vieläkin hyväksyä käyttäjätunnuksiksi, mutta neuvottelethan ensin hylkäyksen tehneen ylläpitäjän kanssa.',
 	'confirmaccount-text'             => "Tämä on käsittelyä odottava käyttäjätunnuspyyntö sivustolle '''{{SITENAME}}'''.
 
@@ -1323,6 +1326,7 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-q-open'           => 'demandes faites',
 	'confirmaccount-q-held'           => 'demandes mises en attente',
 	'confirmaccount-q-rej'            => 'demandes rejetées récemment',
+	'confirmaccount-q-stale'          => 'Requêtes expirées',
 	'confirmaccount-badid'            => 'Il n’y a aucune demande en cours correspondant à l’ID indiqué. Il est possible qu‘il ait subi une maintenance.',
 	'confirmaccount-leg-user'         => 'Compte utilisateur',
 	'confirmaccount-leg-areas'        => "Centres d'intérêts principaux",
@@ -1344,6 +1348,7 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-reject'           => '(rejeté par [[User:$1|$1]] le $2)',
 	'confirmaccount-rational'         => 'Motif donné au candidat',
 	'confirmaccount-noreason'         => '(néant)',
+	'confirmaccount-autorej'          => '(Cette requête a été abandonnée automatiquement pour cause d’absence d’activité)',
 	'confirmaccount-held'             => 'Marqué « réservé » par [[User:$1|$1]] sur $2',
 	'confirmaccount-create'           => 'Approbation (crée le compte)',
 	'confirmaccount-deny'             => 'Rejet (supprime le compte)',
@@ -2551,8 +2556,10 @@ $3
 Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de link dan *niet*. 
 Deze bevestigingse-mail verloop op $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} accountverzoeken',
-	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging. Het e-mailadres is bevestigd. U kan het verzoek hier "$2" bevestigen.',
-	'acct_request_throttle_hit'       => 'Sorry, maar u heeft al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
+	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
+Het e-mailadres is bevestigd.
+U kunt het verzoek hier "$2" bevestigen.',
+	'acct_request_throttle_hit'       => 'Sorry, maar u hebt al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
 	'requestaccount-loginnotice'      => "Om een gebruiker te krijgen, moet u '''[[Special:RequestAccount|een verzoek doen]]'''.",
 	'confirmaccount-newrequests'      => "Op dit moment {{PLURAL:$1|staat|staan}} er '''$1''' 
 {{PLURAL:$1|[[Special:ConfirmAccounts|gebruikersverzoek]]|[[Special:ConfirmAccounts|gebruikersverzoeken]]}} open.",
@@ -2569,6 +2576,8 @@ Wanneer gereageerd wordt op een verzoek, kijk het grondig na en bevestig indien 
 	'confirmaccount-list2'            => 'Hieronder staan recentelijk afgewezen gebruikersverzoeken die die over een aantal dagen
 	automatisch worden verwijderd. Ze kunnen nog steeds goedgekeurd worden, hoewel het verstandig is voorafgaand contact te
 	zoeken met de beheerder die het verzoek heeft afgewezen.',
+	'confirmaccount-list3'            => 'Hieronder staat een lijst met verlopen gebruikersaanvragen die mogelijk automatisch worden verwijderd als ze een aantal dagen oud zijn.
+Ze kunnen nog steeds verwerkt worden.',
 	'confirmaccount-text'             => "Dit is een openstaand gebruikersverzoek voor '''{{SITENAME}}'''. Beoordeel het
 	alstublieft zorgvuldig en bevestig, als nodig, alle onderstaande informatie. U kunt een gebruiker aanmaken met een andere
 	naam. Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
@@ -2592,6 +2601,7 @@ Wanneer gereageerd wordt op een verzoek, kijk het grondig na en bevestig indien 
 	'confirmaccount-q-open'           => 'open verzoeken',
 	'confirmaccount-q-held'           => 'afgehandelde verzoeken',
 	'confirmaccount-q-rej'            => 'recent afgewezen verzoeken',
+	'confirmaccount-q-stale'          => 'verlopen resultaten',
 	'confirmaccount-badid'            => 'Er is geen openstaand gebruikersverzoeken voor het opgegeven ID. Wellicht is het al afgehandeld.',
 	'confirmaccount-leg-user'         => 'Gebruiker',
 	'confirmaccount-leg-areas'        => 'Interessegebieden',
@@ -2613,6 +2623,7 @@ Wanneer gereageerd wordt op een verzoek, kijk het grondig na en bevestig indien 
 	'confirmaccount-reject'           => '(afgewezen door [[User:$1|$1]] op $2)',
 	'confirmaccount-rational'         => 'Aan de aanvrager opgegeven reden:',
 	'confirmaccount-noreason'         => '(geen)',
+	'confirmaccount-autorej'          => '(dit verzoek is automatisch afgebroken wegens inactiviteit)',
 	'confirmaccount-held'             => '(als "uitgesteld" aangemerkt door [[User:$1|$1]] op $2)',
 	'confirmaccount-create'           => 'Toelaten (gebruiker aanmaken)',
 	'confirmaccount-deny'             => 'Afwijzen (verwijderen)',
@@ -2652,9 +2663,9 @@ Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wij
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3'      => 'Sorry, uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
 
-Dit kan meerdere oorzaken hebben. Mogelijk heeft u het formulier niet volledig ingevuld, waren uw antwoorden 
-onvoldoende compleet, of heeft u om een andere reden niet voldaan aan de eisen. Op de site staan mogelijk 
-lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
+Dit kan meerdere oorzaken hebben.
+Mogelijk hebt u het formulier niet volledig ingevuld, waren uw antwoorden onvoldoende compleet, of hebt u om een andere reden niet voldaan aan de eisen.
+Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
 	'confirmaccount-email-body4'      => 'Sorry, uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
 
 $2
@@ -2664,7 +2675,7 @@ Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over
 
 $2
 
-Er kunnen contacteerlijsten zijn die u kan gebruiken als u meer wil te weten komen over het beleid ten aanzien van gebruikers.',
+Er kunnen contacteerlijsten zijn die u kunt gebruiken als u meer wil te weten komen over het beleid ten aanzien van gebruikers.',
 	'usercredentials'                 => 'Referenties van gebruiker',
 	'usercredentials-leg'             => 'Bevestigde referenties voor gebruiker',
 	'usercredentials-user'            => 'Gebruikersnaam:',
@@ -3164,6 +3175,7 @@ $3
 
 /** Portuguese (Português)
  * @author Malafaya
+ * @author Lijealso
  */
 $messages['pt'] = array(
 	'requestaccount'                  => 'Requerer conta',
@@ -3259,6 +3271,7 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-q-open'           => 'pedidos em aberto',
 	'confirmaccount-q-held'           => 'pedidos em espera',
 	'confirmaccount-q-rej'            => 'pedidos recentemente rejeitados',
+	'confirmaccount-q-stale'          => 'pedidos expirados',
 	'confirmaccount-badid'            => 'Não existe nenhum pedido pendente correspondente ao identificador fornecido. Aquele pode já ter sido tratado.',
 	'confirmaccount-leg-user'         => 'Conta de utilizador',
 	'confirmaccount-leg-areas'        => 'Principais áreas de interesse',
@@ -3280,6 +3293,7 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-reject'           => '(rejeitado por [[{{ns:user}}:$1|$1]] em $2)',
 	'confirmaccount-rational'         => 'Explicação dada ao requerente:',
 	'confirmaccount-noreason'         => '(nenhum)',
+	'confirmaccount-autorej'          => '(este pedido foi automaticamente descartado devido a inactividade)',
 	'confirmaccount-held'             => '(marcado como "em espera" por [[{{ns:user}}:$1|$1]] em $2)',
 	'confirmaccount-create'           => 'Aceitar (criar conta)',
 	'confirmaccount-deny'             => 'Rejeitar (retirar da lista)',
@@ -3901,7 +3915,7 @@ E-postadressen har bekräftats. Du kan godkänna ansökan på
 $2',
 	'acct_request_throttle_hit'       => 'Du har redan ansökt om $1 konton. Du kan inte göra fler ansökningar.',
 	'requestaccount-loginnotice'      => "För att få ett användarkonto måste du '''[[Special:RequestAccount|ansöka om det]]'''.",
-	'confirmaccount-newrequests'      => "Just nu  väntar '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|kontoansökning|kontoansökningar}}]] på att behandlas.",
+	'confirmaccount-newrequests'      => "Just nu väntar '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|kontoansökning|kontoansökningar}}]] med bekräftad e-postadress på att behandlas.",
 	'confirmaccounts'                 => 'Behandla kontoansökningar',
 	'confirmedit-desc'                => 'Gör att nya användare måste ansöka om ett konto och bekräftas av byråkrater',
 	'confirmaccount-maintext'         => "'''Den här sidan används för att verifiera kontoansökningar på ''{{SITENAME}}'''''.
@@ -3912,7 +3926,7 @@ Granska noggrant ansökningar du svarar på, och verifiera informationen om det 
 De åtgärder du utför här skrivs in i en privat logg. Du förväntas även kontrollera hur andra användare hanterar ansökningar.",
 	'confirmaccount-list'             => 'Härunder finns en lista över kontoansökningar som väntar på att godkännas.
 När konton som godkänns skapas och tas bort från listan. Kontoansökningar som avslås tas bara bort från listan.',
-	'confirmaccount-list2'            => 'Härunder finns en lista över kontoansökningar som avslagits. De kommer automatiskt att raderas efter ett visst antal dagar.
+	'confirmaccount-list2'            => 'Härunder finns en lista över kontoansökningar som nyligen avslagits eller gått ut. De kommer automatiskt att raderas efter ett visst antal dagar.
 Du kan fortfarande godkänna ansökningarna, men i så fall bör du först diskutera det med den administratör som avslog ansökningen.',
 	'confirmaccount-text'             => "Det här är en ansökan om ett konto på '''{{SITENAME}}'''.
 
@@ -3939,6 +3953,7 @@ Om du lämnar den här sidan utan att godkänna eller avslå ansökan, så komme
 	'confirmaccount-q-open'           => 'obehandlade ansökningar',
 	'confirmaccount-q-held'           => 'avvaktande ansökningar',
 	'confirmaccount-q-rej'            => 'nyligen avslagna ansökningar',
+	'confirmaccount-q-stale'          => 'utgångna ansökningar',
 	'confirmaccount-badid'            => 'Det finns ingen ansökan med det ID som angavs.
 Ansökan kanske redan har behandlats.',
 	'confirmaccount-leg-user'         => 'Användarkonto',
@@ -3961,6 +3976,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-reject'           => '(avslogs av [[User:$1|$1]] den $2)',
 	'confirmaccount-rational'         => 'Motivering som gavs till den sökande:',
 	'confirmaccount-noreason'         => '(ingen)',
+	'confirmaccount-autorej'          => '(den här ansökningen har kasserats automatiskt på grund av inaktvitet)',
 	'confirmaccount-held'             => '(markerad som "avvaktande" av [[User:$1|$1]] den $2)',
 	'confirmaccount-create'           => 'Godkänn (skapa konto)',
 	'confirmaccount-deny'             => 'Avslå (stryk från listan)',
@@ -4052,6 +4068,8 @@ $messages['te'] = array(
 	'requestaccount-urls'             => 'వెబ్&zwnj;సైట్ల జాబితా, ఉంటే గనక (లైనుకి ఒకటి చొప్పున):',
 	'requestaccount-agree'            => 'మీ నిజమైన పేరు సరియేనని మరియు మా సేవా నియమాలని మీరు అంగీకరిస్తున్నారని దృవపరచాలి.',
 	'requestaccount-inuse'            => 'వాడుకరిపేరు ఈసరికే వేచివున్న ఖాతా అభ్యర్థనలలో ఉంది.',
+	'requestaccount-tooshort'         => 'మీ బయోగ్రఫీ తప్పనిసరిగా కనీసం $1 పదాల పొడవు ఉండాలి.',
+	'requestaccount-emaildup'         => 'మరో వేచివున్న ఖాతా అభ్యర్థన ఇదే ఈ-మెయిల్ చిరునామాని వాడుతుంది.',
 	'requestaccount-submit'           => 'ఖాతాని అభ్యర్థించండి',
 	'requestaccount-sent'             => 'ఈ ఖాతా అభ్యర్థనని విజయవంతంగా పంపించాం. అది సమీక్షకై వేచివుంది.',
 	'request-account-econf'           => 'మీ ఈ-మెయిల్ చిరునామా నిర్థారితమయ్యింది మరియు మీ ఖాతా అభ్యర్థనలో అలానే నమోదవుతుంది.',
@@ -4062,9 +4080,13 @@ $messages['te'] = array(
 	'confirmaccount-newrequests'      => "ప్రస్తుతం '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థన]]|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థనలు]]}} వేచి{{PLURAL:$1|వుంది|వున్నాయి}}.",
 	'confirmaccounts'                 => 'ఖాతా అభ్యర్థనలను నిర్ధారించండి',
 	'confirmedit-desc'                => 'అధికారులకు ఖాతా అభ్యర్థనలను నిర్ధారించే వీలుకల్పిస్తుంది',
+	'confirmaccount-none-r'           => 'ప్రస్తుతం ఈ జాబితాలో ఇటీవల తిరస్కరించిన ఖాతా అభ్యర్థనలు ఏమీలేవు.',
 	'confirmaccount-real-q'           => 'పేరు',
 	'confirmaccount-email-q'          => 'ఈ-మెయిల్',
+	'confirmaccount-bio-q'            => 'బయోగ్రఫీ',
 	'confirmaccount-review'           => 'సమీక్ష',
+	'confirmaccount-type-0'           => 'కాబోయే రచయితలు',
+	'confirmaccount-type-1'           => 'కాబోయే సంపాదకులు',
 	'confirmaccount-q-rej'            => 'ఇటీవల తిరస్కరించిన అభ్యర్థనలు',
 	'confirmaccount-leg-user'         => 'వాడుకరి ఖాతా',
 	'confirmaccount-leg-areas'        => 'ప్రధాన ఆసక్తులు',
@@ -4075,20 +4097,28 @@ $messages['te'] = array(
 	'confirmaccount-email'            => 'ఈ-మెయిల్:',
 	'confirmaccount-reqtype'          => 'స్థానం:',
 	'confirmaccount-pos-0'            => 'రచయిత',
+	'confirmaccount-bio'              => 'బయోగ్రఫీ:',
 	'confirmaccount-notes'            => 'అదనపు గమనికలు:',
 	'confirmaccount-urls'             => 'వెబ్ సైట్ల జాబితా:',
 	'confirmaccount-none-p'           => '(ఇవ్వలేదు)',
+	'confirmaccount-confirm'          => 'ఈ అభ్యర్థనను అంగీకరించడానికి, తిరస్కరించడానికి, లేదా ఆపివుంచడానికి ఈ క్రింది ఎంపికలు వాడండి:',
 	'confirmaccount-econf'            => '(ధృవీకరించబడినది)',
 	'confirmaccount-reject'           => '($2 నాడు [[User:$1|$1]] తిరస్కరించారు)',
 	'confirmaccount-rational'         => 'అభ్యర్థికి తెలుపాల్సిన కారణం:',
 	'confirmaccount-noreason'         => '(ఏమీలేదు)',
+	'confirmaccount-held'             => '($2 నాడు [[User:$1|$1]] "ఆపివుంచు" అని గుర్తించారు)',
 	'confirmaccount-create'           => 'అంగీకరించు (ఖాతా సృష్టించు)',
+	'confirmaccount-deny'             => 'తిరస్కరించు (జాబితానుండి తీసివేయి)',
+	'confirmaccount-hold'             => 'ఆపివుంచు',
 	'confirmaccount-reason'           => 'వ్యాఖ్య (ఈ-మెయిల్&zwnj;లో చేర్చుతాం):',
 	'confirmaccount-ip'               => 'ఐపీ చిరునామా:',
 	'confirmaccount-submit'           => 'నిర్ధారించు',
 	'confirmaccount-needreason'       => 'క్రిందనిచ్చిన వ్యాఖ్య పెట్టెలో తప్పనిసరిగా ఓ కారణం ఇవ్వాలి',
+	'confirmaccount-canthold'         => 'ఈ అభ్యర్థనని ఈపాటికే ఆపివుంచారు లేదా తొలగించారు.',
 	'confirmaccount-acc'              => 'ఖాతా అభ్యర్థనని విజయవంతంగా నిర్థారించారు; [[User:$1]] అనే కొత్త వాడుకరి ఖాతాని సృష్టించాం.',
 	'confirmaccount-rej'              => 'ఖాతా కోసం చేసిన అభ్యర్ధన తిరస్కరించబడినది',
+	'confirmaccount-viewing'          => '(ప్రస్తుతం [[User:$1|$1]] చూస్తున్నారు)',
+	'confirmaccount-summary'          => 'కొత్త వాడుకరి యొక్క బయోగ్రఫీతో వాడుకరి పేజీ సృష్టిస్తున్నాం',
 	'confirmaccount-wsum'             => 'స్వాగతం!',
 	'confirmaccount-email-subj'       => '{{SITENAME}} ఖాతా అభ్యర్థన',
 	'confirmaccount-email-body'       => '{{SITENAME}}లో ఖాతా కొరకు మీ అభ్యర్థనని సమ్మతించాము.
@@ -4114,6 +4144,8 @@ $3
 	'usercredentials-leg-other'       => 'ఇతర సమాచారం',
 	'usercredentials-email'           => 'ఈ-మెయిల్:',
 	'usercredentials-real'            => 'నిజమైన పేరు:',
+	'usercredentials-bio'             => 'బయోగ్రఫీ:',
+	'usercredentials-attach'          => 'రెస్యూమె/CV:',
 	'usercredentials-notes'           => 'అదనపు గమనికలు:',
 	'usercredentials-urls'            => 'వెబ్&zwnj;సైట్ల జాబితా:',
 	'usercredentials-ip'              => 'అసలు IP చిరునామా:',
