@@ -1636,6 +1636,7 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		if( $this->stale ) {
 			$conds[] = 'acr_user = 0';
 		} else if( $this->rejects ) {
+			$conds[] = 'acr_user != 0';
 			$tables[] = 'user';
 			$conds[] = 'acr_user = user_id';
 			$fields[] = 'user_name';
