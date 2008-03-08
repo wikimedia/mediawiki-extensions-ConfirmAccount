@@ -671,7 +671,9 @@ class RequestAccountPage extends SpecialPage {
 	 * @private
 	 */
 	function getConfirmationToken( $user, &$expiration ) {
-		$expires = time() + 7 * 24 * 60 * 60;
+		global $wgConfirmAccountRejectAge;
+		
+		$expires = time() + $wgConfirmAccountRejectAge;
 		$expiration = wfTimestamp( TS_MW, $expires );
 
 		$token = $user->generateToken( $user->getName() . $user->getEmail() . $expires );
