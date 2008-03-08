@@ -1461,6 +1461,8 @@ class ConfirmAccountsPage extends SpecialPage
 		} else {
 			if( $this->showRejects ) {
 				$wgOut->addHTML( wfMsgExt('confirmaccount-none-r', array('parse')) );
+			} else if( $this->showStale ) {
+				$wgOut->addHTML( wfMsgExt('confirmaccount-none-e', array('parse')) );
 			} else if( $this->showHeld ) {
 				$wgOut->addHTML( wfMsgExt('confirmaccount-none-h', array('parse')) );
 			} else {

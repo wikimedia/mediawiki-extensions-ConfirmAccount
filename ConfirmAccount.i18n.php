@@ -98,6 +98,7 @@ If you simply leave this page without confirming or denying this request, it wil
 	'confirmaccount-none-o'   => 'There are currently no open pending account requests in this list.',
 	'confirmaccount-none-h'   => 'There are currently no held pending account requests in this list.',
 	'confirmaccount-none-r'   => 'There are currently no recently rejected account requests in this list.',
+	'confirmaccount-none-e'   => 'There are currently no expired account requests in this list.',
 	'confirmaccount-real-q'   => 'Name',
 	'confirmaccount-email-q'  => 'Email',
 	'confirmaccount-bio-q'    => 'Biography',
