@@ -777,15 +777,15 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	'confirmaccounts'                 => 'Benutzerkonto-Anträge bestätigen',
 	'confirmedit-desc'                => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
 	'confirmaccount-maintext'         => '\'\'\'Diese Seite dient dazu, wartende Benutzerkontenanträge für \'\'{{SITENAME}}\'\'\'\'\' zu bearbeiten.
-	
+
 	Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
 
 	Wenn du auf einen Antrag antwortest, überprüfe die Informationen sorgfältig und bestätige die enthaltenen Informationen.
 	Deine Aktionen werden nichtöffentlich protokolloert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.', 
 	'confirmaccount-list'             => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
-	Bestätigte Konten werden angelegt und aus der Liste entfernt. Abgelehnte Konten werden einfach aus der Liste gelöscht.',
-	'confirmaccount-list2'            => 'Unten ist eine Liste kürzlich abgelehnter oder abgelaufener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind.
-Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden Administrator kontaktieren.',
+	Sobald ein Antrag bestätigt oder zurückgewiesen wurde, wird er aus der Liste entfernt.',
+	'confirmaccount-list2'            => 'Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden Administrator kontaktieren.',
+	'confirmaccount-list3'            => 'Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden.',
 	'confirmaccount-text'             => "Dies ist ein Antrag auf ein Benutzerkonto bei '''{{SITENAME}}'''. Prüfe alle unten
 	stehenden Informationen gründlich und bestätige die Informationen wenn möglich. Bitte beachte, dass du den Zugang bei Bedarf unter
 	einem anderen Benutzernamen anlegen kannst. Du solltest dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.
@@ -794,16 +794,18 @@ Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden
 	'confirmaccount-none-o'           => 'Momentan gibt es keine offenen Benutzeranträge auf dieser Liste.',
 	'confirmaccount-none-h'           => 'Momentan gibt es keine Anträge im „abwarten“-Status auf dieser Liste.',
 	'confirmaccount-none-r'           => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge auf dieser Liste.',
+	'confirmaccount-none-e'           => 'Momentan gibt es keine abgelaufenen Benutzeranträge auf dieser Liste.',
 	'confirmaccount-real-q'           => 'Name',
 	'confirmaccount-email-q'          => 'E-Mail',
 	'confirmaccount-bio-q'            => 'Biographie',
-	'confirmaccount-back'             => 'Liste der offenen Anträge ansehen',
-	'confirmaccount-back2'            => 'Liste der kürzlich abgelehnten Anträge ansehen',
-	'confirmaccount-showheld'         => 'Liste der Anträge auf „abwarten“-Status anzeigen',
+	'confirmaccount-showopen'         => 'offene Anträge',
+	'confirmaccount-showrej'          => 'zurückgewiesene Anträge',
+	'confirmaccount-showheld'         => 'Anträge im „abwarten“-Status',
+	'confirmaccount-showexp'          => 'abgelaufene Anträge',
 	'confirmaccount-review'           => 'Bestätigen/Ablehnen',
 	'confirmaccount-types'            => 'Wähle eine Benutzerkontenbestätigungswarteschlange aus den unten stehenden aus:',
 	'confirmaccount-all'              => '(zeige alle Warteschlangen)',
-	'confirmaccount-type'             => 'Ausgewählte Warteschlange:',
+	'confirmaccount-type'             => 'Warteschlange:',
 	'confirmaccount-type-0'           => 'zukünftige Autoren',
 	'confirmaccount-type-1'           => 'zukünftige Bearbeiter',
 	'confirmaccount-q-open'           => 'offene Anträge',
