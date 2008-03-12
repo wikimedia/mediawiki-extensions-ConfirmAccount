@@ -974,12 +974,14 @@ $messages['eo'] = array(
 	'requestaccount-leg-user'    => 'Konto de uzanto',
 	'requestaccount-leg-person'  => 'Persona informo',
 	'requestaccount-leg-other'   => 'Alia informo',
+	'requestaccount-real'        => 'Reala nomo:',
 	'requestaccount-same'        => '(sama kiel reala nomo)',
 	'requestaccount-email'       => 'Retpoŝta adreso:',
 	'requestaccount-level-0'     => 'aŭtoro',
 	'requestaccount-level-1'     => 'Redaktanto',
 	'requestaccount-bio'         => 'Persona biografio:',
 	'requestaccount-notes'       => 'Pluaj notoj:',
+	'requestaccount-tooshort'    => 'Via biografio estu almenaŭ $1 vortoj.',
 	'confirmaccount-real-q'      => 'Nomo',
 	'confirmaccount-email-q'     => 'Retpoŝto',
 	'confirmaccount-bio-q'       => 'Biografio',
@@ -1020,6 +1022,9 @@ Pasvorto: $2
 $3
 
 Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:Userlogin}}.',
+	'usercredentials-email'      => 'Retpoŝto:',
+	'usercredentials-bio'        => 'Biografio:',
+	'usercredentials-member'     => 'Rajtoj:',
 );
 
 /** Spanish (Español)
@@ -1239,6 +1244,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  * @author Dereckson
  * @author Sherbrooke
  * @author Urhixidur
+ * @author Meithal
  * @author SPQRobin
  */
 $messages['fr'] = array(
@@ -1305,6 +1311,7 @@ Chaque demande de compte utilisateur consiste en trois sous-listes : une pour le
 Lors de la réponse à une demande, vérifiez-la attentivement et, le cas échéant, confirmez les informations qui y sont mentionnées. Vos actions seront inscrites séparément dans un journal. Vous devez aussi vérifier l'activité sur {{SITENAME}} en plus de la vôtre.",
 	'confirmaccount-list'             => 'Voici, ci-dessous, la liste des comptes en attente d’approbation. Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront supprimés de cette même liste.',
 	'confirmaccount-list2'            => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
+	'confirmaccount-list3'            => 'Ci dessous se trouve une liste de comptes expirés qui pourraient être automatiquement supprimées après quelques jours. Ils peuvent encore être approuvés.',
 	'confirmaccount-text'             => "Voici une demande en cours pour un compte utilisateur sur '''{{SITENAME}}'''.
 
 Vérifiez soigneusement toutes les informations ci-dessous. Si vous approuvez cette demande, sélectionnez la situation à donner à l'utilisateur. Les changements apportés aux biographies de l'application n'affecteront pas les références permanentes déjà stockées.
@@ -1315,12 +1322,14 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-none-o'           => "Il n'y a actuellement aucune demande de compte utilisateur en cours dans cette liste.",
 	'confirmaccount-none-h'           => "Il n'y a actuellement aucune réservation de compte utilisateur en cours dans cette liste.",
 	'confirmaccount-none-r'           => "Il n'y a actuellement aucun rejet récent de demande de compte utilisateur dans cette liste.",
+	'confirmaccount-none-e'           => "Il n'y a actuellement aucune requête de compte expirée dans la liste.",
 	'confirmaccount-real-q'           => 'Nom',
 	'confirmaccount-email-q'          => 'Courriel',
 	'confirmaccount-bio-q'            => 'Biographie',
-	'confirmaccount-back'             => 'Voir la liste des demandes en cours',
-	'confirmaccount-back2'            => 'Voir la liste des comptes rejetés récemment.',
+	'confirmaccount-showopen'         => 'Requêtes ouvertes',
+	'confirmaccount-showrej'          => 'Requêtes rejetées',
 	'confirmaccount-showheld'         => 'Voir la liste des comptes réservés en cours de traitement',
+	'confirmaccount-showexp'          => 'Requêtes expirées',
 	'confirmaccount-review'           => 'Approbation/Rejet',
 	'confirmaccount-types'            => "Sélectionnez un compte dans la liste d'attente ci-dessous :",
 	'confirmaccount-all'              => "(Voir toutes les listes d'attente)",
@@ -2332,6 +2341,7 @@ $2
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author Lovekhmer
  */
 $messages['km'] = array(
 	'requestaccount-page'        => '{{ns:project}}:លក្ខណ្ឌ ប្រើប្រាស់សេវា',
@@ -2340,11 +2350,11 @@ $messages['km'] = array(
 	'requestaccount-leg-other'   => 'ពត៌មាន ដទៃទៀត',
 	'requestaccount-real'        => 'ឈ្មោះពិត៖',
 	'requestaccount-same'        => '(ដូច ឈ្មោះពិត)',
-	'requestaccount-email'       => 'អាស័យដ្ឋាន អ៊ីមែវល៍ ៖',
+	'requestaccount-email'       => 'អាសយដ្ឋានអ៊ីមែល៖',
 	'requestaccount-reqtype'     => 'តួនាទី៖',
 	'requestaccount-level-0'     => 'អ្នកនិពន្ធ៖',
 	'requestaccount-level-1'     => 'ឧបករកែប្រែ',
-	'requestaccount-bio'         => 'ជីវប្រវត្តិ ផ្ទាល់ខ្លួន៖',
+	'requestaccount-bio'         => 'ជីវប្រវត្តិផ្ទាល់ខ្លួន៖',
 	'requestaccount-attach'      => 'ប្រវត្តិរូប (ជំរើស) ៖',
 	'requestaccount-notes'       => 'សំគាល់បន្ថែម៖',
 	'requestaccount-agree'       => 'អ្នកត្រូវតែ បញ្ជាក់ថា ឈ្មោះពិត របស់អ្នក ត្រឹមត្រូវ និងថា អ្នកព្រមព្រៀង ចំពោះ លក្ខណ្ឌ ប្រើប្រាស់សេវា ។',
@@ -2352,7 +2362,7 @@ $messages['km'] = array(
 	'requestaccount-email-subj'  => 'ការបញ្ជាក់ទទួលស្គាល់ អាស័យដ្ឋានអ៊ីមែវល៍ {{SITENAME}}',
 	'confirmaccounts'            => 'បញ្ជាក់ទទួលស្គាល់ សំណើគណនី',
 	'confirmaccount-real-q'      => 'ឈ្មោះ',
-	'confirmaccount-email-q'     => 'អ៊ីមែវល៍',
+	'confirmaccount-email-q'     => 'អ៊ីមែល',
 	'confirmaccount-bio-q'       => 'ជីវប្រវត្តិ',
 	'confirmaccount-review'      => 'មើលឡើងវិញ',
 	'confirmaccount-all'         => '(បង្ហាញ គ្រប់ ជួររង់ចាំ)',
@@ -2606,7 +2616,7 @@ Als u deze pagina verlaat zonder het gebruikersverzoek te bevestigen of af te wi
 	'confirmaccount-showexp'          => 'verlopen aanvragen',
 	'confirmaccount-review'           => 'toegelaten/afgewezen',
 	'confirmaccount-types'            => 'Selecteer een lijst met gebruikersverzoeken:',
-	'confirmaccount-all'              => '(toon alle lijsten)',
+	'confirmaccount-all'              => '(alle lijsten weergeven)',
 	'confirmaccount-type'             => 'Lijst:',
 	'confirmaccount-type-0'           => 'toekomstige auteurs',
 	'confirmaccount-type-1'           => 'toekomstige redacteuren',
@@ -3041,6 +3051,7 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 );
 
 /** Polish (Polski)
+ * @author Masti
  * @author Equadus
  * @author Derbeth
  * @author McMonster
@@ -3048,11 +3059,22 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
  */
 $messages['pl'] = array(
 	'requestaccount'            => 'Prośba o konto',
+	'requestaccount-dup'        => "'''Uwaga: Jesteś już zalogowany (-a) na zarejestrowane konto.'''",
+	'requestaccount-leg-user'   => 'Konto użytkownika',
+	'requestaccount-leg-areas'  => 'Główne obszary zainteresowań',
+	'requestaccount-leg-person' => 'Informacje osobiste',
 	'requestaccount-leg-other'  => 'Inne informacje',
 	'requestaccount-email'      => 'Adres e-mail:',
 	'requestaccount-reqtype'    => 'Pozycja:',
 	'requestaccount-level-0'    => 'autor',
 	'requestaccount-level-1'    => 'edytor',
+	'requestaccount-bio'        => 'Biografia:',
+	'requestaccount-attach'     => 'CV (opcjonalne):',
+	'requestaccount-notes'      => 'Dodatkowe informacje:',
+	'requestaccount-urls'       => 'Lista stron internetowych (każda w nowej linii):',
+	'requestaccount-agree'      => 'Musisz potwierdzić, że Twoje dane są poprawne oraz, że zgadzasz się na warunki serwisu.',
+	'requestaccount-inuse'      => 'Nazwa użytkownika jest zajęta  przez niepotwierdzone zgłoszenie.',
+	'requestaccount-exts'       => 'Niedozwolony typ załącznika.',
 	'requestaccount-email-body' => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, zarejestrował w {{GRAMMAR:MS.pl|{{SITENAME}}}} konto "$2", podając przy tym niniejszy adres e-mail.
 
 Jeśli to Ty zakładałaś konto w {{GRAMMAR:MS.pl|{{SITENAME}}}}, potwierdź to otwierając w swojej przeglądarce poniższy link:
@@ -3281,9 +3303,10 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-real-q'           => 'Nome',
 	'confirmaccount-email-q'          => 'Email',
 	'confirmaccount-bio-q'            => 'Biografia',
-	'confirmaccount-back'             => 'Ver lista de pedidos de conta pendentes em aberto',
-	'confirmaccount-back2'            => 'Ver lista de pedidos de conta recentemente rejeitados',
+	'confirmaccount-showopen'         => 'pedidos em curso',
+	'confirmaccount-showrej'          => 'pedidos rejeitados',
 	'confirmaccount-showheld'         => 'Ver lista de pedidos de conta pendentes em espera',
+	'confirmaccount-showexp'          => 'pedidos expirados',
 	'confirmaccount-review'           => 'Aprovar/Rejeitar',
 	'confirmaccount-types'            => 'Seleccione uma fila de confirmação de contas abaixo:',
 	'confirmaccount-all'              => '(mostrar todas as filas)',
@@ -3645,6 +3668,7 @@ informácie.
 O vašej činnosti sa povedie neverejný záznam. Tiež sa od vás očakáva, že budete kontrolovať činnosti, ktoré tu robia iní okrem vás.",
 	'confirmaccount-list'             => 'Nižšie je zoznam žiadostí o účet, ktoré čakajú na schválenie. Schválené účty budú vytvorené a odstránené z tohoto zoznamu. Odmietnuté účty budú jednoducho odstránené z tohoto zoznamu.',
 	'confirmaccount-list2'            => 'Nižšie je zoznam nedávno odmietnutých žiadostí o účet, ktoré môžu byť automaticky odstránené po niekoľkých dňoch. Ešte stále ich môžete schváliť a vytvoriť z nich platné účty, hoci by ste sa mali predtým, než tak učiníte, poradiť so správcom, ktorý ich odmietol.',
+	'confirmaccount-list3'            => 'Toto je zoznam žiadostí o účet, ktorých platnosť vypršala a je ich možné po niekoľkých dňoch automaticky zmazať. Ešte stále je možné ich schváliť.',
 	'confirmaccount-text'             => "Toto je žiadosť o používateľský účet na '''{{GRAMMAR:lokál|{{SITENAME}}}}'''.
 
 Pozorne skontrolujte všetky dolu uvedené informácie. Ak schvaľute túto žiadosť, nastavte status používateľa z roletovej ponuky. Úpravy vykonané v biografii neovplyvnia akékoľvek trvalé uložisko údajov. Máte tiež možnosť vytvoriť účet pod odlišným používateľským menom. To však používajte iba na odstránenie konfliktov s inými menami.
@@ -3653,12 +3677,14 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 	'confirmaccount-none-o'           => 'Momentálne nie sú v tomto zozname žiadne čakajúce žiadosti na vytvorenie účtu.',
 	'confirmaccount-none-h'           => 'Momentálne nie sú v tomto zozname žiadne pozastavené žiadosti na vytvorenie účtu.',
 	'confirmaccount-none-r'           => 'Momentálne nie sú v tomto zozname žiadne zamietnuté žiadosti na vytvorenie účtu.',
+	'confirmaccount-none-e'           => 'Momentálne neexistujú žiadne žiadosti o účet s vypršanou platnosťou.',
 	'confirmaccount-real-q'           => 'Meno',
 	'confirmaccount-email-q'          => 'Email',
 	'confirmaccount-bio-q'            => 'Biografia',
-	'confirmaccount-back'             => 'Zobraziť zoznam nespracovaných účtov',
-	'confirmaccount-back2'            => 'Zobraziť zoznam nedávno odmietnutých účtov',
+	'confirmaccount-showopen'         => 'otvorené žiadosti',
+	'confirmaccount-showrej'          => 'odmietnuté žiadosti',
 	'confirmaccount-showheld'         => 'Zobraziť zoznam účtov čakajúcich na schválenie',
+	'confirmaccount-showexp'          => 'expirované žiadosti',
 	'confirmaccount-review'           => 'Schváliť/odmietnuť',
 	'confirmaccount-types'            => 'Dolu zvoľte front potvrdení účtov:',
 	'confirmaccount-all'              => '(zobraziť všetky fronty)',
@@ -3668,6 +3694,7 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 	'confirmaccount-q-open'           => 'otvorené žiadosti',
 	'confirmaccount-q-held'           => 'pozastavené žiadosti',
 	'confirmaccount-q-rej'            => 'nedávno zamietnuté žiadosti',
+	'confirmaccount-q-stale'          => 'expirované žiadosti',
 	'confirmaccount-badid'            => 'Neexistuje žiadna nespracovaná žiadosť o účet zodpovedajúca zadanému ID. Je možné, že už bola spracovaná.',
 	'confirmaccount-leg-user'         => 'Používateľský účet',
 	'confirmaccount-leg-areas'        => 'Hlavné oblasti záujmu',
@@ -3689,6 +3716,7 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 	'confirmaccount-reject'           => '(odmietol [[User:$1|$1]] $2)',
 	'confirmaccount-rational'         => 'Zdôvodnenie pre uchádzača:',
 	'confirmaccount-noreason'         => '(žiadne)',
+	'confirmaccount-autorej'          => '(táto požiadavka bola automaticky zrušená z dôvodu neaktivity)',
 	'confirmaccount-held'             => '(používateľ [[User:$1|$1]] $2 označenil ako „pozastavené“)',
 	'confirmaccount-create'           => 'Prijať (vytvoriť účet)',
 	'confirmaccount-deny'             => 'Odmietnuť (odstrániť žiadosť)',
@@ -3879,7 +3907,6 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
 
 /** Swedish (Svenska)
  * @author Lejonel
- * @author Max sonnelid
  * @author M.M.S.
  */
 $messages['sv'] = array(
@@ -3946,10 +3973,10 @@ Varje ansökningskö består av tre delköer, en för obehandlade ansökningar, 
 
 Granska noggrant ansökningar du svarar på, och verifiera informationen om det behövs.
 De åtgärder du utför här skrivs in i en privat logg. Du förväntas även kontrollera hur andra användare hanterar ansökningar.",
-	'confirmaccount-list'             => 'Härunder finns en lista över kontoansökningar som väntar på att godkännas.
-När konton som godkänns skapas och tas bort från listan. Kontoansökningar som avslås tas bara bort från listan.',
-	'confirmaccount-list2'            => 'Härunder finns en lista över kontoansökningar som nyligen avslagits eller gått ut. De kommer automatiskt att raderas efter ett visst antal dagar.
+	'confirmaccount-list'             => 'Härunder finns en lista över kontoansökningar som väntar på att godkännas. När en ansökning godkänns eller avslås så tas den bort från den här listan.',
+	'confirmaccount-list2'            => 'Härunder finns en lista över kontoansökningar som nyligen avslagits. De kan komma att raderas automatiskt efter ett visst antal dagar.
 Du kan fortfarande godkänna ansökningarna, men i så fall bör du först diskutera det med den administratör som avslog ansökningen.',
+	'confirmaccount-list3'            => 'Härunder finns en lista över utgångna kontoansökningar som automatiskt kan komma att tas bort om några dagar. Tills dess kan ansökningarna fortfarande godkännas.',
 	'confirmaccount-text'             => "Det här är en ansökan om ett konto på '''{{SITENAME}}'''.
 
 Granska informationen härunder noggrant. Om du godkänner ansökningen så kan du använda ställningslistan för att välja kontostatus för den nya användaren.
@@ -3960,16 +3987,18 @@ Om du lämnar den här sidan utan att godkänna eller avslå ansökan, så komme
 	'confirmaccount-none-o'           => 'För närvarande finns inga obehandlade kontoansökningar.',
 	'confirmaccount-none-h'           => 'För närvarande finns inga avvaktande kontoansökningar.',
 	'confirmaccount-none-r'           => 'Inga kontoansökningar har avslagits nyligen.',
+	'confirmaccount-none-e'           => 'För närvarande finns inga utgångna kontoansökningar.',
 	'confirmaccount-real-q'           => 'Namn',
 	'confirmaccount-email-q'          => 'E-post',
 	'confirmaccount-bio-q'            => 'Biografi',
-	'confirmaccount-back'             => 'Visa obehandlade ansökningar',
-	'confirmaccount-back2'            => 'Visa nyligen avslagna ansökningar',
-	'confirmaccount-showheld'         => 'Visa avvaktande ansökningar',
+	'confirmaccount-showopen'         => 'obehandlade ansökningar',
+	'confirmaccount-showrej'          => 'avslagna ansökningar',
+	'confirmaccount-showheld'         => 'avvaktande ansökningar',
+	'confirmaccount-showexp'          => 'utgångna ansökningar',
 	'confirmaccount-review'           => 'Granska',
 	'confirmaccount-types'            => 'Välj någon av ansökningslistorna härunder:',
 	'confirmaccount-all'              => '(visa alla köer)',
-	'confirmaccount-type'             => 'Vald kö:',
+	'confirmaccount-type'             => 'Kö:',
 	'confirmaccount-type-0'           => 'ansökande författare',
 	'confirmaccount-type-1'           => 'ansökande redaktörer',
 	'confirmaccount-q-open'           => 'obehandlade ansökningar',
@@ -4069,16 +4098,30 @@ Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill
 
 /** Telugu (తెలుగు)
  * @author Veeven
+ * @author Chaduvari
  * @author వైజాసత్య
  */
 $messages['te'] = array(
 	'requestaccount'                  => 'ఖాతాను అభ్యర్ధించండి',
+	'requestaccount-text'             => "'''వాడుకరి ఖాతా కోసం కింది ఫారమును నింపి పంపించండి'''.  
+
+ఖాతా కావాలని అడిగే ముందు [[{{MediaWiki:Requestaccount-page}}|సేవా నియమాలను]] తప్పక చదవండి.
+
+ఖాతాను అనుమతించాక, ఆ సంగతి తెలుపుతూ మీకో ఈమెయిలు వస్తుంది. ఖాతా వివరాలను [[Special:Userlogin]] వద్ద వాడుకోవచ్చు.",
 	'requestaccount-page'             => '{{ns:project}}:సేవా నియమాలు',
 	'requestaccount-dup'              => "'''గమనిక: మీరు ఈసరికే నమోదైన ఖాతాతో లోనికి ప్రవేశించారు.'''",
 	'requestaccount-leg-user'         => 'వాడుకరి ఖాతా',
 	'requestaccount-leg-areas'        => 'ప్రధాన ఆసక్తులు',
 	'requestaccount-leg-person'       => 'వ్యక్తిగత సమాచారం',
 	'requestaccount-leg-other'        => 'ఇతర సమాచారం',
+	'requestaccount-acc-text'         => 'మీరీ అభ్యర్ధన పంపించగానే మీ ఈమెయిలుకో ధృవీకరణ సందేశం వస్తుంది. దానిలో ఉన్న షృవీకరణ లింకును నొక్కండి. మీ ఖాతా తయారు కాగానే మీ సంకేతపదాన్ని కూడా పంపిస్తాం.',
+	'requestaccount-areas-text'       => 'కింది విషయాల లోంచి మీకు ప్రవేశం ఉన్న వాటిని లేదా మీరు పనిచేయదలచిన వాటిని ఎంచుకోండి.',
+	'requestaccount-ext-text'         => 'కింది సమాచారాన్ని గోప్యంగా ఉంచుతాం, ఈ అభ్యర్ధన కోసం మాత్రమే వాడుతాం. 
+మిమ్మల్ని గుర్తించటంలో సాయపడే ఫోను నంబరు వంటి పరిచయ వివరలను ఇవ్వవచ్చు.',
+	'requestaccount-bio-text'         => 'మీ వ్యక్తిగత వివరాలే మీ వాడుకరిపేజీకి డిఫాల్టు కంటెంటుగా ఉంటుంది. 
+ఇంకా ఏమైనా చేర్చాలంటే చేర్చండి.
+మీకు ఇబ్బంది లేని సమాచారాన్ని మాత్రమే ప్రచురించండి.
+[[Special:Preferences]] కు వెళ్ళి మీ పేరును మార్చుకోవచ్చు.',
 	'requestaccount-real'             => 'అసలు పేరు:',
 	'requestaccount-same'             => '(వాస్తవిక పేరు ఏదో అదే)',
 	'requestaccount-email'            => 'ఈమెయిలు చిరునామా:',
@@ -4086,30 +4129,60 @@ $messages['te'] = array(
 	'requestaccount-level-0'          => 'రచయిత',
 	'requestaccount-level-1'          => 'సంపాదకులు',
 	'requestaccount-bio'              => 'వ్యక్తిగత జీవితచరిత్ర:',
+	'requestaccount-attach'           => 'రెజ్యూమె లేదా CV (మీ ఇష్టం):',
 	'requestaccount-notes'            => 'అదనపు గమనికలు:',
 	'requestaccount-urls'             => 'వెబ్&zwnj;సైట్ల జాబితా, ఉంటే గనక (లైనుకి ఒకటి చొప్పున):',
 	'requestaccount-agree'            => 'మీ నిజమైన పేరు సరియేనని మరియు మా సేవా నియమాలని మీరు అంగీకరిస్తున్నారని దృవపరచాలి.',
 	'requestaccount-inuse'            => 'వాడుకరిపేరు ఈసరికే వేచివున్న ఖాతా అభ్యర్థనలలో ఉంది.',
 	'requestaccount-tooshort'         => 'మీ బయోగ్రఫీ తప్పనిసరిగా కనీసం $1 పదాల పొడవు ఉండాలి.',
 	'requestaccount-emaildup'         => 'మరో వేచివున్న ఖాతా అభ్యర్థన ఇదే ఈ-మెయిల్ చిరునామాని వాడుతుంది.',
+	'requestaccount-exts'             => 'జోడించిన ఫైలు రకానికి అనుమతి లేదు.',
+	'requestaccount-resub'            => 'భద్రతా కారణాల రీత్యా మీ CV/రెజ్యూమె ఫైలును తిరిగి ఎంచుకోవాలి.
+అసలు దేన్నీ పెట్టదలచకపోతే ఈ ఫీల్డును ఖాళీగా వదిలెయ్యండి.',
+	'requestaccount-tos'              => '{{SITENAME}} యొక్క [[{{MediaWiki:Requestaccount-page}}|సేవా నియమాలను]] చదివాను. వాటికి బద్ధుడనై/బద్ధురాలనై ఉంటాను.
+"అసలు పేరు" కింద నేను ఇచ్చిన పేరు నిజంగానే నా అసలు పేరు.',
 	'requestaccount-submit'           => 'ఖాతాని అభ్యర్థించండి',
 	'requestaccount-sent'             => 'ఈ ఖాతా అభ్యర్థనని విజయవంతంగా పంపించాం. అది సమీక్షకై వేచివుంది.',
 	'request-account-econf'           => 'మీ ఈ-మెయిల్ చిరునామా నిర్థారితమయ్యింది మరియు మీ ఖాతా అభ్యర్థనలో అలానే నమోదవుతుంది.',
 	'requestaccount-email-subj'       => '{{SITENAME}} ఈ-మెయిల్ చిరునామా నిర్ధారణ',
+	'requestaccount-email-body'       => '{{SITENAME}} లో $1 ఐపీ అడ్రసు నుండి ఎవరో - బహుశా మీరే - ఈ ఈమెయిలు అడ్రసుతో "$2" ఖాతా కావాలని అభ్యర్ధించారు.
+
+{{SITENAME}} లోని ఈ ఖాతా నిజంగానే మీదేనని నిర్ధారించేందుకు, ఈ లింకును మీ బ్రౌజరులో తెరవండి:
+
+$3
+
+ఖాతా సృష్టించబడితే, మీకో సంకేతపదం వస్తుంది. అది మీరు *కాకపోతే*, ఈ లింకును పట్టించుకోకండి.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} ఖాతా అభ్యర్థన',
+	'requestaccount-email-body-admin' => '"$1" ఓ ఖాతా కావాలని అడిగి నిర్ధారణ కోసం చూస్తున్నారు.
+ఈ-మెయిలు అడ్రసు నిర్ధారణైంది. మీ అభ్యర్ధనను "$2" వద్ద నిర్ధారించవచ్చు.',
 	'acct_request_throttle_hit'       => 'క్షమించండి, మీరిప్పటికే $1 ఖాతాలను అభ్యర్ధించారు. ఇంకా ఎక్కవ అభ్యర్థనలు చెయ్యలేరు.',
 	'requestaccount-loginnotice'      => "ఖాతా పొందడానికి, మీరు తప్పనిసరిగా '''[[Special:RequestAccount|అభ్యర్థించాలి]]'''.",
 	'confirmaccount-newrequests'      => "ప్రస్తుతం '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థన]]|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థనలు]]}} వేచి{{PLURAL:$1|వుంది|వున్నాయి}}.",
 	'confirmaccounts'                 => 'ఖాతా అభ్యర్థనలను నిర్ధారించండి',
 	'confirmedit-desc'                => 'అధికారులకు ఖాతా అభ్యర్థనలను నిర్ధారించే వీలుకల్పిస్తుంది',
+	'confirmaccount-none-o'           => 'ప్రస్తుతం ఈ జాబితాలో పెండింగులో ఉన్న తెరచి ఉన్న అభ్యర్ధనలేమీ లేవు.',
+	'confirmaccount-none-h'           => 'ప్రస్తుతం ఈ జాబితాలో అట్టేపెట్టిన పెండింగు అభ్యర్ధనలేమీ లేవు.',
 	'confirmaccount-none-r'           => 'ప్రస్తుతం ఈ జాబితాలో ఇటీవల తిరస్కరించిన ఖాతా అభ్యర్థనలు ఏమీలేవు.',
+	'confirmaccount-none-e'           => 'ప్రస్తుతం ఈ జాబితాలో మురిగిపోయిన ఖాతాల అభ్యర్ధనలేమీ లేవు.',
 	'confirmaccount-real-q'           => 'పేరు',
 	'confirmaccount-email-q'          => 'ఈ-మెయిల్',
 	'confirmaccount-bio-q'            => 'బయోగ్రఫీ',
+	'confirmaccount-showopen'         => 'తెరచి ఉన్న అభ్యర్ధనలు',
+	'confirmaccount-showrej'          => 'తిరస్కరించిన అభ్యర్ధనలు',
+	'confirmaccount-showheld'         => 'అట్టేపెట్టిన ఉన్న అభ్యర్ధనలు',
+	'confirmaccount-showexp'          => 'కాలంచెల్లిన అభ్యర్థనలు',
 	'confirmaccount-review'           => 'సమీక్ష',
+	'confirmaccount-types'            => 'కిందివాటిలోంచి ఒక ఖాతా నిర్ధారణ క్యూను ఎంచుకోండి:',
+	'confirmaccount-all'              => '(క్యూలన్నిటినీ చూపించు)',
+	'confirmaccount-type'             => 'క్యూ:',
 	'confirmaccount-type-0'           => 'కాబోయే రచయితలు',
 	'confirmaccount-type-1'           => 'కాబోయే సంపాదకులు',
+	'confirmaccount-q-open'           => 'తెరచి ఉన్న అభ్యర్ధనలు',
+	'confirmaccount-q-held'           => 'అట్టేపెట్టిన అభ్యర్ధనలు',
 	'confirmaccount-q-rej'            => 'ఇటీవల తిరస్కరించిన అభ్యర్థనలు',
+	'confirmaccount-q-stale'          => 'మురిగిపోయిన అభ్యర్ధనలు',
+	'confirmaccount-badid'            => 'ఇచ్చిన IDకి సరిపోలిన పెండింగు అభ్యర్ధనలేమీ లేవు.
+దాన్ని ఇప్పటికే పరిశీలించి ఉండవచ్చు.',
 	'confirmaccount-leg-user'         => 'వాడుకరి ఖాతా',
 	'confirmaccount-leg-areas'        => 'ప్రధాన ఆసక్తులు',
 	'confirmaccount-leg-person'       => 'వ్యక్తిగత సమాచారం',
@@ -4119,6 +4192,7 @@ $messages['te'] = array(
 	'confirmaccount-email'            => 'ఈ-మెయిల్:',
 	'confirmaccount-reqtype'          => 'స్థానం:',
 	'confirmaccount-pos-0'            => 'రచయిత',
+	'confirmaccount-pos-1'            => 'రచయిత',
 	'confirmaccount-bio'              => 'బయోగ్రఫీ:',
 	'confirmaccount-notes'            => 'అదనపు గమనికలు:',
 	'confirmaccount-urls'             => 'వెబ్ సైట్ల జాబితా:',
@@ -4159,6 +4233,16 @@ $messages['te'] = array(
 $3
 
 భద్రతా కారణాల వల్ల మీ మొదటి ప్రవేశంలో మీ సంకేతపదాన్ని మార్చుకోవాలి. ప్రవేశించడానికి, {{fullurl:Special:Userlogin}}కి వెళ్ళండి.',
+	'confirmaccount-email-body4'      => 'క్షమించండి, {{SITENAME}}లో "$1" అనే ఖాతా కొరకు మీ అభ్యర్థనని తిరస్కరించారు.
+
+$2
+
+వాడుకరి ఖాతా విధానం గురించి మీరు మరింత తెలుసుకోవాలనుంటే పైటులో సంప్రదింపు చిరునామాని వాడవచ్చు.',
+	'confirmaccount-email-body5'      => '{{SITENAME}}లో "$1" అనే ఖాతా కొరకు మీ అభ్యర్థనని అంగీకరించాలంటే మీరు తప్పనిసరిగా మరింత అదనపు సమాచారం ఇవ్వాలి.
+
+$2
+
+వాడుకరి ఖాతా విధానం గురించి మీరు మరింత తెలుసుకోవాలనుకుంటే పైటులో సంప్రదింపు చిరునామాని వాడవచ్చు.',
 	'usercredentials-user'            => 'వాడుకరి పేరు:',
 	'usercredentials-leg-user'        => 'వాడుకరి ఖాతా',
 	'usercredentials-leg-areas'       => 'ప్రధాన ఆసక్తులు',
