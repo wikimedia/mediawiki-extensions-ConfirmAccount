@@ -1899,6 +1899,7 @@ Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš w
 /** Hungarian (Magyar)
  * @author Bdanee
  * @author Dorgan
+ * @author Tgr
  */
 $messages['hu'] = array(
 	'requestaccount'                  => 'Felhasználói fiók kérése',
@@ -1953,8 +1954,8 @@ $3
 Ha a fiók elkészült, akkor elküldjük a jelszavadat. Ha ez *nem* te vagy, ne kattints a linkre.
 Ennek a megerősítésre szánt kódnak a felhasználhatósági ideje lejár: $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} felhasználói fiók kérelem',
-	'requestaccount-email-body-admin' => 'A(z) "$1" felhasználói fiók kérelme megerősítésre vár.
-Az e-mail cím meg lett erősítve. Itt erősítheted meg: "$2".',
+	'requestaccount-email-body-admin' => '"$1" regisztrációja jóváhagyásra vár.
+Az e-mail cím ellenőrzése sikeres volt. Itt hagyhatod jóvá a kérést: "$2".',
 	'acct_request_throttle_hit'       => 'Sajnáljuk, de már $1 felhasználói fiókot kértél, így nem igényelhetsz újabbakat.',
 	'requestaccount-loginnotice'      => "Ha felhasználói fiókot szeretnél, akkor '''[[Special:RequestAccount|kérned kell egyet]]'''.",
 	'confirmaccount-newrequests'      => "Jelenleg '''$1''' [[Special:ConfirmAccounts|felhasználói fiók-kérelem]] vár megerősítésre.",
@@ -1981,8 +1982,6 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-real-q'           => 'Név',
 	'confirmaccount-email-q'          => 'E-mail cím',
 	'confirmaccount-bio-q'            => 'Életrajz',
-	'confirmaccount-back'             => 'Elfogadásra váró fiókok listájának megtekintése',
-	'confirmaccount-back2'            => 'Visszautasított fiókok listájának megtekintése',
 	'confirmaccount-showheld'         => 'Visszatartott fiókok listájának megtekintése',
 	'confirmaccount-review'           => 'Áttekintés',
 	'confirmaccount-types'            => 'Válassz egy várólistát az alábbiak közül:',
@@ -2050,12 +2049,10 @@ $3
 
 Biztonsági okok miatt meg kell változtatnod a jelszavadat az első bejelentkezésed során. A bejelentkezéshez menj a
 {{fullurl:Special:Userlogin}} lapra.',
-	'confirmaccount-email-body3'      => 'Sajnálattal közöljük, hogy a felhasználói fiók-kérelmedet elutasították a(z) {{SITENAME}} wikin.
+	'confirmaccount-email-body3'      => 'Sajnálattal közöljük, hogy a regisztrációdat („$1”) elutasították a(z) {{SITENAME}} wikin.
 
-Számos oka lehet a dolognak. Lehet, hogy nem töltötted ki helyesen az űrlapot, nem adtál meg megfelelő mennyiségű
-információt, vagy más irányelv miatt utasítottak vissza.  Ha több információt szeretnél megtudni a felhasználói fiókokkal
-kapcsolatos irányelvekről, az oldalon megtalálhatod a kapcsolattartási listát.',
-	'confirmaccount-email-body4'      => 'Sajnálattal közöljük, hogy a felhasználói fiók-kérelmedet elutasították a(z) {{SITENAME}} wikin.
+Számos oka lehet a dolognak. Lehet, hogy nem töltötted ki helyesen az űrlapot, nem adtál meg elég információt, vagy más irányelv miatt utasítottak vissza.  Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolatos irányelvekről, az oldalon megtalálhatod a kapcsolattartási listát.',
+	'confirmaccount-email-body4'      => 'Sajnálattal közöljük, hogy a regisztrációdat („$1” néven) elutasították a(z) {{SITENAME}} wikin.
 
 $2
 
@@ -2875,7 +2872,7 @@ Av sikkerhetsgrunner må du endre passordet etter første innlogging. For å log
 	'confirmaccount-email-body3'      => 'Beklager, din forespørsel om kontoen «$1» på {{SITENAME}} har blitt avvist.
 
 Det er flere mulige grunner til at dette har skjedd. Du har muligens ikke fylt inn skjemaet korrekt, har ikke svart utfyllende nok, eller møter på en annen måte ikke kriteriene. Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.',
-	'confirmaccount-email-body4'      => 'Beklager, din forespørsel om å få en konto på {{SITENAME}} har blitt avvist.
+	'confirmaccount-email-body4'      => 'Beklager, din forespørsel om å få en konto ($1) på {{SITENAME}} har blitt avvist.
 
 $2
 
@@ -3599,7 +3596,7 @@ $2
 
 На сайте могут быть списки контактов, которыми вы можете воспользоваться,
 чтобы получить более подробную информацию о правилах, касающихся учётных записей участников.',
-	'confirmaccount-email-body5'      => 'Чтобы ваш запрос на создание учётной записи на сайте {{SITENAME}} был утверждён, вам следует
+	'confirmaccount-email-body5'      => 'Чтобы ваш запрос на создание учётной записи «$1» на сайте {{SITENAME}} был утверждён, вам следует
 предоставить дополнительную информацию.
 
 $2
@@ -3761,7 +3758,11 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 	'confirmaccount-email-body'       => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body2'      => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 $3 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3'      => 'Je nám ľúto, ale vaša žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} bola zamietnutá. Je niekoľko dôvodov, prečo sa to mohlo stať. Buď ste nevyplnili formulár správne, neposkytli ste požadovanú dĺžku vašich odpovedí alebo inak ste nesplnili kritériá. Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
-	'confirmaccount-email-body4'      => 'Je nám ľúto, ale vaša žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} bola zamietnutá. Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
+	'confirmaccount-email-body4'      => 'Je nám ľúto, ale vaša žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} bola zamietnutá.
+
+$2
+
+Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
 	'confirmaccount-email-body5'      => 'Predtým, než bude možné vašu žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} možné prijať 
 	musíte poskytnúť ďalšie informácie.
 
@@ -3857,8 +3858,6 @@ Wan du disse Siede ferlätst, sunner dät Konto tou bestäätigjen of outouliene
 	'confirmaccount-real-q'      => 'Noome',
 	'confirmaccount-email-q'     => 'E-Mail',
 	'confirmaccount-bio-q'       => 'Biographie',
-	'confirmaccount-back'        => 'Lieste fon do eepene Andraage ankiekje',
-	'confirmaccount-back2'       => 'Lieste fon do knu ouliende Andraage ankiekje',
 	'confirmaccount-showheld'    => 'Lieste fon do Andraage ap „outäiwe“-Stoatus anwiese',
 	'confirmaccount-review'      => 'Bestäätigje/Ouliene',
 	'confirmaccount-badid'       => 'Apstuuns rakt et neen Benutserandraach tou ju anroate ID. Muugelkerwiese wuude hie al beoarbaided.',
