@@ -1587,6 +1587,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-q-open'           => 'solicitudes abertas',
 	'confirmaccount-q-held'           => 'solicitudes suspendidas',
 	'confirmaccount-q-rej'            => 'solicitudes recentemente rexeitadas',
+	'confirmaccount-q-stale'          => 'solicitudes expiradas',
 	'confirmaccount-badid'            => 'Non existe unha solicitude pendente que corresponda co ID fornecido. Pode que xa fose examinada.',
 	'confirmaccount-leg-user'         => 'Conta de Usuario',
 	'confirmaccount-leg-areas'        => 'Principais áreas de interese',
@@ -3209,6 +3210,7 @@ $messages['ps'] = array(
 	'confirmaccount-urls'        => 'د وېبځايونو لړليک:',
 	'confirmaccount-noreason'    => '(هېڅ)',
 	'confirmaccount-ip'          => 'IP پته:',
+	'confirmaccount-wsum'        => 'ښه راغلاست!',
 	'confirmaccount-email-body'  => 'په {{SITENAME}} باندې د يوه کارن-حساب لپاره غوښتنه مو ومنل شوه .
 
 د کارن-حساب نوم: $1
