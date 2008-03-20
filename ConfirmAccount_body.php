@@ -962,32 +962,33 @@ class ConfirmAccountsPage extends SpecialPage
 			htmlspecialchars($this->mBio) .
 			"</textarea></p>\n";
 		$form .= '</fieldset>';
-		
-		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-other') . '</legend>';
 		global $wgAccountRequestExtraInfo;
-		if( $wgAccountRequestExtraInfo ) {
-			$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ';
-			if( $row->acr_filename ) {
-				$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars($row->acr_filename),
-					'file=' . $row->acr_storage_key );
-			} else {
-				$form .= wfMsgHtml('confirmaccount-none-p');
+		if ($wgAccountRequestExtraInfo || $wgUser->isAllowed( 'requestips' ) ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-other') . '</legend>';
+			if( $wgAccountRequestExtraInfo ) {
+				$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ';
+				if( $row->acr_filename ) {
+					$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars($row->acr_filename),
+						'file=' . $row->acr_storage_key );
+				} else {
+					$form .= wfMsgHtml('confirmaccount-none-p');
+				}
+				$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."\n";
+				$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+					htmlspecialchars($row->acr_notes) .
+					"</textarea></p>\n";
+				$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
+				$form .= self::parseLinks($row->acr_urls);
 			}
-			$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."\n";
-			$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
-				htmlspecialchars($row->acr_notes) .
-				"</textarea></p>\n";
-			$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
-			$form .= self::parseLinks($row->acr_urls);
+			if( $wgUser->isAllowed( 'requestips' ) ) {
+				$blokip = SpecialPage::getTitleFor( 'blockip' );
+				$form .= "<p>".wfMsgHtml('confirmaccount-ip')." ".htmlspecialchars($row->acr_ip).
+				" (" . $this->skin->makeKnownLinkObj( $blokip, wfMsgHtml('blockip'), 
+					'ip=' . $row->acr_ip . '&wpCreateAccount=1' ).")</p>\n";
+			}
+			$form .= '</fieldset>';
 		}
-		if( $wgUser->isAllowed( 'requestips' ) ) {
-			$blokip = SpecialPage::getTitleFor( 'blockip' );
-			$form .= "<p>".wfMsgHtml('confirmaccount-ip')." ".htmlspecialchars($row->acr_ip).
-			" (" . $this->skin->makeKnownLinkObj( $blokip, wfMsgHtml('blockip'), 
-				'ip=' . $row->acr_ip . '&wpCreateAccount=1' ).")</p>\n";
-		}
-		$form .= '</fieldset>';
 		
 		$form .= "<strong>".wfMsgExt( 'confirmaccount-confirm', array('parseinline') )."</strong>\n";
 		$form .= "<table cellpadding='5'><tr>";
