@@ -83,7 +83,7 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function showForm( $msg='', $forgotFile=0 ) {
-		global $wgOut, $wgUser, $wgUseRealNamesOnly, $wgAccountRequestToS, 
+		global $wgOut, $wgUser, $wgUseRealNamesOnly, $wgAllowRealName, $wgAccountRequestToS, 
 			$wgAccountRequestTypes, $wgAccountRequestExtraInfo, $wgAllowAccountRequestFiles;
 
 		$this->mForgotAttachment = $forgotFile;
@@ -116,13 +116,15 @@ class RequestAccountPage extends SpecialPage {
 		}
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-email'), 'wpEmail' )."</td>";
 		$form .= "<td>".Xml::input( 'wpEmail', 30, $this->mEmail, array('id' => 'wpEmail') )."</td></tr>\n";
-		$form .= "<tr><td>".wfMsgHtml('requestaccount-reqtype')."</td><td>";
-		foreach( $wgAccountRequestTypes as $i => $params ) {
-			$options[] = Xml::option( wfMsg( "requestaccount-level-$i" ), $i, ($i == $this->mType) );
+		if( count($wgAccountRequestTypes) > 1 ) {
+			$form .= "<tr><td>".wfMsgHtml('requestaccount-reqtype')."</td><td>";
+			foreach( $wgAccountRequestTypes as $i => $params ) {
+				$options[] = Xml::option( wfMsg( "requestaccount-level-$i" ), $i, ($i == $this->mType) );
+			}
+			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
+			$form .= implode( "\n", $options );
+			$form .= Xml::closeElement('select')."\n";
 		}
-		$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
-		$form .= implode( "\n", $options );
-		$form .= Xml::closeElement('select')."\n";
 		$form .= '</td></tr></table></fieldset>';
 		
 		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
@@ -159,10 +161,12 @@ class RequestAccountPage extends SpecialPage {
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('requestaccount-leg-person') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-bio-text', array('parse') )."\n";
-		$form .= '<table cellpadding=\'4\'>';
-		$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-real'), 'wpRealName' )."</td>";
-		$form .= "<td>".Xml::input( 'wpRealName', 35, $this->mRealName, array('id' => 'wpRealName') )."</td></tr>\n";
-		$form .= '</table>';
+		if( $wgUseRealNamesOnly  || $wgAllowRealName ) {
+			$form .= '<table cellpadding=\'4\'>';
+			$form .= "<tr><td>".Xml::label( wfMsgHtml('requestaccount-real'), 'wpRealName' )."</td>";
+			$form .= "<td>".Xml::input( 'wpRealName', 35, $this->mRealName, array('id' => 'wpRealName') )."</td></tr>\n";
+			$form .= '</table>';
+		}
 		$form .= "<p>".wfMsgHtml('requestaccount-bio')."\n";
 		$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 			htmlspecialchars($this->mBio) . "</textarea></p>\n";
@@ -900,16 +904,17 @@ class ConfirmAccountsPage extends SpecialPage
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsgHtml('confirmaccount-econf').'</strong>' : '';
 		$form .= "<tr><td>".wfMsgHtml('confirmaccount-email')."</td>";
 		$form .= "<td>".htmlspecialchars($row->acr_email).$econf."</td></tr>\n";
-		
-		$options = array();
-		$form .= "<tr><td><strong>".wfMsgHtml('confirmaccount-reqtype')."</strong></td><td>";
-		foreach( $wgAccountRequestTypes as $i => $params ) {
-			$options[] = Xml::option( wfMsg( "confirmaccount-pos-$i" ), $i, ($i == $this->mType) );
+		if( count($wgAccountRequestTypes) > 1 ) {
+			$options = array();
+			$form .= "<tr><td><strong>".wfMsgHtml('confirmaccount-reqtype')."</strong></td><td>";
+			foreach( $wgAccountRequestTypes as $i => $params ) {
+				$options[] = Xml::option( wfMsg( "confirmaccount-pos-$i" ), $i, ($i == $this->mType) );
+			}
+			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
+			$form .= implode( "\n", $options );
+			$form .= Xml::closeElement('select')."\n";
+			$form .= "</td></tr>\n";
 		}
-		$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
-		$form .= implode( "\n", $options );
-		$form .= Xml::closeElement('select')."\n";
-		$form .= "</td></tr>\n";
 		
 		$form .= '</table></fieldset>';
 		
@@ -945,10 +950,13 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-person') . '</legend>';
-		$form .= '<table cellpadding=\'4\'>';
-		$form .= "<tr><td>".wfMsgHtml('confirmaccount-real')."</td>";
-		$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
-		$form .= '</table>';
+		global $wgUseRealNamesOnly, $wgAllowRealName;
+		if( $wgUseRealNamesOnly || $wgAllowRealName ) {
+			$form .= '<table cellpadding=\'4\'>';
+			$form .= "<tr><td>".wfMsgHtml('confirmaccount-real')."</td>";
+			$form .= "<td>".htmlspecialchars($row->acr_real_name)."</td></tr>\n";
+			$form .= '</table>';
+		}
 		$form .= "<p>".wfMsgHtml('confirmaccount-bio')."\n";
 		$form .= "<textarea tabindex='1' name='wpNewBio' id='wpNewBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 			htmlspecialchars($this->mBio) .
@@ -957,19 +965,22 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-other') . '</legend>';
-		$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ';
-		if( $row->acr_filename ) {
-			$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars($row->acr_filename),
-				'file=' . $row->acr_storage_key );
-		} else {
-			$form .= wfMsgHtml('confirmaccount-none-p');
+		global $wgAccountRequestExtraInfo;
+		if( $wgAccountRequestExtraInfo ) {
+			$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ';
+			if( $row->acr_filename ) {
+				$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars($row->acr_filename),
+					'file=' . $row->acr_storage_key );
+			} else {
+				$form .= wfMsgHtml('confirmaccount-none-p');
+			}
+			$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."\n";
+			$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+				htmlspecialchars($row->acr_notes) .
+				"</textarea></p>\n";
+			$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
+			$form .= self::parseLinks($row->acr_urls);
 		}
-		$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."\n";
-		$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
-			htmlspecialchars($row->acr_notes) .
-			"</textarea></p>\n";
-		$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
-		$form .= self::parseLinks($row->acr_urls);
 		if( $wgUser->isAllowed( 'requestips' ) ) {
 			$blokip = SpecialPage::getTitleFor( 'blockip' );
 			$form .= "<p>".wfMsgHtml('confirmaccount-ip')." ".htmlspecialchars($row->acr_ip).
@@ -1532,7 +1543,7 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 	
 	function formatRow( $row ) {
-		global $wgLang, $wgUser, $wgUseRealNamesOnly;
+		global $wgLang, $wgUser, $wgUseRealNamesOnly, $wgAllowRealName;
 
 		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
 		if( $this->showRejects || $this->showStale ) {
@@ -1568,8 +1579,10 @@ class ConfirmAccountsPage extends SpecialPage
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 				htmlspecialchars($row->acr_name) . '</td></tr>';
 		}
-		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real-q').'</strong></td><td width=\'100%\'>' .
-			htmlspecialchars($row->acr_real_name) . '</td></tr>';
+		if( $wgUseRealNamesOnly  || $wgAllowRealName ) {
+			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real-q').'</strong></td><td width=\'100%\'>' .
+				htmlspecialchars($row->acr_real_name) . '</td></tr>';
+		}
 		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
 		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-email-q').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
