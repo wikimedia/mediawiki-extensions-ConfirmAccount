@@ -304,9 +304,10 @@ $3
 	'confirmaccount-real-q'           => 'الاسم',
 	'confirmaccount-email-q'          => 'البريد الإلكتروني',
 	'confirmaccount-bio-q'            => 'السيرة الشخصية',
-	'confirmaccount-back'             => 'عرض قائمة الحسابات قيد الانتظار',
-	'confirmaccount-back2'            => 'عرض قائمة الحسابات المرفوضة حديثا',
+	'confirmaccount-showopen'         => 'طلبات مفتوحة',
+	'confirmaccount-showrej'          => 'طلبات مرفوضة',
 	'confirmaccount-showheld'         => 'عرض قائمة الحسابات قيد الانتظار',
+	'confirmaccount-showexp'          => 'طلبات مدتها انتهت',
 	'confirmaccount-review'           => 'قبول/رفض',
 	'confirmaccount-types'            => 'اختر طابور تأكيد حساب من الأسفل:',
 	'confirmaccount-all'              => '(عرض كل الطوابير)',
@@ -948,29 +949,33 @@ $messages['ee'] = array(
  * @author Consta
  */
 $messages['el'] = array(
-	'requestaccount-real'    => 'Πραγματικό όνομα:',
-	'requestaccount-email'   => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
-	'requestaccount-reqtype' => 'Θέση:',
-	'requestaccount-bio'     => 'Προσωπική βιογραφία:',
-	'confirmaccount-real-q'  => 'Όνομα',
-	'confirmaccount-email-q' => 'Ηλεκτρονικό Ταχυδρομείο:',
-	'confirmaccount-bio-q'   => 'Βιογραφία',
-	'confirmaccount-name'    => 'Όνομα χρήστη',
-	'confirmaccount-real'    => 'Όνομα:',
-	'confirmaccount-email'   => 'Ηλεκτρονικό Ταχυδρομείο:',
-	'confirmaccount-bio'     => 'Βιογραφία:',
-	'confirmaccount-urls'    => 'Λίστα των ιστοσελίδων:',
-	'confirmaccount-create'  => 'Αποδοχή (Δημιουργία λογαριασμού)',
-	'confirmaccount-ip'      => 'διεύθυνση ΙΡ:',
-	'confirmaccount-wsum'    => 'Καλός ήρθατε!',
-	'usercredentials-email'  => 'Ηλεκτρονικό ταχυδρομείο:',
-	'usercredentials-bio'    => 'Βιογραφία:',
+	'requestaccount-leg-user' => 'Λογαριασμός χρήστη',
+	'requestaccount-real'     => 'Πραγματικό όνομα:',
+	'requestaccount-email'    => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
+	'requestaccount-reqtype'  => 'Θέση:',
+	'requestaccount-bio'      => 'Προσωπική βιογραφία:',
+	'confirmaccount-real-q'   => 'Όνομα',
+	'confirmaccount-email-q'  => 'Ηλεκτρονικό Ταχυδρομείο:',
+	'confirmaccount-bio-q'    => 'Βιογραφία',
+	'confirmaccount-name'     => 'Όνομα χρήστη',
+	'confirmaccount-real'     => 'Όνομα:',
+	'confirmaccount-email'    => 'Ηλεκτρονικό Ταχυδρομείο:',
+	'confirmaccount-reqtype'  => 'Θέση:',
+	'confirmaccount-bio'      => 'Βιογραφία:',
+	'confirmaccount-urls'     => 'Λίστα των ιστοσελίδων:',
+	'confirmaccount-create'   => 'Αποδοχή (Δημιουργία λογαριασμού)',
+	'confirmaccount-ip'       => 'διεύθυνση ΙΡ:',
+	'confirmaccount-wsum'     => 'Καλός ήρθατε!',
+	'usercredentials-user'    => 'Όνομα χρήστη:',
+	'usercredentials-email'   => 'Ηλεκτρονικό ταχυδρομείο:',
+	'usercredentials-bio'     => 'Βιογραφία:',
 );
 
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
 $messages['eo'] = array(
+	'requestaccount'             => 'Petu konton',
 	'requestaccount-leg-user'    => 'Konto de uzanto',
 	'requestaccount-leg-person'  => 'Persona informo',
 	'requestaccount-leg-other'   => 'Alia informo',
@@ -982,10 +987,13 @@ $messages['eo'] = array(
 	'requestaccount-bio'         => 'Persona biografio:',
 	'requestaccount-notes'       => 'Pluaj notoj:',
 	'requestaccount-tooshort'    => 'Via biografio estu almenaŭ $1 vortoj.',
+	'requestaccount-submit'      => 'Petu konton',
 	'confirmaccount-real-q'      => 'Nomo',
 	'confirmaccount-email-q'     => 'Retpoŝto',
 	'confirmaccount-bio-q'       => 'Biografio',
+	'confirmaccount-showopen'    => 'malfermaj petoj',
 	'confirmaccount-leg-user'    => 'Konto de uzanto',
+	'confirmaccount-name'        => 'Salutnomo',
 	'confirmaccount-real'        => 'Nomo:',
 	'confirmaccount-email'       => 'Retpoŝto:',
 	'confirmaccount-pos-0'       => 'aŭtoro',
@@ -1022,8 +1030,11 @@ Pasvorto: $2
 $3
 
 Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:Userlogin}}.',
+	'usercredentials-user'       => 'Salutnomo:',
 	'usercredentials-email'      => 'Retpoŝto:',
+	'usercredentials-real'       => 'Reala nomo:',
 	'usercredentials-bio'        => 'Biografio:',
+	'usercredentials-ip'         => 'Originala IP-adreso:',
 	'usercredentials-member'     => 'Rajtoj:',
 );
 
@@ -2493,22 +2504,195 @@ $messages['ml'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Kaustubh
  * @author Mahitgar
  */
 $messages['mr'] = array(
-	'requestaccount-real'     => 'खरे नाव:',
-	'requestaccount-reqtype'  => 'हुद्दा:',
-	'requestaccount-level-0'  => 'लेखक',
-	'requestaccount-level-1'  => 'संपादक',
-	'confirmaccount-real-q'   => 'नाव',
-	'confirmaccount-email-q'  => 'विपत्र',
-	'confirmaccount-review'   => 'समीक्षण',
-	'confirmaccount-leg-user' => 'सदस्य खाते',
-	'confirmaccount-real'     => 'नाव:',
-	'confirmaccount-ip'       => 'अंक पत्ता:',
-	'usercredentials-email'   => 'विपत्र:',
-	'usercredentials-urls'    => 'संकेतस्थळांची यादी:',
-	'usercredentials-member'  => 'अधिकार:',
+	'requestaccount'                  => 'खाते मागवा',
+	'requestaccount-text'             => "'''खाते तयार करण्यासाठी खालील अर्ज भरून पाठवा'''.
+
+अर्ज पाठविण्यापूर्वी तुम्ही [[{{MediaWiki:Requestaccount-page}}|अटी व नियम]] वाचलेले असल्याची खात्री करा.
+
+एकदा का खाते तयार झाले की तुम्हाला तसा इमेल संदेश येईल व तुम्ही [[Special:Userlogin]] मध्ये प्रवेश करू शकाल.",
+	'requestaccount-page'             => '{{ns:project}}:अटी व नियम',
+	'requestaccount-dup'              => "'''सूचना: तुम्ही अगोदरच नोंदीकृत खात्यामधून प्रवेश केलेला आहे.'''",
+	'requestaccount-leg-user'         => 'सदस्य खाते',
+	'requestaccount-leg-areas'        => 'मुख्य पसंती',
+	'requestaccount-leg-person'       => 'वैयक्तिक माहिती',
+	'requestaccount-leg-other'        => 'इतर माहिती',
+	'requestaccount-acc-text'         => 'ही मागणी पूर्ण झाल्यावर तुमच्या इमेल पत्त्यावर एक संदेश येईल. कृपया त्या संदेशात दिलेल्या दुव्यावर टिचकी मारुन सदस्य खात्याची खात्री करा. खाते तयार झाल्यावर परवलीचा शब्द तुमच्या इमेल वर पाठविला जाईल.',
+	'requestaccount-areas-text'       => 'खालील क्षेत्रांपैकी तुमच्या पसंतीचे तसेच तुम्ही जाणकार असलेले विषय निवडा.',
+	'requestaccount-ext-text'         => 'खालील माहिती ही गोपनीय असेल व फक्त या मागणी करताच वापरली जाईल.
+तुम्ही ओळख पटविण्यासाठी एखादा संपर्क क्रमांक देऊ शकता.',
+	'requestaccount-bio-text'         => 'तुमची वैयक्तिक माहिती तुमच्या सदस्य पानावर दिसेल.
+काही विशेष उल्लेखनीय कामगिरी असल्यास ती वाढविण्याचा प्रयत्न करा.
+तसेच ही माहिती प्रकाशित करण्यास तुमची हरकत नाही हे तपासून पहा.
+तुमचे नाव तुम्ही [[Special:Preferences]] मध्ये बदलू शकता.',
+	'requestaccount-real'             => 'खरे नाव:',
+	'requestaccount-same'             => '(खर्‍या नावा प्रमाणेच)',
+	'requestaccount-email'            => 'इमेल पत्ता:',
+	'requestaccount-reqtype'          => 'हुद्दा:',
+	'requestaccount-level-0'          => 'लेखक',
+	'requestaccount-level-1'          => 'संपादक',
+	'requestaccount-bio'              => 'वैयक्तिक माहिती:',
+	'requestaccount-attach'           => 'रिज्यूम किंवा सीव्ही (CV) (वैकल्पिक):',
+	'requestaccount-notes'            => 'अधिक माहिती:',
+	'requestaccount-urls'             => 'संकेतस्थळांची यादी (एका ओळीत एक):',
+	'requestaccount-agree'            => 'तुम्ही दिलेले स्वत:चे खरे नाव हे बरोबर असल्याचे नमूद करा तसेच तुम्हाला अटी व नियम मान्य आहेत असे नमूद करा.',
+	'requestaccount-inuse'            => 'तुम्ही दिलेले सदस्यनाव या आधीच कुणीतरी खाते उघडण्यासाठी मागितलेले आहे.',
+	'requestaccount-tooshort'         => 'तुमच्या वैयक्तिक माहिती मध्ये कमीतकमी $1 शब्द असणे आवश्यक आहे.',
+	'requestaccount-emaildup'         => 'तुम्ही दिलेला इमेल पत्ता दुसर्‍या एका पूर्ण न झालेल्या मागणीमध्ये नोंदलेला आहे.',
+	'requestaccount-exts'             => 'जोडण्याच्या संचिकेचा प्रकार वापरायला परवानगी नाही.',
+	'requestaccount-resub'            => 'तुमच्या रिज्यूमची संचिका सुरक्षेच्या कारणास्तव पुन्हा निवडणे आवश्यक आहे.
+जर तुम्ही चढवू इच्छित नसाल तर तो रकाना रिकामा ठेवा.',
+	'requestaccount-tos'              => 'मी {{SITENAME}} वरचे [[{{MediaWiki:Requestaccount-page}}|नियम व अटी]] वाचलेले असून त्यांना बांधील राहण्याचे वचन देतो.
+तसेच मी दिलेले "खरे नाव" हे माझेच खरे नाव आहे.',
+	'requestaccount-submit'           => 'खाते मागवा',
+	'requestaccount-sent'             => 'तुमची खात्याची मागणी नोंदलेली आहे व पुनर्तपासणीसाठी गेलेली आहे.',
+	'request-account-econf'           => 'तुमचा इमेल पत्ता तपासलेला आहे व तो तुमच्या खात्याच्या मागणीमध्ये नोंदला जाईल.',
+	'requestaccount-email-subj'       => '{{SITENAME}} इमेल पत्ता तपासणी',
+	'requestaccount-email-body'       => 'कुणीतरी, बहुतेक तुम्ही, $1 या आयपी अंकपत्त्यावरून, {{SITENAME}} वर "$2" हे खाते उघडण्याची मागणी ह्या इमेल पत्त्यावर नोंदविलेली आहे.
+
+{{SITENAME}} वरील हे खाते तुमचेच असल्याची खात्री करण्यासाठी कृपया खालील दुव्यावर टिचकी मारा:
+
+$3
+
+जर तुमचे खाते तयार झाले, तर तुम्हाला परवलीचा शब्द इमेलमार्फत पाठविण्यात येईल. जर ही मागणी तुम्ही दिलेली *नसेल*, तर दुव्यावर टिचकी मारू नका.
+हा खात्री कोड $4 नंतर रद्द होईल.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} खाते मागणी',
+	'requestaccount-email-body-admin' => '"$1" ने एक खात्याची मागणी नोंदविलेली आहे व ती तुमच्या सहमतीची वाट पाहत आहे.
+इमेल पत्ता तपासलेला आहे. तुम्ही तुमची सहमती "$2" इथे नोंदवू शकता.',
+	'acct_request_throttle_hit'       => 'माफ करा, तुम्ही अगोदरच $1 खात्यांची मागणी नोंदविलेली आहे. तुम्ही अजून मागण्या नोंदवू शकत नाही.',
+	'requestaccount-loginnotice'      => "सदस्य खाते मिळविण्यासाठी तुम्ही तुमची '''[[Special:RequestAccount|मागणी नोंदवा]]'''.",
+	'confirmaccount-newrequests'      => "'''$1''' इमेल पत्ता तपासलेला आहे {{PLURAL:$1|[[Special:ConfirmAccounts|खात्याची मागणी]]|[[Special:ConfirmAccounts|खात्यांची मागणी]]}} शिल्लक",
+	'confirmaccounts'                 => 'खाते मागणीला सहमती द्या',
+	'confirmedit-desc'                => 'अधिकार्‍यांना (bureaucrats) खाते मागणी पूर्ण करण्याचे अधिकार देते',
+	'confirmaccount-maintext'         => "'''''{{SITENAME}}'' वरील प्रलंबित खाते मागण्या पूर्ण करण्यासाठी हे पान वापरले जाते'''.
+
+प्रत्येक खाते मागणी तीन विभांगांत दिलेली आहे, एक प्रलंबित मागणी साठी, एक ज्याला इतर प्रबंधकांनी प्रलंबित ठेवलेले आहे व तिसरा ज्या मागण्या अलीकडील काळात नाकारलेल्या आहेत. 
+
+एखाद्या मागणीला सहमती देताना, काळजीपूर्वक तपासा तसेच दिलेली माहिती पूर्ण असल्याची खात्री करा.  
+तुमच्या क्रिया गोपनीयरित्या नोंदल्या जातील. तुम्ही करत असलेल्या क्रियांबरोबरच इतरांनी केलेल्या क्रिया तपासून पहा.",
+	'confirmaccount-list'             => 'खाली प्रलंबित खाते मागण्यांची यादी आहे. एखादी मागणी स्वीकारण्यात अथवा नाकारण्यात आल्यानंतर ती या यादीतून वगळली जाईल.',
+	'confirmaccount-list2'            => 'खाली अलीकडील काळात नाकारण्यात आलेल्या मागण्यांची यादी आहे. ही यादी काही ठराविक दिवसांनंतर रिकामी केली जाईल. तुम्ही पूर्वी नाकारलेल्या मागण्या खाते नोंदणीकरता स्वीकारू शकता. पण असे करण्यापूर्वी नाकारलेल्या प्रबंधकांशी संपर्क साधा.',
+	'confirmaccount-list3'            => 'खाली आपोआप रद्द झालेल्या खाते मागण्यांची यादी आहे. काही ठराविक दिवसांनंतर त्या मागण्या या यादीतून वगळल्या जातील. तुम्ही या मागण्या पूर्ण करू शकता.',
+	'confirmaccount-text'             => "'''{{SITENAME}}''' वरील ही एक प्रलंबित खाते मागणी आहे.
+
+खालील माहिती काळजीपूर्वक तपासा. जर तुम्ही ही मागणी स्वीकारणार असाल, तर स्थिती च्या पुढे या सदस्याची स्थिती निवडा.
+अर्जातील माहिती मध्ये केलेले बदल कायमस्वरूपी जतन केले जाणार नाहीत. तुम्ही हे खाते दुसर्‍या नावाने सुद्धा उघडू शकता याची नोंद घ्या.
+हे फक्त इतर सदस्यनावांशी साम्य असलेल्या बाबतीतच वापरावे.
+
+तुम्ही जर ही मागणी स्वीकारली अथवा नाकारली नाहीत, तर ती प्रलंबित ठेवली जाईल.",
+	'confirmaccount-none-o'           => 'या यादीत सध्या एकही प्रलंबित खाते मागणी नाही.',
+	'confirmaccount-none-h'           => 'या यादीत सध्या एकही प्रलंबित ठेवलेली खाते मागणी नाही.',
+	'confirmaccount-none-r'           => 'या यादीत सध्या एकही नाकारण्यात आलेली खाते मागणी नाही.',
+	'confirmaccount-none-e'           => 'या यादीत सध्या एकही रद्द झालेली खाते मागणी नाही.',
+	'confirmaccount-real-q'           => 'नाव',
+	'confirmaccount-email-q'          => 'विपत्र',
+	'confirmaccount-bio-q'            => 'चरित्र',
+	'confirmaccount-showopen'         => 'प्रलंबित मागण्या',
+	'confirmaccount-showrej'          => 'नाकारलेल्या मागण्या',
+	'confirmaccount-showheld'         => 'प्रलंबित ठेवलेल्या मागण्या',
+	'confirmaccount-showexp'          => 'रद्द झालेल्या मागण्या',
+	'confirmaccount-review'           => 'समीक्षण',
+	'confirmaccount-types'            => 'खालील पैकी एक खाते सहमती रांग निवडा:',
+	'confirmaccount-all'              => '(सर्व रांगा दाखवा)',
+	'confirmaccount-type'             => 'रांग:',
+	'confirmaccount-type-0'           => 'इच्छुक लेखक',
+	'confirmaccount-type-1'           => 'इच्छुक संपादक',
+	'confirmaccount-q-open'           => 'प्रलंबित मागण्या',
+	'confirmaccount-q-held'           => 'प्रलंबित ठेवलेल्या मागण्या',
+	'confirmaccount-q-rej'            => 'अलीकडील काळात नाकारलेल्या मागण्या',
+	'confirmaccount-q-stale'          => 'रद्द झालेल्या मागण्या',
+	'confirmaccount-badid'            => 'दिलेल्या क्रमांकाशी जुळणारी प्रलंबित मागणी सापडली नाही.
+ती आधीच तपासली गेलेली असू शकते.',
+	'confirmaccount-leg-user'         => 'सदस्य खाते',
+	'confirmaccount-leg-areas'        => 'पसंतीची मुख्य क्षेत्रे',
+	'confirmaccount-leg-person'       => 'वैयक्तिक माहिती',
+	'confirmaccount-leg-other'        => 'इतर माहिती',
+	'confirmaccount-name'             => 'सदस्यनाव',
+	'confirmaccount-real'             => 'नाव:',
+	'confirmaccount-email'            => 'इमेल:',
+	'confirmaccount-reqtype'          => 'स्थिती:',
+	'confirmaccount-pos-0'            => 'लेखक',
+	'confirmaccount-pos-1'            => 'संपादक',
+	'confirmaccount-bio'              => 'चरित्र:',
+	'confirmaccount-attach'           => 'रिज्यूम/सीव्ही:',
+	'confirmaccount-notes'            => 'अधिक माहिती:',
+	'confirmaccount-urls'             => 'संकेतस्थळांची यादी:',
+	'confirmaccount-none-p'           => '(दिलेले नाही)',
+	'confirmaccount-confirm'          => 'ही मागणी स्वीकारण्यासाठी, प्रलंबित ठेवण्यासाठी किंवा नाकारण्यासाठी खालील रकाने निवडा:',
+	'confirmaccount-econf'            => '(खात्री केलेले)',
+	'confirmaccount-reject'           => '([[User:$1|$1]] ने $2 वर नाकारली)',
+	'confirmaccount-rational'         => 'अर्जदाराला दिलेले कारण (rationale):',
+	'confirmaccount-noreason'         => '(काहीही नाही)',
+	'confirmaccount-autorej'          => '(ही मागणी अकार्यक्षमतेमुळे आपोआप नाकारण्यात आलेली आहे)',
+	'confirmaccount-held'             => '([[User:$1|$1]] ने $2 वर "प्रलंबित ठेवलेली" आहे)',
+	'confirmaccount-create'           => 'मान्य करा (खाते तयार करा)',
+	'confirmaccount-deny'             => 'नाकारा (यादीतून काढून टाका)',
+	'confirmaccount-hold'             => 'प्रलंबित ठेवा',
+	'confirmaccount-spam'             => 'स्पॅम (इमेल पाठवू नका)',
+	'confirmaccount-reason'           => 'शेरा (इमेल मध्ये लिहिला जाईल):',
+	'confirmaccount-ip'               => 'अंक पत्ता:',
+	'confirmaccount-submit'           => 'खात्री करा',
+	'confirmaccount-needreason'       => 'तुम्ही खालील शेरा पेटीमध्ये कारण देणे आवश्यक आहे.',
+	'confirmaccount-canthold'         => 'ही मागणी अगोदरच प्रलंबित ठेवलेली किंवा नाकारलेली आहे.',
+	'confirmaccount-acc'              => 'खाते मागणी यशस्वीरित्या पूर्ण; [[User:$1]] हे नवीन खाते तयार केले.',
+	'confirmaccount-rej'              => 'खाते मागणी यशस्वीरित्या नाकारण्यात आलेली आहे.',
+	'confirmaccount-viewing'          => '([[User:$1|$1]] ने पहारा दिलेला आहे)',
+	'confirmaccount-summary'          => 'नवीन सदस्याच्या माहितीप्रमाणे सदस्य पान तयार करीत आहे.',
+	'confirmaccount-welc'             => "'''''{{SITENAME}}'' वर आपले स्वागत आहे!''' आम्ही आशा करतो की आपण इथे योगदान द्याल.
+तुम्ही कदाचित [[{{MediaWiki:Helppage}}|साहाय्य पाने]] वाचू इच्छित असाल. पुन्हा एकदा, स्वागत!",
+	'confirmaccount-wsum'             => 'सुस्वागतम्‌!',
+	'confirmaccount-email-subj'       => '{{SITENAME}} खाते मागणी',
+	'confirmaccount-email-body'       => '{{SITENAME}} वर दिलेली तुमची खाते मागणी स्वीकारण्यात आलेली आहे.
+
+खाते नाव: $1
+
+परवलीचा शब्द: $2
+
+सुरक्षेच्या कारणास्तव पहिल्यांदा प्रवेश केल्यानंतर तुमचा परवलीचा शब्द बदलणे आवश्यक आहे. प्रवेश करण्यासाठी, कृपया {{fullurl:Special:Userlogin}} इथे जा.',
+	'confirmaccount-email-body2'      => '{{SITENAME}} वरची तुमची "$1" खाते मागणी स्वीकारण्यात आलेली आहे.
+
+खाते नाव: $1
+
+परवलीचा शब्द: $2
+
+$3
+
+सुरक्षेच्या कारणास्तव पहिल्यांदा प्रवेश केल्यावर तुम्हाला परवलीचा शब्द बदलावा लागेल. प्रवेश करण्यासाठी {{fullurl:Special:Userlogin}} इथे जा.',
+	'confirmaccount-email-body3'      => 'माफ करा, {{SITENAME}} वरची तुमची "$1" खाते मागणी नाकारण्यात आलेली आहे.
+
+याची अनेक कारणे असू शकतात.
+तुम्ही अर्ज चुकीचा भरला असू शकतो, किंवा योग्य लांबीची उत्तरे दिली नसतील, किंवा काही विशिष्ट माहिती मध्ये कमतरता असेल
+संकेतस्थळावर संपर्क यादी असू शकते जी वापरून तुम्ही या बद्दल अधिक माहिती मिळवू शकाल.',
+	'confirmaccount-email-body4'      => 'माफ करा, {{SITENAME}} वरची तुमची "$1" खाते मागणी नाकारण्यात आलेली आहे.
+
+$2
+
+संकेतस्थळावर संपर्क यादी असू शकते जी वापरून तुम्ही या बद्दल अधिक माहिती मिळवू शकाल.',
+	'confirmaccount-email-body5'      => '{{SITENAME}} वरची तुमची "$1" खाते मागणी स्वीकारण्यापूर्वी तुम्ही अधिक माहिती देणे गरजेचे आहे.
+
+$2
+
+संकेतस्थळावर संपर्क यादी असू शकते जी वापरून तुम्ही या बद्दल अधिक माहिती मिळवू शकाल.',
+	'usercredentials'                 => 'सदस्याची शिफारसपत्रे',
+	'usercredentials-leg'             => 'सदस्याची प्रमाणित केलेली शिफारसपत्रे पहा',
+	'usercredentials-user'            => 'सदस्यनाव:',
+	'usercredentials-text'            => 'खाली निवडलेल्या सदस्याची प्रमाणित केलेली शिफारसपत्रे दिलेली आहेत.',
+	'usercredentials-leg-user'        => 'सदस्य खाते',
+	'usercredentials-leg-areas'       => 'पसंतीची मुख्य क्षेत्रे',
+	'usercredentials-leg-person'      => 'वैयक्तिक माहिती',
+	'usercredentials-leg-other'       => 'इतर माहिती',
+	'usercredentials-email'           => 'विपत्र:',
+	'usercredentials-real'            => 'खरे नाव:',
+	'usercredentials-bio'             => 'चरित्र:',
+	'usercredentials-attach'          => 'रिज्यूम/सीव्ही:',
+	'usercredentials-notes'           => 'अधिक माहिती:',
+	'usercredentials-urls'            => 'संकेतस्थळांची यादी:',
+	'usercredentials-ip'              => 'मूळ आयपी अंकपत्ता:',
+	'usercredentials-member'          => 'अधिकार:',
+	'usercredentials-badid'           => 'या सदस्याची शिफारसपत्रे सापडली नाहीत. सदस्य नाव बरोबर असल्याची खात्री करा.',
 );
 
 /** Low German (Plattdüütsch)
@@ -2639,12 +2823,12 @@ Wellicht is het al afgehandeld.',
 	'confirmaccount-leg-person'       => 'Persoonlijke informatie',
 	'confirmaccount-leg-other'        => 'Overige informatie',
 	'confirmaccount-name'             => 'Gebruikersnaam',
-	'confirmaccount-real'             => 'Naam',
-	'confirmaccount-email'            => 'E-mail',
+	'confirmaccount-real'             => 'Naam:',
+	'confirmaccount-email'            => 'E-mail:',
 	'confirmaccount-reqtype'          => 'Positie:',
 	'confirmaccount-pos-0'            => 'auteur',
 	'confirmaccount-pos-1'            => 'redacteur',
-	'confirmaccount-bio'              => 'Biografie',
+	'confirmaccount-bio'              => 'Biografie:',
 	'confirmaccount-attach'           => 'CV (informatie over u):',
 	'confirmaccount-notes'            => 'Opmerkingen:',
 	'confirmaccount-urls'             => 'Lijst met websites:',
@@ -2718,11 +2902,12 @@ Er kunnen contacteerlijsten zijn die u kunt gebruiken als u meer wil te weten ko
 	'usercredentials-real'            => 'Echte naam:',
 	'usercredentials-bio'             => 'Biografie:',
 	'usercredentials-attach'          => 'CV:',
-	'usercredentials-notes'           => 'Additionele nota:',
+	'usercredentials-notes'           => 'Overige opmerkingen:',
 	'usercredentials-urls'            => 'Lijst van websites:',
 	'usercredentials-ip'              => 'Oorspronkelijk IP-adres:',
 	'usercredentials-member'          => 'Rechten:',
-	'usercredentials-badid'           => 'Geen referenties gevonden voor deze gebruiker. Kijk na of de naam correct gespeld is.',
+	'usercredentials-badid'           => 'Geen referenties gevonden voor deze gebruiker.
+Kijk na of de naam correct gespeld is.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
