@@ -1919,7 +1919,7 @@ Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš w
 );
 
 /** Hungarian (Magyar)
- * @author Bdanee
+ * @author Dani
  * @author Dorgan
  * @author Tgr
  */
