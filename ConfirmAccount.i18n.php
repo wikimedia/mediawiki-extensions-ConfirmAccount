@@ -477,13 +477,17 @@ $3
 	'confirmaccount-list'             => 'Следва списък от заявките за потребителски сметки, които очакват одобрение.
 Одобрените сметки ще бъдат създадени и премахнати от списъка. Отхвърлените сметки просто ще бъдат премахнати.',
 	'confirmaccount-list2'            => 'Следва списък от наскоро отхвърлените заявки за сметки, които могат да бъдат автоматично изтрити след изтичане на няколко дни от отказа. Заявка от този списък все още може да бъде одобрена, но е желателно преди това да се посъветвате с администратора, който я е отхвърлил.',
+	'confirmaccount-none-o'           => 'В момента списъкът не съдържа отворени изчакващи заявки за сметки.',
+	'confirmaccount-none-h'           => 'В момента списъкът не съдържа задържани изчакващи заявки за сметки.',
 	'confirmaccount-none-r'           => 'Понастоящем в списъка няма наскоро отхвърлени заявки за сметки.',
+	'confirmaccount-none-e'           => 'В момента списъкът не съдържа изтекли заявки за сметки.',
 	'confirmaccount-real-q'           => 'Име',
 	'confirmaccount-email-q'          => 'Електронна поща',
 	'confirmaccount-bio-q'            => 'Биография',
-	'confirmaccount-back'             => 'Преглед на списъка с отворени изчакващи сметки',
-	'confirmaccount-back2'            => 'Преглед на списъка на наскоро отхвърлените сметки',
+	'confirmaccount-showopen'         => 'отворени заявки',
+	'confirmaccount-showrej'          => 'отказани заявки',
 	'confirmaccount-showheld'         => 'Преглед на списъка със задържани сметки',
+	'confirmaccount-showexp'          => 'изтекли заявки',
 	'confirmaccount-review'           => 'Преглеждане',
 	'confirmaccount-all'              => '(показване на всички опашки)',
 	'confirmaccount-type'             => 'Избрана опашка:',
@@ -492,6 +496,7 @@ $3
 	'confirmaccount-q-open'           => 'отворени заявки',
 	'confirmaccount-q-held'           => 'задържани заявки',
 	'confirmaccount-q-rej'            => 'наскоро отхвърлени заявки',
+	'confirmaccount-q-stale'          => 'изтекли заявки',
 	'confirmaccount-leg-user'         => 'Потребителска сметка',
 	'confirmaccount-leg-areas'        => 'Основни интереси',
 	'confirmaccount-leg-person'       => 'Лична информация',
@@ -1712,31 +1717,55 @@ $messages['gu'] = array(
  * @author Dnik
  */
 $messages['hr'] = array(
-	'requestaccount-legend2'  => 'Osobne informacije',
-	'requestaccount-legend3'  => 'Ostale informacije',
-	'requestaccount-real'     => 'Pravo ime:',
-	'confirmaccount-none-h'   => 'Nema zahtjeva u popisu čekanja.',
-	'confirmaccount-none-r'   => 'Nema nedavno odbijenih zahtjeva na popisu.',
-	'confirmaccount-badid'    => 'Nema zahtjeva koji ima dani ID. Najvjerojatnije je zahtjev već obrađen.',
-	'confirmaccount-back'     => 'Vidi popis zahtjeva za suradnički račun',
-	'confirmaccount-back2'    => 'Vidi popis nedavno odbijenih zahtjeva',
-	'confirmaccount-showheld' => 'Vidi popis zahtjeva na čekanju',
-	'confirmaccount-name'     => 'Suradničko ime',
-	'confirmaccount-real'     => 'Ime:',
-	'confirmaccount-real-q'   => 'Ime',
-	'confirmaccount-email-q'  => 'E-pošta (e-mail)',
-	'confirmaccount-bio'      => 'Biografija:',
-	'confirmaccount-bio-q'    => 'Biografija',
-	'confirmaccount-attach'   => 'Biografija/CV:',
-	'confirmaccount-notes'    => 'Dodatne bilješke:',
-	'confirmaccount-urls'     => 'Popis web stranica:',
-	'confirmaccount-none-p'   => '(nije naveden)',
-	'confirmaccount-review'   => 'Potvrdi/odbij',
-	'confirmaccount-econf'    => '(potvrđen)',
-	'confirmaccount-reject'   => '(zahtjev odbio [[User:$1|$1]] dana $2)',
-	'confirmaccount-create'   => 'Prihvati zahtjev (otvori suradnički račun)',
-	'confirmaccount-deny'     => 'Odbij (i skini s popisa)',
-	'confirmaccount-hold'     => 'Zadrži',
+	'requestaccount'             => 'Zatraži suradnički račun',
+	'requestaccount-text'        => "'''Ispunite sljedeći formular i pošaljite ga da bi zatražili suradnički račun'''.
+
+Pročitajte [[{{MediaWiki:Requestaccount-page}}|Uvjete uporabe]] prije traženja suradničkog računa.
+
+Kad vam račun bude odobren, dobit ćete e-mail potvrdu i moći ćete se [[Special:Userlogin|prijaviti]].",
+	'requestaccount-dup'         => "'''Već ste prijavljeni!'''",
+	'requestaccount-leg-user'    => 'Suradnički račun',
+	'requestaccount-leg-person'  => 'Osobni podaci',
+	'requestaccount-leg-other'   => 'Ostali podaci',
+	'requestaccount-acc-text'    => "Dobiti ćete poruku elektroničkom poštom (''e-mail'') kao potvrdu da ste zatražili suradnički račun.
+Molimo odgovorite na tu poruku tako što ćete kliknuti na poveznicu (''link'') u toj poruci.
+Kad vam račun bude odobren/otvoren, lozinku ćete dobiti elektroničkom poštom.",
+	'requestaccount-ext-text'    => 'Sljedeći podaci nisu dostupni drugima, rabe se samo u ovom upitu. 
+Možda želite navesti broj telefona (mobitela) kao pomoć za potvrđivanje vašeg identiteta.',
+	'requestaccount-bio-text'    => 'Vaša biografija će biti postavljena na vašu suradničku stranicu. 
+Pokušajte napisati nešto o sebi. 
+Ne pišite osjetljive informacije. 
+Ime je moguće promijeniti putem [[Special:Preferences|postavki]].',
+	'requestaccount-real'        => 'Pravo ime:',
+	'requestaccount-same'        => '(bit će isto kao i pravo ime)',
+	'requestaccount-email'       => "Adresa e-pošte (vaš ''e-mail''):",
+	'requestaccount-bio'         => 'Osobna biografija:',
+	'requestaccount-tos'         => 'Pročitao sam i slažem se s [[{{MediaWiki:Requestaccount-page}}|Uvjetima uporabe]] internetskih stranica {{SITENAME}}.
+Ime koje sam napisao kao "Pravo ime" je moje pravo ime (nije nadimak/alias).',
+	'requestaccount-submit'      => 'Zatraži račun',
+	'requestaccount-loginnotice' => "Da bi dobili suradnički račun, trebate ga '''[[Special:RequestAccount|zatražiti]]'''.",
+	'confirmaccount-none-h'      => 'Nema zahtjeva u popisu čekanja.',
+	'confirmaccount-none-r'      => 'Nema nedavno odbijenih zahtjeva na popisu.',
+	'confirmaccount-real-q'      => 'Ime',
+	'confirmaccount-email-q'     => 'E-pošta (e-mail)',
+	'confirmaccount-bio-q'       => 'Biografija',
+	'confirmaccount-showheld'    => 'Vidi popis zahtjeva na čekanju',
+	'confirmaccount-review'      => 'Potvrdi/odbij',
+	'confirmaccount-all'         => '(prikaži sve redove)',
+	'confirmaccount-type'        => 'Red:',
+	'confirmaccount-badid'       => 'Nema zahtjeva koji ima dani ID. Najvjerojatnije je zahtjev već obrađen.',
+	'confirmaccount-name'        => 'Suradničko ime',
+	'confirmaccount-real'        => 'Ime:',
+	'confirmaccount-bio'         => 'Biografija:',
+	'confirmaccount-attach'      => 'Biografija/CV:',
+	'confirmaccount-notes'       => 'Dodatne bilješke:',
+	'confirmaccount-urls'        => 'Popis web stranica:',
+	'confirmaccount-none-p'      => '(nije naveden)',
+	'confirmaccount-econf'       => '(potvrđen)',
+	'confirmaccount-reject'      => '(zahtjev odbio [[User:$1|$1]] dana $2)',
+	'confirmaccount-create'      => 'Prihvati zahtjev (otvori suradnički račun)',
+	'confirmaccount-deny'        => 'Odbij (i skini s popisa)',
+	'confirmaccount-hold'        => 'Zadrži',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
