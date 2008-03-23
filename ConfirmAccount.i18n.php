@@ -1003,6 +1003,7 @@ $messages['eo'] = array(
 	'requestaccount-notes'       => 'Pluaj notoj:',
 	'requestaccount-tooshort'    => 'Via biografio estu almenaŭ $1 vortoj.',
 	'requestaccount-submit'      => 'Petu konton',
+	'requestaccount-email-subj'  => '{{SITENAME}} retpoŝta konfirmo',
 	'confirmaccount-real-q'      => 'Nomo',
 	'confirmaccount-email-q'     => 'Retpoŝto',
 	'confirmaccount-bio-q'       => 'Biografio',
@@ -1046,9 +1047,12 @@ $3
 
 Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:Userlogin}}.',
 	'usercredentials-user'       => 'Salutnomo:',
+	'usercredentials-leg-user'   => 'Konto de uzanto',
+	'usercredentials-leg-person' => 'Persona informo',
 	'usercredentials-email'      => 'Retpoŝto:',
 	'usercredentials-real'       => 'Reala nomo:',
 	'usercredentials-bio'        => 'Biografio:',
+	'usercredentials-urls'       => 'Listo de retejoj:',
 	'usercredentials-ip'         => 'Originala IP-adreso:',
 	'usercredentials-member'     => 'Rajtoj:',
 );
