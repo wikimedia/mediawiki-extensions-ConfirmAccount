@@ -762,25 +762,26 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
 		
-		# Show other sub-queue links. Grey out the current one...
-		if( $this->showStale || $this->showRejects || $this->showHeld ) {
+		# Show other sub-queue links. Grey out the current one.
+		# When viewing a request, show them all.
+		if( $this->acrID || $this->showStale || $this->showRejects || $this->showHeld ) {
 			$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showopen' ) );
 		} else {
 			$listLink = wfMsgHtml( 'confirmaccount-showopen' );
 		}
-		if( !$this->showHeld ) {
+		if( $this->acrID || !$this->showHeld ) {
 			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, 
 				wfMsgHtml( 'confirmaccount-showheld' ), wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) );
 		} else {
 			$listLink .= ' | '.wfMsgHtml( 'confirmaccount-showheld' );
 		}
-		if( !$this->showRejects ) {
+		if( $this->acrID || !$this->showRejects ) {
 			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showrej' ),
 				wfArrayToCGI( array( 'wpShowRejects' => 1 ) ) );
 		} else {
 			$listLink .= ' | '.wfMsgHtml( 'confirmaccount-showrej' );
 		}
-		if( !$this->showStale ) {
+		if( $this->acrID || !$this->showStale ) {
 			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showexp' ),
 				wfArrayToCGI( array( 'wpShowStale' => 1 ) ) );
 		} else {
@@ -1044,8 +1045,8 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		$store = FileStore::get( 'accountreqs' );
 		if( !$store ) {
-				wfDebug( __METHOD__.": invalid storage group '{$store}'.\n" );
-				return false;
+			wfDebug( __METHOD__.": invalid storage group '{$store}'.\n" );
+			return false;
 		}
 		$store->stream( $key );
 	}
