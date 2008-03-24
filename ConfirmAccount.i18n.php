@@ -710,14 +710,23 @@ $messages['cs'] = array(
 );
 
 /** Danish (Dansk)
+ * @author Jon Harald Søby
  * @author M.M.S.
  */
 $messages['da'] = array(
-	'confirmaccount-real-q' => 'Navn',
-	'confirmaccount-name'   => 'Brugernavn',
-	'confirmaccount-real'   => 'Navn:',
-	'confirmaccount-wsum'   => 'Velkommen!',
-	'usercredentials-user'  => 'Brugernavn:',
+	'requestaccount-real'     => 'Virkeligt navn:',
+	'confirmaccount-real-q'   => 'Navn',
+	'confirmaccount-email-q'  => 'E-mail',
+	'confirmaccount-name'     => 'Brugernavn',
+	'confirmaccount-real'     => 'Navn:',
+	'confirmaccount-email'    => 'E-mail:',
+	'confirmaccount-noreason' => '(ingen)',
+	'confirmaccount-ip'       => 'IP-adresse:',
+	'confirmaccount-submit'   => 'Bekræft',
+	'confirmaccount-wsum'     => 'Velkommen!',
+	'usercredentials-user'    => 'Brugernavn:',
+	'usercredentials-email'   => 'E-mail:',
+	'usercredentials-real'    => 'Virkeligt navn:',
 );
 
 /** German (Deutsch)
@@ -990,54 +999,62 @@ $messages['el'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
-	'requestaccount'             => 'Petu konton',
-	'requestaccount-leg-user'    => 'Konto de uzanto',
-	'requestaccount-leg-person'  => 'Persona informo',
-	'requestaccount-leg-other'   => 'Alia informo',
-	'requestaccount-real'        => 'Reala nomo:',
-	'requestaccount-same'        => '(sama kiel reala nomo)',
-	'requestaccount-email'       => 'Retpoŝta adreso:',
-	'requestaccount-level-0'     => 'aŭtoro',
-	'requestaccount-level-1'     => 'Redaktanto',
-	'requestaccount-bio'         => 'Persona biografio:',
-	'requestaccount-notes'       => 'Pluaj notoj:',
-	'requestaccount-tooshort'    => 'Via biografio estu almenaŭ $1 vortoj.',
-	'requestaccount-submit'      => 'Petu konton',
-	'requestaccount-email-subj'  => '{{SITENAME}} retpoŝta konfirmo',
-	'confirmaccount-real-q'      => 'Nomo',
-	'confirmaccount-email-q'     => 'Retpoŝto',
-	'confirmaccount-bio-q'       => 'Biografio',
-	'confirmaccount-showopen'    => 'malfermaj petoj',
-	'confirmaccount-leg-user'    => 'Konto de uzanto',
-	'confirmaccount-name'        => 'Salutnomo',
-	'confirmaccount-real'        => 'Nomo:',
-	'confirmaccount-email'       => 'Retpoŝto:',
-	'confirmaccount-pos-0'       => 'aŭtoro',
-	'confirmaccount-pos-1'       => 'redaktanto',
-	'confirmaccount-bio'         => 'Biografio:',
-	'confirmaccount-notes'       => 'Pluaj notoj:',
-	'confirmaccount-urls'        => 'Listo de retejoj:',
-	'confirmaccount-econf'       => '(konfirmita)',
-	'confirmaccount-reject'      => '(malkonfirmita de [[User:$1|$1]] je $2)',
-	'confirmaccount-noreason'    => '(nenio)',
-	'confirmaccount-spam'        => 'Spamo (ne sendu retpoŝton)',
-	'confirmaccount-reason'      => 'Komento (estos inkluzivita en retpoŝto):',
-	'confirmaccount-ip'          => 'IP-adreso',
-	'confirmaccount-submit'      => 'Konfirmu',
-	'confirmaccount-viewing'     => '(nune okulumis uzanto [[User:$1|$1]])',
-	'confirmaccount-summary'     => 'Kreante uzanto-paĝon kun biografio de nova uzanto.',
-	'confirmaccount-welc'        => "'''Bonvenon al ''{{SITENAME}}''!''' Ni esperas ke vi kontribuos multe kaj bone.
+	'requestaccount'                  => 'Petu konton',
+	'requestaccount-leg-user'         => 'Konto de uzanto',
+	'requestaccount-leg-person'       => 'Persona informo',
+	'requestaccount-leg-other'        => 'Alia informo',
+	'requestaccount-real'             => 'Reala nomo:',
+	'requestaccount-same'             => '(sama kiel reala nomo)',
+	'requestaccount-email'            => 'Retpoŝta adreso:',
+	'requestaccount-level-0'          => 'aŭtoro',
+	'requestaccount-level-1'          => 'Redaktanto',
+	'requestaccount-bio'              => 'Persona biografio:',
+	'requestaccount-notes'            => 'Pluaj notoj:',
+	'requestaccount-tooshort'         => 'Via biografio estu almenaŭ $1 vortoj.',
+	'requestaccount-submit'           => 'Petu konton',
+	'requestaccount-email-subj'       => '{{SITENAME}} retpoŝta konfirmo',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} peto por konto',
+	'requestaccount-loginnotice'      => "Akiri uzanto-konton, vi devas '''[[Special:RequestAccount|peti ĝin]]'''.",
+	'confirmaccount-real-q'           => 'Nomo',
+	'confirmaccount-email-q'          => 'Retadreso',
+	'confirmaccount-bio-q'            => 'Biografio',
+	'confirmaccount-showopen'         => 'malfermaj petoj',
+	'confirmaccount-showrej'          => 'malakceptitaj petoj',
+	'confirmaccount-review'           => 'Kontrolu',
+	'confirmaccount-q-open'           => 'malfermaj petoj',
+	'confirmaccount-leg-user'         => 'Konto de uzanto',
+	'confirmaccount-name'             => 'Salutnomo',
+	'confirmaccount-real'             => 'Nomo:',
+	'confirmaccount-email'            => 'Retadreso:',
+	'confirmaccount-pos-0'            => 'aŭtoro',
+	'confirmaccount-pos-1'            => 'redaktanto',
+	'confirmaccount-bio'              => 'Biografio:',
+	'confirmaccount-attach'           => 'Karierresumo:',
+	'confirmaccount-notes'            => 'Pluaj notoj:',
+	'confirmaccount-urls'             => 'Listo de retejoj:',
+	'confirmaccount-none-p'           => '(ne provizita)',
+	'confirmaccount-econf'            => '(konfirmita)',
+	'confirmaccount-reject'           => '(malkonfirmita de [[User:$1|$1]] je $2)',
+	'confirmaccount-noreason'         => '(nenio)',
+	'confirmaccount-create'           => 'Akceptu (kreu konton)',
+	'confirmaccount-spam'             => 'Spamo (ne sendu retpoŝton)',
+	'confirmaccount-reason'           => 'Komento (estos inkluzivita en retpoŝto):',
+	'confirmaccount-ip'               => 'IP-adreso',
+	'confirmaccount-submit'           => 'Konfirmu',
+	'confirmaccount-viewing'          => '(nune okulumis uzanto [[User:$1|$1]])',
+	'confirmaccount-summary'          => 'Kreante uzanto-paĝon kun biografio de nova uzanto.',
+	'confirmaccount-welc'             => "'''Bonvenon al ''{{SITENAME}}''!''' Ni esperas ke vi kontribuos multe kaj bone.
 Vi verŝajne volos legi la [[{{MediaWiki:Helppage}}|helpo-paĝoj]]. Denove, bonvenon kaj amuziĝu!",
-	'confirmaccount-wsum'        => 'Bonvenon!',
-	'confirmaccount-email-subj'  => 'peto de konto ĉe {{SITENAME}}',
-	'confirmaccount-email-body'  => 'Via peto por konto estis aprobita ĉe {{SITENAME}}.
+	'confirmaccount-wsum'             => 'Bonvenon!',
+	'confirmaccount-email-subj'       => 'peto de konto ĉe {{SITENAME}}',
+	'confirmaccount-email-body'       => 'Via peto por konto estis aprobita ĉe {{SITENAME}}.
 
 Nomo de konto: $1
 
 Pasvorto: $2
 
 Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body2' => 'Via peto por konto estis aprobita ĉe {{SITENAME}}.
+	'confirmaccount-email-body2'      => 'Via peto por konto estis aprobita ĉe {{SITENAME}}.
 
 Nomo de konto: $1
 
@@ -1046,15 +1063,16 @@ Pasvorto: $2
 $3
 
 Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:Userlogin}}.',
-	'usercredentials-user'       => 'Salutnomo:',
-	'usercredentials-leg-user'   => 'Konto de uzanto',
-	'usercredentials-leg-person' => 'Persona informo',
-	'usercredentials-email'      => 'Retpoŝto:',
-	'usercredentials-real'       => 'Reala nomo:',
-	'usercredentials-bio'        => 'Biografio:',
-	'usercredentials-urls'       => 'Listo de retejoj:',
-	'usercredentials-ip'         => 'Originala IP-adreso:',
-	'usercredentials-member'     => 'Rajtoj:',
+	'usercredentials-user'            => 'Salutnomo:',
+	'usercredentials-leg-user'        => 'Konto de uzanto',
+	'usercredentials-leg-person'      => 'Persona informo',
+	'usercredentials-email'           => 'Retadreso:',
+	'usercredentials-real'            => 'Reala nomo:',
+	'usercredentials-bio'             => 'Biografio:',
+	'usercredentials-attach'          => 'Karierresumo:',
+	'usercredentials-urls'            => 'Listo de retejoj:',
+	'usercredentials-ip'              => 'Originala IP-adreso:',
+	'usercredentials-member'          => 'Rajtoj:',
 );
 
 /** Spanish (Español)
@@ -1744,6 +1762,7 @@ Ime je moguće promijeniti putem [[Special:Preferences|postavki]].',
 	'requestaccount-same'        => '(bit će isto kao i pravo ime)',
 	'requestaccount-email'       => "Adresa e-pošte (vaš ''e-mail''):",
 	'requestaccount-bio'         => 'Osobna biografija:',
+	'requestaccount-notes'       => 'Dodatne bilješke:',
 	'requestaccount-tos'         => 'Pročitao sam i slažem se s [[{{MediaWiki:Requestaccount-page}}|Uvjetima uporabe]] internetskih stranica {{SITENAME}}.
 Ime koje sam napisao kao "Pravo ime" je moje pravo ime (nije nadimak/alias).',
 	'requestaccount-submit'      => 'Zatraži račun',
@@ -1753,13 +1772,18 @@ Ime koje sam napisao kao "Pravo ime" je moje pravo ime (nije nadimak/alias).',
 	'confirmaccount-real-q'      => 'Ime',
 	'confirmaccount-email-q'     => 'E-pošta (e-mail)',
 	'confirmaccount-bio-q'       => 'Biografija',
+	'confirmaccount-showopen'    => 'otvorenih zahtjeva',
+	'confirmaccount-showrej'     => 'odbijenih zahtjeva',
 	'confirmaccount-showheld'    => 'Vidi popis zahtjeva na čekanju',
+	'confirmaccount-showexp'     => 'zastarjelih zahtjeva',
 	'confirmaccount-review'      => 'Potvrdi/odbij',
+	'confirmaccount-types'       => 'Odaberite red potvrđivanja računa:',
 	'confirmaccount-all'         => '(prikaži sve redove)',
 	'confirmaccount-type'        => 'Red:',
 	'confirmaccount-badid'       => 'Nema zahtjeva koji ima dani ID. Najvjerojatnije je zahtjev već obrađen.',
 	'confirmaccount-name'        => 'Suradničko ime',
 	'confirmaccount-real'        => 'Ime:',
+	'confirmaccount-email'       => "E-pošta (''e-mail''):",
 	'confirmaccount-bio'         => 'Biografija:',
 	'confirmaccount-attach'      => 'Biografija/CV:',
 	'confirmaccount-notes'       => 'Dodatne bilješke:',
@@ -1770,6 +1794,8 @@ Ime koje sam napisao kao "Pravo ime" je moje pravo ime (nije nadimak/alias).',
 	'confirmaccount-create'      => 'Prihvati zahtjev (otvori suradnički račun)',
 	'confirmaccount-deny'        => 'Odbij (i skini s popisa)',
 	'confirmaccount-hold'        => 'Zadrži',
+	'confirmaccount-ip'          => 'IP adresa:',
+	'confirmaccount-submit'      => 'Potvrdi',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -2953,6 +2979,24 @@ Er kunnen contacteerlijsten zijn die u kunt gebruiken als u meer wil te weten ko
 Kijk na of de naam correct gespeld is.',
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nn'] = array(
+	'requestaccount-real'     => 'Verkeleg namn:',
+	'confirmaccount-real-q'   => 'Namn',
+	'confirmaccount-email-q'  => 'E-post',
+	'confirmaccount-name'     => 'Brukarnamn',
+	'confirmaccount-real'     => 'Namn:',
+	'confirmaccount-email'    => 'E-post:',
+	'confirmaccount-noreason' => '(ingen)',
+	'confirmaccount-ip'       => 'IP-adresse:',
+	'confirmaccount-submit'   => 'Stadfest',
+	'usercredentials-user'    => 'Brukarnamn:',
+	'usercredentials-email'   => 'E-post:',
+	'usercredentials-real'    => 'Verkeleg namn:',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
@@ -2966,7 +3010,7 @@ Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne logge inn
 	'requestaccount-page'             => 'Project:Tjenestevilkår',
 	'requestaccount-dup'              => "'''Merk: Du er allerede logget inn med en registrert konto.'''",
 	'requestaccount-leg-user'         => 'Brukerkonto',
-	'requestaccount-leg-areas'        => 'Hovedinteresseområder',
+	'requestaccount-leg-areas'        => 'Hovedinteresser',
 	'requestaccount-leg-person'       => 'Personlig informasjon',
 	'requestaccount-leg-other'        => 'Annen informasjon',
 	'requestaccount-acc-text'         => 'Du vil få en e-post med bekreftelse med en gang denne forespørselen postes. Vennligst svar ved å klikke på bekreftelseslenka i e-posten. Passordet ditt vil også sendes til deg når kontoen opprettes.',
@@ -2976,7 +3020,7 @@ Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne logge inn
 	'requestaccount-real'             => 'Virkelig navn:',
 	'requestaccount-same'             => '(samme som virkelig navn)',
 	'requestaccount-email'            => 'E-postadresse:',
-	'requestaccount-reqtype'          => 'Posisjon:',
+	'requestaccount-reqtype'          => 'Stilling:',
 	'requestaccount-level-0'          => 'forfatter',
 	'requestaccount-level-1'          => 'redaktør',
 	'requestaccount-bio'              => 'Personlig biografi:',
@@ -3031,9 +3075,9 @@ Om du forlater denne siden uten å godkjenne eller avvise forespørselen, vil de
 	'confirmaccount-bio-q'            => 'Biografi',
 	'confirmaccount-showopen'         => 'åpne forespørsler',
 	'confirmaccount-showrej'          => 'avviste forespørsler',
-	'confirmaccount-showheld'         => 'Vis listen over kontoer som holdes på avventning',
+	'confirmaccount-showheld'         => 'forespørsler holdt på avventning',
 	'confirmaccount-showexp'          => 'utgåtte forespørsler',
-	'confirmaccount-review'           => 'Gransk',
+	'confirmaccount-review'           => 'Gå gjennom',
 	'confirmaccount-types'            => 'Velg en kontogodkjenningskø av de nedenstående:',
 	'confirmaccount-all'              => '(vis alle køer)',
 	'confirmaccount-type'             => 'Valgt kø:',
@@ -3051,13 +3095,13 @@ Om du forlater denne siden uten å godkjenne eller avvise forespørselen, vil de
 	'confirmaccount-name'             => 'Brukernavn',
 	'confirmaccount-real'             => 'Navn:',
 	'confirmaccount-email'            => 'E-post:',
-	'confirmaccount-reqtype'          => 'Posisjon:',
+	'confirmaccount-reqtype'          => 'Stilling:',
 	'confirmaccount-pos-0'            => 'forfatter',
 	'confirmaccount-pos-1'            => 'redaktør',
 	'confirmaccount-bio'              => 'Biografi:',
 	'confirmaccount-attach'           => 'CV:',
 	'confirmaccount-notes'            => 'Andre merknader:',
-	'confirmaccount-urls'             => 'Liste over nettsider:',
+	'confirmaccount-urls'             => 'Liste over nettsteder:',
 	'confirmaccount-none-p'           => '(ikke oppgitt)',
 	'confirmaccount-confirm'          => 'Bruk valgene nedenfor for å godkjenne, avvise eller putte forespørselen på avventning:',
 	'confirmaccount-econf'            => '(bekreftet)',
@@ -3421,7 +3465,7 @@ Për na question ëd sigurëssa un a venta ch'as cambia soa ciav la prima vira c
  */
 $messages['ps'] = array(
 	'requestaccount-real'        => 'اصلي نوم:',
-	'requestaccount-email'       => 'د برېښناليک پته:',
+	'requestaccount-email'       => 'برېښليک پته:',
 	'requestaccount-level-0'     => 'ليکوال',
 	'requestaccount-bio'         => 'شخصي ژوندليک:',
 	'confirmaccount-real-q'      => 'نوم',
@@ -4161,6 +4205,7 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
 /** Swedish (Svenska)
  * @author Lejonel
  * @author M.M.S.
+ * @author Jon Harald Søby
  */
 $messages['sv'] = array(
 	'requestaccount'                  => 'Ansök om konto',
@@ -4335,7 +4380,7 @@ Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill
 	'usercredentials-user'            => 'Användarnamn:',
 	'usercredentials-text'            => 'Härunder visas de bekräftade referenserna för det valda användarkontot.',
 	'usercredentials-leg-user'        => 'Användarkonto',
-	'usercredentials-leg-areas'       => 'Intresseområden:',
+	'usercredentials-leg-areas'       => 'Intresseområden',
 	'usercredentials-leg-person'      => 'Personlig information',
 	'usercredentials-leg-other'       => 'Annan information',
 	'usercredentials-email'           => 'E-post:',
@@ -4511,6 +4556,16 @@ $2
 	'usercredentials-member'          => 'హక్కులు:',
 );
 
+/** Tetum (Tetun)
+ * @author MF-Warburg
+ */
+$messages['tet'] = array(
+	'requestaccount-level-0' => 'autór',
+	'confirmaccount-real-q'  => 'Naran',
+	'confirmaccount-real'    => 'Naran:',
+	'confirmaccount-pos-0'   => 'autór',
+);
+
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
  */
@@ -4562,6 +4617,13 @@ $messages['tr'] = array(
 	'confirmaccount-email'   => 'E-posta:',
 	'confirmaccount-ip'      => 'IP adresi:',
 	'confirmaccount-wsum'    => 'Hoşgeldiniz!',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Vinhtantran
+ */
+$messages['vi'] = array(
+	'confirmaccount-noreason' => '(không có)',
 );
 
 /** Volapük (Volapük)
