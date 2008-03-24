@@ -1796,6 +1796,19 @@ Ime koje sam napisao kao "Pravo ime" je moje pravo ime (nije nadimak/alias).',
 	'confirmaccount-hold'        => 'Zadrži',
 	'confirmaccount-ip'          => 'IP adresa:',
 	'confirmaccount-submit'      => 'Potvrdi',
+	'confirmaccount-wsum'        => 'Dobrodošli!',
+	'usercredentials-leg-person' => 'Osobni podaci',
+	'usercredentials-leg-other'  => 'Ostali podaci',
+	'usercredentials-email'      => "E-pošta (''e-mail''):",
+	'usercredentials-real'       => 'Pravo ime:',
+	'usercredentials-bio'        => 'Biografija:',
+	'usercredentials-attach'     => 'Rezime/CV:',
+	'usercredentials-notes'      => 'Dodatne bilješke:',
+	'usercredentials-urls'       => 'Popis internetskih stranica:',
+	'usercredentials-ip'         => 'Izvorna IP adresa:',
+	'usercredentials-member'     => 'Prava:',
+	'usercredentials-badid'      => 'Za danog suradnika nisu nađeni podaci.
+Provjerite je li ime točno napisano.',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -4560,10 +4573,14 @@ $2
  * @author MF-Warburg
  */
 $messages['tet'] = array(
+	'requestaccount-email'   => 'Diresaun korreiu eletróniku:',
 	'requestaccount-level-0' => 'autór',
 	'confirmaccount-real-q'  => 'Naran',
+	'confirmaccount-email-q' => 'Korreiu eletróniku',
 	'confirmaccount-real'    => 'Naran:',
+	'confirmaccount-email'   => 'Korreiu eletróniku:',
 	'confirmaccount-pos-0'   => 'autór',
+	'usercredentials-email'  => 'Korreiu eletróniku:',
 );
 
 /** Tajik (Тоҷикӣ)
