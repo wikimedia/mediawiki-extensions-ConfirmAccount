@@ -34,7 +34,7 @@ Make sure you are comfortable publishing such information.
 Your name can be changed via [[Special:Preferences]].",
 	'requestaccount-real'       => 'Real name:',
 	'requestaccount-same'       => '(same as real name)',
-	'requestaccount-email'      => 'E-mail address:',
+	'requestaccount-email'      => 'Email address:',
 	'requestaccount-reqtype'    => 'Position:',
 	'requestaccount-level-0'    => 'author',
 	'requestaccount-level-1'    => 'editor',
@@ -46,7 +46,7 @@ Your name can be changed via [[Special:Preferences]].",
 	'requestaccount-agree'      => 'You must certify that your real name is correct and that you agree to our Terms of Service.',
 	'requestaccount-inuse'      => 'Username is already in use in a pending account request.',
 	'requestaccount-tooshort'   => 'Your biography must be at least be $1 words long.',
-	'requestaccount-emaildup'   => 'Another pending account request uses the same e-mail address.',
+	'requestaccount-emaildup'   => 'Another pending account request uses the same email address.',
 	'requestaccount-exts'       => 'Attachment file type is disallowed.',
 	'requestaccount-resub'      => 'Your CV/resume file must be re-selected for security reasons.
 Leave the field blank if you no longer want to include one.',
@@ -63,7 +63,7 @@ To confirm that this account really does belong to you on {{SITENAME}}, open thi
 
 $3
 
-If the account is created, only you will be e-mailed the password.
+If the account is created, only you will be emailed the password.
 If this is *not* you, don\'t follow the link.
 This confirmation code will expire at $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} account request',
@@ -77,7 +77,7 @@ You can't make any more requests.",
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
 	# Site message for admins
-	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open e-mail-confirmed {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending',
+	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open email-confirmed {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|account requests]]}} pending',
 	
 	# Confirm account page
 	'confirmaccounts'         => 'Confirm account requests', 
@@ -107,7 +107,7 @@ If you simply leave this page without confirming or denying this request, it wil
 	'confirmaccount-none-r'   => 'There are currently no recently rejected account requests in this list.',
 	'confirmaccount-none-e'   => 'There are currently no expired account requests in this list.',
 	'confirmaccount-real-q'   => 'Name',
-	'confirmaccount-email-q'  => 'E-mail',
+	'confirmaccount-email-q'  => 'Email',
 	'confirmaccount-bio-q'    => 'Biography',
 	'confirmaccount-showopen' => 'open requests',
 	'confirmaccount-showrej'  => 'rejected requests',
@@ -132,7 +132,7 @@ It may have already been handled.',
 	'confirmaccount-leg-other'  => 'Other information',
 	'confirmaccount-name'     => 'Username',
 	'confirmaccount-real'     => 'Name:',
-	'confirmaccount-email'    => 'E-mail:',
+	'confirmaccount-email'    => 'Email:',
 	'confirmaccount-reqtype'  => 'Position:',
 	'confirmaccount-pos-0'    => 'author',
 	'confirmaccount-pos-1'    => 'editor',
@@ -151,8 +151,8 @@ It may have already been handled.',
 	'confirmaccount-create'   => 'Accept (create account)',
 	'confirmaccount-deny'     => 'Reject (delist)',
 	'confirmaccount-hold'     => 'Hold',
-	'confirmaccount-spam'     => 'Spam (don\'t send e-mail)',
-	'confirmaccount-reason'   => 'Comment (will be included in e-mail):',
+	'confirmaccount-spam'     => 'Spam (don\'t send email)',
+	'confirmaccount-reason'   => 'Comment (will be included in email):',
 	'confirmaccount-ip'       => 'IP address:',
 	'confirmaccount-submit'   => 'Confirm',
 	'confirmaccount-needreason' => 'You must provide a reason in the comment box below.',
@@ -207,7 +207,7 @@ There may be contact lists on site that you can use if you want to know more abo
 	'usercredentials-leg-areas' => 'Main areas of interest',
 	'usercredentials-leg-person' => 'Personal information',
 	'usercredentials-leg-other' => 'Other information',
-	'usercredentials-email'  => 'E-mail:',
+	'usercredentials-email'  => 'Email:',
 	'usercredentials-real'   => 'Real name:',
 	'usercredentials-bio'    => 'Biography:',
 	'usercredentials-attach' => 'Resume/CV:',
