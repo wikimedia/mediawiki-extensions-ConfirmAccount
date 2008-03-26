@@ -71,7 +71,7 @@ This confirmation code will expire at $4.',
 The e-mail address has been confirmed. You can confirm the request here "$2".',
 
 	'acct_request_throttle_hit' => "Sorry, you have already requested $1 accounts.
-You can't make any more requests.",
+You cannot make any more requests.",
 	
 	# Add to Special:Login
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
@@ -162,7 +162,7 @@ It may have already been handled.',
 	'confirmaccount-viewing' => '(currently being viewed by [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
 	'confirmaccount-welc'    => "'''Welcome to ''{{SITENAME}}''!''' We hope you will contribute much and well. 
-You'll probably want to read the [[{{MediaWiki:Helppage}}|help pages]]. Again, welcome and have fun!",
+You will probably want to read the [[{{MediaWiki:Helppage}}|help pages]]. Again, welcome and have fun!",
 	'confirmaccount-wsum'    => 'Welcome!',
 	'confirmaccount-email-subj' => '{{SITENAME}} account request',
 	'confirmaccount-email-body' => 'Your request for an account has been approved on {{SITENAME}}.
