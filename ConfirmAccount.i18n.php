@@ -3068,7 +3068,7 @@ Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne logge inn
 	'requestaccount-email-subj'       => 'E-postbekreftelse hos {{SITENAME}}',
 	'requestaccount-email-body'       => 'Noen, antageligvis deg fra IP-adressen $1, har etterspurt en konto «$2» med denne e-postadressen på {{SITENAME}}.
 
-For å bekrefte at denne forespørselen virkelig kommer fra deg, åpne denne lenken i nettleseren din:
+Åpne denne lenken i nettleseren din for å bekrefte at denne forespørselen virkelig kommer fra deg:
 
 $3
 
@@ -3160,7 +3160,7 @@ Kontonavn: $1
 
 Passord: $2
 
-Av sikkerhetsgrunner må du endre passordet etter første innlogging. For å logge inn, gå til {{fullurl:Special:Userlogin}}.',
+Av sikkerhetsgrunner må du endre passordet etter første innlogging. Gå til {{fullurl:Special:Userlogin}} for å logge inn.',
 	'confirmaccount-email-body2'      => 'Din forespørsel om en konto på {{SITENAME}} har blitt godkjent.
 
 Kontonavn: $1
@@ -3169,7 +3169,7 @@ Passord: $2
 
 $3
 
-Av sikkerhetsgrunner må du endre passordet etter første innlogging. For å logge inn, gå til {{fullurl:Special:Userlogin}}.',
+Av sikkerhetsgrunner må du endre passordet etter første innlogging. Gå til {{fullurl:Special:Userlogin}} for å logge inn.',
 	'confirmaccount-email-body3'      => 'Beklager, din forespørsel om kontoen «$1» på {{SITENAME}} har blitt avvist.
 
 Det er flere mulige grunner til at dette har skjedd. Du har muligens ikke fylt inn skjemaet korrekt, har ikke svart utfyllende nok, eller møter på en annen måte ikke kriteriene. Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.',
@@ -4652,10 +4652,19 @@ $messages['tr'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
  * @author Vinhtantran
  */
 $messages['vi'] = array(
+	'requestaccount-level-0'  => 'tác giả',
+	'requestaccount-notes'    => 'Chi tiết:',
+	'confirmaccount-bio-q'    => 'Tiểu sử',
+	'confirmaccount-pos-0'    => 'tác giả',
+	'confirmaccount-bio'      => 'Tiểu sử:',
+	'confirmaccount-notes'    => 'Chi tiết:',
 	'confirmaccount-noreason' => '(không có)',
+	'usercredentials-bio'     => 'Tiểu sử:',
+	'usercredentials-notes'   => 'Chi tiết:',
 );
 
 /** Volapük (Volapük)
