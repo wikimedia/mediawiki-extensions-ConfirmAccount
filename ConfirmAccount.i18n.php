@@ -3492,6 +3492,7 @@ Për na question ëd sigurëssa un a venta ch'as cambia soa ciav la prima vira c
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'requestaccount-leg-other'   => 'نور مالومات',
 	'requestaccount-real'        => 'اصلي نوم:',
 	'requestaccount-email'       => 'برېښليک پته:',
 	'requestaccount-level-0'     => 'ليکوال',
