@@ -667,6 +667,13 @@ $messages['cs'] = array(
 	'requestaccount-sent'        => 'Vaše žádost o účet byla úspěšně odeslána a nyní se čeká na její zkontrolování.',
 	'request-account-econf'      => 'Vaše e-mailová adresa byla potvrzena a v tomto tvaru se uvede ve vaší žádosti o účet.',
 	'requestaccount-email-subj'  => '{{SITENAME}}: Potvrzení e-mailové adresy',
+	'requestaccount-email-body'  => 'Někdo, pravděpodobně Vy z IP adresy $1, si na {{GRAMMAR:lokál|{{SITENAME}}}} zaregistroval účet s názvem „$2“ a s touto e-mailovou adresou.
+
+Pro potvrzení, že tento účet skutečně patří Vám a pro aktivování e-mailových funkcí na {{GRAMMAR:lokál|{{SITENAME}}}}, klikněte na tento odkaz:
+
+$3
+
+Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší $4.',
 	'confirmaccounts'            => 'Potvrdit žádosti o účet',
 	'confirmedit-desc'           => 'Dává byrokratům možnost potvrzovat žádosti o účet',
 	'confirmaccount-real-q'      => 'Jméno',
@@ -2550,6 +2557,7 @@ $messages['lb'] = array(
 	'requestaccount-email-subj'       => '{{SITENAME}} Konfirmatioun vun der E-Mail-Adress',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Ufro fir ee Benotzerkont',
 	'acct_request_throttle_hit'       => 'Pardon, Dir hutt schonns $1 Benotzerkonten ugefrot. Dir kënnt elo keng Ufroe méi maachen.',
+	'confirmedit-desc'                => "Gëtt Bürokraten d'Méiglechkeeten fir Ufroe vu Benotzerkonten ze confirméieren",
 	'confirmaccount-real-q'           => 'Numm',
 	'confirmaccount-email-q'          => 'E-mail',
 	'confirmaccount-bio-q'            => 'Biographie',
