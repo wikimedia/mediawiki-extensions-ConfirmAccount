@@ -4614,7 +4614,7 @@ $messages['tet'] = array(
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
  */
-$messages['tg'] = array(
+$messages['tg-cyrl'] = array(
 	'requestaccount-leg-user'    => 'Ҳисоби корбар',
 	'requestaccount-leg-person'  => 'Иттилооти шахсӣ',
 	'requestaccount-leg-other'   => 'Иттилооти дигар',
