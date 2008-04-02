@@ -1749,12 +1749,13 @@ Poden existir listaxes de contacto no sitio que poida usar se quere saber máis 
 );
 
 /** Gujarati (ગુજરાતી)
+ * @author Dsvyas
  * @author Aksi great
  */
 $messages['gu'] = array(
-	'requestaccount-legend2' => 'વ્યક્તિગત માહિતી',
-	'requestaccount-legend3' => 'અન્ય માહિતી',
 	'requestaccount-real'    => 'સાચુ નામ:',
+	'confirmaccount-summary' => 'નવા સભ્યનાં જીવન વુત્તાંત વાળું સભ્યનું પાનું બનાવી રહ્યા છો',
+	'confirmaccount-wsum'    => 'સુસ્વાગતમ્',
 );
 
 /** Croatian (Hrvatski)
@@ -3238,15 +3239,15 @@ $messages['oc'] = array(
 	'requestaccount'                  => "Demanda de compte d'utilizaire",
 	'requestaccount-text'             => "'''Emplenatz e mandatz lo formulari çaijós per demandar un compte d’utilizaire.'''. Asseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte. Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus [[Special:Userlogin]].",
 	'requestaccount-page'             => "{{ns:project}}:Condicions d'utilizacion",
-	'requestaccount-dup'              => "'''Nòta : Ja sètz sus una session amb un compte enregistrat.'''",
+	'requestaccount-dup'              => "'''Nòta : Ja sètz sus una sesilha amb un compte enregistrat.'''",
 	'requestaccount-leg-user'         => "Compte d'utilizaire",
 	'requestaccount-leg-areas'        => "Centres d'interès principals",
-	'requestaccount-leg-person'       => 'Informacions personalas',
-	'requestaccount-leg-other'        => 'Autras informacions',
+	'requestaccount-leg-person'       => 'Entresenhas personalas',
+	'requestaccount-leg-other'        => 'Autras entresenhas',
 	'requestaccount-acc-text'         => 'Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. Dins lo corrièr recebut, clicatz sul ligam correspondent a la confirmacion de vòstra demanda. E mai, senhal serà mandat per corrièr electronic quand vòstre compte serà creat.',
 	'requestaccount-areas-text'       => 'Causissètz los domenis dins losquals avètz una expertisa demostrada, o dins lasqualas sètz mai portat a contribuir.',
 	'requestaccount-ext-text'         => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telèfon per obténer una assistància per confirmar vòstra identitat.',
-	'requestaccount-bio-text'         => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las informacions. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences]].",
+	'requestaccount-bio-text'         => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences]].",
 	'requestaccount-real'             => 'Nom vertadièr:',
 	'requestaccount-same'             => '(nom figurant dins vòstre estat civil)',
 	'requestaccount-email'            => 'Adreça electronica:',
@@ -3280,7 +3281,7 @@ L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant
 	'confirmedit-desc'                => 'Balha als burocratas la possibilitat de confirmar las demandas de comptes d’utilizaires.',
 	'confirmaccount-maintext'         => "'''Aquesta pagina es utilizada per confirmar las demandas de compte d'utilizaire sus ''{{SITENAME}}'''''.
 
-Cada demanda de compte d'utilizaire consistís en tres soslistas : una per las demandas non tractadas, una pels comptes reservats dins l'espèra d'informacions mai amplas, e una darrièra pels comptes regetats recentament.
+Cada demanda de compte d'utilizaire consistís en tres soslistas : una per las demandas non tractadas, una pels comptes reservats dins l'espèra d'entresenhas mai amplas, e una darrièra pels comptes regetats recentament.
 
 Al moment de la responsa a una demanda, verificatz-la atentivament e, se fa mestèr, confirmatz las informaxions qu'i son mencionadas. Vòstras accions seràn inscrichas separadament dins un jornal. Tanben podètz esperar la verificacion de cada activitat que prendràn de plaça separadament per rapòrt a çò que faretz vos-meteis.",
 	'confirmaccount-list'             => "Vaquí, çaijós, la lista dels comptes en espèra d’aprobacion. Los comptes acceptats seràn creats e levats d'aquesta lista. Los comptes regetats seràn suprimits d'aquesta meteissa lista.",
@@ -3288,7 +3289,7 @@ Al moment de la responsa a una demanda, verificatz-la atentivament e, se fa mest
 	'confirmaccount-list3'            => 'Çaijós se tròba una lista de comptes expirats que poirián èsser automaticament suprimits aprèp qualques jorns. Encara pòdon èsser aprovats.',
 	'confirmaccount-text'             => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''.
 
-Atencion, verificatz e, se fe mestièr, confirmatz totas las informacions çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasetz aquò unicament per evitar de conflictes amb d’autres noms. 
+Atencion, verificatz e, se fe mestièr, confirmatz totas las entresenhas çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasètz aquò unicament per evitar de conflictes amb d’autres noms. 
 
 Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjorn mesa en espèra.",
 	'confirmaccount-none-o'           => "Actualament i a pas cap de demanda de compte d'utilizaire en cors dins aquesta lista.",
@@ -3315,8 +3316,8 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-badid'            => 'I a pas cap de demanda en cors correspondent a l’ID indicat. Es possible que aja subit una mantenença.',
 	'confirmaccount-leg-user'         => "Compte d'utilizaire",
 	'confirmaccount-leg-areas'        => "Centres d'interès principals",
-	'confirmaccount-leg-person'       => 'Informacions personalas',
-	'confirmaccount-leg-other'        => 'Autras informacions',
+	'confirmaccount-leg-person'       => 'Entresenhas personalas',
+	'confirmaccount-leg-other'        => 'Autras entresenhas',
 	'confirmaccount-name'             => "Nom d'utilizaire",
 	'confirmaccount-real'             => 'Nom',
 	'confirmaccount-email'            => 'Corrièr electronic:',
@@ -3355,15 +3356,15 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-email-body2'      => "Vòstra demanda de compte d'utilizaire es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal: $2 $3 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:Userlogin}}.",
 	'confirmaccount-email-body3'      => 'O planhèm, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. Mantuna rason pòdon explicar aqueste cas de figura. Es possible que ajatz mal emplenat lo formulari, o que ajatz pas indicat sufisentament d’informacions dins vòstras responsas. Es encara possible que emplenetz pas los critèris d’eligibilitat per obténer vòstre compte. Es possible d’èsser sus la lista dels contactes se desiratz conéisser melhor las condicions requesas.',
 	'confirmaccount-email-body4'      => 'O planhèm, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. $2 Es possible d’èsser sus la lista dels contactes per conéisser melhor los critèris per poder s’inscriure.',
-	'confirmaccount-email-body5'      => 'Abans que vòstra requèsta pel compte « $1 » pòsca èsser acceptada sus {{SITENAME}}, devètz produire qualques informacions suplementàrias. $2 Aquò permetís d’èsser sus la lista dels contactes del sit, se desiratz ne saber mai sus las règlas concernent los comptes.',
+	'confirmaccount-email-body5'      => 'Abans que vòstra requèsta pel compte « $1 » pòsca èsser acceptada sus {{SITENAME}}, devètz produire qualques entresenhas suplementàrias. $2 Aquò permetís d’èsser sus la lista dels contactes del sit, se desiratz ne saber mai sus las règlas concernent los comptes.',
 	'usercredentials'                 => "Referéncias de l'utilizaire",
 	'usercredentials-leg'             => "Verificacion confirmada de las referéncias d'un utilizaire.",
 	'usercredentials-user'            => "Nom d'utilizaire :",
 	'usercredentials-text'            => "Çaijós figuran los justificatius validats pel compte d'utilizaire seleccionat.",
 	'usercredentials-leg-user'        => "Compte d'utilizaire",
 	'usercredentials-leg-areas'       => "Centres d'interès principals",
-	'usercredentials-leg-person'      => 'Informacions personalas',
-	'usercredentials-leg-other'       => 'Autras informacions',
+	'usercredentials-leg-person'      => 'Entresenhas personalas',
+	'usercredentials-leg-other'       => 'Autras entresenhas',
 	'usercredentials-email'           => 'Corrièr electronic :',
 	'usercredentials-real'            => 'Nom vertadièr :',
 	'usercredentials-bio'             => 'Biografia :',
@@ -4103,6 +4104,14 @@ Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak s
 	'usercredentials-badid'           => 'Žiadne osobné informácie tohto používateľa neboli nájdené. Skontrolujte, či ste správne napísali meno.',
 );
 
+/** Serbian Cyrillic ekavian (ћирилица)
+ * @author Sasa Stefanovic
+ */
+$messages['sr-ec'] = array(
+	'requestaccount-email'    => 'Е-пошта:',
+	'confirmaccount-noreason' => '(нема)',
+);
+
 $messages['ss'] = array(
 	'confirmaccount-real'         => 'Ligama:',
 	'confirmaccount-real-q'       => 'Ligama',
@@ -4681,10 +4690,25 @@ $messages['tet'] = array(
 	'usercredentials-email'  => 'Korreiu eletróniku:',
 );
 
-/** Tajik (Тоҷикӣ)
+/** Tajik (Тоҷикӣ/tojikī)
  * @author Ibrahim
  */
+$messages['tg'] = array(
+	'requestaccount-notes'            => 'Эзоҳоти иловагӣ:',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} дархости ҳисоб',
+	'confirmaccount-notes'            => 'Эзоҳоти иловагӣ:',
+	'confirmaccount-email-subj'       => '{{SITENAME}} дархости ҳисоб',
+	'usercredentials-notes'           => 'Эзоҳоти иловагӣ:',
+);
+
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+ * @author Ibrahim
+ * @author Siebrand
+ */
 $messages['tg-cyrl'] = array(
+	'requestaccount'             => 'Дархости ҳисоб',
+	'requestaccount-page'        => '{{ns:project}}:Шартҳои Хидмат',
+	'requestaccount-dup'         => "'''Эзоҳ: Шумо аллакай бо ҳисоби сабтшуда вуруд кардаед.'''",
 	'requestaccount-leg-user'    => 'Ҳисоби корбар',
 	'requestaccount-leg-person'  => 'Иттилооти шахсӣ',
 	'requestaccount-leg-other'   => 'Иттилооти дигар',
@@ -4699,6 +4723,7 @@ $messages['tg-cyrl'] = array(
 	'confirmaccount-real-q'      => 'Ном',
 	'confirmaccount-email-q'     => 'Почтаи электронӣ',
 	'confirmaccount-bio-q'       => 'Зиндагинома',
+	'confirmaccount-q-open'      => 'дархостҳои кушод',
 	'confirmaccount-leg-user'    => 'Ҳисоби корбарӣ',
 	'confirmaccount-leg-person'  => 'Иттилооти шахсӣ',
 	'confirmaccount-leg-other'   => 'Иттилооти дигар',
@@ -4710,8 +4735,16 @@ $messages['tg-cyrl'] = array(
 	'confirmaccount-pos-1'       => 'вироишгар',
 	'confirmaccount-bio'         => 'Зиндагинома:',
 	'confirmaccount-urls'        => 'Феҳристи сомонаҳо:',
+	'confirmaccount-econf'       => '(таъйидшуда)',
+	'confirmaccount-noreason'    => '(ҳеҷ)',
 	'confirmaccount-ip'          => 'Нишонаи IP:',
+	'confirmaccount-submit'      => 'Таъйид',
+	'confirmaccount-needreason'  => 'Шумо бояд далел дар ҷаъбаи тавзеҳ дар зер пешкаш намоед.',
+	'confirmaccount-acc'         => 'Дархости ҳисоб бо муваффақият тасдиқ карда шуд; ҳисоби корбарии ҷадидӣ [[User:$1]] эҷод шуд.',
+	'confirmaccount-rej'         => 'Дархости ҳисоб бо муваффақият рад карда шуд.',
+	'confirmaccount-summary'     => 'Дар ҳоли эҷоди саҳифаи корбарӣ бо зиндагиномаи корбари ҷадид.',
 	'confirmaccount-wsum'        => 'Хуш омадед!',
+	'confirmaccount-email-subj'  => '{{SITENAME}} дархости корбар',
 	'usercredentials-user'       => 'Номи корбарӣ:',
 	'usercredentials-leg-user'   => 'Ҳисоби корбарӣ',
 	'usercredentials-leg-person' => 'Иттилооти шахсӣ',
@@ -4719,6 +4752,7 @@ $messages['tg-cyrl'] = array(
 	'usercredentials-email'      => 'Почтаи электронӣ:',
 	'usercredentials-real'       => 'Номи аслӣ:',
 	'usercredentials-bio'        => 'Зиндагинома:',
+	'usercredentials-notes'      => 'Эзоҳоти иловагӣ:',
 	'usercredentials-urls'       => 'Феҳристи сомонаҳо:',
 	'usercredentials-ip'         => 'Нишонаи IP-и аслӣ:',
 );
