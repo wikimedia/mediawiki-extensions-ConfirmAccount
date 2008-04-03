@@ -4690,22 +4690,16 @@ $messages['tet'] = array(
 	'usercredentials-email'  => 'Korreiu eletróniku:',
 );
 
-/** Tajik (Тоҷикӣ/tojikī)
- * @author Ibrahim
- */
-$messages['tg'] = array(
-	'requestaccount-notes'            => 'Эзоҳоти иловагӣ:',
-	'requestaccount-email-subj-admin' => '{{SITENAME}} дархости ҳисоб',
-	'confirmaccount-notes'            => 'Эзоҳоти иловагӣ:',
-	'confirmaccount-email-subj'       => '{{SITENAME}} дархости ҳисоб',
-	'usercredentials-notes'           => 'Эзоҳоти иловагӣ:',
-);
-
 /** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
  * @author Siebrand
  */
 $messages['tg-cyrl'] = array(
+	'requestaccount-notes'            => 'Эзоҳоти иловагӣ:',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} дархости ҳисоб',
+	'confirmaccount-notes'            => 'Эзоҳоти иловагӣ:',
+	'confirmaccount-email-subj'       => '{{SITENAME}} дархости ҳисоб',
+	'usercredentials-notes'           => 'Эзоҳоти иловагӣ:',
 	'requestaccount'             => 'Дархости ҳисоб',
 	'requestaccount-page'        => '{{ns:project}}:Шартҳои Хидмат',
 	'requestaccount-dup'         => "'''Эзоҳ: Шумо аллакай бо ҳисоби сабтшуда вуруд кардаед.'''",
