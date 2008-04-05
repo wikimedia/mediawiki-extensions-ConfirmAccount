@@ -1044,8 +1044,11 @@ $messages['eo'] = array(
 	'confirmaccount-showopen'         => 'malfermaj petoj',
 	'confirmaccount-showrej'          => 'malakceptitaj petoj',
 	'confirmaccount-review'           => 'Kontrolu',
+	'confirmaccount-all'              => '(montru ĉiujn atendovicojn)',
+	'confirmaccount-type'             => 'Atendovico:',
 	'confirmaccount-q-open'           => 'malfermaj petoj',
 	'confirmaccount-leg-user'         => 'Konto de uzanto',
+	'confirmaccount-leg-other'        => 'Alia informo',
 	'confirmaccount-name'             => 'Salutnomo',
 	'confirmaccount-real'             => 'Nomo:',
 	'confirmaccount-email'            => 'Retadreso:',
@@ -1089,10 +1092,12 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
 	'usercredentials-user'            => 'Salutnomo:',
 	'usercredentials-leg-user'        => 'Konto de uzanto',
 	'usercredentials-leg-person'      => 'Persona informo',
+	'usercredentials-leg-other'       => 'Alia informo',
 	'usercredentials-email'           => 'Retadreso:',
 	'usercredentials-real'            => 'Reala nomo:',
 	'usercredentials-bio'             => 'Biografio:',
 	'usercredentials-attach'          => 'Karierresumo:',
+	'usercredentials-notes'           => 'Plua informo:',
 	'usercredentials-urls'            => 'Listo de retejoj:',
 	'usercredentials-ip'              => 'Originala IP-adreso:',
 	'usercredentials-member'          => 'Rajtoj:',
@@ -1775,6 +1780,14 @@ $messages['hi'] = array(
 	'requestaccount-email'       => 'इ-मेल एड्रेस:',
 	'requestaccount-reqtype'     => 'पोज़िशन:',
 	'requestaccount-level-0'     => 'लेखक',
+	'requestaccount-level-1'     => 'संपादक',
+	'requestaccount-bio'         => 'वैयक्तिक चरित्र:',
+	'requestaccount-attach'      => 'रिज़्यूम या सीव्ही (वैकल्पिक):',
+	'requestaccount-notes'       => 'अधिक ज़ानकारी:',
+	'requestaccount-urls'        => 'वेबसाईट्स की सूची, अगर हैं तो (एक लाईनमें एक):',
+	'requestaccount-agree'       => 'आपने दिया हुआ खुद का असली नाम सहीं हैं और आपको शर्ते और नियम मान्य हैं ऐसा सर्टिफाई करें।',
+	'requestaccount-inuse'       => 'आपने दिया हुआ सदस्यनाम पहले ही किसीने पूछा हैं।',
+	'requestaccount-tooshort'    => 'आपके वैयक्तिक चरित्र में कमसे कम $1 शब्द होना जरूरी हैं।',
 	'requestaccount-submit'      => 'खाता मंगायें',
 	'confirmaccount-real-q'      => 'नाम',
 	'confirmaccount-leg-areas'   => 'मुख्य पसंद',
@@ -1783,6 +1796,7 @@ $messages['hi'] = array(
 	'usercredentials-leg-person' => 'वैयक्तिक ज़ानकारी',
 	'usercredentials-leg-other'  => 'अन्य ज़ानकारी',
 	'usercredentials-real'       => 'असली नाम:',
+	'usercredentials-notes'      => 'अधिक ज़ानकारी:',
 );
 
 /** Croatian (Hrvatski)
@@ -2607,7 +2621,10 @@ $messages['lb'] = array(
 	'confirmaccount-noreason'         => '(keen)',
 	'confirmaccount-ip'               => 'IP-Adress:',
 	'confirmaccount-submit'           => 'Confirméieren',
+	'confirmaccount-rej'              => "D'Ufro fir ee Benotzerkont gouf refüséiert.",
+	'confirmaccount-summary'          => "D'Benotzersäit mat der Biographie vum neie Benotzer gëtt elo gemaach.",
 	'confirmaccount-wsum'             => 'Wëllkomm!',
+	'confirmaccount-email-subj'       => '{{SITENAME}} Ufro fir ee Benotzerkont',
 	'usercredentials-user'            => 'Benotzernumm:',
 	'usercredentials-leg-user'        => 'Benotzerkont',
 	'usercredentials-leg-areas'       => 'Haaptinteressen',
@@ -4728,6 +4745,13 @@ $messages['tg-cyrl'] = array(
 	'requestaccount-leg-user'         => 'Ҳисоби корбар',
 	'requestaccount-leg-person'       => 'Иттилооти шахсӣ',
 	'requestaccount-leg-other'        => 'Иттилооти дигар',
+	'requestaccount-acc-text'         => 'Ба нишонаи почтаи электронии шумо паёми тасдиқи дар ҳоли фиристодани ин дархост фиристода хоҳад шуд.
+Лутфан бо клик кардани пайванди тасдиқии тариқи почтаи электронӣ фиристода шуда посух диҳед.
+Гузарвожа низ дар ҳолати эҷод шудани ҳисоби шумо ба нишонаи почтаи электронӣ фиристода хоҳад шуд.',
+	'requestaccount-bio-text'         => 'Зиндагиномаи шумо дар саҳифаи корбариатон ҳамчун мӯҳтавои пешфарз ҷой дода хоҳад шуд.
+Барои қарор додани ягон ихтиёроти худ кӯшиш кунед.
+Мутмаин бошед, ки шумо барои мунташир кардани ин намуд иттилоот роҳатӣ ҳастед.
+Номи шумо метавонад тариқи [[Special:Preferences]] тағйир дода шавад.',
 	'requestaccount-real'             => 'Номи аслӣ:',
 	'requestaccount-same'             => '(монанди номи аслӣ)',
 	'requestaccount-email'            => 'Нишонаи почтаи электронӣ:',
@@ -4736,8 +4760,19 @@ $messages['tg-cyrl'] = array(
 	'requestaccount-level-1'          => 'вироишгар',
 	'requestaccount-bio'              => 'Зиндагиномаи шахсӣ:',
 	'requestaccount-notes'            => 'Эзоҳоти иловагӣ:',
+	'requestaccount-urls'             => 'Феҳристи сомонаҳо, агар зиёд бошад (бо сатрҳои ҷадид ҷудо кунед):',
+	'requestaccount-tooshort'         => 'Зиндагиномаи шумо бояд ҳадди ақал $1 дароз бошад.',
 	'requestaccount-submit'           => 'Дархости ҳисоб',
 	'requestaccount-email-subj'       => '{{SITENAME}} тасдиқи нишонаи почтаи электронӣ',
+	'requestaccount-email-body'       => 'Шахсе, эҳтимолан шумо аз нишонаи IP $1, ҳисоби "$2" бо нишонаи почтаи электронӣ дар {{SITENAME}} дархост кард.
+
+Барои тасдиқ, ки ин ҳисоб дар ҳақиқат ба шумо дар {{SITENAME}} таалуқ дорад, ин пайвандро дар мурургаратон боз кунед:
+
+$3
+
+Агар ҳисоб эҷод шуда бошад, танҳо ба шумо калимаи убур тариқи почтаи электронӣ фиристода хоҳад шуд.
+Агар ин шумо *нест*, пайвандро дунбол накунед.
+Ин коди тасдиқ дар $4 ба хотима хоҳад расид.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} дархости ҳисоб',
 	'requestaccount-email-body-admin' => '"$1" ҳисоберо дархост кард ва мунтазири тасдиқи он мебошад.
 Нишонаи почтаи электронӣ тасдиқ шуд. Шумо дархостро метавонед инҷо "$2" тасдиқ кунед.',
@@ -4745,9 +4780,13 @@ $messages['tg-cyrl'] = array(
 Шумо наметавонед аз ин зиёд дархост кунед.',
 	'requestaccount-loginnotice'      => "Барои дастрас кардани ҳисоби корбарӣ, шумо бояд '''[[Special:RequestAccount|дархост]]''' кунед.",
 	'confirmaccounts'                 => 'Дархостҳои ҳисобҳоро тасдиқ кунед',
+	'confirmaccount-list'             => 'Дар зер феҳристи дархостҳои ҳисобҳои мунтазири тасдиқ оварда шудааст.
+Дар ҳолати тасдиқ кардан ва ё рад кардани дархост, он аз ин феҳрист пок кардан хоҳад шуд.',
 	'confirmaccount-real-q'           => 'Ном',
 	'confirmaccount-email-q'          => 'Почтаи электронӣ',
 	'confirmaccount-bio-q'            => 'Зиндагинома',
+	'confirmaccount-showopen'         => 'дархостҳои кушод',
+	'confirmaccount-showrej'          => 'дархостҳои радшуда',
 	'confirmaccount-q-open'           => 'дархостҳои кушод',
 	'confirmaccount-leg-user'         => 'Ҳисоби корбарӣ',
 	'confirmaccount-leg-person'       => 'Иттилооти шахсӣ',
@@ -4761,16 +4800,38 @@ $messages['tg-cyrl'] = array(
 	'confirmaccount-bio'              => 'Зиндагинома:',
 	'confirmaccount-notes'            => 'Эзоҳоти иловагӣ:',
 	'confirmaccount-urls'             => 'Феҳристи сомонаҳо:',
+	'confirmaccount-none-p'           => '(пешниҳод нашудааст)',
 	'confirmaccount-econf'            => '(таъйидшуда)',
 	'confirmaccount-noreason'         => '(ҳеҷ)',
+	'confirmaccount-reason'           => 'Тавзеҳ (дар паёми электронӣ илова хоҳад шуд):',
 	'confirmaccount-ip'               => 'Нишонаи IP:',
 	'confirmaccount-submit'           => 'Таъйид',
 	'confirmaccount-needreason'       => 'Шумо бояд далел дар ҷаъбаи тавзеҳ дар зер пешкаш намоед.',
 	'confirmaccount-acc'              => 'Дархости ҳисоб бо муваффақият тасдиқ карда шуд; ҳисоби корбарии ҷадидӣ [[User:$1]] эҷод шуд.',
 	'confirmaccount-rej'              => 'Дархости ҳисоб бо муваффақият рад карда шуд.',
 	'confirmaccount-summary'          => 'Дар ҳоли эҷоди саҳифаи корбарӣ бо зиндагиномаи корбари ҷадид.',
+	'confirmaccount-welc'             => "'''Хуш омадед ба ''{{SITENAME}}''!''' Мо умедворем, ки шумо бисёр ва хуб ҳиссагузорӣ хоҳед кард.  
+Шумо эҳтимолан мехоҳед [[{{MediaWiki:Helppage}}|саҳифаҳои роҳнаморо]] бихонед. Бори дигар, хуш омадед ва шод бошед!",
 	'confirmaccount-wsum'             => 'Хуш омадед!',
 	'confirmaccount-email-subj'       => '{{SITENAME}} дархости корбар',
+	'confirmaccount-email-body'       => 'Дархости шумо барои ҳисобе дар {{SITENAME}} тасдиқ шуд.
+
+Номи ҳисоб: $1
+
+Гузарвожа: $2
+
+Аз сабабҳои амниятӣ, шумо бояд дар вурудшваии аввалин гузарвожаи худро тағйир диҳед.
+Барои вуруд шудан, лутфан равед ба {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2'      => 'Дархости шумо барои ҳисобе дар {{SITENAME}} тасдиқ шуд.
+
+Номи ҳисоб: $1
+
+Гузарвожа: $2
+
+$3
+
+Аз сабабҳои амниятӣ, шумо бояд дар вурудшваии аввалин гузарвожаи худро тағйир диҳед.
+Барои вуруд шудан, лутфан равед ба {{fullurl:Special:Userlogin}}.',
 	'usercredentials-user'            => 'Номи корбарӣ:',
 	'usercredentials-leg-user'        => 'Ҳисоби корбарӣ',
 	'usercredentials-leg-person'      => 'Иттилооти шахсӣ',
