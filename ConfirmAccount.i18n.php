@@ -3434,6 +3434,7 @@ $messages['pl'] = array(
 	'requestaccount-leg-areas'  => 'Główne obszary zainteresowań',
 	'requestaccount-leg-person' => 'Informacje osobiste',
 	'requestaccount-leg-other'  => 'Inne informacje',
+	'requestaccount-real'       => 'Imię i nazwisko:',
 	'requestaccount-email'      => 'Adres e-mail:',
 	'requestaccount-reqtype'    => 'Pozycja:',
 	'requestaccount-level-0'    => 'autor',
@@ -4740,6 +4741,11 @@ $messages['tet'] = array(
  */
 $messages['tg-cyrl'] = array(
 	'requestaccount'                  => 'Дархости ҳисоб',
+	'requestaccount-text'             => "'''Форми зеринро барои дархости ҳисоби корбарӣ пур карда ирсол кунед'''.
+
+Мутмани бошед, ки шумо аввал [[{{MediaWiki:Requestaccount-page}}|Шартҳои Хидматро]] қабл аз дахости ҳисоб хондаед.
+
+Дар ҳоли тасдиқ шудани ҳисоб, паёми огоҳсозӣ тариқи почтаи электронӣ ба шумо фиристода хоҳад шуд ва ҳисоби шумо дар [[Special:Userlogin]] қобили истифода хоҳад шуд.",
 	'requestaccount-page'             => '{{ns:project}}:Шартҳои Хидмат',
 	'requestaccount-dup'              => "'''Эзоҳ: Шумо аллакай бо ҳисоби сабтшуда вуруд кардаед.'''",
 	'requestaccount-leg-user'         => 'Ҳисоби корбар',
@@ -4761,8 +4767,16 @@ $messages['tg-cyrl'] = array(
 	'requestaccount-bio'              => 'Зиндагиномаи шахсӣ:',
 	'requestaccount-notes'            => 'Эзоҳоти иловагӣ:',
 	'requestaccount-urls'             => 'Феҳристи сомонаҳо, агар зиёд бошад (бо сатрҳои ҷадид ҷудо кунед):',
+	'requestaccount-agree'            => 'Шумо бояд тасдиқ кунед ки номи аслии шумо дуруст аст ва шумо бо Шартҳои Хидмати мо розӣ ҳастед.',
+	'requestaccount-inuse'            => 'Номи корбарӣ аллакай дар истифодаи дархости ҳисоби дар тайбуда аст.',
 	'requestaccount-tooshort'         => 'Зиндагиномаи шумо бояд ҳадди ақал $1 дароз бошад.',
+	'requestaccount-emaildup'         => 'Дигар дархости ҳисоби дар тайбуда ҳамин нишонии почтаи электрониро истифода мебарад.',
+	'requestaccount-exts'             => 'Навъи замимавии парванда норавост.',
+	'requestaccount-tos'              => 'Ман [[{{MediaWiki:Requestaccount-page}}|Шартҳои Хидмати]] дар {{SITENAME}} бударо хондам ва бо онҳо вафодор ҳастам.
+Номи мушаххаскардаи ман зери "Номи Аслӣ" дар ҳақиқат номи аслии худи ман аст.',
 	'requestaccount-submit'           => 'Дархости ҳисоб',
+	'requestaccount-sent'             => 'Дархост шумо бо муваффақият фиристода шуд ва ҳамакнун дар тайи баррасӣ аст.',
+	'request-account-econf'           => 'Нишонаи почтаи электронии шумо тасдиқ шуд ва ҳамин тавр дар дархости ҳисоби шумо феҳрист хоҳад шуд.',
 	'requestaccount-email-subj'       => '{{SITENAME}} тасдиқи нишонаи почтаи электронӣ',
 	'requestaccount-email-body'       => 'Шахсе, эҳтимолан шумо аз нишонаи IP $1, ҳисоби "$2" бо нишонаи почтаи электронӣ дар {{SITENAME}} дархост кард.
 
@@ -4787,6 +4801,7 @@ $3
 	'confirmaccount-bio-q'            => 'Зиндагинома',
 	'confirmaccount-showopen'         => 'дархостҳои кушод',
 	'confirmaccount-showrej'          => 'дархостҳои радшуда',
+	'confirmaccount-review'           => 'Пешнамоиш',
 	'confirmaccount-q-open'           => 'дархостҳои кушод',
 	'confirmaccount-leg-user'         => 'Ҳисоби корбарӣ',
 	'confirmaccount-leg-person'       => 'Иттилооти шахсӣ',
@@ -4803,12 +4818,18 @@ $3
 	'confirmaccount-none-p'           => '(пешниҳод нашудааст)',
 	'confirmaccount-econf'            => '(таъйидшуда)',
 	'confirmaccount-noreason'         => '(ҳеҷ)',
+	'confirmaccount-create'           => 'Қабул (эҷоди ҳисоб)',
+	'confirmaccount-deny'             => 'Рад (аз феҳрист гирифтан)',
+	'confirmaccount-hold'             => 'Нигоҳ доштан',
+	'confirmaccount-spam'             => 'Ҳаразнома (почтаи электронӣ нафиристед)',
 	'confirmaccount-reason'           => 'Тавзеҳ (дар паёми электронӣ илова хоҳад шуд):',
 	'confirmaccount-ip'               => 'Нишонаи IP:',
 	'confirmaccount-submit'           => 'Таъйид',
 	'confirmaccount-needreason'       => 'Шумо бояд далел дар ҷаъбаи тавзеҳ дар зер пешкаш намоед.',
+	'confirmaccount-canthold'         => 'Ин дархост аллакай ё нигоҳ дошта шудааст ё ҳазф шудааст.',
 	'confirmaccount-acc'              => 'Дархости ҳисоб бо муваффақият тасдиқ карда шуд; ҳисоби корбарии ҷадидӣ [[User:$1]] эҷод шуд.',
 	'confirmaccount-rej'              => 'Дархости ҳисоб бо муваффақият рад карда шуд.',
+	'confirmaccount-viewing'          => '(ҳоло дар ҳоли дидан аст тавассути [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Дар ҳоли эҷоди саҳифаи корбарӣ бо зиндагиномаи корбари ҷадид.',
 	'confirmaccount-welc'             => "'''Хуш омадед ба ''{{SITENAME}}''!''' Мо умедворем, ки шумо бисёр ва хуб ҳиссагузорӣ хоҳед кард.  
 Шумо эҳтимолан мехоҳед [[{{MediaWiki:Helppage}}|саҳифаҳои роҳнаморо]] бихонед. Бори дигар, хуш омадед ва шод бошед!",
@@ -4832,6 +4853,22 @@ $3
 
 Аз сабабҳои амниятӣ, шумо бояд дар вурудшваии аввалин гузарвожаи худро тағйир диҳед.
 Барои вуруд шудан, лутфан равед ба {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'      => 'Бубахшед, дархости шумо барои ҳисоби "$1" дар {{SITENAME}} рад шуд.
+
+Чанд сабабҳое ҳастанд ки боиси рад шудан мешаванд.
+Шумо шояд формро дуруст пур накардаед, посухи шумо аз рӯи талабот тӯлонӣ набуд, ё ба меъёри талаботи сиёсати ҷавобгӯ набуд.
+Дар сомона феҳристи тамос мумкин оварда шуда бошад, ки тариқи он шумо метавонед маълумоти бештар оиди сиёсати ҳисоби корбарӣ дастрас намоед.',
+	'confirmaccount-email-body4'      => 'Бубахшед, дархости шумо барои ҳисоби "$1" дар {{SITENAME}} рад шуд.
+
+$2
+
+Дар сомона феҳристи тамос мумкин оварда шуда бошад, ки тариқи он шумо метавонед маълумоти бештар оиди сиёсати ҳисоби корбарӣ дастрас намоед.',
+	'confirmaccount-email-body5'      => 'Қабл аз қабул кардани дархости шумо барои ҳисоби "$1" дар {{SITENAME}} шумо бояд аввал чанд иттилооти иловагиро пешкаш кунед.
+
+$2
+
+Дар сомона феҳристи тамос мумкин оварда шуда бошад, ки тариқи он шумо метавонед маълумоти бештар оиди сиёсати ҳисоби корбарӣ дастрас намоед.',
+	'usercredentials'                 => 'Ихтиёроти корбар',
 	'usercredentials-user'            => 'Номи корбарӣ:',
 	'usercredentials-leg-user'        => 'Ҳисоби корбарӣ',
 	'usercredentials-leg-person'      => 'Иттилооти шахсӣ',
