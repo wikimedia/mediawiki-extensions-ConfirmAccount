@@ -3423,9 +3423,9 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 /** Polish (Polski)
  * @author Masti
  * @author Equadus
+ * @author Sp5uhe
  * @author Derbeth
  * @author McMonster
- * @author Sp5uhe
  */
 $messages['pl'] = array(
 	'requestaccount'            => 'Prośba o konto',
@@ -3455,11 +3455,17 @@ $3
 Jeśli konto jest utworzone, tylko Ty będziesz mieć możliwość uzyskania hasła drogą elektroniczną. Jeśli to nie Ty zakładałaś/eś konto, *nie klikaj* w powyższy link. Powyższy kod potwierdzający straci ważność $4.',
 	'acct_request_throttle_hit' => 'Przepraszamy, zamówiłeś (-aś) już o $1 kont. Nie możesz wykonać więcej zamówień.',
 	'confirmaccount-email-q'    => 'E-mail',
+	'confirmaccount-leg-user'   => 'Konto użytkownika',
+	'confirmaccount-leg-other'  => 'Inne informacje',
 	'confirmaccount-email'      => 'E-mail:',
 	'confirmaccount-pos-0'      => 'autor',
+	'confirmaccount-urls'       => 'Wykaz witryn:',
 	'confirmaccount-ip'         => 'Adres IP:',
 	'confirmaccount-wsum'       => 'Witaj!',
 	'usercredentials-user'      => 'Nazwa użytkownika:',
+	'usercredentials-leg-user'  => 'Konto użytkownika',
+	'usercredentials-leg-other' => 'Inne informacje',
+	'usercredentials-urls'      => 'Wykaz witryn:',
 	'usercredentials-member'    => 'Prawa:',
 );
 
