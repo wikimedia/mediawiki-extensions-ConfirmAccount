@@ -633,6 +633,13 @@ $messages['br'] = array(
 	'usercredentials-email'  => 'Postel :',
 );
 
+/** Catalan (Català)
+ * @author SMP
+ */
+$messages['ca'] = array(
+	'confirmaccount-noreason' => '(cap)',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
@@ -2036,10 +2043,14 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-none-o'           => 'Tuchwilu žane wotewrjene kontowe požadanja w tutej lisćinje njejsu.',
 	'confirmaccount-none-h'           => 'Tuchwilu žane kontowe požadanja w tutej lisćinje w čakanskej sekli njejsu.',
 	'confirmaccount-none-r'           => 'Tuchwilu žane runje wotpokazane kontowe požadanja w tutej lisćinje njejsu.',
+	'confirmaccount-none-e'           => 'Tuchwilu žane spadnjene kontowe požadanja w tutej lisćinje njejsu.',
 	'confirmaccount-real-q'           => 'Mjeno',
 	'confirmaccount-email-q'          => 'E-mejl',
 	'confirmaccount-bio-q'            => 'Biografija',
+	'confirmaccount-showopen'         => 'njesčinjene požadanja',
+	'confirmaccount-showrej'          => 'wotpokazane požadanja',
 	'confirmaccount-showheld'         => 'Lisćina wotewrjenych kontow pokazać',
+	'confirmaccount-showexp'          => 'spadnjene požadanja',
 	'confirmaccount-review'           => 'Dowolić/Wotpokazać',
 	'confirmaccount-types'            => 'Wubjer rynk za kontowe potwjerdźenje:',
 	'confirmaccount-all'              => '(pokazaj wšě rynki)',
@@ -4655,6 +4666,14 @@ Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill
 	'usercredentials-badid'           => 'Hittade inga referenser för denna användare. Kontrollera att namnet är rättstavat.',
 );
 
+/** Tamil (தமிழ்)
+ * @author Trengarasu
+ */
+$messages['ta'] = array(
+	'confirmaccount-name'  => 'பயனர் பெயர்',
+	'usercredentials-user' => 'பயனர் பெயர்:',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  * @author Chaduvari
@@ -4986,6 +5005,20 @@ $messages['tr'] = array(
 	'confirmaccount-email'   => 'E-posta:',
 	'confirmaccount-ip'      => 'IP adresi:',
 	'confirmaccount-wsum'    => 'Hoşgeldiniz!',
+);
+
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'requestaccount'          => 'Запит облікового запису',
+	'requestaccount-leg-user' => 'Обліковий запис',
+	'requestaccount-level-0'  => 'автор',
+	'requestaccount-level-1'  => 'редактор',
+	'confirmaccount-name'     => "Ім'я користувача",
+	'confirmaccount-real'     => "Ім'я:",
+	'confirmaccount-email'    => 'Електронна адреса:',
+	'confirmaccount-reqtype'  => 'Посада:',
 );
 
 /** Vietnamese (Tiếng Việt)
