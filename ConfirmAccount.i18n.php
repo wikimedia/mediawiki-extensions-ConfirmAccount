@@ -3523,9 +3523,9 @@ Aquò permetís d’èsser sus la tièraa dels contactes del sit, se desiratz ne
 
 /** Polish (Polski)
  * @author Masti
+ * @author Derbeth
  * @author Equadus
  * @author Sp5uhe
- * @author Derbeth
  * @author McMonster
  */
 $messages['pl'] = array(
@@ -3566,7 +3566,10 @@ Jeśli konto jest utworzone, tylko Ty będziesz mieć możliwość uzyskania has
 	'usercredentials-user'      => 'Nazwa użytkownika:',
 	'usercredentials-leg-user'  => 'Konto użytkownika',
 	'usercredentials-leg-other' => 'Inne informacje',
+	'usercredentials-attach'    => 'CV:',
+	'usercredentials-notes'     => 'Dodatkowe uwagi:',
 	'usercredentials-urls'      => 'Wykaz witryn:',
+	'usercredentials-ip'        => 'Oryginalny adres IP:',
 	'usercredentials-member'    => 'Prawa:',
 );
 
@@ -4664,6 +4667,14 @@ Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill
 	'usercredentials-ip'              => 'Ursprunglig IP-adress:',
 	'usercredentials-member'          => 'Rättigheter:',
 	'usercredentials-badid'           => 'Hittade inga referenser för denna användare. Kontrollera att namnet är rättstavat.',
+);
+
+/** Silesian (ślůnski)
+ * @author Herr Kriss
+ */
+$messages['szl'] = array(
+	'confirmaccount-real-q' => 'Mjano',
+	'confirmaccount-real'   => 'Mjano:',
 );
 
 /** Tamil (தமிழ்)
