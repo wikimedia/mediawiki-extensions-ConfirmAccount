@@ -111,7 +111,6 @@ function efAddRequestLoginText( &$template ) {
 }
 
 function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
-	wfLoadExtensionMessages( 'ConfirmAccount' );
 	# If an account is made with name X, and one is pending with name X
 	# we will have problems if the pending one is later confirmed
 	$dbw = wfGetDB( DB_MASTER );
@@ -119,6 +118,7 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 		array( 'acr_name' => $user->getName() ),
 		__METHOD__ );
 	if ( $dup ) {
+		wfLoadExtensionMessages( 'ConfirmAccount' );
 		$abortError = wfMsgHtml('requestaccount-inuse');
 		return false;
 	}
@@ -127,7 +127,7 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 
 function efConfirmAccountInjectStyle() {
 	global $wgOut, $wgUser;
-	
+	# Don't load unless needed
 	if( !$wgUser->isAllowed('confirmaccount') )
 		return true;
 	# FIXME: find better load place
