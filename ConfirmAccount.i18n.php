@@ -3522,55 +3522,84 @@ Aquò permetís d’èsser sus la tièraa dels contactes del sit, se desiratz ne
 );
 
 /** Polish (Polski)
- * @author Masti
- * @author Derbeth
- * @author Equadus
  * @author Sp5uhe
+ * @author Masti
+ * @author Equadus
+ * @author Derbeth
  * @author McMonster
  */
 $messages['pl'] = array(
-	'requestaccount'            => 'Prośba o konto',
-	'requestaccount-dup'        => "'''Uwaga: Jesteś już zalogowany (-a) na zarejestrowane konto.'''",
-	'requestaccount-leg-user'   => 'Konto użytkownika',
-	'requestaccount-leg-areas'  => 'Główne obszary zainteresowań',
-	'requestaccount-leg-person' => 'Informacje osobiste',
-	'requestaccount-leg-other'  => 'Inne informacje',
-	'requestaccount-real'       => 'Imię i nazwisko:',
-	'requestaccount-email'      => 'Adres e-mail:',
-	'requestaccount-reqtype'    => 'Pozycja:',
-	'requestaccount-level-0'    => 'autor',
-	'requestaccount-level-1'    => 'edytor',
-	'requestaccount-bio'        => 'Biografia:',
-	'requestaccount-attach'     => 'CV (opcjonalne):',
-	'requestaccount-notes'      => 'Dodatkowe informacje:',
-	'requestaccount-urls'       => 'Lista stron internetowych (każda w nowej linii):',
-	'requestaccount-agree'      => 'Musisz potwierdzić, że Twoje dane są poprawne oraz, że zgadzasz się na warunki serwisu.',
-	'requestaccount-inuse'      => 'Nazwa użytkownika jest zajęta  przez niepotwierdzone zgłoszenie.',
-	'requestaccount-exts'       => 'Niedozwolony typ załącznika.',
-	'requestaccount-email-body' => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, zarejestrował w {{GRAMMAR:MS.pl|{{SITENAME}}}} konto "$2", podając przy tym niniejszy adres e-mail.
+	'requestaccount'                  => 'Prośba o konto',
+	'requestaccount-page'             => '{{ns:project}}:Warunki użytkowania',
+	'requestaccount-dup'              => "'''Uwaga: Jesteś już zalogowany (-a) na zarejestrowane konto.'''",
+	'requestaccount-leg-user'         => 'Konto użytkownika',
+	'requestaccount-leg-areas'        => 'Główne obszary zainteresowań',
+	'requestaccount-leg-person'       => 'Informacje osobiste',
+	'requestaccount-leg-other'        => 'Inne informacje',
+	'requestaccount-real'             => 'Imię i nazwisko:',
+	'requestaccount-same'             => '(tak samo jak imię i nazwisko)',
+	'requestaccount-email'            => 'Adres e-mail:',
+	'requestaccount-reqtype'          => 'Pozycja:',
+	'requestaccount-level-0'          => 'autor',
+	'requestaccount-level-1'          => 'edytor',
+	'requestaccount-bio'              => 'Biografia:',
+	'requestaccount-attach'           => 'CV (opcjonalne):',
+	'requestaccount-notes'            => 'Dodatkowe informacje:',
+	'requestaccount-urls'             => 'Lista stron internetowych (każda w nowej linii):',
+	'requestaccount-agree'            => 'Musisz potwierdzić, że Twoje dane są poprawne oraz, że zgadzasz się na warunki serwisu.',
+	'requestaccount-inuse'            => 'Nazwa użytkownika jest zajęta  przez niepotwierdzone zgłoszenie.',
+	'requestaccount-tooshort'         => 'Twoja biografia musi mieć co najmniej {{PLURAL:$1|1 słowo|$1 słowa|$1 słów}}.',
+	'requestaccount-exts'             => 'Niedozwolony typ załącznika.',
+	'requestaccount-submit'           => 'Prośba o konto',
+	'requestaccount-sent'             => 'Twoja prośba o założenie konta została wysłana i oczekuje na rozpatrzenie.',
+	'requestaccount-email-subj'       => 'Potwierdzenie adresu e-mail w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
+	'requestaccount-email-body'       => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, zarejestrował w {{GRAMMAR:MS.pl|{{SITENAME}}}} konto "$2", podając przy tym niniejszy adres e-mail.
 
 Jeśli to Ty zakładałaś konto w {{GRAMMAR:MS.pl|{{SITENAME}}}}, potwierdź to otwierając w swojej przeglądarce poniższy link:
 
 $3
 
 Jeśli konto jest utworzone, tylko Ty będziesz mieć możliwość uzyskania hasła drogą elektroniczną. Jeśli to nie Ty zakładałaś/eś konto, *nie klikaj* w powyższy link. Powyższy kod potwierdzający straci ważność $4.',
-	'acct_request_throttle_hit' => 'Przepraszamy, zamówiłeś (-aś) już o $1 kont. Nie możesz wykonać więcej zamówień.',
-	'confirmaccount-email-q'    => 'E-mail',
-	'confirmaccount-leg-user'   => 'Konto użytkownika',
-	'confirmaccount-leg-other'  => 'Inne informacje',
-	'confirmaccount-email'      => 'E-mail:',
-	'confirmaccount-pos-0'      => 'autor',
-	'confirmaccount-urls'       => 'Wykaz witryn:',
-	'confirmaccount-ip'         => 'Adres IP:',
-	'confirmaccount-wsum'       => 'Witaj!',
-	'usercredentials-user'      => 'Nazwa użytkownika:',
-	'usercredentials-leg-user'  => 'Konto użytkownika',
-	'usercredentials-leg-other' => 'Inne informacje',
-	'usercredentials-attach'    => 'CV:',
-	'usercredentials-notes'     => 'Dodatkowe uwagi:',
-	'usercredentials-urls'      => 'Wykaz witryn:',
-	'usercredentials-ip'        => 'Oryginalny adres IP:',
-	'usercredentials-member'    => 'Prawa:',
+	'requestaccount-email-subj-admin' => 'Prośba o konto użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
+	'acct_request_throttle_hit'       => 'Przepraszamy, zamówiłeś (-aś) już o $1 kont. Nie możesz wykonać więcej zamówień.',
+	'confirmaccounts'                 => 'Potwierdź prośbę o założenie konta użytkownika',
+	'confirmedit-desc'                => 'Pozwala biurokratom akceptować prośby o konto użytkownika',
+	'confirmaccount-none-o'           => 'W tym momencie nie ma otwartych próśb o konto użytkownika na tej liście.',
+	'confirmaccount-none-h'           => 'W tym momencie nie ma wstrzymanych próśb o konto użytkownika na tej liście.',
+	'confirmaccount-none-r'           => 'W tym momencie nie ma niedawno odrzuconych próśb o konto użytkownika na tej liście.',
+	'confirmaccount-none-e'           => 'W tym momencie nie ma przeterminowanych próśb o konto użytkownika na tej liście.',
+	'confirmaccount-email-q'          => 'E-mail',
+	'confirmaccount-bio-q'            => 'Biografia',
+	'confirmaccount-showopen'         => 'otwarte prośby o konto',
+	'confirmaccount-showrej'          => 'odrzucone prośby o konto',
+	'confirmaccount-showheld'         => 'wstrzymane prośby o konto',
+	'confirmaccount-showexp'          => 'przeterminowane prośby o konto',
+	'confirmaccount-all'              => '(pokaż wszystkie kolejki)',
+	'confirmaccount-type'             => 'Kolejka:',
+	'confirmaccount-leg-user'         => 'Konto użytkownika',
+	'confirmaccount-leg-other'        => 'Inne informacje',
+	'confirmaccount-name'             => 'Nazwa użytkownika',
+	'confirmaccount-email'            => 'E-mail:',
+	'confirmaccount-pos-0'            => 'autor',
+	'confirmaccount-bio'              => 'Biografia:',
+	'confirmaccount-attach'           => 'Życiorys:',
+	'confirmaccount-notes'            => 'Dodatkowe informacje:',
+	'confirmaccount-urls'             => 'Wykaz witryn:',
+	'confirmaccount-noreason'         => '(brak)',
+	'confirmaccount-ip'               => 'Adres IP:',
+	'confirmaccount-submit'           => 'Potwierdź',
+	'confirmaccount-needreason'       => 'Musisz podać uzasadnienie w polu poniżej.',
+	'confirmaccount-wsum'             => 'Witaj!',
+	'usercredentials-user'            => 'Nazwa użytkownika:',
+	'usercredentials-leg-user'        => 'Konto użytkownika',
+	'usercredentials-leg-other'       => 'Inne informacje',
+	'usercredentials-real'            => 'Imię i nazwisko:',
+	'usercredentials-bio'             => 'Biografia:',
+	'usercredentials-attach'          => 'Życiorys:',
+	'usercredentials-notes'           => 'Dodatkowe informacje:',
+	'usercredentials-urls'            => 'Wykaz witryn:',
+	'usercredentials-ip'              => 'Oryginalny adres IP:',
+	'usercredentials-member'          => 'Prawa:',
 );
 
 /** Piemontèis (Piemontèis)
@@ -3777,6 +3806,7 @@ As suas acções será registadas privadamente. Também é esperado que vocês r
 Contas aprovadas serão criadas e removidas desta lista. Contas rejeitadas serão simplesmente eliminadas desta lista.',
 	'confirmaccount-list2'            => 'Abaixo encontra-se uma lista de pedidos de conta recentemente rejeitados que serão automaticamente eliminados após alguns dias.
 Estes podem ainda ser aprovados para novas contas, mas deverá verificar primeiro com o administrador que rejeitou o pedido antes de o aprovar.',
+	'confirmaccount-list3'            => 'Abaixo encontra-se uma lista de pedidos de conta expirados que poderão ser automaticamente apagados após alguns dias. Estes ainda podem ser aprovados e convertidos em novas contas.',
 	'confirmaccount-text'             => "Isto é um pedido pendente para uma conta de utilizador em '''{{SITENAME}}'''.  
 
 Reveja cuidadosamente a informação abaixo. Se está a aprovar este pedido, use a caixa de selecção de posição para esetabelecer o estado da conta do utilizador.
@@ -3787,6 +3817,7 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-none-o'           => 'Actualmente não existem pedidos de conta pendentes em aberto nesta lista.',
 	'confirmaccount-none-h'           => 'Actualmente não existem pedidos de conta pendentes em espera nesta lista.',
 	'confirmaccount-none-r'           => 'Actualmente não existem pedidos de conta recentemente rejeitados nesta lista.',
+	'confirmaccount-none-e'           => 'Não há neste momento pedidos de conta expirados nesta lista.',
 	'confirmaccount-real-q'           => 'Nome',
 	'confirmaccount-email-q'          => 'Email',
 	'confirmaccount-bio-q'            => 'Biografia',
