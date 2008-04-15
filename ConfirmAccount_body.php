@@ -236,6 +236,13 @@ class RequestAccountPage extends SpecialPage {
 			$this->showForm( wfMsgHtml('noname') );
 			return;
 		}
+		$abortError = '';
+		if( !wfRunHooks( 'AbortNewAccount', array( $u, &$abortError ) ) ) {
+			// Hook point to add extra creation throttles and blocks
+			wfDebug( "RequestAccount::addNewAccountInternal: a hook blocked creation\n" );
+			$this->showForm( $abortError );
+			return;
+		}
 		# No request spamming...
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
 			global $wgMemc;
