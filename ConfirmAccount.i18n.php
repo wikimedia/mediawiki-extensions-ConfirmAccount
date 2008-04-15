@@ -2713,6 +2713,7 @@ $messages['lb'] = array(
 	'confirmaccount-pos-0'            => 'Auteur',
 	'confirmaccount-bio'              => 'Biographie:',
 	'confirmaccount-attach'           => 'Liewenslaf:',
+	'confirmaccount-notes'            => 'Zousätzlech Bemierkungen:',
 	'confirmaccount-urls'             => 'Lëscht vu Websäiten:',
 	'confirmaccount-reject'           => '(refuséiert vum [[User:$1|$1]] de(n) $2)',
 	'confirmaccount-noreason'         => '(keen)',
@@ -2731,7 +2732,7 @@ $messages['lb'] = array(
 	'usercredentials-real'            => 'Richtege Numm:',
 	'usercredentials-bio'             => 'Biographie:',
 	'usercredentials-attach'          => 'Liewenslaf:',
-	'usercredentials-notes'           => 'Zousätzlech Notizen:',
+	'usercredentials-notes'           => 'Zousätzlech Bemierkungen:',
 	'usercredentials-urls'            => 'Lëscht vun Internetsiten:',
 	'usercredentials-ip'              => 'Original IP-Adress:',
 	'usercredentials-member'          => 'Rechter:',
@@ -3523,64 +3524,98 @@ Aquò permetís d’èsser sus la tièraa dels contactes del sit, se desiratz ne
 
 /** Polish (Polski)
  * @author Sp5uhe
- * @author Masti
  * @author Equadus
- * @author Derbeth
+ * @author Masti
  * @author McMonster
+ * @author Derbeth
  */
 $messages['pl'] = array(
-	'requestaccount'                  => 'Prośba o konto',
-	'requestaccount-page'             => '{{ns:project}}:Warunki użytkowania',
-	'requestaccount-dup'              => "'''Uwaga: Jesteś już zalogowany (-a) na zarejestrowane konto.'''",
+	'requestaccount'                  => 'Wniosek o założenie konta',
+	'requestaccount-text'             => "'''Wypełnij i wyślij poniższy formularz jeśli chcesz mieć własne konto użytkownika'''.
+
+Zanim jednak to zrobisz zapoznaj się z [[{{MediaWiki:Requestaccount-page}}|zasadami korzystania]] z {{GRAMMAR:D.lp|{{SITENAME}}}}.
+
+Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość e-mail i będziesz mógł [[Special:Userlogin|się zalogować]].",
+	'requestaccount-page'             => '{{ns:project}}:Zasady użytkowania',
+	'requestaccount-dup'              => "'''Uwaga: Jesteś już zalogowany na zarejestrowane konto.'''",
 	'requestaccount-leg-user'         => 'Konto użytkownika',
 	'requestaccount-leg-areas'        => 'Główne obszary zainteresowań',
 	'requestaccount-leg-person'       => 'Informacje osobiste',
 	'requestaccount-leg-other'        => 'Inne informacje',
+	'requestaccount-acc-text'         => 'Na Twój adres e-mail zostanie wysłana wiadomość potwierdzająca złożenie wniosku o założenie konta.
+Kliknij na link zawarty w tej wiadomości.
+Hasło do konta zostanie przesłane poprzez e-mail, gdy konto zostanie już utworzone.',
+	'requestaccount-areas-text'       => 'Określ tematy i obszary dla których posiadasz formalne przygotowanie lub takie nad którymi planujesz najwięcej pracować.',
+	'requestaccount-ext-text'         => 'Następujące informacje nie będą udostępniane. Zostaną użyte tylko na potrzeby tego wniosku o założenie konta użytkownika.
+Możesz wyświetlić kontakty np. numer telefonu, by łatwiej zdecydować o zatwierdzeniu lub odrzuceniu wniosku.',
+	'requestaccount-bio-text'         => 'Twoja biografia zostanie wstawiona jako domyślna zawartość Twojej strony użytkownika.
+Załącz informacje o kwalifikacjach i referencje, oczywiście pod warunkiem, że nie opublikowanie tych informacji nie stawi dla Ciebie problemu.
+Ustawione obecnie imię i nazwisko możesz zmienić w [[Special:Preferences|preferencjach]].',
 	'requestaccount-real'             => 'Imię i nazwisko:',
-	'requestaccount-same'             => '(tak samo jak imię i nazwisko)',
+	'requestaccount-same'             => '(prawdziwe imię i nazwisko)',
 	'requestaccount-email'            => 'Adres e-mail:',
-	'requestaccount-reqtype'          => 'Pozycja:',
+	'requestaccount-reqtype'          => 'Stanowisko:',
 	'requestaccount-level-0'          => 'autor',
-	'requestaccount-level-1'          => 'edytor',
-	'requestaccount-bio'              => 'Biografia:',
-	'requestaccount-attach'           => 'CV (opcjonalne):',
+	'requestaccount-level-1'          => 'redaktor',
+	'requestaccount-bio'              => 'Osobista biografia:',
+	'requestaccount-attach'           => 'Życiorys (opcjonalne):',
 	'requestaccount-notes'            => 'Dodatkowe informacje:',
-	'requestaccount-urls'             => 'Lista stron internetowych (każda w nowej linii):',
-	'requestaccount-agree'            => 'Musisz potwierdzić, że Twoje dane są poprawne oraz, że zgadzasz się na warunki serwisu.',
-	'requestaccount-inuse'            => 'Nazwa użytkownika jest zajęta  przez niepotwierdzone zgłoszenie.',
-	'requestaccount-tooshort'         => 'Twoja biografia musi mieć co najmniej {{PLURAL:$1|1 słowo|$1 słowa|$1 słów}}.',
+	'requestaccount-urls'             => 'Lista adresów stron internetowych, jeśli posiadasz (każdy w osobnym wierszu):',
+	'requestaccount-agree'            => 'Musisz potwierdzić, że wpisane imię i nazwisko są poprawne oraz, że zgadzasz się na warunki korzystania z {{GRAMMAR:D.lp|{{SITENAME}}}}.',
+	'requestaccount-inuse'            => 'Nazwa użytkownika jest zajęta przez oczekujący wniosek o założenie konta.',
+	'requestaccount-tooshort'         => 'Biografia musi mieć co najmniej {{PLURAL:$1|1 słowo|$1 słowa|$1 słów}}.',
+	'requestaccount-emaildup'         => 'W innym oczekującym wniosku o założenie konta użytkownika wpisano taki sam adres e-mail.',
 	'requestaccount-exts'             => 'Niedozwolony typ załącznika.',
-	'requestaccount-submit'           => 'Prośba o konto',
-	'requestaccount-sent'             => 'Twoja prośba o założenie konta została wysłana i oczekuje na rozpatrzenie.',
+	'requestaccount-resub'            => 'Plik z Twoim życiorysem musi zostać ponownie wybrany ze względów bezpieczeństwa.
+Pozostaw pole niewypełnione jeśli nie chcesz więcej go załączać.',
+	'requestaccount-tos'              => 'Przeczytałem i wyrażam bez zastrzeżeń zgodę na [[{{MediaWiki:Requestaccount-page}}|warunki korzystania]] z {{GRAMMAR:D.lp|{{SITENAME}}}}.
+Oświadczam, że wpisane przez ze mnie imię i nazwisko są faktycznie moimi.',
+	'requestaccount-submit'           => 'Składam wniosek',
+	'requestaccount-sent'             => 'Twój wniosek o założenie konta został wysłany i oczekuje na rozpatrzenie.',
+	'request-account-econf'           => 'Adres e-mail został potwierdzony i będzie wyświetlany tak, jak określono we wniosku o założenie konta.',
 	'requestaccount-email-subj'       => 'Potwierdzenie adresu e-mail w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
-	'requestaccount-email-body'       => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, zarejestrował w {{GRAMMAR:MS.pl|{{SITENAME}}}} konto "$2", podając przy tym niniejszy adres e-mail.
+	'requestaccount-email-body'       => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, złożył w {{GRAMMAR:MS.pl|{{SITENAME}}}} wniosek o założenie konta użytkownika „$2”, podając przy tym niniejszy adres e-mail.
 
-Jeśli to Ty zakładałaś konto w {{GRAMMAR:MS.pl|{{SITENAME}}}}, potwierdź to otwierając w swojej przeglądarce poniższy link:
+Jeśli to Ty zakładasz konto w {{GRAMMAR:MS.pl|{{SITENAME}}}}, potwierdź to otwierając w swojej przeglądarce poniższy link:
 
 $3
 
-Jeśli konto jest utworzone, tylko Ty będziesz mieć możliwość uzyskania hasła drogą elektroniczną. Jeśli to nie Ty zakładałaś/eś konto, *nie klikaj* w powyższy link. Powyższy kod potwierdzający straci ważność $4.',
-	'requestaccount-email-subj-admin' => 'Prośba o konto użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
-	'acct_request_throttle_hit'       => 'Przepraszamy, zamówiłeś (-aś) już o $1 kont. Nie możesz wykonać więcej zamówień.',
-	'confirmaccounts'                 => 'Potwierdź prośbę o założenie konta użytkownika',
-	'confirmedit-desc'                => 'Pozwala biurokratom akceptować prośby o konto użytkownika',
-	'confirmaccount-none-o'           => 'W tym momencie nie ma otwartych próśb o konto użytkownika na tej liście.',
-	'confirmaccount-none-h'           => 'W tym momencie nie ma wstrzymanych próśb o konto użytkownika na tej liście.',
-	'confirmaccount-none-r'           => 'W tym momencie nie ma niedawno odrzuconych próśb o konto użytkownika na tej liście.',
-	'confirmaccount-none-e'           => 'W tym momencie nie ma przeterminowanych próśb o konto użytkownika na tej liście.',
-	'confirmaccount-email-q'          => 'E-mail',
+Jeśli konto zostanie utworzone, zostanie wysłane do Ciebie na ten adres e-mail hasło.
+Jeśli to nie Ty zakładałeś konto, *nie klikaj* w powyższy link.
+Kod potwierdzający zawarty w powyższym linku straci ważność $4.',
+	'requestaccount-email-subj-admin' => 'Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
+	'requestaccount-email-body-admin' => '„$1” złożył wniosek o założenie konta użytkownika i oczekuje na zatwierdzenie.
+Adres e-mail został potwierdzony. Możesz zatwierdzić wniosek tutaj „$2”.',
+	'acct_request_throttle_hit'       => 'Złożyłeś już {{PLURAL:$1|wniosek|$2 wnioski|$2 wniosków}} o założenie konta użytkownika.
+Nie możesz złożyć więcej wniosków.',
+	'requestaccount-loginnotice'      => "By uzyskać konto użytkownika musisz '''[[Special:RequestAccount|złożyć wniosek]]'''.",
+	'confirmaccount-newrequests'      => "{{PLURAL:$1|Jest '''$1''' [[Special:ConfirmAccounts|oczekujący wniosek]]|Są '''$1''' [[Special:ConfirmAccounts|oczekujące wnioski]]|Jest '''$1''' [[Special:ConfirmAccounts|oczekujących wniosków]]}}, z potwierdzonym adresem e-mail",
+	'confirmaccounts'                 => 'Potwierdź wniosek o założenie konta użytkownika',
+	'confirmedit-desc'                => 'Pozwala biurokratom akceptować wnioski o założenie konta użytkownika',
+	'confirmaccount-none-o'           => 'Na tej liście nie ma otwartych wniosków o założenie konta użytkownika.',
+	'confirmaccount-none-h'           => 'Na tej liście nie ma wstrzymanych wniosków o założenie konta użytkownika.',
+	'confirmaccount-none-r'           => 'Na tej liście nie ma niedawno odrzuconych wniosków o założenie konta użytkownika.',
+	'confirmaccount-none-e'           => 'Na tej liście nie ma przeterminowanych wniosków o założenie konta użytkownika.',
+	'confirmaccount-real-q'           => 'Imię i nazwisko',
+	'confirmaccount-email-q'          => 'Adres e-mail',
 	'confirmaccount-bio-q'            => 'Biografia',
-	'confirmaccount-showopen'         => 'otwarte prośby o konto',
-	'confirmaccount-showrej'          => 'odrzucone prośby o konto',
-	'confirmaccount-showheld'         => 'wstrzymane prośby o konto',
-	'confirmaccount-showexp'          => 'przeterminowane prośby o konto',
+	'confirmaccount-showopen'         => 'otwarte wnioski o założenie konta',
+	'confirmaccount-showrej'          => 'odrzucone wnioski o założenie konta',
+	'confirmaccount-showheld'         => 'wstrzymane wnioski o założenie konta',
+	'confirmaccount-showexp'          => 'przeterminowane wnioski o założenie konta',
 	'confirmaccount-all'              => '(pokaż wszystkie kolejki)',
 	'confirmaccount-type'             => 'Kolejka:',
+	'confirmaccount-q-open'           => 'otwarte wnioski o założenie konta',
+	'confirmaccount-q-held'           => 'wstrzymane wnioski o założenie konta',
+	'confirmaccount-q-stale'          => 'przeterminowane wnioski o założenie konta',
 	'confirmaccount-leg-user'         => 'Konto użytkownika',
 	'confirmaccount-leg-other'        => 'Inne informacje',
 	'confirmaccount-name'             => 'Nazwa użytkownika',
-	'confirmaccount-email'            => 'E-mail:',
+	'confirmaccount-real'             => 'Imię i nazwisko',
+	'confirmaccount-email'            => 'Adres e-mail',
+	'confirmaccount-reqtype'          => 'Stanowisko:',
 	'confirmaccount-pos-0'            => 'autor',
+	'confirmaccount-pos-1'            => 'redaktor',
 	'confirmaccount-bio'              => 'Biografia:',
 	'confirmaccount-attach'           => 'Życiorys:',
 	'confirmaccount-notes'            => 'Dodatkowe informacje:',
@@ -3590,6 +3625,7 @@ Jeśli konto jest utworzone, tylko Ty będziesz mieć możliwość uzyskania has
 	'confirmaccount-submit'           => 'Potwierdź',
 	'confirmaccount-needreason'       => 'Musisz podać uzasadnienie w polu poniżej.',
 	'confirmaccount-wsum'             => 'Witaj!',
+	'confirmaccount-email-subj'       => 'Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
 	'usercredentials-user'            => 'Nazwa użytkownika:',
 	'usercredentials-leg-user'        => 'Konto użytkownika',
 	'usercredentials-leg-other'       => 'Inne informacje',
