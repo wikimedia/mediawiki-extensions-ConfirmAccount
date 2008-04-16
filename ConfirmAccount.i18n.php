@@ -1047,6 +1047,7 @@ $messages['eo'] = array(
 	'requestaccount-email-subj'       => '{{SITENAME}} retpoŝta konfirmo',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} peto por konto',
 	'requestaccount-loginnotice'      => "Akiri uzanto-konton, vi devas '''[[Special:RequestAccount|peti ĝin]]'''.",
+	'confirmaccounts'                 => 'Konfirmu petojn por kontoj',
 	'confirmaccount-real-q'           => 'Nomo',
 	'confirmaccount-email-q'          => 'Retadreso',
 	'confirmaccount-bio-q'            => 'Biografio',
@@ -2675,6 +2676,7 @@ $messages['la'] = array(
  */
 $messages['lb'] = array(
 	'requestaccount'                  => 'Benotzerkont ufroën',
+	'requestaccount-page'             => '{{ns:project}}:Notzungsbedingungen',
 	'requestaccount-dup'              => "'''Opgepasst: Dir sidd scho matt engem registréierte Benotzerkont ugemellt.'''",
 	'requestaccount-leg-user'         => 'Benotzerkont',
 	'requestaccount-leg-areas'        => 'Haaptinteressen',
