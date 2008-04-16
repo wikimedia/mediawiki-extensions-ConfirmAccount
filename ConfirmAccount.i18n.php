@@ -1043,6 +1043,7 @@ $messages['eo'] = array(
 	'requestaccount-attach'           => 'Karierresumo (nedeviga):',
 	'requestaccount-notes'            => 'Pluaj notoj:',
 	'requestaccount-tooshort'         => 'Via biografio estu almenaŭ $1 vortoj.',
+	'requestaccount-exts'             => 'Dosiertipo de aldonaĵo estas malpermesita.',
 	'requestaccount-submit'           => 'Petu konton',
 	'requestaccount-email-subj'       => '{{SITENAME}} retpoŝta konfirmo',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} peto por konto',
@@ -3402,7 +3403,7 @@ $messages['oc'] = array(
 	'requestaccount-attach'           => 'CV/Resumit (facultatiu)',
 	'requestaccount-notes'            => 'Nòtas suplementàrias :',
 	'requestaccount-urls'             => "Lista dels sits Web. Se n'i a mantun, separatz-los per un saut de linha :",
-	'requestaccount-agree'            => 'Devètz certificar que vòstre nom vertadièr es corrècte e acceptatz las condicions d’utilizacions del servici.',
+	'requestaccount-agree'            => "Vos cal certificar que vòstre nom vertadièr es corrècte e qu'acceptatz las condicions d’utilizacion del servici.",
 	'requestaccount-inuse'            => 'Lo nom d’utilizaire es ja utilizat dins una requèsta en cors d’aprobacion.',
 	'requestaccount-tooshort'         => 'Vòstra biografia deu aver almens {{PLURAL:$1|$1 mot|$1 mots}}.',
 	'requestaccount-emaildup'         => 'Una autra demanda en cors utiliza la meteissa adreça electronica.',
@@ -3413,13 +3414,20 @@ $messages['oc'] = array(
 	'requestaccount-sent'             => "Vòstra demanda de compte d'utilizaire es estada mandada amb succès e es estada mesa dins la lista d’espèra d’aprobacion.",
 	'request-account-econf'           => 'Vòstra adreça de corrièr electronic es estada confirmada e serà listada tala coma es dins vòstra demanda de compte.',
 	'requestaccount-email-subj'       => '{{SITENAME}} confirmacion d’adreça de corrièr electronic.',
-	'requestaccount-email-body'       => "Qualqu’un, probablament vos, a formulat, dempuèi l’adreca IP $1, una demanda de compte d'utilizaire « $2 » amb aquesta adreça de corrièr electronic sus {{SITENAME}}. Per confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navegaire Web : $3 Vòstre senhal vos serà mandat unicament se vòstre compte es creat. Se èra pas lo cas, utilizetz pas aqueste ligam. Aqueste còde de confirmacion expira lo $4.",
+	'requestaccount-email-body'       => "Qualqu’un, probablament vos, a formulat, dempuèi l’adreca IP $1, una demanda de compte d'utilizaire « $2 » amb aquesta adreça de corrièr electronic sus {{SITENAME}}.
+
+Per confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navigaire Web :
+
+$3 
+
+Vòstre senhal vos serà mandat unicament se vòstre compte es creat. Se èra pas lo cas, utilizetz pas aqueste ligam. 
+Aqueste còde de confirmacion expira lo $4.",
 	'requestaccount-email-subj-admin' => 'Demanda de compte sus {{SITENAME}}',
 	'requestaccount-email-body-admin' => "« $1 » a demandat un compte e se tròba en espèra de confirmacion.
 
 L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprobar la demanda aicí « $2 ».",
 	'acct_request_throttle_hit'       => 'O planhèm, ja avètz demandat $1 comptes. Podètz pas far mai de demanda.',
-	'requestaccount-loginnotice'      => "Per obténer un compte d'utilizaire, ne devètz far '''[[Special:RequestAccount|la demanda]]'''.",
+	'requestaccount-loginnotice'      => "Per obténer un compte d'utilizaire, vos ne cal far '''[[Special:RequestAccount|la demanda]]'''.",
 	'confirmaccount-newrequests'      => "Actualament i a '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compte]]|[[Special:ConfirmAccounts|demandas de compte]]}} en cors.",
 	'confirmaccounts'                 => 'Demanda de confirmacion de comptes',
 	'confirmedit-desc'                => 'Balha als burocratas la possibilitat de confirmar las demandas de comptes d’utilizaires.',
@@ -3485,9 +3493,9 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-hold'             => 'Detengut',
 	'confirmaccount-spam'             => 'Spam (mandetz pas de corrièr electronic)',
 	'confirmaccount-reason'           => 'Comentari (figurarà dins lo corrièr electronic) :',
-	'confirmaccount-ip'               => 'Adreça IP:',
+	'confirmaccount-ip'               => 'Adreça IP :',
 	'confirmaccount-submit'           => 'Confirmacion',
-	'confirmaccount-needreason'       => 'Devètz indicar un motiu dins lo quadre çaiaprèp.',
+	'confirmaccount-needreason'       => 'Vos cal indicar un motiu dins lo quadre çaiaprèp.',
 	'confirmaccount-canthold'         => 'Aquesta requèsta es ja, siá presa en compte, siá suprimida.',
 	'confirmaccount-acc'              => "La demanda de compte es estada confirmada amb succès ; creacion de l'utilizaire novèl [[User:$1]].",
 	'confirmaccount-rej'              => 'La demanda es estada regetada amb succès.',
@@ -5089,9 +5097,16 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
+ * @author AS
  */
 $messages['uk'] = array(
 	'requestaccount'          => 'Запит облікового запису',
+	'requestaccount-text'     => "'''Заповніть та відішліть наступну форму запиту облікового запису'''.
+
+Будь ласка, спершу прочитайте [[{{MediaWiki:Requestaccount-page}}|Умови надання послуг]].
+
+Після того, як обліковий запис буде підтверджено, вас буде повідомлено про це електронною поштою і ви зможете [[Special:Userlogin|увійти до системи]].",
+	'requestaccount-page'     => '{{ns:project}}:Умови надання послуг',
 	'requestaccount-leg-user' => 'Обліковий запис',
 	'requestaccount-level-0'  => 'автор',
 	'requestaccount-level-1'  => 'редактор',
