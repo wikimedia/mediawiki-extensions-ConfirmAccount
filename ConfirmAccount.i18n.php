@@ -1779,6 +1779,33 @@ $messages['gu'] = array(
 	'confirmaccount-wsum'    => 'સુસ્વાગતમ્',
 );
 
+/** Manx (Gaelg)
+ * @author MacTire02
+ */
+$messages['gv'] = array(
+	'requestaccount-leg-user'   => 'Coontys yn ymmydeyr',
+	'requestaccount-leg-person' => 'Oayllys persoonagh',
+	'requestaccount-leg-other'  => 'Oayllys elley',
+	'requestaccount-real'       => 'Feer-ennym:',
+	'requestaccount-level-0'    => 'ughtar',
+	'requestaccount-level-1'    => 'reagheyder',
+	'requestaccount-bio'        => 'Beashnys persoonagh:',
+	'requestaccount-notes'      => 'Noteyn tooilley:',
+	'confirmaccount-real-q'     => 'Ennym',
+	'confirmaccount-bio-q'      => 'Beashnys',
+	'confirmaccount-all'        => '(dagh ooilley amman y haishbyney)',
+	'confirmaccount-type'       => 'Famman:',
+	'confirmaccount-leg-user'   => 'Coontys ymmydeyr',
+	'confirmaccount-leg-person' => 'Oayllys persoonagh',
+	'confirmaccount-leg-other'  => 'Oayllys elley',
+	'confirmaccount-name'       => "Dt'ennym ymmydeyr",
+	'confirmaccount-real'       => 'Ennym:',
+	'confirmaccount-pos-0'      => 'ughtar',
+	'confirmaccount-pos-1'      => 'reagheyder',
+	'confirmaccount-bio'        => 'Beashnys:',
+	'usercredentials-user'      => "Dt'ennym ymmydeyr:",
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
@@ -5101,11 +5128,11 @@ $messages['tr'] = array(
  */
 $messages['uk'] = array(
 	'requestaccount'          => 'Запит облікового запису',
-	'requestaccount-text'     => "'''Заповніть та відішліть наступну форму запиту облікового запису'''.
+	'requestaccount-text'     => "'''Заповніть та відправте наступну форму запиту облікового запису'''.
 
 Будь ласка, спершу прочитайте [[{{MediaWiki:Requestaccount-page}}|Умови надання послуг]].
 
-Після того, як обліковий запис буде підтверджено, вас буде повідомлено про це електронною поштою і ви зможете [[Special:Userlogin|увійти до системи]].",
+Після того, як обліковий запис буде підтверджено, вас буде повідомлено про це електронною поштою і ви зможете [[Special:Userlogin|ввійти до системи]].",
 	'requestaccount-page'     => '{{ns:project}}:Умови надання послуг',
 	'requestaccount-leg-user' => 'Обліковий запис',
 	'requestaccount-level-0'  => 'автор',
