@@ -72,6 +72,10 @@ $wgConfirmAccountSaveInfo = true;
 # Set to false to skip this.
 $wgConfirmAccountContact = false;
 
+# If ConfirmAccount is installed and set to trigger for login/create account,
+# inject catpchas for requests too?
+$wgConfirmAccountCaptchas = true;
+
 # Location of attached files for pending requests
 $wgAllowAccountRequestFiles = true;
 $wgAccountRequestExts = array('txt','pdf','doc','latex','rtf','text','wp','wpd','sxw');

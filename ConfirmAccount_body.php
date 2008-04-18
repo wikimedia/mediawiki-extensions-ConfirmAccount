@@ -192,24 +192,20 @@ class RequestAccountPage extends SpecialPage {
 		}
 		# Pseudo template for extensions
 		# FIXME: do this better...
-		global $wgCaptchaClass;
-		if( isset($wgCaptchaClass) ) {
+		global $wgConfirmAccountCaptchas, $wgCaptchaClass, $wgCaptchaTriggers;
+		if( $wgConfirmAccountCaptchas && isset($wgCaptchaClass) && $wgCaptchaTriggers['createaccount'] ) {
 			global $wgExtensionMessagesFiles;
 		
 			$captcha = new $wgCaptchaClass;
-			$template = new UsercreateTemplate();
-			$template->set( 'header', '' );
 			# Hook point to add captchas
 			wfLoadExtensionMessages( 'ConfirmEdit' );
 			if( isset( $wgExtensionMessagesFiles[$wgCaptchaClass] ) ) {
 				wfLoadExtensionMessages( $wgCaptchaClass );
 			}
-			$captcha->injectUserCreate( $template );
-			if( $template->data['header'] ) {
-				$form .= '<fieldset>';
-				$form .= $template->data['header'];
-				$form .= '</fieldset>';
-			}
+			$form .= '<fieldset>';
+			$form .= wfMsgExt('captcha-createaccount','parse');
+			$form .= $captcha->getForm();
+			$form .= '</fieldset>';
 		}
 		if( $wgAccountRequestToS ) {
 			$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
@@ -236,12 +232,21 @@ class RequestAccountPage extends SpecialPage {
 			$this->showForm( wfMsgHtml('noname') );
 			return;
 		}
+		# FIXME: Hack! If we don't want them for requests, temporarily turn it off!
+		global $wgConfirmAccountCaptchas, $wgCaptchaTriggers;
+		if( !$wgConfirmAccountCaptchas && isset($wgCaptchaTriggers) ) {
+			$old = $wgCaptchaTriggers['createaccount'];
+			$wgCaptchaTriggers['createaccount'] = false;
+		}
 		$abortError = '';
 		if( !wfRunHooks( 'AbortNewAccount', array( $u, &$abortError ) ) ) {
 			// Hook point to add extra creation throttles and blocks
-			wfDebug( "RequestAccount::addNewAccountInternal: a hook blocked creation\n" );
+			wfDebug( "RequestAccount::doSubmit: a hook blocked creation\n" );
 			$this->showForm( $abortError );
 			return;
+		}
+		if( !$wgConfirmAccountCaptchas && isset($wgCaptchaTriggers) ) {
+			$wgCaptchaTriggers['createaccount'] = $old;
 		}
 		# No request spamming...
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
@@ -298,22 +303,6 @@ class RequestAccountPage extends SpecialPage {
 		}
 		
 		$u->setRealName( $this->mRealName );
-		# Let captchas deny request...
-		global $wgCaptchaClass;
-		if( isset($wgCaptchaClass) ) {
-			global $wgExtensionMessagesFiles;
-			
-			wfLoadExtensionMessages( 'ConfirmEdit' );
-			if( isset( $wgExtensionMessagesFiles[$wgCaptchaClass] ) ) {
-				wfLoadExtensionMessages( $wgCaptchaClass );
-			}
-			$captcha = new $wgCaptchaClass;
-			$captcha->confirmUserCreate( $u, $abortError );
-			if( $abortError ) {
-				$this->showForm( $abortError );
-				return false;
-			}
-		}
 		# Per security reasons, file dir cannot be pulled from client,
 		# so ask them to resubmit it then...
 		global $wgAllowAccountRequestFiles, $wgAccountRequestExtraInfo;
