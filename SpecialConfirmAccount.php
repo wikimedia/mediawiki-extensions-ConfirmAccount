@@ -72,7 +72,7 @@ $wgConfirmAccountSaveInfo = true;
 # Set to false to skip this.
 $wgConfirmAccountContact = false;
 
-# If ConfirmAccount is installed and set to trigger for login/create account,
+# If ConfirmEdit is installed and set to trigger for createaccount,
 # inject catpchas for requests too?
 $wgConfirmAccountCaptchas = true;
 
