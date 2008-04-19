@@ -2765,6 +2765,7 @@ $messages['lb'] = array(
 	'confirmaccount-ip'               => 'IP-Adress:',
 	'confirmaccount-submit'           => 'Confirméieren',
 	'confirmaccount-rej'              => "D'Ufro fir ee Benotzerkont gouf refüséiert.",
+	'confirmaccount-viewing'          => '(gëtt elo gekuckt vum [[User:$1|$1]])',
 	'confirmaccount-summary'          => "D'Benotzersäit mat der Biographie vum neie Benotzer gëtt elo gemaach.",
 	'confirmaccount-wsum'             => 'Wëllkomm!',
 	'confirmaccount-email-subj'       => '{{SITENAME}} Ufro fir ee Benotzerkont',
