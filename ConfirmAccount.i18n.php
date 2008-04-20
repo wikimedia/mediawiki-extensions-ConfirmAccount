@@ -435,6 +435,11 @@ $messages['bcl'] = array(
  */
 $messages['bg'] = array(
 	'requestaccount'                  => 'Заявка за сметка',
+	'requestaccount-text'             => "'''За заявяване на потребителска сметка е необходимо да се попълни и изпрати следният формуляр'''.
+
+Преди да бъде направена заявка е необходимо да се уверите, че сте прочели страницата [[{{MediaWiki:Requestaccount-page}}|Условия за ползване]].
+
+След като сметката бъде одобрена, ще получите оповестяващо съобщение на посочената електронна поща, че сметката може да бъде използвана за влизане чрез [[Special:Userlogin]].",
 	'requestaccount-page'             => '{{ns:project}}:Условия за ползване',
 	'requestaccount-dup'              => "'''Забележка: Вече сте влезли с регистрирана потребителска сметка.'''",
 	'requestaccount-leg-user'         => 'Потребителска сметка',
@@ -3436,13 +3441,13 @@ $messages['oc'] = array(
 	'requestaccount-areas-text'       => 'Causissètz los domenis dins losquals avètz una expertisa demostrada, o dins lasqualas sètz mai portat a contribuir.',
 	'requestaccount-ext-text'         => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telèfon per obténer una assistància per confirmar vòstra identitat.',
 	'requestaccount-bio-text'         => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences]].",
-	'requestaccount-real'             => 'Nom vertadièr:',
+	'requestaccount-real'             => 'Nom vertadièr :',
 	'requestaccount-same'             => '(nom figurant dins vòstre estat civil)',
 	'requestaccount-email'            => 'Adreça electronica:',
 	'requestaccount-reqtype'          => 'Situacion :',
 	'requestaccount-level-0'          => 'autor',
 	'requestaccount-level-1'          => 'editor',
-	'requestaccount-bio'              => 'Biografia personala:',
+	'requestaccount-bio'              => 'Biografia personala :',
 	'requestaccount-attach'           => 'CV/Resumit (facultatiu)',
 	'requestaccount-notes'            => 'Nòtas suplementàrias :',
 	'requestaccount-urls'             => "Lista dels sits Web. Se n'i a mantun, separatz-los per un saut de linha :",
@@ -3515,7 +3520,7 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-leg-other'        => 'Autras entresenhas',
 	'confirmaccount-name'             => "Nom d'utilizaire",
 	'confirmaccount-real'             => 'Nom',
-	'confirmaccount-email'            => 'Corrièr electronic:',
+	'confirmaccount-email'            => 'Adreça de corrièr electronic :',
 	'confirmaccount-reqtype'          => 'Situacion :',
 	'confirmaccount-pos-0'            => 'autor',
 	'confirmaccount-pos-1'            => 'editor',
@@ -4500,6 +4505,8 @@ Ienlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede
 Benutsernoome: $1 
 
 Paaswoud: $2 
+
+$3
 
 Uut Sicherhaidsgruunden schuust du dien Paaswoud uunbedingd bie dät eerste Ienlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Spietelk wuude dien Froage uum n Benutserkonto „$1“ 
