@@ -3524,7 +3524,7 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-reqtype'          => 'Situacion :',
 	'confirmaccount-pos-0'            => 'autor',
 	'confirmaccount-pos-1'            => 'editor',
-	'confirmaccount-bio'              => 'Biografia:',
+	'confirmaccount-bio'              => 'Biografia :',
 	'confirmaccount-attach'           => 'CV/Resumit :',
 	'confirmaccount-notes'            => 'Nòtas suplementàrias :',
 	'confirmaccount-urls'             => 'Lista dels sits web :',
