@@ -2644,6 +2644,15 @@ $2
 	'usercredentials-badid'           => '利用者信頼情報が見つかりません。利用者名が正しく指定されているか確認してください。',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'confirmaccount-real-q' => 'Jeneng',
+	'confirmaccount-bio-q'  => 'Biografi',
+	'confirmaccount-ip'     => 'Alamat IP:',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
