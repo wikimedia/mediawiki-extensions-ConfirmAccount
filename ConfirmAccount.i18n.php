@@ -1032,6 +1032,7 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Yekrats
+ * @author Amikeco
  */
 $messages['eo'] = array(
 	'requestaccount'                  => 'Petu konton',
@@ -1066,6 +1067,7 @@ $messages['eo'] = array(
 	'confirmaccount-type-0'           => 'eventualaj aŭtoroj',
 	'confirmaccount-type-1'           => 'eventualaj redaktantoj',
 	'confirmaccount-q-open'           => 'malfermaj petoj',
+	'confirmaccount-q-stale'          => 'eksdatiĝintaj petoj',
 	'confirmaccount-leg-user'         => 'Konto de uzanto',
 	'confirmaccount-leg-areas'        => 'Ĉefaj fakoj de intereso',
 	'confirmaccount-leg-person'       => 'Persona informo',
@@ -3601,6 +3603,8 @@ Aquò permetís d’èsser sus la tièraa dels contactes del sit, se desiratz ne
 $messages['os'] = array(
 	'requestaccount-level-0' => 'автор',
 	'confirmaccount-email-q' => 'Эл. посты адрис',
+	'confirmaccount-showexp' => 'eksdatiĝintaj petoj',
+	'confirmaccount-name'    => 'Архайæджы ном',
 	'confirmaccount-email'   => 'Эл. посты адрис:',
 	'confirmaccount-pos-0'   => 'автор',
 	'usercredentials-email'  => 'Эл. посты адрис:',
@@ -5162,10 +5166,12 @@ $2
 
 /** Turkish (Türkçe)
  * @author Karduelis
+ * @author Suelnur
  */
 $messages['tr'] = array(
 	'requestaccount-email'   => 'E-posta adresi:',
 	'confirmaccount-email-q' => 'E-posta',
+	'confirmaccount-name'    => 'Kullanıcı adı',
 	'confirmaccount-email'   => 'E-posta:',
 	'confirmaccount-ip'      => 'IP adresi:',
 	'confirmaccount-wsum'    => 'Hoşgeldiniz!',
