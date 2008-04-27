@@ -1142,7 +1142,9 @@ class ConfirmAccountsPage extends SpecialPage
 					}
 					$transaction = new FSTransaction();
 					if( !FileStore::lock() ) {
+						$dbw->delete( 'user', array( 'user_id' => $user->getID() ) );
 						wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
+						return false;
 					}
 					$path = $storeOld->filePath( $key );
 					if( $path && file_exists($path) ) {
@@ -1190,8 +1192,8 @@ class ConfirmAccountsPage extends SpecialPage
 					$transaction->commit();
 			}
 			
-			$grouptext = $group = '';
 			# Grant any necessary rights
+			$grouptext = $group = '';
 			global $wgAccountRequestTypes;
 			if( array_key_exists($this->mType,$wgAccountRequestTypes) ) {
 				$params = $wgAccountRequestTypes[$this->mType];
@@ -1203,8 +1205,8 @@ class ConfirmAccountsPage extends SpecialPage
 				}
 			}
 			
-			$ebody = '';
 			# Send out password
+			$ebody = '';
 			if( $this->reason ) {
 				# If the user is in a group and there is a welcome for that group, use it
 				if( $group && !wfEmptyMsg( "confirmaccount-email-body2-pos{$this->mType}", wfMsg("confirmaccount-email-body2-pos{$this->mType}") ) ) {
@@ -1225,10 +1227,10 @@ class ConfirmAccountsPage extends SpecialPage
 				}
 			}
 			$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ), $ebody );
-			
 			if( WikiError::isError( $result ) ) {
 				$errors[] = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
 			}
+			
 			# Safe to hook/log now...
 			wfRunHooks( 'AddNewAccount', array( $user ) );
 			# OK, now remove the request from the queue
@@ -1257,10 +1259,8 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 			# Start up the user's (presumedly brand new) userpages
 			# Will not append, so previous content will be blanked
-			global $wgMakeUserPageFromBio;
+			global $wgMakeUserPageFromBio, $wgAutoUserBioText;
 			if( $wgMakeUserPageFromBio ) {
-				global $wgAutoUserBioText;
-				
 				$usertitle = $user->getUserPage();
 				$userpage = new Article( $usertitle );
 				
@@ -1273,7 +1273,6 @@ class ConfirmAccountsPage extends SpecialPage
 					foreach( $areas as $n => $line ) {
 						$set = explode("|",$line);
 						$name = str_replace("_"," ",$set[0]);
-						
 						if( in_array($set[0],$this->mAreaSet) ) {
 							# General userpage text for anyone with this interest
 							if( isset($set[2]) ) {
@@ -1287,12 +1286,16 @@ class ConfirmAccountsPage extends SpecialPage
 						}
 					}
 				}
-				# Set sortkey
-				global $wgConfirmAccountSortkey;
+				# Set sortkey and use it on bio
+				global $wgConfirmAccountSortkey, $wgContLang;
 				if( !empty($wgConfirmAccountSortkey) ) {
-					$sortKey = $usertitle->getText();
-					$sortKey = preg_replace( $wgConfirmAccountSortkey[0], $wgConfirmAccountSortkey[1], $sortKey );
+					$sortKey = preg_replace($wgConfirmAccountSortkey[0],$wgConfirmAccountSortkey[1],$usertitle->getText());
 					$body .= "\n{{DEFAULTSORT:{$sortKey}}}";
+					# Clean up any other categories...
+					$catNS = $wgContLang->getNSText(NS_CATEGORY);
+					$replace = '/\[\['.preg_quote($catNS).':([^\]]+)\]\]/i'; // [[Category:x]]
+					$with = "[[{$catNS}:$1|".str_replace('$','\$',$sortKey)."]]"; // [[Category:x|sortkey]]
+					$body = preg_replace( $replace, $with, $body );
 				}
 				# Create userpage!
 				$userpage->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
@@ -1310,7 +1313,7 @@ class ConfirmAccountsPage extends SpecialPage
 				# Add user welcome message!
 				$utalk->doEdit( $welcome . ' ~~~~', wfMsg('confirmaccount-wsum'), EDIT_MINOR );
 			}
-			
+			# Finally, done!!!
 			$this->showSuccess( $this->submitType, $user->getName(), $errors );
 		} else if( $this->submitType == 'hold' ) {
 			global $wgUser;
