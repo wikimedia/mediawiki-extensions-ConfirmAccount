@@ -2650,9 +2650,11 @@ $2
  * @author Meursault2004
  */
 $messages['jv'] = array(
-	'confirmaccount-real-q' => 'Jeneng',
-	'confirmaccount-bio-q'  => 'Biografi',
-	'confirmaccount-ip'     => 'Alamat IP:',
+	'requestaccount-dup'      => "'''Pènget: Panjenengan wis log mlebu mawa rékening sing kadaftar.'''",
+	'requestaccount-leg-user' => 'Rékening (akun) panganggo',
+	'confirmaccount-real-q'   => 'Jeneng',
+	'confirmaccount-bio-q'    => 'Biografi',
+	'confirmaccount-ip'       => 'Alamat IP:',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -5228,11 +5230,11 @@ $messages['vo'] = array(
 	'confirmaccount-bio-q'      => 'Lifajenäd',
 	'confirmaccount-name'       => 'Gebananem',
 	'confirmaccount-real'       => 'Nem:',
+	'confirmaccount-pos-0'      => 'lautan',
 	'confirmaccount-noreason'   => '(nonik)',
 	'confirmaccount-wsum'       => 'Benokömö!',
 	'confirmaccount-email-subj' => 'Beg kala ela {{SITENAME}}',
 	'usercredentials-user'      => 'Gebananem:',
-	'usercredentials-leg3'      => 'Nüns votik',
 	'usercredentials-real'      => 'Nem jenöfik:',
 );
 
