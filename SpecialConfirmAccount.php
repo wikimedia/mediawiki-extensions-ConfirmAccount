@@ -184,9 +184,11 @@ $wgAutoloadClasses['RequestAccountPage'] = $dir . 'ConfirmAccount_body.php';
 # Confirm accounts
 $wgSpecialPages['ConfirmAccounts'] = 'ConfirmAccountsPage';
 $wgAutoloadClasses['ConfirmAccountsPage'] = $dir . 'ConfirmAccount_body.php';
+$wgSpecialPageGroups['ConfirmAccounts'] = 'users';
 # Account credentials
 $wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
 $wgAutoloadClasses['UserCredentialsPage'] = $dir . 'ConfirmAccount_body.php';
+$wgSpecialPageGroups['UserCredentials'] = 'users';
 
 $wgExtensionFunctions[] = 'efLoadConfirmAccount';
 # Add notice of where to request an account
