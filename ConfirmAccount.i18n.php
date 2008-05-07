@@ -220,10 +220,17 @@ Check that the name is spelled correctly.',
 );
 
 /** Afrikaans (Afrikaans)
+ * @author Arnobarnard
  * @author SPQRobin
  */
 $messages['af'] = array(
-	'usercredentials-user' => 'Gebruikersnaam:',
+	'requestaccount-level-0'  => 'outeur',
+	'confirmaccount-real-q'   => 'Naam',
+	'confirmaccount-name'     => 'Gebruikersnaam',
+	'confirmaccount-real'     => 'Naam:',
+	'confirmaccount-pos-0'    => 'outeur',
+	'confirmaccount-noreason' => '(geen)',
+	'usercredentials-user'    => 'Gebruikersnaam:',
 );
 
 /** Arabic (العربية)
@@ -1950,6 +1957,17 @@ $messages['hi'] = array(
 सदस्यनाम सही हैं इसकी जाँच करें।',
 );
 
+/** Hiligaynon (Ilonggo)
+ * @author Jose77
+ */
+$messages['hil'] = array(
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-name'    => 'Ngalan sang Manog-gamit',
+	'confirmaccount-email'   => 'E-mail:',
+	'usercredentials-user'   => 'Ngalan sang Manog-gamit:',
+	'usercredentials-email'  => 'E-mail:',
+);
+
 /** Croatian (Hrvatski)
  * @author SpeedyGonsales
  * @author Dnik
@@ -2711,7 +2729,11 @@ Panjenengan ora bisa nyuwun rékening anyar manèh.',
 	'confirmaccount-attach'           => 'Babad slira/CV:',
 	'confirmaccount-notes'            => 'Cathetan tambahan:',
 	'confirmaccount-urls'             => 'Daftar situs-situs wèb:',
+	'confirmaccount-none-p'           => '(ora diwènèhaké)',
+	'confirmaccount-econf'            => '(dikonfirmasi)',
+	'confirmaccount-noreason'         => '(ora ana)',
 	'confirmaccount-spam'             => 'Spam (aja ngirim e-mail)',
+	'confirmaccount-reason'           => 'Komentar (bakal disertakaké sajroning e-mail):',
 	'confirmaccount-ip'               => 'Alamat IP:',
 	'confirmaccount-submit'           => 'Konfirmasi',
 	'confirmaccount-wsum'             => 'Sugeng rawuh!',
@@ -2801,6 +2823,15 @@ $messages['km'] = array(
 	'usercredentials-urls'            => 'បញ្ជី នៃ វ៉ែបសៃថ៍ ៖',
 	'usercredentials-ip'              => 'អាស័យដ្ឋាន IP ដើមដំបូង ៖',
 	'usercredentials-member'          => 'សិទ្ធិ ៖',
+);
+
+/** Kinaray-a (Kinaray-a)
+ * @author Jose77
+ */
+$messages['krj'] = array(
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-email'   => 'E-mail:',
+	'usercredentials-email'  => 'E-mail:',
 );
 
 $messages['la'] = array(
