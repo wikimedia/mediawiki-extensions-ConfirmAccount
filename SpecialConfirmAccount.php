@@ -96,6 +96,10 @@ $wgGroupPermissions['bureaucrat']['requestips'] = true;
 # If credentials are stored, this right lets users look them up
 $wgGroupPermissions['bureaucrat']['lookupcredentials'] = true;
 
+$wgAvailableRights[] = 'confirmaccount';
+$wgAvailableRights[] = 'requestips';
+$wgAvailableRights[] = 'lookupcredentials';
+
 # Show notice for open requests to admins?
 # This is cached, but still can be expensive on sites with thousands of requests.
 $wgConfirmAccountNotice = true;
