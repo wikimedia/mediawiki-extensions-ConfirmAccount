@@ -3809,9 +3809,9 @@ $messages['os'] = array(
 
 /** Polish (Polski)
  * @author Sp5uhe
+ * @author McMonster
  * @author Equadus
  * @author Masti
- * @author McMonster
  * @author Derbeth
  */
 $messages['pl'] = array(
@@ -3911,8 +3911,26 @@ Nie możesz złożyć więcej wniosków.',
 	'confirmaccount-needreason'       => 'Musisz podać uzasadnienie w polu poniżej.',
 	'confirmaccount-wsum'             => 'Witaj!',
 	'confirmaccount-email-subj'       => 'Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
+	'confirmaccount-email-body2'      => 'Twoja prośba o konto została przyjęta na {{SITENAME}}.
+
+Nazwa: $1
+
+Hasło: $2
+
+$3
+
+Z powodów bezpieczeństwa będziesz musiał zmienić hasło przy pierwszym logowaniu.
+By się zalogować przejdź do {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body4'      => 'Przepraszamy, Twoja prośba o konto "$1" została odrzucona na {{SITENAME}}.
+
+$2
+
+Na stronie mogą znajdować się listy kontaktowe, których możesz użyć aby dowiedzieć się więcej na temat polityki kont.',
+	'usercredentials'                 => 'Uprawnienia użytkownika',
 	'usercredentials-user'            => 'Nazwa użytkownika:',
 	'usercredentials-leg-user'        => 'Konto użytkownika',
+	'usercredentials-leg-areas'       => 'Główne obszary zainteresowań',
+	'usercredentials-leg-person'      => 'Informacje osobiste',
 	'usercredentials-leg-other'       => 'Inne informacje',
 	'usercredentials-real'            => 'Imię i nazwisko:',
 	'usercredentials-bio'             => 'Biografia:',
