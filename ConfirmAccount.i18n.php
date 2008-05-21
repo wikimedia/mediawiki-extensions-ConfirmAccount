@@ -4326,7 +4326,7 @@ $messages['rm'] = array(
 );
 
 /** Russian (Русский)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'requestaccount'                  => 'Запрос учётной записи',
