@@ -2992,7 +2992,9 @@ $messages['ml'] = array(
 	'requestaccount-notes'            => 'കൂടുതല്‍ കുറിപ്പുകള്‍:',
 	'requestaccount-urls'             => 'വെബ്ബ്സൈറ്റുകളുടെ പട്ടിക (ഓരോന്നും വെവ്വേറെ വരിയില്‍ കൊടുക്കുക):',
 	'requestaccount-agree'            => 'താങ്കളുടെ പേരു യഥാര്‍ത്ഥമാണെന്നും, താങ്കള്‍ ഞങ്ങളുടെ നയങ്ങളും പരിപാടികളും അംഗീകരിക്കുന്നു എന്നും പ്രതിജ്ഞ ചെയ്യണം.',
+	'requestaccount-inuse'            => 'സ്ഥിരീകരണം കാത്തിരിക്കുന്ന അഭ്യര്‍ത്ഥനകളില്‍ ഒന്ന് ഇതേ ഉപയോക്തൃനാമം ഉപയോഗിക്കുന്നുണ്ട്.',
 	'requestaccount-tooshort'         => 'താങ്കളുടെ ആത്മകഥയില്‍ കുറഞ്ഞത് $1 വാക്കുകള്‍ വേണം.',
+	'requestaccount-emaildup'         => 'സ്ഥിരീകരണം കാത്തിരിക്കുന്ന അഭ്യര്‍ത്ഥനകളില്‍ ഒന്ന് ഇതേ ഇമെയില്‍ വിലാസം ഉപയോഗിക്കുന്നുണ്ട്.',
 	'requestaccount-exts'             => 'അറ്റാച്ച് ചെയ്ത ഫയല്‍ തരം അനുവദനീയമല്ല.',
 	'requestaccount-submit'           => 'അക്കൗണ്ടിനായി അഭ്യര്‍ത്ഥിക്കുക',
 	'requestaccount-email-subj'       => '{{SITENAME}} സം‌രംഭത്തിലെ ഇമെയില്‍ വിലാസ സ്ഥിരീകരണം',
@@ -5470,6 +5472,13 @@ $messages['uk'] = array(
 	'confirmaccount-real'     => "Ім'я:",
 	'confirmaccount-email'    => 'Електронна адреса:',
 	'confirmaccount-reqtype'  => 'Посада:',
+);
+
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'confirmedit-desc' => 'Permete ai burocrati de confermar le richieste de account',
 );
 
 /** Vietnamese (Tiếng Việt)
