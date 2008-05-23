@@ -184,14 +184,14 @@ function wfConfirmAccountsNotice( $notice ) {
 $dir = dirname(__FILE__) . '/';
 # Request an account
 $wgSpecialPages['RequestAccount'] = 'RequestAccountPage';
-$wgAutoloadClasses['RequestAccountPage'] = $dir . 'ConfirmAccount_body.php';
+$wgAutoloadClasses['RequestAccountPage'] = $dir . 'RequestAccount_body.php';
 # Confirm accounts
 $wgSpecialPages['ConfirmAccounts'] = 'ConfirmAccountsPage';
 $wgAutoloadClasses['ConfirmAccountsPage'] = $dir . 'ConfirmAccount_body.php';
 $wgSpecialPageGroups['ConfirmAccounts'] = 'users';
 # Account credentials
 $wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
-$wgAutoloadClasses['UserCredentialsPage'] = $dir . 'ConfirmAccount_body.php';
+$wgAutoloadClasses['UserCredentialsPage'] = $dir . 'UserCredentials_body.php';
 $wgSpecialPageGroups['UserCredentials'] = 'users';
 
 $wgExtensionFunctions[] = 'efLoadConfirmAccount';
