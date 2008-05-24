@@ -1091,7 +1091,7 @@ $messages['eo'] = array(
 	'requestaccount-email-subj'       => '{{SITENAME}} retpoŝta konfirmo',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} peto por konto',
 	'requestaccount-loginnotice'      => "Akiri uzanto-konton, vi devas '''[[Special:RequestAccount|peti ĝin]]'''.",
-	'confirmaccounts'                 => 'Konfirmu petojn por kontoj',
+	'confirmaccounts'                 => 'Konfirmi petojn por kontoj',
 	'confirmedit-desc'                => 'Donas al burokratoj la ebleco konfirmi kontajn petojn',
 	'confirmaccount-real-q'           => 'Nomo',
 	'confirmaccount-email-q'          => 'Retadreso',
@@ -1126,7 +1126,7 @@ $messages['eo'] = array(
 	'confirmaccount-spam'             => 'Spamo (ne sendu retpoŝton)',
 	'confirmaccount-reason'           => 'Komento (estos inkluzivita en retpoŝto):',
 	'confirmaccount-ip'               => 'IP-adreso',
-	'confirmaccount-submit'           => 'Konfirmu',
+	'confirmaccount-submit'           => 'Konfirmi',
 	'confirmaccount-needreason'       => 'Vi devas enigi kialon en la suba komentskatolo.',
 	'confirmaccount-viewing'          => '(nune okulumis uzanto [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Kreante uzanto-paĝon kun biografio de nova uzanto.',
@@ -2887,6 +2887,13 @@ $messages['krj'] = array(
 	'usercredentials-email'  => 'E-mail:',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'confirmaccount-name' => 'Metmaacher Name',
+);
+
 $messages['la'] = array(
 	'requestaccount-real'         => 'Nomen verum:',
 	'requestaccount-same'         => '(aequus ad nomine vero)',
@@ -3737,7 +3744,7 @@ $messages['oc'] = array(
 	'requestaccount-email-subj'       => '{{SITENAME}} confirmacion d’adreça de corrièr electronic.',
 	'requestaccount-email-body'       => "Qualqu’un, probablament vos, a formulat, dempuèi l’adreca IP $1, una demanda de compte d'utilizaire « $2 » amb aquesta adreça de corrièr electronic sus {{SITENAME}}.
 
-Per confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navigaire Web :
+Per confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navigador Web :
 
 $3 
 
