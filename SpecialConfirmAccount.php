@@ -185,7 +185,7 @@ $dir = dirname(__FILE__) . '/';
 # Request an account
 $wgSpecialPages['RequestAccount'] = 'RequestAccountPage';
 $wgAutoloadClasses['RequestAccountPage'] = $dir . 'RequestAccount_body.php';
-$wgSpecialPageGroups['RequestAccountPage'] = 'login';
+$wgSpecialPageGroups['RequestAccount'] = 'login';
 # Confirm accounts
 $wgSpecialPages['ConfirmAccounts'] = 'ConfirmAccountsPage';
 $wgAutoloadClasses['ConfirmAccountsPage'] = $dir . 'ConfirmAccount_body.php';
