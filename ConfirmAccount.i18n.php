@@ -2891,7 +2891,8 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'confirmaccount-name' => 'Metmaacher Name',
+	'confirmaccount-name'  => 'Metmaacher Name',
+	'usercredentials-user' => 'Metmaacher Name:',
 );
 
 $messages['la'] = array(
@@ -2926,6 +2927,7 @@ $messages['lb'] = array(
 	'requestaccount-urls'             => 'Lëscht vu Websäiten (all Säit an enger neier Zeil)',
 	'requestaccount-inuse'            => 'De Benotzernumm ass scho bäi enger anere Benotzerufro a Gebrauch.',
 	'requestaccount-tooshort'         => 'Är Biographie muss mindestens $1 Wierder hunn.',
+	'requestaccount-exts'             => "De Fichierstyp vum ''Attachment'' ass net erlaabt.",
 	'requestaccount-submit'           => 'Benotzerkont ufroën',
 	'requestaccount-email-subj'       => '{{SITENAME}} Konfirmatioun vun der E-Mail-Adress',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Ufro fir ee Benotzerkont',
@@ -2947,10 +2949,12 @@ $messages['lb'] = array(
 	'confirmaccount-email'            => 'E-mail:',
 	'confirmaccount-reqtype'          => 'Positioun:',
 	'confirmaccount-pos-0'            => 'Auteur',
+	'confirmaccount-pos-1'            => 'Editeur',
 	'confirmaccount-bio'              => 'Biographie:',
 	'confirmaccount-attach'           => 'Liewenslaf:',
 	'confirmaccount-notes'            => 'Zousätzlech Bemierkungen:',
 	'confirmaccount-urls'             => 'Lëscht vu Websäiten:',
+	'confirmaccount-econf'            => '(confirméiert)',
 	'confirmaccount-reject'           => '(refuséiert vum [[User:$1|$1]] de(n) $2)',
 	'confirmaccount-noreason'         => '(keen)',
 	'confirmaccount-ip'               => 'IP-Adress:',
