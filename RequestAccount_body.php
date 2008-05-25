@@ -220,7 +220,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$wgOut->addHTML( $form );
 		
-		$wgOut->addWikiText( wfMsgHtml( "requestaccount-footer" ) );
+		$wgOut->addWikiText( wfMsg( "requestaccount-footer" ) );
 	}
 
 	function doSubmit() {
