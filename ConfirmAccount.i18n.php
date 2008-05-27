@@ -2891,8 +2891,10 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'confirmaccount-name'  => 'Metmaacher Name',
-	'usercredentials-user' => 'Metmaacher Name:',
+	'confirmaccount-real-q' => 'Name',
+	'confirmaccount-name'   => 'Metmaacher Name',
+	'confirmaccount-real'   => 'Name:',
+	'usercredentials-user'  => 'Metmaacher Name:',
 );
 
 $messages['la'] = array(
