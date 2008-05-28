@@ -2459,6 +2459,17 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
 	'usercredentials-badid'           => 'A felhasználó nem rendelkezik személyes adatokkal. Ellenőrizd, hogy helyesen adtad-e meg a nevét.',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Rex
+ */
+$messages['id'] = array(
+	'requestaccount-level-1'  => 'penyunting',
+	'confirmaccount-name'     => 'Nama pengguna',
+	'confirmaccount-pos-1'    => 'penyunting',
+	'confirmaccount-noreason' => '(tidak ada)',
+	'usercredentials-user'    => 'Nama pengguna:',
+);
+
 $messages['io'] = array(
 	'confirmaccount-wsum'         => 'Bonveno!',
 );
