@@ -780,6 +780,11 @@ Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší
 	'usercredentials-member'     => 'Práva:',
 );
 
+/** Church Slavic (Словѣньскъ) */
+$messages['cu'] = array(
+	'usercredentials-user' => 'по́льꙃєватєлꙗ и́мѧ :',
+);
+
 /** Danish (Dansk)
  * @author Jon Harald Søby
  * @author M.M.S.
@@ -1044,26 +1049,29 @@ $messages['ee'] = array(
  * @author Consta
  */
 $messages['el'] = array(
-	'requestaccount-leg-user' => 'Λογαριασμός χρήστη',
-	'requestaccount-real'     => 'Πραγματικό όνομα:',
-	'requestaccount-email'    => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
-	'requestaccount-reqtype'  => 'Θέση:',
-	'requestaccount-bio'      => 'Προσωπική βιογραφία:',
-	'confirmaccount-real-q'   => 'Όνομα',
-	'confirmaccount-email-q'  => 'Ηλεκτρονικό Ταχυδρομείο:',
-	'confirmaccount-bio-q'    => 'Βιογραφία',
-	'confirmaccount-name'     => 'Όνομα χρήστη',
-	'confirmaccount-real'     => 'Όνομα:',
-	'confirmaccount-email'    => 'Ηλεκτρονικό Ταχυδρομείο:',
-	'confirmaccount-reqtype'  => 'Θέση:',
-	'confirmaccount-bio'      => 'Βιογραφία:',
-	'confirmaccount-urls'     => 'Λίστα των ιστοσελίδων:',
-	'confirmaccount-create'   => 'Αποδοχή (Δημιουργία λογαριασμού)',
-	'confirmaccount-ip'       => 'διεύθυνση ΙΡ:',
-	'confirmaccount-wsum'     => 'Καλός ήρθατε!',
-	'usercredentials-user'    => 'Όνομα χρήστη:',
-	'usercredentials-email'   => 'Ηλεκτρονικό ταχυδρομείο:',
-	'usercredentials-bio'     => 'Βιογραφία:',
+	'requestaccount-leg-user'   => 'Λογαριασμός χρήστη',
+	'requestaccount-leg-other'  => 'Άλλες πληροφορίες',
+	'requestaccount-real'       => 'Πραγματικό όνομα:',
+	'requestaccount-email'      => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
+	'requestaccount-reqtype'    => 'Θέση:',
+	'requestaccount-bio'        => 'Προσωπική βιογραφία:',
+	'confirmaccount-real-q'     => 'Όνομα',
+	'confirmaccount-email-q'    => 'Ηλεκτρονικό Ταχυδρομείο:',
+	'confirmaccount-bio-q'      => 'Βιογραφία',
+	'confirmaccount-leg-other'  => 'Άλλες πληροφορίες',
+	'confirmaccount-name'       => 'Όνομα χρήστη',
+	'confirmaccount-real'       => 'Όνομα:',
+	'confirmaccount-email'      => 'Ηλεκτρονικό Ταχυδρομείο:',
+	'confirmaccount-reqtype'    => 'Θέση:',
+	'confirmaccount-bio'        => 'Βιογραφία:',
+	'confirmaccount-urls'       => 'Λίστα των ιστοσελίδων:',
+	'confirmaccount-create'     => 'Αποδοχή (Δημιουργία λογαριασμού)',
+	'confirmaccount-ip'         => 'διεύθυνση ΙΡ:',
+	'confirmaccount-wsum'       => 'Καλός ήρθατε!',
+	'usercredentials-user'      => 'Όνομα χρήστη:',
+	'usercredentials-leg-other' => 'Άλλες πληροφορίες',
+	'usercredentials-email'     => 'Ηλεκτρονικό ταχυδρομείο:',
+	'usercredentials-bio'       => 'Βιογραφία:',
 );
 
 /** Esperanto (Esperanto)
@@ -3979,10 +3987,23 @@ Nie możesz złożyć więcej wniosków.',
 	'confirmaccount-newrequests'      => "{{PLURAL:$1|Jest '''$1''' [[Special:ConfirmAccounts|oczekujący wniosek]]|Są '''$1''' [[Special:ConfirmAccounts|oczekujące wnioski]]|Jest '''$1''' [[Special:ConfirmAccounts|oczekujących wniosków]]}}, z potwierdzonym adresem e-mail",
 	'confirmaccounts'                 => 'Potwierdź wniosek o założenie konta użytkownika',
 	'confirmedit-desc'                => 'Pozwala biurokratom akceptować wnioski o założenie konta użytkownika',
-	'confirmaccount-none-o'           => 'Na tej liście nie ma otwartych wniosków o założenie konta użytkownika.',
-	'confirmaccount-none-h'           => 'Na tej liście nie ma wstrzymanych wniosków o założenie konta użytkownika.',
-	'confirmaccount-none-r'           => 'Na tej liście nie ma niedawno odrzuconych wniosków o założenie konta użytkownika.',
-	'confirmaccount-none-e'           => 'Na tej liście nie ma przeterminowanych wniosków o założenie konta użytkownika.',
+	'confirmaccount-maintext'         => "'''Na tej stronie można potwierdzać wnioski o utworzenie konta w ''{{GRAMMAR:D.lp|{{SITENAME}}}}'''''.
+
+Każda kolejka wniosków składa się z trzech kolejek podrzędnych: kolejka otwartych zapytań, kolejka zapytań, których realizacja została wstrzymana przez administratorów do czasu uzyskania przez nich większej ilości informacji, kolejka niedawno odrzuconych wniosków.
+
+Odpowiadając na wniosek przyjrzyj mu się dokładnie, a jeśli jest to konieczne, potwierdź zawarte w nim informacje.
+Twoje działania są zapisywane z poszanowaniem prywatności.
+Oprócz podejmowania samodzielnych działań, przyjrzyj się też działaniom innych administratorów.",
+	'confirmaccount-list'             => 'Poniżej znajduje się lista oczekujących wniosków o założenie konta.
+Po zaakceptowaniu lub odrzuceniu, wniosek zostanie usunięty z niniejszej listy.',
+	'confirmaccount-list2'            => 'Poniżej znajduje się lista niedawno odrzuconych wniosków o założenie konta. Mogą one zostać automatycznie usunięte po kilku lub kilkunastu dniach.
+Wnioski można nadal zrealizować, lecz zalecane jest wcześniejsze nawiązanie kontaktu z administratorem, który je odrzucił.',
+	'confirmaccount-list3'            => 'Poniżej znajduje się lista przeterminowanych wniosków o utworzenie konta. Wnioski są usuwane po kilku lub kilkunastu dniach.
+Wnioski z tej listy nadal można zrealizować.',
+	'confirmaccount-none-o'           => 'Brak na liście otwartych wniosków o założenie konta użytkownika.',
+	'confirmaccount-none-h'           => 'Brak na liście wstrzymanych wniosków o założenie konta użytkownika.',
+	'confirmaccount-none-r'           => 'Brak na liście niedawno odrzuconych wniosków o założenie konta użytkownika.',
+	'confirmaccount-none-e'           => 'Brak na liście przeterminowanych wniosków o założenie konta użytkownika.',
 	'confirmaccount-real-q'           => 'Imię i nazwisko',
 	'confirmaccount-email-q'          => 'Adres e-mail',
 	'confirmaccount-bio-q'            => 'Biografia',
@@ -4034,6 +4055,7 @@ Na stronie mogą znajdować się listy kontaktowe, których możesz użyć aby d
 	'usercredentials-leg-areas'       => 'Główne obszary zainteresowań',
 	'usercredentials-leg-person'      => 'Informacje osobiste',
 	'usercredentials-leg-other'       => 'Inne informacje',
+	'usercredentials-email'           => 'Adres e-mail',
 	'usercredentials-real'            => 'Imię i nazwisko:',
 	'usercredentials-bio'             => 'Biografia:',
 	'usercredentials-attach'          => 'Życiorys:',
@@ -4915,6 +4937,7 @@ $messages['su'] = array(
 	'requestaccount-loginnotice'      => "Pikeun miboga rekening pamaké, anjeun kudu '''[[Special:RequestAccount|daptar heula]]'''.",
 	'confirmaccounts'                 => 'Konfirmasi pamundut rekening',
 	'confirmedit-desc'                => 'Leler birokrat kawenangan ngonfirmasi paménta rekening.',
+	'confirmaccount-real-q'           => 'Ngaran',
 	'confirmaccount-email-q'          => 'Surélék',
 	'confirmaccount-bio-q'            => 'Biografi',
 	'confirmaccount-showopen'         => 'keur dipénta',
@@ -4953,6 +4976,8 @@ $messages['su'] = array(
 	'confirmaccount-needreason'       => 'Anjeun kudu méré alesan dina kotak pamanggih di handap.',
 	'confirmaccount-canthold'         => 'Ieu paménta keur digantung atawa geus dihapus.',
 	'confirmaccount-acc'              => 'Paménta rekening geus dikonfirmasi; rekening anyar geus dijieun pikeun [[User:$1]].',
+	'confirmaccount-wsum'             => 'Wilujeng sumping!',
+	'usercredentials-user'            => 'Ngaran pamaké:',
 );
 
 /** Swedish (Svenska)
