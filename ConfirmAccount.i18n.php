@@ -780,7 +780,9 @@ Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší
 	'usercredentials-member'     => 'Práva:',
 );
 
-/** Church Slavic (Словѣньскъ) */
+/** Church Slavic (Словѣньскъ)
+ * @author ОйЛ
+ */
 $messages['cu'] = array(
 	'usercredentials-user' => 'по́льꙃєватєлꙗ и́мѧ :',
 );
@@ -4909,6 +4911,7 @@ Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert 
 
 /** Sundanese (Basa Sunda)
  * @author Kandar
+ * @author Irwangatot
  */
 $messages['su'] = array(
 	'requestaccount'                  => 'Ménta rekening',
