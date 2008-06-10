@@ -1017,6 +1017,13 @@ kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 	'usercredentials-badid'           => 'Es wurden keinen Berechtigungsnachweis für diesen Benutzer gefunden. Bitte die Schreibweise prüfen.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Belekvor
+ */
+$messages['diq'] = array(
+	'confirmaccount-noreason' => '(çino)',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
@@ -4002,6 +4009,12 @@ Po zaakceptowaniu lub odrzuceniu, wniosek zostanie usunięty z niniejszej listy.
 Wnioski można nadal zrealizować, lecz zalecane jest wcześniejsze nawiązanie kontaktu z administratorem, który je odrzucił.',
 	'confirmaccount-list3'            => 'Poniżej znajduje się lista przeterminowanych wniosków o utworzenie konta. Wnioski są usuwane po kilku lub kilkunastu dniach.
 Wnioski z tej listy nadal można zrealizować.',
+	'confirmaccount-text'             => "Poniżej znajduje się oczekujący wniosek o konto w serwerze '''{{SITENAME}}'''.
+
+Przejrzyj zawarte w nim informacje. Jeśłi zdecydujesz się wniosek przyjąć, wybierz nowy statu skonta z rozwijanej listy poniżej.
+Edycje dokonane w biografii osoby ubiegającej się o konto nie wpłyną na przechowywane w systemie referencje. Należy pamiętać o możliwości utworzenia konta o innej nazwie, lecz tylko w wypadkach, kiedy jest to konieczne z uwagi na konflikty z innymi nazwami użytkownika.
+
+Jeśli pozostawisz zawartość tej strony bez potwierdzenia lub odrzucenia wniosku, pozostanie on w stanie oczekiwania.",
 	'confirmaccount-none-o'           => 'Brak na liście otwartych wniosków o założenie konta użytkownika.',
 	'confirmaccount-none-h'           => 'Brak na liście wstrzymanych wniosków o założenie konta użytkownika.',
 	'confirmaccount-none-r'           => 'Brak na liście niedawno odrzuconych wniosków o założenie konta użytkownika.',
@@ -4013,12 +4026,21 @@ Wnioski z tej listy nadal można zrealizować.',
 	'confirmaccount-showrej'          => 'odrzucone wnioski o założenie konta',
 	'confirmaccount-showheld'         => 'wstrzymane wnioski o założenie konta',
 	'confirmaccount-showexp'          => 'przeterminowane wnioski o założenie konta',
+	'confirmaccount-review'           => 'Przejrzyj',
+	'confirmaccount-types'            => 'Wybierz kolejkę potwierdzenia założenia konta z listy poniżej:',
 	'confirmaccount-all'              => '(pokaż wszystkie kolejki)',
 	'confirmaccount-type'             => 'Kolejka:',
+	'confirmaccount-type-0'           => 'przyszli autorzy',
+	'confirmaccount-type-1'           => 'przyszli edytorzy',
 	'confirmaccount-q-open'           => 'otwarte wnioski o założenie konta',
 	'confirmaccount-q-held'           => 'wstrzymane wnioski o założenie konta',
+	'confirmaccount-q-rej'            => 'niedawno odrzucone wnioski',
 	'confirmaccount-q-stale'          => 'przeterminowane wnioski o założenie konta',
+	'confirmaccount-badid'            => 'Z tym identyfikatorem nie jest związany żaden wniosek o założenie konta.
+Być może wniosek o tym numerze identyfikacyjnym został już obsłużony.',
 	'confirmaccount-leg-user'         => 'Konto użytkownika',
+	'confirmaccount-leg-areas'        => 'Główne zainteresowania',
+	'confirmaccount-leg-person'       => 'Dane osobowe',
 	'confirmaccount-leg-other'        => 'Inne informacje',
 	'confirmaccount-name'             => 'Nazwa użytkownika',
 	'confirmaccount-real'             => 'Imię i nazwisko',
@@ -4030,12 +4052,39 @@ Wnioski z tej listy nadal można zrealizować.',
 	'confirmaccount-attach'           => 'Życiorys:',
 	'confirmaccount-notes'            => 'Dodatkowe informacje:',
 	'confirmaccount-urls'             => 'Wykaz witryn:',
+	'confirmaccount-none-p'           => '(nie podano)',
+	'confirmaccount-confirm'          => 'Z opcji poniżej wybierz przyjęcie, odrzucenie lub wstrzymanie wniosku:',
+	'confirmaccount-econf'            => '{potwierdzono)',
+	'confirmaccount-reject'           => '{odrzucone przez użytkownika [[User:$1|$1]] z powodu $2)',
+	'confirmaccount-rational'         => 'Powód przesłany do wnioskodawcy:',
 	'confirmaccount-noreason'         => '(brak)',
+	'confirmaccount-autorej'          => '(wniosek został automatycznie odrzucony ze względu na brak aktywności)',
+	'confirmaccount-held'             => '(oznaczone jako "wstrzymane" przez użytkownika [[User:$1|$1]] z powodu $2)',
+	'confirmaccount-create'           => 'Zaakceptuj (utwórz konto)',
+	'confirmaccount-deny'             => 'Odrzuć (usuń z listy)',
+	'confirmaccount-hold'             => 'Wstrzymaj',
+	'confirmaccount-spam'             => 'Spam (nie zezwalaj na wysyłanie wiadomości e-mail)',
+	'confirmaccount-reason'           => 'Komentarz (zostanie dopisany do wiadomości e-mail):',
 	'confirmaccount-ip'               => 'Adres IP:',
 	'confirmaccount-submit'           => 'Potwierdź',
 	'confirmaccount-needreason'       => 'Musisz podać uzasadnienie w polu poniżej.',
+	'confirmaccount-canthold'         => 'Ten wniosek został już wstrzymany lub usunięty.',
+	'confirmaccount-acc'              => 'Potwierdzono wniosek o założenie konta; utworzono konto dla użytkownika [[User:$1|$1]].',
+	'confirmaccount-rej'              => 'Odrzucono wniosek o utworzenie konta.',
+	'confirmaccount-viewing'          => '(aktualnie przeglądany przez użytkownika [[User:$1|$1]])',
+	'confirmaccount-summary'          => 'Tworzę stronę biografii nowego użytkownika.',
+	'confirmaccount-welc'             => "'''Witaj w serwisie ''{{SITENAME}}''!''' Mamy nadzieje, że będizesz aktywnie uczestniczył w jego pracach.
+Dobrym pomysłem jest przeczytanie [[{{MediaWiki:Helppage}}|stron pomocy]]. Jeszcze raz witamy i życzymy przyjemnej pracy!",
 	'confirmaccount-wsum'             => 'Witaj!',
 	'confirmaccount-email-subj'       => 'Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
+	'confirmaccount-email-body'       => 'Złożony przez Ciebie w serwisie {{SITENAME}} wniosek został zaakceptowanyh.
+
+Nazwa użytkownika: $1
+
+Hasło: $2
+
+Z uwagi na bezpieczeństwo użytkowania, przy pierwszej próbie logowania zostaniesz poproszony o zmianę hasła.
+W celu zalogowania się przejdź na stronę {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body2'      => 'Twoja prośba o konto została przyjęta na {{SITENAME}}.
 
 Nazwa: $1
@@ -4046,6 +4095,11 @@ $3
 
 Z powodów bezpieczeństwa będziesz musiał zmienić hasło przy pierwszym logowaniu.
 By się zalogować przejdź do {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3'      => 'Przykro nam, ale złożony przez Ciebie w serwisie {{SITENAME}} wniosek o założenie konta "$1" został odrzucony.
+
+Możliwe przyczyny odrzucenia wniosku to:
+Nie wypełniłeś prawidłowo wszystkich pól wniosku, nie podałeś odpowiedniej długości w odpowiedzi, lub w inny sposób nie wypełniłeś wniosku zgodne z przyjętymi kryteriami.
+W serwisie na pewno znajdziesz listy kontaktowe, które pozwolą Ci dowiedzieć się więcej o zasadach zatwierdzania nowych kont użytkownika.',
 	'confirmaccount-email-body4'      => 'Przepraszamy, Twoja prośba o konto "$1" została odrzucona na {{SITENAME}}.
 
 $2
@@ -5241,13 +5295,15 @@ $messages['te'] = array(
 	'requestaccount-sent'             => 'ఈ ఖాతా అభ్యర్థనని విజయవంతంగా పంపించాం. అది సమీక్షకై వేచివుంది.',
 	'request-account-econf'           => 'మీ ఈ-మెయిల్ చిరునామా నిర్థారితమయ్యింది మరియు మీ ఖాతా అభ్యర్థనలో అలానే నమోదవుతుంది.',
 	'requestaccount-email-subj'       => '{{SITENAME}} ఈ-మెయిల్ చిరునామా నిర్ధారణ',
-	'requestaccount-email-body'       => '{{SITENAME}} లో $1 ఐపీ అడ్రసు నుండి ఎవరో - బహుశా మీరే - ఈ ఈమెయిలు అడ్రసుతో "$2" ఖాతా కావాలని అభ్యర్ధించారు.
+	'requestaccount-email-body'       => '{{SITENAME}} లో $1 ఐపీ అడ్రసు నుండి ఎవరో, బహుశా మీరే, ఈ ఈమెయిలు అడ్రసుతో "$2" ఖాతా కావాలని అభ్యర్ధించారు.
 
 {{SITENAME}} లోని ఈ ఖాతా నిజంగానే మీదేనని నిర్ధారించేందుకు, ఈ లింకును మీ బ్రౌజరులో తెరవండి:
 
 $3
 
-ఖాతా సృష్టించబడితే, మీకో సంకేతపదం వస్తుంది. అది మీరు *కాకపోతే*, ఈ లింకును పట్టించుకోకండి.',
+ఖాతా సృష్టించబడితే, మీకు మాత్రమే సంకేతపదం ఈ-మెయిలులో వస్తుంది.
+ఖాతా అభ్యర్థించినది మీరు *కాకపోతే*, ఆ లింకును నొక్కకండి.
+ఈ నిర్థారణ సంకేతం $4 నాడు కాలం చెల్లుతుంది.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} ఖాతా అభ్యర్థన',
 	'requestaccount-email-body-admin' => '"$1" ఓ ఖాతా కావాలని అడిగి నిర్ధారణ కోసం చూస్తున్నారు.
 ఈ-మెయిలు అడ్రసు నిర్ధారణైంది. మీ అభ్యర్ధనను "$2" వద్ద నిర్ధారించవచ్చు.',
