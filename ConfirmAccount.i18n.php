@@ -707,7 +707,7 @@ $messages['cs'] = array(
 	'requestaccount-urls'        => 'Seznam webových stránek, pokud nějaké jsou (jedna na každý řádek):',
 	'requestaccount-agree'       => 'Musíte potvrdit, že vaše skutečné jméno je správné a že souhlasíte s našimi Podmínkami použití.',
 	'requestaccount-inuse'       => 'Uživatelské jméno už bylo vyžádané v probíhající žádosti o účet.',
-	'requestaccount-tooshort'    => 'Vaše bibliografie musí mít alespoň $1 {{plural:$1|slovo|slova|slov}}.',
+	'requestaccount-tooshort'    => 'Vaše bibliografie musí mít alespoň $1 {{PLURAL:$1|slovo|slova|slov}}.',
 	'requestaccount-emaildup'    => 'Jiný účet čekající na schválení používá stejnou e-mailovou adresu.',
 	'requestaccount-exts'        => 'Tento typ přílohy není povolen.',
 	'requestaccount-resub'       => 'Váš soubor s CV/resumé je potřeba z bezpečnostních důvodů znovu vybrat. Nechejte pole prázdné, pokud jste se rozhodli žádný nepřiložit.',
@@ -1737,9 +1737,11 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-showrej'          => 'solicitudes rexeitadas',
 	'confirmaccount-showheld'         => 'Ver as contas pendentes de ter en conta na listaxe',
 	'confirmaccount-showexp'          => 'solicitudes que expiraron',
-	'confirmaccount-review'           => 'Aprobar/Rexeitar',
+	'confirmaccount-review'           => 'Revisar',
 	'confirmaccount-all'              => '(mostrar todas as colas)',
 	'confirmaccount-type'             => 'Cola seleccionada:',
+	'confirmaccount-type-0'           => 'autores potenciais',
+	'confirmaccount-type-1'           => 'editores potenciais',
 	'confirmaccount-q-open'           => 'solicitudes abertas',
 	'confirmaccount-q-held'           => 'solicitudes suspendidas',
 	'confirmaccount-q-rej'            => 'solicitudes recentemente rexeitadas',
@@ -3928,6 +3930,7 @@ $messages['os'] = array(
 
 /** Polish (Polski)
  * @author Sp5uhe
+ * @author Wpedzich
  * @author McMonster
  * @author Equadus
  * @author Masti
@@ -4009,12 +4012,12 @@ Po zaakceptowaniu lub odrzuceniu, wniosek zostanie usunięty z niniejszej listy.
 Wnioski można nadal zrealizować, lecz zalecane jest wcześniejsze nawiązanie kontaktu z administratorem, który je odrzucił.',
 	'confirmaccount-list3'            => 'Poniżej znajduje się lista przeterminowanych wniosków o utworzenie konta. Wnioski są usuwane po kilku lub kilkunastu dniach.
 Wnioski z tej listy nadal można zrealizować.',
-	'confirmaccount-text'             => "Poniżej znajduje się oczekujący wniosek o konto w serwerze '''{{SITENAME}}'''.
+	'confirmaccount-text'             => "Poniżej znajduje się, oczekujący na rozpatrzenie, wniosek o konto w '''{{GRAMMAR:D.lp|{{SITENAME}}}}'''.
 
-Przejrzyj zawarte w nim informacje. Jeśłi zdecydujesz się wniosek przyjąć, wybierz nowy statu skonta z rozwijanej listy poniżej.
-Edycje dokonane w biografii osoby ubiegającej się o konto nie wpłyną na przechowywane w systemie referencje. Należy pamiętać o możliwości utworzenia konta o innej nazwie, lecz tylko w wypadkach, kiedy jest to konieczne z uwagi na konflikty z innymi nazwami użytkownika.
+Przejrzyj zawarte w nim informacje. Jeśli zdecydujesz się wniosek przyjąć, zmień status konta na poniższej liście rozwijalnej.
+Edycje wykonane w biografii osoby ubiegającej się o konto nie wpłyną na przechowywane w systemie referencje. Możesz utworzyć konto o innej nazwie, niż wybrana przez wnioskodawcę. Należy z tej możliwości korzystać, tylko gdy jest to konieczne z uwagi na konflikt z nazwą innego użytkownika.
 
-Jeśli pozostawisz zawartość tej strony bez potwierdzenia lub odrzucenia wniosku, pozostanie on w stanie oczekiwania.",
+Wniosek, którego nie potwierdzisz lub nie odrzucisz na tej stronie, pozostanie w stanie oczekiwania.",
 	'confirmaccount-none-o'           => 'Brak na liście otwartych wniosków o założenie konta użytkownika.',
 	'confirmaccount-none-h'           => 'Brak na liście wstrzymanych wniosków o założenie konta użytkownika.',
 	'confirmaccount-none-r'           => 'Brak na liście niedawno odrzuconych wniosków o założenie konta użytkownika.',
@@ -4027,17 +4030,17 @@ Jeśli pozostawisz zawartość tej strony bez potwierdzenia lub odrzucenia wnios
 	'confirmaccount-showheld'         => 'wstrzymane wnioski o założenie konta',
 	'confirmaccount-showexp'          => 'przeterminowane wnioski o założenie konta',
 	'confirmaccount-review'           => 'Przejrzyj',
-	'confirmaccount-types'            => 'Wybierz kolejkę potwierdzenia założenia konta z listy poniżej:',
+	'confirmaccount-types'            => 'Wybierz kolejkę z poniższej listy',
 	'confirmaccount-all'              => '(pokaż wszystkie kolejki)',
 	'confirmaccount-type'             => 'Kolejka:',
-	'confirmaccount-type-0'           => 'przyszli autorzy',
-	'confirmaccount-type-1'           => 'przyszli edytorzy',
+	'confirmaccount-type-0'           => 'potencjalni autorzy',
+	'confirmaccount-type-1'           => 'potencjalni edytorzy',
 	'confirmaccount-q-open'           => 'otwarte wnioski o założenie konta',
 	'confirmaccount-q-held'           => 'wstrzymane wnioski o założenie konta',
-	'confirmaccount-q-rej'            => 'niedawno odrzucone wnioski',
+	'confirmaccount-q-rej'            => 'ostatnio odrzucone wnioski',
 	'confirmaccount-q-stale'          => 'przeterminowane wnioski o założenie konta',
-	'confirmaccount-badid'            => 'Z tym identyfikatorem nie jest związany żaden wniosek o założenie konta.
-Być może wniosek o tym numerze identyfikacyjnym został już obsłużony.',
+	'confirmaccount-badid'            => 'Z podanym identyfikatorem nie jest związany żaden wniosek o założenie konta.
+Być może został on już obsłużony.',
 	'confirmaccount-leg-user'         => 'Konto użytkownika',
 	'confirmaccount-leg-areas'        => 'Główne zainteresowania',
 	'confirmaccount-leg-person'       => 'Dane osobowe',
@@ -4053,17 +4056,17 @@ Być może wniosek o tym numerze identyfikacyjnym został już obsłużony.',
 	'confirmaccount-notes'            => 'Dodatkowe informacje:',
 	'confirmaccount-urls'             => 'Wykaz witryn:',
 	'confirmaccount-none-p'           => '(nie podano)',
-	'confirmaccount-confirm'          => 'Z opcji poniżej wybierz przyjęcie, odrzucenie lub wstrzymanie wniosku:',
-	'confirmaccount-econf'            => '{potwierdzono)',
-	'confirmaccount-reject'           => '{odrzucone przez użytkownika [[User:$1|$1]] z powodu $2)',
-	'confirmaccount-rational'         => 'Powód przesłany do wnioskodawcy:',
+	'confirmaccount-confirm'          => 'Korzystając z poniższych opcji przyjmij, odrzuć lub wstrzymaj wniosek',
+	'confirmaccount-econf'            => '(potwierdzono)',
+	'confirmaccount-reject'           => '(odrzucone przez użytkownika [[User:$1|$1]], z powodu $2)',
+	'confirmaccount-rational'         => 'Uzasadnienie przesłane do wnioskodawcy:',
 	'confirmaccount-noreason'         => '(brak)',
 	'confirmaccount-autorej'          => '(wniosek został automatycznie odrzucony ze względu na brak aktywności)',
-	'confirmaccount-held'             => '(oznaczone jako "wstrzymane" przez użytkownika [[User:$1|$1]] z powodu $2)',
+	'confirmaccount-held'             => '(oznaczone jako „wstrzymane” przez użytkownika [[User:$1|$1]], z powodu $2)',
 	'confirmaccount-create'           => 'Zaakceptuj (utwórz konto)',
 	'confirmaccount-deny'             => 'Odrzuć (usuń z listy)',
 	'confirmaccount-hold'             => 'Wstrzymaj',
-	'confirmaccount-spam'             => 'Spam (nie zezwalaj na wysyłanie wiadomości e-mail)',
+	'confirmaccount-spam'             => 'Spam (nie wysyłaj wiadomości e-mail)',
 	'confirmaccount-reason'           => 'Komentarz (zostanie dopisany do wiadomości e-mail):',
 	'confirmaccount-ip'               => 'Adres IP:',
 	'confirmaccount-submit'           => 'Potwierdź',
@@ -4073,18 +4076,18 @@ Być może wniosek o tym numerze identyfikacyjnym został już obsłużony.',
 	'confirmaccount-rej'              => 'Odrzucono wniosek o utworzenie konta.',
 	'confirmaccount-viewing'          => '(aktualnie przeglądany przez użytkownika [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Tworzę stronę biografii nowego użytkownika.',
-	'confirmaccount-welc'             => "'''Witaj w serwisie ''{{SITENAME}}''!''' Mamy nadzieje, że będizesz aktywnie uczestniczył w jego pracach.
-Dobrym pomysłem jest przeczytanie [[{{MediaWiki:Helppage}}|stron pomocy]]. Jeszcze raz witamy i życzymy przyjemnej pracy!",
+	'confirmaccount-welc'             => "'''Witaj w ''{{GRAMMAR:N.lp|{{SITENAME}}}}''!''' Mamy nadzieje, że włączysz się aktywnie w tworzenie {{GRAMMAR:D.lp|{{SITENAME}}}}.
+Zacznij od zapoznania się ze [[{{MediaWiki:Helppage}}|stronami pomocy]]. Jeszcze raz witamy i życzymy przyjemnej pracy!",
 	'confirmaccount-wsum'             => 'Witaj!',
 	'confirmaccount-email-subj'       => 'Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
-	'confirmaccount-email-body'       => 'Złożony przez Ciebie w serwisie {{SITENAME}} wniosek został zaakceptowanyh.
+	'confirmaccount-email-body'       => 'Złożony przez Ciebie w {{GRAMMAR:N.lp|{{SITENAME}}}} wniosek został zaakceptowany.
 
 Nazwa użytkownika: $1
 
 Hasło: $2
 
-Z uwagi na bezpieczeństwo użytkowania, przy pierwszej próbie logowania zostaniesz poproszony o zmianę hasła.
-W celu zalogowania się przejdź na stronę {{fullurl:Special:Userlogin}}.',
+Z uwagi na bezpieczeństwo użytkowania, przy pierwszym logowaniu zostaniesz poproszony o zmianę hasła.
+Zaloguj się na stronie {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body2'      => 'Twoja prośba o konto została przyjęta na {{SITENAME}}.
 
 Nazwa: $1
@@ -4095,18 +4098,25 @@ $3
 
 Z powodów bezpieczeństwa będziesz musiał zmienić hasło przy pierwszym logowaniu.
 By się zalogować przejdź do {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3'      => 'Przykro nam, ale złożony przez Ciebie w serwisie {{SITENAME}} wniosek o założenie konta "$1" został odrzucony.
+	'confirmaccount-email-body3'      => 'Niestety złożony przez Ciebie w {{GRAMMAR:MS.lp|{{SITENAME}}}} wniosek o założenie konta „$1” został odrzucony.
 
 Możliwe przyczyny odrzucenia wniosku to:
-Nie wypełniłeś prawidłowo wszystkich pól wniosku, nie podałeś odpowiedniej długości w odpowiedzi, lub w inny sposób nie wypełniłeś wniosku zgodne z przyjętymi kryteriami.
-W serwisie na pewno znajdziesz listy kontaktowe, które pozwolą Ci dowiedzieć się więcej o zasadach zatwierdzania nowych kont użytkownika.',
+nie wypełniłeś prawidłowo wszystkich pól wniosku, nie udzieliłeś odpowiednio obszernej odpowiedzi, lub w inny sposób nie wypełniłeś wniosku zgodne z przyjętymi kryteriami.
+W serwisie na pewno odnajdziesz informacje, które pozwolą Ci dowiedzieć się więcej o zasadach zatwierdzania nowych kont użytkownika.',
 	'confirmaccount-email-body4'      => 'Przepraszamy, Twoja prośba o konto "$1" została odrzucona na {{SITENAME}}.
 
 $2
 
 Na stronie mogą znajdować się listy kontaktowe, których możesz użyć aby dowiedzieć się więcej na temat polityki kont.',
+	'confirmaccount-email-body5'      => 'Przed zatwierdzeniem złożonego przez Ciebie wniosku o konto „$1” w {{GRAMMAR:MS.lp|{{SITENAME}}}}, musisz podać następujące informacje dodatkowe:
+
+$2
+
+Jeśli chcesz dowiedzieć się więcej o zasadach tworzenia kont w serwisie, poszukaj informacji na jego stronach.',
 	'usercredentials'                 => 'Uprawnienia użytkownika',
+	'usercredentials-leg'             => 'Podejrzyj zatwierdzone informacje uwierzytelniające dotyczące użytkownika',
 	'usercredentials-user'            => 'Nazwa użytkownika:',
+	'usercredentials-text'            => 'Poniżej znajdują się zatwierdzone informacje uwierzytelniające na temat wybranego użytkownika.',
 	'usercredentials-leg-user'        => 'Konto użytkownika',
 	'usercredentials-leg-areas'       => 'Główne obszary zainteresowań',
 	'usercredentials-leg-person'      => 'Informacje osobiste',
@@ -4119,6 +4129,8 @@ Na stronie mogą znajdować się listy kontaktowe, których możesz użyć aby d
 	'usercredentials-urls'            => 'Wykaz witryn:',
 	'usercredentials-ip'              => 'Oryginalny adres IP:',
 	'usercredentials-member'          => 'Prawa:',
+	'usercredentials-badid'           => 'Nie znaleziono informacji uwierzytelniających na temat tego użytkownika.
+Sprawdź, czy prawidłowo wpisałeś nazwę konta.',
 );
 
 /** Piemontèis (Piemontèis)
@@ -5249,7 +5261,6 @@ $messages['ta'] = array(
  * @author Veeven
  * @author Chaduvari
  * @author వైజాసత్య
- * @author SieBot
  */
 $messages['te'] = array(
 	'requestaccount'                  => 'ఖాతాను అభ్యర్ధించండి',
