@@ -784,7 +784,9 @@ Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší
  * @author ОйЛ
  */
 $messages['cu'] = array(
-	'usercredentials-user' => 'по́льꙃєватєлꙗ и́мѧ :',
+	'requestaccount-level-0' => 'творь́ць',
+	'confirmaccount-pos-0'   => 'творь́ць',
+	'usercredentials-user'   => 'по́льꙃєватєлꙗ и́мѧ :',
 );
 
 /** Danish (Dansk)
@@ -2481,10 +2483,13 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
 
 /** Indonesian (Bahasa Indonesia)
  * @author Rex
+ * @author Irwangatot
  */
 $messages['id'] = array(
 	'requestaccount-level-1'  => 'penyunting',
+	'confirmaccount-real-q'   => 'Nama',
 	'confirmaccount-name'     => 'Nama pengguna',
+	'confirmaccount-real'     => 'Nama:',
 	'confirmaccount-pos-1'    => 'penyunting',
 	'confirmaccount-noreason' => '(tidak ada)',
 	'usercredentials-user'    => 'Nama pengguna:',
@@ -2922,10 +2927,12 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'requestaccount-real'   => 'Dinge richtije Name:',
 	'confirmaccount-real-q' => 'Name',
 	'confirmaccount-name'   => 'Metmaacher Name',
 	'confirmaccount-real'   => 'Name:',
 	'usercredentials-user'  => 'Metmaacher Name:',
+	'usercredentials-real'  => 'Dä richtije Name:',
 );
 
 $messages['la'] = array(
