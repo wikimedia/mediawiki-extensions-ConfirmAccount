@@ -480,6 +480,8 @@ $messages['bg'] = array(
 	'requestaccount-leg-other'        => 'Друга информация',
 	'requestaccount-acc-text'         => 'След като заявката бъде обработена, на посочения адрес за електронна поща ще бъде изпратено съобщение за потвърждние. Необходимо е да се последва включената в него препратка. След създаване на потребителската сметка, на същия адрес ще бъде изпратена и временна парола за влизане.',
 	'requestaccount-areas-text'       => 'Сред тематичните области по-долу изберете тези, в които имате компетенции или желание да допринасяте най-много.',
+	'requestaccount-ext-text'         => 'Следната информация се счита за поверителна и не се публикува; тя ще бъде използвана само за тази заявка.
+Препоръчително е да посочите контакти, напр. телефонен номер или друга информация, която ще помогне удостоверяване на самоличността.',
 	'requestaccount-real'             => 'Име и фамилия:',
 	'requestaccount-same'             => '(съвпада с името)',
 	'requestaccount-email'            => 'Електронна поща:',
@@ -495,6 +497,8 @@ $messages['bg'] = array(
 	'requestaccount-tooshort'         => 'Необходимо е биографията да съдържа поне $1 думи.',
 	'requestaccount-emaildup'         => 'Посоченият адрес за електронна поща е използвам при друга изчакваща заявка за потребителска сметка.',
 	'requestaccount-exts'             => 'Не е разрешено прикачането на файлове с този формат.',
+	'requestaccount-tos'              => 'Декларирам, че прочетох и се съгласявам с [[{{MediaWiki:Requestaccount-page}}|Условията за ползване]] на {{SITENAME}}.
+Името, което попълних във формуляра, е моето истинско име и фамилия.',
 	'requestaccount-submit'           => 'Изпращане на заявката',
 	'requestaccount-sent'             => 'Вашата заявка за потребителска сметка е изпратена успешно и чака да бъде разгледана.',
 	'request-account-econf'           => 'Адресът на електронната ви поща беше потвърден и ще бъде отбелязан като такъв в заявката ви за потребителска сметка.',
@@ -1650,6 +1654,14 @@ Ceti code de confirmacion èxpire lo $4.',
 	'confirmaccount-econf'        => '(confirmâ)',
 );
 
+/** Western Frisian (Frysk)
+ * @author Snakesteuben
+ */
+$messages['fy'] = array(
+	'confirmaccount-real-q' => 'Namme',
+	'confirmaccount-real'   => 'Namme:',
+);
+
 /** Galician (Galego)
  * @author Xosé
  * @author Alma
@@ -1887,6 +1899,14 @@ $messages['gv'] = array(
 	'usercredentials-urls'       => 'Rolley ynnydyn-eggey:',
 	'usercredentials-ip'         => 'Enmys IP bunneydagh:',
 	'usercredentials-member'     => 'Kiartyn:',
+);
+
+/** Hawaiian (Hawai`i)
+ * @author Singularity
+ */
+$messages['haw'] = array(
+	'confirmaccount-real-q' => 'Inoa',
+	'confirmaccount-real'   => 'Inoa:',
 );
 
 /** Hindi (हिन्दी)
@@ -3001,6 +3021,7 @@ $messages['lb'] = array(
 	'confirmaccount-econf'            => '(confirméiert)',
 	'confirmaccount-reject'           => '(refuséiert vum [[User:$1|$1]] de(n) $2)',
 	'confirmaccount-noreason'         => '(keen)',
+	'confirmaccount-spam'             => 'Spam (E-Mail net schécken)',
 	'confirmaccount-ip'               => 'IP-Adress:',
 	'confirmaccount-submit'           => 'Confirméieren',
 	'confirmaccount-rej'              => "D'Ufro fir ee Benotzerkont gouf refüséiert.",
@@ -4022,7 +4043,7 @@ Wnioski z tej listy nadal można zrealizować.',
 	'confirmaccount-text'             => "Poniżej znajduje się, oczekujący na rozpatrzenie, wniosek o konto w '''{{GRAMMAR:D.lp|{{SITENAME}}}}'''.
 
 Przejrzyj zawarte w nim informacje. Jeśli zdecydujesz się wniosek przyjąć, zmień status konta na poniższej liście rozwijalnej.
-Edycje wykonane w biografii osoby ubiegającej się o konto nie wpłyną na przechowywane w systemie referencje. Możesz utworzyć konto o innej nazwie, niż wybrana przez wnioskodawcę. Należy z tej możliwości korzystać, tylko gdy jest to konieczne z uwagi na konflikt z nazwą innego użytkownika.
+Edycje wykonane w biografii osoby ubiegającej się o konto nie wpłyną na przechowywane w systemie referencje. Możesz utworzyć konto o innej nazwie, niż wybrana przez wnioskodawcę. Należy z tej możliwości korzystać tylko wtedy, gdy jest to konieczne z uwagi na konflikt z nazwą innego użytkownika.
 
 Wniosek, którego nie potwierdzisz lub nie odrzucisz na tej stronie, pozostanie w stanie oczekiwania.",
 	'confirmaccount-none-o'           => 'Brak na liście otwartych wniosków o założenie konta użytkownika.',
@@ -4083,7 +4104,7 @@ Być może został on już obsłużony.',
 	'confirmaccount-rej'              => 'Odrzucono wniosek o utworzenie konta.',
 	'confirmaccount-viewing'          => '(aktualnie przeglądany przez użytkownika [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Tworzę stronę biografii nowego użytkownika.',
-	'confirmaccount-welc'             => "'''Witaj w ''{{GRAMMAR:N.lp|{{SITENAME}}}}''!''' Mamy nadzieje, że włączysz się aktywnie w tworzenie {{GRAMMAR:D.lp|{{SITENAME}}}}.
+	'confirmaccount-welc'             => "'''Witaj w ''{{GRAMMAR:N.lp|{{SITENAME}}}}''!''' Mamy nadzieję, że włączysz się aktywnie w tworzenie {{GRAMMAR:D.lp|{{SITENAME}}}}.
 Zacznij od zapoznania się ze [[{{MediaWiki:Helppage}}|stronami pomocy]]. Jeszcze raz witamy i życzymy przyjemnej pracy!",
 	'confirmaccount-wsum'             => 'Witaj!',
 	'confirmaccount-email-subj'       => 'Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
@@ -4115,7 +4136,7 @@ W serwisie na pewno odnajdziesz informacje, które pozwolą Ci dowiedzieć się 
 $2
 
 Na stronie mogą znajdować się listy kontaktowe, których możesz użyć aby dowiedzieć się więcej na temat polityki kont.',
-	'confirmaccount-email-body5'      => 'Przed zatwierdzeniem złożonego przez Ciebie wniosku o konto „$1” w {{GRAMMAR:MS.lp|{{SITENAME}}}}, musisz podać następujące informacje dodatkowe:
+	'confirmaccount-email-body5'      => 'Przed zatwierdzeniem złożonego przez Ciebie wniosku o konto „$1” w {{GRAMMAR:MS.lp|{{SITENAME}}}} musisz podać następujące informacje dodatkowe:
 
 $2
 
@@ -5594,12 +5615,13 @@ $2
  * @author Suelnur
  */
 $messages['tr'] = array(
-	'requestaccount-email'   => 'E-posta adresi:',
-	'confirmaccount-email-q' => 'E-posta',
-	'confirmaccount-name'    => 'Kullanıcı adı',
-	'confirmaccount-email'   => 'E-posta:',
-	'confirmaccount-ip'      => 'IP adresi:',
-	'confirmaccount-wsum'    => 'Hoşgeldiniz!',
+	'requestaccount-email'    => 'E-posta adresi:',
+	'confirmaccount-email-q'  => 'E-posta',
+	'confirmaccount-name'     => 'Kullanıcı adı',
+	'confirmaccount-email'    => 'E-posta:',
+	'confirmaccount-noreason' => '(hiçbiri)',
+	'confirmaccount-ip'       => 'IP adresi:',
+	'confirmaccount-wsum'     => 'Hoşgeldiniz!',
 );
 
 /** Ukrainian (Українська)
