@@ -95,10 +95,10 @@ class RequestAccountPage extends SpecialPage {
 		}
 		# Give notice to users that are logged in
 		if( $wgUser->getID() ) {
-			$wgOut->addWikiText( wfMsgHtml( "requestaccount-dup" ) );
+			$wgOut->addWikiText( wfMsg( "requestaccount-dup" ) );
 		}
 
-		$wgOut->addWikiText( wfMsgHtml( "requestaccount-text" ) );
+		$wgOut->addWikiText( wfMsg( "requestaccount-text" ) );
 
 		$titleObj = Title::makeTitle( NS_SPECIAL, 'RequestAccount' );
 		
