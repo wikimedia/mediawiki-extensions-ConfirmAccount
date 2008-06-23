@@ -23,7 +23,7 @@ class RequestAccountPage extends SpecialPage {
 			$wgOut->blockedPage();
 			return;
 		}
-		if ( wfReadOnly() ) {
+		if( wfReadOnly() ) {
 			$wgOut->readOnlyPage();
 			return;
 		}
@@ -71,9 +71,8 @@ class RequestAccountPage extends SpecialPage {
 
 		$this->skin = $wgUser->getSkin();
 
-		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal('wpEditToken') ) ) {
-			if( !$this->mPrevAttachment )
-				$this->mPrevAttachment = $this->mSrcName;
+		if( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal('wpEditToken') ) ) {
+			$this->mPrevAttachment = $this->mPrevAttachment ? $this->mPrevAttachment : $this->mSrcName;
 			$this->doSubmit();
 		} else if( $action == 'confirmemail' ) {
 			$this->confirmEmailToken( $emailCode );
@@ -245,6 +244,7 @@ class RequestAccountPage extends SpecialPage {
 			$this->showForm( $abortError );
 			return;
 		}
+		# Set it back!
 		if( !$wgConfirmAccountCaptchas && isset($wgCaptchaTriggers) ) {
 			$wgCaptchaTriggers['createaccount'] = $old;
 		}
@@ -301,7 +301,6 @@ class RequestAccountPage extends SpecialPage {
 			$this->showForm( wfMsgHtml('requestaccount-emaildup') );
 			return;
 		}
-		
 		$u->setRealName( $this->mRealName );
 		# Per security reasons, file dir cannot be pulled from client,
 		# so ask them to resubmit it then...
@@ -413,7 +412,6 @@ class RequestAccountPage extends SpecialPage {
 		# BC: check if isPingLimitable() exists
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
 			global $wgMemc;
-			
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			$value = $wgMemc->incr( $key );
 			if( !$value ) {
@@ -426,15 +424,13 @@ class RequestAccountPage extends SpecialPage {
 
 	function showSuccess() {
 		global $wgOut;
-
 		$wgOut->setPagetitle( wfMsg( "requestaccount" ) );
 		$wgOut->addWikiText( wfMsg( "requestaccount-sent" ) );
-
 		$wgOut->returnToMain();
 	}
 	
 	/**
-	 * Flatten an areas of interest array
+	 * Flatten areas of interest array
 	 * @access private
 	 */
 	static function flattenAreas( $areas ) {
@@ -445,6 +441,10 @@ class RequestAccountPage extends SpecialPage {
 		return $flatAreas;
 	}
 	
+	/**
+	 * Expand areas of interest to array
+	 * @access private
+	 */
 	static function expandAreas( $areas ) {
 		$list = explode("\n",$areas);
 		foreach( $list as $n => $item ) {
@@ -483,7 +483,7 @@ class RequestAccountPage extends SpecialPage {
 
 		  wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n");
 			#check mime type against file extension
-			if( !$this->verifyExtension( $mime, $extension ) ) {
+			if( !UploadForm::verifyExtension( $mime, $extension ) ) {
 				return new WikiErrorMsg( 'uploadcorrupt' );
 			}
 
@@ -497,44 +497,6 @@ class RequestAccountPage extends SpecialPage {
 
 		wfDebug( __METHOD__.": all clear; passing.\n" );
 		return true;
-	}
-	
-	/**
-	 * Checks if the mime type of the uploaded file matches the file extension.
-	 *
-	 * @param string $mime the mime type of the uploaded file
-	 * @param string $extension The filename extension that the file is to be served with
-	 * @return bool
-	 */
-	function verifyExtension( $mime, $extension ) {
-		$magic =& MimeMagic::singleton();
-
-		if ( ! $mime || $mime == 'unknown' || $mime == 'unknown/unknown' )
-			if ( ! $magic->isRecognizableExtension( $extension ) ) {
-				wfDebug( __METHOD__.": passing file with unknown detected mime type; " .
-					"unrecognized extension '$extension', can't verify\n" );
-				return true;
-			} else {
-				wfDebug( __METHOD__.": rejecting file with unknown detected mime type; ".
-					"recognized extension '$extension', so probably invalid file\n" );
-				return false;
-			}
-
-		$match = $magic->isMatchingExtension($extension,$mime);
-
-		if ($match===NULL) {
-			wfDebug( __METHOD__.": no file extension known for mime type $mime, passing file\n" );
-			return true;
-		} elseif ($match===true) {
-			wfDebug( __METHOD__.": mime type $mime matches extension $extension, passing file\n" );
-
-			#TODO: if it's a bitmap, make sure PHP or ImageMagic resp. can handle it!
-			return true;
-
-		} else {
-			wfDebug( __METHOD__.": mime type $mime mismatches file extension $extension, rejecting file\n" );
-			return false;
-		}
 	}
 	
 	/**
