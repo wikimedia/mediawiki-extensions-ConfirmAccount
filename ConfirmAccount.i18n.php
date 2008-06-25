@@ -219,6 +219,15 @@ There may be contact lists on site that you can use if you want to know more abo
 Check that the name is spelled correctly.',
 );
 
+/** Eastern Mari (Олык Марий йылме)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'confirmaccount-email-q' => 'Электрон почто',
+	'confirmaccount-email'   => 'Электрон почто:',
+	'usercredentials-email'  => 'Электрон почто:',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author SPQRobin
@@ -1684,6 +1693,7 @@ $messages['gl'] = array(
 	'requestaccount-leg-other'        => 'Outra información',
 	'requestaccount-acc-text'         => 'Enviaráselle unha mensaxe de confirmación ao seu enderezo de correo electrónico unha vez enviada esta solicitude. Responda premendo
 	na ligazón de confirmación que lle aparecerá no correo electrónico. Así mesmo, enviaráselle o seu contrasinal cando se cree a conta.',
+	'requestaccount-areas-text'       => 'Seleccione embaixo as áreas dos temas dos que é máis experto ou nos que lle gustaría traballar máis.',
 	'requestaccount-ext-text'         => 'A información seguinte mantense como reservada e só se usará para esta solicitude.
 	Pode querer listar contactos, como un número de teléfono, para axudar a identificar a confirmación.',
 	'requestaccount-bio-text'         => 'A súa biografía aparecerá como contido predefinido da súa páxina de usuario. Tente incluír
@@ -1752,6 +1762,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-showheld'         => 'Ver as contas pendentes de ter en conta na listaxe',
 	'confirmaccount-showexp'          => 'solicitudes que expiraron',
 	'confirmaccount-review'           => 'Revisar',
+	'confirmaccount-types'            => 'Seleccione unha cola de confirmación de contas de embaixo:',
 	'confirmaccount-all'              => '(mostrar todas as colas)',
 	'confirmaccount-type'             => 'Cola seleccionada:',
 	'confirmaccount-type-0'           => 'autores potenciais',
@@ -1790,6 +1801,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-ip'               => 'Enderezo IP:',
 	'confirmaccount-submit'           => 'Confirmar',
 	'confirmaccount-needreason'       => 'Debe incluír un motivo na caixa de comentarios de embaixo.',
+	'confirmaccount-canthold'         => 'Esta solicitude está en espera ou foi borrada.',
 	'confirmaccount-acc'              => 'Confirmouse sen problemas a solicitude de conta; creouse a nova conta de usuario [[User:$1]].',
 	'confirmaccount-rej'              => 'Rexeitouse sen problemas a solicitude de conta.',
 	'confirmaccount-viewing'          => '(actualmente visto polo [[Usuario:$1|$1]])',
@@ -1834,6 +1846,7 @@ $2
 Poden existir listaxes de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
 	'usercredentials'                 => 'Credenciais do usuario',
 	'usercredentials-user'            => 'Nome do usuario:',
+	'usercredentials-text'            => 'Embaixo están os credenciais validos das contas de usuario seleccionadas.',
 	'usercredentials-leg-user'        => 'Conta de Usuario',
 	'usercredentials-leg-areas'       => 'Principais áreas de interese',
 	'usercredentials-leg-person'      => 'Información persoal',
@@ -1905,8 +1918,10 @@ $messages['gv'] = array(
  * @author Singularity
  */
 $messages['haw'] = array(
-	'confirmaccount-real-q' => 'Inoa',
-	'confirmaccount-real'   => 'Inoa:',
+	'requestaccount-level-1' => 'luna',
+	'confirmaccount-real-q'  => 'Inoa',
+	'confirmaccount-real'    => 'Inoa:',
+	'confirmaccount-pos-1'   => 'luna',
 );
 
 /** Hindi (हिन्दी)
@@ -2990,6 +3005,7 @@ $messages['lb'] = array(
 	'requestaccount-tooshort'         => 'Är Biographie muss mindestens $1 Wierder hunn.',
 	'requestaccount-exts'             => "De Fichierstyp vum ''Attachment'' ass net erlaabt.",
 	'requestaccount-submit'           => 'Benotzerkont ufroën',
+	'requestaccount-sent'             => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.',
 	'requestaccount-email-subj'       => '{{SITENAME}} Konfirmatioun vun der E-Mail-Adress',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Ufro fir ee Benotzerkont',
 	'acct_request_throttle_hit'       => 'Pardon, Dir hutt schonns $1 Benotzerkonten ugefrot. Dir kënnt elo keng Ufroe méi maachen.',
@@ -3022,6 +3038,7 @@ $messages['lb'] = array(
 	'confirmaccount-reject'           => '(refuséiert vum [[User:$1|$1]] de(n) $2)',
 	'confirmaccount-noreason'         => '(keen)',
 	'confirmaccount-spam'             => 'Spam (E-Mail net schécken)',
+	'confirmaccount-reason'           => "Bemierkung (gëtt an d'E-Mail derbäigesat):",
 	'confirmaccount-ip'               => 'IP-Adress:',
 	'confirmaccount-submit'           => 'Confirméieren',
 	'confirmaccount-rej'              => "D'Ufro fir ee Benotzerkont gouf refüséiert.",
