@@ -628,7 +628,7 @@ class ConfirmAccountsPage extends SpecialPage
 			# Update user count
 			$ssUpdate = new SiteStatsUpdate( 0, 0, 0, 0, 1 );
 			$ssUpdate->doUpdate();
-			# Great user...
+			# Greet user...
 			global $wgAutoWelcomeNewUsers;
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
