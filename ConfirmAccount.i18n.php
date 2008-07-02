@@ -228,9 +228,21 @@ $messages['mhr'] = array(
 	'usercredentials-email'  => 'Электрон почто:',
 );
 
+/** Niuean (native name missing)
+ * @author Jose77
+ */
+$messages['niu'] = array(
+	'confirmaccount-email-q' => 'Meli hila',
+	'confirmaccount-name'    => 'Matahigoa he tagata',
+	'confirmaccount-email'   => 'Meli hila:',
+	'usercredentials-user'   => 'Matahigoa he tagata:',
+	'usercredentials-email'  => 'Meli hila:',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author SPQRobin
+ * @author Naudefj
  */
 $messages['af'] = array(
 	'requestaccount-leg-person'  => 'Persoonlike inligting',
@@ -239,6 +251,7 @@ $messages['af'] = array(
 	'requestaccount-email'       => 'E-pos adres:',
 	'requestaccount-reqtype'     => 'Posisie:',
 	'requestaccount-level-0'     => 'outeur',
+	'requestaccount-level-1'     => 'redakteur',
 	'requestaccount-notes'       => 'Addisionele notas:',
 	'confirmaccount-real-q'      => 'Naam',
 	'confirmaccount-email-q'     => 'E-pos',
@@ -250,6 +263,7 @@ $messages['af'] = array(
 	'confirmaccount-email'       => 'E-pos:',
 	'confirmaccount-reqtype'     => 'Posisie:',
 	'confirmaccount-pos-0'       => 'outeur',
+	'confirmaccount-pos-1'       => 'redakteur',
 	'confirmaccount-bio'         => 'Biografie:',
 	'confirmaccount-notes'       => 'Addisionele notas:',
 	'confirmaccount-urls'        => 'Lys van webruimtes:',
@@ -265,6 +279,14 @@ $messages['af'] = array(
 	'usercredentials-urls'       => 'Lys van webruimtes:',
 	'usercredentials-ip'         => 'Oorspronklike IP adres:',
 	'usercredentials-member'     => 'Regte:',
+);
+
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'requestaccount-level-1' => 'editor',
+	'confirmaccount-pos-1'   => 'editor',
 );
 
 /** Arabic (العربية)
@@ -1687,7 +1709,7 @@ $messages['gl'] = array(
 	[[Special:Userlogin]].",
 	'requestaccount-page'             => '{{ns:project}}:Condicións de Servizo',
 	'requestaccount-dup'              => "'''Nota: Xa está no sistema cunha conta rexistrada.'''",
-	'requestaccount-leg-user'         => 'Conta de Usuario',
+	'requestaccount-leg-user'         => 'Conta de usuario',
 	'requestaccount-leg-areas'        => 'Principais áreas de interese',
 	'requestaccount-leg-person'       => 'Información persoal',
 	'requestaccount-leg-other'        => 'Outra información',
@@ -1740,16 +1762,27 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
  {{PLURAL:$1|[[Special:ConfirmAccounts|solicitude de conta]]|[[Special:ConfirmAccounts|solicitudes de contas]]}} pendente.",
 	'confirmaccounts'                 => 'Confirmar solicitudes de contas',
 	'confirmedit-desc'                => 'Dar aos burócratas a capacidade para confirmar as solicitudes de contas',
+	'confirmaccount-maintext'         => "'''Esta páxina é usada para confirmar as súas solicitudes de conta pendentes en ''{{SITENAME}}''.'''
+
+Cada cola de solicitudes de conta consiste en tres subcuestións, unha para abrila, outra para aquelas que fosen postas por outros administradores en espera de máis información e unha última para as solicitudes rexeitadas recentemente. 
+
+Ao respostar unha solicitude revísea con coidado e, se é necesario, confirme a información alí contida.  
+As súas accións serán rexistradas de maneira privada.
+Agárdase tamén que revise calquera actividade que teña lugar aquí á parte das súas propias.",
 	'confirmaccount-list'             => 'Abaixo aparece unha listaxe de contas pendentes de aprobación.
 	As contas aprobadas crearanse e eliminaranse desta listaxe. As contas rexeitadas simplemente eliminaranse desta listaxe.',
 	'confirmaccount-list2'            => 'Abaixo aparece unha listaxe con solicitudes de contas rexeitadas recentemente que poden eliminarse automaticamente
 	unha vez que teñan varios días. Poden aínda ser aceptadas como contas, aínda que pode ser mellor que consulte primeiro
 	co administrador que as rexeitou antes de facelo.',
-	'confirmaccount-text'             => "Esta é unha solicitude pendente dunha conta de usuario en '''{{SITENAME}}'''. Examínea
-	coidadosamente e, se é necesario, confirme toda a información que aparece. Observe que pode escoller crear a conta
-	cun nome diferente. Use isto só para evitar conflitos con outros nomes.
+	'confirmaccount-list3'            => 'Embaixo hai unha lista coas solicitudes de contas que caducaron e que poden ser borradas automaticamente unha vez que teñan uns días.
+Aínda poden ser aprobadas como contas.',
+	'confirmaccount-text'             => "Esta é unha solicitude pendente dunha conta de usuario en '''{{SITENAME}}'''.
 
-	Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, ficará como pendente.",
+Examine coidadosamente a información de embaixo. Se está de acordo con esta solicitude, seleccione no despregable a posición para fixar o status da conta do usuario.
+As edicións feitas na biografía da solicitude non afectarán a calquera almacenamento de credenciais permanente. Observe que pode escoller, se quere, crear unha conta cun nome de usuario diferente.
+Use isto só para evitar conflitos con outros nomes.
+
+Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, quedará como pendente.",
 	'confirmaccount-none-o'           => 'Neste momento non hai peticións de contas pendentes nesta listaxe.',
 	'confirmaccount-none-h'           => 'Actualmente non hai solicitudes pendentes a ter en conta nesta listaxe.',
 	'confirmaccount-none-r'           => 'Actualmente non hai contas rexeitas recentemente nesta listaxe.',
@@ -1772,7 +1805,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-q-rej'            => 'solicitudes recentemente rexeitadas',
 	'confirmaccount-q-stale'          => 'solicitudes expiradas',
 	'confirmaccount-badid'            => 'Non existe unha solicitude pendente que corresponda co ID fornecido. Pode que xa fose examinada.',
-	'confirmaccount-leg-user'         => 'Conta de Usuario',
+	'confirmaccount-leg-user'         => 'Conta de usuario',
 	'confirmaccount-leg-areas'        => 'Principais áreas de interese',
 	'confirmaccount-leg-person'       => 'Información persoal',
 	'confirmaccount-leg-other'        => 'Outra información',
@@ -1790,6 +1823,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'confirmaccount-confirm'          => 'Use os botóns de embaixo para aceptar, rexeitar ou deixar en suspenso esta solicitude:',
 	'confirmaccount-econf'            => '(confirmada)',
 	'confirmaccount-reject'           => '(rexeitada por [[User:$1|$1]] en $2)',
+	'confirmaccount-rational'         => 'Explicación dada ao solicitante:',
 	'confirmaccount-noreason'         => '(ningún)',
 	'confirmaccount-autorej'          => '(esta solicitude foi descartada automaticamente debido á inactividade)',
 	'confirmaccount-held'             => '(marcada "en suspenso" por [[User:$1|$1]] en $2)',
@@ -1845,9 +1879,10 @@ $2
 
 Poden existir listaxes de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
 	'usercredentials'                 => 'Credenciais do usuario',
+	'usercredentials-leg'             => 'Verificar os credenciais confirmados dun usuario',
 	'usercredentials-user'            => 'Nome do usuario:',
 	'usercredentials-text'            => 'Embaixo están os credenciais validos das contas de usuario seleccionadas.',
-	'usercredentials-leg-user'        => 'Conta de Usuario',
+	'usercredentials-leg-user'        => 'Conta de usuario',
 	'usercredentials-leg-areas'       => 'Principais áreas de interese',
 	'usercredentials-leg-person'      => 'Información persoal',
 	'usercredentials-leg-other'       => 'Outra información:',
@@ -2516,6 +2551,14 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
 	'usercredentials-badid'           => 'A felhasználó nem rendelkezik személyes adatokkal. Ellenőrizd, hogy helyesen adtad-e meg a nevét.',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'confirmaccount-name'  => 'Nomine de usator',
+	'usercredentials-user' => 'Nomine de usator:',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author Rex
  * @author Irwangatot
@@ -3060,6 +3103,14 @@ $messages['lb'] = array(
 	'usercredentials-urls'            => 'Lëscht vun Internetsiten:',
 	'usercredentials-ip'              => 'Original IP-Adress:',
 	'usercredentials-member'          => 'Rechter:',
+);
+
+/** Lithuanian (Lietuvių)
+ * @author Tomasdd
+ */
+$messages['lt'] = array(
+	'confirmaccount-real-q' => 'Vardas',
+	'confirmaccount-real'   => 'Vardas:',
 );
 
 /** Malayalam (മലയാളം)
