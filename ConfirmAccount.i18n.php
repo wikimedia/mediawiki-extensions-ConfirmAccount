@@ -219,6 +219,22 @@ There may be contact lists on site that you can use if you want to know more abo
 Check that the name is spelled correctly.',
 );
 
+/** Faeag Rotuma (Faeag Rotuma)
+ * @author Jose77
+ */
+$messages['rtm'] = array(
+	'confirmaccount-name'  => 'Asa',
+	'usercredentials-user' => 'Asa:',
+);
+
+/** Tarifit (Tarifit)
+ * @author Jose77
+ */
+$messages['rif'] = array(
+	'requestaccount-real'  => 'Ism n dṣṣaḥ :',
+	'usercredentials-real' => 'Ism n dṣṣaḥ :',
+);
+
 /** Eastern Mari (Олык Марий йылме)
  * @author Сай
  */
@@ -287,6 +303,7 @@ $messages['af'] = array(
 $messages['an'] = array(
 	'requestaccount-level-1' => 'editor',
 	'confirmaccount-pos-1'   => 'editor',
+	'confirmaccount-submit'  => 'Confirmar',
 );
 
 /** Arabic (العربية)
