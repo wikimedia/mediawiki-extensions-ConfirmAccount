@@ -1976,6 +1976,26 @@ $messages['haw'] = array(
 	'confirmaccount-pos-1'   => 'luna',
 );
 
+/** Hebrew (עברית)
+ * @author StuB
+ */
+$messages['he'] = array(
+	'requestaccount'            => 'בקשת חשבון',
+	'requestaccount-text'       => "'''מלאו והשלימו את הטופס הבא לבקשת חשבון המשתמש'''.
+
+לפני שאתם מבקשים חשבון, וודאו כי קראתם קודם את [[{{MediaWiki:Requestaccount-page}}|תנאי השירות]].
+
+ברגע שהחשבון יאושר, תישלח אליכם הודעה בדואר ותוכלו להפעיל את החשבון מ[[Special:Userlogin]].",
+	'requestaccount-dup'        => "'''הערה: אתם כבר מחוברים עם חשבון רשום.'''",
+	'confirmaccount-submit'     => 'אשר',
+	'confirmaccount-needreason' => 'עליך לספק סיבה בתיבת התגובה למטה',
+	'confirmaccount-canthold'   => 'בקשה זו כבר בהמתנה או מחוקה',
+	'confirmaccount-acc'        => 'בקשת חשבון אושרה בהצלחה; נוצר חשבון משתמש חדש [[משתמש:$1]].',
+	'confirmaccount-rej'        => 'בקשת חשבון נדחתה בהצלחה.',
+	'confirmaccount-viewing'    => '(נצפה כרגע בידי [[משתמש:1$|1$]])',
+	'confirmaccount-summary'    => 'יוצר דף משתמש עם ביוגרפיה של משתמש חדש',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
