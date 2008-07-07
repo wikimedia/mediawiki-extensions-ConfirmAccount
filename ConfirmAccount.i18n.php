@@ -1978,22 +1978,23 @@ $messages['haw'] = array(
 
 /** Hebrew (עברית)
  * @author StuB
+ * @author Rotemliss
  */
 $messages['he'] = array(
 	'requestaccount'            => 'בקשת חשבון',
-	'requestaccount-text'       => "'''מלאו והשלימו את הטופס הבא לבקשת חשבון המשתמש'''.
+	'requestaccount-text'       => "'''מלאו והשלימו את הטופס הבא כדי לבקש חשבון המשתמש'''.
 
-לפני שאתם מבקשים חשבון, וודאו כי קראתם קודם את [[{{MediaWiki:Requestaccount-page}}|תנאי השירות]].
+לפני שאתם מבקשים חשבון, אנא ודאו כי קראתם קודם את [[{{MediaWiki:Requestaccount-page}}|תנאי השירות]].
 
-ברגע שהחשבון יאושר, תישלח אליכם הודעה בדואר ותוכלו להפעיל את החשבון מ[[Special:Userlogin]].",
+כשהחשבון יאושר, תישלח אליכם הודעה בדואר האלקטרוני ותוכלו להפעיל את החשבון באמצעות [[Special:Userlogin]].",
 	'requestaccount-dup'        => "'''הערה: אתם כבר מחוברים עם חשבון רשום.'''",
-	'confirmaccount-submit'     => 'אשר',
-	'confirmaccount-needreason' => 'עליך לספק סיבה בתיבת התגובה למטה',
-	'confirmaccount-canthold'   => 'בקשה זו כבר בהמתנה או מחוקה',
-	'confirmaccount-acc'        => 'בקשת חשבון אושרה בהצלחה; נוצר חשבון משתמש חדש [[משתמש:$1]].',
-	'confirmaccount-rej'        => 'בקשת חשבון נדחתה בהצלחה.',
-	'confirmaccount-viewing'    => '(נצפה כרגע בידי [[משתמש:1$|1$]])',
-	'confirmaccount-summary'    => 'יוצר דף משתמש עם ביוגרפיה של משתמש חדש',
+	'confirmaccount-submit'     => 'אישור',
+	'confirmaccount-needreason' => 'יש לספק סיבה בתיבת התגובה למטה.',
+	'confirmaccount-canthold'   => 'בקשה זו כבר נמצאת בהמתנה או מחוקה.',
+	'confirmaccount-acc'        => 'בקשת החשבון אושרה בהצלחה; נוצר חשבון משתמש חדש [[{{ns:user}}:$1]].',
+	'confirmaccount-rej'        => 'בקשת החשבון נדחתה בהצלחה.',
+	'confirmaccount-viewing'    => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])',
+	'confirmaccount-summary'    => 'יצירת דף משתמש עם ביוגרפיה של משתמש חדש',
 );
 
 /** Hindi (हिन्दी)
@@ -5734,20 +5735,22 @@ $messages['tr'] = array(
  * @author AS
  */
 $messages['uk'] = array(
-	'requestaccount'          => 'Запит облікового запису',
-	'requestaccount-text'     => "'''Заповніть та відправте наступну форму запиту облікового запису'''.
+	'requestaccount'           => 'Запит облікового запису',
+	'requestaccount-text'      => "'''Заповніть та відправте наступну форму запиту облікового запису'''.
 
 Будь ласка, спершу прочитайте [[{{MediaWiki:Requestaccount-page}}|Умови надання послуг]].
 
 Після того, як обліковий запис буде підтверджено, вас буде повідомлено про це електронною поштою і ви зможете [[Special:Userlogin|ввійти до системи]].",
-	'requestaccount-page'     => '{{ns:project}}:Умови надання послуг',
-	'requestaccount-leg-user' => 'Обліковий запис',
-	'requestaccount-level-0'  => 'автор',
-	'requestaccount-level-1'  => 'редактор',
-	'confirmaccount-name'     => "Ім'я користувача",
-	'confirmaccount-real'     => "Ім'я:",
-	'confirmaccount-email'    => 'Електронна адреса:',
-	'confirmaccount-reqtype'  => 'Посада:',
+	'requestaccount-page'      => '{{ns:project}}:Умови надання послуг',
+	'requestaccount-dup'       => "'''Примітка: Ви вже ввійшли в систему із зареєстрованого облікового запису.'''",
+	'requestaccount-leg-user'  => 'Обліковий запис',
+	'requestaccount-leg-areas' => 'Головні області зацікавлень',
+	'requestaccount-level-0'   => 'автор',
+	'requestaccount-level-1'   => 'редактор',
+	'confirmaccount-name'      => "Ім'я користувача",
+	'confirmaccount-real'      => "Ім'я:",
+	'confirmaccount-email'     => 'Електронна адреса:',
+	'confirmaccount-reqtype'   => 'Посада:',
 );
 
 /** Vèneto (Vèneto)
