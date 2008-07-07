@@ -227,24 +227,18 @@ $messages['rtm'] = array(
 	'usercredentials-user' => 'Asa:',
 );
 
-/** Tarifit (Tarifit)
- * @author Jose77
- */
-$messages['rif'] = array(
-	'requestaccount-real'  => 'Ism n dṣṣaḥ :',
-	'usercredentials-real' => 'Ism n dṣṣaḥ :',
-);
-
-/** Eastern Mari (Олык Марий йылме)
+/** Eastern Mari (Олык Марий)
  * @author Сай
  */
 $messages['mhr'] = array(
 	'confirmaccount-email-q' => 'Электрон почто',
+	'confirmaccount-name'    => 'Пайдаланышын лӱмжӧ',
 	'confirmaccount-email'   => 'Электрон почто:',
+	'usercredentials-user'   => 'Пайдаланышын лӱмжӧ:',
 	'usercredentials-email'  => 'Электрон почто:',
 );
 
-/** Niuean (native name missing)
+/** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
 $messages['niu'] = array(
@@ -530,6 +524,10 @@ $messages['bg'] = array(
 	'requestaccount-areas-text'       => 'Сред тематичните области по-долу изберете тези, в които имате компетенции или желание да допринасяте най-много.',
 	'requestaccount-ext-text'         => 'Следната информация се счита за поверителна и не се публикува; тя ще бъде използвана само за тази заявка.
 Препоръчително е да посочите контакти, напр. телефонен номер или друга информация, която ще помогне удостоверяване на самоличността.',
+	'requestaccount-bio-text'         => 'Въведената биография ще бъде съхранена като основно съдържание на потребителската ви страница.
+Желателно е да включите препоръки.
+Уверете се, че публикуването на такава информация не ви притеснява.
+Можете да промените името си по-късно чрез [[Special:Preferences]].',
 	'requestaccount-real'             => 'Име и фамилия:',
 	'requestaccount-same'             => '(съвпада с името)',
 	'requestaccount-email'            => 'Електронна поща:',
@@ -608,6 +606,7 @@ $3
 	'confirmaccount-reject'           => '(отказана от [[Потребител:$1|$1]] на $2)',
 	'confirmaccount-rational'         => 'Обосновка към кандидата:',
 	'confirmaccount-noreason'         => '(няма)',
+	'confirmaccount-autorej'          => '(тази заявка автоматично беше отхвърлена заради неактивност)',
 	'confirmaccount-held'             => '(отбелязана "за изчакване" от [[Потребител:$1|$1]] на $2)',
 	'confirmaccount-create'           => 'Приемане (създаване на сметката)',
 	'confirmaccount-deny'             => 'Отказване (премахване от списъка)',
@@ -653,8 +652,8 @@ $2
 $2
 
 На сайта може да бъде намерена повече информация за политиката за създаване на потребителски сметки.',
-	'usercredentials'                 => 'Препоръки за потребителя',
-	'usercredentials-leg'             => 'Преглед на потвърдените препоръки за потребителя',
+	'usercredentials'                 => 'Препоръки за потребители',
+	'usercredentials-leg'             => 'Преглед на потвърдените препоръки за потребител',
 	'usercredentials-user'            => 'Потребителско име:',
 	'usercredentials-leg-user'        => 'Потребителска сметка',
 	'usercredentials-leg-areas'       => 'Основни интереси',
@@ -832,7 +831,7 @@ Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší
 	'usercredentials-member'     => 'Práva:',
 );
 
-/** Church Slavic (Словѣньскъ)
+/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -4590,6 +4589,14 @@ Poderá haver listas de contactos no sítio que poderá usar se desejar saber ma
 	'usercredentials-ip'              => 'Endereço IP original:',
 	'usercredentials-member'          => 'Privilégios:',
 	'usercredentials-badid'           => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está correctamente escrito.',
+);
+
+/** Tarifit (Tarifit)
+ * @author Jose77
+ */
+$messages['rif'] = array(
+	'requestaccount-real'  => 'Ism n dṣṣaḥ :',
+	'usercredentials-real' => 'Ism n dṣṣaḥ :',
 );
 
 $messages['rm'] = array(
