@@ -493,14 +493,15 @@ $2
 	'usercredentials-badid'           => 'لا مؤهلات تم العثور عليها لهذا المستخدم. تأكد من أن الاسم مكتوب بطريقة صحيحة.',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Filipinayzd
+ */
 $messages['bcl'] = array(
-	'requestaccount-legend2'       => 'Personal na impormasyon',
-	'requestaccount-legend3'       => 'Ibang impormasyon',
-	'requestaccount-real'         => 'Totoong pangaran:',
-	'requestaccount-same'         => '(pareho sa  totoong pangaran)',
-	'confirmaccount-real'         => 'Pangaran',
-	'confirmaccount-submit'        => 'Kompermaron',
-	'confirmaccount-wsum'         => 'Dagos!',
+	'requestaccount-real'   => 'Totoong pangaran:',
+	'requestaccount-same'   => '(pareho sa  totoong pangaran)',
+	'confirmaccount-real'   => 'Pangaran',
+	'confirmaccount-submit' => 'Kompermaron',
+	'confirmaccount-wsum'   => 'Dagos!',
 );
 
 /** Bulgarian (Български)
@@ -929,15 +930,15 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2".',
 	'acct_request_throttle_hit'       => 'Du hast bereits $1 Benutzerkonten beantragt, du kannst momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice'      => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[{{ns:special}}:RequestAccount|beantragen]]'''.",
-	'confirmaccount-newrequests'      => '\'\'\'$1\'\'\' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge]]}} warten auf Bearbeitung.',
+	'confirmaccount-newrequests'      => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge]]}} warten auf Bearbeitung.",
 	'confirmaccounts'                 => 'Benutzerkonto-Anträge bestätigen',
 	'confirmedit-desc'                => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
-	'confirmaccount-maintext'         => '\'\'\'Diese Seite dient dazu, wartende Benutzerkontenanträge für \'\'{{SITENAME}}\'\'\'\'\' zu bearbeiten.
+	'confirmaccount-maintext'         => "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}''''' zu bearbeiten.
 
 	Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
 
 	Wenn du auf einen Antrag antwortest, überprüfe die Informationen sorgfältig und bestätige die enthaltenen Informationen.
-	Deine Aktionen werden nichtöffentlich protokolloert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.', 
+	Deine Aktionen werden nichtöffentlich protokolloert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.",
 	'confirmaccount-list'             => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
 	Sobald ein Antrag bestätigt oder zurückgewiesen wurde, wird er aus der Liste entfernt.',
 	'confirmaccount-list2'            => 'Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden Administrator kontaktieren.',
@@ -951,7 +952,6 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	'confirmaccount-none-h'           => 'Momentan gibt es keine Anträge im „abwarten“-Status auf dieser Liste.',
 	'confirmaccount-none-r'           => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge auf dieser Liste.',
 	'confirmaccount-none-e'           => 'Momentan gibt es keine abgelaufenen Benutzeranträge auf dieser Liste.',
-	'confirmaccount-real-q'           => 'Name',
 	'confirmaccount-email-q'          => 'E-Mail',
 	'confirmaccount-bio-q'            => 'Biographie',
 	'confirmaccount-showopen'         => 'offene Anträge',
@@ -974,7 +974,6 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	'confirmaccount-leg-person'       => 'Persönliche Informationen',
 	'confirmaccount-leg-other'        => 'Weitere Informationen',
 	'confirmaccount-name'             => 'Benutzername',
-	'confirmaccount-real'             => 'Name:',
 	'confirmaccount-email'            => 'E-Mail:',
 	'confirmaccount-reqtype'          => 'Position:',
 	'confirmaccount-pos-0'            => 'Autor',
@@ -1062,7 +1061,6 @@ kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 	'usercredentials-email'           => 'E-Mail:',
 	'usercredentials-real'            => 'Echter Name:',
 	'usercredentials-bio'             => 'Biographie:',
-	'usercredentials-attach'          => 'Resume/CV:',
 	'usercredentials-notes'           => 'Zusätzliche Bemerkungen:',
 	'usercredentials-urls'            => 'Liste der Webseiten:',
 	'usercredentials-ip'              => 'Originale IP-Adresse:',
@@ -1156,9 +1154,21 @@ $messages['eo'] = array(
 	'requestaccount-attach'           => 'Karierresumo (nedeviga):',
 	'requestaccount-notes'            => 'Pluaj notoj:',
 	'requestaccount-tooshort'         => 'Via biografio estu almenaŭ $1 vortoj.',
+	'requestaccount-emaildup'         => 'Alia peto por kontrolenda konto uzas la saman retadreson.',
 	'requestaccount-exts'             => 'Dosiertipo de aldonaĵo estas malpermesita.',
 	'requestaccount-submit'           => 'Peti konton',
+	'requestaccount-sent'             => 'Via konta peto estis sukcese sendita kaj nun bezonas kontroladon.',
+	'request-account-econf'           => 'Via retadreso estis konfirmita kaj estos listigita tiel en via konta peto.',
 	'requestaccount-email-subj'       => '{{SITENAME}} retpoŝta konfirmo',
+	'requestaccount-email-body'       => 'Iu, verŝajne vi de IP-adreso $1, petis konton "$2" kun ĉi tiu retadreso ĉe {{SITENAME}}.
+
+Konfirmi ke ĉi tiu konto ja apartenas al vi ĉe {{SITENAME}}, malfermu ĉi tiun ligilon en via retumilo:
+
+$3
+
+Se la konto estas kreita, nur al vi estos retpoŝtita la pasvorto.
+Se ĉi tio ne devenas al vi, ne sekvu la ligilon.
+Ĉi tiu konfirmado findatiĝis je $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} peto por konto',
 	'requestaccount-loginnotice'      => "Akiri uzanto-konton, vi devas '''[[Special:RequestAccount|peti ĝin]]'''.",
 	'confirmaccounts'                 => 'Konfirmi petojn por kontoj',
@@ -1168,6 +1178,7 @@ $messages['eo'] = array(
 	'confirmaccount-bio-q'            => 'Biografio',
 	'confirmaccount-showopen'         => 'malfermaj petoj',
 	'confirmaccount-showrej'          => 'malakceptitaj petoj',
+	'confirmaccount-showexp'          => 'preteraj petoj',
 	'confirmaccount-review'           => 'Kontrolu',
 	'confirmaccount-all'              => '(montru ĉiujn atendovicojn)',
 	'confirmaccount-type'             => 'Atendovico:',
@@ -1246,14 +1257,14 @@ Antes de solicitar una cuenta, asegúrate de haber leído los [[{{MediaWiki:Requ
 Una vez que la cuenta sea aprobada, se te enviará una notificación a través de correo electrónico y la cuenta se podrá usar entrando a [[Especial:Entrar]].",
 );
 
+/** Extremaduran (Estremeñu)
+ * @author Better
+ */
 $messages['ext'] = array(
-	'requestaccount-legend1'       => 'Cuenta d´usuáriu',
-	'requestaccount-legend2'       => 'Enhormación presonal',
-	'requestaccount-legend3'       => 'Mas enhormación',
-	'requestaccount-real'         => 'Nombri verdaeru:',
-	'confirmaccount-name'         => 'Nombri d´usuáriu',
-	'confirmaccount-real'         => 'Nombri',
-	'confirmaccount-wsum'         => 'Bienviniu!',
+	'requestaccount-real' => 'Nombri verdaeru:',
+	'confirmaccount-name' => 'Nombri d´usuáriu',
+	'confirmaccount-real' => 'Nombri',
+	'confirmaccount-wsum' => 'Bienviniu!',
 );
 
 /** Finnish (Suomi)
@@ -1345,8 +1356,6 @@ Jos jätät tämän sivun vahvistamatta tai hylkäämättä pyyntöä, se jää 
 	'confirmaccount-real-q'           => 'Nimi',
 	'confirmaccount-email-q'          => 'Sähköposti',
 	'confirmaccount-bio-q'            => 'Omat tiedot',
-	'confirmaccount-back'             => 'Katso luettelo käsiteltävänä olevista pyynnöistä',
-	'confirmaccount-back2'            => 'Katso luettelo äskettäin hylätyistä pyynnöistä',
 	'confirmaccount-showheld'         => 'Katso luettelo käsiteltävänä olevista pyynnöistä',
 	'confirmaccount-review'           => 'Tarkista',
 	'confirmaccount-types'            => 'Valitse vahvistettavien pyyntöjen jono alla olevista:',
@@ -1639,42 +1648,43 @@ Ceci permet d’être sur la liste des contacts du site, si vous désirez en sav
 	'usercredentials-badid'           => 'Aucune référence trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé.',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ * @author SPQRobin
+ */
 $messages['frp'] = array(
-	'requestaccount'              => 'Demanda de compto utilisator',
-	'requestaccount-text'         => '\'\'\'Rempléd et emmandâd lo formulèro ce-desot por demandar un compto utilisator.\'\'\'
+	'requestaccount'             => 'Demanda de compto utilisator',
+	'requestaccount-text'        => "'''Rempléd et emmandâd lo formulèro ce-desot por demandar un compto utilisator.'''
 	
 	Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto.
 	
 	Un côp que lo compto est accèptâ, vos recevréd un mèl vos notifient que voutron compto porrat étre utilisâ dessus
-	[[Special:Userlogin]].',
-	'requestaccount-page'         => '{{ns:project}}:Condicions d’usâjo',
-	'requestaccount-dup'          => '\'\'\'Nota : vos éte ja sur una sèssion avouéc un compto enregistrâ.\'\'\'',
-	'requestaccount-legend1'      => 'Compto utilisator',
-	'requestaccount-legend2'      => 'Enformacions a sè',
-	'requestaccount-legend3'      => 'Ôtres enformacions',
-	'requestaccount-acc-text'     => 'Un mèssâjo de confirmacion serat emmandâ a voutra adrèce èlèctronica un côp que la demanda arat étâ emmandâ. Dens lo mèl reçu, clicâd sur lo lim corrèspondent a la confirmacion de voutra demanda. Et pués, un mot de pâssa serat emmandâ per mèl quand voutron compto serat crèâ.',
-	'requestaccount-ext-text'     => 'L’enformacion siuventa réste privâ et porrat étre utilisâ ren que por ceta requéta. 
+	[[Special:Userlogin]].",
+	'requestaccount-page'        => '{{ns:project}}:Condicions d’usâjo',
+	'requestaccount-dup'         => "'''Nota : vos éte ja sur una sèssion avouéc un compto enregistrâ.'''",
+	'requestaccount-acc-text'    => 'Un mèssâjo de confirmacion serat emmandâ a voutra adrèce èlèctronica un côp que la demanda arat étâ emmandâ. Dens lo mèl reçu, clicâd sur lo lim corrèspondent a la confirmacion de voutra demanda. Et pués, un mot de pâssa serat emmandâ per mèl quand voutron compto serat crèâ.',
+	'requestaccount-ext-text'    => 'L’enformacion siuventa réste privâ et porrat étre utilisâ ren que por ceta requéta. 
 	Vos avéd la possibilitât de listar des contactes tâl qu’un numerô de tèlèfone por obtegnir una assistance por confirmar voutra identitât.',
-	'requestaccount-bio-text'     => 'Voutra biografia serat betâ per dèfôt sur voutra pâge utilisator. Tâchiéd d’y betar voutres recomandacions. Assurâd-vos que vos pouede difusar sen crenta les enformacions. Voutron nom pôt étre changiê en utilisent [[Special:Preferences]].',
-	'requestaccount-real'         => 'Veré nom :',
-	'requestaccount-same'         => '(nom figurent dens voutron ètat civilo)',
-	'requestaccount-email'        => 'Adrèce èlèctronica :',
-	'requestaccount-bio'          => 'Biografia a sè :',
-	'requestaccount-attach'       => 'CV/Rèsumâ (u chouèx) :',
-	'requestaccount-notes'        => 'Notes suplèmentères :',
-	'requestaccount-urls'         => 'Lista des setos Malyâjo. S’y at plusiors, sèparâd-los per un sôt de legne :',
-	'requestaccount-agree'        => 'Vos dête cèrtifiar que voutron veré nom est corrèct et que vos accèptâd les condicions d’usâjo du sèrviço.',
-	'requestaccount-inuse'        => 'Lo nom d’utilisator est ja utilisâ dens una requéta en cors d’aprobacion.',
-	'requestaccount-tooshort'     => 'Voutra biografia dêt avêr u muens {{PLURAL:$1|$1 mot|$1 mots}}.',
-	'requestaccount-exts'         => 'Lo tèlèchargement des fichiérs juents est pas pèrmês.',
-	'requestaccount-resub'        => 'Voutron fichiér de CV/rèsumâ dêt étre sèlèccionâ un côp de ples por des rêsons de sècuritât. Lèssiéd lo champ vouedo se vos dèsirâd pas més l’apondre.',
-	'requestaccount-tos'          => 'J/y’é liesu et j/y’accèpto de rèspèctar los tèrmos regardent les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] des sèrviços de {{SITENAME}}. 
+	'requestaccount-bio-text'    => 'Voutra biografia serat betâ per dèfôt sur voutra pâge utilisator. Tâchiéd d’y betar voutres recomandacions. Assurâd-vos que vos pouede difusar sen crenta les enformacions. Voutron nom pôt étre changiê en utilisent [[Special:Preferences]].',
+	'requestaccount-real'        => 'Veré nom :',
+	'requestaccount-same'        => '(nom figurent dens voutron ètat civilo)',
+	'requestaccount-email'       => 'Adrèce èlèctronica :',
+	'requestaccount-bio'         => 'Biografia a sè :',
+	'requestaccount-attach'      => 'CV/Rèsumâ (u chouèx) :',
+	'requestaccount-notes'       => 'Notes suplèmentères :',
+	'requestaccount-urls'        => 'Lista des setos Malyâjo. S’y at plusiors, sèparâd-los per un sôt de legne :',
+	'requestaccount-agree'       => 'Vos dête cèrtifiar que voutron veré nom est corrèct et que vos accèptâd les condicions d’usâjo du sèrviço.',
+	'requestaccount-inuse'       => 'Lo nom d’utilisator est ja utilisâ dens una requéta en cors d’aprobacion.',
+	'requestaccount-tooshort'    => 'Voutra biografia dêt avêr u muens {{PLURAL:$1|$1 mot|$1 mots}}.',
+	'requestaccount-exts'        => 'Lo tèlèchargement des fichiérs juents est pas pèrmês.',
+	'requestaccount-resub'       => 'Voutron fichiér de CV/rèsumâ dêt étre sèlèccionâ un côp de ples por des rêsons de sècuritât. Lèssiéd lo champ vouedo se vos dèsirâd pas més l’apondre.',
+	'requestaccount-tos'         => 'J/y’é liesu et j/y’accèpto de rèspèctar los tèrmos regardent les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] des sèrviços de {{SITENAME}}. 
 	Lo nom que j/y’é endicâ dens lo champ « Veré nom » est verément mon nom pèrsonèl.',
-	'requestaccount-submit'       => 'Demanda de compto utilisator.',
-	'requestaccount-sent'         => 'Voutra demanda de compto utilisator at étâ emmandâ avouéc reusséta et at étâ betâ dens la lista d’atenta d’aprobacion.',
-	'request-account-econf'       => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ tâla qu’el est dens voutra demanda de compto.',
-	'requestaccount-email-subj'   => '{{SITENAME}} confirmacion d’adrèce de mèl.',
-	'requestaccount-email-body'   => 'Quârqu’un, probâblament vos, at formulâ, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » dessus {{SITENAME}} avouéc ceta adrèce de mèl.
+	'requestaccount-submit'      => 'Demanda de compto utilisator.',
+	'requestaccount-sent'        => 'Voutra demanda de compto utilisator at étâ emmandâ avouéc reusséta et at étâ betâ dens la lista d’atenta d’aprobacion.',
+	'request-account-econf'      => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ tâla qu’el est dens voutra demanda de compto.',
+	'requestaccount-email-subj'  => '{{SITENAME}} confirmacion d’adrèce de mèl.',
+	'requestaccount-email-body'  => 'Quârqu’un, probâblament vos, at formulâ, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » dessus {{SITENAME}} avouéc ceta adrèce de mèl.
 
 Por confirmar que cél compto dessus {{SITENAME}} est verément a vos, vos éte preyê d’uvrir ceti lim dens voutron navigator Malyâjo :
 
@@ -1682,23 +1692,23 @@ $3
 
 Voutron mot de pâssa vos serat emmandâ solament se voutron compto est crèâ. Se tâl ére *pas* lo câs, utilisâd pas ceti lim. 
 Ceti code de confirmacion èxpire lo $4.',
-	'acct_request_throttle_hit'   => 'Dèsolâ, vos éd ja demandâ $1 comptos. Vos pouede pas més nen fâre la demanda.',
-	'requestaccount-loginnotice'  => 'Por obtegnir un compto utilisator, vos dête nen fâre la \'\'\'[[Special:RequestAccount|demanda]]\'\'\'.',
-	'confirmaccounts'             => 'Demanda de confirmacion de comptos',
-	'confirmaccount-list'         => 'Vê-que, ce-desot, la lista des comptos en atenta d’aprobacion. Los comptos accèptâs seront crèâs et reteriês de ceta lista. Los comptos refusâs seront suprimâs de ceta méma lista.',
-	'confirmaccount-name'         => 'Nom d’utilisator',
-	'confirmaccount-real'         => 'Nom :',
-	'confirmaccount-real-q'       => 'Nom',
-	'confirmaccount-email'        => 'Mèl :',
-	'confirmaccount-email-q'      => 'Mèl',
-	'confirmaccount-bio'          => 'Biografia :',
-	'confirmaccount-bio-q'        => 'Biografia',
-	'confirmaccount-attach'       => 'CV/Rèsumâ :',
-	'confirmaccount-notes'        => 'Notes suplèmentères :',
-	'confirmaccount-urls'         => 'Lista des setos Malyâjo :',
-	'confirmaccount-none-p'       => '(pas porvu)',
-	'confirmaccount-review'       => 'Aprobacion/Refus',
-	'confirmaccount-econf'        => '(confirmâ)',
+	'acct_request_throttle_hit'  => 'Dèsolâ, vos éd ja demandâ $1 comptos. Vos pouede pas més nen fâre la demanda.',
+	'requestaccount-loginnotice' => "Por obtegnir un compto utilisator, vos dête nen fâre la '''[[Special:RequestAccount|demanda]]'''.",
+	'confirmaccounts'            => 'Demanda de confirmacion de comptos',
+	'confirmaccount-list'        => 'Vê-que, ce-desot, la lista des comptos en atenta d’aprobacion. Los comptos accèptâs seront crèâs et reteriês de ceta lista. Los comptos refusâs seront suprimâs de ceta méma lista.',
+	'confirmaccount-real-q'      => 'Nom',
+	'confirmaccount-email-q'     => 'Mèl',
+	'confirmaccount-bio-q'       => 'Biografia',
+	'confirmaccount-review'      => 'Aprobacion/Refus',
+	'confirmaccount-name'        => 'Nom d’utilisator',
+	'confirmaccount-real'        => 'Nom :',
+	'confirmaccount-email'       => 'Mèl :',
+	'confirmaccount-bio'         => 'Biografia :',
+	'confirmaccount-attach'      => 'CV/Rèsumâ :',
+	'confirmaccount-notes'       => 'Notes suplèmentères :',
+	'confirmaccount-urls'        => 'Lista des setos Malyâjo :',
+	'confirmaccount-none-p'      => '(pas porvu)',
+	'confirmaccount-econf'       => '(confirmâ)',
 );
 
 /** Western Frisian (Frysk)
@@ -2610,8 +2620,11 @@ $messages['id'] = array(
 	'usercredentials-user'    => 'Nama pengguna:',
 );
 
+/** Ido (Ido)
+ * @author Malafaya
+ */
 $messages['io'] = array(
-	'confirmaccount-wsum'         => 'Bonveno!',
+	'confirmaccount-wsum' => 'Bonveno!',
 );
 
 /** Icelandic (Íslenska)
@@ -2762,8 +2775,6 @@ $3
 	'confirmaccount-real-q'           => '本名',
 	'confirmaccount-email-q'          => '電子メールアドレス',
 	'confirmaccount-bio-q'            => '自己紹介',
-	'confirmaccount-back'             => '申請受理アカウントの一覧を見る',
-	'confirmaccount-back2'            => '最近申請が棄却されたアカウントの一覧を見る',
 	'confirmaccount-showheld'         => '承認保留アカウントの一覧を見る',
 	'confirmaccount-review'           => '承認検討',
 	'confirmaccount-types'            => 'アカウント承認待ち行列を選択してください:',
@@ -2969,11 +2980,11 @@ $messages['km'] = array(
 	'requestaccount-leg-person'       => 'ពត៌មានផ្ទាល់ខ្លួន',
 	'requestaccount-leg-other'        => 'ពត៌មាន ដទៃទៀត',
 	'requestaccount-real'             => 'ឈ្មោះពិត៖',
-	'requestaccount-same'             => '(ដូច ឈ្មោះពិត)',
+	'requestaccount-same'             => '(ដូចឈ្មោះពិត)',
 	'requestaccount-email'            => 'អាសយដ្ឋានអ៊ីមែល៖',
 	'requestaccount-reqtype'          => 'តួនាទី៖',
 	'requestaccount-level-0'          => 'អ្នកនិពន្ធ៖',
-	'requestaccount-level-1'          => 'ឧបករកែប្រែ',
+	'requestaccount-level-1'          => 'ឧបករណ៍កែប្រែ',
 	'requestaccount-bio'              => 'ជីវប្រវត្តិផ្ទាល់ខ្លួន៖',
 	'requestaccount-attach'           => 'ប្រវត្តិរូប (ជំរើស) ៖',
 	'requestaccount-notes'            => 'សំគាល់បន្ថែម៖',
@@ -2995,11 +3006,11 @@ $messages['km'] = array(
 	'confirmaccount-all'              => '(បង្ហាញ គ្រប់ ជួររង់ចាំ)',
 	'confirmaccount-type'             => 'ជួររង់ចាំ ត្រូវបានជ្រើសយក ៖',
 	'confirmaccount-leg-user'         => 'គណនីអ្នកប្រើប្រាស់',
-	'confirmaccount-leg-person'       => 'ពត៌មាន ផ្ទាល់ខ្លួន',
+	'confirmaccount-leg-person'       => 'ពត៌មានផ្ទាល់ខ្លួន',
 	'confirmaccount-leg-other'        => 'ពត៌មាន ដទៃ',
-	'confirmaccount-name'             => 'ឈ្មោះ អ្នកប្រើប្រាស់',
+	'confirmaccount-name'             => 'ឈ្មោះអ្នកប្រើប្រាស់',
 	'confirmaccount-real'             => 'ឈ្មោះ ៖',
-	'confirmaccount-email'            => 'អ៊ីមែវល៍ ៖',
+	'confirmaccount-email'            => 'អ៊ីមែល៖',
 	'confirmaccount-pos-0'            => 'អ្នកនិពន្ធ',
 	'confirmaccount-pos-1'            => 'ឧបករកែប្រែ',
 	'confirmaccount-bio'              => 'ជីវប្រវត្តិ ៖',
@@ -3015,11 +3026,36 @@ $messages['km'] = array(
 	'confirmaccount-needreason'       => 'អ្នកត្រូវផ្តល់ ហេតុផល ក្នុងប្រអប់វិចារ ខាងក្រោម​។',
 	'confirmaccount-rej'              => 'សំណើសុំគណនីបានបដិសេធរួចជាស្រេចហើយ។',
 	'confirmaccount-wsum'             => 'សូមស្វាគមន៍!',
+	'confirmaccount-email-subj'       => 'សំនើសុំគណនី {{SITENAME}}',
+	'confirmaccount-email-body'       => 'សំនើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
+
+
+ឈ្មោះគណនី: $1
+
+
+ពាក្យសំងាត់: $2
+
+
+ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
+
+ឡុកអ៊ីន សូមទៅកាន់ {{fullurl:Special:Userlogin}} ។',
+	'confirmaccount-email-body2'      => 'សំនើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
+
+
+ឈ្មោះគណនី: $1
+
+
+ពាក្យសំងាត់: $2
+
+
+ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
+
+ឡុកអ៊ីន សូមទៅកាន់ {{fullurl:Special:Userlogin}} ។',
 	'usercredentials-user'            => 'ឈ្មោះអ្នកប្រើប្រាស់៖',
 	'usercredentials-leg-user'        => 'គណនីអ្នកប្រើប្រាស់',
 	'usercredentials-leg-person'      => 'ពត៌មាន ផ្ទាល់ខ្លួន',
-	'usercredentials-leg-other'       => 'ពត៌មាន ដទៃ',
-	'usercredentials-email'           => 'អ៊ីមែវល៍ ៖',
+	'usercredentials-leg-other'       => 'ពត៌មានផ្សេងៗទៀត',
+	'usercredentials-email'           => 'អ៊ីមែល៖',
 	'usercredentials-real'            => 'ឈ្មោះពិត ៖',
 	'usercredentials-bio'             => 'ជីវប្រវត្តិ ៖',
 	'usercredentials-attach'          => 'ប្រវត្តិរូប ៖',
@@ -3050,12 +3086,15 @@ $messages['ksh'] = array(
 	'usercredentials-real'  => 'Dä richtije Name:',
 );
 
+/** Latin (Latina)
+ * @author SPQRobin
+ */
 $messages['la'] = array(
-	'requestaccount-real'         => 'Nomen verum:',
-	'requestaccount-same'         => '(aequus ad nomine vero)',
-	'confirmaccount-name'         => 'Nomen usoris',
-	'confirmaccount-real'         => 'Nomen',
-	'confirmaccount-wsum'         => 'Salve!',
+	'requestaccount-real' => 'Nomen verum:',
+	'requestaccount-same' => '(aequus ad nomine vero)',
+	'confirmaccount-name' => 'Nomen usoris',
+	'confirmaccount-real' => 'Nomen',
+	'confirmaccount-wsum' => 'Salve!',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -4266,7 +4305,7 @@ Jeśli chcesz dowiedzieć się więcej o zasadach tworzenia kont w serwisie, pos
 Sprawdź, czy prawidłowo wpisałeś nazwę konta.',
 );
 
-/** Piemontèis (Piemontèis)
+/** Piedmontese (Piemontèis)
  * @author Bèrto 'd Sèra
  * @author SPQRobin
  */
@@ -4274,9 +4313,6 @@ $messages['pms'] = array(
 	'requestaccount'             => 'Ciamé un cont',
 	'requestaccount-text'        => "'''Ch'a completa e ch'a manda sta domanda-sì për ciamé ch'a-j deurbo sò cont utent'''. Per piasì, ch'a varda d'avej present le [[{{MediaWiki:Requestaccount-page}}|Condission ëd servissi]], anans che deurb-se un cont. Na vira che 'l cont a sia aprovà, a l'arseivrà na notìfica për pòsta eletrònica e sò cont a sarà bon da dovré a l'adrëssa [Special:Userlogin]].",
 	'requestaccount-dup'         => "'''Ch'a ten-a present: al moment a l'é già andrinta al sistema ën dovrand un cont registrà.'''",
-	'requestaccount-legend1'     => 'Cont utent',
-	'requestaccount-legend2'     => 'Anformassion personaj',
-	'requestaccount-legend3'     => 'Àotre anformassion',
 	'requestaccount-acc-text'    => "A soa adrëssa ëd pòsta eletrònica a-i rivërà un messagi, na vira che sta domanda a la sia mandà. Per piasì, ch'a n'arsponda ën dand-ie un colp col rat ansima a l'aniura ch'a treuva ant ël messagi. Ëdcò soa ciav a sarà recapità për pòsta eletrònica, na vira che sò cont a sia creà.",
 	'requestaccount-ext-text'    => "St'anformassion-sì as ten privà e as dòvra mach për sta question-sì. S'a veul a peul buté dij contat coma un nùmer ëd telèfono për giuté a identifichesse sensa dubi.",
 	'requestaccount-bio-text'    => "Soa biografìa a sarà buta coma contnù base për soa pàgine utent. S'a peul, ch'a buta soe credensiaj, cole ch'a sio. Ch'a varda mach però dë buté dj'anformassion ch'a-j da gnun fastudi publiché. An tute le manere, a peul sempe cambiesse 'd nòm ën dovrand l'adrëssa [[Special:Preferences]].",
@@ -4309,8 +4345,6 @@ Quand ël cont a vnirà creà, soa la ciav a sarà mandà mach a st'adrëssa-sì
 	'confirmaccount-real-q'      => 'Nòm',
 	'confirmaccount-email-q'     => 'Adrëssa ëd pòsta eletrònica',
 	'confirmaccount-bio-q'       => 'Biografìa',
-	'confirmaccount-back'        => 'Vardé la lista dle domande duvèrte',
-	'confirmaccount-back2'       => "Vardé la lista dle domande arfudà ant j'ùltim temp",
 	'confirmaccount-review'      => 'Aprové/Arfudé',
 	'confirmaccount-badid'       => "A-i é gnun-a domanda duvèrta ch'a-j corisponda a l'identificativ ch'a l'ha butà. A peul esse ch'a la sia già staita tratà da cheidun d'àotr.",
 	'confirmaccount-name'        => 'Stranòm',
@@ -4599,10 +4633,13 @@ $messages['rif'] = array(
 	'usercredentials-real' => 'Ism n dṣṣaḥ :',
 );
 
+/** Rhaeto-Romance (Rumantsch)
+ * @author SPQRobin
+ */
 $messages['rm'] = array(
-	'confirmaccount-name'         => 'Num d\'utilisader',
-	'confirmaccount-real'         => 'Num:',
-	'confirmaccount-real-q'       => 'Num',
+	'confirmaccount-real-q' => 'Num',
+	'confirmaccount-name'   => "Num d'utilisader",
+	'confirmaccount-real'   => 'Num:',
 );
 
 /** Russian (Русский)
@@ -4974,9 +5011,12 @@ $messages['sr-ec'] = array(
 	'confirmaccount-noreason' => '(нема)',
 );
 
+/** Swati (SiSwati)
+ * @author Jatrobat
+ */
 $messages['ss'] = array(
-	'confirmaccount-real'         => 'Ligama:',
-	'confirmaccount-real-q'       => 'Ligama',
+	'confirmaccount-real-q' => 'Ligama',
+	'confirmaccount-real'   => 'Ligama:',
 );
 
 /** Seeltersk (Seeltersk)
@@ -5382,7 +5422,7 @@ Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill
 	'usercredentials-badid'           => 'Hittade inga referenser för denna användare. Kontrollera att namnet är rättstavat.',
 );
 
-/** Silesian (ślůnski)
+/** Silesian (Ślůnski)
  * @author Herr Kriss
  */
 $messages['szl'] = array(
@@ -5805,40 +5845,36 @@ $messages['vo'] = array(
 	'usercredentials-real'      => 'Nem jenöfik:',
 );
 
+/** Yue (粵語) */
 $messages['yue'] = array(
-	# Request account page
-	'requestaccount'          => '請求戶口',
-	'requestaccount-text'      => '\'\'\'完成並遞交下面嘅表格去請求一個用戶戶口\'\'\'。 
+	'requestaccount'             => '請求戶口',
+	'requestaccount-text'        => "'''完成並遞交下面嘅表格去請求一個用戶戶口'''。 
 	
 	請確認你響請求一個戶口之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。
 	
-	一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。',
-	'requestaccount-dup'      => '\'\'\'留意: 你已經登入咗做一個已經註冊咗嘅戶口。\'\'\'',
-	'requestaccount-legend1'   => '用戶戶口',
-	'requestaccount-legend2'   => '個人資料',
-	'requestaccount-legend3'   => '其它資料',
-	'requestaccount-acc-text'  => '當完成請求時，一封確認訊息會發到你嘅電郵地址。
+	一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。",
+	'requestaccount-dup'         => "'''留意: 你已經登入咗做一個已經註冊咗嘅戶口。'''",
+	'requestaccount-acc-text'    => '當完成請求時，一封確認訊息會發到你嘅電郵地址。
 	請響封電郵度撳個確認連結去回應佢。同時，當你個戶口開咗之後，你戶口個密碼將會電郵畀你。',
-	'requestaccount-ext-text'  => '下面嘅資料會保密，而且只係會用響呢次請求度。 
+	'requestaccount-ext-text'    => '下面嘅資料會保密，而且只係會用響呢次請求度。 
 	你可能需要列示聯絡資料，好似電話號碼等去幫手證明你嘅確認。',
-	'requestaccount-bio-text' => "你嘅傳記將會設定做響你用戶頁度嘅預設內容。試吓包含任何嘅憑據。
-	而且你係肯定你係可以發佈呢啲資料。你嘅名可以透過[[Special:Preferences]]改到。",
-	'requestaccount-real'     => '真名:',
-	'requestaccount-same'     => '(同真名一樣)',
-	'requestaccount-email'    => '電郵地址:',
-	'requestaccount-bio'      => '個人傳記:',
-	'requestaccount-notes'    => '附加註解:',
-	'requestaccount-urls'     => '網站一覽，如有者 (用新行分開):',
-	'requestaccount-agree'    => '你一定要證明到你個真名係啱嘅，而且你同意我哋嘅服務細則。',
-	'requestaccount-inuse'    => '個用戶名已經用來請求緊個戶口。',
-	'requestaccount-tooshort' => '你嘅傳記一定要最少有$1個字長。',
-	'requestaccount-tos'      => '我已經讀咗同埋同意持續遵守{{SITENAME}}嘅服務細則。',
-	'requestaccount-correct'  => '我證明我響"真名"度指定嘅名係我自己實際上嘅真名。',
-	'requestaccount-submit'    => '請求戶口',
-	'requestaccount-sent'     => '你個戶口請求已經成功發出，現正等候複審。',
-	'request-account-econf'   => '你嘅電郵地址已經確認，將會響你嘅戶口請求度列示。',
-	'requestaccount-email-subj' => '{{SITENAME}}電郵地址確認',
-	'requestaccount-email-body' => '有人，可能係你，由IP地址$1，響{{SITENAME}}度用呢個電郵地址請求一個叫做"$2"嘅戶口。
+	'requestaccount-bio-text'    => '你嘅傳記將會設定做響你用戶頁度嘅預設內容。試吓包含任何嘅憑據。
+	而且你係肯定你係可以發佈呢啲資料。你嘅名可以透過[[Special:Preferences]]改到。',
+	'requestaccount-real'        => '真名:',
+	'requestaccount-same'        => '(同真名一樣)',
+	'requestaccount-email'       => '電郵地址:',
+	'requestaccount-bio'         => '個人傳記:',
+	'requestaccount-notes'       => '附加註解:',
+	'requestaccount-urls'        => '網站一覽，如有者 (用新行分開):',
+	'requestaccount-agree'       => '你一定要證明到你個真名係啱嘅，而且你同意我哋嘅服務細則。',
+	'requestaccount-inuse'       => '個用戶名已經用來請求緊個戶口。',
+	'requestaccount-tooshort'    => '你嘅傳記一定要最少有$1個字長。',
+	'requestaccount-tos'         => '我已經讀咗同埋同意持續遵守{{SITENAME}}嘅服務細則。',
+	'requestaccount-submit'      => '請求戶口',
+	'requestaccount-sent'        => '你個戶口請求已經成功發出，現正等候複審。',
+	'request-account-econf'      => '你嘅電郵地址已經確認，將會響你嘅戶口請求度列示。',
+	'requestaccount-email-subj'  => '{{SITENAME}}電郵地址確認',
+	'requestaccount-email-body'  => '有人，可能係你，由IP地址$1，響{{SITENAME}}度用呢個電郵地址請求一個叫做"$2"嘅戶口。
 
 去確認呢個戶口真係屬於響{{SITENAME}}上面嘅你，就響你嘅瀏覽器度開呢個連結:
 
@@ -5846,51 +5882,41 @@ $3
 
 如果個戶口開咗，只有你先至會收到個電郵密碼。如果呢個戶口*唔係*你嘅話，唔好撳個連結。 
 呢個確認碼將會響$4過期。',
-
-	'acct_request_throttle_hit' => "對唔住，你已經請求咗$1個戶口。你唔可以請求更多個戶口。",
-	
-	# Add to Special:Login
-	'requestaccount-loginnotice' => '要拎一個用戶戶口，你一定要\'\'\'[[Special:RequestAccount|請求一個]]\'\'\'。',
-	
-	# Confirm account page
-	'confirmaccounts'       => '確認戶口請求', 
-	'confirmaccount-list'    => '下面係等緊批准嘅用戶請求一覽。 
+	'acct_request_throttle_hit'  => '對唔住，你已經請求咗$1個戶口。你唔可以請求更多個戶口。',
+	'requestaccount-loginnotice' => "要拎一個用戶戶口，你一定要'''[[Special:RequestAccount|請求一個]]'''。",
+	'confirmaccounts'            => '確認戶口請求',
+	'confirmaccount-list'        => '下面係等緊批准嘅用戶請求一覽。 
 	已經批准嘅戶口將會建立同埋響呢個表度拎走。拒絕咗嘅用戶將會就噉響呢個表度拎走。',
-	'confirmaccount-list2'    => '下面係一個先前拒絕過嘅戶口請求，可能會響幾日之後刪除。
+	'confirmaccount-list2'       => '下面係一個先前拒絕過嘅戶口請求，可能會響幾日之後刪除。
 	佢哋仍舊可以批准去開一個戶口，但係響你做之前請問吓拒絕嘅管理員先。',
-	'confirmaccount-text'    => '呢個係響\'\'\'{{SITENAME}}\'\'\'度等候請求戶口嘅一版。
+	'confirmaccount-text'        => "呢個係響'''{{SITENAME}}'''度等候請求戶口嘅一版。
 	請小心去睇過，有需要嘅話，就要確認埋佢下面全部嘅資料。
 	要留意嘅係你可以用另一個用戶名去開一個戶口。只係同其他嘅名有衝突嗰陣先至去做。
 	
-	如果你無確認或者拒絕呢個請求，就噉留低呢版嘅話，佢就會維持等候狀態。',
-	'confirmaccount-none'    => '現時無未決定嘅請求。',
-	'confirmaccount-none2'   => '現時無最近拒絕嘅戶口請求。',
-	'confirmaccount-badid'  => '提供嘅ID係無未決定嘅請求。佢可能已經被處理咗。',
-	'confirmaccount-back'   => '去睇未決定嘅戶口一覽',
-	'confirmaccount-back2'  => '去睇先前拒絕咗嘅戶口一覽',
-	'confirmaccount-name'   => '用戶名',
-	'confirmaccount-real'   => '名',
-	'confirmaccount-email'  => '電郵',
-	'confirmaccount-bio'    => '傳記',
-	'confirmaccount-urls'   => '網站一覽:',
-	'confirmaccount-nourls' => '(無提供)',
-	'confirmaccount-review' => '批准/拒絕',
-	'confirmaccount-confirm' => '用下面嘅掣去批准或拒絕呢個請求。',
-	'confirmaccount-econf'  => '(已批准)',
-	'confirmaccount-reject' => '(響$2被[[User:$1|$1]]拒絕)',
-	'confirmaccount-create'  => '接受 (開戶口)',
-	'confirmaccount-deny'    => '拒絕 (反列示)',
-	'confirmaccount-reason' => '註解 (會用響封電郵度):',
-	'confirmaccount-submit'  => '確認',
-	'confirmaccount-acc'    => '戶口請求已經成功噉確認；開咗一個新嘅用戶戶口[[User:$1]]。',
-	'confirmaccount-rej'    => '戶口請求已經成功噉拒絕。',
-	'confirmaccount-summary' => '開緊一個新用戶擁有傳記嘅用戶頁。',
-	'confirmaccount-welc'   => "'''歡迎來到''{{SITENAME}}''！'''我哋希望你會作出更多更好的貢獻。 
+	如果你無確認或者拒絕呢個請求，就噉留低呢版嘅話，佢就會維持等候狀態。",
+	'confirmaccount-review'      => '批准/拒絕',
+	'confirmaccount-badid'       => '提供嘅ID係無未決定嘅請求。佢可能已經被處理咗。',
+	'confirmaccount-name'        => '用戶名',
+	'confirmaccount-real'        => '名',
+	'confirmaccount-email'       => '電郵',
+	'confirmaccount-bio'         => '傳記',
+	'confirmaccount-urls'        => '網站一覽:',
+	'confirmaccount-confirm'     => '用下面嘅掣去批准或拒絕呢個請求。',
+	'confirmaccount-econf'       => '(已批准)',
+	'confirmaccount-reject'      => '(響$2被[[User:$1|$1]]拒絕)',
+	'confirmaccount-create'      => '接受 (開戶口)',
+	'confirmaccount-deny'        => '拒絕 (反列示)',
+	'confirmaccount-reason'      => '註解 (會用響封電郵度):',
+	'confirmaccount-submit'      => '確認',
+	'confirmaccount-acc'         => '戶口請求已經成功噉確認；開咗一個新嘅用戶戶口[[User:$1]]。',
+	'confirmaccount-rej'         => '戶口請求已經成功噉拒絕。',
+	'confirmaccount-summary'     => '開緊一個新用戶擁有傳記嘅用戶頁。',
+	'confirmaccount-welc'        => "'''歡迎來到''{{SITENAME}}''！'''我哋希望你會作出更多更好的貢獻。 
 	你可能會去睇吓[[{{MediaWiki:Helppage}}|開始]]。再一次歡迎你！ 
 	~~~~",
-	'confirmaccount-wsum'   => '歡迎！',
-	'confirmaccount-email-subj' => '{{SITENAME}}戶口請求',
-	'confirmaccount-email-body' => '你請求嘅戶口已經響{{SITENAME}}度批准咗。
+	'confirmaccount-wsum'        => '歡迎！',
+	'confirmaccount-email-subj'  => '{{SITENAME}}戶口請求',
+	'confirmaccount-email-body'  => '你請求嘅戶口已經響{{SITENAME}}度批准咗。
 
 戶口名: $1
 
@@ -5916,40 +5942,36 @@ $2
 響呢個網站度提供咗聯絡人一覽，你可以用去知道更多用戶戶口政策嘅資料。',
 );
 
+/** Simplified Chinese (‪中文(简体)‬) */
 $messages['zh-hans'] = array(
-	# Request account page
-	'requestaccount'          => '请求账户',
-	'requestaccount-text'      => '\'\'\'完成并递交以下的表格去请求一个用户账户\'\'\'。 
+	'requestaccount'             => '请求账户',
+	'requestaccount-text'        => "'''完成并递交以下的表格去请求一个用户账户'''。 
 	
 	请确认您在请求一个账户之前，先读过[[{{MediaWiki:Requestaccount-page}}|服务细则]]。
 	
-	一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:Userlogin]]中使用。',
-	'requestaccount-dup'      => '\'\'\'注意: 您已经登入成一个已注册的账户。\'\'\'',
-	'requestaccount-legend1'   => '用户账户',
-	'requestaccount-legend2'   => '个人资料',
-	'requestaccount-legend3'   => '其它资料',
-	'requestaccount-acc-text'  => '当完成请求时，一封确认信息会发到您的电邮地址。
+	一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:Userlogin]]中使用。",
+	'requestaccount-dup'         => "'''注意: 您已经登入成一个已注册的账户。'''",
+	'requestaccount-acc-text'    => '当完成请求时，一封确认信息会发到您的电邮地址。
 	请在该封电邮中点击确认连结去反应它。同时，当您的账户被创建后，您账户的个密码将会电邮给您。',
-	'requestaccount-ext-text'  => '以下的资料将会保密，而且只是会用在这次请求中。 
+	'requestaccount-ext-text'    => '以下的资料将会保密，而且只是会用在这次请求中。 
 	您可能需要列示联络资料，像电话号码等去帮助证明您的确认。',
-	'requestaccount-bio-text' => "您传记将会设置成在您用户页中的预设内容。尝试包含任何的凭据。
-	而且你是肯定您是可以发布这些资料。您的名字可以通过[[Special:Preferences]]更改。",
-	'requestaccount-real'     => '真实名字:',
-	'requestaccount-same'     => '(同真实名字)',
-	'requestaccount-email'    => '电邮地址:',
-	'requestaccount-bio'      => '个人传记:',
-	'requestaccount-notes'    => '附加注解:',
-	'requestaccount-urls'     => '网站列表，如有者 (以新行分开):',
-	'requestaccount-agree'    => '您一定要证明到您的真实名字是正确的，而且您同意我们的服务细则。',
-	'requestaccount-inuse'    => '该用户名已经用来请求账户。',
-	'requestaccount-tooshort' => '您的传记必须最少有$1个字的长度。',
-	'requestaccount-tos'      => '我已经阅读以及同意持续遵守{{SITENAME}}的服务细则。',
-	'requestaccount-correct'  => '我证明我在"真实名字"中指定的名是我自己实际上的真名。',
-	'requestaccount-submit'    => '请求账户',
-	'requestaccount-sent'     => '您的账户请求已经成功发出，现正等候复审。',
-	'request-account-econf'   => '您的电邮地址已经确认，将会在您的账户口请求中列示。',
-	'requestaccount-email-subj' => '{{SITENAME}}电邮地址确认',
-	'requestaccount-email-body' => '有人，可能是您，由IP地址$1，在{{SITENAME}}中用这个电邮地址请求一个名叫"$2"的账户。
+	'requestaccount-bio-text'    => '您传记将会设置成在您用户页中的预设内容。尝试包含任何的凭据。
+	而且你是肯定您是可以发布这些资料。您的名字可以通过[[Special:Preferences]]更改。',
+	'requestaccount-real'        => '真实名字:',
+	'requestaccount-same'        => '(同真实名字)',
+	'requestaccount-email'       => '电邮地址:',
+	'requestaccount-bio'         => '个人传记:',
+	'requestaccount-notes'       => '附加注解:',
+	'requestaccount-urls'        => '网站列表，如有者 (以新行分开):',
+	'requestaccount-agree'       => '您一定要证明到您的真实名字是正确的，而且您同意我们的服务细则。',
+	'requestaccount-inuse'       => '该用户名已经用来请求账户。',
+	'requestaccount-tooshort'    => '您的传记必须最少有$1个字的长度。',
+	'requestaccount-tos'         => '我已经阅读以及同意持续遵守{{SITENAME}}的服务细则。',
+	'requestaccount-submit'      => '请求账户',
+	'requestaccount-sent'        => '您的账户请求已经成功发出，现正等候复审。',
+	'request-account-econf'      => '您的电邮地址已经确认，将会在您的账户口请求中列示。',
+	'requestaccount-email-subj'  => '{{SITENAME}}电邮地址确认',
+	'requestaccount-email-body'  => '有人，可能是您，由IP地址$1，在{{SITENAME}}中用这个电邮地址请求一个名叫"$2"的账户。
 
 要确认这个户口真的属于在{{SITENAME}}上面?您，就在您的浏览器中度开启这个连结:
 
@@ -5957,51 +5979,41 @@ $3
 
 如果该账户已经创建，只有您才会收到该电邮密码。如果这个账户*不是*属于您的话，不要点击这个连结。 
 呢个确认码将会响$4过期。',
-
-	'acct_request_throttle_hit' => "抱歉，您已经请求了$1个户口。您不可以请求更多个账户。",
-	
-	# Add to Special:Login
-	'requestaccount-loginnotice' => '要取得个用户账户，您一定要\'\'\'[[Special:RequestAccount|请求一个]]\'\'\'。',
-	
-	# Confirm account page
-	'confirmaccounts'       => '确认户口请求', 
-	'confirmaccount-list'    => '以下是正在等候批准的用户请求列表。 
+	'acct_request_throttle_hit'  => '抱歉，您已经请求了$1个户口。您不可以请求更多个账户。',
+	'requestaccount-loginnotice' => "要取得个用户账户，您一定要'''[[Special:RequestAccount|请求一个]]'''。",
+	'confirmaccounts'            => '确认户口请求',
+	'confirmaccount-list'        => '以下是正在等候批准的用户请求列表。 
 	已经批准的账户将会创建以及在这个列表中移除。已拒绝的用户将只会在这个表中移除。',
-	'confirmaccount-list2'   => '以下是一个先前拒绝过的帐口请求，可能会在数日后删除。
+	'confirmaccount-list2'       => '以下是一个先前拒绝过的帐口请求，可能会在数日后删除。
 	它们仍旧可以批准创建一个账户，但是在您作之前请先问拒绝该账户的管理员。',
-	'confirmaccount-text'    => '这个是在\'\'\'{{SITENAME}}\'\'\'中等候请求账户的页面。
+	'confirmaccount-text'        => "这个是在'''{{SITENAME}}'''中等候请求账户的页面。
 	请小心阅读，有需要的话，就要同时确认它下面的全部资料。
 	要留意的是您可以用另一个用户名字去创建一个账户。只有其他的名字有冲突时才需要去作。
 	
-	如果你无确认或者拒绝这个请求，只留下这页面的话，它便会维持等候状态。',
-	'confirmaccount-none'    => '现时没有未决定的请求。',
-	'confirmaccount-none2'   => '现时没有最近拒绝的账户请求。',
-	'confirmaccount-badid'  => '提供的ID是没有未决定的请求。它可能已经被处理。',
-	'confirmaccount-back'   => '查看未决定的账户列表',
-	'confirmaccount-back2'  => '查看先前拒绝过的账户列表',
-	'confirmaccount-name'   => '用户名字',
-	'confirmaccount-real'   => '名字',
-	'confirmaccount-email'  => '电邮',
-	'confirmaccount-bio'    => '传记',
-	'confirmaccount-urls'   => '网站列表:',
-	'confirmaccount-nourls' => '(没有提供)',
-	'confirmaccount-review' => '批准/拒绝',
-	'confirmaccount-confirm' => '用以下的按钮去批准或拒绝这个请求。',
-	'confirmaccount-econf'  => '(已批准)',
-	'confirmaccount-reject' => '(于$2被[[User:$1|$1]]拒绝)',
-	'confirmaccount-create'  => '接受 (创建账户)',
-	'confirmaccount-deny'    => '拒绝 (反列示)',
-	'confirmaccount-reason' => '注解 (在电邮中使用):',
-	'confirmaccount-submit'  => '确认',
-	'confirmaccount-acc'    => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
-	'confirmaccount-rej'    => '账户请求已经成功拒绝。',
-	'confirmaccount-summary' => '正在创建一个新用户拥有传记的用户页面。',
-	'confirmaccount-welc'   => "'''欢迎来到''{{SITENAME}}''！'''我们希望您会作出更多更好的贡献。 
+	如果你无确认或者拒绝这个请求，只留下这页面的话，它便会维持等候状态。",
+	'confirmaccount-review'      => '批准/拒绝',
+	'confirmaccount-badid'       => '提供的ID是没有未决定的请求。它可能已经被处理。',
+	'confirmaccount-name'        => '用户名字',
+	'confirmaccount-real'        => '名字',
+	'confirmaccount-email'       => '电邮',
+	'confirmaccount-bio'         => '传记',
+	'confirmaccount-urls'        => '网站列表:',
+	'confirmaccount-confirm'     => '用以下的按钮去批准或拒绝这个请求。',
+	'confirmaccount-econf'       => '(已批准)',
+	'confirmaccount-reject'      => '(于$2被[[User:$1|$1]]拒绝)',
+	'confirmaccount-create'      => '接受 (创建账户)',
+	'confirmaccount-deny'        => '拒绝 (反列示)',
+	'confirmaccount-reason'      => '注解 (在电邮中使用):',
+	'confirmaccount-submit'      => '确认',
+	'confirmaccount-acc'         => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
+	'confirmaccount-rej'         => '账户请求已经成功拒绝。',
+	'confirmaccount-summary'     => '正在创建一个新用户拥有传记的用户页面。',
+	'confirmaccount-welc'        => "'''欢迎来到''{{SITENAME}}''！'''我们希望您会作出更多更好的贡献。 
 	您可能会去参看[[{{MediaWiki:Helppage}}|开始]]。再一次欢迎你！ 
 	~~~~",
-	'confirmaccount-wsum'   => '欢迎！',
-	'confirmaccount-email-subj' => '{{SITENAME}}账户请求',
-	'confirmaccount-email-body' => '您请求的账户已经在{{SITENAME}}中批准。
+	'confirmaccount-wsum'        => '欢迎！',
+	'confirmaccount-email-subj'  => '{{SITENAME}}账户请求',
+	'confirmaccount-email-body'  => '您请求的账户已经在{{SITENAME}}中批准。
 
 账户名称: $1
 
@@ -6027,40 +6039,36 @@ $2
 在这个网站中度提供了联络人列表，您可以用去知道更多用户账户方针的资料。',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬) */
 $messages['zh-hant'] = array(
-	# Request account page
-	'requestaccount'          => '請求帳戶',
-	'requestaccount-text'      => '\'\'\'完成並遞交以下的表格去請求一個用戶帳戶\'\'\'。 
+	'requestaccount'             => '請求帳戶',
+	'requestaccount-text'        => "'''完成並遞交以下的表格去請求一個用戶帳戶'''。 
 	
 	請確認您在請求一個帳戶之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。
 	
-	一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:Userlogin]]中使用。',
-	'requestaccount-dup'      => '\'\'\'注意: 您已經登入成一個已註冊的帳戶。\'\'\'',
-	'requestaccount-legend1'   => '用戶帳戶',
-	'requestaccount-legend2'   => '個人資料',
-	'requestaccount-legend3'   => '其它資料',
-	'requestaccount-acc-text'  => '當完成請求時，一封確認訊息會發到您的電郵地址。
+	一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:Userlogin]]中使用。",
+	'requestaccount-dup'         => "'''注意: 您已經登入成一個已註冊的帳戶。'''",
+	'requestaccount-acc-text'    => '當完成請求時，一封確認訊息會發到您的電郵地址。
 	請在該封電郵中點擊確認連結去回應它。同時，當您的帳戶被創建後，您帳戶的個密碼將會電郵給您。',
-	'requestaccount-ext-text'  => '以下的資料將會保密，而且只是會用在這次請求中。 
+	'requestaccount-ext-text'    => '以下的資料將會保密，而且只是會用在這次請求中。 
 	您可能需要列示聯絡資料，像電話號碼等去幫助證明您的確認。',
-	'requestaccount-bio-text' => "您傳記將會設定成在您用戶頁中的預設內容。嘗試包含任何的憑據。
-	而且你是肯定您是可以發佈這些資料。您的名字可以透過[[Special:Preferences]]更改。",
-	'requestaccount-real'     => '真實名字:',
-	'requestaccount-same'     => '(同真實名字)',
-	'requestaccount-email'    => '電郵地址:',
-	'requestaccount-bio'      => '個人傳記:',
-	'requestaccount-notes'    => '附加註解:',
-	'requestaccount-urls'     => '網站列表，如有者 (以新行分開):',
-	'requestaccount-agree'    => '您一定要證明到您的真實名字是正確的，而且您同意我們的服務細則。',
-	'requestaccount-inuse'    => '該用戶名已經用來請求帳戶。',
-	'requestaccount-tooshort' => '您的傳記必須最少有$1個字的長度。',
-	'requestaccount-tos'      => '我已經閱讀以及同意持續遵守{{SITENAME}}的服務細則。',
-	'requestaccount-correct'  => '我證明我在"真實名字"中指定的名是我自己實際上的真名。',
-	'requestaccount-submit'    => '請求帳戶',
-	'requestaccount-sent'     => '您的帳戶請求已經成功發出，現正等候複審。',
-	'request-account-econf'   => '您的電郵地址已經確認，將會在您的帳戶口請求中列示。',
-	'requestaccount-email-subj' => '{{SITENAME}}電郵地址確認',
-	'requestaccount-email-body' => '有人，可能是您，由IP地址$1，在{{SITENAME}}中用這個電郵地址請求一個名叫"$2"的帳戶。
+	'requestaccount-bio-text'    => '您傳記將會設定成在您用戶頁中的預設內容。嘗試包含任何的憑據。
+	而且你是肯定您是可以發佈這些資料。您的名字可以透過[[Special:Preferences]]更改。',
+	'requestaccount-real'        => '真實名字:',
+	'requestaccount-same'        => '(同真實名字)',
+	'requestaccount-email'       => '電郵地址:',
+	'requestaccount-bio'         => '個人傳記:',
+	'requestaccount-notes'       => '附加註解:',
+	'requestaccount-urls'        => '網站列表，如有者 (以新行分開):',
+	'requestaccount-agree'       => '您一定要證明到您的真實名字是正確的，而且您同意我們的服務細則。',
+	'requestaccount-inuse'       => '該用戶名已經用來請求帳戶。',
+	'requestaccount-tooshort'    => '您的傳記必須最少有$1個字的長度。',
+	'requestaccount-tos'         => '我已經閱讀以及同意持續遵守{{SITENAME}}的服務細則。',
+	'requestaccount-submit'      => '請求帳戶',
+	'requestaccount-sent'        => '您的帳戶請求已經成功發出，現正等候複審。',
+	'request-account-econf'      => '您的電郵地址已經確認，將會在您的帳戶口請求中列示。',
+	'requestaccount-email-subj'  => '{{SITENAME}}電郵地址確認',
+	'requestaccount-email-body'  => '有人，可能是您，由IP地址$1，在{{SITENAME}}中用這個電郵地址請求一個名叫"$2"的帳戶。
 
 要確認這個戶口真的屬於在{{SITENAME}}上面嘅您，就在您的瀏覽器中度開啟這個連結:
 
@@ -6068,51 +6076,41 @@ $3
 
 如果該帳戶已經創建，只有您才會收到該電郵密碼。如果這個帳戶*不是*屬於您的話，不要點擊這個連結。 
 呢個確認碼將會響$4過期。',
-
-	'acct_request_throttle_hit' => "抱歉，您已經請求了$1個戶口。您不可以請求更多個帳戶。",
-	
-	# Add to Special:Login
-	'requestaccount-loginnotice' => '要取得個用戶帳戶，您一定要\'\'\'[[Special:RequestAccount|請求一個]]\'\'\'。',
-	
-	# Confirm account page
-	'confirmaccounts'       => '確認戶口請求', 
-	'confirmaccount-list'    => '以下是正在等候批准的用戶請求列表。 
+	'acct_request_throttle_hit'  => '抱歉，您已經請求了$1個戶口。您不可以請求更多個帳戶。',
+	'requestaccount-loginnotice' => "要取得個用戶帳戶，您一定要'''[[Special:RequestAccount|請求一個]]'''。",
+	'confirmaccounts'            => '確認戶口請求',
+	'confirmaccount-list'        => '以下是正在等候批准的用戶請求列表。 
 	已經批准的帳戶將會創建以及在這個列表中移除。已拒絕的用戶將只會在這個表中移除。',
-	'confirmaccount-list2'   => '以下是一個先前拒絕過的帳口請求，可能會在數日後刪除。
+	'confirmaccount-list2'       => '以下是一個先前拒絕過的帳口請求，可能會在數日後刪除。
 	它們仍舊可以批准創建一個帳戶，但是在您作之前請先問拒絕該帳戶的管理員。',
-	'confirmaccount-text'    => '這個是在\'\'\'{{SITENAME}}\'\'\'中等候請求帳戶的頁面。
+	'confirmaccount-text'        => "這個是在'''{{SITENAME}}'''中等候請求帳戶的頁面。
 	請小心閱讀，有需要的話，就要同時確認它下面的全部資料。
 	要留意的是您可以用另一個用戶名字去創建一個帳戶。只有其他的名字有衝突時才需要去作。
 	
-	如果你無確認或者拒絕這個請求，只留下這頁面的話，它便會維持等候狀態。',
-	'confirmaccount-none'    => '現時沒有未決定的請求。',
-	'confirmaccount-none2'   => '現時沒有最近拒絕的帳戶請求。',
-	'confirmaccount-badid'  => '提供的ID是沒有未決定的請求。它可能已經被處理。',
-	'confirmaccount-back'   => '檢視未決定的帳戶列表',
-	'confirmaccount-back2'  => '檢視先前拒絕過的帳戶列表',
-	'confirmaccount-name'   => '用戶名字',
-	'confirmaccount-real'   => '名字',
-	'confirmaccount-email'  => '電郵',
-	'confirmaccount-bio'    => '傳記',
-	'confirmaccount-urls'   => '網站列表:',
-	'confirmaccount-nourls' => '(沒有提供)',
-	'confirmaccount-review' => '批准/拒絕',
-	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。',
-	'confirmaccount-econf'  => '(已批准)',
-	'confirmaccount-reject' => '(於$2被[[User:$1|$1]]拒絕)',
-	'confirmaccount-create'  => '接受 (創建帳戶)',
-	'confirmaccount-deny'    => '拒絕 (反列示)',
-	'confirmaccount-reason' => '註解 (在電郵中使用):',
-	'confirmaccount-submit'  => '確認',
-	'confirmaccount-acc'    => '帳戶請求已經成功確認；已經創建一個新的用戶帳號[[User:$1]]。',
-	'confirmaccount-rej'    => '帳戶請求已經成功拒絕。',
-	'confirmaccount-summary' => '正在創建一個新用戶擁有傳記的用戶頁面。',
-	'confirmaccount-welc'   => "'''歡迎來到''{{SITENAME}}''！'''我們希望您會作出更多更好嘅貢獻。 
+	如果你無確認或者拒絕這個請求，只留下這頁面的話，它便會維持等候狀態。",
+	'confirmaccount-review'      => '批准/拒絕',
+	'confirmaccount-badid'       => '提供的ID是沒有未決定的請求。它可能已經被處理。',
+	'confirmaccount-name'        => '用戶名字',
+	'confirmaccount-real'        => '名字',
+	'confirmaccount-email'       => '電郵',
+	'confirmaccount-bio'         => '傳記',
+	'confirmaccount-urls'        => '網站列表:',
+	'confirmaccount-confirm'     => '用以下的按鈕去批准或拒絕這個請求。',
+	'confirmaccount-econf'       => '(已批准)',
+	'confirmaccount-reject'      => '(於$2被[[User:$1|$1]]拒絕)',
+	'confirmaccount-create'      => '接受 (創建帳戶)',
+	'confirmaccount-deny'        => '拒絕 (反列示)',
+	'confirmaccount-reason'      => '註解 (在電郵中使用):',
+	'confirmaccount-submit'      => '確認',
+	'confirmaccount-acc'         => '帳戶請求已經成功確認；已經創建一個新的用戶帳號[[User:$1]]。',
+	'confirmaccount-rej'         => '帳戶請求已經成功拒絕。',
+	'confirmaccount-summary'     => '正在創建一個新用戶擁有傳記的用戶頁面。',
+	'confirmaccount-welc'        => "'''歡迎來到''{{SITENAME}}''！'''我們希望您會作出更多更好嘅貢獻。 
 	您可能會去參看[[{{MediaWiki:Helppage}}|開始]]。再一次歡迎你！ 
 	~~~~",
-	'confirmaccount-wsum'   => '歡迎！',
-	'confirmaccount-email-subj' => '{{SITENAME}}帳戶請求',
-	'confirmaccount-email-body' => '您請求的帳戶已經在{{SITENAME}}中批准。
+	'confirmaccount-wsum'        => '歡迎！',
+	'confirmaccount-email-subj'  => '{{SITENAME}}帳戶請求',
+	'confirmaccount-email-body'  => '您請求的帳戶已經在{{SITENAME}}中批准。
 
 帳戶名稱: $1
 
