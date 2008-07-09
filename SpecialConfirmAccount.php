@@ -106,6 +106,7 @@ $wgConfirmAccountNotice = true;
 
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
+$wgExtensionAliasesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.alias.php';
 
 function efAddRequestLoginText( &$template ) {
 	global $wgUser;
