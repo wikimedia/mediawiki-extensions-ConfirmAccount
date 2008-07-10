@@ -11,12 +11,19 @@ $aliases = array();
  * @author Jon Harald Søby
  */
 $aliases['en'] = array(
-    'ConfirmAccount'            => array('ConfirmAccount')
+    'ConfirmAccount' => array( 'ConfirmAccount' ),
+);
+
+/** Hebrew (עברית)
+ * @author Rotem Liss
+ */
+$aliases['he'] = array(
+    'ConfirmAccount' => array( 'אישור_חשבון' ),
 );
 
 /** Norwegian (Norsk (bokmål))
  * @author Jon Harald Søby
  */
 $aliases['no'] = array(
-    'ConfirmAccount'            => array('Bekreft_konto')
+    'ConfirmAccount' => array( 'Bekreft_konto' )
 );
