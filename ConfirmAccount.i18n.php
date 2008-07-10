@@ -2602,8 +2602,11 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'confirmaccount-name'  => 'Nomine de usator',
-	'usercredentials-user' => 'Nomine de usator:',
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-name'    => 'Nomine de usator',
+	'confirmaccount-email'   => 'E-mail:',
+	'usercredentials-user'   => 'Nomine de usator:',
+	'usercredentials-email'  => 'E-mail:',
 );
 
 /** Indonesian (Bahasa Indonesia)
