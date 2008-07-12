@@ -331,6 +331,7 @@ $messages['ar'] = array(
 	'requestaccount-reqtype'          => 'الموضع:',
 	'requestaccount-level-0'          => 'مؤلف',
 	'requestaccount-level-1'          => 'محرر',
+	'requestaccount-info'             => '(؟)',
 	'requestaccount-bio'              => 'السيرة الشخصية:',
 	'requestaccount-attach'           => 'استكمال أو السيرة الذاتية (اختياري):',
 	'requestaccount-notes'            => 'ملاحظات إضافية:',
@@ -1463,6 +1464,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  * @author Urhixidur
  * @author Meithal
  * @author SPQRobin
+ * @author Louperivois
  */
 $messages['fr'] = array(
 	'requestaccount'                  => 'Demande de compte utilisateur',
@@ -1489,7 +1491,7 @@ $messages['fr'] = array(
 	'requestaccount-reqtype'          => 'Situation :',
 	'requestaccount-level-0'          => 'auteur',
 	'requestaccount-level-1'          => 'éditeur',
-	'requestaccount-bio'              => 'Biographie personnelle:',
+	'requestaccount-bio'              => 'Biographie personnelle :',
 	'requestaccount-attach'           => 'CV/Résumé (facultatif)',
 	'requestaccount-notes'            => 'Notes supplémentaires :',
 	'requestaccount-urls'             => "Liste des sites Web. S'il y en a plusieurs, séparez-les par un saut de ligne :",
@@ -1520,7 +1522,7 @@ L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $
 	'requestaccount-loginnotice'      => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
 	'confirmaccount-newrequests'      => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
 	'confirmaccounts'                 => 'Demande de confirmation de comptes',
-	'confirmedit-desc'                => 'Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs.',
+	'confirmedit-desc'                => 'Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs',
 	'confirmaccount-maintext'         => "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.
 
 Chaque demande de compte utilisateur consiste en trois sous-listes : une pour les demandes non traitées, une pour les comptes réservés dans l'attente de plus amples informations, et une dernière pour les comptes récemment rejetés.
@@ -1528,7 +1530,7 @@ Chaque demande de compte utilisateur consiste en trois sous-listes : une pour le
 Lors de la réponse à une demande, vérifiez-la attentivement et, le cas échéant, confirmez les informations qui y sont mentionnées. Vos actions seront inscrites séparément dans un journal. Vous devez aussi vérifier l'activité sur {{SITENAME}} en plus de la vôtre.",
 	'confirmaccount-list'             => 'Voici, ci-dessous, la liste des comptes en attente d’approbation. Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront supprimés de cette même liste.',
 	'confirmaccount-list2'            => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
-	'confirmaccount-list3'            => 'Ci dessous se trouve une liste de comptes expirés qui pourraient être automatiquement supprimées après quelques jours. Ils peuvent encore être approuvés.',
+	'confirmaccount-list3'            => 'Ci-dessous se trouve une liste de comptes expirés qui pourraient être automatiquement supprimés après quelques jours. Ils peuvent encore être approuvés.',
 	'confirmaccount-text'             => "Voici une demande en cours pour un compte utilisateur sur '''{{SITENAME}}'''.
 
 Vérifiez soigneusement toutes les informations ci-dessous. Si vous approuvez cette demande, sélectionnez la situation à donner à l'utilisateur. Les changements apportés aux biographies de l'application n'affecteront pas les références permanentes déjà stockées.
@@ -1593,9 +1595,8 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-rej'              => 'La demande a été rejetée avec succès.',
 	'confirmaccount-viewing'          => "(actuellement en train d'être visionné par [[User:$1|$1]])",
 	'confirmaccount-summary'          => 'Création de la page utilisateur avec sa biographie.',
-	'confirmaccount-welc'             => "'''Bienvenue sur ''{{SITENAME}}'' !''' Nous espérons que vous contribuerez beaucoup et bien. 
-	Vous désirerez, peut-être, lire [[{{MediaWiki:Helppage}}|comment bien débuter]]. Bienvenue encore et bonne contributions.
-	~~~~",
+	'confirmaccount-welc'             => "'''Bienvenue sur ''{{SITENAME}}'' !''' Nous espérons que vous contribuerez beaucoup et bien. Vous désirerez, peut-être, lire [[{{MediaWiki:Helppage}}|comment bien débuter]]. Bienvenue encore et bonne contribution.
+<nowiki>~~~~</nowiki>",
 	'confirmaccount-wsum'             => 'Bienvenue !',
 	'confirmaccount-email-subj'       => '{{SITENAME}} demande de compte',
 	'confirmaccount-email-body'       => 'Votre demande de compte a été acceptée sur {{SITENAME}}.
@@ -1604,7 +1605,7 @@ Nom du compte utilisateur : $1
 
 Mot de passe : $2
 
-Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connectez, allez sur
+Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body2'      => 'Votre demande de compte utilisateur a été acceptée sur {{SITENAME}}.
 
@@ -1614,7 +1615,7 @@ Mot de passe: $2
 
 $3
 
-Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connectez, allez sur 
+Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur 
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3'      => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
