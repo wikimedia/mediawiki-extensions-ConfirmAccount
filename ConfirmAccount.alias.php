@@ -38,7 +38,7 @@ $aliases['fr'] = array(
  * @author Rotem Liss
  */
 $aliases['he'] = array(
-    'ConfirmAccount' => array( 'אישור_חשבון' ),
+	'ConfirmAccount' => array( 'אישור_חשבון' ),
 );
 
 /** Croatian (Hrvatski) */
@@ -66,10 +66,10 @@ $aliases['nl'] = array(
 	'ConfirmAccount' => array( 'GebruikerBevestigen' ),
 );
 
-/** Norwegian (Norsk (bokmål))
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $aliases['no'] = array(
-    'ConfirmAccount' => array( 'Bekreft_konto' )
+	'ConfirmAccount' => array( 'Bekreft_konto' ),
 );
 
