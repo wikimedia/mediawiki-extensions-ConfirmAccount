@@ -56,6 +56,11 @@ $aliases['hu'] = array(
 	'ConfirmAccount' => array( 'Felhasználói fiók megerősítése' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$aliases['lb'] = array(
+	'ConfirmAccount' => array( 'Benotzerkont confirméieren' ),
+);
+
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
 	'ConfirmAccount' => array( 'Sahkan_akaun', 'Mengesahkan_akaun' ),
