@@ -2727,6 +2727,14 @@ $messages['is'] = array(
 	'usercredentials-member'     => 'Réttindi:',
 );
 
+/** Italian (Italiano)
+ * @author Pietrodn
+ */
+$messages['it'] = array(
+	'confirmaccount-name'  => 'Nome utente',
+	'usercredentials-user' => 'Nome utente:',
+);
+
 /** Japanese (日本語)
  * @author JtFuruhata
  */
