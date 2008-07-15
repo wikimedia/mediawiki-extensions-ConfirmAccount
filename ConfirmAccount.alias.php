@@ -78,3 +78,8 @@ $aliases['no'] = array(
 	'ConfirmAccount' => array( 'Bekreft_konto' ),
 );
 
+/** Swedish (Svenska) */
+$aliases['sv'] = array(
+	'ConfirmAccount' => array( 'Bekräfta konto' ),
+);
+
