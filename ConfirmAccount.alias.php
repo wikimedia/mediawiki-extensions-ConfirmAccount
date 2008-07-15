@@ -83,3 +83,8 @@ $aliases['sv'] = array(
 	'ConfirmAccount' => array( 'Bekräfta konto' ),
 );
 
+/** Thai (ไทย) */
+$aliases['th'] = array(
+	'ConfirmAccount' => array( 'ยืนยันบัญชีผู้ใช้' ),
+);
+
