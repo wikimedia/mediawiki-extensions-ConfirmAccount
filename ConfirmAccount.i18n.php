@@ -2638,9 +2638,11 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
  * @author McDutchie
  */
 $messages['ia'] = array(
+	'requestaccount-level-0' => 'autor',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-name'    => 'Nomine de usator',
 	'confirmaccount-email'   => 'E-mail:',
+	'confirmaccount-pos-0'   => 'autor',
 	'usercredentials-user'   => 'Nomine de usator:',
 	'usercredentials-email'  => 'E-mail:',
 );
