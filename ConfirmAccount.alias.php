@@ -34,6 +34,11 @@ $aliases['fr'] = array(
 	'ConfirmAccount' => array( 'ConfirmerCompte', 'Confirmation compte', 'ConfirmationCompte' ),
 );
 
+/** Galician (Galego) */
+$aliases['gl'] = array(
+	'ConfirmAccount' => array( 'Confirmar a conta' ),
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
