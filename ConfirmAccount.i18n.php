@@ -84,7 +84,8 @@ You cannot make any more requests.",
 	'confirmedit-desc'        => 'Gives bureaucrats the ability to confirm account requests',
 	'confirmaccount-maintext' => '\'\'\'This page is used to confirm pending account requests at \'\'{{SITENAME}}\'\'\'\'\'.
 	
-Each account request queue consists of three subqueues, one for open request, one for those that have been put on hold by other administrators pending further information, and another for recently rejected requests.	
+Each account request queue consists of three subqueues.
+One for open request, one for those that have been put on hold by other administrators pending further information, and another for recently rejected requests.
 	
 When responding to a request, carefully review it and, if needed, confirm the information contain therein. 
 Your actions will be privately logged.
@@ -97,8 +98,10 @@ They can still be approved into accounts, though you may want to first consult t
 They can still be approved into accounts.',
 	'confirmaccount-text'     => 'This is a pending request for a user account at \'\'\'{{SITENAME}}\'\'\'. 
 	
-Carefully review the below information. If you are approving this request, use the position dropdown to set the account status of the user.
-Edits made to the application biography will not affect any permanent credential storage. Note that you can choose to create the account under a different username.
+Carefully review the below information.
+If you are approving this request, use the position dropdown to set the account status of the user.
+Edits made to the application biography will not affect any permanent credential storage.
+Note that you can choose to create the account under a different username.
 Use this only to avoid  collisions with other names.
 	
 If you simply leave this page without confirming or denying this request, it will remain pending.',
@@ -161,8 +164,10 @@ It may have already been handled.',
 	'confirmaccount-rej'     => 'Account request rejected successfully.',
 	'confirmaccount-viewing' => '(currently being viewed by [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
-	'confirmaccount-welc'    => "'''Welcome to ''{{SITENAME}}''!''' We hope you will contribute much and well. 
-You will probably want to read the [[{{MediaWiki:Helppage}}|help pages]]. Again, welcome and have fun!",
+	'confirmaccount-welc'    => "'''Welcome to ''{{SITENAME}}''!'''
+We hope you will contribute much and well. 
+You will probably want to read the [[{{MediaWiki:Helppage}}|help pages]].
+Again, welcome and have fun!",
 	'confirmaccount-wsum'    => 'Welcome!',
 	'confirmaccount-email-subj' => '{{SITENAME}} account request',
 	'confirmaccount-email-body' => 'Your request for an account has been approved on {{SITENAME}}.
