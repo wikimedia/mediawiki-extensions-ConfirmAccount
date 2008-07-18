@@ -741,6 +741,7 @@ $messages['ca'] = array(
 
 /** Czech (Česky)
  * @author Matěj Grabovský
+ * @author Siebrand
  */
 $messages['cs'] = array(
 	'requestaccount'             => 'Vyžádat účet',
@@ -811,10 +812,10 @@ Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší
 	'confirmaccount-none-p'      => '(neposkytnuté)',
 	'confirmaccount-confirm'     => 'Tlačítky níže můžete přijmout nebo odmítnout tuto žádost.',
 	'confirmaccount-econf'       => '(potvrzený)',
-	'confirmaccount-reject'      => '(zamítnul [[{{ns:User}}:$1|$1]] $2)',
+	'confirmaccount-reject'      => '(zamítnul [[User:$1|$1]] $2)',
 	'confirmaccount-rational'    => 'Zdůvodnění pro uchazeče:',
 	'confirmaccount-noreason'    => '(žádné)',
-	'confirmaccount-held'        => '(uživatel [[{{ns:User}}:$1|$1]] $2 označil jako „pozastavené“)',
+	'confirmaccount-held'        => '(uživatel [[User:$1|$1]] $2 označil jako „pozastavené“)',
 	'confirmaccount-create'      => 'Přijmout (vytvořit účet)',
 	'confirmaccount-deny'        => 'Odmítnout (odstranit žádost)',
 	'confirmaccount-hold'        => 'Pozastavit',
@@ -871,14 +872,15 @@ $messages['da'] = array(
  * @author Rrosenfeld
  * @author MF-Warburg
  * @author Raimond Spekking
+ * @author Siebrand
  */
 $messages['de'] = array(
 	'requestaccount'                  => 'Benutzerkonto beantragen',
 	'requestaccount-text'             => "'''Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen'''. 
 
-	Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor du ein Benutzerkonto beantragst.
+Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor du ein Benutzerkonto beantragst.
 
-	Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[{{ns:special}}:Userlogin|Anmelden]]“ einloggen.",
+Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich unter „[[Special:Userlogin|Anmelden]]“ einloggen.",
 	'requestaccount-page'             => '{{ns:project}}:Nutzungsbedingungen',
 	'requestaccount-dup'              => "'''Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.'''",
 	'requestaccount-leg-user'         => 'Benutzerkonto',
@@ -891,9 +893,9 @@ $messages['de'] = array(
 	'requestaccount-areas-text'       => 'Wähle die Themengebiete aus, in denen du das meiste Fachwissen hast oder wo du am meisten involviert sein wirst.',
 	'requestaccount-ext-text'         => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag
 	verwendet. Du kannst Kontakt-Angaben wie eine Telefonnummer machen, um die Bearbeitung deines Antrags zu vereinfachen.',
-	'requestaccount-bio-text'         => 'Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert. Versuche alle nötigen
-	Empfehlungen zu erwähnen, aber stelle sicher, dass du die Informationen auch wirklich veröffentlichen möchtest. Du kannst deinen
-	Namen unter „[[{{ns:special}}:preferences|Einstellungen]]“ ändern.',
+	'requestaccount-bio-text'         => 'Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert.
+Versuche alle nötigen Empfehlungen zu erwähnen, aber stelle sicher, dass du die Informationen auch wirklich veröffentlichen möchtest.
+Du kannst deinen Namen unter „[[Special:Preferences|Einstellungen]]“ ändern.',
 	'requestaccount-real'             => 'Realname:',
 	'requestaccount-same'             => '(wie der Realname)',
 	'requestaccount-email'            => 'E-Mail-Adresse:',
@@ -935,7 +937,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'requestaccount-email-body-admin' => '"$1" hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2".',
 	'acct_request_throttle_hit'       => 'Du hast bereits $1 Benutzerkonten beantragt, du kannst momentan keine weiteren beantragen.',
-	'requestaccount-loginnotice'      => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[{{ns:special}}:RequestAccount|beantragen]]'''.",
+	'requestaccount-loginnotice'      => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
 	'confirmaccount-newrequests'      => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge]]}} warten auf Bearbeitung.",
 	'confirmaccounts'                 => 'Benutzerkonto-Anträge bestätigen',
 	'confirmedit-desc'                => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
@@ -1005,7 +1007,7 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	'confirmaccount-submit'           => 'Abschicken',
 	'confirmaccount-needreason'       => 'Du musst eine Begründung eingeben.',
 	'confirmaccount-canthold'         => 'Dieser Antrag wurde bereits als „abwarten“ markiert oder gelöscht.',
-	'confirmaccount-acc'              => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[{{ns:User}}:$1]] wurde angelegt.',
+	'confirmaccount-acc'              => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[User:$1]] wurde angelegt.',
 	'confirmaccount-rej'              => 'Benutzerantrag wurde abgelehnt.',
 	'confirmaccount-viewing'          => '(wird aktuell angeschaut durch [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
@@ -1873,7 +1875,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-canthold'         => 'Esta solicitude está en espera ou foi borrada.',
 	'confirmaccount-acc'              => 'Confirmouse sen problemas a solicitude de conta; creouse a nova conta de usuario [[User:$1]].',
 	'confirmaccount-rej'              => 'Rexeitouse sen problemas a solicitude de conta.',
-	'confirmaccount-viewing'          => '(actualmente visto polo [[Usuario:$1|$1]])',
+	'confirmaccount-viewing'          => '(actualmente sendo visto por [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'A crear a páxina de usuario coa biografía do novo usuario.',
 	'confirmaccount-welc'             => "'''Reciba a benvida a ''{{SITENAME}}''!''' Esperamos que contribúa moito e ben.
 Quizais queira ler as [[{{MediaWiki:Helppage}}|páxinas de axuda]]. De novo, reciba a nosa benvida e divírtase!",
@@ -1997,6 +1999,7 @@ $messages['haw'] = array(
 /** Hebrew (עברית)
  * @author StuB
  * @author Rotemliss
+ * @author Siebrand
  */
 $messages['he'] = array(
 	'requestaccount'            => 'בקשת חשבון',
@@ -2009,7 +2012,7 @@ $messages['he'] = array(
 	'confirmaccount-submit'     => 'אישור',
 	'confirmaccount-needreason' => 'יש לספק סיבה בתיבת התגובה למטה.',
 	'confirmaccount-canthold'   => 'בקשה זו כבר נמצאת בהמתנה או מחוקה.',
-	'confirmaccount-acc'        => 'בקשת החשבון אושרה בהצלחה; נוצר חשבון משתמש חדש [[{{ns:user}}:$1]].',
+	'confirmaccount-acc'        => 'בקשת החשבון אושרה בהצלחה; נוצר חשבון משתמש חדש [[User:$1]].',
 	'confirmaccount-rej'        => 'בקשת החשבון נדחתה בהצלחה.',
 	'confirmaccount-viewing'    => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])',
 	'confirmaccount-summary'    => 'יצירת דף משתמש עם ביוגרפיה של משתמש חדש',
@@ -2275,14 +2278,15 @@ Provjerite je li ime točno napisano.',
 
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
+ * @author Siebrand
  */
 $messages['hsb'] = array(
 	'requestaccount'                  => 'Wužiwarske konto sej žadać',
 	'requestaccount-text'             => "'''Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał'''. 
 
-	Prošu přečitaj najprjedy [[{{MediaWiki:Requestaccount-page}}|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
+Prošu přečitaj najprjedy [[{{MediaWiki:Requestaccount-page}}|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
-Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a móžeš so pod \"[[{{ns:special}}:Userlogin|Konto wutworić abo so přizjewić]]\" přizjewić.",
+Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a móžeš so pod \"[[Special:Userlogin|Konto wutworić abo so přizjewić]]\" přizjewić.",
 	'requestaccount-page'             => '{{ns:project}}:Wužiwanske wuměnjenja',
 	'requestaccount-dup'              => "'''Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.'''",
 	'requestaccount-leg-user'         => 'Wužiwarske konto',
@@ -2292,7 +2296,9 @@ Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a mó�
 	'requestaccount-acc-text'         => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
 	'requestaccount-areas-text'       => 'Wubjer slědowace temowe wobwody, w kotrychž maš wěcywustojnosć abo chceš najwjace dźěła činić.',
 	'requestaccount-ext-text'         => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
-	'requestaccount-bio-text'         => 'Twoja biografija so jako spočatny wobsah twojeje wužiwarskeje strony składuje. Spytaj wšě trěbne doporučenja naspomnić, ale zawěsć, zo chceš te informacije woprawdźe wozjewić. Móžeš swoje wužiwarske mjeno pod "[[{{ns:special}}:Preferences|Nastajenja]]" změnić.',
+	'requestaccount-bio-text'         => 'Twoja biografija so jako spočatny wobsah twojeje wužiwarskeje strony składuje.
+Spytaj wšě trěbne doporučenja naspomnić, ale zawěsć, zo chceš te informacije woprawdźe wozjewić.
+Móžeš swoje wužiwarske mjeno pod "[[Special:Preferences|Nastajenja]]" změnić.',
 	'requestaccount-real'             => 'Woprawdźite mjeno:',
 	'requestaccount-same'             => '(kaž woprawdźite mjeno)',
 	'requestaccount-email'            => 'E-mejlowa adresa:',
@@ -2328,7 +2334,7 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'requestaccount-email-subj-admin' => 'Požadanje konta za {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" je konto požadał a čaka na potwjerdźenje. E-mejlowa adresa bu potwjerdźena. Móžeš požadanje tu "$2" potwjerdźić.',
 	'acct_request_throttle_hit'       => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
-	'requestaccount-loginnotice'      => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[{{ns:special}}:RequestAccount|prosyć]]'''.",
+	'requestaccount-loginnotice'      => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[Special:RequestAccount|prosyć]]'''.",
 	'confirmaccount-newrequests'      => "{{PLURAL:$1|Čaka|Čakatej|Čakaja|Čaka}} tuchwilu '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|kontowe požadanje]]|[[Special:ConfirmAccounts|kontowej požadani]]|[[Special:ConfirmAccounts|kontowe požadanja]]|[[Special:ConfirmAccountskontowych požadanjow]]}}.",
 	'confirmaccounts'                 => 'Kontowe požadanja potwjerdźić',
 	'confirmedit-desc'                => 'Dawa běrokratam móžnosć kontowe požadanja potwjerdźić',
@@ -2397,13 +2403,14 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-submit'           => 'Potwjerdźić',
 	'confirmaccount-needreason'       => 'Dyrbiš deleka w komentarowym polu přičinu podać.',
 	'confirmaccount-canthold'         => 'Tute požadanje je pak hižo čakanskej sekli pak wušmórnjene.',
-	'confirmaccount-acc'              => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[{{ns:User}}:$1]] bu wutworjene.',
+	'confirmaccount-acc'              => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[User:$1]] bu wutworjene.',
 	'confirmaccount-rej'              => 'Požadanje za kontom bu wotpokazane.',
 	'confirmaccount-viewing'          => '(wobhladuje so runje wot [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
-	'confirmaccount-welc'             => "'''Witaj do ''{{SITENAME}}''!''' Nadźijemy so, zo dodaš wjele dobrych přinoškow.
-	Snano chceš najprjedy [[Pomoc:Prěnje kroki|Prěnje kroki]] čitać. Hišće raz: Witaj a wjele wjesela! 
-	[[User:Michawiki|Michawiki]] 17:08, 24 September 2007 (UTC)",
+	'confirmaccount-welc'             => "'''Witaj do ''{{SITENAME}}''!'''
+Nadźijemy so, zo dodaš wjele dobrych přinoškow.
+Snano chceš najprjedy [[Pomoc:Prěnje kroki|Prěnje kroki]] čitać.
+Hišće raz: Witaj a wjele wjesela!",
 	'confirmaccount-wsum'             => 'Witaj!',
 	'confirmaccount-email-subj'       => '{{SITENAME}} Požadanje za wužiwarskim kontom',
 	'confirmaccount-email-body'       => 'Twoje požadanje za wužiwarskim kontom bu na {{SITENAME}} schwalene.
@@ -2747,6 +2754,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author JtFuruhata
+ * @author Siebrand
  */
 $messages['ja'] = array(
 	'requestaccount'                  => 'アカウント登録申請',
@@ -2754,7 +2762,7 @@ $messages['ja'] = array(
 
 アカウント申請を行う前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用条件]]をご一読下さい。
 
-申請が承認されると、通知メッセージと[[{{ns:Special}}:Userlogin|ログイン]]のためのアカウントが、あなたの電子メールアドレスへ送信されます。",
+申請が承認されると、通知メッセージと[[Special:Userlogin|ログイン]]のためのアカウントが、あなたの電子メールアドレスへ送信されます。",
 	'requestaccount-page'             => '{{ns:project}}:サービス利用条件',
 	'requestaccount-dup'              => "'''注: あなたは既に登録済みアカウントでログインしています。'''",
 	'requestaccount-leg-user'         => '利用者アカウント',
@@ -2768,7 +2776,7 @@ $messages['ja'] = array(
 	'requestaccount-bio-text'         => 'あなたの自己紹介は利用者ページの初期内容として登録されます。
 他の利用者から信頼が得られるよう心掛けてください。
 それは、あなたが気持ちよく投稿するために重要です。
-あなたの名前は [[{{ns:Special}}:Preferences|{{int:preferences}}]] から変更できます。',
+あなたの名前は [[Special:Preferences|{{int:preferences}}]] から変更できます。',
 	'requestaccount-real'             => '本名:',
 	'requestaccount-same'             => '（本名での登録に限定されます）',
 	'requestaccount-email'            => '電子メールアドレス:',
@@ -2804,7 +2812,7 @@ $3
 	'requestaccount-email-body-admin' => '"$1" によるアカウント申請が承認待ちになっています。
 申請電子メールアドレスは本人確認済みです。この申請への承認は、"$2"　から行うことができます。',
 	'acct_request_throttle_hit'       => '申し訳ありません、あなたは既に $1 というアカウントを申請済みです。これ以上の申請はできません。',
-	'requestaccount-loginnotice'      => "利用者アカウントの取得は、'''[[{{ns:special}}:RequestAccount|アカウント登録申請]]'''から行ってください。",
+	'requestaccount-loginnotice'      => "利用者アカウントの取得は、'''[[Special:RequestAccount|アカウント登録申請]]'''から行ってください。",
 	'confirmaccount-newrequests'      => "{{PLURAL:$1|現在|現在}}、'''$1個'''の{{PLURAL:$1|[[{{ns:special}}:ConfirmAccounts|アカウント申請]]|[[{{ns:special}}:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。",
 	'confirmaccounts'                 => 'アカウント登録申請の承認',
 	'confirmedit-desc'                => '{{int:group-bureaucrat}}にアカウント申請への承認機能を提供する',
@@ -2874,7 +2882,7 @@ $3
 	'confirmaccount-submit'           => '判断確定',
 	'confirmaccount-needreason'       => '判断理由を以下に記載する必要があります。',
 	'confirmaccount-canthold'         => 'この申請は既に保留済みか、削除済みです。',
-	'confirmaccount-acc'              => 'アカウント申請の承認に成功しました。作成された新しいアカウントは [[{{ns:user}}:$1]] です。',
+	'confirmaccount-acc'              => 'アカウント申請の承認に成功しました。作成された新しいアカウントは [[User:$1]] です。',
 	'confirmaccount-rej'              => 'アカウント申請は棄却されました。',
 	'confirmaccount-viewing'          => '（この申請は、現在[[User:$1|$1]]が受理しています）',
 	'confirmaccount-summary'          => '申請された自己紹介を用いた新規利用者ページ作成',
@@ -3098,16 +3106,15 @@ $messages['km'] = array(
 ឡុកអ៊ីន សូមទៅកាន់ {{fullurl:Special:Userlogin}} ។',
 	'confirmaccount-email-body2'      => 'សំនើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
 
-
 ឈ្មោះគណនី: $1
-
 
 ពាក្យសំងាត់: $2
 
+$3
 
-ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
+ដើម្បីសុវត្ថិភាពអ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
 
-ឡុកអ៊ីន សូមទៅកាន់ {{fullurl:Special:Userlogin}} ។',
+ឡុកអ៊ីន សូមទៅកាន់{{fullurl:Special:Userlogin}} ។',
 	'usercredentials-user'            => 'ឈ្មោះអ្នកប្រើប្រាស់៖',
 	'usercredentials-leg-user'        => 'គណនីអ្នកប្រើប្រាស់',
 	'usercredentials-leg-person'      => 'ពត៌មាន ផ្ទាល់ខ្លួន',
@@ -3797,6 +3804,7 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
+ * @author Siebrand
  */
 $messages['no'] = array(
 	'requestaccount'                  => 'Etterspør konto',
@@ -3805,7 +3813,7 @@ $messages['no'] = array(
 Forsikre deg om at du først leser [[{{MediaWiki:Requestaccount-page}}|tjenestevilkårene]] før du etterspør en konto.
 
 Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne logge inn via [[Special:Userlogin]].",
-	'requestaccount-page'             => 'Project:Tjenestevilkår',
+	'requestaccount-page'             => '{{ns:project}}:Tjenestevilkår',
 	'requestaccount-dup'              => "'''Merk: Du er allerede logget inn med en registrert konto.'''",
 	'requestaccount-leg-user'         => 'Brukerkonto',
 	'requestaccount-leg-areas'        => 'Hovedinteresser',
@@ -3991,6 +3999,7 @@ $messages['nso'] = array(
 /** Occitan (Occitan)
  * @author Cedric31
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['oc'] = array(
 	'requestaccount'                  => "Demanda de compte d'utilizaire",
@@ -4113,7 +4122,10 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-rej'              => 'La demanda es estada regetada amb succès.',
 	'confirmaccount-viewing'          => '(actualament a èsser visionat per [[User:$1|$1]])',
 	'confirmaccount-summary'          => "Creacion de la pagina d'utilizaire amb sa biografia.",
-	'confirmaccount-welc'             => "'''Benvenguda sus ''{{SITENAME}}'' !''' Esperam que contribuiretz fòrça e plan. Desiraratz, benlèu, legir [[{{NS:PROJECT}}:Cossí amodar|cossí plan amodar]]. Benvenguda encara e bona contribucions.",
+	'confirmaccount-welc'             => "'''Benvenguda sus ''{{SITENAME}}'' !'''
+Esperam que contribuiretz fòrça e plan.
+Desiraratz, benlèu, legir [[{{MediaWiki:Helppage}}|cossí plan amodar]].
+Benvenguda encara e bona contribucions.",
 	'confirmaccount-wsum'             => 'Benvenguda !',
 	'confirmaccount-email-subj'       => '{{SITENAME}} demanda de compte',
 	'confirmaccount-email-body'       => "Vòstra demanda de compte es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal : $2 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:Userlogin}}.",
@@ -4495,6 +4507,7 @@ $3
 /** Portuguese (Português)
  * @author Malafaya
  * @author Lijealso
+ * @author Siebrand
  */
 $messages['pt'] = array(
 	'requestaccount'                  => 'Requerer conta',
@@ -4502,7 +4515,7 @@ $messages['pt'] = array(
 
 Certifique-se de que lê primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.
 
-Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de notificação e a conta estará pronta a usar em [[{{ns:special}}:Userlogin]].",
+Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de notificação e a conta estará pronta a usar em [[Special:Userlogin]].",
 	'requestaccount-page'             => '{{ns:project}}:Termos de Serviço',
 	'requestaccount-dup'              => "'''Nota: Você já está logado com uma conta registada.'''",
 	'requestaccount-leg-user'         => 'Conta de utilizador',
@@ -4516,7 +4529,7 @@ Poderá querer listar contactos tal como o número de telefone para ajudar na co
 	'requestaccount-bio-text'         => 'A sua biografia será usada como conteúdo por defeito da sua página de utilizador.
 Tente incluir algumas credenciais.
 Assegure-se de que se encontra confortável em publicar tal informação.
-O seu nome pode ser alterado em [[{{ns:special}}:Preferences]].',
+O seu nome pode ser alterado em [[Special:Preferences]].',
 	'requestaccount-real'             => 'Nome real:',
 	'requestaccount-same'             => '(igual ao nome real)',
 	'requestaccount-email'            => 'Endereço de email:',
@@ -4551,8 +4564,8 @@ Este código de confirmação expirará em $4.',
 	'requestaccount-email-body-admin' => '"$1" pediu uma conta e aguarda confirmação.
 O endereço de email foi confirmado. Você pode confirmar o pedido aqui "$2".',
 	'acct_request_throttle_hit'       => 'Desculpe, mas já pediu $1 contas. Não pode fazer mais pedidos.',
-	'requestaccount-loginnotice'      => "Para obter uma conta de utilizador, deverá '''[[{{ns:special}}:RequestAccount|pedi-la]]'''.",
-	'confirmaccount-newrequests'      => "Há actualmente '''$1''' {{PLURAL:$1|[[{{ns:Special}}:ConfirmAccounts|pedido de conta]] aberto pendente|[[{{ns:Special}}:ConfirmAccounts|pedidos de conta]] abertos pendentes}}.",
+	'requestaccount-loginnotice'      => "Para obter uma conta de utilizador, deverá '''[[Special:RequestAccount|pedi-la]]'''.",
+	'confirmaccount-newrequests'      => "Há actualmente '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|pedido de conta]] aberto pendente|[[Special:ConfirmAccounts|pedidos de conta]] abertos pendentes}}.",
 	'confirmaccounts'                 => 'Confirmar requerimentos de conta',
 	'confirmedit-desc'                => 'Possibilita aos burocratas confirmar pedidos de conta',
 	'confirmaccount-maintext'         => "'''Esta página é usada para confirmar pedidos de conta pendentes em ''{{SITENAME}}'''''.
@@ -4612,11 +4625,11 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-none-p'           => '(não fornecido)',
 	'confirmaccount-confirm'          => 'Use as opções abaixo para aceitar, rejeitar, ou colocar em espera este pedido:',
 	'confirmaccount-econf'            => '(confirmado)',
-	'confirmaccount-reject'           => '(rejeitado por [[{{ns:user}}:$1|$1]] em $2)',
+	'confirmaccount-reject'           => '(rejeitado por [[User:$1|$1]] em $2)',
 	'confirmaccount-rational'         => 'Explicação dada ao requerente:',
 	'confirmaccount-noreason'         => '(nenhum)',
 	'confirmaccount-autorej'          => '(este pedido foi automaticamente descartado devido a inactividade)',
-	'confirmaccount-held'             => '(marcado como "em espera" por [[{{ns:user}}:$1|$1]] em $2)',
+	'confirmaccount-held'             => '(marcado como "em espera" por [[User:$1|$1]] em $2)',
 	'confirmaccount-create'           => 'Aceitar (criar conta)',
 	'confirmaccount-deny'             => 'Rejeitar (retirar da lista)',
 	'confirmaccount-hold'             => 'Colocar em espera',
@@ -4626,9 +4639,9 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-submit'           => 'Confirmar',
 	'confirmaccount-needreason'       => 'Deverá fornecer um motivo na caixa de comentário abaixo.',
 	'confirmaccount-canthold'         => 'Este pedido já está em espera ou apagado.',
-	'confirmaccount-acc'              => 'Pedido de conta confirmado com sucesso; criada nova conta de utilizador [[{{ns:user}}:$1]].',
+	'confirmaccount-acc'              => 'Pedido de conta confirmado com sucesso; criada nova conta de utilizador [[User:$1]].',
 	'confirmaccount-rej'              => 'Pedido de conta rejeitado com sucesso.',
-	'confirmaccount-viewing'          => '(actualmente a ser visualizada por [[{{ns:user}}:$1|$1]])',
+	'confirmaccount-viewing'          => '(actualmente a ser visualizada por [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Criar página de utilizador com biografia de novo utilizador.',
 	'confirmaccount-welc'             => "'''Bem-vindo a ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.
 Provavelmente desejará ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. Mais uma vez, seja bem-vindo e divirta-se!",
