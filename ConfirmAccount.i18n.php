@@ -3556,6 +3556,14 @@ $2
 	'usercredentials-badid'           => 'या सदस्याची शिफारसपत्रे सापडली नाहीत. सदस्य नाव बरोबर असल्याची खात्री करा.',
 );
 
+/** Nahuatl (Nahuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'confirmaccount-real-q' => 'Tōcāitl',
+	'confirmaccount-real'   => 'Tōcāitl:',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -5831,6 +5839,22 @@ $2
 	'usercredentials-notes'           => 'Эзоҳоти иловагӣ:',
 	'usercredentials-urls'            => 'Феҳристи сомонаҳо:',
 	'usercredentials-ip'              => 'Нишонаи IP-и аслӣ:',
+);
+
+/** Thai (ไทย)
+ * @author Passawuth
+ */
+$messages['th'] = array(
+	'confirmaccount-email-body2' => 'การเรียกร้องของคุณสำหรับบัญชีผู้ใช้ใหม่ได้รับการยอมรับบน {{SITENAME}}
+
+ชื่อบัญชีผู้ใช้: $1
+
+รหัสผ่าน: $2
+
+$3
+
+สำหรับเหตุผลทางความปลอดภัยคุณจะต้องเปลี่ยนรหัสผ่านของคุณหลังจากที่ล็อกอินครั้งแรก
+กรุณาไปที่ {{fullurl:Special:Userlogin}} เพื่อล็อกอิน',
 );
 
 /** Turkish (Türkçe)
