@@ -83,6 +83,16 @@ $aliases['no'] = array(
 	'ConfirmAccount' => array( 'Bekreft_konto' ),
 );
 
+/** Portuguese (Português) */
+$aliases['pt'] = array(
+	'ConfirmAccount' => array( 'Confirmar conta' ),
+);
+
+/** Brazilian Portuguese (Português do Brasil) */
+$aliases['pt-br'] = array(
+	'ConfirmAccount' => array( 'Confirmar conta' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'ConfirmAccount' => array( 'Bekräfta konto' ),
