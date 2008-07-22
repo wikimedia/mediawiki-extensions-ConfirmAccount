@@ -391,6 +391,7 @@ $3
 	'confirmaccount-none-o'           => 'لا توجد حاليا طلبات حساب قيد الانتظار مفتوحة في هذه القائمة.',
 	'confirmaccount-none-h'           => 'لا توجد حاليا طلبات حساب قيد الانتظار محجوزة في هذه القائمة.',
 	'confirmaccount-none-r'           => 'لا توجد حاليا طلبات حساب مرفوضة حديثا في هذه القائمة.',
+	'confirmaccount-none-e'           => 'لا توجد حاليا أي طلبات حسابات منتهية في هذه القائمة.',
 	'confirmaccount-real-q'           => 'الاسم',
 	'confirmaccount-email-q'          => 'البريد الإلكتروني',
 	'confirmaccount-bio-q'            => 'السيرة الشخصية',
@@ -3166,6 +3167,11 @@ $messages['la'] = array(
  */
 $messages['lb'] = array(
 	'requestaccount'                  => 'Benotzerkont ufroën',
+	'requestaccount-text'             => "'''Fëllt dëse Formulaire aus a schéckt e fort fir e Benotzerkont unzefroen'''.
+
+Passt op datt dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Conditioune vun der Notzung]] geliest hutt éier Dir e Benotzerkont ufrot.
+
+Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt äre Benotzerkont op [[Special:Userlogin]] benotzen.",
 	'requestaccount-page'             => '{{ns:project}}:Notzungsbedingungen',
 	'requestaccount-dup'              => "'''Opgepasst: Dir sidd scho matt engem registréierte Benotzerkont ugemellt.'''",
 	'requestaccount-leg-user'         => 'Benotzerkont',
@@ -3560,8 +3566,15 @@ $2
  * @author Fluence
  */
 $messages['nah'] = array(
-	'confirmaccount-real-q' => 'Tōcāitl',
-	'confirmaccount-real'   => 'Tōcāitl:',
+	'requestaccount-real'    => 'Melāhuac motōcā:',
+	'confirmaccount-real-q'  => 'Tōcāitl',
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-name'    => 'Tlatēquitiltilīltōcāitl',
+	'confirmaccount-real'    => 'Tōcāitl:',
+	'confirmaccount-email'   => 'E-mail:',
+	'usercredentials-user'   => 'Tlatēquitiltilīltōcāitl:',
+	'usercredentials-email'  => 'E-mail:',
+	'usercredentials-real'   => 'Melāhuac motōcā:',
 );
 
 /** Low German (Plattdüütsch)
@@ -4718,6 +4731,58 @@ $messages['rm'] = array(
 	'confirmaccount-real-q' => 'Num',
 	'confirmaccount-name'   => "Num d'utilisader",
 	'confirmaccount-real'   => 'Num:',
+);
+
+/** Romanian (Română)
+ * @author KlaudiuMihaila
+ */
+$messages['ro'] = array(
+	'requestaccount-leg-user'    => 'Cont de utilizator',
+	'requestaccount-leg-areas'   => 'Arii principale de interes',
+	'requestaccount-leg-person'  => 'Informaţii personale',
+	'requestaccount-leg-other'   => 'Alte informaţii',
+	'requestaccount-real'        => 'Nume real:',
+	'requestaccount-email'       => 'Adresă e-mail:',
+	'requestaccount-reqtype'     => 'Poziţie:',
+	'requestaccount-level-0'     => 'autor',
+	'requestaccount-bio'         => 'Biografie personală:',
+	'requestaccount-attach'      => 'CV (opţional):',
+	'confirmaccount-real-q'      => 'Nume',
+	'confirmaccount-email-q'     => 'E-mail',
+	'confirmaccount-bio-q'       => 'Biografie',
+	'confirmaccount-showopen'    => 'cereri deschise',
+	'confirmaccount-showrej'     => 'cereri respinse',
+	'confirmaccount-showexp'     => 'cereri expirate',
+	'confirmaccount-q-open'      => 'cereri deschise',
+	'confirmaccount-q-rej'       => 'cereri respinse recent',
+	'confirmaccount-q-stale'     => 'cereri expirate',
+	'confirmaccount-leg-user'    => 'Cont de utilizator',
+	'confirmaccount-leg-areas'   => 'Arii principale de interes',
+	'confirmaccount-leg-person'  => 'Informaţii personale',
+	'confirmaccount-leg-other'   => 'Alte informaţii',
+	'confirmaccount-name'        => 'Nume de utilizator',
+	'confirmaccount-real'        => 'Nume:',
+	'confirmaccount-email'       => 'E-mail:',
+	'confirmaccount-reqtype'     => 'Poziţie:',
+	'confirmaccount-pos-0'       => 'autor',
+	'confirmaccount-bio'         => 'Biografie:',
+	'confirmaccount-attach'      => 'CV:',
+	'confirmaccount-urls'        => 'Listă de situri web:',
+	'confirmaccount-econf'       => '(confirmat)',
+	'confirmaccount-ip'          => 'Adresă IP:',
+	'confirmaccount-submit'      => 'Confirmă',
+	'usercredentials-user'       => 'Nume de utilizator:',
+	'usercredentials-leg-user'   => 'Cont de utilizator',
+	'usercredentials-leg-areas'  => 'Arii principale de interes',
+	'usercredentials-leg-person' => 'Informaţii personale',
+	'usercredentials-leg-other'  => 'Alte informaţii',
+	'usercredentials-email'      => 'E-mail:',
+	'usercredentials-real'       => 'Nume real:',
+	'usercredentials-bio'        => 'Biografie:',
+	'usercredentials-attach'     => 'CV:',
+	'usercredentials-urls'       => 'Listă de situri web:',
+	'usercredentials-ip'         => 'Adresă IP originală:',
+	'usercredentials-member'     => 'Drepturi:',
 );
 
 /** Russian (Русский)
