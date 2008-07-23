@@ -383,6 +383,8 @@ $3
 	'confirmaccount-list2'            => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا والتي ربما يتم حذفها تلقائيا 
 	عندما يكون عمرها عدة أيام. مازال بالإمكان الموافقة عليهم كحسابات، ولكنك ربما ترغب في استشارة الإداري الرافض 
 قبل فعل هذا.',
+	'confirmaccount-list3'            => 'بالأسفل قائمة بطلبات الحسابات المنتهية التي يمكن حذفها تلقائيا متى أصبح عمرها عدة أيام.
+مازال من الممكن الموافقة عليهم كحسابات.',
 	'confirmaccount-text'             => "هذا طلب حساب قيد الانتظار في '''{{SITENAME}}'''. 
 	 راجع بحرص المعلومات بالأسفل. لو كنت توافق على هذا الطلب، استخدم قائمة الموضع لضبط حالة الحساب للمستخدم. التعديلات للسيرة الشخصية للمتقدم لن تؤثر على أي مخزن للمؤهلات الدائمة. لاحظ أنه يمكنك اختيار إنشاء الحساب باسم مستخدم آخر 
 	. استخدم هذا فقط لتجنب	الاصطدامات مع الأسماء الأخرى.
@@ -2747,9 +2749,11 @@ $messages['is'] = array(
 
 /** Italian (Italiano)
  * @author Pietrodn
+ * @author Darth Kule
  */
 $messages['it'] = array(
 	'confirmaccount-name'  => 'Nome utente',
+	'confirmaccount-ip'    => 'Indirizzo IP:',
 	'usercredentials-user' => 'Nome utente:',
 );
 
@@ -3569,6 +3573,7 @@ $messages['nah'] = array(
 	'requestaccount-real'    => 'Melāhuac motōcā:',
 	'confirmaccount-real-q'  => 'Tōcāitl',
 	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-review'  => 'Ticceppahuīz',
 	'confirmaccount-name'    => 'Tlatēquitiltilīltōcāitl',
 	'confirmaccount-real'    => 'Tōcāitl:',
 	'confirmaccount-email'   => 'E-mail:',
