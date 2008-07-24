@@ -2002,7 +2002,6 @@ $messages['haw'] = array(
 /** Hebrew (עברית)
  * @author StuB
  * @author Rotemliss
- * @author Siebrand
  */
 $messages['he'] = array(
 	'requestaccount'            => 'בקשת חשבון',
