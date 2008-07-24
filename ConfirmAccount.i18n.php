@@ -3571,13 +3571,15 @@ $2
  */
 $messages['nah'] = array(
 	'requestaccount-real'    => 'Melāhuac motōcā:',
+	'requestaccount-level-0' => 'chīhualōni',
 	'confirmaccount-real-q'  => 'Tōcāitl',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-review'  => 'Ticceppahuīz',
-	'confirmaccount-name'    => 'Tlatēquitiltilīltōcāitl',
+	'confirmaccount-name'    => 'Tlatequitiltilīltōcāitl',
 	'confirmaccount-real'    => 'Tōcāitl:',
 	'confirmaccount-email'   => 'E-mail:',
-	'usercredentials-user'   => 'Tlatēquitiltilīltōcāitl:',
+	'confirmaccount-pos-0'   => 'chīhualōni',
+	'usercredentials-user'   => 'Tlatequitiltilīltōcāitl:',
 	'usercredentials-email'  => 'E-mail:',
 	'usercredentials-real'   => 'Melāhuac motōcā:',
 );
