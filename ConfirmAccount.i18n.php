@@ -3233,6 +3233,7 @@ Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir k
 	'confirmaccount-reason'           => "Bemierkung (gëtt an d'E-Mail derbäigesat):",
 	'confirmaccount-ip'               => 'IP-Adress:',
 	'confirmaccount-submit'           => 'Confirméieren',
+	'confirmaccount-needreason'       => 'Dir musst e Grond an der Kescht ënnendrënner uginn.',
 	'confirmaccount-rej'              => "D'Ufro fir ee Benotzerkont gouf refüséiert.",
 	'confirmaccount-viewing'          => '(gëtt elo gekuckt vum [[User:$1|$1]])',
 	'confirmaccount-summary'          => "D'Benotzersäit mat der Biographie vum neie Benotzer gëtt elo gemaach.",
