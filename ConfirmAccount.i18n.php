@@ -323,13 +323,16 @@ $messages['ar'] = array(
 	'requestaccount-leg-areas'        => 'الاهتمامات الرئيسية',
 	'requestaccount-leg-person'       => 'المعلومات الشخصية',
 	'requestaccount-leg-other'        => 'معلومات أخرى',
-	'requestaccount-acc-text'         => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب. من فضلك استجب عن طريق الضغط 
-	على وصلة التأكيد المعطاة في البريد الإلكتروني. أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
+	'requestaccount-acc-text'         => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب.
+من فضلك استجب عن طريق الضغط على وصلة التأكيد المعطاة في البريد الإلكتروني.
+أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
 	'requestaccount-areas-text'       => 'اختر المواضيع بالأسفل التي لديك فيها خبرة رسمية أو التي تود أن تعمل فيها.',
-	'requestaccount-ext-text'         => 'المعلومات التالية سرية وسيتم استخدامها فقط لهذا الطلب. 
+	'requestaccount-ext-text'         => 'المعلومات التالية سرية وسيتم استخدامها فقط لهذا الطلب.
 ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة في تأكيد الهوية.',
-	'requestaccount-bio-text'         => 'سيرتك الشخصية ستعرض كالمحتوى الافتراضي لصفحة المستخدم الخاصة بك. حاول تضمين 
-	أية شهادات. تأكد من ارتياحك لنشر هذه المعلومات. اسمك يمكن تغييره بواسطة [[Special:Preferences]].',
+	'requestaccount-bio-text'         => 'سيرتك الشخصية ستعرض كالمحتوى الافتراضي لصفحة المستخدم الخاصة بك.
+حاول تضمين أية شهادات.
+تأكد من ارتياحك لنشر هذه المعلومات.
+اسمك يمكن تغييره بواسطة [[Special:Preferences]].',
 	'requestaccount-real'             => 'الاسم الحقيقي:',
 	'requestaccount-same'             => '(مثل الاسم الحقيقي)',
 	'requestaccount-email'            => 'عنوان البريد الإلكتروني:',
@@ -341,18 +344,18 @@ $messages['ar'] = array(
 	'requestaccount-attach'           => 'استكمال أو السيرة الذاتية (اختياري):',
 	'requestaccount-notes'            => 'ملاحظات إضافية:',
 	'requestaccount-urls'             => 'قائمة مواقع الويب، إن وجدت (افصل بسطور جديدة):',
-	'requestaccount-agree'            => 'يجب أن تثبت أن اسمك الحقيقي صحيح و أنك توافق على شروط خدمتنا.',
+	'requestaccount-agree'            => 'يجب أن تشهد أن اسمك الحقيقي صحيح وأنك توافق على شروط خدمتنا.',
 	'requestaccount-inuse'            => 'اسم المستخدم مستعمل بالفعل في طلب حساب قيد الانتظار',
 	'requestaccount-tooshort'         => 'سيرتك يجب أن تتكون على الأقل من $1 كلمة.',
 	'requestaccount-emaildup'         => 'طلب حساب آخر قيد الانتظار يستخدم نفس عنوان البريد الإلكتروني.',
 	'requestaccount-exts'             => 'نوع الملف المرفق غير مسموح به.',
-	'requestaccount-resub'            => 'ملف سيرتك الذاتية/استكمالك يجب أن يتم إعادة اختياره لأسباب أمنية. اترك الحقل فارغا 
-	لو كنت لم تعد تريد إضافة واحد.',
-	'requestaccount-tos'              => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.',
+	'requestaccount-resub'            => 'ملف سيرتك الذاتية/استكمالك يجب أن يتم إعادة اختياره لأسباب أمنية.
+اترك الحقل فارغا لو كنت لم تعد تريد إضافة واحد.',
+	'requestaccount-tos'              => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.
+الاسم الذي حددته تحت "الاسم الحقيقي" هو في الواقع اسمي الحقيقي.',
 	'requestaccount-submit'           => 'طلب حساب',
 	'requestaccount-sent'             => 'طلبك للحساب تم إرساله بنجاح وهو بانتظار المراجعة الآن.',
-	'request-account-econf'           => 'عنوان بريدك الإلكتروني تم تأكيده وسيتم عرضه كما هو في 
-طلب حسابك.',
+	'request-account-econf'           => 'عنوان بريدك الإلكتروني تم تأكيده وسيتم عرضه كما هو في طلب حسابك.',
 	'requestaccount-email-subj'       => '{{SITENAME}} تأكيد عنوان البريد الإلكتروني من',
 	'requestaccount-email-body'       => 'شخص ما، على الأرجح أنت من عنوان الأيبي $1، طلب حساب "$2" بعنوان البريد الإلكتروني هذا على {{SITENAME}}.
 
@@ -365,7 +368,8 @@ $3
 	'requestaccount-email-subj-admin' => 'طلب حساب {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" طلب حسابا وينتظر التأكيد.  
 عنوان البريد الإلكتروني تم تأكيده. يمكنك تأكيد الطلب هنا "$2".',
-	'acct_request_throttle_hit'       => 'عذرا، لقد طلبت بالفعل $1 حساب. لا يمكنك عمل المزيد من الطلبات.',
+	'acct_request_throttle_hit'       => 'عذرا، لقد طلبت بالفعل $1 حساب.
+لا يمكنك عمل المزيد من الطلبات.',
 	'requestaccount-loginnotice'      => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
 	'confirmaccount-newrequests'      => "{{PLURAL:$1|يوجد|يوجد}} حاليا '''$1'''  
 {{PLURAL:$1|[[Special:ConfirmAccounts|طلب حساب]]|[[Special:ConfirmAccounts|طلب حساب]]}} مفتوح قيد الانتظار.",
@@ -375,20 +379,24 @@ $3
 
 كل طابور طلب حساب يتكون من ثلاثة طوابير فرعية، واحد للطلبات المفتوحة، واحد لتلك التي تم وضعها قيد الانتظار بواسطة الإداريين الآخرين بانتظار المزيد من المعلومات، وآخر للطلبات المرفوضة حديثا.
 
-عند الرد على طلب، راجعه بحرص، عند الحاجة، تأكد من المعلومات الموجودة فيه.  
-أفعالك ستسجل بسرية. أنت أيضا يتوقع منك أن تراجع أي نشاط يحدث هنا بخلاف ما تفعله بنفسك.",
-	'confirmaccount-list'             => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار. 
-	الحسابات التي تمت الموافقة عليها سيتم إنشاؤها وإزالتها من هذه القائمة. الحسابات المرفوضة سيتم ببساطة حذفها من هذه 
-القائمة.',
-	'confirmaccount-list2'            => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا والتي ربما يتم حذفها تلقائيا 
-	عندما يكون عمرها عدة أيام. مازال بالإمكان الموافقة عليهم كحسابات، ولكنك ربما ترغب في استشارة الإداري الرافض 
+عند الرد على طلب، راجعه بحرص، عند الحاجة، تأكد من المعلومات الموجودة فيه.
+أفعالك ستسجل بسرية.
+أنت أيضا يتوقع منك أن تراجع أي نشاط يحدث هنا بخلاف ما تفعله بنفسك.",
+	'confirmaccount-list'             => 'بالأسفل قائمة بطلبات الحسابات قيد الانتظار.
+متى تمت الموافقة على أو رفض طلب ما فستتم إزالته من هذه القائمة.',
+	'confirmaccount-list2'            => 'بالأسفل قائمة بطلبات الحسابات المرفوضة حديثا والتي ربما يتم حذفها تلقائيا عندما يكون عمرها عدة أيام.
+مازال بالإمكان الموافقة عليهم كحسابات، ولكنك ربما ترغب في استشارة الإداري الرافض 
 قبل فعل هذا.',
 	'confirmaccount-list3'            => 'بالأسفل قائمة بطلبات الحسابات المنتهية التي يمكن حذفها تلقائيا متى أصبح عمرها عدة أيام.
 مازال من الممكن الموافقة عليهم كحسابات.',
-	'confirmaccount-text'             => "هذا طلب حساب قيد الانتظار في '''{{SITENAME}}'''. 
-	 راجع بحرص المعلومات بالأسفل. لو كنت توافق على هذا الطلب، استخدم قائمة الموضع لضبط حالة الحساب للمستخدم. التعديلات للسيرة الشخصية للمتقدم لن تؤثر على أي مخزن للمؤهلات الدائمة. لاحظ أنه يمكنك اختيار إنشاء الحساب باسم مستخدم آخر 
-	. استخدم هذا فقط لتجنب	الاصطدامات مع الأسماء الأخرى.
-	
+	'confirmaccount-text'             => "هذا طلب حساب قيد الانتظار في '''{{SITENAME}}'''.
+
+راجع بحرص المعلومات بالأسفل.
+لو كنت توافق على هذا الطلب، استخدم قائمة الموضع لضبط حالة الحساب للمستخدم.
+التعديلات للسيرة الشخصية للمتقدم لن تؤثر على أي مخزن للمؤهلات الدائمة.
+لاحظ أنه يمكنك اختيار إنشاء الحساب باسم مستخدم آخر.
+استخدم هذا فقط لتجنب الاصطدامات مع الأسماء الأخرى.
+
 لو تركت ببساطة هذه الصفحة بدون تأكيد أو رفض الحساب، سيبقى قيد الانتظار.",
 	'confirmaccount-none-o'           => 'لا توجد حاليا طلبات حساب قيد الانتظار مفتوحة في هذه القائمة.',
 	'confirmaccount-none-h'           => 'لا توجد حاليا طلبات حساب قيد الانتظار محجوزة في هذه القائمة.',
@@ -401,17 +409,18 @@ $3
 	'confirmaccount-showrej'          => 'طلبات مرفوضة',
 	'confirmaccount-showheld'         => 'عرض قائمة الحسابات قيد الانتظار',
 	'confirmaccount-showexp'          => 'طلبات مدتها انتهت',
-	'confirmaccount-review'           => 'قبول/رفض',
+	'confirmaccount-review'           => 'مراجعة',
 	'confirmaccount-types'            => 'اختر طابور تأكيد حساب من الأسفل:',
 	'confirmaccount-all'              => '(عرض كل الطوابير)',
-	'confirmaccount-type'             => 'الطابور المختار:',
+	'confirmaccount-type'             => 'الطابور:',
 	'confirmaccount-type-0'           => 'مؤلفون سابقون',
 	'confirmaccount-type-1'           => 'محررون سابقون',
 	'confirmaccount-q-open'           => 'طلبات مفتوحة',
 	'confirmaccount-q-held'           => 'طلبات قيد الانتظار',
 	'confirmaccount-q-rej'            => 'طلبات مرفوضة حديثا',
 	'confirmaccount-q-stale'          => 'طلبات منتهية',
-	'confirmaccount-badid'            => 'لا يوجد طلب قيد الانتظار يوافق الرقم المعطى. ربما يكون قد تمت معالجته.',
+	'confirmaccount-badid'            => 'لا يوجد طلب قيد الانتظار يوافق الرقم المعطى.
+ربما يكون قد تمت معالجته.',
 	'confirmaccount-leg-user'         => 'حساب المستخدم',
 	'confirmaccount-leg-areas'        => 'الاهتمامات الرئيسية',
 	'confirmaccount-leg-person'       => 'المعلومات الشخصية',
@@ -426,17 +435,17 @@ $3
 	'confirmaccount-attach'           => 'الاستكمال/السيرة الذاتية:',
 	'confirmaccount-notes'            => 'ملاحظات إضافية:',
 	'confirmaccount-urls'             => 'قائمة مواقع الويب:',
-	'confirmaccount-none-p'           => '(غير متوفرة)',
-	'confirmaccount-confirm'          => 'استخدم الأزرار بالأسفل لقبول هذا الطلب أو رفضه.',
+	'confirmaccount-none-p'           => '(غير موفرة)',
+	'confirmaccount-confirm'          => 'استخدم الخيارات بالأسفل لقبول، رفض، أو تأجيل هذا الطلب.',
 	'confirmaccount-econf'            => '(تم تأكيده)',
 	'confirmaccount-reject'           => '(تم رفضه بواسطته [[User:$1|$1]] في $2)',
 	'confirmaccount-rational'         => 'السبب المعطى للمتقدم:',
 	'confirmaccount-noreason'         => '(لا شيء)',
-	'confirmaccount-autorej'          => '(ألغي هذا الطلّب آليا بسبب الخمول)',
+	'confirmaccount-autorej'          => '(الطلب تم إلغاؤه آليا بسبب عدم النشاط)',
 	'confirmaccount-held'             => '(تم التعليم "قيد الانتظار" بواسطة [[User:$1|$1]] في $2)',
-	'confirmaccount-create'           => 'قبول (إنشاب الحساب)',
+	'confirmaccount-create'           => 'قبول (إنشاء الحساب)',
 	'confirmaccount-deny'             => 'رفض (إزالة من القائمة)',
-	'confirmaccount-hold'             => 'انتظر',
+	'confirmaccount-hold'             => 'تأجيل',
 	'confirmaccount-spam'             => 'سبام (لا ترسل البريد الإلكتروني)',
 	'confirmaccount-reason'           => 'تعليق (سيضم في البريد الإلكتروني):',
 	'confirmaccount-ip'               => 'عنوان الأيبي:',
@@ -447,8 +456,10 @@ $3
 	'confirmaccount-rej'              => 'طلب الحساب تم رفضه بنجاح.',
 	'confirmaccount-viewing'          => '(حاليا يتم مراجعته بواسطة [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.',
-	'confirmaccount-welc'             => "'''مرحبا إلى ''{{SITENAME}}''!''' نأمل أن تساهم كثيرا وجيدا. 
-	على الأرجح ستريد قراءة [[{{MediaWiki:Helppage}}|البداية]]. مجددا، مرحبا واستمتع!",
+	'confirmaccount-welc'             => "'''مرحبا إلى ''{{SITENAME}}''!'''
+نأمل أن تساهم كثيرا وجيدا.
+على الأرجح ستريد قراءة [[{{MediaWiki:Helppage}}|البداية]].
+مجددا، مرحبا واستمتع!",
 	'confirmaccount-wsum'             => 'مرحبا!',
 	'confirmaccount-email-subj'       => '{{SITENAME}} طلب حساب',
 	'confirmaccount-email-body'       => 'طلبك لحساب تمت الموافقة عليه في {{SITENAME}}.
@@ -469,16 +480,17 @@ $3
 
 لمتطلبات السرية ستضطر إلى تغيير كلمة السر الخاصة بك عند أول دخول. للدخول، من فضلك اذهب إلى 
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3'      => 'عذرا, طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
+	'confirmaccount-email-body3'      => 'عذرا، طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
 
-هناك عدة طرق لحدوث هذا. ربما تكون لم تملأ الاستمارة بشكل صحيح، أو لم توفر الطول اللازم في ردودك، أو فشلت في موافاة بعد بنود السياسة. ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
+هناك عدة طرق لحدوث هذا.
+ربما تكون لم تملأ الاستمارة بشكل صحيح، أو لم توفر الطول اللازم في ردودك، أو فشلت في موافاة بعد بنود السياسة.
+ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
 	'confirmaccount-email-body4'      => 'عذرا، طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
 
 $2
 
 ربما تكون هناك قوائم اتصال على الموقع يمكنك استخدامها لو كنت تريد معرفة المزيد حول سياسة حساب المستخدم.',
-	'confirmaccount-email-body5'      => 'قبل أن يتم قبول طلبك للحساب "$1" في {{SITENAME}} 
-	يجب أن توفر أولا بعض المعلومات الإضافية.
+	'confirmaccount-email-body5'      => 'قبل أن يتم قبول طلبك للحساب "$1" في {{SITENAME}} يجب أن توفر أولا بعض المعلومات الإضافية.
 
 $2
 
@@ -499,7 +511,8 @@ $2
 	'usercredentials-urls'            => 'قائمة مواقع الويب:',
 	'usercredentials-ip'              => 'عنوان الأيبي الأصلي:',
 	'usercredentials-member'          => 'الصلاحيات:',
-	'usercredentials-badid'           => 'لا مؤهلات تم العثور عليها لهذا المستخدم. تأكد من أن الاسم مكتوب بطريقة صحيحة.',
+	'usercredentials-badid'           => 'لا مؤهلات تم العثور عليها لهذا المستخدم.
+تأكد من أن الاسم مكتوب بطريقة صحيحة.',
 );
 
 /** Bikol Central (Bikol Central)
@@ -3570,18 +3583,20 @@ $2
  * @author Fluence
  */
 $messages['nah'] = array(
-	'requestaccount-real'    => 'Melāhuac motōcā:',
-	'requestaccount-level-0' => 'chīhualōni',
-	'confirmaccount-real-q'  => 'Tōcāitl',
-	'confirmaccount-email-q' => 'E-mail',
-	'confirmaccount-review'  => 'Ticceppahuīz',
-	'confirmaccount-name'    => 'Tlatequitiltilīltōcāitl',
-	'confirmaccount-real'    => 'Tōcāitl:',
-	'confirmaccount-email'   => 'E-mail:',
-	'confirmaccount-pos-0'   => 'chīhualōni',
-	'usercredentials-user'   => 'Tlatequitiltilīltōcāitl:',
-	'usercredentials-email'  => 'E-mail:',
-	'usercredentials-real'   => 'Melāhuac motōcā:',
+	'requestaccount-real'     => 'Melāhuac motōcā:',
+	'requestaccount-level-0'  => 'chīhualōni',
+	'confirmaccount-real-q'   => 'Tōcāitl',
+	'confirmaccount-email-q'  => 'E-mail',
+	'confirmaccount-review'   => 'Ticceppahuīz',
+	'confirmaccount-name'     => 'Tlatequitiltilīltōcāitl',
+	'confirmaccount-real'     => 'Tōcāitl:',
+	'confirmaccount-email'    => 'E-mail:',
+	'confirmaccount-pos-0'    => 'chīhualōni',
+	'confirmaccount-noreason' => '(ahtlein)',
+	'confirmaccount-ip'       => 'IP:',
+	'usercredentials-user'    => 'Tlatequitiltilīltōcāitl:',
+	'usercredentials-email'   => 'E-mail:',
+	'usercredentials-real'    => 'Melāhuac motōcā:',
 );
 
 /** Low German (Plattdüütsch)
