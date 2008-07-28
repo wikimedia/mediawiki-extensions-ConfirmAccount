@@ -1742,8 +1742,9 @@ Ceti code de confirmacion èxpire lo $4.',
  * @author Snakesteuben
  */
 $messages['fy'] = array(
-	'confirmaccount-real-q' => 'Namme',
-	'confirmaccount-real'   => 'Namme:',
+	'confirmaccount-real-q'   => 'Namme',
+	'confirmaccount-real'     => 'Namme:',
+	'confirmaccount-noreason' => '(gjin)',
 );
 
 /** Galician (Galego)
