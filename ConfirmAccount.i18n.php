@@ -1743,8 +1743,10 @@ Ceti code de confirmacion èxpire lo $4.',
  */
 $messages['fy'] = array(
 	'confirmaccount-real-q'   => 'Namme',
+	'confirmaccount-name'     => 'Meidoggernamme',
 	'confirmaccount-real'     => 'Namme:',
 	'confirmaccount-noreason' => '(gjin)',
+	'usercredentials-user'    => 'Meidoggernamme:',
 );
 
 /** Galician (Galego)
