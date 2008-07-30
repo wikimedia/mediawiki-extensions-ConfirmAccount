@@ -1742,9 +1742,11 @@ Ceti code de confirmacion èxpire lo $4.',
  * @author Snakesteuben
  */
 $messages['fy'] = array(
+	'requestaccount-level-1'  => 'redakteur',
 	'confirmaccount-real-q'   => 'Namme',
 	'confirmaccount-name'     => 'Meidoggernamme',
 	'confirmaccount-real'     => 'Namme:',
+	'confirmaccount-pos-1'    => 'redakteur',
 	'confirmaccount-noreason' => '(gjin)',
 	'usercredentials-user'    => 'Meidoggernamme:',
 );
@@ -3218,6 +3220,7 @@ Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir k
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Ufro fir ee Benotzerkont',
 	'acct_request_throttle_hit'       => 'Pardon, Dir hutt schonns $1 Benotzerkonten ugefrot. Dir kënnt elo keng Ufroe méi maachen.',
 	'requestaccount-loginnotice'      => "Fir e Benitzerkont ze kréiene, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
+	'confirmaccounts'                 => 'Ufroe vu Benotzerkonte confirméieren',
 	'confirmedit-desc'                => "Gëtt Bürokraten d'Méiglechkeeten fir Ufroe vu Benotzerkonten ze confirméieren",
 	'confirmaccount-real-q'           => 'Numm',
 	'confirmaccount-email-q'          => 'E-mail',
