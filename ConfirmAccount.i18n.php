@@ -889,6 +889,7 @@ $messages['da'] = array(
  * @author MF-Warburg
  * @author Raimond Spekking
  * @author Siebrand
+ * @author Revolus
  */
 $messages['de'] = array(
 	'requestaccount'                  => 'Benutzerkonto beantragen',
@@ -976,6 +977,7 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	'confirmaccount-none-h'           => 'Momentan gibt es keine Anträge im „abwarten“-Status auf dieser Liste.',
 	'confirmaccount-none-r'           => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge auf dieser Liste.',
 	'confirmaccount-none-e'           => 'Momentan gibt es keine abgelaufenen Benutzeranträge auf dieser Liste.',
+	'confirmaccount-real-q'           => 'Name',
 	'confirmaccount-email-q'          => 'E-Mail',
 	'confirmaccount-bio-q'            => 'Biographie',
 	'confirmaccount-showopen'         => 'offene Anträge',
@@ -998,6 +1000,7 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	'confirmaccount-leg-person'       => 'Persönliche Informationen',
 	'confirmaccount-leg-other'        => 'Weitere Informationen',
 	'confirmaccount-name'             => 'Benutzername',
+	'confirmaccount-real'             => 'Name:',
 	'confirmaccount-email'            => 'E-Mail:',
 	'confirmaccount-reqtype'          => 'Position:',
 	'confirmaccount-pos-0'            => 'Autor',
@@ -2769,9 +2772,12 @@ $messages['is'] = array(
  * @author Darth Kule
  */
 $messages['it'] = array(
-	'confirmaccount-name'  => 'Nome utente',
-	'confirmaccount-ip'    => 'Indirizzo IP:',
-	'usercredentials-user' => 'Nome utente:',
+	'confirmaccount-email-q' => 'Indirizzo e-mail',
+	'confirmaccount-name'    => 'Nome utente',
+	'confirmaccount-email'   => 'Indirizzo e-mail:',
+	'confirmaccount-ip'      => 'Indirizzo IP:',
+	'usercredentials-user'   => 'Nome utente:',
+	'usercredentials-email'  => 'Indirizzo e-mail:',
 );
 
 /** Japanese (日本語)
