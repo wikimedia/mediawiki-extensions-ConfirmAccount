@@ -14,7 +14,7 @@ $messages['en'] = array(
 	
 Make sure that you first read the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] before requesting an account.
 
-Once the account is approved, you will be e-mailed a notification message and the account will be usable at [[Special:Userlogin]].',
+Once the account is approved, you will be e-mailed a notification message and the account will be usable at [[Special:Userlogin|login]].',
 	'requestaccount-footer'     => '', # only translate this message to other languages if you have to change it
 	'requestaccount-page'       => '{{ns:project}}:Terms of Service',
 	'requestaccount-dup'        => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
@@ -31,7 +31,7 @@ You may want to list contacts such a phone number to aid in identify confirmatio
 	'requestaccount-bio-text'   => "Your biography will be set as the default content for your userpage.
 Try to include any credentials.
 Make sure you are comfortable publishing such information.
-Your name can be changed via [[Special:Preferences]].",
+Your name can be changed via [[Special:Preferences|your preferences]].",
 	'requestaccount-real'       => 'Real name:',
 	'requestaccount-same'       => '(same as real name)',
 	'requestaccount-email'      => 'E-mail address:',
@@ -160,7 +160,8 @@ It may have already been handled.',
 	'confirmaccount-submit'   => 'Confirm',
 	'confirmaccount-needreason' => 'You must provide a reason in the comment box below.',
 	'confirmaccount-canthold' => 'This request is already either on hold or deleted.',
-	'confirmaccount-acc'     => 'Account request confirmed successfully; created new user account [[User:$1]].',
+	'confirmaccount-acc'     => 'Account request confirmed successfully;
+	created new user account [[User:$1|$1]].',
 	'confirmaccount-rej'     => 'Account request rejected successfully.',
 	'confirmaccount-viewing' => '(currently being viewed by [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Creating user page with biography of new user.',
