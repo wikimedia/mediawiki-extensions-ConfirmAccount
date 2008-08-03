@@ -453,7 +453,8 @@ $3
 	'confirmaccount-submit'           => 'تأكيد',
 	'confirmaccount-needreason'       => 'يجب أن تحدد سببا في صندوق التعليق بالأسفل.',
 	'confirmaccount-canthold'         => 'هذا الطلب بالفعل إما قيد الانتظار أو محذوف.',
-	'confirmaccount-acc'              => 'طلب الحساب تم تأكيده بنجاح؛ أنشأ حسابا جديدا [[User:$1|$1]].',
+	'confirmaccount-acc'              => 'طلب الحساب تم تأكيده بنجاح؛
+أنشأ حسابا جديدا [[User:$1|$1]].',
 	'confirmaccount-rej'              => 'طلب الحساب تم رفضه بنجاح.',
 	'confirmaccount-viewing'          => '(حاليا يتم مراجعته بواسطة [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.',
@@ -889,8 +890,9 @@ $messages['da'] = array(
  * @author Rrosenfeld
  * @author MF-Warburg
  * @author Raimond Spekking
- * @author Siebrand
  * @author Revolus
+ * @author Raymond
+ * @author Leithian
  */
 $messages['de'] = array(
 	'requestaccount'                  => 'Benutzerkonto beantragen',
@@ -3199,14 +3201,17 @@ $messages['lb'] = array(
 
 Passt op datt dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Conditioune vun der Notzung]] geliest hutt éier Dir e Benotzerkont ufrot.
 
-Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt äre Benotzerkont op [[Special:Userlogin]] benotzen.",
+Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt äre Benotzerkont op [[Special:Userlogin|benotzen]].",
 	'requestaccount-page'             => '{{ns:project}}:Notzungsbedingungen',
 	'requestaccount-dup'              => "'''Opgepasst: Dir sidd scho matt engem registréierte Benotzerkont ugemellt.'''",
 	'requestaccount-leg-user'         => 'Benotzerkont',
 	'requestaccount-leg-areas'        => 'Haaptinteressen',
 	'requestaccount-leg-person'       => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other'        => 'Aner Informatiounen',
-	'requestaccount-bio-text'         => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert. Versicht all néideg Recommandatiounnen unzeginn, awer vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt. Äre Numm kann op [[Special:Preferences|meng Astellunge]] geännert ginn.',
+	'requestaccount-bio-text'         => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert.
+Versicht all néideg Recommandatiounnen unzeginn.
+Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt.
+Äre Numm kann op [[Special:Preferences|meng Astellunge]] geännert ginn.',
 	'requestaccount-real'             => 'Richtege Numm:',
 	'requestaccount-same'             => "(d'selwescht wéi de richtege Numm)",
 	'requestaccount-email'            => 'E-mail-Adress:',
