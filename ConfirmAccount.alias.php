@@ -16,12 +16,12 @@ $aliases['en'] = array(
 
 /** Arabic (العربية) */
 $aliases['ar'] = array(
-	'ConfirmAccount' => array( 'تأكيد الحساب' ),
+	'ConfirmAccount' => array( 'تأكيد_الحساب' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى) */
 $aliases['arz'] = array(
-	'ConfirmAccount' => array( 'تأكيد الحساب' ),
+	'ConfirmAccount' => array( 'تأكيد_الحساب' ),
 );
 
 /** Finnish (Suomi) */
