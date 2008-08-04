@@ -2029,7 +2029,7 @@ $messages['haw'] = array(
  */
 $messages['he'] = array(
 	'requestaccount'            => 'בקשת חשבון',
-	'requestaccount-text'       => "'''מלאו והשלימו את הטופס הבא כדי לבקש חשבון המשתמש'''.
+	'requestaccount-text'       => "מלאו והשלימו את הטופס הבא כדי לבקש חשבון המשתמש'''.
 
 לפני שאתם מבקשים חשבון, אנא ודאו כי קראתם קודם את [[{{MediaWiki:Requestaccount-page}}|תנאי השירות]].
 
@@ -2038,7 +2038,7 @@ $messages['he'] = array(
 	'confirmaccount-submit'     => 'אישור',
 	'confirmaccount-needreason' => 'יש לספק סיבה בתיבת התגובה למטה.',
 	'confirmaccount-canthold'   => 'בקשה זו כבר נמצאת בהמתנה או מחוקה.',
-	'confirmaccount-acc'        => 'בקשת החשבון אושרה בהצלחה; נוצר חשבון משתמש חדש [[User:$1|$1]].',
+	'confirmaccount-acc'        => 'בקשת החשבון אושרה בהצלחה; נוצר חשבון משתמש חדש בשם [[User:$1|$1]].',
 	'confirmaccount-rej'        => 'בקשת החשבון נדחתה בהצלחה.',
 	'confirmaccount-viewing'    => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])',
 	'confirmaccount-summary'    => 'יצירת דף משתמש עם ביוגרפיה של משתמש חדש',
@@ -4059,12 +4059,15 @@ $messages['nso'] = array(
 
 /** Occitan (Occitan)
  * @author Cedric31
- * @author SPQRobin
- * @author Siebrand
  */
 $messages['oc'] = array(
 	'requestaccount'                  => "Demanda de compte d'utilizaire",
-	'requestaccount-text'             => "'''Emplenatz e mandatz lo formulari çaijós per demandar un compte d’utilizaire.'''. Asseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte. Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus [[Special:Userlogin]].",
+	'requestaccount-text'             => "'''Emplenatz e mandatz lo formulari çaijós per demandar un compte d’utilizaire.'''.
+
+	Asseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte.
+
+	Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus
+	[[Special:Userlogin]].",
 	'requestaccount-page'             => "{{ns:project}}:Condicions d'utilizacion",
 	'requestaccount-dup'              => "'''Nòta : Ja sètz sus una sesilha amb un compte enregistrat.'''",
 	'requestaccount-leg-user'         => "Compte d'utilizaire",
@@ -4074,7 +4077,7 @@ $messages['oc'] = array(
 	'requestaccount-acc-text'         => 'Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. Dins lo corrièr recebut, clicatz sul ligam correspondent a la confirmacion de vòstra demanda. E mai, senhal serà mandat per corrièr electronic quand vòstre compte serà creat.',
 	'requestaccount-areas-text'       => 'Causissètz los domenis dins losquals avètz una expertisa demostrada, o dins lasqualas sètz mai portat a contribuir.',
 	'requestaccount-ext-text'         => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telèfon per obténer una assistància per confirmar vòstra identitat.',
-	'requestaccount-bio-text'         => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences]].",
+	'requestaccount-bio-text'         => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences|vòstras preferéncias]].",
 	'requestaccount-real'             => 'Nom vertadièr :',
 	'requestaccount-same'             => '(nom figurant dins vòstre estat civil)',
 	'requestaccount-email'            => 'Adreça electronica:',
