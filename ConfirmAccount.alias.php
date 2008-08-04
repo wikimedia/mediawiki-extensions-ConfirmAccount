@@ -14,12 +14,16 @@ $aliases['en'] = array(
     'ConfirmAccount' => array( 'ConfirmAccount' ),
 );
 
-/** Arabic (العربية) */
+/** Arabic (العربية)
+ * @author Meno25
+ */
 $aliases['ar'] = array(
 	'ConfirmAccount' => array( 'تأكيد_الحساب' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
+ */
 $aliases['arz'] = array(
 	'ConfirmAccount' => array( 'تأكيد_الحساب' ),
 );
