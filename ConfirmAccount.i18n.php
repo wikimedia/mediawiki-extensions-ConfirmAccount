@@ -568,6 +568,8 @@ $messages['bg'] = array(
 	'requestaccount-tooshort'         => 'Необходимо е биографията да съдържа поне $1 думи.',
 	'requestaccount-emaildup'         => 'Посоченият адрес за електронна поща е използвам при друга изчакваща заявка за потребителска сметка.',
 	'requestaccount-exts'             => 'Не е разрешено прикачането на файлове с този формат.',
+	'requestaccount-resub'            => 'От съображения за сигурност е необходимо да изберете повторно своето CV/резюме.
+Ако полето бъде оставено празно, в заявката ви няма да бъде включено резюме.',
 	'requestaccount-tos'              => 'Декларирам, че прочетох и се съгласявам с [[{{MediaWiki:Requestaccount-page}}|Условията за ползване]] на {{SITENAME}}.
 Името, което попълних във формуляра, е моето истинско име и фамилия.',
 	'requestaccount-submit'           => 'Изпращане на заявката',
@@ -591,6 +593,8 @@ $3
 	'confirmaccount-list'             => 'Следва списък от заявките за потребителски сметки, които очакват одобрение.
 Одобрените сметки ще бъдат създадени и премахнати от списъка. Отхвърлените сметки просто ще бъдат премахнати.',
 	'confirmaccount-list2'            => 'Следва списък от наскоро отхвърлените заявки за сметки, които могат да бъдат автоматично изтрити след изтичане на няколко дни от отказа. Заявка от този списък все още може да бъде одобрена, но е желателно преди това да се посъветвате с администратора, който я е отхвърлил.',
+	'confirmaccount-list3'            => 'По-долу е посочен списък с изтекли заявки за сметки, които могат автоматично да бъдат изтрити след няколко дни.
+Те все още могат да се потвърдят и да се създадат сметки.',
 	'confirmaccount-none-o'           => 'В момента списъкът не съдържа отворени изчакващи заявки за сметки.',
 	'confirmaccount-none-h'           => 'В момента списъкът не съдържа задържани изчакващи заявки за сметки.',
 	'confirmaccount-none-r'           => 'Понастоящем в списъка няма наскоро отхвърлени заявки за сметки.',
@@ -646,6 +650,10 @@ $3
 	'confirmaccount-rej'              => 'Заявката за потребителска сметка е отхвърлена.',
 	'confirmaccount-viewing'          => '(в момента се преглежда от [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Създаване на потребителска страница с биографията на новия потребител.',
+	'confirmaccount-welc'             => "'''Добре дошли в ''{{SITENAME}}''!'''
+Надяваме се, че ще допринасяте много и качествено.  
+Вероятно бихте искали да прочетете [[{{MediaWiki:Helppage}}|помощните страници]].
+Още веднъж добре дошли и приятни забавления!",
 	'confirmaccount-wsum'             => 'Здравейте!',
 	'confirmaccount-email-subj'       => 'Заявка за сметка в {{SITENAME}}',
 	'confirmaccount-email-body'       => 'Вашата заявка за потребителска сметка на {{SITENAME}} е одобрена.
@@ -680,6 +688,7 @@ $2
 	'usercredentials'                 => 'Препоръки за потребители',
 	'usercredentials-leg'             => 'Преглед на потвърдените препоръки за потребител',
 	'usercredentials-user'            => 'Потребителско име:',
+	'usercredentials-text'            => 'По-долу са показани потвърдените препоръки за избраната потребителска сметка.',
 	'usercredentials-leg-user'        => 'Потребителска сметка',
 	'usercredentials-leg-areas'       => 'Основни интереси',
 	'usercredentials-leg-person'      => 'Лична информация',
@@ -1181,6 +1190,7 @@ $messages['eo'] = array(
 	'requestaccount-real'             => 'Reala nomo:',
 	'requestaccount-same'             => '(sama kiel reala nomo)',
 	'requestaccount-email'            => 'Retpoŝta adreso:',
+	'requestaccount-reqtype'          => 'Pozicio:',
 	'requestaccount-level-0'          => 'aŭtoro',
 	'requestaccount-level-1'          => 'Redaktanto',
 	'requestaccount-bio'              => 'Persona biografio:',
@@ -1226,6 +1236,7 @@ Se ĉi tio ne devenas al vi, ne sekvu la ligilon.
 	'confirmaccount-name'             => 'Salutnomo',
 	'confirmaccount-real'             => 'Nomo:',
 	'confirmaccount-email'            => 'Retadreso:',
+	'confirmaccount-reqtype'          => 'Pozicio:',
 	'confirmaccount-pos-0'            => 'aŭtoro',
 	'confirmaccount-pos-1'            => 'redaktanto',
 	'confirmaccount-bio'              => 'Biografio:',
@@ -1431,7 +1442,8 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-submit'           => 'Vahvista',
 	'confirmaccount-needreason'       => 'Alla olevaan huomautuslaatikkoon on kirjoitettava perustelu.',
 	'confirmaccount-canthold'         => 'Tämä pyyntöf on jo joko pysäytetty tai poistettu.',
-	'confirmaccount-acc'              => 'Pyynnön vahvistaminen onnistui; luotu uusi käyttäjätunnus [[User:$1|$1]].',
+	'confirmaccount-acc'              => 'Pyynnön vahvistaminen onnistui.
+Käyttäjätunnus [[User:$1|$1]] luotiin.',
 	'confirmaccount-rej'              => 'Pyynnön hylkääminen onnistui.',
 	'confirmaccount-viewing'          => '(juuri nyt katseltavana käyttäjällä [[User:$1|$1]])',
 	'confirmaccount-summary'          => 'Luodaan uuden käyttäjän tiedost sisältävä käyttäjäsivu.',
@@ -2679,13 +2691,42 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'requestaccount-level-0' => 'autor',
-	'confirmaccount-email-q' => 'E-mail',
-	'confirmaccount-name'    => 'Nomine de usator',
-	'confirmaccount-email'   => 'E-mail:',
-	'confirmaccount-pos-0'   => 'autor',
-	'usercredentials-user'   => 'Nomine de usator:',
-	'usercredentials-email'  => 'E-mail:',
+	'requestaccount'            => 'Requestar conto',
+	'requestaccount-text'       => "'''Completa e submitte le sequente formulario pro requestar un conto de usator.'''
+
+Assecura te que tu primo lege le [[{{MediaWiki:Requestaccount-page}}|conditiones de servicio]] ante que tu requesta un conto.
+
+Quando le conto ha essite approbate, tu recipera in e-mail un message de notification e le conto essera usabile pro [[Special:Userlogin|aperir un session]].",
+	'requestaccount-page'       => '{{ns:project}}:Conditiones de servicio',
+	'requestaccount-dup'        => "'''Nota: Tu es ja in un session aperte con un conto registrate.'''",
+	'requestaccount-leg-user'   => 'Conto de usator',
+	'requestaccount-leg-areas'  => 'Areas de interesse principal',
+	'requestaccount-leg-person' => 'Informationes personal',
+	'requestaccount-leg-other'  => 'Altere informationes',
+	'requestaccount-acc-text'   => 'Tu recipera in e-mail un message de confirmation quando tu submitte iste requesta.
+Per favor responde per cliccar super le ligamine de confirmation presente in le e-mail.
+Tu recipera etiam tu contrasigno in e-mail al creation de tu conto.',
+	'requestaccount-areas-text' => 'Selige in basso le areas thematic in le quales tu ha expertise formal o al quales tu volerea laborar le plus.',
+	'requestaccount-ext-text'   => 'Le sequente information resta private e essera usate solmente pro iste requesta.
+Tu ha le possibilitate de listar contactos como un numero de telephono pro adjutar in le confirmation de tu identitate.',
+	'requestaccount-bio-text'   => 'Tu biographia essera le contento predefinite pro tu pagina de usator.
+Essaya includer omne litteras de credentia.
+Assecura te que tu sia confortabile con le publication de tal informationes.
+Tu nomine pote esser cambiate in [[Special:Preferences|tu preferentias]].',
+	'requestaccount-real'       => 'Nomine real:',
+	'requestaccount-same'       => '(equal al nomine real)',
+	'requestaccount-email'      => 'Adresse de e-mail:',
+	'requestaccount-reqtype'    => 'Position:',
+	'requestaccount-level-0'    => 'autor',
+	'requestaccount-level-1'    => 'contributor',
+	'requestaccount-bio'        => 'Biographia personal:',
+	'requestaccount-attach'     => 'Resume o CV (optional):',
+	'confirmaccount-email-q'    => 'E-mail',
+	'confirmaccount-name'       => 'Nomine de usator',
+	'confirmaccount-email'      => 'E-mail:',
+	'confirmaccount-pos-0'      => 'autor',
+	'usercredentials-user'      => 'Nomine de usator:',
+	'usercredentials-email'     => 'E-mail:',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -3595,6 +3636,17 @@ $2
 	'usercredentials-ip'              => 'मूळ आयपी अंकपत्ता:',
 	'usercredentials-member'          => 'अधिकार:',
 	'usercredentials-badid'           => 'या सदस्याची शिफारसपत्रे सापडली नाहीत. सदस्य नाव बरोबर असल्याची खात्री करा.',
+);
+
+/** Maltese (Malti)
+ * @author Roderick Mallia
+ */
+$messages['mt'] = array(
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-name'    => 'Isem l-utent',
+	'confirmaccount-email'   => 'E-mail:',
+	'usercredentials-user'   => 'Isem l-utent:',
+	'usercredentials-email'  => 'E-mail:',
 );
 
 /** Nahuatl (Nahuatl)
