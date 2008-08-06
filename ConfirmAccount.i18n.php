@@ -2817,12 +2817,16 @@ $messages['is'] = array(
 /** Italian (Italiano)
  * @author Pietrodn
  * @author Darth Kule
+ * @author Melos
  */
 $messages['it'] = array(
+	'requestaccount-level-1' => 'editore',
 	'confirmaccount-email-q' => 'Indirizzo e-mail',
 	'confirmaccount-name'    => 'Nome utente',
 	'confirmaccount-email'   => 'Indirizzo e-mail:',
+	'confirmaccount-pos-1'   => 'editore',
 	'confirmaccount-ip'      => 'Indirizzo IP:',
+	'confirmaccount-submit'  => 'Conferma',
 	'usercredentials-user'   => 'Nome utente:',
 	'usercredentials-email'  => 'Indirizzo e-mail:',
 );
