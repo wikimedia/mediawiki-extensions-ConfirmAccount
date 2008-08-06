@@ -1315,6 +1315,7 @@ $messages['ext'] = array(
  * @author Taleman
  * @author Nike
  * @author Cimon Avaro
+ * @author Jaakonam
  */
 $messages['fi'] = array(
 	'requestaccount'                  => 'Pyydä käyttäjätunnusta',
@@ -1400,6 +1401,8 @@ Jos jätät tämän sivun vahvistamatta tai hylkäämättä pyyntöä, se jää 
 	'confirmaccount-real-q'           => 'Nimi',
 	'confirmaccount-email-q'          => 'Sähköposti',
 	'confirmaccount-bio-q'            => 'Omat tiedot',
+	'confirmaccount-showopen'         => 'avoimet pyynnöt',
+	'confirmaccount-showrej'          => 'hylätyt pyynnöt',
 	'confirmaccount-showheld'         => 'Katso luettelo käsiteltävänä olevista pyynnöistä',
 	'confirmaccount-review'           => 'Tarkista',
 	'confirmaccount-types'            => 'Valitse vahvistettavien pyyntöjen jono alla olevista:',
