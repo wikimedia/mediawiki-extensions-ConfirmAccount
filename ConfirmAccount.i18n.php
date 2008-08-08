@@ -317,7 +317,7 @@ $messages['ar'] = array(
 تأكد أولا من قراءة [[{{MediaWiki:Requestaccount-page}}|شروط الخدمة]] قبل طلب حساب.
 	
 	متى تمت الموافقة على الحساب، سيتم إرسال رسالة إخطار إليك والحساب سيصبح قابلا للاستخدام في 
-[[Special:Userlogin|تسجيل الدخول]].",
+[[Special:UserLogin|تسجيل الدخول]].",
 	'requestaccount-page'             => '{{ns:project}}:شروط الخدمة',
 	'requestaccount-dup'              => "'''ملاحظة: أنت مسجل الدخول بالفعل بحساب مسجل.'''",
 	'requestaccount-leg-user'         => 'حساب المستخدم',
@@ -538,7 +538,7 @@ $messages['bg'] = array(
 
 Преди да бъде направена заявка е необходимо да се уверите, че сте прочели страницата [[{{MediaWiki:Requestaccount-page}}|Условия за ползване]].
 
-След като сметката бъде одобрена, ще получите оповестяващо съобщение на посочената електронна поща, че сметката може да бъде използвана за влизане чрез [[Special:Userlogin]].",
+След като сметката бъде одобрена, ще получите оповестяващо съобщение на посочената електронна поща, че сметката може да бъде използвана за влизане чрез [[Special:UserLogin]].",
 	'requestaccount-page'             => '{{ns:project}}:Условия за ползване',
 	'requestaccount-dup'              => "'''Забележка: Вече сте влезли с регистрирана потребителска сметка.'''",
 	'requestaccount-leg-user'         => 'Потребителска сметка',
@@ -900,7 +900,6 @@ $messages['da'] = array(
  * @author MF-Warburg
  * @author Raimond Spekking
  * @author Revolus
- * @author Raymond
  * @author Leithian
  */
 $messages['de'] = array(
@@ -909,7 +908,7 @@ $messages['de'] = array(
 
 Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor du ein Benutzerkonto beantragst.
 
-Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich [[Special:Userlogin|anmelden]].",
+Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich [[Special:UserLogin|anmelden]].",
 	'requestaccount-page'             => '{{ns:project}}:Nutzungsbedingungen',
 	'requestaccount-dup'              => "'''Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.'''",
 	'requestaccount-leg-user'         => 'Benutzerkonto',
@@ -1323,7 +1322,7 @@ $messages['fi'] = array(
 
 Muista ennen käyttäjätunnuksen pyytämistä lukea [[{{MediaWiki:Requestaccount-page}}|käyttöehdot]].
 
-Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sillä voi [[Special:Userlogin|kirjautua sisään]].",
+Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sillä voi [[Special:UserLogin|kirjautua sisään]].",
 	'requestaccount-page'             => '{{ns:project}}:Käyttöehdot',
 	'requestaccount-dup'              => "'''Huomio: Olet jo kirjautuneena rekisteröidyllä käyttäjätunnuksella.'''",
 	'requestaccount-leg-user'         => 'Käyttäjätunnus',
@@ -1697,7 +1696,6 @@ Ceci permet d’être sur la liste des contacts du site, si vous désirez en sav
 
 /** Franco-Provençal (Arpetan)
  * @author ChrisPtDe
- * @author SPQRobin
  */
 $messages['frp'] = array(
 	'requestaccount'             => 'Demanda de compto utilisator',
@@ -1706,7 +1704,7 @@ $messages['frp'] = array(
 	Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto.
 	
 	Un côp que lo compto est accèptâ, vos recevréd un mèl vos notifient que voutron compto porrat étre utilisâ dessus
-	[[Special:Userlogin]].",
+	[[Special:UserLogin]].",
 	'requestaccount-page'        => '{{ns:project}}:Condicions d’usâjo',
 	'requestaccount-dup'         => "'''Nota : vos éte ja sur una sèssion avouéc un compto enregistrâ.'''",
 	'requestaccount-acc-text'    => 'Un mèssâjo de confirmacion serat emmandâ a voutra adrèce èlèctronica un côp que la demanda arat étâ emmandâ. Dens lo mèl reçu, clicâd sur lo lim corrèspondent a la confirmacion de voutra demanda. Et pués, un mot de pâssa serat emmandâ per mèl quand voutron compto serat crèâ.',
@@ -2048,7 +2046,7 @@ $messages['he'] = array(
 
 לפני שאתם מבקשים חשבון, אנא ודאו כי קראתם קודם את [[{{MediaWiki:Requestaccount-page}}|תנאי השירות]].
 
-כשהחשבון יאושר, תישלח אליכם הודעה בדואר האלקטרוני ותוכלו [[Special:Userlogin|להיכנס אליו]].",
+כשהחשבון יאושר, תישלח אליכם הודעה בדואר האלקטרוני ותוכלו [[Special:UserLogin|להיכנס אליו]].",
 	'requestaccount-dup'        => "'''הערה: אתם כבר מחוברים עם חשבון רשום.'''",
 	'confirmaccount-submit'     => 'אישור',
 	'confirmaccount-needreason' => 'יש לספק סיבה בתיבת התגובה למטה.',
@@ -2196,7 +2194,7 @@ $messages['hr'] = array(
 
 Pročitajte [[{{MediaWiki:Requestaccount-page}}|Uvjete uporabe]] prije traženja suradničkog računa.
 
-Kad vam račun bude odobren, dobit ćete e-mail potvrdu i moći ćete se [[Special:Userlogin|prijaviti]].",
+Kad vam račun bude odobren, dobit ćete e-mail potvrdu i moći ćete se [[Special:UserLogin|prijaviti]].",
 	'requestaccount-page'             => '{{ns:project}}:Uvjeti korištenja',
 	'requestaccount-dup'              => "'''Već ste prijavljeni!'''",
 	'requestaccount-leg-user'         => 'Suradnički račun',
@@ -2319,7 +2317,6 @@ Provjerite je li ime točno napisano.',
 
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
- * @author Siebrand
  */
 $messages['hsb'] = array(
 	'requestaccount'                  => 'Wužiwarske konto sej žadać',
@@ -2327,7 +2324,7 @@ $messages['hsb'] = array(
 
 Prošu přečitaj najprjedy [[{{MediaWiki:Requestaccount-page}}|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
-Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a móžeš so pod \"[[Special:Userlogin|Konto wutworić abo so přizjewić]]\" přizjewić.",
+Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a móžeš so pod \"[[Special:UserLogin|Konto wutworić abo so přizjewić]]\" přizjewić.",
 	'requestaccount-page'             => '{{ns:project}}:Wužiwanske wuměnjenja',
 	'requestaccount-dup'              => "'''Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.'''",
 	'requestaccount-leg-user'         => 'Wužiwarske konto',
@@ -2515,7 +2512,7 @@ $messages['hu'] = array(
 
 Mindenek előtt olvasd el a [[{{MediaWiki:Requestaccount-page}}|használat feltételeit]].
 
-Ha a felhasználói fiókodat elfogadjuk, értesítve leszel e-mailben, ezután beléphetsz vele a [[Special:Userlogin|bejelentkezés]] lapon.",
+Ha a felhasználói fiókodat elfogadjuk, értesítve leszel e-mailben, ezután beléphetsz vele a [[Special:UserLogin|bejelentkezés]] lapon.",
 	'requestaccount-page'             => '{{ns:project}}:Használati feltételek',
 	'requestaccount-dup'              => "'''Megjegyzés: már be vagy jelentkezve egy regisztrált felhasználói fiókkal.'''",
 	'requestaccount-leg-user'         => 'Felhasználói fiók',
@@ -2699,7 +2696,7 @@ $messages['ia'] = array(
 
 Assecura te que tu primo lege le [[{{MediaWiki:Requestaccount-page}}|conditiones de servicio]] ante que tu requesta un conto.
 
-Quando le conto ha essite approbate, tu recipera in e-mail un message de notification e le conto essera usabile pro [[Special:Userlogin|aperir un session]].",
+Quando le conto ha essite approbate, tu recipera in e-mail un message de notification e le conto essera usabile pro [[Special:UserLogin|aperir un session]].",
 	'requestaccount-page'       => '{{ns:project}}:Conditiones de servicio',
 	'requestaccount-dup'        => "'''Nota: Tu es ja in un session aperte con un conto registrate.'''",
 	'requestaccount-leg-user'   => 'Conto de usator',
@@ -2840,7 +2837,7 @@ $messages['ja'] = array(
 
 アカウント申請を行う前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用条件]]をご一読下さい。
 
-申請が承認されると、通知メッセージと[[Special:Userlogin|ログイン]]のためのアカウントが、あなたの電子メールアドレスへ送信されます。",
+申請が承認されると、通知メッセージと[[Special:UserLogin|ログイン]]のためのアカウントが、あなたの電子メールアドレスへ送信されます。",
 	'requestaccount-page'             => '{{ns:project}}:サービス利用条件',
 	'requestaccount-dup'              => "'''注: あなたは既に登録済みアカウントでログインしています。'''",
 	'requestaccount-leg-user'         => '利用者アカウント',
@@ -3248,7 +3245,7 @@ $messages['lb'] = array(
 
 Passt op datt dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Conditioune vun der Notzung]] geliest hutt éier Dir e Benotzerkont ufrot.
 
-Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt äre Benotzerkont op [[Special:Userlogin|benotzen]].",
+Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt äre Benotzerkont op [[Special:UserLogin|benotzen]].",
 	'requestaccount-page'             => '{{ns:project}}:Notzungsbedingungen',
 	'requestaccount-dup'              => "'''Opgepasst: Dir sidd scho matt engem registréierte Benotzerkont ugemellt.'''",
 	'requestaccount-leg-user'         => 'Benotzerkont',
@@ -3462,7 +3459,7 @@ $messages['mr'] = array(
 
 अर्ज पाठविण्यापूर्वी तुम्ही [[{{MediaWiki:Requestaccount-page}}|अटी व नियम]] वाचलेले असल्याची खात्री करा.
 
-एकदा का खाते तयार झाले की तुम्हाला तसा इमेल संदेश येईल व तुम्ही [[Special:Userlogin]] मध्ये प्रवेश करू शकाल.",
+एकदा का खाते तयार झाले की तुम्हाला तसा इमेल संदेश येईल व तुम्ही [[Special:UserLogin]] मध्ये प्रवेश करू शकाल.",
 	'requestaccount-page'             => '{{ns:project}}:अटी व नियम',
 	'requestaccount-dup'              => "'''सूचना: तुम्ही अगोदरच नोंदीकृत खात्यामधून प्रवेश केलेला आहे.'''",
 	'requestaccount-leg-user'         => 'सदस्य खाते',
@@ -3710,7 +3707,7 @@ $messages['nl'] = array(
 
 Zorg ervoor dat u eerst de [[{{MediaWiki:Requestaccount-page}}|voorwaarden]] leest voordat u een gebruiker aanvraagt.
 
-Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Special:Userlogin|aanmelden]].",
+Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Special:UserLogin|aanmelden]].",
 	'requestaccount-page'             => '{{ns:project}}:Voorwaarden',
 	'requestaccount-dup'              => "'''Let op: u bent al aangemeld met een geregistreerde gebruikersnaam.'''",
 	'requestaccount-leg-user'         => 'Gebruiker',
@@ -3930,7 +3927,7 @@ $messages['no'] = array(
 
 Forsikre deg om at du først leser [[{{MediaWiki:Requestaccount-page}}|tjenestevilkårene]] før du etterspør en konto.
 
-Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne [[Special:Userlogin|logge inn]].",
+Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne [[Special:UserLogin|logge inn]].",
 	'requestaccount-page'             => '{{ns:project}}:Tjenestevilkår',
 	'requestaccount-dup'              => "'''Merk: Du er allerede logget inn med en registrert konto.'''",
 	'requestaccount-leg-user'         => 'Brukerkonto',
@@ -4124,7 +4121,7 @@ $messages['oc'] = array(
 	Asseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte.
 
 	Un còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus
-	[[Special:Userlogin]].",
+	[[Special:UserLogin]].",
 	'requestaccount-page'             => "{{ns:project}}:Condicions d'utilizacion",
 	'requestaccount-dup'              => "'''Nòta : Ja sètz sus una sesilha amb un compte enregistrat.'''",
 	'requestaccount-leg-user'         => "Compte d'utilizaire",
@@ -4304,7 +4301,7 @@ $messages['pl'] = array(
 
 Zanim jednak to zrobisz zapoznaj się z [[{{MediaWiki:Requestaccount-page}}|zasadami korzystania]] z {{GRAMMAR:D.lp|{{SITENAME}}}}.
 
-Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość e-mail i będziesz mógł [[Special:Userlogin|się zalogować]].",
+Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość e-mail i będziesz mógł [[Special:UserLogin|się zalogować]].",
 	'requestaccount-page'             => '{{ns:project}}:Zasady użytkowania',
 	'requestaccount-dup'              => "'''Uwaga: Jesteś już zalogowany na zarejestrowane konto.'''",
 	'requestaccount-leg-user'         => 'Konto użytkownika',
@@ -4627,7 +4624,6 @@ $3
 /** Portuguese (Português)
  * @author Malafaya
  * @author Lijealso
- * @author Siebrand
  */
 $messages['pt'] = array(
 	'requestaccount'                  => 'Requerer conta',
@@ -4635,7 +4631,7 @@ $messages['pt'] = array(
 
 Certifique-se de que lê primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.
 
-Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de notificação e a conta estará pronta a usar em [[Special:Userlogin]].",
+Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de notificação e a conta estará pronta a usar em [[Special:UserLogin]].",
 	'requestaccount-page'             => '{{ns:project}}:Termos de Serviço',
 	'requestaccount-dup'              => "'''Nota: Você já está logado com uma conta registada.'''",
 	'requestaccount-leg-user'         => 'Conta de utilizador',
@@ -4894,7 +4890,7 @@ $messages['ru'] = array(
 	Перед подачей запроса, пожалуйста, прочитайте [[{{MediaWiki:Requestaccount-page}}|Условия предоставления услуг]].
 	
 	После того, как учётная запись будет подтверждена, вам придёт уведомление по электронной почте, можно будет 
-	[[Special:Userlogin|представиться системе]].",
+	[[Special:UserLogin|представиться системе]].",
 	'requestaccount-page'             => '{{ns:project}}:Условия предоставления услуг',
 	'requestaccount-dup'              => "'''Примечание: вы уже представились системе с зарегистрированной учётной записи.'''",
 	'requestaccount-leg-user'         => 'Учётная запись',
@@ -5485,7 +5481,7 @@ $messages['sv'] = array(
 
 Se till att du har läst [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] innan du frågar efter ett konto.
 
-När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till dig och ditt konto kan användas på [[Special:Userlogin]].",
+När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till dig och ditt konto kan användas på [[Special:UserLogin]].",
 	'requestaccount-page'             => '{{ns:project}}:Användningsvillkor',
 	'requestaccount-dup'              => "'''Notera: Du är redan inloggad med ett registrerat konto.'''",
 	'requestaccount-leg-user'         => 'Användarkonto',
@@ -5693,7 +5689,7 @@ $messages['te'] = array(
 
 ఖాతా కావాలని అడిగే ముందు [[{{MediaWiki:Requestaccount-page}}|సేవా నియమాలను]] తప్పక చదవండి.
 
-ఖాతాను అనుమతించాక, ఆ సంగతి తెలుపుతూ మీకో ఈమెయిలు వస్తుంది. ఖాతా వివరాలను [[Special:Userlogin]] వద్ద వాడుకోవచ్చు.",
+ఖాతాను అనుమతించాక, ఆ సంగతి తెలుపుతూ మీకో ఈమెయిలు వస్తుంది. ఖాతా వివరాలను [[Special:UserLogin]] వద్ద వాడుకోవచ్చు.",
 	'requestaccount-page'             => '{{ns:project}}:సేవా నియమాలు',
 	'requestaccount-dup'              => "'''గమనిక: మీరు ఈసరికే నమోదైన ఖాతాతో లోనికి ప్రవేశించారు.'''",
 	'requestaccount-leg-user'         => 'వాడుకరి ఖాతా',
@@ -5870,7 +5866,7 @@ $messages['tg-cyrl'] = array(
 
 Мутмани бошед, ки шумо аввал [[{{MediaWiki:Requestaccount-page}}|Шартҳои Хидматро]] қабл аз дахости ҳисоб хондаед.
 
-Дар ҳоли тасдиқ шудани ҳисоб, паёми огоҳсозӣ тариқи почтаи электронӣ ба шумо фиристода хоҳад шуд ва ҳисоби шумо дар [[Special:Userlogin]] қобили истифода хоҳад шуд.",
+Дар ҳоли тасдиқ шудани ҳисоб, паёми огоҳсозӣ тариқи почтаи электронӣ ба шумо фиристода хоҳад шуд ва ҳисоби шумо дар [[Special:UserLogin]] қобили истифода хоҳад шуд.",
 	'requestaccount-page'             => '{{ns:project}}:Шартҳои Хидмат',
 	'requestaccount-dup'              => "'''Эзоҳ: Шумо аллакай бо ҳисоби сабтшуда вуруд кардаед.'''",
 	'requestaccount-leg-user'         => 'Ҳисоби корбар',
@@ -6046,7 +6042,7 @@ $messages['uk'] = array(
 
 Будь ласка, спершу прочитайте [[{{MediaWiki:Requestaccount-page}}|Умови надання послуг]].
 
-Після того, як обліковий запис буде підтверджено, вас буде повідомлено про це електронною поштою і ви зможете [[Special:Userlogin|ввійти до системи]].",
+Після того, як обліковий запис буде підтверджено, вас буде повідомлено про це електронною поштою і ви зможете [[Special:UserLogin|ввійти до системи]].",
 	'requestaccount-page'      => '{{ns:project}}:Умови надання послуг',
 	'requestaccount-dup'       => "'''Примітка: Ви вже ввійшли в систему із зареєстрованого облікового запису.'''",
 	'requestaccount-leg-user'  => 'Обліковий запис',
