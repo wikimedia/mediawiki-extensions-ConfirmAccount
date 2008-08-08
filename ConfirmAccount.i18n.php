@@ -14,7 +14,7 @@ $messages['en'] = array(
 	
 Make sure that you first read the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] before requesting an account.
 
-Once the account is approved, you will be e-mailed a notification message and the account will be usable at [[Special:Userlogin|login]].',
+Once the account is approved, you will be e-mailed a notification message and the account will be usable at [[Special:UserLogin|login]].',
 	'requestaccount-footer'     => '', # only translate this message to other languages if you have to change it
 	'requestaccount-page'       => '{{ns:project}}:Terms of Service',
 	'requestaccount-dup'        => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
@@ -178,7 +178,7 @@ Account name: $1
 Password: $2
 
 For security reasons you will need to change your password on first login.
-To login, please go to {{fullurl:Special:Userlogin}}.',
+To login, please go to {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Your request for an account has been approved on {{SITENAME}}.
 
 Account name: $1
@@ -188,7 +188,7 @@ Password: $2
 $3
 
 For security reasons you will need to change your password on first login.
-To login, please go to {{fullurl:Special:Userlogin}}.',
+To login, please go to {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3' => 'Sorry, your request for an account "$1" has been rejected on {{SITENAME}}.
 
 There are several ways this can happen.
