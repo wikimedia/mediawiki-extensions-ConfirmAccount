@@ -471,7 +471,7 @@ $3
 كلمة السر: $2
 
 لمتطلبات السرية ستضطر إلى تغيير كلمة السر الخاصة بك عند أول دخول. للدخول، من فضلك اذهب إلى 
-{{fullurl:Special:Userlogin}}.',
+{{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'طلبك لحساب تمت الموافقة عليه في {{SITENAME}}.
 
 اسم الحساب: $1
@@ -481,7 +481,7 @@ $3
 $3
 
 لمتطلبات السرية ستضطر إلى تغيير كلمة السر الخاصة بك عند أول دخول. للدخول، من فضلك اذهب إلى 
-{{fullurl:Special:Userlogin}}.',
+{{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'عذرا، طلبك لحساب "$1" تم رفضه في {{SITENAME}}.
 
 هناك عدة طرق لحدوث هذا.
@@ -662,7 +662,7 @@ $3
 
 Парола: $2
 
-От съображения за сигурност, при първото си влизане в системата трябва да промените паролата си. За влизане в системата, използвайте {{fullurl:Special:Userlogin}}.',
+От съображения за сигурност, при първото си влизане в системата трябва да промените паролата си. За влизане в системата, използвайте {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Заявката за създаване на потребителска сметка в {{SITENAME}} беше одобрена.
 
 Потребителско име: $1
@@ -671,7 +671,7 @@ $3
 
 $3
 
-От съображения за сигурност е препоръчително паролата да бъде сменена след първото влизане. За влизане използвайте следната препратка - {{fullurl:Special:Userlogin}}.',
+От съображения за сигурност е препоръчително паролата да бъде сменена след първото влизане. За влизане използвайте следната препратка - {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Заявката за създаване на потребителска сметка „$1“ в {{SITENAME}} беше отказана.
 
 Съществуват няколко възможни причини за това. Възможно е формулярът да не е бил попълнен коректно, полетата да не съдържат изчерпателна информация или въведените данни да са в конфликт с някое от правилата и политиката на сайта. На сайта има повече информация за политиката за създаване на потребителски сметки.',
@@ -1265,7 +1265,7 @@ Nomo de konto: $1
 
 Pasvorto: $2
 
-Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:Userlogin}}.',
+Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Via peto por konto estis aprobita ĉe {{SITENAME}}.
 
 Nomo de konto: $1
@@ -1274,7 +1274,7 @@ Pasvorto: $2
 
 $3
 
-Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:Userlogin}}.',
+Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:UserLogin}}.',
 	'usercredentials-user'            => 'Salutnomo:',
 	'usercredentials-leg-user'        => 'Konto de uzanto',
 	'usercredentials-leg-areas'       => 'Ĉefaj fakoj de intereso',
@@ -1460,7 +1460,7 @@ Käyttäjätunnus: $1
 
 Salasana: $2
 
-Salasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:Userlogin}}.',
+Salasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Pyytämäsi käyttäjätunnus sivulle {{SITENAME}} on hyväksytty.
 
 Käyttäjätunnus: $1
@@ -1469,7 +1469,7 @@ Salasana: $2
 
 $3
 
-Salasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:Userlogin}}.',
+Salasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Valitettavasti pyyntösi käyttäjätunnuksesta "$1" sivulle {{SITENAME}} on hylätty.
 
 Hylkäämisen mahdollisia syitä on useita.
@@ -1510,7 +1510,6 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  * @author Sherbrooke
  * @author Urhixidur
  * @author Meithal
- * @author SPQRobin
  * @author Louperivois
  */
 $messages['fr'] = array(
@@ -1653,7 +1652,7 @@ Nom du compte utilisateur : $1
 Mot de passe : $2
 
 Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur
-{{fullurl:Special:Userlogin}}.',
+{{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Votre demande de compte utilisateur a été acceptée sur {{SITENAME}}.
 
 Nom du compte utilisateur : $1
@@ -1663,7 +1662,7 @@ Mot de passe: $2
 $3
 
 Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur 
-{{fullurl:Special:Userlogin}}.',
+{{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
 Plusieurs raisons peuvent expliquer ce cas de figure. Il est possible que vous ayez mal rempli le formulaire, ou que vous n’ayez pas indiqué suffisamment d’informations dans vos réponses. Il est encore possible que vous ne remplissiez pas les critères d’éligibilité pour obtenir votre compte. Il est possible d’être sur la liste des contacts si vous désirez mieux connaître les conditions requises.',
@@ -1763,10 +1762,12 @@ Ceti code de confirmacion èxpire lo $4.',
  * @author Snakesteuben
  */
 $messages['fy'] = array(
+	'requestaccount-level-0'  => 'auteur',
 	'requestaccount-level-1'  => 'redakteur',
 	'confirmaccount-real-q'   => 'Namme',
 	'confirmaccount-name'     => 'Meidoggernamme',
 	'confirmaccount-real'     => 'Namme:',
+	'confirmaccount-pos-0'    => 'auteur',
 	'confirmaccount-pos-1'    => 'redakteur',
 	'confirmaccount-noreason' => '(gjin)',
 	'usercredentials-user'    => 'Meidoggernamme:',
@@ -1776,7 +1777,6 @@ $messages['fy'] = array(
  * @author Xosé
  * @author Alma
  * @author Toliño
- * @author SPQRobin
  */
 $messages['gl'] = array(
 	'requestaccount'                  => 'Solicitar unha conta',
@@ -1930,7 +1930,7 @@ Nome da conta: $1
 Contrasinal: $2
 
 Por razóns de seguranza terá que mudar o contrasinal a primeira vez que se rexistre. Para rexistrarse,
-vaia a {{fullurl:Special:Userlogin}}.',
+vaia a {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Aprobouse a súa solicitude de conta en {{SITENAME}}.
 
 Nome da conta: $1
@@ -1940,7 +1940,7 @@ Contrasinal: $2
 $3
 
 Por razóns de seguranza terá que mudar o contrasinal a primeira vez que se rexistre. Para rexistrarse,
-vaia a {{fullurl:Special:Userlogin}}.',
+vaia a {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Sentímolo, pero a súa solicitude de conta $1 foi rexeitada en {{SITENAME}}.
 
 Isto pode deberse a varias causas. Pode que non enchese o formulario correctamente, non respondese na extensión
@@ -2646,7 +2646,7 @@ Felhasználói név: $1
 Jelszó: $2
 
 Biztonsági okok miatt meg kell változtatnod a jelszavadat az első bejelentkezésed során. A bejelentkezéshez menj a
-{{fullurl:Special:Userlogin}} lapra.',
+{{fullurl:Special:UserLogin}} lapra.',
 	'confirmaccount-email-body2'      => 'A felhasználói fiók-kérelmedet elfogadtuk a(z) {{SITENAME}} wikin.
 
 Felhasználói név: $1
@@ -2656,7 +2656,7 @@ Jelszó: $2
 $3
 
 Biztonsági okok miatt meg kell változtatnod a jelszavadat az első bejelentkezésed során. A bejelentkezéshez menj a
-{{fullurl:Special:Userlogin}} lapra.',
+{{fullurl:Special:UserLogin}} lapra.',
 	'confirmaccount-email-body3'      => 'Sajnálattal közöljük, hogy a regisztrációdat („$1”) elutasították a(z) {{SITENAME}} wikin.
 
 Számos oka lehet a dolognak. Lehet, hogy nem töltötted ki helyesen az űrlapot, nem adtál meg elég információt, vagy más irányelv miatt utasítottak vissza.  Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolatos irányelvekről, az oldalon megtalálhatod a kapcsolattartási listát.',
@@ -2833,7 +2833,6 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author JtFuruhata
- * @author Siebrand
  */
 $messages['ja'] = array(
 	'requestaccount'                  => 'アカウント登録申請',
@@ -2976,7 +2975,7 @@ $3
 パスワード: $2
 
 セキュリティ上の理由により、初回ログイン時に上記パスワードを変更する必要があります。
-{{fullurl:Special:Userlogin}} よりログインしてください。',
+{{fullurl:Special:UserLogin}} よりログインしてください。',
 	'confirmaccount-email-body2'      => 'あなたによる {{SITENAME}} でのアカウント申請は、承認されました。
 
 　利用者名: $1
@@ -2986,7 +2985,7 @@ $3
 $3
 
 セキュリティ上の理由により、初回ログイン時に上記パスワードを変更する必要があります。
-{{fullurl:Special:Userlogin}} よりログインしてください。',
+{{fullurl:Special:UserLogin}} よりログインしてください。',
 	'confirmaccount-email-body3'      => '申し訳ありません、{{SITENAME}} におけるアカウント "$1" の申請は、棄却されました。
 
 これにはいくつかの理由が考えられます。
@@ -3182,7 +3181,7 @@ $messages['km'] = array(
 
 ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
 
-ឡុកអ៊ីន សូមទៅកាន់ {{fullurl:Special:Userlogin}} ។',
+ឡុកអ៊ីន សូមទៅកាន់ {{fullurl:Special:UserLogin}} ។',
 	'confirmaccount-email-body2'      => 'សំនើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
 
 ឈ្មោះគណនី: $1
@@ -3193,7 +3192,7 @@ $3
 
 ដើម្បីសុវត្ថិភាពអ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
 
-ឡុកអ៊ីន សូមទៅកាន់{{fullurl:Special:Userlogin}} ។',
+ឡុកអ៊ីន សូមទៅកាន់{{fullurl:Special:UserLogin}} ។',
 	'usercredentials-user'            => 'ឈ្មោះអ្នកប្រើប្រាស់៖',
 	'usercredentials-leg-user'        => 'គណនីអ្នកប្រើប្រាស់',
 	'usercredentials-leg-person'      => 'ពត៌មាន ផ្ទាល់ខ្លួន',
@@ -3601,7 +3600,7 @@ $3
 
 परवलीचा शब्द: $2
 
-सुरक्षेच्या कारणास्तव पहिल्यांदा प्रवेश केल्यानंतर तुमचा परवलीचा शब्द बदलणे आवश्यक आहे. प्रवेश करण्यासाठी, कृपया {{fullurl:Special:Userlogin}} इथे जा.',
+सुरक्षेच्या कारणास्तव पहिल्यांदा प्रवेश केल्यानंतर तुमचा परवलीचा शब्द बदलणे आवश्यक आहे. प्रवेश करण्यासाठी, कृपया {{fullurl:Special:UserLogin}} इथे जा.',
 	'confirmaccount-email-body2'      => '{{SITENAME}} वरची तुमची "$1" खाते मागणी स्वीकारण्यात आलेली आहे.
 
 खाते नाव: $1
@@ -3610,7 +3609,7 @@ $3
 
 $3
 
-सुरक्षेच्या कारणास्तव पहिल्यांदा प्रवेश केल्यावर तुम्हाला परवलीचा शब्द बदलावा लागेल. प्रवेश करण्यासाठी {{fullurl:Special:Userlogin}} इथे जा.',
+सुरक्षेच्या कारणास्तव पहिल्यांदा प्रवेश केल्यावर तुम्हाला परवलीचा शब्द बदलावा लागेल. प्रवेश करण्यासाठी {{fullurl:Special:UserLogin}} इथे जा.',
 	'confirmaccount-email-body3'      => 'माफ करा, {{SITENAME}} वरची तुमची "$1" खाते मागणी नाकारण्यात आलेली आहे.
 
 याची अनेक कारणे असू शकतात.
@@ -3924,7 +3923,6 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
- * @author Siebrand
  */
 $messages['no'] = array(
 	'requestaccount'                  => 'Etterspør konto',
@@ -4058,7 +4056,7 @@ Kontonavn: $1
 
 Passord: $2
 
-Av sikkerhetsgrunner må du endre passordet etter første innlogging. Gå til {{fullurl:Special:Userlogin}} for å logge inn.',
+Av sikkerhetsgrunner må du endre passordet etter første innlogging. Gå til {{fullurl:Special:UserLogin}} for å logge inn.',
 	'confirmaccount-email-body2'      => 'Din forespørsel om en konto på {{SITENAME}} har blitt godkjent.
 
 Kontonavn: $1
@@ -4067,7 +4065,7 @@ Passord: $2
 
 $3
 
-Av sikkerhetsgrunner må du endre passordet etter første innlogging. Gå til {{fullurl:Special:Userlogin}} for å logge inn.',
+Av sikkerhetsgrunner må du endre passordet etter første innlogging. Gå til {{fullurl:Special:UserLogin}} for å logge inn.',
 	'confirmaccount-email-body3'      => 'Beklager, din forespørsel om kontoen «$1» på {{SITENAME}} har blitt avvist.
 
 Det er flere mulige grunner til at dette har skjedd. Du har muligens ikke fylt inn skjemaet korrekt, har ikke svart utfyllende nok, eller møter på en annen måte ikke kriteriene. Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.',
@@ -4251,8 +4249,8 @@ Desiraratz, benlèu, legir [[{{MediaWiki:Helppage}}|cossí plan amodar]].
 Benvenguda encara e bona contribucions.",
 	'confirmaccount-wsum'             => 'Benvenguda !',
 	'confirmaccount-email-subj'       => '{{SITENAME}} demanda de compte',
-	'confirmaccount-email-body'       => "Vòstra demanda de compte es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal : $2 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:Userlogin}}.",
-	'confirmaccount-email-body2'      => "Vòstra demanda de compte d'utilizaire es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal: $2 $3 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:Userlogin}}.",
+	'confirmaccount-email-body'       => "Vòstra demanda de compte es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal : $2 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:UserLogin}}.",
+	'confirmaccount-email-body2'      => "Vòstra demanda de compte d'utilizaire es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal: $2 $3 Per de rasons de seguretat, deuretz cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:UserLogin}}.",
 	'confirmaccount-email-body3'      => 'O planhèm, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. Mantuna rason pòdon explicar aqueste cas de figura. Es possible que ajatz mal emplenat lo formulari, o que ajatz pas indicat sufisentament d’informacions dins vòstras responsas. Es encara possible que emplenetz pas los critèris d’eligibilitat per obténer vòstre compte. Es possible d’èsser sus la lista dels contactes se desiratz conéisser melhor las condicions requesas.',
 	'confirmaccount-email-body4'      => 'O planhèm, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. $2 Es possible d’èsser sus la lista dels contactes per conéisser melhor los critèris per poder s’inscriure.',
 	'confirmaccount-email-body5'      => 'Abans que vòstra requèsta pel compte « $1 » pòsca èsser acceptada sus {{SITENAME}}, vos cal produire qualques entresenhas suplementàrias.
@@ -4451,7 +4449,7 @@ Nazwa użytkownika: $1
 Hasło: $2
 
 Z uwagi na bezpieczeństwo użytkowania, przy pierwszym logowaniu zostaniesz poproszony o zmianę hasła.
-Zaloguj się na stronie {{fullurl:Special:Userlogin}}.',
+Zaloguj się na stronie {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Twoja prośba o konto została przyjęta na {{SITENAME}}.
 
 Nazwa: $1
@@ -4461,7 +4459,7 @@ Hasło: $2
 $3
 
 Z powodów bezpieczeństwa będziesz musiał zmienić hasło przy pierwszym logowaniu.
-By się zalogować przejdź do {{fullurl:Special:Userlogin}}.',
+By się zalogować przejdź do {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Niestety złożony przez Ciebie w {{GRAMMAR:MS.lp|{{SITENAME}}}} wniosek o założenie konta „$1” został odrzucony.
 
 Możliwe przyczyny odrzucenia wniosku to:
@@ -4499,7 +4497,6 @@ Sprawdź, czy prawidłowo wpisałeś nazwę konta.',
 
 /** Piedmontese (Piemontèis)
  * @author Bèrto 'd Sèra
- * @author SPQRobin
  */
 $messages['pms'] = array(
 	'requestaccount'             => 'Ciamé un cont',
@@ -4566,10 +4563,10 @@ Quand ël cont a vnirà creà, soa la ciav a sarà mandà mach a st'adrëssa-sì
 	'confirmaccount-email-subj'  => 'Domanda dë deurbe un cont neuv ansima a {{SITENAME}}',
 	'confirmaccount-email-body'  => "Soa domanda dë deurbe un cont neuv ansima a {{SITENAME}} a l'é staita aprovà. Stranòm: $1 Ciav: $2 
 
-Për na question ëd sigurëssa a fa da manca che un as cambia soa ciav la prima vira ch'a rintra ant ël sistema. Për rintré, për piasì ch'a vada a l'adrëssa {{fullurl:Special:Userlogin}}.",
+Për na question ëd sigurëssa a fa da manca che un as cambia soa ciav la prima vira ch'a rintra ant ël sistema. Për rintré, për piasì ch'a vada a l'adrëssa {{fullurl:Special:UserLogin}}.",
 	'confirmaccount-email-body2' => "Soa domanda dë deurbe un cont neuv ansima a {{SITENAME}} a l'é staita aprovà. Stranòm: $1 Ciav: $2 $3 
 
-Për na question ëd sigurëssa un a venta ch'as cambia soa ciav la prima vira ch'a rintra ant ël sistema. Për rintré, për piasì ch'a vada a l'adrëssa {{fullurl:Special:Userlogin}}.",
+Për na question ëd sigurëssa un a venta ch'as cambia soa ciav la prima vira ch'a rintra ant ël sistema. Për rintré, për piasì ch'a vada a l'adrëssa {{fullurl:Special:UserLogin}}.",
 	'confirmaccount-email-body3' => "Për darmagi soa domanda dë deurbe un cont ciamà \"\$1\" ansima a {{SITENAME}} a l'é staita bocià. A-i son vàire rason përchè sossì a peula esse rivà. A peul esse ch'a l'abia pa compilà giust la domanda, che soe arspòste a sio staite tròp curte, ò pura che an chèich àotra manera a l'abia falì da rintré ant ël criteri d'aprovassion. A peul esse che ant sël sit a sio specificà dle liste postaj ch'a peul dovré për ciamé pì d'anformassion ansima ai criteri d'aprovassion dovrà.",
 	'confirmaccount-email-body4' => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a Betawiki a l\'é staita bocià. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 	'confirmaccount-email-body5' => 'Anans che soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a peula esse acetà, a dovrìa lassene dj\'anformassion adissionaj. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
@@ -4608,7 +4605,7 @@ $messages['ps'] = array(
 
 پټنوم: $2
 
-د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:Userlogin}} ولاړ شی.',
+د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:UserLogin}} ولاړ شی.',
 	'confirmaccount-email-body2' => 'په {{SITENAME}} باندې د يوه کارن-حساب لپاره غوښتنه مو ومنل شوه .
 
 د کارن-حساب نوم: $1
@@ -4617,7 +4614,7 @@ $messages['ps'] = array(
 
 $3
 
-د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:Userlogin}} ولاړ شی.',
+د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:UserLogin}} ولاړ شی.',
 	'usercredentials-user'       => 'کارن-نوم:',
 	'usercredentials-leg-person' => 'ځاني مالومات',
 	'usercredentials-leg-other'  => 'نور مالومات',
@@ -5034,7 +5031,7 @@ $3
 Пароль: $2
 
 По соображениям безопасности, после первого входа в систему вам нужно будет изменить пароль. Представиться системе можно на странице 
-{{fullurl:Special:Userlogin}}.',
+{{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Ваш запрос на создание учётной записи в {{SITENAME}} был утверждён.
 
 Название учётной записи: $1
@@ -5044,7 +5041,7 @@ $3
 $3
 
 По соображениям безопасности, после первого входа в систему вам нужно будет изменить пароль. Представиться системе можно на странице 
-{{fullurl:Special:Userlogin}}.',
+{{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Извините, ваш запрос на создание учётной записи «$1» на сайте {{SITENAME}} был отклонён.
 
 Это могло произойти по различным причинам. Возможно, вы неверно заполнили поля формы, ваши ответы были недостаточно полными
@@ -5084,7 +5081,6 @@ $2
 
 /** Slovak (Slovenčina)
  * @author Helix84
- * @author SPQRobin
  */
 $messages['sk'] = array(
 	'requestaccount'                  => 'Vyžiadať účet',
@@ -5098,7 +5094,10 @@ $messages['sk'] = array(
 	'requestaccount-acc-text'         => 'Na vašu emailovú adresu bude po odoslaní žiadosti zaslaná potvrdzujúca správa. Prosím, reagujte na ňu kliknutím na odkaz v nej. Potom ako bude váš účet vytvorený, dostanete emailom heslo k nemu.',
 	'requestaccount-areas-text'       => 'Nižšie zvoľte tematické oblasti v ktorých ste formálne expertom alebo by ste v nich radi vykonávali väčšinu práce.',
 	'requestaccount-ext-text'         => 'Nasledovné informácie budú držané v tajnosti a použijú sa iba na účel tejto žiadosti. Možno budete chcieť uviesť kontakty ako telefónne číslo, ktoré môžu pomôcť pri potvrdení.',
-	'requestaccount-bio-text'         => 'Vaša biografia bude prvotným obsahom vašej používateľskej stránky. Pokúste sa uviesť všetky referencie. Zvážte, či ste ochotní zverejniť tieto informácie. Vaše meno je možné zmeniť pomocou [[Special:Preferences]].',
+	'requestaccount-bio-text'         => 'Vaša biografia bude prvotným obsahom vašej používateľskej stránky.
+Pokúste sa uviesť všetky referencie.
+Zvážte, či ste ochotní zverejniť tieto informácie.
+Vaše meno je možné zmeniť vo vašich [[Special:Preferences|nastaveniach]].',
 	'requestaccount-real'             => 'Skutočné meno:',
 	'requestaccount-same'             => '(rovnaké ako skutočné meno)',
 	'requestaccount-email'            => 'Emailová adresa:',
@@ -5215,8 +5214,8 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 	'confirmaccount-welc'             => "'''Vitajte v ''{{GRAMMAR:lokál|{{SITENAME}}}}''!''' Dúfame, že budete prispievať vo veľkom množstve a kvalitne. Pravdepodobne si budete chcieť prečítať [[{{MediaWiki:Helppage}}|Začíname]]. Tak ešte raz vitajte a bavte sa!",
 	'confirmaccount-wsum'             => 'Vitajte!',
 	'confirmaccount-email-subj'       => 'žiadosť o účet {{GRAMMAR:genitív|{{SITENAME}}}}',
-	'confirmaccount-email-body'       => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body2'      => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 $3 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body'       => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2'      => 'Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 $3 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Je nám ľúto, ale vaša žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} bola zamietnutá. Je niekoľko dôvodov, prečo sa to mohlo stať. Buď ste nevyplnili formulár správne, neposkytli ste požadovanú dĺžku vašich odpovedí alebo inak ste nesplnili kritériá. Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
 	'confirmaccount-email-body4'      => 'Je nám ľúto, ale vaša žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} bola zamietnutá.
 
@@ -5366,7 +5365,7 @@ Paaswoud: $2
 
 Uut Sicherhaidsgruunden schuust du dien Paaswoud uunbedingd bie dät eerste
 Ienlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede
-{{fullurl:Special:Userlogin}}.',
+{{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Dien Froage uum n Benutserkonto bie {{SITENAME}} wuude bestäätiged. 
 
 Benutsernoome: $1 
@@ -5375,7 +5374,7 @@ Paaswoud: $2
 
 $3
 
-Uut Sicherhaidsgruunden schuust du dien Paaswoud uunbedingd bie dät eerste Ienlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede {{fullurl:Special:Userlogin}}.',
+Uut Sicherhaidsgruunden schuust du dien Paaswoud uunbedingd bie dät eerste Ienlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3' => 'Spietelk wuude dien Froage uum n Benutserkonto „$1“ 
 bie {{SITENAME}} ouliend.
 
@@ -5623,7 +5622,7 @@ Användarnamn: $1
 
 Lösenord: $2
 
-Av säkerhetsskäl måste du byta lösenord första gången du loggar in. För att logga in, gå till {{fullurl:Special:Userlogin}}.',
+Av säkerhetsskäl måste du byta lösenord första gången du loggar in. För att logga in, gå till {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Din ansökan om ett konto på {{SITENAME}} har godkänts.
 
 Användarnamn: $1
@@ -5632,7 +5631,7 @@ Lösenord: $2
 
 $3
 
-Av säkerhetsskäl måste du byta lösenord första gången du loggar in. För att logga in, gå till {{fullurl:Special:Userlogin}}.',
+Av säkerhetsskäl måste du byta lösenord första gången du loggar in. För att logga in, gå till {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Tyvärr har din ansökan om kontot "$1" på {{SITENAME}} avslagits.
 
 Det kan finnas flera orsaker till det.
@@ -5812,7 +5811,7 @@ $3
 
 సంకేతపదం: $2
 
-భద్రతా కారణాల వల్ల మీ మొదటి ప్రవేశంలో మీ సంకేతపదాన్ని మార్చుకోవాలి. ప్రవేశించడానికి, {{fullurl:Special:Userlogin}}కి వెళ్ళండి.',
+భద్రతా కారణాల వల్ల మీ మొదటి ప్రవేశంలో మీ సంకేతపదాన్ని మార్చుకోవాలి. ప్రవేశించడానికి, {{fullurl:Special:UserLogin}}కి వెళ్ళండి.',
 	'confirmaccount-email-body2'      => '{{SITENAME}}లో ఖాతా కొరకు మీ అభ్యర్థనని సమ్మతించాము.
 
 ఖాతా పేరు: $1
@@ -5821,7 +5820,7 @@ $3
 
 $3
 
-భద్రతా కారణాల వల్ల మీ మొదటి ప్రవేశంలో మీ సంకేతపదాన్ని మార్చుకోవాలి. ప్రవేశించడానికి, {{fullurl:Special:Userlogin}}కి వెళ్ళండి.',
+భద్రతా కారణాల వల్ల మీ మొదటి ప్రవేశంలో మీ సంకేతపదాన్ని మార్చుకోవాలి. ప్రవేశించడానికి, {{fullurl:Special:UserLogin}}కి వెళ్ళండి.',
 	'confirmaccount-email-body4'      => 'క్షమించండి, {{SITENAME}}లో "$1" అనే ఖాతా కొరకు మీ అభ్యర్థనని తిరస్కరించారు.
 
 $2
@@ -5862,9 +5861,8 @@ $messages['tet'] = array(
 	'usercredentials-email'  => 'Korreiu eletróniku:',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
  * @author Ibrahim
- * @author Siebrand
  */
 $messages['tg-cyrl'] = array(
 	'requestaccount'                  => 'Дархости ҳисоб',
@@ -5969,7 +5967,7 @@ $3
 Гузарвожа: $2
 
 Аз сабабҳои амниятӣ, шумо бояд дар вурудшваии аввалин гузарвожаи худро тағйир диҳед.
-Барои вуруд шудан, лутфан равед ба {{fullurl:Special:Userlogin}}.',
+Барои вуруд шудан, лутфан равед ба {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2'      => 'Дархости шумо барои ҳисобе дар {{SITENAME}} тасдиқ шуд.
 
 Номи ҳисоб: $1
@@ -5979,7 +5977,7 @@ $3
 $3
 
 Аз сабабҳои амниятӣ, шумо бояд дар вурудшваии аввалин гузарвожаи худро тағйир диҳед.
-Барои вуруд шудан, лутфан равед ба {{fullurl:Special:Userlogin}}.',
+Барои вуруд шудан, лутфан равед ба {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3'      => 'Бубахшед, дархости шумо барои ҳисоби "$1" дар {{SITENAME}} рад шуд.
 
 Чанд сабабҳое ҳастанд ки боиси рад шудан мешаванд.
@@ -6021,7 +6019,7 @@ $messages['th'] = array(
 $3
 
 สำหรับเหตุผลทางความปลอดภัยคุณจะต้องเปลี่ยนรหัสผ่านของคุณหลังจากที่ล็อกอินครั้งแรก
-กรุณาไปที่ {{fullurl:Special:Userlogin}} เพื่อล็อกอิน',
+กรุณาไปที่ {{fullurl:Special:UserLogin}} เพื่อล็อกอิน',
 );
 
 /** Turkish (Türkçe)
