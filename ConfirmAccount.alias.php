@@ -20,14 +20,18 @@ $aliases['en'] = array(
  * @author Meno25
  */
 $aliases['ar'] = array(
+	'RequestAccount'  => array( 'طلب_حساب' ),
 	'ConfirmAccounts' => array( 'تأكيد_الحساب' ),
+	'UserCredentials' => array( 'شهادات_المستخدم' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
  */
 $aliases['arz'] = array(
+	'RequestAccount'  => array( 'طلب_حساب' ),
 	'ConfirmAccounts' => array( 'تأكيد_الحساب' ),
+	'UserCredentials' => array( 'شهادات_المستخدم' ),
 );
 
 /** Finnish (Suomi) */
@@ -79,6 +83,7 @@ $aliases['ms'] = array(
 
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
+	'RequestAccount'  => array( 'GebruikerAanvragen' ),
 	'ConfirmAccounts' => array( 'GebruikerBevestigen' ),
 );
 
@@ -108,3 +113,4 @@ $aliases['sv'] = array(
 $aliases['th'] = array(
 	'ConfirmAccounts' => array( 'ยืนยันบัญชีผู้ใช้' ),
 );
+
