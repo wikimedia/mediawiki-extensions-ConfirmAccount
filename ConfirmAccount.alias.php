@@ -20,7 +20,7 @@ $aliases['en'] = array(
  * @author Meno25
  */
 $aliases['ar'] = array(
-	'RequestAccount'  => array( 'طلب_حساب' ),
+	'RequestAccount' => array( 'طلب_حساب' ),
 	'ConfirmAccounts' => array( 'تأكيد_الحساب' ),
 	'UserCredentials' => array( 'شهادات_المستخدم' ),
 );
@@ -29,7 +29,7 @@ $aliases['ar'] = array(
  * @author Meno25
  */
 $aliases['arz'] = array(
-	'RequestAccount'  => array( 'طلب_حساب' ),
+	'RequestAccount' => array( 'طلب_حساب' ),
 	'ConfirmAccounts' => array( 'تأكيد_الحساب' ),
 	'UserCredentials' => array( 'شهادات_المستخدم' ),
 );
@@ -83,7 +83,7 @@ $aliases['ms'] = array(
 
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
-	'RequestAccount'  => array( 'GebruikerAanvragen' ),
+	'RequestAccount' => array( 'GebruikerAanvragen' ),
 	'ConfirmAccounts' => array( 'GebruikerBevestigen' ),
 );
 
@@ -91,7 +91,8 @@ $aliases['nl'] = array(
  * @author Jon Harald Søby
  */
 $aliases['no'] = array(
-	'ConfirmAccounts' => array( 'Bekreft_konto' ),
+	'RequestAccount' => array( 'Etterspør konto' ),
+	'ConfirmAccounts' => array( 'Bekreft konto' ),
 );
 
 /** Portuguese (Português) */
