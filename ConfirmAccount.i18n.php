@@ -226,7 +226,9 @@ Check that the name is spelled correctly.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Jon Harald Søby
  * @author Lejonel
+ * @author Siebrand
  */
 $messages['qqq'] = array(
 	'requestaccount' => '{{Identical|Request account}}',
@@ -2791,12 +2793,177 @@ Tu nomine pote esser cambiate in [[Special:Preferences|tu preferentias]].',
 	'requestaccount-level-1' => 'contributor',
 	'requestaccount-bio' => 'Biographia personal:',
 	'requestaccount-attach' => 'Resume o CV (optional):',
+	'requestaccount-notes' => 'Notas additional:',
+	'requestaccount-urls' => 'Lista de sitos web, si alcun (un per linea):',
+	'requestaccount-agree' => 'Tu debe certificar que tu nomine real es correcte e que tu accepta nostre Conditiones de Servicio.',
+	'requestaccount-inuse' => 'Le nomine de usator es ja in uso in un requesta de conto pendente.',
+	'requestaccount-tooshort' => 'Tu biographia debe haber al minus $1 parolas de longor.',
+	'requestaccount-emaildup' => 'Un altere requesta pendente de conto usa le mesme adresse de e-mail.',
+	'requestaccount-exts' => 'Iste typo de file non es permittite in attachamentos.',
+	'requestaccount-resub' => 'Tu debe reseliger tu file CV/resume pro motivos de securitate.
+Lassa le campo vacue si tu non vole plus includer un.',
+	'requestaccount-tos' => 'Io ha legite e consenti a acceptar le [[{{MediaWiki:Requestaccount-page}}|Conditiones de Servicio]] of {{SITENAME}}.
+Le nomine que io ha specificate sub "Nomine real" es de facto mi proprie nomine real.',
+	'requestaccount-submit' => 'Requesta de conto',
+	'requestaccount-sent' => 'Tu requesta de conto ha essite inviate con successo e nunc attende revision.',
+	'request-account-econf' => 'Tu adresse de e-mail ha essite confirmate e essera listate como tal in tu requesta de conto.',
+	'requestaccount-email-subj' => 'Confirmation de adresse e-mail pro {{SITENAME}}',
+	'requestaccount-email-body' => 'Un persona, probabilemente tu, desde le adresse IP $1, ha requestate un conto "$2" con iste adresse de e-mail in {{SITENAME}}.
+
+Pro confirmar que iste conto realmente pertine a te in {{SITENAME}}, visita iste ligamine in tu navigator del web:
+
+$3
+
+Si le conto es create, solmente tu recipera le contrasigno in e-mail.
+Si *non* es tu qui faceva iste requesta, non visita le ligamine.
+Iste codice de confirmation expirara le $4.',
+	'requestaccount-email-subj-admin' => 'Requesta de conto in {{SITENAME}}',
+	'requestaccount-email-body-admin' => '"$1" ha requestate un conto e attende confirmation.
+Le adresse de e-mail ha essite confirmate. Tu pote confirmar le requesta hic: "$2".',
+	'acct_request_throttle_hit' => 'Pardono, tu ha ja create $1 contos.
+Tu non pote facer plus requestas.',
+	'requestaccount-loginnotice' => "Pro obtener un conto de usator, tu debe '''[[Special:RequestAccount|requestar un]]'''.",
+	'confirmaccount-newrequests' => "Es pendente '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|requesta de conto]]|[[Special:ConfirmAccounts|requestas de conto]]}} aperte e confirmate via e-mail",
+	'confirmaccounts' => 'Confirmar requestas de conto',
+	'confirmedit-desc' => 'Concede al bureaucrates le capacitate de confirmar le requestas de conto',
+	'confirmaccount-maintext' => "'''Iste pagina es usate pro confirmar le requestas de conto pendente a ''{{SITENAME}}'''''.
+
+Cata cauda de requestas de conto consiste de tres subcaudas.
+Un pro requestas aperte, un pro requestas suspendite per administratores pendente ulterior informationes, e un tertie pro requestas recentemente rejectate.
+
+Quando tu responde a un requesta, revide lo con caution e, si necessari, confirma le informationes continite in illo.
+Tu actiones essera registrate privatemente.
+In addition, es expectate que tu revide omne activitate que occurre hic, ultra tu proprie actiones.",
+	'confirmaccount-list' => 'Infra es un lista de requestas de conto attendente approbation.
+Quando un requesta es approbate o rejectate, illo se retirara de iste lista.',
+	'confirmaccount-list2' => 'Infra es un lista de requestas de conto recentemente rejectate le quales pote esser automaticamente delite post alcun dies.
+Illos pote ancora esser approbate como contos, sed es recommendate que tu consulta le administrator qui rejectava le requesta in question, ante que tu face isto.',
+	'confirmaccount-list3' => 'Infra es un lista de requestas de conto expirate le quales pote esser automaticamente delite post alcun dies. Illos pote ancora esser approbate como contos.',
+	'confirmaccount-text' => "Isto es un requesta pendente pro un conto de usator a '''{{SITENAME}}'''.
+
+Revide con caution le sequente informationes.
+Si tu approba iste requesta, defini con le menu Position le stato del conto de iste usator.
+Le modificationes facite in le biographia del candidatura non afficera le litteras credential ja immagazinate.
+Nota que tu pote optar pro crear le conto sub un altere nomine de usator.
+Solmente face isto pro evitar le collision con altere nomines.
+
+Si tu simplemente abandona iste pagina sin confirmar o rejectar iste requesta, illo restara pendente.",
+	'confirmaccount-none-o' => 'Al momento il non ha requestas de conto pendente in iste lista.',
+	'confirmaccount-none-h' => 'Al momento il non ha requestas de conto suspendite in iste lista.',
+	'confirmaccount-none-r' => 'Al momento il non ha requestas de conto recentemente rejectate in iste lista.',
+	'confirmaccount-none-e' => 'Al momento il non ha requestas de conto expirate in iste lista.',
+	'confirmaccount-real-q' => 'Nomine',
 	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-bio-q' => 'Biographia',
+	'confirmaccount-showopen' => 'requestas aperte',
+	'confirmaccount-showrej' => 'requestas rejectate',
+	'confirmaccount-showheld' => 'requestas suspendite',
+	'confirmaccount-showexp' => 'requestas expirate',
+	'confirmaccount-review' => 'Revider',
+	'confirmaccount-types' => 'Selige un cauda de confirmation de contos infra:',
+	'confirmaccount-all' => '(revelar tote le caudas)',
+	'confirmaccount-type' => 'Cauda:',
+	'confirmaccount-type-0' => 'autores eventual',
+	'confirmaccount-type-1' => 'contributores eventual',
+	'confirmaccount-q-open' => 'requestas aperte',
+	'confirmaccount-q-held' => 'requestas suspendite',
+	'confirmaccount-q-rej' => 'requestas recentemente rejectate',
+	'confirmaccount-q-stale' => 'requestas expirate',
+	'confirmaccount-badid' => 'Non existe un requesta pendente correspondente al ID specificate.
+Illo pote ja haber essite tractate.',
+	'confirmaccount-leg-user' => 'Conto de usator',
+	'confirmaccount-leg-areas' => 'Areas de interesse principal',
+	'confirmaccount-leg-person' => 'Informationes personal',
+	'confirmaccount-leg-other' => 'Altere informationes',
 	'confirmaccount-name' => 'Nomine de usator',
+	'confirmaccount-real' => 'Nomine:',
 	'confirmaccount-email' => 'E-mail:',
+	'confirmaccount-reqtype' => 'Position:',
 	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-pos-1' => 'contributor',
+	'confirmaccount-bio' => 'Biographia:',
+	'confirmaccount-attach' => 'Resume/CV:',
+	'confirmaccount-notes' => 'Notas additional:',
+	'confirmaccount-urls' => 'Lista de sitos web:',
+	'confirmaccount-none-p' => '(non fornite)',
+	'confirmaccount-confirm' => 'Usa le optiones infra pro acceptar, refusar, o suspender iste requesta:',
+	'confirmaccount-econf' => '(confirmate)',
+	'confirmaccount-reject' => '(rejectate per [[User:$1|$1]] le $2)',
+	'confirmaccount-rational' => 'Motivo date al candidato:',
+	'confirmaccount-noreason' => '(nulle)',
+	'confirmaccount-autorej' => '(iste requesta ha essite automaticamente abandonate a causa de inactivitate)',
+	'confirmaccount-held' => '(marcate como "suspendite" per [[User:$1|$1]] le $2)',
+	'confirmaccount-create' => 'Acceptar (crear conto)',
+	'confirmaccount-deny' => 'Rejectar (retirar del lista)',
+	'confirmaccount-hold' => 'Suspender',
+	'confirmaccount-spam' => 'Spam (non inviar e-mail)',
+	'confirmaccount-reason' => 'Commento (essera includite in e-mail):',
+	'confirmaccount-ip' => 'Adresse IP:',
+	'confirmaccount-submit' => 'Confirmar',
+	'confirmaccount-needreason' => 'Tu debe fornir un motivo in le quadro de commento infra.',
+	'confirmaccount-canthold' => 'Iste requesta ha ja essite suspendite o delite.',
+	'confirmaccount-acc' => 'Le requesta de conto ha essite confirmate con successo;
+creava nove conto de usator [[User:$1|$1]].',
+	'confirmaccount-rej' => 'Le requesta de conto ha essite rejectate con successo.',
+	'confirmaccount-viewing' => '(a iste momento in revision per [[User:$1|$1]]))',
+	'confirmaccount-summary' => 'Crea pagina de usator con biographia del nove usator.',
+	'confirmaccount-welc' => "'''Benvenite a ''{{SITENAME}}''!'''
+Nos spera que tu contribuera multo e ben.
+Tu volera probabilemente leger le [[{{MediaWiki:Helppage}}|paginas de adjuta]].
+Benvenite ancora, e diverte te!",
+	'confirmaccount-wsum' => 'Benvenite!',
+	'confirmaccount-email-subj' => 'Requesta de conto in {{SITENAME}}',
+	'confirmaccount-email-body' => 'Tu requesta de un conto in {{SITENAME}} ha essite approbate.
+
+Nomine del conto: $1
+
+Contrasigno: $2
+
+Pro motivos de securitate, tu debera cambiar tu contrasigno al prime apertura de session.
+Pro aperir un session, per favor visita {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Tu requesta de un conto in {{SITENAME}} ha essite approbate.
+
+Nomine del conto: $1
+
+Contrasigno: $2
+
+$3
+
+Pro motivos de securitate, tu debera cambiar tu contrasigno al prime apertura de session.
+Pro aperir un session, per favor visita {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Pardono, tu requesta de un conto "$1" in {{SITENAME}} ha essite rejectate.
+
+Existe plure modos in que isto pote evenir.
+Es possibile que tu non completava le formulario correctemente, non dava responsas de longor adequate, o alteremente non te conformava a alcun criterio de politica.
+Il pote haber listas de contacto in le sito que tu pote usar si tu vole saper plus a proposito del politica de creation de contos.',
+	'confirmaccount-email-body4' => 'Pardono, tu requesta de un conto "$1" in {{SITENAME}} ha essite rejectate.
+
+$2
+
+Il pote haber listas de contacto in le sito que tu pote usar si tu vole saper plus a proposito del politica de creation de contos.',
+	'confirmaccount-email-body5' => 'Ante que tu requesta de un conto "$1" in {{SITENAME}} pote esser acceptate, tu debe primo fornir alcun informationes additional.
+
+$2
+
+Il pote haber listas de contacto in le sito que tu pote usar si tu vole saper plus a proposito del politica de creation de contos.',
+	'usercredentials' => 'Litteras credential del usator',
+	'usercredentials-leg' => 'Cercar litteras credential confirmate pro un usator',
 	'usercredentials-user' => 'Nomine de usator:',
+	'usercredentials-text' => 'Infra es le litteras credential validate del conto de usator seligite.',
+	'usercredentials-leg-user' => 'Conto de usator',
+	'usercredentials-leg-areas' => 'Areas de interesse principal',
+	'usercredentials-leg-person' => 'Informationes personal',
+	'usercredentials-leg-other' => 'Altere informationes',
 	'usercredentials-email' => 'E-mail:',
+	'usercredentials-real' => 'Nomine real:',
+	'usercredentials-bio' => 'Biographia:',
+	'usercredentials-attach' => 'Resume/CV:',
+	'usercredentials-notes' => 'Notas additional:',
+	'usercredentials-urls' => 'Lista de sitos web:',
+	'usercredentials-ip' => 'Adresse IP original:',
+	'usercredentials-member' => 'Derectos:',
+	'usercredentials-badid' => 'Nulle litteras credential trovate pro iste usator.
+Verifica que le nomine sia orthographiate correctemente.',
 );
 
 /** Indonesian (Bahasa Indonesia)
