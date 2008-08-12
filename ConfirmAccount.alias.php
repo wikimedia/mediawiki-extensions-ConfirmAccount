@@ -58,6 +58,7 @@ $aliases['he'] = array(
 
 /** Croatian (Hrvatski) */
 $aliases['hr'] = array(
+	'RequestAccount' => array( 'Zatraži_račun' ),
 	'ConfirmAccounts' => array( 'Potvrdi_račun' ),
 );
 
@@ -85,6 +86,7 @@ $aliases['ms'] = array(
 $aliases['nl'] = array(
 	'RequestAccount' => array( 'GebruikerAanvragen' ),
 	'ConfirmAccounts' => array( 'GebruikerBevestigen' ),
+	'UserCredentials' => array( 'Gebruikersattest' ),
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)

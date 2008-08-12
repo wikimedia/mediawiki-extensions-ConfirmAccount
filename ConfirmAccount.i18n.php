@@ -2262,7 +2262,7 @@ $messages['hil'] = array(
  */
 $messages['hr'] = array(
 	'requestaccount' => 'Zatraži suradnički račun',
-	'requestaccount-text' => "'''Ispunite sljedeći formular i pošaljite ga da bi zatražili suradnički račun'''.
+	'requestaccount-text' => "'''Ispunite sljedeći formular i pošaljite ga da biste zatražili suradnički račun'''.
 
 Pročitajte [[{{MediaWiki:Requestaccount-page}}|Uvjete uporabe]] prije traženja suradničkog računa.
 
@@ -2276,17 +2276,21 @@ Kad vam račun bude odobren, dobit ćete e-mail potvrdu i moći ćete se [[Speci
 	'requestaccount-acc-text' => "Dobiti ćete poruku elektroničkom poštom (''e-mail'') kao potvrdu da ste zatražili suradnički račun.
 Molimo odgovorite na tu poruku tako što ćete kliknuti na poveznicu (''link'') u toj poruci.
 Kad vam račun bude odobren/otvoren, lozinku ćete dobiti elektroničkom poštom.",
+	'requestaccount-areas-text' => 'Odaberite ispod teme u kojima imate formalno iskustvo ili biste najviše željeli raditi.',
 	'requestaccount-ext-text' => 'Sljedeći podaci nisu dostupni drugima, rabe se samo u ovom upitu. 
 Možda želite navesti broj telefona (mobitela) kao pomoć za potvrđivanje vašeg identiteta.',
-	'requestaccount-bio-text' => 'Vaša biografija će biti postavljena na vašu suradničku stranicu. 
-Pokušajte napisati nešto o sebi. 
-Ne pišite osjetljive informacije. 
-Ime je moguće promijeniti putem [[Special:Preferences|postavki]].',
+	'requestaccount-bio-text' => 'Vaša biografija će biti postavljena kao glavni sadržaj za vašu suradničku stranicu.
+Pokušajte napisati nešto o sebi.
+Budite sigurni da pišete informacije koje su vama prihvatljive.
+Vaše pravo ime možete promijeniti putem [[Special:Preferences|postavki]].',
 	'requestaccount-real' => 'Pravo ime:',
 	'requestaccount-same' => '(bit će isto kao i pravo ime)',
 	'requestaccount-email' => "Adresa e-pošte (vaš ''e-mail''):",
 	'requestaccount-reqtype' => 'Mjesto:',
+	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'uređivač',
 	'requestaccount-bio' => 'Osobna biografija:',
+	'requestaccount-attach' => 'Rezime ili CV (po želji):',
 	'requestaccount-notes' => 'Dodatne bilješke:',
 	'requestaccount-urls' => 'Popis web stranica, ako ih ima (odvojite ih redom):',
 	'requestaccount-agree' => 'Morate potvrditi da je vaše pravo ime točno i da pristajete na naše Uvjete korištenja.',
@@ -2315,6 +2319,7 @@ Ovaj potvrdni kod će isteći $4.',
 E-mail adresa je potvrđena. Možete potvrditi zahtjev ovdje "$2".',
 	'acct_request_throttle_hit' => 'Žao nam je, već ste zatražili suradnički račun $1. Ne možete zatražiti nove.',
 	'requestaccount-loginnotice' => "Da bi dobili suradnički račun, trebate ga '''[[Special:RequestAccount|zatražiti]]'''.",
+	'confirmaccount-newrequests' => "u tijeku '''$1''' e-mailom {{PLURAL:$1|potvrđen [[Special:ConfirmAccounts|zahtjev za računom]]|potvrđenih [[Special:ConfirmAccounts|zahtjeva za računom]]}}",
 	'confirmaccounts' => 'Potvrdi zahtjeve za suradničkim računom',
 	'confirmedit-desc' => 'Daje birokratima pravo potvrditi zahtjeve za suradničkim računom',
 	'confirmaccount-none-o' => 'Trenutačno nema otvorenih zahtjeva na ovom popisu.',
