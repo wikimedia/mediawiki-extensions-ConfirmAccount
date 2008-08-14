@@ -228,6 +228,7 @@ Check that the name is spelled correctly.',
 /** Message documentation (Message documentation)
  * @author Jon Harald Søby
  * @author Lejonel
+ * @author Purodha
  * @author Siebrand
  */
 $messages['qqq'] = array(
@@ -247,6 +248,7 @@ $messages['qqq'] = array(
 	'requestaccount-email-body-admin' => 'This message is the email body text send to a site admin whenever someone has requested a new account.
 * $1: is a username
 * $2 is a URL',
+	'confirmedit-desc' => 'Extension description displayed on [[Special:Version]].',
 	'confirmaccount-real-q' => '{{Identical|Name}}',
 	'confirmaccount-email-q' => '{{Identical|E-mail}}',
 	'confirmaccount-bio-q' => '{{Identical|Biography}}',
@@ -1363,6 +1365,7 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
 
 /** Spanish (Español)
  * @author Lin linao
+ * @author Sanbec
  */
 $messages['es'] = array(
 	'requestaccount-text' => "'''Completa y envía el siguiente formulario para solicitar una cuenta de usuario'''.  
@@ -1370,6 +1373,7 @@ $messages['es'] = array(
 Antes de solicitar una cuenta, asegúrate de haber leído los [[{{MediaWiki:Requestaccount-page}}|Términos del servicio]].
 
 Una vez que la cuenta sea aprobada, se te enviará una notificación a través de correo electrónico y la cuenta se podrá usar entrando a [[Especial:Entrar]].",
+	'confirmaccount-noreason' => '(ninguna)',
 );
 
 /** Extremaduran (Estremeñu)
