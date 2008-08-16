@@ -248,7 +248,7 @@ $messages['qqq'] = array(
 	'requestaccount-email-body-admin' => 'This message is the email body text send to a site admin whenever someone has requested a new account.
 * $1: is a username
 * $2 is a URL',
-	'confirmedit-desc' => 'Extension description displayed on [[Special:Version]].',
+	'confirmedit-desc' => 'Short description of this extension, shown on [[Special:Version]]. Do not translate or change links.',
 	'confirmaccount-real-q' => '{{Identical|Name}}',
 	'confirmaccount-email-q' => '{{Identical|E-mail}}',
 	'confirmaccount-bio-q' => '{{Identical|Biography}}',
@@ -4531,6 +4531,14 @@ $messages['os'] = array(
 	'confirmaccount-email' => 'Эл. посты адрис:',
 	'confirmaccount-pos-0' => 'автор',
 	'usercredentials-email' => 'Эл. посты адрис:',
+);
+
+/** Plautdietsch (Plautdietsch)
+ * @author Slomox
+ */
+$messages['pdt'] = array(
+	'confirmaccount-name' => 'Bruckernome',
+	'usercredentials-user' => 'Bruckernome:',
 );
 
 /** Polish (Polski)
