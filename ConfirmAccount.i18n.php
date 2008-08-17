@@ -5733,7 +5733,7 @@ $messages['sv'] = array(
 
 Se till att du har läst [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] innan du frågar efter ett konto.
 
-När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till dig och ditt konto kan användas på [[Special:UserLogin]].",
+När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till dig och du kan [[Special:UserLogin|logga in]] på ditt konto.",
 	'requestaccount-page' => '{{ns:project}}:Användningsvillkor',
 	'requestaccount-dup' => "'''Notera: Du är redan inloggad med ett registrerat konto.'''",
 	'requestaccount-leg-user' => 'Användarkonto',
@@ -5744,7 +5744,10 @@ När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till di
 	'requestaccount-areas-text' => 'Välj här de ämnesområden som du har expertkunskap om eller som du kommer att arbeta mest med.',
 	'requestaccount-ext-text' => 'Följande information kommer hållas hemlig och bara användas för denna ansökan.
 Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.',
-	'requestaccount-bio-text' => 'Din biografi kommer användas som innehåll på din användarsida. Försök att ange dina meriter och referenser. Men se till att du inte besväras av att publicera sådan information. Ditt namn kan du ändra i dina  [[Special:Preferences|inställningar]].',
+	'requestaccount-bio-text' => 'Din biografi kommer användas som standardinnehåll på din användarsida. 
+Försök att ange dina meriter och referenser.
+Men se till att du inte besväras av att publicera sådan information. 
+Ditt namn kan du ändra i [[Special:Preferences|dina inställningar]].',
 	'requestaccount-real' => 'Riktigt namn:',
 	'requestaccount-same' => '(samma som ditt riktiga namn)',
 	'requestaccount-email' => 'E-postadress:',
