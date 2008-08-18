@@ -845,6 +845,7 @@ $messages['ca'] = array(
 );
 
 /** Czech (Česky)
+ * @author Li-sung
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
@@ -857,7 +858,7 @@ $messages['cs'] = array(
 	'requestaccount-leg-other' => 'Další informace',
 	'requestaccount-acc-text' => 'Na Vaši e-mailovou adresu bude po odeslání žádosti zaslána potvrzující zpráva. Prosím, reagujte na ni kliknutím na odkaz v ní. Poté Vám bude zasláno Vaše heslo.',
 	'requestaccount-areas-text' => 'Níže zvolte tématické oblasti, ve kterých jste formálně expertem nebo by jste v nich rádi vykonávali vaši práci.',
-	'requestaccount-bio-text' => 'Vaše bibliografie bude prvotním obsahem vaši uživatelské stránky. Pokuste se uvést všechny reference. Zvažte, zda jste ochotni zveřejnit tyto informace. Vaše jméno je možné změnit pomocí [[Special:Preferences]].',
+	'requestaccount-bio-text' => 'Vaše bibliografie bude prvotním obsahem vaši uživatelské stránky. Pokuste se uvést všechny reference. Zvažte, zda jste ochotni zveřejnit tyto informace. Jméno si můžete změnit ve [[Special:Preferences|svém nastavení]].',
 	'requestaccount-real' => 'Skutečné jméno:',
 	'requestaccount-same' => '(stejné jako skutečné jméno)',
 	'requestaccount-email' => 'E-mailová adresa:',
@@ -3075,6 +3076,7 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Aotake
  * @author JtFuruhata
  */
 $messages['ja'] = array(
@@ -3083,7 +3085,7 @@ $messages['ja'] = array(
 
 アカウント申請を行う前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用条件]]をご一読下さい。
 
-申請が承認されると、通知メッセージと[[Special:UserLogin|ログイン]]のためのアカウントが、あなたの電子メールアドレスへ送信されます。",
+アカウントが承認されると、通知メッセージがあなたの電子メールアドレスへ送信され、承認されたアカウントを使って[[Special:UserLogin|ログイン]]できるようになります。",
 	'requestaccount-page' => '{{ns:project}}:サービス利用条件',
 	'requestaccount-dup' => "'''注: あなたは既に登録済みアカウントでログインしています。'''",
 	'requestaccount-leg-user' => '利用者アカウント',
@@ -3094,10 +3096,7 @@ $messages['ja'] = array(
 	'requestaccount-areas-text' => 'あなたが見識をお持ちの分野、または主に活動したい分野を選択してください。',
 	'requestaccount-ext-text' => '以下の個人情報は公開されず、この申請処理にのみ利用されます。
 電話番号をはじめとする連絡先は、あなたが本人確認の補助を目的として記入いただけます。',
-	'requestaccount-bio-text' => 'あなたの自己紹介は利用者ページの初期内容として登録されます。
-他の利用者から信頼が得られるよう心掛けてください。
-それは、あなたが気持ちよく投稿するために重要です。
-あなたの名前は [[Special:Preferences|{{int:preferences}}]] から変更できます。',
+	'requestaccount-bio-text' => 'あなたの自己紹介は利用者ページの初期設定として登録されます。あなたの身分を証明する内容の記入は歓迎されますが、このような個人情報の提供があなた自身にとって望ましいことであるかまず検討してください。あなたの利用者名の表示は [[Special:Preferences|{{int:preferences}}]] から変更できます。',
 	'requestaccount-real' => '本名:',
 	'requestaccount-same' => '（本名での登録に限定されます）',
 	'requestaccount-email' => '電子メールアドレス:',
@@ -3134,7 +3133,7 @@ $3
 申請電子メールアドレスは本人確認済みです。この申請への承認は、"$2"　から行うことができます。',
 	'acct_request_throttle_hit' => '申し訳ありません、あなたは既に $1 というアカウントを申請済みです。これ以上の申請はできません。',
 	'requestaccount-loginnotice' => "利用者アカウントの取得は、'''[[Special:RequestAccount|アカウント登録申請]]'''から行ってください。",
-	'confirmaccount-newrequests' => "{{PLURAL:$1|現在|現在}}、'''$1個'''の{{PLURAL:$1|[[{{ns:special}}:ConfirmAccounts|アカウント申請]]|[[{{ns:special}}:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。",
+	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み[[{{ns:special}}:ConfirmAccounts|アカウント申請]]が承認待ちになっています。",
 	'confirmaccounts' => 'アカウント登録申請の承認',
 	'confirmedit-desc' => '{{int:group-bureaucrat}}にアカウント申請への承認機能を提供する',
 	'confirmaccount-maintext' => "'''ここは、''{{SITENAME}}'' 上で承認待ちとなっているアカウント登録申請を処理するためのページです。'''

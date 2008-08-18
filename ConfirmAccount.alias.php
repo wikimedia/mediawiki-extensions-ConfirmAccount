@@ -69,6 +69,7 @@ $aliases['ht'] = array(
 
 /** Hungarian (Magyar) */
 $aliases['hu'] = array(
+	'RequestAccount' => array( 'Felhasználói fiók igénylése' ),
 	'ConfirmAccounts' => array( 'Felhasználói fiók megerősítése' ),
 );
 
