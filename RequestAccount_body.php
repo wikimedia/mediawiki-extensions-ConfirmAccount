@@ -189,7 +189,6 @@ class RequestAccountPage extends SpecialPage {
 				"</textarea></p>\n";
 			$form .= '</fieldset>';
 		}
-		# Pseudo template for extensions
 		# FIXME: do this better...
 		global $wgConfirmAccountCaptchas, $wgCaptchaClass, $wgCaptchaTriggers;
 		if( $wgConfirmAccountCaptchas && isset($wgCaptchaClass) && $wgCaptchaTriggers['createaccount'] ) {
