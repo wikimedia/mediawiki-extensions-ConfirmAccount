@@ -1872,8 +1872,10 @@ $messages['gl'] = array(
 	'requestaccount-areas-text' => 'Seleccione embaixo as áreas dos temas dos que é máis experto ou nos que lle gustaría traballar máis.',
 	'requestaccount-ext-text' => 'A información seguinte mantense como reservada e só se usará para esta solicitude.
 	Pode querer listar contactos, como un número de teléfono, para axudar a identificar a confirmación.',
-	'requestaccount-bio-text' => 'A súa biografía aparecerá como contido predefinido da súa páxina de usuario. Tente incluír
-	credenciais. Asegúrese de non ter problema coa publicación desa información. O seu nome pódese cambiar mediante [[Special:Preferences]].',
+	'requestaccount-bio-text' => 'A súa biografía aparecerá como contido predefinido da súa páxina de usuario.
+Tente incluír credenciais.
+Asegúrese de non ter problema coa publicación desa información.
+O seu nome pódese cambiar [[Special:Preferences|nas súas preferencias]].',
 	'requestaccount-real' => 'Nome real:',
 	'requestaccount-same' => '(o mesmo que o nome real)',
 	'requestaccount-email' => 'Enderezo de correo electrónico:',
@@ -1990,7 +1992,8 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Debe incluír un motivo na caixa de comentarios de embaixo.',
 	'confirmaccount-canthold' => 'Esta solicitude está en espera ou foi borrada.',
-	'confirmaccount-acc' => 'Confirmouse sen problemas a solicitude de conta; creouse a nova conta de usuario [[User:$1|$1]].',
+	'confirmaccount-acc' => 'Confirmouse sen problemas a solicitude de conta;
+creouse a nova conta de usuario "[[User:$1|$1]]".',
 	'confirmaccount-rej' => 'Rexeitouse sen problemas a solicitude de conta.',
 	'confirmaccount-viewing' => '(actualmente sendo visto por [[User:$1|$1]])',
 	'confirmaccount-summary' => 'A crear a páxina de usuario coa biografía do novo usuario.',

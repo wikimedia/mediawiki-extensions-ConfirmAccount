@@ -34,6 +34,11 @@ $aliases['arz'] = array(
 	'UserCredentials' => array( 'شهادات_المستخدم' ),
 );
 
+/** German (Deutsch) */
+$aliases['de'] = array(
+	'RequestAccount' => array( 'Benutzerkonto beantragen' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'ConfirmAccounts' => array( 'Varmista käyttäjätunnus' ),
@@ -81,6 +86,13 @@ $aliases['lb'] = array(
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
 	'ConfirmAccounts' => array( 'Sahkan_akaun', 'Mengesahkan_akaun' ),
+);
+
+/** Nedersaksisch (Nedersaksisch) */
+$aliases['nds-nl'] = array(
+	'RequestAccount' => array( 'Gebruker_anvragen' ),
+	'ConfirmAccounts' => array( 'Gebruker_bevestigen' ),
+	'UserCredentials' => array( 'Gebrukersgetuugschrif' ),
 );
 
 /** Dutch (Nederlands) */
