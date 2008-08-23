@@ -32,10 +32,8 @@ class RequestAccountPage extends SpecialPage {
 
 		$this->mRealName = trim( $wgRequest->getText( 'wpRealName' ) );
 		# We may only want real names being used
-		if( $wgUseRealNamesOnly )
-			$this->mUsername = $this->mRealName;
-		else
-			$this->mUsername = trim( $wgRequest->getText( 'wpUsername' ) );
+		$this->mUsername = $wgUseRealNamesOnly ? $this->mRealName : $wgRequest->getText( 'wpUsername' );
+		$this->mUsername = trim( $this->mUsername );
 		# Attachments...
 		$this->initializeUpload( $wgRequest );
 		$this->mPrevAttachment = $wgRequest->getText( 'attachment' );
@@ -412,8 +410,7 @@ class RequestAccountPage extends SpecialPage {
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
 			global $wgMemc;
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
-			$value = $wgMemc->incr( $key );
-			if( !$value ) {
+			if( !$value = $wgMemc->incr( $key ) ) {
 				$wgMemc->set( $key, 1, 86400 );
 			}
 		}
