@@ -442,10 +442,11 @@ $messages['ar'] = array(
 
 $3
 
-لو أن الحساب تم إنشاؤه، فقط أنت سيتم إرسال كلمة السر إليه. لو أن هذا *ليس* أنت، لا تتبع الوصلة. 
+لو أن الحساب تم إنشاؤه، فقط أنت سيتم إرسال كلمة السر إليه.
+لو أن هذا *ليس* أنت، لا تتبع الوصلة.
 كود التأكيد سينتهي في $4.',
 	'requestaccount-email-subj-admin' => 'طلب حساب {{SITENAME}}',
-	'requestaccount-email-body-admin' => '"$1" طلب حسابا وينتظر التأكيد.  
+	'requestaccount-email-body-admin' => '"$1" طلب حسابا وينتظر التأكيد.
 عنوان البريد الإلكتروني تم تأكيده. يمكنك تأكيد الطلب هنا "$2".',
 	'acct_request_throttle_hit' => 'عذرا، لقد طلبت بالفعل $1 حساب.
 لا يمكنك عمل المزيد من الطلبات.',
@@ -1322,6 +1323,7 @@ Se ĉi tio ne devenas al vi, ne sekvu la ligilon.
 	'confirmaccount-reject' => '(malkonfirmita de [[User:$1|$1]] je $2)',
 	'confirmaccount-noreason' => '(nenio)',
 	'confirmaccount-create' => 'Akceptu (kreu konton)',
+	'confirmaccount-deny' => 'Malaprobi (ekslistigi)',
 	'confirmaccount-spam' => 'Spamo (ne sendu retpoŝton)',
 	'confirmaccount-reason' => 'Komento (estos inkluzivita en retpoŝto):',
 	'confirmaccount-ip' => 'IP-adreso',
@@ -6330,6 +6332,7 @@ $messages['vi'] = array(
 	'requestaccount-leg-person' => 'Thông tin cá nhân',
 	'requestaccount-leg-other' => 'Thông tin khác',
 	'requestaccount-level-0' => 'tác giả',
+	'requestaccount-level-1' => 'người sửa đổi',
 	'requestaccount-notes' => 'Chi tiết:',
 	'requestaccount-submit' => 'Xin tài khoản',
 	'confirmaccount-bio-q' => 'Tiểu sử',
@@ -6338,6 +6341,7 @@ $messages['vi'] = array(
 	'confirmaccount-leg-other' => 'Thông tin khác',
 	'confirmaccount-name' => 'Tên người dùng',
 	'confirmaccount-pos-0' => 'tác giả',
+	'confirmaccount-pos-1' => 'người sửa trang',
 	'confirmaccount-bio' => 'Tiểu sử:',
 	'confirmaccount-notes' => 'Chi tiết:',
 	'confirmaccount-noreason' => '(không có)',

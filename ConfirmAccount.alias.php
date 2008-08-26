@@ -41,6 +41,7 @@ $aliases['de'] = array(
 
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
+	'RequestAccount' => array( 'Pyydä käyttäjätunnusta' ),
 	'ConfirmAccounts' => array( 'Varmista käyttäjätunnus' ),
 );
 
@@ -80,6 +81,7 @@ $aliases['hu'] = array(
 
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
+	'RequestAccount' => array( 'Benotzerkont ufroen' ),
 	'ConfirmAccounts' => array( 'Benotzerkont confirméieren' ),
 );
 
