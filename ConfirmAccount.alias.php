@@ -37,6 +37,7 @@ $aliases['arz'] = array(
 /** German (Deutsch) */
 $aliases['de'] = array(
 	'RequestAccount' => array( 'Benutzerkonto beantragen' ),
+	'ConfirmAccounts' => array( 'Benutzerkonto bestätigen' ),
 );
 
 /** Finnish (Suomi) */
