@@ -479,7 +479,7 @@ class RequestAccountPage extends SpecialPage {
 
 		  wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n");
 			#check mime type against file extension
-			if( !UploadForm::verifyExtension( $mime, $extension ) ) {
+			if( !UploadFromBase::verifyExtension( $mime, $extension ) ) {
 				return new WikiErrorMsg( 'uploadcorrupt' );
 			}
 
