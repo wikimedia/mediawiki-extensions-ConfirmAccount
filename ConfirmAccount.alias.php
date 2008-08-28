@@ -48,6 +48,7 @@ $aliases['fi'] = array(
 
 /** French (Français) */
 $aliases['fr'] = array(
+	'RequestAccount' => array( 'DemanderUnCompte', 'Demander un compte' ),
 	'ConfirmAccounts' => array( 'ConfirmerCompte', 'Confirmation compte', 'ConfirmationCompte' ),
 );
 

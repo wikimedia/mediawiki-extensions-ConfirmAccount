@@ -1298,7 +1298,7 @@ Se ĉi tio ne devenas al vi, ne sekvu la ligilon.
 	'confirmaccount-showrej' => 'malakceptitaj petoj',
 	'confirmaccount-showexp' => 'preteraj petoj',
 	'confirmaccount-review' => 'Kontrolu',
-	'confirmaccount-all' => '(montru ĉiujn atendovicojn)',
+	'confirmaccount-all' => '(montri ĉiujn atendovicojn)',
 	'confirmaccount-type' => 'Atendovico:',
 	'confirmaccount-type-0' => 'eventualaj aŭtoroj',
 	'confirmaccount-type-1' => 'eventualaj redaktantoj',
