@@ -81,6 +81,11 @@ $aliases['hu'] = array(
 	'ConfirmAccounts' => array( 'Felhasználói fiók megerősítése' ),
 );
 
+/** Khmer (ភាសាខ្មែរ) */
+$aliases['km'] = array(
+	'RequestAccount' => array( 'ស្នើសុំគណនី' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'RequestAccount' => array( 'Benotzerkont ufroen' ),
