@@ -204,7 +204,7 @@ $wgHooks['SiteNoticeAfter'][] = 'wfConfirmAccountsNotice';
 function efLoadConfirmAccount() {
 	global $wgUser;
 	# Don't load unless needed
-	if( $wgUser->isAllowed('confirmaccount') ) {
+	if( $wgUser->getId() && $wgUser->isAllowed('confirmaccount') ) {
 		efConfirmAccountInjectStyle();
 	}
 }
