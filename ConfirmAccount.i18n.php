@@ -2986,12 +2986,21 @@ Verifica que le nomine sia orthographiate correctemente.',
  * @author Rex
  */
 $messages['id'] = array(
+	'requestaccount' => 'Permintaan akun',
+	'requestaccount-leg-user' => 'Nama pengguna',
+	'requestaccount-real' => 'Nama asli:',
+	'requestaccount-same' => '(sama sebagai nama asli)',
+	'requestaccount-email' => 'Surat elektronik:',
 	'requestaccount-level-1' => 'penyunting',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} permintaan akun',
+	'acct_request_throttle_hit' => 'Maaf, anda sudah meminta $1 akun.
+Anda tidak dapat lagi melakukan permintaan.',
 	'confirmaccount-real-q' => 'Nama',
 	'confirmaccount-name' => 'Nama pengguna',
 	'confirmaccount-real' => 'Nama:',
 	'confirmaccount-pos-1' => 'penyunting',
 	'confirmaccount-noreason' => '(tidak ada)',
+	'confirmaccount-wsum' => 'Selamat datang !',
 	'usercredentials-user' => 'Nama pengguna:',
 );
 
@@ -3070,8 +3079,10 @@ $messages['is'] = array(
  */
 $messages['it'] = array(
 	'requestaccount-level-1' => 'editore',
+	'confirmaccount-real-q' => 'Nome',
 	'confirmaccount-email-q' => 'Indirizzo e-mail',
 	'confirmaccount-name' => 'Nome utente',
+	'confirmaccount-real' => 'Nome:',
 	'confirmaccount-email' => 'Indirizzo e-mail:',
 	'confirmaccount-pos-1' => 'editore',
 	'confirmaccount-ip' => 'Indirizzo IP:',
@@ -3405,6 +3416,7 @@ $messages['km'] = array(
 	'confirmaccount-pos-1' => 'ឧបករកែប្រែ',
 	'confirmaccount-bio' => 'ជីវប្រវត្តិ ៖',
 	'confirmaccount-attach' => 'ប្រវត្តិរូប ៖',
+	'confirmaccount-notes' => 'កំនត់សំគាល់បន្ថែម៖',
 	'confirmaccount-urls' => 'បញ្ជីគេហទំព័រ៖',
 	'confirmaccount-none-p' => '(មិនត្រូវបាន ផ្តល់)',
 	'confirmaccount-econf' => '(បានបញ្ជាក់ទទួលស្គាល់)',
@@ -3906,6 +3918,14 @@ $messages['mt'] = array(
 	'usercredentials-email' => 'E-mail:',
 );
 
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'confirmaccount-real-q' => 'Лемезэ:',
+	'confirmaccount-real' => 'Лемезэ:',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
@@ -3969,7 +3989,7 @@ Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Spec
 	'requestaccount-leg-person' => 'Persoonlijke informatie',
 	'requestaccount-leg-other' => 'Overige informatie',
 	'requestaccount-acc-text' => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen.
-Reageer daar alstublieft op door te klikken op de bevestigingslink die in de e-mail staat.
+Reageer daar op door te klikken op de bevestigingslink die in de e-mail staat.
 U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
 	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee u ervaring hebt of waarvan u het meeste werk wil verrichten.',
 	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
@@ -4014,7 +4034,8 @@ Deze bevestigingse-mail verloopt op $4.',
 	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
 Het e-mailadres is bevestigd.
 U kunt het verzoek hier "$2" bevestigen.',
-	'acct_request_throttle_hit' => 'Sorry, maar u hebt al $1 gebruikersverzoeken gedaan. U kunt geen nieuwe verzoeken meer uitbrengen.',
+	'acct_request_throttle_hit' => 'U hebt al $1 gebruikersverzoeken gedaan.
+U kunt geen nieuwe verzoeken meer uitbrengen.',
 	'requestaccount-loginnotice' => "Om een gebruiker te krijgen, moet u '''[[Special:RequestAccount|een verzoek doen]]'''.",
 	'confirmaccount-newrequests' => "Op dit moment {{PLURAL:$1|staat|staan}} er '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|gebruikersverzoek|gebruikersverzoeken}}]] open.",
 	'confirmaccounts' => 'Gebruikersverzoeken bevestigen',
@@ -4032,7 +4053,7 @@ Ze kunnen nog steeds goedgekeurd worden, hoewel het verstandig is voorafgaand co
 Ze kunnen nog steeds verwerkt worden.',
 	'confirmaccount-text' => "Dit is een openstaand gebruikersverzoek voor '''{{SITENAME}}'''.
 
-Beoordeel alle onderstaande informatie alstublieft zorgvuldig.
+Beoordeel alle onderstaande informatie zorgvuldig.
 Als u een verzoek goedkeurt, gebruik dan het dropdownmenu om de gebruikersstatus in te stellen.
 Bewerkingen die u maakt aan de biografie die in het verzoek is opgenomen hebben geen invloed op de opgeslagen identiteit.
 U kunt de gebruiker onder een andere naam aanmaken.
@@ -4119,12 +4140,12 @@ $3
 
 Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3' => 'Sorry, uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
+	'confirmaccount-email-body3' => 'Uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
 
 Dit kan meerdere oorzaken hebben.
 Mogelijk hebt u het formulier niet volledig ingevuld, waren uw antwoorden onvoldoende compleet, of hebt u om een andere reden niet voldaan aan de eisen.
 Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
-	'confirmaccount-email-body4' => 'Sorry, uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
+	'confirmaccount-email-body4' => 'Uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
 
 $2
 
@@ -4893,7 +4914,7 @@ $messages['pt'] = array(
 
 Certifique-se de que lê primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.
 
-Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de notificação e a conta estará pronta a usar em [[Special:UserLogin]].",
+Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de notificação e a conta estará pronta a usar na [[Special:UserLogin|autenticação]].",
 	'requestaccount-page' => '{{ns:project}}:Termos de Serviço',
 	'requestaccount-dup' => "'''Nota: Você já está logado com uma conta registada.'''",
 	'requestaccount-leg-user' => 'Conta de utilizador',
@@ -4907,7 +4928,7 @@ Poderá querer listar contactos tal como o número de telefone para ajudar na co
 	'requestaccount-bio-text' => 'A sua biografia será usada como conteúdo por defeito da sua página de utilizador.
 Tente incluir algumas credenciais.
 Assegure-se de que se encontra confortável em publicar tal informação.
-O seu nome pode ser alterado em [[Special:Preferences]].',
+O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
 	'requestaccount-real' => 'Nome real:',
 	'requestaccount-same' => '(igual ao nome real)',
 	'requestaccount-email' => 'Endereço de email:',
@@ -6266,9 +6287,11 @@ $2
 );
 
 /** Thai (ไทย)
+ * @author Octahedron80
  * @author Passawuth
  */
 $messages['th'] = array(
+	'confirmaccount-ip' => 'หมายเลขไอพี:',
 	'confirmaccount-email-body2' => 'การเรียกร้องของคุณสำหรับบัญชีผู้ใช้ใหม่ได้รับการยอมรับบน {{SITENAME}}
 
 ชื่อบัญชีผู้ใช้: $1
@@ -6445,7 +6468,7 @@ $3
 	'confirmaccount-summary' => '開緊一個新用戶擁有傳記嘅用戶頁。',
 	'confirmaccount-welc' => "'''歡迎來到''{{SITENAME}}''！'''我哋希望你會作出更多更好的貢獻。 
 	你可能會去睇吓[[{{MediaWiki:Helppage}}|開始]]。再一次歡迎你！ 
-	~~~~",
+	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 (UTC)",
 	'confirmaccount-wsum' => '歡迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}戶口請求',
 	'confirmaccount-email-body' => '你請求嘅戶口已經響{{SITENAME}}度批准咗。
@@ -6542,7 +6565,7 @@ $3
 	'confirmaccount-summary' => '正在创建一个新用户拥有传记的用户页面。',
 	'confirmaccount-welc' => "'''欢迎来到''{{SITENAME}}''！'''我们希望您会作出更多更好的贡献。 
 	您可能会去参看[[{{MediaWiki:Helppage}}|开始]]。再一次欢迎你！ 
-	~~~~",
+	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 (UTC)",
 	'confirmaccount-wsum' => '欢迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}账户请求',
 	'confirmaccount-email-body' => '您请求的账户已经在{{SITENAME}}中批准。
@@ -6639,7 +6662,7 @@ $3
 	'confirmaccount-summary' => '正在創建一個新用戶擁有傳記的用戶頁面。',
 	'confirmaccount-welc' => "'''歡迎來到''{{SITENAME}}''！'''我們希望您會作出更多更好嘅貢獻。 
 	您可能會去參看[[{{MediaWiki:Helppage}}|開始]]。再一次歡迎你！ 
-	~~~~",
+	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 (UTC)",
 	'confirmaccount-wsum' => '歡迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}帳戶請求',
 	'confirmaccount-email-body' => '您請求的帳戶已經在{{SITENAME}}中批准。
