@@ -2989,10 +2989,11 @@ $messages['id'] = array(
 	'requestaccount' => 'Permintaan akun',
 	'requestaccount-leg-user' => 'Nama pengguna',
 	'requestaccount-real' => 'Nama asli:',
-	'requestaccount-same' => '(sama sebagai nama asli)',
-	'requestaccount-email' => 'Surat elektronik:',
+	'requestaccount-same' => '(sama dengan nama asli)',
+	'requestaccount-email' => 'Alamat surat-e:',
 	'requestaccount-level-1' => 'penyunting',
-	'requestaccount-email-subj-admin' => '{{SITENAME}} permintaan akun',
+	'requestaccount-submit' => 'Permintaan akun',
+	'requestaccount-email-subj-admin' => 'Permintaan akun {{SITENAME}}',
 	'acct_request_throttle_hit' => 'Maaf, anda sudah meminta $1 akun.
 Anda tidak dapat lagi melakukan permintaan.',
 	'confirmaccount-real-q' => 'Nama',
@@ -3000,7 +3001,7 @@ Anda tidak dapat lagi melakukan permintaan.',
 	'confirmaccount-real' => 'Nama:',
 	'confirmaccount-pos-1' => 'penyunting',
 	'confirmaccount-noreason' => '(tidak ada)',
-	'confirmaccount-wsum' => 'Selamat datang !',
+	'confirmaccount-wsum' => 'Selamat datang!',
 	'usercredentials-user' => 'Nama pengguna:',
 );
 
