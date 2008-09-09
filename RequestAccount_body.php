@@ -506,16 +506,17 @@ class RequestAccountPage extends SpecialPage {
 	function checkFileExtension( $ext, $list ) {
 		return in_array( strtolower( $ext ), $list );
 	}
-	
+
 	/**
 	 * @private
+	 * @param int $limit number of accounts allowed to be requested from the same IP
 	 */
 	function throttleHit( $limit ) {
 		global $wgOut;
 
-		$wgOut->addWikiText( wfMsgHtml( 'acct_request_throttle_hit', $limit ) );
+		$wgOut->addHTML( wfMsgExt( 'acct_request_throttle_hit', array( 'parsemag' ), $limit ) );
 	}
-	
+
 	function confirmEmailToken( $code ) {
 		global $wgUser, $wgOut;
 		# Confirm if this token is in the pending requests

@@ -70,9 +70,9 @@ This confirmation code will expire at $4.',
 	'requestaccount-email-body-admin' => '"$1" has requested an account and is waiting for confirmation.
 The e-mail address has been confirmed. You can confirm the request here "$2".',
 
-	'acct_request_throttle_hit' => "Sorry, you have already requested $1 accounts.
+'acct_request_throttle_hit' => "Sorry, you {{PLURAL:$1|has|have}} already requested {{PLURAL:$1|1 account|$1 accounts}}.
 You cannot make any more requests.",
-	
+
 	# Add to Special:Login
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 	
