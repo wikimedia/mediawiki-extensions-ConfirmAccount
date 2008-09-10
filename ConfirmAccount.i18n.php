@@ -448,7 +448,7 @@ $3
 	'requestaccount-email-subj-admin' => 'طلب حساب {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" طلب حسابا وينتظر التأكيد.
 عنوان البريد الإلكتروني تم تأكيده. يمكنك تأكيد الطلب هنا "$2".',
-	'acct_request_throttle_hit' => 'عذرا، لقد طلبت بالفعل $1 حساب.
+	'acct_request_throttle_hit' => 'عذرا، لقد طلبت بالفعل {{PLURAL:$1|1 حساب|$1 حساب}}.
 لا يمكنك عمل المزيد من الطلبات.',
 	'requestaccount-loginnotice' => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
 	'confirmaccount-newrequests' => "{{PLURAL:$1|يوجد|يوجد}} حاليا '''$1'''  
@@ -659,7 +659,7 @@ $3
 	'requestaccount-email-subj-admin' => 'طلب حساب {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" طلب حسابا وينتظر التأكيد.
 عنوان البريد الإلكترونى تم تأكيده. يمكنك تأكيد الطلب هنا "$2".',
-	'acct_request_throttle_hit' => 'عذرا، لقد طلبت بالفعل $1 حساب.
+	'acct_request_throttle_hit' => 'عذرا، لقد طلبت بالفعل {{PLURAL:$1|1 حساب|$1 حساب}}.
 لا يمكنك عمل المزيد من الطلبات.',
 	'requestaccount-loginnotice' => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
 	'confirmaccount-newrequests' => "{{PLURAL:$1|يوجد|يوجد}} حاليا '''$1'''  
@@ -816,6 +816,13 @@ $messages['bcl'] = array(
 	'confirmaccount-real' => 'Pangaran',
 	'confirmaccount-submit' => 'Kompermaron',
 	'confirmaccount-wsum' => 'Dagos!',
+);
+
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
+ */
+$messages['be-tarask'] = array(
+	'requestaccount' => 'Запыт на стварэньне рахунку',
 );
 
 /** Bulgarian (Български)
@@ -1253,7 +1260,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutzerkontenantrag',
 	'requestaccount-email-body-admin' => '"$1" hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2".',
-	'acct_request_throttle_hit' => 'Du hast bereits $1 Benutzerkonten beantragt, du kannst momentan keine weiteren beantragen.',
+	'acct_request_throttle_hit' => 'Du hast bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, du kannst momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
 	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge]]}} warten auf Bearbeitung.",
 	'confirmaccounts' => 'Benutzerkonto-Anträge bestätigen',
@@ -1853,7 +1860,8 @@ Ce code de confirmation expire le $4.',
 	'requestaccount-email-body-admin' => "« $1 » a demandé un compte et se trouve en attente de confirmation.
 
 L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $2 ».",
-	'acct_request_throttle_hit' => 'Désolé, vous avec demandé $1 comptes. Vous ne pouvez plus faire de demande.',
+	'acct_request_throttle_hit' => 'Désolé, vous déjà demandé {{PLURAL:$1|1 compte|$1 comptes}}.
+Vous ne pouvez plus faire de demande.',
 	'requestaccount-loginnotice' => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
 	'confirmaccount-newrequests' => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
 	'confirmaccounts' => 'Demande de confirmation de comptes',
@@ -2125,7 +2133,8 @@ Este código de confirmación caducará o $4.',
 	'requestaccount-email-subj-admin' => 'solicitude de conta en {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" solicitou unha conta e está pendente de confirmación.
 O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aquí "$2".',
-	'acct_request_throttle_hit' => 'Sentímolo, xa solicitou $1 contas. Non pode facer máis solicitudes.',
+	'acct_request_throttle_hit' => 'Sentímolo, xa solicitou {{PLURAL:$1|unha conta|$1 contas}}.
+Non pode facer máis solicitudes.',
 	'requestaccount-loginnotice' => "Para obter unha conta de usuario ten que '''[[Special:RequestAccount|solicitar unha]]'''.",
 	'confirmaccount-newrequests' => "Hai {{PLURAL:$1}} actualmente '''$1''' aberto 
  {{PLURAL:$1|[[Special:ConfirmAccounts|solicitude de conta]]|[[Special:ConfirmAccounts|solicitudes de contas]]}} pendente.",
@@ -2622,7 +2631,7 @@ $messages['hsb'] = array(
 
 Prošu přečitaj najprjedy [[{{MediaWiki:Requestaccount-page}}|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
-Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a móžeš so pod \"[[Special:UserLogin|Konto wutworić abo so přizjewić]]\" přizjewić.",
+Tak ruče kaž konto je so potwjerdźiło, dóstanješ powěsć přez e-mejlku a móžeš [[Special:UserLogin|Konto wutworić abo so přizjewić]].",
 	'requestaccount-page' => '{{ns:project}}:Wužiwanske wuměnjenja',
 	'requestaccount-dup' => "'''Kedźbu: Sy hižo ze zregistrowanym wužiwarskim kontom přizjewjeny.'''",
 	'requestaccount-leg-user' => 'Wužiwarske konto',
@@ -2632,9 +2641,10 @@ Tak ruče kaž konto je so potwjerdźiło, dóstaš powěsć přez mejlku a mó�
 	'requestaccount-acc-text' => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
 	'requestaccount-areas-text' => 'Wubjer slědowace temowe wobwody, w kotrychž maš wěcywustojnosć abo chceš najwjace dźěła činić.',
 	'requestaccount-ext-text' => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
-	'requestaccount-bio-text' => 'Twoja biografija so jako spočatny wobsah twojeje wužiwarskeje strony składuje.
-Spytaj wšě trěbne doporučenja naspomnić, ale zawěsć, zo chceš te informacije woprawdźe wozjewić.
-Móžeš swoje wužiwarske mjeno pod "[[Special:Preferences|Nastajenja]]" změnić.',
+	'requestaccount-bio-text' => 'Twoja biografija budźe so jako standardny wobsah twojeje wužiwarskeje strony składować.
+Spytaj referency zapřijimać.
+Zawěsć, zo chceš te informacije woprawdźe wozjewić.
+Móžeš swoje wužiwarske mjeno pod [[Special:Preferences|Nastajenja]] změnić.',
 	'requestaccount-real' => 'Woprawdźite mjeno:',
 	'requestaccount-same' => '(kaž woprawdźite mjeno)',
 	'requestaccount-email' => 'E-mejlowa adresa:',
@@ -3205,7 +3215,7 @@ $messages['id'] = array(
 	'requestaccount-level-1' => 'penyunting',
 	'requestaccount-submit' => 'Permintaan akun',
 	'requestaccount-email-subj-admin' => 'Permintaan akun {{SITENAME}}',
-	'acct_request_throttle_hit' => 'Maaf, anda sudah meminta $1 akun.
+	'acct_request_throttle_hit' => 'Anda telah meminta {{PLURAL:$1|1 akun|$1 akun}}.
 Anda tidak dapat lagi melakukan permintaan.',
 	'confirmaccount-real-q' => 'Nama',
 	'confirmaccount-name' => 'Nama pengguna',
@@ -3749,7 +3759,8 @@ Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wë
 	'request-account-econf' => 'Är E-Mailadress gouf confirméiert a gëtt elo als E-Mailadress an är Ufro fir e Benotzerkont integréiert.',
 	'requestaccount-email-subj' => '{{SITENAME}} Konfirmatioun vun der E-Mail-Adress',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Ufro fir ee Benotzerkont',
-	'acct_request_throttle_hit' => 'Pardon, Dir hutt schonns $1 Benotzerkonten ugefrot. Dir kënnt elo keng Ufroe méi maachen.',
+	'acct_request_throttle_hit' => 'Pardon, Dir hutt schonns {{PLURAL:$1|1Benotzerkont|$1 Benotzerkonten}} ugefrot.
+Dir kënnt elo keng weider Ufroe méi maachen.',
 	'requestaccount-loginnotice' => "Fir e Benitzerkont ze kréiene, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
 	'confirmaccounts' => 'Ufroe vu Benotzerkonte confirméieren',
 	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeeten fir Ufroe vu Benotzerkonten ze confirméieren",
@@ -4246,7 +4257,7 @@ Deze bevestigingse-mail verloopt op $4.',
 	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
 Het e-mailadres is bevestigd.
 U kunt het verzoek hier "$2" bevestigen.',
-	'acct_request_throttle_hit' => 'U hebt al $1 gebruikersverzoeken gedaan.
+	'acct_request_throttle_hit' => 'U hebt al $1 {{PLURAL:$1|gebruikersverzoek|gebruikersverzoeken}} gedaan.
 U kunt geen nieuwe verzoeken meer uitbrengen.',
 	'requestaccount-loginnotice' => "Om een gebruiker te krijgen, moet u '''[[Special:RequestAccount|een verzoek doen]]'''.",
 	'confirmaccount-newrequests' => "Op dit moment {{PLURAL:$1|staat|staan}} er '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|gebruikersverzoek|gebruikersverzoeken}}]] open.",
@@ -4652,7 +4663,8 @@ Aqueste còde de confirmacion expira lo $4.",
 	'requestaccount-email-body-admin' => "« $1 » a demandat un compte e se tròba en espèra de confirmacion.
 
 L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprobar la demanda aicí « $2 ».",
-	'acct_request_throttle_hit' => 'O planhèm, ja avètz demandat $1 comptes. Podètz pas far mai de demanda.',
+	'acct_request_throttle_hit' => 'O planhèm, ja avètz demandat {{PLURAL:$1|1 compte|$1 comptes}}.
+Podètz pas far mai de demanda.',
 	'requestaccount-loginnotice' => "Per obténer un compte d'utilizaire, vos ne cal far '''[[Special:RequestAccount|la demanda]]'''.",
 	'confirmaccount-newrequests' => "Actualament i a '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compte]]|[[Special:ConfirmAccounts|demandas de compte]]}} en cors.",
 	'confirmaccounts' => 'Demanda de confirmacion de comptes',
@@ -5622,7 +5634,8 @@ vyprší o $4.',
 	'requestaccount-email-subj-admin' => 'Žiadosť o účet vo {{GRAMMAR:lokál|{{SITENAME}}}}',
 	'requestaccount-email-body-admin' => '„$1“ požiadal o účet a čaká na potvrdenie.
 Emailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu: „$2“.',
-	'acct_request_throttle_hit' => 'Prepáčte, už ste požiadali o vytvorenie $1 účtov. Nemôžete ich odoslať viac žiadostí.',
+	'acct_request_throttle_hit' => 'Prepáčte, už ste požiadali o vytvorenie {{PLURAL:$1|$1 účtu|$1 účtov}}.
+Nemôžete odoslať viac žiadostí.',
 	'requestaccount-loginnotice' => "Aby ste dostali používateľský účet, musíte '''[[Special:RequestAccount|oň požiadať]]'''.",
 	'confirmaccount-newrequests' => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}} 
 [[Special:ConfirmAccounts|{{PLURAL:$1|žiadosť o účet|žiadosti o účet|žiadostí o účet}}]].",
