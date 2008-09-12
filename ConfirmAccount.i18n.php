@@ -1807,6 +1807,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  * @author Meithal
  * @author Sherbrooke
  * @author Urhixidur
+ * @author Zetud
  */
 $messages['fr'] = array(
 	'requestaccount' => 'Demande de compte utilisateur',
@@ -1860,7 +1861,7 @@ Ce code de confirmation expire le $4.',
 	'requestaccount-email-body-admin' => "« $1 » a demandé un compte et se trouve en attente de confirmation.
 
 L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $2 ».",
-	'acct_request_throttle_hit' => 'Désolé, vous déjà demandé {{PLURAL:$1|1 compte|$1 comptes}}.
+	'acct_request_throttle_hit' => 'Désolé, vous avez déjà demandé {{PLURAL:$1|1 compte|$1 comptes}}.
 Vous ne pouvez plus faire de demande.',
 	'requestaccount-loginnotice' => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
 	'confirmaccount-newrequests' => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
@@ -4859,7 +4860,7 @@ Kod potwierdzający zawarty w powyższym linku straci ważność $4.',
 	'requestaccount-email-subj-admin' => 'Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
 	'requestaccount-email-body-admin' => '„$1” złożył wniosek o założenie konta użytkownika i oczekuje na zatwierdzenie.
 Adres e-mail został potwierdzony. Możesz zatwierdzić wniosek tutaj „$2”.',
-	'acct_request_throttle_hit' => 'Złożyłeś już {{PLURAL:$1|wniosek|$2 wnioski|$2 wniosków}} o założenie konta użytkownika.
+	'acct_request_throttle_hit' => 'Złożyłeś już {{PLURAL:$1|1 wniosek|$1 wnioski|$1 wniosków}} o założenie konta użytkownika.
 Nie możesz złożyć więcej wniosków.',
 	'requestaccount-loginnotice' => "By uzyskać konto użytkownika musisz '''[[Special:RequestAccount|złożyć wniosek]]'''.",
 	'confirmaccount-newrequests' => "{{PLURAL:$1|Jest '''$1''' [[Special:ConfirmAccounts|oczekujący wniosek]]|Są '''$1''' [[Special:ConfirmAccounts|oczekujące wnioski]]|Jest '''$1''' [[Special:ConfirmAccounts|oczekujących wniosków]]}}, z potwierdzonym adresem e-mail",
