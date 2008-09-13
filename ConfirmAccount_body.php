@@ -558,6 +558,7 @@ class ConfirmAccountsPage extends SpecialPage
 			
 			# Safe to hook/log now...
 			wfRunHooks( 'AddNewAccount', array( $user ) );
+			$user->addNewUserLogEntry();
 			# OK, now remove the request from the queue
 			$dbw->delete( 'account_requests', array('acr_id' => $this->acrID), __METHOD__ );
 			# Clear cache for notice of how many account requests there are
