@@ -3057,7 +3057,7 @@ Iste codice de confirmation expirara le $4.',
 	'requestaccount-email-subj-admin' => 'Requesta de conto in {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" ha requestate un conto e attende confirmation.
 Le adresse de e-mail ha essite confirmate. Tu pote confirmar le requesta hic: "$2".',
-	'acct_request_throttle_hit' => 'Pardono, tu ha ja create $1 contos.
+	'acct_request_throttle_hit' => 'Pardono, tu ha ja create {{PLURAL:$1|1 conto|$1 contos}}.
 Tu non pote facer plus requestas.',
 	'requestaccount-loginnotice' => "Pro obtener un conto de usator, tu debe '''[[Special:RequestAccount|requestar un]]'''.",
 	'confirmaccount-newrequests' => "Es pendente '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|requesta de conto]]|[[Special:ConfirmAccounts|requestas de conto]]}} aperte e confirmate via e-mail",
