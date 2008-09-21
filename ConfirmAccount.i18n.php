@@ -1668,8 +1668,8 @@ $3
 Jos käyttäjätunnus luodaan, salasana lähetetään vain sinulle. Jos et ole pyytänyt käyttäjätunnusa, *älä* avaa osoitetta.
 Tämän vahvistuskoodi vanhenee $4.',
 	'requestaccount-email-subj-admin' => 'Sivuston {{SITENAME}} käyttäjätunnuspyyntö',
-	'requestaccount-email-body-admin' => '"$1" on pyytänyt käyttäjätunnusta ja odottaa vahvistusta.
-Sähköpostiosoite on tarkistettu. Käyttäjätunnus myönnetään napsauttamalla tästä "$2".',
+	'requestaccount-email-body-admin' => '”$1” on pyytänyt käyttäjätunnusta ja odottaa vahvistusta.
+Sähköpostiosoite on tarkistettu. Myönnä käyttäjätunnus tästä: $2.',
 	'acct_request_throttle_hit' => 'Valitettavasti et voi tehdä enempää pyyntöjä, koska olet jo pyytänyt $1 käyttäjätunnusta.',
 	'requestaccount-loginnotice' => "Saadaksesi käyttäjätunnuksen on tehtävä '''[[Special:RequestAccount|käyttäjätunnuspyyntö]]'''.",
 	'confirmaccount-newrequests' => "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} käsiteltävänä.",
