@@ -1475,6 +1475,7 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'requestaccount' => 'Peti konton',
+	'requestaccount-page' => '{{ns:project}}:Regularo de Servo',
 	'requestaccount-dup' => "'''Notu: Vi jam ensalutis kun registrita konto.'''",
 	'requestaccount-leg-user' => 'Konto de uzanto',
 	'requestaccount-leg-areas' => 'Ĉefaj fakoj de intereso',
@@ -1506,6 +1507,8 @@ Se la konto estas kreita, nur al vi estos retpoŝtita la pasvorto.
 Se ĉi tio ne devenas al vi, ne sekvu la ligilon.
 Ĉi tiu konfirmado findatiĝis je $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} peto por konto',
+	'acct_request_throttle_hit' => 'Bedaŭrinde, vi jam petis {{PLURAL:$1|1 konton|$1 kontojn}}.
+Vi ne povas peti pluajn petojn.',
 	'requestaccount-loginnotice' => "Akiri uzanto-konton, vi devas '''[[Special:RequestAccount|peti ĝin]]'''.",
 	'confirmaccounts' => 'Konfirmi petojn por kontoj',
 	'confirmedit-desc' => 'Donas al burokratoj la ebleco konfirmi kontajn petojn',
@@ -2680,7 +2683,7 @@ Jeli *njej*sy wužiwarske konto požadał, njewočiń prošu tutón wotkaz!
 Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'requestaccount-email-subj-admin' => 'Požadanje konta za {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" je konto požadał a čaka na potwjerdźenje. E-mejlowa adresa bu potwjerdźena. Móžeš požadanje tu "$2" potwjerdźić.',
-	'acct_request_throttle_hit' => 'Sy hižo $1 wužiwarskich kontow požadał, njemóžeš sej we wokomiku dalše konta žadać.',
+	'acct_request_throttle_hit' => 'Wodaj, sy hižo $1 {{PLURAL:$1|1 konto|$1 konće|$1 konta|$1 kontow}} požadał. Njemóžeš žane dalše konta požadać.',
 	'requestaccount-loginnotice' => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[Special:RequestAccount|prosyć]]'''.",
 	'confirmaccount-newrequests' => "{{PLURAL:$1|Čaka|Čakatej|Čakaja|Čaka}} tuchwilu '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|kontowe požadanje]]|[[Special:ConfirmAccounts|kontowej požadani]]|[[Special:ConfirmAccounts|kontowe požadanja]]|[[Special:ConfirmAccountskontowych požadanjow]]}}.",
 	'confirmaccounts' => 'Kontowe požadanja potwjerdźić',
@@ -4467,7 +4470,7 @@ $3
 Om kontoen blir opprettet vil kun du motta passordet. Om forespørselen *ikke* kommer fra deg, ikke følg lenken. Denne bekreftelseskoden utløper $4.',
 	'requestaccount-email-subj-admin' => 'Kontoforespørsel på {{SITENAME}}',
 	'requestaccount-email-body-admin' => '«$1» har etterspurt en konto og venter på godkjenning. E-postadressen er bekreftet. Du kan godkjenne forespørselen her: «$2».',
-	'acct_request_throttle_hit' => 'Beklager, du har allerede etterspurt $1 kontoer. Du kan ikke etterspørre flere.',
+	'acct_request_throttle_hit' => 'Beklager, du har allerede etterspurt {{PLURAL:$1|én konto|$1 kontoer}}. Du kan ikke etterspørre flere.',
 	'requestaccount-loginnotice' => "For å få en brukerkonto må du '''[[Special:RequestAccount|etterspørre en]]'''.",
 	'confirmaccount-newrequests' => "Det er foreløpig '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}.",
 	'confirmaccounts' => 'Godkjenn kontoforespørsler',
@@ -5775,19 +5778,27 @@ $messages['stq'] = array(
 
 	Läs eerste do [[{{MediaWiki:Requestaccount-page}}|Nutsengsbedingengen]] eer du n Benutserkonto fräigest.
 
-	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Bescheed un du koast die unner „[[{{ns:special}}:Userlogin|Anmäldje]]“ ienlogje.",
+	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Bescheed un du koast die [[{{ns:special}}:Userlogin|anmäldje]].",
 	'requestaccount-page' => '{{ns:project}}:Nutsengsbedingengen',
 	'requestaccount-dup' => "'''Oachtenge: Du bäst al mäd n registrierd Benutserkonto ienlogged.'''",
+	'requestaccount-leg-user' => 'Benutserkonto',
+	'requestaccount-leg-areas' => 'Haudinteressensgebiete',
+	'requestaccount-leg-person' => 'Persöönelke Informatione',
+	'requestaccount-leg-other' => 'Uur Informatione',
 	'requestaccount-acc-text' => 'An dien E-Mail-Adresse wäd ätter dät Ouseenden fon dit Formular ne Bestäätigengsmail soand. 
 Reagier deerap, wan du ap ju in ju Mail äntheeldene Bestäätigengsferbiendenge klikst.
 Sobolde n dien Konto anlaid wuude,
 wäd die dien Paaswoud per E-Mail tousoand.',
+	'requestaccount-areas-text' => 'Wääl do Themengebiete uut, in do du dät maaste Fäkwieten hääst of wier du ap maaste involvierd weese schääst.',
 	'requestaccount-ext-text' => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
 ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaidenge fon din Andraach eenfacher tou moakjen.',
 	'requestaccount-bio-text' => 'Dien Biographie wäd as initioale Inhoold fon dien Benutsersiede spiekerd. Fersäik aal do nöödige Referenzen tou ärwäänen, man staal sicher, dät du do Informatione wuddelk eepentelk bekoand moakje moatest. Du koast din Noome unner „[[{{ns:special}}:preferences|Ienstaalengen]]“ annerje.',
 	'requestaccount-real' => 'Realname:',
 	'requestaccount-same' => '(as die Realname)',
 	'requestaccount-email' => 'E-Mail-Adresse:',
+	'requestaccount-reqtype' => 'Position:',
+	'requestaccount-level-0' => 'Autor',
+	'requestaccount-level-1' => 'Beoarbaider',
 	'requestaccount-bio' => 'Persöönelke Biographie:',
 	'requestaccount-attach' => 'Lieuwensloop (optional):',
 	'requestaccount-notes' => 'Bietoukuumende Angoawen:',
@@ -5795,6 +5806,7 @@ ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaid
 	'requestaccount-agree' => 'Du moast bestäätigje, dät din Realname so gjucht is un du do Benutserbedingengen akzeptierst.',
 	'requestaccount-inuse' => 'Die Benutsernoome is al in n uur Benutserandraach in Ferweendenge.',
 	'requestaccount-tooshort' => 'Dien Biographie schuul mindestens $1 Woude loang weese.',
+	'requestaccount-emaildup' => 'N wiederen noch nit ouhonnelden Andraach benutset ju glieke E-Mail-Adresse.',
 	'requestaccount-exts' => 'Die Doatäityp fon dän Anhong is nit ferlööwed.',
 	'requestaccount-resub' => 'Ju Doatäi mäd din Lieuwensloop mout uut Sicherhaidsgruunden näi uutwääld wäide.
 Läit dät Fäild loos, wan du naan Lieuwensloop moor anföigje moatest.',
@@ -5815,10 +5827,12 @@ Wan dät Benutserkonto moaked wuude, krichst du ne E-Mail mäd dät Paaswoud.
 Wan du *nit* uum dät Benutserkonto fräiged hääst, eepenje ju Ferbiendenge nit!
 
 Disse Bestäätigengscode wäd uum $4 uungultich.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutserkontenandraach',
 	'acct_request_throttle_hit' => 'Du hääst al $1 uum Benutserkonten fräiged, du koast apstuuns neen wiedere fräigje.',
 	'requestaccount-loginnotice' => "Uum n näi Benutserkonto tou kriegen, moast du 
 der uum '''[[{{ns:special}}:RequestAccount|fräigje]]'''.",
 	'confirmaccounts' => 'Benutserkonto-Froagen bestäätigje',
+	'confirmedit-desc' => 'Rakt Bürokrate ju Muugelkhaid, Benutserkontenandraage tou bestäätigjen',
 	'confirmaccount-list' => 'Hier unner finst du ne Lieste fon noch tou beoarbaidjen Benutserkonto-Froagen.
 Bestäätigede Konten wäide anlaid un uut ju Lieste wächhoald. Ouliende Konten wäide eenfach uut ju Lieste läsked.',
 	'confirmaccount-text' => "Dit is n Andraach ap n Benutserkonto bie '''{{SITENAME}}'''. Wröigje aal hier unner stoundene Informatione gruundelk un bestäätigje do Informatione wan muugelk. Beoachtje, dät du dän Tougong bie Bedarf unner 
@@ -5828,26 +5842,51 @@ Wan du disse Siede ferlätst, sunner dät Konto tou bestäätigjen of outouliene
 	'confirmaccount-none-o' => 'Apstuuns rakt et neen eepene Benutserandraage ap disse Lieste.',
 	'confirmaccount-none-h' => 'Apstuuns rakt et neen Andraage in dän „outäiwe“-Stoatus ap disse Lieste.',
 	'confirmaccount-none-r' => 'Apstuuns rakt et neen knu ouliende Benutserandraage ap disse Lieste.',
+	'confirmaccount-none-e' => 'Apstuuns rakt et neen ouronnene Benutserandraage ap disse Lieste.',
 	'confirmaccount-real-q' => 'Noome',
 	'confirmaccount-email-q' => 'E-Mail',
 	'confirmaccount-bio-q' => 'Biographie',
+	'confirmaccount-showopen' => 'eepene Andraage',
+	'confirmaccount-showrej' => 'touräächwiesde Andraage',
 	'confirmaccount-showheld' => 'Lieste fon do Andraage ap „outäiwe“-Stoatus anwiese',
+	'confirmaccount-showexp' => 'ouronnene Andraage',
 	'confirmaccount-review' => 'Bestäätigje/Ouliene',
+	'confirmaccount-types' => 'Wääl ne Benutserbestäätigengstäiweslange uut do unner stoundenen uut:',
+	'confirmaccount-all' => '(wies aal Täiweslangen)',
+	'confirmaccount-type' => 'Täiweslange:',
+	'confirmaccount-type-0' => 'toukumstige Autore',
+	'confirmaccount-type-1' => 'toukumstige Beoarbaidere',
+	'confirmaccount-q-open' => 'eepene Andraage',
+	'confirmaccount-q-held' => 'täiwende Andraage',
+	'confirmaccount-q-rej' => 'knu ouliende Andraage',
+	'confirmaccount-q-stale' => 'ouronnene Andraage',
 	'confirmaccount-badid' => 'Apstuuns rakt et neen Benutserandraach tou ju anroate ID. Muugelkerwiese wuude hie al beoarbaided.',
+	'confirmaccount-leg-user' => 'Benutserkonto',
+	'confirmaccount-leg-areas' => 'Haudinteressengebiete',
+	'confirmaccount-leg-person' => 'Persöönelke Informatione',
+	'confirmaccount-leg-other' => 'Wiedere Informatione',
 	'confirmaccount-name' => 'Benutsernoome',
 	'confirmaccount-real' => 'Noome:',
 	'confirmaccount-email' => 'E-Mail:',
+	'confirmaccount-reqtype' => 'Position:',
+	'confirmaccount-pos-0' => 'Autor',
+	'confirmaccount-pos-1' => 'Beoarbaider',
 	'confirmaccount-bio' => 'Biographie:',
 	'confirmaccount-attach' => 'Lieuwensloop:',
+	'confirmaccount-notes' => 'Waiwiesengen bietou:',
 	'confirmaccount-urls' => 'Lieste fon do Websieden:',
 	'confirmaccount-none-p' => '(Niks ounroat)',
 	'confirmaccount-confirm' => 'Benutsje ju foulgjende Uutwoal, uum dän Andraach tou akzeptierjen, outoulienen of noch tou täiwen.',
 	'confirmaccount-econf' => '(bestäätiged)',
 	'confirmaccount-reject' => '(ouliend truch [[User:$1|$1]] ap n $2)',
+	'confirmaccount-rational' => 'Begruundenge foar dän Andraachstaaler',
+	'confirmaccount-noreason' => '(niks)',
+	'confirmaccount-autorej' => '(dissen Andraach wuud automatisk weegen Inaktivität strieken)',
 	'confirmaccount-held' => '(markierd as „outäiwe“ truch [[User:$1|$1]] ap n $2)',
 	'confirmaccount-create' => 'Bestäätigje (Konto anlääse)',
 	'confirmaccount-deny' => 'Ouliene (Andraach läskje)',
 	'confirmaccount-hold' => 'Markierd as „outäiwe“',
+	'confirmaccount-spam' => 'Spam (neen E-Mail ferseende)',
 	'confirmaccount-reason' => 'Begruundenge (wäd in ju Mail an dän Andraachstaaler ienföiged):',
 	'confirmaccount-ip' => 'IP-Addresse:',
 	'confirmaccount-submit' => 'Ouseende',
@@ -5855,6 +5894,7 @@ Wan du disse Siede ferlätst, sunner dät Konto tou bestäätigjen of outouliene
 	'confirmaccount-canthold' => 'Disse Froage wuude al as „outäiwe“ markierd of läsked.',
 	'confirmaccount-acc' => 'Benutserandraach mäd Ärfoulch bestäätiged; Benutser [[User:$1|$1]] wuude anlaid.',
 	'confirmaccount-rej' => 'Benutserandraach wuude ouliend.',
+	'confirmaccount-viewing' => '(wäd apstuuns bekieked truch [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Moak Benutsersiede mäd ju Biographie fon dän näie Benutser.',
 	'confirmaccount-welc' => "'''Wäilkuumen bie ''{{SITENAME}}''!''' Wie hoopje, dät du fuul goude Informatione biedrächst.
 	Muugelkerwiese moatest du eerste do [[{{MediaWiki:Helppage}}|Eerste Stappe]] leese. Nochmoal: Wäilkuumen un hääb Spoas!~",
@@ -5901,6 +5941,22 @@ koast, wan du moor uur do Anfoarderengen wiete moatest.
 
 Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
        musst du zusätzliche Informationen übermitteln.',
+	'usercredentials' => 'Benutser-Begjuchtigengsätterwies',
+	'usercredentials-leg' => 'Bestäätigede Benutser-Begjuchtigengsätterwiese ätterkiekje',
+	'usercredentials-user' => 'Benutsernoome:',
+	'usercredentials-text' => 'Hier foulgje do bestäätigede Benutser-Begjuchtigengsätterwiese foar dät wäälde Benutserkonto.',
+	'usercredentials-leg-user' => 'Benutserkonto',
+	'usercredentials-leg-areas' => 'Haud-Interessensgebiete',
+	'usercredentials-leg-person' => 'Persöönelke Informatione',
+	'usercredentials-leg-other' => 'Uur Informatione',
+	'usercredentials-email' => 'E-Mail:',
+	'usercredentials-real' => 'Ächten Noome',
+	'usercredentials-bio' => 'Biographie:',
+	'usercredentials-notes' => 'Bemäärkengen bietou:',
+	'usercredentials-urls' => 'Lieste fon do Websieden:',
+	'usercredentials-ip' => 'Originoale IP-Adresse:',
+	'usercredentials-member' => 'Gjuchte:',
+	'usercredentials-badid' => 'Der wuuden neen Begjuchtigengsätterwiese foar dissen Benutser fuunen. Wröich ju Schrieuwwiese.',
 );
 
 /** Sundanese (Basa Sunda)
@@ -5981,6 +6037,7 @@ $messages['su'] = array(
  * @author Jon Harald Søby
  * @author Lejonel
  * @author M.M.S.
+ * @author Najami
  */
 $messages['sv'] = array(
 	'requestaccount' => 'Ansök om konto',
@@ -6038,7 +6095,8 @@ Den här bekräftelsekoden slutar gälla den $4.',
 	'requestaccount-email-body-admin' => '"$1" har ansökt om ett konto och väntar på att godkännas.
 E-postadressen har bekräftats. Du kan godkänna ansökan på 
 $2',
-	'acct_request_throttle_hit' => 'Du har redan ansökt om $1 konton. Du kan inte göra fler ansökningar.',
+	'acct_request_throttle_hit' => 'Du har redan ansökt om {{PLURAL:$1|1 konto|$1 konton}}.
+Du kan inte göra fler ansökningar.',
 	'requestaccount-loginnotice' => "För att få ett användarkonto måste du '''[[Special:RequestAccount|ansöka om det]]'''.",
 	'confirmaccount-newrequests' => "Just nu väntar '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|kontoansökning|kontoansökningar}}]] med bekräftad e-postadress på att behandlas.",
 	'confirmaccounts' => 'Behandla kontoansökningar',
@@ -6532,16 +6590,22 @@ $3
 
 /** Turkish (Türkçe)
  * @author Karduelis
+ * @author Mach
  * @author Suelnur
  */
 $messages['tr'] = array(
+	'requestaccount-leg-user' => 'Kullanıcı hesabı',
 	'requestaccount-email' => 'E-posta adresi:',
+	'confirmaccount-real-q' => 'İsim',
 	'confirmaccount-email-q' => 'E-posta',
 	'confirmaccount-name' => 'Kullanıcı adı',
 	'confirmaccount-email' => 'E-posta:',
 	'confirmaccount-noreason' => '(hiçbiri)',
 	'confirmaccount-ip' => 'IP adresi:',
 	'confirmaccount-wsum' => 'Hoşgeldiniz!',
+	'usercredentials-user' => 'Kullanıcı adı:',
+	'usercredentials-leg-user' => 'Kullanıcı hesabı',
+	'usercredentials-email' => 'E-mail:',
 );
 
 /** Ukrainian (Українська)
