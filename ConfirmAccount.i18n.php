@@ -1814,12 +1814,11 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  */
 $messages['fr'] = array(
 	'requestaccount' => 'Demande de compte utilisateur',
-	'requestaccount-text' => "'''Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur.'''. 
+	'requestaccount-text' => "'''Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur'''. 
 	
-	Assurez-vous que vous ayez déjà lu [[{{MediaWiki:Requestaccount-page}}|les conditions d’utilisation]] avant de faire votre demande de compte.
+Assurez-vous que vous ayez déjà lu [[{{MediaWiki:Requestaccount-page}}|les conditions d’utilisation]] avant de faire votre demande de compte.
 	
-	Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur
-	[[Special:Userlogin]].",
+Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur [[Special:Userlogin|connexion]].",
 	'requestaccount-page' => "{{ns:project}}:Conditions d'utilisation",
 	'requestaccount-dup' => "'''Note : Vous êtes déjà sur une session avec un compte enregistré.'''",
 	'requestaccount-leg-user' => 'Compte utilisateur',
@@ -3706,6 +3705,7 @@ $messages['krj'] = array(
  */
 $messages['ksh'] = array(
 	'requestaccount-real' => 'Dinge richtije Name:',
+	'confirmedit-desc' => 'Määt et müjjelesch, dat {{int:group-bureaucrat}} de neu Aanmeldunge beshtätejje.',
 	'confirmaccount-real-q' => 'Name',
 	'confirmaccount-name' => 'Metmaacher Name',
 	'confirmaccount-real' => 'Name:',
@@ -4649,7 +4649,7 @@ $messages['oc'] = array(
 	'requestaccount-tooshort' => 'Vòstra biografia deu aver almens {{PLURAL:$1|$1 mot|$1 mots}}.',
 	'requestaccount-emaildup' => 'Una autra demanda en cors utiliza la meteissa adreça electronica.',
 	'requestaccount-exts' => 'Lo telecargament dels fiquièrs junts es pas permés.',
-	'requestaccount-resub' => 'Vòstre fiquièr de CV/resumit deu èsser seleccionat un còp de mai per de rasons de seguretat. Daissatz lo camp void se desiratz pas mai lo jonher.',
+	'requestaccount-resub' => 'Vòstre fichièr de CV/resumit deu èsser seleccionat un còp de mai per de rasons de seguretat. Daissatz lo camp void se lo desiratz pas mai jónher.',
 	'requestaccount-tos' => 'Ai legit e accèpti de respectar los [[{{MediaWiki:Requestaccount-page}}|tèrmes concernent las condicions d’utilizacion dels servicis]] de {{SITENAME}}.',
 	'requestaccount-submit' => "Demanda de compte d'utilizaire.",
 	'requestaccount-sent' => "Vòstra demanda de compte d'utilizaire es estada mandada amb succès e es estada mesa dins la lista d’espèra d’aprobacion.",
@@ -6688,6 +6688,13 @@ $messages['vo'] = array(
 	'confirmaccount-email-subj' => 'Beg kala ela {{SITENAME}}',
 	'usercredentials-user' => 'Gebananem:',
 	'usercredentials-real' => 'Nem jenöfik:',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'confirmaccount-real-q' => 'נאמען',
 );
 
 /** Yue (粵語) */
