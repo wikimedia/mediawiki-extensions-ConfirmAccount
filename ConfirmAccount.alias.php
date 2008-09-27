@@ -68,6 +68,7 @@ $aliases['he'] = array(
 $aliases['hr'] = array(
 	'RequestAccount' => array( 'Zatraži_račun' ),
 	'ConfirmAccounts' => array( 'Potvrdi_račun' ),
+	'UserCredentials' => array( 'Suradničke_vjerodajnice' ),
 );
 
 /** Haitian (Kreyòl ayisyen) */

@@ -883,7 +883,7 @@ $3
 	'requestaccount-email-subj-admin' => 'Заявка за сметка в {{SITENAME}}',
 	'requestaccount-email-body-admin' => '„$1“ отправи заявка за създаване на потребителска сметка, която очаква потвърждение.
 Посоченият адрес за електронна поща беше потвърден. Можете да потвърдите заявката тук „$2“.',
-	'acct_request_throttle_hit' => 'Вече сте направили $1 заявки за потребителски сметки. Не можете да правите повече заявки.',
+	'acct_request_throttle_hit' => 'Вече сте направили {{PLURAL:$1|една заявка за потребителска сметка|$1 заявки за потребителски сметки}}. Не можете да правите повече заявки.',
 	'requestaccount-loginnotice' => "За да получите потребителска сметка, необходимо е да '''[[Special:RequestAccount|изпратите заявка]]'''.",
 	'confirmaccounts' => 'Одобряване на заявките за потребителски сметки',
 	'confirmedit-desc' => 'Предоставя на бюрократите възможността да потвърждават заявките за регистрация на потребителски сметки.',
@@ -5828,13 +5828,22 @@ Wan du *nit* uum dät Benutserkonto fräiged hääst, eepenje ju Ferbiendenge ni
 
 Disse Bestäätigengscode wäd uum $4 uungultich.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutserkontenandraach',
-	'acct_request_throttle_hit' => 'Du hääst al $1 uum Benutserkonten fräiged, du koast apstuuns neen wiedere fräigje.',
+	'acct_request_throttle_hit' => 'Du hääst al {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} fräiged, du koast apstuuns neen wiedere fräigje.',
 	'requestaccount-loginnotice' => "Uum n näi Benutserkonto tou kriegen, moast du 
 der uum '''[[{{ns:special}}:RequestAccount|fräigje]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|eepenen, E-Mail bestäätigden Benutserkontenandraach täift]]|[[Special:ConfirmAccounts|eepene, E-Mail bestäätigde Benutserkontenandraage täiwe]]}} ap Beoarbaidenge.",
 	'confirmaccounts' => 'Benutserkonto-Froagen bestäätigje',
 	'confirmedit-desc' => 'Rakt Bürokrate ju Muugelkhaid, Benutserkontenandraage tou bestäätigjen',
-	'confirmaccount-list' => 'Hier unner finst du ne Lieste fon noch tou beoarbaidjen Benutserkonto-Froagen.
+	'confirmaccount-maintext' => "'''Disse Siede tjoont deertou, täiwende Benutserkontenandraage foar ''{{SITENAME}}''''' tou beoarbaidjen.
+
+Älke Benutserkonten-Andraachsqueue bestoant uut tjo Unnerqueues. Een foar eepene Anfroage, een foar Andraage in dän „outäiwe“-Stoatus un een foar knu ouliende Anfroagen.
+
+Wan du ap n Andraach oantwoudest, wröich dan do Informatione suurgfooldich un bestäätigje do änthooldene Informatione.
+Dien Aktione wäide nit-eepentelk protokollierd. Der wäd uk fon die ferwachted, do Aktione fon uurswäkke tou wröigjen.",
+	'confirmaccount-list' => 'Hier unner finst du ne Lieste fon noch tou beoarbaidjene Benutserkonto-Froagen.
 Bestäätigede Konten wäide anlaid un uut ju Lieste wächhoald. Ouliende Konten wäide eenfach uut ju Lieste läsked.',
+	'confirmaccount-list2' => 'Unner is ne Lieste fon knu touräächwiesde Andraage, do automatisk läsked wäide, so gau do eenige Deege oold sunt. Do konnen noch geneemigd wäide, man in älke Fal schuust du eerste dän oulienenden Administrator kontaktierje.',
+	'confirmaccount-list3' => 'Unner is ne Lieste knu touräächwiesde Andraage, do automatisk läsked wäide, so gau do eenige Deege oold sunt. Do konnen noch geneemigd wäide.',
 	'confirmaccount-text' => "Dit is n Andraach ap n Benutserkonto bie '''{{SITENAME}}'''. Wröigje aal hier unner stoundene Informatione gruundelk un bestäätigje do Informatione wan muugelk. Beoachtje, dät du dän Tougong bie Bedarf unner 
 n uur Benutsernoome anlääse koast. Du schuust dät bloot nutsje, uum Kollisione mäd uur Noomen tou fermieden.
 
