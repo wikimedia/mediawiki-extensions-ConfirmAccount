@@ -3763,6 +3763,8 @@ Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wë
 	'request-account-econf' => 'Är E-Mailadress gouf confirméiert a gëtt elo als E-Mailadress an är Ufro fir e Benotzerkont integréiert.',
 	'requestaccount-email-subj' => '{{SITENAME}} Konfirmatioun vun der E-Mail-Adress',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Ufro fir ee Benotzerkont',
+	'requestaccount-email-body-admin' => '"$1" huet e Benotzerkont ugefrot a waart op eng Confirmatioun.
+D\'E-mailadresse ass confirméiert. Dir kënnt déi Ufro hei "$2" confirméieren.',
 	'acct_request_throttle_hit' => 'Pardon, Dir hutt schonns {{PLURAL:$1|1Benotzerkont|$1 Benotzerkonten}} ugefrot.
 Dir kënnt elo keng weider Ufroe méi maachen.',
 	'requestaccount-loginnotice' => "Fir e Benitzerkont ze kréiene, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
@@ -3777,6 +3779,7 @@ Dir kënnt elo keng weider Ufroe méi maachen.',
 	'confirmaccount-showexp' => 'ofgelafen Ufroen',
 	'confirmaccount-review' => 'Konfirméieren/Refüséieren',
 	'confirmaccount-q-open' => 'Ufroen déi nach opstinn',
+	'confirmaccount-q-rej' => 'rezent refuséiert Ufroen',
 	'confirmaccount-q-stale' => 'ofgelafen Ufroen',
 	'confirmaccount-leg-user' => 'Benotzerkont',
 	'confirmaccount-leg-areas' => 'Haaptinteressen',
@@ -3805,6 +3808,9 @@ Dir kënnt elo keng weider Ufroe méi maachen.',
 	'confirmaccount-rej' => "D'Ufro fir ee Benotzerkont gouf refüséiert.",
 	'confirmaccount-viewing' => '(gëtt elo gekuckt vum [[User:$1|$1]])',
 	'confirmaccount-summary' => "D'Benotzersäit mat der Biographie vum neie Benotzer gëtt elo gemaach.",
+	'confirmaccount-welc' => "'''Wëllkomm op ''{{SITENAME}}''!'''
+Dir wëllt wahrscheinlech d'[[{{MediaWiki:Helppage}}|Hellëfsäite]] liesen.
+Nachemol, wëllkom a vill Spaass!",
 	'confirmaccount-wsum' => 'Wëllkomm!',
 	'confirmaccount-email-subj' => '{{SITENAME}} Ufro fir ee Benotzerkont',
 	'usercredentials' => 'Referenzen déi de Benotzer uginn huet:',
