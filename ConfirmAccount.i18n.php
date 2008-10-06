@@ -5345,18 +5345,49 @@ $messages['rm'] = array(
 
 /** Romanian (Română)
  * @author KlaudiuMihaila
+ * @author Mihai
  */
 $messages['ro'] = array(
+	'requestaccount' => 'Solicitare deschidere cont',
+	'requestaccount-text' => "'''Completează şi aplică următorul formular pentru a cere deschiderea unui cont de utilizator'''.
+
+Asigură-te că ai citit [[{{MediaWiki:Requestaccount-page}}|Termenii]] înainte de a cere deschiderea unui cont.
+
+După ce contul va fi aprobat, vei fi anunţat printr-un mesaj trimis prin e-mail, iar contul va putea fi accesat apelând [[Special:UserLogin|autentificare]].",
+	'requestaccount-page' => '{{ns:project}}:Termeni',
 	'requestaccount-leg-user' => 'Cont de utilizator',
 	'requestaccount-leg-areas' => 'Arii principale de interes',
 	'requestaccount-leg-person' => 'Informaţii personale',
 	'requestaccount-leg-other' => 'Alte informaţii',
+	'requestaccount-bio-text' => 'Biografia ta va fi introdusă automat în pagina ta de utilizator.
+Încearcă să incluzi referiri la diplome care să ateste cunoştinţele tale.
+Asigură-te că publicarea acestora nu-ţi aduce prejudicii.
+Numele tău poate fi schimbat din [[Special:Preferences|preferinţele tale]].',
 	'requestaccount-real' => 'Nume real:',
 	'requestaccount-email' => 'Adresă e-mail:',
 	'requestaccount-reqtype' => 'Poziţie:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-bio' => 'Biografie personală:',
 	'requestaccount-attach' => 'CV (opţional):',
+	'requestaccount-agree' => 'Trebuie să certifici că numele tău real este corect introdus şi că accepţi Termenii Serviciului.',
+	'requestaccount-inuse' => 'Numele de utilizator este deja folosit într-o cerere de deschidere de cont în aşteptare.',
+	'requestaccount-tooshort' => 'Biografia ta trebuie să conţină cel puţin $1 cuvinte.',
+	'requestaccount-tos' => 'Am citit şi accept să respect [[{{MediaWiki:Requestaccount-page}}|Termenii]] sitului {{SITENAME}}.
+Numele pe care l-am introdus în câmpul "Nume real" este numele meu real.',
+	'requestaccount-submit' => 'Solicitare deschidere cont',
+	'request-account-econf' => 'Adresa ta de e-mail a fost confirmată şi va fi listată în cererea de deschidere de cont.',
+	'requestaccount-email-subj' => '{{SITENAME}} confirmare adresă e-mail',
+	'requestaccount-email-body' => 'Cineva, probabil tu de la adresa IP $1, a cerut deschiderea unui cont "$2" cu această adresă de e-mail în {{SITENAME}}.
+
+Pentru a confirma că într-adevăr adresa întrodusă în {{SITENAME}} îţi aparţine, deschide legătura următoare în programul tău de navigare pe internet:
+
+$3
+
+Dacă acest cont a fost creat, doar ţie îţi va fi trimisă parola.
+Dacă acest mesaj nu-ţi este destinat, nu deschide legătura.
+Codul de confirmare expiră în $4.',
+	'requestaccount-email-body-admin' => '"$1" a cerut deschiderea unui cont şi aşteaptă confirmarea.
+Adresa de e-mail a fost confirmată. Poţi confirma cererea aici "$2".',
 	'confirmaccount-real-q' => 'Nume',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografie',
@@ -5379,8 +5410,13 @@ $messages['ro'] = array(
 	'confirmaccount-attach' => 'CV:',
 	'confirmaccount-urls' => 'Listă de situri web:',
 	'confirmaccount-econf' => '(confirmat)',
+	'confirmaccount-create' => 'Acceptare (crează cont)',
+	'confirmaccount-deny' => 'Respinge (delist)',
+	'confirmaccount-hold' => 'Reţine',
+	'confirmaccount-reason' => 'Comentariu (va fi inclus în e-mail):',
 	'confirmaccount-ip' => 'Adresă IP:',
 	'confirmaccount-submit' => 'Confirmă',
+	'confirmaccount-wsum' => 'Bun venit!',
 	'usercredentials-user' => 'Nume de utilizator:',
 	'usercredentials-leg-user' => 'Cont de utilizator',
 	'usercredentials-leg-areas' => 'Arii principale de interes',
@@ -5459,7 +5495,7 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}}: запрос учётной записи',
 	'requestaccount-email-body-admin' => '«$1» запросил создание учётной записи и ожидает подтверждения.
 Адрес электронной почты был подтверждён. Вы можете подтвердить заявку здесь «$2».',
-	'acct_request_throttle_hit' => 'Извините, но вы уже запросили {{PLURAL:$1|одну учётную запись|$1 учётных записей}}. 
+	'acct_request_throttle_hit' => 'Извините, но вы уже запросили $1 {{PLURAL:$1|учётную запись|учётные записи|учётных записей}}. 
 Больше делать запросов вы не можете.',
 	'requestaccount-loginnotice' => 'Чтобы получить учётную запись, вы должны её [[Special:RequestAccount|запросить]].',
 	'confirmaccount-newrequests' => "Ожидается обработка '''$1'''  
