@@ -3710,6 +3710,21 @@ $messages['ksh'] = array(
 	'confirmaccount-real-q' => 'Name',
 	'confirmaccount-name' => 'Metmaacher Name',
 	'confirmaccount-real' => 'Name:',
+	'confirmaccount-email' => 'E-mail:',
+	'confirmaccount-reqtype' => 'Posizjuhn:',
+	'confirmaccount-pos-0' => 'Schriever',
+	'confirmaccount-pos-1' => 'Beärbeider',
+	'confirmaccount-bio' => 'Et Lääve:',
+	'confirmaccount-notes' => 'Söns noch jet:',
+	'confirmaccount-urls' => 'Leß met Websigge:',
+	'confirmaccount-none-p' => '(nix aanjejovve)',
+	'confirmaccount-confirm' => 'Donn met dä Ußwahl hee noh entscheide, dä Aandraach aanzenämme, affzelänne, udder noch jet ze waade.',
+	'confirmaccount-econf' => '(beshtähtish)',
+	'confirmaccount-reject' => '(aam $2 fum [[User:$1|$1]] affjeleent)',
+	'confirmaccount-rational' => 'Jif ene Jrond för dä Aandraachshteller:',
+	'confirmaccount-noreason' => '(nix)',
+	'confirmaccount-held' => '(aam $2 fum [[User:$1|$1]] op „waade“ jesatz)',
+	'confirmaccount-ip' => 'IP-Address:',
 	'usercredentials-user' => 'Metmaacher Name:',
 	'usercredentials-real' => 'Dä richtije Name:',
 );
@@ -4156,8 +4171,14 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'requestaccount-level-0' => 'теицязо',
+	'requestaccount-level-1' => 'витницязо-петницязо',
 	'confirmaccount-real-q' => 'Лемезэ:',
 	'confirmaccount-real' => 'Лемезэ:',
+	'confirmaccount-pos-0' => 'теиця',
+	'confirmaccount-pos-1' => 'витницязо-петницязо',
+	'confirmaccount-submit' => 'Кемекстамс',
+	'confirmaccount-wsum' => 'Совак, инеське!',
 );
 
 /** Nahuatl (Nāhuatl)
