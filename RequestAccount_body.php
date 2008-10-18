@@ -203,10 +203,13 @@ class RequestAccountPage extends SpecialPage {
 			$form .= $captcha->getForm();
 			$form .= '</fieldset>';
 		}
+		$form .= '<fieldset>';
+		$form .= '<legend>' . wfMsgHtml('requestaccount-leg-tos') . '</legend>';
 		if( $wgAccountRequestToS ) {
 			$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
 				' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
 		}
+		$form .= '</fieldset>';
 		$form .= Xml::hidden( 'title', $titleObj->getPrefixedUrl() )."\n";
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .= Xml::hidden( 'attachment', $this->mPrevAttachment )."\n";

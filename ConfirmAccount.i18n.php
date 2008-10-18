@@ -22,6 +22,7 @@ Once the account is approved, you will be e-mailed a notification message and th
 	'requestaccount-leg-areas'  => 'Main areas of interest',
 	'requestaccount-leg-person' => 'Personal information',
 	'requestaccount-leg-other'  => 'Other information',
+	'requestaccount-leg-tos'    => 'Terms of Service',
 	'requestaccount-acc-text'   => 'Your e-mail address will be sent a confirmation message once this request is submitted.
 Please respond by clicking on the confirmation link provided by the e-mail.
 Also, your password will be e-mailed to you when your account is created.',
