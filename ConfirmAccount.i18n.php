@@ -312,17 +312,6 @@ $messages['rtm'] = array(
 	'usercredentials-user' => 'Asa:',
 );
 
-/** Eastern Mari (Олык Марий)
- * @author Сай
- */
-$messages['mhr'] = array(
-	'confirmaccount-email-q' => 'Электрон почто',
-	'confirmaccount-name' => 'Пайдаланышын лӱмжӧ',
-	'confirmaccount-email' => 'Электрон почто:',
-	'usercredentials-user' => 'Пайдаланышын лӱмжӧ:',
-	'usercredentials-email' => 'Электрон почто:',
-);
-
 /** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
@@ -403,6 +392,7 @@ $messages['ar'] = array(
 	'requestaccount-leg-areas' => 'الاهتمامات الرئيسية',
 	'requestaccount-leg-person' => 'المعلومات الشخصية',
 	'requestaccount-leg-other' => 'معلومات أخرى',
+	'requestaccount-leg-tos' => 'شروط الخدمة',
 	'requestaccount-acc-text' => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب.
 من فضلك استجب عن طريق الضغط على وصلة التأكيد المعطاة في البريد الإلكتروني.
 أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
@@ -614,6 +604,7 @@ $messages['arz'] = array(
 	'requestaccount-leg-areas' => 'الاهتمامات الرئيسية',
 	'requestaccount-leg-person' => 'المعلومات الشخصية',
 	'requestaccount-leg-other' => 'معلومات أخرى',
+	'requestaccount-leg-tos' => 'شروط الخدمة',
 	'requestaccount-acc-text' => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكترونى متى تم بعث هذا الطلب.
 من فضلك استجب عن طريق الضغط على وصلة التأكيد المعطاة فى البريد الإلكتروني.
 أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكترونى عندما يتم إنشاء حسابك.',
@@ -1212,6 +1203,7 @@ Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kan
 	'requestaccount-leg-areas' => 'Hauptinteressensgebiete',
 	'requestaccount-leg-person' => 'Persönliche Informationen',
 	'requestaccount-leg-other' => 'Weitere Informationen',
+	'requestaccount-leg-tos' => 'Benutzungsbedingungen',
 	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
 	Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst. Sobald dein Konto angelegt wurde,
 	wird dir dein Passwort per E-Mail zugeschickt.',
@@ -1827,6 +1819,7 @@ Une fois que le compte est accepté, vous recevrez un courrier électronique vou
 	'requestaccount-leg-areas' => "Centres d'intérêts principaux",
 	'requestaccount-leg-person' => 'Informations personnelles',
 	'requestaccount-leg-other' => 'Autres informations',
+	'requestaccount-leg-tos' => 'Termes du service',
 	'requestaccount-acc-text' => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
 	'requestaccount-areas-text' => 'Choisissez les domaines dans lesquels vous avez une expertise démontrée, ou dans lesquels vous êtes enclin à contribuer le plus.',
 	'requestaccount-ext-text' => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
@@ -2279,6 +2272,17 @@ Poden existir listaxes de contacto no sitio que poida usar se quere saber máis 
 	'usercredentials-ip' => 'Enderezo IP orixinal:',
 	'usercredentials-member' => 'Dereitos:',
 	'usercredentials-badid' => 'Non se atoparon credenciais para este usuario. Comprobe que o nome estea escrito correctamente.',
+);
+
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Omnipaedista
+ */
+$messages['grc'] = array(
+	'requestaccount-reqtype' => 'Θέσις:',
+	'requestaccount-level-0' => 'δημιουργός',
+	'requestaccount-level-1' => 'μεταγραφεύς',
+	'confirmaccount-noreason' => '(οὐδεμία)',
+	'confirmaccount-submit' => 'Ἐπιβεβαίωσις',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -3213,7 +3217,20 @@ Verifica que le nomine sia orthographiate correctemente.',
  */
 $messages['id'] = array(
 	'requestaccount' => 'Permintaan akun',
+	'requestaccount-text' => "'''Lengkapi dan kirim formulir berikut untuk mengajukan sebuah akun pengguna'''.
+
+Pastikan Anda telah membaca [[{{MediaWiki:Requestaccount-page}}|kebijakan akun]] sebelum mengajukan permintaan.
+
+Bila akun yang Anda ajukan telah disetujui, sebuah surat-e notifikasi akan dikirimkan kepada Anda dan akun tersebut dapat digunakan untuk [[Special:UserLogin|masuk log]] di situs ini.",
+	'requestaccount-page' => '{{ns:project}}:Kebijakan akun pengguna',
+	'requestaccount-dup' => "'''Catatan: Anda sudah masuk log dengan sebuah akun terdaftar.'''",
 	'requestaccount-leg-user' => 'Nama pengguna',
+	'requestaccount-leg-areas' => 'Bidang utama yang diminati',
+	'requestaccount-leg-person' => 'Informasi pribadi',
+	'requestaccount-leg-other' => 'Informasi lainnya',
+	'requestaccount-acc-text' => 'Kami akan mengirimkan sebuah pesan konfirmasi ke alamat surat-e Anda segera setelah permintaan ini dikirimkan.
+Klik pada pranala dalam surat-e tersebut untuk konfirmasi.
+Kata sandi Anda juga akan dikirimkan melalui surat-e setelah akun Anda disetujui dan dibuat.',
 	'requestaccount-real' => 'Nama asli:',
 	'requestaccount-same' => '(sama dengan nama asli)',
 	'requestaccount-email' => 'Alamat surat-e:',
@@ -3709,6 +3726,10 @@ $messages['ksh'] = array(
 	'requestaccount-real' => 'Dinge richtije Name:',
 	'confirmedit-desc' => 'Määt et müjjelesch, dat {{int:group-bureaucrat}} de neu Aanmeldunge beshtätejje.',
 	'confirmaccount-real-q' => 'Name',
+	'confirmaccount-q-open' => 'Aanfrore am waade',
+	'confirmaccount-q-held' => 'zerökjestallte un opjeschovve Aanfore',
+	'confirmaccount-q-rej' => 'köözlesch afjeleente Aanfrore',
+	'confirmaccount-q-stale' => 'afjeloufe Aanfrore',
 	'confirmaccount-name' => 'Metmaacher Name',
 	'confirmaccount-real' => 'Name:',
 	'confirmaccount-email' => 'E-mail:',
@@ -3852,6 +3873,17 @@ Nachemol, wëllkom a vill Spaass!",
 $messages['lt'] = array(
 	'confirmaccount-real-q' => 'Vardas',
 	'confirmaccount-real' => 'Vardas:',
+);
+
+/** Eastern Mari (Олык Марий)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'confirmaccount-email-q' => 'Электрон почто',
+	'confirmaccount-name' => 'Пайдаланышын лӱмжӧ',
+	'confirmaccount-email' => 'Электрон почто:',
+	'usercredentials-user' => 'Пайдаланышын лӱмжӧ:',
+	'usercredentials-email' => 'Электрон почто:',
 );
 
 /** Malayalam (മലയാളം)
@@ -4244,6 +4276,7 @@ Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Spec
 	'requestaccount-leg-areas' => 'Interessegebieden',
 	'requestaccount-leg-person' => 'Persoonlijke informatie',
 	'requestaccount-leg-other' => 'Overige informatie',
+	'requestaccount-leg-tos' => 'Gebruiksvoorwaarden',
 	'requestaccount-acc-text' => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen.
 Reageer daar op door te klikken op de bevestigingslink die in de e-mail staat.
 U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
