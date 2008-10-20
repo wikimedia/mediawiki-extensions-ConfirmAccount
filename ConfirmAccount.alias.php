@@ -61,6 +61,7 @@ $aliases['gl'] = array(
  * @author Rotem Liss
  */
 $aliases['he'] = array(
+	'RequestAccount' => array( 'בקשת_חשבון' ),
 	'ConfirmAccounts' => array( 'אישור_חשבון' ),
 );
 
@@ -118,6 +119,12 @@ $aliases['nl'] = array(
 $aliases['no'] = array(
 	'RequestAccount' => array( 'Etterspør konto' ),
 	'ConfirmAccounts' => array( 'Bekreft konto' ),
+);
+
+/** Occitan (Occitan) */
+$aliases['oc'] = array(
+	'RequestAccount' => array( 'DemandarUnCompte', 'Demandar un compte' ),
+	'ConfirmAccounts' => array( 'ConfirmarCompte', 'Confirmacion compte', 'ConfirmacionCompte' ),
 );
 
 /** Portuguese (Português) */
