@@ -62,7 +62,8 @@ $aliases['gl'] = array(
  */
 $aliases['he'] = array(
 	'RequestAccount' => array( 'בקשת_חשבון' ),
-	'ConfirmAccounts' => array( 'אישור_חשבון' ),
+	'ConfirmAccounts' => array( 'אישור_חשבונות' ),
+	'UserCredentials' => array( 'פרטי_משתמש' ),
 );
 
 /** Croatian (Hrvatski) */
