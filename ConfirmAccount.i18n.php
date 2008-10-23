@@ -2086,6 +2086,7 @@ $messages['gl'] = array(
 	'requestaccount-leg-areas' => 'Principais áreas de interese',
 	'requestaccount-leg-person' => 'Información persoal',
 	'requestaccount-leg-other' => 'Outra información',
+	'requestaccount-leg-tos' => 'Termos do servizo',
 	'requestaccount-acc-text' => 'Enviaráselle unha mensaxe de confirmación ao seu enderezo de correo electrónico unha vez enviada esta solicitude. Responda premendo
 	na ligazón de confirmación que lle aparecerá no correo electrónico. Así mesmo, enviaráselle o seu contrasinal cando se cree a conta.',
 	'requestaccount-areas-text' => 'Seleccione embaixo as áreas dos temas dos que é máis experto ou nos que lle gustaría traballar máis.',
@@ -2647,6 +2648,7 @@ Tak ruče kaž konto je so potwjerdźiło, dóstanješ powěsć přez e-mejlku a
 	'requestaccount-leg-areas' => 'Hłowne zajimowe wobwody',
 	'requestaccount-leg-person' => 'Wosobinske informacije',
 	'requestaccount-leg-other' => 'Druhe informacije',
+	'requestaccount-leg-tos' => 'Wužiwanske wuměnjenja',
 	'requestaccount-acc-text' => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
 	'requestaccount-areas-text' => 'Wubjer slědowace temowe wobwody, w kotrychž maš wěcywustojnosć abo chceš najwjace dźěła činić.',
 	'requestaccount-ext-text' => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
