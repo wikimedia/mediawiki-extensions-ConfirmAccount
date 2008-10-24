@@ -73,6 +73,12 @@ $aliases['hr'] = array(
 	'UserCredentials' => array( 'Suradničke_vjerodajnice' ),
 );
 
+/** Upper Sorbian (Hornjoserbsce) */
+$aliases['hsb'] = array(
+	'RequestAccount' => array( 'Konto požadać' ),
+	'ConfirmAccounts' => array( 'Konto potwjerdźić' ),
+);
+
 /** Haitian (Kreyòl ayisyen) */
 $aliases['ht'] = array(
 	'ConfirmAccounts' => array( 'KonfimeKonpt' ),
