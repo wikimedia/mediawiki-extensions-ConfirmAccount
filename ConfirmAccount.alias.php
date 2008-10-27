@@ -103,7 +103,7 @@ $aliases['lb'] = array(
 
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
-	'ConfirmAccounts' => array( 'Sahkan_akaun', 'Mengesahkan_akaun' ),
+	'ConfirmAccounts' => array( 'Sahkan akaun', 'Mengesahkan akaun' ),
 );
 
 /** Nedersaksisch (Nedersaksisch) */
