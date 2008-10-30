@@ -834,6 +834,7 @@ $messages['bg'] = array(
 	'requestaccount-leg-areas' => 'Основни интереси',
 	'requestaccount-leg-person' => 'Лична информация',
 	'requestaccount-leg-other' => 'Друга информация',
+	'requestaccount-leg-tos' => 'Условия за ползване',
 	'requestaccount-acc-text' => 'След като заявката бъде обработена, на посочения адрес за електронна поща ще бъде изпратено съобщение за потвърждние. Необходимо е да се последва включената в него препратка. След създаване на потребителската сметка, на същия адрес ще бъде изпратена и временна парола за влизане.',
 	'requestaccount-areas-text' => 'Сред тематичните области по-долу изберете тези, в които имате компетенции или желание да допринасяте най-много.',
 	'requestaccount-ext-text' => 'Следната информация се счита за поверителна и не се публикува; тя ще бъде използвана само за тази заявка.
@@ -4696,7 +4697,7 @@ $messages['oc'] = array(
 	'requestaccount-leg-other' => 'Autras entresenhas',
 	'requestaccount-leg-tos' => 'Tèrmes del servici',
 	'requestaccount-acc-text' => 'Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. Dins lo corrièr recebut, clicatz sul ligam correspondent a la confirmacion de vòstra demanda. E mai, senhal serà mandat per corrièr electronic quand vòstre compte serà creat.',
-	'requestaccount-areas-text' => 'Causissètz los domenis dins losquals avètz una expertisa demostrada, o dins lasqualas sètz mai portat a contribuir.',
+	'requestaccount-areas-text' => 'Causissètz los domenis dins losquins avètz una expertisa demostrada, o dins losquins sètz mai portat a contribuir.',
 	'requestaccount-ext-text' => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telèfon per obténer una assistància per confirmar vòstra identitat.',
 	'requestaccount-bio-text' => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences|vòstras preferéncias]].",
 	'requestaccount-real' => 'Nom vertadièr :',
@@ -4744,7 +4745,7 @@ Cada demanda de compte d'utilizaire consistís en tres soslistas : una per las d
 
 Al moment de la responsa a una demanda, verificatz-la atentivament e, se fa mestèr, confirmatz las informaxions qu'i son mencionadas. Vòstras accions seràn inscrichas separadament dins un jornal. Tanben podètz esperar la verificacion de cada activitat que prendràn de plaça separadament per rapòrt a çò que faretz vos-meteis.",
 	'confirmaccount-list' => "Vaquí, çaijós, la lista dels comptes en espèra d’aprobacion. Los comptes acceptats seràn creats e levats d'aquesta lista. Los comptes regetats seràn suprimits d'aquesta meteissa lista.",
-	'confirmaccount-list2' => "Veire la lista dels comptes recentament regetats losquals seràn suprimits automaticament aprèp qualques jorns. Pòdon encara èsser aprobats, e mai podètz consultar los regets abans d'o far.",
+	'confirmaccount-list2' => "Veire la lista dels comptes recentament regetats que seràn suprimits automaticament aprèp qualques jorns. Pòdon encara èsser aprobats, e mai podètz consultar los regets abans d'o far.",
 	'confirmaccount-list3' => 'Çaijós se tròba una lista de comptes expirats que poirián èsser automaticament suprimits aprèp qualques jorns. Encara pòdon èsser aprovats.',
 	'confirmaccount-text' => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''.
 
@@ -5491,6 +5492,7 @@ Adresa de e-mail a fost confirmată. Poţi confirma cererea aici "$2".',
 );
 
 /** Russian (Русский)
+ * @author Ferrer
  * @author Kaganer
  * @author Александр Сигачёв
  */
@@ -5508,6 +5510,7 @@ $messages['ru'] = array(
 	'requestaccount-leg-areas' => 'Основные области интересов',
 	'requestaccount-leg-person' => 'Личные сведения',
 	'requestaccount-leg-other' => 'Прочая информация',
+	'requestaccount-leg-tos' => 'Правила использования',
 	'requestaccount-acc-text' => 'После отправки заявки на ваш адрес будет о отправлено письмо с запросом подтверждения. Пожалуйста, нажмите на ссылку в письме, чтобы дать подтверждение. Пароль будет отправлен вам по почте, когда ваша учётная запись будет создана.',
 	'requestaccount-areas-text' => 'Выберите области, в которых вы компетентны или в которых собираетесь работать в наибольшей степени.',
 	'requestaccount-ext-text' => 'Следующая информация будет сохранена в секрете и будет использована только для обработки данного запроса.
