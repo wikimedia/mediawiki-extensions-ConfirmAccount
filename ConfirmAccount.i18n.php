@@ -1049,6 +1049,13 @@ $messages['br'] = array(
 	'usercredentials-email' => 'Postel :',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'confirmaccount-name' => 'Korisničko ime',
+);
+
 /** Catalan (Català)
  * @author SMP
  */
