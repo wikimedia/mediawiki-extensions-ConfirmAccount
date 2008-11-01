@@ -2359,6 +2359,7 @@ $messages['haw'] = array(
 /** Hebrew (עברית)
  * @author Rotemliss
  * @author StuB
+ * @author YaronSh
  */
 $messages['he'] = array(
 	'requestaccount' => 'בקשת חשבון',
@@ -2375,6 +2376,24 @@ $messages['he'] = array(
 	'confirmaccount-rej' => 'בקשת החשבון נדחתה בהצלחה.',
 	'confirmaccount-viewing' => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])',
 	'confirmaccount-summary' => 'יצירת דף משתמש עם ביוגרפיה של משתמש חדש',
+	'usercredentials' => 'פרטי זיהוי המשתמש',
+	'usercredentials-leg' => 'פרטי זיהוי המשתמש שאושרו בתהליך האיתור',
+	'usercredentials-user' => 'שם המשתמש:',
+	'usercredentials-text' => 'להלן פרטי הזיהוי המאומתים של חשבון המשתמש הנבחר.',
+	'usercredentials-leg-user' => 'חשבון משתמש',
+	'usercredentials-leg-areas' => 'תחומי עניין עיקריים',
+	'usercredentials-leg-person' => 'נתונים אישיים',
+	'usercredentials-leg-other' => 'נתונים שונים',
+	'usercredentials-email' => 'דוא"ל:',
+	'usercredentials-real' => 'שם אמיתי:',
+	'usercredentials-bio' => 'ביוגרפיה:',
+	'usercredentials-attach' => 'קורות חיים:',
+	'usercredentials-notes' => 'הערות נוספות:',
+	'usercredentials-urls' => 'רשימת אתרים:',
+	'usercredentials-ip' => 'כתובת ה־IP המקורית:',
+	'usercredentials-member' => 'הרשאות:',
+	'usercredentials-badid' => 'לא נמצאו פרטי זיהוי עבור משתמש זה.
+אנא ודאו שהשם מאוית כראוי.',
 );
 
 /** Hindi (हिन्दी)
