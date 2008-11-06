@@ -34,6 +34,12 @@ $aliases['arz'] = array(
 	'UserCredentials' => array( 'شهادات_المستخدم' ),
 );
 
+/** Bosnian (Bosanski) */
+$aliases['bs'] = array(
+	'RequestAccount' => array( 'ZahtjevajRacun' ),
+	'ConfirmAccounts' => array( 'PotvrdiRacun' ),
+);
+
 /** German (Deutsch) */
 $aliases['de'] = array(
 	'RequestAccount' => array( 'Benutzerkonto beantragen' ),
