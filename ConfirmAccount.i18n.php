@@ -4895,6 +4895,7 @@ $messages['pdt'] = array(
 /** Polish (Polski)
  * @author Derbeth
  * @author Equadus
+ * @author Maikking
  * @author Masti
  * @author McMonster
  * @author Sp5uhe
@@ -4904,7 +4905,7 @@ $messages['pl'] = array(
 	'requestaccount' => 'Wniosek o założenie konta',
 	'requestaccount-text' => "'''Wypełnij i wyślij poniższy formularz jeśli chcesz mieć własne konto użytkownika'''.
 
-Zanim jednak to zrobisz zapoznaj się z [[{{MediaWiki:Requestaccount-page}}|zasadami korzystania]] z {{GRAMMAR:D.lp|{{SITENAME}}}}.
+Zanim jednak to zrobisz zapoznaj się z [[{{MediaWiki:Requestaccount-page}}|zasadami korzystania z konta]]
 
 Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość e-mail i będziesz mógł [[Special:UserLogin|się zalogować]].",
 	'requestaccount-page' => '{{ns:project}}:Zasady użytkowania',
