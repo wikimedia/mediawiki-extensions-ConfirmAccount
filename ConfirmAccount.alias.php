@@ -94,6 +94,7 @@ $aliases['ht'] = array(
 $aliases['hu'] = array(
 	'RequestAccount' => array( 'Felhasználói fiók igénylése' ),
 	'ConfirmAccounts' => array( 'Felhasználói fiók megerősítése' ),
+	'UserCredentials' => array( 'Felhasználói ajánlólevél' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */

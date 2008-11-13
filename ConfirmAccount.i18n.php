@@ -2348,6 +2348,14 @@ $messages['gv'] = array(
 	'usercredentials-member' => 'Kiartyn:',
 );
 
+/** Hakka (Hak-kâ-fa)
+ * @author Hakka
+ */
+$messages['hak'] = array(
+	'confirmaccount-name' => 'Yung-fu-miàng',
+	'usercredentials-user' => 'Yung-fu-miàng:',
+);
+
 /** Hawaiian (Hawai`i)
  * @author Singularity
  */
