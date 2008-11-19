@@ -1053,9 +1053,11 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'requestaccount-level-0' => 'autor',
 	'confirmaccount-real-q' => 'Ime',
 	'confirmaccount-name' => 'Korisničko ime',
 	'confirmaccount-real' => 'Ime:',
+	'confirmaccount-pos-0' => 'autor',
 );
 
 /** Catalan (Català)
