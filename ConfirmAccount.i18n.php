@@ -2288,14 +2288,26 @@ Poden existir listaxes de contacto no sitio que poida usar se quere saber máis 
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Crazymadlover
  * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'requestaccount-real' => 'ἀληθὲς ὄνομα:',
+	'requestaccount-email' => 'Ἡλεκτρονικὴ διεύθυνσις:',
 	'requestaccount-reqtype' => 'Θέσις:',
 	'requestaccount-level-0' => 'δημιουργός',
 	'requestaccount-level-1' => 'μεταγραφεύς',
+	'confirmaccount-real-q' => 'Ὄνομα',
+	'confirmaccount-email-q' => 'Ἠλεκτρονικαὶ ἐπιστολαί',
+	'confirmaccount-name' => 'Ὄνομα χρωμένου',
+	'confirmaccount-real' => 'Ὄνομα:',
+	'confirmaccount-email' => 'Ἠλεκτρονικαὶ ἐπιστολαί:',
+	'confirmaccount-pos-0' => 'δημιουργός',
 	'confirmaccount-noreason' => '(οὐδεμία)',
 	'confirmaccount-submit' => 'Ἐπιβεβαίωσις',
+	'usercredentials-user' => 'Ὄνομα χρωμένου:',
+	'usercredentials-email' => 'Ἠλεκτρονικαὶ ἐπιστολαί:',
+	'usercredentials-real' => 'ἀληθὲς ὄνομα:',
 );
 
 /** Gujarati (ગુજરાતી)
