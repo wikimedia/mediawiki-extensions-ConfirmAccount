@@ -390,10 +390,6 @@ class RequestAccountPage extends SpecialPage {
 			),
 			__METHOD__ 
 		);
-		# Clear cache for notice of how many account requests there are
-		global $wgMemc;
-		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-		$wgMemc->delete( $key );
 		# Send confirmation, required!
 		$result = $this->sendConfirmationMail( $u, $token, $expires );
 		if( WikiError::isError( $result ) ) {
@@ -408,10 +404,13 @@ class RequestAccountPage extends SpecialPage {
 			$transaction->commit();
 			FileStore::unlock();
 		}
+		# Clear cache for notice of how many account requests there are
+		global $wgMemc;
+		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
+		$wgMemc->delete( $key );
 		# No request spamming...
 		# BC: check if isPingLimitable() exists
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
-			global $wgMemc;
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			if( !$value = $wgMemc->incr( $key ) ) {
 				$wgMemc->set( $key, 1, 86400 );
