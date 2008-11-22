@@ -4903,6 +4903,7 @@ $messages['os'] = array(
 	'confirmaccount-name' => 'Архайæджы ном',
 	'confirmaccount-email' => 'Эл. посты адрис:',
 	'confirmaccount-pos-0' => 'автор',
+	'confirmaccount-noreason' => '(нæй)',
 	'usercredentials-email' => 'Эл. посты адрис:',
 );
 
