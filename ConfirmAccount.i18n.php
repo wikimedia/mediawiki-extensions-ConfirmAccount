@@ -3281,23 +3281,154 @@ Bila akun yang Anda ajukan telah disetujui, sebuah surat-e notifikasi akan dikir
 	'requestaccount-leg-areas' => 'Bidang utama yang diminati',
 	'requestaccount-leg-person' => 'Informasi pribadi',
 	'requestaccount-leg-other' => 'Informasi lainnya',
+	'requestaccount-leg-tos' => 'Syarat Layanan',
 	'requestaccount-acc-text' => 'Kami akan mengirimkan sebuah pesan konfirmasi ke alamat surat-e Anda segera setelah permintaan ini dikirimkan.
 Klik pada pranala dalam surat-e tersebut untuk konfirmasi.
 Kata sandi Anda juga akan dikirimkan melalui surat-e setelah akun Anda disetujui dan dibuat.',
+	'requestaccount-areas-text' => 'Pilih topik-topik yang merupakan keahlian formal Anda atau merupakan area yang akan paling banyak Anda sentuh.',
+	'requestaccount-ext-text' => 'Informasi berikut ini akan diperlakukan secara rahasia dan hanya akan digunakan sehubungan dengan permintaan ini.
+Anda dapat menuliskan daftar kontak seperti nomor telepon Anda untuk mempermudah dalam mengkonfirmasikan identitas Anda.',
+	'requestaccount-bio-text' => 'Biografi Anda akan ditampilkan sebagai konten default untuk halaman pengguna Anda.
+Anda dapat memasukkan beberapa hal pribadi.
+Pastikan Anda merasa nyaman untuk mempublikasikan informasi-informasi tersebut.
+Nama Anda dapat diubah melalui [[Special:Preferences|preferensi Anda]].',
 	'requestaccount-real' => 'Nama asli:',
 	'requestaccount-same' => '(sama dengan nama asli)',
 	'requestaccount-email' => 'Alamat surat-e:',
+	'requestaccount-reqtype' => 'Jabatan:',
+	'requestaccount-level-0' => 'penulis',
 	'requestaccount-level-1' => 'penyunting',
+	'requestaccount-bio' => 'Biografi pribadi:',
+	'requestaccount-attach' => 'Resume atau CV (opsional):',
+	'requestaccount-notes' => 'Catatan tambahan:',
+	'requestaccount-urls' => 'Daftar situs web, jika ada (pisahkan dengan baris baru):',
+	'requestaccount-agree' => 'Anda harus menyatakan bahwa nama asli Anda adalah benar dan bahwa Anda setuju dengan Syarat Layanan kami.',
+	'requestaccount-inuse' => 'Nama pengguna ini sudah digunakan dalam salah satu antrian permintaan akun.',
+	'requestaccount-tooshort' => 'Biografi Anda harus memiliki panjang minimal $1 kata.',
+	'requestaccount-emaildup' => 'Sebuah antrian permintaan lain menggunakan alamat surat-e yang sama.',
+	'requestaccount-exts' => 'Jenis lampiran berkas tidak diizinkan.',
+	'requestaccount-resub' => 'Resume/CV Anda harus dipilih kembali atas alasan keamanan.
+Tinggalkan kotak ini kosong jika Anda sudah tidak ingin untuk memasukkannya.',
+	'requestaccount-tos' => 'Saya telah membaca dan menyetujui [[{{MediaWiki:Requestaccount-page}}|Syarat Layanan]] {{SITENAME}}.
+Nama yang saya tuliskan dalam "Nama asli" adalah benar-benar nama asli saya sendiri.',
 	'requestaccount-submit' => 'Permintaan akun',
+	'requestaccount-sent' => 'Permintaan akun Anda telah berhasil dikirimkan dan sekarang sedang dalam antrian untuk ditinjau.',
+	'request-account-econf' => 'Alamat surat-e Anda telah dikonfirmasikan dan akan ditampilkan sebagaimana dalam permintaan akun Anda.',
+	'requestaccount-email-subj' => 'Konfirmasi alamat surat-e {{SITENAME}}',
+	'requestaccount-email-body' => 'Seseorang, mungkin Anda, dari alamat IP $1, telah mendaftarkan permintaan akun "$2" dengan alamat surat-e ini di {{SITENAME}}.
+
+Untuk mengkonfirmasikan bahwa akun ini benar dimiliki oleh Anda di {{SITENAME}}, ikuti pranala berikut pada penjelajah web Anda:
+
+$3
+
+Setelah akun ini dibuat, hanya Anda yang akan dikirim kata sandinya melalui surat-e.
+Jika Anda merasa *tidak pernah* mendaftar, jangan ikuti pranala di atas.
+Kode konfirmasi ini akan kadaluwarsa pada $4.',
 	'requestaccount-email-subj-admin' => 'Permintaan akun {{SITENAME}}',
+	'requestaccount-email-body-admin' => '"$1" telah mengajukan permintaan pembuatan akun dan sedang menunggu konfirmasi.
+Surat-e ini telah dikonfirmasi. Anda dapat memberikan konfirmasi atas permintaan tersebut di sini "$2".',
 	'acct_request_throttle_hit' => 'Anda telah meminta {{PLURAL:$1|1 akun|$1 akun}}.
 Anda tidak dapat lagi melakukan permintaan.',
+	'requestaccount-loginnotice' => "Untuk mendapatkan sebuah akun pengguna, Anda harus '''[[Special:RequestAccount|mengajukannya]]'''.",
+	'confirmaccount-newrequests' => "Terdapat '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|antrian permintaan akun]]|[[Special:ConfirmAccounts|antrian permintaan akun]]}} dengan alamat surat-e yang telah dikonfirmasi",
+	'confirmaccounts' => 'Konfirmasi permintaan akun',
+	'confirmedit-desc' => 'Memberikan fungsi teknis tambahan bagi birokrat untuk mengkonfirmasikan permintaan akun',
+	'confirmaccount-maintext' => "'''Halaman ini digunakan untuk mengkonfirmasikan permintaan akun di ''{{SITENAME}}'''''.
+
+Setiap antrian permintaan akun memiliki tiga sub-antrian.
+Satu untuk permintaan yang belum ditinjau, satu untuk akun yang ditunda oleh pengurus lain karena menunggu informasi tambahan, dan terakhir untuk permintaan yang baru ditolak.
+
+Jika Anda hendak meresponi sebuah permintaan, tinjau dengan hati-hati, dan jika diperlukan, konfirmasikan informasi yang disertakan.
+Tindakan Anda akan dimasukkan ke dalam log privat.
+Anda juga perlu meninjau aktivitas apa pun yang dilakukan di sini di samping yang Anda lakukan sendiri.",
+	'confirmaccount-list' => 'Berikut adalah daftar permintaan akun yang menunggu persetujuan.
+Jika disetujui ataupun ditolak, permintaan tersebut akan dikeluarkan dari daftar ini.',
+	'confirmaccount-list2' => 'Berikut adalah daftar permintaan akun yang baru ditolak dan akan dihapus secara otomatis setelah beberapa hari.
+Permintaan ini masih dapat disetujui untuk dijadikan akun, tetapi Anda mungkin perlu mendiskusikan terlebih dahulu dengan pengurus yang menolak permintaan tersebut sebelumnya.',
+	'confirmaccount-list3' => 'Berikut adalah daftar permintaan akun yang telah kadaluwarsa dan akan dihapuskan dalam beberapa hari.
+Permintaan ini masih dapat disetujui untuk dijadikan akun.',
+	'confirmaccount-text' => "Ini adalah antrian permintaan untuk membuat akun di '''{{SITENAME}}'''.
+
+Tinjau informasi berikut dengan seksama.
+Jika Anda menyetujui permintaan ini, gunakan daftar dropdown untuk mengeset status akun pengguna tersebut.
+Suntingan terhadap biografi pendaftar tidak akan mempengaruhi data kepercayaan yang disimpan permanen.
+Perlu dicatat bahwa Anda dapat memilih untuk membuat akun dengan nama akun yang berbeda.
+Lakukan ini untuk menghindari kekeliruan dengan nama lain.
+
+Jika Anda tidak menyetujui atau menolak permintaan ini, maka permintaan ini akan tetap berada dalam status antrian.",
+	'confirmaccount-none-o' => 'Tidak ada antrian permintaan akun dalam daftar ini.',
+	'confirmaccount-none-h' => 'Tidak ada antrian permintaan akun yang ditunda dalam daftar ini.',
+	'confirmaccount-none-r' => 'Tidak ada permintaan akun yang baru ditolak di daftar ini.',
+	'confirmaccount-none-e' => 'Tidak ada permintaan akun yang kadaluwarsa dalam daftar ini.',
 	'confirmaccount-real-q' => 'Nama',
+	'confirmaccount-email-q' => 'Surat-e',
+	'confirmaccount-bio-q' => 'Biografi',
+	'confirmaccount-showopen' => 'antrian permintaan',
+	'confirmaccount-showrej' => 'permintaan ditolak',
+	'confirmaccount-showheld' => 'permintaan ditunda',
+	'confirmaccount-showexp' => 'permintaan kadaluwarsa',
+	'confirmaccount-review' => 'Tinjau',
+	'confirmaccount-types' => 'Pilih antrian konfirmasi akun di bawah ini:',
+	'confirmaccount-all' => '(tampilkan semua antrian)',
+	'confirmaccount-type' => 'Antrian:',
+	'confirmaccount-type-0' => 'penulis prospektif',
+	'confirmaccount-type-1' => 'penyunting prospektif',
+	'confirmaccount-q-open' => 'permintaan dalam antrian',
+	'confirmaccount-q-held' => 'permintaan ditunda',
+	'confirmaccount-q-rej' => 'permintaan ditolak',
+	'confirmaccount-q-stale' => 'permintaan kadaluwarsa',
+	'confirmaccount-badid' => 'Tidak ada permintaan dalam antrian yang terkait dengan ID tersebut.
+Mungkin permintaan tersebut telah ditangani.',
+	'confirmaccount-leg-user' => 'Akun pengguna',
+	'confirmaccount-leg-areas' => 'Area minat utama:',
+	'confirmaccount-leg-person' => 'Informasi pribadi',
+	'confirmaccount-leg-other' => 'Informasi lainnya',
 	'confirmaccount-name' => 'Nama pengguna',
 	'confirmaccount-real' => 'Nama:',
+	'confirmaccount-email' => 'Surat-e:',
+	'confirmaccount-reqtype' => 'Posisi:',
+	'confirmaccount-pos-0' => 'penulis',
 	'confirmaccount-pos-1' => 'penyunting',
+	'confirmaccount-bio' => 'Biografi:',
+	'confirmaccount-attach' => 'Resume/CV:',
+	'confirmaccount-notes' => 'Catatan tambahan;',
+	'confirmaccount-urls' => 'Daftar situs web:',
+	'confirmaccount-none-p' => '(tidak diisi)',
+	'confirmaccount-confirm' => 'Gunakan opsi berikut untuk menyetujui, menolak, atau menunda permintaan ini:',
+	'confirmaccount-econf' => '(telah dikonfirmasi)',
+	'confirmaccount-reject' => '(ditolah oleh [[User:$1|$1]] pada $2)',
+	'confirmaccount-rational' => 'Alasan yang diberikan kepada pendaftar:',
 	'confirmaccount-noreason' => '(tidak ada)',
+	'confirmaccount-autorej' => '(permintaan ini telah dihapus secara otomatis karena ketidakaktifan)',
+	'confirmaccount-held' => '(ditandai "ditunda" oleh [[User:$1|$1]] pada $2)',
+	'confirmaccount-create' => 'Setuju (buat akun)',
+	'confirmaccount-deny' => 'Tolak',
+	'confirmaccount-hold' => 'Tunda',
+	'confirmaccount-spam' => 'Spam (jangan kirim surat-e)',
+	'confirmaccount-reason' => 'Komentar (akan dimasukkan dalam surat-e):',
+	'confirmaccount-ip' => 'Alamat IP:',
+	'confirmaccount-submit' => 'Konfirmasi',
+	'confirmaccount-needreason' => 'Anda harus memberikan sebuah alasan dalam kotak komentar berikut.',
+	'confirmaccount-canthold' => 'Permintaan ini telah ditunda atau dihapuskan.',
+	'confirmaccount-acc' => 'Permintaan akun berhasil dikonfirmasikan;
+akun pengguna baru [[User:$1|$1]] telah dibuat.',
+	'confirmaccount-rej' => 'Permintaan akun berhasil ditolak.',
+	'confirmaccount-viewing' => '(saat ini sedang ditinjau oleh [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Membuat halaman pengguna dengan biografi pengguna baru.',
+	'confirmaccount-welc' => "'''Selamat datang di ''{{SITENAME}}''!'''
+Semoga Anda memberikan kontribusi yang banyak dan berkualitas.
+Anda mungkin ingin membaca [[{{MediaWiki:Helppage}}|halaman bantuan]].
+Sekali lagi, selamat datang!",
 	'confirmaccount-wsum' => 'Selamat datang!',
+	'confirmaccount-email-subj' => 'Permintaan akun {{SITENAME}}',
+	'confirmaccount-email-body' => 'Permintaan akun Anda telah disetujui di {{SITENAME}}.
+
+Nama akun: $1
+
+Kata sandi: $2
+
+Untuk alasan keamanan Anda harus mengubah kata sandi Anda pada saat masuk log pertama kali.
+Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
 	'usercredentials-user' => 'Nama pengguna:',
 );
 

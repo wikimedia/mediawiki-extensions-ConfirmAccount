@@ -156,6 +156,12 @@ $aliases['sv'] = array(
 	'ConfirmAccounts' => array( 'Bekräfta konto' ),
 );
 
+/** Swahili (Kiswahili) */
+$aliases['sw'] = array(
+	'RequestAccount' => array( 'OmbaAkaunti' ),
+	'ConfirmAccounts' => array( 'ThibitishaAkaunti' ),
+);
+
 /** Thai (ไทย) */
 $aliases['th'] = array(
 	'ConfirmAccounts' => array( 'ยืนยันบัญชีผู้ใช้' ),
