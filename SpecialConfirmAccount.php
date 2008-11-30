@@ -177,6 +177,7 @@ function wfConfirmAccountsNotice( $notice ) {
 	return true;
 }
 
+$dir = dirname(__FILE__) . '/';
 # Request an account
 $wgSpecialPages['RequestAccount'] = 'RequestAccountPage';
 $wgAutoloadClasses['RequestAccountPage'] = $dir . 'RequestAccount_body.php';
