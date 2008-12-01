@@ -3575,7 +3575,7 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}} のアカウント申請',
 	'requestaccount-email-body-admin' => '"$1" によるアカウント申請が承認待ちになっています。
 申請電子メールアドレスは本人確認済みです。この申請への承認は、"$2"　から行うことができます。',
-	'acct_request_throttle_hit' => '申し訳ありません、あなたは既に $1 というアカウントを申請済みです。これ以上の申請はできません。',
+	'acct_request_throttle_hit' => '申し訳ありません、あなたは既に$1アカウントを申請済みです。これ以上の申請はできません。',
 	'requestaccount-loginnotice' => "利用者アカウントの取得は、'''[[Special:RequestAccount|アカウント登録申請]]'''から行ってください。",
 	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み[[{{ns:special}}:ConfirmAccounts|アカウント申請]]が承認待ちになっています。",
 	'confirmaccounts' => 'アカウント登録申請の承認',
@@ -6354,6 +6354,7 @@ När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till di
 	'requestaccount-leg-areas' => 'Intresseområden',
 	'requestaccount-leg-person' => 'Personlig information',
 	'requestaccount-leg-other' => 'Annan information',
+	'requestaccount-leg-tos' => 'Användarvillkor',
 	'requestaccount-acc-text' => 'När du skickar in den här ansökningen så kommer ett bekräftelsemeddelande skickas till din e-postadress. Svara på det meddelandet genom att klicka på bekräftelselänken i e-brevet. Till din e-postadress kommer även ditt lösenord skickas när ditt konto har skapats.',
 	'requestaccount-areas-text' => 'Välj här de ämnesområden som du har expertkunskap om eller som du kommer att arbeta mest med.',
 	'requestaccount-ext-text' => 'Följande information kommer hållas hemlig och bara användas för denna ansökan.
