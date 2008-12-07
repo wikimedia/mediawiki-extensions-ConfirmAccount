@@ -370,6 +370,7 @@ $messages['af'] = array(
  */
 $messages['an'] = array(
 	'requestaccount-level-1' => 'editor',
+	'confirmaccount-real' => 'Nombre:',
 	'confirmaccount-pos-1' => 'editor',
 	'confirmaccount-submit' => 'Confirmar',
 );
@@ -3799,6 +3800,7 @@ Panjenengan ora bisa nyuwun rékening anyar manèh.',
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Thearith
  * @author គីមស៊្រុន
  */
 $messages['km'] = array(
@@ -3807,7 +3809,7 @@ $messages['km'] = array(
 	'requestaccount-dup' => "'''សំគាល់: លោកអ្នកត្រូវបានឡុកអ៊ីនចូលរួចហើយ ជាមួយនឹងគណនីដែលបានចុះឈ្មោះ។'''",
 	'requestaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
 	'requestaccount-leg-person' => 'ពត៌មានផ្ទាល់ខ្លួន',
-	'requestaccount-leg-other' => 'ពត៌មាន ដទៃទៀត',
+	'requestaccount-leg-other' => 'ព័ត៌មាន ដទៃទៀត',
 	'requestaccount-real' => 'ឈ្មោះពិត៖',
 	'requestaccount-same' => '(ដូចឈ្មោះពិត)',
 	'requestaccount-email' => 'អាសយដ្ឋានអ៊ីមែល៖',
@@ -3836,7 +3838,7 @@ $messages['km'] = array(
 	'confirmaccount-type' => 'ជួររង់ចាំ ត្រូវបានជ្រើសយក ៖',
 	'confirmaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
 	'confirmaccount-leg-person' => 'ពត៌មានផ្ទាល់ខ្លួន',
-	'confirmaccount-leg-other' => 'ពត៌មាន ដទៃ',
+	'confirmaccount-leg-other' => 'ព័ត៌មាន ដទៃ',
 	'confirmaccount-name' => 'ឈ្មោះអ្នកប្រើប្រាស់',
 	'confirmaccount-real' => 'ឈ្មោះ ៖',
 	'confirmaccount-email' => 'អ៊ីមែល៖',
@@ -3882,7 +3884,7 @@ $3
 ឡុកអ៊ីន សូមទៅកាន់{{fullurl:Special:UserLogin}} ។',
 	'usercredentials-user' => 'ឈ្មោះអ្នកប្រើប្រាស់៖',
 	'usercredentials-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
-	'usercredentials-leg-person' => 'ពត៌មាន ផ្ទាល់ខ្លួន',
+	'usercredentials-leg-person' => 'ព័ត៌មាន ផ្ទាល់ខ្លួន',
 	'usercredentials-leg-other' => 'ពត៌មានផ្សេងៗទៀត',
 	'usercredentials-email' => 'អ៊ីមែល៖',
 	'usercredentials-real' => 'ឈ្មោះពិត ៖',
@@ -5384,6 +5386,7 @@ $3
 /** Portuguese (Português)
  * @author Lijealso
  * @author Malafaya
+ * @author Waldir
  */
 $messages['pt'] = array(
 	'requestaccount' => 'Requerer conta',
@@ -5398,6 +5401,7 @@ Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de not
 	'requestaccount-leg-areas' => 'Principais áreas de interesse',
 	'requestaccount-leg-person' => 'Informação pessoal',
 	'requestaccount-leg-other' => 'Outras informações',
+	'requestaccount-leg-tos' => 'Termos do Serviço',
 	'requestaccount-acc-text' => 'Será enviada um mensagem de confirmação para o seu endereço de email assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação fornecida no email. A sua palavra-chave também lhe será enviada por email assim que a sua conta estiver criada.',
 	'requestaccount-areas-text' => 'Seleccione em baixo as áreas em que possui experiência formal ou em que gostaria de trabalhar mais.',
 	'requestaccount-ext-text' => 'A seguinte informação é mantida privada e só será usada para este pedido.
@@ -5439,7 +5443,8 @@ Este código de confirmação expirará em $4.',
 	'requestaccount-email-subj-admin' => 'Pedido de conta em {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" pediu uma conta e aguarda confirmação.
 O endereço de email foi confirmado. Você pode confirmar o pedido aqui "$2".',
-	'acct_request_throttle_hit' => 'Desculpe, mas já pediu $1 contas. Não pode fazer mais pedidos.',
+	'acct_request_throttle_hit' => 'Desculpe, mas você já pediu {{PLURAL:$1|1 conta|$1 contas}}.
+Não pode fazer mais pedidos.',
 	'requestaccount-loginnotice' => "Para obter uma conta de utilizador, deverá '''[[Special:RequestAccount|pedi-la]]'''.",
 	'confirmaccount-newrequests' => "Há actualmente '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|pedido de conta]] aberto pendente|[[Special:ConfirmAccounts|pedidos de conta]] abertos pendentes}}.",
 	'confirmaccounts' => 'Confirmar requerimentos de conta',
