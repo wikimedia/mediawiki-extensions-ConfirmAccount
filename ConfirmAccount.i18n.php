@@ -3806,9 +3806,9 @@ Panjenengan ora bisa nyuwun rékening anyar manèh.',
 $messages['km'] = array(
 	'requestaccount' => 'សំណើសុំគណនី',
 	'requestaccount-page' => '{{ns:project}}:លក្ខណ្ឌ ប្រើប្រាស់សេវា',
-	'requestaccount-dup' => "'''សំគាល់: លោកអ្នកត្រូវបានឡុកអ៊ីនចូលរួចហើយ ជាមួយនឹងគណនីដែលបានចុះឈ្មោះ។'''",
+	'requestaccount-dup' => "'''សម្គាល់: លោកអ្នកត្រូវបានឡុកអ៊ីនចូលរួចហើយ ជាមួយនឹងគណនីដែលបានចុះឈ្មោះ។'''",
 	'requestaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
-	'requestaccount-leg-person' => 'ពត៌មានផ្ទាល់ខ្លួន',
+	'requestaccount-leg-person' => 'ព័ត៌មានផ្ទាល់ខ្លួន',
 	'requestaccount-leg-other' => 'ព័ត៌មាន ដទៃទៀត',
 	'requestaccount-real' => 'ឈ្មោះពិត៖',
 	'requestaccount-same' => '(ដូចឈ្មោះពិត)',
@@ -3818,12 +3818,12 @@ $messages['km'] = array(
 	'requestaccount-level-1' => 'ឧបករណ៍កែប្រែ',
 	'requestaccount-bio' => 'ជីវប្រវត្តិផ្ទាល់ខ្លួន៖',
 	'requestaccount-attach' => 'ប្រវត្តិរូប (ជំរើស) ៖',
-	'requestaccount-notes' => 'សំគាល់បន្ថែម៖',
+	'requestaccount-notes' => 'សម្គាល់បន្ថែម៖',
 	'requestaccount-agree' => 'អ្នកត្រូវតែ បញ្ជាក់ថា ឈ្មោះពិត របស់អ្នក ត្រឹមត្រូវ និងថា អ្នកព្រមព្រៀង ចំពោះ លក្ខណ្ឌ ប្រើប្រាស់សេវា ។',
 	'requestaccount-tooshort' => 'ជីវប្រវត្តិ របស់អ្នក ត្រូវតែ វែង យ៉ាងតិច $1 ពាក្យ ។',
 	'requestaccount-submit' => 'សំណើសុំគណនី',
-	'requestaccount-email-subj' => 'ការបញ្ជាក់ទទួលស្គាល់ អាស័យដ្ឋានអ៊ីមែវល៍ {{SITENAME}}',
-	'requestaccount-email-subj-admin' => 'សំនើសុំគណនីរបស់{{SITENAME}}',
+	'requestaccount-email-subj' => 'ការបញ្ជាក់ទទួលស្គាល់ អាសយដ្ឋានអ៊ីមែល {{SITENAME}}',
+	'requestaccount-email-subj-admin' => 'សំណើសុំគណនីរបស់{{SITENAME}}',
 	'acct_request_throttle_hit' => 'សូមអភ័យទោស។ អ្នកបានស្នើសុំគណនី $1 រួចហើយ។ អ្នកមិនអាចធ្វើការស្នើសុំទៀតបានទេ។',
 	'requestaccount-loginnotice' => "ដើម្បីទទួលបានគណនីអ្នកប្រើប្រាស់ អ្នកត្រូវតែ'''[[Special:RequestAccount|ស្នើសុំគណនី]]'''។",
 	'confirmaccounts' => 'បញ្ជាក់ទទួលស្គាល់ សំណើគណនី',
@@ -3837,7 +3837,7 @@ $messages['km'] = array(
 	'confirmaccount-all' => '(បង្ហាញ គ្រប់ ជួររង់ចាំ)',
 	'confirmaccount-type' => 'ជួររង់ចាំ ត្រូវបានជ្រើសយក ៖',
 	'confirmaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
-	'confirmaccount-leg-person' => 'ពត៌មានផ្ទាល់ខ្លួន',
+	'confirmaccount-leg-person' => 'ព័ត៌មានផ្ទាល់ខ្លួន',
 	'confirmaccount-leg-other' => 'ព័ត៌មាន ដទៃ',
 	'confirmaccount-name' => 'ឈ្មោះអ្នកប្រើប្រាស់',
 	'confirmaccount-real' => 'ឈ្មោះ ៖',
@@ -3846,7 +3846,7 @@ $messages['km'] = array(
 	'confirmaccount-pos-1' => 'ឧបករកែប្រែ',
 	'confirmaccount-bio' => 'ជីវប្រវត្តិ ៖',
 	'confirmaccount-attach' => 'ប្រវត្តិរូប ៖',
-	'confirmaccount-notes' => 'កំនត់សំគាល់បន្ថែម៖',
+	'confirmaccount-notes' => 'កំណត់សម្គាល់បន្ថែម៖',
 	'confirmaccount-urls' => 'បញ្ជីគេហទំព័រ៖',
 	'confirmaccount-none-p' => '(មិនត្រូវបាន ផ្តល់)',
 	'confirmaccount-econf' => '(បានបញ្ជាក់ទទួលស្គាល់)',
@@ -3858,8 +3858,8 @@ $messages['km'] = array(
 	'confirmaccount-needreason' => 'អ្នកត្រូវផ្តល់ ហេតុផល ក្នុងប្រអប់វិចារ ខាងក្រោម​។',
 	'confirmaccount-rej' => 'សំណើសុំគណនីបានបដិសេធរួចជាស្រេចហើយ។',
 	'confirmaccount-wsum' => 'សូមស្វាគមន៍!',
-	'confirmaccount-email-subj' => 'សំនើសុំគណនី {{SITENAME}}',
-	'confirmaccount-email-body' => 'សំនើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
+	'confirmaccount-email-subj' => 'សំណើសុំគណនី {{SITENAME}}',
+	'confirmaccount-email-body' => 'សំណើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
 
 
 ឈ្មោះគណនី: $1
@@ -3871,7 +3871,7 @@ $messages['km'] = array(
 ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
 
 ឡុកអ៊ីន សូមទៅកាន់ {{fullurl:Special:UserLogin}} ។',
-	'confirmaccount-email-body2' => 'សំនើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
+	'confirmaccount-email-body2' => 'សំណើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
 
 ឈ្មោះគណនី: $1
 
