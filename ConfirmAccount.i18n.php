@@ -3805,7 +3805,7 @@ Panjenengan ora bisa nyuwun rékening anyar manèh.',
  */
 $messages['km'] = array(
 	'requestaccount' => 'សំណើសុំគណនី',
-	'requestaccount-page' => '{{ns:project}}:លក្ខណ្ឌ ប្រើប្រាស់សេវា',
+	'requestaccount-page' => '{{ns:project}}:លក្ខខណ្ឌ ប្រើប្រាស់សេវា',
 	'requestaccount-dup' => "'''សម្គាល់: លោកអ្នកត្រូវបានឡុកអ៊ីនចូលរួចហើយ ជាមួយនឹងគណនីដែលបានចុះឈ្មោះ។'''",
 	'requestaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
 	'requestaccount-leg-person' => 'ព័ត៌មានផ្ទាល់ខ្លួន',
@@ -3885,14 +3885,14 @@ $3
 	'usercredentials-user' => 'ឈ្មោះអ្នកប្រើប្រាស់៖',
 	'usercredentials-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
 	'usercredentials-leg-person' => 'ព័ត៌មាន ផ្ទាល់ខ្លួន',
-	'usercredentials-leg-other' => 'ពត៌មានផ្សេងៗទៀត',
+	'usercredentials-leg-other' => 'ព័ត៌មានផ្សេងៗទៀត',
 	'usercredentials-email' => 'អ៊ីមែល៖',
 	'usercredentials-real' => 'ឈ្មោះពិត ៖',
 	'usercredentials-bio' => 'ជីវប្រវត្តិ ៖',
 	'usercredentials-attach' => 'ប្រវត្តិរូប ៖',
 	'usercredentials-notes' => 'ចំណាំ បន្ថែម ៖',
 	'usercredentials-urls' => 'បញ្ជី នៃ វ៉ែបសៃថ៍ ៖',
-	'usercredentials-ip' => 'អាស័យដ្ឋាន IP ដើមដំបូង ៖',
+	'usercredentials-ip' => 'អាសយដ្ឋាន IP ដើមដំបូង ៖',
 	'usercredentials-member' => 'សិទ្ធិ ៖',
 );
 
