@@ -63,6 +63,12 @@ $aliases['gl'] = array(
 	'ConfirmAccounts' => array( 'Confirmar a conta' ),
 );
 
+/** Swiss German (Alemannisch) */
+$aliases['gsw'] = array(
+	'RequestAccount' => array( 'Aatrag stelle fir e Benutzerchonto' ),
+	'ConfirmAccounts' => array( 'Benutzerchonto bstetige' ),
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
