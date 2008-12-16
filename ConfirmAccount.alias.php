@@ -38,6 +38,7 @@ $aliases['arz'] = array(
 $aliases['bs'] = array(
 	'RequestAccount' => array( 'ZahtjevajRacun' ),
 	'ConfirmAccounts' => array( 'PotvrdiRacun' ),
+	'UserCredentials' => array( 'KorisnickePotvrde' ),
 );
 
 /** German (Deutsch) */
@@ -106,6 +107,11 @@ $aliases['hu'] = array(
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
 	'RequestAccount' => array( 'ស្នើសុំគណនី' ),
+);
+
+/** Korean (한국어) */
+$aliases['ko'] = array(
+	'RequestAccount' => array( '계정요청' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */

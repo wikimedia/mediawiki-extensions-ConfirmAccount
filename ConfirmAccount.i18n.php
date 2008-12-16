@@ -2080,6 +2080,13 @@ $messages['fy'] = array(
 	'usercredentials-user' => 'Meidoggernamme:',
 );
 
+/** Irish (Gaeilge)
+ * @author Alison
+ */
+$messages['ga'] = array(
+	'confirmaccount-needreason' => 'Tá ort fáth a chur síos sa bhosca tráchta faoi bhun.',
+);
+
 /** Galician (Galego)
  * @author Alma
  * @author Toliño
