@@ -148,7 +148,7 @@ class RequestAccountPage extends SpecialPage {
 						$pg = '';
 					}
 					
-					$form .= "<td>".wfCheckLabel( $set[0], $formName, $formName, $this->mAreas[$formName] > 0 )." {$pg}</td>\n";
+					$form .= "<td>".Xml::checkLabel( $set[0], $formName, $formName, $this->mAreas[$formName] > 0 )." {$pg}</td>\n";
 				}
 			}
 			$form .= "</tr></table></div>";
