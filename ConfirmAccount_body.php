@@ -215,7 +215,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$reason . '</i></p>' );
 		}
 		
-		$form  = wfOpenElement( 'form', array( 'method' => 'post', 'name' => 'accountconfirm',
+		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountconfirm',
 			'action' => $titleObj->getLocalUrl() ) );
 		$form .= "<fieldset>";
 		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-user') . '</legend>';
@@ -338,7 +338,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= Xml::hidden( 'acrid', $row->acr_id );
 		$form .= Xml::hidden( 'wpShowRejects', $this->showRejects );
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
-		$form .= wfCloseElement( 'form' );
+		$form .= Xml::closeElement( 'form' );
 		
 		$wgOut->addHTML( $form );
 		

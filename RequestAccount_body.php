@@ -99,7 +99,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$titleObj = Title::makeTitle( NS_SPECIAL, 'RequestAccount' );
 		
-		$form  = wfOpenElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
+		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
 			'action' => $titleObj->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
 		$form .= '<fieldset><legend>' . wfMsgHtml('requestaccount-leg-user') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-acc-text', array('parse') )."\n";
@@ -215,7 +215,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= Xml::hidden( 'attachment', $this->mPrevAttachment )."\n";
 		$form .= Xml::hidden( 'forgotAttachment', $this->mForgotAttachment )."\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'requestaccount-submit') )."</p>";
-		$form .= wfCloseElement( 'form' );
+		$form .= Xml::closeElement( 'form' );
 
 		$wgOut->addHTML( $form );
 		
