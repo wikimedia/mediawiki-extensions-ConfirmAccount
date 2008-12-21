@@ -1619,6 +1619,7 @@ $messages['ext'] = array(
 
 /** Finnish (Suomi)
  * @author Cimon Avaro
+ * @author Crt
  * @author Jaakonam
  * @author Nike
  * @author Taleman
@@ -1636,6 +1637,7 @@ Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sillä voi [[Spec
 	'requestaccount-leg-areas' => 'Tärkeimmät kiinnostuksen kohteet',
 	'requestaccount-leg-person' => 'Henkilötiedot',
 	'requestaccount-leg-other' => 'Muut tiedot',
+	'requestaccount-leg-tos' => 'Käyttöehdot',
 	'requestaccount-acc-text' => 'Lähetettyäsi pyynnön saat sähköpostitse vahvistuksen. Sinun pitää napsauttaa sähköpostissa olevaa kuittauslinkkiä. Myöskin salasanasi lähetetään sinulle, kun tunnus luodaan.',
 	'requestaccount-areas-text' => 'Valitse alta alueet, joissa olet asiantuntija tai joiden parissa haluaisit enimmäkseen työskennellä.',
 	'requestaccount-ext-text' => 'Seuraavat tiedot pidetään luottamuksellisina ja niitä käytetään vain tämän pyynnön käsittelyssä.
@@ -1677,7 +1679,7 @@ Tämän vahvistuskoodi vanhenee $4.',
 	'requestaccount-email-subj-admin' => 'Sivuston {{SITENAME}} käyttäjätunnuspyyntö',
 	'requestaccount-email-body-admin' => '”$1” on pyytänyt käyttäjätunnusta ja odottaa vahvistusta.
 Sähköpostiosoite on tarkistettu. Myönnä käyttäjätunnus tästä: $2.',
-	'acct_request_throttle_hit' => 'Valitettavasti et voi tehdä enempää pyyntöjä, koska olet jo pyytänyt $1 käyttäjätunnusta.',
+	'acct_request_throttle_hit' => 'Valitettavasti et voi tehdä enempää pyyntöjä, koska olet jo pyytänyt {{PLURAL:$1|yhden käyttäjätunnuksen|$1 käyttäjätunnusta}}.',
 	'requestaccount-loginnotice' => "Saadaksesi käyttäjätunnuksen on tehtävä '''[[Special:RequestAccount|käyttäjätunnuspyyntö]]'''.",
 	'confirmaccount-newrequests' => "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} käsiteltävänä.",
 	'confirmaccounts' => 'Myönnä käyttäjätunnuksia.',
@@ -3978,6 +3980,7 @@ Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir k
 	'requestaccount-leg-areas' => 'Haaptinteressen',
 	'requestaccount-leg-person' => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other' => 'Aner Informatiounen',
+	'requestaccount-leg-tos' => 'Conditioune vun der Notzung',
 	'requestaccount-bio-text' => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert.
 Versicht all néideg Recommandatiounnen unzeginn.
 Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt.
@@ -3995,6 +3998,7 @@ Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wë
 	'requestaccount-agree' => "Dir musst confirméieren datt är E-Mailadress richteg ass and datt dir mat den Allgemenge Konditiounen d'Accord sitt.",
 	'requestaccount-inuse' => 'De Benotzernumm ass scho bäi enger anere Benotzerufro a Gebrauch.',
 	'requestaccount-tooshort' => 'Är Biographie muss mindestens $1 Wierder hunn.',
+	'requestaccount-emaildup' => 'En aneren ugefrote Benotzerkont benotzt déi selwescht E-Mailadress.',
 	'requestaccount-exts' => "De Fichierstyp vum ''Attachment'' ass net erlaabt.",
 	'requestaccount-submit' => 'Benotzerkont ufroën',
 	'requestaccount-sent' => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.',
@@ -4016,6 +4020,7 @@ Dir kënnt elo keng weider Ufroe méi maachen.',
 	'confirmaccount-showrej' => 'Refuséiert Ufroen',
 	'confirmaccount-showexp' => 'ofgelafen Ufroen',
 	'confirmaccount-review' => 'Konfirméieren/Refüséieren',
+	'confirmaccount-type-0' => 'eventuell Auteuren',
 	'confirmaccount-q-open' => 'Ufroen déi nach opstinn',
 	'confirmaccount-q-rej' => 'rezent refuséiert Ufroen',
 	'confirmaccount-q-stale' => 'ofgelafen Ufroen',
@@ -4038,6 +4043,7 @@ Dir kënnt elo keng weider Ufroe méi maachen.',
 	'confirmaccount-reject' => '(refuséiert vum [[User:$1|$1]] de(n) $2)',
 	'confirmaccount-noreason' => '(keen)',
 	'confirmaccount-create' => 'Unhuelen (Benotzerkont opmaachen)',
+	'confirmaccount-hold' => 'Ofwaarden',
 	'confirmaccount-spam' => 'Spam (E-Mail net schécken)',
 	'confirmaccount-reason' => "Bemierkung (gëtt an d'E-Mail derbäigesat):",
 	'confirmaccount-ip' => 'IP-Adress:',
@@ -4051,6 +4057,24 @@ Dir wëllt wahrscheinlech d'[[{{MediaWiki:Helppage}}|Hellëfsäite]] liesen.
 Nachemol, wëllkom a vill Spaass!",
 	'confirmaccount-wsum' => 'Wëllkomm!',
 	'confirmaccount-email-subj' => '{{SITENAME}} Ufro fir ee Benotzerkont',
+	'confirmaccount-email-body' => 'Är Ufro fir e Benotzerkont op {{SITENAME}} gouf ugeholl.
+
+Numm vum Benotzerkont: $1
+
+Passwuert: $2
+
+Aus Sécherheetsgrënn musst Dir Ärt Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.
+Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Är Ufro fir e Benotzerkont op {{SITENAME}} gouf ugeholl.
+
+Numm vum Benotzerkont: $1
+
+Passwuert: $2
+
+$3
+
+Aus Sécherheetsgrënn musst Dir Ärt Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.
+Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
 	'usercredentials' => 'Referenzen déi de Benotzer uginn huet:',
 	'usercredentials-user' => 'Benotzernumm:',
 	'usercredentials-leg-user' => 'Benotzerkont',
@@ -4065,6 +4089,8 @@ Nachemol, wëllkom a vill Spaass!",
 	'usercredentials-urls' => 'Lëscht vun Internetsiten:',
 	'usercredentials-ip' => 'Original IP-Adress:',
 	'usercredentials-member' => 'Rechter:',
+	'usercredentials-badid' => 'Et goufe keng Rechter fir dëse Benotzer fonnt.
+Kuckt w.e.g. no op den Numm richteg geschriwwen ass.',
 );
 
 /** Lithuanian (Lietuvių)
