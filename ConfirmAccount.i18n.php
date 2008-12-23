@@ -1202,6 +1202,7 @@ $messages['da'] = array(
  * @author Raimond Spekking
  * @author Revolus
  * @author Rrosenfeld
+ * @author Umherirrender
  */
 $messages['de'] = array(
 	'requestaccount' => 'Benutzerkonto beantragen',
@@ -1217,12 +1218,12 @@ Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kan
 	'requestaccount-leg-person' => 'Persönliche Informationen',
 	'requestaccount-leg-other' => 'Weitere Informationen',
 	'requestaccount-leg-tos' => 'Benutzungsbedingungen',
-	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt. 
-	Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst. Sobald dein Konto angelegt wurde,
-	wird dir dein Passwort per E-Mail zugeschickt.',
+	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.
+Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst.
+Sobald dein Konto angelegt wurde, wird dir dein Passwort per E-Mail zugeschickt.',
 	'requestaccount-areas-text' => 'Wähle die Themengebiete aus, in denen du das meiste Fachwissen hast oder wo du am meisten involviert sein wirst.',
-	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag
-	verwendet. Du kannst Kontakt-Angaben wie eine Telefonnummer machen, um die Bearbeitung deines Antrags zu vereinfachen.',
+	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag verwendet.
+Du kannst Kontakt-Angaben wie eine Telefonnummer machen, um die Bearbeitung deines Antrags zu vereinfachen.',
 	'requestaccount-bio-text' => 'Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert.
 Versuche alle nötigen Empfehlungen zu erwähnen, aber stelle sicher, dass du die Informationen auch wirklich veröffentlichen möchtest.
 Du kannst deinen Namen in [[Special:Preferences|deinen Einstellungen]] ändern.',
@@ -1242,9 +1243,9 @@ Du kannst deinen Namen in [[Special:Preferences|deinen Einstellungen]] ändern.'
 	'requestaccount-emaildup' => 'Ein weiterer noch nicht erledigter Antrag benutzt die gleiche E-Mail-Adresse.',
 	'requestaccount-exts' => 'Der Dateityp des Anhangs ist nicht erlaubt.',
 	'requestaccount-resub' => 'Die Datei mit deinem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
-	Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
+Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
 	'requestaccount-tos' => 'Ich habe die [[{{MediaWiki:Requestaccount-page}}|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
-	Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
+Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
 	'requestaccount-submit' => 'Benutzerkonto beantragen',
 	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
 	'request-account-econf' => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
@@ -1271,21 +1272,23 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge]]}} warten auf Bearbeitung.",
 	'confirmaccounts' => 'Benutzerkonto-Anträge bestätigen',
 	'confirmedit-desc' => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
-	'confirmaccount-maintext' => "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}''''' zu bearbeiten.
+	'confirmaccount-maintext' => "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}'' zu bearbeiten.'''
 
-	Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
+Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
 
-	Wenn du auf einen Antrag antwortest, überprüfe die Informationen sorgfältig und bestätige die enthaltenen Informationen.
-	Deine Aktionen werden nichtöffentlich protokolloert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.",
+Wenn du auf einen Antrag antwortest, überprüfe die Informationen sorgfältig und bestätige die enthaltenen Informationen.
+Deine Aktionen werden nichtöffentlich protokolloert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.",
 	'confirmaccount-list' => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
-	Sobald ein Antrag bestätigt oder zurückgewiesen wurde, wird er aus der Liste entfernt.',
+Sobald ein Antrag bestätigt oder zurückgewiesen wurde, wird er aus der Liste entfernt.',
 	'confirmaccount-list2' => 'Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden Administrator kontaktieren.',
 	'confirmaccount-list3' => 'Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden.',
-	'confirmaccount-text' => "Dies ist ein Antrag auf ein Benutzerkonto bei '''{{SITENAME}}'''. Prüfe alle unten
-	stehenden Informationen gründlich und bestätige die Informationen wenn möglich. Bitte beachte, dass du den Zugang bei Bedarf unter
-	einem anderen Benutzernamen anlegen kannst. Du solltest dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.
+	'confirmaccount-text' => "Dies ist ein Antrag auf ein Benutzerkonto bei '''{{SITENAME}}'''.
 
-	Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.",
+Prüfe alle unten stehenden Informationen gründlich und bestätige die Informationen wenn möglich.
+Bitte beachte, dass du den Zugang bei Bedarf unter einem anderen Benutzernamen anlegen kannst.
+Du solltest dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.
+
+Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.",
 	'confirmaccount-none-o' => 'Momentan gibt es keine offenen Benutzeranträge auf dieser Liste.',
 	'confirmaccount-none-h' => 'Momentan gibt es keine Anträge im „abwarten“-Status auf dieser Liste.',
 	'confirmaccount-none-r' => 'Momentan gibt es keine kürzlich abgelehnten Benutzeranträge auf dieser Liste.',
@@ -1343,8 +1346,10 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2"
 	'confirmaccount-rej' => 'Benutzerantrag wurde abgelehnt.',
 	'confirmaccount-viewing' => '(wird aktuell angeschaut durch [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
-	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!''' Wir hoffen, dass du viele gute Informationen beisteuerst.
-	Möglicherweise möchtest Du zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen. Nochmal: Willkommen und hab' Spaß!~",
+	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
+Wir hoffen, dass du viele gute Informationen beisteuerst.
+Möglicherweise möchtest Du zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen.
+Nochmal: Willkommen und hab' Spaß!",
 	'confirmaccount-wsum' => 'Willkommen!',
 	'confirmaccount-email-subj' => '{{SITENAME}} Antrag auf Benutzerkonto',
 	'confirmaccount-email-body' => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
@@ -1383,13 +1388,11 @@ $2
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
-	'confirmaccount-email-body5' => 'Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, 
-       musst du zusätzliche Informationen übermitteln.
+	'confirmaccount-email-body5' => 'Bevor deine Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, musst du zusätzliche Informationen übermitteln.
 
 $2
 
-Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
-kannst, wenn du mehr über die Anforderungen wissen möchtest.',
+Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 	'usercredentials' => 'Benutzer-Berechtigungsnachweis',
 	'usercredentials-leg' => 'Bestätigte Benutzer-Berechtigungsnachweise nachsehen',
 	'usercredentials-user' => 'Benutzername:',
@@ -1827,7 +1830,7 @@ $messages['fr'] = array(
 	
 Assurez-vous que vous ayez déjà lu [[{{MediaWiki:Requestaccount-page}}|les conditions d’utilisation]] avant de faire votre demande de compte.
 	
-Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur [[Special:Userlogin|connexion]].",
+Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur [[Special:UserLogin|connexion]].",
 	'requestaccount-page' => "{{ns:project}}:Conditions d'utilisation",
 	'requestaccount-dup' => "'''Note : Vous êtes déjà sur une session avec un compte enregistré.'''",
 	'requestaccount-leg-user' => 'Compte utilisateur',
@@ -2096,12 +2099,11 @@ $messages['ga'] = array(
  */
 $messages['gl'] = array(
 	'requestaccount' => 'Solicitar unha conta',
-	'requestaccount-text' => "'''Complete e envíe o formulario seguinte para solicitar unha conta de usuario'''.
+	'requestaccount-text' => "'''Complete e envíe o seguinte formulario para solicitar unha conta de usuario.'''
 
-	Asegúrese de ter lido primeiro as [[{{MediaWiki:Requestaccount-page}}|Condicións de Servizo]] antes de solicitar unha conta.
+Asegúrese de ter lido primeiro as [[{{MediaWiki:Requestaccount-page}}|Condicións de servizo]] antes de solicitar unha conta.
 
-	Unha vez que se aprobe a conta recibirá unha mensaxe de notificación por correo electrónico e poderá usar a conta en
-	[[Special:Userlogin]].",
+Unha vez que se aprobe a conta, recibirá unha mensaxe de notificación por correo electrónico e poderá usar a conta en [[Special:UserLogin]].",
 	'requestaccount-page' => '{{ns:project}}:Condicións de Servizo',
 	'requestaccount-dup' => "'''Nota: Xa está no sistema cunha conta rexistrada.'''",
 	'requestaccount-leg-user' => 'Conta de usuario',
@@ -3216,7 +3218,7 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-acc' => 'Le requesta de conto ha essite confirmate con successo;
 creava nove conto de usator [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Le requesta de conto ha essite rejectate con successo.',
-	'confirmaccount-viewing' => '(a iste momento in revision per [[User:$1|$1]]))',
+	'confirmaccount-viewing' => '(a iste momento in revision per [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Crea pagina de usator con biographia del nove usator.',
 	'confirmaccount-welc' => "'''Benvenite a ''{{SITENAME}}''!'''
 Nos spera que tu contribuera multo e ben.
@@ -3534,6 +3536,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Aotake
+ * @author Fryed-peach
  * @author JtFuruhata
  */
 $messages['ja'] = array(
@@ -3549,6 +3552,7 @@ $messages['ja'] = array(
 	'requestaccount-leg-areas' => '関心のある分野',
 	'requestaccount-leg-person' => '自己紹介',
 	'requestaccount-leg-other' => 'その他',
+	'requestaccount-leg-tos' => '利用規約',
 	'requestaccount-acc-text' => '申請を行うと、確認メッセージがあなたの電子メールアドレスへ送信されます。その電子メールにある確認のためのリンクをクリックすると申請が承認されます。また、アカウントが作成された際には、電子メールでパスワードが送られます。',
 	'requestaccount-areas-text' => 'あなたが見識をお持ちの分野、または主に活動したい分野を選択してください。',
 	'requestaccount-ext-text' => '以下の個人情報は公開されず、この申請処理にのみ利用されます。
@@ -3603,6 +3607,7 @@ $3
 承認されたアカウントは作成され、この一覧から削除されます。棄却されたアカウントは単にこの一覧から削除されます。',
 	'confirmaccount-list2' => '以下は、最近申請が棄却されたアカウントの一覧で、これらは数日経過すると自動的に削除されます。
 これらのアカウントを承認することはまだ可能ですが、まずは棄却した管理者と相談することをお勧めします。',
+	'confirmaccount-list3' => '以下は、期限切れしたアカウント申請の一覧で、これらは数日経過すると自動的に削除されます。これらのアカウントを承認することはまだ可能です。',
 	'confirmaccount-text' => "これは、'''{{SITENAME}}''' において承認待ちとなっている利用者アカウントです。
 
 下記の利用者情報を慎重に検討してください。この申請を承認する場合、ドロップダウンリストを操作して利用者のアカウント状態を設定してください。
@@ -3614,10 +3619,14 @@ $3
 	'confirmaccount-none-o' => '現在、申請が受理されていないアカウントはありません。',
 	'confirmaccount-none-h' => '現在、申請が承認保留となっているアカウントはありません。',
 	'confirmaccount-none-r' => '最近に申請が棄却されたアカウントはありません。',
+	'confirmaccount-none-e' => '現在このリストには期限切れのアカウント申請はありません。',
 	'confirmaccount-real-q' => '本名',
 	'confirmaccount-email-q' => '電子メールアドレス',
 	'confirmaccount-bio-q' => '自己紹介',
+	'confirmaccount-showopen' => '未確定の申請',
+	'confirmaccount-showrej' => '却下済み申請',
 	'confirmaccount-showheld' => '承認保留アカウントの一覧を見る',
+	'confirmaccount-showexp' => '期限切れ申請',
 	'confirmaccount-review' => '承認検討',
 	'confirmaccount-types' => 'アカウント承認待ち行列を選択してください:',
 	'confirmaccount-all' => '（全ての待ち行列）',
@@ -3627,6 +3636,7 @@ $3
 	'confirmaccount-q-open' => '申請受理',
 	'confirmaccount-q-held' => '承認保留',
 	'confirmaccount-q-rej' => '最近の申請棄却',
+	'confirmaccount-q-stale' => '期限切れ申請',
 	'confirmaccount-badid' => '指定されたIDに該当する承認待ちの申請はありません。
 おそらく既に処理済みです。',
 	'confirmaccount-leg-user' => '利用者アカウント',
@@ -3649,6 +3659,7 @@ $3
 	'confirmaccount-reject' => '（$2、[[User:$1|$1]]によって棄却）',
 	'confirmaccount-rational' => '申請者に対して下された判断:',
 	'confirmaccount-noreason' => '（記述なし）',
+	'confirmaccount-autorej' => '(この申請は活動停止のため自動的に廃棄されました)',
 	'confirmaccount-held' => '（$2、[[User:$1|$1]]が"保留"の判断）',
 	'confirmaccount-create' => '承認（アカウント作成）',
 	'confirmaccount-deny' => '棄却（リストから削除）',
@@ -3836,7 +3847,7 @@ $messages['km'] = array(
 	'requestaccount-submit' => 'សំណើសុំគណនី',
 	'requestaccount-email-subj' => 'ការបញ្ជាក់ទទួលស្គាល់ អាសយដ្ឋានអ៊ីមែល {{SITENAME}}',
 	'requestaccount-email-subj-admin' => 'សំណើសុំគណនីរបស់{{SITENAME}}',
-	'acct_request_throttle_hit' => 'សូមអភ័យទោស។ អ្នកបានស្នើសុំគណនី $1 រួចហើយ។ អ្នកមិនអាចធ្វើការស្នើសុំទៀតបានទេ។',
+	'acct_request_throttle_hit' => 'សូមអភ័យទោស។ អ្នកបានស្នើសុំ {{PLURAL:$1|1 account|$1 គណនី}} រួចហើយ។ អ្នកមិនអាចធ្វើការស្នើសុំទៀតបានទេ។',
 	'requestaccount-loginnotice' => "ដើម្បីទទួលបានគណនីអ្នកប្រើប្រាស់ អ្នកត្រូវតែ'''[[Special:RequestAccount|ស្នើសុំគណនី]]'''។",
 	'confirmaccounts' => 'បញ្ជាក់ទទួលស្គាល់ សំណើគណនី',
 	'confirmaccount-list' => 'ខាងក្រោមនេះជាបញ្ជីរាយនាមគណនីដែលកំពុងរង់ចាំការអនុម័ត។ ពេលដែលសំនើត្រូវបានយល់ស្របឬបដិសេធ វានឹងត្រូវដកចេញពីបញ្ជីនេះ។',
@@ -5926,7 +5937,11 @@ $2
  */
 $messages['sk'] = array(
 	'requestaccount' => 'Vyžiadať účet',
-	'requestaccount-text' => "'''Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet'''. Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{MediaWiki:Requestaccount-page}}|Podmienky použitia]]. Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:Userlogin]].",
+	'requestaccount-text' => "'''Vyplnením a odoslaním nasledovného formulára vyžiadate používateľský účet'''.
+
+Uistite sa, že ste si pred vyžiadaním účtu najskôr prečítali [[{{MediaWiki:Requestaccount-page}}|Podmienky použitia]].
+
+Keď bude účet schválený, príde vám emailom oznámenie a bude možné prihlásiť sa na [[Special:UserLogin]].",
 	'requestaccount-page' => '{{ns:project}}:Podmienky použitia',
 	'requestaccount-dup' => "'''Pozn.: Už ste prihlásený ako zaregistrovaný používateľ.'''",
 	'requestaccount-leg-user' => 'Používateľský účet',

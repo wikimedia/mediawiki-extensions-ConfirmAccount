@@ -120,6 +120,12 @@ $aliases['lb'] = array(
 	'ConfirmAccounts' => array( 'Benotzerkont confirméieren' ),
 );
 
+/** Macedonian (Македонски) */
+$aliases['mk'] = array(
+	'RequestAccount' => array( 'ПобарајКорисничкаСметка' ),
+	'ConfirmAccounts' => array( 'ПотврдаНаКорисничкаСметка' ),
+);
+
 /** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
 	'ConfirmAccounts' => array( 'Sahkan akaun', 'Mengesahkan akaun' ),
