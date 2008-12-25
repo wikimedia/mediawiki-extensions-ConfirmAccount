@@ -1250,23 +1250,20 @@ Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein
 	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
 	'request-account-econf' => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
 	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adressen Prüfung',
-	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise du, hat bei {{SITENAME}} 
-das Benutzerkonto "$2" mit deiner E-Mail-Adresse beantragt.
+	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise du, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit deiner E-Mail-Adresse beantragt.
 
-Um zu bestätigen, dass wirklich du dieses Konto bei {{SITENAME}}
-beantragt hast, öffne bitte folgenden Link in deinem Browser:
+Um zu bestätigen, dass wirklich du dieses Konto bei {{SITENAME}} beantragt hast, öffne bitte folgenden Link in deinem Browser:
 
 $3
 
-Wenn das Benutzerkonto erstellt wurde, bekommst du eine weitere E-Mail
-mit dem Passwort.
+Wenn das Benutzerkonto erstellt wurde, bekommst du eine weitere E-Mail mit dem Passwort.
 
 Wenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!
 
 Dieser Bestätigungscode wird um $4 ungültig.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutzerkontenantrag',
-	'requestaccount-email-body-admin' => '"$1" hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
-Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: "$2".',
+	'requestaccount-email-body-admin' => '„$1“ hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
+Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$2“.',
 	'acct_request_throttle_hit' => 'Du hast bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, du kannst momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
 	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge]]}} warten auf Bearbeitung.",
