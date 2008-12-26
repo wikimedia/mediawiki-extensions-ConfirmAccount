@@ -167,6 +167,7 @@ $aliases['pt'] = array(
 /** Brazilian Portuguese (Português do Brasil) */
 $aliases['pt-br'] = array(
 	'ConfirmAccounts' => array( 'Confirmar conta' ),
+	'UserCredentials' => array( 'Credenciais de usuário' ),
 );
 
 /** Swedish (Svenska) */

@@ -3920,6 +3920,71 @@ $3
 	'usercredentials-member' => 'សិទ្ធិ​៖',
 );
 
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'requestaccount' => '계정 요청',
+	'requestaccount-dup' => "'''참고: 당신은 이미 등록된 계정으로 로그인되어 있습니다.'''",
+	'requestaccount-leg-areas' => '주요 관심 분야',
+	'requestaccount-leg-other' => '다른 정보',
+	'requestaccount-leg-tos' => '이용 약관',
+	'requestaccount-real' => '실명:',
+	'requestaccount-same' => '(실명과 같음)',
+	'requestaccount-email' => '이메일 주소:',
+	'requestaccount-submit' => '계정 요청',
+	'requestaccount-email-body' => '$1 IP 주소를 사용하는 사용자가 이 이메일 주소로 {{SITENAME}}에 "$2" 계정 생성을 요청하였습니다.
+
+{{SITENAME}}의 이 계정이 당신이 요청한 것이라면, 당신의 브라우저로 아래의 링크를 열어주세요:
+
+$3
+
+계정이 생성되면, 암호는 당신의 이메일로 전송될 것입니다.
+만약 당신의 것이 아니라면 위의 링크를 열지 마세요.
+이 확인 코드는 $4에 만료될 것입니다.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} 계정 생성 요청',
+	'confirmaccount-email-q' => '이메일',
+	'confirmaccount-showopen' => '진행 중인 요청',
+	'confirmaccount-showrej' => '거부된 요청',
+	'confirmaccount-showheld' => '보류된 요청',
+	'confirmaccount-showexp' => '만료된 요청',
+	'confirmaccount-all' => '(모든 큐 보기)',
+	'confirmaccount-q-open' => '진행 중인 요청',
+	'confirmaccount-q-held' => '보류된 요청',
+	'confirmaccount-q-rej' => '최근에 거부된 요청',
+	'confirmaccount-reject' => '($2에 [[User:$1|$1]]에 의해 거부됨)',
+	'confirmaccount-noreason' => '(없음)',
+	'confirmaccount-create' => '승인 (계정 생성)',
+	'confirmaccount-deny' => '거부 (목록에서 제거)',
+	'confirmaccount-hold' => '보류',
+	'confirmaccount-spam' => '스팸 (이메일을 보내지 않습니다)',
+	'confirmaccount-reason' => '이유 (이메일에 포함될 것입니다):',
+	'confirmaccount-ip' => 'IP 주소:',
+	'confirmaccount-submit' => '확인',
+	'confirmaccount-wsum' => '환영합니다!',
+	'confirmaccount-email-body' => '{{SITENAME}}에서 당신의 계정 생성 요청이 승인되었습니다.
+
+계정 이름: $1
+
+비밀번호: $2
+
+보안상의 이유로 인해 첫 로그인 이후 비밀번호를 바꾸어야 합니다.
+로그인하시려면 {{fullurl:Special:UserLogin}} 을 이용해주십시오.',
+	'confirmaccount-email-body2' => '{{SITENAME}}에서 당신의 계정 생성 요청이 승인되었습니다.
+
+계정 이름: $1
+
+비밀번호: $2
+
+$3
+
+보안상의 이유로 인해 첫 로그인 이후 비밀번호를 바꾸어야 합니다.
+로그인하시려면 {{fullurl:Special:UserLogin}} 을 이용해주십시오.',
+	'usercredentials-email' => '이메일:',
+	'usercredentials-real' => '실명:',
+	'usercredentials-member' => '권한:',
+);
+
 /** Kinaray-a (Kinaray-a)
  * @author Jose77
  */
@@ -5099,6 +5164,7 @@ $messages['pdt'] = array(
 /** Polish (Polski)
  * @author Derbeth
  * @author Equadus
+ * @author Leinad
  * @author Maikking
  * @author Masti
  * @author McMonster
@@ -5118,6 +5184,7 @@ Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość
 	'requestaccount-leg-areas' => 'Główne obszary zainteresowań',
 	'requestaccount-leg-person' => 'Informacje osobiste',
 	'requestaccount-leg-other' => 'Inne informacje',
+	'requestaccount-leg-tos' => 'Warunki użytkowania serwisu',
 	'requestaccount-acc-text' => 'Na Twój adres e-mail zostanie wysłana wiadomość potwierdzająca złożenie wniosku o założenie konta.
 Kliknij na link zawarty w tej wiadomości.
 Hasło do konta zostanie przesłane poprzez e-mail, gdy konto zostanie już utworzone.',
