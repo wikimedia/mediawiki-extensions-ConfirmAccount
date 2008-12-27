@@ -1595,6 +1595,7 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
 );
 
 /** Spanish (Español)
+ * @author Imre
  * @author Lin linao
  * @author Sanbec
  */
@@ -1604,7 +1605,23 @@ $messages['es'] = array(
 Antes de solicitar una cuenta, asegúrate de haber leído los [[{{MediaWiki:Requestaccount-page}}|términos del servicio]].
 
 Una vez que la cuenta sea aprobada, se te enviará una notificación a través de correo electrónico y la cuenta se podrá usar [[Special:UserLogin|iniciando sesión]].",
+	'requestaccount-real' => 'Nombre real:',
+	'requestaccount-email' => 'Dirección de correo electrónico:',
+	'requestaccount-level-0' => 'autor',
+	'confirmaccount-real-q' => 'Nombre',
+	'confirmaccount-email-q' => 'Correo electrónico',
+	'confirmaccount-name' => 'Nombre de usuario',
+	'confirmaccount-real' => 'Nombre:',
+	'confirmaccount-email' => 'Correo electrónico:',
+	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-econf' => '(confirmativo)',
 	'confirmaccount-noreason' => '(ninguna)',
+	'confirmaccount-ip' => 'Dirección IP:',
+	'confirmaccount-submit' => 'Confirmar',
+	'usercredentials-user' => 'Nombre de usuario:',
+	'usercredentials-email' => 'Correo electrónico:',
+	'usercredentials-real' => 'Nombre real:',
+	'usercredentials-ip' => 'Dirección IP original:',
 );
 
 /** Extremaduran (Estremeñu)
@@ -4517,6 +4534,7 @@ $messages['myv'] = array(
  * @author Fluence
  */
 $messages['nah'] = array(
+	'requestaccount-leg-user' => 'Tlatequitiltilīlli cuentah',
 	'requestaccount-real' => 'Melāhuac motōcā:',
 	'requestaccount-level-0' => 'chīhualōni',
 	'confirmaccount-real-q' => 'Tōcāitl',
@@ -4528,9 +4546,13 @@ $messages['nah'] = array(
 	'confirmaccount-pos-0' => 'chīhualōni',
 	'confirmaccount-noreason' => '(ahtlein)',
 	'confirmaccount-ip' => 'IP:',
+	'confirmaccount-wsum' => '¡Ximopanōlti!',
 	'usercredentials-user' => 'Tlatequitiltilīltōcāitl:',
+	'usercredentials-leg-user' => 'Tlatequitiltilīlli cuentah',
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Melāhuac motōcā:',
+	'usercredentials-attach' => 'Resumé/CV',
+	'usercredentials-ip' => 'Achto IP:',
 );
 
 /** Low German (Plattdüütsch)
@@ -5732,6 +5754,7 @@ Numele tău poate fi schimbat din [[Special:Preferences|preferinţele tale]].',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-bio' => 'Biografie personală:',
 	'requestaccount-attach' => 'CV (opţional):',
+	'requestaccount-notes' => 'Note adiţionale:',
 	'requestaccount-agree' => 'Trebuie să certifici că numele tău real este corect introdus şi că accepţi Termenii Serviciului.',
 	'requestaccount-inuse' => 'Numele de utilizator este deja folosit într-o cerere de deschidere de cont în aşteptare.',
 	'requestaccount-tooshort' => 'Biografia ta trebuie să conţină cel puţin $1 cuvinte.',
@@ -5771,6 +5794,7 @@ Adresa de e-mail a fost confirmată. Poţi confirma cererea aici "$2".',
 	'confirmaccount-pos-0' => 'autor',
 	'confirmaccount-bio' => 'Biografie:',
 	'confirmaccount-attach' => 'CV:',
+	'confirmaccount-notes' => 'Note adiţionale:',
 	'confirmaccount-urls' => 'Listă de situri web:',
 	'confirmaccount-econf' => '(confirmat)',
 	'confirmaccount-create' => 'Acceptare (crează cont)',
@@ -5789,6 +5813,7 @@ Adresa de e-mail a fost confirmată. Poţi confirma cererea aici "$2".',
 	'usercredentials-real' => 'Nume real:',
 	'usercredentials-bio' => 'Biografie:',
 	'usercredentials-attach' => 'CV:',
+	'usercredentials-notes' => 'Note adiţionale:',
 	'usercredentials-urls' => 'Listă de situri web:',
 	'usercredentials-ip' => 'Adresă IP originală:',
 	'usercredentials-member' => 'Drepturi:',
