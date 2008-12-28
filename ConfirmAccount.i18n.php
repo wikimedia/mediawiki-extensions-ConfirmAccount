@@ -1614,7 +1614,7 @@ Una vez que la cuenta sea aprobada, se te enviará una notificación a través d
 	'confirmaccount-real' => 'Nombre:',
 	'confirmaccount-email' => 'Correo electrónico:',
 	'confirmaccount-pos-0' => 'autor',
-	'confirmaccount-econf' => '(confirmativo)',
+	'confirmaccount-econf' => '(confirmado)',
 	'confirmaccount-noreason' => '(ninguna)',
 	'confirmaccount-ip' => 'Dirección IP:',
 	'confirmaccount-submit' => 'Confirmar',
@@ -1638,6 +1638,7 @@ $messages['ext'] = array(
  * @author Cimon Avaro
  * @author Crt
  * @author Jaakonam
+ * @author Mobe
  * @author Nike
  * @author Taleman
  */
@@ -1714,6 +1715,8 @@ toimia omien puuhiesi lisäksi.",
 Hyväksytyt käyttäjätunnukset luodaan ja poistetaan luettelosta. Hylätyt pyynnöt vain poistetaan luettelosta.',
 	'confirmaccount-list2' => 'Alla on luettelo hiljattain hylätyistä pyynnöistä jotka voidaan poistaa automaattisesti, kun ne ovat useiden päivien ikäisiä.
 Ne voidaan vieläkin hyväksyä käyttäjätunnuksiksi, mutta neuvottelethan ensin hylkäyksen tehneen ylläpitäjän kanssa.',
+	'confirmaccount-list3' => 'Alla on luettelo vanhentuneista tunnuspyynnöistä, jotka poistetaan automaattisesti muutaman päivän kuluttua.
+Nämä voidaan vielä hyväksyä tunnuksiksi.',
 	'confirmaccount-text' => "Tämä on käsittelyä odottava käyttäjätunnuspyyntö sivustolle '''{{SITENAME}}'''.
 
 Tarkista alla olevat tiedot huolellisesti. Jos olet hyväksymässä tätä pyyntöä, aseta käyttäjän asema pudotusvalikosta.
@@ -1723,12 +1726,14 @@ Jos jätät tämän sivun vahvistamatta tai hylkäämättä pyyntöä, se jää 
 	'confirmaccount-none-o' => 'Tässä luettelossa ei ole nyt yhtään käsiteltävänä olevaa pyyntöä.',
 	'confirmaccount-none-h' => 'Tässä luettelossa ei ole nyt yhtään pysäytettyä käsiteltävänä olevaa pyyntöä.',
 	'confirmaccount-none-r' => 'Täss luettelossa ei ole nyt yhtään äskettäin hylättyä pyyntöä.',
+	'confirmaccount-none-e' => 'Tällä hetkellä listalla ei ole yhtään vanhentunutta tunnuspyyntöä.',
 	'confirmaccount-real-q' => 'Nimi',
 	'confirmaccount-email-q' => 'Sähköposti',
 	'confirmaccount-bio-q' => 'Omat tiedot',
 	'confirmaccount-showopen' => 'avoimet pyynnöt',
 	'confirmaccount-showrej' => 'hylätyt pyynnöt',
 	'confirmaccount-showheld' => 'Katso luettelo käsiteltävänä olevista pyynnöistä',
+	'confirmaccount-showexp' => 'pyyntö vanhentunut',
 	'confirmaccount-review' => 'Tarkista',
 	'confirmaccount-types' => 'Valitse vahvistettavien pyyntöjen jono alla olevista:',
 	'confirmaccount-all' => '(näytä kaikki jonot)',
@@ -1738,6 +1743,7 @@ Jos jätät tämän sivun vahvistamatta tai hylkäämättä pyyntöä, se jää 
 	'confirmaccount-q-open' => 'avoimet pyynnöt',
 	'confirmaccount-q-held' => 'pysäytetyt pyynnöt',
 	'confirmaccount-q-rej' => 'äskettäin hylätyt pyynnöt',
+	'confirmaccount-q-stale' => 'vanhuneet pyynnöt',
 	'confirmaccount-badid' => 'Annettua tunnistetta vastavaa käsiteltävänä olevaa pyyntöä ei ole.
 Se voi olla jo käsitelty.',
 	'confirmaccount-leg-user' => 'Käyttäjätunnus',
@@ -1760,6 +1766,7 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-reject' => '(hylätty, hylkääjänä [[User:$1|$1]] osoitteesta $2)',
 	'confirmaccount-rational' => 'Hakijalle kerrotut perustelut:',
 	'confirmaccount-noreason' => '(ei mitään)',
+	'confirmaccount-autorej' => '(tämä pyyntö on automaattisesti hylätty käyttämättömyyden vuoksi)',
 	'confirmaccount-held' => '("pysäytetty", pysäyttäjänä [[User:$1|$1]] osoitteessa $2)',
 	'confirmaccount-create' => 'Hyväksy (luo käyttäjätunnus)',
 	'confirmaccount-deny' => 'Hylkää (poista jonosta)',
@@ -4786,9 +4793,11 @@ Kijk na of de naam correct gespeld is.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Harald Khan
  * @author Jon Harald Søby
  */
 $messages['nn'] = array(
+	'requestaccount-leg-other' => 'Annan informasjon',
 	'requestaccount-real' => 'Verkeleg namn:',
 	'confirmaccount-real-q' => 'Namn',
 	'confirmaccount-email-q' => 'E-post',
