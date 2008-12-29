@@ -1624,6 +1624,55 @@ Una vez que la cuenta sea aprobada, se te enviará una notificación a través d
 	'usercredentials-ip' => 'Dirección IP original:',
 );
 
+/** Estonian (Eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'requestaccount-leg-user' => 'Kasutajakonto',
+	'requestaccount-leg-areas' => 'Põhilised huvivaldkonnad',
+	'requestaccount-leg-person' => 'Personaalne informatsioon',
+	'requestaccount-leg-other' => 'Muu informatsioon',
+	'requestaccount-real' => 'Tegelik nimi:',
+	'requestaccount-same' => '(sama mis tegelik nimi)',
+	'requestaccount-email' => 'E-posti aadress:',
+	'requestaccount-reqtype' => 'Positsioon:',
+	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'toimetaja',
+	'requestaccount-info' => '(?)',
+	'requestaccount-bio' => 'Personaalne biograafia:',
+	'requestaccount-attach' => 'Resümee või CV (valikuline):',
+	'requestaccount-notes' => 'Lisainfo:',
+	'confirmaccount-real-q' => 'Nimi',
+	'confirmaccount-email-q' => 'E-post',
+	'confirmaccount-bio-q' => 'Biograafia',
+	'confirmaccount-leg-person' => 'Personaalne informatsioon',
+	'confirmaccount-leg-other' => 'Muu informatsioon',
+	'confirmaccount-name' => 'Kasutajanimi',
+	'confirmaccount-real' => 'Nimi:',
+	'confirmaccount-email' => 'E-post:',
+	'confirmaccount-reqtype' => 'Positsioon:',
+	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-pos-1' => 'toimetaja',
+	'confirmaccount-bio' => 'Biograafia:',
+	'confirmaccount-attach' => 'Resümee/CV:',
+	'confirmaccount-notes' => 'Lisainfo:',
+	'confirmaccount-ip' => 'IP-aadress:',
+	'confirmaccount-submit' => 'Kinnita',
+	'confirmaccount-wsum' => 'Tere tulemast!',
+	'usercredentials-user' => 'Kasutajanimi:',
+	'usercredentials-leg-user' => 'Kasutajakonto',
+	'usercredentials-leg-areas' => 'Peamised huvialad',
+	'usercredentials-leg-person' => 'Personaalne informatsioon',
+	'usercredentials-leg-other' => 'Muu informatsioon',
+	'usercredentials-email' => 'E-post:',
+	'usercredentials-real' => 'Tegelik nimi:',
+	'usercredentials-bio' => 'Biograafia:',
+	'usercredentials-attach' => 'Resümee/CV:',
+	'usercredentials-notes' => 'Lisainfo:',
+	'usercredentials-ip' => 'Originaalne IP-aadress:',
+	'usercredentials-member' => 'Õigused:',
+);
+
 /** Extremaduran (Estremeñu)
  * @author Better
  */
@@ -2428,7 +2477,26 @@ $messages['he'] = array(
 לפני שאתם מבקשים חשבון, אנא ודאו כי קראתם קודם את [[{{MediaWiki:Requestaccount-page}}|תנאי השירות]].
 
 כשהחשבון יאושר, תישלח אליכם הודעה בדואר האלקטרוני ותוכלו [[Special:UserLogin|להיכנס אליו]].",
+	'requestaccount-page' => '{{ns:project}}:תנאי השירות',
 	'requestaccount-dup' => "'''הערה: אתם כבר מחוברים עם חשבון רשום.'''",
+	'requestaccount-leg-user' => 'חשבון משתמש',
+	'requestaccount-leg-areas' => 'תחומי עניין עיקריים',
+	'requestaccount-leg-person' => 'מידע אישי',
+	'requestaccount-leg-other' => 'מידע אחר',
+	'requestaccount-leg-tos' => 'תנאי השירות',
+	'requestaccount-real' => 'שם אמיתי:',
+	'requestaccount-same' => '(כמו השם האמיתי)',
+	'requestaccount-email' => 'כתובת הדוא"ל:',
+	'requestaccount-reqtype' => 'משרה:',
+	'requestaccount-level-0' => 'מחבר',
+	'requestaccount-level-1' => 'עורך',
+	'requestaccount-bio' => 'ביוגרפיה אישית:',
+	'requestaccount-attach' => 'קורות חיים (אופציונאלי):',
+	'requestaccount-notes' => 'הערות נוספות:',
+	'requestaccount-urls' => 'רשימה של אתרים, אם יש כאלה (הפרידו באמצעות שורות חדשות):',
+	'requestaccount-inuse' => 'שם המשתמש כבר נמצא בשימוש בבקשת חשבון ממתינה.',
+	'requestaccount-tooshort' => 'על הביוגרפיה שלכם להכיל לפחות $1 מילים.',
+	'requestaccount-exts' => 'סוג הקובץ המצורף אינו מורשה.',
 	'confirmaccount-submit' => 'אישור',
 	'confirmaccount-needreason' => 'יש לספק סיבה בתיבת התגובה למטה.',
 	'confirmaccount-canthold' => 'בקשה זו כבר נמצאת בהמתנה או מחוקה.',
@@ -6883,6 +6951,7 @@ $messages['tet'] = array(
 	'confirmaccount-real' => 'Naran:',
 	'confirmaccount-email' => 'Korreiu eletróniku:',
 	'confirmaccount-pos-0' => 'autór',
+	'confirmaccount-ip' => 'Diresaun IP:',
 	'usercredentials-email' => 'Korreiu eletróniku:',
 );
 
