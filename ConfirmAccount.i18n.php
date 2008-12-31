@@ -365,6 +365,18 @@ $messages['af'] = array(
 	'usercredentials-member' => 'Regte:',
 );
 
+/** Amharic (አማርኛ)
+ * @author Codex Sinaiticus
+ */
+$messages['am'] = array(
+	'requestaccount-email' => 'የኢ-ሜል አድራሻ:',
+	'confirmaccount-real-q' => 'ስም',
+	'confirmaccount-email-q' => 'ኢ-ሜል',
+	'confirmaccount-real' => 'ስም:',
+	'confirmaccount-email' => 'ኢ-ሜል:',
+	'usercredentials-email' => 'ኢ-ሜል:',
+);
+
 /** Aragonese (Aragonés)
  * @author Juanpabl
  */
