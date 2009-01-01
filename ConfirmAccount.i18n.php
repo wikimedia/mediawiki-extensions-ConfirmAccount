@@ -4922,7 +4922,24 @@ Kijk na of de naam correct gespeld is.',
  * @author Jon Harald Søby
  */
 $messages['nn'] = array(
+	'requestaccount' => 'Be om konto',
+	'requestaccount-text' => "'''Fullfør og lever følgjande skjema for å be om ein brukarkonto.'''
+
+Gjer deg viss om at du først les [[{{MediaWiki:Requestaccount-page}}|tenestevilkåra]] før du ber om ein konto.
+
+Når kontoen vert godkjend vil du få melding på e-post og du vil kunna [[Special:UserLogin|logga inn]].",
+	'requestaccount-page' => '{{ns:project}}:Tenestevilkår',
+	'requestaccount-dup' => "'''Merk: Du er allereie innlogga med ein registrert brukarkonto.'''",
+	'requestaccount-leg-user' => 'Brukarkonto',
+	'requestaccount-leg-areas' => 'Hovudinteresser',
+	'requestaccount-leg-person' => 'Personleg informasjon',
 	'requestaccount-leg-other' => 'Annan informasjon',
+	'requestaccount-leg-tos' => 'Tenestevilkår',
+	'requestaccount-acc-text' => 'Du vil få ein e-post med stadfesting med ein gong denne føresurnaden er sendt inn. 
+Svar ved å trykkja på stadfestingslekkja i e-posten. 
+Passordet ditt vil òg bli sendt til deg når kontoen er oppretta.',
+	'requestaccount-areas-text' => 'Vel det eller dei områda nedanfor som du har mest formell ekspertise innan eller vil jobba mest med.',
+	'requestaccount-ext-text' => 'Følgjande informasjon vil bli heldt privat, og vil berre bli nytta for denne førespurnaden. Du vil kanskje lista opp kontaktinformasjon som eit telefonnummer for å hjelpa til med å stadfesta identiteten din.',
 	'requestaccount-real' => 'Verkeleg namn:',
 	'confirmaccount-real-q' => 'Namn',
 	'confirmaccount-email-q' => 'E-post',
