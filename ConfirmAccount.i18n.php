@@ -1687,6 +1687,47 @@ $messages['et'] = array(
 	'usercredentials-member' => 'Õigused:',
 );
 
+/** Basque (Euskara)
+ * @author An13sa
+ */
+$messages['eu'] = array(
+	'requestaccount-leg-user' => 'Erabiltzaile kontua',
+	'requestaccount-leg-person' => 'Norberaren informazioa',
+	'requestaccount-leg-other' => 'Bestelako informazioa',
+	'requestaccount-real' => 'Benetako izena:',
+	'requestaccount-email' => 'Email helbidea:',
+	'requestaccount-level-0' => 'egilea',
+	'requestaccount-bio' => 'Norberaren biografia:',
+	'requestaccount-attach' => 'Curriculuma (hautazkoa):',
+	'confirmaccount-real-q' => 'Izena',
+	'confirmaccount-email-q' => 'Emaila',
+	'confirmaccount-bio-q' => 'Biografia',
+	'confirmaccount-showopen' => 'irekitako eskariak',
+	'confirmaccount-showrej' => 'gaitzestutako eskariak',
+	'confirmaccount-showexp' => 'iraungitako eskariak',
+	'confirmaccount-leg-person' => 'Norberaren informazioa',
+	'confirmaccount-leg-other' => 'Bestelako informazioa',
+	'confirmaccount-name' => 'Erabiltzaile izena',
+	'confirmaccount-real' => 'Izena:',
+	'confirmaccount-email' => 'Emaila:',
+	'confirmaccount-pos-0' => 'egilea',
+	'confirmaccount-bio' => 'Biografia:',
+	'confirmaccount-attach' => 'Curriculuma:',
+	'confirmaccount-urls' => 'Webgune zerrenda:',
+	'confirmaccount-create' => 'Onartu (kontua sortu)',
+	'confirmaccount-ip' => 'IP helbidea:',
+	'confirmaccount-submit' => 'Baieztatu',
+	'confirmaccount-wsum' => 'Ongi etorri!',
+	'usercredentials-user' => 'Erabiltzaile izena:',
+	'usercredentials-leg-person' => 'Norberaren informazioa',
+	'usercredentials-email' => 'Emaila:',
+	'usercredentials-real' => 'Benetako izena:',
+	'usercredentials-bio' => 'Biografia:',
+	'usercredentials-attach' => 'Curriculuma:',
+	'usercredentials-urls' => 'Webgune zerrenda:',
+	'usercredentials-ip' => 'Jatorrizko IP helbidea:',
+);
+
 /** Extremaduran (Estremeñu)
  * @author Better
  */

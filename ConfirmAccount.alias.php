@@ -131,6 +131,13 @@ $aliases['ms'] = array(
 	'ConfirmAccounts' => array( 'Sahkan akaun', 'Mengesahkan akaun' ),
 );
 
+/** Maltese (Malti) */
+$aliases['mt'] = array(
+	'RequestAccount' => array( 'RikjestaKont' ),
+	'ConfirmAccounts' => array( 'KonfermaKont' ),
+	'UserCredentials' => array( 'KredenzjaliUtent' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'RequestAccount' => array( 'Gebruker_anvragen' ),
