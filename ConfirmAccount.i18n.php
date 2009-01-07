@@ -7494,22 +7494,53 @@ $messages['vi'] = array(
 
 /** Volapük (Volapük)
  * @author Malafaya
+ * @author Smeira
  */
 $messages['vo'] = array(
 	'requestaccount' => 'Begön kali',
+	'requestaccount-dup' => "'''Demolös: Ya enunädol oli me kal peregistaröl.'''",
+	'requestaccount-leg-user' => 'Gebanakal',
+	'requestaccount-leg-person' => 'Nüns pösodik',
+	'requestaccount-leg-other' => 'Nüns votik',
 	'requestaccount-real' => 'Nem jenöfik:',
+	'requestaccount-same' => '(nem ot äs nem jenöfik)',
+	'requestaccount-email' => 'Ladet leäktronik:',
+	'requestaccount-reqtype' => 'Staned:',
 	'requestaccount-level-0' => 'lautan',
+	'requestaccount-bio' => 'Lifajenäd pösodik:',
+	'requestaccount-notes' => 'Noets pluik:',
+	'requestaccount-tooshort' => 'Lifajenäd olik muton labön vodis pu $1.',
 	'requestaccount-submit' => 'Begön kali',
+	'confirmaccounts' => 'Fümedön kalibegis',
 	'confirmaccount-real-q' => 'Nem',
+	'confirmaccount-email-q' => 'Ladet leäktronik',
 	'confirmaccount-bio-q' => 'Lifajenäd',
+	'confirmaccount-leg-user' => 'Gebanakal',
+	'confirmaccount-leg-person' => 'Nüns pösodik',
+	'confirmaccount-leg-other' => 'Nüns votik',
 	'confirmaccount-name' => 'Gebananem',
 	'confirmaccount-real' => 'Nem:',
+	'confirmaccount-email' => 'Ladet leäktronik:',
+	'confirmaccount-reqtype' => 'Staned:',
 	'confirmaccount-pos-0' => 'lautan',
+	'confirmaccount-bio' => 'Lifajenäd:',
+	'confirmaccount-notes' => 'Noets pluik:',
+	'confirmaccount-econf' => '(pefümedon)',
 	'confirmaccount-noreason' => '(nonik)',
+	'confirmaccount-reason' => 'Küpet (obinon in pened leäktronik):',
+	'confirmaccount-ip' => 'Ladet-IP:',
+	'confirmaccount-submit' => 'Fümedön',
 	'confirmaccount-wsum' => 'Benokömö!',
 	'confirmaccount-email-subj' => 'Beg kala ela {{SITENAME}}',
 	'usercredentials-user' => 'Gebananem:',
+	'usercredentials-leg-user' => 'Gebanakal',
+	'usercredentials-leg-person' => 'Nüns pösodik',
+	'usercredentials-leg-other' => 'Nüns votik',
+	'usercredentials-email' => 'Ladet leäktronik:',
 	'usercredentials-real' => 'Nem jenöfik:',
+	'usercredentials-bio' => 'Lifajenäd:',
+	'usercredentials-ip' => 'Ladet-IP rigik:',
+	'usercredentials-member' => 'Gitäts:',
 );
 
 /** Yiddish (ייִדיש)
