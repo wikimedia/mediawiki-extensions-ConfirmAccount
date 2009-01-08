@@ -4188,9 +4188,14 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'requestaccount' => 'Noh em Zojang als Metmaacher frore',
 	'requestaccount-real' => 'Dinge richtije Name:',
+	'requestaccount-email' => '<i lang="en">e-mail</i> Addreß',
+	'requestaccount-level-0' => 'Schriiver',
+	'requestaccount-submit' => 'Noh enem Zojang als ene Metmaacher frore',
 	'confirmedit-desc' => 'Määt et müjjelesch, dat {{int:group-bureaucrat}} de neu Aanmeldunge beshtätejje.',
 	'confirmaccount-real-q' => 'Name',
+	'confirmaccount-email-q' => '<i lang="en">e-mail</i>',
 	'confirmaccount-q-open' => 'Aanfrore am waade',
 	'confirmaccount-q-held' => 'zerökjestallte un opjeschovve Aanfore',
 	'confirmaccount-q-rej' => 'köözlesch afjeleente Aanfrore',
