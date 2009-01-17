@@ -828,6 +828,7 @@ $messages['bcl'] = array(
  */
 $messages['be-tarask'] = array(
 	'requestaccount' => 'Запыт на стварэньне рахунку',
+	'requestaccount-level-0' => 'аўтар',
 );
 
 /** Bulgarian (Български)
@@ -1434,6 +1435,158 @@ $messages['diq'] = array(
  * @author Michawiki
  */
 $messages['dsb'] = array(
+	'requestaccount' => 'Póžedanje na konto stajiś',
+	'requestaccount-text' => "'''Wupołń a wótpósćel slědujucy formular, aby stajił póžedanje na wužywarske konto'''.
+
+Pśecytaj pšosym nejpjerwjej [[{{MediaWiki:Requestaccount-page}}|wužywańske wuměnjenja]], pjerwjej až stajijoš póžedanje na konto.
+
+Gaž konto jo schwalone, dostanjoš e-mailku a konto dajo se za [[Special:UserLogin|pśizjawjenje]] wužywaś.",
+	'requestaccount-page' => '{{ns:project}}:Wužywańske wuměnjenja',
+	'requestaccount-dup' => "'''Glědaj: Sy se južo pśizjawił ze zregistrěrowanym kontom.'''",
+	'requestaccount-leg-user' => 'Wužywarske konto',
+	'requestaccount-leg-areas' => 'Głowne zajmowe póla',
+	'requestaccount-leg-person' => 'Wósobinske informacije',
+	'requestaccount-leg-other' => 'Druge informacije',
+	'requestaccount-leg-tos' => 'Wužywańske wuměnjenja',
+	'requestaccount-acc-text' => 'Na twóju e-mailowu adresu pósćele se wobkšuśeńska powěsć, gaž toś to póžedanje jo wótpósłane.
+Pšosym wótegroń pśez kliknjenje na wobkšuśeński wótkaz w e-mailce.
+Gaž twójo konto jo załožone, gronidło pśipósćeła se śi pśez e-mail.',
+	'requestaccount-areas-text' => 'Wubjeŕ temowe póla, w kótarychž maš neejlěpše wěcywuznaśe abo za to ty by rady nejwěcej źěło cyniś.',
+	'requestaccount-ext-text' => 'Ze slědujucymi informacijami wobchadaju dowěrliwje a budu se jano za toś to póžedanje.
+Móžoš kontaktowe pódaśa ako telefonowy numer cyniś, aby pomagał pśi wobkšuśenju identity.',
+	'requestaccount-bio-text' => 'Twója biografija nastajijo se ako standardne wopśimjeśe za twój wužywarski bok.
+Wopytaj referency zapśěgnuś, ale wobmysli, lěc coš take informacije wózjawiś.
+Twójo mě dajo se pśez [[Special:Preferences|swóje nastajenja]] změniś.',
+	'requestaccount-real' => 'Napšawdne mě:',
+	'requestaccount-same' => '(kaž napšawdne mě)',
+	'requestaccount-email' => 'E-mailowa adresa:',
+	'requestaccount-reqtype' => 'Pozicija:',
+	'requestaccount-level-0' => 'awtor',
+	'requestaccount-level-1' => 'wobźěłaŕ',
+	'requestaccount-bio' => 'Wósobinska biografija:',
+	'requestaccount-attach' => 'Žywjenjoběg (opcionalny):',
+	'requestaccount-notes' => 'Pśidatne pódaśa:',
+	'requestaccount-urls' => 'Lisćina websedłow, jolic take su (kuždy zapisk na swójskej smužce):',
+	'requestaccount-agree' => 'Musyš wobkšuśiś, až twójo napšawdne mě jo korektne a až sy wobjadny z wužywańskimi wuměnjenjami.',
+	'requestaccount-inuse' => 'Wužywarske mě wužywa se južo w njedocynjonem póžedanju na konto.',
+	'requestaccount-tooshort' => 'Twója biografija musy nanejmjenjej $1 {{PLURAL:$1|słowo|słowje|słowa|słowow}} dłujka byś.',
+	'requestaccount-emaildup' => 'Dalšne njedocynjone póžedanje na konto wužywa samsku e-mailowu adresu.',
+	'requestaccount-exts' => 'Datajowy typ dodanka njejo dowólony.',
+	'requestaccount-resub' => 'Dataja z twójim žywjenjoběgom musy se z wěstotnych pśicynow znowego wubraś.
+Wóstaj pólo prozne, jolic njocoš wěcej ju zapśěgnuś.',
+	'requestaccount-tos' => 'Som pśecytał [[{{MediaWiki:Requestaccount-page}}|wužywańske wuměnjenja]] {{GRAMMAR:genitiw|{{SITENAME}}}} a lubim se jich źaržaś.
+Mě, kótarež som pód "napšawdne mě" pódał, jo napšawdu mójo napšawdne mě.',
+	'requestaccount-submit' => 'Póžedanje na konto stajiś',
+	'requestaccount-sent' => 'Twójo póžedanje na konto jo se wuspěšnje wótpósłało a caka něnto na pśeglědanje.',
+	'request-account-econf' => 'Twója e-mailowa adresa jo se wobkšuśiła a nalicyjo ako taka w twójim póžedanju na konto.',
+	'requestaccount-email-subj' => '{{SITENAME}} wobkšuśenje e-mailoweje adrese',
+	'requestaccount-email-body' => 'Něchten, nejskerjej ty z IP-adrese $1, jo stajił póžedanje na konto "$2" z toś teju e-mailoweju adresu na {{GRAMMAR:lokatiw|{{SITENAME}}}}.
+
+Aby wobkšuśił, až toś to konto napšawdu śi słuša na {{GRAMMAR:lokatiw|{{SITENAME}}}}, wócyń toś ten wótkaz w swójom wobglědowaku:
+
+$3
+
+Jolic konto jo załožone, dostanjoš jano ty gronidło pśez e-mail.
+Jolic konto śi *nje*słuša, njewócyń ten wótkaz.
+Toś ten wobkšuśeński kod pśepadnjo $4.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} póžedanje na konto',
+	'requestaccount-email-body-admin' => '"$1" jo stajił pózedanje na konto a caka na wobkšuśenje.
+E-mailowa adresa jo se wobkšuśiła. Móžoš póžedanje how wobkšuśiś: "$2".',
+	'acct_request_throttle_hit' => 'Wódaj, sy južo pominał {{PLURAL:$1|jadne konto|$1 konśe|$1 konta|$1 kontow}}.
+Njamóžeš dalšne póžedanja stajiś.',
+	'requestaccount-loginnotice' => "Aby dostał wužywarske konto, musyš '''[[Special:RequestAccount|póžedanje na nje stajiś]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|pśez e-mail wobkšuśone póžedanje na konto jo njedocynjone|pśez e-mail wobkšuśonej póžedani na konśe stej njedocynjonej|pśez e-mail wobkšuśone póžedanja na konta su njedocynjone|pśez e-mail wobkšuśonych póžedanjow na konta jo njedocynjone}}",
+	'confirmaccounts' => 'Póžedanja na konta wobkšuśiś',
+	'confirmedit-desc' => 'Dawa běrokratam móžnosć póžedanja na konta wobkšuśiś',
+	'confirmaccount-list' => 'Dołojce jo lisćina póžedanjow na konto, kótarež cakaja na schwalenje.
+Gaž póžedanje jo pak schwalone pak wótpokazane,  buźo se z toś teje lisćiny wótwónoźowaś.',
+	'confirmaccount-list2' => 'Dołojce jo lisćina njedawno wótpokazanych póžedanjow na konta, kótarež se awtomatiski lašuju, gaž su někotare dny stare.
+Jo hyšći móžno, aby se wone pśetwórili do schwalonych kontow, ale ty měł se nejpjerwjej z njewótpokazujucym administratorom do zwiska stajiś, pjerwjej až to cyniš.',
+	'confirmaccount-list3' => 'Dołojce jo lisćina pśepadnjonych póžedanja na konta, kótarež se awtomatiski lašuju, gaž su někotare dny stare. Daju se hyšći do schwalonych kontow pśetwóriś.',
+	'confirmaccount-none-o' => 'Tuchylu njejsu njedocynjone póžedanja na konta w toś tej lisćinje.',
+	'confirmaccount-none-h' => 'Tuchylu njejsu zaźaržane póžedanja na konta w tos´tej lisćinje.',
+	'confirmaccount-none-r' => 'Njejsu tuchylu njedawno wótpokazane póžedanja na konta w toś tej lisćinje.',
+	'confirmaccount-none-e' => 'Tuchylu njejsu pśepadnjone póžedanja na konta w toś tej lisćinje.',
+	'confirmaccount-real-q' => 'Mě',
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-bio-q' => 'Biografija',
+	'confirmaccount-showopen' => 'njedocynjone póžedanja',
+	'confirmaccount-showrej' => 'wótpokazane póžedanja',
+	'confirmaccount-showheld' => 'Zaźaržane póžedanja',
+	'confirmaccount-showexp' => 'pśepadnjone póžedanja',
+	'confirmaccount-review' => 'Pśeglědaś',
+	'confirmaccount-types' => 'Wubjeŕ cakajucy rěd kontowego wobkšuśenja ze slědujucych:',
+	'confirmaccount-all' => '(wše cakajuce rědy pokazaś)',
+	'confirmaccount-type' => 'Cakajucy rěd:',
+	'confirmaccount-type-0' => 'pśichodne awtory',
+	'confirmaccount-type-1' => 'pśichodne wobźěłarje',
+	'confirmaccount-q-open' => 'njedocynjone póžedanja',
+	'confirmaccount-q-held' => 'zaźaržane póžedanja',
+	'confirmaccount-q-rej' => 'njedawno wótpokazane póžedanja',
+	'confirmaccount-q-stale' => 'pśepadnjone póžedanja',
+	'confirmaccount-badid' => 'Njejo žedne njedocynjone póžedanje za pódany ID.
+Snaź jo južo docynjone.',
+	'confirmaccount-leg-user' => 'Wužywarske konto',
+	'confirmaccount-leg-areas' => 'Głowne zajmowe póla',
+	'confirmaccount-leg-person' => 'Wósobinske informacije',
+	'confirmaccount-leg-other' => 'Druge informacije',
+	'confirmaccount-name' => 'Wužywarske mě',
+	'confirmaccount-real' => 'Mě:',
+	'confirmaccount-email' => 'E-mail:',
+	'confirmaccount-reqtype' => 'Pozicija:',
+	'confirmaccount-pos-0' => 'awtor',
+	'confirmaccount-pos-1' => 'wobźěłaŕ',
+	'confirmaccount-bio' => 'Biografija:',
+	'confirmaccount-attach' => 'Žywjenjoběg:',
+	'confirmaccount-notes' => 'Pśidatne pódaśa:',
+	'confirmaccount-urls' => 'Lisćina websedłow:',
+	'confirmaccount-none-p' => '(njepódany)',
+	'confirmaccount-confirm' => 'Wuž slědujuce opcije, aby akceptěrował, wótpokazał abo zaźaržał toś to póžedanje:',
+	'confirmaccount-econf' => '(wobkšuśony)',
+	'confirmaccount-reject' => '(wótpokazane wót wužywarja [[User:$1|$1]] na $2)',
+	'confirmaccount-rational' => 'Wobtwarźenje za póžedarja:',
+	'confirmaccount-noreason' => '(žedna)',
+	'confirmaccount-autorej' => '(toś to póžedanje jo se awtomatiski zachyśiło njeaktiwnosći dla)',
+	'confirmaccount-held' => '(wót wužywarja [[User:$1|$1]] na $2 ako "zaźaržane" markěrowane)',
+	'confirmaccount-create' => 'Akceptěrowaś (konto załožyś)',
+	'confirmaccount-deny' => 'Wótpokazaś (z lisćiny wótpóraś)',
+	'confirmaccount-hold' => 'Zaźaržaś',
+	'confirmaccount-spam' => 'Spam (žednu e-mailku pósłaś)',
+	'confirmaccount-reason' => 'Komentar (zapśěgnjo se do e-mailki):',
+	'confirmaccount-ip' => 'IP-adresa:',
+	'confirmaccount-submit' => 'Wobkšuśiś',
+	'confirmaccount-needreason' => 'Musyš pśicynu w slědujucem komentarowem kašćiku pódaś.',
+	'confirmaccount-canthold' => 'Toś to póžedanje jo se pak zaźaržało pak wulašowało.',
+	'confirmaccount-acc' => 'Póžedanje na konto wuspěšnje wobkšuśone;
+jo se załožyło nowe konto za wužywarja [[User:$1|$1]].',
+	'confirmaccount-rej' => 'Póžedanje na konto wuspěšnje wótpokazane.',
+	'confirmaccount-viewing' => '(woglědujo se tuchylu wót wužywarja [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Napóranje wužywarskego boka z biografiju nowego wužywarja.',
+	'confirmaccount-welc' => "'''Witaj do ''{{GRAMMAR:genitiw|{{SITENAME}}}}''!'''
+Naźejamy se, až librujoš wjele dobrych pśinoskow.
+Nejskerjej coš [[{{MediaWiki:Helppage}}|boki pomocy]] cytaś.
+Hyšći raz: Witaj a wjele wjasela!",
+	'confirmaccount-wsum' => 'Witaj!',
+	'confirmaccount-email-subj' => '{{SITENAME}} póžedanje na konto',
+	'confirmaccount-email-body' => 'Twójo póžedanje na konto jo se na {{GRAMMAR:lokatiw|{{SITENAME}}}} schwaliło.
+
+Mě konta: $1
+
+Gronidło: $2
+
+
+Z wěstotnych pśicynow musyš swójo gronidło pśi prědnem pśizjawjenju změniś.
+Aby se pśizjawił, źi pšosym k {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Twójo póžedanje na konto jo se na {{GRAMMAR:lokatiw|{{SITENAME}}}} schwaliło.
+
+Mě konta: $1
+
+Gronidło: $2
+
+$3
+
+Z wěstotnych pśicynow musyš swójo gronidło pśi prědnem pśizjawjenju změniś.
+Aby se pśizjawił, źi pšosym k {{fullurl:Special:UserLogin}}.',
 	'usercredentials' => 'Wósobinske pódaśa wužywarja',
 	'usercredentials-leg' => 'Pytanje jo wósobinske pódaśa wužywarja wobkšuśiło',
 	'usercredentials-user' => 'Wužywarske mě:',
@@ -2966,12 +3119,12 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-bio-q' => 'Biografija',
 	'confirmaccount-showopen' => 'njesčinjene požadanja',
 	'confirmaccount-showrej' => 'wotpokazane požadanja',
-	'confirmaccount-showheld' => 'Lisćina wotewrjenych kontow pokazać',
+	'confirmaccount-showheld' => 'Zadźeržane požadanja',
 	'confirmaccount-showexp' => 'spadnjene požadanja',
 	'confirmaccount-review' => 'Dowolić/Wotpokazać',
 	'confirmaccount-types' => 'Wubjer rynk za kontowe potwjerdźenje:',
 	'confirmaccount-all' => '(pokazaj wšě rynki)',
-	'confirmaccount-type' => 'Wubrany čakanski rynk:',
+	'confirmaccount-type' => 'Čakacy rynk:',
 	'confirmaccount-type-0' => 'přichodni awtorojo',
 	'confirmaccount-type-1' => 'přichodne editory',
 	'confirmaccount-q-open' => 'njesčinjene požadanja',
@@ -3748,13 +3901,13 @@ $messages['ja'] = array(
 	'requestaccount-reqtype' => 'サイトでの役割:',
 	'requestaccount-level-0' => '著者',
 	'requestaccount-level-1' => '編集者',
-	'requestaccount-bio' => '自己紹介',
-	'requestaccount-attach' => '研究概要（レジュメ）や略歴（CV）　（任意回答）',
-	'requestaccount-notes' => '特記事項',
+	'requestaccount-bio' => '自己紹介:',
+	'requestaccount-attach' => '研究概要（レジュメ）や略歴（CV） (任意回答):',
+	'requestaccount-notes' => '特記事項:',
 	'requestaccount-urls' => 'ウェブサイトのリスト（任意回答、改行で区切ります）:',
 	'requestaccount-agree' => '本名が正しいこと、および、サービス利用規約に同意したことを宣誓していただく必要があります。',
 	'requestaccount-inuse' => 'この利用者名は、承認待ちのアカウントにて既に申請済みです。',
-	'requestaccount-tooshort' => "自己紹介は、最低限 $1 以上の単語で構成される必要があります。''（訳注：この機能は日本語版ではうまく動作しないかもしれません。あなたが管理者であるならば、この制約の使用に慎重であってください。あなたが一般利用者である場合、このサイトの管理者と相談してください。）''",
+	'requestaccount-tooshort' => "自己紹介は、最低限 $1個以上の単語で構成される必要があります。''（訳注：この機能は日本語版ではうまく動作しないかもしれません。あなたが管理者であるならば、この制約の使用に慎重であってください。あなたが一般利用者である場合、このサイトの管理者と相談してください。）''",
 	'requestaccount-emaildup' => '承認待ちのアカウントと同一の電子メールアドレスが指定されました。',
 	'requestaccount-exts' => 'この添付ファイルのタイプは許可されていません。',
 	'requestaccount-resub' => 'セキュリティ上の理由により、研究概要/略歴のファイルを再指定する必要があります。
