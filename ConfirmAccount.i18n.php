@@ -1590,6 +1590,21 @@ $3
 
 Z wěstotnych pśicynow musyš swójo gronidło pśi prědnem pśizjawjenju změniś.
 Aby se pśizjawił, źi pšosym k {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Wódaj, twójo póžedanje na konto "$1" jo se wótpokazało na {{GRAMMAR:lokatiw|{{SITENAME}}}}.
+
+Za to su někotare pśicyny móžno.
+Snaź njejsy pšawje wupołnił formular, njejsy doźaržał pominanu dłujkosć we wótegronach abo howac pśekśiwił zasady wužywarskich konto.
+Snaź su kontaktowe lisćiny na sedle, kótarež móžoš wužywaś, jolic coš wěcej wo zasadach wužywarskich konto wěźeś.',
+	'confirmaccount-email-body4' => 'Wódaj, twójo póžedanje na konto "$1" jo se wótpokazało na {{GRAMMAR:lokatiw|{{SITENAME}}}}.
+
+$2
+
+Snaź su kontaktowe lisćiny na sedle, kótarež móžoš wužywaś, jolic coš wěcej wó zasadach wužywarskich kontow wěźeś.',
+	'confirmaccount-email-body5' => 'Pjerwjej až twójo póžedanje na konto "$1" dajo se na {{GRAMMAR:lokatiw|{{SITENAME}}}} akceptěrowaś, musyš nejpjerwjej někotare pśidatne informacije pódaś.
+
+$2
+
+Snaź su kontaktowe lisćiny na sedle, kótarež móžoš wužywaś, jolic coš wěcej wó zasadach wužywarskich kontow wěźeś.',
 	'usercredentials' => 'Wósobinske pódaśa wužywarja',
 	'usercredentials-leg' => 'Pytanje jo wósobinske pódaśa wužywarja wobkšuśiło',
 	'usercredentials-user' => 'Wužywarske mě:',
