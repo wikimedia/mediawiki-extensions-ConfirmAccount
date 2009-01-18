@@ -1075,9 +1075,12 @@ $messages['bs'] = array(
 );
 
 /** Catalan (Català)
+ * @author Loupeter
  * @author SMP
  */
 $messages['ca'] = array(
+	'requestaccount-level-0' => 'autor',
+	'confirmaccount-pos-0' => 'autor',
 	'confirmaccount-noreason' => '(cap)',
 );
 

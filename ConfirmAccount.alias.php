@@ -45,6 +45,7 @@ $aliases['bs'] = array(
 $aliases['de'] = array(
 	'RequestAccount' => array( 'Benutzerkonto beantragen' ),
 	'ConfirmAccounts' => array( 'Benutzerkonto bestätigen' ),
+	'UserCredentials' => array( 'Benutzerangaben' ),
 );
 
 /** Finnish (Suomi) */
@@ -61,6 +62,7 @@ $aliases['fr'] = array(
 
 /** Galician (Galego) */
 $aliases['gl'] = array(
+	'RequestAccount' => array( 'Solicitar unha conta' ),
 	'ConfirmAccounts' => array( 'Confirmar a conta' ),
 );
 
@@ -102,6 +104,13 @@ $aliases['hu'] = array(
 	'RequestAccount' => array( 'Felhasználói fiók igénylése' ),
 	'ConfirmAccounts' => array( 'Felhasználói fiók megerősítése' ),
 	'UserCredentials' => array( 'Felhasználói ajánlólevél' ),
+);
+
+/** Japanese (日本語) */
+$aliases['ja'] = array(
+	'RequestAccount' => array( 'アカウント申請', 'アカウント登録申請' ),
+	'ConfirmAccounts' => array( 'アカウントの承認', 'アカウント申請の承認', 'アカウント登録申請の承認' ),
+	'UserCredentials' => array( '利用者信頼情報' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
@@ -175,6 +184,13 @@ $aliases['pt'] = array(
 $aliases['pt-br'] = array(
 	'ConfirmAccounts' => array( 'Confirmar conta' ),
 	'UserCredentials' => array( 'Credenciais de usuário' ),
+);
+
+/** Sanskrit (संस्कृत) */
+$aliases['sa'] = array(
+	'RequestAccount' => array( 'उपयोजकसंज्ञाविनन्ती' ),
+	'ConfirmAccounts' => array( 'उपयोजकसंज्ञापुष्टिकरोति' ),
+	'UserCredentials' => array( 'उपयोजकविश्वासपत्त्र' ),
 );
 
 /** Swedish (Svenska) */
