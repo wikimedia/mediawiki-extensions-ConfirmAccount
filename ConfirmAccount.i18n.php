@@ -1501,11 +1501,27 @@ Njamóžeš dalšne póžedanja stajiś.',
 	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|pśez e-mail wobkšuśone póžedanje na konto jo njedocynjone|pśez e-mail wobkšuśonej póžedani na konśe stej njedocynjonej|pśez e-mail wobkšuśone póžedanja na konta su njedocynjone|pśez e-mail wobkšuśonych póžedanjow na konta jo njedocynjone}}",
 	'confirmaccounts' => 'Póžedanja na konta wobkšuśiś',
 	'confirmedit-desc' => 'Dawa běrokratam móžnosć póžedanja na konta wobkšuśiś',
+	'confirmaccount-maintext' => "'''Toś ten bok wužywa se, aby se wobkšuśili njedocynjone póžedanja na konta za ''{{GRAMMAR:akuzatiw|{{SITENAME}}}}'''''.
+
+Kuždy cakański rěd póžedanjow na konta wobstoj z tśich cakańskich pódrědow.
+Jaden za njedocynjone póžedanje, jaden za te, kótarež su se zaźaržali wót drugich administratorow bźez dalšnych informacijow a jaden za njedawno wótpokazane póžedanja.
+
+Gaž wótegranjaś na póžedanje, pśeglědaj jo kradosćiwje a, jolic trěbne, wobkšuś informacije, kótarež wopśimujo.
+Twóje akcije budu se priwatnje protokolěrowaś.
+Wót tebje se teke wótcakujo, až pśeglědujoš aktiwnosć, kótaraž how se wótměwa, mimo togo, kótarež sam cyniš.",
 	'confirmaccount-list' => 'Dołojce jo lisćina póžedanjow na konto, kótarež cakaja na schwalenje.
 Gaž póžedanje jo pak schwalone pak wótpokazane,  buźo se z toś teje lisćiny wótwónoźowaś.',
 	'confirmaccount-list2' => 'Dołojce jo lisćina njedawno wótpokazanych póžedanjow na konta, kótarež se awtomatiski lašuju, gaž su někotare dny stare.
 Jo hyšći móžno, aby se wone pśetwórili do schwalonych kontow, ale ty měł se nejpjerwjej z njewótpokazujucym administratorom do zwiska stajiś, pjerwjej až to cyniš.',
 	'confirmaccount-list3' => 'Dołojce jo lisćina pśepadnjonych póžedanja na konta, kótarež se awtomatiski lašuju, gaž su někotare dny stare. Daju se hyšći do schwalonych kontow pśetwóriś.',
+	'confirmaccount-text' => "To jo wisece póžedanje na wužywarske konto na '''{{GRAMMAR:lokatiw|{{SITENAME}}}}'''.
+
+Pśeglědaj pšosym slědujuce informacije kšadosćiwje.
+Jolic pśizwólujoš tos to póžedanje, wuž padajucy menij, aby nastajił kontowy status wužywarja.
+Změny pśewjeźone na biografiji njebudu wobwliwowaś wobstawne składowanje podaśow. Źiwaj na to, až móžoš konto pód drugim wužywarskim mjenim załožyś.
+Wuž to jano, aby se wobinuł kolizije z drugimi mjenjami.
+
+Jolic jadnorje wóstajijoš toś ten bok bźez wobkšuśenja abo wótpokazanja toś togo póžedanja, wóstajijo docynjone.",
 	'confirmaccount-none-o' => 'Tuchylu njejsu njedocynjone póžedanja na konta w toś tej lisćinje.',
 	'confirmaccount-none-h' => 'Tuchylu njejsu zaźaržane póžedanja na konta w tos´tej lisćinje.',
 	'confirmaccount-none-r' => 'Njejsu tuchylu njedawno wótpokazane póžedanja na konta w toś tej lisćinje.',
