@@ -121,8 +121,9 @@ class RequestAccountPage extends SpecialPage {
 			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
 			$form .= implode( "\n", $options );
 			$form .= Xml::closeElement('select')."\n";
+			$form .= '</td></tr>';
 		}
-		$form .= '</td></tr></table></fieldset>';
+		$form .= '</table></fieldset>';
 		
 		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
 			$form .= '<fieldset>';
@@ -147,7 +148,6 @@ class RequestAccountPage extends SpecialPage {
 					} else {
 						$pg = '';
 					}
-					
 					$form .= "<td>".Xml::checkLabel( $set[0], $formName, $formName, $this->mAreas[$formName] > 0 )." {$pg}</td>\n";
 				}
 			}
@@ -187,6 +187,13 @@ class RequestAccountPage extends SpecialPage {
 				"</textarea></p>\n";
 			$form .= '</fieldset>';
 		}
+		if( $wgAccountRequestToS ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('requestaccount-leg-tos') . '</legend>';
+			$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
+				' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
+			$form .= '</fieldset>';
+		}
 		# FIXME: do this better...
 		global $wgConfirmAccountCaptchas, $wgCaptchaClass, $wgCaptchaTriggers;
 		if( $wgConfirmAccountCaptchas && isset($wgCaptchaClass) && $wgCaptchaTriggers['createaccount'] ) {
@@ -201,13 +208,6 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '<fieldset>';
 			$form .= wfMsgExt('captcha-createaccount','parse');
 			$form .= $captcha->getForm();
-			$form .= '</fieldset>';
-		}
-		if( $wgAccountRequestToS ) {
-			$form .= '<fieldset>';
-			$form .= '<legend>' . wfMsgHtml('requestaccount-leg-tos') . '</legend>';
-			$form .= "<p>".Xml::check( 'wpToS', $this->mToS, array('id' => 'wpToS') ).
-				' <label for="wpToS">'.wfMsgExt( 'requestaccount-tos', array('parseinline') )."</label></p>\n";
 			$form .= '</fieldset>';
 		}
 		$form .= Xml::hidden( 'title', $titleObj->getPrefixedUrl() )."\n";
@@ -251,7 +251,6 @@ class RequestAccountPage extends SpecialPage {
 		# No request spamming...
 		if( $wgAccountRequestThrottle && ( !method_exists($wgUser,'isPingLimitable') || $wgUser->isPingLimitable() ) ) {
 			global $wgMemc;
-			
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			$value = $wgMemc->get( $key );
 			if( $value > $wgAccountRequestThrottle ) {
