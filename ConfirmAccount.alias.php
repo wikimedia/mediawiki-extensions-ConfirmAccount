@@ -193,6 +193,12 @@ $aliases['sa'] = array(
 	'UserCredentials' => array( 'उपयोजकविश्वासपत्त्र' ),
 );
 
+/** Albanian (Shqip) */
+$aliases['sq'] = array(
+	'RequestAccount' => array( 'KërkoLlogari' ),
+	'ConfirmAccounts' => array( 'KonfirmoLlogaritë' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'ConfirmAccounts' => array( 'Bekräfta konto' ),

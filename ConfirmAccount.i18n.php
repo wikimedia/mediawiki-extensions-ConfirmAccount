@@ -1495,7 +1495,7 @@ Toś ten wobkšuśeński kod pśepadnjo $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} póžedanje na konto',
 	'requestaccount-email-body-admin' => '"$1" jo stajił pózedanje na konto a caka na wobkšuśenje.
 E-mailowa adresa jo se wobkšuśiła. Móžoš póžedanje how wobkšuśiś: "$2".',
-	'acct_request_throttle_hit' => 'Wódaj, sy južo pominał {{PLURAL:$1|jadne konto|$1 konśe|$1 konta|$1 kontow}}.
+	'acct_request_throttle_hit' => 'Wódaj, sy južo pominał {{PLURAL:$1|jadno konto|$1 konśe|$1 konta|$1 kontow}}.
 Njamóžeš dalšne póžedanja stajiś.',
 	'requestaccount-loginnotice' => "Aby dostał wužywarske konto, musyš '''[[Special:RequestAccount|póžedanje na nje stajiś]]'''.",
 	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|pśez e-mail wobkšuśone póžedanje na konto jo njedocynjone|pśez e-mail wobkšuśonej póžedani na konśe stej njedocynjonej|pśez e-mail wobkšuśone póžedanja na konta su njedocynjone|pśez e-mail wobkšuśonych póžedanjow na konta jo njedocynjone}}",
@@ -4965,7 +4965,7 @@ Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Spec
 	'requestaccount-leg-other' => 'Overige informatie',
 	'requestaccount-leg-tos' => 'Gebruiksvoorwaarden',
 	'requestaccount-acc-text' => 'U ontvangt een e-mailbevestiging als uw verzoek is ontvangen.
-Reageer daar op door te klikken op de bevestigingslink die in de e-mail staat.
+Reageer daar op door te klikken op de verwijzing die in de e-mail staat.
 U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
 	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee u ervaring hebt of waarvan u het meeste werk wil verrichten.',
 	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
@@ -5000,11 +5000,11 @@ De naam die ik heb opgegeven onder "Uw naam" is inderdaad mijn eigen echte naam.
 	'requestaccount-email-body' => 'Iemand, waarschijnlijk u, heeft vanaf  IP-adres $1 op {{SITENAME}} een verzoek gedaan
 voor het aanmaken van gebruiker "$2" met dit e-mailadres.
 
-Open de onderstaande link in uw browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij u hoort:
+Open de onderstaande verwijzing in uw browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij u hoort:
 
 $3
 
-Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de link dan *niet*. 
+Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de verwijzing dan *niet*. 
 Deze bevestigingse-mail verloopt op $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} gebruikersverzoeken',
 	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
