@@ -829,6 +829,8 @@ $messages['bcl'] = array(
 $messages['be-tarask'] = array(
 	'requestaccount' => 'Запыт на стварэньне рахунку',
 	'requestaccount-level-0' => 'аўтар',
+	'confirmaccount-name' => 'Імя ўдзельніка',
+	'usercredentials-user' => 'Імя ўдзельніка:',
 );
 
 /** Bulgarian (Български)
