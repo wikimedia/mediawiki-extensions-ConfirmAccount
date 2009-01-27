@@ -828,9 +828,16 @@ $messages['bcl'] = array(
  */
 $messages['be-tarask'] = array(
 	'requestaccount' => 'Запыт на стварэньне рахунку',
+	'requestaccount-leg-person' => 'Асабістыя зьвесткі',
+	'requestaccount-leg-other' => 'Іншая інфармацыя',
 	'requestaccount-level-0' => 'аўтар',
+	'confirmaccount-leg-person' => 'Асабістыя зьвесткі',
+	'confirmaccount-leg-other' => 'Іншая інфармацыя',
 	'confirmaccount-name' => 'Імя ўдзельніка',
+	'confirmaccount-email' => 'Адрас электроннай пошты:',
 	'usercredentials-user' => 'Імя ўдзельніка:',
+	'usercredentials-leg-person' => 'Асабістыя зьвесткі',
+	'usercredentials-leg-other' => 'Іншая інфармацыя',
 );
 
 /** Bulgarian (Български)
