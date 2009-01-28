@@ -835,6 +835,7 @@ $messages['be-tarask'] = array(
 	'confirmaccount-leg-other' => 'Іншая інфармацыя',
 	'confirmaccount-name' => 'Імя ўдзельніка',
 	'confirmaccount-email' => 'Адрас электроннай пошты:',
+	'confirmaccount-submit' => 'Пацьвердзіць',
 	'usercredentials-user' => 'Імя ўдзельніка:',
 	'usercredentials-leg-person' => 'Асабістыя зьвесткі',
 	'usercredentials-leg-other' => 'Іншая інфармацыя',
@@ -5908,7 +5909,7 @@ By się zalogować przejdź do {{fullurl:Special:UserLogin}}.',
 Możliwe przyczyny odrzucenia wniosku to:
 nie wypełniłeś prawidłowo wszystkich pól wniosku, nie udzieliłeś odpowiednio obszernej odpowiedzi, lub w inny sposób nie wypełniłeś wniosku zgodne z przyjętymi kryteriami.
 W serwisie na pewno odnajdziesz informacje, które pozwolą Ci dowiedzieć się więcej o zasadach zatwierdzania nowych kont użytkownika.',
-	'confirmaccount-email-body4' => 'Przepraszamy, Twoja prośba o konto "$1" została odrzucona na {{SITENAME}}.
+	'confirmaccount-email-body4' => 'Przepraszamy, Twoja prośba o konto „$1” została odrzucona na {{GRAMMAR:MS.lp|{{SITENAME}}}}.
 
 $2
 
