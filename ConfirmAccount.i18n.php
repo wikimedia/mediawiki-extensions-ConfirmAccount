@@ -4560,11 +4560,16 @@ Kuckt w.e.g. no op den Numm richteg geschriwwen ass.',
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Homo
  * @author Tomasdd
  */
 $messages['lt'] = array(
+	'requestaccount-leg-user' => 'Naudotojo paskyra',
+	'requestaccount-leg-person' => 'Asmeninė informacija',
+	'requestaccount-leg-other' => 'Kita informacija',
 	'confirmaccount-real-q' => 'Vardas',
 	'confirmaccount-real' => 'Vardas:',
+	'confirmaccount-ip' => 'IP adresas:',
 );
 
 /** Eastern Mari (Олык Марий)
@@ -4576,6 +4581,45 @@ $messages['mhr'] = array(
 	'confirmaccount-email' => 'Электрон почто:',
 	'usercredentials-user' => 'Пайдаланышын лӱмжӧ:',
 	'usercredentials-email' => 'Электрон почто:',
+);
+
+/** Macedonian (Македонски)
+ * @author Brest
+ */
+$messages['mk'] = array(
+	'requestaccount-leg-user' => 'Корисничка сметка',
+	'requestaccount-leg-areas' => 'Главно се интересира за',
+	'requestaccount-leg-person' => 'Персонални информации',
+	'requestaccount-leg-other' => 'Други информации',
+	'requestaccount-real' => 'Вистинско име:',
+	'requestaccount-same' => '(исто како вистинско име)',
+	'requestaccount-email' => 'Е-поштенска адреса:',
+	'requestaccount-reqtype' => 'Позиција:',
+	'requestaccount-level-0' => 'автор',
+	'requestaccount-level-1' => 'уредувач',
+	'requestaccount-bio' => 'Лична биографија:',
+	'requestaccount-attach' => 'Резиме или CV (не е задолжително):',
+	'requestaccount-notes' => 'Други забелешки:',
+	'requestaccount-urls' => 'Листа на веб сајтови, ако има (се пишуваат во посебен ред):',
+	'confirmaccount-real-q' => 'Име',
+	'confirmaccount-email-q' => 'Е-пошта',
+	'confirmaccount-bio-q' => 'Биографија',
+	'confirmaccount-showopen' => 'отворени барања',
+	'confirmaccount-showrej' => 'одбиени барања',
+	'confirmaccount-q-open' => 'отворени барања',
+	'confirmaccount-leg-person' => 'Персонални информации',
+	'confirmaccount-leg-other' => 'Други информации',
+	'confirmaccount-name' => 'Корисничко име',
+	'confirmaccount-real' => 'Име:',
+	'confirmaccount-email' => 'Е-пошта:',
+	'confirmaccount-reqtype' => 'Позиција:',
+	'confirmaccount-pos-0' => 'автор',
+	'confirmaccount-pos-1' => 'уредувач',
+	'confirmaccount-bio' => 'Биографија:',
+	'confirmaccount-attach' => 'Резиме/CV:',
+	'confirmaccount-notes' => 'Дополнителни белешки:',
+	'confirmaccount-urls' => 'Листа на веб места:',
+	'confirmaccount-none-p' => '(не е наведено)',
 );
 
 /** Malayalam (മലയാളം)
@@ -7611,6 +7655,211 @@ $3
 
 สำหรับเหตุผลทางความปลอดภัยคุณจะต้องเปลี่ยนรหัสผ่านของคุณหลังจากที่ล็อกอินครั้งแรก
 กรุณาไปที่ {{fullurl:Special:UserLogin}} เพื่อล็อกอิน',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'requestaccount' => 'Hilingin ang akawnt',
+	'requestaccount-text' => "'''Punuan at ipasa ang sumusunod na pormularyo upang humiling ng isang akawnt ng tagagamit'''.
+
+Tiyaking nabasa mo na muna ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Paglilingkod]] bago humiling ng isang kuwenta.
+
+Kapag napahintulutan na ang akawnt, padadalhan ka ng isang mensahe ng pagbibigay-alam sa pamamagitan ng isang e-liham at magagamit na ang kuwenta sa [[Special:UserLogin|paglagda]].",
+	'requestaccount-page' => '{{ns:project}}:Mga Patakaran ng Paglilingkod',
+	'requestaccount-dup' => "'''Paunawa: Nakalagda ka na at may isang ipinatalang akawnt.'''",
+	'requestaccount-leg-user' => 'Akawnt ng tagagamit',
+	'requestaccount-leg-areas' => 'Mga pangunahing bagay-bagay na kinawiwilihan',
+	'requestaccount-leg-person' => 'Kabatirang pansarili',
+	'requestaccount-leg-other' => 'Iba pang kabatiran',
+	'requestaccount-leg-tos' => 'Mga Patakaran ng Paglilingkod',
+	'requestaccount-acc-text' => 'Ang iyong adres ng e-liham ay padadalhan ng isang mensahe ng pagtitiyak kapag naipasa na ang kahilingang ito. Tumugon po lamang sa pamamagitan ng pagpindot sa kawing ng pagtitiyak na ibinigay ng e-liham. Gayundin, ipadadala rin sa pamamagitan ng isang e-liham ang iyong hudyat kapag nalikha na ang akawnt mo.',
+	'requestaccount-areas-text' => 'Piliin ang mga pook ng paksang nasa ibaba kung saan mayroon kang pormal na kadalubhasaan o nais na pag-ukulan ng karamihan sa mga gawain mo.',
+	'requestaccount-ext-text' => 'Pinananatiling pansarili ang sumusunod na kabatiran at gagamitin lamang para sa kahilingang ito. 
+Maaaring naisin mong magtala ng mga kabatirang pangpakikipag-ugnayang katulad ng bilang ng telepono upang makatulong sa pagtitiyak ng pagkakakilanlan.',
+	'requestaccount-bio-text' => 'Itatalaga ang talambuhay mo bilang likas na nakatakdang nilalaman para sa iyong pahina ng tagagamit.
+Subuking isama ang anumang mga katibayan ng katangian.
+Tiyaking maginhawa para sa iyo at hindi ka nagaalinglangang ilathala ng ganyang kabatiran.
+Maaari mong baguhin ang pangalan mo sa pamamagitan ng [[Special:Preferences|iyong mga kagustuhan]].',
+	'requestaccount-real' => 'Totoong pangalan:',
+	'requestaccount-same' => '(katulad ng totoong pangalan)',
+	'requestaccount-email' => 'Adres ng e-liham:',
+	'requestaccount-reqtype' => 'Katungkulan:',
+	'requestaccount-level-0' => 'may-akda',
+	'requestaccount-level-1' => 'patnugot',
+	'requestaccount-bio' => 'Pansariling talambuhay:',
+	'requestaccount-attach' => 'Buod ng mga karanasan sa hanapbuhay (maaaring wala nito):',
+	'requestaccount-notes' => 'Karagdagang mga tala:',
+	'requestaccount-urls' => 'Talaan ng mga websayt, kung mayroon (ihiwalay na may bagong mga guhit):',
+	'requestaccount-agree' => 'Dapat mong patunayan na tama ang tunay mong pangalan at pumapayag ka sa aming Mga Patakaran ng Paglilingkod.',
+	'requestaccount-inuse' => 'Ginagamit na ang pangalan ng tagagamit sa isang naghihintay na paghiling ng akawt.',
+	'requestaccount-tooshort' => 'Ang talambuhay mo ay dapat na may kahit na $1 mga salita ang haba.',
+	'requestaccount-emaildup' => 'Isang naghihintay na kahilingan ng akawnt ang gumagamit ng katulad na adres ng e-liham.',
+	'requestaccount-exts' => 'Hindi pinapayagan ang uri ng nakalakip na talaksan',
+	'requestaccount-resub' => 'Dapat na muling piliin ang iyong talaan ng karanasan sa hanapbuhay para sa mga kadahilanang pangkaligtasan.
+Iwanang walang laman ang hanay kung hindi mo na ninanais magsama ng isa.',
+	'requestaccount-tos' => 'Nabasa ko na at sumasang-ayong susundin ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Paglilingkod]] ng {{SITENAME}}.
+Sa katunayan, ang pangalang tinukoy ko sa ilalim ng "Totoong pangalan" ay ang talagang sarili kong totoong pangalan.',
+	'requestaccount-submit' => 'Hilingin ang akawnt',
+	'requestaccount-sent' => 'Matagumpay nang naipadala ang iyong paghiling ng akawnt at naghihintay na ngayon ng pagsusuri.',
+	'request-account-econf' => 'Natiyak na ang iyong adres ng e-liham at itatala bilang ganyan sa loob ng paghiling mo ng akawnt.',
+	'requestaccount-email-subj' => 'Pagtitiyak ng {{SITENAME}} sa adres ng e-liham',
+	'requestaccount-email-body' => 'May isa, marahil ikaw na nagmula sa adres ng IP na $1, ang humiling ng isang kuwentang "$2" na may ganitong adres ng e-liham sa {{SITENAME}}.
+
+Upang patotohanan na talagang ikaw ang may-ari ng akawnt na itong nasa {{SITENAME}}, buksan ang kawing na ito sa iyong pantingin-tingin (\'\'browser\'\'):
+
+$3
+
+Kapag nalikha na ang akawnt, sa iyo lamang ipapadala ang hudyat sa pamamagitan ng e-liham.
+Kung *hindi* ikaw ito, huwag sundan ang kawing.
+Mawawalan ng bisa ang kodigo ng pagpapatotoong ito sa $4.',
+	'requestaccount-email-subj-admin' => 'Paghiling ng akawnt sa {{SITENAME}}',
+	'requestaccount-email-body-admin' => 'Humiling si "$1" ng isang akawnt at naghihintay ng pagtitiyak.
+Natiyak na ang adres ng e-liham. Matitiyak mo ang kahilingan mula dito "$2".',
+	'acct_request_throttle_hit' => 'Paumanhin, nakahiling ka na ng {{PLURAL:$1|1 akawnt|$1 mga akawnt}}.',
+	'requestaccount-loginnotice' => "Upang makatanggap ng isang akawnt ng tagagamit, dapat kang '''[[Special:RequestAccount|humiling ng isa]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' naghihintay na bukas pang {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|mga paghiling ng akawnt]]}} na natiyak na ng e-liham",
+	'confirmaccounts' => 'Tiyakin ang mga paghiling ng akawnt',
+	'confirmedit-desc' => 'Nagbibigay sa mga burokrato ng kakayahang tiyakin ang mga paghiling ng akawnt',
+	'confirmaccount-maintext' => "'''Ginagamit ang pahinang ito upang tiyakin ang naghihintay na mga paghiling ng akawnt sa ''{{SITENAME}}'''''.
+
+Ang bawat isang pila ng kahilingan ng kuwenta ay binubuo ng tatlong kabahaging mga pila.
+Isa para sa bukas na paghiling, isa para sa mga ibininbin ng ibang mga tagapangasiwa habang naghihintay pa ng karagdagang kabatiran, at isang para sa mga kahilingang tinanggihan kamakailan lamang.
+
+Kapag tumutugon sa isang paghiling, suriin itong may pag-iingat at, kung kinakailangan, tiyakin ang kabatirang nakapaloob dito.
+
+Itatala bilang pribado ang iyong mga galaw.
+Inaasahan din na susuriin mo ang anumang kaganapang mangyayari rito bukod pa sa kung ano ang mga gagawin mo.",
+	'confirmaccount-list' => 'Nasa ibaba ang isang talaan ng mga paghiling ng akawnt na naghihintay ng pahintulot.
+Tatanggalin na mula sa talaang ito ang isang kahilingang pinayagan na o tinanggihan.',
+	'confirmaccount-list2' => 'Nasa ibaba ang isang talaan ng mga paghiling ng akawnt na tinanggihan kamakailan lamang, na maaaring kusang mabura kapag nagtagal na ng ilang mga araw.
+Maaari pa rin silang payagan upang maging mga akawnt, bagaman maaaring naisin mong sumangguni muna sa tumangging tagapangasiwa bago gawin iyan.',
+	'confirmaccount-list3' => 'Nasa iba ang isang talaan ng lipas nang mga paghiling ng akawnt na maaaring kusang mabura kapag nagtagal na ng ilang mga araw. Maaari pa rin silang mapayagan upang maging mga akawnt.',
+	'confirmaccount-text' => "Isa itong naghihintay na kahilingan para sa isang akawnt ng tagagamit sa '''{{SITENAME}}'''.  
+
+Maingat na suriin ang kabatirang nasa ibaba.
+Kung papahintulutan mo ang paghiling na ito, gamitin ang posisyon ng pambagsak-pababa upang maitakda ang kalagayan ng akawnt ng tagagamit.
+Ang mga pagbabagong ginawa sa talambuhay na nasa kahilingan ay hindi makakaapekto sa anumang pampamalagiang pagtatago ng katibayan ng katangian.
+Gamitin lamang ito upang maiwasan ang pakikipagbungguan sa iba pang mga pangalan.
+
+Kapag payak na hinayaan mo lamang ang pahinang ito na hindi tinitiyak o tinatanggihan ang kahilingang ito, mananatili itong naghihintay.",
+	'confirmaccount-none-o' => 'Kasalukuyang walang bukas na naghihintay na mga paghiling ng akawnt sa loob ng talaang ito.',
+	'confirmaccount-none-h' => 'Kasalukuyang walang bukas na nakabinbing naghihintay na mga paghiling ng akawnt sa loob ng talaang ito.',
+	'confirmaccount-none-r' => 'Kasalukuyang walang mga paghiling ng akawnt na tinanggihan kamakailan lamang sa loob ng talaang ito.',
+	'confirmaccount-none-e' => 'Kasalukuyang walang lipas na mga paghiling ng akawnt sa loob ng talaang ito.',
+	'confirmaccount-real-q' => 'Pangalan',
+	'confirmaccount-email-q' => 'E-liham',
+	'confirmaccount-bio-q' => 'Talambuhay',
+	'confirmaccount-showopen' => 'bukas na mga paghiling',
+	'confirmaccount-showrej' => 'tinanggihang mga paghiling',
+	'confirmaccount-showheld' => 'nakabinbing mga paghiling',
+	'confirmaccount-showexp' => 'lipas na mga paghiling',
+	'confirmaccount-review' => 'Suriin',
+	'confirmaccount-types' => 'Pumili ng isang nakapilang pagpapatotoo ng akawnt mula sa ibaba:',
+	'confirmaccount-all' => '(ipakita ang lahat ng mga nakapila)',
+	'confirmaccount-type' => 'Pila:',
+	'confirmaccount-type-0' => 'inaasahang magiging mga may-akda',
+	'confirmaccount-type-1' => 'inaasahang magiging mga patnugot',
+	'confirmaccount-q-open' => 'bukas na mga paghiling',
+	'confirmaccount-q-held' => 'nakabinbing mga paghiling',
+	'confirmaccount-q-rej' => 'kamakailang tinatanggihang mga paghiling',
+	'confirmaccount-q-stale' => 'lipas na mga paghiling',
+	'confirmaccount-badid' => 'Walang nakabinbing kahilingan na umuugma sa ibinigay na ID.
+Maaaring naisagawa na ito.',
+	'confirmaccount-leg-user' => 'Akawnt ng tagagamit',
+	'confirmaccount-leg-areas' => 'Mga pangunahing bagay-bagay na kinawiwilihan',
+	'confirmaccount-leg-person' => 'Pansariling kabatiran',
+	'confirmaccount-leg-other' => 'Iba pang kabatiran',
+	'confirmaccount-name' => 'Pangalan ng tagagamit',
+	'confirmaccount-real' => 'Pangalan:',
+	'confirmaccount-email' => 'E-liham:',
+	'confirmaccount-reqtype' => 'Katungkulan:',
+	'confirmaccount-pos-0' => 'may-akda',
+	'confirmaccount-pos-1' => 'patnugot',
+	'confirmaccount-bio' => 'Talambuhay:',
+	'confirmaccount-attach' => 'Talaan ng karanasan sa hanapbuhay',
+	'confirmaccount-notes' => 'Karagdagang mga tala:',
+	'confirmaccount-urls' => 'Talaan ng mga websayt:',
+	'confirmaccount-none-p' => '(hindi ibinigay)',
+	'confirmaccount-confirm' => 'Gamitin ang mga pagpipiliang nasa ibaba upang tanggapin, tanggihan, o ibinbin ang kahilingang ito:',
+	'confirmaccount-econf' => '(natiyak na)',
+	'confirmaccount-reject' => '(tinanggihan ni [[User:$1|$1]] noong $2)',
+	'confirmaccount-rational' => 'Batayang katwiran na ibinigay sa humihiling:',
+	'confirmaccount-noreason' => '(wala)',
+	'confirmaccount-autorej' => '(kusang iwinaksi na ang kahilingang ito dahil sa kawalan ng galaw)',
+	'confirmaccount-held' => '(tinatakang "nakaantabay" ni [[User:$1|$1]] noong $2)',
+	'confirmaccount-create' => 'Tanggapin (likhain ang akawnt)',
+	'confirmaccount-deny' => 'Tanggihan (alisin sa talaan)',
+	'confirmaccount-hold' => 'Ibinbin',
+	'confirmaccount-spam' => 'Manlulusob (huwag ipadala ang e-liham)',
+	'confirmaccount-reason' => 'Puna (isasama sa e-liham):',
+	'confirmaccount-ip' => 'Adres ng IP:',
+	'confirmaccount-submit' => 'Tiyakin',
+	'confirmaccount-needreason' => 'Dapat kang magbigay ng isang dahilan sa loob ng kahon ng kumentong nasa ibaba.',
+	'confirmaccount-canthold' => 'Ang kahilingang ito ay maaaring nakabinbin pa o nabura na.',
+	'confirmaccount-acc' => 'Matagumpay na natiyak ang kahilingan;
+nalikha na ang bagong akawnt ng tagagamit [[User:$1|$1]].',
+	'confirmaccount-rej' => 'Matagumpay na natanggihan ang paghiling ng akawnt.',
+	'confirmaccount-viewing' => '(kasalukuyang tinitingnan ni [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Nililikha ang pahina ng tagagamit na may talambuhay ng bagong tagagamit.',
+	'confirmaccount-welc' => "'''Maligayang pagdating sa ''{{SITENAME}}''!'''
+Umaasa kaming mag-aambag ka ng marami at kapakipakinabang.
+Marahil ay nanaisin mong basahin ang [[{{MediaWiki:Helppage}}|mga pahinang pantulong]].
+Muli, maligayang pagdating at nawa'y malibang ka!",
+	'confirmaccount-wsum' => 'Maligayang pagdating!',
+	'confirmaccount-email-subj' => 'Paghiling ng akawnt sa {{SITENAME}}',
+	'confirmaccount-email-body' => 'Ang kahilingan mong magkaroon ng isang akawnt ay pinayagan na sa {{SITENAME}}.
+
+Pangalan ng akawnt: $1
+
+Hudyat: $2
+
+Dahil sa mga kadahilanang pangkaligtasan, kailangan mong baguhin ang iyong hudyat sa una mong paglagda papasok.
+Upang makalagda, pakipuntahan ang {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Ang kahilingan mong magkaroon ng isang akawnt ay pinayagan na sa {{SITENAME}}.
+
+Pangalan ng akawnt: $1
+
+Hudyat: $2
+
+$3
+
+Dahil sa mga kadahilanang pangkaligtasan, kailangan mong baguhin ang iyong hudyat sa una mong paglagda papasok.
+Upang makalagda, pakipuntahan ang {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Paumanhin, tinanggihan ang kahilingan mong magkaroon ng isang akawnt na "$1" sa {{SITENAME}}.
+
+May ilang mga paraan kung paano ito nangyari.
+Maaaring hindi mo napunuan ng tama ang pormularyo, hindi ka nagbigay ng sapat na haba ng iyong mga tugon, o nabigo kaya sa pag-abot sa ilang mga pamantayan ng patakaran.
+Maaaring may mga talaan ng kabatiran ng pakikipag-ugnayang nasa sayt na magagamit mo kung nais mong makaalam ng mas marami pa hinggil sa patakaran ng akawnt ng tagagamit.',
+	'confirmaccount-email-body4' => 'Paumanhin, tinanggihan ang kahilingan mong magkaroon ng isang akawnt na "$1" sa {{SITENAME}}.
+
+$2
+
+Maaaring may mga talaan ng kabatiran ng pakikipag-ugnayang nasa sayt na magagamit mo kung nais mong makaalam ng mas marami pa hinggil sa patakaran ng akawnt ng tagagamit.',
+	'confirmaccount-email-body5' => 'Bago tanggapin ang kahilingan mong magkaroon ng isang akawnt na "$1" sa {{SITENAME}}, dapat kang magbigay muna ng ilan pang karagdagang kabatiran.
+
+$2
+
+Maaaring may mga talaan ng kabatiran ng pakikipag-ugnayang nasa sayt na magagamit mo kung nais mong makaalam ng mas marami pa hinggil sa patakaran ng akawnt ng tagagamit.',
+	'usercredentials' => 'Mga katibayan ng katangian ng tagagamit',
+	'usercredentials-leg' => 'Natiyak ng paghahanap ang mga katibayan ng katangian para sa isang tagagamit',
+	'usercredentials-user' => 'Pangalan ng tagagamit:',
+	'usercredentials-text' => 'Nasa ibaba ang napatotohanang mga katibayan ng katangian ng napiling akawnt ng tagagamit.',
+	'usercredentials-leg-user' => 'Akawnt ng tagagamit',
+	'usercredentials-leg-areas' => 'Mga pangunahing bagay-bagay na kinawiwilihan',
+	'usercredentials-leg-person' => 'Pansariling kabatiran',
+	'usercredentials-leg-other' => 'Iba pang kabatiran',
+	'usercredentials-email' => 'E-liham:',
+	'usercredentials-real' => 'Totoong pangalan:',
+	'usercredentials-bio' => 'Talambuhay:',
+	'usercredentials-attach' => 'Talaan ng karanasan sa hanapbuhay:',
+	'usercredentials-notes' => 'Karagdagang mga tala:',
+	'usercredentials-urls' => 'Talaan ng mga websayt:',
+	'usercredentials-ip' => 'Orihinal na adres ng IP:',
+	'usercredentials-member' => 'Mga karapatan:',
+	'usercredentials-badid' => 'Walang natagpuang mga katibaya ng katangian para sa tagagamit na ito.
+Suriin kung ibinaybay ng tama ang pangalan.',
 );
 
 /** Turkish (Türkçe)
