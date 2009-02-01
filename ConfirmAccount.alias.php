@@ -127,6 +127,7 @@ $aliases['ko'] = array(
 $aliases['lb'] = array(
 	'RequestAccount' => array( 'Benotzerkont ufroen' ),
 	'ConfirmAccounts' => array( 'Benotzerkont confirméieren' ),
+	'UserCredentials' => array( 'Benotzerinformatiounen' ),
 );
 
 /** Macedonian (Македонски) */
