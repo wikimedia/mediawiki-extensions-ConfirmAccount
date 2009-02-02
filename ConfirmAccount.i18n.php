@@ -1806,19 +1806,40 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
 );
 
 /** Spanish (Español)
+ * @author BicScope
  * @author Imre
  * @author Lin linao
  * @author Sanbec
  */
 $messages['es'] = array(
+	'requestaccount' => 'Cuenta solicitada',
 	'requestaccount-text' => "'''Completa y envía el siguiente formulario para solicitar una cuenta de usuario'''.  
 
 Antes de solicitar una cuenta, asegúrate de haber leído los [[{{MediaWiki:Requestaccount-page}}|términos del servicio]].
 
 Una vez que la cuenta sea aprobada, se te enviará una notificación a través de correo electrónico y la cuenta se podrá usar [[Special:UserLogin|iniciando sesión]].",
+	'requestaccount-page' => '{{ns:project}}:Términos de Servicio',
+	'requestaccount-dup' => "'''Nota: Ya has iniciado sesión en una cuenta registrada.'''",
+	'requestaccount-leg-user' => 'Cuenta de usuario',
+	'requestaccount-leg-areas' => 'Áreas de interés principales',
+	'requestaccount-leg-person' => 'Información personal',
+	'requestaccount-leg-other' => 'Otra información',
+	'requestaccount-leg-tos' => 'Términos de Servicio',
+	'requestaccount-acc-text' => 'Te será enviada un mensaje de confirmación a tu dirección de e-m@il una vez que hayas hecho tu solicitud.
+Por favor responda dando clik en el enlace de confirmación que le fué enviado a su e-m@il.
+Tu contraseña será enviada cuando tu cuenta sea creada.',
+	'requestaccount-areas-text' => 'Seleccione las áreas en las que tiene experiencia formal o que le interesa colaborar.',
+	'requestaccount-ext-text' => 'La información que proporcion{{PLURAL:$1|arás|aste}} es privada y será solo usada para ésta solicitud.',
 	'requestaccount-real' => 'Nombre real:',
+	'requestaccount-same' => '[Tu nombre real]',
 	'requestaccount-email' => 'Dirección de correo electrónico:',
+	'requestaccount-reqtype' => 'Posición:',
 	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'editor',
+	'requestaccount-bio' => 'Biografía personal:',
+	'requestaccount-attach' => 'Campo (Opcional):',
+	'requestaccount-notes' => 'Notas adicionales:',
+	'requestaccount-urls' => 'Lista de sitios web [sepáralos por renglones]',
 	'confirmaccount-real-q' => 'Nombre',
 	'confirmaccount-email-q' => 'Correo electrónico',
 	'confirmaccount-name' => 'Nombre de usuario',

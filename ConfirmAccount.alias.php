@@ -48,6 +48,13 @@ $aliases['de'] = array(
 	'UserCredentials' => array( 'Benutzerangaben' ),
 );
 
+/** Lower Sorbian (Dolnoserbski) */
+$aliases['dsb'] = array(
+	'RequestAccount' => array( 'Póžedanje na konto' ),
+	'ConfirmAccounts' => array( 'Konto wobkšuśiś' ),
+	'UserCredentials' => array( 'Wužywarske pódaśa' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'RequestAccount' => array( 'Pyydä käyttäjätunnusta' ),
@@ -92,6 +99,7 @@ $aliases['hr'] = array(
 $aliases['hsb'] = array(
 	'RequestAccount' => array( 'Konto požadać' ),
 	'ConfirmAccounts' => array( 'Konto potwjerdźić' ),
+	'UserCredentials' => array( 'Wužywarske podaća' ),
 );
 
 /** Haitian (Kreyòl ayisyen) */
