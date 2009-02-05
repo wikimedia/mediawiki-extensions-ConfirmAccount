@@ -2199,6 +2199,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
 );
 
 /** French (Français)
+ * @author Crochet.david
  * @author Dereckson
  * @author Grondin
  * @author Louperivois
@@ -2249,11 +2250,12 @@ Une fois que le compte est accepté, vous recevrez un courrier électronique vou
 	'requestaccount-email-subj' => '{{SITENAME}} confirmation d’adresse courriel.',
 	'requestaccount-email-body' => 'Quelqu’un, vous probablement, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur « $2 » avec cette adresse courriel sur {{SITENAME}}.
 
-Pour confirmer que ce compte vous appartient réelement sur {{SITENAME}}, vous êtes prié d’ouvrir ce lien dans votre navigateur Web :
+Pour confirmer que ce compte vous appartient réellement sur {{SITENAME}}, vous êtes prié{{GENDER:||e|(e)}} d’ouvrir ce lien dans votre navigateur Web :
 
 $3
 
-Votre mot de passe vous sera envoyé uniquement si votre compte est créé. Si tel n’était pas le cas, n’utilisez pas ce lien.
+Votre mot de passe vous sera envoyé uniquement si votre compte est créé.
+Si tel n’était pas le cas, n’utilisez pas ce lien.
 Ce code de confirmation expire le $4.',
 	'requestaccount-email-subj-admin' => 'Demande de compte sur {{SITENAME}}',
 	'requestaccount-email-body-admin' => "« $1 » a demandé un compte et se trouve en attente de confirmation.
