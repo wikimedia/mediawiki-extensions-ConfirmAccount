@@ -4509,6 +4509,7 @@ Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir k
 	'requestaccount-leg-person' => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other' => 'Aner Informatiounen',
 	'requestaccount-leg-tos' => 'Conditioune vun der Notzung',
+	'requestaccount-areas-text' => 'Wielt déi Sujeten aus an denen Dir formaalt Fachwëssen huet oder an deem Dir am léifste schaffe wëllt.',
 	'requestaccount-bio-text' => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert.
 Versicht all néideg Recommandatiounnen unzeginn.
 Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt.
@@ -5671,7 +5672,7 @@ $messages['oc'] = array(
 	'requestaccount-leg-tos' => 'Tèrmes del servici',
 	'requestaccount-acc-text' => 'Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. Dins lo corrièr recebut, clicatz sul ligam correspondent a la confirmacion de vòstra demanda. E mai, senhal serà mandat per corrièr electronic quand vòstre compte serà creat.',
 	'requestaccount-areas-text' => 'Causissètz los domenis dins los quals avètz una expertisa demostrada, o dins los quals sètz mai portat a contribuir.',
-	'requestaccount-ext-text' => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telèfon per obténer una assistància per confirmar vòstra identitat.',
+	'requestaccount-ext-text' => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telefòn per obténer una assisténcia per confirmar vòstra identitat.',
 	'requestaccount-bio-text' => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences|vòstras preferéncias]].",
 	'requestaccount-real' => 'Nom vertadièr :',
 	'requestaccount-same' => '(nom figurant dins vòstre estat civil)',
