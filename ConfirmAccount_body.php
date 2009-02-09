@@ -15,9 +15,9 @@ class ConfirmAccountsPage extends SpecialPage
         SpecialPage::SpecialPage('ConfirmAccounts','confirmaccount');
     }
 
-    function execute( $par ) {
-        global $wgRequest, $wgOut, $wgUser, $wgAccountRequestTypes;
-        
+	function execute( $par ) {
+		global $wgRequest, $wgOut, $wgUser, $wgAccountRequestTypes, $wgLang;
+
 		if( !$wgUser->isAllowed( 'confirmaccount' ) ) {
 			$wgOut->permissionRequired( 'confirmaccount' );
 			return;
@@ -91,22 +91,40 @@ class ConfirmAccountsPage extends SpecialPage
 			$listLink = wfMsgHtml( 'confirmaccount-showopen' );
 		}
 		if( $this->acrID || !$this->showHeld ) {
-			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, 
-				wfMsgHtml( 'confirmaccount-showheld' ), wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) );
+			$listLink = $wgLang->pipeList( array(
+				$listLink,
+				$this->skin->makeKnownLinkObj( $titleObj, 
+					wfMsgHtml( 'confirmaccount-showheld' ), wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) )
+			) );
 		} else {
-			$listLink .= ' | '.wfMsgHtml( 'confirmaccount-showheld' );
+			$listLink = $wgLang->pipeList( array(
+				$listLink,
+				wfMsgHtml( 'confirmaccount-showheld' )
+			) );
 		}
 		if( $this->acrID || !$this->showRejects ) {
-			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showrej' ),
-				wfArrayToCGI( array( 'wpShowRejects' => 1 ) ) );
+			$listLink = $wgLang->pipeList( array(
+				$listLink,
+				$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showrej' ),
+					wfArrayToCGI( array( 'wpShowRejects' => 1 ) ) )
+			) );
 		} else {
-			$listLink .= ' | '.wfMsgHtml( 'confirmaccount-showrej' );
+			$listLink = $wgLang->pipeList( array(
+				$listLink,
+				wfMsgHtml( 'confirmaccount-showrej' )
+			) );
 		}
 		if( $this->acrID || !$this->showStale ) {
-			$listLink .= ' | '.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showexp' ),
-				wfArrayToCGI( array( 'wpShowStale' => 1 ) ) );
+			$listLink = $wgLang->pipeList( array(
+				$listLink,
+				$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showexp' ),
+					wfArrayToCGI( array( 'wpShowStale' => 1 ) ) )
+			) );
 		} else {
-			$listLink .= ' | '.wfMsgHtml( 'confirmaccount-showexp' );
+			$listLink = $wgLang->pipeList( array(
+				$listLink,
+				wfMsgHtml( 'confirmaccount-showexp' )
+			) );
 		}
 		
 		# Say what queue we are in...
@@ -133,7 +151,7 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 	
 	function showQueues() {
-		global $wgOut, $wgAccountRequestTypes;
+		global $wgOut, $wgAccountRequestTypes, $wgLang;
 		
 		$wgOut->addWikiText( wfMsg('confirmaccount-maintext') );
 		
@@ -169,7 +187,9 @@ class ConfirmAccountsPage extends SpecialPage
 				__METHOD__ );
 			$rejects .= " [$count]";
 				
-			$wgOut->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> ($open | $held | $rejects | $stale)</li>" );
+			$wgOut->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> ($open" .
+				$wgLang->pipeList( array( $held, $rejects, $stale ) ) .
+				")</li>" );
 		}
 		$wgOut->addHTML( '</ul>' );
 	}
