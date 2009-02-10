@@ -1225,6 +1225,7 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Als-Holder
  * @author Leithian
  * @author MF-Warburg
  * @author Raimond Spekking
@@ -1294,7 +1295,7 @@ Dieser Bestätigungscode wird um $4 ungültig.',
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$2“.',
 	'acct_request_throttle_hit' => 'Du hast bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, du kannst momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
-	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge]]}} warten auf Bearbeitung.",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag wartet]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge warten]]}} auf Bearbeitung.",
 	'confirmaccounts' => 'Benutzerkonto-Anträge bestätigen',
 	'confirmedit-desc' => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
 	'confirmaccount-maintext' => "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}'' zu bearbeiten.'''
@@ -1423,7 +1424,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 	'usercredentials-user' => 'Benutzername:',
 	'usercredentials-text' => 'Es folgen die bestätigten Benutzer-Berechtigungsnachweise für das gewählte Benutzerkonto.',
 	'usercredentials-leg-user' => 'Benutzerkonto',
-	'usercredentials-leg-areas' => 'Haupt-Interessensgebietet',
+	'usercredentials-leg-areas' => 'Haupt-Interessensgebiet',
 	'usercredentials-leg-person' => 'Persönliche Informationen',
 	'usercredentials-leg-other' => 'Weitere Informationen',
 	'usercredentials-email' => 'E-Mail:',
@@ -1830,7 +1831,8 @@ Una vez que la cuenta sea aprobada, se te enviará una notificación a través d
 Por favor responda dando clik en el enlace de confirmación que le fué enviado a su e-m@il.
 Tu contraseña será enviada cuando tu cuenta sea creada.',
 	'requestaccount-areas-text' => 'Seleccione las áreas en las que tiene experiencia formal o que le interesa colaborar.',
-	'requestaccount-ext-text' => 'La información que proporcion{{PLURAL:$1|arás|aste}} es privada y será solo usada para ésta solicitud.',
+	'requestaccount-ext-text' => 'La siguiente información se mantiene privada y sólo será usada para esta solicitud.
+Usted puede desear enlistar contactos como un número telefónico para ayudar en la confirmación de la identidad.',
 	'requestaccount-real' => 'Nombre real:',
 	'requestaccount-same' => '[Tu nombre real]',
 	'requestaccount-email' => 'Dirección de correo electrónico:',
@@ -2710,6 +2712,206 @@ $messages['grc'] = array(
 	'usercredentials-real' => 'ἀληθὲς ὄνομα:',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'requestaccount' => 'E Aatrag stelle uf e Benutzerkonto',
+	'requestaccount-text' => "'''Fill des Formular uus un schick s ab go ne Aatrag stelle uf e Benutzerkonto'''.  
+
+Bitte liis zerscht d [[{{MediaWiki:Requestaccount-page}}|Nutzigbedingige]], voreb Du ne Aatrag stellsch uf e Benutzerkonto.
+
+Sobald s Konto bstätigt woren isch, chunnsch e Nochricht per E-Mail iber un chasch Di [[Special:UserLogin|aamälde]].",
+	'requestaccount-page' => '{{ns:project}}:Nutzigsbedingige',
+	'requestaccount-dup' => "'''Obacht: Du bisch scho mit eme regischtrierte Benutzerkonto aagmäldet.'''",
+	'requestaccount-leg-user' => 'Benutzerkonto',
+	'requestaccount-leg-areas' => 'Hauptinterässe',
+	'requestaccount-leg-person' => 'Persenligi Informatione',
+	'requestaccount-leg-other' => 'Meh Informatione',
+	'requestaccount-leg-tos' => 'Benutzigsbedingige',
+	'requestaccount-acc-text' => 'An Dyyni E-Mail-Adräss wird noch em Abschicke vu däm Formular e Bstätigungsmail gschickt.
+Bitte reagier druf, indäm Du uf s Bstätigungs-Gleich drucksch, wu s in däre Mail het.
+Sobald Dyy Konto aagleit woren isch, wird Dir Dyy Passwort per E-Mail zuegschickt.',
+	'requestaccount-areas-text' => 'Wehl d Themene uus, wu Du s meischt Fachwisse din hesch oder wu Du am meischte witt dra schaffe.',
+	'requestaccount-ext-text' => 'Die Informatione wäre vertraulig behandlet un uusschließlig fir dää Aatrag bruucht.
+Du chasch Kontakt-Aagabe mache, wie z B. e Telifonnummere, go d Bearbeitig vu Dyynem Aatrag z vereifache.',
+	'requestaccount-bio-text' => 'Dyy Biografii wird as initiale Inhalt vu Dyynere Benutzersyte gspycheret.
+Versuech alli netigen Empfählige z nänne, aber stell sicher, ass Du d Informationen au wirkli witt vereffentlige.
+Du chasch Dyy Namen in [[Special:Preferences|Dyynen Yystelligen]] ändere.',
+	'requestaccount-real' => 'Realname:',
+	'requestaccount-same' => '(wie dr Realname)',
+	'requestaccount-email' => 'E-Mail-Adräss:',
+	'requestaccount-reqtype' => 'Position:',
+	'requestaccount-level-0' => 'Autor',
+	'requestaccount-level-1' => 'Bearbeiter',
+	'requestaccount-bio' => 'Persenligi Biografii:',
+	'requestaccount-attach' => 'Läbenslauf (optional):',
+	'requestaccount-notes' => 'Zuesätzligi Aagabe:',
+	'requestaccount-urls' => 'Lischt vu Netzsyte (dur Zyylenumbrich trännt):',
+	'requestaccount-agree' => 'Du muesch bstätigen, ass Dyy Realname korräkt isch un Du d Benutzerbedingige akzeptiersch.',
+	'requestaccount-inuse' => 'Dr Benutzername wird scho in eme andere Benutzeraatrag bruucht.',
+	'requestaccount-tooshort' => 'Dyy Biografii sott zmindescht $1 Wort lang syy.',
+	'requestaccount-emaildup' => 'E wytere nonig erledigte Aatrag bruucht di nämlig E-Mail-Adräss.',
+	'requestaccount-exts' => 'Dr Dateityp vum Aahang isch nit erlaubt.',
+	'requestaccount-resub' => 'D Datei mit Dyynem Läbenslauf muess us Sicherheitsgrind nej uusgwehlt wäre.
+Loss s Fäld läär, wänn Du kei Läbenslauf meh witt aafiege.',
+	'requestaccount-tos' => 'Ich haa d [[{{MediaWiki:Requestaccount-page}}|Benutzigsbedingige]] vu {{SITENAME}} gläsen und akzeptier si.
+Ich bstätige, ass dr Name, wun i unter „Realname“ aagee haa, myy wirklige Namen isch.',
+	'requestaccount-submit' => 'Aatrag stelle uf e Benutzerkonto',
+	'requestaccount-sent' => 'Dyy Aatrag isch erfolgryych verschickt wore un muess jetz no iberprieft wäre.',
+	'request-account-econf' => 'Dyy E-Mail-Adräss isch bstätigt woren un wird jetz as sonigi in Dyynem Benutzerkonte-Aatrag gfiert.',
+	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adrässe-Priefig',
+	'requestaccount-email-body' => 'Eber mit dr IP Adräss $1, villicht Du, het bi {{SITENAME}} mit Dyynere E-Mail-Adräss e Aatrag uf s Benutzerkonto „$2“ gstellt.
+
+Go bstätigen, ass wirkli Du ne Aatrag uf des Konto bi {{SITENAME}} gstellt hesch, mach bitte in Dyynem Browser des Gleich uf:
+
+$3
+
+Wänn s Benutzerkonto aagleit woren isch, chunnsch no ne E-Mail mit em Passwort iber.
+
+Wänn Du *kei* Aatrag gstellt hesch uf s Benutzerkonto, mach des Gleich bitte nit uf!
+
+Dää Bstätigungscode isch ab em $4 nimmi giltig.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutzerkontenaatrag',
+	'requestaccount-email-body-admin' => '„$1“ het e Aatrag uf e Benutzerkonto gstellt un wartet uf e Bstätigung.
+D E-Mail-Adräss isch bstätigt wore. Du chasch dr Aatrag do bstätige: „$2“.',
+	'acct_request_throttle_hit' => 'Du hesch scho ne Aatrag uf {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonte}} gstellt, Du chasch zur Zyt fir keini meh ne Aatrag stelle.',
+	'requestaccount-loginnotice' => "Go ne nej Benutzerkonto iberchu muesch e '''[[Special:RequestAccount|Aatrag stelle]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|ufige, E-Mail bstätigte Benutzerkontenaatrag wartet]]|[[Special:ConfirmAccounts|ufigi, E-Mail bstätigti Benutzerkontenaaträg warten]]}} uf Bearbeitig.",
+	'confirmaccounts' => 'Benutzerkonto-Aaträg bstätige',
+	'confirmedit-desc' => 'Git Bürokrate d Megligkeit, Benutzerkontenaaträg z bstätige',
+	'confirmaccount-maintext' => "'''Die Syte dient dezue, hängigi Benutzerkontenaaträg fir ''{{SITENAME}}'' z bearbeite.'''
+
+Jedi Benutzerkonte-Aatragswarteschlang bstoht us drej Unterwarteschlange. Eini fir ufigi Aafroge, eini fir Aaträg im „abwarte“-Status un eini Aafroge, wu letschti abglähnt wore sin.
+
+Wänn Du uf e Aatrag Antwort gisch, iberprief d Informatione sorgfältig un bstätig d Informatione, wu s din het.
+Dyy Aktione wäre niteffentlig protokolliert. S wird au vu Dir erwartet, ass Du Aktionen vu dr Andre iberpriefsch.",
+	'confirmaccount-list' => 'Unte findsch e Lischt vu Benutzerkontenaaträg, wu no mien bearbeitet wäre.
+Wänn en Aatrag bstätigt oder zrugggwise woren isch, wird er us dr Lischt usegnuu.',
+	'confirmaccount-list2' => 'Unten isch e Lischt Aaträg, wu letschti zrugggwise wore sin. Si wäre automatisch glescht, wänn si ne paar Täg alt sin. Si chenne no gnähmigt wäre, Du sottsch aber zerscht sdr Ammann kontaktiere, wu dr Aatrag abglähnt het.',
+	'confirmaccount-list3' => 'Unten isch e Lischt vu letschti zrugggwisene Aaträg, wu automatisch glescht wäre, wänn si e paar Täg alt sin. si chenne no gnähmigt wäre.',
+	'confirmaccount-text' => "Des isch en Aatrag uf e Benutzerkonto bi '''{{SITENAME}}'''.
+
+Prief alli Informatione, wu unte stehn, grindlig un bstätig d Informatione wänn s goht.
+Bitte gib Acht, ass Du dr Zuegang bi Bedarf unter eme andere Benutzername chasch aalege.
+Du sottsch des nume nutze go Kollisione mit andere Namen vermyyde.
+
+Wänn Du die Syte verlossesch, ohni s Konto z bstätigen oder abzlähne, wird dr Aatrag ufe blyybe.",
+	'confirmaccount-none-o' => 'Zur Zyt git s kei uffigi Benutzeraaträg uf däre Lischt.',
+	'confirmaccount-none-h' => 'Zur Zyt git s kei Benutzeraaträg uf däre Lischt, wu im „abwarte“-Status sin.',
+	'confirmaccount-none-r' => 'Zur Zyt git s kei letschti abglähnte Benutzeraaträg uf däre Lischt.',
+	'confirmaccount-none-e' => 'Zur Zyt git s kei abgloffeni Benutzeraaträg uf däre Lischt.',
+	'confirmaccount-real-q' => 'Name',
+	'confirmaccount-email-q' => 'E-Mail',
+	'confirmaccount-bio-q' => 'Biografii',
+	'confirmaccount-showopen' => 'uffigi Aaträg',
+	'confirmaccount-showrej' => 'zrugggwiseni Aaträg',
+	'confirmaccount-showheld' => 'Aaträg im „abwarte“-Status',
+	'confirmaccount-showexp' => 'abglofeni Aaträg',
+	'confirmaccount-review' => 'Bstätige/Ablähne',
+	'confirmaccount-types' => 'Wehl e Benutzerkontenbstätigungswarteschlang us däne do unten uus:',
+	'confirmaccount-all' => '(alli Warteschlange zeige)',
+	'confirmaccount-type' => 'Warteschlang:',
+	'confirmaccount-type-0' => 'zuechimpftigi Autore',
+	'confirmaccount-type-1' => 'zuechimpftigi Bearbeiter',
+	'confirmaccount-q-open' => 'uffigi Aaträg',
+	'confirmaccount-q-held' => 'Aaträg im „abwarte”-Status',
+	'confirmaccount-q-rej' => 'letschti abglähnti Aaträg',
+	'confirmaccount-q-stale' => 'abglofeni Aaträg',
+	'confirmaccount-badid' => 'Zur Zyt git s kei Benutzeraatrag zue dr ID, wu Du aagee hesch, Villicht isch isch er scho bearbeitet.',
+	'confirmaccount-leg-user' => 'Benutzerkonto',
+	'confirmaccount-leg-areas' => 'Hauptinträsse',
+	'confirmaccount-leg-person' => 'Persenligi Informatione',
+	'confirmaccount-leg-other' => 'Wyteri Informatione',
+	'confirmaccount-name' => 'Benutzername',
+	'confirmaccount-real' => 'Name:',
+	'confirmaccount-email' => 'E-Mail:',
+	'confirmaccount-reqtype' => 'Position:',
+	'confirmaccount-pos-0' => 'Autor',
+	'confirmaccount-pos-1' => 'Bearbeiter',
+	'confirmaccount-bio' => 'Biografii:',
+	'confirmaccount-attach' => 'Läbenslauf:',
+	'confirmaccount-notes' => 'Zuesätzligi Hiawyys:',
+	'confirmaccount-urls' => 'Lischt vu dr Netzsyte:',
+	'confirmaccount-none-p' => '(nit aagee)',
+	'confirmaccount-confirm' => 'Nimm die Uuswahl go dr Aatrag akzeptieren, abzlähnen oder no z warte.',
+	'confirmaccount-econf' => '(bstätigt)',
+	'confirmaccount-reject' => '(abglähnt dur [[User:$1|$1]] am $2)',
+	'confirmaccount-rational' => 'Begrindig fir dr Aatragssteller:',
+	'confirmaccount-noreason' => '(nyt)',
+	'confirmaccount-autorej' => '(dää Aatrag isch automatisch wägen Inaktivität gstriche wore)',
+	'confirmaccount-held' => '(markiert as „abwarte“ dur [[User:$1|$1]] am $2)',
+	'confirmaccount-create' => 'Bstätige (Konto aalege)',
+	'confirmaccount-deny' => 'Ablähne (Aatrag lesche)',
+	'confirmaccount-hold' => 'Abwarte',
+	'confirmaccount-spam' => 'Spam (kei E-Mail verschicke)',
+	'confirmaccount-reason' => 'Begrindig (wird in d Mail an dr Aatragsteller dryygsetzt):',
+	'confirmaccount-ip' => 'IP-Addräss:',
+	'confirmaccount-submit' => 'Abschicke',
+	'confirmaccount-needreason' => 'Du muesch im Chäschtli unten e Begrindig aagee.',
+	'confirmaccount-canthold' => 'Dää Aatrag isch scho as „abwarte“ markiert oder glescht wore.',
+	'confirmaccount-acc' => 'Benutzeraatrag erfolgryych bstätigt; Benutzer [[User:$1|$1]] isch aagleit wore.',
+	'confirmaccount-rej' => 'Benutzeraatrag isch abglähnt wore.',
+	'confirmaccount-viewing' => '(wird aktuäll aagluegt vu [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Legt e Benutzersyte mit dr Biografii vum neje Benutzer aa.',
+	'confirmaccount-welc' => "'''Willchu bi ''{{SITENAME}}''!'''
+Mir hoffen, ass Du viil gueti Informatione byytraisch.
+Villicht mechtsch zerscht di [[{{MediaWiki:Helppage}}|Erschte Schritt]] läse.
+Nomol: Willchu un viil Freid!",
+	'confirmaccount-wsum' => 'Willchu!',
+	'confirmaccount-email-subj' => '{{SITENAME}} Aatrag uf Benutzerkonto',
+	'confirmaccount-email-body' => 'Dyy Aatrag uf e Benutzerkonto bi {{SITENAME}} isch bstätigt wore.
+
+Benutzername: $1
+
+Passwort: $2
+
+Us Sicherheitsgrind sottsch Dyy Passwort uubedingt bim erschten Aamälde ändere. Go Di aamälde gohsch uf d Syte
+{{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2' => 'Dyy Aatrag uf e Benutzerkonto bi {{SITENAME}} isch bstätigt wore.
+
+Benutzername: $1
+
+Passwort: $2
+
+$3
+
+Us Sicherheitsgrind sottsch Dyy Passwort uubedingt bim erschten Aamälde ändere. Go Di aamälde gohsch uf d Syte
+{{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3' => 'Excusez, Dyy Aatrag uf e „$1“  bi {{SITENAME}} isch abglähnt wore.
+
+Des cha viil Grind haa. Villicht hesch s Aatragsformular nit richtig uusgfillt, villicht hesch nit gnue Aagabe gmacht oder villicht hesch d Aaforderige in e andere Art un Wyys nit erfillt.
+
+Villicht git s uf dr Syte Kontaktadrässe, wu Du Di metsch hiiwände, wänn Du meh witt wisse iber d Aaforderige.',
+	'confirmaccount-email-body4' => 'Excusez, Dyy Aatrag uf e „$1“  bi {{SITENAME}} isch abglähnt wore.
+
+$2
+
+Villicht git s uf dr Syte Kontaktadrässe, wu Du Di metsch hiiwände, wänn Du meh witt wisse iber d Aaforderige.',
+	'confirmaccount-email-body5' => 'Voreb Dyy Aafrog fir s Benutzerkonto „$1“ uf {{SITENAME}} cha akzeptiert wäre, muesch no zuesätzligi Informationen aagee.
+
+$2
+
+Villicht git s uf dr Syte Kontaktadrässe, wu Du Di metsch hiiwände, wänn Du meh witt wisse iber d Aaforderige.',
+	'usercredentials' => 'Benutzer-Berächtigungsnochwyys',
+	'usercredentials-leg' => 'Bstätigti Benutzer-Berächtigungsnochwyys noluege',
+	'usercredentials-user' => 'Benutzername:',
+	'usercredentials-text' => 'Du unte sin di bstätigte Benutzer-Berächtigungsnochwyys fir s gwehlt Benutzerkonto.',
+	'usercredentials-leg-user' => 'Benutzerkonto',
+	'usercredentials-leg-areas' => 'Hauptinträssi',
+	'usercredentials-leg-person' => 'Persenligi Informatione',
+	'usercredentials-leg-other' => 'Wyteri Informationen',
+	'usercredentials-email' => 'E-Mail:',
+	'usercredentials-real' => 'Ächte Name:',
+	'usercredentials-bio' => 'Biografii:',
+	'usercredentials-attach' => 'Läbenslauf:',
+	'usercredentials-notes' => 'Zuesätzligi Bemerkige:',
+	'usercredentials-urls' => 'Lischt vu Netzsyte:',
+	'usercredentials-ip' => 'Original IP-Adräss:',
+	'usercredentials-member' => 'Rächt:',
+	'usercredentials-badid' => 'S sin kei Berächtigungsnochwyys fir dää Benutzer gfunde wore. Bitte d Schryybwyys priefe.',
+);
+
 /** Gujarati (ગુજરાતી)
  * @author Aksi great
  * @author Dsvyas
@@ -2799,6 +3001,9 @@ $messages['he'] = array(
 	'requestaccount-leg-person' => 'מידע אישי',
 	'requestaccount-leg-other' => 'מידע אחר',
 	'requestaccount-leg-tos' => 'תנאי השירות',
+	'requestaccount-acc-text' => 'לכתובת הדוא"ל שלכם תישלח הודעת אישור לאחר שהבקשה תתקבל.
+אנא הגיבו על ידי לחיצה על הקישור לאישור המסופק בהודעת הדוא"ל.
+כמו כן, הסיסמה שלכם תישלח אליכם בעת יצירת חשבונכם.',
 	'requestaccount-real' => 'שם אמיתי:',
 	'requestaccount-same' => '(כמו השם האמיתי)',
 	'requestaccount-email' => 'כתובת הדוא"ל:',
@@ -4541,6 +4746,8 @@ Dir kënnt elo keng weider Ufroe méi maachen.',
 	'requestaccount-loginnotice' => "Fir e Benitzerkont ze kréiene, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
 	'confirmaccounts' => 'Ufroe vu Benotzerkonte confirméieren',
 	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeeten fir Ufroe vu Benotzerkonten ze confirméieren",
+	'confirmaccount-none-o' => 'Et gëtt elo an dëser Lëscht keng oppen Ufroe fir Benotzerkonten.',
+	'confirmaccount-none-h' => 'Et gëtt elo an dëser Lëscht keng Ufroe fir Benotzerkonten déi am Suspens sinn.',
 	'confirmaccount-none-r' => 'Et gëtt elo keng rezent refüséiert Ufroe fir Benotzerkonten op dëser Lëscht.',
 	'confirmaccount-real-q' => 'Numm',
 	'confirmaccount-email-q' => 'E-mail',
