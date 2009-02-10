@@ -830,6 +830,7 @@ $messages['be-tarask'] = array(
 	'requestaccount' => 'Запыт на стварэньне рахунку',
 	'requestaccount-leg-person' => 'Асабістыя зьвесткі',
 	'requestaccount-leg-other' => 'Іншая інфармацыя',
+	'requestaccount-email' => 'Адрас электроннай пошты:',
 	'requestaccount-level-0' => 'аўтар',
 	'confirmaccount-leg-person' => 'Асабістыя зьвесткі',
 	'confirmaccount-leg-other' => 'Іншая інфармацыя',
