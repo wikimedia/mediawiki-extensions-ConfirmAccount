@@ -941,7 +941,7 @@ class ConfirmAccountsPage extends SpecialPage
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
 		# Truncate this, blah blah...
 		$bio = htmlspecialchars($row->acr_bio);
-		$preview = $wgLang->truncate( $bio, 400 );
+		$preview = $wgLang->truncate( $bio, 400, '' );
 		if( strlen($preview) < strlen($bio) ) {
 			$preview = substr( $preview, 0, strrpos($preview,' ') );
 			$preview .= " . . .";
