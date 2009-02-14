@@ -832,14 +832,17 @@ $messages['be-tarask'] = array(
 	'requestaccount-leg-other' => 'Іншая інфармацыя',
 	'requestaccount-email' => 'Адрас электроннай пошты:',
 	'requestaccount-level-0' => 'аўтар',
+	'confirmaccount-email-q' => 'Адрас электроннай пошты',
 	'confirmaccount-leg-person' => 'Асабістыя зьвесткі',
 	'confirmaccount-leg-other' => 'Іншая інфармацыя',
 	'confirmaccount-name' => 'Імя ўдзельніка',
 	'confirmaccount-email' => 'Адрас электроннай пошты:',
+	'confirmaccount-ip' => 'IP-адрас:',
 	'confirmaccount-submit' => 'Пацьвердзіць',
 	'usercredentials-user' => 'Імя ўдзельніка:',
 	'usercredentials-leg-person' => 'Асабістыя зьвесткі',
 	'usercredentials-leg-other' => 'Іншая інфармацыя',
+	'usercredentials-email' => 'Адрас электроннай пошты:',
 );
 
 /** Bulgarian (Български)
@@ -1844,6 +1847,7 @@ Usted puede desear enlistar contactos como un número telefónico para ayudar en
 	'requestaccount-attach' => 'Campo (Opcional):',
 	'requestaccount-notes' => 'Notas adicionales:',
 	'requestaccount-urls' => 'Lista de sitios web [sepáralos por renglones]',
+	'requestaccount-submit' => 'Solicitar cuenta',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} solicitud de cuenta',
 	'confirmaccount-real-q' => 'Nombre',
 	'confirmaccount-email-q' => 'Correo electrónico',
