@@ -114,6 +114,13 @@ $aliases['hu'] = array(
 	'UserCredentials' => array( 'Felhasználói ajánlólevél' ),
 );
 
+/** Interlingua (Interlingua) */
+$aliases['ia'] = array(
+	'RequestAccount' => array( 'RequestarConto' ),
+	'ConfirmAccounts' => array( 'ConfirmarContos' ),
+	'UserCredentials' => array( 'CredentialesDelUsator' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'RequestAccount' => array( 'アカウント申請', 'アカウント登録申請' ),
@@ -222,5 +229,12 @@ $aliases['sw'] = array(
 /** Thai (ไทย) */
 $aliases['th'] = array(
 	'ConfirmAccounts' => array( 'ยืนยันบัญชีผู้ใช้' ),
+);
+
+/** Tagalog (Tagalog) */
+$aliases['tl'] = array(
+	'RequestAccount' => array( 'Hilingin ang akawnt' ),
+	'ConfirmAccounts' => array( 'Tiyakin ang mga akawnt' ),
+	'UserCredentials' => array( 'Mga katibayan ng katangian ng tagagamit' ),
 );
 
