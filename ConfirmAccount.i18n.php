@@ -3742,6 +3742,7 @@ Quando le conto ha essite approbate, tu recipera in e-mail un message de notific
 	'requestaccount-leg-areas' => 'Areas de interesse principal',
 	'requestaccount-leg-person' => 'Informationes personal',
 	'requestaccount-leg-other' => 'Altere informationes',
+	'requestaccount-leg-tos' => 'Conditiones de servicio',
 	'requestaccount-acc-text' => 'Tu recipera in e-mail un message de confirmation quando tu submitte iste requesta.
 Per favor responde per cliccar super le ligamine de confirmation presente in le e-mail.
 Tu recipera etiam tu contrasigno in e-mail al creation de tu conto.',
@@ -3759,7 +3760,7 @@ Tu nomine pote esser cambiate in [[Special:Preferences|tu preferentias]].',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'contributor',
 	'requestaccount-bio' => 'Biographia personal:',
-	'requestaccount-attach' => 'Resume o CV (optional):',
+	'requestaccount-attach' => 'Résumé o CV (optional):',
 	'requestaccount-notes' => 'Notas additional:',
 	'requestaccount-urls' => 'Lista de sitos web, si alcun (un per linea):',
 	'requestaccount-agree' => 'Tu debe certificar que tu nomine real es correcte e que tu accepta nostre Conditiones de Servicio.',
@@ -3767,7 +3768,7 @@ Tu nomine pote esser cambiate in [[Special:Preferences|tu preferentias]].',
 	'requestaccount-tooshort' => 'Tu biographia debe haber al minus $1 parolas de longor.',
 	'requestaccount-emaildup' => 'Un altere requesta pendente de conto usa le mesme adresse de e-mail.',
 	'requestaccount-exts' => 'Iste typo de file non es permittite in attachamentos.',
-	'requestaccount-resub' => 'Tu debe reseliger tu file CV/resume pro motivos de securitate.
+	'requestaccount-resub' => 'Tu debe reseliger tu file CV/résumé pro motivos de securitate.
 Lassa le campo vacue si tu non vole plus includer un.',
 	'requestaccount-tos' => 'Io ha legite e consenti a acceptar le [[{{MediaWiki:Requestaccount-page}}|Conditiones de Servicio]] of {{SITENAME}}.
 Le nomine que io ha specificate sub "Nomine real" es de facto mi proprie nomine real.',
@@ -3810,7 +3811,7 @@ Illos pote ancora esser approbate como contos, sed es recommendate que tu consul
 
 Revide con caution le sequente informationes.
 Si tu approba iste requesta, defini con le menu Position le stato del conto de iste usator.
-Le modificationes facite in le biographia del candidatura non afficera le litteras credential ja immagazinate.
+Le modificationes facite in le biographia del candidatura non afficera le referentias ja immagazinate.
 Nota que tu pote optar pro crear le conto sub un altere nomine de usator.
 Solmente face isto pro evitar le collision con altere nomines.
 
@@ -3849,7 +3850,7 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-pos-0' => 'autor',
 	'confirmaccount-pos-1' => 'contributor',
 	'confirmaccount-bio' => 'Biographia:',
-	'confirmaccount-attach' => 'Resume/CV:',
+	'confirmaccount-attach' => 'Résumé/CV:',
 	'confirmaccount-notes' => 'Notas additional:',
 	'confirmaccount-urls' => 'Lista de sitos web:',
 	'confirmaccount-none-p' => '(non fornite)',
@@ -3913,10 +3914,10 @@ Il pote haber listas de contacto in le sito que tu pote usar si tu vole saper pl
 $2
 
 Il pote haber listas de contacto in le sito que tu pote usar si tu vole saper plus a proposito del politica de creation de contos.',
-	'usercredentials' => 'Litteras credential del usator',
-	'usercredentials-leg' => 'Cercar litteras credential confirmate pro un usator',
+	'usercredentials' => 'Referentias del usator',
+	'usercredentials-leg' => 'Cercar referentias confirmate pro un usator',
 	'usercredentials-user' => 'Nomine de usator:',
-	'usercredentials-text' => 'Infra es le litteras credential validate del conto de usator seligite.',
+	'usercredentials-text' => 'Infra es le referentias validate del conto de usator seligite.',
 	'usercredentials-leg-user' => 'Conto de usator',
 	'usercredentials-leg-areas' => 'Areas de interesse principal',
 	'usercredentials-leg-person' => 'Informationes personal',
@@ -3924,12 +3925,12 @@ Il pote haber listas de contacto in le sito que tu pote usar si tu vole saper pl
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Nomine real:',
 	'usercredentials-bio' => 'Biographia:',
-	'usercredentials-attach' => 'Resume/CV:',
+	'usercredentials-attach' => 'Résumé/CV:',
 	'usercredentials-notes' => 'Notas additional:',
 	'usercredentials-urls' => 'Lista de sitos web:',
 	'usercredentials-ip' => 'Adresse IP original:',
 	'usercredentials-member' => 'Derectos:',
-	'usercredentials-badid' => 'Nulle litteras credential trovate pro iste usator.
+	'usercredentials-badid' => 'Nulle referentias trovate pro iste usator.
 Verifica que le nomine sia orthographiate correctemente.',
 );
 
