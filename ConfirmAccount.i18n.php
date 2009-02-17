@@ -4106,6 +4106,7 @@ Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
  * @author Malafaya
  */
 $messages['io'] = array(
+	'confirmaccount-real' => 'Nomo:',
 	'confirmaccount-wsum' => 'Bonveno!',
 );
 
