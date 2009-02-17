@@ -116,9 +116,9 @@ $aliases['hu'] = array(
 
 /** Interlingua (Interlingua) */
 $aliases['ia'] = array(
-	'RequestAccount' => array( 'RequestarConto' ),
-	'ConfirmAccounts' => array( 'ConfirmarContos' ),
-	'UserCredentials' => array( 'CredentialesDelUsator' ),
+	'RequestAccount' => array( 'Requestar conto' ),
+	'ConfirmAccounts' => array( 'Confirmar contos' ),
+	'UserCredentials' => array( 'Referentias del usator' ),
 );
 
 /** Japanese (日本語) */
