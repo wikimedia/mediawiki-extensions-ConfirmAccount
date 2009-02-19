@@ -55,6 +55,13 @@ $aliases['dsb'] = array(
 	'UserCredentials' => array( 'Wužywarske pódaśa' ),
 );
 
+/** Greek (Ελληνικά) */
+$aliases['el'] = array(
+	'RequestAccount' => array( 'ΑίτησηΛογαριασμού' ),
+	'ConfirmAccounts' => array( 'ΕπιβεβαίωσηΛογαριασμού' ),
+	'UserCredentials' => array( 'ΣυστάσειςΧρήστη' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'RequestAccount' => array( 'Pyydä käyttäjätunnusta' ),

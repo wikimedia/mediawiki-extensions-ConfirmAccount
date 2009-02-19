@@ -8161,6 +8161,17 @@ $messages['tr'] = array(
 	'usercredentials-email' => 'E-mail:',
 );
 
+/** ئۇيغۇرچە (ئۇيغۇرچە)
+ * @author Alfredie
+ */
+$messages['ug-arab'] = array(
+	'confirmaccount-email-q' => 'ئېلخەت',
+	'confirmaccount-name' => 'ئىشلەتكۇچى ئىسمى',
+	'confirmaccount-email' => 'ئېلخەت:',
+	'usercredentials-user' => 'ئىشلەتكۇچى ئىسمى:',
+	'usercredentials-email' => 'ئېلخەت:',
+);
+
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
