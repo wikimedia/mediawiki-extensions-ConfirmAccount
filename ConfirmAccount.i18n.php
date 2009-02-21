@@ -1532,9 +1532,9 @@ Jo hyšći móžno, aby se wone pśetwórili do schwalonych kontow, ale ty měł
 	'confirmaccount-text' => "To jo wisece póžedanje na wužywarske konto na '''{{GRAMMAR:lokatiw|{{SITENAME}}}}'''.
 
 Pśeglědaj pšosym slědujuce informacije kšadosćiwje.
-Jolic pśizwólujoš tos to póžedanje, wuž padajucy menij, aby nastajił kontowy status wužywarja.
+Jolic pśizwólujoš tos to póžedanje, wužyj padajucy menij, aby nastajił kontowy status wužywarja.
 Změny pśewjeźone na biografiji njebudu wobwliwowaś wobstawne składowanje podaśow. Źiwaj na to, až móžoš konto pód drugim wužywarskim mjenim załožyś.
-Wuž to jano, aby se wobinuł kolizije z drugimi mjenjami.
+Wužyj to jano, aby se wobinuł kolizije z drugimi mjenjami.
 
 Jolic jadnorje wóstajijoš toś ten bok bźez wobkšuśenja abo wótpokazanja toś togo póžedanja, wóstajijo docynjone.",
 	'confirmaccount-none-o' => 'Tuchylu njejsu njedocynjone póžedanja na konta w toś tej lisćinje.',
@@ -1575,7 +1575,7 @@ Snaź jo južo docynjone.',
 	'confirmaccount-notes' => 'Pśidatne pódaśa:',
 	'confirmaccount-urls' => 'Lisćina websedłow:',
 	'confirmaccount-none-p' => '(njepódany)',
-	'confirmaccount-confirm' => 'Wuž slědujuce opcije, aby akceptěrował, wótpokazał abo zaźaržał toś to póžedanje:',
+	'confirmaccount-confirm' => 'Wužyj slědujuce opcije, aby akceptěrował, wótpokazał abo zaźaržał toś to póžedanje:',
 	'confirmaccount-econf' => '(wobkšuśony)',
 	'confirmaccount-reject' => '(wótpokazane wót wužywarja [[User:$1|$1]] na $2)',
 	'confirmaccount-rational' => 'Wobtwarźenje za póžedarja:',
@@ -2521,7 +2521,7 @@ O seu nome pódese cambiar [[Special:Preferences|nas súas preferencias]].',
 	'requestaccount-bio' => 'Biografía persoal:',
 	'requestaccount-attach' => 'Curriculum Vitae (opcional):',
 	'requestaccount-notes' => 'Notas adicionais:',
-	'requestaccount-urls' => 'Listaxe de sitios web, de habelos, (separados cun parágrafo novo):',
+	'requestaccount-urls' => 'Lista de sitios web, de habelos, (separados cun parágrafo novo):',
 	'requestaccount-agree' => 'Debe certificar que o seu nome real é correcto e que está de acordo coas nosas Condicións de Servizo.',
 	'requestaccount-inuse' => 'Este nome de usuario xa se usou nunha solicitude de conta aínda pendente.',
 	'requestaccount-tooshort' => 'A súa biografía debe ter un mínimo de $1 palabras.',
@@ -2562,9 +2562,9 @@ Cada cola de solicitudes de conta consiste en tres subcuestións, unha para abri
 Ao respostar unha solicitude revísea con coidado e, se é necesario, confirme a información alí contida.  
 As súas accións serán rexistradas de maneira privada.
 Agárdase tamén que revise calquera actividade que teña lugar aquí á parte das súas propias.",
-	'confirmaccount-list' => 'Abaixo aparece unha listaxe de contas pendentes de aprobación.
-	As contas aprobadas crearanse e eliminaranse desta listaxe. As contas rexeitadas simplemente eliminaranse desta listaxe.',
-	'confirmaccount-list2' => 'Abaixo aparece unha listaxe con solicitudes de contas rexeitadas recentemente que poden eliminarse automaticamente
+	'confirmaccount-list' => 'Abaixo aparece unha lista de contas pendentes de aprobación.
+	As contas aprobadas crearanse e eliminaranse desta lista. As contas rexeitadas simplemente eliminaranse desta lista.',
+	'confirmaccount-list2' => 'Abaixo aparece unha lista con solicitudes de contas rexeitadas recentemente que poden eliminarse automaticamente
 	unha vez que teñan varios días. Poden aínda ser aceptadas como contas, aínda que pode ser mellor que consulte primeiro
 	co administrador que as rexeitou antes de facelo.',
 	'confirmaccount-list3' => 'Embaixo hai unha lista coas solicitudes de contas que caducaron e que poden ser borradas automaticamente unha vez que teñan uns días.
@@ -2576,16 +2576,16 @@ As edicións feitas na biografía da solicitude non afectarán a calquera almace
 Use isto só para evitar conflitos con outros nomes.
 
 Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, quedará como pendente.",
-	'confirmaccount-none-o' => 'Neste momento non hai peticións de contas pendentes nesta listaxe.',
-	'confirmaccount-none-h' => 'Actualmente non hai solicitudes pendentes a ter en conta nesta listaxe.',
-	'confirmaccount-none-r' => 'Actualmente non hai contas rexeitas recentemente nesta listaxe.',
-	'confirmaccount-none-e' => 'Actualmente non hai solicitudes de contas caducadas nesta listaxe.',
+	'confirmaccount-none-o' => 'Neste momento non hai peticións de contas pendentes nesta lista.',
+	'confirmaccount-none-h' => 'Actualmente non hai solicitudes pendentes a ter en conta nesta lista.',
+	'confirmaccount-none-r' => 'Actualmente non hai contas rexeitas recentemente nesta lista.',
+	'confirmaccount-none-e' => 'Actualmente non hai solicitudes de contas caducadas nesta lista.',
 	'confirmaccount-real-q' => 'Nome',
 	'confirmaccount-email-q' => 'Correo electrónico',
 	'confirmaccount-bio-q' => 'Biografía',
 	'confirmaccount-showopen' => 'solicitudes en curso',
 	'confirmaccount-showrej' => 'solicitudes rexeitadas',
-	'confirmaccount-showheld' => 'Ver as contas pendentes de ter en conta na listaxe',
+	'confirmaccount-showheld' => 'Ver as contas pendentes de ter en conta na lista',
 	'confirmaccount-showexp' => 'solicitudes que expiraron',
 	'confirmaccount-review' => 'Revisar',
 	'confirmaccount-types' => 'Seleccione unha cola de confirmación de contas de embaixo:',
@@ -2611,7 +2611,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-bio' => 'Biografía:',
 	'confirmaccount-attach' => 'Curriculum Vitae:',
 	'confirmaccount-notes' => 'Notas adicionais:',
-	'confirmaccount-urls' => 'Listaxe de sitios web:',
+	'confirmaccount-urls' => 'Lista de sitios web:',
 	'confirmaccount-none-p' => '(non fornecido)',
 	'confirmaccount-confirm' => 'Use os botóns de embaixo para aceptar, rexeitar ou deixar en suspenso esta solicitude:',
 	'confirmaccount-econf' => '(confirmada)',
@@ -2621,7 +2621,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-autorej' => '(esta solicitude foi descartada automaticamente debido á inactividade)',
 	'confirmaccount-held' => '(marcada "en suspenso" por [[User:$1|$1]] en $2)',
 	'confirmaccount-create' => 'Aceptar (crear a conta)',
-	'confirmaccount-deny' => 'Rexeitar (eliminar da listaxe)',
+	'confirmaccount-deny' => 'Rexeitar (eliminar da lista)',
 	'confirmaccount-hold' => 'Suspender',
 	'confirmaccount-spam' => 'Spam (non enviar correo electrónico)',
 	'confirmaccount-reason' => 'Comentario (incluirase na mensaxe de correo electrónico):',
@@ -2659,19 +2659,19 @@ vaia a {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3' => 'Sentímolo, pero a súa solicitude de conta $1 foi rexeitada en {{SITENAME}}.
 
 Isto pode deberse a varias causas. Pode que non enchese o formulario correctamente, non respondese na extensión
-adecuada ou non cumprise con algún outro criterio. Pode que existan listaxes de contacto no sitio que poida
+adecuada ou non cumprise con algún outro criterio. Pode que existan listas de contacto no sitio que poida
 usar se quere saber máis acerca da política de contas de usuario.',
 	'confirmaccount-email-body4' => 'Sentímolo, pero a súa solicitude de conta "$1" foi rexeitada en {{SITENAME}}.
 
 $2
 
-Poden existir listaxes de contacto no sitio que pode usar se quere saber máis acerca da política de contas de usuario.',
+Poden existir listas de contacto no sitio que pode usar se quere saber máis acerca da política de contas de usuario.',
 	'confirmaccount-email-body5' => 'Antes de que se poida aceptar a súa solicitude dunha conta para "$1" en {{SITENAME}}
 	ten que fornecer algunha información adicional.
 
 $2
 
-Poden existir listaxes de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
+Poden existir listas de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
 	'usercredentials' => 'Credenciais do usuario',
 	'usercredentials-leg' => 'Verificar os credenciais confirmados dun usuario',
 	'usercredentials-user' => 'Nome do usuario:',
@@ -2685,7 +2685,7 @@ Poden existir listaxes de contacto no sitio que poida usar se quere saber máis 
 	'usercredentials-bio' => 'Biografía:',
 	'usercredentials-attach' => 'Currículo/CV:',
 	'usercredentials-notes' => 'Notas adicionais:',
-	'usercredentials-urls' => 'Listaxe de sitios web:',
+	'usercredentials-urls' => 'Lista de sitios web:',
 	'usercredentials-ip' => 'Enderezo IP orixinal:',
 	'usercredentials-member' => 'Dereitos:',
 	'usercredentials-badid' => 'Non se atoparon credenciais para este usuario. Comprobe que o nome estea escrito correctamente.',
@@ -8170,6 +8170,17 @@ $messages['ug-arab'] = array(
 	'confirmaccount-email' => 'ئېلخەت:',
 	'usercredentials-user' => 'ئىشلەتكۇچى ئىسمى:',
 	'usercredentials-email' => 'ئېلخەت:',
+);
+
+/** Uighur (Latin) (Uyghurche‎ / ئۇيغۇرچە (Latin))
+ * @author Jose77
+ */
+$messages['ug-latn'] = array(
+	'confirmaccount-email-q' => 'Élxet',
+	'confirmaccount-name' => 'Ishletkuchi ismi',
+	'confirmaccount-email' => 'Élxet:',
+	'usercredentials-user' => 'Ishletkuchi ismi:',
+	'usercredentials-email' => 'Élxet:',
 );
 
 /** Ukrainian (Українська)
