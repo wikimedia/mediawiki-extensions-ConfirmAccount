@@ -209,6 +209,12 @@ $aliases['pt-br'] = array(
 	'UserCredentials' => array( 'Credenciais de usuário' ),
 );
 
+/** Romanian (Română) */
+$aliases['ro'] = array(
+	'RequestAccount' => array( 'Cerere cont' ),
+	'ConfirmAccounts' => array( 'Confirmă conturi' ),
+);
+
 /** Sanskrit (संस्कृत) */
 $aliases['sa'] = array(
 	'RequestAccount' => array( 'उपयोजकसंज्ञाविनन्ती' ),
