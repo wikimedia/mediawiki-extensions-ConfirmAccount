@@ -187,9 +187,8 @@ class ConfirmAccountsPage extends SpecialPage
 				__METHOD__ );
 			$rejects .= " [$count]";
 				
-			$wgOut->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> ($open" .
-				$wgLang->pipeList( array( $held, $rejects, $stale ) ) .
-				")</li>" );
+			$wgOut->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> (" .
+				$wgLang->pipeList( array( $open, $held, $rejects, $stale ) ) . ")</li>" );
 		}
 		$wgOut->addHTML( '</ul>' );
 	}
