@@ -2211,6 +2211,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  * @author Grondin
  * @author Louperivois
  * @author Meithal
+ * @author PieRRoMaN
  * @author Sherbrooke
  * @author Urhixidur
  * @author Zetud
@@ -2219,16 +2220,16 @@ $messages['fr'] = array(
 	'requestaccount' => 'Demande de compte utilisateur',
 	'requestaccount-text' => "'''Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur'''. 
 	
-Assurez-vous que vous ayez déjà lu [[{{MediaWiki:Requestaccount-page}}|les conditions d’utilisation]] avant de faire votre demande de compte.
+Assurez-vous d'avoir lu [[{{MediaWiki:Requestaccount-page}}|les conditions d’utilisation]] avant de faire votre demande de compte.
 	
-Une fois que le compte est accepté, vous recevrez un courrier électronique vous notifiant que votre compte pourra être utilisé sur [[Special:UserLogin|connexion]].",
+Une fois que le compte est accepté, vous recevrez un courriel de notification et votre compte pourra être utilisé sur [[Special:UserLogin|la page de connexion]].",
 	'requestaccount-page' => "{{ns:project}}:Conditions d'utilisation",
 	'requestaccount-dup' => "'''Note : Vous êtes déjà sur une session avec un compte enregistré.'''",
 	'requestaccount-leg-user' => 'Compte utilisateur',
 	'requestaccount-leg-areas' => "Centres d'intérêts principaux",
 	'requestaccount-leg-person' => 'Informations personnelles',
 	'requestaccount-leg-other' => 'Autres informations',
-	'requestaccount-leg-tos' => 'Termes du service',
+	'requestaccount-leg-tos' => "Conditions d'utilisation",
 	'requestaccount-acc-text' => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
 	'requestaccount-areas-text' => 'Choisissez les domaines dans lesquels vous avez une expertise démontrée, ou dans lesquels vous êtes enclin à contribuer le plus.',
 	'requestaccount-ext-text' => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
@@ -2239,22 +2240,22 @@ Une fois que le compte est accepté, vous recevrez un courrier électronique vou
 	'requestaccount-email' => 'Adresse électronique :',
 	'requestaccount-reqtype' => 'Situation :',
 	'requestaccount-level-0' => 'auteur',
-	'requestaccount-level-1' => 'éditeur',
+	'requestaccount-level-1' => 'contributeur',
 	'requestaccount-bio' => 'Biographie personnelle :',
-	'requestaccount-attach' => 'CV/Résumé (facultatif)',
+	'requestaccount-attach' => 'CV (facultatif) :',
 	'requestaccount-notes' => 'Notes supplémentaires :',
 	'requestaccount-urls' => "Liste des sites Web. S'il y en a plusieurs, séparez-les par un saut de ligne :",
-	'requestaccount-agree' => 'Vous devez certifier que votre nom réel est correct et que vous acceptez les conditions d’utilisations du service.',
+	'requestaccount-agree' => 'Vous devez certifier que votre nom réel est correct et que vous acceptez les conditions d’utilisation.',
 	'requestaccount-inuse' => 'Le nom d’utilisateur est déjà utilisé dans une requête en cours d’approbation.',
 	'requestaccount-tooshort' => 'Votre biographie doit avoir au moins {{PLURAL:$1|$1 mot|$1 mots}}.',
 	'requestaccount-emaildup' => 'Une autre demande en cours utilise la même adresse électronique.',
-	'requestaccount-exts' => 'Le téléchargement des fichiers joints n’est pas permis.',
+	'requestaccount-exts' => 'Le type du fichier joint n’est pas permis.',
 	'requestaccount-resub' => 'Veuillez sélectionner à nouveau votre curriculum vitæ pour des raisons de sécurité. Si vous ne souhaitez plus inclure celui-ci, laissez ce champ vierge.',
-	'requestaccount-tos' => 'J’ai lu et j’accepte de respecter les [[{{MediaWiki:Requestaccount-page}}|termes concernant les conditions d’utilisation des services]] de {{SITENAME}}.',
-	'requestaccount-submit' => 'Demande de compte utilisateur.',
+	'requestaccount-tos' => 'J’ai lu et j’accepte les [[{{MediaWiki:Requestaccount-page}}|conditions d’utilisation]] de {{SITENAME}}.',
+	'requestaccount-submit' => 'Demande de compte utilisateur',
 	'requestaccount-sent' => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.',
 	'request-account-econf' => 'Votre adresse courriel a été confirmée et sera listée telle quelle dans votre demande de compte.',
-	'requestaccount-email-subj' => '{{SITENAME}} confirmation d’adresse courriel.',
+	'requestaccount-email-subj' => "Confirmation de l'adresse de courriel pour {{SITENAME}}",
 	'requestaccount-email-body' => 'Quelqu’un, vous probablement, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur « $2 » avec cette adresse courriel sur {{SITENAME}}.
 
 Pour confirmer que ce compte vous appartient réellement sur {{SITENAME}}, vous êtes prié{{GENDER:||e|(e)}} d’ouvrir ce lien dans votre navigateur Web :
@@ -8148,17 +8149,22 @@ Suriin kung ibinaybay ng tama ang pangalan.',
  */
 $messages['tr'] = array(
 	'requestaccount-leg-user' => 'Kullanıcı hesabı',
+	'requestaccount-leg-person' => 'Personel bilgileri',
+	'requestaccount-leg-other' => 'Diğer bilgiler',
+	'requestaccount-real' => 'Gerçek isminiz:',
 	'requestaccount-email' => 'E-posta adresi:',
 	'confirmaccount-real-q' => 'İsim',
 	'confirmaccount-email-q' => 'E-posta',
 	'confirmaccount-name' => 'Kullanıcı adı',
+	'confirmaccount-real' => 'Adı:',
 	'confirmaccount-email' => 'E-posta:',
 	'confirmaccount-noreason' => '(hiçbiri)',
 	'confirmaccount-ip' => 'IP adresi:',
 	'confirmaccount-wsum' => 'Hoşgeldiniz!',
 	'usercredentials-user' => 'Kullanıcı adı:',
 	'usercredentials-leg-user' => 'Kullanıcı hesabı',
-	'usercredentials-email' => 'E-mail:',
+	'usercredentials-email' => 'E-posta:',
+	'usercredentials-real' => 'Gerçek isminiz:',
 );
 
 /** ئۇيغۇرچە (ئۇيغۇرچە)
