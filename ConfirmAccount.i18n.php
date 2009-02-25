@@ -2256,15 +2256,15 @@ Une fois que le compte est accepté, vous recevrez un courriel de notification e
 	'requestaccount-sent' => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.',
 	'request-account-econf' => 'Votre adresse courriel a été confirmée et sera listée telle quelle dans votre demande de compte.',
 	'requestaccount-email-subj' => "Confirmation de l'adresse de courriel pour {{SITENAME}}",
-	'requestaccount-email-body' => 'Quelqu’un, vous probablement, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur « $2 » avec cette adresse courriel sur {{SITENAME}}.
+	'requestaccount-email-body' => 'Quelqu’un, probablement vous, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur « $2 » avec cette adresse courriel sur {{SITENAME}}.
 
-Pour confirmer que ce compte vous appartient réellement sur {{SITENAME}}, vous êtes prié{{GENDER:||e|(e)}} d’ouvrir ce lien dans votre navigateur Web :
+Pour confirmer que ce compte vous appartient réellement sur {{SITENAME}}, vous êtes prié{{GENDER:||e|(e)}} d’ouvrir ce lien dans votre navigateur :
 
 $3
 
 Votre mot de passe vous sera envoyé uniquement si votre compte est créé.
 Si tel n’était pas le cas, n’utilisez pas ce lien.
-Ce code de confirmation expire le $4.',
+Ce code de confirmation expirera le $4.',
 	'requestaccount-email-subj-admin' => 'Demande de compte sur {{SITENAME}}',
 	'requestaccount-email-body-admin' => "« $1 » a demandé un compte et se trouve en attente de confirmation.
 
@@ -2281,7 +2281,7 @@ Chaque demande de compte utilisateur consiste en trois sous-listes : une pour le
 
 Lors de la réponse à une demande, vérifiez-la attentivement et, le cas échéant, confirmez les informations qui y sont mentionnées. Vos actions seront inscrites séparément dans un journal. Vous devez aussi vérifier l'activité sur {{SITENAME}} en plus de la vôtre.",
 	'confirmaccount-list' => 'Voici, ci-dessous, la liste des comptes en attente d’approbation. Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront supprimés de cette même liste.',
-	'confirmaccount-list2' => 'Voir la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
+	'confirmaccount-list2' => 'Voici la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.',
 	'confirmaccount-list3' => 'Ci-dessous se trouve une liste de comptes expirés qui pourraient être automatiquement supprimés après quelques jours. Ils peuvent encore être approuvés.',
 	'confirmaccount-text' => "Voici une demande en cours pour un compte utilisateur sur '''{{SITENAME}}'''.
 
@@ -2306,7 +2306,7 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-all' => "(Voir toutes les listes d'attente)",
 	'confirmaccount-type' => "Liste d'attente sélectionnée :",
 	'confirmaccount-type-0' => 'auteurs éventuels',
-	'confirmaccount-type-1' => 'éditeurs éventuels',
+	'confirmaccount-type-1' => 'contributeurs éventuels',
 	'confirmaccount-q-open' => 'demandes faites',
 	'confirmaccount-q-held' => 'demandes mises en attente',
 	'confirmaccount-q-rej' => 'demandes rejetées récemment',
@@ -2321,9 +2321,9 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-email' => 'Courriel :',
 	'confirmaccount-reqtype' => 'Situation :',
 	'confirmaccount-pos-0' => 'auteur',
-	'confirmaccount-pos-1' => 'éditeur',
+	'confirmaccount-pos-1' => 'contributeur',
 	'confirmaccount-bio' => 'Biographie :',
-	'confirmaccount-attach' => 'CV/Résumé :',
+	'confirmaccount-attach' => 'CV :',
 	'confirmaccount-notes' => 'Notes supplémentaires :',
 	'confirmaccount-urls' => 'Liste des sites web :',
 	'confirmaccount-none-p' => '(non pourvu)',
@@ -2332,7 +2332,7 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-reject' => '(rejeté par [[User:$1|$1]] le $2)',
 	'confirmaccount-rational' => 'Motif donné au candidat',
 	'confirmaccount-noreason' => '(néant)',
-	'confirmaccount-autorej' => '(Cette requête a été abandonnée automatiquement pour cause d’absence d’activité)',
+	'confirmaccount-autorej' => '(Cette requête a été abandonnée automatiquement pour cause d’inactivité)',
 	'confirmaccount-held' => 'Marqué « réservé » par [[User:$1|$1]] sur $2',
 	'confirmaccount-create' => 'Approbation (crée le compte)',
 	'confirmaccount-deny' => 'Rejet (supprime le compte)',
@@ -2347,10 +2347,10 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-rej' => 'La demande a été rejetée avec succès.',
 	'confirmaccount-viewing' => "(actuellement en train d'être visionné par [[User:$1|$1]])",
 	'confirmaccount-summary' => 'Création de la page utilisateur avec sa biographie.',
-	'confirmaccount-welc' => "'''Bienvenue sur ''{{SITENAME}}'' !''' Nous espérons que vous contribuerez beaucoup et bien. Vous désirerez, peut-être, lire [[{{MediaWiki:Helppage}}|comment bien débuter]]. Bienvenue encore et bonne contribution.
+	'confirmaccount-welc' => "'''Bienvenue sur ''{{SITENAME}}'' !''' Nous espérons que vous contribuerez en quantité et en qualité. Vous désirerez, peut-être, lire [[{{MediaWiki:Helppage}}|les pages d'aide]]. Bienvenue encore et bonne contribution !
 <nowiki>~~~~</nowiki>",
 	'confirmaccount-wsum' => 'Bienvenue !',
-	'confirmaccount-email-subj' => '{{SITENAME}} demande de compte',
+	'confirmaccount-email-subj' => 'Demande de compte sur {{SITENAME}}',
 	'confirmaccount-email-body' => 'Votre demande de compte a été acceptée sur {{SITENAME}}.
 
 Nom du compte utilisateur : $1
@@ -2372,12 +2372,12 @@ Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de v
 	'confirmaccount-email-body3' => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
 Plusieurs raisons peuvent expliquer ce cas de figure. Il est possible que vous ayez mal rempli le formulaire, ou que vous n’ayez pas indiqué suffisamment d’informations dans vos réponses. Il est encore possible que vous ne remplissiez pas les critères d’éligibilité pour obtenir votre compte. Il est possible d’être sur la liste des contacts si vous désirez mieux connaître les conditions requises.',
-	'confirmaccount-email-body4' => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
+	'confirmaccount-email-body4' => "Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
 $2
 
-Il est possible d’être sur la liste des contacts afin de mieux connaître les critères pour pouvoir s’inscrire.',
-	'confirmaccount-email-body5' => 'Avant que votre requête pour le compte « $1 » ne puisse être acceptée sur {{SITENAME}}, vous devez produire quelques informations suplémentaires.
+Il peut y avoir des listes de contacts sur le site que vous pourrez consulter pour en savoir plus à propos des règles d'inscription.",
+	'confirmaccount-email-body5' => 'Avant que votre requête pour le compte « $1 » ne puisse être acceptée sur {{SITENAME}}, vous devez fournir quelques informations supplémentaires.
 
 $2
 
@@ -2393,7 +2393,7 @@ Ceci permet d’être sur la liste des contacts du site, si vous désirez en sav
 	'usercredentials-email' => 'Courriel :',
 	'usercredentials-real' => 'Nom réel :',
 	'usercredentials-bio' => 'Biographie :',
-	'usercredentials-attach' => 'CV/Résumé :',
+	'usercredentials-attach' => 'CV :',
 	'usercredentials-notes' => 'Notes supplémentaires :',
 	'usercredentials-urls' => 'Liste des sites internet :',
 	'usercredentials-ip' => 'Adresse IP initiale :',
@@ -4108,6 +4108,7 @@ Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
  */
 $messages['io'] = array(
 	'confirmaccount-real' => 'Nomo:',
+	'confirmaccount-ip' => 'IP-adreso:',
 	'confirmaccount-wsum' => 'Bonveno!',
 );
 
@@ -4754,6 +4755,8 @@ Dir kënnt elo keng weider Ufroe méi maachen.',
 	'requestaccount-loginnotice' => "Fir e Benitzerkont ze kréiene, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
 	'confirmaccounts' => 'Ufroe vu Benotzerkonte confirméieren',
 	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeeten fir Ufroe vu Benotzerkonten ze confirméieren",
+	'confirmaccount-list' => "Hei ass d'Lëscht vun den Ufroe fir e Benotzerkont déi nach autoriséiert musse ginn.
+Wann eng Ufro entweder autoriséiert oder refuséiert ass gëtt se vun der Lëscht erofgeholl.",
 	'confirmaccount-none-o' => 'Et gëtt elo an dëser Lëscht keng oppen Ufroe fir Benotzerkonten.',
 	'confirmaccount-none-h' => 'Et gëtt elo an dëser Lëscht keng Ufroe fir Benotzerkonten déi am Suspens sinn.',
 	'confirmaccount-none-r' => 'Et gëtt elo keng rezent refüséiert Ufroe fir Benotzerkonten op dëser Lëscht.',
