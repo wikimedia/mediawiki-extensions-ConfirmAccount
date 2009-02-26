@@ -8158,6 +8158,7 @@ $messages['tr'] = array(
 	'requestaccount-email' => 'E-posta adresi:',
 	'confirmaccount-real-q' => 'İsim',
 	'confirmaccount-email-q' => 'E-posta',
+	'confirmaccount-leg-other' => 'Diğer bilgiler',
 	'confirmaccount-name' => 'Kullanıcı adı',
 	'confirmaccount-real' => 'Adı:',
 	'confirmaccount-email' => 'E-posta:',
@@ -8166,6 +8167,7 @@ $messages['tr'] = array(
 	'confirmaccount-wsum' => 'Hoşgeldiniz!',
 	'usercredentials-user' => 'Kullanıcı adı:',
 	'usercredentials-leg-user' => 'Kullanıcı hesabı',
+	'usercredentials-leg-other' => 'Diğer bilgiler',
 	'usercredentials-email' => 'E-posta:',
 	'usercredentials-real' => 'Gerçek isminiz:',
 );
