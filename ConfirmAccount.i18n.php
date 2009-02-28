@@ -1081,8 +1081,14 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'requestaccount' => 'Zahtjev za račun',
 	'requestaccount-level-0' => 'autor',
+	'requestaccount-submit' => 'Zahtjevaj račun',
+	'requestaccount-email-subj-admin' => 'Zahtjev za račun na {{SITENAME}}',
+	'confirmaccounts' => 'Potvrdi zahtjeve za račun',
 	'confirmaccount-real-q' => 'Ime',
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-bio-q' => 'Biografija',
 	'confirmaccount-name' => 'Korisničko ime',
 	'confirmaccount-real' => 'Ime:',
 	'confirmaccount-pos-0' => 'autor',
