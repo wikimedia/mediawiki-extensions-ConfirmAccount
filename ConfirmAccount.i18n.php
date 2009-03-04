@@ -4322,7 +4322,7 @@ $3
 	'confirmaccount-econf' => '（確認済）',
 	'confirmaccount-reject' => '（$2、[[User:$1|$1]]によって棄却）',
 	'confirmaccount-rational' => '申請者に対して下された判断:',
-	'confirmaccount-noreason' => '（記述なし）',
+	'confirmaccount-noreason' => '(記述なし)',
 	'confirmaccount-autorej' => '(この申請は活動停止のため自動的に廃棄されました)',
 	'confirmaccount-held' => '（$2、[[User:$1|$1]]が"保留"の判断）',
 	'confirmaccount-create' => '承認（アカウント作成）',
@@ -4699,6 +4699,19 @@ $messages['ksh'] = array(
 	'confirmaccount-ip' => 'IP-Address:',
 	'usercredentials-user' => 'Metmaacher Name:',
 	'usercredentials-real' => 'Dä richtije Name:',
+);
+
+/** Cornish (Kernewek)
+ * @author Kw-Moon
+ */
+$messages['kw'] = array(
+	'requestaccount-email' => 'Trigva e-bost:',
+	'confirmaccount-email-q' => 'E-bost',
+	'confirmaccount-name' => 'Hanow-usyer',
+	'confirmaccount-email' => 'E-bost:',
+	'confirmaccount-wsum' => 'Dynnargh!',
+	'usercredentials-user' => 'Hanow-usyer:',
+	'usercredentials-email' => 'E-bost:',
 );
 
 /** Latin (Latina)
@@ -5347,7 +5360,7 @@ Open de onderstaande verwijzing in uw browser om te bevestigen dat deze gebruike
 $3
 
 Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de verwijzing dan *niet*. 
-Deze bevestigingse-mail verloopt op $4.',
+Deze bevestigingse-mail vervalt op $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} gebruikersverzoeken',
 	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
 Het e-mailadres is bevestigd.
@@ -5367,7 +5380,7 @@ Wanneer gereageerd wordt op een verzoek, kijk het dan grondig na en bevestig ind
 Als een verzoek is goed- of afgekeurd, wordt het uit deze lijst verwijderd.',
 	'confirmaccount-list2' => 'Hieronder staan recentelijk afgewezen gebruikersverzoeken die die over een aantal dagen	automatisch worden verwijderd.
 Ze kunnen nog steeds goedgekeurd worden, hoewel het verstandig is voorafgaand contact te zoeken met de beheerder die het verzoek heeft afgewezen.',
-	'confirmaccount-list3' => 'Hieronder staat een lijst met verlopen gebruikersaanvragen die mogelijk automatisch worden verwijderd als ze een aantal dagen oud zijn.
+	'confirmaccount-list3' => 'Hieronder staat een lijst met vervallen gebruikersaanvragen die mogelijk automatisch worden verwijderd als ze een aantal dagen oud zijn.
 Ze kunnen nog steeds verwerkt worden.',
 	'confirmaccount-text' => "Dit is een openstaand gebruikersverzoek voor '''{{SITENAME}}'''.
 
@@ -5378,17 +5391,17 @@ U kunt de gebruiker onder een andere naam aanmaken.
 Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
 	
 Als u deze pagina verlaat zonder het gebruikersverzoek te bevestigen of af te wijzen, dan blijft het open staan.",
-	'confirmaccount-none-o' => 'Er zijn momenteel geen openstaande gebruikersaanvragen in deze lijst.',
-	'confirmaccount-none-h' => 'Er zijn momenteel geen uitgestelde gebruikersaanvragen in deze lijst.',
-	'confirmaccount-none-r' => 'Er zijn momenteel geen recent afgewezen gebruikersaanvragen in deze lijst.',
-	'confirmaccount-none-e' => 'Er zijn momenteel geen verlopen gebruikersaanvragen in deze lijst.',
+	'confirmaccount-none-o' => 'Er staan op het moment geen openstaande gebruikersaanvragen in deze lijst.',
+	'confirmaccount-none-h' => 'Er staan op het moment geen uitgestelde gebruikersaanvragen in deze lijst.',
+	'confirmaccount-none-r' => 'Er staan op het moment geen recent afgewezen gebruikersaanvragen in deze lijst.',
+	'confirmaccount-none-e' => 'Er staan op het moment geen vervallen gebruikersaanvragen in deze lijst.',
 	'confirmaccount-real-q' => 'Naam',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografie',
 	'confirmaccount-showopen' => 'open aanvragen',
 	'confirmaccount-showrej' => 'verworpen aanvragen',
 	'confirmaccount-showheld' => 'aangehouden verzoeken',
-	'confirmaccount-showexp' => 'verlopen aanvragen',
+	'confirmaccount-showexp' => 'vervallen aanvragen',
 	'confirmaccount-review' => 'toegelaten/afgewezen',
 	'confirmaccount-types' => 'Selecteer een lijst met gebruikersverzoeken:',
 	'confirmaccount-all' => '(alle lijsten weergeven)',
@@ -5398,7 +5411,7 @@ Als u deze pagina verlaat zonder het gebruikersverzoek te bevestigen of af te wi
 	'confirmaccount-q-open' => 'open verzoeken',
 	'confirmaccount-q-held' => 'afgehandelde verzoeken',
 	'confirmaccount-q-rej' => 'recent afgewezen verzoeken',
-	'confirmaccount-q-stale' => 'verlopen resultaten',
+	'confirmaccount-q-stale' => 'vervallen verzoeken',
 	'confirmaccount-badid' => 'Er is geen openstaand gebruikersverzoek voor het opgegeven ID.
 Wellicht is het al afgehandeld.',
 	'confirmaccount-leg-user' => 'Gebruiker',
@@ -6080,7 +6093,7 @@ $messages['pl'] = array(
 
 Zanim jednak to zrobisz zapoznaj się z [[{{MediaWiki:Requestaccount-page}}|zasadami korzystania z konta]]
 
-Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość e-mail i będziesz mógł [[Special:UserLogin|się zalogować]].",
+Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość e‐mail i będziesz mógł [[Special:UserLogin|się zalogować]].",
 	'requestaccount-page' => '{{ns:project}}:Zasady użytkowania',
 	'requestaccount-dup' => "'''Uwaga: Jesteś już zalogowany na zarejestrowane konto.'''",
 	'requestaccount-leg-user' => 'Konto użytkownika',
@@ -6088,9 +6101,9 @@ Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość
 	'requestaccount-leg-person' => 'Informacje osobiste',
 	'requestaccount-leg-other' => 'Inne informacje',
 	'requestaccount-leg-tos' => 'Warunki użytkowania serwisu',
-	'requestaccount-acc-text' => 'Na Twój adres e-mail zostanie wysłana wiadomość potwierdzająca złożenie wniosku o założenie konta.
+	'requestaccount-acc-text' => 'Na Twój adres e‐mail zostanie wysłana wiadomość potwierdzająca złożenie wniosku o założenie konta.
 Kliknij na link zawarty w tej wiadomości.
-Hasło do konta zostanie przesłane poprzez e-mail, gdy konto zostanie już utworzone.',
+Hasło do konta zostanie przesłane poprzez e‐mail, gdy konto zostanie już utworzone.',
 	'requestaccount-areas-text' => 'Określ tematy i obszary dla których posiadasz formalne przygotowanie lub takie nad którymi planujesz najwięcej pracować.',
 	'requestaccount-ext-text' => 'Następujące informacje nie będą udostępniane. Zostaną użyte tylko na potrzeby tego wniosku o założenie konta użytkownika.
 Możesz wyświetlić kontakty np. numer telefonu, by łatwiej zdecydować o zatwierdzeniu lub odrzuceniu wniosku.',
@@ -6099,7 +6112,7 @@ Załącz informacje o kwalifikacjach i referencje, oczywiście pod warunkiem, ż
 Ustawione obecnie imię i nazwisko możesz zmienić w [[Special:Preferences|preferencjach]].',
 	'requestaccount-real' => 'Imię i nazwisko:',
 	'requestaccount-same' => '(prawdziwe imię i nazwisko)',
-	'requestaccount-email' => 'Adres e-mail:',
+	'requestaccount-email' => 'Adres e‐mail:',
 	'requestaccount-reqtype' => 'Stanowisko:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'redaktor',
@@ -6110,7 +6123,7 @@ Ustawione obecnie imię i nazwisko możesz zmienić w [[Special:Preferences|pref
 	'requestaccount-agree' => 'Musisz potwierdzić, że wpisane imię i nazwisko są poprawne oraz, że zgadzasz się na warunki korzystania z {{GRAMMAR:D.lp|{{SITENAME}}}}.',
 	'requestaccount-inuse' => 'Nazwa użytkownika jest zajęta przez oczekujący wniosek o założenie konta.',
 	'requestaccount-tooshort' => 'Biografia musi mieć co najmniej {{PLURAL:$1|1 słowo|$1 słowa|$1 słów}}.',
-	'requestaccount-emaildup' => 'W innym oczekującym wniosku o założenie konta użytkownika wpisano taki sam adres e-mail.',
+	'requestaccount-emaildup' => 'W innym oczekującym wniosku o założenie konta użytkownika wpisano taki sam adres e‐mail.',
 	'requestaccount-exts' => 'Niedozwolony typ załącznika.',
 	'requestaccount-resub' => 'Plik z Twoim życiorysem musi zostać ponownie wybrany ze względów bezpieczeństwa.
 Pozostaw pole niewypełnione jeśli nie chcesz więcej go załączać.',
@@ -6118,24 +6131,24 @@ Pozostaw pole niewypełnione jeśli nie chcesz więcej go załączać.',
 Oświadczam, że wpisane przez ze mnie imię i nazwisko są faktycznie moimi.',
 	'requestaccount-submit' => 'Składam wniosek',
 	'requestaccount-sent' => 'Twój wniosek o założenie konta został wysłany i oczekuje na rozpatrzenie.',
-	'request-account-econf' => 'Adres e-mail został potwierdzony i będzie wyświetlany tak, jak określono we wniosku o założenie konta.',
-	'requestaccount-email-subj' => 'Potwierdzenie adresu e-mail w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
-	'requestaccount-email-body' => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, złożył w {{GRAMMAR:MS.pl|{{SITENAME}}}} wniosek o założenie konta użytkownika „$2”, podając przy tym niniejszy adres e-mail.
+	'request-account-econf' => 'Adres e‐mail został potwierdzony i będzie wyświetlany tak, jak określono we wniosku o założenie konta.',
+	'requestaccount-email-subj' => 'Potwierdzenie adresu e‐mail w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
+	'requestaccount-email-body' => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, złożył w {{GRAMMAR:MS.pl|{{SITENAME}}}} wniosek o założenie konta użytkownika „$2”, podając przy tym niniejszy adres e‐mail.
 
 Jeśli to Ty zakładasz konto w {{GRAMMAR:MS.pl|{{SITENAME}}}}, potwierdź to otwierając w swojej przeglądarce poniższy link:
 
 $3
 
-Jeśli konto zostanie utworzone, zostanie wysłane do Ciebie na ten adres e-mail hasło.
+Jeśli konto zostanie utworzone, zostanie wysłane do Ciebie na ten adres e‐mail hasło.
 Jeśli to nie Ty zakładałeś konto, *nie klikaj* w powyższy link.
 Kod potwierdzający zawarty w powyższym linku straci ważność $4.',
 	'requestaccount-email-subj-admin' => 'Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
 	'requestaccount-email-body-admin' => '„$1” złożył wniosek o założenie konta użytkownika i oczekuje na zatwierdzenie.
-Adres e-mail został potwierdzony. Możesz zatwierdzić wniosek tutaj „$2”.',
+Adres e‐mail został potwierdzony. Możesz zatwierdzić wniosek tutaj „$2”.',
 	'acct_request_throttle_hit' => 'Złożyłeś już {{PLURAL:$1|1 wniosek|$1 wnioski|$1 wniosków}} o założenie konta użytkownika.
 Nie możesz złożyć więcej wniosków.',
 	'requestaccount-loginnotice' => "By uzyskać konto użytkownika musisz '''[[Special:RequestAccount|złożyć wniosek]]'''.",
-	'confirmaccount-newrequests' => "{{PLURAL:$1|Jest '''$1''' [[Special:ConfirmAccounts|oczekujący wniosek]]|Są '''$1''' [[Special:ConfirmAccounts|oczekujące wnioski]]|Jest '''$1''' [[Special:ConfirmAccounts|oczekujących wniosków]]}}, z potwierdzonym adresem e-mail",
+	'confirmaccount-newrequests' => "{{PLURAL:$1|Jest '''$1''' [[Special:ConfirmAccounts|oczekujący wniosek]]|Są '''$1''' [[Special:ConfirmAccounts|oczekujące wnioski]]|Jest '''$1''' [[Special:ConfirmAccounts|oczekujących wniosków]]}}, z potwierdzonym adresem e‐mail",
 	'confirmaccounts' => 'Potwierdź wniosek o założenie konta użytkownika',
 	'confirmedit-desc' => 'Pozwala biurokratom akceptować wnioski o założenie konta użytkownika',
 	'confirmaccount-maintext' => "'''Na tej stronie można potwierdzać wnioski o utworzenie konta w ''{{GRAMMAR:D.lp|{{SITENAME}}}}'''''.
@@ -6162,7 +6175,7 @@ Wniosek, którego nie potwierdzisz lub nie odrzucisz na tej stronie, pozostanie 
 	'confirmaccount-none-r' => 'Brak na liście niedawno odrzuconych wniosków o założenie konta użytkownika.',
 	'confirmaccount-none-e' => 'Brak na liście przeterminowanych wniosków o założenie konta użytkownika.',
 	'confirmaccount-real-q' => 'Imię i nazwisko',
-	'confirmaccount-email-q' => 'Adres e-mail',
+	'confirmaccount-email-q' => 'Adres e‐mail',
 	'confirmaccount-bio-q' => 'Biografia',
 	'confirmaccount-showopen' => 'otwarte wnioski o założenie konta',
 	'confirmaccount-showrej' => 'odrzucone wnioski o założenie konta',
@@ -6186,7 +6199,7 @@ Być może został on już obsłużony.',
 	'confirmaccount-leg-other' => 'Inne informacje',
 	'confirmaccount-name' => 'Nazwa użytkownika',
 	'confirmaccount-real' => 'Imię i nazwisko',
-	'confirmaccount-email' => 'Adres e-mail',
+	'confirmaccount-email' => 'Adres e‐mail',
 	'confirmaccount-reqtype' => 'Stanowisko:',
 	'confirmaccount-pos-0' => 'autor',
 	'confirmaccount-pos-1' => 'redaktor',
@@ -6205,8 +6218,8 @@ Być może został on już obsłużony.',
 	'confirmaccount-create' => 'Zaakceptuj (utwórz konto)',
 	'confirmaccount-deny' => 'Odrzuć (usuń z listy)',
 	'confirmaccount-hold' => 'Wstrzymaj',
-	'confirmaccount-spam' => 'Spam (nie wysyłaj wiadomości e-mail)',
-	'confirmaccount-reason' => 'Komentarz (zostanie dopisany do wiadomości e-mail):',
+	'confirmaccount-spam' => 'Spam (nie wysyłaj wiadomości e‐mail)',
+	'confirmaccount-reason' => 'Komentarz (zostanie dopisany do wiadomości e‐mail):',
 	'confirmaccount-ip' => 'Adres IP:',
 	'confirmaccount-submit' => 'Potwierdź',
 	'confirmaccount-needreason' => 'Musisz podać uzasadnienie w polu poniżej.',
@@ -6260,7 +6273,7 @@ Jeśli chcesz dowiedzieć się więcej o zasadach tworzenia kont w serwisie, pos
 	'usercredentials-leg-areas' => 'Główne obszary zainteresowań',
 	'usercredentials-leg-person' => 'Informacje osobiste',
 	'usercredentials-leg-other' => 'Inne informacje',
-	'usercredentials-email' => 'Adres e-mail',
+	'usercredentials-email' => 'Adres e‐mail',
 	'usercredentials-real' => 'Imię i nazwisko:',
 	'usercredentials-bio' => 'Biografia:',
 	'usercredentials-attach' => 'Życiorys:',
