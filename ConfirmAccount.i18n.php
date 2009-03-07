@@ -1082,7 +1082,13 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'requestaccount' => 'Zahtjev za račun',
+	'requestaccount-leg-other' => 'Ostale informacije',
+	'requestaccount-real' => 'Pravo ime:',
+	'requestaccount-email' => 'E-mail adresa:',
 	'requestaccount-level-0' => 'autor',
+	'requestaccount-bio' => 'Lična biografija:',
+	'requestaccount-notes' => 'Dodatne napomene:',
+	'requestaccount-tooshort' => 'Vaša biografija mora biti duga najmanje $1 {{PLURAL:$1|riječ|riječi}}.',
 	'requestaccount-submit' => 'Zahtjevaj račun',
 	'requestaccount-email-subj-admin' => 'Zahtjev za račun na {{SITENAME}}',
 	'confirmaccounts' => 'Potvrdi zahtjeve za račun',
