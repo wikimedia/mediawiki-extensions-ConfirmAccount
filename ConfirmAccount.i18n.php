@@ -6125,9 +6125,9 @@ Hasło do konta zostanie przesłane poprzez e‐mail, gdy konto zostanie już ut
 	'requestaccount-areas-text' => 'Określ tematy i obszary dla których posiadasz formalne przygotowanie lub takie nad którymi planujesz najwięcej pracować.',
 	'requestaccount-ext-text' => 'Następujące informacje nie będą udostępniane. Zostaną użyte tylko na potrzeby tego wniosku o założenie konta użytkownika.
 Możesz wyświetlić kontakty np. numer telefonu, by łatwiej zdecydować o zatwierdzeniu lub odrzuceniu wniosku.',
-	'requestaccount-bio-text' => 'Twoja biografia zostanie wstawiona jako domyślna zawartość Twojej strony użytkownika.
-Załącz informacje o kwalifikacjach i referencje, oczywiście pod warunkiem, że nie opublikowanie tych informacji nie stawi dla Ciebie problemu.
-Ustawione obecnie imię i nazwisko możesz zmienić w [[Special:Preferences|preferencjach]].',
+	'requestaccount-bio-text' => 'Biografia zostanie wstawiona jako domyślna zawartość Twojej strony użytkownika.
+Załącz informacje o kwalifikacjach i referencje, oczywiście pod warunkiem, że opublikowanie tych informacji nie stanowi dla Ciebie problemu.
+Imię i nazwisko będziesz mógł poprawić w [[Special:Preferences|preferencjach]].',
 	'requestaccount-real' => 'Imię i nazwisko:',
 	'requestaccount-same' => '(prawdziwe imię i nazwisko)',
 	'requestaccount-email' => 'Adres e‐mail:',
