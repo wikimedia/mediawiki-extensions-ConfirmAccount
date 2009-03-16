@@ -1674,6 +1674,7 @@ $messages['ee'] = array(
 
 /** Greek (Ελληνικά)
  * @author Consta
+ * @author Crazymadlover
  */
 $messages['el'] = array(
 	'requestaccount-leg-user' => 'Λογαριασμός χρήστη',
@@ -1694,6 +1695,7 @@ $messages['el'] = array(
 	'confirmaccount-reqtype' => 'Θέση:',
 	'confirmaccount-bio' => 'Βιογραφία:',
 	'confirmaccount-urls' => 'Λίστα των ιστοσελίδων:',
+	'confirmaccount-noreason' => '(κανένα)',
 	'confirmaccount-create' => 'Αποδοχή (Δημιουργία λογαριασμού)',
 	'confirmaccount-ip' => 'διεύθυνση ΙΡ:',
 	'confirmaccount-wsum' => 'Καλός ήρθατε!',
