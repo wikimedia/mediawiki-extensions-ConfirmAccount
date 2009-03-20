@@ -96,11 +96,9 @@ class RequestAccountPage extends SpecialPage {
 		}
 
 		$wgOut->addWikiText( wfMsg( "requestaccount-text" ) );
-
-		$titleObj = Title::makeTitle( NS_SPECIAL, 'RequestAccount' );
 		
 		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
-			'action' => $titleObj->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
+			'action' => $this->getTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
 		$form .= '<fieldset><legend>' . wfMsgHtml('requestaccount-leg-user') . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-acc-text', array('parse') )."\n";
 		$form .= '<table cellpadding=\'4\'>';
@@ -210,7 +208,7 @@ class RequestAccountPage extends SpecialPage {
 			$form .= $captcha->getForm();
 			$form .= '</fieldset>';
 		}
-		$form .= Xml::hidden( 'title', $titleObj->getPrefixedUrl() )."\n";
+		$form .= Xml::hidden( 'title', $this->getTitle()->getPrefixedDBKey() )."\n";
 		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .= Xml::hidden( 'attachment', $this->mPrevAttachment )."\n";
 		$form .= Xml::hidden( 'forgotAttachment', $this->mForgotAttachment )."\n";

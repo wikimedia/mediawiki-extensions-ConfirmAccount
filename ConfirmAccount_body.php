@@ -196,7 +196,7 @@ class ConfirmAccountsPage extends SpecialPage
 	function showForm( $msg='' ) {
 		global $wgOut, $wgUser, $wgLang, $wgAccountRequestTypes;
 		
-		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
+		$titleObj = SpecialPage::getTitleFor( 'confirmAccounts', $this->specialPageParameter );
 		
 		$row = $this->getRequest();
 		if( !$row || $row->acr_rejected && !$this->showRejects ) {
