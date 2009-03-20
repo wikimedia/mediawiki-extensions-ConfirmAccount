@@ -1082,22 +1082,44 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'requestaccount' => 'Zahtjev za račun',
+	'requestaccount-page' => '{{ns:project}}:Uslovi korištenja',
+	'requestaccount-dup' => "'''Napomena: Već ste prijavljeni sa registrovanim računom.'''",
+	'requestaccount-leg-user' => 'Korisnički račun',
+	'requestaccount-leg-areas' => 'Glavna područja interesa',
+	'requestaccount-leg-person' => 'Lične informacije',
 	'requestaccount-leg-other' => 'Ostale informacije',
 	'requestaccount-real' => 'Pravo ime:',
+	'requestaccount-same' => '(isto kao i pravo ime)',
 	'requestaccount-email' => 'E-mail adresa:',
+	'requestaccount-reqtype' => 'Pozicija:',
 	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'uređivač',
 	'requestaccount-bio' => 'Lična biografija:',
 	'requestaccount-notes' => 'Dodatne napomene:',
+	'requestaccount-urls' => 'Spisak web stranica, ako ih ima (odvojiti sa novim redovima):',
+	'requestaccount-inuse' => 'Korisničko ime je već u upotrebi u zahtjevu za račun.',
 	'requestaccount-tooshort' => 'Vaša biografija mora biti duga najmanje $1 {{PLURAL:$1|riječ|riječi}}.',
+	'requestaccount-exts' => 'Vrsta datoteke u privitku nije dopuštena.',
 	'requestaccount-submit' => 'Zahtjevaj račun',
+	'requestaccount-sent' => 'Vaš zahtjev za račun je uspješno poslan i sada očekuje provjeru.',
+	'request-account-econf' => 'Vaša e-mail adresa je potvrđena i bit će prikazana kako je navedeno u Vašem zahjevu za račun.',
 	'requestaccount-email-subj-admin' => 'Zahtjev za račun na {{SITENAME}}',
 	'confirmaccounts' => 'Potvrdi zahtjeve za račun',
 	'confirmaccount-real-q' => 'Ime',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografija',
+	'confirmaccount-showopen' => 'otvoreni zahtjevi',
 	'confirmaccount-name' => 'Korisničko ime',
 	'confirmaccount-real' => 'Ime:',
+	'confirmaccount-email' => 'E-mail:',
 	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-ip' => 'IP adresa:',
+	'confirmaccount-wsum' => 'Dobrodošli!',
+	'usercredentials-user' => 'Korisničko ime:',
+	'usercredentials-leg-other' => 'Ostale informacije',
+	'usercredentials-email' => 'E-mail:',
+	'usercredentials-real' => 'Pravo ime:',
+	'usercredentials-member' => 'Prava:',
 );
 
 /** Catalan (Català)
@@ -1912,8 +1934,43 @@ creada nueva cuenta de usuario [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Solicitud de cuenta rechazada exitosamente.',
 	'confirmaccount-viewing' => '(actualmente siendo visto por [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Creando página de usuario con biografía del nuevo usuario.',
+	'confirmaccount-welc' => "'''Bienvenido a ''{{SITENAME}}''!'''
+Esperamos que contribuyas mucho y bien.  
+Probablemente desearás leer las [[{{MediaWiki:Helppage}}|páginas de ayuda]].
+Nuevamente, bienvenido y diviértete!",
 	'confirmaccount-wsum' => 'Bienvenido!',
 	'confirmaccount-email-subj' => '{{SITENAME}} solicitud de cuenta',
+	'confirmaccount-email-body' => 'Tu solicitud para una cuenta ha sido aprobada en {{SITENAME}}.
+
+Nombre de cuenta: $1
+
+Contraseña: $2
+
+Por razones de seguridad necesitarás cambiar tu contraseña en la primera sesión. Para iniciar sesión, por favor vaya a {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Tu solicitud para una cuenta ha sido aprobada en {{SITENAME}}.
+
+Nombre de cuenta: $1
+
+Contraseña: $2
+
+$3
+
+Por razones de seguridad necesitarás cambiar tu contraseña en la primera sesión. Para iniciar sesión, por favor vaya a {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Disculpa, tu solicitud para una cuenta "$1" ha sido rechazada en {{SITENAME}}.
+
+Hay muchas razones para que esto ocurra.
+Puedes no haber llenado el formulario correctamente, no proveíste una longitud adecuada en tus respuestas, o de lo contrario no has cumplido con algunos criterios de la política.
+Puede haber listas de contacto en este sitio que puedas usar si deseas conocer más acerca de la política de cuenta de usuario.',
+	'confirmaccount-email-body4' => 'Disculpa, tu solicitud para una cuenta "$1" ha sido rechazada en {{SITENAME}}.
+
+$2
+
+Puede haber listas de contacto en este sitio que puedas usar si deseas conocer más acerca de la política de cuenta de usuario.',
+	'confirmaccount-email-body5' => 'Antes que tu solicitud para una cuenta "$1" pueda ser aceptada en {{SITENAME}} debes primero proveer alguna información adicional.
+
+$2
+
+Puede haber listas de contacto en este sitio que puedes usar si deseas conocer más acerca de la política de cuenta de usuario.',
 	'usercredentials' => 'Credenciales de usuario',
 	'usercredentials-user' => 'Nombre de usuario:',
 	'usercredentials-leg-user' => 'Cuenta de usuario',
