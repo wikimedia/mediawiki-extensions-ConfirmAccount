@@ -246,8 +246,8 @@ $aliases['th'] = array(
 
 /** Tagalog (Tagalog) */
 $aliases['tl'] = array(
-	'RequestAccount' => array( 'Hilingin ang akawnt' ),
-	'ConfirmAccounts' => array( 'Tiyakin ang mga akawnt' ),
+	'RequestAccount' => array( 'Hilingin ang kuwenta', 'HilingKuwenta' ),
+	'ConfirmAccounts' => array( 'Tiyakin ang mga kuwenta' ),
 	'UserCredentials' => array( 'Mga katibayan ng katangian ng tagagamit' ),
 );
 
