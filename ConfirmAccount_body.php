@@ -196,7 +196,7 @@ class ConfirmAccountsPage extends SpecialPage
 	function showForm( $msg='' ) {
 		global $wgOut, $wgUser, $wgLang, $wgAccountRequestTypes;
 		
-		$titleObj = SpecialPage::getTitleFor( 'confirmAccounts', $this->specialPageParameter );
+		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		
 		$row = $this->getRequest();
 		if( !$row || $row->acr_rejected && !$this->showRejects ) {
@@ -349,8 +349,7 @@ class ConfirmAccountsPage extends SpecialPage
 
 		$form .= "<div id='wpComment'><p>".wfMsgHtml('confirmaccount-reason')."</p>\n";
 		$form .= "<p><textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
-			htmlspecialchars($this->reason) .
-			"</textarea></p></div>\n";
+			htmlspecialchars($this->reason) . "</textarea></p></div>\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
 		$form .= Xml::hidden( 'title', $titleObj->getPrefixedUrl() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
