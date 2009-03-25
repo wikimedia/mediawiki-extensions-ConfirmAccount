@@ -81,7 +81,7 @@ class ConfirmAccountsPage extends SpecialPage
 
 		$this->skin = $wgUser->getSkin();
 		
-		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
+		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		
 		# Show other sub-queue links. Grey out the current one.
 		# When viewing a request, show them all.
@@ -129,7 +129,7 @@ class ConfirmAccountsPage extends SpecialPage
 		
 		# Say what queue we are in...
 		if( $this->queueType != -1 ) {
-			$titleObj = Title::makeTitle( NS_SPECIAL, 'ConfirmAccounts' );
+			$titleObj = $this->getTitle();
 			$viewall = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml('confirmaccount-all') );
 		
 			$wgOut->setSubtitle( "<strong>" . wfMsgHtml('confirmaccount-type') . " <i>" .
@@ -161,7 +161,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$dbr = wfGetDB( DB_SLAVE );
 		# List each queue
 		foreach( $wgAccountRequestTypes as $i => $params ) {
-			$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$params[0]}" );
+			$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $params[0] );
 		
 			$open = '<b>'.$this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-q-open' ),
 				wfArrayToCGI( array('wpShowHeld' => 0) ) ).'</b>';
@@ -351,7 +351,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<p><textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
 			htmlspecialchars($this->reason) . "</textarea></p></div>\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
-		$form .= Xml::hidden( 'title', $titleObj->getPrefixedUrl() )."\n";
+		$form .= Xml::hidden( 'title', $titleObj->getPrefixedDBKey() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
 		$form .= Xml::hidden( 'acrid', $row->acr_id );
 		$form .= Xml::hidden( 'wpShowRejects', $this->showRejects );
@@ -392,7 +392,7 @@ class ConfirmAccountsPage extends SpecialPage
 	
 	function doSubmit() {
 		global $wgOut, $wgUser;
-		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
+		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		$row = $this->getRequest( true );
 		if( !$row ) {
 			$wgOut->addHTML( wfMsgHtml('confirmaccount-badid') );
@@ -782,7 +782,7 @@ class ConfirmAccountsPage extends SpecialPage
 	function showSuccess( $titleObj, $name = NULL, $errors = array() ) {
 		global $wgOut;
 
-		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
+		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		$wgOut->setPagetitle( wfMsgHtml('actioncomplete') );
 		if( $this->submitType == 'accept' ) {
 			$wgOut->addWikiText( wfMsg( "confirmaccount-acc", $name ) );
@@ -803,7 +803,7 @@ class ConfirmAccountsPage extends SpecialPage
 	function showList() {
 		global $wgOut, $wgUser, $wgLang;
 		
-		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
+		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		
 		# Output the list
 		$pager = new ConfirmAccountsPager( $this, array(), 
@@ -896,7 +896,7 @@ class ConfirmAccountsPage extends SpecialPage
 	function formatRow( $row ) {
 		global $wgLang, $wgUser, $wgUseRealNamesOnly, $wgAllowRealName;
 
-		$titleObj = Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->specialPageParameter}" );
+		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		if( $this->showRejects || $this->showStale ) {
 			$link = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml('confirmaccount-review'), 
 				'acrid='.$row->acr_id.'&wpShowRejects=1' );
@@ -985,7 +985,7 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 	}
 	
 	function getTitle() {
-		return Title::makeTitle( NS_SPECIAL, "ConfirmAccounts/{$this->mForm->specialPageParameter}" );
+		return SpecialPage::getTitleFor( 'ConfirmAccounts', $this->mForm->specialPageParameter );
 	}
 	
 	function formatRow( $row ) {
