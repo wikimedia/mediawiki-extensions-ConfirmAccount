@@ -6686,6 +6686,63 @@ Poderá haver listas de contactos no sítio que poderá usar se desejar saber ma
 	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está correctamente escrito.',
 );
 
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Eduardo.mps
+ */
+$messages['pt-br'] = array(
+	'requestaccount' => 'Requisitar conta',
+	'requestaccount-text' => "'''Complete e submeta o seguinte formulário para pedir uma conta de utilizador'''.   
+
+Certifique-se de que leu primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.
+
+Assim que a conta for aprovada, será enviada a você por email uma mensagem de notificação e a conta estará pronta para usar na [[Special:UserLogin|autenticação]].",
+	'requestaccount-page' => '{{ns:project}}:Termos de Serviço',
+	'requestaccount-dup' => "'''Nota: Você já está autenticado com uma conta registrada.'''",
+	'requestaccount-leg-user' => 'Conta de utilizador',
+	'requestaccount-leg-areas' => 'Principais áreas de interesse',
+	'requestaccount-leg-person' => 'Informação pessoal',
+	'requestaccount-leg-other' => 'Outras informações',
+	'requestaccount-leg-tos' => 'Termos do Serviço',
+	'requestaccount-acc-text' => 'Será enviada um mensagem de confirmação para o seu endereço de email assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação fornecida no email. A sua palavra-chave também lhe será enviada por email assim que a sua conta estiver criada.',
+	'requestaccount-areas-text' => 'Selecione abaixo as áreas em que possui experiência formal ou em que gostaria de trabalhar mais.',
+	'requestaccount-ext-text' => 'A seguinte informação é mantida privada e só será usada para este pedido.
+Poderá querer listar contatos tal como o número de telefone para ajudar na confirmação da identificação.',
+	'requestaccount-bio-text' => 'A sua biografia será usada como conteúdo padrão da sua página de utilizador.
+Tente incluir algumas credenciais.
+Assegure-se de que se encontra confortável em publicar tal informação.
+O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
+	'requestaccount-real' => 'Nome real:',
+	'requestaccount-same' => '(igual ao nome real)',
+	'requestaccount-email' => 'Endereço de e-mail:',
+	'requestaccount-reqtype' => 'Posição:',
+	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'editor',
+	'requestaccount-bio' => 'Biografia pessoal:',
+	'requestaccount-attach' => 'Curriculum Vitae (opcional):',
+	'requestaccount-notes' => 'Notas adicionais:',
+	'requestaccount-urls' => 'Lista de sítios web, se houver algum (separados por mudança de linha):',
+	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correto e que concorda com os nossos Termos de Serviço.',
+	'requestaccount-inuse' => 'O nome de utilizador já está em uso num pedido de conta pendente.',
+	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 palavras.',
+	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo endereço de email.',
+	'requestaccount-exts' => 'O tipo de arquivo do anexo não é permitido.',
+	'requestaccount-resub' => 'O seu Curriculum Vitae deve ser selecionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
+	'requestaccount-tos' => 'Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] de {{SITENAME}}.
+O nome que especifiquei em "Nome real" é de fato o meu nome real.',
+	'requestaccount-submit' => 'Requisitar conta',
+	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora pendente para confirmação.',
+	'request-account-econf' => 'O seu endereço de email foi confirmado e será listado como tal no seu pedido de conta.',
+	'requestaccount-email-subj' => 'Confirmação de endereço de email para {{SITENAME}}',
+	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, requisitou uma conta "$2" com este endereço de email em {{SITENAME}}.
+
+Para confirmar que esta conta realmente lhe pertence em {{SITENAME}}, abra esta ligação no seu navegador:
+
+$3
+
+Se a conta for criada, apenas a você será enviada a palavra-chave. Se esta pessoa *não* for você, não siga a ligação.
+Este código de confirmação expirará em $4.',
+);
+
 /** Tarifit (Tarifit)
  * @author Jose77
  */
