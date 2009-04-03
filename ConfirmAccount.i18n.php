@@ -1729,6 +1729,7 @@ $messages['el'] = array(
 	'usercredentials-leg-other' => 'Άλλες πληροφορίες',
 	'usercredentials-email' => 'Ηλεκτρονικό ταχυδρομείο:',
 	'usercredentials-bio' => 'Βιογραφία:',
+	'usercredentials-member' => 'Δικαιώματα:',
 );
 
 /** Esperanto (Esperanto)
@@ -2790,6 +2791,7 @@ $messages['grc'] = array(
 	'requestaccount-level-1' => 'μεταγραφεύς',
 	'confirmaccount-real-q' => 'Ὄνομα',
 	'confirmaccount-email-q' => 'Ἠλεκτρονικαὶ ἐπιστολαί',
+	'confirmaccount-review' => 'Éπισκόπησις',
 	'confirmaccount-name' => 'Ὄνομα χρωμένου',
 	'confirmaccount-real' => 'Ὄνομα:',
 	'confirmaccount-email' => 'Ἠλεκτρονικαὶ ἐπιστολαί:',
