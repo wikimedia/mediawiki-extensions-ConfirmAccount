@@ -246,7 +246,7 @@ $messages['qqq'] = array(
 	'requestaccount-notes' => '{{Identical|Additional notes}}',
 	'requestaccount-submit' => '{{Identical|Request account}}',
 	'requestaccount-email-subj-admin' => '{{Identical|SITENAME account request}}',
-	'requestaccount-email-body-admin' => 'This message is the e-mail body text send to a site administrator whenever someone has requested a new account.
+	'requestaccount-email-body-admin' => 'This message is the email body text send to a site admin whenever someone has requested a new account.
 * $1: is a username
 * $2 is a URL',
 	'confirmedit-desc' => 'Short description of this extension, shown on [[Special:Version]]. Do not translate or change links.',
@@ -1877,6 +1877,10 @@ Tu contraseña será enviada cuando tu cuenta sea creada.',
 	'requestaccount-areas-text' => 'Seleccione las áreas en las que tiene experiencia formal o que le interesa colaborar.',
 	'requestaccount-ext-text' => 'La siguiente información se mantiene privada y sólo será usada para esta solicitud.
 Usted puede desear enlistar contactos como un número telefónico para ayudar en la confirmación de la identidad.',
+	'requestaccount-bio-text' => 'Tu biografía será configurado como el contenido por defecto de tu página de usuario.
+Trate de incluir alguna credencial.
+Asegúrese de estar conforme con la publicación de tal información.
+Tu nombre puede ser cambiado a través de [[Special:Preferences|Tus preferencias]].',
 	'requestaccount-real' => 'Nombre real:',
 	'requestaccount-same' => '[Tu nombre real]',
 	'requestaccount-email' => 'Dirección de correo electrónico:',
@@ -1891,14 +1895,21 @@ Usted puede desear enlistar contactos como un número telefónico para ayudar en
 	'requestaccount-inuse' => 'El nombre de usuario ya está en uso en una solicitud de cuenta pendiente.',
 	'requestaccount-tooshort' => 'Tu biografía debe ser al menos de $1 palabras de largo.',
 	'requestaccount-emaildup' => 'Alguna otra solicitud de cuenta pendiente usa la misma dirección de correo electrónico.',
+	'requestaccount-exts' => 'Tipo de archivo adjunto no está permitido.',
 	'requestaccount-submit' => 'Solicitar cuenta',
 	'requestaccount-sent' => 'Tu solicitud de cuenta ha sido exitosamente enviado y está ahora en una revisión pendiente.',
 	'request-account-econf' => 'Tu correo electrónico ha sido onfirmado y será listado como tal en tu solicitud de cuenta.',
 	'requestaccount-email-subj' => '{{SITENAME}} confirmación de dirección de correo electrónico',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} solicitud de cuenta',
+	'requestaccount-email-body-admin' => '"$1" ha solicitado una cuenta y está esperando por su confirmación.
+La dirección de correo electrónico ha sido confirmada. Puedes confirmar la solicitud aquí "$2".',
+	'acct_request_throttle_hit' => 'Perdón, ya has solicitado {{PLURAL:$1|1 cuenta|$1 cuentas}}.
+No puedes hacer ninguna otra solicitud.',
 	'requestaccount-loginnotice' => "Para obtener una cuenta de usuario, debes '''[[Special:RequestAccount|solicitar una]]'''.",
 	'confirmaccounts' => 'Confirmar solicitudes de cuenta',
 	'confirmedit-desc' => 'Da a los burócratas la habilidad de confirmar solicitudes de cuenta',
+	'confirmaccount-list' => 'Debajo hay una lista de solicitudes de cuenta esperando aprobación.
+una vez que una solicitud es tanto aprovada como rechazada se removerá de esta lista.',
 	'confirmaccount-real-q' => 'Nombre',
 	'confirmaccount-email-q' => 'Correo electrónico',
 	'confirmaccount-bio-q' => 'Biografía',
@@ -1906,6 +1917,7 @@ Usted puede desear enlistar contactos como un número telefónico para ayudar en
 	'confirmaccount-showrej' => 'solicitudes rechazadas',
 	'confirmaccount-showexp' => 'solicitudes expiradas',
 	'confirmaccount-review' => 'Revisar',
+	'confirmaccount-types' => 'Seleccione una cola de confirmación de cuenta de abajo:',
 	'confirmaccount-all' => '(mostrar todas las colas)',
 	'confirmaccount-type' => 'Cola:',
 	'confirmaccount-q-open' => 'solicitudes abiertas',
@@ -8558,6 +8570,15 @@ $messages['uk'] = array(
  */
 $messages['vec'] = array(
 	'confirmedit-desc' => 'Permete ai burocrati de confermar le richieste de account',
+);
+
+/** Veps (Vepsan kel')
+ * @author Triple-ADHD-AS
+ */
+$messages['vep'] = array(
+	'confirmaccount-real-q' => 'Nimi',
+	'confirmaccount-real' => 'Nimi:',
+	'confirmaccount-ip' => 'IP-adres:',
 );
 
 /** Vietnamese (Tiếng Việt)
