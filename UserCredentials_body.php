@@ -43,13 +43,13 @@ class UserCredentialsPage extends SpecialPage
 	}
 	
 	function showForm() {
-		global $wgOut, $wgTitle, $wgScript;
+		global $wgOut, $wgScript;
 	
 		$username = str_replace( '_', ' ', $this->target );
 		$form = Xml::openElement( 'form', array( 'name' => 'stablization', 'action' => $wgScript, 'method' => 'get' ) );
 		$form .= "<fieldset><legend>".wfMsg('usercredentials-leg')."</legend>";
 		$form .= "<table><tr>";
-		$form .= "<td>".Xml::hidden( 'title', $wgTitle->getPrefixedText() )."</td>";
+		$form .= "<td>".Xml::hidden( 'title', $this->getTitle()->getPrefixedText() )."</td>";
 		$form .= "<td>".wfMsgHtml("usercredentials-user")."</td>";
 		$form .= "<td>".Xml::input('target', 35, $username, array( 'id' => 'wpUsername' ) )."</td>";
 		$form .= "<td>".Xml::submitButton( wfMsg( 'go' ) )."</td>";
