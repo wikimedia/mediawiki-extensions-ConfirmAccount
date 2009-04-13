@@ -128,6 +128,11 @@ $aliases['ia'] = array(
 	'UserCredentials' => array( 'Referentias del usator' ),
 );
 
+/** Italian (Italiano) */
+$aliases['it'] = array(
+	'UserCredentials' => array( 'CredenzialiUtente' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'RequestAccount' => array( 'アカウント申請', 'アカウント登録申請' ),
