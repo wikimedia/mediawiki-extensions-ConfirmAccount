@@ -4277,19 +4277,212 @@ $messages['is'] = array(
  * @author Darth Kule
  * @author Melos
  * @author Pietrodn
+ * @author Stefano-c
  */
 $messages['it'] = array(
+	'requestaccount' => 'Richiesta account',
+	'requestaccount-text' => "'''Completa e invia il seguente modulo per richiedere un account utente'''.
+
+Assicurarsi di aver prima letto i [[{{MediaWiki:Requestaccount-page}}|Termini del Servizio]] prima di richiedere un account.
+
+Quando l'account sarà stato approvato, ti verrà inviato via e-mail un messaggio di notifica e l'account sarà utilizzabile al [[Special:UserLogin|login]].",
+	'requestaccount-page' => '{{ns:project}}:Termini del Servizio',
+	'requestaccount-dup' => "'''Nota: hai già effettuato l'accesso con un account registrato.'''",
+	'requestaccount-leg-user' => 'Account utente',
+	'requestaccount-leg-areas' => "Principali aree d'interesse",
+	'requestaccount-leg-person' => 'Informazioni personali',
+	'requestaccount-leg-other' => 'Altre informazioni',
+	'requestaccount-leg-tos' => 'Termini del Servizio',
+	'requestaccount-acc-text' => "Al tuo indirizzo e-mail verrà inviato un messaggio di conferma quando questa richiesta sarà inviata.
+Per favore rispondi facendo clic sul link di conferma fornito nell'e-mail.
+Inoltre la tua password sarà inviata via e-mail quando il tuo account sarà stato creato.",
+	'requestaccount-areas-text' => 'Selezionare le aree di seguito in cui si hanno competenze formali o in cui si vorrebbe fare la maggior parte del lavoro.',
+	'requestaccount-ext-text' => "Le seguenti informazioni saranno tenute private e saranno usate solo per questa richiesta.
+Potresti voler inserire dei contatti come un numero di telefono per aiutare l'identificazione.",
+	'requestaccount-bio-text' => 'La tua biografia sarà impostata come contenuto predefinito per la tua pagina utente.
+Cerca di inserire tutte le credenziali.
+Assicurati di voler pubblicare tali informazioni.
+Il tuo nome può essere modificato tramite le [[Special:Preferences|tue preferenze]].',
+	'requestaccount-real' => 'Vero nome:',
+	'requestaccount-same' => '(uguale al vero nome)',
+	'requestaccount-email' => 'Indirizzo e-mail:',
+	'requestaccount-reqtype' => 'Posizione:',
+	'requestaccount-level-0' => 'autore',
 	'requestaccount-level-1' => 'editore',
+	'requestaccount-bio' => 'Biografia personale:',
+	'requestaccount-attach' => 'Curriculum (opzionale):',
+	'requestaccount-notes' => 'Ulteriori note:',
+	'requestaccount-urls' => 'Elenco dei siti web, se ce ne sono (uno per riga):',
+	'requestaccount-agree' => 'Devi certificare che il tuo vero nome sia corretto e che accetti i nostri Termini di Servizio.',
+	'requestaccount-inuse' => "Il nome utente è già in uso in un'altra richiesta in attesa.",
+	'requestaccount-tooshort' => 'La tua biografia deve essere di almeno $1 parole.',
+	'requestaccount-emaildup' => "Un'altra richiesta in attesa utilizza lo stesso indirizzo e-mail.",
+	'requestaccount-exts' => 'Tipo di file allegato non permesso.',
+	'requestaccount-resub' => 'Il file del tuo curriculum deve essere ri-selezionato per motivi di sicurezza.
+Lascia il campo vuoto se non desideri più includerne uno.',
+	'requestaccount-tos' => 'Ho letto e accetto di rispettare i [[{{MediaWiki:Requestaccount-page}}|Termini del Servizio]] di {{SITENAME}}.
+Il nome che ho specificato come "Vero nome" è infatti il mio vero nome.',
+	'requestaccount-submit' => 'Richiesta account',
+	'requestaccount-sent' => 'La tua richiesta account è stata inviata con successo ed è ora in attesa di verifica.',
+	'request-account-econf' => 'Il tuo indirizzo e-mail è stato confermato e sarà elencato come tale nella tua richiesta account.',
+	'requestaccount-email-subj' => '{{SITENAME}} conferma indirizzo e-mail',
+	'requestaccount-email-body' => 'Qualcuno, probabilmente tu, dall\'indirizzo IP $1, ha chiesto un account "$2" con questo indirizzo e-mail su {{SITENAME}}.
+
+Per confermare che questo account ti appartiene veramente su {{SITENAME}}, apri questo link nel tuo browser:
+
+$3
+
+Se l\'account viene creato, la password sarà inviata via e-mail solo a te.
+Se *non* sei stato tu, non seguire il link.
+Questo codice di conferma scadrà il $4.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} richiesta account',
+	'requestaccount-email-body-admin' => '"$1" ha chiesto un account ed è in attesa di conferma.
+L\'indirizzo e-mail è stato confermato. È possibile confermare la richiesta qui "$2".',
+	'acct_request_throttle_hit' => 'Spiacente, hai già chiesto {{PLURAL:$1|1 account|$1 account}}.
+Non puoi effettuare ulteriori richieste.',
+	'requestaccount-loginnotice' => "Per ottenere un account utente, è necessario '''[[Special:RequestAccount|richiederne uno]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' e-mail {{PLURAL:$1|[[Special:ConfirmAccounts|confermata richiesta account aperta]]|[[Special:ConfirmAccounts|confermate richieste account aperte]]}} in attesa",
+	'confirmaccounts' => 'Richieste conferma account',
+	'confirmedit-desc' => 'Dà ai burocrati la possibilità di confermare le richieste di account',
+	'confirmaccount-maintext' => "'''Questa pagina è usata per confermare le richieste di account in attesa su ''{{SITENAME}}'''''.
+
+Ogni coda di richieste account è composta da tre sotto-code.
+Una per le richieste aperte, una per quelle che sono state messe in attesa da parte di altri amministratori in attesa di ulteriori informazioni, e un'altra per le richieste respinte di recente.
+
+Quando si risponde ad una richiesta, verificarla attentamente e, se necessario, confermare le informazioni in essa contenute.
+Le tue azioni saranno privatamente registrate.
+Puoi anche verificare tutte le attività che si svolgono qui oltre a quelle svolte da te.",
+	'confirmaccount-list' => 'Di seguito è riportato un elenco di richieste di account in attesa di approvazione.
+Quando una richiesta è stata approvata o respinta sarà rimossa da questa lista.',
+	'confirmaccount-list2' => "Di seguito è riportato un elenco di richieste respinte di recente che saranno automaticamente eliminate quando saranno vecchie di qualche giorno.
+Possono ancora essere approvate come account, anche se può essere utile prima consultare l'amministratore che l'ha rifiutata.",
+	'confirmaccount-list3' => 'Di seguito è riportato un elenco delle richieste di account scadute che saranno eliminate automaticamente quando saranno vecchie di qualche giorno.
+Possono ancora essere approvate in account.',
+	'confirmaccount-text' => "Questa è una richiesta in attesa per un account utente su '''{{SITENAME}}'''.
+
+Controlla attentamente le seguenti informazioni.
+Se si approva la richiesta, utilizzare la scelta posizione per impostare lo status dell'account utente.
+Le modifiche alla biografia non avranno effetto permanente sulle credenziali memorizzate.
+Nota che puoi scegliere di creare l'account con un nome utente diverso.
+Usalo solo per evitare conflitti con altri nomi.
+
+Se si lascia semplicemente questa pagina senza confermare o negare questa richiesta, essa rimarrà in attesa.",
+	'confirmaccount-none-o' => 'Attualmente non ci sono richieste di account in attesa.',
+	'confirmaccount-none-h' => 'Attualmente non ci sono richieste di account tenute in attesa.',
+	'confirmaccount-none-r' => 'Attualmente non ci sono richieste di account respinte di recente.',
+	'confirmaccount-none-e' => 'Attualmente non ci sono richieste di account scadute.',
 	'confirmaccount-real-q' => 'Nome',
 	'confirmaccount-email-q' => 'Indirizzo e-mail',
+	'confirmaccount-bio-q' => 'Biografia',
+	'confirmaccount-showopen' => 'richieste aperte',
+	'confirmaccount-showrej' => 'richieste respinte',
+	'confirmaccount-showheld' => 'richieste fermate',
+	'confirmaccount-showexp' => 'richieste scadute',
+	'confirmaccount-review' => 'Verifica',
+	'confirmaccount-types' => 'Seleziona una coda di conferma account da sotto:',
+	'confirmaccount-all' => '(mostra tutte le code)',
+	'confirmaccount-type' => 'Coda:',
+	'confirmaccount-type-0' => 'potenziali autori',
+	'confirmaccount-type-1' => 'potenziali editori',
+	'confirmaccount-q-open' => 'richieste aperte',
+	'confirmaccount-q-held' => 'richieste fermate',
+	'confirmaccount-q-rej' => 'richieste respinte recentemente',
+	'confirmaccount-q-stale' => 'richieste scadute',
+	'confirmaccount-badid' => "Non ci sono richieste in attesa corrispondenti all'ID dato.
+Potrebbe essere già stato trattato.",
+	'confirmaccount-leg-user' => 'Account utente',
+	'confirmaccount-leg-areas' => "Principali aree d'interesse",
+	'confirmaccount-leg-person' => 'Informazioni personali',
+	'confirmaccount-leg-other' => 'Altre informazioni',
 	'confirmaccount-name' => 'Nome utente',
 	'confirmaccount-real' => 'Nome:',
 	'confirmaccount-email' => 'Indirizzo e-mail:',
+	'confirmaccount-reqtype' => 'Posizione:',
+	'confirmaccount-pos-0' => 'autore',
 	'confirmaccount-pos-1' => 'editore',
+	'confirmaccount-bio' => 'Biografia:',
+	'confirmaccount-attach' => 'Curriculum:',
+	'confirmaccount-notes' => 'Ulteriori note:',
+	'confirmaccount-urls' => 'Elenco dei siti web:',
+	'confirmaccount-none-p' => '(non fornito)',
+	'confirmaccount-confirm' => 'Utilizza le seguenti opzioni per accettare, rifiutare, o fermare questa richiesta:',
+	'confirmaccount-econf' => '(confermato)',
+	'confirmaccount-reject' => '(respinta da [[User:$1|$1]] il $2)',
+	'confirmaccount-rational' => 'Motivazione data al richiedente:',
+	'confirmaccount-noreason' => '(nessuno)',
+	'confirmaccount-autorej' => "(questa richiesta è stata eliminata automaticamente a causa dell'inattività)",
+	'confirmaccount-held' => '(segnato come "fermato" da [[User:$1|$1]] il $2)',
+	'confirmaccount-create' => 'Accetta (crea account)',
+	'confirmaccount-deny' => 'Rifiuta (rimuovi dalla lista)',
+	'confirmaccount-hold' => 'Ferma',
+	'confirmaccount-spam' => 'Spam (non inviare e-mail)',
+	'confirmaccount-reason' => "Commento (sarà incluso nell'e-mail):",
 	'confirmaccount-ip' => 'Indirizzo IP:',
 	'confirmaccount-submit' => 'Conferma',
+	'confirmaccount-needreason' => 'Devi fornire una motivazione nella casella del commento sottostante.',
+	'confirmaccount-canthold' => 'Questa richiesta è già stata fermata o eliminata.',
+	'confirmaccount-acc' => 'Richiesta account confermata con successo;
+creato nuovo account utente [[User:$1|$1]].',
+	'confirmaccount-rej' => 'Richiesta account respinta con successo.',
+	'confirmaccount-viewing' => '(attualmente in osservazione da [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Creazione della pagina utente con la biografia del nuovo utente.',
+	'confirmaccount-welc' => "'''Benvenuto su ''{{SITENAME}}''!'''
+Ci auguriamo che contribuirai molto e bene.
+Probabilmente desideri leggere le [[{{MediaWiki:Helppage}}|pagine di aiuto]].
+Ancora benvenuto e buon divertimento!",
+	'confirmaccount-wsum' => 'Benvenuto!',
+	'confirmaccount-email-subj' => '{{SITENAME}} richiesta account',
+	'confirmaccount-email-body' => 'La tua richiesta di un account è stata approvata su {{SITENAME}}.
+
+Nome account: $1
+
+Password: $2
+
+Per motivi di sicurezza dovrai cambiare la password di accesso al primo login.
+Per effettuare il login, per favore vai su {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'La tua richiesta di un account è stata approvata su {{SITENAME}}.
+
+Nome account: $1
+
+Password: $2
+
+$3
+
+Per motivi di sicurezza dovrai cambiare la password di accesso al primo login.
+Per effettuare il login, per favore vai su {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Spiacente, la tua richiesta di un account "$1" è stata respinta su {{SITENAME}}.
+
+Ci sono diversi motivi per cui questo possa essere accaduto.
+Potresti non aver compilato il modulo correttamente, non aver fornito risposte di lunghezza adeguata, o altrimenti non aver rispettato qualche criterio.
+Possono esserci elenchi di contatti sul sito che si possono usare se si desidera saperne di più riguardo alla politica degli account utente.',
+	'confirmaccount-email-body4' => 'Spiacente, la tua richiesta di un account "$1" è stata respinta su {{SITENAME}}.
+
+$2
+
+Possono esserci elenchi di contatti sul sito che si possono usare se si desidera saperne di più riguardo alla politica degli account utente.',
+	'confirmaccount-email-body5' => 'Prima che la tua richiesta di un account "$1" possa essere accettata su {{SITENAME}} è innanzitutto necessario fornire alcune informazioni supplementari.
+
+$2
+
+Possono esserci elenchi di contatti sul sito che si possono usare se si desidera saperne di più riguardo alla politica degli account utente.',
+	'usercredentials' => 'Credenziali utente',
+	'usercredentials-leg' => 'Cerca credenziali confermate per un utente',
 	'usercredentials-user' => 'Nome utente:',
+	'usercredentials-text' => "Qui di seguito vengono mostrate le credenziali convalidate dell'account utente selezionato.",
+	'usercredentials-leg-user' => 'Account utente',
+	'usercredentials-leg-areas' => "Principali aree d'interesse",
+	'usercredentials-leg-person' => 'Informazioni personali',
+	'usercredentials-leg-other' => 'Altre informazioni',
 	'usercredentials-email' => 'Indirizzo e-mail:',
+	'usercredentials-real' => 'Vero nome:',
+	'usercredentials-bio' => 'Biografia:',
+	'usercredentials-attach' => 'Curriculum:',
+	'usercredentials-notes' => 'Ulteriori note:',
+	'usercredentials-urls' => 'Elenco dei siti web:',
+	'usercredentials-ip' => 'Indirizzo IP originale:',
+	'usercredentials-member' => 'Diritti:',
+	'usercredentials-badid' => 'Nessuna credenziale trovata per questo utente.
+Controlla che il nome sia scritto correttamente.',
 );
 
 /** Japanese (日本語)
@@ -7401,10 +7594,79 @@ Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak s
 
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Sasa Stefanovic
+ * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'requestaccount-email' => 'Е-пошта:',
+	'confirmaccount-none-o' => 'Тренутно нема нерешених захтева у овом списку.',
+	'confirmaccount-none-h' => 'Тренутно нема стопираних захтева у овом списку.',
+	'confirmaccount-none-r' => 'Тренутно нема скоро одбачених захтева у овом списку.',
+	'confirmaccount-none-e' => 'Тренутно нема застарелих захтева у овом списку.',
+	'confirmaccount-real-q' => 'Име',
+	'confirmaccount-email-q' => 'Мејл',
+	'confirmaccount-bio-q' => 'Биографија',
+	'confirmaccount-showopen' => 'нерешени захтеви',
+	'confirmaccount-showrej' => 'одбачени захтеви',
+	'confirmaccount-showheld' => 'стопирани захтеви',
+	'confirmaccount-showexp' => 'застарели захтеви',
+	'confirmaccount-all' => '(покажи све редове)',
+	'confirmaccount-type' => 'Ред:',
+	'confirmaccount-type-0' => 'проспективни аутори',
+	'confirmaccount-q-open' => 'нерешени захтеви',
+	'confirmaccount-q-held' => 'стопирани захтеви',
+	'confirmaccount-q-rej' => 'скоро одбачени захтеви',
+	'confirmaccount-q-stale' => 'застарели захтеви',
+	'confirmaccount-badid' => 'Нема нерешеног захтева који одговара датом ID.
+Можда је већ био решен.',
+	'confirmaccount-leg-user' => 'Кориснички налог',
+	'confirmaccount-leg-areas' => 'Главне интересне сфере',
+	'confirmaccount-leg-person' => 'Личне информације',
+	'confirmaccount-leg-other' => 'Друге информације',
+	'confirmaccount-name' => 'Корисничко име',
+	'confirmaccount-real' => 'Име:',
+	'confirmaccount-email' => 'Мејл:',
+	'confirmaccount-reqtype' => 'Позиција:',
+	'confirmaccount-pos-0' => 'аутор',
+	'confirmaccount-pos-1' => 'едитор',
+	'confirmaccount-bio' => 'Биографија:',
+	'confirmaccount-attach' => 'Резиме/CV:',
+	'confirmaccount-notes' => 'Додатне напомене:',
+	'confirmaccount-urls' => 'Списак вебсајтова:',
+	'confirmaccount-none-p' => '(није приложено)',
+	'confirmaccount-confirm' => 'Користите опције испод да прихватите, одбаците или стопирате овај захтев:',
+	'confirmaccount-econf' => '(потврђено)',
+	'confirmaccount-reject' => '(одбацио [[User:$1|$1]] на $2)',
+	'confirmaccount-rational' => 'Образложење дато кандидату:',
 	'confirmaccount-noreason' => '(нема)',
+	'confirmaccount-autorej' => '(овај захтев је био аутоматски одбачен због неактивности)',
+	'confirmaccount-held' => '(означено као "стопирано" од [[User:$1|$1]] на $2)',
+	'confirmaccount-create' => 'Прихвати (направи налог)',
+	'confirmaccount-deny' => 'Одбаци (скини са листе)',
+	'confirmaccount-hold' => 'Стопирај',
+	'confirmaccount-reason' => 'Коментар (биће укључен у имејл):',
+	'confirmaccount-ip' => 'IP адреса:',
+	'confirmaccount-submit' => 'Потврди',
+	'confirmaccount-needreason' => 'Морате навести разлог у кутијици за коментаре испод.',
+	'confirmaccount-canthold' => 'Овај захтев је већ стопиран или обрисан.',
+	'confirmaccount-acc' => 'Захтев за налогом успешно прихваћен:
+направљен је нови кориснички налог [[User:$1|$1]].',
+	'confirmaccount-rej' => 'Захтев за налогом успешно одбачен.',
+	'confirmaccount-viewing' => '(тренутно прегледа [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Прављење корисничке стране са биографијом новог корисника.',
+	'confirmaccount-wsum' => 'Добро дошли!',
+	'usercredentials-user' => 'Корисничко име:',
+	'usercredentials-leg-user' => 'Кориснички налог',
+	'usercredentials-leg-areas' => 'Главне сфере интересовања',
+	'usercredentials-leg-person' => 'Личне информације',
+	'usercredentials-leg-other' => 'Друге информације',
+	'usercredentials-email' => 'Мејл:',
+	'usercredentials-real' => 'Право име:',
+	'usercredentials-bio' => 'Биографија:',
+	'usercredentials-attach' => 'Резиме/CV:',
+	'usercredentials-notes' => 'Додатне напомене:',
+	'usercredentials-urls' => 'Листа вебсајтова:',
+	'usercredentials-ip' => 'Оригинална IP адреса:',
+	'usercredentials-member' => 'Права:',
 );
 
 /** Swati (SiSwati)
