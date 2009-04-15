@@ -7597,7 +7597,20 @@ Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak s
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
+	'requestaccount-leg-user' => 'Кориснички налог',
+	'requestaccount-leg-areas' => 'Главне сфере интересовања',
+	'requestaccount-leg-person' => 'Личне информације',
+	'requestaccount-leg-other' => 'Друге информације',
+	'requestaccount-leg-tos' => 'Услови коришћења',
+	'requestaccount-real' => 'Право име:',
+	'requestaccount-same' => '(истоветно правом имену)',
 	'requestaccount-email' => 'Е-пошта:',
+	'requestaccount-reqtype' => 'Позиција:',
+	'requestaccount-attach' => 'Резиме или CV (необавезно):',
+	'requestaccount-notes' => 'Додатне напомене:',
+	'requestaccount-urls' => 'Списак вебсајтова, ако их има (одвојени новим линијама):',
+	'requestaccount-agree' => 'Морате да потврдите да сте добро унели своје право име и да се сложите са условима коришћења.',
+	'requestaccount-tooshort' => 'Ваша биографија мора да садржи најмање $1 речи.',
 	'confirmaccount-none-o' => 'Тренутно нема нерешених захтева у овом списку.',
 	'confirmaccount-none-h' => 'Тренутно нема стопираних захтева у овом списку.',
 	'confirmaccount-none-r' => 'Тренутно нема скоро одбачених захтева у овом списку.',
