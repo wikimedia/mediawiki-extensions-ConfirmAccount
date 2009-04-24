@@ -74,6 +74,13 @@ $aliases['fr'] = array(
 	'ConfirmAccounts' => array( 'ConfirmerCompte', 'Confirmation compte', 'ConfirmationCompte' ),
 );
 
+/** Franco-Provençal (Arpetan) */
+$aliases['frp'] = array(
+	'RequestAccount' => array( 'Demandar un compto', 'DemandarUnCompto' ),
+	'ConfirmAccounts' => array( 'Confirmar lo compto', 'ConfirmarLoCompto', 'Confirmacion de compto', 'ConfirmacionDeCompto' ),
+	'UserCredentials' => array( "Refèrences de l'utilisator", 'RefèrencesDeLUtilisator' ),
+);
+
 /** Galician (Galego) */
 $aliases['gl'] = array(
 	'RequestAccount' => array( 'Solicitar unha conta' ),
