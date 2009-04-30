@@ -1097,6 +1097,7 @@ $messages['bs'] = array(
 	'requestaccount-bio' => 'Lična biografija:',
 	'requestaccount-notes' => 'Dodatne napomene:',
 	'requestaccount-urls' => 'Spisak web stranica, ako ih ima (odvojiti sa novim redovima):',
+	'requestaccount-agree' => 'Morate potvrditi da je ovo Vaše pravo ime i da prihvatate naša Pravila usluga.',
 	'requestaccount-inuse' => 'Korisničko ime je već u upotrebi u zahtjevu za račun.',
 	'requestaccount-tooshort' => 'Vaša biografija mora biti duga najmanje $1 {{PLURAL:$1|riječ|riječi}}.',
 	'requestaccount-exts' => 'Vrsta datoteke u privitku nije dopuštena.',
@@ -1105,19 +1106,41 @@ $messages['bs'] = array(
 	'request-account-econf' => 'Vaša e-mail adresa je potvrđena i bit će prikazana kako je navedeno u Vašem zahjevu za račun.',
 	'requestaccount-email-subj-admin' => 'Zahtjev za račun na {{SITENAME}}',
 	'confirmaccounts' => 'Potvrdi zahtjeve za račun',
+	'confirmedit-desc' => 'Daje mogućnost birokratima da potvrde zahtjeve za računima',
+	'confirmaccount-none-o' => 'Trenutno nema otvorenih zahtjeva na račun na čekanju na ovom spisku.',
 	'confirmaccount-real-q' => 'Ime',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografija',
 	'confirmaccount-showopen' => 'otvoreni zahtjevi',
 	'confirmaccount-showrej' => 'odbijeni zahtjevi',
+	'confirmaccount-all' => '(pokaži sve na čekanju)',
+	'confirmaccount-leg-user' => 'Korisnički račun',
+	'confirmaccount-leg-areas' => 'Glavne oblasti interesovanja',
 	'confirmaccount-name' => 'Korisničko ime',
 	'confirmaccount-real' => 'Ime:',
 	'confirmaccount-email' => 'E-mail:',
 	'confirmaccount-reqtype' => 'Pozicija:',
 	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-urls' => 'Spisak web sajtova:',
+	'confirmaccount-create' => 'Prihvati (napravi račun)',
+	'confirmaccount-deny' => 'Odbij (skini sa spiska)',
 	'confirmaccount-ip' => 'IP adresa:',
+	'confirmaccount-submit' => 'Potvrdi',
+	'confirmaccount-summary' => 'Pravljenje korisničke stranice sa biografijom novog korisnika.',
 	'confirmaccount-wsum' => 'Dobrodošli!',
+	'confirmaccount-email-subj' => 'Zahtjev za račun na {{SITENAME}}',
+	'confirmaccount-email-body2' => 'Vaš zahtjev za račun na {{SITENAME}} je odobren.
+
+Naziv računa: $1
+
+Šifra: $2
+
+$3
+
+Iz sigurnosnih razloga potrebno je da promijenite šifru pri prvoj prijavi.
+Da bi ste se prijaviti, molimo idite na {{fullurl:Special:UserLogin}}.',
 	'usercredentials-user' => 'Korisničko ime:',
+	'usercredentials-leg-person' => 'Lične informacije',
 	'usercredentials-leg-other' => 'Ostale informacije',
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Pravo ime:',
