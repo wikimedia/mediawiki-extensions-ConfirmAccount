@@ -1291,6 +1291,7 @@ $messages['da'] = array(
  * @author Als-Holder
  * @author Leithian
  * @author MF-Warburg
+ * @author Purodha
  * @author Raimond Spekking
  * @author Revolus
  * @author Rrosenfeld
@@ -1487,7 +1488,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 	'usercredentials-user' => 'Benutzername:',
 	'usercredentials-text' => 'Es folgen die bestätigten Benutzer-Berechtigungsnachweise für das gewählte Benutzerkonto.',
 	'usercredentials-leg-user' => 'Benutzerkonto',
-	'usercredentials-leg-areas' => 'Haupt-Interessensgebiet',
+	'usercredentials-leg-areas' => 'Haupt-Interessensgebiete',
 	'usercredentials-leg-person' => 'Persönliche Informationen',
 	'usercredentials-leg-other' => 'Weitere Informationen',
 	'usercredentials-email' => 'E-Mail:',
@@ -4979,17 +4980,43 @@ $messages['krj'] = array(
  */
 $messages['ksh'] = array(
 	'requestaccount' => 'Noh em Zojang als Metmaacher frore',
+	'requestaccount-dup' => "'''Opjepaß: Do bes ald enjelogg met enem zohjelohße Metmaacher-Name.'''",
+	'requestaccount-leg-user' => 'Aanmeldung als ene Metmaacher',
+	'requestaccount-leg-areas' => 'Enträße en de Houpsaach',
+	'requestaccount-leg-person' => 'Päsönlesche Enfomazjuhne',
+	'requestaccount-leg-other' => 'Ander Ennfomazjuhne',
+	'requestaccount-bio-text' => 'Dä Täx övver Ding Levve weed för der Aanfang op Ding Metmaachersigg jeschtallt. Donn alles aanjevve, wat De ze beede häs, ävver bes och sescher, dat de Desh joot föhls domet, dat öffentlesch ze maache. Dinge Name kann De övver [[Special:Preferences|Ding Enshtellunge]] ändere.',
 	'requestaccount-real' => 'Dinge richtije Name:',
+	'requestaccount-same' => '(dä sellve wi dä reschtijje Name)',
 	'requestaccount-email' => '<i lang="en">e-mail</i> Addreß',
 	'requestaccount-level-0' => 'Schriiver',
+	'requestaccount-bio' => 'Et Levve beß jäz:',
 	'requestaccount-submit' => 'Noh enem Zojang als ene Metmaacher frore',
+	'requestaccount-sent' => 'Ding Aanfrooch es jäz op der Wääsch jebraat, un waadt drop, dat sesch Eine dröm kömmert.',
+	'requestaccount-email-subj-admin' => 'Aanfrooch för Metmaacher op dä {{SITENAME}} ze wääde.',
+	'confirmaccounts' => 'Aanfroore noh Metmaacher beschtähtejje',
 	'confirmedit-desc' => 'Määt et müjjelesch, dat {{int:group-bureaucrat}} de neu Aanmeldunge beshtätejje.',
+	'confirmaccount-none-o' => 'Em Momang senn_er kei unjedonn Aanfroore noh Zohjäng för Metmaacher en de Leß.',
+	'confirmaccount-none-h' => 'Em Momang senn_er kei zerökjeshtallte Aanfroore noh Zohjäng för Metmaacher en de Leß.',
+	'confirmaccount-none-r' => 'Em Momang senn_er kei köözlesch affjelehnte Aanfroore noh Zohjäng för Metmaacher en de Leß.',
+	'confirmaccount-none-e' => 'Em Momang senn_er kei ußjeloufe Aanfroore noh Zohjäng för Metmaacher en de Leß.',
 	'confirmaccount-real-q' => 'Name',
 	'confirmaccount-email-q' => '<i lang="en">e-mail</i>',
+	'confirmaccount-bio-q' => 'Et Levve beß jäz',
+	'confirmaccount-showopen' => 'unjedonn Aanfroore',
+	'confirmaccount-showrej' => 'affjelehnte Aanfroore',
+	'confirmaccount-showheld' => 'zerökjeshtallte Aanfroore',
+	'confirmaccount-showexp' => 'ußjeloufe Aanfroore',
+	'confirmaccount-review' => 'Beärbeejde',
 	'confirmaccount-q-open' => 'Aanfrore am waade',
 	'confirmaccount-q-held' => 'zerökjestallte un opjeschovve Aanfore',
 	'confirmaccount-q-rej' => 'köözlesch afjeleente Aanfrore',
 	'confirmaccount-q-stale' => 'afjeloufe Aanfrore',
+	'confirmaccount-badid' => 'Mer han kein Aanfrooch met dä Kännong en de Schlang. Müjjelesch, dat se ald dorsch es.',
+	'confirmaccount-leg-user' => 'Däm Metmaacher sing Aanmeldung',
+	'confirmaccount-leg-areas' => 'Enträße en de Houpsaach',
+	'confirmaccount-leg-person' => 'Päsönlesche Enfomazjuhne',
+	'confirmaccount-leg-other' => 'Ander Ennfomazjuhne',
 	'confirmaccount-name' => 'Metmaacher Name',
 	'confirmaccount-real' => 'Name:',
 	'confirmaccount-email' => 'E-mail:',
@@ -5006,9 +5033,71 @@ $messages['ksh'] = array(
 	'confirmaccount-rational' => 'Jif ene Jrond för dä Aandraachshteller:',
 	'confirmaccount-noreason' => '(nix)',
 	'confirmaccount-held' => '(aam $2 fum [[User:$1|$1]] op „waade“ jesatz)',
+	'confirmaccount-hold' => 'Zeröckställe',
+	'confirmaccount-spam' => 'SPAM (don kei <i lang="en">e-mail</i> eruß schecke)',
+	'confirmaccount-reason' => 'Kommentaa för en de <i lang="en">e-mail</i> met eren ze donn, die dä Aanfroorer kritt:',
 	'confirmaccount-ip' => 'IP-Address:',
+	'confirmaccount-submit' => 'Beshtähtejje',
+	'confirmaccount-email-subj' => 'Ding Aanfrooch noh enem Zohjang op de {{SITENAME}}',
+	'confirmaccount-email-body' => 'Op Ding Aanfrooch noh enem Zohjang op de {{SITENAME}} es de Antwoot:
+Hurra, jetz kanns de erin.
+
+Dinge Name als Metmaacher es „$1“
+
+Ding Passwoot es „$2“
+
+Zor Sescherheit moß De Ding Passwoot ändere, wann De et eehzte Mohl enloggs.
+Zom Enlogge, jangk noh {{fullurl:Special:UserLogin}}',
+	'confirmaccount-email-body2' => 'Op Ding Aanfrooch häß De enen Zohjang op de {{SITENAME}} krääje.
+
+Dinge Name als Metmaacher es „$1“
+
+Ding Passwoot es „$2“
+
+$3
+
+Zor Sescherheit moß De Ding Passwoot ändere, wann De et eehzte Mohl enloggs.
+Zom Enlogge, jangk noh {{fullurl:Special:UserLogin}}',
+	'confirmaccount-email-body3' => 'Ding Aanfrooch noh enem Zohjang op de {{SITENAME}}
+als Metmaacher met däm Name „$1“ es afjelehnt.
+
+Doh kann et etlijje Jrönd för jevve. De künnts dat Fommulaa verkeht ußjeföllt han,
+Ding Antwoote wohre nit jenooch, udder De häs jet jemaat, wat för dat Wikki nit paß.
+Wann en Leß met Kuntakte em Wikki es, kanns De doh drövver versöhke, wigger ze kumme,
+wann De doch noch erin wells, udder jet ze saare udder ze froore häs.',
+	'confirmaccount-email-body4' => 'Ding Aanfrooch noh enem Zohjang als Metmaacher op de {{SITENAME}}
+met däm Name „$1“ es afjelehnt woode.
+
+$2
+
+Wann en Leß met Kuntakte em Wikki es, kanns De doh drövver versöhke,
+wigger ze kumme, wannv De doch noch erin wells, udder jet ze saare
+udder ze froore häs.',
+	'confirmaccount-email-body5' => 'Iih dat Ding Aanfrooch noh enem Zohjang als Metmaacher
+met däm Name „$1“
+op de {{SITENAME}}
+aanjenumme wääde kann, do moß De noch jet nohlääje.
+
+$2
+
+Wann en Leß met Kuntakte em Wiki es, kanns De doh drövver
+versöhke, wigger ze kumme, wann De noch Froore häs.',
 	'usercredentials-user' => 'Metmaacher Name:',
+	'usercredentials-text' => 'Hee kumme de nohjeprööfte Date un Eijeschaffte vun däm ußjesohte Metmaacher.',
+	'usercredentials-leg-user' => 'Däm Metmaacher sing Aanmeldung',
+	'usercredentials-leg-areas' => 'Enträße en de Houpsaach',
+	'usercredentials-leg-person' => 'Päsönlesche Enfomazjuhne',
+	'usercredentials-leg-other' => 'Ander Ennfomazjuhne',
+	'usercredentials-email' => '<i lang="en">e-mail</i>:',
 	'usercredentials-real' => 'Dä richtije Name:',
+	'usercredentials-bio' => 'Et Levve beß jäz:',
+	'usercredentials-attach' => 'Et Levve beß jäz:',
+	'usercredentials-notes' => 'Söns es noch ze saare:',
+	'usercredentials-urls' => 'Leß met Webßaits:',
+	'usercredentials-ip' => 'De ojinaal <code lang="en">IP-</code>Addräß:',
+	'usercredentials-member' => 'Rääschte:',
+	'usercredentials-badid' => 'Mer han kein Aanjabe för dä Metmaacher jefonge.
+Loor ens, ov dä Name reschtesch jetipp es.',
 );
 
 /** Cornish (Kernewek)
