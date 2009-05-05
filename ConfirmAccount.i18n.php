@@ -245,6 +245,12 @@ $messages['qqq'] = array(
 	'requestaccount-level-1' => '{{Identical|Editor}}',
 	'requestaccount-notes' => '{{Identical|Additional notes}}',
 	'requestaccount-submit' => '{{Identical|Request account}}',
+	'requestaccount-email-body' => '* $1 is an IP address,
+* $2 is a requested user name (no GENDER support),
+* $3 is an URL,
+* $4 is a combined date/time,
+* $5 is the date alone,
+* $6 is the time alone.',
 	'requestaccount-email-subj-admin' => '{{Identical|SITENAME account request}}',
 	'requestaccount-email-body-admin' => 'This message is the email body text send to a site admin whenever someone has requested a new account.
 * $1: is a username

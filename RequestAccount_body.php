@@ -605,7 +605,9 @@ class RequestAccountPage extends SpecialPage {
 				wfGetIP(),
 				$user->getName(),
 				$url,
-				$wgContLang->timeanddate( $expiration, false ) ) );
+				$wgContLang->timeanddate( $expiration, false ) ,
+				$wgContLang->date( $expiration, false ) ,
+				$wgContLang->time( $expiration, false ) ) );
 	}	
 	
 	/**
