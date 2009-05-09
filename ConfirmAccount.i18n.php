@@ -3050,10 +3050,15 @@ Villicht git s uf dr Syte Kontaktadrässe, wu Du Di metsch hiiwände, wänn Du m
 
 /** Gujarati (ગુજરાતી)
  * @author Aksi great
+ * @author Ashok modhvadia
  * @author Dsvyas
  */
 $messages['gu'] = array(
 	'requestaccount-real' => 'સાચુ નામ:',
+	'requestaccount-level-0' => 'લેખક',
+	'requestaccount-level-1' => 'સંપાદક',
+	'requestaccount-notes' => 'વિશેષ નોંધ',
+	'requestaccount-exts' => 'જોડાયેલ ફાઇલનો પ્રકાર અમાન્ય છે.',
 	'confirmaccount-summary' => 'નવા સભ્યનાં જીવન વુત્તાંત વાળું સભ્યનું પાનું બનાવી રહ્યા છો',
 	'confirmaccount-wsum' => 'સુસ્વાગતમ્',
 );
@@ -5234,6 +5239,9 @@ Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir k
 	'requestaccount-leg-person' => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other' => 'Aner Informatiounen',
 	'requestaccount-leg-tos' => 'Conditioune vun der Notzung',
+	'requestaccount-acc-text' => 'Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mailadress.
+Äntwert w.e.g. duerch klicken op de Confirmatiouns-Link deen an däer Mail drasteet.
+Och Ärt Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht ginn ass.',
 	'requestaccount-areas-text' => 'Wielt déi Sujeten aus an denen Dir formaalt Fachwëssen huet oder an deem Dir am léifste schaffe wëllt.',
 	'requestaccount-bio-text' => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert.
 Versicht all néideg Recommandatiounnen unzeginn.
@@ -6853,7 +6861,7 @@ Për na question ëd sigurëssa a fa da manca che un as cambia soa ciav la prima
 
 Për na question ëd sigurëssa un a venta ch'as cambia soa ciav la prima vira ch'a rintra ant ël sistema. Për rintré, për piasì ch'a vada a l'adrëssa {{fullurl:Special:UserLogin}}.",
 	'confirmaccount-email-body3' => "Për darmagi soa domanda dë deurbe un cont ciamà \"\$1\" ansima a {{SITENAME}} a l'é staita bocià. A-i son vàire rason përchè sossì a peula esse rivà. A peul esse ch'a l'abia pa compilà giust la domanda, che soe arspòste a sio staite tròp curte, ò pura che an chèich àotra manera a l'abia falì da rintré ant ël criteri d'aprovassion. A peul esse che ant sël sit a sio specificà dle liste postaj ch'a peul dovré për ciamé pì d'anformassion ansima ai criteri d'aprovassion dovrà.",
-	'confirmaccount-email-body4' => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a Betawiki a l\'é staita bocià. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
+	'confirmaccount-email-body4' => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a l\'é staita bocià. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 	'confirmaccount-email-body5' => 'Anans che soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a peula esse acetà, a dovrìa lassene dj\'anformassion adissionaj. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 );
 

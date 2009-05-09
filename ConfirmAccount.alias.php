@@ -157,6 +157,13 @@ $aliases['ko'] = array(
 	'RequestAccount' => array( '계정요청' ),
 );
 
+/** Ripoarisch (Ripoarisch) */
+$aliases['ksh'] = array(
+	'RequestAccount' => array( 'Metmaacherzohjang beaandraare' ),
+	'ConfirmAccounts' => array( 'Metmaacherzohjang beshtätejje' ),
+	'UserCredentials' => array( 'Metmaache-Aanjabe' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'RequestAccount' => array( 'Benotzerkont ufroen' ),
