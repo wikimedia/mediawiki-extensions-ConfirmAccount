@@ -2376,7 +2376,7 @@ Une fois que le compte est accepté, vous recevrez un courriel de notification e
 	'requestaccount-urls' => "Liste des sites Web. S'il y en a plusieurs, séparez-les par un saut de ligne :",
 	'requestaccount-agree' => 'Vous devez certifier que votre nom réel est correct et que vous acceptez les conditions d’utilisation.',
 	'requestaccount-inuse' => 'Le nom d’utilisateur est déjà utilisé dans une requête en cours d’approbation.',
-	'requestaccount-tooshort' => 'Votre biographie doit avoir au moins {{PLURAL:$1|$1 mot|$1 mots}}.',
+	'requestaccount-tooshort' => 'Votre biographie doit avoir au moins $1 mot{{PLURAL:$1||s}}.',
 	'requestaccount-emaildup' => 'Une autre demande en cours utilise la même adresse électronique.',
 	'requestaccount-exts' => 'Le type du fichier joint n’est pas permis.',
 	'requestaccount-resub' => 'Veuillez sélectionner à nouveau votre curriculum vitæ pour des raisons de sécurité. Si vous ne souhaitez plus inclure celui-ci, laissez ce champ vierge.',
@@ -2398,7 +2398,7 @@ Ce code de confirmation expirera le $4.',
 	'requestaccount-email-body-admin' => "« $1 » a demandé un compte et se trouve en attente de confirmation.
 
 L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $2 ».",
-	'acct_request_throttle_hit' => 'Désolé, vous avez déjà demandé {{PLURAL:$1|1 compte|$1 comptes}}.
+	'acct_request_throttle_hit' => 'Désolé, vous avez déjà demandé $1 compte{{PLURAL:$1||s}}.
 Vous ne pouvez plus faire de demande.',
 	'requestaccount-loginnotice' => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
 	'confirmaccount-newrequests' => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
@@ -3051,6 +3051,7 @@ Villicht git s uf dr Syte Kontaktadrässe, wu Du Di metsch hiiwände, wänn Du m
 /** Gujarati (ગુજરાતી)
  * @author Aksi great
  * @author Ashok modhvadia
+ * @author Dineshjk
  * @author Dsvyas
  */
 $messages['gu'] = array(
@@ -3059,8 +3060,10 @@ $messages['gu'] = array(
 	'requestaccount-level-1' => 'સંપાદક',
 	'requestaccount-notes' => 'વિશેષ નોંધ',
 	'requestaccount-exts' => 'જોડાયેલ ફાઇલનો પ્રકાર અમાન્ય છે.',
+	'confirmaccount-name' => 'સભ્ય નામ:',
 	'confirmaccount-summary' => 'નવા સભ્યનાં જીવન વુત્તાંત વાળું સભ્યનું પાનું બનાવી રહ્યા છો',
 	'confirmaccount-wsum' => 'સુસ્વાગતમ્',
+	'usercredentials-user' => 'સભ્ય નામ:',
 );
 
 /** Manx (Gaelg)
@@ -5276,6 +5279,8 @@ Dir kënnt elo keng weider Ufroe méi maachen.',
 	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeeten fir Ufroe vu Benotzerkonten ze confirméieren",
 	'confirmaccount-list' => "Hei ass d'Lëscht vun den Ufroe fir e Benotzerkont déi nach autoriséiert musse ginn.
 Wann eng Ufro entweder autoriséiert oder refuséiert ass gëtt se vun der Lëscht erofgeholl.",
+	'confirmaccount-list3' => 'Hei ënnendrënner ass eng Lëscht vun ofgelafenen Ufroe fir Benotzerkonten déi bannert e puer Deeg automatesch geläscht ginn.
+Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-none-o' => 'Et gëtt elo an dëser Lëscht keng oppen Ufroe fir Benotzerkonten.',
 	'confirmaccount-none-h' => 'Et gëtt elo an dëser Lëscht keng Ufroe fir Benotzerkonten déi am Suspens sinn.',
 	'confirmaccount-none-r' => 'Et gëtt elo keng rezent refüséiert Ufroe fir Benotzerkonten op dëser Lëscht.',
