@@ -5246,6 +5246,8 @@ Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir k
 Äntwert w.e.g. duerch klicken op de Confirmatiouns-Link deen an däer Mail drasteet.
 Och Ärt Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht ginn ass.',
 	'requestaccount-areas-text' => 'Wielt déi Sujeten aus an denen Dir formaalt Fachwëssen huet oder an deem Dir am léifste schaffe wëllt.',
+	'requestaccount-ext-text' => "Dës Informatioune gi vertraulech behandelt a gi just fir dës Ufro benotzt.
+Dir kënnt Kontaktinformatiounen wéi eng Telefonsnummer uginn fir d'Identitéitskonfirmatioun ze vereinfachen.",
 	'requestaccount-bio-text' => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert.
 Versicht all néideg Recommandatiounnen unzeginn.
 Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt.
