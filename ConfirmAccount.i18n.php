@@ -1156,11 +1156,18 @@ Da bi ste se prijaviti, molimo idite na {{fullurl:Special:UserLogin}}.',
 /** Catalan (Català)
  * @author Loupeter
  * @author SMP
+ * @author Solde
  */
 $messages['ca'] = array(
 	'requestaccount-level-0' => 'autor',
+	'confirmaccount-real-q' => 'Nom',
+	'confirmaccount-email-q' => 'Correu electrònic',
+	'confirmaccount-real' => 'Nom:',
+	'confirmaccount-email' => 'Correu electrònic:',
 	'confirmaccount-pos-0' => 'autor',
 	'confirmaccount-noreason' => '(cap)',
+	'confirmaccount-ip' => 'Adreça IP:',
+	'usercredentials-email' => 'Correu electrònic:',
 );
 
 /** Czech (Česky)
@@ -5267,6 +5274,10 @@ Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wë
 	'requestaccount-tooshort' => 'Är Biographie muss mindestens $1 Wierder hunn.',
 	'requestaccount-emaildup' => 'En aneren ugefrote Benotzerkont benotzt déi selwescht E-Mailadress.',
 	'requestaccount-exts' => "De Fichierstyp vum ''Attachment'' ass net erlaabt.",
+	'requestaccount-resub' => "De Fichier mat ärem CV muss aus Sécherheetsgrënn nachemol nei erausgesicht ginn.
+Loosst d'Feld eidel wann Dir elo keen CV abanne wëllt.",
+	'requestaccount-tos' => 'Ech hunn d\'[[{{MediaWiki:Requestaccount-page}}|Benotzungsbedingunge]] vu(n) {{SITENAME}} geliest an akzeptéieren se.
+Den Numm den ech bäi "Richtege Numm" uginn hunn ass mäin eegene richtegen Numm.',
 	'requestaccount-submit' => 'Benotzerkont ufroën',
 	'requestaccount-sent' => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.',
 	'request-account-econf' => 'Är E-Mailadress gouf confirméiert a gëtt elo als E-Mailadress an är Ufro fir e Benotzerkont integréiert.',
@@ -5316,6 +5327,7 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-reject' => '(refuséiert vum [[User:$1|$1]] de(n) $2)',
 	'confirmaccount-rational' => 'Ursaach fir deen deen ugefrot huet:',
 	'confirmaccount-noreason' => '(keen)',
+	'confirmaccount-autorej' => '(dës Ufro gouf automatesch wéint Inaktivitéit klasséiert)',
 	'confirmaccount-create' => 'Unhuelen (Benotzerkont opmaachen)',
 	'confirmaccount-deny' => 'Refuséieren (Benotzerkont gëtt geläscht)',
 	'confirmaccount-hold' => 'Ofwaarden',
@@ -5354,6 +5366,7 @@ Aus Sécherheetsgrënn musst Dir Ärt Passwuert ännere wann Dir Iech déi éisc
 Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
 	'usercredentials' => 'Referenzen déi de Benotzer uginn huet:',
 	'usercredentials-user' => 'Benotzernumm:',
+	'usercredentials-text' => 'Hei ënnedrënner stinn déi confirméiert Benotzer-Berechtigungsnoweiser fir de gewielte Benotzerkont.',
 	'usercredentials-leg-user' => 'Benotzerkont',
 	'usercredentials-leg-areas' => 'Haaptinteressen',
 	'usercredentials-leg-person' => 'Perséinlech Informatiounen',
@@ -6208,6 +6221,7 @@ Gjer deg viss om at namnet er stava rett.',
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'requestaccount' => 'Etterspør konto',
@@ -6222,6 +6236,7 @@ Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne [[Special
 	'requestaccount-leg-areas' => 'Hovedinteresser',
 	'requestaccount-leg-person' => 'Personlig informasjon',
 	'requestaccount-leg-other' => 'Annen informasjon',
+	'requestaccount-leg-tos' => 'Tjenestevilkår',
 	'requestaccount-acc-text' => 'Du vil få en e-post med bekreftelse med en gang denne forespørselen postes. Vennligst svar ved å klikke på bekreftelseslenka i e-posten. Passordet ditt vil også sendes til deg når kontoen opprettes.',
 	'requestaccount-areas-text' => 'Velg det eller de områdene nedenfor som du har formell ekspertise i eller vil jobbe mest med.',
 	'requestaccount-ext-text' => 'Følgende informasjon vil holdes privat, og vil kun brukes for denne forespørselen. Du vil kanskje liste opp kontaktinformasjon som et telefonnummer for å hjelpe til i bekreftelsesprosessen.',
