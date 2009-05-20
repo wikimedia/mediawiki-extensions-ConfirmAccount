@@ -1,5 +1,5 @@
 <?php
-#(c) Aaron Schulz 2007, GPL
+# (c) Aaron Schulz 2007, GPL
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo "ConfirmAccount extension\n";
@@ -13,12 +13,12 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'confirmedit-desc',
 	'author' => 'Aaron Schulz',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
-	'version' => '1.46',
+	'version' => '1.47',
 );
 
 # This extension needs email enabled!
 # Otherwise users can't get their passwords...
-if( !$wgEnableEmail ) {
+if ( !$wgEnableEmail ) {
 	echo "ConfirmAccount extension requires \$wgEnableEmail set to true \n";
 	exit( 1 ) ;
 }
@@ -62,7 +62,7 @@ $wgAccountRequestTypes = array(
 # (regexp) with the second. Set this variable to false to avoid sortkey use.
 $wgConfirmAccountSortkey = false;
 // For example, the below will do {{DEFAULTSORT:firstname, lastname}}
-#$wgConfirmAccountSortkey = array( '/^(.+) ([^ ]+)$/', '$2, $1' );
+# $wgConfirmAccountSortkey = array( '/^(.+) ([^ ]+)$/', '$2, $1' );
 
 # IMPORTANT: do we store the user's notes and credentials
 # for sucessful account request? This will be stored indefinetely
@@ -79,7 +79,7 @@ $wgConfirmAccountCaptchas = true;
 
 # Location of attached files for pending requests
 $wgAllowAccountRequestFiles = true;
-$wgAccountRequestExts = array('txt','pdf','doc','latex','rtf','text','wp','wpd','sxw');
+$wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
 $wgFileStore['accountreqs']['directory'] = "{$wgUploadDirectory}/accountreqs";
 $wgFileStore['accountreqs']['url'] = null; // Private
 $wgFileStore['accountreqs']['hash'] = 3;
@@ -108,15 +108,15 @@ $wgAvailableRights[] = 'lookupcredentials';
 # This is cached, but still can be expensive on sites with thousands of requests.
 $wgConfirmAccountNotice = true;
 
-$dir = dirname(__FILE__) . '/';
+$dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 $wgExtensionAliasesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.alias.php';
 
 function efAddRequestLoginText( &$template ) {
 	global $wgUser;
 	wfLoadExtensionMessages( 'ConfirmAccount' );
-	if( !$wgUser->isAllowed('createaccount') ) {
-		$template->set( 'header', wfMsgExt('requestaccount-loginnotice', array('parse') ) );
+	if ( !$wgUser->isAllowed( 'createaccount' ) ) {
+		$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) ) );
 	}
 	return true;
 }
@@ -130,7 +130,7 @@ function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
 		__METHOD__ );
 	if ( $dup ) {
 		wfLoadExtensionMessages( 'ConfirmAccount' );
-		$abortError = wfMsgHtml('requestaccount-inuse');
+		$abortError = wfMsgHtml( 'requestaccount-inuse' );
 		return false;
 	}
 	return true;
@@ -144,7 +144,7 @@ function efConfirmAccountInjectStyle() {
 		'rel'	=> 'stylesheet',
 		'type'	=> 'text/css',
 		'media'	=> 'screen, projection',
-		'href'	=> $wgScriptPath.'/extensions/ConfirmAccount/confirmaccount.css',
+		'href'	=> $wgScriptPath . '/extensions/ConfirmAccount/confirmaccount.css',
 	) );
 	return true;
 }
@@ -152,36 +152,36 @@ function efConfirmAccountInjectStyle() {
 function wfConfirmAccountsNotice( $notice ) {
 	global $wgConfirmAccountNotice, $wgUser;
 
-	if( !$wgConfirmAccountNotice || !$wgUser->isAllowed('confirmaccount') )
+	if ( !$wgConfirmAccountNotice || !$wgUser->isAllowed( 'confirmaccount' ) )
 		return true;
-		
+
 	global $wgMemc, $wgOut;
 	# Check cached results
 	$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 	$count = $wgMemc->get( $key );
 	# Only show message if there are any such requests
-	if( !$count )  {
+	if ( !$count )  {
 		$dbw = wfGetDB( DB_MASTER );
 		$count = $dbw->selectField( 'account_requests', 'COUNT(*)',
 			array( 'acr_deleted' => 0, 'acr_held IS NULL', 'acr_email_authenticated IS NOT NULL' ),
 			__METHOD__ );
 		# Use '-' for zero, to avoid any confusion over key existence
-		if( !$count ) {
+		if ( !$count ) {
 			$count = '-';
 		}
 		# Cache results
-		$wgMemc->set( $key, $count, 3600*24*7 );
+		$wgMemc->set( $key, $count, 3600 * 24 * 7 );
 	}
-	if( $count !== '-' ) {
+	if ( $count !== '-' ) {
 		wfLoadExtensionMessages( 'ConfirmAccount' );
-		$message = wfMsgExt( 'confirmaccount-newrequests', array('parsemag'), $count );
-	
-		$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse($message) . '</div>';
+		$message = wfMsgExt( 'confirmaccount-newrequests', array( 'parsemag' ), $count );
+
+		$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse( $message ) . '</div>';
 	}
 	return true;
 }
 
-$dir = dirname(__FILE__) . '/';
+$dir = dirname( __FILE__ ) . '/';
 # Request an account
 $wgSpecialPages['RequestAccount'] = 'RequestAccountPage';
 $wgAutoloadClasses['RequestAccountPage'] = $dir . 'RequestAccount_body.php';
@@ -208,41 +208,41 @@ $wgHooks['SiteNoticeAfter'][] = 'wfConfirmAccountsNotice';
 function efLoadConfirmAccount() {
 	global $wgUser;
 	# Don't load unless needed
-	if( $wgUser->getId() && $wgUser->isAllowed('confirmaccount') ) {
+	if ( $wgUser->getId() && $wgUser->isAllowed( 'confirmaccount' ) ) {
 		efConfirmAccountInjectStyle();
 	}
 }
 
 function efConfirmAccountSchemaUpdates() {
 	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields, $wgExtNewTables, $wgExtNewIndexes;
-	
-	$base = dirname(__FILE__);
-	if( $wgDBtype == 'mysql' ) {
-		$wgExtNewTables[] = array('account_requests', "$base/confirmaccount.sql" );
-		
-		$wgExtNewFields[] = array('account_requests', 'acr_filename',
+
+	$base = dirname( __FILE__ );
+	if ( $wgDBtype == 'mysql' ) {
+		$wgExtNewTables[] = array( 'account_requests', "$base/confirmaccount.sql" );
+
+		$wgExtNewFields[] = array( 'account_requests', 'acr_filename',
 			"$base/archives/patch-acr_filename.sql" );
-		
-		$wgExtNewTables[] = array('account_credentials', "$base/archives/patch-account_credentials.sql" );
-		
-		$wgExtNewFields[] = array('account_requests', 'acr_areas', "$base/archives/patch-acr_areas.sql" );
-		
-		$wgExtNewIndexes[] = array('account_requests', 'acr_email', "$base/archives/patch-email-index.sql" );
-	} else if( $wgDBtype == 'postgres' ) {
-		$wgExtNewTables[] = array('account_requests', "$base/confirmaccount.pg.sql" );
-		
-		$wgExtPGNewFields[] = array('account_requests', 'acr_held', "TIMESTAMPTZ" );
-		$wgExtPGNewFields[] = array('account_requests', 'acr_filename', "TEXT" );
-		$wgExtPGNewFields[] = array('account_requests', 'acr_storage_key', "TEXT" );
-		$wgExtPGNewFields[] = array('account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" );
-		
-		$wgExtPGNewFields[] = array('account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" );
-		$wgExtNewTables[] = array('account_credentials', "$base/postgres/patch-account_credentials.sql" );
-		$wgExtPGNewFields[] = array('account_requests', 'acr_areas', "TEXT" );
-		$wgExtPGNewFields[] = array('account_credentials', 'acd_areas', "TEXT" );
-		
-		$wgExtNewIndexes[] = array('account_requests', 'acr_email', "$base/postgres/patch-email-index.sql" );
+
+		$wgExtNewTables[] = array( 'account_credentials', "$base/archives/patch-account_credentials.sql" );
+
+		$wgExtNewFields[] = array( 'account_requests', 'acr_areas', "$base/archives/patch-acr_areas.sql" );
+
+		$wgExtNewIndexes[] = array( 'account_requests', 'acr_email', "$base/archives/patch-email-index.sql" );
+	} else if ( $wgDBtype == 'postgres' ) {
+		$wgExtNewTables[] = array( 'account_requests', "$base/confirmaccount.pg.sql" );
+
+		$wgExtPGNewFields[] = array( 'account_requests', 'acr_held', "TIMESTAMPTZ" );
+		$wgExtPGNewFields[] = array( 'account_requests', 'acr_filename', "TEXT" );
+		$wgExtPGNewFields[] = array( 'account_requests', 'acr_storage_key', "TEXT" );
+		$wgExtPGNewFields[] = array( 'account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" );
+
+		$wgExtPGNewFields[] = array( 'account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" );
+		$wgExtNewTables[] = array( 'account_credentials', "$base/postgres/patch-account_credentials.sql" );
+		$wgExtPGNewFields[] = array( 'account_requests', 'acr_areas', "TEXT" );
+		$wgExtPGNewFields[] = array( 'account_credentials', 'acd_areas', "TEXT" );
+
+		$wgExtNewIndexes[] = array( 'account_requests', 'acr_email', "$base/postgres/patch-email-index.sql" );
 	}
-	
+
 	return true;
 }
