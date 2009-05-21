@@ -312,6 +312,9 @@ $messages['qqq'] = array(
 	'usercredentials-attach' => '{{Identical|Resume/CV}}',
 	'usercredentials-notes' => '{{Identical|Additional notes}}',
 	'usercredentials-urls' => '{{Identical|List of websites}}',
+	'right-confirmaccount' => '{{doc-right|confirmaccount}}',
+	'right-requestips' => '{{doc-right|requestips}}',
+	'right-lookupcredentials' => '{{doc-right|lookupcredentials}}',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
@@ -1316,7 +1319,7 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'requestaccount' => 'Benutzerkonto beantragen',
-	'requestaccount-text' => "'''Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen'''.
+	'requestaccount-text' => "'''Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen'''. 
 
 Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor du ein Benutzerkonto beantragst.
 
@@ -1479,7 +1482,7 @@ $3
 Aus Sicherheitsgründen solltest du Dein Passwort unbedingt beim ersten
 Einloggen ändern. Um dich einzuloggen gehst du auf die Seite
 {{fullurl:Special:Userlogin}}.',
-	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“
+	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
 
 Dies kann viele Gründe haben. Möglicherweise hast du das Antragsformular
@@ -1488,7 +1491,7 @@ die Anforderungen auf andere Weise nicht erfüllt.
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
-	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“
+	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
 
 $2
@@ -1517,6 +1520,9 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 	'usercredentials-ip' => 'Originale IP-Adresse:',
 	'usercredentials-member' => 'Rechte:',
 	'usercredentials-badid' => 'Es wurden keinen Berechtigungsnachweis für diesen Benutzer gefunden. Bitte die Schreibweise prüfen.',
+	'right-confirmaccount' => 'Die [[Special:ConfirmAccounts|Warteschlange der angefragten Benutzerkonten]] sehen',
+	'right-requestips' => 'Die IP-Adresse des Anfragers für ein Benutzerkonto sehen',
+	'right-lookupcredentials' => '[[Special:UserCredentials|Benutzerempfehlungsschreiben]] sehen',
 );
 
 /** Zazaki (Zazaki)
@@ -1730,6 +1736,9 @@ Snaź su kontaktowe lisćiny na sedle, kótarež móžoš wužywaś, jolic coš 
 	'usercredentials-ip' => 'Originalna IP-adresa:',
 	'usercredentials-member' => 'Pšawa:',
 	'usercredentials-badid' => 'Za toś togo wužywarja njebuchu žedne wósobinske pódaśa namakane. Pśekontrolěruj, lěc te mě jo pšawje napisane.',
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|Cakański rěd z pominanymi kontami]] se woglědaś',
+	'right-requestips' => 'IP-adrese póžadarja se woglědaś, mjaztym až se pominane konta pśeźěłuju',
+	'right-lookupcredentials' => '[[Special:UserCredentials|Wužywarske wopšawnjeńki]] se woglědaś',
 );
 
 /** Ewe (Eʋegbe) */
@@ -2349,6 +2358,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  * @author Crochet.david
  * @author Dereckson
  * @author Grondin
+ * @author IAlex
  * @author Louperivois
  * @author Meithal
  * @author PieRRoMaN
@@ -2358,10 +2368,10 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  */
 $messages['fr'] = array(
 	'requestaccount' => 'Demande de compte utilisateur',
-	'requestaccount-text' => "'''Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur'''.
-
+	'requestaccount-text' => "'''Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur'''. 
+	
 Assurez-vous d'avoir lu [[{{MediaWiki:Requestaccount-page}}|les conditions d’utilisation]] avant de faire votre demande de compte.
-
+	
 Une fois que le compte est accepté, vous recevrez un courriel de notification et votre compte pourra être utilisé sur [[Special:UserLogin|la page de connexion]].",
 	'requestaccount-page' => "{{ns:project}}:Conditions d'utilisation",
 	'requestaccount-dup' => "'''Note : Vous êtes déjà sur une session avec un compte enregistré.'''",
@@ -2372,7 +2382,7 @@ Une fois que le compte est accepté, vous recevrez un courriel de notification e
 	'requestaccount-leg-tos' => "Conditions d'utilisation",
 	'requestaccount-acc-text' => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
 	'requestaccount-areas-text' => 'Choisissez les domaines dans lesquels vous avez une expertise démontrée, ou dans lesquels vous êtes enclin à contribuer le plus.',
-	'requestaccount-ext-text' => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête.
+	'requestaccount-ext-text' => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
 	Vous avez la possibilité de lister des contacts tels qu’un numéro de téléphone pour obtenir une assistance pour confirmer votre identité.',
 	'requestaccount-bio-text' => 'Votre biographie sera mise par défaut sur votre page utilisateur. Essayez d’y mettre vos recommandations. Assurez-vous que vous pouvez diffuser sans crainte les informations. Votre nom peut être changé en utilisant [[Special:Preferences]].',
 	'requestaccount-real' => 'Nom réel :',
@@ -2507,7 +2517,7 @@ Mot de passe: $2
 
 $3
 
-Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur
+Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur 
 {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3' => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
@@ -2539,6 +2549,9 @@ Ceci permet d’être sur la liste des contacts du site, si vous désirez en sav
 	'usercredentials-ip' => 'Adresse IP initiale :',
 	'usercredentials-member' => 'Droits :',
 	'usercredentials-badid' => 'Aucune référence trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé.',
+	'right-confirmaccount' => 'Voir la [[Special:ConfirmAccounts|file des demandes de compte]]',
+	'right-requestips' => 'Voir les adresses IP des demandeurs lors du traitement des demandes de nouveau comptes',
+	'right-lookupcredentials' => 'Voir les [[Special:UserCredentials|références des utilisateurs]]',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -2670,7 +2683,7 @@ O seu nome pódese cambiar [[Special:Preferences|nas súas preferencias]].',
 	'requestaccount-exts' => 'Non se permite este tipo de ficheiro como anexo.',
 	'requestaccount-resub' => 'Ten que volver seleccionar o ficheiro do seu curriculum vitae por razóns de seguranza.
 Deixe o campo en branco se non o quere incluír máis.',
-	'requestaccount-tos' => 'Lin e estou de acordo en respectar as [[{{MediaWiki:Requestaccount-page}}|Condicións de Servizo]] de {{SITENAME}}.
+	'requestaccount-tos' => 'Lin e estou de acordo en respectar as [[{{MediaWiki:Requestaccount-page}}|Condicións de Servizo]] de {{SITENAME}}. 
 	O nome especificado como "Nome real" é, efectivamente, o meu propio nome real.',
 	'requestaccount-submit' => 'Solicitar unha conta',
 	'requestaccount-sent' => 'Enviouse sen problemas a súa solicitude de conta e agora está pendente de exame.',
@@ -2692,15 +2705,15 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'acct_request_throttle_hit' => 'Sentímolo, xa solicitou {{PLURAL:$1|unha conta|$1 contas}}.
 Non pode facer máis solicitudes.',
 	'requestaccount-loginnotice' => "Para obter unha conta de usuario ten que '''[[Special:RequestAccount|solicitar unha]]'''.",
-	'confirmaccount-newrequests' => "Hai {{PLURAL:$1}} actualmente '''$1''' aberto
+	'confirmaccount-newrequests' => "Hai {{PLURAL:$1}} actualmente '''$1''' aberto 
  {{PLURAL:$1|[[Special:ConfirmAccounts|solicitude de conta]]|[[Special:ConfirmAccounts|solicitudes de contas]]}} pendente.",
 	'confirmaccounts' => 'Confirmar solicitudes de contas',
 	'confirmedit-desc' => 'Dar aos burócratas a capacidade para confirmar as solicitudes de contas',
 	'confirmaccount-maintext' => "'''Esta páxina é usada para confirmar as súas solicitudes de conta pendentes en ''{{SITENAME}}''.'''
 
-Cada cola de solicitudes de conta consiste en tres subcuestións, unha para abrila, outra para aquelas que fosen postas por outros administradores en espera de máis información e unha última para as solicitudes rexeitadas recentemente.
+Cada cola de solicitudes de conta consiste en tres subcuestións, unha para abrila, outra para aquelas que fosen postas por outros administradores en espera de máis información e unha última para as solicitudes rexeitadas recentemente. 
 
-Ao respostar unha solicitude revísea con coidado e, se é necesario, confirme a información alí contida.
+Ao respostar unha solicitude revísea con coidado e, se é necesario, confirme a información alí contida.  
 As súas accións serán rexistradas de maneira privada.
 Agárdase tamén que revise calquera actividade que teña lugar aquí á parte das súas propias.",
 	'confirmaccount-list' => 'Abaixo aparece unha lista de contas pendentes de aprobación.
@@ -2830,6 +2843,9 @@ Poden existir listas de contacto no sitio que poida usar se quere saber máis ac
 	'usercredentials-ip' => 'Enderezo IP orixinal:',
 	'usercredentials-member' => 'Dereitos:',
 	'usercredentials-badid' => 'Non se atoparon credenciais para este usuario. Comprobe que o nome estea escrito correctamente.',
+	'right-confirmaccount' => 'Ver a [[Special:ConfirmAccounts|cola coas solicitudes de contas]]',
+	'right-requestips' => 'Ver os enderezos IP que solicitan contas',
+	'right-lookupcredentials' => 'Ver os [[Special:UserCredentials|credenciais de usuario]]',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -2864,7 +2880,7 @@ $messages['grc'] = array(
  */
 $messages['gsw'] = array(
 	'requestaccount' => 'E Aatrag stelle uf e Benutzerkonto',
-	'requestaccount-text' => "'''Fill des Formular uus un schick s ab go ne Aatrag stelle uf e Benutzerkonto'''.
+	'requestaccount-text' => "'''Fill des Formular uus un schick s ab go ne Aatrag stelle uf e Benutzerkonto'''.  
 
 Bitte liis zerscht d [[{{MediaWiki:Requestaccount-page}}|Nutzigbedingige]], voreb Du ne Aatrag stellsch uf e Benutzerkonto.
 
@@ -3057,6 +3073,9 @@ Villicht git s uf dr Syte Kontaktadrässe, wu Du Di metsch hiiwände, wänn Du m
 	'usercredentials-ip' => 'Original IP-Adräss:',
 	'usercredentials-member' => 'Rächt:',
 	'usercredentials-badid' => 'S sin kei Berächtigungsnochwyys fir dää Benutzer gfunde wore. Bitte d Schryybwyys priefe.',
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|Lischt mit beaatraite Benutzerkonte]] aaluege',
+	'right-requestips' => 'D IP-Adräss vum Aatragsteller aaluege, derwylscht dr Aatrag bearbeitet wird',
+	'right-lookupcredentials' => '[[Special:UserCredentials|Zyygnis vum Benutzer]] aaluege',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -3507,7 +3526,7 @@ Provjerite je li ime točno napisano.',
  */
 $messages['hsb'] = array(
 	'requestaccount' => 'Wužiwarske konto sej žadać',
-	'requestaccount-text' => "'''Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał'''.
+	'requestaccount-text' => "'''Wupjelń slědowacy formular a wotesćel jón, zo by wužiwarske konto požadał'''. 
 
 Prošu přečitaj najprjedy [[{{MediaWiki:Requestaccount-page}}|wužiwanske wuměnjenja]], prjedy hač požadaš wužiwarske konto.
 
@@ -3688,6 +3707,9 @@ Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš w
 	'usercredentials-ip' => 'Originalna IP-adresa:',
 	'usercredentials-member' => 'Prawa:',
 	'usercredentials-badid' => 'Žane daty za tutoho wužiwarja namakane. Kontroluj, hač mjeno je prawje napisane.',
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|Čakanski rynk z požadanymi kontami]] sej wobhladać',
+	'right-requestips' => 'IP-adresy požadarja sej wobhladać, mjeztym zo so požadane konta předźěłuja',
+	'right-lookupcredentials' => '[[Special:UserCredentials|Wužiwarske woprawnjenki]] sej wobhladać',
 );
 
 /** Hungarian (Magyar)
@@ -4541,7 +4563,7 @@ Controlla che il nome sia scritto correttamente.',
  */
 $messages['ja'] = array(
 	'requestaccount' => 'アカウント登録申請',
-	'requestaccount-text' => "'''利用者アカウントを申請する方は、以下の項目を記入の上、送信してください'''
+	'requestaccount-text' => "'''利用者アカウントを申請する方は、以下の項目を記入の上、送信してください'''  
 
 アカウント申請を行う前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用条件]]をご一読下さい。
 
@@ -4728,6 +4750,9 @@ $2
 	'usercredentials-ip' => '申請時IPアドレス:',
 	'usercredentials-member' => '権限:',
 	'usercredentials-badid' => '利用者信頼情報が見つかりません。利用者名が正しく指定されているか確認してください。',
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|アカウント申請キュー]]を見る',
+	'right-requestips' => 'アカウント申請の処理中に申請者のIPアドレスを見る',
+	'right-lookupcredentials' => '[[Special:UserCredentials|利用者信頼情報]]を見る',
 );
 
 /** Javanese (Basa Jawa)
@@ -5210,6 +5235,9 @@ versöhke, wigger ze kumme, wann De noch Froore häs.',
 	'usercredentials-member' => 'Rääschte:',
 	'usercredentials-badid' => 'Mer han kein Aanjabe för dä Metmaacher jefonge.
 Loor ens, ov dä Name reschtesch jetipp es.',
+	'right-confirmaccount' => 'De [[Special:ConfirmAccounts|Schlang met de aanjefroochte Zohjäng]] beloore',
+	'right-requestips' => 'De jewönschte Neu_Metmaacher ier <code lang="en">IP-</code>Addräß aanloore beim Aanfroore beärbeede',
+	'right-lookupcredentials' => 'De [[Special:UserCredentials|Nohwiise]] för Metmaacher aanloore',
 );
 
 /** Cornish (Kernewek)
@@ -5834,7 +5862,7 @@ $messages['nds'] = array(
  */
 $messages['nl'] = array(
 	'requestaccount' => 'Gebruiker aanvragen',
-	'requestaccount-text' => "'''Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen'''.
+	'requestaccount-text' => "'''Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen'''. 
 
 Zorg ervoor dat u eerst de [[{{MediaWiki:Requestaccount-page}}|voorwaarden]] leest voordat u een gebruiker aanvraagt.
 
@@ -5850,7 +5878,7 @@ Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Spec
 Reageer daar op door te klikken op de verwijzing die in de e-mail staat.
 U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
 	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee u ervaring hebt of waarvan u het meeste werk wil verrichten.',
-	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek.
+	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor dit verzoek. 
 	U kunt contactgegevens zoals een telefoonummer opgeven om te helpen bij het vaststellen van uw identiteit.',
 	'requestaccount-bio-text' => 'Uw biografie wordt opgenomen in uw gebruikerspagina.
 Probeer uw belangrijkste gegevens op te nemen.
@@ -5886,7 +5914,7 @@ Open de onderstaande verwijzing in uw browser om te bevestigen dat deze gebruike
 
 $3
 
-Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de verwijzing dan *niet*.
+Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de verwijzing dan *niet*. 
 Deze bevestigingse-mail vervalt op $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} gebruikersverzoeken',
 	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
@@ -5916,7 +5944,7 @@ Als u een verzoek goedkeurt, gebruik dan het dropdownmenu om de gebruikersstatus
 Bewerkingen die u maakt aan de biografie die in het verzoek is opgenomen hebben geen invloed op de opgeslagen identiteit.
 U kunt de gebruiker onder een andere naam aanmaken.
 Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
-
+	
 Als u deze pagina verlaat zonder het gebruikersverzoek te bevestigen of af te wijzen, dan blijft het open staan.",
 	'confirmaccount-none-o' => 'Er staan op het moment geen openstaande gebruikersaanvragen in deze lijst.',
 	'confirmaccount-none-h' => 'Er staan op het moment geen uitgestelde gebruikersaanvragen in deze lijst.',
@@ -5976,7 +6004,7 @@ Wellicht is het al afgehandeld.',
 	'confirmaccount-rej' => 'Gebruikersverzoek afgewezen.',
 	'confirmaccount-viewing' => '(op dit ogenblik bekeken door [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
-	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert.
+	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert. 
 Waarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen. Nogmaals, welkom en veel plezier!",
 	'confirmaccount-wsum' => 'Welkom!',
 	'confirmaccount-email-subj' => '{{SITENAME}} gebruikersverzoek',
@@ -5986,7 +6014,7 @@ Gebruiker: $1
 
 Wachtwoord: $2
 
-Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via
+Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body2' => 'Uw gebruikersverzoek op {{SITENAME}} is goedekeurd.
 
@@ -5996,7 +6024,7 @@ Wachtwoord: $2
 
 $3
 
-Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via
+Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Uw gebruikersverzoek voor "$1" op {{SITENAME}} is afgewezen.
 
@@ -6031,6 +6059,9 @@ Er kunnen contacteerlijsten zijn die u kunt gebruiken als u meer wil te weten ko
 	'usercredentials-member' => 'Rechten:',
 	'usercredentials-badid' => 'Geen referenties gevonden voor deze gebruiker.
 Kijk na of de naam correct gespeld is.',
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|Wachtrij met gebruikersaanvragen]] bekijken',
+	'right-requestips' => 'De IP-adressen van aanvragers bekijken bij het verwerken bij het verwerken van gebruikersaanvragen',
+	'right-lookupcredentials' => '[[Special:UserCredentials|gebruikersreferenties]] bekijken',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -6465,9 +6496,9 @@ $messages['oc'] = array(
 
 Per confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navigador Web :
 
-$3
+$3 
 
-Vòstre senhal vos serà mandat unicament se vòstre compte es creat. Se èra pas lo cas, utilizetz pas aqueste ligam.
+Vòstre senhal vos serà mandat unicament se vòstre compte es creat. Se èra pas lo cas, utilizetz pas aqueste ligam. 
 Aqueste còde de confirmacion expira lo $4.",
 	'requestaccount-email-subj-admin' => 'Demanda de compte sus {{SITENAME}}',
 	'requestaccount-email-body-admin' => "« $1 » a demandat un compte e se tròba en espèra de confirmacion.
@@ -6489,7 +6520,7 @@ Al moment de la responsa a una demanda, verificatz-la atentivament e, se fa mest
 	'confirmaccount-list3' => 'Çaijós se tròba una lista de comptes expirats que poirián èsser automaticament suprimits aprèp qualques jorns. Encara pòdon èsser aprovats.',
 	'confirmaccount-text' => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''.
 
-Atencion, verificatz e, se fe mestièr, confirmatz totas las entresenhas çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasètz aquò unicament per evitar de conflictes amb d’autres noms.
+Atencion, verificatz e, se fe mestièr, confirmatz totas las entresenhas çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasètz aquò unicament per evitar de conflictes amb d’autres noms. 
 
 Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjorn mesa en espèra.",
 	'confirmaccount-none-o' => "Actualament i a pas cap de demanda de compte d'utilizaire en cors dins aquesta lista.",
@@ -6581,6 +6612,9 @@ Aquò permetís d’èsser sus la tièraa dels contactes del sit, se desiratz ne
 	'usercredentials-ip' => 'Adreça IP iniciala :',
 	'usercredentials-member' => 'Dreches :',
 	'usercredentials-badid' => 'Cap de referéncia pas trobada per aqueste utilizaire. Verificatz que lo nom siá ben redigit.',
+	'right-confirmaccount' => 'Vejatz la [[Special:ConfirmAccounts|fila de las demandas de compte]]',
+	'right-requestips' => 'Vejatz las adreças IP dels demandaires al moment del tractament de las demandas de comptes novèls',
+	'right-lookupcredentials' => 'Vejatz las [[Special:UserCredentials|referéncias dels utilizaires]]',
 );
 
 /** Ossetic (Иронау)
@@ -7721,7 +7755,7 @@ Emailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu: „$2“.',
 	'acct_request_throttle_hit' => 'Prepáčte, už ste požiadali o vytvorenie {{PLURAL:$1|$1 účtu|$1 účtov}}.
 Nemôžete odoslať viac žiadostí.',
 	'requestaccount-loginnotice' => "Aby ste dostali používateľský účet, musíte '''[[Special:RequestAccount|oň požiadať]]'''.",
-	'confirmaccount-newrequests' => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}}
+	'confirmaccount-newrequests' => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}} 
 [[Special:ConfirmAccounts|{{PLURAL:$1|žiadosť o účet|žiadosti o účet|žiadostí o účet}}]].",
 	'confirmaccounts' => 'Potvrdiť žiadosti o účet',
 	'confirmedit-desc' => 'Dáva byroktatom schopnosť potvrdzovať žiadosti o účet',
@@ -7729,7 +7763,7 @@ Nemôžete odoslať viac žiadostí.',
 
 Každý front žiadostí o účet pozostáva z troch podfront -- jednej pre otvorené požiadavky, druhej pre tie, ktoré boli pozdržané sptávcami kvôli chýbajúcim informáciám a tretej pre nedávno zamietnuté žiadosti.
 
-Keď odpovedáte na žiadosť, pozorne si ju prečítajte a ak je to potrebné, overte obsiahnuté
+Keď odpovedáte na žiadosť, pozorne si ju prečítajte a ak je to potrebné, overte obsiahnuté 
 informácie.
 O vašej činnosti sa povedie neverejný záznam. Tiež sa od vás očakáva, že budete kontrolovať činnosti, ktoré tu robia iní okrem vás.",
 	'confirmaccount-list' => 'Nižšie je zoznam žiadostí o účet, ktoré čakajú na schválenie. Schválené účty budú vytvorené a odstránené z tohoto zoznamu. Odmietnuté účty budú jednoducho odstránené z tohoto zoznamu.',
@@ -7808,7 +7842,7 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 $2
 
 Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
-	'confirmaccount-email-body5' => 'Predtým, než bude možné vašu žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} možné prijať
+	'confirmaccount-email-body5' => 'Predtým, než bude možné vašu žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} možné prijať 
 	musíte poskytnúť ďalšie informácie.
 
 $2
@@ -7831,6 +7865,9 @@ Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak s
 	'usercredentials-ip' => 'Pôvodná IP adresa:',
 	'usercredentials-member' => 'Práva:',
 	'usercredentials-badid' => 'Žiadne osobné informácie tohto používateľa neboli nájdené. Skontrolujte, či ste správne napísali meno.',
+	'right-confirmaccount' => 'Zobraziť [[Special:ConfirmAccounts|front žiadostí o účet]]',
+	'right-requestips' => 'Zobraziť IP adresu žiadateľa pri spracovaní žiadostí o účet',
+	'right-lookupcredentials' => 'Zobraziť [[Special:UserCredentials|údaje používateľa]]',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
