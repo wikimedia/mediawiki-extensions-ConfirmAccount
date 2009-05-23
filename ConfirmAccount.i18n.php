@@ -6431,6 +6431,9 @@ Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om ko
 	'usercredentials-ip' => 'Opprinnelig IP-adresse:',
 	'usercredentials-member' => 'Rettigheter:',
 	'usercredentials-badid' => 'Ingen attester funnet for denne brukeren. Sjekk at navnet er stavet riktig.',
+	'right-confirmaccount' => 'Vis [[Special:ConfirmAccounts|køen av kontosøknader]]',
+	'right-requestips' => 'Vis søkerenes IP-adresser mens man behandler kontosøknadene',
+	'right-lookupcredentials' => 'Vis [[Special:UserCredentials|brukerattester]]',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
