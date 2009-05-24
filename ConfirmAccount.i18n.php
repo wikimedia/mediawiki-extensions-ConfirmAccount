@@ -4104,6 +4104,9 @@ Il pote haber listas de contacto in le sito que tu pote usar si tu vole saper pl
 	'usercredentials-member' => 'Derectos:',
 	'usercredentials-badid' => 'Nulle referentias trovate pro iste usator.
 Verifica que le nomine sia orthographiate correctemente.',
+	'right-confirmaccount' => 'Vider le [[Special:ConfirmAccounts|cauda con requestas de conto]]',
+	'right-requestips' => 'Vider le adresses IP del requestatores durante le tractamento de requestas de conto',
+	'right-lookupcredentials' => 'Vider le [[Special:UserCredentials|credentiales de usatores]]',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -5329,15 +5332,18 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-none-o' => 'Et gëtt elo an dëser Lëscht keng oppen Ufroe fir Benotzerkonten.',
 	'confirmaccount-none-h' => 'Et gëtt elo an dëser Lëscht keng Ufroe fir Benotzerkonten déi am Suspens sinn.',
 	'confirmaccount-none-r' => 'Et gëtt elo keng rezent refüséiert Ufroe fir Benotzerkonten op dëser Lëscht.',
+	'confirmaccount-none-e' => 'Et sinn elo keng ofgelafen Ufroe fir Benotzerkonten an dëser Lëscht.',
 	'confirmaccount-real-q' => 'Numm',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biographie',
 	'confirmaccount-showopen' => 'Ufroen déi nach opstinn',
 	'confirmaccount-showrej' => 'Refuséiert Ufroen',
+	'confirmaccount-showheld' => "Ufroen déi 'en-cours' sinn",
 	'confirmaccount-showexp' => 'ofgelafen Ufroen',
 	'confirmaccount-review' => 'Konfirméieren/Refüséieren',
 	'confirmaccount-type-0' => 'eventuell Auteuren',
 	'confirmaccount-q-open' => 'Ufroen déi nach opstinn',
+	'confirmaccount-q-held' => "Ufroen déi 'en-cours' sinn",
 	'confirmaccount-q-rej' => 'rezent refuséiert Ufroen',
 	'confirmaccount-q-stale' => 'ofgelafen Ufroen',
 	'confirmaccount-leg-user' => 'Benotzerkont',
@@ -5355,6 +5361,7 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-notes' => 'Zousätzlech Bemierkungen:',
 	'confirmaccount-urls' => 'Lëscht vu Websäiten:',
 	'confirmaccount-none-p' => '(net uginn)',
+	'confirmaccount-confirm' => "Benotzt d'Optiounen ënnendrënner fir dës Ufro unzehuelen, ze refuséien oder op 'en-cours' ze setzen:",
 	'confirmaccount-econf' => '(confirméiert)',
 	'confirmaccount-reject' => '(refuséiert vum [[User:$1|$1]] de(n) $2)',
 	'confirmaccount-rational' => 'Ursaach fir deen deen ugefrot huet:',
@@ -5368,6 +5375,7 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-ip' => 'IP-Adress:',
 	'confirmaccount-submit' => 'Confirméieren',
 	'confirmaccount-needreason' => 'Dir musst e Grond an der Kescht ënnendrënner uginn.',
+	'confirmaccount-canthold' => "Dës Ufro ass schonn entweder 'en-cours' oder geläscht.",
 	'confirmaccount-acc' => 'Benotzerkont-Ufro gouf confirméiert;
 de Benotzerkont [[User:$1|$1]] gouf ugeluecht.',
 	'confirmaccount-rej' => "D'Ufro fir ee Benotzerkont gouf refüséiert.",
@@ -5396,7 +5404,13 @@ $3
 
 Aus Sécherheetsgrënn musst Dir Ärt Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.
 Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body5' => 'Éier Är Ufro fir e Benotzerkont "$1" kann op {{SITENAME}} ugeholl musst Dir d\'éischt epuer zousätzech Informatiounen uginn.
+
+$2
+
+Méiglecherweis gëtt et Kontaktlëschten op dem Site déi Dir benotze kënnt wann Dir méi iwwert d\'richlinnen vun de Benotzerkonte wësse wëllt.',
 	'usercredentials' => 'Referenzen déi de Benotzer uginn huet:',
+	'usercredentials-leg' => 'Confirméiert Referenze vun engem Benotzer nokucken',
 	'usercredentials-user' => 'Benotzernumm:',
 	'usercredentials-text' => 'Hei ënnedrënner stinn déi confirméiert Benotzer-Berechtigungsnoweiser fir de gewielte Benotzerkont.',
 	'usercredentials-leg-user' => 'Benotzerkont',
@@ -5413,6 +5427,8 @@ Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
 	'usercredentials-member' => 'Rechter:',
 	'usercredentials-badid' => 'Et goufe keng Rechter fir dëse Benotzer fonnt.
 Kuckt w.e.g. no op den Numm richteg geschriwwen ass.',
+	'right-requestips' => "D'IP-Adress vun däer d'Ufro koum uweise wann d'Ufro fir e Benotzerkont verschafft gëtt",
+	'right-lookupcredentials' => '[[Special:UserCredentials|Referenze vun de Benotzer]] kucken',
 );
 
 /** Lithuanian (Lietuvių)
