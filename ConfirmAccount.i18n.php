@@ -6081,6 +6081,7 @@ Kijk na of de naam correct gespeld is.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
  */
@@ -6098,8 +6099,8 @@ Når kontoen vert godkjend vil du få melding på e-post og du vil kunna [[Speci
 	'requestaccount-leg-person' => 'Personleg informasjon',
 	'requestaccount-leg-other' => 'Annan informasjon',
 	'requestaccount-leg-tos' => 'Tenestevilkår',
-	'requestaccount-acc-text' => 'Du vil få ein e-post med stadfesting med ein gong denne føresurnaden er sendt inn.
-Svar ved å trykkja på stadfestingslekkja i e-posten.
+	'requestaccount-acc-text' => 'Du vil få ein e-post med stadfesting med ein gong denne føresurnaden er sendt inn. 
+Svar ved å trykkja på stadfestingslekkja i e-posten. 
 Passordet ditt vil òg bli sendt til deg når kontoen er oppretta.',
 	'requestaccount-areas-text' => 'Vel det eller dei områda nedanfor som du har mest formell ekspertise innan eller vil jobba mest med.',
 	'requestaccount-ext-text' => 'Følgjande informasjon vil bli heldt privat, og vil berre bli nytta for denne førespurnaden. Du vil kanskje lista opp kontaktinformasjon som eit telefonnummer for å hjelpa til med å stadfesta identiteten din.',
@@ -6267,6 +6268,9 @@ Det kan vera kontaktlister på nettstaden som du kan nytta for å finna ut meir 
 	'usercredentials-member' => 'Rettar:',
 	'usercredentials-badid' => 'Ingen attestar vart funne for brukaren.
 Gjer deg viss om at namnet er stava rett.',
+	'right-confirmaccount' => 'Vis [[Special:ConfirmAccounts|køen av kontosøknader]]',
+	'right-requestips' => 'Vis søkjaren sine IP-adresser medan kontosøknadene er til handsaming',
+	'right-lookupcredentials' => 'Vis [[Special:UserCredentials|brukarattestar]]',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
