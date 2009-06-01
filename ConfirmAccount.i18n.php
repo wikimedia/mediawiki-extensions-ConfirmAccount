@@ -1373,7 +1373,7 @@ Wenn das Benutzerkonto erstellt wurde, bekommst du eine weitere E-Mail mit dem P
 
 Wenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!
 
-Dieser Bestätigungscode wird um $4 ungültig.',
+Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutzerkontenantrag',
 	'requestaccount-email-body-admin' => '„$1“ hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$2“.',
