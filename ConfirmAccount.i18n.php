@@ -1525,6 +1525,23 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 	'right-lookupcredentials' => '[[Special:UserCredentials|Benutzerempfehlungsschreiben]] sehen',
 );
 
+/** German (formal address) (Deutsch (Sie-Form))
+ * @author Umherirrender
+ */
+$messages['de-formal'] = array(
+	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise Sie, haben bei {{SITENAME}} das Benutzerkonto „$2“ mit Ihrer E-Mail-Adresse beantragt.
+
+Um zu bestätigen, dass wirklich Sie dieses Konto bei {{SITENAME}} beantragt haben, öffnen Sie bitte folgenden Link in Ihrem Browser:
+
+$3
+
+Wenn das Benutzerkonto erstellt wurde, bekommen Sie eine weitere E-Mail mit dem Passwort.
+
+Wenn Sie das Benutzerkonto *nicht* beantragt haben, öffnen Sie den Link bitte nicht!
+
+Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
+);
+
 /** Zazaki (Zazaki)
  * @author Belekvor
  */
