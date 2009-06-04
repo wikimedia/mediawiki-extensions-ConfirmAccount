@@ -437,7 +437,7 @@ class ConfirmAccountsPage extends SpecialPage
 
 			$this->showSuccess( $this->submitType );
 		} else if( $this->submitType === 'accept' ) {
-			global $wgAuth, $wgConfirmAccountSaveInfo;
+			global $wgAuth, $wgConfirmAccountSaveInfo, $wgAllowAccountRequestFiles;
 			# Now create user and check if the name is valid
 			$user = User::newFromName( $this->mUsername, 'creatable' );
 			if( is_null($user) ) {
@@ -478,7 +478,7 @@ class ConfirmAccountsPage extends SpecialPage
 			if( $wgConfirmAccountSaveInfo ) {
 				# Copy any attached files to new storage group
 				$key = $row->acr_storage_key;
-				if( $key ) {
+				if( $wgAllowAccountRequestFiles && $key ) {
 					$storeOld = FileStore::get( 'accountreqs' );
 					$storeNew = FileStore::get( 'accountcreds' );
 					if( !$storeOld || !$storeNew ) {
