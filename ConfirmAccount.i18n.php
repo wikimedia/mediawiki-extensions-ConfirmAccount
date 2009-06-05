@@ -856,6 +856,9 @@ $messages['be-tarask'] = array(
 	'usercredentials-leg-person' => 'Асабістыя зьвесткі',
 	'usercredentials-leg-other' => 'Іншая інфармацыя',
 	'usercredentials-email' => 'Адрас электроннай пошты:',
+	'usercredentials-real' => 'Сапраўднае імя:',
+	'usercredentials-bio' => 'Біяграфія:',
+	'usercredentials-member' => 'Правы:',
 );
 
 /** Bulgarian (Български)
