@@ -2617,7 +2617,8 @@ $3
 
 Voutron mot de pâssa vos serat emmandâ solament se voutron compto est crèâ. Se tâl ére *pas* lo câs, utilisâd pas ceti lim.
 Ceti code de confirmacion èxpire lo $4.',
-	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 comptos. Vos pouede pas més nen fâre la demanda.',
+	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}}.
+Vos pouede pas més fâre de demanda.',
 	'requestaccount-loginnotice' => "Por obtegnir un compto utilisator, vos dête nen fâre la '''[[Special:RequestAccount|demanda]]'''.",
 	'confirmaccounts' => 'Demanda de confirmacion de comptos',
 	'confirmaccount-list' => 'Vê-que, ce-desot, la lista des comptos en atenta d’aprobacion. Los comptos accèptâs seront crèâs et reteriês de ceta lista. Los comptos refusâs seront suprimâs de ceta méma lista.',
