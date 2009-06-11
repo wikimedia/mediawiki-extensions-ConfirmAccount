@@ -7735,6 +7735,8 @@ $2
 	'usercredentials-ip' => 'IP-адрес:',
 	'usercredentials-member' => 'Права:',
 	'usercredentials-badid' => 'Не найдена удостоверяющая информация об участнике. Проверьте правильность написания имени.',
+	'right-confirmaccount' => 'просмотр [[Special:ConfirmAccounts|запросов на создание учётных записей]]',
+	'right-requestips' => 'Просмотр IP-адресов авторов запросов на создание учётных записей',
 );
 
 /** Slovak (Slovenčina)
