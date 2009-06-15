@@ -249,7 +249,8 @@ $messages['qqq'] = array(
 	'requestaccount-level-1' => '{{Identical|Editor}}',
 	'requestaccount-notes' => '{{Identical|Additional notes}}',
 	'requestaccount-submit' => '{{Identical|Request account}}',
-	'requestaccount-email-body' => '* $1 is an IP address,
+	'requestaccount-email-body' => 'This text is sent in an e-mail.
+* $1 is an IP address,
 * $2 is a requested user name (no GENDER support),
 * $3 is an URL,
 * $4 is a combined date/time,
