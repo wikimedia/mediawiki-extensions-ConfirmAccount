@@ -5389,6 +5389,7 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-rational' => 'Ursaach fir deen deen ugefrot huet:',
 	'confirmaccount-noreason' => '(keen)',
 	'confirmaccount-autorej' => '(dës Ufro gouf automatesch wéint Inaktivitéit klasséiert)',
+	'confirmaccount-held' => '(als "amgaang" vum [[User:$1|Benotzer $1]] den $2 markéiert)',
 	'confirmaccount-create' => 'Unhuelen (Benotzerkont opmaachen)',
 	'confirmaccount-deny' => 'Refuséieren (Benotzerkont gëtt geläscht)',
 	'confirmaccount-hold' => 'Ofwaarden',
@@ -6674,6 +6675,13 @@ $messages['os'] = array(
 	'confirmaccount-pos-0' => 'автор',
 	'confirmaccount-noreason' => '(нæй)',
 	'usercredentials-email' => 'Эл. посты адрис:',
+);
+
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'confirmaccount-noreason' => '(nix)',
 );
 
 /** Plautdietsch (Plautdietsch)
