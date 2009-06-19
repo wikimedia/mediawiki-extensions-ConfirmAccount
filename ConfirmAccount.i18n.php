@@ -250,12 +250,12 @@ $messages['qqq'] = array(
 	'requestaccount-notes' => '{{Identical|Additional notes}}',
 	'requestaccount-submit' => '{{Identical|Request account}}',
 	'requestaccount-email-body' => 'This text is sent in an e-mail.
-* $1 is an IP address,
-* $2 is a requested user name (no GENDER support),
-* $3 is an URL,
-* $4 is a combined date/time,
-* $5 is the date alone,
-* $6 is the time alone.',
+* $1 is an IP address
+* $2 is a requested user name (no GENDER support)
+* $3 is a URL
+* $4 is a date/time
+* $5 is a date
+* $6 is a time',
 	'requestaccount-email-subj-admin' => '{{Identical|SITENAME account request}}',
 	'requestaccount-email-body-admin' => 'This message is the email body text send to a site admin whenever someone has requested a new account.
 * $1: is a username
@@ -2580,52 +2580,81 @@ Ceci permet d’être sur la liste des contacts du site, si vous désirez en sav
  */
 $messages['frp'] = array(
 	'requestaccount' => 'Demanda de compto utilisator',
-	'requestaccount-text' => "'''Rempléd et emmandâd lo formulèro ce-desot por demandar un compto utilisator.'''
+	'requestaccount-text' => "'''Rempléd et pués mandâd lo formulèro ce-desot por demandar un compto utilisator.'''
 
-	Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto.
+Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto.
 
-	Un côp que lo compto est accèptâ, vos recevréd un mèl vos notifient que voutron compto porrat étre utilisâ dessus
-	[[Special:UserLogin]].",
+Setout que lo compto est accèptâ, vos recevréd un mèl de notificacion et voutron compto porrat étre utilisâ sur la [[Special:UserLogin|pâge de branchement]].",
 	'requestaccount-page' => '{{ns:project}}:Condicions d’usâjo',
-	'requestaccount-dup' => "'''Nota : vos éte ja sur una sèssion avouéc un compto enregistrâ.'''",
-	'requestaccount-acc-text' => 'Un mèssâjo de confirmacion serat emmandâ a voutra adrèce èlèctronica un côp que la demanda arat étâ emmandâ. Dens lo mèl reçu, clicâd sur lo lim corrèspondent a la confirmacion de voutra demanda. Et pués, un mot de pâssa serat emmandâ per mèl quand voutron compto serat crèâ.',
-	'requestaccount-ext-text' => 'L’enformacion siuventa réste privâ et porrat étre utilisâ ren que por ceta requéta.
-	Vos avéd la possibilitât de listar des contactes tâl qu’un numerô de tèlèfone por obtegnir una assistance por confirmar voutra identitât.',
-	'requestaccount-bio-text' => 'Voutra biografia serat betâ per dèfôt sur voutra pâge utilisator. Tâchiéd d’y betar voutres recomandacions. Assurâd-vos que vos pouede difusar sen crenta les enformacions. Voutron nom pôt étre changiê en utilisent [[Special:Preferences]].',
+	'requestaccount-dup' => "'''Nota : vos éte ja sur una sèance avouéc un compto enregistrâ.'''",
+	'requestaccount-leg-user' => 'Compto utilisator',
+	'requestaccount-leg-areas' => 'Centros d’entèrèts principâls',
+	'requestaccount-leg-person' => 'Enformacions a sè',
+	'requestaccount-leg-other' => 'Ôtres enformacions',
+	'requestaccount-leg-tos' => 'Condicions d’usâjo',
+	'requestaccount-acc-text' => 'Un mèssâjo de confirmacion serat mandâ a voutra adrèce de mèl setout que la demanda arat étâ mandâ.
+Dens lo mèl reçu, clicâd sur lo lim que corrèspond a la confirmacion de voutra demanda.
+Et pués, un mot de pâssa serat mandâ per mèl quand voutron compto serat fêt.',
+	'requestaccount-areas-text' => 'Chouèsésséd los domênos que vos avéd una èxpèrtisa dèmontrâ, ou ben que vos éte encllin a contribuar lo ples.',
+	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et porrat étre utilisâ ren que por ceta requéta.
+Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfono por avêr una assistance por confirmar voutra identitât.',
+	'requestaccount-bio-text' => 'Voutra biografia serat betâ per dèfôt sur voutra pâge utilisator.
+Tâchiéd d’y betar voutres recomandacions.
+Assurâd-vos que vos pouede difusar sen crenta les enformacions.
+Voutron nom pôt étre changiê en utilisent voutres [[Special:Preferences|prèferences]].',
 	'requestaccount-real' => 'Veré nom :',
-	'requestaccount-same' => '(nom figurent dens voutron ètat civilo)',
-	'requestaccount-email' => 'Adrèce èlèctronica :',
+	'requestaccount-same' => '(nom que figure dens voutron ètat civilo)',
+	'requestaccount-email' => 'Adrèce de mèl :',
+	'requestaccount-reqtype' => 'Situacion :',
+	'requestaccount-level-0' => 'ôtor',
+	'requestaccount-level-1' => 'contributor',
 	'requestaccount-bio' => 'Biografia a sè :',
-	'requestaccount-attach' => 'CV/Rèsumâ (u chouèx) :',
-	'requestaccount-notes' => 'Notes suplèmentères :',
-	'requestaccount-urls' => 'Lista des setos Malyâjo. S’y at plusiors, sèparâd-los per un sôt de legne :',
-	'requestaccount-agree' => 'Vos dête cèrtifiar que voutron veré nom est corrèct et que vos accèptâd les condicions d’usâjo du sèrviço.',
+	'requestaccount-attach' => 'CV (u chouèx) :',
+	'requestaccount-notes' => 'Notes de ples :',
+	'requestaccount-urls' => 'Lista des setos Malyâjo. S’y en at un mouél, sèparâd-los per un sôt de legne :',
+	'requestaccount-agree' => 'Vos dête cèrtifiar que voutron veré nom est justo et pués que vos accèptâd les condicions d’usâjo.',
 	'requestaccount-inuse' => 'Lo nom d’utilisator est ja utilisâ dens una requéta en cors d’aprobacion.',
-	'requestaccount-tooshort' => 'Voutra biografia dêt avêr u muens {{PLURAL:$1|$1 mot|$1 mots}}.',
-	'requestaccount-exts' => 'Lo tèlèchargement des fichiérs juents est pas pèrmês.',
-	'requestaccount-resub' => 'Voutron fichiér de CV/rèsumâ dêt étre sèlèccionâ un côp de ples por des rêsons de sècuritât. Lèssiéd lo champ vouedo se vos dèsirâd pas més l’apondre.',
-	'requestaccount-tos' => 'J/y’é liesu et j/y’accèpto de rèspèctar los tèrmos regardent les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] des sèrviços de {{SITENAME}}.
-	Lo nom que j/y’é endicâ dens lo champ « Veré nom » est verément mon nom pèrsonèl.',
-	'requestaccount-submit' => 'Demanda de compto utilisator.',
-	'requestaccount-sent' => 'Voutra demanda de compto utilisator at étâ emmandâ avouéc reusséta et at étâ betâ dens la lista d’atenta d’aprobacion.',
-	'request-account-econf' => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ tâla qu’el est dens voutra demanda de compto.',
-	'requestaccount-email-subj' => '{{SITENAME}} confirmacion d’adrèce de mèl.',
-	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at formulâ, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » dessus {{SITENAME}} avouéc ceta adrèce de mèl.
+	'requestaccount-tooshort' => 'Voutra biografia dêt avêr u muens $1 mot{{PLURAL:$1||s}}.',
+	'requestaccount-emaildup' => 'Una ôtra demanda en cors utilise la méma adrèce de mèl.',
+	'requestaccount-exts' => 'Lo tipo du fichiér juent est pas pèrmês.',
+	'requestaccount-resub' => 'Volyéd tornar chouèsir voutron fichiér de CV por des rêsons de sècuritât.
+Se vos souhètâd pas més encllure ceti, lèssiéd lo champ vouedo.',
+	'requestaccount-tos' => 'J’é liesu et pués j’accèpto les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] de {{SITENAME}}.
+Lo nom que j’é buchiê dens lo champ « Veré nom » est franc mon prôpro nom.',
+	'requestaccount-submit' => 'Demanda de compto utilisator',
+	'requestaccount-sent' => 'Voutra demanda de compto utilisator at étâ mandâ avouéc reusséta et pués at étâ betâ dens la lista d’atenta d’aprobacion.',
+	'request-account-econf' => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto.',
+	'requestaccount-email-subj' => 'Confirmacion de l’adrèce de mèl por {{SITENAME}}',
+	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » avouéc ceta adrèce de mèl dessus {{SITENAME}}.
 
-Por confirmar que cél compto dessus {{SITENAME}} est verément a vos, vos éte preyê d’uvrir ceti lim dens voutron navigator Malyâjo :
+Por confirmar que cél compto est franc a vos dessus {{SITENAME}}, vos éte preyê d’uvrir ceti lim dens voutron navigator :
 
 $3
 
-Voutron mot de pâssa vos serat emmandâ solament se voutron compto est crèâ. Se tâl ére *pas* lo câs, utilisâd pas ceti lim.
-Ceti code de confirmacion èxpire lo $4.',
+Voutron mot de pâssa vos serat mandâ ren que se voutron compto est fêt.
+S’o ére *pas* lo câs, utilisâd pas cél lim.
+Ceti code de confirmacion èxpirerat lo $4.',
+	'requestaccount-email-subj-admin' => 'Demanda de compto dessus {{SITENAME}}',
+	'requestaccount-email-body-admin' => '« $1 » at demandâ un compto et sè trove en atenta de confirmacion.
+L’adrèce de mèl at étâ confirmâ. Vos pouede aprovar la demanda ique « $2 ».',
 	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}}.
 Vos pouede pas més fâre de demanda.',
-	'requestaccount-loginnotice' => "Por obtegnir un compto utilisator, vos dête nen fâre la '''[[Special:RequestAccount|demanda]]'''.",
-	'confirmaccounts' => 'Demanda de confirmacion de comptos',
+	'requestaccount-loginnotice' => "Por avêr un compto utilisator, vos dête nen fâre la '''[[Special:RequestAccount|demanda]]'''.",
+	'confirmaccount-newrequests' => "Ora, y at '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compto]]|[[Special:ConfirmAccounts|demandes de compto]]}} en cors.",
+	'confirmaccounts' => 'Confirmar les demandes de comptos utilisator',
+	'confirmedit-desc' => 'Balye ux grata-papiérs la possibilitât de confirmar les demandes de comptos utilisator.',
 	'confirmaccount-list' => 'Vê-que, ce-desot, la lista des comptos en atenta d’aprobacion. Los comptos accèptâs seront crèâs et reteriês de ceta lista. Los comptos refusâs seront suprimâs de ceta méma lista.',
+	'confirmaccount-none-o' => 'Ora, y at gins de demanda de compto utilisator en cors dens ceta lista.',
+	'confirmaccount-none-h' => 'Ora, y at gins de resèrvacion de compto utilisator en cors dens ceta lista.',
+	'confirmaccount-none-r' => 'Ora, y at gins de refus novél de demanda de compto utilisator dens ceta lista.',
+	'confirmaccount-none-e' => 'Ora, y at gins de demanda de compto utilisator èxpirâ dens ceta lista.',
 	'confirmaccount-real-q' => 'Nom',
 	'confirmaccount-email-q' => 'Mèl',
 	'confirmaccount-bio-q' => 'Biografia',
+	'confirmaccount-showopen' => 'Demandes uvèrtes',
+	'confirmaccount-showrej' => 'Demandes refusâs',
+	'confirmaccount-showheld' => 'Demandes resèrvâs',
+	'confirmaccount-showexp' => 'Demandes èxpirâs',
 	'confirmaccount-review' => 'Aprobacion/Refus',
 	'confirmaccount-name' => 'Nom d’utilisator',
 	'confirmaccount-real' => 'Nom :',
@@ -6681,7 +6710,11 @@ $messages['os'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
+	'confirmaccount-real-q' => 'Naame',
+	'confirmaccount-name' => 'Yuuser-Naame',
+	'confirmaccount-real' => 'Naame:',
 	'confirmaccount-noreason' => '(nix)',
+	'usercredentials-user' => 'Yuuser-Naame:',
 );
 
 /** Plautdietsch (Plautdietsch)
@@ -7569,7 +7602,7 @@ $messages['ru'] = array(
 	'requestaccount-ext-text' => 'Следующая информация будет сохранена в секрете и будет использована только для обработки данного запроса.
 	Вы можете перечислить способы связи, например, номер телефона, чтобы помочь в подтверждении идентичности.',
 	'requestaccount-bio-text' => 'Ваша биография будет по умолчанию помещена на вашу личную страницу.
-Попробуйте включить какие-либо полномочия.
+Попробуйте включить какие-либо удостоверения личности.
 Убедитесь, что вы не против публикации этой информации.
 Ваше имя может быть изменено с помощью [[Special:Preferences|ваших персональных настроек]].',
 	'requestaccount-real' => 'Настоящее имя:',
@@ -7746,6 +7779,7 @@ $2
 	'usercredentials-badid' => 'Не найдена удостоверяющая информация об участнике. Проверьте правильность написания имени.',
 	'right-confirmaccount' => 'просмотр [[Special:ConfirmAccounts|запросов на создание учётных записей]]',
 	'right-requestips' => 'Просмотр IP-адресов авторов запросов на создание учётных записей',
+	'right-lookupcredentials' => 'просмотр [[Special:UserCredentials|удостоверений личности участников]]',
 );
 
 /** Slovak (Slovenčina)
