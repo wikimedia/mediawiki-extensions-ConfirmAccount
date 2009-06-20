@@ -1472,9 +1472,8 @@ Benutzername: $1
 
 Passwort: $2
 
-Aus Sicherheitsgründen solltest du dein Passwort unbedingt beim ersten
-Einloggen ändern. Um dich einzuloggen gehst du auf die Seite
-{{fullurl:Special:Userlogin}}.',
+Aus Sicherheitsgründen solltest du dein Passwort unbedingt beim ersten Anmelden ändern.
+Um dich anzumelden besuche bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
 	'confirmaccount-email-body2' => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
 
 Benutzername: $1
@@ -1483,9 +1482,8 @@ Passwort: $2
 
 $3
 
-Aus Sicherheitsgründen solltest du Dein Passwort unbedingt beim ersten
-Einloggen ändern. Um dich einzuloggen gehst du auf die Seite
-{{fullurl:Special:Userlogin}}.',
+Aus Sicherheitsgründen solltest du dein Passwort unbedingt beim ersten Anmelden ändern.
+Um dich anzumelden besuche bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
 	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
 
@@ -2582,11 +2580,11 @@ $messages['frp'] = array(
 	'requestaccount' => 'Demanda de compto utilisator',
 	'requestaccount-text' => "'''Rempléd et pués mandâd lo formulèro ce-desot por demandar un compto utilisator.'''
 
-Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto.
+Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto utilisator.
 
-Setout que lo compto est accèptâ, vos recevréd un mèl de notificacion et voutron compto porrat étre utilisâ sur la [[Special:UserLogin|pâge de branchement]].",
+Setout que lo compto est accèptâ, vos recevréd un mèl de notificacion et voutron compto utilisator porrat étre utilisâ sur la [[Special:UserLogin|pâge de branchement]].",
 	'requestaccount-page' => '{{ns:project}}:Condicions d’usâjo',
-	'requestaccount-dup' => "'''Nota : vos éte ja sur una sèance avouéc un compto enregistrâ.'''",
+	'requestaccount-dup' => "'''Nota : vos éte ja sur una sèance avouéc un compto utilisator enregistrâ.'''",
 	'requestaccount-leg-user' => 'Compto utilisator',
 	'requestaccount-leg-areas' => 'Centros d’entèrèts principâls',
 	'requestaccount-leg-person' => 'Enformacions a sè',
@@ -2594,9 +2592,9 @@ Setout que lo compto est accèptâ, vos recevréd un mèl de notificacion et vou
 	'requestaccount-leg-tos' => 'Condicions d’usâjo',
 	'requestaccount-acc-text' => 'Un mèssâjo de confirmacion serat mandâ a voutra adrèce de mèl setout que la demanda arat étâ mandâ.
 Dens lo mèl reçu, clicâd sur lo lim que corrèspond a la confirmacion de voutra demanda.
-Et pués, un mot de pâssa serat mandâ per mèl quand voutron compto serat fêt.',
+Et pués, un mot de pâssa serat mandâ per mèl quand voutron compto utilisator serat fêt.',
 	'requestaccount-areas-text' => 'Chouèsésséd los domênos que vos avéd una èxpèrtisa dèmontrâ, ou ben que vos éte encllin a contribuar lo ples.',
-	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et porrat étre utilisâ ren que por ceta requéta.
+	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et porrat étre utilisâ ren que por ceta demanda.
 Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfono por avêr una assistance por confirmar voutra identitât.',
 	'requestaccount-bio-text' => 'Voutra biografia serat betâ per dèfôt sur voutra pâge utilisator.
 Tâchiéd d’y betar voutres recomandacions.
@@ -2613,7 +2611,7 @@ Voutron nom pôt étre changiê en utilisent voutres [[Special:Preferences|prèf
 	'requestaccount-notes' => 'Notes de ples :',
 	'requestaccount-urls' => 'Lista des setos Malyâjo. S’y en at un mouél, sèparâd-los per un sôt de legne :',
 	'requestaccount-agree' => 'Vos dête cèrtifiar que voutron veré nom est justo et pués que vos accèptâd les condicions d’usâjo.',
-	'requestaccount-inuse' => 'Lo nom d’utilisator est ja utilisâ dens una requéta en cors d’aprobacion.',
+	'requestaccount-inuse' => 'Lo nom d’utilisator est ja utilisâ dens una demanda en cors d’aprobacion.',
 	'requestaccount-tooshort' => 'Voutra biografia dêt avêr u muens $1 mot{{PLURAL:$1||s}}.',
 	'requestaccount-emaildup' => 'Una ôtra demanda en cors utilise la méma adrèce de mèl.',
 	'requestaccount-exts' => 'Lo tipo du fichiér juent est pas pèrmês.',
@@ -2623,7 +2621,7 @@ Se vos souhètâd pas més encllure ceti, lèssiéd lo champ vouedo.',
 Lo nom que j’é buchiê dens lo champ « Veré nom » est franc mon prôpro nom.',
 	'requestaccount-submit' => 'Demanda de compto utilisator',
 	'requestaccount-sent' => 'Voutra demanda de compto utilisator at étâ mandâ avouéc reusséta et pués at étâ betâ dens la lista d’atenta d’aprobacion.',
-	'request-account-econf' => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto.',
+	'request-account-econf' => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto utilisator.',
 	'requestaccount-email-subj' => 'Confirmacion de l’adrèce de mèl por {{SITENAME}}',
 	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » avouéc ceta adrèce de mèl dessus {{SITENAME}}.
 
@@ -2631,16 +2629,16 @@ Por confirmar que cél compto est franc a vos dessus {{SITENAME}}, vos éte prey
 
 $3
 
-Voutron mot de pâssa vos serat mandâ ren que se voutron compto est fêt.
+Voutron mot de pâssa vos serat mandâ ren que se voutron compto utilisator est fêt.
 S’o ére *pas* lo câs, utilisâd pas cél lim.
 Ceti code de confirmacion èxpirerat lo $4.',
-	'requestaccount-email-subj-admin' => 'Demanda de compto dessus {{SITENAME}}',
-	'requestaccount-email-body-admin' => '« $1 » at demandâ un compto et sè trove en atenta de confirmacion.
+	'requestaccount-email-subj-admin' => 'Demanda de compto utilisator dessus {{SITENAME}}',
+	'requestaccount-email-body-admin' => '« $1 » at demandâ un compto utilisator et sè trove en atenta de confirmacion.
 L’adrèce de mèl at étâ confirmâ. Vos pouede aprovar la demanda ique « $2 ».',
-	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}}.
+	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}} utilisator.
 Vos pouede pas més fâre de demanda.',
 	'requestaccount-loginnotice' => "Por avêr un compto utilisator, vos dête nen fâre la '''[[Special:RequestAccount|demanda]]'''.",
-	'confirmaccount-newrequests' => "Ora, y at '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compto]]|[[Special:ConfirmAccounts|demandes de compto]]}} en cors.",
+	'confirmaccount-newrequests' => "Ora, y at '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compto utilisator]]|[[Special:ConfirmAccounts|demandes de comptos utilisator]]}} en cors.",
 	'confirmaccounts' => 'Confirmar les demandes de comptos utilisator',
 	'confirmedit-desc' => 'Balye ux grata-papiérs la possibilitât de confirmar les demandes de comptos utilisator.',
 	'confirmaccount-list' => 'Vê-que, ce-desot, la lista des comptos en atenta d’aprobacion. Los comptos accèptâs seront crèâs et reteriês de ceta lista. Los comptos refusâs seront suprimâs de ceta méma lista.',
@@ -4643,7 +4641,7 @@ $messages['ja'] = array(
 	'requestaccount-bio' => '自己紹介:',
 	'requestaccount-attach' => '研究概要（レジュメ）や略歴（CV） (任意回答):',
 	'requestaccount-notes' => '特記事項:',
-	'requestaccount-urls' => 'ウェブサイトのリスト（任意回答、改行で区切ります）:',
+	'requestaccount-urls' => 'ウェブサイト一覧 (任意回答、改行で区切ります):',
 	'requestaccount-agree' => '本名が正しいこと、および、サービス利用規約に同意したことを宣誓していただく必要があります。',
 	'requestaccount-inuse' => 'この利用者名は、承認待ちのアカウントにて既に申請済みです。',
 	'requestaccount-tooshort' => "自己紹介は、最低限 $1個以上の単語で構成される必要があります。''（訳注：この機能は日本語版ではうまく動作しないかもしれません。あなたが管理者であるならば、この制約の使用に慎重であってください。あなたが一般利用者である場合、このサイトの管理者と相談してください。）''",
@@ -4655,7 +4653,7 @@ $messages['ja'] = array(
 私が"本名"欄に記入した名前は、自分の本名であることに間違いありません。',
 	'requestaccount-submit' => 'アカウント申請',
 	'requestaccount-sent' => 'アカウント申請は正常に送信され、承認待ち状態になりました。',
-	'request-account-econf' => 'あなたの電子メールアドレスは、承認リストに登録されました。アカウント申請などに利用できます。',
+	'request-account-econf' => 'あなたの電子メールアドレスは確認されました。アカウント申請にもそのように表示されます。',
 	'requestaccount-email-subj' => '{{SITENAME}} 電子メールアドレスの確認',
 	'requestaccount-email-body' => 'IPアドレス $1 を使用するどなたか（おそらくあなた）が、この電子メールアドレスを用いて {{SITENAME}} のアカウント "$2" の作成を申請しました。
 
@@ -4668,9 +4666,9 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}} のアカウント申請',
 	'requestaccount-email-body-admin' => '"$1" によるアカウント申請が承認待ちになっています。
 申請電子メールアドレスは本人確認済みです。この申請への承認は、"$2"　から行うことができます。',
-	'acct_request_throttle_hit' => '申し訳ありません、あなたは既に$1アカウントを申請済みです。これ以上の申請はできません。',
+	'acct_request_throttle_hit' => '申し訳ありません、あなたは既に$1{{PLURAL:$1|アカウント}}を申請済みです。これ以上の申請はできません。',
 	'requestaccount-loginnotice' => "利用者アカウントの取得は、'''[[Special:RequestAccount|アカウント登録申請]]'''から行ってください。",
-	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み[[{{ns:special}}:ConfirmAccounts|アカウント申請]]が承認待ちになっています。",
+	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み{{PLURAL:$1|[[Special:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。",
 	'confirmaccounts' => 'アカウント登録申請の承認',
 	'confirmedit-desc' => '{{int:group-bureaucrat}}にアカウント申請への承認機能を提供する',
 	'confirmaccount-maintext' => "'''ここは、''{{SITENAME}}'' 上で承認待ちとなっているアカウント登録申請を処理するためのページです。'''
@@ -4695,7 +4693,7 @@ $3
 	'confirmaccount-none-o' => '現在、申請が受理されていないアカウントはありません。',
 	'confirmaccount-none-h' => '現在、申請が承認保留となっているアカウントはありません。',
 	'confirmaccount-none-r' => '最近に申請が棄却されたアカウントはありません。',
-	'confirmaccount-none-e' => '現在このリストには期限切れのアカウント申請はありません。',
+	'confirmaccount-none-e' => '現在この一覧には期限切れのアカウント申請はありません。',
 	'confirmaccount-real-q' => '本名',
 	'confirmaccount-email-q' => '電子メールアドレス',
 	'confirmaccount-bio-q' => '自己紹介',
@@ -4728,7 +4726,7 @@ $3
 	'confirmaccount-bio' => '自己紹介:',
 	'confirmaccount-attach' => '研究概要（レジュメ）や略歴（CV）:',
 	'confirmaccount-notes' => '特記事項:',
-	'confirmaccount-urls' => 'ウェブサイトのリスト:',
+	'confirmaccount-urls' => 'ウェブサイト一覧:',
 	'confirmaccount-none-p' => '（記述なし）',
 	'confirmaccount-confirm' => 'この申請に対する承認、棄却、保留判断を以下から選択:',
 	'confirmaccount-econf' => '（確認済）',
@@ -4738,7 +4736,7 @@ $3
 	'confirmaccount-autorej' => '(この申請は活動停止のため自動的に廃棄されました)',
 	'confirmaccount-held' => '（$2、[[User:$1|$1]]が"保留"の判断）',
 	'confirmaccount-create' => '承認（アカウント作成）',
-	'confirmaccount-deny' => '棄却（リストから削除）',
+	'confirmaccount-deny' => '棄却（一覧から削除）',
 	'confirmaccount-hold' => '保留',
 	'confirmaccount-spam' => 'スパム（電子メールは送信しません）',
 	'confirmaccount-reason' => '判断理由（電子メールに記載されます）:',
@@ -4800,7 +4798,7 @@ $2
 	'usercredentials-bio' => '自己紹介:',
 	'usercredentials-attach' => '研究概要（レジュメ）や略歴（CV）:',
 	'usercredentials-notes' => '特記事項:',
-	'usercredentials-urls' => 'ウェブサイトのリスト:',
+	'usercredentials-urls' => 'ウェブサイト一覧:',
 	'usercredentials-ip' => '申請時IPアドレス:',
 	'usercredentials-member' => '権限:',
 	'usercredentials-badid' => '利用者信頼情報が見つかりません。利用者名が正しく指定されているか確認してください。',
