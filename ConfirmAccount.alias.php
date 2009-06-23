@@ -143,7 +143,7 @@ $aliases['it'] = array(
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'RequestAccount' => array( 'アカウント申請', 'アカウント登録申請' ),
-	'ConfirmAccounts' => array( 'アカウントの承認', 'アカウント申請の承認', 'アカウント登録申請の承認' ),
+	'ConfirmAccounts' => array( 'アカウント承認', 'アカウントの承認', 'アカウント申請の承認', 'アカウント登録申請の承認' ),
 	'UserCredentials' => array( '利用者信頼情報' ),
 );
 

@@ -2178,6 +2178,7 @@ $messages['ext'] = array(
  * @author Mobe
  * @author Nike
  * @author Taleman
+ * @author Varusmies
  */
 $messages['fi'] = array(
 	'requestaccount' => 'Pyydä käyttäjätunnusta',
@@ -2371,6 +2372,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
 	'usercredentials-ip' => 'Käyttäjän IP-osoite:',
 	'usercredentials-member' => 'Oikeudet:',
 	'usercredentials-badid' => 'Tämän käyttäjän valtuutuksia ei löytynyt. Tarkista nimen oikeinkirjoitus.',
+	'right-confirmaccount' => 'Näytä [[Special:ConfirmAccounts|lista pyydetyistä tileistä]]',
 );
 
 /** French (Français)
