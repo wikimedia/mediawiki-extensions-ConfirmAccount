@@ -231,6 +231,7 @@ Check that the name is spelled correctly.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Bennylin
  * @author Jon Harald Søby
  * @author Lejonel
  * @author Purodha
@@ -287,6 +288,7 @@ $messages['qqq'] = array(
 	'confirmaccount-attach' => '{{Identical|Resume/CV}}',
 	'confirmaccount-notes' => '{{Identical|Additional notes}}',
 	'confirmaccount-urls' => '{{Identical|List of websites}}',
+	'confirmaccount-none-p' => '{{Identical/Notprovided}}',
 	'confirmaccount-noreason' => '{{Identical|None}}',
 	'confirmaccount-ip' => '{{Identical|IP Address}}',
 	'confirmaccount-submit' => '{{Identical|Confirm}}',
@@ -839,13 +841,55 @@ $messages['bcl'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
+ * @author Jim-by
  */
 $messages['be-tarask'] = array(
 	'requestaccount' => 'Запыт на стварэньне рахунку',
+	'requestaccount-text' => "'''Запоўніце і адпраўце наступную форму, каб запрасіць рахунак удзельніка'''.
+
+Калі ласка, прачытайце [[{{MediaWiki:Requestaccount-page}}|Умовы прадстаўленьня паслугаў]] перад запытам рахунку.
+
+Пасьля стварэньня рахунку, Вам будзе дасланы ліст па электроннай пошце з паведамленьнем і Вы зможаце [[Special:UserLogin|ўвайсьці ў сыстэму]].",
+	'requestaccount-page' => '{{ns:project}}:Умовы прадстаўленьня паслугаў',
+	'requestaccount-dup' => "'''Заўвага: Вы ўжо ўвайшлі ў сыстэму з зарэгістраваным рахункам.'''",
+	'requestaccount-leg-user' => 'Рахунак удзельніка',
+	'requestaccount-leg-areas' => 'Асноўныя вобласьці інтарэсаў',
 	'requestaccount-leg-person' => 'Асабістыя зьвесткі',
 	'requestaccount-leg-other' => 'Іншая інфармацыя',
+	'requestaccount-leg-tos' => 'Умовы прадстаўленьня паслугаў',
+	'requestaccount-acc-text' => 'Пасьля адпраўкі запыту на Ваш адрас электроннай пошты будзе дасланы ліст з пацьверджаньнем.
+Калі ласка, націсьніце на спасылку з пацьверджаньнем ў лісьце. 
+Пароль будзе дасланы Вам па электроннай пошце, калі будзе створаны Ваш рахунак.',
+	'requestaccount-areas-text' => 'Выберыце вобласьці інтарэсаў, у якіх Вы кампэтэнтны альбо на якімі Вы зьбіраецеся працаваць у найбольшай ступені.',
+	'requestaccount-ext-text' => 'Наступная інфармацыя будзе прыватнай і будзе выкарыстана толькі для апрацоўкі гэтага запыту.
+Вы можаце падаць спосабы кантактаў, напрыклад, нумар тэлефона, каб пацьвердзіць ідэнтычнасьць.',
+	'requestaccount-bio-text' => 'Вашая біяграфія будзе па змоўчваньні разьмешчаная на Вашай старонцы ўдзельніка.
+Паспрабуйце уключыць якую-небудзь інфармацыю аб вашай адукацыі.
+Упэўніцеся, што Вы ня супраць апублікаваньня падобнай інфармацыі.
+Вашае імя можа быць зьменена праз [[Special:Preferences|Вашыя ўстаноўкі]].',
+	'requestaccount-real' => 'Сапраўднае імя:',
+	'requestaccount-same' => '(такое ж як і сапраўднае імя)',
 	'requestaccount-email' => 'Адрас электроннай пошты:',
+	'requestaccount-reqtype' => 'Пасада:',
 	'requestaccount-level-0' => 'аўтар',
+	'requestaccount-level-1' => 'рэдактар',
+	'requestaccount-bio' => 'Асабістая біяграфія:',
+	'requestaccount-attach' => 'Рэзюмэ (неабавязковае):',
+	'requestaccount-notes' => 'Дадатковая інфармацыя:',
+	'requestaccount-urls' => 'Сьпіс сайтаў, калі ёсьць (кожны ў асобным радку):',
+	'requestaccount-agree' => 'Вы павінны пацьвердзіць, што Вашае сапраўднае імя пазначана слушна і што Вы згодны з нашымі ўмовамі прадстаўленьня паслугаў.',
+	'requestaccount-inuse' => 'Імя ўдзельніка ўжо ўказанае ў адным з запытаў на стварэньне рахунка.',
+	'requestaccount-tooshort' => 'Ваша біяграфія павінна ўтрымліваць ня меней за $1 {{PLURAL:$1|слова|словы|словаў}}.',
+	'requestaccount-emaildup' => 'У іншым неапрацаваным запыце на стварэньне рахунку пададзены такі ж самы адрас электроннай пошты.',
+	'requestaccount-exts' => 'Тып файла забаронены для далучэньняў.',
+	'requestaccount-resub' => 'У мэтах бясьпекі Ваш файл рэзюмэ павінен быць заменены.
+Пакіньце поле пустым, калі Вы не жадаеце дадаваць рэзюмэ.',
+	'requestaccount-tos' => 'Я прачытаў і згодны з [[{{MediaWiki:Requestaccount-page}}|умовамі прадстаўленьня паслугаў]] {{GRAMMAR:родны|{{SITENAME}}}}.
+Імя, якое я пазначыў у полі «Сапраўднае імя» сапраўды зьяўляецца маім сапраўдным іменем.',
+	'requestaccount-submit' => 'Запытаць стварэньне рахунку',
+	'requestaccount-sent' => 'Ваш запыт на стварэньне рахунку быў пасьпяхова дасланы і цяпер чакае апрацоўкі.',
+	'request-account-econf' => 'Ваш адрас электроннай пошты быў пацьверджаны і будзе пазначаны ў Вашым запыце на стварэньне рахунку.',
+	'requestaccount-email-subj' => 'Пацьверджаньне адрасу электроннай пошты {{GRAMMAR:MS.lp|{{SITENAME}}}}',
 	'confirmaccount-email-q' => 'Адрас электроннай пошты',
 	'confirmaccount-leg-person' => 'Асабістыя зьвесткі',
 	'confirmaccount-leg-other' => 'Іншая інфармацыя',
@@ -1356,7 +1400,7 @@ Du kannst deinen Namen in [[Special:Preferences|deinen Einstellungen]] ändern.'
 	'requestaccount-urls' => 'Liste von Webseiten (durch Zeilenumbrüche getrennt):',
 	'requestaccount-agree' => 'Du musst bestätigen, dass Dein Realname korrekt ist und du die Benutzerbedingungen akzeptierst.',
 	'requestaccount-inuse' => 'Der Benutzername ist bereits in einem anderen Benutzerantrag in Verwendung.',
-	'requestaccount-tooshort' => 'Deine Biographie sollte mindestens $1 Worte lang sein.',
+	'requestaccount-tooshort' => 'Deine Biographie muss mindestens {{PLURAL:$1|1 Wort|$1 Wörter}} lang sein.',
 	'requestaccount-emaildup' => 'Ein weiterer noch nicht erledigter Antrag benutzt die gleiche E-Mail-Adresse.',
 	'requestaccount-exts' => 'Der Dateityp des Anhangs ist nicht erlaubt.',
 	'requestaccount-resub' => 'Die Datei mit deinem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
@@ -1589,7 +1633,7 @@ Twójo mě dajo se pśez [[Special:Preferences|swóje nastajenja]] změniś.',
 	'requestaccount-urls' => 'Lisćina websedłow, jolic take su (kuždy zapisk na swójskej smužce):',
 	'requestaccount-agree' => 'Musyš wobkšuśiś, až twójo napšawdne mě jo korektne a až sy wobjadny z wužywańskimi wuměnjenjami.',
 	'requestaccount-inuse' => 'Wužywarske mě wužywa se južo w njedocynjonem póžedanju na konto.',
-	'requestaccount-tooshort' => 'Twója biografija musy nanejmjenjej $1 {{PLURAL:$1|słowo|słowje|słowa|słowow}} dłujka byś.',
+	'requestaccount-tooshort' => 'Twója biografija musy nanejmjenjej $1 {{PLURAL:$1|słowo|słowje|słowa|słowow}} dłujko byś.',
 	'requestaccount-emaildup' => 'Dalšne njedocynjone póžedanje na konto wužywa samsku e-mailowu adresu.',
 	'requestaccount-exts' => 'Datajowy typ dodanka njejo dowólony.',
 	'requestaccount-resub' => 'Dataja z twójim žywjenjoběgom musy se z wěstotnych pśicynow znowego wubraś.
@@ -2372,7 +2416,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
 	'usercredentials-ip' => 'Käyttäjän IP-osoite:',
 	'usercredentials-member' => 'Oikeudet:',
 	'usercredentials-badid' => 'Tämän käyttäjän valtuutuksia ei löytynyt. Tarkista nimen oikeinkirjoitus.',
-	'right-confirmaccount' => 'Näytä [[Special:ConfirmAccounts|lista pyydetyistä tileistä]]',
+	'right-confirmaccount' => 'Nähdä [[Special:ConfirmAccounts|listan pyydetyistä tunnuksista]]',
 );
 
 /** French (Français)
@@ -2443,7 +2487,7 @@ L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $
 	'acct_request_throttle_hit' => 'Désolé, vous avez déjà demandé $1 compte{{PLURAL:$1||s}}.
 Vous ne pouvez plus faire de demande.',
 	'requestaccount-loginnotice' => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
-	'confirmaccount-newrequests' => "Il y a actuellement '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demande de compte]]|[[Special:ConfirmAccounts|demandes de compte]]}} en cours.",
+	'confirmaccount-newrequests' => "Il y a actuellement '''$1''' [[Special:ConfirmAccounts|demande{{PLURAL:$1||s}} de compte]] en cours.",
 	'confirmaccounts' => 'Demande de confirmation de comptes',
 	'confirmedit-desc' => 'Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs',
 	'confirmaccount-maintext' => "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.
@@ -3608,7 +3652,7 @@ Móžeš swoje wužiwarske mjeno pod [[Special:Preferences|Nastajenja]] změnić
 	'requestaccount-urls' => 'Lisćina webowych sydłow (přez linkowe łamanja wotdźělene)',
 	'requestaccount-agree' => 'Dyrbiš potwjerdźić, zo twoje woprawdźite mjeno je korektne a wužiwarske wuměnjenja akceptuješ.',
 	'requestaccount-inuse' => 'Wužiwarske mjeno so hižo w druhim kontowym požadanju wužiwa.',
-	'requestaccount-tooshort' => 'Twoja biografija dyrbi znajmjeńša $1 słowow dołho być.',
+	'requestaccount-tooshort' => 'Twoja biografija dyrbi znajmjeńša $1 {{PLURAL:$1|słowo|słowje|słowa|słowow}} dołho być.',
 	'requestaccount-emaildup' => 'Druhe předležace kontowe požadanje samsnu e-mejlowu adresu wužiwa.',
 	'requestaccount-exts' => 'Datajowy typ přiwěška je njedowoleny.',
 	'requestaccount-resub' => 'Twoja žiwjenjoběhowa dataja dyrbi so z přičinow wěstoty znowa wubrać. Wostaj polo prózdne, jeli hižo nochceš tajku zapřijimać.',
@@ -4161,6 +4205,7 @@ Verifica que le nomine sia orthographiate correctemente.',
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author Irwangatot
  * @author Rex
  */
@@ -4289,7 +4334,7 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-attach' => 'Resume/CV:',
 	'confirmaccount-notes' => 'Catatan tambahan;',
 	'confirmaccount-urls' => 'Daftar situs web:',
-	'confirmaccount-none-p' => '(tidak diisi)',
+	'confirmaccount-none-p' => '(tidak diberikan)',
 	'confirmaccount-confirm' => 'Gunakan opsi berikut untuk menyetujui, menolak, atau menunda permintaan ini:',
 	'confirmaccount-econf' => '(telah dikonfirmasi)',
 	'confirmaccount-reject' => '(ditolah oleh [[User:$1|$1]] pada $2)',
@@ -5357,7 +5402,7 @@ Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wë
 	'requestaccount-urls' => 'Lëscht vu Websäiten (all Säit an enger neier Zeil)',
 	'requestaccount-agree' => "Dir musst confirméieren datt är E-Mailadress richteg ass and datt dir mat den Allgemenge Konditiounen d'Accord sitt.",
 	'requestaccount-inuse' => 'De Benotzernumm ass scho bäi enger anere Benotzerufro a Gebrauch.',
-	'requestaccount-tooshort' => 'Är Biographie muss mindestens $1 Wierder hunn.',
+	'requestaccount-tooshort' => 'Är Biographie muss mindestens $1 {{PLURAL:$1|Wuert|Wierder}} hunn.',
 	'requestaccount-emaildup' => 'En aneren ugefrote Benotzerkont benotzt déi selwescht E-Mailadress.',
 	'requestaccount-exts' => "De Fichierstyp vum ''Attachment'' ass net erlaabt.",
 	'requestaccount-resub' => "De Fichier mat ärem CV muss aus Sécherheetsgrënn nachemol nei erausgesicht ginn.
@@ -5393,6 +5438,7 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-showexp' => 'ofgelafen Ufroen',
 	'confirmaccount-review' => 'Konfirméieren/Refüséieren',
 	'confirmaccount-type-0' => 'eventuell Auteuren',
+	'confirmaccount-type-1' => 'eventuell Auteuren',
 	'confirmaccount-q-open' => 'Ufroen déi nach opstinn',
 	'confirmaccount-q-held' => "Ufroen déi 'en-cours' sinn",
 	'confirmaccount-q-rej' => 'rezent refuséiert Ufroen',
@@ -5964,7 +6010,7 @@ U kunt uw naam wijzigen via uw [[Special:Preferences|voorkeuren]].',
 	'requestaccount-urls' => 'Lijst van websites, als van toepassing (iedere site op een aparte regel):',
 	'requestaccount-agree' => 'U moet aangegeven dat uw naam juist is en dat u akkoord gaat met de Voorwaarden.',
 	'requestaccount-inuse' => 'De gebruiker is al bekend in een aanvraagprocedure.',
-	'requestaccount-tooshort' => 'Uw biografie moet ten minste $1 woorden bevatten.',
+	'requestaccount-tooshort' => 'Uw biografie moet ten minste {{PLURAL:$1|één woord|$1 woorden}} bevatten.',
 	'requestaccount-emaildup' => 'Een ander openstaand gebruikersverzoek gebruikt hetzelfde e-mailadres.',
 	'requestaccount-exts' => 'Bestandstype van de bijlage is niet toegestaan.',
 	'requestaccount-resub' => 'Uw CV-bestand moet opnieuw geselecteerd worden om veiligheidsredenen.
@@ -6558,7 +6604,7 @@ $messages['oc'] = array(
 	'requestaccount-urls' => "Lista dels sits Web. Se n'i a mantun, separatz-los per un saut de linha :",
 	'requestaccount-agree' => "Vos cal certificar que vòstre nom vertadièr es corrècte e qu'acceptatz las condicions d’utilizacion del servici.",
 	'requestaccount-inuse' => 'Lo nom d’utilizaire es ja utilizat dins una requèsta en cors d’aprobacion.',
-	'requestaccount-tooshort' => 'Vòstra biografia deu aver almens {{PLURAL:$1|$1 mot|$1 mots}}.',
+	'requestaccount-tooshort' => 'Vòstra biografia deu aver almens $1 {{PLURAL:$1|mot|mots}}.',
 	'requestaccount-emaildup' => 'Una autra demanda en cors utiliza la meteissa adreça electronica.',
 	'requestaccount-exts' => 'Lo telecargament dels fiquièrs junts es pas permés.',
 	'requestaccount-resub' => 'Vòstre fichièr de CV/resumit deu èsser seleccionat un còp de mai per de rasons de seguretat. Daissatz lo camp void se lo desiratz pas mai jónher.',
@@ -7580,6 +7626,7 @@ $messages['roa-tara'] = array(
 /** Russian (Русский)
  * @author Ferrer
  * @author Kaganer
+ * @author Lockal
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -7617,7 +7664,7 @@ $messages['ru'] = array(
 	'requestaccount-urls' => 'Список веб-сайтов, если есть (по одному на каждой строчке):',
 	'requestaccount-agree' => 'Вы должны подтвердить, что ваше настоящее имя указано правильно и вы согласны с нашими Условиями предоставления услуг.',
 	'requestaccount-inuse' => 'Имя участника уже указано в одном из запросов на учётную запись.',
-	'requestaccount-tooshort' => 'Ваша биография должна содержать не менее $1 слов.',
+	'requestaccount-tooshort' => 'Ваша биография должна содержать не менее $1 {{PLURAL:$1|слова|слов|слов}}.',
 	'requestaccount-emaildup' => 'В другом необработанном запросе на получение учётной записи указан такой же адрес электронной почты.',
 	'requestaccount-exts' => 'Присоединение данного типа файлов запрещено.',
 	'requestaccount-resub' => 'В целях безопасности, ваш файл с резюме должен быть заменён. Оставьте поле пустым,
