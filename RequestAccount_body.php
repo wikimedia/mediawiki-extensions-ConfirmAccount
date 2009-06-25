@@ -285,7 +285,8 @@ class RequestAccountPage extends SpecialPage {
 		global $wgAccountRequestMinWords;
 		# Check if biography is long enough
 		if ( str_word_count( $this->mBio ) < $wgAccountRequestMinWords ) {
-			$this->showForm( wfMsgHtml( 'requestaccount-tooshort', $wgAccountRequestMinWords ) );
+			global $wgLang;
+			$this->showForm( wfMsgExt( 'requestaccount-tooshort', 'parsemag', $wgLang->formatNum( $wgAccountRequestMinWords ) ) );
 			return;
 		}
 		# Set some additional data so the AbortNewAccount hook can be
