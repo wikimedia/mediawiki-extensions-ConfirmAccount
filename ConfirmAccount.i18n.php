@@ -46,7 +46,7 @@ Your name can be changed via [[Special:Preferences|your preferences]].",
 	'requestaccount-urls'       => 'List of websites, if any (separate with newlines):',
 	'requestaccount-agree'      => 'You must certify that your real name is correct and that you agree to our Terms of Service.',
 	'requestaccount-inuse'      => 'Username is already in use in a pending account request.',
-	'requestaccount-tooshort'   => 'Your biography must be at least be $1 {{PLURAL:$1|word|words}} long.',
+	'requestaccount-tooshort'   => 'Your biography must be at least $1 {{PLURAL:$1|word|words}} long.',
 	'requestaccount-emaildup'   => 'Another pending account request uses the same e-mail address.',
 	'requestaccount-exts'       => 'Attachment file type is disallowed.',
 	'requestaccount-resub'      => 'Your CV/resume file must be re-selected for security reasons.
