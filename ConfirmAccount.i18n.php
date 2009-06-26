@@ -890,6 +890,25 @@ $messages['be-tarask'] = array(
 	'requestaccount-sent' => 'Ваш запыт на стварэньне рахунку быў пасьпяхова дасланы і цяпер чакае апрацоўкі.',
 	'request-account-econf' => 'Ваш адрас электроннай пошты быў пацьверджаны і будзе пазначаны ў Вашым запыце на стварэньне рахунку.',
 	'requestaccount-email-subj' => 'Пацьверджаньне адрасу электроннай пошты {{GRAMMAR:MS.lp|{{SITENAME}}}}',
+	'requestaccount-email-body' => 'Нехта, верагодна Вы, з IP-адрасу $1, запытаў стварэньне рахунку «$2» у {{GRAMMAR:месны|{{SITENAME}}}} з гэтым адрасам электроннай пошты.
+
+Каб пацьвердзіць, што гэты рахунак у {{GRAMMAR:месны|{{SITENAME}}}} сапраўды належыць Вам, адкрыйце гэтую спасылку ў Вашым браўзэры:
+
+$3
+
+Калі рахунак будзе створаны, пароль будзе дасланы толькі Вам.
+Калі гэта *не* Вы, не адкрывайце спасылку.
+Гэты код пацьверджаньня будзе дзейнічаць да $4.',
+	'requestaccount-email-subj-admin' => 'Запыт на стварэньне рахунку ў {{GRAMMAR:месны|{{SITENAME}}}}',
+	'requestaccount-email-body-admin' => '«$1» запытаў стварэньне рахунку і чакае пацьверджаньня.
+Адрас электроннай пошты быў пацьверджаны. Вы можаце пацьвердзіць запыт тут «$2».',
+	'acct_request_throttle_hit' => 'Прабачце, але Вы ўжо запыталі стварэньне рахунку $1 {{PLURAL:$1|раз|разы|разоў}}.
+Вы больш ня можаце рабіць новыя запыты.',
+	'requestaccount-loginnotice' => "Каб атрымаць рахунак, Вам неабходна '''[[Special:RequestAccount|падаць запыт]]'''.",
+	'confirmaccount-newrequests' => "Чакаецца апрацоўка '''$1'''
+[[Special:ConfirmAccounts|{{PLURAL:$1|запыту на стварэньне рахунку|запытаў на стварэньне рахунку|запытаў на стварэньне рахунку}}]].",
+	'confirmaccounts' => 'Пацьвердзіць запыт на стварэньне рахунку',
+	'confirmedit-desc' => 'Дае бюракратам магчымасьць пацьвярджаць запыты на стварэньне рахункаў',
 	'confirmaccount-email-q' => 'Адрас электроннай пошты',
 	'confirmaccount-leg-person' => 'Асабістыя зьвесткі',
 	'confirmaccount-leg-other' => 'Іншая інфармацыя',
@@ -2773,7 +2792,7 @@ O seu nome pódese cambiar [[Special:Preferences|nas súas preferencias]].',
 	'requestaccount-urls' => 'Lista de sitios web, de habelos, (separados cun parágrafo novo):',
 	'requestaccount-agree' => 'Debe certificar que o seu nome real é correcto e que está de acordo coas nosas Condicións de Servizo.',
 	'requestaccount-inuse' => 'Este nome de usuario xa se usou nunha solicitude de conta aínda pendente.',
-	'requestaccount-tooshort' => 'A súa biografía debe ter un mínimo de $1 palabras.',
+	'requestaccount-tooshort' => 'A súa biografía debe ter un mínimo {{PLURAL:$1|dunha palabra|de $1 palabras}}.',
 	'requestaccount-emaildup' => 'Outra solicitude pendente de conta usa o mesmo enderezo de correo electrónico.',
 	'requestaccount-exts' => 'Non se permite este tipo de ficheiro como anexo.',
 	'requestaccount-resub' => 'Ten que volver seleccionar o ficheiro do seu curriculum vitae por razóns de seguranza.
@@ -3008,7 +3027,7 @@ Du chasch Dyy Namen in [[Special:Preferences|Dyynen Yystelligen]] ändere.',
 	'requestaccount-urls' => 'Lischt vu Netzsyte (dur Zyylenumbrich trännt):',
 	'requestaccount-agree' => 'Du muesch bstätigen, ass Dyy Realname korräkt isch un Du d Benutzerbedingige akzeptiersch.',
 	'requestaccount-inuse' => 'Dr Benutzername wird scho in eme andere Benutzeraatrag bruucht.',
-	'requestaccount-tooshort' => 'Dyy Biografii sott zmindescht $1 Wort lang syy.',
+	'requestaccount-tooshort' => 'Dyy Biografii sott zmindescht {{PLURAL:$1|1 Wort|$1 Werter}} lang syy.',
 	'requestaccount-emaildup' => 'E wytere nonig erledigte Aatrag bruucht di nämlig E-Mail-Adräss.',
 	'requestaccount-exts' => 'Dr Dateityp vum Aahang isch nit erlaubt.',
 	'requestaccount-resub' => 'D Datei mit Dyynem Läbenslauf muess us Sicherheitsgrind nej uusgwehlt wäre.
@@ -4218,10 +4237,10 @@ Pastikan Anda telah membaca [[{{MediaWiki:Requestaccount-page}}|kebijakan akun]]
 Bila akun yang Anda ajukan telah disetujui, sebuah surat-e notifikasi akan dikirimkan kepada Anda dan akun tersebut dapat digunakan untuk [[Special:UserLogin|masuk log]] di situs ini.",
 	'requestaccount-page' => '{{ns:project}}:Kebijakan akun pengguna',
 	'requestaccount-dup' => "'''Catatan: Anda sudah masuk log dengan sebuah akun terdaftar.'''",
-	'requestaccount-leg-user' => 'Nama pengguna',
+	'requestaccount-leg-user' => 'Akun pengguna',
 	'requestaccount-leg-areas' => 'Bidang utama yang diminati',
 	'requestaccount-leg-person' => 'Informasi pribadi',
-	'requestaccount-leg-other' => 'Informasi lainnya',
+	'requestaccount-leg-other' => 'Informasi lain',
 	'requestaccount-leg-tos' => 'Syarat Layanan',
 	'requestaccount-acc-text' => 'Kami akan mengirimkan sebuah pesan konfirmasi ke alamat surat-e Anda segera setelah permintaan ini dikirimkan.
 Klik pada pranala dalam surat-e tersebut untuk konfirmasi.
@@ -4236,7 +4255,7 @@ Nama Anda dapat diubah melalui [[Special:Preferences|preferensi Anda]].',
 	'requestaccount-real' => 'Nama asli:',
 	'requestaccount-same' => '(sama dengan nama asli)',
 	'requestaccount-email' => 'Alamat surat-e:',
-	'requestaccount-reqtype' => 'Jabatan:',
+	'requestaccount-reqtype' => 'Posisi:',
 	'requestaccount-level-0' => 'penulis',
 	'requestaccount-level-1' => 'penyunting',
 	'requestaccount-bio' => 'Biografi pribadi:',
@@ -4304,7 +4323,7 @@ Jika Anda tidak menyetujui atau menolak permintaan ini, maka permintaan ini akan
 	'confirmaccount-real-q' => 'Nama',
 	'confirmaccount-email-q' => 'Surat-e',
 	'confirmaccount-bio-q' => 'Biografi',
-	'confirmaccount-showopen' => 'antrian permintaan',
+	'confirmaccount-showopen' => 'permintaan dalam antrian',
 	'confirmaccount-showrej' => 'permintaan ditolak',
 	'confirmaccount-showheld' => 'permintaan ditunda',
 	'confirmaccount-showexp' => 'permintaan kadaluwarsa',
@@ -4321,9 +4340,9 @@ Jika Anda tidak menyetujui atau menolak permintaan ini, maka permintaan ini akan
 	'confirmaccount-badid' => 'Tidak ada permintaan dalam antrian yang terkait dengan ID tersebut.
 Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-leg-user' => 'Akun pengguna',
-	'confirmaccount-leg-areas' => 'Area minat utama:',
+	'confirmaccount-leg-areas' => 'Bidang utama yang diminati',
 	'confirmaccount-leg-person' => 'Informasi pribadi',
-	'confirmaccount-leg-other' => 'Informasi lainnya',
+	'confirmaccount-leg-other' => 'Informasi lain',
 	'confirmaccount-name' => 'Nama pengguna',
 	'confirmaccount-real' => 'Nama:',
 	'confirmaccount-email' => 'Surat-e:',
@@ -4332,7 +4351,7 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-pos-1' => 'penyunting',
 	'confirmaccount-bio' => 'Biografi:',
 	'confirmaccount-attach' => 'Resume/CV:',
-	'confirmaccount-notes' => 'Catatan tambahan;',
+	'confirmaccount-notes' => 'Catatan tambahan:',
 	'confirmaccount-urls' => 'Daftar situs web:',
 	'confirmaccount-none-p' => '(tidak diberikan)',
 	'confirmaccount-confirm' => 'Gunakan opsi berikut untuk menyetujui, menolak, atau menunda permintaan ini:',
@@ -4370,7 +4389,26 @@ Kata sandi: $2
 
 Untuk alasan keamanan Anda harus mengubah kata sandi Anda pada saat masuk log pertama kali.
 Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body2' => 'Permintaan akun Anda telah disetujui di {{SITENAME}}.
+
+Nama akun: $1
+
+Kata sandi: $2
+
+$3
+
+Untuk alasan keamanan Anda harus mengubah kata sandi Anda pada saat masuk log pertama kali.
+Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
 	'usercredentials-user' => 'Nama pengguna:',
+	'usercredentials-leg-user' => 'Akun pengguna',
+	'usercredentials-leg-areas' => 'Bidang utama yang diminati',
+	'usercredentials-leg-person' => 'Informasi pribadi',
+	'usercredentials-leg-other' => 'Informasi lain',
+	'usercredentials-real' => 'Nama asli:',
+	'usercredentials-bio' => 'Biografi:',
+	'usercredentials-attach' => 'Resume/CV:',
+	'usercredentials-notes' => 'Catatan tambahan:',
+	'usercredentials-urls' => 'Daftar situs web:',
 );
 
 /** Ido (Ido)
@@ -4485,7 +4523,7 @@ Il tuo nome può essere modificato tramite le [[Special:Preferences|tue preferen
 	'requestaccount-urls' => 'Elenco dei siti web, se ce ne sono (uno per riga):',
 	'requestaccount-agree' => 'Devi certificare che il tuo vero nome sia corretto e che accetti i nostri Termini di Servizio.',
 	'requestaccount-inuse' => "Il nome utente è già in uso in un'altra richiesta in attesa.",
-	'requestaccount-tooshort' => 'La tua biografia deve essere di almeno $1 parole.',
+	'requestaccount-tooshort' => 'La biografia deve essere di almeno $1 {{PLURAL:$1|parola|parole}}.',
 	'requestaccount-emaildup' => "Un'altra richiesta in attesa utilizza lo stesso indirizzo e-mail.",
 	'requestaccount-exts' => 'Tipo di file allegato non permesso.',
 	'requestaccount-resub' => 'Il file del tuo curriculum deve essere ri-selezionato per motivi di sicurezza.
@@ -7865,7 +7903,7 @@ Vaše meno je možné zmeniť vo vašich [[Special:Preferences|nastaveniach]].',
 	'requestaccount-urls' => 'Zoznam webstránok, ak nejaké sú (jednu na každý riadok):',
 	'requestaccount-agree' => 'Musíte osvedčiť, že vaše skutočné meno je správne a že súhlasíte s našimi Podmienkami použitia.',
 	'requestaccount-inuse' => 'Používateľské meno už bolo vyžiadané v prebiehajúcej žiadosti o účet.',
-	'requestaccount-tooshort' => 'Vaša biografia musí mať aspoň $1 slov.',
+	'requestaccount-tooshort' => 'Vaša biografia musí mať aspoň $1 {{PLURAL:$1|slovo|slová|slov}}.',
 	'requestaccount-emaildup' => 'Iný účet čakajúci na schválenie používa rovnakú emailovú adresu.',
 	'requestaccount-exts' => 'Tento typ prílohy nie je povolený.',
 	'requestaccount-resub' => 'Váš súbor s CV/resumé je potrebné z bezpečnostných dôvodov znova vybrať. nechajte pole prázdne
