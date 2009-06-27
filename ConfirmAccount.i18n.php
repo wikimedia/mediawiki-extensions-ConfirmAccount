@@ -4051,7 +4051,7 @@ Tu nomine pote esser cambiate in [[Special:Preferences|tu preferentias]].',
 	'requestaccount-urls' => 'Lista de sitos web, si alcun (un per linea):',
 	'requestaccount-agree' => 'Tu debe certificar que tu nomine real es correcte e que tu accepta nostre Conditiones de Servicio.',
 	'requestaccount-inuse' => 'Le nomine de usator es ja in uso in un requesta de conto pendente.',
-	'requestaccount-tooshort' => 'Tu biographia debe haber al minus $1 parolas de longor.',
+	'requestaccount-tooshort' => 'Tu biographia debe haber al minus $1 {{PLURAL:$1|parola|parolas}} de longor.',
 	'requestaccount-emaildup' => 'Un altere requesta pendente de conto usa le mesme adresse de e-mail.',
 	'requestaccount-exts' => 'Iste typo de file non es permittite in attachamentos.',
 	'requestaccount-resub' => 'Tu debe reseliger tu file CV/résumé pro motivos de securitate.
@@ -7186,7 +7186,7 @@ O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
 	'requestaccount-urls' => 'Lista de sítios web, se algum (separados por mudança de linha):',
 	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correcto e que concorda com os nossos Termos de Serviço.',
 	'requestaccount-inuse' => 'O nome de utilizador já está em uso num pedido de conta pendente.',
-	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 palavras.',
+	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.',
 	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo endereço de email.',
 	'requestaccount-exts' => 'O tipo de ficheiro do anexo não é permitido.',
 	'requestaccount-resub' => 'O seu Curriculum Vitae deve ser seleccionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
@@ -7338,6 +7338,7 @@ Poderá haver listas de contactos no sítio que poderá usar se desejar saber ma
 	'usercredentials-ip' => 'Endereço IP original:',
 	'usercredentials-member' => 'Privilégios:',
 	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está correctamente escrito.',
+	'right-lookupcredentials' => 'Ver [[Special:UserCredentials|credenciais de utilizador]]',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -9457,6 +9458,7 @@ $messages['vi'] = array(
 	'requestaccount-notes' => 'Chi tiết:',
 	'requestaccount-submit' => 'Xin tài khoản',
 	'confirmaccount-bio-q' => 'Tiểu sử',
+	'confirmaccount-review' => 'Duyệt',
 	'confirmaccount-leg-user' => 'Tài khoản',
 	'confirmaccount-leg-person' => 'Thông tin cá nhân',
 	'confirmaccount-leg-other' => 'Thông tin khác',
