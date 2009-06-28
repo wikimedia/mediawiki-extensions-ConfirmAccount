@@ -2025,7 +2025,7 @@ Tu nombre puede ser cambiado a través de [[Special:Preferences|Tus preferencias
 	'requestaccount-urls' => 'Lista de sitios web [sepáralos por renglones]',
 	'requestaccount-agree' => 'Tienes que certificar que tu nombre real es correcto y que estás de acuerdo con nuestros términos de servicio.',
 	'requestaccount-inuse' => 'El nombre de usuario ya está en uso en una solicitud de cuenta pendiente.',
-	'requestaccount-tooshort' => 'Tu biografía debe ser al menos de $1 palabras de largo.',
+	'requestaccount-tooshort' => 'Tu biografía debe ser de al menos $1 {{PLURAL:$1|palabra|palabras}} de largo.',
 	'requestaccount-emaildup' => 'Alguna otra solicitud de cuenta pendiente usa la misma dirección de correo electrónico.',
 	'requestaccount-exts' => 'Tipo de archivo adjunto no está permitido.',
 	'requestaccount-submit' => 'Solicitar cuenta',
