@@ -372,7 +372,7 @@ class ConfirmAccountsPage extends SpecialPage
 	 * Show a private file requested by the visitor.
 	 */
 	function showFile( $key ) {
-		global $wgOut, $wgRequest;
+		global $wgOut, $wgRequest, $wgConfirmAccountFSRepos, $IP;
 		$wgOut->disable();
 
 		# We mustn't allow the output to be Squid cached, otherwise
@@ -383,12 +383,11 @@ class ConfirmAccountsPage extends SpecialPage
 		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
 		$wgRequest->response()->header( 'Pragma: no-cache' );
 
-		$store = FileStore::get( 'accountreqs' );
-		if( !$store ) {
-			wfDebug( __METHOD__.": invalid storage group '{$store}'.\n" );
-			return false;
-		}
-		$store->stream( $key );
+		require_once( "$IP/includes/StreamFile.php" );
+		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+		$path = $repo->getZonePath( 'public' ).'/'.
+			$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+		wfStreamFile( $path );
 	}
 
 	function doSubmit() {
@@ -475,28 +474,18 @@ class ConfirmAccountsPage extends SpecialPage
 				__METHOD__
 			);
 			# Move to credentials if configured to do so
+			global $wgConfirmAccountFSRepos;
+			$key = $row->acr_storage_key;
 			if( $wgConfirmAccountSaveInfo ) {
 				# Copy any attached files to new storage group
-				$key = $row->acr_storage_key;
 				if( $wgAllowAccountRequestFiles && $key ) {
-					$storeOld = FileStore::get( 'accountreqs' );
-					$storeNew = FileStore::get( 'accountcreds' );
-					if( !$storeOld || !$storeNew ) {
-						$dbw->delete( 'user', array( 'user_id' => $user->getID() ) );
-						$dbw->rollback();
-						wfDebug( __METHOD__.": invalid storage group '{$store}'.\n" );
-						return false;
-					}
-					$transaction = new FSTransaction();
-					if( !FileStore::lock() ) {
-						$dbw->delete( 'user', array( 'user_id' => $user->getID() ) );
-						$dbw->rollback();
-						wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
-						return false;
-					}
-					$path = $storeOld->filePath( $key );
-					if( $path && file_exists($path) ) {
-						$transaction->add( $storeNew->insert( $key, $path, 0 ) );
+					$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+					$repoNew = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
+					$pathRel = $key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+					$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
+					if( file_exists($oldPath) ) {
+						$triplet = array( $oldPath, 'public', $pathRel );
+						$repoNew->storeBatch( array($triplet) /*,FSRepo::DELETE_SOURCE*/ ); // move!
 					}
 				}
 				$acd_id = $dbw->nextSequenceValue( 'account_credentials_acd_id_seq' );
@@ -525,10 +514,6 @@ class ConfirmAccountsPage extends SpecialPage
 			if( !$wgAuth->addUser( $user, $p, $row->acr_email, $row->acr_real_name ) ) {
 				$dbw->delete( 'user', array( 'user_id' => $user->getID() ) );
 				$dbw->rollback();
-				# Rollback file and row copies from credentials table on failure
-				if( isset($transaction) ) {
-					$transaction->rollback();
-				}
 				$this->showForm( wfMsgHtml( 'externaldberror' ) );
 				return false;
 			}
@@ -553,9 +538,6 @@ class ConfirmAccountsPage extends SpecialPage
 			# and the groups are added. Next step is sending out an
 			# email, which we cannot take back...
 			$dbw->commit();
-			if( isset($transaction) ) {
-				$transaction->commit();
-			}
 
 			# Send out password
 			if( $this->reason ) {
@@ -587,24 +569,15 @@ class ConfirmAccountsPage extends SpecialPage
 			$user->addNewUserLogEntry();
 			# Clear cache for notice of how many account requests there are
 			global $wgMemc;
-			$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-			$wgMemc->delete( $key );
+			$memKey = wfMemcKey( 'confirmaccount', 'noticecount' );
+			$wgMemc->delete( $memKey );
 			# Delete any attached file. Do not stop the whole process if this fails
-			$key = $row->acr_storage_key;
 			if( $key ) {
-				$store = FileStore::get( 'accountreqs' );
-				if( !$store ) {
-					wfDebug( __METHOD__.": invalid storage group '{$store}'.\n" );
-				} else {
-					$transaction = new FSTransaction();
-					if( !FileStore::lock() ) {
-						wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
-					}
-					$path = $store->filePath( $key );
-					if( $path && file_exists($path) ) {
-						$transaction->addCommit( FSTransaction::DELETE_FILE, $path );
-					}
-					$transaction->commit();
+				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+				$pathRel = $key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
+				if( file_exists($oldPath) ) {
+					unlink($oldPath); // delete!
 				}
 			}
 			# Start up the user's (presumedly brand new) userpages
@@ -657,14 +630,15 @@ class ConfirmAccountsPage extends SpecialPage
 			global $wgAutoWelcomeNewUsers;
 			if( $wgAutoWelcomeNewUsers ) {
 				$utalk = new Article( $user->getTalkPage() );
+				$msg = "confirmaccount-welc-pos{$this->mType}";
 				# Is there a custom message?
-				$welcome = wfEmptyMsg( "confirmaccount-welc-pos{$this->mType}", wfMsg("confirmaccount-welc-pos{$this->mType}") ) ?
-					wfMsg('confirmaccount-welc') : wfMsg("confirmaccount-welc-pos{$this->mType}");
+				$welcome = wfEmptyMsg( $msg, wfMsg($msg) ) ?
+					wfMsg('confirmaccount-welc') : wfMsg($msg);
 				# Add user welcome message!
 				$utalk->doEdit( $welcome . ' ~~~~', wfMsg('confirmaccount-wsum'), EDIT_MINOR );
 			}
 			# Finally, done!!!
-			$this->showSuccess( $this->submitType, $user->getName(), $error );
+			$this->showSuccess( $this->submitType, $user->getName(), array($error) );
 		} else if( $this->submitType === 'hold' ) {
 			global $wgUser;
 			# Make proxy user to email a message
@@ -714,8 +688,7 @@ class ConfirmAccountsPage extends SpecialPage
 	}
 
 	function getRequest( $forUpdate = false ) {
-		if( !$this->acrID )
-			return false;
+		if( !$this->acrID ) return false;
 
 		$db = $forUpdate ? wfGetDB( DB_MASTER ) : wfGetDB( DB_SLAVE );
 		$row = $db->selectRow( 'account_requests', '*',
@@ -833,9 +806,9 @@ class ConfirmAccountsPage extends SpecialPage
 			}
 		}
 
-		# Every 50th view, prune old deleted items
+		# Every 30th view, prune old deleted items
 		wfSeedRandom();
-		if( 0 == mt_rand( 0, 49 ) ) {
+		if( 0 == mt_rand( 0, 29 ) ) {
 			$this->runAutoMaintenance();
 		}
 	}
@@ -844,37 +817,28 @@ class ConfirmAccountsPage extends SpecialPage
 	* Move old stale requests to rejected list. Delete old rejected requests.
 	*/
 	private function runAutoMaintenance() {
-		global $wgRejectedAccountMaxAge;
+		global $wgRejectedAccountMaxAge, $wgConfirmAccountFSRepos;
 
 		$dbw = wfGetDB( DB_MASTER );
-		$transaction = new FSTransaction();
-		if( !FileStore::lock() ) {
-			wfDebug( __METHOD__.": failed to acquire file store lock, aborting\n" );
-			return;
-		}
 		# Select all items older than time $cutoff
 		$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
 		$accountrequests = $dbw->tableName( 'account_requests' );
 		$sql = "SELECT acr_storage_key,acr_id FROM $accountrequests WHERE acr_rejected < '{$cutoff}'";
 		$res = $dbw->query( $sql );
 
-		$store = FileStore::get( 'accountreqs' );
-		if( !$store ) {
-			wfDebug( __METHOD__.": invalid storage group '{$store}'.\n" );
-			return false;
-		}
+		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 		# Clear out any associated attachments and delete those rows
 		while( $row = $dbw->fetchObject( $res ) ) {
 			$key = $row->acr_storage_key;
 			if( $key ) {
-				$path = $store->filePath( $key );
+				$path = $repo->getZonePath( 'public' ).'/'.
+					$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
 				if( $path && file_exists($path) ) {
-					$transaction->addCommit( FSTransaction::DELETE_FILE, $path );
+					unlink($path);
 				}
 			}
 			$dbw->query( "DELETE FROM $accountrequests WHERE acr_id = {$row->acr_id}" );
 		}
-		$transaction->commit();
 
 		# Select all items older than time $cutoff
 		global $wgConfirmAccountRejectAge;

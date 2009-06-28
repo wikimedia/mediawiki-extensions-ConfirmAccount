@@ -342,26 +342,12 @@ class RequestAccountPage extends SpecialPage {
 				return false;
 			}
 			# Start a transaction, move file from temp to account request directory.
-			$transaction = new FSTransaction();
-			if ( !FileStore::lock() ) {
-				wfDebug( __METHOD__ . ": failed to acquire file store lock, aborting\n" );
-				return false;
-			}
-			$store = FileStore::get( 'accountreqs' );
-			if ( !$store ) {
-				wfDebug( __METHOD__ . ": invalid storage group '{$store}'.\n" );
-				return false;
-			}
-
-			$key = FileStore::calculateKey( $this->mTempPath, $finalExt );
-
-			$transaction->add( $store->insert( $key, $this->mTempPath, FileStore::DELETE_ORIGINAL ) );
-			if ( $transaction === false ) {
-				// Failed to move?
-				wfDebug( __METHOD__ . ": import to file store failed, aborting\n" );
-				throw new MWException( "Could not insert file {$this->mTempPath}" );
-				return false;
-			}
+			global $wgConfirmAccountFSRepos;
+			$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+			$key = sha1_file($this->mTempPath) . '.' . $finalExt;
+			$pathRel = $key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+			$triplet = array( $this->mTempPath, 'public', $pathRel );
+			$repo->storeBatch( array($triplet) ); // save!
 		}
 		$expires = null; // passed by reference
 		$token = $this->getConfirmationToken( $u, $expires );
@@ -398,11 +384,6 @@ class RequestAccountPage extends SpecialPage {
 			return false;
 		}
 		$dbw->commit();
-		if ( isset( $transaction ) ) {
-			wfDebug( __METHOD__ . ": set db items, applying file transactions\n" );
-			$transaction->commit();
-			FileStore::unlock();
-		}
 		# Clear cache for notice of how many account requests there are
 		global $wgMemc;
 		$key = wfMemcKey( 'confirmaccount', 'noticecount' );

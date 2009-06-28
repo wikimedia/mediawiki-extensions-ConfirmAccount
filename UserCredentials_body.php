@@ -183,7 +183,7 @@ class UserCredentialsPage extends SpecialPage
 	 * Show a private file requested by the visitor.
 	 */
 	function showFile( $key ) {
-		global $wgOut, $wgRequest;
+		global $wgOut, $wgRequest, $wgConfirmAccountFSRepos, $IP;
 		$wgOut->disable();
 
 		# We mustn't allow the output to be Squid cached, otherwise
@@ -194,12 +194,11 @@ class UserCredentialsPage extends SpecialPage
 		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
 		$wgRequest->response()->header( 'Pragma: no-cache' );
 
-		$store = FileStore::get( 'accountcreds' );
-		if ( !$store ) {
-			wfDebug( __METHOD__ . ": invalid storage group '{$store}'.\n" );
-			return false;
-		}
-		$store->stream( $key );
+		require_once( "$IP/includes/StreamFile.php" );
+		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
+		$path = $repo->getZonePath( 'public' ).'/'.
+			$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+		wfStreamFile( $path );
 	}
 
 	function getRequest() {

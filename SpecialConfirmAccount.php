@@ -77,17 +77,30 @@ $wgConfirmAccountContact = false;
 # inject catpchas for requests too?
 $wgConfirmAccountCaptchas = true;
 
-# Location of attached files for pending requests
 $wgAllowAccountRequestFiles = true;
 $wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
-$wgFileStore['accountreqs']['directory'] = "{$wgUploadDirectory}/accountreqs";
-$wgFileStore['accountreqs']['url'] = null; // Private
-$wgFileStore['accountreqs']['hash'] = 3;
 
-# Location of credential files
-$wgFileStore['accountcreds']['directory'] = "{$wgUploadDirectory}/accountcreds";
-$wgFileStore['accountcreds']['url'] = null; // Private
-$wgFileStore['accountcreds']['hash'] = 3;
+# Storage repos. B/C for when this used FileStore.
+$wgConfirmAccountFSRepos = array(
+	'accountreqs' => array( # Location of attached files for pending requests
+		'name'       => 'accountreqs',
+		'directory'  => isset($wgFileStore['accountreqs']) ?
+			$wgFileStore['accountreqs']['directory'] : "{$IP}/images/accountreqs",
+		'url'        => isset($wgFileStore['accountreqs']) ?
+			$wgFileStore['accountreqs']['url'] : null,
+		'hashLevels' => isset($wgFileStore['accountreqs']) ?
+			$wgFileStore['accountreqs']['hash'] : 3
+	),
+	'accountcreds' => array( # Location of credential files
+		'name'       => 'accountcreds',
+		'directory'  => isset($wgFileStore['accountcreds']) ?
+			$wgFileStore['accountcreds']['directory'] : "{$IP}/images/accountcreds",
+		'url'        => isset($wgFileStore['accountcreds']) ?
+			$wgFileStore['accountcreds']['url'] : null,
+		'hashLevels' => isset($wgFileStore['accountcreds']) ?
+			$wgFileStore['accountcreds']['hash'] : 3
+	)
+);
 
 # Restrict account creation
 $wgGroupPermissions['*']['createaccount'] = false;
