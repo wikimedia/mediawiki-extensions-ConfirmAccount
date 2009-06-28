@@ -248,7 +248,7 @@ class RequestAccountPage extends SpecialPage {
 			$wgCaptchaTriggers['createaccount'] = $old;
 		}
 		# No request spamming...
-		if ( $wgAccountRequestThrottle && ( !method_exists( $wgUser, 'isPingLimitable' ) || $wgUser->isPingLimitable() ) ) {
+		if ( $wgAccountRequestThrottle && $wgUser->isPingLimitable() ) {
 			global $wgMemc;
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			$value = $wgMemc->get( $key );
@@ -286,7 +286,8 @@ class RequestAccountPage extends SpecialPage {
 		# Check if biography is long enough
 		if ( str_word_count( $this->mBio ) < $wgAccountRequestMinWords ) {
 			global $wgLang;
-			$this->showForm( wfMsgExt( 'requestaccount-tooshort', 'parsemag', $wgLang->formatNum( $wgAccountRequestMinWords ) ) );
+			$this->showForm( wfMsgExt( 'requestaccount-tooshort', 'parsemag',
+				$wgLang->formatNum( $wgAccountRequestMinWords ) ) );
 			return;
 		}
 		# Set some additional data so the AbortNewAccount hook can be
@@ -390,7 +391,7 @@ class RequestAccountPage extends SpecialPage {
 		$wgMemc->delete( $key );
 		# No request spamming...
 		# BC: check if isPingLimitable() exists
-		if ( $wgAccountRequestThrottle && ( !method_exists( $wgUser, 'isPingLimitable' ) || $wgUser->isPingLimitable() ) ) {
+		if ( $wgAccountRequestThrottle && $wgUser->isPingLimitable() ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			if ( !$value = $wgMemc->incr( $key ) ) {
 				$wgMemc->set( $key, 1, 86400 );
