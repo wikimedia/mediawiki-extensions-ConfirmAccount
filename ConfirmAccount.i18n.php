@@ -289,7 +289,17 @@ $messages['qqq'] = array(
 	'confirmaccount-notes' => '{{Identical|Additional notes}}',
 	'confirmaccount-urls' => '{{Identical|List of websites}}',
 	'confirmaccount-none-p' => '{{Identical/Notprovided}}',
+	'confirmaccount-reject'   => 'Parameters:
+*$1 user name
+*$2 date/time
+*$3 date
+*$4 time',
 	'confirmaccount-noreason' => '{{Identical|None}}',
+	'confirmaccount-held'     => 'Parameters:
+*$1 user name
+*$2 date/time
+*$3 date
+*$4 time',
 	'confirmaccount-ip' => '{{Identical|IP Address}}',
 	'confirmaccount-submit' => '{{Identical|Confirm}}',
 	'confirmaccount-welc' => 'In ConfirmAccount extension. A welcome message that is automatically placed on the talk pages of new users.',

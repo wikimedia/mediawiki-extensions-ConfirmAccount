@@ -214,23 +214,27 @@ class ConfirmAccountsPage extends SpecialPage
 		$wgOut->addWikiText( wfMsg( "confirmaccount-text" ) );
 
 		if( $row->acr_rejected ) {
-			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$datim = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$date = $wgLang->date( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$time = $wgLang->time( wfTimestamp(TS_MW, $row->acr_rejected), true );
 			$reason = $row->acr_comment ? $row->acr_comment : wfMsgHtml('confirmaccount-noreason');
 			# Auto-rejected requests have a user ID of zero
 			if( $row->acr_user ) {
 				$wgOut->addHTML('<p><b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'),
-					User::whoIs($row->acr_user), $time ).'</b></p>');
+					User::whoIs($row->acr_user), $datim, $date, $time ).'</b></p>');
 				$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-rational') . '</strong><i> ' .
 					$reason . '</i></p>' );
 			} else {
 				$wgOut->addHTML( '<p><i> ' . $reason . '</i></p>' );
 			}
 		} else if( $row->acr_held ) {
-			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
+			$datim = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
+			$date = $wgLang->date( wfTimestamp(TS_MW, $row->acr_held), true );
+			$time = $wgLang->time( wfTimestamp(TS_MW, $row->acr_held), true );
 			$reason = $row->acr_comment ? $row->acr_comment : wfMsgHtml('confirmaccount-noreason');
 
 			$wgOut->addHTML('<p><b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'),
-				User::whoIs($row->acr_user), $time ).'</b></p>');
+				User::whoIs($row->acr_user), $datim, $date, $time ).'</b></p>');
 			$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-rational') . '</strong><i> ' .
 				$reason . '</i></p>' );
 		}
@@ -876,11 +880,15 @@ class ConfirmAccountsPage extends SpecialPage
 		$r .= $time." (<strong>{$link}</strong>)";
 		# Auto-rejected accounts have a user ID of zero
 		if( $row->acr_rejected && $row->acr_user ) {
-			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
-			$r .= ' <b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name, $time ).'</b>';
+			$datim = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$date = $wgLang->date( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$time = $wgLang->time( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$r .= ' <b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name, $datim, $date, $time ).'</b>';
 		} else if( $row->acr_held && !$row->acr_rejected ) {
-			$time = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
-			$r .= ' <b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'), User::whoIs($row->acr_user), $time ).'</b>';
+			$datim = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
+			$date = $wgLang->date( wfTimestamp(TS_MW, $row->acr_held), true );
+			$time = $wgLang->time( wfTimestamp(TS_MW, $row->acr_held), true );
+			$r .= ' <b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'), User::whoIs($row->acr_user), $datim, $date, $time ).'</b>';
 		}
 		# Check if someone is viewing this request
 		global $wgMemc;
