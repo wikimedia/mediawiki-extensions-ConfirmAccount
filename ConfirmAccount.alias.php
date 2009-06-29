@@ -135,6 +135,12 @@ $aliases['ia'] = array(
 	'UserCredentials' => array( 'Referentias del usator' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$aliases['id'] = array(
+	'RequestAccount' => array( 'Minta akun', 'MintaAkun' ),
+	'ConfirmAccounts' => array( 'Konfirmasi akun', 'KonfirmasiAkun' ),
+);
+
 /** Italian (Italiano) */
 $aliases['it'] = array(
 	'UserCredentials' => array( 'CredenzialiUtente' ),

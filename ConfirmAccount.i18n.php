@@ -232,6 +232,7 @@ Check that the name is spelled correctly.',
 
 /** Message documentation (Message documentation)
  * @author Bennylin
+ * @author EugeneZelenko
  * @author Jon Harald Søby
  * @author Lejonel
  * @author Purodha
@@ -269,6 +270,7 @@ $messages['qqq'] = array(
 	'confirmaccount-showheld' => '{{Identical|Held requests}}',
 	'confirmaccount-showexp' => '{{Identical|Expired requests}}',
 	'confirmaccount-review' => '{{Identical|Review}}',
+	'confirmaccount-type' => '{{Identical|Queue}}',
 	'confirmaccount-q-open' => '{{Identical|Open requests}}',
 	'confirmaccount-q-held' => '{{Identical|Held requests}}',
 	'confirmaccount-q-stale' => 'Used in [[Special:ConfirmAccounts|ConfirmAccounts]] extension.
@@ -289,13 +291,13 @@ $messages['qqq'] = array(
 	'confirmaccount-notes' => '{{Identical|Additional notes}}',
 	'confirmaccount-urls' => '{{Identical|List of websites}}',
 	'confirmaccount-none-p' => '{{Identical/Notprovided}}',
-	'confirmaccount-reject'   => 'Parameters:
+	'confirmaccount-reject' => 'Parameters:
 *$1 user name
 *$2 date/time
 *$3 date
 *$4 time',
 	'confirmaccount-noreason' => '{{Identical|None}}',
-	'confirmaccount-held'     => 'Parameters:
+	'confirmaccount-held' => 'Parameters:
 *$1 user name
 *$2 date/time
 *$3 date
@@ -919,11 +921,75 @@ $3
 [[Special:ConfirmAccounts|{{PLURAL:$1|запыту на стварэньне рахунку|запытаў на стварэньне рахунку|запытаў на стварэньне рахунку}}]].",
 	'confirmaccounts' => 'Пацьвердзіць запыт на стварэньне рахунку',
 	'confirmedit-desc' => 'Дае бюракратам магчымасьць пацьвярджаць запыты на стварэньне рахункаў',
+	'confirmaccount-maintext' => "'''Гэта старонка выкарыстоўваецца для пацьверджаньня запытаў на стварэньне рахункаў у ''{{GRAMMAR:родны|{{SITENAME}}}}'''''.
+
+Кожны чарга запытаў на стварэньне рахункаў складаецца з трох частак.
+Адна для неапрацаваных запытаў, адна для запытаў, якія адкладзеныя адміністратарамі да атрыманьня дадатковай інфармацыі, і яшчэ адна для нядаўна адхіленых запытаў.
+
+Пасьля адказу на запыт, уважліва праглядзіце яго, калі неабходна, пацьвердзіце утрымліваемую інфармацыю.
+Вашыя дзеяньні будуць запісаны ў журнал.
+Чакаецца, што Ваша праца па прагляду і пацьверджаньню запытаў будзе весьціся незалежна ад таго, чым Вы займаецеся.",
+	'confirmaccount-list' => 'Ніжэй пададзены сьпіс запытаў, якія чакаюць зацьверджаньня.
+Пасьля зацьверджаньня альбо адхіленьня, запыт будзе выдалены з гэтага сьпісу.',
+	'confirmaccount-list2' => 'Ніжэй пададзены сьпіс нядаўна адхіленых запытаў на стварэньне рахункаў, якія будуць аўтаматычна выдаленыя праз некалькі дзён. 
+Вы ўсё яшчэ можаце зацьвердзіць запыты, але спачатку гэта неабходна абмеркаваць з адміністратарамі, якія іх адхілілі.',
+	'confirmaccount-list3' => 'Ніжэй пададзены сьпіс састарэлых запытаў на стварэньне рахункаў, якія могуць быць аўтаматычна выдаленыя праз некалькі дзён..
+Гэтыя запыты ўсё яшчэ могуць быць зацьверджанымі.',
+	'confirmaccount-text' => "Гэта запыт на стварэньне рахунку ў '''{{GRAMMAR:родны|{{SITENAME}}}}'''.
+
+Уважліва праглядзіце інфармацыю ніжэй.
+Калі Вы жадаеце зацьвердзіць гэты запыт, зьмяніце статус запыту праз выпадаючы сьпіс.
+Рэдагаваньні зробленыя ў біяграфіі не паўплываюць на пасьведчаньне ўдзельніка ў сыстэмным сховішчы.
+Заўважце, што Вы можаце стварыць рахунак зь іншай назвай.
+Карыстайцеся гэтай магчымасьцю толькі для таго, каб пазьбегнуць канфліктаў зь іншымі назвамі рахункаў.
+
+Калі Вы проста пакінеце гэту старонку не зацьвердзіўшы і не адхіліўшы запыт, то ён застанецца ў стане чаканьня.",
+	'confirmaccount-none-o' => 'У цяперашні час няма неапрацаваных запытаў ў гэтым сьпісе.',
+	'confirmaccount-none-h' => 'У цяперашні час няма адкладзеных запытаў ў гэтым сьпісе.',
+	'confirmaccount-none-r' => 'У цяперашні час няма нядаўна адхіленых запытаў ў гэтым сьпісе.',
+	'confirmaccount-none-e' => 'У цяперашні час няма састарэлых запытаў ў гэтым сьпісе.',
+	'confirmaccount-real-q' => 'Імя',
 	'confirmaccount-email-q' => 'Адрас электроннай пошты',
+	'confirmaccount-bio-q' => 'Біяграфія',
+	'confirmaccount-showopen' => 'адкрытыя запыты',
+	'confirmaccount-showrej' => 'адхіленыя запыты',
+	'confirmaccount-showheld' => 'адкладзеныя запыты',
+	'confirmaccount-showexp' => 'састарэлыя запыты',
+	'confirmaccount-review' => 'Праглядзець',
+	'confirmaccount-types' => 'Выберыце чаргу пацьверджаньня запытаў са сьпісу ніжэй:',
+	'confirmaccount-all' => '(паказаць усе чэргі)',
+	'confirmaccount-type' => 'Чарга:',
+	'confirmaccount-type-0' => 'патэнцыяльныя аўтары',
+	'confirmaccount-type-1' => 'патэнцыяльныя рэдактары',
+	'confirmaccount-q-open' => 'адкрытыя запыты',
+	'confirmaccount-q-held' => 'адкладзеныя запыты',
+	'confirmaccount-q-rej' => 'нядаўна адхіленыя запыты',
+	'confirmaccount-q-stale' => 'састарэлыя запыты',
+	'confirmaccount-badid' => 'Няма запытаў на стварэньне рахунка з пададзеным ідэнтыфікатарам.
+Верагодна ён ужо апрацаваны.',
+	'confirmaccount-leg-user' => 'Рахунак удзельніка',
+	'confirmaccount-leg-areas' => 'Галоўныя вобласьці інтарэсаў',
 	'confirmaccount-leg-person' => 'Асабістыя зьвесткі',
 	'confirmaccount-leg-other' => 'Іншая інфармацыя',
 	'confirmaccount-name' => 'Імя ўдзельніка',
+	'confirmaccount-real' => 'Імя:',
 	'confirmaccount-email' => 'Адрас электроннай пошты:',
+	'confirmaccount-reqtype' => 'Пасада:',
+	'confirmaccount-pos-0' => 'аўтар',
+	'confirmaccount-pos-1' => 'рэдактар',
+	'confirmaccount-bio' => 'Біяграфія:',
+	'confirmaccount-attach' => 'Рэзюмэ:',
+	'confirmaccount-notes' => 'Дадатковая інфармацыя:',
+	'confirmaccount-urls' => 'Сьпіс сайтаў:',
+	'confirmaccount-none-p' => '(не пададзена)',
+	'confirmaccount-confirm' => 'Выкарыстоўвайце ўстаноўкі ніжэй для зацьверджаньня, адхіленьня ці адкладаньня запыту:',
+	'confirmaccount-econf' => '(пацьверджаны)',
+	'confirmaccount-reject' => '(адхілены [[User:$1|$1]] па прычыне $2)',
+	'confirmaccount-rational' => 'Абгрунтаваньне пададзенае падаўшаму запыт:',
+	'confirmaccount-noreason' => '(няма)',
+	'confirmaccount-autorej' => '(гэты запыт быў аўтаматычна адхілены з-за неактыўнасьці)',
+	'confirmaccount-held' => '(адкладзены [[User:$1|$1]] па прычыне $2)',
+	'confirmaccount-create' => 'Зацьвердзіць (стварыць рахунак)',
 	'confirmaccount-ip' => 'IP-адрас:',
 	'confirmaccount-submit' => 'Пацьвердзіць',
 	'usercredentials-user' => 'Імя ўдзельніка:',
@@ -4274,7 +4340,7 @@ Nama Anda dapat diubah melalui [[Special:Preferences|preferensi Anda]].',
 	'requestaccount-urls' => 'Daftar situs web, jika ada (pisahkan dengan baris baru):',
 	'requestaccount-agree' => 'Anda harus menyatakan bahwa nama asli Anda adalah benar dan bahwa Anda setuju dengan Syarat Layanan kami.',
 	'requestaccount-inuse' => 'Nama pengguna ini sudah digunakan dalam salah satu antrian permintaan akun.',
-	'requestaccount-tooshort' => 'Biografi Anda harus memiliki panjang minimal $1 kata.',
+	'requestaccount-tooshort' => 'Biografi Anda harus memiliki panjang minimal $1 {{PLURAL:$1|kata|kata}}.',
 	'requestaccount-emaildup' => 'Sebuah antrian permintaan lain menggunakan alamat surat-e yang sama.',
 	'requestaccount-exts' => 'Jenis lampiran berkas tidak diizinkan.',
 	'requestaccount-resub' => 'Resume/CV Anda harus dipilih kembali atas alasan keamanan.
@@ -5297,11 +5363,11 @@ Wann de Vun dä Sigg hee fott jeihß, oohne se afzelehne udder beshtähtejje, bl
 	'confirmaccount-none-p' => '(nix aanjejovve)',
 	'confirmaccount-confirm' => 'Donn met dä Ußwahl hee noh entscheide, dä Aandraach aanzenämme, affzelänne, udder noch jet ze waade.',
 	'confirmaccount-econf' => '(beshtähtish)',
-	'confirmaccount-reject' => '(aam $2 fum [[User:$1|$1]] affjeleent)',
+	'confirmaccount-reject' => '(aam $3 öm $4 Uhr {{GENDER:$1|fum|fum|fum Metmaacher|fum|fun de}} [[User:$1|$1]] affjeleent)',
 	'confirmaccount-rational' => 'Jif ene Jrond för dä Aandraachshteller:',
 	'confirmaccount-noreason' => '(nix)',
 	'confirmaccount-autorej' => '(di Aanfrooch wood automattesch fottjeschmeße, weil zoh lang Keine jet draan jedonn hät)',
-	'confirmaccount-held' => '(aam $2 fum [[User:$1|$1]] op „waade“ jesatz)',
+	'confirmaccount-held' => '(aam $3 öm $4 Uhr {{GENDER:$1|fum|fum|fum Metmaacher|fum|fun dä}} [[User:$1|$1]] op „waade“ jesatz)',
 	'confirmaccount-create' => 'Aannämme, un dä Metmaacher aanlääje',
 	'confirmaccount-deny' => 'Aflehne, un uß dä Leß nämme',
 	'confirmaccount-hold' => 'Zeröckställe',
@@ -6265,7 +6331,7 @@ Namnet ditt kan verta endra gjennom [[Special:Preferences|innstillingane dine]].
 	'requestaccount-urls' => 'Lista over nettsider, om det er nokre (skil dei frå kvarandre med lineskift):',
 	'requestaccount-agree' => 'Du lyt stadfesta at det verkelege namnet ditt er rett, og at du går med på tenestevilkåra våre.',
 	'requestaccount-inuse' => 'Brukarnamnet er alt i bruk i ein ventande kontoførespurnad.',
-	'requestaccount-tooshort' => 'Biografien din lyt innehalda minst $1 ord.',
+	'requestaccount-tooshort' => 'Biografien din lyt innehalda minst {{PLURAL:$1|eitt|$1}} ord.',
 	'requestaccount-emaildup' => 'Ein annan ventande kontoførespurnad nyttar same e-postadressa.',
 	'requestaccount-exts' => 'Filtypen på vedlegget er ikkje tillaten.',
 	'requestaccount-resub' => 'CV-/resyme-fila din må verta vald på nytt grunna omsyn til tryggleik.
