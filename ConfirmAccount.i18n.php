@@ -984,14 +984,31 @@ $3
 	'confirmaccount-none-p' => '(не пададзена)',
 	'confirmaccount-confirm' => 'Выкарыстоўвайце ўстаноўкі ніжэй для зацьверджаньня, адхіленьня ці адкладаньня запыту:',
 	'confirmaccount-econf' => '(пацьверджаны)',
-	'confirmaccount-reject' => '(адхілены [[User:$1|$1]] па прычыне $2)',
+	'confirmaccount-reject' => '(адхілены [[User:$1|$1]] $2)',
 	'confirmaccount-rational' => 'Абгрунтаваньне пададзенае падаўшаму запыт:',
 	'confirmaccount-noreason' => '(няма)',
 	'confirmaccount-autorej' => '(гэты запыт быў аўтаматычна адхілены з-за неактыўнасьці)',
-	'confirmaccount-held' => '(адкладзены [[User:$1|$1]] па прычыне $2)',
+	'confirmaccount-held' => '(адкладзены [[User:$1|$1]] $2)',
 	'confirmaccount-create' => 'Зацьвердзіць (стварыць рахунак)',
+	'confirmaccount-deny' => 'Адхіліць (выдаліць са сьпісу)',
+	'confirmaccount-hold' => 'Адкласьці',
+	'confirmaccount-spam' => 'Спам (не дасылаць лісты па электроннай пошце)',
+	'confirmaccount-reason' => 'Камэнтар (будзе ўключаны ў электронны ліст):',
 	'confirmaccount-ip' => 'IP-адрас:',
 	'confirmaccount-submit' => 'Пацьвердзіць',
+	'confirmaccount-needreason' => 'Вы павінны падаць прычыну ў полі камэнтару.',
+	'confirmaccount-canthold' => 'Гэты запыт ужо адкладзены альбо выдалены.',
+	'confirmaccount-acc' => 'Запыт на стварэньне рахунку пасьпяхова пацьверджаны;
+створаны рахунак [[User:$1|$1]].',
+	'confirmaccount-rej' => 'Запыт на стварэньне рахунку быў пасьпяхова адхілены.',
+	'confirmaccount-viewing' => '(зараз праглядаецца [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Стварэньне старонкі ўдзельніка з біяграфіяй новага ўдзельніка.',
+	'confirmaccount-welc' => "'''Вітаем у ''{{GRAMMAR:месны|{{SITENAME}}}}''!'''
+Мы спадзяёмся, што Вы прыміце актыўны ўдзел у працы праекта.
+Верагодна, Вам будзе цікава прачытаць [[{{MediaWiki:Helppage}}|старонкі дапамогі]].
+Яшчэ раз вітаем Вас, і жадаем прыемнай працы!",
+	'confirmaccount-wsum' => 'Вітаем!',
+	'confirmaccount-email-subj' => 'Запыт на стварэньне рахунку ў {{GRAMMAR:месны|{{SITENAME}}}}',
 	'usercredentials-user' => 'Імя ўдзельніка:',
 	'usercredentials-leg-person' => 'Асабістыя зьвесткі',
 	'usercredentials-leg-other' => 'Іншая інфармацыя',
@@ -1585,7 +1602,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-rational' => 'Begründung für den Antragssteller:',
 	'confirmaccount-noreason' => '(nichts)',
 	'confirmaccount-autorej' => '(dieser Antrag wurde automatisch wegen Inaktivität gestrichen)',
-	'confirmaccount-held' => '(markiert als „abwarten“ durch [[User:$1|$1]] am $2)',
+	'confirmaccount-held' => '(markiert als „abwarten“ durch [[User:$1|$1]] am $3 um $4 Uhr)',
 	'confirmaccount-create' => 'Bestätigen (Konto anlegen)',
 	'confirmaccount-deny' => 'Ablehnen (Antrag löschen)',
 	'confirmaccount-hold' => 'Markiert als „abwarten“',
@@ -2458,7 +2475,7 @@ Se voi olla jo käsitelty.',
 Käyttäjätunnus [[User:$1|$1]] luotiin.',
 	'confirmaccount-rej' => 'Pyynnön hylkääminen onnistui.',
 	'confirmaccount-viewing' => '(juuri nyt katseltavana käyttäjällä [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Luodaan uuden käyttäjän tiedost sisältävä käyttäjäsivu.',
+	'confirmaccount-summary' => 'Luodaan uuden käyttäjän tiedot sisältävä käyttäjäsivu.',
 	'confirmaccount-welc' => "'''Tervetuloa ''{{SITENAME}}''-sivustolle!''' Toivomme runsasta ja laadukasta kirjoittelua.
 Haluat varmaan lukea [[{{MediaWiki:Helppage}}|ohjesivut]]. Vielä kerran tervetuloa ja pidä hauskaa!",
 	'confirmaccount-wsum' => 'Tervetuloa!',
@@ -6488,6 +6505,7 @@ Gjer deg viss om at namnet er stava rett.',
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Laaknor
  * @author Nghtwlkr
  */
 $messages['no'] = array(
@@ -6520,7 +6538,7 @@ Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne [[Special
 	'requestaccount-urls' => 'Liste over nettsider, om det er noen (skill dem fra hverandre med linjeskift):',
 	'requestaccount-agree' => 'Du må bekrefte at ditt virkelige navn er korrekt og at du går med på våre tjenestevilkår.',
 	'requestaccount-inuse' => 'Brukernavnet er allerede i bruk i en ventende kontoforespørsel.',
-	'requestaccount-tooshort' => 'Biografien din må være minst $1 ord lang.',
+	'requestaccount-tooshort' => 'Biografien din må være minst {{PLURAL:$1|ett ord|$1 ord}} lang.',
 	'requestaccount-emaildup' => 'En annen ventende kontoforespørsel bruker samme e-postadresse.',
 	'requestaccount-exts' => 'Filtypen på vedlegget er ikke tillatt.',
 	'requestaccount-resub' => 'CV-/resyme-filen din må velges på nytt av sikkerhetshensyn. La feltet være tomt om du ikke lenger ønsker å legge ved en.',
