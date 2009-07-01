@@ -1009,12 +1009,39 @@ $3
 Яшчэ раз вітаем Вас, і жадаем прыемнай працы!",
 	'confirmaccount-wsum' => 'Вітаем!',
 	'confirmaccount-email-subj' => 'Запыт на стварэньне рахунку ў {{GRAMMAR:месны|{{SITENAME}}}}',
+	'confirmaccount-email-body' => 'Ваш запыт на стварэньне рахунку ў {{GRAMMAR:месны|{{SITENAME}}}} быў зацьверджаны.
+
+Назва рахунку: $1
+
+Пароль: $2
+
+У мэтах бясьпекі, Вам неабходна зьмяніць пароль пасьля першага ўваходу ў сыстэму.
+Увайсьці ў сыстэму можна на старонцы {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Ваш запыт на стварэньне рахунку ў {{GRAMMAR:месны|{{SITENAME}}}} быў зацьверджаны.
+
+Назва рахунку: $1
+
+Пароль: $2
+
+$3
+
+У мэтах бясьпекі, Вам неабходна зьмяніць пароль пасьля першага ўваходу ў сыстэму.
+Увайсьці ў сыстэму можна на старонцы {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Прабачце, але Ваш запыт на стварэньне рахунку «$1» у {{GRAMMAR:месны|{{SITENAME}}}} быў адхілены.
+
+Гэта магло адбыцца па некалькіх прычынах.
+Верагодна, Вы не запоўнілі форму карэктна, Вашыя адказы на пытаньні былі ня поўныя альбо не задавальняльнымі з пункту гледжаньня правілаў.
+У {{GRAMMAR:месны|{{SITENAME}}}} можа быць сьпіс кантактаў, якія Вы можаце выкарыстоўваць, каб атрымаць дадатковую інфармацыю пра правілы, якія тычацца рахункаў удзельнікаў.',
 	'usercredentials-user' => 'Імя ўдзельніка:',
+	'usercredentials-leg-user' => 'Рахунак удзельніка',
 	'usercredentials-leg-person' => 'Асабістыя зьвесткі',
 	'usercredentials-leg-other' => 'Іншая інфармацыя',
 	'usercredentials-email' => 'Адрас электроннай пошты:',
 	'usercredentials-real' => 'Сапраўднае імя:',
 	'usercredentials-bio' => 'Біяграфія:',
+	'usercredentials-notes' => 'Дадатковая інфармацыя:',
+	'usercredentials-urls' => 'Сьпіс сайтаў:',
+	'usercredentials-ip' => 'Арыгінальны ІР-адрас:',
 	'usercredentials-member' => 'Правы:',
 );
 
@@ -1340,6 +1367,7 @@ $messages['ca'] = array(
 /** Czech (Česky)
  * @author Li-sung
  * @author Matěj Grabovský
+ * @author Mormegil
  */
 $messages['cs'] = array(
 	'requestaccount' => 'Vyžádat účet',
@@ -1364,7 +1392,7 @@ $messages['cs'] = array(
 	'requestaccount-urls' => 'Seznam webových stránek, pokud nějaké jsou (jedna na každý řádek):',
 	'requestaccount-agree' => 'Musíte potvrdit, že vaše skutečné jméno je správné a že souhlasíte s našimi Podmínkami použití.',
 	'requestaccount-inuse' => 'Uživatelské jméno už bylo vyžádané v probíhající žádosti o účet.',
-	'requestaccount-tooshort' => 'Vaše bibliografie musí mít alespoň $1 {{PLURAL:$1|slovo|slova|slov}}.',
+	'requestaccount-tooshort' => 'Délka vaší biografie musí být alespoň $1 {{PLURAL:$1|slovo|slova|slov}}.',
 	'requestaccount-emaildup' => 'Jiný účet čekající na schválení používá stejnou e-mailovou adresu.',
 	'requestaccount-exts' => 'Tento typ přílohy není povolen.',
 	'requestaccount-resub' => 'Váš soubor s CV/resumé je potřeba z bezpečnostních důvodů znovu vybrat. Nechejte pole prázdné, pokud jste se rozhodli žádný nepřiložit.',
@@ -3595,6 +3623,7 @@ $messages['hil'] = array(
  * @author Dalibor Bosits
  * @author Dnik
  * @author SpeedyGonsales
+ * @author Suradnik13
  */
 $messages['hr'] = array(
 	'requestaccount' => 'Zatraži suradnički račun',
@@ -3609,6 +3638,7 @@ Kad vam račun bude odobren, dobit ćete e-mail potvrdu i moći ćete se [[Speci
 	'requestaccount-leg-areas' => 'Glavni interesi',
 	'requestaccount-leg-person' => 'Osobni podaci',
 	'requestaccount-leg-other' => 'Ostali podaci',
+	'requestaccount-leg-tos' => 'Uvjeti usluge',
 	'requestaccount-acc-text' => "Dobiti ćete poruku elektroničkom poštom (''e-mail'') kao potvrdu da ste zatražili suradnički račun.
 Molimo odgovorite na tu poruku tako što ćete kliknuti na poveznicu (''link'') u toj poruci.
 Kad vam račun bude odobren/otvoren, lozinku ćete dobiti elektroničkom poštom.",
@@ -4987,6 +5017,7 @@ $2
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Pras
  */
 $messages['jv'] = array(
 	'requestaccount' => 'Nyuwun rékening (akun)',
@@ -5006,7 +5037,7 @@ $messages['jv'] = array(
 	'requestaccount-urls' => 'Daftar situs-situs wèb, yèn ana (pisahen mawa garis-garis anyar):',
 	'requestaccount-agree' => "Panjenengan kudu mastèkaké yèn jeneng asli panjenengan iku bener lan panjenengan sarujuk karo Sarat Paladènan (''Terms of Service'') kita.",
 	'requestaccount-inuse' => "Jeneng panganggo iki wis dienggo lan saiki lagi ing tahap ''pending'' panyuwunan rékening.",
-	'requestaccount-tooshort' => 'Babad slira panjenengan minimal dawané kudu ngandhut $1 tembung-tembung.',
+	'requestaccount-tooshort' => 'Babad salira panjenengan minimal dawané kudu ngandhut $1 {{PLURAL:$1|tembung|tembung}}.',
 	'requestaccount-emaildup' => "Sawijining panyuwunan rékening (akun) liyané sing lagi ''pending'' nganggo alamat e-mail sing padha",
 	'requestaccount-exts' => "Jenis berkas lampiran (''attachment'') ora diparengaké.",
 	'requestaccount-resub' => 'Berkas CV/riwayat urip panjenengan kudu dipilih manèh amerga alesan kaslamatan.
@@ -5020,7 +5051,7 @@ Jeneng sing tak-wènèhaké minangka \"Jeneng asli\" iku pancèn jenengku dhéw�
 	'requestaccount-email-subj-admin' => 'Panyuwunan rékening ing {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" wis nyuwun rékening lan saiki nunggu konfirmasi.
 Alamat e-mailé wis dikonfirmasi. Panjenengan bisa konfirmasi panyuwunan iki ing "$2".',
-	'acct_request_throttle_hit' => 'Nuwun sèwu, panjenengan wis nyuwun $1 rékening-rékening.
+	'acct_request_throttle_hit' => 'Nuwun sèwu, panjenengan wis nyuwun {{PLURAL:$1|1 akun|$1 akun}}.
 Panjenengan ora bisa nyuwun rékening anyar manèh.',
 	'requestaccount-loginnotice' => "Supaya bisa olèh rékening panganggo, panjenengan kudu '''[[Special:RequestAccount|nyuwun iku]]'''.",
 	'confirmaccounts' => 'Konfirmasi panyuwunan rékening (akun)',
