@@ -1045,16 +1045,21 @@ $2
 	'usercredentials' => 'Пасьведчаньні ўдзельніка',
 	'usercredentials-leg' => 'Пошук пацьверджаных пасьведчаньняў удзельніка',
 	'usercredentials-user' => 'Імя ўдзельніка:',
+	'usercredentials-text' => 'Ніжэй пададзеныя пацьверджаныя пасьведчаньні выбранага рахунку ўдзельніка.',
 	'usercredentials-leg-user' => 'Рахунак удзельніка',
+	'usercredentials-leg-areas' => 'Асноўныя вобласьці інтарэсаў',
 	'usercredentials-leg-person' => 'Асабістыя зьвесткі',
 	'usercredentials-leg-other' => 'Іншая інфармацыя',
 	'usercredentials-email' => 'Адрас электроннай пошты:',
 	'usercredentials-real' => 'Сапраўднае імя:',
 	'usercredentials-bio' => 'Біяграфія:',
+	'usercredentials-attach' => 'Рэзюмэ:',
 	'usercredentials-notes' => 'Дадатковая інфармацыя:',
 	'usercredentials-urls' => 'Сьпіс сайтаў:',
 	'usercredentials-ip' => 'Арыгінальны ІР-адрас:',
 	'usercredentials-member' => 'Правы:',
+	'usercredentials-badid' => 'Ня знойдзены пасьведчаньні гэтага ўдзельніка.
+Праверце, ці правільна напісана імя ўдзельніка.',
 );
 
 /** Bulgarian (Български)
@@ -2120,6 +2125,7 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
  * @author Crazymadlover
  * @author Imre
  * @author Lin linao
+ * @author Locos epraix
  * @author Sanbec
  */
 $messages['es'] = array(
@@ -2205,6 +2211,7 @@ una vez que una solicitud es tanto aprovada como rechazada se removerá de esta 
 	'confirmaccount-econf' => '(confirmado)',
 	'confirmaccount-reject' => '(rechazado por [[User:$1|$1]] en $2)',
 	'confirmaccount-noreason' => '(ninguna)',
+	'confirmaccount-held' => '(marcado "en suspenso" por [[User:$1|$1]] de $2)',
 	'confirmaccount-create' => 'Aceptar (crear cuenta)',
 	'confirmaccount-spam' => 'Spam (no enviar correo electrónico)',
 	'confirmaccount-reason' => 'Comentario (será incluido en el correo eectrónico):',
@@ -3673,7 +3680,7 @@ Vaše pravo ime možete promijeniti putem [[Special:Preferences|postavki]].',
 	'requestaccount-urls' => 'Popis web stranica, ako ih ima (odvojite ih redom):',
 	'requestaccount-agree' => 'Morate potvrditi da je vaše pravo ime točno i da pristajete na naše Uvjete korištenja.',
 	'requestaccount-inuse' => 'Suradničko ime je već u upotrebi u otvorenom zahtjevu.',
-	'requestaccount-tooshort' => 'Biografija mora biti od najmanje $1 riječi.',
+	'requestaccount-tooshort' => 'Vaš životopis mora biti dug najmanje $1 {{PLURAL:$1|riječ|riječi}}.',
 	'requestaccount-emaildup' => 'Drugi otvoreni zahtjev ima istu e-mail adresu.',
 	'requestaccount-exts' => 'Vrsta datoteke u privitku nije dopuštena.',
 	'requestaccount-resub' => 'Vaš CV/rezime mora biti opet odabran iz sigurnosnih razloga. Ostavite polje praznim ako ga ne želite uključiti.',
@@ -3695,7 +3702,7 @@ Ovaj potvrdni kod će isteći $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} zahtjev suradničkog računa',
 	'requestaccount-email-body-admin' => '"$1" je zatražio suradnički račun i čeka potvrdu.
 E-mail adresa je potvrđena. Možete potvrditi zahtjev ovdje "$2".',
-	'acct_request_throttle_hit' => 'Žao nam je, već ste zatražili suradnički račun $1. Ne možete zatražiti nove.',
+	'acct_request_throttle_hit' => 'Žao nam je, već ste zatražili {{PLURAL:$1|1 suradnički račun|$1 suradničke račune}}. Ne možete postaviti nove zahtjeve.',
 	'requestaccount-loginnotice' => "Da bi dobili suradnički račun, trebate ga '''[[Special:RequestAccount|zatražiti]]'''.",
 	'confirmaccount-newrequests' => "u tijeku '''$1''' e-mailom {{PLURAL:$1|potvrđen [[Special:ConfirmAccounts|zahtjev za računom]]|potvrđenih [[Special:ConfirmAccounts|zahtjeva za računom]]}}",
 	'confirmaccounts' => 'Potvrdi zahtjeve za suradničkim računom',
