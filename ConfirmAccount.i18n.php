@@ -1058,7 +1058,7 @@ $2
 	'usercredentials-urls' => 'Сьпіс сайтаў:',
 	'usercredentials-ip' => 'Арыгінальны ІР-адрас:',
 	'usercredentials-member' => 'Правы:',
-	'usercredentials-badid' => 'Ня знойдзены пасьведчаньні гэтага ўдзельніка.
+	'usercredentials-badid' => 'Пасьведчаньні гэтага ўдзельніка ня знойдзеныя.
 Праверце, ці правільна напісана імя ўдзельніка.',
 );
 
