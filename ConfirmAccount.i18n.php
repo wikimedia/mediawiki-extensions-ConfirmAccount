@@ -1060,6 +1060,9 @@ $2
 	'usercredentials-member' => 'Правы:',
 	'usercredentials-badid' => 'Пасьведчаньні гэтага ўдзельніка ня знойдзеныя.
 Праверце, ці правільна напісана імя ўдзельніка.',
+	'right-confirmaccount' => 'прагляд [[Special:ConfirmAccounts|запытаў на стварэньне рахункаў]]',
+	'right-requestips' => 'прагляд IP-адрасоў з якіх паступалі запыты на стварэньне рахункаў',
+	'right-lookupcredentials' => 'прагляд [[Special:UserCredentials|пасьведчаньняў ўдзельнікаў]]',
 );
 
 /** Bulgarian (Български)
