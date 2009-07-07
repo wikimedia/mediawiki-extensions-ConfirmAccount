@@ -2216,6 +2216,7 @@ una vez que una solicitud es tanto aprovada como rechazada se removerá de esta 
 	'confirmaccount-noreason' => '(ninguna)',
 	'confirmaccount-held' => '(marcado "en suspenso" por [[User:$1|$1]] de $2)',
 	'confirmaccount-create' => 'Aceptar (crear cuenta)',
+	'confirmaccount-hold' => 'Mantener',
 	'confirmaccount-spam' => 'Spam (no enviar correo electrónico)',
 	'confirmaccount-reason' => 'Comentario (será incluido en el correo eectrónico):',
 	'confirmaccount-ip' => 'Dirección IP:',
