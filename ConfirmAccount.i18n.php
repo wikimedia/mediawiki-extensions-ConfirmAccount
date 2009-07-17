@@ -628,6 +628,14 @@ $2
 تأكد من أن الاسم مكتوب بطريقة صحيحة.',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'requestaccount-level-0' => 'ܣܝܘܡܐ',
+	'requestaccount-level-1' => 'ܫܚܠܦܢܐ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
  */
@@ -4401,7 +4409,7 @@ Pastikan Anda merasa nyaman untuk mempublikasikan informasi-informasi tersebut.
 Nama Anda dapat diubah melalui [[Special:Preferences|preferensi Anda]].',
 	'requestaccount-real' => 'Nama asli:',
 	'requestaccount-same' => '(sama dengan nama asli)',
-	'requestaccount-email' => 'Alamat surat-e:',
+	'requestaccount-email' => 'Alamat surel:',
 	'requestaccount-reqtype' => 'Posisi:',
 	'requestaccount-level-0' => 'penulis',
 	'requestaccount-level-1' => 'penyunting',
@@ -4468,7 +4476,7 @@ Jika Anda tidak menyetujui atau menolak permintaan ini, maka permintaan ini akan
 	'confirmaccount-none-r' => 'Tidak ada permintaan akun yang baru ditolak di daftar ini.',
 	'confirmaccount-none-e' => 'Tidak ada permintaan akun yang kadaluwarsa dalam daftar ini.',
 	'confirmaccount-real-q' => 'Nama',
-	'confirmaccount-email-q' => 'Surat-e',
+	'confirmaccount-email-q' => 'Surel',
 	'confirmaccount-bio-q' => 'Biografi',
 	'confirmaccount-showopen' => 'permintaan dalam antrian',
 	'confirmaccount-showrej' => 'permintaan ditolak',
@@ -4492,7 +4500,7 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-leg-other' => 'Informasi lain',
 	'confirmaccount-name' => 'Nama pengguna',
 	'confirmaccount-real' => 'Nama:',
-	'confirmaccount-email' => 'Surat-e:',
+	'confirmaccount-email' => 'Surel:',
 	'confirmaccount-reqtype' => 'Posisi:',
 	'confirmaccount-pos-0' => 'penulis',
 	'confirmaccount-pos-1' => 'penyunting',
@@ -4551,6 +4559,7 @@ Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
 	'usercredentials-leg-areas' => 'Bidang utama yang diminati',
 	'usercredentials-leg-person' => 'Informasi pribadi',
 	'usercredentials-leg-other' => 'Informasi lain',
+	'usercredentials-email' => 'Surel:',
 	'usercredentials-real' => 'Nama asli:',
 	'usercredentials-bio' => 'Biografi:',
 	'usercredentials-attach' => 'Resume/CV:',
@@ -9643,7 +9652,7 @@ $messages['vo'] = array(
 	'requestaccount-level-0' => 'lautan',
 	'requestaccount-bio' => 'Lifajenäd pösodik:',
 	'requestaccount-notes' => 'Noets pluik:',
-	'requestaccount-tooshort' => 'Lifajenäd olik muton labön vodis pu $1.',
+	'requestaccount-tooshort' => 'Lifajenäd olik muton labön {{PLURAL:$1|vodi|vodis}} pu $1.',
 	'requestaccount-submit' => 'Begön kali',
 	'confirmaccounts' => 'Fümedön kalibegis',
 	'confirmaccount-real-q' => 'Nem',
