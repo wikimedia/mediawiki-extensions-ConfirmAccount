@@ -2428,7 +2428,7 @@ Voit muuttaa nimeäsi [[Special:Preferences|asetussivulla]].',
 	'requestaccount-urls' => 'Webbisivujen luettelo, jos on (yksi per rivi):',
 	'requestaccount-agree' => 'Vahvista, etä antamasi oikea nimesi on oikea ja että hyväksyt käyttöehdot.',
 	'requestaccount-inuse' => 'Käyttäjätunnusta on jo pyydetty toisessa käsiteltävänä olevassa käyttäjätunnuspyynnössä.',
-	'requestaccount-tooshort' => 'Kuvauksesi pituuden on oltava vähintään $1 sanaa.',
+	'requestaccount-tooshort' => 'Kuvauksesi pituuden on oltava vähintään $1 {{PLURAL:$1|sana|sanaa}}.',
 	'requestaccount-emaildup' => 'Samaa sähköpostiosoitetta on käytetty toisessa parhailaan käsiteltävänä olevassa käyttäjätunnuspyynnössä.',
 	'requestaccount-exts' => 'Liitetiedosto ei ole sallittua tyyppiä.',
 	'requestaccount-resub' => 'Tietoturvasyistä antamasi ansioluettelo/CV-tiedosto on valittava uudestaan.
