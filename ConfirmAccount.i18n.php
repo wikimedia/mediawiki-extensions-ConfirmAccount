@@ -290,7 +290,7 @@ $messages['qqq'] = array(
 	'confirmaccount-attach' => '{{Identical|Resume/CV}}',
 	'confirmaccount-notes' => '{{Identical|Additional notes}}',
 	'confirmaccount-urls' => '{{Identical|List of websites}}',
-	'confirmaccount-none-p' => '{{Identical/Notprovided}}',
+	'confirmaccount-none-p' => '{{Identical|Notprovided}}',
 	'confirmaccount-reject' => 'Parameters:
 *$1 user name
 *$2 date/time

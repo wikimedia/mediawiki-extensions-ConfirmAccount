@@ -247,6 +247,13 @@ $aliases['sa'] = array(
 	'UserCredentials' => array( 'उपयोजकविश्वासपत्त्र' ),
 );
 
+/** Slovak (Slovenčina) */
+$aliases['sk'] = array(
+	'RequestAccount' => array( 'PožiadaťOÚčet' ),
+	'ConfirmAccounts' => array( 'PotvrdiťÚčty' ),
+	'UserCredentials' => array( 'PrihlasovacieÚdaje' ),
+);
+
 /** Albanian (Shqip) */
 $aliases['sq'] = array(
 	'RequestAccount' => array( 'KërkoLlogari' ),
