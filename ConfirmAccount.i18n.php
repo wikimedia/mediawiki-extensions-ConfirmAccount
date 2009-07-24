@@ -1603,7 +1603,7 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$
 Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
 
 Wenn du auf einen Antrag antwortest, überprüfe die Informationen sorgfältig und bestätige die enthaltenen Informationen.
-Deine Aktionen werden nichtöffentlich protokolloert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.",
+Deine Aktionen werden nichtöffentlich protokolliert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.",
 	'confirmaccount-list' => 'Unten findest du eine Liste von noch zu bearbeitenden Benutzerkonto-Anträgen.
 Sobald ein Antrag bestätigt oder zurückgewiesen wurde, wird er aus der Liste entfernt.',
 	'confirmaccount-list2' => 'Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden, allerdings solltest du zuerst den ablehnenden Administrator kontaktieren.',
