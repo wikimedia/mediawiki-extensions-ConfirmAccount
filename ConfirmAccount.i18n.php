@@ -632,8 +632,17 @@ $2
  * @author Basharh
  */
 $messages['arc'] = array(
+	'requestaccount-leg-user' => 'ܚܘܫܒܢܐ ܕܡܦܠܚܢܐ',
+	'requestaccount-leg-person' => 'ܝܕܥܬ̈ܐ ܦܪ̈ܨܘܦܝܐ',
+	'requestaccount-leg-other' => 'ܝܕܥܬ̈ܐ ܐܚܪ̈ܢܝܬܐ',
+	'requestaccount-leg-tos' => 'ܫܪ̈ܛܐ ܕܬܫܡܫܬܐ',
+	'requestaccount-real' => 'ܫܡܐ ܫܪܝܪܐ:',
+	'requestaccount-same' => '(ܐܝܟ ܫܡܐ ܫܪܝܪܐ)',
 	'requestaccount-level-0' => 'ܣܝܘܡܐ',
 	'requestaccount-level-1' => 'ܫܚܠܦܢܐ',
+	'confirmaccount-real-q' => 'ܫܡܐ',
+	'confirmaccount-review' => 'ܬܢܝ',
+	'confirmaccount-wsum' => 'ܒܫܝܢܐ!',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -5559,6 +5568,7 @@ $messages['la'] = array(
 );
 
 /** Luxembourgish (Lëtzebuergesch)
+ * @author Les Meloures
  * @author Robby
  */
 $messages['lb'] = array(
@@ -5596,7 +5606,7 @@ Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wë
 	'requestaccount-notes' => 'Zousätzlech Bemierkungen:',
 	'requestaccount-urls' => 'Lëscht vu Websäiten (all Säit an enger neier Zeil)',
 	'requestaccount-agree' => "Dir musst confirméieren datt är E-Mailadress richteg ass and datt dir mat den Allgemenge Konditiounen d'Accord sitt.",
-	'requestaccount-inuse' => 'De Benotzernumm ass scho bäi enger anere Benotzerufro a Gebrauch.',
+	'requestaccount-inuse' => 'De Benotzernumm ass scho bei enger anerer Benotzerufro a Gebrauch.',
 	'requestaccount-tooshort' => 'Är Biographie muss mindestens $1 {{PLURAL:$1|Wuert|Wierder}} hunn.',
 	'requestaccount-emaildup' => 'En aneren ugefrote Benotzerkont benotzt déi selwescht E-Mailadress.',
 	'requestaccount-exts' => "De Fichierstyp vum ''Attachment'' ass net erlaabt.",
