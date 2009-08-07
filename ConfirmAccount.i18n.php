@@ -3993,6 +3993,7 @@ Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš w
 /** Hungarian (Magyar)
  * @author Dani
  * @author Dorgan
+ * @author Glanthor Reviol
  * @author Tgr
  */
 $messages['hu'] = array(
@@ -4076,7 +4077,10 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-real-q' => 'Név',
 	'confirmaccount-email-q' => 'E-mail cím',
 	'confirmaccount-bio-q' => 'Életrajz',
+	'confirmaccount-showopen' => 'elfogadásra váró kérelmek',
+	'confirmaccount-showrej' => 'visszautasított kérelmek',
 	'confirmaccount-showheld' => 'Visszatartott fiókok listájának megtekintése',
+	'confirmaccount-showexp' => 'lejárt kérelmek',
 	'confirmaccount-review' => 'Áttekintés',
 	'confirmaccount-types' => 'Válassz egy várólistát az alábbiak közül:',
 	'confirmaccount-all' => '(összes várólista megtekintése)',
@@ -4086,6 +4090,7 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-q-open' => 'elfogadásra váró kérelmek',
 	'confirmaccount-q-held' => 'visszatartott kérelmek',
 	'confirmaccount-q-rej' => 'visszautasított kérelmek',
+	'confirmaccount-q-stale' => 'lejárt kérelmek',
 	'confirmaccount-badid' => 'Nincs elfogadásra váró kérelem a megadott azonosítóval. Valószínűleg már el lett intézve.',
 	'confirmaccount-leg-user' => 'Felhasználói fiók',
 	'confirmaccount-leg-areas' => 'Érdeklődési területek',
