@@ -5176,7 +5176,7 @@ $messages['km'] = array(
 	'requestaccount-attach' => 'ប្រវត្តិរូប (ស្រេចចិត្ត)​៖',
 	'requestaccount-notes' => 'សម្គាល់បន្ថែម៖',
 	'requestaccount-agree' => 'អ្នកត្រូវតែ បញ្ជាក់ថា ឈ្មោះពិត របស់អ្នក ត្រឹមត្រូវ និងថា អ្នកព្រមព្រៀង ចំពោះ លក្ខណ្ឌ ប្រើប្រាស់សេវា ។',
-	'requestaccount-tooshort' => 'ជីវប្រវត្តិ របស់អ្នក ត្រូវតែ វែង យ៉ាងតិច $1 ពាក្យ ។',
+	'requestaccount-tooshort' => 'ជីវប្រវត្តិរបស់អ្នកត្រូវតែមានយ៉ាងតិច $1 {{PLURAL:$1|ពាក្យ|ពាក្យ}} ។',
 	'requestaccount-submit' => 'សំណើសុំគណនី',
 	'requestaccount-email-subj' => 'ការបញ្ជាក់ទទួលស្គាល់ អាសយដ្ឋានអ៊ីមែល {{SITENAME}}',
 	'requestaccount-email-subj-admin' => 'សំណើសុំគណនីរបស់{{SITENAME}}',
@@ -7516,6 +7516,7 @@ Poderá haver listas de contactos no sítio que poderá usar se desejar saber ma
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
+ * @author Heldergeovane
  */
 $messages['pt-br'] = array(
 	'requestaccount' => 'Requisitar conta',
@@ -7551,7 +7552,7 @@ O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
 	'requestaccount-urls' => 'Lista de sítios web, se houver algum (separados por mudança de linha):',
 	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correto e que concorda com os nossos Termos de Serviço.',
 	'requestaccount-inuse' => 'O nome de utilizador já está em uso num pedido de conta pendente.',
-	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 palavras.',
+	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.',
 	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo endereço de email.',
 	'requestaccount-exts' => 'O tipo de arquivo do anexo não é permitido.',
 	'requestaccount-resub' => 'O seu Curriculum Vitae deve ser selecionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
@@ -7703,6 +7704,9 @@ Podem haver listas de contatos no sítio que poderá usar se desejar saber mais 
 	'usercredentials-ip' => 'Endereço IP original:',
 	'usercredentials-member' => 'Privilégios:',
 	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está escrito corretamente.',
+	'right-confirmaccount' => 'Visualizar a [[Special:ConfirmAccounts|fila com contas requisitadas]]',
+	'right-requestips' => 'Visualizar os endereços de IP durante o processamento das contas pedidas.',
+	'right-lookupcredentials' => 'Visualizar [[Special:UserCredentials|credenciais de usuário]]',
 );
 
 /** Tarifit (Tarifit)
