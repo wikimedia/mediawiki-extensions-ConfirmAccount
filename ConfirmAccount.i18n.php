@@ -1992,6 +1992,7 @@ $messages['ee'] = array(
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Crazymadlover
+ * @author Omnipaedista
  */
 $messages['el'] = array(
 	'requestaccount-leg-user' => 'Λογαριασμός χρήστη',
@@ -2004,6 +2005,7 @@ $messages['el'] = array(
 	'confirmaccount-real-q' => 'Όνομα',
 	'confirmaccount-email-q' => 'Ηλεκτρονικό Ταχυδρομείο:',
 	'confirmaccount-bio-q' => 'Βιογραφία',
+	'confirmaccount-type' => 'Ουρά:',
 	'confirmaccount-leg-person' => 'Προσωπικές πληροφορίες',
 	'confirmaccount-leg-other' => 'Άλλες πληροφορίες',
 	'confirmaccount-name' => 'Όνομα χρήστη',
@@ -2017,11 +2019,13 @@ $messages['el'] = array(
 	'confirmaccount-ip' => 'διεύθυνση ΙΡ:',
 	'confirmaccount-submit' => 'Επιβεβαίωση',
 	'confirmaccount-wsum' => 'Καλός ήρθατε!',
+	'usercredentials' => 'Διαπιστευτήρια χρήστη',
 	'usercredentials-user' => 'Όνομα χρήστη:',
 	'usercredentials-leg-person' => 'Προσωπικές πληροφορίες',
 	'usercredentials-leg-other' => 'Άλλες πληροφορίες',
 	'usercredentials-email' => 'Ηλεκτρονικό ταχυδρομείο:',
 	'usercredentials-bio' => 'Βιογραφία:',
+	'usercredentials-urls' => 'Λίστα ιστοσελίδων:',
 	'usercredentials-member' => 'Δικαιώματα:',
 );
 
@@ -3138,7 +3142,11 @@ $messages['grc'] = array(
 	'requestaccount-level-1' => 'μεταγραφεύς',
 	'confirmaccount-real-q' => 'Ὄνομα',
 	'confirmaccount-email-q' => 'Ἠλεκτρονικαὶ ἐπιστολαί',
+	'confirmaccount-bio-q' => 'Βιογραφία',
 	'confirmaccount-review' => 'Ἐπισκόπησις',
+	'confirmaccount-type' => 'Οὐρά:',
+	'confirmaccount-leg-user' => 'Λογισμὸς χρωμένου',
+	'confirmaccount-leg-other' => 'Ἑτέρα πύστις',
 	'confirmaccount-name' => 'Ὄνομα χρωμένου',
 	'confirmaccount-real' => 'Ὄνομα:',
 	'confirmaccount-email' => 'Ἠλεκτρονικαὶ ἐπιστολαί:',
@@ -3146,11 +3154,17 @@ $messages['grc'] = array(
 	'confirmaccount-pos-0' => 'δημιουργός',
 	'confirmaccount-pos-1' => 'μεταγραφεύς',
 	'confirmaccount-noreason' => '(οὐδεμία)',
-	'confirmaccount-ip' => 'IP-διεύθυνσις:',
+	'confirmaccount-ip' => 'Διεύθυνσις IP:',
 	'confirmaccount-submit' => 'Κυροῦν',
+	'confirmaccount-wsum' => 'Ὡς εὖ παρέστης!',
+	'usercredentials' => 'Διαπιστευτήρια χρωμένου',
 	'usercredentials-user' => 'Ὄνομα χρωμένου:',
 	'usercredentials-email' => 'Ἠλεκτρονικαὶ ἐπιστολαί:',
 	'usercredentials-real' => 'ἀληθὲς ὄνομα:',
+	'usercredentials-bio' => 'Βιογραφία:',
+	'usercredentials-attach' => 'Βιογραφικὸν σημείωμα:',
+	'usercredentials-urls' => 'Καταλογὴ ἱστοτόπων:',
+	'usercredentials-member' => 'Δικαιώματα:',
 );
 
 /** Swiss German (Alemannisch)
@@ -5570,14 +5584,43 @@ $messages['kw'] = array(
 );
 
 /** Latin (Latina)
+ * @author Omnipaedista
  * @author SPQRobin
  */
 $messages['la'] = array(
+	'requestaccount-leg-user' => 'Ratio usoris',
 	'requestaccount-real' => 'Nomen verum:',
 	'requestaccount-same' => '(aequus ad nomine vero)',
+	'requestaccount-email' => 'Directio litterarum electronicarum:',
+	'requestaccount-reqtype' => 'Positio:',
+	'requestaccount-level-0' => 'auctor',
+	'requestaccount-level-1' => 'recensor',
+	'requestaccount-notes' => 'Notae addititiae:',
+	'confirmaccount-real-q' => 'Nomen',
+	'confirmaccount-email-q' => 'Litterae electronicae',
+	'confirmaccount-bio-q' => 'Biographia',
+	'confirmaccount-review' => 'Praevidere',
+	'confirmaccount-leg-user' => 'Ratio usoris:',
 	'confirmaccount-name' => 'Nomen usoris',
 	'confirmaccount-real' => 'Nomen',
+	'confirmaccount-email' => 'Litterae electronicae:',
+	'confirmaccount-reqtype' => 'Positio:',
+	'confirmaccount-pos-0' => 'auctor',
+	'confirmaccount-pos-1' => 'recensor',
+	'confirmaccount-bio' => 'Biographia:',
+	'confirmaccount-attach' => 'Curriculum Vitae:',
+	'confirmaccount-noreason' => '(nulla)',
+	'confirmaccount-ip' => 'Locus IP:',
 	'confirmaccount-wsum' => 'Salve!',
+	'usercredentials-user' => 'Nomen usoris:',
+	'usercredentials-leg-user' => 'Ratio usoris:',
+	'usercredentials-email' => 'Litterae electronicae:',
+	'usercredentials-real' => 'Nomen verum:',
+	'usercredentials-bio' => 'Biographia:',
+	'usercredentials-attach' => 'Curriculum Vitae:',
+	'usercredentials-notes' => 'Notae addititiae:',
+	'usercredentials-ip' => 'Locus IP originalis:',
+	'usercredentials-member' => 'Potestates:',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -5785,6 +5828,7 @@ Doe kans diene naam aanpasse via dien [[Special:Preferences|veurkaöre]].",
 	'requestaccount-notes' => 'Opmerkinge:',
 	'requestaccount-urls' => "Lies van websites, es van toepassing (jeder site op 'ne aafzunjerlike regel):",
 	'requestaccount-submit' => 'Gebroekersnaam aanvraoge',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} gebroekersaanvraoge',
 	'confirmaccount-real-q' => 'Naam',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografie',
@@ -5817,6 +5861,35 @@ Doe kans diene naam aanpasse via dien [[Special:Preferences|veurkaöre]].",
 	'confirmaccount-notes' => 'Opmirkinge:',
 	'confirmaccount-urls' => 'Lies mit websites:',
 	'confirmaccount-none-p' => '(neet opgegaeve)',
+	'confirmaccount-econf' => '(gekónfermeerd)',
+	'confirmaccount-reject' => '(aafgeweze door [[User:$1|$1]] op $2)',
+	'confirmaccount-rational' => 'Aan de aanvraoger opgegaeve raej:',
+	'confirmaccount-noreason' => '(gein)',
+	'confirmaccount-autorej' => '(deze aanvraog is otomatisch aafgebroke waeges inactiviteit)',
+	'confirmaccount-held' => '("aangehauwe" door [[User:$1|$1]] op $2)',
+	'confirmaccount-create' => 'Toelaote (gebroeker aanmake)',
+	'confirmaccount-deny' => 'Aafwieze (ewegsjaffe)',
+	'confirmaccount-hold' => 'Aanhauwe',
+	'confirmaccount-spam' => 'Spam (geine e-mail sjikke)',
+	'confirmaccount-reason' => 'Opmirking (weurt toegeveug aan de e-mail)',
+	'confirmaccount-ip' => 'IP-adres:',
+	'confirmaccount-submit' => 'Kónfermere',
+	'usercredentials' => 'Rifferenties van gebroeker',
+	'usercredentials-leg' => 'Betrach gekónfermeerde rifferenties veur gebroeker',
+	'usercredentials-user' => 'Gebroekersnaam:',
+	'usercredentials-text' => 'Euverzich van de gekónfermeerde rifferenties veur de geselecteerde gebroeker:',
+	'usercredentials-leg-user' => 'Gebroekersaccount',
+	'usercredentials-leg-areas' => 'Interessegebede',
+	'usercredentials-leg-person' => 'Persuunlike infermasie',
+	'usercredentials-leg-other' => 'Euverige infermasie',
+	'usercredentials-email' => 'E-mail:',
+	'usercredentials-real' => 'Echte naam:',
+	'usercredentials-bio' => 'Biografie:',
+	'usercredentials-attach' => 'CV:',
+	'usercredentials-notes' => 'Euverige opmirkinge:',
+	'usercredentials-urls' => 'Lies van websites:',
+	'usercredentials-ip' => 'Oersjprunkelik IP-adres:',
+	'usercredentials-member' => 'Rechte:',
 );
 
 /** Lithuanian (Lietuvių)
@@ -8408,7 +8481,7 @@ $messages['sr-ec'] = array(
 	'usercredentials-member' => 'Права:',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -8473,7 +8546,7 @@ Možda je već bio rešen.',
 	'confirmaccount-rational' => 'Obrazloženje dato kandidatu:',
 	'confirmaccount-noreason' => '(nema)',
 	'confirmaccount-autorej' => '(ovaj zahtev je bio automatski odbačen zbog neaktivnosti)',
-	'confirmaccount-held' => '(označeno kao &quot;stopirano&quot; od [[User:$1|$1]] na $2)',
+	'confirmaccount-held' => '(označeno kao "stopirano" od [[User:$1|$1]] na $2)',
 	'confirmaccount-create' => 'Prihvati (napravi nalog)',
 	'confirmaccount-deny' => 'Odbaci (skini sa spiska)',
 	'confirmaccount-hold' => 'Stopiraj',
