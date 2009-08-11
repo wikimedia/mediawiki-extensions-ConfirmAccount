@@ -417,6 +417,7 @@ $messages['an'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author OsamaK
  * @author ترجمان05
  */
 $messages['ar'] = array(
@@ -626,6 +627,8 @@ $2
 	'usercredentials-member' => 'الصلاحيات:',
 	'usercredentials-badid' => 'لا مؤهلات تم العثور عليها لهذا المستخدم.
 تأكد من أن الاسم مكتوب بطريقة صحيحة.',
+	'right-confirmaccount' => 'عرض [[Special:ConfirmAccounts|طابور الحسابات المطلوبة]]',
+	'right-requestips' => 'عرض عنوان آيبي الطالب أثناء العمل على الحسابات المطلوبة',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -5161,6 +5164,7 @@ Panjenengan ora bisa nyuwun rékening anyar manèh.',
  * @author Lovekhmer
  * @author Thearith
  * @author គីមស៊្រុន
+ * @author វ័ណថារិទ្ធ
  */
 $messages['km'] = array(
 	'requestaccount' => 'សំណើសុំគណនី',
@@ -5169,6 +5173,7 @@ $messages['km'] = array(
 	'requestaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
 	'requestaccount-leg-person' => 'ព័ត៌មានផ្ទាល់ខ្លួន',
 	'requestaccount-leg-other' => 'ព័ត៌មាន ដទៃទៀត',
+	'requestaccount-leg-tos' => 'លក្ខខណ្ឌ​នៃ​សេវាកម្ម​',
 	'requestaccount-real' => 'ឈ្មោះពិត៖',
 	'requestaccount-same' => '(ដូចឈ្មោះពិត)',
 	'requestaccount-email' => 'អាសយដ្ឋានអ៊ីមែល៖',
@@ -5742,6 +5747,78 @@ Kuckt w.e.g. no op den Numm richteg geschriwwen ass.',
 	'right-lookupcredentials' => '[[Special:UserCredentials|Referenze vun de Benotzer]] kucken',
 );
 
+/** Limburgish (Limburgs)
+ * @author Pahles
+ */
+$messages['li'] = array(
+	'requestaccount' => 'Gebroekersaccount aanvraoge',
+	'requestaccount-text' => "'''Vul 't ongerstaand formeleer in en sjik 't op om 'n gebroekersaccount aan te vraoge'''.  
+
+Zörg deveur dats doe iers de [[{{MediaWiki:Requestaccount-page}}|veurwaarde]] laes ierdets doe 'n gebroekersaccount aanvraogs.
+
+Es diene aanvraog is goodgekäörd, kriegs doe 'ne e-mail en daonao kans doe diech [[Special:UserLogin|aanmelje]].",
+	'requestaccount-page' => '{{ns:project}}:Veurwaerde',
+	'requestaccount-dup' => "'''Lèt op: doe bis al aangemeld mit 'ne geregistreerde gebroekersnaam.'''",
+	'requestaccount-leg-user' => 'Gebroeker',
+	'requestaccount-leg-areas' => 'Interessegebede',
+	'requestaccount-leg-person' => 'Persuunlike infermasie',
+	'requestaccount-leg-other' => 'Euverige infermasie',
+	'requestaccount-leg-tos' => 'Gebroeksveurwaerde',
+	'requestaccount-acc-text' => "Doe kriegs 'n e-mailbevestiging es dien verzeuk is óntvange.
+Reageer dao-op door te klikke op de verwiezing die in de e-mail sjteit.
+Doe kriegs 'n wachwoord es dien gebroekersaccount is aangemaak.",
+	'requestaccount-areas-text' => "Selecteer hiejonger de óngerwerpe woemits doe ervaring höbs of woevans doe 't mieste wirk wils verrichte.",
+	'requestaccount-ext-text' => "De volgende infermasie weurt vertroewelik behanjeld en weurt allein gebroek veur dit verzeuk.  
+Doe kans kontakgegaevens zoewie 'n tillefoonnómmer opgaeve om te helpe bie 't vastsjtèlle van dien identiteit.",
+	'requestaccount-bio-text' => "Dien biografie weurt opgenóme in dien gebroekerspagina.
+Perbeer dien belangriekste gegaeves op te numme.
+Zörg deveur dats doe achter 't publicere van dergelike infermatse sjteis.
+Doe kans diene naam aanpasse via dien [[Special:Preferences|veurkaöre]].",
+	'requestaccount-real' => 'Diene echte naam:',
+	'requestaccount-same' => '(geliek aan diene echte naam)',
+	'requestaccount-email' => 'E-mailadres:',
+	'requestaccount-reqtype' => 'Pezisie:',
+	'requestaccount-level-0' => 'Outäör',
+	'requestaccount-level-1' => 'riddektäör',
+	'requestaccount-bio' => 'Persuunlike biografie:',
+	'requestaccount-attach' => 'CV (optioneel):',
+	'requestaccount-notes' => 'Opmerkinge:',
+	'requestaccount-urls' => "Lies van websites, es van toepassing (jeder site op 'ne aafzunjerlike regel):",
+	'requestaccount-submit' => 'Gebroekersnaam aanvraoge',
+	'confirmaccount-real-q' => 'Naam',
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-bio-q' => 'Biografie',
+	'confirmaccount-showopen' => 'ope aanvraoge',
+	'confirmaccount-showrej' => 'verworpe aanvraoge',
+	'confirmaccount-showheld' => 'aangehauwe aanvraoge',
+	'confirmaccount-showexp' => 'vervalle aanvraoge',
+	'confirmaccount-review' => 'toegelaote/aafgeweze',
+	'confirmaccount-types' => "Selecteer 'n lies mit gebroekersverzeuke:",
+	'confirmaccount-all' => '(alle lieste weergaeve)',
+	'confirmaccount-type' => 'Lies:',
+	'confirmaccount-type-0' => 'toekómstige outäörs',
+	'confirmaccount-type-1' => 'toekómstige riddektäöre',
+	'confirmaccount-q-open' => 'ope aanvraoge',
+	'confirmaccount-q-held' => 'aangehauwe aanvraoge',
+	'confirmaccount-q-rej' => 'recènt aafgeweze aanvraoge',
+	'confirmaccount-q-stale' => 'vervalle aanvraoge',
+	'confirmaccount-leg-user' => 'Gebroekersaccount',
+	'confirmaccount-leg-areas' => 'Interessegebede',
+	'confirmaccount-leg-person' => 'Persuunlike infermasie',
+	'confirmaccount-leg-other' => 'Euverige infermasie',
+	'confirmaccount-name' => 'Gebroekersnaam',
+	'confirmaccount-real' => 'Naam:',
+	'confirmaccount-email' => 'E-mail:',
+	'confirmaccount-reqtype' => 'Pezisie:',
+	'confirmaccount-pos-0' => 'outäör',
+	'confirmaccount-pos-1' => 'riddektäör',
+	'confirmaccount-bio' => 'Biografie:',
+	'confirmaccount-attach' => 'CV:',
+	'confirmaccount-notes' => 'Opmirkinge:',
+	'confirmaccount-urls' => 'Lies mit websites:',
+	'confirmaccount-none-p' => '(neet opgegaeve)',
+);
+
 /** Lithuanian (Lietuvių)
  * @author Homo
  * @author Tomasdd
@@ -5767,12 +5844,14 @@ $messages['mhr'] = array(
 );
 
 /** Macedonian (Македонски)
+ * @author Bjankuloski06
  * @author Brest
  */
 $messages['mk'] = array(
+	'requestaccount-dup' => "'''Белешка: Веќе се најавени со регистрирана сметка.'''",
 	'requestaccount-leg-user' => 'Корисничка сметка',
 	'requestaccount-leg-areas' => 'Главно се интересира за',
-	'requestaccount-leg-person' => 'Персонални информации',
+	'requestaccount-leg-person' => 'Лични информации',
 	'requestaccount-leg-other' => 'Други информации',
 	'requestaccount-real' => 'Вистинско име:',
 	'requestaccount-same' => '(исто како вистинско име)',
@@ -5803,6 +5882,13 @@ $messages['mk'] = array(
 	'confirmaccount-notes' => 'Дополнителни белешки:',
 	'confirmaccount-urls' => 'Листа на веб места:',
 	'confirmaccount-none-p' => '(не е наведено)',
+	'confirmaccount-ip' => 'IP адреса:',
+	'confirmaccount-submit' => 'Потврди',
+	'confirmaccount-wsum' => 'Добредојдовте!',
+	'usercredentials-user' => 'Корисничко име:',
+	'usercredentials-leg-user' => 'Корисничка сметка',
+	'usercredentials-leg-person' => 'Лични информации',
+	'usercredentials-email' => 'Е-пошта:',
 );
 
 /** Malayalam (മലയാളം)
