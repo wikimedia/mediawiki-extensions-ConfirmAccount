@@ -1389,19 +1389,51 @@ Da bi ste se prijaviti, molimo idite na {{fullurl:Special:UserLogin}}.',
 
 /** Catalan (Català)
  * @author Loupeter
+ * @author Paucabot
  * @author SMP
  * @author Solde
  */
 $messages['ca'] = array(
+	'requestaccount' => 'Sol·licita un compte',
+	'requestaccount-leg-user' => "Compte de l'usuari",
+	'requestaccount-leg-person' => 'Informació personal',
+	'requestaccount-leg-other' => 'Altres informacions',
+	'requestaccount-real' => 'Nom real:',
+	'requestaccount-same' => '(el mateix que el nom real)',
+	'requestaccount-email' => 'Adreça de correu electrònic:',
+	'requestaccount-reqtype' => 'Posició:',
 	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'editor',
+	'requestaccount-bio' => 'Biografia personal:',
+	'requestaccount-notes' => 'Notes addicionals:',
 	'confirmaccount-real-q' => 'Nom',
 	'confirmaccount-email-q' => 'Correu electrònic',
+	'confirmaccount-bio-q' => 'Biografia',
+	'confirmaccount-type' => 'Coa:',
+	'confirmaccount-leg-user' => "Compte d'usuari",
+	'confirmaccount-leg-areas' => "Àrees d'interès principals",
+	'confirmaccount-leg-person' => 'Informació personal',
+	'confirmaccount-leg-other' => 'Altres informacions',
+	'confirmaccount-name' => "Nom d'usuari",
 	'confirmaccount-real' => 'Nom:',
 	'confirmaccount-email' => 'Correu electrònic:',
+	'confirmaccount-reqtype' => 'Posició:',
 	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-pos-1' => 'editor',
+	'confirmaccount-bio' => 'Biografia:',
+	'confirmaccount-notes' => 'Notes addicionals:',
+	'confirmaccount-urls' => 'Llista de llocs web:',
+	'confirmaccount-none-p' => '(no proporcionat)',
+	'confirmaccount-econf' => '(confirmat)',
 	'confirmaccount-noreason' => '(cap)',
 	'confirmaccount-ip' => 'Adreça IP:',
+	'confirmaccount-submit' => 'Confirma',
+	'confirmaccount-wsum' => 'Benvinguts!',
+	'usercredentials-leg-person' => 'Informació personal',
+	'usercredentials-leg-other' => 'Altres informacions',
 	'usercredentials-email' => 'Correu electrònic:',
+	'usercredentials-real' => 'Nom real:',
+	'usercredentials-bio' => 'Biografia:',
 );
 
 /** Czech (Česky)
@@ -3546,6 +3578,7 @@ $messages['he'] = array(
 	'confirmaccount-rej' => 'בקשת החשבון נדחתה בהצלחה.',
 	'confirmaccount-viewing' => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])',
 	'confirmaccount-summary' => 'יצירת דף משתמש עם ביוגרפיה של משתמש חדש',
+	'confirmaccount-wsum' => 'ברוכים הבאים!',
 	'usercredentials' => 'פרטי זיהוי המשתמש',
 	'usercredentials-leg' => 'פרטי זיהוי המשתמש שאושרו בתהליך האיתור',
 	'usercredentials-user' => 'שם המשתמש:',
