@@ -1784,9 +1784,22 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
+ * @author Imre
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
+	'requestaccount-dup' => "'''Achtung: Sie sind bereits mit einem registrierten Benutzerkonto eingeloggt.'''",
+	'requestaccount-acc-text' => 'An Ihre E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.
+Bitte reagieren Sie darauf, indem Sie auf den in dieser Mail enthaltenen Bestätigungslink klicken.
+Sobald Ihr Konto angelegt wurde, wird Ihnen Ihr Passwort per E-Mail zugeschickt.',
+	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag verwendet.
+Sie können Kontaktangaben wie eine Telefonnummer machen, um die Bearbeitung Ihres Antrags zu vereinfachen.',
+	'requestaccount-agree' => 'Sie müssen bestätigen, dass Ihr Realname korrekt ist und Sie die Benutzungsbedingungen akzeptieren.',
+	'requestaccount-tooshort' => 'Ihre Biographie muss mindestens {{PLURAL:$1|1 Wort|$1 Wörter}} lang sein.',
+	'requestaccount-resub' => 'Die Datei mit Ihrem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
+Lassen Sie das Feld leer, wenn Sie keinen Lebenslauf mehr anfügen möchten.',
+	'requestaccount-sent' => 'Ihr Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
+	'request-account-econf' => 'Ihre E-Mail-Adresse wurde bestätigt und wird nun als solche in Ihrem Account-Antrag geführt.',
 	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise Sie, haben bei {{SITENAME}} das Benutzerkonto „$2“ mit Ihrer E-Mail-Adresse beantragt.
 
 Um zu bestätigen, dass wirklich Sie dieses Konto bei {{SITENAME}} beantragt haben, öffnen Sie bitte folgenden Link in Ihrem Browser:
@@ -1798,6 +1811,34 @@ Wenn das Benutzerkonto erstellt wurde, bekommen Sie eine weitere E-Mail mit dem 
 Wenn Sie das Benutzerkonto *nicht* beantragt haben, öffnen Sie den Link bitte nicht!
 
 Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
+	'requestaccount-email-body-admin' => '„$1“ hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
+Die E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen: „$2“.',
+	'acct_request_throttle_hit' => 'Sie haben bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, Sie können momentan keine weiteren beantragen.',
+	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, müssen Sie es '''[[Special:RequestAccount|beantragen]]'''.",
+	'confirmaccount-list2' => 'Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden, allerdings sollten Sie zuerst den ablehnenden Administrator kontaktieren.',
+	'confirmaccount-needreason' => 'Sie müssen eine Begründung eingeben.',
+	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
+Wir hoffen, dass Sie viele gute Informationen beisteuern.
+Möglicherweise möchten Sie zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen.
+Nochmal: Willkommen und haben Sie Spaß!",
+	'confirmaccount-email-body' => 'Ihr Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
+
+Benutzername: $1
+
+Passwort: $2
+
+Aus Sicherheitsgründen sollten Sie Ihr Passwort unbedingt beim ersten Anmelden ändern.
+Um sich anzumelden besuchen Sie bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
+	'confirmaccount-email-body2' => 'Ihr Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
+
+Benutzername: $1
+
+Passwort: $2
+
+$3
+
+Aus Sicherheitsgründen sollten Sie Ihr Passwort unbedingt beim ersten Anmelden ändern.
+Um sich anzumelden besuchen Sie bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
 );
 
 /** Zazaki (Zazaki)
