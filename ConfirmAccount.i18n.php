@@ -1571,6 +1571,7 @@ $messages['da'] = array(
  * @author Als-Holder
  * @author Leithian
  * @author MF-Warburg
+ * @author Pill
  * @author Purodha
  * @author Raimond Spekking
  * @author Revolus
@@ -1585,7 +1586,7 @@ Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen
 
 Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich [[Special:UserLogin|anmelden]].",
 	'requestaccount-page' => '{{ns:project}}:Nutzungsbedingungen',
-	'requestaccount-dup' => "'''Achtung: Du bist bereits mit einem registrierten Benutzerkonto eingeloggt.'''",
+	'requestaccount-dup' => "'''Achtung: Du bist bereits mit einem registrierten Benutzerkonto angemeldet.'''",
 	'requestaccount-leg-user' => 'Benutzerkonto',
 	'requestaccount-leg-areas' => 'Hauptinteressensgebiete',
 	'requestaccount-leg-person' => 'Persönliche Informationen',
@@ -1621,7 +1622,7 @@ Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
 Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
 	'requestaccount-submit' => 'Benutzerkonto beantragen',
 	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
-	'request-account-econf' => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in Deinem Account-Antrag geführt.',
+	'request-account-econf' => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in deinem Antrag auf ein Benutzerkonto geführt.',
 	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adressen Prüfung',
 	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise du, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit deiner E-Mail-Adresse beantragt.
 
@@ -1788,7 +1789,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'requestaccount-dup' => "'''Achtung: Sie sind bereits mit einem registrierten Benutzerkonto eingeloggt.'''",
+	'requestaccount-dup' => "'''Achtung: Sie sind bereits mit einem registrierten Benutzerkonto angemeldet.'''",
 	'requestaccount-acc-text' => 'An Ihre E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.
 Bitte reagieren Sie darauf, indem Sie auf den in dieser Mail enthaltenen Bestätigungslink klicken.
 Sobald Ihr Konto angelegt wurde, wird Ihnen Ihr Passwort per E-Mail zugeschickt.',
@@ -1799,7 +1800,7 @@ Sie können Kontaktangaben wie eine Telefonnummer machen, um die Bearbeitung Ihr
 	'requestaccount-resub' => 'Die Datei mit Ihrem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
 Lassen Sie das Feld leer, wenn Sie keinen Lebenslauf mehr anfügen möchten.',
 	'requestaccount-sent' => 'Ihr Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
-	'request-account-econf' => 'Ihre E-Mail-Adresse wurde bestätigt und wird nun als solche in Ihrem Account-Antrag geführt.',
+	'request-account-econf' => 'Ihre E-Mail-Adresse wurde bestätigt und wird nun als solche in Ihrem Antrag auf ein Benutzerkonto geführt.',
 	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise Sie, haben bei {{SITENAME}} das Benutzerkonto „$2“ mit Ihrer E-Mail-Adresse beantragt.
 
 Um zu bestätigen, dass wirklich Sie dieses Konto bei {{SITENAME}} beantragt haben, öffnen Sie bitte folgenden Link in Ihrem Browser:
