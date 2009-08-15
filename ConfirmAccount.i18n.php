@@ -455,10 +455,10 @@ $messages['ar'] = array(
 	'requestaccount-bio' => 'السيرة الشخصية:',
 	'requestaccount-attach' => 'استكمال أو السيرة الذاتية (اختياري):',
 	'requestaccount-notes' => 'ملاحظات إضافية:',
-	'requestaccount-urls' => 'قائمة مواقع الويب، إن وجدت (افصل بسطور جديدة):',
+	'requestaccount-urls' => 'قائمة مواقع الوب، إن وجدت (افصل بسطور جديدة):',
 	'requestaccount-agree' => 'يجب أن تشهد أن اسمك الحقيقي صحيح وأنك توافق على شروط خدمتنا.',
 	'requestaccount-inuse' => 'اسم المستخدم مستعمل بالفعل في طلب حساب قيد الانتظار',
-	'requestaccount-tooshort' => 'سيرتك يجب أن تتكون على الأقل من $1 كلمة.',
+	'requestaccount-tooshort' => 'يجب أن يكون طول سيرتك على الأقل {{PLURAL:$1||كلمة واحدة|كلمتين|$1 كلمات|$1 كلمة}}.',
 	'requestaccount-emaildup' => 'طلب حساب آخر قيد الانتظار يستخدم نفس عنوان البريد الإلكتروني.',
 	'requestaccount-exts' => 'نوع الملف المرفق غير مسموح به.',
 	'requestaccount-resub' => 'ملف سيرتك الذاتية/استكمالك يجب أن يتم إعادة اختياره لأسباب أمنية.
@@ -481,9 +481,9 @@ $3
 	'requestaccount-email-subj-admin' => 'طلب حساب {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" طلب حسابا وينتظر التأكيد.
 عنوان البريد الإلكتروني تم تأكيده. يمكنك تأكيد الطلب هنا "$2".',
-	'acct_request_throttle_hit' => 'عذرا، لقد طلبت بالفعل {{PLURAL:$1|1 حساب|$1 حساب}}.
-لا يمكنك عمل المزيد من الطلبات.',
-	'requestaccount-loginnotice' => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
+	'acct_request_throttle_hit' => 'عذرا، لقد طلبت بالفعل {{PLURAL:$1||حسابًا واحدًا|حسابين|$1 حسابات|$1 حسابًا|$1 حساب}}.
+لا يمكنك إنشاء المزيد من الطلبات.',
+	'requestaccount-loginnotice' => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|أن تطلب حسابًا]]'''.",
 	'confirmaccount-newrequests' => "{{PLURAL:$1|يوجد|يوجد}} حاليا '''$1'''
 {{PLURAL:$1|[[Special:ConfirmAccounts|طلب حساب]]|[[Special:ConfirmAccounts|طلب حساب]]}} مفتوح قيد الانتظار.",
 	'confirmaccounts' => 'تأكيد طلبات الحسابات',
@@ -547,7 +547,7 @@ $3
 	'confirmaccount-bio' => 'السيرة الشخصية:',
 	'confirmaccount-attach' => 'الاستكمال/السيرة الذاتية:',
 	'confirmaccount-notes' => 'ملاحظات إضافية:',
-	'confirmaccount-urls' => 'قائمة مواقع الويب:',
+	'confirmaccount-urls' => 'قائمة مواقع الوب:',
 	'confirmaccount-none-p' => '(غير موفرة)',
 	'confirmaccount-confirm' => 'استخدم الخيارات بالأسفل لقبول، رفض، أو تأجيل هذا الطلب.',
 	'confirmaccount-econf' => '(تم تأكيده)',
@@ -556,13 +556,13 @@ $3
 	'confirmaccount-noreason' => '(لا شيء)',
 	'confirmaccount-autorej' => '(الطلب تم إلغاؤه آليا بسبب عدم النشاط)',
 	'confirmaccount-held' => '(تم التعليم "قيد الانتظار" بواسطة [[User:$1|$1]] في $2)',
-	'confirmaccount-create' => 'قبول (إنشاء الحساب)',
-	'confirmaccount-deny' => 'رفض (إزالة من القائمة)',
-	'confirmaccount-hold' => 'تأجيل',
+	'confirmaccount-create' => 'اقبل (أنشئ الحساب)',
+	'confirmaccount-deny' => 'ارفض (أزل من القائمة)',
+	'confirmaccount-hold' => 'أجّل',
 	'confirmaccount-spam' => 'سبام (لا ترسل البريد الإلكتروني)',
 	'confirmaccount-reason' => 'تعليق (سيضم في البريد الإلكتروني):',
 	'confirmaccount-ip' => 'عنوان الأيبي:',
-	'confirmaccount-submit' => 'تأكيد',
+	'confirmaccount-submit' => 'أكّد',
 	'confirmaccount-needreason' => 'يجب أن تحدد سببا في صندوق التعليق بالأسفل.',
 	'confirmaccount-canthold' => 'هذا الطلب بالفعل إما قيد الانتظار أو محذوف.',
 	'confirmaccount-acc' => 'طلب الحساب تم تأكيده بنجاح؛
@@ -2694,6 +2694,8 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
 	'usercredentials-member' => 'Oikeudet:',
 	'usercredentials-badid' => 'Tämän käyttäjän valtuutuksia ei löytynyt. Tarkista nimen oikeinkirjoitus.',
 	'right-confirmaccount' => 'Nähdä [[Special:ConfirmAccounts|listan pyydetyistä tunnuksista]]',
+	'right-requestips' => 'Näytä hakijan IP-osoitteet hänen pyytämiään käyttäjätilejä käsiteltäessä',
+	'right-lookupcredentials' => 'Näytä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]',
 );
 
 /** French (Français)
@@ -7281,7 +7283,7 @@ Imię i nazwisko będziesz mógł poprawić w [[Special:Preferences|preferencjac
 	'requestaccount-urls' => 'Lista adresów stron internetowych, jeśli posiadasz (każdy w osobnym wierszu):',
 	'requestaccount-agree' => 'Musisz potwierdzić, że wpisane imię i nazwisko są poprawne oraz, że zgadzasz się na warunki korzystania z {{GRAMMAR:D.lp|{{SITENAME}}}}.',
 	'requestaccount-inuse' => 'Nazwa użytkownika jest zajęta przez oczekujący wniosek o założenie konta.',
-	'requestaccount-tooshort' => 'Biografia musi mieć co najmniej {{PLURAL:$1|1 słowo|$1 słowa|$1 słów}}.',
+	'requestaccount-tooshort' => 'Biografia musi mieć co najmniej $1 {{PLURAL:$1|słowo|słowa|słów}}.',
 	'requestaccount-emaildup' => 'W innym oczekującym wniosku o założenie konta użytkownika wpisano taki sam adres e‐mail.',
 	'requestaccount-exts' => 'Niedozwolony typ załącznika.',
 	'requestaccount-resub' => 'Plik z Twoim życiorysem musi zostać ponownie wybrany ze względów bezpieczeństwa.
@@ -7442,6 +7444,9 @@ Jeśli chcesz dowiedzieć się więcej o zasadach tworzenia kont w serwisie, pos
 	'usercredentials-member' => 'Prawa:',
 	'usercredentials-badid' => 'Nie znaleziono informacji uwierzytelniających na temat tego użytkownika.
 Sprawdź, czy prawidłowo wpisałeś nazwę konta.',
+	'right-confirmaccount' => 'Przeglądanie [[Special:ConfirmAccounts|kolejki z wnioskami o założenie konta]]',
+	'right-requestips' => 'Widoczność adresów IP podczas przetwarzania wniosków o założenie konta',
+	'right-lookupcredentials' => 'Przeglądanie [[Special:UserCredentials|referencji użytkowników]]',
 );
 
 /** Piedmontese (Piemontèis)
