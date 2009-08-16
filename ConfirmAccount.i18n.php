@@ -2694,8 +2694,8 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
 	'usercredentials-member' => 'Oikeudet:',
 	'usercredentials-badid' => 'Tämän käyttäjän valtuutuksia ei löytynyt. Tarkista nimen oikeinkirjoitus.',
 	'right-confirmaccount' => 'Nähdä [[Special:ConfirmAccounts|listan pyydetyistä tunnuksista]]',
-	'right-requestips' => 'Näytä hakijan IP-osoitteet hänen pyytämiään käyttäjätilejä käsiteltäessä',
-	'right-lookupcredentials' => 'Näytä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]',
+	'right-requestips' => 'Nähdä hakijan IP-osoitteet käyttäjätilejä käsiteltäessä',
+	'right-lookupcredentials' => 'Nähdä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]',
 );
 
 /** French (Français)
@@ -5007,9 +5007,9 @@ $messages['ja'] = array(
 	'requestaccount-level-0' => '著者',
 	'requestaccount-level-1' => '編集者',
 	'requestaccount-bio' => '自己紹介:',
-	'requestaccount-attach' => '研究概要（レジュメ）や略歴（CV） (任意回答):',
+	'requestaccount-attach' => '研究概要（レジュメ）や略歴（CV） （任意回答）:',
 	'requestaccount-notes' => '特記事項:',
-	'requestaccount-urls' => 'ウェブサイト一覧 (任意回答、改行で区切ります):',
+	'requestaccount-urls' => 'ウェブサイト一覧 （任意回答、改行で区切ります）:',
 	'requestaccount-agree' => '本名が正しいこと、および、サービス利用規約に同意したことを宣誓していただく必要があります。',
 	'requestaccount-inuse' => 'この利用者名は、承認待ちのアカウントにて既に申請済みです。',
 	'requestaccount-tooshort' => "自己紹介は、最低限 $1個以上の単語で構成される必要があります。''（訳注：この機能は日本語版ではうまく動作しないかもしれません。あなたが管理者であるならば、この制約の使用に慎重であってください。あなたが一般利用者である場合、このサイトの管理者と相談してください。）''",
@@ -5100,8 +5100,8 @@ $3
 	'confirmaccount-econf' => '（確認済）',
 	'confirmaccount-reject' => '（$2、[[User:$1|$1]]によって棄却）',
 	'confirmaccount-rational' => '申請者に対して下された判断:',
-	'confirmaccount-noreason' => '(記述なし)',
-	'confirmaccount-autorej' => '(この申請は活動停止のため自動的に廃棄されました)',
+	'confirmaccount-noreason' => '（記述なし）',
+	'confirmaccount-autorej' => '（この申請は活動停止のため自動的に廃棄されました）',
 	'confirmaccount-held' => '（$2、[[User:$1|$1]]が"保留"の判断）',
 	'confirmaccount-create' => '承認（アカウント作成）',
 	'confirmaccount-deny' => '棄却（一覧から削除）',
@@ -8957,6 +8957,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Fluff
  * @author Jon Harald Søby
  * @author Lejonel
  * @author M.M.S.
@@ -9152,6 +9153,9 @@ Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill
 	'usercredentials-ip' => 'Ursprunglig IP-adress:',
 	'usercredentials-member' => 'Rättigheter:',
 	'usercredentials-badid' => 'Hittade inga referenser för denna användare. Kontrollera att namnet är rättstavat.',
+	'right-confirmaccount' => 'Visa [[Special:ConfirmAccounts|kön av kontoansökningar]]',
+	'right-requestips' => 'Visa sökandens IP-adress vid behandling av kontoansökningar',
+	'right-lookupcredentials' => 'Visa [[Special:UserCredentials|användaruppgifter]]',
 );
 
 /** Silesian (Ślůnski)
@@ -10181,11 +10185,11 @@ $messages['zh-hans'] = array(
 	'requestaccount-bio-text' => '您传记将会设置成在您用户页中的预设内容。尝试包含任何的凭据。
 	而且你是肯定您是可以发布这些资料。您的名字可以通过[[Special:Preferences]]更改。',
 	'requestaccount-real' => '真实名字:',
-	'requestaccount-same' => '(同真实名字)',
+	'requestaccount-same' => '（同真实名字）',
 	'requestaccount-email' => '电邮地址:',
 	'requestaccount-bio' => '个人传记:',
 	'requestaccount-notes' => '附加注解:',
-	'requestaccount-urls' => '网站列表，如有者 (以新行分开):',
+	'requestaccount-urls' => '网站列表，如有者 （以新行分开）:',
 	'requestaccount-agree' => '您一定要证明到您的真实名字是正确的，而且您同意我们的服务细则。',
 	'requestaccount-inuse' => '该用户名已经用来请求账户。',
 	'requestaccount-tooshort' => '您的传记必须最少有$1个字的长度。',
@@ -10222,18 +10226,18 @@ $3
 	'confirmaccount-bio' => '传记',
 	'confirmaccount-urls' => '网站列表:',
 	'confirmaccount-confirm' => '用以下的按钮去批准或拒绝这个请求。',
-	'confirmaccount-econf' => '(已批准)',
-	'confirmaccount-reject' => '(于$2被[[User:$1|$1]]拒绝)',
-	'confirmaccount-create' => '接受 (创建账户)',
-	'confirmaccount-deny' => '拒绝 (反列示)',
-	'confirmaccount-reason' => '注解 (在电邮中使用):',
+	'confirmaccount-econf' => '（已批准）',
+	'confirmaccount-reject' => '（于$2被[[User:$1|$1]]拒绝）',
+	'confirmaccount-create' => '接受 （创建账户）',
+	'confirmaccount-deny' => '拒绝 （反列示）',
+	'confirmaccount-reason' => '注解 （在电邮中使用）:',
 	'confirmaccount-submit' => '确认',
 	'confirmaccount-acc' => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
 	'confirmaccount-rej' => '账户请求已经成功拒绝。',
 	'confirmaccount-summary' => '正在创建一个新用户拥有传记的用户页面。',
 	'confirmaccount-welc' => "'''欢迎来到''{{SITENAME}}''！'''我们希望您会作出更多更好的贡献。
 	您可能会去参看[[{{MediaWiki:Helppage}}|开始]]。再一次欢迎你！
-	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 (UTC)",
+	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 （UTC）",
 	'confirmaccount-wsum' => '欢迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}账户请求',
 	'confirmaccount-email-body' => '您请求的账户已经在{{SITENAME}}中批准。
@@ -10278,11 +10282,11 @@ $messages['zh-hant'] = array(
 	'requestaccount-bio-text' => '您傳記將會設定成在您用戶頁中的預設內容。嘗試包含任何的憑據。
 	而且你是肯定您是可以發佈這些資料。您的名字可以透過[[Special:Preferences]]更改。',
 	'requestaccount-real' => '真實名字:',
-	'requestaccount-same' => '(同真實名字)',
+	'requestaccount-same' => '（同真實名字）',
 	'requestaccount-email' => '電郵地址:',
 	'requestaccount-bio' => '個人傳記:',
 	'requestaccount-notes' => '附加註解:',
-	'requestaccount-urls' => '網站列表，如有者 (以新行分開):',
+	'requestaccount-urls' => '網站列表，如有者 （以新行分開）:',
 	'requestaccount-agree' => '您一定要證明到您的真實名字是正確的，而且您同意我們的服務細則。',
 	'requestaccount-inuse' => '該用戶名已經用來請求帳戶。',
 	'requestaccount-tooshort' => '您的傳記必須最少有$1個字的長度。',
@@ -10319,18 +10323,18 @@ $3
 	'confirmaccount-bio' => '傳記',
 	'confirmaccount-urls' => '網站列表:',
 	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。',
-	'confirmaccount-econf' => '(已批准)',
-	'confirmaccount-reject' => '(於$2被[[User:$1|$1]]拒絕)',
-	'confirmaccount-create' => '接受 (創建帳戶)',
-	'confirmaccount-deny' => '拒絕 (反列示)',
-	'confirmaccount-reason' => '註解 (在電郵中使用):',
+	'confirmaccount-econf' => '（已批准）',
+	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]拒絕）',
+	'confirmaccount-create' => '接受 （創建帳戶）',
+	'confirmaccount-deny' => '拒絕 （反列示）',
+	'confirmaccount-reason' => '註解 （在電郵中使用）:',
 	'confirmaccount-submit' => '確認',
 	'confirmaccount-acc' => '帳戶請求已經成功確認；已經創建一個新的用戶帳號[[User:$1]]。',
 	'confirmaccount-rej' => '帳戶請求已經成功拒絕。',
 	'confirmaccount-summary' => '正在創建一個新用戶擁有傳記的用戶頁面。',
 	'confirmaccount-welc' => "'''歡迎來到''{{SITENAME}}''！'''我們希望您會作出更多更好嘅貢獻。
 	您可能會去參看[[{{MediaWiki:Helppage}}|開始]]。再一次歡迎你！
-	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 (UTC)",
+	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 （UTC）",
 	'confirmaccount-wsum' => '歡迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}帳戶請求',
 	'confirmaccount-email-body' => '您請求的帳戶已經在{{SITENAME}}中批准。
