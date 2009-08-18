@@ -156,7 +156,7 @@ function efConfirmAccountInjectStyle() {
 	$wgOut->addLink( array(
 		'rel'	=> 'stylesheet',
 		'type'	=> 'text/css',
-		'media'	=> 'screen, projection',
+		'media'	=> 'screen',
 		'href'	=> $wgScriptPath . '/extensions/ConfirmAccount/confirmaccount.css',
 	) );
 	return true;
