@@ -629,6 +629,7 @@ $2
 تأكد من أن الاسم مكتوب بطريقة صحيحة.',
 	'right-confirmaccount' => 'عرض [[Special:ConfirmAccounts|طابور الحسابات المطلوبة]]',
 	'right-requestips' => 'عرض عنوان آيبي الطالب أثناء العمل على الحسابات المطلوبة',
+	'right-lookupcredentials' => 'رؤية [[Special:UserCredentials|شهادات المستخدم]]',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -2070,13 +2071,18 @@ $messages['ee'] = array(
  * @author ZaDiak
  */
 $messages['el'] = array(
+	'requestaccount' => 'Αίτηση λογαριασμού',
+	'requestaccount-page' => '{{ns:project}}:Όροι Χρήσης',
 	'requestaccount-leg-user' => 'Λογαριασμός χρήστη',
 	'requestaccount-leg-person' => 'Προσωπικές πληροφορίες',
 	'requestaccount-leg-other' => 'Άλλες πληροφορίες',
+	'requestaccount-leg-tos' => 'Όροι Χρήσης',
 	'requestaccount-real' => 'Πραγματικό όνομα:',
 	'requestaccount-email' => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
 	'requestaccount-reqtype' => 'Θέση:',
 	'requestaccount-bio' => 'Προσωπική βιογραφία:',
+	'requestaccount-notes' => 'Συμπληρωματικές σημειώσεις:',
+	'requestaccount-submit' => 'Αίτηση λογαριασμού',
 	'confirmaccount-real-q' => 'Όνομα',
 	'confirmaccount-email-q' => 'Ηλεκτρονικό Ταχυδρομείο:',
 	'confirmaccount-bio-q' => 'Βιογραφία',
@@ -2095,6 +2101,7 @@ $messages['el'] = array(
 	'confirmaccount-pos-0' => 'συγγραφέας',
 	'confirmaccount-pos-1' => 'επεξεργαστής',
 	'confirmaccount-bio' => 'Βιογραφία:',
+	'confirmaccount-notes' => 'Συμπληρωματικές σημειώσεις:',
 	'confirmaccount-urls' => 'Λίστα των ιστοσελίδων:',
 	'confirmaccount-none-p' => '(δεν παρέχεται)',
 	'confirmaccount-econf' => '(επιβεβαιωμένοι)',
@@ -2105,6 +2112,24 @@ $messages['el'] = array(
 	'confirmaccount-submit' => 'Επιβεβαίωση',
 	'confirmaccount-wsum' => 'Καλός ήρθατε!',
 	'confirmaccount-email-subj' => 'Ζήτηση λογαριασμού στο {{SITENAME}}',
+	'confirmaccount-email-body' => 'Το αίτημα σας για δημιουργία λογαριασμού έχει εγκριθεί στο {{SITENAME}}.
+
+Όνομα λογαριασμού: $1
+
+Κωδικός πρόσβασης: $2
+
+Για λόγους ασφαλείας θα πρέπει να αλλάξετε τον κωδικό πρόσβασης κατά την πρώτη σύνδεση.
+Για να συνδεθείτε, παρακαλούμε πηγαίνετε στο {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Το αίτημα σας για δημιουργία λογαριασμού έχει εγκριθεί στο {{SITENAME}}.
+
+Όνομα λογαριασμού: $1
+
+Κωδικός πρόσβασης: $2
+
+$3
+
+Για λόγους ασφαλείας θα πρέπει να αλλάξετε τον κωδικό πρόσβασης κατά την πρώτη σύνδεση.
+Για να συνδεθείτε, παρακαλούμε πηγαίνετε στο {{fullurl:Special:UserLogin}}.',
 	'usercredentials' => 'Διαπιστευτήρια χρήστη',
 	'usercredentials-user' => 'Όνομα χρήστη:',
 	'usercredentials-leg-user' => 'Λογαριασμός χρήστη',
@@ -2113,6 +2138,7 @@ $messages['el'] = array(
 	'usercredentials-email' => 'Ηλεκτρονικό ταχυδρομείο:',
 	'usercredentials-real' => 'Πραγματικό όνομα:',
 	'usercredentials-bio' => 'Βιογραφία:',
+	'usercredentials-notes' => 'Συμπληρωματικές σημειώσεις:',
 	'usercredentials-urls' => 'Λίστα ιστοσελίδων:',
 	'usercredentials-member' => 'Δικαιώματα:',
 );
@@ -5374,6 +5400,14 @@ $3
 	'usercredentials-member' => 'សិទ្ធិ​៖',
 );
 
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'confirmaccount-real-q' => 'ಹೆಸರು',
+	'confirmaccount-real' => 'ಹೆಸರು:',
+);
+
 /** Korean (한국어)
  * @author Kwj2772
  */
@@ -7067,7 +7101,7 @@ $messages['oc'] = array(
 	'requestaccount-bio' => 'Biografia personala :',
 	'requestaccount-attach' => 'CV/Resumit (facultatiu)',
 	'requestaccount-notes' => 'Nòtas suplementàrias :',
-	'requestaccount-urls' => "Lista dels sits Web. Se n'i a mantun, separatz-los per un saut de linha :",
+	'requestaccount-urls' => "Lista dels sites Web. Se n'i a mai d'un, separatz-los per un saut de linha :",
 	'requestaccount-agree' => "Vos cal certificar que vòstre nom vertadièr es corrècte e qu'acceptatz las condicions d’utilizacion del servici.",
 	'requestaccount-inuse' => 'Lo nom d’utilizaire es ja utilizat dins una requèsta en cors d’aprobacion.',
 	'requestaccount-tooshort' => 'Vòstra biografia deu aver almens $1 {{PLURAL:$1|mot|mots}}.',
@@ -7145,7 +7179,7 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-bio' => 'Biografia :',
 	'confirmaccount-attach' => 'CV/Resumit :',
 	'confirmaccount-notes' => 'Nòtas suplementàrias :',
-	'confirmaccount-urls' => 'Lista dels sits web :',
+	'confirmaccount-urls' => 'Lista dels sites web :',
 	'confirmaccount-none-p' => '(pas provesit)',
 	'confirmaccount-confirm' => 'Utilizatz los botons çaijós per acceptar o regetar la demanda.',
 	'confirmaccount-econf' => '(confirmat)',
@@ -7181,7 +7215,7 @@ Benvenguda encara e bona contribucions.",
 
 $2
 
-Aquò permetís d’èsser sus la tièraa dels contactes del sit, se desiratz ne saber mai sus las règlas que concernisson los comptes.',
+Aquò permet d’èsser sus la tièra dels contactes del site, se ne desiratz saber mai sus las règlas que concernisson los comptes.',
 	'usercredentials' => "Referéncias de l'utilizaire",
 	'usercredentials-leg' => "Verificacion confirmada de las referéncias d'un utilizaire.",
 	'usercredentials-user' => "Nom d'utilizaire :",
@@ -7195,7 +7229,7 @@ Aquò permetís d’èsser sus la tièraa dels contactes del sit, se desiratz ne
 	'usercredentials-bio' => 'Biografia :',
 	'usercredentials-attach' => 'CV/Resumit :',
 	'usercredentials-notes' => 'Nòtas suplementàrias :',
-	'usercredentials-urls' => 'Lista dels sits internet :',
+	'usercredentials-urls' => 'Lista dels sites internet :',
 	'usercredentials-ip' => 'Adreça IP iniciala :',
 	'usercredentials-member' => 'Dreches :',
 	'usercredentials-badid' => 'Cap de referéncia pas trobada per aqueste utilizaire. Verificatz que lo nom siá ben redigit.',
