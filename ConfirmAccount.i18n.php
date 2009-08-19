@@ -8137,6 +8137,7 @@ $messages['roa-tara'] = array(
 /** Russian (Русский)
  * @author Ferrer
  * @author Kaganer
+ * @author Kv75
  * @author Lockal
  * @author Александр Сигачёв
  */
@@ -8337,7 +8338,7 @@ $2
 	'usercredentials-badid' => 'Не найдена удостоверяющая информация об участнике. Проверьте правильность написания имени.',
 	'right-confirmaccount' => 'просмотр [[Special:ConfirmAccounts|запросов на создание учётных записей]]',
 	'right-requestips' => 'Просмотр IP-адресов авторов запросов на создание учётных записей',
-	'right-lookupcredentials' => 'просмотр [[Special:UserCredentials|удостоверений личности участников]]',
+	'right-lookupcredentials' => 'просмотр [[Special:UserCredentials|удостоверяющей информации об участниках]]',
 );
 
 /** Slovak (Slovenčina)
@@ -9271,7 +9272,7 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}} ఖాతా అభ్యర్థన',
 	'requestaccount-email-body-admin' => '"$1" ఓ ఖాతా కావాలని అడిగి నిర్ధారణ కోసం చూస్తున్నారు.
 ఈ-మెయిలు అడ్రసు నిర్ధారణైంది. మీ అభ్యర్ధనను "$2" వద్ద నిర్ధారించవచ్చు.',
-	'acct_request_throttle_hit' => 'క్షమించండి, మీరిప్పటికే $1 ఖాతాలను అభ్యర్ధించారు. ఇంకా ఎక్కవ అభ్యర్థనలు చెయ్యలేరు.',
+	'acct_request_throttle_hit' => 'క్షమించండి, మీరిప్పటికే {{PLURAL:$1|1 ఖాతాను|$1 ఖాతాలను}} అభ్యర్ధించారు. ఇంకా ఎక్కవ అభ్యర్థనలు చెయ్యలేరు.',
 	'requestaccount-loginnotice' => "ఖాతా పొందడానికి, మీరు తప్పనిసరిగా '''[[Special:RequestAccount|అభ్యర్థించాలి]]'''.",
 	'confirmaccount-newrequests' => "ప్రస్తుతం '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థన]]|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థనలు]]}} వేచి{{PLURAL:$1|వుంది|వున్నాయి}}.",
 	'confirmaccounts' => 'ఖాతా అభ్యర్థనలను నిర్ధారించండి',
@@ -9310,6 +9311,7 @@ $3
 	'confirmaccount-pos-0' => 'రచయిత',
 	'confirmaccount-pos-1' => 'రచయిత',
 	'confirmaccount-bio' => 'బయోగ్రఫీ:',
+	'confirmaccount-attach' => 'రెస్యూమె/సీవీ:',
 	'confirmaccount-notes' => 'అదనపు గమనికలు:',
 	'confirmaccount-urls' => 'వెబ్ సైట్ల జాబితా:',
 	'confirmaccount-none-p' => '(ఇవ్వలేదు)',
@@ -9368,7 +9370,7 @@ $2
 	'usercredentials-email' => 'ఈ-మెయిల్:',
 	'usercredentials-real' => 'నిజమైన పేరు:',
 	'usercredentials-bio' => 'బయోగ్రఫీ:',
-	'usercredentials-attach' => 'రెస్యూమె/CV:',
+	'usercredentials-attach' => 'రెస్యూమె/సీవీ:',
 	'usercredentials-notes' => 'అదనపు గమనికలు:',
 	'usercredentials-urls' => 'వెబ్&zwnj;సైట్ల జాబితా:',
 	'usercredentials-ip' => 'అసలు IP చిరునామా:',
