@@ -5422,7 +5422,10 @@ $3
  */
 $messages['kn'] = array(
 	'confirmaccount-real-q' => 'ಹೆಸರು',
+	'confirmaccount-email-q' => 'ಇ-ಅಂಚೆ',
 	'confirmaccount-real' => 'ಹೆಸರು:',
+	'confirmaccount-email' => 'ಇ-ಅಂಚೆ:',
+	'usercredentials-email' => 'ಇ-ಅಂಚೆ:',
 );
 
 /** Korean (한국어)
