@@ -357,6 +357,7 @@ $messages['niu'] = array(
  * @author SPQRobin
  */
 $messages['af'] = array(
+	'requestaccount' => 'Versoek gebruikersrekening',
 	'requestaccount-leg-areas' => 'Gebiede van belangstelling',
 	'requestaccount-leg-person' => 'Persoonlike inligting',
 	'requestaccount-leg-other' => 'Ander inligting',
@@ -366,10 +367,16 @@ $messages['af'] = array(
 	'requestaccount-level-0' => 'outeur',
 	'requestaccount-level-1' => 'redakteur',
 	'requestaccount-notes' => 'Addisionele notas:',
+	'requestaccount-submit' => 'Versoek gebruikersrekening',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} gebruikersversoeke',
 	'confirmaccount-real-q' => 'Naam',
 	'confirmaccount-email-q' => 'E-pos',
 	'confirmaccount-bio-q' => 'Biografie',
+	'confirmaccount-showopen' => 'oop versoeke',
+	'confirmaccount-showheld' => 'afgehandelde versoeke',
 	'confirmaccount-showexp' => 'vervalle versoeke',
+	'confirmaccount-q-open' => 'oop versoeke',
+	'confirmaccount-q-held' => 'afgehandelde versoeke',
 	'confirmaccount-q-stale' => 'vervalle versoeke',
 	'confirmaccount-leg-areas' => 'Gebiede van belangstelling',
 	'confirmaccount-leg-person' => 'Persoonlike inligting',
@@ -384,9 +391,11 @@ $messages['af'] = array(
 	'confirmaccount-attach' => 'Resumé/CV (inligting oor u):',
 	'confirmaccount-notes' => 'Addisionele notas:',
 	'confirmaccount-urls' => 'Lys van webruimtes:',
+	'confirmaccount-none-p' => '(nie verskaf nie)',
 	'confirmaccount-noreason' => '(geen)',
 	'confirmaccount-ip' => 'IP-adres:',
 	'confirmaccount-submit' => 'Bevestig',
+	'confirmaccount-email-subj' => '{{SITENAME}} gebruikersversoek',
 	'usercredentials-user' => 'Gebruikersnaam:',
 	'usercredentials-leg-areas' => 'Gebiede van belangstelling',
 	'usercredentials-leg-person' => 'Persoonlike inligting',
@@ -8526,7 +8535,7 @@ Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak s
 	'right-lookupcredentials' => 'Zobraziť [[Special:UserCredentials|údaje používateľa]]',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
  */
