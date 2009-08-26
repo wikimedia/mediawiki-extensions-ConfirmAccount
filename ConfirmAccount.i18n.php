@@ -1346,6 +1346,7 @@ $messages['bs'] = array(
 	'requestaccount-leg-areas' => 'Glavna područja interesa',
 	'requestaccount-leg-person' => 'Lične informacije',
 	'requestaccount-leg-other' => 'Ostale informacije',
+	'requestaccount-leg-tos' => 'Uslovi usluge',
 	'requestaccount-real' => 'Pravo ime:',
 	'requestaccount-same' => '(isto kao i pravo ime)',
 	'requestaccount-email' => 'E-mail adresa:',
@@ -1353,6 +1354,7 @@ $messages['bs'] = array(
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'uređivač',
 	'requestaccount-bio' => 'Lična biografija:',
+	'requestaccount-attach' => 'Biografija (opcionalno):',
 	'requestaccount-notes' => 'Dodatne napomene:',
 	'requestaccount-urls' => 'Spisak web stranica, ako ih ima (odvojiti sa novim redovima):',
 	'requestaccount-agree' => 'Morate potvrditi da je ovo Vaše pravo ime i da prihvatate naša Pravila usluga.',
@@ -1362,7 +1364,10 @@ $messages['bs'] = array(
 	'requestaccount-submit' => 'Zahtjevaj račun',
 	'requestaccount-sent' => 'Vaš zahtjev za račun je uspješno poslan i sada očekuje provjeru.',
 	'request-account-econf' => 'Vaša e-mail adresa je potvrđena i bit će prikazana kako je navedeno u Vašem zahjevu za račun.',
+	'requestaccount-email-subj' => '{{SITENAME}} e-mail adresa potvrde',
 	'requestaccount-email-subj-admin' => 'Zahtjev za račun na {{SITENAME}}',
+	'acct_request_throttle_hit' => 'Žao nam je, već ste zahtjevali otvaranje {{PLURAL:$1|1 računa|$1 računa}}.
+Ne možete podnositi više zahtjeva.',
 	'confirmaccounts' => 'Potvrdi zahtjeve za račun',
 	'confirmedit-desc' => 'Daje mogućnost birokratima da potvrde zahtjeve za računima',
 	'confirmaccount-none-o' => 'Trenutno nema otvorenih zahtjeva na račun na čekanju na ovom spisku.',
@@ -1372,14 +1377,19 @@ $messages['bs'] = array(
 	'confirmaccount-showopen' => 'otvoreni zahtjevi',
 	'confirmaccount-showrej' => 'odbijeni zahtjevi',
 	'confirmaccount-all' => '(pokaži sve na čekanju)',
+	'confirmaccount-type' => 'Red:',
 	'confirmaccount-leg-user' => 'Korisnički račun',
 	'confirmaccount-leg-areas' => 'Glavne oblasti interesovanja',
+	'confirmaccount-leg-other' => 'Ostale informacije',
 	'confirmaccount-name' => 'Korisničko ime',
 	'confirmaccount-real' => 'Ime:',
 	'confirmaccount-email' => 'E-mail:',
 	'confirmaccount-reqtype' => 'Pozicija:',
 	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-bio' => 'Biografija:',
+	'confirmaccount-attach' => 'Biografija:',
 	'confirmaccount-urls' => 'Spisak web sajtova:',
+	'confirmaccount-econf' => '(potvrđen)',
 	'confirmaccount-create' => 'Prihvati (napravi račun)',
 	'confirmaccount-deny' => 'Odbij (skini sa spiska)',
 	'confirmaccount-ip' => 'IP adresa:',
@@ -1402,6 +1412,7 @@ Da bi ste se prijaviti, molimo idite na {{fullurl:Special:UserLogin}}.',
 	'usercredentials-leg-other' => 'Ostale informacije',
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Pravo ime:',
+	'usercredentials-attach' => 'Biografija:',
 	'usercredentials-member' => 'Prava:',
 );
 
@@ -5775,12 +5786,12 @@ $messages['la'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'requestaccount' => 'Benotzerkont ufroën',
+	'requestaccount' => 'Benotzerkont ufroen',
 	'requestaccount-text' => "'''Fëllt dëse Formulaire aus a schéckt e fort fir e Benotzerkont unzefroen'''.
 
-Passt op datt dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Conditioune vun der Notzung]] geliest hutt éier Dir e Benotzerkont ufrot.
+Passt op datt Dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Conditioune vun der Notzung]] gelies hutt éier Dir e Benotzerkont ufrot.
 
-Wann äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt äre Benotzerkont op [[Special:UserLogin|benotzen]].",
+Wann Äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt Äre Benotzerkont  [[Special:UserLogin|benotzen]].",
 	'requestaccount-page' => '{{ns:project}}:Notzungsbedingungen',
 	'requestaccount-dup' => "'''Opgepasst: Dir sidd scho matt engem registréierte Benotzerkont ugemellt.'''",
 	'requestaccount-leg-user' => 'Benotzerkont',
@@ -5811,13 +5822,13 @@ Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wë
 	'requestaccount-agree' => "Dir musst confirméieren datt är E-Mailadress richteg ass and datt dir mat den Allgemenge Konditiounen d'Accord sitt.",
 	'requestaccount-inuse' => 'De Benotzernumm ass scho bei enger anerer Benotzerufro a Gebrauch.',
 	'requestaccount-tooshort' => 'Är Biographie muss mindestens $1 {{PLURAL:$1|Wuert|Wierder}} hunn.',
-	'requestaccount-emaildup' => 'En aneren ugefrote Benotzerkont benotzt déi selwescht E-Mailadress.',
+	'requestaccount-emaildup' => 'En anere Benotzerkont deen ugefrot gouf benotzt déi selwecht E-Mailadress.',
 	'requestaccount-exts' => "De Fichierstyp vum ''Attachment'' ass net erlaabt.",
 	'requestaccount-resub' => "De Fichier mat ärem CV muss aus Sécherheetsgrënn nachemol nei erausgesicht ginn.
 Loosst d'Feld eidel wann Dir elo keen CV abanne wëllt.",
 	'requestaccount-tos' => 'Ech hunn d\'[[{{MediaWiki:Requestaccount-page}}|Benotzungsbedingunge]] vu(n) {{SITENAME}} geliest an akzeptéieren se.
 Den Numm den ech bäi "Richtege Numm" uginn hunn ass mäin eegene richtegen Numm.',
-	'requestaccount-submit' => 'Benotzerkont ufroën',
+	'requestaccount-submit' => 'Benotzerkont ufroen',
 	'requestaccount-sent' => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.',
 	'request-account-econf' => 'Är E-Mailadress gouf confirméiert a gëtt elo als E-Mailadress an är Ufro fir e Benotzerkont integréiert.',
 	'requestaccount-email-subj' => '{{SITENAME}} Konfirmatioun vun der E-Mail-Adress',
@@ -5884,7 +5895,7 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-canthold' => "Dës Ufro ass schonn entweder 'en-cours' oder geläscht.",
 	'confirmaccount-acc' => 'Benotzerkont-Ufro gouf confirméiert;
 de Benotzerkont [[User:$1|$1]] gouf ugeluecht.',
-	'confirmaccount-rej' => "D'Ufro fir ee Benotzerkont gouf refüséiert.",
+	'confirmaccount-rej' => "D'Ufro fir ee Benotzerkont gouf refuséiert.",
 	'confirmaccount-viewing' => '(gëtt elo gekuckt vum [[User:$1|$1]])',
 	'confirmaccount-summary' => "D'Benotzersäit mat der Biographie vum neie Benotzer gëtt elo gemaach.",
 	'confirmaccount-welc' => "'''Wëllkomm op ''{{SITENAME}}''!'''
