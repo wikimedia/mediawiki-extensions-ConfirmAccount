@@ -2114,6 +2114,7 @@ $messages['el'] = array(
 	'confirmaccount-real-q' => 'Όνομα',
 	'confirmaccount-email-q' => 'Ηλεκτρονικό Ταχυδρομείο:',
 	'confirmaccount-bio-q' => 'Βιογραφία',
+	'confirmaccount-review' => 'Επιθεώρηση',
 	'confirmaccount-type' => 'Ουρά:',
 	'confirmaccount-q-open' => 'ανοικτές αιτήσεις',
 	'confirmaccount-q-held' => 'κράτησε αιτήσεις',
@@ -2129,6 +2130,7 @@ $messages['el'] = array(
 	'confirmaccount-pos-0' => 'συγγραφέας',
 	'confirmaccount-pos-1' => 'επεξεργαστής',
 	'confirmaccount-bio' => 'Βιογραφία:',
+	'confirmaccount-attach' => 'Βιογραφικό:',
 	'confirmaccount-notes' => 'Συμπληρωματικές σημειώσεις:',
 	'confirmaccount-urls' => 'Λίστα των ιστοσελίδων:',
 	'confirmaccount-none-p' => '(δεν παρέχεται)',
@@ -5837,9 +5839,9 @@ Den Numm den ech bäi "Richtege Numm" uginn hunn ass mäin eegene richtegen Numm
 D\'E-mailadresse ass confirméiert. Dir kënnt déi Ufro hei "$2" confirméieren.',
 	'acct_request_throttle_hit' => 'Pardon, Dir hutt schonns {{PLURAL:$1|1Benotzerkont|$1 Benotzerkonten}} ugefrot.
 Dir kënnt elo keng weider Ufroe méi maachen.',
-	'requestaccount-loginnotice' => "Fir e Benitzerkont ze kréiene, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
+	'requestaccount-loginnotice' => "Fir e Benotzerkont ze kréien, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
 	'confirmaccounts' => 'Ufroe vu Benotzerkonte confirméieren',
-	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeeten fir Ufroe vu Benotzerkonten ze confirméieren",
+	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeet fir Ufroe vu Benotzerkonten ze confirméieren",
 	'confirmaccount-list' => "Hei ass d'Lëscht vun den Ufroe fir e Benotzerkont déi nach autoriséiert musse ginn.
 Wann eng Ufro entweder autoriséiert oder refuséiert ass gëtt se vun der Lëscht erofgeholl.",
 	'confirmaccount-list3' => 'Hei ënnendrënner ass eng Lëscht vun ofgelafenen Ufroe fir Benotzerkonten déi bannert e puer Deeg automatesch geläscht ginn.
@@ -5935,7 +5937,7 @@ Méiglecherweis gëtt et Kontaktlëschten op dem Site déi Dir benotze kënnt wa
 	'usercredentials-leg-person' => 'Perséinlech Informatiounen',
 	'usercredentials-leg-other' => 'Aner Informatiounen',
 	'usercredentials-email' => 'E-mail:',
-	'usercredentials-real' => 'Richtege Numm:',
+	'usercredentials-real' => 'Richtegen Numm:',
 	'usercredentials-bio' => 'Biographie:',
 	'usercredentials-attach' => 'Liewenslaf:',
 	'usercredentials-notes' => 'Zousätzlech Bemierkungen:',
