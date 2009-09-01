@@ -4734,7 +4734,25 @@ $3
 
 Untuk alasan keamanan Anda harus mengubah kata sandi Anda pada saat masuk log pertama kali.
 Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3' => 'Maaf, permintaan Anda untuk akun "$1" telah ditolak oleh {{SITENAME}}.
+
+Ada beberapa kemungkinan ini bisa terjadi. 
+Anda mungkin tidak mengisi formulir dengan benar, tidak memberikan cukup keterangan dalam jawaban Anda, atau gagal memenuhi beberapa kriteria kebijakan. 
+Mungkin ada daftar kontak di situs yang dapat Anda gunakan jika Anda ingin tahu lebih banyak tentang kebijakan akun pengguna.',
+	'confirmaccount-email-body4' => 'Maaf, permintaan anda untuk akun "$1" telah ditolak oleh {{SITENAME}}.
+
+$2
+
+Mungkin ada daftar kontak di situs yang dapat Anda gunakan jika Anda ingin tahu lebih banyak tentang kebijakan account pengguna.',
+	'confirmaccount-email-body5' => 'Sebelum permintaan anda untuk akun "$1"  dapat diterima oleh {{SITENAME}} anda harus mengisi beberapa informasi tambahan.
+
+$2
+
+Mungkin ada daftar kontak di situs yang dapat Anda gunakan jika Anda ingin tahu lebih banyak tentang kebijakan account pengguna.',
+	'usercredentials' => 'Kredensial pengguna',
+	'usercredentials-leg' => 'Lihat konfirmasi Kredensial untuk pengguna',
 	'usercredentials-user' => 'Nama pengguna:',
+	'usercredentials-text' => 'Berikut adalah Kredensial yang sah untuk akun pengguna terpilih.',
 	'usercredentials-leg-user' => 'Akun pengguna',
 	'usercredentials-leg-areas' => 'Bidang utama yang diminati',
 	'usercredentials-leg-person' => 'Informasi pribadi',
@@ -4745,6 +4763,13 @@ Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
 	'usercredentials-attach' => 'Resume/CV:',
 	'usercredentials-notes' => 'Catatan tambahan:',
 	'usercredentials-urls' => 'Daftar situs web:',
+	'usercredentials-ip' => 'Alamat IP asal:',
+	'usercredentials-member' => 'Hak:',
+	'usercredentials-badid' => 'Tidak ditemukan Kredensial untuk pengguna ini,
+Periksa! apakah nama dieja dengan benar.',
+	'right-confirmaccount' => 'Lihat [[Special:ConfirmAccounts|antrian peminta akun]]',
+	'right-requestips' => 'Lihat Alamat IP pemohon selama proses permohonan akun',
+	'right-lookupcredentials' => 'Lihat [[Special:UserCredentials|pengguna  Kredensial]]',
 );
 
 /** Ido (Ido)
