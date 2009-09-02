@@ -134,7 +134,7 @@ function efAddRequestLoginText( &$template ) {
 	return true;
 }
 
-function efCheckIfAccountNameIsPending( &$user, &$abortError ) {
+function efCheckIfAccountNameIsPending( $user, &$abortError ) {
 	# If an account is made with name X, and one is pending with name X
 	# we will have problems if the pending one is later confirmed
 	$dbw = wfGetDB( DB_MASTER );
