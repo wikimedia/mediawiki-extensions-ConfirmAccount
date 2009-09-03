@@ -7182,7 +7182,7 @@ Aqueste còde de confirmacion expira lo $4.",
 	'requestaccount-email-subj-admin' => 'Demanda de compte sus {{SITENAME}}',
 	'requestaccount-email-body-admin' => "« $1 » a demandat un compte e se tròba en espèra de confirmacion.
 
-L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprobar la demanda aicí « $2 ».",
+L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprovar la demanda aicí « $2 ».",
 	'acct_request_throttle_hit' => 'O planhèm, ja avètz demandat {{PLURAL:$1|1 compte|$1 comptes}}.
 Podètz pas far mai de demanda.',
 	'requestaccount-loginnotice' => "Per obténer un compte d'utilizaire, vos ne cal far '''[[Special:RequestAccount|la demanda]]'''.",
@@ -7246,7 +7246,7 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-noreason' => '(nonrés)',
 	'confirmaccount-autorej' => '(Aquesta requèsta es estada abandonada automaticament per causa d’abséncia d’activitat)',
 	'confirmaccount-held' => 'Marcat « detengut » per [[User:$1|$1]] sus $2',
-	'confirmaccount-create' => 'Aprobacion (crea lo compte)',
+	'confirmaccount-create' => 'Aprovacion (crèa lo compte)',
 	'confirmaccount-deny' => 'Regèt (suprimís lo compte)',
 	'confirmaccount-hold' => 'Detengut',
 	'confirmaccount-spam' => 'Spam (mandetz pas de corrièr electronic)',
