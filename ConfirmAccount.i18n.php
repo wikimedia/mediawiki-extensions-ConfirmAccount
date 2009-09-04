@@ -3301,6 +3301,7 @@ $messages['grc'] = array(
 	'confirmaccount-reqtype' => 'Θέσις:',
 	'confirmaccount-pos-0' => 'δημιουργός',
 	'confirmaccount-pos-1' => 'μεταγραφεύς',
+	'confirmaccount-bio' => 'Βιογραφία:',
 	'confirmaccount-noreason' => '(οὐδεμία)',
 	'confirmaccount-ip' => 'Διεύθυνσις IP:',
 	'confirmaccount-submit' => 'Κυροῦν',
