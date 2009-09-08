@@ -125,11 +125,11 @@ $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 $wgExtensionAliasesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.alias.php';
 
-function efAddRequestLoginText( &$sp ) {
+function efAddRequestLoginText( &$template ) {
 	global $wgUser;
 	wfLoadExtensionMessages( 'ConfirmAccount' );
 	if ( !$wgUser->isAllowed( 'createaccount' ) ) {
-		$sp->mFormHeader .= wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) );
+		$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) ) );
 	}
 	return true;
 }
