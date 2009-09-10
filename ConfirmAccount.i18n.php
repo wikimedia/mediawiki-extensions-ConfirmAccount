@@ -2116,6 +2116,7 @@ $messages['el'] = array(
 	'requestaccount-attach' => 'Βιογραφικό (προαιρετικό):',
 	'requestaccount-notes' => 'Συμπληρωματικές σημειώσεις:',
 	'requestaccount-submit' => 'Αίτηση λογαριασμού',
+	'requestaccount-email-subj-admin' => 'Αίτηση λογαριασμού στο {{SITENAME}}',
 	'confirmaccounts' => 'Επιβεβαίωση αιτήσεων λογαριασμών',
 	'confirmaccount-real-q' => 'Όνομα',
 	'confirmaccount-email-q' => 'Ηλεκτρονικό Ταχυδρομείο:',
