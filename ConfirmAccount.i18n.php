@@ -2128,6 +2128,8 @@ $messages['el'] = array(
 	'confirmaccount-review' => 'Επιθεώρηση',
 	'confirmaccount-all' => '(προβολή όλων των ουρών)',
 	'confirmaccount-type' => 'Ουρά:',
+	'confirmaccount-type-0' => 'πιθανοί δημιουργοί',
+	'confirmaccount-type-1' => 'πιθανοί συντάκτες',
 	'confirmaccount-q-open' => 'ανοικτές αιτήσεις',
 	'confirmaccount-q-held' => 'κράτησε αιτήσεις',
 	'confirmaccount-q-rej' => 'πρόσφατα απορριμένες προτάσεις',
@@ -4214,7 +4216,7 @@ Megadhatsz kapcsolati adatokat, pl. telefonszámot, hogy segíts a személyazono
 	'requestaccount-urls' => 'Weboldalak listája, ha van (külön sorba írd őket):',
 	'requestaccount-agree' => 'Igazolnod kell, hogy neved valódi és elfogadod a használati feltételeket.',
 	'requestaccount-inuse' => 'A felhasználói nevet már használták egy elfogadásra váró kérelemnél.',
-	'requestaccount-tooshort' => 'Az életrajzodnak minimum $1 szót kell tartalmaznia.',
+	'requestaccount-tooshort' => 'Az életrajzodnak minimum {{PLURAL:$1|egy|$1}} szót kell tartalmaznia.',
 	'requestaccount-emaildup' => 'Egy másik kérelemnél már megadták ugyanezt az e-mail címet.',
 	'requestaccount-exts' => 'A csatolt fájl típusa nem engedélyezett.',
 	'requestaccount-resub' => 'A CV-fájlodat újra ki kell választani biztonsági okok miatt. Hagyd a mezőt üresen,
@@ -4238,7 +4240,8 @@ Ennek a megerősítésre szánt kódnak a felhasználhatósági ideje lejár: $4
 	'requestaccount-email-subj-admin' => '{{SITENAME}} felhasználói fiók kérelem',
 	'requestaccount-email-body-admin' => '"$1" regisztrációja jóváhagyásra vár.
 Az e-mail cím ellenőrzése sikeres volt. Itt hagyhatod jóvá a kérést: "$2".',
-	'acct_request_throttle_hit' => 'Sajnáljuk, de már $1 felhasználói fiókot kértél, így nem igényelhetsz újabbakat.',
+	'acct_request_throttle_hit' => 'Sajnáljuk, de már kértél {{PLURAL:$1|egy|$1}} felhasználói fiókot.
+Nem igényelhetsz újabbakat.',
 	'requestaccount-loginnotice' => "Ha felhasználói fiókot szeretnél, akkor '''[[Special:RequestAccount|kérned kell egyet]]'''.",
 	'confirmaccount-newrequests' => "Jelenleg '''$1''' [[Special:ConfirmAccounts|felhasználói fiók-kérelem]] vár megerősítésre.",
 	'confirmaccounts' => 'Felhasználói fiók-kérelem megerősítése',
