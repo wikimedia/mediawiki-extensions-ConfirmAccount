@@ -54,7 +54,8 @@ Leave the field blank if you no longer want to include one.',
 	'requestaccount-tos'        => 'I have read and agree to abide by the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] of {{SITENAME}}.
 The name I have specified under "Real name" is in fact my own real name.',
 	'requestaccount-submit'     => 'Request account',
-	'requestaccount-sent'       => 'Your account request has successfully been sent and is now pending review.',
+	'requestaccount-sent'       => 'Your account request has successfully been sent and is now pending review.
+	A confirmation email has been sent to your e-mail address.',
 
 	'request-account-econf'     => 'Your e-mail address has been confirmed and will be listed as such in your account request.',
 	'requestaccount-email-subj' => '{{SITENAME}} e-mail address confirmation',
