@@ -217,7 +217,8 @@ class ConfirmAccountsPage extends SpecialPage
 			$datim = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
 			$date = $wgLang->date( wfTimestamp(TS_MW, $row->acr_rejected), true );
 			$time = $wgLang->time( wfTimestamp(TS_MW, $row->acr_rejected), true );
-			$reason = $row->acr_comment ? $row->acr_comment : wfMsgHtml('confirmaccount-noreason');
+			$reason = $row->acr_comment ?
+				htmlspecialchars($row->acr_comment) : wfMsgHtml('confirmaccount-noreason');
 			# Auto-rejected requests have a user ID of zero
 			if( $row->acr_user ) {
 				$wgOut->addHTML('<p><b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'),
@@ -225,7 +226,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-rational') . '</strong><i> ' .
 					$reason . '</i></p>' );
 			} else {
-				$wgOut->addHTML( '<p><i> ' . $reason . '</i></p>' );
+				$wgOut->addHTML( "<p><i> $reason </i></p>" );
 			}
 		} else if( $row->acr_held ) {
 			$datim = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
