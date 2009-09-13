@@ -80,7 +80,7 @@ class RequestAccountPage extends SpecialPage {
 		}
 	}
 
-	function showForm( $msg = '', $forgotFile = 0 ) {
+	protected function showForm( $msg = '', $forgotFile = 0 ) {
 		global $wgOut, $wgUser, $wgUseRealNamesOnly, $wgAllowRealName, $wgAccountRequestToS,
 			$wgAccountRequestTypes, $wgAccountRequestExtraInfo, $wgAllowAccountRequestFiles;
 
@@ -124,7 +124,7 @@ class RequestAccountPage extends SpecialPage {
 		}
 		$form .= '</table></fieldset>';
 
-		if ( !wfEmptyMsg( 'requestaccount-areas', wfMsg( 'requestaccount-areas' ) ) ) {
+		if ( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-areas' ) . '</legend>';
 			$form .=  wfMsgExt( 'requestaccount-areas-text', array( 'parse' ) ) . "\n";
@@ -221,7 +221,7 @@ class RequestAccountPage extends SpecialPage {
 		$wgOut->addWikiText( wfMsg( "requestaccount-footer" ) );
 	}
 
-	function doSubmit() {
+	protected function doSubmit() {
 		global $wgOut, $wgUser, $wgAuth, $wgAccountRequestThrottle;
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
@@ -401,7 +401,7 @@ class RequestAccountPage extends SpecialPage {
 		$this->showSuccess();
 	}
 
-	function showSuccess() {
+	protected function showSuccess() {
 		global $wgOut;
 		$wgOut->setPagetitle( wfMsg( "requestaccount" ) );
 		$wgOut->addWikiText( wfMsg( "requestaccount-sent" ) );
@@ -410,9 +410,8 @@ class RequestAccountPage extends SpecialPage {
 
 	/**
 	 * Flatten areas of interest array
-	 * @access private
 	 */
-	static function flattenAreas( $areas ) {
+	protected static function flattenAreas( $areas ) {
 		$flatAreas = '';
 		foreach ( $areas as $area ) {
 			$flatAreas .= $area . "\n";
@@ -422,9 +421,8 @@ class RequestAccountPage extends SpecialPage {
 
 	/**
 	 * Expand areas of interest to array
-	 * @access private
 	 */
-	static function expandAreas( $areas ) {
+	protected static function expandAreas( $areas ) {
 		$list = explode( "\n", $areas );
 		foreach ( $list as $n => $item ) {
 			$list[$n] = trim( "wpArea-" . str_replace( ' ', '_', $item ) );
@@ -435,9 +433,8 @@ class RequestAccountPage extends SpecialPage {
 
 	/**
 	 * Initialize the uploaded file from PHP data
-	 * @access private
 	 */
-	function initializeUpload( $request ) {
+	protected function initializeUpload( $request ) {
 		$this->mTempPath       = $request->getFileTempName( 'wpUploadFile' );
 		$this->mFileSize       = $request->getFileSize( 'wpUploadFile' );
 		$this->mSrcName        = $request->getFileName( 'wpUploadFile' );
@@ -451,18 +448,16 @@ class RequestAccountPage extends SpecialPage {
 	 * @param string $extension The filename extension that the file is to be served with
 	 * @return mixed true of the file is verified, a WikiError object otherwise.
 	 */
-	function verify( $tmpfile, $extension ) {
+	protected function verify( $tmpfile, $extension ) {
 		# magically determine mime type
 		$magic =& MimeMagic::singleton();
 		$mime = $magic->guessMimeType( $tmpfile, false );
-
 		# check mime type, if desired
 		global $wgVerifyMimeType;
 		if ( $wgVerifyMimeType ) {
-
-		  wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n" );
+			wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n" );
 			# check mime type against file extension
-			if ( !UploadForm::verifyExtension( $mime, $extension ) ) {
+			if ( !UploadBase::verifyExtension( $mime, $extension ) ) {
 				return new WikiErrorMsg( 'uploadcorrupt' );
 			}
 
@@ -473,7 +468,6 @@ class RequestAccountPage extends SpecialPage {
 				return new WikiErrorMsg( 'filetype-badmime', htmlspecialchars( $mime ) );
 			}
 		}
-
 		wfDebug( __METHOD__ . ": all clear; passing.\n" );
 		return true;
 	}
@@ -486,7 +480,7 @@ class RequestAccountPage extends SpecialPage {
 	 * @param array $list
 	 * @return bool
 	 */
-	function checkFileExtension( $ext, $list ) {
+	protected function checkFileExtension( $ext, $list ) {
 		return in_array( strtolower( $ext ), $list );
 	}
 
@@ -494,13 +488,12 @@ class RequestAccountPage extends SpecialPage {
 	 * @private
 	 * @param int $limit number of accounts allowed to be requested from the same IP
 	 */
-	function throttleHit( $limit ) {
+	protected function throttleHit( $limit ) {
 		global $wgOut;
-
 		$wgOut->addHTML( wfMsgExt( 'acct_request_throttle_hit', array( 'parsemag' ), $limit ) );
 	}
 
-	function confirmEmailToken( $code ) {
+	protected function confirmEmailToken( $code ) {
 		global $wgUser, $wgOut;
 		# Confirm if this token is in the pending requests
 		$name = $this->requestFromEmailToken( $code );
@@ -545,7 +538,7 @@ class RequestAccountPage extends SpecialPage {
 	 * @param sring $code
 	 * @returns string $name
 	 */
-	function requestFromEmailToken( $code ) {
+	protected function requestFromEmailToken( $code ) {
 		$dbr = wfGetDB( DB_SLAVE );
 		$reqID = $dbr->selectField( 'account_requests', 'acr_name',
 			array( 'acr_email_token' => md5( $code ),
@@ -560,7 +553,7 @@ class RequestAccountPage extends SpecialPage {
 	 *
 	 * @param sring $name
 	 */
-	function confirmEmail( $name ) {
+	protected function confirmEmail( $name ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->update( 'account_requests',
 			array( 'acr_email_authenticated' => $dbw->timestamp() ),
@@ -581,7 +574,7 @@ class RequestAccountPage extends SpecialPage {
 	 * @param string $expiration
 	 * @return mixed True on success, a WikiError object on failure.
 	 */
-	function sendConfirmationMail( $user, $token, $expiration ) {
+	protected function sendConfirmationMail( $user, $token, $expiration ) {
 		global $wgContLang;
 		$url = $this->confirmationTokenUrl( $token );
 		return $user->sendMail( wfMsg( 'requestaccount-email-subj' ),
@@ -599,9 +592,8 @@ class RequestAccountPage extends SpecialPage {
 	 * the URL the user can use to confirm.
 	 * @param string $token
 	 * @return string
-	 * @private
 	 */
-	function confirmationTokenUrl( $token ) {
+	protected function confirmationTokenUrl( $token ) {
 		$title = Title::makeTitle( NS_SPECIAL, 'RequestAccount' );
 		return $title->getFullUrl( 'action=confirmemail&wpEmailToken=' . $token );
 	}
@@ -612,16 +604,12 @@ class RequestAccountPage extends SpecialPage {
 	 * @param User $user
 	 * @param string $expiration
 	 * @return string
-	 * @private
 	 */
-	function getConfirmationToken( $user, &$expiration ) {
+	protected function getConfirmationToken( $user, &$expiration ) {
 		global $wgConfirmAccountRejectAge;
-
 		$expires = time() + $wgConfirmAccountRejectAge;
 		$expiration = wfTimestamp( TS_MW, $expires );
-
 		$token = $user->generateToken( $user->getName() . $user->getEmail() . $expires );
-
 		return $token;
 	}
 }
