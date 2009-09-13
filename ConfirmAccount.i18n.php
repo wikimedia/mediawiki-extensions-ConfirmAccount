@@ -6604,7 +6604,8 @@ Laat het veld leeg als u geen bestand meer wilt bijvoegen.',
 	'requestaccount-tos' => 'Ik heb de [[{{MediaWiki:Requestaccount-page}}|Voorwaarden]] van {{SITENAME}} gelezen en ga ermee akkoord.
 De naam die ik heb opgegeven onder "Uw naam" is inderdaad mijn eigen echte naam.',
 	'requestaccount-submit' => 'Gebruikersnaam aanvragen',
-	'requestaccount-sent' => 'Uw gebruikersaanvraag is verstuurd en wacht om nagekeken te worden.',
+	'requestaccount-sent' => 'Uw gebruikersaanvraag is verstuurd en wacht om nagekeken te worden.
+Er is een bevestigingse-mail naar uw e-mailladres gezonden',
 	'request-account-econf' => 'Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.',
 	'requestaccount-email-subj' => '{{SITENAME}} bevestiging e-mailadres',
 	'requestaccount-email-body' => 'Iemand, waarschijnlijk u, heeft vanaf  IP-adres $1 op {{SITENAME}} een verzoek gedaan
