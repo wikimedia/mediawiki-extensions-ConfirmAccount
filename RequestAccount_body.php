@@ -421,8 +421,9 @@ class RequestAccountPage extends SpecialPage {
 
 	/**
 	 * Expand areas of interest to array
+	 * Used by ConfirmAccountsPage
 	 */
-	protected static function expandAreas( $areas ) {
+	public static function expandAreas( $areas ) {
 		$list = explode( "\n", $areas );
 		foreach ( $list as $n => $item ) {
 			$list[$n] = trim( "wpArea-" . str_replace( ' ', '_', $item ) );
