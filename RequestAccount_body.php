@@ -5,10 +5,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 );
 }
 
-# FIXME: delay loading
-# Add messages
-wfLoadExtensionMessages( 'ConfirmAccount' );
-
 class RequestAccountPage extends SpecialPage {
 
 	function __construct() {
@@ -28,7 +24,9 @@ class RequestAccountPage extends SpecialPage {
 			$wgOut->readOnlyPage();
 			return;
 		}
-
+		# Load UI messages
+		wfLoadExtensionMessages( 'ConfirmAccount' );
+		
 		$this->setHeaders();
 
 		$this->mRealName = trim( $wgRequest->getText( 'wpRealName' ) );
@@ -86,6 +84,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$this->mForgotAttachment = $forgotFile;
 
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		$wgOut->setPagetitle( wfMsgHtml( "requestaccount" ) );
 		# Output failure message if any
 		if ( $msg ) {
@@ -223,6 +222,7 @@ class RequestAccountPage extends SpecialPage {
 
 	protected function doSubmit() {
 		global $wgOut, $wgUser, $wgAuth, $wgAccountRequestThrottle;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );
@@ -491,18 +491,19 @@ class RequestAccountPage extends SpecialPage {
 	 */
 	protected function throttleHit( $limit ) {
 		global $wgOut;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		$wgOut->addHTML( wfMsgExt( 'acct_request_throttle_hit', array( 'parsemag' ), $limit ) );
 	}
 
 	protected function confirmEmailToken( $code ) {
-		global $wgUser, $wgOut;
+		global $wgUser, $wgOut, $wgConfirmAccountContact;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		# Confirm if this token is in the pending requests
 		$name = $this->requestFromEmailToken( $code );
 		if ( $name !== false ) {
 			# Send confirmation email to prospective user
 			$this->confirmEmail( $name );
-			# Send mail to admin after e-mail has been confirmed;
-			global $wgConfirmAccountContact;
+			# Send mail to admin after e-mail has been confirmed
 			if ( $wgConfirmAccountContact ) {
 				$u = User::newFromName( $name, 'creatable' );
 				$u->setEmail( $wgConfirmAccountContact );
@@ -578,6 +579,7 @@ class RequestAccountPage extends SpecialPage {
 	protected function sendConfirmationMail( $user, $token, $expiration ) {
 		global $wgContLang;
 		$url = $this->confirmationTokenUrl( $token );
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		return $user->sendMail( wfMsg( 'requestaccount-email-subj' ),
 			wfMsg( 'requestaccount-email-body',
 				wfGetIP(),
