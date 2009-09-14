@@ -5,10 +5,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 );
 }
 
-# FIXME: delay message loading!
-# Add messages
-wfLoadExtensionMessages( 'ConfirmAccount' );
-
 class ConfirmAccountsPage extends SpecialPage
 {
 
@@ -28,6 +24,8 @@ class ConfirmAccountsPage extends SpecialPage
 			return;
 		}
 
+		# Load UI messages
+		wfLoadExtensionMessages( 'ConfirmAccount' );
 		$this->setHeaders();
 
 		$this->specialPageParameter = $par;
@@ -151,9 +149,9 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 	}
 
-	function showQueues() {
+	protected function showQueues() {
 		global $wgOut, $wgAccountRequestTypes, $wgLang;
-
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 		$wgOut->addWikiText( wfMsg('confirmaccount-maintext') );
 
 		$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-types') . '</strong></p>' );
@@ -194,9 +192,9 @@ class ConfirmAccountsPage extends SpecialPage
 		$wgOut->addHTML( '</ul>' );
 	}
 
-	function showForm( $msg='' ) {
+	protected function showForm( $msg='' ) {
 		global $wgOut, $wgUser, $wgLang, $wgAccountRequestTypes;
-
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 
 		$row = $this->getRequest();
@@ -376,7 +374,7 @@ class ConfirmAccountsPage extends SpecialPage
 	/**
 	 * Show a private file requested by the visitor.
 	 */
-	function showFile( $key ) {
+	protected function showFile( $key ) {
 		global $wgOut, $wgRequest, $wgConfirmAccountFSRepos, $IP;
 		$wgOut->disable();
 
@@ -395,8 +393,9 @@ class ConfirmAccountsPage extends SpecialPage
 		wfStreamFile( $path );
 	}
 
-	function doSubmit() {
+	protected function doSubmit() {
 		global $wgOut, $wgUser;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		$row = $this->getRequest( true );
 		if( !$row ) {
@@ -698,8 +697,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$db = $forUpdate ? wfGetDB( DB_MASTER ) : wfGetDB( DB_SLAVE );
 		$row = $db->selectRow( 'account_requests', '*',
 			array( 'acr_id' => $this->acrID ),
-			__METHOD__ );
-
+			__METHOD__
+		);
 		# Check if parameters are to be overridden
 		if( $row ) {
 			$this->mUsername = $this->mUsername ? $this->mUsername : $row->acr_name;
@@ -727,6 +726,7 @@ class ConfirmAccountsPage extends SpecialPage
 	 */
 	public static function parseLinks( $text ) {
 		global $wgParser, $wgUser;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 		# Don't let this get flooded
 		$max = 10;
 		$count = 0;
@@ -754,12 +754,12 @@ class ConfirmAccountsPage extends SpecialPage
 		} else {
 			$linkList = "<ul>{$linkList}</ul>";
 		}
-
 		return $linkList;
 	}
 
-	function showSuccess( $titleObj, $name = NULL, $errors = array() ) {
+	protected function showSuccess( $titleObj, $name = NULL, $errors = array() ) {
 		global $wgOut;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		$wgOut->setPagetitle( wfMsgHtml('actioncomplete') );
@@ -779,8 +779,9 @@ class ConfirmAccountsPage extends SpecialPage
 		$wgOut->returnToMain( true, $titleObj );
 	}
 
-	function showList() {
+	protected function showList() {
 		global $wgOut, $wgUser, $wgLang;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 
@@ -863,7 +864,7 @@ class ConfirmAccountsPage extends SpecialPage
 		$wgMemc->delete( $key );
 	}
 
-	function formatRow( $row ) {
+	public function formatRow( $row ) {
 		global $wgLang, $wgUser, $wgUseRealNamesOnly, $wgAllowRealName;
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
