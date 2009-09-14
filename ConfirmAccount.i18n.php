@@ -938,7 +938,8 @@ $messages['be-tarask'] = array(
 	'requestaccount-tos' => 'Я прачытаў і згодны з [[{{MediaWiki:Requestaccount-page}}|умовамі прадстаўленьня паслугаў]] {{GRAMMAR:родны|{{SITENAME}}}}.
 Імя, якое я пазначыў у полі «Сапраўднае імя» сапраўды зьяўляецца маім сапраўдным іменем.',
 	'requestaccount-submit' => 'Запытаць стварэньне рахунку',
-	'requestaccount-sent' => 'Ваш запыт на стварэньне рахунку быў пасьпяхова дасланы і цяпер чакае апрацоўкі.',
+	'requestaccount-sent' => 'Ваш запыт на стварэньне рахунку быў пасьпяхова дасланы і цяпер чакае апрацоўкі.
+Электронны ліст з пацьверджаньнем быў дасланы на Ваш адрас электроннай пошты.',
 	'request-account-econf' => 'Ваш адрас электроннай пошты быў пацьверджаны і будзе пазначаны ў Вашым запыце на стварэньне рахунку.',
 	'requestaccount-email-subj' => 'Пацьверджаньне адрасу электроннай пошты {{GRAMMAR:MS.lp|{{SITENAME}}}}',
 	'requestaccount-email-body' => 'Нехта, верагодна Вы, з IP-адрасу $1, запытаў стварэньне рахунку «$2» у {{GRAMMAR:месны|{{SITENAME}}}} з гэтым адрасам электроннай пошты.
@@ -1363,7 +1364,8 @@ $messages['bs'] = array(
 	'requestaccount-tooshort' => 'Vaša biografija mora biti duga najmanje $1 {{PLURAL:$1|riječ|riječi}}.',
 	'requestaccount-exts' => 'Vrsta datoteke u privitku nije dopuštena.',
 	'requestaccount-submit' => 'Zahtjevaj račun',
-	'requestaccount-sent' => 'Vaš zahtjev za račun je uspješno poslan i sada očekuje provjeru.',
+	'requestaccount-sent' => 'Vaš zahtjev za račun je uspješno poslan i sada očekuje provjeru.
+Mail za potvrdu je poslan na Vašu e-mail adresu.',
 	'request-account-econf' => 'Vaša e-mail adresa je potvrđena i bit će prikazana kako je navedeno u Vašem zahjevu za račun.',
 	'requestaccount-email-subj' => '{{SITENAME}} e-mail adresa potvrde',
 	'requestaccount-email-subj-admin' => 'Zahtjev za račun na {{SITENAME}}',
@@ -1651,7 +1653,8 @@ Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
 	'requestaccount-tos' => 'Ich habe die [[{{MediaWiki:Requestaccount-page}}|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
 Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
 	'requestaccount-submit' => 'Benutzerkonto beantragen',
-	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
+	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.
+Eine Bestätigungs-E-Mail wurde an deine E-Mail-Adresse gesendet.',
 	'request-account-econf' => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in deinem Antrag auf ein Benutzerkonto geführt.',
 	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adressen Prüfung',
 	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise du, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit deiner E-Mail-Adresse beantragt.
@@ -1829,7 +1832,8 @@ Sie können Kontaktangaben wie eine Telefonnummer machen, um die Bearbeitung Ihr
 	'requestaccount-tooshort' => 'Ihre Biographie muss mindestens {{PLURAL:$1|1 Wort|$1 Wörter}} lang sein.',
 	'requestaccount-resub' => 'Die Datei mit Ihrem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
 Lassen Sie das Feld leer, wenn Sie keinen Lebenslauf mehr anfügen möchten.',
-	'requestaccount-sent' => 'Ihr Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.',
+	'requestaccount-sent' => 'Ihr Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.
+Eine Bestätigungs-E-Mail wurde an Ihre E-Mail-Adresse gesendet.',
 	'request-account-econf' => 'Ihre E-Mail-Adresse wurde bestätigt und wird nun als solche in Ihrem Antrag auf ein Benutzerkonto geführt.',
 	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise Sie, haben bei {{SITENAME}} das Benutzerkonto „$2“ mit Ihrer E-Mail-Adresse beantragt.
 
@@ -1925,7 +1929,7 @@ Wóstaj pólo prozne, jolic njocoš wěcej ju zapśěgnuś.',
 	'requestaccount-tos' => 'Som pśecytał [[{{MediaWiki:Requestaccount-page}}|wužywańske wuměnjenja]] {{GRAMMAR:genitiw|{{SITENAME}}}} a lubim se jich źaržaś.
 Mě, kótarež som pód "napšawdne mě" pódał, jo napšawdu mójo napšawdne mě.',
 	'requestaccount-submit' => 'Póžedanje na konto stajiś',
-	'requestaccount-sent' => 'Twójo póžedanje na konto jo se wuspěšnje wótpósłało a caka něnto na pśeglědanje.',
+	'requestaccount-sent' => 'Twójo póžedanje na konto jo se wuspěšnje wótpósłało a caka něnto na pśeglědanje. Wobkšuśeńska e-mail jo se pósłała na twóju e-mailowu adresu.',
 	'request-account-econf' => 'Twója e-mailowa adresa jo se wobkšuśiła a nalicyjo ako taka w twójim póžedanju na konto.',
 	'requestaccount-email-subj' => '{{SITENAME}} wobkšuśenje e-mailoweje adrese',
 	'requestaccount-email-body' => 'Něchten, nejskerjej ty z IP-adrese $1, jo stajił póžedanje na konto "$2" z toś teju e-mailoweju adresu na {{GRAMMAR:lokatiw|{{SITENAME}}}}.
@@ -2361,7 +2365,8 @@ Tu nombre puede ser cambiado a través de [[Special:Preferences|Tus preferencias
 	'requestaccount-emaildup' => 'Alguna otra solicitud de cuenta pendiente usa la misma dirección de correo electrónico.',
 	'requestaccount-exts' => 'Tipo de archivo adjunto no está permitido.',
 	'requestaccount-submit' => 'Solicitar cuenta',
-	'requestaccount-sent' => 'Tu solicitud de cuenta ha sido exitosamente enviado y está ahora en una revisión pendiente.',
+	'requestaccount-sent' => 'Tu solicitud de cuenta ha sido exitosamente enviado y está ahora en una revisión pendiente.
+Un correo electrónico de confirmación ha sido enviado a tu dirección de correo electrónico.',
 	'request-account-econf' => 'Tu correo electrónico ha sido onfirmado y será listado como tal en tu solicitud de cuenta.',
 	'requestaccount-email-subj' => '{{SITENAME}} confirmación de dirección de correo electrónico',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} solicitud de cuenta',
@@ -2825,7 +2830,8 @@ Une fois que le compte est accepté, vous recevrez un courriel de notification e
 	'requestaccount-resub' => 'Veuillez sélectionner à nouveau votre curriculum vitæ pour des raisons de sécurité. Si vous ne souhaitez plus inclure celui-ci, laissez ce champ vierge.',
 	'requestaccount-tos' => 'J’ai lu et j’accepte les [[{{MediaWiki:Requestaccount-page}}|conditions d’utilisation]] de {{SITENAME}}.',
 	'requestaccount-submit' => 'Demande de compte utilisateur',
-	'requestaccount-sent' => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.',
+	'requestaccount-sent' => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.
+Un courriel de confirmation a été envoyé à votre adresse de courriel.',
 	'request-account-econf' => 'Votre adresse courriel a été confirmée et sera listée telle quelle dans votre demande de compte.',
 	'requestaccount-email-subj' => "Confirmation de l'adresse de courriel pour {{SITENAME}}",
 	'requestaccount-email-body' => 'Quelqu’un, probablement vous, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur « $2 » avec cette adresse courriel sur {{SITENAME}}.
@@ -2985,17 +2991,17 @@ $messages['frp'] = array(
 
 Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto utilisator.
 
-Setout que lo compto est accèptâ, vos recevréd un mèl de notificacion et voutron compto utilisator porrat étre utilisâ sur la [[Special:UserLogin|pâge de branchement]].",
+Setout que lo compto est accèptâ, vos recevréd un mèssâjo de notificacion et pués voutron compto utilisator porrat étre utilisâ sur la [[Special:UserLogin|pâge de branchement]].",
 	'requestaccount-page' => '{{ns:project}}:Condicions d’usâjo',
-	'requestaccount-dup' => "'''Nota : vos éte ja sur una sèance avouéc un compto utilisator enregistrâ.'''",
+	'requestaccount-dup' => "'''Nota : vos éte ja sur una sèance avouéc un compto utilisator encartâ.'''",
 	'requestaccount-leg-user' => 'Compto utilisator',
 	'requestaccount-leg-areas' => 'Centros d’entèrèts principâls',
 	'requestaccount-leg-person' => 'Enformacions a sè',
 	'requestaccount-leg-other' => 'Ôtres enformacions',
 	'requestaccount-leg-tos' => 'Condicions d’usâjo',
-	'requestaccount-acc-text' => 'Un mèssâjo de confirmacion serat mandâ a voutra adrèce de mèl setout que la demanda arat étâ mandâ.
-Dens lo mèl reçu, clicâd sur lo lim que corrèspond a la confirmacion de voutra demanda.
-Et pués, un mot de pâssa serat mandâ per mèl quand voutron compto utilisator serat fêt.',
+	'requestaccount-acc-text' => 'Un mèssâjo de confirmacion serat mandâ a voutra adrèce èlèctronica setout que la demanda arat étâ mandâ.
+Dens lo mèssâjo reçu, clicâd sur lo lim que corrèspond a la confirmacion de voutra demanda.
+Et pués, un mot de pâssa serat mandâ per mèssageria èlèctronica quand voutron compto utilisator serat fêt.',
 	'requestaccount-areas-text' => 'Chouèsésséd los domênos que vos avéd una èxpèrtisa dèmontrâ, ou ben que vos éte encllin a contribuar lo ples.',
 	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et porrat étre utilisâ ren que por ceta demanda.
 Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfono por avêr una assistance por confirmar voutra identitât.',
@@ -3005,7 +3011,7 @@ Assurâd-vos que vos pouede difusar sen crenta les enformacions.
 Voutron nom pôt étre changiê en utilisent voutres [[Special:Preferences|prèferences]].',
 	'requestaccount-real' => 'Veré nom :',
 	'requestaccount-same' => '(nom que figure dens voutron ètat civilo)',
-	'requestaccount-email' => 'Adrèce de mèl :',
+	'requestaccount-email' => 'Adrèce èlèctronica :',
 	'requestaccount-reqtype' => 'Situacion :',
 	'requestaccount-level-0' => 'ôtor',
 	'requestaccount-level-1' => 'contributor',
@@ -3016,7 +3022,7 @@ Voutron nom pôt étre changiê en utilisent voutres [[Special:Preferences|prèf
 	'requestaccount-agree' => 'Vos dête cèrtifiar que voutron veré nom est justo et pués que vos accèptâd les condicions d’usâjo.',
 	'requestaccount-inuse' => 'Lo nom d’utilisator est ja utilisâ dens una demanda en cors d’aprobacion.',
 	'requestaccount-tooshort' => 'Voutra biografia dêt avêr u muens $1 mot{{PLURAL:$1||s}}.',
-	'requestaccount-emaildup' => 'Una ôtra demanda en cors utilise la méma adrèce de mèl.',
+	'requestaccount-emaildup' => 'Una ôtra demanda en cors utilise la méma adrèce èlèctronica.',
 	'requestaccount-exts' => 'Lo tipo du fichiér juent est pas pèrmês.',
 	'requestaccount-resub' => 'Volyéd tornar chouèsir voutron fichiér de CV por des rêsons de sècuritât.
 Se vos souhètâd pas més encllure ceti, lèssiéd lo champ vouedo.',
@@ -3024,9 +3030,9 @@ Se vos souhètâd pas més encllure ceti, lèssiéd lo champ vouedo.',
 Lo nom que j’é buchiê dens lo champ « Veré nom » est franc mon prôpro nom.',
 	'requestaccount-submit' => 'Demanda de compto utilisator',
 	'requestaccount-sent' => 'Voutra demanda de compto utilisator at étâ mandâ avouéc reusséta et pués at étâ betâ dens la lista d’atenta d’aprobacion.',
-	'request-account-econf' => 'Voutra adrèce de mèl at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto utilisator.',
-	'requestaccount-email-subj' => 'Confirmacion de l’adrèce de mèl por {{SITENAME}}',
-	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » avouéc ceta adrèce de mèl dessus {{SITENAME}}.
+	'request-account-econf' => 'Voutra adrèce èlèctronica at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto utilisator.',
+	'requestaccount-email-subj' => 'Confirmacion de l’adrèce èlèctronica por {{SITENAME}}',
+	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » avouéc ceta adrèce èlèctronica sur lo seto {{SITENAME}}.
 
 Por confirmar que cél compto est franc a vos dessus {{SITENAME}}, vos éte preyê d’uvrir ceti lim dens voutron navigator :
 
@@ -3037,7 +3043,7 @@ S’o ére *pas* lo câs, utilisâd pas cél lim.
 Ceti code de confirmacion èxpirerat lo $4.',
 	'requestaccount-email-subj-admin' => 'Demanda de compto utilisator dessus {{SITENAME}}',
 	'requestaccount-email-body-admin' => '« $1 » at demandâ un compto utilisator et sè trove en atenta de confirmacion.
-L’adrèce de mèl at étâ confirmâ. Vos pouede aprovar la demanda ique « $2 ».',
+L’adrèce èlèctronica at étâ confirmâ. Vos pouede aprovar la demanda ique « $2 ».',
 	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}} utilisator.
 Vos pouede pas més fâre de demanda.',
 	'requestaccount-loginnotice' => "Por avêr un compto utilisator, vos dête nen fâre la '''[[Special:RequestAccount|demanda]]'''.",
@@ -3050,7 +3056,7 @@ Vos pouede pas més fâre de demanda.',
 	'confirmaccount-none-r' => 'Ora, y at gins de refus novél de demanda de compto utilisator dens ceta lista.',
 	'confirmaccount-none-e' => 'Ora, y at gins de demanda de compto utilisator èxpirâ dens ceta lista.',
 	'confirmaccount-real-q' => 'Nom',
-	'confirmaccount-email-q' => 'Mèl',
+	'confirmaccount-email-q' => 'Adrèce èlèctronica',
 	'confirmaccount-bio-q' => 'Biografia',
 	'confirmaccount-showopen' => 'Demandes uvèrtes',
 	'confirmaccount-showrej' => 'Demandes refusâs',
@@ -3059,7 +3065,7 @@ Vos pouede pas més fâre de demanda.',
 	'confirmaccount-review' => 'Aprobacion/Refus',
 	'confirmaccount-name' => 'Nom d’utilisator',
 	'confirmaccount-real' => 'Nom :',
-	'confirmaccount-email' => 'Mèl :',
+	'confirmaccount-email' => 'Mèl. :',
 	'confirmaccount-bio' => 'Biografia :',
 	'confirmaccount-attach' => 'CV/Rèsumâ :',
 	'confirmaccount-notes' => 'Notes suplèmentères :',
@@ -3138,7 +3144,8 @@ Deixe o campo en branco se non o quere incluír máis.',
 	'requestaccount-tos' => 'Lin e estou de acordo en respectar as [[{{MediaWiki:Requestaccount-page}}|Condicións de Servizo]] de {{SITENAME}}. 
 	O nome especificado como "Nome real" é, efectivamente, o meu propio nome real.',
 	'requestaccount-submit' => 'Solicitar unha conta',
-	'requestaccount-sent' => 'Enviouse sen problemas a súa solicitude de conta e agora está pendente de exame.',
+	'requestaccount-sent' => 'A súa solicitude de conta foi enviada correctamente e agora está á espera de revisión.
+Envióuselle un correo electrónico de confirmación ao seu enderezo de correo electrónico.',
 	'request-account-econf' => 'Confirmouse o seu enderezo de correo electrónico e listarase como tal na súa
 	solicitude de conta.',
 	'requestaccount-email-subj' => 'Confirmación de enderezo de correo electrónico de {{SITENAME}}',
@@ -3384,7 +3391,8 @@ Loss s Fäld läär, wänn Du kei Läbenslauf meh witt aafiege.',
 	'requestaccount-tos' => 'Ich haa d [[{{MediaWiki:Requestaccount-page}}|Benutzigsbedingige]] vu {{SITENAME}} gläsen und akzeptier si.
 Ich bstätige, ass dr Name, wun i unter „Realname“ aagee haa, myy wirklige Namen isch.',
 	'requestaccount-submit' => 'Aatrag stelle uf e Benutzerkonto',
-	'requestaccount-sent' => 'Dyy Aatrag isch erfolgryych verschickt wore un muess jetz no iberprieft wäre.',
+	'requestaccount-sent' => 'Dyy Aatrag isch erfolgryych verschickt wore un muess jetz no iberprieft wäre.
+E Bstetigungs-Mail isch an Dyy E-Mail-Adräss gschickt wore.',
 	'request-account-econf' => 'Dyy E-Mail-Adräss isch bstätigt woren un wird jetz as sonigi in Dyynem Benutzerkonte-Aatrag gfiert.',
 	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adrässe-Priefig',
 	'requestaccount-email-body' => 'Eber mit dr IP Adräss $1, villicht Du, het bi {{SITENAME}} mit Dyynere E-Mail-Adräss e Aatrag uf s Benutzerkonto „$2“ gstellt.
@@ -4031,7 +4039,7 @@ Móžeš swoje wužiwarske mjeno pod [[Special:Preferences|Nastajenja]] změnić
 	'requestaccount-resub' => 'Twoja žiwjenjoběhowa dataja dyrbi so z přičinow wěstoty znowa wubrać. Wostaj polo prózdne, jeli hižo nochceš tajku zapřijimać.',
 	'requestaccount-tos' => 'Sym wužiwarske wuměnjenja strony {{SITENAME}} přečitał a budu do nich dźeržeć.',
 	'requestaccount-submit' => 'Wužiwarske konto sej žadać',
-	'requestaccount-sent' => 'Twoje kontowe požadanje  bu wuspěšnje wotpósłane a dyrbi so nětko přepruwować.',
+	'requestaccount-sent' => 'Twoje kontowe požadanje bu wuspěšnje wotpósłane a dyrbi so nětko přepruwować. Wobrućenska e-mejl bu na twoju e-mejlowu adresu pósłana.',
 	'request-account-econf' => 'Twoja e-mejlowa adresa bu wobkrućena a budźe so w twojim kontowym požadanju nalistować.',
 	'requestaccount-email-subj' => '{{SITENAME}} Pruwowanje e-mejloweje adresy',
 	'requestaccount-email-body' => 'Něštó z IP-adresu $1, snano ty, je pola {{SITENAME}} wužiwarske konto "$2" z twojej e-mejlowej adresu požadał.
@@ -4265,6 +4273,7 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-none-o' => 'Jelenleg nincs elfogadásra váró kérelem a listában.',
 	'confirmaccount-none-h' => 'Jelenleg nincs visszatartott kérelem a listában.',
 	'confirmaccount-none-r' => 'Jelenleg nincs visszautasított kérelem a listában.',
+	'confirmaccount-none-e' => 'Jelenleg nincs lejárt fiók-kérelem a listában.',
 	'confirmaccount-real-q' => 'Név',
 	'confirmaccount-email-q' => 'E-mail cím',
 	'confirmaccount-bio-q' => 'Életrajz',
@@ -4370,6 +4379,7 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
 	'usercredentials-ip' => 'Valódi IP-cím:',
 	'usercredentials-member' => 'Jogok:',
 	'usercredentials-badid' => 'A felhasználó nem rendelkezik személyes adatokkal. Ellenőrizd, hogy helyesen adtad-e meg a nevét.',
+	'right-requestips' => 'az igénylők IP-címeinek megtekintése a kért fiókok feldolgozása közben',
 );
 
 /** Interlingua (Interlingua)
@@ -4632,7 +4642,8 @@ Tinggalkan kotak ini kosong jika Anda sudah tidak ingin untuk memasukkannya.',
 	'requestaccount-tos' => 'Saya telah membaca dan menyetujui [[{{MediaWiki:Requestaccount-page}}|Syarat Layanan]] {{SITENAME}}.
 Nama yang saya tuliskan dalam "Nama asli" adalah benar-benar nama asli saya sendiri.',
 	'requestaccount-submit' => 'Permintaan akun',
-	'requestaccount-sent' => 'Permintaan akun Anda telah berhasil dikirimkan dan sekarang sedang dalam antrian untuk ditinjau.',
+	'requestaccount-sent' => 'Permintaan akun Anda telah berhasil dikirimkan dan sekarang sedang dalam antrian untuk ditinjau.
+Sebuah surat konfirmasi telah dikirimkan ke alamat surel Anda.',
 	'request-account-econf' => 'Alamat surat-e Anda telah dikonfirmasikan dan akan ditampilkan sebagaimana dalam permintaan akun Anda.',
 	'requestaccount-email-subj' => 'Konfirmasi alamat surat-e {{SITENAME}}',
 	'requestaccount-email-body' => 'Seseorang, mungkin Anda, dari alamat IP $1, telah mendaftarkan permintaan akun "$2" dengan alamat surat-e ini di {{SITENAME}}.
@@ -4917,7 +4928,8 @@ Lascia il campo vuoto se non desideri più includerne uno.',
 	'requestaccount-tos' => 'Ho letto e accetto di rispettare i [[{{MediaWiki:Requestaccount-page}}|Termini del Servizio]] di {{SITENAME}}.
 Il nome che ho specificato come "Vero nome" è infatti il mio vero nome.',
 	'requestaccount-submit' => 'Richiesta account',
-	'requestaccount-sent' => 'La tua richiesta account è stata inviata con successo ed è ora in attesa di verifica.',
+	'requestaccount-sent' => 'La tua richiesta account è stata inviata con successo ed è ora in attesa di verifica.
+Una email di conferma è stata inviata al tuo indirizzo e-mail.',
 	'request-account-econf' => 'Il tuo indirizzo e-mail è stato confermato e sarà elencato come tale nella tua richiesta account.',
 	'requestaccount-email-subj' => '{{SITENAME}} conferma indirizzo e-mail',
 	'requestaccount-email-body' => 'Qualcuno, probabilmente tu, dall\'indirizzo IP $1, ha chiesto un account "$2" con questo indirizzo e-mail su {{SITENAME}}.
@@ -5126,7 +5138,7 @@ $messages['ja'] = array(
 	'requestaccount-tos' => '私は {{SITENAME}} の [[{{MediaWiki:Requestaccount-page}}|サービス利用規約]] を既に熟読しており、これに同意し、遵守します。
 私が"本名"欄に記入した名前は、自分の本名であることに間違いありません。',
 	'requestaccount-submit' => 'アカウント申請',
-	'requestaccount-sent' => 'アカウント申請は正常に送信され、承認待ち状態になりました。',
+	'requestaccount-sent' => 'あなたのアカウント申請は正常に送信され、現在承認を待っています。確認メールがあなたの電子メールアドレスに送信されました。',
 	'request-account-econf' => 'あなたの電子メールアドレスは確認されました。アカウント申請にもそのように表示されます。',
 	'requestaccount-email-subj' => '{{SITENAME}} 電子メールアドレスの確認',
 	'requestaccount-email-body' => 'IPアドレス $1 を使用するどなたか(おそらくあなた)が、この電子メールアドレスを用いて {{SITENAME}} のアカウント "$2" の作成を申請しました。
@@ -5604,7 +5616,8 @@ Sobald De ene Zohjang kräje häß, kriß De en <i lang=\"en\">e-mail</i> jesche
 	'requestaccount-resub' => 'Dinge Levvensverlouf moß norr_ens neu ußjewählt wäde, zor Sescherheit. Lohß dat Feld leddisch, wann De_n_nit mieh wigger dobei han wells.',
 	'requestaccount-tos' => 'Esch han jelesse, wat op dä Sigg „[[{{MediaWiki:Requestaccount-page}}|{{int:requestaccount-leg-tos}}]]“ övver de {{SITENAME}} shteiht, Un esch versescheren, dat wad esch unger „reschtijje Name“ aanjejovve hann, wörklesch minge reschtijje Name es.',
 	'requestaccount-submit' => 'Noh enem Zojang als ene Metmaacher frore',
-	'requestaccount-sent' => 'Ding Aanfrooch es jäz op der Wääsch jebraat, un waadt drop, dat sesch Eine dröm kömmert.',
+	'requestaccount-sent' => 'Ding Aanfrooch es jäz op der Wääsch jebraat, un waadt drop, dat sesch Eine dröm kömmert.
+För se ze beschtäätejje, es en <i lang="en">e-mail</i> aan Ding aanjejovve Adräß ongerwähß.',
 	'request-account-econf' => 'Ding <i lang="en">e-mail</i>-Addräß es beschtätesch un dat shteiht jetß och esu en Dinge Aanfrooch noh enem Zohjang als Metmaacher dren.',
 	'requestaccount-email-subj' => 'De {{SITENAME}} ier <i lang="en">e-mail</i>-Addräß Beschtätejung',
 	'requestaccount-email-body' => 'Daach,
@@ -5882,7 +5895,8 @@ Loosst d'Feld eidel wann Dir elo keen CV abanne wëllt.",
 	'requestaccount-tos' => 'Ech hunn d\'[[{{MediaWiki:Requestaccount-page}}|Benotzungsbedingunge]] vu(n) {{SITENAME}} geliest an akzeptéieren se.
 Den Numm den ech bäi "Richtege Numm" uginn hunn ass mäin eegene richtegen Numm.',
 	'requestaccount-submit' => 'Benotzerkont ufroen',
-	'requestaccount-sent' => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.',
+	'requestaccount-sent' => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.
+Eng Konfirmatiounsmail gouf op Är E-mailadress geschéckt.',
 	'request-account-econf' => 'Är E-Mailadress gouf confirméiert a gëtt elo als E-Mailadress an är Ufro fir e Benotzerkont integréiert.',
 	'requestaccount-email-subj' => '{{SITENAME}} Konfirmatioun vun der E-Mail-Adress',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Ufro fir ee Benotzerkont',
@@ -7897,6 +7911,7 @@ Poderá haver listas de contactos no sítio que poderá usar se desejar saber ma
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
  * @author Heldergeovane
+ * @author Luckas Blade
  */
 $messages['pt-br'] = array(
 	'requestaccount' => 'Requisitar conta',
@@ -7939,7 +7954,8 @@ O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
 	'requestaccount-tos' => 'Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] de {{SITENAME}}.
 O nome que especifiquei em "Nome real" é de fato o meu nome real.',
 	'requestaccount-submit' => 'Requisitar conta',
-	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora pendente para confirmação.',
+	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora com a confirmação pendente.
+Um e-mail de confirmação foi enviado para seu endereço de e-mail.',
 	'request-account-econf' => 'O seu endereço de email foi confirmado e será listado como tal no seu pedido de conta.',
 	'requestaccount-email-subj' => 'Confirmação de endereço de email para {{SITENAME}}',
 	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, requisitou uma conta "$2" com este endereço de email em {{SITENAME}}.
@@ -8272,7 +8288,8 @@ $messages['ru'] = array(
 	'requestaccount-tos' => 'Я прочитал и соглшаюсь следовать [[{{MediaWiki:Requestaccount-page}}|Условиям предоставления услуг]] проекта {{SITENAME}}.
 	Имя, которое я указал в поле «Настоящее имя», действительно является моим настоящим именем.',
 	'requestaccount-submit' => 'Запросить учётную запись',
-	'requestaccount-sent' => 'Ваш запрос на получение учётной записи был успешно отправлен и теперь ожидает обработки.',
+	'requestaccount-sent' => 'Ваш запрос на получение учётной записи был успешно отправлен и теперь ожидает обработки.
+На ваш адрес было отправлено письмо с уведомлением.',
 	'request-account-econf' => 'Ваш адрес электронной почты был подтверждён и будет указан в вашем запросе учётной записи.',
 	'requestaccount-email-subj' => '{{SITENAME}}: подтверждение по эл. почте',
 	'requestaccount-email-body' => 'Кто-то (вероятно, вы) с IP-адреса $1 запросил на сайте {{SITENAME}},
