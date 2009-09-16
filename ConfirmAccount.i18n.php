@@ -7212,7 +7212,8 @@ $messages['oc'] = array(
 	'requestaccount-resub' => 'Vòstre fichièr de CV/resumit deu èsser seleccionat un còp de mai per de rasons de seguretat. Daissatz lo camp void se lo desiratz pas mai jónher.',
 	'requestaccount-tos' => 'Ai legit e accèpti de respectar los [[{{MediaWiki:Requestaccount-page}}|tèrmes concernent las condicions d’utilizacion dels servicis]] de {{SITENAME}}.',
 	'requestaccount-submit' => "Demanda de compte d'utilizaire.",
-	'requestaccount-sent' => "Vòstra demanda de compte d'utilizaire es estada mandada amb succès e es estada mesa dins la lista d’espèra d’aprobacion.",
+	'requestaccount-sent' => "Vòstra demanda de compte d'utilizaire es estada mandada amb succès e es estada mesa dins la lista d’espèra d’aprovacion.
+Un corrièl de confirmacion es estat mandat a vòstra adreça de corrièl.",
 	'request-account-econf' => 'Vòstra adreça de corrièr electronic es estada confirmada e serà listada tala coma es dins vòstra demanda de compte.',
 	'requestaccount-email-subj' => '{{SITENAME}} confirmacion d’adreça de corrièr electronic.',
 	'requestaccount-email-body' => "Qualqu’un, probablament vos, a formulat, dempuèi l’adreca IP $1, una demanda de compte d'utilizaire « $2 » amb aquesta adreça de corrièr electronic sus {{SITENAME}}.
