@@ -80,7 +80,7 @@ $wgConfirmAccountCaptchas = true;
 $wgAllowAccountRequestFiles = true;
 $wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
 
-# Storage repos. B/C for when this used FileStore.
+# Storage repos. Has B/C for when this used FileStore.
 $wgConfirmAccountFSRepos = array(
 	'accountreqs' => array( # Location of attached files for pending requests
 		'name'       => 'accountreqs',
@@ -125,9 +125,18 @@ $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 $wgExtensionAliasesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.alias.php';
 
+function efLoadConfirmAccount() {
+	global $wgUser;
+	# Don't load unless needed
+	if ( $wgUser->getId() && $wgUser->isAllowed( 'confirmaccount' ) ) {
+		efConfirmAccountInjectStyle();
+	}
+}
+
 function efAddRequestLoginText( &$template ) {
 	global $wgUser;
 	wfLoadExtensionMessages( 'ConfirmAccount' );
+	# Add a link to RequestAccount from UserLogin
 	if ( !$wgUser->isAllowed( 'createaccount' ) ) {
 		$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) ) );
 	}
@@ -162,12 +171,11 @@ function efConfirmAccountInjectStyle() {
 	return true;
 }
 
-function wfConfirmAccountsNotice( $notice ) {
+function efConfirmAccountsNotice( $notice ) {
 	global $wgConfirmAccountNotice, $wgUser;
-
-	if ( !$wgConfirmAccountNotice || !$wgUser->isAllowed( 'confirmaccount' ) )
+	if ( !$wgConfirmAccountNotice || !$wgUser->isAllowed( 'confirmaccount' ) ) {
 		return true;
-
+	}
 	global $wgMemc, $wgOut;
 	# Check cached results
 	$key = wfMemcKey( 'confirmaccount', 'noticecount' );
@@ -216,19 +224,10 @@ $wgHooks['UserLoginForm'][] = 'efAddRequestLoginText';
 $wgHooks['AbortNewAccount'][] = 'efCheckIfAccountNameIsPending';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
 # Status header like "new messages" bar
-$wgHooks['SiteNoticeAfter'][] = 'wfConfirmAccountsNotice';
-
-function efLoadConfirmAccount() {
-	global $wgUser;
-	# Don't load unless needed
-	if ( $wgUser->getId() && $wgUser->isAllowed( 'confirmaccount' ) ) {
-		efConfirmAccountInjectStyle();
-	}
-}
+$wgHooks['SiteNoticeAfter'][] = 'efConfirmAccountsNotice';
 
 function efConfirmAccountSchemaUpdates() {
 	global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields, $wgExtNewTables, $wgExtNewIndexes;
-
 	$base = dirname( __FILE__ );
 	if ( $wgDBtype == 'mysql' ) {
 		$wgExtNewTables[] = array( 'account_requests', "$base/confirmaccount.sql" );
@@ -256,6 +255,5 @@ function efConfirmAccountSchemaUpdates() {
 
 		$wgExtNewIndexes[] = array( 'account_requests', 'acr_email', "$base/postgres/patch-email-index.sql" );
 	}
-
 	return true;
 }

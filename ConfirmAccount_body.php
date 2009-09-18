@@ -9,7 +9,7 @@ class ConfirmAccountsPage extends SpecialPage
 {
 
 	function __construct() {
-		SpecialPage::SpecialPage('ConfirmAccounts','confirmaccount');
+		parent::__construct('ConfirmAccounts','confirmaccount');
 	}
 
 	function execute( $par ) {
