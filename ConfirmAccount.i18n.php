@@ -4429,7 +4429,8 @@ Lassa le campo vacue si tu non vole plus includer un.',
 	'requestaccount-tos' => 'Io ha legite e consenti a acceptar le [[{{MediaWiki:Requestaccount-page}}|Conditiones de Servicio]] of {{SITENAME}}.
 Le nomine que io ha specificate sub "Nomine real" es de facto mi proprie nomine real.',
 	'requestaccount-submit' => 'Requesta de conto',
-	'requestaccount-sent' => 'Tu requesta de conto ha essite inviate con successo e nunc attende revision.',
+	'requestaccount-sent' => 'Tu requesta de conto ha essite inviate con successo e nunc attende revision.
+Un message de confirmation ha essite inviate a tu adresse de e-mail.',
 	'request-account-econf' => 'Tu adresse de e-mail ha essite confirmate e essera listate como tal in tu requesta de conto.',
 	'requestaccount-email-subj' => 'Confirmation de adresse e-mail pro {{SITENAME}}',
 	'requestaccount-email-body' => 'Un persona, probabilemente tu, desde le adresse IP $1, ha requestate un conto "$2" con iste adresse de e-mail in {{SITENAME}}.
@@ -7716,6 +7717,7 @@ $3
 );
 
 /** Portuguese (Português)
+ * @author Giro720
  * @author Lijealso
  * @author Malafaya
  * @author Waldir
@@ -7761,7 +7763,8 @@ O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
 	'requestaccount-tos' => 'Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] de {{SITENAME}}.
 O nome que especifiquei em "Nome real" é de facto o meu nome real.',
 	'requestaccount-submit' => 'Requerer conta',
-	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora pendente para confirmação.',
+	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora pendente para confirmação.
+Um e-mail de confirmação foi enviado para seu endereço eletrônico.',
 	'request-account-econf' => 'O seu endereço de email foi confirmado e será listado como tal no seu pedido de conta.',
 	'requestaccount-email-subj' => 'Confirmação de endereço de email para {{SITENAME}}',
 	'requestaccount-email-body' => 'Alguém, provavelmente vocês a partir do endereço IP $1, requisitou uma conta "$2" com este endereço de email em {{SITENAME}}.
@@ -8490,7 +8493,8 @@ Vaše meno je možné zmeniť vo vašich [[Special:Preferences|nastaveniach]].',
 	ak ste sa rozhodli žiadny nepriložiť.',
 	'requestaccount-tos' => 'Prečítal som a súhlasím, že budem dodržiavať [[{{MediaWiki:Requestaccount-page}}|Podmienky používania služby]] {{GRAMMAR:genitív|{{SITENAME}}}}. Meno, ktoré som uviedol ako „Skutočné meno“ je naozaj moje občianske meno.',
 	'requestaccount-submit' => 'Požiadať o účet',
-	'requestaccount-sent' => 'Vaša žiadosť o účet bola úspešne odoslaná a teraz sa čaká na jej kontrolu.',
+	'requestaccount-sent' => 'Vaša žiadosť o účet bola úspešne odoslaná a teraz sa čaká na jej kontrolu.
+Na vašu emailovú adresu vám bola odoslaná potvrdzujúca správa.',
 	'request-account-econf' => 'Vaša emailová adresa bola potvrdená a v takomto tvare sa uvedie vo vašej žiadosti o účet.',
 	'requestaccount-email-subj' => 'potvrdenie e-mailovej adresy pre {{GRAMMAR:akuzatív|{{SITENAME}}}}',
 	'requestaccount-email-body' => 'Niekto, pravdepodobne vy z IP adresy $1, zaregistroval účet
