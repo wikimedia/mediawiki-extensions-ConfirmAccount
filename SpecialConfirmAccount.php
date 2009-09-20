@@ -132,12 +132,12 @@ function efLoadConfirmAccount() {
 	}
 }
 
-function efAddRequestLoginText( &$template ) {
+function efAddRequestLoginText( &$sp ) {
 	global $wgUser;
 	wfLoadExtensionMessages( 'ConfirmAccount' );
 	# Add a link to RequestAccount from UserLogin
 	if ( !$wgUser->isAllowed( 'createaccount' ) ) {
-		$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) ) );
+		$sp->mFormHeader = wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) );
 	}
 	return true;
 }
