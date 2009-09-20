@@ -137,7 +137,7 @@ function efAddRequestLoginText( &$sp ) {
 	wfLoadExtensionMessages( 'ConfirmAccount' );
 	# Add a link to RequestAccount from UserLogin
 	if ( !$wgUser->isAllowed( 'createaccount' ) ) {
-		$sp->mFormHeader = wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) );
+		$sp->addFormHeader( wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) ) );
 	}
 	return true;
 }
