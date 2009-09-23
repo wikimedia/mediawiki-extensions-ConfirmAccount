@@ -10216,6 +10216,7 @@ $messages['vo'] = array(
  */
 $messages['yi'] = array(
 	'confirmaccount-real-q' => 'נאמען',
+	'confirmaccount-real' => 'נאָמען:',
 );
 
 /** Yue (粵語) */
