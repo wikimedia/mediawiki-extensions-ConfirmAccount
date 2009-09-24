@@ -3312,11 +3312,13 @@ Poden existir listas de contacto no sitio que poida usar se quere saber máis ac
  * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'requestaccount-leg-user' => 'Λογισμός χρωμένου',
 	'requestaccount-real' => 'ἀληθὲς ὄνομα:',
 	'requestaccount-email' => 'Ἡλεκτρονικὴ διεύθυνσις:',
 	'requestaccount-reqtype' => 'Θέσις:',
 	'requestaccount-level-0' => 'δημιουργός',
 	'requestaccount-level-1' => 'μεταγραφεύς',
+	'requestaccount-attach' => 'Βιογραφικόν (προαιρετικόν):',
 	'confirmaccount-real-q' => 'Ὄνομα',
 	'confirmaccount-email-q' => 'Ἠλεκτρονικαὶ ἐπιστολαί',
 	'confirmaccount-bio-q' => 'Βιογραφία',
@@ -3331,6 +3333,7 @@ $messages['grc'] = array(
 	'confirmaccount-pos-0' => 'δημιουργός',
 	'confirmaccount-pos-1' => 'μεταγραφεύς',
 	'confirmaccount-bio' => 'Βιογραφία:',
+	'confirmaccount-attach' => 'Βιογραφικόν:',
 	'confirmaccount-noreason' => '(οὐδεμία)',
 	'confirmaccount-ip' => 'Διεύθυνσις IP:',
 	'confirmaccount-submit' => 'Κυροῦν',
@@ -3660,7 +3663,7 @@ $messages['he'] = array(
 	'requestaccount-notes' => 'הערות נוספות:',
 	'requestaccount-urls' => 'רשימה של אתרים, אם יש כאלה (הפרידו באמצעות שורות חדשות):',
 	'requestaccount-inuse' => 'שם המשתמש כבר נמצא בשימוש בבקשת חשבון ממתינה.',
-	'requestaccount-tooshort' => 'על הביוגרפיה שלכם להכיל לפחות $1 מילים.',
+	'requestaccount-tooshort' => 'על הביוגרפיה שלכם להכיל לפחות {{PLURAL:$1|מילה אחת|$1 מילים}}.',
 	'requestaccount-exts' => 'סוג הקובץ המצורף אינו מורשה.',
 	'confirmedit-desc' => 'הענקת היכולת לביורוקרטים לאשר בקשות לחשבונות',
 	'confirmaccount-real-q' => 'שם',
