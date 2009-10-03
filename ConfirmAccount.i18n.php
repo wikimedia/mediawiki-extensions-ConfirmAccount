@@ -4215,7 +4215,10 @@ megerősítő linkre. Miután felhasználói fiókod elkészült, jelszavadat is
 	'requestaccount-areas-text' => 'Válaszd ki azokat a témaköröket, amelyek területén szaktudással rendelkezel vagy dolgozni szeretnél főként.',
 	'requestaccount-ext-text' => 'A következő információ titkos marad, és csak a kérelem során lesz használva.
 Megadhatsz kapcsolati adatokat, pl. telefonszámot, hogy segíts a személyazonosságod megerősítésében.',
-	'requestaccount-bio-text' => 'Az életrajzod lesz a felhasználói lapod alapértelmezett tartalma. Próbálj meg a bizonyítványokat is belefoglalni. Győződj meg arról, hogy tényleg közzé szeretnéd-e tenni ezeket az információkat. A nevedet megváltoztathatod a [[Special:Preferences|beállításaim]] lapon.',
+	'requestaccount-bio-text' => 'Az életrajzod lesz a felhasználói lapod alapértelmezett tartalma.
+Próbálj meg bizonyítványokat is belefoglalni.
+Győződj meg arról, hogy tényleg közzé szeretnéd-e tenni ezeket az információkat.
+A nevedet megváltoztathatod a „[[Special:Preferences|beállításaim]]” lapon.',
 	'requestaccount-real' => 'Valódi név:',
 	'requestaccount-same' => '(ugyanaz, mint a valódi név)',
 	'requestaccount-email' => 'E-mail cím:',
@@ -4236,7 +4239,8 @@ ha már nem akarod mellékelni.',
 	'requestaccount-tos' => 'Elolvastam és elfogadom a(z) {{SITENAME}} [[{{MediaWiki:Requestaccount-page}}|használati feltételeit]].
 A „Valódi név” mezőben megadott név az én valódi nevem.',
 	'requestaccount-submit' => 'Felhasználói fiók kérése',
-	'requestaccount-sent' => 'A kérelmed sikeresen el lett küldve, és most elfogadásra vár.',
+	'requestaccount-sent' => 'A kérelmed sikeresen el lett küldve, és most elfogadásra vár.
+Küldtünk egy megerősítő levelet az e-mail címedre.',
 	'request-account-econf' => 'Az e-mail címed meg lett erősítve, és meg fog jelenni a kérelmedben.',
 	'requestaccount-email-subj' => '{{SITENAME}} e-mail cím megerősítés',
 	'requestaccount-email-body' => 'Valaki, valószínűleg te, a $1 IP-címről kérte a "$2" nevű
