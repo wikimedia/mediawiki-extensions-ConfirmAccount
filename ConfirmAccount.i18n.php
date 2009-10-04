@@ -4210,6 +4210,7 @@ Ha a felhasználói fiókodat elfogadjuk, értesítve leszel e-mailben, ezután 
 	'requestaccount-leg-areas' => 'Érdeklődési területek',
 	'requestaccount-leg-person' => 'Személyes információ',
 	'requestaccount-leg-other' => 'További információ',
+	'requestaccount-leg-tos' => 'Használati feltételek',
 	'requestaccount-acc-text' => 'Miután elküldted a kérelmet, egy e-mail üzenetet küldünk a címedre. Kattints a benne található
 megerősítő linkre. Miután felhasználói fiókod elkészült, jelszavadat is elküldjük.',
 	'requestaccount-areas-text' => 'Válaszd ki azokat a témaköröket, amelyek területén szaktudással rendelkezel vagy dolgozni szeretnél főként.',
@@ -4261,6 +4262,7 @@ Nem igényelhetsz újabbakat.',
 	'requestaccount-loginnotice' => "Ha felhasználói fiókot szeretnél, akkor '''[[Special:RequestAccount|kérned kell egyet]]'''.",
 	'confirmaccount-newrequests' => "Jelenleg '''$1''' [[Special:ConfirmAccounts|felhasználói fiók-kérelem]] vár megerősítésre.",
 	'confirmaccounts' => 'Felhasználói fiók-kérelem megerősítése',
+	'confirmedit-desc' => 'Lehetővé teszi a bürokraták számára a felhasználói fiók kérelmek megerősítését.',
 	'confirmaccount-maintext' => "'''Ezen a lapon lehet megerősíteni a felhasználói fiókokra vonatkozó kérelmeket'''.
 
 A várósor három részre oszlik: egy az új kérelmeket, egy azokat a kérelmeket, melyekhez további adatok szükségesek és egy a visszautasított kérelmeket tartalmazza.
@@ -4270,6 +4272,7 @@ Az általad végzett műveleteket titokban naplózzuk.",
 	'confirmaccount-list' => 'Itt található az elfogadásra váró kérések listája.
 Az elfogadott fiókok el lesznek készítve, és törlődnek a listáról. A visszautasított kérések egyszerűen törlődnek.',
 	'confirmaccount-list2' => 'Itt találhatóak a nem rég visszautasított kérelmek, melyek automatikusan törlődnek néhány nap után. Még mindig el lehet őket fogadni, de beszélj a visszautasító adminisztrátorral a művelet végrehajtása előtt.',
+	'confirmaccount-list3' => 'Alább a lejárt felhasználói fiók kérelmek listája látható, amelyek pár nap után automatikusan törölhetőek; azonban még el lehet fogadni őket.',
 	'confirmaccount-text' => 'Ez egy elfogadásra váró felhasználói fiók-kérelem.
 
 Gondosan nézd át az információkat. Ha el szeretnéd fogadni, a pozíció legördülő listában állítsd be a felhasználói
@@ -4319,6 +4322,7 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-reject' => '(visszautasította [[User:$1|$1]] $2-kor)',
 	'confirmaccount-rational' => 'A jelentkezőnek adott magyarázat:',
 	'confirmaccount-noreason' => '(nincs)',
+	'confirmaccount-autorej' => '(ezt a kérelmet automatikusan elvetettük inaktivitás miatt)',
 	'confirmaccount-held' => '(visszatartotta [[User:$1|$1]] $2-kor)',
 	'confirmaccount-create' => 'Elfogadás (fiók elkészítése)',
 	'confirmaccount-deny' => 'Visszautasítás (törlés a listáról)',
@@ -4386,7 +4390,9 @@ Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolat
 	'usercredentials-ip' => 'Valódi IP-cím:',
 	'usercredentials-member' => 'Jogok:',
 	'usercredentials-badid' => 'A felhasználó nem rendelkezik személyes adatokkal. Ellenőrizd, hogy helyesen adtad-e meg a nevét.',
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|kért felhasználói fiókok várakozási sorának]] megtekintése',
 	'right-requestips' => 'az igénylők IP-címeinek megtekintése a kért fiókok feldolgozása közben',
+	'right-lookupcredentials' => '[[Special:UserCredentials|felhasználói azonosító információk]] megjelenítése',
 );
 
 /** Interlingua (Interlingua)
