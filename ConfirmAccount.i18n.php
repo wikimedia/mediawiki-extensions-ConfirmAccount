@@ -2581,6 +2581,7 @@ $messages['ext'] = array(
  * @author Jaakonam
  * @author Mobe
  * @author Nike
+ * @author Str4nd
  * @author Taleman
  * @author Varusmies
  */
@@ -2625,7 +2626,8 @@ Jätä kenttä tyhjäksi, jos et enää halua liittää tiedostoa.',
 	'requestaccount-tos' => "Olen lukenut ja hyväksyn {{GRAMMAR:genitive|{{SITENAME}}}} [[{{MediaWiki:Requestaccount-page}}|käyttöehdot]].
 Kohdasssa ''Oikea nimi'' olen antanut oman virallisen nimeni.",
 	'requestaccount-submit' => 'Pyydä käyttäjätunnusta',
-	'requestaccount-sent' => 'Käyttäjätunnuspyyntösi on lähetetty onnistuneesti ja odottaa nyt käsittelyä.',
+	'requestaccount-sent' => 'Käyttäjätunnuspyyntösi on lähetetty onnistuneesti ja odottaa nyt käsittelyä.
+Vahvistusviesti on lähetetty sähköpostiosoitteeseesi.',
 	'request-account-econf' => 'Sähköpostiosoitteesi on tarkistettu ja merkitään tarkistetuksi käyttäjätunnuspyyntöösi.',
 	'requestaccount-email-subj' => '{{SITENAME}}: sähköpostiosoitteen tarkistus',
 	'requestaccount-email-body' => 'Joku, luultavasti sinä itse IP-osoitteesta $1, on pyytänyt käyttäjätunnusta "$2" sivustoon {{SITENAME}} ja käyttänyt tätä sähköpostiosoitetta.
