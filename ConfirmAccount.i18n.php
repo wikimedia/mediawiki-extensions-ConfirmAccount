@@ -7444,7 +7444,8 @@ Pozostaw pole niewypełnione jeśli nie chcesz więcej go załączać.',
 	'requestaccount-tos' => 'Przeczytałem i wyrażam bez zastrzeżeń zgodę na [[{{MediaWiki:Requestaccount-page}}|warunki korzystania]] z {{GRAMMAR:D.lp|{{SITENAME}}}}.
 Oświadczam, że wpisane przez ze mnie imię i nazwisko są faktycznie moimi.',
 	'requestaccount-submit' => 'Składam wniosek',
-	'requestaccount-sent' => 'Twój wniosek o założenie konta został wysłany i oczekuje na rozpatrzenie.',
+	'requestaccount-sent' => 'Twój wniosek o założenie konta został wysłany i oczekuje na rozpatrzenie.
+Wiadomość z prośbą o potwierdzenie została przesłana na adres Twojej poczty elektronicznej.',
 	'request-account-econf' => 'Adres e‐mail został potwierdzony i będzie wyświetlany tak, jak określono we wniosku o założenie konta.',
 	'requestaccount-email-subj' => 'Potwierdzenie adresu e‐mail w {{GRAMMAR:MS.lp|{{SITENAME}}}}',
 	'requestaccount-email-body' => 'Ktoś (zakładamy, że Ty), z komputera o adresie IP $1, złożył w {{GRAMMAR:MS.pl|{{SITENAME}}}} wniosek o założenie konta użytkownika „$2”, podając przy tym niniejszy adres e‐mail.
