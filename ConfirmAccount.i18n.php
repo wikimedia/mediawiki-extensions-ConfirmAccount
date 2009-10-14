@@ -5339,7 +5339,8 @@ Lirwakna lapangan iki kosong yèn panjenengan ora kepéngin manèh nglebokaké C
 	'requestaccount-tos' => "Aku wis maca lan sarujuk nuruti [[{{MediaWiki:Requestaccount-page}}|Sarat Paladènan (''Terms of Service'')]]-é {{SITENAME}}.
 Jeneng sing tak-wènèhaké minangka \"Jeneng asli\" iku pancèn jenengku dhéwé.",
 	'requestaccount-submit' => 'Nyuwun rékening (akun)',
-	'requestaccount-sent' => "Panyuwunan rékening panjenengan bisa kasil dikirim lan saiki lagi di-''review''.",
+	'requestaccount-sent' => 'Panyuwunan akun panjenengan wis kasil dikirim lan saiki lagi dipriksa.
+Sawijining layang konfirmasi wis dikirim menyang alamat layang-e panjenengan.',
 	'request-account-econf' => 'Alamat e-mail panjenengan wis dikonfirmasi lan bakal didokok ing daftar kaya ing panyuwunan rékening panjenengan.',
 	'requestaccount-email-subj' => 'Konfirmasi alamat e-mail {{SITENAME}}',
 	'requestaccount-email-subj-admin' => 'Panyuwunan rékening ing {{SITENAME}}',
