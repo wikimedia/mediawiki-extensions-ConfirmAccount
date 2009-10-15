@@ -9124,6 +9124,7 @@ $messages['su'] = array(
  * @author Lejonel
  * @author M.M.S.
  * @author Najami
+ * @author Per
  */
 $messages['sv'] = array(
 	'requestaccount' => 'Ansök om konto',
@@ -9159,7 +9160,7 @@ Ditt namn kan du ändra i [[Special:Preferences|dina inställningar]].',
 	'requestaccount-urls' => 'Lista över webbplatser (skriv en per rad om det är flera):',
 	'requestaccount-agree' => 'Du måste bekräfta att ditt namn är riktigt och att du accepterar våra användningsvillkor.',
 	'requestaccount-inuse' => 'Användarnamnet används redan i en kontoansökan som väntar på att godkännas.',
-	'requestaccount-tooshort' => 'Din biografi måste innehålla minst $1 ord.',
+	'requestaccount-tooshort' => 'Din biografi måste innehålla minst  {{PLURAL:$1|ett ord|$1 ord}}.',
 	'requestaccount-emaildup' => 'Samma e-postadress används i en annan kontoansökan som väntar på att godkännas.',
 	'requestaccount-exts' => 'Den bifogade filen har en otillåten filtyp.',
 	'requestaccount-resub' => 'Av säkerhetsskäl måste du välja filen med din meritförteckning/CV igen.
@@ -9167,7 +9168,8 @@ Lämna fältet tomt om du inte längre vill bifoga någon fil.',
 	'requestaccount-tos' => 'Jag har läst och lovar att följa [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] på {{SITENAME}}.
 Namnet som jag angivit som "Riktigt namn" är verkligen mitt egna riktiga namn.',
 	'requestaccount-submit' => 'Ansök om konto',
-	'requestaccount-sent' => 'Din kontoansökan har nu skickats och väntar på att godkännas.',
+	'requestaccount-sent' => 'Din kontoansökan har nu skickats och väntar på att godkännas.
+Du har fått en bekräftelse tll din e-post adress.',
 	'request-account-econf' => 'Din e-postadress har bekräftats. Det kommer att anges i din kontoansökan.',
 	'requestaccount-email-subj' => 'Bekräftelse av e-postadress på {{SITENAME}}',
 	'requestaccount-email-body' => 'Någon, förmodligen du från IP-adressen $1, har ansökt om kontot "$2" med den här e-postadressen på {{SITENAME}}.
@@ -10233,7 +10235,9 @@ $messages['vo'] = array(
  */
 $messages['yi'] = array(
 	'confirmaccount-real-q' => 'נאמען',
+	'confirmaccount-name' => 'באַניצער נאָמען',
 	'confirmaccount-real' => 'נאָמען:',
+	'usercredentials-user' => 'באַניצער נאָמען:',
 );
 
 /** Yue (粵語) */
