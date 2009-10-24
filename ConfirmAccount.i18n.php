@@ -3022,9 +3022,9 @@ Voutron nom pôt étre changiê en utilisent voutres [[Special:Preferences|prèf
 	'requestaccount-notes' => 'Notes de ples :',
 	'requestaccount-urls' => 'Lista des setos vouèbe. S’y en at un mouél, sèparâd-los per un sôt de legne :',
 	'requestaccount-agree' => 'Vos dête cèrtifiar que voutron veré nom est justo et pués que vos accèptâd les condicions d’usâjo.',
-	'requestaccount-inuse' => 'Lo nom d’utilisator est ja utilisâ dens una demanda en cors d’aprobacion.',
+	'requestaccount-inuse' => 'Lo nom d’utilisator est ja utilisâ dens una demanda de compto utilisator qu’est aprés étre aprovâ.',
 	'requestaccount-tooshort' => 'Voutra biografia dêt avêr u muens $1 mot{{PLURAL:$1||s}}.',
-	'requestaccount-emaildup' => 'Una ôtra demanda en cors utilise la méma adrèce èlèctronica.',
+	'requestaccount-emaildup' => 'Una ôtra demanda qu’est aprés étre confirmâ utilise la méma adrèce èlèctronica.',
 	'requestaccount-exts' => 'Lo tipo du fichiér juent est pas pèrmês.',
 	'requestaccount-resub' => 'Volyéd tornar chouèsir voutron fichiér de CV por des rêsons de sècuritât.
 Se vos souhètâd pas més encllure ceti, lèssiéd lo champ vouedo.',
@@ -3049,12 +3049,12 @@ L’adrèce èlèctronica at étâ confirmâ. Vos pouede aprovar la demanda ique
 	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}} utilisator.
 Vos pouede pas més fâre de demanda.',
 	'requestaccount-loginnotice' => "Por avêr un compto utilisator, vos dête nen fâre la '''[[Special:RequestAccount|demanda]]'''.",
-	'confirmaccount-newrequests' => "Ora, y at '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compto utilisator]]|[[Special:ConfirmAccounts|demandes de comptos utilisator]]}} en cors.",
+	'confirmaccount-newrequests' => "Ora, y at '''$1''' [[Special:ConfirmAccounts|demand{{PLURAL:$1|a|es}} de compto utilisator]] qu{{PLURAL:$1|’est|e sont}} aprés étre confirmâ{{PLURAL:$1||s}}.",
 	'confirmaccounts' => 'Confirmar les demandes de comptos utilisator',
 	'confirmedit-desc' => 'Balye ux grata-papiérs la possibilitât de confirmar les demandes de comptos utilisator.',
 	'confirmaccount-list' => 'Vê-que, ce-desot, la lista des comptos en atenta d’aprobacion. Los comptos accèptâs seront crèâs et reteriês de ceta lista. Los comptos refusâs seront suprimâs de ceta méma lista.',
-	'confirmaccount-none-o' => 'Ora, y at gins de demanda de compto utilisator en cors dens ceta lista.',
-	'confirmaccount-none-h' => 'Ora, y at gins de resèrvacion de compto utilisator en cors dens ceta lista.',
+	'confirmaccount-none-o' => 'Ora, y at gins de demanda de compto utilisator qu’est aprés étre confirmâ dens ceta lista.',
+	'confirmaccount-none-h' => 'Ora, y at gins de resèrvacion de compto utilisator qu’est aprés étre confirmâ dens ceta lista.',
 	'confirmaccount-none-r' => 'Ora, y at gins de refus novél de demanda de compto utilisator dens ceta lista.',
 	'confirmaccount-none-e' => 'Ora, y at gins de demanda de compto utilisator èxpirâ dens ceta lista.',
 	'confirmaccount-real-q' => 'Nom',
@@ -6166,11 +6166,29 @@ $messages['mhr'] = array(
  * @author Brest
  */
 $messages['mk'] = array(
+	'requestaccount' => 'Пријава за сметка',
+	'requestaccount-text' => "''Пополнете го и поднесете го следниов образец за да побарате корисничка сметка'''.
+
+Најпрвин прочитајте ги [[{{MediaWiki:Requestaccount-page}}|Условите на користење]] пред да побарате сметка.
+
+Штом ќе ви биде одобрена сметката, ќе ви биде испратено известување по е-пошта и тогаш ќе можете да [[Special:UserLogin|се најавите]] и да ја користите.",
+	'requestaccount-page' => '{{ns:project}}:Услови на употреба',
 	'requestaccount-dup' => "'''Белешка: Веќе се најавени со регистрирана сметка.'''",
 	'requestaccount-leg-user' => 'Корисничка сметка',
 	'requestaccount-leg-areas' => 'Главно се интересира за',
 	'requestaccount-leg-person' => 'Лични информации',
 	'requestaccount-leg-other' => 'Други информации',
+	'requestaccount-leg-tos' => 'Услови на употреба',
+	'requestaccount-acc-text' => 'Откога ќе го поднесете бараето, ќе добиете потврдна порака по е-пошта.
+Одговорете со тоа што ќе кликнете на потврдната врска во пораката.
+Со создавање на сметката ќе ви биде испратена и вашата лозинка.',
+	'requestaccount-areas-text' => 'Подолу изберете ги тематските области во кои сте стручни, или на кои би сакале највеќе да работите.',
+	'requestaccount-ext-text' => 'Следните информации се држат во приватност и ќе се користат само на ваше барање.
+Препорачуваме да наведете контакти како телефонски број за полесно потврдување на идентитетот.',
+	'requestaccount-bio-text' => 'Вашата биографија по основно ќе биде поставена како содржина на вашата корисничка страница.
+По можност вклучете и препораки.
+Уверете се дека немате против објавување на вакви информации.
+Името можете да си го промените преку [[Special:Preferences|вашите нагодувања]].',
 	'requestaccount-real' => 'Вистинско име:',
 	'requestaccount-same' => '(исто како вистинско име)',
 	'requestaccount-email' => 'Е-поштенска адреса:',
@@ -6180,12 +6198,49 @@ $messages['mk'] = array(
 	'requestaccount-bio' => 'Лична биографија:',
 	'requestaccount-attach' => 'Резиме или CV (не е задолжително):',
 	'requestaccount-notes' => 'Други забелешки:',
-	'requestaccount-urls' => 'Листа на веб сајтови, ако има (се пишуваат во посебен ред):',
+	'requestaccount-urls' => 'Листа на веб-страници, ако ги има (се пишуваат во посебен ред):',
+	'requestaccount-agree' => 'Морате да потврдите дека вашето вистинско име е точно и дека се согласувате со нашите Услови на употреба.',
+	'requestaccount-inuse' => 'Тоа корисничко име е веќе искористено во друга пријава и чека одобрение.',
+	'requestaccount-tooshort' => 'Вашата биографија мора да содржи најмалку $1 {{PLURAL:$1|збор|зборови}}.',
+	'requestaccount-emaildup' => 'Истата адреса ја користи друга пријава на сметка во исчекување.',
+	'requestaccount-exts' => 'Прикачувањето на податотеки од тој формат не е дозволено.',
+	'requestaccount-resub' => 'Податотеката со вашето CV/резиме мора да се преизбере од безбедносни причини.
+Оставете го полето празно ако повеќе не сакате да поставите разиме.',
+	'requestaccount-tos' => 'Ги прочитав, и се согласувам да ги почитувам [[{{MediaWiki:Requestaccount-page}}|Условите на користење]] на {{SITENAME}}.
+Името кое го назначив како „Вистинско име“ е навистина моето име и презиме.',
+	'requestaccount-submit' => 'Барање за сметка',
+	'requestaccount-sent' => 'Вашето барање за сметка е успешно испратено и чека решение.
+Ви испративме потврдна порака по е-пошта.',
+	'request-account-econf' => 'Вашата е-поштенска адреса е потврдена и ќе биде наведена како таква во вашето барање за сметка.',
+	'requestaccount-email-subj' => '{{SITENAME}}: потврдување на е-пошта',
+	'requestaccount-email-body' => 'Некој, веројатно вие од IP адресата $1, побарал сметка „$2“ со оваа е-поштенска адреса на {{SITENAME}}.
+
+За да потврдите дека оваа сметка навистина ви припаѓа вам на {{SITENAME}}, отворете ја врскава во прелистувачот:
+
+$3
+
+Ако сметката е создадена, само вие ќе ја добиете лозинката по е-пошта.
+Доколку ова *не* сте вие, не одете на врската.
+Овој потврден код истекува во $4.',
+	'requestaccount-email-subj-admin' => 'Барање за сметка на {{SITENAME}}',
+	'confirmaccounts' => 'Потврдување на барања за сметки',
+	'confirmedit-desc' => 'Им овозможува на бирократите да потврдуваат барања за сметка',
+	'confirmaccount-maintext' => "'''Оваа страница служи за потврдување на барања за сметки на „{{SITENAME}}'''.
+
+Секојa редica на барања за сметки се состои од три подредици.
+Една за отворено барање, една за оние ставени на чекање од други администратори заради потреба од повеќе информации, и трета за неодамна одбиени барања.
+
+Кога одговарате на барање, прегледајте го и оценете го внимателно, и по потреба, проверете ги наведените информациите.
+Вашите постапки ќе бидат приватно заведени.
+Од вас се очекува и да ги прегледувате сите дејствија што се случуваат овде покрај она што го правите вие самите.",
+	'confirmaccount-list' => 'Подолу е наведена листа на барања за сметка во исчекување на одобрение.
+Штом ќе се одобри или одбие едно барање, истото ќе биде отстрането од листата.',
 	'confirmaccount-real-q' => 'Име',
 	'confirmaccount-email-q' => 'Е-пошта',
 	'confirmaccount-bio-q' => 'Биографија',
 	'confirmaccount-showopen' => 'отворени барања',
 	'confirmaccount-showrej' => 'одбиени барања',
+	'confirmaccount-type' => 'Редица:',
 	'confirmaccount-q-open' => 'отворени барања',
 	'confirmaccount-leg-person' => 'Персонални информации',
 	'confirmaccount-leg-other' => 'Други информации',
@@ -6200,13 +6255,72 @@ $messages['mk'] = array(
 	'confirmaccount-notes' => 'Дополнителни белешки:',
 	'confirmaccount-urls' => 'Листа на веб места:',
 	'confirmaccount-none-p' => '(не е наведено)',
+	'confirmaccount-econf' => '(потврдено)',
+	'confirmaccount-reject' => '(одбиено од [[User:$1|$1]] на $2)',
+	'confirmaccount-rational' => 'Објаснение за барателот:',
+	'confirmaccount-noreason' => '(нема)',
+	'confirmaccount-autorej' => '(ова барање е автоматски отфрлено поради неактивност)',
+	'confirmaccount-held' => '(обележано како „на чекање“ од [[User:$1|$1]] на $2)',
+	'confirmaccount-create' => 'Прифати (создај сметка)',
+	'confirmaccount-deny' => 'Одбиј (отстрани од листата)',
+	'confirmaccount-hold' => 'На чекање',
+	'confirmaccount-spam' => 'Спам (не го испраќајте писмото)',
 	'confirmaccount-ip' => 'IP адреса:',
 	'confirmaccount-submit' => 'Потврди',
+	'confirmaccount-acc' => 'Барањето за сметка е успешно потврдено;
+создадена е нова сметка [[User:$1|$1]].',
+	'confirmaccount-rej' => 'Барањето за сметка е успешно одбиено.',
+	'confirmaccount-welc' => "'''Добредојдовте на ''{{SITENAME}}''!'''
+Се надеваме дека ќе придонесувате многу и квалитетно.
+Препорачуваме да ги прочитате [[{{MediaWiki:Helppage}}|страниците за помош]].
+Уште еднаш, добредојдовте и пријатен провод!",
 	'confirmaccount-wsum' => 'Добредојдовте!',
+	'confirmaccount-email-body2' => 'Вашето барање за сметка на {{SITENAME}} е одобрено.
+
+Назив на сметката: $1
+
+Лозинка: $2
+
+$3
+
+Од безбедносни причини треба да си ја промените лозинката при првото најавување.
+За да се најавите, одете на {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Жалиме, но вашето барање за сметка „$1“ на {{SITENAME}} е одбиено.
+
+Ова може да се должи на неколку причини.
+Може да несте го пополниле образецот правилно, одговорите ви биле прекратки, или пак не задоволувате некој друг критериум.
+На страницата може да има контактни листи кои можете да ги користите ако сакате да дознаете повеќе за правилата за сметки.',
+	'confirmaccount-email-body4' => 'Жалиме, но вашето барање за сметка „$1“ на {{SITENAME}} беше одбиено.
+
+$2
+
+На страницата може да има контактни листи кои можете да ги користите ако сакате да дознаете повеќе за правилата за сметки.',
+	'confirmaccount-email-body5' => 'Пред да можеме да го прифатиме вашето барање за сметка „$1“ на {{SITENAME}} морате да ни дадете извесни дополнителни иформации.
+
+$2
+
+На страницата може да има контактни листи кои можете да ги користите ако сакате да дознаете повеќе за правилата за сметки.',
+	'usercredentials' => 'Препораки за корисник',
+	'usercredentials-leg' => 'Проверете ги потврдените препораки за некој корисник',
 	'usercredentials-user' => 'Корисничко име:',
+	'usercredentials-text' => 'Подолу се прикажани потврдените препораки за избраната корисничка сметка.',
 	'usercredentials-leg-user' => 'Корисничка сметка',
+	'usercredentials-leg-areas' => 'Главни полиња на интерес',
 	'usercredentials-leg-person' => 'Лични информации',
+	'usercredentials-leg-other' => 'Други информации',
 	'usercredentials-email' => 'Е-пошта:',
+	'usercredentials-real' => 'Вистинско име:',
+	'usercredentials-bio' => 'Биографија:',
+	'usercredentials-attach' => 'Резиме/CV:',
+	'usercredentials-notes' => 'Дополнителни забелешки:',
+	'usercredentials-urls' => 'Листа на веб-страници:',
+	'usercredentials-ip' => 'Изворна IP-адреса',
+	'usercredentials-member' => 'Права:',
+	'usercredentials-badid' => 'Нема пронајдено препораки за овој корисник.
+Проверете дали името е правилно напишано.',
+	'right-confirmaccount' => 'Погледајте ја [[Special:ConfirmAccounts|редицата со барани сметки]]',
+	'right-requestips' => 'Погледајте ги IP-адресите на барателот додека обработувате барани сметки',
+	'right-lookupcredentials' => 'Погледајте ги [[Special:UserCredentials|препораките за корисникот]]',
 );
 
 /** Malayalam (മലയാളം)
