@@ -6036,6 +6036,7 @@ Kuckt w.e.g. no op den Numm richteg geschriwwen ass.',
 );
 
 /** Limburgish (Limburgs)
+ * @author Aelske
  * @author Pahles
  */
 $messages['li'] = array(
@@ -6065,9 +6066,9 @@ Doe kans diene naam aanpasse via dien [[Special:Preferences|veurkaöre]].",
 	'requestaccount-real' => 'Diene echte naam:',
 	'requestaccount-same' => '(geliek aan diene echte naam)',
 	'requestaccount-email' => 'E-mailadres:',
-	'requestaccount-reqtype' => 'Pezisie:',
-	'requestaccount-level-0' => 'Outäör',
-	'requestaccount-level-1' => 'riddektäör',
+	'requestaccount-reqtype' => 'Positie',
+	'requestaccount-level-0' => 'auteur',
+	'requestaccount-level-1' => 'redacteur',
 	'requestaccount-bio' => 'Persuunlike biografie:',
 	'requestaccount-attach' => 'CV (optioneel):',
 	'requestaccount-notes' => 'Opmerkinge:',
