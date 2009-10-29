@@ -4612,6 +4612,7 @@ Verifica que le nomine sia orthographiate correctemente.',
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
  * @author Irwangatot
+ * @author IvanLanin
  * @author Rex
  */
 $messages['id'] = array(
@@ -4649,9 +4650,9 @@ Nama Anda dapat diubah melalui [[Special:Preferences|preferensi Anda]].',
 	'requestaccount-notes' => 'Catatan tambahan:',
 	'requestaccount-urls' => 'Daftar situs web, jika ada (pisahkan dengan baris baru):',
 	'requestaccount-agree' => 'Anda harus menyatakan bahwa nama asli Anda adalah benar dan bahwa Anda setuju dengan Syarat Layanan kami.',
-	'requestaccount-inuse' => 'Nama pengguna ini sudah digunakan dalam salah satu antrian permintaan akun.',
+	'requestaccount-inuse' => 'Nama pengguna ini sudah digunakan dalam salah satu antrean permintaan akun.',
 	'requestaccount-tooshort' => 'Biografi Anda harus memiliki panjang minimal $1 {{PLURAL:$1|kata|kata}}.',
-	'requestaccount-emaildup' => 'Sebuah antrian permintaan lain menggunakan alamat surat-e yang sama.',
+	'requestaccount-emaildup' => 'Sebuah antrean permintaan lain menggunakan alamat surat-e yang sama.',
 	'requestaccount-exts' => 'Jenis lampiran berkas tidak diizinkan.',
 	'requestaccount-resub' => 'Resume/CV Anda harus dipilih kembali atas alasan keamanan.
 Tinggalkan kotak ini kosong jika Anda sudah tidak ingin untuk memasukkannya.',
@@ -4682,7 +4683,7 @@ Anda tidak dapat lagi melakukan permintaan.',
 	'confirmedit-desc' => 'Memberikan fungsi teknis tambahan bagi birokrat untuk mengkonfirmasikan permintaan akun',
 	'confirmaccount-maintext' => "'''Halaman ini digunakan untuk mengkonfirmasikan permintaan akun di ''{{SITENAME}}'''''.
 
-Setiap antrian permintaan akun memiliki tiga sub-antrian.
+Setiap antrean permintaan akun memiliki tiga sub-antrean.
 Satu untuk permintaan yang belum ditinjau, satu untuk akun yang ditunda oleh pengurus lain karena menunggu informasi tambahan, dan terakhir untuk permintaan yang baru ditolak.
 
 Jika Anda hendak meresponi sebuah permintaan, tinjau dengan hati-hati, dan jika diperlukan, konfirmasikan informasi yang disertakan.
@@ -4694,7 +4695,7 @@ Jika disetujui ataupun ditolak, permintaan tersebut akan dikeluarkan dari daftar
 Permintaan ini masih dapat disetujui untuk dijadikan akun, tetapi Anda mungkin perlu mendiskusikan terlebih dahulu dengan pengurus yang menolak permintaan tersebut sebelumnya.',
 	'confirmaccount-list3' => 'Berikut adalah daftar permintaan akun yang telah kadaluwarsa dan akan dihapuskan dalam beberapa hari.
 Permintaan ini masih dapat disetujui untuk dijadikan akun.',
-	'confirmaccount-text' => "Ini adalah antrian permintaan untuk membuat akun di '''{{SITENAME}}'''.
+	'confirmaccount-text' => "Ini adalah antrean permintaan untuk membuat akun di '''{{SITENAME}}'''.
 
 Tinjau informasi berikut dengan seksama.
 Jika Anda menyetujui permintaan ini, gunakan daftar dropdown untuk mengeset status akun pengguna tersebut.
@@ -4702,29 +4703,29 @@ Suntingan terhadap biografi pendaftar tidak akan mempengaruhi data kepercayaan y
 Perlu dicatat bahwa Anda dapat memilih untuk membuat akun dengan nama akun yang berbeda.
 Lakukan ini untuk menghindari kekeliruan dengan nama lain.
 
-Jika Anda tidak menyetujui atau menolak permintaan ini, maka permintaan ini akan tetap berada dalam status antrian.",
-	'confirmaccount-none-o' => 'Tidak ada antrian permintaan akun dalam daftar ini.',
-	'confirmaccount-none-h' => 'Tidak ada antrian permintaan akun yang ditunda dalam daftar ini.',
+Jika Anda tidak menyetujui atau menolak permintaan ini, maka permintaan ini akan tetap berada dalam status antrean.",
+	'confirmaccount-none-o' => 'Tidak ada antrean permintaan akun dalam daftar ini.',
+	'confirmaccount-none-h' => 'Tidak ada antrean permintaan akun yang ditunda dalam daftar ini.',
 	'confirmaccount-none-r' => 'Tidak ada permintaan akun yang baru ditolak di daftar ini.',
 	'confirmaccount-none-e' => 'Tidak ada permintaan akun yang kadaluwarsa dalam daftar ini.',
 	'confirmaccount-real-q' => 'Nama',
 	'confirmaccount-email-q' => 'Surel',
 	'confirmaccount-bio-q' => 'Biografi',
-	'confirmaccount-showopen' => 'permintaan dalam antrian',
+	'confirmaccount-showopen' => 'permintaan dalam antrean',
 	'confirmaccount-showrej' => 'permintaan ditolak',
 	'confirmaccount-showheld' => 'permintaan ditunda',
 	'confirmaccount-showexp' => 'permintaan kadaluwarsa',
 	'confirmaccount-review' => 'Tinjau',
-	'confirmaccount-types' => 'Pilih antrian konfirmasi akun di bawah ini:',
-	'confirmaccount-all' => '(tampilkan semua antrian)',
-	'confirmaccount-type' => 'Antrian:',
+	'confirmaccount-types' => 'Pilih antrean konfirmasi akun di bawah ini:',
+	'confirmaccount-all' => '(tampilkan semua antrean)',
+	'confirmaccount-type' => 'Antrean:',
 	'confirmaccount-type-0' => 'penulis prospektif',
 	'confirmaccount-type-1' => 'penyunting prospektif',
-	'confirmaccount-q-open' => 'permintaan dalam antrian',
+	'confirmaccount-q-open' => 'permintaan dalam antrean',
 	'confirmaccount-q-held' => 'permintaan ditunda',
 	'confirmaccount-q-rej' => 'permintaan ditolak',
 	'confirmaccount-q-stale' => 'permintaan kadaluwarsa',
-	'confirmaccount-badid' => 'Tidak ada permintaan dalam antrian yang terkait dengan ID tersebut.
+	'confirmaccount-badid' => 'Tidak ada permintaan dalam antrean yang terkait dengan ID tersebut.
 Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-leg-user' => 'Akun pengguna',
 	'confirmaccount-leg-areas' => 'Bidang utama yang diminati',
@@ -4819,7 +4820,7 @@ Mungkin ada daftar kontak di situs yang dapat Anda gunakan jika Anda ingin tahu 
 	'usercredentials-member' => 'Hak:',
 	'usercredentials-badid' => 'Tidak ditemukan Kredensial untuk pengguna ini,
 Periksa! apakah nama dieja dengan benar.',
-	'right-confirmaccount' => 'Lihat [[Special:ConfirmAccounts|antrian peminta akun]]',
+	'right-confirmaccount' => 'Lihat [[Special:ConfirmAccounts|antrean peminta akun]]',
 	'right-requestips' => 'Lihat Alamat IP pemohon selama proses permohonan akun',
 	'right-lookupcredentials' => 'Lihat [[Special:UserCredentials|pengguna  Kredensial]]',
 );
