@@ -9783,6 +9783,7 @@ $2
 );
 
 /** Thai (ไทย)
+ * @author Ans
  * @author Octahedron80
  * @author Passawuth
  */
