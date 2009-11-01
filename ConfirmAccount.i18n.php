@@ -1321,20 +1321,26 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
+	'requestaccount-real' => 'Anv gwir :',
 	'requestaccount-email' => "Chomlec'h postel :",
 	'requestaccount-level-0' => 'aozer',
 	'requestaccount-level-1' => 'skridaozer',
 	'confirmaccount-real-q' => 'Anv',
 	'confirmaccount-email-q' => 'Postel',
 	'confirmaccount-bio-q' => 'Levrlennadur',
+	'confirmaccount-leg-user' => 'Kont implijer',
 	'confirmaccount-name' => 'Anv implijer',
 	'confirmaccount-real' => 'Anv :',
 	'confirmaccount-email' => 'Postel :',
 	'confirmaccount-pos-1' => 'skridaozer',
+	'confirmaccount-urls' => "Roll lec'hiennoù web :",
 	'confirmaccount-wsum' => 'Degemer mat !',
+	'usercredentials-user' => 'Anv implijer :',
 	'usercredentials-email' => 'Postel :',
+	'usercredentials-member' => 'Gwirioù :',
 );
 
 /** Bosnian (Bosanski)
