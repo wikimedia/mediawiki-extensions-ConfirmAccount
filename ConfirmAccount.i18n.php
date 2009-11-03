@@ -10244,6 +10244,7 @@ $messages['ug-latn'] = array(
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
+ * @author Prima klasy4na
  */
 $messages['uk'] = array(
 	'requestaccount' => 'Запит облікового запису',
@@ -10262,6 +10263,7 @@ $messages['uk'] = array(
 	'confirmaccount-real' => "Ім'я:",
 	'confirmaccount-email' => 'Електронна адреса:',
 	'confirmaccount-reqtype' => 'Посада:',
+	'confirmaccount-pos-0' => 'автор',
 );
 
 /** Vèneto (Vèneto)
