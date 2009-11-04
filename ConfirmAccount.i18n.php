@@ -1331,6 +1331,7 @@ $messages['bn'] = array(
 );
 
 /** Breton (Brezhoneg)
+ * @author Fohanno
  * @author Fulup
  * @author Y-M D
  */
@@ -1339,6 +1340,7 @@ $messages['br'] = array(
 	'requestaccount-email' => "Chomlec'h postel :",
 	'requestaccount-level-0' => 'aozer',
 	'requestaccount-level-1' => 'skridaozer',
+	'requestaccount-notes' => 'Notennoù ouzhpenn :',
 	'confirmaccount-real-q' => 'Anv',
 	'confirmaccount-email-q' => 'Postel',
 	'confirmaccount-bio-q' => 'Levrlennadur',
@@ -1346,11 +1348,17 @@ $messages['br'] = array(
 	'confirmaccount-name' => 'Anv implijer',
 	'confirmaccount-real' => 'Anv :',
 	'confirmaccount-email' => 'Postel :',
+	'confirmaccount-pos-0' => 'aozer',
 	'confirmaccount-pos-1' => 'skridaozer',
 	'confirmaccount-urls' => "Roll lec'hiennoù web :",
+	'confirmaccount-econf' => '(kadarnaet)',
+	'confirmaccount-noreason' => '(hini ebet)',
+	'confirmaccount-create' => 'Asantiñ (krouiñ ar gont)',
+	'confirmaccount-ip' => "Chomlec'h IP :",
 	'confirmaccount-wsum' => 'Degemer mat !',
 	'usercredentials-user' => 'Anv implijer :',
 	'usercredentials-email' => 'Postel :',
+	'usercredentials-real' => 'Gwir anv :',
 	'usercredentials-member' => 'Gwirioù :',
 );
 
