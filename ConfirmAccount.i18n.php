@@ -4659,7 +4659,7 @@ $messages['id'] = array(
 
 Pastikan Anda telah membaca [[{{MediaWiki:Requestaccount-page}}|kebijakan akun]] sebelum mengajukan permintaan.
 
-Bila akun yang Anda ajukan telah disetujui, sebuah surat-e notifikasi akan dikirimkan kepada Anda dan akun tersebut dapat digunakan untuk [[Special:UserLogin|masuk log]] di situs ini.",
+Bila akun yang Anda ajukan telah disetujui, sebuah surel notifikasi akan dikirimkan kepada Anda dan akun tersebut dapat digunakan untuk [[Special:UserLogin|masuk log]] di situs ini.",
 	'requestaccount-page' => '{{ns:project}}:Kebijakan akun pengguna',
 	'requestaccount-dup' => "'''Catatan: Anda sudah masuk log dengan sebuah akun terdaftar.'''",
 	'requestaccount-leg-user' => 'Akun pengguna',
@@ -4667,9 +4667,9 @@ Bila akun yang Anda ajukan telah disetujui, sebuah surat-e notifikasi akan dikir
 	'requestaccount-leg-person' => 'Informasi pribadi',
 	'requestaccount-leg-other' => 'Informasi lain',
 	'requestaccount-leg-tos' => 'Syarat Layanan',
-	'requestaccount-acc-text' => 'Kami akan mengirimkan sebuah pesan konfirmasi ke alamat surat-e Anda segera setelah permintaan ini dikirimkan.
-Klik pada pranala dalam surat-e tersebut untuk konfirmasi.
-Kata sandi Anda juga akan dikirimkan melalui surat-e setelah akun Anda disetujui dan dibuat.',
+	'requestaccount-acc-text' => 'Kami akan mengirimkan sebuah pesan konfirmasi ke alamat surel Anda segera setelah permintaan ini dikirimkan.
+Klik pada pranala dalam surel tersebut untuk konfirmasi.
+Kata sandi Anda juga akan dikirimkan melalui surel setelah akun Anda disetujui dan dibuat.',
 	'requestaccount-areas-text' => 'Pilih topik-topik yang merupakan keahlian formal Anda atau merupakan area yang akan paling banyak Anda sentuh.',
 	'requestaccount-ext-text' => 'Informasi berikut ini akan diperlakukan secara rahasia dan hanya akan digunakan sehubungan dengan permintaan ini.
 Anda dapat menuliskan daftar kontak seperti nomor telepon Anda untuk mempermudah dalam mengkonfirmasikan identitas Anda.',
@@ -4690,18 +4690,18 @@ Nama Anda dapat diubah melalui [[Special:Preferences|preferensi Anda]].',
 	'requestaccount-agree' => 'Anda harus menyatakan bahwa nama asli Anda adalah benar dan bahwa Anda setuju dengan Syarat Layanan kami.',
 	'requestaccount-inuse' => 'Nama pengguna ini sudah digunakan dalam salah satu antrean permintaan akun.',
 	'requestaccount-tooshort' => 'Biografi Anda harus memiliki panjang minimal $1 {{PLURAL:$1|kata|kata}}.',
-	'requestaccount-emaildup' => 'Sebuah antrean permintaan lain menggunakan alamat surat-e yang sama.',
+	'requestaccount-emaildup' => 'Sebuah antrean permintaan lain menggunakan alamat surel yang sama.',
 	'requestaccount-exts' => 'Jenis lampiran berkas tidak diizinkan.',
 	'requestaccount-resub' => 'Resume/CV Anda harus dipilih kembali atas alasan keamanan.
 Tinggalkan kotak ini kosong jika Anda sudah tidak ingin untuk memasukkannya.',
 	'requestaccount-tos' => 'Saya telah membaca dan menyetujui [[{{MediaWiki:Requestaccount-page}}|Syarat Layanan]] {{SITENAME}}.
 Nama yang saya tuliskan dalam "Nama asli" adalah benar-benar nama asli saya sendiri.',
 	'requestaccount-submit' => 'Permintaan akun',
-	'requestaccount-sent' => 'Permintaan akun Anda telah berhasil dikirimkan dan sekarang sedang dalam antrian untuk ditinjau.
+	'requestaccount-sent' => 'Permintaan akun Anda telah berhasil dikirimkan dan sekarang sedang dalam antrean untuk ditinjau.
 Sebuah surat konfirmasi telah dikirimkan ke alamat surel Anda.',
-	'request-account-econf' => 'Alamat surat-e Anda telah dikonfirmasikan dan akan ditampilkan sebagaimana dalam permintaan akun Anda.',
-	'requestaccount-email-subj' => 'Konfirmasi alamat surat-e {{SITENAME}}',
-	'requestaccount-email-body' => 'Seseorang, mungkin Anda, dari alamat IP $1, telah mendaftarkan permintaan akun "$2" dengan alamat surat-e ini di {{SITENAME}}.
+	'request-account-econf' => 'Alamat surel Anda telah dikonfirmasikan dan akan ditampilkan sebagaimana dalam permintaan akun Anda.',
+	'requestaccount-email-subj' => 'Konfirmasi alamat surel {{SITENAME}}',
+	'requestaccount-email-body' => 'Seseorang, mungkin Anda, dari alamat IP $1, telah mendaftarkan permintaan akun "$2" dengan alamat surel ini di {{SITENAME}}.
 
 Untuk mengkonfirmasikan bahwa akun ini benar dimiliki oleh Anda di {{SITENAME}}, ikuti pranala berikut pada penjelajah web Anda:
 
@@ -4712,11 +4712,11 @@ Jika Anda merasa *tidak pernah* mendaftar, jangan ikuti pranala di atas.
 Kode konfirmasi ini akan kadaluwarsa pada $4.',
 	'requestaccount-email-subj-admin' => 'Permintaan akun {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" telah mengajukan permintaan pembuatan akun dan sedang menunggu konfirmasi.
-Surat-e ini telah dikonfirmasi. Anda dapat memberikan konfirmasi atas permintaan tersebut di sini "$2".',
+Surel ini telah dikonfirmasi. Anda dapat memberikan konfirmasi atas permintaan tersebut di sini "$2".',
 	'acct_request_throttle_hit' => 'Anda telah meminta {{PLURAL:$1|1 akun|$1 akun}}.
 Anda tidak dapat lagi melakukan permintaan.',
 	'requestaccount-loginnotice' => "Untuk mendapatkan sebuah akun pengguna, Anda harus '''[[Special:RequestAccount|mengajukannya]]'''.",
-	'confirmaccount-newrequests' => "Terdapat '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|antrian permintaan akun]]|[[Special:ConfirmAccounts|antrian permintaan akun]]}} dengan alamat surat-e yang telah dikonfirmasi",
+	'confirmaccount-newrequests' => "Terdapat '''$1''' antrean [[Special:ConfirmAccounts|{{PLURAL:$1|permintaan|permintaan}} akun]] yang surelnya telah dikonfirmasi.",
 	'confirmaccounts' => 'Konfirmasi permintaan akun',
 	'confirmedit-desc' => 'Memberikan fungsi teknis tambahan bagi birokrat untuk mengkonfirmasikan permintaan akun',
 	'confirmaccount-maintext' => "'''Halaman ini digunakan untuk mengkonfirmasikan permintaan akun di ''{{SITENAME}}'''''.
@@ -4790,8 +4790,8 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-create' => 'Setuju (buat akun)',
 	'confirmaccount-deny' => 'Tolak',
 	'confirmaccount-hold' => 'Tunda',
-	'confirmaccount-spam' => 'Spam (jangan kirim surat-e)',
-	'confirmaccount-reason' => 'Komentar (akan dimasukkan dalam surat-e):',
+	'confirmaccount-spam' => 'Spam (jangan kirim surel)',
+	'confirmaccount-reason' => 'Komentar (akan dimasukkan dalam surel):',
 	'confirmaccount-ip' => 'Alamat IP:',
 	'confirmaccount-submit' => 'Konfirmasi',
 	'confirmaccount-needreason' => 'Anda harus memberikan sebuah alasan dalam kotak komentar berikut.',
