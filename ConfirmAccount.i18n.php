@@ -2239,6 +2239,7 @@ $3
 
 /** Esperanto (Esperanto)
  * @author Amikeco
+ * @author Michawiki
  * @author Yekrats
  */
 $messages['eo'] = array(
@@ -2258,7 +2259,7 @@ $messages['eo'] = array(
 	'requestaccount-bio' => 'Persona biografio:',
 	'requestaccount-attach' => 'Karierresumo (nedeviga):',
 	'requestaccount-notes' => 'Pluaj notoj:',
-	'requestaccount-tooshort' => 'Via biografio estu almenaŭ $1 vortoj.',
+	'requestaccount-tooshort' => 'Via biografio devas havi almenaŭ $1 {{PLURAL:$1|vorton|vortojn}}.',
 	'requestaccount-emaildup' => 'Alia peto por kontrolenda konto uzas la saman retadreson.',
 	'requestaccount-exts' => 'Dosiertipo de aldonaĵo estas malpermesita.',
 	'requestaccount-submit' => 'Peti konton',
@@ -7889,96 +7890,98 @@ $3
 
 /** Portuguese (Português)
  * @author Giro720
+ * @author Hamilton Abreu
  * @author Lijealso
  * @author Malafaya
  * @author Waldir
  */
 $messages['pt'] = array(
-	'requestaccount' => 'Requerer conta',
+	'requestaccount' => 'Pedir conta',
 	'requestaccount-text' => "'''Complete e submeta o seguinte formulário para pedir uma conta de utilizador'''.
 
 Certifique-se de que lê primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.
 
-Assim que a conta for aprovada, ser-lhe-á enviada por email uma mensagem de notificação e a conta estará pronta a usar na [[Special:UserLogin|autenticação]].",
+Assim que a conta for aprovada, ser-lhe-á enviada uma mensagem de notificação por correio electrónico e poderá [[Special:UserLogin|autenticar-se]].",
 	'requestaccount-page' => '{{ns:project}}:Termos de Serviço',
-	'requestaccount-dup' => "'''Nota: Você já está logado com uma conta registada.'''",
+	'requestaccount-dup' => "'''Nota: Já está autenticado com uma conta registada.'''",
 	'requestaccount-leg-user' => 'Conta de utilizador',
 	'requestaccount-leg-areas' => 'Principais áreas de interesse',
 	'requestaccount-leg-person' => 'Informação pessoal',
 	'requestaccount-leg-other' => 'Outras informações',
-	'requestaccount-leg-tos' => 'Termos do Serviço',
-	'requestaccount-acc-text' => 'Será enviada um mensagem de confirmação para o seu endereço de email assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação fornecida no email. A sua palavra-chave também lhe será enviada por email assim que a sua conta estiver criada.',
-	'requestaccount-areas-text' => 'Seleccione em baixo as áreas em que possui experiência formal ou em que gostaria de trabalhar mais.',
-	'requestaccount-ext-text' => 'A seguinte informação é mantida privada e só será usada para este pedido.
-Poderá querer listar contactos tal como o número de telefone para ajudar na confirmação da identificação.',
-	'requestaccount-bio-text' => 'A sua biografia será usada como conteúdo por defeito da sua página de utilizador.
+	'requestaccount-leg-tos' => 'Termos de Serviço',
+	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de correio electrónico assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação enviada na mensagem. A sua palavra-chave também será enviada por correio electrónico assim que a conta tenha sido criada.',
+	'requestaccount-areas-text' => 'Seleccione abaixo as áreas em que possui experiência formal ou em que mais gostaria de trabalhar.',
+	'requestaccount-ext-text' => 'A seguinte informação será mantida privada e só será usada para este pedido.
+Talvez possa listar contactos, tais como o número de telefone, para ajudar na confirmação da identificação.',
+	'requestaccount-bio-text' => 'Por omissão, a sua biografia será usada como conteúdo da sua página de utilizador.
 Tente incluir algumas credenciais.
-Assegure-se de que se encontra confortável em publicar tal informação.
+Assegure-se de que concorda com a publicação desta informação.
 O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
 	'requestaccount-real' => 'Nome real:',
 	'requestaccount-same' => '(igual ao nome real)',
-	'requestaccount-email' => 'Endereço de email:',
+	'requestaccount-email' => 'Endereço de correio electrónico:',
 	'requestaccount-reqtype' => 'Posição:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
 	'requestaccount-bio' => 'Biografia pessoal:',
-	'requestaccount-attach' => 'Curriculum Vitae (opcional):',
+	'requestaccount-attach' => 'Currículo (opcional):',
 	'requestaccount-notes' => 'Notas adicionais:',
-	'requestaccount-urls' => 'Lista de sítios web, se algum (separados por mudança de linha):',
+	'requestaccount-urls' => 'Lista de sítios na internet, se algum (um por linha):',
 	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correcto e que concorda com os nossos Termos de Serviço.',
 	'requestaccount-inuse' => 'O nome de utilizador já está em uso num pedido de conta pendente.',
 	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.',
-	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo endereço de email.',
+	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo endereço electrónico.',
 	'requestaccount-exts' => 'O tipo de ficheiro do anexo não é permitido.',
-	'requestaccount-resub' => 'O seu Curriculum Vitae deve ser seleccionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
-	'requestaccount-tos' => 'Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] de {{SITENAME}}.
-O nome que especifiquei em "Nome real" é de facto o meu nome real.',
-	'requestaccount-submit' => 'Requerer conta',
-	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora pendente para confirmação.
-Um e-mail de confirmação foi enviado para seu endereço eletrônico.',
-	'request-account-econf' => 'O seu endereço de email foi confirmado e será listado como tal no seu pedido de conta.',
-	'requestaccount-email-subj' => 'Confirmação de endereço de email para {{SITENAME}}',
-	'requestaccount-email-body' => 'Alguém, provavelmente vocês a partir do endereço IP $1, requisitou uma conta "$2" com este endereço de email em {{SITENAME}}.
+	'requestaccount-resub' => 'O seu Currículo deve ser seleccionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
+	'requestaccount-tos' => 'Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] da {{SITENAME}}.
+O nome que introduzi em "Nome real" é de facto o meu nome real.',
+	'requestaccount-submit' => 'Pedir conta',
+	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora pendente para aprovação.
+Uma mensagem de confirmação foi enviada para o seu correio electrónico.',
+	'request-account-econf' => 'O seu endereço electrónico foi confirmado e será apresentado no seu pedido de conta.',
+	'requestaccount-email-subj' => 'Confirmação de endereço electrónico para a {{SITENAME}}',
+	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, pediu uma conta "$2" com este endereço de correio electrónico na {{SITENAME}}.
 
-Para confirmar que esta conta realmente lhe pertence em {{SITENAME}}, abra esta ligação no seu "browser":
+Para confirmar que esta conta realmente lhe pertence na {{SITENAME}}, siga esta ligação no seu navegador:
 
 $3
 
-Se a conta for criada, apenas lhe será enviada a palavra-chave a si. Se esta pessoa *não* for você, não siga a ligação.
-Este código de confirmação expirará em $4.',
-	'requestaccount-email-subj-admin' => 'Pedido de conta em {{SITENAME}}',
+Se a conta for criada, a palavra-chave só lhe será enviada a si. Se este pedido *não* foi feito por si, não siga a ligação.
+Este código de confirmação expirará a $4.',
+	'requestaccount-email-subj-admin' => 'Pedido de conta na {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" pediu uma conta e aguarda confirmação.
-O endereço de email foi confirmado. Você pode confirmar o pedido aqui "$2".',
-	'acct_request_throttle_hit' => 'Desculpe, mas você já pediu {{PLURAL:$1|1 conta|$1 contas}}.
+O endereço electrónico foi confirmado. Pode confirmar o pedido aqui "$2".',
+	'acct_request_throttle_hit' => 'Desculpe, mas já pediu {{PLURAL:$1|uma conta|$1 contas}}.
 Não pode fazer mais pedidos.',
 	'requestaccount-loginnotice' => "Para obter uma conta de utilizador, deverá '''[[Special:RequestAccount|pedi-la]]'''.",
-	'confirmaccount-newrequests' => "Há actualmente '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|pedido de conta]] aberto pendente|[[Special:ConfirmAccounts|pedidos de conta]] abertos pendentes}}.",
-	'confirmaccounts' => 'Confirmar requerimentos de conta',
-	'confirmedit-desc' => 'Possibilita aos burocratas confirmar pedidos de conta',
-	'confirmaccount-maintext' => "'''Esta página é usada para confirmar pedidos de conta pendentes em ''{{SITENAME}}'''''.
+	'confirmaccount-newrequests' => "Há actualmente {{PLURAL:$1|'''um''' [[Special:ConfirmAccounts|pedido de conta]] em aberto, confirmado|'''$1''' [[Special:ConfirmAccounts|pedidos de conta]] em aberto, confirmados}} por correio electrónico, {{PLURAL:$1|pendente|pendentes}}.",
+	'confirmaccounts' => 'Confirmar pedidos de conta',
+	'confirmedit-desc' => 'Possibilita que utilizadores burocratas confirmem pedidos de conta',
+	'confirmaccount-maintext' => "'''Esta página é usada para confirmar pedidos de conta pendentes na ''{{SITENAME}}'''''.
 
-Cada fila de pedidos de conta consiste em três sub-filas, uma para pedidos em aberto, outras para aqueles que foram colocados em espera por outros administradores à espera de mais informação, e outra para pedidos recentemente rejeitados.
+Cada fila de pedidos de conta consiste em três sub-filas, uma para pedidos em aberto, outra para pedidos colocados em espera por outros administradores à espera de mais informação e outra para pedidos recentemente rejeitados.
 
 Quando responder a um pedido, reveja-o cuidadosamente e, se necessário, confirme a informação nele contida.
-As suas acções será registadas privadamente. Também é esperado que vocês reveja qualquer actividade que  ocorra aqui para além das suas próprias acções.",
+As suas acções será registadas em privado. Também é esperado que reveja qualquer actividade que  ocorra aqui para além das suas próprias acções.",
 	'confirmaccount-list' => 'Abaixo encontra-se uma lista de pedidos de conta à espera de aprovação.
 Contas aprovadas serão criadas e removidas desta lista. Contas rejeitadas serão simplesmente eliminadas desta lista.',
 	'confirmaccount-list2' => 'Abaixo encontra-se uma lista de pedidos de conta recentemente rejeitados que serão automaticamente eliminados após alguns dias.
 Estes podem ainda ser aprovados para novas contas, mas deverá verificar primeiro com o administrador que rejeitou o pedido antes de o aprovar.',
 	'confirmaccount-list3' => 'Abaixo encontra-se uma lista de pedidos de conta expirados que poderão ser automaticamente apagados após alguns dias. Estes ainda podem ser aprovados e convertidos em novas contas.',
-	'confirmaccount-text' => "Isto é um pedido pendente para uma conta de utilizador em '''{{SITENAME}}'''.
+	'confirmaccount-text' => "Este é um pedido pendente para uma conta de utilizador na '''{{SITENAME}}'''.
 
-Reveja cuidadosamente a informação abaixo. Se está a aprovar este pedido, use a caixa de selecção de posição para esetabelecer o estado da conta do utilizador.
+Reveja cuidadosamente a informação abaixo.
+Se está a aprovar este pedido, use a caixa de selecção de posição para estabelecer o estado da conta do utilizador.
 Edições feitas à biografia da candidatura não afectarão nenhum armazenamento de credenciais permanente. Note que pode optar por criar a conta com um nome de utilizador diferente.
-Use esta possibilidade apenas para evitar colisões com outros nomes.
+Use esta opção apenas para evitar colisões com outros nomes.
 
-Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, ele continuará pendente.",
-	'confirmaccount-none-o' => 'Actualmente não existem pedidos de conta pendentes em aberto nesta lista.',
-	'confirmaccount-none-h' => 'Actualmente não existem pedidos de conta pendentes em espera nesta lista.',
-	'confirmaccount-none-r' => 'Actualmente não existem pedidos de conta recentemente rejeitados nesta lista.',
+Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, ele continuará pendente.",
+	'confirmaccount-none-o' => 'Não há neste momento pedidos de conta pendentes em aberto nesta lista.',
+	'confirmaccount-none-h' => 'Não há neste momento pedidos de conta pendentes em espera nesta lista.',
+	'confirmaccount-none-r' => 'Não há neste momento pedidos de conta recentemente rejeitados nesta lista.',
 	'confirmaccount-none-e' => 'Não há neste momento pedidos de conta expirados nesta lista.',
 	'confirmaccount-real-q' => 'Nome',
-	'confirmaccount-email-q' => 'Email',
+	'confirmaccount-email-q' => 'Correio electrónico',
 	'confirmaccount-bio-q' => 'Biografia',
 	'confirmaccount-showopen' => 'pedidos em curso',
 	'confirmaccount-showrej' => 'pedidos rejeitados',
@@ -7994,21 +7997,21 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-q-held' => 'pedidos em espera',
 	'confirmaccount-q-rej' => 'pedidos recentemente rejeitados',
 	'confirmaccount-q-stale' => 'pedidos expirados',
-	'confirmaccount-badid' => 'Não existe nenhum pedido pendente correspondente ao identificador fornecido. Aquele pode já ter sido tratado.',
+	'confirmaccount-badid' => 'Não existe nenhum pedido pendente correspondente ao identificador fornecido. Pode já ter sido processado.',
 	'confirmaccount-leg-user' => 'Conta de utilizador',
 	'confirmaccount-leg-areas' => 'Principais áreas de interesse',
 	'confirmaccount-leg-person' => 'Informação pessoal',
 	'confirmaccount-leg-other' => 'Outras informações',
 	'confirmaccount-name' => 'Nome de utilizador',
 	'confirmaccount-real' => 'Nome:',
-	'confirmaccount-email' => 'Email:',
+	'confirmaccount-email' => 'Correio electrónico:',
 	'confirmaccount-reqtype' => 'Posição:',
 	'confirmaccount-pos-0' => 'autor',
 	'confirmaccount-pos-1' => 'editor',
 	'confirmaccount-bio' => 'Biografia:',
-	'confirmaccount-attach' => 'Curriculum Vitae:',
+	'confirmaccount-attach' => 'Currículo:',
 	'confirmaccount-notes' => 'Notas adicionais:',
-	'confirmaccount-urls' => 'Lista de sítios web:',
+	'confirmaccount-urls' => 'Lista de sítios na internet:',
 	'confirmaccount-none-p' => '(não fornecido)',
 	'confirmaccount-confirm' => 'Use as opções abaixo para aceitar, rejeitar, ou colocar em espera este pedido:',
 	'confirmaccount-econf' => '(confirmado)',
@@ -8020,28 +8023,28 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-create' => 'Aceitar (criar conta)',
 	'confirmaccount-deny' => 'Rejeitar (retirar da lista)',
 	'confirmaccount-hold' => 'Colocar em espera',
-	'confirmaccount-spam' => 'Spam (não enviar email)',
-	'confirmaccount-reason' => 'Comentário (será incluído no email):',
+	'confirmaccount-spam' => "''Spam'' (não enviar correio electrónico)",
+	'confirmaccount-reason' => 'Comentário (será incluído no correio electrónico):',
 	'confirmaccount-ip' => 'Endereço IP:',
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Deverá fornecer um motivo na caixa de comentário abaixo.',
 	'confirmaccount-canthold' => 'Este pedido já está em espera ou apagado.',
 	'confirmaccount-acc' => 'Pedido de conta confirmado com sucesso; criada nova conta de utilizador [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Pedido de conta rejeitado com sucesso.',
-	'confirmaccount-viewing' => '(actualmente a ser visualizada por [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(a ser visto neste momento por [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Criar página de utilizador com biografia de novo utilizador.',
-	'confirmaccount-welc' => "'''Bem-vindo a ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.
-Provavelmente desejará ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. Mais uma vez, seja bem-vindo e divirta-se!",
+	'confirmaccount-welc' => "'''Bem-vindo à ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.
+Provavelmente quererá ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. Mais uma vez, seja bem-vindo e divirta-se!",
 	'confirmaccount-wsum' => 'Bem-vindo!',
-	'confirmaccount-email-subj' => 'Pedido de conta em {{SITENAME}}',
-	'confirmaccount-email-body' => 'O seu pedido de conta foi aprovado em {{SITENAME}}.
+	'confirmaccount-email-subj' => 'Pedido de conta na {{SITENAME}}',
+	'confirmaccount-email-body' => 'O seu pedido de conta foi aprovado na {{SITENAME}}.
 
 Nome da conta: $1
 
 Palavra-chave: $2
 
-Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
-	'confirmaccount-email-body2' => 'O seu pedido de conta foi aprovado em {{SITENAME}}.
+Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá a {{fullurl:{{ns:special}}:Userlogin}}.',
+	'confirmaccount-email-body2' => 'O seu pedido de conta foi aprovado na {{SITENAME}}.
 
 Nome da conta: $1
 
@@ -8049,20 +8052,20 @@ Palavra-chave: $2
 
 $3
 
-Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
-	'confirmaccount-email-body3' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado em {{SITENAME}}.
+Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá a {{fullurl:{{ns:special}}:Userlogin}}.',
+	'confirmaccount-email-body3' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado na {{SITENAME}}.
 
-Há várias formas para isto acontecer. Você poderá não ter preenchido o formulário correctamente, não ter fornecido respostas de tamanho adequado, ou de outra forma ter falhado em alguns dos critérios da política. Poderá haver listas de contactos no sítio que poderá usar se desejar saber mais sobre a política de contas de utilizador.',
-	'confirmaccount-email-body4' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado em {{SITENAME}}.
-
-$2
-
-Poderá haver listas de contactos no sítio que poderá usar se desejar saber mais sobre a política de contas de utilizador.',
-	'confirmaccount-email-body5' => 'Antes que o seu pedido para a conta "$1" seja aceite em {{SITENAME}}, deverá fornecer alguma informação adicional.
+Há várias formas de isto acontecer. Poderá não ter preenchido o formulário correctamente, não ter fornecido respostas de tamanho adequado, ou de outra forma não ter cumprido algumas normas e critérios. Podem existir listas de contactos no sítio que poderá usar se deseja saber mais sobre a política de contas de utilizador.',
+	'confirmaccount-email-body4' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado na {{SITENAME}}.
 
 $2
 
-Poderá haver listas de contactos no sítio que poderá usar se desejar saber mais sobre a política de contas de utilizador.',
+Podem haver listas de contactos no sítio que poderá usar se deseja saber mais sobre a política de contas de utilizador.',
+	'confirmaccount-email-body5' => 'Antes que o seu pedido para a conta "$1" seja aceite na {{SITENAME}}, deverá fornecer alguma informação adicional.
+
+$2
+
+Podem haver listas de contactos no sítio que poderá usar se deseja saber mais sobre a política de contas de utilizador.',
 	'usercredentials' => 'Credenciais do utilizador',
 	'usercredentials-leg' => 'Procurar credenciais confirmadas para um utilizador',
 	'usercredentials-user' => 'Nome de utilizador:',
@@ -8071,15 +8074,17 @@ Poderá haver listas de contactos no sítio que poderá usar se desejar saber ma
 	'usercredentials-leg-areas' => 'Principais áreas de interesse',
 	'usercredentials-leg-person' => 'Informação pessoal',
 	'usercredentials-leg-other' => 'Outras informações',
-	'usercredentials-email' => 'Email:',
+	'usercredentials-email' => 'Correio electrónico:',
 	'usercredentials-real' => 'Nome real:',
 	'usercredentials-bio' => 'Biografia:',
-	'usercredentials-attach' => 'Curriculum Vitae:',
+	'usercredentials-attach' => 'Currículo:',
 	'usercredentials-notes' => 'Notas adicionais:',
-	'usercredentials-urls' => 'Lista de sítios web:',
+	'usercredentials-urls' => 'Lista de sítios na internet:',
 	'usercredentials-ip' => 'Endereço IP original:',
 	'usercredentials-member' => 'Privilégios:',
 	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está correctamente escrito.',
+	'right-confirmaccount' => 'Ver a [[Special:ConfirmAccounts|fila de contas pedidas]]',
+	'right-requestips' => 'Ver os endereços IP do requerente ao processar contas pedidas',
 	'right-lookupcredentials' => 'Ver [[Special:UserCredentials|credenciais de utilizador]]',
 );
 
