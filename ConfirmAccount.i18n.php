@@ -4707,7 +4707,7 @@ Untuk mengkonfirmasikan bahwa akun ini benar dimiliki oleh Anda di {{SITENAME}},
 
 $3
 
-Setelah akun ini dibuat, hanya Anda yang akan dikirim kata sandinya melalui surat-e.
+Setelah akun ini dibuat, hanya Anda yang akan dikirim kata sandinya melalui surel.
 Jika Anda merasa *tidak pernah* mendaftar, jangan ikuti pranala di atas.
 Kode konfirmasi ini akan kadaluwarsa pada $4.',
 	'requestaccount-email-subj-admin' => 'Permintaan akun {{SITENAME}}',
@@ -5849,7 +5849,7 @@ Loor ens, ov dä Name reschtesch jetipp es.',
 	'right-lookupcredentials' => 'De [[Special:UserCredentials|Nohwiise]] för Metmaacher aanloore',
 );
 
-/** Cornish (Kernewek)
+/** Cornish (Kernowek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
