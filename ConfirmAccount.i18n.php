@@ -2263,7 +2263,8 @@ $messages['eo'] = array(
 	'requestaccount-emaildup' => 'Alia peto por kontrolenda konto uzas la saman retadreson.',
 	'requestaccount-exts' => 'Dosiertipo de aldonaĵo estas malpermesita.',
 	'requestaccount-submit' => 'Peti konton',
-	'requestaccount-sent' => 'Via konta peto estis sukcese sendita kaj nun bezonas kontroladon.',
+	'requestaccount-sent' => 'Via konta peto estas sukcese sendita kaj nun bezonas kontrolon.
+Konfirma retpoŝto estas sendita al via retpoŝtadreso.',
 	'request-account-econf' => 'Via retadreso estis konfirmita kaj estos listigita tiel en via konta peto.',
 	'requestaccount-email-subj' => '{{SITENAME}} retpoŝta konfirmo',
 	'requestaccount-email-body' => 'Iu, verŝajne vi de IP-adreso $1, petis konton "$2" kun ĉi tiu retadreso ĉe {{SITENAME}}.
@@ -4685,7 +4686,7 @@ Nama Anda dapat diubah melalui [[Special:Preferences|preferensi Anda]].',
 	'requestaccount-level-0' => 'penulis',
 	'requestaccount-level-1' => 'penyunting',
 	'requestaccount-bio' => 'Biografi pribadi:',
-	'requestaccount-attach' => 'Resume atau CV (manasuka):',
+	'requestaccount-attach' => 'Resume atau CV (opsional):',
 	'requestaccount-notes' => 'Catatan tambahan:',
 	'requestaccount-urls' => 'Daftar situs web, jika ada (pisahkan dengan baris baru):',
 	'requestaccount-agree' => 'Anda harus menyatakan bahwa nama asli Anda adalah benar dan bahwa Anda setuju dengan Syarat Layanan kami.',
@@ -7531,9 +7532,11 @@ $messages['os'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
+	'requestaccount-level-0' => 'Schreiwer',
 	'confirmaccount-real-q' => 'Naame',
 	'confirmaccount-name' => 'Yuuser-Naame',
 	'confirmaccount-real' => 'Naame:',
+	'confirmaccount-pos-0' => 'Schreiwer',
 	'confirmaccount-noreason' => '(nix)',
 	'usercredentials-user' => 'Yuuser-Naame:',
 );
