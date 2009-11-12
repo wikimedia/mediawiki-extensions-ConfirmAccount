@@ -6998,7 +6998,7 @@ Namnet ditt kan verta endra gjennom [[Special:Preferences|innstillingane dine]].
 Lat feltet vera tomt om du ikkje lenger ynskjer å leggja ved ein.',
 	'requestaccount-tos' => 'Eg har lese og vil fylgja [[{{MediaWiki:Requestaccount-page}}|tenestevilkåra]] til {{SITENAME}}. Namnet eg har gjeve under «Verkeleg namn» er det faktiske namnet mitt.',
 	'requestaccount-submit' => 'Be om konto',
-	'requestaccount-sent' => 'Kontoførespurnaden din har vorten sendt, og ventar no på godkjenning.',
+	'requestaccount-sent' => 'Kontoførespurnaden din er vorten sendt, og ventar no på godkjenning. Ein e-post med ei stadfesting av dette er vorten send til e-postadressa di.',
 	'request-account-econf' => 'E-postadressa di er no stadfest, og dette vil verta lista i kontoførespurnaden.',
 	'requestaccount-email-subj' => 'Stadfesting av E-postadressa hjå {{SITENAME}}',
 	'requestaccount-email-body' => 'Nokon, sannsynlegvis deg frå IP-adressa $1, har bede om ein konto «$2» med denne e-postadressa på {{SITENAME}}.
@@ -8831,7 +8831,8 @@ $messages['sr-ec'] = array(
 	'requestaccount-inuse' => 'Корисничко име је већ у употреби и чека на одобрење.',
 	'requestaccount-tooshort' => 'Ваша биографија мора да садржи најмање $1 речи.',
 	'requestaccount-emaildup' => 'Други налог, који чека одобрење, већ користи ову имејл адресу.',
-	'requestaccount-sent' => 'Ваш захтев за налогом је успешно послат и сада чека на одобрење.',
+	'requestaccount-sent' => 'Ваш захтев за налогом је успешно послат и чека на преглед.
+Електронска порука за потврду је послата на Вашу адресу Ваше електронске поште.',
 	'request-account-econf' => 'Ваша имејл адреса је била потврђена и биће приказана као таква у Вашем захтеву за налогом.',
 	'confirmaccount-none-o' => 'Тренутно нема нерешених захтева у овом списку.',
 	'confirmaccount-none-h' => 'Тренутно нема стопираних захтева у овом списку.',
@@ -8906,6 +8907,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
+ * @author Михајло Анђелковић
  */
 $messages['sr-el'] = array(
 	'requestaccount-leg-user' => 'Korisnički nalog',
@@ -8926,7 +8928,8 @@ $messages['sr-el'] = array(
 	'requestaccount-agree' => 'Morate da potvrdite da ste dobro uneli svoje pravo ime i da se složite sa uslovima korišćenja.',
 	'requestaccount-inuse' => 'Korisničko ime je već u upotrebi i čeka na odobrenje.',
 	'requestaccount-emaildup' => 'Drugi nalog, koji čeka odobrenje, već koristi ovu imejl adresu.',
-	'requestaccount-sent' => 'Vaš zahtev za nalogom je uspešno poslat i sada čeka na odobrenje.',
+	'requestaccount-sent' => 'Vaš zahtev za nalogom je uspešno poslat i čeka na pregled.
+Elektronska poruka za potvrdu je poslata na Vašu adresu Vaše elektronske pošte.',
 	'request-account-econf' => 'Vaša imejl adresa je bila potvrđena i biće prikazana kao takva u Vašem zahtevu za nalogom.',
 	'confirmaccount-none-o' => 'Trenutno nema nerešenih zahteva u ovom spisku.',
 	'confirmaccount-none-h' => 'Trenutno nema stopiranih zahteva u ovom spisku.',
