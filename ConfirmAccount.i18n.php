@@ -5963,6 +5963,7 @@ D\'E-mailadresse ass confirméiert. Dir kënnt déi Ufro hei "$2" confirméieren
 	'acct_request_throttle_hit' => 'Pardon, Dir hutt schonns {{PLURAL:$1|1Benotzerkont|$1 Benotzerkonten}} ugefrot.
 Dir kënnt elo keng weider Ufroe méi maachen.',
 	'requestaccount-loginnotice' => "Fir e Benotzerkont ze kréien, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' open, per E-Mail confirméiert, [[Special:ConfirmAccounts|account {{PLURAL:$1|Ufro|Ufroen}}]] déi drop {{PLURAL:$1|waart|waarden}} beäntwert ze ginn.",
 	'confirmaccounts' => 'Ufroe vu Benotzerkonte confirméieren',
 	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeet fir Ufroe vu Benotzerkonten ze confirméieren",
 	'confirmaccount-list' => "Hei ass d'Lëscht vun den Ufroe fir e Benotzerkont déi nach autoriséiert musse ginn.
