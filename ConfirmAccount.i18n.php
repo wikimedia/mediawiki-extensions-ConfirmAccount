@@ -655,8 +655,8 @@ $2
  */
 $messages['arc'] = array(
 	'requestaccount-leg-user' => 'ܚܘܫܒܢܐ ܕܡܦܠܚܢܐ',
-	'requestaccount-leg-person' => 'ܝܕܥܬ̈ܐ ܦܪ̈ܨܘܦܝܐ',
-	'requestaccount-leg-other' => 'ܝܕܥܬ̈ܐ ܐܚܪ̈ܢܝܬܐ',
+	'requestaccount-leg-person' => 'ܝܕ̈ܥܬܐ ܦܪ̈ܨܘܦܝܬܐ',
+	'requestaccount-leg-other' => 'ܝܕ̈ܥܬܐ ܐܚܪ̈ܢܝܬܐ',
 	'requestaccount-leg-tos' => 'ܫܪ̈ܛܐ ܕܬܫܡܫܬܐ',
 	'requestaccount-real' => 'ܫܡܐ ܫܪܝܪܐ:',
 	'requestaccount-same' => '(ܐܝܟ ܫܡܐ ܫܪܝܪܐ)',
