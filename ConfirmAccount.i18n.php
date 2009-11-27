@@ -6285,6 +6285,7 @@ $3
 	'confirmaccount-showrej' => 'одбиени барања',
 	'confirmaccount-type' => 'Редица:',
 	'confirmaccount-q-open' => 'отворени барања',
+	'confirmaccount-leg-user' => 'Корисничка сметка',
 	'confirmaccount-leg-person' => 'Персонални информации',
 	'confirmaccount-leg-other' => 'Други информации',
 	'confirmaccount-name' => 'Корисничко име',
