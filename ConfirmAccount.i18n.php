@@ -1336,6 +1336,7 @@ $messages['bn'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
+	'requestaccount-leg-user' => 'Kont implijer',
 	'requestaccount-real' => 'Anv gwir :',
 	'requestaccount-same' => '(heñvel ou zh ar gwir anv)',
 	'requestaccount-email' => "Chomlec'h postel :",
@@ -1366,6 +1367,7 @@ $messages['br'] = array(
 	'confirmaccount-noreason' => '(hini ebet)',
 	'confirmaccount-create' => 'Asantiñ (krouiñ ar gont)',
 	'confirmaccount-ip' => "Chomlec'h IP :",
+	'confirmaccount-submit' => 'Kadarnaat',
 	'confirmaccount-wsum' => 'Degemer mat !',
 	'usercredentials-user' => 'Anv implijer :',
 	'usercredentials-leg-other' => 'Titouroù all',
