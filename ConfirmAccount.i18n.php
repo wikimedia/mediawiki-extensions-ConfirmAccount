@@ -6268,6 +6268,12 @@ $3
 Доколку ова *не* сте вие, не одете на врската.
 Овој потврден код истекува во $4.',
 	'requestaccount-email-subj-admin' => 'Барање за сметка на {{SITENAME}}',
+	'requestaccount-email-body-admin' => '„$1“ побара сметка и чека потврда.
+Е-поштенската адреса е потврдена. Можете да го потврдите барањето тука „$2“.',
+	'acct_request_throttle_hit' => 'Жалам, но веќе имате побарано {{PLURAL:$1|1 сметка|$1 сметки}}.
+Не можете да поставувате повеќе барања.',
+	'requestaccount-loginnotice' => "За да добиете корисничка сметка, морате да '''[[Special:RequestAccount|поднесете барање]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|отворено барање за сметка|отворени барања за сметка}}]] во исчекување со потврдена е-пошта",
 	'confirmaccounts' => 'Потврдување на барања за сметки',
 	'confirmedit-desc' => 'Им овозможува на бирократите да потврдуваат барања за сметка',
 	'confirmaccount-maintext' => "'''Оваа страница служи за потврдување на барања за сметки на „{{SITENAME}}'''.
@@ -6280,14 +6286,44 @@ $3
 Од вас се очекува и да ги прегледувате сите дејствија што се случуваат овде покрај она што го правите вие самите.",
 	'confirmaccount-list' => 'Подолу е наведена листа на барања за сметка во исчекување на одобрение.
 Штом ќе се одобри или одбие едно барање, истото ќе биде отстрането од листата.',
+	'confirmaccount-list2' => 'Подолу е наведена листа на неодамна одбиени барања за сметка, кои може автоматски да бидат избришани по неколку дена.
+Тие сепак можат да се одобрат и да се создадат сметки, иако пред ова да го направите, препорачуваме прво да го консултирате администраторот кој го одбил барањето.',
+	'confirmaccount-list3' => 'Подолу е наведена листа на истечени барања за сметка кои може да се избришат автоматски за неколку дена.
+Тие сепак можат да се потврдат и да се создадат сметки.',
+	'confirmaccount-text' => "Ова е барање за корисничка сметка на '''{{SITENAME}}''' во исчекување.
+
+Внимателно прегледајте ги информациите подолу.
+Ако решивте да го одобрите барањето, поставете го статусот на корисникот од паѓачкиот список.
+Измените во биографијата нема да влијаат врз постојаните складирани акредитиви.
+Можете да ја создадете сметката со поинакво корисничко име.
+Ова користете го само кога некое име се коси со некое друго постоечко име.
+
+Ако ја напуштите страницава без да го одобрите или одбиете барањето, тоа ќе си остане во исчекување.",
+	'confirmaccount-none-o' => 'Моментално на листата нема отворени барања за сметка во исчекување.',
+	'confirmaccount-none-h' => 'Моментално на листата нема задржани барања за сметка во исчекување.',
+	'confirmaccount-none-r' => 'Моментално нема неодамна одбиени барања за сметка на листата.',
+	'confirmaccount-none-e' => 'Моментално нема истечени барања за сметки на листата.',
 	'confirmaccount-real-q' => 'Име',
 	'confirmaccount-email-q' => 'Е-пошта',
 	'confirmaccount-bio-q' => 'Биографија',
 	'confirmaccount-showopen' => 'отворени барања',
 	'confirmaccount-showrej' => 'одбиени барања',
+	'confirmaccount-showheld' => 'задржани барања',
+	'confirmaccount-showexp' => 'истечени барања',
+	'confirmaccount-review' => 'Прегледај',
+	'confirmaccount-types' => 'Одберете ред на чекање за потврда на сметка подолу:',
+	'confirmaccount-all' => '(покажи ги сите редици)',
 	'confirmaccount-type' => 'Редица:',
+	'confirmaccount-type-0' => 'идни автори',
+	'confirmaccount-type-1' => 'идни уредници',
 	'confirmaccount-q-open' => 'отворени барања',
+	'confirmaccount-q-held' => 'задржани барања',
+	'confirmaccount-q-rej' => 'неодамна одбиени барања',
+	'confirmaccount-q-stale' => 'истечени барања',
+	'confirmaccount-badid' => 'Не постои барање во исчекување кое соодветствува на наведениот ид. број.
+Можно е барањето веќе да е обработено.',
 	'confirmaccount-leg-user' => 'Корисничка сметка',
+	'confirmaccount-leg-areas' => 'Главни полиња на интерес',
 	'confirmaccount-leg-person' => 'Персонални информации',
 	'confirmaccount-leg-other' => 'Други информации',
 	'confirmaccount-name' => 'Корисничко име',
@@ -6301,6 +6337,7 @@ $3
 	'confirmaccount-notes' => 'Дополнителни белешки:',
 	'confirmaccount-urls' => 'Листа на веб места:',
 	'confirmaccount-none-p' => '(не е наведено)',
+	'confirmaccount-confirm' => 'Користете ги нагодувањата подолу за да го прифатите, одбиете или задржите ова барање:',
 	'confirmaccount-econf' => '(потврдено)',
 	'confirmaccount-reject' => '(одбиено од [[User:$1|$1]] на $2)',
 	'confirmaccount-rational' => 'Објаснение за барателот:',
@@ -6311,16 +6348,30 @@ $3
 	'confirmaccount-deny' => 'Одбиј (отстрани од листата)',
 	'confirmaccount-hold' => 'На чекање',
 	'confirmaccount-spam' => 'Спам (не го испраќајте писмото)',
+	'confirmaccount-reason' => 'Коментар (ќе биде вклучен во е-поштата):',
 	'confirmaccount-ip' => 'IP адреса:',
 	'confirmaccount-submit' => 'Потврди',
+	'confirmaccount-needreason' => 'Морате да наведете причина во полето за коментар подолу.',
+	'confirmaccount-canthold' => 'Ова барање е веќе во задршка или е избришано.',
 	'confirmaccount-acc' => 'Барањето за сметка е успешно потврдено;
 создадена е нова сметка [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Барањето за сметка е успешно одбиено.',
+	'confirmaccount-viewing' => '(во моментов ја гледа корисникот [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Создавање на корисничка страница со биографија на новиот корисник.',
 	'confirmaccount-welc' => "'''Добредојдовте на ''{{SITENAME}}''!'''
 Се надеваме дека ќе придонесувате многу и квалитетно.
 Препорачуваме да ги прочитате [[{{MediaWiki:Helppage}}|страниците за помош]].
 Уште еднаш, добредојдовте и пријатен провод!",
 	'confirmaccount-wsum' => 'Добредојдовте!',
+	'confirmaccount-email-subj' => 'Барање за сметка на {{SITENAME}}',
+	'confirmaccount-email-body' => 'Вашето барање за сметка на {{SITENAME}} е одобрено.
+
+Корисничко име: $1
+
+Лозинка: $2
+
+Од безбедносни причини ќе треба да си ја смените лозинката при првото најавување.
+Најавете се на {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Вашето барање за сметка на {{SITENAME}} е одобрено.
 
 Назив на сметката: $1
@@ -7937,7 +7988,7 @@ O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
 	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correcto e que concorda com os nossos Termos de Serviço.',
 	'requestaccount-inuse' => 'O nome de utilizador já está em uso num pedido de conta pendente.',
 	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.',
-	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo endereço electrónico.',
+	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo correio electrónico.',
 	'requestaccount-exts' => 'O tipo de ficheiro do anexo não é permitido.',
 	'requestaccount-resub' => 'O seu Currículo deve ser seleccionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
 	'requestaccount-tos' => 'Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] da {{SITENAME}}.
@@ -7945,7 +7996,7 @@ O nome que introduzi em "Nome real" é de facto o meu nome real.',
 	'requestaccount-submit' => 'Pedir conta',
 	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora pendente para aprovação.
 Uma mensagem de confirmação foi enviada para o seu correio electrónico.',
-	'request-account-econf' => 'O seu endereço electrónico foi confirmado e será apresentado no seu pedido de conta.',
+	'request-account-econf' => 'O seu correio electrónico foi confirmado e será listado como tal no seu pedido de conta.',
 	'requestaccount-email-subj' => 'Confirmação de endereço electrónico para a {{SITENAME}}',
 	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, pediu uma conta "$2" com este endereço de correio electrónico na {{SITENAME}}.
 
