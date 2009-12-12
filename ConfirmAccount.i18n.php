@@ -6323,7 +6323,7 @@ $3
 	'confirmaccount-showheld' => 'задржани барања',
 	'confirmaccount-showexp' => 'истечени барања',
 	'confirmaccount-review' => 'Прегледај',
-	'confirmaccount-types' => 'Одберете ред на чекање за потврда на сметка подолу:',
+	'confirmaccount-types' => 'Одберете редица на чекање за потврда на сметка подолу:',
 	'confirmaccount-all' => '(покажи ги сите редици)',
 	'confirmaccount-type' => 'Редица:',
 	'confirmaccount-type-0' => 'идни автори',
