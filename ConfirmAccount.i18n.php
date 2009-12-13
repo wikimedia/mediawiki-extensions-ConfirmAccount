@@ -5982,6 +5982,8 @@ Dir kënnt elo keng weider Ufroe méi maachen.',
 	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeet fir Ufroe vu Benotzerkonten ze confirméieren",
 	'confirmaccount-list' => "Hei ass d'Lëscht vun den Ufroe fir e Benotzerkont déi nach autoriséiert musse ginn.
 Wann eng Ufro entweder autoriséiert oder refuséiert ass gëtt se vun der Lëscht erofgeholl.",
+	'confirmaccount-list2' => 'Hei ënnendrënner ass eng Lëscht vun de Benotzerkontenufroen déi voru kuerzem ofgelehnt goufen an déi esoubal wéi se e puer Deeg al sinn automatesch geläscht kënne ginn.
+Se kënnen nach ëmmer als Benotzerkonten approuvéiert ginn, eventuell kënnt Dir den Administrateur den Ufro ofgelehnt huet consultéieren ier Dir dat maacht.',
 	'confirmaccount-list3' => 'Hei ënnendrënner ass eng Lëscht vun ofgelafenen Ufroe fir Benotzerkonten déi bannert e puer Deeg automatesch geläscht ginn.
 Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-none-o' => 'Et gëtt elo an dëser Lëscht keng oppen Ufroe fir Benotzerkonten.',
