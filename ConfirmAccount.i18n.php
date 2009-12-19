@@ -7259,7 +7259,8 @@ Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne [[Special
 	'requestaccount-resub' => 'CV-/resyme-filen din må velges på nytt av sikkerhetshensyn. La feltet være tomt om du ikke lenger ønsker å legge ved en.',
 	'requestaccount-tos' => 'Jeg har lest og vil følge [[{{MediaWiki:Requestaccount-page}}|tjenestevilkårene]] til {{SITENAME}}. Navnet jeg har oppgitt under «Virkelig navn» er mitt faktiske navn.',
 	'requestaccount-submit' => 'Etterspør konto',
-	'requestaccount-sent' => 'Kontoforespørselen din har blitt sendt, og venter på godkjenning.',
+	'requestaccount-sent' => 'Kontoforespørselen din har blitt sendt og venter på godkjenning.
+En e-post med bekreftelse har blitt sendt til din e-postadresse.',
 	'request-account-econf' => 'E-postadressen din er nå bekreftet, og vil listes slik i kontoforespørselen.',
 	'requestaccount-email-subj' => 'E-postbekreftelse hos {{SITENAME}}',
 	'requestaccount-email-body' => 'Noen, antageligvis deg fra IP-adressen $1, har etterspurt en konto «$2» med denne e-postadressen på {{SITENAME}}.
