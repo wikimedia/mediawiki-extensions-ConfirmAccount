@@ -484,7 +484,8 @@ $messages['ar'] = array(
 	'requestaccount-tos' => 'لقد قرأت وأوافق على الالتزام بشروط خدمة {{SITENAME}}.
 الاسم الذي حددته تحت "الاسم الحقيقي" هو في الواقع اسمي الحقيقي.',
 	'requestaccount-submit' => 'طلب حساب',
-	'requestaccount-sent' => 'طلبك للحساب تم إرساله بنجاح وهو بانتظار المراجعة الآن.',
+	'requestaccount-sent' => 'طلبك للحساب تم إرساله بنجاح وهو بانتظار المراجعة الآن.
+بريد إلكتروني للتأكيد تم إرساله إلى عنوان بريدك الإلكتروني.',
 	'request-account-econf' => 'عنوان بريدك الإلكتروني تم تأكيده وسيتم عرضه كما هو في طلب حسابك.',
 	'requestaccount-email-subj' => '{{SITENAME}} تأكيد عنوان البريد الإلكتروني من',
 	'requestaccount-email-body' => 'شخص ما، على الأرجح أنت من عنوان الأيبي $1، طلب حساب "$2" بعنوان البريد الإلكتروني هذا على {{SITENAME}}.
@@ -2577,6 +2578,8 @@ $messages['et'] = array(
 	'confirmaccount-bio' => 'Biograafia:',
 	'confirmaccount-attach' => 'Resümee/CV:',
 	'confirmaccount-notes' => 'Lisainfo:',
+	'confirmaccount-econf' => '(kinnitatud)',
+	'confirmaccount-noreason' => '(ei midagi)',
 	'confirmaccount-ip' => 'IP-aadress:',
 	'confirmaccount-submit' => 'Kinnita',
 	'confirmaccount-wsum' => 'Tere tulemast!',
@@ -10314,6 +10317,7 @@ Suriin kung ibinaybay ng tama ang pangalan.',
  * @author Karduelis
  * @author Mach
  * @author Suelnur
+ * @author Vito Genovese
  */
 $messages['tr'] = array(
 	'requestaccount-leg-user' => 'Kullanıcı hesabı',
@@ -10332,9 +10336,17 @@ $messages['tr'] = array(
 	'confirmaccount-wsum' => 'Hoşgeldiniz!',
 	'usercredentials-user' => 'Kullanıcı adı:',
 	'usercredentials-leg-user' => 'Kullanıcı hesabı',
+	'usercredentials-leg-areas' => 'Ana ilgi alanları',
+	'usercredentials-leg-person' => 'Kişisel bilgiler',
 	'usercredentials-leg-other' => 'Diğer bilgiler',
 	'usercredentials-email' => 'E-posta:',
 	'usercredentials-real' => 'Gerçek isminiz:',
+	'usercredentials-bio' => 'Biyografi:',
+	'usercredentials-attach' => 'Özgeçmiş/CV:',
+	'usercredentials-notes' => 'Ek notlar:',
+	'usercredentials-urls' => 'Web sitelerin listesi',
+	'usercredentials-ip' => 'Orijinal IP adresi:',
+	'usercredentials-member' => 'Haklar:',
 );
 
 /** ئۇيغۇرچە (ئۇيغۇرچە)
