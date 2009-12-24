@@ -709,7 +709,7 @@ $messages['arz'] = array(
 	'requestaccount-urls' => 'قائمة مواقع الويب، إن وجدت (افصل بسطور جديدة):',
 	'requestaccount-agree' => 'يجب أن تشهد أن اسمك الحقيقى صحيح وأنك توافق على شروط خدمتنا.',
 	'requestaccount-inuse' => 'اسم المستخدم مستعمل بالفعل فى طلب حساب قيد الانتظار',
-	'requestaccount-tooshort' => 'سيرتك يجب أن تتكون على الأقل من $1 كلمة.',
+	'requestaccount-tooshort' => 'يجب أن يكون طول سيرتك على الأقل {{PLURAL:$1||كلمة واحدة|كلمتين|$1 كلمات|$1 كلمة}}.',
 	'requestaccount-emaildup' => 'طلب حساب آخر قيد الانتظار يستخدم نفس عنوان البريد الإلكتروني.',
 	'requestaccount-exts' => 'نوع الملف المرفق غير مسموح به.',
 	'requestaccount-resub' => 'ملف سيرتك الذاتية/استكمالك يجب أن يتم إعادة اختياره لأسباب أمنية.
@@ -717,7 +717,8 @@ $messages['arz'] = array(
 	'requestaccount-tos' => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.
 الاسم الذى حددته تحت "الاسم الحقيقي" هو فى الواقع اسمى الحقيقي.',
 	'requestaccount-submit' => 'طلب حساب',
-	'requestaccount-sent' => 'طلبك للحساب تم إرساله بنجاح وهو بانتظار المراجعة الآن.',
+	'requestaccount-sent' => 'طلبك للحساب تم إرساله بنجاح وهو بانتظار المراجعة الآن.
+بريد إلكتروني للتأكيد تم إرساله إلى عنوان بريدك الإلكتروني.',
 	'request-account-econf' => 'عنوان بريدك الإلكترونى تم تأكيده وسيتم عرضه كما هو فى طلب حسابك.',
 	'requestaccount-email-subj' => '{{SITENAME}} تأكيد عنوان البريد الإلكترونى من',
 	'requestaccount-email-body' => 'شخص ما، على الأرجح أنت من عنوان الأيبى $1، طلب حساب "$2" بعنوان البريد الإلكترونى هذا على {{SITENAME}}.
@@ -10387,13 +10388,16 @@ $messages['uk'] = array(
 	'requestaccount-dup' => "'''Примітка: Ви вже ввійшли в систему із зареєстрованого облікового запису.'''",
 	'requestaccount-leg-user' => 'Обліковий запис',
 	'requestaccount-leg-areas' => 'Головні області зацікавлень',
+	'requestaccount-email' => 'Адреса електронної пошти:',
 	'requestaccount-level-0' => 'автор',
 	'requestaccount-level-1' => 'редактор',
+	'confirmaccount-email-q' => 'Електронна пошта',
 	'confirmaccount-name' => "Ім'я користувача",
 	'confirmaccount-real' => "Ім'я:",
 	'confirmaccount-email' => 'Електронна адреса:',
 	'confirmaccount-reqtype' => 'Посада:',
 	'confirmaccount-pos-0' => 'автор',
+	'confirmaccount-submit' => 'Підтвердити',
 );
 
 /** Vèneto (Vèneto)
