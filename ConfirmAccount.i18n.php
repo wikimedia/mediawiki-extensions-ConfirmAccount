@@ -481,7 +481,7 @@ $messages['ar'] = array(
 	'requestaccount-exts' => 'نوع الملف المرفق غير مسموح به.',
 	'requestaccount-resub' => 'ملف سيرتك الذاتية/استكمالك يجب أن يتم إعادة اختياره لأسباب أمنية.
 اترك الحقل فارغا لو كنت لم تعد تريد إضافة واحد.',
-	'requestaccount-tos' => 'لقد قرأت وأوافق على الالتزام بشروط خدمة {{SITENAME}}.
+	'requestaccount-tos' => 'لقد قرأت وأوافق على الالتزام [[{{MediaWiki:Requestaccount-page}}|بشروط خدمة]] {{SITENAME}}.
 الاسم الذي حددته تحت "الاسم الحقيقي" هو في الواقع اسمي الحقيقي.',
 	'requestaccount-submit' => 'طلب حساب',
 	'requestaccount-sent' => 'طلبك للحساب تم إرساله بنجاح وهو بانتظار المراجعة الآن.
@@ -687,7 +687,7 @@ $messages['arz'] = array(
 	'requestaccount-leg-other' => 'معلومات أخرى',
 	'requestaccount-leg-tos' => 'شروط الخدمة',
 	'requestaccount-acc-text' => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكترونى متى تم بعث هذا الطلب.
-من فضلك استجب عن طريق الضغط على وصلة التأكيد المعطاة فى البريد الإلكتروني.
+من فضلك استجب عن طريق الضغط على وصلة التأكيد المعطاة فى البريد الإلكترونى.
 أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكترونى عندما يتم إنشاء حسابك.',
 	'requestaccount-areas-text' => 'اختر المواضيع بالأسفل التى لديك فيها خبرة رسمية أو التى تود أن تعمل فيها.',
 	'requestaccount-ext-text' => 'المعلومات التالية سرية وسيتم استخدامها فقط لهذا الطلب.
@@ -710,15 +710,15 @@ $messages['arz'] = array(
 	'requestaccount-agree' => 'يجب أن تشهد أن اسمك الحقيقى صحيح وأنك توافق على شروط خدمتنا.',
 	'requestaccount-inuse' => 'اسم المستخدم مستعمل بالفعل فى طلب حساب قيد الانتظار',
 	'requestaccount-tooshort' => 'يجب أن يكون طول سيرتك على الأقل {{PLURAL:$1||كلمة واحدة|كلمتين|$1 كلمات|$1 كلمة}}.',
-	'requestaccount-emaildup' => 'طلب حساب آخر قيد الانتظار يستخدم نفس عنوان البريد الإلكتروني.',
+	'requestaccount-emaildup' => 'طلب حساب آخر قيد الانتظار يستخدم نفس عنوان البريد الإلكترونى.',
 	'requestaccount-exts' => 'نوع الملف المرفق غير مسموح به.',
 	'requestaccount-resub' => 'ملف سيرتك الذاتية/استكمالك يجب أن يتم إعادة اختياره لأسباب أمنية.
 اترك الحقل فارغا لو كنت لم تعد تريد إضافة واحد.',
-	'requestaccount-tos' => 'لقد قرأت و أوافق على الالتزام بشروط خدمة {{SITENAME}}.
-الاسم الذى حددته تحت "الاسم الحقيقي" هو فى الواقع اسمى الحقيقي.',
+	'requestaccount-tos' => 'لقد قرأت وأوافق على الالتزام [[{{MediaWiki:Requestaccount-page}}|بشروط خدمة]] {{SITENAME}}.
+الاسم الذي حددته تحت "الاسم الحقيقي" هو في الواقع اسمي الحقيقي.',
 	'requestaccount-submit' => 'طلب حساب',
 	'requestaccount-sent' => 'طلبك للحساب تم إرساله بنجاح وهو بانتظار المراجعة الآن.
-بريد إلكتروني للتأكيد تم إرساله إلى عنوان بريدك الإلكتروني.',
+بريد إلكترونى للتأكيد تم إرساله إلى عنوان بريدك الإلكترونى.',
 	'request-account-econf' => 'عنوان بريدك الإلكترونى تم تأكيده وسيتم عرضه كما هو فى طلب حسابك.',
 	'requestaccount-email-subj' => '{{SITENAME}} تأكيد عنوان البريد الإلكترونى من',
 	'requestaccount-email-body' => 'شخص ما، على الأرجح أنت من عنوان الأيبى $1، طلب حساب "$2" بعنوان البريد الإلكترونى هذا على {{SITENAME}}.
@@ -1892,12 +1892,21 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
+	'requestaccount-text' => "'''Füllen Sie das folgende Formular aus und schicken Sie es ab, um ein Benutzerkonto zu beantragen'''.  
+
+Bitte lesen Sie zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor Sie ein Benutzerkonto beantragen.
+
+Sobald das Konto bestätigt wurde, werden Sie per E-Mail benachrichtigt und Sie können sich [[Special:UserLogin|anmelden]].",
 	'requestaccount-dup' => "'''Achtung: Sie sind bereits mit einem registrierten Benutzerkonto angemeldet.'''",
 	'requestaccount-acc-text' => 'An Ihre E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.
 Bitte reagieren Sie darauf, indem Sie auf den in dieser Mail enthaltenen Bestätigungslink klicken.
 Sobald Ihr Konto angelegt wurde, wird Ihnen Ihr Passwort per E-Mail zugeschickt.',
+	'requestaccount-areas-text' => 'Wählen Sie die Themengebiete aus, in denen Sie das meiste Fachwissen haben oder wo Sie am meisten involviert sein werden.',
 	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag verwendet.
 Sie können Kontaktangaben wie eine Telefonnummer machen, um die Bearbeitung Ihres Antrags zu vereinfachen.',
+	'requestaccount-bio-text' => 'Ihre Biographie wird als initialer Inhalt Ihrer Benutzerseite gespeichert.
+Versuchen Sie alle nötigen Empfehlungen zu erwähnen, aber stellen Sie sicher, dass Sie die Informationen auch wirklich veröffentlichen möchten.
+Sie können Ihren Namen in [[Special:Preferences|Ihren Einstellungen]] ändern.',
 	'requestaccount-agree' => 'Sie müssen bestätigen, dass Ihr Realname korrekt ist und Sie die Benutzungsbedingungen akzeptieren.',
 	'requestaccount-tooshort' => 'Ihre Biographie muss mindestens {{PLURAL:$1|1 Wort|$1 Wörter}} lang sein.',
 	'requestaccount-resub' => 'Die Datei mit Ihrem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
@@ -1920,7 +1929,20 @@ Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
 Die E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen: „$2“.',
 	'acct_request_throttle_hit' => 'Sie haben bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, Sie können momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, müssen Sie es '''[[Special:RequestAccount|beantragen]]'''.",
+	'confirmaccount-maintext' => "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}'' zu bearbeiten.'''
+
+Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
+
+Wenn Sie auf einen Antrag antworten, überprüfen Sie die Informationen sorgfältig und bestätigen Sie die enthaltenen Informationen.
+Ihre Aktionen werden nichtöffentlich protokolliert. Es wird auch von Ihnen erwartet, die Aktionen anderer zu überprüfen.",
 	'confirmaccount-list2' => 'Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden, allerdings sollten Sie zuerst den ablehnenden Administrator kontaktieren.',
+	'confirmaccount-text' => "Dies ist ein Antrag auf ein Benutzerkonto bei '''{{SITENAME}}'''.
+
+Prüfen Sie alle unten stehenden Informationen gründlich und bestätigen Sie die Informationen wenn möglich.
+Bitte beachten Sie, dass Sie den Zugang bei Bedarf unter einem anderen Benutzernamen anlegen kannst.
+Sie sollten dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.
+
+Wenn Sie diese Seite verlassen, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.",
 	'confirmaccount-needreason' => 'Sie müssen eine Begründung eingeben.',
 	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
 Wir hoffen, dass Sie viele gute Informationen beisteuern.
@@ -1944,6 +1966,26 @@ $3
 
 Aus Sicherheitsgründen sollten Sie Ihr Passwort unbedingt beim ersten Anmelden ändern.
 Um sich anzumelden besuchen Sie bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
+	'confirmaccount-email-body3' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“  
+bei {{SITENAME}} abgelehnt.
+
+Dies kann viele Gründe haben. Möglicherweise haben Sie das Antragsformular
+nicht richtig ausgefüllt, haben nicht genügend Angaben gemacht oder haben die Anforderungen auf andere Weise nicht erfüllt.
+
+Möglicherweise gibt es auf der Seite Kontaktadressen, an die Sie sich wenden
+können, wenn Sie mehr über die Anforderungen wissen möchten.',
+	'confirmaccount-email-body4' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“  
+bei {{SITENAME}} abgelehnt.
+
+$2
+
+Möglicherweise gibt es auf der Seite Kontaktadressen, an die Sie sich wenden
+können, wenn Sie mehr über die Anforderungen wissen möchten.',
+	'confirmaccount-email-body5' => 'Bevor Ihre Anfrage für das Benutzerkonto „$1“ von {{SITENAME}} akzeptiert werden kann, müssen Sie zusätzliche Informationen übermitteln.
+
+$2
+
+Möglicherweise gibt es auf der Seite Kontaktadressen, an die Sie sich wenden können, wenn Sie mehr über die Anforderungen wissen möchten.',
 );
 
 /** Zazaki (Zazaki)
@@ -3129,7 +3171,7 @@ Vos pouede pas més fâre de demanda.',
 	'confirmaccount-list' => 'Vê-que, ce-desot, la lista des comptos en atenta d’aprobacion. Los comptos accèptâs seront crèâs et reteriês de ceta lista. Los comptos refusâs seront suprimâs de ceta méma lista.',
 	'confirmaccount-none-o' => 'Ora, y at gins de demanda de compto utilisator qu’est aprés étre confirmâ dens ceta lista.',
 	'confirmaccount-none-h' => 'Ora, y at gins de resèrvacion de compto utilisator qu’est aprés étre confirmâ dens ceta lista.',
-	'confirmaccount-none-r' => 'Ora, y at gins de refus novél de demanda de compto utilisator dens ceta lista.',
+	'confirmaccount-none-r' => 'Ora, y at gins de novél refus de demanda de compto utilisator dens ceta lista.',
 	'confirmaccount-none-e' => 'Ora, y at gins de demanda de compto utilisator èxpirâ dens ceta lista.',
 	'confirmaccount-real-q' => 'Nom',
 	'confirmaccount-email-q' => 'Adrèce èlèctronica',
@@ -5588,10 +5630,12 @@ $3
  * @author Nayvik
  */
 $messages['kn'] = array(
+	'requestaccount-level-0' => 'ಕರ್ತೃ',
 	'confirmaccount-real-q' => 'ಹೆಸರು',
 	'confirmaccount-email-q' => 'ಇ-ಅಂಚೆ',
 	'confirmaccount-real' => 'ಹೆಸರು:',
 	'confirmaccount-email' => 'ಇ-ಅಂಚೆ:',
+	'confirmaccount-pos-0' => 'ಕರ್ತೃ',
 	'usercredentials-email' => 'ಇ-ಅಂಚೆ:',
 );
 
