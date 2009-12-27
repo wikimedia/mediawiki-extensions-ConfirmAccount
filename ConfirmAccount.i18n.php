@@ -6062,6 +6062,7 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-showheld' => "Ufroen déi 'en-cours' sinn",
 	'confirmaccount-showexp' => 'ofgelafen Ufroen',
 	'confirmaccount-review' => 'Konfirméieren/Refüséieren',
+	'confirmaccount-types' => 'Sicht eng Waardelëscht vun de Benotzerkonteconfirmatiounen hei ënnendrënner eraus:',
 	'confirmaccount-all' => '(all Queue weisen)',
 	'confirmaccount-type' => 'Queue:',
 	'confirmaccount-type-0' => 'eventuell Auteuren',
@@ -6070,6 +6071,8 @@ Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-q-held' => "Ufroen déi 'en-cours' sinn",
 	'confirmaccount-q-rej' => 'rezent refuséiert Ufroen',
 	'confirmaccount-q-stale' => 'ofgelafen Ufroen',
+	'confirmaccount-badid' => 'Et gëtt keng oppe Benotzerufro mat der ID déi dir uginn hutt.
+Se gouf eventuell scho behandelt.',
 	'confirmaccount-leg-user' => 'Benotzerkont',
 	'confirmaccount-leg-areas' => 'Haaptinteressen',
 	'confirmaccount-leg-person' => 'Perséinlech Informatiounen',
@@ -6129,6 +6132,16 @@ $3
 
 Aus Sécherheetsgrënn musst Dir Ärt Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.
 Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Pardon, Är Ufro fir e Benotzerkont "$1" op {{SITENAME}} gouf refuséiert.
+
+Dëst ka verschidden Ursaachen hunn.
+Et ka sinn datt dir de Formulaire net richteg ausgefëllt hutt, net genuch an Ären Äntwerten uginn hutt, oder op eng aner Manéier d\'Critère vun de Benotzerrichtinnen net erfëllt hutt.
+EVentuell gëtt et Kontaklëschten um Site déi Dir benotze kënnt fir méi iwwer d\'Benotzerrichtlinnen gewuer ze ginn.',
+	'confirmaccount-email-body4' => 'Pardon, Är Ufro fir e Benotzerkont "$1" gouf op {{SITENAME}} ofgelehnt.
+
+$2
+
+Eventuell fannt Dir eng Kontaktlëscht déi dir benotze kënnt wann dir méi iwwert d\'Benotzerrichtlinne wësse wëllt.',
 	'confirmaccount-email-body5' => 'Éier Är Ufro fir e Benotzerkont "$1" kann op {{SITENAME}} ugeholl musst Dir d\'éischt epuer zousätzech Informatiounen uginn.
 
 $2
@@ -8577,7 +8590,7 @@ $messages['ru'] = array(
 	'requestaccount-leg-person' => 'Личные сведения',
 	'requestaccount-leg-other' => 'Прочая информация',
 	'requestaccount-leg-tos' => 'Правила использования',
-	'requestaccount-acc-text' => 'После отправки заявки на ваш адрес будет о отправлено письмо с запросом подтверждения. Пожалуйста, нажмите на ссылку в письме, чтобы дать подтверждение. Пароль будет отправлен вам по почте, когда ваша учётная запись будет создана.',
+	'requestaccount-acc-text' => 'После отправки заявки на ваш адрес будет отправлено письмо с запросом подтверждения. Пожалуйста, нажмите на ссылку в письме, чтобы дать подтверждение. Пароль будет отправлен вам по почте, когда ваша учётная запись будет создана.',
 	'requestaccount-areas-text' => 'Выберите области, в которых вы компетентны или в которых собираетесь работать в наибольшей степени.',
 	'requestaccount-ext-text' => 'Следующая информация будет сохранена в секрете и будет использована только для обработки данного запроса.
 	Вы можете перечислить способы связи, например, номер телефона, чтобы помочь в подтверждении идентичности.',
@@ -8602,8 +8615,8 @@ $messages['ru'] = array(
 	'requestaccount-exts' => 'Присоединение данного типа файлов запрещено.',
 	'requestaccount-resub' => 'В целях безопасности, ваш файл с резюме должен быть заменён. Оставьте поле пустым,
 	если вы не желаете отправлять резюме.',
-	'requestaccount-tos' => 'Я прочитал и соглшаюсь следовать [[{{MediaWiki:Requestaccount-page}}|Условиям предоставления услуг]] проекта {{SITENAME}}.
-	Имя, которое я указал в поле «Настоящее имя», действительно является моим настоящим именем.',
+	'requestaccount-tos' => 'Я прочитал и соглашаюсь следовать [[{{MediaWiki:Requestaccount-page}}|Условиям предоставления услуг]] проекта {{SITENAME}}.
+Имя, которое я указал в поле «Настоящее имя», действительно является моим настоящим именем.',
 	'requestaccount-submit' => 'Запросить учётную запись',
 	'requestaccount-sent' => 'Ваш запрос на получение учётной записи был успешно отправлен и теперь ожидает обработки.
 На ваш адрес было отправлено письмо с уведомлением.',
@@ -9963,6 +9976,138 @@ $2
 	'usercredentials-notes' => 'Эзоҳоти иловагӣ:',
 	'usercredentials-urls' => 'Феҳристи сомонаҳо:',
 	'usercredentials-ip' => 'Нишонаи IP-и аслӣ:',
+);
+
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'requestaccount' => 'Darxosti hisob',
+	'requestaccount-page' => '{{ns:project}}:Şarthoi Xidmat',
+	'requestaccount-dup' => "'''Ezoh: Şumo allakaj bo hisobi sabtşuda vurud kardaed.'''",
+	'requestaccount-leg-user' => 'Hisobi korbar',
+	'requestaccount-leg-person' => 'Ittilooti şaxsī',
+	'requestaccount-leg-other' => 'Ittilooti digar',
+	'requestaccount-acc-text' => 'Ba nişonai poctai elektroniji şumo pajomi tasdiqi dar holi firistodani in darxost firistoda xohad şud.
+Lutfan bo klik kardani pajvandi tasdiqiji tariqi poctai elektronī firistoda şuda posux dihed.
+Guzarvoƶa niz dar holati eçod şudani hisobi şumo ba nişonai poctai elektronī firistoda xohad şud.',
+	'requestaccount-real' => 'Nomi aslī:',
+	'requestaccount-same' => '(monandi nomi aslī)',
+	'requestaccount-email' => 'Nişonai poctai elektronī:',
+	'requestaccount-reqtype' => 'Vazifa:',
+	'requestaccount-level-0' => 'muallif',
+	'requestaccount-level-1' => 'viroişgar',
+	'requestaccount-bio' => 'Zindaginomai şaxsī:',
+	'requestaccount-notes' => 'Ezohoti ilovagī:',
+	'requestaccount-urls' => 'Fehristi somonaho, agar zijod boşad (bo satrhoi çadid çudo kuned):',
+	'requestaccount-agree' => 'Şumo bojad tasdiq kuned ki nomi asliji şumo durust ast va şumo bo Şarthoi Xidmati mo rozī hasted.',
+	'requestaccount-inuse' => 'Nomi korbarī allakaj dar istifodai darxosti hisobi dar tajbuda ast.',
+	'requestaccount-emaildup' => 'Digar darxosti hisobi dar tajbuda hamin nişoniji poctai elektroniro istifoda mebarad.',
+	'requestaccount-exts' => "Nav'i zamimaviji parvanda noravost.",
+	'requestaccount-tos' => 'Man [[{{MediaWiki:Requestaccount-page}}|Şarthoi Xidmati]] dar {{SITENAME}} budaro xondam va bo onho vafodor hastam.
+Nomi muşaxxaskardai man zeri "Nomi Aslī" dar haqiqat nomi asliji xudi man ast.',
+	'requestaccount-submit' => 'Darxosti hisob',
+	'request-account-econf' => 'Nişonai poctai elektroniji şumo tasdiq şud va hamin tavr dar darxosti hisobi şumo fehrist xohad şud.',
+	'requestaccount-email-subj' => '{{SITENAME}} tasdiqi nişonai poctai elektronī',
+	'requestaccount-email-body' => 'Şaxse, ehtimolan şumo az nişonai IP $1, hisobi "$2" bo nişonai poctai elektronī dar {{SITENAME}} darxost kard.
+
+Baroi tasdiq, ki in hisob dar haqiqat ba şumo dar {{SITENAME}} taaluq dorad, in pajvandro dar mururgaraton boz kuned:
+
+$3
+
+Agar hisob eçod şuda boşad, tanho ba şumo kalimai ubur tariqi poctai elektronī firistoda xohad şud.
+Agar in şumo *nest*, pajvandro dunbol nakuned.
+In kodi tasdiq dar $4 ba xotima xohad rasid.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} darxosti hisob',
+	'requestaccount-email-body-admin' => '"$1" hisobero darxost kard va muntaziri tasdiqi on meboşad.
+Nişonai poctai elektronī tasdiq şud. Şumo darxostro metavoned inço "$2" tasdiq kuned.',
+	'requestaccount-loginnotice' => "Baroi dastras kardani hisobi korbarī, şumo bojad '''[[Special:RequestAccount|darxost]]''' kuned.",
+	'confirmaccounts' => 'Darxosthoi hisobhoro tasdiq kuned',
+	'confirmaccount-list' => 'Dar zer fehristi darxosthoi hisobhoi muntaziri tasdiq ovarda şudaast.
+Dar holati tasdiq kardan va jo rad kardani darxost, on az in fehrist pok kardan xohad şud.',
+	'confirmaccount-real-q' => 'Nom',
+	'confirmaccount-email-q' => 'Poctai elektronī',
+	'confirmaccount-bio-q' => 'Zindaginoma',
+	'confirmaccount-showopen' => 'darxosthoi kuşod',
+	'confirmaccount-showrej' => 'darxosthoi radşuda',
+	'confirmaccount-review' => 'Peşnamoiş',
+	'confirmaccount-q-open' => 'darxosthoi kuşod',
+	'confirmaccount-leg-user' => 'Hisobi korbarī',
+	'confirmaccount-leg-person' => 'Ittilooti şaxsī',
+	'confirmaccount-leg-other' => 'Ittilooti digar',
+	'confirmaccount-name' => 'Nomi korbarī',
+	'confirmaccount-real' => 'Nom:',
+	'confirmaccount-email' => 'Poctai elektronī:',
+	'confirmaccount-reqtype' => 'Vazifa:',
+	'confirmaccount-pos-0' => 'muallif',
+	'confirmaccount-pos-1' => 'viroişgar',
+	'confirmaccount-bio' => 'Zindaginoma:',
+	'confirmaccount-notes' => 'Ezohoti ilovagī:',
+	'confirmaccount-urls' => 'Fehristi somonaho:',
+	'confirmaccount-none-p' => '(peşnihod naşudaast)',
+	'confirmaccount-econf' => "(ta'jidşuda)",
+	'confirmaccount-noreason' => '(heç)',
+	'confirmaccount-create' => 'Qabul (eçodi hisob)',
+	'confirmaccount-deny' => 'Rad (az fehrist giriftan)',
+	'confirmaccount-hold' => 'Nigoh doştan',
+	'confirmaccount-spam' => 'Haraznoma (poctai elektronī nafiristed)',
+	'confirmaccount-reason' => 'Tavzeh (dar pajomi elektronī ilova xohad şud):',
+	'confirmaccount-ip' => 'Nişonai IP:',
+	'confirmaccount-submit' => "Ta'jid",
+	'confirmaccount-needreason' => "Şumo bojad dalel dar ça'bai tavzeh dar zer peşkaş namoed.",
+	'confirmaccount-canthold' => 'In darxost allakaj jo nigoh doşta şudaast jo hazf şudaast.',
+	'confirmaccount-acc' => 'Darxosti hisob bo muvaffaqijat tasdiq karda şud; hisobi korbariji çadidī [[User:$1|$1]] eçod şud.',
+	'confirmaccount-rej' => 'Darxosti hisob bo muvaffaqijat rad karda şud.',
+	'confirmaccount-viewing' => '(holo dar holi didan ast tavassuti [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Dar holi eçodi sahifai korbarī bo zindaginomai korbari çadid.',
+	'confirmaccount-welc' => "'''Xuş omaded ba ''{{SITENAME}}''!''' Mo umedvorem, ki şumo bisjor va xub hissaguzorī xohed kard.
+Şumo ehtimolan mexohed [[{{MediaWiki:Helppage}}|sahifahoi rohnamoro]] bixoned. Bori digar, xuş omaded va şod boşed!",
+	'confirmaccount-wsum' => 'Xuş omaded!',
+	'confirmaccount-email-subj' => '{{SITENAME}} darxosti korbar',
+	'confirmaccount-email-body' => 'Darxosti şumo baroi hisobe dar {{SITENAME}} tasdiq şud.
+
+Nomi hisob: $1
+
+Guzarvoƶa: $2
+
+Az sababhoi amnijatī, şumo bojad dar vurudşvaiji avvalin guzarvoƶai xudro taƣjir dihed.
+Baroi vurud şudan, lutfan raved ba {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Darxosti şumo baroi hisobe dar {{SITENAME}} tasdiq şud.
+
+Nomi hisob: $1
+
+Guzarvoƶa: $2
+
+$3
+
+Az sababhoi amnijatī, şumo bojad dar vurudşvaiji avvalin guzarvoƶai xudro taƣjir dihed.
+Baroi vurud şudan, lutfan raved ba {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Bubaxşed, darxosti şumo baroi hisobi "$1" dar {{SITENAME}} rad şud.
+
+Cand sababhoe hastand ki boisi rad şudan meşavand.
+Şumo şojad formro durust pur nakardaed, posuxi şumo az rūi talabot tūlonī nabud, jo ba me\'jori talaboti sijosati çavobgū nabud.
+Dar somona fehristi tamos mumkin ovarda şuda boşad, ki tariqi on şumo metavoned ma\'lumoti beştar oidi sijosati hisobi korbarī dastras namoed.',
+	'confirmaccount-email-body4' => 'Bubaxşed, darxosti şumo baroi hisobi "$1" dar {{SITENAME}} rad şud.
+
+$2
+
+Dar somona fehristi tamos mumkin ovarda şuda boşad, ki tariqi on şumo metavoned ma\'lumoti beştar oidi sijosati hisobi korbarī dastras namoed.',
+	'confirmaccount-email-body5' => 'Qabl az qabul kardani darxosti şumo baroi hisobi "$1" dar {{SITENAME}} şumo bojad avval cand ittilooti ilovagiro peşkaş kuned.
+
+$2
+
+Dar somona fehristi tamos mumkin ovarda şuda boşad, ki tariqi on şumo metavoned ma\'lumoti beştar oidi sijosati hisobi korbarī dastras namoed.',
+	'usercredentials' => 'Ixtijoroti korbar',
+	'usercredentials-user' => 'Nomi korbarī:',
+	'usercredentials-leg-user' => 'Hisobi korbarī',
+	'usercredentials-leg-person' => 'Ittilooti şaxsī',
+	'usercredentials-leg-other' => 'Ittilooti digar',
+	'usercredentials-email' => 'Poctai elektronī:',
+	'usercredentials-real' => 'Nomi aslī:',
+	'usercredentials-bio' => 'Zindaginoma:',
+	'usercredentials-notes' => 'Ezohoti ilovagī:',
+	'usercredentials-urls' => 'Fehristi somonaho:',
+	'usercredentials-ip' => 'Nişonai IP-i aslī:',
 );
 
 /** Thai (ไทย)
