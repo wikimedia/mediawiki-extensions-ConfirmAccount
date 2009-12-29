@@ -3770,6 +3770,8 @@ $messages['he'] = array(
 	'requestaccount-acc-text' => 'לכתובת הדוא"ל שלכם תישלח הודעת אישור לאחר שהבקשה תתקבל.
 אנא הגיבו על ידי לחיצה על הקישור לאישור המסופק בהודעת הדוא"ל.
 כמו כן, הסיסמה שלכם תישלח אליכם בעת יצירת חשבונכם.',
+	'requestaccount-ext-text' => 'המידע הבא נשמר בפרטיות וישמש עבור בקשה זו בלבד.
+יתכן שתרצו לציין פרטי קשר כגון מספר טלפון כדי לסייע באימות זהותכם.',
 	'requestaccount-real' => 'שם אמיתי:',
 	'requestaccount-same' => '(כמו השם האמיתי)',
 	'requestaccount-email' => 'כתובת הדוא"ל:',
@@ -3780,10 +3782,17 @@ $messages['he'] = array(
 	'requestaccount-attach' => 'קורות חיים (אופציונאלי):',
 	'requestaccount-notes' => 'הערות נוספות:',
 	'requestaccount-urls' => 'רשימה של אתרים, אם יש כאלה (הפרידו באמצעות שורות חדשות):',
+	'requestaccount-agree' => 'עליכם לאמת כי השם שציינתם הוא שמכם האמיתי ושהוא נכון ושאתם מסכימים לתנאי השימוש שלנו.',
 	'requestaccount-inuse' => 'שם המשתמש כבר נמצא בשימוש בבקשת חשבון ממתינה.',
 	'requestaccount-tooshort' => 'על הביוגרפיה שלכם להכיל לפחות {{PLURAL:$1|מילה אחת|$1 מילים}}.',
 	'requestaccount-exts' => 'סוג הקובץ המצורף אינו מורשה.',
+	'requestaccount-email-subj' => 'אימות כתובת דוא"ל עבור {{SITENAME}}',
+	'requestaccount-email-subj-admin' => 'בקשת חשבון באתר {{SITENAME}}',
+	'requestaccount-loginnotice' => "כדי לקבל חשבון משתמש, עליכם '''[[Special:RequestAccount|לבקש אחד כזה]]'''.",
+	'confirmaccounts' => 'אישור בקשות חשבון',
 	'confirmedit-desc' => 'הענקת היכולת לביורוקרטים לאשר בקשות לחשבונות',
+	'confirmaccount-list' => 'להלן מופיעה רשימת חשבונות הממתינים לאישור.
+לאחר דחייה או אישור של אחת הבקשות היא תוסר מרשימה זו.',
 	'confirmaccount-real-q' => 'שם',
 	'confirmaccount-email-q' => 'דוא"ל',
 	'confirmaccount-bio-q' => 'ביוגרפיה',
@@ -3798,6 +3807,8 @@ $messages['he'] = array(
 	'confirmaccount-q-held' => 'בקשות שעוכבו',
 	'confirmaccount-q-rej' => 'בקשות שנדחו לאחרונה',
 	'confirmaccount-q-stale' => 'בקשות שפג תוקפן',
+	'confirmaccount-badid' => "אין בקשות ממתינות העונות למס' הנתון.
+יתכן שהבקשה כבר טופלה.",
 	'confirmaccount-leg-user' => 'חשבון משתמש',
 	'confirmaccount-leg-areas' => 'תחומי עניין עיקריים',
 	'confirmaccount-leg-person' => 'מידע אישי',
@@ -3817,6 +3828,7 @@ $messages['he'] = array(
 	'confirmaccount-econf' => '(מאושרת)',
 	'confirmaccount-reject' => '(נדחתה על ידי [[User:$1|$1]] ב־$2)',
 	'confirmaccount-noreason' => '(ללא)',
+	'confirmaccount-held' => '(סומנה להמתנה על ידי [User:$1|$1]] ב־$2)',
 	'confirmaccount-create' => 'אישור (יצירת חשבון)',
 	'confirmaccount-deny' => 'דחייה (מחיקת הבקשה)',
 	'confirmaccount-hold' => 'עיכוב',
@@ -3831,6 +3843,25 @@ $messages['he'] = array(
 	'confirmaccount-viewing' => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])',
 	'confirmaccount-summary' => 'יצירת דף משתמש עם ביוגרפיה של משתמש חדש',
 	'confirmaccount-wsum' => 'ברוכים הבאים!',
+	'confirmaccount-email-subj' => 'בקשת חשבון באתר {{SITENAME}}',
+	'confirmaccount-email-body' => 'בקשתך לקבלת חשבון אושרה באתר {{SITENAME}}.
+
+שם החשבון: $1
+
+סיסמה: $2
+
+מטעמי אבטחה עליכם לשנות את סיסמתכם עם כניסתכם הראשונה.
+כדי להכנס, אנא עברו לכתובת {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'בקשתכם לקבלת חשבון באתר {{SITENAME}} אושרה.
+
+שם החשבון: $1
+
+סיסמה: $2
+
+$3
+
+מטעמי אבטחה תזדקקו לשנות את סיסמתכם עם הכניסה הראשונה.
+כדי להתחבר אנא גשו לכתובת {{fullurl:Special:UserLogin}}.',
 	'usercredentials' => 'פרטי זיהוי המשתמש',
 	'usercredentials-leg' => 'פרטי זיהוי המשתמש שאושרו בתהליך האיתור',
 	'usercredentials-user' => 'שם המשתמש:',
@@ -3849,6 +3880,8 @@ $messages['he'] = array(
 	'usercredentials-member' => 'הרשאות:',
 	'usercredentials-badid' => 'לא נמצאו פרטי זיהוי עבור משתמש זה.
 אנא ודאו שהשם מאוית כראוי.',
+	'right-confirmaccount' => 'צפייה ב[[Special:ConfirmAccounts|תור עם החשבונות הדרושים]]',
+	'right-lookupcredentials' => 'צפייה ב[[Special:UserCredentials|הרשאות המשתמש]]',
 );
 
 /** Hindi (हिन्दी)
@@ -10296,6 +10329,16 @@ $2
 	'usercredentials-urls' => 'รายชื่อเว็บไซต์:',
 	'usercredentials-ip' => 'ไอพีแอดเดรสดั้งเิดิม:',
 	'usercredentials-member' => 'สิทธิ:',
+);
+
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'confirmaccount-real-q' => 'At',
+	'confirmaccount-name' => 'Ulanyjy ady',
+	'confirmaccount-real' => 'At:',
+	'usercredentials-user' => 'Ulanyjy ady:',
 );
 
 /** Tagalog (Tagalog)
