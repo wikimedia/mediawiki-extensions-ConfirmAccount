@@ -10169,6 +10169,7 @@ Dar somona fehristi tamos mumkin ovarda şuda boşad, ki tariqi on şumo metavon
 
 /** Thai (ไทย)
  * @author Ans
+ * @author Harley Hartwell
  * @author Octahedron80
  * @author Passawuth
  */
@@ -10215,7 +10216,7 @@ $messages['th'] = array(
 	'requestaccount-tos' => 'ข้าพเจ้าได้อ่านและยินดีปฏิบัติตาม[[{{MediaWiki:Requestaccount-page}}|ข้อตกลงการใช้งาน]] ของ {{SITENAME}}
 ชื่อที่ข้าพเจ้าได้กรอกในช่อง "ชื่อจริง" นั้น เป็นความจริง',
 	'requestaccount-submit' => 'ขอบัญชีผู้ใช้',
-	'requestaccount-sent' => 'คำขอบัญชีผู้ใช้ของคุณได้ถูกส่งไปแล้ว และกำลังอยู่ในกระบวนการพิจารณา',
+	'requestaccount-sent' => 'คำขอบัญชีผู้ใช้ของคุณได้ถูกส่งไปแล้ว และกำลังอยู่ในกระบวนการพิจารณา อีเมลยืนยันได้ถูกส่งไปยังอีเมลแอดเดรสของคุณแล้ว',
 	'request-account-econf' => 'คุณได้ยืนยันอีเมลของคุณแล้ว และข้อมูลนี้จะถูกรวมอยู่ในคำขอบัญชีผู้ใช้',
 	'requestaccount-email-subj' => 'การยืนยันทางอีเมลของ {{SITENAME}}',
 	'requestaccount-email-body' => 'มีบุคคลใดบุคคลหนึ่ง ซึ่งเป็นไปได้ว่ามาจากไอพีแอดเดรสของคุณ $1 ได้ขอบัญชีผู้ใช้ "$2" และใช้อีเมลนี้ บนเว็บไซต์ {{SITENAME}}
@@ -10577,21 +10578,194 @@ Suriin kung ibinaybay ng tama ang pangalan.',
  * @author Vito Genovese
  */
 $messages['tr'] = array(
+	'requestaccount' => 'Hesap iste',
+	'requestaccount-text' => "'''Kullanıcı hesabı istemek için aşağıdaki formu doldurun ve gönderin'''.
+
+Hesap istemeden önce ilk olarak [[{{MediaWiki:Requestaccount-page}}|Hizmet Koşullarını]] okuduğunuzdan emin olun.
+
+Hesap onaylandığında size bir bildirim e-postası gönderilecek ve hesabınız [[Special:UserLogin|oturum açma]] sonucunda kullanılabilir olacak.",
+	'requestaccount-page' => '{{ns:project}}:Hizmet Koşulları',
+	'requestaccount-dup' => "'''Not: Halihazırda kayıtlı bir hesap ile oturum açmış durumdasınız.'''",
 	'requestaccount-leg-user' => 'Kullanıcı hesabı',
+	'requestaccount-leg-areas' => 'Ana ilgi alanları',
 	'requestaccount-leg-person' => 'Personel bilgileri',
 	'requestaccount-leg-other' => 'Diğer bilgiler',
+	'requestaccount-leg-tos' => 'Hizmet Koşulları',
+	'requestaccount-acc-text' => 'Bu istek gönderildiğinde e-posta adresinize bir onay mesajı gönderilecektir.
+Lütfen e-postada verilen onay bağlantısına tıklayarak cevap verin.
+Ayrıca hesabınız oluşturulduğunda parolanız da size e-posta ile gönderilecektir.',
+	'requestaccount-areas-text' => 'Resmi uzmanlığa sahip olduğunuz veya çalışmak istediğiniz alanları aşağıdan seçin.',
+	'requestaccount-ext-text' => 'Aşağıdaki bilgiler gizli tutulmaktadır ve sadece bu istek için kullanılacaktır.
+Kimlik doğrulamada yardımcı olması için telefon numarası gibi irtibat bilgilerini eklemek isteyebilirsiniz.',
+	'requestaccount-bio-text' => 'Biyografiniz, kullanıcı sayfanız için varsayılan içerik olarak ayarlanacak.
+Referans da dahil etmeye çalışın.
+Bu bilgileri yayımlama konusunda herhangi bir çekinceniz olmadığından emin olun.
+Kullanıcı adınız [[Special:Preferences|tercihleriniz]] aracılığıyla değiştirilebilmektedir.',
 	'requestaccount-real' => 'Gerçek isminiz:',
+	'requestaccount-same' => '(gerçek isim ile aynı)',
 	'requestaccount-email' => 'E-posta adresi:',
+	'requestaccount-reqtype' => 'Konum:',
+	'requestaccount-level-0' => 'yazar',
+	'requestaccount-level-1' => 'editör',
+	'requestaccount-bio' => 'Kişisel biyografi:',
+	'requestaccount-attach' => 'Özgeçmiş veya CV (isteğe bağlı):',
+	'requestaccount-notes' => 'Ek notlar:',
+	'requestaccount-urls' => 'Varsa web sitelerin listesi (yeni satırlarla ayrılmış):',
+	'requestaccount-agree' => 'Gerçek isminizin doğru olduğunu ve Hizmet Koşullarımızı kabul ettiğinizi belgelemeniz gerekmektedir.',
+	'requestaccount-inuse' => 'Kullanıcı, halihazırda beklemede olan bir hesap isteğinde kullanımda.',
+	'requestaccount-tooshort' => 'Biyografiniz en az $1 kelime uzunluğunda olmalı.',
+	'requestaccount-emaildup' => 'Bekleyen bir diğer hesap isteği de aynı e-posta adresini kullanıyor.',
+	'requestaccount-exts' => 'Ek dosya türüne izin verilmiyor.',
+	'requestaccount-resub' => 'CV/Özgeçmiş dosyanız güvenlik nedenleriyle tekrar seçilmek durumunda.
+Eklemek istemiyorsanız alanı boş bırakın.',
+	'requestaccount-tos' => '{{SITENAME}} [[{{MediaWiki:Requestaccount-page}}|Hizmet Koşullarını]] okudum ve uymayı kabul ediyorum.
+"Gerçek isim" bölümüne girmiş olduğum isim gerçek ismimdir.',
+	'requestaccount-submit' => 'Hesap iste',
+	'requestaccount-sent' => 'Hesap isteğiniz başarıyla gönderildi ve şu anda inceleme bekliyor.',
+	'request-account-econf' => 'E-posta adresiniz doğrulandı ve hesap isteğinde bu şekilde listelenecek',
+	'requestaccount-email-subj' => '{{SITENAME}} e-posta adresi doğrulaması',
+	'requestaccount-email-body' => '$1 IP adresini kullanan biri (muhtemelen siz), {{SITENAME}} üzerinde bu e-posta adresiyle "$2" hesabını talep etti.
+
+Bu hesabın {{SITENAME}} üzerinde gerçekten de size ait olduğunu onaylamak için, bu bağlantıyı tarayıcınızda açın:
+
+$3
+
+Hesap oluşturulmuşsa sadece size e-posta ile parola gönderilecektir.
+Bu siz *değilseniz*, bağlantıyı açmayın.
+Bu onay kodu, $4 tarihinde geçerliliğini yitirecektir.',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} hesap isteği',
+	'requestaccount-email-body-admin' => '"$1" bir hesap isteğinde bulundu ve onay bekliyor.
+E-posta adresi doğrulandı. İsteği şuradan onaylayabilirsiniz: "$2".',
+	'acct_request_throttle_hit' => 'Üzgünüz, daha önce {{PLURAL:$1|1 hesap|$1 hesap}} isteğinde bulunmuşsunuz.
+Daha fazla istekte bulunamazsınız.',
+	'requestaccount-loginnotice' => "Bir kullanıcı hesabı almak için, '''[[Special:RequestAccount|istekte bulunmanız]]''' gerekmektedir.",
+	'confirmaccount-newrequests' => "'''$1''' açık e-postası doğrulanmış [[Special:ConfirmAccounts|hesap {{PLURAL:$1|istek|istek}}]] beklemede",
+	'confirmaccounts' => 'Hesap isteklerini onayla',
+	'confirmedit-desc' => 'Bürokratlara hesap isteklerini onaylama imkanı vermektedir',
+	'confirmaccount-maintext' => "'''Bu sayfa ''{{SITENAME}}'' üzerindeki beklemede olan hesap isteklerini onaylamak için kullanılmaktadır'''.
+
+Tüm hesap istek grupları, üç alt gruptan oluşmaktadır.
+Biri açık istekler, biri ek bilgi beklendiği için diğer hizmetliler tarafından askıya alınmış olanlar, üçüncüsü de yakın zamanda reddedilmiş istekler içindir.
+
+Bir isteğe cevap verirken dikkatli bir şekilde inceleyin ve gerekirse verilen bilgileri onaylayın. İşlemleriniz gizli kayıt altında tutulacaktır.
+Ayrıca kendinizin dışındaki her türlü işlemi de incelemeniz beklenmektedir.",
+	'confirmaccount-list' => 'Aşağıda onay bekleyen isteklerin bir listesi bulunmaktadır.
+Bir istek onaylandığında ya da reddedildiğinde bu listeden çıkarılmaktadır.',
+	'confirmaccount-list2' => 'Aşağıda birkaç gün geçtikten sonra otomatik olarak silinebilecek olan yakın zamanda reddedilmiş hesap isteklerinin bir listesi yer almaktadır.
+Halen onaylanmaları mümkündür, ancak bunu yapmadan önce ret işlemini gerçekleştiren hizmetliye danışmanız yararlı olabilir.',
+	'confirmaccount-list3' => 'Aşağıda birkaç gün geçince otomatik olarak silinebilecek süresi dolmuş hesap isteklerinin bir listesi bulunmaktadır.
+Onaylanmaları halen mümkündür.',
+	'confirmaccount-text' => "Bu, '''{{SITENAME}} üzerinde beklemede olan bir kullanıcı hesabı isteğidir.
+
+Aşağıdaki bilgileri dikkatli bir biçimde inceleyin.
+Bu isteği onaylıyorsanız, kullanıcı hesap durumunu ayarlamak için konum hızlı menüsünü kullanın.
+Uygulama biyografisinde yapılan değişiklikler, kalıcı referans saklama durumunu etkilemeyecektir.
+Hesabı farklı bir kullanıcı adı altında açmayı tercih edebileceğinizi unutmayın.
+Bunu sadece diğer kullanıcı adları ile çakışma halinde kullanın.
+
+Bu sayfadan isteği onaylamadan ya da reddetmeden çıkmanız halinde, istek beklemede kalacaktır.",
+	'confirmaccount-none-o' => 'Şu anda bu listede beklemede olan açık hesap isteği bulunmuyor.',
+	'confirmaccount-none-h' => 'Şu anda bu listede askıda olan açık hesap isteği bulunmuyor.',
+	'confirmaccount-none-r' => 'Şu anda bu listede yakın zamanda reddedilmiş hesap isteği bulunmuyor.',
+	'confirmaccount-none-e' => 'Şu anda bu listede süresi dolmuş hesap isteği bulunmuyor.',
 	'confirmaccount-real-q' => 'İsim',
 	'confirmaccount-email-q' => 'E-posta',
+	'confirmaccount-bio-q' => 'Biyografi',
+	'confirmaccount-showopen' => 'açık istekler',
+	'confirmaccount-showrej' => 'reddedilen istekler',
+	'confirmaccount-showheld' => 'askıda olan istekler',
+	'confirmaccount-showexp' => 'süresi dolan istekler',
+	'confirmaccount-review' => 'İncele',
+	'confirmaccount-types' => 'Aşağıdan bir hesap oluşturma grubu seçin:',
+	'confirmaccount-all' => '(tüm grupları göster)',
+	'confirmaccount-type' => 'Grup:',
+	'confirmaccount-type-0' => 'gelecekteki yazarlar',
+	'confirmaccount-type-1' => 'gelecekteki editörler',
+	'confirmaccount-q-open' => 'açık istekler',
+	'confirmaccount-q-held' => 'askıda olan istekler',
+	'confirmaccount-q-rej' => 'yakın zamanda reddedilmiş istekler',
+	'confirmaccount-q-stale' => 'süresi dolmuş istekler',
+	'confirmaccount-badid' => 'Verilen kimliğe karşılık gelen ve beklemede olan bir istek bulunmuyor.
+İşlemi tamamlanmış olabilir.',
+	'confirmaccount-leg-user' => 'Kullanıcı hesabı',
+	'confirmaccount-leg-areas' => 'Ana ilgi alanları',
+	'confirmaccount-leg-person' => 'Kişisel bilgiler',
 	'confirmaccount-leg-other' => 'Diğer bilgiler',
 	'confirmaccount-name' => 'Kullanıcı adı',
 	'confirmaccount-real' => 'Adı:',
 	'confirmaccount-email' => 'E-posta:',
+	'confirmaccount-reqtype' => 'Konum:',
+	'confirmaccount-pos-0' => 'yazar',
+	'confirmaccount-pos-1' => 'editör',
+	'confirmaccount-bio' => 'Biyografi:',
+	'confirmaccount-attach' => 'Özgeçmiş/CV:',
+	'confirmaccount-notes' => 'Ek notlar:',
+	'confirmaccount-urls' => 'Web sitelerin listesi:',
+	'confirmaccount-none-p' => '(girilmemiş)',
+	'confirmaccount-confirm' => 'Bu isteği kabul etmek, reddetmek ya da askıya almak için aşağıdaki seçenekleri kullanın:',
+	'confirmaccount-econf' => '(onaylandı)',
+	'confirmaccount-reject' => '($2 tarihinde [[User:$1|$1]] tarafından reddedildi)',
+	'confirmaccount-rational' => 'Başvuran kişiye sunulan gerekçe:',
 	'confirmaccount-noreason' => '(hiçbiri)',
+	'confirmaccount-autorej' => '(bu istek, etkin olmama nedeniyle otomatik olarak iptal edildi)',
+	'confirmaccount-held' => '($2 tarihinde [[User:$1|$1]] tarafından "askıda" olarak işaretlendi)',
+	'confirmaccount-create' => 'Kabul et (hesabı oluştur)',
+	'confirmaccount-deny' => 'Reddet (listeden çıkar)',
+	'confirmaccount-hold' => 'Askıya al',
+	'confirmaccount-spam' => 'Reklam (e-posta gönderme)',
+	'confirmaccount-reason' => 'Yorum (e-postaya dahil edilecek):',
 	'confirmaccount-ip' => 'IP adresi:',
+	'confirmaccount-submit' => 'Onayla',
+	'confirmaccount-needreason' => 'Aşağıdaki yorum kutusuna bir gerekçe girmelisiniz.',
+	'confirmaccount-canthold' => 'Bu istek ya askıda ya da silinmiş.',
+	'confirmaccount-acc' => 'Hesap isteği başarıyla doğrulandı;
+yeni kullanıcı hesabı [[User:$1|$1]] oluşturuldu.',
+	'confirmaccount-rej' => 'Hesap isteği başarıyla reddedildi.',
+	'confirmaccount-viewing' => '(şu an [[User:$1|$1]] tarafından inceleniyor)',
+	'confirmaccount-summary' => 'Yeni kullanıcının biyografisi ile kullanıcı sayfası oluşturuluyor.',
+	'confirmaccount-welc' => "'''''{{SITENAME}}'' projesine hoş geldiniz!'''
+Uzun sürede çok katkı yapmanızı umarız.
+Muhtemelen [[{{MediaWiki:Helppage}}|yardım sayfalarını]] okumak isteyeceksiniz.
+Tekrar hoş geldiniz, iyi eğlenceler!",
 	'confirmaccount-wsum' => 'Hoşgeldiniz!',
+	'confirmaccount-email-subj' => '{{SITENAME}} hesap isteği',
+	'confirmaccount-email-body' => '{{SITENAME}} üzerindeki hesap isteğiniz onaylandı.
+
+Hesap adı: $1
+
+Parola: $2
+
+Güvenlik nedeniyleriyle ilk oturum açışınızda parolanızı değiştirmeniz gerekecek.
+Oturum açmak için, lütfen {{fullurl:Special:UserLogin}} sayfasını ziyaret edin.',
+	'confirmaccount-email-body2' => '{{SITENAME}} üzerindeki hesap isteğiniz onaylandı.
+
+Hesap adı: $1
+
+Parola: $2
+
+$3
+
+Güvenlik nedeniyle ilk oturum açışınızda parolanızı değiştirmeniz gerekecek.
+Oturum açmak için lütfen {{fullurl:Special:UserLogin}} sayfasını ziyaret edin.',
+	'confirmaccount-email-body3' => 'Üzgünüz, "$1" hesabı için {{SITENAME}} üzerindeki isteğiniz reddedildi.
+
+Bunun gerçekleşmesinin birkaç nedeni bulunmaktadır.
+Formu doğru şekilde doldurmamış, cevaplarınızda yeterli uzunluğa ulaşmamış ya da bazı politika kriterlerini karşılayamamış olabilirsiniz.
+Sitede, kullanıcı hesap politikamız hakkında daha fazla bilgi almak istemeniz halinde kullanabileceğiz irtibat listeleri bulunabilir.',
+	'confirmaccount-email-body4' => 'Üzgünüz, "$1" hesabı için {{SITENAME}} üzerindeki isetğiniz reddedildi.
+
+$2
+
+Kullanıcı hesap politikamız hakkında daha fazla bilgi almak isterseniz kullanabileceğiz sitede irtibat listeleri bulunabilir.',
+	'confirmaccount-email-body5' => '"$1" hesabı için {{SITENAME}} üzerindeki isteğinizin kabul edilmesinden önce bazı ek bilgileri sağlamanız gerekmektedir.
+
+$2
+
+Sitede, kullanıcı hesap politikamız hakkında daha fazla bilgi almak istemeniz halinde kullanabileceğiniz irtibat listeleri bulunabilir.',
+	'usercredentials' => 'Kullanıcı referansları',
+	'usercredentials-leg' => 'Bir kullanıcının onaylanmış referanslarını incele',
 	'usercredentials-user' => 'Kullanıcı adı:',
+	'usercredentials-text' => 'Aşağıda seçilen kullanıcı hesabı için doğrulanmış referanslar yer almaktadır.',
 	'usercredentials-leg-user' => 'Kullanıcı hesabı',
 	'usercredentials-leg-areas' => 'Ana ilgi alanları',
 	'usercredentials-leg-person' => 'Kişisel bilgiler',
@@ -10604,6 +10778,11 @@ $messages['tr'] = array(
 	'usercredentials-urls' => 'Web sitelerin listesi',
 	'usercredentials-ip' => 'Orijinal IP adresi:',
 	'usercredentials-member' => 'Haklar:',
+	'usercredentials-badid' => 'Bu kullanıcı için referans bulunamadı.
+İsmin doğru yazıldığından emin olun.',
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|Hesap istekleri grubunu]] görür',
+	'right-requestips' => 'İstenen hesaplarla ilgili işlem yaparken istek sahibinin IP adresini görür',
+	'right-lookupcredentials' => '[[Special:UserCredentials|Kullanıcı referanslarını]] görür',
 );
 
 /** ئۇيغۇرچە (ئۇيغۇرچە)
