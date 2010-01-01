@@ -1955,6 +1955,7 @@ Bitte beachten Sie, dass Sie den Zugang bei Bedarf unter einem anderen Benutzern
 Sie sollten dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.
 
 Wenn Sie diese Seite verlassen, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.",
+	'confirmaccount-confirm' => 'Benutzen Sie die folgende Auswahl, um den Antrag zu akzeptieren, abzulehnen oder noch zu warten.',
 	'confirmaccount-needreason' => 'Sie müssen eine Begründung eingeben.',
 	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
 Wir hoffen, dass Sie viele gute Informationen beisteuern.
