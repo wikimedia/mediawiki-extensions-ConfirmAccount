@@ -7968,56 +7968,129 @@ Sprawdź, czy prawidłowo wpisałeś nazwę konta.',
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Bèrto 'd Sèra
+ * @author Dragonòt
  */
 $messages['pms'] = array(
 	'requestaccount' => 'Ciamé un cont',
-	'requestaccount-text' => "'''Ch'a completa e ch'a manda sta domanda-sì për ciamé ch'a-j deurbo sò cont utent'''. Per piasì, ch'a varda d'avej present le [[{{MediaWiki:Requestaccount-page}}|Condission ëd servissi]], anans che deurb-se un cont. Na vira che 'l cont a sia aprovà, a l'arseivrà na notìfica për pòsta eletrònica e sò cont a sarà bon da dovré a l'adrëssa [Special:Userlogin]].",
+	'requestaccount-text' => "'''Ch'a completa e ch'a manda sta domanda-sì për ciamé ch'a-j deurbo sò cont utent'''. 
+
+Per piasì, ch'a varda d'avèj present le [[{{MediaWiki:Requestaccount-page}}|Condission ëd servissi]], anans che deurb-se un cont. 
+
+Na vira che 'l cont a sia aprovà, a l'arseivrà na notìfica për pòsta eletrònica e sò cont a sarà bon da dovré a l'adrëssa [[Special:UserLogin|intré ant ël sistema]].",
+	'requestaccount-page' => '{{ns:project}}:Condission ëd Servissi',
 	'requestaccount-dup' => "'''Ch'a ten-a present: al moment a l'é già andrinta al sistema ën dovrand un cont registrà.'''",
+	'requestaccount-leg-user' => 'Cont utent',
+	'requestaccount-leg-areas' => "Àree d'anteresse prinsipaj",
+	'requestaccount-leg-person' => 'Anformassion përsonaj',
+	'requestaccount-leg-other' => 'Àutre anformassion',
+	'requestaccount-leg-tos' => 'Condission ëd Servissi',
 	'requestaccount-acc-text' => "A soa adrëssa ëd pòsta eletrònica a-i rivërà un messagi, na vira che sta domanda a la sia mandà. Per piasì, ch'a n'arsponda ën dand-ie un colp col rat ansima a l'aniura ch'a treuva ant ël messagi. Ëdcò soa ciav a sarà recapità për pòsta eletrònica, na vira che sò cont a sia creà.",
+	'requestaccount-areas-text' => "Selession-a j'argoment sota dont it l'has esperiensa formal o at piasrìa travajeje ansima.",
 	'requestaccount-ext-text' => "St'anformassion-sì as ten privà e as dòvra mach për sta question-sì. S'a veul a peul buté dij contat coma un nùmer ëd telèfono për giuté a identifichesse sensa dubi.",
-	'requestaccount-bio-text' => "Soa biografìa a sarà buta coma contnù base për soa pàgine utent. S'a peul, ch'a buta soe credensiaj, cole ch'a sio. Ch'a varda mach però dë buté dj'anformassion ch'a-j da gnun fastudi publiché. An tute le manere, a peul sempe cambiesse 'd nòm ën dovrand l'adrëssa [[Special:Preferences]].",
+	'requestaccount-bio-text' => "Soa biografìa a sarà buta coma contnù base për soa pàgina utent. 
+S'a peul, ch'a buta soe credensiaj, cole ch'a sio. 
+Ch'a varda mach però dë buté dj'anformassion ch'a-j da gnun fastudi publiché. 
+An tute le manere, a peul sempe cambiesse 'd nòm ën dovrand l'adrëssa [[Special:Preferences|Ij mè gust]].",
 	'requestaccount-real' => 'Nòm vèir:',
 	'requestaccount-same' => '(istess che sò nòm vèir)',
 	'requestaccount-email' => 'Adrëssa ëd pòsta eletrònica:',
+	'requestaccount-reqtype' => 'Posission:',
+	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'editor',
 	'requestaccount-bio' => 'Biografìa personal:',
 	'requestaccount-attach' => 'Curriculum vitae (opsional):',
 	'requestaccount-notes' => 'Nòte adissionaj:',
 	'requestaccount-urls' => "Lista ëd sit ant sla Ragnà, s'a-i n'a-i é (buté un për riga):",
 	'requestaccount-agree' => "A venta ch'a sertìfica che sò nòm vèir a l'é giust e ch'a l'é d'acòrdi con nòstre Condission ëd Servissi.",
 	'requestaccount-inuse' => "Stë stranòm-sì a l'é già dovrà ant na domanda ch'a la speta d'esse aprovà.",
-	'requestaccount-tooshort' => "Soa biografìa a l'ha dë esse longa almanch $1 paròle.",
+	'requestaccount-tooshort' => "Soa biografìa a l'ha dë esse longa almanch $1 {{PLURAL:$1|paròla|paròle}}.",
+	'requestaccount-emaildup' => "N'àutra arcesta ëd cont an cors a deuvra la midema adrëssa ëd pòsta eletrònica.",
 	'requestaccount-exts' => "Sta sòrt d'archivi as peul pa tachesse.",
 	'requestaccount-resub' => "Për na question ëd sigurëssa a venta torna ch'a selession-a l'archivi ëd sò Curriculum Vitae. Ch'a lassa pura ël camp veujd s'a veul pì nen butelo.",
 	'requestaccount-tos' => "I l'hai lesù le [[{{MediaWiki:Requestaccount-page}}|Condission ëd Servissi]] ëd {{SITENAME}} e i son d'acòrdi d'osserveje. Ël nòm ch'i l'hai butà sot a \"Nòm vèir\" a l'é mè nòm da bon.",
 	'requestaccount-submit' => 'Fé domanda për ël cont',
-	'requestaccount-sent' => "Soa domanda dë deurb-se un cont a l'é staita arseivùa e a la speta d'esse aprovà.",
+	'requestaccount-sent' => "Soa domanda dë deurb-se un cont a l'é stàita arseivùa e a la speta d'esse aprovà.
+Un mëssagi ëd conferma a l'é stàit mandà a soa adrëssa ëd pòsta eletrònica",
 	'request-account-econf' => "Soa adrëssa ëd pòsta eletrònica a l'é staita confermà e a la sarà listà coma bon-a an soa domanda dë deurbe 'l cont.",
 	'requestaccount-email-subj' => "Arcesta ëd conferma d'adrëssa ëd pòsta eletrònica da {{SITENAME}}",
 	'requestaccount-email-body' => "Cheidun, ch'a l'é belfé ch'a sia chiel/chila, da 'nt l'adrëssa IP \$1 a l'ha ciamà dë deurbe un cont antestà a \"\$2\" ansima a {{SITENAME}} e a l'ha lassà st'adrëssa ëd pòsta eletrònica-sì. Për confermé che ës cont ansima a {{SITENAME}} a sarìa sò da bon, për piasì ch'a deurba ant sò navigator st'anliura-sì: \$3
 
 Quand ël cont a vnirà creà, soa la ciav a sarà mandà mach a st'adrëssa-sì. Se për cas a fussa PA stait chiel/chila a fé la domanda, a basta ch'a n'arsponda nen d'autut. Ës còdes ëd conferma-sì a scad dël \$4.",
-	'acct_request_throttle_hit' => "A l'ha gia ciamà $1 cont. Për darmagi ant ës moment-sì i podoma nen aceté dj'àotre domande da chiel/chila.",
+	'requestaccount-email-subj-admin' => 'arcesta ëd cont ëd {{SITENAME}}',
+	'requestaccount-email-body-admin' => '"$1" a l\'ha ciamà un cont e a speta la conferma.
+L\'adrëssa ëd pòsta eletrònica a l\'é stàita confermà. A peul confermé l\'arcesta ambelessì "$2".',
+	'acct_request_throttle_hit' => "A l'ha gia ciamà {{PLURAL:$1|1 cont|$1 cont}}. 
+Për darmagi ant ës moment-sì i podoma nen aceté dj'àotre domande da chiel/chila.",
 	'requestaccount-loginnotice' => "Për deurb-se un sò cont utent, a venta '''[[Special:RequestAccount|ch<nowiki>'</nowiki>a në ciama un]]'''.",
+	'confirmaccount-newrequests' => "Al moment a-i é '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|arcesta duverta an cors|arceste duverte an cors}} ëd cont]]",
 	'confirmaccounts' => 'Conferma dle domande ëd cont neuv da deurbe',
+	'confirmedit-desc' => "A dà ai mangiapapé l'abilità ëd confermé j'arceste ëd cont",
+	'confirmaccount-maintext' => "'''Sta pàgina-sì a l'é dovrà për confermé j'arceste an cors ëd cont a ''{{SITENAME}}'''''.
+
+Minca coa d'arceste ëd cont a consist ëd tre sotcoe.
+Un-a për arceste doverte, un-a për cole ch'a son ëstàite butà an sospèis da àutri aministrator spetand d'àutre anformassion, e n'àutra për j'arceste arfudà ultimament.
+
+Quand ch'a rispond a n'arcesta, ch'a la considera con atension e, s'a-i é dabzògn, ch'a conferma j'anformassion contnùe andrinta.
+Soe assion a saran registrà an privà.
+A dovrìa ëdcò revisioné minca atività ch'a ven fàita ambelessì an dzorpì ëd lòn ch'a fa chiel-midem.",
 	'confirmaccount-list' => "Ambelessì sota a-i é na lista ëd domanda ch'a speto d'esse aprovà. Ij cont aprovà a saran creà e peuj gavà via da 'n sta lista. Ij cont arfudà a saran mach dëscancelà da 'nt la lista.",
 	'confirmaccount-list2' => "Ambelessì sota a-i é na lista ëd coint ch'a son stait arfudà ant j'ùltim temp, e ch'a l'é belfé ch'a ven-o scancelà n'aotomàtich na vira ch'a sia passa-ie chèich dì dal giudissi negativ. Ën vorend as peulo anco' sempe aprovesse bele che adess, ma miraco un a veul sente l'aministrator ch'a l'ha arfudaje, anans che fé che fé.",
-	'confirmaccount-text' => "A-i é na domanda duvèrta për deurbe un cont utent a '''{{SITENAME}}'''. Për piasì, ch'a varda lòn ch'a lé e se a fa da manca ch'a conferma j'anformassion ambelessì sota. Ch'a ten-a present ch'a peul decide dë creé ël cont con në stranòm diferent da col ciamà, se col-lì a fussa già dovrà da cheidun d'àotr. S'a va via da sta pàgina-sì sensa pijé ëd decision a-i riva gnente, la domanda a la resta duvèrta.",
+	'confirmaccount-list3' => "Sota a-i é na lista d'arceste ëd cont scadù ch'a peulo esse scancelà automaticament na vira veje vàire di.
+A peulo esse ancó aprovà com cont.",
+	'confirmaccount-text' => "Costa-sì a l'é n'arcesta an cors për un cont utent a '''{{SITENAME}}'''.
+
+Ch'a contròla con atension j'anformassion sì-sota.
+S'a apreuva st'arcesta-sì, ch'a deuvra la selession ëd posission për amposté lë stat dël cont ëd l'utent.
+Modìfiche fàite a la biografìa dl'arcesta a l'avran pa efet an sla memorisassion dle credensiaj përmanente.
+Ch'a armarca che a peul serne ëd creé ël cont sota un nòm utent diferent.
+Ch'a deuvra sòn mach për evité colision con d'àutri nòm.
+
+S'a lassrà sta pàgina-sì sensa confirmé o scancelé st'arcesta, a restrà an cors.",
+	'confirmaccount-none-o' => 'A-i é al moment gnun-e arceste ëd cont an cors an costa lista-sì.',
+	'confirmaccount-none-h' => 'A-i é al moment gnun-e arceste ëd cont an cors prenotà an sta lista-sì.',
+	'confirmaccount-none-r' => 'A-i é al moment gnun-e arceste arfudà ëd recent ëd cont an sta lista-sì.',
+	'confirmaccount-none-e' => 'A-i é al moment gnun-e arceste ëd cont scadùe an sta lista-sì.',
 	'confirmaccount-real-q' => 'Nòm',
 	'confirmaccount-email-q' => 'Adrëssa ëd pòsta eletrònica',
 	'confirmaccount-bio-q' => 'Biografìa',
+	'confirmaccount-showopen' => 'arceste duverte',
+	'confirmaccount-showrej' => 'arceste arfudà',
+	'confirmaccount-showheld' => 'arceste tnùe fërme',
+	'confirmaccount-showexp' => 'arceste scadùe',
 	'confirmaccount-review' => 'Aprové/Arfudé',
+	'confirmaccount-types' => 'Selession-a na coa ëd conferma ëd cont da sota:',
+	'confirmaccount-all' => '(mostra tute le coe)',
+	'confirmaccount-type' => 'Coa:',
+	'confirmaccount-type-0' => 'autor potensiaj',
+	'confirmaccount-type-1' => 'editor potensiaj',
+	'confirmaccount-q-open' => 'arceste duverte',
+	'confirmaccount-q-held' => 'arceste tnùe fërme',
+	'confirmaccount-q-rej' => 'arceste arfudà ultimament',
+	'confirmaccount-q-stale' => 'arceste scadùe',
 	'confirmaccount-badid' => "A-i é gnun-a domanda duvèrta ch'a-j corisponda a l'identificativ ch'a l'ha butà. A peul esse ch'a la sia già staita tratà da cheidun d'àotr.",
+	'confirmaccount-leg-user' => 'Cont utent',
+	'confirmaccount-leg-areas' => "Àree d'anteresse prinsipaj",
+	'confirmaccount-leg-person' => 'Anformassion përsonaj',
+	'confirmaccount-leg-other' => 'Àutre anformassion',
 	'confirmaccount-name' => 'Stranòm',
 	'confirmaccount-real' => 'Nòm:',
 	'confirmaccount-email' => 'Adrëssa ëd pòsta eletrònica:',
+	'confirmaccount-reqtype' => 'Posission:',
+	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-pos-1' => 'editor',
 	'confirmaccount-bio' => 'Biografìa:',
 	'confirmaccount-attach' => 'Curriculum Vitae:',
 	'confirmaccount-notes' => 'Nòte adissionaj:',
 	'confirmaccount-urls' => 'Lista ëd sit ant sla Ragnà:',
+	'confirmaccount-none-p' => '(pa dàit)',
 	'confirmaccount-confirm' => "Ch'a dòvra j'opsion ambelessì sota për aprové, arfudé ò lassé an coa la domanda:",
 	'confirmaccount-econf' => '(confermà)',
 	'confirmaccount-reject' => '(arfudà da [[User:$1|$1]] dël $2)',
+	'confirmaccount-rational' => 'Rason dàita al candidà:',
+	'confirmaccount-noreason' => '(gnun)',
+	'confirmaccount-autorej' => "(st'arcesta-sì a l'é stàita automaticament scartà a motiv d'inatività)",
 	'confirmaccount-held' => '(marcà "an coa" da [[User:$1|$1]] dël $2)',
 	'confirmaccount-create' => "Aceté (deurbe 'l cont)",
 	'confirmaccount-deny' => "Arfudé (e gavé da 'nt la lista)",
@@ -8027,8 +8100,10 @@ Quand ël cont a vnirà creà, soa la ciav a sarà mandà mach a st'adrëssa-sì
 	'confirmaccount-ip' => 'Adrëssa IP:',
 	'confirmaccount-submit' => 'Confermé',
 	'confirmaccount-needreason' => 'A venta specifiché na rason ant ël quàder ëd coment ambelessì sota.',
+	'confirmaccount-canthold' => "St'arcesta-sì a l'é già o an considerassion o scancelà.",
 	'confirmaccount-acc' => "Conferma dla domanda andaita a bonfin; a l'é dorbusse ël cont utent [[User:$1|$1]].",
 	'confirmaccount-rej' => 'Arfud dla domanda andait a bonfin.',
+	'confirmaccount-viewing' => "(al moment a l'é vist da [[User:$1|$1]])",
 	'confirmaccount-summary' => "I soma antramentr ch'i foma na neuva pàgina utent con la biografìa dl'utent neuv.",
 	'confirmaccount-welc' => "''Bin ëvnù/a  an ''{{SITENAME}}''!''' I speroma d'arsèive sò contribut e deje bon servissi. Miraco a peul ess-je d'agiut lese la session [[{{MediaWiki:Helppage}}|Amprende a travajé da zero]]. N'àotra vira, bin ëvnù/a e tante bele còse!",
 	'confirmaccount-wsum' => 'Bin ëvnù/a!',
@@ -8042,6 +8117,27 @@ Për na question ëd sigurëssa un a venta ch'as cambia soa ciav la prima vira c
 	'confirmaccount-email-body3' => "Për darmagi soa domanda dë deurbe un cont ciamà \"\$1\" ansima a {{SITENAME}} a l'é staita bocià. A-i son vàire rason përchè sossì a peula esse rivà. A peul esse ch'a l'abia pa compilà giust la domanda, che soe arspòste a sio staite tròp curte, ò pura che an chèich àotra manera a l'abia falì da rintré ant ël criteri d'aprovassion. A peul esse che ant sël sit a sio specificà dle liste postaj ch'a peul dovré për ciamé pì d'anformassion ansima ai criteri d'aprovassion dovrà.",
 	'confirmaccount-email-body4' => 'Për darmagi soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a l\'é staita bocià. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
 	'confirmaccount-email-body5' => 'Anans che soa domanda dë deurbe un cont ciamà "$1" ansima a {{SITENAME}} a peula esse acetà, a dovrìa lassene dj\'anformassion adissionaj. $2 A peul esse che ant sël sit a sio specificà dle liste postaj ch\'a peul dovré për ciamé pì d\'anformassion ansima ai criteri d\'aprovassion dovrà.',
+	'usercredentials' => 'Credensiaj utent.',
+	'usercredentials-leg' => "Verìfica credensiaj confermà për n'utent",
+	'usercredentials-user' => 'Nòm utent:',
+	'usercredentials-text' => 'Sota a-i son le credensiaj validà dël cont utent selessionà.',
+	'usercredentials-leg-user' => 'Cont utent.',
+	'usercredentials-leg-areas' => "Àree d'anteresse prinsipaj",
+	'usercredentials-leg-person' => 'Anformassion përsonaj',
+	'usercredentials-leg-other' => 'Àutre anformassion',
+	'usercredentials-email' => 'Pòsta eletrònica:',
+	'usercredentials-real' => 'Nòm ver:',
+	'usercredentials-bio' => 'Biografìa:',
+	'usercredentials-attach' => 'Resumé:',
+	'usercredentials-notes' => 'Nòte adissionaj:',
+	'usercredentials-urls' => "Lista ëd sit an sl'aragnà:",
+	'usercredentials-ip' => 'Adrëssa IP original:',
+	'usercredentials-member' => 'Drit:',
+	'usercredentials-badid' => "Gnun-e credensiaj trovà për st'utent-sì.
+Ch'a contròla che ël nòm a sia scrivù da bin.",
+	'right-confirmaccount' => 'Vardé la [[Special:ConfirmAccounts|coa con ij cont ciamà]]',
+	'right-requestips' => "Vardé j'adrësse IP dël ciamant durant ël tratament dij cont ciamà",
+	'right-lookupcredentials' => 'Visualisa [[Special:UserCredentials|credensiaj utent]]',
 );
 
 /** Pashto (پښتو)
@@ -8094,6 +8190,7 @@ $3
 	'usercredentials-real' => 'اصلي نوم:',
 	'usercredentials-bio' => 'ژوندليک:',
 	'usercredentials-urls' => 'د وېبځايونو لړليک:',
+	'usercredentials-member' => 'رښتې:',
 );
 
 /** Portuguese (Português)
