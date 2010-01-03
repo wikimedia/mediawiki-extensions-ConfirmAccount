@@ -6571,6 +6571,7 @@ $2
 
 /** Malayalam (മലയാളം)
  * @author Jacob.jose
+ * @author Praveenp
  * @author Shijualex
  */
 $messages['ml'] = array(
@@ -6596,7 +6597,7 @@ $messages['ml'] = array(
 	'requestaccount-inuse' => 'സ്ഥിരീകരണം കാത്തിരിക്കുന്ന അഭ്യര്‍ത്ഥനകളില്‍ ഒന്ന് ഇതേ ഉപയോക്തൃനാമം ഉപയോഗിക്കുന്നുണ്ട്.',
 	'requestaccount-tooshort' => 'താങ്കളുടെ ആത്മകഥയില്‍ കുറഞ്ഞത് $1 വാക്കുകള്‍ വേണം.',
 	'requestaccount-emaildup' => 'സ്ഥിരീകരണം കാത്തിരിക്കുന്ന അഭ്യര്‍ത്ഥനകളില്‍ ഒന്ന് ഇതേ ഇമെയില്‍ വിലാസം ഉപയോഗിക്കുന്നുണ്ട്.',
-	'requestaccount-exts' => 'അറ്റാച്ച് ചെയ്ത ഫയല്‍ തരം അനുവദനീയമല്ല.',
+	'requestaccount-exts' => 'അറ്റാച്ച് ചെയ്ത പ്രമാണ തരം അനുവദനീയമല്ല.',
 	'requestaccount-submit' => 'അക്കൗണ്ടിനായി അഭ്യര്‍ത്ഥിക്കുക',
 	'requestaccount-email-subj' => '{{SITENAME}} സം‌രംഭത്തിലെ ഇമെയില്‍ വിലാസ സ്ഥിരീകരണം',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} സം‌രംഭത്തില്‍ അക്കൗണ്ട് സൃഷ്ടിക്കാനുള്ള അഭ്യര്‍ത്ഥന',
