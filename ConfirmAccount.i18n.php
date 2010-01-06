@@ -2451,6 +2451,7 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
  * @author Lin linao
  * @author Locos epraix
  * @author Sanbec
+ * @author Translationista
  */
 $messages['es'] = array(
 	'requestaccount' => 'Cuenta solicitada',
@@ -2491,11 +2492,22 @@ Tu nombre puede ser cambiado a través de [[Special:Preferences|Tus preferencias
 	'requestaccount-tooshort' => 'Tu biografía debe ser de al menos $1 {{PLURAL:$1|palabra|palabras}} de largo.',
 	'requestaccount-emaildup' => 'Alguna otra solicitud de cuenta pendiente usa la misma dirección de correo electrónico.',
 	'requestaccount-exts' => 'Tipo de archivo adjunto no está permitido.',
+	'requestaccount-resub' => 'Por motivos de seguridad, debes seleccionar de nuevo el archivo de tu CV.
+Deja el campo en blanco si ya no deseas incluirlo.',
 	'requestaccount-submit' => 'Solicitar cuenta',
 	'requestaccount-sent' => 'Tu solicitud de cuenta ha sido exitosamente enviado y está ahora en una revisión pendiente.
 Un correo electrónico de confirmación ha sido enviado a tu dirección de correo electrónico.',
 	'request-account-econf' => 'Tu correo electrónico ha sido onfirmado y será listado como tal en tu solicitud de cuenta.',
 	'requestaccount-email-subj' => '{{SITENAME}} confirmación de dirección de correo electrónico',
+	'requestaccount-email-body' => 'Alguien, probablemente tú con la dirección de IP $1, ha solicitado una cuenta "$2" con esta dirección de correo electrónico en {{SITENAME}}.
+
+Abre el siguiente vínculo en tu navegador para confirmar que realmente esta es tu cuenta en {{SITENAME}}:
+
+$3
+
+Si se crea la cuenta, se te enviará la contraseña sólo a ti.
+Si esta *no* es tu cuenta, no abras el vínculo.
+Este código de confirmación caducará el $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} solicitud de cuenta',
 	'requestaccount-email-body-admin' => '"$1" ha solicitado una cuenta y está esperando por su confirmación.
 La dirección de correo electrónico ha sido confirmada. Puedes confirmar la solicitud aquí "$2".',
@@ -2506,6 +2518,19 @@ No puedes hacer ninguna otra solicitud.',
 	'confirmedit-desc' => 'Da a los burócratas la habilidad de confirmar solicitudes de cuenta',
 	'confirmaccount-list' => 'Debajo hay una lista de solicitudes de cuenta esperando aprobación.
 una vez que una solicitud es tanto aprovada como rechazada se removerá de esta lista.',
+	'confirmaccount-text' => "Esta es una solicitud en espera de una cuenta de usuario en'''{{SITENAME}}'''.
+
+Lee con atención la siguiente información.
+Si decides aprobar esta solicitud, utiliza el menú desplegable de posición para establecer el estado de la cuenta del usuario.
+Las ediciones hechas a la biografía de la aplicación no afectarán ningún almacenamiento de credenciales permanente.
+También puedes elegir crear la cuenta con un nombre de usuario diferente.
+Debes elegir esta opción sólo para evitar conflictos (coincidencias) con otros nombres.
+
+Si dejas esta solicitud sin confirmar o rechazar, quedará en espera.",
+	'confirmaccount-none-o' => 'Actualmente no hay solicitudes de cuenta en espera abiertas en este listado.',
+	'confirmaccount-none-h' => 'Actualmente no hay solicitudes de cuenta en espera pendientes en este listado.',
+	'confirmaccount-none-r' => 'Actualmente no hay solicitudes de cuenta en espera rechazadas recientemente en este listado.',
+	'confirmaccount-none-e' => 'Actualmente no hay solicitudes de cuenta en espera expiradas en este listado.',
 	'confirmaccount-real-q' => 'Nombre',
 	'confirmaccount-email-q' => 'Correo electrónico',
 	'confirmaccount-bio-q' => 'Biografía',
