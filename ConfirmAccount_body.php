@@ -757,7 +757,7 @@ class ConfirmAccountsPage extends SpecialPage
 		return $linkList;
 	}
 
-	protected function showSuccess( $titleObj, $name = NULL, $errors = array() ) {
+	protected function showSuccess( $titleObj, $name = null, $errors = array() ) {
 		global $wgOut;
 		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 
