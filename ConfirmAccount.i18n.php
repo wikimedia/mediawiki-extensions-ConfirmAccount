@@ -1353,9 +1353,12 @@ $messages['br'] = array(
 	'requestaccount-attach' => 'CV (diret) :',
 	'requestaccount-notes' => 'Notennoù ouzhpenn :',
 	'requestaccount-tooshort' => 'Ho puhezskrid a rank bezañ ennañ $1 {{PLURAL:$1|ger|ger}} da nebeutañ.',
+	'requestaccount-exts' => "Ar seurt restr stag n'eo ket aotreet.",
 	'requestaccount-submit' => 'Goulenn ur gont implijer',
 	'requestaccount-email-subj' => "Gwiriekadur chomlec'h ar postel evit {{SITENAME}}",
 	'requestaccount-email-subj-admin' => 'Goulenn kont evit {{SITENAME}}',
+	'acct_request_throttle_hit' => "Digarez, met goulennet hoc'h eus {{PLURAL:$1|1 gont|$1 kont}} dija.
+Ne c'hallit ket ober goulennoù all.",
 	'requestaccount-loginnotice' => "Evit kaout ur gont implijer e rankit '''[[Special:RequestAccount|goulenn unan]]'''.",
 	'confirmaccounts' => 'Goulenn gwiriañ kontoù',
 	'confirmaccount-real-q' => 'Anv',
@@ -1369,6 +1372,7 @@ $messages['br'] = array(
 	'confirmaccount-all' => '(Gwelet an holl listennoù gortoz)',
 	'confirmaccount-type' => 'Listenn gortoz :',
 	'confirmaccount-q-open' => 'rekedoù digor',
+	'confirmaccount-q-held' => "goulennoù dalc'het",
 	'confirmaccount-q-rej' => 'goulennoù distaolet nevez zo',
 	'confirmaccount-q-stale' => 'Rekedoù tremenet',
 	'confirmaccount-leg-user' => 'Kont implijer',
@@ -1399,6 +1403,25 @@ $messages['br'] = array(
 	'confirmaccount-summary' => 'Krouadenn ar bajenn implijer  gant e vuhezskrid.',
 	'confirmaccount-wsum' => 'Degemer mat !',
 	'confirmaccount-email-subj' => 'Goulenn ur gont war {{SITENAME}}',
+	'confirmaccount-email-body' => "Ho koulenn kont zo bet aprouet e {{SITENAME}}.
+
+Anv ar gont : $1
+
+Ger-tremen : $2
+
+Abalamour d'ar surentez e tleot cheñch ho ker-tremen pa gevreot evit ar wech kentañ.
+Evit kevreañ, kit da {{fullurl:Special:UserLogin}}, mar plij.",
+	'confirmaccount-email-body2' => "Ho koulenn kont zo bet aprouet e {{SITENAME}}.
+
+Anv ar gont : $1
+
+Ger-tremen : $2
+
+$3
+
+Abalamour d'ar surentez e tleot cheñch ho ker-tremen ar wech kentañ ma kevreot.
+Evit kevreañ, kit da {{fullurl:Special:UserLogin}}, mar plij.",
+	'usercredentials' => 'Daveennoù an implijer',
 	'usercredentials-user' => 'Anv implijer :',
 	'usercredentials-leg-user' => 'Kont implijer',
 	'usercredentials-leg-areas' => 'Diduadenn pennañ :',
