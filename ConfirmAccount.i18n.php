@@ -6114,9 +6114,9 @@ Dir kënnt Kontaktinformatiounen wéi eng Telefonsnummer uginn fir d'Identitéit
 	'requestaccount-bio-text' => 'Är Biographie gëtt als initiale Contenu vun denger Benotzersäit gespäichert.
 Versicht all néideg Recommandatiounnen unzeginn.
 Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wëllt.
-Äre Numm kann op [[Special:Preferences|meng Astellunge]] geännert ginn.',
-	'requestaccount-real' => 'Richtege Numm:',
-	'requestaccount-same' => "(d'selwescht wéi de richtege Numm)",
+Ären Numm kann op [[Special:Preferences|meng Astellunge]] geännert ginn.',
+	'requestaccount-real' => 'Richtegen Numm:',
+	'requestaccount-same' => "(d'selwecht wéi de richtegen Numm)",
 	'requestaccount-email' => 'E-mail-Adress:',
 	'requestaccount-reqtype' => 'Positioun:',
 	'requestaccount-level-0' => 'Auteur',
@@ -6132,8 +6132,8 @@ Vergewëssert iech, ob Dir déi Informatiounen och wierklech verëffentleche wë
 	'requestaccount-exts' => "De Fichierstyp vum ''Attachment'' ass net erlaabt.",
 	'requestaccount-resub' => "De Fichier mat ärem CV muss aus Sécherheetsgrënn nachemol nei erausgesicht ginn.
 Loosst d'Feld eidel wann Dir elo keen CV abanne wëllt.",
-	'requestaccount-tos' => 'Ech hunn d\'[[{{MediaWiki:Requestaccount-page}}|Benotzungsbedingunge]] vu(n) {{SITENAME}} geliest an akzeptéieren se.
-Den Numm den ech bäi "Richtege Numm" uginn hunn ass mäin eegene richtegen Numm.',
+	'requestaccount-tos' => 'Ech hunn d\'[[{{MediaWiki:Requestaccount-page}}|Benotzungsbedingunge]] vu(n) {{SITENAME}} gelies an akzeptzéieren se.
+Den Numm den ech bäi "Richtegen Numm" uginn hunn, ass mäin eegene richtegen Numm.',
 	'requestaccount-submit' => 'Benotzerkont ufroen',
 	'requestaccount-sent' => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.
 Eng Konfirmatiounsmail gouf op Är E-mailadress geschéckt.',
