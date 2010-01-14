@@ -335,6 +335,9 @@ class ConfirmAccountsPage extends SpecialPage
 			$form .= '</fieldset>';
 		}
 
+		
+		$form .= '<fieldset>';
+		$form .= '<legend>' . wfMsgHtml('confirmaccount-legend') . '</legend>';
 		$form .= "<strong>".wfMsgExt( 'confirmaccount-confirm', array('parseinline') )."</strong>\n";
 		$form .= "<table cellpadding='5'><tr>";
 		$form .= "<td>".Xml::radio( 'wpSubmitType', 'accept', $this->submitType=='accept',
@@ -355,6 +358,8 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<p><textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
 			htmlspecialchars($this->reason) . "</textarea></p></div>\n";
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
+		$form .= '</fieldset>';
+		
 		$form .= Xml::hidden( 'title', $titleObj->getPrefixedDBKey() )."\n";
 		$form .= Xml::hidden( 'action', 'reject' );
 		$form .= Xml::hidden( 'acrid', $row->acr_id );
