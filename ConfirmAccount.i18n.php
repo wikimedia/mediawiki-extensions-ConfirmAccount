@@ -3108,6 +3108,7 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-spam' => 'Pourriel (n’envoyez pas de courriel)',
 	'confirmaccount-reason' => 'Commentaire (figurera dans le courriel) :',
 	'confirmaccount-ip' => 'Adresse IP',
+	'confirmaccount-legend' => 'Confirmer ce compte',
 	'confirmaccount-submit' => 'Confirmation',
 	'confirmaccount-needreason' => 'Vous devez indiquer un motif dans le cadre ci-après.',
 	'confirmaccount-canthold' => 'Cette requête est déjà, soit prise en compte, soit supprimée.',
