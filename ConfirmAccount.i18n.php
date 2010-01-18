@@ -3677,6 +3677,7 @@ Wänn Du die Syte verlossesch, ohni s Konto z bstätigen oder abzlähne, wird dr
 	'confirmaccount-spam' => 'Spam (kei E-Mail verschicke)',
 	'confirmaccount-reason' => 'Begrindig (wird in d Mail an dr Aatragsteller dryygsetzt):',
 	'confirmaccount-ip' => 'IP-Addräss:',
+	'confirmaccount-legend' => 'Die Aafrog bstetige oder zruckwyyse',
 	'confirmaccount-submit' => 'Abschicke',
 	'confirmaccount-needreason' => 'Du muesch im Chäschtli unten e Begrindig aagee.',
 	'confirmaccount-canthold' => 'Dää Aatrag isch scho as „abwarte“ markiert oder glescht wore.',
@@ -8792,6 +8793,7 @@ $messages['roa-tara'] = array(
  * @author Kaganer
  * @author Kv75
  * @author Lockal
+ * @author Rubin
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -8926,6 +8928,7 @@ $3
 	'confirmaccount-spam' => 'Спам (не будет отправлено письмо)',
 	'confirmaccount-reason' => 'Комментарий (будет включён в письмо):',
 	'confirmaccount-ip' => 'IP-адрес:',
+	'confirmaccount-legend' => 'Подтвердить/отклонить эту учётную запись',
 	'confirmaccount-submit' => 'Подтвердить',
 	'confirmaccount-needreason' => 'Вы должны указать причину в поле комментария.',
 	'confirmaccount-canthold' => 'Этот запрос уже удалён или отложен.',
