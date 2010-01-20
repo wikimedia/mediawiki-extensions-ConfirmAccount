@@ -1362,6 +1362,9 @@ $messages['br'] = array(
 	'request-account-econf' => "Kadarnaet eo bet ho chomlec'h postel ha meneget e vo evel m'emañ en ho koulenn kont.",
 	'requestaccount-email-subj' => "Gwiriekadur chomlec'h ar postel evit {{SITENAME}}",
 	'requestaccount-email-subj-admin' => 'Goulenn kont evit {{SITENAME}}',
+	'requestaccount-email-body-admin' => "« $1 » en deus goulennet ur gont ha zo o c'hortoz ar c'hadarnadur.
+
+Kadarnaet eo bet ar chomlec'h postel. Gallout a rit kadarnaat ar goulenn amañ « $2 ».",
 	'acct_request_throttle_hit' => "Digarez, met goulennet hoc'h eus {{PLURAL:$1|1 gont|$1 kont}} dija.
 Ne c'hallit ket ober goulennoù all.",
 	'requestaccount-loginnotice' => "Evit kaout ur gont implijer e rankit '''[[Special:RequestAccount|goulenn unan]]'''.",
@@ -1397,7 +1400,9 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-none-p' => "(n'eo ket pourchaset)",
 	'confirmaccount-confirm' => "Implijit ar boutonioù amañ dindan da zegemer, nach pe zerc'hel ar goulenn-mañ :",
 	'confirmaccount-econf' => '(kadarnaet)',
+	'confirmaccount-reject' => "(distaolet gant [[User:$1|$1]] d'an $2)",
 	'confirmaccount-noreason' => '(hini ebet)',
+	'confirmaccount-autorej' => "(distaolet eo bet ar goulenn-mañ ent emgefre abalamour d'an dioberiantiz)",
 	'confirmaccount-create' => 'Asantiñ (krouiñ ar gont)',
 	'confirmaccount-deny' => 'Disteurel (lemel eus ar roll)',
 	'confirmaccount-hold' => 'Mirout',
@@ -1406,7 +1411,10 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-ip' => "Chomlec'h IP :",
 	'confirmaccount-submit' => 'Kadarnaat',
 	'confirmaccount-needreason' => "Ret eo deoc'h pourchas un abeg er voest amañ dindan.",
+	'confirmaccount-acc' => 'Kardarnaet eo bet ar goulenn kont ;
+krouet eo bet ar gont implijer nevez [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Distaolet eo bet ar goulenn kont.',
+	'confirmaccount-viewing' => '(gwelet gant [[User:$1|$1]] evit bremañ)',
 	'confirmaccount-summary' => 'Krouadenn ar bajenn implijer  gant e vuhezskrid.',
 	'confirmaccount-wsum' => 'Degemer mat !',
 	'confirmaccount-email-subj' => 'Goulenn ur gont war {{SITENAME}}',
@@ -1430,6 +1438,7 @@ Abalamour d'ar surentez e tleot cheñch ho ker-tremen ar wech kentañ ma kevreot
 Evit kevreañ, kit da {{fullurl:Special:UserLogin}}, mar plij.",
 	'usercredentials' => 'Daveennoù an implijer',
 	'usercredentials-user' => 'Anv implijer :',
+	'usercredentials-text' => 'Amañ emañ daveennoù gwiriekaet kont an implijer diuzet.',
 	'usercredentials-leg-user' => 'Kont implijer',
 	'usercredentials-leg-areas' => 'Diduadenn pennañ :',
 	'usercredentials-leg-person' => 'Titouroù hiniennel',
@@ -1442,6 +1451,10 @@ Evit kevreañ, kit da {{fullurl:Special:UserLogin}}, mar plij.",
 	'usercredentials-urls' => "Listenn al lec'hiennoù internet :",
 	'usercredentials-ip' => "Chomlec'h IP orin :",
 	'usercredentials-member' => 'Gwirioù :',
+	'usercredentials-badid' => "N'eus ket bet kavet daveennoù evit an implijer-mañ.
+Gwiriit ha skrivet-mat eo an anv.",
+	'right-confirmaccount' => "Gwelet [[Special:ConfirmAccounts|lostad ar c'hontoù goulennet]]",
+	'right-lookupcredentials' => 'Gwelet [[Special:UserCredentials|daveennoù an implijerien]]',
 );
 
 /** Bosnian (Bosanski)
@@ -3437,6 +3450,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-spam' => 'Spam (non enviar correo electrónico)',
 	'confirmaccount-reason' => 'Comentario (incluirase na mensaxe de correo electrónico):',
 	'confirmaccount-ip' => 'Enderezo IP:',
+	'confirmaccount-legend' => 'Confirmar ou rexeitar esta conta',
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Debe incluír un motivo na caixa de comentarios de embaixo.',
 	'confirmaccount-canthold' => 'Esta solicitude está en espera ou foi borrada.',
