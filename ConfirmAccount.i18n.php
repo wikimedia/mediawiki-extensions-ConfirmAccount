@@ -1355,6 +1355,7 @@ $messages['br'] = array(
 	'requestaccount-bio' => 'Buhezskrid personel :',
 	'requestaccount-attach' => 'CV (diret) :',
 	'requestaccount-notes' => 'Notennoù ouzhpenn :',
+	'requestaccount-urls' => "Roll lec'hiennoù web, dispartiet gant lammoù-linenn :",
 	'requestaccount-inuse' => "Implijet eo an anv implijer en ur goulenn kont n'eo ket bet respontet c'hoazh.",
 	'requestaccount-tooshort' => 'Ho puhezskrid a rank bezañ ennañ $1 {{PLURAL:$1|ger|ger}} da nebeutañ.',
 	'requestaccount-exts' => "Ar seurt restr stag n'eo ket aotreet.",
