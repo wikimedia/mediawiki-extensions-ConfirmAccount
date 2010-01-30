@@ -9677,6 +9677,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Boivie
  * @author Fluff
  * @author Jon Harald Søby
  * @author Lejonel
@@ -9816,6 +9817,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-spam' => 'Spam (sänd inte e-post)',
 	'confirmaccount-reason' => 'Kommentar (skickas som e-post):',
 	'confirmaccount-ip' => 'IP-adress:',
+	'confirmaccount-legend' => 'Bekräfta/avvisa detta konto',
 	'confirmaccount-submit' => 'Bekräfta',
 	'confirmaccount-needreason' => 'Du måste skriva en motivering i kommentarrutan nedan.',
 	'confirmaccount-canthold' => 'Ansökningen är antingen redan avvaktande eller har avslagits.',
