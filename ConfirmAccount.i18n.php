@@ -7762,6 +7762,7 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-spam' => 'Spam (mandetz pas de corrièr electronic)',
 	'confirmaccount-reason' => 'Comentari (figurarà dins lo corrièr electronic) :',
 	'confirmaccount-ip' => 'Adreça IP :',
+	'confirmaccount-legend' => 'Confirmar/regetar aqueste compte',
 	'confirmaccount-submit' => 'Confirmacion',
 	'confirmaccount-needreason' => 'Vos cal indicar un motiu dins lo quadre çaiaprèp.',
 	'confirmaccount-canthold' => 'Aquesta requèsta es ja, siá presa en compte, siá suprimida.',
