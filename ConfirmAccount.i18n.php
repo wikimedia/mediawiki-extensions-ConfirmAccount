@@ -582,6 +582,7 @@ $3
 	'confirmaccount-spam' => 'سبام (لا ترسل البريد الإلكتروني)',
 	'confirmaccount-reason' => 'تعليق (سيضم في البريد الإلكتروني):',
 	'confirmaccount-ip' => 'عنوان الأيبي:',
+	'confirmaccount-legend' => 'أكّد/ارفض هذا الحساب',
 	'confirmaccount-submit' => 'أكّد',
 	'confirmaccount-needreason' => 'يجب أن تحدد سببا في صندوق التعليق بالأسفل.',
 	'confirmaccount-canthold' => 'هذا الطلب بالفعل إما قيد الانتظار أو محذوف.',
@@ -10766,6 +10767,7 @@ Suriin kung ibinaybay ng tama ang pangalan.',
 );
 
 /** Turkish (Türkçe)
+ * @author Homonihilis
  * @author Karduelis
  * @author Mach
  * @author Suelnur
@@ -10909,6 +10911,7 @@ Bu sayfadan isteği onaylamadan ya da reddetmeden çıkmanız halinde, istek bek
 	'confirmaccount-spam' => 'Reklam (e-posta gönderme)',
 	'confirmaccount-reason' => 'Yorum (e-postaya dahil edilecek):',
 	'confirmaccount-ip' => 'IP adresi:',
+	'confirmaccount-legend' => 'Bu hesabı onayla/reddet',
 	'confirmaccount-submit' => 'Onayla',
 	'confirmaccount-needreason' => 'Aşağıdaki yorum kutusuna bir gerekçe girmelisiniz.',
 	'confirmaccount-canthold' => 'Bu istek ya askıda ya da silinmiş.',
