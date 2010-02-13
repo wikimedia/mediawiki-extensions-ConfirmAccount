@@ -818,7 +818,6 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 
 		# Every 30th view, prune old deleted items
-		wfSeedRandom();
 		if( 0 == mt_rand( 0, 29 ) ) {
 			$this->runAutoMaintenance();
 		}
