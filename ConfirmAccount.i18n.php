@@ -1343,8 +1343,10 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'requestaccount' => 'Goulenn ur gont implijer',
+	'requestaccount-page' => '{{ns:project}}: Amplegadoù implijout',
 	'requestaccount-dup' => "'''Notenn : Kevreet oc'h dija gant ur gont marilhet.'''",
 	'requestaccount-leg-user' => 'Kont implijer',
+	'requestaccount-leg-areas' => 'Diduadennoù pennañ',
 	'requestaccount-leg-person' => 'Titouroù hiniennel',
 	'requestaccount-leg-other' => 'Titouroù all',
 	'requestaccount-leg-tos' => 'Divizoù servij',
@@ -1406,6 +1408,7 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-reject' => "(distaolet gant [[User:$1|$1]] d'an $2)",
 	'confirmaccount-noreason' => '(hini ebet)',
 	'confirmaccount-autorej' => "(distaolet eo bet ar goulenn-mañ ent emgefre abalamour d'an dioberiantiz)",
+	'confirmaccount-held' => '(merket "miret" gant [[User:$1|$1]] war $2)',
 	'confirmaccount-create' => 'Asantiñ (krouiñ ar gont)',
 	'confirmaccount-deny' => 'Disteurel (lemel eus ar roll)',
 	'confirmaccount-hold' => 'Mirout',
@@ -2787,6 +2790,7 @@ $messages['ext'] = array(
 );
 
 /** Finnish (Suomi)
+ * @author Centerlink
  * @author Cimon Avaro
  * @author Crt
  * @author Jaakonam
@@ -2929,6 +2933,7 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-spam' => 'Roskaa (sähköpostia ei lähetetä)',
 	'confirmaccount-reason' => 'Huomautus (liitetään sähköpostiin):',
 	'confirmaccount-ip' => 'IP-osoite:',
+	'confirmaccount-legend' => 'Vahvista/hylkää tämä tili',
 	'confirmaccount-submit' => 'Vahvista',
 	'confirmaccount-needreason' => 'Alla olevaan huomautuslaatikkoon on kirjoitettava perustelu.',
 	'confirmaccount-canthold' => 'Tämä pyyntöf on jo joko pysäytetty tai poistettu.',
