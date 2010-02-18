@@ -1879,7 +1879,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-deny' => 'Ablehnen (Antrag löschen)',
 	'confirmaccount-hold' => 'Markiert als „abwarten“',
 	'confirmaccount-spam' => 'Spam (keine E-Mail verschicken)',
-	'confirmaccount-reason' => 'Begründung (wird in die Mail an den Antragsteller eingefügt):',
+	'confirmaccount-reason' => 'Begründung (wird in die E-Mail an den Antragsteller eingefügt):',
 	'confirmaccount-ip' => 'IP-Addresse:',
 	'confirmaccount-submit' => 'Abschicken',
 	'confirmaccount-needreason' => 'Du musst eine Begründung eingeben.',
