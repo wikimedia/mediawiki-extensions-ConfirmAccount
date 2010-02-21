@@ -26,6 +26,7 @@ Once the account is approved, you will be e-mailed a notification message and th
 	'requestaccount-acc-text'   => 'Your e-mail address will be sent a confirmation message once this request is submitted.
 Please respond by clicking on the confirmation link provided by the e-mail.
 Also, your password will be e-mailed to you when your account is created.',
+	'requestaccount-areas' => '', # Do not translate this message to other languages
 	'requestaccount-areas-text' => 'Select the topic areas below in which you have formal expertise or would like to do the most work in.',
 	'requestaccount-ext-text'   => 'The following information is kept private and will only be used for this request.
 You may want to list contacts such a phone number to aid in identify confirmation.',

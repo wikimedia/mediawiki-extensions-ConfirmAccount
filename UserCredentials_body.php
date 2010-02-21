@@ -144,19 +144,25 @@ class UserCredentialsPage extends SpecialPage
 
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml( 'usercredentials-leg-other' ) . '</legend>';
-		$form .= '<p>' . wfMsgHtml( 'usercredentials-attach' ) . ' ';
-		if ( $row->acd_filename ) {
-			$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars( $row->acd_filename ),
-				'file=' . $row->acd_storage_key );
-		} else {
-			$form .= wfMsgHtml( 'confirmaccount-none-p' );
+
+		global $wgAccountRequestExtraInfo ;
+
+		if( $wgAccountRequestExtraInfo ) {
+			$form .= '<p>' . wfMsgHtml( 'usercredentials-attach' ) . ' ';
+			if ( $row->acd_filename ) {
+				$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars( $row->acd_filename ),
+					'file=' . $row->acd_storage_key );
+			} else {
+				$form .= wfMsgHtml( 'confirmaccount-none-p' );
+			}
+			$form .= "</p><p>" . wfMsgHtml( 'usercredentials-notes' ) . "</p>\n";
+			$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+				htmlspecialchars( $row->acd_notes ) .
+				"</textarea></p>\n";
+			$form .= "<p>" . wfMsgHtml( 'usercredentials-urls' ) . "</p>\n";
+			$form .= ConfirmAccountsPage::parseLinks( $row->acd_urls );
 		}
-		$form .= "</p><p>" . wfMsgHtml( 'usercredentials-notes' ) . "</p>\n";
-		$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
-			htmlspecialchars( $row->acd_notes ) .
-			"</textarea></p>\n";
-		$form .= "<p>" . wfMsgHtml( 'usercredentials-urls' ) . "</p>\n";
-		$form .= ConfirmAccountsPage::parseLinks( $row->acd_urls );
+
 		if ( $wgUser->isAllowed( 'requestips' ) ) {
 			$blokip = SpecialPage::getTitleFor( 'blockip' );
 			$form .= "<p>" . wfMsgHtml( 'usercredentials-ip' ) . " " . htmlspecialchars( $row->acd_ip ) . "</p>\n";
