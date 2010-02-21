@@ -64,7 +64,7 @@ class ConfirmAccountsPage extends SpecialPage
 
 		# Load areas user plans to be active in...
 		$this->mAreas = $this->mAreaSet = array();
-		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+		if( wfMsg( 'requestaccount-areas' ) ) {
 			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
 			foreach( $areas as $area ) {
 				$set = explode("|",$area,2);
@@ -263,7 +263,7 @@ class ConfirmAccountsPage extends SpecialPage
 
 		$form .= '</table></fieldset>';
 
-		if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+		if( wfMsg( 'requestaccount-areas' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-areas') . '</legend>';
 
@@ -624,7 +624,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$body = $grouptext ? "{$body}\n\n{$grouptext}" : $body;
 
 				# Add any interest categories
-				if( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+				if( wfMsg( 'requestaccount-areas' ) ) {
 					$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
 					foreach( $areas as $n => $line ) {
 						$set = explode("|",$line);

@@ -99,7 +99,7 @@ class UserCredentialsPage extends SpecialPage
 
 		$areaSet = RequestAccountPage::expandAreas( $row->acd_areas );
 
-		if ( !wfEmptyMsg( 'requestaccount-areas', wfMsg( 'requestaccount-areas' ) ) ) {
+		if ( wfMsg( 'requestaccount-areas' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'confirmaccount-leg-areas' ) . '</legend>';
 

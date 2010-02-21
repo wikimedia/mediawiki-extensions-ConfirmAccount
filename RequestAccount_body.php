@@ -50,7 +50,7 @@ class RequestAccountPage extends SpecialPage {
 		$this->mType = isset( $wgAccountRequestTypes[$this->mType] ) ? $this->mType : 0;
 		# Load areas user plans to be active in...
 		$this->mAreas = $this->mAreaSet = array();
-		if ( !wfEmptyMsg( 'requestaccount-areas', wfMsg( 'requestaccount-areas' ) ) ) {
+		if ( wfMsg( 'requestaccount-areas' ) ) {
 			$areas = explode( "\n*", "\n" . wfMsg( 'requestaccount-areas' ) );
 			foreach ( $areas as $n => $area ) {
 				$set = explode( "|", $area, 2 );
@@ -123,7 +123,7 @@ class RequestAccountPage extends SpecialPage {
 		}
 		$form .= '</table></fieldset>';
 
-		if ( !wfEmptyMsg( 'requestaccount-areas', wfMsg('requestaccount-areas') ) ) {
+		if ( wfMsg( 'requestaccount-areas' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-areas' ) . '</legend>';
 			$form .=  wfMsgExt( 'requestaccount-areas-text', array( 'parse' ) ) . "\n";
