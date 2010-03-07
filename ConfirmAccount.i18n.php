@@ -5372,6 +5372,7 @@ Controlla che il nome sia scritto correttamente.',
  * @author Aotake
  * @author Fryed-peach
  * @author JtFuruhata
+ * @author 青子守歌
  */
 $messages['ja'] = array(
 	'requestaccount' => 'アカウント登録申請',
@@ -5501,6 +5502,7 @@ $3
 	'confirmaccount-spam' => 'スパム(電子メールは送信しません)',
 	'confirmaccount-reason' => '判断理由(電子メールに記載されます):',
 	'confirmaccount-ip' => 'IPアドレス:',
+	'confirmaccount-legend' => 'このアカウントを確認、または拒否する',
 	'confirmaccount-submit' => '判断確定',
 	'confirmaccount-needreason' => '判断理由を以下に記載する必要があります。',
 	'confirmaccount-canthold' => 'この申請は既に保留済みか、削除済みです。',
