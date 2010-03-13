@@ -1374,7 +1374,9 @@ Kadarnaet eo bet ar chomlec'h postel. Gallout a rit kadarnaat ar goulenn amañ �
 	'acct_request_throttle_hit' => "Digarez, met goulennet hoc'h eus {{PLURAL:$1|1 gont|$1 kont}} dija.
 Ne c'hallit ket ober goulennoù all.",
 	'requestaccount-loginnotice' => "Evit kaout ur gont implijer e rankit '''[[Special:RequestAccount|goulenn unan]]'''.",
+	'confirmaccount-newrequests' => "Er mare-mañ ez eus '''$1''' [[Special:ConfirmAccounts|goulenn kont{{PLURAL:$1||}}]] o vont en-dro.",
 	'confirmaccounts' => 'Goulenn gwiriañ kontoù',
+	'confirmedit-desc' => "Reiñ a ra ar galloud d'ar burevidi da wiriañ rekedoù ar c'hontoù implijer",
 	'confirmaccount-real-q' => 'Anv',
 	'confirmaccount-email-q' => 'Postel',
 	'confirmaccount-bio-q' => 'Levrlennadur',
@@ -1416,6 +1418,7 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-spam' => 'Strob (na gasit ket a bostel)',
 	'confirmaccount-reason' => 'Evezhiadenn (ebarzhiet e vo er postel) :',
 	'confirmaccount-ip' => "Chomlec'h IP :",
+	'confirmaccount-legend' => "Kadarnaat/nac'hañ ar gont",
 	'confirmaccount-submit' => 'Kadarnaat',
 	'confirmaccount-needreason' => "Ret eo deoc'h pourchas un abeg er voest amañ dindan.",
 	'confirmaccount-acc' => 'Kardarnaet eo bet ar goulenn kont ;
@@ -1444,6 +1447,7 @@ $3
 Abalamour d'ar surentez e tleot cheñch ho ker-tremen ar wech kentañ ma kevreot.
 Evit kevreañ, kit da {{fullurl:Special:UserLogin}}, mar plij.",
 	'usercredentials' => 'Daveennoù an implijer',
+	'usercredentials-leg' => 'Gwiriekadenn kadarnaet eus daveoù un implijer.',
 	'usercredentials-user' => 'Anv implijer :',
 	'usercredentials-text' => 'Amañ emañ daveennoù gwiriekaet kont an implijer diuzet.',
 	'usercredentials-leg-user' => 'Kont implijer',
