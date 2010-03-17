@@ -159,7 +159,7 @@ $aliases['ko'] = array(
 	'ConfirmAccounts' => array( '계정승인' ),
 );
 
-/** Ripoarisch (Ripoarisch) */
+/** Colognian (Ripoarisch) */
 $aliases['ksh'] = array(
 	'RequestAccount' => array( 'Metmaacherzohjang beaandraare' ),
 	'ConfirmAccounts' => array( 'Metmaacherzohjang beshtätejje' ),
