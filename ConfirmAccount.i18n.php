@@ -2183,7 +2183,7 @@ Jolic jadnorje wóstajijoš toś ten bok bźez wobkšuśenja abo wótpokazanja t
 	'confirmaccount-q-held' => 'zaźaržane póžedanja',
 	'confirmaccount-q-rej' => 'njedawno wótpokazane póžedanja',
 	'confirmaccount-q-stale' => 'pśepadnjone póžedanja',
-	'confirmaccount-badid' => 'Njejo žedne njedocynjone póžedanje za pódany ID.
+	'confirmaccount-badid' => 'Njejo žedno njedocynjone póžedanje za pódany ID.
 Snaź jo južo docynjone.',
 	'confirmaccount-leg-user' => 'Wužywarske konto',
 	'confirmaccount-leg-areas' => 'Głowne zajmowe póla',
