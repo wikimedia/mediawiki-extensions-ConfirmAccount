@@ -504,13 +504,18 @@ class RequestAccountPage extends SpecialPage {
 			# Send confirmation email to prospective user
 			$this->confirmEmail( $name );
 			# Send mail to admin after e-mail has been confirmed
-			if ( $wgConfirmAccountContact ) {
-				$u = User::newFromName( $name, 'creatable' );
-				$u->setEmail( $wgConfirmAccountContact );
-				$title = Title::makeTitle( NS_SPECIAL, 'ConfirmAccounts' );
-				$url = $title->getFullUrl();
-				$u->sendMail( wfMsg( 'requestaccount-email-subj-admin' ),
-					wfMsg( 'requestaccount-email-body-admin', $name, $url ) );
+			global $wgConfirmAccountContact, $wgPasswordSender;
+			if ( $wgConfirmAccountContact != '' ) {
+				$target = new MailAddress( $wgConfirmAccountContact );
+				$source = new MailAddress( $wgPasswordSender );
+				$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
+				$subject = wfMsg( 'requestaccount-email-subj-admin' );
+				$body = wfMsg( 'requestaccount-email-body-admin', $name, $title->getFullUrl() );
+				# Actually send the email...
+				$result = UserMailer::send( $target, $source, $subject, $body );
+				if ( WikiError::isError( $result ) ) {
+					wfDebug( "Could not sent email to admin at $target\n" );
+				}
 			}
 			$wgOut->addWikiText( wfMsgHtml( 'request-account-econf' ) );
 			$wgOut->returnToMain();
