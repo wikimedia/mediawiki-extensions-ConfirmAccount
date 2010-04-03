@@ -2585,13 +2585,13 @@ No puedes hacer ninguna otra solicitud.',
 	'confirmedit-desc' => 'Da a los burócratas la habilidad de confirmar solicitudes de cuenta',
 	'confirmaccount-list' => 'Debajo hay una lista de solicitudes de cuenta esperando aprobación.
 una vez que una solicitud es tanto aprovada como rechazada se removerá de esta lista.',
-	'confirmaccount-text' => "Esta es una solicitud en espera de una cuenta de usuario en'''{{SITENAME}}'''.
+	'confirmaccount-text' => "Esta es una solicitud en espera de una cuenta de usuario en '''{{SITENAME}}'''.
 
 Lee con atención la siguiente información.
 Si decides aprobar esta solicitud, utiliza el menú desplegable de posición para establecer el estado de la cuenta del usuario.
 Las ediciones hechas a la biografía de la aplicación no afectarán ningún almacenamiento de credenciales permanente.
-También puedes elegir crear la cuenta con un nombre de usuario diferente.
-Debes elegir esta opción sólo para evitar conflictos (coincidencias) con otros nombres.
+Ten en cuenta que también puedes elegir crear la cuenta con un nombre de usuario diferente.
+Debes elegir esta opción sólo para evitar coincidencias con otros nombres.
 
 Si dejas esta solicitud sin confirmar o rechazar, quedará en espera.",
 	'confirmaccount-none-o' => 'Actualmente no hay solicitudes de cuenta en espera abiertas en este listado.',
