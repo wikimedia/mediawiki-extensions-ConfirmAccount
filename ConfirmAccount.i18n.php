@@ -5164,6 +5164,7 @@ $messages['is'] = array(
 );
 
 /** Italian (Italiano)
+ * @author Beta16
  * @author Darth Kule
  * @author Melos
  * @author Pietrodn
@@ -5309,6 +5310,7 @@ Potrebbe essere già stato trattato.",
 	'confirmaccount-spam' => 'Spam (non inviare e-mail)',
 	'confirmaccount-reason' => "Commento (sarà incluso nell'e-mail):",
 	'confirmaccount-ip' => 'Indirizzo IP:',
+	'confirmaccount-legend' => 'Conferma/respingi questo account',
 	'confirmaccount-submit' => 'Conferma',
 	'confirmaccount-needreason' => 'Devi fornire una motivazione nella casella del commento sottostante.',
 	'confirmaccount-canthold' => 'Questa richiesta è già stata fermata o eliminata.',
@@ -6709,7 +6711,7 @@ $messages['ml'] = array(
 	'requestaccount-email-subj' => '{{SITENAME}} സം‌രംഭത്തിലെ ഇമെയില്‍ വിലാസ സ്ഥിരീകരണം',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} സം‌രംഭത്തില്‍ അംഗത്വം സൃഷ്ടിക്കാനുള്ള അഭ്യര്‍ത്ഥന',
 	'requestaccount-email-body-admin' => '"$1" ന്റെ അംഗത്വത്തിനായുള്ള അപേക്ഷ സ്ഥിരീകരണത്തിനായി കാത്തിരിക്കുന്നു. ഇമെയില്‍ വിലാസം ഇതിനകം സ്ഥിരീകരിക്കപ്പെട്ടിരിക്കുന്നു. ഈ അപേക്ഷ താങ്കള്‍ക്ക് ഇവിടെ "$2" സ്ഥിരീകരിക്കാവുന്നതാണ്‌.',
-	'acct_request_throttle_hit' => 'ക്ഷമിക്കുക, താങ്കള്‍ ഇതിനകം  {{PLURAL:$1|അംഗത്വത്തിനായി|$1 അംഗത്വങ്ങള്‍ക്കായി]] അഭ്യര്‍ത്ഥിച്ചു കഴിഞ്ഞു. ഇനി കൂടുതല്‍ അഭ്യര്‍ത്ഥന നടത്തുന്നതു അനുവദനീയമല്ല.',
+	'acct_request_throttle_hit' => 'ക്ഷമിക്കുക, താങ്കൾ ഇതിനകം  {{PLURAL:$1|അംഗത്വത്തിനായി|$1 അംഗത്വങ്ങൾക്കായി]] അഭ്യർത്ഥിച്ചു കഴിഞ്ഞു. ഇനി കൂടുതൽ അഭ്യർത്ഥന നടത്തുന്നതു അനുവദനീയമല്ല.',
 	'requestaccount-loginnotice' => "ഉപയോക്തൃ അംഗത്വം ലഭിക്കുന്നതിനായി താങ്കള്‍ '''[[Special:RequestAccount|ഉപയോക്തൃഅംഗത്വത്തിനായി അഭ്യര്‍ത്ഥിക്കണം]]'''.",
 	'confirmaccount-newrequests' => "ഇമെയില്‍ വിലാസം സ്ഥിരീകരിക്കപ്പെട്ട '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|അംഗത്വത്തിനായുള്ള അഭ്യര്‍ത്ഥന]]|[[Special:ConfirmAccounts|അംഗത്വത്തിനായുള്ള അഭ്യര്‍ത്ഥനകള്‍]]}} പെന്‍‌ഡിംങ്ങാണ്‌.",
 	'confirmaccounts' => 'അംഗത്വ അഭ്യര്‍ത്ഥനകള്‍ സ്ഥിരീകരിക്കുക',
@@ -8011,6 +8013,7 @@ Być może został on już obsłużony.',
 	'confirmaccount-spam' => 'Spam (nie wysyłaj wiadomości e‐mail)',
 	'confirmaccount-reason' => 'Komentarz (zostanie dopisany do wiadomości e‐mail):',
 	'confirmaccount-ip' => 'Adres IP:',
+	'confirmaccount-legend' => 'Zatwierdź lub odrzuć to konto',
 	'confirmaccount-submit' => 'Potwierdź',
 	'confirmaccount-needreason' => 'Musisz podać uzasadnienie w polu poniżej.',
 	'confirmaccount-canthold' => 'Ten wniosek został już wstrzymany lub usunięty.',
@@ -8074,7 +8077,7 @@ Jeśli chcesz dowiedzieć się więcej o zasadach tworzenia kont w serwisie, pos
 	'usercredentials-badid' => 'Nie znaleziono informacji uwierzytelniających na temat tego użytkownika.
 Sprawdź, czy prawidłowo wpisałeś nazwę konta.',
 	'right-confirmaccount' => 'Przeglądanie [[Special:ConfirmAccounts|kolejki z wnioskami o założenie konta]]',
-	'right-requestips' => 'Widoczność adresów IP podczas przetwarzania wniosków o założenie konta',
+	'right-requestips' => 'Przeglądanie adresów IP wnioskodawców podczas przetwarzania ich wniosków o założenie konta',
 	'right-lookupcredentials' => 'Przeglądanie [[Special:UserCredentials|referencji użytkowników]]',
 );
 
@@ -8329,7 +8332,7 @@ Assim que a conta for aprovada, ser-lhe-á enviada uma mensagem de notificação
 	'requestaccount-leg-person' => 'Informação pessoal',
 	'requestaccount-leg-other' => 'Outras informações',
 	'requestaccount-leg-tos' => 'Termos de Serviço',
-	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de correio electrónico assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação enviada na mensagem. A sua palavra-chave também será enviada por correio electrónico assim que a conta tenha sido criada.',
+	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de correio electrónico assim que este pedido for submetido. Por favor, responda clicando o link de confirmação enviado na mensagem. A sua palavra-chave também será enviada por correio electrónico assim que a conta tenha sido criada.',
 	'requestaccount-areas-text' => 'Seleccione abaixo as áreas em que possui experiência formal ou em que mais gostaria de trabalhar.',
 	'requestaccount-ext-text' => 'A seguinte informação será mantida privada e só será usada para este pedido.
 Talvez possa listar contactos, tais como o número de telefone, para ajudar na confirmação da identificação.',
@@ -8346,7 +8349,7 @@ O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
 	'requestaccount-bio' => 'Biografia pessoal:',
 	'requestaccount-attach' => 'Currículo (opcional):',
 	'requestaccount-notes' => 'Notas adicionais:',
-	'requestaccount-urls' => 'Lista de sítios na internet, se algum (um por linha):',
+	'requestaccount-urls' => 'Lista de sites na internet, se algum (um por linha):',
 	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correcto e que concorda com os nossos Termos de Serviço.',
 	'requestaccount-inuse' => 'O nome de utilizador já está em uso num pedido de conta pendente.',
 	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.',
@@ -8362,11 +8365,11 @@ Uma mensagem de confirmação foi enviada para o seu correio electrónico.',
 	'requestaccount-email-subj' => 'Confirmação de endereço electrónico para a {{SITENAME}}',
 	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, pediu uma conta "$2" com este endereço de correio electrónico na {{SITENAME}}.
 
-Para confirmar que esta conta realmente lhe pertence na {{SITENAME}}, siga esta ligação no seu navegador:
+Para confirmar que esta conta realmente lhe pertence na {{SITENAME}}, siga este link no seu browser:
 
 $3
 
-Se a conta for criada, a palavra-chave só lhe será enviada a si. Se este pedido *não* foi feito por si, não siga a ligação.
+Se a conta for criada, a palavra-chave só lhe será enviada a si. Se este pedido *não* foi feito por si, não siga o link.
 Este código de confirmação expirará a $4.',
 	'requestaccount-email-subj-admin' => 'Pedido de conta na {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" pediu uma conta e aguarda confirmação.
@@ -8431,7 +8434,7 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-bio' => 'Biografia:',
 	'confirmaccount-attach' => 'Currículo:',
 	'confirmaccount-notes' => 'Notas adicionais:',
-	'confirmaccount-urls' => 'Lista de sítios na internet:',
+	'confirmaccount-urls' => 'Lista de sites na internet:',
 	'confirmaccount-none-p' => '(não fornecido)',
 	'confirmaccount-confirm' => 'Use as opções abaixo para aceitar, rejeitar, ou colocar em espera este pedido:',
 	'confirmaccount-econf' => '(confirmado)',
@@ -8476,17 +8479,17 @@ $3
 Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá a {{fullurl:{{ns:special}}:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado na {{SITENAME}}.
 
-Há várias formas de isto acontecer. Poderá não ter preenchido o formulário correctamente, não ter fornecido respostas de tamanho adequado, ou de outra forma não ter cumprido algumas normas e critérios. Podem existir listas de contactos no sítio que poderá usar se deseja saber mais sobre a política de contas de utilizador.',
+Há várias formas de isto acontecer. Poderá não ter preenchido o formulário correctamente, não ter fornecido respostas de tamanho adequado, ou de outra forma não ter cumprido algumas normas e critérios. Podem existir listas de contactos no site que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
 	'confirmaccount-email-body4' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado na {{SITENAME}}.
 
 $2
 
-Podem haver listas de contactos no sítio que poderá usar se deseja saber mais sobre a política de contas de utilizador.',
+Podem haver listas de contactos no site que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
 	'confirmaccount-email-body5' => 'Antes que o seu pedido para a conta "$1" seja aceite na {{SITENAME}}, deverá fornecer alguma informação adicional.
 
 $2
 
-Podem haver listas de contactos no sítio que poderá usar se deseja saber mais sobre a política de contas de utilizador.',
+Podem haver listas de contactos no site que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
 	'usercredentials' => 'Credenciais do utilizador',
 	'usercredentials-leg' => 'Procurar credenciais confirmadas para um utilizador',
 	'usercredentials-user' => 'Nome de utilizador:',
@@ -8500,7 +8503,7 @@ Podem haver listas de contactos no sítio que poderá usar se deseja saber mais 
 	'usercredentials-bio' => 'Biografia:',
 	'usercredentials-attach' => 'Currículo:',
 	'usercredentials-notes' => 'Notas adicionais:',
-	'usercredentials-urls' => 'Lista de sítios na internet:',
+	'usercredentials-urls' => 'Lista de sites na internet:',
 	'usercredentials-ip' => 'Endereço IP original:',
 	'usercredentials-member' => 'Privilégios:',
 	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está correctamente escrito.',
