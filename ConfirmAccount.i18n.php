@@ -3024,7 +3024,7 @@ $2
 Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.',
 	'usercredentials' => 'Käyttäjän valtuudet',
 	'usercredentials-leg' => 'Etsi käyttäjän vahvistetut valtuudet',
-	'usercredentials-user' => 'Käyttäjätunnus',
+	'usercredentials-user' => 'Käyttäjätunnus:',
 	'usercredentials-text' => 'Valitun käyttäjätunnuksen vahvistetut valtuudet ovat alla.',
 	'usercredentials-leg-user' => 'Käyttäjätunnus',
 	'usercredentials-leg-areas' => 'Tärkeimmät kiinnostuksen kohteet',
