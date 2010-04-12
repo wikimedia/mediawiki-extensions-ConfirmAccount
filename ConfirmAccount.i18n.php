@@ -2295,6 +2295,7 @@ $messages['ee'] = array(
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Crazymadlover
+ * @author Egmontaz
  * @author Omnipaedista
  * @author ZaDiak
  */
@@ -2315,6 +2316,7 @@ $messages['el'] = array(
 	'requestaccount-bio' => 'Προσωπική βιογραφία:',
 	'requestaccount-attach' => 'Βιογραφικό (προαιρετικό):',
 	'requestaccount-notes' => 'Συμπληρωματικές σημειώσεις:',
+	'requestaccount-tooshort' => 'Το βιογραφικό σας θα πρέπει να είναι τουλάχιστον $1 {{PLURAL:$1|λέξη|λέξεις}}',
 	'requestaccount-submit' => 'Αίτηση λογαριασμού',
 	'requestaccount-email-subj-admin' => 'Αίτηση λογαριασμού στο {{SITENAME}}',
 	'confirmaccounts' => 'Επιβεβαίωση αιτήσεων λογαριασμών',
