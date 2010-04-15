@@ -4915,6 +4915,7 @@ Verifica que le nomine sia orthographiate correctemente.',
  * @author Bennylin
  * @author Irwangatot
  * @author IvanLanin
+ * @author Iwan Novirion
  * @author Rex
  */
 $messages['id'] = array(
@@ -5057,6 +5058,7 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-spam' => 'Spam (jangan kirim surel)',
 	'confirmaccount-reason' => 'Komentar (akan dimasukkan dalam surel):',
 	'confirmaccount-ip' => 'Alamat IP:',
+	'confirmaccount-legend' => 'Konfirmasi/menolak akun ini',
 	'confirmaccount-submit' => 'Konfirmasi',
 	'confirmaccount-needreason' => 'Anda harus memberikan sebuah alasan dalam kotak komentar berikut.',
 	'confirmaccount-canthold' => 'Permintaan ini telah ditunda atau dihapuskan.',
