@@ -1376,7 +1376,7 @@ Kadarnaet eo bet ar chomlec'h postel. Gallout a rit kadarnaat ar goulenn amañ �
 Ne c'hallit ket ober goulennoù all.",
 	'requestaccount-loginnotice' => "Evit kaout ur gont implijer e rankit '''[[Special:RequestAccount|goulenn unan]]'''.",
 	'confirmaccount-newrequests' => "Er mare-mañ ez eus '''$1''' [[Special:ConfirmAccounts|goulenn kont{{PLURAL:$1||}}]] o vont en-dro.",
-	'confirmaccounts' => 'Goulenn gwiriañ kontoù',
+	'confirmaccounts' => 'Kadarnaat ar goulennoù kont',
 	'confirmedit-desc' => "Reiñ a ra ar galloud d'ar burevidi da wiriañ rekedoù ar c'hontoù implijer",
 	'confirmaccount-none-e' => "N'ez eus er roll, er mare-mañ, reked ebet evit kontoù n'int mat ken.",
 	'confirmaccount-real-q' => 'Anv',
@@ -1385,17 +1385,17 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-showopen' => 'rekedoù digor',
 	'confirmaccount-showrej' => 'rekedoù distaolet',
 	'confirmaccount-showheld' => "goulennoù dalc'het",
-	'confirmaccount-showexp' => 'Rekedoù tremenet',
+	'confirmaccount-showexp' => 'Goulennoù dispredet',
 	'confirmaccount-review' => 'Adwelet',
 	'confirmaccount-types' => 'Diuzañ ur gont er roll gortoz amañ a-is :',
-	'confirmaccount-all' => '(Gwelet an holl listennoù gortoz)',
-	'confirmaccount-type' => 'Listenn gortoz :',
+	'confirmaccount-all' => '(Gwelet an holl rolloù gortoz)',
+	'confirmaccount-type' => 'Roll gortoz :',
 	'confirmaccount-type-0' => 'oberourien posupl',
 	'confirmaccount-type-1' => 'kenoberien posubl',
 	'confirmaccount-q-open' => 'rekedoù digor',
 	'confirmaccount-q-held' => "goulennoù dalc'het",
 	'confirmaccount-q-rej' => 'goulennoù distaolet nevez zo',
-	'confirmaccount-q-stale' => 'Rekedoù tremenet',
+	'confirmaccount-q-stale' => 'Goulennoù dispredet',
 	'confirmaccount-leg-user' => 'Kont implijer',
 	'confirmaccount-leg-areas' => 'Diduadennoù pennañ',
 	'confirmaccount-leg-person' => 'Titouroù personel',
@@ -1421,8 +1421,8 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-create' => 'Asantiñ (krouiñ ar gont)',
 	'confirmaccount-deny' => 'Disteurel (lemel eus ar roll)',
 	'confirmaccount-hold' => 'Mirout',
-	'confirmaccount-spam' => 'Strob (na gasit ket a bostel)',
-	'confirmaccount-reason' => 'Evezhiadenn (ebarzhiet e vo er postel) :',
+	'confirmaccount-spam' => 'Strob (na gasit ket posteloù)',
+	'confirmaccount-reason' => 'Evezhiadenn (lakaet e vo er postel) :',
 	'confirmaccount-ip' => "Chomlec'h IP :",
 	'confirmaccount-legend' => "Kadarnaat/nac'hañ ar gont",
 	'confirmaccount-submit' => 'Kadarnaat',
@@ -1432,7 +1432,7 @@ Ne c'hallit ket ober goulennoù all.",
 krouet eo bet ar gont implijer nevez [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Distaolet eo bet ar goulenn kont.',
 	'confirmaccount-viewing' => '(gwelet gant [[User:$1|$1]] evit bremañ)',
-	'confirmaccount-summary' => 'Krouadenn ar bajenn implijer  gant e vuhezskrid.',
+	'confirmaccount-summary' => 'O krouiñ pajenn implijer an implijer nevez gant e vuhezskrid.',
 	'confirmaccount-wsum' => 'Degemer mat !',
 	'confirmaccount-email-subj' => 'Goulenn ur gont war {{SITENAME}}',
 	'confirmaccount-email-body' => "Ho koulenn kont zo bet aprouet e {{SITENAME}}.
@@ -7019,13 +7019,14 @@ $2
 );
 
 /** Maltese (Malti)
+ * @author Chrisportelli
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
 	'confirmaccount-email-q' => 'E-mail',
-	'confirmaccount-name' => 'Isem l-utent',
+	'confirmaccount-name' => 'Isem tal-utent',
 	'confirmaccount-email' => 'E-mail:',
-	'usercredentials-user' => 'Isem l-utent:',
+	'usercredentials-user' => 'Isem tal-utent:',
 	'usercredentials-email' => 'E-mail:',
 );
 
@@ -8356,7 +8357,7 @@ $3
  */
 $messages['pt'] = array(
 	'requestaccount' => 'Pedir conta',
-	'requestaccount-text' => "'''Complete e submeta o seguinte formulário para pedir uma conta de utilizador'''.
+	'requestaccount-text' => "'''Complete e envie o seguinte formulário para pedir uma conta de utilizador'''.
 
 Certifique-se de que lê primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.
 
