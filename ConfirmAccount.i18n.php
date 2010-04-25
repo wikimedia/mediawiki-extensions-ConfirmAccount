@@ -5905,7 +5905,7 @@ $messages['krj'] = array(
 	'usercredentials-email' => 'E-mail:',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -6121,7 +6121,7 @@ Loor ens, ov dä Name reschtesch jetipp es.',
 	'right-lookupcredentials' => 'De [[Special:UserCredentials|Nohwiise]] för Metmaacher aanloore',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (Kernewek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
@@ -8754,7 +8754,7 @@ $messages['rif'] = array(
 	'usercredentials-real' => 'Ism n dṣṣaḥ :',
 );
 
-/** Rhaeto-Romance (Rumantsch) */
+/** Romansh (Rumantsch) */
 $messages['rm'] = array(
 	'confirmaccount-real-q' => 'Num',
 	'confirmaccount-name' => "Num d'utilisader",
@@ -11206,7 +11206,7 @@ $messages['yi'] = array(
 	'usercredentials-user' => 'באַניצער נאָמען:',
 );
 
-/** Yue (粵語) */
+/** Cantonese (粵語) */
 $messages['yue'] = array(
 	'requestaccount' => '請求戶口',
 	'requestaccount-text' => "'''完成並遞交下面嘅表格去請求一個用戶戶口'''。
