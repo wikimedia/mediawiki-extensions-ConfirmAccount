@@ -6194,8 +6194,8 @@ Wann Äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir k
 	'requestaccount-leg-other' => 'Aner Informatiounen',
 	'requestaccount-leg-tos' => 'Conditioune vun der Notzung',
 	'requestaccount-acc-text' => 'Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mailadress.
-Äntwert w.e.g. duerch klicken op de Confirmatiouns-Link deen an däer Mail drasteet.
-Och Ärt Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht ginn ass.',
+Äntwert w.e.g. duerch klicken op de Confirmatiouns-Link deen an där Mail drasteet.
+Och Äert Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht gouf.',
 	'requestaccount-areas-text' => 'Wielt déi Sujeten aus an denen Dir formaalt Fachwëssen huet oder an deem Dir am léifste schaffe wëllt.',
 	'requestaccount-ext-text' => "Dës Informatioune gi vertraulech behandelt a gi just fir dës Ufro benotzt.
 Dir kënnt Kontaktinformatiounen wéi eng Telefonsnummer uginn fir d'Identitéitskonfirmatioun ze vereinfachen.",
@@ -6322,7 +6322,7 @@ Numm vum Benotzerkont: $1
 
 Passwuert: $2
 
-Aus Sécherheetsgrënn musst Dir Ärt Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.
+Aus Sécherheetsgrënn musst Dir Äert Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.
 Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Är Ufro fir e Benotzerkont op {{SITENAME}} gouf ugeholl.
 
@@ -6332,7 +6332,7 @@ Passwuert: $2
 
 $3
 
-Aus Sécherheetsgrënn musst Dir Ärt Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.
+Aus Sécherheetsgrënn musst Dir Äert Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.
 Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3' => 'Pardon, Är Ufro fir e Benotzerkont "$1" op {{SITENAME}} gouf refuséiert.
 
