@@ -8551,6 +8551,7 @@ Podem haver listas de contactos no site que poderá usar se deseja saber mais so
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
+ * @author Giro720
  * @author Heldergeovane
  * @author Luckas Blade
  */
@@ -8684,6 +8685,7 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar esta requisiç�
 	'confirmaccount-spam' => 'Spam (não enviar email)',
 	'confirmaccount-reason' => 'Comentário (será incluído no email):',
 	'confirmaccount-ip' => 'Endereço IP:',
+	'confirmaccount-legend' => 'Confirmar ou rejeitar esta conta',
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Deverá fornecer um motivo na caixa de comentário abaixo.',
 	'confirmaccount-canthold' => 'Esta requisição já está em espera ou apagada.',
