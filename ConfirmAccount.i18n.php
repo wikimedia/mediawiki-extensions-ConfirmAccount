@@ -10682,7 +10682,7 @@ Maaari mong baguhin ang pangalan mo sa pamamagitan ng [[Special:Preferences|iyon
 	'requestaccount-urls' => 'Talaan ng mga websayt, kung mayroon (ihiwalay na may bagong mga guhit):',
 	'requestaccount-agree' => 'Dapat mong patunayan na tama ang tunay mong pangalan at pumapayag ka sa aming Mga Patakaran ng Paglilingkod.',
 	'requestaccount-inuse' => 'Ginagamit na ang pangalan ng tagagamit sa isang naghihintay na paghiling ng akawt.',
-	'requestaccount-tooshort' => 'Ang talambuhay mo ay dapat na may kahit na $1 mga salita ang haba.',
+	'requestaccount-tooshort' => 'Ang talambuhay mo ay dapat na hindi bababa sa $1 {{PLURAL:$1|salita|mga salita}} ang haba.',
 	'requestaccount-emaildup' => 'Isang naghihintay na kahilingan ng akawnt ang gumagamit ng katulad na adres ng e-liham.',
 	'requestaccount-exts' => 'Hindi pinapayagan ang uri ng nakalakip na talaksan',
 	'requestaccount-resub' => 'Dapat na muling piliin ang iyong talaan ng karanasan sa hanapbuhay para sa mga kadahilanang pangkaligtasan.
@@ -10690,7 +10690,8 @@ Iwanang walang laman ang hanay kung hindi mo na ninanais magsama ng isa.',
 	'requestaccount-tos' => 'Nabasa ko na at sumasang-ayong susundin ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Paglilingkod]] ng {{SITENAME}}.
 Sa katunayan, ang pangalang tinukoy ko sa ilalim ng "Totoong pangalan" ay ang talagang sarili kong totoong pangalan.',
 	'requestaccount-submit' => 'Hilingin ang akawnt',
-	'requestaccount-sent' => 'Matagumpay nang naipadala ang iyong paghiling ng akawnt at naghihintay na ngayon ng pagsusuri.',
+	'requestaccount-sent' => 'Matagumpay na naipadala ang paghiling mo ng akawnt at naghihintay na ngayon ng pagsusuri.
+Nagpadala na ng isang e-liham ng pagpapatotoo sa iyong adres ng e-liham.',
 	'request-account-econf' => 'Natiyak na ang iyong adres ng e-liham at itatala bilang ganyan sa loob ng paghiling mo ng akawnt.',
 	'requestaccount-email-subj' => 'Pagtitiyak ng {{SITENAME}} sa adres ng e-liham',
 	'requestaccount-email-body' => 'May isa, marahil ikaw na nagmula sa adres ng IP na $1, ang humiling ng isang kuwentang "$2" na may ganitong adres ng e-liham sa {{SITENAME}}.
@@ -10783,6 +10784,7 @@ Maaaring naisagawa na ito.',
 	'confirmaccount-spam' => 'Manlulusob (huwag ipadala ang e-liham)',
 	'confirmaccount-reason' => 'Puna (isasama sa e-liham):',
 	'confirmaccount-ip' => 'Adres ng IP:',
+	'confirmaccount-legend' => 'Tiyakin/tanggihan ang akawnt na ito',
 	'confirmaccount-submit' => 'Tiyakin',
 	'confirmaccount-needreason' => 'Dapat kang magbigay ng isang dahilan sa loob ng kahon ng kumentong nasa ibaba.',
 	'confirmaccount-canthold' => 'Ang kahilingang ito ay maaaring nakabinbin pa o nabura na.',
@@ -10848,6 +10850,9 @@ Maaaring may mga talaan ng kabatiran ng pakikipag-ugnayang nasa sayt na magagami
 	'usercredentials-member' => 'Mga karapatan:',
 	'usercredentials-badid' => 'Walang natagpuang mga katibaya ng katangian para sa tagagamit na ito.
 Suriin kung ibinaybay ng tama ang pangalan.',
+	'right-confirmaccount' => 'Tingnan ang [[Special:ConfirmAccounts|pila na may hinihiling na mga akawnt]]',
+	'right-requestips' => 'Tingnan ang mga adres ng IP ng humihiling habang isinasagawa ang hinihiling na mga akawnt',
+	'right-lookupcredentials' => 'Tingnan ang [[Special:UserCredentials|mga kredensyal ng tagagamit]]',
 );
 
 /** Turkish (Türkçe)
