@@ -24,8 +24,6 @@ class ConfirmAccountsPage extends SpecialPage
 			return;
 		}
 
-		# Load UI messages
-		wfLoadExtensionMessages( 'ConfirmAccount' );
 		$this->setHeaders();
 
 		$this->specialPageParameter = $par;
@@ -151,7 +149,6 @@ class ConfirmAccountsPage extends SpecialPage
 
 	protected function showQueues() {
 		global $wgOut, $wgAccountRequestTypes, $wgLang;
-		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 		$wgOut->addWikiText( wfMsg('confirmaccount-maintext') );
 
 		$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-types') . '</strong></p>' );
@@ -194,7 +191,6 @@ class ConfirmAccountsPage extends SpecialPage
 
 	protected function showForm( $msg='' ) {
 		global $wgOut, $wgUser, $wgLang, $wgAccountRequestTypes;
-		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 
 		$row = $this->getRequest();
@@ -400,8 +396,6 @@ class ConfirmAccountsPage extends SpecialPage
 
 	protected function doSubmit() {
 		global $wgOut, $wgUser;
-
-		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 
@@ -764,7 +758,6 @@ class ConfirmAccountsPage extends SpecialPage
 	 */
 	public static function parseLinks( $text ) {
 		global $wgParser, $wgUser;
-		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 		# Don't let this get flooded
 		$max = 10;
 		$count = 0;
@@ -797,7 +790,6 @@ class ConfirmAccountsPage extends SpecialPage
 
 	protected function showSuccess( $titleObj, $name = null, $errors = array() ) {
 		global $wgOut;
-		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		$wgOut->setPagetitle( wfMsgHtml('actioncomplete') );
@@ -819,7 +811,6 @@ class ConfirmAccountsPage extends SpecialPage
 
 	protected function showList() {
 		global $wgOut, $wgUser, $wgLang;
-		wfLoadExtensionMessages( 'ConfirmAccount' ); // load UI messages
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 

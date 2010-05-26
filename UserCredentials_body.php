@@ -5,10 +5,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 );
 }
 
-# FIXME: delay message loading!
-# Add messages
-wfLoadExtensionMessages( 'ConfirmAccount' );
-
 class UserCredentialsPage extends SpecialPage
 {
 	function __construct() {
