@@ -24,6 +24,8 @@ class RequestAccountPage extends SpecialPage {
 			$wgOut->readOnlyPage();
 			return;
 		}
+		# Load UI messages
+		wfLoadExtensionMessages( 'ConfirmAccount' );
 		
 		$this->setHeaders();
 
@@ -82,6 +84,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$this->mForgotAttachment = $forgotFile;
 
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		$wgOut->setPagetitle( wfMsgHtml( "requestaccount" ) );
 		# Output failure message if any
 		if ( $msg ) {
@@ -195,6 +198,11 @@ class RequestAccountPage extends SpecialPage {
 			global $wgExtensionMessagesFiles;
 
 			$captcha = new $wgCaptchaClass;
+			# Hook point to add captchas
+			wfLoadExtensionMessages( 'ConfirmEdit' );
+			if ( isset( $wgExtensionMessagesFiles[$wgCaptchaClass] ) ) {
+				wfLoadExtensionMessages( $wgCaptchaClass );
+			}
 			$form .= '<fieldset>';
 			$form .= wfMsgExt( 'captcha-createaccount', 'parse' );
 			$form .= $captcha->getForm();
@@ -214,6 +222,7 @@ class RequestAccountPage extends SpecialPage {
 
 	protected function doSubmit() {
 		global $wgOut, $wgUser, $wgAuth, $wgAccountRequestThrottle;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );
@@ -482,11 +491,13 @@ class RequestAccountPage extends SpecialPage {
 	 */
 	protected function throttleHit( $limit ) {
 		global $wgOut;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		$wgOut->addHTML( wfMsgExt( 'acct_request_throttle_hit', array( 'parsemag' ), $limit ) );
 	}
 
 	protected function confirmEmailToken( $code ) {
 		global $wgUser, $wgOut, $wgConfirmAccountContact;
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		# Confirm if this token is in the pending requests
 		$name = $this->requestFromEmailToken( $code );
 		if ( $name !== false ) {
@@ -573,6 +584,7 @@ class RequestAccountPage extends SpecialPage {
 	protected function sendConfirmationMail( $user, $token, $expiration ) {
 		global $wgContLang;
 		$url = $this->confirmationTokenUrl( $token );
+		wfLoadExtensionMessages( 'ConfirmAccount' ); // Load UI messages
 		return $user->sendMail( wfMsg( 'requestaccount-email-subj' ),
 			wfMsg( 'requestaccount-email-body',
 				wfGetIP(),
