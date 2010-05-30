@@ -1395,6 +1395,7 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-newrequests' => "Er mare-mañ ez eus '''$1''' [[Special:ConfirmAccounts|goulenn kont{{PLURAL:$1||}}]] o vont en-dro.",
 	'confirmaccounts' => 'Kadarnaat ar goulennoù kont',
 	'confirmedit-desc' => "Reiñ a ra ar galloud d'ar burevidi da wiriañ rekedoù ar c'hontoù implijer",
+	'confirmaccount-none-o' => "N'ez eus er roll, er mare-mañ, reked ebet evit kontoù.",
 	'confirmaccount-none-e' => "N'ez eus er roll, er mare-mañ, reked ebet evit kontoù n'int mat ken.",
 	'confirmaccount-real-q' => 'Anv',
 	'confirmaccount-email-q' => 'Postel',
@@ -6568,7 +6569,7 @@ $messages['mk'] = array(
 Ви испративме потврдна порака по е-пошта.',
 	'request-account-econf' => 'Вашата е-поштенска адреса е потврдена и ќе биде наведена како таква во вашето барање за сметка.',
 	'requestaccount-email-subj' => '{{SITENAME}}: потврдување на е-пошта',
-	'requestaccount-email-body' => 'Некој, веројатно вие од IP адресата $1, побарал сметка „$2“ со оваа е-поштенска адреса на {{SITENAME}}.
+	'requestaccount-email-body' => 'Некој, веројатно вие од IP-адресата $1, побарал сметка „$2“ со оваа е-поштенска адреса на {{SITENAME}}.
 
 За да потврдите дека оваа сметка навистина ви припаѓа вам на {{SITENAME}}, отворете ја врскава во прелистувачот:
 
@@ -6659,7 +6660,7 @@ $3
 	'confirmaccount-hold' => 'На чекање',
 	'confirmaccount-spam' => 'Спам (не го испраќајте писмото)',
 	'confirmaccount-reason' => 'Коментар (ќе биде вклучен во е-поштата):',
-	'confirmaccount-ip' => 'IP адреса:',
+	'confirmaccount-ip' => 'IP-адреса:',
 	'confirmaccount-legend' => 'Прифати/одбиј ја оваа корисничка сметка',
 	'confirmaccount-submit' => 'Потврди',
 	'confirmaccount-needreason' => 'Морате да наведете причина во полето за коментар подолу.',
