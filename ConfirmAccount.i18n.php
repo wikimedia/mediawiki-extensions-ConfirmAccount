@@ -449,6 +449,7 @@ $messages['an'] = array(
 	'requestaccount-level-1' => 'editor',
 	'confirmaccount-real' => 'Nombre:',
 	'confirmaccount-pos-1' => 'editor',
+	'confirmaccount-noreason' => '(garra)',
 	'confirmaccount-submit' => 'Confirmar',
 );
 
