@@ -378,6 +378,7 @@ $messages['af'] = array(
 	'confirmaccount-showopen' => 'oop versoeke',
 	'confirmaccount-showheld' => 'afgehandelde versoeke',
 	'confirmaccount-showexp' => 'vervalle versoeke',
+	'confirmaccount-review' => 'Kontroleer',
 	'confirmaccount-q-open' => 'oop versoeke',
 	'confirmaccount-q-held' => 'afgehandelde versoeke',
 	'confirmaccount-q-stale' => 'vervalle versoeke',
