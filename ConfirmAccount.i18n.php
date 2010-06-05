@@ -9312,7 +9312,7 @@ $messages['sr-ec'] = array(
 	'requestaccount-urls' => 'Списак вебсајтова, ако их има (одвојени новим линијама):',
 	'requestaccount-agree' => 'Морате да потврдите да сте добро унели своје право име и да се сложите са условима коришћења.',
 	'requestaccount-inuse' => 'Корисничко име је већ у употреби и чека на одобрење.',
-	'requestaccount-tooshort' => 'Ваша биографија мора да садржи најмање $1 речи.',
+	'requestaccount-tooshort' => 'Ваша биографија мора да садржи најмање $1 {{PLURAL:$1|реч|речи}}.',
 	'requestaccount-emaildup' => 'Други налог, који чека одобрење, већ користи ову имејл адресу.',
 	'requestaccount-sent' => 'Ваш захтев за налогом је успешно послат и чека на преглед.
 Електронска порука за потврду је послата на Вашу адресу Ваше електронске поште.',
@@ -9328,6 +9328,7 @@ $messages['sr-ec'] = array(
 	'confirmaccount-showrej' => 'одбачени захтеви',
 	'confirmaccount-showheld' => 'стопирани захтеви',
 	'confirmaccount-showexp' => 'застарели захтеви',
+	'confirmaccount-review' => 'Преглед',
 	'confirmaccount-all' => '(покажи све редове)',
 	'confirmaccount-type' => 'Ред:',
 	'confirmaccount-type-0' => 'проспективни аутори',
