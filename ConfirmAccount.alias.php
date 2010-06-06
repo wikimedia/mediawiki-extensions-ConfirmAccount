@@ -2,7 +2,8 @@
 /**
  * Aliases for extension ConfirmAccount
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  */
 
 $aliases = array();
