@@ -602,8 +602,11 @@ class RequestAccountPage extends SpecialPage {
 	 * @return string
 	 */
 	protected function confirmationTokenUrl( $token ) {
-		$title = Title::makeTitle( NS_SPECIAL, 'RequestAccount' );
-		return $title->getFullUrl( 'action=confirmemail&wpEmailToken=' . $token );
+		$title = SpecialPage::getTitleFor( 'RequestAccount' );
+		return $title->getFullUrl( array(
+			'action' => 'confirmemail',
+			'wpEmailToken' => $token
+		) );
 	}
 
 	/**

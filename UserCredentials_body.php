@@ -1,14 +1,5 @@
 <?php
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "ConfirmAccount extension\n";
-	exit( 1 );
-}
-
-# FIXME: delay message loading!
-# Add messages
-wfLoadExtensionMessages( 'ConfirmAccount' );
-
 class UserCredentialsPage extends SpecialPage
 {
 	function __construct() {
@@ -62,7 +53,7 @@ class UserCredentialsPage extends SpecialPage
 	function showCredentials() {
 		global $wgOut, $wgUser, $wgLang, $wgAccountRequestTypes;
 
-		$titleObj = Title::makeTitle( NS_SPECIAL, "UserCredentials" );
+		$titleObj = SpecialPage::getTitleFor( 'UserCredentials' );
 
 		$row = $this->getRequest();
 		if ( !$row ) {
