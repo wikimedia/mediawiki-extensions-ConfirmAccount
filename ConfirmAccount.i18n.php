@@ -9412,6 +9412,7 @@ $messages['sr-el'] = array(
 	'requestaccount-urls' => 'Spisak vebsajtova, ako ih ima (odvojeni novim linijama):',
 	'requestaccount-agree' => 'Morate da potvrdite da ste dobro uneli svoje pravo ime i da se složite sa uslovima korišćenja.',
 	'requestaccount-inuse' => 'Korisničko ime je već u upotrebi i čeka na odobrenje.',
+	'requestaccount-tooshort' => 'Vaša biografija mora da sadrži najmanje $1 {{PLURAL:$1|reč|reči}}.',
 	'requestaccount-emaildup' => 'Drugi nalog, koji čeka odobrenje, već koristi ovu imejl adresu.',
 	'requestaccount-sent' => 'Vaš zahtev za nalogom je uspešno poslat i čeka na pregled.
 Elektronska poruka za potvrdu je poslata na Vašu adresu Vaše elektronske pošte.',
@@ -9427,6 +9428,7 @@ Elektronska poruka za potvrdu je poslata na Vašu adresu Vaše elektronske pošt
 	'confirmaccount-showrej' => 'odbačeni zahtevi',
 	'confirmaccount-showheld' => 'stopirani zahtevi',
 	'confirmaccount-showexp' => 'zastareli zahtevi',
+	'confirmaccount-review' => 'Pregled',
 	'confirmaccount-all' => '(pokaži sve redove)',
 	'confirmaccount-type' => 'Red:',
 	'confirmaccount-type-0' => 'prospektivni autori',
