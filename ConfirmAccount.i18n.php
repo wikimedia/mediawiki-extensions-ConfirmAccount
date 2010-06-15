@@ -6532,7 +6532,7 @@ $messages['mk'] = array(
 
 Штом ќе ви биде одобрена сметката, ќе ви биде испратено известување по е-пошта и тогаш ќе можете да [[Special:UserLogin|се најавите]] и да ја користите.",
 	'requestaccount-page' => '{{ns:project}}:Услови на употреба',
-	'requestaccount-dup' => "'''Белешка: Веќе се најавени со регистрирана сметка.'''",
+	'requestaccount-dup' => "'''Напомена: Веќе се најавени со регистрирана сметка.'''",
 	'requestaccount-leg-user' => 'Корисничка сметка',
 	'requestaccount-leg-areas' => 'Главно се интересира за',
 	'requestaccount-leg-person' => 'Лични информации',
