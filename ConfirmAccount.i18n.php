@@ -9112,6 +9112,22 @@ $2
 	'right-lookupcredentials' => 'просмотр [[Special:UserCredentials|удостоверяющей информации об участниках]]',
 );
 
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'requestaccount-reqtype' => 'Позіція:',
+	'requestaccount-level-0' => 'автор',
+	'requestaccount-level-1' => 'едітор',
+	'confirmaccount-name' => 'Мено хоснователя',
+	'confirmaccount-real' => 'Мено:',
+	'confirmaccount-email' => 'Електронічна пошта:',
+	'confirmaccount-reqtype' => 'Позіція:',
+	'confirmaccount-pos-0' => 'автор',
+	'confirmaccount-pos-1' => 'едітор',
+	'confirmaccount-bio' => 'Біоґрафія:',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
