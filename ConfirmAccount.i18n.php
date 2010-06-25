@@ -1752,10 +1752,19 @@ $messages['cu'] = array(
 );
 
 /** Danish (Dansk)
+ * @author Aka-miki
  * @author Jon Harald Søby
  */
 $messages['da'] = array(
+	'requestaccount-leg-user' => 'Brugerkonto',
+	'requestaccount-leg-person' => 'Personlige oplysninger',
 	'requestaccount-real' => 'Virkeligt navn:',
+	'requestaccount-same' => '(Samme som rigtige navn)',
+	'requestaccount-email' => 'E-mail adresse',
+	'requestaccount-reqtype' => 'Placering',
+	'requestaccount-level-0' => 'Forfatter',
+	'requestaccount-level-1' => 'redigerer',
+	'requestaccount-bio' => 'Personlig biografi:',
 	'confirmaccount-real-q' => 'Navn',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-name' => 'Brugernavn',
