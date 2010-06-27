@@ -162,7 +162,7 @@ class RequestAccountPage extends SpecialPage {
 			$form .= "<td>" . Xml::input( 'wpRealName', 35, $this->mRealName, array( 'id' => 'wpRealName' ) ) . "</td></tr>\n";
 			$form .= '</table>';
 		}
-		$form .= "<p>" . wfMsgHtml( 'requestaccount-bio' ) . "\n";
+		$form .= "<p>" . wfMsgWikiHtml( 'requestaccount-bio' ) . "\n";
 		$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 			htmlspecialchars( $this->mBio ) . "</textarea></p>\n";
 		$form .= '</fieldset>';
