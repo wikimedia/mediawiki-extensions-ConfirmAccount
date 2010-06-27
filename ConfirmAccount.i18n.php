@@ -5170,6 +5170,7 @@ $messages['io'] = array(
 
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
+ * @author Ævar Arnfjörð Bjarmason
  */
 $messages['is'] = array(
 	'requestaccount' => 'Sækja um aðgang',
@@ -5178,7 +5179,7 @@ $messages['is'] = array(
 	'requestaccount-leg-person' => 'Persónulegar upplýsingar',
 	'requestaccount-leg-other' => 'Aðrar upplýsingar',
 	'requestaccount-real' => 'Raunverulegt nafn:',
-	'requestaccount-same' => '(eins og raunverulega nafnið)',
+	'requestaccount-same' => '(fyllt út hér fyrir neðan)',
 	'requestaccount-email' => 'Netfang:',
 	'requestaccount-reqtype' => 'Staða:',
 	'requestaccount-level-0' => 'höfundur',
@@ -5188,6 +5189,7 @@ $messages['is'] = array(
 	'requestaccount-notes' => 'Viðbótarskýring:',
 	'requestaccount-urls' => 'Listi yfir vefsíður, ef einhverjar (aðskildu með línum):',
 	'requestaccount-tooshort' => 'Sjálfsævisagan þín þarf að vera að minnsta kosti $1 orð á lengd.',
+	'confirmaccounts' => 'Staðfesta notandabeðnir',
 	'confirmaccount-real-q' => 'Nafn',
 	'confirmaccount-email-q' => 'Netfang',
 	'confirmaccount-bio-q' => 'Sjálfsævisaga',
@@ -9128,6 +9130,9 @@ $messages['rue'] = array(
 	'requestaccount-reqtype' => 'Позіція:',
 	'requestaccount-level-0' => 'автор',
 	'requestaccount-level-1' => 'едітор',
+	'confirmaccount-real-q' => 'Мено',
+	'confirmaccount-email-q' => 'Електронічна пошта',
+	'confirmaccount-bio-q' => 'Біоґрафія',
 	'confirmaccount-name' => 'Мено хоснователя',
 	'confirmaccount-real' => 'Мено:',
 	'confirmaccount-email' => 'Електронічна пошта:',
