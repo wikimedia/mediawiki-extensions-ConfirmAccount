@@ -68,8 +68,8 @@ $wgConfirmAccountSortkey = false;
 # and will be accessible to users with crediential lookup permissions
 $wgConfirmAccountSaveInfo = true;
 
-# Send an email to address when account requests confirm their email.
-# Set to false to skip this.
+# Send an email to this address when account requestors confirm their email.
+# Set to false to skip this
 $wgConfirmAccountContact = false;
 
 # If ConfirmEdit is installed and set to trigger for createaccount,
