@@ -72,7 +72,7 @@ $wgAccountRequestExtraInfo = true;
 # (a) is placed in the <user group> group (if not User or *)
 # (b) If $wgMakeUserPageFromBio, <autotext> is appended his/her user page
 $wgAccountRequestTypes = array(
-	0 => array( 'authors', 'user' )
+	0 => array( 'authors', 'user', null )
 );
 
 # If set, will add {{DEFAULTSORT:sortkey}} to userpages for auto-categories.
