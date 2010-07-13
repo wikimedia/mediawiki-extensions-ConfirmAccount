@@ -67,8 +67,10 @@ $wgAccountRequestExtraInfo = true;
 
 # Prospective account access levels.
 # An associative array of integer => (special page param,user group,autotext) pairs.
-# The account queues are at Special:ConfirmAccount/param.
-# The integer keys are used to enumerate the type.
+# The account queues are at Special:ConfirmAccount/param. The integer keys enumerate the type.
+# When a request of a certain type (param) is approved, the new user:
+# (a) is placed in the <user group> group (if not User or *)
+# (b) If $wgMakeUserPageFromBio, <autotext> is appended his/her user page
 $wgAccountRequestTypes = array(
 	0 => array( 'authors', 'user' )
 );
