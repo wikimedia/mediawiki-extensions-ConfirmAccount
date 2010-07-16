@@ -3083,6 +3083,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  * @author IAlex
  * @author Louperivois
  * @author Meithal
+ * @author Peter17
  * @author PieRRoMaN
  * @author Sherbrooke
  * @author Urhixidur
@@ -3258,7 +3259,7 @@ $2
 Ceci permet d’être sur la liste des contacts du site, si vous désirez en savoir plus sur les règles concernant les comptes.',
 	'usercredentials' => "Références de l'utilisateur",
 	'usercredentials-leg' => "Vérification confirmée des références d'un utilisateur.",
-	'usercredentials-user' => "Nom d'utilisateur :",
+	'usercredentials-user' => 'Nom d’utilisateur :',
 	'usercredentials-text' => 'Ci-dessous figurent les justificatifs validés pour le compte utilisateur sélectionné.',
 	'usercredentials-leg-user' => 'Compte utilisateur',
 	'usercredentials-leg-areas' => "Centres d'intérêts principaux",
@@ -3584,7 +3585,7 @@ $2
 Poden existir listas de contacto no sitio que poida usar se quere saber máis acerca da nosa política de contas de usuario.',
 	'usercredentials' => 'Credenciais do usuario',
 	'usercredentials-leg' => 'Verificar os credenciais confirmados dun usuario',
-	'usercredentials-user' => 'Nome do usuario:',
+	'usercredentials-user' => 'Nome de usuario:',
 	'usercredentials-text' => 'Embaixo están os credenciais validos das contas de usuario seleccionadas.',
 	'usercredentials-leg-user' => 'Conta de usuario',
 	'usercredentials-leg-areas' => 'Principais áreas de interese',
