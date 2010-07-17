@@ -11161,6 +11161,7 @@ $messages['ug-latn'] = array(
  * @author AS
  * @author Ahonc
  * @author Prima klasy4na
+ * @author Тест
  */
 $messages['uk'] = array(
 	'requestaccount' => 'Запит облікового запису',
@@ -11177,6 +11178,7 @@ $messages['uk'] = array(
 	'requestaccount-level-0' => 'автор',
 	'requestaccount-level-1' => 'редактор',
 	'confirmaccount-email-q' => 'Електронна пошта',
+	'confirmaccount-review' => 'Огляд',
 	'confirmaccount-name' => "Ім'я користувача",
 	'confirmaccount-real' => "Ім'я:",
 	'confirmaccount-email' => 'Електронна адреса:',
