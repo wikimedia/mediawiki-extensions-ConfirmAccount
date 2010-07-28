@@ -11395,7 +11395,9 @@ $2
 響呢個網站度提供咗聯絡人一覽，你可以用去知道更多用戶戶口政策嘅資料。',
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Chenxiaoqino
+ */
 $messages['zh-hans'] = array(
 	'requestaccount' => '请求账户',
 	'requestaccount-text' => "'''完成并递交以下的表格去请求一个用户账户'''。
@@ -11403,9 +11405,15 @@ $messages['zh-hans'] = array(
 	请确认您在请求一个账户之前，先读过[[{{MediaWiki:Requestaccount-page}}|服务细则]]。
 
 	一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:Userlogin]]中使用。",
+	'requestaccount-page' => '{{ns:project}}:服务条款',
 	'requestaccount-dup' => "'''注意: 您已经登入成一个已注册的账户。'''",
+	'requestaccount-leg-user' => '用户账户',
+	'requestaccount-leg-person' => '个人信息',
+	'requestaccount-leg-other' => '其他信息',
+	'requestaccount-leg-tos' => '服务条款',
 	'requestaccount-acc-text' => '当完成请求时，一封确认信息会发到您的电邮地址。
 	请在该封电邮中点击确认连结去反应它。同时，当您的账户被创建后，您账户的个密码将会电邮给您。',
+	'requestaccount-areas-text' => '在下面选择你最专业的或者最感兴趣的话题。',
 	'requestaccount-ext-text' => '以下的资料将会保密，而且只是会用在这次请求中。
 	您可能需要列示联络资料，像电话号码等去帮助证明您的确认。',
 	'requestaccount-bio-text' => '您传记将会设置成在您用户页中的预设内容。尝试包含任何的凭据。
@@ -11413,12 +11421,17 @@ $messages['zh-hans'] = array(
 	'requestaccount-real' => '真实名字:',
 	'requestaccount-same' => '（同真实名字）',
 	'requestaccount-email' => '电邮地址:',
+	'requestaccount-reqtype' => '位置',
+	'requestaccount-level-0' => '作者',
+	'requestaccount-level-1' => '编辑',
 	'requestaccount-bio' => '个人传记:',
 	'requestaccount-notes' => '附加注解:',
 	'requestaccount-urls' => '网站列表，如有者 （以新行分开）:',
 	'requestaccount-agree' => '您一定要证明到您的真实名字是正确的，而且您同意我们的服务细则。',
 	'requestaccount-inuse' => '该用户名已经用来请求账户。',
 	'requestaccount-tooshort' => '您的传记必须最少有$1个字的长度。',
+	'requestaccount-emaildup' => '另一个尚未确认的账户已经使用了此电子邮件地址。',
+	'requestaccount-exts' => '此类型的文件不允许上传',
 	'requestaccount-tos' => '我已经阅读以及同意持续遵守{{SITENAME}}的服务细则。',
 	'requestaccount-submit' => '请求账户',
 	'requestaccount-sent' => '您的账户请求已经成功发出，现正等候复审。',
@@ -11432,31 +11445,78 @@ $3
 
 如果该账户已经创建，只有您才会收到该电邮密码。如果这个账户*不是*属于您的话，不要点击这个连结。
 呢个确认码将会响$4过期。',
-	'acct_request_throttle_hit' => '抱歉，您已经请求了$1个户口。您不可以请求更多个账户。',
+	'requestaccount-email-subj-admin' => '{{SITENAME}}账户请求',
+	'requestaccount-email-body-admin' => ' "$1" 请求了一个账户并正在等待批准.
+电子邮件地址已确认. 要批准账户，请点击 "$2".',
+	'acct_request_throttle_hit' => '抱歉，您已经请求了$1个账户。您不可以请求更多个账户。',
 	'requestaccount-loginnotice' => "要取得个用户账户，您一定要'''[[Special:RequestAccount|请求一个]]'''。",
 	'confirmaccounts' => '确认户口请求',
+	'confirmedit-desc' => '允许下属机构确认账户请求',
+	'confirmaccount-maintext' => "'''本页面用于确认 ''{{SITENAME}}''的账户请求'''.
+
+每个帐户请求队列包括三个子队列。
+一个是开放的请求，一个是被其他管理员搁置的请求，一个是最近被拒绝的请求。
+
+当回复请求时，请仔细阅读。如有需要，确认其中包含的信息。
+你的行为将被私下记录。
+也希望你能审查任何在这发生的不是你本人的操作。",
 	'confirmaccount-list' => '以下是正在等候批准的用户请求列表。
 	已经批准的账户将会创建以及在这个列表中移除。已拒绝的用户将只会在这个表中移除。',
 	'confirmaccount-list2' => '以下是一个先前拒绝过的帐口请求，可能会在数日后删除。
 	它们仍旧可以批准创建一个账户，但是在您作之前请先问拒绝该账户的管理员。',
+	'confirmaccount-list3' => '下面是可能于几天后被自动删除的过期帐号请求。他们依然可以被批准。',
 	'confirmaccount-text' => "这个是在'''{{SITENAME}}'''中等候请求账户的页面。
 	请小心阅读，有需要的话，就要同时确认它下面的全部资料。
 	要留意的是您可以用另一个用户名字去创建一个账户。只有其他的名字有冲突时才需要去作。
 
 	如果你无确认或者拒绝这个请求，只留下这页面的话，它便会维持等候状态。",
+	'confirmaccount-none-o' => '在当前列表中没有正在等待批准的帐号请求。',
+	'confirmaccount-none-h' => '在当前列表中没有被挂起的帐号请求。',
+	'confirmaccount-none-r' => '在当前列表中没有刚刚被拒绝的帐号请求。',
+	'confirmaccount-none-e' => '在当前列表中没有过期的帐号请求。',
+	'confirmaccount-real-q' => '用户名',
+	'confirmaccount-email-q' => '电子邮箱',
+	'confirmaccount-bio-q' => '个人简介',
+	'confirmaccount-showopen' => '开放的请求',
+	'confirmaccount-showrej' => '被拒绝的请求',
+	'confirmaccount-showheld' => '被挂起的请求',
+	'confirmaccount-showexp' => '过期的请求',
 	'confirmaccount-review' => '批准/拒绝',
+	'confirmaccount-types' => '在下面选择一个账户确认队列',
+	'confirmaccount-all' => '（显示所有队列）',
+	'confirmaccount-type' => '队列：',
+	'confirmaccount-type-0' => '可能的作者',
+	'confirmaccount-type-1' => '可能的作者们',
+	'confirmaccount-q-open' => '开放的请求',
+	'confirmaccount-q-held' => '被挂起的请求',
+	'confirmaccount-q-rej' => '最近拒绝的请求',
+	'confirmaccount-q-stale' => '过期的请求',
 	'confirmaccount-badid' => '提供的ID是没有未决定的请求。它可能已经被处理。',
+	'confirmaccount-leg-user' => '用户账户',
+	'confirmaccount-leg-person' => '个人信息',
+	'confirmaccount-leg-other' => '其他信息',
 	'confirmaccount-name' => '用户名字',
 	'confirmaccount-real' => '名字',
 	'confirmaccount-email' => '电邮',
+	'confirmaccount-reqtype' => '位置',
+	'confirmaccount-pos-0' => '作者',
+	'confirmaccount-pos-1' => '编辑',
 	'confirmaccount-bio' => '传记',
+	'confirmaccount-notes' => '注释：',
 	'confirmaccount-urls' => '网站列表:',
+	'confirmaccount-none-p' => '(没有提供)',
 	'confirmaccount-confirm' => '用以下的按钮去批准或拒绝这个请求。',
 	'confirmaccount-econf' => '（已批准）',
 	'confirmaccount-reject' => '（于$2被[[User:$1|$1]]拒绝）',
+	'confirmaccount-noreason' => '（无）',
+	'confirmaccount-autorej' => '（此请求已因为无活动而自动被回绝）',
+	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]标记为"挂起")',
 	'confirmaccount-create' => '接受 （创建账户）',
 	'confirmaccount-deny' => '拒绝 （反列示）',
+	'confirmaccount-hold' => '挂起',
+	'confirmaccount-spam' => '垃圾（请不要发送电子邮件）',
 	'confirmaccount-reason' => '注解 （在电邮中使用）:',
+	'confirmaccount-ip' => ' IP地址：',
 	'confirmaccount-submit' => '确认',
 	'confirmaccount-acc' => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
 	'confirmaccount-rej' => '账户请求已经成功拒绝。',
@@ -11490,6 +11550,21 @@ $3
 $2
 
 在这个网站中度提供了联络人列表，您可以用去知道更多用户账户方针的资料。',
+	'confirmaccount-email-body5' => '在你请求账户 "$1" 能在 {{SITENAME}} 被批准之前，你必须先提供一些附加信息。
+
+$2
+
+如果你想知道更多有关账户政策的信息，你可以使用网站中的联系列表。',
+	'usercredentials' => '用户资格',
+	'usercredentials-leg' => '查找已验证的用户资格',
+	'usercredentials-user' => '用户名：',
+	'usercredentials-text' => '下面是已选中用户的有效资格。',
+	'usercredentials-leg-user' => '用户账户',
+	'usercredentials-leg-person' => '个人信息',
+	'usercredentials-leg-other' => '其他信息',
+	'usercredentials-email' => ' 电子邮件：',
+	'usercredentials-real' => '真实姓名：',
+	'usercredentials-bio' => '个人简介：',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
