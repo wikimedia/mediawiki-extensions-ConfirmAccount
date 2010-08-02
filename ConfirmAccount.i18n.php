@@ -11575,9 +11575,15 @@ $messages['zh-hant'] = array(
 	請確認您在請求一個帳戶之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。
 
 	一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:Userlogin]]中使用。",
+	'requestaccount-page' => '{{ns:project}}:服務條款',
 	'requestaccount-dup' => "'''注意: 您已經登入成一個已註冊的帳戶。'''",
+	'requestaccount-leg-user' => '用戶賬戶',
+	'requestaccount-leg-person' => '個人信息',
+	'requestaccount-leg-other' => '其他信息',
+	'requestaccount-leg-tos' => '服務條款',
 	'requestaccount-acc-text' => '當完成請求時，一封確認訊息會發到您的電郵地址。
 	請在該封電郵中點擊確認連結去回應它。同時，當您的帳戶被創建後，您帳戶的個密碼將會電郵給您。',
+	'requestaccount-areas-text' => '在下面選擇你最專業的或者最感興趣的話題。',
 	'requestaccount-ext-text' => '以下的資料將會保密，而且只是會用在這次請求中。
 	您可能需要列示聯絡資料，像電話號碼等去幫助證明您的確認。',
 	'requestaccount-bio-text' => '您傳記將會設定成在您用戶頁中的預設內容。嘗試包含任何的憑據。
@@ -11585,12 +11591,17 @@ $messages['zh-hant'] = array(
 	'requestaccount-real' => '真實名字:',
 	'requestaccount-same' => '（同真實名字）',
 	'requestaccount-email' => '電郵地址:',
+	'requestaccount-reqtype' => '位置',
+	'requestaccount-level-0' => '作者',
+	'requestaccount-level-1' => '編輯',
 	'requestaccount-bio' => '個人傳記:',
 	'requestaccount-notes' => '附加註解:',
 	'requestaccount-urls' => '網站列表，如有者 （以新行分開）:',
 	'requestaccount-agree' => '您一定要證明到您的真實名字是正確的，而且您同意我們的服務細則。',
 	'requestaccount-inuse' => '該用戶名已經用來請求帳戶。',
 	'requestaccount-tooshort' => '您的傳記必須最少有$1個字的長度。',
+	'requestaccount-emaildup' => '另一個尚未確認的賬戶已經使用了此電子郵件地址。',
+	'requestaccount-exts' => '此類型的文件不允許上傳',
 	'requestaccount-tos' => '我已經閱讀以及同意持續遵守{{SITENAME}}的服務細則。',
 	'requestaccount-submit' => '請求帳戶',
 	'requestaccount-sent' => '您的帳戶請求已經成功發出，現正等候複審。',
@@ -11604,31 +11615,78 @@ $3
 
 如果該帳戶已經創建，只有您才會收到該電郵密碼。如果這個帳戶*不是*屬於您的話，不要點擊這個連結。
 呢個確認碼將會響$4過期。',
+	'requestaccount-email-subj-admin' => '{{SITENAME}}賬戶請求',
+	'requestaccount-email-body-admin' => ' "$1" 請求了一個賬戶並正在等待批准.
+電子郵件地址已確認. 要批准賬戶，請點擊 "$2".',
 	'acct_request_throttle_hit' => '抱歉，您已經請求了$1個戶口。您不可以請求更多個帳戶。',
 	'requestaccount-loginnotice' => "要取得個用戶帳戶，您一定要'''[[Special:RequestAccount|請求一個]]'''。",
 	'confirmaccounts' => '確認戶口請求',
+	'confirmedit-desc' => '允許下屬機構確認賬戶請求',
+	'confirmaccount-maintext' => "'''本頁面用於確認 ''{{SITENAME}}''的賬戶請求'''.
+
+每個帳戶請求隊列包括三個子隊列。
+一個是開放的請求，一個是被其他管理員擱置的請求，一個是最近被拒絕的請求。
+
+當回復請求時，請仔細閱讀。如有需要，確認其中包含的信息。
+你的行為將被私下記錄。
+也希望你能審查任何在這發生的不是你本人的操作。",
 	'confirmaccount-list' => '以下是正在等候批准的用戶請求列表。
 	已經批准的帳戶將會創建以及在這個列表中移除。已拒絕的用戶將只會在這個表中移除。',
 	'confirmaccount-list2' => '以下是一個先前拒絕過的帳口請求，可能會在數日後刪除。
 	它們仍舊可以批准創建一個帳戶，但是在您作之前請先問拒絕該帳戶的管理員。',
+	'confirmaccount-list3' => '下面是可能於幾天後被自動刪除的過期帳號請求。他們依然可以被批准。',
 	'confirmaccount-text' => "這個是在'''{{SITENAME}}'''中等候請求帳戶的頁面。
 	請小心閱讀，有需要的話，就要同時確認它下面的全部資料。
 	要留意的是您可以用另一個用戶名字去創建一個帳戶。只有其他的名字有衝突時才需要去作。
 
 	如果你無確認或者拒絕這個請求，只留下這頁面的話，它便會維持等候狀態。",
+	'confirmaccount-none-o' => '在當前列表中沒有正在等待批准的帳號請求。',
+	'confirmaccount-none-h' => '在當前列表中沒有被掛起的帳號請求。',
+	'confirmaccount-none-r' => '在當前列表中沒有剛剛被拒絕的帳號請求。',
+	'confirmaccount-none-e' => '在當前列表中沒有過期的帳號請求。',
+	'confirmaccount-real-q' => '用戶名',
+	'confirmaccount-email-q' => '電子郵箱',
+	'confirmaccount-bio-q' => '個人簡介',
+	'confirmaccount-showopen' => '開放的請求',
+	'confirmaccount-showrej' => '被拒絕的請求',
+	'confirmaccount-showheld' => '被掛起的請求',
+	'confirmaccount-showexp' => '過期的請求',
 	'confirmaccount-review' => '批准/拒絕',
+	'confirmaccount-types' => '在下面選擇一個賬戶確認隊列',
+	'confirmaccount-all' => '（顯示所有隊列）',
+	'confirmaccount-type' => '隊列：',
+	'confirmaccount-type-0' => '可能的作者',
+	'confirmaccount-type-1' => '可能的作者們',
+	'confirmaccount-q-open' => '開放的請求',
+	'confirmaccount-q-held' => '被掛起的請求',
+	'confirmaccount-q-rej' => '最近拒絕的請求',
+	'confirmaccount-q-stale' => '過期的請求',
 	'confirmaccount-badid' => '提供的ID是沒有未決定的請求。它可能已經被處理。',
+	'confirmaccount-leg-user' => '用戶賬戶',
+	'confirmaccount-leg-person' => '個人信息',
+	'confirmaccount-leg-other' => '其他信息',
 	'confirmaccount-name' => '用戶名字',
 	'confirmaccount-real' => '名字',
 	'confirmaccount-email' => '電郵',
+	'confirmaccount-reqtype' => '位置',
+	'confirmaccount-pos-0' => '作者',
+	'confirmaccount-pos-1' => '編輯',
 	'confirmaccount-bio' => '傳記',
+	'confirmaccount-notes' => '注釋：',
 	'confirmaccount-urls' => '網站列表:',
+	'confirmaccount-none-p' => '(沒有提供)',
 	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。',
 	'confirmaccount-econf' => '（已批准）',
 	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]拒絕）',
+	'confirmaccount-noreason' => '（無）',
+	'confirmaccount-autorej' => '（此請求已因為無活動而自動被回絕）',
+	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]標記為"掛起")',
 	'confirmaccount-create' => '接受 （創建帳戶）',
 	'confirmaccount-deny' => '拒絕 （反列示）',
+	'confirmaccount-hold' => '掛起',
+	'confirmaccount-spam' => '垃圾（請不要發送電子郵件）',
 	'confirmaccount-reason' => '註解 （在電郵中使用）:',
+	'confirmaccount-ip' => ' IP地址：',
 	'confirmaccount-submit' => '確認',
 	'confirmaccount-acc' => '帳戶請求已經成功確認；已經創建一個新的用戶帳號[[User:$1]]。',
 	'confirmaccount-rej' => '帳戶請求已經成功拒絕。',
@@ -11662,5 +11720,20 @@ $3
 $2
 
 在這個網站中度提供了聯絡人列表，您可以用去知道更多用戶帳戶方針的資料。',
+	'confirmaccount-email-body5' => '在你請求賬戶 "$1" 能在 {{SITENAME}} 被批准之前，你必須先提供一些附加信息。
+
+$2
+
+如果你想知道更多有關賬戶政策的信息，你可以使用網站中的聯繫列表。',
+	'usercredentials' => '用戶資格',
+	'usercredentials-leg' => '查找已驗證的用戶資格',
+	'usercredentials-user' => '用戶名：',
+	'usercredentials-text' => '下面是已選中用戶的有效資格。',
+	'usercredentials-leg-user' => '用戶賬戶',
+	'usercredentials-leg-person' => '個人信息',
+	'usercredentials-leg-other' => '其他信息',
+	'usercredentials-email' => ' 電子郵件：',
+	'usercredentials-real' => '真實姓名：',
+	'usercredentials-bio' => '個人簡介：',
 );
 
