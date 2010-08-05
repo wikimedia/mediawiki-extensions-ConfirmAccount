@@ -6102,6 +6102,7 @@ Wann de Vun dä Sigg hee fott jeihß, oohne se afzelehne udder beshtähtejje, bl
 	'confirmaccount-spam' => 'SPAM (don kei <i lang="en">e-mail</i> eruß schecke)',
 	'confirmaccount-reason' => 'Kommentaa för en de <i lang="en">e-mail</i> met eren ze donn, die dä Aanfroorer kritt:',
 	'confirmaccount-ip' => 'IP-Address:',
+	'confirmaccount-legend' => 'Dä Zohjang beshtääteje udder afflehne',
 	'confirmaccount-submit' => 'Beshtähtejje',
 	'confirmaccount-needreason' => 'Do moß ene Jrond en däm Feld unge endraare.',
 	'confirmaccount-canthold' => 'Di Aanfrooch es entweder zerökjeshtallt udder fottjeschmeße.',
