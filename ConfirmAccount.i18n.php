@@ -1639,6 +1639,11 @@ $messages['ca'] = array(
 	'usercredentials-bio' => 'Biografia:',
 );
 
+/** Sorani (کوردی) */
+$messages['ckb'] = array(
+	'confirmaccount-submit' => 'پشتدار بکەرەوە',
+);
+
 /** Czech (Česky)
  * @author Li-sung
  * @author Matěj Grabovský
