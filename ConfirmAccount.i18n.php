@@ -3331,7 +3331,8 @@ Se vos souhètâd pas més encllure ceti, lèssiéd lo champ vouedo.',
 	'requestaccount-tos' => 'J’é liesu et pués j’accèpto les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] de {{SITENAME}}.
 Lo nom que j’é buchiê dens lo champ « Veré nom » est franc mon prôpro nom.',
 	'requestaccount-submit' => 'Demanda de compto utilisator',
-	'requestaccount-sent' => 'Voutra demanda de compto utilisator at étâ mandâ avouéc reusséta et pués at étâ betâ dens la lista d’atenta d’aprobacion.',
+	'requestaccount-sent' => 'Voutra demanda de compto at étâ mandâ avouéc reusséta et pués at étâ betâ dens la lista d’atenta d’aprobacion.
+Un mèssâjo de confirmacion at étâ mandâ a voutra adrèce èlèctronica.',
 	'request-account-econf' => 'Voutra adrèce èlèctronica at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto utilisator.',
 	'requestaccount-email-subj' => 'Confirmacion de l’adrèce èlèctronica por {{SITENAME}}',
 	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » avouéc ceta adrèce èlèctronica sur lo seto {{SITENAME}}.
