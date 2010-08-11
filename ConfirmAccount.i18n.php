@@ -4379,7 +4379,8 @@ Móžeš swoje wužiwarske mjeno pod [[Special:Preferences|Nastajenja]] změnić
 	'requestaccount-emaildup' => 'Druhe předležace kontowe požadanje samsnu e-mejlowu adresu wužiwa.',
 	'requestaccount-exts' => 'Datajowy typ přiwěška je njedowoleny.',
 	'requestaccount-resub' => 'Twoja žiwjenjoběhowa dataja dyrbi so z přičinow wěstoty znowa wubrać. Wostaj polo prózdne, jeli hižo nochceš tajku zapřijimać.',
-	'requestaccount-tos' => 'Sym wužiwarske wuměnjenja strony {{SITENAME}} přečitał a budu do nich dźeržeć.',
+	'requestaccount-tos' => 'Sym [[{{MediaWiki:Requestaccount-page}}|wužiwarske wuměnjenja]] strony {{SITENAME}} přečitał a budu je dodźeržować.
+Mjeno, kotrež sym pod "Woprawdźite mjeno" podał je woprawdźe moje swójske woprawdźite mjeno.',
 	'requestaccount-submit' => 'Wužiwarske konto sej žadać',
 	'requestaccount-sent' => 'Twoje kontowe požadanje bu wuspěšnje wotpósłane a dyrbi so nětko přepruwować. Wobrućenska e-mejl bu na twoju e-mejlowu adresu pósłana.',
 	'request-account-econf' => 'Twoja e-mejlowa adresa bu wobkrućena a budźe so w twojim kontowym požadanju nalistować.',
