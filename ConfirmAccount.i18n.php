@@ -3366,7 +3366,7 @@ Los comptos accèptâs seront fêts et pués enlevâs de ceta lista. Los comptos
 	'confirmaccount-showrej' => 'Demandes refusâs',
 	'confirmaccount-showheld' => 'Demandes resèrvâs',
 	'confirmaccount-showexp' => 'Demandes èxpirâs',
-	'confirmaccount-review' => 'Aprobacion/Refus',
+	'confirmaccount-review' => 'Revêre',
 	'confirmaccount-name' => 'Nom d’utilisator',
 	'confirmaccount-real' => 'Nom :',
 	'confirmaccount-email' => 'Mèl. :',
@@ -7283,7 +7283,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-name' => 'Gebruikersnaam',
 	'confirmaccount-real' => 'Naam:',
 	'confirmaccount-email' => 'E-mail:',
-	'confirmaccount-reqtype' => 'Positie:',
+	'confirmaccount-reqtype' => 'Functie:',
 	'confirmaccount-pos-0' => 'auteur',
 	'confirmaccount-pos-1' => 'redacteur',
 	'confirmaccount-bio' => 'Biografie:',
@@ -11155,7 +11155,7 @@ $messages['ug-arab'] = array(
 	'usercredentials-email' => 'ئېلخەت:',
 );
 
-/** Uighur (Latin) (Uyghurche‎ / ئۇيغۇرچە (Latin))
+/** Uighur (Latin) (ئۇيغۇرچە / Uyghurche‎ (Latin))
  * @author Jose77
  */
 $messages['ug-latn'] = array(
