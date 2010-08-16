@@ -241,6 +241,7 @@ Check that the name is spelled correctly.',
  * @author Lejonel
  * @author Purodha
  * @author Siebrand
+ * @author The Evil IP address
  */
 $messages['qqq'] = array(
 	'requestaccount' => '{{Identical|Request account}}',
@@ -255,6 +256,7 @@ $messages['qqq'] = array(
 	'requestaccount-level-1' => '{{Identical|Editor}}',
 	'requestaccount-notes' => '{{Identical|Additional notes}}',
 	'requestaccount-submit' => '{{Identical|Request account}}',
+	'requestaccount-email-subj' => '{{Identical|SITENAME e-mail address confirmation}}',
 	'requestaccount-email-body' => 'This text is sent in an e-mail.
 * $1 is an IP address
 * $2 is a requested user name (no GENDER support)
@@ -1793,6 +1795,7 @@ $messages['da'] = array(
  * @author Raimond Spekking
  * @author Revolus
  * @author Rrosenfeld
+ * @author The Evil IP address
  * @author Umherirrender
  */
 $messages['de'] = array(
@@ -1808,7 +1811,7 @@ Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kan
 	'requestaccount-leg-areas' => 'Hauptinteressensgebiete',
 	'requestaccount-leg-person' => 'Persönliche Informationen',
 	'requestaccount-leg-other' => 'Weitere Informationen',
-	'requestaccount-leg-tos' => 'Benutzungsbedingungen',
+	'requestaccount-leg-tos' => 'Nutzungsbedingungen',
 	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.
 Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst.
 Sobald dein Konto angelegt wurde, wird dir dein Passwort per E-Mail zugeschickt.',
@@ -1818,8 +1821,8 @@ Du kannst Kontakt-Angaben wie eine Telefonnummer machen, um die Bearbeitung dein
 	'requestaccount-bio-text' => 'Deine Biographie wird als initialer Inhalt deiner Benutzerseite gespeichert.
 Versuche alle nötigen Empfehlungen zu erwähnen, aber stelle sicher, dass du die Informationen auch wirklich veröffentlichen möchtest.
 Du kannst deinen Namen in [[Special:Preferences|deinen Einstellungen]] ändern.',
-	'requestaccount-real' => 'Realname:',
-	'requestaccount-same' => '(wie der Realname)',
+	'requestaccount-real' => 'Bürgerlicher Name:',
+	'requestaccount-same' => '(wie mein bürgerlicher Name)',
 	'requestaccount-email' => 'E-Mail-Adresse:',
 	'requestaccount-reqtype' => 'Position:',
 	'requestaccount-level-0' => 'Autor',
@@ -1828,20 +1831,20 @@ Du kannst deinen Namen in [[Special:Preferences|deinen Einstellungen]] ändern.'
 	'requestaccount-attach' => 'Lebenslauf (optional):',
 	'requestaccount-notes' => 'Zusätzliche Angaben:',
 	'requestaccount-urls' => 'Liste von Webseiten (durch Zeilenumbrüche getrennt):',
-	'requestaccount-agree' => 'Du musst bestätigen, dass Dein Realname korrekt ist und du die Benutzerbedingungen akzeptierst.',
+	'requestaccount-agree' => 'Du musst bestätigen, dass dein bürgerlicher Name korrekt ist und du die Nutzungsbedingungen akzeptierst.',
 	'requestaccount-inuse' => 'Der Benutzername ist bereits in einem anderen Benutzerantrag in Verwendung.',
 	'requestaccount-tooshort' => 'Deine Biographie muss mindestens {{PLURAL:$1|1 Wort|$1 Wörter}} lang sein.',
 	'requestaccount-emaildup' => 'Ein weiterer noch nicht erledigter Antrag benutzt die gleiche E-Mail-Adresse.',
 	'requestaccount-exts' => 'Der Dateityp des Anhangs ist nicht erlaubt.',
 	'requestaccount-resub' => 'Die Datei mit deinem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
 Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
-	'requestaccount-tos' => 'Ich habe die [[{{MediaWiki:Requestaccount-page}}|Benutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
+	'requestaccount-tos' => 'Ich habe die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
 Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
 	'requestaccount-submit' => 'Benutzerkonto beantragen',
 	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.
 Eine Bestätigungs-E-Mail wurde an deine E-Mail-Adresse gesendet.',
 	'request-account-econf' => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in deinem Antrag auf ein Benutzerkonto geführt.',
-	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adressen Prüfung',
+	'requestaccount-email-subj' => '[{{SITENAME}}] Bestätigung der E-Mail-Adresse',
 	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise du, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit deiner E-Mail-Adresse beantragt.
 
 Um zu bestätigen, dass wirklich du dieses Konto bei {{SITENAME}} beantragt hast, öffne bitte folgenden Link in deinem Browser:
@@ -1853,7 +1856,7 @@ Wenn das Benutzerkonto erstellt wurde, bekommst du eine weitere E-Mail mit dem P
 Wenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!
 
 Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
-	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutzerkontenantrag',
+	'requestaccount-email-subj-admin' => '[{{SITENAME}}] Antrag auf Benutzerkonto',
 	'requestaccount-email-body-admin' => '„$1“ hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$2“.',
 	'acct_request_throttle_hit' => 'Du hast bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, du kannst momentan keine weiteren beantragen.',
@@ -1938,10 +1941,10 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-summary' => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
 	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
 Wir hoffen, dass du viele gute Informationen beisteuerst.
-Möglicherweise möchtest Du zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen.
-Nochmal: Willkommen und hab' Spaß!",
+Möglicherweise möchtest du zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen.
+Nochmal: Willkommen und viel Spaß!",
 	'confirmaccount-wsum' => 'Willkommen!',
-	'confirmaccount-email-subj' => '{{SITENAME}} Antrag auf Benutzerkonto',
+	'confirmaccount-email-subj' => '[{{SITENAME}}] Antrag auf Benutzerkonto',
 	'confirmaccount-email-body' => 'Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
 
 Benutzername: $1
@@ -1990,7 +1993,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 	'usercredentials-leg-person' => 'Persönliche Informationen',
 	'usercredentials-leg-other' => 'Weitere Informationen',
 	'usercredentials-email' => 'E-Mail:',
-	'usercredentials-real' => 'Echter Name:',
+	'usercredentials-real' => 'Bürgerlicher Name:',
 	'usercredentials-bio' => 'Biographie:',
 	'usercredentials-attach' => 'Lebenslauf:',
 	'usercredentials-notes' => 'Zusätzliche Bemerkungen:',
@@ -11405,6 +11408,7 @@ $2
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenxiaoqino
+ * @author Wilsonmess
  */
 $messages['zh-hans'] = array(
 	'requestaccount' => '请求账户',
@@ -11416,6 +11420,7 @@ $messages['zh-hans'] = array(
 	'requestaccount-page' => '{{ns:project}}:服务条款',
 	'requestaccount-dup' => "'''注意: 您已经登入成一个已注册的账户。'''",
 	'requestaccount-leg-user' => '用户账户',
+	'requestaccount-leg-areas' => '主要的兴趣范围',
 	'requestaccount-leg-person' => '个人信息',
 	'requestaccount-leg-other' => '其他信息',
 	'requestaccount-leg-tos' => '服务条款',
@@ -11433,16 +11438,20 @@ $messages['zh-hans'] = array(
 	'requestaccount-level-0' => '作者',
 	'requestaccount-level-1' => '编辑',
 	'requestaccount-bio' => '个人传记:',
+	'requestaccount-attach' => '简历或履历（可选）：',
 	'requestaccount-notes' => '附加注解:',
 	'requestaccount-urls' => '网站列表，如有者 （以新行分开）:',
 	'requestaccount-agree' => '您一定要证明到您的真实名字是正确的，而且您同意我们的服务细则。',
 	'requestaccount-inuse' => '该用户名已经用来请求账户。',
-	'requestaccount-tooshort' => '您的传记必须最少有$1个字的长度。',
+	'requestaccount-tooshort' => '您的传记必须最少有 $1 个字的长度。',
 	'requestaccount-emaildup' => '另一个尚未确认的账户已经使用了此电子邮件地址。',
 	'requestaccount-exts' => '此类型的文件不允许上传',
+	'requestaccount-resub' => '出于安全原因，您的简历或履历必须被重新选择。
+若您不想再加入一个，请将此栏留空。',
 	'requestaccount-tos' => '我已经阅读以及同意持续遵守{{SITENAME}}的服务细则。',
 	'requestaccount-submit' => '请求账户',
-	'requestaccount-sent' => '您的账户请求已经成功发出，现正等候复审。',
+	'requestaccount-sent' => '您的账户请求已经成功发出，现正等候复审。
+一封验证邮件已经发往您的邮箱，请前去查收。',
 	'request-account-econf' => '您的电邮地址已经确认，将会在您的账户口请求中列示。',
 	'requestaccount-email-subj' => '{{SITENAME}}电邮地址确认',
 	'requestaccount-email-body' => '有人，可能是您，由IP地址$1，在{{SITENAME}}中用这个电邮地址请求一个名叫"$2"的账户。
@@ -11456,7 +11465,8 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}}账户请求',
 	'requestaccount-email-body-admin' => ' "$1" 请求了一个账户并正在等待批准.
 电子邮件地址已确认. 要批准账户，请点击 "$2".',
-	'acct_request_throttle_hit' => '抱歉，您已经请求了$1个账户。您不可以请求更多个账户。',
+	'acct_request_throttle_hit' => '抱歉，您已经请求了 $1 个账户。
+您不可以请求更多个账户。',
 	'requestaccount-loginnotice' => "要取得个用户账户，您一定要'''[[Special:RequestAccount|请求一个]]'''。",
 	'confirmaccounts' => '确认户口请求',
 	'confirmedit-desc' => '允许下属机构确认账户请求',
@@ -11501,6 +11511,7 @@ $3
 	'confirmaccount-q-stale' => '过期的请求',
 	'confirmaccount-badid' => '提供的ID是没有未决定的请求。它可能已经被处理。',
 	'confirmaccount-leg-user' => '用户账户',
+	'confirmaccount-leg-areas' => '主要的兴趣范围',
 	'confirmaccount-leg-person' => '个人信息',
 	'confirmaccount-leg-other' => '其他信息',
 	'confirmaccount-name' => '用户名字',
@@ -11510,6 +11521,7 @@ $3
 	'confirmaccount-pos-0' => '作者',
 	'confirmaccount-pos-1' => '编辑',
 	'confirmaccount-bio' => '传记',
+	'confirmaccount-attach' => '简历或履历：',
 	'confirmaccount-notes' => '注释：',
 	'confirmaccount-urls' => '网站列表:',
 	'confirmaccount-none-p' => '(没有提供)',
@@ -11526,6 +11538,8 @@ $3
 	'confirmaccount-reason' => '注解 （在电邮中使用）:',
 	'confirmaccount-ip' => ' IP地址：',
 	'confirmaccount-submit' => '确认',
+	'confirmaccount-needreason' => '您必须在下方的评论栏阐述您的理由。',
+	'confirmaccount-canthold' => '该请求已被挂起，或已被删除。',
 	'confirmaccount-acc' => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
 	'confirmaccount-rej' => '账户请求已经成功拒绝。',
 	'confirmaccount-summary' => '正在创建一个新用户拥有传记的用户页面。',
@@ -11568,11 +11582,17 @@ $2
 	'usercredentials-user' => '用户名：',
 	'usercredentials-text' => '下面是已选中用户的有效资格。',
 	'usercredentials-leg-user' => '用户账户',
+	'usercredentials-leg-areas' => '主要的兴趣范围',
 	'usercredentials-leg-person' => '个人信息',
 	'usercredentials-leg-other' => '其他信息',
 	'usercredentials-email' => ' 电子邮件：',
 	'usercredentials-real' => '真实姓名：',
 	'usercredentials-bio' => '个人简介：',
+	'usercredentials-attach' => '简历或履历：',
+	'usercredentials-notes' => '附加注解:',
+	'usercredentials-urls' => '网站列表:',
+	'usercredentials-ip' => '原始IP地址：',
+	'usercredentials-member' => '权限：',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
