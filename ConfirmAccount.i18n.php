@@ -3328,7 +3328,7 @@ Voutron nom pôt étre changiê en utilisent voutres [[Special:Preferences|prèf
 	'requestaccount-inuse' => 'Lo nom d’utilisator est ja utilisâ dens una demanda de compto utilisator qu’est aprés étre aprovâ.',
 	'requestaccount-tooshort' => 'Voutra biografia dêt avêr u muens $1 mot{{PLURAL:$1||s}}.',
 	'requestaccount-emaildup' => 'Una ôtra demanda qu’est aprés étre confirmâ utilise la méma adrèce èlèctronica.',
-	'requestaccount-exts' => 'Lo tipo du fichiér juent est pas pèrmês.',
+	'requestaccount-exts' => 'Lo tipo du fichiér apondu est pas pèrmês.',
 	'requestaccount-resub' => 'Volyéd tornar chouèsir voutron fichiér de CV por des rêsons de sècuritât.
 Se vos souhètâd pas més encllure ceti, lèssiéd lo champ vouedo.',
 	'requestaccount-tos' => 'J’é liesu et pués j’accèpto les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] de {{SITENAME}}.
