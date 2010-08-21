@@ -239,6 +239,7 @@ Check that the name is spelled correctly.',
  * @author EugeneZelenko
  * @author Jon Harald Søby
  * @author Lejonel
+ * @author McDutchie
  * @author Purodha
  * @author Siebrand
  * @author The Evil IP address
@@ -249,12 +250,14 @@ $messages['qqq'] = array(
 	'requestaccount-leg-areas' => '{{Identical|Main areas of interest}}',
 	'requestaccount-leg-person' => '{{Identical|Personal information}}',
 	'requestaccount-leg-other' => '{{Identical|Other information}}',
-	'requestaccount-real' => '{{Identical|Real name}}',
+	'requestaccount-real' => 'When changing this message, please make sure to change {{msg-mw|requestaccount-tos|notext=yes}} too, which directly references to this message.
+{{Identical|Real name}}',
 	'requestaccount-email' => '{{Identical|E-mail address}}',
 	'requestaccount-reqtype' => '{{Identical|Position}}',
 	'requestaccount-level-0' => '{{Identical|Author}}',
 	'requestaccount-level-1' => '{{Identical|Editor}}',
 	'requestaccount-notes' => '{{Identical|Additional notes}}',
+	'requestaccount-tos' => '"Real name" should be exactly as {{msg-mw|requestaccount-real}}, minus the colon.',
 	'requestaccount-submit' => '{{Identical|Request account}}',
 	'requestaccount-email-subj' => '{{Identical|SITENAME e-mail address confirmation}}',
 	'requestaccount-email-body' => 'This text is sent in an e-mail.
@@ -268,7 +271,7 @@ $messages['qqq'] = array(
 	'requestaccount-email-body-admin' => 'This message is the email body text send to a site admin whenever someone has requested a new account.
 * $1: is a username
 * $2 is a URL',
-	'confirmedit-desc' => 'Short description of this extension, shown on [[Special:Version]]. Do not translate or change links.',
+	'confirmedit-desc' => '{{desc}}',
 	'confirmaccount-real-q' => '{{Identical|Name}}',
 	'confirmaccount-email-q' => '{{Identical|E-mail}}',
 	'confirmaccount-bio-q' => '{{Identical|Biography}}',
@@ -1839,7 +1842,7 @@ Du kannst deinen Namen in [[Special:Preferences|deinen Einstellungen]] ändern.'
 	'requestaccount-resub' => 'Die Datei mit deinem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
 Lasse das Feld leer, wenn du keinen Lebenslauf mehr anfügen möchtest.',
 	'requestaccount-tos' => 'Ich habe die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.
-Ich bestätige, dass der Name, den ich unter „Realname“ angegeben habe, mein wirklicher Name ist.',
+Ich bestätige, dass der Name, den ich unter „Bürgerlicher Name“ angegeben habe, mein wirklicher Name ist.',
 	'requestaccount-submit' => 'Benutzerkonto beantragen',
 	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.
 Eine Bestätigungs-E-Mail wurde an deine E-Mail-Adresse gesendet.',
@@ -3090,6 +3093,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
  * @author Grondin
  * @author IAlex
  * @author Louperivois
+ * @author McDutchie
  * @author Meithal
  * @author Peter17
  * @author PieRRoMaN
