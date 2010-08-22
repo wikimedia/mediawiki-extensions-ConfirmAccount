@@ -5787,6 +5787,7 @@ Panjenengan ora bisa nyuwun rékening anyar manèh.',
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Sovichet
  * @author Thearith
  * @author គីមស៊្រុន
  * @author វ័ណថារិទ្ធ
@@ -5827,6 +5828,8 @@ $messages['km'] = array(
 	'confirmaccount-review' => 'មើលឡើងវិញ',
 	'confirmaccount-all' => '(បង្ហាញ គ្រប់ ជួររង់ចាំ)',
 	'confirmaccount-type' => 'ជួររង់ចាំ ត្រូវបានជ្រើសយក ៖',
+	'confirmaccount-q-open' => 'បើក​សំណើ',
+	'confirmaccount-q-stale' => 'សំណើ​ដែល​ផុត​កំណត់',
 	'confirmaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
 	'confirmaccount-leg-person' => 'ព័ត៌មានផ្ទាល់ខ្លួន',
 	'confirmaccount-leg-other' => 'ព័ត៌មាន​ដទៃ',
