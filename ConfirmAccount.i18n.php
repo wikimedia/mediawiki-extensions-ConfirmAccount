@@ -3136,7 +3136,8 @@ Une fois que le compte est accepté, vous recevrez un courriel de notification e
 	'requestaccount-emaildup' => 'Une autre demande en cours utilise la même adresse électronique.',
 	'requestaccount-exts' => 'Le type du fichier joint n’est pas permis.',
 	'requestaccount-resub' => 'Veuillez sélectionner à nouveau votre curriculum vitæ pour des raisons de sécurité. Si vous ne souhaitez plus inclure celui-ci, laissez ce champ vierge.',
-	'requestaccount-tos' => 'J’ai lu et j’accepte les [[{{MediaWiki:Requestaccount-page}}|conditions d’utilisation]] de {{SITENAME}}.',
+	'requestaccount-tos' => "J’ai lu et j’accepte les [[{{MediaWiki:Requestaccount-page}}|conditions d’utilisation]] de {{SITENAME}}.
+Le nom que j'ai indiqué à la rubrique « Nom réel » est bien mon nom réel.",
 	'requestaccount-submit' => 'Demande de compte utilisateur',
 	'requestaccount-sent' => 'Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.
 Un courriel de confirmation a été envoyé à votre adresse de courriel.',
