@@ -17,302 +17,285 @@ $aliases['en'] = array(
 	'UserCredentials' => array( 'UserCredentials' ),
 );
 
-/** Arabic (العربية) */
 $aliases['ar'] = array(
-	'RequestAccount' => array( 'طلب_حساب' ),
-	'ConfirmAccounts' => array( 'تأكيد_الحساب' ),
-	'UserCredentials' => array( 'شهادات_المستخدم' ),
+	'RequestAccount'    => array( 'طلب_حساب' ),
+	'ConfirmAccounts'   => array( 'تأكيد_الحساب' ),
+	'UserCredentials'   => array( 'شهادات_المستخدم' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
 $aliases['arz'] = array(
-	'RequestAccount' => array( 'طلب_حساب' ),
-	'ConfirmAccounts' => array( 'تأكيد_الحساب' ),
-	'UserCredentials' => array( 'شهادات_اليوزر' ),
+	'RequestAccount'    => array( 'طلب_حساب' ),
+	'ConfirmAccounts'   => array( 'تأكيد_الحساب' ),
+	'UserCredentials'   => array( 'شهادات_اليوزر' ),
 );
 
-/** Bosnian (Bosanski) */
+$aliases['br'] = array(
+	'RequestAccount'    => array( 'GoulennKont' ),
+	'ConfirmAccounts'   => array( 'KadarnaatKont' ),
+);
+
 $aliases['bs'] = array(
-	'RequestAccount' => array( 'ZahtjevajRacun' ),
-	'ConfirmAccounts' => array( 'PotvrdiRacun' ),
-	'UserCredentials' => array( 'KorisnickePotvrde' ),
+	'RequestAccount'    => array( 'ZahtjevajRacun' ),
+	'ConfirmAccounts'   => array( 'PotvrdiRacun' ),
+	'UserCredentials'   => array( 'KorisnickePotvrde' ),
 );
 
-/** German (Deutsch) */
 $aliases['de'] = array(
-	'RequestAccount' => array( 'Benutzerkonto beantragen' ),
-	'ConfirmAccounts' => array( 'Benutzerkonto bestätigen' ),
-	'UserCredentials' => array( 'Benutzerangaben' ),
+	'RequestAccount'    => array( 'Benutzerkonto_beantragen' ),
+	'ConfirmAccounts'   => array( 'Benutzerkonto_bestätigen' ),
+	'UserCredentials'   => array( 'Benutzerangaben' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
 $aliases['dsb'] = array(
-	'RequestAccount' => array( 'Póžedanje na konto' ),
-	'ConfirmAccounts' => array( 'Konto wobkšuśiś' ),
-	'UserCredentials' => array( 'Wužywarske pódaśa' ),
+	'RequestAccount'    => array( 'Póžedanje_na_konto' ),
+	'ConfirmAccounts'   => array( 'Konto_wobkšuśiś' ),
+	'UserCredentials'   => array( 'Wužywarske_pódaśa' ),
 );
 
-/** Greek (Ελληνικά) */
 $aliases['el'] = array(
-	'RequestAccount' => array( 'ΑίτησηΛογαριασμού' ),
-	'ConfirmAccounts' => array( 'ΕπιβεβαίωσηΛογαριασμού' ),
-	'UserCredentials' => array( 'ΣυστάσειςΧρήστη' ),
+	'RequestAccount'    => array( 'ΑίτησηΛογαριασμού' ),
+	'ConfirmAccounts'   => array( 'ΕπιβεβαίωσηΛογαριασμού' ),
+	'UserCredentials'   => array( 'ΣυστάσειςΧρήστη' ),
 );
 
-/** Esperanto (Esperanto) */
 $aliases['eo'] = array(
-	'RequestAccount' => array( 'Peti konton' ),
-	'ConfirmAccounts' => array( 'Konfirmi konton' ),
+	'RequestAccount'    => array( 'Peti_konton' ),
+	'ConfirmAccounts'   => array( 'Konfirmi_konton' ),
+	'UserCredentials'   => array( 'Uzantaj_datumoj' ),
 );
 
-/** Spanish (Español) */
 $aliases['es'] = array(
-	'RequestAccount' => array( 'Pedir_cuenta_de_usuario', 'PedirCuentaUsuario' ),
-	'ConfirmAccounts' => array( 'Confirmar cuentas' ),
-	'UserCredentials' => array( 'Credenciales' ),
+	'RequestAccount'    => array( 'Pedir_cuenta_de_usuario', 'PedirCuentaUsuario' ),
+	'ConfirmAccounts'   => array( 'Confirmar_cuentas' ),
+	'UserCredentials'   => array( 'Credenciales' ),
 );
 
-/** Finnish (Suomi) */
+$aliases['fa'] = array(
+	'RequestAccount'    => array( 'درخواست_حساب' ),
+	'ConfirmAccounts'   => array( 'تایید_حساب‌ها' ),
+	'UserCredentials'   => array( 'شناسه_کاربری' ),
+);
+
 $aliases['fi'] = array(
-	'RequestAccount' => array( 'Pyydä käyttäjätunnusta' ),
-	'ConfirmAccounts' => array( 'Varmista käyttäjätunnus' ),
+	'RequestAccount'    => array( 'Pyydä_käyttäjätunnusta' ),
+	'ConfirmAccounts'   => array( 'Varmista_käyttäjätunnus' ),
 );
 
-/** French (Français) */
 $aliases['fr'] = array(
-	'RequestAccount' => array( 'Demander un compte', 'DemanderUnCompte' ),
-	'ConfirmAccounts' => array( 'ConfirmerCompte', 'Confirmation compte', 'ConfirmationCompte' ),
+	'RequestAccount'    => array( 'Demander_un_compte', 'DemanderUnCompte' ),
+	'ConfirmAccounts'   => array( 'ConfirmerCompte', 'Confirmation_compte', 'ConfirmationCompte' ),
 );
 
-/** Franco-Provençal (Arpetan) */
 $aliases['frp'] = array(
-	'RequestAccount' => array( 'Demandar un compto', 'DemandarUnCompto' ),
-	'ConfirmAccounts' => array( 'Confirmar lo compto', 'ConfirmarLoCompto', 'Confirmacion de compto', 'ConfirmacionDeCompto' ),
-	'UserCredentials' => array( "Refèrences a l'utilisator", 'RefèrencesALUtilisator' ),
+	'RequestAccount'    => array( 'Demandar_un_compto', 'DemandarUnCompto' ),
+	'ConfirmAccounts'   => array( 'Confirmar_lo_compto', 'ConfirmarLoCompto', 'Confirmacion_de_compto', 'ConfirmacionDeCompto' ),
+	'UserCredentials'   => array( 'Refèrences_a_l\'utilisator', 'RefèrencesALUtilisator' ),
 );
 
-/** Galician (Galego) */
 $aliases['gl'] = array(
-	'RequestAccount' => array( 'Solicitar unha conta' ),
-	'ConfirmAccounts' => array( 'Confirmar a conta' ),
+	'RequestAccount'    => array( 'Solicitar unha conta' ),
+	'ConfirmAccounts'   => array( 'Confirmar a conta' ),
 );
 
-/** Swiss German (Alemannisch) */
 $aliases['gsw'] = array(
-	'RequestAccount' => array( 'Aatrag stelle fir e Benutzerchonto' ),
-	'ConfirmAccounts' => array( 'Benutzerchonto bstetige' ),
+	'RequestAccount'    => array( 'Aatrag stelle fir e Benutzerchonto' ),
+	'ConfirmAccounts'   => array( 'Benutzerchonto bstetige' ),
 );
 
-/** Hebrew (עברית) */
 $aliases['he'] = array(
-	'RequestAccount' => array( 'בקשת_חשבון' ),
-	'ConfirmAccounts' => array( 'אישור_חשבונות' ),
-	'UserCredentials' => array( 'פרטי_משתמש' ),
+	'RequestAccount'    => array( 'בקשת_חשבון' ),
+	'ConfirmAccounts'   => array( 'אישור_חשבונות' ),
+	'UserCredentials'   => array( 'פרטי_משתמש' ),
 );
 
-/** Croatian (Hrvatski) */
 $aliases['hr'] = array(
-	'RequestAccount' => array( 'Zatraži_račun' ),
-	'ConfirmAccounts' => array( 'Potvrdi_račun' ),
-	'UserCredentials' => array( 'Suradničke_vjerodajnice' ),
+	'RequestAccount'    => array( 'Zatraži_račun' ),
+	'ConfirmAccounts'   => array( 'Potvrdi_račun' ),
+	'UserCredentials'   => array( 'Suradničke_vjerodajnice' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
 $aliases['hsb'] = array(
-	'RequestAccount' => array( 'Konto požadać' ),
-	'ConfirmAccounts' => array( 'Konto potwjerdźić' ),
-	'UserCredentials' => array( 'Wužywarske podaća' ),
+	'RequestAccount'    => array( 'Konto_požadać' ),
+	'ConfirmAccounts'   => array( 'Konto_potwjerdźić' ),
+	'UserCredentials'   => array( 'Wužywarske_podaća' ),
 );
 
-/** Haitian (Kreyòl ayisyen) */
 $aliases['ht'] = array(
-	'ConfirmAccounts' => array( 'KonfimeKonpt' ),
+	'ConfirmAccounts'   => array( 'KonfimeKonpt' ),
 );
 
-/** Hungarian (Magyar) */
 $aliases['hu'] = array(
-	'RequestAccount' => array( 'Felhasználói fiók igénylése' ),
-	'ConfirmAccounts' => array( 'Felhasználói fiók megerősítése' ),
-	'UserCredentials' => array( 'Felhasználói ajánlólevél' ),
+	'RequestAccount'    => array( 'Felhasználói_fiók_igénylése' ),
+	'ConfirmAccounts'   => array( 'Felhasználói_fiók_megerősítése' ),
+	'UserCredentials'   => array( 'Felhasználói_ajánlólevél' ),
 );
 
-/** Interlingua (Interlingua) */
 $aliases['ia'] = array(
-	'RequestAccount' => array( 'Requestar conto' ),
-	'ConfirmAccounts' => array( 'Confirmar contos' ),
-	'UserCredentials' => array( 'Referentias del usator' ),
+	'RequestAccount'    => array( 'Requestar_conto' ),
+	'ConfirmAccounts'   => array( 'Confirmar_contos' ),
+	'UserCredentials'   => array( 'Referentias_del_usator' ),
 );
 
-/** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
-	'RequestAccount' => array( 'Minta akun', 'MintaAkun' ),
-	'ConfirmAccounts' => array( 'Konfirmasi akun', 'KonfirmasiAkun' ),
+	'RequestAccount'    => array( 'Minta_akun', 'MintaAkun' ),
+	'ConfirmAccounts'   => array( 'Konfirmasi_akun', 'KonfirmasiAkun' ),
+	'UserCredentials'   => array( 'Kredensial_pengguna', 'KredensialPengguna' ),
 );
 
-/** Italian (Italiano) */
 $aliases['it'] = array(
-	'UserCredentials' => array( 'CredenzialiUtente' ),
+	'UserCredentials'   => array( 'CredenzialiUtente' ),
 );
 
-/** Japanese (日本語) */
 $aliases['ja'] = array(
-	'RequestAccount' => array( 'アカウント申請', 'アカウント登録申請' ),
-	'ConfirmAccounts' => array( 'アカウント承認', 'アカウントの承認', 'アカウント申請の承認', 'アカウント登録申請の承認' ),
-	'UserCredentials' => array( '利用者信頼情報' ),
+	'RequestAccount'    => array( 'アカウント申請', 'アカウント登録申請' ),
+	'ConfirmAccounts'   => array( 'アカウント承認', 'アカウントの承認', 'アカウント申請の承認', 'アカウント登録申請の承認' ),
+	'UserCredentials'   => array( '利用者信頼情報' ),
 );
 
-/** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
-	'RequestAccount' => array( 'ស្នើសុំគណនី' ),
-	'ConfirmAccounts' => array( 'បញ្ជាក់ទទួលស្គាល់គណនី' ),
+	'RequestAccount'    => array( 'ស្នើសុំគណនី' ),
+	'ConfirmAccounts'   => array( 'បញ្ជាក់ទទួលស្គាល់គណនី' ),
 );
 
-/** Korean (한국어) */
 $aliases['ko'] = array(
-	'RequestAccount' => array( '계정요청' ),
-	'ConfirmAccounts' => array( '계정승인' ),
+	'RequestAccount'    => array( '계정요청' ),
+	'ConfirmAccounts'   => array( '계정승인' ),
 );
 
-/** Colognian (Ripoarisch) */
 $aliases['ksh'] = array(
-	'RequestAccount' => array( 'Metmaacherzohjang beaandraare' ),
-	'ConfirmAccounts' => array( 'Metmaacherzohjang beshtätejje' ),
-	'UserCredentials' => array( 'Metmaache-Aanjabe' ),
+	'RequestAccount'    => array( 'Metmaacherzohjang_beaandraare' ),
+	'ConfirmAccounts'   => array( 'Metmaacherzohjang_beshtätejje' ),
+	'UserCredentials'   => array( 'Metmaache-Aanjabe' ),
 );
 
-/** Luxembourgish (Lëtzebuergesch) */
+$aliases['lad'] = array(
+	'RequestAccount'    => array( 'Demandar_cuento_de_usador' ),
+	'ConfirmAccounts'   => array( 'AverdadearCuentos' ),
+	'UserCredentials'   => array( 'Letra_de_creença_de_usadores' ),
+);
+
 $aliases['lb'] = array(
-	'RequestAccount' => array( 'Benotzerkont ufroen' ),
-	'ConfirmAccounts' => array( 'Benotzerkont confirméieren' ),
-	'UserCredentials' => array( 'Benotzerinformatiounen' ),
+	'RequestAccount'    => array( 'Benotzerkont_ufroen' ),
+	'ConfirmAccounts'   => array( 'Benotzerkont_confirméieren' ),
+	'UserCredentials'   => array( 'Benotzerinformatiounen' ),
 );
 
-/** Macedonian (Македонски) */
 $aliases['mk'] = array(
-	'RequestAccount' => array( 'ПобарајКорисничкаСметка' ),
-	'ConfirmAccounts' => array( 'ПотврдаНаКорисничкаСметка' ),
+	'RequestAccount'    => array( 'ПобарајКорисничкаСметка' ),
+	'ConfirmAccounts'   => array( 'ПотврдаНаКорисничкаСметка' ),
 );
 
-/** Malayalam (മലയാളം) */
 $aliases['ml'] = array(
-	'RequestAccount' => array( 'അംഗത്വം ആവശ്യപ്പെടുക' ),
-	'ConfirmAccounts' => array( 'അംഗത്വം സ്ഥിരീകരിക്കുക' ),
+	'RequestAccount'    => array( 'അംഗത്വം_ആവശ്യപ്പെടുക' ),
+	'ConfirmAccounts'   => array( 'അംഗത്വം_സ്ഥിരീകരിക്കുക' ),
+	'UserCredentials'   => array( 'ഉപയോക്തൃയോഗ്യത' ),
 );
 
-/** Marathi (मराठी) */
 $aliases['mr'] = array(
-	'RequestAccount' => array( 'खातेविनंती' ),
-	'ConfirmAccounts' => array( 'खातेनिश्चिती' ),
-	'UserCredentials' => array( 'सदस्यपरिचयप्त्र' ),
+	'RequestAccount'    => array( 'खातेविनंती' ),
+	'ConfirmAccounts'   => array( 'खातेनिश्चिती' ),
+	'UserCredentials'   => array( 'सदस्यपरिचयप्त्र' ),
 );
 
-/** Malay (Bahasa Melayu) */
 $aliases['ms'] = array(
-	'ConfirmAccounts' => array( 'Sahkan akaun', 'Mengesahkan akaun' ),
+	'ConfirmAccounts'   => array( 'Sahkan akaun', 'Mengesahkan akaun' ),
 );
 
-/** Maltese (Malti) */
 $aliases['mt'] = array(
-	'RequestAccount' => array( 'RikjestaKont' ),
-	'ConfirmAccounts' => array( 'KonfermaKont' ),
-	'UserCredentials' => array( 'KredenzjaliUtent' ),
+	'RequestAccount'    => array( 'RikjestaKont' ),
+	'ConfirmAccounts'   => array( 'KonfermaKont' ),
+	'UserCredentials'   => array( 'KredenzjaliUtent' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
-	'RequestAccount' => array( 'Gebruker_anvragen' ),
-	'ConfirmAccounts' => array( 'Gebruker_bevestigen' ),
-	'UserCredentials' => array( 'Gebrukersgetuugschrif' ),
+	'RequestAccount'    => array( 'Gebruker_anvragen' ),
+	'ConfirmAccounts'   => array( 'Gebruker_bevestigen' ),
+	'UserCredentials'   => array( 'Gebrukersgetuugschrif' ),
 );
 
-/** Dutch (Nederlands) */
 $aliases['nl'] = array(
-	'RequestAccount' => array( 'GebruikerAanvragen' ),
-	'ConfirmAccounts' => array( 'GebruikerBevestigen' ),
-	'UserCredentials' => array( 'Gebruikersattest' ),
+	'RequestAccount'    => array( 'GebruikerAanvragen' ),
+	'ConfirmAccounts'   => array( 'GebruikerBevestigen' ),
+	'UserCredentials'   => array( 'Gebruikersattest' ),
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
-	'RequestAccount' => array( 'Etterspør konto' ),
-	'ConfirmAccounts' => array( 'Bekreft konto' ),
-	'UserCredentials' => array( 'Brukerlegitimasjon' ),
+	'RequestAccount'    => array( 'Etterspør_konto' ),
+	'ConfirmAccounts'   => array( 'Bekreft_konto' ),
+	'UserCredentials'   => array( 'Brukerlegitimasjon' ),
 );
 
-/** Occitan (Occitan) */
 $aliases['oc'] = array(
-	'RequestAccount' => array( 'DemandarUnCompte', 'Demandar un compte' ),
-	'ConfirmAccounts' => array( 'ConfirmarCompte', 'Confirmacion compte', 'ConfirmacionCompte' ),
+	'RequestAccount'    => array( 'DemandarUnCompte', 'Demandar_un_compte' ),
+	'ConfirmAccounts'   => array( 'ConfirmarCompte', 'Confirmacion_compte', 'ConfirmacionCompte' ),
 );
 
-/** Portuguese (Português) */
+$aliases['pl'] = array(
+	'RequestAccount'    => array( 'Prośba_o_utworzenie_konta' ),
+	'ConfirmAccounts'   => array( 'Potwierdzenie_konta' ),
+);
+
 $aliases['pt'] = array(
-	'RequestAccount' => array( 'Pedir conta' ),
-	'ConfirmAccounts' => array( 'Confirmar contas' ),
-	'UserCredentials' => array( 'Credenciais de utilizador' ),
+	'RequestAccount'    => array( 'Pedir_conta' ),
+	'ConfirmAccounts'   => array( 'Confirmar_contas' ),
+	'UserCredentials'   => array( 'Credenciais_de_utilizador' ),
 );
 
-/** Brazilian Portuguese (Português do Brasil) */
 $aliases['pt-br'] = array(
-	'ConfirmAccounts' => array( 'Confirmar conta' ),
-	'UserCredentials' => array( 'Credenciais de usuário' ),
+	'ConfirmAccounts'   => array( 'Confirmar_conta' ),
+	'UserCredentials'   => array( 'Credenciais_de_usuário' ),
 );
 
-/** Romanian (Română) */
 $aliases['ro'] = array(
-	'RequestAccount' => array( 'Cerere cont' ),
-	'ConfirmAccounts' => array( 'Confirmă conturi' ),
-	'UserCredentials' => array( 'Detalii utilizator' ),
+	'RequestAccount'    => array( 'Cerere_cont' ),
+	'ConfirmAccounts'   => array( 'Confirmă_conturi' ),
+	'UserCredentials'   => array( 'Detalii_utilizator' ),
 );
 
-/** Sanskrit (संस्कृत) */
 $aliases['sa'] = array(
-	'RequestAccount' => array( 'उपयोजकसंज्ञाविनन्ती' ),
-	'ConfirmAccounts' => array( 'उपयोजकसंज्ञापुष्टिकरोति' ),
-	'UserCredentials' => array( 'उपयोजकविश्वासपत्त्र' ),
+	'RequestAccount'    => array( 'उपयोजकसंज्ञाविनन्ती' ),
+	'ConfirmAccounts'   => array( 'उपयोजकसंज्ञापुष्टिकरोति' ),
+	'UserCredentials'   => array( 'उपयोजकविश्वासपत्त्र' ),
 );
 
-/** Slovak (Slovenčina) */
 $aliases['sk'] = array(
-	'RequestAccount' => array( 'PožiadaťOÚčet' ),
-	'ConfirmAccounts' => array( 'PotvrdiťÚčty' ),
-	'UserCredentials' => array( 'PrihlasovacieÚdaje' ),
+	'RequestAccount'    => array( 'PožiadaťOÚčet' ),
+	'ConfirmAccounts'   => array( 'PotvrdiťÚčty' ),
+	'UserCredentials'   => array( 'PrihlasovacieÚdaje' ),
 );
 
-/** Albanian (Shqip) */
 $aliases['sq'] = array(
-	'RequestAccount' => array( 'KërkoLlogari' ),
-	'ConfirmAccounts' => array( 'KonfirmoLlogaritë' ),
+	'RequestAccount'    => array( 'KërkoLlogari' ),
+	'ConfirmAccounts'   => array( 'KonfirmoLlogaritë' ),
 );
 
-/** Swedish (Svenska) */
 $aliases['sv'] = array(
-	'ConfirmAccounts' => array( 'Bekräfta konto' ),
-	'UserCredentials' => array( 'Användarnamn och lösenord' ),
+	'ConfirmAccounts'   => array( 'Bekräfta_konto' ),
+	'UserCredentials'   => array( 'Användarnamn_och_lösenord' ),
 );
 
-/** Swahili (Kiswahili) */
 $aliases['sw'] = array(
-	'RequestAccount' => array( 'OmbaAkaunti' ),
-	'ConfirmAccounts' => array( 'ThibitishaAkaunti' ),
+	'RequestAccount'    => array( 'OmbaAkaunti' ),
+	'ConfirmAccounts'   => array( 'ThibitishaAkaunti' ),
 );
 
-/** Thai (ไทย) */
 $aliases['th'] = array(
-	'ConfirmAccounts' => array( 'ยืนยันบัญชีผู้ใช้' ),
+	'ConfirmAccounts'   => array( 'ยืนยันบัญชีผู้ใช้' ),
 );
 
-/** Tagalog (Tagalog) */
 $aliases['tl'] = array(
-	'RequestAccount' => array( 'Hilingin ang kuwenta', 'HilingKuwenta' ),
-	'ConfirmAccounts' => array( 'Tiyakin ang mga kuwenta' ),
-	'UserCredentials' => array( 'Mga katibayan ng katangian ng tagagamit' ),
+	'RequestAccount'    => array( 'Hilingin ang kuwenta', 'HilingKuwenta' ),
+	'ConfirmAccounts'   => array( 'Tiyakin ang mga kuwenta' ),
+	'UserCredentials'   => array( 'Mga katibayan ng katangian ng tagagamit' ),
 );
 
-/** Turkish (Türkçe) */
 $aliases['tr'] = array(
-	'RequestAccount' => array( 'Hesapİste' ),
-	'ConfirmAccounts' => array( 'HesaplarıDoğrula' ),
-	'UserCredentials' => array( 'KullanıcıReferansları' ),
+	'RequestAccount'    => array( 'Hesapİste' ),
+	'ConfirmAccounts'   => array( 'HesaplarıDoğrula' ),
+	'UserCredentials'   => array( 'KullanıcıReferansları' ),
 );
 
+$aliases['zh-hant'] = array(
+	'RequestAccount'    => array( '請求帳戶' ),
+	'ConfirmAccounts'   => array( '確認帳戶' ),
+);
