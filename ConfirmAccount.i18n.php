@@ -6207,7 +6207,7 @@ $messages['kw'] = array(
 	'confirmaccount-email-q' => 'E-bost',
 	'confirmaccount-name' => 'Hanow-usyer',
 	'confirmaccount-email' => 'E-bost:',
-	'confirmaccount-wsum' => 'Dynnargh!',
+	'confirmaccount-wsum' => 'Wolcum!',
 	'usercredentials-user' => 'Hanow-usyer:',
 	'usercredentials-email' => 'E-bost:',
 );
