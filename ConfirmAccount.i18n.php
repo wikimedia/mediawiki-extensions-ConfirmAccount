@@ -11180,6 +11180,7 @@ $messages['ug-latn'] = array(
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
+ * @author Alex Khimich
  * @author Prima klasy4na
  * @author Тест
  */
@@ -11194,6 +11195,12 @@ $messages['uk'] = array(
 	'requestaccount-dup' => "'''Примітка: Ви вже ввійшли в систему із зареєстрованого облікового запису.'''",
 	'requestaccount-leg-user' => 'Обліковий запис',
 	'requestaccount-leg-areas' => 'Головні області зацікавлень',
+	'requestaccount-leg-person' => 'Особиста інформація',
+	'requestaccount-leg-other' => 'Інша інформація',
+	'requestaccount-leg-tos' => 'Умови надання послуг',
+	'requestaccount-acc-text' => 'Оскыльки Ви надыслали запит, на Вашу адресу електронної пошти буде надіслано повідомлення з підтвердженням.
+Будь ласка, дайте відповідь, натиснувши на підтверджуєче посилання в електронному листі. 
+Ваш пароль буде надісланий по електронній пошті після створення облікового запису.',
 	'requestaccount-email' => 'Адреса електронної пошти:',
 	'requestaccount-level-0' => 'автор',
 	'requestaccount-level-1' => 'редактор',
