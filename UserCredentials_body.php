@@ -3,7 +3,7 @@
 class UserCredentialsPage extends SpecialPage
 {
 	function __construct() {
-		SpecialPage::SpecialPage( 'UserCredentials', 'lookupcredentials' );
+		parent::__construct( 'UserCredentials', 'lookupcredentials' );
 	}
 
 	function execute( $par ) {
