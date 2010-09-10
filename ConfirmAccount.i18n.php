@@ -6447,7 +6447,7 @@ Méiglecherweis gëtt et Kontaktlëschten op dem Site déi Dir benotze kënnt wa
 	'usercredentials-badid' => 'Et goufe keng Rechter fir dëse Benotzer fonnt.
 Kuckt w.e.g. no op den Numm richteg geschriwwen ass.',
 	'right-confirmaccount' => "D'[[Special:ConfirmAccounts|Queue mat den ugefrote Benotzerkonte]] kucken",
-	'right-requestips' => "D'IP-Adress vun däer d'Ufro koum uweise wann d'Ufro fir e Benotzerkont verschafft gëtt",
+	'right-requestips' => "D'IP-Adress vun där d'Ufro koum uweise wann d'Ufro fir e Benotzerkont verschafft gëtt",
 	'right-lookupcredentials' => '[[Special:UserCredentials|Referenze vun de Benotzer]] kucken',
 );
 
@@ -8645,7 +8645,7 @@ Assim que a conta for aprovada, será enviada a você por email uma mensagem de 
 	'requestaccount-dup' => "'''Nota: Você já está autenticado com uma conta registrada.'''",
 	'requestaccount-leg-user' => 'Conta de utilizador',
 	'requestaccount-leg-areas' => 'Principais áreas de interesse',
-	'requestaccount-leg-person' => 'Informação pessoal',
+	'requestaccount-leg-person' => 'Informações pessoais',
 	'requestaccount-leg-other' => 'Outras informações',
 	'requestaccount-leg-tos' => 'Termos do Serviço',
 	'requestaccount-acc-text' => 'Será enviada um mensagem de confirmação para o seu endereço de email assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação fornecida no email. A sua palavra-chave também lhe será enviada por email assim que a sua conta estiver criada.',
@@ -8738,7 +8738,7 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar esta requisiç�
 	'confirmaccount-badid' => 'Não existe nenhuma requisição pendente correspondente ao identificador fornecido. Ela pode já ter sido tratada.',
 	'confirmaccount-leg-user' => 'Conta de utilizador',
 	'confirmaccount-leg-areas' => 'Principais áreas de interesse',
-	'confirmaccount-leg-person' => 'Informação pessoal',
+	'confirmaccount-leg-person' => 'Informações pessoais',
 	'confirmaccount-leg-other' => 'Outras informações',
 	'confirmaccount-name' => 'Nome de utilizador',
 	'confirmaccount-real' => 'Nome:',
@@ -8811,7 +8811,7 @@ Podem haver listas de contatos no sítio que poderá usar se desejar saber mais 
 	'usercredentials-text' => 'Abaixo estão as credenciais validadas da conta de utilizador selecionada.',
 	'usercredentials-leg-user' => 'Conta de utilizador',
 	'usercredentials-leg-areas' => 'Principais áreas de interesse',
-	'usercredentials-leg-person' => 'Informação pessoal',
+	'usercredentials-leg-person' => 'Informações pessoais',
 	'usercredentials-leg-other' => 'Outras informações',
 	'usercredentials-email' => 'Email:',
 	'usercredentials-real' => 'Nome real:',
