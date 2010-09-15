@@ -5796,8 +5796,9 @@ Panjenengan ora bisa nyuwun rékening anyar manèh.',
 $messages['km'] = array(
 	'requestaccount' => 'សំណើសុំគណនី',
 	'requestaccount-page' => '{{ns:project}}:លក្ខខណ្ឌ ប្រើប្រាស់សេវា',
-	'requestaccount-dup' => "'''សម្គាល់: លោកអ្នកត្រូវបានឡុកអ៊ីនចូលរួចហើយ ជាមួយនឹងគណនីដែលបានចុះឈ្មោះ។'''",
+	'requestaccount-dup' => "'''សម្គាល់: លោកអ្នកត្រូវបានកត់ឈ្មោះចូលរួចហើយ ជាមួយនឹងគណនីដែលបានចុះឈ្មោះ។'''",
 	'requestaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
+	'requestaccount-leg-areas' => 'ចំណង់ចំណូលចិត្ត',
 	'requestaccount-leg-person' => 'ព័ត៌មានផ្ទាល់ខ្លួន',
 	'requestaccount-leg-other' => 'ព័ត៌មាន ដទៃទៀត',
 	'requestaccount-leg-tos' => 'លក្ខខណ្ឌ​នៃ​សេវាកម្ម​',
@@ -5832,6 +5833,7 @@ $messages['km'] = array(
 	'confirmaccount-q-open' => 'បើក​សំណើ',
 	'confirmaccount-q-stale' => 'សំណើ​ដែល​ផុត​កំណត់',
 	'confirmaccount-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
+	'confirmaccount-leg-areas' => 'ចំណង់ចំណូលចិត្ត',
 	'confirmaccount-leg-person' => 'ព័ត៌មានផ្ទាល់ខ្លួន',
 	'confirmaccount-leg-other' => 'ព័ត៌មាន​ដទៃ',
 	'confirmaccount-name' => 'ឈ្មោះអ្នកប្រើប្រាស់',
@@ -5850,6 +5852,7 @@ $messages['km'] = array(
 	'confirmaccount-create' => 'ព្រមទទួល (បង្កើត​គណនី)',
 	'confirmaccount-reason' => 'យោបល់(នឹងត្រូវបានបញ្ចូលទៅក្នុងអ៊ីមែល)៖',
 	'confirmaccount-ip' => 'អាសយដ្ឋាន IP៖',
+	'confirmaccount-legend' => 'បញ្ជាក់ទទួលស្គាល់ឬច្រានចោលគណនីនេះ',
 	'confirmaccount-submit' => 'បញ្ជាក់ទទួលស្គាល់',
 	'confirmaccount-needreason' => 'អ្នក​ត្រូវ​ផ្តល់​ហេតុផល ក្នុង​ប្រអប់វិចារ​ខាងក្រោម​​។',
 	'confirmaccount-acc' => 'សំណើគណនី​ត្រូវ​បាន​អះអាង​ដោយជោគជ័យ,
@@ -5859,7 +5862,7 @@ $messages['km'] = array(
 	'confirmaccount-summary' => 'បង្កើត​ទំព័រ​អ្នកប្រើប្រាស់​ជាមួយ​ប្រវត្តិរូប​នៃ​អ្នកប្រើប្រាស់​ថ្មី​។',
 	'confirmaccount-wsum' => 'សូមស្វាគមន៍!',
 	'confirmaccount-email-subj' => 'សំណើសុំគណនី {{SITENAME}}',
-	'confirmaccount-email-body' => 'សំណើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
+	'confirmaccount-email-body' => 'សំណើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានអនុម័តរួចហើយ។
 
 
 ឈ្មោះគណនី: $1
@@ -5868,22 +5871,26 @@ $messages['km'] = array(
 ពាក្យសំងាត់: $2
 
 
-ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
+ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវតែប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលកត់ឈ្មោះចូលលើកដំបូង។
 
-ឡុកអ៊ីន សូមទៅកាន់ {{fullurl:Special:UserLogin}} ។',
-	'confirmaccount-email-body2' => 'សំណើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានទទួលយកហើយ។
+ដើម្បីកត់ឈ្មោះចូល សូមចូលទៅកាន់ {{fullurl:Special:UserLogin}} ។',
+	'confirmaccount-email-body2' => 'សំណើសុំគណនីរបស់អ្នកនៅលើ{{SITENAME}}ត្រូវបានអនុម័តរួចហើយ។
+
 
 ឈ្មោះគណនី: $1
+
 
 ពាក្យសំងាត់: $2
 
 $3
 
-ដើម្បីសុវត្ថិភាពអ្នកនឹងត្រូវការជាចាំបាច់ប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលឡុកអ៊ីកលើកដំបូង។
 
-ឡុកអ៊ីន សូមទៅកាន់{{fullurl:Special:UserLogin}} ។',
+ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវតែប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលកត់ឈ្មោះចូលលើកដំបូង។
+
+ដើម្បីកត់ឈ្មោះចូល សូមចូលទៅកាន់ {{fullurl:Special:UserLogin}} ។',
 	'usercredentials-user' => 'ឈ្មោះអ្នកប្រើប្រាស់៖',
 	'usercredentials-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
+	'usercredentials-leg-areas' => 'ចំណង់ចំណូលចិត្ត',
 	'usercredentials-leg-person' => 'ព័ត៌មាន​ផ្ទាល់ខ្លួន',
 	'usercredentials-leg-other' => 'ព័ត៌មានផ្សេងៗទៀត',
 	'usercredentials-email' => 'អ៊ីមែល​៖',
