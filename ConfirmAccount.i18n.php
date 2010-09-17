@@ -11162,6 +11162,13 @@ Sitede, kullanıcı hesap politikamız hakkında daha fazla bilgi almak istemeni
 	'right-lookupcredentials' => '[[Special:UserCredentials|Kullanıcı referanslarını]] görür',
 );
 
+/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+ * @author Ильнар
+ */
+$messages['tt-cyrl'] = array(
+	'confirmaccount-wsum' => 'Рәхим итегез!',
+);
+
 /** ئۇيغۇرچە (ئۇيغۇرچە)
  * @author Alfredie
  */
