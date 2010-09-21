@@ -2011,6 +2011,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 
 /** German (formal address) (Deutsch (Sie-Form))
  * @author Imre
+ * @author The Evil IP address
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
@@ -2029,7 +2030,7 @@ Sie können Kontaktangaben wie eine Telefonnummer machen, um die Bearbeitung Ihr
 	'requestaccount-bio-text' => 'Ihre Biographie wird als initialer Inhalt Ihrer Benutzerseite gespeichert.
 Versuchen Sie alle nötigen Empfehlungen zu erwähnen, aber stellen Sie sicher, dass Sie die Informationen auch wirklich veröffentlichen möchten.
 Sie können Ihren Namen in [[Special:Preferences|Ihren Einstellungen]] ändern.',
-	'requestaccount-agree' => 'Sie müssen bestätigen, dass Ihr Realname korrekt ist und Sie die Benutzungsbedingungen akzeptieren.',
+	'requestaccount-agree' => 'Sie müssen bestätigen, dass Ihr bürgerlicher Name korrekt ist und Sie die Nutzungsbedingungen akzeptieren.',
 	'requestaccount-tooshort' => 'Ihre Biographie muss mindestens {{PLURAL:$1|1 Wort|$1 Wörter}} lang sein.',
 	'requestaccount-resub' => 'Die Datei mit Ihrem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
 Lassen Sie das Feld leer, wenn Sie keinen Lebenslauf mehr anfügen möchten.',
@@ -2070,7 +2071,7 @@ Wenn Sie diese Seite verlassen, ohne das Konto zu bestätigen oder abzulehnen, w
 	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
 Wir hoffen, dass Sie viele gute Informationen beisteuern.
 Möglicherweise möchten Sie zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen.
-Nochmal: Willkommen und haben Sie Spaß!",
+Nochmal: Willkommen und viel Spaß!",
 	'confirmaccount-email-body' => 'Ihr Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.
 
 Benutzername: $1
@@ -9177,7 +9178,7 @@ $2
 	'right-lookupcredentials' => 'просмотр [[Special:UserCredentials|удостоверяющей информации об участниках]]',
 );
 
-/** Rusyn (русиньскый язык)
+/** Rusyn (Русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
