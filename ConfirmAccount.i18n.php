@@ -7124,11 +7124,21 @@ $messages['myv'] = array(
 	'requestaccount-level-0' => 'теицязо',
 	'requestaccount-level-1' => 'витницязо-петницязо',
 	'confirmaccount-real-q' => 'Лемезэ:',
+	'confirmaccount-email-q' => 'Е-сёрма',
+	'confirmaccount-type' => 'Чиполань пулось:',
+	'confirmaccount-name' => 'Теицянь лем',
 	'confirmaccount-real' => 'Лемезэ:',
 	'confirmaccount-pos-0' => 'теиця',
 	'confirmaccount-pos-1' => 'витницязо-петницязо',
+	'confirmaccount-none-p' => '(апак максо)',
+	'confirmaccount-noreason' => '(арась мезе невтемс)',
+	'confirmaccount-hold' => 'Кирдемс',
 	'confirmaccount-submit' => 'Кемекстамс',
 	'confirmaccount-wsum' => 'Совак, инеське!',
+	'usercredentials-email' => 'Е-сёрма:',
+	'usercredentials-real' => 'Алкуксонь леметь:',
+	'usercredentials-bio' => 'Эрямопингеть:',
+	'usercredentials-member' => 'Видечинзэ:',
 );
 
 /** Nahuatl (Nāhuatl)
