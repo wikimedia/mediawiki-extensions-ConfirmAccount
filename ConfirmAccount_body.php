@@ -431,11 +431,17 @@ class ConfirmAccountsPage extends SpecialPage
 			# Do not send multiple times, don't send for "spam" requests
 			if( !$row->acr_rejected && $this->submitType != 'spam' ) {
 				if( $this->reason ) {
-					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsgExt( 'confirmaccount-email-body4', array('parsemag'), $u->getName(), $this->reason ) );
+					$result = $u->sendMail(
+						wfMsgForContent( 'confirmaccount-email-subj' ),
+						wfMsgExt( 'confirmaccount-email-body4',
+							array('parsemag','content'), $u->getName(), $this->reason )
+					);
 				} else {
-					$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-						wfMsgExt( 'confirmaccount-email-body3', array('parsemag'), $u->getName() ) );
+					$result = $u->sendMail(
+						wfMsgForContent( 'confirmaccount-email-subj' ),
+						wfMsgExt( 'confirmaccount-email-body3',
+							array('parsemag','content'), $u->getName() )
+					);
 				}
 
 				if( WikiError::isError( $result ) ) {
@@ -568,23 +574,27 @@ class ConfirmAccountsPage extends SpecialPage
 				$msg = "confirmaccount-email-body2-pos{$this->mType}";
 				# If the user is in a group and there is a welcome for that group, use it
 				if( $group && !wfEmptyMsg( $msg, wfMsg($msg) ) ) {
-					$ebody = wfMsgExt($msg, array('parsemag'), $user->getName(), $p, $this->reason );
+					$ebody = wfMsgExt( $msg, array('parsemag','content'),
+						$user->getName(), $p, $this->reason );
 				# Use standard if none found...
 				} else {
-					$ebody = wfMsgExt( 'confirmaccount-email-body2', array('parsemag'), $user->getName(), $p, $this->reason );
+					$ebody = wfMsgExt( 'confirmaccount-email-body2',
+						array('parsemag','content'), $user->getName(), $p, $this->reason );
 				}
 			} else {
 				$msg = "confirmaccount-email-body-pos{$this->mType}";
 				# If the user is in a group and there is a welcome for that group, use it
 				if( $group && !wfEmptyMsg( $msg, wfMsg($msg) ) ) {
-					$ebody = wfMsgExt($msg, array('parsemag'), $user->getName(), $p, $this->reason );
+					$ebody = wfMsgExt($msg, array('parsemag','content'),
+						$user->getName(), $p, $this->reason );
 				# Use standard if none found...
 				} else {
-					$ebody = wfMsgExt( 'confirmaccount-email-body', array('parsemag'), $user->getName(), $p, $this->reason );
+					$ebody = wfMsgExt( 'confirmaccount-email-body',
+						array('parsemag','content'), $user->getName(), $p, $this->reason );
 				}
 			}
 
-			$result = $user->sendMail( wfMsg( 'confirmaccount-email-subj' ), $ebody );
+			$result = $user->sendMail( wfMsgForContent( 'confirmaccount-email-subj' ), $ebody );
 
 			// init $error
 			$error = '';
@@ -707,8 +717,11 @@ class ConfirmAccountsPage extends SpecialPage
 
 			# Do not send multiple times
 			if( !$row->acr_held && !($row->acr_deleted && $row->acr_deleted !='f') ) {
-				$result = $u->sendMail( wfMsg( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body5', array('parsemag'), $u->getName(), $this->reason ) );
+				$result = $u->sendMail(
+					wfMsgForContent( 'confirmaccount-email-subj' ),
+					wfMsgExt( 'confirmaccount-email-body5',
+						array('parsemag','content'), $u->getName(), $this->reason )
+				);
 				if( WikiError::isError( $result ) ) {
 					$dbw->rollback();
 					$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
