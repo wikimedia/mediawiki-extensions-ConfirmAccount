@@ -4858,7 +4858,7 @@ Tu nomine pote esser cambiate in [[Special:Preferences|tu preferentias]].',
 	'requestaccount-inuse' => 'Le nomine de usator es ja in uso in un requesta de conto pendente.',
 	'requestaccount-tooshort' => 'Tu biographia debe haber al minus $1 {{PLURAL:$1|parola|parolas}} de longor.',
 	'requestaccount-emaildup' => 'Un altere requesta pendente de conto usa le mesme adresse de e-mail.',
-	'requestaccount-exts' => 'Iste typo de file non es permittite in attachamentos.',
+	'requestaccount-exts' => 'Iste typo de file non es permittite in annexos.',
 	'requestaccount-resub' => 'Tu debe reseliger tu file CV/résumé pro motivos de securitate.
 Lassa le campo vacue si tu non vole plus includer un.',
 	'requestaccount-tos' => 'Io ha legite e consenti a acceptar le [[{{MediaWiki:Requestaccount-page}}|Conditiones de Servicio]] of {{SITENAME}}.
