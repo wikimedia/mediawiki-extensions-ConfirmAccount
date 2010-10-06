@@ -5979,13 +5979,25 @@ $3
  * @author Nayvik
  */
 $messages['kn'] = array(
+	'requestaccount-leg-person' => 'ವೈಯುಕ್ತಿಕ ಮಾಹಿತಿ',
 	'requestaccount-level-0' => 'ಕರ್ತೃ',
+	'requestaccount-level-1' => 'ಸಂಪಾದಕ',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} ಖಾತೆ ಕೋರಿಕೆ',
 	'confirmaccount-real-q' => 'ಹೆಸರು',
 	'confirmaccount-email-q' => 'ಇ-ಅಂಚೆ',
+	'confirmaccount-bio-q' => 'ಜೀವನಚರಿತ್ರೆ',
+	'confirmaccount-leg-person' => 'ವೈಯುಕ್ತಿಕ ಮಾಹಿತಿ',
 	'confirmaccount-real' => 'ಹೆಸರು:',
 	'confirmaccount-email' => 'ಇ-ಅಂಚೆ:',
 	'confirmaccount-pos-0' => 'ಕರ್ತೃ',
+	'confirmaccount-pos-1' => 'ಸಂಪಾದಕ',
+	'confirmaccount-bio' => 'ಜೀವನಚರಿತ್ರೆ',
+	'confirmaccount-wsum' => 'ಸುಸ್ವಾಗತ!',
+	'confirmaccount-email-subj' => '{{SITENAME}} ಖಾತೆ ಕೋರಿಕೆ',
+	'usercredentials-leg-person' => 'ವೈಯುಕ್ತಿಕ ಮಾಹಿತಿ',
 	'usercredentials-email' => 'ಇ-ಅಂಚೆ:',
+	'usercredentials-bio' => 'ಜೀವನಚರಿತ್ರೆ:',
+	'usercredentials-urls' => 'ಅಂತರ್ಜಾಲ ತಾಣಗಳ ಪಟ್ಟಿ:',
 );
 
 /** Korean (한국어)
@@ -11415,8 +11427,17 @@ $messages['vo'] = array(
  */
 $messages['yi'] = array(
 	'confirmaccount-real-q' => 'נאמען',
+	'confirmaccount-leg-user' => 'באַניצער קאנטע',
 	'confirmaccount-name' => 'באַניצער נאָמען',
 	'confirmaccount-real' => 'נאָמען:',
+	'confirmaccount-email-body' => 'אײַער בקשה פֿאַר אַ קאנטע אויף {{SITENAME}} איז געווארן באַשטעטיקט. 
+
+ באַניצער־נאָמען: $1 
+
+ פאַסוואָרט: $2 
+
+ צוליב זיכערהייַט סיבות וועט איר דאַרפֿן טוישן אייער פאַסוואָרט בײַם ערשטן ארײַנלאָגירן. 
+ כדי ארײַנלאָגירן, ביטע גייט צו {{fullurl:Special:UserLogin}}.',
 	'usercredentials-user' => 'באַניצער נאָמען:',
 );
 
