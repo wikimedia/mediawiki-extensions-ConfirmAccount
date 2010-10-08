@@ -153,7 +153,6 @@ function efLoadConfirmAccount() {
 
 function efAddRequestLoginText( &$template ) {
 	global $wgUser;
-	wfLoadExtensionMessages( 'ConfirmAccount' );
 	# Add a link to RequestAccount from UserLogin
 	if ( !$wgUser->isAllowed( 'createaccount' ) ) {
 		$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) ) );
@@ -178,7 +177,6 @@ function efCheckIfAccountNameIsPending( $user, &$abortError ) {
 		array( 'acr_name' => $user->getName() ),
 		__METHOD__ );
 	if ( $dup ) {
-		wfLoadExtensionMessages( 'ConfirmAccount' );
 		$abortError = wfMsgHtml( 'requestaccount-inuse' );
 		return false;
 	}
@@ -221,7 +219,6 @@ function efConfirmAccountsNotice( $notice ) {
 		$wgMemc->set( $key, $count, 3600 * 24 * 7 );
 	}
 	if ( $count !== '-' ) {
-		wfLoadExtensionMessages( 'ConfirmAccount' );
 		$message = wfMsgExt( 'confirmaccount-newrequests', array( 'parsemag' ), $count );
 
 		$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse( $message ) . '</div>';
