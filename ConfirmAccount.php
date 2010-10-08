@@ -161,6 +161,15 @@ function efAddRequestLoginText( &$template ) {
 	return true;
 }
 
+function efSetRequestLoginLinks( &$personal_urls, &$title ) {
+	if ( isset( $personal_urls['anonlogin'] ) ) {
+		$personal_urls['anonlogin']['text'] = wfMsg('nav-login-createaccount');
+	} elseif ( $personal_urls['login'] ) {
+		$personal_urls['login']['text'] = wfMsg('nav-login-createaccount');	
+	}
+	return true;
+}
+
 function efCheckIfAccountNameIsPending( $user, &$abortError ) {
 	# If an account is made with name X, and one is pending with name X
 	# we will have problems if the pending one is later confirmed
@@ -235,7 +244,9 @@ $wgAutoloadClasses['UserCredentialsPage'] = $dir . 'UserCredentials_body.php';
 $wgSpecialPageGroups['UserCredentials'] = 'users';
 
 $wgExtensionFunctions[] = 'efLoadConfirmAccount';
-# Add notice of where to request an account
+# Make sure "login / create account" notice still as "create account"
+$wgHooks['PersonalUrls'][] = 'efSetRequestLoginLinks';
+# Add notice of where to request an account at UserLogin
 $wgHooks['UserCreateForm'][] = 'efAddRequestLoginText';
 $wgHooks['UserLoginForm'][] = 'efAddRequestLoginText';
 # Check for collisions
