@@ -10163,11 +10163,28 @@ $messages['szl'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author TRYPPN
  * @author Trengarasu
  */
 $messages['ta'] = array(
+	'requestaccount-real' => 'உண்மைப் பெயர்:',
+	'requestaccount-email' => 'மின்னஞ்சல் முகவரி:',
+	'requestaccount-level-0' => 'ஆசிரியர்',
+	'requestaccount-level-1' => 'பதிப்பாசிரியர்',
+	'confirmaccount-real-q' => 'பெயர்',
+	'confirmaccount-email-q' => 'மின்னஞ்சல்',
+	'confirmaccount-review' => 'மதிப்பிடு',
+	'confirmaccount-type' => 'வரிசை:',
 	'confirmaccount-name' => 'பயனர் பெயர்',
+	'confirmaccount-real' => 'பெயர்:',
+	'confirmaccount-email' => 'மின்னஞ்சல்:',
+	'confirmaccount-pos-0' => 'ஆசிரியர்',
+	'confirmaccount-pos-1' => 'பதிப்பாசிரியர்',
+	'confirmaccount-ip' => 'ஐ.பி. முகவரி:',
+	'confirmaccount-submit' => 'உறுதிசெய்',
 	'usercredentials-user' => 'பயனர் பெயர்:',
+	'usercredentials-email' => 'மின்னஞ்சல்:',
+	'usercredentials-member' => 'உரிமைகள்:',
 );
 
 /** Telugu (తెలుగు)
