@@ -163,7 +163,7 @@ function efAddRequestLoginText( &$template ) {
 function efSetRequestLoginLinks( &$personal_urls, &$title ) {
 	if ( isset( $personal_urls['anonlogin'] ) ) {
 		$personal_urls['anonlogin']['text'] = wfMsg('nav-login-createaccount');
-	} elseif ( $personal_urls['login'] ) {
+	} elseif ( isset($personal_urls['login'] ) ) {
 		$personal_urls['login']['text'] = wfMsg('nav-login-createaccount');	
 	}
 	return true;
