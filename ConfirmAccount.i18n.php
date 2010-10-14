@@ -10167,23 +10167,32 @@ $messages['szl'] = array(
  * @author Trengarasu
  */
 $messages['ta'] = array(
+	'requestaccount-leg-user' => 'பயனர் கணக்கு',
+	'requestaccount-leg-other' => 'மற்ற தகவல்',
 	'requestaccount-real' => 'உண்மைப் பெயர்:',
 	'requestaccount-email' => 'மின்னஞ்சல் முகவரி:',
+	'requestaccount-reqtype' => 'இடம்:',
 	'requestaccount-level-0' => 'ஆசிரியர்',
 	'requestaccount-level-1' => 'பதிப்பாசிரியர்',
 	'confirmaccount-real-q' => 'பெயர்',
 	'confirmaccount-email-q' => 'மின்னஞ்சல்',
 	'confirmaccount-review' => 'மதிப்பிடு',
 	'confirmaccount-type' => 'வரிசை:',
+	'confirmaccount-leg-user' => 'பயனர் கணக்கு',
 	'confirmaccount-name' => 'பயனர் பெயர்',
 	'confirmaccount-real' => 'பெயர்:',
 	'confirmaccount-email' => 'மின்னஞ்சல்:',
+	'confirmaccount-reqtype' => 'இடம்:',
 	'confirmaccount-pos-0' => 'ஆசிரியர்',
 	'confirmaccount-pos-1' => 'பதிப்பாசிரியர்',
+	'confirmaccount-noreason' => '(எதுவுமில்லை)',
 	'confirmaccount-ip' => 'ஐ.பி. முகவரி:',
 	'confirmaccount-submit' => 'உறுதிசெய்',
+	'confirmaccount-wsum' => 'வருக ! வணக்கம் !',
 	'usercredentials-user' => 'பயனர் பெயர்:',
+	'usercredentials-leg-user' => 'பயனர் கணக்கு',
 	'usercredentials-email' => 'மின்னஞ்சல்:',
+	'usercredentials-real' => 'உண்மைப் பெயர்:',
 	'usercredentials-member' => 'உரிமைகள்:',
 );
 
