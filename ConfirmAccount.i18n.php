@@ -11566,15 +11566,16 @@ $2
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenxiaoqino
+ * @author Kuailong
  * @author Wilsonmess
  */
 $messages['zh-hans'] = array(
 	'requestaccount' => '请求账户',
-	'requestaccount-text' => "'''完成并递交以下的表格去请求一个用户账户'''。
+	'requestaccount-text' => "'''完成并递交下述表格，以请求用户账户'''。
 
-	请确认您在请求一个账户之前，先读过[[{{MediaWiki:Requestaccount-page}}|服务细则]]。
+请确认您在请求账户之前，预先阅读过[[{{MediaWiki:Requestaccount-page}}|服务细则]]。
 
-	一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:Userlogin]]中使用。",
+一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:UserLogin|登录页面]]中使用。",
 	'requestaccount-page' => '{{ns:project}}:服务条款',
 	'requestaccount-dup' => "'''注意: 您已经登入成一个已注册的账户。'''",
 	'requestaccount-leg-user' => '用户账户',
@@ -11695,15 +11696,18 @@ $3
 	'confirmaccount-spam' => '垃圾（请不要发送电子邮件）',
 	'confirmaccount-reason' => '注解 （在电邮中使用）:',
 	'confirmaccount-ip' => ' IP地址：',
+	'confirmaccount-legend' => '批准/拒绝这个帐号',
 	'confirmaccount-submit' => '确认',
 	'confirmaccount-needreason' => '您必须在下方的评论栏阐述您的理由。',
 	'confirmaccount-canthold' => '该请求已被挂起，或已被删除。',
 	'confirmaccount-acc' => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
 	'confirmaccount-rej' => '账户请求已经成功拒绝。',
+	'confirmaccount-viewing' => '（当前正由[[User:$1|$1]]浏览）',
 	'confirmaccount-summary' => '正在创建一个新用户拥有传记的用户页面。',
-	'confirmaccount-welc' => "'''欢迎来到''{{SITENAME}}''！'''我们希望您会作出更多更好的贡献。
-	您可能会去参看[[{{MediaWiki:Helppage}}|开始]]。再一次欢迎你！
-	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 （UTC）",
+	'confirmaccount-welc' => "'''欢迎来到''{{SITENAME}}''！'''
+我们希望您会作出更多更好的贡献。
+您可能想先阅读一下[[{{MediaWiki:Helppage}}|帮助页面]]。
+再次欢迎您，祝您愉快！",
 	'confirmaccount-wsum' => '欢迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}账户请求',
 	'confirmaccount-email-body' => '您请求的账户已经在{{SITENAME}}中批准。
