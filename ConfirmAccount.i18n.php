@@ -1464,6 +1464,15 @@ $messages['br'] = array(
 	'requestaccount-submit' => 'Goulenn ur gont implijer',
 	'request-account-econf' => "Kadarnaet eo bet ho chomlec'h postel ha meneget e vo evel m'emañ en ho koulenn kont.",
 	'requestaccount-email-subj' => "Gwiriañ ar chomlec'h postel evit {{SITENAME}}",
+	'requestaccount-email-body' => "Unan bennak, c'hwi moarvat, gant ar chomlec'h IP \$1, en deus goulennet sevel ur gont \"\$2\" gant ar chomlec'h postel-mañ war {{SITENAME}}.
+
+Evit kadarnaat eo deoc'h ar gont-se war {{SITENAME}} e gwirionez, digorit al liamm-mañ en ho merdeer :
+
+\$3
+
+Mard eo bet krouet ar gont e vo kaset ar ger-tremen dre bostel deoc'h hepken
+Ma n'eo ekt gwir, *arabat* deoc'h implijout al liamm.
+Mont a raio ar c'hod gwiriañ-mañ d'e dermen d'an  \$4.",
 	'requestaccount-email-subj-admin' => 'Goulenn kont evit {{SITENAME}}',
 	'requestaccount-email-body-admin' => "« $1 » en deus goulennet ur gont ha zo o c'hortoz ar c'hadarnadur.
 
@@ -8946,6 +8955,7 @@ $messages['rm'] = array(
 /** Romanian (Română)
  * @author KlaudiuMihaila
  * @author Mihai
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'requestaccount' => 'Solicitare deschidere cont',
@@ -9008,6 +9018,7 @@ Adresa de e-mail a fost confirmată. Poți confirma cererea aici "$2".',
 	'confirmaccount-email' => 'E-mail:',
 	'confirmaccount-reqtype' => 'Poziție:',
 	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-pos-1' => 'editor',
 	'confirmaccount-bio' => 'Biografie:',
 	'confirmaccount-attach' => 'CV:',
 	'confirmaccount-notes' => 'Note adiționale:',
@@ -9021,7 +9032,21 @@ Adresa de e-mail a fost confirmată. Poți confirma cererea aici "$2".',
 	'confirmaccount-reason' => 'Comentariu (va fi inclus în e-mail):',
 	'confirmaccount-ip' => 'Adresă IP:',
 	'confirmaccount-submit' => 'Confirmă',
+	'confirmaccount-welc' => "'''Bun venit pe ''{{SITENAME}}''!'''
+Sperăm că veţi contribui mult şi bine.
+Veţi dori probabil să citiţi [[{{MediaWiki:Helppage}}|paginile de ajutor]].
+Din nou, bun venit şi distrează-te!",
 	'confirmaccount-wsum' => 'Bun venit!',
+	'confirmaccount-email-body2' => 'Cererea dvs. pentru un cont a fost aprobată pe {{SITENAME}}.
+
+Numele contului: $1
+
+Parola: $2
+
+$3
+
+Din motive de securitate va trebui să vă schimbaţi parola la prima autentificare.
+Pentru a vă autentifica, vă rugăm mergeţi aici: {{fullurl:Special:UserLogin}}.',
 	'usercredentials-user' => 'Nume de utilizator:',
 	'usercredentials-leg-user' => 'Cont de utilizator',
 	'usercredentials-leg-areas' => 'Arii principale de interes',
