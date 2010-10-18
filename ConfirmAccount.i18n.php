@@ -1627,6 +1627,7 @@ Jednom podnesen zahtjev koji se odobri ili odbije će se ukloniti sa ovog spiska
 	'confirmaccount-showopen' => 'otvoreni zahtjevi',
 	'confirmaccount-showrej' => 'odbijeni zahtjevi',
 	'confirmaccount-showexp' => 'zahtijevi istekli',
+	'confirmaccount-review' => 'Pregled',
 	'confirmaccount-all' => '(pokaži sve na čekanju)',
 	'confirmaccount-type' => 'Red:',
 	'confirmaccount-leg-user' => 'Korisnički račun',
@@ -1650,6 +1651,7 @@ Jednom podnesen zahtjev koji se odobri ili odbije će se ukloniti sa ovog spiska
 	'confirmaccount-deny' => 'Odbij (skini sa spiska)',
 	'confirmaccount-reason' => 'Komentar (bit će uključen u e-mail):',
 	'confirmaccount-ip' => 'IP adresa:',
+	'confirmaccount-legend' => 'Potvrdi/odbij ovaj račun',
 	'confirmaccount-submit' => 'Potvrdi',
 	'confirmaccount-summary' => 'Pravljenje korisničke stranice sa biografijom novog korisnika.',
 	'confirmaccount-wsum' => 'Dobrodošli!',
@@ -6362,16 +6364,16 @@ $messages['lb'] = array(
 	'requestaccount' => 'Benotzerkont ufroen',
 	'requestaccount-text' => "'''Fëllt dëse Formulaire aus a schéckt e fort fir e Benotzerkont unzefroen'''.
 
-Passt op datt Dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Conditioune vun der Notzung]] gelies hutt éier Dir e Benotzerkont ufrot.
+Passt op datt Dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Conditioune vum Benotze]] gelies hutt éier Dir e Benotzerkont ufrot.
 
-Wann Äre Benotzekont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt Äre Benotzerkont  [[Special:UserLogin|benotzen]].",
+Wann Äre Benotzerkont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt Äre Benotzerkont  [[Special:UserLogin|benotzen]].",
 	'requestaccount-page' => '{{ns:project}}:Notzungsbedingungen',
 	'requestaccount-dup' => "'''Opgepasst: Dir sidd scho matt engem registréierte Benotzerkont ugemellt.'''",
 	'requestaccount-leg-user' => 'Benotzerkont',
 	'requestaccount-leg-areas' => 'Haaptinteressen',
 	'requestaccount-leg-person' => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other' => 'Aner Informatiounen',
-	'requestaccount-leg-tos' => 'Conditioune vun der Notzung',
+	'requestaccount-leg-tos' => 'Conditioune vum Gebrauch',
 	'requestaccount-acc-text' => 'Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mailadress.
 Äntwert w.e.g. duerch klicken op de Confirmatiouns-Link deen an där Mail drasteet.
 Och Äert Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht gouf.',
@@ -8955,6 +8957,7 @@ $messages['rm'] = array(
 /** Romanian (Română)
  * @author KlaudiuMihaila
  * @author Mihai
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
@@ -9032,6 +9035,7 @@ Adresa de e-mail a fost confirmată. Poți confirma cererea aici "$2".',
 	'confirmaccount-reason' => 'Comentariu (va fi inclus în e-mail):',
 	'confirmaccount-ip' => 'Adresă IP:',
 	'confirmaccount-submit' => 'Confirmă',
+	'confirmaccount-needreason' => 'Trebuie să furnizați un motiv în caseta de comentarii de mai jos.',
 	'confirmaccount-welc' => "'''Bun venit pe ''{{SITENAME}}''!'''
 Sperăm că veţi contribui mult şi bine.
 Veţi dori probabil să citiţi [[{{MediaWiki:Helppage}}|paginile de ajutor]].
