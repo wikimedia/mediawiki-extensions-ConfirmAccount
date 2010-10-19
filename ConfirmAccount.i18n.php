@@ -8968,10 +8968,12 @@ Asigură-te că ai citit [[{{MediaWiki:Requestaccount-page}}|Termenii]] înainte
 
 După ce contul va fi aprobat, vei fi anunțat printr-un mesaj trimis prin e-mail, iar contul va putea fi accesat apelând [[Special:UserLogin|autentificare]].",
 	'requestaccount-page' => '{{ns:project}}:Termeni',
+	'requestaccount-dup' => "'''Notă: Sunteţi deja autentificat cu un cont înregistrat.'''",
 	'requestaccount-leg-user' => 'Cont de utilizator',
 	'requestaccount-leg-areas' => 'Arii principale de interes',
 	'requestaccount-leg-person' => 'Informații personale',
 	'requestaccount-leg-other' => 'Alte informații',
+	'requestaccount-leg-tos' => 'Termenii serviciului',
 	'requestaccount-bio-text' => 'Biografia ta va fi introdusă automat în pagina ta de utilizator.
 Încearcă să incluzi referiri la diplome care să ateste cunoștințele tale.
 Asigură-te că publicarea acestora nu-ți aduce prejudicii.
@@ -8981,6 +8983,7 @@ Numele tău poate fi schimbat din [[Special:Preferences|preferințele tale]].',
 	'requestaccount-email' => 'Adresă e-mail:',
 	'requestaccount-reqtype' => 'Poziție:',
 	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'editor',
 	'requestaccount-bio' => 'Biografie personală:',
 	'requestaccount-attach' => 'CV (opțional):',
 	'requestaccount-notes' => 'Note adiționale:',
@@ -9003,11 +9006,13 @@ Dacă acest mesaj nu-ți este destinat, nu deschide legătura.
 Codul de confirmare expiră în $4.',
 	'requestaccount-email-body-admin' => '"$1" a cerut deschiderea unui cont și așteaptă confirmarea.
 Adresa de e-mail a fost confirmată. Poți confirma cererea aici "$2".',
+	'confirmaccounts' => 'Confirmă cererile de conturi',
 	'confirmaccount-real-q' => 'Nume',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografie',
 	'confirmaccount-showopen' => 'cereri deschise',
 	'confirmaccount-showrej' => 'cereri respinse',
+	'confirmaccount-showheld' => 'cereri de ajutor',
 	'confirmaccount-showexp' => 'cereri expirate',
 	'confirmaccount-q-open' => 'cereri deschise',
 	'confirmaccount-q-rej' => 'cereri respinse recent',
@@ -9028,6 +9033,7 @@ Adresa de e-mail a fost confirmată. Poți confirma cererea aici "$2".',
 	'confirmaccount-urls' => 'Listă de situri web:',
 	'confirmaccount-econf' => '(confirmat)',
 	'confirmaccount-rational' => 'Motiv oferit aplicantului:',
+	'confirmaccount-noreason' => '(niciunul)',
 	'confirmaccount-create' => 'Acceptare (crează cont)',
 	'confirmaccount-deny' => 'Respinge (delist)',
 	'confirmaccount-hold' => 'Reține',
@@ -9317,6 +9323,18 @@ $messages['rue'] = array(
 	'confirmaccount-pos-0' => 'автор',
 	'confirmaccount-pos-1' => 'едітор',
 	'confirmaccount-bio' => 'Біоґрафія:',
+);
+
+/** Sicilian (Sicilianu)
+ * @author Aushulz
+ */
+$messages['scn'] = array(
+	'confirmaccount-real-q' => 'Nomu',
+	'confirmaccount-email-q' => 'Nnirizzu email',
+	'confirmaccount-real' => 'Nomu:',
+	'confirmaccount-email' => 'Nnirizzu email:',
+	'confirmaccount-noreason' => '(nuddu)',
+	'usercredentials-email' => 'Nnirizzu email:',
 );
 
 /** Slovak (Slovenčina)
@@ -11375,6 +11393,7 @@ $messages['uk'] = array(
 	'confirmaccount-reqtype' => 'Посада:',
 	'confirmaccount-pos-0' => 'автор',
 	'confirmaccount-submit' => 'Підтвердити',
+	'usercredentials-user' => "Ім'я користувача:",
 );
 
 /** Vèneto (Vèneto)
