@@ -991,6 +991,15 @@ $messages['bcl'] = array(
 	'confirmaccount-wsum' => 'Dagos!',
 );
 
+/** Belarusian (Беларуская)
+ * @author Тест
+ */
+$messages['be'] = array(
+	'requestaccount-level-0' => 'аўтар',
+	'confirmaccount-pos-0' => 'аўтар',
+	'confirmaccount-submit' => 'Пацвердзіць',
+);
+
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
