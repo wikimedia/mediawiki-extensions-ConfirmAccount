@@ -778,6 +778,7 @@ $messages['arc'] = array(
 	'usercredentials-leg-person' => 'ܝܕ̈ܥܬܐ ܦܪ̈ܨܘܦܝܬܐ',
 	'usercredentials-leg-other' => 'ܝܕ̈ܥܬܐ ܐܚܪ̈ܢܝܬܐ',
 	'usercredentials-email' => 'ܒܝܠܕܪܐ ܐܠܩܛܪܘܢܝܐ:',
+	'usercredentials-real' => 'ܫܡܐ ܫܪܝܪܐ:',
 	'usercredentials-member' => 'ܙܕ̈ܩܐ:',
 );
 
@@ -1629,6 +1630,7 @@ $messages['bs'] = array(
 	'requestaccount-agree' => 'Morate potvrditi da je ovo Vaše pravo ime i da prihvatate naša Pravila usluga.',
 	'requestaccount-inuse' => 'Korisničko ime je već u upotrebi u zahtjevu za račun.',
 	'requestaccount-tooshort' => 'Vaša biografija mora biti duga najmanje $1 {{PLURAL:$1|riječ|riječi}}.',
+	'requestaccount-emaildup' => 'Drugi zahtjev za račun na čekanju koristi istu e-mail adresu.',
 	'requestaccount-exts' => 'Vrsta datoteke u privitku nije dopuštena.',
 	'requestaccount-submit' => 'Zahtjevaj račun',
 	'requestaccount-sent' => 'Vaš zahtjev za račun je uspješno poslan i sada očekuje provjeru.
@@ -1755,6 +1757,7 @@ $messages['ckb'] = array(
 );
 
 /** Czech (Česky)
+ * @author Jkjk
  * @author Li-sung
  * @author Matěj Grabovský
  * @author Mormegil
@@ -1800,11 +1803,19 @@ $3
 Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší $4.',
 	'confirmaccounts' => 'Potvrdit žádosti o účet',
 	'confirmedit-desc' => 'Dává byrokratům možnost potvrzovat žádosti o účet',
+	'confirmaccount-none-o' => 'V tomto seznamu nejsou žádné požadavky na schválení vytvořeného účtu.',
+	'confirmaccount-none-h' => 'V tomto seznamu nyní nejsou žádné pozastavené žádosti o vytvoření účtu.',
+	'confirmaccount-none-r' => 'V tomto seznamu nyní nejsou žádné zamítnuté žádosti o vytvoření účtu.',
+	'confirmaccount-none-e' => 'V tomto seznamu nyní nejsou žádné vypršené žádosti o vytvoření účtu.',
 	'confirmaccount-real-q' => 'Jméno',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografie',
+	'confirmaccount-showopen' => 'otevřené žádosti',
+	'confirmaccount-showrej' => 'odmítnuté žádosti',
 	'confirmaccount-showheld' => 'Zobrazit seznam účtů čekajících na schválení',
+	'confirmaccount-showexp' => 'vypršelé žádosti',
 	'confirmaccount-review' => 'Schválit/Odmítnout',
+	'confirmaccount-types' => 'Vyberte frontu potvrzování účtů:',
 	'confirmaccount-all' => '(zobrazit všechny fronty)',
 	'confirmaccount-type' => 'Zvolená fronta:',
 	'confirmaccount-type-0' => 'budoucí autoři',
@@ -1812,6 +1823,7 @@ Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší
 	'confirmaccount-q-open' => 'otevřené žádosti',
 	'confirmaccount-q-held' => 'pozastavené žádosti',
 	'confirmaccount-q-rej' => 'nedávno zamítnuté žádosti',
+	'confirmaccount-q-stale' => 'vypršelé žádosti',
 	'confirmaccount-leg-user' => 'Uživatelský účet',
 	'confirmaccount-leg-areas' => 'Hlavní oblasti zájmu',
 	'confirmaccount-leg-person' => 'Osobní informace',
@@ -6944,14 +6956,15 @@ $messages['ml'] = array(
 	'requestaccount-urls' => 'വെബ്ബ്സൈറ്റുകളുടെ പട്ടിക (ഓരോന്നും വെവ്വേറെ വരിയിൽ കൊടുക്കുക):',
 	'requestaccount-agree' => 'താങ്കളുടെ പേരു യഥാർത്ഥമാണെന്നും, താങ്കൾ ഞങ്ങളുടെ നയങ്ങളും പരിപാടികളും അംഗീകരിക്കുന്നു എന്നും പ്രതിജ്ഞ ചെയ്യണം.',
 	'requestaccount-inuse' => 'സ്ഥിരീകരണം കാത്തിരിക്കുന്ന അഭ്യർത്ഥനകളിൽ ഒന്ന് ഇതേ ഉപയോക്തൃനാമം ഉപയോഗിക്കുന്നുണ്ട്.',
-	'requestaccount-tooshort' => 'താങ്കളുടെ ആത്മകഥയിൽ കുറഞ്ഞത് $1 വാക്കുകൾ വേണം.',
+	'requestaccount-tooshort' => 'താങ്കളുടെ ആത്മകഥയിൽ കുറഞ്ഞത് {{PLURAL:$1|ഒരു വാക്ക്|$1 വാക്കുകൾ}} വേണം.',
 	'requestaccount-emaildup' => 'സ്ഥിരീകരണം കാത്തിരിക്കുന്ന അഭ്യർത്ഥനകളിൽ ഒന്ന് ഇതേ ഇമെയിൽ വിലാസം ഉപയോഗിക്കുന്നുണ്ട്.',
 	'requestaccount-exts' => 'അറ്റാച്ച് ചെയ്ത പ്രമാണ തരം അനുവദനീയമല്ല.',
 	'requestaccount-submit' => 'അംഗത്വത്തിനായി അഭ്യർത്ഥിക്കുക',
 	'requestaccount-email-subj' => '{{SITENAME}} സം‌രംഭത്തിലെ ഇമെയിൽ വിലാസ സ്ഥിരീകരണം',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} സം‌രംഭത്തിൽ അംഗത്വം സൃഷ്ടിക്കാനുള്ള അഭ്യർത്ഥന',
 	'requestaccount-email-body-admin' => '"$1" ന്റെ അംഗത്വത്തിനായുള്ള അപേക്ഷ സ്ഥിരീകരണത്തിനായി കാത്തിരിക്കുന്നു. ഇമെയിൽ വിലാസം ഇതിനകം സ്ഥിരീകരിക്കപ്പെട്ടിരിക്കുന്നു. ഈ അപേക്ഷ താങ്കൾക്ക് ഇവിടെ "$2" സ്ഥിരീകരിക്കാവുന്നതാണ്‌.',
-	'acct_request_throttle_hit' => 'ക്ഷമിക്കുക, താങ്കൾ ഇതിനകം  {{PLURAL:$1|അംഗത്വത്തിനായി|$1 അംഗത്വങ്ങൾക്കായി]] അഭ്യർത്ഥിച്ചു കഴിഞ്ഞു. ഇനി കൂടുതൽ അഭ്യർത്ഥന നടത്തുന്നതു അനുവദനീയമല്ല.',
+	'acct_request_throttle_hit' => 'ക്ഷമിക്കുക, താങ്കൾ ഇതിനകം {{PLURAL:$1|അംഗത്വത്തിനായി|$1 അംഗത്വങ്ങൾക്കായി}} അഭ്യർത്ഥിച്ചു കഴിഞ്ഞു.
+ഇനി കൂടുതൽ അഭ്യർത്ഥന നടത്തുന്നതു അനുവദനീയമല്ല.',
 	'requestaccount-loginnotice' => "ഉപയോക്തൃ അംഗത്വം ലഭിക്കുന്നതിനായി താങ്കൾ '''[[Special:RequestAccount|ഉപയോക്തൃഅംഗത്വത്തിനായി അഭ്യർത്ഥിക്കണം]]'''.",
 	'confirmaccount-newrequests' => "ഇമെയിൽ വിലാസം സ്ഥിരീകരിക്കപ്പെട്ട '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|അംഗത്വത്തിനായുള്ള അഭ്യർത്ഥന]]|[[Special:ConfirmAccounts|അംഗത്വത്തിനായുള്ള അഭ്യർത്ഥനകൾ]]}} പെൻ‌ഡിംങ്ങാണ്‌.",
 	'confirmaccounts' => 'അംഗത്വ അഭ്യർത്ഥനകൾ സ്ഥിരീകരിക്കുക',
@@ -7028,6 +7041,14 @@ $messages['ml'] = array(
 	'usercredentials-urls' => 'വെബ്ബ് സൈറ്റുകളുടെ പട്ടിക:',
 	'usercredentials-ip' => 'യഥാർത്ഥ IP വിലാസം:',
 	'usercredentials-member' => 'അവകാശങ്ങൾ',
+);
+
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'confirmaccount-name' => 'Хэрэглэгчийн нэр',
+	'usercredentials-user' => 'Хэрэглэгчийн нэр:',
 );
 
 /** Marathi (मराठी)
@@ -8095,6 +8116,39 @@ $messages['os'] = array(
 	'confirmaccount-pos-0' => 'автор',
 	'confirmaccount-noreason' => '(нæй)',
 	'usercredentials-email' => 'Эл. посты адрис:',
+);
+
+/** Punjabi (ਪੰਜਾਬੀ)
+ * @author Aalam
+ */
+$messages['pa'] = array(
+	'requestaccount' => 'ਅਕਾਊਂਟ ਬੇਨਤੀ',
+	'requestaccount-page' => '{{ns:project}}: ਸਰਵਿਸ ਦੀਆਂ ਸ਼ਰਤਾਂ',
+	'requestaccount-dup' => "'''ਨੋਟ: ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਰਜਿਸਟਰ ਹੋਏ ਅਕਾਊਂਟ ਨਾਲ ਲਾਗ ਹੋ ਚੁੱਕੇ ਹੋ।'''",
+	'requestaccount-leg-user' => 'ਯੂਜ਼ਰ ਅਕਾਊਂਟ',
+	'requestaccount-leg-areas' => 'ਦਿਲਚਸਪੀ ਦੇ ਖਾਸ ਖੇਤਰ',
+	'requestaccount-leg-person' => 'ਨਿੱਜੀ ਜਾਣਕਾਰੀ',
+	'requestaccount-leg-other' => 'ਹੋਰ ਜਾਣਕਾਰੀ',
+	'requestaccount-leg-tos' => 'ਸਰਵਿਸ ਦੀਆਂ ਸ਼ਰਤਾਂ',
+	'requestaccount-real' => 'ਅਸਲੀ ਨਾਂ:',
+	'requestaccount-same' => '(ਅਸਲੀ ਨਾਂ ਵਾਂਗ ਹੀ)',
+	'requestaccount-email' => 'ਈਮੇਲ ਐਡਰੈੱਸ:',
+	'requestaccount-reqtype' => 'ਸਥਿਤੀ:',
+	'requestaccount-level-0' => 'ਲੇਖਕ',
+	'requestaccount-level-1' => 'ਐਡੀਟਰ',
+	'requestaccount-bio' => 'ਨਿੱਜੀ ਜਾਣਕਾਰੀ:',
+	'requestaccount-notes' => 'ਹੋਰ ਨੋਟ:',
+	'requestaccount-inuse' => 'ਯੂਜ਼ਰ ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਅਕਾਊਂਟ ਬੇਨਤੀ ਲਈ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।',
+	'requestaccount-submit' => 'ਅਕਾਊਂਟ ਬੇਨਤੀ',
+	'requestaccount-email-subj' => '{{SITENAME}} ਈਮੇਲ ਐਡਰੈੱਸ ਪੁਸ਼ਟੀ',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} ਅਕਾਊਂਟ ਮੰਗ',
+	'confirmaccounts' => 'ਅਕਾਊਂਟ ਮੰਗ ਪੁਸ਼ਟੀ',
+	'confirmaccount-real-q' => 'ਨਾਂ',
+	'confirmaccount-email-q' => 'ਈਮੇਲ',
+	'confirmaccount-showopen' => 'ਮੰਗਾਂ ਖੋਲ੍ਹੋ',
+	'confirmaccount-showrej' => 'ਰੱਦ ਕੀਤੀਆਂ ਮੰਗਾਂ',
+	'confirmaccount-review' => 'ਝਲਕ',
+	'confirmaccount-type' => 'ਕਤਾਰ:',
 );
 
 /** Deitsch (Deitsch)
@@ -11407,10 +11461,13 @@ $messages['uk'] = array(
 Ваш пароль буде надісланий по електронній пошті після створення облікового запису.',
 	'requestaccount-real' => "Справжнє ім'я:",
 	'requestaccount-email' => 'Адреса електронної пошти:',
+	'requestaccount-reqtype' => 'Посада:',
 	'requestaccount-level-0' => 'автор',
 	'requestaccount-level-1' => 'редактор',
 	'requestaccount-bio' => 'Особиста біографія:',
 	'requestaccount-notes' => 'Додаткова інформація:',
+	'requestaccount-tooshort' => 'Ваша біографія повинна містити не менше $1 {{PLURAL:$1|слова|слів}}.',
+	'requestaccount-exts' => 'Недозволений тип прикріпленого файлу.',
 	'requestaccount-submit' => 'Надіслати запит облікового запису',
 	'requestaccount-email-subj-admin' => '{{SITENAME}}: запит облікового запису',
 	'confirmaccounts' => 'Підтвердити запит облікового запису',
