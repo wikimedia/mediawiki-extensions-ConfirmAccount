@@ -296,7 +296,7 @@ function efConfirmAccountSchemaUpdates( $updater = null ) {
 
 			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/archives/patch-email-index.sql", true ) );
 		} else if ( $updater->getDB()->getType() == 'postgres' ) {
-			$updater->addExtensionUpdate( array( 'addTable', 'account_requests', "$base/ConfirmAccount.pg.sql", true );
+			$updater->addExtensionUpdate( array( 'addTable', 'account_requests', "$base/ConfirmAccount.pg.sql", true ) );
 
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_held', "TIMESTAMPTZ" ) );
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_filename', "TEXT" ) );
