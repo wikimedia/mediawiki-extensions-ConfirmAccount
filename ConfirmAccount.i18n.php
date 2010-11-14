@@ -1464,6 +1464,11 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'requestaccount' => 'Goulenn ur gont implijer',
+	'requestaccount-text' => "'''Leugnit hag adkasit ar furmskird a-is evit goulenn ur gont implijer'''.
+
+Ho pet sur da vezañ lennet mat [[{{MediaWiki:Requestaccount-page}}|Termenoù ar servij]] da gentañ a-raok goulenn krouiñ ur gont.
+
+Ur wezh aprouet ar gont e vo kaset deoc'h ur gemennadenn der bostel hag e c'hallot implijout ho kont war [[Special:UserLogin|ar bajenn gevreañ]].",
 	'requestaccount-page' => '{{ns:project}}: Amplegadoù implijout',
 	'requestaccount-dup' => "'''Notenn : Kevreet oc'h dija gant ur gont marilhet.'''",
 	'requestaccount-leg-user' => 'Kont implijer',
@@ -1484,6 +1489,7 @@ $messages['br'] = array(
 	'requestaccount-agree' => 'Rankout a rit testeni ez eo reizh ho anv gwir hag e zegemerit an Amplegadoù Implijout.',
 	'requestaccount-inuse' => "Implijet eo an anv implijer en ur goulenn kont n'eo ket bet respontet c'hoazh.",
 	'requestaccount-tooshort' => 'Ho puhezskrid a rank bezañ ennañ $1 {{PLURAL:$1|ger|ger}} da nebeutañ.',
+	'requestaccount-emaildup' => "Ur goulenn all a c'hortoz bezañ aprouet a ra gant an hevelep chomlec'h elektronek.",
 	'requestaccount-exts' => "Ar seurt restr stag n'eo ket aotreet.",
 	'requestaccount-submit' => 'Goulenn ur gont implijer',
 	'request-account-econf' => "Kadarnaet eo bet ho chomlec'h postel ha meneget e vo evel m'emañ en ho koulenn kont.",
