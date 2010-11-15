@@ -329,7 +329,7 @@ class RequestAccountPage extends SpecialPage {
 				return false;
 		 	}
 			$veri = $this->verify( $this->mTempPath, $finalExt );
-			if ( $veri !== true ) {
+			if ( !$veri->isGood() ) {
 				$this->mPrevAttachment = '';
 				$this->showForm( wfMsgHtml( 'uploadcorrupt' ) );
 				return false;
@@ -439,7 +439,7 @@ class RequestAccountPage extends SpecialPage {
 	 *
 	 * @param string $tmpfile the full path of the temporary file to verify
 	 * @param string $extension The filename extension that the file is to be served with
-	 * @return mixed true of the file is verified, a WikiError object otherwise.
+	 * @return Status object
 	 */
 	protected function verify( $tmpfile, $extension ) {
 		# magically determine mime type
@@ -451,18 +451,18 @@ class RequestAccountPage extends SpecialPage {
 			wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n" );
 			# check mime type against file extension
 			if ( !UploadBase::verifyExtension( $mime, $extension ) ) {
-				return new WikiErrorMsg( 'uploadcorrupt' );
+				return Status::newFatal( 'uploadcorrupt' );
 			}
 
 			# check mime type blacklist
 			global $wgMimeTypeBlacklist;
 			if ( isset( $wgMimeTypeBlacklist ) && !is_null( $wgMimeTypeBlacklist )
 				&& $this->checkFileExtension( $mime, $wgMimeTypeBlacklist ) ) {
-				return new WikiErrorMsg( 'filetype-badmime', htmlspecialchars( $mime ) );
+				return Status::newFatal( 'filetype-badmime', $mime );
 			}
 		}
 		wfDebug( __METHOD__ . ": all clear; passing.\n" );
-		return true;
+		return Status::newGood();
 	}
 
 	/**
