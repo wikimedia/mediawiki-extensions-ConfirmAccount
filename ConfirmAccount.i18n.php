@@ -1476,6 +1476,9 @@ Ur wezh aprouet ar gont e vo kaset deoc'h ur gemennadenn der bostel hag e c'hall
 	'requestaccount-leg-person' => 'Titouroù personel',
 	'requestaccount-leg-other' => 'Titouroù all',
 	'requestaccount-leg-tos' => 'Divizoù servij',
+	'requestaccount-acc-text' => "Kaset e vo ur c'hemenn kadarnaat d'ho chomlec'h postel kerkent ha ma vo bet kaset ar goulenn.
+Respontit d'ar c'hemenn en ur glikañ war al liamm kadarnaat a gavot er postel.
+Kaset e vo deoc'h ho ker-tremen dre bostel ivez pa vo bet krouet ho kont ganeoc'h.",
 	'requestaccount-real' => 'Anv gwir :',
 	'requestaccount-same' => '(heñvel ou zh ar gwir anv)',
 	'requestaccount-email' => "Chomlec'h postel :",
@@ -1492,6 +1495,8 @@ Ur wezh aprouet ar gont e vo kaset deoc'h ur gemennadenn der bostel hag e c'hall
 	'requestaccount-emaildup' => "Ur goulenn all a c'hortoz bezañ aprouet a ra gant an hevelep chomlec'h elektronek.",
 	'requestaccount-exts' => "Ar seurt restr stag n'eo ket aotreet.",
 	'requestaccount-submit' => 'Goulenn ur gont implijer',
+	'requestaccount-sent' => "Kaset eo bet ervat ho koulenn krouién ur gont implijer; lakaet eo bet e roll gortoz ar goulennoù da vezañ aprouet.
+Ur postel kadarnaat zo bet kaset d'ho chomlec'h postel.",
 	'request-account-econf' => "Kadarnaet eo bet ho chomlec'h postel ha meneget e vo evel m'emañ en ho koulenn kont.",
 	'requestaccount-email-subj' => "Gwiriañ ar chomlec'h postel evit {{SITENAME}}",
 	'requestaccount-email-body' => "Unan bennak, c'hwi moarvat, gant ar chomlec'h IP \$1, en deus goulennet sevel ur gont \"\$2\" gant ar chomlec'h postel-mañ war {{SITENAME}}.
@@ -1569,6 +1574,10 @@ krouet eo bet ar gont implijer nevez [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Distaolet eo bet ar goulenn kont.',
 	'confirmaccount-viewing' => '(gwelet gant [[User:$1|$1]] evit bremañ)',
 	'confirmaccount-summary' => 'O krouiñ pajenn implijer an implijer nevez gant e vuhezskrid.',
+	'confirmaccount-welc' => "'''Degemer mat e ''{{SITENAME}}''!'''
+Spi hon eus e kemerot perzh da vat ha mat.
+Marteze hoc'h eus c'hoant da lenn ar [[{{MediaWiki:Helppage}}|pajennoù skoazell]].
+Adarre, degemer mat ha plijadur deoc'h !",
 	'confirmaccount-wsum' => 'Degemer mat !',
 	'confirmaccount-email-subj' => 'Goulenn ur gont war {{SITENAME}}',
 	'confirmaccount-email-body' => "Ho koulenn kont zo bet aprouet e {{SITENAME}}.
