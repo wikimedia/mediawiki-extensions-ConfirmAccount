@@ -766,15 +766,15 @@ $messages['arc'] = array(
 	'confirmaccount-real-q' => 'ܫܡܐ',
 	'confirmaccount-email-q' => 'ܒܝܠܕܪܐ ܐܠܩܛܪܘܢܝܐ',
 	'confirmaccount-review' => 'ܬܢܝ',
-	'confirmaccount-leg-user' => 'ܚܘܫܒܢܐ ܕܡܬܚܫܚܢܐ',
+	'confirmaccount-leg-user' => 'ܚܘܫܒܢܐ ܕܡܦܠܚܢܐ',
 	'confirmaccount-leg-person' => 'ܝܕ̈ܥܬܐ ܦܪ̈ܨܘܦܝܬܐ',
 	'confirmaccount-leg-other' => 'ܝܕ̈ܥܬܐ ܐܚܪ̈ܢܝܬܐ',
 	'confirmaccount-pos-0' => 'ܣܝܘܡܐ',
 	'confirmaccount-noreason' => '(ܠܐ ܡܕܡ)',
 	'confirmaccount-submit' => 'ܚܬܬ',
 	'confirmaccount-wsum' => 'ܒܫܝܢܐ!',
-	'usercredentials-user' => 'ܫܡܐ ܕܡܬܚܫܚܢܐ:',
-	'usercredentials-leg-user' => 'ܚܘܫܒܢܐ ܕܡܬܚܫܚܢܐ',
+	'usercredentials-user' => 'ܫܡܐ ܕܡܦܠܚܢܐ:',
+	'usercredentials-leg-user' => 'ܚܘܫܒܢܐ ܕܡܦܠܚܢܐ',
 	'usercredentials-leg-person' => 'ܝܕ̈ܥܬܐ ܦܪ̈ܨܘܦܝܬܐ',
 	'usercredentials-leg-other' => 'ܝܕ̈ܥܬܐ ܐܚܪ̈ܢܝܬܐ',
 	'usercredentials-email' => 'ܒܝܠܕܪܐ ܐܠܩܛܪܘܢܝܐ:',
@@ -1479,6 +1479,10 @@ Ur wezh aprouet ar gont e vo kaset deoc'h ur gemennadenn der bostel hag e c'hall
 	'requestaccount-acc-text' => "Kaset e vo ur c'hemenn kadarnaat d'ho chomlec'h postel kerkent ha ma vo bet kaset ar goulenn.
 Respontit d'ar c'hemenn en ur glikañ war al liamm kadarnaat a gavot er postel.
 Kaset e vo deoc'h ho ker-tremen dre bostel ivez pa vo bet krouet ho kont ganeoc'h.",
+	'requestaccount-areas-text' => "Dibabit an tachennoù ma'z oc'h barrek da vat, pe ar re ma'z oc'h tuet da gemer perzh ar muiañ.",
+	'requestaccount-ext-text' => "Prevez e chomo an titour da-heul ha n'hallo bezañ implijet nemet evit ar reked-mañ.
+Gallout a rit rollañ darempredoù evel an niverennoù pellgomz evit kaout un tamm skoazell da gadarnaat piv oc'h.",
+	'requestaccount-bio-text' => "Dre zoiuer e vo lakaet ho tamm buhez war ho pajenn implijer. Klaskit skrivañ warni traoù a ro kred ennoc'h. Gwiriit mat ez eo mat deoc'h skignañ seurt titouroù. Cheñch hoc'h anv a c'hallit en ur ober gant [[Special:Preferences|Penndibaboù]].",
 	'requestaccount-real' => 'Anv gwir :',
 	'requestaccount-same' => '(heñvel ou zh ar gwir anv)',
 	'requestaccount-email' => "Chomlec'h postel :",
@@ -1494,6 +1498,9 @@ Kaset e vo deoc'h ho ker-tremen dre bostel ivez pa vo bet krouet ho kont ganeoc'
 	'requestaccount-tooshort' => 'Ho puhezskrid a rank bezañ ennañ $1 {{PLURAL:$1|ger|ger}} da nebeutañ.',
 	'requestaccount-emaildup' => "Ur goulenn all a c'hortoz bezañ aprouet a ra gant an hevelep chomlec'h elektronek.",
 	'requestaccount-exts' => "Ar seurt restr stag n'eo ket aotreet.",
+	'requestaccount-resub' => "Ret eo deo'h addibab ho CV evit abegoù surentez. Mar ne fell ket deoc'h lakaat anezhañ ken, lezit goullo ar vaezienn-mañ.",
+	'requestaccount-tos' => 'Lennet em eus [[{{MediaWiki:Requestaccount-page}}|reolennoù implijout]] {{SITENAME}} hag asantiñ a ran doujañ outo.
+Da vat eo ma anv gwir an hini am eus merket dindan "Anv gwir".',
 	'requestaccount-submit' => 'Goulenn ur gont implijer',
 	'requestaccount-sent' => "Kaset eo bet ervat ho koulenn krouién ur gont implijer; lakaet eo bet e roll gortoz ar goulennoù da vezañ aprouet.
 Ur postel kadarnaat zo bet kaset d'ho chomlec'h postel.",
@@ -1518,8 +1525,30 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-newrequests' => "Er mare-mañ ez eus '''$1''' [[Special:ConfirmAccounts|goulenn kont{{PLURAL:$1||}}]] o vont en-dro.",
 	'confirmaccounts' => 'Kadarnaat ar goulennoù kont',
 	'confirmedit-desc' => "Reiñ a ra ar galloud d'ar burevidi da wiriañ rekedoù ar c'hontoù implijer",
-	'confirmaccount-none-o' => "N'ez eus er roll, er mare-mañ, reked ebet evit kontoù.",
-	'confirmaccount-none-e' => "N'ez eus er roll, er mare-mañ, reked ebet evit kontoù n'int mat ken.",
+	'confirmaccount-maintext' => "'''Implijet e vez ar bajenn-mañ evit kadarnaat ar goulennoù krouiñ kontoù evit ''{{SITENAME}}'''''.
+
+Tri isroll a ya d'ober pep goulenn krouiñ ur gont implijer.
+Unan evit ar goulennoù da vezañ pledet ganto, unan evit ar re lakaet a-gostez gant merourien all da c'hortoz muioc'h a ditouroù, hag unan all evit ar goulennoù nac'het nevez zo.
+
+Pa respontit d'ur  goulenn, gwiriit anezhañ pizh ha, diouzh an dro, kadarnait an titouroù zo ennañ.
+Miret e vo hoc'h oberiadennoù en ur marilh a-ziforc'h.
+Emaoc'h sañset adwelet ivez an obererezh a c'hoarvez amañ en tu all eus ar pezh a rit-c'hwi hoc'h-unan.",
+	'confirmaccount-list' => 'A-is emañ roll ar goulennoù krouiñ kontoù a chom da vezañ aprouet.
+Ur wezh aprouet pe distaolet ur goulenn e vo tennet a-ziwar ar roll.',
+	'confirmaccount-list2' => "A-is emañ roll ar goulennoù distaolet nevez zo a c'hall bezañ diverket ent emgefre goude un nebeud devezhioù. Aprouet e c'hallont c'hoazh bezañ, setu ma c'hallit teuler ur sell war an nac'hadennoù a-raok ma vint diverket.",
+	'confirmaccount-list3' => "A-is emañ roll ar goulennoù krouiñ kontoù zo aet d'o zermen; diverket e c'hallfent bezañ ent emgefre a-benn un nebeud deizioù.
+Aprouet e c'hallont c'hoazh bezañ.",
+	'confirmaccount-text' => "Setu ur goulenn da c'hortoz evit ur gont implijer war '''{{SITENAME}}'''.
+
+Gwiriit pizh an holl ditouroù a-is. Ma aprouit ar goulenn, diuzit ar statud da vezañ roet d'an implijer. Ne sello ket ar c'hemmoù degaset da vuhezskridoù an arload ouzh an daveennoù-pad miret a-raok.
+
+Notit e c'hallit dibab krouiñ ur gont gant un anv all. Na rit se nemet kuit da gaout tabutoù gant anvioù implijerien all.
+
+Mar kuitait ar bajenn-mañ hep kadarnaat pe disteuler ar goulenn e chomo hemañ war c'hortoz.",
+	'confirmaccount-none-o' => "N'eus er mare-mañ, er roll, goulenn krouiñ kont digor ebet da c'hortoz.",
+	'confirmaccount-none-h' => "N'eus er mare-mañ, er roll, goulenn krouiñ kont ebet da c'hortoz.",
+	'confirmaccount-none-r' => "Evit ar mare n'eus ket a c'houlennoù distaolet er roll.",
+	'confirmaccount-none-e' => "N'eus er roll, er mare-mañ, goulenn krouiñ kont ebet zo aet d'e dermen.",
 	'confirmaccount-real-q' => 'Anv',
 	'confirmaccount-email-q' => 'Postel',
 	'confirmaccount-bio-q' => 'Levrlennadur',
@@ -1537,6 +1566,8 @@ Ne c'hallit ket ober goulennoù all.",
 	'confirmaccount-q-held' => "goulennoù dalc'het",
 	'confirmaccount-q-rej' => 'goulennoù distaolet nevez zo',
 	'confirmaccount-q-stale' => 'Goulennoù dispredet',
+	'confirmaccount-badid' => "N'eus goulenn ebet da c'hortoz a glot gant an ID roet.
+Moarvat eo bet graet war-dro dija.",
 	'confirmaccount-leg-user' => 'Kont implijer',
 	'confirmaccount-leg-areas' => 'Diduadennoù pennañ',
 	'confirmaccount-leg-person' => 'Titouroù personel',
@@ -1598,6 +1629,21 @@ $3
 
 Abalamour d'ar surentez e tleot cheñch ho ker-tremen ar wech kentañ ma kevreot.
 Evit kevreañ, kit da {{fullurl:Special:UserLogin}}, mar plij.",
+	'confirmaccount-email-body3' => "Ho tigarez met distaolet eo bet ho koulenn evit ar gont \"\$1\" war {{SITENAME}}.
+
+Meur a abeg a c'hall displegañ kement-mañ.
+Marteze n'eo ket bet leuniet mat ar furmskrid ganeoc'h, pe n'hoc'h eus ket lakaet a-walc'h a ditouroù. A c'hall bezaén ne glotfe ket ho koulenn gant an dezverkoù rekis ivez.
+Gallout a ra bezañ rolloù daremprediñ mwar al lec'hienn a c'hallit mont da welet mar fell deoc'h gouzout hiroc'h diwar-benn dezverkoù ar c'hontoù implijer.",
+	'confirmaccount-email-body4' => 'Ho tigarez, distaolet eo bet ho koulenn kont "$1" evit {{SITENAME}}.
+
+$2
+
+Gallout a ra bezañ rolloù daremprediñ a c\'hallit mont da welet mar fell deoc\'h gouzout hiroc\'h diwar-benn dezverkoù rekis ar c\'hontoù implijer.',
+	'confirmaccount-email-body5' => "A-raok na c'hallfe ho koulenn kont \"\$1\" bezañ degemeret evit {{SITENAME}} e rankit rein un nebeud titouroù ouzhpenn.
+
+\$2
+
+Gallout a ra bezañ rolloù daremprediñ a c'hallit mont da welet mar fell deoc'h gouzout hiroc'h diwar-benn dezverkoù rekis ar c'hontoù implijer.",
 	'usercredentials' => 'Daveennoù an implijer',
 	'usercredentials-leg' => 'Gwiriekadenn kadarnaet eus daveoù un implijer.',
 	'usercredentials-user' => 'Anv implijer :',
@@ -1617,6 +1663,7 @@ Evit kevreañ, kit da {{fullurl:Special:UserLogin}}, mar plij.",
 	'usercredentials-badid' => "N'eus ket bet kavet daveennoù evit an implijer-mañ.
 Gwiriit ha skrivet-mat eo an anv.",
 	'right-confirmaccount' => "Gwelet [[Special:ConfirmAccounts|lostad ar c'hontoù goulennet]]",
+	'right-requestips' => "Gwelet chomlec'hioù IP ar c'houlennerien pa vez pledet gant goulennoù krouiñ kontoù nevez.",
 	'right-lookupcredentials' => 'Gwelet [[Special:UserCredentials|daveennoù an implijerien]]',
 );
 
