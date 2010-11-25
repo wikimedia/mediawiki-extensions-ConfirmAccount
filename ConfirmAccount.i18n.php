@@ -5201,7 +5201,7 @@ $3
 
 Setelah akun ini dibuat, hanya Anda yang akan dikirim kata sandinya melalui surel.
 Jika Anda merasa *tidak pernah* mendaftar, jangan ikuti pranala di atas.
-Kode konfirmasi ini akan kadaluwarsa pada $4.',
+Kode konfirmasi ini akan kedaluwarsa pada $4.',
 	'requestaccount-email-subj-admin' => 'Permintaan akun {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" telah mengajukan permintaan pembuatan akun dan sedang menunggu konfirmasi.
 Surel ini telah dikonfirmasi. Anda dapat memberikan konfirmasi atas permintaan tersebut di sini "$2".',
@@ -5223,7 +5223,7 @@ Anda juga perlu meninjau aktivitas apa pun yang dilakukan di sini di samping yan
 Jika disetujui ataupun ditolak, permintaan tersebut akan dikeluarkan dari daftar ini.',
 	'confirmaccount-list2' => 'Berikut adalah daftar permintaan akun yang baru ditolak dan akan dihapus secara otomatis setelah beberapa hari.
 Permintaan ini masih dapat disetujui untuk dijadikan akun, tetapi Anda mungkin perlu mendiskusikan terlebih dahulu dengan pengurus yang menolak permintaan tersebut sebelumnya.',
-	'confirmaccount-list3' => 'Berikut adalah daftar permintaan akun yang telah kadaluwarsa dan akan dihapuskan dalam beberapa hari.
+	'confirmaccount-list3' => 'Berikut adalah daftar permintaan akun yang telah kedaluwarsa dan akan dihapus dalam beberapa hari.
 Permintaan ini masih dapat disetujui untuk dijadikan akun.',
 	'confirmaccount-text' => "Ini adalah antrean permintaan untuk membuat akun di '''{{SITENAME}}'''.
 
@@ -5237,14 +5237,14 @@ Jika Anda tidak menyetujui atau menolak permintaan ini, maka permintaan ini akan
 	'confirmaccount-none-o' => 'Tidak ada antrean permintaan akun dalam daftar ini.',
 	'confirmaccount-none-h' => 'Tidak ada antrean permintaan akun yang ditunda dalam daftar ini.',
 	'confirmaccount-none-r' => 'Tidak ada permintaan akun yang baru ditolak di daftar ini.',
-	'confirmaccount-none-e' => 'Tidak ada permintaan akun yang kadaluwarsa dalam daftar ini.',
+	'confirmaccount-none-e' => 'Tidak ada permintaan akun yang kedaluwarsa dalam daftar ini.',
 	'confirmaccount-real-q' => 'Nama',
 	'confirmaccount-email-q' => 'Surel',
 	'confirmaccount-bio-q' => 'Biografi',
 	'confirmaccount-showopen' => 'permintaan dalam antrean',
 	'confirmaccount-showrej' => 'permintaan ditolak',
 	'confirmaccount-showheld' => 'permintaan ditunda',
-	'confirmaccount-showexp' => 'permintaan kadaluwarsa',
+	'confirmaccount-showexp' => 'permintaan kedaluwarsa',
 	'confirmaccount-review' => 'Tinjau',
 	'confirmaccount-types' => 'Pilih antrean konfirmasi akun di bawah ini:',
 	'confirmaccount-all' => '(tampilkan semua antrean)',
@@ -5254,7 +5254,7 @@ Jika Anda tidak menyetujui atau menolak permintaan ini, maka permintaan ini akan
 	'confirmaccount-q-open' => 'permintaan dalam antrean',
 	'confirmaccount-q-held' => 'permintaan ditunda',
 	'confirmaccount-q-rej' => 'permintaan ditolak',
-	'confirmaccount-q-stale' => 'permintaan kadaluwarsa',
+	'confirmaccount-q-stale' => 'permintaan kedaluwarsa',
 	'confirmaccount-badid' => 'Tidak ada permintaan dalam antrean yang terkait dengan ID tersebut.
 Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-leg-user' => 'Akun pengguna',
