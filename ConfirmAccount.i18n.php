@@ -6987,8 +6987,8 @@ $2
 	'usercredentials-member' => 'Права:',
 	'usercredentials-badid' => 'Нема пронајдено препораки за овој корисник.
 Проверете дали името е правилно напишано.',
-	'right-confirmaccount' => 'Погледајте ја [[Special:ConfirmAccounts|редицата со барани сметки]]',
-	'right-requestips' => 'Погледајте ги IP-адресите на барателот додека обработувате барани сметки',
+	'right-confirmaccount' => 'Погледајте ја [[Special:ConfirmAccounts|редицата со побарани сметки]]',
+	'right-requestips' => 'Прегледување на IP-адресите на барателот при работата на побарани сметки',
 	'right-lookupcredentials' => 'Погледајте ги [[Special:UserCredentials|препораките за корисникот]]',
 );
 
