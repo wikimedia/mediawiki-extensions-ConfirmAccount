@@ -5853,7 +5853,7 @@ $2
 利用者アカウント承認方針に関する詳細は、サイト連絡先までお尋ねください。',
 	'usercredentials' => '利用者信頼情報',
 	'usercredentials-leg' => '利用者信頼情報の閲覧',
-	'usercredentials-user' => '利用者名:',
+	'usercredentials-user' => '利用者名：',
 	'usercredentials-text' => '指定されたアカウント利用者の信頼情報は以下のとおりです。',
 	'usercredentials-leg-user' => '利用者アカウント',
 	'usercredentials-leg-areas' => '関心のある分野',
