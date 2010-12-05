@@ -3057,6 +3057,24 @@ $messages['ext'] = array(
 	'confirmaccount-wsum' => 'Bienviniu!',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'requestaccount-leg-person' => 'اطلاعات شخصی',
+	'requestaccount-leg-other' => 'اطلاعات دیگر',
+	'requestaccount-real' => 'نام واقعی:',
+	'requestaccount-same' => '(همان نام واقعی)',
+	'confirmaccount-real-q' => 'نام',
+	'confirmaccount-review' => 'بازبینی',
+	'confirmaccount-reqtype' => 'موقعیت:',
+	'confirmaccount-pos-1' => 'ویرایشگر',
+	'confirmaccount-noreason' => '(هیچ)',
+	'usercredentials-user' => 'نام کاربری:',
+	'usercredentials-leg-user' => 'حساب کاربری',
+	'usercredentials-leg-person' => 'اطلاعات شخصی',
+);
+
 /** Finnish (Suomi)
  * @author Centerlink
  * @author Cimon Avaro
