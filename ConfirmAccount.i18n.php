@@ -8900,6 +8900,7 @@ Podem haver listas de contactos no site que poderá usar se deseja saber mais so
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
+ * @author Helder.wiki
  * @author Heldergeovane
  * @author Luckas Blade
  */
@@ -9076,7 +9077,7 @@ $2
 Podem haver listas de contatos no sítio que poderá usar se desejar saber mais sobre a política de contas de utilizador.',
 	'usercredentials' => 'Credenciais do utilizador',
 	'usercredentials-leg' => 'Procurar credenciais confirmadas para um utilizador',
-	'usercredentials-user' => 'Nome de utilizador:',
+	'usercredentials-user' => 'Nome de usuário:',
 	'usercredentials-text' => 'Abaixo estão as credenciais validadas da conta de utilizador selecionada.',
 	'usercredentials-leg-user' => 'Conta de utilizador',
 	'usercredentials-leg-areas' => 'Principais áreas de interesse',
