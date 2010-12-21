@@ -11698,6 +11698,7 @@ $messages['vo'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'requestaccount-level-0' => 'מחבר',
 	'confirmaccount-real-q' => 'נאמען',
 	'confirmaccount-leg-user' => 'באַניצער קאנטע',
 	'confirmaccount-name' => 'באַניצער נאָמען',
