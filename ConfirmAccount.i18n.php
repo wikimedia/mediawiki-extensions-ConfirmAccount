@@ -1708,6 +1708,7 @@ Ne možete podnositi više zahtjeva.',
 	'confirmaccount-list' => 'Ispod je spisak zahtjeva za računima koji čekaju na odobravanje.
 Jednom podnesen zahtjev koji se odobri ili odbije će se ukloniti sa ovog spiska.',
 	'confirmaccount-none-o' => 'Trenutno nema otvorenih zahtjeva na račun na čekanju na ovom spisku.',
+	'confirmaccount-none-h' => 'Trenutno nema zadržanih zahtjeva na račun na čekanju na ovom spisku.',
 	'confirmaccount-real-q' => 'Ime',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografija',
@@ -1761,6 +1762,9 @@ Da bi ste se prijaviti, molimo idite na {{fullurl:Special:UserLogin}}.',
 	'usercredentials-real' => 'Pravo ime:',
 	'usercredentials-bio' => 'Biografija:',
 	'usercredentials-attach' => 'Biografija:',
+	'usercredentials-notes' => 'Dodatne napomene:',
+	'usercredentials-urls' => 'Spisak web sajtova:',
+	'usercredentials-ip' => 'Izvorna IP adresa:',
 	'usercredentials-member' => 'Prava:',
 );
 
