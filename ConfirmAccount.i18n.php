@@ -1679,6 +1679,7 @@ $messages['bs'] = array(
 	'requestaccount-leg-person' => 'Lične informacije',
 	'requestaccount-leg-other' => 'Ostale informacije',
 	'requestaccount-leg-tos' => 'Uslovi usluge',
+	'requestaccount-areas-text' => 'Odaberite tematske oblasti ispod u kojima imate formalno iskustva ili u kojima bi željeli najviše raditi.',
 	'requestaccount-real' => 'Pravo ime:',
 	'requestaccount-same' => '(isto kao i pravo ime)',
 	'requestaccount-email' => 'E-mail adresa:',
