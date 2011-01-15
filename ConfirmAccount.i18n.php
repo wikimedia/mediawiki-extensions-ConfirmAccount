@@ -9680,14 +9680,15 @@ Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak s
 	'right-lookupcredentials' => 'Zobraziť [[Special:UserCredentials|údaje používateľa]]',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'requestaccount-leg-user' => 'Кориснички налог',
 	'requestaccount-leg-areas' => 'Главне сфере интересовања',
-	'requestaccount-leg-person' => 'Личне информације',
+	'requestaccount-leg-person' => 'Лични подаци',
 	'requestaccount-leg-other' => 'Друге информације',
 	'requestaccount-leg-tos' => 'Услови коришћења',
 	'requestaccount-real' => 'Право име:',
@@ -9712,7 +9713,7 @@ $messages['sr-ec'] = array(
 	'confirmaccount-none-r' => 'Тренутно нема скоро одбачених захтева у овом списку.',
 	'confirmaccount-none-e' => 'Тренутно нема застарелих захтева у овом списку.',
 	'confirmaccount-real-q' => 'Име',
-	'confirmaccount-email-q' => 'Мејл',
+	'confirmaccount-email-q' => 'Е-пошта',
 	'confirmaccount-bio-q' => 'Биографија',
 	'confirmaccount-showopen' => 'нерешени захтеви',
 	'confirmaccount-showrej' => 'одбачени захтеви',
@@ -9730,11 +9731,11 @@ $messages['sr-ec'] = array(
 Можда је већ био решен.',
 	'confirmaccount-leg-user' => 'Кориснички налог',
 	'confirmaccount-leg-areas' => 'Главне интересне сфере',
-	'confirmaccount-leg-person' => 'Личне информације',
+	'confirmaccount-leg-person' => 'Лични подаци',
 	'confirmaccount-leg-other' => 'Друге информације',
 	'confirmaccount-name' => 'Корисничко име',
 	'confirmaccount-real' => 'Име:',
-	'confirmaccount-email' => 'Мејл:',
+	'confirmaccount-email' => 'Е-пошта:',
 	'confirmaccount-reqtype' => 'Позиција:',
 	'confirmaccount-pos-0' => 'аутор',
 	'confirmaccount-pos-1' => 'едитор',
@@ -9767,9 +9768,9 @@ $messages['sr-ec'] = array(
 	'usercredentials-user' => 'Корисничко име:',
 	'usercredentials-leg-user' => 'Кориснички налог',
 	'usercredentials-leg-areas' => 'Главне сфере интересовања',
-	'usercredentials-leg-person' => 'Личне информације',
+	'usercredentials-leg-person' => 'Лични подаци',
 	'usercredentials-leg-other' => 'Друге информације',
-	'usercredentials-email' => 'Мејл:',
+	'usercredentials-email' => 'Е-пошта:',
 	'usercredentials-real' => 'Право име:',
 	'usercredentials-bio' => 'Биографија:',
 	'usercredentials-attach' => 'Резиме/CV:',
@@ -11819,6 +11820,7 @@ $2
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenxiaoqino
  * @author Kuailong
+ * @author Mark85296341
  * @author Wilsonmess
  */
 $messages['zh-hans'] = array(
@@ -11947,7 +11949,7 @@ $3
 	'confirmaccount-hold' => '挂起',
 	'confirmaccount-spam' => '垃圾（请不要发送电子邮件）',
 	'confirmaccount-reason' => '注解 （在电邮中使用）:',
-	'confirmaccount-ip' => ' IP地址：',
+	'confirmaccount-ip' => 'IP地址：',
 	'confirmaccount-legend' => '批准/拒绝这个帐号',
 	'confirmaccount-submit' => '确认',
 	'confirmaccount-needreason' => '您必须在下方的评论栏阐述您的理由。',
@@ -11999,7 +12001,7 @@ $2
 	'usercredentials-leg-areas' => '主要的兴趣范围',
 	'usercredentials-leg-person' => '个人信息',
 	'usercredentials-leg-other' => '其他信息',
-	'usercredentials-email' => ' 电子邮件：',
+	'usercredentials-email' => '电子邮件：',
 	'usercredentials-real' => '真实姓名：',
 	'usercredentials-bio' => '个人简介：',
 	'usercredentials-attach' => '简历或履历：',
@@ -12009,7 +12011,9 @@ $2
 	'usercredentials-member' => '权限：',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Mark85296341
+ */
 $messages['zh-hant'] = array(
 	'requestaccount' => '請求帳戶',
 	'requestaccount-text' => "'''完成並遞交以下的表格去請求一個用戶帳戶'''。
@@ -12018,12 +12022,13 @@ $messages['zh-hant'] = array(
 
 	一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:Userlogin]]中使用。",
 	'requestaccount-page' => '{{ns:project}}:服務條款',
-	'requestaccount-dup' => "'''注意: 您已經登入成一個已註冊的帳戶。'''",
-	'requestaccount-leg-user' => '用戶賬戶',
-	'requestaccount-leg-person' => '個人信息',
-	'requestaccount-leg-other' => '其他信息',
+	'requestaccount-dup' => "'''注意：您已經登入成一個已註冊的帳戶。'''",
+	'requestaccount-leg-user' => '使用者帳號',
+	'requestaccount-leg-areas' => '感興趣的主要領域',
+	'requestaccount-leg-person' => '個人資訊',
+	'requestaccount-leg-other' => '其他資訊',
 	'requestaccount-leg-tos' => '服務條款',
-	'requestaccount-acc-text' => '當完成請求時，一封確認訊息會發到您的電郵地址。
+	'requestaccount-acc-text' => '當完成請求時，一封確認訊息會發到您的電郵位址。
 	請在該封電郵中點擊確認連結去回應它。同時，當您的帳戶被創建後，您帳戶的個密碼將會電郵給您。',
 	'requestaccount-areas-text' => '在下面選擇你最專業的或者最感興趣的話題。',
 	'requestaccount-ext-text' => '以下的資料將會保密，而且只是會用在這次請求中。
@@ -12032,24 +12037,27 @@ $messages['zh-hant'] = array(
 	而且你是肯定您是可以發佈這些資料。您的名字可以透過[[Special:Preferences]]更改。',
 	'requestaccount-real' => '真實名字:',
 	'requestaccount-same' => '（同真實名字）',
-	'requestaccount-email' => '電郵地址:',
+	'requestaccount-email' => '電郵位址：',
 	'requestaccount-reqtype' => '位置',
 	'requestaccount-level-0' => '作者',
 	'requestaccount-level-1' => '編輯',
 	'requestaccount-bio' => '個人傳記:',
+	'requestaccount-attach' => '簡歷或履歷（可選）：',
 	'requestaccount-notes' => '附加註解:',
 	'requestaccount-urls' => '網站列表，如有者 （以新行分開）:',
 	'requestaccount-agree' => '您一定要證明到您的真實名字是正確的，而且您同意我們的服務細則。',
 	'requestaccount-inuse' => '該用戶名已經用來請求帳戶。',
 	'requestaccount-tooshort' => '您的傳記必須最少有$1個字的長度。',
-	'requestaccount-emaildup' => '另一個尚未確認的賬戶已經使用了此電子郵件地址。',
+	'requestaccount-emaildup' => '另一個尚未確認的帳戶已經使用了此電子郵件位址。',
 	'requestaccount-exts' => '此類型的文件不允許上傳',
+	'requestaccount-resub' => '出於安全原因，您的簡歷或履歷必須被重新選擇。
+若您不想再加入一個，請將此欄留空。',
 	'requestaccount-tos' => '我已經閱讀以及同意持續遵守{{SITENAME}}的服務細則。',
 	'requestaccount-submit' => '請求帳戶',
 	'requestaccount-sent' => '您的帳戶請求已經成功發出，現正等候複審。',
-	'request-account-econf' => '您的電郵地址已經確認，將會在您的帳戶口請求中列示。',
-	'requestaccount-email-subj' => '{{SITENAME}}電郵地址確認',
-	'requestaccount-email-body' => '有人，可能是您，由IP地址$1，在{{SITENAME}}中用這個電郵地址請求一個名叫"$2"的帳戶。
+	'request-account-econf' => '您的電郵位址已經確認，將會在您的帳戶口請求中列示。',
+	'requestaccount-email-subj' => '{{SITENAME}}電郵位址確認',
+	'requestaccount-email-body' => '有人，可能是您，由IP位址$1，在{{SITENAME}}中用這個電郵位址請求一個名叫"$2"的帳戶。
 
 要確認這個戶口真的屬於在{{SITENAME}}上面嘅您，就在您的瀏覽器中度開啟這個連結:
 
@@ -12057,25 +12065,25 @@ $3
 
 如果該帳戶已經創建，只有您才會收到該電郵密碼。如果這個帳戶*不是*屬於您的話，不要點擊這個連結。
 呢個確認碼將會響$4過期。',
-	'requestaccount-email-subj-admin' => '{{SITENAME}}賬戶請求',
-	'requestaccount-email-body-admin' => ' "$1" 請求了一個賬戶並正在等待批准.
-電子郵件地址已確認. 要批准賬戶，請點擊 "$2".',
-	'acct_request_throttle_hit' => '抱歉，您已經請求了$1個戶口。您不可以請求更多個帳戶。',
-	'requestaccount-loginnotice' => "要取得個用戶帳戶，您一定要'''[[Special:RequestAccount|請求一個]]'''。",
-	'confirmaccounts' => '確認戶口請求',
-	'confirmedit-desc' => '允許下屬機構確認賬戶請求',
-	'confirmaccount-maintext' => "'''本頁面用於確認 ''{{SITENAME}}''的賬戶請求'''.
+	'requestaccount-email-subj-admin' => '{{SITENAME}}帳號請求',
+	'requestaccount-email-body-admin' => ' "$1" 請求了一個帳號並正在等待批准.
+電子郵件位址已確認. 要批准帳號，請點擊 "$2".',
+	'acct_request_throttle_hit' => '抱歉，您已經請求了$1個帳號。您不可以請求更多個帳號。',
+	'requestaccount-loginnotice' => "要取得個使用者帳號，您一定要'''[[Special:RequestAccount|請求一個]]'''。",
+	'confirmaccounts' => '確認帳號請求',
+	'confirmedit-desc' => '允許下屬機構確認帳號請求',
+	'confirmaccount-maintext' => "'''本頁面用於確認 ''{{SITENAME}}''的帳戶請求'''.
 
 每個帳戶請求隊列包括三個子隊列。
 一個是開放的請求，一個是被其他管理員擱置的請求，一個是最近被拒絕的請求。
 
-當回復請求時，請仔細閱讀。如有需要，確認其中包含的信息。
+當回復請求時，請仔細閱讀。如有需要，確認其中包含的資訊。
 你的行為將被私下記錄。
 也希望你能審查任何在這發生的不是你本人的操作。",
 	'confirmaccount-list' => '以下是正在等候批准的用戶請求列表。
-	已經批准的帳戶將會創建以及在這個列表中移除。已拒絕的用戶將只會在這個表中移除。',
+	已經批准的帳戶將會建立以及在這個列表中移除。已拒絕的用戶將只會在這個表中移除。',
 	'confirmaccount-list2' => '以下是一個先前拒絕過的帳口請求，可能會在數日後刪除。
-	它們仍舊可以批准創建一個帳戶，但是在您作之前請先問拒絕該帳戶的管理員。',
+	它們仍舊可以批准建立一個帳戶，但是在您作之前請先問拒絕該帳戶的管理員。',
 	'confirmaccount-list3' => '下面是可能於幾天後被自動刪除的過期帳號請求。他們依然可以被批准。',
 	'confirmaccount-text' => "這個是在'''{{SITENAME}}'''中等候請求帳戶的頁面。
 	請小心閱讀，有需要的話，就要同時確認它下面的全部資料。
@@ -12104,38 +12112,45 @@ $3
 	'confirmaccount-q-rej' => '最近拒絕的請求',
 	'confirmaccount-q-stale' => '過期的請求',
 	'confirmaccount-badid' => '提供的ID是沒有未決定的請求。它可能已經被處理。',
-	'confirmaccount-leg-user' => '用戶賬戶',
-	'confirmaccount-leg-person' => '個人信息',
-	'confirmaccount-leg-other' => '其他信息',
-	'confirmaccount-name' => '用戶名字',
-	'confirmaccount-real' => '名字',
+	'confirmaccount-leg-user' => '使用者帳號',
+	'confirmaccount-leg-areas' => '感興趣的主要領域',
+	'confirmaccount-leg-person' => '個人資訊',
+	'confirmaccount-leg-other' => '其他資訊',
+	'confirmaccount-name' => '使用者名稱',
+	'confirmaccount-real' => '名稱：',
 	'confirmaccount-email' => '電郵',
 	'confirmaccount-reqtype' => '位置',
 	'confirmaccount-pos-0' => '作者',
 	'confirmaccount-pos-1' => '編輯',
 	'confirmaccount-bio' => '傳記',
+	'confirmaccount-attach' => '簡歷或履歷：',
 	'confirmaccount-notes' => '注釋：',
-	'confirmaccount-urls' => '網站列表:',
-	'confirmaccount-none-p' => '(沒有提供)',
+	'confirmaccount-urls' => '網站列表：',
+	'confirmaccount-none-p' => '（未提供）',
 	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。',
 	'confirmaccount-econf' => '（已批准）',
 	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]拒絕）',
 	'confirmaccount-noreason' => '（無）',
 	'confirmaccount-autorej' => '（此請求已因為無活動而自動被回絕）',
 	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]標記為"掛起")',
-	'confirmaccount-create' => '接受 （創建帳戶）',
+	'confirmaccount-create' => '接受 （建立帳號）',
 	'confirmaccount-deny' => '拒絕 （反列示）',
 	'confirmaccount-hold' => '掛起',
 	'confirmaccount-spam' => '垃圾（請不要發送電子郵件）',
 	'confirmaccount-reason' => '註解 （在電郵中使用）:',
-	'confirmaccount-ip' => ' IP地址：',
+	'confirmaccount-ip' => 'IP位址：',
+	'confirmaccount-legend' => '批准/拒絕這個帳號',
 	'confirmaccount-submit' => '確認',
-	'confirmaccount-acc' => '帳戶請求已經成功確認；已經創建一個新的用戶帳號[[User:$1]]。',
+	'confirmaccount-needreason' => '您必須在下方的評論欄闡述您的理由。',
+	'confirmaccount-canthold' => '該請求已被掛起，或已被刪除。',
+	'confirmaccount-acc' => '帳戶請求已經成功確認；已經建立一個新的使用者帳號[[User:$1]]。',
 	'confirmaccount-rej' => '帳戶請求已經成功拒絕。',
-	'confirmaccount-summary' => '正在創建一個新用戶擁有傳記的用戶頁面。',
-	'confirmaccount-welc' => "'''歡迎來到''{{SITENAME}}''！'''我們希望您會作出更多更好嘅貢獻。
-	您可能會去參看[[{{MediaWiki:Helppage}}|開始]]。再一次歡迎你！
-	[[User:FuzzyBot|FuzzyBot]] 11:50, 3 September 2008 （UTC）",
+	'confirmaccount-viewing' => '（目前正由[[User:$1|$1]]瀏覽）',
+	'confirmaccount-summary' => '正在建立一個新用戶擁有傳記的使用者頁面。',
+	'confirmaccount-welc' => "'''歡迎來到''{{SITENAME}}''！'''
+我們希望您會作出更多更好的貢獻。
+您可能想先閱讀一下[[{{MediaWiki:Helppage}}|說明頁面]]。
+再次歡迎您，祝您愉快！",
 	'confirmaccount-wsum' => '歡迎！',
 	'confirmaccount-email-subj' => '{{SITENAME}}帳戶請求',
 	'confirmaccount-email-body' => '您請求的帳戶已經在{{SITENAME}}中批准。
@@ -12161,21 +12176,27 @@ $3
 
 $2
 
-在這個網站中度提供了聯絡人列表，您可以用去知道更多用戶帳戶方針的資料。',
-	'confirmaccount-email-body5' => '在你請求賬戶 "$1" 能在 {{SITENAME}} 被批准之前，你必須先提供一些附加信息。
+在這個網站中度提供了聯絡人列表，您可以用去知道更多使用者帳號方針的資料。',
+	'confirmaccount-email-body5' => '在你請求帳戶 "$1" 能在 {{SITENAME}} 被批准之前，你必須先提供一些附加資訊。
 
 $2
 
-如果你想知道更多有關賬戶政策的信息，你可以使用網站中的聯繫列表。',
+如果你想知道更多有關帳戶政策的資訊，你可以使用網站中的聯繫列表。',
 	'usercredentials' => '用戶資格',
 	'usercredentials-leg' => '查找已驗證的用戶資格',
-	'usercredentials-user' => '用戶名：',
+	'usercredentials-user' => '使用者名稱：',
 	'usercredentials-text' => '下面是已選中用戶的有效資格。',
-	'usercredentials-leg-user' => '用戶賬戶',
-	'usercredentials-leg-person' => '個人信息',
-	'usercredentials-leg-other' => '其他信息',
-	'usercredentials-email' => ' 電子郵件：',
+	'usercredentials-leg-user' => '使用者帳號',
+	'usercredentials-leg-areas' => '感興趣的主要領域',
+	'usercredentials-leg-person' => '個人資訊',
+	'usercredentials-leg-other' => '其他資訊',
+	'usercredentials-email' => '電子郵件：',
 	'usercredentials-real' => '真實姓名：',
 	'usercredentials-bio' => '個人簡介：',
+	'usercredentials-attach' => '簡歷或履歷：',
+	'usercredentials-notes' => '附加註解：',
+	'usercredentials-urls' => '網站列表：',
+	'usercredentials-ip' => '原始IP位址：',
+	'usercredentials-member' => '權限：',
 );
 
