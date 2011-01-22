@@ -1015,7 +1015,7 @@ $messages['be'] = array(
 	'confirmaccount-submit' => 'Пацвердзіць',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -2193,7 +2193,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 	'right-lookupcredentials' => '[[Special:UserCredentials|Benutzerempfehlungsschreiben]] sehen',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Imre
  * @author The Evil IP address
  * @author Umherirrender
@@ -6433,7 +6433,7 @@ $messages['ku-latn'] = array(
 	'usercredentials-member' => 'Mafan',
 );
 
-/** Cornish (Kernewek)
+/** Cornish (Kernowek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
@@ -9791,7 +9791,7 @@ $messages['sr-ec'] = array(
 	'usercredentials-member' => 'Права:',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  * @author Михајло Анђелковић
  */
