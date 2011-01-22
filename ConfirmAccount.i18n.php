@@ -6422,6 +6422,17 @@ Loor ens, ov dä Name reschtesch jetipp es.',
 	'right-lookupcredentials' => 'De [[Special:UserCredentials|Nohwiise]] för Metmaacher aanloore',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'requestaccount-leg-user' => 'Hesabê bikarhêner',
+	'confirmaccount-real-q' => 'Nav',
+	'confirmaccount-name' => 'Navê bikarhêner',
+	'usercredentials-user' => 'Navê bikarhêner:',
+	'usercredentials-member' => 'Mafan',
+);
+
 /** Cornish (Kernewek)
  * @author Kw-Moon
  */
@@ -12013,14 +12024,15 @@ $2
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Mark85296341
+ * @author Waihorace
  */
 $messages['zh-hant'] = array(
 	'requestaccount' => '請求帳戶',
 	'requestaccount-text' => "'''完成並遞交以下的表格去請求一個用戶帳戶'''。
 
-	請確認您在請求一個帳戶之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。
+請確認您在請求一個帳戶之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。
 
-	一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:Userlogin]]中使用。",
+一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:UserLogin|登入頁面]]中使用。",
 	'requestaccount-page' => '{{ns:project}}:服務條款',
 	'requestaccount-dup' => "'''注意：您已經登入成一個已註冊的帳戶。'''",
 	'requestaccount-leg-user' => '使用者帳號',
@@ -12047,14 +12059,15 @@ $messages['zh-hant'] = array(
 	'requestaccount-urls' => '網站列表，如有者 （以新行分開）:',
 	'requestaccount-agree' => '您一定要證明到您的真實名字是正確的，而且您同意我們的服務細則。',
 	'requestaccount-inuse' => '該用戶名已經用來請求帳戶。',
-	'requestaccount-tooshort' => '您的傳記必須最少有$1個字的長度。',
+	'requestaccount-tooshort' => '您的傳記必須最少有$1{{PLURAL:$1|字|個字}}的長度。',
 	'requestaccount-emaildup' => '另一個尚未確認的帳戶已經使用了此電子郵件位址。',
 	'requestaccount-exts' => '此類型的文件不允許上傳',
 	'requestaccount-resub' => '出於安全原因，您的簡歷或履歷必須被重新選擇。
 若您不想再加入一個，請將此欄留空。',
 	'requestaccount-tos' => '我已經閱讀以及同意持續遵守{{SITENAME}}的服務細則。',
 	'requestaccount-submit' => '請求帳戶',
-	'requestaccount-sent' => '您的帳戶請求已經成功發出，現正等候複審。',
+	'requestaccount-sent' => '您的帳戶請求已經成功發出，現正等候複審。
+一個確認電郵已發送至您的電郵。',
 	'request-account-econf' => '您的電郵位址已經確認，將會在您的帳戶口請求中列示。',
 	'requestaccount-email-subj' => '{{SITENAME}}電郵位址確認',
 	'requestaccount-email-body' => '有人，可能是您，由IP位址$1，在{{SITENAME}}中用這個電郵位址請求一個名叫"$2"的帳戶。
@@ -12068,8 +12081,10 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}}帳號請求',
 	'requestaccount-email-body-admin' => ' "$1" 請求了一個帳號並正在等待批准.
 電子郵件位址已確認. 要批准帳號，請點擊 "$2".',
-	'acct_request_throttle_hit' => '抱歉，您已經請求了$1個帳號。您不可以請求更多個帳號。',
+	'acct_request_throttle_hit' => '抱歉，您已經請求了{{PLURAL:$1|1個|$1個}}帳號。
+您不可以請求更多帳號。',
 	'requestaccount-loginnotice' => "要取得個使用者帳號，您一定要'''[[Special:RequestAccount|請求一個]]'''。",
+	'confirmaccount-newrequests' => "'''$1'''開啟電郵確認[[Special:ConfirmAccounts|{{PLURAL:$1|帳戶請求|多個帳戶請求}}]]待審中",
 	'confirmaccounts' => '確認帳號請求',
 	'confirmedit-desc' => '允許下屬機構確認帳號請求',
 	'confirmaccount-maintext' => "'''本頁面用於確認 ''{{SITENAME}}''的帳戶請求'''.
@@ -12130,6 +12145,7 @@ $3
 	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。',
 	'confirmaccount-econf' => '（已批准）',
 	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]拒絕）',
+	'confirmaccount-rational' => '理由給予申請人：',
 	'confirmaccount-noreason' => '（無）',
 	'confirmaccount-autorej' => '（此請求已因為無活動而自動被回絕）',
 	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]標記為"掛起")',
@@ -12198,5 +12214,10 @@ $2
 	'usercredentials-urls' => '網站列表：',
 	'usercredentials-ip' => '原始IP位址：',
 	'usercredentials-member' => '權限：',
+	'usercredentials-badid' => '沒有憑據找到該用戶。 
+檢查名稱拼寫是否正確。',
+	'right-confirmaccount' => '查看[[Special:ConfirmAccounts|待審帳戶隊列]]',
+	'right-requestips' => '在處理帳戶請求時查看請求者的IP地址',
+	'right-lookupcredentials' => '查看[[Special:UserCredentials|用戶憑據]]',
 );
 
