@@ -770,7 +770,6 @@ class ConfirmAccountsPage extends SpecialPage
 	 * @return string $linkList, list of clickable links
 	 */
 	public static function parseLinks( $text ) {
-		global $wgParser, $wgUser;
 		# Don't let this get flooded
 		$max = 10;
 		$count = 0;
