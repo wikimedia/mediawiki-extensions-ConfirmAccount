@@ -1018,6 +1018,7 @@ $messages['be'] = array(
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Zedlik
  */
 $messages['be-tarask'] = array(
 	'requestaccount' => 'Запыт на стварэньне рахунку',
@@ -1042,7 +1043,7 @@ $messages['be-tarask'] = array(
 	'requestaccount-bio-text' => 'Вашая біяграфія будзе па змоўчваньні разьмешчаная на Вашай старонцы ўдзельніка.
 Паспрабуйце уключыць якую-небудзь інфармацыю аб вашай адукацыі.
 Упэўніцеся, што Вы ня супраць апублікаваньня падобнай інфармацыі.
-Вашае імя можа быць зьменена праз [[Special:Preferences|Вашыя ўстаноўкі]].',
+Вашае імя можа быць зьменена праз [[Special:Preferences|Вашыя налады]].',
 	'requestaccount-real' => 'Сапраўднае імя:',
 	'requestaccount-same' => '(такое ж як і сапраўднае імя)',
 	'requestaccount-email' => 'Адрас электроннай пошты:',
@@ -1147,7 +1148,7 @@ $3
 	'confirmaccount-notes' => 'Дадатковая інфармацыя:',
 	'confirmaccount-urls' => 'Сьпіс сайтаў:',
 	'confirmaccount-none-p' => '(не пададзена)',
-	'confirmaccount-confirm' => 'Выкарыстоўвайце ўстаноўкі ніжэй для зацьверджаньня, адхіленьня ці адкладаньня запыту:',
+	'confirmaccount-confirm' => 'Выкарыстоўвайце налады ніжэй для зацьверджаньня, адхіленьня ці адкладаньня запыту:',
 	'confirmaccount-econf' => '(пацьверджаны)',
 	'confirmaccount-reject' => '(адхілены [[User:$1|$1]] $2)',
 	'confirmaccount-rational' => 'Абгрунтаваньне пададзенае падаўшаму запыт:',
