@@ -487,14 +487,13 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	protected function confirmEmailToken( $code ) {
-		global $wgUser, $wgOut, $wgConfirmAccountContact;
+		global $wgUser, $wgOut, $wgConfirmAccountContact, $wgPasswordSender;
 		# Confirm if this token is in the pending requests
 		$name = $this->requestFromEmailToken( $code );
 		if ( $name !== false ) {
 			# Send confirmation email to prospective user
 			$this->confirmEmail( $name );
 			# Send mail to admin after e-mail has been confirmed
-			global $wgConfirmAccountContact, $wgPasswordSender;
 			if ( $wgConfirmAccountContact != '' ) {
 				$target = new MailAddress( $wgConfirmAccountContact );
 				$source = new MailAddress( $wgPasswordSender );
