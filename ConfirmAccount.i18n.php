@@ -8686,16 +8686,16 @@ $messages['ps'] = array(
 	'confirmaccount-noreason' => '(هېڅ)',
 	'confirmaccount-ip' => 'IP پته:',
 	'confirmaccount-wsum' => 'ښه راغلاست!',
-	'confirmaccount-email-body' => 'په {{SITENAME}} باندې د يوه کارن-حساب لپاره غوښتنه مو ومنل شوه .
+	'confirmaccount-email-body' => 'په {{SITENAME}} باندې د يوه ګڼون لپاره غوښتنه مو ومنل شوه .
 
-د کارن-حساب نوم: $1
+د ګڼون نوم: $1
 
 پټنوم: $2
 
 د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:UserLogin}} ولاړ شی.',
-	'confirmaccount-email-body2' => 'په {{SITENAME}} باندې د يوه کارن-حساب لپاره غوښتنه مو ومنل شوه .
+	'confirmaccount-email-body2' => 'په {{SITENAME}} باندې د يوه ګڼون لپاره غوښتنه مو ومنل شوه .
 
-د کارن-حساب نوم: $1
+د ګڼون نوم: $1
 
 پټنوم: $2
 
