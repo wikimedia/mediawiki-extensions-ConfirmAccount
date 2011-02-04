@@ -8661,7 +8661,7 @@ Ch'a contròla che ël nòm a sia scrivù da bin.",
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'requestaccount-leg-user' => 'کارن-حساب',
+	'requestaccount-leg-user' => 'ګڼون',
 	'requestaccount-leg-person' => 'ځاني مالومات',
 	'requestaccount-leg-other' => 'نور مالومات',
 	'requestaccount-real' => 'اصلي نوم:',
@@ -8674,7 +8674,7 @@ $messages['ps'] = array(
 	'confirmaccount-bio-q' => 'ژوندليک',
 	'confirmaccount-showrej' => 'رټل شوې غوښتنې',
 	'confirmaccount-review' => 'مخکتنه',
-	'confirmaccount-leg-user' => 'کارن-حساب',
+	'confirmaccount-leg-user' => 'ګڼون',
 	'confirmaccount-leg-person' => 'ځاني مالومات',
 	'confirmaccount-leg-other' => 'نور مالومات',
 	'confirmaccount-name' => 'کارن-نوم',
@@ -8703,7 +8703,7 @@ $3
 
 د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:UserLogin}} ولاړ شی.',
 	'usercredentials-user' => 'کارن-نوم:',
-	'usercredentials-leg-user' => 'کارن-حساب',
+	'usercredentials-leg-user' => 'ګڼون',
 	'usercredentials-leg-person' => 'ځاني مالومات',
 	'usercredentials-leg-other' => 'نور مالومات',
 	'usercredentials-email' => 'برېښليک:',
