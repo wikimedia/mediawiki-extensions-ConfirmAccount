@@ -6040,7 +6040,7 @@ $messages['km'] = array(
 	'confirmaccount-leg-areas' => 'ចំណង់ចំណូលចិត្ត',
 	'confirmaccount-leg-person' => 'ព័ត៌មានផ្ទាល់ខ្លួន',
 	'confirmaccount-leg-other' => 'ព័ត៌មាន​ដទៃ',
-	'confirmaccount-name' => 'ឈ្មោះអ្នកប្រើប្រាស់',
+	'confirmaccount-name' => 'អត្តនាម',
 	'confirmaccount-real' => 'ឈ្មោះ​៖',
 	'confirmaccount-email' => 'អ៊ីមែល​៖',
 	'confirmaccount-reqtype' => 'មុខងារ:',
@@ -6092,7 +6092,7 @@ $3
 ដើម្បីសុវត្ថិភាព អ្នកនឹងត្រូវតែប្តូរពាក្យសំងាត់របស់អ្នកនៅពេលកត់ឈ្មោះចូលលើកដំបូង។
 
 ដើម្បីកត់ឈ្មោះចូល សូមចូលទៅកាន់ {{fullurl:Special:UserLogin}} ។',
-	'usercredentials-user' => 'ឈ្មោះអ្នកប្រើប្រាស់៖',
+	'usercredentials-user' => 'អត្តនាម៖',
 	'usercredentials-leg-user' => 'គណនីអ្នកប្រើប្រាស់',
 	'usercredentials-leg-areas' => 'ចំណង់ចំណូលចិត្ត',
 	'usercredentials-leg-person' => 'ព័ត៌មាន​ផ្ទាល់ខ្លួន',
