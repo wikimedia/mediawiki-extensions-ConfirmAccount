@@ -12,6 +12,7 @@ class ConfirmAccountsPage extends SpecialPage
 		parent::__construct('ConfirmAccounts','confirmaccount');
 	}
 
+	// @TODO: split out listlink mess
 	function execute( $par ) {
 		global $wgRequest, $wgOut, $wgUser, $wgAccountRequestTypes, $wgLang;
 
@@ -145,6 +146,7 @@ class ConfirmAccountsPage extends SpecialPage
 		} else {
 			$this->showQueues();
 		}
+		$wgOut->addModules( 'ext.confirmAccount' ); // CSS
 	}
 
 	protected function showQueues() {
@@ -323,7 +325,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$form .= self::parseLinks($row->acr_urls);
 			}
 			if( $wgUser->isAllowed( 'requestips' ) ) {
-				$blokip = SpecialPage::getTitleFor( 'blockip' );
+				$blokip = SpecialPage::getTitleFor( 'Blockip' );
 				$form .= "<p>".wfMsgHtml('confirmaccount-ip')." ".htmlspecialchars($row->acr_ip).
 				" (" . $this->skin->makeKnownLinkObj( $blokip, wfMsgHtml('blockip'),
 					'ip=' . $row->acr_ip . '&wpCreateAccount=1' ).")</p>\n";

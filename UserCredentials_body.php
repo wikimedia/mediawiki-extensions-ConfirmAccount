@@ -31,6 +31,7 @@ class UserCredentialsPage extends SpecialPage
 		} else {
 			$this->showForm();
 		}
+		$wgOut->addModules( 'ext.confirmAccount' ); // CSS
 	}
 
 	function showForm() {

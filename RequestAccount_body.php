@@ -74,6 +74,7 @@ class RequestAccountPage extends SpecialPage {
 		} else {
 			$this->showForm();
 		}
+		$wgOut->addModules( 'ext.confirmAccount' ); // CSS
 	}
 
 	protected function showForm( $msg = '', $forgotFile = 0 ) {

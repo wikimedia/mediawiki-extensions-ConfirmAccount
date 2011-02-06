@@ -143,19 +143,18 @@ $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
 $wgExtensionAliasesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.alias.php';
 
-function efLoadConfirmAccount() {
-	global $wgUser;
-	# Don't load unless needed
-	if ( $wgUser->getId() && $wgUser->isAllowed( 'confirmaccount' ) ) {
-		efConfirmAccountInjectStyle();
-	}
-}
+$wgResourceModules['ext.confirmAccount'] = array(
+	'styles' 		=> 'confirmaccount.css',
+	'localBasePath' => dirname( __FILE__ ),
+	'remoteExtPath' => 'ConfirmAccount',
+);
 
 function efAddRequestLoginText( &$template ) {
-	global $wgUser;
+	global $wgUser, $wgOut;
 	# Add a link to RequestAccount from UserLogin
 	if ( !$wgUser->isAllowed( 'createaccount' ) ) {
-		$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', array( 'parse' ) ) );
+		$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', 'parse' ) );
+		$wgOut->addModules( 'ext.confirmAccount' ); // CSS
 	}
 	return true;
 }
@@ -183,19 +182,7 @@ function efCheckIfAccountNameIsPending( $user, &$abortError ) {
 	return true;
 }
 
-function efConfirmAccountInjectStyle() {
-	global $wgOut, $wgUser, $wgScriptPath;
-	# FIXME: find better load place
-	# UI CSS
-	$wgOut->addLink( array(
-		'rel'	=> 'stylesheet',
-		'type'	=> 'text/css',
-		'media'	=> 'screen',
-		'href'	=> $wgScriptPath . '/extensions/ConfirmAccount/confirmaccount.css',
-	) );
-	return true;
-}
-
+// FIXME: don't just take on to general site notice
 function efConfirmAccountsNotice( $notice ) {
 	global $wgConfirmAccountNotice, $wgUser;
 	if ( !$wgConfirmAccountNotice || !$wgUser->isAllowed( 'confirmaccount' ) ) {
@@ -209,7 +196,9 @@ function efConfirmAccountsNotice( $notice ) {
 	if ( !$count )  {
 		$dbw = wfGetDB( DB_MASTER );
 		$count = $dbw->selectField( 'account_requests', 'COUNT(*)',
-			array( 'acr_deleted' => 0, 'acr_held IS NULL', 'acr_email_authenticated IS NOT NULL' ),
+			array( 'acr_deleted' => 0,
+				'acr_held IS NULL',
+				'acr_email_authenticated IS NOT NULL' ),
 			__METHOD__ );
 		# Use '-' for zero, to avoid any confusion over key existence
 		if ( !$count ) {
@@ -220,8 +209,9 @@ function efConfirmAccountsNotice( $notice ) {
 	}
 	if ( $count !== '-' ) {
 		$message = wfMsgExt( 'confirmaccount-newrequests', array( 'parsemag' ), $count );
-
-		$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' . $wgOut->parse( $message ) . '</div>';
+		$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
+			$wgOut->parse( $message ) . '</div>';
+		$wgOut->addModules( 'ext.confirmAccount' ); // CSS
 	}
 	return true;
 }
@@ -240,7 +230,6 @@ $wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
 $wgAutoloadClasses['UserCredentialsPage'] = $dir . 'UserCredentials_body.php';
 $wgSpecialPageGroups['UserCredentials'] = 'users';
 
-$wgExtensionFunctions[] = 'efLoadConfirmAccount';
 # Make sure "login / create account" notice still as "create account"
 $wgHooks['PersonalUrls'][] = 'efSetRequestLoginLinks';
 # Add notice of where to request an account at UserLogin
