@@ -6243,16 +6243,16 @@ Sobald De ene Zohjang kräje häß, kriß De en <i lang=\"en\">e-mail</i> jesche
 	'requestaccount-emaildup' => 'En ander Aanfrooch noh enem Zohjang als Metmaacher hät de sellve <i lang="en">e-mail</i>-Addräß.',
 	'requestaccount-exts' => 'Di Zoot Datei-Aanhang es nit zohjelohße.',
 	'requestaccount-resub' => 'Dinge Levvensverlouf moß norr_ens neu ußjewählt wäde, zor Sescherheit. Lohß dat Feld leddisch, wann De_n_nit mieh wigger dobei han wells.',
-	'requestaccount-tos' => 'Esch han jelesse, wat op dä Sigg „[[{{MediaWiki:Requestaccount-page}}|{{int:requestaccount-leg-tos}}]]“ övver de {{SITENAME}} shteiht, Un esch versescheren, dat wad esch unger „reschtijje Name“ aanjejovve hann, wörklesch minge reschtijje Name es.',
+	'requestaccount-tos' => 'Esch han jelesse, wat op dä Sigg „[[{{MediaWiki:Requestaccount-page}}|{{int:requestaccount-leg-tos}}]]“ övver {{GRAMMAR:Akkusativ|{{SITENAME}}}} shteiht, Un esch versescheren, dat wad esch unger „reschtijje Name“ aanjejovve hann, wörklesch minge reschtijje Name es.',
 	'requestaccount-submit' => 'Noh enem Zojang als ene Metmaacher frore',
 	'requestaccount-sent' => 'Ding Aanfrooch es jäz op der Wääsch jebraat, un waadt drop, dat sesch Eine dröm kömmert.
 För se ze beschtäätejje, es en <i lang="en">e-mail</i> aan Ding aanjejovve Adräß ongerwähß.',
 	'request-account-econf' => 'Ding <i lang="en">e-mail</i>-Addräß es beschtätesch un dat shteiht jetß och esu en Dinge Aanfrooch noh enem Zohjang als Metmaacher dren.',
-	'requestaccount-email-subj' => 'De {{SITENAME}} ier <i lang="en">e-mail</i>-Addräß Beschtätejung',
+	'requestaccount-email-subj' => '{{ucfirst:{{GRAMMAR:Genitiv ier feminine|{{SITENAME}}}}}} <i lang="en">e-mail</i>-Addräß Beschtätejung',
 	'requestaccount-email-body' => 'Daach,
 
 künnt sin, Do woohß et sellver, jedenfalls hät eine vun dä IP-Address
-$1 en Aanfrooch noh enem Zohjang op de {{SITENAME}}
+$1 en Aanfrooch noh enem Zohjang op {{GRAMMAR:Akkusativ|{{SITENAME}}}}
 als Metmaacher met däm Name „$2“ jeschtallt.
 
 Jetz wulle mer vun Dier en Beschtäätejung, dat dat all ääsch es,
@@ -6264,19 +6264,19 @@ $3
 Wann Dinge Zohjang dann ennjerescht wood, kriß Do allein dat
 Passwoot doför zohjescheck.
 
-Wann dat alles Kappes es, un De wells jaa nit op de {{SITENAME}}
+Wann dat alles Kappes es, un De wells jaa nit {{GRAMMAR:em|{{SITENAME}}}}
 metmaache, dann donn jaa nix. Aam $5 öm $6 Uhr verfällt dä Lengk
 bovve automattesch un vun janz allein.
 
-Ene schööne Jrooß vun de {{SITENAME}}',
-	'requestaccount-email-subj-admin' => 'Aanfrooch för Metmaacher op dä {{SITENAME}} ze wääde.',
+Ene schööne Jrooß {{GRAMMAR:Genitiv vun|{{SITENAME}}}}',
+	'requestaccount-email-subj-admin' => 'Aanfrooch för Metmaacher {{GRAMMAR:von|{{SITENAME}}}} ze wääde.',
 	'requestaccount-email-body-admin' => '{{GENDER:$1|Dä|Dat|Dä Metmaacher|Dat|De}} „$1“ well ene Zohjang han un es am waade, dä ze krijje. De aanjejovve <i lang="en">e-mail</i>-Addräß es beschtätesch. Do kanns dämm dä Zohjang jevve op dä Sigg: $2',
 	'acct_request_throttle_hit' => 'Deihd uns leid, Do häs {{PLURAL:$1|ald|ald $1 Mohl|jaanit}} noh enem Zohjang jefrooch. Do kanns nit noch mieh Aanfroore enreische.',
 	'requestaccount-loginnotice' => "Öm ene Zohjang ze krijje, donn '''[[Special:RequestAccount|noh einem froore]]'''.",
 	'confirmaccount-newrequests' => "'''\$1''' unjedonn [[Special:ConfirmAccounts|{{PLURAL:\$1|Aanfrooch|Aanfroore|Aanfroore}}]] met beschtääteschte <i lang=\"en\">e-mail</i>-Addräß {{PLURAL:\$1|es|sin|sin}} am waade.",
 	'confirmaccounts' => 'Aanfroore noh Metmaacher beschtähtejje',
 	'confirmedit-desc' => 'Määt et müjjelesch, dat {{int:group-bureaucrat}} de neu Aanmeldunge beshtätejje.',
-	'confirmaccount-maintext' => "'''Die Sigg hee es för unjedonn Aanfroore noh Zohjäng als Metmaacher vun de {{SITENAME}} ze beärbeide.'''
+	'confirmaccount-maintext' => "'''Die Sigg hee es för unjedonn Aanfroore noh Zohjäng als Metmaacher {{GRAMMAR:Genitiv vun|{{SITENAME}}}} ze beärbeide.'''
 
 Jede Schlang met Aanfroore es ongerdeijlt en drei eije Schlange met dä Zoote: Unjedonn — Zeröckjeschtallt weil mer noch op Antwoote am waade sin — un köözlesch eets afjelehnt.
 
@@ -6287,7 +6287,7 @@ Wann ene Aanfrooch aanjenumme udder affjelehnt es, kütt se eruß uß dä Leß.'
 Se künne emmer noch aanjenumme wähde, ävver et es wall en joode Idee, eets ens met däm Wiki-Köbes ze kalle, dä se afjelehnt hät.',
 	'confirmaccount-list3' => 'Hee dronger es en Leß met ußjeloufe Aanfroore, di automattesch uß dä Leß eruß kumme, wann se en paa Dääsch alt sin.
 Se künne ävver emmer noch aanjenumme wähde.',
-	'confirmaccount-text' => "Dat es en Aanfrooch noh enem Zohjang als Metmaacher op de '''{{SITENAME}}'''.
+	'confirmaccount-text' => "Dat es en Aanfrooch noh enem Zohjang als Metmaacher '''op {{GRAMMAR:Akkusativ|{{SITENAME}}}}'''.
 
 Donn Der de Enfommazjuhne onge jenou dorschlesse.
 Wann De dä Metmaacher aannemmps, nemm de Enstellung „Posizjuhn“ öm däm Metmaacher singe Shtattus enzeshtelle. Änderunge aan dä Date övver et Levve en dä Aanfrooch donn nit beeinfluße, wat op Duur övver dä Metmaacher faßjehallde weed. Do kanns dä Metmaacher unger enem andere Name aanlääje lohße. Domet kanns De dubbelte Name verhendere.
@@ -6351,13 +6351,13 @@ Wann de Vun dä Sigg hee fott jeihß, oohne se afzelehne udder beshtähtejje, bl
 	'confirmaccount-rej' => 'Di Aanfrooch noh enem Zojang wood afjelehnt.',
 	'confirmaccount-viewing' => '(Weet em Momang {{GENDER:$1|vum|vum|vum Metmaacher|vum|vun dä}} [[User:$1|$1]] aanjeloert)',
 	'confirmaccount-summary' => 'Ben en Metmaachersigg met dä Levvensdaate vun dämneue Metmaacher am aanlääje.',
-	'confirmaccount-welc' => "'''Wellkumme op de ''{{SITENAME}}''!'''
+	'confirmaccount-welc' => "'''Wellkumme {{GRAMMAR:em|{{SITENAME}}}}!'''
 Mer hoffe, Do deihs joot un vill beidraare.
 Künnt sin, Do wells de [[{{MediaWiki:Helppage}}|Sigge met Hülp]] lesse.
 Norr_ens, wellkumme, un vill Shpaß hee!",
 	'confirmaccount-wsum' => 'Wellkumme!',
-	'confirmaccount-email-subj' => 'Ding Aanfrooch noh enem Zohjang op de {{SITENAME}}',
-	'confirmaccount-email-body' => 'Op Ding Aanfrooch noh enem Zohjang op de {{SITENAME}} es de Antwoot:
+	'confirmaccount-email-subj' => 'Ding Aanfrooch noh enem Zohjang op {{GRAMMAR:Akkusativ|{{SITENAME}}}}',
+	'confirmaccount-email-body' => 'Op Ding Aanfrooch noh enem Zohjang op {{GRAMMAR:Akkusativ|{{SITENAME}}}} es de Antwoot:
 Hurra, jetz kanns de erin.
 
 Dinge Name als Metmaacher es „$1“
@@ -6366,7 +6366,7 @@ Ding Passwoot es „$2“
 
 Zor Sescherheit moß De Ding Passwoot ändere, wann De et eehzte Mohl enloggs.
 Zom Enlogge, jangk noh {{fullurl:Special:UserLogin}}',
-	'confirmaccount-email-body2' => 'Op Ding Aanfrooch häß De enen Zohjang op de {{SITENAME}} krääje.
+	'confirmaccount-email-body2' => 'Op Ding Aanfrooch häß De enen Zohjang op {{GRAMMAR:Akkusativ|{{SITENAME}}}} krääje.
 
 Dinge Name als Metmaacher es „$1“
 
@@ -6376,14 +6376,14 @@ $3
 
 Zor Sescherheit moß De Ding Passwoot ändere, wann De et eehzte Mohl enloggs.
 Zom Enlogge, jangk noh {{fullurl:Special:UserLogin}}',
-	'confirmaccount-email-body3' => 'Ding Aanfrooch noh enem Zohjang op de {{SITENAME}}
+	'confirmaccount-email-body3' => 'Ding Aanfrooch noh enem Zohjang op {{GRAMMAR:Akkusativ|{{SITENAME}}}}
 als Metmaacher met däm Name „$1“ es afjelehnt.
 
 Doh kann et etlijje Jrönd för jevve. De künnts dat Fommulaa verkeht ußjeföllt han,
 Ding Antwoote wohre nit jenooch, udder De häs jet jemaat, wat för dat Wikki nit paß.
 Wann en Leß met Kuntakte em Wikki es, kanns De doh drövver versöhke, wigger ze kumme,
 wann De doch noch erin wells, udder jet ze saare udder ze froore häs.',
-	'confirmaccount-email-body4' => 'Ding Aanfrooch noh enem Zohjang als Metmaacher op de {{SITENAME}}
+	'confirmaccount-email-body4' => 'Ding Aanfrooch noh enem Zohjang als Metmaacher op {{GRAMMAR:Akkusativ|{{SITENAME}}}}
 met däm Name „$1“ es afjelehnt woode.
 
 $2
@@ -6393,7 +6393,7 @@ wigger ze kumme, wannv De doch noch erin wells, udder jet ze saare
 udder ze froore häs.',
 	'confirmaccount-email-body5' => 'Iih dat Ding Aanfrooch noh enem Zohjang als Metmaacher
 met däm Name „$1“
-op de {{SITENAME}}
+op {{GRAMMAR:Akkusativ|{{SITENAME}}}}
 aanjenumme wääde kann, do moß De noch jet nohlääje.
 
 $2
