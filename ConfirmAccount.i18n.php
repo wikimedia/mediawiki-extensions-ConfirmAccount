@@ -8765,14 +8765,14 @@ O nome que introduzi em "Nome real" é de facto o meu nome real.',
 Uma mensagem de confirmação foi enviada para o seu correio electrónico.',
 	'request-account-econf' => 'O seu correio electrónico foi confirmado e será listado como tal no seu pedido de conta.',
 	'requestaccount-email-subj' => 'Confirmação de endereço electrónico para a {{SITENAME}}',
-	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, pediu uma conta "$2" com este endereço de correio electrónico na {{SITENAME}}.
+	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, solicitou uma conta "$2" com este endereço de correio electrónico na {{SITENAME}}.
 
 Para confirmar que esta conta realmente lhe pertence na {{SITENAME}}, siga este link no seu browser:
 
 $3
 
 Se a conta for criada, a palavra-chave só lhe será enviada a si. Se este pedido *não* foi feito por si, não siga o link.
-Este código de confirmação expirará a $4.',
+Este código de confirmação irá expirar às $4.',
 	'requestaccount-email-subj-admin' => 'Pedido de conta na {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" pediu uma conta e aguarda confirmação.
 O endereço electrónico foi confirmado. Pode confirmar o pedido aqui "$2".',
