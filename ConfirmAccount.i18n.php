@@ -6949,7 +6949,7 @@ $3
 Можно е барањето веќе да е обработено.',
 	'confirmaccount-leg-user' => 'Корисничка сметка',
 	'confirmaccount-leg-areas' => 'Главни полиња на интерес',
-	'confirmaccount-leg-person' => 'Персонални информации',
+	'confirmaccount-leg-person' => 'Лични податоци',
 	'confirmaccount-leg-other' => 'Други информации',
 	'confirmaccount-name' => 'Корисничко име',
 	'confirmaccount-real' => 'Име:',
