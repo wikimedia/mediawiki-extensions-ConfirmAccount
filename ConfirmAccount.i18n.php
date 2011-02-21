@@ -1412,6 +1412,7 @@ $2
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Ehsanulhb
  * @author Zaheen
  */
 $messages['bn'] = array(
@@ -1456,6 +1457,7 @@ $messages['bn'] = array(
 	'confirmaccount-notes' => 'অতিরিক্ত মন্তব্য:',
 	'confirmaccount-urls' => 'ওয়েবসাইটের তালিকা:',
 	'confirmaccount-none-p' => '(দেয়া হয়নি)',
+	'confirmaccount-submit' => 'নিশ্চিত করুন',
 );
 
 /** Breton (Brezhoneg)
