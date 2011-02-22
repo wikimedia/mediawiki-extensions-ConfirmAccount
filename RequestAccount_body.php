@@ -486,7 +486,12 @@ class RequestAccountPage extends SpecialPage {
 		global $wgOut;
 		$wgOut->addHTML( wfMsgExt( 'acct_request_throttle_hit', 'parsemag', $limit ) );
 	}
-
+	
+	/**
+	 * (a) Try to confirm an email address via a token
+	 * (b) Notify $wgConfirmAccountContact on success
+	 * @param int $limit number of accounts allowed to be requested from the same IP
+	 */
 	protected function confirmEmailToken( $code ) {
 		global $wgUser, $wgOut, $wgConfirmAccountContact, $wgPasswordSender;
 		# Confirm if this token is in the pending requests
@@ -499,15 +504,16 @@ class RequestAccountPage extends SpecialPage {
 				$target = new MailAddress( $wgConfirmAccountContact );
 				$source = new MailAddress( $wgPasswordSender );
 				$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
-				$subject = wfMsg( 'requestaccount-email-subj-admin' );
-				$body = wfMsg( 'requestaccount-email-body-admin', $name, $title->getFullUrl() );
+				$subject = wfMsgForContent( 'requestaccount-email-subj-admin' );
+				$body = wfMsgForContent(
+					'requestaccount-email-body-admin', $name, $title->getFullUrl() );
 				# Actually send the email...
 				$result = UserMailer::send( $target, $source, $subject, $body );
 				if ( WikiError::isError( $result ) ) {
 					wfDebug( "Could not sent email to admin at $target\n" );
 				}
 			}
-			$wgOut->addWikiText( wfMsgHtml( 'request-account-econf' ) );
+			$wgOut->addWikiMsg( 'request-account-econf' );
 			$wgOut->returnToMain();
 			return;
 		}
