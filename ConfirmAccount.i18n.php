@@ -3022,7 +3022,7 @@ $messages['eu'] = array(
 	'requestaccount-leg-person' => 'Norberaren informazioa',
 	'requestaccount-leg-other' => 'Bestelako informazioa',
 	'requestaccount-real' => 'Benetako izena:',
-	'requestaccount-email' => 'Email helbidea:',
+	'requestaccount-email' => 'E-posta helbidea:',
 	'requestaccount-level-0' => 'egilea',
 	'requestaccount-bio' => 'Norberaren biografia:',
 	'requestaccount-attach' => 'Curriculuma (hautazkoa):',
@@ -7091,6 +7091,7 @@ $2
 
 /** Malayalam (മലയാളം)
  * @author Jacob.jose
+ * @author Junaidpv
  * @author Praveenp
  * @author Shijualex
  */
@@ -7102,6 +7103,7 @@ $messages['ml'] = array(
 	'requestaccount-leg-areas' => 'താല്പര്യമുള്ള പ്രധാന മേഖലകൾ',
 	'requestaccount-leg-person' => 'വ്യക്തിഗത വിവരങ്ങൾ',
 	'requestaccount-leg-other' => 'മറ്റ് വിവരങ്ങൾ',
+	'requestaccount-leg-tos' => 'സേവനവ്യവസ്ഥകൾ',
 	'requestaccount-acc-text' => 'ഈ അഭ്യർത്ഥന സമർപ്പിക്കപ്പെട്ടതിനു ശേഷം താങ്കളുടെ ഇമെയിൽ വിലാസത്തിലേക്ക് ഒരു സ്ഥിരീകരണമെയിൽ അയക്കുന്നതായിരിക്കും. പ്രസ്തുത ഇമെയിലിലുള്ള സ്ഥിരീകരണലിങ്കിൽ ഞെക്കി പ്രതികരിക്കുക. അംഗത്വം സൃഷ്ടിക്കപ്പെട്ടതിനു ശേഷം താങ്കളുടെ രഹസ്യവാക്കും ഇമെയിലിൽ അയക്കുന്നതായിരിക്കും.',
 	'requestaccount-real' => 'യഥാർത്ഥ പേര്:',
 	'requestaccount-same' => '(യഥാർത്ഥ പേരുതന്നെ)',
