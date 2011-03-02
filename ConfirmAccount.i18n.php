@@ -4236,6 +4236,10 @@ $3
 עדיין אפשר לאשר את החשבונות האלה, אבל כדאי לבדוק לפני־כן מדוע המפעיל דחה את הבקשה.',
 	'confirmaccount-list3' => 'להלן רשימה של בקשות חשבון שנדחו לאחרונה ויימחקו אוטומטית לאחר מספר ימים.
 עדיין אפשר לאשר את החשבונות האלה.',
+	'confirmaccount-none-o' => 'אין כעת בקשות ממתינות לפתוח חשבון ברשימה הזאת.',
+	'confirmaccount-none-h' => 'אין כעת בקשות ממתינות מוחזקות לפתוח חשבון ברשימה הזאת.',
+	'confirmaccount-none-r' => 'אין כעת בקשות לפתוח חשבון שנדחו לאחרוה ברשימה הזאת.',
+	'confirmaccount-none-e' => 'אין כעת בקשות לפתוח חשבון שפג תוקפן ברשימה הזאת.',
 	'confirmaccount-real-q' => 'שם',
 	'confirmaccount-email-q' => 'דוא"ל',
 	'confirmaccount-bio-q' => 'ביוגרפיה',
@@ -4244,8 +4248,11 @@ $3
 	'confirmaccount-showheld' => 'בקשות שעוכבו',
 	'confirmaccount-showexp' => 'בקשות שפג תוקפן',
 	'confirmaccount-review' => 'סקירה',
+	'confirmaccount-types' => 'בחירת תור אישור חשבונות מתוך הרשימה להלן:',
 	'confirmaccount-all' => '(הצגת כל התורים)',
 	'confirmaccount-type' => 'תור:',
+	'confirmaccount-type-0' => 'כותבים עתידיים',
+	'confirmaccount-type-1' => 'עורכים עתידיים',
 	'confirmaccount-q-open' => 'בקשות פתוחות',
 	'confirmaccount-q-held' => 'בקשות שעוכבו',
 	'confirmaccount-q-rej' => 'בקשות שנדחו לאחרונה',
@@ -4270,7 +4277,9 @@ $3
 	'confirmaccount-confirm' => 'השתמשו באפשרויות שלהלן כדי לקבל, לדחות או לעכב בקשה זו:',
 	'confirmaccount-econf' => '(מאושרת)',
 	'confirmaccount-reject' => '(נדחתה על ידי [[User:$1|$1]] ב־$2)',
+	'confirmaccount-rational' => 'ההסבר שניתן לפונה:',
 	'confirmaccount-noreason' => '(ללא)',
+	'confirmaccount-autorej' => '(הבקשה הזאת נמחקה לאור חוסר פעילות)',
 	'confirmaccount-held' => '(סומנה להמתנה על ידי [User:$1|$1]] ב־$2)',
 	'confirmaccount-create' => 'אישור (יצירת חשבון)',
 	'confirmaccount-deny' => 'דחייה (מחיקת הבקשה)',
@@ -4278,6 +4287,7 @@ $3
 	'confirmaccount-spam' => 'זבל (ללא שליחת הודעה בדוא"ל)',
 	'confirmaccount-reason' => 'הערה (תיכלל בהודעת הדוא"ל):',
 	'confirmaccount-ip' => 'כתובת IP:',
+	'confirmaccount-legend' => 'לאשר / לדחות את זה בחשבון',
 	'confirmaccount-submit' => 'אישור',
 	'confirmaccount-needreason' => 'יש לספק סיבה בתיבת התגובה למטה.',
 	'confirmaccount-canthold' => 'בקשה זו כבר נמצאת בהמתנה או מחוקה.',
@@ -4324,6 +4334,7 @@ $3
 	'usercredentials-badid' => 'לא נמצאו פרטי זיהוי עבור משתמש זה.
 אנא ודאו שהשם מאוית כראוי.',
 	'right-confirmaccount' => 'צפייה ב[[Special:ConfirmAccounts|תור עם החשבונות הדרושים]]',
+	'right-requestips' => 'לצפות בכתובות IP של המבקשים בזמן עיבוד בקשות לפתוח חשבון',
 	'right-lookupcredentials' => 'צפייה ב[[Special:UserCredentials|הרשאות המשתמש]]',
 );
 
