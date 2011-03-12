@@ -325,7 +325,7 @@ class ConfirmAccountsPage extends SpecialPage
 				$form .= self::parseLinks($row->acr_urls);
 			}
 			if( $wgUser->isAllowed( 'requestips' ) ) {
-				$blokip = SpecialPage::getTitleFor( 'Blockip' );
+				$blokip = SpecialPage::getTitleFor( 'Block' );
 				$form .= "<p>".wfMsgHtml('confirmaccount-ip')." ".htmlspecialchars($row->acr_ip).
 				" (" . $this->skin->makeKnownLinkObj( $blokip, wfMsgHtml('blockip'),
 					'ip=' . $row->acr_ip . '&wpCreateAccount=1' ).")</p>\n";
