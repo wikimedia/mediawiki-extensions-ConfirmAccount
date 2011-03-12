@@ -4280,7 +4280,7 @@ $3
 	'confirmaccount-rational' => 'ההסבר שניתן לפונה:',
 	'confirmaccount-noreason' => '(ללא)',
 	'confirmaccount-autorej' => '(הבקשה הזאת נמחקה לאור חוסר פעילות)',
-	'confirmaccount-held' => '(סומנה להמתנה על ידי [User:$1|$1]] ב־$2)',
+	'confirmaccount-held' => '(סומנה להמתנה על ידי [[User:$1|$1]] ב־$2)',
 	'confirmaccount-create' => 'אישור (יצירת חשבון)',
 	'confirmaccount-deny' => 'דחייה (מחיקת הבקשה)',
 	'confirmaccount-hold' => 'עיכוב',
