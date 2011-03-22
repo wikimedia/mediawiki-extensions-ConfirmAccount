@@ -6937,14 +6937,14 @@ $messages['mk'] = array(
 Ви испративме потврдна порака по е-пошта.',
 	'request-account-econf' => 'Вашата е-поштенска адреса е потврдена и ќе биде наведена како таква во вашето барање за сметка.',
 	'requestaccount-email-subj' => '{{SITENAME}}: потврдување на е-пошта',
-	'requestaccount-email-body' => 'Некој, веројатно вие од IP-адресата $1, побарал сметка „$2“ со оваа е-поштенска адреса на {{SITENAME}}.
+	'requestaccount-email-body' => 'Некој, веројатно Вие од IP-адресата $1, на {{SITENAME}} побарал сметка „$2“ со оваа е-поштенска адреса.
 
-За да потврдите дека оваа сметка навистина ви припаѓа вам на {{SITENAME}}, отворете ја врскава во прелистувачот:
+За да потврдите дека оваа сметка на {{SITENAME}} навистина ви припаѓа Вам, отворете ја врскава во прелистувачот:
 
 $3
 
-Ако сметката е создадена, само вие ќе ја добиете лозинката по е-пошта.
-Доколку ова *не* сте вие, не одете на врската.
+Ако сметката е создадена, само Вие ќе ја добиете лозинката по е-пошта.
+Доколку тоа *не* сте Вие, не отворајте ја врската.
 Овој потврден код истекува во $4.',
 	'requestaccount-email-subj-admin' => 'Барање за сметка на {{SITENAME}}',
 	'requestaccount-email-body-admin' => '„$1“ побара сметка и чека потврда.
@@ -7622,7 +7622,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-name' => 'Gebruikersnaam',
 	'confirmaccount-real' => 'Naam:',
 	'confirmaccount-email' => 'E-mail:',
-	'confirmaccount-reqtype' => 'Functie:',
+	'confirmaccount-reqtype' => 'Positie:',
 	'confirmaccount-pos-0' => 'auteur',
 	'confirmaccount-pos-1' => 'redacteur',
 	'confirmaccount-bio' => 'Biografie:',
