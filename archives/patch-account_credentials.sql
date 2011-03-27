@@ -48,4 +48,4 @@ CREATE TABLE /*$wgDBprefix*/account_credentials (
   PRIMARY KEY (acd_user_id,acd_id),
   UNIQUE KEY (acd_id)
   
-) TYPE=InnoDB;
+) /*$wgDBTableOptions*/;
