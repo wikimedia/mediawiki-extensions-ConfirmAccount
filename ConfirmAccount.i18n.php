@@ -1338,7 +1338,7 @@ $3
 	'confirmaccount-notes' => 'Допълнителни бележки:',
 	'confirmaccount-urls' => 'Списък с уебсайтове:',
 	'confirmaccount-confirm' => 'Изберете да одобрите, отхвърлите или задържите тази заявка:',
-	'confirmaccount-reject' => '(отказана от [[Потребител:$1|$1]] на $2)',
+	'confirmaccount-reject' => '(отказана от [[User:$1|$1]] на $2)',
 	'confirmaccount-rational' => 'Обосновка към кандидата:',
 	'confirmaccount-noreason' => '(няма)',
 	'confirmaccount-autorej' => '(тази заявка автоматично беше отхвърлена заради неактивност)',
