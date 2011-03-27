@@ -5,7 +5,7 @@
 
 -- This stores all of our reviews,
 -- the corresponding tags are stored in the tag table
-CREATE TABLE /*$wgDBprefix*/account_requests (
+CREATE TABLE /*_*/account_requests (
   acr_id int unsigned NOT NULL auto_increment,
   -- Usernames must be unique, must not be in the form of
   -- an IP address. _Shouldn't_ allow slashes or case
@@ -62,11 +62,11 @@ CREATE TABLE /*$wgDBprefix*/account_requests (
   UNIQUE KEY (acr_email(255)),
   INDEX (acr_email_token),
   INDEX acr_type_del_reg (acr_type,acr_deleted,acr_registration)
-) TYPE=InnoDB;
+) /*$wgDBTableOptions*/;
 
 -- This stores all of credential information
 -- When accounts are confirmed, the identity info goes here
-CREATE TABLE /*$wgDBprefix*/account_credentials (
+CREATE TABLE /*_*/account_credentials (
   -- Revision ID #
   acd_id int unsigned NOT NULL auto_increment,
   -- Foreign key to user.user_id
@@ -107,4 +107,4 @@ CREATE TABLE /*$wgDBprefix*/account_credentials (
   PRIMARY KEY (acd_user_id,acd_id),
   UNIQUE KEY (acd_id)
 
-) TYPE=InnoDB;
+) /*$wgDBTableOptions*/;
