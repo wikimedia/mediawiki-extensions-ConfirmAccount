@@ -3585,7 +3585,7 @@ Los comptos accèptâs seront fêts et pués enlevâs de ceta lista. Los comptos
 	'confirmaccount-real' => 'Nom :',
 	'confirmaccount-email' => 'Mèl. :',
 	'confirmaccount-bio' => 'Biografia :',
-	'confirmaccount-attach' => 'CV/Rèsumâ :',
+	'confirmaccount-attach' => 'CV :',
 	'confirmaccount-notes' => 'Notes suplèmentères :',
 	'confirmaccount-urls' => 'Lista des setos vouèbe :',
 	'confirmaccount-none-p' => '(pas montâ)',
