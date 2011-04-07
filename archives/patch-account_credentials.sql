@@ -1,15 +1,15 @@
 -- (c) Aaron Schulz, 2007
 
 ALTER TABLE /*$wgDBprefix*/account_requests
-	ADD acr_type tinyint(255) default 0,
+	ADD acr_type tinyint(255) unsigned NOT NULL default 0,
 	DROP INDEX acr_deleted_reg,
 	ADD INDEX acr_type_del_reg (acr_type,acr_deleted,acr_registration);
 
 -- This stores all of credential information
 -- When accounts are confirmed, the identity info goes here
-CREATE TABLE /*$wgDBprefix*/account_credentials (
+CREATE TABLE IF NOT EXISTS /*_*/account_credentials (
   -- Revision ID #
-  acd_id int unsigned NOT NULL auto_increment,
+  acd_id int unsigned NOT NULL auto_increment PRIMARY KEY,
   -- Foreign key to user.user_id
   acd_user_id int unsigned NOT NULL,
   -- Optional 'real name' to be displayed in credit listings
@@ -34,18 +34,16 @@ CREATE TABLE /*$wgDBprefix*/account_credentials (
   acd_storage_key VARCHAR(64) NULL,
   -- Areas of interest
   acd_areas mediumblob NOT NULL,
-  
+
   -- Timestamp of account registration.
   acd_registration char(14) NOT NULL,
-  
+
   -- Timestamp of acceptance
   acd_accepted binary(14),
   -- The user who accepted it
   acd_user int unsigned NOT NULL default 0,
   -- Reason given in email
-  acd_comment varchar(255) NOT NULL default '',
-  
-  PRIMARY KEY (acd_user_id,acd_id),
-  UNIQUE KEY (acd_id)
-  
+  acd_comment varchar(255) NOT NULL default ''
 ) /*$wgDBTableOptions*/;
+
+CREATE UNIQUE INDEX /*i*/acd_user_id ON /*_*/account_credentials (acd_user_id,acd_id);
