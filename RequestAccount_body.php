@@ -365,7 +365,8 @@ class RequestAccountPage extends SpecialPage {
 				'acr_comment' => '',
 				'acr_email_token' => md5( $token ),
 			    'acr_email_token_expires' => $dbw->timestamp( $expires ),
-				'acr_ip' => wfGetIP() // Possible use for spam blocking
+				'acr_ip' => wfGetIP(), // Possible use for spam blocking
+				'acr_deleted' => 0,
 			),
 			__METHOD__
 		);
