@@ -6766,7 +6766,7 @@ Méiglecherweis gëtt et Kontaktlëschten op dem Site déi Dir benotze kënnt wa
 	'usercredentials' => 'Referenzen déi de Benotzer uginn huet:',
 	'usercredentials-leg' => 'Confirméiert Referenze vun engem Benotzer nokucken',
 	'usercredentials-user' => 'Benotzernumm:',
-	'usercredentials-text' => 'Hei ënnedrënner stinn déi confirméiert Benotzer-Berechtigungsnoweiser fir de gewielte Benotzerkont.',
+	'usercredentials-text' => 'Hei ënnendrënner stinn déi confirméiert Benotzer-Berechtigungsnoweiser fir de gewielte Benotzerkont.',
 	'usercredentials-leg-user' => 'Benotzerkont',
 	'usercredentials-leg-areas' => 'Haaptinteressen',
 	'usercredentials-leg-person' => 'Perséinlech Informatiounen',
