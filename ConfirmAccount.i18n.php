@@ -5081,7 +5081,7 @@ Le nomine que io ha specificate sub "Nomine real" es de facto mi proprie nomine 
 	'requestaccount-sent' => 'Tu requesta de conto ha essite inviate con successo e nunc attende revision.
 Un message de confirmation ha essite inviate a tu adresse de e-mail.',
 	'request-account-econf' => 'Tu adresse de e-mail ha essite confirmate e essera listate como tal in tu requesta de conto.',
-	'requestaccount-email-subj' => 'Confirmation de adresse e-mail pro {{SITENAME}}',
+	'requestaccount-email-subj' => 'Confirmation del adresse de e-mail pro {{SITENAME}}',
 	'requestaccount-email-body' => 'Un persona, probabilemente tu, desde le adresse IP $1, ha requestate un conto "$2" con iste adresse de e-mail in {{SITENAME}}.
 
 Pro confirmar que iste conto realmente pertine a te in {{SITENAME}}, visita iste ligamine in tu navigator del web:
