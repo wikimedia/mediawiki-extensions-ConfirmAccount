@@ -8874,8 +8874,8 @@ Para confirmar que esta conta realmente lhe pertence na {{SITENAME}}, siga este 
 
 $3
 
-Se a conta for criada, a palavra-chave só lhe será enviada a si. Se este pedido *não* foi feito por si, não siga o link.
-Este código de confirmação irá expirar às $4.',
+Se a conta for criada, a palavra-chave só será enviada a si. Se este pedido *não* foi feito por si, não siga o link.
+Este código de confirmação irá expirar às $6 de $5.',
 	'requestaccount-email-subj-admin' => 'Pedido de conta na {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" pediu uma conta e aguarda confirmação.
 O endereço electrónico foi confirmado. Pode confirmar o pedido aqui "$2".',
