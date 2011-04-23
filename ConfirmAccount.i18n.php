@@ -8813,6 +8813,7 @@ $3
 	'usercredentials-real' => 'اصلي نوم:',
 	'usercredentials-bio' => 'ژوندليک:',
 	'usercredentials-urls' => 'د وېبځايونو لړليک:',
+	'usercredentials-ip' => 'آرنۍ آی پي پته:',
 	'usercredentials-member' => 'رښتې:',
 );
 
