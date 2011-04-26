@@ -1769,6 +1769,7 @@ $messages['cs'] = array(
 	'requestaccount-leg-areas' => 'Hlavní oblasti zájmu',
 	'requestaccount-leg-person' => 'Osobní informace',
 	'requestaccount-leg-other' => 'Další informace',
+	'requestaccount-leg-tos' => 'Podmínky služby',
 	'requestaccount-acc-text' => 'Na Vaši e-mailovou adresu bude po odeslání žádosti zaslána potvrzující zpráva. Prosím, reagujte na ni kliknutím na odkaz v ní. Poté Vám bude zasláno Vaše heslo.',
 	'requestaccount-areas-text' => 'Níže zvolte tématické oblasti, ve kterých jste formálně expertem nebo by jste v nich rádi vykonávali vaši práci.',
 	'requestaccount-bio-text' => 'Vaše bibliografie bude prvotním obsahem vaši uživatelské stránky. Pokuste se uvést všechny reference. Zvažte, zda jste ochotni zveřejnit tyto informace. Jméno si můžete změnit ve [[Special:Preferences|svém nastavení]].',
@@ -1800,6 +1801,12 @@ Pro potvrzení, že tento účet skutečně patří Vám a pro aktivování e-ma
 $3
 
 Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší $4.',
+	'requestaccount-email-subj-admin' => 'Žádost o účet na {{SITENAME}}',
+	'requestaccount-email-body-admin' => '"$1" požádal o účet a čeká na vaše schválení.
+E-mail byla ověřena. Žádost můžete schválit zde "$2".',
+	'acct_request_throttle_hit' => 'Promiňte, ale už jste požádal o vytvoření {{PLURAL:$1|1 účtu|$1 účtů}}.
+Další žádost již není možná.',
+	'requestaccount-loginnotice' => "Chcete-li získat uživatelský účet, je třeba o něj '''[[Special:RequestAccount|požádat]]'''.",
 	'confirmaccounts' => 'Potvrdit žádosti o účet',
 	'confirmedit-desc' => 'Dává byrokratům možnost potvrzovat žádosti o účet',
 	'confirmaccount-none-o' => 'V tomto seznamu nejsou žádné požadavky na schválení vytvořeného účtu.',
@@ -8302,6 +8309,17 @@ Aquò permet d’èsser sus la tièra dels contactes del site, se ne desiratz sa
 	'right-confirmaccount' => 'Vejatz la [[Special:ConfirmAccounts|fila de las demandas de compte]]',
 	'right-requestips' => 'Vejatz las adreças IP dels demandaires al moment del tractament de las demandas de comptes novèls',
 	'right-lookupcredentials' => 'Vejatz las [[Special:UserCredentials|referéncias dels utilizaires]]',
+);
+
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
+ */
+$messages['or'] = array(
+	'confirmaccount-real-q' => 'ନାମ',
+	'confirmaccount-real' => 'ନାମ',
+	'confirmaccount-email' => 'ଇ-ମେଲ',
+	'confirmaccount-wsum' => 'ସ୍ଵାଗତ!',
+	'usercredentials-email' => 'E-mail:',
 );
 
 /** Ossetic (Иронау)
