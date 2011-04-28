@@ -924,6 +924,32 @@ $2
 تأكد من أن الاسم مكتوب بطريقة صحيحة.',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'requestaccount-real' => 'Həqiqi adınız:',
+	'requestaccount-email' => 'E-poçt ünvanı',
+	'requestaccount-level-0' => 'müəllif',
+	'requestaccount-level-1' => 'redaktor',
+	'confirmaccount-real-q' => 'Ad',
+	'confirmaccount-email-q' => 'E-poçt',
+	'confirmaccount-bio-q' => 'Bioqrafiya',
+	'confirmaccount-name' => 'İstifadəçi adı',
+	'confirmaccount-real' => 'Ad:',
+	'confirmaccount-email' => 'E-poçt:',
+	'confirmaccount-reqtype' => 'mövqe:',
+	'confirmaccount-pos-0' => 'müəllif',
+	'confirmaccount-pos-1' => 'redaktor',
+	'confirmaccount-bio' => 'Bioqrafiya:',
+	'confirmaccount-noreason' => '(heç biri)',
+	'confirmaccount-ip' => 'IP ünvanı:',
+	'usercredentials-user' => 'İstifadəçi adı:',
+	'usercredentials-email' => 'E-poçt:',
+	'usercredentials-real' => 'Həqiqi adınız:',
+	'usercredentials-bio' => 'Bioqrafiya:',
+);
+
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
  */
@@ -7450,6 +7476,13 @@ $2
 	'usercredentials-badid' => 'या सदस्याची शिफारसपत्रे सापडली नाहीत. सदस्य नाव बरोबर असल्याची खात्री करा.',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'confirmaccount-noreason' => '(tiada)',
+);
+
 /** Maltese (Malti)
  * @author Chrisportelli
  * @author Roderick Mallia
@@ -7466,6 +7499,8 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'requestaccount-real' => 'Алкуксонь леметь:',
+	'requestaccount-same' => '(истямо кода алкуксонь лемесь)',
 	'requestaccount-level-0' => 'теицязо',
 	'requestaccount-level-1' => 'витницязо-петницязо',
 	'confirmaccount-real-q' => 'Лемезэ:',
@@ -7473,6 +7508,7 @@ $messages['myv'] = array(
 	'confirmaccount-type' => 'Чиполань пулось:',
 	'confirmaccount-name' => 'Теицянь лем',
 	'confirmaccount-real' => 'Лемезэ:',
+	'confirmaccount-email' => 'Е-сёрма:',
 	'confirmaccount-pos-0' => 'теиця',
 	'confirmaccount-pos-1' => 'витницязо-петницязо',
 	'confirmaccount-none-p' => '(апак максо)',
