@@ -930,6 +930,7 @@ $2
 $messages['az'] = array(
 	'requestaccount-real' => 'Həqiqi adınız:',
 	'requestaccount-email' => 'E-poçt ünvanı',
+	'requestaccount-reqtype' => 'Mövqe:',
 	'requestaccount-level-0' => 'müəllif',
 	'requestaccount-level-1' => 'redaktor',
 	'confirmaccount-real-q' => 'Ad',
