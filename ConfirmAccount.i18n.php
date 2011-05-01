@@ -7371,6 +7371,7 @@ $messages['mn'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Htt
  * @author Kaustubh
  * @author Mahitgar
  */
@@ -7479,7 +7480,7 @@ $3
 	'confirmaccount-leg-other' => 'इतर माहिती',
 	'confirmaccount-name' => 'सदस्यनाव',
 	'confirmaccount-real' => 'नाव:',
-	'confirmaccount-email' => 'इमेल:',
+	'confirmaccount-email' => 'विपत्र:',
 	'confirmaccount-reqtype' => 'स्थिती:',
 	'confirmaccount-pos-0' => 'लेखक',
 	'confirmaccount-pos-1' => 'संपादक',
@@ -8917,6 +8918,7 @@ $messages['ps'] = array(
 	'confirmaccount-bio-q' => 'ژوندليک',
 	'confirmaccount-showrej' => 'رټل شوې غوښتنې',
 	'confirmaccount-review' => 'مخکتنه',
+	'confirmaccount-q-open' => 'پرانيستې غوښتنې',
 	'confirmaccount-leg-user' => 'ګڼون',
 	'confirmaccount-leg-person' => 'ځاني مالومات',
 	'confirmaccount-leg-other' => 'نور مالومات',
@@ -8924,6 +8926,7 @@ $messages['ps'] = array(
 	'confirmaccount-real' => 'نوم:',
 	'confirmaccount-email' => 'برېښليک:',
 	'confirmaccount-pos-0' => 'ليکوال',
+	'confirmaccount-pos-1' => 'سمونګر',
 	'confirmaccount-bio' => 'ژوندليک:',
 	'confirmaccount-urls' => 'د وېبځايونو لړليک:',
 	'confirmaccount-noreason' => '(هېڅ)',
