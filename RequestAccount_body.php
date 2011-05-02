@@ -78,8 +78,9 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	protected function showForm( $msg = '', $forgotFile = 0 ) {
-		global $wgOut, $wgUser, $wgUseRealNamesOnly, $wgAllowRealName, $wgAccountRequestToS,
-			$wgAccountRequestTypes, $wgAccountRequestExtraInfo, $wgAllowAccountRequestFiles;
+		global $wgOut, $wgUser, $wgUseRealNamesOnly, $wgAllowRealName;
+		global $wgAccountRequestToS, $wgAccountRequestTypes, $wgAccountRequestExtraInfo,
+			$wgAllowAccountRequestFiles, $wgMakeUserPageFromBio;
 
 		$this->mForgotAttachment = $forgotFile;
 
@@ -153,7 +154,11 @@ class RequestAccountPage extends SpecialPage {
 
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-person' ) . '</legend>';
-		$form .= wfMsgExt( 'requestaccount-bio-text', array( 'parse' ) ) . "\n";
+		if ( $wgMakeUserPageFromBio ) {
+			$form .= wfMsgExt( 'requestaccount-bio-text-i', 'parse' ) . "\n";
+		}
+		$form .= wfMsgExt( 'requestaccount-bio-text', 'parse' ) . "\n";
+
 		if ( $wgUseRealNamesOnly  || $wgAllowRealName ) {
 			$form .= '<table cellpadding=\'4\'>';
 			$form .= "<tr><td>" . Xml::label( wfMsgHtml( 'requestaccount-real' ), 'wpRealName' ) . "</td>";

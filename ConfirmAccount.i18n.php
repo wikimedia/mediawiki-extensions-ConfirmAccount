@@ -27,25 +27,24 @@ Once the account is approved, you will be e-mailed a notification message and th
 	'requestaccount-acc-text'   => 'Your e-mail address will be sent a confirmation message once this request is submitted.
 Please respond by clicking on the confirmation link provided by the e-mail.
 Also, your password will be e-mailed to you when your account is created.',
-	'requestaccount-areas' => '', # Do not translate this message to other languages
+	'requestaccount-areas' 		=> '', # Do not translate this message to other languages
 	'requestaccount-areas-text' => 'Select the topic areas below in which you have formal expertise or would like to do the most work in.',
 	'requestaccount-ext-text'   => 'The following information is kept private and will only be used for this request.
 You may want to list contacts such a phone number to aid in identify confirmation.',
-	'requestaccount-bio-text'   => "Your biography will be set as the default content for your userpage.
-Try to include any credentials.
-Make sure you are comfortable publishing such information.
-Your name can be changed via [[Special:Preferences|your preferences]].",
+	'requestaccount-bio-text'   => "Try to include any relevant credentials in your biography below.",
+	'requestaccount-bio-text-i' => "'''Your biography will be set as the initial content for your userpage.'''
+Make sure you are comfortable publishing such information.",
 	'requestaccount-real'       => 'Real name:',
-	'requestaccount-same'       => '(same as real name)',
+	'requestaccount-same'       => '(same as real name below)',
 	'requestaccount-email'      => 'E-mail address:',
 	'requestaccount-reqtype'    => 'Position:',
 	'requestaccount-level-0'    => 'author',
 	'requestaccount-level-1'    => 'editor',
 	'requestaccount-info'       => '(?)',
-	'requestaccount-bio'        => 'Personal biography:',
+	'requestaccount-bio'        => 'Personal biography (plain text only):',
 	'requestaccount-attach'     => 'Resume or CV (optional):',
 	'requestaccount-notes'      => 'Additional notes:',
-	'requestaccount-urls'       => 'List of websites, if any (separate with newlines):',
+	'requestaccount-urls'       => 'List of websites, if any (each on a separate line):',
 	'requestaccount-agree'      => 'You must certify that your real name is correct and that you agree to our Terms of Service.',
 	'requestaccount-inuse'      => 'Username is already in use in a pending account request.',
 	'requestaccount-tooshort'   => 'Your biography must be at least $1 {{PLURAL:$1|word|words}} long.',
