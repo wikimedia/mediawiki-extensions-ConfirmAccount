@@ -3666,6 +3666,7 @@ $messages['ga'] = array(
 
 /** Galician (Galego)
  * @author Alma
+ * @author Elisardojm
  * @author Toliño
  * @author Xosé
  */
@@ -3688,17 +3689,16 @@ Unha vez que se aprobe a conta, recibirá unha mensaxe de notificación por corr
 	'requestaccount-areas-text' => 'Seleccione embaixo as áreas dos temas dos que é máis experto ou nos que lle gustaría traballar máis.',
 	'requestaccount-ext-text' => 'A información seguinte mantense como reservada e só se usará para esta solicitude.
 	Pode querer listar contactos, como un número de teléfono, para axudar a identificar a confirmación.',
-	'requestaccount-bio-text' => 'A súa biografía aparecerá como contido predefinido da súa páxina de usuario.
-Tente incluír credenciais.
-Asegúrese de non ter problema coa publicación desa información.
-O seu nome pódese cambiar [[Special:Preferences|nas súas preferencias]].',
+	'requestaccount-bio-text' => 'Tente incluír algunhas credenciais relevantes na súa biografía de abaixo.',
+	'requestaccount-bio-text-i' => "'''A súa biografía será definida como o contido inicial da súa páxina de usuario .''' 
+Asegúrese de que se sinte cómodo publicando esa información.",
 	'requestaccount-real' => 'Nome real:',
 	'requestaccount-same' => '(o mesmo que o nome real)',
 	'requestaccount-email' => 'Enderezo de correo electrónico:',
 	'requestaccount-reqtype' => 'Posición:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografía persoal:',
+	'requestaccount-bio' => 'Biografía persoal (só en texto):',
 	'requestaccount-attach' => 'Curriculum Vitae (opcional):',
 	'requestaccount-notes' => 'Notas adicionais:',
 	'requestaccount-urls' => 'Lista de sitios web, de habelos, (separados cun parágrafo novo):',
@@ -9517,6 +9517,7 @@ $messages['roa-tara'] = array(
  * @author Lockal
  * @author MaxSem
  * @author Rubin
+ * @author Sasha Blashenkov
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -9538,17 +9539,14 @@ $messages['ru'] = array(
 	'requestaccount-areas-text' => 'Выберите области, в которых вы компетентны или в которых собираетесь работать в наибольшей степени.',
 	'requestaccount-ext-text' => 'Следующая информация будет сохранена в секрете и будет использована только для обработки данного запроса.
 	Вы можете перечислить способы связи, например, номер телефона, чтобы помочь в подтверждении идентичности.',
-	'requestaccount-bio-text' => 'Ваша биография будет по умолчанию помещена на вашу личную страницу.
-Попробуйте включить какие-либо удостоверения личности.
-Убедитесь, что вы не против публикации этой информации.
-Ваше имя может быть изменено с помощью [[Special:Preferences|ваших персональных настроек]].',
+	'requestaccount-bio-text' => 'Попробуйте включить любые соответствующие полномочия в вашей биографии ниже.',
 	'requestaccount-real' => 'Настоящее имя:',
 	'requestaccount-same' => '(такая же как и настоящее имя)',
 	'requestaccount-email' => 'Электронная почта:',
 	'requestaccount-reqtype' => 'Должность:',
 	'requestaccount-level-0' => 'автор',
 	'requestaccount-level-1' => 'редактор',
-	'requestaccount-bio' => 'Личная биография:',
+	'requestaccount-bio' => 'Личная биография (только обычный текст):',
 	'requestaccount-attach' => 'Резюме (необязательно):',
 	'requestaccount-notes' => 'Дополнительные замечания:',
 	'requestaccount-urls' => 'Список веб-сайтов, если есть (по одному на каждой строчке):',
@@ -11392,17 +11390,16 @@ Kapag napahintulutan na ang akawnt, padadalhan ka ng isang mensahe ng pagbibigay
 	'requestaccount-areas-text' => 'Piliin ang mga pook ng paksang nasa ibaba kung saan mayroon kang pormal na kadalubhasaan o nais na pag-ukulan ng karamihan sa mga gawain mo.',
 	'requestaccount-ext-text' => 'Pinananatiling pansarili ang sumusunod na kabatiran at gagamitin lamang para sa kahilingang ito.
 Maaaring naisin mong magtala ng mga kabatirang pangpakikipag-ugnayang katulad ng bilang ng telepono upang makatulong sa pagtitiyak ng pagkakakilanlan.',
-	'requestaccount-bio-text' => 'Itatalaga ang talambuhay mo bilang likas na nakatakdang nilalaman para sa iyong pahina ng tagagamit.
-Subuking isama ang anumang mga katibayan ng katangian.
-Tiyaking maginhawa para sa iyo at hindi ka nagaalinglangang ilathala ng ganyang kabatiran.
-Maaari mong baguhin ang pangalan mo sa pamamagitan ng [[Special:Preferences|iyong mga kagustuhan]].',
+	'requestaccount-bio-text' => 'Subukang isama ang anumang kaugnay na mga kredensyal sa loob ng iyong talambuhay sa ibaba.',
+	'requestaccount-bio-text-i' => "'''Ang talambuhay mo ay itatakda bilang pansimulang nilalaman para sa pahina mo ng tagagamit.'''
+Tiyaking maginhawa ang pakiramdam mo sa paglalathala ng ganyang kabatiran.",
 	'requestaccount-real' => 'Totoong pangalan:',
 	'requestaccount-same' => '(katulad ng totoong pangalan)',
 	'requestaccount-email' => 'Adres ng e-liham:',
 	'requestaccount-reqtype' => 'Katungkulan:',
 	'requestaccount-level-0' => 'may-akda',
 	'requestaccount-level-1' => 'patnugot',
-	'requestaccount-bio' => 'Pansariling talambuhay:',
+	'requestaccount-bio' => 'Pansariling talambuhay (payak na teksto lamang):',
 	'requestaccount-attach' => 'Buod ng mga karanasan sa hanapbuhay (maaaring wala nito):',
 	'requestaccount-notes' => 'Karagdagang mga tala:',
 	'requestaccount-urls' => 'Talaan ng mga websayt, kung mayroon (ihiwalay na may bagong mga guhit):',
