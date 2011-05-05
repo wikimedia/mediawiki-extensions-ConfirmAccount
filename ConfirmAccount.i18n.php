@@ -3530,17 +3530,14 @@ Et pués, un mot de pâssa serat mandâ per mèssageria èlèctronica quand vout
 	'requestaccount-areas-text' => 'Chouèsésséd los domênos que vos avéd una èxpèrtisa dèmontrâ, ou ben que vos éte encllin a contribuar lo ples.',
 	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et porrat étre utilisâ ren que por ceta demanda.
 Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfono por avêr una assistance por confirmar voutra identitât.',
-	'requestaccount-bio-text' => 'Voutra biografia serat betâ per dèfôt sur voutra pâge utilisator.
-Tâchiéd d’y betar voutres recomandacions.
-Assurâd-vos que vos pouede difusar sen crenta les enformacions.
-Voutron nom pôt étre changiê en utilisent voutres [[Special:Preferences|prèferences]].',
+	'requestaccount-bio-text' => 'Tâchiéd d’encllure totes les recomandacions que vont avouéc dens voutra biografia ce-desot.',
 	'requestaccount-real' => 'Veré nom :',
 	'requestaccount-same' => '(nom que figure dens voutron ètat civilo)',
 	'requestaccount-email' => 'Adrèce èlèctronica :',
 	'requestaccount-reqtype' => 'Situacion :',
 	'requestaccount-level-0' => 'ôtor',
 	'requestaccount-level-1' => 'contributor',
-	'requestaccount-bio' => 'Biografia a sè :',
+	'requestaccount-bio' => 'Biografia a sè (ren que lo tèxto bruto) :',
 	'requestaccount-attach' => 'CV (u chouèx) :',
 	'requestaccount-notes' => 'Notes de ples :',
 	'requestaccount-urls' => 'Lista des setos vouèbe. S’y en at un mouél, sèparâd-los per un sôt de legne :',
@@ -5633,17 +5630,16 @@ Inoltre la tua password sarà inviata via e-mail quando il tuo account sarà sta
 	'requestaccount-areas-text' => 'Selezionare le aree di seguito in cui si hanno competenze formali o in cui si vorrebbe fare la maggior parte del lavoro.',
 	'requestaccount-ext-text' => "Le seguenti informazioni saranno tenute private e saranno usate solo per questa richiesta.
 Potresti voler inserire dei contatti come un numero di telefono per aiutare l'identificazione.",
-	'requestaccount-bio-text' => 'La tua biografia sarà impostata come contenuto predefinito per la tua pagina utente.
-Cerca di inserire tutte le credenziali.
-Assicurati di voler pubblicare tali informazioni.
-Il tuo nome può essere modificato tramite le [[Special:Preferences|tue preferenze]].',
+	'requestaccount-bio-text' => 'Cerca di inserire tutte le credenziali e le informazioni rilevanti nella tua biografia.',
+	'requestaccount-bio-text-i' => "'''La tua biografia sarà impostata come contenuto predefinito per la tua pagina utente.'''
+Assicurati di voler pubblicare tali informazioni.",
 	'requestaccount-real' => 'Vero nome:',
 	'requestaccount-same' => '(uguale al vero nome)',
 	'requestaccount-email' => 'Indirizzo e-mail:',
 	'requestaccount-reqtype' => 'Posizione:',
 	'requestaccount-level-0' => 'autore',
 	'requestaccount-level-1' => 'editore',
-	'requestaccount-bio' => 'Biografia personale:',
+	'requestaccount-bio' => 'Biografia personale (solo testo):',
 	'requestaccount-attach' => 'Curriculum (opzionale):',
 	'requestaccount-notes' => 'Ulteriori note:',
 	'requestaccount-urls' => 'Elenco dei siti web, se ce ne sono (uno per riga):',
@@ -9547,6 +9543,8 @@ $messages['ru'] = array(
 	'requestaccount-ext-text' => 'Следующая информация будет сохранена в секрете и будет использована только для обработки данного запроса.
 	Вы можете перечислить способы связи, например, номер телефона, чтобы помочь в подтверждении идентичности.',
 	'requestaccount-bio-text' => 'Попробуйте включить любые соответствующие полномочия в вашей биографии ниже.',
+	'requestaccount-bio-text-i' => "'''Ваша биография будет размещена на вашей личной странице.'''
+Убедитесь, что вы не возражаете против публикации этих сведений.",
 	'requestaccount-real' => 'Настоящее имя:',
 	'requestaccount-same' => '(такая же как и настоящее имя)',
 	'requestaccount-email' => 'Электронная почта:',
