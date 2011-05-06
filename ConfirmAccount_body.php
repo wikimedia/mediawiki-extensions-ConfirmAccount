@@ -358,11 +358,11 @@ class ConfirmAccountsPage extends SpecialPage
 		$form .= "<p>".Xml::submitButton( wfMsgHtml( 'confirmaccount-submit') )."</p>\n";
 		$form .= '</fieldset>';
 
-		$form .= Xml::hidden( 'title', $titleObj->getPrefixedDBKey() )."\n";
-		$form .= Xml::hidden( 'action', 'reject' );
-		$form .= Xml::hidden( 'acrid', $row->acr_id );
-		$form .= Xml::hidden( 'wpShowRejects', $this->showRejects );
-		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() )."\n";
+		$form .= Html::Hidden( 'title', $titleObj->getPrefixedDBKey() )."\n";
+		$form .= Html::Hidden( 'action', 'reject' );
+		$form .= Html::Hidden( 'acrid', $row->acr_id );
+		$form .= Html::Hidden( 'wpShowRejects', $this->showRejects );
+		$form .= Html::Hidden( 'wpEditToken', $wgUser->editToken() )."\n";
 		$form .= Xml::closeElement( 'form' );
 
 		$wgOut->addHTML( $form );

@@ -207,10 +207,10 @@ class RequestAccountPage extends SpecialPage {
 			$form .= $captcha->getForm();
 			$form .= '</fieldset>';
 		}
-		$form .= Xml::hidden( 'title', $this->getTitle()->getPrefixedDBKey() ) . "\n";
-		$form .= Xml::hidden( 'wpEditToken', $wgUser->editToken() ) . "\n";
-		$form .= Xml::hidden( 'attachment', $this->mPrevAttachment ) . "\n";
-		$form .= Xml::hidden( 'forgotAttachment', $this->mForgotAttachment ) . "\n";
+		$form .= Html::Hidden( 'title', $this->getTitle()->getPrefixedDBKey() ) . "\n";
+		$form .= Html::Hidden( 'wpEditToken', $wgUser->editToken() ) . "\n";
+		$form .= Html::Hidden( 'attachment', $this->mPrevAttachment ) . "\n";
+		$form .= Html::Hidden( 'forgotAttachment', $this->mForgotAttachment ) . "\n";
 		$form .= "<p>" . Xml::submitButton( wfMsgHtml( 'requestaccount-submit' ) ) . "</p>";
 		$form .= Xml::closeElement( 'form' );
 
