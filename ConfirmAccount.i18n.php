@@ -7398,7 +7398,7 @@ $messages['mr'] = array(
 तुमचे नाव तुम्ही [[Special:Preferences]] मध्ये बदलू शकता.',
 	'requestaccount-real' => 'खरे नाव:',
 	'requestaccount-same' => '(खर्‍या नावा प्रमाणेच)',
-	'requestaccount-email' => 'इमेल पत्ता:',
+	'requestaccount-email' => 'विपत्र पत्ता:',
 	'requestaccount-reqtype' => 'हुद्दा:',
 	'requestaccount-level-0' => 'लेखक',
 	'requestaccount-level-1' => 'संपादक',
