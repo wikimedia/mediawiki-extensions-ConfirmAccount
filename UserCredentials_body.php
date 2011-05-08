@@ -79,7 +79,7 @@ class UserCredentialsPage extends SpecialPage
 		$form .= '<legend>' . wfMsgHtml( 'usercredentials-leg-user' ) . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>" . wfMsgHtml( 'username' ) . "</td>";
-		$form .= "<td>" . $this->skin->makeLinkObj( $user->getUserPage(), $user->getUserPage()->getText() ) . "</td></tr>\n";
+		$form .= "<td>" . $this->skin->makeLinkObj( $user->getUserPage(), htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
 
 		$econf = $row->acd_email_authenticated ? ' <strong>' . wfMsgHtml( 'confirmaccount-econf' ) . '</strong>' : '';
 		$form .= "<tr><td>" . wfMsgHtml( 'usercredentials-email' ) . "</td>";
