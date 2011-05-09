@@ -141,7 +141,7 @@ class RequestAccountPage extends SpecialPage {
 					}
 					$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $set[0] ) );
 					if ( isset( $set[1] ) ) {
-						$pg = $this->skin->makeKnownLink( $set[1], wfMsgHtml( 'requestaccount-info' ) );
+						$pg = Linker::link( Title::newFromText( $set[1] ), wfMsgHtml( 'requestaccount-info' ), array(), array(), "known" );
 					} else {
 						$pg = '';
 					}

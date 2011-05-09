@@ -84,7 +84,7 @@ class ConfirmAccountsPage extends SpecialPage
 		# Show other sub-queue links. Grey out the current one.
 		# When viewing a request, show them all.
 		if( $this->acrID || $this->showStale || $this->showRejects || $this->showHeld ) {
-			$listLink = $this->skin->makeKnownLinkObj( $titleObj, wfMsgHtml( 'confirmaccount-showopen' ) );
+			$listLink = Linker::link( $titleObj, wfMsgHtml( 'confirmaccount-showopen' ), array(), array(), "known" );
 		} else {
 			$listLink = wfMsgHtml( 'confirmaccount-showopen' );
 		}
@@ -279,7 +279,7 @@ class ConfirmAccountsPage extends SpecialPage
 					}
 					$formName = "wpArea-" . htmlspecialchars(str_replace(' ','_',$set[0]));
 					if( isset($set[1]) ) {
-						$pg = $this->skin->makeKnownLink( $set[1], wfMsgHtml('requestaccount-info') );
+						$pg = Linker::link( Title::newFromText( $set[1] ), wfMsgHtml('requestaccount-info'), array(), array(), "known" );
 					} else {
 						$pg = '';
 					}
