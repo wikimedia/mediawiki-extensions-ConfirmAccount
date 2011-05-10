@@ -2974,6 +2974,7 @@ Verifique que el nombre se ha escrito correctamente.',
 
 /** Estonian (Eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
 	'requestaccount-leg-user' => 'Kasutajakonto',
@@ -2987,7 +2988,7 @@ $messages['et'] = array(
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'toimetaja',
 	'requestaccount-info' => '(?)',
-	'requestaccount-bio' => 'Personaalne biograafia:',
+	'requestaccount-bio' => 'Isiku biograafia (vaid lihttekst):',
 	'requestaccount-attach' => 'Resümee või CV (valikuline):',
 	'requestaccount-notes' => 'Lisainfo:',
 	'confirmaccount-real-q' => 'Nimi',
