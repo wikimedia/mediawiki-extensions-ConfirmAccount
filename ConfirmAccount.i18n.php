@@ -3335,14 +3335,16 @@ Une fois que le compte est accepté, vous recevrez un courriel de notification e
 	'requestaccount-areas-text' => 'Choisissez les domaines dans lesquels vous avez une expertise démontrée, ou dans lesquels vous êtes enclin à contribuer le plus.',
 	'requestaccount-ext-text' => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
 	Vous avez la possibilité de lister des contacts tels qu’un numéro de téléphone pour obtenir une assistance pour confirmer votre identité.',
-	'requestaccount-bio-text' => 'Votre biographie sera mise par défaut sur votre page utilisateur. Essayez d’y mettre vos recommandations. Assurez-vous que vous pouvez diffuser sans crainte les informations. Votre nom peut être changé en utilisant [[Special:Preferences]].',
+	'requestaccount-bio-text' => "Essayez d'inclure toute références pertinentes à votre biographie ci-dessous.",
+	'requestaccount-bio-text-i' => "'''Votre biographie servira comme contenu initial de votre page utilisateur.'''
+Assurez-vous d'être à l'aise de publier de telles informations.",
 	'requestaccount-real' => 'Nom réel :',
 	'requestaccount-same' => '(nom figurant dans votre état civil)',
 	'requestaccount-email' => 'Adresse électronique :',
 	'requestaccount-reqtype' => 'Situation :',
 	'requestaccount-level-0' => 'auteur',
 	'requestaccount-level-1' => 'contributeur',
-	'requestaccount-bio' => 'Biographie personnelle :',
+	'requestaccount-bio' => 'Biographie personnelle (texte brut seulement)  :',
 	'requestaccount-attach' => 'CV (facultatif) :',
 	'requestaccount-notes' => 'Notes supplémentaires :',
 	'requestaccount-urls' => "Liste des sites Web. S'il y en a plusieurs, séparez-les par un saut de ligne :",
@@ -7568,8 +7570,11 @@ $2
  * @author Anakmalaysia
  */
 $messages['ms'] = array(
+	'requestaccount-leg-other' => 'Maklumat lain',
+	'confirmaccount-leg-other' => 'Maklumat lain',
 	'confirmaccount-name' => 'Nama pengguna',
 	'confirmaccount-noreason' => '(tiada)',
+	'usercredentials-leg-other' => 'Maklumat lain',
 );
 
 /** Maltese (Malti)
