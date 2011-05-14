@@ -8,9 +8,7 @@
 
 $specialPageAliases = array();
 
-/** English
- * @author Jon Harald Søby
- */
+/** English (English) */
 $specialPageAliases['en'] = array(
 	'RequestAccount' => array( 'RequestAccount' ),
 	'ConfirmAccounts' => array( 'ConfirmAccounts' ),
@@ -69,7 +67,7 @@ $specialPageAliases['el'] = array(
 $specialPageAliases['eo'] = array(
 	'RequestAccount' => array( 'Peti_konton' ),
 	'ConfirmAccounts' => array( 'Konfirmi_konton' ),
-	'UserCredentials' => array( 'Uzantaj_datumoj' ),
+	'UserCredentials' => array( 'Datumoj_pri_uzantoj' ),
 );
 
 /** Spanish (Español) */
@@ -107,8 +105,8 @@ $specialPageAliases['frp'] = array(
 
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
-	'RequestAccount' => array( 'Solicitar unha conta' ),
-	'ConfirmAccounts' => array( 'Confirmar a conta' ),
+	'RequestAccount' => array( 'Solicitar_unha_conta' ),
+	'ConfirmAccounts' => array( 'Confirmar_a_conta' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -140,7 +138,9 @@ $specialPageAliases['hsb'] = array(
 
 /** Haitian (Kreyòl ayisyen) */
 $specialPageAliases['ht'] = array(
-	'ConfirmAccounts' => array( 'KonfimeKonpt' ),
+	'RequestAccount' => array( 'MandKont' ),
+	'ConfirmAccounts' => array( 'KonfimeKont' ),
+	'UserCredentials' => array( 'DwaItilizatèYo' ),
 );
 
 /** Hungarian (Magyar) */
@@ -174,6 +174,11 @@ $specialPageAliases['ja'] = array(
 	'RequestAccount' => array( 'アカウント申請', 'アカウント登録申請' ),
 	'ConfirmAccounts' => array( 'アカウント承認', 'アカウントの承認', 'アカウント申請の承認', 'アカウント登録申請の承認' ),
 	'UserCredentials' => array( '利用者信頼情報' ),
+);
+
+/** Georgian (ქართული) */
+$specialPageAliases['ka'] = array(
+	'ConfirmAccounts' => array( 'ანგარიშის_დადასტურება' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
@@ -213,6 +218,7 @@ $specialPageAliases['lb'] = array(
 $specialPageAliases['mk'] = array(
 	'RequestAccount' => array( 'ПобарајКорисничкаСметка' ),
 	'ConfirmAccounts' => array( 'ПотврдаНаКорисничкаСметка' ),
+	'UserCredentials' => array( 'КорисничкиАкдредитиви' ),
 );
 
 /** Malayalam (മലയാളം) */
@@ -343,6 +349,13 @@ $specialPageAliases['tr'] = array(
 	'RequestAccount' => array( 'Hesapİste' ),
 	'ConfirmAccounts' => array( 'HesaplarıDoğrula' ),
 	'UserCredentials' => array( 'KullanıcıReferansları' ),
+);
+
+/** Simplified Chinese (‪中文(简体)‬) */
+$specialPageAliases['zh-hans'] = array(
+	'RequestAccount' => array( '申请帐户' ),
+	'ConfirmAccounts' => array( '确认帐户' ),
+	'UserCredentials' => array( '用户凭据' ),
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
