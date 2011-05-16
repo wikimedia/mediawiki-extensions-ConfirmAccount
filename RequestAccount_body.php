@@ -91,10 +91,10 @@ class RequestAccountPage extends SpecialPage {
 		}
 		# Give notice to users that are logged in
 		if ( $wgUser->getID() ) {
-			$wgOut->addWikiText( wfMsg( "requestaccount-dup" ) );
+			$wgOut->addWikiMsg( 'requestaccount-dup' );
 		}
 
-		$wgOut->addWikiText( wfMsg( "requestaccount-text" ) );
+		$wgOut->addWikiMsg( 'requestaccount-text' );
 
 		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
 			'action' => $this->getTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
@@ -216,7 +216,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$wgOut->addHTML( $form );
 
-		$wgOut->addWikiText( wfMsg( "requestaccount-footer" ) );
+		$wgOut->addWikiMsg( 'requestaccount-footer' );
 	}
 
 	protected function doSubmit() {
@@ -403,7 +403,7 @@ class RequestAccountPage extends SpecialPage {
 	protected function showSuccess() {
 		global $wgOut;
 		$wgOut->setPagetitle( wfMsg( "requestaccount" ) );
-		$wgOut->addWikiText( wfMsg( "requestaccount-sent" ) );
+		$wgOut->addWikiMsg( 'requestaccount-sent' );
 		$wgOut->returnToMain();
 	}
 
@@ -528,16 +528,16 @@ class RequestAccountPage extends SpecialPage {
 		if ( is_object( $user ) ) {
 			if ( $user->confirmEmail() ) {
 				$message = $wgUser->isLoggedIn() ? 'confirmemail_loggedin' : 'confirmemail_success';
-				$wgOut->addWikiText( wfMsg( $message ) );
+				$wgOut->addWikiMsg( $message );
 				if ( !$wgUser->isLoggedIn() ) {
 					$title = SpecialPage::getTitleFor( 'Userlogin' );
 					$wgOut->returnToMain( true, $title->getPrefixedUrl() );
 				}
 			} else {
-				$wgOut->addWikiText( wfMsg( 'confirmemail_error' ) );
+				$wgOut->addWikiMsg( 'confirmemail_error' );
 			}
 		} else {
-			$wgOut->addWikiText( wfMsg( 'confirmemail_invalid' ) );
+			$wgOut->addWikiMsg( 'confirmemail_invalid' );
 		}
 	}
 

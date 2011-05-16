@@ -151,7 +151,7 @@ class ConfirmAccountsPage extends SpecialPage
 
 	protected function showQueues() {
 		global $wgOut, $wgAccountRequestTypes, $wgLang;
-		$wgOut->addWikiText( wfMsg('confirmaccount-maintext') );
+		$wgOut->addWikiMsg( 'confirmaccount-maintext' );
 
 		$wgOut->addHTML( '<p><strong>' . wfMsgHtml('confirmaccount-types') . '</strong></p>' );
 		$wgOut->addHTML( '<ul>' );
@@ -207,7 +207,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$wgOut->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
 		}
 
-		$wgOut->addWikiText( wfMsg( "confirmaccount-text" ) );
+		$wgOut->addWikiMsg( 'confirmaccount-text' );
 
 		if( $row->acr_rejected ) {
 			$datim = $wgLang->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
@@ -808,9 +808,9 @@ class ConfirmAccountsPage extends SpecialPage
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		$wgOut->setPagetitle( wfMsgHtml('actioncomplete') );
 		if( $this->submitType == 'accept' ) {
-			$wgOut->addWikiText( wfMsg( "confirmaccount-acc", $name ) );
+			$wgOut->addWikiMsg( 'confirmaccount-acc', $name );
 		} else if( $this->submitType == 'reject' || $this->submitType == 'spam' ) {
-			$wgOut->addWikiText( wfMsg( "confirmaccount-rej" ) );
+			$wgOut->addWikiMsg( 'confirmaccount-rej' );
 		} else {
 			$wgOut->redirect( $titleObj->getFullUrl() );
 			return;
