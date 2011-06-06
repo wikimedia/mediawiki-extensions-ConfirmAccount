@@ -2784,17 +2784,14 @@ Tu contraseña será enviada cuando tu cuenta sea creada.',
 	'requestaccount-areas-text' => 'Seleccione las áreas en las que tiene experiencia formal o que le interesa colaborar.',
 	'requestaccount-ext-text' => 'La siguiente información se mantiene privada y sólo será usada para esta solicitud.
 Usted puede desear enlistar contactos como un número telefónico para ayudar en la confirmación de la identidad.',
-	'requestaccount-bio-text' => 'Tu biografía será configurado como el contenido por defecto de tu página de usuario.
-Trate de incluir alguna credencial.
-Asegúrese de estar conforme con la publicación de tal información.
-Tu nombre puede ser cambiado a través de [[Special:Preferences|Tus preferencias]].',
+	'requestaccount-bio-text' => 'Trata de incluir alguna credencial relevante en tu biografía abajo.',
 	'requestaccount-real' => 'Nombre real:',
 	'requestaccount-same' => '[Tu nombre real]',
 	'requestaccount-email' => 'Dirección de correo electrónico:',
 	'requestaccount-reqtype' => 'Posición:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografía personal:',
+	'requestaccount-bio' => 'Biografía personal (sólo texto simple):',
 	'requestaccount-attach' => 'Campo (Opcional):',
 	'requestaccount-notes' => 'Notas adicionales:',
 	'requestaccount-urls' => 'Lista de sitios web [sepáralos por renglones]',
