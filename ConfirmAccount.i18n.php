@@ -12139,6 +12139,7 @@ $2
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenxiaoqino
+ * @author Hydra
  * @author Kuailong
  * @author Mark85296341
  * @author Wilsonmess
@@ -12261,6 +12262,7 @@ $3
 	'confirmaccount-confirm' => '用以下的按钮去批准或拒绝这个请求。',
 	'confirmaccount-econf' => '（已批准）',
 	'confirmaccount-reject' => '（于$2被[[User:$1|$1]]拒绝）',
+	'confirmaccount-rational' => '给申请人的理由：',
 	'confirmaccount-noreason' => '（无）',
 	'confirmaccount-autorej' => '（此请求已因为无活动而自动被回绝）',
 	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]标记为"挂起")',
@@ -12329,6 +12331,9 @@ $2
 	'usercredentials-urls' => '网站列表:',
 	'usercredentials-ip' => '原始IP地址：',
 	'usercredentials-member' => '权限：',
+	'right-confirmaccount' => '查看 [[Special:ConfirmAccounts|请求帐户的队列]]',
+	'right-requestips' => '在处理请求的帐户查看请求者的 IP 地址',
+	'right-lookupcredentials' => '查看 [[Special:UserCredentials|用户凭据]]',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
