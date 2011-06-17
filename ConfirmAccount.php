@@ -1,7 +1,7 @@
 <?php
 /*
  (c) Aaron Schulz 2007, GPL
- 
+
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 2 of the License, or
@@ -163,7 +163,7 @@ function efSetRequestLoginLinks( &$personal_urls, &$title ) {
 	if ( isset( $personal_urls['anonlogin'] ) ) {
 		$personal_urls['anonlogin']['text'] = wfMsg('nav-login-createaccount');
 	} elseif ( isset($personal_urls['login'] ) ) {
-		$personal_urls['login']['text'] = wfMsg('nav-login-createaccount');	
+		$personal_urls['login']['text'] = wfMsg('nav-login-createaccount');
 	}
 	return true;
 }
@@ -257,7 +257,7 @@ function efConfirmAccountSchemaUpdates( $updater = null ) {
 			$wgExtNewFields[] = array( 'account_requests', 'acr_areas', "$base/archives/patch-acr_areas.sql" );
 
 			$wgExtNewIndexes[] = array( 'account_requests', 'acr_email', "$base/archives/patch-email-index.sql" );
-		} else if ( $wgDBtype == 'postgres' ) {
+		} elseif ( $wgDBtype == 'postgres' ) {
 			$wgExtNewTables[] = array( 'account_requests', "$base/ConfirmAccount.pg.sql" );
 
 			$wgExtPGNewFields[] = array( 'account_requests', 'acr_held', "TIMESTAMPTZ" );
@@ -284,7 +284,7 @@ function efConfirmAccountSchemaUpdates( $updater = null ) {
 			$updater->addExtensionUpdate( array( 'addField', 'account_requests', 'acr_areas', "$base/archives/patch-acr_areas.sql", true ) );
 
 			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/archives/patch-email-index.sql", true ) );
-		} else if ( $updater->getDB()->getType() == 'postgres' ) {
+		} elseif ( $updater->getDB()->getType() == 'postgres' ) {
 			$updater->addExtensionUpdate( array( 'addTable', 'account_requests', "$base/ConfirmAccount.pg.sql", true ) );
 
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_held', "TIMESTAMPTZ" ) );

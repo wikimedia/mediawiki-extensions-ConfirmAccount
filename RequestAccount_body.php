@@ -24,7 +24,7 @@ class RequestAccountPage extends SpecialPage {
 			$wgOut->readOnlyPage();
 			return;
 		}
-		
+
 		$this->setHeaders();
 
 		$this->mRealName = trim( $wgRequest->getText( 'wpRealName' ) );
@@ -69,7 +69,7 @@ class RequestAccountPage extends SpecialPage {
 		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
 			$this->mPrevAttachment = $this->mPrevAttachment ? $this->mPrevAttachment : $this->mSrcName;
 			$this->doSubmit();
-		} else if ( $action == 'confirmemail' ) {
+		} elseif ( $action == 'confirmemail' ) {
 			$this->confirmEmailToken( $emailCode );
 		} else {
 			$this->showForm();
@@ -492,7 +492,7 @@ class RequestAccountPage extends SpecialPage {
 		global $wgOut;
 		$wgOut->addHTML( wfMsgExt( 'acct_request_throttle_hit', 'parsemag', $limit ) );
 	}
-	
+
 	/**
 	 * (a) Try to confirm an email address via a token
 	 * (b) Notify $wgConfirmAccountContact on success

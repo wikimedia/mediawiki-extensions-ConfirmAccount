@@ -25,7 +25,7 @@ class UserCredentialsPage extends SpecialPage
 
 		if ( $this->file ) {
 			$this->showFile( $this->file );
-		} else if ( $this->target ) {
+		} elseif ( $this->target ) {
 			$this->showForm();
 			$this->showCredentials();
 		} else {
