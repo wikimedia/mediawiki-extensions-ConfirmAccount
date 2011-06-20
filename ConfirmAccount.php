@@ -308,7 +308,7 @@ function efConfirmAccountSchemaUpdates( $updater = null ) {
 }
 
 function efConfirmAccountAdminLinks( &$admin_links_tree ) {
-	$general_section = $admin_links_tree->getSection( wfMsg( 'adminlinks_users' ) );
+	$users_section = $admin_links_tree->getSection( wfMsg( 'adminlinks_users' ) );
 	$extensions_row = $users_section->getRow( 'extensions' );
 
 	if ( is_null( $extensions_row ) ) {
