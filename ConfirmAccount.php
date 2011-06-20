@@ -149,6 +149,8 @@ $wgResourceModules['ext.confirmAccount'] = array(
 	'remoteExtPath' => 'ConfirmAccount',
 );
 
+// @todo FIXME: Move hook functions to a class.
+
 function efAddRequestLoginText( &$template ) {
 	global $wgUser, $wgOut;
 	# Add a link to RequestAccount from UserLogin
@@ -240,6 +242,8 @@ $wgHooks['AbortNewAccount'][] = 'efCheckIfAccountNameIsPending';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
 # Status header like "new messages" bar
 $wgHooks['SiteNoticeAfter'][] = 'efConfirmAccountsNotice';
+# Register admin pages for AdminLinks extension.
+$wgHooks['AdminLinks'][] = 'efConfirmAccountAdminLinks';
 
 function efConfirmAccountSchemaUpdates( $updater = null ) {
 	$base = dirname( __FILE__ );
@@ -300,5 +304,20 @@ function efConfirmAccountSchemaUpdates( $updater = null ) {
 			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/postgres/patch-email-index.sql", true ) );
 		}
 	}
+	return true;
+}
+
+function efConfirmAccountAdminLinks( &$admin_links_tree ) {
+	$general_section = $admin_links_tree->getSection( wfMsg( 'adminlinks_users' ) );
+	$extensions_row = $users_section->getRow( 'extensions' );
+
+	if ( is_null( $extensions_row ) ) {
+		$extensions_row = new ALRow( 'extensions' );
+		$users_section->addRow( $extensions_row );
+	}
+
+	$extensions_row->addItem( ALItem::newFromSpecialPage( 'ConfirmAccounts' ) );
+	$extensions_row->addItem( ALItem::newFromSpecialPage( 'UserCredentials' ) );
+
 	return true;
 }
