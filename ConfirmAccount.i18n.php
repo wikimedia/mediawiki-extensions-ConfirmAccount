@@ -7571,9 +7571,13 @@ $2
  */
 $messages['ms'] = array(
 	'requestaccount-leg-other' => 'Maklumat lain',
+	'requestaccount-email' => 'Alamat e-mel:',
+	'confirmaccount-real-q' => 'Nama',
+	'confirmaccount-type' => 'Baris gilir:',
 	'confirmaccount-leg-other' => 'Maklumat lain',
 	'confirmaccount-name' => 'Nama pengguna',
 	'confirmaccount-noreason' => '(tiada)',
+	'usercredentials-user' => 'Nama pengguna:',
 	'usercredentials-leg-other' => 'Maklumat lain',
 );
 
