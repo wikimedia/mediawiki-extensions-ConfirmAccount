@@ -8554,16 +8554,16 @@ Hasło do konta zostanie przesłane poprzez e‐mail, gdy konto zostanie już ut
 	'requestaccount-areas-text' => 'Określ tematy i obszary dla których posiadasz formalne przygotowanie lub takie nad którymi planujesz najwięcej pracować.',
 	'requestaccount-ext-text' => 'Następujące informacje nie będą udostępniane. Zostaną użyte tylko na potrzeby tego wniosku o założenie konta użytkownika.
 Możesz wyświetlić kontakty np. numer telefonu, by łatwiej zdecydować o zatwierdzeniu lub odrzuceniu wniosku.',
-	'requestaccount-bio-text' => 'Biografia zostanie wstawiona jako domyślna zawartość Twojej strony użytkownika.
-Załącz informacje o kwalifikacjach i referencje, oczywiście pod warunkiem, że opublikowanie tych informacji nie stanowi dla Ciebie problemu.
-Imię i nazwisko będziesz mógł poprawić w [[Special:Preferences|preferencjach]].',
+	'requestaccount-bio-text' => 'Spróbuj zawrzeć w swojej poniższej biografii wszelkie istotne informacje.',
+	'requestaccount-bio-text-i' => "'''Twoja biografia zostanie zamieszczona jako początkowa zawartość Twojej strony użytkownika.'''
+Upewnij się, czy na pewno chcesz opublikować te informacje.",
 	'requestaccount-real' => 'Imię i nazwisko:',
 	'requestaccount-same' => '(prawdziwe imię i nazwisko)',
 	'requestaccount-email' => 'Adres e‐mail:',
 	'requestaccount-reqtype' => 'Stanowisko:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'redaktor',
-	'requestaccount-bio' => 'Osobista biografia:',
+	'requestaccount-bio' => 'Autobiografia (wyłącznie czysty tekst):',
 	'requestaccount-attach' => 'Życiorys (opcjonalne):',
 	'requestaccount-notes' => 'Dodatkowe informacje:',
 	'requestaccount-urls' => 'Lista adresów stron internetowych, jeśli posiadasz (każdy w osobnym wierszu):',
