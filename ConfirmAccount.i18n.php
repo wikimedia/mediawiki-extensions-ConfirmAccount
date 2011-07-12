@@ -7570,15 +7570,213 @@ $2
  * @author Anakmalaysia
  */
 $messages['ms'] = array(
+	'requestaccount' => 'Mohon akaun',
+	'requestaccount-text' => "'''Lengkapkan dan serahkan borang yang berikut untuk memohon akaun pengguna'''.
+
+Pastikan anda sudah membaca [[{{MediaWiki:Requestaccount-page}}|Syarat-Syarat Perkhidmatan]] terlebih dahulu sebelum memohon akaun.
+
+Sebaik sahaja akaun anda diluluskan, anda akan diberi e-mel makluman dan akaun itu akan boleh digunakan selepas anda [[Special:UserLogin|log masuk]].",
+	'requestaccount-page' => '{{ns:project}}:Syarat-Syarat Perkhidmatan',
+	'requestaccount-dup' => "'''Perhatian: Anda sudah log masuk dengan akaun berdaftar.'''",
+	'requestaccount-leg-user' => 'Akaun pengguna',
+	'requestaccount-leg-areas' => 'Bidang-bidang yang paling diminati',
+	'requestaccount-leg-person' => 'Maklumat peribadi',
 	'requestaccount-leg-other' => 'Maklumat lain',
+	'requestaccount-leg-tos' => 'Syarat-Syarat Perkhidmatan',
+	'requestaccount-acc-text' => 'Satu pesanan pengesahan akan dihantar ke alamat e-mel anda sebaik sahaja permohonan ini diserahkan.
+Sila balas dengan mengklik pautan pengesahan yang diberikan dalam e-mel.
+Selain itu, kata laluan anda akan die-melkan kepada anda apabila akuan anda dibuka.',
+	'requestaccount-areas-text' => 'Pilih bidang-bidang topik yang anda mempunyai kepakaran formal atau ingin paling banyak usahakan di bawah.',
+	'requestaccount-ext-text' => 'Maklumat berikut dirahsiakan dan digunakan untuk permohonan ini sahaja.
+Mungkin anda ingin menyenaraikan maklumat hubungan seperti nombor telefon untuk memudahkan proses pengesahan identiti.',
+	'requestaccount-bio-text' => 'Cuba sertakan sebarang bukti kelayakan yang berkaitan dalam biografi anda di bawah.',
+	'requestaccount-bio-text-i' => "'''Biografi anda akan ditetapkan sebagai kandungan permulaan laman pengguna anda.'''
+Pastikan anda berasa selesa untuk menerbitkan maklumat sedemikian.",
+	'requestaccount-real' => 'Nama sebenar:',
+	'requestaccount-same' => '(sama dengan nama sebenar di bawah)',
 	'requestaccount-email' => 'Alamat e-mel:',
+	'requestaccount-reqtype' => 'Kedudukan:',
+	'requestaccount-level-0' => 'pengarang',
+	'requestaccount-level-1' => 'penyunting',
+	'requestaccount-bio' => 'Biografi peribadi (teks biasa sahaja):',
+	'requestaccount-attach' => 'Resume atau CV (pilihan):',
+	'requestaccount-notes' => 'Catatan tambahan:',
+	'requestaccount-urls' => 'Senarai tapak web, jika ada (setiap satu dalam baris berasingan):',
+	'requestaccount-agree' => 'Anda mesti memperakui bahawa nama sebenar anda adalah tepat dan anda bersetuju dengan Syarat-Syarat Perkhidmatan kami.',
+	'requestaccount-inuse' => 'Nama pengguna sudah dipakai dalam satu permohonan akaun yang menunggu.',
+	'requestaccount-tooshort' => 'Biografi anda mestilah sekurang-kurangnya mengandungi $1 patah perkataan.',
+	'requestaccount-emaildup' => 'E-mel yang diberikan sudah dipakai dalam satu permohonan akaun yang menunggu.',
+	'requestaccount-exts' => 'Jenis fail lampiran tidak dibenarkan.',
+	'requestaccount-resub' => 'Fail CV/resume anda mesti dipilih semula atas sebab-sebab keselamatan.
+Biarkan ruangan ini kosong jika anda tidak ingin melampirkan apa-apa.',
+	'requestaccount-tos' => 'Saya telah membaca dan bersetuju untuk mematuhi [[{{MediaWiki:Requestaccount-page}}|Syarat-Syarat Perkhidmatan]] {{SITENAME}}.
+Nama yang saya nyatakan dalam ruangan "Nama sebenar" sememangnya nama sebenar saya sendiri.',
+	'requestaccount-submit' => 'Mohon akaun',
+	'requestaccount-sent' => 'Permohonan akaun anda berjaya dihantar dan sedang menunggu untuk dikaji.
+	Satu pesanan e-mel pengesahan telah dihantar ke alamat e-mel anda.',
+	'request-account-econf' => 'Alamat e-mel anda telah disahkan dan akan disenaraikan dalam permohonan akaun anda.',
+	'requestaccount-email-subj' => 'Pengesahan alamat e-mel {{SITENAME}}',
+	'requestaccount-email-body' => 'Seseorang, mungkin anda dari alamat IP $1, telah memohon akaun "$2" dengan alamat e-mel ini di {{SITENAME}}.
+
+Untuk mengesahkan bahawa akaun ini benar-benar milik anda di {{SITENAME}}, buka pautan berikut dalam pelayar anda:
+
+$3
+
+Jika akaun ini dibuka, hanya anda yang akan diberi kata laluan melalui e-mel.
+Jika ini *bukan* anda, jangan ikut pautan ini.
+Kod pengesahan ini akan luput pada $4.',
+	'requestaccount-email-subj-admin' => 'Permohonan akaun {{SITENAME}}',
+	'requestaccount-email-body-admin' => '"$1" telah memohon akaun dan sedang menunggu pengesahan.
+Alamat e-mel ini telah disahkan. Anda boleh mengesahan permohonan di sini "$2".',
+	'acct_request_throttle_hit' => 'Maaf, anda sudah memohon {{PLURAL:$1|1 akaun|$1 akaun}}.
+Anda tidak boleh membuat permohonan lagi.',
+	'requestaccount-loginnotice' => "Untuk memperoleh akaun pengguna, anda mesti '''[[Special:RequestAccount|membuat permohonan]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' [[Special:ConfirmAccounts|permohonan akaun]] terbuka yang disahkan oleh e-mel dan menunggu",
+	'confirmaccounts' => 'Sahkan permohonan akaun',
+	'confirmedit-desc' => 'Memberi birokrat kebolehan untuk mengesahkan permohonan akaun',
+	'confirmaccount-maintext' => "'''Laman ini digunakan untuk mengesahkan permohonan akaun yang menunggu di ''{{SITENAME}}'''''.
+
+Setiap baris gilir permohonan akaun terdiri daripada tiga baris gilir kecil.
+Satu untuk permohonan terbuka, satu untuk permohonan yang digantung oleh pentadbir lain kerana menunggu maklumat lanjut, dan satu lagi untuk permohonan yang ditolak baru-baru ini.
+
+Apabila membalas permohonan, sila kajinya dengan teliti, dan jika perlu, sahkan maklumat yang terkandung dalamnya.
+Tindakan anda akan dilogkan secara rahsia.
+Anda juga dijangka mengkaji sebarang aktiviti yang berlaku di sini selain yang anda lakukan.",
+	'confirmaccount-list' => 'Berikut ialah senarai permohonan akaun yang menunggu kelulusan.
+Sebaik sahaja permohonan diterima atau ditolak, ia akan dipadamkan dari senarai ini.',
+	'confirmaccount-list2' => 'Berikut ialah senarai permohonan akaun yang ditolak baru-baru ini dan mungkin akan dihapuskan secara automatik selepas beberapa hari.
+Ia masih boleh diluluskan menjadi akaun, tetapi anda harus berunding dengan pentadbir yang membuat penolakan terlebih dahulu sebelum berbuat demikian.',
+	'confirmaccount-list3' => 'Berikut ialah senarai permohonan akaun luput yang mungkin akan dihapuskan secara automatik selepas beberapa hari.
+Ia masih boleh diluluskan menjadi akaun.',
+	'confirmaccount-text' => "Ini ialah permohonan akaun pengguna yang menunggu di '''{{SITENAME}}'''.
+
+Sila kaji maklumat berikut secara teliti.
+Jika anda ingin meluluskan permohoan ini, gunakan juntai bawah posisi untuk menetapkan status akaun pengguna.
+Suntingan yang dilakukan pada biografi aplikasi tidak akan mempengaruhi sebarang storan kelayakan yang kekal.
+Ingat, anda boleh memilih untuk membuka akaun itu dengan nama pengguna yang lain.
+Gunakan ini untuk mengelakkan percanggahan dengan nama lain sahaja.
+
+Jika anda membiarkan laman ini begitu sahaja tanpa mengesahkan atau menolak permohonan ini, ia akan kekal menunggu.",
+	'confirmaccount-none-o' => 'Buat masa ini, tiada permohonan akaun menunggu yang terbuka dalam senarai ini.',
+	'confirmaccount-none-h' => 'Buat masa ini, tiada permohonan akaun menunggu yang tergantung dalam senarai ini.',
+	'confirmaccount-none-r' => 'Buat masa ini, tiada permohonan akaun yang ditolak baru-baru ini dalam senarai ini.',
+	'confirmaccount-none-e' => 'Buat masa ini, tiada permohonan akaun yang luput dalam senarai ini.',
 	'confirmaccount-real-q' => 'Nama',
+	'confirmaccount-email-q' => 'E-mel',
+	'confirmaccount-bio-q' => 'Biografi',
+	'confirmaccount-showopen' => 'permohonan terbuka',
+	'confirmaccount-showrej' => 'permohonan ditolak',
+	'confirmaccount-showheld' => 'permohonan tergantung',
+	'confirmaccount-showexp' => 'permohonan luput',
+	'confirmaccount-review' => 'Kaji semula',
+	'confirmaccount-types' => 'Pilih baris gilir pengesahan akaun dari bawah:',
+	'confirmaccount-all' => '(tunjukkan semua baris gilir)',
 	'confirmaccount-type' => 'Baris gilir:',
+	'confirmaccount-type-0' => 'bakal pengarang',
+	'confirmaccount-type-1' => 'bakal penyunting',
+	'confirmaccount-q-open' => 'permohonan terbuka',
+	'confirmaccount-q-held' => 'permohonan tergantung',
+	'confirmaccount-q-rej' => 'permohonan ditolak yang terbaru',
+	'confirmaccount-q-stale' => 'permohonan luput',
+	'confirmaccount-badid' => 'Tiada permohonan menunggu yang sepadan dengan ID yang diberikan.
+Mungkin ia sudah diuruskan.',
+	'confirmaccount-leg-user' => 'Akaun pengguna',
+	'confirmaccount-leg-areas' => 'Bidang-bidang yang paling diminati',
+	'confirmaccount-leg-person' => 'Maklumat peribadi',
 	'confirmaccount-leg-other' => 'Maklumat lain',
 	'confirmaccount-name' => 'Nama pengguna',
+	'confirmaccount-real' => 'Nama:',
+	'confirmaccount-email' => 'E-mel:',
+	'confirmaccount-reqtype' => 'Kedudukan:',
+	'confirmaccount-pos-0' => 'pengarang',
+	'confirmaccount-pos-1' => 'penyunting',
+	'confirmaccount-bio' => 'Biografi:',
+	'confirmaccount-attach' => 'Resume/CV:',
+	'confirmaccount-notes' => 'Catatan tambahan:',
+	'confirmaccount-urls' => 'Senarai tapak web:',
+	'confirmaccount-none-p' => '(tidak disediakan)',
+	'confirmaccount-confirm' => 'Gunakan pilihan di bawah untuk menerima, menolak atau menggantung permohonan ini:',
+	'confirmaccount-econf' => '(disahkan)',
+	'confirmaccount-reject' => '(ditolak oleh [[User:$1|$1]] pada $2)',
+	'confirmaccount-rational' => 'Rasional yang diberikan kepada pemohon:',
 	'confirmaccount-noreason' => '(tiada)',
+	'confirmaccount-autorej' => '(permohonan ini telah dibuang secara automatik disebabkan ketidakaktifan)',
+	'confirmaccount-held' => '(ditandai sebagai "tergantung" oleh [[User:$1|$1]] pada $2)',
+	'confirmaccount-create' => 'Terima (buka akaun)',
+	'confirmaccount-deny' => 'Tolak (buang dari senarai)',
+	'confirmaccount-hold' => 'Gantung',
+	'confirmaccount-spam' => 'Spam (jangan hantar e-mel)',
+	'confirmaccount-reason' => 'Komen (akan disertakan dalam e-mel):',
+	'confirmaccount-ip' => 'Alamat IP:',
+	'confirmaccount-legend' => 'Sahkan/tolak akaun ini',
+	'confirmaccount-submit' => 'Sahkan',
+	'confirmaccount-needreason' => 'Anda mesti menyatakan sebab dalam ruangan komen di bawah.',
+	'confirmaccount-canthold' => 'Permohonan ini digantung atau dihapuskan.',
+	'confirmaccount-acc' => 'Permohonan akaun berjaya disahkan;
+	akaun pengguna baru [[User:$1|$1]] dicipta.',
+	'confirmaccount-rej' => 'Permohonan akaun berjaya ditolak.',
+	'confirmaccount-viewing' => '(sedang diliha oleh [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Laman pengguna diwujudkan dengan biografi pengguna baru.',
+	'confirmaccount-welc' => "'''Selamat datang ''{{SITENAME}}''!'''
+Kami berharap agar anda memberikan sumbangan yang banyak dan bermanfaat di sini.
+Apa kata anda membaca [[{{MediaWiki:Helppage}}|laman-laman bantuan]] terlebih dahulu.
+Apapun, selamat datang dan salam ceria!",
+	'confirmaccount-wsum' => 'Selamat datang!',
+	'confirmaccount-email-subj' => 'Permohonan akaun {{SITENAME}}',
+	'confirmaccount-email-body' => 'Permohonan akaun anda telah diluluskan di {{SITENAME}}.
+
+Nama akaun: $1
+
+Kata laluan: $2
+
+Atas sebab keselamatan, anda perlu menukar kata laluan pada log masuk pertama.
+Untuk log masuk, sila ke {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Permohonan akaun anda telah diluluskan di {{SITENAME}}.
+
+Nama akaun: $1
+
+Kata laluan: $2
+
+$3
+
+Atas sebab keselamatan, anda perlu menukar kata laluan pada log masuk pertama.
+Untuk log masuk, sila ke {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body3' => 'Maaf, permohonan akaun anda "$1" telah ditolak di {{SITENAME}}.
+
+Ini mungkin timbul atas beberapa sebab.
+Mungkin anda tidak mengisi borang dengan betul, tidak menulis jawapan anda secukupnya, ataupun tidak memenuhi kriteria dasar tertentu.
+Terdapat senarai hubungan dalam tapak yang boleh anda gunakan jika anda ingin mengetahui lebih banyak mengenai dasar akaun pengguna.',
+	'confirmaccount-email-body4' => 'Maaf, permohonan akaun anda "$1" telah ditolak di {{SITENAME}}.
+
+$2
+
+Terdapat senarai hubungan dalam tapak yang boleh anda gunakan jika anda ingin mengetahui lebih banyak mengenai dasar akaun pengguna.',
+	'confirmaccount-email-body5' => 'Sebelum permohonan akaun anda "$1" boleh diterima di {{SITENAME}}, anda mesti memberikan maklumat tambahan terlebih dahulu.
+
+$2
+
+Terdapat senarai hubungan dalam tapak yang boleh anda gunakan jika anda ingin mengetahui lebih banyak mengenai dasar akaun pengguna.',
+	'usercredentials' => 'Bukti kelayakan pengguna',
+	'usercredentials-leg' => 'Cari bukti kelayakan yang disahkan untuk pengguna',
 	'usercredentials-user' => 'Nama pengguna:',
+	'usercredentials-text' => 'Berikut ialah bukti-bukti kelayakan yang disahkan bagi akaun pengguna yang terpilih.',
+	'usercredentials-leg-user' => 'Akaun pengguna',
+	'usercredentials-leg-areas' => 'Bidang-bidang yang paling diminati',
+	'usercredentials-leg-person' => 'Maklumat peribadi',
 	'usercredentials-leg-other' => 'Maklumat lain',
+	'usercredentials-email' => 'E-mel:',
+	'usercredentials-real' => 'Nama sebenar:',
+	'usercredentials-bio' => 'Biografi:',
+	'usercredentials-attach' => 'Resume/CV:',
+	'usercredentials-notes' => 'Catatan tambahan:',
+	'usercredentials-urls' => 'Senarai tapak web:',
+	'usercredentials-ip' => 'Alamat IP asal:',
+	'usercredentials-member' => 'Hak:',
+	'usercredentials-badid' => 'Tiada bukti kelayakan untuk pengguna ini.
+Pastikan namanya dieja dengan betul.',
+	'right-confirmaccount' => 'Lihat [[Special:ConfirmAccounts|baris gilir dengan akaun-akaun yang dimohon]]',
+	'right-requestips' => 'Lihat alamat-alamat IP pemohon ketika memproseskan akaun-akaun yang dimohon',
+	'right-lookupcredentials' => 'Lihat [[Special:UserCredentials|kelayakan pengguna]]',
 );
 
 /** Maltese (Malti)
