@@ -7774,9 +7774,9 @@ Terdapat senarai hubungan dalam tapak yang boleh anda gunakan jika anda ingin me
 	'usercredentials-member' => 'Hak:',
 	'usercredentials-badid' => 'Tiada bukti kelayakan untuk pengguna ini.
 Pastikan namanya dieja dengan betul.',
-	'right-confirmaccount' => 'Lihat [[Special:ConfirmAccounts|baris gilir dengan akaun-akaun yang dimohon]]',
-	'right-requestips' => 'Lihat alamat-alamat IP pemohon ketika memproseskan akaun-akaun yang dimohon',
-	'right-lookupcredentials' => 'Lihat [[Special:UserCredentials|kelayakan pengguna]]',
+	'right-confirmaccount' => 'Melihat [[Special:ConfirmAccounts|baris gilir dengan akaun-akaun yang dimohon]]',
+	'right-requestips' => 'Melihat alamat-alamat IP pemohon ketika memproseskan akaun-akaun yang dimohon',
+	'right-lookupcredentials' => 'Melihat [[Special:UserCredentials|kelayakan pengguna]]',
 );
 
 /** Maltese (Malti)
