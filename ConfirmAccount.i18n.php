@@ -8271,6 +8271,7 @@ Gjer deg viss om at namnet er stava rett.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Event
  * @author Harald Khan
  * @author Jon Harald Søby
  * @author Laaknor
@@ -8293,7 +8294,9 @@ Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne [[Special
 	'requestaccount-acc-text' => 'Du vil få en e-post med bekreftelse med en gang denne forespørselen postes. Vennligst svar ved å klikke på bekreftelseslenka i e-posten. Passordet ditt vil også sendes til deg når kontoen opprettes.',
 	'requestaccount-areas-text' => 'Velg det eller de områdene nedenfor som du har formell ekspertise i eller vil jobbe mest med.',
 	'requestaccount-ext-text' => 'Følgende informasjon vil holdes privat, og vil kun brukes for denne forespørselen. Du vil kanskje liste opp kontaktinformasjon som et telefonnummer for å hjelpe til i bekreftelsesprosessen.',
-	'requestaccount-bio-text' => 'Biografien din vil settes som standardinnhold på brukersiden din. Prøv å inkludere attestinformasjon, men kun om du føler deg tilpass med å frigi slik informasjon. Navnet ditt kan endres via [[Special:Preferences|innstillingene dine]].',
+	'requestaccount-bio-text' => 'Ta med alle kunnskaps- og ferdighetsrelevante detaljer i biografien din under.',
+	'requestaccount-bio-text-i' => "'''Biografien din blir satt som startinnholdet for brukersiden din.'''
+Forsikre deg om at du synes det er greit å publisere denne informasjonen.",
 	'requestaccount-real' => 'Virkelig navn:',
 	'requestaccount-same' => '(samme som virkelig navn)',
 	'requestaccount-email' => 'E-postadresse:',
