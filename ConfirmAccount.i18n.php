@@ -6730,6 +6730,8 @@ Och Äert Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht
 	'requestaccount-ext-text' => "Dës Informatioune gi vertraulech behandelt a gi just fir dës Ufro benotzt.
 Dir kënnt Kontaktinformatiounen wéi eng Telefonsnummer uginn fir d'Identitéitskonfirmatioun ze vereinfachen.",
 	'requestaccount-bio-text' => 'Versicht all néideg Informatiounen an Ärer Biographie hei drënner unzeginn.',
+	'requestaccount-bio-text-i' => "'''Är Biografie gëtt als éischt Versioun vun Ärer Benotzersäit verëffentlecht.'''
+Iwwerleet Iech ob Dir domat averstan sidd datt esou Informatiounen iwwer Iech verëffentlecht ginn.",
 	'requestaccount-real' => 'Richtegen Numm:',
 	'requestaccount-same' => "(d'selwecht wéi de richtegen Numm)",
 	'requestaccount-email' => 'E-mail-Adress:',
