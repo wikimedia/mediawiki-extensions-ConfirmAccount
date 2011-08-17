@@ -313,7 +313,8 @@ $messages['qqq'] = array(
 	'confirmaccount-ip' => '{{Identical|IP Address}}',
 	'confirmaccount-submit' => '{{Identical|Confirm}}',
 	'confirmaccount-welc' => 'In ConfirmAccount extension. A welcome message that is automatically placed on the talk pages of new users.',
-	'confirmaccount-wsum' => 'In the ConfirmAccount extension. This is an edit summary used when a welcome message is automatically placed on the talk pages for new accounts.',
+	'confirmaccount-wsum' => 'In the ConfirmAccount extension. This is an edit summary used when a welcome message is automatically placed on the talk pages for new accounts.
+{{Identical|Welcome}}',
 	'confirmaccount-email-subj' => '{{Identical|SITENAME account request}}',
 	'confirmaccount-email-body' => '{{Identical|Your request for an account ...}}',
 	'confirmaccount-email-body2' => '{{Identical|Your request for an account ...}}',
