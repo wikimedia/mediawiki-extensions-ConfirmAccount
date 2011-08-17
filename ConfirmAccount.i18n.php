@@ -2207,6 +2207,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kan
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Imre
+ * @author Kghbln
  * @author The Evil IP address
  * @author Umherirrender
  */
@@ -2223,9 +2224,9 @@ Sobald Ihr Konto angelegt wurde, wird Ihnen Ihr Passwort per E-Mail zugeschickt.
 	'requestaccount-areas-text' => 'Wählen Sie die Themengebiete aus, in denen Sie das meiste Fachwissen haben oder wo Sie am meisten involviert sein werden.',
 	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag verwendet.
 Sie können Kontaktangaben wie eine Telefonnummer machen, um die Bearbeitung Ihres Antrags zu vereinfachen.',
-	'requestaccount-bio-text' => 'Ihre Biographie wird als initialer Inhalt Ihrer Benutzerseite gespeichert.
-Versuchen Sie alle nötigen Empfehlungen zu erwähnen, aber stellen Sie sicher, dass Sie die Informationen auch wirklich veröffentlichen möchten.
-Sie können Ihren Namen in [[Special:Preferences|Ihren Einstellungen]] ändern.',
+	'requestaccount-bio-text' => 'Versuchen Sie alle relevanten Informationen in Ihre untenstehende Biografie aufzunehmen.',
+	'requestaccount-bio-text-i' => "'''Ihre Biografie wird als die erste Version Ihrer Benutzerseite veröffentlicht.'''
+Sie müssen daher auch tatsächlich mit der Veröffentlichung dieser Daten einverstanden sein.",
 	'requestaccount-agree' => 'Sie müssen bestätigen, dass Ihr bürgerlicher Name korrekt ist und Sie die Nutzungsbedingungen akzeptieren.',
 	'requestaccount-tooshort' => 'Ihre Biographie muss mindestens {{PLURAL:$1|1 Wort|$1 Wörter}} lang sein.',
 	'requestaccount-resub' => 'Die Datei mit Ihrem Lebenslauf muss aus Sicherheitsgründen neu ausgewählt werden.
@@ -2757,6 +2758,7 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
 /** Spanish (Español)
  * @author BicScope
  * @author Crazymadlover
+ * @author Fitoschido
  * @author Imre
  * @author Lin linao
  * @author Locos epraix
@@ -2765,26 +2767,28 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
  * @author Translationista
  */
 $messages['es'] = array(
-	'requestaccount' => 'Cuenta solicitada',
+	'requestaccount' => 'Solicitar cuenta',
 	'requestaccount-text' => "'''Completa y envía el siguiente formulario para solicitar una cuenta de usuario'''.
 
 Antes de solicitar una cuenta, asegúrate de haber leído los [[{{MediaWiki:Requestaccount-page}}|términos del servicio]].
 
 Una vez que la cuenta sea aprobada, se te enviará una notificación a través de correo electrónico y la cuenta se podrá usar [[Special:UserLogin|iniciando sesión]].",
-	'requestaccount-page' => '{{ns:project}}:Términos de Servicio',
+	'requestaccount-page' => '{{ns:project}}:Términos de servicio',
 	'requestaccount-dup' => "'''Nota: Ya has iniciado sesión en una cuenta registrada.'''",
 	'requestaccount-leg-user' => 'Cuenta de usuario',
 	'requestaccount-leg-areas' => 'Áreas de interés principales',
 	'requestaccount-leg-person' => 'Información personal',
 	'requestaccount-leg-other' => 'Otra información',
-	'requestaccount-leg-tos' => 'Términos de Servicio',
-	'requestaccount-acc-text' => 'Te será enviada un mensaje de confirmación a tu dirección de e-m@il una vez que hayas hecho tu solicitud.
-Por favor responda dando clik en el enlace de confirmación que le fué enviado a su e-m@il.
-Tu contraseña será enviada cuando tu cuenta sea creada.',
+	'requestaccount-leg-tos' => 'Términos de servicio',
+	'requestaccount-acc-text' => 'Una vez que se envíe este pedido, recibirás en tu correo un mensaje de confirmación.
+Responde pulsando en el enlace de confirmación proporcionado por el mensaje.
+Además, tu contraseña se enviará a tu dirección de correo una vez que la cuenta sea creada.',
 	'requestaccount-areas-text' => 'Seleccione las áreas en las que tiene experiencia formal o que le interesa colaborar.',
 	'requestaccount-ext-text' => 'La siguiente información se mantiene privada y sólo será usada para esta solicitud.
 Usted puede desear enlistar contactos como un número telefónico para ayudar en la confirmación de la identidad.',
 	'requestaccount-bio-text' => 'Trata de incluir alguna credencial relevante en tu biografía abajo.',
+	'requestaccount-bio-text-i' => "'''Su biografía se establecerá como el contenido inicial de tu página de usuario.'''
+Asegúrate de estar cómodo con la publicación de dicha información.",
 	'requestaccount-real' => 'Nombre real:',
 	'requestaccount-same' => '[Tu nombre real]',
 	'requestaccount-email' => 'Dirección de correo electrónico:',
@@ -2893,7 +2897,7 @@ Puede que ya haya sido gestionada.',
 	'confirmaccount-rational' => 'Justificación dada al solicitante:',
 	'confirmaccount-noreason' => '(ninguna)',
 	'confirmaccount-autorej' => '(esta solicitud ha sido automáticamente descartada debido a su inactividad)',
-	'confirmaccount-held' => '(marcado "en suspenso" por [[User:$1|$1]] de $2)',
+	'confirmaccount-held' => '(Marcado como «en espera» por [[User:$1|$1]] en $2 )',
 	'confirmaccount-create' => 'Aceptar (crear cuenta)',
 	'confirmaccount-deny' => 'Rechazar (eliminar de lista)',
 	'confirmaccount-hold' => 'Mantener',
@@ -8658,7 +8662,7 @@ $messages['or'] = array(
 	'usercredentials-email' => 'E-mail:',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
@@ -9956,7 +9960,7 @@ $messages['rue'] = array(
 	'confirmaccount-bio' => 'Біоґрафія:',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
