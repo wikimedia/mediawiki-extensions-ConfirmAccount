@@ -8720,6 +8720,7 @@ $messages['pdc'] = array(
 	'confirmaccount-real' => 'Naame:',
 	'confirmaccount-pos-0' => 'Schreiwer',
 	'confirmaccount-noreason' => '(nix)',
+	'confirmaccount-wsum' => 'Wilkum!',
 	'usercredentials-user' => 'Yuuser-Naame:',
 );
 
