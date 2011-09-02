@@ -486,10 +486,7 @@ $messages['ar'] = array(
 	'requestaccount-areas-text' => 'اختر المواضيع بالأسفل التي لديك فيها خبرة رسمية أو التي تود أن تعمل فيها.',
 	'requestaccount-ext-text' => 'المعلومات التالية سرية وسيتم استخدامها فقط لهذا الطلب.
 ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة في تأكيد الهوية.',
-	'requestaccount-bio-text' => 'سيرتك الشخصية ستعرض كالمحتوى الافتراضي لصفحة المستخدم الخاصة بك.
-حاول تضمين أية شهادات.
-تأكد من ارتياحك لنشر هذه المعلومات.
-اسمك يمكن تغييره من خلال [[Special:Preferences|تفضيلاتك]].',
+	'requestaccount-bio-text' => 'حاول تضمين أي شهادات متعلقة في سيرتك الذاتية بالأسفل.',
 	'requestaccount-real' => 'الاسم الحقيقي:',
 	'requestaccount-same' => '(مثل الاسم الحقيقي)',
 	'requestaccount-email' => 'عنوان البريد الإلكتروني:',
@@ -497,7 +494,7 @@ $messages['ar'] = array(
 	'requestaccount-level-0' => 'مؤلف',
 	'requestaccount-level-1' => 'محرر',
 	'requestaccount-info' => '(؟)',
-	'requestaccount-bio' => 'السيرة الشخصية:',
+	'requestaccount-bio' => 'السيرة الشخصية (نص بحت فقط):',
 	'requestaccount-attach' => 'استكمال أو السيرة الذاتية (اختياري):',
 	'requestaccount-notes' => 'ملاحظات إضافية:',
 	'requestaccount-urls' => 'قائمة مواقع الوب، إن وجدت (افصل بسطور جديدة):',
