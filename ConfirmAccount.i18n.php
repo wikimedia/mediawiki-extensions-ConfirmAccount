@@ -923,6 +923,7 @@ $2
 
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
+ * @author Vago
  */
 $messages['az'] = array(
 	'requestaccount-real' => 'Həqiqi adınız:',
@@ -933,6 +934,7 @@ $messages['az'] = array(
 	'confirmaccount-real-q' => 'Ad',
 	'confirmaccount-email-q' => 'E-poçt',
 	'confirmaccount-bio-q' => 'Bioqrafiya',
+	'confirmaccount-leg-other' => 'Digər məlumatlar',
 	'confirmaccount-name' => 'İstifadəçi adı',
 	'confirmaccount-real' => 'Ad:',
 	'confirmaccount-email' => 'E-poçt:',
@@ -940,13 +942,17 @@ $messages['az'] = array(
 	'confirmaccount-pos-0' => 'müəllif',
 	'confirmaccount-pos-1' => 'redaktor',
 	'confirmaccount-bio' => 'Bioqrafiya:',
+	'confirmaccount-urls' => 'Vebsaytların siyahısı',
 	'confirmaccount-noreason' => '(heç biri)',
+	'confirmaccount-hold' => 'Təxirə salmaq',
 	'confirmaccount-ip' => 'IP ünvanı:',
 	'confirmaccount-submit' => 'Təsdiq et',
 	'usercredentials-user' => 'İstifadəçi adı:',
+	'usercredentials-leg-user' => 'İstifadəçi hesabı',
 	'usercredentials-email' => 'E-poçt:',
 	'usercredentials-real' => 'Həqiqi adınız:',
 	'usercredentials-bio' => 'Bioqrafiya:',
+	'usercredentials-urls' => 'Vebsaytların siyahısı',
 );
 
 /** Bikol Central (Bikol Central)
@@ -8965,16 +8971,16 @@ Na vira che 'l cont a sia aprovà, a l'arseivrà na notìfica për pòsta eletr�
 	'requestaccount-acc-text' => "A soa adrëssa ëd pòsta eletrònica a-i rivërà un messagi, na vira che sta domanda a la sia mandà. Per piasì, ch'a n'arsponda ën dand-ie un colp col rat ansima a l'aniura ch'a treuva ant ël messagi. Ëdcò soa ciav a sarà recapità për pòsta eletrònica, na vira che sò cont a sia creà.",
 	'requestaccount-areas-text' => "Selession-a j'argoment sota dont it l'has esperiensa formal o at piasrìa travajeje ansima.",
 	'requestaccount-ext-text' => "St'anformassion-sì as ten privà e as dòvra mach për sta question-sì. S'a veul a peul buté dij contat coma un nùmer ëd telèfono për giuté a identifichesse sensa dubi.",
-	'requestaccount-bio-text' => 'Preuva a anserì quaich credensiaj relenante ant toa biografìa sì sota.',
-	'requestaccount-bio-text-i' => "'''Toa biografìa a sarà ampostà com ël contnù inissial për toa pagina utent.'''
-Sigurte d'esse content ëd publiché cole anformassion.",
+	'requestaccount-bio-text' => "Ch'a preuva a buté dj'arferiment ùtij an soa biografìa sì-sota.",
+	'requestaccount-bio-text-i' => "'''Soa biografìa a sarà ampostà com contnù inissial për soa pàgina utent.'''
+Ch'as sicura d'esse content ëd publiché cole anformassion.",
 	'requestaccount-real' => 'Nòm vèir:',
 	'requestaccount-same' => '(istess che sò nòm vèir)',
 	'requestaccount-email' => 'Adrëssa ëd pòsta eletrònica:',
 	'requestaccount-reqtype' => 'Posission:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografìa personal (mach sempi test):',
+	'requestaccount-bio' => 'Biografìa përsonal (mach test sempi):',
 	'requestaccount-attach' => 'Curriculum vitae (opsional):',
 	'requestaccount-notes' => 'Nòte adissionaj:',
 	'requestaccount-urls' => "Lista ëd sit ant sla Ragnà, s'a-i n'a-i é (buté un për riga):",
