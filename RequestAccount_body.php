@@ -12,7 +12,7 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgUser, $wgOut, $wgRequest, $action, $wgUseRealNamesOnly,
+		global $wgUser, $wgOut, $wgRequest, $wgUseRealNamesOnly,
 			$wgAccountRequestToS, $wgAccountRequestExtraInfo, $wgAccountRequestTypes;
 		# If a user cannot make accounts, don't let them request them either
 		global $wgAccountRequestWhileBlocked;
@@ -66,6 +66,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$this->skin = $wgUser->getSkin();
 
+		$action = $wgRequest->getVal( 'action' );
 		if ( $wgRequest->wasPosted() && $wgUser->matchEditToken( $wgRequest->getVal( 'wpEditToken' ) ) ) {
 			$this->mPrevAttachment = $this->mPrevAttachment ? $this->mPrevAttachment : $this->mSrcName;
 			$this->doSubmit();
