@@ -3781,7 +3781,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-type' => 'Cola seleccionada:',
 	'confirmaccount-type-0' => 'autores potenciais',
 	'confirmaccount-type-1' => 'editores potenciais',
-	'confirmaccount-q-open' => 'solicitudes abertas',
+	'confirmaccount-q-open' => 'solicitudes en curso',
 	'confirmaccount-q-held' => 'solicitudes suspendidas',
 	'confirmaccount-q-rej' => 'solicitudes recentemente rexeitadas',
 	'confirmaccount-q-stale' => 'solicitudes expiradas',
@@ -5835,6 +5835,7 @@ Controlla che il nome sia scritto correttamente.',
  * @author Aotake
  * @author Fryed-peach
  * @author JtFuruhata
+ * @author Schu
  * @author 青子守歌
  */
 $messages['ja'] = array(
@@ -5848,27 +5849,29 @@ $messages['ja'] = array(
 	'requestaccount-dup' => "'''注: あなたは既に登録済みアカウントでログインしています。'''",
 	'requestaccount-leg-user' => '利用者アカウント',
 	'requestaccount-leg-areas' => '関心のある分野',
-	'requestaccount-leg-person' => '自己紹介',
+	'requestaccount-leg-person' => '個人情報',
 	'requestaccount-leg-other' => 'その他',
 	'requestaccount-leg-tos' => '利用規約',
 	'requestaccount-acc-text' => '申請を行うと、確認メッセージがあなたの電子メールアドレスへ送信されます。その電子メールにある確認のためのリンクをクリックすると申請が承認されます。また、アカウントが作成された際には、電子メールでパスワードが送られます。',
 	'requestaccount-areas-text' => 'あなたが見識をお持ちの分野、または主に活動したい分野を選択してください。',
 	'requestaccount-ext-text' => '以下の個人情報は公開されず、この申請処理にのみ利用されます。
 電話番号をはじめとする連絡先は、あなたが本人確認の補助を目的として記入いただけます。',
-	'requestaccount-bio-text' => 'あなたの自己紹介は利用者ページの初期設定として登録されます。あなたの身分を証明する内容の記入は歓迎されますが、このような個人情報の提供があなた自身にとって望ましいことであるかまず検討してください。あなたの利用者名の表示は [[Special:Preferences|{{int:preferences}}]] から変更できます。',
+	'requestaccount-bio-text' => '下記のあなたの経歴に、関連する資格情報を含めるようにしてください。',
+	'requestaccount-bio-text-i' => "'''あなたの経歴はあなたの利用者ページに初期のコンテンツとして設定されます。'''
+この情報を公開してよいかどうかを確認してください。",
 	'requestaccount-real' => '本名:',
 	'requestaccount-same' => '(本名での登録に限定されます)',
 	'requestaccount-email' => '電子メールアドレス:',
 	'requestaccount-reqtype' => 'サイトでの役割:',
 	'requestaccount-level-0' => '著者',
 	'requestaccount-level-1' => '編集者',
-	'requestaccount-bio' => '自己紹介:',
-	'requestaccount-attach' => '研究概要(レジュメ)や略歴(CV) (任意回答):',
-	'requestaccount-notes' => '特記事項:',
-	'requestaccount-urls' => 'ウェブサイト一覧 (任意回答、改行で区切ります):',
+	'requestaccount-bio' => '個人の経歴 ( プレーンテキストのみ )：',
+	'requestaccount-attach' => '履歴書またはCV (オプション)：',
+	'requestaccount-notes' => '特記事項：',
+	'requestaccount-urls' => 'ウェブサイト一覧、任意回答 ( 改行で区切ってください)：',
 	'requestaccount-agree' => '本名が正しいこと、および、サービス利用規約に同意したことを宣誓していただく必要があります。',
 	'requestaccount-inuse' => 'この利用者名は、承認待ちのアカウントにて既に申請済みです。',
-	'requestaccount-tooshort' => "自己紹介は、最低限 $1個以上の単語で構成される必要があります。''(訳注：この機能は日本語版ではうまく動作しないかもしれません。あなたが管理者であるならば、この制約の使用に慎重であってください。あなたが一般利用者である場合、このサイトの管理者と相談してください。)''",
+	'requestaccount-tooshort' => "あなたの経歴は、最低限 $1個以上の単語で構成される必要があります。''(訳注：この機能は日本語版ではうまく動作しないかもしれません。あなたが管理者であるならば、この制約の使用に慎重であってください。あなたが一般利用者である場合、このサイトの管理者と相談してください。)''",
 	'requestaccount-emaildup' => '承認待ちのアカウントと同一の電子メールアドレスが指定されました。',
 	'requestaccount-exts' => 'この添付ファイルのタイプは許可されていません。',
 	'requestaccount-resub' => 'セキュリティ上の理由により、研究概要/略歴のファイルを再指定する必要があります。
@@ -5879,13 +5882,13 @@ $messages['ja'] = array(
 	'requestaccount-sent' => 'あなたのアカウント申請は正常に送信され、現在承認を待っています。確認メールがあなたの電子メールアドレスに送信されました。',
 	'request-account-econf' => 'あなたの電子メールアドレスは確認されました。アカウント申請にもそのように表示されます。',
 	'requestaccount-email-subj' => '{{SITENAME}} 電子メールアドレスの確認',
-	'requestaccount-email-body' => 'IPアドレス $1 を使用するどなたか(おそらくあなた)が、この電子メールアドレスを用いて {{SITENAME}} のアカウント "$2" の作成を申請しました。
+	'requestaccount-email-body' => 'IP アドレス $1 を使用するどなたか(おそらくあなた)が、この電子メールアドレスを用いて {{SITENAME}} のアカウント "$2" の作成を申請しました。
 
 この {{SITENAME}}　のアカウント作成が本当にあなたによる申請であると証明するには、以下のリンク先をブラウザから開いてください:
 
 $3
 
-アカウントが作成されると、パスワードが電子メールで送信されます。もしも、この申請があなたによるもの「ではない」場合、このリンクはクリックしないでください。
+アカウントが作成されると、パスワードが電子メールで送信されます。もしも、この申請があなたによるもの\'\'\'ではない\'\'\'場合、このリンクはクリックしないでください。
 この承認手続きは $4 で期限切れとなります。',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} のアカウント申請',
 	'requestaccount-email-body-admin' => '"$1" によるアカウント申請が承認待ちになっています。
@@ -5894,7 +5897,7 @@ $3
 	'requestaccount-loginnotice' => "利用者アカウントの取得は、'''[[Special:RequestAccount|アカウント登録申請]]'''から行ってください。",
 	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み{{PLURAL:$1|[[Special:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。",
 	'confirmaccounts' => 'アカウント登録申請の承認',
-	'confirmedit-desc' => '{{int:group-bureaucrat}}にアカウント申請への承認機能を提供する',
+	'confirmedit-desc' => '{{int:group-bureaucrat}} にアカウント申請への承認機能を提供します。',
 	'confirmaccount-maintext' => "'''ここは、''{{SITENAME}}'' 上で承認待ちとなっているアカウント登録申請を処理するためのページです。'''
 
 各アカウント申請が保管されている待ち行列は、3種類あります。1つは申請を受理するためのもの、1つは他の管理者が継続審議を意見し保留となっているもの、もう一つは最近棄却された申請です。
@@ -5909,7 +5912,7 @@ $3
 	'confirmaccount-text' => "これは、'''{{SITENAME}}''' において承認待ちとなっている利用者アカウントです。
 
 下記の利用者情報を慎重に検討してください。この申請を承認する場合、ドロップダウンリストを操作して利用者のアカウント状態を設定してください。
-申請された自己紹介文に重篤な個人情報などが記載されている場合、編集により取り除くことが可能です。ただし、これは一般公開向けのもので、利用者信頼情報の内部保存データには影響を与えません。
+申請された経歴書に重篤な個人情報などが記載されている場合、編集により取り除くことが可能です。ただし、これは一般公開向けのもので、利用者信頼情報の内部保存データには影響を与えません。
 申請されたものとは別の利用者名でアカウントを作成することも可能です。
 これは、他の利用者と名前が競合する際にのみ行われるべきでしょう。
 
@@ -5920,7 +5923,7 @@ $3
 	'confirmaccount-none-e' => '現在この一覧には期限切れのアカウント申請はありません。',
 	'confirmaccount-real-q' => '本名',
 	'confirmaccount-email-q' => '電子メールアドレス',
-	'confirmaccount-bio-q' => '自己紹介',
+	'confirmaccount-bio-q' => '経歴',
 	'confirmaccount-showopen' => '未確定の申請',
 	'confirmaccount-showrej' => '却下済み申請',
 	'confirmaccount-showheld' => '承認保留アカウントの一覧を見る',
@@ -5947,8 +5950,8 @@ $3
 	'confirmaccount-reqtype' => 'サイトでの役割:',
 	'confirmaccount-pos-0' => '著者',
 	'confirmaccount-pos-1' => '編集者',
-	'confirmaccount-bio' => '自己紹介:',
-	'confirmaccount-attach' => '研究概要(レジュメ)や略歴(CV):',
+	'confirmaccount-bio' => '経歴：',
+	'confirmaccount-attach' => '履歴書／ CV：',
 	'confirmaccount-notes' => '特記事項:',
 	'confirmaccount-urls' => 'ウェブサイト一覧:',
 	'confirmaccount-none-p' => '(記述なし)',
@@ -5963,7 +5966,7 @@ $3
 	'confirmaccount-deny' => '棄却(一覧から削除)',
 	'confirmaccount-hold' => '保留',
 	'confirmaccount-spam' => 'スパム(電子メールは送信しません)',
-	'confirmaccount-reason' => '判断理由(電子メールに記載されます):',
+	'confirmaccount-reason' => '判断理由(電子メールに記載されます)：',
 	'confirmaccount-ip' => 'IPアドレス:',
 	'confirmaccount-legend' => 'このアカウントを確認、または拒否する',
 	'confirmaccount-submit' => '判断確定',
@@ -5972,7 +5975,7 @@ $3
 	'confirmaccount-acc' => 'アカウント申請の承認に成功しました。作成された新しいアカウントは [[User:$1|$1]] です。',
 	'confirmaccount-rej' => 'アカウント申請は棄却されました。',
 	'confirmaccount-viewing' => '(この申請は、現在[[User:$1|$1]]が受理しています)',
-	'confirmaccount-summary' => '申請された自己紹介を用いた新規利用者ページ作成',
+	'confirmaccount-summary' => '申請された経歴を用いた新規利用者ページ作成',
 	'confirmaccount-welc' => "'''ようこそ''{{SITENAME}}''へ！''' 多くの寄稿を心よりお待ち申し上げます。
 サイトでの活動に関しては、[[{{MediaWiki:Helppage}}|ヘルプページ]]をご覧ください。それでは、{{SITENAME}}で楽しいひと時を！",
 	'confirmaccount-wsum' => 'ようこそ！',
@@ -6020,8 +6023,8 @@ $2
 	'usercredentials-leg-other' => 'その他',
 	'usercredentials-email' => '電子メール：',
 	'usercredentials-real' => '本名:',
-	'usercredentials-bio' => '自己紹介:',
-	'usercredentials-attach' => '研究概要(レジュメ)や略歴(CV):',
+	'usercredentials-bio' => '経歴：',
+	'usercredentials-attach' => '履歴書／ CV：',
 	'usercredentials-notes' => '特記事項:',
 	'usercredentials-urls' => 'ウェブサイト一覧:',
 	'usercredentials-ip' => '申請時IPアドレス:',
@@ -10192,6 +10195,14 @@ Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak s
 	'right-lookupcredentials' => 'Zobraziť [[Special:UserCredentials|údaje používateľa]]',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'confirmaccount-name' => 'Uporabniško ime',
+	'usercredentials-user' => 'Uporabniško ime:',
+);
+
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
@@ -10675,6 +10686,7 @@ $messages['su'] = array(
 
 /** Swedish (Svenska)
  * @author Boivie
+ * @author Diupwijk
  * @author Fluff
  * @author Jon Harald Søby
  * @author Lejonel
@@ -10701,10 +10713,7 @@ När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till di
 	'requestaccount-areas-text' => 'Välj här de ämnesområden som du har expertkunskap om eller som du kommer att arbeta mest med.',
 	'requestaccount-ext-text' => 'Följande information kommer hållas hemlig och bara användas för denna ansökan.
 Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.',
-	'requestaccount-bio-text' => 'Din biografi kommer användas som standardinnehåll på din användarsida.
-Försök att ange dina meriter och referenser.
-Men se till att du inte besväras av att publicera sådan information.
-Ditt namn kan du ändra i [[Special:Preferences|dina inställningar]].',
+	'requestaccount-bio-text' => 'Försök att ange relevanta meriter och referenser i biografin nedan.',
 	'requestaccount-real' => 'Riktigt namn:',
 	'requestaccount-same' => '(samma som ditt riktiga namn)',
 	'requestaccount-email' => 'E-postadress:',
@@ -12595,15 +12604,16 @@ $messages['zh-hant'] = array(
 	'requestaccount-areas-text' => '在下面選擇你最專業的或者最感興趣的話題。',
 	'requestaccount-ext-text' => '以下的資料將會保密，而且只是會用在這次請求中。
 	您可能需要列示聯絡資料，像電話號碼等去幫助證明您的確認。',
-	'requestaccount-bio-text' => '您傳記將會設定成在您用戶頁中的預設內容。嘗試包含任何的憑據。
-	而且你是肯定您是可以發佈這些資料。您的名字可以透過[[Special:Preferences]]更改。',
+	'requestaccount-bio-text' => '您傳記將會設定成在您用戶頁中的預設內容，嘗試包含証明。',
+	'requestaccount-bio-text-i' => "'''你的簡履將會成為你的用戶頁的內容。'''
+請確保你可以發佈該等資訊。",
 	'requestaccount-real' => '真實名字：',
 	'requestaccount-same' => '（同真實名字）',
 	'requestaccount-email' => '電郵地址：',
 	'requestaccount-reqtype' => '位置',
 	'requestaccount-level-0' => '作者',
 	'requestaccount-level-1' => '編輯',
-	'requestaccount-bio' => '個人傳記:',
+	'requestaccount-bio' => '個人傳記（只限純文字）:',
 	'requestaccount-attach' => '簡歷或履歷（可選）：',
 	'requestaccount-notes' => '附加註解:',
 	'requestaccount-urls' => '網站列表，如有者 （以新行分開）:',
