@@ -12198,6 +12198,7 @@ $messages['vi'] = array(
 	'confirmaccount-bio' => 'Tiểu sử:',
 	'confirmaccount-notes' => 'Chi tiết:',
 	'confirmaccount-noreason' => '(không có)',
+	'confirmaccount-submit' => 'Xác nhận',
 	'usercredentials-user' => 'Tên người dùng:',
 	'usercredentials-leg-user' => 'Tài khoản',
 	'usercredentials-leg-person' => 'Thông tin cá nhân',
