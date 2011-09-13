@@ -251,7 +251,7 @@ $specialPageAliases['mt'] = array(
 $specialPageAliases['nds-nl'] = array(
 	'RequestAccount' => array( 'Gebruker_anvragen' ),
 	'ConfirmAccounts' => array( 'Gebruker_bevestigen' ),
-	'UserCredentials' => array( 'Gebrukersgetuugschrif' ),
+	'UserCredentials' => array( 'Gebrukersgetuugschrift' ),
 );
 
 /** Dutch (Nederlands) */
