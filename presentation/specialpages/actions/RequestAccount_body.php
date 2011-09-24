@@ -198,9 +198,9 @@ class RequestAccountPage extends SpecialPage {
 		}
 		# FIXME: do this better...
 		global $wgConfirmAccountCaptchas, $wgCaptchaClass, $wgCaptchaTriggers;
-		if ( $wgConfirmAccountCaptchas && isset( $wgCaptchaClass ) && $wgCaptchaTriggers['createaccount'] ) {
-			global $wgExtensionMessagesFiles;
-
+		if ( $wgConfirmAccountCaptchas && isset( $wgCaptchaClass )
+			&& $wgCaptchaTriggers['createaccount'] && !$wgUser->isAllowed( 'skipcaptcha' ) )
+		{
 			$captcha = new $wgCaptchaClass;
 			# Hook point to add captchas
 			$form .= '<fieldset>';
@@ -229,7 +229,7 @@ class RequestAccountPage extends SpecialPage {
 			$this->showForm( wfMsgHtml( 'noname' ) );
 			return;
 		}
-		# FIXME: Hack! If we don't want them for requests, temporarily turn it off!
+		# FIXME: Hack! If we don't want captchas for requests, temporarily turn it off!
 		global $wgConfirmAccountCaptchas, $wgCaptchaTriggers;
 		if ( !$wgConfirmAccountCaptchas && isset( $wgCaptchaTriggers ) ) {
 			$old = $wgCaptchaTriggers['createaccount'];
