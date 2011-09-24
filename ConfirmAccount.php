@@ -139,33 +139,36 @@ $wgAvailableRights[] = 'lookupcredentials';
 # This is cached, but still can be expensive on sites with thousands of requests.
 $wgConfirmAccountNotice = true;
 
-$dir = dirname( __FILE__ ) . '/';
-$wgExtensionMessagesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.i18n.php';
-$wgExtensionAliasesFiles['ConfirmAccount'] = $dir . 'ConfirmAccount.alias.php';
-
 $wgResourceModules['ext.confirmAccount'] = array(
 	'styles' 		=> 'confirmaccount.css',
-	'localBasePath' => dirname( __FILE__ ),
-	'remoteExtPath' => 'ConfirmAccount',
+	'localBasePath' => dirname( __FILE__ ) . '/presentation/modules',
+	'remoteExtPath' => 'ConfirmAccount/presentation/modules',
 );
 
-$dir = dirname( __FILE__ ) . '/';
-# UI Hooks
-$wgAutoloadClasses['ConfirmAccountUIHooks'] = $dir . 'ConfirmAccountUI.hooks.php';
+$dir = dirname( __FILE__ ) . '/presentation';
+# Internationalization files
+$wgExtensionMessagesFiles['ConfirmAccount'] = "$dir/ConfirmAccount.i18n.php";
+$wgExtensionAliasesFiles['ConfirmAccount'] = "$dir/ConfirmAccount.alias.php";
+# UI event handlers
+$wgAutoloadClasses['ConfirmAccountUIHooks'] = "$dir/ConfirmAccountUI.hooks.php";
+
+$dir = dirname( __FILE__ ) . '/presentation/specialpages';
 # Request an account
 $wgSpecialPages['RequestAccount'] = 'RequestAccountPage';
-$wgAutoloadClasses['RequestAccountPage'] = $dir . 'RequestAccount_body.php';
+$wgAutoloadClasses['RequestAccountPage'] = "$dir/actions/RequestAccount_body.php";
 $wgSpecialPageGroups['RequestAccount'] = 'login';
 # Confirm accounts
 $wgSpecialPages['ConfirmAccounts'] = 'ConfirmAccountsPage';
-$wgAutoloadClasses['ConfirmAccountsPage'] = $dir . 'ConfirmAccount_body.php';
+$wgAutoloadClasses['ConfirmAccountsPage'] = "$dir/actions/ConfirmAccount_body.php";
 $wgSpecialPageGroups['ConfirmAccounts'] = 'users';
 # Account credentials
 $wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
-$wgAutoloadClasses['UserCredentialsPage'] = $dir . 'UserCredentials_body.php';
+$wgAutoloadClasses['UserCredentialsPage'] = "$dir/actions/UserCredentials_body.php";
 $wgSpecialPageGroups['UserCredentials'] = 'users';
+
+$dir = dirname( __FILE__ ) . '/schema';
 # Schema changes
-$wgAutoloadClasses['ConfirmAccountUpdaterHooks'] = $dir . 'schema/ConfirmAccountUpdater.hooks.php';
+$wgAutoloadClasses['ConfirmAccountUpdaterHooks'] = "$dir/ConfirmAccountUpdater.hooks.php";
 
 # Make sure "login / create account" notice still as "create account"
 $wgHooks['PersonalUrls'][] = 'ConfirmAccountUIHooks::setRequestLoginLinks';
