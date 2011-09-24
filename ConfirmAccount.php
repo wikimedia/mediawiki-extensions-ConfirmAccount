@@ -166,6 +166,10 @@ $wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
 $wgAutoloadClasses['UserCredentialsPage'] = "$dir/actions/UserCredentials_body.php";
 $wgSpecialPageGroups['UserCredentials'] = 'users';
 
+# Data functions
+$dir = dirname( __FILE__ ) . '/dataclasses';
+$wgAutoloadClasses['ConfirmAccount'] = "$dir/ConfirmAccount.class.php";
+
 $dir = dirname( __FILE__ ) . '/schema';
 # Schema changes
 $wgAutoloadClasses['ConfirmAccountUpdaterHooks'] = "$dir/ConfirmAccountUpdater.hooks.php";

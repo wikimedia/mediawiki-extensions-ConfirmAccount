@@ -389,11 +389,11 @@ class ConfirmAccountsPage extends SpecialPage
 		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
 		$wgRequest->response()->header( 'Pragma: no-cache' );
 
-		require_once( "$IP/includes/StreamFile.php" );
 		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 		$path = $repo->getZonePath( 'public' ).'/'.
 			$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
-		wfStreamFile( $path );
+
+		StreamFile::stream( $path );
 	}
 
 	protected function doSubmit() {
@@ -738,6 +738,9 @@ class ConfirmAccountsPage extends SpecialPage
 		}
 	}
 
+	/*
+	 * Get requested account request row and load some fields
+	 */
 	function getRequest( $forUpdate = false ) {
 		if( !$this->acrID ) return false;
 
@@ -857,53 +860,8 @@ class ConfirmAccountsPage extends SpecialPage
 
 		# Every 30th view, prune old deleted items
 		if( 0 == mt_rand( 0, 29 ) ) {
-			$this->runAutoMaintenance();
+			ConfirmAccount::runAutoMaintenance();
 		}
-	}
-
-	/*
-	* Move old stale requests to rejected list. Delete old rejected requests.
-	*/
-	private function runAutoMaintenance() {
-		global $wgRejectedAccountMaxAge, $wgConfirmAccountFSRepos;
-
-		$dbw = wfGetDB( DB_MASTER );
-		# Select all items older than time $cutoff
-		$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
-		$accountrequests = $dbw->tableName( 'account_requests' );
-		$sql = "SELECT acr_storage_key,acr_id FROM $accountrequests WHERE acr_rejected < '{$cutoff}'";
-		$res = $dbw->query( $sql );
-
-		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
-		# Clear out any associated attachments and delete those rows
-		while( $row = $dbw->fetchObject( $res ) ) {
-			$key = $row->acr_storage_key;
-			if( $key ) {
-				$path = $repo->getZonePath( 'public' ).'/'.
-					$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
-				if( $path && file_exists($path) ) {
-					unlink($path);
-				}
-			}
-			$dbw->query( "DELETE FROM $accountrequests WHERE acr_id = {$row->acr_id}" );
-		}
-
-		# Select all items older than time $cutoff
-		global $wgConfirmAccountRejectAge;
-		$cutoff = $dbw->timestamp( time() - $wgConfirmAccountRejectAge );
-		# Old stale accounts will count as rejected. If the request was held, give it more time.
-		$dbw->update( 'account_requests',
-			array( 'acr_rejected' => $dbw->timestamp(),
-				'acr_user' => 0, // dummy
-				'acr_comment' => wfMsgForContent('confirmaccount-autorej'),
-				'acr_deleted' => 1 ),
-			array( "acr_rejected IS NULL", "acr_registration < '{$cutoff}'", "acr_held < '{$cutoff}'" ),
-			__METHOD__ );
-
-		# Clear cache for notice of how many account requests there are
-		global $wgMemc;
-		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-		$wgMemc->delete( $key );
 	}
 
 	public function formatRow( $row ) {
@@ -977,7 +935,9 @@ class ConfirmAccountsPage extends SpecialPage
 class ConfirmAccountsPager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
 
-	function __construct( $form, $conds = array(), $type, $rejects=false, $showHeld=false, $showStale=false ) {
+	function __construct(
+		$form, $conds = array(), $type, $rejects=false, $showHeld=false, $showStale=false
+	) {
 		$this->mForm = $form;
 		$this->mConds = $conds;
 

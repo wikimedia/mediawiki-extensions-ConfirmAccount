@@ -350,7 +350,7 @@ class RequestAccountPage extends SpecialPage {
 			$repo->storeBatch( array($triplet) ); // save!
 		}
 		$expires = null; // passed by reference
-		$token = $this->getConfirmationToken( $u, $expires );
+		$token = ConfirmAccount::getConfirmationToken( $u, $expires );
 		# Insert into pending requests...
 		$acr_id = $dbw->nextSequenceValue( 'account_requests_acr_id_seq' );
 		$dbw->begin();
@@ -505,7 +505,7 @@ class RequestAccountPage extends SpecialPage {
 		$name = $this->requestFromEmailToken( $code );
 		if ( $name !== false ) {
 			# Send confirmation email to prospective user
-			$this->confirmEmail( $name );
+			ConfirmAccount::confirmEmail( $name );
 			# Send mail to admin after e-mail has been confirmed
 			if ( $wgConfirmAccountContact != '' ) {
 				$target = new MailAddress( $wgConfirmAccountContact );
@@ -559,23 +559,6 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	/**
-	 * Flag a user's email as confirmed in the db
-	 *
-	 * @param sring $name
-	 */
-	protected function confirmEmail( $name ) {
-		$dbw = wfGetDB( DB_MASTER );
-		$dbw->update( 'account_requests',
-			array( 'acr_email_authenticated' => $dbw->timestamp() ),
-			array( 'acr_name' => $name ),
-			__METHOD__ );
-		# Clear cache for notice of how many account requests there are
-		global $wgMemc;
-		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-		$wgMemc->delete( $key );
-	}
-
-	/**
 	 * Generate a new e-mail confirmation token and send a confirmation
 	 * mail to the user's given address.
 	 *
@@ -586,7 +569,7 @@ class RequestAccountPage extends SpecialPage {
 	 */
 	protected function sendConfirmationMail( $user, $token, $expiration ) {
 		global $wgContLang;
-		$url = $this->confirmationTokenUrl( $token );
+		$url = ConfirmAccount::confirmationTokenUrl( $token );
 		return $user->sendMail( wfMsg( 'requestaccount-email-subj' ),
 			wfMsg( 'requestaccount-email-body',
 				wfGetIP(),
@@ -595,34 +578,5 @@ class RequestAccountPage extends SpecialPage {
 				$wgContLang->timeanddate( $expiration, false ) ,
 				$wgContLang->date( $expiration, false ) ,
 				$wgContLang->time( $expiration, false ) ) );
-	}
-
-	/**
-	 * Generate and store a new e-mail confirmation token, and return
-	 * the URL the user can use to confirm.
-	 * @param string $token
-	 * @return string
-	 */
-	protected function confirmationTokenUrl( $token ) {
-		$title = SpecialPage::getTitleFor( 'RequestAccount' );
-		return $title->getFullUrl( array(
-			'action' => 'confirmemail',
-			'wpEmailToken' => $token
-		) );
-	}
-
-	/**
-	 * Generate, store, and return a new e-mail confirmation code.
-	 * A hash (unsalted since it's used as a key) is stored.
-	 * @param User $user
-	 * @param string $expiration
-	 * @return string
-	 */
-	protected function getConfirmationToken( $user, &$expiration ) {
-		global $wgConfirmAccountRejectAge;
-		$expires = time() + $wgConfirmAccountRejectAge;
-		$expiration = wfTimestamp( TS_MW, $expires );
-		$token = $user->generateToken( $user->getName() . $user->getEmail() . $expires );
-		return $token;
 	}
 }
