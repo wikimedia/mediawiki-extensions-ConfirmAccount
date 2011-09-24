@@ -225,7 +225,7 @@ class RequestAccountPage extends SpecialPage {
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );
-		if ( is_null( $u ) ) {
+		if ( !$u ) {
 			$this->showForm( wfMsgHtml( 'noname' ) );
 			return;
 		}

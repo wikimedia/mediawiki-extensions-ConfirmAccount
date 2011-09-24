@@ -22,7 +22,7 @@ class ConfirmAccountUIHooks {
 		return true;
 	}
 
-	public static function checkIfAccountNameIsPending( $user, &$abortError ) {
+	public static function checkIfAccountNameIsPending( User $user, &$abortError ) {
 		# If an account is made with name X, and one is pending with name X
 		# we will have problems if the pending one is later confirmed
 		$dbw = wfGetDB( DB_MASTER );
