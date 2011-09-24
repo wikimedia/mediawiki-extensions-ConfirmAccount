@@ -164,6 +164,8 @@ $wgSpecialPageGroups['ConfirmAccounts'] = 'users';
 $wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
 $wgAutoloadClasses['UserCredentialsPage'] = $dir . 'UserCredentials_body.php';
 $wgSpecialPageGroups['UserCredentials'] = 'users';
+# Schema changes
+$wgAutoloadClasses['ConfirmAccountUpdaterHooks'] = $dir . 'schema/ConfirmAccountUpdater.hooks.php';
 
 # Make sure "login / create account" notice still as "create account"
 $wgHooks['PersonalUrls'][] = 'ConfirmAccountUIHooks::setRequestLoginLinks';
@@ -177,66 +179,4 @@ $wgHooks['SiteNoticeAfter'][] = 'ConfirmAccountUIHooks::confirmAccountsNotice';
 # Register admin pages for AdminLinks extension.
 $wgHooks['AdminLinks'][] = 'ConfirmAccountUIHooks::confirmAccountAdminLinks';
 
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'efConfirmAccountSchemaUpdates';
-
-function efConfirmAccountSchemaUpdates( $updater = null ) {
-	$base = dirname( __FILE__ );
-	if ( $updater === null ) {
-		global $wgDBtype, $wgExtNewFields, $wgExtPGNewFields, $wgExtNewTables, $wgExtNewIndexes;
-
-		if ( $wgDBtype == 'mysql' ) {
-			$wgExtNewTables[] = array( 'account_requests', "$base/ConfirmAccount.sql" );
-
-			$wgExtNewFields[] = array( 'account_requests', 'acr_filename',
-				"$base/archives/patch-acr_filename.sql" );
-
-			$wgExtNewTables[] = array( 'account_credentials', "$base/archives/patch-account_credentials.sql" );
-
-			$wgExtNewFields[] = array( 'account_requests', 'acr_areas', "$base/archives/patch-acr_areas.sql" );
-
-			$wgExtNewIndexes[] = array( 'account_requests', 'acr_email', "$base/archives/patch-email-index.sql" );
-		} elseif ( $wgDBtype == 'postgres' ) {
-			$wgExtNewTables[] = array( 'account_requests', "$base/ConfirmAccount.pg.sql" );
-
-			$wgExtPGNewFields[] = array( 'account_requests', 'acr_held', "TIMESTAMPTZ" );
-			$wgExtPGNewFields[] = array( 'account_requests', 'acr_filename', "TEXT" );
-			$wgExtPGNewFields[] = array( 'account_requests', 'acr_storage_key', "TEXT" );
-			$wgExtPGNewFields[] = array( 'account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" );
-
-			$wgExtPGNewFields[] = array( 'account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" );
-			$wgExtNewTables[] = array( 'account_credentials', "$base/postgres/patch-account_credentials.sql" );
-			$wgExtPGNewFields[] = array( 'account_requests', 'acr_areas', "TEXT" );
-			$wgExtPGNewFields[] = array( 'account_credentials', 'acd_areas', "TEXT" );
-
-			$wgExtNewIndexes[] = array( 'account_requests', 'acr_email', "$base/postgres/patch-email-index.sql" );
-		}
-	} else {
-		if ( $updater->getDB()->getType() == 'mysql' ) {
-			$updater->addExtensionUpdate( array( 'addTable', 'account_requests', "$base/ConfirmAccount.sql", true ) );
-
-			$updater->addExtensionUpdate( array( 'addField', 'account_requests', 'acr_filename',
-				"$base/archives/patch-acr_filename.sql", true ) );
-
-			$updater->addExtensionUpdate( array( 'addTable', 'account_credentials', "$base/archives/patch-account_credentials.sql", true ) );
-
-			$updater->addExtensionUpdate( array( 'addField', 'account_requests', 'acr_areas', "$base/archives/patch-acr_areas.sql", true ) );
-
-			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/archives/patch-email-index.sql", true ) );
-		} elseif ( $updater->getDB()->getType() == 'postgres' ) {
-			$updater->addExtensionUpdate( array( 'addTable', 'account_requests', "$base/ConfirmAccount.pg.sql", true ) );
-
-			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_held', "TIMESTAMPTZ" ) );
-			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_filename', "TEXT" ) );
-			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_storage_key', "TEXT" ) );
-			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" ) );
-
-			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" ) );
-			$updater->addExtensionUpdate( array( 'addTable', 'account_credentials', "$base/postgres/patch-account_credentials.sql", true ) );
-			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_areas', "TEXT" ) );
-			$updater->addExtensionUpdate( array( 'addPgField', 'account_credentials', 'acd_areas', "TEXT" ) );
-
-			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/postgres/patch-email-index.sql", true ) );
-		}
-	}
-	return true;
-}
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
