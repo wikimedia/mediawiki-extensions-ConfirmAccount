@@ -440,8 +440,8 @@ class ConfirmAccountsPage extends SpecialPage
 					);
 				}
 
-				if( WikiError::isError( $result ) ) {
-					$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
+				if( !$result->isOk() ) {
+					$error = wfMsg( 'mailerror', $wgOut->parse( $result->getWikiText() ) );
 					$this->showForm( $error );
 					return false;
 				}
@@ -595,8 +595,8 @@ class ConfirmAccountsPage extends SpecialPage
 			// init $error
 			$error = '';
 
-			if( WikiError::isError( $result ) ) {
-				$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
+			if( !$result->isOK() ) {
+				$error = wfMsg( 'mailerror', $wgOut->parse( $result->getWikiText() ) );
 			}
 
 			# Safe to hook/log now...
@@ -718,9 +718,9 @@ class ConfirmAccountsPage extends SpecialPage
 					wfMsgExt( 'confirmaccount-email-body5',
 						array('parsemag','content'), $u->getName(), $this->reason )
 				);
-				if( WikiError::isError( $result ) ) {
+				if( !$result->isOK() ) {
 					$dbw->rollback();
-					$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
+					$error = wfMsg( 'mailerror', $wgOut->parse( $result->getWikiText() ) );
 					$this->showForm( $error );
 					return false;
 				}

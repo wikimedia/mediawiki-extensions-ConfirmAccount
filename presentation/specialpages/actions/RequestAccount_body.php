@@ -378,9 +378,9 @@ class RequestAccountPage extends SpecialPage {
 		);
 		# Send confirmation, required!
 		$result = $this->sendConfirmationMail( $u, $token, $expires );
-		if ( WikiError::isError( $result ) ) {
+		if ( !$result->isOK() ) {
 			$dbw->rollback(); // Nevermind
-			$error = wfMsg( 'mailerror', htmlspecialchars( $result->toString() ) );
+			$error = wfMsg( 'mailerror', $wgOut->parse( $result->getWikiText() ) );
 			$this->showForm( $error );
 			return false;
 		}
@@ -516,7 +516,7 @@ class RequestAccountPage extends SpecialPage {
 					'requestaccount-email-body-admin', $name, $title->getFullUrl() );
 				# Actually send the email...
 				$result = UserMailer::send( $target, $source, $subject, $body );
-				if ( WikiError::isError( $result ) ) {
+				if ( !$result->isOK() ) {
 					wfDebug( "Could not sent email to admin at $target\n" );
 				}
 			}
@@ -582,7 +582,7 @@ class RequestAccountPage extends SpecialPage {
 	 * @param User $user
 	 * @param string $token
 	 * @param string $expiration
-	 * @return mixed True on success, a WikiError object on failure.
+	 * @return mixed True on success, a Status object on failure.
 	 */
 	protected function sendConfirmationMail( $user, $token, $expiration ) {
 		global $wgContLang;
