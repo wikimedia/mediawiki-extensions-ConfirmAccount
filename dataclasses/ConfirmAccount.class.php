@@ -119,6 +119,23 @@ class ConfirmAccount {
 	}
 
 	/**
+	 * Get a request name from an email confirmation token
+	 *
+	 * @param sring $code
+	 * @returns string|false
+	 */
+	public function requestNameFromEmailToken( $code ) {
+		$dbr = wfGetDB( DB_SLAVE );
+		return $dbr->selectField( 'account_requests',
+			'acr_name',
+			array(
+				'acr_email_token' => md5( $code ),
+				'acr_email_token_expires > ' . $dbr->addQuotes( $dbr->timestamp() ),
+			)
+		);
+	}
+
+	/**
 	 * Verifies that it's ok to include the uploaded file
 	 *
 	 * @param string $tmpfile the full path of the temporary file to verify

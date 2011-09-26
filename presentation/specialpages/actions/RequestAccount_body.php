@@ -430,7 +430,7 @@ class RequestAccountPage extends SpecialPage {
 	protected function confirmEmailToken( $code ) {
 		global $wgUser, $wgOut, $wgConfirmAccountContact, $wgPasswordSender;
 		# Confirm if this token is in the pending requests
-		$name = $this->requestFromEmailToken( $code );
+		$name = ConfirmAccount::requestNameFromEmailToken( $code );
 		if ( $name !== false ) {
 			# Send confirmation email to prospective user
 			ConfirmAccount::confirmEmail( $name );
@@ -468,21 +468,5 @@ class RequestAccountPage extends SpecialPage {
 		} else {
 			$wgOut->addWikiMsg( 'confirmemail_invalid' );
 		}
-	}
-
-	/**
-	 * Get a request name from an emailconfirm token
-	 *
-	 * @param sring $code
-	 * @returns string $name
-	 */
-	protected function requestFromEmailToken( $code ) {
-		$dbr = wfGetDB( DB_SLAVE );
-		$reqID = $dbr->selectField( 'account_requests', 'acr_name',
-			array( 'acr_email_token' => md5( $code ),
-				'acr_email_token_expires > ' . $dbr->addQuotes( $dbr->timestamp() ),
-			)
-		);
-		return $reqID;
 	}
 }
