@@ -335,7 +335,7 @@ class RequestAccountPage extends SpecialPage {
 				$this->showForm( wfMsgHtml( 'requestaccount-exts' ) );
 				return false;
 		 	}
-			$veri = $this->verify( $this->mTempPath, $finalExt );
+			$veri = ConfirmAccount::verifyAttachment( $this->mTempPath, $finalExt );
 			if ( !$veri->isGood() ) {
 				$this->mPrevAttachment = '';
 				$this->showForm( wfMsgHtml( 'uploadcorrupt' ) );
@@ -352,30 +352,25 @@ class RequestAccountPage extends SpecialPage {
 		$expires = null; // passed by reference
 		$token = ConfirmAccount::getConfirmationToken( $u, $expires );
 		# Insert into pending requests...
-		$acr_id = $dbw->nextSequenceValue( 'account_requests_acr_id_seq' );
+		$req = UserAccountRequest::newFromArray( array(
+			'name' 			=> $u->getName(),
+			'email' 		=> $u->getEmail(),
+			'real_name' 	=> $u->getRealName(),
+			'registration' 	=> wfTimestampNow(),
+			'bio' 			=> $this->mBio,
+			'notes' 		=> $this->mNotes,
+			'urls' 			=> $this->mUrls,
+			'filename' 		=> isset( $this->mSrcName ) ? $this->mSrcName : null,
+			'type' 			=> $this->mType,
+			'areas' 		=> $this->mAreaSet,
+			'storage_key' 	=> isset( $key ) ? $key : null,
+			'comment' 		=> '',
+			'email_token' 	=> md5( $token ),
+			'email_token_expires' => $expires,
+			'ip' 			=> wfGetIP(),
+		) );
 		$dbw->begin();
-		$dbw->insert( 'account_requests',
-			array(
-				'acr_id' => $acr_id,
-				'acr_name' => $u->getName(),
-				'acr_email' => $u->getEmail(),
-				'acr_real_name' => $u->getRealName(),
-				'acr_registration' => $dbw->timestamp(),
-				'acr_bio' => $this->mBio,
-				'acr_notes' => $this->mNotes,
-				'acr_urls' => $this->mUrls,
-				'acr_filename' => isset( $this->mSrcName ) ? $this->mSrcName : null,
-				'acr_type' => $this->mType,
-				'acr_areas' => self::flattenAreas( $this->mAreaSet ),
-				'acr_storage_key' => isset( $key ) ? $key : null,
-				'acr_comment' => '',
-				'acr_email_token' => md5( $token ),
-			    'acr_email_token_expires' => $dbw->timestamp( $expires ),
-				'acr_ip' => wfGetIP(), // Possible use for spam blocking
-				'acr_deleted' => 0,
-			),
-			__METHOD__
-		);
+		$req->insertOn();
 		# Send confirmation, required!
 		$result = $this->sendConfirmationMail( $u, $token, $expires );
 		if ( !$result->isOK() ) {
@@ -409,30 +404,6 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	/**
-	 * Flatten areas of interest array
-	 */
-	protected static function flattenAreas( $areas ) {
-		$flatAreas = '';
-		foreach ( $areas as $area ) {
-			$flatAreas .= $area . "\n";
-		}
-		return $flatAreas;
-	}
-
-	/**
-	 * Expand areas of interest to array
-	 * Used by ConfirmAccountsPage
-	 */
-	public static function expandAreas( $areas ) {
-		$list = explode( "\n", $areas );
-		foreach ( $list as $n => $item ) {
-			$list[$n] = trim( "wpArea-" . str_replace( ' ', '_', $item ) );
-		}
-		unset( $list[count( $list ) - 1] );
-		return $list;
-	}
-
-	/**
 	 * Initialize the uploaded file from PHP data
 	 */
 	protected function initializeUpload( $request ) {
@@ -440,49 +411,6 @@ class RequestAccountPage extends SpecialPage {
 		$this->mFileSize       = $request->getFileSize( 'wpUploadFile' );
 		$this->mSrcName        = $request->getFileName( 'wpUploadFile' );
 		$this->mRemoveTempFile = false; // PHP will handle this
-	}
-
-	/**
-	 * Verifies that it's ok to include the uploaded file
-	 *
-	 * @param string $tmpfile the full path of the temporary file to verify
-	 * @param string $extension The filename extension that the file is to be served with
-	 * @return Status object
-	 */
-	protected function verify( $tmpfile, $extension ) {
-		# magically determine mime type
-		$magic =& MimeMagic::singleton();
-		$mime = $magic->guessMimeType( $tmpfile, false );
-		# check mime type, if desired
-		global $wgVerifyMimeType;
-		if ( $wgVerifyMimeType ) {
-			wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n" );
-			# check mime type against file extension
-			if ( !UploadBase::verifyExtension( $mime, $extension ) ) {
-				return Status::newFatal( 'uploadcorrupt' );
-			}
-
-			# check mime type blacklist
-			global $wgMimeTypeBlacklist;
-			if ( isset( $wgMimeTypeBlacklist ) && !is_null( $wgMimeTypeBlacklist )
-				&& $this->checkFileExtension( $mime, $wgMimeTypeBlacklist ) ) {
-				return Status::newFatal( 'filetype-badmime', $mime );
-			}
-		}
-		wfDebug( __METHOD__ . ": all clear; passing.\n" );
-		return Status::newGood();
-	}
-
-	/**
-	 * Perform case-insensitive match against a list of file extensions.
-	 * Returns true if the extension is in the list.
-	 *
-	 * @param string $ext
-	 * @param array $list
-	 * @return bool
-	 */
-	protected function checkFileExtension( $ext, $list ) {
-		return in_array( strtolower( $ext ), $list );
 	}
 
 	/**

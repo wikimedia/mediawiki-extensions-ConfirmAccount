@@ -754,7 +754,7 @@ class ConfirmAccountsPage extends SpecialPage
 			$this->mUsername = $this->mUsername ? $this->mUsername : $row->acr_name;
 			$this->mBio = $this->mBio ? $this->mBio : $row->acr_bio;
 			$this->mType = !is_null($this->mType) ? $this->mType : $row->acr_type;
-			$rowareas = RequestAccountPage::expandAreas( $row->acr_areas );
+			$rowareas = UserAccountRequest::expandAreas( $row->acr_areas );
 
 			foreach( $this->mAreas as $area => $within ) {
 				# If admin didn't set any of these checks, go back to how the user set them

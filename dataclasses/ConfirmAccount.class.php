@@ -50,7 +50,7 @@ class ConfirmAccount {
 	 *
 	 * @param sring $name
 	 */
-	public function confirmEmail( $name ) {
+	public static function confirmEmail( $name ) {
 		global $wgMemc;
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->update( 'account_requests',
@@ -68,7 +68,7 @@ class ConfirmAccount {
 	 * @param string $token
 	 * @return string
 	 */
-	public function confirmationTokenUrl( $token ) {
+	public static function confirmationTokenUrl( $token ) {
 		$title = SpecialPage::getTitleFor( 'RequestAccount' );
 		return $title->getFullUrl( array(
 			'action' => 'confirmemail',
@@ -83,11 +83,52 @@ class ConfirmAccount {
 	 * @param string $expiration
 	 * @return string
 	 */
-	public function getConfirmationToken( $user, &$expiration ) {
+	public static function getConfirmationToken( $user, &$expiration ) {
 		global $wgConfirmAccountRejectAge;
 		$expires = time() + $wgConfirmAccountRejectAge;
 		$expiration = wfTimestamp( TS_MW, $expires );
 		$token = $user->generateToken( $user->getName() . $user->getEmail() . $expires );
 		return $token;
+	}
+
+	/**
+	 * Verifies that it's ok to include the uploaded file
+	 *
+	 * @param string $tmpfile the full path of the temporary file to verify
+	 * @param string $extension The filename extension that the file is to be served with
+	 * @return Status object
+	 */
+	public static function verifyAttachment( $tmpfile, $extension ) {
+		global $wgVerifyMimeType, $wgMimeTypeBlacklist;
+		# magically determine mime type
+		$magic =& MimeMagic::singleton();
+		$mime = $magic->guessMimeType( $tmpfile, false );
+		# check mime type, if desired
+		if ( $wgVerifyMimeType ) {
+			wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n" );
+			# Check mime type against file extension
+			if ( !UploadBase::verifyExtension( $mime, $extension ) ) {
+				return Status::newFatal( 'uploadcorrupt' );
+			}
+			# Check mime type blacklist
+			if ( isset( $wgMimeTypeBlacklist ) && !is_null( $wgMimeTypeBlacklist )
+				&& self::checkFileExtension( $mime, $wgMimeTypeBlacklist ) ) {
+				return Status::newFatal( 'filetype-badmime', $mime );
+			}
+		}
+		wfDebug( __METHOD__ . ": all clear; passing.\n" );
+		return Status::newGood();
+	}
+
+	/**
+	 * Perform case-insensitive match against a list of file extensions.
+	 * Returns true if the extension is in the list.
+	 *
+	 * @param string $ext
+	 * @param array $list
+	 * @return bool
+	 */
+	protected static function checkFileExtension( $ext, $list ) {
+		return in_array( strtolower( $ext ), $list );
 	}
 }
