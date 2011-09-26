@@ -92,6 +92,33 @@ class ConfirmAccount {
 	}
 
 	/**
+	 * Generate a new e-mail confirmation token and send a confirmation
+	 * mail to the user's given address.
+	 *
+	 * @param User $user
+	 * @param string $ip User IP address
+	 * @param string $token
+	 * @param string $expiration
+	 * @return mixed True on success, a Status object on failure.
+	 */
+	public static function sendConfirmationMail( User $user, $ip, $token, $expiration ) {
+		global $wgContLang;
+		$url = self::confirmationTokenUrl( $token );
+		$lang = $user->getOption( 'language' );
+		return $user->sendMail(
+			wfMessage( 'requestaccount-email-subj' )->inLanguage( $lang )->text(),
+			wfMessage( 'requestaccount-email-body',
+				$ip,
+				$user->getName(),
+				$url,
+				$wgContLang->timeanddate( $expiration, false ) ,
+				$wgContLang->date( $expiration, false ) ,
+				$wgContLang->time( $expiration, false )
+			)->inLanguage( $lang )->text()
+		);
+	}
+
+	/**
 	 * Verifies that it's ok to include the uploaded file
 	 *
 	 * @param string $tmpfile the full path of the temporary file to verify

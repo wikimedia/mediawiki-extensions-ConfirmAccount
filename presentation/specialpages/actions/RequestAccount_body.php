@@ -372,7 +372,7 @@ class RequestAccountPage extends SpecialPage {
 		$dbw->begin();
 		$req->insertOn();
 		# Send confirmation, required!
-		$result = $this->sendConfirmationMail( $u, $token, $expires );
+		$result = ConfirmAccount::sendConfirmationMail( $u, wfGetIP(), $token, $expires );
 		if ( !$result->isOK() ) {
 			$dbw->rollback(); // Nevermind
 			$error = wfMsg( 'mailerror', $wgOut->parse( $result->getWikiText() ) );
@@ -484,27 +484,5 @@ class RequestAccountPage extends SpecialPage {
 			)
 		);
 		return $reqID;
-	}
-
-	/**
-	 * Generate a new e-mail confirmation token and send a confirmation
-	 * mail to the user's given address.
-	 *
-	 * @param User $user
-	 * @param string $token
-	 * @param string $expiration
-	 * @return mixed True on success, a Status object on failure.
-	 */
-	protected function sendConfirmationMail( $user, $token, $expiration ) {
-		global $wgContLang;
-		$url = ConfirmAccount::confirmationTokenUrl( $token );
-		return $user->sendMail( wfMsg( 'requestaccount-email-subj' ),
-			wfMsg( 'requestaccount-email-body',
-				wfGetIP(),
-				$user->getName(),
-				$url,
-				$wgContLang->timeanddate( $expiration, false ) ,
-				$wgContLang->date( $expiration, false ) ,
-				$wgContLang->time( $expiration, false ) ) );
 	}
 }
