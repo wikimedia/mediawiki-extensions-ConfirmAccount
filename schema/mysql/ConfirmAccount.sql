@@ -21,12 +21,12 @@ CREATE TABLE IF NOT EXISTS /*_*/account_requests (
   -- Initially NULL; when a user's e-mail address has been
   -- validated by returning with a mailed token, this is
   -- set to the current timestamp.
-  acr_email_authenticated binary(14) default NULL,
+  acr_email_authenticated varbinary(14) default NULL,
   -- Randomly generated token created when the e-mail address
   -- is set and a confirmation test mail sent.
   acr_email_token binary(32),
   -- Expiration date for the user_email_token
-  acr_email_token_expires binary(14),
+  acr_email_token_expires varbinary(14),
   -- A little about this user
   acr_bio mediumblob NOT NULL,
   -- Private info for reviewers to look at when considering request
@@ -44,14 +44,14 @@ CREATE TABLE IF NOT EXISTS /*_*/account_requests (
   acr_areas mediumblob NOT NULL,
 
   -- Timestamp of account registration.
-  acr_registration char(14) NOT NULL,
+  acr_registration varbinary(14) NOT NULL,
 
   -- Flag for rejected accounts
   acr_deleted bool NOT NULL,
   -- Time of rejection (if rejected)
-  acr_rejected binary(14),
+  acr_rejected varbinary(14),
   -- Time request was put on hold (if held)
-  acr_held binary(14),
+  acr_held varbinary(14),
   -- The user who rejected/held it
   acr_user int unsigned NOT NULL default 0,
   -- Reason
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS /*_*/account_credentials (
   -- Initially NULL; when a user's e-mail address has been
   -- validated by returning with a mailed token, this is
   -- set to the current timestamp.
-  acd_email_authenticated binary(14) default NULL,
+  acd_email_authenticated varbinary(14) default NULL,
   -- A little about this user
   acd_bio mediumblob NOT NULL,
   -- Private info for reviewers to look at when considering request
@@ -94,10 +94,10 @@ CREATE TABLE IF NOT EXISTS /*_*/account_credentials (
   acd_areas mediumblob NOT NULL,
 
   -- Timestamp of account registration.
-  acd_registration char(14) NOT NULL,
+  acd_registration varbinary(14) NOT NULL,
 
   -- Timestamp of acceptance
-  acd_accepted binary(14),
+  acd_accepted varbinary(14),
   -- The user who accepted it
   acd_user int unsigned NOT NULL default 0,
   -- Reason given in email

@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS /*_*/account_credentials (
   -- Initially NULL; when a user's e-mail address has been
   -- validated by returning with a mailed token, this is
   -- set to the current timestamp.
-  acd_email_authenticated binary(14) default NULL,
+  acd_email_authenticated varbinary(14) default NULL,
   -- A little about this user
   acd_bio mediumblob NOT NULL,
   -- Private info for reviewers to look at when considering request
@@ -36,10 +36,10 @@ CREATE TABLE IF NOT EXISTS /*_*/account_credentials (
   acd_areas mediumblob NOT NULL,
 
   -- Timestamp of account registration.
-  acd_registration char(14) NOT NULL,
+  acd_registration varbinary(14) NOT NULL,
 
   -- Timestamp of acceptance
-  acd_accepted binary(14),
+  acd_accepted varbinary(14),
   -- The user who accepted it
   acd_user int unsigned NOT NULL default 0,
   -- Reason given in email
