@@ -1,25 +1,27 @@
 <?php
 
-class UserCredentialsPage extends SpecialPage
-{
+class UserCredentialsPage extends SpecialPage {
+
 	function __construct() {
 		parent::__construct( 'UserCredentials', 'lookupcredentials' );
 	}
 
 	function execute( $par ) {
-		global $wgRequest, $wgOut, $wgUser, $wgAccountRequestTypes;
+		global $wgUser, $wgAccountRequestTypes;
+		$out = $this->getOutput();
+		$request = $this->getRequest();
 
 		if ( !$wgUser->isAllowed( 'lookupcredentials' ) ) {
-			$wgOut->permissionRequired( 'lookupcredentials' );
+			$out->permissionRequired( 'lookupcredentials' );
 			return;
 		}
 
 		$this->setHeaders();
 
 		# A target user
-		$this->target = $wgRequest->getText( 'target' );
+		$this->target = $request->getText( 'target' );
 		# Attachments
-		$this->file = $wgRequest->getVal( 'file' );
+		$this->file = $request->getVal( 'file' );
 
 		$this->skin = $wgUser->getSkin();
 
@@ -31,11 +33,12 @@ class UserCredentialsPage extends SpecialPage
 		} else {
 			$this->showForm();
 		}
-		$wgOut->addModules( 'ext.confirmAccount' ); // CSS
+		$out->addModules( 'ext.confirmAccount' ); // CSS
 	}
 
 	function showForm() {
-		global $wgOut, $wgScript;
+		global $wgScript;
+		$out = $this->getOutput();
 
 		$username = str_replace( '_', ' ', $this->target );
 		$form = Xml::openElement( 'form', array( 'name' => 'stablization', 'action' => $wgScript, 'method' => 'get' ) );
@@ -48,21 +51,22 @@ class UserCredentialsPage extends SpecialPage
 		$form .= "</tr></table>";
 		$form .= "</fieldset></form>\n";
 
-		$wgOut->addHTML( $form );
+		$out->addHTML( $form );
 	}
 
 	function showCredentials() {
-		global $wgOut, $wgUser, $wgLang, $wgAccountRequestTypes;
+		global $wgUser, $wgLang, $wgAccountRequestTypes;
+		$out = $this->getOutput();
 
 		$titleObj = SpecialPage::getTitleFor( 'UserCredentials' );
 
 		$row = $this->getRequest();
 		if ( !$row ) {
-			$wgOut->addHTML( wfMsgHtml( 'usercredentials-badid' ) );
+			$out->addHTML( wfMsgHtml( 'usercredentials-badid' ) );
 			return;
 		}
 
-		$wgOut->addWikiText( wfMsg( "usercredentials-text" ) );
+		$out->addWikiText( wfMsg( "usercredentials-text" ) );
 
 		$user = User::newFromName( $this->target );
 
@@ -161,7 +165,7 @@ class UserCredentialsPage extends SpecialPage
 		}
 		$form .= '</fieldset>';
 
-		$wgOut->addHTML( $form );
+		$out->addHTML( $form );
 	}
 
 	/**
@@ -181,16 +185,19 @@ class UserCredentialsPage extends SpecialPage
 	 * Show a private file requested by the visitor.
 	 */
 	function showFile( $key ) {
-		global $wgOut, $wgRequest, $wgConfirmAccountFSRepos, $IP;
-		$wgOut->disable();
+		global $wgConfirmAccountFSRepos, $IP;
+		$out = $this->getOutput();
+		$request = $this->getRequest();
+
+		$out->disable();
 
 		# We mustn't allow the output to be Squid cached, otherwise
 		# if an admin previews a private image, and it's cached, then
 		# a user without appropriate permissions can toddle off and
 		# nab the image, and Squid will serve it
-		$wgRequest->response()->header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', 0 ) . ' GMT' );
-		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
-		$wgRequest->response()->header( 'Pragma: no-cache' );
+		$request->response()->header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', 0 ) . ' GMT' );
+		$request->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
+		$request->response()->header( 'Pragma: no-cache' );
 
 		require_once( "$IP/includes/StreamFile.php" );
 		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
