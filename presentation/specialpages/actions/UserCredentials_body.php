@@ -7,11 +7,12 @@ class UserCredentialsPage extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgUser, $wgAccountRequestTypes;
+		global $wgAccountRequestTypes;
 		$out = $this->getOutput();
 		$request = $this->getRequest();
+		$reqUser = $this->getUser();
 
-		if ( !$wgUser->isAllowed( 'lookupcredentials' ) ) {
+		if ( !$reqUser->isAllowed( 'lookupcredentials' ) ) {
 			$out->permissionRequired( 'lookupcredentials' );
 			return;
 		}
@@ -23,7 +24,7 @@ class UserCredentialsPage extends SpecialPage {
 		# Attachments
 		$this->file = $request->getVal( 'file' );
 
-		$this->skin = $wgUser->getSkin();
+		$this->skin = $reqUser->getSkin();
 
 		if ( $this->file ) {
 			$this->showFile( $this->file );
@@ -55,12 +56,13 @@ class UserCredentialsPage extends SpecialPage {
 	}
 
 	function showCredentials() {
-		global $wgUser, $wgLang, $wgAccountRequestTypes;
+		global $wgLang, $wgAccountRequestTypes;
+		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 
 		$titleObj = SpecialPage::getTitleFor( 'UserCredentials' );
 
-		$row = $this->getRequest();
+		$row = $this->getAccountData();
 		if ( !$row ) {
 			$out->addHTML( wfMsgHtml( 'usercredentials-badid' ) );
 			return;
@@ -159,7 +161,7 @@ class UserCredentialsPage extends SpecialPage {
 			$form .= ConfirmAccountsPage::parseLinks( $row->acd_urls );
 		}
 
-		if ( $wgUser->isAllowed( 'requestips' ) ) {
+		if ( $reqUser->isAllowed( 'requestips' ) ) {
 			$blokip = SpecialPage::getTitleFor( 'blockip' );
 			$form .= "<p>" . wfMsgHtml( 'usercredentials-ip' ) . " " . htmlspecialchars( $row->acd_ip ) . "</p>\n";
 		}
@@ -206,7 +208,7 @@ class UserCredentialsPage extends SpecialPage {
 		wfStreamFile( $path );
 	}
 
-	function getRequest() {
+	function getAccountData() {
 		$uid = User::idFromName( $this->target );
 		if ( !$uid )
 			return false;

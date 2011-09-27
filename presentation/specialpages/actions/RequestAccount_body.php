@@ -7,14 +7,15 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgUser, $wgUseRealNamesOnly,
+		global $wgUseRealNamesOnly,
 			$wgAccountRequestToS, $wgAccountRequestExtraInfo, $wgAccountRequestTypes;
 		# If a user cannot make accounts, don't let them request them either
 		global $wgAccountRequestWhileBlocked;
 
+		$reqUser = $this->getUser();
 		$request = $this->getRequest();
 		$out = $this->getOutput();
-		if ( !$wgAccountRequestWhileBlocked && $wgUser->isBlockedFromCreateAccount() ) {
+		if ( !$wgAccountRequestWhileBlocked && $reqUser->isBlockedFromCreateAccount() ) {
 			$out->blockedPage();
 			return;
 		}
@@ -62,10 +63,10 @@ class RequestAccountPage extends SpecialPage {
 		# We may be confirming an email address here
 		$emailCode = $request->getText( 'wpEmailToken' );
 
-		$this->skin = $wgUser->getSkin();
+		$this->skin = $reqUser->getSkin();
 
 		$action = $request->getVal( 'action' );
-		if ( $request->wasPosted() && $wgUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
+		if ( $request->wasPosted() && $reqUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
 			$this->mPrevAttachment = $this->mPrevAttachment ? $this->mPrevAttachment : $this->mSrcName;
 			$this->doSubmit();
 		} elseif ( $action == 'confirmemail' ) {
@@ -77,9 +78,11 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	protected function showForm( $msg = '', $forgotFile = 0 ) {
-		global $wgUser, $wgUseRealNamesOnly, $wgAllowRealName;
+		global $wgUseRealNamesOnly, $wgAllowRealName;
 		global $wgAccountRequestToS, $wgAccountRequestTypes, $wgAccountRequestExtraInfo,
 			$wgAllowAccountRequestFiles, $wgMakeUserPageFromBio;
+
+		$reqUser = $this->getUser();
 
 		$this->mForgotAttachment = $forgotFile;
 
@@ -90,7 +93,7 @@ class RequestAccountPage extends SpecialPage {
 			$out->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
 		}
 		# Give notice to users that are logged in
-		if ( $wgUser->getID() ) {
+		if ( $reqUser->getID() ) {
 			$out->addWikiMsg( 'requestaccount-dup' );
 		}
 
@@ -198,7 +201,7 @@ class RequestAccountPage extends SpecialPage {
 		# FIXME: do this better...
 		global $wgConfirmAccountCaptchas, $wgCaptchaClass, $wgCaptchaTriggers;
 		if ( $wgConfirmAccountCaptchas && isset( $wgCaptchaClass )
-			&& $wgCaptchaTriggers['createaccount'] && !$wgUser->isAllowed( 'skipcaptcha' ) )
+			&& $wgCaptchaTriggers['createaccount'] && !$reqUser->isAllowed( 'skipcaptcha' ) )
 		{
 			$captcha = new $wgCaptchaClass;
 			# Hook point to add captchas
@@ -208,7 +211,7 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '</fieldset>';
 		}
 		$form .= Html::Hidden( 'title', $this->getTitle()->getPrefixedDBKey() ) . "\n";
-		$form .= Html::Hidden( 'wpEditToken', $wgUser->editToken() ) . "\n";
+		$form .= Html::Hidden( 'wpEditToken', $reqUser->editToken() ) . "\n";
 		$form .= Html::Hidden( 'attachment', $this->mPrevAttachment ) . "\n";
 		$form .= Html::Hidden( 'forgotAttachment', $this->mForgotAttachment ) . "\n";
 		$form .= "<p>" . Xml::submitButton( wfMsgHtml( 'requestaccount-submit' ) ) . "</p>";
@@ -220,7 +223,8 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	protected function doSubmit() {
-		global $wgUser, $wgAuth, $wgAccountRequestThrottle;
+		global $wgAuth, $wgAccountRequestThrottle;
+		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
@@ -247,7 +251,7 @@ class RequestAccountPage extends SpecialPage {
 			$wgCaptchaTriggers['createaccount'] = $old;
 		}
 		# No request spamming...
-		if ( $wgAccountRequestThrottle && $wgUser->isPingLimitable() ) {
+		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
 			global $wgMemc;
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			$value = $wgMemc->get( $key );
@@ -386,7 +390,7 @@ class RequestAccountPage extends SpecialPage {
 		$wgMemc->delete( $key );
 		# No request spamming...
 		# BC: check if isPingLimitable() exists
-		if ( $wgAccountRequestThrottle && $wgUser->isPingLimitable() ) {
+		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
 			if ( !$value = $wgMemc->incr( $key ) ) {
 				$wgMemc->set( $key, 1, 86400 );
@@ -428,7 +432,8 @@ class RequestAccountPage extends SpecialPage {
 	 * @param int $limit number of accounts allowed to be requested from the same IP
 	 */
 	protected function confirmEmailToken( $code ) {
-		global $wgUser, $wgConfirmAccountContact, $wgPasswordSender;
+		global $wgConfirmAccountContact, $wgPasswordSender;
+		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 		# Confirm if this token is in the pending requests
 		$name = ConfirmAccount::requestNameFromEmailToken( $code );
@@ -457,9 +462,9 @@ class RequestAccountPage extends SpecialPage {
 		$user = User::newFromConfirmationCode( $code );
 		if ( is_object( $user ) ) {
 			if ( $user->confirmEmail() ) {
-				$message = $wgUser->isLoggedIn() ? 'confirmemail_loggedin' : 'confirmemail_success';
+				$message = $reqUser->isLoggedIn() ? 'confirmemail_loggedin' : 'confirmemail_success';
 				$out->addWikiMsg( $message );
-				if ( !$wgUser->isLoggedIn() ) {
+				if ( !$reqUser->isLoggedIn() ) {
 					$title = SpecialPage::getTitleFor( 'Userlogin' );
 					$out->returnToMain( true, $title->getPrefixedUrl() );
 				}

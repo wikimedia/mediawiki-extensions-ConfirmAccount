@@ -8,15 +8,16 @@ class ConfirmAccountsPage extends SpecialPage {
 
 	// @TODO: split out listlink mess
 	function execute( $par ) {
-		global $wgUser, $wgAccountRequestTypes, $wgLang;
+		global $wgAccountRequestTypes, $wgLang;
 
+		$reqUser = $this->getUser();
 		$request = $this->getRequest();
 		$out = $this->getOutput();
-		if( !$wgUser->isAllowed( 'confirmaccount' ) ) {
+		if( !$reqUser->isAllowed( 'confirmaccount' ) ) {
 			$out->permissionRequired( 'confirmaccount' );
 			return;
 		}
-		if( !$wgUser->getID() ) {
+		if( !$reqUser->getID() ) {
 			$out->permissionRequired( 'user' );
 			return;
 		}
@@ -73,7 +74,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			}
 		}
 
-		$this->skin = $wgUser->getSkin();
+		$this->skin = $reqUser->getSkin();
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 
@@ -131,7 +132,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				"</i></strong> [{$listLink}] <strong>{$viewall}</strong>" );
 		}
 
-		if( $request->wasPosted() && $wgUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
+		if( $request->wasPosted() && $reqUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
 			$this->doSubmit();
 		} elseif( $this->file ) {
 			$this->showFile( $this->file );
@@ -190,7 +191,8 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	protected function showForm( $msg='' ) {
-		global $wgUser, $wgLang, $wgAccountRequestTypes;
+		global $wgLang, $wgAccountRequestTypes;
+		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
@@ -306,7 +308,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			"</textarea></p>\n";
 		$form .= '</fieldset>';
 		global $wgAccountRequestExtraInfo;
-		if ($wgAccountRequestExtraInfo || $wgUser->isAllowed( 'requestips' ) ) {
+		if ($wgAccountRequestExtraInfo || $reqUser->isAllowed( 'requestips' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-other') . '</legend>';
 			if( $wgAccountRequestExtraInfo ) {
@@ -324,7 +326,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
 				$form .= self::parseLinks($row->acr_urls);
 			}
-			if( $wgUser->isAllowed( 'requestips' ) ) {
+			if( $reqUser->isAllowed( 'requestips' ) ) {
 				$blokip = SpecialPage::getTitleFor( 'Block' );
 				$form .= "<p>".wfMsgHtml('confirmaccount-ip')." ".htmlspecialchars($row->acr_ip).
 				" (" . $this->skin->makeKnownLinkObj( $blokip, wfMsgHtml('blockip'),
@@ -362,7 +364,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= Html::Hidden( 'action', 'reject' );
 		$form .= Html::Hidden( 'acrid', $row->acr_id );
 		$form .= Html::Hidden( 'wpShowRejects', $this->showRejects );
-		$form .= Html::Hidden( 'wpEditToken', $wgUser->editToken() )."\n";
+		$form .= Html::Hidden( 'wpEditToken', $reqUser->editToken() )."\n";
 		$form .= Xml::closeElement( 'form' );
 
 		$out->addHTML( $form );
@@ -371,7 +373,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		# Set a key to who is looking at this request.
 		# Have it expire in 10 minutes...
 		$key = wfMemcKey( 'acctrequest', 'view', $row->acr_id );
-		$wgMemc->set( $key, $wgUser->getID(), 60*10 );
+		$wgMemc->set( $key, $reqUser->getID(), 60*10 );
 	}
 
 	/**
@@ -400,7 +402,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	protected function doSubmit() {
-		global $wgUser;
+		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
@@ -422,7 +424,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$dbw->begin();
 			$dbw->update( 'account_requests',
 				array( 'acr_rejected' => $dbw->timestamp(),
-					'acr_user' => $wgUser->getID(),
+					'acr_user' => $reqUser->getID(),
 					'acr_comment' => ($this->submitType == 'spam') ? '' : $this->reason,
 					'acr_deleted' => 1 ),
 				array( 'acr_id' => $this->acrID, 'acr_deleted' => 0 ),
@@ -533,7 +535,7 @@ class ConfirmAccountsPage extends SpecialPage {
 						'acd_areas' => $row->acr_areas,
 						'acd_registration' => $row->acr_registration,
 						'acd_accepted' => $dbw->timestamp(),
-						'acd_user' => $wgUser->getID(),
+						'acd_user' => $reqUser->getID(),
 						'acd_comment' => $this->reason,
 						'acd_id' => $acd_id ),
 					__METHOD__
@@ -687,7 +689,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			# Finally, done!!!
 			$this->showSuccess( $this->submitType, $user->getName(), array( $error ) );
 		} elseif( $this->submitType === 'hold' ) {
-			global $wgUser;
+			$reqUser = $this->getUser();
 
 			# Make proxy user to email a message
 			$u = User::newFromName( $row->acr_name, 'creatable' );
@@ -709,7 +711,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$dbw->begin();
 			$dbw->update( 'account_requests',
 				array( 'acr_held' => $dbw->timestamp(),
-					'acr_user'    => $wgUser->getID(),
+					'acr_user'    => $reqUser->getID(),
 					'acr_comment' => $this->reason ),
 				array( 'acr_id' => $this->acrID, 'acr_held IS NULL', 'acr_deleted' => 0 ),
 					__METHOD__
@@ -831,7 +833,8 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	protected function showList() {
-		global $wgUser, $wgLang;
+		global $wgLang;
+		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
@@ -870,7 +873,8 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	public function formatRow( $row ) {
-		global $wgLang, $wgUser, $wgUseRealNamesOnly, $wgAllowRealName;
+		global $wgLang, $wgUseRealNamesOnly, $wgAllowRealName;
+		$reqUser = $this->getUser();
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		if( $this->showRejects || $this->showStale ) {
