@@ -62,8 +62,12 @@ $wgAccountRequestMinWords = 50;
 
 # Show ToS checkbox
 $wgAccountRequestToS = true;
-# Show confirmation info fields
+# Show confirmation info fields (notes,url,files if enabled)
 $wgAccountRequestExtraInfo = true;
+# If $wgAccountRequestExtraInfo, also enables file attachments
+$wgAllowAccountRequestFiles = true;
+# If files can be attached, what types can be used? (MIME data is checked)
+$wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
 
 # Prospective account access levels.
 # An associative array of integer => (special page param,user group,autotext) pairs.
@@ -94,9 +98,6 @@ $wgConfirmAccountContact = false;
 # If ConfirmEdit is installed and set to trigger for createaccount,
 # inject catpchas for requests too?
 $wgConfirmAccountCaptchas = true;
-
-$wgAllowAccountRequestFiles = true;
-$wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
 
 # Storage repos. Has B/C for when this used FileStore.
 $wgConfirmAccountFSRepos = array(
@@ -131,9 +132,9 @@ $wgGroupPermissions['bureaucrat']['requestips'] = true;
 # If credentials are stored, this right lets users look them up
 $wgGroupPermissions['bureaucrat']['lookupcredentials'] = true;
 
-$wgAvailableRights[] = 'confirmaccount';
-$wgAvailableRights[] = 'requestips';
-$wgAvailableRights[] = 'lookupcredentials';
+$wgAvailableRights[] = 'confirmaccount'; // user can confirm account requests
+$wgAvailableRights[] = 'requestips'; // user can see IPs in request queue
+$wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed users
 
 # Show notice for open requests to admins?
 # This is cached, but still can be expensive on sites with thousands of requests.
@@ -185,6 +186,7 @@ $wgHooks['UserLoginForm'][] = 'ConfirmAccountUIHooks::addRequestLoginText';
 $wgHooks['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPending';
 # Status header like "new messages" bar
 $wgHooks['SiteNoticeAfter'][] = 'ConfirmAccountUIHooks::confirmAccountsNotice';
+
 # Register admin pages for AdminLinks extension.
 $wgHooks['AdminLinks'][] = 'ConfirmAccountUIHooks::confirmAccountAdminLinks';
 
