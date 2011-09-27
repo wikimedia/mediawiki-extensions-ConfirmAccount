@@ -38,11 +38,20 @@ class ConfirmAccountUIHooks {
 
 	// FIXME: don't just take on to general site notice
 	public static function confirmAccountsNotice( $notice ) {
-		global $wgConfirmAccountNotice, $wgUser;
+		global $wgConfirmAccountNotice, $wgUser, $wgMemc, $wgOut;
 		if ( !$wgConfirmAccountNotice || !$wgUser->isAllowed( 'confirmaccount' ) ) {
 			return true;
 		}
-		global $wgMemc, $wgOut;
+		# Only show on some special pages
+		$title = RequestContext::getMain()->getTitle();
+		if ( !$title->isSpecialPage() ) {
+			return true;
+		} elseif (
+			!$title->equals( SpecialPage::getTitleFor( 'Recentchanges' ) ) &&
+			!$title->equals( SpecialPage::getTitleFor( 'Watchlist' ) ) )
+		{
+			return true;
+		}
 		# Check cached results
 		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 		$count = $wgMemc->get( $key );
