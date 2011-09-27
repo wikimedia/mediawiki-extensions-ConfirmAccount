@@ -154,18 +154,12 @@ $wgExtensionAliasesFiles['ConfirmAccount'] = "$dir/ConfirmAccount.alias.php";
 $wgAutoloadClasses['ConfirmAccountUIHooks'] = "$dir/ConfirmAccountUI.hooks.php";
 
 $dir = dirname( __FILE__ ) . '/presentation/specialpages';
-# Request an account
-$wgSpecialPages['RequestAccount'] = 'RequestAccountPage';
+# UI to request an account
 $wgAutoloadClasses['RequestAccountPage'] = "$dir/actions/RequestAccount_body.php";
-$wgSpecialPageGroups['RequestAccount'] = 'login';
-# Confirm accounts
-$wgSpecialPages['ConfirmAccounts'] = 'ConfirmAccountsPage';
+# UI to confirm accounts
 $wgAutoloadClasses['ConfirmAccountsPage'] = "$dir/actions/ConfirmAccount_body.php";
-$wgSpecialPageGroups['ConfirmAccounts'] = 'users';
-# Account credentials
-$wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
+# UI to see account credentials
 $wgAutoloadClasses['UserCredentialsPage'] = "$dir/actions/UserCredentials_body.php";
-$wgSpecialPageGroups['UserCredentials'] = 'users';
 
 $dir = dirname( __FILE__ ) . '/dataclasses';
 # Utility functions
@@ -189,5 +183,8 @@ $wgHooks['SiteNoticeAfter'][] = 'ConfirmAccountUIHooks::confirmAccountsNotice';
 
 # Register admin pages for AdminLinks extension.
 $wgHooks['AdminLinks'][] = 'ConfirmAccountUIHooks::confirmAccountAdminLinks';
+
+# Actually register some special pages
+$wgHooks['SpecialPage_initList'][] = 'ConfirmAccountUIHooks::defineSpecialPages';
 
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
