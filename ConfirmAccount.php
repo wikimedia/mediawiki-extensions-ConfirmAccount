@@ -38,6 +38,8 @@ if ( !$wgEnableEmail ) {
 	exit( 1 ) ;
 }
 
+# Configuration
+
 # Set the person's bio as their userpage?
 $wgMakeUserPageFromBio = true;
 # Text to add to bio pages if the above option is on
@@ -139,6 +141,8 @@ $wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed
 # Show notice for open requests to admins?
 # This is cached, but still can be expensive on sites with thousands of requests.
 $wgConfirmAccountNotice = true;
+
+# End Configuration
 
 $wgResourceModules['ext.confirmAccount'] = array(
 	'styles' 		=> 'confirmaccount.css',
