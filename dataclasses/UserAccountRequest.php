@@ -101,83 +101,83 @@ class UserAccountRequest {
 	}
 
 	public function getId() {
-		return	$this->id;
+		return $this->id;
 	}
 
 	public function getName() {
-		return	$this->name;
+		return $this->name;
 	}
 
 	public function getRealName() {
-		return	$this->realName;
+		return $this->realName;
 	}
 
 	public function getEmail() {
-		return	$this->email;
+		return $this->email;
 	}
 
 	public function getRegistration() {
-		return	$this->registration;
+		return $this->registration;
 	}
 
 	public function getBio() {
-		return	$this->bio;
+		return $this->bio;
 	}
 
 	public function getNotes() {
-		return	$this->notes;
+		return $this->notes;
 	}
 
 	public function getUrls() {
-		return	$this->urls;
+		return $this->urls;
 	}
 
 	public function getAreas() {
-		return	$this->areas;
+		return $this->areas;
 	}
 
 	public function getFileName() {
-		return	$this->fileName;
+		return $this->fileName;
 	}
 
 	public function getFileStorageKey() {
-		return	$this->fileStorageKey;
+		return $this->fileStorageKey;
 	}
 
 	public function getIP() {
-		return	$this->ip;
+		return $this->ip;
 	}
 
 	public function getEmailToken() {
-		return	$this->emailToken;
+		return $this->emailToken;
 	}
 
 	public function getEmailTokenExpires() {
-		return	$this->emailTokenExpires;
+		return $this->emailTokenExpires;
 	}
 
 	public function getEmailAuthTimestamp() {
-		return	$this->emailAuthTimestamp;
+		return $this->emailAuthTimestamp;
 	}
 
 	public function isDeleted() {
-		return	$this->deleted;
+		return $this->deleted;
 	}
 
 	public function getRejectTimestamp() {
-		return	$this->rejectedTimestamp;
+		return $this->rejectedTimestamp;
 	}
 
 	public function getHeldTimestamp() {
-		return	$this->heldTimestamp;
+		return $this->heldTimestamp;
 	}
 
 	public function getHandlingUser() {
-		return	$this->user;
+		return $this->user;
 	}
 
 	public function getHandlingComment() {
-		return	$this->comment;
+		return $this->comment;
 	}
 
 	public function insertOn() {
