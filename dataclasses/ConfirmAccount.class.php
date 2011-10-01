@@ -52,6 +52,7 @@ class ConfirmAccount {
 	 */
 	public static function confirmEmail( $name ) {
 		global $wgMemc;
+
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->update( 'account_requests',
 			array( 'acr_email_authenticated' => $dbw->timestamp() ),
@@ -85,6 +86,7 @@ class ConfirmAccount {
 	 */
 	public static function getConfirmationToken( $user, &$expiration ) {
 		global $wgConfirmAccountRejectAge;
+
 		$expires = time() + $wgConfirmAccountRejectAge;
 		$expiration = wfTimestamp( TS_MW, $expires );
 		$token = $user->generateToken( $user->getName() . $user->getEmail() . $expires );
@@ -103,6 +105,7 @@ class ConfirmAccount {
 	 */
 	public static function sendConfirmationMail( User $user, $ip, $token, $expiration ) {
 		global $wgContLang;
+
 		$url = self::confirmationTokenUrl( $token );
 		$lang = $user->getOption( 'language' );
 		return $user->sendMail(
@@ -125,14 +128,35 @@ class ConfirmAccount {
 	 * @return string|false
 	 */
 	public function requestNameFromEmailToken( $code ) {
-		$dbr = wfGetDB( DB_SLAVE );
-		return $dbr->selectField( 'account_requests',
+		return wfGetDB( DB_SLAVE )->selectField( 'account_requests',
 			'acr_name',
 			array(
 				'acr_email_token' => md5( $code ),
 				'acr_email_token_expires > ' . $dbr->addQuotes( $dbr->timestamp() ),
 			)
 		);
+	}
+
+	/**
+	 * Get the number of account requests for a request type
+	 * @param $type int
+	 * @return Array Assosiative array with 'open', 'held', 'type' keys mapping to integers
+	 */
+	public static function getOpenRequestCount( $type ) {
+		$dbr = wfGetDB( DB_SLAVE );
+		$open = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
+			array( 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NOT NULL' ),
+			__METHOD__
+		);
+		$held = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
+			array( 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NOT NULL' ),
+			__METHOD__
+		);
+		$rej = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
+			array( 'acr_type' => $type, 'acr_deleted' => 1, 'acr_user != 0' ),
+			__METHOD__
+		);
+		return array( 'open' => $open, 'held' => $held, 'rejected' => $rej );
 	}
 
 	/**
