@@ -223,9 +223,6 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	protected function doSubmit() {
-		global $wgAuth, $wgAccountRequestThrottle;
-		$out = $this->getOutput();
-
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );

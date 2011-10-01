@@ -58,7 +58,7 @@ class ConfirmAccountUIHooks {
 	}
 
 	// FIXME: don't just take on to general site notice
-	public static function confirmAccountsNotice( $notice ) {
+	public static function confirmAccountsNotice( &$notice ) {
 		global $wgConfirmAccountNotice, $wgUser, $wgMemc, $wgOut;
 		if ( !$wgConfirmAccountNotice || !$wgUser->isAllowed( 'confirmaccount' ) ) {
 			return true;

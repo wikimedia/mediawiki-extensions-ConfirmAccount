@@ -7,7 +7,6 @@ class UserCredentialsPage extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgAccountRequestTypes;
 		$out = $this->getOutput();
 		$request = $this->getRequest();
 		$reqUser = $this->getUser();
@@ -56,7 +55,6 @@ class UserCredentialsPage extends SpecialPage {
 	}
 
 	function showCredentials() {
-		global $wgLang, $wgAccountRequestTypes;
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 
@@ -162,7 +160,6 @@ class UserCredentialsPage extends SpecialPage {
 		}
 
 		if ( $reqUser->isAllowed( 'requestips' ) ) {
-			$blokip = SpecialPage::getTitleFor( 'blockip' );
 			$form .= "<p>" . wfMsgHtml( 'usercredentials-ip' ) . " " . htmlspecialchars( $row->acd_ip ) . "</p>\n";
 		}
 		$form .= '</fieldset>';
@@ -189,7 +186,7 @@ class UserCredentialsPage extends SpecialPage {
 	 * @return void
 	 */
 	function showFile( $key ) {
-		global $wgConfirmAccountFSRepos, $IP;
+		global $wgConfirmAccountFSRepos;
 		$out = $this->getOutput();
 		$request = $this->getRequest();
 

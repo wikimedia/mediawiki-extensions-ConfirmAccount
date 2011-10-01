@@ -381,7 +381,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	 * @param $key string
 	 */
 	protected function showFile( $key ) {
-		global $wgConfirmAccountFSRepos, $IP;
+		global $wgConfirmAccountFSRepos;
 		$out = $this->getOutput();
 		$request = $this->getRequest();
 
@@ -607,7 +607,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			}
 
 			# Safe to hook/log now...
-			wfRunHooks( 'AddNewAccount', array( $user ) );
+			wfRunHooks( 'AddNewAccount', array( $user, false /* not by email */ ) );
 			$user->addNewUserLogEntry();
 
 			# Clear cache for notice of how many account requests there are
@@ -641,7 +641,7 @@ class ConfirmAccountsPage extends SpecialPage {
 					$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
 					foreach( $areas as $n => $line ) {
 						$set = explode("|",$line);
-						$name = str_replace("_"," ",$set[0]);
+						//$name = str_replace("_"," ",$set[0]);
 						if( in_array($set[0],$this->mAreaSet) ) {
 							# General userpage text for anyone with this interest
 							if( isset($set[2]) ) {
@@ -834,11 +834,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	protected function showList() {
-		global $wgLang;
-		$reqUser = $this->getUser();
 		$out = $this->getOutput();
-
-		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 
 		# Output the list
 		$pager = new ConfirmAccountsPager( $this, array(),
@@ -875,7 +871,6 @@ class ConfirmAccountsPage extends SpecialPage {
 
 	public function formatRow( $row ) {
 		global $wgLang, $wgUseRealNamesOnly, $wgAllowRealName;
-		$reqUser = $this->getUser();
 
 		$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $this->specialPageParameter );
 		if( $this->showRejects || $this->showStale ) {
@@ -976,7 +971,6 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 	}
 
 	function formatRow( $row ) {
-		$block = new Block;
 		return $this->mForm->formatRow( $row );
 	}
 
