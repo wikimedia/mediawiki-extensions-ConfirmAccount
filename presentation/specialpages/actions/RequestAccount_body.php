@@ -309,10 +309,9 @@ class RequestAccountPage extends SpecialPage {
 	 * @param $request WebRequest
 	 */
 	protected function initializeUpload( $request ) {
-		$this->mTempPath       = $request->getFileTempName( 'wpUploadFile' );
-		$this->mFileSize       = $request->getFileSize( 'wpUploadFile' );
-		$this->mSrcName        = $request->getFileName( 'wpUploadFile' );
-		$this->mRemoveTempFile = false; // PHP will handle this
+		$this->mTempPath = $request->getFileTempName( 'wpUploadFile' );
+		$this->mFileSize = $request->getFileSize( 'wpUploadFile' );
+		$this->mSrcName = $request->getFileName( 'wpUploadFile' );
 	}
 
 	/**
