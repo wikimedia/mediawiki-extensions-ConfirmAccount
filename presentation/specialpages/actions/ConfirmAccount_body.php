@@ -670,7 +670,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				# Add any interest categories
 				if( wfMsgForContent( 'requestaccount-areas' ) ) {
 					$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
-					foreach( $areas as $n => $line ) {
+					foreach( $areas as $line ) {
 						$set = explode("|",$line);
 						//$name = str_replace("_"," ",$set[0]);
 						if( in_array($set[0],$this->reqAreaSet) ) {

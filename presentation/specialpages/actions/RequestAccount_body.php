@@ -49,7 +49,7 @@ class RequestAccountPage extends SpecialPage {
 		$this->mAreas = $this->mAreaSet = array();
 		if ( wfMsg( 'requestaccount-areas' ) ) {
 			$areas = explode( "\n*", "\n" . wfMsg( 'requestaccount-areas' ) );
-			foreach ( $areas as $n => $area ) {
+			foreach ( $areas as $area ) {
 				$set = explode( "|", $area, 2 );
 				if ( $set[0] && isset( $set[1] ) ) {
 					$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $set[0] ) );
@@ -115,6 +115,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= "<td>" . Xml::input( 'wpEmail', 30, $this->mEmail, array( 'id' => 'wpEmail' ) ) . "</td></tr>\n";
 		if ( count( $wgAccountRequestTypes ) > 1 ) {
 			$form .= "<tr><td>" . wfMsgHtml( 'requestaccount-reqtype' ) . "</td><td>";
+			$options = array();
 			foreach ( $wgAccountRequestTypes as $i => $params ) {
 				$options[] = Xml::option( wfMsg( "requestaccount-level-$i" ), $i, ( $i == $this->mType ) );
 			}
@@ -314,7 +315,7 @@ class RequestAccountPage extends SpecialPage {
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 		# Confirm if this token is in the pending requests
-		$name = ConfirmAccount::requestNameFromEmailToken( $code );
+		$name = ConfirmAccount::requestNameFromEmailToken( $code ); // FIXME: This method isn't static
 		if ( $name !== false ) {
 			# Send confirmation email to prospective user
 			ConfirmAccount::confirmEmail( $name );

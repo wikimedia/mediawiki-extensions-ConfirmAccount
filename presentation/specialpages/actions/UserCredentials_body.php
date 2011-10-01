@@ -2,6 +2,7 @@
 
 class UserCredentialsPage extends SpecialPage {
 
+	protected $target, $skin, $file;
 	function __construct() {
 		parent::__construct( 'UserCredentials', 'lookupcredentials' );
 	}
@@ -93,7 +94,7 @@ class UserCredentialsPage extends SpecialPage {
 
 		$form .= '</table></fieldset>';
 
-		$areaSet = RequestAccountPage::expandAreas( $row->acd_areas );
+		$areaSet = RequestAccountPage::expandAreas( $row->acd_areas ); // FIXME: Method is undefined
 
 		if ( wfMsg( 'requestaccount-areas' ) ) {
 			$form .= '<fieldset>';

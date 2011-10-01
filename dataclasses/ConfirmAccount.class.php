@@ -15,7 +15,7 @@ class ConfirmAccount {
 
 		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 		# Clear out any associated attachments and delete those rows
-		while( $row = $dbw->fetchObject( $res ) ) {
+		foreach( $res as $row ) {
 			$key = $row->acr_storage_key;
 			if( $key ) {
 				$path = $repo->getZonePath( 'public' ).'/'.
@@ -101,7 +101,7 @@ class ConfirmAccount {
 	 * @param string $ip User IP address
 	 * @param string $token
 	 * @param string $expiration
-	 * @return mixed True on success, a Status object on failure.
+	 * @return true|Status True on success, a Status object on failure.
 	 */
 	public static function sendConfirmationMail( User $user, $ip, $token, $expiration ) {
 		global $wgContLang;
