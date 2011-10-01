@@ -171,6 +171,10 @@ $wgAutoloadClasses['ConfirmAccount'] = "$dir/ConfirmAccount.class.php";
 # Data access objects
 $wgAutoloadClasses['UserAccountRequest'] = "$dir/UserAccountRequest.php";
 
+$dir = dirname( __FILE__ ) . '/business';
+# Business logic
+$wgAutoloadClasses['AccountRequestSubmission'] = "$dir/AccountRequestSubmission.php";
+
 $dir = dirname( __FILE__ ) . '/schema';
 # Schema changes
 $wgAutoloadClasses['ConfirmAccountUpdaterHooks'] = "$dir/ConfirmAccountUpdater.hooks.php";

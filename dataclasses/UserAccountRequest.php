@@ -231,7 +231,9 @@ class UserAccountRequest {
 	/**
 	 * Flatten areas of interest array
 	 * Used by ConfirmAccountsPage
+	 * @param $areas Array
 	 * @todo just serialize()
+	 * @return string
 	 */
 	protected static function flattenAreas( array $areas ) {
 		$flatAreas = '';
@@ -244,7 +246,9 @@ class UserAccountRequest {
 	/**
 	 * Expand areas of interest to array
 	 * Used by ConfirmAccountsPage
+	 * @param $areas string
 	 * @todo just unserialize()
+	 * @return Array
 	 */
 	public static function expandAreas( $areas ) {
 		$list = explode( "\n", $areas );

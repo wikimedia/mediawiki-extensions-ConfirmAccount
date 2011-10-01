@@ -185,6 +185,8 @@ class UserCredentialsPage extends SpecialPage {
 
 	/**
 	 * Show a private file requested by the visitor.
+	 * @param $key string
+	 * @return void
 	 */
 	function showFile( $key ) {
 		global $wgConfirmAccountFSRepos, $IP;
@@ -201,11 +203,10 @@ class UserCredentialsPage extends SpecialPage {
 		$request->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
 		$request->response()->header( 'Pragma: no-cache' );
 
-		require_once( "$IP/includes/StreamFile.php" );
 		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
 		$path = $repo->getZonePath( 'public' ).'/'.
 			$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
-		wfStreamFile( $path );
+		StreamFile::stream( $path );
 	}
 
 	function getAccountData() {

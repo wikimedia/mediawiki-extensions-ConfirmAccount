@@ -122,7 +122,7 @@ class ConfirmAccount {
 	 * Get a request name from an email confirmation token
 	 *
 	 * @param sring $code
-	 * @returns string|false
+	 * @return string|false
 	 */
 	public function requestNameFromEmailToken( $code ) {
 		$dbr = wfGetDB( DB_SLAVE );

@@ -224,8 +224,8 @@ class RequestAccountPage extends SpecialPage {
 
 	protected function doSubmit() {
 		global $wgAuth, $wgAccountRequestThrottle;
-		$reqUser = $this->getUser();
 		$out = $this->getOutput();
+
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );
@@ -250,152 +250,40 @@ class RequestAccountPage extends SpecialPage {
 		if ( !$wgConfirmAccountCaptchas && isset( $wgCaptchaTriggers ) ) {
 			$wgCaptchaTriggers['createaccount'] = $old;
 		}
-		# No request spamming...
-		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
-			global $wgMemc;
-			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
-			$value = $wgMemc->get( $key );
-			if ( $value > $wgAccountRequestThrottle ) {
-				$this->throttleHit( $wgAccountRequestThrottle );
-				return;
-			}
-		}
-		# Check if already in use
-		if ( 0 != $u->idForName() || $wgAuth->userExists( $u->getName() ) ) {
-			$this->showForm( wfMsgHtml( 'userexists' ) );
+
+		# Build submission object...
+		$submission = new AccountRequestSubmission(
+			$this->getUser(),
+			array(
+				'userName'					=> $name,
+				'realName'					=> $this->mRealName,
+				'tosAccepted'				=> $this->mToS,
+				'email'						=> $this->mEmail,
+				'bio'						=> $this->mBio,
+				'notes'						=> $this->mNotes,
+				'urls'						=> $this->mUrls,
+				'type'						=> $this->mType,
+				'areas'						=> $this->mAreaSet,
+				'registration'				=> wfTimestampNow(),
+				'attachmentPrevName'		=> $this->mPrevAttachment,
+				'attachmentSrcName'			=> $this->mSrcName,
+				'attachmentDidNotForget'	=> $this->mForgotAttachment, // confusing name :)
+				'attachmentSize'			=> $this->mFileSize,
+				'attachmentTempPath'		=> $this->mTempPath
+			)
+		);
+
+		# Actually submit!
+		list( $status, $msg ) = $submission->submit( $this->getContext() );
+		# Account for state changes
+		$this->mForgotAttachment = $submission->getAttachmentDidNotForget();
+		$this->mPrevAttachment = $submission->getAttachtmentPrevName();
+		# Check for error messages
+		if ( $status !== true ) {
+			$this->showForm( $msg );
 			return;
 		}
-		# Check pending accounts for name use
-		$dbw = wfGetDB( DB_MASTER );
-		$dup = $dbw->selectField( 'account_requests', '1',
-			array( 'acr_name' => $u->getName() ),
-			__METHOD__ );
-		if ( $dup ) {
-			$this->showForm( wfMsgHtml( 'requestaccount-inuse' ) );
-			return;
-		}
-		# Make sure user agrees to policy here
-		global $wgAccountRequestToS;
-		if ( $wgAccountRequestToS && !$this->mToS ) {
-			$this->showForm( wfMsgHtml( 'requestaccount-agree' ) );
-			return;
-		}
-		# Validate email address
-		if ( !$u->isValidEmailAddr( $this->mEmail ) ) {
-			$this->showForm( wfMsgHtml( 'invalidemailaddress' ) );
-			return;
-		}
-		global $wgAccountRequestMinWords;
-		# Check if biography is long enough
-		if ( str_word_count( $this->mBio ) < $wgAccountRequestMinWords ) {
-			global $wgLang;
-			$this->showForm( wfMsgExt( 'requestaccount-tooshort', 'parsemag',
-				$wgLang->formatNum( $wgAccountRequestMinWords ) ) );
-			return;
-		}
-		# Set some additional data so the AbortNewAccount hook can be
-		# used for more than just username validation
-		$u->setEmail( $this->mEmail );
-		# Check if someone else has an account request with the same email
-		$dup = $dbw->selectField( 'account_requests', '1',
-			array( 'acr_email' => $u->getEmail() ),
-			__METHOD__ );
-		if ( $dup ) {
-			$this->showForm( wfMsgHtml( 'requestaccount-emaildup' ) );
-			return;
-		}
-		$u->setRealName( $this->mRealName );
-		# Per security reasons, file dir cannot be pulled from client,
-		# so ask them to resubmit it then...
-		global $wgAllowAccountRequestFiles, $wgAccountRequestExtraInfo;
-		# If the extra fields are off, then uploads are off
-		$allowFiles = $wgAccountRequestExtraInfo && $wgAllowAccountRequestFiles;
-		if ( $allowFiles && $this->mPrevAttachment && !$this->mSrcName ) {
-			# If the user is submitting forgotAttachment as true with no file,
-			# then they saw the notice and choose not to re-select the file.
-			# Assume that they don't want to send one anymore.
-			if ( !$this->mForgotAttachment ) {
-				$this->mPrevAttachment = '';
-				$this->showForm( wfMsgHtml( 'requestaccount-resub' ), 1 );
-				return false;
-			}
-		}
-		# Process upload...
-		if ( $allowFiles && $this->mSrcName ) {
-			$ext = explode( '.', $this->mSrcName );
-			$finalExt = $ext[count( $ext ) - 1];
-			# File must have size.
-			if ( trim( $this->mSrcName ) == '' || empty( $this->mFileSize ) ) {
-				$this->mPrevAttachment = '';
-				$this->showForm( wfMsgHtml( 'emptyfile' ) );
-				return false;
-			}
-			# Look at the contents of the file; if we can recognize the
-		 	# type but it's corrupt or data of the wrong type, we should
-		 	# probably not accept it.
-		 	global $wgAccountRequestExts;
-		 	if ( !in_array( $finalExt, $wgAccountRequestExts ) ) {
-		 		$this->mPrevAttachment = '';
-				$this->showForm( wfMsgHtml( 'requestaccount-exts' ) );
-				return false;
-		 	}
-			$veri = ConfirmAccount::verifyAttachment( $this->mTempPath, $finalExt );
-			if ( !$veri->isGood() ) {
-				$this->mPrevAttachment = '';
-				$this->showForm( wfMsgHtml( 'uploadcorrupt' ) );
-				return false;
-			}
-			# Start a transaction, move file from temp to account request directory.
-			global $wgConfirmAccountFSRepos;
-			$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
-			$key = sha1_file($this->mTempPath) . '.' . $finalExt;
-			$pathRel = $key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
-			$triplet = array( $this->mTempPath, 'public', $pathRel );
-			$repo->storeBatch( array($triplet) ); // save!
-		}
-		$expires = null; // passed by reference
-		$token = ConfirmAccount::getConfirmationToken( $u, $expires );
-		# Insert into pending requests...
-		$req = UserAccountRequest::newFromArray( array(
-			'name' 			=> $u->getName(),
-			'email' 		=> $u->getEmail(),
-			'real_name' 	=> $u->getRealName(),
-			'registration' 	=> wfTimestampNow(),
-			'bio' 			=> $this->mBio,
-			'notes' 		=> $this->mNotes,
-			'urls' 			=> $this->mUrls,
-			'filename' 		=> isset( $this->mSrcName ) ? $this->mSrcName : null,
-			'type' 			=> $this->mType,
-			'areas' 		=> $this->mAreaSet,
-			'storage_key' 	=> isset( $key ) ? $key : null,
-			'comment' 		=> '',
-			'email_token' 	=> md5( $token ),
-			'email_token_expires' => $expires,
-			'ip' 			=> wfGetIP(),
-		) );
-		$dbw->begin();
-		$req->insertOn();
-		# Send confirmation, required!
-		$result = ConfirmAccount::sendConfirmationMail( $u, wfGetIP(), $token, $expires );
-		if ( !$result->isOK() ) {
-			$dbw->rollback(); // Nevermind
-			$error = wfMsg( 'mailerror', $out->parse( $result->getWikiText() ) );
-			$this->showForm( $error );
-			return false;
-		}
-		$dbw->commit();
-		# Clear cache for notice of how many account requests there are
-		global $wgMemc;
-		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-		$wgMemc->delete( $key );
-		# No request spamming...
-		# BC: check if isPingLimitable() exists
-		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
-			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
-			if ( !$value = $wgMemc->incr( $key ) ) {
-				$wgMemc->set( $key, 1, 86400 );
-			}
-		}
+
 		# Done!
 		$this->showSuccess();
 	}
@@ -409,6 +297,7 @@ class RequestAccountPage extends SpecialPage {
 
 	/**
 	 * Initialize the uploaded file from PHP data
+	 * @param $request WebRequest
 	 */
 	protected function initializeUpload( $request ) {
 		$this->mTempPath       = $request->getFileTempName( 'wpUploadFile' );
@@ -418,18 +307,10 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	/**
-	 * @private
-	 * @param int $limit number of accounts allowed to be requested from the same IP
-	 */
-	protected function throttleHit( $limit ) {
-		$out = $this->getOutput();
-		$out->addHTML( wfMsgExt( 'acct_request_throttle_hit', 'parsemag', $limit ) );
-	}
-
-	/**
 	 * (a) Try to confirm an email address via a token
 	 * (b) Notify $wgConfirmAccountContact on success
-	 * @param int $limit number of accounts allowed to be requested from the same IP
+	 * @param $code string The token
+	 * @return void
 	 */
 	protected function confirmEmailToken( $code ) {
 		global $wgConfirmAccountContact, $wgPasswordSender;

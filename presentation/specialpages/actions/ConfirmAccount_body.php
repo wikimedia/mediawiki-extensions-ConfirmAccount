@@ -378,6 +378,7 @@ class ConfirmAccountsPage extends SpecialPage {
 
 	/**
 	 * Show a private file requested by the visitor.
+	 * @param $key string
 	 */
 	protected function showFile( $key ) {
 		global $wgConfirmAccountFSRepos, $IP;
