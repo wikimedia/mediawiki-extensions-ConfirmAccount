@@ -14,6 +14,7 @@ class AccountRequestSubmission {
 	protected $type;
 	protected $areas;
 	protected $registration;
+	protected $ip;
 	/* File attachment fields */
 	protected $attachmentSrcName; // user given attachment base name
 	protected $attachmentPrevName; // user given attachment base name last attempt
@@ -23,21 +24,22 @@ class AccountRequestSubmission {
 
 	public function __construct( User $requester, array $params ) {
 		$this->requester = $requester;
-		$this->userName = $params['userName'];
-		$this->realName = $params['realName'];
+		$this->userName = trim( $params['userName'] );
+		$this->realName = trim( $params['realName'] );
 		$this->tosAccepted = $params['tosAccepted'];
 		$this->email = $params['email'];
-		$this->bio = $params['bio'];
-		$this->notes = $params['notes'];
-		$this->urls = $params['urls'];
+		$this->bio = trim( $params['bio'] );
+		$this->notes = trim( $params['notes'] );
+		$this->urls = trim( $params['urls'] );
 		$this->type = $params['type'];
 		$this->areas = $params['areas'];
+		$this->ip = $params['ip'];
+		$this->registration = wfTimestamp( TS_MW, $params['registration'] );
 		$this->attachmentPrevName = $params['attachmentPrevName'];
 		$this->attachmentSrcName = $params['attachmentSrcName'];
 		$this->attachmentDidNotForget = $params['attachmentDidNotForget'];
 		$this->attachmentSize = $params['attachmentSize'];
 		$this->attachmentTempPath = $params['attachmentTempPath'];
-		$this->registration = wfTimestamp( TS_MW, $params['registration'] );
 	}
 
 	public function getAttachmentDidNotForget() {
@@ -61,8 +63,7 @@ class AccountRequestSubmission {
 		$reqUser = $this->requester;
 
 		# Now create a dummy user ($u) and check if it is valid
-		$name = trim( $this->userName );
-		if ( $name === '' ) {
+		if ( $this->userName === '' ) {
 			return array( 'accountreq_no_name', wfMsgHtml( 'noname' ) );
 		}
 		$u = User::newFromName( $name, 'creatable' );
@@ -71,7 +72,7 @@ class AccountRequestSubmission {
 		}
 		# No request spamming...
 		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
-			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
+			$key = wfMemcKey( 'acctrequest', 'ip', $this->ip );
 			$value = (int)$wgMemc->get( $key );
 			if ( $value > $wgAccountRequestThrottle ) {
 				return array( 'accountreq_throttled',
@@ -165,8 +166,6 @@ class AccountRequestSubmission {
 		$expires = null; // passed by reference
 		$token = ConfirmAccount::getConfirmationToken( $u, $expires );
 
-		global $wgRequest;
-		$ip = $wgRequest->getIP();
 		# Insert into pending requests...
 		$req = UserAccountRequest::newFromArray( array(
 			'name' 			=> $u->getName(),
@@ -185,7 +184,7 @@ class AccountRequestSubmission {
 			'comment' 		=> '',
 			'email_token' 	=> md5( $token ),
 			'email_token_expires' => $expires,
-			'ip' 			=> $ip,
+			'ip' 			=> $this->ip,
 		) );
 		$dbw->begin();
 		$req->insertOn();

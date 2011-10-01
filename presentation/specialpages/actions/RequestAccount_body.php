@@ -273,6 +273,7 @@ class RequestAccountPage extends SpecialPage {
 				'type'						=> $this->mType,
 				'areas'						=> $this->mAreaSet,
 				'registration'				=> wfTimestampNow(),
+				'ip'						=> $this->getRequest()->getIP(),
 				'attachmentPrevName'		=> $this->mPrevAttachment,
 				'attachmentSrcName'			=> $this->mSrcName,
 				'attachmentDidNotForget'	=> $this->mForgotAttachment, // confusing name :)
