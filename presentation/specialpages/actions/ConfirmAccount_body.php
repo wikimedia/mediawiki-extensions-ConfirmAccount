@@ -223,7 +223,10 @@ class ConfirmAccountsPage extends SpecialPage {
 		$out->addHTML( '</ul>' );
 	}
 
-	protected function showAccountConfirmForm( $msg='' ) {
+	/**
+	 * @param $msg string
+	 */
+	protected function showAccountConfirmForm( $msg = '' ) {
 		global $wgAccountRequestTypes;
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
@@ -435,6 +438,9 @@ class ConfirmAccountsPage extends SpecialPage {
 		StreamFile::stream( $path );
 	}
 
+	/**
+	 * @return bool
+	 */
 	protected function doAccountConfirmSubmit() {
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
@@ -779,8 +785,10 @@ class ConfirmAccountsPage extends SpecialPage {
 		return true;
 	}
 
-	/*
+	/**
 	 * Get requested account request row and load some fields
+	 *
+	 * @param $forUpdate bool
 	 */
 	function getAccountRequest( $forUpdate = false ) {
 		if( !$this->acrID ) return false;
@@ -846,6 +854,11 @@ class ConfirmAccountsPage extends SpecialPage {
 		return $linkList;
 	}
 
+	/**
+	 * @param $titleObj Title
+	 * @param $name string
+	 * @param $errors array
+	 */
 	protected function showSuccess( $titleObj, $name = null, $errors = array() ) {
 		$out = $this->getOutput();
 
@@ -903,6 +916,10 @@ class ConfirmAccountsPage extends SpecialPage {
 		}
 	}
 
+	/**
+	 * @param $row
+	 * @return string
+	 */
 	public function formatRow( $row ) {
 		global $wgUseRealNamesOnly, $wgAllowRealName, $wgMemc;
 
@@ -1000,14 +1017,24 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		$this->mLimit = $urlLimit ? $urlLimit : 20;
 	}
 
+	/**
+	 * @return Title
+	 */
 	function getTitle() {
 		return SpecialPage::getTitleFor( 'ConfirmAccounts', $this->mForm->specialPageParameter );
 	}
 
+	/**
+	 * @param $row
+	 * @return string
+	 */
 	function formatRow( $row ) {
 		return $this->mForm->formatRow( $row );
 	}
 
+	/**
+	 * @return string
+	 */
 	function getStartBody() {
 		if ( $this->getNumRows() ) {
 			return '<ul>';
@@ -1016,6 +1043,9 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		}
 	}
 
+	/**
+	 * @return string
+	 */
 	function getEndBody() {
 		if ( $this->getNumRows() ) {
 			return '</ul>';
@@ -1024,6 +1054,9 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		}
 	}
 
+	/**
+	 * @return array
+	 */
 	function getQueryInfo() {
 		$conds = $this->mConds;
 		$tables = array( 'account_requests' );
@@ -1046,6 +1079,9 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 		);
 	}
 
+	/**
+	 * @return string
+	 */
 	function getIndexField() {
 		return 'acr_registration';
 	}

@@ -44,6 +44,9 @@ class AccountRequestSubmission {
 		return $this->attachmentDidNotForget;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getAttachtmentPrevName() {
 		return $this->attachmentPrevName;
 	}
