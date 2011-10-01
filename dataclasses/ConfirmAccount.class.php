@@ -124,10 +124,10 @@ class ConfirmAccount {
 	/**
 	 * Get a request name from an email confirmation token
 	 *
-	 * @param sring $code
+	 * @param $code string
 	 * @return string|false
 	 */
-	public function requestNameFromEmailToken( $code ) {
+	public static function requestNameFromEmailToken( $code ) {
 		$dbr = wfGetDB( DB_SLAVE );
 		return $dbr->selectField( 'account_requests',
 			'acr_name',

@@ -325,7 +325,7 @@ class RequestAccountPage extends SpecialPage {
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 		# Confirm if this token is in the pending requests
-		$name = ConfirmAccount::requestNameFromEmailToken( $code ); // FIXME: This method isn't static
+		$name = ConfirmAccount::requestNameFromEmailToken( $code );
 		if ( $name !== false ) {
 			# Send confirmation email to prospective user
 			ConfirmAccount::confirmEmail( $name );
