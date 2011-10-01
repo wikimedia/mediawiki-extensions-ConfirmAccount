@@ -94,7 +94,7 @@ class UserCredentialsPage extends SpecialPage {
 
 		$form .= '</table></fieldset>';
 
-		$areaSet = RequestAccountPage::expandAreas( $row->acd_areas ); // FIXME: Method is undefined
+		$areaSet = UserAccountRequest::expandAreas( $row->acd_areas );
 
 		if ( wfMsg( 'requestaccount-areas' ) ) {
 			$form .= '<fieldset>';
