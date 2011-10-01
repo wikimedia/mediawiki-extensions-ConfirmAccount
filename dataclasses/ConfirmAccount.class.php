@@ -128,7 +128,8 @@ class ConfirmAccount {
 	 * @return string|false
 	 */
 	public function requestNameFromEmailToken( $code ) {
-		return wfGetDB( DB_SLAVE )->selectField( 'account_requests',
+		$dbr = wfGetDB( DB_SLAVE );
+		return $dbr->selectField( 'account_requests',
 			'acr_name',
 			array(
 				'acr_email_token' => md5( $code ),

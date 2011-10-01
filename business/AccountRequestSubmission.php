@@ -93,7 +93,7 @@ class AccountRequestSubmission {
 			return array( 'acct_request_skipped_tos', wfMsgHtml( 'requestaccount-agree' ) );
 		}
 		# Validate email address
-		if ( !$u->isValidEmailAddr( $this->email ) ) {
+		if ( !Sanitizer::validateEmail( $this->email ) ) {
 			return array( 'acct_request_invalid_email', wfMsgHtml( 'invalidemailaddress' ) );
 		}
 		# Check if biography is long enough
@@ -161,6 +161,9 @@ class AccountRequestSubmission {
 		}
 		$expires = null; // passed by reference
 		$token = ConfirmAccount::getConfirmationToken( $u, $expires );
+
+		global $wgRequest;
+		$ip = $wgRequest->getIP();
 		# Insert into pending requests...
 		$req = UserAccountRequest::newFromArray( array(
 			'name' 			=> $u->getName(),
@@ -179,12 +182,12 @@ class AccountRequestSubmission {
 			'comment' 		=> '',
 			'email_token' 	=> md5( $token ),
 			'email_token_expires' => $expires,
-			'ip' 			=> wfGetIP(),
+			'ip' 			=> $ip,
 		) );
 		$dbw->begin();
 		$req->insertOn();
 		# Send confirmation, required!
-		$result = ConfirmAccount::sendConfirmationMail( $u, wfGetIP(), $token, $expires );
+		$result = ConfirmAccount::sendConfirmationMail( $u, $ip, $token, $expires );
 		if ( !$result->isOK() ) {
 			$dbw->rollback(); // Nevermind
 			return array( 'acct_request_mail_failed',
@@ -197,7 +200,7 @@ class AccountRequestSubmission {
 		# No request spamming...
 		# BC: check if isPingLimitable() exists
 		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
-			$key = wfMemcKey( 'acctrequest', 'ip', wfGetIP() );
+			$key = wfMemcKey( 'acctrequest', 'ip', $ip );
             $value = $wgMemc->incr( $key );
 			if ( !$value ) {
 				$wgMemc->set( $key, 1, 86400 );
