@@ -14,7 +14,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	protected $reqBio;
 	protected $submitType;
 	protected $reqAreas;
-	protected $reqAreaset;
+	protected $reqAreaSet;
 	protected $reason;
 
 	function __construct() {

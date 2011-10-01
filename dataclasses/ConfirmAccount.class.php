@@ -145,7 +145,7 @@ class ConfirmAccount {
 	public static function getOpenRequestCount( $type ) {
 		$dbr = wfGetDB( DB_SLAVE );
 		$open = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
-			array( 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NOT NULL' ),
+			array( 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NULL' ),
 			__METHOD__
 		);
 		$held = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
