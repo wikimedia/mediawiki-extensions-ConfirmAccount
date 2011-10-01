@@ -27,6 +27,10 @@ class UserAccountRequest {
 
 	private function __construct() {}
 
+	/**
+	 * @param $row
+	 * @return UserAccountRequest
+	 */
 	public static function newFromRow( Object $row ) {
 		$req = new self();
 
@@ -55,6 +59,10 @@ class UserAccountRequest {
 		return $req;
 	}
 
+	/**
+	 * @param $fields array
+	 * @return UserAccountRequest
+	 */
 	public static function newFromArray( array $fields ) {
 		$req = new self();
 
@@ -100,86 +108,148 @@ class UserAccountRequest {
 		return $req;
 	}
 
+	/**
+	 * @return int
+	 */
 	public function getId() {
 		return $this->id;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getName() {
 		return $this->name;
 	}
 
+	/**
+	 * @return sting
+	 */
 	public function getRealName() {
 		return $this->realName;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getEmail() {
 		return $this->email;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getRegistration() {
 		return $this->registration;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getBio() {
 		return $this->bio;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getNotes() {
 		return $this->notes;
 	}
 
+	/**
+	 * @return array
+	 */
 	public function getUrls() {
 		return $this->urls;
 	}
 
+	/**
+	 * @return array
+	 */
 	public function getAreas() {
 		return $this->areas;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getFileName() {
 		return $this->fileName;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getFileStorageKey() {
 		return $this->fileStorageKey;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getIP() {
 		return $this->ip;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getEmailToken() {
 		return $this->emailToken;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getEmailTokenExpires() {
 		return $this->emailTokenExpires;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getEmailAuthTimestamp() {
 		return $this->emailAuthTimestamp;
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function isDeleted() {
 		return $this->deleted;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getRejectTimestamp() {
 		return $this->rejectedTimestamp;
 	}
-
+	/**
+	 * @return string
+	 */
 	public function getHeldTimestamp() {
 		return $this->heldTimestamp;
 	}
 
+	/**
+	 * @return User
+	 */
 	public function getHandlingUser() {
 		return $this->user;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getHandlingComment() {
 		return $this->comment;
 	}
 
+	/**
+	 * @return int
+	 */
 	public function insertOn() {
 		$dbw = wfGetDB( DB_MASTER );
 		# Allow for some fields to be handled automatically...
@@ -218,6 +288,10 @@ class UserAccountRequest {
 		return $this->id;
 	}
 
+	/**
+	 * @return bool
+	 * @throws MWException
+	 */
 	public function remove() {
 		if ( !$this->id ) {
 			throw new MWException( "Account request ID is not set." );

@@ -3,7 +3,7 @@
  * Class containing hooked functions for a ConfirmAccount environment
  */
 class ConfirmAccountUIHooks {
-	/*
+	/**
 	 * Register ConfirmAccount special pages as needed.
 	 * Also sets $wgSpecialPages just to be consistent.
 	 */
@@ -24,6 +24,10 @@ class ConfirmAccountUIHooks {
 		return true;
 	}
 
+	/**
+	 * @param $template
+	 * @return bool
+	 */
 	public static function addRequestLoginText( &$template ) {
 		global $wgUser, $wgOut;
 		# Add a link to RequestAccount from UserLogin
@@ -34,6 +38,11 @@ class ConfirmAccountUIHooks {
 		return true;
 	}
 
+	/**
+	 * @param $personal_urls
+	 * @param $title
+	 * @return bool
+	 */
 	public static function setRequestLoginLinks( &$personal_urls, &$title ) {
 		if ( isset( $personal_urls['anonlogin'] ) ) {
 			$personal_urls['anonlogin']['text'] = wfMsg('nav-login-createaccount');
@@ -43,6 +52,11 @@ class ConfirmAccountUIHooks {
 		return true;
 	}
 
+	/**
+	 * @param $user User
+	 * @param $abortError
+	 * @return bool
+	 */
 	public static function checkIfAccountNameIsPending( User $user, &$abortError ) {
 		# If an account is made with name X, and one is pending with name X
 		# we will have problems if the pending one is later confirmed
@@ -57,7 +71,12 @@ class ConfirmAccountUIHooks {
 		return true;
 	}
 
-	// FIXME: don't just take on to general site notice
+	/**
+	 * FIXME: don't just take on to general site notice
+	 *
+	 * @param $notice
+	 * @return bool
+	 */
 	public static function confirmAccountsNotice( &$notice ) {
 		global $wgConfirmAccountNotice, $wgUser, $wgMemc, $wgOut;
 		if ( !$wgConfirmAccountNotice || !$wgUser->isAllowed( 'confirmaccount' ) ) {
@@ -100,6 +119,10 @@ class ConfirmAccountUIHooks {
 		return true;
 	}
 
+	/**
+	 * @param $admin_links_tree
+	 * @return bool
+	 */
 	public static function confirmAccountAdminLinks( &$admin_links_tree ) {
 		$users_section = $admin_links_tree->getSection( wfMsg( 'adminlinks_users' ) );
 		$extensions_row = $users_section->getRow( 'extensions' );

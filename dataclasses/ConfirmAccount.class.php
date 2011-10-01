@@ -1,8 +1,8 @@
 <?php
 class ConfirmAccount {
-	/*
-	* Move old stale requests to rejected list. Delete old rejected requests.
-	*/
+	/**
+	 * Move old stale requests to rejected list. Delete old rejected requests.
+	 */
 	public static function runAutoMaintenance() {
 		global $wgRejectedAccountMaxAge, $wgConfirmAccountFSRepos;
 

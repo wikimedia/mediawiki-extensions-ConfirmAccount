@@ -445,7 +445,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		if( !$row ) {
 			$out->addHTML( wfMsgHtml('confirmaccount-badid') );
 			$out->returnToMain( true, $titleObj );
-			return;
+			return false;
 		}
 
 		if( $this->submitType === 'reject' || $this->submitType === 'spam' ) {
@@ -502,7 +502,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$user = User::newFromName( $this->reqUsername, 'creatable' );
 			if( is_null($user) ) {
 				$this->showAccountConfirmForm( wfMsgHtml('noname') );
-				return;
+				return false;
 			}
 
 			# Make a random password
@@ -511,7 +511,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			# Check if already in use
 			if( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
 				$this->showAccountConfirmForm( wfMsgHtml('userexists') );
-				return;
+				return false;
 			}
 			# Add user to DB
 			$dbw = wfGetDB( DB_MASTER );
@@ -776,6 +776,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		} else {
 			$this->showAccountConfirmForm();
 		}
+		return true;
 	}
 
 	/*

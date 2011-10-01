@@ -3,6 +3,11 @@
  * Class containing updater functions for a ConfirmAccount environment
  */
 class ConfirmAccountUpdaterHooks {
+
+	/**
+	 * @param DatabaseUpdater $updater
+	 * @return bool
+	 */
 	public static function addSchemaUpdates( DatabaseUpdater $updater ) {
 		$base = dirname( __FILE__ );
 		if ( $updater->getDB()->getType() == 'mysql' ) {
