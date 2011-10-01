@@ -2,6 +2,16 @@
 
 class RequestAccountPage extends SpecialPage {
 
+	protected $mUsername, $mRealName, $mType, $mPrevAttachment, $mForgotAttachment,
+		$mEmail, $mBio, $mNotes, $mToS, $mSrcName, $mUrls, $mFileSize, $mTempPath;
+
+	protected $skin;
+
+	/**
+	 * @var array
+	 */
+	protected $mAreas, $mAreaSet;
+
 	function __construct() {
 		parent::__construct( 'RequestAccount' );
 	}

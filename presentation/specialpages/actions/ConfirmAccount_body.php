@@ -17,6 +17,8 @@ class ConfirmAccountsPage extends SpecialPage {
 	protected $reqAreaSet;
 	protected $reason;
 
+	protected $specialPageParameter;
+
 	function __construct() {
 		parent::__construct( 'ConfirmAccounts', 'confirmaccount' );
 	}
