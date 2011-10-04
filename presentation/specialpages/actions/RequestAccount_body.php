@@ -5,8 +5,6 @@ class RequestAccountPage extends SpecialPage {
 	protected $mUsername, $mRealName, $mType, $mPrevAttachment, $mForgotAttachment,
 		$mEmail, $mBio, $mNotes, $mToS, $mSrcName, $mUrls, $mFileSize, $mTempPath;
 
-	protected $skin;
-
 	/**
 	 * @var array
 	 */
@@ -67,8 +65,6 @@ class RequestAccountPage extends SpecialPage {
 		}
 		# We may be confirming an email address here
 		$emailCode = $request->getText( 'wpEmailToken' );
-
-		$this->skin = $reqUser->getSkin();
 
 		$action = $request->getVal( 'action' );
 		if ( $request->wasPosted() && $reqUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
