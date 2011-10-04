@@ -96,32 +96,32 @@ class UserCredentialsPage extends SpecialPage {
 
 		$areaSet = UserAccountRequest::expandAreas( $row->acd_areas );
 
-		if ( wfMsg( 'requestaccount-areas' ) ) {
+		$userAreas = ConfirmAccount::getUserAreaConfig();
+		if ( count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'confirmaccount-leg-areas' ) . '</legend>';
 
-			$areas = explode( "\n*", "\n" . wfMsg( 'requestaccount-areas' ) );
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
 			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
 			$count = 0;
 
 			$att = array( 'disabled' => 'disabled' );
-			foreach ( $areas as $area ) {
-				$set = explode( "|", $area, 3 );
-				if ( $set[0] && isset( $set[1] ) ) {
-					$count++;
-					if ( $count > 5 ) {
-						$form .= "</tr><tr valign='top'>";
-						$count = 1;
-					}
-					$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $set[0] ) );
-					if ( isset( $set[1] ) ) {
-						$pg = Linker::link( Title::newFromText( $set[1] ), wfMsgHtml( 'requestaccount-info' ), array(), array(), "known" );
-					} else {
-						$pg = '';
-					}
-					$form .= "<td>" . Xml::checkLabel( $set[0], $formName, $formName, in_array( $formName, $areaSet ), $att ) . " {$pg}</td>\n";
+			foreach ( $userAreas as $name => $conf ) {
+				$count++;
+				if ( $count > 5 ) {
+					$form .= "</tr><tr valign='top'>";
+					$count = 1;
 				}
+				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
+				if ( $conf['project'] != '' ) {
+					$pg = Linker::link( Title::newFromText( $name ),
+						wfMsgHtml( 'requestaccount-info' ), array(), array(), "known" );
+				} else {
+					$pg = '';
+				}
+				$form .= "<td>" .
+					Xml::checkLabel( $name, $formName, $formName, in_array( $formName, $areaSet ), $att ) .
+					" {$pg}</td>\n";
 			}
 			$form .= "</tr></table></div>";
 			$form .= '</fieldset>';

@@ -200,4 +200,46 @@ class ConfirmAccount {
 	protected static function checkFileExtension( $ext, $list ) {
 		return in_array( strtolower( $ext ), $list );
 	}
+
+	/**
+	 * Get the category to add to this users page for working in
+	 * @return Array Associative mapping of the format:
+	 *    (name => ('project' => x, 'userText' => y, 'grpUserText' => (request type => z)))
+	 * Any of the ultimative values can be empty string
+	 */
+	public static function getUserAreaConfig() {
+		static $res; // process cache
+		if ( $res !== null ) {
+			return $res;
+		}
+		$res = array();
+		// Message describing the areas a user can be interested in, the corresponding wiki page,
+		// and any text that is automatically appended to the userpage on account acceptance.
+		// Format is <name> | <wikipage> [| <text for all>] [| <text group0>] [| <text group1>] ...
+		$msg = wfMessage( 'requestaccount-areas' )->inContentLanguage();
+		if ( $msg->exists() ) {
+			$areas = explode( "\n*", "\n" . $msg->text() );
+			foreach ( $areas as $n => $area ) {
+				$set = explode( "|", $area );
+				if ( count( $set ) >= 2 ) {
+					$name = trim( str_replace( '_', ' ', $set[0] ) );
+					$res[$name] = array();
+
+					$res[$name]['project'] = trim( $set[1] ); // name => WikiProject mapping
+					if ( isset( $set[2] ) ) {
+						$res[$name]['userText'] = trim( $set[2] ); // userpage text for all
+					} else {
+						$res[$name]['userText'] = '';
+					}
+
+					$res[$name]['grpUserText'] = array(); // userpage text for certain request types
+					$categories = array_slice( $set, 3 ); // keys start from 0 now
+					foreach ( $categories as $i => $cat ) {
+						$res[$name]['grpUserText'][$i] = trim( $cat );
+					}
+				}
+			}
+		}
+		return $res;
+	}
 }

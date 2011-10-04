@@ -57,17 +57,12 @@ class RequestAccountPage extends SpecialPage {
 		$this->mType = isset( $wgAccountRequestTypes[$this->mType] ) ? $this->mType : 0;
 		# Load areas user plans to be active in...
 		$this->mAreas = $this->mAreaSet = array();
-		if ( wfMsg( 'requestaccount-areas' ) ) {
-			$areas = explode( "\n*", "\n" . wfMsg( 'requestaccount-areas' ) );
-			foreach ( $areas as $area ) {
-				$set = explode( "|", $area, 2 );
-				if ( $set[0] && isset( $set[1] ) ) {
-					$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $set[0] ) );
-					$this->mAreas[$formName] = $request->getInt( $formName, - 1 );
-					# Make a simple list of interests
-					if ( $this->mAreas[$formName] > 0 )
-						$this->mAreaSet[] = str_replace( '_', ' ', $set[0] );
-				}
+		foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
+			$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
+			$this->mAreas[$formName] = $request->getInt( $formName, -1 );
+			# Make a simple list of interests
+			if ( $this->mAreas[$formName] > 0 ) {
+				$this->mAreaSet[] = $name;
 			}
 		}
 		# We may be confirming an email address here
@@ -136,31 +131,31 @@ class RequestAccountPage extends SpecialPage {
 		}
 		$form .= '</table></fieldset>';
 
-		if ( wfMsg( 'requestaccount-areas' ) ) {
+		$userAreas = ConfirmAccount::getUserAreaConfig();
+		if ( count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-areas' ) . '</legend>';
 			$form .=  wfMsgExt( 'requestaccount-areas-text', array( 'parse' ) ) . "\n";
 
-			$areas = explode( "\n*", "\n" . wfMsg( 'requestaccount-areas' ) );
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
 			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
 			$count = 0;
-			foreach ( $areas as $area ) {
-				$set = explode( "|", $area, 3 );
-				if ( $set[0] && isset( $set[1] ) ) {
-					$count++;
-					if ( $count > 5 ) {
-						$form .= "</tr><tr valign='top'>";
-						$count = 1;
-					}
-					$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $set[0] ) );
-					if ( isset( $set[1] ) ) {
-						$pg = Linker::link( Title::newFromText( $set[1] ), wfMsgHtml( 'requestaccount-info' ), array(), array(), "known" );
-					} else {
-						$pg = '';
-					}
-					$form .= "<td>" . Xml::checkLabel( $set[0], $formName, $formName, $this->mAreas[$formName] > 0 ) . " {$pg}</td>\n";
+			foreach ( $userAreas as $name => $conf ) {
+				$count++;
+				if ( $count > 5 ) {
+					$form .= "</tr><tr valign='top'>";
+					$count = 1;
 				}
+				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
+				if ( $conf['project'] != '' ) {
+					$pg = Linker::link( Title::newFromText( $conf['project'] ),
+						wfMsgHtml( 'requestaccount-info' ), array(), array(), "known" );
+				} else {
+					$pg = '';
+				}
+				$form .= "<td>" .
+					Xml::checkLabel( $name, $formName, $formName, $this->mAreas[$formName] > 0 ) .
+					" {$pg}</td>\n";
 			}
 			$form .= "</tr></table></div>";
 			$form .= '</fieldset>';

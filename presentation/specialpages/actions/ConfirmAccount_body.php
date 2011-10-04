@@ -52,30 +52,22 @@ class ConfirmAccountsPage extends SpecialPage {
 		# Attachment file name to view
 		$this->file = $request->getVal( 'file' );
 
-		# Load areas user plans to be active in...
-		# @FIXME: move this down and refactor
-		$this->reqAreas = $this->reqAreaSet = array();
-		if ( wfMsgForContent( 'requestaccount-areas' ) ) {
-			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
-			foreach( $areas as $area ) {
-				$set = explode("|",$area,2);
-				if ( $set[0] && isset($set[1]) ) {
-					$formName = "wpArea-" . htmlspecialchars(str_replace(' ','_',$set[0]));
-					$this->reqAreas[$formName] = $request->getInt( $formName, -1 );
-					# Make a simple list of interests
-					if ( $this->reqAreas[$formName] > 0 ) {
-						$this->reqAreaSet[] = str_replace( '_', ' ', $set[0] );
-					}
-				}
-			}
-		}
-
 		// Showing a file
 		if ( $this->file ) {
 			$this->showFile( $this->file );
 			return; // nothing else to do
 		// Showing or confirming an account request
 		} elseif ( $this->acrID ) {
+			# Load areas user plans to be active in...
+			$this->reqAreas = $this->reqAreaSet = array();
+			foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
+				$formName = "wpArea-" . htmlspecialchars( str_replace(' ','_', $name ) );
+				$this->reqAreas[$formName] = $request->getInt( $formName, -1 );
+				# Make a simple list of interests
+				if ( $this->reqAreas[$formName] > 0 ) {
+					$this->reqAreaSet[] = $name;
+				}
+			}
 			if ( $request->wasPosted() ) {
 				# For renaming to alot for collisions with other local requests
 				# that were added to some global $wgAuth system first.
@@ -299,31 +291,30 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		$form .= '</table></fieldset>';
 
-		if( wfMsgForContent( 'requestaccount-areas' ) ) {
+		$userAreas = ConfirmAccount::getUserAreaConfig();
+		if ( count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-areas') . '</legend>';
 
-			$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
 			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
 			$count = 0;
-			foreach( $areas as $area ) {
-				$set = explode("|",$area,3);
-				if( $set[0] && isset($set[1]) ) {
-					$count++;
-					if( $count > 5 ) {
-						$form .= "</tr><tr valign='top'>";
-						$count = 1;
-					}
-					$formName = "wpArea-" . htmlspecialchars(str_replace(' ','_',$set[0]));
-					if( isset($set[1]) ) {
-						$pg = Linker::link( Title::newFromText( $set[1] ), wfMsgHtml('requestaccount-info'), array(), array(), "known" );
-					} else {
-						$pg = '';
-					}
-
-					$form .= "<td>".Xml::checkLabel( $set[0], $formName, $formName, $this->reqAreas[$formName] > 0 )." {$pg}</td>\n";
+			foreach ( $userAreas as $name => $conf ) {
+				$count++;
+				if ( $count > 5 ) {
+					$form .= "</tr><tr valign='top'>";
+					$count = 1;
 				}
+				$formName = "wpArea-" . htmlspecialchars( str_replace(' ','_', $name ) );
+				if ( $conf['project'] != '' ) {
+					$pg = Linker::link( Title::newFromText( $conf['project'] ),
+						wfMsgHtml('requestaccount-info'), array(), array(), "known" );
+				} else {
+					$pg = '';
+				}
+				$form .= "<td>" .
+					Xml::checkLabel( $name, $formName, $formName, $this->reqAreas[$formName] > 0 ) .
+					" {$pg}</td>\n";
 			}
 			$form .= "</tr></table></div>";
 			$form .= '</fieldset>';
@@ -666,8 +657,8 @@ class ConfirmAccountsPage extends SpecialPage {
 
 			# Start up the user's (presumedly brand new) userpages
 			# Will not append, so previous content will be blanked
-			global $wgMakeUserPageFroreqBio, $wgAutoUserBioText;
-			if( $wgMakeUserPageFroreqBio ) {
+			global $wgMakeUserPageFromBio, $wgAutoUserBioText;
+			if( $wgMakeUserPageFromBio ) {
 				$usertitle = $user->getUserPage();
 				$userpage = new Article( $usertitle );
 
@@ -675,22 +666,18 @@ class ConfirmAccountsPage extends SpecialPage {
 				$body = $autotext ? "{$this->reqBio}\n\n{$autotext}" : $this->reqBio;
 				$body = $grouptext ? "{$body}\n\n{$grouptext}" : $body;
 
-				# Add any interest categories
-				if( wfMsgForContent( 'requestaccount-areas' ) ) {
-					$areas = explode("\n*","\n".wfMsg('requestaccount-areas'));
-					foreach( $areas as $line ) {
-						$set = explode("|",$line);
-						//$name = str_replace("_"," ",$set[0]);
-						if( in_array($set[0],$this->reqAreaSet) ) {
-							# General userpage text for anyone with this interest
-							if( isset($set[2]) ) {
-								$body .= $set[2];
-							}
-							# Message for users with this interested with the given account type
-							# MW: message of format <name>|<wiki page>|<anyone>|<group0>|<group1>...
-							if( isset($set[3+$this->reqType]) && $set[3+$this->reqType] ) {
-								$body .= $set[3+$this->reqType];
-							}
+				# Add any areas of interest categories...
+				foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
+					if ( in_array( $name, $this->reqAreaSet ) ) {
+						# General userpage text for anyone with this interest
+						if ( $conf['userText'] != '' ) {
+							$body .= $conf['userText'];
+						}
+						# Message for users with this interested with the given account type
+						if ( isset( $conf['grpUserText'][$this->reqType] )
+							&& $conf['grpUserText'][$this->reqType] != '' )
+						{
+							$body .= $conf['grpUserText'];
 						}
 					}
 				}
@@ -698,7 +685,11 @@ class ConfirmAccountsPage extends SpecialPage {
 				# Set sortkey and use it on bio
 				global $wgConfirmAccountSortkey, $wgContLang;
 				if( !empty($wgConfirmAccountSortkey) ) {
-					$sortKey = preg_replace($wgConfirmAccountSortkey[0],$wgConfirmAccountSortkey[1],$usertitle->getText());
+					$sortKey = preg_replace(
+						$wgConfirmAccountSortkey[0],
+						$wgConfirmAccountSortkey[1],
+						$usertitle->getText()
+					);
 					$body .= "\n{{DEFAULTSORT:{$sortKey}}}";
 					# Clean up any other categories...
 					$catNS = $wgContLang->getNSText(NS_CATEGORY);
