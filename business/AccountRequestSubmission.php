@@ -60,13 +60,14 @@ class AccountRequestSubmission {
 	 */
 	public function submit( IContextSource $context ) {
 		global $wgAuth, $wgAccountRequestThrottle, $wgMemc, $wgContLang;
+		global $wgAccountRequestToS, $wgAccountRequestMinWords;
 		$reqUser = $this->requester;
 
 		# Now create a dummy user ($u) and check if it is valid
 		if ( $this->userName === '' ) {
 			return array( 'accountreq_no_name', wfMsgHtml( 'noname' ) );
 		}
-		$u = User::newFromName( $name, 'creatable' );
+		$u = User::newFromName( $this->userName, 'creatable' );
 		if ( !$u ) {
 			return array( 'accountreq_invalid_name', wfMsgHtml( 'noname' ) );
 		}
@@ -80,19 +81,7 @@ class AccountRequestSubmission {
 				);
 			}
 		}
-		# Check if already in use
-		if ( 0 != $u->idForName() || $wgAuth->userExists( $u->getName() ) ) {
-			return array( 'accountreq_username_exists', wfMsgHtml( 'userexists' ) );
-		}
-		# Check pending accounts for name use
-		$dbw = wfGetDB( DB_MASTER );
-		$dup = $dbw->selectField( 'account_requests', '1',
-			array( 'acr_name' => $u->getName() ), __METHOD__ );
-		if ( $dup ) {
-			return array( 'accountreq_username_pending', wfMsgHtml( 'requestaccount-inuse' ) );
-		}
 		# Make sure user agrees to policy here
-		global $wgAccountRequestToS;
 		if ( $wgAccountRequestToS && !$this->tosAccepted ) {
 			return array( 'acct_request_skipped_tos', wfMsgHtml( 'requestaccount-agree' ) );
 		}
@@ -101,23 +90,12 @@ class AccountRequestSubmission {
 			return array( 'acct_request_invalid_email', wfMsgHtml( 'invalidemailaddress' ) );
 		}
 		# Check if biography is long enough
-		global $wgAccountRequestMinWords;
 		if ( str_word_count( $this->bio ) < $wgAccountRequestMinWords ) {
 			return array( 'acct_request_short_bio',
 				wfMsgExt( 'requestaccount-tooshort', 'parsemag',
 					$wgContLang->formatNum( $wgAccountRequestMinWords ) )
 			);
 		}
-		# Set some additional data so the AbortNewAccount hook can be
-		# used for more than just username validation
-		$u->setEmail( $this->email );
-		# Check if someone else has an account request with the same email
-		$dup = $dbw->selectField( 'account_requests', '1',
-			array( 'acr_email' => $u->getEmail() ), __METHOD__ );
-		if ( $dup ) {
-			return array( 'acct_request_email_exists', wfMsgHtml( 'requestaccount-emaildup' ) );
-		}
-		$u->setRealName( $this->realName );
 		# Per security reasons, file dir cannot be pulled from client,
 		# so ask them to resubmit it then...
 		global $wgAllowAccountRequestFiles, $wgAccountRequestExtraInfo;
@@ -133,35 +111,63 @@ class AccountRequestSubmission {
 				return array( false, wfMsgHtml( 'requestaccount-resub' ) );
 			}
 		}
+		# Check if already in use
+		if ( 0 != $u->idForName() || $wgAuth->userExists( $u->getName() ) ) {
+			return array( 'accountreq_username_exists', wfMsgHtml( 'userexists' ) );
+		}
+		# Set email and real name
+		$u->setEmail( $this->email );
+		$u->setRealName( $this->realName );
+
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->begin(); // ready to acquire locks
+		# Check pending accounts for name use
+		if ( !UserAccountRequest::acquireUsername( $u->getName() ) ) {
+			$dbw->rollback();
+			return array( 'accountreq_username_pending', wfMsgHtml( 'requestaccount-inuse' ) );
+		}
+		# Check if someone else has an account request with the same email
+		if ( !UserAccountRequest::acquireEmail( $u->getEmail() ) ) {
+			$dbw->rollback();
+			return array( 'acct_request_email_exists', wfMsgHtml( 'requestaccount-emaildup' ) );
+		}
 		# Process upload...
 		if ( $allowFiles && $this->attachmentSrcName ) {
+			global $wgAccountRequestExts, $wgConfirmAccountFSRepos;
+
 			$ext = explode( '.', $this->attachmentSrcName );
 			$finalExt = $ext[count( $ext ) - 1];
 			# File must have size.
 			if ( trim( $this->attachmentSrcName ) == '' || empty( $this->attachmentSize ) ) {
 				$this->attachmentPrevName = '';
+				$dbw->rollback();
 				return array( 'acct_request_empty_file', wfMsgHtml( 'emptyfile' ) );
 			}
 			# Look at the contents of the file; if we can recognize the
-		 	# type but it's corrupt or data of the wrong type, we should
-		 	# probably not accept it.
-		 	global $wgAccountRequestExts;
-		 	if ( !in_array( $finalExt, $wgAccountRequestExts ) ) {
-		 		$this->attachmentPrevName = '';
+			# type but it's corrupt or data of the wrong type, we should
+			# probably not accept it.
+			if ( !in_array( $finalExt, $wgAccountRequestExts ) ) {
+				$this->attachmentPrevName = '';
+				$dbw->rollback();
 				return array( 'acct_request_bad_file_ext', wfMsgHtml( 'requestaccount-exts' ) );
-		 	}
+			}
 			$veri = ConfirmAccount::verifyAttachment( $this->attachmentTempPath, $finalExt );
 			if ( !$veri->isGood() ) {
 				$this->attachmentPrevName = '';
-				return array( 'acct_request_corrupt_file', wfMsgHtml( 'uploadcorrupt' ) );
+				$dbw->rollback();
+				return array( 'acct_request_corrupt_file', wfMsgHtml( 'verification-error' ) );
 			}
 			# Start a transaction, move file from temp to account request directory.
-			global $wgConfirmAccountFSRepos;
 			$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 			$key = sha1_file( $this->attachmentTempPath ) . '.' . $finalExt;
 			$pathRel = $key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
 			$triplet = array( $this->attachmentTempPath, 'public', $pathRel );
-			$repo->storeBatch( array($triplet) ); // save!
+			$status = $repo->storeBatch( array( $triplet ), FSRepo::OVERWRITE_SAME ); // save!
+			if ( !$status->isOk() ) {
+				$dbw->rollback();
+				return array( 'acct_request_file_store_error',
+					wfMsgHtml( 'filecopyerror', $this->attachmentTempPath, $pathRel ) );
+			}
 		}
 		$expires = null; // passed by reference
 		$token = ConfirmAccount::getConfirmationToken( $u, $expires );
@@ -186,24 +192,26 @@ class AccountRequestSubmission {
 			'email_token_expires' => $expires,
 			'ip' 			=> $this->ip,
 		) );
-		$dbw->begin();
 		$req->insertOn();
 		# Send confirmation, required!
-		$result = ConfirmAccount::sendConfirmationMail( $u, $ip, $token, $expires );
+		$result = ConfirmAccount::sendConfirmationMail( $u, $this->ip, $token, $expires );
 		if ( !$result->isOK() ) {
-			$dbw->rollback(); // Nevermind
+			$dbw->rollback(); // nevermind
+			if ( isset( $repo ) && isset( $pathRel ) ) { // remove attachment
+				$repo->cleanupBatch( array( array( 'public', $pathRel ) ) );
+			}
 			return array( 'acct_request_mail_failed',
 				wfMsg( 'mailerror', $context->getOutput()->parse( $result->getWikiText() ) ) );
 		}
 		$dbw->commit();
+
 		# Clear cache for notice of how many account requests there are
 		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
 		$wgMemc->delete( $key );
 		# No request spamming...
-		# BC: check if isPingLimitable() exists
 		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', $ip );
-            $value = $wgMemc->incr( $key );
+			$value = $wgMemc->incr( $key );
 			if ( !$value ) {
 				$wgMemc->set( $key, 1, 86400 );
 			}

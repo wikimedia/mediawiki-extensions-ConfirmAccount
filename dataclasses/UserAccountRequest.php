@@ -248,6 +248,7 @@ class UserAccountRequest {
 	}
 
 	/**
+	 * Try to insert the request into the database
 	 * @return int
 	 */
 	public function insertOn() {
@@ -300,6 +301,34 @@ class UserAccountRequest {
 		$dbw->delete( 'account_requests', array( 'acr_id' => $this->id ), __METHOD__ );
 
 		return ( $dbw->affectedRows() > 0 );
+	}
+
+	/**
+	 * Try to acquire a username in the request queue for insertion
+	 * @return bool
+	 */
+	public static function acquireUsername( $name ) {
+		$dbw = wfGetDB( DB_MASTER );
+		$conds = array( 'acr_name' => $name );
+		if ( $dbw->selectField( 'account_requests', '1', $conds, __METHOD__ ) ) {
+			return false; // already in use
+		}
+		return !$dbw->selectField( 'account_requests', '1',
+			$conds, __METHOD__, array( 'FOR UPDATE' ) ); // acquire LOCK
+	}
+
+	/**
+	 * Try to acquire a e-mail address in the request queue for insertion
+	 * @return bool
+	 */
+	public static function acquireEmail( $email ) {
+		$dbw = wfGetDB( DB_MASTER );
+		$conds = array( 'acr_email' => $email );
+		if ( $dbw->selectField( 'account_requests', '1', $conds, __METHOD__ ) ) {
+			return false; // already in use
+		}
+		return !$dbw->selectField( 'account_requests', '1',
+			$conds, __METHOD__, array( 'FOR UPDATE' ) ); // acquire LOCK
 	}
 
 	/**

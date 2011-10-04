@@ -236,6 +236,10 @@ class RequestAccountPage extends SpecialPage {
 			$this->showForm( wfMsgHtml( 'noname' ) );
 			return;
 		}
+		# Set some additional data so the AbortNewAccount hook can be
+		# used for more than just username validation
+		$u->setEmail( $this->mEmail );
+		$u->setRealName( $this->mRealName );
 		# FIXME: Hack! If we don't want captchas for requests, temporarily turn it off!
 		global $wgConfirmAccountCaptchas, $wgCaptchaTriggers;
 		if ( !$wgConfirmAccountCaptchas && isset( $wgCaptchaTriggers ) ) {
@@ -340,23 +344,23 @@ class RequestAccountPage extends SpecialPage {
 			}
 			$out->addWikiMsg( 'request-account-econf' );
 			$out->returnToMain();
-			return;
-		}
-		# Maybe the user confirmed after account was created...
-		$user = User::newFromConfirmationCode( $code );
-		if ( is_object( $user ) ) {
-			if ( $user->confirmEmail() ) {
-				$message = $reqUser->isLoggedIn() ? 'confirmemail_loggedin' : 'confirmemail_success';
-				$out->addWikiMsg( $message );
-				if ( !$reqUser->isLoggedIn() ) {
-					$title = SpecialPage::getTitleFor( 'Userlogin' );
-					$out->returnToMain( true, $title->getPrefixedUrl() );
+		} else {
+			# Maybe the user confirmed after account was created...
+			$user = User::newFromConfirmationCode( $code );
+			if ( is_object( $user ) ) {
+				if ( $user->confirmEmail() ) {
+					$message = $reqUser->isLoggedIn() ? 'confirmemail_loggedin' : 'confirmemail_success';
+					$out->addWikiMsg( $message );
+					if ( !$reqUser->isLoggedIn() ) {
+						$title = SpecialPage::getTitleFor( 'Userlogin' );
+						$out->returnToMain( true, $title->getPrefixedUrl() );
+					}
+				} else {
+					$out->addWikiMsg( 'confirmemail_error' );
 				}
 			} else {
-				$out->addWikiMsg( 'confirmemail_error' );
+				$out->addWikiMsg( 'confirmemail_invalid' );
 			}
-		} else {
-			$out->addWikiMsg( 'confirmemail_invalid' );
 		}
 	}
 }
