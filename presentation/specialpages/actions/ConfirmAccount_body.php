@@ -480,6 +480,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				if( !$result->isOk() ) {
 					$error = wfMsg( 'mailerror', $out->parse( $result->getWikiText() ) );
 					$this->showAccountConfirmForm( $error );
+					$dbw->rollback();
 					return false;
 				}
 			}

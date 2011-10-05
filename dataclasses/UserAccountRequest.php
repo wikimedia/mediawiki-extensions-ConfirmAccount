@@ -109,6 +109,22 @@ class UserAccountRequest {
 	}
 
 	/**
+	 * @param $id int
+	 * @param $from string|null 'master' to use DB master
+	 * @return UserAccountRequest
+	 */
+	public static function newFromId( $id, $from = null ) {
+		$db = ( $master == 'dbmaster' )
+			? wfGetDB( DB_MASTER )
+			: wfGetDB( DB_SLAVE );
+		$row = $db->selectRow( 'account_requests', array( 'acr_id' => $id ), __METHOD__ );
+		if ( !$row ) {
+			return null;
+		}
+		return self::newFromRow( $row );
+	}
+
+	/**
 	 * @return int
 	 */
 	public function getId() {

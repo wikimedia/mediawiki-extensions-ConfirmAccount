@@ -42,6 +42,9 @@ class AccountRequestSubmission {
 		$this->attachmentTempPath = $params['attachmentTempPath'];
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getAttachmentDidNotForget() {
 		return $this->attachmentDidNotForget;
 	}
