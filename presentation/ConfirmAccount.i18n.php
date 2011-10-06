@@ -461,6 +461,7 @@ $messages['an'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Ciphers
  * @author Meno25
  * @author OsamaK
  * @author ترجمان05
@@ -487,6 +488,7 @@ $messages['ar'] = array(
 	'requestaccount-ext-text' => 'المعلومات التالية سرية وسيتم استخدامها فقط لهذا الطلب.
 ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة في تأكيد الهوية.',
 	'requestaccount-bio-text' => 'حاول تضمين أي شهادات متعلقة في سيرتك الذاتية بالأسفل.',
+	'requestaccount-bio-text-i' => "''' سيتم تعيين السيرة الذاتية الخاصة بك كمحتوى مبدئي لصفحة المستخدم الخاصة بك.''' رجاء الانتباه إلى أنك لا تمانع من نشر معلومات من هذا القبيل.",
 	'requestaccount-real' => 'الاسم الحقيقي:',
 	'requestaccount-same' => '(مثل الاسم الحقيقي)',
 	'requestaccount-email' => 'عنوان البريد الإلكتروني:',
