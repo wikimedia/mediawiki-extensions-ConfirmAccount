@@ -4,31 +4,6 @@
  */
 class ConfirmAccountUIHooks {
 	/**
-	 * Register ConfirmAccount special pages as needed.
-	 * Also sets $wgSpecialPages just to be consistent.
-	 *
-	 * @param $list array
-	 *
-	 * @return true
-	 */
-	public static function defineSpecialPages( array &$list ) {
-		global $wgSpecialPages, $wgSpecialPageGroups, $wgConfirmAccountSaveInfo;
-
-		$list['RequestAccount'] = $wgSpecialPages['RequestAccount'] = 'RequestAccountPage';
-		$wgSpecialPageGroups['RequestAccount'] = 'login';
-
-		$list['ConfirmAccounts'] = $wgSpecialPages['ConfirmAccounts'] = 'ConfirmAccountsPage';
-		$wgSpecialPageGroups['ConfirmAccounts'] = 'users';
-
-		if ( $wgConfirmAccountSaveInfo ) {
-			$list['UserCredentials'] = $wgSpecialPages['UserCredentials'] = 'UserCredentialsPage';
-			$wgSpecialPageGroups['UserCredentials'] = 'users';
-		}
-
-		return true;
-	}
-
-	/**
 	 * @param $template
 	 * @return bool
 	 */
