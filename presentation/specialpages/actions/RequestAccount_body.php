@@ -15,21 +15,20 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgUseRealNamesOnly,
-			$wgAccountRequestToS, $wgAccountRequestExtraInfo, $wgAccountRequestTypes;
-		# If a user cannot make accounts, don't let them request them either
-		global $wgAccountRequestWhileBlocked;
+		global $wgUseRealNamesOnly, $wgAccountRequestToS, $wgAccountRequestExtraInfo;
+		global $wgAccountRequestTypes, $wgAccountRequestWhileBlocked;
 
 		$reqUser = $this->getUser();
 		$request = $this->getRequest();
-		$out = $this->getOutput();
-		if ( !$wgAccountRequestWhileBlocked && $reqUser->isBlockedFromCreateAccount() ) {
-			$out->blockedPage();
-			return;
+
+		# If a user cannot make accounts, don't let them request them either
+		if ( !$wgAccountRequestWhileBlocked ) {
+			if ( ( $block = $reqUser->isBlockedFromCreateAccount() ) ) {
+				throw new UserBlockedError( $block );
+			}
 		}
 		if ( wfReadOnly() ) {
-			$out->readOnlyPage();
-			return;
+			throw new ReadOnlyError();
 		}
 
 		$this->setHeaders();
@@ -52,7 +51,8 @@ class RequestAccountPage extends SpecialPage {
 		$this->mToS = $wgAccountRequestToS ?
 			$request->getBool( 'wpToS' ) : false;
 		$this->mType = $request->getInt( 'wpType' );
-		$this->mType = isset( $wgAccountRequestTypes[$this->mType] ) ? $this->mType : 0;
+		$this->mType = isset( $wgAccountRequestTypes[$this->mType] ) ?
+			$this->mType : 0;
 		# Load areas user plans to be active in...
 		$this->mAreas = $this->mAreaSet = array();
 		foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
@@ -75,7 +75,8 @@ class RequestAccountPage extends SpecialPage {
 		} else {
 			$this->showForm();
 		}
-		$out->addModules( 'ext.confirmAccount' ); // CSS
+
+		$this->getOutput()->addModules( 'ext.confirmAccount' ); // CSS
 	}
 
 	protected function showForm( $msg = '', $forgotFile = 0 ) {
