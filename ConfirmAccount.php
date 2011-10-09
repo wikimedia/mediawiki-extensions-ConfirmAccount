@@ -82,7 +82,7 @@ ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages, $wgSpecialPageGroups
 # JS/CSS modules and message bundles used by JS scripts
 ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
 
-# ####### EVENT-HANDLER FUNCTIONS #########
+# ####### HOOK CALLBACK FUNCTIONS #########
 
 # UI-related hook handlers
 ConfirmAccountUISetup::defineHookHandlers( $wgHooks );
@@ -93,4 +93,4 @@ $wgHooks['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPend
 # Schema changes
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
 
-# ####### END HOOK TRIGGERED FUNCTIONS #########
+# ####### END HOOK CALLBACK FUNCTIONS #########

@@ -66,9 +66,9 @@ class ConfirmAccountUIHooks {
 		}
 		$count = ConfirmAccount::getOpenEmailConfirmedCount( '*' );
 		if ( $count > 0 ) {
-			$out->prependHtml(
+			$out->prependHtml( // parsemag for PLURAL
 				'<div id="mw-confirmaccount-msg" class="plainlinks mw-confirmaccount-bar">' .
-				$out->parse( wfMsg( 'confirmaccount-newrequests', $count ), false ) .
+				$out->parse( wfMsgExt( 'confirmaccount-newrequests', 'parsemag', $count ), false ) .
 				'</div>'
 			);
 
