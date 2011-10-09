@@ -4,6 +4,23 @@
  */
 class ConfirmAccountUISetup {
 	/**
+	 * Register ConfirmAccount hooks.
+	 * @param $hooks Array $wgHooks (assoc array of hooks and handlers)
+	 * @return void
+	 */
+	public static function defineHookHandlers( &$hooks ) {
+		# Make sure "login / create account" notice still as "create account"
+		$hooks['PersonalUrls'][] = 'ConfirmAccountUIHooks::setRequestLoginLinks';
+		# Add notice of where to request an account at UserLogin
+		$hooks['UserCreateForm'][] = 'ConfirmAccountUIHooks::addRequestLoginText';
+		$hooks['UserLoginForm'][] = 'ConfirmAccountUIHooks::addRequestLoginText';
+		# Status header like "new messages" bar
+		$hooks['BeforePageDisplay'][] = 'ConfirmAccountUIHooks::confirmAccountsNotice';
+		# Register admin pages for AdminLinks extension.
+		$hooks['AdminLinks'][] = 'ConfirmAccountUIHooks::confirmAccountAdminLinks';
+	}
+
+	/**
 	 * Register ConfirmAccount special pages as needed.
 	 * @param $pages Array $wgSpecialPages (list of special pages)
 	 * @param $groups Array $wgSpecialPageGroups (assoc array of special page groups)

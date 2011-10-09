@@ -82,21 +82,15 @@ ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages, $wgSpecialPageGroups
 # JS/CSS modules and message bundles used by JS scripts
 ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
 
-# ####### EVENT-HANDLER FUNCTIONS  #########
+# ####### EVENT-HANDLER FUNCTIONS #########
 
-# Make sure "login / create account" notice still as "create account"
-$wgHooks['PersonalUrls'][] = 'ConfirmAccountUIHooks::setRequestLoginLinks';
-# Add notice of where to request an account at UserLogin
-$wgHooks['UserCreateForm'][] = 'ConfirmAccountUIHooks::addRequestLoginText';
-$wgHooks['UserLoginForm'][] = 'ConfirmAccountUIHooks::addRequestLoginText';
-# Check for collisions
+# UI-related hook handlers
+ConfirmAccountUISetup::defineHookHandlers( $wgHooks );
+
+# Check for account name collisions
 $wgHooks['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPending';
-# Status header like "new messages" bar
-$wgHooks['BeforePageDisplay'][] = 'ConfirmAccountUIHooks::confirmAccountsNotice';
 
-# Register admin pages for AdminLinks extension.
-$wgHooks['AdminLinks'][] = 'ConfirmAccountUIHooks::confirmAccountAdminLinks';
-
+# Schema changes
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
 
-# ####### END HOOK TRIGGERED FUNCTIONS  #########
+# ####### END HOOK TRIGGERED FUNCTIONS #########
