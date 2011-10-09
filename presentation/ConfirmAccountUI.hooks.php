@@ -61,7 +61,7 @@ class ConfirmAccountUIHooks {
 		}
 		# Only show on some special pages
 		$title = $context->getTitle();
-		if ( !$title->isSpecial( 'RecentChanges' ) && !$title->isSpecial( 'Watchlist' ) ) {
+		if ( !$title->isSpecial( 'Recentchanges' ) && !$title->isSpecial( 'Watchlist' ) ) {
 			return true;
 		}
 		$count = ConfirmAccount::getOpenEmailConfirmedCount( '*' );
