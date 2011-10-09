@@ -104,7 +104,7 @@ class RequestAccountPage extends SpecialPage {
 		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
 			'action' => $this->getTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
 		$form .= '<fieldset><legend>' . wfMsgHtml( 'requestaccount-leg-user' ) . '</legend>';
-		$form .= wfMsgExt( 'requestaccount-acc-text', array( 'parse' ) ) . "\n";
+		$form .= wfMsgExt( 'requestaccount-acc-text', 'parse' ) . "\n";
 		$form .= '<table cellpadding=\'4\'>';
 		if ( $wgUseRealNamesOnly ) {
 			$form .= "<tr><td>" . wfMsgHtml( 'username' ) . "</td>";
@@ -132,7 +132,7 @@ class RequestAccountPage extends SpecialPage {
 		if ( count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-areas' ) . '</legend>';
-			$form .=  wfMsgExt( 'requestaccount-areas-text', array( 'parse' ) ) . "\n";
+			$form .=  wfMsgExt( 'requestaccount-areas-text', 'parse' ) . "\n";
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
 			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
@@ -178,7 +178,7 @@ class RequestAccountPage extends SpecialPage {
 		if ( $wgAccountRequestExtraInfo ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-other' ) . '</legend>';
-			$form .= wfMsgExt( 'requestaccount-ext-text', array( 'parse' ) ) . "\n";
+			$form .= wfMsgExt( 'requestaccount-ext-text', 'parse' ) . "\n";
 			if ( $wgAllowAccountRequestFiles ) {
 				$form .= "<p>" . wfMsgHtml( 'requestaccount-attach' ) . " ";
 				$form .= Xml::input( 'wpUploadFile', 35, '',
@@ -259,22 +259,22 @@ class RequestAccountPage extends SpecialPage {
 		$submission = new AccountRequestSubmission(
 			$this->getUser(),
 			array(
-				'userName'					=> $name,
-				'realName'					=> $this->mRealName,
-				'tosAccepted'				=> $this->mToS,
-				'email'						=> $this->mEmail,
-				'bio'						=> $this->mBio,
-				'notes'						=> $this->mNotes,
-				'urls'						=> $this->mUrls,
-				'type'						=> $this->mType,
-				'areas'						=> $this->mAreaSet,
-				'registration'				=> wfTimestampNow(),
-				'ip'						=> $this->getRequest()->getIP(),
-				'attachmentPrevName'		=> $this->mPrevAttachment,
-				'attachmentSrcName'			=> $this->mSrcName,
-				'attachmentDidNotForget'	=> $this->mForgotAttachment, // confusing name :)
-				'attachmentSize'			=> $this->mFileSize,
-				'attachmentTempPath'		=> $this->mTempPath
+				'userName'                  => $name,
+				'realName'                  => $this->mRealName,
+				'tosAccepted'               => $this->mToS,
+				'email'                     => $this->mEmail,
+				'bio'                       => $this->mBio,
+				'notes'                     => $this->mNotes,
+				'urls'                      => $this->mUrls,
+				'type'                      => $this->mType,
+				'areas'                     => $this->mAreaSet,
+				'registration'              => wfTimestampNow(),
+				'ip'                        => $this->getRequest()->getIP(),
+				'attachmentPrevName'        => $this->mPrevAttachment,
+				'attachmentSrcName'         => $this->mSrcName,
+				'attachmentDidNotForget'    => $this->mForgotAttachment, // confusing name :)
+				'attachmentSize'            => $this->mFileSize,
+				'attachmentTempPath'        => $this->mTempPath
 			)
 		);
 
@@ -317,7 +317,7 @@ class RequestAccountPage extends SpecialPage {
 	 * @return void
 	 */
 	protected function confirmEmailToken( $code ) {
-		global $wgConfirmAccountContact, $wgPasswordSender;
+		global $wgConfirmAccountContact, $wgPasswordSender, $wgPasswordSenderName;
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 		# Confirm if this token is in the pending requests
@@ -328,7 +328,7 @@ class RequestAccountPage extends SpecialPage {
 			# Send mail to admin after e-mail has been confirmed
 			if ( $wgConfirmAccountContact != '' ) {
 				$target = new MailAddress( $wgConfirmAccountContact );
-				$source = new MailAddress( $wgPasswordSender );
+				$source = new MailAddress( $wgPasswordSender, $wgPasswordSenderName );
 				$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
 				$subject = wfMsgForContent( 'requestaccount-email-subj-admin' );
 				$body = wfMsgForContent(
