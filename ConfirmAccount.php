@@ -92,7 +92,7 @@ $wgHooks['UserLoginForm'][] = 'ConfirmAccountUIHooks::addRequestLoginText';
 # Check for collisions
 $wgHooks['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPending';
 # Status header like "new messages" bar
-$wgHooks['SiteNoticeAfter'][] = 'ConfirmAccountUIHooks::confirmAccountsNotice';
+$wgHooks['BeforePageDisplay'][] = 'ConfirmAccountUIHooks::confirmAccountsNotice';
 
 # Register admin pages for AdminLinks extension.
 $wgHooks['AdminLinks'][] = 'ConfirmAccountUIHooks::confirmAccountAdminLinks';

@@ -919,7 +919,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		}
 		$time = $this->getLang()->timeanddate( wfTimestamp(TS_MW, $row->acr_registration), true );
 
-		$r = "<li class='mw-confirmaccount-time-{$this->queueType}'>";
+		$r = "<li class='mw-confirmaccount-type-{$this->queueType}'>";
 
 		$r .= $time." (<strong>{$link}</strong>)";
 		# Auto-rejected accounts have a user ID of zero

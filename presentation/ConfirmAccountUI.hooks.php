@@ -48,15 +48,14 @@ class ConfirmAccountUIHooks {
 	}
 
 	/**
-	 * FIXME: don't just tack on to general site notice
-	 *
+	 * Add "x email-confirmed open account requests" notice
 	 * @param $notice
 	 * @return bool
 	 */
-	public static function confirmAccountsNotice( &$notice ) {
+	public static function confirmAccountsNotice( OutputPage &$out, Skin &$skin ) {
 		global $wgConfirmAccountNotice;
 
-		$context = RequestContext::getMain();
+		$context = $out->getContext();
 		if ( !$wgConfirmAccountNotice || !$context->getUser()->isAllowed( 'confirmaccount' ) ) {
 			return true;
 		}
@@ -67,11 +66,13 @@ class ConfirmAccountUIHooks {
 		}
 		$count = ConfirmAccount::getOpenEmailConfirmedCount( '*' );
 		if ( $count > 0 ) {
-			$message = wfMsgExt( 'confirmaccount-newrequests', 'parsemag', $count );
-			$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
-				$context->getOutput()->parse( $message ) . '</div>';
+			$out->prependHtml(
+				'<div id="mw-confirmaccount-msg" class="plainlinks mw-confirmaccount-bar">' .
+				$out->parse( wfMsg( 'confirmaccount-newrequests', $count ), false ) .
+				'</div>'
+			);
 
-			$context->getOutput()->addModules( 'ext.confirmAccount' ); // CSS
+			$out->addModules( 'ext.confirmAccount' ); // CSS
 		}
 		return true;
 	}

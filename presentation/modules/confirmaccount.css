@@ -1,14 +1,12 @@
+/* RC pending account request notice */
 .mw-confirmaccount-bar {
+	padding: 3px;
+	margin: 5px;
+	border: 1px solid #990000;
 	background-color: #f9f9f9;
-	padding: 0px;
-	font-size: 80%;
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: center;
-	float: right;
 }
 
-.mw-confirmaccount-time-0 {
+.mw-confirmaccount-type-0 {
 	background-color: #f0fff0;
 }
 
@@ -16,7 +14,7 @@
 	background-color: #f9f9f9;
 }
 
-.mw-confirmaccount-time-1 {
+.mw-confirmaccount-type-1 {
 	background-color: #f0ffff;
 }
 

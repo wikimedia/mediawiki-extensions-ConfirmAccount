@@ -80,7 +80,7 @@ You cannot make any more requests.",
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',
 
 	# Site message for admins
-	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open e-mail-confirmed [[Special:ConfirmAccounts|account {{PLURAL:$1|request|requests}}]] pending',
+	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open e-mail-confirmed [[Special:ConfirmAccounts|account {{PLURAL:$1|request|requests}}]] {{PLURAL:$1|is|are}} pending. \'\'\'Your attention is needed!\'\'\'',
 
 	# Confirm account page
 	'confirmaccounts'         => 'Confirm account requests',
