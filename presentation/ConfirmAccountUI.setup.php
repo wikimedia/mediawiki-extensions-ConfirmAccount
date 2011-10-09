@@ -32,7 +32,7 @@ class ConfirmAccountUISetup {
 	public static function defineResourceModules( &$modules ) {
 		$modules['ext.confirmAccount'] = array(
 			'styles'        => 'confirmaccount.css',
-			'localBasePath' => dirname( __FILE__ ) . '/presentation/modules',
+			'localBasePath' => dirname( __FILE__ ) . '/modules',
 			'remoteExtPath' => 'ConfirmAccount/presentation/modules',
 		);
 	}

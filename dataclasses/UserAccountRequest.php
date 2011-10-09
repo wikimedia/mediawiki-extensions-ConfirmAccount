@@ -110,14 +110,30 @@ class UserAccountRequest {
 
 	/**
 	 * @param $id int
-	 * @param $from string|null 'master' to use DB master
-	 * @return UserAccountRequest
+	 * @param $from string|null 'dbmaster' to use DB master
+	 * @return UserAccountRequest|null
 	 */
 	public static function newFromId( $id, $from = null ) {
 		$db = ( $master == 'dbmaster' )
 			? wfGetDB( DB_MASTER )
 			: wfGetDB( DB_SLAVE );
 		$row = $db->selectRow( 'account_requests', array( 'acr_id' => $id ), __METHOD__ );
+		if ( !$row ) {
+			return null;
+		}
+		return self::newFromRow( $row );
+	}
+
+	/**
+	 * @param $name string
+	 * @param $from string|null 'dbmaster' to use DB master
+	 * @return UserAccountRequest|null
+	 */
+	public static function newFromName( $name, $from = null ) {
+		$db = ( $master == 'dbmaster' )
+			? wfGetDB( DB_MASTER )
+			: wfGetDB( DB_SLAVE );
+		$row = $db->selectRow( 'account_requests', array( 'acr_name' => $name ), __METHOD__ );
 		if ( !$row ) {
 			return null;
 		}

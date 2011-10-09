@@ -209,8 +209,7 @@ class AccountRequestSubmission {
 		$dbw->commit();
 
 		# Clear cache for notice of how many account requests there are
-		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-		$wgMemc->delete( $key );
+		ConfirmAccount::clearAccountRequestCountCache();
 		# No request spamming...
 		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', $ip );

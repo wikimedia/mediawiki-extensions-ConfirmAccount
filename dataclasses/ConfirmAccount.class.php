@@ -40,9 +40,7 @@ class ConfirmAccount {
 			__METHOD__ );
 
 		# Clear cache for notice of how many account requests there are
-		global $wgMemc;
-		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-		$wgMemc->delete( $key );
+		self::clearAccountRequestCountCache();
 	}
 
 	/**
@@ -51,16 +49,13 @@ class ConfirmAccount {
 	 * @param sring $name
 	 */
 	public static function confirmEmail( $name ) {
-		global $wgMemc;
-
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->update( 'account_requests',
 			array( 'acr_email_authenticated' => $dbw->timestamp() ),
 			array( 'acr_name' => $name ),
 			__METHOD__ );
 		# Clear cache for notice of how many account requests there are
-		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-		$wgMemc->delete( $key );
+		self::clearAccountRequestCountCache();
 	}
 
 	/**
@@ -161,6 +156,49 @@ class ConfirmAccount {
 	}
 
 	/**
+	 * Get the number of open email-confirmed account requests for a request type
+	 * @param $type int|string A request type or '*' for all
+	 * @return int
+	 */
+	public static function getOpenEmailConfirmedCount( $type = '*' ) {
+		global $wgMemc;
+
+		# Check cached results
+		$key = wfMemcKey( 'confirmaccount', 'econfopencount', $type );
+		$count = $wgMemc->get( $key );
+		# Only show message if there are any such requests
+		if ( $count === false ) {
+			$conds = array(
+				'acr_deleted' => 0, // not rejected
+				'acr_held IS NULL', // nor held
+				'acr_email_authenticated IS NOT NULL' ); // email confirmed
+			if ( $type !== '*' ) {
+				$conds['acr_type'] = (int)$type;
+			}
+			$dbw = wfGetDB( DB_MASTER );
+			$count = (int)$dbw->selectField( 'account_requests', 'COUNT(*)', $conds, __METHOD__ );
+			# Cache results (invalidated on change )
+			$wgMemc->set( $key, $count, 3600 * 24 * 7 );
+		}
+		return $count;
+	}
+
+	/**
+	 * Clear account request cache
+	 * @return void
+	 */
+	public static function clearAccountRequestCountCache() {
+		global $wgAccountRequestTypes, $wgMemc;
+
+		$types = array_keys( $wgAccountRequestTypes );
+		$types[] = '*'; // "all" types count
+		foreach( $types as $type ) {
+			$key = wfMemcKey( 'confirmaccount', 'econfopencount', $type );
+			$wgMemc->delete( $key );
+		}
+	}
+
+	/**
 	 * Verifies that it's ok to include the uploaded file
 	 *
 	 * @param string $tmpfile the full path of the temporary file to verify
@@ -169,8 +207,8 @@ class ConfirmAccount {
 	 */
 	public static function verifyAttachment( $tmpfile, $extension ) {
 		global $wgVerifyMimeType, $wgMimeTypeBlacklist;
-		# magically determine mime type
-		$magic =& MimeMagic::singleton();
+
+		$magic =& MimeMagic::singleton(); // magically determine mime type
 		$mime = $magic->guessMimeType( $tmpfile, false );
 		# check mime type, if desired
 		if ( $wgVerifyMimeType ) {

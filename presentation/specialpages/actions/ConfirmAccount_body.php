@@ -488,9 +488,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$dbw->commit();
 
 			# Clear cache for notice of how many account requests there are
-			global $wgMemc;
-			$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-			$wgMemc->delete( $key );
+			ConfirmAccount::clearAccountRequestCountCache();
 
 			$this->showSuccess( $this->submitType );
 		} elseif( $this->submitType === 'accept' ) {
@@ -642,9 +640,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$user->addNewUserLogEntry();
 
 			# Clear cache for notice of how many account requests there are
-			global $wgMemc;
-			$memKey = wfMemcKey( 'confirmaccount', 'noticecount' );
-			$wgMemc->delete( $memKey );
+			ConfirmAccount::clearAccountRequestCountCache();
 
 			# Delete any attached file. Do not stop the whole process if this fails
 			if( $key ) {
@@ -766,9 +762,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$dbw->commit();
 
 			# Clear cache for notice of how many account requests there are
-			global $wgMemc;
-			$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-			$wgMemc->delete( $key );
+			ConfirmAccount::clearAccountRequestCountCache();
 
 			$this->showSuccess( $this->submitType );
 		} else {

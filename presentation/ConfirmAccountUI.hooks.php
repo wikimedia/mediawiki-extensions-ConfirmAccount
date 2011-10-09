@@ -8,11 +8,12 @@ class ConfirmAccountUIHooks {
 	 * @return bool
 	 */
 	public static function addRequestLoginText( &$template ) {
-		global $wgUser, $wgOut;
+		$context = RequestContext::getMain();
 		# Add a link to RequestAccount from UserLogin
-		if ( !$wgUser->isAllowed( 'createaccount' ) ) {
+		if ( !$context->getUser()->isAllowed( 'createaccount' ) ) {
 			$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', 'parse' ) );
-			$wgOut->addModules( 'ext.confirmAccount' ); // CSS
+
+			$context->getOutput()->addModules( 'ext.confirmAccount' ); // CSS
 		}
 		return true;
 	}
@@ -22,11 +23,11 @@ class ConfirmAccountUIHooks {
 	 * @param $title
 	 * @return bool
 	 */
-	public static function setRequestLoginLinks( &$personal_urls, &$title ) {
+	public static function setRequestLoginLinks( array &$personal_urls, &$title ) {
 		if ( isset( $personal_urls['anonlogin'] ) ) {
-			$personal_urls['anonlogin']['text'] = wfMsg('nav-login-createaccount');
-		} elseif ( isset($personal_urls['login'] ) ) {
-			$personal_urls['login']['text'] = wfMsg('nav-login-createaccount');
+			$personal_urls['anonlogin']['text'] = wfMsg( 'nav-login-createaccount' );
+		} elseif ( isset( $personal_urls['login'] ) ) {
+			$personal_urls['login']['text'] = wfMsg( 'nav-login-createaccount' );
 		}
 		return true;
 	}
@@ -39,11 +40,7 @@ class ConfirmAccountUIHooks {
 	public static function checkIfAccountNameIsPending( User $user, &$abortError ) {
 		# If an account is made with name X, and one is pending with name X
 		# we will have problems if the pending one is later confirmed
-		$dbw = wfGetDB( DB_MASTER );
-		$dup = $dbw->selectField( 'account_requests', '1',
-			array( 'acr_name' => $user->getName() ),
-			__METHOD__ );
-		if ( $dup ) {
+		if ( !UserAccountRequest::acquireUsername( $user->getName() ) ) {
 			$abortError = wfMsgHtml( 'requestaccount-inuse' );
 			return false;
 		}
@@ -51,54 +48,36 @@ class ConfirmAccountUIHooks {
 	}
 
 	/**
-	 * FIXME: don't just take on to general site notice
+	 * FIXME: don't just tack on to general site notice
 	 *
 	 * @param $notice
 	 * @return bool
 	 */
 	public static function confirmAccountsNotice( &$notice ) {
-		global $wgConfirmAccountNotice, $wgUser, $wgMemc, $wgOut;
-		if ( !$wgConfirmAccountNotice || !$wgUser->isAllowed( 'confirmaccount' ) ) {
+		global $wgConfirmAccountNotice;
+
+		$context = RequestContext::getMain();
+		if ( !$wgConfirmAccountNotice || !$context->getUser()->isAllowed( 'confirmaccount' ) ) {
 			return true;
 		}
 		# Only show on some special pages
-		$title = RequestContext::getMain()->getTitle();
-		if ( !$title->isSpecialPage() ) {
-			return true;
-		} elseif (
-			!$title->equals( SpecialPage::getTitleFor( 'Recentchanges' ) ) &&
-			!$title->equals( SpecialPage::getTitleFor( 'Watchlist' ) ) )
-		{
+		$title = $context->getTitle();
+		if ( !$title->isSpecial( 'RecentChanges' ) && !$title->isSpecial( 'Watchlist' ) ) {
 			return true;
 		}
-		# Check cached results
-		$key = wfMemcKey( 'confirmaccount', 'noticecount' );
-		$count = $wgMemc->get( $key );
-		# Only show message if there are any such requests
-		if ( !$count )  {
-			$dbw = wfGetDB( DB_MASTER );
-			$count = $dbw->selectField( 'account_requests', 'COUNT(*)',
-				array( 'acr_deleted' => 0,
-					'acr_held IS NULL',
-					'acr_email_authenticated IS NOT NULL' ),
-				__METHOD__ );
-			# Use '-' for zero, to avoid any confusion over key existence
-			if ( !$count ) {
-				$count = '-';
-			}
-			# Cache results
-			$wgMemc->set( $key, $count, 3600 * 24 * 7 );
-		}
-		if ( $count !== '-' ) {
-			$message = wfMsgExt( 'confirmaccount-newrequests', array( 'parsemag' ), $count );
+		$count = ConfirmAccount::getOpenEmailConfirmedCount( '*' );
+		if ( $count > 0 ) {
+			$message = wfMsgExt( 'confirmaccount-newrequests', 'parsemag', $count );
 			$notice .= '<div id="mw-confirmaccount-msg" class="mw-confirmaccount-bar">' .
-				$wgOut->parse( $message ) . '</div>';
-			$wgOut->addModules( 'ext.confirmAccount' ); // CSS
+				$context->getOutput()->parse( $message ) . '</div>';
+
+			$context->getOutput()->addModules( 'ext.confirmAccount' ); // CSS
 		}
 		return true;
 	}
 
 	/**
+	 * For AdminLinks extension
 	 * @param $admin_links_tree
 	 * @return bool
 	 */
