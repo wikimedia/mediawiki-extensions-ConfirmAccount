@@ -2066,7 +2066,7 @@ Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$2“.',
 	'acct_request_throttle_hit' => 'Du hast bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, du kannst momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
-	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag wartet]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge warten]]}} auf Bearbeitung.",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag wartet]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge warten]]}} auf Bearbeitung. '''Bitte kümmere dich darum.'''",
 	'confirmaccounts' => 'Benutzerkonto-Anträge bestätigen',
 	'confirmedit-desc' => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
 	'confirmaccount-maintext' => "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}'' zu bearbeiten.'''
@@ -2255,6 +2255,7 @@ Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
 Die E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen: „$2“.',
 	'acct_request_throttle_hit' => 'Sie haben bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, Sie können momentan keine weiteren beantragen.',
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, müssen Sie es '''[[Special:RequestAccount|beantragen]]'''.",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag wartet]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge warten]]}} auf Bearbeitung. '''Bitte kümmern Sie sich darum.'''",
 	'confirmaccount-maintext' => "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}'' zu bearbeiten.'''
 
 Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
@@ -4277,7 +4278,7 @@ $3
 	'acct_request_throttle_hit' => 'סליחה, אתם כבר ביקשתם {{PLURAL:$1|חשבון|$1 חשבונות}}.
 אי־אפשר לבקש עוד.',
 	'requestaccount-loginnotice' => "כדי לקבל חשבון משתמש, עליכם '''[[Special:RequestAccount|לבקש אחד כזה]]'''.",
-	'confirmaccount-newrequests' => "יש {{PLURAL:$1|[[Special:ConfirmAccounts|בקשה פתוחה ממתינה '''אחת''' לפתוח חשבון]], עם כתובת דואר אלקטרוני מאושרת שממתינה|'''$1''' [[Special:ConfirmAccounts|בקשות פתוחות לפתוח חשבונות]], עם כתובות דואר אלקטרוני מאושרות שממתינות}} לאישור",
+	'confirmaccount-newrequests' => "יש {{PLURAL:$1|[[Special:ConfirmAccounts|בקשה פתוחה ממתינה '''אחת''' לפתוח חשבון]], עם כתובת דואר אלקטרוני מאושרת שממתינה|'''$1''' [[Special:ConfirmAccounts|בקשות פתוחות לפתוח חשבונות]], עם כתובות דואר אלקטרוני מאושרות שממתינות}} לאישור. ''תשומת לבך נדרשת!''",
 	'confirmaccounts' => 'אישור בקשות חשבון',
 	'confirmedit-desc' => 'הענקת היכולת לביורוקרטים לאשר בקשות לחשבונות',
 	'confirmaccount-maintext' => "'''הדף הזה משמש לאישור בקשות ממתינות לפתוח חשבון באתר {{SITENAME}}'''.
@@ -5154,7 +5155,7 @@ Le adresse de e-mail ha essite confirmate. Tu pote confirmar le requesta hic: "$
 	'acct_request_throttle_hit' => 'Pardono, tu ha ja create {{PLURAL:$1|1 conto|$1 contos}}.
 Tu non pote facer plus requestas.',
 	'requestaccount-loginnotice' => "Pro obtener un conto de usator, tu debe '''[[Special:RequestAccount|requestar un]]'''.",
-	'confirmaccount-newrequests' => "Es pendente '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|requesta de conto]]|[[Special:ConfirmAccounts|requestas de conto]]}} aperte e confirmate via e-mail",
+	'confirmaccount-newrequests' => "Es pendente '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|requesta|requestas}} de conto]] aperte e confirmate via e-mail. '''Tu attention es necessari!'''",
 	'confirmaccounts' => 'Confirmar requestas de conto',
 	'confirmedit-desc' => 'Concede al bureaucrates le capacitate de confirmar le requestas de conto',
 	'confirmaccount-maintext' => "'''Iste pagina es usate pro confirmar le requestas de conto pendente a ''{{SITENAME}}'''''.
@@ -6037,7 +6038,7 @@ $2
 	'right-lookupcredentials' => '[[Special:UserCredentials|利用者信頼情報]]を見る',
 );
 
-/** Jamaican Creole English (Patios)
+/** Jamaican Creole English (Patois)
  * @author Yocahuna
  */
 $messages['jam'] = array(
@@ -6784,7 +6785,7 @@ D\'E-mailadresse ass confirméiert. Dir kënnt déi Ufro hei "$2" confirméieren
 	'acct_request_throttle_hit' => 'Pardon, Dir hutt schonns {{PLURAL:$1|1Benotzerkont|$1 Benotzerkonten}} ugefrot.
 Dir kënnt elo keng weider Ufroe méi maachen.',
 	'requestaccount-loginnotice' => "Fir e Benotzerkont ze kréien, musst Dir '''[[Special:RequestAccount|een ufroen]]'''.",
-	'confirmaccount-newrequests' => "'''$1''' open, per E-Mail confirméiert, [[Special:ConfirmAccounts|account {{PLURAL:$1|Ufro|Ufroen}}]] déi drop {{PLURAL:$1|waart|waarden}} beäntwert ze ginn.",
+	'confirmaccount-newrequests' => "'''$1''' open, per E-Mail confirméiert, [[Special:ConfirmAccounts|account {{PLURAL:$1|Ufro|Ufroen}}]] déi drop {{PLURAL:$1|waart|waarden}} beäntwert ze ginn. '''Är Mataarbecht gëtt gebraucht!'''",
 	'confirmaccounts' => 'Ufroe vu Benotzerkonte confirméieren',
 	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeet fir Ufroe vu Benotzerkonten ze confirméieren",
 	'confirmaccount-list' => "Hei ass d'Lëscht vun den Ufroe fir e Benotzerkont déi nach autoriséiert musse ginn.
@@ -7117,7 +7118,7 @@ $3
 	'acct_request_throttle_hit' => 'Жалам, но веќе имате побарано {{PLURAL:$1|1 сметка|$1 сметки}}.
 Не можете да поставувате повеќе барања.',
 	'requestaccount-loginnotice' => "За да добиете корисничка сметка, морате да '''[[Special:RequestAccount|поднесете барање]]'''.",
-	'confirmaccount-newrequests' => "'''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|отворено барање за сметка|отворени барања за сметка}}]] во исчекување со потврдена е-пошта",
+	'confirmaccount-newrequests' => "Има '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|отворено барање за сметка|отворени барања за сметка}}]] во исчекување. '''Потребно е вашето внимание!'''",
 	'confirmaccounts' => 'Потврдување на барања за сметки',
 	'confirmedit-desc' => 'Им овозможува на бирократите да потврдуваат барања за сметка',
 	'confirmaccount-maintext' => "'''Оваа страница служи за потврдување на барања за сметки на „{{SITENAME}}'''.
@@ -10205,7 +10206,7 @@ $messages['sl'] = array(
 	'usercredentials-user' => 'Uporabniško ime:',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -10222,6 +10223,7 @@ $messages['sr-ec'] = array(
 	'requestaccount-reqtype' => 'Положај:',
 	'requestaccount-level-0' => 'аутор',
 	'requestaccount-level-1' => 'уређивач',
+	'requestaccount-info' => '(?)',
 	'requestaccount-bio' => 'Лична биографија:',
 	'requestaccount-attach' => 'Резиме или CV (необавезно):',
 	'requestaccount-notes' => 'Додатне напомене:',
