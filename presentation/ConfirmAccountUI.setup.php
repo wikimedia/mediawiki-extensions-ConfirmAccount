@@ -26,7 +26,7 @@ class ConfirmAccountUISetup {
 	 * @param $groups Array $wgSpecialPageGroups (assoc array of special page groups)
 	 */
 	public static function defineSpecialPages( array &$pages, array &$groups ) {
-		global $wgSpecialPages, $wgSpecialPageGroups, $wgConfirmAccountSaveInfo;
+		global $wgConfirmAccountSaveInfo;
 
 		$pages['RequestAccount'] = 'RequestAccountPage';
 		$groups['RequestAccount'] = 'login';
