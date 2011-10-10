@@ -3385,7 +3385,7 @@ L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $
 	'acct_request_throttle_hit' => 'Désolé, vous avez déjà demandé $1 compte{{PLURAL:$1||s}}.
 Vous ne pouvez plus faire de demande.',
 	'requestaccount-loginnotice' => "Pour obtenir un compte utilisateur, vous devez en faire '''[[Special:RequestAccount|la demande]]'''.",
-	'confirmaccount-newrequests' => "Il y a actuellement '''$1''' [[Special:ConfirmAccounts|demande{{PLURAL:$1||s}} de compte]] en cours.",
+	'confirmaccount-newrequests' => "Il y a actuellement '''$1''' [[Special:ConfirmAccounts|demande{{PLURAL:$1||s}} de compte]] en cours. '''Votre attention est nécessaire !'''",
 	'confirmaccounts' => 'Demande de confirmation de comptes',
 	'confirmedit-desc' => 'Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs',
 	'confirmaccount-maintext' => "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.
@@ -3742,8 +3742,7 @@ O enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aq
 	'acct_request_throttle_hit' => 'Sentímolo, xa solicitou {{PLURAL:$1|unha conta|$1 contas}}.
 Non pode facer máis solicitudes.',
 	'requestaccount-loginnotice' => "Para obter unha conta de usuario ten que '''[[Special:RequestAccount|solicitar unha]]'''.",
-	'confirmaccount-newrequests' => "Hai {{PLURAL:$1}} actualmente '''$1''' aberto 
- {{PLURAL:$1|[[Special:ConfirmAccounts|solicitude de conta]]|[[Special:ConfirmAccounts|solicitudes de contas]]}} pendente.",
+	'confirmaccount-newrequests' => "Actualmente hai '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitude de conta pendente|solicitudes de contas pendentes}}]]. '''Cómpre a súa atención!'''",
 	'confirmaccounts' => 'Confirmar solicitudes de contas',
 	'confirmedit-desc' => 'Dar aos burócratas a capacidade para confirmar as solicitudes de contas',
 	'confirmaccount-maintext' => "'''Esta páxina é usada para confirmar as súas solicitudes de conta pendentes en ''{{SITENAME}}''.'''
@@ -7647,7 +7646,7 @@ Alamat e-mel ini telah disahkan. Anda boleh mengesahan permohonan di sini "$2".'
 	'acct_request_throttle_hit' => 'Maaf, anda sudah memohon {{PLURAL:$1|1 akaun|$1 akaun}}.
 Anda tidak boleh membuat permohonan lagi.',
 	'requestaccount-loginnotice' => "Untuk memperoleh akaun pengguna, anda mesti '''[[Special:RequestAccount|membuat permohonan]]'''.",
-	'confirmaccount-newrequests' => "'''$1''' [[Special:ConfirmAccounts|permohonan akaun]] terbuka yang disahkan oleh e-mel dan menunggu",
+	'confirmaccount-newrequests' => "'''$1''' [[Special:ConfirmAccounts|permintaan akaun]] yang disahkan oleh pembukaan e-mel sedang menunggu. '''Perhatian anda diperlukan!'''",
 	'confirmaccounts' => 'Sahkan permohonan akaun',
 	'confirmedit-desc' => 'Memberi birokrat kebolehan untuk mengesahkan permohonan akaun',
 	'confirmaccount-maintext' => "'''Laman ini digunakan untuk mengesahkan permohonan akaun yang menunggu di ''{{SITENAME}}'''''.
