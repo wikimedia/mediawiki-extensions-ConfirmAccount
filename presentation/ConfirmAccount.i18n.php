@@ -2135,7 +2135,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-hold' => 'Markiert als „abwarten“',
 	'confirmaccount-spam' => 'Spam (keine E-Mail verschicken)',
 	'confirmaccount-reason' => 'Begründung (wird in die E-Mail an den Antragsteller eingefügt):',
-	'confirmaccount-ip' => 'IP-Addresse:',
+	'confirmaccount-ip' => 'IP-Adresse:',
 	'confirmaccount-legend' => 'Bestätigen/Ablehnen des Antrags',
 	'confirmaccount-submit' => 'Abschicken',
 	'confirmaccount-needreason' => 'Du musst eine Begründung eingeben.',
@@ -3927,6 +3927,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
@@ -3949,16 +3950,16 @@ Sobald Dyy Konto aagleit woren isch, wird Dir Dyy Passwort per E-Mail zuegschick
 	'requestaccount-areas-text' => 'Wehl d Themene uus, wu Du s meischt Fachwisse din hesch oder wu Du am meischte witt dra schaffe.',
 	'requestaccount-ext-text' => 'Die Informatione wäre vertraulig behandlet un uusschließlig fir dää Aatrag bruucht.
 Du chasch Kontakt-Aagabe mache, wie z B. e Telifonnummere, go d Bearbeitig vu Dyynem Aatrag z vereifache.',
-	'requestaccount-bio-text' => 'Dyy Biografii wird as initiale Inhalt vu Dyynere Benutzersyte gspycheret.
-Versuech alli netigen Empfählige z nänne, aber stell sicher, ass Du d Informationen au wirkli witt vereffentlige.
-Du chasch Dyy Namen in [[Special:Preferences|Dyynen Yystelligen]] ändere.',
+	'requestaccount-bio-text' => 'Nimm wänn mögli alli relevanti Details in dyni Biographi doo unte uff.',
+	'requestaccount-bio-text-i' => "'''Dyni Biografi wird als di ersti Version vo dyner Benutzersyte veröffentlicht.'''
+Wäge däm muesch au würkli demit yyverstande sy, dass die Date veröffentlicht werde.",
 	'requestaccount-real' => 'Realname:',
 	'requestaccount-same' => '(wie dr Realname)',
 	'requestaccount-email' => 'E-Mail-Adräss:',
 	'requestaccount-reqtype' => 'Position:',
 	'requestaccount-level-0' => 'Autor',
 	'requestaccount-level-1' => 'Bearbeiter',
-	'requestaccount-bio' => 'Persenligi Biografii:',
+	'requestaccount-bio' => 'Persenligi Biografii (numme Teggst):',
 	'requestaccount-attach' => 'Läbenslauf (optional):',
 	'requestaccount-notes' => 'Zuesätzligi Aagabe:',
 	'requestaccount-urls' => 'Lischt vu Netzsyte (dur Zyylenumbrich trännt):',
@@ -3992,7 +3993,7 @@ Dää Bstätigungscode isch ab em $4 nimmi giltig.',
 D E-Mail-Adräss isch bstätigt wore. Du chasch dr Aatrag do bstätige: „$2“.',
 	'acct_request_throttle_hit' => 'Du hesch scho ne Aatrag uf {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonte}} gstellt, Du chasch zur Zyt fir keini meh ne Aatrag stelle.',
 	'requestaccount-loginnotice' => "Go ne nej Benutzerkonto iberchu muesch e '''[[Special:RequestAccount|Aatrag stelle]]'''.",
-	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|ufige, E-Mail bstätigte Benutzerkontenaatrag wartet]]|[[Special:ConfirmAccounts|ufigi, E-Mail bstätigti Benutzerkontenaaträg warten]]}} uf Bearbeitig.",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|ufige, E-Mail bstätigte Benutzerkontenaatrag wartet]]|[[Special:ConfirmAccounts|ufigi, E-Mail bstätigti Benutzerkontenaaträg warten]]}} uf Bearbeitig. '''Bitte due dich drum chümmre.'''",
 	'confirmaccounts' => 'Benutzerkonto-Aaträg bstätige',
 	'confirmedit-desc' => 'Git Bürokrate d Megligkeit, Benutzerkontenaaträg z bstätige',
 	'confirmaccount-maintext' => "'''Die Syte dient dezue, hängigi Benutzerkontenaaträg fir ''{{SITENAME}}'' z bearbeite.'''
@@ -7950,7 +7951,7 @@ U kunt de aanvraag hier "$2" bevestigen.',
 	'acct_request_throttle_hit' => 'U hebt al $1 {{PLURAL:$1|gebruikersaanvraag|gebruikersaanvragen}} gedaan.
 U kunt geen nieuwe aanvragen meer uitbrengen.',
 	'requestaccount-loginnotice' => "Om een gebruiker te krijgen, moet u '''[[Special:RequestAccount|een aanvraag doen]]'''.",
-	'confirmaccount-newrequests' => "Er {{PLURAL:$1|staat|staan}} '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|gebruikersaanvraag|gebruikersaanvragen}}]] open.",
+	'confirmaccount-newrequests' => "Er {{PLURAL:$1|staat|staan}} '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|gebruikersaanvraag|gebruikersaanvragen}}]] open. '''Uw aandacht is nodig!'''",
 	'confirmaccounts' => 'Gebruikersaanvragen bevestigen',
 	'confirmedit-desc' => 'Geeft bureaucraten de mogelijkheid om gebruikersaanvragen te behandelen',
 	'confirmaccount-maintext' => "'''Deze pagina wordt gebruikt om openstaande gebruikersaanvragen te bevestigen op ''{{SITENAME}}'''''.
