@@ -8814,7 +8814,7 @@ Adres e‐mail został potwierdzony. Możesz zatwierdzić wniosek tutaj „$2”
 	'acct_request_throttle_hit' => 'Złożyłeś już {{PLURAL:$1|1 wniosek|$1 wnioski|$1 wniosków}} o założenie konta użytkownika.
 Nie możesz złożyć więcej wniosków.',
 	'requestaccount-loginnotice' => "By uzyskać konto użytkownika musisz '''[[Special:RequestAccount|złożyć wniosek]]'''.",
-	'confirmaccount-newrequests' => "{{PLURAL:$1|Jest '''$1''' [[Special:ConfirmAccounts|oczekujący wniosek]]|Są '''$1''' [[Special:ConfirmAccounts|oczekujące wnioski]]|Jest '''$1''' [[Special:ConfirmAccounts|oczekujących wniosków]]}}, z potwierdzonym adresem e‐mail",
+	'confirmaccount-newrequests' => "{{PLURAL:$1|Jest '''$1''' [[Special:ConfirmAccounts|oczekujący wniosek]]|Są '''$1''' [[Special:ConfirmAccounts|oczekujące wnioski]]|Jest '''$1''' [[Special:ConfirmAccounts|oczekujących wniosków]]}}, z potwierdzonym adresem e‐mail. '''Konieczna jest Twoja ingerencja!'''",
 	'confirmaccounts' => 'Potwierdź wniosek o założenie konta użytkownika',
 	'confirmedit-desc' => 'Pozwala biurokratom akceptować wnioski o założenie konta użytkownika',
 	'confirmaccount-maintext' => "'''Na tej stronie można potwierdzać wnioski o utworzenie konta w ''{{GRAMMAR:D.lp|{{SITENAME}}}}'''''.
