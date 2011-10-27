@@ -4712,17 +4712,16 @@ Tak ruče kaž konto je so potwjerdźiło, dóstanješ powěsć přez e-mejlku a
 	'requestaccount-acc-text' => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
 	'requestaccount-areas-text' => 'Wubjer slědowace temowe wobwody, w kotrychž maš wěcywustojnosć abo chceš najwjace dźěła činić.',
 	'requestaccount-ext-text' => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
-	'requestaccount-bio-text' => 'Twoja biografija budźe so jako standardny wobsah twojeje wužiwarskeje strony składować.
-Spytaj referency zapřijimać.
-Zawěsć, zo chceš te informacije woprawdźe wozjewić.
-Móžeš swoje wužiwarske mjeno pod [[Special:Preferences|Nastajenja]] změnić.',
+	'requestaccount-bio-text' => 'Spytaj wšě relewantne informacije do swoje slědowaceje biografije zapřijimać.',
+	'requestaccount-bio-text-i' => "'''Twoja biografija wozjewi so jako prěnja wersija twojeje wužiwarskeje strony.'''
+Dyrbiš tohodla z wozjewjenjom tutych informacijow přezjedny być.",
 	'requestaccount-real' => 'Woprawdźite mjeno:',
 	'requestaccount-same' => '(kaž woprawdźite mjeno)',
 	'requestaccount-email' => 'E-mejlowa adresa:',
 	'requestaccount-reqtype' => 'Pozicija:',
 	'requestaccount-level-0' => 'awtor',
 	'requestaccount-level-1' => 'Wobdźěłowar',
-	'requestaccount-bio' => 'Wosobinska biografija:',
+	'requestaccount-bio' => 'Wosobinska biografija (jenož luty tekst):',
 	'requestaccount-attach' => 'Žiwjenjoběh',
 	'requestaccount-notes' => 'Přidatne podaća:',
 	'requestaccount-urls' => 'Lisćina webowych sydłow (přez linkowe łamanja wotdźělene)',
@@ -4753,7 +4752,7 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'requestaccount-email-body-admin' => '"$1" je konto požadał a čaka na potwjerdźenje. E-mejlowa adresa bu potwjerdźena. Móžeš požadanje tu "$2" potwjerdźić.',
 	'acct_request_throttle_hit' => 'Wodaj, sy hižo $1 {{PLURAL:$1|1 konto|$1 konće|$1 konta|$1 kontow}} požadał. Njemóžeš žane dalše konta požadać.',
 	'requestaccount-loginnotice' => "Zo by wužiwarske konto dóstał, dyrbiš wo nje '''[[Special:RequestAccount|prosyć]]'''.",
-	'confirmaccount-newrequests' => "{{PLURAL:$1|Čaka|Čakatej|Čakaja|Čaka}} tuchwilu '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|kontowe požadanje]]|[[Special:ConfirmAccounts|kontowej požadani]]|[[Special:ConfirmAccounts|kontowe požadanja]]|[[Special:ConfirmAccountskontowych požadanjow]]}}.",
+	'confirmaccount-newrequests' => "{{PLURAL:$1|Čaka|Čakatej|Čakaja|Čaka}} tuchwilu '''$1''' přez e-mejlu [[Special:ConfirmAccounts|{{PLURAL:$1|wobkrućene kontowe požadanje|wobkrućenej kontowej požadani|wobkrućene kontowe požadanja|wobkrućenych kontowych požadanjow}}]]. '''Prošu staraj so wo to!'''",
 	'confirmaccounts' => 'Kontowe požadanja potwjerdźić',
 	'confirmedit-desc' => 'Dawa běrokratam móžnosć kontowe požadanja potwjerdźić',
 	'confirmaccount-maintext' => "'''Tuta strona wužiwa so, zo by njesčinjene kontowe požadanja na ''{{SITENAME}}'' potwjerdźiło'''.
