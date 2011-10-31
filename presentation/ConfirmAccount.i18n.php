@@ -9010,7 +9010,7 @@ L\'adrëssa ëd pòsta eletrònica a l\'é stàita confermà. A peul confermé l
 	'acct_request_throttle_hit' => "A l'ha gia ciamà {{PLURAL:$1|1 cont|$1 cont}}. 
 Për darmagi ant ës moment-sì i podoma nen aceté dj'àotre domande da chiel/chila.",
 	'requestaccount-loginnotice' => "Për deurb-se un sò cont utent, a venta '''[[Special:RequestAccount|ch<nowiki>'</nowiki>a në ciama un]]'''.",
-	'confirmaccount-newrequests' => "Al moment a-i é '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|arcesta duverta an cors|arceste duverte an cors}} ëd cont]]",
+	'confirmaccount-newrequests' => "'''$1''' mëssagi ch'a speto [[Special:ConfirmAccounts|{{PLURAL:$1|d'arcesta ëd cont confermà|d'arceste ëd cont confermà}}]]. '''A-i é dabzògn ëd soa atension!'''",
 	'confirmaccounts' => 'Conferma dle domande ëd cont neuv da deurbe',
 	'confirmedit-desc' => "A dà ai mangiapapé l'abilità ëd confermé j'arceste ëd cont",
 	'confirmaccount-maintext' => "'''Sta pàgina-sì a l'é dovrà për confermé j'arceste an cors ëd cont a ''{{SITENAME}}'''''.
