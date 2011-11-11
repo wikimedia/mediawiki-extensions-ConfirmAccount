@@ -46,7 +46,7 @@ $wgAvailableRights[] = 'confirmaccount'; // user can confirm account requests
 $wgAvailableRights[] = 'requestips'; // user can see IPs in request queue
 $wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed users
 
-$dir = dirname( __FILE__ ) . '/presentation';
+$dir = dirname( __FILE__ ) . '/frontend';
 $wgAutoloadClasses['ConfirmAccountUISetup'] = "$dir/ConfirmAccountUI.setup.php";
 # Internationalization files
 $wgExtensionMessagesFiles['ConfirmAccount'] = "$dir/ConfirmAccount.i18n.php";
@@ -54,7 +54,7 @@ $wgExtensionAliasesFiles['ConfirmAccount'] = "$dir/ConfirmAccount.alias.php";
 # UI event handler classes
 $wgAutoloadClasses['ConfirmAccountUIHooks'] = "$dir/ConfirmAccountUI.hooks.php";
 
-$dir = dirname( __FILE__ ) . '/presentation/specialpages';
+$dir = dirname( __FILE__ ) . '/frontend/specialpages';
 # UI to request an account
 $wgAutoloadClasses['RequestAccountPage'] = "$dir/actions/RequestAccount_body.php";
 # UI to confirm accounts
@@ -62,7 +62,7 @@ $wgAutoloadClasses['ConfirmAccountsPage'] = "$dir/actions/ConfirmAccount_body.ph
 # UI to see account credentials
 $wgAutoloadClasses['UserCredentialsPage'] = "$dir/actions/UserCredentials_body.php";
 
-$dir = dirname( __FILE__ ) . '/dataclasses';
+$dir = dirname( __FILE__ ) . '/backend';
 # Utility functions
 $wgAutoloadClasses['ConfirmAccount'] = "$dir/ConfirmAccount.class.php";
 # Data access objects
@@ -72,7 +72,7 @@ $dir = dirname( __FILE__ ) . '/business';
 # Business logic
 $wgAutoloadClasses['AccountRequestSubmission'] = "$dir/AccountRequestSubmission.php";
 
-$dir = dirname( __FILE__ ) . '/schema';
+$dir = dirname( __FILE__ ) . '/backend/schema';
 # Schema changes
 $wgAutoloadClasses['ConfirmAccountUpdaterHooks'] = "$dir/ConfirmAccountUpdater.hooks.php";
 
