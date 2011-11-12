@@ -22,11 +22,11 @@ class ConfirmAccountSetup {
 		$schemaDir        = "$dir/backend/schema";
 		$businessDir      = "$dir/business";
 		$frontendDir      = "$dir/frontend";
-		$langDir          = "$dir/frontend/";
+		$langDir          = "$dir/frontend/language/";
 		$spActionDir      = "$dir/frontend/specialpages/actions";
 		$spReportDir      = "$dir/frontend/specialpages/reports";
 
-		# Internationalization files
+		# Main i18n file and special page alias file
 		$messagesFiles['ConfirmAccount'] = "$langDir/ConfirmAccount.i18n.php";
 		$aliasesFiles['ConfirmAccount'] = "$langDir/ConfirmAccount.alias.php";
 
@@ -37,10 +37,13 @@ class ConfirmAccountSetup {
 
 		# UI to request an account
 		$classes['RequestAccountPage'] = "$spActionDir/RequestAccount_body.php";
+		$messagesFiles['RequestAccountPage'] = "$langDir/RequestAccountPage.i18n.php";
 		# UI to confirm accounts
 		$classes['ConfirmAccountsPage'] = "$spActionDir/ConfirmAccount_body.php";
+		$messagesFiles['ConfirmAccountPage'] = "$langDir/ConfirmAccountPage.i18n.php";
 		# UI to see account credentials
 		$classes['UserCredentialsPage'] = "$spActionDir/UserCredentials_body.php";
+		$messagesFiles['UserCredentialsPage'] = "$langDir/UserCredentialsPage.i18n.php";
 
 		# Utility functions
 		$classes['ConfirmAccount'] = "$backendDir/ConfirmAccount.class.php";
