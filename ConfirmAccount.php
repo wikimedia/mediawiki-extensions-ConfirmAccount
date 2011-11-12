@@ -31,50 +31,21 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
 );
 
-# This extension needs email enabled!
-# Otherwise users can't get their passwords...
-if ( !$wgEnableEmail ) {
-	echo "ConfirmAccount extension requires \$wgEnableEmail set to true \n";
-	exit( 1 ) ;
-}
-
 # Load default config variables
 require( dirname( __FILE__ ) . '/ConfirmAccount.config.php' );
+
+# Define were classes and i18n files are located
+require( dirname( __FILE__ ) . '/ConfirmAccount.setup.php' );
+ConfirmAccountSetup::defineSourcePaths(
+	$wgAutoloadClasses,
+	$wgExtensionMessagesFiles,
+	$wgExtensionAliasesFiles
+);
 
 # Let some users confirm account requests and view credentials for created accounts
 $wgAvailableRights[] = 'confirmaccount'; // user can confirm account requests
 $wgAvailableRights[] = 'requestips'; // user can see IPs in request queue
 $wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed users
-
-$dir = dirname( __FILE__ ) . '/frontend';
-$wgAutoloadClasses['ConfirmAccountUISetup'] = "$dir/ConfirmAccountUI.setup.php";
-# Internationalization files
-$wgExtensionMessagesFiles['ConfirmAccount'] = "$dir/ConfirmAccount.i18n.php";
-$wgExtensionAliasesFiles['ConfirmAccount'] = "$dir/ConfirmAccount.alias.php";
-# UI event handler classes
-$wgAutoloadClasses['ConfirmAccountUIHooks'] = "$dir/ConfirmAccountUI.hooks.php";
-
-$dir = dirname( __FILE__ ) . '/frontend/specialpages';
-# UI to request an account
-$wgAutoloadClasses['RequestAccountPage'] = "$dir/actions/RequestAccount_body.php";
-# UI to confirm accounts
-$wgAutoloadClasses['ConfirmAccountsPage'] = "$dir/actions/ConfirmAccount_body.php";
-# UI to see account credentials
-$wgAutoloadClasses['UserCredentialsPage'] = "$dir/actions/UserCredentials_body.php";
-
-$dir = dirname( __FILE__ ) . '/backend';
-# Utility functions
-$wgAutoloadClasses['ConfirmAccount'] = "$dir/ConfirmAccount.class.php";
-# Data access objects
-$wgAutoloadClasses['UserAccountRequest'] = "$dir/UserAccountRequest.php";
-
-$dir = dirname( __FILE__ ) . '/business';
-# Business logic
-$wgAutoloadClasses['AccountRequestSubmission'] = "$dir/AccountRequestSubmission.php";
-
-$dir = dirname( __FILE__ ) . '/backend/schema';
-# Schema changes
-$wgAutoloadClasses['ConfirmAccountUpdaterHooks'] = "$dir/ConfirmAccountUpdater.hooks.php";
 
 # Actually register special pages
 ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages, $wgSpecialPageGroups );
@@ -94,3 +65,21 @@ $wgHooks['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPend
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
 
 # ####### END HOOK CALLBACK FUNCTIONS #########
+
+# Load the extension after setup is finished
+$wgExtensionFunctions[] = 'efLoadConfirmAccount';
+
+/**
+ * This function is for setup that has to happen in Setup.php
+ * when the functions in $wgExtensionFunctions get executed.
+ * @return void
+ */
+function efLoadConfirmAccount() {
+	global $wgEnableEmail;
+	# This extension needs email enabled!
+	# Otherwise users can't get their passwords...
+	if ( !$wgEnableEmail ) {
+		echo "ConfirmAccount extension requires \$wgEnableEmail set to true \n";
+		exit( 1 ) ;
+	}
+}
