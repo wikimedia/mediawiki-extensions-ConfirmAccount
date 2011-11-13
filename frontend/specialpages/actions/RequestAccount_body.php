@@ -11,8 +11,6 @@ class RequestAccountPage extends SpecialPage {
 	protected $mType;
 	/** @var array */
 	protected $mAreas;
-	/** @var array */
-	protected $mAreaSet;
 
 	protected $mPrevAttachment;
 	protected $mForgotAttachment;
@@ -66,14 +64,10 @@ class RequestAccountPage extends SpecialPage {
 		$this->mType = isset( $wgAccountRequestTypes[$this->mType] ) ?
 			$this->mType : 0;
 		# Load areas user plans to be active in...
-		$this->mAreas = $this->mAreaSet = array();
+		$this->mAreas = array();
 		foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
 			$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
-			$this->mAreas[$formName] = $request->getInt( $formName, -1 );
-			# Make a simple list of interests
-			if ( $this->mAreas[$formName] > 0 ) {
-				$this->mAreaSet[] = $name;
-			}
+			$this->mAreas[$name] = $request->getInt( $formName, -1 );
 		}
 		# We may be confirming an email address here
 		$emailCode = $request->getText( 'wpEmailToken' );
@@ -163,7 +157,7 @@ class RequestAccountPage extends SpecialPage {
 					$pg = '';
 				}
 				$form .= "<td>" .
-					Xml::checkLabel( $name, $formName, $formName, $this->mAreas[$formName] > 0 ) .
+					Xml::checkLabel( $name, $formName, $formName, $this->mAreas[$name] > 0 ) .
 					" {$pg}</td>\n";
 			}
 			$form .= "</tr></table></div>";
@@ -268,6 +262,12 @@ class RequestAccountPage extends SpecialPage {
 		}
 
 		# Build submission object...
+		$areaSet = array(); // make a simple list of interests
+		foreach ( $this->mAreas as $area => $val ) {
+			if ( $val > 0 ) {
+				$areaSet[] = $area;
+			}
+		}
 		$submission = new AccountRequestSubmission(
 			$this->getUser(),
 			array(
@@ -279,7 +279,7 @@ class RequestAccountPage extends SpecialPage {
 				'notes'                     => $this->mNotes,
 				'urls'                      => $this->mUrls,
 				'type'                      => $this->mType,
-				'areas'                     => $this->mAreaSet,
+				'areas'                     => $areaSet,
 				'registration'              => wfTimestampNow(),
 				'ip'                        => $this->getRequest()->getIP(),
 				'attachmentPrevName'        => $this->mPrevAttachment,

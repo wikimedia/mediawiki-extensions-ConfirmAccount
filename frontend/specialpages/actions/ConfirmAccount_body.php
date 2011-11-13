@@ -69,7 +69,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$this->reqAreas = array();
 			foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
 				$formName = "wpArea-" . htmlspecialchars( str_replace(' ','_', $name ) );
-				$this->reqAreas[$formName] = $request->getInt( $formName, -1 );
+				$this->reqAreas[$name] = $request->getInt( $formName, -1 );
 			}
 			# Load in the UserAccountRequest obj
 			$this->loadAccountRequest( $this->acrID, $request->wasPosted() );
@@ -318,7 +318,7 @@ class ConfirmAccountsPage extends SpecialPage {
 					$pg = '';
 				}
 				$form .= "<td>" .
-					Xml::checkLabel( $name, $formName, $formName, $this->reqAreas[$formName] > 0 ) .
+					Xml::checkLabel( $name, $formName, $formName, $this->reqAreas[$name] > 0 ) .
 					" {$pg}</td>\n";
 			}
 			$form .= "</tr></table></div>";
@@ -443,7 +443,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		}
 
 		# Build submission object...
-		$areaSet = array();
+		$areaSet = array(); // make a simple list of interests
 		foreach ( $this->reqAreas as $area => $val ) {
 			if ( $val > 0 ) {
 				$areaSet[] = $area;
