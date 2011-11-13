@@ -202,8 +202,8 @@ class UserCredentialsPage extends SpecialPage {
 		$request->response()->header( 'Pragma: no-cache' );
 
 		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
-		$path = $repo->getZonePath( 'public' ).'/'.
-			$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+		$path = $repo->getZonePath( 'public' ) . '/' .
+			UserAccountRequest::relPathFromKey( $key );
 		StreamFile::stream( $path );
 	}
 

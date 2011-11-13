@@ -21,8 +21,8 @@ class ConfirmAccount {
 		foreach ( $res as $row ) {
 			$key = $row->acr_storage_key;
 			if ( $key ) {
-				$path = $repo->getZonePath( 'public' ).'/'.
-					$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+				$path = $repo->getZonePath( 'public' ) . '/' .
+					UserAccountRequest::relPathFromKey( $key );
 				if ( $path && file_exists($path) ) {
 					unlink($path);
 				}

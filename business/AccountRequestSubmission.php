@@ -164,7 +164,7 @@ class AccountRequestSubmission {
 			# Start a transaction, move file from temp to account request directory.
 			$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 			$key = sha1_file( $this->attachmentTempPath ) . '.' . $finalExt;
-			$pathRel = $key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+			$pathRel = UserAccountRequest::relPathFromKey( $key );
 			$triplet = array( $this->attachmentTempPath, 'public', $pathRel );
 			$status = $repo->storeBatch( array( $triplet ), FSRepo::OVERWRITE_SAME ); // save!
 			if ( !$status->isOk() ) {

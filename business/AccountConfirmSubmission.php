@@ -190,7 +190,7 @@ class AccountConfirmSubmission {
 				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 				$repoNew = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
 
-				$pathRel = $key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+				$pathRel = UserAccountRequest::relPathFromKey( $key );
 				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
 
 				$triplet = array( $oldPath, 'public', $pathRel );
@@ -299,7 +299,7 @@ class AccountConfirmSubmission {
 			$key = $accReq->getFileStorageKey();
 			if ( $key ) {
 				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
-				$pathRel = $key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
+				$pathRel = UserAccountRequest::relPathFromKey( $key );
 				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
 				if ( file_exists( $oldPath ) ) {
 					unlink( $oldPath ); // delete!

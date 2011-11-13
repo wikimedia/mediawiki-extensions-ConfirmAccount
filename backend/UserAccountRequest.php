@@ -452,4 +452,14 @@ class UserAccountRequest {
 		unset( $list[count( $list ) - 1] );
 		return $list;
 	}
+
+	/**
+	 * Get path relative to zone for an account request attachment file.
+	 * This assures compatibility with the old FileStore sytem.
+	 * @param $key string File storage key
+	 * @return string
+	 */
+	public static function relPathFromKey( $key ) {
+		return "{$key[0]}/{$key[0]}{$key[1]}/{$key[0]}{$key[1]}{$key[2]}/{$key}";
+	}
 }
