@@ -4,40 +4,45 @@ class ConfirmAccount {
 	 * Move old stale requests to rejected list. Delete old rejected requests.
 	 */
 	public static function runAutoMaintenance() {
-		global $wgRejectedAccountMaxAge, $wgConfirmAccountFSRepos;
+		global $wgRejectedAccountMaxAge, $wgConfirmAccountRejectAge, $wgConfirmAccountFSRepos;
 
 		$dbw = wfGetDB( DB_MASTER );
-		# Select all items older than time $cutoff
-		$cutoff = $dbw->timestamp( time() - $wgRejectedAccountMaxAge );
-		$accountrequests = $dbw->tableName( 'account_requests' );
-		$sql = "SELECT acr_storage_key,acr_id FROM $accountrequests WHERE acr_rejected < '{$cutoff}'";
-		$res = $dbw->query( $sql );
-
 		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+
+		# Select all items older than time $encCutoff
+		$encCutoff = $dbw->addQuotes( $dbw->timestamp( time() - $wgRejectedAccountMaxAge ) );
+		$res = $dbw->select( 'account_requests',
+			array( 'acr_id', 'acr_storage_key' ),
+			array( "acr_rejected < {$encCutoff}" ),
+			__METHOD__
+		);
+
 		# Clear out any associated attachments and delete those rows
-		foreach( $res as $row ) {
+		foreach ( $res as $row ) {
 			$key = $row->acr_storage_key;
-			if( $key ) {
+			if ( $key ) {
 				$path = $repo->getZonePath( 'public' ).'/'.
 					$key[0].'/'.$key[0].$key[1].'/'.$key[0].$key[1].$key[2].'/'.$key;
-				if( $path && file_exists($path) ) {
+				if ( $path && file_exists($path) ) {
 					unlink($path);
 				}
 			}
-			$dbw->query( "DELETE FROM $accountrequests WHERE acr_id = {$row->acr_id}" );
+			$dbw->delete( 'account_requests', array( 'acr_id' => $row->acr_id ), __METHOD__ );
 		}
 
-		# Select all items older than time $cutoff
-		global $wgConfirmAccountRejectAge;
-		$cutoff = $dbw->timestamp( time() - $wgConfirmAccountRejectAge );
+		# Select all items older than time $encCutoff
+		$encCutoff = $dbw->addQuotes( $dbw->timestamp( time() - $wgConfirmAccountRejectAge ) );
 		# Old stale accounts will count as rejected. If the request was held, give it more time.
 		$dbw->update( 'account_requests',
 			array( 'acr_rejected' => $dbw->timestamp(),
 				'acr_user' => 0, // dummy
 				'acr_comment' => wfMsgForContent('confirmaccount-autorej'),
 				'acr_deleted' => 1 ),
-			array( "acr_rejected IS NULL", "acr_registration < '{$cutoff}'", "acr_held < '{$cutoff}'" ),
-			__METHOD__ );
+			array( "acr_rejected IS NULL",
+				"acr_registration < {$encCutoff}",
+				"acr_held < {$encCutoff} OR acr_held IS NULL" ),
+			__METHOD__
+		);
 
 		# Clear cache for notice of how many account requests there are
 		self::clearAccountRequestCountCache();
@@ -240,10 +245,12 @@ class ConfirmAccount {
 	}
 
 	/**
-	 * Get the category to add to this users page for working in
+	 * Get the text to add to this users page for describing editing topics
+	 * for each "area" a user can be in, as defined in MediaWiki:requestaccount-areas.
+	 *
 	 * @return Array Associative mapping of the format:
 	 *    (name => ('project' => x, 'userText' => y, 'grpUserText' => (request type => z)))
-	 * Any of the ultimative values can be empty string
+	 * Any of the ultimate values can be the empty string
 	 */
 	public static function getUserAreaConfig() {
 		static $res; // process cache
@@ -271,9 +278,9 @@ class ConfirmAccount {
 					}
 
 					$res[$name]['grpUserText'] = array(); // userpage text for certain request types
-					$categories = array_slice( $set, 3 ); // keys start from 0 now
+					$categories = array_slice( $set, 3 ); // keys start from 0 now in $categories
 					foreach ( $categories as $i => $cat ) {
-						$res[$name]['grpUserText'][$i] = trim( $cat );
+						$res[$name]['grpUserText'][$i] = trim( $cat ); // category for group $i
 					}
 				}
 			}
