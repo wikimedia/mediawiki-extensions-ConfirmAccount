@@ -52,6 +52,7 @@ class ConfirmAccountSetup {
 
 		# Business logic
 		$classes['AccountRequestSubmission'] = "$businessDir/AccountRequestSubmission.php";
+		$classes['AccountConfirmSubmission'] = "$businessDir/AccountConfirmSubmission.php";
 
 		# Schema changes
 		$classes['ConfirmAccountUpdaterHooks'] = "$schemaDir/ConfirmAccountUpdater.hooks.php";

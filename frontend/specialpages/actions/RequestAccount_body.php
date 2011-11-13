@@ -1,14 +1,24 @@
 <?php
 
 class RequestAccountPage extends SpecialPage {
+	protected $mUsername;
+	protected $mRealName;
+	protected $mEmail;
+	protected $mBio;
+	protected $mNotes;
+	protected $mUrls;
+	protected $mToS;
+	protected $mType;
+	/** @var array */
+	protected $mAreas;
+	/** @var array */
+	protected $mAreaSet;
 
-	protected $mUsername, $mRealName, $mType, $mPrevAttachment, $mForgotAttachment,
-		$mEmail, $mBio, $mNotes, $mToS, $mSrcName, $mUrls, $mFileSize, $mTempPath;
-
-	/**
-	 * @var array
-	 */
-	protected $mAreas, $mAreaSet;
+	protected $mPrevAttachment;
+	protected $mForgotAttachment;
+	protected $mSrcName;
+	protected $mFileSize;
+	protected $mTempPath;
 
 	function __construct() {
 		parent::__construct( 'RequestAccount' );
@@ -35,7 +45,9 @@ class RequestAccountPage extends SpecialPage {
 
 		$this->mRealName = trim( $request->getText( 'wpRealName' ) );
 		# We may only want real names being used
-		$this->mUsername = $wgUseRealNamesOnly ? $this->mRealName : $request->getText( 'wpUsername' );
+		$this->mUsername = $wgUseRealNamesOnly
+			? $this->mRealName
+			: $request->getText( 'wpUsername' );
 		$this->mUsername = trim( $this->mUsername );
 		# Attachments...
 		$this->initializeUpload( $request );

@@ -12,6 +12,7 @@ class AccountRequestSubmission {
 	protected $notes;
 	protected $urls;
 	protected $type;
+	/** @var array */
 	protected $areas;
 	protected $registration;
 	protected $ip;

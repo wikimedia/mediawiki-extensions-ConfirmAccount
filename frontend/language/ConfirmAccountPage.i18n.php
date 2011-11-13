@@ -90,11 +90,12 @@ It may have already been handled.',
 	'confirmaccount-submit'   => 'Confirm',
 	'confirmaccount-needreason' => 'You must provide a reason in the comment box below.',
 	'confirmaccount-canthold' => 'This request is already either on hold or deleted.',
+	'confirmaccount-badaction' => 'An valid action (accept,reject,hold) must be specified in order to proceed.',
 	'confirmaccount-acc'     => 'Account request confirmed successfully;
 	created new user account [[User:$1|$1]].',
 	'confirmaccount-rej'     => 'Account request rejected successfully.',
 	'confirmaccount-viewing' => '(currently being viewed by [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Creating user page with biography of new user.',
+	'confirmaccount-summary' => 'Creating user page for new user.',
 	'confirmaccount-welc'    => "'''Welcome to ''{{SITENAME}}''!'''
 We hope you will contribute much and well.
 You will probably want to read the [[{{MediaWiki:Helppage}}|help pages]].

@@ -1,4 +1,5 @@
 <?php
+
 class UserAccountRequest {
 	/* Initially supplied fields */
 	protected $id;
@@ -31,7 +32,7 @@ class UserAccountRequest {
 	 * @param $row
 	 * @return UserAccountRequest
 	 */
-	public static function newFromRow( Object $row ) {
+	public static function newFromRow( $row ) {
 		$req = new self();
 
 		$req->id = (int)$row->acr_id;
@@ -44,7 +45,9 @@ class UserAccountRequest {
 		$req->urls = $row->acr_urls;
 		$req->type = (int)$row->acr_type;
 		$req->areas = self::expandAreas( $row->acr_areas );
-		$req->fileName = $row->acr_filename;
+		$req->fileName = strlen( $row->acr_filename )
+			? $row->acr_filename
+			: null;
 		$req->fileStorageKey = $row->acr_storage_key;
 		$req->ip = $row->acr_ip;
 		$req->emailToken = $row->acr_email_token; // MD5 of token
@@ -80,7 +83,9 @@ class UserAccountRequest {
 		$req->areas = is_string( $fields['areas'] )
 			? self::expandAreas( $fields['areas'] ) // DB format
 			: $fields['areas']; // already expanded
-		$req->fileName = $fields['filename'];
+		$req->fileName = strlen( $fields['filename'] )
+			? $fields['filename']
+			: null;
 		$req->fileStorageKey = $fields['storage_key'];
 		$req->ip = $fields['ip'];
 		$req->emailToken = $fields['email_token']; // MD5 of token
@@ -114,10 +119,10 @@ class UserAccountRequest {
 	 * @return UserAccountRequest|null
 	 */
 	public static function newFromId( $id, $from = null ) {
-		$db = ( $master == 'dbmaster' )
+		$db = ( $from == 'dbmaster' )
 			? wfGetDB( DB_MASTER )
 			: wfGetDB( DB_SLAVE );
-		$row = $db->selectRow( 'account_requests', array( 'acr_id' => $id ), __METHOD__ );
+		$row = $db->selectRow( 'account_requests', '*', array( 'acr_id' => $id ), __METHOD__ );
 		if ( !$row ) {
 			return null;
 		}
@@ -133,7 +138,7 @@ class UserAccountRequest {
 		$db = ( $master == 'dbmaster' )
 			? wfGetDB( DB_MASTER )
 			: wfGetDB( DB_SLAVE );
-		$row = $db->selectRow( 'account_requests', array( 'acr_name' => $name ), __METHOD__ );
+		$row = $db->selectRow( 'account_requests', '*', array( 'acr_name' => $name ), __METHOD__ );
 		if ( !$row ) {
 			return null;
 		}
@@ -169,7 +174,7 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @return string
+	 * @return string TS_MW timestamp
 	 */
 	public function getRegistration() {
 		return $this->registration;
@@ -197,21 +202,34 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @return array
+	 * @param $flat string Use 'flat' to get a raw blob back
+	 * @return array|string Flat blob or array from expanded blob
 	 */
-	public function getAreas() {
-		return $this->areas;
+	public function getAreas( $flat = 'expanded' ) {
+		if ( $flat == 'expanded' ) {
+			return $this->areas;
+		} elseif ( $flat == 'flat' ) {
+			return self::flattenAreas( $this->areas );
+		}
+		throw new MWException( 'Invalid value for $flat parameter.' );
 	}
 
 	/**
-	 * @return string
+	 * @return int
+	 */
+	public function getType() {
+		return $this->type;
+	}
+
+	/**
+	 * @return string|null
 	 */
 	public function getFileName() {
 		return $this->fileName;
 	}
 
 	/**
-	 * @return string
+	 * @return string|null
 	 */
 	public function getFileStorageKey() {
 		return $this->fileStorageKey;
@@ -232,41 +250,41 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @return string
+	 * @return string TS_MW timestamp
 	 */
 	public function getEmailTokenExpires() {
 		return $this->emailTokenExpires;
 	}
 
 	/**
-	 * @return string
+	 * @return string|null TS_MW timestamp
 	 */
 	public function getEmailAuthTimestamp() {
 		return $this->emailAuthTimestamp;
 	}
 
 	/**
-	 * @return bool
+	 * @return bool Request is deleted (either rejected or expired)
 	 */
 	public function isDeleted() {
 		return $this->deleted;
 	}
 
 	/**
-	 * @return string
+	 * @return string|null TS_MW timestamp
 	 */
 	public function getRejectTimestamp() {
 		return $this->rejectedTimestamp;
 	}
 	/**
-	 * @return string
+	 * @return string|null TS_MW timestamp
 	 */
 	public function getHeldTimestamp() {
 		return $this->heldTimestamp;
 	}
 
 	/**
-	 * @return User
+	 * @return int User ID
 	 */
 	public function getHandlingUser() {
 		return $this->user;
@@ -319,6 +337,47 @@ class UserAccountRequest {
 		$this->id = $acr_id; // set for accessors
 
 		return $this->id;
+	}
+
+	/**
+	 * Mark this request as rejected
+	 * @param $admin User
+	 * @param $timestamp string
+	 * @param $reason string
+	 * @return bool Success
+	 */
+	public function markRejected( User $admin, $timestamp, $reason = '' ) {
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->update( 'account_requests',
+			array(
+				'acr_rejected' => $dbw->timestamp( $timestamp ),
+				'acr_user'     => $admin->getID(),
+				'acr_comment'  => $reason,
+				'acr_deleted'  => 1 ),
+			array( 'acr_id' => $this->id, 'acr_deleted' => 0 ),
+			__METHOD__
+		);
+		return ( $dbw->affectedRows() > 0 );
+	}
+
+	/**
+	 * Mark this request as held
+	 * @param $admin User
+	 * @param $timestamp string
+	 * @param $reason string
+	 * @return bool Success
+	 */
+	public function markHeld( User $admin, $timestamp, $reason = '' ) {
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->update( 'account_requests',
+			array(
+				'acr_held'    => $dbw->timestamp( $timestamp ),
+				'acr_user'    => $admin->getID(),
+				'acr_comment' => $reason ),
+			array( 'acr_id' => $this->id, 'acr_held IS NULL', 'acr_deleted' => 0 ),
+			__METHOD__
+		);
+		return ( $dbw->affectedRows() > 0 );
 	}
 
 	/**
