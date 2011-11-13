@@ -34,13 +34,16 @@ $wgExtensionCredits['specialpage'][] = array(
 # Load default config variables
 require( dirname( __FILE__ ) . '/ConfirmAccount.config.php' );
 
-# Define were classes and i18n files are located
+# Define were PHP files and i18n files are located
 require( dirname( __FILE__ ) . '/ConfirmAccount.setup.php' );
 ConfirmAccountSetup::defineSourcePaths(
 	$wgAutoloadClasses,
 	$wgExtensionMessagesFiles,
 	$wgExtensionAliasesFiles
 );
+
+# Define JS/CSS modules and file locations
+ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
 
 # Let some users confirm account requests and view credentials for created accounts
 $wgAvailableRights[] = 'confirmaccount'; // user can confirm account requests
@@ -49,9 +52,6 @@ $wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed
 
 # Actually register special pages
 ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages, $wgSpecialPageGroups );
-
-# JS/CSS modules and message bundles used by JS scripts
-ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
 
 # ####### HOOK CALLBACK FUNCTIONS #########
 

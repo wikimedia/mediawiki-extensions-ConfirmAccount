@@ -2,9 +2,15 @@
 
 class UserCredentialsPage extends SpecialPage {
 
-	protected $target, $skin, $file;
+	protected $target, $file;
+
 	function __construct() {
 		parent::__construct( 'UserCredentials', 'lookupcredentials' );
+	}
+
+	public function userCanExecute( User $user ) {
+		global $wgConfirmAccountSaveInfo;
+		return $wgConfirmAccountSaveInfo && parent::userCanExecute( $user );
 	}
 
 	function execute( $par ) {
@@ -12,9 +18,8 @@ class UserCredentialsPage extends SpecialPage {
 		$request = $this->getRequest();
 		$reqUser = $this->getUser();
 
-		if ( !$reqUser->isAllowed( 'lookupcredentials' ) ) {
-			$out->permissionRequired( 'lookupcredentials' );
-			return;
+		if ( !$this->userCanExecute( $this->getUser() ) ) {
+			throw new PermissionsError( 'lookupcredentials' );
 		}
 
 		$this->setHeaders();
@@ -23,8 +28,6 @@ class UserCredentialsPage extends SpecialPage {
 		$this->target = $request->getText( 'target' );
 		# Attachments
 		$this->file = $request->getVal( 'file' );
-
-		$this->skin = $reqUser->getSkin();
 
 		if ( $this->file ) {
 			$this->showFile( $this->file );
@@ -84,7 +87,7 @@ class UserCredentialsPage extends SpecialPage {
 		$form .= '<legend>' . wfMsgHtml( 'usercredentials-leg-user' ) . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>" . wfMsgHtml( 'username' ) . "</td>";
-		$form .= "<td>" . $this->skin->makeLinkObj( $user->getUserPage(), htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
+		$form .= "<td>" . Linker::makeLinkObj( $user->getUserPage(), htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
 
 		$econf = $row->acd_email_authenticated ? ' <strong>' . wfMsgHtml( 'confirmaccount-econf' ) . '</strong>' : '';
 		$form .= "<tr><td>" . wfMsgHtml( 'usercredentials-email' ) . "</td>";
@@ -147,7 +150,7 @@ class UserCredentialsPage extends SpecialPage {
 		if( $wgAccountRequestExtraInfo ) {
 			$form .= '<p>' . wfMsgHtml( 'usercredentials-attach' ) . ' ';
 			if ( $row->acd_filename ) {
-				$form .= $this->skin->makeKnownLinkObj( $titleObj, htmlspecialchars( $row->acd_filename ),
+				$form .= Linker::makeKnownLinkObj( $titleObj, htmlspecialchars( $row->acd_filename ),
 					'file=' . $row->acd_storage_key );
 			} else {
 				$form .= wfMsgHtml( 'confirmaccount-none-p' );
@@ -204,6 +207,7 @@ class UserCredentialsPage extends SpecialPage {
 		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
 		$path = $repo->getZonePath( 'public' ) . '/' .
 			UserAccountRequest::relPathFromKey( $key );
+
 		StreamFile::stream( $path );
 	}
 
