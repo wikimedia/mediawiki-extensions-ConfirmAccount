@@ -32,6 +32,12 @@ class AccountConfirmSubmission {
 	 * @return array( true or error key string, html error msg or null )
 	 */
 	public function submit( IContextSource $context ) {
+		# Make sure that basic permissions are checked
+		if ( !$this->admin->getID() || !$this->admin->isAllowed( 'confirmaccount' ) ) {
+			return array( 'accountconf_permission_denied', wfMsgHtml( 'badaccess-group0' ) );
+		} elseif ( wfReadOnly() ) {
+			return array( 'accountconf_readonly', wfMsgHtml( 'badaccess-group0' ) );
+		}
 		if ( $this->action === 'spam' ) {
 			return $this->spamRequest( $context );
 		} elseif ( $this->action === 'reject' ) {
@@ -70,18 +76,16 @@ class AccountConfirmSubmission {
 			$u->setEmail( $this->accountReq->getEmail() );
 			# Send out a rejection email...
 			if ( $this->reason != '' ) {
-				$result = $u->sendMail(
-					wfMsgForContent( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body4',
-						array( 'parsemag', 'content' ), $u->getName(), $this->reason )
-				);
-			} else { // no reason given
-				$result = $u->sendMail(
-					wfMsgForContent( 'confirmaccount-email-subj' ),
-					wfMsgExt( 'confirmaccount-email-body3',
-						array( 'parsemag', 'content' ), $u->getName() )
-				);
+				$emailBody = wfMsgExt( 'confirmaccount-email-body4',
+					array( 'parsemag', 'content' ), $u->getName(), $this->reason );
+			} else {
+				$emailBody = wfMsgExt( 'confirmaccount-email-body3',
+					array( 'parsemag', 'content' ), $u->getName() );
 			}
+			$result = $u->sendMail(
+				wfMsgForContent( 'confirmaccount-email-subj' ),
+				$emailBody
+			);
 			if ( !$result->isOk() ) {
 				$dbw->rollback();
 				return array( 'accountconf_mailerror',
@@ -200,7 +204,7 @@ class AccountConfirmSubmission {
 					# DELETE new rows in case there was a COMMIT somewhere
 					$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
 					return array( 'accountconf_copyfailed',
-						$context->getOutput()->parse( $result->getWikiText() ) );
+						$context->getOutput()->parse( $status->getWikiText() ) );
 				}
 			}
 			$acd_id = $dbw->nextSequenceValue( 'account_credentials_acd_id_seq' );

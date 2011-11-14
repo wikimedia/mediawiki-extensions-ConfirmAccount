@@ -287,4 +287,21 @@ class ConfirmAccount {
 		}
 		return $res;
 	}
+
+	/**
+	 * Get a block for this user if they are blocked from requesting accounts
+	 * @param User $user
+	 * @return Block|null 
+	 */
+	public static function getAccountRequestBlock( User $user ) {
+		global $wgAccountRequestWhileBlocked;
+
+		$block = false;
+		# If a user cannot make accounts, don't let them request them either
+		if ( !$wgAccountRequestWhileBlocked ) {
+			$block = $user->isBlockedFromCreateAccount();
+		}
+
+		return $block;
+	}
 }

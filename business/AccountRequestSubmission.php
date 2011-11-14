@@ -65,7 +65,16 @@ class AccountRequestSubmission {
 	public function submit( IContextSource $context ) {
 		global $wgAuth, $wgAccountRequestThrottle, $wgMemc, $wgContLang;
 		global $wgAccountRequestToS, $wgAccountRequestMinWords;
+
 		$reqUser = $this->requester;
+
+		# Make sure that basic permissions are checked
+		$block = ConfirmAccount::getAccountRequestBlock( $reqUser );
+		if ( $block ) {
+			return array( 'accountreq_permission_denied', wfMsgHtml( 'badaccess-group0' ) );
+		} elseif ( wfReadOnly() ) {
+			return array( 'accountreq_readonly', wfMsgHtml( 'badaccess-group0' ) );
+		}
 
 		# Now create a dummy user ($u) and check if it is valid
 		if ( $this->userName === '' ) {

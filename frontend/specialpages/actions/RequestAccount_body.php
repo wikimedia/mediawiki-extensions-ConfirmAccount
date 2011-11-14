@@ -24,18 +24,15 @@ class RequestAccountPage extends SpecialPage {
 
 	function execute( $par ) {
 		global $wgUseRealNamesOnly, $wgAccountRequestToS, $wgAccountRequestExtraInfo;
-		global $wgAccountRequestTypes, $wgAccountRequestWhileBlocked;
+		global $wgAccountRequestTypes;
 
 		$reqUser = $this->getUser();
 		$request = $this->getRequest();
 
-		# If a user cannot make accounts, don't let them request them either
-		if ( !$wgAccountRequestWhileBlocked ) {
-			if ( ( $block = $reqUser->isBlockedFromCreateAccount() ) ) {
-				throw new UserBlockedError( $block );
-			}
-		}
-		if ( wfReadOnly() ) {
+		$block = ConfirmAccount::getAccountRequestBlock( $reqUser );
+		if ( $block ) {
+			throw new UserBlockedError( $block );
+		} elseif ( wfReadOnly() ) {
 			throw new ReadOnlyError();
 		}
 
