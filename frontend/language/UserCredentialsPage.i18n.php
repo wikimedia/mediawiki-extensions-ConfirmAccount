@@ -1441,6 +1441,7 @@ $messages['os'] = array(
  */
 $messages['pdc'] = array(
 	'usercredentials-user' => 'Yuuser-Naame:',
+	'usercredentials-email' => 'E-Poschd:',
 );
 
 /** Plautdietsch (Plautdietsch)

@@ -3083,6 +3083,7 @@ $messages['pa'] = array(
  */
 $messages['pdc'] = array(
 	'requestaccount-level-0' => 'Schreiwer',
+	'requestaccount-level-1' => 'Schreiwer',
 );
 
 /** Polish (Polski)

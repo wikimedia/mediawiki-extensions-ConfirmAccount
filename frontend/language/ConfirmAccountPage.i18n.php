@@ -5234,9 +5234,12 @@ $messages['pa'] = array(
  */
 $messages['pdc'] = array(
 	'confirmaccount-real-q' => 'Naame',
+	'confirmaccount-email-q' => 'E-Poschd',
 	'confirmaccount-name' => 'Yuuser-Naame',
 	'confirmaccount-real' => 'Naame:',
+	'confirmaccount-email' => 'E-Poschd:',
 	'confirmaccount-pos-0' => 'Schreiwer',
+	'confirmaccount-pos-1' => 'Schreiwer',
 	'confirmaccount-noreason' => '(nix)',
 	'confirmaccount-wsum' => 'Wilkum!',
 );
