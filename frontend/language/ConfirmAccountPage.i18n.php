@@ -1210,11 +1210,11 @@ $messages['da'] = array(
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'confirmaccounts' => 'Benutzerkonto-Anträge bestätigen',
-	'confirmedit-desc' => 'Gibt Bürokraten die Möglichkeit, Benutzerkontenanträge zu bestätigen',
+	'confirmaccounts' => 'Benutzerkontenanträge bestätigen',
+	'confirmedit-desc' => 'Ermöglicht es Bürokraten, Benutzerkontenanträge zu bestätigen',
 	'confirmaccount-maintext' => "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}'' zu bearbeiten.'''
 
-Jede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
+Jede Benutzerkontenwarteschlange besteht aus drei Unterwarteschlangen. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.
 
 Wenn du auf einen Antrag antwortest, überprüfe die Informationen sorgfältig und bestätige die enthaltenen Informationen.
 Deine Aktionen werden nichtöffentlich protokolliert. Es wird auch von dir erwartet, die Aktionen anderer zu überprüfen.",
@@ -1266,7 +1266,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-notes' => 'Zusätzliche Hinweise:',
 	'confirmaccount-urls' => 'Liste der Webseiten:',
 	'confirmaccount-none-p' => '(Nichts angegeben)',
-	'confirmaccount-confirm' => 'Benutze die folgende Auswahl, um den Antrag zu akzeptieren, abzulehnen oder noch zu warten.',
+	'confirmaccount-confirm' => 'Benutze die folgende Auswahl, um den Antrag zu bestätigen, abzulehnen oder noch abzuwarten.',
 	'confirmaccount-econf' => '(bestätigt)',
 	'confirmaccount-reject' => '(abgelehnt durch [[User:$1|$1]] am $2)',
 	'confirmaccount-rational' => 'Begründung für den Antragssteller:',
@@ -1275,18 +1275,19 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-held' => '(markiert als „abwarten“ durch [[User:$1|$1]] am $3 um $4 Uhr)',
 	'confirmaccount-create' => 'Bestätigen (Konto anlegen)',
 	'confirmaccount-deny' => 'Ablehnen (Antrag löschen)',
-	'confirmaccount-hold' => 'Markiert als „abwarten“',
+	'confirmaccount-hold' => 'Markiert mit „abwarten“',
 	'confirmaccount-spam' => 'Spam (keine E-Mail verschicken)',
 	'confirmaccount-reason' => 'Begründung (wird in die E-Mail an den Antragsteller eingefügt):',
 	'confirmaccount-ip' => 'IP-Adresse:',
 	'confirmaccount-legend' => 'Bestätigen/Ablehnen des Antrags',
 	'confirmaccount-submit' => 'Abschicken',
 	'confirmaccount-needreason' => 'Du musst eine Begründung eingeben.',
-	'confirmaccount-canthold' => 'Dieser Antrag wurde bereits als „abwarten“ markiert oder gelöscht.',
+	'confirmaccount-canthold' => 'Dieser Antrag wurde bereits mit „abwarten“ markiert oder gelöscht.',
+	'confirmaccount-badaction' => 'Es muss eine gültige Aktion (bestätigen, ablehnen, abwarten) angegeben werden, um fortfahren zu können.',
 	'confirmaccount-acc' => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[User:$1|$1]] wurde angelegt.',
 	'confirmaccount-rej' => 'Benutzerantrag wurde abgelehnt.',
 	'confirmaccount-viewing' => '(wird aktuell angeschaut durch [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Erzeuge Benutzerseite mit der Biographie des neuen Benutzers.',
+	'confirmaccount-summary' => 'Die Benutzerseite wird für den neuen Benutzer erstellt.',
 	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
 Wir hoffen, dass du viele gute Informationen beisteuerst.
 Möglicherweise möchtest du zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen.
@@ -1494,7 +1495,7 @@ Snaź jo južo docynjone.',
 jo se załožyło nowe konto za wužywarja [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Póžedanje na konto wuspěšnje wótpokazane.',
 	'confirmaccount-viewing' => '(woglědujo se tuchylu wót wužywarja [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Napóranje wužywarskego boka z biografiju nowego wužywarja.',
+	'confirmaccount-summary' => 'Napórajo se wužywarski bok za nowego wužywarja.',
 	'confirmaccount-welc' => "'''Witaj do ''{{GRAMMAR:genitiw|{{SITENAME}}}}''!'''
 Naźejamy se, až librujoš wjele dobrych pśinoskow.
 Nejskerjej coš [[{{MediaWiki:Helppage}}|boki pomocy]] cytaś.
@@ -1984,7 +1985,7 @@ Se voi olla jo käsitelty.',
 Käyttäjätunnus [[User:$1|$1]] luotiin.',
 	'confirmaccount-rej' => 'Pyynnön hylkääminen onnistui.',
 	'confirmaccount-viewing' => '(juuri nyt katseltavana käyttäjällä [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Luodaan uuden käyttäjän tiedot sisältävä käyttäjäsivu.',
+	'confirmaccount-summary' => 'Luodaan käyttäjäsivu uudelle käyttäjälle.',
 	'confirmaccount-welc' => "'''Tervetuloa ''{{SITENAME}}''-sivustolle!''' Toivomme runsasta ja laadukasta kirjoittelua.
 Haluat varmaan lukea [[{{MediaWiki:Helppage}}|ohjesivut]]. Vielä kerran tervetuloa ja pidä hauskaa!",
 	'confirmaccount-wsum' => 'Tervetuloa!',
@@ -2025,6 +2026,7 @@ Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myönt
 /** French (Français)
  * @author Crochet.david
  * @author Dereckson
+ * @author Gomoko
  * @author Grondin
  * @author IAlex
  * @author Louperivois
@@ -2108,10 +2110,11 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-submit' => 'Confirmation',
 	'confirmaccount-needreason' => 'Vous devez indiquer un motif dans le cadre ci-après.',
 	'confirmaccount-canthold' => 'Cette requête est déjà, soit prise en compte, soit supprimée.',
+	'confirmaccount-badaction' => 'Une action valide (accepter, refuser, retenir) doit être spécifiée pour continuer.',
 	'confirmaccount-acc' => 'La demande de compte a été confirmée avec succès ; création du nouvel utilisateur [[User:$1]].',
 	'confirmaccount-rej' => 'La demande a été rejetée avec succès.',
 	'confirmaccount-viewing' => "(actuellement en train d'être visionné par [[User:$1|$1]])",
-	'confirmaccount-summary' => 'Création de la page utilisateur avec sa biographie.',
+	'confirmaccount-summary' => 'Création de la page utilisateur pour un nouvel utilisateur.',
 	'confirmaccount-welc' => "'''Bienvenue sur ''{{SITENAME}}'' !''' Nous espérons que vous contribuerez en quantité et en qualité. Vous désirerez, peut-être, lire [[{{MediaWiki:Helppage}}|les pages d'aide]]. Bienvenue encore et bonne contribution !
 <nowiki>~~~~</nowiki>",
 	'confirmaccount-wsum' => 'Bienvenue !',
@@ -2236,7 +2239,7 @@ $messages['ga'] = array(
  */
 $messages['gl'] = array(
 	'confirmaccounts' => 'Confirmar solicitudes de contas',
-	'confirmedit-desc' => 'Dar aos burócratas a capacidade para confirmar as solicitudes de contas',
+	'confirmedit-desc' => 'Dá aos burócratas a capacidade de confirmar as solicitudes de contas',
 	'confirmaccount-maintext' => "'''Esta páxina é usada para confirmar as súas solicitudes de conta pendentes en ''{{SITENAME}}''.'''
 
 Cada cola de solicitudes de conta consiste en tres subcuestións, unha para abrila, outra para aquelas que fosen postas por outros administradores en espera de máis información e unha última para as solicitudes rexeitadas recentemente. 
@@ -2316,7 +2319,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 creouse a nova conta de usuario "[[User:$1|$1]]".',
 	'confirmaccount-rej' => 'Rexeitouse sen problemas a solicitude de conta.',
 	'confirmaccount-viewing' => '(actualmente sendo visto por [[User:$1|$1]])',
-	'confirmaccount-summary' => 'A crear a páxina de usuario coa biografía do novo usuario.',
+	'confirmaccount-summary' => 'Creando a páxina do novo usuario.',
 	'confirmaccount-welc' => "'''Reciba a benvida a ''{{SITENAME}}''!''' Esperamos que contribúa moito e ben.
 Quizais queira ler as [[{{MediaWiki:Helppage}}|páxinas de axuda]]. De novo, reciba a nosa benvida e divírtase!",
 	'confirmaccount-wsum' => 'Reciba a nosa benvida!',
@@ -2908,7 +2911,7 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-acc' => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[User:$1|$1]] bu wutworjene.',
 	'confirmaccount-rej' => 'Požadanje za kontom bu wotpokazane.',
 	'confirmaccount-viewing' => '(wobhladuje so runje wot [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Wutworja so wužiwarska strona z biografiju noweho wužiwarja.',
+	'confirmaccount-summary' => 'Wutworja so wužiwarska strona za noweho wužiwarja.',
 	'confirmaccount-welc' => "'''Witaj do ''{{SITENAME}}''!'''
 Nadźijemy so, zo dodaš wjele dobrych přinoškow.
 Snano chceš najprjedy [[Pomoc:Prěnje kroki|Prěnje kroki]] čitać.
@@ -3153,11 +3156,12 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Tu debe fornir un motivo in le quadro de commento infra.',
 	'confirmaccount-canthold' => 'Iste requesta ha ja essite suspendite o delite.',
+	'confirmaccount-badaction' => 'Un action valide (acceptar, refusar, retener) debe esser specificate pro continuar.',
 	'confirmaccount-acc' => 'Le requesta de conto ha essite confirmate con successo;
 creava nove conto de usator [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Le requesta de conto ha essite rejectate con successo.',
 	'confirmaccount-viewing' => '(a iste momento in revision per [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Crea pagina de usator con biographia del nove usator.',
+	'confirmaccount-summary' => 'Crea pagina de usator pro nove usator.',
 	'confirmaccount-welc' => "'''Benvenite a ''{{SITENAME}}''!'''
 Nos spera que tu contribuera multo e ben.
 Tu volera probabilemente leger le [[{{MediaWiki:Helppage}}|paginas de adjuta]].
@@ -4303,11 +4307,12 @@ $messages['mk'] = array(
 	'confirmaccount-submit' => 'Потврди',
 	'confirmaccount-needreason' => 'Морате да наведете причина во полето за коментар подолу.',
 	'confirmaccount-canthold' => 'Ова барање е веќе во задршка или е избришано.',
+	'confirmaccount-badaction' => 'Неважечка постапка. За да продолжите мора да назначите прифати, одбиј или задршка.',
 	'confirmaccount-acc' => 'Барањето за сметка е успешно потврдено;
 создадена е нова сметка [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Барањето за сметка е успешно одбиено.',
 	'confirmaccount-viewing' => '(во моментов ја гледа корисникот [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Создавање на корисничка страница со биографија на новиот корисник.',
+	'confirmaccount-summary' => 'Создавање на корисничка страница на нов корисник.',
 	'confirmaccount-welc' => "'''Добредојдовте на ''{{SITENAME}}''!'''
 Се надеваме дека ќе придонесувате многу и квалитетно.
 Препорачуваме да ги прочитате [[{{MediaWiki:Helppage}}|страниците за помош]].
