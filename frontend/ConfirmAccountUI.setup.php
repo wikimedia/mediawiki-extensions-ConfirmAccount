@@ -46,7 +46,7 @@ class ConfirmAccountUISetup {
 		$modules['ext.confirmAccount'] = array(
 			'styles'        => 'confirmaccount.css',
 			'localBasePath' => dirname( __FILE__ ) . '/modules',
-			'remoteExtPath' => 'ConfirmAccount/presentation/modules',
+			'remoteExtPath' => 'ConfirmAccount/frontend/modules',
 		);
 	}
 }
