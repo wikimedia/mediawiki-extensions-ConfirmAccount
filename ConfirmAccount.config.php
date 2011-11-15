@@ -35,11 +35,10 @@ $wgAllowAccountRequestFiles = true;
 # If files can be attached, what types can be used? (MIME data is checked)
 $wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
 
-# Prospective account access levels.
-# Each level has it's own request queue at Special:ConfirmAccount.
+# Prospective account request types.
 # Format is an array of (integer => (subpage param,user group,autotext)) pairs.
-# The integer keys enumerate the request type. The key for a type should not change. 
-# The account queues are at Special:ConfirmAccount/<subpage param>.
+# The integer keys enumerate the request types. The key for a type should not change. 
+# Each type has its own request queue at Special:ConfirmAccount/<subpage param>.
 # When a request of a certain type is approved, the new user:
 # (a) is placed in the <user group> group (if not User or *)
 # (b) has <autotext> appended to his or her user page
