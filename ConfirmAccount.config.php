@@ -36,17 +36,19 @@ $wgAllowAccountRequestFiles = true;
 $wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
 
 # Prospective account access levels.
-# An associative array of integer => (special page param,user group,autotext) pairs.
-# The account queues are at Special:ConfirmAccount/param. The integer keys enumerate the type.
-# When a request of a certain type (param) is approved, the new user:
+# Each level has it's own request queue at Special:ConfirmAccount.
+# Format is an array of (integer => (subpage param,user group,autotext)) pairs.
+# The integer keys enumerate the request type. The key for a type should not change. 
+# The account queues are at Special:ConfirmAccount/<subpage param>.
+# When a request of a certain type is approved, the new user:
 # (a) is placed in the <user group> group (if not User or *)
-# (b) <autotext> is appended his/her user page
+# (b) has <autotext> appended to his or her user page
 $wgAccountRequestTypes = array(
 	0 => array( 'authors', 'user', null )
 );
 
 # If set, will add {{DEFAULTSORT:sortkey}} to userpages for auto-categories.
-# The sortkey will be made be replacing the first element of this array
+# The sortkey will be made by replacing the first element of this array
 # (regexp) with the second. Set this variable to false to avoid sortkey use.
 $wgConfirmAccountSortkey = false;
 // For example, the below will do {{DEFAULTSORT:firstname, lastname}}
