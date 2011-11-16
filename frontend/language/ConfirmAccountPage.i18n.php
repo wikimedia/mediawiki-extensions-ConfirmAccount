@@ -1266,7 +1266,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-notes' => 'Zusätzliche Hinweise:',
 	'confirmaccount-urls' => 'Liste der Webseiten:',
 	'confirmaccount-none-p' => '(Nichts angegeben)',
-	'confirmaccount-confirm' => 'Benutze die folgende Auswahl, um den Antrag zu bestätigen, abzulehnen oder noch abzuwarten.',
+	'confirmaccount-confirm' => 'Nutze die folgende Auswahl, um den Antrag zu bestätigen, abzulehnen oder um noch abzuwarten.',
 	'confirmaccount-econf' => '(bestätigt)',
 	'confirmaccount-reject' => '(abgelehnt durch [[User:$1|$1]] am $2)',
 	'confirmaccount-rational' => 'Begründung für den Antragssteller:',
@@ -1356,7 +1356,7 @@ Bitte beachten Sie, dass Sie den Zugang bei Bedarf unter einem anderen Benutzern
 Sie sollten dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.
 
 Wenn Sie diese Seite verlassen, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.",
-	'confirmaccount-confirm' => 'Benutzen Sie die folgende Auswahl, um den Antrag zu akzeptieren, abzulehnen oder noch zu warten.',
+	'confirmaccount-confirm' => 'Nutzen Sie die folgende Auswahl, um den Antrag zu bestätigen, abzulehnen oder um noch abzuwarten.',
 	'confirmaccount-needreason' => 'Sie müssen eine Begründung eingeben.',
 	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
 Wir hoffen, dass Sie viele gute Informationen beisteuern.
@@ -2093,7 +2093,7 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-notes' => 'Notes supplémentaires :',
 	'confirmaccount-urls' => 'Liste des sites web :',
 	'confirmaccount-none-p' => '(non pourvu)',
-	'confirmaccount-confirm' => 'Utilisez les boutons ci-dessous pour accepter ou rejeter la demande.',
+	'confirmaccount-confirm' => 'Utilisez les options ci-dessous pour accepter, rejeter ou mettre en attente la demande:',
 	'confirmaccount-econf' => '(confirmé)',
 	'confirmaccount-reject' => '(rejeté par [[User:$1|$1]] le $2)',
 	'confirmaccount-rational' => 'Motif donné au candidat',
@@ -2240,19 +2240,19 @@ $messages['ga'] = array(
 $messages['gl'] = array(
 	'confirmaccounts' => 'Confirmar solicitudes de contas',
 	'confirmedit-desc' => 'Dá aos burócratas a capacidade de confirmar as solicitudes de contas',
-	'confirmaccount-maintext' => "'''Esta páxina é usada para confirmar as súas solicitudes de conta pendentes en ''{{SITENAME}}''.'''
+	'confirmaccount-maintext' => "'''Esta páxina úsase para confirmar as solicitudes de contas pendentes en ''{{SITENAME}}''.'''
 
-Cada cola de solicitudes de conta consiste en tres subcuestións, unha para abrila, outra para aquelas que fosen postas por outros administradores en espera de máis información e unha última para as solicitudes rexeitadas recentemente. 
+Cada cola de solicitudes consiste en tres sublistas.
+Unha para abrir a solicitude, outra para aquelas que fosen postas por outros administradores en espera de máis información e unha última para as solicitudes rexeitadas recentemente.
 
-Ao respostar unha solicitude revísea con coidado e, se é necesario, confirme a información alí contida.  
-As súas accións serán rexistradas de maneira privada.
+Ao responder unha solicitude revísea con coidado e, se é necesario, confirme a información alí contida.
+As súas accións quedarán rexistradas de maneira privada.
 Agárdase tamén que revise calquera actividade que teña lugar aquí á parte das súas propias.",
-	'confirmaccount-list' => 'Abaixo aparece unha lista de contas pendentes de aprobación.
-	As contas aprobadas crearanse e eliminaranse desta lista. As contas rexeitadas simplemente eliminaranse desta lista.',
-	'confirmaccount-list2' => 'Abaixo aparece unha lista con solicitudes de contas rexeitadas recentemente que poden eliminarse automaticamente
-	unha vez que teñan varios días. Poden aínda ser aceptadas como contas, aínda que pode ser mellor que consulte primeiro
-	co administrador que as rexeitou antes de facelo.',
-	'confirmaccount-list3' => 'Embaixo hai unha lista coas solicitudes de contas que caducaron e que poden ser borradas automaticamente unha vez que teñan uns días.
+	'confirmaccount-list' => 'A continuación está a lista de contas pendentes de aprobación.
+As contas aprobadas crearanse e eliminaranse desta lista. As contas rexeitadas simplemente eliminaranse desta lista.',
+	'confirmaccount-list2' => 'A continuación está a lista de solicitudes de contas rexeitadas recentemente que poden eliminarse automaticamente unha vez que teñan varios días.
+Poden aínda ser aceptadas como contas, aínda que pode ser mellor que consulte primeiro co administrador que as rexeitou antes de facelo.',
+	'confirmaccount-list3' => 'A continuación está a lista coas solicitudes de contas que caducaron e que poden ser borradas automaticamente unha vez que teñan uns días.
 Aínda poden ser aprobadas como contas.',
 	'confirmaccount-text' => "Esta é unha solicitude pendente dunha conta de usuario en '''{{SITENAME}}'''.
 
@@ -2298,7 +2298,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-notes' => 'Notas adicionais:',
 	'confirmaccount-urls' => 'Lista de sitios web:',
 	'confirmaccount-none-p' => '(non fornecido)',
-	'confirmaccount-confirm' => 'Use os botóns de embaixo para aceptar, rexeitar ou deixar en suspenso esta solicitude:',
+	'confirmaccount-confirm' => 'Use os botóns inferiores para aceptar, rexeitar ou deixar en suspenso esta solicitude:',
 	'confirmaccount-econf' => '(confirmada)',
 	'confirmaccount-reject' => '(rexeitada por [[User:$1|$1]] en $2)',
 	'confirmaccount-rational' => 'Explicación dada ao solicitante:',
@@ -2315,6 +2315,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Debe incluír un motivo na caixa de comentarios de embaixo.',
 	'confirmaccount-canthold' => 'Esta solicitude está en espera ou foi borrada.',
+	'confirmaccount-badaction' => 'Cómpre especificar unha acción válida (aceptar, rexeitar, reter) para poder continuar.',
 	'confirmaccount-acc' => 'Confirmouse sen problemas a solicitude de conta;
 creouse a nova conta de usuario "[[User:$1|$1]]".',
 	'confirmaccount-rej' => 'Rexeitouse sen problemas a solicitude de conta.',
@@ -2891,7 +2892,7 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-notes' => 'Přidatne přispomnjenki:',
 	'confirmaccount-urls' => 'Lisćina webowych sydłow:',
 	'confirmaccount-none-p' => '(njepodaty)',
-	'confirmaccount-confirm' => 'Wužij tłóčatka deleka, zo by požadanje akceptował abo wotpokazał.',
+	'confirmaccount-confirm' => 'Wužij slědowace opcije, zo by tute požadanje akceptował, wotpokazał abo wočakał:',
 	'confirmaccount-econf' => '(potwjerdźene)',
 	'confirmaccount-reject' => '(wot [[Wužiwar:$1|$1]] na $2 wotpokazany)',
 	'confirmaccount-rational' => 'Rozjasnjenje požadarjej:',
@@ -2908,6 +2909,7 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-submit' => 'Potwjerdźić',
 	'confirmaccount-needreason' => 'Dyrbiš deleka w komentarowym polu přičinu podać.',
 	'confirmaccount-canthold' => 'Tute požadanje je pak hižo čakanskej sekli pak wušmórnjene.',
+	'confirmaccount-badaction' => 'Dyrbiš płaćiwu akciju (akceptować, wotpokazać, wočakać) podać, zo by pokročował.',
 	'confirmaccount-acc' => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[User:$1|$1]] bu wutworjene.',
 	'confirmaccount-rej' => 'Požadanje za kontom bu wotpokazane.',
 	'confirmaccount-viewing' => '(wobhladuje so runje wot [[User:$1|$1]])',
@@ -3139,7 +3141,7 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-notes' => 'Notas additional:',
 	'confirmaccount-urls' => 'Lista de sitos web:',
 	'confirmaccount-none-p' => '(non fornite)',
-	'confirmaccount-confirm' => 'Usa le optiones infra pro acceptar, refusar, o suspender iste requesta:',
+	'confirmaccount-confirm' => 'Usa le optiones hic infra pro acceptar, rejectar o suspender iste requesta:',
 	'confirmaccount-econf' => '(confirmate)',
 	'confirmaccount-reject' => '(rejectate per [[User:$1|$1]] le $2)',
 	'confirmaccount-rational' => 'Motivo date al candidato:',
@@ -4290,7 +4292,7 @@ $messages['mk'] = array(
 	'confirmaccount-notes' => 'Дополнителни белешки:',
 	'confirmaccount-urls' => 'Список на мрежни места:',
 	'confirmaccount-none-p' => '(не е наведено)',
-	'confirmaccount-confirm' => 'Користете ги нагодувањата подолу за да го прифатите, одбиете или задржите ова барање:',
+	'confirmaccount-confirm' => 'Подолу изберете дали да го прифатите, одбиете или задржите ова барање:',
 	'confirmaccount-econf' => '(потврдено)',
 	'confirmaccount-reject' => '(одбиено од [[User:$1|$1]] на $2)',
 	'confirmaccount-rational' => 'Објаснение за барателот:',
@@ -4634,11 +4636,12 @@ Mungkin ia sudah diuruskan.',
 	'confirmaccount-submit' => 'Sahkan',
 	'confirmaccount-needreason' => 'Anda mesti menyatakan sebab dalam ruangan komen di bawah.',
 	'confirmaccount-canthold' => 'Permohonan ini digantung atau dihapuskan.',
+	'confirmaccount-badaction' => 'Tindakan yang sah (terima, tolak, gantung) mestilah dinyatakan untuk teruskan.',
 	'confirmaccount-acc' => 'Permohonan akaun berjaya disahkan;
 	akaun pengguna baru [[User:$1|$1]] dicipta.',
 	'confirmaccount-rej' => 'Permohonan akaun berjaya ditolak.',
 	'confirmaccount-viewing' => '(sedang diliha oleh [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Laman pengguna diwujudkan dengan biografi pengguna baru.',
+	'confirmaccount-summary' => 'Laman pengguna diwujudkan untuk pengguna baru.',
 	'confirmaccount-welc' => "'''Selamat datang ''{{SITENAME}}''!'''
 Kami berharap agar anda memberikan sumbangan yang banyak dan bermanfaat di sini.
 Apa kata anda membaca [[{{MediaWiki:Helppage}}|laman-laman bantuan]] terlebih dahulu.
@@ -4822,10 +4825,11 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-submit' => 'Bevestigen',
 	'confirmaccount-needreason' => 'U moet een reden geven in het onderstaande veld.',
 	'confirmaccount-canthold' => 'Deze aanvraag heeft al de status aangehouden of verwijderd.',
+	'confirmaccount-badaction' => 'Er moet een geldige handeling worden opgegeven om door te kunnen gaan (accepteren, afwijzen, aanhouden).',
 	'confirmaccount-acc' => 'Gebruikersaanvraag goedgekeurd. De gebruiker [[User:$1|$1]] is aangemaakt.',
 	'confirmaccount-rej' => 'Gebruikersaanvraag afgewezen.',
 	'confirmaccount-viewing' => '(op dit ogenblik bekeken door [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt met de biografie van de nieuwe gebruiker.',
+	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt voor de nieuwe gebruiker.',
 	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert. 
 Waarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen. Nogmaals, welkom en veel plezier!",
 	'confirmaccount-wsum' => 'Welkom!',
@@ -6182,7 +6186,7 @@ $messages['sr-ec'] = array(
 направљен је нови кориснички налог [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Захтев за налогом успешно одбачен.',
 	'confirmaccount-viewing' => '(тренутно прегледа [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Прављење корисничке стране са биографијом новог корисника.',
+	'confirmaccount-summary' => 'Стварање корисничке странице за новог корисника.',
 	'confirmaccount-wsum' => 'Добро дошли!',
 );
 
@@ -6273,10 +6277,10 @@ Wan du ap n Andraach oantwoudest, wröich dan do Informatione suurgfooldich un b
 Dien Aktione wäide nit-eepentelk protokollierd. Der wäd uk fon die ferwachted, do Aktione fon uurswäkke tou wröigjen.",
 	'confirmaccount-list' => 'Hier unner finst du ne Lieste fon noch tou beoarbaidjene Benutserkonto-Froagen.
 Bestäätigede Konten wäide anlaid un uut ju Lieste wächhoald. Ouliende Konten wäide eenfach uut ju Lieste läsked.',
-	'confirmaccount-list2' => 'Unner is ne Lieste fon knu touräächwiesde Andraage, do automatisk läsked wäide, so gau do eenige Deege oold sunt. Do konnen noch geneemigd wäide, man in älke Fal schuust du eerste dän oulienenden Administrator kontaktierje.',
+	'confirmaccount-list2' => 'Unner is ne Lieste fon knu touräächwiesde Andraage, do automatisk läsked wäide, so gau do eenige Deege oold sunt. Do konnen noch geneemigd wäide, man in älke Fal skuust du eerste dän oulienenden Administrator kontaktierje.',
 	'confirmaccount-list3' => 'Unner is ne Lieste knu touräächwiesde Andraage, do automatisk läsked wäide, so gau do eenige Deege oold sunt. Do konnen noch geneemigd wäide.',
 	'confirmaccount-text' => "Dit is n Andraach ap n Benutserkonto bie '''{{SITENAME}}'''. Wröigje aal hier unner stoundene Informatione gruundelk un bestäätigje do Informatione wan muugelk. Beoachtje, dät du dän Tougong bie Bedarf unner
-n uur Benutsernoome anlääse koast. Du schuust dät bloot nutsje, uum Kollisione mäd uur Noomen tou fermieden.
+n uur Benutsernoome anlääse koast. Du skuust dät bloot nutsje, uum Kollisione mäd uur Noomen tou fermieden.
 
 Wan du disse Siede ferlätst, sunner dät Konto tou bestäätigjen of outoulienen, dan blift die Andraach eepen stounde.",
 	'confirmaccount-none-o' => 'Apstuuns rakt et neen eepene Benutserandraage ap disse Lieste.',
@@ -6346,7 +6350,7 @@ Benutsernoome: $1
 
 Paaswoud: $2
 
-Uut Sicherhaidsgruunden schuust du dien Paaswoud uunbedingd bie dät eerste
+Uut Sicherhaidsgruunden skuust du dien Paaswoud uunbedingd bie dät eerste
 Ienlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede
 {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Dien Froage uum n Benutserkonto bie {{SITENAME}} wuude bestäätiged.

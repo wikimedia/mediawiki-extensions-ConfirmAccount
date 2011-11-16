@@ -434,6 +434,17 @@ $messages['lb'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|Referenze vun de Benotzer]] kucken',
 );
 
+/** Basa Banyumasan (Basa Banyumasan)
+ * @author StefanusRA
+ */
+$messages['map-bms'] = array(
+	'confirmaccount-newrequests' => "Ana '''$1''' antrean [[Special:ConfirmAccounts|{{PLURAL:$1|penjalukan|penjalukan}} akun]] sing imel-e uwis dikonfirmasi. '''Gageyan diproses!'''",
+	'requestaccount-loginnotice' => "Ben teyeng nduwe akun panganggo, Rika kudu '''[[Special:RequestAccount|njaluk akun]]'''.",
+	'right-confirmaccount' => 'Deleng [[Special:ConfirmAccounts|antrean penjalukan akun]]',
+	'right-requestips' => 'Deleng Alamat IP-ne sing njaluk akun selama proses penjalukan akun',
+	'right-lookupcredentials' => 'Deleng [[Special:UserCredentials|panganggo Kredensial]]',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  * @author Brest

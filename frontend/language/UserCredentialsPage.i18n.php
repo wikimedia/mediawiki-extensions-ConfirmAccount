@@ -1736,7 +1736,7 @@ $messages['stq'] = array(
 	'usercredentials-urls' => 'Lieste fon do Websieden:',
 	'usercredentials-ip' => 'Originoale IP-Adresse:',
 	'usercredentials-member' => 'Gjuchte:',
-	'usercredentials-badid' => 'Der wuuden neen Begjuchtigengsätterwiese foar dissen Benutser fuunen. Wröich ju Schrieuwwiese.',
+	'usercredentials-badid' => 'Der wuuden neen Begjuchtigengsätterwiese foar dissen Benutser fuunen. Wröich ju Skrieuwwiese.',
 );
 
 /** Sundanese (Basa Sunda)

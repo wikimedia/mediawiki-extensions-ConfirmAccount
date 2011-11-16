@@ -1340,7 +1340,7 @@ Unha vez que se aprobe a conta, recibirá unha mensaxe de notificación por corr
 	'requestaccount-areas-text' => 'Seleccione embaixo as áreas dos temas dos que é máis experto ou nos que lle gustaría traballar máis.',
 	'requestaccount-ext-text' => 'A información seguinte mantense como reservada e só se usará para esta solicitude.
 	Pode querer listar contactos, como un número de teléfono, para axudar a identificar a confirmación.',
-	'requestaccount-bio-text' => 'Tente incluír algunhas credenciais relevantes na súa biografía.',
+	'requestaccount-bio-text' => 'Intente incluír algunhas credenciais relevantes na súa biografía.',
 	'requestaccount-bio-text-i' => "'''A súa biografía será definida como o contido inicial da súa páxina de usuario.'''
 Asegúrese de que se sinte cómodo publicando esa información.",
 	'requestaccount-real' => 'Nome real:',
@@ -3624,8 +3624,8 @@ $messages['sr-ec'] = array(
 	'requestaccount-level-0' => 'аутор',
 	'requestaccount-level-1' => 'уређивач',
 	'requestaccount-info' => '(?)',
-	'requestaccount-bio' => 'Лична биографија:',
-	'requestaccount-attach' => 'Резиме или CV (необавезно):',
+	'requestaccount-bio' => 'Лична биографија (само прост текст):',
+	'requestaccount-attach' => 'Резиме или радна биографија (необавезно):',
 	'requestaccount-notes' => 'Додатне напомене:',
 	'requestaccount-urls' => 'Списак вебсајтова, ако их има (одвојени новим линијама):',
 	'requestaccount-agree' => 'Морате да потврдите да сте добро унели своје право име и да се сложите са условима коришћења.',
@@ -3676,7 +3676,7 @@ $messages['stq'] = array(
 
 	Läs eerste do [[{{MediaWiki:Requestaccount-page}}|Nutsengsbedingengen]] eer du n Benutserkonto fräigest.
 
-	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Bescheed un du koast die [[{{ns:special}}:Userlogin|anmäldje]].",
+	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Beskeed un du koast die [[{{ns:special}}:Userlogin|anmäldje]].",
 	'requestaccount-page' => '{{ns:project}}:Nutsengsbedingengen',
 	'requestaccount-dup' => "'''Oachtenge: Du bäst al mäd n registrierd Benutserkonto ienlogged.'''",
 	'requestaccount-leg-user' => 'Benutserkonto',
@@ -3687,7 +3687,7 @@ $messages['stq'] = array(
 Reagier deerap, wan du ap ju in ju Mail äntheeldene Bestäätigengsferbiendenge klikst.
 Sobolde n dien Konto anlaid wuude,
 wäd die dien Paaswoud per E-Mail tousoand.',
-	'requestaccount-areas-text' => 'Wääl do Themengebiete uut, in do du dät maaste Fäkwieten hääst of wier du ap maaste involvierd weese schääst.',
+	'requestaccount-areas-text' => 'Wääl do Themengebiete uut, in do du dät maaste Fäkwieten hääst of wier du ap maaste involvierd weese skääst.',
 	'requestaccount-ext-text' => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
 ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaidenge fon din Andraach eenfacher tou moakjen.',
 	'requestaccount-bio-text' => 'Dien Biographie wäd as initioale Inhoold fon dien Benutsersiede spiekerd. Fersäik aal do nöödige Referenzen tou ärwäänen, man staal sicher, dät du do Informatione wuddelk eepentelk bekoand moakje moatest. Du koast din Noome unner „[[{{ns:special}}:preferences|Ienstaalengen]]“ annerje.',
@@ -3703,7 +3703,7 @@ ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaid
 	'requestaccount-urls' => 'Lieste fon Websieden (truch Riegenuumbreeke tränd):',
 	'requestaccount-agree' => 'Du moast bestäätigje, dät din Realname so gjucht is un du do Benutserbedingengen akzeptierst.',
 	'requestaccount-inuse' => 'Die Benutsernoome is al in n uur Benutserandraach in Ferweendenge.',
-	'requestaccount-tooshort' => 'Dien Biographie schuul mindestens $1 Woude loang weese.',
+	'requestaccount-tooshort' => 'Dien Biographie skuul mindestens $1 Woude loang weese.',
 	'requestaccount-emaildup' => 'N wiederen noch nit ouhonnelden Andraach benutset ju glieke E-Mail-Adresse.',
 	'requestaccount-exts' => 'Die Doatäityp fon dän Anhong is nit ferlööwed.',
 	'requestaccount-resub' => 'Ju Doatäi mäd din Lieuwensloop mout uut Sicherhaidsgruunden näi uutwääld wäide.
