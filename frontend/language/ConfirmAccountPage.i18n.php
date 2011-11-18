@@ -7403,6 +7403,7 @@ $messages['yi'] = array(
 	'confirmaccount-pos-1' => 'רעדאַקטאָר',
 	'confirmaccount-bio' => 'ביאגראַפֿיע',
 	'confirmaccount-econf' => '(באשטעטיקט)',
+	'confirmaccount-create' => 'באשטעטיקן (שאפֿן קאנטע)',
 	'confirmaccount-hold' => 'האַלטן',
 	'confirmaccount-submit' => 'באַשטעטיקן',
 	'confirmaccount-wsum' => 'ברוך הבא!',
