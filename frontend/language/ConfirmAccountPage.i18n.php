@@ -1280,7 +1280,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-reason' => 'Begründung (wird in die E-Mail an den Antragsteller eingefügt):',
 	'confirmaccount-ip' => 'IP-Adresse:',
 	'confirmaccount-legend' => 'Bestätigen/Ablehnen des Antrags',
-	'confirmaccount-submit' => 'Abschicken',
+	'confirmaccount-submit' => 'Bestätigen',
 	'confirmaccount-needreason' => 'Du musst eine Begründung eingeben.',
 	'confirmaccount-canthold' => 'Dieser Antrag wurde bereits mit „abwarten“ markiert oder gelöscht.',
 	'confirmaccount-badaction' => 'Es muss eine gültige Aktion (bestätigen, ablehnen, abwarten) angegeben werden, um fortfahren zu können.',
@@ -6880,6 +6880,7 @@ Dar somona fehristi tamos mumkin ovarda şuda boşad, ki tariqi on şumo metavon
 
 /** Thai (ไทย)
  * @author Ans
+ * @author Guitar-pawat
  * @author Harley Hartwell
  * @author Octahedron80
  * @author Passawuth
@@ -6926,6 +6927,7 @@ $messages['th'] = array(
 	'confirmaccount-real' => 'ชื่อ:',
 	'confirmaccount-email' => 'อีเมล:',
 	'confirmaccount-reqtype' => 'ตำแหน่ง:',
+	'confirmaccount-pos-0' => 'ผู้เขียน',
 	'confirmaccount-pos-1' => 'ผู้แก้ไข',
 	'confirmaccount-bio' => 'ชีวประวัติ:',
 	'confirmaccount-attach' => 'เรซูเม/ประวัติการงาน:',
