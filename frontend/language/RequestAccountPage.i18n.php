@@ -85,9 +85,11 @@ You cannot make any more requests.",
  * @author Purodha
  * @author Siebrand
  * @author The Evil IP address
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'requestaccount' => '{{Identical|Request account}}',
+	'requestaccount-footer' => '{{optional}}',
 	'requestaccount-leg-user' => '{{Identical|User account}}',
 	'requestaccount-leg-areas' => '{{Identical|Main areas of interest}}',
 	'requestaccount-leg-person' => '{{Identical|Personal information}}',
@@ -98,6 +100,7 @@ $messages['qqq'] = array(
 	'requestaccount-reqtype' => '{{Identical|Position}}',
 	'requestaccount-level-0' => '{{Identical|Author}}',
 	'requestaccount-level-1' => '{{Identical|Editor}}',
+	'requestaccount-info' => '{{optional}}',
 	'requestaccount-notes' => '{{Identical|Additional notes}}',
 	'requestaccount-tos' => '"Real name" should be exactly as {{msg-mw|requestaccount-real}}, minus the colon.',
 	'requestaccount-submit' => '{{Identical|Request account}}',
@@ -3789,6 +3792,8 @@ När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till di
 	'requestaccount-ext-text' => 'Följande information kommer hållas hemlig och bara användas för denna ansökan.
 Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.',
 	'requestaccount-bio-text' => 'Försök att ange relevanta meriter och referenser i biografin nedan.',
+	'requestaccount-bio-text-i' => "'''Din biografi kommer att anges som det ursprungliga innehållet för din användarsida.'''
+Se till att du känner dig bekväm med att publicera sådan information.",
 	'requestaccount-real' => 'Riktigt namn:',
 	'requestaccount-same' => '(samma som ditt riktiga namn)',
 	'requestaccount-email' => 'E-postadress:',
