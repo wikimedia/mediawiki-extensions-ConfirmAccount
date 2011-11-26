@@ -4112,7 +4112,7 @@ Se gouf eventuell scho behandelt.',
 de Benotzerkont [[User:$1|$1]] gouf ugeluecht.',
 	'confirmaccount-rej' => "D'Ufro fir ee Benotzerkont gouf refuséiert.",
 	'confirmaccount-viewing' => '(gëtt elo gekuckt vum [[User:$1|$1]])',
-	'confirmaccount-summary' => "D'Benotzersäit mat der Biographie vum neie Benotzer gëtt elo gemaach.",
+	'confirmaccount-summary' => "D'Benotzersäit fir en neie Benotzer gëtt elo gemaach.",
 	'confirmaccount-welc' => "'''Wëllkomm op ''{{SITENAME}}''!'''
 Dir wëllt wahrscheinlech d'[[{{MediaWiki:Helppage}}|Hellëfsäite]] liesen.
 Nachemol, wëllkom a vill Spaass!",
