@@ -1265,7 +1265,7 @@ Setout que lo compto est accèptâ, vos recevréd un mèssâjo de notificacion e
 	'requestaccount-leg-tos' => 'Condicions d’usâjo',
 	'requestaccount-acc-text' => 'Un mèssâjo de confirmacion serat mandâ a voutra adrèce èlèctronica setout que la demanda arat étâ mandâ.
 Dens lo mèssâjo reçu, clicâd sur lo lim que corrèspond a la confirmacion de voutra demanda.
-Et pués, un mot de pâssa serat mandâ per mèssageria èlèctronica quand voutron compto utilisator serat fêt.',
+Et pués, un contresegno serat mandâ per mèssageria èlèctronica quand voutron compto usanciér serat fêt.',
 	'requestaccount-areas-text' => 'Chouèsésséd los domênos que vos avéd una èxpèrtisa dèmontrâ, ou ben que vos éte encllin a contribuar lo ples.',
 	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et porrat étre utilisâ ren que por ceta demanda.
 Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfono por avêr una assistance por confirmar voutra identitât.',
@@ -1294,13 +1294,13 @@ Lo nom que j’é buchiê dens lo champ « Veré nom » est franc mon prôpro no
 Un mèssâjo de confirmacion at étâ mandâ a voutra adrèce èlèctronica.',
 	'request-account-econf' => 'Voutra adrèce èlèctronica at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto utilisator.',
 	'requestaccount-email-subj' => 'Confirmacion de l’adrèce èlèctronica por {{SITENAME}}',
-	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto utilisator « $2 » avouéc ceta adrèce èlèctronica sur lo seto {{SITENAME}}.
+	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto usanciér « $2 » avouéc ceta adrèce èlèctronica sur lo seto {{SITENAME}}.
 
 Por confirmar que cél compto est franc a vos dessus {{SITENAME}}, vos éte preyê d’uvrir ceti lim dens voutron navigator :
 
 $3
 
-Voutron mot de pâssa vos serat mandâ ren que se voutron compto utilisator est fêt.
+Voutron contresegno vos serat mandâ ren que se voutron compto usanciér est fêt.
 S’o ére *pas* lo câs, utilisâd pas cél lim.
 Ceti code de confirmacion èxpirerat lo $4.',
 	'requestaccount-email-subj-admin' => 'Demanda de compto dessus {{SITENAME}}',
