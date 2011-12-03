@@ -229,8 +229,8 @@ $messages['fr'] = array(
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'confirmaccount-newrequests' => "Ora, y at '''$1''' [[Special:ConfirmAccounts|demand{{PLURAL:$1|a|es}} de compto utilisator]] qu{{PLURAL:$1|’est|e sont}} aprés étre confirmâ{{PLURAL:$1||s}}.",
-	'requestaccount-loginnotice' => "Por avêr un compto utilisator, vos dête nen fâre la '''[[Special:RequestAccount|demanda]]'''.",
+	'confirmaccount-newrequests' => "Ora, y at '''$1''' [[Special:ConfirmAccounts|demand{{PLURAL:$1|a|es}} de compto usanciér]] en cors. '''Voutra atencion est nècèssèra !'''",
+	'requestaccount-loginnotice' => "Por avêr un compto usanciér, vos en dête fâre la '''[[Special:RequestAccount|demanda]]'''.",
 );
 
 /** Galician (Galego)

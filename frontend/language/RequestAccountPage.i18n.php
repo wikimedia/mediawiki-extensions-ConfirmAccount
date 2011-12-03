@@ -1250,15 +1250,15 @@ Vous ne pouvez plus faire de demande.',
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'requestaccount' => 'Demanda de compto utilisator',
-	'requestaccount-text' => "'''Rempléd et pués mandâd lo formulèro ce-desot por demandar un compto utilisator.'''
+	'requestaccount' => 'Demanda de compto usanciér',
+	'requestaccount-text' => "'''Rempléd et pués mandâd lo formulèro ce-desot por demandar un compto usanciér.'''
 
-Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto utilisator.
+Assurâd-vos que vos éd ja liesu les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] devant que fâre voutra demanda de compto usanciér.
 
-Setout que lo compto est accèptâ, vos recevréd un mèssâjo de notificacion et pués voutron compto utilisator porrat étre utilisâ sur la [[Special:UserLogin|pâge de branchement]].",
+Setout que lo compto est accèptâ, vos recevréd un mèssâjo de notificacion et pués voutron compto usanciér porrat étre utilisâ sur la [[Special:UserLogin|pâge de branchement]].",
 	'requestaccount-page' => '{{ns:project}}:Condicions d’usâjo',
-	'requestaccount-dup' => "'''Nota : vos éte ja sur una sèance avouéc un compto utilisator encartâ.'''",
-	'requestaccount-leg-user' => 'Compto utilisator',
+	'requestaccount-dup' => "'''Nota : vos éte ja sur una sèance avouéc un compto usanciér encartâ.'''",
+	'requestaccount-leg-user' => 'Compto usanciér',
 	'requestaccount-leg-areas' => 'Centros d’entèrèts principâls',
 	'requestaccount-leg-person' => 'Enformacions a sè',
 	'requestaccount-leg-other' => 'Ôtres enformacions',
@@ -1281,7 +1281,7 @@ Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfo
 	'requestaccount-notes' => 'Notes de ples :',
 	'requestaccount-urls' => 'Lista des setos vouèbe. S’y en at un mouél, sèparâd-los per un sôt de legne :',
 	'requestaccount-agree' => 'Vos dête cèrtifiar que voutron veré nom est justo et pués que vos accèptâd les condicions d’usâjo.',
-	'requestaccount-inuse' => 'Lo nom d’utilisator est ja utilisâ dens una demanda de compto utilisator qu’est aprés étre aprovâ.',
+	'requestaccount-inuse' => 'Lo nom d’usanciér est ja utilisâ dens una demanda de compto usanciér qu’est aprés étre aprovâ.',
 	'requestaccount-tooshort' => 'Voutra biografia dêt avêr u muens $1 mot{{PLURAL:$1||s}}.',
 	'requestaccount-emaildup' => 'Una ôtra demanda qu’est aprés étre confirmâ utilise la méma adrèce èlèctronica.',
 	'requestaccount-exts' => 'Lo tipo du fichiér apondu est pas pèrmês.',
@@ -1289,10 +1289,10 @@ Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfo
 Se vos souhètâd pas més encllure ceti, lèssiéd lo champ vouedo.',
 	'requestaccount-tos' => 'J’é liesu et pués j’accèpto les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] de {{SITENAME}}.
 Lo nom que j’é buchiê dens lo champ « Veré nom » est franc mon prôpro nom.',
-	'requestaccount-submit' => 'Demanda de compto utilisator',
+	'requestaccount-submit' => 'Demanda de compto usanciér',
 	'requestaccount-sent' => 'Voutra demanda de compto at étâ mandâ avouéc reusséta et pués at étâ betâ dens la lista d’atenta d’aprobacion.
 Un mèssâjo de confirmacion at étâ mandâ a voutra adrèce èlèctronica.',
-	'request-account-econf' => 'Voutra adrèce èlèctronica at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto utilisator.',
+	'request-account-econf' => 'Voutra adrèce èlèctronica at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto usanciér.',
 	'requestaccount-email-subj' => 'Confirmacion de l’adrèce èlèctronica por {{SITENAME}}',
 	'requestaccount-email-body' => 'Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto usanciér « $2 » avouéc ceta adrèce èlèctronica sur lo seto {{SITENAME}}.
 
@@ -1304,9 +1304,9 @@ Voutron contresegno vos serat mandâ ren que se voutron compto usanciér est fê
 S’o ére *pas* lo câs, utilisâd pas cél lim.
 Ceti code de confirmacion èxpirerat lo $4.',
 	'requestaccount-email-subj-admin' => 'Demanda de compto dessus {{SITENAME}}',
-	'requestaccount-email-body-admin' => '« $1 » at demandâ un compto utilisator et sè trove en atenta de confirmacion.
+	'requestaccount-email-body-admin' => '« $1 » at demandâ un compto usanciér et sè trove en atenta de confirmacion.
 L’adrèce èlèctronica at étâ confirmâ. Vos pouede aprovar la demanda ique « $2 ».',
-	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}} utilisator.
+	'acct_request_throttle_hit' => 'Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}} usanciér.
 Vos pouede pas més fâre de demanda.',
 );
 

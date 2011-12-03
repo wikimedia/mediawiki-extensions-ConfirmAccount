@@ -587,8 +587,8 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'usercredentials' => 'Refèrences a l’utilisator',
-	'usercredentials-user' => 'Nom d’utilisator :',
-	'usercredentials-leg-user' => 'Compto utilisator',
+	'usercredentials-user' => 'Nom d’usanciér :',
+	'usercredentials-leg-user' => 'Compto usanciér',
 	'usercredentials-leg-areas' => 'Centros d’entèrèts principâls',
 	'usercredentials-leg-person' => 'Enformacions a sè',
 	'usercredentials-leg-other' => 'Ôtres enformacions',
