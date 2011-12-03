@@ -9,12 +9,9 @@ class ConfirmAccountSetup {
 	 * 
 	 * @param $classes Array $classes
 	 * @param $messagesFiles Array $messagesFiles
-	 * @param $aliasesFiles Array $aliasesFiles
 	 * @return void
 	 */
-	public static function defineSourcePaths(
-		array &$classes, array &$messagesFiles, array &$aliasesFiles
-	) {
+	public static function defineSourcePaths( array &$classes, array &$messagesFiles ) {
 		$dir = dirname( __FILE__ );
 
 		# Basic directory layout
@@ -28,7 +25,7 @@ class ConfirmAccountSetup {
 
 		# Main i18n file and special page alias file
 		$messagesFiles['ConfirmAccount'] = "$langDir/ConfirmAccount.i18n.php";
-		$aliasesFiles['ConfirmAccount'] = "$langDir/ConfirmAccount.alias.php";
+		$messagesFiles['ConfirmAccountAliases'] = "$langDir/ConfirmAccount.alias.php";
 
 		# UI setup class
 		$classes['ConfirmAccountUISetup'] = "$frontendDir/ConfirmAccountUI.setup.php";

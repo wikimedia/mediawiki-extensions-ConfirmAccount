@@ -36,11 +36,7 @@ require( dirname( __FILE__ ) . '/ConfirmAccount.config.php' );
 
 # Define were PHP files and i18n files are located
 require( dirname( __FILE__ ) . '/ConfirmAccount.setup.php' );
-ConfirmAccountSetup::defineSourcePaths(
-	$wgAutoloadClasses,
-	$wgExtensionMessagesFiles,
-	$wgExtensionAliasesFiles
-);
+ConfirmAccountSetup::defineSourcePaths( $wgAutoloadClasses, $wgExtensionMessagesFiles );
 
 # Define JS/CSS modules and file locations
 ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
@@ -79,7 +75,7 @@ function efLoadConfirmAccount() {
 	# This extension needs email enabled!
 	# Otherwise users can't get their passwords...
 	if ( !$wgEnableEmail ) {
-		echo "ConfirmAccount extension requires \$wgEnableEmail set to true \n";
+		echo "ConfirmAccount extension requires \$wgEnableEmail set to true.\n";
 		exit( 1 ) ;
 	}
 }
