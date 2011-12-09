@@ -4108,6 +4108,7 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-submit' => 'Confirméieren',
 	'confirmaccount-needreason' => 'Dir musst e Grond an der Kescht ënnendrënner uginn.',
 	'confirmaccount-canthold' => "Dës Ufro ass schonn entweder 'en-cours' oder geläscht.",
+	'confirmaccount-badaction' => 'Et muss eng valabel Aktioun (akzeptéieren, refuséieren, am Suspens halen) gemaach gi fir weiderfueren ze kënnen.',
 	'confirmaccount-acc' => 'Benotzerkont-Ufro gouf confirméiert;
 de Benotzerkont [[User:$1|$1]] gouf ugeluecht.',
 	'confirmaccount-rej' => "D'Ufro fir ee Benotzerkont gouf refuséiert.",
@@ -5848,6 +5849,7 @@ Pentru a vă autentifica, vă rugăm mergeţi aici: {{fullurl:Special:UserLogin}
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'confirmaccount-type' => 'Code:',
 	'confirmaccount-leg-user' => "Cunde de l'utende",
 	'confirmaccount-leg-areas' => 'Prengepàle aree de inderesse',
 	'confirmaccount-leg-person' => "'Mbormaziune personele",
@@ -5863,7 +5865,7 @@ $messages['roa-tara'] = array(
 	'confirmaccount-notes' => 'Note aggiundive:',
 	'confirmaccount-urls' => 'Liste de le site web:',
 	'confirmaccount-none-p' => "(non g'è previste)",
-	'confirmaccount-confirm' => "Ause l'opzione de sotte pe accettà, scettà o tine sta richieste:",
+	'confirmaccount-confirm' => "Ause l'opzione de sotte pe accettà, scettà o tenè sta richieste:",
 	'confirmaccount-econf' => '(confermete)',
 	'confirmaccount-reject' => '(scettete da [[User:$1|$1]] sus a $2)',
 );
