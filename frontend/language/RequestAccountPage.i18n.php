@@ -570,8 +570,8 @@ Evit kadarnaat eo deoc'h ar gont-se war {{SITENAME}} e gwirionez, digorit al lia
 \$3
 
 Mard eo bet krouet ar gont e vo kaset ar ger-tremen dre bostel deoc'h hepken
-Ma n'eo ekt gwir, *arabat* deoc'h implijout al liamm.
-Mont a raio ar c'hod gwiriañ-mañ d'e dermen d'an  \$4.",
+Ma n'eo ket gwir, *arabat* deoc'h implijout al liamm.
+Mont a raio ar c'hod gwiriañ-mañ d'e dermen d'an \$4.",
 	'requestaccount-email-subj-admin' => 'Goulenn kont evit {{SITENAME}}',
 	'requestaccount-email-body-admin' => "« $1 » en deus goulennet ur gont ha zo o c'hortoz ar c'hadarnadur.
 
@@ -3634,10 +3634,10 @@ $messages['sr-ec'] = array(
 	'requestaccount-agree' => 'Морате да потврдите да сте добро унели своје право име и да се сложите са условима коришћења.',
 	'requestaccount-inuse' => 'Корисничко име је већ у употреби и чека на одобрење.',
 	'requestaccount-tooshort' => 'Ваша биографија мора да садржи најмање $1 {{PLURAL:$1|реч|речи}}.',
-	'requestaccount-emaildup' => 'Други налог, који чека одобрење, већ користи ову имејл адресу.',
+	'requestaccount-emaildup' => 'Исту адресу користи други захтев за налог који је на чекању.',
 	'requestaccount-sent' => 'Ваш захтев за налогом је успешно послат и чека на преглед.
 Електронска порука за потврду је послата на Вашу адресу Ваше електронске поште.',
-	'request-account-econf' => 'Ваша имејл адреса је била потврђена и биће приказана као таква у Вашем захтеву за налогом.',
+	'request-account-econf' => 'Ваша е-адреса је потврђена и биће наведена као таква у вашем захтеву за налог.',
 );
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
