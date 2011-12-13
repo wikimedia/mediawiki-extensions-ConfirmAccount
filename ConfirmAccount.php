@@ -28,7 +28,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name'           => 'Confirm User Accounts',
 	'descriptionmsg' => 'confirmedit-desc',
 	'author'         => 'Aaron Schulz',
-	'url'            => 'http://www.mediawiki.org/wiki/Extension:ConfirmAccount',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:ConfirmAccount',
 );
 
 # Load default config variables
