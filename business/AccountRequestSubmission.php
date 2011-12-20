@@ -222,6 +222,7 @@ class AccountRequestSubmission {
 		ConfirmAccount::clearAccountRequestCountCache();
 		# No request spamming...
 		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
+			$ip = $context->getRequest()->getIP();
 			$key = wfMemcKey( 'acctrequest', 'ip', $ip );
 			$value = $wgMemc->incr( $key );
 			if ( !$value ) {
