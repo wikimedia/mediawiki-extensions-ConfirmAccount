@@ -208,7 +208,7 @@ class UserCredentialsPage extends SpecialPage {
 		$path = $repo->getZonePath( 'public' ) . '/' .
 			UserAccountRequest::relPathFromKey( $key );
 
-		StreamFile::stream( $path );
+		$repo->streamFile( $path );
 	}
 
 	function getAccountData() {

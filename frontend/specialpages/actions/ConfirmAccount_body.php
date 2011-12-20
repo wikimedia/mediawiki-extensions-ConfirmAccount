@@ -433,7 +433,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$path = $repo->getZonePath( 'public' ) . '/' .
 			UserAccountRequest::relPathFromKey( $key );
 
-		StreamFile::stream( $path );
+		$repo->streamFile( $path );
 	}
 
 	protected function doAccountConfirmSubmit() {
