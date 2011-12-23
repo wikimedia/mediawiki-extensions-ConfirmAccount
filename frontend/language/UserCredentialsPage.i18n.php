@@ -2037,6 +2037,8 @@ $messages['zh-hans'] = array(
 	'usercredentials-urls' => '网站列表:',
 	'usercredentials-ip' => '原始IP地址：',
 	'usercredentials-member' => '权限：',
+	'usercredentials-badid' => '没有凭据找到该用户。 
+检查名称拼写是否正确。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
