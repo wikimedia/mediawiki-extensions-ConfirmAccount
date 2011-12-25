@@ -4992,7 +4992,7 @@ Det kan vera kontaktlister på nettstaden som du kan nytta for å finna ut meir 
  * @author Laaknor
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'confirmaccounts' => 'Godkjenn kontoforespørsler',
 	'confirmedit-desc' => 'Gir byråkrater muligheten til å godkjenne kontoforespørsler.',
 	'confirmaccount-maintext' => "'''Denne siden brukes for å bekrefte ventende kontoforespørsel på ''{{SITENAME}}'''''.

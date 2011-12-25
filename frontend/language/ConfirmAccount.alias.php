@@ -262,7 +262,7 @@ $specialPageAliases['nl'] = array(
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['no'] = array(
+$specialPageAliases['nb'] = array(
 	'RequestAccount' => array( 'Etterspør_konto' ),
 	'ConfirmAccounts' => array( 'Bekreft_konto' ),
 	'UserCredentials' => array( 'Brukerlegitimasjon' ),

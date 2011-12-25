@@ -2924,7 +2924,7 @@ Du kan ikkje be om fleire.',
  * @author Laaknor
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'requestaccount' => 'Etterspør konto',
 	'requestaccount-text' => "'''Fullfør og lever følgende skjema for å etterspørre en brukerkonto.'''
 

@@ -1371,7 +1371,7 @@ Gjer deg viss om at namnet er stava rett.',
  * @author Laaknor
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'usercredentials' => 'Brukerattester',
 	'usercredentials-leg' => 'Finn bekreftede attester for en bruker',
 	'usercredentials-user' => 'Brukernavn:',
