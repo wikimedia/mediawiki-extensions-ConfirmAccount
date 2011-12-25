@@ -1300,6 +1300,33 @@ $messages['nah'] = array(
 	'usercredentials-ip' => 'Achto IP:',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Event
+ * @author Harald Khan
+ * @author Jon Harald Søby
+ * @author Laaknor
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'usercredentials' => 'Brukerattester',
+	'usercredentials-leg' => 'Finn bekreftede attester for en bruker',
+	'usercredentials-user' => 'Brukernavn:',
+	'usercredentials-text' => 'Nedenfor er de bekreftede attestene til den valgte brukerkontoen.',
+	'usercredentials-leg-user' => 'Brukerkonto',
+	'usercredentials-leg-areas' => 'Hovedinteresser',
+	'usercredentials-leg-person' => 'Personlig informasjon',
+	'usercredentials-leg-other' => 'Annen informasjon',
+	'usercredentials-email' => 'E-post:',
+	'usercredentials-real' => 'Virkelig navn:',
+	'usercredentials-bio' => 'Biografi:',
+	'usercredentials-attach' => 'CV:',
+	'usercredentials-notes' => 'Andre merknader:',
+	'usercredentials-urls' => 'Liste over nettsteder:',
+	'usercredentials-ip' => 'Opprinnelig IP-adresse:',
+	'usercredentials-member' => 'Rettigheter:',
+	'usercredentials-badid' => 'Ingen attester funnet for denne brukeren. Sjekk at navnet er stavet riktig.',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -1362,33 +1389,6 @@ $messages['nn'] = array(
 	'usercredentials-member' => 'Rettar:',
 	'usercredentials-badid' => 'Ingen attestar vart funne for brukaren.
 Gjer deg viss om at namnet er stava rett.',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Event
- * @author Harald Khan
- * @author Jon Harald Søby
- * @author Laaknor
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'usercredentials' => 'Brukerattester',
-	'usercredentials-leg' => 'Finn bekreftede attester for en bruker',
-	'usercredentials-user' => 'Brukernavn:',
-	'usercredentials-text' => 'Nedenfor er de bekreftede attestene til den valgte brukerkontoen.',
-	'usercredentials-leg-user' => 'Brukerkonto',
-	'usercredentials-leg-areas' => 'Hovedinteresser',
-	'usercredentials-leg-person' => 'Personlig informasjon',
-	'usercredentials-leg-other' => 'Annen informasjon',
-	'usercredentials-email' => 'E-post:',
-	'usercredentials-real' => 'Virkelig navn:',
-	'usercredentials-bio' => 'Biografi:',
-	'usercredentials-attach' => 'CV:',
-	'usercredentials-notes' => 'Andre merknader:',
-	'usercredentials-urls' => 'Liste over nettsteder:',
-	'usercredentials-ip' => 'Opprinnelig IP-adresse:',
-	'usercredentials-member' => 'Rettigheter:',
-	'usercredentials-badid' => 'Ingen attester funnet for denne brukeren. Sjekk at navnet er stavet riktig.',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
