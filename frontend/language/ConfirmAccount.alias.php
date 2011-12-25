@@ -100,13 +100,14 @@ $specialPageAliases['fr'] = array(
 $specialPageAliases['frp'] = array(
 	'RequestAccount' => array( 'Demandar_un_compto', 'DemandarUnCompto' ),
 	'ConfirmAccounts' => array( 'Confirmar_lo_compto', 'ConfirmarLoCompto', 'Confirmacion_de_compto', 'ConfirmacionDeCompto' ),
-	'UserCredentials' => array( 'Refèrences_a_l\'utilisator', 'RefèrencesALUtilisator' ),
+	'UserCredentials' => array( 'Refèrences_a_l\'usanciér', 'RefèrencesALUsanciér' ),
 );
 
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
 	'RequestAccount' => array( 'Solicitar_unha_conta' ),
 	'ConfirmAccounts' => array( 'Confirmar_a_conta' ),
+	'UserCredentials' => array( 'Credenciais_de_usuario' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -247,6 +248,13 @@ $specialPageAliases['mt'] = array(
 	'UserCredentials' => array( 'KredenzjaliUtent' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'RequestAccount' => array( 'Etterspør_konto' ),
+	'ConfirmAccounts' => array( 'Bekreft_konto' ),
+	'UserCredentials' => array( 'Brukerlegitimasjon' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'RequestAccount' => array( 'Gebruker_anvragen' ),
@@ -259,13 +267,6 @@ $specialPageAliases['nl'] = array(
 	'RequestAccount' => array( 'GebruikerAanvragen' ),
 	'ConfirmAccounts' => array( 'GebruikerBevestigen' ),
 	'UserCredentials' => array( 'Gebruikersattest' ),
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
-	'RequestAccount' => array( 'Etterspør_konto' ),
-	'ConfirmAccounts' => array( 'Bekreft_konto' ),
-	'UserCredentials' => array( 'Brukerlegitimasjon' ),
 );
 
 /** Occitan (Occitan) */
@@ -300,7 +301,7 @@ $specialPageAliases['ro'] = array(
 	'UserCredentials' => array( 'Detalii_utilizator' ),
 );
 
-/** Sanskrit (संस्कृत) */
+/** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'RequestAccount' => array( 'उपयोजकसंज्ञाविनन्ती' ),
 	'ConfirmAccounts' => array( 'उपयोजकसंज्ञापुष्टिकरोति' ),
@@ -363,8 +364,3 @@ $specialPageAliases['zh-hant'] = array(
 	'RequestAccount' => array( '請求帳戶' ),
 	'ConfirmAccounts' => array( '確認帳戶' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
