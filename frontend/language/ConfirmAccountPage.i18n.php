@@ -665,7 +665,7 @@ $messages['be-tarask'] = array(
 	'confirmaccount-notes' => 'Дадатковая інфармацыя:',
 	'confirmaccount-urls' => 'Сьпіс сайтаў:',
 	'confirmaccount-none-p' => '(не пададзена)',
-	'confirmaccount-confirm' => 'Выкарыстоўвайце налады ніжэй для зацьверджаньня, адхіленьня ці адкладаньня запыту:',
+	'confirmaccount-confirm' => 'Выкарыстоўвайце налады ніжэй для прыняцьця, адхіленьня ці адкладаньня запыту:',
 	'confirmaccount-econf' => '(пацьверджаны)',
 	'confirmaccount-reject' => '(адхілены [[User:$1|$1]] $2)',
 	'confirmaccount-rational' => 'Абгрунтаваньне пададзенае падаўшаму запыт:',
@@ -682,7 +682,7 @@ $messages['be-tarask'] = array(
 	'confirmaccount-submit' => 'Пацьвердзіць',
 	'confirmaccount-needreason' => 'Вы павінны падаць прычыну ў полі камэнтару.',
 	'confirmaccount-canthold' => 'Гэты запыт ужо адкладзены альбо выдалены.',
-	'confirmaccount-badaction' => 'Для працягу мусіць быць абранае адно зь дзеяньняў (зацьвердзіць, адхіліць, адкласьці).',
+	'confirmaccount-badaction' => 'Для працягу мусіць быць абранае адно зь дзеяньняў (прыняць, адхіліць, адкласьці).',
 	'confirmaccount-acc' => 'Запыт на стварэньне рахунку пасьпяхова пацьверджаны;
 створаны рахунак [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Запыт на стварэньне рахунку быў пасьпяхова адхілены.',
