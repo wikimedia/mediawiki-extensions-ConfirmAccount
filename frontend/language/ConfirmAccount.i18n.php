@@ -64,11 +64,12 @@ $messages['arz'] = array(
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Renessaince
  * @author Zedlik
  */
 $messages['be-tarask'] = array(
 	'confirmaccount-newrequests' => "Чакаецца апрацоўка '''$1'''
-[[Special:ConfirmAccounts|{{PLURAL:$1|запыту на стварэньне рахунку|запытаў на стварэньне рахунку|запытаў на стварэньне рахунку}}]].",
+[[Special:ConfirmAccounts|{{PLURAL:$1|запыту на стварэньне рахунку|запытаў на стварэньне рахунку|запытаў на стварэньне рахунку}}]]. '''Зьвярніце вашую ўвагу!'''",
 	'requestaccount-loginnotice' => "Каб атрымаць рахунак, Вам неабходна '''[[Special:RequestAccount|падаць запыт]]'''.",
 	'right-confirmaccount' => 'прагляд [[Special:ConfirmAccounts|запытаў на стварэньне рахункаў]]',
 	'right-requestips' => 'прагляд IP-адрасоў з якіх паступалі запыты на стварэньне рахункаў',
@@ -489,6 +490,21 @@ $messages['ms'] = array(
 	'right-lookupcredentials' => 'Melihat [[Special:UserCredentials|kelayakan pengguna]]',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Event
+ * @author Harald Khan
+ * @author Jon Harald Søby
+ * @author Laaknor
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'confirmaccount-newrequests' => "Det er foreløpig '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}.",
+	'requestaccount-loginnotice' => "For å få en brukerkonto må du '''[[Special:RequestAccount|etterspørre en]]'''.",
+	'right-confirmaccount' => 'Vis [[Special:ConfirmAccounts|køen av kontosøknader]]',
+	'right-requestips' => 'Vis søkerenes IP-adresser mens man behandler kontosøknadene',
+	'right-lookupcredentials' => 'Vis [[Special:UserCredentials|brukerattester]]',
+);
+
 /** Dutch (Nederlands)
  * @author Annabel
  * @author SPQRobin
@@ -513,21 +529,6 @@ $messages['nn'] = array(
 	'right-confirmaccount' => 'Vis [[Special:ConfirmAccounts|køen av kontosøknader]]',
 	'right-requestips' => 'Vis søkjaren sine IP-adresser medan kontosøknadene er til handsaming',
 	'right-lookupcredentials' => 'Vis [[Special:UserCredentials|brukarattestar]]',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Event
- * @author Harald Khan
- * @author Jon Harald Søby
- * @author Laaknor
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'confirmaccount-newrequests' => "Det er foreløpig '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}.",
-	'requestaccount-loginnotice' => "For å få en brukerkonto må du '''[[Special:RequestAccount|etterspørre en]]'''.",
-	'right-confirmaccount' => 'Vis [[Special:ConfirmAccounts|køen av kontosøknader]]',
-	'right-requestips' => 'Vis søkerenes IP-adresser mens man behandler kontosøknadene',
-	'right-lookupcredentials' => 'Vis [[Special:UserCredentials|brukerattester]]',
 );
 
 /** Occitan (Occitan)
