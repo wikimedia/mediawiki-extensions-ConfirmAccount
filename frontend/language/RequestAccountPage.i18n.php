@@ -1267,7 +1267,7 @@ Setout que lo compto est accèptâ, vos recevréd un mèssâjo de notificacion e
 Dens lo mèssâjo reçu, clicâd sur lo lim que corrèspond a la confirmacion de voutra demanda.
 Et pués, un contresegno serat mandâ per mèssageria èlèctronica quand voutron compto usanciér serat fêt.',
 	'requestaccount-areas-text' => 'Chouèsésséd los domênos que vos avéd una èxpèrtisa dèmontrâ, ou ben que vos éte encllin a contribuar lo ples.',
-	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et porrat étre utilisâ ren que por ceta demanda.
+	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et pués porrat étre utilisâ ren que por ceta demanda.
 Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfono por avêr una assistance por confirmar voutra identitât.',
 	'requestaccount-bio-text' => 'Tâchiéd d’encllure totes les recomandacions que vont avouéc dens voutra biografia ce-desot.',
 	'requestaccount-real' => 'Veré nom :',
@@ -1276,7 +1276,7 @@ Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfo
 	'requestaccount-reqtype' => 'Situacion :',
 	'requestaccount-level-0' => 'ôtor',
 	'requestaccount-level-1' => 'contributor',
-	'requestaccount-bio' => 'Biografia a sè (ren que lo tèxto bruto) :',
+	'requestaccount-bio' => 'Biografia a sè (solament lo tèxto bruto) :',
 	'requestaccount-attach' => 'CV (u chouèx) :',
 	'requestaccount-notes' => 'Notes de ples :',
 	'requestaccount-urls' => 'Lista des setos vouèbe. S’y en at un mouél, sèparâd-los per un sôt de legne :',

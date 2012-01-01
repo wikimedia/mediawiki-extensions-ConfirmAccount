@@ -1139,6 +1139,8 @@ $messages['li'] = array(
 	'usercredentials-urls' => 'Lies van websites:',
 	'usercredentials-ip' => 'Oersjprunkelik IP-adres:',
 	'usercredentials-member' => 'Rechte:',
+	'usercredentials-badid' => 'Gein referenties gevónje veur deze gebroeker.
+Kiek nao of de naam korrek gespeld is.',
 );
 
 /** Lithuanian (Lietuvių)

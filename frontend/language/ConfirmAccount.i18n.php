@@ -69,7 +69,7 @@ $messages['arz'] = array(
  */
 $messages['be-tarask'] = array(
 	'confirmaccount-newrequests' => "Чакаецца апрацоўка '''$1'''
-[[Special:ConfirmAccounts|{{PLURAL:$1|запыту на стварэньне рахунку|запытаў на стварэньне рахунку|запытаў на стварэньне рахунку}}]]. '''Зьвярніце вашую ўвагу!'''",
+[[Special:ConfirmAccounts|{{PLURAL:$1|запыту на стварэньне рахунку|запытаў на стварэньне рахунку|запытаў на стварэньне рахунку}}]]. '''Зьвярніце Вашую ўвагу!'''",
 	'requestaccount-loginnotice' => "Каб атрымаць рахунак, Вам неабходна '''[[Special:RequestAccount|падаць запыт]]'''.",
 	'right-confirmaccount' => 'прагляд [[Special:ConfirmAccounts|запытаў на стварэньне рахункаў]]',
 	'right-requestips' => 'прагляд IP-адрасоў з якіх паступалі запыты на стварэньне рахункаў',
@@ -433,6 +433,17 @@ $messages['lb'] = array(
 	'right-confirmaccount' => "D'[[Special:ConfirmAccounts|Queue mat den ugefrote Benotzerkonte]] kucken",
 	'right-requestips' => "D'IP-Adress vun där d'Ufro koum uweise wann d'Ufro fir e Benotzerkont verschafft gëtt",
 	'right-lookupcredentials' => '[[Special:UserCredentials|Referenze vun de Benotzer]] kucken',
+);
+
+/** Limburgish (Limburgs)
+ * @author Pahles
+ */
+$messages['li'] = array(
+	'confirmaccount-newrequests' => "Dao {{PLURAL:$1|steit|stoon}} '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|gebroekersaanvraog|gebroekersaanvraoge}}]] aope. '''Dien aandach is nujig!'''",
+	'requestaccount-loginnotice' => "Um 'n gebroekersaccount te kriege mós te '''[[Special:RequestAccount|'ne aanvraog doon]]'''",
+	'right-confirmaccount' => '[[Special:CorfirmAccounts|Wachrie mit gebroekersaanvraoge]] betrachte',
+	'right-requestips' => "De IP-adresse van aanvraogers betrachte bie 't verwirke van gebroekersaanvraage",
+	'right-lookupcredentials' => '[[Special:UserCredentials|Gebroekersreferenties]] betrachte',
 );
 
 /** Basa Banyumasan (Basa Banyumasan)
