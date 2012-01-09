@@ -3224,14 +3224,17 @@ Për darmagi ant ës moment-sì i podoma nen aceté dj'àotre domande da chiel/c
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'requestaccount' => 'د ګڼون غوښتنه',
 	'requestaccount-leg-user' => 'ګڼون',
 	'requestaccount-leg-person' => 'ځاني مالومات',
 	'requestaccount-leg-other' => 'نور مالومات',
 	'requestaccount-real' => 'اصلي نوم:',
 	'requestaccount-email' => 'برېښليک پته:',
 	'requestaccount-level-0' => 'ليکوال',
-	'requestaccount-bio' => 'شخصي ژوندليک:',
+	'requestaccount-bio' => 'شخصي ژوندليک (يوازې ساده متن):',
 	'requestaccount-tooshort' => 'ستاسې ژوندليک بايد لږ تر لږه $1 {{PLURAL:$1|ويی|وييونه}} اوږد وي.',
+	'requestaccount-submit' => 'د ګڼون غوښتنه',
+	'requestaccount-email-subj-admin' => 'د {{SITENAME}} د ګڼون غوښتنه',
 );
 
 /** Portuguese (Português)
@@ -4374,6 +4377,7 @@ $3
  * @author Kuailong
  * @author Mark85296341
  * @author Wilsonmess
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'requestaccount' => '请求账户',
@@ -4419,7 +4423,7 @@ $messages['zh-hans'] = array(
 	'requestaccount-sent' => '您的账户请求已经成功发出，现正等候复审。
 一封验证邮件已经发往您的邮箱，请前去查收。',
 	'request-account-econf' => '您的电邮地址已经确认，将会在您的账户口请求中列示。',
-	'requestaccount-email-subj' => '{{SITENAME}}电邮地址确认',
+	'requestaccount-email-subj' => '{{SITENAME}}电子邮件地址确认',
 	'requestaccount-email-body' => '有人，可能是您，由IP地址$1，在{{SITENAME}}中用这个电邮地址请求一个名叫"$2"的账户。
 
 要确认这个户口真的属于在{{SITENAME}}上面?您，就在您的浏览器中度开启这个连结:

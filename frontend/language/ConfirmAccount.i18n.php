@@ -307,12 +307,13 @@ $messages['hsb'] = array(
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Dj
  * @author Dorgan
  * @author Glanthor Reviol
  * @author Tgr
  */
 $messages['hu'] = array(
-	'confirmaccount-newrequests' => "Jelenleg '''$1''' [[Special:ConfirmAccounts|felhasználói fiók-kérelem]] vár megerősítésre.",
+	'confirmaccount-newrequests' => "'''$1''' e-mail megerősített [[Special:ConfirmAccounts| fiók kérés van függőben]]. '''Figyelmet igényel!'''",
 	'requestaccount-loginnotice' => "Ha felhasználói fiókot szeretnél, akkor '''[[Special:RequestAccount|kérned kell egyet]]'''.",
 	'right-confirmaccount' => '[[Special:ConfirmAccounts|kért felhasználói fiókok várakozási sorának]] megtekintése',
 	'right-requestips' => 'az igénylők IP-címeinek megtekintése a kért fiókok feldolgozása közben',
