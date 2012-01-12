@@ -16,9 +16,9 @@ class ConfirmAccountUpdaterHooks {
 			$updater->addExtensionUpdate( array( 'addTable', 'account_requests', "$base/ConfirmAccount.sql", true ) );
 			$updater->addExtensionUpdate( array( 'addField', 'account_requests', 'acr_filename',
 				"$base/archives/patch-acr_filename.sql", true ) );
-			$updater->addExtensionUpdate( array( 'addTable', 'account_credentials', "$base/archives/patch-account_credentials.sql", true ) );
-			$updater->addExtensionUpdate( array( 'addField', 'account_requests', 'acr_areas', "$base/archives/patch-acr_areas.sql", true ) );
-			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/archives/patch-email-index.sql", true ) );
+			$updater->addExtensionUpdate( array( 'addTable', 'account_credentials', "$base/patch-account_credentials.sql", true ) );
+			$updater->addExtensionUpdate( array( 'addField', 'account_requests', 'acr_areas', "$base/patch-acr_areas.sql", true ) );
+			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/patch-email-index.sql", true ) );
 		} elseif ( $updater->getDB()->getType() == 'postgres' ) {
 			$base = "$base/postgres";
 
