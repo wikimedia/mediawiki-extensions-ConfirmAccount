@@ -159,6 +159,30 @@ $messages['arz'] = array(
 تأكد من أن الاسم مكتوب بطريقة صحيحة.',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'usercredentials' => 'Acreditación del usuariu',
+	'usercredentials-leg' => "Guetar l'acreditación confirmada d'un usuariu",
+	'usercredentials-user' => "Nome d'usuariu:",
+	'usercredentials-text' => "Abaxo tan les acreditaciones validaes de la cuenta d'usuariu seleicionada.",
+	'usercredentials-leg-user' => "Cuenta d'usuariu",
+	'usercredentials-leg-areas' => "Principales árees d'interés",
+	'usercredentials-leg-person' => 'Información personal',
+	'usercredentials-leg-other' => 'Otra información',
+	'usercredentials-email' => 'Corréu electrónicu:',
+	'usercredentials-real' => 'Nome real:',
+	'usercredentials-bio' => 'Biografía:',
+	'usercredentials-attach' => 'Currículu/CV:',
+	'usercredentials-notes' => 'Otres notes:',
+	'usercredentials-urls' => 'Llista de sitios web:',
+	'usercredentials-ip' => 'Direición IP orixinal:',
+	'usercredentials-member' => 'Permisos:',
+	'usercredentials-badid' => "Nun s'alcontraron acreditaciones pa esti usuariu.
+Comprueba si s'escribió'l nome correutamente.",
+);
+
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
  * @author Vago
