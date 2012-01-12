@@ -27,10 +27,10 @@ class ConfirmAccountUpdaterHooks {
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_storage_key', "TEXT" ) );
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" ) );
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" ) );
-			$updater->addExtensionUpdate( array( 'addTable', 'account_credentials', "$base/postgres/patch-account_credentials.sql", true ) );
+			$updater->addExtensionUpdate( array( 'addTable', 'account_credentials', "$base/patch-account_credentials.sql", true ) );
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_areas', "TEXT" ) );
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_credentials', 'acd_areas', "TEXT" ) );
-			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/postgres/patch-email-index.sql", true ) );
+			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/patch-email-index.sql", true ) );
 		}
 		return true;
 	}
