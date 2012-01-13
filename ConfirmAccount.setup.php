@@ -21,7 +21,7 @@ class ConfirmAccountSetup {
 		$frontendDir      = "$dir/frontend";
 		$langDir          = "$dir/frontend/language/";
 		$spActionDir      = "$dir/frontend/specialpages/actions";
-		$spReportDir      = "$dir/frontend/specialpages/reports";
+		//$spReportDir      = "$dir/frontend/specialpages/reports";
 
 		# Main i18n file and special page alias file
 		$messagesFiles['ConfirmAccount'] = "$langDir/ConfirmAccount.i18n.php";
