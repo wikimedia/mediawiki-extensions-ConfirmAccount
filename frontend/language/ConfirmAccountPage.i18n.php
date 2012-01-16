@@ -2960,6 +2960,7 @@ Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš w
  * @author Dani
  * @author Dorgan
  * @author Glanthor Reviol
+ * @author Misibacsi
  * @author Tgr
  */
 $messages['hu'] = array(
