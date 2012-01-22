@@ -676,7 +676,7 @@ $messages['su'] = array(
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
-	'confirmaccount-newrequests' => "Just nu väntar '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|kontoansökning|kontoansökningar}}]] med bekräftad e-postadress på att behandlas.",
+	'confirmaccount-newrequests' => "'''$1''' öppnade e-post bekräftade att [[Special:ConfirmAccounts|{{PLURAL:$1|kontoansökning väntar på att behandlas|kontoansökningar väntar på att behandlas}}]]. '''Din uppmärksamhet krävs!'''",
 	'requestaccount-loginnotice' => "För att få ett användarkonto måste du '''[[Special:RequestAccount|ansöka om det]]'''.",
 	'right-confirmaccount' => 'Visa [[Special:ConfirmAccounts|kön av kontoansökningar]]',
 	'right-requestips' => 'Visa sökandens IP-adress vid behandling av kontoansökningar',
