@@ -13,11 +13,11 @@ class ConfirmAccountUpdaterHooks {
 		if ( $updater->getDB()->getType() == 'mysql' ) {
 			$base = "$base/mysql";
 
-			$updater->addExtensionTable( 'account_requests', "$base/ConfirmAccount.sql", true );
+			$updater->addExtensionTable( 'account_requests', "$base/ConfirmAccount.sql" );
 			$updater->addExtensionField( 'account_requests', 'acr_filename', "$base/patch-acr_filename.sql" );
-			$updater->addExtensionTable( 'account_credentials', "$base/patch-account_credentials.sql", true );
-			$updater->addExtensionField( 'account_requests', 'acr_areas', "$base/patch-acr_areas.sql", true );
-			$updater->addExtensionIndex( 'account_requests', 'acr_email', "$base/patch-email-index.sql", true );
+			$updater->addExtensionTable( 'account_credentials', "$base/patch-account_credentials.sql" );
+			$updater->addExtensionField( 'account_requests', 'acr_areas', "$base/patch-acr_areas.sql" );
+			$updater->addExtensionIndex( 'account_requests', 'acr_email', "$base/patch-email-index.sql" );
 		} elseif ( $updater->getDB()->getType() == 'postgres' ) {
 			$base = "$base/postgres";
 
