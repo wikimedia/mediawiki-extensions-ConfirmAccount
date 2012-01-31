@@ -1365,6 +1365,13 @@ $messages['nds'] = array(
 	'usercredentials-member' => 'Rechten:',
 );
 
+/** Nepali (नेपाली)
+ * @author RajeshPandey
+ */
+$messages['ne'] = array(
+	'usercredentials-user' => 'प्रयोगकर्ता नाम:',
+);
+
 /** Dutch (Nederlands)
  * @author Annabel
  * @author SPQRobin

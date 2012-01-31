@@ -4863,6 +4863,13 @@ $messages['nds'] = array(
 	'confirmaccount-wsum' => 'Willkamen!',
 );
 
+/** Nepali (नेपाली)
+ * @author RajeshPandey
+ */
+$messages['ne'] = array(
+	'confirmaccount-name' => 'प्रयोगकर्ता नाम',
+);
+
 /** Dutch (Nederlands)
  * @author Annabel
  * @author SPQRobin
