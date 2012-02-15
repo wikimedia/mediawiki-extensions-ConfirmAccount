@@ -5273,6 +5273,7 @@ $messages['pdt'] = array(
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Derbeth
  * @author Equadus
  * @author Leinad
@@ -5343,7 +5344,7 @@ Być może został on już obsłużony.',
 	'confirmaccount-notes' => 'Dodatkowe informacje:',
 	'confirmaccount-urls' => 'Wykaz witryn:',
 	'confirmaccount-none-p' => '(nie podano)',
-	'confirmaccount-confirm' => 'Korzystając z poniższych opcji przyjmij, odrzuć lub wstrzymaj wniosek',
+	'confirmaccount-confirm' => 'Użyj poniższych opcji by przyjąć, odrzucić lub wstrzymać żądanie:',
 	'confirmaccount-econf' => '(potwierdzono)',
 	'confirmaccount-reject' => '(odrzucone przez użytkownika [[User:$1|$1]], z powodu $2)',
 	'confirmaccount-rational' => 'Uzasadnienie przesłane do wnioskodawcy:',
@@ -5363,7 +5364,7 @@ Być może został on już obsłużony.',
 	'confirmaccount-acc' => 'Potwierdzono wniosek o założenie konta; utworzono konto dla użytkownika [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Odrzucono wniosek o utworzenie konta.',
 	'confirmaccount-viewing' => '(aktualnie przeglądany przez użytkownika [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Tworzę stronę biografii nowego użytkownika.',
+	'confirmaccount-summary' => 'Tworznie strony użytkownika dla nowego użytkownika.',
 	'confirmaccount-welc' => "'''Witaj w ''{{GRAMMAR:N.lp|{{SITENAME}}}}''!''' Mamy nadzieję, że włączysz się aktywnie w tworzenie {{GRAMMAR:D.lp|{{SITENAME}}}}.
 Zacznij od zapoznania się ze [[{{MediaWiki:Helppage}}|stronami pomocy]]. Jeszcze raz witamy i życzymy przyjemnej pracy!",
 	'confirmaccount-wsum' => 'Witaj!',
