@@ -2651,10 +2651,11 @@ $messages['he'] = array(
 	'confirmaccount-submit' => 'אישור',
 	'confirmaccount-needreason' => 'יש לספק סיבה בתיבת התגובה למטה.',
 	'confirmaccount-canthold' => 'בקשה זו כבר נמצאת בהמתנה או מחוקה.',
+	'confirmaccount-badaction' => 'פעולה תקינה (קבלה, דחייה, החזקה) צריכה להיות מצוינת כדי להמשיך.',
 	'confirmaccount-acc' => 'בקשת החשבון אושרה בהצלחה; נוצר חשבון משתמש חדש בשם [[User:$1|$1]].',
 	'confirmaccount-rej' => 'בקשת החשבון נדחתה בהצלחה.',
 	'confirmaccount-viewing' => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])',
-	'confirmaccount-summary' => 'יצירת דף משתמש עם ביוגרפיה של משתמש חדש',
+	'confirmaccount-summary' => 'יצירת דף משתמש למשתמש חדש',
 	'confirmaccount-welc' => "'''ברוכים הבאים לאתר ''{{SITENAME}}''!'''
 אנו מקווים שתרומותיכם יהיו רבות וטובות.
 כנראה כדאי שתקראו עכשיו את [[{{MediaWiki:Helppage}}|דפי העזרה]].
