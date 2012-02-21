@@ -1688,6 +1688,7 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author BicScope
  * @author Crazymadlover
  * @author Fitoschido
@@ -1762,7 +1763,7 @@ Puede que ya haya sido gestionada.',
 	'confirmaccount-notes' => 'Notas adicionales:',
 	'confirmaccount-urls' => 'Lista de sitios web:',
 	'confirmaccount-none-p' => '(no proveído)',
-	'confirmaccount-confirm' => 'Utilice las opciones que se presentan a continuación para aceptar, denegar o retener esta solicitud:',
+	'confirmaccount-confirm' => 'Utilice las siguientes opciones para aceptar, rechazar o mantener a la espera esta solicitud:',
 	'confirmaccount-econf' => '(confirmado)',
 	'confirmaccount-reject' => '(rechazado por [[User:$1|$1]] en $2)',
 	'confirmaccount-rational' => 'Justificación dada al solicitante:',
@@ -1779,11 +1780,12 @@ Puede que ya haya sido gestionada.',
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Debe proveer una razón en el cuadro de comentario que se presenta a continuación.',
 	'confirmaccount-canthold' => 'Esta solicitud ya se encuentra retenida o eliminada.',
+	'confirmaccount-badaction' => 'Una acción válida (aceptar, rechazar, retener) debe ser especificada para poder continuar.',
 	'confirmaccount-acc' => 'Solicitud de cuenta confirmada exitosamente;
 creada nueva cuenta de usuario [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Solicitud de cuenta rechazada exitosamente.',
 	'confirmaccount-viewing' => '(actualmente siendo visto por [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Creando página de usuario con biografía del nuevo usuario.',
+	'confirmaccount-summary' => 'Creando página de usuario para un nuevo usuario.',
 	'confirmaccount-welc' => "'''Bienvenido a ''{{SITENAME}}''!'''
 Esperamos que contribuyas mucho y bien.
 Probablemente desearás leer las [[{{MediaWiki:Helppage}}|páginas de ayuda]].

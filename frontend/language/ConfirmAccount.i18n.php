@@ -167,6 +167,7 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author BicScope
  * @author Crazymadlover
  * @author Fitoschido
@@ -178,7 +179,7 @@ $messages['eo'] = array(
  * @author Translationista
  */
 $messages['es'] = array(
-	'confirmaccount-newrequests' => "'''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitud pendiente|solicitudes pendientes de cuenta}}]] de correo electrónico confirmadas",
+	'confirmaccount-newrequests' => "'''$1''' correo electrónico abierto ha confirmado que [[Special:ConfirmAccounts|{{PLURAL:$1|solicitud de cuenta está pendiente|solicitudes de cuenta están pendientes}}]]. '''Se necesita su atención!'''",
 	'requestaccount-loginnotice' => "Para obtener una cuenta de usuario, debes '''[[Special:RequestAccount|solicitar una]]'''.",
 	'right-confirmaccount' => 'Consulte la [[Special:ConfirmAccounts|cola de solicitudes de cuenta]]',
 	'right-requestips' => 'Ver la dirección IP del solicitante mientras se procesan las solicitudes de cuenta',
@@ -434,6 +435,13 @@ $messages['lb'] = array(
 	'right-confirmaccount' => "D'[[Special:ConfirmAccounts|Queue mat den ugefrote Benotzerkonte]] kucken",
 	'right-requestips' => "D'IP-Adress vun där d'Ufro koum uweise wann d'Ufro fir e Benotzerkont verschafft gëtt",
 	'right-lookupcredentials' => '[[Special:UserCredentials|Referenze vun de Benotzer]] kucken',
+);
+
+/** Lezghian (Лезги)
+ * @author Migraghvi
+ */
+$messages['lez'] = array(
+	'requestaccount-loginnotice' => 'Иштиракчидин аккаунт къачун патал квез ам [[Special:RequestAccount|тIалабиз герек я]] .',
 );
 
 /** Limburgish (Limburgs)
