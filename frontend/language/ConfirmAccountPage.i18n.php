@@ -5888,6 +5888,7 @@ $messages['roa-tara'] = array(
 
 /** Russian (Русский)
  * @author Ferrer
+ * @author Ignatus
  * @author Kaganer
  * @author Kv75
  * @author Lockal
@@ -5949,7 +5950,7 @@ $messages['ru'] = array(
 	'confirmaccount-notes' => 'Дополнительные замечания:',
 	'confirmaccount-urls' => 'Список веб-сайтов:',
 	'confirmaccount-none-p' => '(не указано)',
-	'confirmaccount-confirm' => 'Используйте настройки для принятия, отклонения или откладывания запроса:',
+	'confirmaccount-confirm' => 'Используйте элементы ниже, чтобы принять, отклонить или отложить этот запрос:',
 	'confirmaccount-econf' => '(подтверждён)',
 	'confirmaccount-reject' => '(отклонил [[User:$1|$1]] $2)',
 	'confirmaccount-rational' => 'Обоснование, даваемое заявителю:',
@@ -5966,10 +5967,11 @@ $messages['ru'] = array(
 	'confirmaccount-submit' => 'Подтвердить',
 	'confirmaccount-needreason' => 'Вы должны указать причину в поле комментария.',
 	'confirmaccount-canthold' => 'Этот запрос уже удалён или отложен.',
+	'confirmaccount-badaction' => 'Для продолжения должно быть указано допустимое действие (принять, отклонить, отложить).',
 	'confirmaccount-acc' => 'Запрос на учётную запись успешно обработан, создана новая учётная запись [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Запрос на учётную запись был отклонён.',
 	'confirmaccount-viewing' => '(сейчас просматривается участником [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Создание страницы участника с биографией нового участника',
+	'confirmaccount-summary' => 'Создание страницы участника для нового участника.',
 	'confirmaccount-welc' => "'''Добро пожаловать в ''{{SITENAME}}''!''' Мы надеемся на ваше плодотворное участие.
 Возможно, вам будет интересно ознакомиться со [[{{MediaWiki:Helppage}}|справочными страницами]]. Ещё раз добро пожаловать, приятного времяпрепровождения.",
 	'confirmaccount-wsum' => 'Добро пожаловать!',

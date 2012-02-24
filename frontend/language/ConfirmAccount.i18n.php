@@ -626,6 +626,7 @@ $messages['pt-br'] = array(
 
 /** Russian (Русский)
  * @author Ferrer
+ * @author Ignatus
  * @author Kaganer
  * @author Kv75
  * @author Lockal
@@ -635,8 +636,7 @@ $messages['pt-br'] = array(
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
-	'confirmaccount-newrequests' => "Ожидается обработка '''$1'''
-{{PLURAL:$1|[[Special:ConfirmAccounts|запроса на учётную запись]]|[[Special:ConfirmAccounts|запросов на учётные записи]]|[[Special:ConfirmAccounts|запросов на учётные записи]]}}.",
+	'confirmaccount-newrequests' => "$1 {{PLURAL:$1|[[Special:ConfirmAccounts|открытое письмо подтверждено]]|[[Special:ConfirmAccounts|открытых письма подтверждены]]|[[Special:ConfirmAccounts|открытых писем подтверждены]]}}. '''Обратите ваше внимание!'''",
 	'requestaccount-loginnotice' => 'Чтобы получить учётную запись, вы должны её [[Special:RequestAccount|запросить]].',
 	'right-confirmaccount' => 'просмотр [[Special:ConfirmAccounts|запросов на создание учётных записей]]',
 	'right-requestips' => 'Просмотр IP-адресов авторов запросов на создание учётных записей',
