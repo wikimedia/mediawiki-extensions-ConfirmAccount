@@ -6043,6 +6043,7 @@ $messages['scn'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Teslaton
  */
 $messages['sk'] = array(
 	'confirmaccounts' => 'Potvrdiť žiadosti o účet',
@@ -6099,7 +6100,7 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 	'confirmaccount-notes' => 'Ďalšie poznámky:',
 	'confirmaccount-urls' => 'Zoznam webstránok:',
 	'confirmaccount-none-p' => '(neposkytnuté)',
-	'confirmaccount-confirm' => 'Tlačidlami nižšie môžete prijať alebo odmietnuť túto žiadosť.',
+	'confirmaccount-confirm' => 'Tlačidlami nižšie môžete prijať, odmietnuť, alebo pozastaviť túto žiadosť.',
 	'confirmaccount-econf' => '(potvrdený)',
 	'confirmaccount-reject' => '(odmietol [[User:$1|$1]] $2)',
 	'confirmaccount-rational' => 'Zdôvodnenie pre uchádzača:',
@@ -6116,10 +6117,11 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 	'confirmaccount-submit' => 'Potvrdiť',
 	'confirmaccount-needreason' => 'Do komentára dolu musíte napísať dôvod.',
 	'confirmaccount-canthold' => 'Táto žiadosť je už buď pozdržaná alebo zmazaná.',
+	'confirmaccount-badaction' => 'Aby bolo možné pokračovať, je potrebné zvoliť platnú akciu (prijať, odmietnuť, pozastaviť).',
 	'confirmaccount-acc' => 'Žiadosť o účet bola úspešne potvrdená; bol vytvorený nový používateľský účet [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Žiadosť o účet bola úspešne odmietnutá.',
 	'confirmaccount-viewing' => '(momentálne sa na ňu pozerá [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Vytvára sa používateľská stránka s biografiou nového používateľa.',
+	'confirmaccount-summary' => 'Vytvára sa používateľská stránka pre nového používateľa.',
 	'confirmaccount-welc' => "'''Vitajte v ''{{GRAMMAR:lokál|{{SITENAME}}}}''!''' Dúfame, že budete prispievať vo veľkom množstve a kvalitne. Pravdepodobne si budete chcieť prečítať [[{{MediaWiki:Helppage}}|Začíname]]. Tak ešte raz vitajte a bavte sa!",
 	'confirmaccount-wsum' => 'Vitajte!',
 	'confirmaccount-email-subj' => 'žiadosť o účet {{GRAMMAR:genitív|{{SITENAME}}}}',
