@@ -645,6 +645,7 @@ $messages['ru'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Teslaton
  */
 $messages['sk'] = array(
 	'confirmaccount-newrequests' => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}} 
