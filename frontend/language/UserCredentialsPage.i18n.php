@@ -1705,7 +1705,24 @@ $messages['sk'] = array(
  * @author Dbc334
  */
 $messages['sl'] = array(
+	'usercredentials' => 'Uporabniške poverilnice',
+	'usercredentials-leg' => 'Poišči potrjene poverilnice uporabnika',
 	'usercredentials-user' => 'Uporabniško ime:',
+	'usercredentials-text' => 'Spodaj so navedene potrjene poverilnice izbranega uporabniškega računa.',
+	'usercredentials-leg-user' => 'Uporabniški račun',
+	'usercredentials-leg-areas' => 'Glavna področja zanimanja',
+	'usercredentials-leg-person' => 'Osebne informacije',
+	'usercredentials-leg-other' => 'Druge informacije',
+	'usercredentials-email' => 'E-pošta:',
+	'usercredentials-real' => 'Pravo ime:',
+	'usercredentials-bio' => 'Biografija:',
+	'usercredentials-attach' => 'Življenjepis/CV:',
+	'usercredentials-notes' => 'Dodatne opombe:',
+	'usercredentials-urls' => 'Seznam spletnih strani:',
+	'usercredentials-ip' => 'Izvirni IP-naslov:',
+	'usercredentials-member' => 'Pravice:',
+	'usercredentials-badid' => 'Za uporabnika nisem našel nobenih poverilnic.
+Preverite, ali ste ime pravilno črkovali.',
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
