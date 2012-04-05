@@ -4014,12 +4014,13 @@ $messages['ku-latn'] = array(
 
 /** Cornish (Kernowek)
  * @author Kw-Moon
+ * @author Nrowe
  */
 $messages['kw'] = array(
 	'confirmaccount-email-q' => 'E-bost',
-	'confirmaccount-name' => 'Hanow-usyer',
+	'confirmaccount-name' => 'Hanow usyer',
 	'confirmaccount-email' => 'E-bost:',
-	'confirmaccount-wsum' => 'Wolcum!',
+	'confirmaccount-wsum' => 'Dynnargh!',
 );
 
 /** Latin (Latina)

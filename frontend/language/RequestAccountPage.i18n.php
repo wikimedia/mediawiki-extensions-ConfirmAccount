@@ -1420,7 +1420,7 @@ Sobald s Konto bstätigt woren isch, chunnsch e Nochricht per E-Mail iber un cha
 	'requestaccount-leg-other' => 'Meh Informatione',
 	'requestaccount-leg-tos' => 'Benutzigsbedingige',
 	'requestaccount-acc-text' => 'An Dyyni E-Mail-Adräss wird noch em Abschicke vu däm Formular e Bstätigungsmail gschickt.
-Bitte reagier druf, indäm Du uf s Bstätigungs-Gleich drucksch, wu s in däre Mail het.
+Bitte reagier druf, indäm Du uf de Bstätigungs-Link drucksch, wu s in däre Mail het.
 Sobald Dyy Konto aagleit woren isch, wird Dir Dyy Passwort per E-Mail zuegschickt.',
 	'requestaccount-areas-text' => 'Wehl d Themene uus, wu Du s meischt Fachwisse din hesch oder wu Du am meischte witt dra schaffe.',
 	'requestaccount-ext-text' => 'Die Informatione wäre vertraulig behandlet un uusschließlig fir dää Aatrag bruucht.
@@ -1454,13 +1454,13 @@ E Bstetigungs-Mail isch an Dyy E-Mail-Adräss gschickt wore.',
 	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adrässe-Priefig',
 	'requestaccount-email-body' => 'Eber mit dr IP Adräss $1, villicht Du, het bi {{SITENAME}} mit Dyynere E-Mail-Adräss e Aatrag uf s Benutzerkonto „$2“ gstellt.
 
-Go bstätigen, ass wirkli Du ne Aatrag uf des Konto bi {{SITENAME}} gstellt hesch, mach bitte in Dyynem Browser des Gleich uf:
+Go bstätigen, ass wirkli Du ne Aatrag uf des Konto bi {{SITENAME}} gstellt hesch, mach bitte in Dyynem Browser de Link uf:
 
 $3
 
 Wänn s Benutzerkonto aagleit woren isch, chunnsch no ne E-Mail mit em Passwort iber.
 
-Wänn Du *kei* Aatrag gstellt hesch uf s Benutzerkonto, mach des Gleich bitte nit uf!
+Wänn Du *kei* Aatrag gstellt hesch uf s Benutzerkonto, mach de Link bitte nit uf!
 
 Dää Bstätigungscode isch ab em $4 nimmi giltig.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Benutzerkontenaatrag',

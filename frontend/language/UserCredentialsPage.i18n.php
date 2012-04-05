@@ -1094,9 +1094,10 @@ $messages['ku-latn'] = array(
 
 /** Cornish (Kernowek)
  * @author Kw-Moon
+ * @author Nrowe
  */
 $messages['kw'] = array(
-	'usercredentials-user' => 'Hanow-usyer:',
+	'usercredentials-user' => 'Hanow usyer:',
 	'usercredentials-email' => 'E-bost:',
 );
 
