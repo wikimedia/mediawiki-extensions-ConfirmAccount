@@ -6118,7 +6118,7 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 	'confirmaccount-submit' => 'Potvrdiť',
 	'confirmaccount-needreason' => 'Do komentára dolu musíte napísať dôvod.',
 	'confirmaccount-canthold' => 'Táto žiadosť je už buď pozdržaná alebo zmazaná.',
-	'confirmaccount-badaction' => 'Aby bolo možné pokračovať, je potrebné zvoliť platnú akciu (prijať, odmietnuť, pozastaviť).',
+	'confirmaccount-badaction' => 'Aby bolo možné pokračovať, je potrebné zvoliť platnú operáciu (prijať, odmietnuť, pozastaviť).',
 	'confirmaccount-acc' => 'Žiadosť o účet bola úspešne potvrdená; bol vytvorený nový používateľský účet [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Žiadosť o účet bola úspešne odmietnutá.',
 	'confirmaccount-viewing' => '(momentálne sa na ňu pozerá [[User:$1|$1]])',
@@ -7508,6 +7508,7 @@ $2
  * @author Kuailong
  * @author Mark85296341
  * @author Wilsonmess
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
 	'confirmaccounts' => '确认户口请求',
@@ -7587,7 +7588,7 @@ $messages['zh-hans'] = array(
 	'confirmaccount-acc' => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
 	'confirmaccount-rej' => '账户请求已经成功拒绝。',
 	'confirmaccount-viewing' => '（当前正由[[User:$1|$1]]浏览）',
-	'confirmaccount-summary' => '正在创建一个新用户拥有传记的用户页面。',
+	'confirmaccount-summary' => '新用户创建用户页',
 	'confirmaccount-welc' => "'''欢迎来到''{{SITENAME}}''！'''
 我们希望您会作出更多更好的贡献。
 您可能想先阅读一下[[{{MediaWiki:Helppage}}|帮助页面]]。

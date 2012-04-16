@@ -648,8 +648,7 @@ $messages['ru'] = array(
  * @author Teslaton
  */
 $messages['sk'] = array(
-	'confirmaccount-newrequests' => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}} 
-[[Special:ConfirmAccounts|{{PLURAL:$1|žiadosť o účet|žiadosti o účet|žiadostí o účet}}]].",
+	'confirmaccount-newrequests' => "Momentálne {{PLURAL:$1|je jedna otvorená|sú '''$1''' otvorené|je '''$1''' otvorených}} [[Special:ConfirmAccounts|{{PLURAL:$1|žiadosť o účet|žiadosti o účet|žiadostí o účet}}]]. '''Vyžaduje sa vaša pozornosť!'''",
 	'requestaccount-loginnotice' => "Aby ste dostali používateľský účet, musíte '''[[Special:RequestAccount|oň požiadať]]'''.",
 	'right-confirmaccount' => 'Zobraziť [[Special:ConfirmAccounts|front žiadostí o účet]]',
 	'right-requestips' => 'Zobraziť IP adresu žiadateľa pri spracovaní žiadostí o účet',
