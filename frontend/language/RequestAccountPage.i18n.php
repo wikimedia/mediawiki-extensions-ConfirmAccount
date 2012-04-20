@@ -640,6 +640,7 @@ $messages['ca'] = array(
 );
 
 /** Czech (Česky)
+ * @author Jezevec
  * @author Jkjk
  * @author Li-sung
  * @author Matěj Grabovský
@@ -663,7 +664,7 @@ $messages['cs'] = array(
 	'requestaccount-reqtype' => 'Pozice:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Osobní biografie:',
+	'requestaccount-bio' => 'Osobní biografie (pouze čistý text):',
 	'requestaccount-attach' => 'Resumé nebo CV (nepovinné):',
 	'requestaccount-notes' => 'Další poznámky:',
 	'requestaccount-urls' => 'Seznam webových stránek, pokud nějaké jsou (jedna na každý řádek):',
@@ -675,7 +676,8 @@ $messages['cs'] = array(
 	'requestaccount-resub' => 'Váš soubor s CV/resumé je potřeba z bezpečnostních důvodů znovu vybrat. Nechejte pole prázdné, pokud jste se rozhodli žádný nepřiložit.',
 	'requestaccount-tos' => 'Přečetl jsem a souhlasím, že budu dodržovat [[{{MediaWiki:Requestaccount-page}}|Podmínky používání služby]] {{GRAMMAR:genitiv|{{SITENAME}}}}. Jméno, které jsem uvedl jako „Skutečné jméno“ je opravdu moje občanské jméno.',
 	'requestaccount-submit' => 'Požádat o účet',
-	'requestaccount-sent' => 'Vaše žádost o účet byla úspěšně odeslána a nyní se čeká na její zkontrolování.',
+	'requestaccount-sent' => 'Vaše žádost o účet byla úspěšně odeslána a nyní se čeká na její zkontrolování.
+Na vaši emailovou adresu byl odeslán potvrzovací email.',
 	'request-account-econf' => 'Vaše e-mailová adresa byla potvrzena a v tomto tvaru se uvede ve vaší žádosti o účet.',
 	'requestaccount-email-subj' => '{{SITENAME}}: Potvrzení e-mailové adresy',
 	'requestaccount-email-body' => 'Někdo, pravděpodobně Vy z IP adresy $1, si na {{GRAMMAR:lokál|{{SITENAME}}}} zaregistroval účet s názvem „$2“ a s touto e-mailovou adresou.
