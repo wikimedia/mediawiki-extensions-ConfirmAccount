@@ -2062,6 +2062,7 @@ Non puoi effettuare ulteriori richieste.',
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Schu
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
@@ -2087,7 +2088,7 @@ $messages['ja'] = array(
 この情報を公開してよいかどうかを確認してください。",
 	'requestaccount-real' => '本名:',
 	'requestaccount-same' => '(本名での登録に限定されます)',
-	'requestaccount-email' => '電子メールアドレス:',
+	'requestaccount-email' => 'メールアドレス：',
 	'requestaccount-reqtype' => 'サイトでの役割:',
 	'requestaccount-level-0' => '著者',
 	'requestaccount-level-1' => '編集者',
