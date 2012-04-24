@@ -3534,6 +3534,7 @@ Possono esserci elenchi di contatti sul sito che si possono usare se si desidera
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Schu
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
@@ -3563,7 +3564,7 @@ $messages['ja'] = array(
 	'confirmaccount-none-r' => '最近に申請が棄却されたアカウントはありません。',
 	'confirmaccount-none-e' => '現在この一覧には期限切れのアカウント申請はありません。',
 	'confirmaccount-real-q' => '本名',
-	'confirmaccount-email-q' => '電子メールアドレス',
+	'confirmaccount-email-q' => 'メールアドレス',
 	'confirmaccount-bio-q' => '経歴',
 	'confirmaccount-showopen' => '未確定の申請',
 	'confirmaccount-showrej' => '却下済み申請',
@@ -3571,7 +3572,7 @@ $messages['ja'] = array(
 	'confirmaccount-showexp' => '期限切れ申請',
 	'confirmaccount-review' => '承認検討',
 	'confirmaccount-types' => 'アカウント承認待ち行列を選択してください:',
-	'confirmaccount-all' => '(全ての待ち行列)',
+	'confirmaccount-all' => '(すべての待ち行列)',
 	'confirmaccount-type' => '選択された待ち行列:',
 	'confirmaccount-type-0' => '著者を希望',
 	'confirmaccount-type-1' => '編集者を希望',
@@ -3587,16 +3588,16 @@ $messages['ja'] = array(
 	'confirmaccount-leg-other' => 'その他',
 	'confirmaccount-name' => '利用者名',
 	'confirmaccount-real' => '本名:',
-	'confirmaccount-email' => '電子メール：',
+	'confirmaccount-email' => 'メール：',
 	'confirmaccount-reqtype' => 'サイトでの役割:',
 	'confirmaccount-pos-0' => '著者',
 	'confirmaccount-pos-1' => '編集者',
 	'confirmaccount-bio' => '経歴：',
-	'confirmaccount-attach' => '履歴書／ CV：',
+	'confirmaccount-attach' => '履歴書/CV：',
 	'confirmaccount-notes' => '特記事項:',
 	'confirmaccount-urls' => 'ウェブサイト一覧:',
 	'confirmaccount-none-p' => '(記述なし)',
-	'confirmaccount-confirm' => 'この申請に対する承認、棄却、保留判断を以下から選択:',
+	'confirmaccount-confirm' => 'この申請に対する承認、棄却、保留の判断を以下から選択：',
 	'confirmaccount-econf' => '(確認済)',
 	'confirmaccount-reject' => '($2、[[User:$1|$1]]によって棄却)',
 	'confirmaccount-rational' => '申請者に対して下された判断:',
@@ -3606,17 +3607,18 @@ $messages['ja'] = array(
 	'confirmaccount-create' => '承認(アカウント作成)',
 	'confirmaccount-deny' => '棄却(一覧から削除)',
 	'confirmaccount-hold' => '保留',
-	'confirmaccount-spam' => 'スパム(電子メールは送信しません)',
-	'confirmaccount-reason' => '判断理由(電子メールに記載されます)：',
+	'confirmaccount-spam' => 'スパム（メールは送信しません）',
+	'confirmaccount-reason' => '判断理由（メールに記載されます）：',
 	'confirmaccount-ip' => 'IPアドレス:',
-	'confirmaccount-legend' => 'このアカウントを確認、または拒否する',
+	'confirmaccount-legend' => 'このアカウントを確認または拒否',
 	'confirmaccount-submit' => '判断確定',
 	'confirmaccount-needreason' => '判断理由を以下に記載する必要があります。',
 	'confirmaccount-canthold' => 'この申請は既に保留済みか、削除済みです。',
+	'confirmaccount-badaction' => '続行するには有効な操作（承認、棄却、保留）を指定する必要があります。',
 	'confirmaccount-acc' => 'アカウント申請の承認に成功しました。作成された新しいアカウントは [[User:$1|$1]] です。',
 	'confirmaccount-rej' => 'アカウント申請は棄却されました。',
 	'confirmaccount-viewing' => '(この申請は、現在[[User:$1|$1]]が受理しています)',
-	'confirmaccount-summary' => '申請された経歴を用いた新規利用者ページ作成',
+	'confirmaccount-summary' => '新しい利用者の利用者ページを作成します。',
 	'confirmaccount-welc' => "'''ようこそ''{{SITENAME}}''へ！''' 多くの寄稿を心よりお待ち申し上げます。
 サイトでの活動に関しては、[[{{MediaWiki:Helppage}}|ヘルプページ]]をご覧ください。それでは、{{SITENAME}}で楽しいひと時を！",
 	'confirmaccount-wsum' => 'ようこそ！',
