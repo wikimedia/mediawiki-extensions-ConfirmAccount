@@ -1261,6 +1261,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-leg-areas' => 'Hauptinteressensgebiete',
 	'confirmaccount-leg-person' => 'Persönliche Informationen',
 	'confirmaccount-leg-other' => 'Weitere Informationen',
+	'confirmaccount-leg-ip' => 'Daten der IP-Adresse',
 	'confirmaccount-name' => 'Benutzername',
 	'confirmaccount-real' => 'Name:',
 	'confirmaccount-email' => 'E-Mail:',
@@ -1274,6 +1275,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-none-p' => '(Nichts angegeben)',
 	'confirmaccount-confirm' => 'Nutze die folgende Auswahl, um den Antrag zu bestätigen, abzulehnen oder um noch abzuwarten.',
 	'confirmaccount-econf' => '(bestätigt)',
+	'confirmaccount-withcv' => '(Lebenslauf angehängt)',
 	'confirmaccount-reject' => '(abgelehnt durch [[User:$1|$1]] am $2)',
 	'confirmaccount-rational' => 'Begründung für den Antragssteller:',
 	'confirmaccount-noreason' => '(nichts)',
@@ -1285,6 +1287,8 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-spam' => 'Spam (keine E-Mail verschicken)',
 	'confirmaccount-reason' => 'Begründung (wird in die E-Mail an den Antragsteller eingefügt):',
 	'confirmaccount-ip' => 'IP-Adresse:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'Zugriffsprogramm:',
 	'confirmaccount-legend' => 'Bestätigen/Ablehnen des Antrags',
 	'confirmaccount-submit' => 'Bestätigen',
 	'confirmaccount-needreason' => 'Du musst eine Begründung eingeben.',
@@ -1318,7 +1322,7 @@ $3
 
 Aus Sicherheitsgründen solltest du dein Passwort unbedingt beim ersten Anmelden ändern.
 Um dich anzumelden besuche bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
-	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“
+	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
 
 Dies kann viele Gründe haben. Möglicherweise hast du das Antragsformular
@@ -1327,7 +1331,7 @@ die Anforderungen auf andere Weise nicht erfüllt.
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
-	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“
+	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
 bei {{SITENAME}} abgelehnt.
 
 $2

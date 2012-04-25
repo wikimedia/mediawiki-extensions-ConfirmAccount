@@ -391,6 +391,7 @@ $messages['de'] = array(
 	'usercredentials-leg-areas' => 'Haupt-Interessensgebiete',
 	'usercredentials-leg-person' => 'Persönliche Informationen',
 	'usercredentials-leg-other' => 'Weitere Informationen',
+	'usercredentials-leg-ip' => 'Daten der IP-Adresse',
 	'usercredentials-email' => 'E-Mail:',
 	'usercredentials-real' => 'Bürgerlicher Name:',
 	'usercredentials-bio' => 'Biographie:',
@@ -398,6 +399,8 @@ $messages['de'] = array(
 	'usercredentials-notes' => 'Zusätzliche Bemerkungen:',
 	'usercredentials-urls' => 'Liste der Webseiten:',
 	'usercredentials-ip' => 'Originale IP-Adresse:',
+	'usercredentials-xff' => 'Ursprünglicher X-Forwarded-For:',
+	'usercredentials-agent' => 'Ursprüngliches Zugriffsprogramm:',
 	'usercredentials-member' => 'Rechte:',
 	'usercredentials-badid' => 'Es wurden keinen Berechtigungsnachweis für diesen Benutzer gefunden. Bitte die Schreibweise prüfen.',
 );
