@@ -31,7 +31,7 @@ $wgConfirmAccountRequestFormItems = array(
 	'Biography'       => array( 'enabled' => true, 'minWords' => 50 ),
 	# Interest checkboxes (defined in MediaWiki:requestaccount-areas)
 	'AreasOfInterest' => array( 'enabled' => true ),
-	# CV/resume attachement option
+	# CV/resume attachment option
 	'CV'              => array( 'enabled' => true ),
 	# Additional non-public info for reviewer
 	'Notes'           => array( 'enabled' => true ),
