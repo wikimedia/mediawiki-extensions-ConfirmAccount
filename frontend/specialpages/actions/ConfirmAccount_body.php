@@ -123,40 +123,40 @@ class ConfirmAccountsPage extends SpecialPage {
 			$listLink = wfMsgHtml( 'confirmaccount-showopen' );
 		}
 		if ( $this->acrID || !$this->showHeld ) {
-			$listLink = $this->getLang()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
 				Linker::makeKnownLinkObj( $titleObj,
 					wfMsgHtml( 'confirmaccount-showheld' ),
 					wfArrayToCGI( array( 'wpShowHeld' => 1 ) ) )
 			) );
 		} else {
-			$listLink = $this->getLang()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
 				wfMsgHtml( 'confirmaccount-showheld' )
 			) );
 		}
 		if ( $this->acrID || !$this->showRejects ) {
-			$listLink = $this->getLang()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
 				Linker::makeKnownLinkObj( $titleObj,
 					wfMsgHtml( 'confirmaccount-showrej' ),
 					wfArrayToCGI( array( 'wpShowRejects' => 1 ) ) )
 			) );
 		} else {
-			$listLink = $this->getLang()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
 				wfMsgHtml( 'confirmaccount-showrej' )
 			) );
 		}
 		if ( $this->acrID || !$this->showStale ) {
-			$listLink = $this->getLang()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
 				Linker::makeKnownLinkObj( $titleObj,
 					wfMsgHtml( 'confirmaccount-showexp' ),
 					wfArrayToCGI( array( 'wpShowStale' => 1 ) ) )
 			) );
 		} else {
-			$listLink = $this->getLang()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
 				wfMsgHtml( 'confirmaccount-showexp' )
 			) );
@@ -208,7 +208,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				wfArrayToCGI( array( 'wpShowStale' => 1 ) ) ).'</i>';
 
 			$out->addHTML( "<li><i>".wfMsgHtml("confirmaccount-type-$i")."</i> (" .
-				$this->getLang()->pipeList( array( $open, $held, $rejects, $stale ) ) . ")</li>" );
+				$this->getLanguage()->pipeList( array( $open, $held, $rejects, $stale ) ) . ")</li>" );
 		}
 		$out->addHTML( '</ul>' );
 	}
@@ -245,9 +245,9 @@ class ConfirmAccountsPage extends SpecialPage {
 		$adminId = $accountReq->getHandlingUser();
 
 		if ( $rejectTimestamp ) {
-			$datim = $this->getLang()->timeanddate( $rejectTimestamp, true );
-			$date = $this->getLang()->date( $rejectTimestamp, true );
-			$time = $this->getLang()->time( $rejectTimestamp, true );
+			$datim = $this->getLanguage()->timeanddate( $rejectTimestamp, true );
+			$date = $this->getLanguage()->date( $rejectTimestamp, true );
+			$time = $this->getLanguage()->time( $rejectTimestamp, true );
 			# Auto-rejected requests have a user ID of zero
 			if ( $adminId ) {
 				$out->addHTML('<p><b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'),
@@ -258,9 +258,9 @@ class ConfirmAccountsPage extends SpecialPage {
 				$out->addHTML( "<p><i> $reason </i></p>" );
 			}
 		} elseif ( $heldTimestamp ) {
-			$datim = $this->getLang()->timeanddate( $heldTimestamp, true );
-			$date = $this->getLang()->date( $heldTimestamp, true );
-			$time = $this->getLang()->time( $heldTimestamp, true );
+			$datim = $this->getLanguage()->timeanddate( $heldTimestamp, true );
+			$date = $this->getLanguage()->date( $heldTimestamp, true );
+			$time = $this->getLanguage()->time( $heldTimestamp, true );
 
 			$out->addHTML('<p><b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'),
 				User::whoIs( $adminId ), $datim, $date, $time ).'</b></p>');
@@ -270,12 +270,12 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountconfirm',
 			'action' => $titleObj->getLocalUrl() ) );
+
 		$form .= "<fieldset>";
 		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-user') . '</legend>';
 		$form .= '<table cellpadding=\'4\'>';
 		$form .= "<tr><td>".Xml::label( wfMsgHtml('username'), 'wpNewName' )."</td>";
 		$form .= "<td>".Xml::input( 'wpNewName', 30, $this->reqUsername, array('id' => 'wpNewName') )."</td></tr>\n";
-
 		$econf = '';
 		if ( $accountReq->getEmailAuthTimestamp() ) {
 			$econf = ' <strong>'.wfMsgHtml('confirmaccount-econf').'</strong>';
@@ -293,11 +293,10 @@ class ConfirmAccountsPage extends SpecialPage {
 			$form .= Xml::closeElement('select')."\n";
 			$form .= "</td></tr>\n";
 		}
-
 		$form .= '</table></fieldset>';
 
 		$userAreas = ConfirmAccount::getUserAreaConfig();
-		if ( count( $userAreas ) > 0 ) {
+		if ( $this->hasItem( 'AreasOfInterest' ) && count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-areas') . '</legend>';
 
@@ -325,25 +324,28 @@ class ConfirmAccountsPage extends SpecialPage {
 			$form .= '</fieldset>';
 		}
 
-		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-person') . '</legend>';
-		global $wgUseRealNamesOnly, $wgAllowRealName;
-		if( $wgUseRealNamesOnly || $wgAllowRealName ) {
-			$form .= '<table cellpadding=\'4\'>';
-			$form .= "<tr><td>".wfMsgHtml('confirmaccount-real')."</td>";
-			$form .= "<td>".htmlspecialchars( $accountReq->getRealName() )."</td></tr>\n";
-			$form .= '</table>';
+		if ( $this->hasItem( 'Biography' ) || $this->hasItem( 'RealName' ) ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-person') . '</legend>';
+			if( $this->hasItem( 'RealName' ) ) {
+				$form .= '<table cellpadding=\'4\'>';
+				$form .= "<tr><td>".wfMsgHtml('confirmaccount-real')."</td>";
+				$form .= "<td>".htmlspecialchars( $accountReq->getRealName() )."</td></tr>\n";
+				$form .= '</table>';
+			}
+			if ( $this->hasItem( 'Biography' ) ) {
+				$form .= "<p>".wfMsgHtml('confirmaccount-bio')."\n";
+				$form .= "<textarea tabindex='1' name='wpNewBio' id='wpNewBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
+					htmlspecialchars($this->reqBio) .
+					"</textarea></p>\n";
+			}
+			$form .= '</fieldset>';
 		}
-		$form .= "<p>".wfMsgHtml('confirmaccount-bio')."\n";
-		$form .= "<textarea tabindex='1' name='wpNewBio' id='wpNewBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
-			htmlspecialchars($this->reqBio) .
-			"</textarea></p>\n";
-		$form .= '</fieldset>';
-		global $wgAccountRequestExtraInfo;
-		if ($wgAccountRequestExtraInfo || $reqUser->isAllowed( 'requestips' ) ) {
+
+		if ( $this->hasItem( 'CV' ) || $this->hasItem( 'Notes' ) || $this->hasItem( 'Links' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-other') . '</legend>';
-			if( $wgAccountRequestExtraInfo ) {
+			if( $this->hasItem( 'CV' ) ) {
 				$form .= '<p>'.wfMsgHtml('confirmaccount-attach') . ' ';
 				if( $accountReq->getFileName() !== null ) {
 					$form .= Linker::makeKnownLinkObj( $titleObj,
@@ -352,20 +354,28 @@ class ConfirmAccountsPage extends SpecialPage {
 				} else {
 					$form .= wfMsgHtml('confirmaccount-none-p');
 				}
+			}
+			if ( $this->hasItem( 'Notes' ) ) {
 				$form .= "</p><p>".wfMsgHtml('confirmaccount-notes')."\n";
 				$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
 					htmlspecialchars( $accountReq->getNotes() ) .
 					"</textarea></p>\n";
+			}
+			if ( $this->hasItem( 'Links' ) ) {
 				$form .= "<p>".wfMsgHtml('confirmaccount-urls')."</p>\n";
 				$form .= self::parseLinks( $accountReq->getUrls() );
 			}
-			if( $reqUser->isAllowed( 'requestips' ) ) {
-				$blokip = SpecialPage::getTitleFor( 'Block' );
-				$form .= "<p>".wfMsgHtml('confirmaccount-ip') .
-					" " . htmlspecialchars( $accountReq->getIP() ).
-					" (" . Linker::makeKnownLinkObj( $blokip, wfMsgHtml('blockip'),
-					'ip=' . $accountReq->getIP() . '&wpCreateAccount=1' ).")</p>\n";
-			}
+			$form .= '</fieldset>';
+		}
+
+		if( $reqUser->isAllowed( 'requestips' ) ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-ip') . '</legend>';
+			$blokip = SpecialPage::getTitleFor( 'Block' );
+			$form .= "<p>".wfMsgHtml('confirmaccount-ip') .
+				" " . htmlspecialchars( $accountReq->getIP() ).
+				" (" . Linker::makeKnownLinkObj( $blokip, wfMsgHtml('blockip'),
+				'ip=' . $accountReq->getIP() . '&wpCreateAccount=1' ).")</p>\n";
 			$form .= '</fieldset>';
 		}
 
@@ -386,7 +396,6 @@ class ConfirmAccountsPage extends SpecialPage {
 			array('id' => 'submitSpam','onclick' => 'document.getElementById("wpComment").style.display="none"') );
 		$form .= ' '.Xml::label( wfMsg('confirmaccount-spam'), 'submitSpam' )."</td>\n";
 		$form .= "</tr></table>";
-
 		$form .= "<div id='wpComment'><p>".wfMsgHtml('confirmaccount-reason')."</p>\n";
 		$form .= "<p><textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
 			htmlspecialchars($this->reason) . "</textarea></p></div>\n";
@@ -397,7 +406,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= Html::Hidden( 'action', 'reject' );
 		$form .= Html::Hidden( 'acrid', $accountReq->getId() );
 		$form .= Html::Hidden( 'wpShowRejects', $this->showRejects );
-		$form .= Html::Hidden( 'wpEditToken', $reqUser->editToken( $accountReq->getId() ) )."\n";
+		$form .= Html::Hidden( 'wpEditToken', $reqUser->getToken( $accountReq->getId() ) )."\n";
 		$form .= Xml::closeElement( 'form' );
 
 		$out->addHTML( $form );
@@ -407,6 +416,12 @@ class ConfirmAccountsPage extends SpecialPage {
 		# Have it expire in 10 minutes...
 		$key = wfMemcKey( 'acctrequest', 'view', $accountReq->getId() );
 		$wgMemc->set( $key, $reqUser->getID(), 60*10 );
+	}
+
+	protected function hasItem( $name ) {
+		global $wgConfirmAccountRequestFormItems;
+
+		return $wgConfirmAccountRequestFormItems[$name]['enabled'];
 	}
 
 	/**
@@ -614,7 +629,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	 * @return string
 	 */
 	public function formatRow( $row ) {
-		global $wgUseRealNamesOnly, $wgAllowRealName, $wgMemc;
+		global $wgMemc;
 
 		if ( $this->showRejects || $this->showStale ) {
 			$link = Linker::makeKnownLinkObj(
@@ -627,21 +642,21 @@ class ConfirmAccountsPage extends SpecialPage {
 				wfMsgHtml( 'confirmaccount-review' ),
 				'acrid=' . (int)$row->acr_id );
 		}
-		$time = $this->getLang()->timeanddate( wfTimestamp(TS_MW, $row->acr_registration), true );
+		$time = $this->getLanguage()->timeanddate( wfTimestamp(TS_MW, $row->acr_registration), true );
 
 		$r = "<li class='mw-confirmaccount-type-{$this->queueType}'>";
 
 		$r .= $time." (<strong>{$link}</strong>)";
 		# Auto-rejected accounts have a user ID of zero
 		if( $row->acr_rejected && $row->acr_user ) {
-			$datim = $this->getLang()->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
-			$date = $this->getLang()->date( wfTimestamp(TS_MW, $row->acr_rejected), true );
-			$time = $this->getLang()->time( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$datim = $this->getLanguage()->timeanddate( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$date = $this->getLanguage()->date( wfTimestamp(TS_MW, $row->acr_rejected), true );
+			$time = $this->getLanguage()->time( wfTimestamp(TS_MW, $row->acr_rejected), true );
 			$r .= ' <b>'.wfMsgExt( 'confirmaccount-reject', array('parseinline'), $row->user_name, $datim, $date, $time ).'</b>';
 		} elseif( $row->acr_held && !$row->acr_rejected ) {
-			$datim = $this->getLang()->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
-			$date = $this->getLang()->date( wfTimestamp(TS_MW, $row->acr_held), true );
-			$time = $this->getLang()->time( wfTimestamp(TS_MW, $row->acr_held), true );
+			$datim = $this->getLanguage()->timeanddate( wfTimestamp(TS_MW, $row->acr_held), true );
+			$date = $this->getLanguage()->date( wfTimestamp(TS_MW, $row->acr_held), true );
+			$time = $this->getLanguage()->time( wfTimestamp(TS_MW, $row->acr_held), true );
 			$r .= ' <b>'.wfMsgExt( 'confirmaccount-held', array('parseinline'), User::whoIs($row->acr_user), $datim, $date, $time ).'</b>';
 		}
 		# Check if someone is viewing this request
@@ -652,11 +667,11 @@ class ConfirmAccountsPage extends SpecialPage {
 		}
 
 		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' cellspacing='1' cellpadding='3' border='1' width='100%'>";
-		if( !$wgUseRealNamesOnly ) {
+		if( $this->hasItem( 'UserName' ) ) {
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-name').'</strong></td><td width=\'100%\'>' .
 				htmlspecialchars($row->acr_name) . '</td></tr>';
 		}
-		if( $wgUseRealNamesOnly  || $wgAllowRealName ) {
+		if( $this->hasItem( 'RealName' ) ) {
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real-q').'</strong></td><td width=\'100%\'>' .
 				htmlspecialchars($row->acr_real_name) . '</td></tr>';
 		}
@@ -665,7 +680,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
 		# Truncate this, blah blah...
 		$bio = htmlspecialchars($row->acr_bio);
-		$preview = $this->getLang()->truncate( $bio, 400, '' );
+		$preview = $this->getLanguage()->truncate( $bio, 400, '' );
 		if( strlen($preview) < strlen($bio) ) {
 			$preview = substr( $preview, 0, strrpos($preview,' ') );
 			$preview .= " . . .";
@@ -687,7 +702,7 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
 
 	function __construct(
-		$form, $conds = array(), $type, $rejects=false, $showHeld=false, $showStale=false
+		$form, $conds, $type, $rejects=false, $showHeld=false, $showStale=false
 	) {
 		$this->mForm = $form;
 		$this->mConds = $conds;

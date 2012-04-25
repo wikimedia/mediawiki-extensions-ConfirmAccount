@@ -140,8 +140,9 @@ class AccountConfirmSubmission {
 
 	protected function acceptRequest( IContextSource $context ) {
 		global $wgAuth, $wgAccountRequestTypes, $wgConfirmAccountSaveInfo;
-		global $wgAllowAccountRequestFiles, $wgConfirmAccountFSRepos;
+		global $wgConfirmAccountRequestFormItems, $wgConfirmAccountFSRepos;
 
+		$formConfig = $wgConfirmAccountRequestFormItems; // convience
 		$accReq = $this->accountReq; // convenience
 
 		# Now create user and check if the name is valid
@@ -190,7 +191,7 @@ class AccountConfirmSubmission {
 		if ( $wgConfirmAccountSaveInfo ) {
 			$key = $accReq->getFileStorageKey();
 			# Copy any attached files to new storage group
-			if ( $wgAllowAccountRequestFiles && $key ) {
+			if ( $formConfig['CV']['enabled'] && $key ) {
 				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 				$repoNew = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
 
@@ -299,7 +300,7 @@ class AccountConfirmSubmission {
 		ConfirmAccount::clearAccountRequestCountCache();
 
 		# Delete any attached file and don't stop the whole process if this fails
-		if ( $wgAllowAccountRequestFiles ) {
+		if ( $formConfig['CV']['enabled'] ) {
 			$key = $accReq->getFileStorageKey();
 			if ( $key ) {
 				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );

@@ -1,29 +1,28 @@
 <?php
 
 class RequestAccountPage extends SpecialPage {
-	protected $mUsername;
-	protected $mRealName;
-	protected $mEmail;
-	protected $mBio;
-	protected $mNotes;
-	protected $mUrls;
-	protected $mToS;
-	protected $mType;
-	/** @var array */
+	protected $mUsername; // string
+	protected $mRealName; // string
+	protected $mEmail; // string
+	protected $mBio; // string
+	protected $mNotes; // string
+	protected $mUrls; // string
+	protected $mToS; // bool
+	protected $mType; // integer
+	/** @var Array */
 	protected $mAreas;
 
-	protected $mPrevAttachment;
-	protected $mForgotAttachment;
-	protected $mSrcName;
-	protected $mFileSize;
-	protected $mTempPath;
+	protected $mPrevAttachment; // string
+	protected $mForgotAttachment; // bool
+	protected $mSrcName; // string
+	protected $mFileSize; // integer
+	protected $mTempPath; // string
 
 	function __construct() {
 		parent::__construct( 'RequestAccount' );
 	}
 
 	function execute( $par ) {
-		global $wgUseRealNamesOnly, $wgAccountRequestToS, $wgAccountRequestExtraInfo;
 		global $wgAccountRequestTypes;
 
 		$reqUser = $this->getUser();
@@ -40,38 +39,44 @@ class RequestAccountPage extends SpecialPage {
 
 		$this->mRealName = trim( $request->getText( 'wpRealName' ) );
 		# We may only want real names being used
-		$this->mUsername = $wgUseRealNamesOnly
+		$this->mUsername = !$this->hasItem( 'UserName' )
 			? $this->mRealName
 			: $request->getText( 'wpUsername' );
 		$this->mUsername = trim( $this->mUsername );
-		# Attachments...
-		$this->initializeUpload( $request );
-		$this->mPrevAttachment = $request->getText( 'attachment' );
-		$this->mForgotAttachment = $request->getBool( 'forgotAttachment' );
-		# Other fields...
+		# CV/resume attachment...
+		if ( $this->hasItem( 'CV' ) ) {
+			$this->initializeUpload( $request );
+			$this->mPrevAttachment = $request->getText( 'attachment' );
+			$this->mForgotAttachment = $request->getBool( 'forgotAttachment' );
+		}
+		# Other identifying fields...
 		$this->mEmail = trim( $request->getText( 'wpEmail' ) );
-		$this->mBio = $request->getText( 'wpBio', '' );
-		$this->mNotes = $wgAccountRequestExtraInfo ?
-			$request->getText( 'wpNotes', '' ) : '';
-		$this->mUrls = $wgAccountRequestExtraInfo ?
-			$request->getText( 'wpUrls', '' ) : '';
-		$this->mToS = $wgAccountRequestToS ?
-			$request->getBool( 'wpToS' ) : false;
+		$this->mBio = $this->hasItem( 'Biography' ) ? $request->getText( 'wpBio', '' ) : '';
+		$this->mNotes = $this->hasItem( 'Notes' ) ? $request->getText( 'wpNotes', '' ) : '';
+		$this->mUrls = $this->hasItem( 'Links' ) ? $request->getText( 'wpUrls', '' ) : '';
+		# Site terms of service...
+		$this->mToS = $this->hasItem( 'TermsOfService' ) ? $request->getBool( 'wpToS' ) : false;
+		# Which account request queue this belongs in...
 		$this->mType = $request->getInt( 'wpType' );
-		$this->mType = isset( $wgAccountRequestTypes[$this->mType] ) ?
-			$this->mType : 0;
+		$this->mType = isset( $wgAccountRequestTypes[$this->mType] ) ? $this->mType : 0;
 		# Load areas user plans to be active in...
 		$this->mAreas = array();
-		foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
-			$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
-			$this->mAreas[$name] = $request->getInt( $formName, -1 );
+		if ( $this->hasItem( 'AreasOfInterest' ) ) {
+			foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
+				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
+				$this->mAreas[$name] = $request->getInt( $formName, -1 );
+			}
 		}
 		# We may be confirming an email address here
 		$emailCode = $request->getText( 'wpEmailToken' );
 
 		$action = $request->getVal( 'action' );
-		if ( $request->wasPosted() && $reqUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
-			$this->mPrevAttachment = $this->mPrevAttachment ? $this->mPrevAttachment : $this->mSrcName;
+		if ( $request->wasPosted()
+			&& $reqUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) )
+		{
+			$this->mPrevAttachment = $this->mPrevAttachment
+				? $this->mPrevAttachment
+				: $this->mSrcName;
 			$this->doSubmit();
 		} elseif ( $action == 'confirmemail' ) {
 			$this->confirmEmailToken( $emailCode );
@@ -83,9 +88,7 @@ class RequestAccountPage extends SpecialPage {
 	}
 
 	protected function showForm( $msg = '', $forgotFile = 0 ) {
-		global $wgUseRealNamesOnly, $wgAllowRealName;
-		global $wgAccountRequestToS, $wgAccountRequestTypes, $wgAccountRequestExtraInfo,
-			$wgAllowAccountRequestFiles, $wgMakeUserPageFromBio;
+		global $wgAccountRequestTypes, $wgMakeUserPageFromBio;
 
 		$reqUser = $this->getUser();
 
@@ -106,15 +109,16 @@ class RequestAccountPage extends SpecialPage {
 
 		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
 			'action' => $this->getTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
+
 		$form .= '<fieldset><legend>' . wfMsgHtml( 'requestaccount-leg-user' ) . '</legend>';
 		$form .= wfMsgExt( 'requestaccount-acc-text', 'parse' ) . "\n";
 		$form .= '<table cellpadding=\'4\'>';
-		if ( $wgUseRealNamesOnly ) {
-			$form .= "<tr><td>" . wfMsgHtml( 'username' ) . "</td>";
-			$form .= "<td>" . wfMsgHtml( 'requestaccount-same' ) . "</td></tr>\n";
-		} else {
+		if ( $this->hasItem( 'UserName' ) ) {
 			$form .= "<tr><td>" . Xml::label( wfMsgHtml( 'username' ), 'wpUsername' ) . "</td>";
 			$form .= "<td>" . Xml::input( 'wpUsername', 30, $this->mUsername, array( 'id' => 'wpUsername' ) ) . "</td></tr>\n";
+		} else {
+			$form .= "<tr><td>" . wfMsgHtml( 'username' ) . "</td>";
+			$form .= "<td>" . wfMsgHtml( 'requestaccount-same' ) . "</td></tr>\n";
 		}
 		$form .= "<tr><td>" . Xml::label( wfMsgHtml( 'requestaccount-email' ), 'wpEmail' ) . "</td>";
 		$form .= "<td>" . Xml::input( 'wpEmail', 30, $this->mEmail, array( 'id' => 'wpEmail' ) ) . "</td></tr>\n";
@@ -132,7 +136,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= '</table></fieldset>';
 
 		$userAreas = ConfirmAccount::getUserAreaConfig();
-		if ( count( $userAreas ) > 0 ) {
+		if ( $this->hasItem( 'AreasOfInterest' ) && count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-areas' ) . '</legend>';
 			$form .=  wfMsgExt( 'requestaccount-areas-text', 'parse' ) . "\n";
@@ -161,49 +165,59 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '</fieldset>';
 		}
 
-		$form .= '<fieldset>';
-		$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-person' ) . '</legend>';
-		if ( $wgMakeUserPageFromBio ) {
-			$form .= wfMsgExt( 'requestaccount-bio-text-i', 'parse' ) . "\n";
+		if ( $this->hasItem( 'Biography' ) || $this->hasItem( 'RealName' ) ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-person' ) . '</legend>';
+			if ( $this->hasItem( 'RealName' ) ) {
+				$form .= '<table cellpadding=\'4\'>';
+				$form .= "<tr><td>" . Xml::label( wfMsgHtml( 'requestaccount-real' ), 'wpRealName' ) . "</td>";
+				$form .= "<td>" . Xml::input( 'wpRealName', 35, $this->mRealName, array( 'id' => 'wpRealName' ) ) . "</td></tr>\n";
+				$form .= '</table>';
+			}
+			if ( $this->hasItem( 'Biography' ) ) {
+				if ( $wgMakeUserPageFromBio ) {
+					$form .= wfMsgExt( 'requestaccount-bio-text-i', 'parse' ) . "\n";
+				}
+				$form .= wfMsgExt( 'requestaccount-bio-text', 'parse' ) . "\n";
+				$form .= "<p>" . wfMsgWikiHtml( 'requestaccount-bio' ) . "\n";
+				$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
+					htmlspecialchars( $this->mBio ) . "</textarea></p>\n";
+			}
+			$form .= '</fieldset>';
 		}
-		$form .= wfMsgExt( 'requestaccount-bio-text', 'parse' ) . "\n";
 
-		if ( $wgUseRealNamesOnly  || $wgAllowRealName ) {
-			$form .= '<table cellpadding=\'4\'>';
-			$form .= "<tr><td>" . Xml::label( wfMsgHtml( 'requestaccount-real' ), 'wpRealName' ) . "</td>";
-			$form .= "<td>" . Xml::input( 'wpRealName', 35, $this->mRealName, array( 'id' => 'wpRealName' ) ) . "</td></tr>\n";
-			$form .= '</table>';
-		}
-		$form .= "<p>" . wfMsgWikiHtml( 'requestaccount-bio' ) . "\n";
-		$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
-			htmlspecialchars( $this->mBio ) . "</textarea></p>\n";
-		$form .= '</fieldset>';
-		if ( $wgAccountRequestExtraInfo ) {
+		if ( $this->hasItem( 'CV' ) || $this->hasItem( 'Notes' ) || $this->hasItem( 'Links' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-other' ) . '</legend>';
 			$form .= wfMsgExt( 'requestaccount-ext-text', 'parse' ) . "\n";
-			if ( $wgAllowAccountRequestFiles ) {
+			if ( $this->hasItem( 'CV' ) ) {
 				$form .= "<p>" . wfMsgHtml( 'requestaccount-attach' ) . " ";
 				$form .= Xml::input( 'wpUploadFile', 35, '',
 					array( 'id' => 'wpUploadFile', 'type' => 'file' ) ) . "</p>\n";
 			}
-			$form .= "<p>" . wfMsgHtml( 'requestaccount-notes' ) . "\n";
-			$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%;background-color:#f9f9f9;'>" .
-				htmlspecialchars( $this->mNotes ) .
-				"</textarea></p>\n";
-			$form .= "<p>" . wfMsgHtml( 'requestaccount-urls' ) . "\n";
-			$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
-				htmlspecialchars( $this->mUrls ) .
-				"</textarea></p>\n";
+			if ( $this->hasItem( 'Notes' ) ) {
+				$form .= "<p>" . wfMsgHtml( 'requestaccount-notes' ) . "\n";
+				$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%;background-color:#f9f9f9;'>" .
+					htmlspecialchars( $this->mNotes ) .
+					"</textarea></p>\n";
+			}
+			if ( $this->hasItem( 'Links' ) ) {
+				$form .= "<p>" . wfMsgHtml( 'requestaccount-urls' ) . "\n";
+				$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
+					htmlspecialchars( $this->mUrls ) .
+					"</textarea></p>\n";
+			}
 			$form .= '</fieldset>';
 		}
-		if ( $wgAccountRequestToS ) {
+
+		if ( $this->hasItem( 'TermsOfService' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-tos' ) . '</legend>';
 			$form .= "<p>" . Xml::check( 'wpToS', $this->mToS, array( 'id' => 'wpToS' ) ) .
 				' <label for="wpToS">' . wfMsgExt( 'requestaccount-tos', array( 'parseinline' ) ) . "</label></p>\n";
 			$form .= '</fieldset>';
 		}
+
 		# FIXME: do this better...
 		global $wgConfirmAccountCaptchas, $wgCaptchaClass, $wgCaptchaTriggers;
 		if ( $wgConfirmAccountCaptchas && isset( $wgCaptchaClass )
@@ -217,7 +231,7 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '</fieldset>';
 		}
 		$form .= Html::Hidden( 'title', $this->getTitle()->getPrefixedDBKey() ) . "\n";
-		$form .= Html::Hidden( 'wpEditToken', $reqUser->editToken() ) . "\n";
+		$form .= Html::Hidden( 'wpEditToken', $reqUser->getEditToken() ) . "\n";
 		$form .= Html::Hidden( 'attachment', $this->mPrevAttachment ) . "\n";
 		$form .= Html::Hidden( 'forgotAttachment', $this->mForgotAttachment ) . "\n";
 		$form .= "<p>" . Xml::submitButton( wfMsgHtml( 'requestaccount-submit' ) ) . "</p>";
@@ -226,6 +240,12 @@ class RequestAccountPage extends SpecialPage {
 		$out->addHTML( $form );
 
 		$out->addWikiMsg( 'requestaccount-footer' );
+	}
+
+	protected function hasItem( $name ) {
+		global $wgConfirmAccountRequestFormItems;
+
+		return $wgConfirmAccountRequestFormItems[$name]['enabled'];
 	}
 
 	protected function doSubmit() {
@@ -265,6 +285,7 @@ class RequestAccountPage extends SpecialPage {
 				$areaSet[] = $area;
 			}
 		}
+
 		$submission = new AccountRequestSubmission(
 			$this->getUser(),
 			array(
@@ -314,9 +335,10 @@ class RequestAccountPage extends SpecialPage {
 	 * @param $request WebRequest
 	 */
 	protected function initializeUpload( $request ) {
-		$this->mTempPath = $request->getFileTempName( 'wpUploadFile' );
-		$this->mFileSize = $request->getFileSize( 'wpUploadFile' );
-		$this->mSrcName = $request->getFileName( 'wpUploadFile' );
+		$file = new WebRequestUpload( $request, 'wpUploadFile' );
+		$this->mTempPath = $file->getTempName();
+		$this->mFileSize = $file->getSize();
+		$this->mSrcName  = $file->getName();
 	}
 
 	/**
@@ -327,6 +349,7 @@ class RequestAccountPage extends SpecialPage {
 	 */
 	protected function confirmEmailToken( $code ) {
 		global $wgConfirmAccountContact, $wgPasswordSender, $wgPasswordSenderName;
+
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 		# Confirm if this token is in the pending requests
@@ -355,7 +378,9 @@ class RequestAccountPage extends SpecialPage {
 			$user = User::newFromConfirmationCode( $code );
 			if ( is_object( $user ) ) {
 				if ( $user->confirmEmail() ) {
-					$message = $reqUser->isLoggedIn() ? 'confirmemail_loggedin' : 'confirmemail_success';
+					$message = $reqUser->isLoggedIn()
+						? 'confirmemail_loggedin'
+						: 'confirmemail_success';
 					$out->addWikiMsg( $message );
 					if ( !$reqUser->isLoggedIn() ) {
 						$title = SpecialPage::getTitleFor( 'Userlogin' );

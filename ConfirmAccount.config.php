@@ -10,8 +10,6 @@ $wgMakeUserPageFromBio = true;
 $wgAutoUserBioText = '';
 
 $wgAutoWelcomeNewUsers = true;
-# Make the username of the real name?
-$wgUseRealNamesOnly = true;
 
 # How long to store rejected requests
 $wgRejectedAccountMaxAge = 7 * 24 * 3600; // One week
@@ -23,21 +21,32 @@ $wgAccountRequestThrottle = 1;
 # Can blocked users request accounts?
 $wgAccountRequestWhileBlocked = false;
 
-# Minimum biography specs
-$wgAccountRequestMinWords = 50;
+# Which form elements to show at Special:RequestAccount
+$wgConfirmAccountRequestFormItems = array(
+	# Let users make names other than their "real name"
+	'UserName'        => array( 'enabled' => true ),
+	# Real name of user
+	'RealName'        => array( 'enabled' => true ),
+	# Biographical info
+	'Biography'       => array( 'enabled' => true, 'minWords' => 50 ),
+	# Interest checkboxes (defined in MediaWiki:requestaccount-areas)
+	'AreasOfInterest' => array( 'enabled' => true ),
+	# CV/resume attachement option
+	'CV'              => array( 'enabled' => true ),
+	# Additional non-public info for reviewer
+	'Notes'           => array( 'enabled' => true ),
+	# Option to place web URLs that establish the user
+	'Links'           => array( 'enabled' => true ),
+	# Terms of Service checkbox
+	'TermsOfService'  => array( 'enabled' => true ),
+);
 
-# Show ToS checkbox
-$wgAccountRequestToS = true;
-# Show confirmation info fields (notes,url,files if enabled)
-$wgAccountRequestExtraInfo = true;
-# If $wgAccountRequestExtraInfo, also enables file attachments
-$wgAllowAccountRequestFiles = true;
 # If files can be attached, what types can be used? (MIME data is checked)
 $wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
 
 # Prospective account request types.
 # Format is an array of (integer => (subpage param,user group,autotext)) pairs.
-# The integer keys enumerate the request types. The key for a type should not change. 
+# The integer keys enumerate the request types. The key for a type should not change.
 # Each type has its own request queue at Special:ConfirmAccount/<subpage param>.
 # When a request of a certain type is approved, the new user:
 # (a) is placed in the <user group> group (if not User or *)

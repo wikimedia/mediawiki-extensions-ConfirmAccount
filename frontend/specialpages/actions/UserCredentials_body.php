@@ -144,10 +144,7 @@ class UserCredentialsPage extends SpecialPage {
 
 		$form .= '<fieldset>';
 		$form .= '<legend>' . wfMsgHtml( 'usercredentials-leg-other' ) . '</legend>';
-
-		global $wgAccountRequestExtraInfo ;
-
-		if( $wgAccountRequestExtraInfo ) {
+		if( $this->hasItem( 'CV' ) || $this->hasItem( 'Notes' ) || $this->hasItem( 'Links' ) ) {
 			$form .= '<p>' . wfMsgHtml( 'usercredentials-attach' ) . ' ';
 			if ( $row->acd_filename ) {
 				$form .= Linker::makeKnownLinkObj( $titleObj, htmlspecialchars( $row->acd_filename ),
@@ -162,13 +159,22 @@ class UserCredentialsPage extends SpecialPage {
 			$form .= "<p>" . wfMsgHtml( 'usercredentials-urls' ) . "</p>\n";
 			$form .= ConfirmAccountsPage::parseLinks( $row->acd_urls );
 		}
-
-		if ( $reqUser->isAllowed( 'requestips' ) ) {
-			$form .= "<p>" . wfMsgHtml( 'usercredentials-ip' ) . " " . htmlspecialchars( $row->acd_ip ) . "</p>\n";
-		}
 		$form .= '</fieldset>';
 
+		if ( $reqUser->isAllowed( 'requestips' ) ) {
+			$form .= '<fieldset>';
+			$form .= '<legend>' . wfMsgHtml('usercredentials-leg-ip') . '</legend>';
+			$form .= "<p>" . wfMsgHtml( 'usercredentials-ip' ) . " " . htmlspecialchars( $row->acd_ip ) . "</p>\n";
+			$form .= '</fieldset>';
+		}
+
 		$out->addHTML( $form );
+	}
+
+	protected function hasItem( $name ) {
+		global $wgConfirmAccountRequestFormItems;
+
+		return $wgConfirmAccountRequestFormItems[$name]['enabled'];
 	}
 
 	/**

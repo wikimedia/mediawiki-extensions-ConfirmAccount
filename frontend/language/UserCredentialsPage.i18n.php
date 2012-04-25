@@ -17,6 +17,7 @@ $messages['en'] = array(
 	'usercredentials-leg-areas' => 'Main areas of interest',
 	'usercredentials-leg-person' => 'Personal information',
 	'usercredentials-leg-other' => 'Other information',
+	'usercredentials-leg-ip' => 'IP data',
 	'usercredentials-email'  => 'E-mail:',
 	'usercredentials-real'   => 'Real name:',
 	'usercredentials-bio'    => 'Biography:',
@@ -2088,7 +2089,7 @@ $messages['zh-hans'] = array(
 	'usercredentials-urls' => '网站列表:',
 	'usercredentials-ip' => '原始IP地址：',
 	'usercredentials-member' => '权限：',
-	'usercredentials-badid' => '没有凭据找到该用户。 
+	'usercredentials-badid' => '没有凭据找到该用户。
 检查名称拼写是否正确。',
 );
 
@@ -2113,7 +2114,7 @@ $messages['zh-hant'] = array(
 	'usercredentials-urls' => '網站列表：',
 	'usercredentials-ip' => '原始IP位址：',
 	'usercredentials-member' => '權限：',
-	'usercredentials-badid' => '沒有憑據找到該用戶。 
+	'usercredentials-badid' => '沒有憑據找到該用戶。
 檢查名稱拼寫是否正確。',
 );
 

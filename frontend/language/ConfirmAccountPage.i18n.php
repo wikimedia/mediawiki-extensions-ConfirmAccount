@@ -62,6 +62,7 @@ It may have already been handled.',
 	'confirmaccount-leg-areas' => 'Main areas of interest',
 	'confirmaccount-leg-person' => 'Personal information',
 	'confirmaccount-leg-other'  => 'Other information',
+	'confirmaccount-leg-ip'   => 'IP data',
 	'confirmaccount-name'     => 'Username',
 	'confirmaccount-real'     => 'Name:',
 	'confirmaccount-email'    => 'E-mail:',
@@ -614,7 +615,7 @@ $messages['be-tarask'] = array(
 Чакаецца, што Ваша праца па прагляду і пацьверджаньню запытаў будзе весьціся незалежна ад таго, чым Вы займаецеся.",
 	'confirmaccount-list' => 'Ніжэй пададзены сьпіс запытаў, якія чакаюць зацьверджаньня.
 Пасьля зацьверджаньня альбо адхіленьня, запыт будзе выдалены з гэтага сьпісу.',
-	'confirmaccount-list2' => 'Ніжэй пададзены сьпіс нядаўна адхіленых запытаў на стварэньне рахункаў, якія будуць аўтаматычна выдаленыя праз некалькі дзён. 
+	'confirmaccount-list2' => 'Ніжэй пададзены сьпіс нядаўна адхіленых запытаў на стварэньне рахункаў, якія будуць аўтаматычна выдаленыя праз некалькі дзён.
 Вы ўсё яшчэ можаце зацьвердзіць запыты, але спачатку гэта неабходна абмеркаваць з адміністратарамі, якія іх адхілілі.',
 	'confirmaccount-list3' => 'Ніжэй пададзены сьпіс састарэлых запытаў на стварэньне рахункаў, якія могуць быць аўтаматычна выдаленыя праз некалькі дзён..
 Гэтыя запыты ўсё яшчэ могуць быць зацьверджанымі.',
@@ -1314,7 +1315,7 @@ $3
 
 Aus Sicherheitsgründen solltest du dein Passwort unbedingt beim ersten Anmelden ändern.
 Um dich anzumelden besuche bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
-	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
+	'confirmaccount-email-body3' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“
 bei {{SITENAME}} abgelehnt.
 
 Dies kann viele Gründe haben. Möglicherweise hast du das Antragsformular
@@ -1323,7 +1324,7 @@ die Anforderungen auf andere Weise nicht erfüllt.
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden
 kannst, wenn du mehr über die Anforderungen wissen möchtest.',
-	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“ 
+	'confirmaccount-email-body4' => 'Leider wurde dein Antrag auf ein Benutzerkonto „$1“
 bei {{SITENAME}} abgelehnt.
 
 $2
@@ -1382,7 +1383,7 @@ $3
 
 Aus Sicherheitsgründen sollten Sie Ihr Passwort unbedingt beim ersten Anmelden ändern.
 Um sich anzumelden besuchen Sie bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
-	'confirmaccount-email-body3' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“  
+	'confirmaccount-email-body3' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“
 bei {{SITENAME}} abgelehnt.
 
 Dies kann viele Gründe haben. Möglicherweise haben Sie das Antragsformular
@@ -1390,7 +1391,7 @@ nicht richtig ausgefüllt, haben nicht genügend Angaben gemacht oder haben die 
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die Sie sich wenden
 können, wenn Sie mehr über die Anforderungen wissen möchten.',
-	'confirmaccount-email-body4' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“  
+	'confirmaccount-email-body4' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“
 bei {{SITENAME}} abgelehnt.
 
 $2
@@ -2140,7 +2141,7 @@ Mot de passe: $2
 
 $3
 
-Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur 
+Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur
 {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3' => 'Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.
 
@@ -3331,8 +3332,8 @@ Untuk alasan keamanan Anda harus mengubah kata sandi Anda pada saat masuk log pe
 Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Maaf, permintaan Anda untuk akun "$1" telah ditolak oleh {{SITENAME}}.
 
-Ada beberapa kemungkinan ini bisa terjadi. 
-Anda mungkin tidak mengisi formulir dengan benar, tidak memberikan cukup keterangan dalam jawaban Anda, atau gagal memenuhi beberapa kriteria kebijakan. 
+Ada beberapa kemungkinan ini bisa terjadi.
+Anda mungkin tidak mengisi formulir dengan benar, tidak memberikan cukup keterangan dalam jawaban Anda, atau gagal memenuhi beberapa kriteria kebijakan.
 Mungkin ada daftar kontak di situs yang dapat Anda gunakan jika Anda ingin tahu lebih banyak tentang kebijakan akun pengguna.',
 	'confirmaccount-email-body4' => 'Maaf, permintaan anda untuk akun "$1" telah ditolak oleh {{SITENAME}}.
 
@@ -4964,7 +4965,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-rej' => 'Gebruikersaanvraag afgewezen.',
 	'confirmaccount-viewing' => '(op dit ogenblik bekeken door [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt voor de nieuwe gebruiker.',
-	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert. 
+	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert.
 Waarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen. Nogmaals, welkom en veel plezier!",
 	'confirmaccount-wsum' => 'Welkom!',
 	'confirmaccount-email-subj' => '{{SITENAME}} gebruikersaanvraag',
@@ -4974,7 +4975,7 @@ Gebruiker: $1
 
 Wachtwoord: $2
 
-Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
+Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via
 {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Uw gebruikersaanvraag op {{SITENAME}} is goedgekeurd.
 
@@ -4984,7 +4985,7 @@ Wachtwoord: $2
 
 $3
 
-Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
+Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Uw gebruikersaanvraag voor "$1" op {{SITENAME}} is afgewezen.
 
@@ -5143,7 +5144,7 @@ Al moment de la responsa a una demanda, verificatz-la atentivament e, se fa mest
 	'confirmaccount-list3' => 'Çaijós se tròba una lista de comptes expirats que poirián èsser automaticament suprimits aprèp qualques jorns. Encara pòdon èsser aprovats.',
 	'confirmaccount-text' => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''.
 
-Atencion, verificatz e, se fe mestièr, confirmatz totas las entresenhas çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasètz aquò unicament per evitar de conflictes amb d’autres noms. 
+Atencion, verificatz e, se fe mestièr, confirmatz totas las entresenhas çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasètz aquò unicament per evitar de conflictes amb d’autres noms.
 
 Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjorn mesa en espèra.",
 	'confirmaccount-none-o' => "Actualament i a pas cap de demanda de compte d'utilizaire en cors dins aquesta lista.",
@@ -6055,7 +6056,7 @@ $messages['sk'] = array(
 
 Každý front žiadostí o účet pozostáva z troch podfront -- jednej pre otvorené požiadavky, druhej pre tie, ktoré boli pozdržané sptávcami kvôli chýbajúcim informáciám a tretej pre nedávno zamietnuté žiadosti.
 
-Keď odpovedáte na žiadosť, pozorne si ju prečítajte a ak je to potrebné, overte obsiahnuté 
+Keď odpovedáte na žiadosť, pozorne si ju prečítajte a ak je to potrebné, overte obsiahnuté
 informácie.
 O vašej činnosti sa povedie neverejný záznam. Tiež sa od vás očakáva, že budete kontrolovať činnosti, ktoré tu robia iní okrem vás.",
 	'confirmaccount-list' => 'Nižšie je zoznam žiadostí o účet, ktoré čakajú na schválenie. Schválené účty budú vytvorené a odstránené z tohoto zoznamu. Odmietnuté účty budú jednoducho odstránené z tohoto zoznamu.',
@@ -6136,7 +6137,7 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 $2
 
 Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
-	'confirmaccount-email-body5' => 'Predtým, než bude možné vašu žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} možné prijať 
+	'confirmaccount-email-body5' => 'Predtým, než bude možné vašu žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} možné prijať
 	musíte poskytnúť ďalšie informácie.
 
 $2
@@ -7434,13 +7435,13 @@ $messages['yi'] = array(
 	'confirmaccount-hold' => 'האַלטן',
 	'confirmaccount-submit' => 'באַשטעטיקן',
 	'confirmaccount-wsum' => 'ברוך הבא!',
-	'confirmaccount-email-body' => 'אײַער בקשה פֿאַר אַ קאנטע אויף {{SITENAME}} איז געווארן באַשטעטיקט. 
+	'confirmaccount-email-body' => 'אײַער בקשה פֿאַר אַ קאנטע אויף {{SITENAME}} איז געווארן באַשטעטיקט.
 
- באַניצער־נאָמען: $1 
+ באַניצער־נאָמען: $1
 
- פאַסוואָרט: $2 
+ פאַסוואָרט: $2
 
- צוליב זיכערהייַט סיבות וועט איר דאַרפֿן טוישן אייער פאַסוואָרט בײַם ערשטן ארײַנלאָגירן. 
+ צוליב זיכערהייַט סיבות וועט איר דאַרפֿן טוישן אייער פאַסוואָרט בײַם ערשטן ארײַנלאָגירן.
  כדי ארײַנלאָגירן, ביטע גייט צו {{fullurl:Special:UserLogin}}.',
 );
 

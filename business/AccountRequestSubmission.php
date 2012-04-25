@@ -64,8 +64,9 @@ class AccountRequestSubmission {
 	 */
 	public function submit( IContextSource $context ) {
 		global $wgAuth, $wgAccountRequestThrottle, $wgMemc, $wgContLang;
-		global $wgAccountRequestToS, $wgAccountRequestMinWords;
+		global $wgConfirmAccountRequestFormItems;
 
+		$formConfig = $wgConfirmAccountRequestFormItems; // convience
 		$reqUser = $this->requester;
 
 		# Make sure that basic permissions are checked
@@ -95,7 +96,7 @@ class AccountRequestSubmission {
 			}
 		}
 		# Make sure user agrees to policy here
-		if ( $wgAccountRequestToS && !$this->tosAccepted ) {
+		if ( $formConfig['TermsOfService']['enabled'] && !$this->tosAccepted ) {
 			return array( 'acct_request_skipped_tos', wfMsgHtml( 'requestaccount-agree' ) );
 		}
 		# Validate email address
@@ -103,17 +104,18 @@ class AccountRequestSubmission {
 			return array( 'acct_request_invalid_email', wfMsgHtml( 'invalidemailaddress' ) );
 		}
 		# Check if biography is long enough
-		if ( str_word_count( $this->bio ) < $wgAccountRequestMinWords ) {
+		if ( $formConfig['Biography']['enabled']
+			&& str_word_count( $this->bio ) < $formConfig['Biography']['minWords'] )
+		{
 			return array( 'acct_request_short_bio',
 				wfMsgExt( 'requestaccount-tooshort', 'parsemag',
-					$wgContLang->formatNum( $wgAccountRequestMinWords ) )
+					$wgContLang->formatNum( $formConfig['Biography']['minWords'] ) )
 			);
 		}
 		# Per security reasons, file dir cannot be pulled from client,
 		# so ask them to resubmit it then...
-		global $wgAllowAccountRequestFiles, $wgAccountRequestExtraInfo;
 		# If the extra fields are off, then uploads are off
-		$allowFiles = $wgAccountRequestExtraInfo && $wgAllowAccountRequestFiles;
+		$allowFiles = $formConfig['CV']['enabled'];
 		if ( $allowFiles && $this->attachmentPrevName && !$this->attachmentSrcName ) {
 			# If the user is submitting forgotAttachment as true with no file,
 			# then they saw the notice and choose not to re-select the file.
