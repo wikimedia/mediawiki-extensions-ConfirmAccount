@@ -680,10 +680,15 @@ class ConfirmAccountsPage extends SpecialPage {
 				htmlspecialchars($row->acr_name) . '</td></tr>';
 		}
 		if( $this->hasItem( 'RealName' ) ) {
+			$hasCV = $row->acr_filename
+				? ' <strong>'.wfMsg('confirmaccount-withcv').'</strong>'
+				: '';
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real-q').'</strong></td><td width=\'100%\'>' .
-				htmlspecialchars($row->acr_real_name) . '</td></tr>';
+				htmlspecialchars($row->acr_real_name) . $hasCV . '</td></tr>';
 		}
-		$econf = $row->acr_email_authenticated ? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>' : '';
+		$econf = $row->acr_email_authenticated
+			? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>'
+			: '';
 		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-email-q').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
 		# Truncate this, blah blah...
@@ -779,8 +784,9 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 	function getQueryInfo() {
 		$conds = $this->mConds;
 		$tables = array( 'account_requests' );
-		$fields = array( 'acr_id','acr_name','acr_real_name','acr_registration','acr_held','acr_user',
-			'acr_email','acr_email_authenticated','acr_bio','acr_notes','acr_urls','acr_type','acr_rejected' );
+		$fields = array( 'acr_id','acr_name','acr_real_name','acr_registration','acr_held',
+			'acr_user','acr_email','acr_email_authenticated','acr_bio','acr_notes',
+			'acr_urls','acr_filename', 'acr_type','acr_rejected' );
 		# Stale requests have a user ID of zero
 		if( $this->stale ) {
 			$conds[] = 'acr_user = 0';
