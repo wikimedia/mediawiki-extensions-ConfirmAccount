@@ -447,7 +447,7 @@ class UserAccountRequest {
 	public static function expandAreas( $areas ) {
 		$list = explode( "\n", $areas );
 		foreach ( $list as $n => $item ) {
-			$list[$n] = trim( "wpArea-" . str_replace( ' ', '_', $item ) );
+			$list[$n] = trim( str_replace( ' ', '_', $item ) );
 		}
 		unset( $list[count( $list ) - 1] );
 		return $list;
