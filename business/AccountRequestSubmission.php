@@ -16,6 +16,8 @@ class AccountRequestSubmission {
 	protected $areas;
 	protected $registration;
 	protected $ip;
+	protected $xff;
+	protected $agent;
 	/* File attachment fields */
 	protected $attachmentSrcName; // user given attachment base name
 	protected $attachmentPrevName; // user given attachment base name last attempt
@@ -35,6 +37,8 @@ class AccountRequestSubmission {
 		$this->type = $params['type'];
 		$this->areas = $params['areas'];
 		$this->ip = $params['ip'];
+		$this->xff = $params['xff'];
+		$this->agent = $params['agent'];
 		$this->registration = wfTimestamp( TS_MW, $params['registration'] );
 		$this->attachmentPrevName = $params['attachmentPrevName'];
 		$this->attachmentSrcName = $params['attachmentSrcName'];
@@ -206,6 +210,8 @@ class AccountRequestSubmission {
 			'email_token' 	=> md5( $token ),
 			'email_token_expires' => $expires,
 			'ip' 			=> $this->ip,
+			'xff'           => $this->xff,
+			'agent'         => $this->agent
 		) );
 		$req->insertOn();
 		# Send confirmation, required!

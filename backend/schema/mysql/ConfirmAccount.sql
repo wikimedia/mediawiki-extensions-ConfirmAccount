@@ -35,6 +35,9 @@ CREATE TABLE IF NOT EXISTS /*_*/account_requests (
   acr_urls mediumblob NOT NULL,
   -- IP address
   acr_ip VARCHAR(255) NULL default '',
+  acr_xff VARCHAR(255) NULL default '',
+  -- User-Agent header
+  acr_agent VARCHAR(255) NULL default '',
   -- Name of attached file (.pdf,.doc,.txt etc...)
   acr_filename VARCHAR(255) NULL,
   acr_storage_key VARCHAR(64) NULL,
@@ -87,6 +90,9 @@ CREATE TABLE IF NOT EXISTS /*_*/account_credentials (
   acd_urls mediumblob NOT NULL,
   -- IP address
   acd_ip VARCHAR(255) NULL default '',
+  acd_xff VARCHAR(255) NULL default '',
+  -- User-Agent header
+  acd_agent VARCHAR(255) NULL default '',
   -- Name of attached file (.pdf,.doc,.txt etc...)
   acd_filename VARCHAR(255) NULL,
   acd_storage_key VARCHAR(64) NULL,

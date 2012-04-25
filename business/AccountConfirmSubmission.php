@@ -220,6 +220,8 @@ class AccountConfirmSubmission {
 					'acd_notes'               => $accReq->getNotes(),
 					'acd_urls'                => $accReq->getUrls(),
 					'acd_ip'                  => $accReq->getIP(),
+					'acd_xff'                 => $accReq->getXFF(),
+					'acd_agent'               => $accReq->getAgent(),
 					'acd_filename'            => $accReq->getFileName(),
 					'acd_storage_key'         => $accReq->getFileStorageKey(),
 					'acd_areas'               => $accReq->getAreas( 'flat' ),

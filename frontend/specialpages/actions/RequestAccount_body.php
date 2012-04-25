@@ -300,6 +300,8 @@ class RequestAccountPage extends SpecialPage {
 				'areas'                     => $areaSet,
 				'registration'              => wfTimestampNow(),
 				'ip'                        => $this->getRequest()->getIP(),
+				'xff'                       => $this->getRequest()->getHeader( 'X-Forwarded-For' ),
+				'agent'                     => $this->getRequest()->getHeader( 'User-Agent' ),
 				'attachmentPrevName'        => $this->mPrevAttachment,
 				'attachmentSrcName'         => $this->mSrcName,
 				'attachmentDidNotForget'    => $this->mForgotAttachment, // confusing name :)

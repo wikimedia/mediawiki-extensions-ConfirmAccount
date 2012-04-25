@@ -373,9 +373,17 @@ class ConfirmAccountsPage extends SpecialPage {
 			$form .= '<legend>' . wfMsgHtml('confirmaccount-leg-ip') . '</legend>';
 			$blokip = SpecialPage::getTitleFor( 'Block' );
 			$form .= "<p>".wfMsgHtml('confirmaccount-ip') .
-				" " . htmlspecialchars( $accountReq->getIP() ).
+				" " . htmlspecialchars( $accountReq->getIP() ) .
 				" (" . Linker::makeKnownLinkObj( $blokip, wfMsgHtml('blockip'),
 				'ip=' . $accountReq->getIP() . '&wpCreateAccount=1' ).")</p>\n";
+			if ( $accountReq->getXFF() ) {
+				$form .= "<p>".wfMsgHtml('confirmaccount-xff') .
+				" " . htmlspecialchars( $accountReq->getXFF() ) . "</p>\n";
+			}
+			if ( $accountReq->getAgent() ) {
+				$form .= "<p>".wfMsgHtml('confirmaccount-agent') .
+				" " . htmlspecialchars( $accountReq->getAgent() ) . "</p>\n";
+			}
 			$form .= '</fieldset>';
 		}
 

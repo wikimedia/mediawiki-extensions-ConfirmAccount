@@ -18,6 +18,7 @@ class ConfirmAccountUpdaterHooks {
 			$updater->addExtensionTable( 'account_credentials', "$base/patch-account_credentials.sql" );
 			$updater->addExtensionField( 'account_requests', 'acr_areas', "$base/patch-acr_areas.sql" );
 			$updater->addExtensionIndex( 'account_requests', 'acr_email', "$base/patch-email-index.sql" );
+			$updater->addExtensionField( 'account_requests', 'acr_agent', "$base/patch-acr_agent.sql" );
 		} elseif ( $updater->getDB()->getType() == 'postgres' ) {
 			$base = "$base/postgres";
 
@@ -31,6 +32,7 @@ class ConfirmAccountUpdaterHooks {
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_areas', "TEXT" ) );
 			$updater->addExtensionUpdate( array( 'addPgField', 'account_credentials', 'acd_areas', "TEXT" ) );
 			$updater->addExtensionUpdate( array( 'addIndex', 'account_requests', 'acr_email', "$base/patch-email-index.sql", true ) );
+			$updater->addExtensionUpdate( array( 'addPgField', 'account_requests', 'acr_agent', "$base/patch-acr_agent.sql", true ) );
 		}
 		return true;
 	}

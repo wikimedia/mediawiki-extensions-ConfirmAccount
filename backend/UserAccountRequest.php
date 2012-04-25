@@ -15,6 +15,8 @@ class UserAccountRequest {
 	protected $fileName;
 	protected $fileStorageKey;
 	protected $ip;
+	protected $xff;
+	protected $agent;
 	protected $emailToken;
 	protected $emailTokenExpires;
 	/* Fields set if user later confirms email */
@@ -50,6 +52,8 @@ class UserAccountRequest {
 			: null;
 		$req->fileStorageKey = $row->acr_storage_key;
 		$req->ip = $row->acr_ip;
+		$req->xff = $row->acr_xff;
+		$req->agent = $row->acr_agent;
 		$req->emailToken = $row->acr_email_token; // MD5 of token
 		$req->emailTokenExpires = wfTimestampOrNull( TS_MW, $row->acr_email_token_expires );
 		$req->emailAuthTimestamp = wfTimestampOrNull( TS_MW, $row->acr_email_authenticated );
@@ -88,6 +92,8 @@ class UserAccountRequest {
 			: null;
 		$req->fileStorageKey = $fields['storage_key'];
 		$req->ip = $fields['ip'];
+		$req->xff = $fields['xff'];
+		$req->agent = $fields['agent'];
 		$req->emailToken = $fields['email_token']; // MD5 of token
 		$req->emailTokenExpires = wfTimestampOrNull( TS_MW, $fields['email_token_expires'] );
 		// These fields are typically left to default on insertion...
@@ -245,6 +251,20 @@ class UserAccountRequest {
 	/**
 	 * @return string
 	 */
+	public function getXFF() {
+		return $this->xff;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getAgent() {
+		return $this->agent;
+	}
+
+	/**
+	 * @return string
+	 */
 	public function getEmailToken() {
 		return $this->emailToken;
 	}
@@ -327,7 +347,9 @@ class UserAccountRequest {
 					? $this->fileStorageKey
 					: null,
 				'acr_comment' 		=> strval( $this->comment ),
-				'acr_ip' 			=> strval( $this->ip ), // possible use for spam blocking
+				'acr_ip' 			=> strval( $this->ip ), // for spam blocking
+				'acr_xff' 			=> strval( $this->xff ), // for spam blocking
+				'acr_agent' 		=> strval( $this->agent ), // for spam blocking
 				'acr_deleted' 		=> (int)$this->deleted,
 				'acr_email_token' 	=> strval( $this->emailToken ), // MD5 of token
 				'acr_email_token_expires' => $dbw->timestamp( $this->emailTokenExpires ),

@@ -164,7 +164,16 @@ class UserCredentialsPage extends SpecialPage {
 		if ( $reqUser->isAllowed( 'requestips' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . wfMsgHtml('usercredentials-leg-ip') . '</legend>';
-			$form .= "<p>" . wfMsgHtml( 'usercredentials-ip' ) . " " . htmlspecialchars( $row->acd_ip ) . "</p>\n";
+			$form .= "<p>" . wfMsgHtml( 'usercredentials-ip' ) .
+				" " . htmlspecialchars( $row->acd_ip ) . "</p>\n";
+			if ( $row->acd_xff ) {
+				$form .= "<p>".wfMsgHtml('usercredentials-xff') .
+					" " . htmlspecialchars( $row->acd_xff ) . "</p>\n";
+			}
+			if ( $row->acd_agent ) {
+				$form .= "<p>".wfMsgHtml('usercredentials-agent') .
+					" " . htmlspecialchars( $row->acd_agent ) . "</p>\n";
+			}
 			$form .= '</fieldset>';
 		}
 

@@ -17,7 +17,7 @@ $messages['en'] = array(
 	'usercredentials-leg-areas' => 'Main areas of interest',
 	'usercredentials-leg-person' => 'Personal information',
 	'usercredentials-leg-other' => 'Other information',
-	'usercredentials-leg-ip' => 'IP data',
+	'usercredentials-leg-ip' => 'IP address data',
 	'usercredentials-email'  => 'E-mail:',
 	'usercredentials-real'   => 'Real name:',
 	'usercredentials-bio'    => 'Biography:',
@@ -25,6 +25,8 @@ $messages['en'] = array(
 	'usercredentials-notes'  => 'Additional notes:',
 	'usercredentials-urls'   => 'List of websites:',
 	'usercredentials-ip'     => 'Original IP address:',
+	'usercredentials-xff'    => 'Original X-Forwarded-For:',
+	'usercredentials-agent'  => 'Original User-Agent:',
 	'usercredentials-member' => 'Rights:',
 	'usercredentials-badid'  => 'No credentials found for this user.
 Check that the name is spelled correctly.',
