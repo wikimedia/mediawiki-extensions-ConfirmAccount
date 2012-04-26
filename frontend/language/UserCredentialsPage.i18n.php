@@ -474,6 +474,7 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author BicScope
  * @author Crazymadlover
  * @author Fitoschido
@@ -493,6 +494,7 @@ $messages['es'] = array(
 	'usercredentials-leg-areas' => 'Principales áreas de interés',
 	'usercredentials-leg-person' => 'Información personal',
 	'usercredentials-leg-other' => 'Otra información',
+	'usercredentials-leg-ip' => 'Datos de direcciones IP',
 	'usercredentials-email' => 'Correo electrónico:',
 	'usercredentials-real' => 'Nombre real:',
 	'usercredentials-bio' => 'Biografía:',
@@ -500,6 +502,8 @@ $messages['es'] = array(
 	'usercredentials-notes' => 'Notas adicionales:',
 	'usercredentials-urls' => 'Lista de sitios web:',
 	'usercredentials-ip' => 'Dirección IP original:',
+	'usercredentials-xff' => 'Original X-Reenviado-A:',
+	'usercredentials-agent' => 'Usuario-Agente original:',
 	'usercredentials-member' => 'Derechos:',
 	'usercredentials-badid' => 'No se han encontrado credenciales para este usuario.
 Verifique que el nombre se ha escrito correctamente.',
@@ -581,6 +585,7 @@ $messages['fi'] = array(
 /** French (Français)
  * @author Crochet.david
  * @author Dereckson
+ * @author Gomoko
  * @author Grondin
  * @author IAlex
  * @author Louperivois
@@ -601,6 +606,7 @@ $messages['fr'] = array(
 	'usercredentials-leg-areas' => "Centres d'intérêts principaux",
 	'usercredentials-leg-person' => 'Informations personnelles',
 	'usercredentials-leg-other' => 'Autres informations',
+	'usercredentials-leg-ip' => "données d'adresse IP",
 	'usercredentials-email' => 'Courriel :',
 	'usercredentials-real' => 'Nom réel :',
 	'usercredentials-bio' => 'Biographie :',
@@ -608,6 +614,8 @@ $messages['fr'] = array(
 	'usercredentials-notes' => 'Notes supplémentaires :',
 	'usercredentials-urls' => 'Liste des sites internet :',
 	'usercredentials-ip' => 'Adresse IP initiale :',
+	'usercredentials-xff' => "X-Forwarded-For d'origine:",
+	'usercredentials-agent' => "User-Agent d'origine:",
 	'usercredentials-member' => 'Droits :',
 	'usercredentials-badid' => 'Aucune référence trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé.',
 );
@@ -654,6 +662,7 @@ $messages['gl'] = array(
 	'usercredentials-leg-areas' => 'Principais áreas de interese',
 	'usercredentials-leg-person' => 'Información persoal',
 	'usercredentials-leg-other' => 'Outra información:',
+	'usercredentials-leg-ip' => 'Datos do enderezo IP',
 	'usercredentials-email' => 'Correo electrónico:',
 	'usercredentials-real' => 'Nome real:',
 	'usercredentials-bio' => 'Biografía:',
@@ -661,6 +670,8 @@ $messages['gl'] = array(
 	'usercredentials-notes' => 'Notas adicionais:',
 	'usercredentials-urls' => 'Lista de sitios web:',
 	'usercredentials-ip' => 'Enderezo IP orixinal:',
+	'usercredentials-xff' => 'X-Forwarded-For orixinal:',
+	'usercredentials-agent' => 'Axente de usuario orixinal:',
 	'usercredentials-member' => 'Dereitos:',
 	'usercredentials-badid' => 'Non se atoparon credenciais para este usuario. Comprobe que o nome estea escrito correctamente.',
 );
@@ -833,6 +844,7 @@ $messages['hsb'] = array(
 	'usercredentials-leg-areas' => 'Hłowne zajimowe wobwody',
 	'usercredentials-leg-person' => 'Wosobinske informacije',
 	'usercredentials-leg-other' => 'Druhe informacije',
+	'usercredentials-leg-ip' => 'Daty IP-adresy',
 	'usercredentials-email' => 'E-mejl:',
 	'usercredentials-real' => 'Woprawdźite mjeno:',
 	'usercredentials-bio' => 'Biografija:',
@@ -840,6 +852,8 @@ $messages['hsb'] = array(
 	'usercredentials-notes' => 'Přidatne přispomnjenki:',
 	'usercredentials-urls' => 'Lisćina websydłow:',
 	'usercredentials-ip' => 'Originalna IP-adresa:',
+	'usercredentials-xff' => 'Prěnjotny X-Forwarded-For:',
+	'usercredentials-agent' => 'Prěnjotny přistupny program:',
 	'usercredentials-member' => 'Prawa:',
 	'usercredentials-badid' => 'Žane daty za tutoho wužiwarja namakane. Kontroluj, hač mjeno je prawje napisane.',
 );
@@ -1212,6 +1226,7 @@ $messages['mk'] = array(
 	'usercredentials-leg-areas' => 'Главни полиња на интерес',
 	'usercredentials-leg-person' => 'Лични информации',
 	'usercredentials-leg-other' => 'Други информации',
+	'usercredentials-leg-ip' => 'Податоци за IP-адресата',
 	'usercredentials-email' => 'Е-пошта:',
 	'usercredentials-real' => 'Вистинско име:',
 	'usercredentials-bio' => 'Биографија:',
@@ -1219,6 +1234,8 @@ $messages['mk'] = array(
 	'usercredentials-notes' => 'Дополнителни забелешки:',
 	'usercredentials-urls' => 'Список на мрежни места:',
 	'usercredentials-ip' => 'Изворна IP-адреса',
+	'usercredentials-xff' => 'Изворен X-Forwarded-For:',
+	'usercredentials-agent' => 'Изворен застапнички програм:',
 	'usercredentials-member' => 'Права:',
 	'usercredentials-badid' => 'Нема пронајдено препораки за овој корисник.
 Проверете дали името е правилно напишано.',
