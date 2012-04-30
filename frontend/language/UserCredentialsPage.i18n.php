@@ -202,6 +202,7 @@ $messages['az'] = array(
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Wizardist
  * @author Zedlik
  */
 $messages['be-tarask'] = array(
@@ -213,6 +214,7 @@ $messages['be-tarask'] = array(
 	'usercredentials-leg-areas' => 'Асноўныя вобласьці інтарэсаў',
 	'usercredentials-leg-person' => 'Асабістыя зьвесткі',
 	'usercredentials-leg-other' => 'Іншая інфармацыя',
+	'usercredentials-leg-ip' => 'IP-адрас',
 	'usercredentials-email' => 'Адрас электроннай пошты:',
 	'usercredentials-real' => 'Сапраўднае імя:',
 	'usercredentials-bio' => 'Біяграфія:',
@@ -220,6 +222,8 @@ $messages['be-tarask'] = array(
 	'usercredentials-notes' => 'Дадатковая інфармацыя:',
 	'usercredentials-urls' => 'Сьпіс сайтаў:',
 	'usercredentials-ip' => 'Арыгінальны ІР-адрас:',
+	'usercredentials-xff' => 'Арыгінальны X-Forwarded-For:',
+	'usercredentials-agent' => 'Арыгінальны User-Agent:',
 	'usercredentials-member' => 'Правы:',
 	'usercredentials-badid' => 'Пасьведчаньні гэтага ўдзельніка ня знойдзеныя.
 Праверце, ці правільна напісана імя ўдзельніка.',
@@ -417,6 +421,7 @@ $messages['dsb'] = array(
 	'usercredentials-leg-areas' => 'Głowne zajmowe wobcerki',
 	'usercredentials-leg-person' => 'Wósobinske informacije',
 	'usercredentials-leg-other' => 'Druge informacije',
+	'usercredentials-leg-ip' => 'Daty IP-adrese',
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Napšawdne mě:',
 	'usercredentials-bio' => 'Biografija:',
@@ -424,6 +429,8 @@ $messages['dsb'] = array(
 	'usercredentials-notes' => 'Pśidatne pśipiski:',
 	'usercredentials-urls' => 'Lisćina websedłow',
 	'usercredentials-ip' => 'Originalna IP-adresa:',
+	'usercredentials-xff' => 'Spócetny X-Forwarde-For:',
+	'usercredentials-agent' => 'Spócetny pśistupny program:',
 	'usercredentials-member' => 'Pšawa:',
 	'usercredentials-badid' => 'Za toś togo wužywarja njebuchu žedne wósobinske pódaśa namakane. Pśekontrolěruj, lěc te mě jo pšawje napisane.',
 );
@@ -989,25 +996,29 @@ Controlla che il nome sia scritto correttamente.',
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Schu
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
 	'usercredentials' => '利用者信頼情報',
-	'usercredentials-leg' => '利用者信頼情報の閲覧',
+	'usercredentials-leg' => '利用者信頼情報を閲覧',
 	'usercredentials-user' => '利用者名：',
-	'usercredentials-text' => '指定されたアカウント利用者の信頼情報は以下のとおりです。',
+	'usercredentials-text' => '指定された利用者アカウントの信頼情報は以下の通りです。',
 	'usercredentials-leg-user' => '利用者アカウント',
 	'usercredentials-leg-areas' => '関心のある分野',
 	'usercredentials-leg-person' => '個人情報',
 	'usercredentials-leg-other' => 'その他',
+	'usercredentials-leg-ip' => 'IPアドレスデータ',
 	'usercredentials-email' => '電子メール：',
-	'usercredentials-real' => '本名:',
+	'usercredentials-real' => '本名：',
 	'usercredentials-bio' => '経歴：',
-	'usercredentials-attach' => '履歴書／ CV：',
-	'usercredentials-notes' => '特記事項:',
-	'usercredentials-urls' => 'ウェブサイト一覧:',
-	'usercredentials-ip' => '申請時IPアドレス:',
-	'usercredentials-member' => '権限:',
+	'usercredentials-attach' => '履歴書/CV：',
+	'usercredentials-notes' => '特記事項：',
+	'usercredentials-urls' => 'ウェブサイト一覧：',
+	'usercredentials-ip' => '申請時IPアドレス：',
+	'usercredentials-xff' => '元のX-Forwarded-For：',
+	'usercredentials-agent' => '元のユーザーエージェント：',
+	'usercredentials-member' => '権限：',
 	'usercredentials-badid' => '利用者信頼情報が見つかりません。利用者名が正しく指定されているか確認してください。',
 );
 
@@ -1307,6 +1318,7 @@ $messages['ms'] = array(
 	'usercredentials-leg-areas' => 'Bidang-bidang yang paling diminati',
 	'usercredentials-leg-person' => 'Maklumat peribadi',
 	'usercredentials-leg-other' => 'Maklumat lain',
+	'usercredentials-leg-ip' => 'Data alamat IP',
 	'usercredentials-email' => 'E-mel:',
 	'usercredentials-real' => 'Nama sebenar:',
 	'usercredentials-bio' => 'Biografi:',
@@ -1314,6 +1326,8 @@ $messages['ms'] = array(
 	'usercredentials-notes' => 'Catatan tambahan:',
 	'usercredentials-urls' => 'Senarai tapak web:',
 	'usercredentials-ip' => 'Alamat IP asal:',
+	'usercredentials-xff' => 'X-Forwarded-For Asal:',
+	'usercredentials-agent' => 'Ejen Pengguna Asal:',
 	'usercredentials-member' => 'Hak:',
 	'usercredentials-badid' => 'Tiada bukti kelayakan untuk pengguna ini.
 Pastikan namanya dieja dengan betul.',
@@ -1410,6 +1424,7 @@ $messages['nl'] = array(
 	'usercredentials-leg-areas' => 'Interessegebieden',
 	'usercredentials-leg-person' => 'Persoonlijke gegevens',
 	'usercredentials-leg-other' => 'Overige informatie',
+	'usercredentials-leg-ip' => 'IP-adresgegevens',
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Echte naam:',
 	'usercredentials-bio' => 'Biografie:',

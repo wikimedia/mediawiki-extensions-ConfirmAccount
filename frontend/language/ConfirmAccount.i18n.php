@@ -376,14 +376,15 @@ $messages['it'] = array(
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Schu
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
 	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み{{PLURAL:$1|[[Special:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。",
-	'requestaccount-loginnotice' => "利用者アカウントの取得は、'''[[Special:RequestAccount|アカウント登録申請]]'''から行ってください。",
-	'right-confirmaccount' => '[[Special:ConfirmAccounts|アカウント申請キュー]]を見る',
-	'right-requestips' => 'アカウント申請の処理中に申請者のIPアドレスを見る',
-	'right-lookupcredentials' => '[[Special:UserCredentials|利用者信頼情報]]を見る',
+	'requestaccount-loginnotice' => "利用者アカウントを取得するには、'''[[Special:RequestAccount|アカウント登録申請]]'''をしてください。",
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|アカウント申請キュー]]を閲覧',
+	'right-requestips' => 'アカウント申請の処理中に申請者のIPアドレスを閲覧',
+	'right-lookupcredentials' => '[[Special:UserCredentials|利用者信頼情報]]を閲覧',
 );
 
 /** Jamaican Creole English (Patois)

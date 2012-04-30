@@ -618,7 +618,7 @@ $messages['be-tarask'] = array(
 Чакаецца, што Ваша праца па прагляду і пацьверджаньню запытаў будзе весьціся незалежна ад таго, чым Вы займаецеся.",
 	'confirmaccount-list' => 'Ніжэй пададзены сьпіс запытаў, якія чакаюць зацьверджаньня.
 Пасьля зацьверджаньня альбо адхіленьня, запыт будзе выдалены з гэтага сьпісу.',
-	'confirmaccount-list2' => 'Ніжэй пададзены сьпіс нядаўна адхіленых запытаў на стварэньне рахункаў, якія будуць аўтаматычна выдаленыя праз некалькі дзён.
+	'confirmaccount-list2' => 'Ніжэй пададзены сьпіс нядаўна адхіленых запытаў на стварэньне рахункаў, якія будуць аўтаматычна выдаленыя праз некалькі дзён. 
 Вы ўсё яшчэ можаце зацьвердзіць запыты, але спачатку гэта неабходна абмеркаваць з адміністратарамі, якія іх адхілілі.',
 	'confirmaccount-list3' => 'Ніжэй пададзены сьпіс састарэлых запытаў на стварэньне рахункаў, якія могуць быць аўтаматычна выдаленыя праз некалькі дзён..
 Гэтыя запыты ўсё яшчэ могуць быць зацьверджанымі.',
@@ -658,6 +658,7 @@ $messages['be-tarask'] = array(
 	'confirmaccount-leg-areas' => 'Галоўныя вобласьці інтарэсаў',
 	'confirmaccount-leg-person' => 'Асабістыя зьвесткі',
 	'confirmaccount-leg-other' => 'Іншая інфармацыя',
+	'confirmaccount-leg-ip' => 'IP-адрас',
 	'confirmaccount-name' => 'Імя ўдзельніка',
 	'confirmaccount-real' => 'Імя:',
 	'confirmaccount-email' => 'Адрас электроннай пошты:',
@@ -682,6 +683,8 @@ $messages['be-tarask'] = array(
 	'confirmaccount-spam' => 'Спам (не дасылаць лісты па электроннай пошце)',
 	'confirmaccount-reason' => 'Камэнтар (будзе ўключаны ў электронны ліст):',
 	'confirmaccount-ip' => 'IP-адрас:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => 'Пацьвердзіць/адмовіцца ад гэтага рахунку',
 	'confirmaccount-submit' => 'Пацьвердзіць',
 	'confirmaccount-needreason' => 'Вы павінны падаць прычыну ў полі камэнтару.',
@@ -1631,6 +1634,7 @@ $3
 
 /** Esperanto (Esperanto)
  * @author Amikeco
+ * @author ArnoLagrange
  * @author Michawiki
  * @author Yekrats
  */
@@ -1676,7 +1680,7 @@ $messages['eo'] = array(
 	'confirmaccount-submit' => 'Konfirmi',
 	'confirmaccount-needreason' => 'Vi devas enigi kialon en la suba komentskatolo.',
 	'confirmaccount-viewing' => '(nune okulumis uzanto [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Kreante uzanto-paĝon kun biografio de nova uzanto.',
+	'confirmaccount-summary' => 'Kreado de uzanto-paĝo por nova uzanto.',
 	'confirmaccount-welc' => "'''Bonvenon al ''{{SITENAME}}''!''' Ni esperas ke vi kontribuos multe kaj bone.
 Vi verŝajne volos legi la [[{{MediaWiki:Helppage}}|helpo-paĝoj]]. Denove, bonvenon kaj amuziĝu!",
 	'confirmaccount-wsum' => 'Bonvenon!',
@@ -3567,7 +3571,7 @@ Possono esserci elenchi di contatti sul sito che si possono usare se si desidera
  */
 $messages['ja'] = array(
 	'confirmaccounts' => 'アカウント登録申請の承認',
-	'confirmedit-desc' => '{{int:group-bureaucrat}} にアカウント申請への承認機能を提供します。',
+	'confirmedit-desc' => '{{int:group-bureaucrat}}にアカウント申請の承認機能を提供する',
 	'confirmaccount-maintext' => "'''ここは、''{{SITENAME}}'' 上で承認待ちとなっているアカウント登録申請を処理するためのページです。'''
 
 各アカウント申請が保管されている待ち行列は、3種類あります。1つは申請を受理するためのもの、1つは他の管理者が継続審議を意見し保留となっているもの、もう一つは最近棄却された申請です。
@@ -3579,12 +3583,14 @@ $messages['ja'] = array(
 	'confirmaccount-list2' => '以下は、最近申請が棄却されたアカウントの一覧で、これらは数日経過すると自動的に削除されます。
 これらのアカウントを承認することはまだ可能ですが、まずは棄却した管理者と相談することをお勧めします。',
 	'confirmaccount-list3' => '以下は、期限切れしたアカウント申請の一覧で、これらは数日経過すると自動的に削除されます。これらのアカウントを承認することはまだ可能です。',
-	'confirmaccount-text' => "これは、'''{{SITENAME}}''' において承認待ちとなっている利用者アカウントです。
+	'confirmaccount-text' => "これは、'''{{SITENAME}}''' で承認待ちとなっている利用者アカウントです。
 
-下記の利用者情報を慎重に検討してください。この申請を承認する場合、ドロップダウンリストを操作して利用者のアカウント状態を設定してください。
-申請された経歴書に重篤な個人情報などが記載されている場合、編集により取り除くことが可能です。ただし、これは一般公開向けのもので、利用者信頼情報の内部保存データには影響を与えません。
-申請されたものとは別の利用者名でアカウントを作成することも可能です。
-これは、他の利用者と名前が競合する際にのみ行われるべきでしょう。
+下記の利用者情報を慎重に検討してください。
+この申請を承認する場合、ドロップダウンリストで利用者アカウントの状態を設定してください。
+申請された経歴書に重篤な個人情報などが記載されている場合、編集により取り除くことが可能です。
+ただし、これは一般公開向けのもので、利用者信頼情報の内部保存データには影響を与えません。
+申請されたものとは別の利用者名でアカウントを作成することもできます。
+これは他の利用者と名前が競合する場合のみ使用してください。
 
 承認処理を行わず単にページ移動をした場合、または承認しなかった場合、この申請は承認待ちのままとなります。",
 	'confirmaccount-none-o' => '現在、申請が受理されていないアカウントはありません。',
@@ -3614,6 +3620,7 @@ $messages['ja'] = array(
 	'confirmaccount-leg-areas' => '関心のある分野',
 	'confirmaccount-leg-person' => '個人情報',
 	'confirmaccount-leg-other' => 'その他',
+	'confirmaccount-leg-ip' => 'IPアドレスデータ',
 	'confirmaccount-name' => '利用者名',
 	'confirmaccount-real' => '本名:',
 	'confirmaccount-email' => 'メール：',
@@ -3627,6 +3634,7 @@ $messages['ja'] = array(
 	'confirmaccount-none-p' => '(記述なし)',
 	'confirmaccount-confirm' => 'この申請に対する承認、棄却、保留の判断を以下から選択：',
 	'confirmaccount-econf' => '(確認済)',
+	'confirmaccount-withcv' => '(CVを添付)',
 	'confirmaccount-reject' => '($2、[[User:$1|$1]]によって棄却)',
 	'confirmaccount-rational' => '申請者に対して下された判断:',
 	'confirmaccount-noreason' => '(記述なし)',
@@ -3638,6 +3646,8 @@ $messages['ja'] = array(
 	'confirmaccount-spam' => 'スパム（メールは送信しません）',
 	'confirmaccount-reason' => '判断理由（メールに記載されます）：',
 	'confirmaccount-ip' => 'IPアドレス:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'ユーザーエージェント：',
 	'confirmaccount-legend' => 'このアカウントを確認または拒否',
 	'confirmaccount-submit' => '判断確定',
 	'confirmaccount-needreason' => '判断理由を以下に記載する必要があります。',
@@ -4130,6 +4140,7 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-none-p' => '(net uginn)',
 	'confirmaccount-confirm' => "Benotzt d'Optiounen ënnendrënner fir dës Ufro unzehuelen, ze refuséien oder op 'en-cours' ze setzen:",
 	'confirmaccount-econf' => '(confirméiert)',
+	'confirmaccount-withcv' => '(mat CV)',
 	'confirmaccount-reject' => '(refuséiert vum [[User:$1|$1]] de(n) $2)',
 	'confirmaccount-rational' => 'Ursaach fir deen deen ugefrot huet:',
 	'confirmaccount-noreason' => '(keen)',
@@ -4141,6 +4152,7 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-spam' => 'Spam (E-Mail net schécken)',
 	'confirmaccount-reason' => "Bemierkung (gëtt an d'E-Mail derbäigesat):",
 	'confirmaccount-ip' => 'IP-Adress:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
 	'confirmaccount-legend' => 'Dëse Kont confirméieren/refüséieren',
 	'confirmaccount-submit' => 'Confirméieren',
 	'confirmaccount-needreason' => 'Dir musst e Grond an der Kescht ënnendrënner uginn.',
@@ -4651,6 +4663,7 @@ Mungkin ia sudah diuruskan.',
 	'confirmaccount-leg-areas' => 'Bidang-bidang yang paling diminati',
 	'confirmaccount-leg-person' => 'Maklumat peribadi',
 	'confirmaccount-leg-other' => 'Maklumat lain',
+	'confirmaccount-leg-ip' => 'Data alamat IP',
 	'confirmaccount-name' => 'Nama pengguna',
 	'confirmaccount-real' => 'Nama:',
 	'confirmaccount-email' => 'E-mel:',
@@ -4664,6 +4677,7 @@ Mungkin ia sudah diuruskan.',
 	'confirmaccount-none-p' => '(tidak disediakan)',
 	'confirmaccount-confirm' => 'Gunakan pilihan di bawah untuk menerima, menolak atau menggantung permohonan ini:',
 	'confirmaccount-econf' => '(disahkan)',
+	'confirmaccount-withcv' => '(CV dilampirkan)',
 	'confirmaccount-reject' => '(ditolak oleh [[User:$1|$1]] pada $2)',
 	'confirmaccount-rational' => 'Rasional yang diberikan kepada pemohon:',
 	'confirmaccount-noreason' => '(tiada)',
@@ -4675,6 +4689,8 @@ Mungkin ia sudah diuruskan.',
 	'confirmaccount-spam' => 'Spam (jangan hantar e-mel)',
 	'confirmaccount-reason' => 'Komen (akan disertakan dalam e-mel):',
 	'confirmaccount-ip' => 'Alamat IP:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'Ejen Pengguna:',
 	'confirmaccount-legend' => 'Sahkan/tolak akaun ini',
 	'confirmaccount-submit' => 'Sahkan',
 	'confirmaccount-needreason' => 'Anda mesti menyatakan sebab dalam ruangan komen di bawah.',
@@ -4963,6 +4979,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-leg-areas' => 'Interessegebieden',
 	'confirmaccount-leg-person' => 'Persoonlijke gegevens',
 	'confirmaccount-leg-other' => 'Overige informatie',
+	'confirmaccount-leg-ip' => 'IP-adresgegevens',
 	'confirmaccount-name' => 'Gebruikersnaam',
 	'confirmaccount-real' => 'Naam:',
 	'confirmaccount-email' => 'E-mail:',
@@ -4996,7 +5013,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-rej' => 'Gebruikersaanvraag afgewezen.',
 	'confirmaccount-viewing' => '(op dit ogenblik bekeken door [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt voor de nieuwe gebruiker.',
-	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert.
+	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert. 
 Waarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen. Nogmaals, welkom en veel plezier!",
 	'confirmaccount-wsum' => 'Welkom!',
 	'confirmaccount-email-subj' => '{{SITENAME}} gebruikersaanvraag',
@@ -5006,7 +5023,7 @@ Gebruiker: $1
 
 Wachtwoord: $2
 
-Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via
+Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
 {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Uw gebruikersaanvraag op {{SITENAME}} is goedgekeurd.
 
@@ -5016,7 +5033,7 @@ Wachtwoord: $2
 
 $3
 
-Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via
+Om beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
 {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Uw gebruikersaanvraag voor "$1" op {{SITENAME}} is afgewezen.
 
@@ -5567,7 +5584,7 @@ $messages['ps'] = array(
 	'confirmaccount-urls' => 'د وېبځايونو لړليک:',
 	'confirmaccount-noreason' => '(هېڅ)',
 	'confirmaccount-ip' => 'IP پته:',
-	'confirmaccount-wsum' => 'ښه راغلاست!',
+	'confirmaccount-wsum' => 'ښه راغلۍ!',
 	'confirmaccount-email-body' => 'په {{SITENAME}} باندې د يوه ګڼون لپاره غوښتنه مو ومنل شوه .
 
 د ګڼون نوم: $1
