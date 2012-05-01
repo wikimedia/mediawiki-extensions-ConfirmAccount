@@ -840,6 +840,17 @@ Die E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen: �
 	'acct_request_throttle_hit' => 'Sie haben bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, Sie können momentan keine weiteren beantragen.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'requestaccount' => 'Hesab bıwaze',
+	'requestaccount-leg-user' => 'Hesabê karberi',
+	'requestaccount-reqtype' => 'Cayek:',
+	'requestaccount-level-0' => 'nuskar',
+	'requestaccount-level-1' => 'vurnkar',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */

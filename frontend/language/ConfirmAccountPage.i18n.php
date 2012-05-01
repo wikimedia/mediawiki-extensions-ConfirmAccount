@@ -1417,9 +1417,23 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die Sie sich wenden k�
 
 /** Zazaki (Zazaki)
  * @author Belekvor
+ * @author Erdemaslancan
  */
 $messages['diq'] = array(
+	'confirmaccount-real-q' => 'Name',
+	'confirmaccount-email-q' => 'E-posta',
+	'confirmaccount-bio-q' => 'Biyografiye',
+	'confirmaccount-leg-ip' => 'Melumate IP adresi',
+	'confirmaccount-name' => 'Namey karberi',
+	'confirmaccount-real' => 'Name:',
+	'confirmaccount-email' => 'E-posta:',
+	'confirmaccount-reqtype' => 'Cayek:',
+	'confirmaccount-pos-0' => 'nuskar',
+	'confirmaccount-pos-1' => 'vurnkar',
+	'confirmaccount-bio' => 'Biyografiye:',
 	'confirmaccount-noreason' => '(çino)',
+	'confirmaccount-ip' => "Adresa IP'i:",
+	'confirmaccount-submit' => 'Testiq ke',
 );
 
 /** Lower Sorbian (Dolnoserbski)

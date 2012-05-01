@@ -409,6 +409,18 @@ $messages['de'] = array(
 	'usercredentials-badid' => 'Es wurden keinen Berechtigungsnachweis für diesen Benutzer gefunden. Bitte die Schreibweise prüfen.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'usercredentials-user' => 'Nameyê karberi:',
+	'usercredentials-leg-user' => 'Hesabê karberi',
+	'usercredentials-leg-ip' => 'Melumate IP adresi',
+	'usercredentials-email' => 'E-posta:',
+	'usercredentials-real' => 'Nameyo raştıkên:',
+	'usercredentials-bio' => 'Biyografiye:',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
@@ -1752,6 +1764,7 @@ $messages['sl'] = array(
 	'usercredentials-leg-areas' => 'Glavna področja zanimanja',
 	'usercredentials-leg-person' => 'Osebne informacije',
 	'usercredentials-leg-other' => 'Druge informacije',
+	'usercredentials-leg-ip' => 'Podatki IP-naslova',
 	'usercredentials-email' => 'E-pošta:',
 	'usercredentials-real' => 'Pravo ime:',
 	'usercredentials-bio' => 'Biografija:',
@@ -1759,6 +1772,8 @@ $messages['sl'] = array(
 	'usercredentials-notes' => 'Dodatne opombe:',
 	'usercredentials-urls' => 'Seznam spletnih strani:',
 	'usercredentials-ip' => 'Izvirni IP-naslov:',
+	'usercredentials-xff' => 'Izvirni X-Forwarded-For:',
+	'usercredentials-agent' => 'Izvirni User-Agent:',
 	'usercredentials-member' => 'Pravice:',
 	'usercredentials-badid' => 'Za uporabnika nisem našel nobenih poverilnic.
 Preverite, ali ste ime pravilno črkovali.',
