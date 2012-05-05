@@ -559,6 +559,95 @@ $2
 ربما تكون هناك قوائم اتصال فى الموقع يمكنك استخدامها لو أردت أن تعرف المزيد حول سياسة حساب المستخدم.',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'confirmaccounts' => 'Confirmar solicitúes de cuenta',
+	'confirmedit-desc' => 'Da a los burócrates la capacidá de confirmar solicitúes de cuenta',
+	'confirmaccount-maintext' => "'''Esta páxina s'usa pa confirmar les solicitúes de cuentes pendientes en ''{{SITENAME}}'''''.
+
+Cada cola de solicitú de cuenta consta de trés sub-coles.
+Una p'abrir la solicitú, otra pa les qu'otros alministradores tengan n'espera pendientes de más información, y otra pa les solicitúes refugaes de recién.
+
+Al responder a una solicitú revísala con procuru y, si ye necesario, confirma la información que contién.
+Les tos aiciones quedarán rexistraes de mou priváu.
+Tamién s'espera que revises cualesquier actividá que tenga llugar equí amás de lo que faigas tu mesmu.",
+	'confirmaccount-list' => "Abaxo hai una llista de solicitúes de cuenta qu'esperen aprobación.
+Cuando una solicitú s'aprueba o se refuga se desanicia d'esta llista.",
+	'confirmaccount-list2' => 'Abaxo hai una llista de solicitúes de cuenta refugaes de recién que se puen desaniciar automaticamente cuando tengan dellos díes.
+Inda se puen aprobar como cuentes, pero pue ser meyor que consultes primero col alministrador que les refugó enantes de facelo.',
+	'confirmaccount-list3' => 'Abaxo hai una llista coles solicitúes de cuentes que caducaron y que se puen desaniciar de mou automáticu cuando tengan dellos díes.
+Inda se puen aprobar como cuentes.',
+	'confirmaccount-text' => "Esta ye una solicitú pendiente de cuenta d'usuariu en '''{{SITENAME}}'''.
+
+Revisa con procuru la información d'abaxo.
+Si tas aprobando esta solicitú, usa'l desplegable de posición pa configurar l'estáu de la cuenta d'usuariu.
+Les ediciones feches na biografía de la solicitú nun afeutarán a dengún almacenamientu de credenciales permanente. Nota que pues escoyer crear la cuenta con un nome d'usuariu diferente.
+Usa esto namái para evitar conflictos con otros nomes.
+
+Si sólo dexes esta páxina ensin confirmar nin refugar esta solicitú, quedará como pendiente.",
+	'confirmaccount-none-o' => 'Anguaño nun hai solicitúes de cuenta abiertes pendientes nesta llista.',
+	'confirmaccount-none-h' => "Anguaño nun hai solicitúes de cuenta n'espera pendientes nesta llista.",
+	'confirmaccount-none-r' => 'Anguaño nun hai solicitúes de cuenta refugaes de recién nesta llista.',
+	'confirmaccount-none-e' => 'Anguaño nun hai solicitúes de cuenta caducaes nesta llista.',
+	'confirmaccount-real-q' => 'Nome',
+	'confirmaccount-email-q' => 'Corréu',
+	'confirmaccount-bio-q' => 'Biografía',
+	'confirmaccount-showopen' => 'solicitúes abiertes',
+	'confirmaccount-showrej' => 'solicitúes refugaes',
+	'confirmaccount-showheld' => 'solicitúes reteníes',
+	'confirmaccount-showexp' => 'solicitúes caducaes',
+	'confirmaccount-review' => 'Revisar',
+	'confirmaccount-types' => "Seleiciona una cola de confirmación de cuenta d'abaxo:",
+	'confirmaccount-all' => '(amosar toles coles)',
+	'confirmaccount-type' => 'Cola:',
+	'confirmaccount-type-0' => 'autores potenciales',
+	'confirmaccount-type-1' => 'editores potenciales',
+	'confirmaccount-q-open' => 'solicitúes abiertes',
+	'confirmaccount-q-held' => 'solicitúes reteníes',
+	'confirmaccount-q-rej' => 'solicitúes refugaes de recién',
+	'confirmaccount-q-stale' => 'solicitúes caducaes',
+	'confirmaccount-badid' => 'Nun hai denguna solicitú pendiente que se correspuenda cola ID dada.
+Pue ser que yá se xestionare.',
+	'confirmaccount-leg-user' => "Cuenta d'usuariu",
+	'confirmaccount-leg-areas' => "Principales árees d'interés",
+	'confirmaccount-leg-person' => 'Información personal',
+	'confirmaccount-leg-other' => 'Otra información',
+	'confirmaccount-leg-ip' => 'Datos de la direición IP',
+	'confirmaccount-name' => "Nome d'usuariu",
+	'confirmaccount-real' => 'Nome:',
+	'confirmaccount-email' => 'Corréu electrónicu:',
+	'confirmaccount-reqtype' => 'Posición:',
+	'confirmaccount-pos-0' => 'autor',
+	'confirmaccount-pos-1' => 'editor',
+	'confirmaccount-bio' => 'Biografía:',
+	'confirmaccount-attach' => 'Currículu/CV:',
+	'confirmaccount-notes' => 'Otres notes:',
+	'confirmaccount-urls' => 'Llista de sitios web:',
+	'confirmaccount-none-p' => '(nun se dio)',
+	'confirmaccount-confirm' => "Usa les opciones d'abaxo p'aceutar, refugar o dexar n'espera esta solicitú:",
+	'confirmaccount-econf' => '(confirmáu)',
+	'confirmaccount-withcv' => '(CV axuntu)',
+	'confirmaccount-reject' => '(refugáu por [[User:$1|$1]] el $2)',
+	'confirmaccount-rational' => 'Esplicación que se dio al solicitante:',
+	'confirmaccount-noreason' => '(nenguna)',
+	'confirmaccount-autorej' => '(esta solicitú se descartó de mou automáticu por inactividá)',
+	'confirmaccount-held' => '(marcada "n\'espera" por [[User:$1|$1]] el $2)',
+	'confirmaccount-create' => 'Aceutar (crear cuenta)',
+	'confirmaccount-deny' => 'Refugar (quitar de la llista)',
+	'confirmaccount-hold' => "N'espera",
+	'confirmaccount-spam' => 'Spam (nun mandar corréu electrónicu)',
+	'confirmaccount-reason' => "Comentariu (s'incluirá nel corréu electrónicu):",
+	'confirmaccount-ip' => 'Direición IP:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'User-Agent:',
+	'confirmaccount-legend' => 'Confirmar/refugar esta cuenta',
+	'confirmaccount-submit' => 'Confirmar',
+	'confirmaccount-needreason' => "Debes dar un motivu nel cuadru de comentarios d'abaxo.",
+	'confirmaccount-canthold' => 'Esta solicitú yá ta retenida o desaniciada.',
+);
+
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
  * @author Vago
@@ -3183,6 +3272,7 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-leg-areas' => 'Areas de interesse principal',
 	'confirmaccount-leg-person' => 'Informationes personal',
 	'confirmaccount-leg-other' => 'Altere informationes',
+	'confirmaccount-leg-ip' => 'Datos de adresses IP',
 	'confirmaccount-name' => 'Nomine de usator',
 	'confirmaccount-real' => 'Nomine:',
 	'confirmaccount-email' => 'E-mail:',
@@ -3196,6 +3286,7 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-none-p' => '(non fornite)',
 	'confirmaccount-confirm' => 'Usa le optiones hic infra pro acceptar, rejectar o suspender iste requesta:',
 	'confirmaccount-econf' => '(confirmate)',
+	'confirmaccount-withcv' => '(CV adjungite)',
 	'confirmaccount-reject' => '(rejectate per [[User:$1|$1]] le $2)',
 	'confirmaccount-rational' => 'Motivo date al candidato:',
 	'confirmaccount-noreason' => '(nulle)',
@@ -3207,6 +3298,8 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-spam' => 'Spam (non inviar e-mail)',
 	'confirmaccount-reason' => 'Commento (essera includite in e-mail):',
 	'confirmaccount-ip' => 'Adresse IP:',
+	'confirmaccount-xff' => 'X-Reinviate-Pro:',
+	'confirmaccount-agent' => 'Agente-Usator:',
 	'confirmaccount-legend' => 'Confirmar/rejectar iste conto',
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Tu debe fornir un motivo in le quadro de commento infra.',
@@ -4141,6 +4234,7 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-leg-areas' => 'Haaptinteressen',
 	'confirmaccount-leg-person' => 'Perséinlech Informatiounen',
 	'confirmaccount-leg-other' => 'Aner Informatioun',
+	'confirmaccount-leg-ip' => 'Donnéeë vun der IP-Adress',
 	'confirmaccount-name' => 'Benotzernumm',
 	'confirmaccount-real' => 'Numm:',
 	'confirmaccount-email' => 'E-mail:',
@@ -4167,6 +4261,7 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-reason' => "Bemierkung (gëtt an d'E-Mail derbäigesat):",
 	'confirmaccount-ip' => 'IP-Adress:',
 	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'Programm vum Benotzer (User-Agent):',
 	'confirmaccount-legend' => 'Dëse Kont confirméieren/refüséieren',
 	'confirmaccount-submit' => 'Confirméieren',
 	'confirmaccount-needreason' => 'Dir musst e Grond an der Kescht ënnendrënner uginn.',
@@ -5018,6 +5113,8 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-spam' => 'Spam (geen e-mail sturen)',
 	'confirmaccount-reason' => 'Opmerking (zal worden toegevoegd aan de email):',
 	'confirmaccount-ip' => 'IP-adres:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => 'Deze aanvraag bevestigen of afkeuren',
 	'confirmaccount-submit' => 'Bevestigen',
 	'confirmaccount-needreason' => 'U moet een reden geven in het onderstaande veld.',

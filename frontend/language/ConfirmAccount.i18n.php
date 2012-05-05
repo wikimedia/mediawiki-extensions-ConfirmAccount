@@ -39,13 +39,13 @@ $messages['qqq'] = array(
 
 /** Arabic (العربية)
  * @author Ciphers
+ * @author DRIHEM
  * @author Meno25
  * @author OsamaK
  * @author ترجمان05
  */
 $messages['ar'] = array(
-	'confirmaccount-newrequests' => "{{PLURAL:$1|يوجد|يوجد}} حاليا '''$1'''
-{{PLURAL:$1|[[Special:ConfirmAccounts|طلب حساب]]|[[Special:ConfirmAccounts|طلب حساب]]}} مفتوح قيد الانتظار.",
+	'confirmaccount-newrequests' => "'''$1''' تم تأكيد البريد الإلكتروني المفتوح  [[Special:ConfirmAccounts|هناك {{PLURAL:$1|حساب في الإنتظار|طلبات في الإنتظار}}]]. '''أنتباهك مطلوب!'''",
 	'requestaccount-loginnotice' => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|أن تطلب حسابًا]]'''.",
 	'right-confirmaccount' => 'عرض [[Special:ConfirmAccounts|طابور الحسابات المطلوبة]]',
 	'right-requestips' => 'عرض عنوان آيبي الطالب أثناء العمل على الحسابات المطلوبة',
