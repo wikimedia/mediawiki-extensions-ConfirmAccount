@@ -9,16 +9,18 @@ $wgMakeUserPageFromBio = true;
 # Text to add to bio pages if the above option is on
 $wgAutoUserBioText = '';
 
+# Create a user talk page with a welcome message for accepted users.
+# The message can be customized by editing MediaWiki:confirmaccount-welc.
 $wgAutoWelcomeNewUsers = true;
 
 # How long to store rejected requests
-$wgRejectedAccountMaxAge = 7 * 24 * 3600; // One week
+$wgRejectedAccountMaxAge = 7 * 24 * 3600; // 1 week
 # How long after accounts have been requested/held before they count as 'rejected'
 $wgConfirmAccountRejectAge = 30 * 24 * 3600; // 1 month
 
 # How many requests can an IP make at once?
 $wgAccountRequestThrottle = 1;
-# Can blocked users request accounts?
+# Can blocked users with "prevent account creation" request accounts?
 $wgAccountRequestWhileBlocked = false;
 
 # Which form elements to show at Special:RequestAccount
@@ -56,8 +58,8 @@ $wgAccountRequestTypes = array(
 );
 
 # If set, will add {{DEFAULTSORT:sortkey}} to userpages for auto-categories.
-# The sortkey will be made by replacing the first element of this array
-# (regexp) with the second. Set this variable to false to avoid sortkey use.
+# The sortkey will be made by doing a regex search and replace on the title.
+# Set this variable to false to avoid sortkey use.
 $wgConfirmAccountSortkey = false;
 // For example, the below will do {{DEFAULTSORT:firstname, lastname}}
 # $wgConfirmAccountSortkey = array( '/^(.+) ([^ ]+)$/', '$2, $1' );
