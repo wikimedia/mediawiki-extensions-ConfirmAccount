@@ -25,9 +25,9 @@ class ConfirmAccountUIHooks {
 	 */
 	public static function setRequestLoginLinks( array &$personal_urls, &$title ) {
 		if ( isset( $personal_urls['anonlogin'] ) ) {
-			$personal_urls['anonlogin']['text'] = wfMsg( 'nav-login-createaccount' );
+			$personal_urls['anonlogin']['text'] = wfMsgHtml( 'nav-login-createaccount' );
 		} elseif ( isset( $personal_urls['login'] ) ) {
-			$personal_urls['login']['text'] = wfMsg( 'nav-login-createaccount' );
+			$personal_urls['login']['text'] = wfMsgHtml( 'nav-login-createaccount' );
 		}
 		return true;
 	}
@@ -83,7 +83,7 @@ class ConfirmAccountUIHooks {
 	 * @return bool
 	 */
 	public static function confirmAccountAdminLinks( &$admin_links_tree ) {
-		$users_section = $admin_links_tree->getSection( wfMsg( 'adminlinks_users' ) );
+		$users_section = $admin_links_tree->getSection( wfMsgHtml( 'adminlinks_users' ) );
 		$extensions_row = $users_section->getRow( 'extensions' );
 
 		if ( is_null( $extensions_row ) ) {

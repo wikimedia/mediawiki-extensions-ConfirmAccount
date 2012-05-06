@@ -681,13 +681,13 @@ class ConfirmAccountsPage extends SpecialPage {
 		}
 		if( $this->hasItem( 'RealName' ) ) {
 			$hasCV = $row->acr_filename
-				? ' <strong>'.wfMsg('confirmaccount-withcv').'</strong>'
+				? ' <strong>'.wfMsgHtml('confirmaccount-withcv').'</strong>'
 				: '';
 			$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-real-q').'</strong></td><td width=\'100%\'>' .
 				htmlspecialchars($row->acr_real_name) . $hasCV . '</td></tr>';
 		}
 		$econf = $row->acr_email_authenticated
-			? ' <strong>'.wfMsg('confirmaccount-econf').'</strong>'
+			? ' <strong>'.wfMsgHtml('confirmaccount-econf').'</strong>'
 			: '';
 		$r .= '<tr><td><strong>'.wfMsgHtml('confirmaccount-email-q').'</strong></td><td width=\'100%\'>' .
 			htmlspecialchars($row->acr_email) . $econf.'</td></tr>';
