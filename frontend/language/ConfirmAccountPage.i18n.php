@@ -646,6 +646,51 @@ Pue ser que yá se xestionare.',
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => "Debes dar un motivu nel cuadru de comentarios d'abaxo.",
 	'confirmaccount-canthold' => 'Esta solicitú yá ta retenida o desaniciada.',
+	'confirmaccount-badaction' => "Tien d'especificase una aición válida (aceutar, refugar, retener) pa poder siguir.",
+	'confirmaccount-acc' => "Solicitú de cuenta confirmada correutamente;
+se creó la nueva cuenta d'usuariu [[User:$1|$1]].",
+	'confirmaccount-rej' => 'La solicitú de cuenta se refugó correutamente.',
+	'confirmaccount-viewing' => '(viendose anguaño por [[User:$1|$1]])',
+	'confirmaccount-summary' => "Creando páxina d'usuariu pal usuariu nuevu.",
+	'confirmaccount-welc' => "'''¡Bienveníu a ''{{SITENAME}}''!'''
+Esperamos que collabores muncho y bien.
+Probablemente quieras lleer les [[{{MediaWiki:Helppage}}|páxines d'ayuda]].
+Nuevamente, ¡bienveníu y que te preste!",
+	'confirmaccount-wsum' => '¡Bienveníu!',
+	'confirmaccount-email-subj' => 'Solicitú de cuenta en {{SITENAME}}',
+	'confirmaccount-email-body' => "S'aprobó la to solicitú de cuenta en {{SITENAME}}.
+
+Nome de la cuenta: $1
+
+Contraseña: $2
+
+Por razones de seguridá tendrás de camudar la contraseña la primera vegada qu'anicies sesión.
+P'aniciar sesión, visita {{fullurl:Special:UserLogin}}.",
+	'confirmaccount-email-body2' => "S'aprobó la to solicitú de cuenta en {{SITENAME}}.
+
+Nome de la cuenta: $1
+
+Contraseña: $2
+
+$3
+
+Por razones de seguridá tendrás de camudar la contraseña la primera vegada qu'anicies sesión.
+P'aniciar sesión, visita {{fullurl:Special:UserLogin}}.",
+	'confirmaccount-email-body3' => "Sentimoslo, pero la to solicitú de cuenta «$1» refugose en {{SITENAME}}.
+
+Hai delles causes posibles pa qu'esto asoceda.
+Seique nun rellenares el formulariu correutamente, que les rempuestes nun tuvieren una llonxitú afayadiza, o que d'otra miente nun cumplieras con otru criteriu de la política.
+Pue qu'esistan llistes de contautu nel sitiu que pues usar si quies saber más tocante a la política de cuentes d'usuariu.",
+	'confirmaccount-email-body4' => "Sentimoslo, pero la to solicitú de cuenta «$1» refugose en {{SITENAME}}.
+
+$2
+
+Pue qu'esistan llistes de contautu nel sitiu que pues usar si quies saber más tocante a la política de cuentes d'usuariu.",
+	'confirmaccount-email-body5' => "Enantes de que la to solicitú de cuenta «$1» pueda aceutase en {{SITENAME}} primero tienes de dar cierta información más.
+
+$2
+
+Pue qu'esistan llistes de contautu nel sitiu que pues usar si quies saber más tocante a la política de cuentes d'usuariu.",
 );
 
 /** Azerbaijani (Azərbaycanca)
