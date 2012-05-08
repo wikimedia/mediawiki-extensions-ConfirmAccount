@@ -611,12 +611,12 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (Português do Brasil)
+ * @author 555
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
  * @author Heldergeovane
  * @author Luckas Blade
- * @author 555
  */
 $messages['pt-br'] = array(
 	'confirmaccount-newrequests' => "Há, neste momento, '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitação|solicitações}} pendentes de contas]]. '''Seus cuidados são necessários!''",

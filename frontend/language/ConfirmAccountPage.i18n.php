@@ -806,6 +806,7 @@ $messages['be-tarask'] = array(
 	'confirmaccount-none-p' => '(не пададзена)',
 	'confirmaccount-confirm' => 'Выкарыстоўвайце налады ніжэй для прыняцьця, адхіленьня ці адкладаньня запыту:',
 	'confirmaccount-econf' => '(пацьверджаны)',
+	'confirmaccount-withcv' => '(далучана рэзюмэ)',
 	'confirmaccount-reject' => '(адхілены [[User:$1|$1]] $2)',
 	'confirmaccount-rational' => 'Абгрунтаваньне пададзенае падаўшаму запыт:',
 	'confirmaccount-noreason' => '(няма)',
