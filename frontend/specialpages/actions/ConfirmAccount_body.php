@@ -414,7 +414,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= Html::Hidden( 'action', 'reject' );
 		$form .= Html::Hidden( 'acrid', $accountReq->getId() );
 		$form .= Html::Hidden( 'wpShowRejects', $this->showRejects );
-		$form .= Html::Hidden( 'wpEditToken', $reqUser->getToken( $accountReq->getId() ) )."\n";
+		$form .= Html::Hidden( 'wpEditToken', $reqUser->getEditToken( $accountReq->getId() ) )."\n";
 		$form .= Xml::closeElement( 'form' );
 
 		$out->addHTML( $form );
