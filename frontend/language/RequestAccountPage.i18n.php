@@ -2937,6 +2937,7 @@ U kunt geen nieuwe aanvragen meer uitbrengen.',
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'requestaccount' => 'Be om konto',
@@ -4003,7 +4004,7 @@ $3
 Шумо наметавонед аз ин зиёд дархост кунед.',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(

@@ -646,7 +646,7 @@ $messages['fr'] = array(
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'usercredentials' => 'Refèrences a l’utilisator',
+	'usercredentials' => 'Refèrences a l’usanciér',
 	'usercredentials-user' => 'Nom d’usanciér :',
 	'usercredentials-leg-user' => 'Compto usanciér',
 	'usercredentials-leg-areas' => 'Centros d’entèrèts principâls',
@@ -1461,6 +1461,7 @@ Kijk na of de naam correct gespeld is.',
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'usercredentials' => 'Brukarattestar',
@@ -1950,7 +1951,7 @@ $messages['tg-cyrl'] = array(
 	'usercredentials-ip' => 'Нишонаи IP-и аслӣ:',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2058,7 +2059,7 @@ $messages['ug-arab'] = array(
 	'usercredentials-email' => 'ئېلخەت:',
 );
 
-/** Uyghur (Latin script) (Uyghurche‎)
+/** Uyghur (Latin script) (Uyghurche)
  * @author Jose77
  */
 $messages['ug-latn'] = array(

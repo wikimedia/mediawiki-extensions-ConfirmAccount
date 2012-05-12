@@ -1528,7 +1528,7 @@ $3
 
 Aus Sicherheitsgründen sollten Sie Ihr Passwort unbedingt beim ersten Anmelden ändern.
 Um sich anzumelden besuchen Sie bitte die Seite {{fullurl:{{#special:UserLogin}}}}.',
-	'confirmaccount-email-body3' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“
+	'confirmaccount-email-body3' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“  
 bei {{SITENAME}} abgelehnt.
 
 Dies kann viele Gründe haben. Möglicherweise haben Sie das Antragsformular
@@ -1536,7 +1536,7 @@ nicht richtig ausgefüllt, haben nicht genügend Angaben gemacht oder haben die 
 
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die Sie sich wenden
 können, wenn Sie mehr über die Anforderungen wissen möchten.',
-	'confirmaccount-email-body4' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“
+	'confirmaccount-email-body4' => 'Leider wurde Ihr Antrag auf ein Benutzerkonto „$1“  
 bei {{SITENAME}} abgelehnt.
 
 $2
@@ -3516,8 +3516,8 @@ Untuk alasan keamanan Anda harus mengubah kata sandi Anda pada saat masuk log pe
 Untuk masuk log, silakan tuju {{fullurl:Special:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Maaf, permintaan Anda untuk akun "$1" telah ditolak oleh {{SITENAME}}.
 
-Ada beberapa kemungkinan ini bisa terjadi.
-Anda mungkin tidak mengisi formulir dengan benar, tidak memberikan cukup keterangan dalam jawaban Anda, atau gagal memenuhi beberapa kriteria kebijakan.
+Ada beberapa kemungkinan ini bisa terjadi. 
+Anda mungkin tidak mengisi formulir dengan benar, tidak memberikan cukup keterangan dalam jawaban Anda, atau gagal memenuhi beberapa kriteria kebijakan. 
 Mungkin ada daftar kontak di situs yang dapat Anda gunakan jika Anda ingin tahu lebih banyak tentang kebijakan akun pengguna.',
 	'confirmaccount-email-body4' => 'Maaf, permintaan anda untuk akun "$1" telah ditolak oleh {{SITENAME}}.
 
@@ -5148,6 +5148,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-none-p' => '(niet opgegeven)',
 	'confirmaccount-confirm' => 'Gebruik de onderstaande mogelijkheden om deze aanvraag goed te keuren, af te keuren of aan te houden:',
 	'confirmaccount-econf' => '(bevestigd)',
+	'confirmaccount-withcv' => '(CV bijgesloten)',
 	'confirmaccount-reject' => '(afgewezen door [[User:$1|$1]] op $2)',
 	'confirmaccount-rational' => 'Aan de aanvrager opgegeven reden:',
 	'confirmaccount-noreason' => '(geen)',
@@ -5213,6 +5214,7 @@ Er kunnen contacteerlijsten zijn die u kunt gebruiken als u meer wil te weten ko
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'confirmaccounts' => 'Godta kontoførespurnader',
@@ -5349,7 +5351,7 @@ Al moment de la responsa a una demanda, verificatz-la atentivament e, se fa mest
 	'confirmaccount-list3' => 'Çaijós se tròba una lista de comptes expirats que poirián èsser automaticament suprimits aprèp qualques jorns. Encara pòdon èsser aprovats.',
 	'confirmaccount-text' => "Vaquí una demanda en cors per un compte d'utilizaire sus '''{{SITENAME}}'''.
 
-Atencion, verificatz e, se fe mestièr, confirmatz totas las entresenhas çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasètz aquò unicament per evitar de conflictes amb d’autres noms.
+Atencion, verificatz e, se fe mestièr, confirmatz totas las entresenhas çaijós. Notatz que podètz causir de crear un compte jos un autre nom. Fasètz aquò unicament per evitar de conflictes amb d’autres noms. 
 
 Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjorn mesa en espèra.",
 	'confirmaccount-none-o' => "Actualament i a pas cap de demanda de compte d'utilizaire en cors dins aquesta lista.",
@@ -6261,7 +6263,7 @@ $messages['sk'] = array(
 
 Každý front žiadostí o účet pozostáva z troch podfront -- jednej pre otvorené požiadavky, druhej pre tie, ktoré boli pozdržané sptávcami kvôli chýbajúcim informáciám a tretej pre nedávno zamietnuté žiadosti.
 
-Keď odpovedáte na žiadosť, pozorne si ju prečítajte a ak je to potrebné, overte obsiahnuté
+Keď odpovedáte na žiadosť, pozorne si ju prečítajte a ak je to potrebné, overte obsiahnuté 
 informácie.
 O vašej činnosti sa povedie neverejný záznam. Tiež sa od vás očakáva, že budete kontrolovať činnosti, ktoré tu robia iní okrem vás.",
 	'confirmaccount-list' => 'Nižšie je zoznam žiadostí o účet, ktoré čakajú na schválenie. Schválené účty budú vytvorené a odstránené z tohoto zoznamu. Odmietnuté účty budú jednoducho odstránené z tohoto zoznamu.',
@@ -6342,7 +6344,7 @@ Ak jednoducho opustíte túto stránku bez toho, aby ste ju schválili alebo odm
 $2
 
 Ak sa chcete dozvedieť viac o politike tvorby účtov, na tejto stránke môžete nájsť kontakty.',
-	'confirmaccount-email-body5' => 'Predtým, než bude možné vašu žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} možné prijať
+	'confirmaccount-email-body5' => 'Predtým, než bude možné vašu žiadosť o účet „$1“ na {{GRAMMAR:lokál|{{SITENAME}}}} možné prijať 
 	musíte poskytnúť ďalšie informácie.
 
 $2
@@ -7028,7 +7030,7 @@ $2
 Дар сомона феҳристи тамос мумкин оварда шуда бошад, ки тариқи он шумо метавонед маълумоти бештар оиди сиёсати ҳисоби корбарӣ дастрас намоед.',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -7512,7 +7514,7 @@ $messages['ug-arab'] = array(
 	'confirmaccount-email' => 'ئېلخەت:',
 );
 
-/** Uyghur (Latin script) (Uyghurche‎)
+/** Uyghur (Latin script) (Uyghurche)
  * @author Jose77
  */
 $messages['ug-latn'] = array(
@@ -7567,7 +7569,7 @@ $messages['vec'] = array(
 	'confirmedit-desc' => 'Permete ai burocrati de confermar le richieste de account',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Triple-ADHD-AS
  */
 $messages['vep'] = array(
@@ -7640,13 +7642,13 @@ $messages['yi'] = array(
 	'confirmaccount-hold' => 'האַלטן',
 	'confirmaccount-submit' => 'באַשטעטיקן',
 	'confirmaccount-wsum' => 'ברוך הבא!',
-	'confirmaccount-email-body' => 'אײַער בקשה פֿאַר אַ קאנטע אויף {{SITENAME}} איז געווארן באַשטעטיקט.
+	'confirmaccount-email-body' => 'אײַער בקשה פֿאַר אַ קאנטע אויף {{SITENAME}} איז געווארן באַשטעטיקט. 
 
- באַניצער־נאָמען: $1
+ באַניצער־נאָמען: $1 
 
- פאַסוואָרט: $2
+ פאַסוואָרט: $2 
 
- צוליב זיכערהייַט סיבות וועט איר דאַרפֿן טוישן אייער פאַסוואָרט בײַם ערשטן ארײַנלאָגירן.
+ צוליב זיכערהייַט סיבות וועט איר דאַרפֿן טוישן אייער פאַסוואָרט בײַם ערשטן ארײַנלאָגירן. 
  כדי ארײַנלאָגירן, ביטע גייט צו {{fullurl:Special:UserLogin}}.',
 );
 

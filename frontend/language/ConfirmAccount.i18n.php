@@ -61,6 +61,17 @@ $messages['arz'] = array(
 	'requestaccount-loginnotice' => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'confirmaccount-newrequests' => "Anguaño hai '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitú de cuenta pendiente|solicitúes de cuentes pendientes}}]]. '''Fai falta la to atención!'''",
+	'requestaccount-loginnotice' => "Pa tener una cuenta d'usuariu, tienes de '''[[Special:RequestAccount|solicitar una]]'''.",
+	'right-confirmaccount' => 'Ver la [[Special:ConfirmAccounts|cola de solicitúes de cuentes]]',
+	'right-requestips' => 'Ver la direición IP del solicitante al procesar les solicitúes de cuentes',
+	'right-lookupcredentials' => 'Ver les [[Special:UserCredentials|credenciales del usuariu]]',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
@@ -543,6 +554,7 @@ $messages['nl'] = array(
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'confirmaccount-newrequests' => "Det finst for tida {{PLURAL:$1|'''éin''' open [[Special:ConfirmAccounts|kontoførespurnad]]|'''$1''' opne [[Special:ConfirmAccounts|kontoførespurnader]]}}.",
@@ -711,7 +723,7 @@ $messages['tg-cyrl'] = array(
 	'requestaccount-loginnotice' => "Барои дастрас кардани ҳисоби корбарӣ, шумо бояд '''[[Special:RequestAccount|дархост]]''' кунед.",
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
