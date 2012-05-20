@@ -375,7 +375,7 @@ $messages['is'] = array(
  * @author Stefano-c
  */
 $messages['it'] = array(
-	'confirmaccount-newrequests' => "'''$1''' e-mail {{PLURAL:$1|[[Special:ConfirmAccounts|confermata richiesta account aperta]]|[[Special:ConfirmAccounts|confermate richieste account aperte]]}} in attesa",
+	'confirmaccount-newrequests' => "'''$1''' e-mail di conferma [[Special:ConfirmAccounts|per account {{PLURAL:$1|è|sono}} in attesa]]. '''È necessaria la tua attenzione!'''",
 	'requestaccount-loginnotice' => "Per ottenere un account utente, è necessario '''[[Special:RequestAccount|richiederne uno]]'''.",
 	'right-confirmaccount' => 'Visualizza la [[Special:ConfirmAccounts|coda gli account richiesti]]',
 	'right-requestips' => 'Visualizza gli indirizzi IP del richiedente mentre processa gli account richiesti',
@@ -391,7 +391,7 @@ $messages['it'] = array(
  * @author 青子守歌
  */
 $messages['ja'] = array(
-	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み{{PLURAL:$1|[[Special:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。",
+	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み{{PLURAL:$1|[[Special:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。'''注意が必要です！'''",
 	'requestaccount-loginnotice' => "利用者アカウントを取得するには、'''[[Special:RequestAccount|アカウント登録申請]]'''をしてください。",
 	'right-confirmaccount' => '[[Special:ConfirmAccounts|アカウント申請キュー]]を閲覧',
 	'right-requestips' => 'アカウント申請の処理中に申請者のIPアドレスを閲覧',

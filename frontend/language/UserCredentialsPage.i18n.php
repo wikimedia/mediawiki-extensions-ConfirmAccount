@@ -785,6 +785,7 @@ $messages['he'] = array(
 	'usercredentials-leg-areas' => 'תחומי עניין עיקריים',
 	'usercredentials-leg-person' => 'נתונים אישיים',
 	'usercredentials-leg-other' => 'נתונים שונים',
+	'usercredentials-leg-ip' => 'נתוני כתובת IP',
 	'usercredentials-email' => 'דוא"ל:',
 	'usercredentials-real' => 'שם אמיתי:',
 	'usercredentials-bio' => 'ביוגרפיה:',
@@ -792,6 +793,8 @@ $messages['he'] = array(
 	'usercredentials-notes' => 'הערות נוספות:',
 	'usercredentials-urls' => 'רשימת אתרים:',
 	'usercredentials-ip' => 'כתובת ה־IP המקורית:',
+	'usercredentials-xff' => 'X-Forwarded-For במקור:',
+	'usercredentials-agent' => 'User-Agent במקור:',
 	'usercredentials-member' => 'הרשאות:',
 	'usercredentials-badid' => 'לא נמצאו פרטי זיהוי עבור משתמש זה.
 אנא ודאו שהשם מאוית כראוי.',
