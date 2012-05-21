@@ -846,7 +846,7 @@ Die E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen: �
 $messages['diq'] = array(
 	'requestaccount' => 'Hesab bıwaze',
 	'requestaccount-leg-user' => 'Hesabê karberi',
-	'requestaccount-reqtype' => 'Cayek:',
+	'requestaccount-reqtype' => 'Pozisyon:',
 	'requestaccount-level-0' => 'nuskar',
 	'requestaccount-level-1' => 'vurnkar',
 );

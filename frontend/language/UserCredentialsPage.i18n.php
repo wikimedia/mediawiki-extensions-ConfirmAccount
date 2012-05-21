@@ -1000,6 +1000,7 @@ $messages['it'] = array(
 	'usercredentials-leg-areas' => "Principali aree d'interesse",
 	'usercredentials-leg-person' => 'Informazioni personali',
 	'usercredentials-leg-other' => 'Altre informazioni',
+	'usercredentials-leg-ip' => "Dati relativi all'indirizzo IP",
 	'usercredentials-email' => 'Indirizzo e-mail:',
 	'usercredentials-real' => 'Vero nome:',
 	'usercredentials-bio' => 'Biografia:',
