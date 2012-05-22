@@ -420,7 +420,7 @@ $messages['diq'] = array(
 	'usercredentials-leg-user' => 'Hesabê karberi',
 	'usercredentials-leg-ip' => 'Melumate IP adresi',
 	'usercredentials-email' => 'E-posta:',
-	'usercredentials-real' => 'Nameyo raştıkên:',
+	'usercredentials-real' => 'Nameyo raştay',
 	'usercredentials-bio' => 'Biyografiye:',
 );
 
