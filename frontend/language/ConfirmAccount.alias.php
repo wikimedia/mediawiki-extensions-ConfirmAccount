@@ -29,6 +29,11 @@ $specialPageAliases['arz'] = array(
 	'UserCredentials' => array( 'شهادات_اليوزر' ),
 );
 
+/** Banjar (Bahasa Banjar) */
+$specialPageAliases['bjn'] = array(
+	'RequestAccount' => array( 'Minta_akun' ),
+);
+
 /** Breton (Brezhoneg) */
 $specialPageAliases['br'] = array(
 	'RequestAccount' => array( 'GoulennKont' ),
@@ -112,8 +117,8 @@ $specialPageAliases['gl'] = array(
 
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
-	'RequestAccount' => array( 'Aatrag stelle fir e Benutzerchonto' ),
-	'ConfirmAccounts' => array( 'Benutzerchonto bstetige' ),
+	'RequestAccount' => array( 'Aatrag_stelle_fir_e_Benutzerchonto' ),
+	'ConfirmAccounts' => array( 'Benutzerchonto_bstetige' ),
 );
 
 /** Hebrew (עברית) */
