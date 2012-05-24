@@ -257,7 +257,7 @@ $messages['gl'] = array(
 	'requestaccount-loginnotice' => "Para obter unha conta de usuario ten que '''[[Special:RequestAccount|solicitar unha]]'''.",
 	'right-confirmaccount' => 'Ver a [[Special:ConfirmAccounts|cola coas solicitudes de contas]]',
 	'right-requestips' => 'Ver os enderezos IP que solicitan contas',
-	'right-lookupcredentials' => 'Ver os [[Special:UserCredentials|credenciais de usuario]]',
+	'right-lookupcredentials' => 'Ver as [[Special:UserCredentials|credenciais de usuario]]',
 );
 
 /** Swiss German (Alemannisch)

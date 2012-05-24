@@ -677,9 +677,9 @@ $messages['fy'] = array(
  */
 $messages['gl'] = array(
 	'usercredentials' => 'Credenciais do usuario',
-	'usercredentials-leg' => 'Verificar os credenciais confirmados dun usuario',
+	'usercredentials-leg' => 'Verificar as credenciais confirmadas dun usuario',
 	'usercredentials-user' => 'Nome de usuario:',
-	'usercredentials-text' => 'Embaixo están os credenciais validos das contas de usuario seleccionadas.',
+	'usercredentials-text' => 'A continuación están as credenciais validadas das contas de usuario seleccionadas.',
 	'usercredentials-leg-user' => 'Conta de usuario',
 	'usercredentials-leg-areas' => 'Principais áreas de interese',
 	'usercredentials-leg-person' => 'Información persoal',
