@@ -1549,6 +1549,7 @@ $messages['pdt'] = array(
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Derbeth
  * @author Equadus
  * @author Leinad
@@ -1568,6 +1569,7 @@ $messages['pl'] = array(
 	'usercredentials-leg-areas' => 'Główne obszary zainteresowań',
 	'usercredentials-leg-person' => 'Informacje osobiste',
 	'usercredentials-leg-other' => 'Inne informacje',
+	'usercredentials-leg-ip' => 'dane adresu IP',
 	'usercredentials-email' => 'Adres e‐mail',
 	'usercredentials-real' => 'Imię i nazwisko:',
 	'usercredentials-bio' => 'Biografia:',
@@ -1575,6 +1577,8 @@ $messages['pl'] = array(
 	'usercredentials-notes' => 'Dodatkowe informacje:',
 	'usercredentials-urls' => 'Wykaz witryn:',
 	'usercredentials-ip' => 'Oryginalny adres IP:',
+	'usercredentials-xff' => 'Oryginalny X-Forwarded-For:',
+	'usercredentials-agent' => 'Oryginalna przeglądarka:',
 	'usercredentials-member' => 'Prawa:',
 	'usercredentials-badid' => 'Nie znaleziono informacji uwierzytelniających na temat tego użytkownika.
 Sprawdź, czy prawidłowo wpisałeś nazwę konta.',
