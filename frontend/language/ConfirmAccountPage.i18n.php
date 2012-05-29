@@ -3622,7 +3622,7 @@ Se si lascia semplicemente questa pagina senza confermare o negare questa richie
 	'confirmaccount-none-r' => 'Attualmente non ci sono richieste di account respinte di recente.',
 	'confirmaccount-none-e' => 'Attualmente non ci sono richieste di account scadute.',
 	'confirmaccount-real-q' => 'Nome',
-	'confirmaccount-email-q' => 'Indirizzo e-mail',
+	'confirmaccount-email-q' => 'Indirizzo email',
 	'confirmaccount-bio-q' => 'Biografia',
 	'confirmaccount-showopen' => 'richieste aperte',
 	'confirmaccount-showrej' => 'richieste respinte',
