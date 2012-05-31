@@ -3590,6 +3590,7 @@ $2
  * @author Melos
  * @author Pietrodn
  * @author Stefano-c
+ * @author Ximo17
  */
 $messages['it'] = array(
 	'confirmaccounts' => 'Richieste conferma account',
@@ -3656,7 +3657,7 @@ Potrebbe essere già stato trattato.",
 	'confirmaccount-notes' => 'Ulteriori note:',
 	'confirmaccount-urls' => 'Elenco dei siti web:',
 	'confirmaccount-none-p' => '(non fornito)',
-	'confirmaccount-confirm' => 'Utilizza le seguenti opzioni per accettare, rifiutare, o fermare questa richiesta:',
+	'confirmaccount-confirm' => 'Utilizza le seguenti opzioni per accettare, rifiutare o sospendere questa richiesta:',
 	'confirmaccount-econf' => '(confermato)',
 	'confirmaccount-withcv' => '(CV allegato)',
 	'confirmaccount-reject' => '(respinta da [[User:$1|$1]] il $2)',
@@ -3674,6 +3675,7 @@ Potrebbe essere già stato trattato.",
 	'confirmaccount-submit' => 'Conferma',
 	'confirmaccount-needreason' => 'Devi fornire una motivazione nella casella del commento sottostante.',
 	'confirmaccount-canthold' => 'Questa richiesta è già stata fermata o eliminata.',
+	'confirmaccount-badaction' => "E' necessario selezionare un'azione valida (accetta, rifiuta, sospendi) per poter procedere.",
 	'confirmaccount-acc' => 'Richiesta account confermata con successo;
 creato nuovo account utente [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Richiesta account respinta con successo.',
