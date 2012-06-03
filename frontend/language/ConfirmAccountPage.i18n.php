@@ -3584,7 +3584,7 @@ $2
 Það kann að vera netfang á síðunni sem þú getur haft samband við til að fá frekari upplýsingar.',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
  * @author Melos
