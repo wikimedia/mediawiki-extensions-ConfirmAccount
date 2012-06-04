@@ -726,6 +726,7 @@ $messages['gsw'] = array(
 	'usercredentials-leg-areas' => 'Hauptinträssi',
 	'usercredentials-leg-person' => 'Persenligi Informatione',
 	'usercredentials-leg-other' => 'Wyteri Informationen',
+	'usercredentials-leg-ip' => 'Date vo de IP-Adress',
 	'usercredentials-email' => 'E-Mail:',
 	'usercredentials-real' => 'Ächte Name:',
 	'usercredentials-bio' => 'Biografii:',
@@ -733,6 +734,8 @@ $messages['gsw'] = array(
 	'usercredentials-notes' => 'Zuesätzligi Bemerkige:',
 	'usercredentials-urls' => 'Lischt vu Netzsyte:',
 	'usercredentials-ip' => 'Original IP-Adräss:',
+	'usercredentials-xff' => 'Ursprünglicher X-Forwarded-For:',
+	'usercredentials-agent' => 'Ursprünglichs Zuegriffsprogramm:',
 	'usercredentials-member' => 'Rächt:',
 	'usercredentials-badid' => 'S sin kei Berächtigungsnochwyys fir dää Benutzer gfunde wore. Bitte d Schryybwyys priefe.',
 );
