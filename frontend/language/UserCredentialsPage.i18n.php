@@ -987,7 +987,7 @@ $messages['is'] = array(
 	'usercredentials-member' => 'Réttindi:',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
  * @author Melos
@@ -1011,6 +1011,8 @@ $messages['it'] = array(
 	'usercredentials-notes' => 'Ulteriori note:',
 	'usercredentials-urls' => 'Elenco dei siti web:',
 	'usercredentials-ip' => 'Indirizzo IP originale:',
+	'usercredentials-xff' => 'X-Forwarded-For originale:',
+	'usercredentials-agent' => 'User-Agent originale:',
 	'usercredentials-member' => 'Diritti:',
 	'usercredentials-badid' => 'Nessuna credenziale trovata per questo utente.
 Controlla che il nome sia scritto correttamente.',
