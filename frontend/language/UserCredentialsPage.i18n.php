@@ -1130,6 +1130,7 @@ $messages['ksh'] = array(
 	'usercredentials-leg-areas' => 'Enträße en de Houpsaach',
 	'usercredentials-leg-person' => 'Päsönlesche Enfomazjuhne',
 	'usercredentials-leg-other' => 'Ander Ennfomazjuhne',
+	'usercredentials-leg-ip' => 'De Daate vun dä <i lang="en">IP</i>-Addräß',
 	'usercredentials-email' => '<i lang="en">e-mail</i>:',
 	'usercredentials-real' => 'Dä richtije Name:',
 	'usercredentials-bio' => 'Et Levve beß jäz:',
@@ -1137,6 +1138,8 @@ $messages['ksh'] = array(
 	'usercredentials-notes' => 'Söns es noch ze saare:',
 	'usercredentials-urls' => 'Leß met Webßaits:',
 	'usercredentials-ip' => 'De ojinaal <code lang="en">IP-</code>Addräß:',
+	'usercredentials-xff' => 'Et ojinaal <code lang="en">X-Forwarded-For:</code>',
+	'usercredentials-agent' => 'Dä ojinaal <code lang="en">User-Agent:</code>',
 	'usercredentials-member' => 'Rääschte:',
 	'usercredentials-badid' => 'Mer han kein Aanjabe för dä Metmaacher jefonge.
 Loor ens, ov dä Name reschtesch jetipp es.',

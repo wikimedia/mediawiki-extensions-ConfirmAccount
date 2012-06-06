@@ -4026,6 +4026,7 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
 	'confirmaccount-email-q' => '이메일',
@@ -4033,7 +4034,7 @@ $messages['ko'] = array(
 	'confirmaccount-showrej' => '거부된 요청',
 	'confirmaccount-showheld' => '보류된 요청',
 	'confirmaccount-showexp' => '만료된 요청',
-	'confirmaccount-all' => '(모든 큐 보기)',
+	'confirmaccount-all' => '(모든 대기열 보기)',
 	'confirmaccount-q-open' => '진행 중인 요청',
 	'confirmaccount-q-held' => '보류된 요청',
 	'confirmaccount-q-rej' => '최근에 거부된 요청',
