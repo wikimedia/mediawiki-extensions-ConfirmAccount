@@ -1034,7 +1034,7 @@ $messages['bn'] = array(
 	'confirmaccount-summary' => 'নতুন ব্যবহারকারীর জীবনীসহ পাতা তৈরি',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -1121,7 +1121,7 @@ Moarvat eo bet graet war-dro dija.",
 krouet eo bet ar gont implijer nevez [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Distaolet eo bet ar goulenn kont.',
 	'confirmaccount-viewing' => '(gwelet gant [[User:$1|$1]] evit bremañ)',
-	'confirmaccount-summary' => 'O krouiñ pajenn implijer an implijer nevez gant e vuhezskrid.',
+	'confirmaccount-summary' => 'O krouiñ pajenn implijer un implijer nevez.',
 	'confirmaccount-welc' => "'''Degemer mat e ''{{SITENAME}}''!'''
 Spi hon eus e kemerot perzh da vat ha mat.
 Marteze hoc'h eus c'hoant da lenn ar [[{{MediaWiki:Helppage}}|pajennoù skoazell]].
@@ -3734,7 +3734,7 @@ Possono esserci elenchi di contatti sul sito che si possono usare se si desidera
  */
 $messages['ja'] = array(
 	'confirmaccounts' => 'アカウント登録申請の承認',
-	'confirmedit-desc' => '{{int:group-bureaucrat}}にアカウント申請の承認機能を提供する',
+	'confirmedit-desc' => '{{int:group-bureaucrat}}がアカウント申請を承認できるようにする',
 	'confirmaccount-maintext' => "'''ここは、''{{SITENAME}}'' 上で承認待ちとなっているアカウント登録申請を処理するためのページです。'''
 
 各アカウント申請が保管されている待ち行列は、3種類あります。1つは申請を受理するためのもの、1つは他の管理者が継続審議を意見し保留となっているもの、もう一つは最近棄却された申請です。
@@ -7727,12 +7727,13 @@ $2
 響呢個網站度提供咗聯絡人一覽，你可以用去知道更多用戶戶口政策嘅資料。',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
  * @author Mark85296341
  * @author Wilsonmess
+ * @author Xiaomingyan
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -7804,7 +7805,7 @@ $messages['zh-hans'] = array(
 	'confirmaccount-deny' => '拒绝 （反列示）',
 	'confirmaccount-hold' => '挂起',
 	'confirmaccount-spam' => '垃圾（请不要发送电子邮件）',
-	'confirmaccount-reason' => '注解 （在电邮中使用）:',
+	'confirmaccount-reason' => '评论（将包含在电邮中）：',
 	'confirmaccount-ip' => 'IP地址：',
 	'confirmaccount-legend' => '批准/拒绝这个帐号',
 	'confirmaccount-submit' => '确认',

@@ -249,7 +249,7 @@ $messages['arc'] = array(
 	'requestaccount-leg-tos' => 'ܫܪ̈ܛܐ ܕܬܫܡܫܬܐ',
 	'requestaccount-real' => 'ܫܡܐ ܫܪܝܪܐ:',
 	'requestaccount-same' => '(ܐܝܟ ܫܡܐ ܫܪܝܪܐ)',
-	'requestaccount-email' => 'ܦܪܫܓܢܐ ܕܒܝܠܕܪܐ ܐܠܩܛܪܘܢܝܐ:',
+	'requestaccount-email' => 'ܡܘܢܥܐ ܕܒܝܠܕܪܐ ܐܠܩܛܪܘܢܝܐ:',
 	'requestaccount-level-0' => 'ܣܝܘܡܐ',
 	'requestaccount-level-1' => 'ܫܚܠܦܢܐ',
 );
