@@ -1606,6 +1606,7 @@ $messages['pms'] = array(
 	'usercredentials-leg-areas' => "Àree d'anteresse prinsipaj",
 	'usercredentials-leg-person' => 'Anformassion përsonaj',
 	'usercredentials-leg-other' => 'Àutre anformassion',
+	'usercredentials-leg-ip' => "Dat ëd l'adrëssa IP",
 	'usercredentials-email' => 'Pòsta eletrònica:',
 	'usercredentials-real' => 'Nòm ver:',
 	'usercredentials-bio' => 'Biografìa:',
@@ -1613,6 +1614,8 @@ $messages['pms'] = array(
 	'usercredentials-notes' => 'Nòte adissionaj:',
 	'usercredentials-urls' => "Lista ëd sit an sl'aragnà:",
 	'usercredentials-ip' => 'Adrëssa IP original:',
+	'usercredentials-xff' => 'X-Forwarded-For original:',
+	'usercredentials-agent' => 'User-Agent original:',
 	'usercredentials-member' => 'Drit:',
 	'usercredentials-badid' => "Gnun-e credensiaj trovà për st'utent-sì.
 Ch'a contròla che ël nòm a sia scrivù da bin.",
