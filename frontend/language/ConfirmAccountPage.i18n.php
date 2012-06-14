@@ -559,7 +559,7 @@ $2
 ربما تكون هناك قوائم اتصال فى الموقع يمكنك استخدامها لو أردت أن تعرف المزيد حول سياسة حساب المستخدم.',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -693,7 +693,7 @@ $2
 Pue qu'esistan llistes de contautu nel sitiu que pues usar si quies saber más tocante a la política de cuentes d'usuariu.",
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
  */
@@ -725,7 +725,7 @@ $messages['bcl'] = array(
 	'confirmaccount-wsum' => 'Dagos!',
 );
 
-/** Belarusian (Беларуская)
+/** Belarusian (беларуская)
  * @author Тест
  */
 $messages['be'] = array(
@@ -871,7 +871,7 @@ $2
 У {{GRAMMAR:месны|{{SITENAME}}}} можа быць сьпіс кантактаў, якія Вы можаце выкарыстоўваць, каб атрымаць дадатковую інфармацыю пра правілы, якія тычацца рахункаў удзельнікаў.',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  */
@@ -1163,7 +1163,7 @@ Gallout a ra bezañ rolloù daremprediñ a c\'hallit mont da welet mar fell deoc
 Gallout a ra bezañ rolloù daremprediñ a c'hallit mont da welet mar fell deoc'h gouzout hiroc'h diwar-benn dezverkoù rekis ar c'hontoù implijer.",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -1220,7 +1220,7 @@ Iz sigurnosnih razloga potrebno je da promijenite šifru pri prvoj prijavi.
 Da bi ste se prijaviti, molimo idite na {{fullurl:Special:UserLogin}}.',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Loupeter
  * @author Paucabot
  * @author SMP
@@ -1252,12 +1252,12 @@ $messages['ca'] = array(
 	'confirmaccount-wsum' => 'Benvinguts!',
 );
 
-/** Sorani (کوردی) */
+/** Sorani Kurdish (کوردی) */
 $messages['ckb'] = array(
 	'confirmaccount-submit' => 'پشتدار بکەرەوە',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Jkjk
  * @author Li-sung
  * @author Matěj Grabovský
@@ -1324,7 +1324,7 @@ $messages['cu'] = array(
 	'confirmaccount-pos-0' => 'творь́ць',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Aka-miki
  * @author Jon Harald Søby
  */
@@ -1705,7 +1705,7 @@ $2
 Snaź su kontaktowe lisćiny na sedle, kótarež móžoš wužywaś, jolic coš wěcej wó zasadach wužywarskich kontow wěźeś.',
 );
 
-/** Ewe (Eʋegbe) */
+/** Ewe (eʋegbe) */
 $messages['ee'] = array(
 	'confirmaccount-wsum' => 'Woezɔ loo!',
 );
@@ -1852,7 +1852,7 @@ $3
 Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:UserLogin}}.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author BicScope
  * @author Crazymadlover
@@ -1994,7 +1994,7 @@ $2
 Puede haber listas de contacto en este sitio que puedes usar si deseas conocer más acerca de la política de cuenta de usuario.',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -2020,7 +2020,7 @@ $messages['et'] = array(
 	'confirmaccount-wsum' => 'Tere tulemast!',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  */
 $messages['eu'] = array(
@@ -2045,7 +2045,7 @@ $messages['eu'] = array(
 	'confirmaccount-wsum' => 'Ongi etorri!',
 );
 
-/** Extremaduran (Estremeñu)
+/** Extremaduran (estremeñu)
  * @author Better
  */
 $messages['ext'] = array(
@@ -2065,7 +2065,7 @@ $messages['fa'] = array(
 	'confirmaccount-noreason' => '(هیچ)',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Centerlink
  * @author Cimon Avaro
  * @author Crt
@@ -2197,7 +2197,7 @@ $2
 Jos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Dereckson
  * @author Gomoko
@@ -2330,7 +2330,7 @@ $2
 Ceci permet d’être sur la liste des contacts du site, si vous désirez en savoir plus sur les règles concernant les comptes.',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -2959,7 +2959,7 @@ $messages['hil'] = array(
 	'confirmaccount-email' => 'E-mail:',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
  * @author Ex13
@@ -3144,7 +3144,7 @@ $2
 Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš wjace wo prawidłach za wužiwarske konta wědźeć.',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dorgan
  * @author Glanthor Reviol
@@ -3267,7 +3267,7 @@ $2
 Ha több információt szeretnél megtudni a felhasználói fiókokkal kapcsolatos irányelvekről, az oldalon megtalálhatod a kapcsolattartási listát.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -3544,7 +3544,7 @@ $messages['io'] = array(
 	'confirmaccount-wsum' => 'Bonveno!',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  * @author Ævar Arnfjörð Bjarmason
  */
@@ -4216,7 +4216,7 @@ $messages['ku-latn'] = array(
 	'confirmaccount-name' => 'Navê bikarhêner',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (kernowek)
  * @author Kw-Moon
  * @author Nrowe
  */
@@ -4421,7 +4421,7 @@ $messages['li'] = array(
 	'confirmaccount-submit' => 'Kónfermere',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Homo
  * @author Tomasdd
@@ -4441,7 +4441,7 @@ $messages['mhr'] = array(
 	'confirmaccount-email' => 'Электрон почто:',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  */
@@ -4647,7 +4647,7 @@ $messages['ml'] = array(
 	'confirmaccount-email-subj' => '{{SITENAME}} സം‌രംഭത്തിൽ അംഗത്വം സൃഷ്ടിക്കാനുള്ള അഭ്യർത്ഥന',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -5221,7 +5221,7 @@ $2
 Er kunnen contacteerlijsten zijn die u kunt gebruiken als u meer wil te weten komen over het beleid ten aanzien van gebruikers.',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -5346,7 +5346,7 @@ $messages['nso'] = array(
 	'confirmaccount-pos-1' => 'morulaganyi',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -5497,7 +5497,7 @@ $messages['pdt'] = array(
 	'confirmaccount-name' => 'Bruckernome',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Derbeth
  * @author Equadus
@@ -5781,7 +5781,7 @@ $3
 د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:UserLogin}} ولاړ شی.',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
@@ -5903,7 +5903,7 @@ $2
 Podem haver listas de contactos no site que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
@@ -6024,14 +6024,14 @@ $2
 Podem haver listas de contatos no sítio que poderá usar se desejar saber mais sobre a política de contas de utilizador.',
 );
 
-/** Romansh (Rumantsch) */
+/** Romansh (rumantsch) */
 $messages['rm'] = array(
 	'confirmaccount-real-q' => 'Num',
 	'confirmaccount-name' => "Num d'utilisader",
 	'confirmaccount-real' => 'Num:',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author KlaudiuMihaila
  * @author Mihai
  * @author Minisarm
@@ -6091,7 +6091,7 @@ Din motive de securitate va trebui să vă schimbaţi parola la prima autentific
 Pentru a vă autentifica, vă rugăm mergeţi aici: {{fullurl:Special:UserLogin}}.',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -6116,7 +6116,7 @@ $messages['roa-tara'] = array(
 	'confirmaccount-reject' => '(scettete da [[User:$1|$1]] sus a $2)',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  * @author Ignatus
  * @author Kaganer
@@ -6260,7 +6260,7 @@ $messages['rue'] = array(
 	'confirmaccount-bio' => 'Біоґрафія:',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
@@ -6271,7 +6271,7 @@ $messages['scn'] = array(
 	'confirmaccount-noreason' => '(nuddu)',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  * @author Teslaton
  */
@@ -6371,14 +6371,14 @@ $2
 Na stránke môže byť uvedený zoznam kontaktov, ktorý môžete použiť ak sa chcete dozvedieť viac o politike používateľských účtov.',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
 	'confirmaccount-name' => 'Uporabniško ime',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -6443,7 +6443,7 @@ $messages['sr-ec'] = array(
 	'confirmaccount-wsum' => 'Добро дошли!',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  * @author Михајло Анђелковић
@@ -6689,7 +6689,7 @@ $messages['su'] = array(
 	'confirmaccount-wsum' => 'Wilujeng sumping!',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Diupwijk
  * @author Fluff
@@ -6955,7 +6955,7 @@ $2
 వాడుకరి ఖాతా విధానం గురించి మీరు మరింత తెలుసుకోవాలనుకుంటే పైటులో సంప్రదింపు చిరునామాని వాడవచ్చు.',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -6968,7 +6968,7 @@ $messages['tet'] = array(
 	'confirmaccount-ip' => 'Diresaun IP:',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -7049,7 +7049,7 @@ $2
 Дар сомона феҳристи тамос мумкин оварда шуда бошад, ки тариқи он шумо метавонед маълумоти бештар оиди сиёсати ҳисоби корбарӣ дастрас намоед.',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -7517,7 +7517,7 @@ $2
 Sitede, kullanıcı hesap politikamız hakkında daha fazla bilgi almak istemeniz halinde kullanabileceğiniz irtibat listeleri bulunabilir.',
 );
 
-/** Tatar (Cyrillic script) (Татарча)
+/** Tatar (Cyrillic script) (татарча)
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
@@ -7542,7 +7542,7 @@ $messages['ug-latn'] = array(
 	'confirmaccount-email' => 'Élxet:',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
@@ -7581,7 +7581,7 @@ $messages['uk'] = array(
 	'confirmaccount-email-subj' => '{{SITENAME}}: запит облікового запису',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -7856,7 +7856,7 @@ $2
 如果你想知道更多有关账户政策的信息，你可以使用网站中的联系列表。',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Mark85296341
  * @author Waihorace
  */

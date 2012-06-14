@@ -162,7 +162,7 @@ $messages['arz'] = array(
 تأكد من أن الاسم مكتوب بطريقة صحيحة.',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -189,7 +189,7 @@ $messages['ast'] = array(
 Comprueba si s'escribió'l nome correutamente.",
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
  */
@@ -232,7 +232,7 @@ $messages['be-tarask'] = array(
 Праверце, ці правільна напісана імя ўдзельніка.',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  */
@@ -278,7 +278,7 @@ $messages['bn'] = array(
 	'usercredentials-member' => 'অধিকারসমূহ:',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -304,7 +304,7 @@ $messages['br'] = array(
 Gwiriit ha skrivet-mat eo an anv.",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -322,7 +322,7 @@ $messages['bs'] = array(
 	'usercredentials-member' => 'Prava:',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Loupeter
  * @author Paucabot
  * @author SMP
@@ -336,7 +336,7 @@ $messages['ca'] = array(
 	'usercredentials-bio' => 'Biografia:',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Jkjk
  * @author Li-sung
  * @author Matěj Grabovský
@@ -366,7 +366,7 @@ $messages['cu'] = array(
 	'usercredentials-real' => 'и́стиньно и́мѧ :',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Aka-miki
  * @author Jon Harald Søby
  */
@@ -495,7 +495,7 @@ $messages['eo'] = array(
 	'usercredentials-member' => 'Rajtoj:',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author BicScope
  * @author Crazymadlover
@@ -531,7 +531,7 @@ $messages['es'] = array(
 Verifique que el nombre se ha escrito correctamente.',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -550,7 +550,7 @@ $messages['et'] = array(
 	'usercredentials-member' => 'Õigused:',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  */
 $messages['eu'] = array(
@@ -573,7 +573,7 @@ $messages['fa'] = array(
 	'usercredentials-leg-person' => 'اطلاعات شخصی',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Centerlink
  * @author Cimon Avaro
  * @author Crt
@@ -604,7 +604,7 @@ $messages['fi'] = array(
 	'usercredentials-badid' => 'Tämän käyttäjän valtuutuksia ei löytynyt. Tarkista nimen oikeinkirjoitus.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Dereckson
  * @author Gomoko
@@ -642,7 +642,7 @@ $messages['fr'] = array(
 	'usercredentials-badid' => 'Aucune référence trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé.',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -837,7 +837,7 @@ $messages['hil'] = array(
 	'usercredentials-email' => 'E-mail:',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
  * @author Ex13
@@ -886,7 +886,7 @@ $messages['hsb'] = array(
 	'usercredentials-badid' => 'Žane daty za tutoho wužiwarja namakane. Kontroluj, hač mjeno je prawje napisane.',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dorgan
  * @author Glanthor Reviol
@@ -912,7 +912,7 @@ $messages['hu'] = array(
 	'usercredentials-badid' => 'A felhasználó nem rendelkezik személyes adatokkal. Ellenőrizd, hogy helyesen adtad-e meg a nevét.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -967,7 +967,7 @@ $messages['id'] = array(
 Periksa! apakah nama dieja dengan benar.',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  * @author Ævar Arnfjörð Bjarmason
  */
@@ -1153,7 +1153,7 @@ $messages['ku-latn'] = array(
 	'usercredentials-member' => 'Mafan',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (kernowek)
  * @author Kw-Moon
  * @author Nrowe
  */
@@ -1229,7 +1229,7 @@ $messages['li'] = array(
 Kiek nao of de naam korrek gespeld is.',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Homo
  * @author Tomasdd
@@ -1254,7 +1254,7 @@ $messages['mhr'] = array(
 	'usercredentials-email' => 'Электрон почто:',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  */
@@ -1304,7 +1304,7 @@ $messages['ml'] = array(
 	'usercredentials-member' => 'അവകാശങ്ങൾ',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -1469,7 +1469,7 @@ $messages['nl'] = array(
 Kijk na of de naam correct gespeld is.',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -1504,7 +1504,7 @@ $messages['nso'] = array(
 	'usercredentials-real' => 'Leina la nnete',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1556,7 +1556,7 @@ $messages['pdt'] = array(
 	'usercredentials-user' => 'Bruckernome:',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Derbeth
  * @author Equadus
@@ -1637,7 +1637,7 @@ $messages['ps'] = array(
 	'usercredentials-member' => 'رښتې:',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
@@ -1664,7 +1664,7 @@ $messages['pt'] = array(
 	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está correctamente escrito.',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
@@ -1698,7 +1698,7 @@ $messages['rif'] = array(
 	'usercredentials-real' => 'Ism n dṣṣaḥ :',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author KlaudiuMihaila
  * @author Mihai
  * @author Minisarm
@@ -1720,7 +1720,7 @@ $messages['ro'] = array(
 	'usercredentials-member' => 'Drepturi:',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  * @author Kaganer
  * @author Kv75
@@ -1750,14 +1750,14 @@ $messages['ru'] = array(
 	'usercredentials-badid' => 'Не найдена удостоверяющая информация об участнике. Проверьте правильность написания имени.',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
 	'usercredentials-email' => 'Nnirizzu email:',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1780,7 +1780,7 @@ $messages['sk'] = array(
 	'usercredentials-badid' => 'Žiadne osobné informácie tohto používateľa neboli nájdené. Skontrolujte, či ste správne napísali meno.',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1807,7 +1807,7 @@ $messages['sl'] = array(
 Preverite, ali ste ime pravilno črkovali.',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -1828,7 +1828,7 @@ $messages['sr-ec'] = array(
 	'usercredentials-member' => 'Права:',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  * @author Михајло Анђелковић
@@ -1879,7 +1879,7 @@ $messages['su'] = array(
 	'usercredentials-user' => 'Ngaran pamaké:',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Diupwijk
  * @author Fluff
@@ -1945,7 +1945,7 @@ $messages['te'] = array(
 	'usercredentials-member' => 'హక్కులు:',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -1953,7 +1953,7 @@ $messages['tet'] = array(
 	'usercredentials-email' => 'Korreiu eletróniku:',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1970,7 +1970,7 @@ $messages['tg-cyrl'] = array(
 	'usercredentials-ip' => 'Нишонаи IP-и аслӣ:',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2086,7 +2086,7 @@ $messages['ug-latn'] = array(
 	'usercredentials-email' => 'Élxet:',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
@@ -2145,7 +2145,7 @@ $messages['yi'] = array(
 	'usercredentials-member' => 'רעכטן',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
@@ -2173,7 +2173,7 @@ $messages['zh-hans'] = array(
 检查名称拼写是否正确。',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Mark85296341
  * @author Waihorace
  */

@@ -61,7 +61,7 @@ $messages['arz'] = array(
 	'requestaccount-loginnotice' => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -87,7 +87,7 @@ $messages['be-tarask'] = array(
 	'right-lookupcredentials' => 'прагляд [[Special:UserCredentials|пасьведчаньняў ўдзельнікаў]]',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  */
@@ -95,7 +95,7 @@ $messages['bg'] = array(
 	'requestaccount-loginnotice' => "За да получите потребителска сметка, необходимо е да '''[[Special:RequestAccount|изпратите заявка]]'''.",
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -108,14 +108,14 @@ $messages['br'] = array(
 	'right-lookupcredentials' => 'Gwelet [[Special:UserCredentials|daveennoù an implijerien]]',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
 	'requestaccount-loginnotice' => "Da biste korisnički račun, morate '''[[Special:RequestAccount|zahtijevati jedan]]'''.",
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Jkjk
  * @author Li-sung
  * @author Matěj Grabovský
@@ -177,7 +177,7 @@ $messages['eo'] = array(
 	'requestaccount-loginnotice' => "Akiri uzanto-konton, vi devas '''[[Special:RequestAccount|peti ĝin]]'''.",
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author BicScope
  * @author Crazymadlover
@@ -197,7 +197,7 @@ $messages['es'] = array(
 	'right-lookupcredentials' => 'Ver las [[Special:UserCredentials|credenciales del usuario]]',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Centerlink
  * @author Cimon Avaro
  * @author Crt
@@ -216,7 +216,7 @@ $messages['fi'] = array(
 	'right-lookupcredentials' => 'Nähdä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Dereckson
  * @author Grondin
@@ -238,7 +238,7 @@ $messages['fr'] = array(
 	'right-lookupcredentials' => 'Voir les [[Special:UserCredentials|références des utilisateurs]]',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -295,7 +295,7 @@ $messages['hi'] = array(
 	'requestaccount-loginnotice' => "सदस्य खाता पाने के लिये आप अपनी '''[[Special:RequestAccount|माँग पंजिकृत करें]]'''।",
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
  * @author Ex13
@@ -317,7 +317,7 @@ $messages['hsb'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|Wužiwarske woprawnjenki]] sej wobhladać',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dj
  * @author Dorgan
@@ -332,7 +332,7 @@ $messages['hu'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|felhasználói azonosító információk]] megjelenítése',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -358,7 +358,7 @@ $messages['id'] = array(
 	'right-lookupcredentials' => 'Lihat [[Special:UserCredentials|pengguna  Kredensial]]',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  * @author Ævar Arnfjörð Bjarmason
  */
@@ -367,7 +367,7 @@ $messages['is'] = array(
 	'requestaccount-loginnotice' => "Ef þú ert ekki þegar með aðgang verður þú að '''[[Special:RequestAccount|sækja um einn slíkan]]'''.",
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
  * @author Melos
@@ -478,7 +478,7 @@ $messages['map-bms'] = array(
 	'right-lookupcredentials' => 'Deleng [[Special:UserCredentials|panganggo Kredensial]]',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  */
@@ -550,7 +550,7 @@ $messages['nl'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|gebruikersreferenties]] bekijken',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -564,7 +564,7 @@ $messages['nn'] = array(
 	'right-lookupcredentials' => 'Vis [[Special:UserCredentials|brukarattestar]]',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -575,7 +575,7 @@ $messages['oc'] = array(
 	'right-lookupcredentials' => 'Vejatz las [[Special:UserCredentials|referéncias dels utilizaires]]',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Equadus
  * @author Leinad
@@ -607,7 +607,7 @@ $messages['pms'] = array(
 	'right-lookupcredentials' => 'Visualisa [[Special:UserCredentials|credensiaj utent]]',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
@@ -622,7 +622,7 @@ $messages['pt'] = array(
 	'right-lookupcredentials' => 'Ver [[Special:UserCredentials|credenciais de utilizador]]',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author 555
  * @author Eduardo.mps
  * @author Giro720
@@ -638,7 +638,7 @@ $messages['pt-br'] = array(
 	'right-lookupcredentials' => 'Ver [[Special:UserCredentials|credenciais de usuário]]',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  * @author Ignatus
  * @author Kaganer
@@ -657,7 +657,7 @@ $messages['ru'] = array(
 	'right-lookupcredentials' => 'просмотр [[Special:UserCredentials|удостоверяющей информации об участниках]]',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  * @author Teslaton
  */
@@ -686,7 +686,7 @@ $messages['su'] = array(
 	'requestaccount-loginnotice' => "Pikeun miboga rekening pamaké, anjeun kudu '''[[Special:RequestAccount|daptar heula]]'''.",
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Diupwijk
  * @author Fluff
@@ -716,14 +716,14 @@ $messages['te'] = array(
 	'requestaccount-loginnotice' => "ఖాతా పొందడానికి, మీరు తప్పనిసరిగా '''[[Special:RequestAccount|అభ్యర్థించాలి]]'''.",
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
 	'requestaccount-loginnotice' => "Барои дастрас кардани ҳисоби корбарӣ, шумо бояд '''[[Special:RequestAccount|дархост]]''' кунед.",
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -771,7 +771,7 @@ $messages['yue'] = array(
 	'requestaccount-loginnotice' => "要拎一個用戶戶口，你一定要'''[[Special:RequestAccount|請求一個]]'''。",
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
@@ -785,7 +785,7 @@ $messages['zh-hans'] = array(
 	'right-lookupcredentials' => '查看 [[Special:UserCredentials|用户凭据]]',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Mark85296341
  * @author Waihorace
  */

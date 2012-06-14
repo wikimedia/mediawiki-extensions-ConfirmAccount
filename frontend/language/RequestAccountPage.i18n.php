@@ -323,7 +323,7 @@ $3
 لا يمكنك عمل المزيد من الطلبات.',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
  */
@@ -343,7 +343,7 @@ $messages['bcl'] = array(
 	'requestaccount-same' => '(pareho sa  totoong pangaran)',
 );
 
-/** Belarusian (Беларуская)
+/** Belarusian (беларуская)
  * @author Тест
  */
 $messages['be'] = array(
@@ -418,7 +418,7 @@ $3
 Вы больш ня можаце рабіць новыя запыты.',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  */
@@ -512,7 +512,7 @@ $messages['bn'] = array(
 	'requestaccount-email-subj-admin' => '{{SITENAME}}-এ অ্যাকাউন্ট অনুরোধ',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -580,7 +580,7 @@ Kadarnaet eo bet ar chomlec'h postel. Gallout a rit kadarnaat ar goulenn amañ �
 Ne c'hallit ket ober goulennoù all.",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -618,7 +618,7 @@ Mail za potvrdu je poslan na Vašu e-mail adresu.',
 Ne možete podnositi više zahtjeva.',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Loupeter
  * @author Paucabot
  * @author SMP
@@ -639,7 +639,7 @@ $messages['ca'] = array(
 	'requestaccount-notes' => 'Notes addicionals:',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Jezevec
  * @author Jkjk
  * @author Li-sung
@@ -702,7 +702,7 @@ $messages['cu'] = array(
 	'requestaccount-level-0' => 'творь́ць',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Aka-miki
  * @author Jon Harald Søby
  */
@@ -989,7 +989,7 @@ Se ĉi tio ne devenas al vi, ne sekvu la ligilon.
 Vi ne povas peti pluajn petojn.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author BicScope
  * @author Crazymadlover
  * @author Fitoschido
@@ -1062,7 +1062,7 @@ La dirección de correo electrónico ha sido confirmada. Puedes confirmar la sol
 No puedes hacer ninguna otra solicitud.',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -1083,7 +1083,7 @@ $messages['et'] = array(
 	'requestaccount-notes' => 'Lisainfo:',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  */
 $messages['eu'] = array(
@@ -1097,7 +1097,7 @@ $messages['eu'] = array(
 	'requestaccount-attach' => 'Curriculuma (hautazkoa):',
 );
 
-/** Extremaduran (Estremeñu)
+/** Extremaduran (estremeñu)
  * @author Better
  */
 $messages['ext'] = array(
@@ -1114,7 +1114,7 @@ $messages['fa'] = array(
 	'requestaccount-same' => '(همان نام واقعی)',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Centerlink
  * @author Cimon Avaro
  * @author Crt
@@ -1184,7 +1184,7 @@ Sähköpostiosoite on tarkistettu. Myönnä käyttäjätunnus tästä: $2.',
 	'acct_request_throttle_hit' => 'Valitettavasti et voi tehdä enempää pyyntöjä, koska olet jo pyytänyt {{PLURAL:$1|yhden käyttäjätunnuksen|$1 käyttäjätunnusta}}.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Dereckson
  * @author Grondin
@@ -1259,7 +1259,7 @@ L'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $
 Vous ne pouvez plus faire de demande.',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -1623,7 +1623,7 @@ $messages['hi'] = array(
 	'requestaccount-email-subj-admin' => '{{SITENAME}} खाता खोलने की माँग',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
  * @author Ex13
@@ -1751,7 +1751,7 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 	'acct_request_throttle_hit' => 'Wodaj, sy hižo $1 {{PLURAL:$1|1 konto|$1 konće|$1 konta|$1 kontow}} požadał. Njemóžeš žane dalše konta požadać.',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dorgan
  * @author Glanthor Reviol
@@ -1821,7 +1821,7 @@ Az e-mail cím ellenőrzése sikeres volt. Itt hagyhatod jóvá a kérést: "$2"
 Nem igényelhetsz újabbakat.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -1957,7 +1957,7 @@ Surel ini telah dikonfirmasi. Anda dapat memberikan konfirmasi atas permintaan t
 Anda tidak dapat lagi melakukan permintaan.',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  * @author Ævar Arnfjörð Bjarmason
  */
@@ -1998,7 +1998,7 @@ $2',
 	'acct_request_throttle_hit' => 'Þú hefur þegar sótt um {{PLURAL:$1|1 aðgang|$1 aðganga}}. Þú getur ekki sent inn fleiri beðnir.',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
  * @author Melos
@@ -2397,7 +2397,7 @@ $messages['ku-latn'] = array(
 	'requestaccount-leg-user' => 'Hesabê bikarhêner',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (kernowek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
@@ -2529,7 +2529,7 @@ Doe kans diene naam aanpasse via dien [[Special:Preferences|veurkaöre]].",
 	'requestaccount-email-subj-admin' => '{{SITENAME}} gebroekersaanvraoge',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Homo
  * @author Tomasdd
@@ -2540,7 +2540,7 @@ $messages['lt'] = array(
 	'requestaccount-leg-other' => 'Kita informacija',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  */
@@ -2935,7 +2935,7 @@ U kunt de aanvraag hier "$2" bevestigen.',
 U kunt geen nieuwe aanvragen meer uitbrengen.',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -3010,7 +3010,7 @@ $messages['nso'] = array(
 	'requestaccount-level-1' => 'morulaganyi',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -3111,7 +3111,7 @@ $messages['pdc'] = array(
 	'requestaccount-level-1' => 'Schreiwer',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Equadus
  * @author Leinad
@@ -3259,7 +3259,7 @@ $messages['ps'] = array(
 	'requestaccount-email-subj-admin' => 'د {{SITENAME}} د ګڼون غوښتنه',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
@@ -3325,7 +3325,7 @@ O endereço electrónico foi confirmado. Pode confirmar o pedido aqui "$2".',
 Não pode fazer mais pedidos.',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
@@ -3399,7 +3399,7 @@ $messages['rif'] = array(
 	'requestaccount-real' => 'Ism n dṣṣaḥ :',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author KlaudiuMihaila
  * @author Mihai
  * @author Minisarm
@@ -3450,7 +3450,7 @@ Codul de confirmare expiră în $4.',
 Adresa de e-mail a fost confirmată. Poți confirma cererea aici "$2".',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  * @author Kaganer
  * @author Kv75
@@ -3534,7 +3534,7 @@ $messages['rue'] = array(
 	'requestaccount-level-1' => 'едітор',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -3570,7 +3570,7 @@ $messages['sah'] = array(
 	'requestaccount-agree' => 'Аатыҥ сөпкө суруллубутун бигэргэт уонна Өҥө оҥоруу усулуобуйатын кытта сөбүлэһэргин биллэр.',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -3634,7 +3634,7 @@ Emailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu: „$2“.',
 Nemôžete odoslať viac žiadostí.',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -3665,7 +3665,7 @@ $messages['sr-ec'] = array(
 	'request-account-econf' => 'Ваша е-адреса је потврђена и биће наведена као таква у вашем захтеву за налог.',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  * @author Михајло Анђелковић
@@ -3788,7 +3788,7 @@ $messages['su'] = array(
 	'requestaccount-email-subj-admin' => 'Paménta rekening {{SITENAME}}',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Diupwijk
  * @author Fluff
@@ -3940,7 +3940,7 @@ $3
 	'acct_request_throttle_hit' => 'క్షమించండి, మీరిప్పటికే {{PLURAL:$1|1 ఖాతాను|$1 ఖాతాలను}} అభ్యర్ధించారు. ఇంకా ఎక్కవ అభ్యర్థనలు చెయ్యలేరు.',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -3948,7 +3948,7 @@ $messages['tet'] = array(
 	'requestaccount-level-0' => 'autór',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -4006,7 +4006,7 @@ $3
 Шумо наметавонед аз ин зиёд дархост кунед.',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -4252,7 +4252,7 @@ E-posta adresi doğrulandı. İsteği şuradan onaylayabilirsiniz: "$2".',
 Daha fazla istekte bulunamazsınız.',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
@@ -4393,7 +4393,7 @@ $3
 	'acct_request_throttle_hit' => '對唔住，你已經請求咗$1個戶口。你唔可以請求更多個戶口。',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
@@ -4461,7 +4461,7 @@ $3
 您不可以请求更多个账户。',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Mark85296341
  * @author Waihorace
  */
