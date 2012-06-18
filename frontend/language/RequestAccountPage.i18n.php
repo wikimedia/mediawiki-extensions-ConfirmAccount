@@ -2119,8 +2119,8 @@ $messages['ja'] = array(
 	'requestaccount-tos' => '私は {{SITENAME}} の [[{{MediaWiki:Requestaccount-page}}|サービス利用規約]] を既に熟読しており、これに同意し、遵守します。
 私が"本名"欄に記入した名前は、自分の本名であることに間違いありません。',
 	'requestaccount-submit' => 'アカウント申請',
-	'requestaccount-sent' => 'あなたのアカウント申請は正常に送信され、現在承認を待っています。
-確認メールがあなたのメールアドレスに送信されました。',
+	'requestaccount-sent' => 'アカウント申請を送信しました。現在、承認を待っています。
+あなたのメールアドレスに確認メールをお送りしました。',
 	'request-account-econf' => 'あなたのメールアドレスを確認しました。アカウント申請にもそのように表示されます。',
 	'requestaccount-email-subj' => '{{SITENAME}} メールアドレスの確認',
 	'requestaccount-email-body' => '誰か(おそらくあなた)が、IP アドレス $1 からこのメールアドレスで {{SITENAME}} のアカウント "$2" の作成を申請しました。
