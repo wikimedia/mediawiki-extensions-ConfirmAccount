@@ -29,6 +29,12 @@ $specialPageAliases['arz'] = array(
 	'UserCredentials' => array( 'شهادات_اليوزر' ),
 );
 
+/** Assamese (অসমীয়া) */
+$specialPageAliases['as'] = array(
+	'RequestAccount' => array( 'একাউণ্ট_অনুৰোধ' ),
+	'ConfirmAccounts' => array( 'একাউণ্ট_নিশ্চিত_কৰক' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'RequestAccount' => array( 'Minta_akun' ),
@@ -61,7 +67,7 @@ $specialPageAliases['diq'] = array(
 	'UserCredentials' => array( 'ReferansêKarberan' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
+/** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'RequestAccount' => array( 'Póžedanje_na_konto' ),
 	'ConfirmAccounts' => array( 'Konto_wobkšuśiś' ),
@@ -115,7 +121,7 @@ $specialPageAliases['frp'] = array(
 	'UserCredentials' => array( 'Refèrences_a_l\'usanciér', 'RefèrencesALUsanciér' ),
 );
 
-/** Galician (Galego) */
+/** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'RequestAccount' => array( 'Solicitar_unha_conta' ),
 	'ConfirmAccounts' => array( 'Confirmar_a_conta' ),
@@ -142,7 +148,7 @@ $specialPageAliases['hr'] = array(
 	'UserCredentials' => array( 'Suradničke_vjerodajnice' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'RequestAccount' => array( 'Konto_požadać' ),
 	'ConfirmAccounts' => array( 'Konto_potwjerdźić' ),
