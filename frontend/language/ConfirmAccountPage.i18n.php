@@ -271,7 +271,7 @@ $messages['am'] = array(
 	'confirmaccount-email' => 'ኢ-ሜል:',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -733,7 +733,7 @@ $messages['be'] = array(
 	'confirmaccount-submit' => 'Пацвердзіць',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -1317,7 +1317,7 @@ $messages['cs'] = array(
 	'confirmaccount-wsum' => 'Vítejte!',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -1571,7 +1571,7 @@ $messages['diq'] = array(
 	'confirmaccount-submit' => 'Testiq ke',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -2409,7 +2409,7 @@ $messages['ga'] = array(
 	'confirmaccount-needreason' => 'Tá ort fáth a chur síos sa bhosca tráchta faoi bhun.',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Elisardojm
  * @author Toliño
@@ -3024,7 +3024,7 @@ $messages['hr'] = array(
 	'confirmaccount-email-subj' => '{{SITENAME}} zahtjev suradničkog računa',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -6244,7 +6244,7 @@ $2
 чтобы получить более подробную информацию о правилах, касающихся учётных записей участников.',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -6816,7 +6816,7 @@ $2
 Det kan finnas kontaktinformation på webbplatsen som du kan använda om du vill få mer information om reglerna för användarkonton.',
 );
 
-/** Silesian (Ślůnski)
+/** Silesian (ślůnski)
  * @author Herr Kriss
  */
 $messages['szl'] = array(

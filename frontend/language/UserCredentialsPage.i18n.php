@@ -202,7 +202,7 @@ $messages['az'] = array(
 	'usercredentials-urls' => 'Vebsaytların siyahısı',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -358,7 +358,7 @@ $messages['cs'] = array(
 	'usercredentials-member' => 'Práva:',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -424,7 +424,7 @@ $messages['diq'] = array(
 	'usercredentials-bio' => 'Biyografiye:',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -669,7 +669,7 @@ $messages['fy'] = array(
 	'usercredentials-user' => 'Meidoggernamme:',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Elisardojm
  * @author Toliño
@@ -860,7 +860,7 @@ $messages['hr'] = array(
 Provjerite je li ime točno napisano.',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(

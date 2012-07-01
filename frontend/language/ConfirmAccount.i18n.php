@@ -72,7 +72,7 @@ $messages['ast'] = array(
 	'right-lookupcredentials' => 'Ver les [[Special:UserCredentials|credenciales del usuariu]]',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
@@ -157,7 +157,7 @@ $messages['de-formal'] = array(
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, müssen Sie es '''[[Special:RequestAccount|beantragen]]'''.",
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -246,7 +246,7 @@ $messages['frp'] = array(
 	'requestaccount-loginnotice' => "Por avêr un compto usanciér, vos en dête fâre la '''[[Special:RequestAccount|demanda]]'''.",
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Elisardojm
  * @author Toliño
@@ -306,7 +306,7 @@ $messages['hr'] = array(
 	'requestaccount-loginnotice' => "Da bi dobili suradnički račun, trebate ga '''[[Special:RequestAccount|zatražiti]]'''.",
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(

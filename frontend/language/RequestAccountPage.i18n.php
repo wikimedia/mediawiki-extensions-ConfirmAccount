@@ -162,7 +162,7 @@ $messages['am'] = array(
 	'requestaccount-email' => 'የኢ-ሜል አድራሻ:',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -350,7 +350,7 @@ $messages['be'] = array(
 	'requestaccount-level-0' => 'аўтар',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Zedlik
@@ -694,7 +694,7 @@ E-mail byla ověřena. Žádost můžete schválit zde "$2".',
 Další žádost již není možná.',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -851,7 +851,7 @@ $messages['diq'] = array(
 	'requestaccount-level-1' => 'vurnkar',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -1331,7 +1331,7 @@ $messages['fy'] = array(
 	'requestaccount-level-1' => 'redakteur',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Elisardojm
  * @author Toliño
@@ -1690,7 +1690,7 @@ E-mail adresa je potvrđena. Možete potvrditi zahtjev ovdje "$2".',
 	'acct_request_throttle_hit' => 'Žao nam je, već ste zatražili {{PLURAL:$1|1 suradnički račun|$1 suradničke račune}}. Ne možete postaviti nove zahtjeve.',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -3525,7 +3525,7 @@ $3
 Больше делать запросов вы не можете.',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
