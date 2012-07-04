@@ -566,11 +566,24 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author Reza1615
  */
 $messages['fa'] = array(
+	'usercredentials' => 'مشخصات کاربری',
 	'usercredentials-user' => 'نام کاربری:',
 	'usercredentials-leg-user' => 'حساب کاربری',
 	'usercredentials-leg-person' => 'اطلاعات شخصی',
+	'usercredentials-leg-ip' => 'اطلاعات نشانی آی‌پی',
+	'usercredentials-email' => 'رایانامه:',
+	'usercredentials-real' => 'نام واقعی:',
+	'usercredentials-bio' => 'زندگی‌نامه:',
+	'usercredentials-attach' => 'سوابق و رزومه:',
+	'usercredentials-notes' => 'یادداشت‌های اضافی:',
+	'usercredentials-urls' => 'فهرست وب‌گاه‌ها:',
+	'usercredentials-ip' => 'آدرس آی‌پی اصلی:',
+	'usercredentials-xff' => 'ایکس-فرستاده شد اصلی برای:',
+	'usercredentials-agent' => 'یوزر-ایجنت اصلی:',
+	'usercredentials-member' => 'دسترسی‌ها:',
 );
 
 /** Finnish (suomi)
