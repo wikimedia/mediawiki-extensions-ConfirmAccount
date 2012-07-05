@@ -744,7 +744,7 @@ $messages['th'] = array(
  * @author AnakngAraw
  */
 $messages['tl'] = array(
-	'confirmaccount-newrequests' => "'''$1''' naghihintay na bukas pang {{PLURAL:$1|[[Special:ConfirmAccounts|account request]]|[[Special:ConfirmAccounts|mga paghiling ng akawnt]]}} na natiyak na ng e-liham",
+	'confirmaccount-newrequests' => "'''$1''' bukas na e-liham ang natiyak [[Special:ConfirmAccounts|ang akawnt na {{PLURAL:$1|hiniling ay nakabinbin|mga hiniling ay nakabinbin}}]]. '''Kailangan ang pagpansin mo!'''",
 	'requestaccount-loginnotice' => "Upang makatanggap ng isang akawnt ng tagagamit, dapat kang '''[[Special:RequestAccount|humiling ng isa]]'''.",
 	'right-confirmaccount' => 'Tingnan ang [[Special:ConfirmAccounts|pila na may hinihiling na mga akawnt]]',
 	'right-requestips' => 'Tingnan ang mga adres ng IP ng humihiling habang isinasagawa ang hinihiling na mga akawnt',

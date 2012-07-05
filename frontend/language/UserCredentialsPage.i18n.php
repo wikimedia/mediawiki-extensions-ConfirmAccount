@@ -2043,6 +2043,7 @@ $messages['tl'] = array(
 	'usercredentials-leg-areas' => 'Mga pangunahing bagay-bagay na kinawiwilihan',
 	'usercredentials-leg-person' => 'Pansariling kabatiran',
 	'usercredentials-leg-other' => 'Iba pang kabatiran',
+	'usercredentials-leg-ip' => 'Dato ng tirahang IP',
 	'usercredentials-email' => 'E-liham:',
 	'usercredentials-real' => 'Totoong pangalan:',
 	'usercredentials-bio' => 'Talambuhay:',
@@ -2050,6 +2051,8 @@ $messages['tl'] = array(
 	'usercredentials-notes' => 'Karagdagang mga tala:',
 	'usercredentials-urls' => 'Talaan ng mga websayt:',
 	'usercredentials-ip' => 'Orihinal na adres ng IP:',
+	'usercredentials-xff' => 'Orihinal na Isinulong-Ang-X-Para-Sa:',
+	'usercredentials-agent' => 'Orihinal na Ahente-Ng-Tagagamit:',
 	'usercredentials-member' => 'Mga karapatan:',
 	'usercredentials-badid' => 'Walang natagpuang mga katibaya ng katangian para sa tagagamit na ito.
 Suriin kung ibinaybay ng tama ang pangalan.',
