@@ -364,9 +364,9 @@ $specialPageAliases['th'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'RequestAccount' => array( 'Hilingin ang kuwenta', 'HilingKuwenta' ),
-	'ConfirmAccounts' => array( 'Tiyakin ang mga kuwenta' ),
-	'UserCredentials' => array( 'Mga katibayan ng katangian ng tagagamit' ),
+	'RequestAccount' => array( 'Hilingin_ang_kuwenta', 'HilingKuwenta' ),
+	'ConfirmAccounts' => array( 'Tiyakin_ang_mga_kuwenta' ),
+	'UserCredentials' => array( 'Mga_katibayan_ng_katangian_ng_tagagamit' ),
 );
 
 /** Turkish (Türkçe) */
