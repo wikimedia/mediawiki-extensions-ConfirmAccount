@@ -376,6 +376,11 @@ $specialPageAliases['tr'] = array(
 	'UserCredentials' => array( 'KullanıcıReferansları' ),
 );
 
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'RequestAccount' => array( 'Запит_облікового_запису' ),
+);
+
 /** Simplified Chinese (‪中文（简体）‬) */
 $specialPageAliases['zh-hans'] = array(
 	'RequestAccount' => array( '申请帐户' ),
