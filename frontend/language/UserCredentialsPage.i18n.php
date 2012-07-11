@@ -1259,7 +1259,7 @@ $messages['lt'] = array(
 	'usercredentials-member' => 'Teisės:',
 );
 
-/** Eastern Mari (Олык Марий)
+/** Eastern Mari (олык марий)
  * @author Сай
  */
 $messages['mhr'] = array(
@@ -1385,7 +1385,7 @@ $messages['mt'] = array(
 	'usercredentials-email' => 'E-mail:',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -1407,12 +1407,12 @@ $messages['nah'] = array(
 	'usercredentials-ip' => 'Achto IP:',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Event
  * @author Harald Khan
- * @author Jon Harald Søby
  * @author Laaknor
  * @author Nghtwlkr
+ * @author Njardarlogar
  */
 $messages['nb'] = array(
 	'usercredentials' => 'Brukerattester',

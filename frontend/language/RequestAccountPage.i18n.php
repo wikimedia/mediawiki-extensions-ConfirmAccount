@@ -2297,6 +2297,7 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
 	'requestaccount' => '계정 요청',
@@ -2308,16 +2309,16 @@ $messages['ko'] = array(
 	'requestaccount-same' => '(실명과 같음)',
 	'requestaccount-email' => '이메일 주소:',
 	'requestaccount-submit' => '계정 요청',
-	'requestaccount-email-body' => '$1 IP 주소를 사용하는 사용자가 이 이메일 주소로 {{SITENAME}}에 "$2" 계정 생성을 요청하였습니다.
+	'requestaccount-email-body' => '$1 IP 주소를 사용하는 사용자가 이 이메일 주소로 {{SITENAME}}에 "$2" 계정 만들기를 요청하였습니다.
 
 {{SITENAME}}의 이 계정이 당신이 요청한 것이라면, 당신의 브라우저로 아래의 링크를 열어주세요:
 
 $3
 
-계정이 생성되면, 암호는 당신의 이메일로 전송될 것입니다.
+계정이 만들어지면, 암호는 당신의 이메일로 전송될 것입니다.
 만약 당신의 것이 아니라면 위의 링크를 열지 마세요.
 이 확인 코드는 $4에 만료될 것입니다.',
-	'requestaccount-email-subj-admin' => '{{SITENAME}} 계정 생성 요청',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} 계정 만들기 요청',
 );
 
 /** Colognian (Ripoarisch)
@@ -2776,7 +2777,7 @@ Alamat e-mel ini telah disahkan. Anda boleh mengesahan permohonan di sini "$2".'
 Anda tidak boleh membuat permohonan lagi.',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -2795,10 +2796,9 @@ $messages['nah'] = array(
 	'requestaccount-level-0' => 'chīhualōni',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Event
  * @author Harald Khan
- * @author Jon Harald Søby
  * @author Laaknor
  * @author Nghtwlkr
  */

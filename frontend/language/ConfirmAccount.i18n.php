@@ -449,7 +449,7 @@ $messages['lb'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|Referenze vun de Benotzer]] kucken',
 );
 
-/** Lezghian (Лезги)
+/** Lezghian (лезги)
  * @author Migraghvi
  */
 $messages['lez'] = array(
@@ -522,10 +522,9 @@ $messages['ms'] = array(
 	'right-lookupcredentials' => 'Melihat [[Special:UserCredentials|kelayakan pengguna]]',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Event
  * @author Harald Khan
- * @author Jon Harald Søby
  * @author Laaknor
  * @author Nghtwlkr
  */
