@@ -333,7 +333,7 @@ class AccountConfirmSubmission {
 	 * @param $acd_id int
 	 * @return void
 	 */
-	protected function acceptRequest_rollback( Database $dbw, $user_id, $acd_id ) {
+	protected function acceptRequest_rollback( DatabaseBase $dbw, $user_id, $acd_id ) {
 		$dbw->begin();
 		# DELETE the user in case something caused a COMMIT already somewhere.
 		if ( $user_id ) {
