@@ -614,7 +614,7 @@ $messages['pms'] = array(
  * @author Waldir
  */
 $messages['pt'] = array(
-	'confirmaccount-newrequests' => "Há actualmente {{PLURAL:$1|'''um''' [[Special:ConfirmAccounts|pedido de conta]] em aberto, confirmado|'''$1''' [[Special:ConfirmAccounts|pedidos de conta]] em aberto, confirmados}} por correio electrónico, {{PLURAL:$1|pendente|pendentes}}.",
+	'confirmaccount-newrequests' => "Há {{PLURAL:$1|'''um''' [[Special:ConfirmAccounts|pedido de conta]]|'''$1''' [[Special:ConfirmAccounts|pedidos de conta]]}} em aberto com correio electrónico confirmado. '''É necessária a sua atenção!'''",
 	'requestaccount-loginnotice' => "Para obter uma conta de utilizador, deverá '''[[Special:RequestAccount|pedi-la]]'''.",
 	'right-confirmaccount' => 'Ver a [[Special:ConfirmAccounts|fila de contas pedidas]]',
 	'right-requestips' => 'Ver os endereços IP do requerente ao processar contas pedidas',

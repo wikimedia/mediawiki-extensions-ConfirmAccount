@@ -1205,6 +1205,7 @@ $messages['lb'] = array(
 	'usercredentials-leg-areas' => 'Haaptinteressen',
 	'usercredentials-leg-person' => 'Perséinlech Informatiounen',
 	'usercredentials-leg-other' => 'Aner Informatiounen',
+	'usercredentials-leg-ip' => 'Donnéeë vun der IP-Adress',
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Richtegen Numm:',
 	'usercredentials-bio' => 'Biographie:',
