@@ -23,8 +23,8 @@ class ConfirmAccount {
 			if ( $key ) {
 				$path = $repo->getZonePath( 'public' ) . '/' .
 					UserAccountRequest::relPathFromKey( $key );
-				if ( $path && file_exists($path) ) {
-					unlink($path);
+				if ( $path && file_exists( $path ) ) {
+					unlink( $path );
 				}
 			}
 			$dbw->delete( 'account_requests', array( 'acr_id' => $row->acr_id ), __METHOD__ );
@@ -36,7 +36,7 @@ class ConfirmAccount {
 		$dbw->update( 'account_requests',
 			array( 'acr_rejected' => $dbw->timestamp(),
 				'acr_user' => 0, // dummy
-				'acr_comment' => wfMsgForContent('confirmaccount-autorej'),
+				'acr_comment' => wfMessage( 'confirmaccount-autorej' )->inContentLanguage()->text(),
 				'acr_deleted' => 1 ),
 			array( "acr_rejected IS NULL",
 				"acr_registration < {$encCutoff}",
@@ -197,7 +197,7 @@ class ConfirmAccount {
 
 		$types = array_keys( $wgAccountRequestTypes );
 		$types[] = '*'; // "all" types count
-		foreach( $types as $type ) {
+		foreach ( $types as $type ) {
 			$key = wfMemcKey( 'confirmaccount', 'econfopencount', $type );
 			$wgMemc->delete( $key );
 		}
@@ -291,7 +291,7 @@ class ConfirmAccount {
 	/**
 	 * Get a block for this user if they are blocked from requesting accounts
 	 * @param User $user
-	 * @return Block|null 
+	 * @return Block|null
 	 */
 	public static function getAccountRequestBlock( User $user ) {
 		global $wgAccountRequestWhileBlocked;

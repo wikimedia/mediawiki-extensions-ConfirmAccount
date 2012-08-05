@@ -34,9 +34,9 @@ class AccountConfirmSubmission {
 	public function submit( IContextSource $context ) {
 		# Make sure that basic permissions are checked
 		if ( !$this->admin->getID() || !$this->admin->isAllowed( 'confirmaccount' ) ) {
-			return array( 'accountconf_permission_denied', wfMsgHtml( 'badaccess-group0' ) );
+			return array( 'accountconf_permission_denied', $context->msg( 'badaccess-group0' )->escaped() );
 		} elseif ( wfReadOnly() ) {
-			return array( 'accountconf_readonly', wfMsgHtml( 'badaccess-group0' ) );
+			return array( 'accountconf_readonly', $context->msg( 'badaccess-group0' )->escaped() );
 		}
 		if ( $this->action === 'spam' ) {
 			return $this->spamRequest( $context );
@@ -47,7 +47,7 @@ class AccountConfirmSubmission {
 		} elseif ( $this->action === 'accept' ) {
 			return $this->acceptRequest( $context );
 		} else {
-			return array( 'accountconf_bad_action', wfMsgHtml( 'confirmaccount-badaction' ) );
+			return array( 'accountconf_bad_action', $context->msg( 'confirmaccount-badaction' )->escaped() );
 		}
 	}
 
@@ -76,20 +76,20 @@ class AccountConfirmSubmission {
 			$u->setEmail( $this->accountReq->getEmail() );
 			# Send out a rejection email...
 			if ( $this->reason != '' ) {
-				$emailBody = wfMsgExt( 'confirmaccount-email-body4',
-					array( 'parsemag', 'content' ), $u->getName(), $this->reason );
+				$emailBody = $context->msg( 'confirmaccount-email-body4',
+					$u->getName(), $this->reason )->inContentLanguage()->text();
 			} else {
-				$emailBody = wfMsgExt( 'confirmaccount-email-body3',
-					array( 'parsemag', 'content' ), $u->getName() );
+				$emailBody = $context->msg( 'confirmaccount-email-body3',
+					$u->getName() )->inContentLanguage()->text();
 			}
 			$result = $u->sendMail(
-				wfMsgForContent( 'confirmaccount-email-subj' ),
+				$context->msg( 'confirmaccount-email-subj' )->inContentLanguage()->text(),
 				$emailBody
 			);
 			if ( !$result->isOk() ) {
 				$dbw->rollback();
 				return array( 'accountconf_mailerror',
-					wfMsg( 'mailerror', $context->getOutput()->parse( $result->getWikiText() ) ) );
+					$context->msg( 'mailerror' )->rawParams( $context->getOutput()->parse( $result->getWikiText() ) )->text() );
 			}
 			# Clear cache for notice of how many account requests there are
 			ConfirmAccount::clearAccountRequestCountCache();
@@ -106,7 +106,7 @@ class AccountConfirmSubmission {
 
 		# Pointless without a summary...
 		if ( $this->reason == '' ) {
-			return array( 'accountconf_needreason', wfMsgHtml( 'confirmaccount-needreason' ) );
+			return array( 'accountconf_needreason', $context->msg( 'confirmaccount-needreason' )->escaped() );
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
@@ -116,19 +116,18 @@ class AccountConfirmSubmission {
 		$ok = $this->accountReq->markHeld( $this->admin, wfTimestampNow(), $this->reason );
 		if ( !$ok ) { // already held or deleted?
 			$dbw->rollback();
-			return array( 'accountconf_canthold', wfMsgHtml( 'confirmaccount-canthold' ) );
+			return array( 'accountconf_canthold', $context->msg( 'confirmaccount-canthold' )->escaped() );
 		}
 
 		# Send out a request hold email...
 		$result = $u->sendMail(
-			wfMsgForContent( 'confirmaccount-email-subj' ),
-			wfMsgExt( 'confirmaccount-email-body5',
-				array('parsemag','content'), $u->getName(), $this->reason )
+			$context->msg( 'confirmaccount-email-subj' )->inContentLanguage()->text(),
+			$context->msg( 'confirmaccount-email-body5', $u->getName(), $this->reason )->inContentLanguage()->text()
 		);
 		if ( !$result->isOk() ) {
 			$dbw->rollback();
 			return array( 'accountconf_mailerror',
-				wfMsg( 'mailerror', $context->getOutput()->parse( $result->getWikiText() ) ) );
+				$context->msg( 'mailerror' )->rawParams( $context->getOutput()->parse( $result->getWikiText() ) )->text() );
 		}
 
 		# Clear cache for notice of how many account requests there are
@@ -148,12 +147,12 @@ class AccountConfirmSubmission {
 		# Now create user and check if the name is valid
 		$user = User::newFromName( $this->userName, 'creatable' );
 		if ( !$user ) {
-			return array( 'accountconf_invalid_name', wfMsgHtml( 'noname' ) );
+			return array( 'accountconf_invalid_name', $context->msg( 'noname' )->escaped() );
 		}
 
 		# Check if account name is already in use
 		if ( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
-			return array( 'accountconf_user_exists', wfMsgHtml( 'userexists' ) );
+			return array( 'accountconf_user_exists', $context->msg( 'userexists' )->escaped() );
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
@@ -243,7 +242,7 @@ class AccountConfirmSubmission {
 			$dbw->rollback();
 			# DELETE new rows in case there was a COMMIT somewhere
 			$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
-			return array( 'accountconf_externaldberror', wfMsgHtml( 'externaldberror' ) );
+			return array( 'accountconf_externaldberror', $context->msg( 'externaldberror' )->escaped() );
 		}
 
 		# OK, now remove the request from the queue
@@ -259,36 +258,30 @@ class AccountConfirmSubmission {
 			$msg = "confirmaccount-email-body2-pos{$this->type}";
 			# If the user is in a group and there is a welcome for that group, use it
 			if ( $group && !wfEmptyMsg( $msg ) ) {
-				$ebody = wfMsgExt( $msg, array('parsemag','content'),
-					$user->getName(), $p, $this->reason );
+				$ebody = $context->msg( $msg, $user->getName(), $p, $this->reason )->inContentLanguage()->text();
 			# Use standard if none found...
 			} else {
-				$ebody = wfMsgExt( 'confirmaccount-email-body2',
-					array('parsemag','content'), $user->getName(), $p, $this->reason );
+				$ebody = $context->msg( 'confirmaccount-email-body2',
+					$user->getName(), $p, $this->reason )->inContentLanguage()->text();
 			}
 		} else {
 			$msg = "confirmaccount-email-body-pos{$this->type}";
 			# If the user is in a group and there is a welcome for that group, use it
-			if ( $group && !wfEmptyMsg( $msg ) ) {
-				$ebody = wfMsgExt( $msg, array('parsemag','content'),
-					$user->getName(), $p, $this->reason );
+			if ( $group && !$context->msg( $msg )->isDisabled() ) {
+				$ebody = $context->msg( $msg,
+					$user->getName(), $p, $this->reason )->inContentLanguage()->text();
 			# Use standard if none found...
 			} else {
-				$ebody = wfMsgExt( 'confirmaccount-email-body',
-					array('parsemag','content'), $user->getName(), $p, $this->reason );
+				$ebody = $context->msg( 'confirmaccount-email-body',
+					$user->getName(), $p, $this->reason )->inContentLanguage()->text();
 			}
 		}
 
 		# Actually send out the email (@TODO: rollback on failure including $wgAuth)
-		$result = $user->sendMail( wfMsgForContent( 'confirmaccount-email-subj' ), $ebody );
-		/*
-		if ( !$result->isOk() ) {
-			# DELETE new rows in case there was a COMMIT somewhere
-			$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
-			return array( 'accountconf_mailerror',
-				wfMsg( 'mailerror', $context->getOutput()->parse( $result->getWikiText() ) ) );
-		}
-		*/
+		$result = $user->sendMail(
+			$context->msg( 'confirmaccount-email-subj' )->inContentLanguage()->text(),
+			$ebody
+		);
 
 		# Update user count
 		$ssUpdate = new SiteStatsUpdate( 0, 0, 0, 0, 1 );
@@ -420,13 +413,17 @@ class AccountConfirmSubmission {
 			# Clean up any other categories...
 			$catNS = $wgContLang->getNSText( NS_CATEGORY );
 			$replace = '/\[\[' . preg_quote( $catNS ) . ':([^\]]+)\]\]/i'; // [[Category:x]]
-			$with = "[[{$catNS}:$1|".str_replace('$','\$',$sortKey)."]]"; // [[Category:x|sortkey]]
+			$with = "[[{$catNS}:$1|" . str_replace( '$', '\$', $sortKey ) . "]]"; // [[Category:x|sortkey]]
 			$body = preg_replace( $replace, $with, $body );
 		}
 
 		# Create userpage!
 		$article = new WikiPage( $user->getUserPage() );
-		$article->doEdit( $body, wfMsg('confirmaccount-summary'), EDIT_MINOR );
+		$article->doEdit(
+			$body,
+			wfMessage( 'confirmaccount-summary' )->inContentLanguage()->text(),
+			EDIT_MINOR
+		);
 	}
 
 	protected function createUserTalkPage( User $user ) {
@@ -435,12 +432,17 @@ class AccountConfirmSubmission {
 		if ( $wgAutoWelcomeNewUsers ) {
 			$msg = "confirmaccount-welc-pos{$this->type}";
 			$welcome = wfEmptyMsg( $msg )
-				? wfMsg( 'confirmaccount-welc' )
-				: wfMsg( $msg ); // custom message
+				? wfMessage( 'confirmaccount-welc' )->text()
+				: wfMessage( $msg )->text(); // custom message
 			# Add user welcome message!
 			$article = new WikiPage( $user->getTalkPage() );
-			$article->doEdit( "{$welcome} ~~~~",
-				wfMsg( 'confirmaccount-wsum' ), EDIT_MINOR, false, $this->admin );
+			$article->doEdit(
+				"{$welcome} ~~~~",
+				wfMessage( 'confirmaccount-wsum' )->inContentLanguage()->text(),
+				EDIT_MINOR,
+				false,
+				$this->admin
+			);
 		}
 	}
 }

@@ -76,44 +76,56 @@ class AccountRequestSubmission {
 		# Make sure that basic permissions are checked
 		$block = ConfirmAccount::getAccountRequestBlock( $reqUser );
 		if ( $block ) {
-			return array( 'accountreq_permission_denied', wfMsgHtml( 'badaccess-group0' ) );
+			return array(
+				'accountreq_permission_denied',
+				$context->msg( 'badaccess-group0' )->escaped()
+			);
 		} elseif ( wfReadOnly() ) {
-			return array( 'accountreq_readonly', wfMsgHtml( 'badaccess-group0' ) );
+			return array( 'accountreq_readonly', $context->msg( 'badaccess-group0' )->escaped() );
 		}
 
 		# Now create a dummy user ($u) and check if it is valid
 		if ( $this->userName === '' ) {
-			return array( 'accountreq_no_name', wfMsgHtml( 'noname' ) );
+			return array( 'accountreq_no_name', $context->msg( 'noname' )->escaped() );
 		}
 		$u = User::newFromName( $this->userName, 'creatable' );
 		if ( !$u ) {
-			return array( 'accountreq_invalid_name', wfMsgHtml( 'noname' ) );
+			return array( 'accountreq_invalid_name', $context->msg( 'noname' )->escaped() );
 		}
 		# No request spamming...
 		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', $this->ip );
 			$value = (int)$wgMemc->get( $key );
 			if ( $value > $wgAccountRequestThrottle ) {
-				return array( 'accountreq_throttled',
-					wfMsgExt( 'acct_request_throttle_hit', 'parsemag', $wgAccountRequestThrottle )
+				return array(
+					'accountreq_throttled',
+					$context->msg( 'acct_request_throttle_hit', $wgAccountRequestThrottle )->text()
 				);
 			}
 		}
 		# Make sure user agrees to policy here
 		if ( $formConfig['TermsOfService']['enabled'] && !$this->tosAccepted ) {
-			return array( 'acct_request_skipped_tos', wfMsgHtml( 'requestaccount-agree' ) );
+			return array(
+				'acct_request_skipped_tos',
+				$context->msg( 'requestaccount-agree' )->escaped()
+			);
 		}
 		# Validate email address
 		if ( !Sanitizer::validateEmail( $this->email ) ) {
-			return array( 'acct_request_invalid_email', wfMsgHtml( 'invalidemailaddress' ) );
+			return array(
+				'acct_request_invalid_email',
+				$context->msg( 'invalidemailaddress' )->escaped()
+			);
 		}
 		# Check if biography is long enough
 		if ( $formConfig['Biography']['enabled']
 			&& str_word_count( $this->bio ) < $formConfig['Biography']['minWords'] )
 		{
-			return array( 'acct_request_short_bio',
-				wfMsgExt( 'requestaccount-tooshort', 'parsemag',
-					$wgContLang->formatNum( $formConfig['Biography']['minWords'] ) )
+			$minWords = $formConfig['Biography']['minWords'];
+
+			return array(
+				'acct_request_short_bio',
+				$context->msg( 'requestaccount-tooshort' )->numParams( $minWords )->text()
 			);
 		}
 		# Per security reasons, file dir cannot be pulled from client,
@@ -127,12 +139,15 @@ class AccountRequestSubmission {
 			if ( !$this->attachmentDidNotForget ) {
 				$this->attachmentPrevName = '';
 				$this->attachmentDidNotForget = 0;
-				return array( false, wfMsgHtml( 'requestaccount-resub' ) );
+				return array( false, $context->msg( 'requestaccount-resub' )->escaped() );
 			}
 		}
 		# Check if already in use
 		if ( 0 != $u->idForName() || $wgAuth->userExists( $u->getName() ) ) {
-			return array( 'accountreq_username_exists', wfMsgHtml( 'userexists' ) );
+			return array(
+				'accountreq_username_exists',
+				$context->msg( 'userexists' )->escaped()
+			);
 		}
 		# Set email and real name
 		$u->setEmail( $this->email );
@@ -143,12 +158,18 @@ class AccountRequestSubmission {
 		# Check pending accounts for name use
 		if ( !UserAccountRequest::acquireUsername( $u->getName() ) ) {
 			$dbw->rollback();
-			return array( 'accountreq_username_pending', wfMsgHtml( 'requestaccount-inuse' ) );
+			return array(
+				'accountreq_username_pending',
+				$context->msg( 'requestaccount-inuse' )->escaped()
+			);
 		}
 		# Check if someone else has an account request with the same email
 		if ( !UserAccountRequest::acquireEmail( $u->getEmail() ) ) {
 			$dbw->rollback();
-			return array( 'acct_request_email_exists', wfMsgHtml( 'requestaccount-emaildup' ) );
+			return array(
+				'acct_request_email_exists',
+				$context->msg( 'requestaccount-emaildup' )->escaped()
+			);
 		}
 		# Process upload...
 		if ( $allowFiles && $this->attachmentSrcName ) {
@@ -160,7 +181,7 @@ class AccountRequestSubmission {
 			if ( trim( $this->attachmentSrcName ) == '' || empty( $this->attachmentSize ) ) {
 				$this->attachmentPrevName = '';
 				$dbw->rollback();
-				return array( 'acct_request_empty_file', wfMsgHtml( 'emptyfile' ) );
+				return array( 'acct_request_empty_file', $context->msg( 'emptyfile' )->escaped() );
 			}
 			# Look at the contents of the file; if we can recognize the
 			# type but it's corrupt or data of the wrong type, we should
@@ -168,13 +189,19 @@ class AccountRequestSubmission {
 			if ( !in_array( $finalExt, $wgAccountRequestExts ) ) {
 				$this->attachmentPrevName = '';
 				$dbw->rollback();
-				return array( 'acct_request_bad_file_ext', wfMsgHtml( 'requestaccount-exts' ) );
+				return array(
+					'acct_request_bad_file_ext',
+					$context->msg( 'requestaccount-exts' )->escaped()
+				);
 			}
 			$veri = ConfirmAccount::verifyAttachment( $this->attachmentTempPath, $finalExt );
 			if ( !$veri->isGood() ) {
 				$this->attachmentPrevName = '';
 				$dbw->rollback();
-				return array( 'acct_request_corrupt_file', wfMsgHtml( 'verification-error' ) );
+				return array(
+					'acct_request_corrupt_file',
+					$context->msg( 'verification-error' )->escaped()
+				);
 			}
 			# Start a transaction, move file from temp to account request directory.
 			$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
@@ -185,7 +212,7 @@ class AccountRequestSubmission {
 			if ( !$status->isOk() ) {
 				$dbw->rollback();
 				return array( 'acct_request_file_store_error',
-					wfMsgHtml( 'filecopyerror', $this->attachmentTempPath, $pathRel ) );
+					$context->msg( 'filecopyerror', $this->attachmentTempPath, $pathRel )->escaped() );
 			}
 		}
 		$expires = null; // passed by reference
@@ -221,8 +248,12 @@ class AccountRequestSubmission {
 			if ( isset( $repo ) && isset( $pathRel ) ) { // remove attachment
 				$repo->cleanupBatch( array( array( 'public', $pathRel ) ) );
 			}
-			return array( 'acct_request_mail_failed',
-				wfMsg( 'mailerror', $context->getOutput()->parse( $result->getWikiText() ) ) );
+
+			$param = $context->getOutput()->parse( $result->getWikiText() );
+
+			return array(
+				'acct_request_mail_failed',
+				$context->msg( 'mailerror' )->rawParams( $param )->escaped() );
 		}
 		$dbw->commit();
 

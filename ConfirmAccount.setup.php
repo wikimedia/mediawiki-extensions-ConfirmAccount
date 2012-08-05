@@ -6,7 +6,7 @@ class ConfirmAccountSetup {
 	/**
 	 * Register source code paths.
 	 * This function must NOT depend on any config vars.
-	 * 
+	 *
 	 * @param $classes Array $classes
 	 * @param $messagesFiles Array $messagesFiles
 	 * @return void
