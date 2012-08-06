@@ -4129,6 +4129,7 @@ $messages['tl'] = array(
 Tiyaking nabasa mo na muna ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Paglilingkod]] bago humiling ng isang kuwenta.
 
 Kapag napahintulutan na ang akawnt, padadalhan ka ng isang mensahe ng pagbibigay-alam sa pamamagitan ng isang e-liham at magagamit na ang kuwenta sa [[Special:UserLogin|paglagda]].",
+	'requestaccount-footer' => '',
 	'requestaccount-page' => '{{ns:project}}:Mga Patakaran ng Paglilingkod',
 	'requestaccount-dup' => "'''Paunawa: Nakalagda ka na at may isang ipinatalang akawnt.'''",
 	'requestaccount-leg-user' => 'Akawnt ng tagagamit',
@@ -4149,6 +4150,7 @@ Tiyaking maginhawa ang pakiramdam mo sa paglalathala ng ganyang kabatiran.",
 	'requestaccount-reqtype' => 'Katungkulan:',
 	'requestaccount-level-0' => 'may-akda',
 	'requestaccount-level-1' => 'patnugot',
+	'requestaccount-info' => '(?)',
 	'requestaccount-bio' => 'Pansariling talambuhay (payak na teksto lamang):',
 	'requestaccount-attach' => 'Buod ng mga karanasan sa hanapbuhay (maaaring wala nito):',
 	'requestaccount-notes' => 'Karagdagang mga tala:',
