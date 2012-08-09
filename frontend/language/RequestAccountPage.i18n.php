@@ -1112,6 +1112,10 @@ $messages['fa'] = array(
 	'requestaccount-leg-other' => 'اطلاعات دیگر',
 	'requestaccount-real' => 'نام واقعی:',
 	'requestaccount-same' => '(همان نام واقعی)',
+	'requestaccount-email' => 'نشانی پست الکترونیکی:',
+	'requestaccount-reqtype' => 'موقعیت:',
+	'requestaccount-level-0' => 'مؤلف',
+	'requestaccount-level-1' => 'ویرایشگر',
 );
 
 /** Finnish (suomi)
@@ -2244,6 +2248,21 @@ Sawijining layang konfirmasi wis dikirim menyang alamat layang-e panjenengan.',
 Alamat e-mailé wis dikonfirmasi. Panjenengan bisa konfirmasi panyuwunan iki ing "$2".',
 	'acct_request_throttle_hit' => 'Nuwun sèwu, panjenengan wis nyuwun {{PLURAL:$1|1 akun|$1 akun}}.
 Panjenengan ora bisa nyuwun rékening anyar manèh.',
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'requestaccount-leg-user' => 'მომხმარებლის ანგარიში',
+	'requestaccount-leg-person' => 'პირადი ინფორმაცია',
+	'requestaccount-leg-other' => 'სხვა ინფორმაცია',
+	'requestaccount-real' => 'ნამდვილი სახელი:',
+	'requestaccount-email' => 'ელ. ფოსტის მისამართი:',
+	'requestaccount-reqtype' => 'პოზიცია:',
+	'requestaccount-level-0' => 'ავტორი',
+	'requestaccount-level-1' => 'რედაქტორი',
+	'requestaccount-attach' => 'რეზიუმე ან CV (არასავალდებულო):',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -3568,6 +3587,21 @@ $messages['sah'] = array(
 	'requestaccount-notes' => 'Эбии этиилэр:',
 	'requestaccount-urls' => 'Ситим-сирдэр тиһиктэрэ, баар буоллаҕына (устуруока аайы биирдии):',
 	'requestaccount-agree' => 'Аатыҥ сөпкө суруллубутун бигэргэт уонна Өҥө оҥоруу усулуобуйатын кытта сөбүлэһэргин биллэр.',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'requestaccount-leg-user' => 'පරිශීලක ගිණුම',
+	'requestaccount-leg-person' => 'පුද්ගලික තොරතුරු',
+	'requestaccount-leg-other' => 'පරිශීලකගේ තොරතුරු',
+	'requestaccount-leg-tos' => 'සේවාවේ කොන්දේසි',
+	'requestaccount-real' => 'සැබෑ නාමය:',
+	'requestaccount-email' => 'විද්‍යුත්-තැපැල් ලිපිනය:',
+	'requestaccount-reqtype' => 'තරාතිරම:',
+	'requestaccount-level-0' => 'කතෘ',
+	'requestaccount-level-1' => 'සංස්කාරක',
 );
 
 /** Slovak (slovenčina)

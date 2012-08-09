@@ -567,12 +567,14 @@ $messages['eu'] = array(
 /** Persian (فارسی)
  * @author Mjbmr
  * @author Reza1615
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'usercredentials' => 'مشخصات کاربری',
 	'usercredentials-user' => 'نام کاربری:',
 	'usercredentials-leg-user' => 'حساب کاربری',
 	'usercredentials-leg-person' => 'اطلاعات شخصی',
+	'usercredentials-leg-other' => 'اطلاعات دیگر',
 	'usercredentials-leg-ip' => 'اطلاعات نشانی آی‌پی',
 	'usercredentials-email' => 'رایانامه:',
 	'usercredentials-real' => 'نام واقعی:',
@@ -580,7 +582,7 @@ $messages['fa'] = array(
 	'usercredentials-attach' => 'سوابق و رزومه:',
 	'usercredentials-notes' => 'یادداشت‌های اضافی:',
 	'usercredentials-urls' => 'فهرست وب‌گاه‌ها:',
-	'usercredentials-ip' => 'آدرس آی‌پی اصلی:',
+	'usercredentials-ip' => 'نشانی آی‌پی اصلی:',
 	'usercredentials-xff' => 'ایکس-فرستاده شد اصلی برای:',
 	'usercredentials-agent' => 'یوزر-ایجنت اصلی:',
 	'usercredentials-member' => 'دسترسی‌ها:',
@@ -1079,6 +1081,23 @@ $messages['jv'] = array(
 	'usercredentials-urls' => 'Daftar situs-situs wèb:',
 	'usercredentials-ip' => 'Alamat IP asli:',
 	'usercredentials-member' => 'Hak-hak:',
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'usercredentials-user' => 'მომხმარებლის სახელი:',
+	'usercredentials-leg-user' => 'მომხმარებლის ანგარიში',
+	'usercredentials-leg-person' => 'პირადი ინფორმაცია',
+	'usercredentials-leg-other' => 'სხვა ინფორმაცია',
+	'usercredentials-leg-ip' => 'IP მისამართის მონაცემი',
+	'usercredentials-email' => 'ელ. ფოსტა:',
+	'usercredentials-real' => 'ნამდვილი სახელი:',
+	'usercredentials-bio' => 'ბიოგრაფია:',
+	'usercredentials-attach' => 'რეზიუმე/CV:',
+	'usercredentials-urls' => 'ვებ-გვერდების სია:',
+	'usercredentials-member' => 'უფლებები:',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -1769,6 +1788,19 @@ $messages['ru'] = array(
  */
 $messages['scn'] = array(
 	'usercredentials-email' => 'Nnirizzu email:',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'usercredentials-user' => 'පරිශීලක නාමය:',
+	'usercredentials-leg-user' => 'පරිශීලක ගිණුම',
+	'usercredentials-leg-person' => 'පුද්ගලික තොරතුරු',
+	'usercredentials-leg-other' => 'වෙනත් තොරතුරු',
+	'usercredentials-email' => 'විද්‍යුත් තැපෑල:',
+	'usercredentials-real' => 'සැබෑ නාමය:',
+	'usercredentials-bio' => 'චරිතාපදානය:',
 );
 
 /** Slovak (slovenčina)

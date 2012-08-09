@@ -2059,10 +2059,20 @@ $messages['ext'] = array(
  */
 $messages['fa'] = array(
 	'confirmaccount-real-q' => 'نام',
+	'confirmaccount-email-q' => 'پست الکترونیکی',
 	'confirmaccount-review' => 'بازبینی',
+	'confirmaccount-leg-user' => 'حساب کاربری',
+	'confirmaccount-leg-person' => 'اطلاعات شخصی',
+	'confirmaccount-leg-other' => 'اطلاعات دیگر',
+	'confirmaccount-leg-ip' => 'اطلاعات نشانی آی‌پی',
+	'confirmaccount-name' => 'نام کاربری',
+	'confirmaccount-real' => 'نام:',
+	'confirmaccount-email' => 'پست الکترونیکی:',
 	'confirmaccount-reqtype' => 'موقعیت:',
+	'confirmaccount-pos-0' => 'مؤلف',
 	'confirmaccount-pos-1' => 'ویرایشگر',
 	'confirmaccount-noreason' => '(هیچ)',
+	'confirmaccount-ip' => 'نشانی آی‌پی:',
 );
 
 /** Finnish (suomi)
@@ -3910,6 +3920,32 @@ $messages['jv'] = array(
 	'confirmaccount-summary' => 'Nggawé kaca pangganggo karo biografiné panganggo anyar.',
 	'confirmaccount-wsum' => 'Sugeng rawuh!',
 	'confirmaccount-email-subj' => 'Panyuwunan rékening ing {{SITENAME}}',
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'confirmaccount-real-q' => 'სახელი',
+	'confirmaccount-email-q' => 'ელ. ფოსტა',
+	'confirmaccount-bio-q' => 'ბიოგრაფია',
+	'confirmaccount-review' => 'გადახედვა',
+	'confirmaccount-leg-user' => 'მომხმარებლის ანგარიში',
+	'confirmaccount-leg-other' => 'სხვა ინფორმაცია',
+	'confirmaccount-leg-ip' => 'IP მისამართის მონაცემი',
+	'confirmaccount-name' => 'მომხმარებლის სახელი',
+	'confirmaccount-real' => 'სახელი:',
+	'confirmaccount-email' => 'ელ. ფოსტა:',
+	'confirmaccount-reqtype' => 'პოზიცია:',
+	'confirmaccount-pos-0' => 'ავტორი',
+	'confirmaccount-pos-1' => 'რედაქტორი',
+	'confirmaccount-bio' => 'ბიოგრაფია:',
+	'confirmaccount-attach' => 'რეზიუმე/CV:',
+	'confirmaccount-urls' => 'ვებ-გვერდების სია:',
+	'confirmaccount-noreason' => '(არა)',
+	'confirmaccount-ip' => 'IP მისამართი:',
+	'confirmaccount-submit' => 'დადასტურება',
+	'confirmaccount-wsum' => 'კეთილი იყოს თქვენი მობრძანება!',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -6273,6 +6309,24 @@ $messages['scn'] = array(
 	'confirmaccount-real' => 'Nomu:',
 	'confirmaccount-email' => 'Nnirizzu email:',
 	'confirmaccount-noreason' => '(nuddu)',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'confirmaccount-real-q' => 'නම',
+	'confirmaccount-email-q' => 'විද්‍යුත් තැපෑල',
+	'confirmaccount-bio-q' => 'චරිතාපදානය',
+	'confirmaccount-name' => 'පරිශීලක නාමය',
+	'confirmaccount-real' => 'නම:',
+	'confirmaccount-email' => 'විද්‍යුත් තැපෑල:',
+	'confirmaccount-reqtype' => 'තරාතිරම:',
+	'confirmaccount-pos-0' => 'කතෘ',
+	'confirmaccount-pos-1' => 'සංස්කාරක',
+	'confirmaccount-bio' => 'චරිතාපදානය:',
+	'confirmaccount-noreason' => '(කිසිවක් නොමැත)',
+	'confirmaccount-submit' => 'තහවුරු කරන්න',
 );
 
 /** Slovak (slovenčina)
