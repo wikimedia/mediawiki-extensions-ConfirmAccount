@@ -1089,6 +1089,7 @@ $messages['jv'] = array(
 $messages['ka'] = array(
 	'usercredentials-user' => 'მომხმარებლის სახელი:',
 	'usercredentials-leg-user' => 'მომხმარებლის ანგარიში',
+	'usercredentials-leg-areas' => 'ინტერესების ძირითადი სფერო',
 	'usercredentials-leg-person' => 'პირადი ინფორმაცია',
 	'usercredentials-leg-other' => 'სხვა ინფორმაცია',
 	'usercredentials-leg-ip' => 'IP მისამართის მონაცემი',
@@ -1096,6 +1097,7 @@ $messages['ka'] = array(
 	'usercredentials-real' => 'ნამდვილი სახელი:',
 	'usercredentials-bio' => 'ბიოგრაფია:',
 	'usercredentials-attach' => 'რეზიუმე/CV:',
+	'usercredentials-notes' => 'დამატებითი შენიშვნები:',
 	'usercredentials-urls' => 'ვებ-გვერდების სია:',
 	'usercredentials-member' => 'უფლებები:',
 );
