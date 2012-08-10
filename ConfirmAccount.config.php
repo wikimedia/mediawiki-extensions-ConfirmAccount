@@ -81,20 +81,20 @@ $wgConfirmAccountCaptchas = true;
 $wgConfirmAccountFSRepos = array(
 	'accountreqs' => array( # Location of attached files for pending requests
 		'name'       => 'accountreqs',
-		'directory'  => isset($wgFileStore['accountreqs']) ?
+		'directory'  => isset( $wgFileStore['accountreqs'] ) ?
 			$wgFileStore['accountreqs']['directory'] : "{$IP}/images/accountreqs",
-		'url'        => isset($wgFileStore['accountreqs']) ?
+		'url'        => isset( $wgFileStore['accountreqs'] ) ?
 			$wgFileStore['accountreqs']['url'] : null,
-		'hashLevels' => isset($wgFileStore['accountreqs']) ?
+		'hashLevels' => isset( $wgFileStore['accountreqs'] ) ?
 			$wgFileStore['accountreqs']['hash'] : 3
 	),
 	'accountcreds' => array( # Location of credential files
 		'name'       => 'accountcreds',
-		'directory'  => isset($wgFileStore['accountcreds']) ?
+		'directory'  => isset( $wgFileStore['accountcreds'] ) ?
 			$wgFileStore['accountcreds']['directory'] : "{$IP}/images/accountcreds",
-		'url'        => isset($wgFileStore['accountcreds']) ?
+		'url'        => isset( $wgFileStore['accountcreds'] ) ?
 			$wgFileStore['accountcreds']['url'] : null,
-		'hashLevels' => isset($wgFileStore['accountcreds']) ?
+		'hashLevels' => isset( $wgFileStore['accountcreds'] ) ?
 			$wgFileStore['accountcreds']['hash'] : 3
 	)
 );

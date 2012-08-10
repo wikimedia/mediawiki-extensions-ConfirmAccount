@@ -11,7 +11,7 @@ class ConfirmAccountUIHooks {
 		$context = RequestContext::getMain();
 		# Add a link to RequestAccount from UserLogin
 		if ( !$context->getUser()->isAllowed( 'createaccount' ) ) {
-			$template->set( 'header', wfMsgExt( 'requestaccount-loginnotice', 'parse' ) );
+			$template->set( 'header', $context->msg( 'requestaccount-loginnotice' )->parseAsBlock() );
 
 			$context->getOutput()->addModules( 'ext.confirmAccount' ); // CSS
 		}
@@ -25,9 +25,9 @@ class ConfirmAccountUIHooks {
 	 */
 	public static function setRequestLoginLinks( array &$personal_urls, &$title ) {
 		if ( isset( $personal_urls['anonlogin'] ) ) {
-			$personal_urls['anonlogin']['text'] = wfMsgHtml( 'nav-login-createaccount' );
+			$personal_urls['anonlogin']['text'] = wfMessage( 'nav-login-createaccount' )->escaped();
 		} elseif ( isset( $personal_urls['login'] ) ) {
-			$personal_urls['login']['text'] = wfMsgHtml( 'nav-login-createaccount' );
+			$personal_urls['login']['text'] = wfMessage( 'nav-login-createaccount' )->escaped();
 		}
 		return true;
 	}
@@ -41,7 +41,7 @@ class ConfirmAccountUIHooks {
 		# If an account is made with name X, and one is pending with name X
 		# we will have problems if the pending one is later confirmed
 		if ( !UserAccountRequest::acquireUsername( $user->getName() ) ) {
-			$abortError = wfMsgHtml( 'requestaccount-inuse' );
+			$abortError = wfMessage( 'requestaccount-inuse' )->escaped();
 			return false;
 		}
 		return true;
@@ -66,9 +66,9 @@ class ConfirmAccountUIHooks {
 		}
 		$count = ConfirmAccount::getOpenEmailConfirmedCount( '*' );
 		if ( $count > 0 ) {
-			$out->prependHtml( // parsemag for PLURAL
+			$out->prependHtml(
 				'<div id="mw-confirmaccount-msg" class="plainlinks mw-confirmaccount-bar">' .
-				$out->parse( wfMsgExt( 'confirmaccount-newrequests', 'parsemag', $count ), false ) .
+				$context->msg( 'confirmaccount-newrequests' )->numParams( $count )->parse() .
 				'</div>'
 			);
 
@@ -83,7 +83,7 @@ class ConfirmAccountUIHooks {
 	 * @return bool
 	 */
 	public static function confirmAccountAdminLinks( &$admin_links_tree ) {
-		$users_section = $admin_links_tree->getSection( wfMsgHtml( 'adminlinks_users' ) );
+		$users_section = $admin_links_tree->getSection( wfMessage( 'adminlinks_users' )->escaped() );
 		$extensions_row = $users_section->getRow( 'extensions' );
 
 		if ( is_null( $extensions_row ) ) {

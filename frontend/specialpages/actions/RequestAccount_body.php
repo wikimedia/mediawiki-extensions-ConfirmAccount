@@ -95,7 +95,7 @@ class RequestAccountPage extends SpecialPage {
 		$this->mForgotAttachment = $forgotFile;
 
 		$out = $this->getOutput();
-		$out->setPagetitle( wfMsgHtml( "requestaccount" ) );
+		$out->setPagetitle( $this->msg( "requestaccount" )->escaped() );
 		# Output failure message if any
 		if ( $msg ) {
 			$out->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
@@ -110,23 +110,23 @@ class RequestAccountPage extends SpecialPage {
 		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
 			'action' => $this->getTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
 
-		$form .= '<fieldset><legend>' . wfMsgHtml( 'requestaccount-leg-user' ) . '</legend>';
-		$form .= wfMsgExt( 'requestaccount-acc-text', 'parse' ) . "\n";
+		$form .= '<fieldset><legend>' . $this->msg( 'requestaccount-leg-user' )->escaped() . '</legend>';
+		$form .= $this->msg( 'requestaccount-acc-text' )->parseAsBlock() . "\n";
 		$form .= '<table cellpadding=\'4\'>';
 		if ( $this->hasItem( 'UserName' ) ) {
-			$form .= "<tr><td>" . Xml::label( wfMsgHtml( 'username' ), 'wpUsername' ) . "</td>";
+			$form .= "<tr><td>" . Xml::label( $this->msg( 'username' )->text(), 'wpUsername' ) . "</td>";
 			$form .= "<td>" . Xml::input( 'wpUsername', 30, $this->mUsername, array( 'id' => 'wpUsername' ) ) . "</td></tr>\n";
 		} else {
-			$form .= "<tr><td>" . wfMsgHtml( 'username' ) . "</td>";
-			$form .= "<td>" . wfMsgHtml( 'requestaccount-same' ) . "</td></tr>\n";
+			$form .= "<tr><td>" . $this->msg( 'username' )->escaped() . "</td>";
+			$form .= "<td>" . $this->msg( 'requestaccount-same' )->escaped() . "</td></tr>\n";
 		}
-		$form .= "<tr><td>" . Xml::label( wfMsgHtml( 'requestaccount-email' ), 'wpEmail' ) . "</td>";
+		$form .= "<tr><td>" . Xml::label( $this->msg( 'requestaccount-email' )->text(), 'wpEmail' ) . "</td>";
 		$form .= "<td>" . Xml::input( 'wpEmail', 30, $this->mEmail, array( 'id' => 'wpEmail' ) ) . "</td></tr>\n";
 		if ( count( $wgAccountRequestTypes ) > 1 ) {
-			$form .= "<tr><td>" . wfMsgHtml( 'requestaccount-reqtype' ) . "</td><td>";
+			$form .= "<tr><td>" . $this->msg( 'requestaccount-reqtype' )->escaped() . "</td><td>";
 			$options = array();
 			foreach ( $wgAccountRequestTypes as $i => $params ) {
-				$options[] = Xml::option( wfMsg( "requestaccount-level-$i" ), $i, ( $i == $this->mType ) );
+				$options[] = Xml::option( $this->msg( "requestaccount-level-$i" )->text(), $i, ( $i == $this->mType ) );
 			}
 			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
 			$form .= implode( "\n", $options );
@@ -138,8 +138,8 @@ class RequestAccountPage extends SpecialPage {
 		$userAreas = ConfirmAccount::getUserAreaConfig();
 		if ( $this->hasItem( 'AreasOfInterest' ) && count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
-			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-areas' ) . '</legend>';
-			$form .=  wfMsgExt( 'requestaccount-areas-text', 'parse' ) . "\n";
+			$form .= '<legend>' . $this->msg( 'requestaccount-leg-areas' )->escaped() . '</legend>';
+			$form .=  $this->msg( 'requestaccount-areas-text' )->parseAsBlock() . "\n";
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
 			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
@@ -153,7 +153,7 @@ class RequestAccountPage extends SpecialPage {
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
 				if ( $conf['project'] != '' ) {
 					$pg = Linker::link( Title::newFromText( $conf['project'] ),
-						wfMsgHtml( 'requestaccount-info' ), array(), array(), "known" );
+						$this->msg( 'requestaccount-info' )->escaped(), array(), array(), "known" );
 				} else {
 					$pg = '';
 				}
@@ -167,19 +167,19 @@ class RequestAccountPage extends SpecialPage {
 
 		if ( $this->hasItem( 'Biography' ) || $this->hasItem( 'RealName' ) ) {
 			$form .= '<fieldset>';
-			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-person' ) . '</legend>';
+			$form .= '<legend>' . $this->msg( 'requestaccount-leg-person' )->escaped() . '</legend>';
 			if ( $this->hasItem( 'RealName' ) ) {
 				$form .= '<table cellpadding=\'4\'>';
-				$form .= "<tr><td>" . Xml::label( wfMsgHtml( 'requestaccount-real' ), 'wpRealName' ) . "</td>";
+				$form .= "<tr><td>" . Xml::label( $this->msg( 'requestaccount-real' )->text(), 'wpRealName' ) . "</td>";
 				$form .= "<td>" . Xml::input( 'wpRealName', 35, $this->mRealName, array( 'id' => 'wpRealName' ) ) . "</td></tr>\n";
 				$form .= '</table>';
 			}
 			if ( $this->hasItem( 'Biography' ) ) {
 				if ( $wgMakeUserPageFromBio ) {
-					$form .= wfMsgExt( 'requestaccount-bio-text-i', 'parse' ) . "\n";
+					$form .= $this->msg( 'requestaccount-bio-text-i' )->parseAsBlock() . "\n";
 				}
-				$form .= wfMsgExt( 'requestaccount-bio-text', 'parse' ) . "\n";
-				$form .= "<p>" . wfMsgWikiHtml( 'requestaccount-bio' ) . "\n";
+				$form .= $this->msg( 'requestaccount-bio-text' )->parseAsBlock() . "\n";
+				$form .= "<p>" . $this->msg( 'requestaccount-bio' )->parse() . "\n";
 				$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 					htmlspecialchars( $this->mBio ) . "</textarea></p>\n";
 			}
@@ -188,21 +188,21 @@ class RequestAccountPage extends SpecialPage {
 
 		if ( $this->hasItem( 'CV' ) || $this->hasItem( 'Notes' ) || $this->hasItem( 'Links' ) ) {
 			$form .= '<fieldset>';
-			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-other' ) . '</legend>';
-			$form .= wfMsgExt( 'requestaccount-ext-text', 'parse' ) . "\n";
+			$form .= '<legend>' . $this->msg( 'requestaccount-leg-other' )->escaped() . '</legend>';
+			$form .= $this->msg( 'requestaccount-ext-text' )->parseAsBlock() . "\n";
 			if ( $this->hasItem( 'CV' ) ) {
-				$form .= "<p>" . wfMsgHtml( 'requestaccount-attach' ) . " ";
+				$form .= "<p>" . $this->msg( 'requestaccount-attach' )->escaped() . " ";
 				$form .= Xml::input( 'wpUploadFile', 35, '',
 					array( 'id' => 'wpUploadFile', 'type' => 'file' ) ) . "</p>\n";
 			}
 			if ( $this->hasItem( 'Notes' ) ) {
-				$form .= "<p>" . wfMsgHtml( 'requestaccount-notes' ) . "\n";
+				$form .= "<p>" . $this->msg( 'requestaccount-notes' )->escaped() . "\n";
 				$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%;background-color:#f9f9f9;'>" .
 					htmlspecialchars( $this->mNotes ) .
 					"</textarea></p>\n";
 			}
 			if ( $this->hasItem( 'Links' ) ) {
-				$form .= "<p>" . wfMsgHtml( 'requestaccount-urls' ) . "\n";
+				$form .= "<p>" . $this->msg( 'requestaccount-urls' )->escaped() . "\n";
 				$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
 					htmlspecialchars( $this->mUrls ) .
 					"</textarea></p>\n";
@@ -212,9 +212,9 @@ class RequestAccountPage extends SpecialPage {
 
 		if ( $this->hasItem( 'TermsOfService' ) ) {
 			$form .= '<fieldset>';
-			$form .= '<legend>' . wfMsgHtml( 'requestaccount-leg-tos' ) . '</legend>';
+			$form .= '<legend>' . $this->msg( 'requestaccount-leg-tos' )->escaped() . '</legend>';
 			$form .= "<p>" . Xml::check( 'wpToS', $this->mToS, array( 'id' => 'wpToS' ) ) .
-				' <label for="wpToS">' . wfMsgExt( 'requestaccount-tos', array( 'parseinline' ) ) . "</label></p>\n";
+				' <label for="wpToS">' . $this->msg( 'requestaccount-tos' )->parse() . "</label></p>\n";
 			$form .= '</fieldset>';
 		}
 
@@ -226,7 +226,7 @@ class RequestAccountPage extends SpecialPage {
 			$captcha = new $wgCaptchaClass;
 			# Hook point to add captchas
 			$form .= '<fieldset>';
-			$form .= wfMsgExt( 'captcha-createaccount', 'parse' );
+			$form .= $this->msg( 'captcha-createaccount' )->parseAsBlock();
 			$form .= $captcha->getForm();
 			$form .= '</fieldset>';
 		}
@@ -234,7 +234,7 @@ class RequestAccountPage extends SpecialPage {
 		$form .= Html::Hidden( 'wpEditToken', $reqUser->getEditToken() ) . "\n";
 		$form .= Html::Hidden( 'attachment', $this->mPrevAttachment ) . "\n";
 		$form .= Html::Hidden( 'forgotAttachment', $this->mForgotAttachment ) . "\n";
-		$form .= "<p>" . Xml::submitButton( wfMsgHtml( 'requestaccount-submit' ) ) . "</p>";
+		$form .= "<p>" . Xml::submitButton( $this->msg( 'requestaccount-submit' )->text() ) . "</p>";
 		$form .= Xml::closeElement( 'form' );
 
 		$out->addHTML( $form );
@@ -253,7 +253,7 @@ class RequestAccountPage extends SpecialPage {
 		$name = trim( $this->mUsername );
 		$u = User::newFromName( $name, 'creatable' );
 		if ( !$u ) {
-			$this->showForm( wfMsgHtml( 'noname' ) );
+			$this->showForm( $this->msg( 'noname' )->escaped() );
 			return;
 		}
 		# Set some additional data so the AbortNewAccount hook can be
@@ -327,7 +327,7 @@ class RequestAccountPage extends SpecialPage {
 
 	protected function showSuccess() {
 		$out = $this->getOutput();
-		$out->setPagetitle( wfMsg( "requestaccount" ) );
+		$out->setPagetitle( $this->msg( "requestaccount" )->escaped() );
 		$out->addWikiMsg( 'requestaccount-sent' );
 		$out->returnToMain();
 	}
@@ -364,9 +364,9 @@ class RequestAccountPage extends SpecialPage {
 				$target = new MailAddress( $wgConfirmAccountContact );
 				$source = new MailAddress( $wgPasswordSender, $wgPasswordSenderName );
 				$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
-				$subject = wfMsgForContent( 'requestaccount-email-subj-admin' );
-				$body = wfMsgForContent(
-					'requestaccount-email-body-admin', $name, $title->getFullUrl() );
+				$subject = $this->msg( 'requestaccount-email-subj-admin' )->inContentLanguage()->escaped();
+				$body = $this->msg(
+					'requestaccount-email-body-admin', $name )->rawParams( $title->getFullUrl() )->inContentLanguage()->escaped();
 				# Actually send the email...
 				$result = UserMailer::send( $target, $source, $subject, $body );
 				if ( !$result->isOK() ) {
