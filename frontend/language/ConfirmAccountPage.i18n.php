@@ -4963,7 +4963,13 @@ Terdapat senarai hubungan dalam tapak yang boleh anda gunakan jika anda ingin me
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
+	'confirmaccount-real-q' => 'Isem',
 	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-bio-q' => 'Bijografija',
+	'confirmaccount-showopen' => 'rikjesti miftuħa',
+	'confirmaccount-showrej' => 'rikjesti rifjutati',
+	'confirmaccount-showheld' => 'rikjesti mwaqqfa',
+	'confirmaccount-showexp' => 'rikjesti skaduti',
 	'confirmaccount-name' => 'Isem tal-utent',
 	'confirmaccount-email' => 'E-mail:',
 );
@@ -6327,6 +6333,14 @@ $messages['si'] = array(
 	'confirmaccount-real-q' => 'නම',
 	'confirmaccount-email-q' => 'විද්‍යුත් තැපෑල',
 	'confirmaccount-bio-q' => 'චරිතාපදානය',
+	'confirmaccount-showexp' => 'ඉකුත්වූ අයදුම්',
+	'confirmaccount-review' => 'නිරීක්ෂණය',
+	'confirmaccount-all' => '(සියලු පෝලිම් පෙන්වන්න)',
+	'confirmaccount-type' => 'පෝලිම:',
+	'confirmaccount-q-stale' => 'ඉකුත්වූ අයදුම්',
+	'confirmaccount-leg-user' => 'පරිශීලක ගිණුම',
+	'confirmaccount-leg-person' => 'පුද්ගලික තොරතුරු',
+	'confirmaccount-leg-other' => 'වෙනත් තොරතුරු',
 	'confirmaccount-name' => 'පරිශීලක නාමය',
 	'confirmaccount-real' => 'නම:',
 	'confirmaccount-email' => 'විද්‍යුත් තැපෑල:',
@@ -6335,6 +6349,7 @@ $messages['si'] = array(
 	'confirmaccount-pos-1' => 'සංස්කාරක',
 	'confirmaccount-bio' => 'චරිතාපදානය:',
 	'confirmaccount-noreason' => '(කිසිවක් නොමැත)',
+	'confirmaccount-ip' => 'IP ලිපිනය:',
 	'confirmaccount-submit' => 'තහවුරු කරන්න',
 );
 

@@ -1405,7 +1405,14 @@ Pastikan namanya dieja dengan betul.',
  */
 $messages['mt'] = array(
 	'usercredentials-user' => 'Isem tal-utent:',
+	'usercredentials-leg-user' => 'Kont tal-utent',
 	'usercredentials-email' => 'E-mail:',
+	'usercredentials-bio' => 'Bijografija',
+	'usercredentials-attach' => 'Kurrikulu',
+	'usercredentials-notes' => 'Noti oħra:',
+	'usercredentials-urls' => "Lista ta' siti elettroniċi:",
+	'usercredentials-ip' => 'Indirizz IP oriġinali',
+	'usercredentials-member' => 'Drittijiet:',
 );
 
 /** Erzya (эрзянь)
@@ -1804,6 +1811,7 @@ $messages['si'] = array(
 	'usercredentials-email' => 'විද්‍යුත් තැපෑල:',
 	'usercredentials-real' => 'සැබෑ නාමය:',
 	'usercredentials-bio' => 'චරිතාපදානය:',
+	'usercredentials-member' => 'හිමිකම්:',
 );
 
 /** Slovak (slovenčina)
