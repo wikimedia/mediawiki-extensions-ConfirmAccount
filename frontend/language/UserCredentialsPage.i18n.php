@@ -821,6 +821,7 @@ $messages['he'] = array(
 /** Hindi (हिन्दी)
  * @author Kaustubh
  * @author Kiranmayee
+ * @author Siddhartha Ghai
  * @author आलोक
  */
 $messages['hi'] = array(
@@ -830,13 +831,13 @@ $messages['hi'] = array(
 	'usercredentials-text' => 'नीचे चुने हुए सदस्य खाते के प्रमाणित किये हुए क्रेडेन्शियल्स दिये हुए हैं।',
 	'usercredentials-leg-user' => 'सदस्य खाता',
 	'usercredentials-leg-areas' => 'पसंद के मुख्य एरिया',
-	'usercredentials-leg-person' => 'वैयक्तिक ज़ानकारी',
-	'usercredentials-leg-other' => 'अन्य ज़ानकारी',
+	'usercredentials-leg-person' => 'वैयक्तिक जानकारी',
+	'usercredentials-leg-other' => 'अन्य जानकारी',
 	'usercredentials-email' => 'इ-मेल:',
 	'usercredentials-real' => 'असली नाम:',
 	'usercredentials-bio' => 'चरित्र:',
 	'usercredentials-attach' => 'रिज़्यूम/सीवी:',
-	'usercredentials-notes' => 'अधिक ज़ानकारी:',
+	'usercredentials-notes' => 'अधिक जानकारी:',
 	'usercredentials-urls' => 'वेबसाईट्स की सूची:',
 	'usercredentials-ip' => 'मूल आईपी एड्रेस:',
 	'usercredentials-member' => 'अधिकार:',

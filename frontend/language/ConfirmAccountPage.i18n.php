@@ -2894,6 +2894,7 @@ $2
 /** Hindi (हिन्दी)
  * @author Kaustubh
  * @author Kiranmayee
+ * @author Siddhartha Ghai
  * @author आलोक
  */
 $messages['hi'] = array(
@@ -2924,8 +2925,8 @@ $messages['hi'] = array(
 शायद वह पहले से देखी गई हो।',
 	'confirmaccount-leg-user' => 'सदस्य खाता',
 	'confirmaccount-leg-areas' => 'मुख्य पसंद',
-	'confirmaccount-leg-person' => 'वैयक्तिक ज़ानकारी',
-	'confirmaccount-leg-other' => 'अन्य ज़ानकारी',
+	'confirmaccount-leg-person' => 'वैयक्तिक जानकारी',
+	'confirmaccount-leg-other' => 'अन्य जानकारी',
 	'confirmaccount-name' => 'सदस्यनाम',
 	'confirmaccount-real' => 'नाम:',
 	'confirmaccount-email' => 'इ-मेल:',
@@ -2934,7 +2935,7 @@ $messages['hi'] = array(
 	'confirmaccount-pos-1' => 'संपादक',
 	'confirmaccount-bio' => 'चरित्र:',
 	'confirmaccount-attach' => 'रिज्यूम/सीव्ही:',
-	'confirmaccount-notes' => 'अधिक ज़ानकारी:',
+	'confirmaccount-notes' => 'अधिक जानकारी:',
 	'confirmaccount-urls' => 'वेबसाईट्स की सूची:',
 	'confirmaccount-none-p' => '(दिया नहीं हैं)',
 	'confirmaccount-confirm' => 'यह माँग स्वीकारने, प्रलंबित रखने या अस्वीकृत करने के लिये नीचे दिये ओप्शन चुनें:',

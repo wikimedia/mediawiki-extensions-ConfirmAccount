@@ -1594,6 +1594,7 @@ $3
 /** Hindi (हिन्दी)
  * @author Kaustubh
  * @author Kiranmayee
+ * @author Siddhartha Ghai
  * @author आलोक
  */
 $messages['hi'] = array(
@@ -1602,8 +1603,8 @@ $messages['hi'] = array(
 	'requestaccount-dup' => "'''सूचना: आपने पहले से पंजीकृत खाते से लॉग इन किया हुआ हैं।'''",
 	'requestaccount-leg-user' => 'सदस्य खाता',
 	'requestaccount-leg-areas' => 'मुख्य पसंद',
-	'requestaccount-leg-person' => 'वैयक्तिक ज़ानकारी',
-	'requestaccount-leg-other' => 'अन्य ज़ानकारी',
+	'requestaccount-leg-person' => 'वैयक्तिक जानकारी',
+	'requestaccount-leg-other' => 'अन्य जानकारी',
 	'requestaccount-areas-text' => 'नीचे दिये हुए विषयोंसे आपके पसंदके तथा आप जिसमें माहिर हैं ऐसे विषय चुनें।',
 	'requestaccount-real' => 'असली नाम:',
 	'requestaccount-same' => '(असली नाम ही हैं)',
@@ -1613,7 +1614,7 @@ $messages['hi'] = array(
 	'requestaccount-level-1' => 'संपादक',
 	'requestaccount-bio' => 'वैयक्तिक चरित्र:',
 	'requestaccount-attach' => 'रिज़्यूम या सीव्ही (वैकल्पिक):',
-	'requestaccount-notes' => 'अधिक ज़ानकारी:',
+	'requestaccount-notes' => 'अधिक जानकारी:',
 	'requestaccount-urls' => 'वेबसाईट्स की सूची, अगर हैं तो (एक लाईनमें एक):',
 	'requestaccount-agree' => 'आपने दिया हुआ खुद का असली नाम सहीं हैं और आपको शर्ते और नियम मान्य हैं ऐसा सर्टिफाई करें।',
 	'requestaccount-inuse' => 'आपने दिया हुआ सदस्यनाम पहले ही किसीने पूछा हैं।',
