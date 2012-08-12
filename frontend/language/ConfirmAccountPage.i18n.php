@@ -6348,9 +6348,15 @@ $messages['si'] = array(
 	'confirmaccount-pos-0' => 'කතෘ',
 	'confirmaccount-pos-1' => 'සංස්කාරක',
 	'confirmaccount-bio' => 'චරිතාපදානය:',
+	'confirmaccount-notes' => 'අමතර සටහන්:',
+	'confirmaccount-urls' => 'වෙබ් අඩවි ලැයිස්තුව:',
+	'confirmaccount-none-p' => '(සපයා නොමැත)',
+	'confirmaccount-econf' => '(තහවුරු කෙරිණි)',
 	'confirmaccount-noreason' => '(කිසිවක් නොමැත)',
+	'confirmaccount-hold' => 'රඳවාගන්න',
 	'confirmaccount-ip' => 'IP ලිපිනය:',
 	'confirmaccount-submit' => 'තහවුරු කරන්න',
+	'confirmaccount-wsum' => 'ආයුබෝවන්!',
 );
 
 /** Slovak (slovenčina)
@@ -6907,24 +6913,33 @@ $messages['szl'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author TRYPPN
  * @author Trengarasu
  */
 $messages['ta'] = array(
 	'confirmaccount-real-q' => 'பெயர்',
 	'confirmaccount-email-q' => 'மின்னஞ்சல்',
+	'confirmaccount-bio-q' => 'வாழ்க்கை வரலாறு',
 	'confirmaccount-review' => 'மதிப்பிடு',
 	'confirmaccount-type' => 'வரிசை:',
 	'confirmaccount-leg-user' => 'பயனர் கணக்கு',
+	'confirmaccount-leg-person' => 'தனிப்பட்ட விவரம்',
+	'confirmaccount-leg-other' => 'மற்ற தகவல்',
 	'confirmaccount-name' => 'பயனர் பெயர்',
 	'confirmaccount-real' => 'பெயர்:',
 	'confirmaccount-email' => 'மின்னஞ்சல்:',
 	'confirmaccount-reqtype' => 'இடம்:',
 	'confirmaccount-pos-0' => 'ஆசிரியர்',
 	'confirmaccount-pos-1' => 'பதிப்பாசிரியர்',
+	'confirmaccount-bio' => 'வாழ்க்கை வரலாறு:',
+	'confirmaccount-notes' => 'கூடுதல் குறிப்புகள்:',
+	'confirmaccount-urls' => 'வலைத்தளப் பட்டியல்:',
 	'confirmaccount-noreason' => '(எதுவுமில்லை)',
+	'confirmaccount-create' => 'ஏற்றுக்கொள் (கணக்கு உருவாக்கு)',
 	'confirmaccount-ip' => 'ஐ.பி. முகவரி:',
 	'confirmaccount-submit' => 'உறுதிசெய்',
+	'confirmaccount-needreason' => 'நீங்கள் கீழே உள்ள கருத்துரைப் பெட்டியில்  ஒரு காரணத்தை அவசியம் அளித்தாக வேண்டும்.',
 	'confirmaccount-wsum' => 'வருக ! வணக்கம் !',
 );
 

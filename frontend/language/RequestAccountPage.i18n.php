@@ -3608,6 +3608,8 @@ $messages['si'] = array(
 	'requestaccount-reqtype' => 'තරාතිරම:',
 	'requestaccount-level-0' => 'කතෘ',
 	'requestaccount-level-1' => 'සංස්කාරක',
+	'requestaccount-notes' => 'අමතර සටහන්:',
+	'requestaccount-submit' => 'අයදුම් ගිණුම',
 );
 
 /** Slovak (slovenčina)
@@ -3901,6 +3903,7 @@ Du kan inte göra fler ansökningar.',
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author TRYPPN
  * @author Trengarasu
  */
@@ -3912,6 +3915,8 @@ $messages['ta'] = array(
 	'requestaccount-reqtype' => 'இடம்:',
 	'requestaccount-level-0' => 'ஆசிரியர்',
 	'requestaccount-level-1' => 'பதிப்பாசிரியர்',
+	'requestaccount-notes' => 'கூடுதல் குறிப்புகள்:',
+	'requestaccount-email-subj' => '{{SITENAME}} தளத்தின் மின்னஞ்சல் உறுதிப்படுத்தல்',
 );
 
 /** Telugu (తెలుగు)

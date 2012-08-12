@@ -1808,9 +1808,13 @@ $messages['si'] = array(
 	'usercredentials-leg-user' => 'පරිශීලක ගිණුම',
 	'usercredentials-leg-person' => 'පුද්ගලික තොරතුරු',
 	'usercredentials-leg-other' => 'වෙනත් තොරතුරු',
+	'usercredentials-leg-ip' => 'IP ලිපින දත්ත',
 	'usercredentials-email' => 'විද්‍යුත් තැපෑල:',
 	'usercredentials-real' => 'සැබෑ නාමය:',
 	'usercredentials-bio' => 'චරිතාපදානය:',
+	'usercredentials-notes' => 'අමතර සටහන්:',
+	'usercredentials-urls' => 'වෙබ් අඩවි ලැයිස්තුව:',
+	'usercredentials-ip' => 'නියම IP ලිපිනය:',
 	'usercredentials-member' => 'හිමිකම්:',
 );
 
@@ -1968,14 +1972,20 @@ $messages['sv'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author TRYPPN
  * @author Trengarasu
  */
 $messages['ta'] = array(
 	'usercredentials-user' => 'பயனர் பெயர்:',
 	'usercredentials-leg-user' => 'பயனர் கணக்கு',
+	'usercredentials-leg-person' => 'தனிப்பட்ட விவரம்',
+	'usercredentials-leg-other' => 'மற்ற தகவல்',
 	'usercredentials-email' => 'மின்னஞ்சல்:',
 	'usercredentials-real' => 'உண்மைப் பெயர்:',
+	'usercredentials-bio' => 'வாழ்க்கை வரலாறு:',
+	'usercredentials-notes' => 'கூடுதல் குறிப்புகள்:',
+	'usercredentials-urls' => 'வலைத்தளப் பட்டியல்:',
 	'usercredentials-member' => 'உரிமைகள்:',
 );
 
