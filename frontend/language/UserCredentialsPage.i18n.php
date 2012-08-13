@@ -1139,8 +1139,10 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
+	'usercredentials-user' => '사용자 이름:',
 	'usercredentials-email' => '이메일:',
 	'usercredentials-real' => '실명:',
 	'usercredentials-member' => '권한:',

@@ -4083,6 +4083,7 @@ $messages['ko'] = array(
 	'confirmaccount-q-open' => '진행 중인 요청',
 	'confirmaccount-q-held' => '보류된 요청',
 	'confirmaccount-q-rej' => '최근에 거부된 요청',
+	'confirmaccount-name' => '사용자 이름',
 	'confirmaccount-reject' => '($2에 [[User:$1|$1]]에 의해 거부됨)',
 	'confirmaccount-noreason' => '(없음)',
 	'confirmaccount-create' => '승인 (계정 만들기)',
@@ -7959,6 +7960,7 @@ $2
 );
 
 /** Traditional Chinese (‪中文（繁體）‬)
+ * @author Liangent
  * @author Mark85296341
  * @author Waihorace
  */
@@ -8032,7 +8034,7 @@ $messages['zh-hant'] = array(
 	'confirmaccount-hold' => '掛起',
 	'confirmaccount-spam' => '垃圾（請不要發送電子郵件）',
 	'confirmaccount-reason' => '註解 （在電郵中使用）:',
-	'confirmaccount-ip' => 'IP 位址：',
+	'confirmaccount-ip' => 'IP位址：',
 	'confirmaccount-legend' => '批准/拒絕這個帳號',
 	'confirmaccount-submit' => '確認',
 	'confirmaccount-needreason' => '您必須在下方的評論欄闡述您的理由。',
