@@ -1977,6 +1977,7 @@ $messages['sv'] = array(
  * @author Karthi.dr
  * @author TRYPPN
  * @author Trengarasu
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
 	'usercredentials-user' => 'பயனர் பெயர்:',
@@ -1986,6 +1987,7 @@ $messages['ta'] = array(
 	'usercredentials-email' => 'மின்னஞ்சல்:',
 	'usercredentials-real' => 'உண்மைப் பெயர்:',
 	'usercredentials-bio' => 'வாழ்க்கை வரலாறு:',
+	'usercredentials-attach' => 'தற்குறிப்பு/சுயவிவரம்:',
 	'usercredentials-notes' => 'கூடுதல் குறிப்புகள்:',
 	'usercredentials-urls' => 'வலைத்தளப் பட்டியல்:',
 	'usercredentials-member' => 'உரிமைகள்:',

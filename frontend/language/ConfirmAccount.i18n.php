@@ -524,6 +524,15 @@ $messages['ms'] = array(
 	'right-lookupcredentials' => 'Melihat [[Special:UserCredentials|kelayakan pengguna]]',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'right-confirmaccount' => "Jara l-[[Special:ConfirmAccounts|kju ta' kontijiet rikjesti]]",
+	'right-requestips' => 'Jara l-indirizz IP tar-rikjedent waqt li jipproċessa l-kontijiet rikjesti',
+	'right-lookupcredentials' => 'Jara l-[[Special:UserCredentials|kredenzjali tal-utent]]',
+);
+
 /** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Event
  * @author Harald Khan

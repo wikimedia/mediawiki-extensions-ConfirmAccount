@@ -3906,9 +3906,11 @@ Du kan inte göra fler ansökningar.',
  * @author Karthi.dr
  * @author TRYPPN
  * @author Trengarasu
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
 	'requestaccount-leg-user' => 'பயனர் கணக்கு',
+	'requestaccount-leg-person' => 'தனிப்பட்ட தகவல்',
 	'requestaccount-leg-other' => 'மற்ற தகவல்',
 	'requestaccount-real' => 'உண்மைப் பெயர்:',
 	'requestaccount-email' => 'மின்னஞ்சல் முகவரி:',
@@ -3916,7 +3918,9 @@ $messages['ta'] = array(
 	'requestaccount-level-0' => 'ஆசிரியர்',
 	'requestaccount-level-1' => 'பதிப்பாசிரியர்',
 	'requestaccount-notes' => 'கூடுதல் குறிப்புகள்:',
+	'requestaccount-tooshort' => 'உங்கள் சுயவிவரம் குறைந்தது $1 {{PLURAL:$1|சொல்|சொற்கள்}} நீளமானதாக இருக்க வேண்டும்.',
 	'requestaccount-email-subj' => '{{SITENAME}} தளத்தின் மின்னஞ்சல் உறுதிப்படுத்தல்',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} கணக்கு வேண்டுகோள்',
 );
 
 /** Telugu (తెలుగు)

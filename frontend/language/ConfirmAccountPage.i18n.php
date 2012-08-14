@@ -4964,6 +4964,8 @@ Terdapat senarai hubungan dalam tapak yang boleh anda gunakan jika anda ingin me
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
+	'confirmaccounts' => 'Rikjesti għall-konferma tal-kontijiet',
+	'confirmedit-desc' => "Jagħti lill-burokrati l-possibilità li jikkonfermaw ir-rikjesti ta' kontijiet",
 	'confirmaccount-real-q' => 'Isem',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Bijografija',
@@ -4971,8 +4973,39 @@ $messages['mt'] = array(
 	'confirmaccount-showrej' => 'rikjesti rifjutati',
 	'confirmaccount-showheld' => 'rikjesti mwaqqfa',
 	'confirmaccount-showexp' => 'rikjesti skaduti',
+	'confirmaccount-review' => 'Irrevedi',
+	'confirmaccount-types' => 'Agħżel kju għall-konferma tal-kontijiet minn hawn isfel:',
+	'confirmaccount-all' => '(uri l-kjuwijiet kollha)',
+	'confirmaccount-type' => 'Kju:',
+	'confirmaccount-type-0' => 'awturi prospettivi',
+	'confirmaccount-type-1' => 'edituri prospettivi',
+	'confirmaccount-q-open' => 'rikjesti miftuħa',
+	'confirmaccount-q-held' => 'rikjesti mwaqqfa',
+	'confirmaccount-q-rej' => 'rikjesti rifjutati riċentament',
+	'confirmaccount-q-stale' => 'rikjesti skaduti',
+	'confirmaccount-leg-user' => 'Kont tal-utent',
+	'confirmaccount-leg-areas' => "Irkejjen prinċipali ta' interess",
+	'confirmaccount-leg-person' => 'Informazzjoni personali',
+	'confirmaccount-leg-other' => 'Informazzjoni oħra',
+	'confirmaccount-leg-ip' => 'Informazzjoni relatata mal-indirizz IP',
 	'confirmaccount-name' => 'Isem tal-utent',
+	'confirmaccount-real' => 'Isem:',
 	'confirmaccount-email' => 'E-mail:',
+	'confirmaccount-reqtype' => 'Pożizzjoni:',
+	'confirmaccount-pos-0' => 'awtur',
+	'confirmaccount-pos-1' => 'editur',
+	'confirmaccount-bio' => 'Bijografija:',
+	'confirmaccount-attach' => 'Kurrikulu:',
+	'confirmaccount-notes' => 'Noti oħra:',
+	'confirmaccount-urls' => "Lista ta' siti elettroniċi:",
+	'confirmaccount-none-p' => '(mhux provdut)',
+	'confirmaccount-confirm' => "Uża l-għażliet t'hawn taħt sabiex taċċetta, tirrifjuta, jew twaqqaf din ir-rikjesta:",
+	'confirmaccount-econf' => '(ikkonfermat)',
+	'confirmaccount-withcv' => '(CV mehmuż)',
+	'confirmaccount-reject' => '(rifjutata minn [[User:$1|$1]] nhar il-$2)',
+	'confirmaccount-rational' => 'Raġuni mogħtija lill-rikjedent:',
+	'confirmaccount-noreason' => '(xejn)',
+	'confirmaccount-autorej' => '(din ir-rikjesta ġiet awtomatikament rifjutata minħabba inattività)',
 );
 
 /** Erzya (эрзянь)
@@ -6917,13 +6950,16 @@ $messages['szl'] = array(
  * @author Karthi.dr
  * @author TRYPPN
  * @author Trengarasu
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
 	'confirmaccount-real-q' => 'பெயர்',
 	'confirmaccount-email-q' => 'மின்னஞ்சல்',
 	'confirmaccount-bio-q' => 'வாழ்க்கை வரலாறு',
+	'confirmaccount-showexp' => 'காலாவதியான வேண்டுகோள்கள்',
 	'confirmaccount-review' => 'மதிப்பிடு',
 	'confirmaccount-type' => 'வரிசை:',
+	'confirmaccount-q-stale' => 'காலாவதியான வேண்டுகோள்கள்',
 	'confirmaccount-leg-user' => 'பயனர் கணக்கு',
 	'confirmaccount-leg-person' => 'தனிப்பட்ட விவரம்',
 	'confirmaccount-leg-other' => 'மற்ற தகவல்',
@@ -6934,14 +6970,21 @@ $messages['ta'] = array(
 	'confirmaccount-pos-0' => 'ஆசிரியர்',
 	'confirmaccount-pos-1' => 'பதிப்பாசிரியர்',
 	'confirmaccount-bio' => 'வாழ்க்கை வரலாறு:',
+	'confirmaccount-attach' => 'தற்குறிப்பு/சுயவிவரம்:',
 	'confirmaccount-notes' => 'கூடுதல் குறிப்புகள்:',
 	'confirmaccount-urls' => 'வலைத்தளப் பட்டியல்:',
+	'confirmaccount-none-p' => '(வழங்கப்படவில்லை)',
+	'confirmaccount-econf' => '(உறுதிப்படுத்தப்பட்டது)',
+	'confirmaccount-withcv' => '(சுயவிவரம் இணைக்கப்பட்டுள்ளது)',
 	'confirmaccount-noreason' => '(எதுவுமில்லை)',
 	'confirmaccount-create' => 'ஏற்றுக்கொள் (கணக்கு உருவாக்கு)',
 	'confirmaccount-ip' => 'ஐ.பி. முகவரி:',
+	'confirmaccount-agent' => 'பயனர் முகவர்:',
 	'confirmaccount-submit' => 'உறுதிசெய்',
 	'confirmaccount-needreason' => 'நீங்கள் கீழே உள்ள கருத்துரைப் பெட்டியில்  ஒரு காரணத்தை அவசியம் அளித்தாக வேண்டும்.',
+	'confirmaccount-summary' => 'புதிய பயனருக்காகப் பயனர் பக்கத்தை உருவாக்குகிறது.',
 	'confirmaccount-wsum' => 'வருக ! வணக்கம் !',
+	'confirmaccount-email-subj' => '{{SITENAME}} கணக்கு வேண்டுகோள்',
 );
 
 /** Telugu (తెలుగు)
