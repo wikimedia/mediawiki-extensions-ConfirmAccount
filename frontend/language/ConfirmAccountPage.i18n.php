@@ -2415,8 +2415,16 @@ $messages['fy'] = array(
 
 /** Irish (Gaeilge)
  * @author Alison
+ * @author පසිඳු කාවින්ද
  */
 $messages['ga'] = array(
+	'confirmaccount-real-q' => 'Ainm',
+	'confirmaccount-email-q' => 'Ríomhphost',
+	'confirmaccount-name' => 'Ainm úsáideora',
+	'confirmaccount-real' => 'Ainm:',
+	'confirmaccount-email' => 'Do ríomhsheoladh:',
+	'confirmaccount-pos-0' => 'Údar',
+	'confirmaccount-submit' => 'Deimhnigh',
 	'confirmaccount-needreason' => 'Tá ort fáth a chur síos sa bhosca tráchta faoi bhun.',
 );
 

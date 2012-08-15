@@ -684,6 +684,14 @@ $messages['fy'] = array(
 	'usercredentials-user' => 'Meidoggernamme:',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'usercredentials-user' => 'Ainm úsáideora:',
+	'usercredentials-email' => 'Do ríomhsheoladh:',
+);
+
 /** Galician (galego)
  * @author Alma
  * @author Elisardojm

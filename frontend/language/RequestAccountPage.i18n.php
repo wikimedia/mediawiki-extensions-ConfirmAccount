@@ -1335,6 +1335,13 @@ $messages['fy'] = array(
 	'requestaccount-level-1' => 'redakteur',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'requestaccount-level-0' => 'Údar',
+);
+
 /** Galician (galego)
  * @author Alma
  * @author Elisardojm
