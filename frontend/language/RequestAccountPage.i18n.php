@@ -4370,6 +4370,7 @@ $messages['ur'] = array(
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  * @author Vinhtantran
+ * @author පසිඳු කාවින්ද
  */
 $messages['vi'] = array(
 	'requestaccount' => 'Xin tài khoản',
@@ -4377,6 +4378,8 @@ $messages['vi'] = array(
 	'requestaccount-leg-user' => 'Tài khoản',
 	'requestaccount-leg-person' => 'Thông tin cá nhân',
 	'requestaccount-leg-other' => 'Thông tin khác',
+	'requestaccount-email' => 'Địa chỉ thư điện tử:',
+	'requestaccount-reqtype' => 'Vị trí:',
 	'requestaccount-level-0' => 'tác giả',
 	'requestaccount-level-1' => 'người sửa đổi',
 	'requestaccount-notes' => 'Chi tiết:',

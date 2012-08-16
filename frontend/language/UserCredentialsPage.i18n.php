@@ -2192,12 +2192,14 @@ $messages['uk'] = array(
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  * @author Vinhtantran
+ * @author පසිඳු කාවින්ද
  */
 $messages['vi'] = array(
 	'usercredentials-user' => 'Tên người dùng:',
 	'usercredentials-leg-user' => 'Tài khoản',
 	'usercredentials-leg-person' => 'Thông tin cá nhân',
 	'usercredentials-leg-other' => 'Thông tin khác',
+	'usercredentials-email' => 'Thư điện tử:',
 	'usercredentials-bio' => 'Tiểu sử:',
 	'usercredentials-notes' => 'Chi tiết:',
 );

@@ -2023,6 +2023,7 @@ $messages['et'] = array(
 
 /** Basque (euskara)
  * @author An13sa
+ * @author පසිඳු කාවින්ද
  */
 $messages['eu'] = array(
 	'confirmaccount-real-q' => 'Izena',
@@ -2031,12 +2032,14 @@ $messages['eu'] = array(
 	'confirmaccount-showopen' => 'irekitako eskariak',
 	'confirmaccount-showrej' => 'gaitzestutako eskariak',
 	'confirmaccount-showexp' => 'iraungitako eskariak',
+	'confirmaccount-leg-user' => 'Erabiltzaile kontua',
 	'confirmaccount-leg-person' => 'Norberaren informazioa',
 	'confirmaccount-leg-other' => 'Bestelako informazioa',
 	'confirmaccount-name' => 'Erabiltzaile izena',
 	'confirmaccount-real' => 'Izena:',
 	'confirmaccount-email' => 'Emaila:',
 	'confirmaccount-pos-0' => 'egilea',
+	'confirmaccount-pos-1' => 'Editorea',
 	'confirmaccount-bio' => 'Biografia:',
 	'confirmaccount-attach' => 'Curriculuma:',
 	'confirmaccount-urls' => 'Webgune zerrenda:',
@@ -7754,14 +7757,20 @@ $messages['vep'] = array(
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  * @author Vinhtantran
+ * @author පසිඳු කාවින්ද
  */
 $messages['vi'] = array(
+	'confirmaccount-real-q' => 'Tên',
+	'confirmaccount-email-q' => 'Thư điện tử',
 	'confirmaccount-bio-q' => 'Tiểu sử',
 	'confirmaccount-review' => 'Duyệt',
 	'confirmaccount-leg-user' => 'Tài khoản',
 	'confirmaccount-leg-person' => 'Thông tin cá nhân',
 	'confirmaccount-leg-other' => 'Thông tin khác',
 	'confirmaccount-name' => 'Tên người dùng',
+	'confirmaccount-real' => 'Tên:',
+	'confirmaccount-email' => 'Thư điện tử:',
+	'confirmaccount-reqtype' => 'Vị trí:',
 	'confirmaccount-pos-0' => 'tác giả',
 	'confirmaccount-pos-1' => 'người sửa trang',
 	'confirmaccount-bio' => 'Tiểu sử:',
