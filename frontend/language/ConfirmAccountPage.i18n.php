@@ -4977,6 +4977,14 @@ Terdapat senarai hubungan dalam tapak yang boleh anda gunakan jika anda ingin me
 $messages['mt'] = array(
 	'confirmaccounts' => 'Rikjesti għall-konferma tal-kontijiet',
 	'confirmedit-desc' => "Jagħti lill-burokrati l-possibilità li jikkonfermaw ir-rikjesti ta' kontijiet",
+	'confirmaccount-maintext' => "'''Din il-paġna hija wżata sabiex tikkonferma r-rikjesti ta' kontijiet pendenti fuq ''{{SITENAME}}'''''.
+
+Kull kju ta' rikjesti għall-kontijiet huwa magħmul minn tliet sotto-kjuwijiet.
+Waħda għar-rikjesti miftuħa, oħra għal dawk li ġew posposti minn amministraturi oħra sabiex tasal iktar informazzjoni, u oħra għar-rikjesti rifjutati riċentament.
+
+Meta tirrispondi għal rikjesta, irrevedieha attentament u, jekk huwa neċessarju, ikkonferma l-informazzjoni li tinsab fiha.
+L-azzjonijiet tiegħek jiġu reġistrati fil-privat.
+Inti wkoll mistenni li tirrevedi kwalunkwe attività li tieħu post hawnhekk minbarra dawk li tagħmel int.",
 	'confirmaccount-real-q' => 'Isem',
 	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Bijografija',
@@ -5017,6 +5025,60 @@ $messages['mt'] = array(
 	'confirmaccount-rational' => 'Raġuni mogħtija lill-rikjedent:',
 	'confirmaccount-noreason' => '(xejn)',
 	'confirmaccount-autorej' => '(din ir-rikjesta ġiet awtomatikament rifjutata minħabba inattività)',
+	'confirmaccount-create' => 'Aċċetta (oħloq il-kont)',
+	'confirmaccount-deny' => 'Irrifjuta (neħħi mil-lista)',
+	'confirmaccount-hold' => 'Ipposponi',
+	'confirmaccount-spam' => 'Spam (tibgħatx posta elettronika)',
+	'confirmaccount-reason' => 'Kumment (se jiġi nkluż fl-ittra elettronika):',
+	'confirmaccount-ip' => 'Indirizz IP:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'User-Agent:',
+	'confirmaccount-legend' => 'Ikkonferma/irrifjuta dan il-kont',
+	'confirmaccount-submit' => 'Ikkonferma',
+	'confirmaccount-needreason' => "Trid tipprovdi raġuni fil-kaxxa tal-kumment t'hawn taħt.",
+	'confirmaccount-canthold' => 'Din ir-rikjesta diġà hija posposta jew imħassra.',
+	'confirmaccount-badaction' => 'Sabiex tkompli trid tispeċifika azzjoni valida (aċċetta, irrifjuta, ipposponi).',
+	'confirmaccount-rej' => "Ir-rikjesta għal kont ġiet rifjutata b'suċċess.",
+	'confirmaccount-summary' => "Ħolqien ta' paġna tal-utent għal utent ġdid.",
+	'confirmaccount-welc' => "'''Merħba fuq ''{{SITENAME}}''!'''
+Nisperaw li tagħti daqqa t'id tajba.
+Probabbilment trid taqra l-[[{{MediaWiki:Helppage}}|paġni tal-għajnuna]].
+Għal darb'oħra, merħba u ħu gost!",
+	'confirmaccount-wsum' => 'Merħba!',
+	'confirmaccount-email-subj' => 'Rikjesta għal kont fuq {{SITENAME}}',
+	'confirmaccount-email-body' => "Ir-rikjesta tiegħek għal kont ġiet approvata fuq {{SITENAME}}.
+
+L-isem tal-kont: $1
+
+Password: $2
+
+Għal raġunijiet ta' sigurtà meta tidħol fil-kont inti trid tbiddel il-password.
+Biex tidħol fil-kont, mur fuq {{fullurl:Special:UserLogin}}.",
+	'confirmaccount-email-body2' => "Ir-rikjesta tiegħek għal kont ġiet approvata fuq {{SITENAME}}.
+
+L-isem tal-kont: $1
+
+Password: $2
+
+$3
+
+Għal raġunijiet ta' sigurtà meta tidħol fil-kont inti trid tbiddel il-password.
+Biex tidħol fil-kont, mur fuq {{fullurl:Special:UserLogin}}.",
+	'confirmaccount-email-body3' => "Jiddispjaċina, ir-rikjesta tiegħek għall-kont \"\$1\" ġiet rifjutata fuq {{SITENAME}}.
+
+Hemm diversi raġuni għal ġara dan.
+Jista' jkun li tkun imlejt il-formola ħażina, ma tajtx risposti ta' tul mixtieq, jew inkella nqast milli tilħaq xi kriterju.
+Jista' jkun hemm elenki ta' kuntatt fuq is-sit li tista' tuża jekk tixtieq tkun taf aktar dwar il-politika tal-kontijiet tal-utent.",
+	'confirmaccount-email-body4' => 'iddispjaċina, ir-rikjesta tiegħek għall-kont "$1" ġiet rifjutata fuq {{SITENAME}}.
+
+$2
+
+Jista\' jkun hemm elenki ta\' kuntatt fuq is-sit li tista\' tuża jekk tixtieq tkun taf aktar dwar il-politika tal-kontijiet tal-utent.',
+	'confirmaccount-email-body5' => 'Qabel ma r-rikjesta tiegħek għall-kont "$1" fuq {{SITENAME}} tiġi aċċettata trid tipprovdi xi informazzjoni addizzjonali.
+
+$2
+
+Jista\' jkun hemm elenki ta\' kuntatt fuq is-sit li tista\' tuża jekk tixtieq tkun taf aktar dwar il-politika tal-kontijiet tal-utent.',
 );
 
 /** Erzya (эрзянь)
@@ -7736,6 +7798,23 @@ $messages['uk'] = array(
 	'confirmaccount-submit' => 'Підтвердити',
 	'confirmaccount-wsum' => 'Ласкаво просимо!',
 	'confirmaccount-email-subj' => '{{SITENAME}}: запит облікового запису',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'confirmaccount-real-q' => 'نام',
+	'confirmaccount-email-q' => 'ای میل',
+	'confirmaccount-bio-q' => 'سوانح حیات',
+	'confirmaccount-review' => 'کا جائزہ لینے',
+	'confirmaccount-leg-user' => 'صارف اکاؤنٹ',
+	'confirmaccount-name' => 'صارف کا نام',
+	'confirmaccount-real' => 'نام:',
+	'confirmaccount-email' => 'ای میل:',
+	'confirmaccount-reqtype' => 'حیثیت:',
+	'confirmaccount-pos-0' => 'مصنف',
+	'confirmaccount-pos-1' => 'ایڈیٹر',
 );
 
 /** vèneto (vèneto)

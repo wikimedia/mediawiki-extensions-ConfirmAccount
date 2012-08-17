@@ -528,6 +528,8 @@ $messages['ms'] = array(
  * @author Chrisportelli
  */
 $messages['mt'] = array(
+	'confirmaccount-newrequests' => "'''$1''' indirizzi elettroniċi ta' konferma [[Special:ConfirmAccounts|kull kont {{PLURAL:$1hija|huma}} pendenti]]. '''L-attenzjoni tiegħek hija neċessarja!'''",
+	'requestaccount-loginnotice' => "Sabiex tikseb kont tal-utent, trid '''[[Special:RequestAccount|titlob wieħed]]'''.",
 	'right-confirmaccount' => "Jara l-[[Special:ConfirmAccounts|kju ta' kontijiet rikjesti]]",
 	'right-requestips' => 'Jara l-indirizz IP tar-rikjedent waqt li jipproċessa l-kontijiet rikjesti',
 	'right-lookupcredentials' => 'Jara l-[[Special:UserCredentials|kredenzjali tal-utent]]',

@@ -1414,15 +1414,27 @@ Pastikan namanya dieja dengan betul.',
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
+	'usercredentials' => 'Kredenzjali tal-utent',
+	'usercredentials-leg' => 'Fittex kredenzjali kkonfermati għal utent',
 	'usercredentials-user' => 'Isem tal-utent:',
+	'usercredentials-text' => 'Hawn taħt huma l-kredenzjali vvalidati tal-kont tal-utent magħżul.',
 	'usercredentials-leg-user' => 'Kont tal-utent',
+	'usercredentials-leg-areas' => "Irkejjen prinċipali ta' interess",
+	'usercredentials-leg-person' => 'Informazzjoni personali',
+	'usercredentials-leg-other' => 'Informazzjoni oħra',
+	'usercredentials-leg-ip' => 'Informazzjoni relatata mal-indirizz IP',
 	'usercredentials-email' => 'E-mail:',
+	'usercredentials-real' => 'Isem proprju:',
 	'usercredentials-bio' => 'Bijografija',
 	'usercredentials-attach' => 'Kurrikulu',
 	'usercredentials-notes' => 'Noti oħra:',
 	'usercredentials-urls' => "Lista ta' siti elettroniċi:",
 	'usercredentials-ip' => 'Indirizz IP oriġinali',
+	'usercredentials-xff' => 'X-Forwarded-For oriġinali:',
+	'usercredentials-agent' => 'User-Agent oriġinali:',
 	'usercredentials-member' => 'Drittijiet:',
+	'usercredentials-badid' => 'L-ebda kredenzjali ma nstab għal dan l-utent.
+Iċċekkja li ktibt l-isem tajjeb.',
 );
 
 /** Erzya (эрзянь)
@@ -2187,6 +2199,19 @@ $messages['uk'] = array(
 	'usercredentials-notes' => 'Додаткова інформація:',
 	'usercredentials-urls' => 'Список веб-сайтів:',
 	'usercredentials-member' => 'Права:',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'usercredentials' => 'صارف کی تصدیق',
+	'usercredentials-user' => 'صارف کا نام:',
+	'usercredentials-leg-user' => 'صارف اکاؤنٹ',
+	'usercredentials-leg-other' => 'دیگر معلومات',
+	'usercredentials-email' => 'ای میل:',
+	'usercredentials-real' => 'اصل نام:',
+	'usercredentials-bio' => 'سوانح حیات:',
 );
 
 /** Vietnamese (Tiếng Việt)
