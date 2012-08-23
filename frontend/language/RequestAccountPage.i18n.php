@@ -1093,7 +1093,7 @@ $messages['eu'] = array(
 	'requestaccount-real' => 'Benetako izena:',
 	'requestaccount-email' => 'E-posta helbidea:',
 	'requestaccount-level-0' => 'egilea',
-	'requestaccount-bio' => 'Norberaren biografia:',
+	'requestaccount-bio' => 'Norberaren biografia (testu laua bakarrik):',
 	'requestaccount-attach' => 'Curriculuma (hautazkoa):',
 );
 

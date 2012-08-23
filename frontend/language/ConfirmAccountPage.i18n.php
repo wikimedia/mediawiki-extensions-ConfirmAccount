@@ -3169,6 +3169,7 @@ Snano su kontaktowe lisćiny na sydle, kotrež móžeš wužiwać, jeli chceš w
 
 /** Hungarian (magyar)
  * @author Dani
+ * @author Dj
  * @author Dorgan
  * @author Glanthor Reviol
  * @author Misibacsi
@@ -3220,7 +3221,7 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-leg-areas' => 'Érdeklődési területek',
 	'confirmaccount-leg-person' => 'Személyes információ',
 	'confirmaccount-leg-other' => 'További információ',
-	'confirmaccount-name' => 'Felhasználói név',
+	'confirmaccount-name' => 'Felhasználónév',
 	'confirmaccount-real' => 'Név:',
 	'confirmaccount-email' => 'E-mail cím:',
 	'confirmaccount-reqtype' => 'Pozíció:',
