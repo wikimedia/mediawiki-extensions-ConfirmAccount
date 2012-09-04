@@ -416,12 +416,16 @@ $messages['de'] = array(
  * @author Erdemaslancan
  */
 $messages['diq'] = array(
+	'usercredentials' => 'Referansê karberi',
 	'usercredentials-user' => 'Nameyê karberi:',
 	'usercredentials-leg-user' => 'Hesabê karberi',
+	'usercredentials-leg-person' => 'Malumato şexsi',
 	'usercredentials-leg-ip' => 'Melumate IP adresi',
 	'usercredentials-email' => 'E-posta:',
 	'usercredentials-real' => 'Nameyo raştay',
 	'usercredentials-bio' => 'Biyografiye:',
+	'usercredentials-attach' => 'Ravêrdenacı/CV:',
+	'usercredentials-member' => 'Heqi:',
 );
 
 /** Lower Sorbian (dolnoserbski)

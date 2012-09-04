@@ -1558,6 +1558,8 @@ $messages['diq'] = array(
 	'confirmaccount-real-q' => 'Name',
 	'confirmaccount-email-q' => 'E-posta',
 	'confirmaccount-bio-q' => 'Biyografiye',
+	'confirmaccount-review' => 'Çım ra ravyarne',
+	'confirmaccount-type' => 'Grube:',
 	'confirmaccount-leg-ip' => 'Melumate IP adresi',
 	'confirmaccount-name' => 'Namey karberi',
 	'confirmaccount-real' => 'Name:',
@@ -1566,9 +1568,12 @@ $messages['diq'] = array(
 	'confirmaccount-pos-0' => 'nuskar',
 	'confirmaccount-pos-1' => 'vurnkar',
 	'confirmaccount-bio' => 'Biyografiye:',
+	'confirmaccount-attach' => 'Ravêrdenacı/CV:',
 	'confirmaccount-noreason' => '(çino)',
+	'confirmaccount-hold' => 'Tepêş',
 	'confirmaccount-ip' => "Adresa IP'i:",
 	'confirmaccount-submit' => 'Testiq ke',
+	'confirmaccount-wsum' => 'Xeyr amey!',
 );
 
 /** Lower Sorbian (dolnoserbski)
