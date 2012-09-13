@@ -5930,6 +5930,7 @@ $messages['ps'] = array(
 	'confirmaccount-urls' => 'د وېبځايونو لړليک:',
 	'confirmaccount-noreason' => '(هېڅ)',
 	'confirmaccount-ip' => 'IP پته:',
+	'confirmaccount-submit' => 'تاييد',
 	'confirmaccount-wsum' => 'ښه راغلۍ!',
 	'confirmaccount-email-body' => 'په {{SITENAME}} باندې د يوه ګڼون لپاره غوښتنه مو ومنل شوه .
 

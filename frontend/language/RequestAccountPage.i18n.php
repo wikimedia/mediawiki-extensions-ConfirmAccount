@@ -846,11 +846,16 @@ Die E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen: �
 $messages['diq'] = array(
 	'requestaccount' => 'Hesab bıwaze',
 	'requestaccount-leg-user' => 'Hesabê karberi',
+	'requestaccount-leg-other' => 'Melumatê bini',
 	'requestaccount-leg-tos' => 'Şertê Xızmeti',
+	'requestaccount-real' => 'Nameyo raştay:',
 	'requestaccount-email' => 'Adresê e-posta:',
 	'requestaccount-reqtype' => 'Pozisyon:',
 	'requestaccount-level-0' => 'nuskar',
 	'requestaccount-level-1' => 'vurnkar',
+	'requestaccount-notes' => 'Notê oleki:',
+	'requestaccount-email-subj' => '{{SITENAME}} araştkerdena adres ê emalî',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} ra hesab waştış',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -2016,6 +2021,7 @@ $2',
  * @author Beta16
  * @author Darth Kule
  * @author Melos
+ * @author Nemo bis
  * @author Pietrodn
  * @author Stefano-c
  */
@@ -2064,7 +2070,7 @@ Il nome che ho specificato come "Vero nome" è infatti il mio vero nome.',
 	'requestaccount-submit' => 'Richiesta account',
 	'requestaccount-sent' => 'La tua richiesta account è stata inviata con successo ed è ora in attesa di verifica.
 Una email di conferma è stata inviata al tuo indirizzo e-mail.',
-	'request-account-econf' => 'Il tuo indirizzo e-mail è stato confermato e sarà elencato come tale nella tua richiesta account.',
+	'request-account-econf' => 'Il tuo indirizzo e-mail è stato confermato e sarà indicato come tale nella tua richiesta.',
 	'requestaccount-email-subj' => '{{SITENAME}} conferma indirizzo e-mail',
 	'requestaccount-email-body' => 'Qualcuno, probabilmente tu, dall\'indirizzo IP $1, ha chiesto un account "$2" con questo indirizzo e-mail su {{SITENAME}}.
 
@@ -3353,6 +3359,7 @@ $messages['ps'] = array(
 	'requestaccount-real' => 'اصلي نوم:',
 	'requestaccount-email' => 'برېښليک پته:',
 	'requestaccount-level-0' => 'ليکوال',
+	'requestaccount-level-1' => 'سمونګر',
 	'requestaccount-bio' => 'شخصي ژوندليک (يوازې ساده متن):',
 	'requestaccount-tooshort' => 'ستاسې ژوندليک بايد لږ تر لږه $1 {{PLURAL:$1|ويی|وييونه}} اوږد وي.',
 	'requestaccount-submit' => 'د ګڼون غوښتنه',
