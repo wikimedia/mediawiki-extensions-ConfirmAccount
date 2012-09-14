@@ -1573,6 +1573,7 @@ $messages['diq'] = array(
 	'confirmaccount-hold' => 'Tepêş',
 	'confirmaccount-ip' => "Adresa IP'i:",
 	'confirmaccount-submit' => 'Testiq ke',
+	'confirmaccount-canthold' => 'Na qayıla şıma ya dard biya yana esteriyaya.',
 	'confirmaccount-wsum' => 'Xeyr amey!',
 );
 
