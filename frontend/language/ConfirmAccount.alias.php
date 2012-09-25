@@ -267,7 +267,7 @@ $specialPageAliases['mt'] = array(
 	'UserCredentials' => array( 'KredenzjaliUtent' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'RequestAccount' => array( 'Etterspør_konto' ),
 	'ConfirmAccounts' => array( 'Bekreft_konto' ),
@@ -381,14 +381,14 @@ $specialPageAliases['uk'] = array(
 	'RequestAccount' => array( 'Запит_облікового_запису' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'RequestAccount' => array( '申请帐户' ),
 	'ConfirmAccounts' => array( '确认帐户' ),
 	'UserCredentials' => array( '用户凭据' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'RequestAccount' => array( '請求帳戶' ),
 	'ConfirmAccounts' => array( '確認帳戶' ),
