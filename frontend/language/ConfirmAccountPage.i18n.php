@@ -8106,7 +8106,7 @@ $2
 如果你想知道更多有关账户政策的信息，你可以使用网站中的联系列表。',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
  * @author Mark85296341
  * @author Waihorace
@@ -8189,7 +8189,7 @@ $messages['zh-hant'] = array(
 	'confirmaccount-acc' => '帳戶請求已經成功確認；已經建立一個新的使用者帳號[[User:$1]]。',
 	'confirmaccount-rej' => '帳戶請求已經成功拒絕。',
 	'confirmaccount-viewing' => '（目前正由[[User:$1|$1]]瀏覽）',
-	'confirmaccount-summary' => '正在建立一個新用戶擁有傳記的使用者頁面。',
+	'confirmaccount-summary' => '新用戶創建用戶頁',
 	'confirmaccount-welc' => "'''歡迎來到''{{SITENAME}}''！'''
 我們希望您會作出更多更好的貢獻。
 您可能想先閱讀一下[[{{MediaWiki:Helppage}}|說明頁面]]。
