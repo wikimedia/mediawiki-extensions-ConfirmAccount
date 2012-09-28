@@ -35,6 +35,11 @@ $specialPageAliases['as'] = array(
 	'ConfirmAccounts' => array( 'একাউণ্ট_নিশ্চিত_কৰক' ),
 );
 
+/** Bashkir (башҡортса) */
+$specialPageAliases['ba'] = array(
+	'RequestAccount' => array( 'RequestAccount' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'RequestAccount' => array( 'Minta_akun' ),
