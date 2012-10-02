@@ -350,7 +350,7 @@ $messages['be'] = array(
 	'requestaccount-level-0' => 'аўтар',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Zedlik
@@ -795,7 +795,7 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$
 	'acct_request_throttle_hit' => 'Du hast bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, du kannst momentan keine weiteren beantragen.',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  * @author Kghbln
  * @author The Evil IP address
@@ -2431,7 +2431,7 @@ Ene schööne Jrooß {{GRAMMAR:Genitiv vun|{{SITENAME}}}}',
 	'acct_request_throttle_hit' => 'Deihd uns leid, Do häs {{PLURAL:$1|ald|ald $1 Mohl|jaanit}} noh enem Zohjang jefrooch. Do kanns nit noch mieh Aanfroore enreische.',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -2902,7 +2902,7 @@ $messages['nah'] = array(
 	'requestaccount-level-0' => 'chīhualōni',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Event
  * @author Harald Khan
  * @author Laaknor
@@ -3041,7 +3041,7 @@ U kunt de aanvraag hier "$2" bevestigen.',
 U kunt geen nieuwe aanvragen meer uitbrengen.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -3758,7 +3758,7 @@ Emailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu: „$2“.',
 Nemôžete odoslať viac žiadostí.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -3789,7 +3789,7 @@ $messages['sr-ec'] = array(
 	'request-account-econf' => 'Ваша е-адреса је потврђена и биће наведена као таква у вашем захтеву за налог.',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  * @author Михајло Анђелковић
@@ -4529,7 +4529,7 @@ $3
 	'acct_request_throttle_hit' => '對唔住，你已經請求咗$1個戶口。你唔可以請求更多個戶口。',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
@@ -4597,7 +4597,7 @@ $3
 您不可以请求更多个账户。',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
  * @author Waihorace
  */

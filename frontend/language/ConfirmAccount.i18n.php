@@ -74,7 +74,7 @@ $messages['ast'] = array(
 	'right-lookupcredentials' => 'Ver les [[Special:UserCredentials|credenciales del usuariu]]',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
@@ -148,7 +148,7 @@ $messages['de'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|Benutzerempfehlungsschreiben]] sehen',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  * @author Kghbln
  * @author The Evil IP address
@@ -535,7 +535,7 @@ $messages['mt'] = array(
 	'right-lookupcredentials' => 'Jara l-[[Special:UserCredentials|kredenzjali tal-utent]]',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Event
  * @author Harald Khan
  * @author Laaknor
@@ -562,7 +562,7 @@ $messages['nl'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|gebruikersreferenties]] bekijken',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -783,7 +783,7 @@ $messages['yue'] = array(
 	'requestaccount-loginnotice' => "要拎一個用戶戶口，你一定要'''[[Special:RequestAccount|請求一個]]'''。",
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
@@ -797,7 +797,7 @@ $messages['zh-hans'] = array(
 	'right-lookupcredentials' => '查看 [[Special:UserCredentials|用户凭据]]',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
  * @author Waihorace
  */

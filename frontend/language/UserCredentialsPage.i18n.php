@@ -202,7 +202,7 @@ $messages['az'] = array(
 	'usercredentials-urls' => 'Vebsaytların siyahısı',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -1194,7 +1194,7 @@ $messages['ksh'] = array(
 Loor ens, ov dä Name reschtesch jetipp es.',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -1463,7 +1463,7 @@ $messages['nah'] = array(
 	'usercredentials-ip' => 'Achto IP:',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Event
  * @author Harald Khan
  * @author Laaknor
@@ -1538,7 +1538,7 @@ $messages['nl'] = array(
 Kijk na of de naam correct gespeld is.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -1894,7 +1894,7 @@ $messages['sl'] = array(
 Preverite, ali ste ime pravilno črkovali.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -1915,7 +1915,7 @@ $messages['sr-ec'] = array(
 	'usercredentials-member' => 'Права:',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  * @author Михајло Анђелковић
@@ -2258,7 +2258,7 @@ $messages['yi'] = array(
 	'usercredentials-member' => 'רעכטן',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
@@ -2286,7 +2286,7 @@ $messages['zh-hans'] = array(
 检查名称拼写是否正确。',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
  * @author Waihorace
  */

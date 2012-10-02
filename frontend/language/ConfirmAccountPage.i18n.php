@@ -733,7 +733,7 @@ $messages['be'] = array(
 	'confirmaccount-submit' => 'Пацвердзіць',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -1483,7 +1483,7 @@ $2
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  * @author Kghbln
  * @author The Evil IP address
@@ -4277,7 +4277,7 @@ Wann en Leß met Kuntakte em Wiki es, kanns De doh drövver
 versöhke, wigger ze kumme, wann De noch Froore häs.',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -5123,7 +5123,7 @@ $messages['nah'] = array(
 	'confirmaccount-wsum' => '¡Ximopanōlti!',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Event
  * @author Harald Khan
  * @author Laaknor
@@ -5390,7 +5390,7 @@ $2
 Er kunnen contacteerlijsten zijn die u kunt gebruiken als u meer wil te weten komen over het beleid ten aanzien van gebruikers.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -6581,7 +6581,7 @@ $messages['sl'] = array(
 	'confirmaccount-name' => 'Uporabniško ime',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -6646,7 +6646,7 @@ $messages['sr-ec'] = array(
 	'confirmaccount-wsum' => 'Добро дошли!',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  * @author Михајло Анђелковић
@@ -7981,7 +7981,7 @@ $2
 響呢個網站度提供咗聯絡人一覽，你可以用去知道更多用戶戶口政策嘅資料。',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
