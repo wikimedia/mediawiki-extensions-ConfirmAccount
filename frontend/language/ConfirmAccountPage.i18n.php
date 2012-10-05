@@ -426,7 +426,7 @@ $messages['arc'] = array(
 	'confirmaccount-leg-other' => 'ܝܕ̈ܥܬܐ ܐܚܪ̈ܢܝܬܐ',
 	'confirmaccount-pos-0' => 'ܣܝܘܡܐ',
 	'confirmaccount-noreason' => '(ܠܐ ܡܕܡ)',
-	'confirmaccount-submit' => 'ܚܬܬ',
+	'confirmaccount-submit' => 'ܫܪܪ',
 	'confirmaccount-wsum' => 'ܒܫܝܢܐ!',
 );
 
