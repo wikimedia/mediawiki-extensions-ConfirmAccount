@@ -159,6 +159,14 @@ $messages['de-formal'] = array(
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, müssen Sie es '''[[Special:RequestAccount|beantragen]]'''.",
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|Grub da hesab waştena]] vineno',
+	'right-lookupcredentials' => '[[Special:UserCredentials|Referansanê karberan]] vineno',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
