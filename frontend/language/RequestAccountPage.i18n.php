@@ -2108,7 +2108,7 @@ $messages['ja'] = array(
 	'requestaccount-leg-user' => '利用者アカウント',
 	'requestaccount-leg-areas' => '関心のある分野',
 	'requestaccount-leg-person' => '個人情報',
-	'requestaccount-leg-other' => 'その他',
+	'requestaccount-leg-other' => 'その他の情報',
 	'requestaccount-leg-tos' => '利用規約',
 	'requestaccount-acc-text' => 'この申請を送信すると、確認メッセージをあなたのメールアドレスにお送りします。
 確認のため、そのメール内の確認用リンクをクリックしてください。
