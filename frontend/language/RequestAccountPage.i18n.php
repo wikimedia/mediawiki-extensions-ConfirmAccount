@@ -705,17 +705,67 @@ $messages['cu'] = array(
 /** Danish (dansk)
  * @author Aka-miki
  * @author Jon Harald Søby
+ * @author Kaare
  */
 $messages['da'] = array(
+	'requestaccount' => 'Anmod om konto',
+	'requestaccount-text' => "'''Udfyld og indsend følgende formular for at anmode om en brugerkonto'''.
+
+Sørg for at have læst [[{{MediaWiki:Requestaccount-page}}|anvendelsesvilkårene]], før du beder om en konto.
+
+Når kontoen er blevet godkendt, modtager du en e-mail med besked derom, og du vil kunne benytte kontoen på [[Special:UserLogin|login]].",
+	'requestaccount-page' => '{{ns:project}}:Anvendelsesvilkår',
+	'requestaccount-dup' => "'''Bemærk: Du er allerede logget på med en registreret konto.'''",
 	'requestaccount-leg-user' => 'Brugerkonto',
+	'requestaccount-leg-areas' => 'Hovedinteresser',
 	'requestaccount-leg-person' => 'Personlige oplysninger',
-	'requestaccount-real' => 'Virkeligt navn:',
-	'requestaccount-same' => '(Samme som rigtige navn)',
-	'requestaccount-email' => 'E-mail adresse',
-	'requestaccount-reqtype' => 'Placering',
-	'requestaccount-level-0' => 'Forfatter',
-	'requestaccount-level-1' => 'redigerer',
-	'requestaccount-bio' => 'Personlig biografi:',
+	'requestaccount-leg-other' => 'Andre oplysninger',
+	'requestaccount-leg-tos' => 'Vilkår for anvendelse',
+	'requestaccount-acc-text' => 'Når anmodningen er afsendt, vil du på din e-mail-adresse vil modtage en bekræftelsesbesked. Svar ved at klikke på bekræftelseslinket i mailen. Når kontoen er blevet oprettet, vil du modtage en mail med din adgangskode.',
+	'requestaccount-areas-text' => 'Vælg herunder de områder, hvor du har formel ekspertise eller primært ønsker at arbejde inden for.',
+	'requestaccount-ext-text' => 'Følgende oplysninger offentliggøres ikke og benyttes kun i forbindelse med anmodningen.
+Du kan angive kontaktoplysninger så som et telefonnummer, for at gøre det lettere at bekræfte din identitet.',
+	'requestaccount-bio-text' => 'Medtag relevante meritter og referencer i din biografi herunder.',
+	'requestaccount-bio-text-i' => "'''Biografien vil blive anvendt som indledende indhold på din brugerside.'''
+Sørg for kun at medtage oplysninger, som du ønsker alle må se.",
+	'requestaccount-real' => 'Rigtigt navn:',
+	'requestaccount-same' => '(Samme som rigtigt navn)',
+	'requestaccount-email' => 'E-mail-adresse',
+	'requestaccount-reqtype' => 'Stilling:',
+	'requestaccount-level-0' => 'forfatter',
+	'requestaccount-level-1' => 'redaktør',
+	'requestaccount-bio' => 'Personlig biografi (uformateret tekst):',
+	'requestaccount-attach' => 'CV (valgfrit)',
+	'requestaccount-notes' => 'Yderligere bemærkninger:',
+	'requestaccount-urls' => 'Liste over websteder, om nogen (benyt en linje til hvert sted)',
+	'requestaccount-agree' => 'Du skal bekræfte, at dit rigtige navn er korrekt og at du accepterer anvendelsesvilkårene.',
+	'requestaccount-inuse' => 'Brugernavnet er allerede i brug i en ventende kontoanmodning.',
+	'requestaccount-tooshort' => 'Biografien skal som minimum indeholde $1 {{PLURAL:$1|ord}}.',
+	'requestaccount-emaildup' => 'En anden ventende kontoanmodning benytter samme e-mail-adresse.',
+	'requestaccount-exts' => 'Den vedhæftede fils type er ikke tilladt.',
+	'requestaccount-resub' => 'Af sikkerhedhensyn skal du vælge filen med dit CV igen.
+Lad feltet være blankt, hvis du ikke længere ønsker at medtage en fil.',
+	'requestaccount-tos' => 'Jeg har læst og vil følge [[{{MediaWiki:Requestaccount-page}}|anvendelsesvilkårene]] for {{SITENAME}}.
+Navnet, jeg har oplyst som "Rigtigt navn" er virkelig mit eget rigtige navn.',
+	'requestaccount-submit' => 'Anmod om konto',
+	'requestaccount-sent' => 'Din kontoanmodning er sendt og afventer nu godkendelse.
+En bekræftelsesmail er blevet sendt til din e-mail-adresse.',
+	'request-account-econf' => 'Din e-mail-adresse er nu bekræftet. Det vil blive registreret i din kontoanmodning.',
+	'requestaccount-email-subj' => 'Bekræftelse af e-mail-adresse hos {{SITENAME}}',
+	'requestaccount-email-body' => 'Nogen, formentlig dig, har fra IP-adressen $1, på {{SITENAME}} anmodet om kontoen "$2" med denne e-mail-adresse.
+
+For at bekræfte på {{SITENAME}}, at kontoen virkelig tilhører dig, bedes du åbne følgende link i din browser:
+
+$3
+
+Hvis kontoen bliver oprettet, vil du modtage adgangskoden.
+Hvis det *ikke* er dig, så benyt ikke linket.
+Bekræftelseskoden udløber den $4.',
+	'requestaccount-email-subj-admin' => 'Anmod om konto på {{SITENAME}}',
+	'requestaccount-email-body-admin' => '"$1" har anmodet om en konto er venter på bekræftelse.
+E-mail-adressen er blevet bekræftet. Du kan bekræfte anmodningen på: $2',
+	'acct_request_throttle_hit' => 'Beklager, du har allerede anmodet om {{PLURAL:$1|en konto|$1 konti}}.
+Du kan ikke foretage flere anmodninger.',
 );
 
 /** German (Deutsch)

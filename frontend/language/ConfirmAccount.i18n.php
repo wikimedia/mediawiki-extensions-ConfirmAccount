@@ -127,6 +127,17 @@ $messages['cs'] = array(
 	'requestaccount-loginnotice' => "Chcete-li získat uživatelský účet, je třeba o něj '''[[Special:RequestAccount|požádat]]'''.",
 );
 
+/** Danish (dansk)
+ * @author Kaare
+ */
+$messages['da'] = array(
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|åben kontoanmodning|åbne kontoanmodninger}} med bekræftet e-mail [[Special:ConfirmAccounts| venter på behandling]]. '''Din opmærksomhed er påkrævet!'''",
+	'requestaccount-loginnotice' => "For at få en brugerkonto, skal du '''[[Special:RequestAccount|anmode om en]]'''.",
+	'right-confirmaccount' => 'Vis [[Special:ConfirmAccounts|kontoanmodningskøen]]',
+	'right-requestips' => 'Vis anmoderers IP-adresse mens der behandles kontoanmodninger',
+	'right-lookupcredentials' => 'Vis [[Special:UserCredentials|brugeroplysninger]]',
+);
+
 /** German (Deutsch)
  * @author Als-Holder
  * @author Kghbln

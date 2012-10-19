@@ -369,11 +369,30 @@ $messages['cu'] = array(
 /** Danish (dansk)
  * @author Aka-miki
  * @author Jon Harald Søby
+ * @author Kaare
  */
 $messages['da'] = array(
+	'usercredentials' => 'Brugers legitimationsoplysninger',
+	'usercredentials-leg' => 'Find bekræftede legitimationsoplysninger vedrørende en bruger',
 	'usercredentials-user' => 'Brugernavn:',
+	'usercredentials-text' => 'Herunder er de bekræftede legitimationsoplysninger vedrørende den valgte brugerkonto.',
+	'usercredentials-leg-user' => 'Brugerkonto',
+	'usercredentials-leg-areas' => 'Hovedinteresser',
+	'usercredentials-leg-person' => 'Personlige oplysninger',
+	'usercredentials-leg-other' => 'Andre oplysninger',
+	'usercredentials-leg-ip' => 'IP-adresse-data',
 	'usercredentials-email' => 'E-mail:',
-	'usercredentials-real' => 'Virkeligt navn:',
+	'usercredentials-real' => 'Rigtigt navn:',
+	'usercredentials-bio' => 'Biografi:',
+	'usercredentials-attach' => 'CV:',
+	'usercredentials-notes' => 'Yderligere bemærkninger:',
+	'usercredentials-urls' => 'Liste over websteder:',
+	'usercredentials-ip' => 'Oprindelig IP-adresse:',
+	'usercredentials-xff' => 'Oprindelig X-Forwarded-For:',
+	'usercredentials-agent' => 'Oprindelig User-Agent:',
+	'usercredentials-member' => 'Rettigheder:',
+	'usercredentials-badid' => 'Ingen legitimationsoplysninger fundet vedrørende denne bruger.
+Undersøg om navnet er stavet korrekt.',
 );
 
 /** German (Deutsch)
