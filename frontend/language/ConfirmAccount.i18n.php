@@ -59,7 +59,7 @@ $messages['ar'] = array(
  */
 $messages['arz'] = array(
 	'confirmaccount-newrequests' => "{{PLURAL:$1|يوجد|يوجد}} حاليا '''$1'''
-{{PLURAL:$1|[[Special:ConfirmAccounts|طلب حساب]]|[[Special:ConfirmAccounts|طلب حساب]]}} مفتوح قيد الانتظار.",
+{{PLURAL:$1|[[Special:ConfirmAccounts|طلب حساب]]|[[Special:ConfirmAccounts|طلب حساب]]}} مفتوح قيد الانتظار.", # Fuzzy
 	'requestaccount-loginnotice' => "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''.",
 );
 
@@ -103,7 +103,7 @@ $messages['bg'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
-	'confirmaccount-newrequests' => "Er mare-mañ ez eus '''$1''' [[Special:ConfirmAccounts|goulenn kont{{PLURAL:$1||}}]] o vont en-dro.",
+	'confirmaccount-newrequests' => "Er mare-mañ ez eus '''$1''' [[Special:ConfirmAccounts|goulenn kont{{PLURAL:$1||}}]] o vont en-dro.", # Fuzzy
 	'requestaccount-loginnotice' => "Evit kaout ur gont implijer e rankit '''[[Special:RequestAccount|goulenn unan]]'''.",
 	'right-confirmaccount' => "Gwelet [[Special:ConfirmAccounts|lostad ar c'hontoù goulennet]]",
 	'right-requestips' => "Gwelet chomlec'hioù IP ar c'houlennerien pa vez pledet gant goulennoù krouiñ kontoù nevez.",
@@ -230,7 +230,7 @@ $messages['es'] = array(
  * @author Varusmies
  */
 $messages['fi'] = array(
-	'confirmaccount-newrequests' => "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} käsiteltävänä.",
+	'confirmaccount-newrequests' => "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} käsiteltävänä.", # Fuzzy
 	'requestaccount-loginnotice' => "Saadaksesi käyttäjätunnuksen on tehtävä '''[[Special:RequestAccount|käyttäjätunnuspyyntö]]'''.",
 	'right-confirmaccount' => 'Nähdä [[Special:ConfirmAccounts|listan pyydetyistä tunnuksista]]',
 	'right-requestips' => 'Nähdä hakijan IP-osoitteet käyttäjätilejä käsiteltäessä',
@@ -323,7 +323,7 @@ $messages['hi'] = array(
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
-	'confirmaccount-newrequests' => "u tijeku '''$1''' e-mailom {{PLURAL:$1|potvrđen [[Special:ConfirmAccounts|zahtjev za računom]]|potvrđenih [[Special:ConfirmAccounts|zahtjeva za računom]]}}",
+	'confirmaccount-newrequests' => "u tijeku '''$1''' e-mailom {{PLURAL:$1|potvrđen [[Special:ConfirmAccounts|zahtjev za računom]]|potvrđenih [[Special:ConfirmAccounts|zahtjeva za računom]]}}", # Fuzzy
 	'requestaccount-loginnotice' => "Da bi dobili suradnički račun, trebate ga '''[[Special:RequestAccount|zatražiti]]'''.",
 );
 
@@ -372,7 +372,7 @@ $messages['ia'] = array(
  * @author Rex
  */
 $messages['id'] = array(
-	'confirmaccount-newrequests' => "Terdapat '''$1''' antrean [[Special:ConfirmAccounts|{{PLURAL:$1|permintaan|permintaan}} akun]] yang surelnya telah dikonfirmasi.",
+	'confirmaccount-newrequests' => "Terdapat '''$1''' antrean [[Special:ConfirmAccounts|{{PLURAL:$1|permintaan|permintaan}} akun]] yang surelnya telah dikonfirmasi.", # Fuzzy
 	'requestaccount-loginnotice' => "Untuk mendapatkan sebuah akun pengguna, Anda harus '''[[Special:RequestAccount|mengajukannya]]'''.",
 	'right-confirmaccount' => 'Lihat [[Special:ConfirmAccounts|antrean peminta akun]]',
 	'right-requestips' => 'Lihat Alamat IP pemohon selama proses permohonan akun',
@@ -384,7 +384,7 @@ $messages['id'] = array(
  * @author Ævar Arnfjörð Bjarmason
  */
 $messages['is'] = array(
-	'confirmaccount-newrequests' => "'''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|notandabeðni|notandabeðnir}}]] {{PLURAL:$1|með staðfest netfang bíður samþykkis|með staðfest netföng bíða samþykkis}}",
+	'confirmaccount-newrequests' => "'''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|notandabeðni|notandabeðnir}}]] {{PLURAL:$1|með staðfest netfang bíður samþykkis|með staðfest netföng bíða samþykkis}}", # Fuzzy
 	'requestaccount-loginnotice' => "Ef þú ert ekki þegar með aðgang verður þú að '''[[Special:RequestAccount|sækja um einn slíkan]]'''.",
 );
 
@@ -423,7 +423,7 @@ $messages['ja'] = array(
  * @author Yocahuna
  */
 $messages['jam'] = array(
-	'confirmaccount-newrequests' => "'''$1''' opn e-miel-kanfoerm [[Special:ConfirmAccounts|akount {{PLURAL:$1|rikwes|rikwes}}]] pendin",
+	'confirmaccount-newrequests' => "'''$1''' opn e-miel-kanfoerm [[Special:ConfirmAccounts|akount {{PLURAL:$1|rikwes|rikwes}}]] pendin", # Fuzzy
 	'requestaccount-loginnotice' => "Fi abtien a yuuza akount, yu fi '''[[Special:RequestAccount|rikwes wan]]'''.",
 );
 
@@ -483,7 +483,7 @@ $messages['lez'] = array(
 $messages['li'] = array(
 	'confirmaccount-newrequests' => "Dao {{PLURAL:$1|steit|stoon}} '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|gebroekersaanvraog|gebroekersaanvraoge}}]] aope. '''Dien aandach is nujig!'''",
 	'requestaccount-loginnotice' => "Um 'n gebroekersaccount te kriege mós te '''[[Special:RequestAccount|'ne aanvraog doon]]'''",
-	'right-confirmaccount' => '[[Special:CorfirmAccounts|Wachrie mit gebroekersaanvraoge]] betrachte',
+	'right-confirmaccount' => '[[Special:CorfirmAccounts|Wachrie mit gebroekersaanvraoge]] betrachte', # Fuzzy
 	'right-requestips' => "De IP-adresse van aanvraogers betrachte bie 't verwirke van gebroekersaanvraage",
 	'right-lookupcredentials' => '[[Special:UserCredentials|Gebroekersreferenties]] betrachte',
 );
@@ -518,7 +518,7 @@ $messages['mk'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'confirmaccount-newrequests' => "ഇമെയിൽ വിലാസം സ്ഥിരീകരിക്കപ്പെട്ട '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|അംഗത്വത്തിനായുള്ള അഭ്യർത്ഥന]]|[[Special:ConfirmAccounts|അംഗത്വത്തിനായുള്ള അഭ്യർത്ഥനകൾ]]}} പെൻ‌ഡിംങ്ങാണ്‌.",
+	'confirmaccount-newrequests' => "ഇമെയിൽ വിലാസം സ്ഥിരീകരിക്കപ്പെട്ട '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|അംഗത്വത്തിനായുള്ള അഭ്യർത്ഥന]]|[[Special:ConfirmAccounts|അംഗത്വത്തിനായുള്ള അഭ്യർത്ഥനകൾ]]}} പെൻ‌ഡിംങ്ങാണ്‌.", # Fuzzy
 	'requestaccount-loginnotice' => "ഉപയോക്തൃ അംഗത്വം ലഭിക്കുന്നതിനായി താങ്കൾ '''[[Special:RequestAccount|ഉപയോക്തൃഅംഗത്വത്തിനായി അഭ്യർത്ഥിക്കണം]]'''.",
 );
 
@@ -528,7 +528,7 @@ $messages['ml'] = array(
  * @author Mahitgar
  */
 $messages['mr'] = array(
-	'confirmaccount-newrequests' => "'''$1''' इमेल पत्ता तपासलेला आहे {{PLURAL:$1|[[Special:ConfirmAccounts|खात्याची मागणी]]|[[Special:ConfirmAccounts|खात्यांची मागणी]]}} शिल्लक",
+	'confirmaccount-newrequests' => "'''$1''' इमेल पत्ता तपासलेला आहे {{PLURAL:$1|[[Special:ConfirmAccounts|खात्याची मागणी]]|[[Special:ConfirmAccounts|खात्यांची मागणी]]}} शिल्लक", # Fuzzy
 	'requestaccount-loginnotice' => "सदस्य खाते मिळविण्यासाठी तुम्ही तुमची '''[[Special:RequestAccount|मागणी नोंदवा]]'''.",
 );
 
@@ -561,7 +561,7 @@ $messages['mt'] = array(
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
-	'confirmaccount-newrequests' => "Det er foreløpig '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}.",
+	'confirmaccount-newrequests' => "Det er foreløpig '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}.", # Fuzzy
 	'requestaccount-loginnotice' => "For å få en brukerkonto må du '''[[Special:RequestAccount|etterspørre en]]'''.",
 	'right-confirmaccount' => 'Vis [[Special:ConfirmAccounts|køen av kontosøknader]]',
 	'right-requestips' => 'Vis søkerenes IP-adresser mens man behandler kontosøknadene',
@@ -588,7 +588,7 @@ $messages['nl'] = array(
  * @author Njardarlogar
  */
 $messages['nn'] = array(
-	'confirmaccount-newrequests' => "Det finst for tida {{PLURAL:$1|'''éin''' open [[Special:ConfirmAccounts|kontoførespurnad]]|'''$1''' opne [[Special:ConfirmAccounts|kontoførespurnader]]}}.",
+	'confirmaccount-newrequests' => "Det finst for tida {{PLURAL:$1|'''éin''' open [[Special:ConfirmAccounts|kontoførespurnad]]|'''$1''' opne [[Special:ConfirmAccounts|kontoførespurnader]]}}.", # Fuzzy
 	'requestaccount-loginnotice' => "For å få ein brukarkonto må du '''[[Special:RequestAccount|be om ein]]'''.",
 	'right-confirmaccount' => 'Vis [[Special:ConfirmAccounts|køen av kontosøknader]]',
 	'right-requestips' => 'Vis søkjaren sine IP-adresser medan kontosøknadene er til handsaming',
@@ -599,7 +599,7 @@ $messages['nn'] = array(
  * @author Cedric31
  */
 $messages['oc'] = array(
-	'confirmaccount-newrequests' => "Actualament i a '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compte]]|[[Special:ConfirmAccounts|demandas de compte]]}} en cors.",
+	'confirmaccount-newrequests' => "Actualament i a '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compte]]|[[Special:ConfirmAccounts|demandas de compte]]}} en cors.", # Fuzzy
 	'requestaccount-loginnotice' => "Per obténer un compte d'utilizaire, vos ne cal far '''[[Special:RequestAccount|la demanda]]'''.",
 	'right-confirmaccount' => 'Vejatz la [[Special:ConfirmAccounts|fila de las demandas de compte]]',
 	'right-requestips' => 'Vejatz las adreças IP dels demandaires al moment del tractament de las demandas de comptes novèls',
@@ -654,12 +654,12 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
- * @author 555
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
  * @author Heldergeovane
  * @author Luckas Blade
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'confirmaccount-newrequests' => "Há, neste momento, '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitação|solicitações}} pendentes de contas]]. '''Seus cuidados são necessários!''",
@@ -704,9 +704,9 @@ $messages['sk'] = array(
  * @author Pyt
  */
 $messages['stq'] = array(
-	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|eepenen, E-Mail bestäätigden Benutserkontenandraach täift]]|[[Special:ConfirmAccounts|eepene, E-Mail bestäätigde Benutserkontenandraage täiwe]]}} ap Beoarbaidenge.",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|eepenen, E-Mail bestäätigden Benutserkontenandraach täift]]|[[Special:ConfirmAccounts|eepene, E-Mail bestäätigde Benutserkontenandraage täiwe]]}} ap Beoarbaidenge.", # Fuzzy
 	'requestaccount-loginnotice' => "Uum n näi Benutserkonto tou kriegen, moast du
-der uum '''[[{{ns:special}}:RequestAccount|fräigje]]'''.",
+der uum '''[[{{ns:special}}:RequestAccount|fräigje]]'''.", # Fuzzy
 );
 
 /** Sundanese (Basa Sunda)
@@ -743,7 +743,7 @@ $messages['sv'] = array(
  * @author వైజాసత్య
  */
 $messages['te'] = array(
-	'confirmaccount-newrequests' => "ప్రస్తుతం '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థన]]|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థనలు]]}} వేచి{{PLURAL:$1|వుంది|వున్నాయి}}.",
+	'confirmaccount-newrequests' => "ప్రస్తుతం '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థన]]|[[Special:ConfirmAccounts|ఖాతా అభ్యర్థనలు]]}} వేచి{{PLURAL:$1|వుంది|వున్నాయి}}.", # Fuzzy
 	'requestaccount-loginnotice' => "ఖాతా పొందడానికి, మీరు తప్పనిసరిగా '''[[Special:RequestAccount|అభ్యర్థించాలి]]'''.",
 );
 
@@ -790,14 +790,15 @@ $messages['tl'] = array(
  * @author Vito Genovese
  */
 $messages['tr'] = array(
-	'confirmaccount-newrequests' => "'''$1''' açık e-postası doğrulanmış [[Special:ConfirmAccounts|hesap {{PLURAL:$1|istek|istek}}]] beklemede",
+	'confirmaccount-newrequests' => "'''$1''' açık e-postası doğrulanmış [[Special:ConfirmAccounts|hesap {{PLURAL:$1|istek|istek}}]] beklemede", # Fuzzy
 	'requestaccount-loginnotice' => "Bir kullanıcı hesabı almak için, '''[[Special:RequestAccount|istekte bulunmanız]]''' gerekmektedir.",
 	'right-confirmaccount' => '[[Special:ConfirmAccounts|Hesap istekleri grubunu]] görür',
 	'right-requestips' => 'İstenen hesaplarla ilgili işlem yaparken istek sahibinin IP adresini görür',
 	'right-lookupcredentials' => '[[Special:UserCredentials|Kullanıcı referanslarını]] görür',
 );
 
-/** Cantonese (粵語) */
+/** Cantonese (粵語)
+ */
 $messages['yue'] = array(
 	'requestaccount-loginnotice' => "要拎一個用戶戶口，你一定要'''[[Special:RequestAccount|請求一個]]'''。",
 );
@@ -821,10 +822,9 @@ $messages['zh-hans'] = array(
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
-	'confirmaccount-newrequests' => "'''$1'''開啟電郵確認[[Special:ConfirmAccounts|{{PLURAL:$1|帳戶請求|多個帳戶請求}}]]待審中",
+	'confirmaccount-newrequests' => "'''$1'''開啟電郵確認[[Special:ConfirmAccounts|{{PLURAL:$1|帳戶請求|多個帳戶請求}}]]待審中", # Fuzzy
 	'requestaccount-loginnotice' => "要取得個使用者帳號，您一定要'''[[Special:RequestAccount|請求一個]]'''。",
 	'right-confirmaccount' => '查看[[Special:ConfirmAccounts|待審帳戶隊列]]',
 	'right-requestips' => '在處理帳戶請求時查看請求者的IP地址',
 	'right-lookupcredentials' => '查看[[Special:UserCredentials|用戶憑據]]',
 );
-

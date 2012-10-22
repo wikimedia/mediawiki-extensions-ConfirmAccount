@@ -94,6 +94,7 @@ $messages['qqq'] = array(
 	'requestaccount-leg-areas' => '{{Identical|Main areas of interest}}',
 	'requestaccount-leg-person' => '{{Identical|Personal information}}',
 	'requestaccount-leg-other' => '{{Identical|Other information}}',
+	'requestaccount-areas' => '{{notranslate}}',
 	'requestaccount-real' => 'When changing this message, please make sure to change {{msg-mw|requestaccount-tos|notext=yes}} too, which directly references to this message.
 {{Identical|Real name}}',
 	'requestaccount-email' => '{{Identical|E-mail address}}',
@@ -281,7 +282,7 @@ $messages['arz'] = array(
 	'requestaccount-bio-text' => 'سيرتك الشخصية ستعرض كالمحتوى الافتراضى لصفحة المستخدم الخاصة بك.
 حاول تضمين أية شهادات.
 تأكد من ارتياحك لنشر هذه المعلومات.
-اسمك يمكن تغييره من خلال [[Special:Preferences|تفضيلاتك]].',
+اسمك يمكن تغييره من خلال [[Special:Preferences|تفضيلاتك]].', # Fuzzy
 	'requestaccount-real' => 'الاسم الحقيقي:',
 	'requestaccount-same' => '(مثل الاسم الحقيقي)',
 	'requestaccount-email' => 'عنوان البريد الإلكتروني:',
@@ -289,7 +290,7 @@ $messages['arz'] = array(
 	'requestaccount-level-0' => 'مؤلف',
 	'requestaccount-level-1' => 'محرر',
 	'requestaccount-info' => '(؟)',
-	'requestaccount-bio' => 'السيرة الشخصية:',
+	'requestaccount-bio' => 'السيرة الشخصية:', # Fuzzy
 	'requestaccount-attach' => 'استكمال أو السيرة الذاتية (اختياري):',
 	'requestaccount-notes' => 'ملاحظات إضافية:',
 	'requestaccount-urls' => 'قائمة مواقع الويب، إن وجدت (افصل بسطور جديدة):',
@@ -443,20 +444,20 @@ $messages['bg'] = array(
 	'requestaccount-bio-text' => 'Въведената биография ще бъде съхранена като основно съдържание на потребителската ви страница.
 Желателно е да включите препоръки.
 Уверете се, че публикуването на такава информация не ви притеснява.
-Можете да промените името си по-късно чрез [[Special:Preferences]].',
+Можете да промените името си по-късно чрез [[Special:Preferences]].', # Fuzzy
 	'requestaccount-real' => 'Име и фамилия:',
 	'requestaccount-same' => '(съвпада с името)',
 	'requestaccount-email' => 'Електронна поща:',
 	'requestaccount-reqtype' => 'Позиция:',
 	'requestaccount-level-0' => 'автор',
 	'requestaccount-level-1' => 'редактор',
-	'requestaccount-bio' => 'Лична биография:',
+	'requestaccount-bio' => 'Лична биография:', # Fuzzy
 	'requestaccount-attach' => 'Резюме или автобиография (по избор):',
 	'requestaccount-notes' => 'Допълнителни бележки:',
 	'requestaccount-urls' => 'Списък от уебсайтове (ако има такива, по един на ред):',
 	'requestaccount-agree' => 'Моля, потвърдете, че истинското ви име е изписано правилно и сте съгласни с Условията за ползване.',
 	'requestaccount-inuse' => 'За това потребителско име вече чака заявка за създаване на сметка.',
-	'requestaccount-tooshort' => 'Необходимо е биографията да съдържа поне $1 думи.',
+	'requestaccount-tooshort' => 'Необходимо е биографията да съдържа поне $1 думи.', # Fuzzy
 	'requestaccount-emaildup' => 'Посоченият адрес за електронна поща е използвам при друга изчакваща заявка за потребителска сметка.',
 	'requestaccount-exts' => 'Не е разрешено прикачането на файлове с този формат.',
 	'requestaccount-resub' => 'От съображения за сигурност е необходимо да изберете повторно своето CV/резюме.
@@ -499,7 +500,7 @@ $messages['bn'] = array(
 	'requestaccount-reqtype' => 'পদ:',
 	'requestaccount-level-0' => 'লেখক',
 	'requestaccount-level-1' => 'সম্পাদক',
-	'requestaccount-bio' => 'ব্যক্তিগত জীবনী:',
+	'requestaccount-bio' => 'ব্যক্তিগত জীবনী:', # Fuzzy
 	'requestaccount-attach' => 'রেজুমে বা সিভি (আবশ্যকীয় নয়):',
 	'requestaccount-notes' => 'অতিরিক্ত মন্তব্য:',
 	'requestaccount-urls' => 'ওয়েবসাইটের তালিকা, যদি থাকে (নতুন লাইন দিয়ে পৃথক করুন):',
@@ -635,7 +636,7 @@ $messages['ca'] = array(
 	'requestaccount-reqtype' => 'Posició:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografia personal:',
+	'requestaccount-bio' => 'Biografia personal:', # Fuzzy
 	'requestaccount-notes' => 'Notes addicionals:',
 );
 
@@ -657,7 +658,7 @@ $messages['cs'] = array(
 	'requestaccount-leg-tos' => 'Podmínky služby',
 	'requestaccount-acc-text' => 'Na Vaši e-mailovou adresu bude po odeslání žádosti zaslána potvrzující zpráva. Prosím, reagujte na ni kliknutím na odkaz v ní. Poté Vám bude zasláno Vaše heslo.',
 	'requestaccount-areas-text' => 'Níže zvolte tématické oblasti, ve kterých jste formálně expertem nebo by jste v nich rádi vykonávali vaši práci.',
-	'requestaccount-bio-text' => 'Vaše bibliografie bude prvotním obsahem vaši uživatelské stránky. Pokuste se uvést všechny reference. Zvažte, zda jste ochotni zveřejnit tyto informace. Jméno si můžete změnit ve [[Special:Preferences|svém nastavení]].',
+	'requestaccount-bio-text' => 'Vaše bibliografie bude prvotním obsahem vaši uživatelské stránky. Pokuste se uvést všechny reference. Zvažte, zda jste ochotni zveřejnit tyto informace. Jméno si můžete změnit ve [[Special:Preferences|svém nastavení]].', # Fuzzy
 	'requestaccount-real' => 'Skutečné jméno:',
 	'requestaccount-same' => '(stejné jako skutečné jméno)',
 	'requestaccount-email' => 'E-mailová adresa:',
@@ -704,6 +705,7 @@ $messages['cu'] = array(
 
 /** Danish (dansk)
  * @author Aka-miki
+ * @author Christian List
  * @author Jon Harald Søby
  * @author Kaare
  */
@@ -729,15 +731,15 @@ Du kan angive kontaktoplysninger så som et telefonnummer, for at gøre det lett
 	'requestaccount-bio-text-i' => "'''Biografien vil blive anvendt som indledende indhold på din brugerside.'''
 Sørg for kun at medtage oplysninger, som du ønsker alle må se.",
 	'requestaccount-real' => 'Rigtigt navn:',
-	'requestaccount-same' => '(Samme som rigtigt navn)',
-	'requestaccount-email' => 'E-mail-adresse',
+	'requestaccount-same' => '(samme som rigtigt navn nedenfor)',
+	'requestaccount-email' => 'E-mail-adresse:',
 	'requestaccount-reqtype' => 'Stilling:',
 	'requestaccount-level-0' => 'forfatter',
 	'requestaccount-level-1' => 'redaktør',
 	'requestaccount-bio' => 'Personlig biografi (uformateret tekst):',
-	'requestaccount-attach' => 'CV (valgfrit)',
+	'requestaccount-attach' => 'CV (valgfrit):',
 	'requestaccount-notes' => 'Yderligere bemærkninger:',
-	'requestaccount-urls' => 'Liste over websteder, om nogen (benyt en linje til hvert sted)',
+	'requestaccount-urls' => 'Liste over websteder, om nogen (benyt en linje til hvert sted):',
 	'requestaccount-agree' => 'Du skal bekræfte, at dit rigtige navn er korrekt og at du accepterer anvendelsesvilkårene.',
 	'requestaccount-inuse' => 'Brugernavnet er allerede i brug i en ventende kontoanmodning.',
 	'requestaccount-tooshort' => 'Biografien skal som minimum indeholde $1 {{PLURAL:$1|ord}}.',
@@ -762,7 +764,7 @@ Hvis kontoen bliver oprettet, vil du modtage adgangskoden.
 Hvis det *ikke* er dig, så benyt ikke linket.
 Bekræftelseskoden udløber den $4.',
 	'requestaccount-email-subj-admin' => 'Anmod om konto på {{SITENAME}}',
-	'requestaccount-email-body-admin' => '"$1" har anmodet om en konto er venter på bekræftelse.
+	'requestaccount-email-body-admin' => '"$1" har anmodet om en konto og venter på bekræftelse.
 E-mail-adressen er blevet bekræftet. Du kan bekræfte anmodningen på: $2',
 	'acct_request_throttle_hit' => 'Beklager, du har allerede anmodet om {{PLURAL:$1|en konto|$1 konti}}.
 Du kan ikke foretage flere anmodninger.',
@@ -994,7 +996,7 @@ $messages['el'] = array(
 	'requestaccount-reqtype' => 'Θέση:',
 	'requestaccount-level-0' => 'δημιουργός',
 	'requestaccount-level-1' => 'συντάκτης',
-	'requestaccount-bio' => 'Προσωπική βιογραφία:',
+	'requestaccount-bio' => 'Προσωπική βιογραφία:', # Fuzzy
 	'requestaccount-attach' => 'Βιογραφικό (προαιρετικό):',
 	'requestaccount-notes' => 'Συμπληρωματικές σημειώσεις:',
 	'requestaccount-tooshort' => 'Το βιογραφικό σας θα πρέπει να είναι τουλάχιστον $1 {{PLURAL:$1|λέξη|λέξεις}}',
@@ -1021,7 +1023,7 @@ $messages['eo'] = array(
 	'requestaccount-reqtype' => 'Pozicio:',
 	'requestaccount-level-0' => 'aŭtoro',
 	'requestaccount-level-1' => 'Redaktanto',
-	'requestaccount-bio' => 'Persona biografio:',
+	'requestaccount-bio' => 'Persona biografio:', # Fuzzy
 	'requestaccount-attach' => 'Karierresumo (nedeviga):',
 	'requestaccount-notes' => 'Pluaj notoj:',
 	'requestaccount-tooshort' => 'Via biografio devas havi almenaŭ $1 {{PLURAL:$1|vorton|vortojn}}.',
@@ -1206,7 +1208,7 @@ Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sillä voi [[Spec
 Haluat ehkä antaa tunnistamista helpottavia yhteystietoja, puhelinnumeron esimerkiksi.',
 	'requestaccount-bio-text' => 'Kuvauksestasi tulee käyttäjäsivusi oletussisältö.
 Kirjoita omiin tietoihisi erikoisosaamisistasi ja pätevyyksistäsi. Muista, että nämä tiedot julkaistaan.
-Voit muuttaa nimeäsi [[Special:Preferences|asetussivulla]].',
+Voit muuttaa nimeäsi [[Special:Preferences|asetussivulla]].', # Fuzzy
 	'requestaccount-real' => 'Oikea nimi:',
 	'requestaccount-same' => '(sama kuin oikea nimi)',
 	'requestaccount-email' => 'Sähköpostiosoite:',
@@ -1575,7 +1577,7 @@ $messages['gv'] = array(
 	'requestaccount-email' => 'Enmys post-L:',
 	'requestaccount-level-0' => 'ughtar',
 	'requestaccount-level-1' => 'reagheyder',
-	'requestaccount-bio' => 'Beashnys persoonagh:',
+	'requestaccount-bio' => 'Beashnys persoonagh:', # Fuzzy
 	'requestaccount-notes' => 'Noteyn elley:',
 );
 
@@ -1676,7 +1678,7 @@ $messages['hi'] = array(
 	'requestaccount-reqtype' => 'पोज़िशन:',
 	'requestaccount-level-0' => 'लेखक',
 	'requestaccount-level-1' => 'संपादक',
-	'requestaccount-bio' => 'वैयक्तिक चरित्र:',
+	'requestaccount-bio' => 'वैयक्तिक चरित्र:', # Fuzzy
 	'requestaccount-attach' => 'रिज़्यूम या सीव्ही (वैकल्पिक):',
 	'requestaccount-notes' => 'अधिक जानकारी:',
 	'requestaccount-urls' => 'वेबसाईट्स की सूची, अगर हैं तो (एक लाईनमें एक):',
@@ -1686,7 +1688,7 @@ $messages['hi'] = array(
 	'requestaccount-emaildup' => 'एक अन्य पूरी न हुई माँगमें यह इ-मेल एड्रेस दिया हुआ हैं।',
 	'requestaccount-exts' => 'संलग्न प्रकार की संचिका की अनुमति नहीं है।',
 	'requestaccount-submit' => 'खाता मंगायें',
-	'requestaccount-sent' => 'आपकी खाता खोलने की माँग पंजिकृत हो गई हैं और अब इसे फिरसे परखने के लिये रखा गया हैं।',
+	'requestaccount-sent' => 'आपकी खाता खोलने की माँग पंजिकृत हो गई हैं और अब इसे फिरसे परखने के लिये रखा गया हैं।', # Fuzzy
 	'request-account-econf' => 'आपका इ-मेल एड्रेस प्रमाणित हो गया है और इसे अब आपकी खाता खोलेने की माँग में दर्ज कर दिया गया हैं।',
 	'requestaccount-email-subj' => '{{SITENAME}} इमेल एड्रेस प्रमाणिकरण',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} खाता खोलने की माँग',
@@ -1721,14 +1723,14 @@ Možda želite navesti broj telefona (mobitela) kao pomoć za potvrđivanje vaš
 	'requestaccount-bio-text' => 'Vaša biografija će biti postavljena kao glavni sadržaj za vašu suradničku stranicu.
 Pokušajte napisati nešto o sebi.
 Budite sigurni da pišete informacije koje su vama prihvatljive.
-Vaše pravo ime možete promijeniti putem [[Special:Preferences|postavki]].',
+Vaše pravo ime možete promijeniti putem [[Special:Preferences|postavki]].', # Fuzzy
 	'requestaccount-real' => 'Pravo ime:',
 	'requestaccount-same' => '(bit će isto kao i pravo ime)',
 	'requestaccount-email' => "Adresa e-pošte (vaš ''e-mail''):",
 	'requestaccount-reqtype' => 'Mjesto:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'uređivač',
-	'requestaccount-bio' => 'Osobna biografija:',
+	'requestaccount-bio' => 'Osobna biografija:', # Fuzzy
 	'requestaccount-attach' => 'Rezime ili CV (po želji):',
 	'requestaccount-notes' => 'Dodatne bilješke:',
 	'requestaccount-urls' => 'Popis web stranica, ako ih ima (odvojite ih redom):',
@@ -1741,7 +1743,7 @@ Vaše pravo ime možete promijeniti putem [[Special:Preferences|postavki]].',
 	'requestaccount-tos' => 'Pročitao sam i slažem se s [[{{MediaWiki:Requestaccount-page}}|Uvjetima uporabe]] internetskih stranica {{SITENAME}}.
 Ime koje sam napisao kao "Pravo ime" je moje pravo ime (nije nadimak/alias).',
 	'requestaccount-submit' => 'Zatraži račun',
-	'requestaccount-sent' => 'Vaš zahtjev je uspješno poslan i sada čeka potvrdu.',
+	'requestaccount-sent' => 'Vaš zahtjev je uspješno poslan i sada čeka potvrdu.', # Fuzzy
 	'request-account-econf' => 'Vaša e-mail adresa je potvrđena i bit će tako označena u vašem zahtjevu.',
 	'requestaccount-email-subj' => '{{SITENAME}} potvrda e-mail adrese',
 	'requestaccount-email-body' => 'Netko, vjerojatno s vaše IP adrese $1, je zatražio račun "$2" s ovom e-mail adresom na {{SITENAME}}.
@@ -1848,14 +1850,14 @@ Megadhatsz kapcsolati adatokat, pl. telefonszámot, hogy segíts a személyazono
 	'requestaccount-bio-text' => 'Az életrajzod lesz a felhasználói lapod alapértelmezett tartalma.
 Próbálj meg bizonyítványokat is belefoglalni.
 Győződj meg arról, hogy tényleg közzé szeretnéd-e tenni ezeket az információkat.
-A nevedet megváltoztathatod a „[[Special:Preferences|beállításaim]]” lapon.',
+A nevedet megváltoztathatod a „[[Special:Preferences|beállításaim]]” lapon.', # Fuzzy
 	'requestaccount-real' => 'Valódi név:',
 	'requestaccount-same' => '(ugyanaz, mint a valódi név)',
 	'requestaccount-email' => 'E-mail cím:',
 	'requestaccount-reqtype' => 'Pozíció:',
 	'requestaccount-level-0' => 'szerző',
 	'requestaccount-level-1' => 'szerkesztő',
-	'requestaccount-bio' => 'Személyes életrajz:',
+	'requestaccount-bio' => 'Személyes életrajz:', # Fuzzy
 	'requestaccount-attach' => 'CV (nem kötelező)',
 	'requestaccount-notes' => 'További megjegyzések:',
 	'requestaccount-urls' => 'Weboldalak listája, ha van (külön sorba írd őket):',
@@ -2042,11 +2044,11 @@ $messages['is'] = array(
 	'requestaccount-reqtype' => 'Staða:',
 	'requestaccount-level-0' => 'höfundur',
 	'requestaccount-level-1' => 'ritstjóri',
-	'requestaccount-bio' => 'Sjálfsævisaga:',
+	'requestaccount-bio' => 'Sjálfsævisaga:', # Fuzzy
 	'requestaccount-attach' => 'Ferilskrá (valfrjálst):',
 	'requestaccount-notes' => 'Viðbótarskýring:',
 	'requestaccount-urls' => 'Listi yfir vefsíður, ef einhverjar (aðskildu með línum):',
-	'requestaccount-tooshort' => 'Notendaupplýsingarnar þínar þurfa að vera að minnsta kosti $1 orð á lengd.',
+	'requestaccount-tooshort' => 'Notendaupplýsingarnar þínar þurfa að vera að minnsta kosti $1 orð á lengd.', # Fuzzy
 	'requestaccount-submit' => 'Sækja um aðgang',
 	'requestaccount-sent' => 'Beðni þín um aðgang var móttekin og bíður nú yfirferðar hjá stjórnendum. Staðfestingarpóstur var sendur á netfangið þitt.',
 	'request-account-econf' => 'Netfangið þitt hefur verið staðfest og mun vera listað sem slíkt meðal aðgangsbeðna.',
@@ -2234,14 +2236,14 @@ Yu maita waahn fi lis kantak laka fuon nomba fi ied ina aidentifai kanfoermiesha
 	'requestaccount-bio-text' => 'Yu bayagrafi wi set az difaalt kantent fi yu yuuzapiej.
 Chrai fi inkluud eni kridenshal.
 Mek shuor se yu komfotebl fi poblish soertn infamieshan.
-Yu niem kiahn chienj vaya [[Special:Preferences|yu prefransdem]].',
+Yu niem kiahn chienj vaya [[Special:Preferences|yu prefransdem]].', # Fuzzy
 	'requestaccount-real' => 'Riil niem:',
 	'requestaccount-same' => '(siem az riil niem)',
 	'requestaccount-email' => 'E-miel ajres:',
 	'requestaccount-reqtype' => 'Pozishan:',
 	'requestaccount-level-0' => 'aata',
 	'requestaccount-level-1' => 'edita',
-	'requestaccount-bio' => 'Persnal bayagrafi:',
+	'requestaccount-bio' => 'Persnal bayagrafi:', # Fuzzy
 	'requestaccount-attach' => 'Rizume ar CV (apshanal):',
 	'requestaccount-notes' => 'Adishanal nuot:',
 	'requestaccount-urls' => 'Lis a websait, ef eni (separiet wid nyuu lain):',
@@ -2291,7 +2293,7 @@ $messages['jv'] = array(
 	'requestaccount-reqtype' => 'Posisi:',
 	'requestaccount-level-0' => 'pangripta',
 	'requestaccount-level-1' => 'panyunting',
-	'requestaccount-bio' => 'Babad slira pribadi:',
+	'requestaccount-bio' => 'Babad slira pribadi:', # Fuzzy
 	'requestaccount-attach' => 'Riwayat urip utawa CV (opsional):',
 	'requestaccount-notes' => 'Cathetan tambahan:',
 	'requestaccount-urls' => 'Daftar situs-situs wèb, yèn ana (pisahen mawa garis-garis anyar):',
@@ -2359,7 +2361,7 @@ $messages['km'] = array(
 	'requestaccount-reqtype' => 'តួនាទី៖',
 	'requestaccount-level-0' => 'អ្នកនិពន្ធ៖',
 	'requestaccount-level-1' => 'ឧបករណ៍កែប្រែ',
-	'requestaccount-bio' => 'ជីវប្រវត្តិផ្ទាល់ខ្លួន៖',
+	'requestaccount-bio' => 'ជីវប្រវត្តិផ្ទាល់ខ្លួន៖', # Fuzzy
 	'requestaccount-attach' => 'ប្រវត្តិរូប (ស្រេចចិត្ត)​៖',
 	'requestaccount-notes' => 'សម្គាល់បន្ថែម៖',
 	'requestaccount-urls' => 'បញ្ជីវិបសាយ បើមាន (ចែកគ្នាដោយការចុះបន្ទាត់)៖',
@@ -2605,14 +2607,14 @@ Doe kans kontakgegaevens zoewie 'n tillefoonnómmer opgaeve om te helpe bie 't v
 	'requestaccount-bio-text' => "Dien biografie weurt opgenóme in dien gebroekerspagina.
 Perbeer dien belangriekste gegaeves op te numme.
 Zörg deveur dats doe achter 't publicere van dergelike infermatse sjteis.
-Doe kans diene naam aanpasse via dien [[Special:Preferences|veurkaöre]].",
+Doe kans diene naam aanpasse via dien [[Special:Preferences|veurkaöre]].", # Fuzzy
 	'requestaccount-real' => 'Diene echte naam:',
 	'requestaccount-same' => '(geliek aan diene echte naam)',
 	'requestaccount-email' => 'E-mailadres:',
 	'requestaccount-reqtype' => 'Positie',
 	'requestaccount-level-0' => 'auteur',
 	'requestaccount-level-1' => 'redacteur',
-	'requestaccount-bio' => 'Persuunlike biografie:',
+	'requestaccount-bio' => 'Persuunlike biografie:', # Fuzzy
 	'requestaccount-attach' => 'CV (optioneel):',
 	'requestaccount-notes' => 'Opmerkinge:',
 	'requestaccount-urls' => "Lies van websites, es van toepassing (jeder site op 'ne aafzunjerlike regel):",
@@ -2720,7 +2722,7 @@ $messages['ml'] = array(
 	'requestaccount-reqtype' => 'സ്ഥാനം:',
 	'requestaccount-level-0' => 'ലേഖകൻ',
 	'requestaccount-level-1' => 'എഡിറ്റർ',
-	'requestaccount-bio' => 'വ്യക്തിഗത വിവരങ്ങൾ:',
+	'requestaccount-bio' => 'വ്യക്തിഗത വിവരങ്ങൾ:', # Fuzzy
 	'requestaccount-attach' => 'റെസ്യൂം അല്ലെങ്കിൽ സിവി (ഓപ്ഷണൽ):',
 	'requestaccount-notes' => 'കൂടുതൽ കുറിപ്പുകൾ:',
 	'requestaccount-urls' => 'വെബ്ബ്സൈറ്റുകളുടെ പട്ടിക (ഓരോന്നും വെവ്വേറെ വരിയിൽ കൊടുക്കുക):',
@@ -2776,7 +2778,7 @@ $messages['mr'] = array(
 	'requestaccount-urls' => 'संकेतस्थळांची यादी (एका ओळीत एक):',
 	'requestaccount-agree' => 'तुम्ही दिलेले स्वत:चे खरे नाव हे बरोबर असल्याचे नमूद करा तसेच तुम्हाला अटी व नियम मान्य आहेत असे नमूद करा.',
 	'requestaccount-inuse' => 'तुम्ही दिलेले सदस्यनाव या आधीच कुणीतरी खाते उघडण्यासाठी मागितलेले आहे.',
-	'requestaccount-tooshort' => 'तुमच्या वैयक्तिक माहिती मध्ये कमीतकमी $1 शब्द असणे आवश्यक आहे.',
+	'requestaccount-tooshort' => 'तुमच्या वैयक्तिक माहिती मध्ये कमीतकमी $1 शब्द असणे आवश्यक आहे.', # Fuzzy
 	'requestaccount-emaildup' => 'तुम्ही दिलेला इमेल पत्ता दुसऱ्या एका पूर्ण न झालेल्या मागणीमध्ये नोंदलेला आहे.',
 	'requestaccount-exts' => 'जोडण्याच्या संचिकेचा प्रकार वापरायला परवानगी नाही.',
 	'requestaccount-resub' => 'तुमच्या रिज्यूमची संचिका सुरक्षेच्या कारणास्तव पुन्हा निवडणे आवश्यक आहे.
@@ -2784,7 +2786,7 @@ $messages['mr'] = array(
 	'requestaccount-tos' => 'मी {{SITENAME}} वरचे [[{{MediaWiki:Requestaccount-page}}|नियम व अटी]] वाचलेले असून त्यांना बांधील राहण्याचे वचन देतो.
 तसेच मी दिलेले "खरे नाव" हे माझेच खरे नाव आहे.',
 	'requestaccount-submit' => 'खाते मागवा',
-	'requestaccount-sent' => 'तुमची खात्याची मागणी नोंदलेली आहे व पुनर्तपासणीसाठी गेलेली आहे.',
+	'requestaccount-sent' => 'तुमची खात्याची मागणी नोंदलेली आहे व पुनर्तपासणीसाठी गेलेली आहे.', # Fuzzy
 	'request-account-econf' => 'तुमचा इमेल पत्ता तपासलेला आहे व तो तुमच्या खात्याच्या मागणीमध्ये नोंदला जाईल.',
 	'requestaccount-email-subj' => '{{SITENAME}} इमेल पत्ता तपासणी',
 	'requestaccount-email-body' => 'कुणीतरी, बहुतेक तुम्ही, $1 या आयपी अंकपत्त्यावरून, {{SITENAME}} वर "$2" हे खाते उघडण्याची मागणी ह्या इमेल पत्त्यावर नोंदविलेली आहे.
@@ -2798,7 +2800,7 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}} खाते मागणी',
 	'requestaccount-email-body-admin' => '"$1" ने एक खात्याची मागणी नोंदविलेली आहे व ती तुमच्या सहमतीची वाट पाहत आहे.
 इमेल पत्ता तपासलेला आहे. तुम्ही तुमची सहमती "$2" इथे नोंदवू शकता.',
-	'acct_request_throttle_hit' => 'माफ करा, तुम्ही अगोदरच $1 खात्यांची मागणी नोंदविलेली आहे. तुम्ही अजून मागण्या नोंदवू शकत नाही.',
+	'acct_request_throttle_hit' => 'माफ करा, तुम्ही अगोदरच $1 खात्यांची मागणी नोंदविलेली आहे. तुम्ही अजून मागण्या नोंदवू शकत नाही.', # Fuzzy
 );
 
 /** Malay (Bahasa Melayu)
@@ -3019,7 +3021,7 @@ $messages['nds'] = array(
 	'requestaccount-leg-user' => 'Brukerkonto',
 	'requestaccount-real' => 'Echten Naam:',
 	'requestaccount-email' => 'E-Mail-Adress:',
-	'requestaccount-bio' => 'Biografie:',
+	'requestaccount-bio' => 'Biografie:', # Fuzzy
 );
 
 /** Dutch (Nederlands)
@@ -3118,14 +3120,14 @@ Passordet ditt vil òg bli sendt til deg når kontoen er oppretta.',
 	'requestaccount-ext-text' => 'Følgjande informasjon vil bli heldt privat, og vil berre bli nytta for denne førespurnaden. Du vil kanskje lista opp kontaktinformasjon som eit telefonnummer for å hjelpa til med å stadfesta identiteten din.',
 	'requestaccount-bio-text' => 'Biografien din vil verta sett som standardinnhald på brukarsida di.
 Prøv å inkludera attestinformasjon, men berre om du føler deg tilpass med å frigje slik informasjon.
-Namnet ditt kan verta endra gjennom [[Special:Preferences|innstillingane dine]].',
+Namnet ditt kan verta endra gjennom [[Special:Preferences|innstillingane dine]].', # Fuzzy
 	'requestaccount-real' => 'Verkeleg namn:',
 	'requestaccount-same' => '(same som verkeleg namn)',
 	'requestaccount-email' => 'E-postadresse:',
 	'requestaccount-reqtype' => 'Stilling:',
 	'requestaccount-level-0' => 'forfattar',
 	'requestaccount-level-1' => 'redaktør',
-	'requestaccount-bio' => 'Personleg biografi:',
+	'requestaccount-bio' => 'Personleg biografi:', # Fuzzy
 	'requestaccount-attach' => 'Resyme eller CV (valfritt):',
 	'requestaccount-notes' => 'Andre merknader:',
 	'requestaccount-urls' => 'Lista over nettsider, om det er nokre (skil dei frå kvarandre med lineskift):',
@@ -3187,14 +3189,14 @@ $messages['oc'] = array(
 	'requestaccount-acc-text' => 'Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. Dins lo corrièr recebut, clicatz sul ligam correspondent a la confirmacion de vòstra demanda. E mai, senhal serà mandat per corrièr electronic quand vòstre compte serà creat.',
 	'requestaccount-areas-text' => 'Causissètz los domenis dins los quals avètz una expertisa demostrada, o dins los quals sètz mai portat a contribuir.',
 	'requestaccount-ext-text' => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telefòn per obténer una assisténcia per confirmar vòstra identitat.',
-	'requestaccount-bio-text' => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences|vòstras preferéncias]].",
+	'requestaccount-bio-text' => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences|vòstras preferéncias]].", # Fuzzy
 	'requestaccount-real' => 'Nom vertadièr :',
 	'requestaccount-same' => '(nom figurant dins vòstre estat civil)',
 	'requestaccount-email' => 'Adreça electronica:',
 	'requestaccount-reqtype' => 'Situacion :',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografia personala :',
+	'requestaccount-bio' => 'Biografia personala :', # Fuzzy
 	'requestaccount-attach' => 'CV/Resumit (facultatiu)',
 	'requestaccount-notes' => 'Nòtas suplementàrias :',
 	'requestaccount-urls' => "Lista dels sites Web. Se n'i a mai d'un, separatz-los per un saut de linha :",
@@ -3251,7 +3253,7 @@ $messages['pa'] = array(
 	'requestaccount-reqtype' => 'ਸਥਿਤੀ:',
 	'requestaccount-level-0' => 'ਲੇਖਕ',
 	'requestaccount-level-1' => 'ਐਡੀਟਰ',
-	'requestaccount-bio' => 'ਨਿੱਜੀ ਜਾਣਕਾਰੀ:',
+	'requestaccount-bio' => 'ਨਿੱਜੀ ਜਾਣਕਾਰੀ:', # Fuzzy
 	'requestaccount-notes' => 'ਹੋਰ ਨੋਟ:',
 	'requestaccount-inuse' => 'ਯੂਜ਼ਰ ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਅਕਾਊਂਟ ਬੇਨਤੀ ਲਈ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।',
 	'requestaccount-submit' => 'ਅਕਾਊਂਟ ਬੇਨਤੀ',
@@ -3510,14 +3512,14 @@ Poderá querer listar contatos tal como o número de telefone para ajudar na con
 	'requestaccount-bio-text' => 'A sua biografia será usada como conteúdo padrão da sua página de utilizador.
 Tente incluir algumas credenciais.
 Assegure-se de que se encontra confortável em publicar tal informação.
-O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].',
+O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].', # Fuzzy
 	'requestaccount-real' => 'Nome real:',
 	'requestaccount-same' => '(igual ao nome real)',
 	'requestaccount-email' => 'Endereço de e-mail:',
 	'requestaccount-reqtype' => 'Posição:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografia pessoal:',
+	'requestaccount-bio' => 'Biografia pessoal:', # Fuzzy
 	'requestaccount-attach' => 'Curriculum Vitae (opcional):',
 	'requestaccount-notes' => 'Notas adicionais:',
 	'requestaccount-urls' => 'Lista de sítios web, se houver algum (separados por mudança de linha):',
@@ -3767,14 +3769,14 @@ Keď bude účet schválený, príde vám emailom oznámenie a bude možné prih
 	'requestaccount-bio-text' => 'Vaša biografia bude prvotným obsahom vašej používateľskej stránky.
 Pokúste sa uviesť všetky referencie.
 Zvážte, či ste ochotní zverejniť tieto informácie.
-Vaše meno je možné zmeniť vo vašich [[Special:Preferences|nastaveniach]].',
+Vaše meno je možné zmeniť vo vašich [[Special:Preferences|nastaveniach]].', # Fuzzy
 	'requestaccount-real' => 'Skutočné meno:',
 	'requestaccount-same' => '(rovnaké ako skutočné meno)',
 	'requestaccount-email' => 'Emailová adresa:',
 	'requestaccount-reqtype' => 'Pozícia:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'redaktor',
-	'requestaccount-bio' => 'Osobná biografia:',
+	'requestaccount-bio' => 'Osobná biografia:', # Fuzzy
 	'requestaccount-attach' => 'Resumé alebo CV (nepovinné):',
 	'requestaccount-notes' => 'Ďalšie poznámky:',
 	'requestaccount-urls' => 'Zoznam webstránok, ak nejaké sú (jednu na každý riadok):',
@@ -3879,7 +3881,7 @@ $messages['stq'] = array(
 
 	Läs eerste do [[{{MediaWiki:Requestaccount-page}}|Nutsengsbedingengen]] eer du n Benutserkonto fräigest.
 
-	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Beskeed un du koast die [[{{ns:special}}:Userlogin|anmäldje]].",
+	Sobolde dät Konto bestäätiged wuude, krichst du per E-Mail Beskeed un du koast die [[{{ns:special}}:Userlogin|anmäldje]].", # Fuzzy
 	'requestaccount-page' => '{{ns:project}}:Nutsengsbedingengen',
 	'requestaccount-dup' => "'''Oachtenge: Du bäst al mäd n registrierd Benutserkonto ienlogged.'''",
 	'requestaccount-leg-user' => 'Benutserkonto',
@@ -3893,20 +3895,20 @@ wäd die dien Paaswoud per E-Mail tousoand.',
 	'requestaccount-areas-text' => 'Wääl do Themengebiete uut, in do du dät maaste Fäkwieten hääst of wier du ap maaste involvierd weese skääst.',
 	'requestaccount-ext-text' => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
 ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaidenge fon din Andraach eenfacher tou moakjen.',
-	'requestaccount-bio-text' => 'Dien Biographie wäd as initioale Inhoold fon dien Benutsersiede spiekerd. Fersäik aal do nöödige Referenzen tou ärwäänen, man staal sicher, dät du do Informatione wuddelk eepentelk bekoand moakje moatest. Du koast din Noome unner „[[{{ns:special}}:preferences|Ienstaalengen]]“ annerje.',
+	'requestaccount-bio-text' => 'Dien Biographie wäd as initioale Inhoold fon dien Benutsersiede spiekerd. Fersäik aal do nöödige Referenzen tou ärwäänen, man staal sicher, dät du do Informatione wuddelk eepentelk bekoand moakje moatest. Du koast din Noome unner „[[{{ns:special}}:preferences|Ienstaalengen]]“ annerje.', # Fuzzy
 	'requestaccount-real' => 'Realname:',
 	'requestaccount-same' => '(as die Realname)',
 	'requestaccount-email' => 'E-Mail-Adresse:',
 	'requestaccount-reqtype' => 'Position:',
 	'requestaccount-level-0' => 'Autor',
 	'requestaccount-level-1' => 'Beoarbaider',
-	'requestaccount-bio' => 'Persöönelke Biographie:',
+	'requestaccount-bio' => 'Persöönelke Biographie:', # Fuzzy
 	'requestaccount-attach' => 'Lieuwensloop (optional):',
 	'requestaccount-notes' => 'Bietoukuumende Angoawen:',
 	'requestaccount-urls' => 'Lieste fon Websieden (truch Riegenuumbreeke tränd):',
 	'requestaccount-agree' => 'Du moast bestäätigje, dät din Realname so gjucht is un du do Benutserbedingengen akzeptierst.',
 	'requestaccount-inuse' => 'Die Benutsernoome is al in n uur Benutserandraach in Ferweendenge.',
-	'requestaccount-tooshort' => 'Dien Biographie skuul mindestens $1 Woude loang weese.',
+	'requestaccount-tooshort' => 'Dien Biographie skuul mindestens $1 Woude loang weese.', # Fuzzy
 	'requestaccount-emaildup' => 'N wiederen noch nit ouhonnelden Andraach benutset ju glieke E-Mail-Adresse.',
 	'requestaccount-exts' => 'Die Doatäityp fon dän Anhong is nit ferlööwed.',
 	'requestaccount-resub' => 'Ju Doatäi mäd din Lieuwensloop mout uut Sicherhaidsgruunden näi uutwääld wäide.
@@ -3914,7 +3916,7 @@ Läit dät Fäild loos, wan du naan Lieuwensloop moor anföigje moatest.',
 	'requestaccount-tos' => 'Iek hääbe do [[{{MediaWiki:Requestaccount-page}}|Benutsengsbedingengen]] fon {{SITENAME}} leesen un akzeptierje do.
 Iek bestäätigje, dät die Noome, dän iek unner „Realname“ ounroat hääbe, min wuddelke Noome is.',
 	'requestaccount-submit' => 'Fräigje uum n Benutserkonto',
-	'requestaccount-sent' => 'Dien Andraach wuude mäd Ärfoulch fersoand un mout nu noch wröiged wäide.',
+	'requestaccount-sent' => 'Dien Andraach wuude mäd Ärfoulch fersoand un mout nu noch wröiged wäide.', # Fuzzy
 	'request-account-econf' => 'Dien E-Mail-Adresse wuude bestäätiged un wäd nu as sodoane in dien  Account-Froage fierd.',
 	'requestaccount-email-subj' => '{{SITENAME}} E-Mail-Adressen Wröich',
 	'requestaccount-email-body' => 'Wäl mäd ju IP-Adresse $1, muugelkerwiese du, häd bie {{SITENAME}} uum dät Benutserkonto "$2" mäd dien E-Mail Adresse fräiged.
@@ -3949,14 +3951,14 @@ $messages['su'] = array(
 	'requestaccount-reqtype' => 'Posisi:',
 	'requestaccount-level-0' => 'pangarang',
 	'requestaccount-level-1' => 'éditor',
-	'requestaccount-bio' => 'Biografi pribadi:',
+	'requestaccount-bio' => 'Biografi pribadi:', # Fuzzy
 	'requestaccount-attach' => 'Résumeu atawa CV (teu wajib):',
 	'requestaccount-notes' => 'Catetan panambih:',
 	'requestaccount-urls' => 'Béréndélan ramatloka, mun aya (pisahkeun ku baris anyar):',
-	'requestaccount-tooshort' => 'Biografi anjeun sahanteuna kudu ngandung $1 kecap.',
+	'requestaccount-tooshort' => 'Biografi anjeun sahanteuna kudu ngandung $1 kecap.', # Fuzzy
 	'requestaccount-exts' => 'Jenis lampiran nu dimuatkeun dipahing.',
 	'requestaccount-submit' => 'Pénta rekening',
-	'requestaccount-sent' => 'Paménta rekening anjeun anggeus dikirim sarta rék dipariksa heula.',
+	'requestaccount-sent' => 'Paménta rekening anjeun anggeus dikirim sarta rék dipariksa heula.', # Fuzzy
 	'request-account-econf' => 'Alamat surélék anjeun geus dikonfirmasi sarta bakal ditambahkeun kana paménta rekening anjeun.',
 	'requestaccount-email-subj' => 'Konfirmasi alamat surélék {{SITENAME}}',
 	'requestaccount-email-subj-admin' => 'Paménta rekening {{SITENAME}}',
@@ -4138,7 +4140,7 @@ $messages['tg-cyrl'] = array(
 
 Мутмани бошед, ки шумо аввал [[{{MediaWiki:Requestaccount-page}}|Шартҳои Хидматро]] қабл аз дахости ҳисоб хондаед.
 
-Дар ҳоли тасдиқ шудани ҳисоб, паёми огоҳсозӣ тариқи почтаи электронӣ ба шумо фиристода хоҳад шуд ва ҳисоби шумо дар [[Special:UserLogin]] қобили истифода хоҳад шуд.",
+Дар ҳоли тасдиқ шудани ҳисоб, паёми огоҳсозӣ тариқи почтаи электронӣ ба шумо фиристода хоҳад шуд ва ҳисоби шумо дар [[Special:UserLogin]] қобили истифода хоҳад шуд.", # Fuzzy
 	'requestaccount-page' => '{{ns:project}}:Шартҳои Хидмат',
 	'requestaccount-dup' => "'''Эзоҳ: Шумо аллакай бо ҳисоби сабтшуда вуруд кардаед.'''",
 	'requestaccount-leg-user' => 'Ҳисоби корбар',
@@ -4150,25 +4152,25 @@ $messages['tg-cyrl'] = array(
 	'requestaccount-bio-text' => 'Зиндагиномаи шумо дар саҳифаи корбариатон ҳамчун мӯҳтавои пешфарз ҷой дода хоҳад шуд.
 Барои қарор додани ягон ихтиёроти худ кӯшиш кунед.
 Мутмаин бошед, ки шумо барои мунташир кардани ин намуд иттилоот роҳатӣ ҳастед.
-Номи шумо метавонад тариқи [[Special:Preferences]] тағйир дода шавад.',
+Номи шумо метавонад тариқи [[Special:Preferences]] тағйир дода шавад.', # Fuzzy
 	'requestaccount-real' => 'Номи аслӣ:',
 	'requestaccount-same' => '(монанди номи аслӣ)',
 	'requestaccount-email' => 'Нишонаи почтаи электронӣ:',
 	'requestaccount-reqtype' => 'Вазифа:',
 	'requestaccount-level-0' => 'муаллиф',
 	'requestaccount-level-1' => 'вироишгар',
-	'requestaccount-bio' => 'Зиндагиномаи шахсӣ:',
+	'requestaccount-bio' => 'Зиндагиномаи шахсӣ:', # Fuzzy
 	'requestaccount-notes' => 'Эзоҳоти иловагӣ:',
 	'requestaccount-urls' => 'Феҳристи сомонаҳо, агар зиёд бошад (бо сатрҳои ҷадид ҷудо кунед):',
 	'requestaccount-agree' => 'Шумо бояд тасдиқ кунед ки номи аслии шумо дуруст аст ва шумо бо Шартҳои Хидмати мо розӣ ҳастед.',
 	'requestaccount-inuse' => 'Номи корбарӣ аллакай дар истифодаи дархости ҳисоби дар тайбуда аст.',
-	'requestaccount-tooshort' => 'Зиндагиномаи шумо бояд ҳадди ақал $1 дароз бошад.',
+	'requestaccount-tooshort' => 'Зиндагиномаи шумо бояд ҳадди ақал $1 дароз бошад.', # Fuzzy
 	'requestaccount-emaildup' => 'Дигар дархости ҳисоби дар тайбуда ҳамин нишонии почтаи электрониро истифода мебарад.',
 	'requestaccount-exts' => 'Навъи замимавии парванда норавост.',
 	'requestaccount-tos' => 'Ман [[{{MediaWiki:Requestaccount-page}}|Шартҳои Хидмати]] дар {{SITENAME}} бударо хондам ва бо онҳо вафодор ҳастам.
 Номи мушаххаскардаи ман зери "Номи Аслӣ" дар ҳақиқат номи аслии худи ман аст.',
 	'requestaccount-submit' => 'Дархости ҳисоб',
-	'requestaccount-sent' => 'Дархост шумо бо муваффақият фиристода шуд ва ҳамакнун дар тайи баррасӣ аст.',
+	'requestaccount-sent' => 'Дархост шумо бо муваффақият фиристода шуд ва ҳамакнун дар тайи баррасӣ аст.', # Fuzzy
 	'request-account-econf' => 'Нишонаи почтаи электронии шумо тасдиқ шуд ва ҳамин тавр дар дархости ҳисоби шумо феҳрист хоҳад шуд.',
 	'requestaccount-email-subj' => '{{SITENAME}} тасдиқи нишонаи почтаи электронӣ',
 	'requestaccount-email-body' => 'Шахсе, эҳтимолан шумо аз нишонаи IP $1, ҳисоби "$2" бо нишонаи почтаи электронӣ дар {{SITENAME}} дархост кард.
@@ -4184,7 +4186,7 @@ $3
 	'requestaccount-email-body-admin' => '"$1" ҳисоберо дархост кард ва мунтазири тасдиқи он мебошад.
 Нишонаи почтаи электронӣ тасдиқ шуд. Шумо дархостро метавонед инҷо "$2" тасдиқ кунед.',
 	'acct_request_throttle_hit' => 'Бубахшед, шумо аллакай $1 ҳисобҳо дархост кардед.
-Шумо наметавонед аз ин зиёд дархост кунед.',
+Шумо наметавонед аз ин зиёд дархост кунед.', # Fuzzy
 );
 
 /** Tajik (Latin script) (tojikī)
@@ -4206,7 +4208,7 @@ Guzarvoƶa niz dar holati eçod şudani hisobi şumo ba nişonai poctai elektron
 	'requestaccount-reqtype' => 'Vazifa:',
 	'requestaccount-level-0' => 'muallif',
 	'requestaccount-level-1' => 'viroişgar',
-	'requestaccount-bio' => 'Zindaginomai şaxsī:',
+	'requestaccount-bio' => 'Zindaginomai şaxsī:', # Fuzzy
 	'requestaccount-notes' => 'Ezohoti ilovagī:',
 	'requestaccount-urls' => 'Fehristi somonaho, agar zijod boşad (bo satrhoi çadid çudo kuned):',
 	'requestaccount-agree' => 'Şumo bojad tasdiq kuned ki nomi asliji şumo durust ast va şumo bo Şarthoi Xidmati mo rozī hasted.',
@@ -4261,13 +4263,13 @@ $messages['th'] = array(
 	'requestaccount-bio-text' => 'ระบบจะแสดงชีวประวัติของคุณในหน้าผู้ใช้ของคุณอัตโนมัติ
 คุณยังสามารถใส่การรับรองของคุณเองได้ด้วย
 แต่ต้องแน่ใจว่าคุณยินดีที่จะแสดงข้อมูลเหล่านั้นอย่างเปิดเผย
-คุณสามารถเปลี่ยนชื่อของคุณโดยเปลี่ยน[[Special:Preferences|การตั้งค่าของคุณ]]',
+คุณสามารถเปลี่ยนชื่อของคุณโดยเปลี่ยน[[Special:Preferences|การตั้งค่าของคุณ]]', # Fuzzy
 	'requestaccount-real' => 'ชื่อจริง:',
 	'requestaccount-same' => '(เหมือนกับชื่อจริง)',
 	'requestaccount-email' => 'อีเมล:',
 	'requestaccount-reqtype' => 'ตำแหน่ง:',
 	'requestaccount-level-1' => 'ผู้แก้ไข',
-	'requestaccount-bio' => 'ประวัติส่วนตัว:',
+	'requestaccount-bio' => 'ประวัติส่วนตัว:', # Fuzzy
 	'requestaccount-attach' => 'เรซูเม หรือ อัตชีวประวัติ (ไม่จำเป็นต้องใส่):',
 	'requestaccount-notes' => 'รายละเอียดเพิ่มเติม:',
 	'requestaccount-urls' => 'รายชื่อเว็บไซต์ ถ้ามี (แบ่งโดยการขึ้นบรรทัดใหม่):',
@@ -4395,14 +4397,14 @@ Kimlik doğrulamada yardımcı olması için telefon numarası gibi irtibat bilg
 	'requestaccount-bio-text' => 'Biyografiniz, kullanıcı sayfanız için varsayılan içerik olarak ayarlanacak.
 Referans da dahil etmeye çalışın.
 Bu bilgileri yayımlama konusunda herhangi bir çekinceniz olmadığından emin olun.
-Kullanıcı adınız [[Special:Preferences|tercihleriniz]] aracılığıyla değiştirilebilmektedir.',
+Kullanıcı adınız [[Special:Preferences|tercihleriniz]] aracılığıyla değiştirilebilmektedir.', # Fuzzy
 	'requestaccount-real' => 'Gerçek isminiz:',
 	'requestaccount-same' => '(gerçek isim ile aynı)',
 	'requestaccount-email' => 'E-posta adresi:',
 	'requestaccount-reqtype' => 'Konum:',
 	'requestaccount-level-0' => 'yazar',
 	'requestaccount-level-1' => 'editör',
-	'requestaccount-bio' => 'Kişisel biyografi:',
+	'requestaccount-bio' => 'Kişisel biyografi:', # Fuzzy
 	'requestaccount-attach' => 'Özgeçmiş veya CV (isteğe bağlı):',
 	'requestaccount-notes' => 'Ek notlar:',
 	'requestaccount-urls' => 'Varsa web sitelerin listesi (yeni satırlarla ayrılmış):',
@@ -4526,7 +4528,7 @@ $messages['vo'] = array(
 	'requestaccount-email' => 'Ladet leäktronik:',
 	'requestaccount-reqtype' => 'Staned:',
 	'requestaccount-level-0' => 'lautan',
-	'requestaccount-bio' => 'Lifajenäd pösodik:',
+	'requestaccount-bio' => 'Lifajenäd pösodik:', # Fuzzy
 	'requestaccount-notes' => 'Noets pluik:',
 	'requestaccount-tooshort' => 'Lifajenäd olik muton labön {{PLURAL:$1|vodi|vodis}} pu $1.',
 	'requestaccount-submit' => 'Begön kali',
@@ -4539,33 +4541,34 @@ $messages['yi'] = array(
 	'requestaccount-level-0' => 'מחבר',
 );
 
-/** Cantonese (粵語) */
+/** Cantonese (粵語)
+ */
 $messages['yue'] = array(
 	'requestaccount' => '請求戶口',
 	'requestaccount-text' => "'''完成並遞交下面嘅表格去請求一個用戶戶口'''。
 
 	請確認你響請求一個戶口之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。
 
-	一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。",
+	一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。", # Fuzzy
 	'requestaccount-dup' => "'''留意: 你已經登入咗做一個已經註冊咗嘅戶口。'''",
 	'requestaccount-acc-text' => '當完成請求時，一封確認訊息會發到你嘅電郵地址。
 	請響封電郵度撳個確認連結去回應佢。同時，當你個戶口開咗之後，你戶口個密碼將會電郵畀你。',
 	'requestaccount-ext-text' => '下面嘅資料會保密，而且只係會用響呢次請求度。
 	你可能需要列示聯絡資料，好似電話號碼等去幫手證明你嘅確認。',
 	'requestaccount-bio-text' => '你嘅傳記將會設定做響你用戶頁度嘅預設內容。試吓包含任何嘅憑據。
-	而且你係肯定你係可以發佈呢啲資料。你嘅名可以透過[[Special:Preferences]]改到。',
+	而且你係肯定你係可以發佈呢啲資料。你嘅名可以透過[[Special:Preferences]]改到。', # Fuzzy
 	'requestaccount-real' => '真名:',
 	'requestaccount-same' => '(同真名一樣)',
 	'requestaccount-email' => '電郵地址:',
-	'requestaccount-bio' => '個人傳記:',
+	'requestaccount-bio' => '個人傳記:', # Fuzzy
 	'requestaccount-notes' => '附加註解:',
 	'requestaccount-urls' => '網站一覽，如有者 (用新行分開):',
 	'requestaccount-agree' => '你一定要證明到你個真名係啱嘅，而且你同意我哋嘅服務細則。',
 	'requestaccount-inuse' => '個用戶名已經用來請求緊個戶口。',
-	'requestaccount-tooshort' => '你嘅傳記一定要最少有$1個字長。',
+	'requestaccount-tooshort' => '你嘅傳記一定要最少有$1個字長。', # Fuzzy
 	'requestaccount-tos' => '我已經讀咗同埋同意持續遵守{{SITENAME}}嘅服務細則。',
 	'requestaccount-submit' => '請求戶口',
-	'requestaccount-sent' => '你個戶口請求已經成功發出，現正等候複審。',
+	'requestaccount-sent' => '你個戶口請求已經成功發出，現正等候複審。', # Fuzzy
 	'request-account-econf' => '你嘅電郵地址已經確認，將會響你嘅戶口請求度列示。',
 	'requestaccount-email-subj' => '{{SITENAME}}電郵地址確認',
 	'requestaccount-email-body' => '有人，可能係你，由IP地址$1，響{{SITENAME}}度用呢個電郵地址請求一個叫做"$2"嘅戶口。
@@ -4576,7 +4579,7 @@ $3
 
 如果個戶口開咗，只有你先至會收到個電郵密碼。如果呢個戶口*唔係*你嘅話，唔好撳個連結。
 呢個確認碼將會響$4過期。',
-	'acct_request_throttle_hit' => '對唔住，你已經請求咗$1個戶口。你唔可以請求更多個戶口。',
+	'acct_request_throttle_hit' => '對唔住，你已經請求咗$1個戶口。你唔可以請求更多個戶口。', # Fuzzy
 );
 
 /** Simplified Chinese (中文（简体）‎)
@@ -4710,4 +4713,3 @@ $3
 	'acct_request_throttle_hit' => '抱歉，您已經請求了{{PLURAL:$1|1個|$1個}}帳號。
 您不可以請求更多帳號。',
 );
-

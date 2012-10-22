@@ -56,21 +56,6 @@ $messages['qqq'] = array(
 	'usercredentials-urls' => '{{Identical|List of websites}}',
 );
 
-/** Faeag Rotuma (Faeag Rotuma)
- * @author Jose77
- */
-$messages['rtm'] = array(
-	'usercredentials-user' => 'Asa:',
-);
-
-/** Niuean (ko e vagahau Niuē)
- * @author Jose77
- */
-$messages['niu'] = array(
-	'usercredentials-user' => 'Matahigoa he tagata:',
-	'usercredentials-email' => 'Meli hila:',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
@@ -1528,6 +1513,14 @@ $messages['ne'] = array(
 	'usercredentials-user' => 'प्रयोगकर्ता नाम:',
 );
 
+/** Niuean (ko e vagahau Niuē)
+ * @author Jose77
+ */
+$messages['niu'] = array(
+	'usercredentials-user' => 'Matahigoa he tagata:',
+	'usercredentials-email' => 'Meli hila:',
+);
+
 /** Dutch (Nederlands)
  * @author Annabel
  * @author SPQRobin
@@ -1806,6 +1799,13 @@ $messages['ro'] = array(
 	'usercredentials-urls' => 'Listă de situri web:',
 	'usercredentials-ip' => 'Adresă IP originală:',
 	'usercredentials-member' => 'Drepturi:',
+);
+
+/** Faeag Rotuma (Faeag Rotuma)
+ * @author Jose77
+ */
+$messages['rtm'] = array(
+	'usercredentials-user' => 'Asa:',
 );
 
 /** Russian (русский)
@@ -2329,4 +2329,3 @@ $messages['zh-hant'] = array(
 	'usercredentials-badid' => '沒有憑據找到該用戶。
 檢查名稱拼寫是否正確。',
 );
-
