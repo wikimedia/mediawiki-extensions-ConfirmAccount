@@ -74,8 +74,12 @@ class UserCredentialsPage extends SpecialPage {
 		$user = User::newFromName( $this->target );
 
 		$list = array();
-		foreach ( $user->getGroups() as $group )
-			$list[] = self::buildGroupLink( $group );
+		foreach ( $user->getGroups() as $group ) {
+			$list[] = User::makeGroupLinkHTML(
+				$group,
+				User::getGroupMember( $group, $user->getName() )
+			);
+		}
 
 		$grouplist = '';
 		if ( count( $list ) > 0 ) {
@@ -185,19 +189,6 @@ class UserCredentialsPage extends SpecialPage {
 		global $wgConfirmAccountRequestFormItems;
 
 		return $wgConfirmAccountRequestFormItems[$name]['enabled'];
-	}
-
-	/**
-	 * Format a link to a group description page
-	 *
-	 * @param string $group
-	 * @return string
-	 */
-	private static function buildGroupLink( $group ) {
-		static $cache = array();
-		if ( !isset( $cache[$group] ) )
-			$cache[$group] = User::makeGroupLinkHtml( $group, User::getGroupMember( $group ) );
-		return $cache[$group];
 	}
 
 	/**
