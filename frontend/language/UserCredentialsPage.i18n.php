@@ -2283,6 +2283,7 @@ $messages['yi'] = array(
  * @author Kuailong
  * @author Mark85296341
  * @author Wilsonmess
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
 	'usercredentials' => '用户资格',
@@ -2293,6 +2294,7 @@ $messages['zh-hans'] = array(
 	'usercredentials-leg-areas' => '主要的兴趣范围',
 	'usercredentials-leg-person' => '个人信息',
 	'usercredentials-leg-other' => '其他信息',
+	'usercredentials-leg-ip' => 'IP地址数据',
 	'usercredentials-email' => '电子邮件：',
 	'usercredentials-real' => '真实姓名：',
 	'usercredentials-bio' => '个人简介：',
