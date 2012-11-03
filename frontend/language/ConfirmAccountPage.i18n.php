@@ -7019,6 +7019,7 @@ $messages['su'] = array(
 
 /** Swedish (svenska)
  * @author Boivie
+ * @author Cybjit
  * @author Diupwijk
  * @author Fluff
  * @author Jon Harald Søby
@@ -7086,7 +7087,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-notes' => 'Andra anmärkningar:',
 	'confirmaccount-urls' => 'Lista över webbplatser:',
 	'confirmaccount-none-p' => '(bifogades ej)',
-	'confirmaccount-confirm' => 'Välj något av alternativen nedan för att godkänna, avslå, eller avvakta med ansökan:', # Fuzzy
+	'confirmaccount-confirm' => 'Använd alternativen nedan för att godkänna, avslå, eller avvakta med ansökan:',
 	'confirmaccount-econf' => '(bekräftad)',
 	'confirmaccount-reject' => '(avslogs av [[User:$1|$1]] den $2)',
 	'confirmaccount-rational' => 'Motivering som gavs till den sökande:',
@@ -7106,7 +7107,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-acc' => 'Kontoansökningen har godkänts och användarkontot [[User:$1|$1]] har skapats.',
 	'confirmaccount-rej' => 'Ansökningen har avslagits.',
 	'confirmaccount-viewing' => '(granskas just nu av [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Skapar användarsida med biografi för en ny användare.', # Fuzzy
+	'confirmaccount-summary' => 'Skapar användarsida för en ny användare.',
 	'confirmaccount-welc' => "'''Välkommen till ''{{SITENAME}}''!''' Vi hoppas att du kommer skriva många bra bidrag.
 Du kommer formodligen ha nytta av att läsa [[{{MediaWiki:Helppage}}|hjälpsidorna]]. Vi önskar igen välkommen och ha kul!",
 	'confirmaccount-wsum' => 'Välkommen!',
