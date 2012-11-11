@@ -148,11 +148,12 @@ There may be contact lists on site that you can use if you want to know more abo
  * @author Lejonel
  * @author McDutchie
  * @author Purodha
+ * @author Shirayuki
  * @author Siebrand
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'confirmedit-desc' => '{{desc}}',
+	'confirmedit-desc' => '{{desc|name=Confirm Edit|url=http://www.mediawiki.org/wiki/Extension:ConfirmEdit}}',
 	'confirmaccount-real-q' => '{{Identical|Name}}',
 	'confirmaccount-email-q' => '{{Identical|E-mail}}',
 	'confirmaccount-bio-q' => '{{Identical|Biography}}',
