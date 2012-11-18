@@ -324,7 +324,7 @@ class UserAccountRequest {
 	public function insertOn() {
 		$dbw = wfGetDB( DB_MASTER );
 		# Allow for some fields to be handled automatically...
-		$acr_id = is_null( $this->id )
+		$acr_id = !is_null( $this->id )
 			? $this->id
 			: $dbw->nextSequenceValue( 'account_requests_acr_id_seq' );
 		# Insert into pending requests...
