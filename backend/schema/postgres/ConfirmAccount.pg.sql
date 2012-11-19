@@ -24,7 +24,7 @@ CREATE TABLE account_requests (
   acr_storage_key          TEXT,
   acr_type                 INTEGER NOT NULL DEFAULT 0,
   acr_areas                TEXT,
-  acr_deleted              BOOL      NOT NULL DEFAULT 'false',
+  acr_deleted              INTEGER NOT NULL DEFAULT 0,
   acr_rejected             TIMESTAMPTZ,
   acr_held                 TIMESTAMPTZ,
   acr_user                 INTEGER  REFERENCES mwuser(user_id) ON DELETE SET NULL,
