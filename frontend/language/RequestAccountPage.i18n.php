@@ -906,6 +906,7 @@ $messages['diq'] = array(
 	'requestaccount-level-0' => 'nuskar',
 	'requestaccount-level-1' => 'vurnkar',
 	'requestaccount-notes' => 'Notê oleki:',
+	'requestaccount-submit' => 'Hesab bıwaze',
 	'requestaccount-email-subj' => '{{SITENAME}} araştkerdena adres ê emalî',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} ra hesab waştış',
 );

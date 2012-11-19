@@ -1663,6 +1663,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die Sie sich wenden k�
  * @author Erdemaslancan
  */
 $messages['diq'] = array(
+	'confirmaccounts' => 'Wazayışê hesabi araşt kerê',
 	'confirmaccount-real-q' => 'Name',
 	'confirmaccount-email-q' => 'E-posta',
 	'confirmaccount-bio-q' => 'Biyografiye',
