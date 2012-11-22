@@ -339,6 +339,13 @@ $specialPageAliases['sa'] = array(
 	'UserCredentials' => array( 'उपयोजकविश्वासपत्त्र' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'RequestAccount' => array( 'RichiediAccount' ),
+	'ConfirmAccounts' => array( 'ConfermaAccount' ),
+	'UserCredentials' => array( 'CredenzialiUtente' ),
+);
+
 /** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'RequestAccount' => array( 'PožiadaťOÚčet' ),
