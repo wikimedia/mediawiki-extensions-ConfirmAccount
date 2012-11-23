@@ -2309,12 +2309,13 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
+ * @author Simon Shek
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
 	'usercredentials' => '用戶資格',
 	'usercredentials-leg' => '查找已驗證的用戶資格',
-	'usercredentials-user' => '使用者名稱：',
+	'usercredentials-user' => '用戶名：',
 	'usercredentials-text' => '下面是已選中用戶的有效資格。',
 	'usercredentials-leg-user' => '使用者帳號',
 	'usercredentials-leg-areas' => '感興趣的主要領域',
