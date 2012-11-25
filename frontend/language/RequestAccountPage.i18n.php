@@ -894,6 +894,7 @@ Die E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen: �
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['diq'] = array(
 	'requestaccount' => 'Hesab bıwaze',
@@ -901,7 +902,7 @@ $messages['diq'] = array(
 	'requestaccount-leg-other' => 'Melumatê bini',
 	'requestaccount-leg-tos' => 'Şertê Xızmeti',
 	'requestaccount-real' => 'Nameyo raştay:',
-	'requestaccount-email' => 'Adresê e-posta:',
+	'requestaccount-email' => 'Adresa e-postey:',
 	'requestaccount-reqtype' => 'Pozisyon:',
 	'requestaccount-level-0' => 'nuskar',
 	'requestaccount-level-1' => 'vurnkar',
