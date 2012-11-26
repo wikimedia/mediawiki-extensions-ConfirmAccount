@@ -301,6 +301,12 @@ $specialPageAliases['oc'] = array(
 	'ConfirmAccounts' => array( 'ConfirmarCompte', 'Confirmacion_compte', 'ConfirmacionCompte' ),
 );
 
+/** Punjabi (ਪੰਜਾਬੀ) */
+$specialPageAliases['pa'] = array(
+	'RequestAccount' => array( 'ਖਾਤੇ_ਦੀ_ਬੇਨਤੀ_ਕਰੋ' ),
+	'ConfirmAccounts' => array( 'ਖਾਤੇ_ਤਸਦੀਕ_ਕਰੋ' ),
+);
+
 /** Polish (polski) */
 $specialPageAliases['pl'] = array(
 	'RequestAccount' => array( 'Prośba_o_utworzenie_konta' ),
