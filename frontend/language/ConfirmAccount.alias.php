@@ -281,7 +281,7 @@ $specialPageAliases['nb'] = array(
 	'UserCredentials' => array( 'Brukerlegitimasjon' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'RequestAccount' => array( 'Gebruker_anvragen' ),
 	'ConfirmAccounts' => array( 'Gebruker_bevestigen' ),
