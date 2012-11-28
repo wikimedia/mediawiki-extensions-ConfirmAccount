@@ -2201,6 +2201,7 @@ $messages['fa'] = array(
  * @author Crt
  * @author Jaakonam
  * @author Mobe
+ * @author Nedergard
  * @author Nike
  * @author Str4nd
  * @author Taleman
@@ -2257,6 +2258,7 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-leg-areas' => 'Tärkeimmät kiinnostuksen kohteet',
 	'confirmaccount-leg-person' => 'Henkilötiedot',
 	'confirmaccount-leg-other' => 'Muut tiedot',
+	'confirmaccount-leg-ip' => 'IP-osoitteen tiedot',
 	'confirmaccount-name' => 'Käyttäjätunnus',
 	'confirmaccount-real' => 'Nimi:',
 	'confirmaccount-email' => 'Sähköpostiosoite:',
