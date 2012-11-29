@@ -602,6 +602,7 @@ $messages['fa'] = array(
  * @author Crt
  * @author Jaakonam
  * @author Mobe
+ * @author Nedergard
  * @author Nike
  * @author Str4nd
  * @author Taleman
@@ -616,6 +617,7 @@ $messages['fi'] = array(
 	'usercredentials-leg-areas' => 'Tärkeimmät kiinnostuksen kohteet',
 	'usercredentials-leg-person' => 'Henkilötiedot',
 	'usercredentials-leg-other' => 'Muut tiedot',
+	'usercredentials-leg-ip' => 'IP-osoitteen tiedot',
 	'usercredentials-email' => 'Sähköposti:',
 	'usercredentials-real' => 'Oikea nimi:',
 	'usercredentials-bio' => 'Omat tiedot',
