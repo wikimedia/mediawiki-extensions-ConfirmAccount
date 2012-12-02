@@ -797,6 +797,13 @@ $messages['tr'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|Kullanıcı referanslarını]] görür',
 );
 
+/** Ukrainian (українська)
+ * @author Ата
+ */
+$messages['uk'] = array(
+	'requestaccount-loginnotice' => 'Для отримання облікового запису користувача, ви повинні "\'[[Special:RequestAccount|зробити запит]]"\'.',
+);
+
 /** Cantonese (粵語)
  */
 $messages['yue'] = array(

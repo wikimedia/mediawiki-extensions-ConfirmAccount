@@ -227,6 +227,13 @@ $specialPageAliases['ksh'] = array(
 	'UserCredentials' => array( 'Metmaache-Aanjabe' ),
 );
 
+/** Cornish (kernowek) */
+$specialPageAliases['kw'] = array(
+	'RequestAccount' => array( 'GovynAcont' ),
+	'ConfirmAccounts' => array( 'AfydhyaAcontow' ),
+	'UserCredentials' => array( 'ManylyonAnDevnydhyer' ),
+);
+
 /** Ladino (Ladino) */
 $specialPageAliases['lad'] = array(
 	'RequestAccount' => array( 'Demandar_cuento_de_usador' ),
