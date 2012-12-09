@@ -2209,6 +2209,7 @@ $messages['ug-latn'] = array(
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
+ * @author Base
  * @author Prima klasy4na
  * @author Тест
  */
@@ -2223,6 +2224,9 @@ $messages['uk'] = array(
 	'usercredentials-bio' => 'Біографія:',
 	'usercredentials-notes' => 'Додаткова інформація:',
 	'usercredentials-urls' => 'Список веб-сайтів:',
+	'usercredentials-ip' => 'Оригінальна IP-адреса:',
+	'usercredentials-xff' => 'Оригінальний X-Forwarded-For:',
+	'usercredentials-agent' => 'Оригінальний User-Agent:',
 	'usercredentials-member' => 'Права:',
 );
 
