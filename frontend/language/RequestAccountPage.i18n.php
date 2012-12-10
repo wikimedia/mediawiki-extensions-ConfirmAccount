@@ -3038,7 +3038,7 @@ $messages['nl'] = array(
 Zorg ervoor dat u eerst de [[{{MediaWiki:Requestaccount-page}}|voorwaarden]] leest voordat u een gebruiker aanvraagt.
 
 Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Special:UserLogin|aanmelden]].",
-	'requestaccount-page' => '{{ns:project}}:Voorwaarden',
+	'requestaccount-page' => '{{ns:project}}:Gebruiksvoorwaarden',
 	'requestaccount-dup' => "'''Let op: u bent al aangemeld met een geregistreerde gebruikersnaam.'''",
 	'requestaccount-leg-user' => 'Gebruiker',
 	'requestaccount-leg-areas' => 'Interessegebieden',
@@ -3048,7 +3048,7 @@ Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Spec
 	'requestaccount-acc-text' => 'U ontvangt een e-mailbevestiging als uw aanvraag is ontvangen.
 Reageer daar op door te klikken op de verwijzing die in de e-mail staat.
 U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
-	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee u ervaring hebt of waarvan u het meeste werk wil verrichten.',
+	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee u ervaring hebt of waar u denkt het meeste aan te gaan bijdragen.',
 	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor deze aanvraag.
 U kunt contactgegevens zoals een telefoonummer opgeven om te helpen bij het vaststellen van uw identiteit.',
 	'requestaccount-bio-text' => 'Probeer uw belangrijkste gegevens op te nemen.',
