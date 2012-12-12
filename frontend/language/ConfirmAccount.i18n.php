@@ -447,6 +447,17 @@ $messages['km'] = array(
 	'requestaccount-loginnotice' => "ដើម្បីទទួលបានគណនីអ្នកប្រើប្រាស់ អ្នកត្រូវតែ'''[[Special:RequestAccount|ស្នើសុំគណនី]]'''។",
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'confirmaccount-newrequests' => "이메일 확인 계정 {{PLURAL:$1|요청}} '''$1개'''가 [[Special:ConfirmAccounts|대기 중입니다]]. '''주의가 필요합니다!'''",
+	'requestaccount-loginnotice' => "사용자 계정을 가져오려면 '''[[Special:RequestAccount|계정을 요청]]'''해야 합니다.",
+	'right-confirmaccount' => '[[Special:ConfirmAccounts|요청한 계정 대기열]] 보기',
+	'right-requestips' => '요청한 계정을 처리하는 동안 요청자의 IP 주소 보기',
+	'right-lookupcredentials' => '[[Special:UserCredentials|사용자 자격 증명]] 보기',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
