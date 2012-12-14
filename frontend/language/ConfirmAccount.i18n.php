@@ -809,10 +809,12 @@ $messages['tr'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Base
  * @author Ата
  */
 $messages['uk'] = array(
 	'requestaccount-loginnotice' => 'Для отримання облікового запису користувача, ви повинні "\'[[Special:RequestAccount|зробити запит]]"\'.',
+	'right-lookupcredentials' => 'Перегляд [[Special:UserCredentials|удостовіряючої інформації про користувачів]]',
 );
 
 /** Cantonese (粵語)
