@@ -3962,9 +3962,11 @@ $messages['ja'] = array(
 	'confirmaccount-rej' => 'アカウント申請を却下しました。',
 	'confirmaccount-viewing' => '(この申請は、現在[[User:$1|$1]]が受理しています)',
 	'confirmaccount-summary' => '新しい利用者の利用者ページを作成します。',
-	'confirmaccount-welc' => "'''ようこそ''{{SITENAME}}''へ！''' 多くの寄稿を心よりお待ち申し上げます。
-サイトでの活動に関しては、[[{{MediaWiki:Helppage}}|ヘルプページ]]をご覧ください。それでは、{{SITENAME}}で楽しいひと時を！",
-	'confirmaccount-wsum' => 'ようこそ！',
+	'confirmaccount-welc' => "'''ようこそ''{{SITENAME}}''へ!'''
+多くの寄稿を心よりお待ち申し上げます。
+サイトでの活動に関しては、[[{{MediaWiki:Helppage}}|ヘルプページ]]をご覧ください。
+それでは、{{SITENAME}}で楽しいひと時を!",
+	'confirmaccount-wsum' => 'ようこそ!',
 	'confirmaccount-email-subj' => '{{SITENAME}} のアカウント申請',
 	'confirmaccount-email-body' => '{{SITENAME}} でのあなたのアカウント申請を承認しました。
 
@@ -6203,6 +6205,7 @@ Podem haver listas de contactos no site que poderá usar se deseja saber mais so
  * @author Giro720
  * @author Helder.wiki
  * @author Heldergeovane
+ * @author Jaideraf
  * @author Luckas Blade
  */
 $messages['pt-br'] = array(
@@ -6210,32 +6213,32 @@ $messages['pt-br'] = array(
 	'confirmedit-desc' => 'Possibilita aos burocratas confirmar requisições de conta',
 	'confirmaccount-maintext' => "'''Esta página é usada para confirmar requisições de conta pendentes em ''{{SITENAME}}'''''.
 
-Cada fila de requisições de conta consiste em três sub-filas, uma para requisições em aberto, outras para aquelas que foram colocados em espera por outros administradores à espera de mais informação, e outra para requisições recentemente rejeitadas.
+Cada fila de requisições de conta consiste em três sub-filas, uma para requisições em aberto, outras para aquelas que foram colocadas em espera por outros administradores à espera de mais informação, e outra para requisições recentemente rejeitadas.
 
-Quando responder a uma requisição, reveja-o cuidadosamente e, se necessário, confirme a informação nela contida.
+Quando responder a uma requisição, reveja-a cuidadosamente e, se necessário, confirme a informação nela contida.
 As suas ações serão registadas privadamente. Também é esperado que você reveja qualquer atividade que ocorra aqui além das suas próprias ações.",
 	'confirmaccount-list' => 'Abaixo encontra-se uma lista de requisições de conta à espera de aprovação.
 Contas aprovadas serão criadas e removidas desta lista. Contas rejeitadas serão simplesmente eliminadas desta lista.',
 	'confirmaccount-list2' => 'Abaixo encontra-se uma lista de requisições de conta recentemente rejeitadas que serão automaticamente eliminadas após alguns dias.
 Estas podem ainda ser aprovadas para novas contas, mas deverá verificar primeiro com o administrador que rejeitou a requisição antes de a aprovar.',
 	'confirmaccount-list3' => 'Abaixo encontra-se uma lista de requisições de conta expiradas que poderão ser automaticamente apagadas após alguns dias. Estas ainda podem ser aprovadas e convertidas em novas contas.',
-	'confirmaccount-text' => "Isto é uma requisição pendente para uma conta de utilizador em '''{{SITENAME}}'''.
+	'confirmaccount-text' => "Isso é uma requisição pendente para uma conta de usuário em '''{{SITENAME}}'''.
 
-Reveja cuidadosamente a informação abaixo. Se está aprovando esta requisição, use a caixa de seleção de posição para estabelecer o estado da conta do utilizador.
-Edições feitas à biografia da candidatura não afetarão nenhum armazenamento de credenciais permanente. Note que pode optar por criar a conta com um nome de utilizador diferente.
+Reveja cuidadosamente a informação abaixo. Se está aprovando esta requisição, use a caixa de seleção de posição para estabelecer o estado da conta do usuário.
+Edições feitas à biografia da candidatura não afetarão nenhum armazenamento de credenciais permanente. Note que você pode optar por criar a conta com um nome de usuário diferente.
 Use esta possibilidade apenas para evitar colisões com outros nomes.
 
-Se simplesmente abandonar esta página sem confirmar ou rejeitar esta requisição, ela continuará pendente.",
+Se você simplesmente abandonar esta página sem confirmar ou rejeitar esta requisição, ela continuará pendente.",
 	'confirmaccount-none-o' => 'Atualmente não existem requisições de conta pendentes em aberto nesta lista.',
 	'confirmaccount-none-h' => 'Atualmente não existem requisições de conta pendentes em espera nesta lista.',
 	'confirmaccount-none-r' => 'Atualmente não existem requisições de conta recentemente rejeitadas nesta lista.',
-	'confirmaccount-none-e' => 'Não há neste momento requisições de conta expiradas nesta lista.',
+	'confirmaccount-none-e' => 'Atualmente não existem requisições de conta expiradas nesta lista.',
 	'confirmaccount-real-q' => 'Nome',
-	'confirmaccount-email-q' => 'Email',
+	'confirmaccount-email-q' => 'E-mail',
 	'confirmaccount-bio-q' => 'Biografia',
 	'confirmaccount-showopen' => 'requisições em aberto',
 	'confirmaccount-showrej' => 'requisições rejeitadas',
-	'confirmaccount-showheld' => 'ver lista de requisições de conta em espera',
+	'confirmaccount-showheld' => 'requisições em espera',
 	'confirmaccount-showexp' => 'requisições expiradas',
 	'confirmaccount-review' => 'Aprovar/Rejeitar',
 	'confirmaccount-types' => 'Selecione uma fila de confirmação de contas abaixo:',
@@ -6248,23 +6251,25 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar esta requisiç�
 	'confirmaccount-q-rej' => 'requisições recentemente rejeitadas',
 	'confirmaccount-q-stale' => 'requisições expiradas',
 	'confirmaccount-badid' => 'Não existe nenhuma requisição pendente correspondente ao identificador fornecido. Ela pode já ter sido tratada.',
-	'confirmaccount-leg-user' => 'Conta de utilizador',
+	'confirmaccount-leg-user' => 'Conta de usuário',
 	'confirmaccount-leg-areas' => 'Principais áreas de interesse',
 	'confirmaccount-leg-person' => 'Informações pessoais',
 	'confirmaccount-leg-other' => 'Outras informações',
-	'confirmaccount-name' => 'Nome de utilizador',
+	'confirmaccount-leg-ip' => 'Dados de endereço IP',
+	'confirmaccount-name' => 'Nome de usuário',
 	'confirmaccount-real' => 'Nome:',
-	'confirmaccount-email' => 'Email:',
+	'confirmaccount-email' => 'E-mail:',
 	'confirmaccount-reqtype' => 'Posição:',
 	'confirmaccount-pos-0' => 'autor',
 	'confirmaccount-pos-1' => 'editor',
 	'confirmaccount-bio' => 'Biografia:',
 	'confirmaccount-attach' => 'Curriculum Vitae:',
 	'confirmaccount-notes' => 'Notas adicionais:',
-	'confirmaccount-urls' => 'Lista de sítios web:',
+	'confirmaccount-urls' => 'Lista de sites:',
 	'confirmaccount-none-p' => '(não fornecido)',
 	'confirmaccount-confirm' => 'Use as opções abaixo para aceitar, rejeitar, ou colocar em espera esta requisição:', # Fuzzy
 	'confirmaccount-econf' => '(confirmado)',
+	'confirmaccount-withcv' => '(Curriculum vitae anexado)',
 	'confirmaccount-reject' => '(rejeitado por [[User:$1|$1]] em $2)',
 	'confirmaccount-rational' => 'Explicação dada ao requerente:',
 	'confirmaccount-noreason' => '(nenhum)',
@@ -6273,50 +6278,58 @@ Se simplesmente abandonar esta página sem confirmar ou rejeitar esta requisiç�
 	'confirmaccount-create' => 'Aceitar (criar conta)',
 	'confirmaccount-deny' => 'Rejeitar (retirar da lista)',
 	'confirmaccount-hold' => 'Colocar em espera',
-	'confirmaccount-spam' => 'Spam (não enviar email)',
-	'confirmaccount-reason' => 'Comentário (será incluído no email):',
+	'confirmaccount-spam' => 'Spam (não enviar e-mail)',
+	'confirmaccount-reason' => 'Comentário (será incluído no e-mail):',
 	'confirmaccount-ip' => 'Endereço IP:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => 'Confirmar ou rejeitar esta conta',
 	'confirmaccount-submit' => 'Confirmar',
-	'confirmaccount-needreason' => 'Deverá fornecer um motivo na caixa de comentário abaixo.',
+	'confirmaccount-needreason' => 'Você precisa fornecer um motivo na caixa de comentário abaixo.',
 	'confirmaccount-canthold' => 'Esta requisição já está em espera ou apagada.',
-	'confirmaccount-acc' => 'Requisição de conta confirmada com sucesso; criada nova conta de utilizador [[User:$1|$1]].',
+	'confirmaccount-badaction' => 'Uma ação válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.',
+	'confirmaccount-acc' => 'Requisição de conta confirmada com sucesso; criada nova conta de usuário [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Requisiçãode conta rejeitada com sucesso.',
 	'confirmaccount-viewing' => '(atualmente sendo visualizada por [[User:$1|$1]])',
-	'confirmaccount-summary' => 'Criar página de utilizador com biografia de novo utilizador.', # Fuzzy
+	'confirmaccount-summary' => 'Criando a página de usuário para o usuário novo.',
 	'confirmaccount-welc' => "'''Bem-vindo a ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.
-Provavelmente desejará ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. Mais uma vez, seja bem-vindo e divirta-se!",
+Provavelmente você desejará ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. 
+Mais uma vez, seja bem-vindo e divirta-se!",
 	'confirmaccount-wsum' => 'Bem-vindo!',
 	'confirmaccount-email-subj' => 'Requisição de conta em {{SITENAME}}',
 	'confirmaccount-email-body' => 'A sua requisição de conta foi aprovada em {{SITENAME}}.
 
 Nome da conta: $1
 
-Palavra-chave: $2
+Senha: $2
 
-Por questões de segurança, deverá mudar a sua palavra-chave após a primeira autenticação. Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
+Por questões de segurança, você deverá mudar a sua senha após a primeira autenticação. 
+Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
 	'confirmaccount-email-body2' => 'A sua requisição de conta foi aprovada em {{SITENAME}}.
 
 Nome da conta: $1
 
-Palavra-chave: $2
+Senha: $2
 
 $3
 
-Por questões de segurança, deverá mudar a sua palavra-chave após a primeira autenticação. Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
+Por questões de segurança, você deverá mudar a sua senha após a primeira autenticação. 
+Para entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Desculpe, a sua requisição para a conta "$1" foi rejeitada em {{SITENAME}}.
 
-Há várias formas para isto acontecer. Você pode não ter preenchido o formulário corretamente, não ter fornecido respostas de tamanho adequado, ou de outra forma ter falhado em alguns dos critérios da política. Poderá haver listas de contatos no sítio que poderá usar se desejar saber mais sobre a política de contas de utilizador.',
+Há várias formas para isto acontecer. 
+Você pode não ter preenchido o formulário corretamente, não ter fornecido respostas de tamanho adequado, ou de outra forma ter falhado em alguns dos critérios da política.
+Poderá haver listas de contatos no site que você poderá utilizar se desejar saber mais sobre a política de contas de usuário.',
 	'confirmaccount-email-body4' => 'Desculpe, a sua requisição para a conta "$1" foi rejeitada em {{SITENAME}}.
 
 $2
 
-Poderá haver listas de contatos no sítio que poderá usar se desejar saber mais sobre a política de contas de utilizador.',
-	'confirmaccount-email-body5' => 'Antes que a sua requisição para a conta "$1" seja aceita em {{SITENAME}}, deverá fornecer alguma informação adicional.
+Poderá haver listas de contatos no site que você poderá utilizar se desejar saber mais sobre a política de contas de usuário.',
+	'confirmaccount-email-body5' => 'Antes que a sua requisição para a conta "$1" seja aceita em {{SITENAME}}, você deverá fornecer alguma informação adicional.
 
 $2
 
-Podem haver listas de contatos no sítio que poderá usar se desejar saber mais sobre a política de contas de utilizador.',
+Poderá haver listas de contatos no site que você poderá utilizar se desejar saber mais sobre a política de contas de usuário.',
 );
 
 /** Romansh (rumantsch)

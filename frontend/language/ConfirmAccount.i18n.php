@@ -669,12 +669,13 @@ $messages['pt'] = array(
  * @author Giro720
  * @author Helder.wiki
  * @author Heldergeovane
+ * @author Jaideraf
  * @author Luckas Blade
  * @author 555
  */
 $messages['pt-br'] = array(
-	'confirmaccount-newrequests' => "Há, neste momento, '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitação|solicitações}} pendentes de contas]]. '''Seus cuidados são necessários!''",
-	'requestaccount-loginnotice' => "Para ter uma conta de usuário, será necessário '''[[Special:RequestAccount|solicitá-la]]'''.",
+	'confirmaccount-newrequests' => "Há, neste momento, '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitação|solicitações}} pendentes de contas]]. '''Sua atenção é necessária!''",
+	'requestaccount-loginnotice' => "Para ter uma conta de usuário, é necessário '''[[Special:RequestAccount|solicitá-la]]'''.",
 	'right-confirmaccount' => 'Ver a [[Special:ConfirmAccounts|fila de contas solicitadas]]',
 	'right-requestips' => 'Ver os endereços IP do requerente durante a gestão de contas pedidas',
 	'right-lookupcredentials' => 'Ver [[Special:UserCredentials|credenciais de usuário]]',

@@ -1752,26 +1752,31 @@ $messages['pt'] = array(
  * @author Giro720
  * @author Helder.wiki
  * @author Heldergeovane
+ * @author Jaideraf
  * @author Luckas Blade
  */
 $messages['pt-br'] = array(
-	'usercredentials' => 'Credenciais do utilizador',
-	'usercredentials-leg' => 'Procurar credenciais confirmadas para um utilizador',
+	'usercredentials' => 'Credenciais de usuário',
+	'usercredentials-leg' => 'Procurar credenciais confirmadas para um usuário',
 	'usercredentials-user' => 'Nome de usuário:',
-	'usercredentials-text' => 'Abaixo estão as credenciais validadas da conta de utilizador selecionada.',
-	'usercredentials-leg-user' => 'Conta de utilizador',
+	'usercredentials-text' => 'Abaixo estão as credenciais validadas da conta de usuário selecionada.',
+	'usercredentials-leg-user' => 'Conta de usuário',
 	'usercredentials-leg-areas' => 'Principais áreas de interesse',
 	'usercredentials-leg-person' => 'Informações pessoais',
 	'usercredentials-leg-other' => 'Outras informações',
-	'usercredentials-email' => 'Email:',
+	'usercredentials-leg-ip' => 'Dados de endereço IP',
+	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Nome real:',
 	'usercredentials-bio' => 'Biografia:',
 	'usercredentials-attach' => 'Curriculum Vitae:',
 	'usercredentials-notes' => 'Notas adicionais:',
-	'usercredentials-urls' => 'Lista de sítios web:',
+	'usercredentials-urls' => 'Lista de sites:',
 	'usercredentials-ip' => 'Endereço IP original:',
+	'usercredentials-xff' => 'Original X-Forwarded-For:',
+	'usercredentials-agent' => 'Original User-Agent:',
 	'usercredentials-member' => 'Privilégios:',
-	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está escrito corretamente.',
+	'usercredentials-badid' => 'Não foram encontradas credenciais para este usuário. 
+Verifique se o nome está escrito corretamente.',
 );
 
 /** Tarifit (Tarifit)

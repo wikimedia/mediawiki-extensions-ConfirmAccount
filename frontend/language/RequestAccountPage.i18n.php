@@ -3491,66 +3491,70 @@ Não pode fazer mais pedidos.',
  * @author Giro720
  * @author Helder.wiki
  * @author Heldergeovane
+ * @author Jaideraf
  * @author Luckas Blade
  */
 $messages['pt-br'] = array(
 	'requestaccount' => 'Requisitar conta',
-	'requestaccount-text' => "'''Complete e submeta o seguinte formulário para pedir uma conta de utilizador'''.
+	'requestaccount-text' => "'''Complete e submeta o seguinte formulário para pedir uma conta de usuário'''.
 
 Certifique-se de que leu primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.
 
-Assim que a conta for aprovada, será enviada a você por email uma mensagem de notificação e a conta estará pronta para usar na [[Special:UserLogin|autenticação]].",
+Assim que a conta for aprovada, você receberá um e-mail contendo uma mensagem de notificação e sua conta estará pronta para ser utilizada na [[Special:UserLogin|autenticação]].",
 	'requestaccount-page' => '{{ns:project}}:Termos de Serviço',
 	'requestaccount-dup' => "'''Nota: Você já está autenticado com uma conta registrada.'''",
-	'requestaccount-leg-user' => 'Conta de utilizador',
+	'requestaccount-leg-user' => 'Conta de usuário',
 	'requestaccount-leg-areas' => 'Principais áreas de interesse',
 	'requestaccount-leg-person' => 'Informações pessoais',
 	'requestaccount-leg-other' => 'Outras informações',
-	'requestaccount-leg-tos' => 'Termos do Serviço',
-	'requestaccount-acc-text' => 'Será enviada um mensagem de confirmação para o seu endereço de email assim que este pedido for submetido. Por favor, responda clicando na ligação de confirmação fornecida no email. A sua palavra-chave também lhe será enviada por email assim que a sua conta estiver criada.',
+	'requestaccount-leg-tos' => 'Termos de Serviço',
+	'requestaccount-acc-text' => 'Será enviada um mensagem de confirmação para o seu endereço de e-mail assim que este pedido for submetido. 
+Por favor, responda clicando no link de confirmação fornecido no e-mail. 
+A sua senha também lhe será enviada por e-mail assim que a sua conta for criada.',
 	'requestaccount-areas-text' => 'Selecione abaixo as áreas em que possui experiência formal ou em que gostaria de trabalhar mais.',
-	'requestaccount-ext-text' => 'A seguinte informação é mantida privada e só será usada para este pedido.
-Poderá querer listar contatos tal como o número de telefone para ajudar na confirmação da identificação.',
-	'requestaccount-bio-text' => 'A sua biografia será usada como conteúdo padrão da sua página de utilizador.
-Tente incluir algumas credenciais.
-Assegure-se de que se encontra confortável em publicar tal informação.
-O seu nome pode ser alterado nas [[Special:Preferences|suas preferências]].', # Fuzzy
+	'requestaccount-ext-text' => 'A seguinte informação é mantida privada e só será utilizada para este pedido.
+Você pode querer listar contatos tal como seu número de telefone para ajudar na confirmação de identificação.',
+	'requestaccount-bio-text' => 'Tente incluir abaixo quaisquer credenciais relevantes em sua biografia.',
+	'requestaccount-bio-text-i' => "'''A sua biografia será utilizada como o conteúdo inicial da sua página de usuário.'''
+Certifique-se de que pretende publicar esta informação.",
 	'requestaccount-real' => 'Nome real:',
 	'requestaccount-same' => '(igual ao nome real)',
 	'requestaccount-email' => 'Endereço de e-mail:',
 	'requestaccount-reqtype' => 'Posição:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografia pessoal:', # Fuzzy
+	'requestaccount-bio' => 'Biografia pessoal (somente texto):',
 	'requestaccount-attach' => 'Curriculum Vitae (opcional):',
 	'requestaccount-notes' => 'Notas adicionais:',
-	'requestaccount-urls' => 'Lista de sítios web, se houver algum (separados por mudança de linha):',
-	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correto e que concorda com os nossos Termos de Serviço.',
-	'requestaccount-inuse' => 'O nome de utilizador já está em uso num pedido de conta pendente.',
+	'requestaccount-urls' => 'Lista de sites, se houver (um enderço por linha):',
+	'requestaccount-agree' => 'Você deve certificar-se de que seu nome real está correto e de que concorda com os nossos Termos de Serviço.',
+	'requestaccount-inuse' => 'Esse nome de usuário já está em uso num pedido de conta pendente.',
 	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.',
-	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo endereço de email.',
-	'requestaccount-exts' => 'O tipo de arquivo do anexo não é permitido.',
-	'requestaccount-resub' => 'O seu Curriculum Vitae deve ser selecionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
+	'requestaccount-emaildup' => 'Um outro pedido de conta pendente utiliza o mesmo endereço de e-mail.',
+	'requestaccount-exts' => 'O tipo de arquivo anexado não é permitido.',
+	'requestaccount-resub' => 'O seu Curriculum Vitae deve ser selecionado novamente por razões de segurança. 
+Deixe o campo em branco se não desejar incluí-lo.',
 	'requestaccount-tos' => 'Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] de {{SITENAME}}.
 O nome que especifiquei em "Nome real" é de fato o meu nome real.',
 	'requestaccount-submit' => 'Requisitar conta',
 	'requestaccount-sent' => 'O seu pedido de conta foi enviado com sucesso e está agora com a confirmação pendente.
 Um e-mail de confirmação foi enviado para seu endereço de e-mail.',
-	'request-account-econf' => 'O seu endereço de email foi confirmado e será listado como tal no seu pedido de conta.',
-	'requestaccount-email-subj' => 'Confirmação de endereço de email para {{SITENAME}}',
-	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, requisitou uma conta "$2" com este endereço de email em {{SITENAME}}.
+	'request-account-econf' => 'O seu endereço de e-mail foi confirmado e será listado como tal no seu pedido de conta.',
+	'requestaccount-email-subj' => 'Confirmação de endereço de e-mail para {{SITENAME}}',
+	'requestaccount-email-body' => 'Alguém, provavelmente você a partir do endereço IP $1, requisitou uma conta "$2" com este endereço de e-mail em {{SITENAME}}.
 
-Para confirmar que esta conta realmente lhe pertence em {{SITENAME}}, abra esta ligação no seu navegador:
+Para confirmar que esta conta realmente lhe pertence em {{SITENAME}}, abra este link no seu navegador:
 
 $3
 
-Se a conta for criada, apenas a você será enviada a palavra-chave. Se esta pessoa *não* for você, não siga a ligação.
+Se a conta for criada, apenas a você será enviada a senha. 
+Se esta pessoa *não* for você, não clique no link acima.
 Este código de confirmação expirará em $4.',
 	'requestaccount-email-subj-admin' => 'Requisição de conta em {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" requisitou uma conta e aguarda confirmação.
-O endereço de email foi confirmado. Você pode confirmar a requisição aqui "$2".',
+O endereço de e-mail foi confirmado. Você pode confirmar a requisição aqui "$2".',
 	'acct_request_throttle_hit' => 'Desculpe, mas você já requisitou {{PLURAL:$1|1 conta|$1 contas}}.
-Não pode fazer mais pedidos.',
+Você não pode fazer mais pedidos.',
 );
 
 /** Tarifit (Tarifit)
