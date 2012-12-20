@@ -2324,6 +2324,7 @@ Panjenengan ora bisa nyuwun rékening anyar manèh.',
  * @author David1010
  */
 $messages['ka'] = array(
+	'requestaccount-page' => '{{ns:project}}:პირობები და მომსახურება',
 	'requestaccount-leg-user' => 'მომხმარებლის ანგარიში',
 	'requestaccount-leg-areas' => 'ინტერესების ძირითადი სფერო',
 	'requestaccount-leg-person' => 'პირადი ინფორმაცია',

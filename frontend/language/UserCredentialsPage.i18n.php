@@ -1118,6 +1118,7 @@ $messages['ka'] = array(
 	'usercredentials-attach' => 'რეზიუმე/CV:',
 	'usercredentials-notes' => 'დამატებითი შენიშვნები:',
 	'usercredentials-urls' => 'ვებ-გვერდების სია:',
+	'usercredentials-ip' => 'ორიგინალი IP მისამართი:',
 	'usercredentials-member' => 'უფლებები:',
 );
 

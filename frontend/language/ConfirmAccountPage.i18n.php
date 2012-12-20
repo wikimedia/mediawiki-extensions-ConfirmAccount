@@ -4063,7 +4063,15 @@ $messages['ka'] = array(
 	'confirmaccount-real-q' => 'სახელი',
 	'confirmaccount-email-q' => 'ელ. ფოსტა',
 	'confirmaccount-bio-q' => 'ბიოგრაფია',
+	'confirmaccount-showopen' => 'ღია თხოვნები',
+	'confirmaccount-showrej' => 'უარყოფილი თხოვნები',
+	'confirmaccount-showheld' => 'გადადებული თხოვნები',
+	'confirmaccount-showexp' => 'ვადაგასული თხოვნები',
 	'confirmaccount-review' => 'გადახედვა',
+	'confirmaccount-q-open' => 'ღია თხოვნები',
+	'confirmaccount-q-held' => 'გადადებული თხოვნები',
+	'confirmaccount-q-rej' => 'ცოტა ხნის წინ უარყოფილი თხოვნები',
+	'confirmaccount-q-stale' => 'ვადაგასული თხოვნები',
 	'confirmaccount-leg-user' => 'მომხმარებლის ანგარიში',
 	'confirmaccount-leg-areas' => 'ინტერესების ძირითადი სფერო',
 	'confirmaccount-leg-person' => 'პირადი ინფორმაცია',
@@ -4084,6 +4092,7 @@ $messages['ka'] = array(
 	'confirmaccount-withcv' => '(CV მიბმულია)',
 	'confirmaccount-noreason' => '(არა)',
 	'confirmaccount-create' => 'დამტკიცება (ანგარიშის შექმნა)',
+	'confirmaccount-hold' => 'გადადება',
 	'confirmaccount-ip' => 'IP მისამართი:',
 	'confirmaccount-submit' => 'დადასტურება',
 	'confirmaccount-wsum' => 'კეთილი იყოს თქვენი მობრძანება!',
@@ -6207,6 +6216,7 @@ Podem haver listas de contactos no site que poderá usar se deseja saber mais so
  * @author Heldergeovane
  * @author Jaideraf
  * @author Luckas Blade
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'confirmaccounts' => 'Confirmar requisições de conta',
@@ -6267,7 +6277,7 @@ Se você simplesmente abandonar esta página sem confirmar ou rejeitar esta requ
 	'confirmaccount-notes' => 'Notas adicionais:',
 	'confirmaccount-urls' => 'Lista de sites:',
 	'confirmaccount-none-p' => '(não fornecido)',
-	'confirmaccount-confirm' => 'Use as opções abaixo para aceitar, rejeitar, ou colocar em espera esta requisição:', # Fuzzy
+	'confirmaccount-confirm' => 'Use as opções abaixo para aceitar, rejeitar ou colocar em espera esta requisição:',
 	'confirmaccount-econf' => '(confirmado)',
 	'confirmaccount-withcv' => '(Curriculum vitae anexado)',
 	'confirmaccount-reject' => '(rejeitado por [[User:$1|$1]] em $2)',
