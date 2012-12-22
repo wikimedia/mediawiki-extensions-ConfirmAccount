@@ -1169,14 +1169,19 @@ $messages['ext'] = array(
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'requestaccount' => 'درخواست حساب',
+	'requestaccount-leg-user' => 'حساب کاربری',
 	'requestaccount-leg-person' => 'اطلاعات شخصی',
 	'requestaccount-leg-other' => 'اطلاعات دیگر',
+	'requestaccount-leg-tos' => 'شرایط خدمات',
 	'requestaccount-real' => 'نام واقعی:',
 	'requestaccount-same' => '(همان نام واقعی)',
 	'requestaccount-email' => 'نشانی پست الکترونیکی:',
 	'requestaccount-reqtype' => 'موقعیت:',
 	'requestaccount-level-0' => 'مؤلف',
 	'requestaccount-level-1' => 'ویرایشگر',
+	'requestaccount-submit' => 'درخواست حساب',
+	'requestaccount-email-subj' => 'تأیید نشانی پست الکترونیکی {{SITENAME}}',
 );
 
 /** Finnish (suomi)
@@ -2339,6 +2344,7 @@ $messages['ka'] = array(
 	'requestaccount-bio' => 'პირადი ბიოგრაფია (მხოლოდ ჩვეულებრივი ტექსტი):',
 	'requestaccount-attach' => 'რეზიუმე ან CV (არასავალდებულო):',
 	'requestaccount-notes' => 'დამატებითი შენიშვნები:',
+	'requestaccount-submit' => 'ანგარიშის მოთხოვნა',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -3034,7 +3040,7 @@ $messages['nds'] = array(
  */
 $messages['nl'] = array(
 	'requestaccount' => 'Gebruiker aanvragen',
-	'requestaccount-text' => "'''Vul het onderstaande formulier in en stuur het op om een gebruiker aan te vragen'''. 
+	'requestaccount-text' => "'''Vul het onderstaande formulier in en sla het op om een gebruiker aan te vragen'''. 
 
 Zorg ervoor dat u eerst de [[{{MediaWiki:Requestaccount-page}}|voorwaarden]] leest voordat u een gebruiker aanvraagt.
 

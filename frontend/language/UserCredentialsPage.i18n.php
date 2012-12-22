@@ -472,6 +472,7 @@ $messages['el'] = array(
 	'usercredentials-leg-areas' => 'Κύρια πεδία ενδιαφέροντος',
 	'usercredentials-leg-person' => 'Προσωπικές πληροφορίες',
 	'usercredentials-leg-other' => 'Άλλες πληροφορίες',
+	'usercredentials-leg-ip' => 'Στοιχεία διεύθυνσης IP',
 	'usercredentials-email' => 'Ηλεκτρονικό ταχυδρομείο:',
 	'usercredentials-real' => 'Πραγματικό όνομα:',
 	'usercredentials-bio' => 'Βιογραφία:',
@@ -549,11 +550,13 @@ $messages['et'] = array(
 	'usercredentials-leg-areas' => 'Peamised huvialad',
 	'usercredentials-leg-person' => 'Personaalne informatsioon',
 	'usercredentials-leg-other' => 'Muu informatsioon',
+	'usercredentials-leg-ip' => 'IP-aadressi andmed',
 	'usercredentials-email' => 'E-post:',
 	'usercredentials-real' => 'Tegelik nimi:',
 	'usercredentials-bio' => 'Biograafia:',
 	'usercredentials-attach' => 'Resümee/CV:',
 	'usercredentials-notes' => 'Lisainfo:',
+	'usercredentials-urls' => 'Veebilehtede loend:',
 	'usercredentials-ip' => 'Originaalne IP-aadress:',
 	'usercredentials-member' => 'Õigused:',
 );
@@ -1539,7 +1542,7 @@ $messages['nl'] = array(
 	'usercredentials-leg-person' => 'Persoonlijke gegevens',
 	'usercredentials-leg-other' => 'Overige informatie',
 	'usercredentials-leg-ip' => 'IP-adresgegevens',
-	'usercredentials-email' => 'E-mail:',
+	'usercredentials-email' => 'E-mailadres:',
 	'usercredentials-real' => 'Echte naam:',
 	'usercredentials-bio' => 'Biografie:',
 	'usercredentials-attach' => 'CV:',
@@ -1788,17 +1791,20 @@ $messages['rif'] = array(
 );
 
 /** Romanian (română)
+ * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Mihai
  * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
+	'usercredentials' => 'Acreditările utilizatorului',
 	'usercredentials-user' => 'Nume de utilizator:',
 	'usercredentials-leg-user' => 'Cont de utilizator',
 	'usercredentials-leg-areas' => 'Arii principale de interes',
 	'usercredentials-leg-person' => 'Informații personale',
 	'usercredentials-leg-other' => 'Alte informații',
+	'usercredentials-leg-ip' => 'date adresă IP',
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Nume real:',
 	'usercredentials-bio' => 'Biografie:',

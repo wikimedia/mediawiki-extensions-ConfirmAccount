@@ -585,7 +585,7 @@ $messages['nb'] = array(
  * @author Siebrand
  */
 $messages['nl'] = array(
-	'confirmaccount-newrequests' => "Er {{PLURAL:$1|staat|staan}} '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|gebruikersaanvraag|gebruikersaanvragen}}]] open. '''Uw aandacht is nodig!'''",
+	'confirmaccount-newrequests' => "Er staa{{PLURAL:$1|t|n}} '''$1''' gebruikersaanvraag[[Special:ConfirmAccounts|gebruikersaanvra{{PLURAL:$1|ag|gen}}]] open. '''Uw aandacht is nodig!'''",
 	'requestaccount-loginnotice' => "Om een gebruiker te krijgen, moet u '''[[Special:RequestAccount|een aanvraag doen]]'''.",
 	'right-confirmaccount' => '[[Special:ConfirmAccounts|Wachtrij met gebruikersaanvragen]] bekijken',
 	'right-requestips' => 'De IP-adressen van aanvragers bekijken bij het verwerken bij het verwerken van gebruikersaanvragen',

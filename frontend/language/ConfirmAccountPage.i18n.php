@@ -2118,9 +2118,12 @@ $messages['et'] = array(
 	'confirmaccount-real-q' => 'Nimi',
 	'confirmaccount-email-q' => 'E-post',
 	'confirmaccount-bio-q' => 'Biograafia',
+	'confirmaccount-type' => 'Järjekord:',
+	'confirmaccount-leg-user' => 'Kasutajakonto',
 	'confirmaccount-leg-areas' => 'Põhilised huvivaldkonnad',
 	'confirmaccount-leg-person' => 'Personaalne informatsioon',
 	'confirmaccount-leg-other' => 'Muu informatsioon',
+	'confirmaccount-leg-ip' => 'IP-aadressi andmed',
 	'confirmaccount-name' => 'Kasutajanimi',
 	'confirmaccount-real' => 'Nimi:',
 	'confirmaccount-email' => 'E-post:',
@@ -2130,7 +2133,9 @@ $messages['et'] = array(
 	'confirmaccount-bio' => 'Biograafia:',
 	'confirmaccount-attach' => 'Resümee/CV:',
 	'confirmaccount-notes' => 'Lisainfo:',
+	'confirmaccount-urls' => 'Veebilehtede loend:',
 	'confirmaccount-econf' => '(kinnitatud)',
+	'confirmaccount-withcv' => '(Lisatud CV)',
 	'confirmaccount-noreason' => '(ei midagi)',
 	'confirmaccount-ip' => 'IP-aadress:',
 	'confirmaccount-submit' => 'Kinnita',
@@ -2180,7 +2185,11 @@ $messages['ext'] = array(
 $messages['fa'] = array(
 	'confirmaccount-real-q' => 'نام',
 	'confirmaccount-email-q' => 'پست الکترونیکی',
+	'confirmaccount-bio-q' => 'زندگی‌نامه',
 	'confirmaccount-review' => 'بازبینی',
+	'confirmaccount-all' => '(نمایش تمام صف‌ها)',
+	'confirmaccount-type' => 'صف:',
+	'confirmaccount-q-open' => 'گشودن درخواست‌ها',
 	'confirmaccount-leg-user' => 'حساب کاربری',
 	'confirmaccount-leg-person' => 'اطلاعات شخصی',
 	'confirmaccount-leg-other' => 'اطلاعات دیگر',
@@ -2191,8 +2200,12 @@ $messages['fa'] = array(
 	'confirmaccount-reqtype' => 'موقعیت:',
 	'confirmaccount-pos-0' => 'مؤلف',
 	'confirmaccount-pos-1' => 'ویرایشگر',
+	'confirmaccount-urls' => 'فهرست وبگاه‌ها:',
+	'confirmaccount-econf' => '(تأیید شده)',
 	'confirmaccount-noreason' => '(هیچ)',
 	'confirmaccount-ip' => 'نشانی آی‌پی:',
+	'confirmaccount-submit' => 'تأیید',
+	'confirmaccount-wsum' => 'خوش‌آمدید!',
 );
 
 /** Finnish (suomi)
@@ -3545,6 +3558,7 @@ Il pote haber listas de contacto in le sito que tu pote usar si tu vole saper pl
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Farras
  * @author Irwangatot
  * @author IvanLanin
  * @author Iwan Novirion
@@ -3616,6 +3630,7 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-none-p' => '(tidak diberikan)',
 	'confirmaccount-confirm' => 'Gunakan opsi berikut untuk menyetujui, menolak, atau menunda permintaan ini:', # Fuzzy
 	'confirmaccount-econf' => '(telah dikonfirmasi)',
+	'confirmaccount-withcv' => '(CV terlampir)',
 	'confirmaccount-reject' => '(ditolah oleh [[User:$1|$1]] pada $2)',
 	'confirmaccount-rational' => 'Alasan yang diberikan kepada pendaftar:',
 	'confirmaccount-noreason' => '(tidak ada)',
@@ -4068,6 +4083,10 @@ $messages['ka'] = array(
 	'confirmaccount-showheld' => 'გადადებული თხოვნები',
 	'confirmaccount-showexp' => 'ვადაგასული თხოვნები',
 	'confirmaccount-review' => 'გადახედვა',
+	'confirmaccount-all' => '(ყველა რიგის ჩვენება)',
+	'confirmaccount-type' => 'არჩეული რიგი:',
+	'confirmaccount-type-0' => 'მომავალი ავტორები',
+	'confirmaccount-type-1' => 'მომავალი რედაქტორები',
 	'confirmaccount-q-open' => 'ღია თხოვნები',
 	'confirmaccount-q-held' => 'გადადებული თხოვნები',
 	'confirmaccount-q-rej' => 'ცოტა ხნის წინ უარყოფილი თხოვნები',
@@ -4090,11 +4109,13 @@ $messages['ka'] = array(
 	'confirmaccount-none-p' => '(არ არის მითითებული)',
 	'confirmaccount-econf' => '(დადასტურებულია)',
 	'confirmaccount-withcv' => '(CV მიბმულია)',
+	'confirmaccount-reject' => '(უარყო მომხმარებელმა [[User:$1|$1]] $2-ზე)',
 	'confirmaccount-noreason' => '(არა)',
 	'confirmaccount-create' => 'დამტკიცება (ანგარიშის შექმნა)',
 	'confirmaccount-hold' => 'გადადება',
 	'confirmaccount-ip' => 'IP მისამართი:',
 	'confirmaccount-submit' => 'დადასტურება',
+	'confirmaccount-summary' => 'მომხმარებლის გვერდის შექმნა ახალი მომხმარებლისათვის.',
 	'confirmaccount-wsum' => 'კეთილი იყოს თქვენი მობრძანება!',
 );
 
@@ -5449,7 +5470,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-leg-ip' => 'IP-adresgegevens',
 	'confirmaccount-name' => 'Gebruikersnaam',
 	'confirmaccount-real' => 'Naam:',
-	'confirmaccount-email' => 'E-mail:',
+	'confirmaccount-email' => 'E-mailadres:',
 	'confirmaccount-reqtype' => 'Positie:',
 	'confirmaccount-pos-0' => 'auteur',
 	'confirmaccount-pos-1' => 'redacteur',
@@ -6351,6 +6372,7 @@ $messages['rm'] = array(
 );
 
 /** Romanian (română)
+ * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Mihai
  * @author Minisarm
@@ -6365,6 +6387,9 @@ $messages['ro'] = array(
 	'confirmaccount-showrej' => 'cereri respinse',
 	'confirmaccount-showheld' => 'cereri de ajutor',
 	'confirmaccount-showexp' => 'cereri expirate',
+	'confirmaccount-review' => 'Recenzie',
+	'confirmaccount-all' => '(arată toată lista de așteptare)',
+	'confirmaccount-type' => 'Coadă:',
 	'confirmaccount-q-open' => 'cereri deschise',
 	'confirmaccount-q-rej' => 'cereri respinse recent',
 	'confirmaccount-q-stale' => 'cereri expirate',
@@ -6372,6 +6397,7 @@ $messages['ro'] = array(
 	'confirmaccount-leg-areas' => 'Arii principale de interes',
 	'confirmaccount-leg-person' => 'Informații personale',
 	'confirmaccount-leg-other' => 'Alte informații',
+	'confirmaccount-leg-ip' => 'date adresă IP',
 	'confirmaccount-name' => 'Nume de utilizator',
 	'confirmaccount-real' => 'Nume:',
 	'confirmaccount-email' => 'E-mail:',
@@ -8292,6 +8318,7 @@ $2
 /** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
  * @author Mark85296341
+ * @author Shirayuki
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
@@ -8365,6 +8392,8 @@ $messages['zh-hant'] = array(
 	'confirmaccount-spam' => '垃圾（請不要發送電子郵件）',
 	'confirmaccount-reason' => '註解 （在電郵中使用）:',
 	'confirmaccount-ip' => 'IP位址：',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => '批准/拒絕這個帳號',
 	'confirmaccount-submit' => '確認',
 	'confirmaccount-needreason' => '您必須在下方的評論欄闡述您的理由。',
