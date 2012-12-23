@@ -2640,6 +2640,14 @@ $messages['lt'] = array(
 	'requestaccount-leg-user' => 'Naudotojo paskyra',
 	'requestaccount-leg-person' => 'Asmeninė informacija',
 	'requestaccount-leg-other' => 'Kita informacija',
+	'requestaccount-real' => 'Tikrasis vardas:',
+	'requestaccount-same' => '(toks kaip tikrasis vardas žemiau)',
+	'requestaccount-email' => 'El. pašto adresas:',
+	'requestaccount-reqtype' => 'Pareigos:',
+	'requestaccount-level-0' => 'autorius',
+	'requestaccount-level-1' => 'redaktorius',
+	'requestaccount-notes' => 'Papildomos pastabos:',
+	'requestaccount-submit' => 'Prašyti paskyros',
 );
 
 /** Macedonian (македонски)

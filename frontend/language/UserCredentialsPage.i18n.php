@@ -1295,12 +1295,15 @@ Kiek nao of de naam korrek gespeld is.',
  * @author Tomasdd
  */
 $messages['lt'] = array(
+	'usercredentials-user' => 'Naudotojo vardas:',
 	'usercredentials-leg-user' => 'Vartotojo paskyra',
 	'usercredentials-leg-person' => 'Asmeninė informacija',
 	'usercredentials-leg-other' => 'Kita informacija',
+	'usercredentials-leg-ip' => 'IP adreso duomenis',
 	'usercredentials-email' => 'El. paštas:',
 	'usercredentials-real' => 'Tikras vardas:',
 	'usercredentials-bio' => 'Biografija:',
+	'usercredentials-notes' => 'Papildomos pastabos:',
 	'usercredentials-urls' => 'Tinklapių sąrašas:',
 	'usercredentials-ip' => 'Originalus IP adresas:',
 	'usercredentials-member' => 'Teisės:',
@@ -2019,6 +2022,7 @@ $messages['sv'] = array(
 	'usercredentials-leg-areas' => 'Intresseområden',
 	'usercredentials-leg-person' => 'Personlig information',
 	'usercredentials-leg-other' => 'Annan information',
+	'usercredentials-leg-ip' => 'IP-adressdata',
 	'usercredentials-email' => 'E-post:',
 	'usercredentials-real' => 'Riktigt namn:',
 	'usercredentials-bio' => 'Biografi:',

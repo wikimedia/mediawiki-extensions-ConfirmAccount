@@ -3617,6 +3617,7 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-leg-areas' => 'Bidang utama yang diminati',
 	'confirmaccount-leg-person' => 'Informasi pribadi',
 	'confirmaccount-leg-other' => 'Informasi lain',
+	'confirmaccount-leg-ip' => 'Data alamat IP',
 	'confirmaccount-name' => 'Nama pengguna',
 	'confirmaccount-real' => 'Nama:',
 	'confirmaccount-email' => 'Surel:',
@@ -3704,12 +3705,14 @@ $messages['io'] = array(
 /** Icelandic (íslenska)
  * @author S.Örvarr.S
  * @author Ævar Arnfjörð Bjarmason
+ * @author පසිඳු කාවින්ද
  */
 $messages['is'] = array(
 	'confirmaccounts' => 'Staðfesta notandabeðnir',
 	'confirmaccount-real-q' => 'Nafn',
 	'confirmaccount-email-q' => 'Netfang',
 	'confirmaccount-bio-q' => 'Sjálfsævisaga',
+	'confirmaccount-review' => 'Yfirfara',
 	'confirmaccount-leg-user' => 'Aðgangur notanda',
 	'confirmaccount-leg-areas' => 'Aðal áhugamál',
 	'confirmaccount-leg-person' => 'Persónulegar upplýsingar',
@@ -4641,8 +4644,29 @@ $messages['li'] = array(
  */
 $messages['lt'] = array(
 	'confirmaccount-real-q' => 'Vardas',
+	'confirmaccount-email-q' => 'El. paštas',
+	'confirmaccount-bio-q' => 'Biografija',
+	'confirmaccount-review' => 'Peržiūrėti',
+	'confirmaccount-leg-user' => 'Vartotojo paskyra',
+	'confirmaccount-leg-person' => 'Asmeninė informacija',
+	'confirmaccount-leg-other' => 'Kita informacija',
+	'confirmaccount-leg-ip' => 'IP adreso duomenis',
+	'confirmaccount-name' => 'Vartotojo vardas',
 	'confirmaccount-real' => 'Vardas:',
+	'confirmaccount-email' => 'El. paštas:',
+	'confirmaccount-reqtype' => 'Pareigos:',
+	'confirmaccount-pos-0' => 'autorius',
+	'confirmaccount-pos-1' => 'redaktorius',
+	'confirmaccount-bio' => 'Biografija:',
+	'confirmaccount-notes' => 'Papildomos pastabos:',
+	'confirmaccount-urls' => 'Tinklapių sąrašas:',
+	'confirmaccount-none-p' => '(nenurodyta)',
+	'confirmaccount-econf' => '(patvirtinta)',
+	'confirmaccount-withcv' => '(CV prisegtas)',
+	'confirmaccount-noreason' => '(nėra)',
 	'confirmaccount-ip' => 'IP adresas:',
+	'confirmaccount-submit' => 'Patvirtinti',
+	'confirmaccount-wsum' => 'Sveiki atvykę!',
 );
 
 /** Eastern Mari (олык марий)
@@ -7133,6 +7157,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-leg-areas' => 'Intresseområden',
 	'confirmaccount-leg-person' => 'Personlig information',
 	'confirmaccount-leg-other' => 'Annan information',
+	'confirmaccount-leg-ip' => 'IP-adressdata',
 	'confirmaccount-name' => 'Användarnamn',
 	'confirmaccount-real' => 'Namn:',
 	'confirmaccount-email' => 'E-post:',
