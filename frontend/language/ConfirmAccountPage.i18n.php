@@ -1830,6 +1830,7 @@ $messages['ee'] = array(
  * @author Consta
  * @author Crazymadlover
  * @author Egmontaz
+ * @author Glavkos
  * @author Omnipaedista
  * @author ZaDiak
  */
@@ -1855,6 +1856,7 @@ $messages['el'] = array(
 	'confirmaccount-leg-areas' => 'Κύρια πεδία ενδιαφέροντος',
 	'confirmaccount-leg-person' => 'Προσωπικές πληροφορίες',
 	'confirmaccount-leg-other' => 'Άλλες πληροφορίες',
+	'confirmaccount-leg-ip' => 'Στοιχεία διεύθυνσης IP',
 	'confirmaccount-name' => 'Όνομα χρήστη',
 	'confirmaccount-real' => 'Όνομα:',
 	'confirmaccount-email' => 'Ηλεκτρονικό Ταχυδρομείο:',
@@ -6443,6 +6445,7 @@ $messages['ro'] = array(
 	'confirmaccount-ip' => 'Adresă IP:',
 	'confirmaccount-submit' => 'Confirmă',
 	'confirmaccount-needreason' => 'Trebuie să furnizați un motiv în caseta de comentarii de mai jos.',
+	'confirmaccount-summary' => 'Crearea unei pagini de utilizator pentru un utilizator nou',
 	'confirmaccount-welc' => "'''Bun venit pe ''{{SITENAME}}''!'''
 Sperăm că veţi contribui mult şi bine.
 Veţi dori probabil să citiţi [[{{MediaWiki:Helppage}}|paginile de ajutor]].
@@ -7237,6 +7240,7 @@ $messages['szl'] = array(
 
 /** Tamil (தமிழ்)
  * @author Karthi.dr
+ * @author Shanmugamp7
  * @author TRYPPN
  * @author Trengarasu
  * @author மதனாஹரன்
@@ -7274,6 +7278,22 @@ $messages['ta'] = array(
 	'confirmaccount-summary' => 'புதிய பயனருக்காகப் பயனர் பக்கத்தை உருவாக்குகிறது.',
 	'confirmaccount-wsum' => 'வருக ! வணக்கம் !',
 	'confirmaccount-email-subj' => '{{SITENAME}} கணக்கு வேண்டுகோள்',
+	'confirmaccount-email-body' => '{{SITENAME}}-ல் பயனர் கணக்குக்கான உங்கள் கோரிக்கை ஏற்றுக்கொள்ளப்பட்டது.
+
+கணக்கு பெயர்: $1
+
+கடவுச்சொல்: $2
+
+பாதுகாப்பு காரணங்களுக்காக உங்கள் முதல் புகுபதிகையின் போது நீங்கள் உங்கள் கடவுச்சொல்லை மாற்ற வேண்டும். புகுபதிகை செய்ய செல்லவும்  {{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => '{{SITENAME}}-ல் பயனர் கணக்குக்கான உங்கள் கோரிக்கை ஏற்றுக்கொள்ளப்பட்டது.
+
+கணக்கு பெயர்: $1
+
+கடவுச்சொல்: $2
+
+$3
+
+பாதுகாப்பு காரணங்களுக்காக உங்கள் முதல் புகுபதிகையின் போது நீங்கள் உங்கள் கடவுச்சொல்லை மாற்ற வேண்டும். புகுபதிகை செய்ய செல்லவும்  {{fullurl:Special:UserLogin}}.',
 );
 
 /** Telugu (తెలుగు)

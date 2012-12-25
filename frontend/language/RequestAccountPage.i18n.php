@@ -336,6 +336,42 @@ $messages['az'] = array(
 	'requestaccount-level-1' => 'redaktor',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Ebrahimi-amir
+ * @author Mousa
+ */
+$messages['azb'] = array(
+	'requestaccount' => 'حساب ایسته',
+	'requestaccount-text' => "'''بیر ایستیفاده‌چی حسابی ایستمک اوچون آشاغیداکی فورمو دولدوروب و یول‌لایین'''.
+
+آرخایین اولون حساب ایسته‌مکدن قاباق [[{{MediaWiki:Requestaccount-page}}|ایشلتمک شرطلری]]نی اوخوموسونوز.
+
+حسابینیز تأیید اولاندان‌دا، سیز ایمیل ایله خبردار اولاجاقسیز و اوندان سونرا حسابینیزی [[Special:UserLogin|گیریش]]‌ده ایشلده بیلرسینیز.",
+	'requestaccount-page' => '{{ns:project}}:ایشلتمک شرطلری',
+	'requestaccount-dup' => "'''دیقت: سیز حال‌حاضیردا بیر یازدیریلمیش حساب ایله گیریش ائتمیسینیز.'''",
+	'requestaccount-leg-user' => 'ایستیفاده‌چی حسابی',
+	'requestaccount-leg-areas' => 'اصلی ماراق حوزه‌لری',
+	'requestaccount-leg-person' => 'شخصی بیلگیلر',
+	'requestaccount-leg-other' => 'آیری بیلگیلر',
+	'requestaccount-leg-tos' => 'ایستیفاده شرطلری',
+	'requestaccount-acc-text' => 'بو ایستک یول‌لانیلاندا سیزین ایمیل آدرسینیزه بیر دوغرولاما مئساژی گؤندریله‌جکدیر.
+لوطفاً ایمیل‌ده اولان دوغرولاماق باغلانتیسینی تیکلاماقلا جاواب وئرین.
+هم‌ده حسابینیز یاراناندا رمزینیز سیزه ایمیل اولاجاقدیر.',
+	'requestaccount-areas-text' => 'آشاغیدا رسمی تخصصیز اولدوغو ساحه‌لری یا ساحه‌لری کی اوندا چوخ ایشله‌یه‌جکسینیز سئچین.',
+	'requestaccount-ext-text' => 'آشاغیداکی بیلگیلر خوصوصیدیلر و یالنیز بو ایستگه ایشلنیله‌جکدیلر.
+کیملیگی دوغرولاماغا یاردیم ائتمک اوچون ایلگی قورماق بیلگیلری مثلاً تلفن نومره‌نیزی وئره بیلرسینیز.',
+	'requestaccount-bio-text' => 'آشاغیداکی بیوگرافی‌ده اولدوغو قدر ایلگیلری بیلگیلر وئرین.',
+	'requestaccount-bio-text-i' => "'''سیزین بیوگرافینیز، ایستیفاده‌چی صحیفه‌نیزین ایلکین یازیسی اولاجاقدیر.'''
+آرخایین اولون بو بیلگیلرین نشر اولماغیلا موشکولونوز یوخدور.",
+	'requestaccount-real' => 'دوغرو آد:',
+	'requestaccount-same' => '(همن آشاغیداکی دوغرو آد کیمی)',
+	'requestaccount-email' => 'ایمیل آدرسی:',
+	'requestaccount-reqtype' => 'یئر:',
+	'requestaccount-level-0' => 'یارادیجی',
+	'requestaccount-level-1' => 'دَییشدیرن:',
+	'requestaccount-bio' => 'شخصی بیوگرافی (یالنیز ساده متن):',
+);
+
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
  */
@@ -1831,6 +1867,7 @@ Tutón wobkrućenski kod budźe w $4 płaciwy.',
 
 /** Hungarian (magyar)
  * @author Dani
+ * @author Dj
  * @author Dorgan
  * @author Glanthor Reviol
  * @author Tgr
@@ -1864,7 +1901,7 @@ A nevedet megváltoztathatod a „[[Special:Preferences|beállításaim]]” lap
 	'requestaccount-reqtype' => 'Pozíció:',
 	'requestaccount-level-0' => 'szerző',
 	'requestaccount-level-1' => 'szerkesztő',
-	'requestaccount-bio' => 'Személyes életrajz:', # Fuzzy
+	'requestaccount-bio' => 'Személyes életrajz (csak sima szöveg):',
 	'requestaccount-attach' => 'CV (nem kötelező)',
 	'requestaccount-notes' => 'További megjegyzések:',
 	'requestaccount-urls' => 'Weboldalak listája, ha van (külön sorba írd őket):',
@@ -3755,6 +3792,7 @@ $messages['sah'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'requestaccount' => 'ගිණුමක් අයදින්න',
 	'requestaccount-leg-user' => 'පරිශීලක ගිණුම',
 	'requestaccount-leg-person' => 'පුද්ගලික තොරතුරු',
 	'requestaccount-leg-other' => 'පරිශීලකගේ තොරතුරු',

@@ -1815,7 +1815,10 @@ $messages['ro'] = array(
 	'usercredentials-notes' => 'Note adiționale:',
 	'usercredentials-urls' => 'Listă de situri web:',
 	'usercredentials-ip' => 'Adresă IP originală:',
+	'usercredentials-agent' => 'User-Agent original:',
 	'usercredentials-member' => 'Drepturi:',
+	'usercredentials-badid' => 'Nicio acreditare găsită pentru acest utilizator.
+Verificați ca numele să fie scris corect.',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
@@ -1866,6 +1869,7 @@ $messages['scn'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'usercredentials' => 'පරිශීලක සාක්ෂි පත්‍ර',
 	'usercredentials-user' => 'පරිශීලක නාමය:',
 	'usercredentials-leg-user' => 'පරිශීලක ගිණුම',
 	'usercredentials-leg-person' => 'පුද්ගලික තොරතුරු',

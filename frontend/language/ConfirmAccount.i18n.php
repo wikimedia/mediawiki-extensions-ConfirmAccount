@@ -412,7 +412,7 @@ $messages['it'] = array(
  * @author 青子守歌
  */
 $messages['ja'] = array(
-	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み{{PLURAL:$1|[[Special:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。'''注意が必要です！'''",
+	'confirmaccount-newrequests' => "現在、'''$1個'''のメール認証済み{{PLURAL:$1|[[Special:ConfirmAccounts|アカウント申請]]}}が承認待ちになっています。'''注意が必要です!'''",
 	'requestaccount-loginnotice' => "利用者アカウントを取得するには、'''[[Special:RequestAccount|アカウント登録申請]]'''をしてください。",
 	'right-confirmaccount' => '[[Special:ConfirmAccounts|アカウント申請キュー]]を閲覧',
 	'right-requestips' => 'アカウント申請の処理中に申請者のIPアドレスを閲覧',
