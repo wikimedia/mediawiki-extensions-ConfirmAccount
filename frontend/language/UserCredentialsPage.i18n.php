@@ -1834,6 +1834,7 @@ $messages['rtm'] = array(
  * @author Kv75
  * @author Lockal
  * @author MaxSem
+ * @author Ole Yves
  * @author Rubin
  * @author Sasha Blashenkov
  * @author Александр Сигачёв
@@ -1847,6 +1848,7 @@ $messages['ru'] = array(
 	'usercredentials-leg-areas' => 'Основные области интересов',
 	'usercredentials-leg-person' => 'Личные сведения',
 	'usercredentials-leg-other' => 'Прочая информация',
+	'usercredentials-leg-ip' => 'Данные IP-адреса',
 	'usercredentials-email' => 'Эл. почта:',
 	'usercredentials-real' => 'Настоящее имя:',
 	'usercredentials-bio' => 'Биография:',
@@ -1854,6 +1856,8 @@ $messages['ru'] = array(
 	'usercredentials-notes' => 'Дополнительные замечания:',
 	'usercredentials-urls' => 'Список веб-сайтов:',
 	'usercredentials-ip' => 'IP-адрес:',
+	'usercredentials-xff' => 'Оригинал X-Forwarded-For:',
+	'usercredentials-agent' => 'Оригинальный User-Agent:',
 	'usercredentials-member' => 'Права:',
 	'usercredentials-badid' => 'Не найдена удостоверяющая информация об участнике. Проверьте правильность написания имени.',
 );
@@ -1872,15 +1876,18 @@ $messages['si'] = array(
 	'usercredentials' => 'පරිශීලක සාක්ෂි පත්‍ර',
 	'usercredentials-user' => 'පරිශීලක නාමය:',
 	'usercredentials-leg-user' => 'පරිශීලක ගිණුම',
+	'usercredentials-leg-areas' => 'ඇල්මේ ප්‍රධාන පැති',
 	'usercredentials-leg-person' => 'පුද්ගලික තොරතුරු',
 	'usercredentials-leg-other' => 'වෙනත් තොරතුරු',
 	'usercredentials-leg-ip' => 'IP ලිපින දත්ත',
 	'usercredentials-email' => 'විද්‍යුත් තැපෑල:',
 	'usercredentials-real' => 'සැබෑ නාමය:',
 	'usercredentials-bio' => 'චරිතාපදානය:',
+	'usercredentials-attach' => 'සංක්ෂේපය/CV:',
 	'usercredentials-notes' => 'අමතර සටහන්:',
 	'usercredentials-urls' => 'වෙබ් අඩවි ලැයිස්තුව:',
 	'usercredentials-ip' => 'නියම IP ලිපිනය:',
+	'usercredentials-agent' => 'නියම පරිශීලක-ඒජන්ත:',
 	'usercredentials-member' => 'හිමිකම්:',
 );
 
