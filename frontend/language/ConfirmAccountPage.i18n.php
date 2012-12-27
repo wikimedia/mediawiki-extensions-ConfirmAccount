@@ -2223,6 +2223,7 @@ $messages['fa'] = array(
  * @author Str4nd
  * @author Taleman
  * @author Varusmies
+ * @author VezonThunder
  */
 $messages['fi'] = array(
 	'confirmaccounts' => 'Myönnä käyttäjätunnuksia.',
@@ -2289,6 +2290,7 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-none-p' => '(ei annettu)',
 	'confirmaccount-confirm' => 'Hyväksy, hylkää tai pysäytä tämä pyyntö alla olevilla valinnoilla:',
 	'confirmaccount-econf' => '(tarkistettu)',
+	'confirmaccount-withcv' => '(CV liitteenä)',
 	'confirmaccount-reject' => '(hylätty, hylkääjänä [[User:$1|$1]] osoitteesta $2)',
 	'confirmaccount-rational' => 'Hakijalle kerrotut perustelut:',
 	'confirmaccount-noreason' => '(ei mitään)',
@@ -3369,6 +3371,7 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-none-p' => '(nincs megadva)',
 	'confirmaccount-confirm' => 'A lenti beállításokkal elfogadhatod, visszautasíthatod vagy visszatarthatod a kérelmet:',
 	'confirmaccount-econf' => '(megerősítve)',
+	'confirmaccount-withcv' => '(CV csatolva)',
 	'confirmaccount-reject' => '(visszautasította [[User:$1|$1]] $2-kor)',
 	'confirmaccount-rational' => 'A jelentkezőnek adott magyarázat:',
 	'confirmaccount-noreason' => '(nincs)',
@@ -3380,6 +3383,8 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-spam' => 'Spam (ne küldjön e-mailt)',
 	'confirmaccount-reason' => 'Megjegyzés (az e-mailhez lesz csatolva):',
 	'confirmaccount-ip' => 'IP-cím:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => 'Felhasználói fiók elfogadása/visszautasítása',
 	'confirmaccount-submit' => 'Megerősítés',
 	'confirmaccount-needreason' => 'Meg kell adnod az okot a megjegyzés mezőben.',
@@ -4445,6 +4450,13 @@ $messages['kw'] = array(
 	'confirmaccount-name' => 'Hanow usyer',
 	'confirmaccount-email' => 'E-bost:',
 	'confirmaccount-wsum' => 'Dynnargh!',
+);
+
+/** Kirghiz (Кыргызча)
+ * @author Growingup
+ */
+$messages['ky'] = array(
+	'confirmaccount-noreason' => '(жок)',
 );
 
 /** Latin (Latina)
@@ -6447,7 +6459,7 @@ $messages['ro'] = array(
 	'confirmaccount-spam' => 'Spam (nu trimite e-mail)',
 	'confirmaccount-reason' => 'Comentariu (va fi inclus în e-mail):',
 	'confirmaccount-ip' => 'Adresă IP:',
-	'confirmaccount-agent' => 'Agent utilizator:',
+	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => 'Confirmați/respingeți acest cont',
 	'confirmaccount-submit' => 'Confirmă',
 	'confirmaccount-needreason' => 'Trebuie să furnizați un motiv în caseta de comentarii de mai jos.',
@@ -6665,6 +6677,7 @@ $messages['scn'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'confirmaccounts' => 'ගිණුම් අයදුම් තහවුරු කරන්න',
 	'confirmaccount-real-q' => 'නම',
 	'confirmaccount-email-q' => 'විද්‍යුත් තැපෑල',
 	'confirmaccount-bio-q' => 'චරිතාපදානය',
@@ -8041,6 +8054,7 @@ $messages['ug-latn'] = array(
  * @author Alex Khimich
  * @author Base
  * @author Prima klasy4na
+ * @author Steve.rusyn
  * @author Тест
  */
 $messages['uk'] = array(
@@ -8088,6 +8102,8 @@ $messages['uk'] = array(
 	'confirmaccount-econf' => '(підтверджено)',
 	'confirmaccount-noreason' => '(нема)',
 	'confirmaccount-create' => 'Підтвердити (створити обліковий запис)',
+	'confirmaccount-deny' => 'Відхилити (вилучити зі списку)',
+	'confirmaccount-spam' => 'Спам (не надсилати e-mail)',
 	'confirmaccount-ip' => 'IP-адреса:',
 	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-submit' => 'Підтвердити',
