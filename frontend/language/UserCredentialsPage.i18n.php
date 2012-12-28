@@ -187,6 +187,13 @@ $messages['az'] = array(
 	'usercredentials-urls' => 'Vebsaytların siyahısı',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['azb'] = array(
+	'usercredentials-user' => 'ایستیفاده‌چی آدی:',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by

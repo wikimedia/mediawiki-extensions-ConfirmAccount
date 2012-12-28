@@ -701,6 +701,17 @@ $messages['az'] = array(
 	'confirmaccount-submit' => 'Təsdiq et',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['azb'] = array(
+	'confirmaccount-real-q' => 'آد',
+	'confirmaccount-name' => 'ایستیفاده‌چی آدی',
+	'confirmaccount-real' => 'آد:',
+	'confirmaccount-noreason' => '(هئچ)',
+	'confirmaccount-submit' => 'تصدیق ائت',
+);
+
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
  */
@@ -1453,6 +1464,7 @@ Der kan være kontaktlister på webstedet, som du kan benytte, hvis du ønsker a
  * @author Kghbln
  * @author Leithian
  * @author MF-Warburg
+ * @author Metalhead64
  * @author Pill
  * @author Purodha
  * @author Raimond Spekking
@@ -1522,11 +1534,11 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-confirm' => 'Nutze die folgende Auswahl, um den Antrag zu bestätigen, abzulehnen oder um noch abzuwarten.',
 	'confirmaccount-econf' => '(bestätigt)',
 	'confirmaccount-withcv' => '(Lebenslauf angehängt)',
-	'confirmaccount-reject' => '(abgelehnt durch [[User:$1|$1]] am $2)',
+	'confirmaccount-reject' => '({{GENDER:$1|abgelehnt}} durch [[User:$1|$1]] am $2)',
 	'confirmaccount-rational' => 'Begründung für den Antragssteller:',
 	'confirmaccount-noreason' => '(nichts)',
 	'confirmaccount-autorej' => '(dieser Antrag wurde automatisch wegen Inaktivität gestrichen)',
-	'confirmaccount-held' => '(markiert als „abwarten“ durch [[User:$1|$1]] am $3 um $4 Uhr)',
+	'confirmaccount-held' => '({{GENDER:$1|markiert}} als „abwarten“ durch [[User:$1|$1]] am $2)',
 	'confirmaccount-create' => 'Bestätigen (Konto anlegen)',
 	'confirmaccount-deny' => 'Ablehnen (Antrag löschen)',
 	'confirmaccount-hold' => 'Markiert mit „abwarten“',
@@ -1542,7 +1554,7 @@ Wenn du diese Seite verlässt, ohne das Konto zu bestätigen oder abzulehnen, wi
 	'confirmaccount-badaction' => 'Es muss eine gültige Aktion (bestätigen, ablehnen, abwarten) angegeben werden, um fortfahren zu können.',
 	'confirmaccount-acc' => 'Benutzerantrag erfolgreich bestätigt; Benutzer [[User:$1|$1]] wurde angelegt.',
 	'confirmaccount-rej' => 'Benutzerantrag wurde abgelehnt.',
-	'confirmaccount-viewing' => '(wird aktuell angeschaut durch [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(wird aktuell {{GENDER:$1|angeschaut}} durch [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Die Benutzerseite wird für den neuen Benutzer erstellt.',
 	'confirmaccount-welc' => "'''Willkommen bei ''{{SITENAME}}''!'''
 Wir hoffen, dass du viele gute Informationen beisteuerst.
@@ -2291,11 +2303,11 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-confirm' => 'Hyväksy, hylkää tai pysäytä tämä pyyntö alla olevilla valinnoilla:',
 	'confirmaccount-econf' => '(tarkistettu)',
 	'confirmaccount-withcv' => '(CV liitteenä)',
-	'confirmaccount-reject' => '(hylätty, hylkääjänä [[User:$1|$1]] osoitteesta $2)',
+	'confirmaccount-reject' => '(hylätty, hylkääjänä [[User:$1|$1]] osoitteesta $2)', # Fuzzy
 	'confirmaccount-rational' => 'Hakijalle kerrotut perustelut:',
 	'confirmaccount-noreason' => '(ei mitään)',
 	'confirmaccount-autorej' => '(tämä pyyntö on automaattisesti hylätty käyttämättömyyden vuoksi)',
-	'confirmaccount-held' => '("pysäytetty", pysäyttäjänä [[User:$1|$1]] osoitteessa $2)',
+	'confirmaccount-held' => '("pysäytetty", pysäyttäjänä [[User:$1|$1]] osoitteessa $2)', # Fuzzy
 	'confirmaccount-create' => 'Hyväksy (luo käyttäjätunnus)',
 	'confirmaccount-deny' => 'Hylkää (poista jonosta)',
 	'confirmaccount-hold' => 'Pysäytä',
@@ -2309,7 +2321,7 @@ Se voi olla jo käsitelty.',
 	'confirmaccount-acc' => 'Pyynnön vahvistaminen onnistui.
 Käyttäjätunnus [[User:$1|$1]] luotiin.',
 	'confirmaccount-rej' => 'Pyynnön hylkääminen onnistui.',
-	'confirmaccount-viewing' => '(juuri nyt katseltavana käyttäjällä [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(juuri nyt katseltavana käyttäjällä [[User:$1|$1]])', # Fuzzy
 	'confirmaccount-summary' => 'Luodaan käyttäjäsivu uudelle käyttäjälle.',
 	'confirmaccount-welc' => "'''Tervetuloa ''{{SITENAME}}''-sivustolle!''' Toivomme runsasta ja laadukasta kirjoittelua.
 Haluat varmaan lukea [[{{MediaWiki:Helppage}}|ohjesivut]]. Vielä kerran tervetuloa ja pidä hauskaa!",
@@ -2422,11 +2434,11 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-confirm' => 'Utilisez les options ci-dessous pour accepter, rejeter ou mettre en attente la demande:',
 	'confirmaccount-econf' => '(confirmé)',
 	'confirmaccount-withcv' => '(CV joint)',
-	'confirmaccount-reject' => '(rejeté par [[User:$1|$1]] le $2)',
+	'confirmaccount-reject' => '({{GENDER:$1|rejeté}} par [[User:$1|$1]] le $2)',
 	'confirmaccount-rational' => 'Motif donné au candidat',
 	'confirmaccount-noreason' => '(néant)',
 	'confirmaccount-autorej' => '(Cette requête a été abandonnée automatiquement pour cause d’inactivité)',
-	'confirmaccount-held' => 'Marqué « réservé » par [[User:$1|$1]] sur $2',
+	'confirmaccount-held' => '({{GENDER:$1|marqué}} "réservé" par [[User:$1|$1]] le $2)',
 	'confirmaccount-create' => 'Approbation (crée le compte)',
 	'confirmaccount-deny' => 'Rejet (supprime le compte)',
 	'confirmaccount-hold' => 'Réservé',
@@ -2442,7 +2454,7 @@ Si vous quittez cette page sans confirmer ou rejeter cette demande, elle restera
 	'confirmaccount-badaction' => 'Une action valide (accepter, refuser, retenir) doit être spécifiée pour continuer.',
 	'confirmaccount-acc' => 'La demande de compte a été confirmée avec succès ; création du nouvel utilisateur [[User:$1]].',
 	'confirmaccount-rej' => 'La demande a été rejetée avec succès.',
-	'confirmaccount-viewing' => "(actuellement en train d'être visionné par [[User:$1|$1]])",
+	'confirmaccount-viewing' => "(actuellement en train d'être {{GENDER:$1|visionné}} par [[User:$1|$1]])",
 	'confirmaccount-summary' => 'Création de la page utilisateur pour un nouvel utilisateur.',
 	'confirmaccount-welc' => "'''Bienvenue sur ''{{SITENAME}}'' !''' Nous espérons que vous contribuerez en quantité et en qualité. Vous désirerez, peut-être, lire [[{{MediaWiki:Helppage}}|les pages d'aide]]. Bienvenue encore et bonne contribution !
 <nowiki>~~~~</nowiki>",
@@ -2639,11 +2651,11 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-confirm' => 'Use os botóns inferiores para aceptar, rexeitar ou deixar en suspenso esta solicitude:',
 	'confirmaccount-econf' => '(confirmada)',
 	'confirmaccount-withcv' => '(CV adxunto)',
-	'confirmaccount-reject' => '(rexeitada por [[User:$1|$1]] en $2)',
+	'confirmaccount-reject' => '({{GENDER:$1|rexeitada}} por [[User:$1|$1]] o $3 ás $4)', # Fuzzy
 	'confirmaccount-rational' => 'Explicación dada ao solicitante:',
 	'confirmaccount-noreason' => '(ningún)',
 	'confirmaccount-autorej' => '(esta solicitude foi descartada automaticamente debido á inactividade)',
-	'confirmaccount-held' => '(marcada "en suspenso" por [[User:$1|$1]] en $2)',
+	'confirmaccount-held' => '({{GENDER:$1|marcada}} "en suspenso" por [[User:$1|$1]] o $3 ás $4)', # Fuzzy
 	'confirmaccount-create' => 'Aceptar (crear a conta)',
 	'confirmaccount-deny' => 'Rexeitar (eliminar da lista)',
 	'confirmaccount-hold' => 'Suspender',
@@ -2660,7 +2672,7 @@ Se simplemente deixa esta páxina sen confirmar ou rexeitar esta solicitude, que
 	'confirmaccount-acc' => 'Confirmouse sen problemas a solicitude de conta;
 creouse a nova conta de usuario "[[User:$1|$1]]".',
 	'confirmaccount-rej' => 'Rexeitouse sen problemas a solicitude de conta.',
-	'confirmaccount-viewing' => '(actualmente sendo visto por [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(actualmente sendo {{GENDER:$1|revisada}} por [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Creando a páxina do novo usuario.',
 	'confirmaccount-welc' => "'''Reciba a benvida a ''{{SITENAME}}''!''' Esperamos que contribúa moito e ben.
 Quizais queira ler as [[{{MediaWiki:Helppage}}|páxinas de axuda]]. De novo, reciba a nosa benvida e divírtase!",
@@ -3372,11 +3384,11 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-confirm' => 'A lenti beállításokkal elfogadhatod, visszautasíthatod vagy visszatarthatod a kérelmet:',
 	'confirmaccount-econf' => '(megerősítve)',
 	'confirmaccount-withcv' => '(CV csatolva)',
-	'confirmaccount-reject' => '(visszautasította [[User:$1|$1]] $2-kor)',
+	'confirmaccount-reject' => '(visszautasította [[User:$1|$1]] $2-kor)', # Fuzzy
 	'confirmaccount-rational' => 'A jelentkezőnek adott magyarázat:',
 	'confirmaccount-noreason' => '(nincs)',
 	'confirmaccount-autorej' => '(ezt a kérelmet automatikusan elvetettük inaktivitás miatt)',
-	'confirmaccount-held' => '(visszatartotta [[User:$1|$1]] $2-kor)',
+	'confirmaccount-held' => '(visszatartotta [[User:$1|$1]] $2-kor)', # Fuzzy
 	'confirmaccount-create' => 'Elfogadás (fiók elkészítése)',
 	'confirmaccount-deny' => 'Visszautasítás (törlés a listáról)',
 	'confirmaccount-hold' => 'Visszatartás',
@@ -3391,7 +3403,7 @@ Ha üresen hagyod az oldalt, a kérelem elfogadása vagy visszautasítása nélk
 	'confirmaccount-canthold' => 'A kérelmet már visszatartották vagy törölték.',
 	'confirmaccount-acc' => 'A kérelem sikeresen meg lett erősítve; az új felhasználói fiók [[User:$1|$1]] néven lett elkészítve.',
 	'confirmaccount-rej' => 'A kérelem sikeresen visszautasítva.',
-	'confirmaccount-viewing' => '(jelenleg [[User:$1|$1]] nézi)',
+	'confirmaccount-viewing' => '(jelenleg [[User:$1|$1]] nézi)', # Fuzzy
 	'confirmaccount-summary' => 'Felhasználói lap elkészítése az új felhasználó életrajzával.', # Fuzzy
 	'confirmaccount-welc' => "'''Üdvözlet a(z) ''{{SITENAME}}'' wikin!''' Reméljük, hogy sokat fogsz szerkeszteni.
 Elolvashatod a [[{{MediaWiki:Helppage}}|segítséglapokat]] is. Üdvözlet mégegyszer, és érezd jól magadat!",
@@ -3641,11 +3653,11 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-confirm' => 'Gunakan opsi berikut untuk menyetujui, menolak, atau menunda permintaan ini:', # Fuzzy
 	'confirmaccount-econf' => '(telah dikonfirmasi)',
 	'confirmaccount-withcv' => '(CV terlampir)',
-	'confirmaccount-reject' => '(ditolah oleh [[User:$1|$1]] pada $2)',
+	'confirmaccount-reject' => '(ditolah oleh [[User:$1|$1]] pada $2)', # Fuzzy
 	'confirmaccount-rational' => 'Alasan yang diberikan kepada pendaftar:',
 	'confirmaccount-noreason' => '(tidak ada)',
 	'confirmaccount-autorej' => '(permintaan ini telah dihapus secara otomatis karena ketidakaktifan)',
-	'confirmaccount-held' => '(ditandai "ditunda" oleh [[User:$1|$1]] pada $2)',
+	'confirmaccount-held' => '(ditandai "ditunda" oleh [[User:$1|$1]] pada $2)', # Fuzzy
 	'confirmaccount-create' => 'Setuju (buat akun)',
 	'confirmaccount-deny' => 'Tolak',
 	'confirmaccount-hold' => 'Tunda',
@@ -3659,7 +3671,7 @@ Mungkin permintaan tersebut telah ditangani.',
 	'confirmaccount-acc' => 'Permintaan akun berhasil dikonfirmasikan;
 akun pengguna baru [[User:$1|$1]] telah dibuat.',
 	'confirmaccount-rej' => 'Permintaan akun berhasil ditolak.',
-	'confirmaccount-viewing' => '(saat ini sedang ditinjau oleh [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(saat ini sedang ditinjau oleh [[User:$1|$1]])', # Fuzzy
 	'confirmaccount-summary' => 'Membuat halaman pengguna dengan biografi pengguna baru.', # Fuzzy
 	'confirmaccount-welc' => "'''Selamat datang di ''{{SITENAME}}''!'''
 Semoga Anda memberikan kontribusi yang banyak dan berkualitas.
@@ -4121,7 +4133,7 @@ $messages['ka'] = array(
 	'confirmaccount-none-p' => '(არ არის მითითებული)',
 	'confirmaccount-econf' => '(დადასტურებულია)',
 	'confirmaccount-withcv' => '(CV მიბმულია)',
-	'confirmaccount-reject' => '(უარყო მომხმარებელმა [[User:$1|$1]] $2-ზე)',
+	'confirmaccount-reject' => '(უარყო მომხმარებელმა [[User:$1|$1]] $2-ზე)', # Fuzzy
 	'confirmaccount-noreason' => '(არა)',
 	'confirmaccount-create' => 'დამტკიცება (ანგარიშის შექმნა)',
 	'confirmaccount-hold' => 'გადადება',
@@ -4766,11 +4778,11 @@ $messages['mk'] = array(
 	'confirmaccount-confirm' => 'Подолу изберете дали да го прифатите, одбиете или задржите ова барање:',
 	'confirmaccount-econf' => '(потврдено)',
 	'confirmaccount-withcv' => '(CV приложено)',
-	'confirmaccount-reject' => '(одбиено од [[User:$1|$1]] на $2)',
+	'confirmaccount-reject' => '({{GENDER:$1|одбиено}} од [[User:$1|$1]] на $2)',
 	'confirmaccount-rational' => 'Објаснение за барателот:',
 	'confirmaccount-noreason' => '(нема)',
 	'confirmaccount-autorej' => '(ова барање е автоматски отфрлено поради неактивност)',
-	'confirmaccount-held' => '(обележано како „на чекање“ од [[User:$1|$1]] на $2)',
+	'confirmaccount-held' => '({{GENDER:$1|обележано}} како „на чекање“ од [[User:$1|$1]] на $2)',
 	'confirmaccount-create' => 'Прифати (создај сметка)',
 	'confirmaccount-deny' => 'Одбиј (отстрани од списокот)',
 	'confirmaccount-hold' => 'На чекање',
@@ -4787,7 +4799,7 @@ $messages['mk'] = array(
 	'confirmaccount-acc' => 'Барањето за сметка е успешно потврдено;
 создадена е нова сметка [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Барањето за сметка е успешно одбиено.',
-	'confirmaccount-viewing' => '(во моментов ја гледа корисникот [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(во моментов {{GENDER:$1|ја гледа}} корисникот [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Создавање на корисничка страница на нов корисник.',
 	'confirmaccount-welc' => "'''Добредојдовте на ''{{SITENAME}}''!'''
 Се надеваме дека ќе придонесувате многу и квалитетно.
@@ -5522,11 +5534,11 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-confirm' => 'Gebruik de onderstaande mogelijkheden om deze aanvraag goed te keuren, af te keuren of aan te houden:',
 	'confirmaccount-econf' => '(bevestigd)',
 	'confirmaccount-withcv' => '(CV bijgesloten)',
-	'confirmaccount-reject' => '(afgewezen door [[User:$1|$1]] op $2)',
+	'confirmaccount-reject' => '(afgewezen door [[User:$1|$1]] op $2)', # Fuzzy
 	'confirmaccount-rational' => 'Aan de aanvrager opgegeven reden:',
 	'confirmaccount-noreason' => '(geen)',
 	'confirmaccount-autorej' => '(deze aanvraag is automatisch afgebroken wegens inactiviteit)',
-	'confirmaccount-held' => '("aangehouden" door [[User:$1|$1]] op $2)',
+	'confirmaccount-held' => '("aangehouden" door [[User:$1|$1]] op $2)', # Fuzzy
 	'confirmaccount-create' => 'Toelaten (gebruiker aanmaken)',
 	'confirmaccount-deny' => 'Afwijzen (verwijderen)',
 	'confirmaccount-hold' => 'Aanhouden',
@@ -5542,7 +5554,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-badaction' => 'Er moet een geldige handeling worden opgegeven om door te kunnen gaan (accepteren, afwijzen, aanhouden).',
 	'confirmaccount-acc' => 'Gebruikersaanvraag goedgekeurd. De gebruiker [[User:$1|$1]] is aangemaakt.',
 	'confirmaccount-rej' => 'Gebruikersaanvraag afgewezen.',
-	'confirmaccount-viewing' => '(wordt op dit moment bekeken door [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(wordt op dit moment bekeken door [[User:$1|$1]])', # Fuzzy
 	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt voor de nieuwe gebruiker.',
 	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert. 
 Waarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen. Nogmaals, welkom en veel plezier!",
@@ -6123,6 +6135,7 @@ $messages['ps'] = array(
 	'confirmaccount-bio' => 'ژوندليک:',
 	'confirmaccount-urls' => 'د وېبځايونو لړليک:',
 	'confirmaccount-noreason' => '(هېڅ)',
+	'confirmaccount-create' => 'ګڼون (ګڼون جوړول)',
 	'confirmaccount-ip' => 'IP پته:',
 	'confirmaccount-submit' => 'تاييد',
 	'confirmaccount-wsum' => 'ښه راغلۍ!',
@@ -6582,11 +6595,11 @@ $messages['ru'] = array(
 	'confirmaccount-confirm' => 'Используйте элементы ниже, чтобы принять, отклонить или отложить этот запрос:',
 	'confirmaccount-econf' => '(подтверждён)',
 	'confirmaccount-withcv' => '(описание прилагается)',
-	'confirmaccount-reject' => '(отклонил [[User:$1|$1]] $2)',
+	'confirmaccount-reject' => '(отклонил [[User:$1|$1]] $2)', # Fuzzy
 	'confirmaccount-rational' => 'Обоснование, даваемое заявителю:',
 	'confirmaccount-noreason' => '(нет)',
 	'confirmaccount-autorej' => '(этот запрос был автоматически отвергнут из-за неактивности)',
-	'confirmaccount-held' => '(отложил [[User:$1|$1]] $2)',
+	'confirmaccount-held' => '(отложил [[User:$1|$1]] $2)', # Fuzzy
 	'confirmaccount-create' => 'Утвердить (создать учётную запись)',
 	'confirmaccount-deny' => 'Отклонить (убрать из списка)',
 	'confirmaccount-hold' => 'Отложить',
@@ -6602,7 +6615,7 @@ $messages['ru'] = array(
 	'confirmaccount-badaction' => 'Для продолжения должно быть указано допустимое действие (принять, отклонить, отложить).',
 	'confirmaccount-acc' => 'Запрос на учётную запись успешно обработан, создана новая учётная запись [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Запрос на учётную запись был отклонён.',
-	'confirmaccount-viewing' => '(сейчас просматривается участником [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(сейчас просматривается участником [[User:$1|$1]])', # Fuzzy
 	'confirmaccount-summary' => 'Создание страницы участника для нового участника.',
 	'confirmaccount-welc' => "'''Добро пожаловать в ''{{SITENAME}}''!''' Мы надеемся на ваше плодотворное участие.
 Возможно, вам будет интересно ознакомиться со [[{{MediaWiki:Helppage}}|справочными страницами]]. Ещё раз добро пожаловать, приятного времяпрепровождения.",
@@ -6724,7 +6737,7 @@ $messages['si'] = array(
 	'confirmaccount-legend' => 'මෙම ගිණුම තහවුරු කරන්න/ප්‍රතික්ෂේප කරන්න',
 	'confirmaccount-submit' => 'තහවුරු කරන්න',
 	'confirmaccount-rej' => 'ගිණුම අයදුම සාර්ථකව ප්‍රතික්ෂේප කරන ලදී.',
-	'confirmaccount-viewing' => '(දැනට [[User:$1|$1]] විසින් නරඹමින් සිටි)',
+	'confirmaccount-viewing' => '(දැනට [[User:$1|$1]] විසින් නරඹමින් සිටි)', # Fuzzy
 	'confirmaccount-summary' => 'නව පරිශීලක සඳහා පරිශීලක පිටුව තනමින්.',
 	'confirmaccount-wsum' => 'ආයුබෝවන්!',
 	'confirmaccount-email-subj' => '{{SITENAME}} ගිණුම් අයදුම',
@@ -7222,11 +7235,11 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-confirm' => 'Använd alternativen nedan för att godkänna, avslå, eller avvakta med ansökan:',
 	'confirmaccount-econf' => '(bekräftad)',
 	'confirmaccount-withcv' => '(CV bifogad)',
-	'confirmaccount-reject' => '(avslogs av [[User:$1|$1]] den $2)',
+	'confirmaccount-reject' => '(avslogs av [[User:$1|$1]] den $2)', # Fuzzy
 	'confirmaccount-rational' => 'Motivering som gavs till den sökande:',
 	'confirmaccount-noreason' => '(ingen)',
 	'confirmaccount-autorej' => '(den här ansökningen har kasserats automatiskt på grund av inaktvitet)',
-	'confirmaccount-held' => '(markerad som "avvaktande" av [[User:$1|$1]] den $2)',
+	'confirmaccount-held' => '(markerad som "avvaktande" av [[User:$1|$1]] den $2)', # Fuzzy
 	'confirmaccount-create' => 'Godkänn (skapa konto)',
 	'confirmaccount-deny' => 'Avslå (stryk från listan)',
 	'confirmaccount-hold' => 'Avvakta',
@@ -7239,7 +7252,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-canthold' => 'Ansökningen är antingen redan avvaktande eller har avslagits.',
 	'confirmaccount-acc' => 'Kontoansökningen har godkänts och användarkontot [[User:$1|$1]] har skapats.',
 	'confirmaccount-rej' => 'Ansökningen har avslagits.',
-	'confirmaccount-viewing' => '(granskas just nu av [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(granskas just nu av [[User:$1|$1]])', # Fuzzy
 	'confirmaccount-summary' => 'Skapar användarsida för en ny användare.',
 	'confirmaccount-welc' => "'''Välkommen till ''{{SITENAME}}''!''' Vi hoppas att du kommer skriva många bra bidrag.
 Du kommer formodligen ha nytta av att läsa [[{{MediaWiki:Helppage}}|hjälpsidorna]]. Vi önskar igen välkommen och ha kul!",
@@ -8480,11 +8493,11 @@ $messages['zh-hant'] = array(
 	'confirmaccount-none-p' => '（未提供）',
 	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。', # Fuzzy
 	'confirmaccount-econf' => '（已批准）',
-	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]拒絕）',
+	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]拒絕）', # Fuzzy
 	'confirmaccount-rational' => '理由給予申請人：',
 	'confirmaccount-noreason' => '（無）',
 	'confirmaccount-autorej' => '（此請求已因為無活動而自動被回絕）',
-	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]標記為"掛起")',
+	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]標記為"掛起")', # Fuzzy
 	'confirmaccount-create' => '接受 （建立帳號）',
 	'confirmaccount-deny' => '拒絕 （反列示）',
 	'confirmaccount-hold' => '掛起',
@@ -8499,7 +8512,7 @@ $messages['zh-hant'] = array(
 	'confirmaccount-canthold' => '該請求已被掛起，或已被刪除。',
 	'confirmaccount-acc' => '帳戶請求已經成功確認；已經建立一個新的使用者帳號[[User:$1]]。',
 	'confirmaccount-rej' => '帳戶請求已經成功拒絕。',
-	'confirmaccount-viewing' => '（目前正由[[User:$1|$1]]瀏覽）',
+	'confirmaccount-viewing' => '（目前正由[[User:$1|$1]]瀏覽）', # Fuzzy
 	'confirmaccount-summary' => '新用戶創建用戶頁',
 	'confirmaccount-welc' => "'''歡迎來到''{{SITENAME}}''！'''
 我們希望您會作出更多更好的貢獻。
