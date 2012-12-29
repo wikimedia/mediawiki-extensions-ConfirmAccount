@@ -932,6 +932,7 @@ $messages['hsb'] = array(
 
 /** Hungarian (magyar)
  * @author Dani
+ * @author Dj
  * @author Dorgan
  * @author Glanthor Reviol
  * @author Tgr
@@ -945,6 +946,7 @@ $messages['hu'] = array(
 	'usercredentials-leg-areas' => 'Érdeklődési területek',
 	'usercredentials-leg-person' => 'Személyes információ',
 	'usercredentials-leg-other' => 'További információ:',
+	'usercredentials-leg-ip' => 'IP-cím adat',
 	'usercredentials-email' => 'E-mail cím:',
 	'usercredentials-real' => 'Valódi név:',
 	'usercredentials-bio' => 'Életrajz:',

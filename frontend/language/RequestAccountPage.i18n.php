@@ -2251,7 +2251,7 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}} のアカウント申請',
 	'requestaccount-email-body-admin' => '"$1" によるアカウント申請が承認待ちになっています。
 申請メールアドレスは本人確認済みです。この申請への承認は、"$2"　から行うことができます。',
-	'acct_request_throttle_hit' => '申し訳ありません、あなたは既に$1{{PLURAL:$1|アカウント}}を申請済みです。これ以上の申請はできません。',
+	'acct_request_throttle_hit' => '申し訳ありませんが、あなたは既に$1{{PLURAL:$1|アカウント}}を申請済みです。これ以上の申請はできません。',
 );
 
 /** Jamaican Creole English (Patois)
