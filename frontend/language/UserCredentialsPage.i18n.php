@@ -194,6 +194,19 @@ $messages['azb'] = array(
 	'usercredentials-user' => 'ایستیفاده‌چی آدی:',
 );
 
+/** Bashkir (башҡортса)
+ * @author Ләйсән
+ */
+$messages['ba'] = array(
+	'usercredentials-user' => 'Ҡатнашыусы исеме:',
+	'usercredentials-leg-user' => 'Иҫәп яҙмаһы',
+	'usercredentials-leg-person' => 'Шәхси мәғлүмәттәр',
+	'usercredentials-leg-other' => 'Башҡа мәғлүмәт',
+	'usercredentials-real' => 'Ысын исем:',
+	'usercredentials-bio' => 'Биография',
+	'usercredentials-member' => 'Хоҡуҡтар:',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
@@ -315,17 +328,28 @@ $messages['bs'] = array(
 );
 
 /** Catalan (català)
+ * @author Arnaugir
  * @author Loupeter
  * @author Paucabot
  * @author SMP
  * @author Solde
  */
 $messages['ca'] = array(
+	'usercredentials-user' => "Nom d'usuari:",
+	'usercredentials-leg-user' => "Compte d'usuari",
+	'usercredentials-leg-areas' => "Àrees d'interès principals",
 	'usercredentials-leg-person' => 'Informació personal',
 	'usercredentials-leg-other' => 'Altres informacions',
+	'usercredentials-leg-ip' => "Dades d'adreça IP",
 	'usercredentials-email' => 'Correu electrònic:',
 	'usercredentials-real' => 'Nom real:',
 	'usercredentials-bio' => 'Biografia:',
+	'usercredentials-attach' => 'Currículum/CV:',
+	'usercredentials-notes' => 'Notes addicionals:',
+	'usercredentials-urls' => 'Llista de llocs web:',
+	'usercredentials-ip' => 'Adreça IP original:',
+	'usercredentials-xff' => 'X-Forwarded-For original:',
+	'usercredentials-agent' => 'User-Agent original:',
 );
 
 /** Czech (česky)
@@ -687,6 +711,7 @@ $messages['frp'] = array(
 	'usercredentials-leg-areas' => 'Centros d’entèrèts principâls',
 	'usercredentials-leg-person' => 'Enformacions a sè',
 	'usercredentials-leg-other' => 'Ôtres enformacions',
+	'usercredentials-leg-ip' => 'Donâs d’adrèce IP',
 	'usercredentials-email' => 'Adrèce èlèctronica :',
 	'usercredentials-real' => 'Veré nom :',
 	'usercredentials-bio' => 'Biografia :',
@@ -694,6 +719,8 @@ $messages['frp'] = array(
 	'usercredentials-notes' => 'Notes de ples :',
 	'usercredentials-urls' => 'Lista des setos vouèbe :',
 	'usercredentials-ip' => 'Adrèce IP originâla :',
+	'usercredentials-xff' => 'X-Forwarded-For d’origina :',
+	'usercredentials-agent' => 'User-Agent d’origina :',
 	'usercredentials-member' => 'Drêts :',
 );
 

@@ -117,6 +117,13 @@ $messages['bs'] = array(
 	'requestaccount-loginnotice' => "Da biste korisnički račun, morate '''[[Special:RequestAccount|zahtijevati jedan]]'''.",
 );
 
+/** Catalan (català)
+ * @author Arnaugir
+ */
+$messages['ca'] = array(
+	'right-lookupcredentials' => "Mostra les [[Special:UserCredentials|credencials d'usuari]]",
+);
+
 /** Czech (česky)
  * @author Jkjk
  * @author Li-sung
@@ -592,6 +599,14 @@ $messages['nl'] = array(
 	'right-lookupcredentials' => '[[Special:UserCredentials|gebruikersreferenties]] bekijken',
 );
 
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'confirmaccount-newrequests' => "Er staa{{PLURAL:$1|t|n}} '''$1''' gebruikersaanvraag[[Special:ConfirmAccounts|gebruikersaanvra{{PLURAL:$1|ag|gen}}]] open. '''Je aandacht is nodig!'''",
+	'requestaccount-loginnotice' => "Om een gebruiker te krijgen, moet je '''[[Special:RequestAccount|een aanvraag doen]]'''.",
+);
+
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Gunnernett
  * @author Harald Khan
@@ -698,6 +713,13 @@ $messages['ru'] = array(
 	'right-confirmaccount' => 'просмотр [[Special:ConfirmAccounts|запросов на создание учётных записей]]',
 	'right-requestips' => 'Просмотр IP-адресов авторов запросов на создание учётных записей',
 	'right-lookupcredentials' => 'просмотр [[Special:UserCredentials|удостоверяющей информации об участниках]]',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'right-lookupcredentials' => '[[Special:UserCredentials|පරිශීලක සාක්ෂි පත්‍ර]] නරඹන්න',
 );
 
 /** Slovak (slovenčina)

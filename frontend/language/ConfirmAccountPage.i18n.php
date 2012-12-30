@@ -272,6 +272,7 @@ $messages['an'] = array(
  * @author Ciphers
  * @author Meno25
  * @author OsamaK
+ * @author Zanatos
  * @author ترجمان05
  */
 $messages['ar'] = array(
@@ -338,13 +339,13 @@ $messages['ar'] = array(
 	'confirmaccount-notes' => 'ملاحظات إضافية:',
 	'confirmaccount-urls' => 'قائمة مواقع الوب:',
 	'confirmaccount-none-p' => '(غير موفرة)',
-	'confirmaccount-confirm' => 'استخدم الخيارات بالأسفل لقبول، رفض، أو تأجيل هذا الطلب.', # Fuzzy
+	'confirmaccount-confirm' => 'استخدم الخيارات الموجودة أدناه لقبول أو رفض عقد هذا الطلب:',
 	'confirmaccount-econf' => '(تم تأكيده)',
-	'confirmaccount-reject' => '(تم رفضه بواسطته [[User:$1|$1]] في $2)',
+	'confirmaccount-reject' => '(تم رفضه بواسطته [[User:$1|$1]] في $2)', # Fuzzy
 	'confirmaccount-rational' => 'السبب المعطى للمتقدم:',
 	'confirmaccount-noreason' => '(لا شيء)',
 	'confirmaccount-autorej' => '(الطلب تم إلغاؤه آليا بسبب عدم النشاط)',
-	'confirmaccount-held' => '(تم التعليم "قيد الانتظار" بواسطة [[User:$1|$1]] في $2)',
+	'confirmaccount-held' => '(تم التعليم "قيد الانتظار" بواسطة [[User:$1|$1]] في $2)', # Fuzzy
 	'confirmaccount-create' => 'اقبل (أنشئ الحساب)',
 	'confirmaccount-deny' => 'ارفض (أزل من القائمة)',
 	'confirmaccount-hold' => 'أجّل',
@@ -358,8 +359,8 @@ $messages['ar'] = array(
 	'confirmaccount-acc' => 'طلب الحساب تم تأكيده بنجاح؛
 أنشأ حسابا جديدا [[User:$1|$1]].',
 	'confirmaccount-rej' => 'طلب الحساب تم رفضه بنجاح.',
-	'confirmaccount-viewing' => '(حاليا يتم مراجعته بواسطة [[User:$1|$1]])',
-	'confirmaccount-summary' => 'إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.', # Fuzzy
+	'confirmaccount-viewing' => '(حاليا  {{GENDER:$1| يجري}} عرضها من قبل [[مستخدم: $1 | $1 ]])', # Fuzzy
+	'confirmaccount-summary' => 'إنشاء صفحة المستخدم للمستخدم الجديد.',
 	'confirmaccount-welc' => "'''مرحبا إلى ''{{SITENAME}}''!'''
 نأمل أن تساهم كثيرا وجيدا.
 على الأرجح ستريد قراءة [[{{MediaWiki:Helppage}}|البداية]].
@@ -712,6 +713,35 @@ $messages['azb'] = array(
 	'confirmaccount-real' => 'آد:',
 	'confirmaccount-noreason' => '(هئچ)',
 	'confirmaccount-submit' => 'تصدیق ائت',
+);
+
+/** Bashkir (башҡортса)
+ * @author Ләйсән
+ */
+$messages['ba'] = array(
+	'confirmaccount-showopen' => 'асыҡ һорауҙар',
+	'confirmaccount-showrej' => 'ҡабул ителмәгән һорауҙар',
+	'confirmaccount-showexp' => 'иҫке һорауҙар',
+	'confirmaccount-review' => 'ҡарап сығырға',
+	'confirmaccount-all' => '(бөтә сираттарҙы күрһәтергә)',
+	'confirmaccount-type' => 'Һайланған сират:',
+	'confirmaccount-type-1' => 'буласаҡ мөхәррирҙәр',
+	'confirmaccount-q-open' => 'асыҡ һорауҙар',
+	'confirmaccount-q-held' => 'кисектерелгән һорауҙар',
+	'confirmaccount-q-stale' => 'иҫке һорауҙар',
+	'confirmaccount-leg-user' => 'Иҫәп яҙмаһы',
+	'confirmaccount-leg-person' => 'Шәхси мәғлүмәттәр',
+	'confirmaccount-leg-other' => 'Башҡа мәғлүмәт',
+	'confirmaccount-name' => 'Ҡатнашыусы исеме',
+	'confirmaccount-real' => 'Исем:',
+	'confirmaccount-reqtype' => 'Вазифа',
+	'confirmaccount-pos-0' => 'Автор',
+	'confirmaccount-pos-1' => 'мөхәррир',
+	'confirmaccount-bio' => 'Биография',
+	'confirmaccount-none-p' => '(күрһәтелмәгән)',
+	'confirmaccount-econf' => '(раҫланған)',
+	'confirmaccount-noreason' => '(юҡ)',
+	'confirmaccount-hold' => 'Ҡалдырып торорға',
 );
 
 /** Bikol Central (Bikol Central)
@@ -1219,20 +1249,35 @@ Da bi ste se prijaviti, molimo idite na {{fullurl:Special:UserLogin}}.',
 );
 
 /** Catalan (català)
+ * @author Arnaugir
  * @author Loupeter
  * @author Paucabot
  * @author SMP
  * @author Solde
  */
 $messages['ca'] = array(
+	'confirmaccounts' => 'Confirma sol·licituds de compte',
 	'confirmaccount-real-q' => 'Nom',
 	'confirmaccount-email-q' => 'Correu electrònic',
 	'confirmaccount-bio-q' => 'Biografia',
+	'confirmaccount-showopen' => 'sol·licituds obertes',
+	'confirmaccount-showrej' => 'sol·licituds rebutjades',
+	'confirmaccount-showheld' => 'sol·licituds en espera',
+	'confirmaccount-showexp' => 'sol·licituds expirades',
+	'confirmaccount-review' => 'Revisa',
+	'confirmaccount-all' => '(mostra totes les cues)',
 	'confirmaccount-type' => 'Coa:',
+	'confirmaccount-type-0' => 'autors futurs',
+	'confirmaccount-type-1' => 'editors futurs',
+	'confirmaccount-q-open' => 'sol·licituds obertes',
+	'confirmaccount-q-held' => 'sol·licituds en espera',
+	'confirmaccount-q-rej' => 'sol·licituds rebutjades recentment',
+	'confirmaccount-q-stale' => 'sol·licituds expirades',
 	'confirmaccount-leg-user' => "Compte d'usuari",
 	'confirmaccount-leg-areas' => "Àrees d'interès principals",
 	'confirmaccount-leg-person' => 'Informació personal',
 	'confirmaccount-leg-other' => 'Altres informacions',
+	'confirmaccount-leg-ip' => "Dades d'adreça IP",
 	'confirmaccount-name' => "Nom d'usuari",
 	'confirmaccount-real' => 'Nom:',
 	'confirmaccount-email' => 'Correu electrònic:',
@@ -1240,14 +1285,23 @@ $messages['ca'] = array(
 	'confirmaccount-pos-0' => 'autor',
 	'confirmaccount-pos-1' => 'editor',
 	'confirmaccount-bio' => 'Biografia:',
+	'confirmaccount-attach' => 'Currículum/CV:',
 	'confirmaccount-notes' => 'Notes addicionals:',
 	'confirmaccount-urls' => 'Llista de llocs web:',
 	'confirmaccount-none-p' => '(no proporcionat)',
 	'confirmaccount-econf' => '(confirmat)',
+	'confirmaccount-withcv' => '(CV adjunt)',
 	'confirmaccount-noreason' => '(cap)',
+	'confirmaccount-hold' => 'En espera',
+	'confirmaccount-spam' => 'Spam (no enviar correu electrònic)',
+	'confirmaccount-reason' => "Comentari (s'inclourà en el correu electrònic):",
 	'confirmaccount-ip' => 'Adreça IP:',
+	'confirmaccount-agent' => 'User-Agent:',
+	'confirmaccount-legend' => 'Confirma o rebutja aquest compte',
 	'confirmaccount-submit' => 'Confirma',
+	'confirmaccount-summary' => "Creant de pàgina de l'usuari per l'usuari nou",
 	'confirmaccount-wsum' => 'Benvinguts!',
+	'confirmaccount-email-subj' => 'Sol·licitud de compte de {{SITENAME}}',
 );
 
 /** Sorani Kurdish (کوردی)
@@ -2527,6 +2581,7 @@ Los comptos accèptâs seront fêts et pués enlevâs de ceta lista. Los comptos
 	'confirmaccount-leg-areas' => 'Centros d’entèrèts principâls',
 	'confirmaccount-leg-person' => 'Enformacions a sè',
 	'confirmaccount-leg-other' => 'Ôtres enformacions',
+	'confirmaccount-leg-ip' => 'Donâs d’adrèce IP',
 	'confirmaccount-name' => 'Nom d’usanciér',
 	'confirmaccount-real' => 'Nom :',
 	'confirmaccount-email' => 'Mèl. :',
@@ -2539,7 +2594,8 @@ Los comptos accèptâs seront fêts et pués enlevâs de ceta lista. Los comptos
 	'confirmaccount-urls' => 'Lista des setos vouèbe :',
 	'confirmaccount-none-p' => '(pas montâ)',
 	'confirmaccount-econf' => '(confirmâ)',
-	'confirmaccount-reject' => '(refusâ per [[User:$1|$1]] lo $2)',
+	'confirmaccount-withcv' => '(CV apondu)',
+	'confirmaccount-reject' => '({{GENDER:$1|refusâ}} per [[User:$1|$1]] lo $2)',
 	'confirmaccount-rational' => 'Rêson balyê u candidat :',
 	'confirmaccount-noreason' => '(niona)',
 	'confirmaccount-create' => 'Aprobacion (fât lo compto)',
@@ -2548,9 +2604,12 @@ Los comptos accèptâs seront fêts et pués enlevâs de ceta lista. Los comptos
 	'confirmaccount-spam' => 'Spame (mandâd gins de mèssâjo)',
 	'confirmaccount-reason' => 'Comentèro (figurerat dens lo mèssâjo) :',
 	'confirmaccount-ip' => 'Adrèce IP :',
+	'confirmaccount-xff' => 'X-Forwarded-For :',
+	'confirmaccount-agent' => 'User-Agent :',
 	'confirmaccount-legend' => 'Confirmar / refusar ceti compto',
 	'confirmaccount-submit' => 'Confirmar',
-	'confirmaccount-viewing' => '(orendrêt aprés étre vu per [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(orendrêt aprés étre {{GENDER:$1|vu}} per [[User:$1|$1]])',
+	'confirmaccount-summary' => 'Crèacion de la pâge utilisator por un novél utilisator.',
 	'confirmaccount-wsum' => 'Benvegnua !',
 	'confirmaccount-email-subj' => 'Demanda de compto dessus {{SITENAME}}',
 );
@@ -5488,7 +5547,7 @@ $messages['nl'] = array(
 
 Elke lijst met gebruikersaanvragen bevat drie sublijsten: één voor openstaande aanvragen, één voor aanvragen die zijn gemarkeerd als \"in behandeling\" door andere beheerders wegens ontbrekende informatie en één voor recent geweigerde aanvragen.
 
-Wanneer gereageerd wordt op een aanvraag, kijk die dan grondig na en bevestig indien nodig de informatie van de aanvragen. Uw handelingen worden niet publiek opgeslagen. Kijk ook de handelingen die niet van u afkomstig na.",
+Wanneer gereageerd wordt op een aanvraag, kijk die dan grondig na en bevestig indien nodig de informatie van de aanvragen. Uw handelingen worden niet publiek opgeslagen. Kijk ook de handelingen die niet van u afkomstig zijn na.",
 	'confirmaccount-list' => 'Hieronder staan de gebruikersaanvragen die op afhandeling wachten.
 Als een aanvraag is goed- of afgekeurd, wordt deze uit deze lijst verwijderd.',
 	'confirmaccount-list2' => 'Hieronder staan recentelijk afgewezen gebruikersaanvragen die die over een aantal dagen	automatisch worden verwijderd.
@@ -5503,7 +5562,7 @@ Bewerkingen die u maakt aan de biografie die in de aanvraag is opgenomen hebben 
 U kunt de gebruiker onder een andere naam aanmaken.
 Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
 
-Als u deze pagina verlaat zonder het gebruikersaanvraag te bevestigen of af te wijzen, dan blijft het open staan.",
+Als u deze pagina verlaat zonder het gebruikersaanvraag te bevestigen of af te wijzen, dan blijft die open staan.",
 	'confirmaccount-none-o' => 'Er zijn geen openstaande gebruikersaanvragen.',
 	'confirmaccount-none-h' => 'Er zijn geen uitgestelde gebruikersaanvragen.',
 	'confirmaccount-none-r' => 'Er zijn geen recent afgewezen gebruikersaanvragen.',
@@ -5568,8 +5627,10 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-rej' => 'Gebruikersaanvraag afgewezen.',
 	'confirmaccount-viewing' => '(wordt op dit moment bekeken door [[User:$1|$1]])', # Fuzzy
 	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt voor de nieuwe gebruiker.',
-	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!''' We hopen dat u veel goede bijdragen levert. 
-Waarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen. Nogmaals, welkom en veel plezier!",
+	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!'''
+We hopen dat u veel goede bijdragen levert. 
+Waarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen.
+Nogmaals, welkom en veel plezier!",
 	'confirmaccount-wsum' => 'Welkom!',
 	'confirmaccount-email-subj' => '{{SITENAME}} gebruikersaanvraag',
 	'confirmaccount-email-body' => 'Uw gebruikersaanvraag op {{SITENAME}} is goedgekeurd.
@@ -5604,7 +5665,65 @@ Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over
 
 $2
 
-Er kunnen contacteerlijsten zijn die u kunt gebruiken als u meer wil te weten komen over het beleid ten aanzien van gebruikers.',
+Op de site staan mogelijk lijsten met contactgegevens als u meer wilt weten over het gebruikersbeleid.',
+);
+
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'confirmaccount-maintext' => "'''Deze pagina wordt gebruikt om openstaande gebruikersaanvragen te bevestigen op ''{{SITENAME}}'''''.
+
+Elke lijst met gebruikersaanvragen bevat drie sublijsten: één voor openstaande aanvragen, één voor aanvragen die zijn gemarkeerd als \"in behandeling\" door andere beheerders wegens ontbrekende informatie en één voor recent geweigerde aanvragen.
+
+Wanneer gereageerd wordt op een aanvraag, kijk die dan grondig na en bevestig indien nodig de informatie van de aanvragen. Je handelingen worden niet publiek opgeslagen. Kijk ook de handelingen die niet van jou afkomstig zijn na.",
+	'confirmaccount-text' => "Dit is een openstaand gebruikersaanvraag voor '''{{SITENAME}}'''.
+
+Beoordeel alle onderstaande informatie zorgvuldig.
+Als je een aanvraag goedkeurt, gebruik dan, als aanwezig, het dropdownmenu om de gebruikersstatus in te stellen.
+Bewerkingen die je maakt aan de biografie die in de aanvraag is opgenomen hebben geen invloed op de opgeslagen identiteit.
+Je kunt de gebruiker onder een andere naam aanmaken.
+Doe dit alleen als er mogelijk verwarring kan optreden met andere gebruikersnamen.
+
+Als je deze pagina verlaat zonder het gebruikersaanvraag te bevestigen of af te wijzen, dan blijft die open staan.",
+	'confirmaccount-needreason' => 'Je moet een reden geven in het onderstaande veld.',
+	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!'''
+We hopen dat je veel goede bijdragen levert. 
+Waarschijnlijk wil je de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen.
+Nogmaals, welkom en veel plezier!",
+	'confirmaccount-email-body' => 'Je gebruikersaanvraag op {{SITENAME}} is goedgekeurd.
+
+Gebruiker: $1
+
+Wachtwoord: $2
+
+Om beveiligingsredenen dien je je wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
+{{fullurl:Special:UserLogin}}.',
+	'confirmaccount-email-body2' => 'Je gebruikersaanvraag op {{SITENAME}} is goedgekeurd.
+
+Gebruikersnaam: $1
+
+Wachtwoord: $2
+
+$3
+
+Om beveiligingsredenen dien je je wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via 
+{{fullurl:Special:Userlogin}}.',
+	'confirmaccount-email-body3' => 'Je gebruikersaanvraag voor "$1" op {{SITENAME}} is afgewezen.
+
+Dit kan meerdere oorzaken hebben.
+Mogelijk heb je het formulier niet volledig ingevuld, waren je antwoorden onvoldoende compleet, of heb je om een andere reden niet voldaan aan de eisen.
+Op de site staan mogelijk lijsten met contactgegevens als je meer wilt weten over het gebruikersbeleid.',
+	'confirmaccount-email-body4' => 'Je gebruikersaanvraag voor "$1" op {{SITENAME}} is afgewezen.
+
+$2
+
+Op de site staan mogelijk lijsten met contactgegevens als je meer wilt weten over het gebruikersbeleid.',
+	'confirmaccount-email-body5' => 'Voordat je aanvraag voor een gebruiker "$1" aanvaard kan worden op {{SITENAME}}, moet je eerst extra informatie geven.
+
+$2
+
+Op de site staan mogelijk lijsten met contactgegevens als je meer wilt weten over het gebruikersbeleid.',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)

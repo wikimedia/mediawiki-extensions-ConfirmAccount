@@ -372,6 +372,15 @@ $messages['azb'] = array(
 	'requestaccount-bio' => 'شخصی بیوگرافی (یالنیز ساده متن):',
 );
 
+/** Bashkir (башҡортса)
+ * @author Ләйсән
+ */
+$messages['ba'] = array(
+	'requestaccount-reqtype' => 'Вазифа',
+	'requestaccount-level-0' => 'автор',
+	'requestaccount-level-1' => 'мөхәррир',
+);
+
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
  */
@@ -656,6 +665,7 @@ Ne možete podnositi više zahtjeva.',
 );
 
 /** Catalan (català)
+ * @author Arnaugir
  * @author Loupeter
  * @author Paucabot
  * @author SMP
@@ -666,6 +676,7 @@ $messages['ca'] = array(
 	'requestaccount-leg-user' => "Compte de l'usuari",
 	'requestaccount-leg-person' => 'Informació personal',
 	'requestaccount-leg-other' => 'Altres informacions',
+	'requestaccount-leg-tos' => "Condicions d'ús",
 	'requestaccount-real' => 'Nom real:',
 	'requestaccount-same' => '(el mateix que el nom real)',
 	'requestaccount-email' => 'Adreça de correu electrònic:',
@@ -674,6 +685,7 @@ $messages['ca'] = array(
 	'requestaccount-level-1' => 'editor',
 	'requestaccount-bio' => 'Biografia personal:', # Fuzzy
 	'requestaccount-notes' => 'Notes addicionals:',
+	'requestaccount-submit' => 'Sol·licitud de compte',
 );
 
 /** Czech (česky)
@@ -3098,11 +3110,11 @@ Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Spec
 	'requestaccount-leg-other' => 'Overige informatie',
 	'requestaccount-leg-tos' => 'Gebruiksvoorwaarden',
 	'requestaccount-acc-text' => 'U ontvangt een e-mailbevestiging als uw aanvraag is ontvangen.
-Reageer daar op door te klikken op de verwijzing die in de e-mail staat.
+Reageer daar op door te klikken op de koppeling die in de e-mail staat.
 U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
 	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee u ervaring hebt of waar u denkt het meeste aan te gaan bijdragen.',
 	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor deze aanvraag.
-U kunt contactgegevens zoals een telefoonummer opgeven om te helpen bij het vaststellen van uw identiteit.',
+U kunt contactgegevens zoals een telefoonnummer opgeven om te helpen bij het vaststellen van uw identiteit.',
 	'requestaccount-bio-text' => 'Probeer uw belangrijkste gegevens op te nemen.',
 	'requestaccount-bio-text-i' => "'''Deze tekst wordt gebruikt voor uw gebruikerspagina.'''
 Zorg ervoor dat u hier gegevens noteert die gepubliceerd mogen worden.",
@@ -3116,7 +3128,7 @@ Zorg ervoor dat u hier gegevens noteert die gepubliceerd mogen worden.",
 	'requestaccount-attach' => 'CV (optioneel):',
 	'requestaccount-notes' => 'Opmerkingen:',
 	'requestaccount-urls' => 'Lijst van websites, als van toepassing (iedere site op een aparte regel):',
-	'requestaccount-agree' => 'U moet aangegeven dat uw naam juist is en dat u akkoord gaat met de Voorwaarden.',
+	'requestaccount-agree' => 'U moet aangegeven dat uw naam juist is en dat u akkoord gaat met de Gebruiksvoorwaarden.',
 	'requestaccount-inuse' => 'De gebruiker is al bekend in een aanvraagprocedure.',
 	'requestaccount-tooshort' => 'Uw biografie moet ten minste {{PLURAL:$1|één woord|$1 woorden}} bevatten.',
 	'requestaccount-emaildup' => 'Een andere openstaande gebruikersaanvraag gebruikt hetzelfde e-mailadres.',
@@ -3130,14 +3142,14 @@ De naam die ik heb opgegeven onder "Uw naam" is inderdaad mijn eigen echte naam.
 Er is een bevestigingse-mail naar uw e-mailadres gezonden',
 	'request-account-econf' => 'Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.',
 	'requestaccount-email-subj' => '{{SITENAME}} bevestiging e-mailadres',
-	'requestaccount-email-body' => 'Iemand, waarschijnlijk u, heeft vanaf  IP-adres $1 op {{SITENAME}} een aanvraag gedaan
+	'requestaccount-email-body' => 'Iemand, waarschijnlijk u, heeft vanaf IP-adres $1 op {{SITENAME}} een aanvraag gedaan
 voor het aanmaken van gebruiker "$2" met dit e-mailadres.
 
 Open de onderstaande verwijzing in uw browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij u hoort:
 
 $3
 
-Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de verwijzing dan *niet*. 
+Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de kopeeling dan *niet*. 
 Deze bevestigingse-mail vervalt op $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} gebruikersaanvragen',
 	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
@@ -3145,6 +3157,48 @@ Het e-mailadres is bevestigd.
 U kunt de aanvraag hier "$2" bevestigen.',
 	'acct_request_throttle_hit' => 'U hebt al $1 {{PLURAL:$1|gebruikersaanvraag|gebruikersaanvragen}} gedaan.
 U kunt geen nieuwe aanvragen meer uitbrengen.',
+);
+
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'requestaccount-text' => "'''Vul het onderstaande formulier in en sla het op om een gebruiker aan te vragen'''. 
+
+Zorg ervoor dat je eerst de [[{{MediaWiki:Requestaccount-page}}|voorwaarden]] leest voordat je een gebruiker aanvraagt.
+
+Als je aanvraag is goedgekeurd, krijg je een e-mail en daarna kan je je [[Special:UserLogin|aanmelden]].",
+	'requestaccount-dup' => "'''Let op: je bent al aangemeld met een geregistreerde gebruikersnaam.'''",
+	'requestaccount-acc-text' => 'Je ontvangt een e-mailbevestiging als uw aanvraag is ontvangen.
+Reageer daar op door te klikken op de koppeling die in de e-mail staat.
+Je krijgt een wachtwoord als je gebruiker is aangemaakt.',
+	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee je ervaring hebt of waar je denkt het meeste aan te gaan bijdragen.',
+	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor deze aanvraag.
+Je kunt contactgegevens zoals een telefoonnummer opgeven om te helpen bij het vaststellen van je identiteit.',
+	'requestaccount-bio-text' => 'Probeer je belangrijkste gegevens op te nemen.',
+	'requestaccount-bio-text-i' => "'''Deze tekst wordt gebruikt voor je gebruikerspagina.'''
+Zorg ervoor dat je hier gegevens noteert die gepubliceerd mogen worden.",
+	'requestaccount-agree' => 'Je moet aangegeven dat je naam juist is en dat je akkoord gaat met de Gebruiksvoorwaarden.',
+	'requestaccount-tooshort' => 'Je biografie moet ten minste {{PLURAL:$1|één woord|$1 woorden}} bevatten.',
+	'requestaccount-resub' => 'Je CV-bestand moet opnieuw geselecteerd worden om veiligheidsredenen.
+Laat het veld leeg als je geen bestand meer wilt bijvoegen.',
+	'requestaccount-sent' => 'Je gebruikersaanvraag is verstuurd en wacht om nagekeken te worden.
+Er is een bevestigingse-mail naar je e-mailadres gezonden',
+	'request-account-econf' => 'Je e-mailadres is bevestigd en wordt in je gebruikersaanvraag opgenomen.',
+	'requestaccount-email-body' => 'Iemand, waarschijnlijk jij, heeft vanaf IP-adres $1 op {{SITENAME}} een aanvraag gedaan
+voor het aanmaken van gebruiker "$2" met dit e-mailadres.
+
+Open de onderstaande verwijzing in je browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij jou hoort:
+
+$3
+
+Als de gebruiker is aangemaakt krijg jij alleen een e-mail met het wachtwoord. Als de aanvraag niet van jou afkomstig is, volg de koppeling dan *niet*. 
+Deze bevestigingse-mail vervalt op $4.',
+	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
+Het e-mailadres is bevestigd.
+Je kunt de aanvraag hier "$2" bevestigen.',
+	'acct_request_throttle_hit' => 'Je hebt al $1 {{PLURAL:$1|gebruikersaanvraag|gebruikersaanvragen}} gedaan.
+Je kunt geen nieuwe aanvragen meer uitbrengen.',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
