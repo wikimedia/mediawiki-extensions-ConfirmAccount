@@ -3145,7 +3145,7 @@ Er is een bevestigingse-mail naar uw e-mailadres gezonden',
 	'requestaccount-email-body' => 'Iemand, waarschijnlijk u, heeft vanaf IP-adres $1 op {{SITENAME}} een aanvraag gedaan
 voor het aanmaken van gebruiker "$2" met dit e-mailadres.
 
-Open de onderstaande verwijzing in uw browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij u hoort:
+Open de onderstaande koppeling in uw browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij u hoort:
 
 $3
 
@@ -3188,7 +3188,7 @@ Er is een bevestigingse-mail naar je e-mailadres gezonden',
 	'requestaccount-email-body' => 'Iemand, waarschijnlijk jij, heeft vanaf IP-adres $1 op {{SITENAME}} een aanvraag gedaan
 voor het aanmaken van gebruiker "$2" met dit e-mailadres.
 
-Open de onderstaande verwijzing in je browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij jou hoort:
+Open de onderstaande koppeling in je browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij jou hoort:
 
 $3
 
@@ -3334,6 +3334,14 @@ Aqueste còde de confirmacion expira lo $4.",
 L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprovar la demanda aicí « $2 ».",
 	'acct_request_throttle_hit' => 'O planhèm, ja avètz demandat {{PLURAL:$1|1 compte|$1 comptes}}.
 Podètz pas far mai de demanda.',
+);
+
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
+ */
+$messages['or'] = array(
+	'requestaccount-leg-user' => 'ସଦସ୍ୟ ଖାତା',
+	'requestaccount-level-1' => 'ସମ୍ପାଦକ',
 );
 
 /** Ossetic (Ирон)
@@ -3863,6 +3871,7 @@ $messages['si'] = array(
 	'requestaccount-bio' => 'පුද්ගලික චරිතාපදානය (සාමාන්‍ය පෙළ පමණි):',
 	'requestaccount-attach' => 'සංක්ෂේපය හෝ CV (වෛකල්පික):',
 	'requestaccount-notes' => 'අමතර සටහන්:',
+	'requestaccount-urls' => 'වෙබ් අඩවි ලැයිස්තුව, තිබේ නම් (වෙන්වූ පේළියක එක එකක්):',
 	'requestaccount-exts' => 'ඇමුණුම් ගොනු වර්ගයට ඉඩ ලබා නොදේ.',
 	'requestaccount-submit' => 'අයදුම් ගිණුම',
 	'requestaccount-email-subj' => '{{SITENAME}} විද්‍යුත්-තැපැල් ලිපිනය තහවුරුකිරීම',

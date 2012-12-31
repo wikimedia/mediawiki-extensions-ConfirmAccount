@@ -1315,6 +1315,7 @@ $messages['ckb'] = array(
  * @author Li-sung
  * @author Matěj Grabovský
  * @author Mormegil
+ * @author Vks
  */
 $messages['cs'] = array(
 	'confirmaccounts' => 'Potvrdit žádosti o účet',
@@ -1344,6 +1345,7 @@ $messages['cs'] = array(
 	'confirmaccount-leg-areas' => 'Hlavní oblasti zájmu',
 	'confirmaccount-leg-person' => 'Osobní informace',
 	'confirmaccount-leg-other' => 'Další informace',
+	'confirmaccount-leg-ip' => 'Data IP adresy',
 	'confirmaccount-name' => 'Uživatelské jméno',
 	'confirmaccount-real' => 'Jméno:',
 	'confirmaccount-email' => 'E-mail:',
@@ -1356,18 +1358,21 @@ $messages['cs'] = array(
 	'confirmaccount-none-p' => '(neposkytnuté)',
 	'confirmaccount-confirm' => 'Tlačítky níže můžete přijmout nebo odmítnout tuto žádost.', # Fuzzy
 	'confirmaccount-econf' => '(potvrzený)',
-	'confirmaccount-reject' => '(zamítnul [[User:$1|$1]] $2)',
+	'confirmaccount-withcv' => '(životopis připojen)',
+	'confirmaccount-reject' => '(zamítnul [[User:$1|$1]] $2)', # Fuzzy
 	'confirmaccount-rational' => 'Zdůvodnění pro uchazeče:',
 	'confirmaccount-noreason' => '(žádné)',
-	'confirmaccount-held' => '(uživatel [[User:$1|$1]] $2 označil jako „pozastavené“)',
+	'confirmaccount-held' => '(uživatel [[User:$1|$1]] $2 označil jako „pozastavené“)', # Fuzzy
 	'confirmaccount-create' => 'Přijmout (vytvořit účet)',
 	'confirmaccount-deny' => 'Odmítnout (odstranit žádost)',
 	'confirmaccount-hold' => 'Pozastavit',
 	'confirmaccount-spam' => 'Spam (neposílat e-mail)',
 	'confirmaccount-reason' => 'Komentář (bude součástí e-mailu):',
 	'confirmaccount-ip' => 'IP adresa:',
+	'confirmaccount-agent' => 'Identifikace prohlížeče:',
 	'confirmaccount-submit' => 'Potvrdit',
 	'confirmaccount-wsum' => 'Vítejte!',
+	'confirmaccount-email-subj' => 'Žádost o účet na {{SITENAME}}',
 );
 
 /** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
@@ -2582,7 +2587,7 @@ Los comptos accèptâs seront fêts et pués enlevâs de ceta lista. Los comptos
 	'confirmaccount-leg-person' => 'Enformacions a sè',
 	'confirmaccount-leg-other' => 'Ôtres enformacions',
 	'confirmaccount-leg-ip' => 'Donâs d’adrèce IP',
-	'confirmaccount-name' => 'Nom d’usanciér',
+	'confirmaccount-name' => 'Nom d’utilisator',
 	'confirmaccount-real' => 'Nom :',
 	'confirmaccount-email' => 'Mèl. :',
 	'confirmaccount-reqtype' => 'Situacion :',
@@ -5605,11 +5610,11 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-confirm' => 'Gebruik de onderstaande mogelijkheden om deze aanvraag goed te keuren, af te keuren of aan te houden:',
 	'confirmaccount-econf' => '(bevestigd)',
 	'confirmaccount-withcv' => '(CV bijgesloten)',
-	'confirmaccount-reject' => '(afgewezen door [[User:$1|$1]] op $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|afgewezen}} door [[User:$1|$1]] op $2)',
 	'confirmaccount-rational' => 'Aan de aanvrager opgegeven reden:',
 	'confirmaccount-noreason' => '(geen)',
 	'confirmaccount-autorej' => '(deze aanvraag is automatisch afgebroken wegens inactiviteit)',
-	'confirmaccount-held' => '("aangehouden" door [[User:$1|$1]] op $2)', # Fuzzy
+	'confirmaccount-held' => '("{{GENDER:$1|aangehouden}}" door [[User:$1|$1]] op $2)',
 	'confirmaccount-create' => 'Toelaten (gebruiker aanmaken)',
 	'confirmaccount-deny' => 'Afwijzen (verwijderen)',
 	'confirmaccount-hold' => 'Aanhouden',
@@ -5625,7 +5630,7 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-badaction' => 'Er moet een geldige handeling worden opgegeven om door te kunnen gaan (accepteren, afwijzen, aanhouden).',
 	'confirmaccount-acc' => 'Gebruikersaanvraag goedgekeurd. De gebruiker [[User:$1|$1]] is aangemaakt.',
 	'confirmaccount-rej' => 'Gebruikersaanvraag afgewezen.',
-	'confirmaccount-viewing' => '(wordt op dit moment bekeken door [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '({{GENDER:$1|wordt}} op dit moment bekeken door [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Er wordt een gebruikerspagina gemaakt voor de nieuwe gebruiker.',
 	'confirmaccount-welc' => "'''Welkom bij ''{{SITENAME}}''!'''
 We hopen dat u veel goede bijdragen levert. 
@@ -5946,12 +5951,19 @@ Aquò permet d’èsser sus la tièra dels contactes del site, se ne desiratz sa
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
  * @author Odisha1
  */
 $messages['or'] = array(
 	'confirmaccount-real-q' => 'ନାମ',
+	'confirmaccount-name' => 'ବ୍ୟବହାରକାରୀନାମ',
 	'confirmaccount-real' => 'ନାମ',
 	'confirmaccount-email' => 'ଇ-ମେଲ',
+	'confirmaccount-reqtype' => 'ସ୍ଥିତି:',
+	'confirmaccount-pos-0' => 'ଲେଖକ',
+	'confirmaccount-pos-1' => 'ସମ୍ପାଦକ',
+	'confirmaccount-noreason' => '(କିଛି ନାହିଁ)',
+	'confirmaccount-submit' => 'ନିଶ୍ଚିତ କରନ୍ତୁ',
 	'confirmaccount-wsum' => 'ସ୍ଵାଗତ!',
 );
 
@@ -6209,11 +6221,11 @@ S'a lassrà sta pàgina-sì sensa confirmé o scancelé st'arcesta, a restrà an
 	'confirmaccount-confirm' => "Ch'a deuvra j'opsion ambelessì-sota për aceté, arfudé ò lassé an coa l'arcesta:",
 	'confirmaccount-econf' => '(confermà)',
 	'confirmaccount-withcv' => '(CV tacà)',
-	'confirmaccount-reject' => '(arfudà da [[User:$1|$1]] dël $2)',
+	'confirmaccount-reject' => '({{GENDER:$1|arfudà}} da [[User:$1|$1]] dël $2)',
 	'confirmaccount-rational' => 'Rason dàita al candidà:',
 	'confirmaccount-noreason' => '(gnun)',
 	'confirmaccount-autorej' => "(st'arcesta-sì a l'é stàita automaticament scartà a motiv d'inatività)",
-	'confirmaccount-held' => '(marcà "an coa" da [[User:$1|$1]] dël $2)',
+	'confirmaccount-held' => '({{GENDER:$1|marcà}} "an coa" da [[User:$1|$1]] dël $2)',
 	'confirmaccount-create' => "Aceté (deurbe 'l cont)",
 	'confirmaccount-deny' => "Arfudé (e gavé da 'nt la lista)",
 	'confirmaccount-hold' => 'Lassé an coa',
@@ -6229,7 +6241,7 @@ S'a lassrà sta pàgina-sì sensa confirmé o scancelé st'arcesta, a restrà an
 	'confirmaccount-badaction' => "N'assion bon-a (aceté, arfudé, ten-e an coa) a dev esse spessificà për andé anans.",
 	'confirmaccount-acc' => "Conferma dla domanda andaita a bonfin; a l'é dorbusse ël cont utent [[User:$1|$1]].",
 	'confirmaccount-rej' => 'Arfud dla domanda andait a bonfin.',
-	'confirmaccount-viewing' => "(al moment a l'é vist da [[User:$1|$1]])",
+	'confirmaccount-viewing' => "(al moment a {{GENDER:$1|l'é}} vist da [[User:$1|$1]])",
 	'confirmaccount-summary' => "I soma antramentr ch'i foma na neuva pàgina utent për l'utent neuv.",
 	'confirmaccount-welc' => "''Bin ëvnù/a  an ''{{SITENAME}}''!''' I speroma d'arsèive sò contribut e deje bon servissi. Miraco a peul ess-je d'agiut lese la session [[{{MediaWiki:Helppage}}|Amprende a travajé da zero]]. N'àotra vira, bin ëvnù/a e tante bele còse!",
 	'confirmaccount-wsum' => 'Bin ëvnù/a!',
@@ -7002,6 +7014,7 @@ $messages['sr-ec'] = array(
 	'confirmaccount-all' => '(покажи све редове)',
 	'confirmaccount-type' => 'Ред:',
 	'confirmaccount-type-0' => 'проспективни аутори',
+	'confirmaccount-type-1' => 'будући уредници',
 	'confirmaccount-q-open' => 'нерешени захтеви',
 	'confirmaccount-q-held' => 'стопирани захтеви',
 	'confirmaccount-q-rej' => 'скоро одбачени захтеви',
@@ -7012,6 +7025,7 @@ $messages['sr-ec'] = array(
 	'confirmaccount-leg-areas' => 'Главне интересне сфере',
 	'confirmaccount-leg-person' => 'Лични подаци',
 	'confirmaccount-leg-other' => 'Други подаци',
+	'confirmaccount-leg-ip' => 'Подаци ИП адресе',
 	'confirmaccount-name' => 'Корисничко име',
 	'confirmaccount-real' => 'Име:',
 	'confirmaccount-email' => 'Е-пошта:',
@@ -7025,11 +7039,12 @@ $messages['sr-ec'] = array(
 	'confirmaccount-none-p' => '(није приложено)',
 	'confirmaccount-confirm' => 'Испод изаберите да ли желите да прихватите, одбијете или задржите овај захтев:',
 	'confirmaccount-econf' => '(потврђено)',
-	'confirmaccount-reject' => '(одбацио [[User:$1|$1]] на $2)',
+	'confirmaccount-withcv' => '(CV приложен)',
+	'confirmaccount-reject' => '(одбацио [[User:$1|$1]] на $2)', # Fuzzy
 	'confirmaccount-rational' => 'Образложење дато кандидату:',
 	'confirmaccount-noreason' => '(нема)',
 	'confirmaccount-autorej' => '(овај захтев је био аутоматски одбачен због неактивности)',
-	'confirmaccount-held' => '(означено као "стопирано" од [[User:$1|$1]] на $2)',
+	'confirmaccount-held' => '(означено као "стопирано" од [[User:$1|$1]] на $2)', # Fuzzy
 	'confirmaccount-create' => 'Прихвати (направи налог)',
 	'confirmaccount-deny' => 'Одбаци (скини са списка)',
 	'confirmaccount-hold' => 'Заустави',
@@ -7041,7 +7056,7 @@ $messages['sr-ec'] = array(
 	'confirmaccount-acc' => 'Захтев за налогом успешно прихваћен:
 направљен је нови кориснички налог [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Захтев за налогом успешно одбачен.',
-	'confirmaccount-viewing' => '(тренутно прегледа [[User:$1|$1]])',
+	'confirmaccount-viewing' => '(тренутно прегледа [[User:$1|$1]])', # Fuzzy
 	'confirmaccount-summary' => 'Стварање корисничке странице за новог корисника.',
 	'confirmaccount-wsum' => 'Добро дошли!',
 );

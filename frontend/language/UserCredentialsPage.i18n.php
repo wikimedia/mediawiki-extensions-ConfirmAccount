@@ -357,6 +357,7 @@ $messages['ca'] = array(
  * @author Li-sung
  * @author Matěj Grabovský
  * @author Mormegil
+ * @author Vks
  */
 $messages['cs'] = array(
 	'usercredentials' => 'Osobní údaje uživatele',
@@ -368,6 +369,7 @@ $messages['cs'] = array(
 	'usercredentials-email' => 'E-mail:',
 	'usercredentials-real' => 'Skutečné jméno:',
 	'usercredentials-bio' => 'Biografie:',
+	'usercredentials-attach' => 'Životopis:',
 	'usercredentials-notes' => 'Další poznámky:',
 	'usercredentials-urls' => 'Seznam webových stránek:',
 	'usercredentials-ip' => 'Původní IP adresa:',
@@ -706,7 +708,7 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'usercredentials' => 'Refèrences a l’usanciér',
-	'usercredentials-user' => 'Nom d’usanciér :',
+	'usercredentials-user' => 'Nom d’utilisator :',
 	'usercredentials-leg-user' => 'Compto usanciér',
 	'usercredentials-leg-areas' => 'Centros d’entèrèts principâls',
 	'usercredentials-leg-person' => 'Enformacions a sè',
@@ -1654,10 +1656,13 @@ $messages['oc'] = array(
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
  * @author Odisha1
  */
 $messages['or'] = array(
+	'usercredentials-user' => 'ବ୍ୟବହାରକାରୀନାମ:',
 	'usercredentials-email' => 'E-mail:',
+	'usercredentials-real' => 'ପ୍ରକୃତ ନାମ:',
 );
 
 /** Ossetic (Ирон)
@@ -1923,6 +1928,7 @@ $messages['si'] = array(
 	'usercredentials-notes' => 'අමතර සටහන්:',
 	'usercredentials-urls' => 'වෙබ් අඩවි ලැයිස්තුව:',
 	'usercredentials-ip' => 'නියම IP ලිපිනය:',
+	'usercredentials-xff' => 'නියම X-ඉදිරියට-සඳහා:',
 	'usercredentials-agent' => 'නියම පරිශීලක-ඒජන්ත:',
 	'usercredentials-member' => 'හිමිකම්:',
 );
@@ -1988,6 +1994,7 @@ $messages['sr-ec'] = array(
 	'usercredentials-leg-areas' => 'Главне сфере интересовања',
 	'usercredentials-leg-person' => 'Лични подаци',
 	'usercredentials-leg-other' => 'Други подаци',
+	'usercredentials-leg-ip' => 'Подаци ИП адресе',
 	'usercredentials-email' => 'Е-пошта:',
 	'usercredentials-real' => 'Право име:',
 	'usercredentials-bio' => 'Животопис:',
