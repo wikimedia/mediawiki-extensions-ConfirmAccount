@@ -302,7 +302,7 @@ class AccountConfirmSubmission {
 				$pathRel = UserAccountRequest::relPathFromKey( $key );
 				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
 				if ( $repoOld->fileExists( $oldPath ) ) {
-					$repoOld->quickPurge( $oldPath ); // delete!
+					$repoOld->getBackend()->delete( array( 'src' => $oldPath ) ); // delete!
 				}
 			}
 		}
