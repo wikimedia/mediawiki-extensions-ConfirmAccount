@@ -301,8 +301,8 @@ class AccountConfirmSubmission {
 				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 				$pathRel = UserAccountRequest::relPathFromKey( $key );
 				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
-				if ( file_exists( $oldPath ) ) {
-					unlink( $oldPath ); // delete!
+				if ( $repoOld->fileExists( $oldPath ) ) {
+					$repoOld->quickPurge( $oldPath ); // delete!
 				}
 			}
 		}
