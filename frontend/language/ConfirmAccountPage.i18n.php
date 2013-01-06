@@ -705,13 +705,14 @@ $messages['az'] = array(
 );
 
 /** South Azerbaijani (تورکجه)
+ * @author Ebrahimi-amir
  * @author පසිඳු කාවින්ද
  */
 $messages['azb'] = array(
 	'confirmaccount-real-q' => 'آد',
 	'confirmaccount-name' => 'ایستیفاده‌چی آدی',
 	'confirmaccount-real' => 'آد:',
-	'confirmaccount-noreason' => '(هئچ)',
+	'confirmaccount-noreason' => '(هئچ بیری)',
 	'confirmaccount-submit' => 'تصدیق ائت',
 );
 

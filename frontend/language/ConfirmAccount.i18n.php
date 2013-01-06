@@ -696,6 +696,13 @@ $messages['pt-br'] = array(
 	'right-lookupcredentials' => 'Ver [[Special:UserCredentials|credenciais de usuário]]',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'right-lookupcredentials' => "Vide le [[Special:UserCredentials|credenziale de l'utende]]",
+);
+
 /** Russian (русский)
  * @author Ferrer
  * @author Ignatus

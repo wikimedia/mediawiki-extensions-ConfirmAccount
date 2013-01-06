@@ -408,6 +408,11 @@ $specialPageAliases['uk'] = array(
 	'RequestAccount' => array( 'Запит_облікового_запису' ),
 );
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = array(
+	'ConfirmAccounts' => array( 'تصدیق_کھاتہ_جات' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'RequestAccount' => array( '申请帐户' ),

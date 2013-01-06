@@ -1862,6 +1862,23 @@ $messages['ro'] = array(
 Verificați ca numele să fie scris corect.',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'usercredentials' => "Credenziale de l'utende",
+	'usercredentials-user' => "Nome de l'utende:",
+	'usercredentials-leg-user' => "Cunde de l'utende",
+	'usercredentials-leg-person' => "'Mbormaziune personale",
+	'usercredentials-leg-other' => "Otre 'mbormaziune",
+	'usercredentials-email' => 'E-mail:',
+	'usercredentials-real' => 'Nome vere:',
+	'usercredentials-bio' => 'Biografije:',
+	'usercredentials-urls' => 'Elenghe de le site web:',
+	'usercredentials-ip' => 'Inderizze IP origgenarie:',
+	'usercredentials-member' => 'Deritte:',
+);
+
 /** Faeag Rotuma (Faeag Rotuma)
  * @author Jose77
  */
