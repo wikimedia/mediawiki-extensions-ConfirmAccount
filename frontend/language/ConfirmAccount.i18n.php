@@ -869,10 +869,11 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
+ * @author Simon Shek
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
-	'confirmaccount-newrequests' => "'''$1'''開啟電郵確認[[Special:ConfirmAccounts|{{PLURAL:$1|帳戶請求|多個帳戶請求}}]]待審中", # Fuzzy
+	'confirmaccount-newrequests' => "'''$1'''個開啟電郵確認[[Special:ConfirmAccounts|{{PLURAL:$1|帳戶請求|帳戶請求}}]]待審中。'''請你注意！'''",
 	'requestaccount-loginnotice' => "要取得個使用者帳號，您一定要'''[[Special:RequestAccount|請求一個]]'''。",
 	'right-confirmaccount' => '查看[[Special:ConfirmAccounts|待審帳戶隊列]]',
 	'right-requestips' => '在處理帳戶請求時查看請求者的IP地址',
