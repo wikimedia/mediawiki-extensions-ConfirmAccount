@@ -5612,11 +5612,11 @@ Wellicht is de aanvraag al afgehandeld.',
 	'confirmaccount-confirm' => 'Gebruik de onderstaande mogelijkheden om deze aanvraag goed te keuren, af te keuren of aan te houden:',
 	'confirmaccount-econf' => '(bevestigd)',
 	'confirmaccount-withcv' => '(CV bijgesloten)',
-	'confirmaccount-reject' => '({{GENDER:$1|afgewezen}} door [[User:$1|$1]] op $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|afgewezen}} door [[User:$1|$1]] op $3 om $4)',
 	'confirmaccount-rational' => 'Aan de aanvrager opgegeven reden:',
 	'confirmaccount-noreason' => '(geen)',
 	'confirmaccount-autorej' => '(deze aanvraag is automatisch afgebroken wegens inactiviteit)',
-	'confirmaccount-held' => '("{{GENDER:$1|aangehouden}}" door [[User:$1|$1]] op $2)', # Fuzzy
+	'confirmaccount-held' => '("{{GENDER:$1|aangehouden}}" door [[User:$1|$1]] op $3 om $4)',
 	'confirmaccount-create' => 'Toelaten (gebruiker aanmaken)',
 	'confirmaccount-deny' => 'Afwijzen (verwijderen)',
 	'confirmaccount-hold' => 'Aanhouden',
