@@ -2451,7 +2451,7 @@ $messages['kn'] = array(
  */
 $messages['ko'] = array(
 	'requestaccount' => '계정 요청',
-	'requestaccount-dup' => "'''참고: 당신은 이미 등록된 계정으로 로그인되어 있습니다.'''",
+	'requestaccount-dup' => "'''참고: 이미 등록된 계정으로 로그인되어 있습니다.'''",
 	'requestaccount-leg-areas' => '주요 관심 분야',
 	'requestaccount-leg-other' => '다른 정보',
 	'requestaccount-leg-tos' => '이용 약관',
@@ -2465,10 +2465,10 @@ $messages['ko'] = array(
 
 $3
 
-계정이 만들어지면, 암호는 당신의 이메일로 전송될 것입니다.
+계정이 만들어지면, 비밀번호는 당신의 이메일로 전송될 것입니다.
 만약 당신의 것이 아니라면 위의 링크를 열지 마세요.
 이 확인 코드는 $4에 만료될 것입니다.',
-	'requestaccount-email-subj-admin' => '{{SITENAME}} 계정 만들기 요청',
+	'requestaccount-email-subj-admin' => '{{SITENAME}} 계정 요청',
 );
 
 /** Colognian (Ripoarisch)
