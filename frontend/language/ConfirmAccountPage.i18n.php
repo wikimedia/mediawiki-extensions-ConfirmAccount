@@ -271,6 +271,7 @@ $messages['an'] = array(
 /** Arabic (العربية)
  * @author Ciphers
  * @author Meno25
+ * @author Mido
  * @author OsamaK
  * @author Zanatos
  * @author ترجمان05
@@ -339,13 +340,13 @@ $messages['ar'] = array(
 	'confirmaccount-notes' => 'ملاحظات إضافية:',
 	'confirmaccount-urls' => 'قائمة مواقع الوب:',
 	'confirmaccount-none-p' => '(غير موفرة)',
-	'confirmaccount-confirm' => 'استخدم الخيارات الموجودة أدناه لقبول أو رفض عقد هذا الطلب:',
+	'confirmaccount-confirm' => 'استخدم الخيارات بالأسفل لقبول أو رفض أو تأجيل هذا الطلب:',
 	'confirmaccount-econf' => '(تم تأكيده)',
-	'confirmaccount-reject' => '(تم رفضه بواسطته [[User:$1|$1]] في $2)', # Fuzzy
+	'confirmaccount-reject' => '(تم رفضه بواسطة [[User:$1|$1]] بتاريخ $3 في $4)',
 	'confirmaccount-rational' => 'السبب المعطى للمتقدم:',
 	'confirmaccount-noreason' => '(لا شيء)',
 	'confirmaccount-autorej' => '(الطلب تم إلغاؤه آليا بسبب عدم النشاط)',
-	'confirmaccount-held' => '(تم التعليم "قيد الانتظار" بواسطة [[User:$1|$1]] في $2)', # Fuzzy
+	'confirmaccount-held' => '(تم التعليم "قيد الانتظار" بواسطة [[User:$1|$1]] بتاريخ $3 في $4)',
 	'confirmaccount-create' => 'اقبل (أنشئ الحساب)',
 	'confirmaccount-deny' => 'ارفض (أزل من القائمة)',
 	'confirmaccount-hold' => 'أجّل',
@@ -359,8 +360,8 @@ $messages['ar'] = array(
 	'confirmaccount-acc' => 'طلب الحساب تم تأكيده بنجاح؛
 أنشأ حسابا جديدا [[User:$1|$1]].',
 	'confirmaccount-rej' => 'طلب الحساب تم رفضه بنجاح.',
-	'confirmaccount-viewing' => '(حاليا  {{GENDER:$1| يجري}} عرضها من قبل [[مستخدم: $1 | $1 ]])', # Fuzzy
-	'confirmaccount-summary' => 'إنشاء صفحة المستخدم للمستخدم الجديد.',
+	'confirmaccount-viewing' => '(حاليا يتم مراجعته بواسطة [[User:$1|$1]])',
+	'confirmaccount-summary' => 'إنشاء الصفحة الشخصية للمستخدم الجديد.',
 	'confirmaccount-welc' => "'''مرحبا إلى ''{{SITENAME}}''!'''
 نأمل أن تساهم كثيرا وجيدا.
 على الأرجح ستريد قراءة [[{{MediaWiki:Helppage}}|البداية]].
