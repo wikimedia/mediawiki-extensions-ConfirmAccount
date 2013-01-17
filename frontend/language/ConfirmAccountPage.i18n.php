@@ -683,6 +683,7 @@ Pue qu'esistan llistes de contautu nel sitiu que pues usar si quies saber más t
 );
 
 /** Azerbaijani (azərbaycanca)
+ * @author AZISS
  * @author Cekli829
  * @author Vago
  */
@@ -699,7 +700,7 @@ $messages['az'] = array(
 	'confirmaccount-pos-1' => 'redaktor',
 	'confirmaccount-bio' => 'Bioqrafiya:',
 	'confirmaccount-urls' => 'Vebsaytların siyahısı',
-	'confirmaccount-noreason' => '(heç biri)',
+	'confirmaccount-noreason' => '(yoxdur)',
 	'confirmaccount-hold' => 'Təxirə salmaq',
 	'confirmaccount-ip' => 'IP ünvanı:',
 	'confirmaccount-submit' => 'Təsdiq et',
@@ -3911,11 +3912,11 @@ Potrebbe essere già stato trattato.",
 	'confirmaccount-confirm' => 'Utilizza le seguenti opzioni per accettare, rifiutare o sospendere questa richiesta:',
 	'confirmaccount-econf' => '(confermato)',
 	'confirmaccount-withcv' => '(CV allegato)',
-	'confirmaccount-reject' => '(respinta da [[User:$1|$1]] il $2)',
+	'confirmaccount-reject' => '({{GENDER:$1|rifiutato}} da [[User:$1|$1]] il $3 alle $4)',
 	'confirmaccount-rational' => 'Motivazione data al richiedente:',
 	'confirmaccount-noreason' => '(nessuno)',
 	'confirmaccount-autorej' => "(questa richiesta è stata eliminata automaticamente a causa dell'inattività)",
-	'confirmaccount-held' => '(segnato come "fermato" da [[User:$1|$1]] il $2)',
+	'confirmaccount-held' => '({{GENDER:$1|indicato}} come "trattenuto" da [[User:$1|$1]] il $3 alle $4)',
 	'confirmaccount-create' => 'Accetta (crea account)',
 	'confirmaccount-deny' => 'Rifiuta (rimuovi dalla lista)',
 	'confirmaccount-hold' => 'Ferma',
