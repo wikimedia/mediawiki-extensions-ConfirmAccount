@@ -2,7 +2,6 @@
 
 ALTER TABLE /*$wgDBprefix*/account_requests
 	ADD acr_type tinyint(255) unsigned NOT NULL default 0,
-	DROP INDEX acr_deleted_reg,
 	ADD INDEX acr_type_del_reg (acr_type,acr_deleted,acr_registration);
 
 -- This stores all of credential information
