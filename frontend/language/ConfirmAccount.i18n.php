@@ -859,12 +859,14 @@ $messages['yue'] = array(
  * @author Kuailong
  * @author Mark85296341
  * @author Wilsonmess
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
-	'requestaccount-loginnotice' => "要取得个用户账户，您一定要'''[[Special:RequestAccount|请求一个]]'''。",
-	'right-confirmaccount' => '查看 [[Special:ConfirmAccounts|请求帐户的队列]]',
-	'right-requestips' => '在处理请求的帐户查看请求者的 IP 地址',
-	'right-lookupcredentials' => '查看 [[Special:UserCredentials|用户凭据]]',
+	'confirmaccount-newrequests' => "'''$1'''个打开的已确认电子邮件的[[Special:ConfirmAccounts|帐户请求处于挂起状态]]。'''需要您的关注！'''",
+	'requestaccount-loginnotice' => "要取得一个用户账户，您必须'''[[Special:RequestAccount|请求一个]]'''。",
+	'right-confirmaccount' => '查看[[Special:ConfirmAccounts|请求帐户的队列]]',
+	'right-requestips' => '在处理帐户请求时查看请求者的IP地址',
+	'right-lookupcredentials' => '查看[[Special:UserCredentials|用户凭据]]',
 );
 
 /** Traditional Chinese (中文（繁體）‎)

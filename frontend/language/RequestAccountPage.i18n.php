@@ -2451,14 +2451,25 @@ $messages['kn'] = array(
  */
 $messages['ko'] = array(
 	'requestaccount' => '계정 요청',
+	'requestaccount-page' => '{{ns:project}}:이용 약관',
 	'requestaccount-dup' => "'''참고: 이미 등록된 계정으로 로그인되어 있습니다.'''",
+	'requestaccount-leg-user' => '사용자 계정',
 	'requestaccount-leg-areas' => '주요 관심 분야',
+	'requestaccount-leg-person' => '개인 정보',
 	'requestaccount-leg-other' => '다른 정보',
 	'requestaccount-leg-tos' => '이용 약관',
 	'requestaccount-real' => '실명:',
 	'requestaccount-same' => '(실명과 같음)',
 	'requestaccount-email' => '이메일 주소:',
+	'requestaccount-reqtype' => '위치:',
+	'requestaccount-level-0' => '저자',
+	'requestaccount-level-1' => '편집자',
+	'requestaccount-bio' => '개인 경력 (일반 텍스트만):',
+	'requestaccount-attach' => '이력서나 CV (선택 사항):',
+	'requestaccount-notes' => '특기 사항:',
+	'requestaccount-urls' => '웹 사이트 목록, 어떤 답변 (줄 바꿈으로 구분합니다):',
 	'requestaccount-submit' => '계정 요청',
+	'requestaccount-email-subj' => '{{SITENAME}} 이메일 주소 인증',
 	'requestaccount-email-body' => '$1 IP 주소를 사용하는 사용자가 이 이메일 주소로 {{SITENAME}}에 "$2" 계정 만들기를 요청하였습니다.
 
 {{SITENAME}}의 이 계정이 당신이 요청한 것이라면, 당신의 브라우저로 아래의 링크를 열어주세요:

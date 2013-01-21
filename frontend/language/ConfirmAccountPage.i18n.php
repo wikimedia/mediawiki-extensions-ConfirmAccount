@@ -4342,7 +4342,10 @@ $messages['ko'] = array(
 	'confirmaccount-q-held' => '보류된 요청',
 	'confirmaccount-q-rej' => '최근에 거부된 요청',
 	'confirmaccount-name' => '사용자 이름',
-	'confirmaccount-reject' => '($2에 [[User:$1|$1]]에 의해 거부됨)',
+	'confirmaccount-none-p' => '(제공하지 않음)',
+	'confirmaccount-econf' => '(확인함)',
+	'confirmaccount-withcv' => '(CV 첨부함)',
+	'confirmaccount-reject' => '($3 $4에 [[User:$1|$1]] 사용자에 의해 {{GENDER:$1|거부함}})',
 	'confirmaccount-noreason' => '(없음)',
 	'confirmaccount-create' => '승인 (계정 만들기)',
 	'confirmaccount-deny' => '거부 (목록에서 제거)',
@@ -4350,7 +4353,10 @@ $messages['ko'] = array(
 	'confirmaccount-spam' => '스팸 (이메일을 보내지 않습니다)',
 	'confirmaccount-reason' => '이유 (이메일에 포함될 것입니다):',
 	'confirmaccount-ip' => 'IP 주소:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => '사용자-에이전트:',
 	'confirmaccount-submit' => '확인',
+	'confirmaccount-summary' => '새 사용자에 대한 사용자 문서를 만듭니다.',
 	'confirmaccount-wsum' => '환영합니다!',
 	'confirmaccount-email-body' => '{{SITENAME}}에서 당신의 계정 만들기 요청이 승인되었습니다.
 
@@ -8458,9 +8464,9 @@ $2
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
-	'confirmaccounts' => '确认户口请求',
-	'confirmedit-desc' => '允许下属机构确认账户请求',
-	'confirmaccount-maintext' => "'''本页面用于确认 ''{{SITENAME}}''的账户请求'''.
+	'confirmaccounts' => '确认帐户请求',
+	'confirmedit-desc' => '允许行政员确认帐户请求',
+	'confirmaccount-maintext' => "'''本页面用于确认 ''{{SITENAME}}'' 的帐户请求'''.
 
 每个帐户请求队列包括三个子队列。
 一个是开放的请求，一个是被其他管理员搁置的请求，一个是最近被拒绝的请求。
@@ -8469,15 +8475,15 @@ $messages['zh-hans'] = array(
 你的行为将被私下记录。
 也希望你能审查任何在这发生的不是你本人的操作。",
 	'confirmaccount-list' => '以下是正在等候批准的用户请求列表。
-	已经批准的账户将会创建以及在这个列表中移除。已拒绝的用户将只会在这个表中移除。',
-	'confirmaccount-list2' => '以下是一个先前拒绝过的帐口请求，可能会在数日后删除。
-	它们仍旧可以批准创建一个账户，但是在您作之前请先问拒绝该账户的管理员。',
+已批准的帐户将会创建并在这个列表中移除。而已拒绝的将只会在这个列表中移除。',
+	'confirmaccount-list2' => '以下是一个先前拒绝过的帐户请求，可能会在数日后删除。
+它们仍旧可以批准创建一个帐户，但是在您做之前应先询问拒绝该帐户的管理员原因。',
 	'confirmaccount-list3' => '下面是可能于几天后被自动删除的过期帐号请求。他们依然可以被批准。',
 	'confirmaccount-text' => "这个是在'''{{SITENAME}}'''中等候请求账户的页面。
-	请小心阅读，有需要的话，就要同时确认它下面的全部资料。
-	要留意的是您可以用另一个用户名字去创建一个账户。只有其他的名字有冲突时才需要去作。
+请小心阅读，有需要的话，就要同时确认它下面的全部资料。
+要留意的是您可以用另一个用户名字去创建一个账户。只有其他的名字有冲突时才需要去作。
 
-	如果你无确认或者拒绝这个请求，只留下这页面的话，它便会维持等候状态。",
+如果你不确认或者拒绝这个请求，只是留在这页面的话，它会维持等候状态。",
 	'confirmaccount-none-o' => '在当前列表中没有正在等待批准的帐号请求。',
 	'confirmaccount-none-h' => '在当前列表中没有被挂起的帐号请求。',
 	'confirmaccount-none-r' => '在当前列表中没有刚刚被拒绝的帐号请求。',
@@ -8518,11 +8524,12 @@ $messages['zh-hans'] = array(
 	'confirmaccount-none-p' => '(没有提供)',
 	'confirmaccount-confirm' => '用以下选项接受，拒绝或搁置这个请求：',
 	'confirmaccount-econf' => '（已批准）',
-	'confirmaccount-reject' => '（于$2被[[User:$1|$1]]拒绝）',
+	'confirmaccount-withcv' => '（附简历）',
+	'confirmaccount-reject' => '已于$3 $4被[[User:$1|$1]]拒绝',
 	'confirmaccount-rational' => '给申请人的理由：',
 	'confirmaccount-noreason' => '（无）',
 	'confirmaccount-autorej' => '（此请求已因为无活动而自动被回绝）',
-	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]标记为"挂起")',
+	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]标记为"挂起")', # Fuzzy
 	'confirmaccount-create' => '接受 （创建账户）',
 	'confirmaccount-deny' => '拒绝 （反列示）',
 	'confirmaccount-hold' => '挂起',
@@ -8538,7 +8545,7 @@ $messages['zh-hans'] = array(
 	'confirmaccount-badaction' => '必须指定有效的操作（接受，拒绝，搁置）才能继续进行。',
 	'confirmaccount-acc' => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
 	'confirmaccount-rej' => '账户请求已经成功拒绝。',
-	'confirmaccount-viewing' => '（当前正由[[User:$1|$1]]浏览）',
+	'confirmaccount-viewing' => '（当前正由[[User:$1|$1]]浏览）', # Fuzzy
 	'confirmaccount-summary' => '新用户创建用户页',
 	'confirmaccount-welc' => "'''欢迎来到''{{SITENAME}}''！'''
 我们希望您会作出更多更好的贡献。

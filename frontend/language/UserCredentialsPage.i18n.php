@@ -1202,10 +1202,27 @@ $messages['kn'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
+	'usercredentials' => '사용자 자격 증명',
+	'usercredentials-leg' => '사용자에 대한 확인된 자격 증명 조회',
 	'usercredentials-user' => '사용자 이름:',
+	'usercredentials-text' => '아래에 선택한 사용자 계정의 올바른 자격 증명이 있습니다.',
+	'usercredentials-leg-user' => '사용자 계정',
+	'usercredentials-leg-areas' => '관심 있는 주요 분야',
+	'usercredentials-leg-person' => '개인 정보',
+	'usercredentials-leg-other' => '다른 정보',
+	'usercredentials-leg-ip' => 'IP 주소 데이터',
 	'usercredentials-email' => '이메일:',
 	'usercredentials-real' => '실명:',
+	'usercredentials-bio' => '경력:',
+	'usercredentials-attach' => '이력서/CV:',
+	'usercredentials-notes' => '특기 사항:',
+	'usercredentials-urls' => '웹 사이트 목록:',
+	'usercredentials-ip' => '원래 IP 주소:',
+	'usercredentials-xff' => '원래 X-Forwarded-For:',
+	'usercredentials-agent' => '원래 사용자-에이전트:',
 	'usercredentials-member' => '권한:',
+	'usercredentials-badid' => '이 사용자에 대한 자격 증명을 찾을 수 없습니다.
+이름의 철자가 올바른지 확인하세요.',
 );
 
 /** Kinaray-a (Kinaray-a)
@@ -2395,6 +2412,8 @@ $messages['zh-hans'] = array(
 	'usercredentials-notes' => '附加注解:',
 	'usercredentials-urls' => '网站列表:',
 	'usercredentials-ip' => '原始IP地址：',
+	'usercredentials-xff' => '原始 X-Forwarded-For:',
+	'usercredentials-agent' => '原始 User-Agent:',
 	'usercredentials-member' => '权限：',
 	'usercredentials-badid' => '没有凭据找到该用户。
 检查名称拼写是否正确。',
