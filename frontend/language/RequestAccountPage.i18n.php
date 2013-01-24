@@ -3740,6 +3740,22 @@ Codul de confirmare expiră în $4.',
 Adresa de e-mail a fost confirmată. Poți confirma cererea aici "$2".',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'requestaccount' => 'Richieste de cunde utende',
+	'requestaccount-leg-user' => "Cunde de l'utende",
+	'requestaccount-leg-person' => "'Mbormaziune personale",
+	'requestaccount-leg-other' => "Otre 'mbormaziune",
+	'requestaccount-leg-tos' => "Termine d'u Servizie",
+	'requestaccount-real' => 'Nome vere:',
+	'requestaccount-email' => 'Indirizze e-mail:',
+	'requestaccount-reqtype' => 'Posizione:',
+	'requestaccount-level-0' => 'autore',
+	'requestaccount-level-1' => 'cangiatore',
+);
+
 /** Russian (русский)
  * @author Ferrer
  * @author Kaganer

@@ -6651,6 +6651,7 @@ Pentru a vă autentifica, vă rugăm mergeţi aici: {{fullurl:Special:UserLogin}
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'confirmaccounts' => 'Conferme le richiste de cunde utende',
 	'confirmaccount-type' => 'Code:',
 	'confirmaccount-leg-user' => "Cunde de l'utende",
 	'confirmaccount-leg-areas' => 'Prengepàle aree de inderesse',
@@ -6669,7 +6670,11 @@ $messages['roa-tara'] = array(
 	'confirmaccount-none-p' => "(non g'è previste)",
 	'confirmaccount-confirm' => "Ause l'opzione de sotte pe accettà, scettà o tenè sta richieste:",
 	'confirmaccount-econf' => '(confermete)',
-	'confirmaccount-reject' => '(scettete da [[User:$1|$1]] sus a $2)',
+	'confirmaccount-reject' => "({{GENDER:$1|scettate}} da [[User:$1|$1]] 'u $3 a le $4)",
+	'confirmaccount-noreason' => '(ninde)',
+	'confirmaccount-hold' => 'Tìne',
+	'confirmaccount-ip' => 'Indirizze IP:',
+	'confirmaccount-submit' => 'Conferme',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
