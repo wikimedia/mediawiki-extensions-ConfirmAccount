@@ -6685,6 +6685,7 @@ $messages['rtm'] = array(
 );
 
 /** Russian (русский)
+ * @author DCamer
  * @author Ferrer
  * @author Ignatus
  * @author Kaganer
@@ -6753,11 +6754,11 @@ $messages['ru'] = array(
 	'confirmaccount-confirm' => 'Используйте элементы ниже, чтобы принять, отклонить или отложить этот запрос:',
 	'confirmaccount-econf' => '(подтверждён)',
 	'confirmaccount-withcv' => '(описание прилагается)',
-	'confirmaccount-reject' => '({{GENDER:$1|отклонил|отклонила}} [[User:$1|$1]], $2)',
+	'confirmaccount-reject' => '({{GENDER:$1|отклонил|отклонила}} [[User:$1|$1]], $3 в $4)',
 	'confirmaccount-rational' => 'Обоснование, даваемое заявителю:',
 	'confirmaccount-noreason' => '(нет)',
 	'confirmaccount-autorej' => '(этот запрос был автоматически отвергнут из-за неактивности)',
-	'confirmaccount-held' => '({{GENDER:$1|отложил|отложила}} [[User:$1|$1]], $2)',
+	'confirmaccount-held' => '({{GENDER:$1|отложил|отложила}} [[User:$1|$1]], $3 в $4)',
 	'confirmaccount-create' => 'Утвердить (создать учётную запись)',
 	'confirmaccount-deny' => 'Отклонить (убрать из списка)',
 	'confirmaccount-hold' => 'Отложить',
