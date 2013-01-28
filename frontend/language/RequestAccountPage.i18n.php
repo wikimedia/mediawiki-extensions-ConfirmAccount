@@ -2390,6 +2390,7 @@ $messages['ka'] = array(
 	'requestaccount-reqtype' => 'პოზიცია:',
 	'requestaccount-level-0' => 'ავტორი',
 	'requestaccount-level-1' => 'რედაქტორი',
+	'requestaccount-info' => '(?)',
 	'requestaccount-bio' => 'პირადი ბიოგრაფია (მხოლოდ ჩვეულებრივი ტექსტი):',
 	'requestaccount-attach' => 'რეზიუმე ან CV (არასავალდებულო):',
 	'requestaccount-notes' => 'დამატებითი შენიშვნები:',

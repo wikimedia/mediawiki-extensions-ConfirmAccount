@@ -288,7 +288,7 @@ $specialPageAliases['nb'] = array(
 	'UserCredentials' => array( 'Brukerlegitimasjon' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'RequestAccount' => array( 'Gebruker_anvragen' ),
 	'ConfirmAccounts' => array( 'Gebruker_bevestigen' ),
