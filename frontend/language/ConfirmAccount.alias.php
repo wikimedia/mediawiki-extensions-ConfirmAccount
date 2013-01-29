@@ -103,7 +103,7 @@ $specialPageAliases['es'] = array(
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'RequestAccount' => array( 'درخواست_حساب' ),
-	'ConfirmAccounts' => array( 'تایید_حساب‌ها' ),
+	'ConfirmAccounts' => array( 'پذیرش_حساب‌ها' ),
 	'UserCredentials' => array( 'شناسه_کاربری' ),
 );
 
