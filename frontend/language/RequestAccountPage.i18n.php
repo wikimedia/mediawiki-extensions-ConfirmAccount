@@ -3751,10 +3751,13 @@ $messages['roa-tara'] = array(
 	'requestaccount-leg-other' => "Otre 'mbormaziune",
 	'requestaccount-leg-tos' => "Termine d'u Servizie",
 	'requestaccount-real' => 'Nome vere:',
+	'requestaccount-same' => "('u stesse d'u nome vere aqquà sotte)",
 	'requestaccount-email' => 'Indirizze e-mail:',
 	'requestaccount-reqtype' => 'Posizione:',
 	'requestaccount-level-0' => 'autore',
 	'requestaccount-level-1' => 'cangiatore',
+	'requestaccount-attach' => 'Riepiloghe o CV (opzionale):',
+	'requestaccount-notes' => 'Note aggiundive:',
 );
 
 /** Russian (русский)

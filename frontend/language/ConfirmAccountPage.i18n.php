@@ -6652,6 +6652,15 @@ Pentru a vă autentifica, vă rugăm mergeţi aici: {{fullurl:Special:UserLogin}
  */
 $messages['roa-tara'] = array(
 	'confirmaccounts' => 'Conferme le richiste de cunde utende',
+	'confirmaccount-real-q' => 'Nome',
+	'confirmaccount-email-q' => 'E-mail',
+	'confirmaccount-bio-q' => 'Biografije',
+	'confirmaccount-showopen' => 'richieste aperte',
+	'confirmaccount-showrej' => 'richieste scettate',
+	'confirmaccount-showheld' => 'richieste tenute',
+	'confirmaccount-showexp' => 'richieste scadute',
+	'confirmaccount-review' => 'Reviste',
+	'confirmaccount-all' => '(fà vedè tutte le code)',
 	'confirmaccount-type' => 'Code:',
 	'confirmaccount-leg-user' => "Cunde de l'utende",
 	'confirmaccount-leg-areas' => 'Prengepàle aree de inderesse',
