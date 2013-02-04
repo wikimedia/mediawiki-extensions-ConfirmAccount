@@ -8477,6 +8477,7 @@ $2
  * @author Wilsonmess
  * @author Xiaomingyan
  * @author Yfdyh000
+ * @author 乌拉跨氪
  */
 $messages['zh-hans'] = array(
 	'confirmaccounts' => '确认帐户请求',
@@ -8544,7 +8545,7 @@ $messages['zh-hans'] = array(
 	'confirmaccount-rational' => '给申请人的理由：',
 	'confirmaccount-noreason' => '（无）',
 	'confirmaccount-autorej' => '（此请求已因为无活动而自动被回绝）',
-	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]标记为"挂起")', # Fuzzy
+	'confirmaccount-held' => '（在$3 $4被[[User:$1|$1]]标记为“挂起”）',
 	'confirmaccount-create' => '接受 （创建账户）',
 	'confirmaccount-deny' => '拒绝 （反列示）',
 	'confirmaccount-hold' => '挂起',
