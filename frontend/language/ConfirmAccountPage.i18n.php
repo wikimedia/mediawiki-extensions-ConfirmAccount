@@ -1385,6 +1385,14 @@ $messages['cu'] = array(
 	'confirmaccount-pos-0' => 'творь́ць',
 );
 
+/** Welsh (Cymraeg)
+ * @author Robin Owain
+ */
+$messages['cy'] = array(
+	'confirmaccount-name' => 'Enw Defnyddiwr',
+	'confirmaccount-real' => 'Enw',
+);
+
 /** Danish (dansk)
  * @author Aka-miki
  * @author Christian List
