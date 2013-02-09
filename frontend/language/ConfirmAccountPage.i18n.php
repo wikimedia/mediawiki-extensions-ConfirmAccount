@@ -8569,7 +8569,7 @@ $messages['zh-hans'] = array(
 	'confirmaccount-badaction' => '必须指定有效的操作（接受，拒绝，搁置）才能继续进行。',
 	'confirmaccount-acc' => '账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。',
 	'confirmaccount-rej' => '账户请求已经成功拒绝。',
-	'confirmaccount-viewing' => '（当前正由[[User:$1|$1]]浏览）', # Fuzzy
+	'confirmaccount-viewing' => '（目前正由[[User:$1|$1]]浏览）',
 	'confirmaccount-summary' => '新用户创建用户页',
 	'confirmaccount-welc' => "'''欢迎来到''{{SITENAME}}''！'''
 我们希望您会作出更多更好的贡献。
