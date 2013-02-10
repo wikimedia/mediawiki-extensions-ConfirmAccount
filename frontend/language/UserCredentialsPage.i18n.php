@@ -1019,6 +1019,7 @@ Verifica que le nomine sia orthographiate correctemente.',
  * @author Irwangatot
  * @author IvanLanin
  * @author Iwan Novirion
+ * @author Mahali syarifuddin
  * @author Rex
  */
 $messages['id'] = array(
@@ -1030,6 +1031,7 @@ $messages['id'] = array(
 	'usercredentials-leg-areas' => 'Bidang utama yang diminati',
 	'usercredentials-leg-person' => 'Informasi pribadi',
 	'usercredentials-leg-other' => 'Informasi lain',
+	'usercredentials-leg-ip' => 'Data alamat IP',
 	'usercredentials-email' => 'Surel:',
 	'usercredentials-real' => 'Nama asli:',
 	'usercredentials-bio' => 'Biografi:',
