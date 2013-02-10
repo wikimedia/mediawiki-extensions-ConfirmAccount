@@ -304,4 +304,25 @@ class ConfirmAccount {
 
 		return $block;
 	}
+
+	/**
+	 * @return UserArray
+	 */
+	public static function getAdminsToNotify() {
+		$groups = User::getGroupsWithPermission( 'confirmaccount-notify' );
+		if ( !count( $groups ) ) {
+			return UserArray::newFromResult( new FakeResultWrapper( array() ) );
+		}
+		$dbr = wfGetDB( DB_SLAVE );
+		return UserArray::newFromResult( $dbr->select(
+			array( 'user' ),
+			array( '*' ),
+			array( 'EXISTS (' .
+				$dbr->selectSqlText( 'user_groups', '1',
+					array( 'ug_user = user_id', 'ug_group' => $groups ) ) .
+				')' ),
+			__METHOD__,
+			array( 'LIMIT' => 200 ) // sanity
+		) );
+	}
 }

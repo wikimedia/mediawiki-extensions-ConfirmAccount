@@ -359,18 +359,28 @@ class RequestAccountPage extends SpecialPage {
 		if ( $name !== false ) {
 			# Send confirmation email to prospective user
 			ConfirmAccount::confirmEmail( $name );
-			# Send mail to admin after e-mail has been confirmed
-			if ( $wgConfirmAccountContact != '' ) {
-				$target = new MailAddress( $wgConfirmAccountContact );
-				$source = new MailAddress( $wgPasswordSender, $wgPasswordSenderName );
+
+			$adminsNotify = ConfirmAccount::getAdminsToNotify();
+			# Send an e-mail to admin after e-mail has been confirmed
+			if ( $adminsNotify->count() || $wgConfirmAccountContact != '' ) {
 				$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
-				$subject = $this->msg( 'requestaccount-email-subj-admin' )->inContentLanguage()->escaped();
+				$subject = $this->msg(
+					'requestaccount-email-subj-admin' )->inContentLanguage()->escaped();
 				$body = $this->msg(
-					'requestaccount-email-body-admin', $name )->rawParams( $title->getFullUrl() )->inContentLanguage()->escaped();
+					'requestaccount-email-body-admin', $name )->rawParams(
+						$title->getFullUrl() )->inContentLanguage()->escaped();
 				# Actually send the email...
-				$result = UserMailer::send( $target, $source, $subject, $body );
-				if ( !$result->isOK() ) {
-					wfDebug( "Could not sent email to admin at $target\n" );
+				if ( $wgConfirmAccountContact != '' ) {
+					$source = new MailAddress( $wgPasswordSender, $wgPasswordSenderName );
+					$target = new MailAddress( $wgConfirmAccountContact );
+					$result = UserMailer::send( $target, $source, $subject, $body );
+					if ( !$result->isOK() ) {
+						wfDebug( "Could not sent email to admin at $target\n" );
+					}
+				}
+				# Send an e-mail to all users with "confirmaccount-notify" rights
+				foreach ( $adminsNotify as $adminNotify ) {
+					$adminNotify->sendMail( $subject, $body );
 				}
 			}
 			$out->addWikiMsg( 'request-account-econf' );

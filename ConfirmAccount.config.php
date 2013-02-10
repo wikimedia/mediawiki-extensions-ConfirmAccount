@@ -70,7 +70,7 @@ $wgConfirmAccountSortkey = false;
 $wgConfirmAccountSaveInfo = true;
 
 # Send an email to this address when account requestors confirm their email.
-# Set to false to skip this
+# Set to false to skip this. It might be useful to point this to a mailing list.
 $wgConfirmAccountContact = false;
 
 # If ConfirmEdit is installed and set to trigger for createaccount,
@@ -104,6 +104,8 @@ $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['user']['createaccount'] = false;
 # Grant account queue rights
 $wgGroupPermissions['bureaucrat']['confirmaccount'] = true;
+# Receive emails when an account confirms its email address
+# $wgGroupPermissions['bureaucrat']['confirmaccount-notify'] = true;
 # This right has the request IP show when confirming accounts
 $wgGroupPermissions['bureaucrat']['requestips'] = true;
 
