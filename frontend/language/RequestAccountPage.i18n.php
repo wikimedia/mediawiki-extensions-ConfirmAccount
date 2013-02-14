@@ -2469,6 +2469,7 @@ $messages['ko'] = array(
 	'requestaccount-attach' => '이력서나 CV (선택 사항):',
 	'requestaccount-notes' => '특기 사항:',
 	'requestaccount-urls' => '웹 사이트 목록, 어떤 답변 (줄 바꿈으로 구분합니다):',
+	'requestaccount-exts' => '첨부 파일 형식이 비활성화되어 있습니다.',
 	'requestaccount-submit' => '계정 요청',
 	'requestaccount-email-subj' => '{{SITENAME}} 이메일 주소 인증',
 	'requestaccount-email-body' => '$1 IP 주소를 사용하는 사용자가 이 이메일 주소로 {{SITENAME}}에 "$2" 계정 만들기를 요청하였습니다.
