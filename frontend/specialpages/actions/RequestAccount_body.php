@@ -380,7 +380,9 @@ class RequestAccountPage extends SpecialPage {
 				}
 				# Send an e-mail to all users with "confirmaccount-notify" rights
 				foreach ( $adminsNotify as $adminNotify ) {
-					$adminNotify->sendMail( $subject, $body );
+					if ( $adminNotify->canReceiveEmail() ) {
+						$adminNotify->sendMail( $subject, $body );
+					}
 				}
 			}
 			$out->addWikiMsg( 'request-account-econf' );
