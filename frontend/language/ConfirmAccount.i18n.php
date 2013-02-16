@@ -843,7 +843,10 @@ $messages['tr'] = array(
  * @author Ата
  */
 $messages['uk'] = array(
+	'confirmaccount-newrequests' => "$1 {{PLURAL:$1|[[Special:ConfirmAccounts|відкритий лист підтверджено]]|[[Special:ConfirmAccounts|відритих листи підтверджено]]|[[Special:ConfirmAccounts|відкритих листів підтверджено]]}}. '''Звернуть Вашу увагу!'''", # Fuzzy
 	'requestaccount-loginnotice' => 'Для отримання облікового запису користувача, ви повинні "\'[[Special:RequestAccount|зробити запит]]"\'.',
+	'right-confirmaccount' => 'перегляд [[Special:ConfirmAccounts|черги запитів на створення облікових записів]]',
+	'right-requestips' => 'перегляд IP-адрес авторів запитів на створення облікових записів',
 	'right-lookupcredentials' => 'Перегляд [[Special:UserCredentials|удостовіряючої інформації про користувачів]]',
 );
 
