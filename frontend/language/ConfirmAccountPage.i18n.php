@@ -193,7 +193,7 @@ $messages['qqq'] = array(
 *$2 date/time
 *$3 date
 *$4 time',
-	'confirmaccount-ip' => '{{Identical|IP Address}}',
+	'confirmaccount-ip' => '{{Identical|IP address}}',
 	'confirmaccount-xff' => 'The X-Forwarded-For (XFF) HTTP header field is a de facto standard for identifying the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.',
 	'confirmaccount-agent' => 'The User-Agent HTTP header field',
 	'confirmaccount-submit' => '{{Identical|Confirm}}',
@@ -7418,11 +7418,11 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-confirm' => 'Använd alternativen nedan för att godkänna, avslå, eller avvakta med ansökan:',
 	'confirmaccount-econf' => '(bekräftad)',
 	'confirmaccount-withcv' => '(CV bifogad)',
-	'confirmaccount-reject' => '(avslogs av [[User:$1|$1]] den $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|avslogs}} av [[User:$1|$1]] den $3 kl $4)',
 	'confirmaccount-rational' => 'Motivering som gavs till den sökande:',
 	'confirmaccount-noreason' => '(ingen)',
 	'confirmaccount-autorej' => '(den här ansökningen har kasserats automatiskt på grund av inaktvitet)',
-	'confirmaccount-held' => '(markerad som "avvaktande" av [[User:$1|$1]] den $2)', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|markerad}} som "avvaktande" av [[User:$1|$1]] den $3 kl $4)',
 	'confirmaccount-create' => 'Godkänn (skapa konto)',
 	'confirmaccount-deny' => 'Avslå (stryk från listan)',
 	'confirmaccount-hold' => 'Avvakta',
@@ -7435,7 +7435,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-canthold' => 'Ansökningen är antingen redan avvaktande eller har avslagits.',
 	'confirmaccount-acc' => 'Kontoansökningen har godkänts och användarkontot [[User:$1|$1]] har skapats.',
 	'confirmaccount-rej' => 'Ansökningen har avslagits.',
-	'confirmaccount-viewing' => '(granskas just nu av [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '({{GENDER:$1|granskas}} just nu av [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Skapar användarsida för en ny användare.',
 	'confirmaccount-welc' => "'''Välkommen till ''{{SITENAME}}''!''' Vi hoppas att du kommer skriva många bra bidrag.
 Du kommer formodligen ha nytta av att läsa [[{{MediaWiki:Helppage}}|hjälpsidorna]]. Vi önskar igen välkommen och ha kul!",
