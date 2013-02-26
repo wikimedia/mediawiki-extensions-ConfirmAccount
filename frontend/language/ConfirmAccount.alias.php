@@ -413,6 +413,12 @@ $specialPageAliases['ur'] = array(
 	'ConfirmAccounts' => array( 'تصدیق_کھاتہ_جات' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'RequestAccount' => array( 'Yêu_cầu_tài_khoản' ),
+	'ConfirmAccounts' => array( 'Xác_nhận_tài_khoản' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'RequestAccount' => array( '申请帐户' ),
