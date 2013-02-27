@@ -10,7 +10,7 @@ $messages = array();
 
 $messages['en'] = array(
 	# Site message for admins
-	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open e-mail confirmed [[Special:ConfirmAccounts|account {{PLURAL:$1|request is pending|requests are pending}}]]. \'\'\'Your attention is needed!\'\'\'',
+	'confirmaccount-newrequests' => '\'\'\'$1\'\'\' open email confirmed [[Special:ConfirmAccounts|account {{PLURAL:$1|request is pending|requests are pending}}]]. \'\'\'Your attention is needed!\'\'\'',
 
 	# Add to Special:Login
 	'requestaccount-loginnotice' => 'To obtain a user account, you must \'\'\'[[Special:RequestAccount|request one]]\'\'\'.',

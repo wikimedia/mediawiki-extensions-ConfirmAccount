@@ -431,7 +431,7 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * Try to acquire a e-mail address in the request queue for insertion
+	 * Try to acquire an email address in the request queue for insertion
 	 * @return bool
 	 */
 	public static function acquireEmail( $email ) {

@@ -361,7 +361,7 @@ class RequestAccountPage extends SpecialPage {
 			ConfirmAccount::confirmEmail( $name );
 
 			$adminsNotify = ConfirmAccount::getAdminsToNotify();
-			# Send an e-mail to admin after e-mail has been confirmed
+			# Send an email to admin after email has been confirmed
 			if ( $adminsNotify->count() || $wgConfirmAccountContact != '' ) {
 				$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
 				$subject = $this->msg(
@@ -378,7 +378,7 @@ class RequestAccountPage extends SpecialPage {
 						wfDebug( "Could not sent email to admin at $target\n" );
 					}
 				}
-				# Send an e-mail to all users with "confirmaccount-notify" rights
+				# Send an email to all users with "confirmaccount-notify" rights
 				foreach ( $adminsNotify as $adminNotify ) {
 					if ( $adminNotify->canReceiveEmail() ) {
 						$adminNotify->sendMail( $subject, $body );

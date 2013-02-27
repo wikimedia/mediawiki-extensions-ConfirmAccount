@@ -14,7 +14,7 @@ $messages['en'] = array(
 
 Make sure that you first read the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] before requesting an account.
 
-Once the account is approved, you will be e-mailed a notification message and the account will be usable at [[Special:UserLogin|login]].',
+Once the account is approved, you will be emailed a notification message and the account will be usable at [[Special:UserLogin|login]].',
 	'requestaccount-footer'     => '', # only translate this message to other languages if you have to change it
 	'requestaccount-page'       => '{{ns:project}}:Terms of Service',
 	'requestaccount-dup'        => '\'\'\'Note: You already are logged in with a registered account.\'\'\'',
@@ -23,9 +23,9 @@ Once the account is approved, you will be e-mailed a notification message and th
 	'requestaccount-leg-person' => 'Personal information',
 	'requestaccount-leg-other'  => 'Other information',
 	'requestaccount-leg-tos'    => 'Terms of Service',
-	'requestaccount-acc-text'   => 'Your e-mail address will be sent a confirmation message once this request is submitted.
-Please respond by clicking on the confirmation link provided by the e-mail.
-Also, your password will be e-mailed to you when your account is created.',
+	'requestaccount-acc-text'   => 'Your email address will be sent a confirmation message once this request is submitted.
+Please respond by clicking on the confirmation link provided by the email.
+Also, your password will be emailed to you when your account is created.',
 	'requestaccount-areas' 		=> '', # Do not translate this message to other languages
 	'requestaccount-areas-text' => 'Select the topic areas below in which you have formal expertise or would like to do the most work in.',
 	'requestaccount-ext-text'   => 'The following information is kept private and will only be used for this request.
@@ -35,7 +35,7 @@ You may want to list contacts such a phone number to aid in identify confirmatio
 Make sure you are comfortable publishing such information.",
 	'requestaccount-real'       => 'Real name:',
 	'requestaccount-same'       => '(same as real name below)',
-	'requestaccount-email'      => 'E-mail address:',
+	'requestaccount-email'      => 'Email address:',
 	'requestaccount-reqtype'    => 'Position:',
 	'requestaccount-level-0'    => 'author',
 	'requestaccount-level-1'    => 'editor',
@@ -47,7 +47,7 @@ Make sure you are comfortable publishing such information.",
 	'requestaccount-agree'      => 'You must certify that your real name is correct and that you agree to our Terms of Service.',
 	'requestaccount-inuse'      => 'Username is already in use in a pending account request.',
 	'requestaccount-tooshort'   => 'Your biography must be at least $1 {{PLURAL:$1|word|words}} long.',
-	'requestaccount-emaildup'   => 'Another pending account request uses the same e-mail address.',
+	'requestaccount-emaildup'   => 'Another pending account request uses the same email address.',
 	'requestaccount-exts'       => 'Attachment file type is disallowed.',
 	'requestaccount-resub'      => 'Your CV/resume file must be re-selected for security reasons.
 Leave the field blank if you no longer want to include one.',
@@ -55,22 +55,22 @@ Leave the field blank if you no longer want to include one.',
 The name I have specified under "Real name" is in fact my own real name.',
 	'requestaccount-submit'     => 'Request account',
 	'requestaccount-sent'       => 'Your account request has successfully been sent and is now pending review.
-	A confirmation email has been sent to your e-mail address.',
+	A confirmation email has been sent to your email address.',
 
-	'request-account-econf'     => 'Your e-mail address has been confirmed and will be listed as such in your account request.',
-	'requestaccount-email-subj' => '{{SITENAME}} e-mail address confirmation',
-	'requestaccount-email-body' => 'Someone, probably you from IP address $1, has requested an account "$2" with this e-mail address on {{SITENAME}}.
+	'request-account-econf'     => 'Your email address has been confirmed and will be listed as such in your account request.',
+	'requestaccount-email-subj' => '{{SITENAME}} email address confirmation',
+	'requestaccount-email-body' => 'Someone, probably you from IP address $1, has requested an account "$2" with this email address on {{SITENAME}}.
 
 To confirm that this account really does belong to you on {{SITENAME}}, open this link in your browser:
 
 $3
 
-If the account is created, only you will be e-mailed the password.
-If this is *not* you, don\'t follow the link.
+If the account is created, only you will be emailed the password.
+If this is *not* you, do not follow the link.
 This confirmation code will expire at $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} account request',
 	'requestaccount-email-body-admin' => '"$1" has requested an account and is waiting for confirmation.
-The e-mail address has been confirmed. You can confirm the request here "$2".',
+The email address has been confirmed. You can confirm the request here "$2".',
 
 	'acct_request_throttle_hit' => "Sorry, you have already requested {{PLURAL:$1|1 account|$1 accounts}}.
 You cannot make any more requests.",

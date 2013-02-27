@@ -64,7 +64,7 @@ class ConfirmAccount {
 	}
 
 	/**
-	 * Generate and store a new e-mail confirmation token, and return
+	 * Generate and store a new email confirmation token, and return
 	 * the URL the user can use to confirm.
 	 * @param string $token
 	 * @return string
@@ -78,7 +78,7 @@ class ConfirmAccount {
 	}
 
 	/**
-	 * Generate, store, and return a new e-mail confirmation code.
+	 * Generate, store, and return a new email confirmation code.
 	 * A hash (unsalted since it's used as a key) is stored.
 	 * @param User $user
 	 * @param string $expiration
@@ -94,7 +94,7 @@ class ConfirmAccount {
 	}
 
 	/**
-	 * Generate a new e-mail confirmation token and send a confirmation
+	 * Generate a new email confirmation token and send a confirmation
 	 * mail to the user's given address.
 	 *
 	 * @param User $user
