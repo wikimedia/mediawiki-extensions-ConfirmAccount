@@ -83,6 +83,7 @@ You cannot make any more requests.",
  * @author Lejonel
  * @author McDutchie
  * @author Purodha
+ * @author Shirayuki
  * @author Siebrand
  * @author The Evil IP address
  * @author Umherirrender
@@ -115,8 +116,10 @@ $messages['qqq'] = array(
 * $6 is a time',
 	'requestaccount-email-subj-admin' => '{{Identical|SITENAME account request}}',
 	'requestaccount-email-body-admin' => 'This message is the email body text send to a site admin whenever someone has requested a new account.
-* $1: is a username
-* $2 is a URL',
+
+Parameters:
+* $1 - username
+* $2 - URL',
 );
 
 /** Afrikaans (Afrikaans)
