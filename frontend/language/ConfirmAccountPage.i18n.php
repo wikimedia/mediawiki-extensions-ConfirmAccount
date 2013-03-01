@@ -5207,11 +5207,11 @@ Mungkin ia sudah diuruskan.',
 	'confirmaccount-confirm' => 'Gunakan pilihan di bawah untuk menerima, menolak atau menggantung permohonan ini:',
 	'confirmaccount-econf' => '(disahkan)',
 	'confirmaccount-withcv' => '(CV dilampirkan)',
-	'confirmaccount-reject' => '({{GENDER:$1|ditolak}} oleh [[User:$1|$1]] pada $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|ditolak}} oleh [[User:$1|$1]] pada $3, $4)',
 	'confirmaccount-rational' => 'Rasional yang diberikan kepada pemohon:',
 	'confirmaccount-noreason' => '(tiada)',
 	'confirmaccount-autorej' => '(permohonan ini telah dibuang secara automatik disebabkan ketidakaktifan)',
-	'confirmaccount-held' => '({{GENDER:$1|ditandai}} sebagai "tergantung" oleh [[User:$1|$1]] pada $2)', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|ditandai}} sebagai "tergantung" oleh [[User:$1|$1]] pada $3, $4)',
 	'confirmaccount-create' => 'Terima (buka akaun)',
 	'confirmaccount-deny' => 'Tolak (buang dari senarai)',
 	'confirmaccount-hold' => 'Gantung',
