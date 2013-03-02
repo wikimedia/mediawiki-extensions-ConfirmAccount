@@ -39,6 +39,7 @@ Check that the name is spelled correctly.',
  * @author Lejonel
  * @author McDutchie
  * @author Purodha
+ * @author Shirayuki
  * @author Siebrand
  * @author The Evil IP address
  */
@@ -48,7 +49,7 @@ $messages['qqq'] = array(
 	'usercredentials-leg-areas' => '{{Identical|Main areas of interest}}',
 	'usercredentials-leg-person' => '{{Identical|Personal information}}',
 	'usercredentials-leg-other' => '{{Identical|Other information}}',
-	'usercredentials-email' => '{{Identical|E-mail}}',
+	'usercredentials-email' => '{{Identical|E-mail address}}',
 	'usercredentials-real' => '{{Identical|Real name}}',
 	'usercredentials-bio' => '{{Identical|Biography}}',
 	'usercredentials-attach' => '{{Identical|Resume/CV}}',
