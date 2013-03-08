@@ -126,6 +126,7 @@ class RequestAccountPage extends SpecialPage {
 			$form .= "<tr><td>" . $this->msg( 'requestaccount-reqtype' )->escaped() . "</td><td>";
 			$options = array();
 			foreach ( $wgAccountRequestTypes as $i => $params ) {
+				// Give grep a chance to find the usages: requestaccount-level-0, requestaccount-level-1
 				$options[] = Xml::option( $this->msg( "requestaccount-level-$i" )->text(), $i, ( $i == $this->mType ) );
 			}
 			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );

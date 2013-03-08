@@ -172,6 +172,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$viewall = Linker::makeKnownLinkObj(
 				$this->getTitle(), $this->msg( 'confirmaccount-all' )->escaped() );
 
+			// Give grep a chance to find the usages: confirmaccount-type-0, confirmaccount-type-1
 			$this->getOutput()->setSubtitle(
 				"<strong>" . $this->msg( 'confirmaccount-type' )->escaped() . " <i>" .
 				$this->msg( "confirmaccount-type-{$this->queueType}" )->escaped() .
@@ -223,6 +224,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			);
 			$stale .= '</i>';
 
+			// Give grep a chance to find the usages: confirmaccount-type-0, confirmaccount-type-1
 			$out->addHTML( "<li><i>" . $this->msg( "confirmaccount-type-$i" )->escaped() . "</i>" );
 			$out->addHTML( $this->msg( 'word-separator' )->plain() );
 			$params = $this->getLanguage()->pipeList( array( $open, $held, $rejects, $stale ) );
@@ -306,6 +308,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$options = array();
 			$form .= "<tr><td><strong>" . $this->msg( 'confirmaccount-reqtype' )->escaped() . "</strong></td><td>";
 			foreach ( $wgAccountRequestTypes as $i => $params ) {
+				// Give grep a chance to find the usages: confirmaccount-pos-0, confirmaccount-pos-1
 				$options[] = Xml::option( $this->msg( "confirmaccount-pos-$i" )->text(), $i, ( $i == $this->reqType ) );
 			}
 			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
