@@ -353,6 +353,13 @@ $messages['ca'] = array(
 	'usercredentials-agent' => 'User-Agent original:',
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Calak
+ */
+$messages['ckb'] = array(
+	'usercredentials-member' => 'مافەکان:',
+);
+
 /** Czech (česky)
  * @author Jkjk
  * @author Li-sung

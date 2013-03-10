@@ -1308,9 +1308,14 @@ $messages['ca'] = array(
 );
 
 /** Sorani Kurdish (کوردی)
+ * @author Calak
  */
 $messages['ckb'] = array(
+	'confirmaccount-leg-user' => 'ھەژماری بەکارھێنەر',
+	'confirmaccount-real' => 'ناو:',
+	'confirmaccount-ip' => 'ناونیشانی ئایپی:',
 	'confirmaccount-submit' => 'پشتدار بکەرەوە',
+	'confirmaccount-wsum' => 'بەخێربێی!',
 );
 
 /** Czech (česky)
