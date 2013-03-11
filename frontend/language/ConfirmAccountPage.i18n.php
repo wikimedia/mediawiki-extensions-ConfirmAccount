@@ -1133,6 +1133,7 @@ Moarvat eo bet graet war-dro dija.",
 	'confirmaccount-none-p' => "(n'eo ket pourchaset)",
 	'confirmaccount-confirm' => "Implijit ar boutonioù amañ dindan da zegemer, nach pe zerc'hel ar goulenn-mañ :", # Fuzzy
 	'confirmaccount-econf' => '(kadarnaet)',
+	'confirmaccount-withcv' => '(CV amañ kevret)',
 	'confirmaccount-reject' => "(distaolet gant [[User:$1|$1]] d'an $2)", # Fuzzy
 	'confirmaccount-rational' => "Abeg roet d'an dud war ar renk",
 	'confirmaccount-noreason' => '(hini ebet)',
