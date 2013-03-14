@@ -618,11 +618,11 @@ Pue ser que yá se xestionare.',
 	'confirmaccount-confirm' => "Usa les opciones d'abaxo p'aceutar, refugar o dexar n'espera esta solicitú:",
 	'confirmaccount-econf' => '(confirmáu)',
 	'confirmaccount-withcv' => '(CV axuntu)',
-	'confirmaccount-reject' => '(refugáu por [[User:$1|$1]] el $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|refugáu}} por [[User:$1|$1]] el $3 a les $4)',
 	'confirmaccount-rational' => 'Esplicación que se dio al solicitante:',
 	'confirmaccount-noreason' => '(nenguna)',
 	'confirmaccount-autorej' => '(esta solicitú se descartó de mou automáticu por inactividá)',
-	'confirmaccount-held' => '(marcada "n\'espera" por [[User:$1|$1]] el $2)', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|marcáu}} "n\'espera" por [[User:$1|$1]] el $3 a les $4)',
 	'confirmaccount-create' => 'Aceutar (crear cuenta)',
 	'confirmaccount-deny' => 'Refugar (quitar de la llista)',
 	'confirmaccount-hold' => "N'espera",
@@ -637,9 +637,9 @@ Pue ser que yá se xestionare.',
 	'confirmaccount-canthold' => 'Esta solicitú yá ta retenida o desaniciada.',
 	'confirmaccount-badaction' => "Tien d'especificase una aición válida (aceutar, refugar, retener) pa poder siguir.",
 	'confirmaccount-acc' => "Solicitú de cuenta confirmada correutamente;
-se creó la nueva cuenta d'usuariu [[User:$1|$1]].",
+creóse la nueva cuenta d'usuariu [[User:$1|$1]].",
 	'confirmaccount-rej' => 'La solicitú de cuenta se refugó correutamente.',
-	'confirmaccount-viewing' => '(viendose anguaño por [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '({{GENDER:$1|viendose}} anguaño por [[User:$1|$1]])',
 	'confirmaccount-summary' => "Creando páxina d'usuariu pal usuariu nuevu.",
 	'confirmaccount-welc' => "'''¡Bienveníu a ''{{SITENAME}}''!'''
 Esperamos que collabores muncho y bien.
