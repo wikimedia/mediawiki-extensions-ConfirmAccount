@@ -103,7 +103,7 @@ $messages['bg'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
-	'confirmaccount-newrequests' => "Er mare-mañ ez eus '''$1''' [[Special:ConfirmAccounts|goulenn kont{{PLURAL:$1||}}]] o vont en-dro.", # Fuzzy
+	'confirmaccount-newrequests' => "Er mare-mañ ez eus '''$1''' [[Special:ConfirmAccounts|goulenn kont{{PLURAL:$1|}}]] o vont en-dro.",
 	'requestaccount-loginnotice' => "Evit kaout ur gont implijer e rankit '''[[Special:RequestAccount|goulenn unan]]'''.",
 	'right-confirmaccount' => "Gwelet [[Special:ConfirmAccounts|lostad ar c'hontoù goulennet]]",
 	'right-requestips' => "Gwelet chomlec'hioù IP ar c'houlennerien pa vez pledet gant goulennoù krouiñ kontoù nevez.",

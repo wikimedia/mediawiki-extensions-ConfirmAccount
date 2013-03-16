@@ -225,6 +225,7 @@ $messages['af'] = array(
 	'confirmaccount-showheld' => 'afgehandelde versoeke',
 	'confirmaccount-showexp' => 'vervalle versoeke',
 	'confirmaccount-review' => 'Kontroleer',
+	'confirmaccount-type' => 'Waglys:',
 	'confirmaccount-q-open' => 'oop versoeke',
 	'confirmaccount-q-held' => 'afgehandelde versoeke',
 	'confirmaccount-q-stale' => 'vervalle versoeke',
