@@ -104,6 +104,8 @@ $messages['qqq'] = array(
 	'requestaccount-level-1' => '{{Identical|Editor}}',
 	'requestaccount-info' => '{{optional}}',
 	'requestaccount-notes' => '{{Identical|Additional notes}}',
+	'requestaccount-tooshort' => 'Used as error message. Parameters:
+* $1 - number of words',
 	'requestaccount-tos' => '"Real name" should be exactly as {{msg-mw|requestaccount-real}}, minus the colon.',
 	'requestaccount-submit' => '{{Identical|Request account}}',
 	'requestaccount-email-subj' => '{{Identical|SITENAME e-mail address confirmation}}',
@@ -120,6 +122,8 @@ $messages['qqq'] = array(
 Parameters:
 * $1 - username
 * $2 - URL',
+	'acct_request_throttle_hit' => 'Used as error message. Parameters:
+* $1 - number of accounts. value of <code>$wgAccountRequestThrottle</code>.',
 );
 
 /** Afrikaans (Afrikaans)

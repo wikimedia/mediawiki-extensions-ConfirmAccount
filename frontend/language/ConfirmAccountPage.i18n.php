@@ -197,6 +197,10 @@ $messages['qqq'] = array(
 	'confirmaccount-xff' => 'The X-Forwarded-For (XFF) HTTP header field is a de facto standard for identifying the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.',
 	'confirmaccount-agent' => 'The User-Agent HTTP header field',
 	'confirmaccount-submit' => '{{Identical|Confirm}}',
+	'confirmaccount-acc' => 'Used as success message. Parameters:
+* $1 - username',
+	'confirmaccount-viewing' => 'Used to indicate the user is currently viewing. Parameters:
+* $1 - username',
 	'confirmaccount-welc' => 'In ConfirmAccount extension. A welcome message that is automatically placed on the talk pages of new users.',
 	'confirmaccount-wsum' => 'In the ConfirmAccount extension. This is an edit summary used when a welcome message is automatically placed on the talk pages for new accounts.
 {{Identical|Welcome}}',
@@ -205,11 +209,18 @@ $messages['qqq'] = array(
 	'confirmaccount-email-body2' => '{{Identical|Your request for an account ...}}',
 	'confirmaccount-email-body3' => 'This message is sent as an email to users when their account request has been denied by an bureaucrat.
 
-*Parameter $1 is the requested account name',
+Parameters:
+* $1 - the requested account name',
 	'confirmaccount-email-body4' => 'This message is sent as an email to users when their account request has been denied by an bureaucrat.
 
-*Parameter $1 is the requested account name
-*Parameter $2 is a comment written by the bureaucrat',
+Parameters:
+* $1 - the requested account name
+* $2 - a comment written by the bureaucrat',
+	'confirmaccount-email-body5' => 'This message is sent as an email to users when their account request has been held by an bureaucrat.
+
+Parameters:
+* $1 - the requested account name
+* $2 - the reason',
 );
 
 /** Afrikaans (Afrikaans)
@@ -3339,11 +3350,11 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-confirm' => 'Wužij slědowace opcije, zo by tute požadanje akceptował, wotpokazał abo wočakał:',
 	'confirmaccount-econf' => '(potwjerdźene)',
 	'confirmaccount-withcv' => '(žiwjenjoběh připowěsnjeny)',
-	'confirmaccount-reject' => '(wot [[Wužiwar:$1|$1]] na $2 wotpokazany)', # Fuzzy
+	'confirmaccount-reject' => '(wot [[User:$1|$1]] $3 $4 {{GENDER:$1|wotpokazany|wotpokazana}})',
 	'confirmaccount-rational' => 'Rozjasnjenje požadarjej:',
 	'confirmaccount-noreason' => '(žane)',
 	'confirmaccount-autorej' => '(tute požadanje bu inaktiwnosće dla awtomatisce zaćisnjene)',
-	'confirmaccount-held' => '(wot [[User:$1|$1]] on $2 jako "čakacy" markěrowany)', # Fuzzy
+	'confirmaccount-held' => '(wot [[User:$1|$1]]  $3 $4 jako "čakacy" {{GENDER:$1|markěrowany|markěrowana}})',
 	'confirmaccount-create' => 'Akceptować (Konto wutworić)',
 	'confirmaccount-deny' => 'Wotpokazać (Požadanje wotstronić)',
 	'confirmaccount-hold' => 'Čakać dać',
@@ -3359,7 +3370,7 @@ Jeli tutu stronu prosće wopušćeš, bjeztoho zo by konto potwjerdźił abo wot
 	'confirmaccount-badaction' => 'Dyrbiš płaćiwu akciju (akceptować, wotpokazać, wočakać) podać, zo by pokročował.',
 	'confirmaccount-acc' => 'Požadanje za kontom bu wuspěšnje wobkrućene; konto za wužiwarja [[User:$1|$1]] bu wutworjene.',
 	'confirmaccount-rej' => 'Požadanje za kontom bu wotpokazane.',
-	'confirmaccount-viewing' => '(wobhladuje so runje wot [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '({{GENDER:$1|wobhladuje}} so runje wot [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Wutworja so wužiwarska strona za noweho wužiwarja.',
 	'confirmaccount-welc' => "'''Witaj do ''{{SITENAME}}''!'''
 Nadźijemy so, zo dodaš wjele dobrych přinoškow.
@@ -4086,7 +4097,7 @@ $messages['ja'] = array(
 	'confirmaccount-badaction' => '続行するには有効な操作 (承認、棄却、保留) を指定する必要があります。',
 	'confirmaccount-acc' => 'アカウント申請の承認に成功しました。作成された新しいアカウントは [[User:$1|$1]] です。',
 	'confirmaccount-rej' => 'アカウント申請を却下しました。',
-	'confirmaccount-viewing' => '(この申請は、現在[[User:$1|$1]]が受理{{GENDER:$1|しています}})',
+	'confirmaccount-viewing' => '(この申請は、現在[[User:$1|$1]]が閲覧{{GENDER:$1|しています}})',
 	'confirmaccount-summary' => '新しい利用者の利用者ページを作成します。',
 	'confirmaccount-welc' => "'''ようこそ''{{SITENAME}}''へ!'''
 多くの寄稿を心よりお待ち申し上げます。
