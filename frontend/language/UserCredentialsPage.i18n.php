@@ -686,6 +686,7 @@ $messages['fi'] = array(
  * @author PieRRoMaN
  * @author Sherbrooke
  * @author Urhixidur
+ * @author Verdy p
  * @author Zetud
  */
 $messages['fr'] = array(
@@ -698,7 +699,7 @@ $messages['fr'] = array(
 	'usercredentials-leg-person' => 'Informations personnelles',
 	'usercredentials-leg-other' => 'Autres informations',
 	'usercredentials-leg-ip' => "données d'adresse IP",
-	'usercredentials-email' => 'Courriel :',
+	'usercredentials-email' => 'Adresse de courriel :',
 	'usercredentials-real' => 'Nom réel :',
 	'usercredentials-bio' => 'Biographie :',
 	'usercredentials-attach' => 'CV :',

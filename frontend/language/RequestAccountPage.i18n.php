@@ -1328,6 +1328,7 @@ Sähköpostiosoite on tarkistettu. Myönnä käyttäjätunnus tästä: $2.',
  * @author PieRRoMaN
  * @author Sherbrooke
  * @author Urhixidur
+ * @author Verdy p
  * @author Zetud
  */
 $messages['fr'] = array(
@@ -1353,7 +1354,7 @@ Une fois que le compte est accepté, vous recevrez un courriel de notification e
 Assurez-vous d'être à l'aise de publier de telles informations.",
 	'requestaccount-real' => 'Nom réel :',
 	'requestaccount-same' => '(nom figurant dans votre état civil)',
-	'requestaccount-email' => 'Adresse électronique :',
+	'requestaccount-email' => 'Adresse de courriel :',
 	'requestaccount-reqtype' => 'Situation :',
 	'requestaccount-level-0' => 'auteur',
 	'requestaccount-level-1' => 'contributeur',
