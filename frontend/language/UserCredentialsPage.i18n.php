@@ -44,17 +44,50 @@ Check that the name is spelled correctly.',
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
+	'usercredentials' => '{{doc-special|UserCredentials}}',
+	'usercredentials-leg' => 'Used as fieldset label of the form.
+
+See also:
+* {{msg-mw|Usercredentials-leg-ip}}',
 	'usercredentials-user' => '{{Identical|Username}}',
+	'usercredentials-text' => 'This message is followed by a list of validated credentials.',
 	'usercredentials-leg-user' => '{{Identical|User account}}',
 	'usercredentials-leg-areas' => '{{Identical|Main areas of interest}}',
 	'usercredentials-leg-person' => '{{Identical|Personal information}}',
 	'usercredentials-leg-other' => '{{Identical|Other information}}',
+	'usercredentials-leg-ip' => 'Used as fieldset label of the form.
+
+See also:
+* {{msg-mw|Usercredentials-leg}}',
 	'usercredentials-email' => '{{Identical|E-mail address}}',
 	'usercredentials-real' => '{{Identical|Real name}}',
 	'usercredentials-bio' => '{{Identical|Biography}}',
 	'usercredentials-attach' => '{{Identical|Resume/CV}}',
 	'usercredentials-notes' => '{{Identical|Additional notes}}',
 	'usercredentials-urls' => '{{Identical|List of websites}}',
+	'usercredentials-ip' => 'Used as label in the form.
+
+The fieldset label is {{msg-mw|Usercredentials-leg-ip}}.
+
+See also:
+* {{msg-mw|Usercredentials-xff}}
+* {{msg-mw|Usercredentials-agent}}',
+	'usercredentials-xff' => 'Used as label in the form.
+
+The fieldset label is {{msg-mw|Usercredentials-leg-ip}}.
+
+See also:
+* {{msg-mw|Usercredentials-ip}}
+* {{msg-mw|Usercredentials-agent}}',
+	'usercredentials-agent' => 'Used as label in the form.
+
+The fieldset label is {{msg-mw|Usercredentials-leg-ip}}.
+
+See also:
+* {{msg-mw|Usercredentials-ip}}
+* {{msg-mw|Usercredentials-xff}}',
+	'usercredentials-member' => 'Used as label for a list of the user groups.',
+	'usercredentials-badid' => 'Used as error message.',
 );
 
 /** Afrikaans (Afrikaans)
@@ -1114,7 +1147,7 @@ Controlla che il nome sia scritto correttamente.',
  */
 $messages['ja'] = array(
 	'usercredentials' => '利用者信頼情報',
-	'usercredentials-leg' => '利用者信頼情報を閲覧',
+	'usercredentials-leg' => '利用者信頼情報の閲覧',
 	'usercredentials-user' => '利用者名:',
 	'usercredentials-text' => '指定された利用者アカウントの信頼情報は以下の通りです。',
 	'usercredentials-leg-user' => '利用者アカウント',
@@ -1132,7 +1165,8 @@ $messages['ja'] = array(
 	'usercredentials-xff' => '元の X-Forwarded-For:',
 	'usercredentials-agent' => '元の User-Agent:',
 	'usercredentials-member' => '権限:',
-	'usercredentials-badid' => '利用者信頼情報が見つかりません。利用者名が正しく指定されているか確認してください。',
+	'usercredentials-badid' => '利用者信頼情報が見つかりません。
+利用者名が正しく指定されているか確認してください。',
 );
 
 /** Javanese (Basa Jawa)

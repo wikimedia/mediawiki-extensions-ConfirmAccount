@@ -89,7 +89,8 @@ You cannot make any more requests.",
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'requestaccount' => '{{Identical|Request account}}',
+	'requestaccount' => '{{doc-special|RequestAccount}}
+{{Identical|Request account}}',
 	'requestaccount-footer' => '{{optional}}',
 	'requestaccount-leg-user' => '{{Identical|User account}}',
 	'requestaccount-leg-areas' => '{{Identical|Main areas of interest}}',

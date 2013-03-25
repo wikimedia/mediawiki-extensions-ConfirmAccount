@@ -153,7 +153,24 @@ There may be contact lists on site that you can use if you want to know more abo
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
+	'confirmaccounts' => '{{doc-special|ConfirmAccounts}}',
 	'confirmedit-desc' => '{{desc|name=Confirm Edit|url=http://www.mediawiki.org/wiki/Extension:ConfirmEdit}}',
+	'confirmaccount-maintext' => 'This message is followed by the message {{msg-mw|confirmaccount-types}}.',
+	'confirmaccount-list' => 'This message is followed by a list of account requests.
+
+See also:
+* {{msg-mw|Confirmaccount-list2}}
+* {{msg-mw|Confirmaccount-list3}}',
+	'confirmaccount-list2' => 'This message is followed by a list of account requests.
+
+See also:
+* {{msg-mw|Confirmaccount-list}}
+* {{msg-mw|Confirmaccount-list3}}',
+	'confirmaccount-list3' => 'This message is followed by a list of account requests.
+
+See also:
+* {{msg-mw|Confirmaccount-list}}
+* {{msg-mw|Confirmaccount-list2}}',
 	'confirmaccount-real-q' => '{{Identical|Name}}',
 	'confirmaccount-email-q' => '{{Identical|E-mail}}',
 	'confirmaccount-bio-q' => '{{Identical|Biography}}',
@@ -161,6 +178,8 @@ $messages['qqq'] = array(
 	'confirmaccount-showheld' => '{{Identical|Held requests}}',
 	'confirmaccount-showexp' => '{{Identical|Expired requests}}',
 	'confirmaccount-review' => '{{Identical|Review}}',
+	'confirmaccount-types' => 'This message follows the following message:
+* {{msg-mw|Confirmaccount-maintext}}',
 	'confirmaccount-type' => '{{Identical|Queue}}',
 	'confirmaccount-q-open' => '{{Identical|Open requests}}',
 	'confirmaccount-q-held' => '{{Identical|Held requests}}',
@@ -6265,7 +6284,7 @@ S'a lassrà sta pàgina-sì sensa confirmé o scancelé st'arcesta, a restrà an
 	'confirmaccount-rational' => 'Rason dàita al candidà:',
 	'confirmaccount-noreason' => '(gnun)',
 	'confirmaccount-autorej' => "(st'arcesta-sì a l'é stàita automaticament scartà a motiv d'inatività)",
-	'confirmaccount-held' => '({{GENDER:$1|marcà}} "an coa" da [[User:$1|$1]] dël $3 at $4)',
+	'confirmaccount-held' => '({{GENDER:$1|marcà}} «an atèisa» da [[User:$1|$1]] ai $3 a $4)',
 	'confirmaccount-create' => "Aceté (deurbe 'l cont)",
 	'confirmaccount-deny' => "Arfudé (e gavé da 'nt la lista)",
 	'confirmaccount-hold' => 'Lassé an coa',
