@@ -3110,12 +3110,14 @@ Om kontoen blir opprettet vil kun du motta passordet. Om forespørselen *ikke* k
 );
 
 /** Low German (Plattdüütsch)
+ * @author Joachim Mos
  * @author Slomox
  */
 $messages['nds'] = array(
 	'requestaccount-leg-user' => 'Brukerkonto',
 	'requestaccount-real' => 'Echten Naam:',
 	'requestaccount-email' => 'E-Mail-Adress:',
+	'requestaccount-level-0' => 'Schriever',
 	'requestaccount-bio' => 'Biografie:', # Fuzzy
 );
 

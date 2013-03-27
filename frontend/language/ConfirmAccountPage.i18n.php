@@ -1782,6 +1782,7 @@ Möglicherweise gibt es auf der Seite Kontaktadressen, an die Sie sich wenden k�
 /** Zazaki (Zazaki)
  * @author Belekvor
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['diq'] = array(
 	'confirmaccounts' => 'Wazayışê hesabi araşt kerê',
@@ -1791,7 +1792,7 @@ $messages['diq'] = array(
 	'confirmaccount-review' => 'Çım ra ravyarne',
 	'confirmaccount-type' => 'Grube:',
 	'confirmaccount-leg-ip' => 'Melumate IP adresi',
-	'confirmaccount-name' => 'Namey karberi',
+	'confirmaccount-name' => 'Nameyê karberi',
 	'confirmaccount-real' => 'Name:',
 	'confirmaccount-email' => 'E-posta:',
 	'confirmaccount-reqtype' => 'Pozisyon:',
@@ -5570,6 +5571,7 @@ Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om ko
 );
 
 /** Low German (Plattdüütsch)
+ * @author Joachim Mos
  * @author Slomox
  */
 $messages['nds'] = array(
@@ -5579,7 +5581,10 @@ $messages['nds'] = array(
 	'confirmaccount-leg-user' => 'Brukerkonto',
 	'confirmaccount-name' => 'Brukernaam',
 	'confirmaccount-real' => 'Naam:',
+	'confirmaccount-email' => 'E-Mail:',
+	'confirmaccount-pos-0' => 'Schriever',
 	'confirmaccount-ip' => 'IP-Adress:',
+	'confirmaccount-submit' => 'Tostimmen',
 	'confirmaccount-wsum' => 'Willkamen!',
 );
 
