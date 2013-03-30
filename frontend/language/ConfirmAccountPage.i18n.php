@@ -4678,11 +4678,11 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-confirm' => "Benotzt d'Optiounen ënnendrënner fir dës Ufro unzehuelen, ze refuséien oder op 'en-cours' ze setzen:",
 	'confirmaccount-econf' => '(confirméiert)',
 	'confirmaccount-withcv' => '(mat CV)',
-	'confirmaccount-reject' => '(refuséiert vum [[User:$1|$1]] de(n) $2)', # Fuzzy
+	'confirmaccount-reject' => '(refuséiert vum [[User:$1|$1]] de(n) $3 ëm $4)',
 	'confirmaccount-rational' => 'Ursaach fir deen deen ugefrot huet:',
 	'confirmaccount-noreason' => '(keen)',
 	'confirmaccount-autorej' => '(dës Ufro gouf automatesch wéint Inaktivitéit klasséiert)',
-	'confirmaccount-held' => '(als "amgaang" vum [[User:$1|Benotzer $1]] den $2 markéiert)', # Fuzzy
+	'confirmaccount-held' => '(als "amgaang" vum [[User:$1|Benotzer $1]] den $3 ëm $4 markéiert)',
 	'confirmaccount-create' => 'Unhuelen (Benotzerkont opmaachen)',
 	'confirmaccount-deny' => 'Refuséieren (Benotzerkont gëtt geläscht)',
 	'confirmaccount-hold' => 'Ofwaarden',
@@ -4699,7 +4699,7 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-acc' => 'Benotzerkont-Ufro gouf confirméiert;
 de Benotzerkont [[User:$1|$1]] gouf ugeluecht.',
 	'confirmaccount-rej' => "D'Ufro fir ee Benotzerkont gouf refuséiert.",
-	'confirmaccount-viewing' => '(gëtt elo gekuckt vum [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '(gëtt elo {{GENDER:$1|gekuckt}} vum [[User:$1|$1]])',
 	'confirmaccount-summary' => "D'Benotzersäit fir en neie Benotzer gëtt elo gemaach.",
 	'confirmaccount-welc' => "'''Wëllkomm op ''{{SITENAME}}''!'''
 Dir wëllt wahrscheinlech d'[[{{MediaWiki:Helppage}}|Hellëfsäite]] liesen.
