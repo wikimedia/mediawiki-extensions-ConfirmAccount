@@ -91,24 +91,88 @@ You cannot make any more requests.",
 $messages['qqq'] = array(
 	'requestaccount' => '{{doc-special|RequestAccount}}
 {{Identical|Request account}}',
+	'requestaccount-text' => 'Used as intro text in [[Special:RequestAccount]].
+
+See also:
+* {{msg-mw|Requestaccount-page}} - link target',
 	'requestaccount-footer' => '{{optional}}',
-	'requestaccount-leg-user' => '{{Identical|User account}}',
-	'requestaccount-leg-areas' => '{{Identical|Main areas of interest}}',
-	'requestaccount-leg-person' => '{{Identical|Personal information}}',
-	'requestaccount-leg-other' => '{{Identical|Other information}}',
+	'requestaccount-page' => 'Used as link target in the following messages:
+* {{msg-mw|Requestaccount-text}}
+* {{msg-mw|Requestaccount-tos}}',
+	'requestaccount-dup' => 'Used as notice to users that are logged in.',
+	'requestaccount-leg-user' => 'Used as fieldset label in the form.
+{{Identical|User account}}',
+	'requestaccount-leg-areas' => 'Used as fieldset label in the form.
+{{Identical|Main areas of interest}}',
+	'requestaccount-leg-person' => 'Used as fieldset label in the form.
+{{Identical|Personal information}}',
+	'requestaccount-leg-other' => 'Used as fieldset label in the form.
+{{Identical|Other information}}',
+	'requestaccount-leg-tos' => 'Used as fieldset label in the form.
+
+This message is followed by the checkbox and the following checkbox-label:
+* {{msg-mw|Requestaccount-tos}}',
+	'requestaccount-acc-text' => 'Used as intro text of the fieldset {{msg-mw|Requestaccount-leg-user}} in the "Account request" form.',
 	'requestaccount-areas' => '{{notranslate}}',
+	'requestaccount-areas-text' => 'Used as intro text of the fieldset {{msg-mw|Requestaccount-leg-areas}} in the "Account request" form.',
+	'requestaccount-ext-text' => 'Used as intro text of the fieldset {{msg-mw|Requestaccount-leg-other}} in the "Account request" form.',
+	'requestaccount-bio-text' => 'Used as intro text for the {{msg-mw|Requestaccount-bio}} textarea.
+
+This message may follow the following message:
+* {{msg-mw|Requestaccount-bio-text-i}}.',
+	'requestaccount-bio-text-i' => 'Used as intro text.
+
+This message is followed by {{msg-mw|Requestaccount-bio-text}}.',
 	'requestaccount-real' => 'When changing this message, please make sure to change {{msg-mw|requestaccount-tos|notext=yes}} too, which directly references to this message.
 {{Identical|Real name}}',
-	'requestaccount-email' => '{{Identical|E-mail address}}',
-	'requestaccount-reqtype' => '{{Identical|Position}}',
-	'requestaccount-level-0' => '{{Identical|Author}}',
-	'requestaccount-level-1' => '{{Identical|Editor}}',
+	'requestaccount-same' => 'This message follows the label {{msg-mw|Username}}.
+
+If the "Username" field is disabled, this message is used.
+
+Otherwise the "Username" input box appears instead of this message.',
+	'requestaccount-email' => 'Used as label for the "Email address" input box.
+{{Identical|E-mail address}}',
+	'requestaccount-reqtype' => 'Used as label for the "Position" select box which has the following positions:
+* {{msg-mw|Requestaccount-level-0}}
+* {{msg-mw|Requestaccount-level-1}}
+{{Identical|Position}}',
+	'requestaccount-level-0' => 'Used as item in the select box.
+
+See also:
+* {{msg-mw|Requestaccount-reqtype}}
+* {{msg-mw|Requestaccount-level-1}}
+{{Identical|Author}}',
+	'requestaccount-level-1' => 'Used as item in the select box.
+
+See also:
+* {{msg-mw|Requestaccount-reqtype}}
+* {{msg-mw|Requestaccount-level-0}}
+{{Identical|Editor}}',
 	'requestaccount-info' => '{{optional}}',
-	'requestaccount-notes' => '{{Identical|Additional notes}}',
+	'requestaccount-bio' => 'Used as label for the "Biography" textarea.
+
+This message follows {{msg-mw|Requestaccount-bio-text}}.',
+	'requestaccount-attach' => 'Used as label for the file selector.',
+	'requestaccount-notes' => 'Used as label for the "Notes" textarea.
+{{Identical|Additional notes}}',
+	'requestaccount-urls' => 'Used as label for the "URLs" textarea.',
+	'requestaccount-agree' => 'Used as error message.',
+	'requestaccount-inuse' => 'Used as error message.',
 	'requestaccount-tooshort' => 'Used as error message. Parameters:
 * $1 - number of words',
+	'requestaccount-emaildup' => 'Used as error message.',
+	'requestaccount-exts' => 'Used as error message if the file type is not allowed.
+
+Allowed types (default): txt, pdf, doc, latex, rtf, text, wp, wpd, sxw',
 	'requestaccount-tos' => '"Real name" should be exactly as {{msg-mw|requestaccount-real}}, minus the colon.',
-	'requestaccount-submit' => '{{Identical|Request account}}',
+	'requestaccount-submit' => 'Used as label for the Submit button.
+{{Identical|Request account}}',
+	'requestaccount-sent' => 'Used as success message.
+
+The page title for this message is {{msg-mw|Requestaccount}}.',
+	'request-account-econf' => 'Used as success message.
+
+This message is followed by a link which points to the Main page.',
 	'requestaccount-email-subj' => '{{Identical|SITENAME e-mail address confirmation}}',
 	'requestaccount-email-body' => 'This text is sent in an e-mail.
 * $1 is an IP address
@@ -2224,16 +2288,16 @@ $messages['ja'] = array(
 	'requestaccount' => 'アカウント登録申請',
 	'requestaccount-text' => "'''利用者アカウントを申請する方は、以下の項目を記入して送信してください'''  
 
-アカウント申請の前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用条件]]をお読みください。
+アカウント申請の前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用規約]]をお読みください。
 
 アカウントが承認されると、あなたのメールアドレスに通知メッセージが届き、そのアカウントで[[Special:UserLogin|ログイン]]できるようになります。",
-	'requestaccount-page' => '{{ns:project}}:サービス利用条件',
-	'requestaccount-dup' => "'''注: あなたは既に登録済みアカウントでログインしています。'''",
+	'requestaccount-page' => '{{ns:project}}:サービス利用規約',
+	'requestaccount-dup' => "'''注: あなたは登録済みアカウントで既にログインしています。'''",
 	'requestaccount-leg-user' => '利用者アカウント',
 	'requestaccount-leg-areas' => '関心のある分野',
 	'requestaccount-leg-person' => '個人情報',
 	'requestaccount-leg-other' => 'その他の情報',
-	'requestaccount-leg-tos' => '利用規約',
+	'requestaccount-leg-tos' => 'サービス利用規約',
 	'requestaccount-acc-text' => 'この申請を送信すると、確認メッセージをあなたのメールアドレスにお送りします。
 確認のため、そのメール内の確認用リンクをクリックしてください。
 あなたのアカウントを作成すると同時に、パスワードをメールでお送りします。',
@@ -2241,10 +2305,10 @@ $messages['ja'] = array(
 	'requestaccount-ext-text' => '以下の個人情報は公開されず、この申請処理のみに利用されます。
 電話番号などの連絡先は、あなたが本人確認の補助を目的として記入いただけます。',
 	'requestaccount-bio-text' => '下記のあなたの経歴に、関連する資格情報を含めるようにしてください。',
-	'requestaccount-bio-text-i' => "'''あなたの経歴はあなたの利用者ページに初期のコンテンツとして設定されます。'''
-この情報を公開してよいかどうかを確認してください。",
+	'requestaccount-bio-text-i' => "'''経歴は自分の利用者ページに初期のコンテンツとして設定されます。'''
+この情報を公開していいか確認してください。",
 	'requestaccount-real' => '本名:',
-	'requestaccount-same' => '(本名での登録に限定されます)',
+	'requestaccount-same' => '(下で入力した本名を使用します)',
 	'requestaccount-email' => 'メールアドレス:',
 	'requestaccount-reqtype' => 'サイトでの役割:',
 	'requestaccount-level-0' => '著者',

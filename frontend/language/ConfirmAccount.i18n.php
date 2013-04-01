@@ -471,7 +471,7 @@ $messages['ko'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'confirmaccount-newrequests' => '{{PLURAL:$1|Ein|\'\'\'$1\'\'\'|Kein}} unjedonn [[Special:ConfirmAccounts|{{PLURAL:$1|Aanfrooch|Aanfroore|Aanfroore}}]] met beschtääteschte <i lang="en">e-mail</i>-Addräß {{PLURAL:$1|es|sin|sin}} am waade.', # Fuzzy
+	'confirmaccount-newrequests' => '{{PLURAL:$1|Ein|\'\'\'$1\'\'\'|Kein}} unjedonn [[Special:ConfirmAccounts|{{PLURAL:$1|Aanfrooch|Aanfroore|Aanfrohre}}]] met beschtääteschte <i lang="en">e-mail</i>-Addräß {{PLURAL:$1|es|sen|sin}} am waade.',
 	'requestaccount-loginnotice' => "Öm ene Zohjang ze krijje, donn '''[[Special:RequestAccount|noh einem froore]]'''.",
 	'right-confirmaccount' => 'De [[Special:ConfirmAccounts|Schlang met de aanjefroochte Zohjäng]] beloore',
 	'right-requestips' => 'De jewönschte Neu_Metmaacher ier <code lang="en">IP-</code>Addräß aanloore beim Aanfroore beärbeede',

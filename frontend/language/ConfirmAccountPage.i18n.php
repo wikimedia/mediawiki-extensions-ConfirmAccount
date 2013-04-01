@@ -171,12 +171,32 @@ See also:
 See also:
 * {{msg-mw|Confirmaccount-list}}
 * {{msg-mw|Confirmaccount-list2}}',
-	'confirmaccount-real-q' => '{{Identical|Name}}',
-	'confirmaccount-email-q' => '{{Identical|E-mail}}',
-	'confirmaccount-bio-q' => '{{Identical|Biography}}',
-	'confirmaccount-showopen' => '{{Identical|Open requests}}',
-	'confirmaccount-showheld' => '{{Identical|Held requests}}',
-	'confirmaccount-showexp' => '{{Identical|Expired requests}}',
+	'confirmaccount-text' => 'Used as intro text for the AccountConfirm form.',
+	'confirmaccount-none-o' => 'There are no account requests to show.
+{{Related|Confirmaccount-none}}',
+	'confirmaccount-none-h' => 'There are no account requests to show.
+{{Related|Confirmaccount-none}}',
+	'confirmaccount-none-r' => 'There are no account requests to show.
+{{Related|Confirmaccount-none}}',
+	'confirmaccount-none-e' => 'There are no account requests to show.
+{{Related|Confirmaccount-none}}',
+	'confirmaccount-real-q' => 'Used as label for the real name, so this "Name" means "Realname".
+{{Identical|Name}}',
+	'confirmaccount-email-q' => 'Used as label for the email address.
+{{Identical|E-mail}}',
+	'confirmaccount-bio-q' => 'Used as label for the preview of the biography.
+{{Identical|Biography}}',
+	'confirmaccount-showopen' => 'Used as link text and as normal text (without link).
+{{Related|Confirmaccount-show}}
+{{Identical|Open requests}}',
+	'confirmaccount-showrej' => 'Used as link text and as normal text (without link).
+{{Related|Confirmaccount-show}}',
+	'confirmaccount-showheld' => 'Used as link text and as normal text (without link).
+{{Related|Confirmaccount-show}}
+{{Identical|Held requests}}',
+	'confirmaccount-showexp' => 'Used as link text and as normal text (without link).
+{{Related|Confirmaccount-show}}
+{{Identical|Expired requests}}',
 	'confirmaccount-review' => '{{Identical|Review}}',
 	'confirmaccount-types' => 'This message follows the following message:
 * {{msg-mw|Confirmaccount-maintext}}',
@@ -186,10 +206,15 @@ See also:
 	'confirmaccount-q-stale' => 'Used in [[Special:ConfirmAccounts|ConfirmAccounts]] extension.
 
 {{Identical|Expired requests}}',
-	'confirmaccount-leg-user' => '{{Identical|User account}}',
-	'confirmaccount-leg-areas' => '{{Identical|Main areas of interest}}',
-	'confirmaccount-leg-person' => '{{Identical|Personal information}}',
-	'confirmaccount-leg-other' => '{{Identical|Other information}}',
+	'confirmaccount-leg-user' => 'Used as fieldset label in the form.
+{{Identical|User account}}',
+	'confirmaccount-leg-areas' => 'Used as fieldset label in the form.
+{{Identical|Main areas of interest}}',
+	'confirmaccount-leg-person' => 'Used as fieldset label in the form.
+{{Identical|Personal information}}',
+	'confirmaccount-leg-other' => 'Used as fieldset label in the form.
+{{Identical|Other information}}',
+	'confirmaccount-leg-ip' => 'Used as fieldset label in the form.',
 	'confirmaccount-name' => '{{Identical|Username}}',
 	'confirmaccount-real' => '{{Identical|Name}}',
 	'confirmaccount-email' => '{{Identical|E-mail}}',
@@ -215,6 +240,7 @@ See also:
 	'confirmaccount-ip' => '{{Identical|IP address}}',
 	'confirmaccount-xff' => 'The X-Forwarded-For (XFF) HTTP header field is a de facto standard for identifying the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.',
 	'confirmaccount-agent' => 'The User-Agent HTTP header field',
+	'confirmaccount-legend' => 'Used as fieldset label in the form.',
 	'confirmaccount-submit' => '{{Identical|Confirm}}',
 	'confirmaccount-acc' => 'Used as success message. Parameters:
 * $1 - username',
@@ -4064,7 +4090,7 @@ $messages['ja'] = array(
 	'confirmaccount-bio-q' => '経歴',
 	'confirmaccount-showopen' => '未確定の申請',
 	'confirmaccount-showrej' => '却下済み申請',
-	'confirmaccount-showheld' => '承認保留アカウントの一覧を見る',
+	'confirmaccount-showheld' => '承認保留中の申請',
 	'confirmaccount-showexp' => '期限切れ申請',
 	'confirmaccount-review' => '承認検討',
 	'confirmaccount-types' => 'アカウント承認待ち行列を選択してください:',
@@ -4110,7 +4136,7 @@ $messages['ja'] = array(
 	'confirmaccount-ip' => 'IP アドレス:',
 	'confirmaccount-xff' => 'X-Forwarded-For:',
 	'confirmaccount-agent' => 'User-Agent:',
-	'confirmaccount-legend' => 'このアカウントを確認または拒否',
+	'confirmaccount-legend' => 'このアカウントの確認/拒否',
 	'confirmaccount-submit' => '判断確定',
 	'confirmaccount-needreason' => '判断理由を以下に記載する必要があります。',
 	'confirmaccount-canthold' => 'この申請は既に保留済みか、削除済みです。',
