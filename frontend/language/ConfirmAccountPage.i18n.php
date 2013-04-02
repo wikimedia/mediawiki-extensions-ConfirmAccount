@@ -197,15 +197,65 @@ See also:
 	'confirmaccount-showexp' => 'Used as link text and as normal text (without link).
 {{Related|Confirmaccount-show}}
 {{Identical|Expired requests}}',
-	'confirmaccount-review' => '{{Identical|Review}}',
+	'confirmaccount-review' => 'Used as link text.
+
+The link points to the "Account request" page.
+{{Identical|Review}}',
 	'confirmaccount-types' => 'This message follows the following message:
 * {{msg-mw|Confirmaccount-maintext}}',
-	'confirmaccount-type' => '{{Identical|Queue}}',
-	'confirmaccount-q-open' => '{{Identical|Open requests}}',
-	'confirmaccount-q-held' => '{{Identical|Held requests}}',
-	'confirmaccount-q-stale' => 'Used in [[Special:ConfirmAccounts|ConfirmAccounts]] extension.
+	'confirmaccount-all' => "Used as link text in '''bold'''.
 
+The link follows any one of the following link texts:
+* {{msg-mw|Confirmaccount-showopen}}
+* {{msg-mw|Confirmaccount-showrej}}
+* {{msg-mw|Confirmaccount-showheld}}
+* {{msg-mw|Confirmaccount-showexp}}",
+	'confirmaccount-type' => 'Used as label for "Queue type".
+
+This message is followed by the following messages:
+* {{msg-mw|Confirmaccount-type-0}}
+* {{msg-mw|Confirmaccount-type-1}}
+{{Identical|Queue}}',
+	'confirmaccount-type-0' => '(1) Used as a "Queue type". The label for this message is {{msg-mw|Confirmaccount-type}}.
+
+(2) Also used as label. This message is followed by a list of links. Their link texts are:
+* {{msg-mw|Confirmaccount-q-open}}
+* {{msg-mw|Confirmaccount-q-rej}}
+* {{msg-mw|Confirmaccount-q-held}}
+* {{msg-mw|Confirmaccount-q-stale}}
+
+See also:
+* {{msg-mw|Confirmaccount-type-1}}',
+	'confirmaccount-type-1' => '(1) Used as a "Queue type". The label for this message is {{msg-mw|Confirmaccount-type}}.
+
+(2) Also used as label. This message is followed by a list of links. Their link texts are:
+* {{msg-mw|Confirmaccount-q-open}}
+* {{msg-mw|Confirmaccount-q-rej}}
+* {{msg-mw|Confirmaccount-q-held}}
+* {{msg-mw|Confirmaccount-q-stale}}
+
+See also:
+* {{msg-mw|Confirmaccount-type-0}}',
+	'confirmaccount-q-open' => 'Used as link text.
+
+The link points to the "List of account requests" page.
+{{Related|Confirmaccount-q}}
+{{Identical|Open requests}}',
+	'confirmaccount-q-held' => 'Used as link text.
+
+The link points to the "List of account requests" page.
+{{Related|Confirmaccount-q}}
+{{Identical|Held requests}}',
+	'confirmaccount-q-rej' => 'Used as link text.
+
+The link points to the "List of account requests" page.
+{{Related|Confirmaccount-q}}',
+	'confirmaccount-q-stale' => 'Used as link text.
+
+The link points to the "List of account requests" page.
+{{Related|Confirmaccount-q}}
 {{Identical|Expired requests}}',
+	'confirmaccount-badid' => 'Used as error message if the provided account-request ID is invalid or disabled.',
 	'confirmaccount-leg-user' => 'Used as fieldset label in the form.
 {{Identical|User account}}',
 	'confirmaccount-leg-areas' => 'Used as fieldset label in the form.
@@ -215,57 +265,192 @@ See also:
 	'confirmaccount-leg-other' => 'Used as fieldset label in the form.
 {{Identical|Other information}}',
 	'confirmaccount-leg-ip' => 'Used as fieldset label in the form.',
-	'confirmaccount-name' => '{{Identical|Username}}',
-	'confirmaccount-real' => '{{Identical|Name}}',
-	'confirmaccount-email' => '{{Identical|E-mail}}',
-	'confirmaccount-reqtype' => '{{Identical|Position}}',
-	'confirmaccount-pos-0' => '{{Identical|Author}}',
-	'confirmaccount-pos-1' => '{{Identical|Editor}}',
-	'confirmaccount-bio' => '{{Identical|Biography}}',
-	'confirmaccount-attach' => '{{Identical|Resume/CV}}',
-	'confirmaccount-notes' => '{{Identical|Additional notes}}',
-	'confirmaccount-urls' => '{{Identical|List of websites}}',
-	'confirmaccount-none-p' => '{{Identical|Notprovided}}',
+	'confirmaccount-name' => 'Used as label for the username
+{{Identical|Username}}',
+	'confirmaccount-real' => 'Used as label for the realname.
+{{Identical|Name}}',
+	'confirmaccount-email' => 'Used as label for the email address.
+{{Identical|E-mail}}',
+	'confirmaccount-reqtype' => 'Used as label for the position.
+
+This message is followed by any one of the following positions:
+* {{msg-mw|Requestaccount-level-0}}
+* {{msg-mw|Requestaccount-level-1}}
+{{Identical|Position}}',
+	'confirmaccount-pos-0' => 'Used as Position (Account request type).
+
+See also:
+* {{msg-mw|Confirmaccount-reqtype}}
+* {{msg-mw|Confirmaccount-pos-1}}
+{{Identical|Author}}',
+	'confirmaccount-pos-1' => 'Used as Position (Account request type).
+
+See also:
+* {{msg-mw|Confirmaccount-reqtype}}
+* {{msg-mw|Confirmaccount-pos-0}}
+{{Identical|Editor}}',
+	'confirmaccount-bio' => 'Used as label for "Biography" textarea.
+{{Identical|Biography}}',
+	'confirmaccount-attach' => 'Used as label.
+
+This message is followed by any one of the following:
+* the link which points to the file
+* {{msg-mw|Confirmaccount-none-p}}
+{{Identical|Resume/CV}}',
+	'confirmaccount-notes' => 'Used as label for the "Notes" textarea.
+{{Identical|Additional notes}}',
+	'confirmaccount-urls' => 'Used as label.
+
+This message is followed by any one of the following:
+* a list of the links
+* {{msg-mw|Confirmaccount-none-p}}
+{{Identical|List of websites}}',
+	'confirmaccount-none-p' => 'This message indicates that:
+* Resume/CV not provided
+* Links not provided
+See also:
+* {{msg-mw|Usercredentials-attach}}
+* {{msg-mw|Usercredentials-urls}}
+{{Identical|Notprovided}}',
+	'confirmaccount-confirm' => 'Used as intro text for the fieldset which has the label {{msg-mw|Confirmaccount-legend}}.
+
+This message is followed by the following radio button labels:
+* {{msg-mw|Confirmaccount-create}}
+* {{msg-mw|Confirmaccount-deny}}
+* {{msg-mw|Confirmaccount-hold}}
+* {{msg-mw|Confirmaccount-spam}}',
+	'confirmaccount-econf' => 'Used if the email address has been confirmed.
+
+The message follows the label and the email address.
+The label is any one of the following:
+* {{msg-mw|Confirmaccount-email}}
+* {{msg-mw|Confirmaccount-email-q}}
+* {{msg-mw|Usercredentials-email}}',
+	'confirmaccount-withcv' => 'Used if a CV file has been attached.
+
+This message follows the label {{msg-mw|Confirmaccount-real-q}} and the realname.',
 	'confirmaccount-reject' => 'Parameters:
 *$1 user name, can be used for GENDER
 *$2 date/time
 *$3 date
 *$4 time',
-	'confirmaccount-noreason' => '{{Identical|None}}',
+	'confirmaccount-rational' => 'This message is followed by the reason or by the message {{msg-mw|Confirmaccount-noreason}}.
+
+This message follows any one of the following messages:
+* {{msg-mw|Confirmaccount-reject}}
+* {{msg-mw|Confirmaccount-held}}',
+	'confirmaccount-noreason' => 'Used if the reason is empty.
+
+This message follows the message {{msg-mw|Confirmaccount-rational}}.
+{{Identical|None}}',
+	'confirmaccount-autorej' => 'Used as comment for the old stale request to explain why it has been rejected automatically.',
 	'confirmaccount-held' => 'Parameters:
 *$1 user name, can be used for GENDER
 *$2 date/time
 *$3 date
 *$4 time',
-	'confirmaccount-ip' => '{{Identical|IP address}}',
-	'confirmaccount-xff' => 'The X-Forwarded-For (XFF) HTTP header field is a de facto standard for identifying the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.',
-	'confirmaccount-agent' => 'The User-Agent HTTP header field',
+	'confirmaccount-create' => 'Used as label for the radiobox.
+{{Identical|Confirmaccount-submit}}',
+	'confirmaccount-deny' => 'Used as label for the radiobox.
+
+"delist" means about "remove from the list".
+{{Identical|Confirmaccount-submit}}',
+	'confirmaccount-hold' => 'Used as label for the radiobox.
+{{Identical|Confirmaccount-submit}}',
+	'confirmaccount-spam' => 'Used as label for the radiobox.
+
+This message means about "Reject as spam (We do not send email to the requester)".
+{{Identical|Confirmaccount-submit}}',
+	'confirmaccount-reason' => 'Used as label for the "Reason" textarea.',
+	'confirmaccount-ip' => 'Used as label for the IP address.
+
+This message is followed by the following messages:
+* {{msg-mw|Word-separator}}
+* the IP address
+* {{msg-mw|Word-separator}}
+* the link which points to [[Special:Block]]
+{{Identical|IP address}}',
+	'confirmaccount-xff' => 'Used as label for the "X-Forwarded-For" address.
+
+The X-Forwarded-For (XFF) HTTP header field is a de facto standard for identifying the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.',
+	'confirmaccount-agent' => 'Used as label for the "User-Agent" HTTP header value.',
 	'confirmaccount-legend' => 'Used as fieldset label in the form.',
-	'confirmaccount-submit' => '{{Identical|Confirm}}',
-	'confirmaccount-acc' => 'Used as success message. Parameters:
-* $1 - username',
+	'confirmaccount-submit' => 'Used as label for Submit button which is used to confirm the validity of the account request.
+{{Identical|Confirm}}',
+	'confirmaccount-needreason' => 'Used as error message.',
+	'confirmaccount-canthold' => 'Used as error message.',
+	'confirmaccount-badaction' => 'Used as error message.
+
+This message should be consistent with the following radio button labels:
+* {{msg-mw|Confirmaccount-create}} - "accept"
+* {{msg-mw|Confirmaccount-deny}} - "reject"
+* {{msg-mw|Confirmaccount-hold}} - "hold"',
+	'confirmaccount-acc' => 'This message means "The account request has been confirmed successfully".
+
+The page title for this message is {{msg-mw|Actioncomplete}}.
+
+Parameters:
+* $1 - username
+
+See also:
+* {{msg-mw|Confirmaccount-rej}}',
+	'confirmaccount-rej' => 'This message means "The account request has been rejected successfully".
+
+The page title for this message is {{msg-mw|Actioncomplete}}.
+
+See also:
+* {{msg-mw|Confirmaccount-acc}}',
 	'confirmaccount-viewing' => 'Used to indicate the user is currently viewing. Parameters:
 * $1 - username',
-	'confirmaccount-welc' => 'In ConfirmAccount extension. A welcome message that is automatically placed on the talk pages of new users.',
+	'confirmaccount-summary' => 'Used as "Edit summary". By the edit, the user page will be created.',
+	'confirmaccount-welc' => 'In ConfirmAccount extension. A welcome message that is automatically placed on the talk pages of new users.
+
+This message is followed by the Signature.
+
+The edit summary for this welcome message is {{msg-mw|Confirmaccount-wsum}}.',
 	'confirmaccount-wsum' => 'In the ConfirmAccount extension. This is an edit summary used when a welcome message is automatically placed on the talk pages for new accounts.
+
+The welcome message body is:
+* {{msg-mw|Confirmaccount-welc}}.
 {{Identical|Welcome}}',
-	'confirmaccount-email-subj' => '{{Identical|SITENAME account request}}',
-	'confirmaccount-email-body' => '{{Identical|Your request for an account ...}}',
-	'confirmaccount-email-body2' => '{{Identical|Your request for an account ...}}',
+	'confirmaccount-email-subj' => 'Used as email subject.
+
+The email body is any one of the following:
+* {{msg-mw|Confirmaccount-email-body}}
+* {{msg-mw|Confirmaccount-email-body2}}
+* {{msg-mw|Confirmaccount-email-body3}}
+* {{msg-mw|Confirmaccount-email-body4}}
+* {{msg-mw|Confirmaccount-email-body5}}
+{{Identical|SITENAME account request}}',
+	'confirmaccount-email-body' => 'Used as email body. Parameters:
+* $1 - username
+* $2 - initial password
+* $3 - reason
+The email subject is {{msg-mw|Confirmaccount-email-subj}}.
+{{Identical|Your request for an account ...}}',
+	'confirmaccount-email-body2' => 'Used as email body. Parameters:
+* $1 - username
+* $2 - initial password
+* $3 - reason
+The email subject is {{msg-mw|Confirmaccount-email-subj}}.
+{{Identical|Your request for an account ...}}',
 	'confirmaccount-email-body3' => 'This message is sent as an email to users when their account request has been denied by an bureaucrat.
 
 Parameters:
-* $1 - the requested account name',
+* $1 - the requested account name
+The email subject is {{msg-mw|Confirmaccount-email-subj}}.',
 	'confirmaccount-email-body4' => 'This message is sent as an email to users when their account request has been denied by an bureaucrat.
 
 Parameters:
 * $1 - the requested account name
-* $2 - a comment written by the bureaucrat',
+* $2 - a comment written by the bureaucrat
+The email subject is {{msg-mw|Confirmaccount-email-subj}}.',
 	'confirmaccount-email-body5' => 'This message is sent as an email to users when their account request has been held by an bureaucrat.
 
 Parameters:
 * $1 - the requested account name
-* $2 - the reason',
+* $2 - the reason
+The email subject is {{msg-mw|Confirmaccount-email-subj}}.',
 );
 
 /** Afrikaans (Afrikaans)
@@ -4088,19 +4273,19 @@ $messages['ja'] = array(
 	'confirmaccount-real-q' => '本名',
 	'confirmaccount-email-q' => 'メールアドレス',
 	'confirmaccount-bio-q' => '経歴',
-	'confirmaccount-showopen' => '未確定の申請',
+	'confirmaccount-showopen' => '受理された申請',
 	'confirmaccount-showrej' => '却下済み申請',
 	'confirmaccount-showheld' => '承認保留中の申請',
 	'confirmaccount-showexp' => '期限切れ申請',
 	'confirmaccount-review' => '承認検討',
 	'confirmaccount-types' => 'アカウント承認待ち行列を選択してください:',
 	'confirmaccount-all' => '(すべての待ち行列)',
-	'confirmaccount-type' => '選択された待ち行列:',
+	'confirmaccount-type' => '待ち行列の種類:',
 	'confirmaccount-type-0' => '著者を希望',
 	'confirmaccount-type-1' => '編集者を希望',
-	'confirmaccount-q-open' => '申請受理',
-	'confirmaccount-q-held' => '承認保留',
-	'confirmaccount-q-rej' => '最近の申請棄却',
+	'confirmaccount-q-open' => '受理された申請',
+	'confirmaccount-q-held' => '承認保留中の申請',
+	'confirmaccount-q-rej' => '最近棄却された申請',
 	'confirmaccount-q-stale' => '期限切れ申請',
 	'confirmaccount-badid' => '指定されたIDに該当する承認待ちの申請はありません。
 おそらく既に処理済みです。',
@@ -4119,7 +4304,7 @@ $messages['ja'] = array(
 	'confirmaccount-attach' => '履歴書/CV:',
 	'confirmaccount-notes' => '特記事項:',
 	'confirmaccount-urls' => 'ウェブサイト一覧:',
-	'confirmaccount-none-p' => '(記述なし)',
+	'confirmaccount-none-p' => '(未入力)',
 	'confirmaccount-confirm' => 'この申請に対する承認、棄却、保留の判断を以下から選択:',
 	'confirmaccount-econf' => '(確認済)',
 	'confirmaccount-withcv' => '(CV を添付)',
