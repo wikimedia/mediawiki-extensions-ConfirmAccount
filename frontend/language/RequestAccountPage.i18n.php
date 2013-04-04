@@ -76,7 +76,10 @@ The email address has been confirmed. You can confirm the request here "$2".',
 You cannot make any more requests.",
 );
 
-/** Message documentation (Message documentation)
+/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
+
+It might be easier to translate it as "translation guidelines" or "translation help".
+{{Identical|Message documentation}})
  * @author Bennylin
  * @author EugeneZelenko
  * @author Jon Harald Søby
