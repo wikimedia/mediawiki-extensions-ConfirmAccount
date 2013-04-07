@@ -141,10 +141,7 @@ $2
 There may be contact lists on site that you can use if you want to know more about user account policy.',
 );
 
-/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
-
-It might be easier to translate it as "translation guidelines" or "translation help".
-{{Identical|Message documentation}})
+/** Message documentation (Message documentation)
  * @author Bennylin
  * @author EugeneZelenko
  * @author Jon Harald Søby
@@ -8872,6 +8869,7 @@ $2
  * @author Liangent
  * @author Mark85296341
  * @author Shirayuki
+ * @author Simon Shek
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
@@ -8921,6 +8919,7 @@ $messages['zh-hant'] = array(
 	'confirmaccount-leg-areas' => '感興趣的主要領域',
 	'confirmaccount-leg-person' => '個人資訊',
 	'confirmaccount-leg-other' => '其他資訊',
+	'confirmaccount-leg-ip' => 'IP地址資料',
 	'confirmaccount-name' => '使用者名稱',
 	'confirmaccount-real' => '名稱：',
 	'confirmaccount-email' => '電郵',
@@ -8934,11 +8933,11 @@ $messages['zh-hant'] = array(
 	'confirmaccount-none-p' => '（未提供）',
 	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。', # Fuzzy
 	'confirmaccount-econf' => '（已批准）',
-	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]拒絕）', # Fuzzy
+	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]{{GENDER:$1|拒絕}}）', # Fuzzy
 	'confirmaccount-rational' => '理由給予申請人：',
 	'confirmaccount-noreason' => '（無）',
 	'confirmaccount-autorej' => '（此請求已因為無活動而自動被回絕）',
-	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]標記為"掛起")', # Fuzzy
+	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]{{GENDER:$1|標記}}為"掛起")', # Fuzzy
 	'confirmaccount-create' => '接受 （建立帳號）',
 	'confirmaccount-deny' => '拒絕 （反列示）',
 	'confirmaccount-hold' => '掛起',
@@ -8953,7 +8952,7 @@ $messages['zh-hant'] = array(
 	'confirmaccount-canthold' => '該請求已被掛起，或已被刪除。',
 	'confirmaccount-acc' => '帳戶請求已經成功確認；已經建立一個新的使用者帳號[[User:$1]]。',
 	'confirmaccount-rej' => '帳戶請求已經成功拒絕。',
-	'confirmaccount-viewing' => '（目前正由[[User:$1|$1]]瀏覽）', # Fuzzy
+	'confirmaccount-viewing' => '（目前正由[[User:$1|$1]]瀏覽）',
 	'confirmaccount-summary' => '新用戶創建用戶頁',
 	'confirmaccount-welc' => "'''歡迎來到''{{SITENAME}}''！'''
 我們希望您會作出更多更好的貢獻。
