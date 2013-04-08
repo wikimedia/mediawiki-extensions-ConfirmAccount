@@ -3223,7 +3223,7 @@ Zorg ervoor dat u hier gegevens noteert die gepubliceerd mogen worden.",
 	'requestaccount-attach' => 'CV (optioneel):',
 	'requestaccount-notes' => 'Opmerkingen:',
 	'requestaccount-urls' => 'Lijst van websites, als van toepassing (iedere site op een aparte regel):',
-	'requestaccount-agree' => 'U moet aangegeven dat uw naam juist is en dat u akkoord gaat met de Gebruiksvoorwaarden.',
+	'requestaccount-agree' => 'U moet bevestigen dat uw naam juist is en dat u akkoord gaat met de Gebruiksvoorwaarden.',
 	'requestaccount-inuse' => 'De gebruiker is al bekend in een aanvraagprocedure.',
 	'requestaccount-tooshort' => 'Uw biografie moet ten minste {{PLURAL:$1|één woord|$1 woorden}} bevatten.',
 	'requestaccount-emaildup' => 'Een andere openstaande gebruikersaanvraag gebruikt hetzelfde e-mailadres.',
@@ -3273,7 +3273,7 @@ Je kunt contactgegevens zoals een telefoonnummer opgeven om te helpen bij het va
 	'requestaccount-bio-text' => 'Probeer je belangrijkste gegevens op te nemen.',
 	'requestaccount-bio-text-i' => "'''Deze tekst wordt gebruikt voor je gebruikerspagina.'''
 Zorg ervoor dat je hier gegevens noteert die gepubliceerd mogen worden.",
-	'requestaccount-agree' => 'Je moet aangegeven dat je naam juist is en dat je akkoord gaat met de Gebruiksvoorwaarden.',
+	'requestaccount-agree' => 'Je moet bevestigen dat je naam juist is en dat je akkoord gaat met de Gebruiksvoorwaarden.',
 	'requestaccount-tooshort' => 'Je biografie moet ten minste {{PLURAL:$1|één woord|$1 woorden}} bevatten.',
 	'requestaccount-resub' => 'Je CV-bestand moet opnieuw geselecteerd worden om veiligheidsredenen.
 Laat het veld leeg als je geen bestand meer wilt bijvoegen.',
