@@ -29,7 +29,7 @@ $specialPageAliases['arz'] = array(
 	'UserCredentials' => array( 'شهادات_اليوزر' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'RequestAccount' => array( 'একাউণ্ট_অনুৰোধ' ),
 	'ConfirmAccounts' => array( 'একাউণ্ট_নিশ্চিত_কৰক' ),
