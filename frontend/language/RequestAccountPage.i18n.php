@@ -899,9 +899,11 @@ Du kan ikke foretage flere anmodninger.',
 
 /** German (Deutsch)
  * @author Als-Holder
+ * @author Geitost
  * @author Kghbln
  * @author Leithian
  * @author MF-Warburg
+ * @author Metalhead64
  * @author Pill
  * @author Purodha
  * @author Raimond Spekking
@@ -925,7 +927,7 @@ Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kan
 	'requestaccount-leg-other' => 'Weitere Informationen',
 	'requestaccount-leg-tos' => 'Nutzungsbedingungen',
 	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.
-Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungs-Link klickst.
+Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungslink klickst.
 Sobald dein Konto angelegt wurde, wird dir dein Passwort per E-Mail zugeschickt.',
 	'requestaccount-areas-text' => 'Wähle die Themengebiete aus, in denen du das meiste Fachwissen hast oder wo du am meisten involviert sein wirst.',
 	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag verwendet.
@@ -957,7 +959,7 @@ Ich bestätige, dass der Name, den ich unter „Bürgerlicher Name“ angegeben 
 Eine Bestätigungs-E-Mail wurde an deine E-Mail-Adresse gesendet.',
 	'request-account-econf' => 'Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in deinem Antrag auf ein Benutzerkonto geführt.',
 	'requestaccount-email-subj' => '[{{SITENAME}}] Bestätigung der E-Mail-Adresse',
-	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise du, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit deiner E-Mail-Adresse beantragt.
+	'requestaccount-email-body' => 'Jemand, möglicherweise du mit der IP-Adresse $1, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit deiner E-Mail-Adresse beantragt.
 
 Um zu bestätigen, dass wirklich du dieses Konto bei {{SITENAME}} beantragt hast, öffne bitte folgenden Link in deinem Browser:
 
@@ -967,14 +969,37 @@ Wenn das Benutzerkonto erstellt wurde, bekommst du eine weitere E-Mail mit dem P
 
 Wenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!
 
-Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
+Zeitpunkt des Auslaufs des Bestätigungscodes: $4.',
 	'requestaccount-email-subj-admin' => '[{{SITENAME}}] Antrag auf Benutzerkonto',
 	'requestaccount-email-body-admin' => '„$1“ hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$2“.',
 	'acct_request_throttle_hit' => 'Du hast bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, du kannst momentan keine weiteren beantragen.',
 );
 
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author Geitost
+ */
+$messages['de-ch'] = array(
+	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars ein Bestätigungsmail geschickt.
+Bitte reagiere darauf, indem du auf den in diesem Mail enthaltenen Bestätigungslink klickst.
+Sobald dein Konto angelegt wurde, wird dir dein Passwort per E-Mail zugeschickt.',
+	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.
+Ein Bestätigungs-E-Mail wurde an deine E-Mail-Adresse gesendet.',
+	'requestaccount-email-body' => 'Jemand, möglicherweise du mit der IP-Adresse $1, hat bei {{SITENAME}} das Benutzerkonto «$2» mit deiner E-Mail-Adresse beantragt.
+
+Um zu bestätigen, dass wirklich du dieses Konto bei {{SITENAME}} beantragt hast, öffne bitte folgenden Link in deinem Browser:
+
+$3
+
+Wenn das Benutzerkonto erstellt wurde, bekommst du ein weiteres E-Mail mit dem Passwort.
+
+Wenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!
+
+Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.', # Fuzzy
+);
+
 /** German (formal address) (Deutsch (Sie-Form)‎)
+ * @author Geitost
  * @author Imre
  * @author Kghbln
  * @author The Evil IP address
@@ -1003,7 +1028,7 @@ Lassen Sie das Feld leer, wenn Sie keinen Lebenslauf mehr anfügen möchten.',
 	'requestaccount-sent' => 'Ihr Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.
 Eine Bestätigungs-E-Mail wurde an Ihre E-Mail-Adresse gesendet.',
 	'request-account-econf' => 'Ihre E-Mail-Adresse wurde bestätigt und wird nun als solche in Ihrem Antrag auf ein Benutzerkonto geführt.',
-	'requestaccount-email-body' => 'Jemand, mit der IP Adresse $1, möglicherweise Sie, haben bei {{SITENAME}} das Benutzerkonto „$2“ mit Ihrer E-Mail-Adresse beantragt.
+	'requestaccount-email-body' => 'Jemand, möglicherweise Sie mit der IP-Adresse $1, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit Ihrer E-Mail-Adresse beantragt.
 
 Um zu bestätigen, dass wirklich Sie dieses Konto bei {{SITENAME}} beantragt haben, öffnen Sie bitte folgenden Link in Ihrem Browser:
 
@@ -1013,7 +1038,7 @@ Wenn das Benutzerkonto erstellt wurde, bekommen Sie eine weitere E-Mail mit dem 
 
 Wenn Sie das Benutzerkonto *nicht* beantragt haben, öffnen Sie den Link bitte nicht!
 
-Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.',
+Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.', # Fuzzy
 	'requestaccount-email-body-admin' => '„$1“ hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
 Die E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen: „$2“.',
 	'acct_request_throttle_hit' => 'Sie haben bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, Sie können momentan keine weiteren beantragen.',

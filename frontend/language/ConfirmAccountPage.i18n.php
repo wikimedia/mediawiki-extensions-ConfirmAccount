@@ -1923,6 +1923,14 @@ $2
 Möglicherweise gibt es auf der Seite Kontaktadressen, an die du dich wenden kannst, wenn du mehr über die Anforderungen wissen möchtest.',
 );
 
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author Geitost
+ */
+$messages['de-ch'] = array(
+	'confirmaccount-spam' => 'Spam (kein E-Mail verschicken)',
+	'confirmaccount-reason' => 'Begründung (wird in das E-Mail an den Antragsteller eingefügt):',
+);
+
 /** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Imre
  * @author Kghbln

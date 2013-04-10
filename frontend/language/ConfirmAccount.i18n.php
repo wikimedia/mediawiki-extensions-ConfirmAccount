@@ -155,6 +155,7 @@ $messages['da'] = array(
  * @author Kghbln
  * @author Leithian
  * @author MF-Warburg
+ * @author Metalhead64
  * @author Pill
  * @author Purodha
  * @author Raimond Spekking
@@ -164,7 +165,7 @@ $messages['da'] = array(
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag wartet]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge warten]]}} auf Bearbeitung. '''Bitte kümmere dich darum.'''",
+	'confirmaccount-newrequests' => "[[Special:ConfirmAccounts|{{PLURAL:$1|Ein offener, per E-Mail bestätigter Benutzerkontenantrag wartet|$1 offene, per E-Mail bestätigte Benutzerkontenanträge warten}}]] auf Bearbeitung. '''Bitte kümmere dich darum.'''",
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
 	'right-confirmaccount' => 'Die [[Special:ConfirmAccounts|Warteschlange der angefragten Benutzerkonten]] sehen',
 	'right-requestips' => 'Die IP-Adresse des Anfragers für ein Benutzerkonto sehen',
@@ -172,13 +173,14 @@ $messages['de'] = array(
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
+ * @author Geitost
  * @author Imre
  * @author Kghbln
  * @author The Evil IP address
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, E-Mail bestätigter Benutzerkontenantrag wartet]]|[[Special:ConfirmAccounts|offene, E-Mail bestätigte Benutzerkontenanträge warten]]}} auf Bearbeitung. '''Bitte kümmern Sie sich darum.'''",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|offener, per E-Mail bestätigter Benutzerkontenantrag wartet]]|[[Special:ConfirmAccounts|offene, per E-Mail bestätigte Benutzerkontenanträge warten]]}} auf Bearbeitung. '''Bitte kümmern Sie sich darum.'''", # Fuzzy
 	'requestaccount-loginnotice' => "Um ein neues Benutzerkonto zu erhalten, müssen Sie es '''[[Special:RequestAccount|beantragen]]'''.",
 );
 
