@@ -3011,7 +3011,7 @@ creouse a nova conta de usuario "[[User:$1|$1]]".',
 	'confirmaccount-welc' => "'''Reciba a benvida a ''{{SITENAME}}''!''' Esperamos que contribúa moito e ben.
 Quizais queira ler as [[{{MediaWiki:Helppage}}|páxinas de axuda]]. De novo, reciba a nosa benvida e divírtase!",
 	'confirmaccount-wsum' => 'Reciba a nosa benvida!',
-	'confirmaccount-email-subj' => 'solicitude de conta en {{SITENAME}}',
+	'confirmaccount-email-subj' => 'Solicitude de conta en {{SITENAME}}',
 	'confirmaccount-email-body' => 'Aprobouse a súa solicitude de conta en {{SITENAME}}.
 
 Nome da conta: $1

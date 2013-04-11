@@ -1931,6 +1931,7 @@ $messages['roa-tara'] = array(
 	'usercredentials' => "Credenziale de l'utende",
 	'usercredentials-user' => "Nome de l'utende:",
 	'usercredentials-leg-user' => "Cunde de l'utende",
+	'usercredentials-leg-areas' => 'Arèe prengepàle de inderesse',
 	'usercredentials-leg-person' => "'Mbormaziune personale",
 	'usercredentials-leg-other' => "Otre 'mbormaziune",
 	'usercredentials-leg-ip' => 'Indirizze IP',
