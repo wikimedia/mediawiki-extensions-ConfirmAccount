@@ -914,7 +914,7 @@ Du kan ikke foretage flere anmodninger.',
  */
 $messages['de'] = array(
 	'requestaccount' => 'Benutzerkonto beantragen',
-	'requestaccount-text' => "'''Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen'''. 
+	'requestaccount-text' => "'''Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen.'''
 
 Bitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor du ein Benutzerkonto beantragst.
 
@@ -996,6 +996,8 @@ Wenn das Benutzerkonto erstellt wurde, bekommst du ein weiteres E-Mail mit dem P
 Wenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!
 
 Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.', # Fuzzy
+	'requestaccount-email-body-admin' => '«$1» hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
+Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: «$2».',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -1006,7 +1008,7 @@ Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.', # Fuzzy
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'requestaccount-text' => "'''Füllen Sie das folgende Formular aus und schicken Sie es ab, um ein Benutzerkonto zu beantragen'''.  
+	'requestaccount-text' => "'''Füllen Sie das folgende Formular aus und schicken es ab, um ein Benutzerkonto zu beantragen.'''
 
 Bitte lesen Sie zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor Sie ein Benutzerkonto beantragen.
 

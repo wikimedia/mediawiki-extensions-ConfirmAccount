@@ -1929,7 +1929,9 @@ Verificați ca numele să fie scris corect.',
  */
 $messages['roa-tara'] = array(
 	'usercredentials' => "Credenziale de l'utende",
+	'usercredentials-leg' => "Mappature confermate de le credenziale pe 'n'utende",
 	'usercredentials-user' => "Nome de l'utende:",
+	'usercredentials-text' => "Aqquà sotte stonne le credenziale validate de 'nu cunde utende scacchiate.",
 	'usercredentials-leg-user' => "Cunde de l'utende",
 	'usercredentials-leg-areas' => 'Arèe prengepàle de inderesse',
 	'usercredentials-leg-person' => "'Mbormaziune personale",
@@ -1942,7 +1944,11 @@ $messages['roa-tara'] = array(
 	'usercredentials-notes' => 'Note aggiundive:',
 	'usercredentials-urls' => 'Elenghe de le site web:',
 	'usercredentials-ip' => 'Inderizze IP origgenarie:',
+	'usercredentials-xff' => 'X-Forwarded_For origgenale:',
+	'usercredentials-agent' => 'User-Agent Origgenale:',
 	'usercredentials-member' => 'Deritte:',
+	'usercredentials-badid' => "Nisciune credenziale acchiate pe stu utende.
+Verifiche ca 'u nome ste scritte giuste.",
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
