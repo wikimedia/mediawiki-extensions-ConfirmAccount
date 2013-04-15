@@ -4660,7 +4660,7 @@ $messages['krj'] = array(
  */
 $messages['ksh'] = array(
 	'confirmaccounts' => 'Aanfroore noh Metmaacher beschtähtejje',
-	'confirmedit-desc' => 'Määt et müjjelesch, dat {{int:group-bureaucrat}} de neu Aanmeldunge beshtätejje.',
+	'confirmedit-desc' => 'Määd et möjjelesch, dat de {{int:group-bureaucrat}} de neuje Aanmeldonge beschtääteje.',
 	'confirmaccount-maintext' => "'''Die Sigg hee es för unjedonn Aanfroore noh Zohjäng als Metmaacher {{GRAMMAR:Genitiv vun|{{SITENAME}}}} ze beärbeide.'''
 
 Jede Schlang met Aanfroore es ongerdeijlt en drei eije Schlange met dä Zoote: Unjedonn — Zeröckjeschtallt weil mer noch op Antwoote am waade sin — un köözlesch eets afjelehnt.
