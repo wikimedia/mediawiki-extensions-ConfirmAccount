@@ -3205,7 +3205,7 @@ Villicht git s uf dr Syte Kontaktadrässe, wu Du Di metsch hiiwände, wänn Du m
  */
 $messages['gu'] = array(
 	'confirmaccount-name' => 'સભ્ય નામ:',
-	'confirmaccount-summary' => 'નવા સભ્યનાં જીવન વુત્તાંત વાળું સભ્યનું પાનું બનાવી રહ્યા છો', # Fuzzy
+	'confirmaccount-summary' => 'નવા સભ્ય માટે સભ્ય પાનું બનાવી રહ્યા છો.',
 	'confirmaccount-wsum' => 'સુસ્વાગતમ્',
 );
 
