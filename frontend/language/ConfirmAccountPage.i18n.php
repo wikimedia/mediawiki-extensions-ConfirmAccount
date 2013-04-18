@@ -1498,6 +1498,7 @@ Da bi ste se prijaviti, molimo idite na {{fullurl:Special:UserLogin}}.',
  * @author Arnaugir
  * @author Loupeter
  * @author Paucabot
+ * @author Pitort
  * @author SMP
  * @author Solde
  */
@@ -1537,6 +1538,7 @@ $messages['ca'] = array(
 	'confirmaccount-none-p' => '(no proporcionat)',
 	'confirmaccount-econf' => '(confirmat)',
 	'confirmaccount-withcv' => '(CV adjunt)',
+	'confirmaccount-reject' => '({{GENDER:$1|refusat}} per [[User:$1|$1]] el $3 a $4)',
 	'confirmaccount-noreason' => '(cap)',
 	'confirmaccount-hold' => 'En espera',
 	'confirmaccount-spam' => 'Spam (no enviar correu electrònic)',
