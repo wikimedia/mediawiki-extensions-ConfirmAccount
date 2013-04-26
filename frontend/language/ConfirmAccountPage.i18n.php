@@ -8877,6 +8877,7 @@ $2
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
+ * @author Littletung
  * @author Mark85296341
  * @author Shirayuki
  * @author Simon Shek
@@ -8943,11 +8944,11 @@ $messages['zh-hant'] = array(
 	'confirmaccount-none-p' => '（未提供）',
 	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。', # Fuzzy
 	'confirmaccount-econf' => '（已批准）',
-	'confirmaccount-reject' => '（於$2被[[User:$1|$1]]{{GENDER:$1|拒絕}}）', # Fuzzy
+	'confirmaccount-reject' => '（於$3 $4 被[[User:$1|$1]]{{GENDER:$1|拒絕}}）',
 	'confirmaccount-rational' => '理由給予申請人：',
 	'confirmaccount-noreason' => '（無）',
 	'confirmaccount-autorej' => '（此請求已因為無活動而自動被回絕）',
-	'confirmaccount-held' => '(在$2 被[[User:$1|$1]]{{GENDER:$1|標記}}為"掛起")', # Fuzzy
+	'confirmaccount-held' => '(在$3 $4 被[[User:$1|$1]]{{GENDER:$1|標記}}為"掛起")',
 	'confirmaccount-create' => '接受 （建立帳號）',
 	'confirmaccount-deny' => '拒絕 （反列示）',
 	'confirmaccount-hold' => '掛起',
