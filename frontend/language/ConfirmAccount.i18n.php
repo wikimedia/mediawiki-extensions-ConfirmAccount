@@ -386,7 +386,7 @@ $messages['ia'] = array(
  * @author Rex
  */
 $messages['id'] = array(
-	'confirmaccount-newrequests' => "Terdapat '''$1''' antrean [[Special:ConfirmAccounts|{{PLURAL:$1|permintaan|permintaan}} akun]] yang surelnya telah dikonfirmasi.", # Fuzzy
+	'confirmaccount-newrequests' => "'''$1''' surel terbuka konfirmasi [[Special:ConfirmAccounts|{{PLURAL:$1|permintaan akun}} tertunda]]. '''Perhatian Anda dibutuhkan!'''",
 	'requestaccount-loginnotice' => "Untuk mendapatkan sebuah akun pengguna, Anda harus '''[[Special:RequestAccount|mengajukannya]]'''.",
 	'right-confirmaccount' => 'Lihat [[Special:ConfirmAccounts|antrean peminta akun]]',
 	'right-requestips' => 'Lihat Alamat IP pemohon selama proses permohonan akun',
@@ -707,6 +707,7 @@ $messages['pt-br'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'requestaccount-loginnotice' => "Pe avè 'nu cunde utende, tu à fà '''[[Special:RequestAccount|'na richieste]]'''.",
 	'right-lookupcredentials' => "Vide le [[Special:UserCredentials|credenziale de l'utende]]",
 );
 
