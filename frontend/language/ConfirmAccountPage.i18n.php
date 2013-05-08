@@ -5063,6 +5063,13 @@ $messages['mhr'] = array(
 	'confirmaccount-email' => 'Электрон почто:',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'confirmaccount-noreason' => '(indak ado)',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
