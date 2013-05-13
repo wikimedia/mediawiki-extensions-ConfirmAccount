@@ -709,6 +709,7 @@ $messages['pt-br'] = array(
 $messages['roa-tara'] = array(
 	'requestaccount-loginnotice' => "Pe avè 'nu cunde utende, tu à fà '''[[Special:RequestAccount|'na richieste]]'''.",
 	'right-confirmaccount' => "'Ndruche 'a [[Special:ConfirmAccounts|code cu le richieste de cunde]]",
+	'right-requestips' => "'Ndruche l'indirizze IP de le cercature mendre ca ste processe le richieste de cunde",
 	'right-lookupcredentials' => "Vide le [[Special:UserCredentials|credenziale de l'utende]]",
 );
 
