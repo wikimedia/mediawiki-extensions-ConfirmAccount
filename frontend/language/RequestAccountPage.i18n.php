@@ -396,6 +396,43 @@ $3
 لا يمكنك عمل المزيد من الطلبات.',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'requestaccount' => 'Solicitar una cuenta',
+	'requestaccount-text' => "'''Complete y unvie'l siguiente formulariu pa solicitar una cuenta d'usuariu'''.
+
+Antes de solicitar una cuenta, asegúrese de lleer primero les [[{{MediaWiki:Requestaccount-page}}|condiciones del serviciu]].
+
+Cuando s'apruebe la cuenta, unviaráse un mensaxe de notificación per corréu electrónicu y la cuenta podrá usase [[Special:UserLogin|aniciando sesión]].",
+	'requestaccount-page' => '{{ns:project}}:Condiciones de serviciu',
+	'requestaccount-dup' => "'''Nota: Yá anició sesión con una cuenta rexistrada.'''",
+	'requestaccount-leg-user' => "Cuenta d'usuariu",
+	'requestaccount-leg-areas' => "Principales árees d'interés",
+	'requestaccount-leg-person' => 'Información personal',
+	'requestaccount-leg-other' => 'Otra información',
+	'requestaccount-leg-tos' => 'Condiciones de serviciu',
+	'requestaccount-acc-text' => "Cuando s'unvie esta solicitú, unviaráse al so corréu un mensaxe de confirmación.
+Respuenda calcando nel enllaz de confirmación proporcionáu nel corréu.
+Amás, la contraseña unviaráse per corréu electrónicu cuando se cree la cuenta.",
+	'requestaccount-areas-text' => 'Seleicione más abaxo les árees nes que tien esperiencia formal o nes que mas quiera trabayar de vezu.',
+	'requestaccount-ext-text' => "La información siguiente caltiense privada y namái usaráse pa esta solicitú.
+Seique quiera proporcionar contautos como un númberu de teléfonu p'ayudar na confirmación de la identidá.",
+	'requestaccount-bio-text' => 'Intente incluir dalgunes acreditaciones relevantes na so biografía más abaxo.',
+	'requestaccount-bio-text-i' => "'''La so biografía quedará configurada como'l conteníu inicial de la so páxina d'usuariu.'''
+Asegúrese de que nun tien problema en publicar esa información.",
+	'requestaccount-real' => 'Nome real:',
+	'requestaccount-same' => "(el mesmu que'l nome real d'abaxo)",
+	'requestaccount-email' => 'Direición de corréu electrónicu:',
+	'requestaccount-reqtype' => 'Cargu:',
+	'requestaccount-level-0' => 'autor',
+	'requestaccount-level-1' => 'editor',
+	'requestaccount-bio' => 'Biografía personal (sólo testu simple):',
+	'requestaccount-attach' => 'Currículu (opcional):',
+	'requestaccount-notes' => 'Otres notes:',
+);
+
 /** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
