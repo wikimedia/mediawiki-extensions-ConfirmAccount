@@ -419,6 +419,11 @@ $specialPageAliases['vi'] = array(
 	'ConfirmAccounts' => array( 'Xác_nhận_tài_khoản' ),
 );
 
+/** Yiddish (ייִדיש) */
+$specialPageAliases['yi'] = array(
+	'RequestAccount' => array( 'בעטן_קאנטע' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'RequestAccount' => array( '申请帐户' ),
