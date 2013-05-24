@@ -2230,6 +2230,7 @@ Anda tidak dapat lagi melakukan permintaan.',
 
 /** Icelandic (íslenska)
  * @author S.Örvarr.S
+ * @author Snævar
  * @author Ævar Arnfjörð Bjarmason
  */
 $messages['is'] = array(
@@ -2244,7 +2245,7 @@ $messages['is'] = array(
 	'requestaccount-reqtype' => 'Staða:',
 	'requestaccount-level-0' => 'höfundur',
 	'requestaccount-level-1' => 'ritstjóri',
-	'requestaccount-bio' => 'Sjálfsævisaga:', # Fuzzy
+	'requestaccount-bio' => 'Sjálfsævisaga:',
 	'requestaccount-attach' => 'Ferilskrá (valfrjálst):',
 	'requestaccount-notes' => 'Viðbótarskýring:',
 	'requestaccount-urls' => 'Listi yfir vefsíður, ef einhverjar (aðskildu með línum):',

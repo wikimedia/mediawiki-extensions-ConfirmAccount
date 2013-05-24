@@ -4062,6 +4062,7 @@ $messages['io'] = array(
 
 /** Icelandic (íslenska)
  * @author S.Örvarr.S
+ * @author Snævar
  * @author Ævar Arnfjörð Bjarmason
  * @author පසිඳු කාවින්ද
  */
@@ -4086,7 +4087,7 @@ $messages['is'] = array(
 	'confirmaccount-notes' => 'Viðbótarskýring:',
 	'confirmaccount-urls' => 'Listi yfir vefsíður:',
 	'confirmaccount-none-p' => '(ekki fáanlegt)',
-	'confirmaccount-confirm' => 'Notaðu valmöguleikana hér að neðan til að samþykkja, neita eða setja beiðni í bið:', # Fuzzy
+	'confirmaccount-confirm' => 'Notaðu valmöguleikana hér að neðan til að samþykkja, neita eða setja beiðni í bið:',
 	'confirmaccount-econf' => '(staðfest)',
 	'confirmaccount-noreason' => '(engin)',
 	'confirmaccount-create' => 'Samþykkja (búa til aðgang)',
