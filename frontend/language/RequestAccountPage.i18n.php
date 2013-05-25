@@ -431,6 +431,14 @@ Asegúrese de que nun tien problema en publicar esa información.",
 	'requestaccount-bio' => 'Biografía personal (sólo testu simple):',
 	'requestaccount-attach' => 'Currículu (opcional):',
 	'requestaccount-notes' => 'Otres notes:',
+	'requestaccount-urls' => 'Llista de sitios web, si los hai (unu por llinia):',
+	'requestaccount-agree' => "Tien de certificar que'l nome real ye correutu y que ta d'alcuerdu coles nueses condiciones de serviciu.",
+	'requestaccount-inuse' => "El nome d'usuariu yá ta usandose por una solicitú de cuenta pendiente.",
+	'requestaccount-tooshort' => 'La biografía debe tener polo menos {{PLURAL:$1|una pallabra|$1 pallabres}}.',
+	'requestaccount-emaildup' => 'Otra solicitú de cuenta pendiente usa la mesma direición de corréu electrónicu.',
+	'requestaccount-exts' => 'El tipu de ficheru axuntu nun ta permitíu.',
+	'requestaccount-resub' => "Por motivos de seguridá, tien de volver a seleicionar el ficheru de currículu.
+Dexe'l campu en blanco si yá nun quier incluilu.",
 );
 
 /** Azerbaijani (azərbaycanca)
