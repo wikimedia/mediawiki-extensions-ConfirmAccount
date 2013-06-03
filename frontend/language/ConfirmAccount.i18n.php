@@ -21,10 +21,7 @@ $messages['en'] = array(
 	'right-lookupcredentials' => 'View [[Special:UserCredentials|user credentials]]',
 );
 
-/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
-
-It might be easier to translate it as "translation guidelines" or "translation help".
-{{Identical|Message documentation}})
+/** Message documentation (Message documentation)
  * @author Bennylin
  * @author EugeneZelenko
  * @author Jon Harald Søby
@@ -579,7 +576,7 @@ $messages['mt'] = array(
 	'right-lookupcredentials' => 'Jara l-[[Special:UserCredentials|kredenzjali tal-utent]]',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Event
  * @author Harald Khan
  * @author Laaknor
@@ -614,7 +611,7 @@ $messages['nl-informal'] = array(
 	'requestaccount-loginnotice' => "Om een gebruiker te krijgen, moet je '''[[Special:RequestAccount|een aanvraag doen]]'''.",
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby

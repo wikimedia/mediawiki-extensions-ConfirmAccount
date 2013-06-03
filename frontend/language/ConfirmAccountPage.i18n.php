@@ -5692,7 +5692,7 @@ $messages['nah'] = array(
 	'confirmaccount-wsum' => '¡Ximopanōlti!',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Event
  * @author Harald Khan
  * @author Laaknor
@@ -6032,7 +6032,7 @@ $2
 Op de site staan mogelijk lijsten met contactgegevens als je meer wilt weten over het gebruikersbeleid.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -6251,7 +6251,7 @@ $2
 Aquò permet d’èsser sus la tièra dels contactes del site, se ne desiratz saber mai sus las règlas que concernisson los comptes.',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
  * @author Odisha1
  */

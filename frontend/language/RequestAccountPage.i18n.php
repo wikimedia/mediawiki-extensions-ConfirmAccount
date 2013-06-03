@@ -3207,7 +3207,7 @@ $messages['nah'] = array(
 	'requestaccount-level-0' => 'chīhualōni',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Event
  * @author Harald Khan
  * @author Laaknor
@@ -3390,7 +3390,7 @@ Je kunt de aanvraag hier "$2" bevestigen.',
 Je kunt geen nieuwe aanvragen meer uitbrengen.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -3525,7 +3525,7 @@ L'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant
 Podètz pas far mai de demanda.',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
  */
 $messages['or'] = array(
@@ -3795,6 +3795,7 @@ Não pode fazer mais pedidos.',
  * @author Helder.wiki
  * @author Heldergeovane
  * @author Jaideraf
+ * @author Luckas
  * @author Luckas Blade
  */
 $messages['pt-br'] = array(

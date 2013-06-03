@@ -1576,7 +1576,7 @@ $messages['nah'] = array(
 	'usercredentials-ip' => 'Achto IP:',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Event
  * @author Harald Khan
  * @author Laaknor
@@ -1659,7 +1659,7 @@ $messages['nl'] = array(
 Kijk na of de naam correct gespeld is.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -1717,7 +1717,7 @@ $messages['oc'] = array(
 	'usercredentials-badid' => 'Cap de referéncia pas trobada per aqueste utilizaire. Verificatz que lo nom siá ben redigit.',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
  * @author Odisha1
  */
