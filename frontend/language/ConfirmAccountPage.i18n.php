@@ -1552,6 +1552,13 @@ $messages['ca'] = array(
 	'confirmaccount-email-subj' => 'Sol·licitud de compte de {{SITENAME}}',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'confirmaccount-submit' => 'Бакъдан',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
@@ -2315,6 +2322,7 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Beta16
  * @author BicScope
  * @author Crazymadlover
  * @author Fitoschido
@@ -2402,7 +2410,7 @@ Puede que ya haya sido gestionada.',
 	'confirmaccount-deny' => 'Rechazar (eliminar de lista)',
 	'confirmaccount-hold' => 'Mantener',
 	'confirmaccount-spam' => 'Spam (no enviar correo electrónico)',
-	'confirmaccount-reason' => 'Comentario (será incluido en el correo eectrónico):',
+	'confirmaccount-reason' => 'Comentario (será incluido en el correo electrónico):',
 	'confirmaccount-ip' => 'Dirección IP:',
 	'confirmaccount-xff' => 'X-Reenviado-Para:',
 	'confirmaccount-agent' => 'Usuario-Agente:',
@@ -8884,6 +8892,7 @@ $2
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
  * @author Liangent
  * @author Littletung
  * @author Mark85296341
@@ -8950,8 +8959,9 @@ $messages['zh-hant'] = array(
 	'confirmaccount-notes' => '注釋：',
 	'confirmaccount-urls' => '網站列表：',
 	'confirmaccount-none-p' => '（未提供）',
-	'confirmaccount-confirm' => '用以下的按鈕去批准或拒絕這個請求。', # Fuzzy
+	'confirmaccount-confirm' => '使用以下選項以批准、拒絕或擱置此請求：',
 	'confirmaccount-econf' => '（已批准）',
+	'confirmaccount-withcv' => '（附簡歷）',
 	'confirmaccount-reject' => '（於$3 $4 被[[User:$1|$1]]{{GENDER:$1|拒絕}}）',
 	'confirmaccount-rational' => '理由給予申請人：',
 	'confirmaccount-noreason' => '（無）',
@@ -8969,6 +8979,7 @@ $messages['zh-hant'] = array(
 	'confirmaccount-submit' => '確認',
 	'confirmaccount-needreason' => '您必須在下方的評論欄闡述您的理由。',
 	'confirmaccount-canthold' => '該請求已被掛起，或已被刪除。',
+	'confirmaccount-badaction' => '必需指定有效操作（接受，拒绝，搁置）才可繼續。',
 	'confirmaccount-acc' => '帳戶請求已經成功確認；已經建立一個新的使用者帳號[[User:$1]]。',
 	'confirmaccount-rej' => '帳戶請求已經成功拒絕。',
 	'confirmaccount-viewing' => '（目前正由[[User:$1|$1]]瀏覽）',

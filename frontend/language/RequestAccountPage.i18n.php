@@ -439,6 +439,27 @@ Asegúrese de que nun tien problema en publicar esa información.",
 	'requestaccount-exts' => 'El tipu de ficheru axuntu nun ta permitíu.',
 	'requestaccount-resub' => "Por motivos de seguridá, tien de volver a seleicionar el ficheru de currículu.
 Dexe'l campu en blanco si yá nun quier incluilu.",
+	'requestaccount-tos' => 'Lleí y aceuto les [[{{MediaWiki:Requestaccount-page}}|condiciones de serviciu]] de {{SITENAME}}.
+El nome qu\'especifiqué como "Nome real" ye daveres el mio nome real.',
+	'requestaccount-submit' => 'Solicitar una cuenta',
+	'requestaccount-sent' => 'La solicitú de cuenta unvióse correutamente, y agora ta pendiente de revisión.
+	Unvióse un corréu electrónicu de confirmación a la so direición de corréu electrónicu.',
+	'request-account-econf' => 'Confirmóse la so direición de corréu electrónicu y apaecerá como tal na so solicitú de cuenta.',
+	'requestaccount-email-subj' => 'Confirmación de la direición de corréu de {{SITENAME}}',
+	'requestaccount-email-body' => 'Dalguién, probablemente vusté dende la direición IP $1, solicitó una cuenta "$2" con esta direición de corréu electrónicu en {{SITENAME}}.
+
+Pa confirmar qu\'esta cuenta ye daveres suya en {{SITENAME}}, abra esti enllaz nel so navegador:
+
+$3
+
+Se se crea la cuenta, sólo vusté recibirá la contraseña.
+Si esta persona *nun* ye vusté, nun siga l\'enllaz.
+Esti códigu de confirmación caducará el $4.',
+	'requestaccount-email-subj-admin' => 'Solicitú de cuenta en {{SITENAME}}',
+	'requestaccount-email-body-admin' => '"$1" solicitó una cuenta y ta esperando confirmación.
+Confirmóse la direición de corréu electrónicu. Pue confirmar la solicitú equí "$2".',
+	'acct_request_throttle_hit' => 'Sentímoslo, yá solicitó {{PLURAL:$1|una cuenta|$1 cuentes}}.
+Nun pue facer más solicitúes.',
 );
 
 /** Azerbaijani (azərbaycanca)

@@ -2475,6 +2475,7 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
  * @author Mark85296341
  * @author Simon Shek
  * @author Waihorace
@@ -2488,6 +2489,7 @@ $messages['zh-hant'] = array(
 	'usercredentials-leg-areas' => '感興趣的主要領域',
 	'usercredentials-leg-person' => '個人資訊',
 	'usercredentials-leg-other' => '其他資訊',
+	'usercredentials-leg-ip' => 'IP位址資料',
 	'usercredentials-email' => '電子郵件：',
 	'usercredentials-real' => '真實姓名：',
 	'usercredentials-bio' => '個人簡介：',
@@ -2495,6 +2497,8 @@ $messages['zh-hant'] = array(
 	'usercredentials-notes' => '附加註解：',
 	'usercredentials-urls' => '網站列表：',
 	'usercredentials-ip' => '原始IP位址：',
+	'usercredentials-xff' => '原始X-Forwarded-For：',
+	'usercredentials-agent' => '原始使用者代理：',
 	'usercredentials-member' => '權限：',
 	'usercredentials-badid' => '沒有憑據找到該用戶。
 檢查名稱拼寫是否正確。',
