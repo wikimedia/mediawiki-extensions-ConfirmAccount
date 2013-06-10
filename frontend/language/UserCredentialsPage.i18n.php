@@ -1317,8 +1317,8 @@ $messages['ku-latn'] = array(
  * @author Nrowe
  */
 $messages['kw'] = array(
-	'usercredentials-user' => 'Hanow usyer:',
-	'usercredentials-email' => 'E-bost:',
+	'usercredentials-user' => 'Hanow devnydhyer:',
+	'usercredentials-email' => 'Ebost:',
 );
 
 /** Latin (Latina)

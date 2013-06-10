@@ -2737,9 +2737,10 @@ $messages['ku-latn'] = array(
 
 /** Cornish (kernowek)
  * @author Kw-Moon
+ * @author Nrowe
  */
 $messages['kw'] = array(
-	'requestaccount-email' => 'Trigva e-bost:',
+	'requestaccount-email' => 'Trigva ebost:',
 );
 
 /** Latin (Latina)

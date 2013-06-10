@@ -103,7 +103,7 @@ $specialPageAliases['es'] = array(
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'RequestAccount' => array( 'درخواست_حساب' ),
-	'ConfirmAccounts' => array( 'پذیرش_حساب‌ها' ),
+	'ConfirmAccounts' => array( 'تایید_حساب‌ها' ),
 	'UserCredentials' => array( 'شناسه_کاربری' ),
 );
 
@@ -229,8 +229,8 @@ $specialPageAliases['ksh'] = array(
 
 /** Cornish (kernowek) */
 $specialPageAliases['kw'] = array(
-	'RequestAccount' => array( 'GovynAcont' ),
-	'ConfirmAccounts' => array( 'AfydhyaAcontow' ),
+	'RequestAccount' => array( 'GovynAkont' ),
+	'ConfirmAccounts' => array( 'AfydhyaAkontow' ),
 	'UserCredentials' => array( 'ManylyonAnDevnydhyer' ),
 );
 

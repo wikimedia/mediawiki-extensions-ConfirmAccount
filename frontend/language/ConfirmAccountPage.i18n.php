@@ -4817,8 +4817,8 @@ $messages['ku-latn'] = array(
  */
 $messages['kw'] = array(
 	'confirmaccount-email-q' => 'E-bost',
-	'confirmaccount-name' => 'Hanow usyer',
-	'confirmaccount-email' => 'E-bost:',
+	'confirmaccount-name' => 'Hanow devnydhyer',
+	'confirmaccount-email' => 'Ebost:',
 	'confirmaccount-wsum' => 'Dynnargh!',
 );
 
