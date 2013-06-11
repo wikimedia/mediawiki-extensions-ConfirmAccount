@@ -2332,6 +2332,7 @@ Por sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensa
  * @author Pertile
  * @author Sanbec
  * @author Translationista
+ * @author VegaDark
  */
 $messages['es'] = array(
 	'confirmaccounts' => 'Confirmar solicitudes de cuenta',
@@ -2401,11 +2402,11 @@ Puede que ya haya sido gestionada.',
 	'confirmaccount-confirm' => 'Utilice las siguientes opciones para aceptar, rechazar o mantener a la espera esta solicitud:',
 	'confirmaccount-econf' => '(confirmado)',
 	'confirmaccount-withcv' => '(CV adjunto)',
-	'confirmaccount-reject' => '(rechazado por [[User:$1|$1]] en $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|rechazado}} por [[User:$1|$1]] en $3 a las $4)',
 	'confirmaccount-rational' => 'Justificación dada al solicitante:',
 	'confirmaccount-noreason' => '(ninguna)',
 	'confirmaccount-autorej' => '(esta solicitud ha sido automáticamente descartada debido a su inactividad)',
-	'confirmaccount-held' => '(Marcado como «en espera» por [[User:$1|$1]] en $2 )', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|marcado}} como «en espera» por [[User:$1|$1]] en $3 a las $4)',
 	'confirmaccount-create' => 'Aceptar (crear cuenta)',
 	'confirmaccount-deny' => 'Rechazar (eliminar de lista)',
 	'confirmaccount-hold' => 'Mantener',
@@ -2422,7 +2423,7 @@ Puede que ya haya sido gestionada.',
 	'confirmaccount-acc' => 'Solicitud de cuenta confirmada exitosamente;
 creada nueva cuenta de usuario [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Solicitud de cuenta rechazada exitosamente.',
-	'confirmaccount-viewing' => '(actualmente siendo visto por [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '(actualmente {{GENDER:$1|siendo}} visto por [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Creando página de usuario para un nuevo usuario.',
 	'confirmaccount-welc' => "'''Bienvenido a ''{{SITENAME}}''!'''
 Esperamos que contribuyas mucho y bien.
