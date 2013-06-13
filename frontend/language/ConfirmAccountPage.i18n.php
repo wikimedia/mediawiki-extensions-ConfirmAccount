@@ -7310,6 +7310,13 @@ $messages['sl'] = array(
 	'confirmaccount-name' => 'Uporabniško ime',
 );
 
+/** Somali (Soomaaliga)
+ * @author Abshirdheere
+ */
+$messages['so'] = array(
+	'confirmaccount-name' => 'Magaca gudagalka',
+);
+
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Sasa Stefanovic

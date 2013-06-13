@@ -2072,6 +2072,13 @@ $messages['sl'] = array(
 Preverite, ali ste ime pravilno črkovali.',
 );
 
+/** Somali (Soomaaliga)
+ * @author Abshirdheere
+ */
+$messages['so'] = array(
+	'usercredentials-user' => 'Magaca gudagalka:',
+);
+
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Sasa Stefanovic
