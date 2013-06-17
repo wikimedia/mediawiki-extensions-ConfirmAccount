@@ -7637,6 +7637,7 @@ $messages['su'] = array(
  * @author Diupwijk
  * @author Fluff
  * @author Jon Harald Søby
+ * @author Jopparn
  * @author Lejonel
  * @author M.M.S.
  * @author Najami
@@ -7720,6 +7721,7 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-submit' => 'Bekräfta',
 	'confirmaccount-needreason' => 'Du måste skriva en motivering i kommentarrutan nedan.',
 	'confirmaccount-canthold' => 'Ansökningen är antingen redan avvaktande eller har avslagits.',
+	'confirmaccount-badaction' => 'En möjlig åtgärd (acceptera, förkasta, skjut upp) måste specificeras för att fortsätta.',
 	'confirmaccount-acc' => 'Kontoansökningen har godkänts och användarkontot [[User:$1|$1]] har skapats.',
 	'confirmaccount-rej' => 'Ansökningen har avslagits.',
 	'confirmaccount-viewing' => '({{GENDER:$1|granskas}} just nu av [[User:$1|$1]])',
