@@ -874,13 +874,17 @@ $messages['cs'] = array(
 Na vaši emailovou adresu byl odeslán potvrzovací email.',
 	'request-account-econf' => 'Vaše e-mailová adresa byla potvrzena a v tomto tvaru se uvede ve vaší žádosti o účet.',
 	'requestaccount-email-subj' => '{{SITENAME}}: Potvrzení e-mailové adresy',
-	'requestaccount-email-body' => 'Někdo, pravděpodobně Vy z IP adresy $1, si na {{GRAMMAR:lokál|{{SITENAME}}}} zaregistroval účet s názvem „$2“ a s touto e-mailovou adresou.
+	'requestaccount-email-body' => 'Někdo (patrně vy, z IP adresy $1) na {{grammar:6sg|{{SITENAME}}}}
+požádal o uživatelský účet „$2“ pro tuto e-mailovou adresu.
 
-Pro potvrzení, že tento účet skutečně patří Vám a pro aktivování e-mailových funkcí na {{GRAMMAR:lokál|{{SITENAME}}}}, klikněte na tento odkaz:
+Pro potvrzení, že tato adresa opravdu patří vám, přejděte svým
+internetovým prohlížečem na následující adresu:
 
 $3
 
-Pokud jste to *nebyli* Vy, neklikejte na odkaz. Tento potvrzovací kód vyprší $4.',
+Pokud bude účet založen, bude heslo zasláno pouze vám.
+Pokud jste to *nebyli* vy, neklikejte na odkaz.
+Platnost tohoto potvrzovacího kódu vyprší $4.',
 	'requestaccount-email-subj-admin' => 'Žádost o účet na {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" požádal o účet a čeká na vaše schválení.
 E-mail byla ověřena. Žádost můžete schválit zde "$2".',
