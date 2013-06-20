@@ -1084,7 +1084,7 @@ $messages['be-tarask'] = array(
 	'confirmaccount-rational' => 'Абгрунтаваньне пададзенае падаўшаму запыт:',
 	'confirmaccount-noreason' => '(няма)',
 	'confirmaccount-autorej' => '(гэты запыт быў аўтаматычна адхілены з-за неактыўнасьці)',
-	'confirmaccount-held' => '(адкладзены [[User:$1|$1]] $2)', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|адклаў|адклала}} [[User:$1|$1]] $3 у $4)',
 	'confirmaccount-create' => 'Зацьвердзіць (стварыць рахунак)',
 	'confirmaccount-deny' => 'Адхіліць (выдаліць са сьпісу)',
 	'confirmaccount-hold' => 'Адкласьці',
@@ -1101,7 +1101,7 @@ $messages['be-tarask'] = array(
 	'confirmaccount-acc' => 'Запыт на стварэньне рахунку пасьпяхова пацьверджаны;
 створаны рахунак [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Запыт на стварэньне рахунку быў пасьпяхова адхілены.',
-	'confirmaccount-viewing' => '(зараз праглядаецца [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '(цяпер праглядаецца {{GENDER:$1|ўдзельнікам|ўдзельніцай}} [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Стварэньне ўласнай старонкі новага ўдзельніка.',
 	'confirmaccount-welc' => "'''Вітаем у ''{{GRAMMAR:месны|{{SITENAME}}}}''!'''
 Мы спадзяёмся, што Вы прыміце актыўны ўдзел у працы праекта.
