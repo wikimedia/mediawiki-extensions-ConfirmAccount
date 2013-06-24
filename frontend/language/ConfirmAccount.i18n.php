@@ -248,6 +248,15 @@ $messages['fi'] = array(
 	'right-lookupcredentials' => 'Nähdä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]',
 );
 
+/** Faroese (føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'requestaccount-loginnotice' => "Fyri at fáa eina brúkarakonto, mást tú '''[[Special:RequestAccount|biðja um eina]]'''.",
+	'right-confirmaccount' => 'Hygg eftir [[Special:ConfirmAccounts|røðini við umbøn um konto]]',
+	'right-requestips' => 'Hygg eftir IP adressunum hjá umsøkjara, meðan umbidnar kontur verða viðgjørdar',
+);
+
 /** French (français)
  * @author Crochet.david
  * @author Dereckson
