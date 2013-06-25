@@ -6672,11 +6672,11 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-none-p' => '(não fornecido)',
 	'confirmaccount-confirm' => 'Use as opções seguintes para aceitar, rejeitar, ou colocar em espera este pedido:',
 	'confirmaccount-econf' => '(confirmado)',
-	'confirmaccount-reject' => '(rejeitado por [[User:$1|$1]] em $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|rejeitado}} por [[User:$1|$1]] em $3 às $4)',
 	'confirmaccount-rational' => 'Explicação dada ao requerente:',
 	'confirmaccount-noreason' => '(nenhum)',
 	'confirmaccount-autorej' => '(este pedido foi automaticamente descartado devido a inactividade)',
-	'confirmaccount-held' => '(marcado como "em espera" por [[User:$1|$1]] em $2)', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|marcado}} como "em espera" por [[User:$1|$1]] em $3 às $4)',
 	'confirmaccount-create' => 'Aceitar (criar conta)',
 	'confirmaccount-deny' => 'Rejeitar (retirar da lista)',
 	'confirmaccount-hold' => 'Colocar em espera',
@@ -6691,7 +6691,7 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-badaction' => 'Uma acção válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.',
 	'confirmaccount-acc' => 'Pedido de conta confirmado com sucesso; criada nova conta de utilizador [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Pedido de conta rejeitado com sucesso.',
-	'confirmaccount-viewing' => '(a ser visto neste momento por [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '(a {{GENDER:$1|ser}} visto neste momento por [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Criar página de utilizador com biografia de novo utilizador.',
 	'confirmaccount-welc' => "'''Bem-vindo à ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.
 Provavelmente quererá ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. Mais uma vez, seja bem-vindo e divirta-se!",
