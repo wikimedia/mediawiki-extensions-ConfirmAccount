@@ -1556,6 +1556,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'confirmaccount-all' => '(гайта ерриге рогӀехь)',
 	'confirmaccount-submit' => 'Бакъдан',
 );
 
