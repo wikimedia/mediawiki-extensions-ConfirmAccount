@@ -1359,6 +1359,8 @@ $messages['lb'] = array(
 	'usercredentials-notes' => 'Zousätzlech Bemierkungen:',
 	'usercredentials-urls' => 'Lëscht vun Internetsiten:',
 	'usercredentials-ip' => 'Original IP-Adress:',
+	'usercredentials-xff' => 'Original X-Forwarded-For:',
+	'usercredentials-agent' => 'Original User-Agent:',
 	'usercredentials-member' => 'Rechter:',
 	'usercredentials-badid' => 'Et goufe keng Rechter fir dëse Benotzer fonnt.
 Kuckt w.e.g. no op den Numm richteg geschriwwen ass.',

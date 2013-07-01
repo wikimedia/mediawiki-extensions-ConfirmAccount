@@ -69,7 +69,7 @@ $specialPageAliases['de'] = array(
 $specialPageAliases['diq'] = array(
 	'RequestAccount' => array( 'HesabWaştış' ),
 	'ConfirmAccounts' => array( 'HesabRaştkerdış' ),
-	'UserCredentials' => array( 'ReferansêKarberan' ),
+	'UserCredentials' => array( 'ReferanséKarberan' ),
 );
 
 /** Lower Sorbian (dolnoserbski) */
