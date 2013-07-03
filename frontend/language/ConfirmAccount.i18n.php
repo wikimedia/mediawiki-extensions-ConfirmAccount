@@ -638,7 +638,7 @@ $messages['nn'] = array(
  * @author Cedric31
  */
 $messages['oc'] = array(
-	'confirmaccount-newrequests' => "Actualament i a '''$1''' {{PLURAL:$1|[[Special:ConfirmAccounts|demanda de compte]]|[[Special:ConfirmAccounts|demandas de compte]]}} en cors.", # Fuzzy
+	'confirmaccount-newrequests' => "I a actualament '''$1''' [[Special:ConfirmAccounts|demanda{{PLURAL:$1||s}} de compte]] en cors. '''Vòstra atencion es necessària !'''",
 	'requestaccount-loginnotice' => "Per obténer un compte d'utilizaire, vos ne cal far '''[[Special:RequestAccount|la demanda]]'''.",
 	'right-confirmaccount' => 'Vejatz la [[Special:ConfirmAccounts|fila de las demandas de compte]]',
 	'right-requestips' => 'Vejatz las adreças IP dels demandaires al moment del tractament de las demandas de comptes novèls',
