@@ -3481,6 +3481,7 @@ $messages['hil'] = array(
  * @author Dalibor Bosits
  * @author Dnik
  * @author Ex13
+ * @author Roberta F.
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
@@ -3537,7 +3538,7 @@ $messages['hr'] = array(
 	'confirmaccount-needreason' => 'Morate dati razlog u okviru ispod.',
 	'confirmaccount-canthold' => 'Ovaj zahtjev je već ili na čekanju ili obrisan.',
 	'confirmaccount-acc' => 'Suradnički račun je uspješno potvrđen; otvoren je novi suradnički račun [[User:$1|$1]].',
-	'confirmaccount-summary' => 'Stvaranje suradničke stranice sa životopisom novog suradnika.', # Fuzzy
+	'confirmaccount-summary' => 'Stvaranje suradničke stranice za novog suradnika.',
 	'confirmaccount-wsum' => 'Dobrodošli!',
 	'confirmaccount-email-subj' => '{{SITENAME}} zahtjev suradničkog računa',
 );
