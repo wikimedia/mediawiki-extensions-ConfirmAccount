@@ -1557,6 +1557,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'confirmaccount-all' => '(гайта ерриге рогӀехь)',
+	'confirmaccount-name' => 'Декъашхон цӀе',
 	'confirmaccount-submit' => 'Бакъдан',
 );
 

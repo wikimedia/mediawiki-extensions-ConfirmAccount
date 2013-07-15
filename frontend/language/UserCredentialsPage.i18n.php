@@ -386,6 +386,13 @@ $messages['ca'] = array(
 	'usercredentials-agent' => 'User-Agent original:',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'usercredentials-user' => 'Декъашхон цӀе:',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
