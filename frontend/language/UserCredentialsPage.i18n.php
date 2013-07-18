@@ -428,7 +428,7 @@ $messages['cs'] = array(
  * @author ОйЛ
  */
 $messages['cu'] = array(
-	'usercredentials-user' => 'по́льꙃєватєлꙗ и́мѧ :',
+	'usercredentials-user' => 'польꙃєватєлꙗ имѧ :',
 	'usercredentials-real' => 'и́стиньно и́мѧ :',
 );
 

@@ -1390,10 +1390,12 @@ $messages['ext'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Alireza
  * @author Mjbmr
  */
 $messages['fa'] = array(
 	'requestaccount' => 'درخواست حساب',
+	'requestaccount-page' => '{{ns:project}}: شرایط استفاده از خدمات',
 	'requestaccount-leg-user' => 'حساب کاربری',
 	'requestaccount-leg-person' => 'اطلاعات شخصی',
 	'requestaccount-leg-other' => 'اطلاعات دیگر',
@@ -4791,6 +4793,7 @@ Daha fazla istekte bulunamazsınız.',
  * @author Alex Khimich
  * @author Base
  * @author Prima klasy4na
+ * @author Ата
  * @author Тест
  */
 $messages['uk'] = array(
@@ -4810,6 +4813,12 @@ $messages['uk'] = array(
 	'requestaccount-acc-text' => 'Оскільки Ви надіслали запит, на Вашу адресу електронної пошти буде надіслано повідомлення з підтвердженням.
 Будь ласка, дайте відповідь, натиснувши на посилання-підтвердження в електронному листі. 
 Ваш пароль буде надіслано електронною поштою після створення облікового запису.',
+	'requestaccount-areas-text' => 'Оберіть сфери з поданих нижче, у яких Ви компетентні або в яких хотіли б працювати найбільше.',
+	'requestaccount-ext-text' => 'Наступна інформація залишається приватною і буде використана лише для цього запиту.
+Ви можете вказати контакти, як-то номер телефону, щоб допомогти в підтвердженні ідентичності.',
+	'requestaccount-bio-text' => 'Спробуйте включити будь-які відповідні повноваження у біографії нижче.',
+	'requestaccount-bio-text-i' => "'''Вашу біографію буде розміщено як початковий вміст сторінки користувача.'''
+Переконайтесь, що Ви не проти публікації такої інформації.",
 	'requestaccount-real' => "Справжнє ім'я:",
 	'requestaccount-email' => 'Адреса електронної пошти:',
 	'requestaccount-reqtype' => 'Посада:',
