@@ -1412,6 +1412,7 @@ $messages['lt'] = array(
 	'usercredentials-email' => 'El. paštas:',
 	'usercredentials-real' => 'Tikras vardas:',
 	'usercredentials-bio' => 'Biografija:',
+	'usercredentials-attach' => 'CV:',
 	'usercredentials-notes' => 'Papildomos pastabos:',
 	'usercredentials-urls' => 'Tinklapių sąrašas:',
 	'usercredentials-ip' => 'Originalus IP adresas:',
@@ -1843,6 +1844,7 @@ $messages['ps'] = array(
  * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
+ * @author Luckas
  * @author Malafaya
  * @author Waldir
  */
@@ -1850,7 +1852,7 @@ $messages['pt'] = array(
 	'usercredentials' => 'Credenciais do utilizador',
 	'usercredentials-leg' => 'Procurar credenciais confirmadas para um utilizador',
 	'usercredentials-user' => 'Nome de utilizador:',
-	'usercredentials-text' => 'Abaixo estão as credenciais validadas da conta de utilizador seleccionada.',
+	'usercredentials-text' => 'Abaixo estão as credenciais validadas da conta de utilizador selecionada.',
 	'usercredentials-leg-user' => 'Conta de utilizador',
 	'usercredentials-leg-areas' => 'Principais áreas de interesse',
 	'usercredentials-leg-person' => 'Informação pessoal',

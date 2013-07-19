@@ -5061,7 +5061,17 @@ $messages['lt'] = array(
 	'confirmaccount-real-q' => 'Vardas',
 	'confirmaccount-email-q' => 'El. paštas',
 	'confirmaccount-bio-q' => 'Biografija',
+	'confirmaccount-showopen' => 'atidaryti prašymai',
+	'confirmaccount-showrej' => 'atmesti prašymai',
+	'confirmaccount-showheld' => 'vykstantys prašymai',
+	'confirmaccount-showexp' => 'pasibaigę prašymai',
 	'confirmaccount-review' => 'Peržiūrėti',
+	'confirmaccount-all' => '(rodyti visas eiles)',
+	'confirmaccount-type' => 'Eilė:',
+	'confirmaccount-q-open' => 'atidaryti prašymai',
+	'confirmaccount-q-held' => 'vykstantys prašymai',
+	'confirmaccount-q-rej' => 'Neseniai atmesti prašymai',
+	'confirmaccount-q-stale' => 'pasibaigę prašymai',
 	'confirmaccount-leg-user' => 'Vartotojo paskyra',
 	'confirmaccount-leg-person' => 'Asmeninė informacija',
 	'confirmaccount-leg-other' => 'Kita informacija',
@@ -5073,13 +5083,17 @@ $messages['lt'] = array(
 	'confirmaccount-pos-0' => 'autorius',
 	'confirmaccount-pos-1' => 'redaktorius',
 	'confirmaccount-bio' => 'Biografija:',
+	'confirmaccount-attach' => 'CV:',
 	'confirmaccount-notes' => 'Papildomos pastabos:',
 	'confirmaccount-urls' => 'Tinklapių sąrašas:',
 	'confirmaccount-none-p' => '(nenurodyta)',
 	'confirmaccount-econf' => '(patvirtinta)',
 	'confirmaccount-withcv' => '(CV prisegtas)',
 	'confirmaccount-noreason' => '(nėra)',
+	'confirmaccount-hold' => 'Vygdyti',
+	'confirmaccount-spam' => 'Šlamštas (nesiųsti el. laiško)',
 	'confirmaccount-ip' => 'IP adresas:',
+	'confirmaccount-legend' => 'Patvirtinti/atmesti šią sąskaitą',
 	'confirmaccount-submit' => 'Patvirtinti',
 	'confirmaccount-wsum' => 'Sveiki atvykę!',
 );
@@ -6639,6 +6653,7 @@ $3
  * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
+ * @author Luckas
  * @author Malafaya
  * @author Waldir
  */
@@ -6678,7 +6693,7 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-review' => 'Aprovar/Rejeitar',
 	'confirmaccount-types' => 'Seleccione uma fila de confirmação de contas abaixo:',
 	'confirmaccount-all' => '(mostrar todas as filas)',
-	'confirmaccount-type' => 'Fila seleccionada:',
+	'confirmaccount-type' => 'Fila:',
 	'confirmaccount-type-0' => 'autores expectáveis',
 	'confirmaccount-type-1' => 'editores expectáveis',
 	'confirmaccount-q-open' => 'pedidos em aberto',

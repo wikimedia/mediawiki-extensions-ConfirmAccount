@@ -2880,15 +2880,18 @@ Doe kans diene naam aanpasse via dien [[Special:Preferences|veurkaöre]].", # Fu
  * @author Tomasdd
  */
 $messages['lt'] = array(
+	'requestaccount' => 'Prašyti paskyros',
 	'requestaccount-leg-user' => 'Naudotojo paskyra',
 	'requestaccount-leg-person' => 'Asmeninė informacija',
 	'requestaccount-leg-other' => 'Kita informacija',
+	'requestaccount-leg-tos' => 'Vartojimo Sąlygos',
 	'requestaccount-real' => 'Tikrasis vardas:',
 	'requestaccount-same' => '(toks kaip tikrasis vardas žemiau)',
 	'requestaccount-email' => 'El. pašto adresas:',
 	'requestaccount-reqtype' => 'Pareigos:',
 	'requestaccount-level-0' => 'autorius',
 	'requestaccount-level-1' => 'redaktorius',
+	'requestaccount-attach' => 'CV (neprivaloma):',
 	'requestaccount-notes' => 'Papildomos pastabos:',
 	'requestaccount-submit' => 'Prašyti paskyros',
 );
@@ -3734,6 +3737,7 @@ $messages['ps'] = array(
  * @author Giro720
  * @author Hamilton Abreu
  * @author Lijealso
+ * @author Luckas
  * @author Malafaya
  * @author Waldir
  */
@@ -3773,7 +3777,7 @@ Certifique-se de que pretende publicar esta informação.",
 	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.',
 	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo correio electrónico.',
 	'requestaccount-exts' => 'O tipo de ficheiro do anexo não é permitido.',
-	'requestaccount-resub' => 'O seu Currículo deve ser seleccionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
+	'requestaccount-resub' => 'O seu currículo deve ser selecionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.',
 	'requestaccount-tos' => 'Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] da {{SITENAME}}.
 O nome que introduzi em "Nome real" é de facto o meu nome real.',
 	'requestaccount-submit' => 'Pedir conta',
