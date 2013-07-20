@@ -6674,8 +6674,8 @@ Estes podem ainda ser aprovados para novas contas, mas deverá verificar primeir
 	'confirmaccount-text' => "Este é um pedido pendente para uma conta de utilizador na '''{{SITENAME}}'''.
 
 Reveja cuidadosamente a informação abaixo.
-Se está a aprovar este pedido, use a caixa de selecção de posição para estabelecer o estado da conta do utilizador.
-Edições feitas à biografia da candidatura não afectarão nenhum armazenamento de credenciais permanente. Note que pode optar por criar a conta com um nome de utilizador diferente.
+Se está a aprovar este pedido, use a caixa de seleção de posição para estabelecer o estado da conta do utilizador.
+Edições feitas à biografia da candidatura não afetarão nenhum armazenamento de credenciais permanente. Note que pode optar por criar a conta com um nome de utilizador diferente.
 Use esta opção apenas para evitar colisões com outros nomes.
 
 Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, ele continuará pendente.",
