@@ -1558,6 +1558,7 @@ $messages['ca'] = array(
 $messages['ce'] = array(
 	'confirmaccount-all' => '(гайта ерриге рогӀехь)',
 	'confirmaccount-name' => 'Декъашхон цӀе',
+	'confirmaccount-noreason' => '(яц)',
 	'confirmaccount-submit' => 'Бакъдан',
 );
 
@@ -1641,6 +1642,8 @@ $messages['cs'] = array(
  * @author ОйЛ
  */
 $messages['cu'] = array(
+	'confirmaccount-real-q' => 'имѧ',
+	'confirmaccount-real' => 'имѧ :',
 	'confirmaccount-pos-0' => 'творь́ць',
 );
 
