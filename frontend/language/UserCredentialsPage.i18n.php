@@ -390,7 +390,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
-	'usercredentials-user' => 'Декъашхон цӀе:',
+	'usercredentials-user' => 'Декъашхочун цӀе:',
 );
 
 /** Sorani Kurdish (کوردی)
