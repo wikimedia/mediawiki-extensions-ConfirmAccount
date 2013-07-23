@@ -58,6 +58,11 @@ $specialPageAliases['bs'] = array(
 	'UserCredentials' => array( 'KorisnickePotvrde' ),
 );
 
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'RequestAccount' => array( 'Декъашхочун_дӀаяздар_деха' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'RequestAccount' => array( 'Benutzerkonto_beantragen' ),

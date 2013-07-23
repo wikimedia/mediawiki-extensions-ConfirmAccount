@@ -6668,7 +6668,7 @@ $messages['pt'] = array(
 Cada fila de pedidos de conta consiste em três sub-filas, uma para pedidos em aberto, outra para pedidos colocados em espera por outros administradores à espera de mais informação e outra para pedidos recentemente rejeitados.
 
 Quando responder a um pedido, reveja-o cuidadosamente e, se necessário, confirme a informação nele contida.
-As suas acções será registadas em privado. Também é esperado que reveja qualquer actividade que  ocorra aqui para além das suas próprias acções.",
+As suas ações será registradas em privado. Também é esperado que reveja qualquer atividade que  ocorra aqui para além das suas próprias ações.",
 	'confirmaccount-list' => 'Abaixo encontra-se uma lista de pedidos de conta à espera de aprovação.
 Contas aprovadas serão criadas e removidas desta lista. Contas rejeitadas serão simplesmente eliminadas desta lista.',
 	'confirmaccount-list2' => 'Abaixo encontra-se uma lista de pedidos de conta recentemente rejeitados que serão automaticamente eliminados após alguns dias.
@@ -6738,7 +6738,7 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Deverá fornecer um motivo na caixa de comentário abaixo.',
 	'confirmaccount-canthold' => 'Este pedido já está em espera ou apagado.',
-	'confirmaccount-badaction' => 'Uma acção válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.',
+	'confirmaccount-badaction' => 'Uma ação válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.',
 	'confirmaccount-acc' => 'Pedido de conta confirmado com sucesso; criada nova conta de utilizador [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Pedido de conta rejeitado com sucesso.',
 	'confirmaccount-viewing' => '(a {{GENDER:$1|ser}} visto neste momento por [[User:$1|$1]])',
