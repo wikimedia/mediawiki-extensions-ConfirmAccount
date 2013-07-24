@@ -1556,6 +1556,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'confirmaccount-review' => 'Хьажар',
 	'confirmaccount-all' => '(гайта ерриге рогӀехь)',
 	'confirmaccount-name' => 'Декъашхочун цӀе',
 	'confirmaccount-noreason' => '(яц)',
@@ -1644,7 +1645,7 @@ $messages['cs'] = array(
 $messages['cu'] = array(
 	'confirmaccount-real-q' => 'имѧ',
 	'confirmaccount-real' => 'имѧ :',
-	'confirmaccount-pos-0' => 'творь́ць',
+	'confirmaccount-pos-0' => 'творьць',
 );
 
 /** Welsh (Cymraeg)

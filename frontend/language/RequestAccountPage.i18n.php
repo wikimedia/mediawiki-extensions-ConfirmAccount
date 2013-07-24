@@ -897,7 +897,7 @@ Další žádost již není možná.',
  */
 $messages['cu'] = array(
 	'requestaccount-real' => 'и́стиньно и́мѧ :',
-	'requestaccount-level-0' => 'творь́ць',
+	'requestaccount-level-0' => 'творьць',
 );
 
 /** Danish (dansk)
