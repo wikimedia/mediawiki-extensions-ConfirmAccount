@@ -6695,7 +6695,7 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-showheld' => 'Ver lista de pedidos de conta pendentes em espera',
 	'confirmaccount-showexp' => 'pedidos expirados',
 	'confirmaccount-review' => 'Aprovar/Rejeitar',
-	'confirmaccount-types' => 'Seleccione uma fila de confirmação de contas abaixo:',
+	'confirmaccount-types' => 'Selecione uma fila de confirmação de contas abaixo:',
 	'confirmaccount-all' => '(mostrar todas as filas)',
 	'confirmaccount-type' => 'Fila:',
 	'confirmaccount-type-0' => 'autores expectáveis',

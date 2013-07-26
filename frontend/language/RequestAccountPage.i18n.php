@@ -3756,7 +3756,7 @@ Assim que a conta for aprovada, ser-lhe-á enviada uma mensagem de notificação
 	'requestaccount-leg-other' => 'Outras informações',
 	'requestaccount-leg-tos' => 'Termos de Serviço',
 	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de correio electrónico assim que este pedido for submetido. Por favor, responda clicando o link de confirmação enviado na mensagem. A sua palavra-chave também será enviada por correio electrónico assim que a conta tenha sido criada.',
-	'requestaccount-areas-text' => 'Seleccione abaixo as áreas em que possui experiência formal ou em que mais gostaria de trabalhar.',
+	'requestaccount-areas-text' => 'Selecione abaixo as áreas em que possui experiência formal ou em que mais gostaria de trabalhar.',
 	'requestaccount-ext-text' => 'A seguinte informação será mantida privada e só será usada para este pedido.
 Talvez possa listar contactos, tais como o número de telefone, para ajudar na confirmação da identificação.',
 	'requestaccount-bio-text' => 'Tente incluir todas as credenciais relevantes na sua biografia abaixo.',
