@@ -826,6 +826,13 @@ $messages['ca'] = array(
 	'requestaccount-submit' => 'Sol·licitud de compte',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'requestaccount-level-1' => 'Тадархо',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
@@ -3772,7 +3779,7 @@ Certifique-se de que pretende publicar esta informação.",
 	'requestaccount-attach' => 'Currículo (opcional):',
 	'requestaccount-notes' => 'Notas adicionais:',
 	'requestaccount-urls' => 'Lista de sites na internet, se algum (um por linha):',
-	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correcto e que concorda com os nossos Termos de Serviço.',
+	'requestaccount-agree' => 'Deverá certificar-se que o seu nome real está correto e que concorda com os nossos termos de serviço.',
 	'requestaccount-inuse' => 'O nome de utilizador já está em uso num pedido de conta pendente.',
 	'requestaccount-tooshort' => 'A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.',
 	'requestaccount-emaildup' => 'Um outro pedido de conta pendente usa o mesmo correio electrónico.',

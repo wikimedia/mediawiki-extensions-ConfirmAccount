@@ -1865,7 +1865,7 @@ $messages['pt'] = array(
 	'usercredentials-urls' => 'Lista de sites na internet:',
 	'usercredentials-ip' => 'Endereço IP original:',
 	'usercredentials-member' => 'Privilégios:',
-	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está correctamente escrito.',
+	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está corretamente escrito.',
 );
 
 /** Brazilian Portuguese (português do Brasil)

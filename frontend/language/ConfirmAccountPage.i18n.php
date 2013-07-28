@@ -6726,7 +6726,7 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-reject' => '({{GENDER:$1|rejeitado}} por [[User:$1|$1]] em $3 às $4)',
 	'confirmaccount-rational' => 'Explicação dada ao requerente:',
 	'confirmaccount-noreason' => '(nenhum)',
-	'confirmaccount-autorej' => '(este pedido foi automaticamente descartado devido a inactividade)',
+	'confirmaccount-autorej' => '(este pedido foi automaticamente descartado devido a inatividade)',
 	'confirmaccount-held' => '({{GENDER:$1|marcado}} como "em espera" por [[User:$1|$1]] em $3 às $4)',
 	'confirmaccount-create' => 'Aceitar (criar conta)',
 	'confirmaccount-deny' => 'Rejeitar (retirar da lista)',
@@ -6766,7 +6766,7 @@ $3
 Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá a {{fullurl:{{ns:special}}:Userlogin}}.',
 	'confirmaccount-email-body3' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado na {{SITENAME}}.
 
-Há várias formas de isto acontecer. Poderá não ter preenchido o formulário correctamente, não ter fornecido respostas de tamanho adequado, ou de outra forma não ter cumprido algumas normas e critérios. Podem existir listas de contactos no site que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
+Há várias formas de isto acontecer. Poderá não ter preenchido o formulário corretamente, não ter fornecido respostas de tamanho adequado, ou de outra forma não ter cumprido algumas normas e critérios. Podem existir listas de contatos no site que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
 	'confirmaccount-email-body4' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado na {{SITENAME}}.
 
 $2
