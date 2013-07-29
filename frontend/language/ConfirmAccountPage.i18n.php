@@ -3891,11 +3891,11 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-confirm' => 'Usa le optiones hic infra pro acceptar, rejectar o suspender iste requesta:',
 	'confirmaccount-econf' => '(confirmate)',
 	'confirmaccount-withcv' => '(CV adjungite)',
-	'confirmaccount-reject' => '(rejectate per [[User:$1|$1]] le $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|rejectate}} per [[User:$1|$1]] le $3 a $4)',
 	'confirmaccount-rational' => 'Motivo date al candidato:',
 	'confirmaccount-noreason' => '(nulle)',
 	'confirmaccount-autorej' => '(iste requesta ha essite automaticamente abandonate a causa de inactivitate)',
-	'confirmaccount-held' => '(marcate como "suspendite" per [[User:$1|$1]] le $2)', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|marcate}} como "suspendite" per [[User:$1|$1]] le $3 a $4)',
 	'confirmaccount-create' => 'Acceptar (crear conto)',
 	'confirmaccount-deny' => 'Rejectar (retirar del lista)',
 	'confirmaccount-hold' => 'Suspender',
@@ -3912,7 +3912,7 @@ Illo pote ja haber essite tractate.',
 	'confirmaccount-acc' => 'Le requesta de conto ha essite confirmate con successo;
 creava nove conto de usator [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Le requesta de conto ha essite rejectate con successo.',
-	'confirmaccount-viewing' => '(a iste momento in revision per [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '(actualmente {{GENDER:$1|vidite}} per [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Crea pagina de usator pro nove usator.',
 	'confirmaccount-welc' => "'''Benvenite a ''{{SITENAME}}''!'''
 Nos spera que tu contribuera multo e ben.
