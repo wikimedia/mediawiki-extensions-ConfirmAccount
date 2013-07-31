@@ -253,6 +253,11 @@ $specialPageAliases['lb'] = array(
 	'UserCredentials' => array( 'Benotzerinformatiounen' ),
 );
 
+/** Minangkabau (Baso Minangkabau) */
+$specialPageAliases['min'] = array(
+	'RequestAccount' => array( 'PamintaanAkun' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'RequestAccount' => array( 'ПобарајКорисничкаСметка' ),
