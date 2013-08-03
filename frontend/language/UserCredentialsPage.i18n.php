@@ -2386,16 +2386,19 @@ $messages['ug-latn'] = array(
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
+ * @author Andriykopanytsia
  * @author Base
  * @author Prima klasy4na
  * @author Тест
  */
 $messages['uk'] = array(
+	'usercredentials' => 'Облікові дані користувача',
 	'usercredentials-user' => "Ім'я користувача:",
 	'usercredentials-leg-user' => 'Обліковий запис',
 	'usercredentials-leg-areas' => 'Основні області інтересів',
 	'usercredentials-leg-person' => 'Особиста інформація',
 	'usercredentials-leg-other' => 'Інша інформація',
+	'usercredentials-leg-ip' => 'Дані IP-адреси',
 	'usercredentials-email' => 'Електронна пошта:',
 	'usercredentials-real' => "Справжнє ім'я:",
 	'usercredentials-bio' => 'Біографія:',
