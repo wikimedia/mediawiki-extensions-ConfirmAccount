@@ -2389,11 +2389,14 @@ $messages['ug-latn'] = array(
  * @author Andriykopanytsia
  * @author Base
  * @author Prima klasy4na
+ * @author Ата
  * @author Тест
  */
 $messages['uk'] = array(
 	'usercredentials' => 'Облікові дані користувача',
+	'usercredentials-leg' => 'Пошук підтверджених облікових даних користувача',
 	'usercredentials-user' => "Ім'я користувача:",
+	'usercredentials-text' => 'Нижче наведені підтверджені облікові дані обраного облікового запису користувача.',
 	'usercredentials-leg-user' => 'Обліковий запис',
 	'usercredentials-leg-areas' => 'Основні області інтересів',
 	'usercredentials-leg-person' => 'Особиста інформація',
@@ -2402,12 +2405,15 @@ $messages['uk'] = array(
 	'usercredentials-email' => 'Електронна пошта:',
 	'usercredentials-real' => "Справжнє ім'я:",
 	'usercredentials-bio' => 'Біографія:',
+	'usercredentials-attach' => 'Резюме/CV:',
 	'usercredentials-notes' => 'Додаткова інформація:',
 	'usercredentials-urls' => 'Список веб-сайтів:',
 	'usercredentials-ip' => 'Оригінальна IP-адреса:',
 	'usercredentials-xff' => 'Оригінальний X-Forwarded-For:',
 	'usercredentials-agent' => 'Оригінальний User-Agent:',
 	'usercredentials-member' => 'Права:',
+	'usercredentials-badid' => 'Не знайдено облікових даних цього користувача.
+Перевірте правильність написання імені.',
 );
 
 /** Urdu (اردو)
