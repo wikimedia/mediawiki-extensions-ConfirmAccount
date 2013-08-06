@@ -8588,6 +8588,7 @@ $messages['ug-latn'] = array(
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
+ * @author Andriykopanytsia
  * @author Base
  * @author Prima klasy4na
  * @author Steve.rusyn
@@ -8674,6 +8675,7 @@ $messages['uk'] = array(
 	'confirmaccount-spam' => 'Спам (не надсилати e-mail)',
 	'confirmaccount-reason' => 'Коментар (буде включено в електронний лист):',
 	'confirmaccount-ip' => 'IP-адреса:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
 	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => 'Підтвердити/відхилити цей обліковий запис',
 	'confirmaccount-submit' => 'Підтвердити',
