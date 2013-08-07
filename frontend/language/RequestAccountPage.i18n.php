@@ -2775,6 +2775,7 @@ $messages['la'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'requestaccount' => 'Benotzerkont ufroen',
@@ -2790,8 +2791,8 @@ Wann Äre Benotzerkont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir 
 	'requestaccount-leg-person' => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other' => 'Aner Informatiounen',
 	'requestaccount-leg-tos' => 'Conditioune vum Gebrauch',
-	'requestaccount-acc-text' => 'Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mailadress.
-Äntwert w.e.g. duerch klicken op de Confirmatiouns-Link deen an där Mail drasteet.
+	'requestaccount-acc-text' => 'Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mail-Adress.
+Äntwert w.e.g. duerch klicken op de Confirmatiounslink deen an där Mail drasteet.
 Och Äert Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht gouf.',
 	'requestaccount-areas-text' => 'Wielt déi Sujeten aus an denen Dir formaalt Fachwëssen huet oder an deem Dir am léifste schaffe wëllt.',
 	'requestaccount-ext-text' => "Dës Informatioune gi vertraulech behandelt a gi just fir dës Ufro benotzt.
@@ -2821,9 +2822,9 @@ Den Numm den ech bäi "Richtegen Numm" uginn hunn, ass mäin eegene richtegen Nu
 	'requestaccount-submit' => 'Benotzerkont ufroen',
 	'requestaccount-sent' => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.
 Eng Konfirmatiounsmail gouf op Är E-mailadress geschéckt.',
-	'request-account-econf' => 'Är E-Mailadress gouf confirméiert a gëtt elo als E-Mailadress an är Ufro fir e Benotzerkont integréiert.',
+	'request-account-econf' => 'Är E-Mail-Adress gouf confirméiert a gëtt elo als E-Mail-Adress an är Ufro fir e Benotzerkont integréiert.',
 	'requestaccount-email-subj' => '{{SITENAME}} Konfirmatioun vun der E-Mail-Adress',
-	'requestaccount-email-body' => 'Een, wahrscheinlech Dir vun der IP-Adress $1, huet e Benotzerkont "$2" mat dëser E-Mailadress op {{SITENAME}} ugefrot.
+	'requestaccount-email-body' => 'Een, wahrscheinlech Dir vun der IP-Adress $1, huet e Benotzerkont "$2" mat dëser E-Mail-Adress op {{SITENAME}} ugefrot.
 
 Fir ze confirméieren datt dëse Benotzerkont op {{SITENAME}} Iech wierklech gehéiert, klickt w.e.g. op dëse Link an Ärem Browser:
 
