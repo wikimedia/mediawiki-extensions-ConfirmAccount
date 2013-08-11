@@ -58,6 +58,13 @@ $specialPageAliases['bs'] = array(
 	'UserCredentials' => array( 'KorisnickePotvrde' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'RequestAccount' => array( '申請賬戶' ),
+	'ConfirmAccounts' => array( '確認賬戶' ),
+	'UserCredentials' => array( '用戶積分' ),
+);
+
 /** Chechen (нохчийн) */
 $specialPageAliases['ce'] = array(
 	'RequestAccount' => array( 'Декъашхочун_дӀаяздар_деха' ),
