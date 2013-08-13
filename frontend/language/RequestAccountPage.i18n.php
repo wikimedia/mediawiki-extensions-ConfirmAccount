@@ -1003,9 +1003,9 @@ Sobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kan
 	'requestaccount-leg-person' => 'Persönliche Informationen',
 	'requestaccount-leg-other' => 'Weitere Informationen',
 	'requestaccount-leg-tos' => 'Nutzungsbedingungen',
-	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.
+	'requestaccount-acc-text' => 'Wenn du diese Anfrage ausführst, wird dir einmal eine Bestätigungsnachricht an deine E-Mail-Adresse gesandt. Die Adresse wird nicht veröffentlicht.
 Bitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungslink klickst.
-Sobald dein Konto angelegt wurde, wird dir dein Passwort per E-Mail zugeschickt.',
+Zum Schluss wird dir dein Passwort per E-Mail zugeschickt, sobald dein Konto angelegt wurde.',
 	'requestaccount-areas-text' => 'Wähle die Themengebiete aus, in denen du das meiste Fachwissen hast oder wo du am meisten involviert sein wirst.',
 	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag verwendet.
 Du kannst Kontakt-Angaben wie eine Telefonnummer machen, um die Bearbeitung deines Antrags zu vereinfachen.',
@@ -1213,6 +1213,7 @@ Njamóžeš dalšne póžedanja stajiś.',
  * @author Crazymadlover
  * @author Egmontaz
  * @author Omnipaedista
+ * @author Tifa93
  * @author ZaDiak
  */
 $messages['el'] = array(
@@ -1223,6 +1224,9 @@ $messages['el'] = array(
 	'requestaccount-leg-person' => 'Προσωπικές πληροφορίες',
 	'requestaccount-leg-other' => 'Άλλες πληροφορίες',
 	'requestaccount-leg-tos' => 'Όροι Χρήσης',
+	'requestaccount-acc-text' => 'Ένα μήνυμα επιβεβαίωσης θα σταλεί στη διεύθυνση email σου μόλις υποβάλλεις αυτή την αίτηση. Η διεύθυνση δεν θα δημοσιευτεί.
+Παρακαλώ απάντησε πατώντας τον σύνδεσμο επιβεβαίωσης που έλαβες με το email.
+Τέλος, θα λάβεις τον κωδικό σου με email όταν δημιουργηθεί ο λογαριασμός σου.',
 	'requestaccount-real' => 'Πραγματικό όνομα:',
 	'requestaccount-same' => '(το ίδιο με το πραγματικό όνομα)',
 	'requestaccount-email' => 'Διεύθυνση ηλεκτρονικού ταχυδρομείου:',
@@ -1490,6 +1494,7 @@ Sähköpostiosoite on tarkistettu. Myönnä käyttäjätunnus tästä: $2.',
 /** French (français)
  * @author Crochet.david
  * @author Dereckson
+ * @author Gomoko
  * @author Grondin
  * @author IAlex
  * @author Louperivois
@@ -1516,7 +1521,9 @@ Une fois que le compte est accepté, vous recevrez un courriel de notification e
 	'requestaccount-leg-person' => 'Informations personnelles',
 	'requestaccount-leg-other' => 'Autres informations',
 	'requestaccount-leg-tos' => "Conditions d'utilisation",
-	'requestaccount-acc-text' => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que la demande aura été envoyée. Dans le courrier reçu, cliquez sur le lien correspondant à la confirmation de votre demande. Aussi, un mot de passe sera envoyé par courriel quand votre compte sera créé.',
+	'requestaccount-acc-text' => 'Un message de confirmation sera envoyé à votre adresse électronique une fois que cette demande aura été envoyée. L’adresse ne sera pas publiée.
+Veuillez répondre en cliquant sur le lien de confirmation dans le courriel.
+Après cela, votre mot de passe vous sera envoyé par courriel quand votre compte aura été créé.',
 	'requestaccount-areas-text' => 'Choisissez les domaines dans lesquels vous avez une expertise démontrée, ou dans lesquels vous êtes enclin à contribuer le plus.',
 	'requestaccount-ext-text' => 'L’information suivante reste privée et ne pourra être utilisée que pour cette requête. 
 	Vous avez la possibilité de lister des contacts tels qu’un numéro de téléphone pour obtenir une assistance pour confirmer votre identité.',
@@ -2407,7 +2414,7 @@ $messages['ja'] = array(
 	'requestaccount-leg-tos' => 'サービス利用規約',
 	'requestaccount-acc-text' => 'この申請を送信すると、確認メッセージをあなたのメールアドレスにお送りします。
 確認のため、そのメール内の確認用リンクをクリックしてください。
-あなたのアカウントを作成すると同時に、パスワードをメールでお送りします。',
+その後、あなたのアカウントを作成した際に、パスワードをメールでお送りします。',
 	'requestaccount-areas-text' => 'あなたが見識をお持ちの分野、または主に活動したい分野を選択してください。',
 	'requestaccount-ext-text' => '以下の個人情報は公開されず、この申請処理のみに利用されます。
 電話番号などの連絡先は、あなたが本人確認の補助を目的として記入いただけます。',

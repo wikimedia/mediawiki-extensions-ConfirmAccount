@@ -373,7 +373,8 @@ This message is followed by the following messages:
 	'confirmaccount-xff' => 'Used as label for the "X-Forwarded-For" address.
 
 The X-Forwarded-For (XFF) HTTP header field is a de facto standard for identifying the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.',
-	'confirmaccount-agent' => 'Used as label for the "User-Agent" HTTP header value.',
+	'confirmaccount-agent' => 'Used as label for the "User-Agent" HTTP header value.
+{{Identical|User agent}}',
 	'confirmaccount-legend' => 'Used as fieldset label in the form.',
 	'confirmaccount-submit' => 'Used as label for Submit button which is used to confirm the validity of the account request.
 {{Identical|Confirm}}',
