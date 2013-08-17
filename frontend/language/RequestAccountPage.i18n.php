@@ -2798,9 +2798,9 @@ Wann Äre Benotzerkont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir 
 	'requestaccount-leg-person' => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other' => 'Aner Informatiounen',
 	'requestaccount-leg-tos' => 'Conditioune vum Gebrauch',
-	'requestaccount-acc-text' => 'Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mail-Adress.
+	'requestaccount-acc-text' => "Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mail-Adress. D'E-Mail-Adress gëtt net verëffentlecht.
 Äntwert w.e.g. duerch klicken op de Confirmatiounslink deen an där Mail drasteet.
-Och Äert Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht gouf.', # Fuzzy
+Och Äert Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht gouf.",
 	'requestaccount-areas-text' => 'Wielt déi Sujeten aus an denen Dir formaalt Fachwëssen huet oder an deem Dir am léifste schaffe wëllt.',
 	'requestaccount-ext-text' => "Dës Informatioune gi vertraulech behandelt a gi just fir dës Ufro benotzt.
 Dir kënnt Kontaktinformatiounen wéi eng Telefonsnummer uginn fir d'Identitéitskonfirmatioun ze vereinfachen.",
@@ -3951,6 +3951,7 @@ Adresa de e-mail a fost confirmată. Poți confirma cererea aici "$2".',
 $messages['roa-tara'] = array(
 	'requestaccount' => 'Richieste de cunde utende',
 	'requestaccount-leg-user' => "Cunde de l'utende",
+	'requestaccount-leg-areas' => 'Arèe prengepàle de inderesse',
 	'requestaccount-leg-person' => "'Mbormaziune personale",
 	'requestaccount-leg-other' => "Otre 'mbormaziune",
 	'requestaccount-leg-tos' => "Termine d'u Servizie",
@@ -4810,6 +4811,7 @@ Daha fazla istekte bulunamazsınız.',
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
+ * @author Andriykopanytsia
  * @author Base
  * @author Prima klasy4na
  * @author Ата
@@ -4829,9 +4831,9 @@ $messages['uk'] = array(
 	'requestaccount-leg-person' => 'Особиста інформація',
 	'requestaccount-leg-other' => 'Інша інформація',
 	'requestaccount-leg-tos' => 'Умови надання послуг',
-	'requestaccount-acc-text' => 'Оскільки Ви надіслали запит, на Вашу адресу електронної пошти буде надіслано повідомлення з підтвердженням.
+	'requestaccount-acc-text' => 'Оскільки Ви надіслали запит, на Вашу адресу електронної пошти буде надіслано повідомлення з підтвердженням. Адресу не буде опубліковано.
 Будь ласка, дайте відповідь, натиснувши на посилання-підтвердження в електронному листі. 
-Ваш пароль буде надіслано електронною поштою після створення облікового запису.', # Fuzzy
+Нарешті, ваш пароль буде надіслано електронною поштою після створення облікового запису.',
 	'requestaccount-areas-text' => 'Оберіть сфери з поданих нижче, у яких Ви компетентні або в яких хотіли б працювати найбільше.',
 	'requestaccount-ext-text' => 'Наступна інформація залишається приватною і буде використана лише для цього запиту.
 Ви можете вказати контакти, як-то номер телефону, щоб допомогти в підтвердженні ідентичності.',
