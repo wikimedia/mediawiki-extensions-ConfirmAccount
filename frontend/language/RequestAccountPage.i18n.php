@@ -2342,9 +2342,9 @@ Quando l'account sarà stato approvato, ti verrà inviato via e-mail un messaggi
 	'requestaccount-leg-person' => 'Informazioni personali',
 	'requestaccount-leg-other' => 'Altre informazioni',
 	'requestaccount-leg-tos' => 'Termini del Servizio',
-	'requestaccount-acc-text' => "Al tuo indirizzo e-mail verrà inviato un messaggio di conferma quando questa richiesta sarà inviata.
-Per favore rispondi facendo clic sul link di conferma fornito nell'e-mail.
-Inoltre la tua password sarà inviata via e-mail quando il tuo account sarà stato creato.",
+	'requestaccount-acc-text' => "Verrà inviato un messaggio di conferma al tuo indirizzo email quando questa richiesta sarà inoltrata. L'indirizzo non sarà pubblicato.
+Per favore rispondi facendo clic sul link di conferma fornito nell'email.
+Infine, la tua password sarà inviata via email quando il tuo account sarà stato creato.",
 	'requestaccount-areas-text' => 'Selezionare le aree di seguito in cui si hanno competenze formali o in cui si vorrebbe fare la maggior parte del lavoro.',
 	'requestaccount-ext-text' => "Le seguenti informazioni saranno tenute private e saranno usate solo per questa richiesta.
 Potresti voler inserire dei contatti come un numero di telefono per aiutare l'identificazione.",
