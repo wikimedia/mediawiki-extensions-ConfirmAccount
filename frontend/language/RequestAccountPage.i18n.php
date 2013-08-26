@@ -1670,9 +1670,9 @@ Unha vez aprobada a conta, recibirá unha mensaxe de notificación por correo el
 	'requestaccount-leg-person' => 'Información persoal',
 	'requestaccount-leg-other' => 'Outra información',
 	'requestaccount-leg-tos' => 'Termos de servizo',
-	'requestaccount-acc-text' => 'Enviaráselle unha mensaxe de confirmación ao seu enderezo de correo electrónico unha vez enviada esta solicitude.
-Responda premendo na ligazón de confirmación que lle aparecerá no correo electrónico.
-Así mesmo, enviaráselle o seu contrasinal cando se cree a conta.',
+	'requestaccount-acc-text' => 'Enviaráselle unha mensaxe de confirmación ao seu enderezo de correo electrónico unha vez enviada esta solicitude. O enderezo non será publicado.
+Responda premendo na ligazón de confirmación achegada no correo electrónico.
+Finalmente, enviaráselle o seu contrasinal cando se cree a conta.',
 	'requestaccount-areas-text' => 'Seleccione embaixo as áreas dos temas dos que é máis experto ou nos que lle gustaría traballar máis.',
 	'requestaccount-ext-text' => 'A seguinte información mantense en privado e só se usará para esta solicitude.
 Ten a posibilidade listar contactos, como un número de teléfono, para axudar na confirmación da identidade.',
@@ -4994,6 +4994,7 @@ $3
  * @author Hydra
  * @author Kuailong
  * @author Mark85296341
+ * @author TianyinLee
  * @author Wilsonmess
  * @author Xiaomingyan
  */
@@ -5011,8 +5012,10 @@ $messages['zh-hans'] = array(
 	'requestaccount-leg-person' => '个人信息',
 	'requestaccount-leg-other' => '其他信息',
 	'requestaccount-leg-tos' => '服务条款',
-	'requestaccount-acc-text' => '当完成请求时，一封确认信息会发到您的电邮地址。
-	请在该封电邮中点击确认连结去反应它。同时，当您的账户被创建后，您账户的个密码将会电邮给您。',
+	'requestaccount-acc-text' => '一旦你提交了次请求，就会有一封确认信息发送到您的电邮地址。
+邮箱地址不会公开。
+请在该封电邮中点击确认连结来回应请求。
+最后，当您的账户被创建后，您的密码将会通过电邮发给您。',
 	'requestaccount-areas-text' => '在下面选择你最专业的或者最感兴趣的话题。',
 	'requestaccount-ext-text' => '以下的资料将会保密，而且只是会用在这次请求中。
 	您可能需要列示联络资料，像电话号码等去帮助证明您的确认。',
