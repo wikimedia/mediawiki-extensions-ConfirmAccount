@@ -2159,9 +2159,9 @@ Quando le conto ha essite approbate, tu recipera in e-mail un message de notific
 	'requestaccount-leg-person' => 'Informationes personal',
 	'requestaccount-leg-other' => 'Altere informationes',
 	'requestaccount-leg-tos' => 'Conditiones de servicio',
-	'requestaccount-acc-text' => 'Tu recipera in e-mail un message de confirmation quando tu submitte iste requesta.
+	'requestaccount-acc-text' => 'Tu recipera in e-mail un message de confirmation quando tu submitte iste requesta. Le adresse non essera publicate.
 Per favor responde per cliccar super le ligamine de confirmation presente in le e-mail.
-Tu recipera etiam tu contrasigno in e-mail al creation de tu conto.',
+Al fin, tu recipera tu contrasigno in e-mail al momento de creation de tu conto.',
 	'requestaccount-areas-text' => 'Selige in basso le areas thematic in le quales tu ha expertise formal o al quales tu volerea laborar le plus.',
 	'requestaccount-ext-text' => 'Le sequente information resta private e essera usate solmente pro iste requesta.
 Tu ha le possibilitate de listar contactos como un numero de telephono pro adjutar in le confirmation de tu identitate.',
