@@ -6285,7 +6285,7 @@ Se quitatz aquesta pagina sens confirmar o regetar aquesta demanda, serà totjor
 	'confirmaccount-acc' => "La demanda de compte es estada confirmada amb succès ; creacion de l'utilizaire novèl [[User:$1|$1]].",
 	'confirmaccount-rej' => 'La demanda es estada regetada amb succès.',
 	'confirmaccount-viewing' => '(actualament es a èsser {{GENDER:$1|visionat}} per [[User:$1|$1]])',
-	'confirmaccount-summary' => "Creacion de la pagina d'utilizaire amb sa biografia.", # Fuzzy
+	'confirmaccount-summary' => "Creacion de la pagina d'utilizaire per un utilizaire novèl.",
 	'confirmaccount-welc' => "'''Benvenguda sus ''{{SITENAME}}'' !'''
 Esperam que contribuiretz fòrça e plan.
 Desiraratz, benlèu, legir [[{{MediaWiki:Helppage}}|cossí plan amodar]].

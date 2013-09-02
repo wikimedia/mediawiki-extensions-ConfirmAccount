@@ -3509,7 +3509,7 @@ $messages['oc'] = array(
 	'requestaccount-leg-person' => 'Entresenhas personalas',
 	'requestaccount-leg-other' => 'Autras entresenhas',
 	'requestaccount-leg-tos' => 'Tèrmes del servici',
-	'requestaccount-acc-text' => 'Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. Dins lo corrièr recebut, clicatz sul ligam correspondent a la confirmacion de vòstra demanda. E mai, senhal serà mandat per corrièr electronic quand vòstre compte serà creat.',
+	'requestaccount-acc-text' => 'Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. Dins lo corrièr recebut, clicatz sul ligam correspondent a la confirmacion de vòstra demanda. E mai, senhal serà mandat per corrièr electronic quand vòstre compte serà creat.', # Fuzzy
 	'requestaccount-areas-text' => 'Causissètz los domenis dins los quals avètz una expertisa demostrada, o dins los quals sètz mai portat a contribuir.',
 	'requestaccount-ext-text' => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telefòn per obténer una assisténcia per confirmar vòstra identitat.',
 	'requestaccount-bio-text' => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences|vòstras preferéncias]].", # Fuzzy
@@ -3519,7 +3519,7 @@ $messages['oc'] = array(
 	'requestaccount-reqtype' => 'Situacion :',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografia personala :', # Fuzzy
+	'requestaccount-bio' => 'Biografia personala (tèxte brut solament) :',
 	'requestaccount-attach' => 'CV/Resumit (facultatiu)',
 	'requestaccount-notes' => 'Nòtas suplementàrias :',
 	'requestaccount-urls' => "Lista dels sites Web. Se n'i a mai d'un, separatz-los per un saut de linha :",
@@ -4358,7 +4358,9 @@ När din ansökan har godkänts, så kommer ett e-postmeddelande skickas till di
 	'requestaccount-leg-person' => 'Personlig information',
 	'requestaccount-leg-other' => 'Annan information',
 	'requestaccount-leg-tos' => 'Användarvillkor',
-	'requestaccount-acc-text' => 'När du skickar in den här ansökningen så kommer ett bekräftelsemeddelande skickas till din e-postadress. Svara på det meddelandet genom att klicka på bekräftelselänken i e-brevet. Till din e-postadress kommer även ditt lösenord skickas när ditt konto har skapats.',
+	'requestaccount-acc-text' => 'När du skickar in den här ansökningen kommer ett bekräftelsemeddelande skickas till din e-postadress. Adressen kommer inte att publiceras.
+Var god svara på meddelandet genom att klicka på bekräftelselänken i e-postmeddelandet.
+Ditt lösenord kommer även skickas till din e-postadress när ditt konto skapas.',
 	'requestaccount-areas-text' => 'Välj här de ämnesområden som du har expertkunskap om eller som du kommer att arbeta mest med.',
 	'requestaccount-ext-text' => 'Följande information kommer hållas hemlig och bara användas för denna ansökan.
 Om du vill kan du här ange kontaktinformation, t.ex. telefonnummer, för att lättare bekräfta din identitet.',
