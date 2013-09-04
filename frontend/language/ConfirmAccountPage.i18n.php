@@ -330,10 +330,12 @@ The label is any one of the following:
 
 This message follows the label {{msg-mw|Confirmaccount-real-q}} and the realname.',
 	'confirmaccount-reject' => 'Parameters:
-*$1 user name, can be used for GENDER
-*$2 date/time
-*$3 date
-*$4 time',
+* $1 - username, can be used for GENDER
+* $2 - (Optional) timestamp (time and date)
+* $3 - date
+* $4 - time
+See also:
+* {{msg-mw|Confirmaccount-held}}',
 	'confirmaccount-rational' => 'This message is followed by the reason or by the message {{msg-mw|Confirmaccount-noreason}}.
 
 This message follows any one of the following messages:
@@ -345,10 +347,12 @@ This message follows the message {{msg-mw|Confirmaccount-rational}}.
 {{Identical|None}}',
 	'confirmaccount-autorej' => 'Used as comment for the old stale request to explain why it has been rejected automatically.',
 	'confirmaccount-held' => 'Parameters:
-*$1 user name, can be used for GENDER
-*$2 date/time
-*$3 date
-*$4 time',
+* $1 - username, can be used for GENDER
+* $2 - (Optional) timestamp (time and date)
+* $3 - date
+* $4 - time
+See also:
+* {{msg-mw|Confirmaccount-reject}}',
 	'confirmaccount-create' => 'Used as label for the radiobox.
 {{Identical|Confirmaccount-submit}}',
 	'confirmaccount-deny' => 'Used as label for the radiobox.
@@ -1363,6 +1367,7 @@ Moarvat eo bet graet war-dro dija.",
 	'confirmaccount-leg-areas' => 'Diduadennoù pennañ',
 	'confirmaccount-leg-person' => 'Titouroù personel',
 	'confirmaccount-leg-other' => 'Titouroù all',
+	'confirmaccount-leg-ip' => "roadennoù chomlec'h IP",
 	'confirmaccount-name' => 'Anv implijer',
 	'confirmaccount-real' => 'Anv :',
 	'confirmaccount-email' => 'Postel :',
@@ -1374,7 +1379,7 @@ Moarvat eo bet graet war-dro dija.",
 	'confirmaccount-notes' => 'Notennoù ouzhpenn :',
 	'confirmaccount-urls' => "Roll lec'hiennoù web :",
 	'confirmaccount-none-p' => "(n'eo ket pourchaset)",
-	'confirmaccount-confirm' => "Implijit ar boutonioù amañ dindan da zegemer, nach pe zerc'hel ar goulenn-mañ :", # Fuzzy
+	'confirmaccount-confirm' => "Implijit ar boutonioù amañ dindan da zegemer, nach pe zerc'hel ar goulenn-mañ :",
 	'confirmaccount-econf' => '(kadarnaet)',
 	'confirmaccount-withcv' => '(CV amañ kevret)',
 	'confirmaccount-reject' => "(distaolet gant [[User:$1|$1]] d'an $2)", # Fuzzy

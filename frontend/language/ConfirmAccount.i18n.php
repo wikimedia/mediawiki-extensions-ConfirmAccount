@@ -33,8 +33,10 @@ $messages['en'] = array(
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'confirmaccount-newrequests' => 'Notice for account reviewers when there are account requests from users with a confirmed e-mail address. Parameters:
-* $1 is the number of open account requests matching given criteria.',
+	'confirmaccount-newrequests' => 'Notice for account reviewers when there are account requests from users with a confirmed email address.
+
+Parameters:
+* $1 - the number of open account requests matching given criteria',
 	'requestaccount-loginnotice' => 'Used in notice message in the "Create account" form in [{{canonicalurl:Special:UserLogin|type=signup}} Special:UserLogin?type=signup], if the extension RequestAccount is enabled.',
 	'right-confirmaccount' => '{{doc-right|confirmaccount}}',
 	'right-requestips' => '{{doc-right|requestips}}',

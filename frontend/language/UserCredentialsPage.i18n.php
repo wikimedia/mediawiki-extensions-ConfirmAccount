@@ -331,6 +331,7 @@ $messages['br'] = array(
 	'usercredentials-leg-areas' => 'Tachennoù dedenn pennañ :',
 	'usercredentials-leg-person' => 'Titouroù personel',
 	'usercredentials-leg-other' => 'Titouroù all',
+	'usercredentials-leg-ip' => "roadennoù chomlec'h IP",
 	'usercredentials-email' => 'Postel :',
 	'usercredentials-real' => 'Gwir anv :',
 	'usercredentials-bio' => 'Buhezskrid :',
