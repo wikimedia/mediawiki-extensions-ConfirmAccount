@@ -3817,6 +3817,7 @@ Não pode fazer mais pedidos.',
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
@@ -3839,9 +3840,9 @@ Assim que a conta for aprovada, você receberá um e-mail contendo uma mensagem 
 	'requestaccount-leg-person' => 'Informações pessoais',
 	'requestaccount-leg-other' => 'Outras informações',
 	'requestaccount-leg-tos' => 'Termos de Serviço',
-	'requestaccount-acc-text' => 'Será enviada um mensagem de confirmação para o seu endereço de e-mail assim que este pedido for submetido. 
-Por favor, responda clicando no link de confirmação fornecido no e-mail. 
-A sua senha também lhe será enviada por e-mail assim que a sua conta for criada.',
+	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de email assim que este pedido for submetido. O endereço não será publicado.
+Por favor, responda clicando no link de confirmação fornecido no email. 
+Além disto, sua senha também lhe será enviada por email assim que a sua conta for criada.',
 	'requestaccount-areas-text' => 'Selecione abaixo as áreas em que possui experiência formal ou em que gostaria de trabalhar mais.',
 	'requestaccount-ext-text' => 'A seguinte informação é mantida privada e só será utilizada para este pedido.
 Você pode querer listar contatos tal como seu número de telefone para ajudar na confirmação de identificação.',
