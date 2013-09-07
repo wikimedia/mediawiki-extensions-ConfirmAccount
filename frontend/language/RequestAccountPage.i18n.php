@@ -174,13 +174,13 @@ The page title for this message is {{msg-mw|Requestaccount}}.',
 
 This message is followed by a link which points to the Main page.',
 	'requestaccount-email-subj' => '{{Identical|SITENAME e-mail address confirmation}}',
-	'requestaccount-email-body' => 'This text is sent in an e-mail.
-* $1 is an IP address
-* $2 is a requested user name (no GENDER support)
-* $3 is a URL
-* $4 is a date/time
-* $5 is a date
-* $6 is a time',
+	'requestaccount-email-body' => 'This text is sent in an email. Parameters:
+* $1 - an IP address
+* $2 - a requested user name (no GENDER support)
+* $3 - a URL
+* $4 - a date/time
+* $5 - (Optional) a date
+* $6 - (Optional) a time',
 	'requestaccount-email-subj-admin' => '{{Identical|SITENAME account request}}',
 	'requestaccount-email-body-admin' => 'This message is the email body text send to a site admin whenever someone has requested a new account.
 
@@ -2696,7 +2696,7 @@ Sobald De ene Zohjang kräje häß, kriß De en <i lang=\"en\">e-mail</i> jesche
 	'requestaccount-leg-person' => 'Päsönlesche Enfomazjuhne',
 	'requestaccount-leg-other' => 'Ander Ennfomazjuhne',
 	'requestaccount-leg-tos' => 'Bedengunge för et Metmaache',
-	'requestaccount-acc-text' => 'En <i lang="en">e-mail</i> met en Beschtätejung jeiht aan Ding <i lang="en">e-mail</i>-Addräß, wann Ding Aanfrooch enjereisch es. Donn op dä Lengk för et Beschtäätejje klecke, dä en dä <i lang="en">e-mail</i> dren es. Wann Dinge Zohjang enjerescht es, kriß De norr_em <i lang="en">e-mail</i> jescheck met enem Passwoot dren, woh De Desch dann heh met enlogge kanns.',
+	'requestaccount-acc-text' => 'En <i lang="en">e-mail</i> medd ene Beschtätejung jeiht aan Ding <i lang="en">e-mail</i>-Addräß, wann Ding Aanfrooch enjereisch es. Donn op dä Lengk för et Beschtäätejje klecke, dä en dä <i lang="en">e-mail</i> dren es. Wann Dinge Zohjang enjereesch es, kriß De norr_em <i lang="en">e-mail</i> jescheck medd enem Paßwoot dren, woh De Desch dann heh met enlogge kanns.',
 	'requestaccount-areas-text' => 'Donn he dronger ußsöke en wat De et miehßte Fachwesse häß un Desch et bäß ußkänns, udder woh De et miihtß em Wikki beidraare wells.',
 	'requestaccount-ext-text' => 'Di Daate hee dronger blieve unger uns. Se wääde allein doför jebruch, övver Ding Aanfrooch noh enem Zohjang ze äntscheide. He kanns De Saache, wi en Telefonnummer, aanjevve, di methellfe künne, ze prööfe, wä De bes, un dat ding Aanjabe reschtesch sin.',
 	'requestaccount-bio-text' => 'Donn alles aanjevve, wat vun Belang es för Ding Levve.',

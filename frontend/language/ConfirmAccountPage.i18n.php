@@ -429,8 +429,8 @@ The email body is any one of the following:
 {{Identical|SITENAME account request}}',
 	'confirmaccount-email-body' => 'Used as email body. Parameters:
 * $1 - username
-* $2 - initial password
-* $3 - reason
+* $2 - initial password (random)
+* $3 - (Unused) reason
 The email subject is {{msg-mw|Confirmaccount-email-subj}}.
 {{Identical|Your request for an account ...}}',
 	'confirmaccount-email-body2' => 'Used as email body. Parameters:
@@ -6786,6 +6786,7 @@ Podem haver listas de contactos no site que poderá usar se deseja saber mais so
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
@@ -6856,11 +6857,11 @@ Se você simplesmente abandonar esta página sem confirmar ou rejeitar esta requ
 	'confirmaccount-confirm' => 'Use as opções abaixo para aceitar, rejeitar ou colocar em espera esta requisição:',
 	'confirmaccount-econf' => '(confirmado)',
 	'confirmaccount-withcv' => '(Curriculum vitae anexado)',
-	'confirmaccount-reject' => '(rejeitado por [[User:$1|$1]] em $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|rejeitado}} por [[User:$1|$1]] em $3 às $4)',
 	'confirmaccount-rational' => 'Explicação dada ao requerente:',
 	'confirmaccount-noreason' => '(nenhum)',
 	'confirmaccount-autorej' => '(esta requisição foi automaticamente descartada devido a inatividade)',
-	'confirmaccount-held' => '(marcado como "em espera" por [[User:$1|$1]] em $2)', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|marcado}} como "em espera" por [[User:$1|$1]] em $3 às $4)',
 	'confirmaccount-create' => 'Aceitar (criar conta)',
 	'confirmaccount-deny' => 'Rejeitar (retirar da lista)',
 	'confirmaccount-hold' => 'Colocar em espera',
