@@ -138,6 +138,13 @@ $messages['cs'] = array(
 	'requestaccount-loginnotice' => "Chcete-li získat uživatelský účet, je třeba o něj '''[[Special:RequestAccount|požádat]]'''.",
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'requestaccount-loginnotice' => "I gael cyfrif defnyddiwr, rhaid i chi '''[[Special:RequestAccount|wneud cais am gyfrif]]'''.",
+);
+
 /** Danish (dansk)
  * @author Kaare
  */

@@ -908,6 +908,13 @@ $messages['cu'] = array(
 	'requestaccount-level-0' => 'творьць',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'requestaccount' => 'Cais am gyfrif',
+);
+
 /** Danish (dansk)
  * @author Aka-miki
  * @author Christian List

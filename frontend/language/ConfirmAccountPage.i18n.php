@@ -6301,11 +6301,11 @@ Benvenguda encara e bona contribucions.",
 	'confirmaccount-email-body2' => "Vòstra demanda de compte d'utilizaire es estada acceptada sus {{SITENAME}}. Nom del compte d'utilizaire : $1 Senhal: $2 $3 Per de rasons de seguretat, vos caldrà cambiar vòstre senhal al moment de vòstra primièra connexion. Per vos connectar, anatz sus {{fullurl:Special:UserLogin}}.",
 	'confirmaccount-email-body3' => 'O planhèm, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. Mantuna rason pòdon explicar aqueste cas de figura. Es possible que ajatz mal emplenat lo formulari, o que ajatz pas indicat sufisentament d’informacions dins vòstras responsas. Es encara possible que emplenetz pas los critèris d’eligibilitat per obténer vòstre compte. Es possible d’èsser sus la lista dels contactes se desiratz conéisser melhor las condicions requesas.',
 	'confirmaccount-email-body4' => 'O planhèm, vòstra demanda de compte d\'utilizaire "$1" es estada regetada sus {{SITENAME}}. $2 Es possible d’èsser sus la lista dels contactes per conéisser melhor los critèris per poder s’inscriure.',
-	'confirmaccount-email-body5' => 'Abans que vòstra requèsta pel compte « $1 » pòsca èsser acceptada sus {{SITENAME}}, vos cal produire qualques entresenhas suplementàrias.
+	'confirmaccount-email-body5' => 'Abans que vòstra requèsta pel compte « $1 » pòsca èsser acceptada sus {{SITENAME}}, vos cal produsir qualques entresenhas suplementàrias.
 
 $2
 
-Aquò permet d’èsser sus la tièra dels contactes del site, se ne desiratz saber mai sus las règlas que concernisson los comptes.',
+Aquò permet d’èsser sus la lista dels contactes del site, se ne desiratz saber mai sus las règlas que concernisson los comptes.',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
