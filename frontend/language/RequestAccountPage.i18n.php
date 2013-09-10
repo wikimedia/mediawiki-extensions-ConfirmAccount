@@ -3314,6 +3314,7 @@ $messages['nds'] = array(
 
 /** Dutch (Nederlands)
  * @author Annabel
+ * @author HanV
  * @author SPQRobin
  * @author Siebrand
  */
@@ -3331,9 +3332,9 @@ Als uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Spec
 	'requestaccount-leg-person' => 'Persoonlijke gegevens',
 	'requestaccount-leg-other' => 'Overige informatie',
 	'requestaccount-leg-tos' => 'Gebruiksvoorwaarden',
-	'requestaccount-acc-text' => 'U ontvangt een e-mailbevestiging als uw aanvraag is ontvangen.
-Reageer daar op door te klikken op de koppeling die in de e-mail staat.
-U krijgt een wachtwoord als uw gebruiker is aangemaakt.',
+	'requestaccount-acc-text' => 'U ontvangt een e-mailbevestiging als uw aanvraag ontvangen is.
+Reageer door te klikken op de koppeling in de e-mail.
+U krijgt een wachtwoord per e-mail toegestuurd als uw account aangemaakt is.',
 	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee u ervaring hebt of waar u denkt het meeste aan te gaan bijdragen.',
 	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor deze aanvraag.
 U kunt contactgegevens zoals een telefoonnummer opgeven om te helpen bij het vaststellen van uw identiteit.',
@@ -3361,7 +3362,7 @@ Laat het veld leeg als u geen bestand meer wilt bijvoegen.',
 De naam die ik heb opgegeven onder "Uw naam" is inderdaad mijn eigen echte naam.',
 	'requestaccount-submit' => 'Gebruikersnaam aanvragen',
 	'requestaccount-sent' => 'Uw gebruikersaanvraag is verstuurd en wacht om nagekeken te worden.
-Er is een bevestigingse-mail naar uw e-mailadres gezonden',
+Er is ter bevestiging een e-mail naar uw e-mailadres gezonden.',
 	'request-account-econf' => 'Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.',
 	'requestaccount-email-subj' => '{{SITENAME}} bevestiging e-mailadres',
 	'requestaccount-email-body' => 'Iemand, waarschijnlijk u, heeft vanaf IP-adres $1 op {{SITENAME}} een aanvraag gedaan
@@ -3371,8 +3372,8 @@ Open de onderstaande koppeling in uw browser om te bevestigen dat deze gebruiker
 
 $3
 
-Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, volg de kopeeling dan *niet*. 
-Deze bevestigingse-mail vervalt op $4.',
+Als de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, gebruik de koppeling dan *niet*. 
+Deze link is geldig tot $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} gebruikersaanvragen',
 	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
 Het e-mailadres is bevestigd.
@@ -3382,6 +3383,7 @@ U kunt geen nieuwe aanvragen meer uitbrengen.',
 );
 
 /** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author HanV
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
@@ -3393,7 +3395,7 @@ Als je aanvraag is goedgekeurd, krijg je een e-mail en daarna kan je je [[Specia
 	'requestaccount-dup' => "'''Let op: je bent al aangemeld met een geregistreerde gebruikersnaam.'''",
 	'requestaccount-acc-text' => 'Je ontvangt een e-mailbevestiging als uw aanvraag is ontvangen.
 Reageer daar op door te klikken op de koppeling die in de e-mail staat.
-Je krijgt een wachtwoord als je gebruiker is aangemaakt.',
+Je krijgt een wachtwoord als je gebruiker is aangemaakt.', # Fuzzy
 	'requestaccount-areas-text' => 'Selecteer hieronder de onderwerpen waarmee je ervaring hebt of waar je denkt het meeste aan te gaan bijdragen.',
 	'requestaccount-ext-text' => 'De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor deze aanvraag.
 Je kunt contactgegevens zoals een telefoonnummer opgeven om te helpen bij het vaststellen van je identiteit.',
@@ -3405,17 +3407,17 @@ Zorg ervoor dat je hier gegevens noteert die gepubliceerd mogen worden.",
 	'requestaccount-resub' => 'Je CV-bestand moet opnieuw geselecteerd worden om veiligheidsredenen.
 Laat het veld leeg als je geen bestand meer wilt bijvoegen.',
 	'requestaccount-sent' => 'Je gebruikersaanvraag is verstuurd en wacht om nagekeken te worden.
-Er is een bevestigingse-mail naar je e-mailadres gezonden',
+Er is ter bevestiging een e-mail naar je e-mailadres gezonden.',
 	'request-account-econf' => 'Je e-mailadres is bevestigd en wordt in je gebruikersaanvraag opgenomen.',
 	'requestaccount-email-body' => 'Iemand, waarschijnlijk jij, heeft vanaf IP-adres $1 op {{SITENAME}} een aanvraag gedaan
 voor het aanmaken van gebruiker "$2" met dit e-mailadres.
 
-Open de onderstaande koppeling in je browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij jou hoort:
+Klik op de onderstaande koppeling om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij jou hoort:
 
 $3
 
-Als de gebruiker is aangemaakt krijg jij alleen een e-mail met het wachtwoord. Als de aanvraag niet van jou afkomstig is, volg de koppeling dan *niet*. 
-Deze bevestigingse-mail vervalt op $4.',
+Als de gebruiker is aangemaakt krijg je een e-mail met het wachtwoord. Als de aanvraag niet van jou afkomstig is, gebruik de koppeling dan *niet*. 
+Doe de bevestiging voor $4.',
 	'requestaccount-email-body-admin' => '"$1" heeft een gebruiker aangevraagd en wacht op bevestiging.
 Het e-mailadres is bevestigd.
 Je kunt de aanvraag hier "$2" bevestigen.',
