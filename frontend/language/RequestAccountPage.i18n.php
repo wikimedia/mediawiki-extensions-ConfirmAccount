@@ -93,8 +93,7 @@ $messages['qqq'] = array(
 {{Identical|Request account}}',
 	'requestaccount-text' => 'Used as intro text in [[Special:RequestAccount]].
 
-See also:
-* {{msg-mw|Requestaccount-page}} - link target',
+Refers to {{msg-mw|Requestaccount-page}}.',
 	'requestaccount-footer' => '{{optional}}',
 	'requestaccount-page' => 'Used as link target in the following messages:
 * {{msg-mw|Requestaccount-text}}
@@ -164,7 +163,9 @@ This message follows {{msg-mw|Requestaccount-bio-text}}.',
 	'requestaccount-exts' => 'Used as error message if the file type is not allowed.
 
 Allowed types (default): txt, pdf, doc, latex, rtf, text, wp, wpd, sxw',
-	'requestaccount-tos' => '"Real name" should be exactly as {{msg-mw|requestaccount-real}}, minus the colon.',
+	'requestaccount-tos' => '"Real name" should be exactly as {{msg-mw|Requestaccount-real}}, minus the colon.
+
+Refers to {{msg-mw|Requestaccount-page}}.',
 	'requestaccount-submit' => 'Used as label for the Submit button.
 {{Identical|Request account}}',
 	'requestaccount-sent' => 'Used as success message.

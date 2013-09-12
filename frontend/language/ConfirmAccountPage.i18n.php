@@ -410,6 +410,8 @@ See also:
 	'confirmaccount-summary' => 'Used as "Edit summary". By the edit, the user page will be created.',
 	'confirmaccount-welc' => 'In ConfirmAccount extension. A welcome message that is automatically placed on the talk pages of new users.
 
+Refers to {{msg-mw|Helppage}}.
+
 This message is followed by the Signature.
 
 The edit summary for this welcome message is {{msg-mw|Confirmaccount-wsum}}.',
@@ -6877,7 +6879,7 @@ Se você simplesmente abandonar esta página sem confirmar ou rejeitar esta requ
 	'confirmaccount-badaction' => 'Uma ação válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.',
 	'confirmaccount-acc' => 'Requisição de conta confirmada com sucesso; criada nova conta de usuário [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Requisiçãode conta rejeitada com sucesso.',
-	'confirmaccount-viewing' => '(atualmente sendo visualizada por [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '(atualmente sendo visualizada {{GENDER:$1|pelo|pela|por}} [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Criando a página de usuário para o usuário novo.',
 	'confirmaccount-welc' => "'''Bem-vindo a ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.
 Provavelmente você desejará ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. 
