@@ -4897,6 +4897,7 @@ $messages['la'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'confirmaccounts' => 'Ufroe vu Benotzerkonte confirméieren',
@@ -5000,16 +5001,16 @@ Fir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.',
 Dëst ka verschidden Ursaachen hunn.
 Et ka sinn datt dir de Formulaire net richteg ausgefëllt hutt, net genuch an Ären Äntwerten uginn hutt, oder op eng aner Manéier d\'Critère vun de Benotzerrichtinnen net erfëllt hutt.
 EVentuell gëtt et Kontaklëschten um Site déi Dir benotze kënnt fir méi iwwer d\'Benotzerrichtlinnen gewuer ze ginn.',
-	'confirmaccount-email-body4' => 'Pardon, Är Ufro fir e Benotzerkont "$1" gouf op {{SITENAME}} ofgelehnt.
+	'confirmaccount-email-body4' => 'Pardon, Är Ufro fir e Benotzerkont "$1" gouf op {{SITENAME}} ofgeleent.
 
 $2
 
-Eventuell fannt Dir eng Kontaktlëscht déi dir benotze kënnt wann dir méi iwwert d\'Benotzerrichtlinne wësse wëllt.',
-	'confirmaccount-email-body5' => 'Éier Är Ufro fir e Benotzerkont "$1" kann op {{SITENAME}} ugeholl musst Dir d\'éischt epuer zousätzech Informatiounen uginn.
+Eventuell fannt Dir eng Kontaktlëscht déi Dir benotze kënnt wann Dir méi iwwer d\'Benotzerrichtlinne wësse wëllt.',
+	'confirmaccount-email-body5' => 'Ier Är Ufro fir e Benotzerkont "$1" kann op {{SITENAME}} ugeholl musst Dir fir d\'éischt e puer zousätzlech Informatiounen uginn.
 
 $2
 
-Méiglecherweis gëtt et Kontaktlëschten op dem Site déi Dir benotze kënnt wann Dir méi iwwert d\'richlinnen vun de Benotzerkonte wësse wëllt.',
+Méiglecherweis gëtt et Kontaktlëschten op dem Site déi Dir benotze kënnt wann Dir méi iwwer d\'Richlinne vun de Benotzerkonte wësse wëllt.',
 );
 
 /** Limburgish (Limburgs)
@@ -8303,6 +8304,7 @@ $messages['tk'] = array(
 
 /** Tagalog (Tagalog)
  * @author AnakngAraw
+ * @author Sky Harbor
  */
 $messages['tl'] = array(
 	'confirmaccounts' => 'Tiyakin ang mga paghiling ng akawnt',
@@ -8341,7 +8343,7 @@ Kapag payak na hinayaan mo lamang ang pahinang ito na hindi tinitiyak o tinatang
 	'confirmaccount-showheld' => 'nakabinbing mga paghiling',
 	'confirmaccount-showexp' => 'lipas na mga paghiling',
 	'confirmaccount-review' => 'Suriin',
-	'confirmaccount-types' => 'Pumili ng isang nakapilang pagpapatotoo ng akawnt mula sa ibaba:',
+	'confirmaccount-types' => 'Pumili ng isang nakapilang pagpapatotoo ng kuwenta mula sa ibaba:',
 	'confirmaccount-all' => '(ipakita ang lahat ng mga nakapila)',
 	'confirmaccount-type' => 'Pila:',
 	'confirmaccount-type-0' => 'inaasahang magiging mga may-akda',
@@ -8352,7 +8354,7 @@ Kapag payak na hinayaan mo lamang ang pahinang ito na hindi tinitiyak o tinatang
 	'confirmaccount-q-stale' => 'lipas na mga paghiling',
 	'confirmaccount-badid' => 'Walang nakabinbing kahilingan na umuugma sa ibinigay na ID.
 Maaaring naisagawa na ito.',
-	'confirmaccount-leg-user' => 'Akawnt ng tagagamit',
+	'confirmaccount-leg-user' => 'Kuwenta ng tagagamit',
 	'confirmaccount-leg-areas' => 'Mga pangunahing bagay-bagay na kinawiwilihan',
 	'confirmaccount-leg-person' => 'Pansariling kabatiran',
 	'confirmaccount-leg-other' => 'Iba pang kabatiran',
@@ -8376,7 +8378,7 @@ Maaaring naisagawa na ito.',
 	'confirmaccount-noreason' => '(wala)',
 	'confirmaccount-autorej' => '(kusang iwinaksi na ang kahilingang ito dahil sa kawalan ng galaw)',
 	'confirmaccount-held' => '(tinatakang "nakaantabay" ni [[User:$1|$1]] noong $2)', # Fuzzy
-	'confirmaccount-create' => 'Tanggapin (likhain ang akawnt)',
+	'confirmaccount-create' => 'Tanggapin (likhain ang kuwenta)',
 	'confirmaccount-deny' => 'Tanggihan (alisin sa talaan)',
 	'confirmaccount-hold' => 'Ibinbin',
 	'confirmaccount-spam' => 'Manlulusob (huwag ipadala ang e-liham)',

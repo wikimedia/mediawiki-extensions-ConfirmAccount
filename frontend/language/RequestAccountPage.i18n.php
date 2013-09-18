@@ -4688,23 +4688,24 @@ $3
 
 /** Tagalog (Tagalog)
  * @author AnakngAraw
+ * @author Sky Harbor
  */
 $messages['tl'] = array(
-	'requestaccount' => 'Hilingin ang akawnt',
-	'requestaccount-text' => "'''Punuan at ipasa ang sumusunod na pormularyo upang humiling ng isang akawnt ng tagagamit'''.
+	'requestaccount' => 'Hilingin ang kuwenta',
+	'requestaccount-text' => "'''Punuan at ipasa ang sumusunod na pormularyo upang humiling ng isang kuwenta ng tagagamit'''.
 
 Tiyaking nabasa mo na muna ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Paglilingkod]] bago humiling ng isang kuwenta.
 
-Kapag napahintulutan na ang akawnt, padadalhan ka ng isang mensahe ng pagbibigay-alam sa pamamagitan ng isang e-liham at magagamit na ang kuwenta sa [[Special:UserLogin|paglagda]].",
+Kapag napahintulutan na ang kuwenta, padadalhan ka ng isang mensahe ng pagbibigay-alam sa pamamagitan ng isang e-liham at magagamit na ang kuwenta sa [[Special:UserLogin|paglagda]].",
 	'requestaccount-footer' => '',
 	'requestaccount-page' => '{{ns:project}}:Mga Patakaran ng Paglilingkod',
-	'requestaccount-dup' => "'''Paunawa: Nakalagda ka na at may isang ipinatalang akawnt.'''",
-	'requestaccount-leg-user' => 'Akawnt ng tagagamit',
+	'requestaccount-dup' => "'''Paunawa: Nakalagda ka na gamit ang isang nakatalang kuwenta.'''",
+	'requestaccount-leg-user' => 'Kuwenta ng tagagamit',
 	'requestaccount-leg-areas' => 'Mga pangunahing bagay-bagay na kinawiwilihan',
 	'requestaccount-leg-person' => 'Kabatirang pansarili',
 	'requestaccount-leg-other' => 'Iba pang kabatiran',
 	'requestaccount-leg-tos' => 'Mga Patakaran ng Paglilingkod',
-	'requestaccount-acc-text' => 'Ang iyong adres ng e-liham ay padadalhan ng isang mensahe ng pagtitiyak kapag naipasa na ang kahilingang ito. Tumugon po lamang sa pamamagitan ng pagpindot sa kawing ng pagtitiyak na ibinigay ng e-liham. Gayundin, ipadadala rin sa pamamagitan ng isang e-liham ang iyong hudyat kapag nalikha na ang akawnt mo.',
+	'requestaccount-acc-text' => 'Ang iyong adres ng e-liham ay padadalhan ng isang mensahe ng pagtitiyak kapag naipasa na ang kahilingang ito. Tumugon po lamang sa pamamagitan ng pagpindot sa kawing ng pagtitiyak na ibinigay ng e-liham. Gayundin, ipadadala rin sa pamamagitan ng isang e-liham ang iyong hudyat kapag nalikha na ang akawnt mo.', # Fuzzy
 	'requestaccount-areas-text' => 'Piliin ang mga pook ng paksang nasa ibaba kung saan mayroon kang pormal na kadalubhasaan o nais na pag-ukulan ng karamihan sa mga gawain mo.',
 	'requestaccount-ext-text' => 'Pinananatiling pansarili ang sumusunod na kabatiran at gagamitin lamang para sa kahilingang ito.
 Maaaring naisin mong magtala ng mga kabatirang pangpakikipag-ugnayang katulad ng bilang ng telepono upang makatulong sa pagtitiyak ng pagkakakilanlan.',
