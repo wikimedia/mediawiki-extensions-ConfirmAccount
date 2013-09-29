@@ -1830,7 +1830,7 @@ Ch'a contròla che ël nòm a sia scrivù da bin.",
  */
 $messages['ps'] = array(
 	'usercredentials-user' => 'کارن-نوم:',
-	'usercredentials-leg-user' => 'ګڼون',
+	'usercredentials-leg-user' => 'گڼون',
 	'usercredentials-leg-person' => 'ځاني مالومات',
 	'usercredentials-leg-other' => 'نور مالومات',
 	'usercredentials-email' => 'برېښليک:',

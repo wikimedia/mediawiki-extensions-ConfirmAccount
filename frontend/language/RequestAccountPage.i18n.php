@@ -2852,7 +2852,7 @@ Dës Confirmatioun ass just valabel bis $4.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} Ufro fir ee Benotzerkont',
 	'requestaccount-email-body-admin' => '"$1" huet e Benotzerkont ugefrot a waart op eng Confirmatioun.
 D\'E-mailadresse ass confirméiert. Dir kënnt déi Ufro hei "$2" confirméieren.',
-	'acct_request_throttle_hit' => 'Pardon, Dir hutt schonns {{PLURAL:$1|1Benotzerkont|$1 Benotzerkonten}} ugefrot.
+	'acct_request_throttle_hit' => 'Pardon, Dir hutt scho(nn) {{PLURAL:$1|1Benotzerkont|$1 Benotzerkonten}} ugefrot.
 Dir kënnt elo keng weider Ufroe méi maachen.',
 );
 
@@ -3745,8 +3745,8 @@ Për darmagi ant ës moment-sì i podoma nen aceté dj'àotre domande da chiel/c
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'requestaccount' => 'د ګڼون غوښتنه',
-	'requestaccount-leg-user' => 'ګڼون',
+	'requestaccount' => 'د گڼون غوښتنه',
+	'requestaccount-leg-user' => 'گڼون',
 	'requestaccount-leg-person' => 'ځاني مالومات',
 	'requestaccount-leg-other' => 'نور مالومات',
 	'requestaccount-real' => 'اصلي نوم:',
@@ -3755,8 +3755,8 @@ $messages['ps'] = array(
 	'requestaccount-level-1' => 'سمونګر',
 	'requestaccount-bio' => 'شخصي ژوندليک (يوازې ساده متن):',
 	'requestaccount-tooshort' => 'ستاسې ژوندليک بايد لږ تر لږه $1 {{PLURAL:$1|ويی|وييونه}} اوږد وي.',
-	'requestaccount-submit' => 'د ګڼون غوښتنه',
-	'requestaccount-email-subj-admin' => 'د {{SITENAME}} د ګڼون غوښتنه',
+	'requestaccount-submit' => 'د گڼون غوښتنه',
+	'requestaccount-email-subj-admin' => 'د {{SITENAME}} د گڼون غوښتنه',
 );
 
 /** Portuguese (português)

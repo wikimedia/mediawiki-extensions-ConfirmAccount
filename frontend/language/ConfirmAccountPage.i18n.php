@@ -3068,8 +3068,8 @@ Nome da conta: $1
 
 Contrasinal: $2
 
-Por razóns de seguranza terá que mudar o contrasinal a primeira vez que se rexistre. Para rexistrarse,
-vaia a {{fullurl:Special:UserLogin}}.',
+Por razóns de seguridade terá que mudar o contrasinal a primeira vez que se rexistre.
+Para rexistrarse, vaia a {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Aprobouse a súa solicitude de conta en {{SITENAME}}.
 
 Nome da conta: $1
@@ -3078,8 +3078,8 @@ Contrasinal: $2
 
 $3
 
-Por razóns de seguranza terá que mudar o contrasinal a primeira vez que se rexistre. Para rexistrarse,
-vaia a {{fullurl:Special:UserLogin}}.',
+Por razóns de seguridade terá que mudar o contrasinal a primeira vez que se rexistre.
+Para rexistrarse, vaia a {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body3' => 'Sentímolo, pero a súa solicitude de conta $1 foi rexeitada en {{SITENAME}}.
 
 Isto pode deberse a varias causas. Pode que non enchese o formulario correctamente, non respondese na extensión
@@ -4954,7 +4954,7 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-rational' => 'Ursaach fir deen deen ugefrot huet:',
 	'confirmaccount-noreason' => '(keen)',
 	'confirmaccount-autorej' => '(dës Ufro gouf automatesch wéint Inaktivitéit klasséiert)',
-	'confirmaccount-held' => '(als "amgaang" vum [[User:$1|Benotzer $1]] den $3 ëm $4 markéiert)',
+	'confirmaccount-held' => '(als "am Gaang" vum [[User:$1|Benotzer $1]] den $3 ëm $4 markéiert)',
 	'confirmaccount-create' => 'Unhuelen (Benotzerkont opmaachen)',
 	'confirmaccount-deny' => 'Refuséieren (Benotzerkont gëtt geläscht)',
 	'confirmaccount-hold' => 'Ofwaarden',
@@ -6628,7 +6628,7 @@ $messages['ps'] = array(
 	'confirmaccount-showrej' => 'رټل شوې غوښتنې',
 	'confirmaccount-review' => 'مخکتنه',
 	'confirmaccount-q-open' => 'پرانيستې غوښتنې',
-	'confirmaccount-leg-user' => 'ګڼون',
+	'confirmaccount-leg-user' => 'گڼون',
 	'confirmaccount-leg-person' => 'ځاني مالومات',
 	'confirmaccount-leg-other' => 'نور مالومات',
 	'confirmaccount-name' => 'کارن-نوم',
@@ -6639,20 +6639,20 @@ $messages['ps'] = array(
 	'confirmaccount-bio' => 'ژوندليک:',
 	'confirmaccount-urls' => 'د وېبځايونو لړليک:',
 	'confirmaccount-noreason' => '(هېڅ)',
-	'confirmaccount-create' => 'ګڼون (ګڼون جوړول)',
+	'confirmaccount-create' => 'گڼون (گڼون جوړول)',
 	'confirmaccount-ip' => 'IP پته:',
 	'confirmaccount-submit' => 'تاييد',
 	'confirmaccount-wsum' => 'ښه راغلۍ!',
-	'confirmaccount-email-body' => 'په {{SITENAME}} باندې د يوه ګڼون لپاره غوښتنه مو ومنل شوه .
+	'confirmaccount-email-body' => 'په {{SITENAME}} باندې د يوه گڼون لپاره غوښتنه مو ومنل شوه .
 
-د ګڼون نوم: $1
+گڼون نوم: $1
 
 پټنوم: $2
 
 د تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:UserLogin}} ولاړ شی.',
-	'confirmaccount-email-body2' => 'په {{SITENAME}} باندې د يوه ګڼون لپاره غوښتنه مو ومنل شوه .
+	'confirmaccount-email-body2' => 'په {{SITENAME}} باندې د يوه گڼون لپاره غوښتنه مو ومنل شوه .
 
-د ګڼون نوم: $1
+گڼون نوم: $1
 
 پټنوم: $2
 
