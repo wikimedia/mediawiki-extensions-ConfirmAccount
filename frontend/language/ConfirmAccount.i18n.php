@@ -128,6 +128,17 @@ $messages['ca'] = array(
 	'right-lookupcredentials' => "Mostra les [[Special:UserCredentials|credencials d'usuari]]",
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄)
+ * @author Yejianfei
+ */
+$messages['cdo'] = array(
+	'confirmaccount-newrequests' => "'''$1'''開電子郵件確認[[Special:ConfirmAccounts|賬戶{{PLURAL:$1|請求敆𡅏等}}]]。'''汝需要其是耐心！'''",
+	'requestaccount-loginnotice' => "卜得遘蜀萆用戶其賬戶，汝著'''[[Special:RequestAccount|申請蜀萆賬戶]]'''。",
+	'right-confirmaccount' => '覷[[Special:ConfirmAccounts|請求賬戶其隊列]]',
+	'right-requestips' => '處理請求賬戶其辰候，覷請求者其IP地址',
+	'right-lookupcredentials' => '覷[[Special:UserCredentials|用戶憑據]]',
+);
+
 /** Czech (česky)
  * @author Jkjk
  * @author Li-sung
@@ -207,6 +218,17 @@ $messages['dsb'] = array(
 	'right-confirmaccount' => '[[Special:ConfirmAccounts|Cakański rěd z pominanymi kontami]] se woglědaś',
 	'right-requestips' => 'IP-adrese póžadarja se woglědaś, mjaztym až se pominane konta pśeźěłuju',
 	'right-lookupcredentials' => '[[Special:UserCredentials|Wužywarske wopšawnjeńki]] se woglědaś',
+);
+
+/** British English (British English)
+ * @author Yejianfei
+ */
+$messages['en-gb'] = array(
+	'confirmaccount-newrequests' => "'''$1''' open email confirmed [[Special:ConfirmAccounts|account {{PLURAL:$1|request is pending|requests are pending}}]]. '''Your attention is needed!'''",
+	'requestaccount-loginnotice' => "To obtain a user account, you must '''[[Special:RequestAccount|request one]]'''.",
+	'right-confirmaccount' => 'View the [[Special:ConfirmAccounts|queue with requested accounts]]',
+	'right-requestips' => "View requester's IP addresses while processing requested accounts",
+	'right-lookupcredentials' => 'View [[Special:UserCredentials|user credentials]]',
 );
 
 /** Esperanto (Esperanto)

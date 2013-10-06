@@ -4649,10 +4649,22 @@ $messages['kn'] = array(
 );
 
 /** Korean (한국어)
+ * @author Hym411
  * @author Kwj2772
  * @author 아라
  */
 $messages['ko'] = array(
+	'confirmaccounts' => '계정 승인 요청',
+	'confirmedit-desc' => '사무관에게 계정 생성 요청을 허가할 권한을 부여',
+	'confirmaccount-maintext' => "'''이 페이지는 ''{{SITENAME}}''의 대기중인 계정 요청을 처리하기 위해 존재합니다.'''
+
+각 계정 요청은 세 개의 하부 내용으로 구성됩니다. 열린 요청, 다른 관리자가 추가적인 정보를 얻기 위해 임시 정지한 계정, 그리고 거절된 요청입니다.
+
+요청에 응답할 때는 신중하게 검토하고, 요청된 대로 승인하세요.
+당신의 행위는 비공개적으로 기록됩니다.
+당신은 당신이 행하는 모든 행동을 검토할 것을 권합니다.",
+	'confirmaccount-list' => '이 아래는 계정 요청 승인을 기다리는 요청들입니다.
+계정 요청이 승인되거나 거절되면, 이 리스트에서 없어질 것입니다.',
 	'confirmaccount-email-q' => '이메일',
 	'confirmaccount-showopen' => '진행 중인 요청',
 	'confirmaccount-showrej' => '거부된 요청',
