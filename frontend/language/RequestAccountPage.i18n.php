@@ -266,7 +266,7 @@ $messages['ar'] = array(
 	'requestaccount-leg-tos' => 'شروط الخدمة',
 	'requestaccount-acc-text' => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكتروني متى تم بعث هذا الطلب.
 من فضلك استجب عن طريق الضغط على وصلة التأكيد المعطاة في البريد الإلكتروني.
-أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.',
+أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكتروني عندما يتم إنشاء حسابك.', # Fuzzy
 	'requestaccount-areas-text' => 'اختر المواضيع بالأسفل التي لديك فيها خبرة رسمية أو التي تود أن تعمل فيها.',
 	'requestaccount-ext-text' => 'المعلومات التالية سرية وسيتم استخدامها فقط لهذا الطلب.
 ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة في تأكيد الهوية.',
@@ -348,7 +348,7 @@ $messages['arz'] = array(
 	'requestaccount-leg-tos' => 'شروط الخدمة',
 	'requestaccount-acc-text' => 'سيتم إرسال رسالة تأكيد إلى عنوان بريدك الإلكترونى متى تم بعث هذا الطلب.
 من فضلك استجب عن طريق الضغط على وصلة التأكيد المعطاة فى البريد الإلكترونى.
-أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكترونى عندما يتم إنشاء حسابك.',
+أيضا، كلمة السر الخاصة بك سيتم إرسالها إليك عبر البريد الإلكترونى عندما يتم إنشاء حسابك.', # Fuzzy
 	'requestaccount-areas-text' => 'اختر المواضيع بالأسفل التى لديك فيها خبرة رسمية أو التى تود أن تعمل فيها.',
 	'requestaccount-ext-text' => 'المعلومات التالية سرية وسيتم استخدامها فقط لهذا الطلب.
 ربما تريد أن تكتب معلومات الاتصال كرقم تليفون للمساعدة فى تأكيد الهوية.',
@@ -495,7 +495,7 @@ $messages['azb'] = array(
 	'requestaccount-leg-tos' => 'ایستیفاده شرطلری',
 	'requestaccount-acc-text' => 'بو ایستک یول‌لانیلاندا سیزین ایمیل آدرسینیزه بیر دوغرولاما مئساژی گؤندریله‌جکدیر.
 لوطفاً ایمیل‌ده اولان دوغرولاماق باغلانتیسینی تیکلاماقلا جاواب وئرین.
-هم‌ده حسابینیز یاراناندا رمزینیز سیزه ایمیل اولاجاقدیر.',
+هم‌ده حسابینیز یاراناندا رمزینیز سیزه ایمیل اولاجاقدیر.', # Fuzzy
 	'requestaccount-areas-text' => 'آشاغیدا رسمی تخصصیز اولدوغو ساحه‌لری یا ساحه‌لری کی اوندا چوخ ایشله‌یه‌جکسینیز سئچین.',
 	'requestaccount-ext-text' => 'آشاغیداکی بیلگیلر خوصوصیدیلر و یالنیز بو ایستگه ایشلنیله‌جکدیلر.
 کیملیگی دوغرولاماغا یاردیم ائتمک اوچون ایلگی قورماق بیلگیلری مثلاً تلفن نومره‌نیزی وئره بیلرسینیز.',
@@ -622,7 +622,7 @@ $messages['bg'] = array(
 	'requestaccount-leg-person' => 'Лична информация',
 	'requestaccount-leg-other' => 'Друга информация',
 	'requestaccount-leg-tos' => 'Условия за ползване',
-	'requestaccount-acc-text' => 'След като заявката бъде обработена, на посочения адрес за електронна поща ще бъде изпратено съобщение за потвърждние. Необходимо е да се последва включената в него препратка. След създаване на потребителската сметка, на същия адрес ще бъде изпратена и временна парола за влизане.',
+	'requestaccount-acc-text' => 'След като заявката бъде обработена, на посочения адрес за електронна поща ще бъде изпратено съобщение за потвърждние. Необходимо е да се последва включената в него препратка. След създаване на потребителската сметка, на същия адрес ще бъде изпратена и временна парола за влизане.', # Fuzzy
 	'requestaccount-areas-text' => 'Сред тематичните области по-долу изберете тези, в които имате компетенции или желание да допринасяте най-много.',
 	'requestaccount-ext-text' => 'Следната информация се счита за поверителна и не се публикува; тя ще бъде използвана само за тази заявка.
 Препоръчително е да посочите контакти, напр. телефонен номер или друга информация, която ще помогне удостоверяване на самоличността.',
@@ -719,7 +719,7 @@ Ur wezh aprouet ar gont e vo kaset deoc'h ur gemennadenn der bostel hag e c'hall
 	'requestaccount-leg-tos' => 'Divizoù servij',
 	'requestaccount-acc-text' => "Kaset e vo ur c'hemenn kadarnaat d'ho chomlec'h postel kerkent ha ma vo bet kaset ar goulenn.
 Respontit d'ar c'hemenn en ur glikañ war al liamm kadarnaat a gavot er postel.
-Kaset e vo deoc'h ho ker-tremen dre bostel ivez pa vo bet krouet ho kont ganeoc'h.",
+Kaset e vo deoc'h ho ker-tremen dre bostel ivez pa vo bet krouet ho kont ganeoc'h.", # Fuzzy
 	'requestaccount-areas-text' => "Dibabit an tachennoù ma'z oc'h barrek da vat, pe ar re ma'z oc'h tuet da gemer perzh ar muiañ.",
 	'requestaccount-ext-text' => "Prevez e chomo an titour da-heul ha n'hallo bezañ implijet nemet evit ar reked-mañ.
 Gallout a rit rollañ darempredoù evel an niverennoù pellgomz evit kaout un tamm skoazell da gadarnaat piv oc'h.",
@@ -858,7 +858,7 @@ $messages['cs'] = array(
 	'requestaccount-leg-person' => 'Osobní informace',
 	'requestaccount-leg-other' => 'Další informace',
 	'requestaccount-leg-tos' => 'Podmínky služby',
-	'requestaccount-acc-text' => 'Na Vaši e-mailovou adresu bude po odeslání žádosti zaslána potvrzující zpráva. Prosím, reagujte na ni kliknutím na odkaz v ní. Poté Vám bude zasláno Vaše heslo.',
+	'requestaccount-acc-text' => 'Na Vaši e-mailovou adresu bude po odeslání žádosti zaslána potvrzující zpráva. Prosím, reagujte na ni kliknutím na odkaz v ní. Poté Vám bude zasláno Vaše heslo.', # Fuzzy
 	'requestaccount-areas-text' => 'Níže zvolte tématické oblasti, ve kterých jste formálně expertem nebo by jste v nich rádi vykonávali vaši práci.',
 	'requestaccount-bio-text' => 'Vaše bibliografie bude prvotním obsahem vaši uživatelské stránky. Pokuste se uvést všechny reference. Zvažte, zda jste ochotni zveřejnit tyto informace. Jméno si můžete změnit ve [[Special:Preferences|svém nastavení]].', # Fuzzy
 	'requestaccount-real' => 'Skutečné jméno:',
@@ -936,7 +936,7 @@ Når kontoen er blevet godkendt, modtager du en e-mail med besked derom, og du v
 	'requestaccount-leg-person' => 'Personlige oplysninger',
 	'requestaccount-leg-other' => 'Andre oplysninger',
 	'requestaccount-leg-tos' => 'Vilkår for anvendelse',
-	'requestaccount-acc-text' => 'Når anmodningen er afsendt, vil du på din e-mail-adresse vil modtage en bekræftelsesbesked. Svar ved at klikke på bekræftelseslinket i mailen. Når kontoen er blevet oprettet, vil du modtage en mail med din adgangskode.',
+	'requestaccount-acc-text' => 'Når anmodningen er afsendt, vil du på din e-mail-adresse vil modtage en bekræftelsesbesked. Svar ved at klikke på bekræftelseslinket i mailen. Når kontoen er blevet oprettet, vil du modtage en mail med din adgangskode.', # Fuzzy
 	'requestaccount-areas-text' => 'Vælg herunder de områder, hvor du har formel ekspertise eller primært ønsker at arbejde inden for.',
 	'requestaccount-ext-text' => 'Følgende oplysninger offentliggøres ikke og benyttes kun i forbindelse med anmodningen.
 Du kan angive kontaktoplysninger så som et telefonnummer, for at gøre det lettere at bekræfte din identitet.',
@@ -1068,7 +1068,7 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$
 $messages['de-ch'] = array(
 	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars ein Bestätigungsmail geschickt.
 Bitte reagiere darauf, indem du auf den in diesem Mail enthaltenen Bestätigungslink klickst.
-Sobald dein Konto angelegt wurde, wird dir dein Passwort per E-Mail zugeschickt.',
+Sobald dein Konto angelegt wurde, wird dir dein Passwort per E-Mail zugeschickt.', # Fuzzy
 	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.
 Ein Bestätigungs-E-Mail wurde an deine E-Mail-Adresse gesendet.',
 	'requestaccount-email-body' => 'Jemand, möglicherweise du mit der IP-Adresse $1, hat bei {{SITENAME}} das Benutzerkonto «$2» mit deiner E-Mail-Adresse beantragt.
@@ -1102,7 +1102,7 @@ Sobald das Konto bestätigt wurde, werden Sie per E-Mail benachrichtigt und Sie 
 	'requestaccount-dup' => "'''Achtung: Sie sind bereits mit einem registrierten Benutzerkonto angemeldet.'''",
 	'requestaccount-acc-text' => 'An Ihre E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.
 Bitte reagieren Sie darauf, indem Sie auf den in dieser Mail enthaltenen Bestätigungslink klicken.
-Sobald Ihr Konto angelegt wurde, wird Ihnen Ihr Passwort per E-Mail zugeschickt.',
+Sobald Ihr Konto angelegt wurde, wird Ihnen Ihr Passwort per E-Mail zugeschickt.', # Fuzzy
 	'requestaccount-areas-text' => 'Wählen Sie die Themengebiete aus, in denen Sie das meiste Fachwissen haben oder wo Sie am meisten involviert sein werden.',
 	'requestaccount-ext-text' => 'Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag verwendet.
 Sie können Kontaktangaben wie eine Telefonnummer machen, um die Bearbeitung Ihres Antrags zu vereinfachen.',
@@ -1171,7 +1171,7 @@ Gaž konto jo schwalone, dostanjoš e-mailku a konto dajo se za [[Special:UserLo
 	'requestaccount-leg-tos' => 'Wužywańske wuměnjenja',
 	'requestaccount-acc-text' => 'Na twóju e-mailowu adresu pósćele se wobkšuśeńska powěsć, gaž toś to póžedanje jo wótpósłane.
 Pšosym wótegroń pśez kliknjenje na wobkšuśeński wótkaz w e-mailce.
-Gaž twójo konto jo załožone, gronidło pśipósćeła se śi pśez e-mail.',
+Gaž twójo konto jo załožone, gronidło pśipósćeła se śi pśez e-mail.', # Fuzzy
 	'requestaccount-areas-text' => 'Wubjeŕ temowe póla, w kótarychž maš neejlěpše wěcywuznaśe abo za to ty by rady nejwěcej źěło cyniś.',
 	'requestaccount-ext-text' => 'Ze slědujucymi informacijami wobchadaju dowěrliwje a budu se jano za toś to póžedanje.
 Móžoš kontaktowe pódaśa ako telefonowy numer cyniś, aby pomagał pśi wobkšuśenju identity.',
@@ -1321,7 +1321,7 @@ Una vez que la cuenta sea aprobada, se te enviará una notificación a través d
 	'requestaccount-leg-tos' => 'Términos de servicio',
 	'requestaccount-acc-text' => 'Una vez que se envíe este pedido, recibirás en tu correo un mensaje de confirmación.
 Responde pulsando en el enlace de confirmación proporcionado por el mensaje.
-Además, tu contraseña se enviará a tu dirección de correo una vez que la cuenta sea creada.',
+Además, tu contraseña se enviará a tu dirección de correo una vez que la cuenta sea creada.', # Fuzzy
 	'requestaccount-areas-text' => 'Seleccione las áreas en las que tiene experiencia formal o que le interesa colaborar.',
 	'requestaccount-ext-text' => 'La siguiente información se mantiene privada y sólo será usada para esta solicitud.
 Usted puede desear enlistar contactos como un número telefónico para ayudar en la confirmación de la identidad.',
@@ -1455,7 +1455,7 @@ Saat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sillä voi [[Spec
 	'requestaccount-leg-person' => 'Henkilötiedot',
 	'requestaccount-leg-other' => 'Muut tiedot',
 	'requestaccount-leg-tos' => 'Käyttöehdot',
-	'requestaccount-acc-text' => 'Lähetettyäsi pyynnön saat sähköpostitse vahvistuksen. Sinun pitää napsauttaa sähköpostissa olevaa kuittauslinkkiä. Myöskin salasanasi lähetetään sinulle, kun tunnus luodaan.',
+	'requestaccount-acc-text' => 'Lähetettyäsi pyynnön saat sähköpostitse vahvistuksen. Sinun pitää napsauttaa sähköpostissa olevaa kuittauslinkkiä. Myöskin salasanasi lähetetään sinulle, kun tunnus luodaan.', # Fuzzy
 	'requestaccount-areas-text' => 'Valitse alta alueet, joissa olet asiantuntija tai joiden parissa haluaisit enimmäkseen työskennellä.',
 	'requestaccount-ext-text' => 'Seuraavat tiedot pidetään luottamuksellisina ja niitä käytetään vain tämän pyynnön käsittelyssä.
 Haluat ehkä antaa tunnistamista helpottavia yhteystietoja, puhelinnumeron esimerkiksi.',
@@ -1598,7 +1598,7 @@ Setout que lo compto est accèptâ, vos recevréd un mèssâjo de notificacion e
 	'requestaccount-leg-tos' => 'Condicions d’usâjo',
 	'requestaccount-acc-text' => 'Un mèssâjo de confirmacion serat mandâ a voutra adrèce èlèctronica setout que la demanda arat étâ mandâ.
 Dens lo mèssâjo reçu, clicâd sur lo lim que corrèspond a la confirmacion de voutra demanda.
-Et pués, un contresegno serat mandâ per mèssageria èlèctronica quand voutron compto usanciér serat fêt.',
+Et pués, un contresegno serat mandâ per mèssageria èlèctronica quand voutron compto usanciér serat fêt.', # Fuzzy
 	'requestaccount-areas-text' => 'Chouèsésséd los domênos que vos avéd una èxpèrtisa dèmontrâ, ou ben que vos éte encllin a contribuar lo ples.',
 	'requestaccount-ext-text' => 'Ceta enformacion réste privâ et pués porrat étre utilisâ ren que por ceta demanda.
 Vos avéd la possibilitât de listar des contactes coment un numerô de tèlèfono por avêr una assistance por confirmar voutra identitât.',
@@ -1761,7 +1761,7 @@ Sobald s Konto bstätigt woren isch, chunnsch e Nochricht per E-Mail iber un cha
 	'requestaccount-leg-tos' => 'Benutzigsbedingige',
 	'requestaccount-acc-text' => 'An Dyyni E-Mail-Adräss wird noch em Abschicke vu däm Formular e Bstätigungsmail gschickt.
 Bitte reagier druf, indäm Du uf de Bstätigungs-Link drucksch, wu s in däre Mail het.
-Sobald Dyy Konto aagleit woren isch, wird Dir Dyy Passwort per E-Mail zuegschickt.',
+Sobald Dyy Konto aagleit woren isch, wird Dir Dyy Passwort per E-Mail zuegschickt.', # Fuzzy
 	'requestaccount-areas-text' => 'Wehl d Themene uus, wu Du s meischt Fachwisse din hesch oder wu Du am meischte witt dra schaffe.',
 	'requestaccount-ext-text' => 'Die Informatione wäre vertraulig behandlet un uusschließlig fir dää Aatrag bruucht.
 Du chasch Kontakt-Aagabe mache, wie z B. e Telifonnummere, go d Bearbeitig vu Dyynem Aatrag z vereifache.',
@@ -1867,7 +1867,7 @@ $messages['he'] = array(
 	'requestaccount-leg-tos' => 'תנאי השירות',
 	'requestaccount-acc-text' => 'לכתובת הדוא"ל שלכם תישלח הודעת אישור לאחר שהבקשה תתקבל.
 אנא הגיבו על ידי לחיצה על הקישור לאישור המסופק בהודעת הדוא"ל.
-כמו כן, הסיסמה שלכם תישלח אליכם בעת יצירת חשבונכם.',
+כמו כן, הסיסמה שלכם תישלח אליכם בעת יצירת חשבונכם.', # Fuzzy
 	'requestaccount-areas-text' => 'בחרו את הנושאים שבהם יש לכם מומחיות פורמלית או שבהם אתם עושים את רוב העבודה.',
 	'requestaccount-ext-text' => 'המידע הבא נשמר בפרטיות וישמש עבור בקשה זו בלבד.
 יתכן שתרצו לציין פרטי קשר כגון מספר טלפון כדי לסייע באימות זהותכם.',
@@ -1973,7 +1973,7 @@ Kad vam račun bude odobren, dobit ćete e-mail potvrdu i moći ćete se [[Speci
 	'requestaccount-leg-tos' => 'Uvjeti usluge',
 	'requestaccount-acc-text' => "Dobiti ćete poruku elektroničkom poštom (''e-mail'') kao potvrdu da ste zatražili suradnički račun.
 Molimo odgovorite na tu poruku tako što ćete kliknuti na poveznicu (''link'') u toj poruci.
-Kad vam račun bude odobren/otvoren, lozinku ćete dobiti elektroničkom poštom.",
+Kad vam račun bude odobren/otvoren, lozinku ćete dobiti elektroničkom poštom.", # Fuzzy
 	'requestaccount-areas-text' => 'Odaberite ispod teme u kojima imate formalno iskustvo ili biste najviše željeli raditi.',
 	'requestaccount-ext-text' => 'Sljedeći podaci nisu dostupni drugima, rabe se samo u ovom upitu.
 Možda želite navesti broj telefona (mobitela) kao pomoć za potvrđivanje vašeg identiteta.',
@@ -2035,7 +2035,7 @@ Tak ruče kaž konto je so potwjerdźiło, dóstanješ powěsć přez e-mejlku a
 	'requestaccount-leg-person' => 'Wosobinske informacije',
 	'requestaccount-leg-other' => 'Druhe informacije',
 	'requestaccount-leg-tos' => 'Wužiwanske wuměnjenja',
-	'requestaccount-acc-text' => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
+	'requestaccount-acc-text' => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.', # Fuzzy
 	'requestaccount-areas-text' => 'Wubjer slědowace temowe wobwody, w kotrychž maš wěcywustojnosć abo chceš najwjace dźěła činić.',
 	'requestaccount-ext-text' => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
 	'requestaccount-bio-text' => 'Spytaj wšě relewantne informacije do swojeje slědowaceje biografije zapřijimać.',
@@ -2101,7 +2101,7 @@ Ha a felhasználói fiókodat elfogadjuk, értesítve leszel e-mailben, ezután 
 	'requestaccount-leg-other' => 'További információ',
 	'requestaccount-leg-tos' => 'Használati feltételek',
 	'requestaccount-acc-text' => 'Miután elküldted a kérelmet, egy e-mail üzenetet küldünk a címedre. Kattints a benne található
-megerősítő linkre. Miután felhasználói fiókod elkészült, jelszavadat is elküldjük.',
+megerősítő linkre. Miután felhasználói fiókod elkészült, jelszavadat is elküldjük.', # Fuzzy
 	'requestaccount-areas-text' => 'Válaszd ki azokat a témaköröket, amelyek területén szaktudással rendelkezel vagy dolgozni szeretnél főként.',
 	'requestaccount-ext-text' => 'A következő információ titkos marad, és csak a kérelem során lesz használva.
 Megadhatsz kapcsolati adatokat, pl. telefonszámot, hogy segíts a személyazonosságod megerősítésében.',
@@ -2239,7 +2239,7 @@ Bila akun yang Anda ajukan telah disetujui, sebuah surel notifikasi akan dikirim
 	'requestaccount-leg-tos' => 'Syarat Layanan',
 	'requestaccount-acc-text' => 'Kami akan mengirimkan sebuah pesan konfirmasi ke alamat surel Anda segera setelah permintaan ini dikirimkan.
 Klik pada pranala dalam surel tersebut untuk konfirmasi.
-Kata sandi Anda juga akan dikirimkan melalui surel setelah akun Anda disetujui dan dibuat.',
+Kata sandi Anda juga akan dikirimkan melalui surel setelah akun Anda disetujui dan dibuat.', # Fuzzy
 	'requestaccount-areas-text' => 'Pilih topik-topik yang merupakan keahlian formal Anda atau merupakan area yang akan paling banyak Anda sentuh.',
 	'requestaccount-ext-text' => 'Informasi berikut ini akan diperlakukan secara rahasia dan hanya akan digunakan sehubungan dengan permintaan ini.
 Anda dapat menuliskan daftar kontak seperti nomor telepon Anda untuk mempermudah dalam mengkonfirmasikan identitas Anda.',
@@ -2488,7 +2488,7 @@ Wans di akount apruuv, yu wi get e-miel nuotifikieshan mechiz ahn yu kiahn yuuz 
 	'requestaccount-leg-tos' => 'Toerm a Saabis',
 	'requestaccount-acc-text' => 'Yu e-miel ajres wi get a kanfoermieshan mechiz wans yu sobmit dis rikwes.
 Begyu rispan bai klik pahn di kanfoermieshan lingk provaid ina di e-miel.
-Alzwel yu paaswod wi e-miel tu yu wen yu akount kriet.',
+Alzwel yu paaswod wi e-miel tu yu wen yu akount kriet.', # Fuzzy
 	'requestaccount-areas-text' => 'Silek di tapik ieriadem biluo fi we yu gat faamal expoertiis ar wuda laik fi du di muos wok.',
 	'requestaccount-ext-text' => 'Di falarin infamieshan kip praivit ahn wi onggl yuuz fi dis rikwes.
 Yu maita waahn fi lis kantak laka fuon nomba fi ied ina aidentifai kanfoermieshan.',
@@ -2876,7 +2876,7 @@ Es diene aanvraog is goodgekäörd, kriegs doe 'ne e-mail en daonao kans doe die
 	'requestaccount-leg-tos' => 'Gebroeksveurwaerde',
 	'requestaccount-acc-text' => "Doe kriegs 'n e-mailbevestiging es dien verzeuk is óntvange.
 Reageer dao-op door te klikke op de verwiezing die in de e-mail sjteit.
-Doe kriegs 'n wachwoord es dien gebroekersaccount is aangemaak.",
+Doe kriegs 'n wachwoord es dien gebroekersaccount is aangemaak.", # Fuzzy
 	'requestaccount-areas-text' => "Selecteer hiejonger de óngerwerpe woemits doe ervaring höbs of woevans doe 't mieste wirk wils verrichte.",
 	'requestaccount-ext-text' => "De volgende infermasie weurt vertroewelik behanjeld en weurt allein gebroek veur dit verzeuk.  
 Doe kans kontakgegaevens zoewie 'n tillefoonnómmer opgaeve om te helpe bie 't vastsjtèlle van dien identiteit.",
@@ -3002,7 +3002,7 @@ $messages['ml'] = array(
 	'requestaccount-leg-person' => 'വ്യക്തിഗത വിവരങ്ങൾ',
 	'requestaccount-leg-other' => 'മറ്റ് വിവരങ്ങൾ',
 	'requestaccount-leg-tos' => 'സേവനവ്യവസ്ഥകൾ',
-	'requestaccount-acc-text' => 'ഈ അഭ്യർത്ഥന സമർപ്പിക്കപ്പെട്ടതിനു ശേഷം താങ്കളുടെ ഇമെയിൽ വിലാസത്തിലേക്ക് ഒരു സ്ഥിരീകരണമെയിൽ അയക്കുന്നതായിരിക്കും. പ്രസ്തുത ഇമെയിലിലുള്ള സ്ഥിരീകരണലിങ്കിൽ ഞെക്കി പ്രതികരിക്കുക. അംഗത്വം സൃഷ്ടിക്കപ്പെട്ടതിനു ശേഷം താങ്കളുടെ രഹസ്യവാക്കും ഇമെയിലിൽ അയക്കുന്നതായിരിക്കും.',
+	'requestaccount-acc-text' => 'ഈ അഭ്യർത്ഥന സമർപ്പിക്കപ്പെട്ടതിനു ശേഷം താങ്കളുടെ ഇമെയിൽ വിലാസത്തിലേക്ക് ഒരു സ്ഥിരീകരണമെയിൽ അയക്കുന്നതായിരിക്കും. പ്രസ്തുത ഇമെയിലിലുള്ള സ്ഥിരീകരണലിങ്കിൽ ഞെക്കി പ്രതികരിക്കുക. അംഗത്വം സൃഷ്ടിക്കപ്പെട്ടതിനു ശേഷം താങ്കളുടെ രഹസ്യവാക്കും ഇമെയിലിൽ അയക്കുന്നതായിരിക്കും.', # Fuzzy
 	'requestaccount-real' => 'യഥാർത്ഥ പേര്:',
 	'requestaccount-same' => '(യഥാർത്ഥ പേരുതന്നെ)',
 	'requestaccount-email' => 'ഇമെയിൽ വിലാസം:',
@@ -3046,7 +3046,7 @@ $messages['mr'] = array(
 	'requestaccount-leg-person' => 'वैयक्तिक माहिती',
 	'requestaccount-leg-other' => 'इतर माहिती',
 	'requestaccount-leg-tos' => 'सेवेच्या अटी',
-	'requestaccount-acc-text' => 'ही मागणी पूर्ण झाल्यावर तुमच्या इमेल पत्त्यावर एक संदेश येईल. कृपया त्या संदेशात दिलेल्या दुव्यावर टिचकी मारुन सदस्य खात्याची खात्री करा. खाते तयार झाल्यावर परवलीचा शब्द तुमच्या इमेल वर पाठविला जाईल.',
+	'requestaccount-acc-text' => 'ही मागणी पूर्ण झाल्यावर तुमच्या इमेल पत्त्यावर एक संदेश येईल. कृपया त्या संदेशात दिलेल्या दुव्यावर टिचकी मारुन सदस्य खात्याची खात्री करा. खाते तयार झाल्यावर परवलीचा शब्द तुमच्या इमेल वर पाठविला जाईल.', # Fuzzy
 	'requestaccount-areas-text' => 'खालील क्षेत्रांपैकी तुमच्या पसंतीचे तसेच तुम्ही जाणकार असलेले विषय निवडा.',
 	'requestaccount-ext-text' => 'खालील माहिती ही गोपनीय असेल व फक्त या मागणी करताच वापरली जाईल.
 तुम्ही ओळख पटविण्यासाठी एखादा संपर्क क्रमांक देऊ शकता.',
@@ -3109,7 +3109,7 @@ Sebaik sahaja akaun anda diluluskan, anda akan diberi e-mel makluman dan akaun i
 	'requestaccount-leg-tos' => 'Syarat-Syarat Perkhidmatan',
 	'requestaccount-acc-text' => 'Satu pesanan pengesahan akan dihantar ke alamat e-mel anda sebaik sahaja permohonan ini diserahkan.
 Sila balas dengan mengklik pautan pengesahan yang diberikan dalam e-mel.
-Selain itu, kata laluan anda akan die-melkan kepada anda apabila akuan anda dibuka.',
+Selain itu, kata laluan anda akan die-melkan kepada anda apabila akuan anda dibuka.', # Fuzzy
 	'requestaccount-areas-text' => 'Pilih bidang-bidang topik yang anda mempunyai kepakaran formal atau ingin paling banyak usahakan di bawah.',
 	'requestaccount-ext-text' => 'Maklumat berikut dirahsiakan dan digunakan untuk permohonan ini sahaja.
 Mungkin anda ingin menyenaraikan maklumat hubungan seperti nombor telefon untuk memudahkan proses pengesahan identiti.',
@@ -3175,7 +3175,7 @@ Kun żgur li l-ewwel taqra t-[[{{MediaWiki:Requestaccount-page}}|termini tas-ser
 	'requestaccount-leg-tos' => 'Termini tas-servizz',
 	'requestaccount-acc-text' => "Fuq l-indirizz elettroniku tiegħek se jintbagħat messaġġ ta' konferma ġaladarba din ir-rikjesta tintbagħat.
 Jekk jogħġbok irrispondi billi tiklikkja fuq il-ħolqa t'a konferma li tingħata fl-ittra elettronika.
-Barra minn hekk, il-password tintbagħtlek meta jiġi maħluq il-kont.",
+Barra minn hekk, il-password tintbagħtlek meta jiġi maħluq il-kont.", # Fuzzy
 	'requestaccount-areas-text' => "Agħżel l-irkejjen ta' interess fejn għandek għarfien formali jew li tixtieq li tagħmel l-aktar xogħol fuqu.",
 	'requestaccount-ext-text' => "L-informazzjoni segwenti hija miżmuma privata u se tiġi wżata biss għal din il-rikjesta.
 Tista' ddaħħal kuntatti bħan-numru tat-telefown sabiex jgħinu fl-identifikazzjoni.",
@@ -3261,7 +3261,7 @@ Når kontoen godkjennes vil du få beskjed på e-post, og du vil kunne [[Special
 	'requestaccount-leg-person' => 'Personlig informasjon',
 	'requestaccount-leg-other' => 'Annen informasjon',
 	'requestaccount-leg-tos' => 'Tjenestevilkår',
-	'requestaccount-acc-text' => 'Du vil få en e-post med bekreftelse med en gang denne forespørselen postes. Vennligst svar ved å klikke på bekreftelseslenka i e-posten. Passordet ditt vil også sendes til deg når kontoen opprettes.',
+	'requestaccount-acc-text' => 'Du vil få en e-post med bekreftelse med en gang denne forespørselen postes. Vennligst svar ved å klikke på bekreftelseslenka i e-posten. Passordet ditt vil også sendes til deg når kontoen opprettes.', # Fuzzy
 	'requestaccount-areas-text' => 'Velg det eller de områdene nedenfor som du har formell ekspertise i eller vil jobbe mest med.',
 	'requestaccount-ext-text' => 'Følgende informasjon vil holdes privat, og vil kun brukes for denne forespørselen. Du vil kanskje liste opp kontaktinformasjon som et telefonnummer for å hjelpe til i bekreftelsesprosessen.',
 	'requestaccount-bio-text' => 'Ta med alle kunnskaps- og ferdighetsrelevante detaljer i biografien din under.',
@@ -3448,7 +3448,7 @@ Når kontoen vert godkjend vil du få melding på e-post og du vil kunna [[Speci
 	'requestaccount-leg-tos' => 'Tenestevilkår',
 	'requestaccount-acc-text' => 'Du vil få ein e-post med stadfesting med ein gong denne føresurnaden er sendt inn. 
 Svar ved å trykkja på stadfestingslekkja i e-posten. 
-Passordet ditt vil òg bli sendt til deg når kontoen er oppretta.',
+Passordet ditt vil òg bli sendt til deg når kontoen er oppretta.', # Fuzzy
 	'requestaccount-areas-text' => 'Vel det eller dei områda nedanfor som du har mest formell ekspertise innan eller vil jobba mest med.',
 	'requestaccount-ext-text' => 'Følgjande informasjon vil bli heldt privat, og vil berre bli nytta for denne førespurnaden. Du vil kanskje lista opp kontaktinformasjon som eit telefonnummer for å hjelpa til med å stadfesta identiteten din.',
 	'requestaccount-bio-text' => 'Biografien din vil verta sett som standardinnhald på brukarsida di.
@@ -3637,7 +3637,7 @@ Jeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość
 	'requestaccount-leg-tos' => 'Warunki użytkowania serwisu',
 	'requestaccount-acc-text' => 'Na Twój adres e‐mail zostanie wysłana wiadomość potwierdzająca złożenie wniosku o założenie konta.
 Kliknij na link zawarty w tej wiadomości.
-Hasło do konta zostanie przesłane poprzez e‐mail, gdy konto zostanie już utworzone.',
+Hasło do konta zostanie przesłane poprzez e‐mail, gdy konto zostanie już utworzone.', # Fuzzy
 	'requestaccount-areas-text' => 'Określ tematy i obszary dla których posiadasz formalne przygotowanie lub takie nad którymi planujesz najwięcej pracować.',
 	'requestaccount-ext-text' => 'Następujące informacje nie będą udostępniane. Zostaną użyte tylko na potrzeby tego wniosku o założenie konta użytkownika.
 Możesz wyświetlić kontakty np. numer telefonu, by łatwiej zdecydować o zatwierdzeniu lub odrzuceniu wniosku.',
@@ -3703,7 +3703,7 @@ Na vira che 'l cont a sia aprovà, a l'arseivrà na notìfica për pòsta eletr�
 	'requestaccount-leg-person' => 'Anformassion përsonaj',
 	'requestaccount-leg-other' => 'Àutre anformassion',
 	'requestaccount-leg-tos' => 'Condission ëd Servissi',
-	'requestaccount-acc-text' => "A soa adrëssa ëd pòsta eletrònica a-i rivërà un messagi, na vira che sta domanda a la sia mandà. Per piasì, ch'a n'arsponda ën dand-ie un colp col rat ansima a l'aniura ch'a treuva ant ël messagi. Ëdcò soa ciav a sarà recapità për pòsta eletrònica, na vira che sò cont a sia creà.",
+	'requestaccount-acc-text' => "A soa adrëssa ëd pòsta eletrònica a-i rivërà un messagi, na vira che sta domanda a la sia mandà. Per piasì, ch'a n'arsponda ën dand-ie un colp col rat ansima a l'aniura ch'a treuva ant ël messagi. Ëdcò soa ciav a sarà recapità për pòsta eletrònica, na vira che sò cont a sia creà.", # Fuzzy
 	'requestaccount-areas-text' => "Selession-a j'argoment sota dont it l'has esperiensa formal o at piasrìa travajeje ansima.",
 	'requestaccount-ext-text' => "St'anformassion-sì as ten privà e as dòvra mach për sta question-sì. S'a veul a peul buté dij contat coma un nùmer ëd telèfono për giuté a identifichesse sensa dubi.",
 	'requestaccount-bio-text' => "Ch'a preuva a buté dj'arferiment ùtij an soa biografìa sì-sota.",
@@ -3781,7 +3781,7 @@ Assim que a conta for aprovada, ser-lhe-á enviada uma mensagem de notificação
 	'requestaccount-leg-person' => 'Informação pessoal',
 	'requestaccount-leg-other' => 'Outras informações',
 	'requestaccount-leg-tos' => 'Termos de Serviço',
-	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de correio electrónico assim que este pedido for submetido. Por favor, responda clicando o link de confirmação enviado na mensagem. A sua palavra-chave também será enviada por correio electrónico assim que a conta tenha sido criada.',
+	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de correio electrónico assim que este pedido for submetido. Por favor, responda clicando o link de confirmação enviado na mensagem. A sua palavra-chave também será enviada por correio electrónico assim que a conta tenha sido criada.', # Fuzzy
 	'requestaccount-areas-text' => 'Selecione abaixo as áreas em que possui experiência formal ou em que mais gostaria de trabalhar.',
 	'requestaccount-ext-text' => 'A seguinte informação será mantida privada e só será usada para este pedido.
 Talvez possa listar contactos, tais como o número de telefone, para ajudar na confirmação da identificação.',
@@ -4084,7 +4084,7 @@ $messages['sah'] = array(
 	'requestaccount-leg-tos' => 'Туһаныы сиэрэ',
 	'requestaccount-acc-text' => 'Сайаапка ыыппытыҥ кэннэ эн аадырыскар бигэргэтэр ыйытыктаах сурук кэлиэ. 
 Онно баар сигэн баттаатаххына сайаапкаҥ бигэргэниэ. 
-Ол кэнниттэн киирии тылыҥ эмиэ электроннай почтанан кэлиэ.',
+Ол кэнниттэн киирии тылыҥ эмиэ электроннай почтанан кэлиэ.', # Fuzzy
 	'requestaccount-areas-text' => 'Үчүгэйдик билэр, үлэлиэххин баҕарар хайысхаларгын (эйгэлэргин) тал.',
 	'requestaccount-ext-text' => 'Манна ыйбыт сибидиэнньэлэриҥ туора дьоҥҥо көстүөхтэрэ суоҕа уонна бу сайаапканы көрөргө эрэ туһаныллыахтара.
 Эн буоларгын бигэргэтэр ситим көрүҥнэрин, холобур төлөппүөнүҥ нүөмэрин, этиэххин сөп.',
@@ -4146,7 +4146,7 @@ Keď bude účet schválený, príde vám emailom oznámenie a bude možné prih
 	'requestaccount-leg-person' => 'Osobné informácie',
 	'requestaccount-leg-other' => 'Ďalšie informácie',
 	'requestaccount-leg-tos' => 'Podmienky používania',
-	'requestaccount-acc-text' => 'Na vašu emailovú adresu bude po odoslaní žiadosti zaslaná potvrdzujúca správa. Prosím, reagujte na ňu kliknutím na odkaz v nej. Potom ako bude váš účet vytvorený, dostanete emailom heslo k nemu.',
+	'requestaccount-acc-text' => 'Na vašu emailovú adresu bude po odoslaní žiadosti zaslaná potvrdzujúca správa. Prosím, reagujte na ňu kliknutím na odkaz v nej. Potom ako bude váš účet vytvorený, dostanete emailom heslo k nemu.', # Fuzzy
 	'requestaccount-areas-text' => 'Nižšie zvoľte tematické oblasti v ktorých ste formálne expertom alebo by ste v nich radi vykonávali väčšinu práce.',
 	'requestaccount-ext-text' => 'Nasledovné informácie budú držané v tajnosti a použijú sa iba na účel tejto žiadosti. Možno budete chcieť uviesť kontakty ako telefónne číslo, ktoré môžu pomôcť pri potvrdení.',
 	'requestaccount-bio-text' => 'Vaša biografia bude prvotným obsahom vašej používateľskej stránky.
@@ -4274,7 +4274,7 @@ $messages['stq'] = array(
 	'requestaccount-acc-text' => 'An dien E-Mail-Adresse wäd ätter dät Ouseenden fon dit Formular ne Bestäätigengsmail soand.
 Reagier deerap, wan du ap ju in ju Mail äntheeldene Bestäätigengsferbiendenge klikst.
 Sobolde n dien Konto anlaid wuude,
-wäd die dien Paaswoud per E-Mail tousoand.',
+wäd die dien Paaswoud per E-Mail tousoand.', # Fuzzy
 	'requestaccount-areas-text' => 'Wääl do Themengebiete uut, in do du dät maaste Fäkwieten hääst of wier du ap maaste involvierd weese skääst.',
 	'requestaccount-ext-text' => 'Do foulgjende Informatione wäide fertjouelk behanneld un bloot foar dissen Andraach
 ferwoand. Dd koast Kontakt-Angoawen as ne Telefonnummer moakje, uum ju Beoarbaidenge fon din Andraach eenfacher tou moakjen.',
@@ -4462,7 +4462,7 @@ $messages['te'] = array(
 	'requestaccount-leg-person' => 'వ్యక్తిగత సమాచారం',
 	'requestaccount-leg-other' => 'ఇతర సమాచారం',
 	'requestaccount-leg-tos' => 'సేవా నియమాలు',
-	'requestaccount-acc-text' => 'మీరీ అభ్యర్ధన పంపించగానే మీ ఈమెయిలుకో ధృవీకరణ సందేశం వస్తుంది. దానిలో ఉన్న షృవీకరణ లింకును నొక్కండి. మీ ఖాతా తయారు కాగానే మీ సంకేతపదాన్ని కూడా పంపిస్తాం.',
+	'requestaccount-acc-text' => 'మీరీ అభ్యర్ధన పంపించగానే మీ ఈమెయిలుకో ధృవీకరణ సందేశం వస్తుంది. దానిలో ఉన్న షృవీకరణ లింకును నొక్కండి. మీ ఖాతా తయారు కాగానే మీ సంకేతపదాన్ని కూడా పంపిస్తాం.', # Fuzzy
 	'requestaccount-areas-text' => 'కింది విషయాల లోంచి మీకు ప్రవేశం ఉన్న వాటిని లేదా మీరు పనిచేయదలచిన వాటిని ఎంచుకోండి.',
 	'requestaccount-ext-text' => 'కింది సమాచారాన్ని గోప్యంగా ఉంచుతాం, ఈ అభ్యర్ధన కోసం మాత్రమే వాడుతాం.
 మిమ్మల్ని గుర్తించటంలో సాయపడే ఫోను నంబరు వంటి పరిచయ వివరాలను ఇవ్వవచ్చు.',
@@ -4534,7 +4534,7 @@ $messages['tg-cyrl'] = array(
 	'requestaccount-leg-other' => 'Иттилооти дигар',
 	'requestaccount-acc-text' => 'Ба нишонаи почтаи электронии шумо паёми тасдиқи дар ҳоли фиристодани ин дархост фиристода хоҳад шуд.
 Лутфан бо клик кардани пайванди тасдиқии тариқи почтаи электронӣ фиристода шуда посух диҳед.
-Гузарвожа низ дар ҳолати эҷод шудани ҳисоби шумо ба нишонаи почтаи электронӣ фиристода хоҳад шуд.',
+Гузарвожа низ дар ҳолати эҷод шудани ҳисоби шумо ба нишонаи почтаи электронӣ фиристода хоҳад шуд.', # Fuzzy
 	'requestaccount-bio-text' => 'Зиндагиномаи шумо дар саҳифаи корбариатон ҳамчун мӯҳтавои пешфарз ҷой дода хоҳад шуд.
 Барои қарор додани ягон ихтиёроти худ кӯшиш кунед.
 Мутмаин бошед, ки шумо барои мунташир кардани ин намуд иттилоот роҳатӣ ҳастед.
@@ -4588,7 +4588,7 @@ $messages['tg-latn'] = array(
 	'requestaccount-leg-other' => 'Ittilooti digar',
 	'requestaccount-acc-text' => 'Ba nişonai poctai elektroniji şumo pajomi tasdiqi dar holi firistodani in darxost firistoda xohad şud.
 Lutfan bo klik kardani pajvandi tasdiqiji tariqi poctai elektronī firistoda şuda posux dihed.
-Guzarvoƶa niz dar holati eçod şudani hisobi şumo ba nişonai poctai elektronī firistoda xohad şud.',
+Guzarvoƶa niz dar holati eçod şudani hisobi şumo ba nişonai poctai elektronī firistoda xohad şud.', # Fuzzy
 	'requestaccount-real' => 'Nomi aslī:',
 	'requestaccount-same' => '(monandi nomi aslī)',
 	'requestaccount-email' => 'Nişonai poctai elektronī:',
@@ -4643,7 +4643,7 @@ $messages['th'] = array(
 	'requestaccount-leg-tos' => 'ข้อตกลงการใช้งาน',
 	'requestaccount-acc-text' => 'เมื่อส่งคำขอบัญชีผู้ใช้ใหม่ จะมีข้อความยืนยันส่งไปทางอีเมลของคุณ
 กรุณาืยืนยันโดยการคลิกบนลิงก์ยืนยัน ที่ได้ระบุไว้ในอีเมล
-เมื่อบัญชีของคุณถูกสร้างแล้ว คุณจะได้รับรหัสผ่าน ผ่านทางอีเมล',
+เมื่อบัญชีของคุณถูกสร้างแล้ว คุณจะได้รับรหัสผ่าน ผ่านทางอีเมล', # Fuzzy
 	'requestaccount-areas-text' => 'เลืิอกทักษะด้านล่างที่คุณมีความชำนาญ หรือมีความประสงค์จะทำงานในด้านนี้มากที่สุด',
 	'requestaccount-ext-text' => 'ข้อมูลดังกล่่าวนี้ จะถูกเก็บเป็นความลับ และจะถูกใช้สำหรับคำขอนี้เท่านั้น
 คุณอาจต้องการใส่รายละเอียดในการติดต่อ เช่น หมายเลขโทรศัพท์ เพื่อช่วยในการยืนยันตัว',
@@ -4778,7 +4778,7 @@ Hesap onaylandığında size bir bildirim e-postası gönderilecek ve hesabını
 	'requestaccount-leg-tos' => 'Hizmet Koşulları',
 	'requestaccount-acc-text' => 'Bu istek gönderildiğinde e-posta adresinize bir onay mesajı gönderilecektir.
 Lütfen e-postada verilen onay bağlantısına tıklayarak cevap verin.
-Ayrıca hesabınız oluşturulduğunda parolanız da size e-posta ile gönderilecektir.',
+Ayrıca hesabınız oluşturulduğunda parolanız da size e-posta ile gönderilecektir.', # Fuzzy
 	'requestaccount-areas-text' => 'Resmi uzmanlığa sahip olduğunuz veya çalışmak istediğiniz alanları aşağıdan seçin.',
 	'requestaccount-ext-text' => 'Aşağıdaki bilgiler gizli tutulmaktadır ve sadece bu istek için kullanılacaktır.
 Kimlik doğrulamada yardımcı olması için telefon numarası gibi irtibat bilgilerini eklemek isteyebilirsiniz.',
@@ -4915,7 +4915,7 @@ $messages['ur'] = array(
 	'requestaccount-leg-tos' => 'شرائطِ خدمت',
 	'requestaccount-acc-text' => 'درخواست ارسال ہوتے ہی آپ کے برقی ڈاک پتہ پر ایک تصدیقی پیغام بھیجا جائے گا۔
 برائے مہربانی، برقی خط میں دیئے گئے ربط پر جایئے۔
-نیز، آپ کا کھاتہ بننے کے بعد آپ کا پارلفظ آپ کو برقی ڈاک کے ذریعے بھیج دیا جائے گا۔',
+نیز، آپ کا کھاتہ بننے کے بعد آپ کا پارلفظ آپ کو برقی ڈاک کے ذریعے بھیج دیا جائے گا۔', # Fuzzy
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -4976,7 +4976,7 @@ $messages['yue'] = array(
 	一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。", # Fuzzy
 	'requestaccount-dup' => "'''留意: 你已經登入咗做一個已經註冊咗嘅戶口。'''",
 	'requestaccount-acc-text' => '當完成請求時，一封確認訊息會發到你嘅電郵地址。
-	請響封電郵度撳個確認連結去回應佢。同時，當你個戶口開咗之後，你戶口個密碼將會電郵畀你。',
+	請響封電郵度撳個確認連結去回應佢。同時，當你個戶口開咗之後，你戶口個密碼將會電郵畀你。', # Fuzzy
 	'requestaccount-ext-text' => '下面嘅資料會保密，而且只係會用響呢次請求度。
 	你可能需要列示聯絡資料，好似電話號碼等去幫手證明你嘅確認。',
 	'requestaccount-bio-text' => '你嘅傳記將會設定做響你用戶頁度嘅預設內容。試吓包含任何嘅憑據。
@@ -5096,7 +5096,7 @@ $messages['zh-hant'] = array(
 	'requestaccount-leg-other' => '其他資訊',
 	'requestaccount-leg-tos' => '服務條款',
 	'requestaccount-acc-text' => '當完成請求時，一封確認訊息會發到您的電郵位址。
-	請在該封電郵中點擊確認連結去回應它。同時，當您的帳戶被創建後，您帳戶的個密碼將會電郵給您。',
+	請在該封電郵中點擊確認連結去回應它。同時，當您的帳戶被創建後，您帳戶的個密碼將會電郵給您。', # Fuzzy
 	'requestaccount-areas-text' => '在下面選擇你最專業的或者最感興趣的話題。',
 	'requestaccount-ext-text' => '以下的資料將會保密，而且只是會用在這次請求中。
 	您可能需要列示聯絡資料，像電話號碼等去幫助證明您的確認。',

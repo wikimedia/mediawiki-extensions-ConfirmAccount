@@ -888,7 +888,7 @@ $messages['gv'] = array(
 	'usercredentials-member' => 'Kiartyn:',
 );
 
-/** Hakka (Hak-kâ-fa)
+/** Hakka (客家語/Hak-kâ-ngî)
  * @author Hakka
  */
 $messages['hak'] = array(

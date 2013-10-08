@@ -3282,7 +3282,7 @@ $messages['gv'] = array(
 	'confirmaccount-wsum' => 'Failt ort!',
 );
 
-/** Hakka (Hak-kâ-fa)
+/** Hakka (客家語/Hak-kâ-ngî)
  * @author Hakka
  */
 $messages['hak'] = array(
@@ -4875,7 +4875,7 @@ $messages['kw'] = array(
 	'confirmaccount-wsum' => 'Dynnargh!',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Growingup
  */
 $messages['ky'] = array(
