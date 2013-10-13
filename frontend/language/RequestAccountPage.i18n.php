@@ -2797,7 +2797,7 @@ $messages['lb'] = array(
 	'requestaccount' => 'Benotzerkont ufroen',
 	'requestaccount-text' => "'''Fëllt dëse Formulaire aus a schéckt e fort fir e Benotzerkont unzefroen'''.
 
-Passt op datt Dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Conditioune vum Benotze]] gelies hutt éier Dir e Benotzerkont ufrot.
+Passt op datt Dir d'éischt d'[[{{MediaWiki:Requestaccount-page}}|Konditioune vum Benotze]] gelies hutt éier Dir e Benotzerkont ufrot.
 
 Wann Äre Benotzerkont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir kënnt Äre Benotzerkont  [[Special:UserLogin|benotzen]].",
 	'requestaccount-page' => '{{ns:project}}:Notzungsbedingungen',
@@ -2806,7 +2806,7 @@ Wann Äre Benotzerkont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir 
 	'requestaccount-leg-areas' => 'Haaptinteressen',
 	'requestaccount-leg-person' => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other' => 'Aner Informatiounen',
-	'requestaccount-leg-tos' => 'Conditioune vum Gebrauch',
+	'requestaccount-leg-tos' => 'Konditioune vum Gebrauch',
 	'requestaccount-acc-text' => "Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mail-Adress. D'E-Mail-Adress gëtt net verëffentlecht.
 Äntwert w.e.g. duerch klicken op de Confirmatiounslink deen an där Mail drasteet.
 Och Äert Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht gouf.",

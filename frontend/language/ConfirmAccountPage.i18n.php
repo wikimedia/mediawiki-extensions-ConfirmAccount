@@ -1564,6 +1564,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'confirmaccount-showexp' => 'шира делла дехарш',
 	'confirmaccount-review' => 'Хьажар',
 	'confirmaccount-all' => '(гайта ерриге рогӀехь)',
 	'confirmaccount-name' => 'Декъашхочун цӀе',
