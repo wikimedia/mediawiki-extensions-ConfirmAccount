@@ -3611,6 +3611,7 @@ $messages['pdc'] = array(
 );
 
 /** Polish (polski)
+ * @author Chrumps
  * @author Derbeth
  * @author Equadus
  * @author Leinad
@@ -3654,7 +3655,7 @@ Upewnij się, czy na pewno chcesz opublikować te informacje.",
 	'requestaccount-attach' => 'Życiorys (opcjonalne):',
 	'requestaccount-notes' => 'Dodatkowe informacje:',
 	'requestaccount-urls' => 'Lista adresów stron internetowych, jeśli posiadasz (każdy w osobnym wierszu):',
-	'requestaccount-agree' => 'Musisz potwierdzić, że wpisane imię i nazwisko są poprawne oraz, że zgadzasz się na warunki korzystania z {{GRAMMAR:D.lp|{{SITENAME}}}}.',
+	'requestaccount-agree' => 'Musisz potwierdzić, że wpisane imię i nazwisko są poprawne oraz że zgadzasz się na warunki korzystania z {{GRAMMAR:D.lp|{{SITENAME}}}}.',
 	'requestaccount-inuse' => 'Nazwa użytkownika jest zajęta przez oczekujący wniosek o założenie konta.',
 	'requestaccount-tooshort' => 'Biografia musi mieć co najmniej $1 {{PLURAL:$1|słowo|słowa|słów}}.',
 	'requestaccount-emaildup' => 'W innym oczekującym wniosku o założenie konta użytkownika wpisano taki sam adres e‐mail.',
