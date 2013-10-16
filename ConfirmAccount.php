@@ -23,7 +23,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 ) ;
 }
 
-$wgExtensionCredits['specialpage'][] = array(
+$GLOBALS['wgExtensionCredits']['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Confirm User Accounts',
 	'descriptionmsg' => 'confirmedit-desc',
@@ -42,9 +42,9 @@ ConfirmAccountSetup::defineSourcePaths( $wgAutoloadClasses, $wgExtensionMessages
 ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
 
 # Let some users confirm account requests and view credentials for created accounts
-$wgAvailableRights[] = 'confirmaccount'; // user can confirm account requests
-$wgAvailableRights[] = 'requestips'; // user can see IPs in request queue
-$wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed users
+$GLOBALS['wgAvailableRights'][] = 'confirmaccount'; // user can confirm account requests
+$GLOBALS['wgAvailableRights'][] = 'requestips'; // user can see IPs in request queue
+$GLOBALS['wgAvailableRights'][] = 'lookupcredentials'; // user can lookup info on confirmed users
 
 # Actually register special pages
 ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages, $wgSpecialPageGroups );
@@ -55,15 +55,15 @@ ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages, $wgSpecialPageGroups
 ConfirmAccountUISetup::defineHookHandlers( $wgHooks );
 
 # Check for account name collisions
-$wgHooks['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPending';
+$GLOBALS['wgHooks']['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPending';
 
 # Schema changes
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
+$GLOBALS['wgHooks']['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
 
 # ####### END HOOK CALLBACK FUNCTIONS #########
 
 # Load the extension after setup is finished
-$wgExtensionFunctions[] = 'efLoadConfirmAccount';
+$GLOBALS['wgExtensionFunctions'][] = 'efLoadConfirmAccount';
 
 /**
  * This function is for setup that has to happen in Setup.php
