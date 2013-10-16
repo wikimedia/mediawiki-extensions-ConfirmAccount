@@ -36,7 +36,7 @@ require( dirname( __FILE__ ) . '/ConfirmAccount.config.php' );
 
 # Define were PHP files and i18n files are located
 require( dirname( __FILE__ ) . '/ConfirmAccount.setup.php' );
-ConfirmAccountSetup::defineSourcePaths( $wgAutoloadClasses, $wgExtensionMessagesFiles );
+ConfirmAccountSetup::defineSourcePaths( $wgAutoloadClasses, $wgMessagesDirs, $wgExtensionMessagesFiles );
 
 # Define JS/CSS modules and file locations
 ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
