@@ -10,7 +10,7 @@ class ConfirmAccountUpdaterHooks {
 	 */
 	public static function addSchemaUpdates( DatabaseUpdater $updater ) {
 		$base = dirname( __FILE__ );
-		if ( $updater->getDB()->getType() == 'mysql' ) {
+		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
 			$base = "$base/mysql";
 
 			$updater->addExtensionTable( 'account_requests', "$base/ConfirmAccount.sql" );

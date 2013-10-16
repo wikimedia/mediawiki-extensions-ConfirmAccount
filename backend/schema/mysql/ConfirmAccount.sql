@@ -6,7 +6,7 @@
 -- This stores all of our reviews,
 -- the corresponding tags are stored in the tag table
 CREATE TABLE IF NOT EXISTS /*_*/account_requests (
-  acr_id int unsigned NOT NULL auto_increment PRIMARY KEY,
+  acr_id int unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT,
   -- Usernames must be unique, must not be in the form of
   -- an IP address. _Shouldn't_ allow slashes or case
   -- conflicts. Spaces are allowed, and are _not_ converted
@@ -70,7 +70,7 @@ CREATE INDEX /*i*/acr_type_del_reg ON /*_*/account_requests (acr_type,acr_delete
 -- When accounts are confirmed, the identity info goes here
 CREATE TABLE IF NOT EXISTS /*_*/account_credentials (
   -- Revision ID #
-  acd_id int unsigned NOT NULL auto_increment PRIMARY KEY,
+  acd_id int unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT,
   -- Foreign key to user.user_id
   acd_user_id int unsigned NOT NULL,
   -- Optional 'real name' to be displayed in credit listings

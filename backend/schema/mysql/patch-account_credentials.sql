@@ -8,7 +8,7 @@ ALTER TABLE /*$wgDBprefix*/account_requests
 -- When accounts are confirmed, the identity info goes here
 CREATE TABLE IF NOT EXISTS /*_*/account_credentials (
   -- Revision ID #
-  acd_id int unsigned NOT NULL auto_increment PRIMARY KEY,
+  acd_id int unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT,
   -- Foreign key to user.user_id
   acd_user_id int unsigned NOT NULL,
   -- Optional 'real name' to be displayed in credit listings
