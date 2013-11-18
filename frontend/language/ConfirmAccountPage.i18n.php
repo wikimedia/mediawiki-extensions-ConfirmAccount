@@ -31,7 +31,7 @@ Carefully review the below information.
 If you are approving this request, use the position dropdown to set the account status of the user.
 Edits made to the application biography will not affect any permanent credential storage.
 Note that you can choose to create the account under a different username.
-Use this only to avoid  collisions with other names.
+Use this only to avoid collisions with other names.
 
 If you simply leave this page without confirming or denying this request, it will remain pending.',
 	'confirmaccount-none-o'   => 'There are currently no open pending account requests in this list.',
