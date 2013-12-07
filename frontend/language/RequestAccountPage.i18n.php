@@ -805,6 +805,7 @@ Ne možete podnositi više zahtjeva.',
 );
 
 /** Catalan (català)
+ * @author Alvaro Vidal-Abarca
  * @author Arnaugir
  * @author Loupeter
  * @author Paucabot
@@ -823,7 +824,7 @@ $messages['ca'] = array(
 	'requestaccount-reqtype' => 'Posició:',
 	'requestaccount-level-0' => 'autor',
 	'requestaccount-level-1' => 'editor',
-	'requestaccount-bio' => 'Biografia personal:', # Fuzzy
+	'requestaccount-bio' => 'Biografia personal (només text sense format):',
 	'requestaccount-notes' => 'Notes addicionals:',
 	'requestaccount-submit' => 'Sol·licitud de compte',
 );
@@ -842,7 +843,7 @@ $messages['ckb'] = array(
 	'requestaccount' => 'داخوازی ھەژمار',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Jezevec
  * @author Jkjk
  * @author Li-sung
@@ -901,7 +902,7 @@ E-mail byla ověřena. Žádost můžete schválit zde "$2".',
 Další žádost již není možná.',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -945,7 +946,7 @@ Du kan angive kontaktoplysninger så som et telefonnummer, for at gøre det lett
 Sørg for kun at medtage oplysninger, som du ønsker alle må se.",
 	'requestaccount-real' => 'Rigtigt navn:',
 	'requestaccount-same' => '(samme som rigtigt navn nedenfor)',
-	'requestaccount-email' => 'E-mail-adresse:',
+	'requestaccount-email' => 'E-mailadresse:',
 	'requestaccount-reqtype' => 'Stilling:',
 	'requestaccount-level-0' => 'forfatter',
 	'requestaccount-level-1' => 'redaktør',
@@ -956,7 +957,7 @@ Sørg for kun at medtage oplysninger, som du ønsker alle må se.",
 	'requestaccount-agree' => 'Du skal bekræfte, at dit rigtige navn er korrekt og at du accepterer anvendelsesvilkårene.',
 	'requestaccount-inuse' => 'Brugernavnet er allerede i brug i en ventende kontoanmodning.',
 	'requestaccount-tooshort' => 'Biografien skal som minimum indeholde $1 {{PLURAL:$1|ord}}.',
-	'requestaccount-emaildup' => 'En anden ventende kontoanmodning benytter samme e-mail-adresse.',
+	'requestaccount-emaildup' => 'En anden ventende kontoanmodning benytter samme e-mailadresse.',
 	'requestaccount-exts' => 'Den vedhæftede fils type er ikke tilladt.',
 	'requestaccount-resub' => 'Af sikkerhedhensyn skal du vælge filen med dit CV igen.
 Lad feltet være blankt, hvis du ikke længere ønsker at medtage en fil.',
@@ -965,9 +966,9 @@ Navnet, jeg har oplyst som "Rigtigt navn" er virkelig mit eget rigtige navn.',
 	'requestaccount-submit' => 'Anmod om konto',
 	'requestaccount-sent' => 'Din kontoanmodning er sendt og afventer nu godkendelse.
 En bekræftelsesmail er blevet sendt til din e-mail-adresse.',
-	'request-account-econf' => 'Din e-mail-adresse er nu bekræftet. Det vil blive registreret i din kontoanmodning.',
-	'requestaccount-email-subj' => 'Bekræftelse af e-mail-adresse hos {{SITENAME}}',
-	'requestaccount-email-body' => 'Nogen, formentlig dig, har fra IP-adressen $1, på {{SITENAME}} anmodet om kontoen "$2" med denne e-mail-adresse.
+	'request-account-econf' => 'Din e-mailadresse er nu bekræftet. Det vil blive registreret i din kontoanmodning.',
+	'requestaccount-email-subj' => 'Bekræftelse af e-mailadresse hos {{SITENAME}}',
+	'requestaccount-email-body' => 'Nogen, formentlig dig, har fra IP-adressen $1, på {{SITENAME}} anmodet om kontoen "$2" med denne e-mailadresse.
 
 For at bekræfte på {{SITENAME}}, at kontoen virkelig tilhører dig, bedes du åbne følgende link i din browser:
 
@@ -978,7 +979,7 @@ Hvis det *ikke* er dig, så benyt ikke linket.
 Bekræftelseskoden udløber den $4.',
 	'requestaccount-email-subj-admin' => 'Anmod om konto på {{SITENAME}}',
 	'requestaccount-email-body-admin' => '"$1" har anmodet om en konto og venter på bekræftelse.
-E-mail-adressen er blevet bekræftet. Du kan bekræfte anmodningen på: $2',
+E-mailadressen er blevet bekræftet. Du kan bekræfte anmodningen på: $2',
 	'acct_request_throttle_hit' => 'Beklager, du har allerede anmodet om {{PLURAL:$1|en konto|$1 konti}}.
 Du kan ikke foretage flere anmodninger.',
 );
@@ -1497,7 +1498,7 @@ Tämän vahvistuskoodi vanhenee $4.',
 	'requestaccount-email-subj-admin' => 'Sivuston {{SITENAME}} käyttäjätunnuspyyntö',
 	'requestaccount-email-body-admin' => '”$1” on pyytänyt käyttäjätunnusta ja odottaa vahvistusta.
 Sähköpostiosoite on tarkistettu. Myönnä käyttäjätunnus tästä: $2.',
-	'acct_request_throttle_hit' => 'Valitettavasti et voi tehdä enempää pyyntöjä, koska olet jo pyytänyt {{PLURAL:$1|yhden käyttäjätunnuksen|$1 käyttäjätunnusta}}.',
+	'acct_request_throttle_hit' => 'Et voi tehdä enempää pyyntöjä, koska olet jo pyytänyt {{PLURAL:$1|yhden käyttäjätunnuksen|$1 käyttäjätunnusta}}.',
 );
 
 /** French (français)
@@ -2035,7 +2036,7 @@ Tak ruče kaž konto je so potwjerdźiło, dóstanješ powěsć přez e-mejlku a
 	'requestaccount-leg-person' => 'Wosobinske informacije',
 	'requestaccount-leg-other' => 'Druhe informacije',
 	'requestaccount-leg-tos' => 'Wužiwanske wuměnjenja',
-	'requestaccount-acc-text' => 'K twojej e-mejlowej adresy budźe so po wotesłanju tutoho formulara wobkrućenska mejlka słać. Prošu wotmołw na to přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.', # Fuzzy
+	'requestaccount-acc-text' => 'Na twoju e-mejlowu adresu budźe so po wotesłanju tutoho naprašowanje wobkrućenska mejlka słać. Adresa so njewozjewi. Prošu wotmołw přez kliknjenje na wobkrućenski wotkaz, kotryž mejlka wobsahuje. Skónčnje, tak ruče kaž twoje konto je wutworjene, so ći twoje hesło připósćele.',
 	'requestaccount-areas-text' => 'Wubjer slědowace temowe wobwody, w kotrychž maš wěcywustojnosć abo chceš najwjace dźěła činić.',
 	'requestaccount-ext-text' => 'Ze slědowacymi informacijemi so dowěrliwje wobchadźa a jenož za tute požadne wužiwa. Móžeš kontaktowe informacije, kaž na př. telefonowe čisło, podać, zo by wobdźěłowanje swojeho požadanja zjednorił.',
 	'requestaccount-bio-text' => 'Spytaj wšě relewantne informacije do swojeje slědowaceje biografije zapřijimać.',
@@ -2623,7 +2624,7 @@ $messages['km'] = array(
 	'requestaccount-reqtype' => 'តួនាទី៖',
 	'requestaccount-level-0' => 'អ្នកនិពន្ធ៖',
 	'requestaccount-level-1' => 'ឧបករណ៍កែប្រែ',
-	'requestaccount-bio' => 'ជីវប្រវត្តិផ្ទាល់ខ្លួន៖', # Fuzzy
+	'requestaccount-bio' => 'ជីវប្រវត្តិផ្ទាល់ខ្លួន (អក្សរសុទ្ធ)៖',
 	'requestaccount-attach' => 'ប្រវត្តិរូប (ស្រេចចិត្ត)​៖',
 	'requestaccount-notes' => 'សម្គាល់បន្ថែម៖',
 	'requestaccount-urls' => 'បញ្ជីវិបសាយ បើមាន (ចែកគ្នាដោយការចុះបន្ទាត់)៖',
@@ -2807,15 +2808,15 @@ Wann Äre Benotzerkont ugeholl as, kritt Dir eng Informatioun per E-Mail an Dir 
 	'requestaccount-leg-person' => 'Perséinlech Informatiounen',
 	'requestaccount-leg-other' => 'Aner Informatiounen',
 	'requestaccount-leg-tos' => 'Konditioune vum Gebrauch',
-	'requestaccount-acc-text' => "Esoubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiouns-Message op Är E-Mail-Adress. D'E-Mail-Adress gëtt net verëffentlecht.
+	'requestaccount-acc-text' => "Soubal wéi Dir dës Ufro geschéckt hutt kritt Dir e Confirmatiounsmessage op Är E-Mail-Adress. D'E-Mail-Adress gëtt net verëffentlecht.
 Äntwert w.e.g. duerch klicken op de Confirmatiounslink deen an där Mail drasteet.
-Och Äert Passwuert gëtt Iech gemailt esoubal wéi Äre Benotzerkonnt ugeluecht gouf.",
+Och Äert Passwuert gëtt Iech gemailt soubal wéi Äre Benotzerkonnt ugeluecht gouf.",
 	'requestaccount-areas-text' => 'Wielt déi Sujeten aus an denen Dir formaalt Fachwëssen huet oder an deem Dir am léifste schaffe wëllt.',
 	'requestaccount-ext-text' => "Dës Informatioune gi vertraulech behandelt a gi just fir dës Ufro benotzt.
 Dir kënnt Kontaktinformatiounen wéi eng Telefonsnummer uginn fir d'Identitéitskonfirmatioun ze vereinfachen.",
 	'requestaccount-bio-text' => 'Versicht all néideg Informatiounen an Ärer Biographie hei drënner unzeginn.',
-	'requestaccount-bio-text-i' => "'''Är Biografie gëtt als éischt Versioun vun Ärer Benotzersäit verëffentlecht.'''
-Iwwerleet Iech ob Dir domat averstan sidd datt esou Informatiounen iwwer Iech verëffentlecht ginn.",
+	'requestaccount-bio-text-i' => "'''Är Biographie gëtt als éischt Versioun vun Ärer Benotzersäit verëffentlecht.'''
+Iwwerleet Iech ob Dir domat averstane sidd datt sou Informatiounen iwwer Iech verëffentlecht ginn.",
 	'requestaccount-real' => 'Richtegen Numm:',
 	'requestaccount-same' => "(d'selwecht wéi de richtegen Numm)",
 	'requestaccount-email' => 'E-mail-Adress:',
@@ -2834,7 +2835,7 @@ Iwwerleet Iech ob Dir domat averstan sidd datt esou Informatiounen iwwer Iech ve
 	'requestaccount-resub' => "De Fichier mat ärem CV muss aus Sécherheetsgrënn nachemol nei erausgesicht ginn.
 Loosst d'Feld eidel wann Dir elo keen CV abanne wëllt.",
 	'requestaccount-tos' => 'Ech hunn d\'[[{{MediaWiki:Requestaccount-page}}|Benotzungsbedingunge]] vu(n) {{SITENAME}} gelies an akzeptzéieren se.
-Den Numm den ech bäi "Richtegen Numm" uginn hunn, ass mäin eegene richtegen Numm.',
+Den Numm den ech bei "Richtegen Numm" uginn hunn, ass mäin eegene richtegen Numm.',
 	'requestaccount-submit' => 'Benotzerkont ufroen',
 	'requestaccount-sent' => 'Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.
 Eng Konfirmatiounsmail gouf op Är E-mailadress geschéckt.',
@@ -3031,18 +3032,19 @@ $messages['ml'] = array(
  * @author Kaustubh
  * @author Mahitgar
  * @author Shantanoo
+ * @author V.narsikar
  */
 $messages['mr'] = array(
-	'requestaccount' => 'खाते मागवा',
+	'requestaccount' => 'खात्यासाठी विनंती करा',
 	'requestaccount-text' => "'''खाते तयार करण्यासाठी खालील अर्ज भरून पाठवा'''.
 
 अर्ज पाठविण्यापूर्वी तुम्ही [[{{MediaWiki:Requestaccount-page}}|अटी व नियम]] वाचलेले असल्याची खात्री करा.
 
 एकदा का खाते तयार झाले की तुम्हाला तसा विपत्र संदेश येईल व तुम्ही [[Special:UserLogin]] मध्ये प्रवेश करू शकाल.",
-	'requestaccount-page' => '{{ns:project}}:अटी व नियम',
+	'requestaccount-page' => '{{ns:project}}:सेवाशर्ती',
 	'requestaccount-dup' => "'''सूचना: तुम्ही अगोदरच नोंदीकृत खात्यामधून प्रवेश केलेला आहे.'''",
 	'requestaccount-leg-user' => 'सदस्य खाते',
-	'requestaccount-leg-areas' => 'मुख्य पसंती',
+	'requestaccount-leg-areas' => 'पसंतीची मुख्य क्षेत्रे',
 	'requestaccount-leg-person' => 'वैयक्तिक माहिती',
 	'requestaccount-leg-other' => 'इतर माहिती',
 	'requestaccount-leg-tos' => 'सेवेच्या अटी',
@@ -3065,7 +3067,7 @@ $messages['mr'] = array(
 	'requestaccount-urls' => 'संकेतस्थळांची यादी (एका ओळीत एक):',
 	'requestaccount-agree' => 'तुम्ही दिलेले स्वत:चे खरे नाव हे बरोबर असल्याचे नमूद करा तसेच तुम्हाला अटी व नियम मान्य आहेत असे नमूद करा.',
 	'requestaccount-inuse' => 'तुम्ही दिलेले सदस्यनाव या आधीच कुणीतरी खाते उघडण्यासाठी मागितलेले आहे.',
-	'requestaccount-tooshort' => 'तुमच्या वैयक्तिक माहिती मध्ये कमीतकमी $1 शब्द असणे आवश्यक आहे.', # Fuzzy
+	'requestaccount-tooshort' => 'तुमच्या वैयक्तिक माहितीत कमीतकमी $1{{PLURAL:$1|शब्द}} असणे आवश्यक आहे.',
 	'requestaccount-emaildup' => 'तुम्ही दिलेला इमेल पत्ता दुसऱ्या एका पूर्ण न झालेल्या मागणीमध्ये नोंदलेला आहे.',
 	'requestaccount-exts' => 'जोडण्याच्या संचिकेचा प्रकार वापरायला परवानगी नाही.',
 	'requestaccount-resub' => 'तुमच्या रिज्यूमची संचिका सुरक्षेच्या कारणास्तव पुन्हा निवडणे आवश्यक आहे.
@@ -3519,10 +3521,12 @@ $messages['oc'] = array(
 	'requestaccount-leg-person' => 'Entresenhas personalas',
 	'requestaccount-leg-other' => 'Autras entresenhas',
 	'requestaccount-leg-tos' => 'Tèrmes del servici',
-	'requestaccount-acc-text' => 'Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. Dins lo corrièr recebut, clicatz sul ligam correspondent a la confirmacion de vòstra demanda. E mai, senhal serà mandat per corrièr electronic quand vòstre compte serà creat.', # Fuzzy
+	'requestaccount-acc-text' => "Un messatge de confirmacion serà mandat a vòstra adreça electronica una còp que la demanda serà estada mandada. L'adreça serà pas publicada.
+Respondètz en clicant sul ligam de confirmacion del corrièr.
+Aprèp aquò, vòstre senhal vos serà mandat per corrièr electronic quand vòstre compte serà creat.",
 	'requestaccount-areas-text' => 'Causissètz los domenis dins los quals avètz una expertisa demostrada, o dins los quals sètz mai portat a contribuir.',
 	'requestaccount-ext-text' => 'L’informacion seguenta demòra privada e poirà èsser utilizada que per aquesta requèsta. Avètz la possibilitat de far la lista dels contactes coma un numèro de telefòn per obténer una assisténcia per confirmar vòstra identitat.',
-	'requestaccount-bio-text' => "Vòstra biografia serà mesa per defaut sus vòstra pagina d'utilizaire. Ensajatz d’i metre vòstras recomandacions. Asseguratz-vos que podètz difusir sens crenta las entresenhas. Vòstre nom pòt èsser cambiat en utilizant [[Special:Preferences|vòstras preferéncias]].", # Fuzzy
+	'requestaccount-bio-text' => "Ensajatz d'inclure totas las referéncias pertinentas a vòstra biografia çaijós.",
 	'requestaccount-real' => 'Nom vertadièr :',
 	'requestaccount-same' => '(nom figurant dins vòstre estat civil)',
 	'requestaccount-email' => 'Adreça electronica:',

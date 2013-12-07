@@ -401,7 +401,7 @@ $messages['ckb'] = array(
 	'usercredentials-member' => 'مافەکان:',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Jkjk
  * @author Li-sung
  * @author Matěj Grabovský
@@ -425,7 +425,7 @@ $messages['cs'] = array(
 	'usercredentials-member' => 'Práva:',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -1717,6 +1717,7 @@ $messages['oc'] = array(
 	'usercredentials-leg-areas' => "Centres d'interès principals",
 	'usercredentials-leg-person' => 'Entresenhas personalas',
 	'usercredentials-leg-other' => 'Autras entresenhas',
+	'usercredentials-leg-ip' => "donadas d'adreça IP",
 	'usercredentials-email' => 'Corrièr electronic :',
 	'usercredentials-real' => 'Nom vertadièr :',
 	'usercredentials-bio' => 'Biografia :',
@@ -1724,6 +1725,8 @@ $messages['oc'] = array(
 	'usercredentials-notes' => 'Nòtas suplementàrias :',
 	'usercredentials-urls' => 'Lista dels sites internet :',
 	'usercredentials-ip' => 'Adreça IP iniciala :',
+	'usercredentials-xff' => "X-Forwarded-For d'origina :",
+	'usercredentials-agent' => "User-Agent d'origina :",
 	'usercredentials-member' => 'Dreches :',
 	'usercredentials-badid' => 'Cap de referéncia pas trobada per aqueste utilizaire. Verificatz que lo nom siá ben redigit.',
 );

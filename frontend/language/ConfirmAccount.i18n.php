@@ -139,7 +139,7 @@ $messages['cdo'] = array(
 	'right-lookupcredentials' => '覷[[Special:UserCredentials|用戶憑據]]',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Jkjk
  * @author Li-sung
  * @author Matěj Grabovský
@@ -588,10 +588,11 @@ $messages['ml'] = array(
  * @author Htt
  * @author Kaustubh
  * @author Mahitgar
+ * @author V.narsikar
  */
 $messages['mr'] = array(
 	'confirmaccount-newrequests' => "'''$1''' इमेल पत्ता तपासलेला आहे {{PLURAL:$1|[[Special:ConfirmAccounts|खात्याची मागणी]]|[[Special:ConfirmAccounts|खात्यांची मागणी]]}} शिल्लक", # Fuzzy
-	'requestaccount-loginnotice' => "सदस्य खाते मिळविण्यासाठी तुम्ही तुमची '''[[Special:RequestAccount|मागणी नोंदवा]]'''.",
+	'requestaccount-loginnotice' => "सदस्य खाते मिळविण्यासाठी तुम्ही तुमची '''[[Special:RequestAccount|विनंती नोंदवा]]'''.",
 );
 
 /** Malay (Bahasa Melayu)

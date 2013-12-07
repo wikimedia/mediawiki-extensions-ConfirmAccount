@@ -1583,7 +1583,7 @@ $messages['ckb'] = array(
 	'confirmaccount-wsum' => 'بەخێربێی!',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Jkjk
  * @author Li-sung
  * @author Matěj Grabovský
@@ -1648,7 +1648,7 @@ $messages['cs'] = array(
 	'confirmaccount-email-subj' => 'Žádost o účet na {{SITENAME}}',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -4577,11 +4577,11 @@ $messages['km'] = array(
 	'confirmaccount-notes' => 'កំណត់សម្គាល់បន្ថែម៖',
 	'confirmaccount-urls' => 'បញ្ជីគេហទំព័រ៖',
 	'confirmaccount-none-p' => '(មិនត្រូវបាន​ផ្តល់)',
-	'confirmaccount-confirm' => 'ប្រើប្រាស់ជំរើសខាងក្រោមដើម្បី យល់ស្រប បដិសេដ ឬ ទុកសំនើសុំនេះមួយអន្លើសិន៖', # Fuzzy
+	'confirmaccount-confirm' => 'ប្រើប្រាស់ជម្រើសខាងក្រោមដើម្បី យល់ស្រប បដិសេដ ឬ ទុកសំនើសុំនេះមួយអន្លើសិន៖',
 	'confirmaccount-econf' => '(បានបញ្ជាក់ទទួលស្គាល់)',
-	'confirmaccount-reject' => '(ត្រូវបានបដិសេដដោយ [[User:$1|$1]] នៅ $2)', # Fuzzy
+	'confirmaccount-reject' => '(ត្រូវបានបដិសេដដោយ [[User:$1|$1]] នៅ $3 នៅ $4)',
 	'confirmaccount-noreason' => '(ទទេ)',
-	'confirmaccount-held' => '(ត្រូវបានសំគាល់ជា "ទុកមួយអន្លើ" ដោយ [[User:$1|$1]] នៅ $2)', # Fuzzy
+	'confirmaccount-held' => '(ត្រូវបានសំគាល់ជា "ទុកមួយអន្លើ" ដោយ [[User:$1|$1]] នៅ  $3 នៅ $4)',
 	'confirmaccount-create' => 'យល់ស្រប (បង្កើត​គណនី)',
 	'confirmaccount-deny' => 'បដិសេដ (ដកចេញពីបញ្ជី)',
 	'confirmaccount-hold' => 'ទុកមួយអន្លើសិន',
@@ -4596,8 +4596,8 @@ $messages['km'] = array(
 
 បាន​បង្កើត​គណនី​អ្នកប្រើប្រាស់​ថ្មី​ហើយ [[User:$1|$1]]​។',
 	'confirmaccount-rej' => 'សំណើសុំគណនីបានបដិសេធរួចជាស្រេចហើយ។',
-	'confirmaccount-viewing' => '(ពេលនេះ កំពុងមើលដោយ [[User:$1|$1]])', # Fuzzy
-	'confirmaccount-summary' => 'បង្កើត​ទំព័រ​អ្នកប្រើប្រាស់​ជាមួយ​ប្រវត្តិរូប​នៃ​អ្នកប្រើប្រាស់​ថ្មី​។', # Fuzzy
+	'confirmaccount-viewing' => '(ពេលនេះកំពុងមើលដោយ [[User:$1|$1]])',
+	'confirmaccount-summary' => 'បង្កើត​ទំព័រ​អ្នកប្រើប្រាស់សម្រាប់​អ្នកប្រើប្រាស់​ថ្មី​។',
 	'confirmaccount-welc' => "'''''{{SITENAME}}'' សូមស្វាគមន៍!'''
 យើងខ្ញុំសង្ឃឹមថាអ្នកនឹងជួយរួមចំណែកបានច្រើនជាមួយយើងខ្ញុំ។
 ជាដំបូង សូមអ្នកអាន[[{{MediaWiki:Helppage}}|ទំព័រជំនួយជាមុនសិន]]។
@@ -4650,6 +4650,7 @@ $messages['kn'] = array(
 );
 
 /** Korean (한국어)
+ * @author Daisy2002
  * @author Hym411
  * @author Kwj2772
  * @author 아라
@@ -4666,16 +4667,30 @@ $messages['ko'] = array(
 당신은 당신이 행하는 모든 행동을 검토할 것을 권합니다.",
 	'confirmaccount-list' => '이 아래는 계정 요청 승인을 기다리는 요청들입니다.
 계정 요청이 승인되거나 거절되면, 이 리스트에서 없어질 것입니다.',
+	'confirmaccount-real-q' => '이름',
 	'confirmaccount-email-q' => '이메일',
+	'confirmaccount-bio-q' => '전기',
 	'confirmaccount-showopen' => '진행 중인 요청',
 	'confirmaccount-showrej' => '거부된 요청',
 	'confirmaccount-showheld' => '보류된 요청',
 	'confirmaccount-showexp' => '만료된 요청',
+	'confirmaccount-review' => '검토',
 	'confirmaccount-all' => '(모든 대기열 보기)',
 	'confirmaccount-q-open' => '진행 중인 요청',
 	'confirmaccount-q-held' => '보류된 요청',
 	'confirmaccount-q-rej' => '최근에 거부된 요청',
+	'confirmaccount-q-stale' => '만료된 요청',
+	'confirmaccount-leg-user' => '사용자 계정',
+	'confirmaccount-leg-person' => '개인 정보',
+	'confirmaccount-leg-other' => '추가 정보',
+	'confirmaccount-leg-ip' => 'IP 주소 데이터',
 	'confirmaccount-name' => '사용자 이름',
+	'confirmaccount-real' => '이름:',
+	'confirmaccount-email' => '이메일:',
+	'confirmaccount-pos-0' => '저자',
+	'confirmaccount-pos-1' => '편집자',
+	'confirmaccount-bio' => '전기:',
+	'confirmaccount-notes' => '추가 사항:',
 	'confirmaccount-none-p' => '(제공하지 않음)',
 	'confirmaccount-econf' => '(확인함)',
 	'confirmaccount-withcv' => '(CV 첨부함)',
@@ -4690,8 +4705,10 @@ $messages['ko'] = array(
 	'confirmaccount-xff' => 'X-Forwarded-For:',
 	'confirmaccount-agent' => '사용자-에이전트:',
 	'confirmaccount-submit' => '확인',
+	'confirmaccount-needreason' => '아래의 코멘트 박스에 이유를 제공해야 합니다.',
 	'confirmaccount-summary' => '새 사용자에 대한 사용자 문서를 만듭니다.',
 	'confirmaccount-wsum' => '환영합니다!',
+	'confirmaccount-email-subj' => '{{SITENAME}} 계정 요청',
 	'confirmaccount-email-body' => '{{SITENAME}}에서 당신의 계정 만들기 요청이 승인되었습니다.
 
 계정 이름: $1
@@ -4917,8 +4934,8 @@ $messages['lb'] = array(
 	'confirmedit-desc' => "Gëtt Bürokraten d'Méiglechkeet fir Ufroe vu Benotzerkonten ze confirméieren",
 	'confirmaccount-list' => "Hei ass d'Lëscht vun den Ufroe fir e Benotzerkont déi nach autoriséiert musse ginn.
 Wann eng Ufro entweder autoriséiert oder refuséiert ass gëtt se vun der Lëscht erofgeholl.",
-	'confirmaccount-list2' => 'Hei ënnendrënner ass eng Lëscht vun de Benotzerkontenufroen déi voru kuerzem ofgelehnt goufen an déi esoubal wéi se e puer Deeg al sinn automatesch geläscht kënne ginn.
-Se kënnen nach ëmmer als Benotzerkonten approuvéiert ginn, eventuell kënnt Dir den Administrateur den Ufro ofgelehnt huet consultéieren ier Dir dat maacht.',
+	'confirmaccount-list2' => 'Hei ënnendrënner ass eng Lëscht vun de Benotzerkontenufroen déi voru kuerzem ofgeleent goufen an déi soubal wéi se e puer Deeg al sinn automatesch geläscht kënne ginn.
+Se kënnen nach ëmmer als Benotzerkonten approuvéiert ginn, eventuell kënnt Dir den Administrateur den Ufro ofgeleent huet consultéieren ier Dir dat maacht.',
 	'confirmaccount-list3' => 'Hei ënnendrënner ass eng Lëscht vun ofgelafenen Ufroe fir Benotzerkonten déi bannert e puer Deeg automatesch geläscht ginn.
 Si kënnen nach als Benotzerkonten akzeptéiert ginn.',
 	'confirmaccount-none-o' => 'Et gëtt elo an dëser Lëscht keng oppen Ufroe fir Benotzerkonten.',
@@ -5365,9 +5382,10 @@ $messages['mn'] = array(
  * @author Htt
  * @author Kaustubh
  * @author Mahitgar
+ * @author V.narsikar
  */
 $messages['mr'] = array(
-	'confirmaccounts' => 'खाते मागणीला सहमती द्या',
+	'confirmaccounts' => 'खाते उघडण्याच्या विनंतीस नक्की करा',
 	'confirmedit-desc' => 'अधिकार्‍यांना (bureaucrats) खाते मागणी पूर्ण करण्याचे अधिकार देते',
 	'confirmaccount-maintext' => "'''''{{SITENAME}}'' वरील प्रलंबित खाते मागण्या पूर्ण करण्यासाठी हे पान वापरले जाते'''.
 
@@ -5375,7 +5393,7 @@ $messages['mr'] = array(
 
 एखाद्या मागणीला सहमती देताना, काळजीपूर्वक तपासा तसेच दिलेली माहिती पूर्ण असल्याची खात्री करा.
 तुमच्या क्रिया गोपनीयरित्या नोंदल्या जातील. तुम्ही करत असलेल्या क्रियांबरोबरच इतरांनी केलेल्या क्रिया तपासून पहा.",
-	'confirmaccount-list' => 'खाली प्रलंबित खाते मागण्यांची यादी आहे. एखादी मागणी स्वीकारण्यात अथवा नाकारण्यात आल्यानंतर ती या यादीतून वगळली जाईल.',
+	'confirmaccount-list' => 'खाली विनंत्या प्रलंबित असलेल्या खात्यांची यादी आहे. एखादी विनंती स्वीकारण्यात अथवा नाकारण्यात आल्यानंतर ती या यादीतून वगळली जाईल.',
 	'confirmaccount-list2' => 'खाली अलीकडील काळात नाकारण्यात आलेल्या मागण्यांची यादी आहे. ही यादी काही ठराविक दिवसांनंतर रिकामी केली जाईल. तुम्ही पूर्वी नाकारलेल्या मागण्या खाते नोंदणीकरता स्वीकारू शकता. पण असे करण्यापूर्वी नाकारलेल्या प्रबंधकांशी संपर्क साधा.',
 	'confirmaccount-list3' => 'खाली आपोआप रद्द झालेल्या खाते मागण्यांची यादी आहे. काही ठराविक दिवसांनंतर त्या मागण्या या यादीतून वगळल्या जातील. तुम्ही या मागण्या पूर्ण करू शकता.',
 	'confirmaccount-text' => "'''{{SITENAME}}''' वरील ही एक प्रलंबित खाते मागणी आहे.
@@ -5409,7 +5427,7 @@ $messages['mr'] = array(
 	'confirmaccount-badid' => 'दिलेल्या क्रमांकाशी जुळणारी प्रलंबित मागणी सापडली नाही.
 ती आधीच तपासली गेलेली असू शकते.',
 	'confirmaccount-leg-user' => 'सदस्य खाते',
-	'confirmaccount-leg-areas' => 'पसंतीची मुख्य क्षेत्रे',
+	'confirmaccount-leg-areas' => 'आवडीची मुख्य क्षेत्रे',
 	'confirmaccount-leg-person' => 'वैयक्तिक माहिती',
 	'confirmaccount-leg-other' => 'इतर माहिती',
 	'confirmaccount-name' => 'सदस्यनाव',
@@ -6935,6 +6953,13 @@ $2
 Poderá haver listas de contatos no site que você poderá utilizar se desejar saber mais sobre a política de contas de usuário.',
 );
 
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'confirmaccount-submit' => 'Takyachiy',
+);
+
 /** Romansh (rumantsch)
  */
 $messages['rm'] = array(
@@ -7706,6 +7731,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Ainali
  * @author Boivie
  * @author Cybjit
  * @author Diupwijk
@@ -7791,6 +7817,8 @@ Ansökan kanske redan har behandlats.',
 	'confirmaccount-spam' => 'Spam (sänd inte e-post)',
 	'confirmaccount-reason' => 'Kommentar (skickas som e-post):',
 	'confirmaccount-ip' => 'IP-adress:',
+	'confirmaccount-xff' => 'X-Forwarded-For:',
+	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => 'Bekräfta/avvisa detta konto',
 	'confirmaccount-submit' => 'Bekräfta',
 	'confirmaccount-needreason' => 'Du måste skriva en motivering i kommentarrutan nedan.',

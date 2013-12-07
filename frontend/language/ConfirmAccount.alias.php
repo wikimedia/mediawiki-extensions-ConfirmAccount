@@ -320,6 +320,12 @@ $specialPageAliases['nl'] = array(
 	'UserCredentials' => array( 'Gebruikersattest' ),
 );
 
+/** Norwegian Nynorsk (norsk nynorsk) */
+$specialPageAliases['nn'] = array(
+	'RequestAccount' => array( 'Be_om_konto' ),
+	'ConfirmAccounts' => array( 'Stadfest_kontoar' ),
+);
+
 /** Occitan (occitan) */
 $specialPageAliases['oc'] = array(
 	'RequestAccount' => array( 'DemandarUnCompte', 'Demandar_un_compte' ),
