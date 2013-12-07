@@ -392,17 +392,15 @@ class RequestAccountPage extends SpecialPage {
 			# Maybe the user confirmed after account was created...
 			$user = User::newFromConfirmationCode( $code );
 			if ( is_object( $user ) ) {
-				if ( $user->confirmEmail() ) {
-					$message = $reqUser->isLoggedIn()
-						? 'confirmemail_loggedin'
-						: 'confirmemail_success';
-					$out->addWikiMsg( $message );
-					if ( !$reqUser->isLoggedIn() ) {
-						$title = SpecialPage::getTitleFor( 'Userlogin' );
-						$out->returnToMain( true, $title->getPrefixedUrl() );
-					}
-				} else {
-					$out->addWikiMsg( 'confirmemail_error' );
+				$user->confirmEmail();
+				$user->saveSettings();
+				$message = $reqUser->isLoggedIn()
+					? 'confirmemail_loggedin'
+					: 'confirmemail_success';
+				$out->addWikiMsg( $message );
+				if ( !$reqUser->isLoggedIn() ) {
+					$title = SpecialPage::getTitleFor( 'Userlogin' );
+					$out->returnToMain( true, $title );
 				}
 			} else {
 				$out->addWikiMsg( 'confirmemail_invalid' );
