@@ -47,7 +47,7 @@ class UserCredentialsPage extends SpecialPage {
 		$form = Xml::openElement( 'form', array( 'name' => 'stablization', 'action' => $wgScript, 'method' => 'get' ) );
 		$form .= "<fieldset><legend>" . $this->msg( 'usercredentials-leg' )->escaped() . "</legend>";
 		$form .= "<table><tr>";
-		$form .= "<td>" . Html::Hidden( 'title', $this->getTitle()->getPrefixedText() ) . "</td>";
+		$form .= "<td>" . Html::Hidden( 'title', $this->getPageTitle()->getPrefixedText() ) . "</td>";
 		$form .= "<td>" . $this->msg( "usercredentials-user" )->escaped() . "</td>";
 		$form .= "<td>" . Xml::input( 'target', 35, $username, array( 'id' => 'wpUsername' ) ) . "</td>";
 		$form .= "<td>" . Xml::submitButton( $this->msg( 'go' )->text() ) . "</td>";

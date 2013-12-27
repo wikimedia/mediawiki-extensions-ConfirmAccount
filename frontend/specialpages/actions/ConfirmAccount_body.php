@@ -170,7 +170,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		# Say what queue we are in...
 		if ( $this->queueType != -1 ) {
 			$viewall = Linker::makeKnownLinkObj(
-				$this->getTitle(), $this->msg( 'confirmaccount-all' )->escaped() );
+				$this->getPageTitle(), $this->msg( 'confirmaccount-all' )->escaped() );
 
 			// Give grep a chance to find the usages: confirmaccount-type-0, confirmaccount-type-1
 			$this->getOutput()->setSubtitle(

@@ -108,7 +108,7 @@ class RequestAccountPage extends SpecialPage {
 		$out->addWikiMsg( 'requestaccount-text' );
 
 		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
-			'action' => $this->getTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
+			'action' => $this->getPageTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
 
 		$form .= '<fieldset><legend>' . $this->msg( 'requestaccount-leg-user' )->escaped() . '</legend>';
 		$form .= $this->msg( 'requestaccount-acc-text' )->parseAsBlock() . "\n";
@@ -231,7 +231,7 @@ class RequestAccountPage extends SpecialPage {
 			$form .= $captcha->getForm();
 			$form .= '</fieldset>';
 		}
-		$form .= Html::Hidden( 'title', $this->getTitle()->getPrefixedDBKey() ) . "\n";
+		$form .= Html::Hidden( 'title', $this->getPageTitle()->getPrefixedDBKey() ) . "\n";
 		$form .= Html::Hidden( 'wpEditToken', $reqUser->getEditToken() ) . "\n";
 		$form .= Html::Hidden( 'attachment', $this->mPrevAttachment ) . "\n";
 		$form .= Html::Hidden( 'forgotAttachment', $this->mForgotAttachment ) . "\n";
