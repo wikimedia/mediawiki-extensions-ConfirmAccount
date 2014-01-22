@@ -3836,7 +3836,6 @@ Não pode fazer mais pedidos.',
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
- * @author Heldergeovane
  * @author Jaideraf
  * @author Luckas
  * @author Luckas Blade
