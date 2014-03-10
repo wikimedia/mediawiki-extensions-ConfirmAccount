@@ -1861,6 +1861,7 @@ $messages['pt'] = array(
 	'usercredentials-leg-areas' => 'Principais áreas de interesse',
 	'usercredentials-leg-person' => 'Informação pessoal',
 	'usercredentials-leg-other' => 'Outras informações',
+	'usercredentials-leg-ip' => 'Dados do endereço IP',
 	'usercredentials-email' => 'Correio electrónico:',
 	'usercredentials-real' => 'Nome real:',
 	'usercredentials-bio' => 'Biografia:',
@@ -1868,8 +1869,11 @@ $messages['pt'] = array(
 	'usercredentials-notes' => 'Notas adicionais:',
 	'usercredentials-urls' => 'Lista de sites na internet:',
 	'usercredentials-ip' => 'Endereço IP original:',
+	'usercredentials-xff' => 'X-Forwarded-For original:',
+	'usercredentials-agent' => 'User-Agent original:',
 	'usercredentials-member' => 'Privilégios:',
-	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador. Verifique se o nome está corretamente escrito.',
+	'usercredentials-badid' => 'Não foram encontradas credenciais para este utilizador.
+Verifique se o nome está bem escrito.',
 );
 
 /** Brazilian Portuguese (português do Brasil)

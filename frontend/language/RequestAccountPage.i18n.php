@@ -3786,7 +3786,9 @@ Assim que a conta for aprovada, ser-lhe-á enviada uma mensagem de notificação
 	'requestaccount-leg-person' => 'Informação pessoal',
 	'requestaccount-leg-other' => 'Outras informações',
 	'requestaccount-leg-tos' => 'Termos de Serviço',
-	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de correio electrónico assim que este pedido for submetido. Por favor, responda clicando o link de confirmação enviado na mensagem. A sua palavra-chave também será enviada por correio electrónico assim que a conta tenha sido criada.', # Fuzzy
+	'requestaccount-acc-text' => 'Será enviada uma mensagem de confirmação para o seu endereço de correio eletrónico assim que este pedido for submetido. O endereço não será divulgado.
+Responda clicando o link de confirmação fornecido na mensagem, por favor.
+A sua palavra-chave será enviada por correio eletrónico quando a conta for criada.',
 	'requestaccount-areas-text' => 'Selecione abaixo as áreas em que possui experiência formal ou em que mais gostaria de trabalhar.',
 	'requestaccount-ext-text' => 'A seguinte informação será mantida privada e só será usada para este pedido.
 Talvez possa listar contactos, tais como o número de telefone, para ajudar na confirmação da identificação.',

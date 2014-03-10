@@ -398,6 +398,7 @@ $specialPageAliases['sq'] = array(
 
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = array(
+	'RequestAccount' => array( 'Begär_konto' ),
 	'ConfirmAccounts' => array( 'Bekräfta_konto' ),
 	'UserCredentials' => array( 'Användarnamn_och_lösenord' ),
 );
@@ -450,8 +451,8 @@ $specialPageAliases['yi'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'RequestAccount' => array( '申请账户', '申请帐户' ),
-	'ConfirmAccounts' => array( '确认账户', '确认帐户' ),
+	'RequestAccount' => array( '申请账户' ),
+	'ConfirmAccounts' => array( '确认账户' ),
 	'UserCredentials' => array( '用户凭据' ),
 );
 

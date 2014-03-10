@@ -2045,7 +2045,7 @@ $messages['diq'] = array(
 	'confirmaccount-attach' => 'Ravêrdenacı/CV:',
 	'confirmaccount-noreason' => '(çino)',
 	'confirmaccount-hold' => 'Tepêş',
-	'confirmaccount-ip' => "Adresa IP'i:",
+	'confirmaccount-ip' => 'Adresa IPy:',
 	'confirmaccount-submit' => 'Testiq ke',
 	'confirmaccount-canthold' => 'Na qayıla şıma ya dard biya yana esteriyaya.',
 	'confirmaccount-wsum' => 'Xeyr amey!',
@@ -2552,56 +2552,130 @@ $messages['ext'] = array(
 
 /** Persian (فارسی)
  * @author Alireza
+ * @author Armin1392
+ * @author Ebraminio
  * @author Mjbmr
+ * @author Reza1615
  * @author Taha
  */
 $messages['fa'] = array(
+	'confirmaccounts' => 'تایید درخواست اشتراک',
+	'confirmedit-desc' => 'توانایی دادن به بوروکرات‌ها برای تایید درخواست‌های حساب',
+	'confirmaccount-maintext' => "'''این صفحه برای تایید درخواست‌های حساب در حال انتظار در ''{{SITENAME}}'' استفاده شده‌است.'''
+هر صف درخواست حساب متشکل از ۳ زیر‌ صف است.
+یکی برای باز کردن درخواست،و دیگری برای درخواست‌های رد شدهٔ اخیر.
+هنگام پاسخ به یک درخواست،بادقت آن را بررسی کنید و، اگر لازم بود،اطلاعات شامل در آن را تایید کنید.
+عملیات شما به طور محرمانه وارد خواهد شد.
+همچنین از شما انتظار می‌رود که هر فعالیتی که اینجا قرار گرفته علاوه بر کاری که خودتان انجام می‌دهید را بررسی کنید.",
+	'confirmaccount-list' => 'در زیر فهرستی از درخواست‌های حساب در حال انتظار تاییدیه، است.
+هنگامی که یک درخواست یا قبول شود یا رد، درخواست از این فهرست حذف خواهد شد.',
+	'confirmaccount-list2' => 'در زیر فهرست درخواست‌های حساب رد شده‌ای است که ممکن است چند روز پیش به طور خودکار حذف شده باشد.
+آنها هنوز می‌توانند در حساب‌ها تایید شوند،هرچند ممکن است بخواهید که اول به سرپرست مردودی پیش از انجام آن مراجعه کنید.',
+	'confirmaccount-list3' => 'در زیر فهرست درخواست‌های حساب منقضی شده‌ای است که ممکن است چند روز پیش به طور خودکار حذف شده باشد.
+آنها هنوز می‌توانند در حساب‌ها تایید شوند.',
+	'confirmaccount-text' => "این یک درخواست در حال انتظار برای یک حساب کاربری در '''{{SITENAME}}''' است.
+اطلاعات زیر را به دقت بررسی کنید.
+اگر شما این درخواست را تایید می‌کنید، از جای آشکاری برای تنظیم وضعیت حساب کاربر استفاده کنید.
+ویرایش‌های ساخته شده برای شرح‌حال برنامهٔ کاربردی، هر ذخیره‌سازی دائمی را متأثر نمی‌کند.
+توجه داشته باشید که می‌توانید یک نام کاربری دیگر برای ایجاد حساب انتخاب کنید.
+از این فقط برای اجتناب از تلاقی با دیگر نام‌ها استفاده کنید.
+اگر شما این صفحه را به سادگی بدون تایید یا رد این درخواست رها کردید،در حال انتظار باقی خواهد ماند.",
 	'confirmaccount-none-o' => 'در حال حاضر هیچ درخواست بازی در این فهرست وجود ندارد.',
+	'confirmaccount-none-h' => 'در حال حاضر هیچ درخواست حساب در حال انتظاری در این فهرست نگه داشته نشده.',
+	'confirmaccount-none-r' => 'در حال حاضر هیچ درخواست حساب رد شده‌ای در این فهرست اخیراً نیست.',
+	'confirmaccount-none-e' => 'در حال حاضر هیچ درخواست حساب منقضی شده‌ای در این فهرست نیست.',
 	'confirmaccount-real-q' => 'نام',
-	'confirmaccount-email-q' => 'پست الکترونیکی',
+	'confirmaccount-email-q' => 'رایانامه',
 	'confirmaccount-bio-q' => 'زندگی‌نامه',
 	'confirmaccount-showopen' => 'درخواست‌های باز',
 	'confirmaccount-showrej' => 'درخواست‌های رد شده',
+	'confirmaccount-showheld' => 'درخواست‌ها نگهداشته شد',
 	'confirmaccount-showexp' => 'درخواست‌های منقضی‌شده',
 	'confirmaccount-review' => 'بازبینی',
+	'confirmaccount-types' => 'از زیر یک صف اطلاعات حساب انتخاب کنید:',
 	'confirmaccount-all' => '(نمایش تمام صف‌ها)',
 	'confirmaccount-type' => 'صف:',
+	'confirmaccount-type-0' => 'نویسنده آینده',
+	'confirmaccount-type-1' => 'ویرایش‌گران آینده',
 	'confirmaccount-q-open' => 'گشودن درخواست‌ها',
+	'confirmaccount-q-held' => 'درخواست‌ها نگهداشته شد',
+	'confirmaccount-q-rej' => 'درخواست‌ها اخیرا رد شده‌است',
+	'confirmaccount-q-stale' => 'درخواست‌های منقضی‌شده',
+	'confirmaccount-badid' => 'هیچ درخواست در حال انتظاری مطابق شناسهٔ داده شده نیست.
+ممکن است پیش از این کنترل شده باشد.',
 	'confirmaccount-leg-user' => 'حساب کاربری',
+	'confirmaccount-leg-areas' => 'زمینه‌های اصلی مورد علاقه',
 	'confirmaccount-leg-person' => 'اطلاعات شخصی',
 	'confirmaccount-leg-other' => 'اطلاعات دیگر',
 	'confirmaccount-leg-ip' => 'اطلاعات نشانی آی‌پی',
 	'confirmaccount-name' => 'نام کاربری',
 	'confirmaccount-real' => 'نام:',
-	'confirmaccount-email' => 'پست الکترونیکی:',
+	'confirmaccount-email' => 'رایانامه:',
 	'confirmaccount-reqtype' => 'موقعیت:',
 	'confirmaccount-pos-0' => 'مؤلف',
 	'confirmaccount-pos-1' => 'ویرایشگر',
 	'confirmaccount-bio' => 'زندگی‌نامه:',
 	'confirmaccount-attach' => 'سوابق و رزومه:',
+	'confirmaccount-notes' => 'یادداشت‌های اضافی:',
 	'confirmaccount-urls' => 'فهرست وبگاه‌ها:',
+	'confirmaccount-none-p' => '(تامین نشده)',
+	'confirmaccount-confirm' => 'از گزینه‌های زیر برای قبول کردن،رد کردن، یا نگه داشتن این درخواست استفاده کنید:',
 	'confirmaccount-econf' => '(تأیید شده)',
+	'confirmaccount-withcv' => '(رزومه پیوست شده)',
+	'confirmaccount-reject' => '({{GENDER:$1|rejected}} by [[User:$1|$1]] on $3 at $4)',
+	'confirmaccount-rational' => 'اصول و دلایل داده شده به متقاضی:',
 	'confirmaccount-noreason' => '(هیچ)',
+	'confirmaccount-autorej' => '(این درخواست به دلیل عدم فعالیت به صورت خودکار رد شده‌است)',
+	'confirmaccount-held' => '({{GENDER:$1|marked}} "on hold" by [[User:$1|$1]] on $3 at $4)',
+	'confirmaccount-create' => 'تأیید (ایجاد حساب)',
+	'confirmaccount-deny' => 'رد (حذف از فهرست)',
+	'confirmaccount-hold' => 'نگهدار',
+	'confirmaccount-spam' => 'هرزنامه (رایانامه را ارسال نکن)',
+	'confirmaccount-reason' => 'نظر (در رایانامه خواهد بود):',
 	'confirmaccount-ip' => 'نشانی آی‌پی:',
+	'confirmaccount-xff' => 'X-فرستاده شده برای:',
+	'confirmaccount-agent' => 'یوزر ایجنت:',
+	'confirmaccount-legend' => 'تایید/رد این حساب',
 	'confirmaccount-submit' => 'تأیید',
+	'confirmaccount-needreason' => 'شما باید یک دلیل در جعبهٔ نظر زیر ارائه دهید.',
+	'confirmaccount-canthold' => 'این درخواست پیش از این یا نگه داشته شده یا حذف شده.',
+	'confirmaccount-badaction' => 'یک عمل معتبر (قبول،رد،نگه‌داشتن) باید به منظور ادامه دادن، تعیین شود.',
+	'confirmaccount-acc' => 'درخواست حساب با موفقیت تایید شد؛
+	ایجاد حساب کاربری جدید [[User:$1|$1]].',
+	'confirmaccount-rej' => 'درخواست حساب با موفقیت رد شد.',
+	'confirmaccount-viewing' => '(currently {{GENDER:$1|being}} مشاهده شده توسط [[User:$1|$1]])',
 	'confirmaccount-summary' => 'ایجاد صفحه کاربری برای کاربر جدید.',
+	'confirmaccount-welc' => "'''به ''{{SITENAME}}'' خوش آمدید!'''
+امیدواریم که شما بیشتر و بهتر کمک شوید.
+ممکن است شما بخواهید [[{{MediaWiki:Helppage}}|help pages]] را بخوانید.
+مجدداً خوش آمدید و لحظات خوبی داشته باشید!",
 	'confirmaccount-wsum' => 'خوش‌آمدید!',
 	'confirmaccount-email-subj' => '{{SITENAME}} درخواست حساب کاربری',
-	'confirmaccount-email-body' => 'درخواست شما برای یک حساب کاربری در {{SITENAME}} تأیید شده است.
-نام حساب:  $1 
-رمز عبور:  $2 
+	'confirmaccount-email-body' => 'درخواست شما برای یک حساب کاربری در {{SITENAME}} تأیید شده‌است.
+نام حساب: $1 
+رمز عبور: $2 
 برای دلایل امنیتی، شما باید در اولین ورود به سامانه رمز خود را تغییر دهید.
-برای ورود لطفا به {{fullurl:Special:UserLogin}} بروید.',
-	'confirmaccount-email-body2' => 'درخواست شما برای یک حساب کاربری در {{SITENAME}} تأیید شده است.
+برای ورود لطفاً به {{fullurl:Special:UserLogin}} بروید.',
+	'confirmaccount-email-body2' => 'درخواست شما برای یک حساب کاربری در {{SITENAME}} تأیید شده‌است.
 
-نام حساب:  $1 
+نام حساب: $1 
 
-رمز عبور:  $2 
+رمز عبور: $2 
 
 $3
 
 برای دلایل امنیتی، شما باید در اولین ورود به سامانه رمز خود را تغییر دهید.
-برای ورود لطفا به {{fullurl:Special:UserLogin}} بروید.',
+برای ورود لطفاً به {{fullurl:Special:UserLogin}} بروید.',
+	'confirmaccount-email-body3' => 'با عرض پوزش درخواست شما برای حساب "$1" در {{SITENAME}} رد شده‌است.
+به چنددلیل می‌تواند اتفاق بیفتد.
+ممکن است شما فرم را به درستی پر نکرده‌اید،در پاسخ‌هایتان درازای کافی را ایجاد نکردید، یا در غیر این صورت نتوانستید بعضی ضوابط سیاستی را ببینید.
+ممکن است فهرست‌های تماس‌ در سایتی باشد که اگر بخواهید دربارهٔ سیاست حساب کاربر بیشتر بدانید می‌توانید ار آن استفاده کنید.',
+	'confirmaccount-email-body4' => 'با عرض پوزش درخواست شما برای حساب "$1"در {{SITENAME}} رد شده‌است.
+$2
+ممکن است فهرست‌های تماس‌ در سایتی باشد که اگر بخواهید دربارهٔ سیاست حساب کاربر بیشتر بدانید می‌توانید ار آن استفاده کنید.',
+	'confirmaccount-email-body5' => 'پیش از درخواست شما برای حساب "$1" می‌تواند در {{SITENAME}} قبول شود، شما ابتدا باید بعضی از اطلاعات اضافی را ایجاد کنید.
+$2
+ممکن است فهرست‌های تماس‌ در سایتی باشد که اگر بخواهید دربارهٔ سیاست حساب کاربر بیشتر بدانید می‌توانید ار آن استفاده کنید.',
 );
 
 /** Finnish (suomi)
@@ -5178,7 +5252,7 @@ $messages['mk'] = array(
 Една за отворено барање, една за оние ставени на чекање од други администратори заради потреба од повеќе информации, и трета за неодамна одбиени барања.
 
 Кога одговарате на барање, прегледајте го и оценете го внимателно, и по потреба, проверете ги наведените информациите.
-Вашите постапки ќе бидат приватно заведени.
+Вашите постапки ќе бидат доверливо заведени.
 Од вас се очекува и да ги прегледувате сите дејствија што се случуваат овде покрај она што го правите вие самите.",
 	'confirmaccount-list' => 'Подолу е наведен списокот на барања за сметка во исчекување на одобрение.
 Штом ќе се одобри или одбие едно барање, истото ќе биде отстрането од списокот.',
@@ -5249,7 +5323,7 @@ $messages['mk'] = array(
 	'confirmaccount-reason' => 'Коментар (ќе биде вклучен во е-поштата):',
 	'confirmaccount-ip' => 'IP-адреса:',
 	'confirmaccount-xff' => 'X-Forwarded-For:',
-	'confirmaccount-agent' => 'Застапнички програм:',
+	'confirmaccount-agent' => 'Кориснички извршител:',
 	'confirmaccount-legend' => 'Прифати/одбиј ја оваа корисничка сметка',
 	'confirmaccount-submit' => 'Потврди',
 	'confirmaccount-needreason' => 'Морате да наведете причина во полето за коментар подолу.',
@@ -5373,8 +5447,10 @@ $messages['ml'] = array(
 
 /** Mongolian (монгол)
  * @author Chinneeb
+ * @author MongolWiki
  */
 $messages['mn'] = array(
+	'confirmaccount-text' => 'Бүртгүүлэх',
 	'confirmaccount-name' => 'Хэрэглэгчийн нэр',
 );
 
@@ -6699,27 +6775,28 @@ $3
  * @author Lijealso
  * @author Luckas
  * @author Malafaya
+ * @author Vitorvicentevalente
  * @author Waldir
  */
 $messages['pt'] = array(
 	'confirmaccounts' => 'Confirmar pedidos de conta',
-	'confirmedit-desc' => 'Possibilita que utilizadores burocratas confirmem pedidos de conta',
-	'confirmaccount-maintext' => "'''Esta página é usada para confirmar pedidos de conta pendentes na ''{{SITENAME}}'''''.
+	'confirmedit-desc' => 'Possibilita que burocratas confirmem pedidos de conta',
+	'confirmaccount-maintext' => "'''Esta página é usada para confirmar pedidos de conta pendentes em ''{{SITENAME}}'''''.
 
 Cada fila de pedidos de conta consiste em três sub-filas, uma para pedidos em aberto, outra para pedidos colocados em espera por outros administradores à espera de mais informação e outra para pedidos recentemente rejeitados.
 
 Quando responder a um pedido, reveja-o cuidadosamente e, se necessário, confirme a informação nele contida.
-As suas ações será registradas em privado. Também é esperado que reveja qualquer atividade que  ocorra aqui para além das suas próprias ações.",
+As suas acções será registadas em privado. Também é esperado que reveja qualquer actividade que  ocorra aqui para além das suas próprias acções.",
 	'confirmaccount-list' => 'Abaixo encontra-se uma lista de pedidos de conta à espera de aprovação.
 Contas aprovadas serão criadas e removidas desta lista. Contas rejeitadas serão simplesmente eliminadas desta lista.',
 	'confirmaccount-list2' => 'Abaixo encontra-se uma lista de pedidos de conta recentemente rejeitados que serão automaticamente eliminados após alguns dias.
 Estes podem ainda ser aprovados para novas contas, mas deverá verificar primeiro com o administrador que rejeitou o pedido antes de o aprovar.',
 	'confirmaccount-list3' => 'Abaixo encontra-se uma lista de pedidos de conta expirados que poderão ser automaticamente apagados após alguns dias. Estes ainda podem ser aprovados e convertidos em novas contas.',
-	'confirmaccount-text' => "Este é um pedido pendente para uma conta de utilizador na '''{{SITENAME}}'''.
+	'confirmaccount-text' => "Este é um pedido pendente para uma conta de utilizador em '''{{SITENAME}}'''.
 
 Reveja cuidadosamente a informação abaixo.
-Se está a aprovar este pedido, use a caixa de seleção de posição para estabelecer o estado da conta do utilizador.
-Edições feitas à biografia da candidatura não afetarão nenhum armazenamento de credenciais permanente. Note que pode optar por criar a conta com um nome de utilizador diferente.
+Se está a aprovar este pedido, use a caixa de selecção de posição para estabelecer o estado da conta do utilizador.
+Edições feitas à biografia da candidatura não afectarão nenhum armazenamento de credenciais permanente. Note que pode optar por criar a conta com um nome de utilizador diferente.
 Use esta opção apenas para evitar colisões com outros nomes.
 
 Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, ele continuará pendente.",
@@ -6734,8 +6811,8 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-showrej' => 'pedidos rejeitados',
 	'confirmaccount-showheld' => 'Ver lista de pedidos de conta pendentes em espera',
 	'confirmaccount-showexp' => 'pedidos expirados',
-	'confirmaccount-review' => 'Aprovar/Rejeitar',
-	'confirmaccount-types' => 'Selecione uma fila de confirmação de contas abaixo:',
+	'confirmaccount-review' => 'Rever',
+	'confirmaccount-types' => 'Seleccione uma fila de confirmação de contas abaixo:',
 	'confirmaccount-all' => '(mostrar todas as filas)',
 	'confirmaccount-type' => 'Fila:',
 	'confirmaccount-type-0' => 'autores expectáveis',
@@ -6759,14 +6836,15 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-bio' => 'Biografia:',
 	'confirmaccount-attach' => 'Currículo:',
 	'confirmaccount-notes' => 'Notas adicionais:',
-	'confirmaccount-urls' => 'Lista de sites na internet:',
+	'confirmaccount-urls' => 'Lista de sítios na internet:',
 	'confirmaccount-none-p' => '(não fornecido)',
 	'confirmaccount-confirm' => 'Use as opções seguintes para aceitar, rejeitar, ou colocar em espera este pedido:',
 	'confirmaccount-econf' => '(confirmado)',
+	'confirmaccount-withcv' => '(CV anexado)',
 	'confirmaccount-reject' => '({{GENDER:$1|rejeitado}} por [[User:$1|$1]] em $3 às $4)',
 	'confirmaccount-rational' => 'Explicação dada ao requerente:',
 	'confirmaccount-noreason' => '(nenhum)',
-	'confirmaccount-autorej' => '(este pedido foi automaticamente descartado devido a inatividade)',
+	'confirmaccount-autorej' => '(este pedido foi automaticamente descartado devido a inactividade)',
 	'confirmaccount-held' => '({{GENDER:$1|marcado}} como "em espera" por [[User:$1|$1]] em $3 às $4)',
 	'confirmaccount-create' => 'Aceitar (criar conta)',
 	'confirmaccount-deny' => 'Rejeitar (retirar da lista)',
@@ -6774,28 +6852,31 @@ Se abandonar simplesmente esta página sem confirmar ou rejeitar este pedido, el
 	'confirmaccount-spam' => "''Spam'' (não enviar correio electrónico)",
 	'confirmaccount-reason' => 'Comentário (será incluído no correio electrónico):',
 	'confirmaccount-ip' => 'Endereço IP:',
+	'confirmaccount-xff' => 'X-Forwarded-For (IP de origem):',
 	'confirmaccount-agent' => 'User-Agent:',
 	'confirmaccount-legend' => 'Confirmar ou rejeitar esta conta',
 	'confirmaccount-submit' => 'Confirmar',
 	'confirmaccount-needreason' => 'Deverá fornecer um motivo na caixa de comentário abaixo.',
 	'confirmaccount-canthold' => 'Este pedido já está em espera ou apagado.',
-	'confirmaccount-badaction' => 'Uma ação válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.',
-	'confirmaccount-acc' => 'Pedido de conta confirmado com sucesso; criada nova conta de utilizador [[User:$1|$1]].',
-	'confirmaccount-rej' => 'Pedido de conta rejeitado com sucesso.',
+	'confirmaccount-badaction' => 'Uma acção válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.',
+	'confirmaccount-acc' => 'Pedido de conta confirmado; foi criada a nova conta de utilizador [[User:$1|$1]].',
+	'confirmaccount-rej' => 'Pedido de conta rejeitado.',
 	'confirmaccount-viewing' => '(a {{GENDER:$1|ser}} visto neste momento por [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Criar página de utilizador com biografia de novo utilizador.',
-	'confirmaccount-welc' => "'''Bem-vindo à ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.
-Provavelmente quererá ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. Mais uma vez, seja bem-vindo e divirta-se!",
-	'confirmaccount-wsum' => 'Bem-vindo!',
-	'confirmaccount-email-subj' => 'Pedido de conta na {{SITENAME}}',
-	'confirmaccount-email-body' => 'O seu pedido de conta foi aprovado na {{SITENAME}}.
+	'confirmaccount-welc' => "'''Bem-vindo(a) à ''{{SITENAME}}''!'''
+Esperamos que contribua muito e bem.
+Provavelmente quererá ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]].
+Mais uma vez, seja bem-vindo(a) e divirta-se!",
+	'confirmaccount-wsum' => 'Bem-vindo(a)!',
+	'confirmaccount-email-subj' => 'Pedido de conta em {{SITENAME}}',
+	'confirmaccount-email-body' => 'O seu pedido de conta foi aprovado em {{SITENAME}}.
 
 Nome da conta: $1
 
 Palavra-chave: $2
 
 Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá a {{fullurl:{{ns:special}}:Userlogin}}.',
-	'confirmaccount-email-body2' => 'O seu pedido de conta foi aprovado na {{SITENAME}}.
+	'confirmaccount-email-body2' => 'O seu pedido de conta foi aprovado em {{SITENAME}}.
 
 Nome da conta: $1
 
@@ -6804,15 +6885,15 @@ Palavra-chave: $2
 $3
 
 Por questões de segurança, deverá mudar a sua palavra-chave após a primeira entrada. Para entrar, por favor vá a {{fullurl:{{ns:special}}:Userlogin}}.',
-	'confirmaccount-email-body3' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado na {{SITENAME}}.
+	'confirmaccount-email-body3' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado em {{SITENAME}}.
 
-Há várias formas de isto acontecer. Poderá não ter preenchido o formulário corretamente, não ter fornecido respostas de tamanho adequado, ou de outra forma não ter cumprido algumas normas e critérios. Podem existir listas de contatos no site que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
-	'confirmaccount-email-body4' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado na {{SITENAME}}.
+Há várias razões para isto acontecer. Poderá não ter preenchido o formulário correctamente, não ter fornecido respostas de tamanho adequado, ou de outra forma não ter cumprido algumas normas e critérios. Podem existir listas de contactos no sítio que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
+	'confirmaccount-email-body4' => 'Desculpe, o seu pedido para a conta "$1" foi rejeitado em {{SITENAME}}.
 
 $2
 
 Podem haver listas de contactos no site que poderá usar se deseja saber mais sobre as normas para contas de utilizador.',
-	'confirmaccount-email-body5' => 'Antes que o seu pedido para a conta "$1" seja aceite na {{SITENAME}}, deverá fornecer alguma informação adicional.
+	'confirmaccount-email-body5' => 'Antes que o seu pedido para a conta "$1" seja aceite em {{SITENAME}}, deverá fornecer alguma informação adicional.
 
 $2
 
