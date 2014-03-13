@@ -3365,12 +3365,13 @@ $messages['hak'] = array(
 );
 
 /** Hawaiian (Hawai`i)
+ * @author Kolonahe
  * @author Singularity
  */
 $messages['haw'] = array(
 	'confirmaccount-real-q' => 'Inoa',
 	'confirmaccount-real' => 'Inoa:',
-	'confirmaccount-pos-1' => 'luna',
+	'confirmaccount-pos-1' => 'luna hoʻoponopono',
 );
 
 /** Hebrew (עברית)

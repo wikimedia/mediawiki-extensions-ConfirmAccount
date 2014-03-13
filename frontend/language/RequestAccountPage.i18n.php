@@ -1840,10 +1840,11 @@ $messages['gv'] = array(
 );
 
 /** Hawaiian (Hawai`i)
+ * @author Kolonahe
  * @author Singularity
  */
 $messages['haw'] = array(
-	'requestaccount-level-1' => 'luna',
+	'requestaccount-level-1' => 'luna hoʻoponopono',
 );
 
 /** Hebrew (עברית)
