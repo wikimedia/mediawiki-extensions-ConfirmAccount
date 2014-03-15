@@ -5072,7 +5072,7 @@ Se gouf eventuell scho behandelt.',
 	'confirmaccount-submit' => 'Confirméieren',
 	'confirmaccount-needreason' => 'Dir musst e Grond an der Kescht ënnendrënner uginn.',
 	'confirmaccount-canthold' => "Dës Ufro ass schonn entweder 'en-cours' oder geläscht.",
-	'confirmaccount-badaction' => 'Et muss eng valabel Aktioun (akzeptéieren, refuséieren, am Suspens halen) gemaach gi fir weiderfueren ze kënnen.',
+	'confirmaccount-badaction' => 'Et muss eng valabel Aktioun (akzeptéieren, refuséieren, am Suspens halen) gemaach gi fir virufueren ze kënnen.',
 	'confirmaccount-acc' => 'Benotzerkont-Ufro gouf confirméiert;
 de Benotzerkont [[User:$1|$1]] gouf ugeluecht.',
 	'confirmaccount-rej' => "D'Ufro fir ee Benotzerkont gouf refuséiert.",
