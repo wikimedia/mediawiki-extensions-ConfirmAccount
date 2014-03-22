@@ -658,14 +658,19 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
+ * @author Ebraminio
  * @author Mjbmr
  * @author Reza1615
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'usercredentials' => 'مشخصات کاربری',
+	'usercredentials-leg' => 'مراجعه به اعتبار‌های تأیید برای یک کاربر',
 	'usercredentials-user' => 'نام کاربری:',
+	'usercredentials-text' => 'در زیر اعتبارهای انتخاب شدهٔ حساب کاربر معتبر هستند.',
 	'usercredentials-leg-user' => 'حساب کاربری',
+	'usercredentials-leg-areas' => 'زمینه‌های اصلی مورد علاقه',
 	'usercredentials-leg-person' => 'اطلاعات شخصی',
 	'usercredentials-leg-other' => 'اطلاعات دیگر',
 	'usercredentials-leg-ip' => 'اطلاعات نشانی آی‌پی',
@@ -679,6 +684,8 @@ $messages['fa'] = array(
 	'usercredentials-xff' => 'ایکس-فرستاده شد اصلی برای:',
 	'usercredentials-agent' => 'یوزر-ایجنت اصلی:',
 	'usercredentials-member' => 'دسترسی‌ها:',
+	'usercredentials-badid' => 'هیچ اعتبارنامه‌ای برای این کاربر پیدا نشد.
+املای نام را به درستی بررسی کنید.',
 );
 
 /** Finnish (suomi)
