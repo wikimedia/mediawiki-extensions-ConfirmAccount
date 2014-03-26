@@ -1064,12 +1064,13 @@ Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: „$
 );
 
 /** Swiss High German (Schweizer Hochdeutsch)
+ * @author Filzstift
  * @author Geitost
  */
 $messages['de-ch'] = array(
-	'requestaccount-acc-text' => 'An deine E-Mail-Adresse wird nach dem Absenden dieses Formulars ein Bestätigungsmail geschickt.
+	'requestaccount-acc-text' => 'Wenn du diese Anfrage ausführst, wird dir einmal eine Bestätigungsnachricht an deine E-Mail-Adresse gesandt. Die Adresse wird nicht veröffentlicht.
 Bitte reagiere darauf, indem du auf den in diesem Mail enthaltenen Bestätigungslink klickst.
-Sobald dein Konto angelegt wurde, wird dir dein Passwort per E-Mail zugeschickt.', # Fuzzy
+Zum Schluss wird dir dein Passwort per E-Mail zugeschickt, sobald dein Konto angelegt wurde.',
 	'requestaccount-sent' => 'Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.
 Ein Bestätigungs-E-Mail wurde an deine E-Mail-Adresse gesendet.',
 	'requestaccount-email-body' => 'Jemand, möglicherweise du mit der IP-Adresse $1, hat bei {{SITENAME}} das Benutzerkonto «$2» mit deiner E-Mail-Adresse beantragt.
@@ -1082,7 +1083,7 @@ Wenn das Benutzerkonto erstellt wurde, bekommst du ein weiteres E-Mail mit dem P
 
 Wenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!
 
-Dieser Bestätigungscode wird am $5 um $6 Uhr ungültig.', # Fuzzy
+Zeitpunkt des Auslaufs des Bestätigungscodes: $4.',
 	'requestaccount-email-body-admin' => '«$1» hat ein Benutzerkonto beantragt und wartet auf Bestätigung.
 Die E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen: «$2».',
 );
