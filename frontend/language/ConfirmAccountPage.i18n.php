@@ -8427,6 +8427,7 @@ $messages['tk'] = array(
 
 /** Tagalog (Tagalog)
  * @author AnakngAraw
+ * @author Jojit fb
  * @author Sky Harbor
  */
 $messages['tl'] = array(
@@ -8529,10 +8530,10 @@ Muli, maligayang pagdating at nawa'y malibang ka!",
 
 Pangalan ng akawnt: $1
 
-Hudyat: $2
+Password: $2
 
-Dahil sa mga kadahilanang pangkaligtasan, kailangan mong baguhin ang iyong hudyat sa una mong paglagda papasok.
-Upang makalagda, pakipuntahan ang {{fullurl:Special:UserLogin}}.',
+Dahil sa mga kadahilanang pangkaligtasan, kailangan mong baguhin ang iyong password sa una mong pag-login.
+Upang maka-login, pakipuntahan ang {{fullurl:Special:UserLogin}}.',
 	'confirmaccount-email-body2' => 'Ang kahilingan mong magkaroon ng isang akawnt ay pinayagan na sa {{SITENAME}}.
 
 Pangalan ng akawnt: $1
