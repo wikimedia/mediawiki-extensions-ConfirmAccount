@@ -339,6 +339,7 @@ $messages['br'] = array(
 	'usercredentials-notes' => 'Notennoù ouzhpenn :',
 	'usercredentials-urls' => "Roll lec'hiennoù internet :",
 	'usercredentials-ip' => "Chomlec'h IP orin :",
+	'usercredentials-agent' => 'Implijer-Gwazour orin :',
 	'usercredentials-member' => 'Gwirioù :',
 	'usercredentials-badid' => "N'eus ket bet kavet daveennoù evit an implijer-mañ.
 Gwiriit ha skrivet-mat eo an anv.",
@@ -392,6 +393,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'usercredentials-user' => 'Декъашхочун цӀе:',
+	'usercredentials-member' => 'Бакъонаш:',
 );
 
 /** Sorani Kurdish (کوردی)
@@ -1259,6 +1261,7 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author Priviet
  * @author 아라
  */
 $messages['ko'] = array(

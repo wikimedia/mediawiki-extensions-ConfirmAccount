@@ -937,7 +937,9 @@ Når kontoen er blevet godkendt, modtager du en e-mail med besked derom, og du v
 	'requestaccount-leg-person' => 'Personlige oplysninger',
 	'requestaccount-leg-other' => 'Andre oplysninger',
 	'requestaccount-leg-tos' => 'Vilkår for anvendelse',
-	'requestaccount-acc-text' => 'Når anmodningen er afsendt, vil du på din e-mail-adresse vil modtage en bekræftelsesbesked. Svar ved at klikke på bekræftelseslinket i mailen. Når kontoen er blevet oprettet, vil du modtage en mail med din adgangskode.', # Fuzzy
+	'requestaccount-acc-text' => 'En bekræftelse vil blive sendt til din e-mailadresse, når du indsender denne anmodning. Adressen vil ikke blive offentliggjort.
+Svar ved at klikke på bekræftelseslinket i e-mailen.
+Når kontoen er blevet oprettet, vil du modtage en e-mail med din adgangskode.',
 	'requestaccount-areas-text' => 'Vælg herunder de områder, hvor du har formel ekspertise eller primært ønsker at arbejde inden for.',
 	'requestaccount-ext-text' => 'Følgende oplysninger offentliggøres ikke og benyttes kun i forbindelse med anmodningen.
 Du kan angive kontaktoplysninger så som et telefonnummer, for at gøre det lettere at bekræfte din identitet.',
@@ -965,7 +967,7 @@ Lad feltet være blankt, hvis du ikke længere ønsker at medtage en fil.',
 Navnet, jeg har oplyst som "Rigtigt navn" er virkelig mit eget rigtige navn.',
 	'requestaccount-submit' => 'Anmod om konto',
 	'requestaccount-sent' => 'Din kontoanmodning er sendt og afventer nu godkendelse.
-En bekræftelsesmail er blevet sendt til din e-mail-adresse.',
+En bekræftelsesmail er blevet sendt til din e-mailadresse.',
 	'request-account-econf' => 'Din e-mailadresse er nu bekræftet. Det vil blive registreret i din kontoanmodning.',
 	'requestaccount-email-subj' => 'Bekræftelse af e-mailadresse hos {{SITENAME}}',
 	'requestaccount-email-body' => 'Nogen, formentlig dig, har fra IP-adressen $1, på {{SITENAME}} anmodet om kontoen "$2" med denne e-mailadresse.
@@ -1155,11 +1157,12 @@ $messages['diq'] = array(
 );
 
 /** Lower Sorbian (dolnoserbski)
+ * @author Derbeth
  * @author Michawiki
  */
 $messages['dsb'] = array(
 	'requestaccount' => 'Póžedanje na konto stajiś',
-	'requestaccount-text' => "'''Wupołń a wótpósćel slědujucy formular, aby stajił póžedanje na wužywarske konto'''.
+	'requestaccount-text' => "'''Wupołni a wótpósćel slědujucy formular, aby stajił póžedanje na wužywarske konto'''.
 
 Pśecytaj pšosym nejpjerwjej [[{{MediaWiki:Requestaccount-page}}|wužywańske wuměnjenja]], pjerwjej až stajijoš póžedanje na konto.
 
@@ -1171,9 +1174,7 @@ Gaž konto jo schwalone, dostanjoš e-mailku a konto dajo se za [[Special:UserLo
 	'requestaccount-leg-person' => 'Wósobinske informacije',
 	'requestaccount-leg-other' => 'Druge informacije',
 	'requestaccount-leg-tos' => 'Wužywańske wuměnjenja',
-	'requestaccount-acc-text' => 'Na twóju e-mailowu adresu pósćele se wobkšuśeńska powěsć, gaž toś to póžedanje jo wótpósłane.
-Pšosym wótegroń pśez kliknjenje na wobkšuśeński wótkaz w e-mailce.
-Gaž twójo konto jo załožone, gronidło pśipósćeła se śi pśez e-mail.', # Fuzzy
+	'requestaccount-acc-text' => 'Na twóju e-mailowu adresu buźo se pó wótpósćełanju toś togo napšašowanja wobkšuśeńska mailka słaś. Adresa se njewózjawijo. Pšosym wótegroń pśez kliknjenje na wobkšuśeński wótkaz, kótaryž mailka wopśimujo. Skóńcnje, gaž twójo konto jo napórane, se śi twójo gronidło pśipósćeła.',
 	'requestaccount-areas-text' => 'Wubjeŕ temowe póla, w kótarychž maš neejlěpše wěcywuznaśe abo za to ty by rady nejwěcej źěło cyniś.',
 	'requestaccount-ext-text' => 'Ze slědujucymi informacijami wobchadaju dowěrliwje a budu se jano za toś to póžedanje.
 Móžoš kontaktowe pódaśa ako telefonowy numer cyniś, aby pomagał pśi wobkšuśenju identity.',
@@ -1298,6 +1299,7 @@ Vi ne povas peti pluajn petojn.',
 
 /** Spanish (español)
  * @author BicScope
+ * @author Ciencia Al Poder
  * @author Crazymadlover
  * @author Fitoschido
  * @author Imre
@@ -1321,9 +1323,9 @@ Una vez que la cuenta sea aprobada, se te enviará una notificación a través d
 	'requestaccount-leg-person' => 'Información personal',
 	'requestaccount-leg-other' => 'Otra información',
 	'requestaccount-leg-tos' => 'Términos de servicio',
-	'requestaccount-acc-text' => 'Una vez que se envíe este pedido, recibirás en tu correo un mensaje de confirmación.
-Responde pulsando en el enlace de confirmación proporcionado por el mensaje.
-Además, tu contraseña se enviará a tu dirección de correo una vez que la cuenta sea creada.', # Fuzzy
+	'requestaccount-acc-text' => 'Un mensaje de confirmación será enviado a tu dirección de correo electrónico después de enviar esta solicitud. La dirección no se hará pública.
+Por favor, responde haciendo clic en el vínculo de confirmación proporcionado en el correo electrónico.
+Finalmente, se te enviará una contraseña por correo electrónico cuando se haya creado tu cuenta.',
 	'requestaccount-areas-text' => 'Seleccione las áreas en las que tiene experiencia formal o que le interesa colaborar.',
 	'requestaccount-ext-text' => 'La siguiente información se mantiene privada y sólo será usada para esta solicitud.
 Usted puede desear enlistar contactos como un número telefónico para ayudar en la confirmación de la identidad.',
@@ -2373,7 +2375,7 @@ $3
 Þú getur staðfest beðnina hér:
 
 $2',
-	'acct_request_throttle_hit' => 'Þú hefur þegar sótt um {{PLURAL:$1|1 aðgang|$1 aðganga}}. Þú getur ekki sent inn fleiri beðnir.',
+	'acct_request_throttle_hit' => 'Þú hefur þegar sótt um $1 {{PLURAL:$1|aðgang|aðganga}}. Þú getur ekki sent inn fleiri beðnir.',
 );
 
 /** Italian (italiano)
@@ -2699,10 +2701,17 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author Priviet
+ * @author Yjs5497
  * @author 아라
  */
 $messages['ko'] = array(
 	'requestaccount' => '계정 요청',
+	'requestaccount-text' => "'''사용자 계정을 요청하려면 다음 양식을 작성하여 제출하세요'''.
+
+요청을 하기에 앞서서 [[{{MediaWiki:Requestaccount-page}}|서비스 이용 약관]]을 반드시 읽어주세요. 
+
+계정이 승인되고 나면 알림 메시지 이메일을 받게 될것이면 해당 계정으로 [[Special:UserLogin|로그인]]할 수 있습니다.",
 	'requestaccount-page' => '{{ns:project}}:이용 약관',
 	'requestaccount-dup' => "'''참고: 이미 등록된 계정으로 로그인되어 있습니다.'''",
 	'requestaccount-leg-user' => '사용자 계정',
@@ -2710,6 +2719,16 @@ $messages['ko'] = array(
 	'requestaccount-leg-person' => '개인 정보',
 	'requestaccount-leg-other' => '다른 정보',
 	'requestaccount-leg-tos' => '이용 약관',
+	'requestaccount-acc-text' => '이 요청을 제출하고 나면 확인 메시지가 당신의 이메일 주소로 발송됩니다. 주소는 공개되지 않습니다.
+
+이메일에 제공된 확인 링크를 클릭해주세요.
+마지막으로, 계정이 만들어지면 비밀번호가 당신에게 이메일로 전송됩니다.',
+	'requestaccount-areas-text' => '당신이 가지고 있는 전문 기술이나 일하고 싶은 아래의 주제 영역에서 선택해주세요.',
+	'requestaccount-ext-text' => '다음 정보는 공개되지 않으며 이 요청을 처리하는 데에만 사용됩니다. 
+휴대 전화 번호 등 연락처를 입력하면 본인 확인에 도움이 됩니다.',
+	'requestaccount-bio-text' => '아래의 경력에 관련된 자격 정보를 포함해주세요.',
+	'requestaccount-bio-text-i' => "'''당신의 경력은 사용자 페이지의 첫 내용으로 설정될 것입니다.'''
+해당 정보를 공개해도 되는지 다시 한 번 확인해주세요.",
 	'requestaccount-real' => '실명:',
 	'requestaccount-same' => '(실명과 같음)',
 	'requestaccount-email' => '이메일 주소:',
@@ -2720,8 +2739,19 @@ $messages['ko'] = array(
 	'requestaccount-attach' => '이력서나 CV (선택 사항):',
 	'requestaccount-notes' => '특기 사항:',
 	'requestaccount-urls' => '웹 사이트 목록, 어떤 답변 (줄 바꿈으로 구분합니다):',
+	'requestaccount-agree' => '실명이 정확하고 서비스 이용 약관에 동의했다는 것을 인증해야 합니다.',
+	'requestaccount-inuse' => '사용자 이름은 보류 중인 계정 요청에서 사용되고 있습니다.',
+	'requestaccount-tooshort' => '당신의 경력은 최소한 $1 {{PLURAL:$1|자}}가 넘어야 합니다.',
+	'requestaccount-emaildup' => '다른 보류 중인 계정 요청이 같은 이메일 주소를 사용하고 있습니다.',
 	'requestaccount-exts' => '첨부 파일 형식이 비활성화되어 있습니다.',
+	'requestaccount-resub' => '보안상의 이유로 당신의 이력서 파일을 다시 선택해야 합니다.
+더 이상 이력서를 포함시키고 싶지 않다면 필드를 비워두세요.',
+	'requestaccount-tos' => '나는 {{SITENAME}}의 [[{{MediaWiki:Requestaccount-page}}|서비스 이용 약관]]을 읽었으며 이를 따르는 데 동의합니다. 
+나의 "실명"이라고 기입한 이름은 나의 실제 이름입니다.',
 	'requestaccount-submit' => '계정 요청',
+	'requestaccount-sent' => '당신의 계정 요청이 성공적으로 전송되었으며 검토를 기다리고 있습니다.
+ 확인 메일이 당신의 이메일 주소로 발송되었습니다.',
+	'request-account-econf' => '당신의 이메일 주소는 확인되었으며 당신의 계정 요청 등에 표시될 것입니다.',
 	'requestaccount-email-subj' => '{{SITENAME}} 이메일 주소 인증',
 	'requestaccount-email-body' => '$1 IP 주소를 사용하는 사용자가 이 이메일 주소로 {{SITENAME}}에 "$2" 계정 만들기를 요청하였습니다.
 
@@ -2733,6 +2763,9 @@ $3
 만약 당신의 것이 아니라면 위의 링크를 열지 마세요.
 이 확인 코드는 $4에 만료될 것입니다.',
 	'requestaccount-email-subj-admin' => '{{SITENAME}} 계정 요청',
+	'requestaccount-email-body-admin' => '"$1" 사용자가 계정을 요청하고 확인을 기다리고 있습니다.
+이메일 주소는 확인되었습니다. 여기에서 요청을 확인하실수 있습니다:"$2"',
+	'acct_request_throttle_hit' => '죄송합니다. 당신은 이미 {{PLURAL:$1|한 계정|$1개의 계정}}을 요청하셨습니다. 더 이상 요청을 하실 수 없습니다.',
 );
 
 /** Colognian (Ripoarisch)
@@ -3007,7 +3040,7 @@ $messages['mk'] = array(
 	'requestaccount-urls' => 'Список на мрежни места, ако ги има (се пишуваат во посебен ред):',
 	'requestaccount-agree' => 'Морате да потврдите дека вашето вистинско име е точно и дека се согласувате со нашите Услови на употреба.',
 	'requestaccount-inuse' => 'Тоа корисничко име е веќе искористено во друга пријава и чека одобрение.',
-	'requestaccount-tooshort' => 'Вашата биографија мора да содржи најмалку $1 {{PLURAL:$1|збор|зборови}}.',
+	'requestaccount-tooshort' => 'Вашата биографија мора да содржи најмалку {{PLURAL:$1|еден збор|$1 збора}}.',
 	'requestaccount-emaildup' => 'Истата адреса ја користи друга пријава на сметка во исчекување.',
 	'requestaccount-exts' => 'Прикачувањето на податотеки од тој формат не е дозволено.',
 	'requestaccount-resub' => 'Податотеката со вашето CV/резиме мора да се преизбере од безбедносни причини.
@@ -3095,7 +3128,7 @@ $messages['mr'] = array(
 	'requestaccount-leg-person' => 'वैयक्तिक माहिती',
 	'requestaccount-leg-other' => 'इतर माहिती',
 	'requestaccount-leg-tos' => 'सेवेच्या अटी',
-	'requestaccount-acc-text' => 'ही मागणी पूर्ण झाल्यावर तुमच्या इमेल पत्त्यावर एक संदेश येईल. कृपया त्या संदेशात दिलेल्या दुव्यावर टिचकी मारुन सदस्य खात्याची खात्री करा. खाते तयार झाल्यावर परवलीचा शब्द तुमच्या इमेल वर पाठविला जाईल.', # Fuzzy
+	'requestaccount-acc-text' => 'ही विनंती सादर केल्यावर तुमच्या इमेल पत्त्यावर एक निश्चितीकरण संदेश येईल.हा पत्ता प्रकाशित केला जाणार नाही. कृपया त्या संदेशात दिलेल्या निश्चितीकरण दुव्यावर टिचकी मारुन त्यास प्रतिसाद द्या.सरतेशेवटी, खाते तयार झाल्यावर परवलीचा शब्द तुमच्या इमेल वर पाठविला जाईल.',
 	'requestaccount-areas-text' => 'खालील क्षेत्रांपैकी तुमच्या पसंतीचे तसेच तुम्ही जाणकार असलेले विषय निवडा.',
 	'requestaccount-ext-text' => 'खालील माहिती ही गोपनीय असेल व फक्त या मागणी करताच वापरली जाईल.
 तुम्ही ओळख पटविण्यासाठी एखादा संपर्क क्रमांक देऊ शकता.',
@@ -3122,7 +3155,8 @@ $messages['mr'] = array(
 	'requestaccount-tos' => 'मी {{SITENAME}} वरचे [[{{MediaWiki:Requestaccount-page}}|नियम व अटी]] वाचलेले असून त्यांना बांधील राहण्याचे वचन देतो.
 तसेच मी दिलेले "खरे नाव" हे माझेच खरे नाव आहे.',
 	'requestaccount-submit' => 'खाते मागवा',
-	'requestaccount-sent' => 'तुमची खात्याची मागणी नोंदलेली आहे व पुनर्तपासणीसाठी गेलेली आहे.', # Fuzzy
+	'requestaccount-sent' => 'तुमची खातेविनंती पाठविण्यात आलेली आहे व पुनर्विलोकनासाठी प्रलंबित आहे.
+निश्चितीकरणाचा इमेल आपल्या इमेल पत्त्यावर पाठविण्यात आलेला आहे.',
 	'request-account-econf' => 'तुमचा इमेल पत्ता तपासलेला आहे व तो तुमच्या खात्याच्या मागणीमध्ये नोंदला जाईल.',
 	'requestaccount-email-subj' => '{{SITENAME}} इमेल पत्ता तपासणी',
 	'requestaccount-email-body' => 'कुणीतरी, बहुतेक तुम्ही, $1 या आयपी अंकपत्त्यावरून, {{SITENAME}} वर "$2" हे खाते उघडण्याची मागणी ह्या इमेल पत्त्यावर नोंदविलेली आहे.
@@ -3136,7 +3170,7 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}} खाते मागणी',
 	'requestaccount-email-body-admin' => '"$1" ने एक खात्याची मागणी नोंदविलेली आहे व ती तुमच्या सहमतीची वाट पाहत आहे.
 इमेल पत्ता तपासलेला आहे. तुम्ही तुमची सहमती "$2" इथे नोंदवू शकता.',
-	'acct_request_throttle_hit' => 'माफ करा, तुम्ही अगोदरच $1 खात्यांची मागणी नोंदविलेली आहे. तुम्ही अजून मागण्या नोंदवू शकत नाही.', # Fuzzy
+	'acct_request_throttle_hit' => 'माफ करा, तुम्ही अगोदरच {{PLURAL:$1|एका खात्यासाठी|$1 खात्यांसाठी}} विनंती केलेली आहे. तुम्ही अजून जास्त विनंत्या करू शकत नाही.',
 );
 
 /** Malay (Bahasa Melayu)
@@ -4078,7 +4112,7 @@ $messages['ru'] = array(
 	'requestaccount-urls' => 'Список веб-сайтов, если есть (по одному на каждой строчке):',
 	'requestaccount-agree' => 'Вы должны подтвердить, что ваше настоящее имя указано правильно и вы согласны с нашими Условиями предоставления услуг.',
 	'requestaccount-inuse' => 'Имя участника уже указано в одном из запросов на учётную запись.',
-	'requestaccount-tooshort' => 'Ваша биография должна содержать не менее $1 {{PLURAL:$1|слова|слов|слов}}.',
+	'requestaccount-tooshort' => 'Ваша биография должна содержать не менее $1 {{PLURAL:$1|слова|слов}}.',
 	'requestaccount-emaildup' => 'В другом необработанном запросе на получение учётной записи указан такой же адрес электронной почты.',
 	'requestaccount-exts' => 'Присоединение данного типа файлов запрещено.',
 	'requestaccount-resub' => 'В целях безопасности, ваш файл с резюме должен быть заменён. Оставьте поле пустым,
@@ -4105,7 +4139,7 @@ $3
 	'requestaccount-email-subj-admin' => '{{SITENAME}}: запрос учётной записи',
 	'requestaccount-email-body-admin' => '«$1» запросил создание учётной записи и ожидает подтверждения.
 Адрес электронной почты был подтверждён. Вы можете подтвердить заявку здесь «$2».',
-	'acct_request_throttle_hit' => 'Извините, но вы уже запросили $1 {{PLURAL:$1|учётную запись|учётные записи|учётных записей}}.
+	'acct_request_throttle_hit' => 'Извините, но вы уже запросили $1 {{PLURAL:$1|учётную запись|учётных записей|учётные записи}}.
 Больше делать запросов вы не можете.',
 );
 
@@ -4247,6 +4281,7 @@ Nemôžete odoslať viac žiadostí.',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Milicevic01
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -4279,6 +4314,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
+ * @author Milicevic01
  * @author Rancher
  * @author Михајло Анђелковић
  */

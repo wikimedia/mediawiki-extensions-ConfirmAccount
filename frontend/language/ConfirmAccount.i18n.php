@@ -154,6 +154,7 @@ $messages['cs'] = array(
  */
 $messages['cy'] = array(
 	'requestaccount-loginnotice' => "I gael cyfrif defnyddiwr, rhaid i chi '''[[Special:RequestAccount|wneud cais am gyfrif]]'''.",
+	'right-confirmaccount' => "Gweld [[Special:ConfirmAccounts|y ciw o'r ceisiadau am gyfrifon]]",
 );
 
 /** Danish (dansk)
@@ -591,7 +592,7 @@ $messages['ml'] = array(
  * @author V.narsikar
  */
 $messages['mr'] = array(
-	'confirmaccount-newrequests' => "'''$1''' इमेल पत्ता तपासलेला आहे {{PLURAL:$1|[[Special:ConfirmAccounts|खात्याची मागणी]]|[[Special:ConfirmAccounts|खात्यांची मागणी]]}} शिल्लक", # Fuzzy
+	'confirmaccount-newrequests' => "'''$1'''खुला इमेल पत्ता निश्चित करण्यात आला आहे [[Special:ConfirmAccounts|खाते {{PLURAL:$1|मागणी प्रलंबित आहे|मागण्या प्रलंबित आहेत}}]].'''आपले लक्ष आवश्यक!'''",
 	'requestaccount-loginnotice' => "सदस्य खाते मिळविण्यासाठी तुम्ही तुमची '''[[Special:RequestAccount|विनंती नोंदवा]]'''.",
 );
 
@@ -763,7 +764,7 @@ $messages['roa-tara'] = array(
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
-	'confirmaccount-newrequests' => "$1 {{PLURAL:$1|[[Special:ConfirmAccounts|открытое письмо подтверждено]]|[[Special:ConfirmAccounts|открытых письма подтверждены]]|[[Special:ConfirmAccounts|открытых писем подтверждены]]}}. '''Обратите ваше внимание!'''",
+	'confirmaccount-newrequests' => "'''$1''' {{PLURAL:$1|заявка|заявок|заявки}} на создание учётной записи с подтверждённым адресом эл. почты [[Special:ConfirmAccounts|{{PLURAL:$1|ожидает рассмотрения|ожидают рассмотрения}}]]. '''Требуется ваше внимание!'''",
 	'requestaccount-loginnotice' => 'Чтобы получить учётную запись, вы должны её [[Special:RequestAccount|запросить]].',
 	'right-confirmaccount' => 'просмотр [[Special:ConfirmAccounts|запросов на создание учётных записей]]',
 	'right-requestips' => 'Просмотр IP-адресов авторов запросов на создание учётных записей',

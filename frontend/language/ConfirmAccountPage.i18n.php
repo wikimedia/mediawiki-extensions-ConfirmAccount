@@ -1568,7 +1568,10 @@ $messages['ce'] = array(
 	'confirmaccount-showexp' => 'шира делла дехарш',
 	'confirmaccount-review' => 'Хьажар',
 	'confirmaccount-all' => '(гайта ерриге рогӀехь)',
+	'confirmaccount-type-0' => 'хира болу автораш',
 	'confirmaccount-name' => 'Декъашхочун цӀе',
+	'confirmaccount-pos-1' => 'тадар',
+	'confirmaccount-withcv' => '(цуьнах лацар билгалдош далош ду)',
 	'confirmaccount-noreason' => '(яц)',
 	'confirmaccount-submit' => 'Бакъдан',
 );
@@ -1740,11 +1743,11 @@ Måske er den allerede blevet behandlet.',
 	'confirmaccount-confirm' => 'Brug valgmulighederne herunder til at godkende, afvise eller tilbageholde anmodningen:',
 	'confirmaccount-econf' => '(bekræftet)',
 	'confirmaccount-withcv' => '(CV vedhæftet)',
-	'confirmaccount-reject' => '(afvist af [[User:$1|$1]] den $2)', # Fuzzy
+	'confirmaccount-reject' => '({{GENDER:$1|afvist}} af [[User:$1|$1]] den $3 kl. $4)',
 	'confirmaccount-rational' => 'Begrundelse oplyst til anmoder:',
 	'confirmaccount-noreason' => '(ingen)',
 	'confirmaccount-autorej' => '(denne anmodning er automatisk blevet smidt væk på grund af inaktivitet)',
-	'confirmaccount-held' => '(tilbageholdt af [[User:$1|$1]] den $2)', # Fuzzy
+	'confirmaccount-held' => '({{GENDER:$1|tilbageholdt}} af [[User:$1|$1]] den $3 kl. $4)',
 	'confirmaccount-create' => 'Godkend (opret konto)',
 	'confirmaccount-deny' => 'Afvis (fjern fra listen)',
 	'confirmaccount-hold' => 'Tilbagehold',
@@ -1760,7 +1763,7 @@ Måske er den allerede blevet behandlet.',
 	'confirmaccount-badaction' => 'En mulig handling (godkend, afvis, tilbagehold) skal angives for at kunne fortsætte.',
 	'confirmaccount-acc' => 'Kontoanmodning godkendt; oprettede ny brugerkonto [[User:$1|$1]].',
 	'confirmaccount-rej' => 'Kontoanmodning afvist.',
-	'confirmaccount-viewing' => '(undersøges i øjeblikket af [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '({{GENDER:$1|undersøges}} i øjeblikket af [[User:$1|$1]])',
 	'confirmaccount-summary' => 'Opretter den nye brugers brugerside.',
 	'confirmaccount-welc' => "
 '''Velkommen til ''{{SITENAME}}''!'''
@@ -3380,6 +3383,7 @@ $messages['haw'] = array(
  * @author Rotemliss
  * @author StuB
  * @author YaronSh
+ * @author Yona b
  */
 $messages['he'] = array(
 	'confirmaccounts' => 'אישור בקשות חשבון',
@@ -3449,11 +3453,11 @@ $messages['he'] = array(
 	'confirmaccount-confirm' => 'השתמשו באפשרויות שלהלן כדי לקבל, לדחות או לעכב בקשה זו:',
 	'confirmaccount-econf' => '(מאושרת)',
 	'confirmaccount-withcv' => '(קורות החיים מצורפים)',
-	'confirmaccount-reject' => '(נדחתה על ידי [[User:$1|$1]] ב־$2)', # Fuzzy
+	'confirmaccount-reject' => '(נדחתה על ידי [[User:$1|$1]] ב־$3 בשעה $4)',
 	'confirmaccount-rational' => 'ההסבר שניתן לפונה:',
 	'confirmaccount-noreason' => '(ללא)',
 	'confirmaccount-autorej' => '(הבקשה הזאת נמחקה לאור חוסר פעילות)',
-	'confirmaccount-held' => '(סומנה להמתנה על ידי [[User:$1|$1]] ב־$2)', # Fuzzy
+	'confirmaccount-held' => '(סומנה להמתנה על ידי [[User:$1|$1]] ב־$3 בשעה $4)',
 	'confirmaccount-create' => 'אישור (יצירת חשבון)',
 	'confirmaccount-deny' => 'דחייה (מחיקת הבקשה)',
 	'confirmaccount-hold' => 'עיכוב',
@@ -3469,7 +3473,7 @@ $messages['he'] = array(
 	'confirmaccount-badaction' => 'פעולה תקינה (קבלה, דחייה, החזקה) צריכה להיות מצוינת כדי להמשיך.',
 	'confirmaccount-acc' => 'בקשת החשבון אושרה בהצלחה; נוצר חשבון משתמש חדש בשם [[User:$1|$1]].',
 	'confirmaccount-rej' => 'בקשת החשבון נדחתה בהצלחה.',
-	'confirmaccount-viewing' => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])', # Fuzzy
+	'confirmaccount-viewing' => '(הבקשה נצפית כרגע בידי [[User:$1|$1]])',
 	'confirmaccount-summary' => 'יצירת דף משתמש למשתמש חדש',
 	'confirmaccount-welc' => "'''ברוכים הבאים לאתר ''{{SITENAME}}''!'''
 אנו מקווים שתרומותיכם יהיו רבות וטובות.
@@ -4729,20 +4733,40 @@ $messages['kn'] = array(
  * @author Daisy2002
  * @author Hym411
  * @author Kwj2772
+ * @author Priviet
+ * @author Yjs5497
  * @author 아라
  */
 $messages['ko'] = array(
-	'confirmaccounts' => '계정 승인 요청',
-	'confirmedit-desc' => '사무관에게 계정 생성 요청을 허가할 권한을 부여',
-	'confirmaccount-maintext' => "'''이 페이지는 ''{{SITENAME}}''의 대기중인 계정 요청을 처리하기 위해 존재합니다.'''
+	'confirmaccounts' => '계정 요청 승인',
+	'confirmedit-desc' => '사무관에게 계정 요청을 승인하는 기능을 줍니다',
+	'confirmaccount-maintext' => "'''이 페이지는 ''{{SITENAME}}''의 대기 중인 계정 요청을 처리하기 위해 사용됩니다.'''
 
-각 계정 요청은 세 개의 하부 내용으로 구성됩니다. 열린 요청, 다른 관리자가 추가적인 정보를 얻기 위해 임시 정지한 계정, 그리고 거절된 요청입니다.
+각 계정 요청은 세 개의 하부 내용으로 구성됩니다.
+열린 요청, 다른 관리자가 추가적인 정보를 얻기 위해 임시 정지한 계정, 그리고 거절된 요청입니다.
 
 요청에 응답할 때는 신중하게 검토하고, 요청된 대로 승인하세요.
 당신의 행위는 비공개적으로 기록됩니다.
 당신은 당신이 행하는 모든 행동을 검토할 것을 권합니다.",
-	'confirmaccount-list' => '이 아래는 계정 요청 승인을 기다리는 요청들입니다.
-계정 요청이 승인되거나 거절되면, 이 리스트에서 없어질 것입니다.',
+	'confirmaccount-list' => '아래에는 계정 요청 승인을 기다리는 요청의 목록입니다.
+계정 요청이 승인되거나 거절되면 이 목록에서 제거됩니다.',
+	'confirmaccount-list2' => '아래는 최근 사용자 요청이 거절된 목록이며, 며칠 전에 이미 자동적으로 삭제되었을 수 있습니다. 
+당신이 첫 번째로 거절한 관리자여도, 여전히 계정으로 승인할 수 있습니다.',
+	'confirmaccount-list3' => '아래는 최근 사용자 요청이 만료된 목록이며, 며칠 전에 이미 자동적으로 삭제되었을 수 있습니다. 
+여전히 계정으로 승인할 수 있습니다.',
+	'confirmaccount-text' => "'''{{SITENAME}}'''의 사용자 계정에 대한 보류 요청입니다. 
+
+아래 정보를 신중하게 검토해주세요.
+이 요청을 승인하시려면 드롭다운 목록을 사용하여 사용자의 계정 상태를 설정하십시오.
+개인 정보가 포함되어 있을 경우 편집을 통해 지울 수 있습니다. 
+사용자 이름과 다른 이름으로 새로운 계정을 만드실 수 있습니다.
+이 점에 유의하여 다른 이름과 충돌하지 않도록 해주십시오.
+
+이 요청을 승인하지 않고 넘어가거나 거절할 경우에 이 요청은 보류 상태로 남게 됩니다.",
+	'confirmaccount-none-o' => '이 목록에는 보류 중인 계정 요청이 없습니다.',
+	'confirmaccount-none-h' => '이 목록에는 현재 보류 중인 계정 요청이 없습니다.',
+	'confirmaccount-none-r' => '이 목록에는 현재 거절된 계정 요청이 없습니다.',
+	'confirmaccount-none-e' => '이 목록에는 만료된 계정 요청이 없습니다.',
 	'confirmaccount-real-q' => '이름',
 	'confirmaccount-email-q' => '이메일',
 	'confirmaccount-bio-q' => '전기',
@@ -4751,27 +4775,41 @@ $messages['ko'] = array(
 	'confirmaccount-showheld' => '보류된 요청',
 	'confirmaccount-showexp' => '만료된 요청',
 	'confirmaccount-review' => '검토',
+	'confirmaccount-types' => '아래에서 계정 확인 대기열을 선택하세요:',
 	'confirmaccount-all' => '(모든 대기열 보기)',
+	'confirmaccount-type' => '대기열:',
+	'confirmaccount-type-0' => '잠정적 저자',
+	'confirmaccount-type-1' => '잠정적 편집자',
 	'confirmaccount-q-open' => '진행 중인 요청',
 	'confirmaccount-q-held' => '보류된 요청',
 	'confirmaccount-q-rej' => '최근에 거부된 요청',
 	'confirmaccount-q-stale' => '만료된 요청',
+	'confirmaccount-badid' => '지정된 ID와 일치하는 보류된 요청이 없습니다.
+이미 처리되었을 수 있습니다.',
 	'confirmaccount-leg-user' => '사용자 계정',
+	'confirmaccount-leg-areas' => '주요 관심 분야',
 	'confirmaccount-leg-person' => '개인 정보',
 	'confirmaccount-leg-other' => '추가 정보',
 	'confirmaccount-leg-ip' => 'IP 주소 데이터',
 	'confirmaccount-name' => '사용자 이름',
 	'confirmaccount-real' => '이름:',
 	'confirmaccount-email' => '이메일:',
+	'confirmaccount-reqtype' => '위치:',
 	'confirmaccount-pos-0' => '저자',
 	'confirmaccount-pos-1' => '편집자',
 	'confirmaccount-bio' => '전기:',
+	'confirmaccount-attach' => '이력서:',
 	'confirmaccount-notes' => '추가 사항:',
+	'confirmaccount-urls' => '웹 사이트의 목록:',
 	'confirmaccount-none-p' => '(제공하지 않음)',
+	'confirmaccount-confirm' => '이 요청을 밑에 있는 옵션을 통해 승인하거나, 거절하거나, 보류할 수 있습니다:',
 	'confirmaccount-econf' => '(확인함)',
 	'confirmaccount-withcv' => '(CV 첨부함)',
 	'confirmaccount-reject' => '($3 $4에 [[User:$1|$1]] 사용자에 의해 {{GENDER:$1|거부함}})',
+	'confirmaccount-rational' => '지원자에게 내린 판단:',
 	'confirmaccount-noreason' => '(없음)',
+	'confirmaccount-autorej' => '(이 요청은 활동이 없어 자동적으로 폐기되었습니다)',
+	'confirmaccount-held' => '([[User:$1|$1]]사용자가 $3 $4에 "보류"로 {{GENDER:$1|표시함}})',
 	'confirmaccount-create' => '승인 (계정 만들기)',
 	'confirmaccount-deny' => '거부 (목록에서 제거)',
 	'confirmaccount-hold' => '보류',
@@ -4780,9 +4818,19 @@ $messages['ko'] = array(
 	'confirmaccount-ip' => 'IP 주소:',
 	'confirmaccount-xff' => 'X-Forwarded-For:',
 	'confirmaccount-agent' => '사용자-에이전트:',
+	'confirmaccount-legend' => '이 계정 확인/거부',
 	'confirmaccount-submit' => '확인',
-	'confirmaccount-needreason' => '아래의 코멘트 박스에 이유를 제공해야 합니다.',
+	'confirmaccount-needreason' => '아래의 의견 상자에 이유를 제공해야 합니다.',
+	'confirmaccount-canthold' => '이 요청은 이미 보류 또는 삭제 되었습니다.',
+	'confirmaccount-badaction' => '유효한 작업 (허용, 거부, 보류) 진행 순서가 지정되어야 합니다.',
+	'confirmaccount-acc' => '계정 요청이 성공적으로 승인되었습니다; 새 사용자 계정을 만들었습니다 [[User:$1|$1]]',
+	'confirmaccount-rej' => '계정 요청이 성공적으로 거부되었습니다.',
+	'confirmaccount-viewing' => '(현재 [[User:$1|$1]] 사용자가 {{GENDER:$1|보고 있습니다}})',
 	'confirmaccount-summary' => '새 사용자에 대한 사용자 문서를 만듭니다.',
+	'confirmaccount-welc' => "'''''{{SITENAME}}''에 오신 것을 환영합니다!'''
+우리는 많이 잘 기여할 수 있기를 바랍니다.
+아마 [[{{MediaWiki:Helppage}}|도움말 문서]]를 읽고 싶어할 것입니다.
+다시, 환영하며 즐겁게 보내세요!",
 	'confirmaccount-wsum' => '환영합니다!',
 	'confirmaccount-email-subj' => '{{SITENAME}} 계정 요청',
 	'confirmaccount-email-body' => '{{SITENAME}}에서 당신의 계정 만들기 요청이 승인되었습니다.
@@ -4803,6 +4851,22 @@ $3
 
 보안상의 이유로 인해 첫 로그인 이후 비밀번호를 바꾸어야 합니다.
 로그인하시려면 {{fullurl:Special:UserLogin}} 을 이용해주십시오.',
+	'confirmaccount-email-body3' => '죄송합니다. "$1" 계정에 대한 요청이 {{SITENAME}}에서 거절됐습니다.
+
+여기에는 몇 가지 이유가 있을 수 있을 수 있습니다.
+양식을 올바르게 채우지 않았거나, 충분한 길이의 답변을 제공하지 않았기 때문일 수도 있으며, 정책 기준을 충족하지 않았을 수도 있습니다.
+사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다.',
+	'confirmaccount-email-body4' => '죄송합니다. "$1" 계정에 대한 요청이 {{SITENAME}}에서 거절됐습니다.
+
+$2
+
+사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다.',
+	'confirmaccount-email-body5' => '"$1" 계정에 대한 요청이  {{SITENAME}}에서 승인되기 전에 추가적인 정보를 제공해주셔야 합니다.
+
+$2
+
+
+사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다.',
 );
 
 /** Kinaray-a (Kinaray-a)
@@ -5394,7 +5458,7 @@ $messages['ml'] = array(
 	'confirmaccount-none-h' => 'ഈ പട്ടികയിൽ നിലവിൽ അംഗത്വത്തിനായുള്ള അഭ്യർത്ഥനകളിൽ തടഞ്ഞുവെക്കപ്പെട്ടിരിക്കുന്ന അഭ്യർത്ഥനകൾ ഒന്നുമില്ല',
 	'confirmaccount-none-r' => 'നിലവിൽ ഈ പട്ടികയിൽ നിരസിച്ച അംഗത്വത്തിനായുള്ള അഭ്യർത്ഥനകൾ ഒന്നുമില്ല.',
 	'confirmaccount-none-e' => 'ഈ പട്ടികയിൽ നിലവിൽ അംഗത്വത്തിനായുള്ള കാലഹരണപ്പെട്ട അഭ്യർത്ഥനകൾ ഒന്നുമില്ല.',
-	'confirmaccount-real-q' => 'പേര്‌',
+	'confirmaccount-real-q' => 'പേര്',
 	'confirmaccount-email-q' => 'ഇമെയിൽ',
 	'confirmaccount-bio-q' => 'ആത്മകഥ',
 	'confirmaccount-showopen' => 'തുറന്ന അഭ്യർത്ഥനകൾ',
@@ -5519,7 +5583,7 @@ $messages['mr'] = array(
 	'confirmaccount-notes' => 'अधिक माहिती:',
 	'confirmaccount-urls' => 'संकेतस्थळांची यादी:',
 	'confirmaccount-none-p' => '(दिलेले नाही)',
-	'confirmaccount-confirm' => 'ही मागणी स्वीकारण्यासाठी, प्रलंबित ठेवण्यासाठी किंवा नाकारण्यासाठी खालील रकाने निवडा:', # Fuzzy
+	'confirmaccount-confirm' => 'ही मागणी स्वीकारण्यासाठी,नाकारण्यासाठी किंवा जैसे थे ठेवण्यासाठी खालील ऐच्छिके(ऑप्शन्स) निवडा:',
 	'confirmaccount-econf' => '(खात्री केलेले)',
 	'confirmaccount-reject' => '([[User:$1|$1]] ने $2 वर नाकारली)', # Fuzzy
 	'confirmaccount-rational' => 'अर्जदाराला दिलेले कारण (rationale):',
@@ -5538,7 +5602,7 @@ $messages['mr'] = array(
 	'confirmaccount-acc' => 'खाते मागणी यशस्वीरित्या पूर्ण; [[User:$1|$1]] हे नवीन खाते तयार केले.',
 	'confirmaccount-rej' => 'खाते मागणी यशस्वीरित्या नाकारण्यात आलेली आहे.',
 	'confirmaccount-viewing' => '([[User:$1|$1]] ने पहारा दिलेला आहे)', # Fuzzy
-	'confirmaccount-summary' => 'नवीन सदस्याच्या माहितीप्रमाणे सदस्य पान तयार करीत आहे.', # Fuzzy
+	'confirmaccount-summary' => 'नवीन सदस्यासाठी सदस्यपान तयार करीत आहे.',
 	'confirmaccount-welc' => "'''''{{SITENAME}}'' वर आपले स्वागत आहे!''' आम्ही आशा करतो की आपण इथे योगदान द्याल.
 तुम्ही कदाचित [[{{MediaWiki:Helppage}}|साहाय्य पाने]] वाचू इच्छित असाल. पुन्हा एकदा, स्वागत!",
 	'confirmaccount-wsum' => 'सुस्वागतम्‌!',
@@ -8955,6 +9019,7 @@ $messages['vo'] = array(
 $messages['yi'] = array(
 	'confirmaccount-real-q' => 'נאמען',
 	'confirmaccount-email-q' => 'ע-פאסט',
+	'confirmaccount-review' => 'רעצענזירן',
 	'confirmaccount-leg-user' => 'באַניצער קאנטע',
 	'confirmaccount-name' => 'באַניצער נאָמען',
 	'confirmaccount-real' => 'נאָמען:',
