@@ -9106,6 +9106,7 @@ $2
  * @author Chenxiaoqino
  * @author Hydra
  * @author Kuailong
+ * @author Liuxinyu970226
  * @author Mark85296341
  * @author Wilsonmess
  * @author Xiaomingyan
@@ -9160,7 +9161,7 @@ $messages['zh-hans'] = array(
 	'confirmaccount-leg-person' => '个人信息',
 	'confirmaccount-leg-other' => '其他信息',
 	'confirmaccount-leg-ip' => 'IP地址数据',
-	'confirmaccount-name' => '用户名字',
+	'confirmaccount-name' => '用户名',
 	'confirmaccount-real' => '名称：',
 	'confirmaccount-email' => '电邮',
 	'confirmaccount-reqtype' => '位置',
