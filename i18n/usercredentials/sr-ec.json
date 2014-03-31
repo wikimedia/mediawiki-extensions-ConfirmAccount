@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": [
+            "Rancher",
+            "Sasa Stefanovic",
+            "Михајло Анђелковић"
+        ]
+    },
+    "usercredentials-user": "Корисничко име:",
+    "usercredentials-leg-user": "Кориснички налог",
+    "usercredentials-leg-areas": "Главне сфере интересовања",
+    "usercredentials-leg-person": "Лични подаци",
+    "usercredentials-leg-other": "Други подаци",
+    "usercredentials-leg-ip": "Подаци ИП адресе",
+    "usercredentials-email": "Е-пошта:",
+    "usercredentials-real": "Право име:",
+    "usercredentials-bio": "Животопис:",
+    "usercredentials-attach": "Резиме/CV:",
+    "usercredentials-notes": "Додатне напомене:",
+    "usercredentials-urls": "Списак вебсајтова:",
+    "usercredentials-ip": "Оригинална IP адреса:",
+    "usercredentials-member": "Права:"
+}

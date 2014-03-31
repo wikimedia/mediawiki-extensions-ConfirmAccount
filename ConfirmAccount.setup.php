@@ -23,6 +23,7 @@ class ConfirmAccountSetup {
 		$spActionDir      = "$dir/frontend/specialpages/actions";
 
 		# Main i18n file and special page alias file
+		$wgMessagesDirs['ConfirmAccount'] = __DIR__ . '/i18n/core';
 		$messagesFiles['ConfirmAccount'] = "$langDir/ConfirmAccount.i18n.php";
 		$messagesFiles['ConfirmAccountAliases'] = "$langDir/ConfirmAccount.alias.php";
 
@@ -33,12 +34,15 @@ class ConfirmAccountSetup {
 
 		# UI to request an account
 		$classes['RequestAccountPage'] = "$spActionDir/RequestAccount_body.php";
+		$wgMessagesDirs['RequestAccountPage'] = __DIR__ . '/i18n/requestaccount';
 		$messagesFiles['RequestAccountPage'] = "$langDir/RequestAccountPage.i18n.php";
 		# UI to confirm accounts
 		$classes['ConfirmAccountsPage'] = "$spActionDir/ConfirmAccount_body.php";
+		$wgMessagesDirs['ConfirmAccountPage'] = __DIR__ . '/i18n/confirmaccount';
 		$messagesFiles['ConfirmAccountPage'] = "$langDir/ConfirmAccountPage.i18n.php";
 		# UI to see account credentials
 		$classes['UserCredentialsPage'] = "$spActionDir/UserCredentials_body.php";
+		$wgMessagesDirs['UserCredentialsPage'] = __DIR__ . '/i18n/usercredentials';
 		$messagesFiles['UserCredentialsPage'] = "$langDir/UserCredentialsPage.i18n.php";
 
 		# Utility functions
