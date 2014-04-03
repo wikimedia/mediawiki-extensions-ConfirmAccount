@@ -9,7 +9,8 @@
             "Nike",
             "Str4nd",
             "Taleman",
-            "Varusmies"
+            "Varusmies",
+            "Nedergard"
         ]
     },
     "requestaccount": "Pyydä käyttäjätunnusta",
@@ -21,7 +22,7 @@
     "requestaccount-leg-person": "Henkilötiedot",
     "requestaccount-leg-other": "Muut tiedot",
     "requestaccount-leg-tos": "Käyttöehdot",
-    "requestaccount-acc-text": "Lähetettyäsi pyynnön saat sähköpostitse vahvistuksen. Sinun pitää napsauttaa sähköpostissa olevaa kuittauslinkkiä. Myöskin salasanasi lähetetään sinulle, kun tunnus luodaan.",
+    "requestaccount-acc-text": "Vahvistusviesti lähetetään sähköpostiisi, kun lähetät pyynnön. Osoitetta ei julkaista.\nVastaa napsauttamaalla vahvistuslinkkiä sähköpostissa.\nSaat salasanasi sähköpostitse, kun käyttäjätunnuksesi on luotu.",
     "requestaccount-areas-text": "Valitse alta alueet, joissa olet asiantuntija tai joiden parissa haluaisit enimmäkseen työskennellä.",
     "requestaccount-ext-text": "Seuraavat tiedot pidetään luottamuksellisina ja niitä käytetään vain tämän pyynnön käsittelyssä.\nHaluat ehkä antaa tunnistamista helpottavia yhteystietoja, puhelinnumeron esimerkiksi.",
     "requestaccount-bio-text": "Kuvauksestasi tulee käyttäjäsivusi oletussisältö.\nKirjoita omiin tietoihisi erikoisosaamisistasi ja pätevyyksistäsi. Muista, että nämä tiedot julkaistaan.\nVoit muuttaa nimeäsi [[Special:Preferences|asetussivulla]].",
