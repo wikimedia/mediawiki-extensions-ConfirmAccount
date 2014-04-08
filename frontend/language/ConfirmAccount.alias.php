@@ -203,8 +203,8 @@ $specialPageAliases['id'] = array(
 
 /** Italian (italiano) */
 $specialPageAliases['it'] = array(
-	'RequestAccount' => array( 'RichiediAccount' ),
-	'ConfirmAccounts' => array( 'ConfermaAccount' ),
+	'RequestAccount' => array( 'RichiediUtenza' ),
+	'ConfirmAccounts' => array( 'ConfermaUtenza' ),
 	'UserCredentials' => array( 'CredenzialiUtente' ),
 );
 
