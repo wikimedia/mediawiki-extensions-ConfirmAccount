@@ -1,30 +1,30 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ләйсән"
-        ]
-    },
-    "confirmaccount-showopen": "асыҡ һорауҙар",
-    "confirmaccount-showrej": "ҡабул ителмәгән һорауҙар",
-    "confirmaccount-showexp": "иҫке һорауҙар",
-    "confirmaccount-review": "ҡарап сығырға",
-    "confirmaccount-all": "(бөтә сираттарҙы күрһәтергә)",
-    "confirmaccount-type": "Һайланған сират:",
-    "confirmaccount-type-1": "буласаҡ мөхәррирҙәр",
-    "confirmaccount-q-open": "асыҡ һорауҙар",
-    "confirmaccount-q-held": "кисектерелгән һорауҙар",
-    "confirmaccount-q-stale": "иҫке һорауҙар",
-    "confirmaccount-leg-user": "Иҫәп яҙмаһы",
-    "confirmaccount-leg-person": "Шәхси мәғлүмәттәр",
-    "confirmaccount-leg-other": "Башҡа мәғлүмәт",
-    "confirmaccount-name": "Ҡатнашыусы исеме",
-    "confirmaccount-real": "Исем:",
-    "confirmaccount-reqtype": "Вазифа",
-    "confirmaccount-pos-0": "Автор",
-    "confirmaccount-pos-1": "мөхәррир",
-    "confirmaccount-bio": "Биография",
-    "confirmaccount-none-p": "(күрһәтелмәгән)",
-    "confirmaccount-econf": "(раҫланған)",
-    "confirmaccount-noreason": "(юҡ)",
-    "confirmaccount-hold": "Ҡалдырып торорға"
+	"@metadata": {
+		"authors": [
+			"Ләйсән"
+		]
+	},
+	"confirmaccount-showopen": "асыҡ һорауҙар",
+	"confirmaccount-showrej": "ҡабул ителмәгән һорауҙар",
+	"confirmaccount-showexp": "иҫке һорауҙар",
+	"confirmaccount-review": "ҡарап сығырға",
+	"confirmaccount-all": "(бөтә сираттарҙы күрһәтергә)",
+	"confirmaccount-type": "Һайланған сират:",
+	"confirmaccount-type-1": "буласаҡ мөхәррирҙәр",
+	"confirmaccount-q-open": "асыҡ һорауҙар",
+	"confirmaccount-q-held": "кисектерелгән һорауҙар",
+	"confirmaccount-q-stale": "иҫке һорауҙар",
+	"confirmaccount-leg-user": "Иҫәп яҙмаһы",
+	"confirmaccount-leg-person": "Шәхси мәғлүмәттәр",
+	"confirmaccount-leg-other": "Башҡа мәғлүмәт",
+	"confirmaccount-name": "Ҡатнашыусы исеме",
+	"confirmaccount-real": "Исем:",
+	"confirmaccount-reqtype": "Вазифа",
+	"confirmaccount-pos-0": "Автор",
+	"confirmaccount-pos-1": "мөхәррир",
+	"confirmaccount-bio": "Биография",
+	"confirmaccount-none-p": "(күрһәтелмәгән)",
+	"confirmaccount-econf": "(раҫланған)",
+	"confirmaccount-noreason": "(юҡ)",
+	"confirmaccount-hold": "Ҡалдырып торорға"
 }

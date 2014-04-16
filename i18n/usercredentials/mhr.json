@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Сай"
-        ]
-    },
-    "usercredentials-user": "Пайдаланышын лӱмжӧ:",
-    "usercredentials-email": "Электрон почто:"
+	"@metadata": {
+		"authors": [
+			"Сай"
+		]
+	},
+	"usercredentials-user": "Пайдаланышын лӱмжӧ:",
+	"usercredentials-email": "Электрон почто:"
 }

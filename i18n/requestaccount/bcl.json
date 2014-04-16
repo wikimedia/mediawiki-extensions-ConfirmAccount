@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Filipinayzd"
-        ]
-    },
-    "requestaccount-real": "Totoong pangaran:",
-    "requestaccount-same": "(pareho sa  totoong pangaran)"
+	"@metadata": {
+		"authors": [
+			"Filipinayzd"
+		]
+	},
+	"requestaccount-real": "Totoong pangaran:",
+	"requestaccount-same": "(pareho sa  totoong pangaran)"
 }

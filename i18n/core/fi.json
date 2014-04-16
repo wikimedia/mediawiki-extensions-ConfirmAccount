@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Centerlink",
-            "Cimon Avaro",
-            "Crt",
-            "Jaakonam",
-            "Mobe",
-            "Nike",
-            "Str4nd",
-            "Taleman",
-            "Varusmies"
-        ]
-    },
-    "confirmaccount-newrequests": "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} käsiteltävänä.",
-    "requestaccount-loginnotice": "Saadaksesi käyttäjätunnuksen on tehtävä '''[[Special:RequestAccount|käyttäjätunnuspyyntö]]'''.",
-    "right-confirmaccount": "Nähdä [[Special:ConfirmAccounts|listan pyydetyistä tunnuksista]]",
-    "right-requestips": "Nähdä hakijan IP-osoitteet käyttäjätilejä käsiteltäessä",
-    "right-lookupcredentials": "Nähdä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]"
+	"@metadata": {
+		"authors": [
+			"Centerlink",
+			"Cimon Avaro",
+			"Crt",
+			"Jaakonam",
+			"Mobe",
+			"Nike",
+			"Str4nd",
+			"Taleman",
+			"Varusmies"
+		]
+	},
+	"confirmaccount-newrequests": "Nyt on '''$1''' {{PLURAL:$1|avoin|avointa}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} käsiteltävänä.",
+	"requestaccount-loginnotice": "Saadaksesi käyttäjätunnuksen on tehtävä '''[[Special:RequestAccount|käyttäjätunnuspyyntö]]'''.",
+	"right-confirmaccount": "Nähdä [[Special:ConfirmAccounts|listan pyydetyistä tunnuksista]]",
+	"right-requestips": "Nähdä hakijan IP-osoitteet käyttäjätilejä käsiteltäessä",
+	"right-lookupcredentials": "Nähdä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]"
 }

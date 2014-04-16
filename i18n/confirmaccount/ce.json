@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Умар"
-        ]
-    },
-    "confirmaccount-showexp": "шира делла дехарш",
-    "confirmaccount-review": "Хьажар",
-    "confirmaccount-all": "(гайта ерриге рогӀехь)",
-    "confirmaccount-type-0": "хира болу автораш",
-    "confirmaccount-name": "Декъашхочун цӀе",
-    "confirmaccount-pos-1": "тадар",
-    "confirmaccount-withcv": "(цуьнах лацар билгалдош далош ду)",
-    "confirmaccount-noreason": "(яц)",
-    "confirmaccount-submit": "Бакъдан"
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"confirmaccount-showexp": "шира делла дехарш",
+	"confirmaccount-review": "Хьажар",
+	"confirmaccount-all": "(гайта ерриге рогӀехь)",
+	"confirmaccount-type-0": "хира болу автораш",
+	"confirmaccount-name": "Декъашхочун цӀе",
+	"confirmaccount-pos-1": "тадар",
+	"confirmaccount-withcv": "(цуьнах лацар билгалдош далош ду)",
+	"confirmaccount-noreason": "(яц)",
+	"confirmaccount-submit": "Бакъдан"
 }

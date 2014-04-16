@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Erdemaslancan"
-        ]
-    },
-    "right-confirmaccount": "[[Special:ConfirmAccounts|Grub da hesab waştena]] vineno",
-    "right-lookupcredentials": "[[Special:UserCredentials|Referansanê karberan]] vineno"
+	"@metadata": {
+		"authors": [
+			"Erdemaslancan"
+		]
+	},
+	"right-confirmaccount": "[[Special:ConfirmAccounts|Grub da hesab waştena]] vineno",
+	"right-lookupcredentials": "[[Special:UserCredentials|Referansanê karberan]] vineno"
 }

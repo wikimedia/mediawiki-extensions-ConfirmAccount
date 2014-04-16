@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "MF-Warburg"
-        ]
-    },
-    "requestaccount-email": "Diresaun korreiu eletróniku:",
-    "requestaccount-level-0": "autór"
+	"@metadata": {
+		"authors": [
+			"MF-Warburg"
+		]
+	},
+	"requestaccount-email": "Diresaun korreiu eletróniku:",
+	"requestaccount-level-0": "autór"
 }

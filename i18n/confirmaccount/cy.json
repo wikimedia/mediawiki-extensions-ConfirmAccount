@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Robin Owain"
-        ]
-    },
-    "confirmaccount-name": "Enw Defnyddiwr",
-    "confirmaccount-real": "Enw"
+	"@metadata": {
+		"authors": [
+			"Robin Owain"
+		]
+	},
+	"confirmaccount-name": "Enw Defnyddiwr",
+	"confirmaccount-real": "Enw"
 }

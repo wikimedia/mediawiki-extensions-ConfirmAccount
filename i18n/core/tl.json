@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "AnakngAraw"
-        ]
-    },
-    "confirmaccount-newrequests": "'''$1''' bukas na e-liham ang natiyak [[Special:ConfirmAccounts|ang akawnt na {{PLURAL:$1|hiniling ay nakabinbin|mga hiniling ay nakabinbin}}]]. '''Kailangan ang pagpansin mo!'''",
-    "requestaccount-loginnotice": "Upang makatanggap ng isang akawnt ng tagagamit, dapat kang '''[[Special:RequestAccount|humiling ng isa]]'''.",
-    "right-confirmaccount": "Tingnan ang [[Special:ConfirmAccounts|pila na may hinihiling na mga akawnt]]",
-    "right-requestips": "Tingnan ang mga adres ng IP ng humihiling habang isinasagawa ang hinihiling na mga akawnt",
-    "right-lookupcredentials": "Tingnan ang [[Special:UserCredentials|mga kredensyal ng tagagamit]]"
+	"@metadata": {
+		"authors": [
+			"AnakngAraw"
+		]
+	},
+	"confirmaccount-newrequests": "'''$1''' bukas na e-liham ang natiyak [[Special:ConfirmAccounts|ang akawnt na {{PLURAL:$1|hiniling ay nakabinbin|mga hiniling ay nakabinbin}}]]. '''Kailangan ang pagpansin mo!'''",
+	"requestaccount-loginnotice": "Upang makatanggap ng isang akawnt ng tagagamit, dapat kang '''[[Special:RequestAccount|humiling ng isa]]'''.",
+	"right-confirmaccount": "Tingnan ang [[Special:ConfirmAccounts|pila na may hinihiling na mga akawnt]]",
+	"right-requestips": "Tingnan ang mga adres ng IP ng humihiling habang isinasagawa ang hinihiling na mga akawnt",
+	"right-lookupcredentials": "Tingnan ang [[Special:UserCredentials|mga kredensyal ng tagagamit]]"
 }

@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Meursault2004",
-            "Pras"
-        ]
-    },
-    "usercredentials-user": "Jeneng panganggo:",
-    "usercredentials-leg-user": "Rékening panganggo",
-    "usercredentials-leg-person": "Informasi pribadi",
-    "usercredentials-leg-other": "Informasi liya",
-    "usercredentials-email": "E-mail:",
-    "usercredentials-real": "Jeneng asli:",
-    "usercredentials-bio": "Biografi:",
-    "usercredentials-attach": "Babad slira/CV:",
-    "usercredentials-notes": "Cathetan tambahan:",
-    "usercredentials-urls": "Daftar situs-situs wèb:",
-    "usercredentials-ip": "Alamat IP asli:",
-    "usercredentials-member": "Hak-hak:"
+	"@metadata": {
+		"authors": [
+			"Meursault2004",
+			"Pras"
+		]
+	},
+	"usercredentials-user": "Jeneng panganggo:",
+	"usercredentials-leg-user": "Rékening panganggo",
+	"usercredentials-leg-person": "Informasi pribadi",
+	"usercredentials-leg-other": "Informasi liya",
+	"usercredentials-email": "E-mail:",
+	"usercredentials-real": "Jeneng asli:",
+	"usercredentials-bio": "Biografi:",
+	"usercredentials-attach": "Babad slira/CV:",
+	"usercredentials-notes": "Cathetan tambahan:",
+	"usercredentials-urls": "Daftar situs-situs wèb:",
+	"usercredentials-ip": "Alamat IP asli:",
+	"usercredentials-member": "Hak-hak:"
 }

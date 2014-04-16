@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "requestaccount-loginnotice": "Da biste korisnički račun, morate '''[[Special:RequestAccount|zahtijevati jedan]]'''."
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"requestaccount-loginnotice": "Da biste korisnički račun, morate '''[[Special:RequestAccount|zahtijevati jedan]]'''."
 }

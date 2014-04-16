@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Armando-Martin",
-            "BicScope",
-            "Crazymadlover",
-            "Fitoschido",
-            "Imre",
-            "Lin linao",
-            "Locos epraix",
-            "Pertile",
-            "Sanbec",
-            "Translationista"
-        ]
-    },
-    "confirmaccount-newrequests": "'''$1''' correo electrónico abierto ha confirmado que [[Special:ConfirmAccounts|{{PLURAL:$1|solicitud de cuenta está pendiente|solicitudes de cuenta están pendientes}}]]. '''Se necesita su atención!'''",
-    "requestaccount-loginnotice": "Para obtener una cuenta de usuario, debes '''[[Special:RequestAccount|solicitar una]]'''.",
-    "right-confirmaccount": "Consulte la [[Special:ConfirmAccounts|cola de solicitudes de cuenta]]",
-    "right-requestips": "Ver la dirección IP del solicitante mientras se procesan las solicitudes de cuenta",
-    "right-lookupcredentials": "Ver las [[Special:UserCredentials|credenciales del usuario]]"
+	"@metadata": {
+		"authors": [
+			"Armando-Martin",
+			"BicScope",
+			"Crazymadlover",
+			"Fitoschido",
+			"Imre",
+			"Lin linao",
+			"Locos epraix",
+			"Pertile",
+			"Sanbec",
+			"Translationista"
+		]
+	},
+	"confirmaccount-newrequests": "'''$1''' correo electrónico abierto ha confirmado que [[Special:ConfirmAccounts|{{PLURAL:$1|solicitud de cuenta está pendiente|solicitudes de cuenta están pendientes}}]]. '''Se necesita su atención!'''",
+	"requestaccount-loginnotice": "Para obtener una cuenta de usuario, debes '''[[Special:RequestAccount|solicitar una]]'''.",
+	"right-confirmaccount": "Consulte la [[Special:ConfirmAccounts|cola de solicitudes de cuenta]]",
+	"right-requestips": "Ver la dirección IP del solicitante mientras se procesan las solicitudes de cuenta",
+	"right-lookupcredentials": "Ver las [[Special:UserCredentials|credenciales del usuario]]"
 }

@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Geitost"
-        ]
-    },
-    "confirmaccount-spam": "Spam (kein E-Mail verschicken)",
-    "confirmaccount-reason": "Begründung (wird in das E-Mail an den Antragsteller eingefügt):"
+	"@metadata": {
+		"authors": [
+			"Geitost"
+		]
+	},
+	"confirmaccount-spam": "Spam (kein E-Mail verschicken)",
+	"confirmaccount-reason": "Begründung (wird in das E-Mail an den Antragsteller eingefügt):"
 }
