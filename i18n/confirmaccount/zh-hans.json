@@ -81,7 +81,7 @@
 	"confirmaccount-acc": "账户请求已经成功确认；已经创建一个新的用户帐号[[User:$1]]。",
 	"confirmaccount-rej": "账户请求已经成功拒绝。",
 	"confirmaccount-viewing": "（目前正由[[User:$1|$1]]浏览）",
-	"confirmaccount-summary": "新用户创建用户页",
+	"confirmaccount-summary": "为新用户创建用户页面。",
 	"confirmaccount-welc": "'''欢迎来到''{{SITENAME}}''！'''\n我们希望您会作出更多更好的贡献。\n您可能想先阅读一下[[{{MediaWiki:Helppage}}|帮助页面]]。\n再次欢迎您，祝您愉快！",
 	"confirmaccount-wsum": "欢迎！",
 	"confirmaccount-email-subj": "{{SITENAME}}账户请求",
