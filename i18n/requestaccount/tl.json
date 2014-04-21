@@ -7,7 +7,7 @@
 		]
 	},
 	"requestaccount": "Hilingin ang account",
-	"requestaccount-text": "'''Punuan at ipasa ang sumusunod na pormularyo upang humiling ng isang kuwenta ng tagagamit'''.\n\nTiyaking nabasa mo na muna ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Paglilingkod]] bago humiling ng isang kuwenta.\n\nKapag napahintulutan na ang kuwenta, padadalhan ka ng isang mensahe ng pagbibigay-alam sa pamamagitan ng isang e-liham at magagamit na ang kuwenta sa [[Special:UserLogin|paglagda]].",
+	"requestaccount-text": "'''Punuan at ipasa ang sumusunod na form upang humiling ng isang account ng tagagamit'''.\n\nTiyaking nabasa mo na muna ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Serbisyo]] bago humiling ng isang account.\n\nKapag napahintulutan na ang account, padadalhan ka ng isang mensahe ng pagbibigay-alam sa pamamagitan ng isang e-mail at magagamit na ang account sa [[Special:UserLogin|pag-login]].",
 	"requestaccount-footer": "",
 	"requestaccount-page": "{{ns:project}}:Mga Patakaran ng Paglilingkod",
 	"requestaccount-dup": "'''Paunawa: Nakalagda ka na gamit ang isang nakatalang account.'''",
@@ -35,16 +35,16 @@
 	"requestaccount-agree": "Dapat mong patunayan na tama ang tunay mong pangalan at pumapayag ka sa aming Mga Patakaran ng Paglilingkod.",
 	"requestaccount-inuse": "Ginagamit na ang pangalan ng tagagamit sa isang naghihintay na paghiling ng akawt.",
 	"requestaccount-tooshort": "Ang talambuhay mo ay dapat na hindi bababa sa $1 {{PLURAL:$1|salita|mga salita}} ang haba.",
-	"requestaccount-emaildup": "Isang naghihintay na kahilingan ng akawnt ang gumagamit ng katulad na adres ng e-liham.",
+	"requestaccount-emaildup": "Isang naghihintay na kahilingan ng account ang gumagamit ng katulad na email address.",
 	"requestaccount-exts": "Hindi pinapayagan ang uri ng nakalakip na talaksan",
 	"requestaccount-resub": "Dapat na muling piliin ang iyong talaan ng karanasan sa hanapbuhay para sa mga kadahilanang pangkaligtasan.\nIwanang walang laman ang hanay kung hindi mo na ninanais magsama ng isa.",
 	"requestaccount-tos": "Nabasa ko na at sumasang-ayong susundin ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Paglilingkod]] ng {{SITENAME}}.\nSa katunayan, ang pangalang tinukoy ko sa ilalim ng \"Totoong pangalan\" ay ang talagang sarili kong totoong pangalan.",
-	"requestaccount-submit": "Hilingin ang akawnt",
-	"requestaccount-sent": "Matagumpay na naipadala ang paghiling mo ng akawnt at naghihintay na ngayon ng pagsusuri.\nNagpadala na ng isang e-liham ng pagpapatotoo sa iyong adres ng e-liham.",
-	"request-account-econf": "Natiyak na ang iyong adres ng e-liham at itatala bilang ganyan sa loob ng paghiling mo ng akawnt.",
+	"requestaccount-submit": "Hilingin ang account",
+	"requestaccount-sent": "Matagumpay na naipadala ang paghiling mo ng account at naghihintay na ngayon ng pagsusuri.\nNagpadala na ng isang e-mail ng pagpapatotoo sa iyong email address.",
+	"request-account-econf": "Natiyak na ang iyong email address at itatala bilang ganyan sa loob ng paghiling mo ng account.",
 	"requestaccount-email-subj": "Pagtitiyak ng {{SITENAME}} sa adres ng e-liham",
-	"requestaccount-email-body": "May isa, marahil ikaw na nagmula sa adres ng IP na $1, ang humiling ng isang kuwentang \"$2\" na may ganitong adres ng e-liham sa {{SITENAME}}.\n\nUpang patotohanan na talagang ikaw ang may-ari ng akawnt na itong nasa {{SITENAME}}, buksan ang kawing na ito sa iyong pantingin-tingin (''browser''):\n\n$3\n\nKapag nalikha na ang akawnt, sa iyo lamang ipapadala ang hudyat sa pamamagitan ng e-liham.\nKung *hindi* ikaw ito, huwag sundan ang kawing.\nMawawalan ng bisa ang kodigo ng pagpapatotoong ito sa $4.",
-	"requestaccount-email-subj-admin": "Paghiling ng akawnt sa {{SITENAME}}",
-	"requestaccount-email-body-admin": "Humiling si \"$1\" ng isang akawnt at naghihintay ng pagtitiyak.\nNatiyak na ang adres ng e-liham. Matitiyak mo ang kahilingan mula dito \"$2\".",
-	"acct_request_throttle_hit": "Paumanhin, nakahiling ka na ng {{PLURAL:$1|1 akawnt|$1 mga akawnt}}."
+	"requestaccount-email-body": "May isang tao, marahil ikaw na nagmula sa IP address na $1, ang humiling ng isang account na \"$2\" na may ganitong email address sa {{SITENAME}}.\n\nUpang patotohanan na talagang ikaw ang may-ari ng account na itong nasa {{SITENAME}}, buksan ang kawing na ito sa iyong browser:\n\n$3\n\nKapag nalikha na ang account, sa iyo lamang ipapadala ang password sa pamamagitan ng email.\nKung *hindi* ikaw ito, huwag sundan ang link.\nMawawalan ng bisa ang kodigo ng pagpapatotoong ito sa $4.",
+	"requestaccount-email-subj-admin": "Paghiling ng account sa {{SITENAME}}",
+	"requestaccount-email-body-admin": "Humiling si \"$1\" ng isang account at naghihintay ng pagtitiyak.\nNatiyak na ang email address. Matitiyak mo ang kahilingan mula dito \"$2\".",
+	"acct_request_throttle_hit": "Paumanhin, nakahiling ka na ng {{PLURAL:$1|1 account|$1 mga account}}."
 }
