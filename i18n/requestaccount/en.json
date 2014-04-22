@@ -3,6 +3,7 @@
         "authors": []
     },
     "requestaccount": "Request account",
+    "requestaccount-login": "Request account",
     "requestaccount-text": "'''Complete and submit the following form to request a user account'''.\n\nMake sure that you first read the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] before requesting an account.\n\nOnce the account is approved, you will be emailed a notification message and the account will be usable at [[Special:UserLogin|login]].",
     "requestaccount-footer": "",
     "requestaccount-page": "{{ns:project}}:Terms of Service",
