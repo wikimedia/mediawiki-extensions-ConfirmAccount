@@ -63,7 +63,7 @@
 	"confirmaccount-noreason": "(nessuno)",
 	"confirmaccount-autorej": "(questa richiesta è stata eliminata automaticamente a causa dell'inattività)",
 	"confirmaccount-held": "({{GENDER:$1|indicato}} come \"trattenuto\" da [[User:$1|$1]] il $3 alle $4)",
-	"confirmaccount-create": "Accetta (crea account)",
+	"confirmaccount-create": "Accetta (crea utenza)",
 	"confirmaccount-deny": "Rifiuta (rimuovi dalla lista)",
 	"confirmaccount-hold": "Ferma",
 	"confirmaccount-spam": "Spam (non inviare e-mail)",
