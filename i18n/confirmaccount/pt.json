@@ -80,7 +80,7 @@
 	"confirmaccount-acc": "Pedido de conta confirmado; foi criada a nova conta de utilizador [[User:$1|$1]].",
 	"confirmaccount-rej": "Pedido de conta rejeitado.",
 	"confirmaccount-viewing": "(a {{GENDER:$1|ser}} visto neste momento por [[User:$1|$1]])",
-	"confirmaccount-summary": "Criar página de utilizador com biografia de novo utilizador.",
+	"confirmaccount-summary": "A criar página de utilizador para novo utilizador.",
 	"confirmaccount-welc": "'''Bem-vindo(a) à ''{{SITENAME}}''!'''\nEsperamos que contribua muito e bem.\nProvavelmente quererá ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]].\nMais uma vez, seja bem-vindo(a) e divirta-se!",
 	"confirmaccount-wsum": "Bem-vindo(a)!",
 	"confirmaccount-email-subj": "Pedido de conta em {{SITENAME}}",
