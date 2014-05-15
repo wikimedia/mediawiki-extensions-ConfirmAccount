@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mark85296341",
-			"Waihorace"
+			"Waihorace",
+			"Justincheng12345"
 		]
 	},
 	"requestaccount": "請求帳戶",
@@ -14,7 +15,7 @@
 	"requestaccount-leg-person": "個人資訊",
 	"requestaccount-leg-other": "其他資訊",
 	"requestaccount-leg-tos": "服務條款",
-	"requestaccount-acc-text": "當完成請求時，一封確認訊息會發到您的電郵位址。\n\t請在該封電郵中點擊確認連結去回應它。同時，當您的帳戶被創建後，您帳戶的個密碼將會電郵給您。",
+	"requestaccount-acc-text": "當完成請求時，一封確認訊息會發到您的電郵位址。該位址不會公開。請在該封電郵中點擊確認連結以作回應。同時，當您的帳戶被創建後，您帳戶的密碼將會以電郵傳送給您。",
 	"requestaccount-areas-text": "在下面選擇你最專業的或者最感興趣的話題。",
 	"requestaccount-ext-text": "以下的資料將會保密，而且只是會用在這次請求中。\n\t您可能需要列示聯絡資料，像電話號碼等去幫助證明您的確認。",
 	"requestaccount-bio-text": "您傳記將會設定成在您用戶頁中的預設內容，嘗試包含証明。",
