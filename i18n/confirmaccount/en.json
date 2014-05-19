@@ -72,7 +72,7 @@
     "confirmaccount-rej": "Account request rejected successfully.",
     "confirmaccount-viewing": "(currently {{GENDER:$1|being}} viewed by [[User:$1|$1]])",
     "confirmaccount-summary": "Creating user page for new user.",
-    "confirmaccount-welc": "'''Welcome to ''{{SITENAME}}''!'''\nWe hope you will contribute much and well.\nYou will probably want to read the [[{{MediaWiki:Helppage}}|help pages]].\nAgain, welcome and have fun!",
+    "confirmaccount-welc": "'''Welcome to ''{{SITENAME}}''!'''\nWe hope you will contribute much and well.\nYou will probably want to read the [{{MediaWiki:Helppage}} help pages].\nAgain, welcome and have fun!",
     "confirmaccount-wsum": "Welcome!",
     "confirmaccount-email-subj": "{{SITENAME}} account request",
     "confirmaccount-email-body": "Your request for an account has been approved on {{SITENAME}}.\n\nAccount name: $1\n\nPassword: $2\n\nFor security reasons you will need to change your password on first login.\nTo login, please go to {{fullurl:Special:UserLogin}}.",
