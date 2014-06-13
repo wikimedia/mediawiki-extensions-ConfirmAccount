@@ -17,6 +17,7 @@
 		]
 	},
 	"requestaccount": "Benutzerkonto beantragen",
+	"requestaccount-login": "Benutzerkonto beantragen",
 	"requestaccount-text": "'''Fülle das folgende Formular aus und schick es ab, um ein Benutzerkonto zu beantragen.'''\n\nBitte lies zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor du ein Benutzerkonto beantragst.\n\nSobald das Konto bestätigt wurde, wirst du per E-Mail benachrichtigt und du kannst dich [[Special:UserLogin|anmelden]].",
 	"requestaccount-page": "{{ns:project}}:Nutzungsbedingungen",
 	"requestaccount-dup": "'''Achtung: Du bist bereits mit einem registrierten Benutzerkonto angemeldet.'''",
