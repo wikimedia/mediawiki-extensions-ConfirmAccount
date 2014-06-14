@@ -10,6 +10,7 @@
 		]
 	},
 	"requestaccount": "アカウント登録申請",
+	"requestaccount-login": "アカウント申請",
 	"requestaccount-text": "'''利用者アカウントを申請する方は、以下の項目を記入して送信してください'''\n\nアカウント申請の前に、[[{{MediaWiki:Requestaccount-page}}|サービス利用規約]]をお読みください。\n\nアカウントが承認されると、あなたのメールアドレスに通知メッセージが届き、そのアカウントで[[Special:UserLogin|ログイン]]できるようになります。",
 	"requestaccount-page": "{{ns:project}}:サービス利用規約",
 	"requestaccount-dup": "'''注: あなたは登録済みアカウントで既にログインしています。'''",

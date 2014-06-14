@@ -11,6 +11,7 @@
 		]
 	},
 	"requestaccount": "Pedir conta",
+	"requestaccount-login": "Pedir conta",
 	"requestaccount-text": "'''Complete e envie o seguinte formulário para pedir uma conta de utilizador'''.\n\nCertifique-se de que lê primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.\n\nAssim que a conta for aprovada, ser-lhe-á enviada uma mensagem de notificação por correio electrónico e poderá [[Special:UserLogin|autenticar-se]].",
 	"requestaccount-page": "{{ns:project}}:Termos de Serviço",
 	"requestaccount-dup": "'''Nota: Já está autenticado com uma conta registada.'''",

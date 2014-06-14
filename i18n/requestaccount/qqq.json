@@ -14,6 +14,7 @@
 		]
 	},
 	"requestaccount": "{{doc-special|RequestAccount}}\n{{Identical|Request account}}",
+	"requestaccount-login": "{{Identical|Request account}}",
 	"requestaccount-text": "Used as intro text in [[Special:RequestAccount]].\n\nRefers to {{msg-mw|Requestaccount-page}}.",
 	"requestaccount-footer": "{{optional}}",
 	"requestaccount-page": "Used as link target in the following messages:\n* {{msg-mw|Requestaccount-text}}\n* {{msg-mw|Requestaccount-tos}}",
