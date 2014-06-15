@@ -7,10 +7,12 @@
 			"Mark85296341",
 			"TianyinLee",
 			"Wilsonmess",
-			"Xiaomingyan"
+			"Xiaomingyan",
+			"Bluedeck"
 		]
 	},
 	"requestaccount": "请求账户",
+	"requestaccount-login": "请求账户",
 	"requestaccount-text": "'''完成并递交下述表格，以请求用户账户'''。\n\n请确认您在请求账户之前，预先阅读过[[{{MediaWiki:Requestaccount-page}}|服务细则]]。\n\n一旦该账户获得批准，您将会收到一个电邮通知信息，该账户就可以在[[Special:UserLogin|登录页面]]中使用。",
 	"requestaccount-page": "{{ns:project}}:服务条款",
 	"requestaccount-dup": "'''注意: 您已经登入成一个已注册的账户。'''",
