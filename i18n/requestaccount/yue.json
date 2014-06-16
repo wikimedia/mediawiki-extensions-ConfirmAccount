@@ -1,6 +1,11 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Kc kennylau"
+		]
+	},
 	"requestaccount": "請求戶口",
+	"requestaccount-login": "請求戶口",
 	"requestaccount-text": "'''完成並遞交下面嘅表格去請求一個用戶戶口'''。\n\n\t請確認你響請求一個戶口之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。\n\n\t一旦個戶口批准咗，你將會收到一個電郵通知訊息，噉個戶口就可以響[[Special:Userlogin]]度用。",
 	"requestaccount-dup": "'''留意: 你已經登入咗做一個已經註冊咗嘅戶口。'''",
 	"requestaccount-acc-text": "當完成請求時，一封確認訊息會發到你嘅電郵地址。\n\t請響封電郵度撳個確認連結去回應佢。同時，當你個戶口開咗之後，你戶口個密碼將會電郵畀你。",

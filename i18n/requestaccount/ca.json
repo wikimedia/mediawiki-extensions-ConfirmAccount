@@ -6,10 +6,12 @@
 			"Loupeter",
 			"Paucabot",
 			"SMP",
-			"Solde"
+			"Solde",
+			"Fitoschido"
 		]
 	},
 	"requestaccount": "Sol·licita un compte",
+	"requestaccount-login": "Sol·licita un compte",
 	"requestaccount-leg-user": "Compte de l'usuari",
 	"requestaccount-leg-person": "Informació personal",
 	"requestaccount-leg-other": "Altres informacions",

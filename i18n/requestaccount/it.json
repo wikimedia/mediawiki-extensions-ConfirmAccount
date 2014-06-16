@@ -10,6 +10,7 @@
 		]
 	},
 	"requestaccount": "Richiesta account",
+	"requestaccount-login": "Richiesta account",
 	"requestaccount-text": "'''Completa e invia il seguente modulo per richiedere un account utente'''.\n\nAssicurarsi di aver prima letto i [[{{MediaWiki:Requestaccount-page}}|Termini del Servizio]] prima di richiedere un account.\n\nQuando l'account sarà stato approvato, ti verrà inviato via e-mail un messaggio di notifica e l'account sarà utilizzabile al [[Special:UserLogin|login]].",
 	"requestaccount-page": "{{ns:project}}:Termini del Servizio",
 	"requestaccount-dup": "'''Nota: hai già effettuato l'accesso con un account registrato.'''",

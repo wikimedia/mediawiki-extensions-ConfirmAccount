@@ -18,6 +18,7 @@
 		]
 	},
 	"requestaccount": "Demande de compte utilisateur",
+	"requestaccount-login": "Demander un compte",
 	"requestaccount-text": "'''Remplissez et envoyez le formulaire ci-dessous pour demander un compte d’utilisateur'''. \n\t\nAssurez-vous d'avoir lu [[{{MediaWiki:Requestaccount-page}}|les conditions d’utilisation]] avant de faire votre demande de compte.\n\t\nUne fois que le compte est accepté, vous recevrez un courriel de notification et votre compte pourra être utilisé sur [[Special:UserLogin|la page de connexion]].",
 	"requestaccount-page": "{{ns:project}}:Conditions d'utilisation",
 	"requestaccount-dup": "'''Note : Vous êtes déjà sur une session avec un compte enregistré.'''",
