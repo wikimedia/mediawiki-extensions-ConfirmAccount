@@ -74,7 +74,7 @@
 	"confirmaccount-rej": "Distaolet eo bet ar goulenn kont.",
 	"confirmaccount-viewing": "(gwelet gant [[User:$1|$1]] evit bremañ)",
 	"confirmaccount-summary": "O krouiñ pajenn implijer un implijer nevez.",
-	"confirmaccount-welc": "'''Degemer mat e ''{{SITENAME}}''!'''\nSpi hon eus e kemerot perzh da vat ha mat.\nMarteze hoc'h eus c'hoant da lenn ar [[{{MediaWiki:Helppage}}|pajennoù skoazell]].\nAdarre, degemer mat ha plijadur deoc'h !",
+	"confirmaccount-welc": "'''Degemer mat e ''{{SITENAME}}''!'''\nSpi hon eus e kemerot perzh da vat ha mat.\nMarteze hoc'h eus c'hoant da lenn ar [{{MediaWiki:Helppage}} pajennoù skoazell].\nAdarre, degemer mat ha plijadur deoc'h !",
 	"confirmaccount-wsum": "Degemer mat !",
 	"confirmaccount-email-subj": "Goulenn ur gont war {{SITENAME}}",
 	"confirmaccount-email-body": "Ho koulenn kont zo bet aprouet e {{SITENAME}}.\n\nAnv ar gont : $1\n\nGer-tremen : $2\n\nAbalamour d'ar surentez e tleot cheñch ho ker-tremen pa gevreot evit ar wech kentañ.\nEvit kevreañ, kit da {{fullurl:Special:UserLogin}}, mar plij.",

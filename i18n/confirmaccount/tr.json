@@ -5,7 +5,8 @@
 			"Karduelis",
 			"Mach",
 			"Suelnur",
-			"Vito Genovese"
+			"Vito Genovese",
+			"Sayginer"
 		]
 	},
 	"confirmaccounts": "Hesap isteklerini onayla",
@@ -41,6 +42,7 @@
 	"confirmaccount-leg-areas": "Ana ilgi alanları",
 	"confirmaccount-leg-person": "Kişisel bilgiler",
 	"confirmaccount-leg-other": "Diğer bilgiler",
+	"confirmaccount-leg-ip": "IP adres verisi",
 	"confirmaccount-name": "Kullanıcı adı",
 	"confirmaccount-real": "Adı:",
 	"confirmaccount-email": "E-posta:",
@@ -73,7 +75,7 @@
 	"confirmaccount-rej": "Hesap isteği başarıyla reddedildi.",
 	"confirmaccount-viewing": "(şu an [[User:$1|$1]] tarafından inceleniyor)",
 	"confirmaccount-summary": "Yeni kullanıcının biyografisi ile kullanıcı sayfası oluşturuluyor.",
-	"confirmaccount-welc": "'''''{{SITENAME}}'' projesine hoş geldiniz!'''\nUzun sürede çok katkı yapmanızı umarız.\nMuhtemelen [[{{MediaWiki:Helppage}}|yardım sayfalarını]] okumak isteyeceksiniz.\nTekrar hoş geldiniz, iyi eğlenceler!",
+	"confirmaccount-welc": "'''''{{SITENAME}}'' projesine hoş geldiniz!'''\nUzun sürede çok katkı yapmanızı umarız.\nMuhtemelen [{{MediaWiki:Helppage}} yardım sayfalarını] okumak isteyeceksiniz.\nTekrar hoş geldiniz, iyi eğlenceler!",
 	"confirmaccount-wsum": "Hoşgeldiniz!",
 	"confirmaccount-email-subj": "{{SITENAME}} hesap isteği",
 	"confirmaccount-email-body": "{{SITENAME}} üzerindeki hesap isteğiniz onaylandı.\n\nHesap adı: $1\n\nParola: $2\n\nGüvenlik nedeniyleriyle ilk oturum açışınızda parolanızı değiştirmeniz gerekecek.\nOturum açmak için, lütfen {{fullurl:Special:UserLogin}} sayfasını ziyaret edin.",

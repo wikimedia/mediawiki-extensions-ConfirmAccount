@@ -79,7 +79,7 @@
 	"confirmaccount-rej": "درخواست حساب با موفقیت رد شد.",
 	"confirmaccount-viewing": "(currently {{GENDER:$1|being}} مشاهده شده توسط [[User:$1|$1]])",
 	"confirmaccount-summary": "ایجاد صفحه کاربری برای کاربر جدید.",
-	"confirmaccount-welc": "'''به ''{{SITENAME}}'' خوش آمدید!'''\nامیدواریم که شما بیشتر و بهتر کمک شوید.\nممکن است شما بخواهید [[{{MediaWiki:Helppage}}|help pages]] را بخوانید.\nمجدداً خوش آمدید و لحظات خوبی داشته باشید!",
+	"confirmaccount-welc": "'''به ''{{SITENAME}}'' خوش آمدید!'''\nامیدواریم که شما بیشتر و بهتر کمک شوید.\nممکن است شما بخواهید [{{MediaWiki:Helppage}} help pages] را بخوانید.\nمجدداً خوش آمدید و لحظات خوبی داشته باشید!",
 	"confirmaccount-wsum": "خوش‌آمدید!",
 	"confirmaccount-email-subj": "{{SITENAME}} درخواست حساب کاربری",
 	"confirmaccount-email-body": "درخواست شما برای یک حساب کاربری در {{SITENAME}} تأیید شده‌است.\nنام حساب: $1 \nرمز عبور: $2 \nبرای دلایل امنیتی، شما باید در اولین ورود به سامانه رمز خود را تغییر دهید.\nبرای ورود لطفاً به {{fullurl:Special:UserLogin}} بروید.",

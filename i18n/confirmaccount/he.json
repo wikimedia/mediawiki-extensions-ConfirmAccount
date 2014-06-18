@@ -78,7 +78,7 @@
 	"confirmaccount-rej": "בקשת החשבון נדחתה בהצלחה.",
 	"confirmaccount-viewing": "(הבקשה נצפית כרגע בידי [[User:$1|$1]])",
 	"confirmaccount-summary": "יצירת דף משתמש למשתמש חדש",
-	"confirmaccount-welc": "'''ברוכים הבאים לאתר ''{{SITENAME}}''!'''\nאנו מקווים שתרומותיכם יהיו רבות וטובות.\nכנראה כדאי שתקראו עכשיו את [[{{MediaWiki:Helppage}}|דפי העזרה]].\nושוב, ברוכים הבאים, תיהנו!",
+	"confirmaccount-welc": "'''ברוכים הבאים לאתר ''{{SITENAME}}''!'''\nאנו מקווים שתרומותיכם יהיו רבות וטובות.\nכנראה כדאי שתקראו עכשיו את [{{MediaWiki:Helppage}} דפי העזרה].\nושוב, ברוכים הבאים, תיהנו!",
 	"confirmaccount-wsum": "ברוכים הבאים!",
 	"confirmaccount-email-subj": "בקשת חשבון באתר {{SITENAME}}",
 	"confirmaccount-email-body": "בקשתך לקבלת חשבון אושרה באתר {{SITENAME}}.\n\nשם החשבון: $1\n\nסיסמה: $2\n\nמטעמי אבטחה עליכם לשנות את סיסמתכם עם כניסתכם הראשונה.\nכדי להכנס, אנא עברו לכתובת {{fullurl:Special:UserLogin}}.",

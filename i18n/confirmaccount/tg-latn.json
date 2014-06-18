@@ -41,7 +41,7 @@
 	"confirmaccount-rej": "Darxosti hisob bo muvaffaqijat rad karda şud.",
 	"confirmaccount-viewing": "(holo dar holi didan ast tavassuti [[User:$1|$1]])",
 	"confirmaccount-summary": "Dar holi eçodi sahifai korbarī bo zindaginomai korbari çadid.",
-	"confirmaccount-welc": "'''Xuş omaded ba ''{{SITENAME}}''!''' Mo umedvorem, ki şumo bisjor va xub hissaguzorī xohed kard.\nŞumo ehtimolan mexohed [[{{MediaWiki:Helppage}}|sahifahoi rohnamoro]] bixoned. Bori digar, xuş omaded va şod boşed!",
+	"confirmaccount-welc": "'''Xuş omaded ba ''{{SITENAME}}''!''' Mo umedvorem, ki şumo bisjor va xub hissaguzorī xohed kard.\nŞumo ehtimolan mexohed [{{MediaWiki:Helppage}} sahifahoi rohnamoro] bixoned. Bori digar, xuş omaded va şod boşed!",
 	"confirmaccount-wsum": "Xuş omaded!",
 	"confirmaccount-email-subj": "{{SITENAME}} darxosti korbar",
 	"confirmaccount-email-body": "Darxosti şumo baroi hisobe dar {{SITENAME}} tasdiq şud.\n\nNomi hisob: $1\n\nGuzarvoƶa: $2\n\nAz sababhoi amnijatī, şumo bojad dar vurudşvaiji avvalin guzarvoƶai xudro taƣjir dihed.\nBaroi vurud şudan, lutfan raved ba {{fullurl:Special:UserLogin}}.",

@@ -76,7 +76,7 @@
 	"confirmaccount-rej": "Matagumpay na natanggihan ang paghiling ng account.",
 	"confirmaccount-viewing": "(kasalukuyang tinitingnan ni [[User:$1|$1]])",
 	"confirmaccount-summary": "Nililikha ang pahina ng tagagamit para sa bagong tagagamit.",
-	"confirmaccount-welc": "'''Maligayang pagdating sa ''{{SITENAME}}''!'''\nUmaasa kaming mag-aambag ka ng marami at kapakipakinabang.\nMarahil ay nanaisin mong basahin ang [[{{MediaWiki:Helppage}}|mga pahinang pantulong]].\nMuli, maligayang pagdating at nawa'y malibang ka!",
+	"confirmaccount-welc": "'''Maligayang pagdating sa ''{{SITENAME}}''!'''\nUmaasa kaming mag-aambag ka ng marami at kapakipakinabang.\nMarahil ay nanaisin mong basahin ang [{{MediaWiki:Helppage}} mga pahinang pantulong].\nMuli, maligayang pagdating at nawa'y malibang ka!",
 	"confirmaccount-wsum": "Maligayang pagdating!",
 	"confirmaccount-email-subj": "Paghiling ng account sa {{SITENAME}}",
 	"confirmaccount-email-body": "Ang kahilingan mong magkaroon ng isang account ay pinayagan na sa {{SITENAME}}.\n\nPangalan ng account: $1\n\nPassword: $2\n\nDahil sa mga kadahilanang pangkaligtasan, kailangan mong baguhin ang iyong password sa una mong pag-login.\nUpang maka-login, pakipuntahan ang {{fullurl:Special:UserLogin}}.",

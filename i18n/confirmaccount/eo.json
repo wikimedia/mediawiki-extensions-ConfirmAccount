@@ -49,7 +49,7 @@
 	"confirmaccount-needreason": "Vi devas enigi kialon en la suba komentskatolo.",
 	"confirmaccount-viewing": "(nune okulumis uzanto [[User:$1|$1]])",
 	"confirmaccount-summary": "Kreado de uzanto-paĝo por nova uzanto.",
-	"confirmaccount-welc": "'''Bonvenon al ''{{SITENAME}}''!''' Ni esperas ke vi kontribuos multe kaj bone.\nVi verŝajne volos legi la [[{{MediaWiki:Helppage}}|helpo-paĝoj]]. Denove, bonvenon kaj amuziĝu!",
+	"confirmaccount-welc": "'''Bonvenon al ''{{SITENAME}}''!''' Ni esperas ke vi kontribuos multe kaj bone.\nVi verŝajne volos legi la [{{MediaWiki:Helppage}} helpo-paĝoj]. Denove, bonvenon kaj amuziĝu!",
 	"confirmaccount-wsum": "Bonvenon!",
 	"confirmaccount-email-subj": "peto de konto ĉe {{SITENAME}}",
 	"confirmaccount-email-body": "Via peto por konto estis aprobita ĉe {{SITENAME}}.\n\nNomo de konto: $1\n\nPasvorto: $2\n\nPor sekurecaj kialoj vi devas ŝanĝi vian pasvorton dum unua ensaluto. Por ensaluti, bonvolu iri al {{fullurl:Special:UserLogin}}.",

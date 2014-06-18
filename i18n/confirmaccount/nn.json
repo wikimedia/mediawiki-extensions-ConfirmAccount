@@ -71,7 +71,7 @@
 	"confirmaccount-rej": "Kontoførespurnad avvist.",
 	"confirmaccount-viewing": "(vert no gått gjennom av [[User:$1|$1]])",
 	"confirmaccount-summary": "Opprettar brukarsida med biografi for den nye brukaren.",
-	"confirmaccount-welc": "'''Velkomen til ''{{SITENAME}}''!''' Me vonar at du vil bidra mykje og bra. Du ønskjer truleg å lesa [[{{MediaWiki:Helppage}}|hjelpesidene]]. Igjen, velkomen, og mor deg!",
+	"confirmaccount-welc": "'''Velkomen til ''{{SITENAME}}''!''' Me vonar at du vil bidra mykje og bra. Du ønskjer truleg å lesa [{{MediaWiki:Helppage}} hjelpesidene]. Igjen, velkomen, og mor deg!",
 	"confirmaccount-wsum": "Velkomen!",
 	"confirmaccount-email-subj": "Kontoførespurnad på {{SITENAME}}",
 	"confirmaccount-email-body": "Førespurnaden din om ein konto på {{SITENAME}} har vorten godkjend.\n\nKontonamn: $1\n\nPassord: $2\n\nAv tryggingsårsaker lyt du endra passordet etter fyrste innlogging. Gå til {{fullurl:Special:UserLogin}} for å logga inn.",

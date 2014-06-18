@@ -68,7 +68,7 @@
 	"confirmaccount-rej": "طلب الحساب تم رفضه بنجاح.",
 	"confirmaccount-viewing": "(حاليا يتم مراجعته بواسطة [[User:$1|$1]])",
 	"confirmaccount-summary": "إنشاء صفحة المستخدم مع سيرة المستخدم الجديد.",
-	"confirmaccount-welc": "'''مرحبا إلى ''{{SITENAME}}''!'''\nنأمل أن تساهم كثيرا وجيدا.\nعلى الأرجح ستريد قراءة [[{{MediaWiki:Helppage}}|البداية]].\nمجددا، مرحبا واستمتع!",
+	"confirmaccount-welc": "'''مرحبا إلى ''{{SITENAME}}''!'''\nنأمل أن تساهم كثيرا وجيدا.\nعلى الأرجح ستريد قراءة [{{MediaWiki:Helppage}} البداية].\nمجددا، مرحبا واستمتع!",
 	"confirmaccount-wsum": "مرحبا!",
 	"confirmaccount-email-subj": "{{SITENAME}} طلب حساب",
 	"confirmaccount-email-body": "طلبك لحساب تمت الموافقة عليه فى {{SITENAME}}.\n\nاسم الحساب: $1\n\nكلمة السر: $2\n\nلمتطلبات السرية ستضطر إلى تغيير كلمة السر الخاصة بك عند أول دخول. للدخول، من فضلك اذهب إلى\n{{fullurl:Special:UserLogin}}.",

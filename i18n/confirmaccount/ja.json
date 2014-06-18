@@ -79,7 +79,7 @@
 	"confirmaccount-rej": "アカウント申請を却下しました。",
 	"confirmaccount-viewing": "(この申請は、現在[[User:$1|$1]]が閲覧{{GENDER:$1|しています}})",
 	"confirmaccount-summary": "新しい利用者の利用者ページを作成します。",
-	"confirmaccount-welc": "'''ようこそ''{{SITENAME}}''へ!'''\n多くの寄稿を心よりお待ち申し上げます。\nサイトでの活動に関しては、[[{{MediaWiki:Helppage}}|ヘルプページ]]をご覧ください。\nそれでは、{{SITENAME}}で楽しいひと時を!",
+	"confirmaccount-welc": "'''ようこそ''{{SITENAME}}''へ!'''\n多くの寄稿を心よりお待ち申し上げます。\nサイトでの活動に関しては、[{{MediaWiki:Helppage}} ヘルプページ]をご覧ください。\nそれでは、{{SITENAME}}で楽しいひと時を!",
 	"confirmaccount-wsum": "ようこそ!",
 	"confirmaccount-email-subj": "{{SITENAME}} のアカウント申請",
 	"confirmaccount-email-body": "{{SITENAME}} でのあなたのアカウント申請を承認しました。\n\n　利用者名: $1\n\nパスワード: $2\n\nセキュリティ上の理由から、初回ログイン時にパスワードを変更する必要があります。\n{{fullurl:Special:UserLogin}} からログインしてください。",

@@ -63,7 +63,7 @@
 	"confirmaccount-badaction": "Sabiex tkompli trid tispeċifika azzjoni valida (aċċetta, irrifjuta, ipposponi).",
 	"confirmaccount-rej": "Ir-rikjesta għal kont ġiet rifjutata b'suċċess.",
 	"confirmaccount-summary": "Ħolqien ta' paġna tal-utent għal utent ġdid.",
-	"confirmaccount-welc": "'''Merħba fuq ''{{SITENAME}}''!'''\nNisperaw li tagħti daqqa t'id tajba.\nProbabbilment trid taqra l-[[{{MediaWiki:Helppage}}|paġni tal-għajnuna]].\nGħal darb'oħra, merħba u ħu gost!",
+	"confirmaccount-welc": "'''Merħba fuq ''{{SITENAME}}''!'''\nNisperaw li tagħti daqqa t'id tajba.\nProbabbilment trid taqra l-[{{MediaWiki:Helppage}} paġni tal-għajnuna].\nGħal darb'oħra, merħba u ħu gost!",
 	"confirmaccount-wsum": "Merħba!",
 	"confirmaccount-email-subj": "Rikjesta għal kont fuq {{SITENAME}}",
 	"confirmaccount-email-body": "Ir-rikjesta tiegħek għal kont ġiet approvata fuq {{SITENAME}}.\n\nL-isem tal-kont: $1\n\nPassword: $2\n\nGħal raġunijiet ta' sigurtà meta tidħol fil-kont inti trid tbiddel il-password.\nBiex tidħol fil-kont, mur fuq {{fullurl:Special:UserLogin}}.",

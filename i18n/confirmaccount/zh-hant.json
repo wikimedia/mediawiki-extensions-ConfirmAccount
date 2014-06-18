@@ -81,7 +81,7 @@
 	"confirmaccount-rej": "帳戶請求已經成功拒絕。",
 	"confirmaccount-viewing": "（目前正由[[User:$1|$1]]瀏覽）",
 	"confirmaccount-summary": "創建新使用者的使用者頁面。",
-	"confirmaccount-welc": "'''歡迎來到''{{SITENAME}}''！'''\n我們希望您會作出更多更好的貢獻。\n您可能想先閱讀一下[[{{MediaWiki:Helppage}}|說明頁面]]。\n再次歡迎您，祝您愉快！",
+	"confirmaccount-welc": "'''歡迎來到''{{SITENAME}}''！'''\n我們希望您會作出更多更好的貢獻。\n您可能想先閱讀一下[{{MediaWiki:Helppage}} 說明頁面]。\n再次歡迎您，祝您愉快！",
 	"confirmaccount-wsum": "歡迎！",
 	"confirmaccount-email-subj": "{{SITENAME}}帳戶請求",
 	"confirmaccount-email-body": "您請求的帳戶已經在{{SITENAME}}中批准。\n\n帳戶名稱: $1\n\n密碼: $2\n\n為了安全性的原故，您需要在一次登入時更改密碼。要登入，請前往{{fullurl:Special:Userlogin}}。",

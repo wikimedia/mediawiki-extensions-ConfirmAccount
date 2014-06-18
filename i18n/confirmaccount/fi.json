@@ -81,7 +81,7 @@
 	"confirmaccount-rej": "Pyynnön hylkääminen onnistui.",
 	"confirmaccount-viewing": "(juuri nyt katseltavana käyttäjällä [[User:$1|$1]])",
 	"confirmaccount-summary": "Luodaan käyttäjäsivu uudelle käyttäjälle.",
-	"confirmaccount-welc": "'''Tervetuloa ''{{SITENAME}}''-sivustolle!''' Toivomme runsasta ja laadukasta kirjoittelua.\nHaluat varmaan lukea [[{{MediaWiki:Helppage}}|ohjesivut]]. Vielä kerran tervetuloa ja pidä hauskaa!",
+	"confirmaccount-welc": "'''Tervetuloa ''{{SITENAME}}''-sivustolle!''' Toivomme runsasta ja laadukasta kirjoittelua.\nHaluat varmaan lukea [{{MediaWiki:Helppage}} ohjesivut]. Vielä kerran tervetuloa ja pidä hauskaa!",
 	"confirmaccount-wsum": "Tervetuloa!",
 	"confirmaccount-email-subj": "Käyttäjätunnuspyyntö sivustolle {{SITENAME}}",
 	"confirmaccount-email-body": "Pyytämäsi käyttäjätunnus sivulle {{SITENAME}} on hyväksytty.\n\nKäyttäjätunnus: $1\n\nSalasana: $2\n\nSalasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:UserLogin}}.",

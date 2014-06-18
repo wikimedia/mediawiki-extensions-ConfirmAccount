@@ -85,7 +85,7 @@
 	"confirmaccount-rej": "Ansökningen har avslagits.",
 	"confirmaccount-viewing": "({{GENDER:$1|granskas}} just nu av [[User:$1|$1]])",
 	"confirmaccount-summary": "Skapar användarsida för en ny användare.",
-	"confirmaccount-welc": "'''Välkommen till ''{{SITENAME}}''!''' Vi hoppas att du kommer skriva många bra bidrag.\nDu kommer formodligen ha nytta av att läsa [[{{MediaWiki:Helppage}}|hjälpsidorna]]. Vi önskar igen välkommen och ha kul!",
+	"confirmaccount-welc": "'''Välkommen till ''{{SITENAME}}''!''' Vi hoppas att du kommer skriva många bra bidrag.\nDu kommer formodligen ha nytta av att läsa [{{MediaWiki:Helppage}} hjälpsidorna]. Vi önskar igen välkommen och ha kul!",
 	"confirmaccount-wsum": "Välkommen!",
 	"confirmaccount-email-subj": "Ansökan om konto på {{SITENAME}}",
 	"confirmaccount-email-body": "Din ansökan om ett konto på {{SITENAME}} har godkänts.\n\nAnvändarnamn: $1\n\nLösenord: $2\n\nAv säkerhetsskäl måste du byta lösenord första gången du loggar in. För att logga in, gå till {{fullurl:Special:UserLogin}}.",

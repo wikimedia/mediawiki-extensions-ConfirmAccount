@@ -83,7 +83,7 @@
 	"confirmaccount-rej": "Odrzucono wniosek o utworzenie konta.",
 	"confirmaccount-viewing": "(aktualnie przeglądany przez użytkownika [[User:$1|$1]])",
 	"confirmaccount-summary": "Tworznie strony użytkownika dla nowego użytkownika.",
-	"confirmaccount-welc": "'''Witaj w ''{{GRAMMAR:N.lp|{{SITENAME}}}}''!''' Mamy nadzieję, że włączysz się aktywnie w tworzenie {{GRAMMAR:D.lp|{{SITENAME}}}}.\nZacznij od zapoznania się ze [[{{MediaWiki:Helppage}}|stronami pomocy]]. Jeszcze raz witamy i życzymy przyjemnej pracy!",
+	"confirmaccount-welc": "'''Witaj w ''{{GRAMMAR:N.lp|{{SITENAME}}}}''!''' Mamy nadzieję, że włączysz się aktywnie w tworzenie {{GRAMMAR:D.lp|{{SITENAME}}}}.\nZacznij od zapoznania się ze [{{MediaWiki:Helppage}} stronami pomocy]. Jeszcze raz witamy i życzymy przyjemnej pracy!",
 	"confirmaccount-wsum": "Witaj!",
 	"confirmaccount-email-subj": "Wniosek o założenie konta użytkownika w {{GRAMMAR:MS.lp|{{SITENAME}}}}",
 	"confirmaccount-email-body": "Złożony przez Ciebie w {{GRAMMAR:N.lp|{{SITENAME}}}} wniosek został zaakceptowany.\n\nNazwa użytkownika: $1\n\nHasło: $2\n\nZ uwagi na bezpieczeństwo użytkowania, przy pierwszym logowaniu zostaniesz poproszony o zmianę hasła.\nZaloguj się na stronie {{fullurl:Special:UserLogin}}.",

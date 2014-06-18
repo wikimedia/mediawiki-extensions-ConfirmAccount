@@ -79,7 +79,7 @@
 	"confirmaccount-rej": "계정 요청이 성공적으로 거부되었습니다.",
 	"confirmaccount-viewing": "(현재 [[User:$1|$1]] 사용자가 {{GENDER:$1|보고 있습니다}})",
 	"confirmaccount-summary": "새 사용자에 대한 사용자 문서를 만듭니다.",
-	"confirmaccount-welc": "'''''{{SITENAME}}''에 오신 것을 환영합니다!'''\n우리는 많이 잘 기여할 수 있기를 바랍니다.\n아마 [[{{MediaWiki:Helppage}}|도움말 문서]]를 읽고 싶어할 것입니다.\n다시, 환영하며 즐겁게 보내세요!",
+	"confirmaccount-welc": "'''''{{SITENAME}}''에 오신 것을 환영합니다!'''\n우리는 많이 잘 기여할 수 있기를 바랍니다.\n아마 [{{MediaWiki:Helppage}} 도움말 문서]를 읽고 싶어할 것입니다.\n다시, 환영하며 즐겁게 보내세요!",
 	"confirmaccount-wsum": "환영합니다!",
 	"confirmaccount-email-subj": "{{SITENAME}} 계정 요청",
 	"confirmaccount-email-body": "{{SITENAME}}에서 당신의 계정 만들기 요청이 승인되었습니다.\n\n계정 이름: $1\n\n비밀번호: $2\n\n보안상의 이유로 인해 첫 로그인 이후 비밀번호를 바꾸어야 합니다.\n로그인하시려면 {{fullurl:Special:UserLogin}} 을 이용해주십시오.",

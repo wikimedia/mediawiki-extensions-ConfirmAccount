@@ -74,7 +74,7 @@
 	"confirmaccount-rej": "Le requesta de conto ha essite rejectate con successo.",
 	"confirmaccount-viewing": "(actualmente {{GENDER:$1|vidite}} per [[User:$1|$1]])",
 	"confirmaccount-summary": "Crea pagina de usator pro nove usator.",
-	"confirmaccount-welc": "'''Benvenite a ''{{SITENAME}}''!'''\nNos spera que tu contribuera multo e ben.\nTu volera probabilemente leger le [[{{MediaWiki:Helppage}}|paginas de adjuta]].\nBenvenite ancora, e diverte te!",
+	"confirmaccount-welc": "'''Benvenite a ''{{SITENAME}}''!'''\nNos spera que tu contribuera multo e ben.\nTu volera probabilemente leger le [{{MediaWiki:Helppage}} paginas de adjuta].\nBenvenite ancora, e diverte te!",
 	"confirmaccount-wsum": "Benvenite!",
 	"confirmaccount-email-subj": "Requesta de conto in {{SITENAME}}",
 	"confirmaccount-email-body": "Tu requesta de un conto in {{SITENAME}} ha essite approbate.\n\nNomine del conto: $1\n\nContrasigno: $2\n\nPro motivos de securitate, tu debera cambiar tu contrasigno al prime apertura de session.\nPro aperir un session, per favor visita {{fullurl:Special:UserLogin}}.",

@@ -74,7 +74,7 @@
 	"confirmaccount-rej": "D'Ufro fir ee Benotzerkont gouf refuséiert.",
 	"confirmaccount-viewing": "(gëtt elo {{GENDER:$1|gekuckt}} vum [[User:$1|$1]])",
 	"confirmaccount-summary": "D'Benotzersäit fir en neie Benotzer gëtt elo gemaach.",
-	"confirmaccount-welc": "'''Wëllkomm op ''{{SITENAME}}''!'''\nDir wëllt wahrscheinlech d'[[{{MediaWiki:Helppage}}|Hellëfsäite]] liesen.\nNachemol, wëllkom a vill Spaass!",
+	"confirmaccount-welc": "'''Wëllkomm op ''{{SITENAME}}''!'''\nDir wëllt wahrscheinlech d'[{{MediaWiki:Helppage}} Hellëfsäite] liesen.\nNachemol, wëllkom a vill Spaass!",
 	"confirmaccount-wsum": "Wëllkomm!",
 	"confirmaccount-email-subj": "{{SITENAME}} Ufro fir ee Benotzerkont",
 	"confirmaccount-email-body": "Är Ufro fir e Benotzerkont op {{SITENAME}} gouf ugeholl.\n\nNumm vum Benotzerkont: $1\n\nPasswuert: $2\n\nAus Sécherheetsgrënn musst Dir Äert Passwuert ännere wann Dir Iech déi éischt Kéier aloggt.\nFir Iech anzelogge gitt w.e.g. op {{fullurl:Special:UserLogin}}.",

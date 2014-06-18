@@ -85,7 +85,7 @@
 	"confirmaccount-rej": "Solicitud de cuenta rechazada exitosamente.",
 	"confirmaccount-viewing": "(actualmente {{GENDER:$1|siendo}} visto por [[User:$1|$1]])",
 	"confirmaccount-summary": "Creando página de usuario para un nuevo usuario.",
-	"confirmaccount-welc": "'''Bienvenido a ''{{SITENAME}}''!'''\nEsperamos que contribuyas mucho y bien.\nProbablemente desearás leer las [[{{MediaWiki:Helppage}}|páginas de ayuda]].\nNuevamente, bienvenido y diviértete!",
+	"confirmaccount-welc": "'''Bienvenido a ''{{SITENAME}}''!'''\nEsperamos que contribuyas mucho y bien.\nProbablemente desearás leer las [{{MediaWiki:Helppage}} páginas de ayuda].\nNuevamente, bienvenido y diviértete!",
 	"confirmaccount-wsum": "Bienvenido!",
 	"confirmaccount-email-subj": "{{SITENAME}} solicitud de cuenta",
 	"confirmaccount-email-body": "Tu solicitud para una cuenta ha sido aprobada en {{SITENAME}}.\n\nNombre de cuenta: $1\n\nContraseña: $2\n\nPor razones de seguridad necesitarás cambiar tu contraseña en la primera sesión. Para iniciar sesión, por favor vaya a {{fullurl:Special:UserLogin}}.",

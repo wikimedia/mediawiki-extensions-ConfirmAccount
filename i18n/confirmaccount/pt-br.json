@@ -80,7 +80,7 @@
 	"confirmaccount-rej": "Requisiçãode conta rejeitada com sucesso.",
 	"confirmaccount-viewing": "(atualmente sendo visualizada {{GENDER:$1|pelo|pela|por}} [[User:$1|$1]])",
 	"confirmaccount-summary": "Criando a página de usuário para o usuário novo.",
-	"confirmaccount-welc": "'''Bem-vindo a ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.\nProvavelmente você desejará ler as [[{{MediaWiki:Helppage}}|páginas de ajuda]]. \nMais uma vez, seja bem-vindo e divirta-se!",
+	"confirmaccount-welc": "'''Bem-vindo a ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.\nProvavelmente você desejará ler as [{{MediaWiki:Helppage}} páginas de ajuda]. \nMais uma vez, seja bem-vindo e divirta-se!",
 	"confirmaccount-wsum": "Bem-vindo!",
 	"confirmaccount-email-subj": "Requisição de conta em {{SITENAME}}",
 	"confirmaccount-email-body": "A sua requisição de conta foi aprovada em {{SITENAME}}.\n\nNome da conta: $1\n\nSenha: $2\n\nPor questões de segurança, você deverá mudar a sua senha após a primeira autenticação. \nPara entrar, por favor vá até {{fullurl:{{ns:special}}:Userlogin}}.",

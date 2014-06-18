@@ -76,7 +76,7 @@
 	"confirmaccount-rej": "Arfud dla domanda andait a bonfin.",
 	"confirmaccount-viewing": "(al moment a {{GENDER:$1|l'é}} vist da [[User:$1|$1]])",
 	"confirmaccount-summary": "I soma antramentr ch'i foma na neuva pàgina utent për l'utent neuv.",
-	"confirmaccount-welc": "''Bin ëvnù/a  an ''{{SITENAME}}''!''' I speroma d'arsèive sò contribut e deje bon servissi. Miraco a peul ess-je d'agiut lese la session [[{{MediaWiki:Helppage}}|Amprende a travajé da zero]]. N'àotra vira, bin ëvnù/a e tante bele còse!",
+	"confirmaccount-welc": "''Bin ëvnù/a  an ''{{SITENAME}}''!''' I speroma d'arsèive sò contribut e deje bon servissi. Miraco a peul ess-je d'agiut lese la session [{{MediaWiki:Helppage}} Amprende a travajé da zero]. N'àotra vira, bin ëvnù/a e tante bele còse!",
 	"confirmaccount-wsum": "Bin ëvnù/a!",
 	"confirmaccount-email-subj": "Domanda dë deurbe un cont neuv ansima a {{SITENAME}}",
 	"confirmaccount-email-body": "Soa domanda dë deurbe un cont neuv ansima a {{SITENAME}} a l'é staita aprovà. Stranòm: $1 Ciav: $2\n\nPër na question ëd sigurëssa a fa da manca che un as cambia soa ciav la prima vira ch'a rintra ant ël sistema. Për rintré, për piasì ch'a vada a l'adrëssa {{fullurl:Special:UserLogin}}.",

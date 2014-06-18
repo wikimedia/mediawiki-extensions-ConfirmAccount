@@ -68,7 +68,7 @@
 	"confirmaccount-rej": "Benutserandraach wuude ouliend.",
 	"confirmaccount-viewing": "(wäd apstuuns bekieked truch [[User:$1|$1]])",
 	"confirmaccount-summary": "Moak Benutsersiede mäd ju Biographie fon dän näie Benutser.",
-	"confirmaccount-welc": "'''Wäilkuumen bie ''{{SITENAME}}''!''' Wie hoopje, dät du fuul goude Informatione biedrächst.\n\tMuugelkerwiese moatest du eerste do [[{{MediaWiki:Helppage}}|Eerste Stappe]] leese. Nochmoal: Wäilkuumen un hääb Spoas!~",
+	"confirmaccount-welc": "'''Wäilkuumen bie ''{{SITENAME}}''!''' Wie hoopje, dät du fuul goude Informatione biedrächst.\n\tMuugelkerwiese moatest du eerste do [{{MediaWiki:Helppage}} Eerste Stappe] leese. Nochmoal: Wäilkuumen un hääb Spoas!~",
 	"confirmaccount-wsum": "Wäilkuumen!",
 	"confirmaccount-email-subj": "{{SITENAME}} Froage uum n Benutserkonto",
 	"confirmaccount-email-body": "Dien Froage uum n Benutserkonto bie {{SITENAME}} wuude bestäätiged.\n\nBenutsernoome: $1\n\nPaaswoud: $2\n\nUut Sicherhaidsgruunden skuust du dien Paaswoud uunbedingd bie dät eerste\nIenlogjen annerje. Uum die ientoulogjen gungst du ap ju Siede\n{{fullurl:Special:UserLogin}}.",

@@ -71,7 +71,7 @@
 	"confirmaccount-rej": "Žiadosť o účet bola úspešne odmietnutá.",
 	"confirmaccount-viewing": "(momentálne sa na ňu pozerá [[User:$1|$1]])",
 	"confirmaccount-summary": "Vytvára sa používateľská stránka pre nového používateľa.",
-	"confirmaccount-welc": "'''Vitajte v ''{{GRAMMAR:lokál|{{SITENAME}}}}''!''' Dúfame, že budete prispievať vo veľkom množstve a kvalitne. Pravdepodobne si budete chcieť prečítať [[{{MediaWiki:Helppage}}|Začíname]]. Tak ešte raz vitajte a bavte sa!",
+	"confirmaccount-welc": "'''Vitajte v ''{{GRAMMAR:lokál|{{SITENAME}}}}''!''' Dúfame, že budete prispievať vo veľkom množstve a kvalitne. Pravdepodobne si budete chcieť prečítať [{{MediaWiki:Helppage}} Začíname]. Tak ešte raz vitajte a bavte sa!",
 	"confirmaccount-wsum": "Vitajte!",
 	"confirmaccount-email-subj": "žiadosť o účet {{GRAMMAR:genitív|{{SITENAME}}}}",
 	"confirmaccount-email-body": "Vaša žiadosť o účet na {{GRAMMAR:lokál|{{SITENAME}}}} bola schválená. Názov účtu: $1 Heslo: $2 Z bezpečnostných dôvodov si budete musieť pri prvom prihlásení svoje heslo zmeniť. Teraz sa môžete prihlásiť na {{fullurl:Special:UserLogin}}.",

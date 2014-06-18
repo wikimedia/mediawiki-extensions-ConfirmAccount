@@ -76,7 +76,7 @@
 	"confirmaccount-rej": "Gebruikersaanvraag afgewezen.",
 	"confirmaccount-viewing": "({{GENDER:$1|wordt}} op dit moment bekeken door [[User:$1|$1]])",
 	"confirmaccount-summary": "Er wordt een gebruikerspagina gemaakt voor de nieuwe gebruiker.",
-	"confirmaccount-welc": "'''Welkom bij ''{{SITENAME}}''!'''\nWe hopen dat u veel goede bijdragen levert. \nWaarschijnlijk wilt u de [[{{MediaWiki:Helppage}}|hulppagina's]] lezen.\nNogmaals, welkom en veel plezier!",
+	"confirmaccount-welc": "'''Welkom bij ''{{SITENAME}}''!'''\nWe hopen dat u veel goede bijdragen levert. \nWaarschijnlijk wilt u de [{{MediaWiki:Helppage}} hulppagina's] lezen.\nNogmaals, welkom en veel plezier!",
 	"confirmaccount-wsum": "Welkom!",
 	"confirmaccount-email-subj": "{{SITENAME}} gebruikersaanvraag",
 	"confirmaccount-email-body": "Uw gebruikersaanvraag op {{SITENAME}} is goedgekeurd.\n\nGebruiker: $1\n\nWachtwoord: $2\n\nOm beveiligingsredenen dient u uw wachtwoord bij de eerste keer aanmelden te wijzigen. Aanmelden kan via \n{{fullurl:Special:UserLogin}}.",

@@ -83,7 +83,7 @@
 	"confirmaccount-rej": "账户请求已经成功拒绝。",
 	"confirmaccount-viewing": "（目前正由[[User:$1|$1]]浏览）",
 	"confirmaccount-summary": "为新用户创建用户页面。",
-	"confirmaccount-welc": "'''欢迎来到''{{SITENAME}}''！'''\n我们希望您会作出更多更好的贡献。\n您可能想先阅读一下[[{{MediaWiki:Helppage}}|帮助页面]]。\n再次欢迎您，祝您愉快！",
+	"confirmaccount-welc": "'''欢迎来到''{{SITENAME}}''！'''\n我们希望您会作出更多更好的贡献。\n您可能想先阅读一下[{{MediaWiki:Helppage}} 帮助页面]。\n再次欢迎您，祝您愉快！",
 	"confirmaccount-wsum": "欢迎！",
 	"confirmaccount-email-subj": "{{SITENAME}}账户请求",
 	"confirmaccount-email-body": "您请求的账户已经在{{SITENAME}}中批准。\n\n账户名称: $1\n\n密码: $2\n\n为了安全性的原故，您需要在一次登入时更改密码。要登入，请前往{{fullurl:Special:Userlogin}}。",

@@ -9,10 +9,12 @@
 			"M.M.S.",
 			"Najami",
 			"Per",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Lokal Profil"
 		]
 	},
 	"requestaccount": "Ansök om konto",
+	"requestaccount-login": "Ansök om konto",
 	"requestaccount-text": "'''Fyll i och skicka följande formulär för att ansöka om ett konto.'''\n\nSe till att du har läst [[{{MediaWiki:Requestaccount-page}}|användningsvillkoren]] innan du frågar efter ett konto.\n\nNär din ansökan har godkänts, så kommer ett e-postmeddelande skickas till dig och du kan [[Special:UserLogin|logga in]] på ditt konto.",
 	"requestaccount-page": "{{ns:project}}:Användningsvillkor",
 	"requestaccount-dup": "'''Notera: Du är redan inloggad med ett registrerat konto.'''",

@@ -77,7 +77,7 @@
 	"confirmaccount-rej": "Kontoanmodning afvist.",
 	"confirmaccount-viewing": "({{GENDER:$1|undersøges}} i øjeblikket af [[User:$1|$1]])",
 	"confirmaccount-summary": "Opretter den nye brugers brugerside.",
-	"confirmaccount-welc": "\n'''Velkommen til ''{{SITENAME}}''!'''\nVi håber, at du kommer med mange og gode bidrag.\nDet vil nok være en god idé, at læse [[{{MediaWiki:Helppage}}|hjælpesiderne]].\nEndnu en gang velkommen, og god fornøjelse!",
+	"confirmaccount-welc": "\n'''Velkommen til ''{{SITENAME}}''!'''\nVi håber, at du kommer med mange og gode bidrag.\nDet vil nok være en god idé, at læse [{{MediaWiki:Helppage}} hjælpesiderne].\nEndnu en gang velkommen, og god fornøjelse!",
 	"confirmaccount-wsum": "Velkommen!",
 	"confirmaccount-email-subj": "Kontoanmodning på {{SITENAME}}",
 	"confirmaccount-email-body": "Din anmodning om en konto er godkendt på {{SITENAME}}.\n\nBrugernavn: $1\n\nAdgangskode: $2\n\nAf sikkerhedshensyn skal du ændre adgangskoden første gang du logger på.\nFor at logge på skal du gå til: {{fullurl:Special:UserLogin}}",

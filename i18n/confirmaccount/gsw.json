@@ -70,7 +70,7 @@
 	"confirmaccount-rej": "Benutzeraatrag isch abglähnt wore.",
 	"confirmaccount-viewing": "(wird aktuäll aagluegt vu [[User:$1|$1]])",
 	"confirmaccount-summary": "Legt e Benutzersyte mit dr Biografii vum neje Benutzer aa.",
-	"confirmaccount-welc": "'''Willchu bi ''{{SITENAME}}''!'''\nMir hoffen, ass Du viil gueti Informatione byytraisch.\nVillicht mechtsch zerscht di [[{{MediaWiki:Helppage}}|Erschte Schritt]] läse.\nNomol: Willchu un viil Freid!",
+	"confirmaccount-welc": "'''Willchu bi ''{{SITENAME}}''!'''\nMir hoffen, ass Du viil gueti Informatione byytraisch.\nVillicht mechtsch zerscht di [{{MediaWiki:Helppage}} Erschte Schritt] läse.\nNomol: Willchu un viil Freid!",
 	"confirmaccount-wsum": "Willchu!",
 	"confirmaccount-email-subj": "{{SITENAME}} Aatrag uf Benutzerkonto",
 	"confirmaccount-email-body": "Dyy Aatrag uf e Benutzerkonto bi {{SITENAME}} isch bstätigt wore.\n\nBenutzername: $1\n\nPasswort: $2\n\nUs Sicherheitsgrind sottsch Dyy Passwort uubedingt bim erschten Aamälde ändere. Go Di aamälde gohsch uf d Syte\n{{fullurl:Special:Userlogin}}.",

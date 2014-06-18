@@ -85,7 +85,7 @@
 	"confirmaccount-rej": "Benutzerantrag wurde abgelehnt.",
 	"confirmaccount-viewing": "(wird aktuell {{GENDER:$1|angeschaut}} durch [[User:$1|$1]])",
 	"confirmaccount-summary": "Die Benutzerseite wird für den neuen Benutzer erstellt.",
-	"confirmaccount-welc": "'''Willkommen bei ''{{SITENAME}}''!'''\nWir hoffen, dass du viele gute Informationen beisteuerst.\nMöglicherweise möchtest du zunächst die [[{{MediaWiki:Helppage}}|Ersten Schritte]] lesen.\nNochmal: Willkommen und viel Spaß!",
+	"confirmaccount-welc": "'''Willkommen bei ''{{SITENAME}}''!'''\nWir hoffen, dass du viele gute Informationen beisteuerst.\nMöglicherweise möchtest du zunächst die [{{MediaWiki:Helppage}} Ersten Schritte] lesen.\nNochmal: Willkommen und viel Spaß!",
 	"confirmaccount-wsum": "Willkommen!",
 	"confirmaccount-email-subj": "[{{SITENAME}}] Antrag auf Benutzerkonto",
 	"confirmaccount-email-body": "Dein Antrag auf ein Benutzerkonto bei {{SITENAME}} wurde bestätigt.\n\nBenutzername: $1\n\nPasswort: $2\n\nAus Sicherheitsgründen solltest du dein Passwort unbedingt beim ersten Anmelden ändern.\nUm dich anzumelden besuche bitte die Seite {{fullurl:{{#special:UserLogin}}}}.",

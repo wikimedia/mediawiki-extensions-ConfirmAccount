@@ -74,7 +74,7 @@
 	"confirmaccount-rej": "Požadanje za kontom bu wotpokazane.",
 	"confirmaccount-viewing": "({{GENDER:$1|wobhladuje}} so runje wot [[User:$1|$1]])",
 	"confirmaccount-summary": "Wutworja so wužiwarska strona za noweho wužiwarja.",
-	"confirmaccount-welc": "'''Witaj do ''{{SITENAME}}''!'''\nNadźijemy so, zo dodaš wjele dobrych přinoškow.\nSnano chceš najprjedy [[Pomoc:Prěnje kroki|Prěnje kroki]] čitać.\nHišće raz: Witaj a wjele wjesela!",
+	"confirmaccount-welc": "'''Witaj do ''{{SITENAME}}''!'''\nNadźijemy so, zo dodaš wjele dobrych přinoškow.\nSnano chceš najprjedy [{{MediaWiki:Helppage}} Prěnje kroki] čitać.\nHišće raz: Witaj a wjele wjesela!",
 	"confirmaccount-wsum": "Witaj!",
 	"confirmaccount-email-subj": "{{SITENAME}} Požadanje za wužiwarskim kontom",
 	"confirmaccount-email-body": "Twoje požadanje za wužiwarskim kontom bu na {{SITENAME}} schwalene.\n\nWužiwarske mjeno: $1\n\nHesło: $2\n\nZ přičinow wěstoty, měł ty swoje hesło při prěnim přizjewjenju na kóždy pad změnić. Zo by přizjewił, dźi přosu na stronu {{fullurl:Special:Userlogin}}.",

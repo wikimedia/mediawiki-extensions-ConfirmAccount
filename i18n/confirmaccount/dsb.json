@@ -74,7 +74,7 @@
 	"confirmaccount-rej": "Póžedanje na konto wuspěšnje wótpokazane.",
 	"confirmaccount-viewing": "({{GENDER:$1|wobglědujo}} se rowno wót [[User:$1|$1]])",
 	"confirmaccount-summary": "Napórajo se wužywarski bok za nowego wužywarja.",
-	"confirmaccount-welc": "'''Witaj do ''{{GRAMMAR:genitiw|{{SITENAME}}}}''!'''\nNaźejamy se, až librujoš wjele dobrych pśinoskow.\nNejskerjej coš [[{{MediaWiki:Helppage}}|boki pomocy]] cytaś.\nHyšći raz: Witaj a wjele wjasela!",
+	"confirmaccount-welc": "'''Witaj do ''{{GRAMMAR:genitiw|{{SITENAME}}}}''!'''\nNaźejamy se, až librujoš wjele dobrych pśinoskow.\nNejskerjej coš [{{MediaWiki:Helppage}} boki pomocy] cytaś.\nHyšći raz: Witaj a wjele wjasela!",
 	"confirmaccount-wsum": "Witaj!",
 	"confirmaccount-email-subj": "{{SITENAME}} póžedanje na konto",
 	"confirmaccount-email-body": "Twójo póžedanje na konto jo se na {{GRAMMAR:lokatiw|{{SITENAME}}}} schwaliło.\n\nMě konta: $1\n\nGronidło: $2\n\n\nZ wěstotnych pśicynow musyš swójo gronidło pśi prědnem pśizjawjenju změniś.\nAby se pśizjawił, źi pšosym k {{fullurl:Special:UserLogin}}.",

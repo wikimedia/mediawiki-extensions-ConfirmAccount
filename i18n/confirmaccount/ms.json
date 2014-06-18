@@ -74,7 +74,7 @@
 	"confirmaccount-rej": "Permohonan akaun berjaya ditolak.",
 	"confirmaccount-viewing": "(sedang {{GENDER:$1|dipaparkan}} oleh [[User:$1|$1]])",
 	"confirmaccount-summary": "Laman pengguna diwujudkan untuk pengguna baru.",
-	"confirmaccount-welc": "'''Selamat datang ''{{SITENAME}}''!'''\nKami berharap agar anda memberikan sumbangan yang banyak dan bermanfaat di sini.\nApa kata anda membaca [[{{MediaWiki:Helppage}}|laman-laman bantuan]] terlebih dahulu.\nApapun, selamat datang dan salam ceria!",
+	"confirmaccount-welc": "'''Selamat datang ''{{SITENAME}}''!'''\nKami berharap agar anda memberikan sumbangan yang banyak dan bermanfaat di sini.\nApa kata anda membaca [{{MediaWiki:Helppage}} laman-laman bantuan] terlebih dahulu.\nApapun, selamat datang dan salam ceria!",
 	"confirmaccount-wsum": "Selamat datang!",
 	"confirmaccount-email-subj": "Permohonan akaun {{SITENAME}}",
 	"confirmaccount-email-body": "Permohonan akaun anda telah diluluskan di {{SITENAME}}.\n\nNama akaun: $1\n\nKata laluan: $2\n\nAtas sebab keselamatan, anda perlu menukar kata laluan pada log masuk pertama.\nUntuk log masuk, sila ke {{fullurl:Special:UserLogin}}.",

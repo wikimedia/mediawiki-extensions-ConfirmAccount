@@ -74,7 +74,7 @@
 	"confirmaccount-rej": "La solicitú de cuenta se refugó correutamente.",
 	"confirmaccount-viewing": "({{GENDER:$1|viendose}} anguaño por [[User:$1|$1]])",
 	"confirmaccount-summary": "Creando páxina d'usuariu pal usuariu nuevu.",
-	"confirmaccount-welc": "'''¡Bienveníu a ''{{SITENAME}}''!'''\nEsperamos que collabores muncho y bien.\nProbablemente quieras lleer les [[{{MediaWiki:Helppage}}|páxines d'ayuda]].\nNuevamente, ¡bienveníu y que te preste!",
+	"confirmaccount-welc": "'''¡Bienveníu a ''{{SITENAME}}''!'''\nEsperamos que collabores muncho y bien.\nProbablemente quieras lleer les [{{MediaWiki:Helppage}} páxines d'ayuda].\nNuevamente, ¡bienveníu y que te preste!",
 	"confirmaccount-wsum": "¡Bienveníu!",
 	"confirmaccount-email-subj": "Solicitú de cuenta en {{SITENAME}}",
 	"confirmaccount-email-body": "S'aprobó la to solicitú de cuenta en {{SITENAME}}.\n\nNome de la cuenta: $1\n\nContraseña: $2\n\nPor razones de seguridá tendrás de camudar la contraseña la primera vegada qu'anicies sesión.\nP'aniciar sesión, visita {{fullurl:Special:UserLogin}}.",

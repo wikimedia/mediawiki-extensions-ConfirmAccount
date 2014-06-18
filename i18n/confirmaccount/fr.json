@@ -86,7 +86,7 @@
 	"confirmaccount-rej": "La demande a été rejetée avec succès.",
 	"confirmaccount-viewing": "(actuellement en train d'être {{GENDER:$1|visionné}} par [[User:$1|$1]])",
 	"confirmaccount-summary": "Création de la page utilisateur pour un nouvel utilisateur.",
-	"confirmaccount-welc": "'''Bienvenue sur ''{{SITENAME}}'' !''' Nous espérons que vous contribuerez en quantité et en qualité. Vous désirerez, peut-être, lire [[{{MediaWiki:Helppage}}|les pages d'aide]]. Bienvenue encore et bonne contribution !\n<nowiki>~~~~</nowiki>",
+	"confirmaccount-welc": "'''Bienvenue sur ''{{SITENAME}}'' !'''\nNous espérons que vous contribuerez en quantité et en qualité.\nVous désirerez sans doute lire [{{MediaWiki:Helppage}} les pages d'aide].\nEncore une fois, bienvenue et amusez-vous bien !",
 	"confirmaccount-wsum": "Bienvenue !",
 	"confirmaccount-email-subj": "Demande de compte sur {{SITENAME}}",
 	"confirmaccount-email-body": "Votre demande de compte a été acceptée sur {{SITENAME}}.\n\nNom du compte utilisateur : $1\n\nMot de passe : $2\n\nPour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion. Pour vous connecter, allez sur\n{{fullurl:Special:UserLogin}}.",
