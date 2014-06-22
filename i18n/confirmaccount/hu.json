@@ -6,7 +6,8 @@
 			"Dorgan",
 			"Glanthor Reviol",
 			"Misibacsi",
-			"Tgr"
+			"Tgr",
+			"Csega"
 		]
 	},
 	"confirmaccounts": "Felhasználói fiók-kérelem megerősítése",
@@ -78,7 +79,7 @@
 	"confirmaccount-rej": "A kérelem sikeresen visszautasítva.",
 	"confirmaccount-viewing": "(jelenleg [[User:$1|$1]] nézi)",
 	"confirmaccount-summary": "Felhasználói lap elkészítése az új felhasználónak.",
-	"confirmaccount-welc": "'''Üdvözlet a(z) ''{{SITENAME}}'' wikin!''' Reméljük, hogy sokat fogsz szerkeszteni.\nElolvashatod a [{{MediaWiki:Helppage}} segítséglapokat] is. Üdvözlet mégegyszer, és érezd jól magadat!",
+	"confirmaccount-welc": "'''Üdvözlet a(z) ''{{SITENAME}}'' wikin!''' Reméljük, hogy gyakran és hasznosan fogsz közreműködni.\nÉrdemes lesz elolvasnod a [{{MediaWiki:Helppage}} súgó oldalakat]. Üdvözlet még egyszer, és érezd jól magad!",
 	"confirmaccount-wsum": "Üdvözlet!",
 	"confirmaccount-email-subj": "{{SITENAME}} felhasználói fiók-kérelem",
 	"confirmaccount-email-body": "A felhasználói fiók-kérelmedet elfogadtuk a(z) {{SITENAME}} wikin.\n\nFelhasználói név: $1\n\nJelszó: $2\n\nBiztonsági okok miatt meg kell változtatnod a jelszavadat az első bejelentkezésed során. A bejelentkezéshez menj a\n{{fullurl:Special:UserLogin}} lapra.",
