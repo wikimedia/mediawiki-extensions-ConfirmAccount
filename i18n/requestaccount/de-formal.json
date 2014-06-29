@@ -8,7 +8,7 @@
 			"Umherirrender"
 		]
 	},
-	"requestaccount-text": "'''Füllen Sie das folgende Formular aus und schicken es ab, um ein Benutzerkonto zu beantragen.'''\n\nBitte lesen Sie zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor Sie ein Benutzerkonto beantragen.\n\nSobald das Konto bestätigt wurde, werden Sie per E-Mail benachrichtigt und Sie können sich [[Special:UserLogin|anmelden]].",
+	"requestaccount-text": "'''Füllen Sie das folgende Formular aus und schicken Sie es ab, um für dieses Wiki ein Benutzerkonto zu beantragen.'''\n\nBitte lesen Sie zunächst die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]], bevor Sie ein Benutzerkonto beantragen.\n\nSobald das Konto bestätigt wurde, werden Sie per E-Mail benachrichtigt. Danach können Sie sich [[Special:UserLogin|anmelden]].",
 	"requestaccount-dup": "'''Achtung: Sie sind bereits mit einem registrierten Benutzerkonto angemeldet.'''",
 	"requestaccount-acc-text": "An Ihre E-Mail-Adresse wird nach dem Absenden dieses Formulars eine Bestätigungsmail geschickt.\nBitte reagieren Sie darauf, indem Sie auf den in dieser Mail enthaltenen Bestätigungslink klicken.\nSobald Ihr Konto angelegt wurde, wird Ihnen Ihr Passwort per E-Mail zugeschickt.",
 	"requestaccount-areas-text": "Wählen Sie die Themengebiete aus, in denen Sie das meiste Fachwissen haben oder wo Sie am meisten involviert sein werden.",
