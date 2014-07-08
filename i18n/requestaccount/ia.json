@@ -5,6 +5,7 @@
 		]
 	},
 	"requestaccount": "Requestar conto",
+	"requestaccount-login": "Requestar conto",
 	"requestaccount-text": "'''Completa e submitte le sequente formulario pro requestar un conto de usator.'''\n\nAssecura te que tu primo lege le [[{{MediaWiki:Requestaccount-page}}|conditiones de servicio]] ante que tu requesta un conto.\n\nQuando le conto ha essite approbate, tu recipera in e-mail un message de notification e le conto essera usabile pro [[Special:UserLogin|aperir un session]].",
 	"requestaccount-page": "{{ns:project}}:Conditiones de servicio",
 	"requestaccount-dup": "'''Nota: Tu es ja in un session aperte con un conto registrate.'''",
