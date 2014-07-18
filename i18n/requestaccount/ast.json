@@ -5,6 +5,7 @@
 		]
 	},
 	"requestaccount": "Solicitar una cuenta",
+	"requestaccount-login": "Solicitar una cuenta",
 	"requestaccount-text": "'''Complete y unvie'l siguiente formulariu pa solicitar una cuenta d'usuariu'''.\n\nAntes de solicitar una cuenta, asegúrese de lleer primero les [[{{MediaWiki:Requestaccount-page}}|condiciones del serviciu]].\n\nCuando s'apruebe la cuenta, unviaráse un mensaxe de notificación per corréu electrónicu y la cuenta podrá usase [[Special:UserLogin|aniciando sesión]].",
 	"requestaccount-page": "{{ns:project}}:Condiciones de serviciu",
 	"requestaccount-dup": "'''Nota: Yá anició sesión con una cuenta rexistrada.'''",
