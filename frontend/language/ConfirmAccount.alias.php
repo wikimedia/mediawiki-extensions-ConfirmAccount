@@ -460,5 +460,5 @@ $specialPageAliases['zh-hans'] = array(
 $specialPageAliases['zh-hant'] = array(
 	'RequestAccount' => array( '請求帳戶' ),
 	'ConfirmAccounts' => array( '確認帳戶' ),
-	'UserCredentials' => array( '用戶憑據' ),
+	'UserCredentials' => array( '使用者憑據' ),
 );
