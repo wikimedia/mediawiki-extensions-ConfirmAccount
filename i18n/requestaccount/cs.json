@@ -5,7 +5,8 @@
 			"Jkjk",
 			"Li-sung",
 			"Matěj Grabovský",
-			"Mormegil"
+			"Mormegil",
+			"Matěj Suchánek"
 		]
 	},
 	"requestaccount": "Vyžádat účet",
@@ -17,7 +18,7 @@
 	"requestaccount-leg-other": "Další informace",
 	"requestaccount-leg-tos": "Podmínky služby",
 	"requestaccount-acc-text": "Na Vaši e-mailovou adresu bude po odeslání žádosti zaslána potvrzující zpráva. Vaše adresa nebude publikována.\nProsím, reagujte na zprávu kliknutím na odkaz v ní.\nVaše heslo Vám bude zasláno ihned po vytvoření Vašeho účtu.",
-	"requestaccount-areas-text": "Níže zvolte tématické oblasti, ve kterých jste formálně expertem nebo by jste v nich rádi vykonávali vaši práci.",
+	"requestaccount-areas-text": "Níže zvolte tematické oblasti, ve kterých jste formálně expertem nebo byste v nich rádi vykonávali svoji práci.",
 	"requestaccount-bio-text": "Vaše bibliografie bude prvotním obsahem vaši uživatelské stránky. Pokuste se uvést všechny reference. Zvažte, zda jste ochotni zveřejnit tyto informace. Jméno si můžete změnit ve [[Special:Preferences|svém nastavení]].",
 	"requestaccount-real": "Skutečné jméno:",
 	"requestaccount-same": "(stejné jako skutečné jméno)",
