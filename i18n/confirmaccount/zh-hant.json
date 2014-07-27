@@ -68,7 +68,7 @@
 	"confirmaccount-create": "接受 （建立帳號）",
 	"confirmaccount-deny": "拒絕 （反列示）",
 	"confirmaccount-hold": "掛起",
-	"confirmaccount-spam": "垃圾（請不要發送電子郵件）",
+	"confirmaccount-spam": "垃圾（請不要傳送電子郵件）",
 	"confirmaccount-reason": "註解 （在電郵中使用）:",
 	"confirmaccount-ip": "IP位址：",
 	"confirmaccount-xff": "X-Forwarded-For:",

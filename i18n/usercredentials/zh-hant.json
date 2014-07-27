@@ -4,11 +4,12 @@
 			"Justincheng12345",
 			"Mark85296341",
 			"Simon Shek",
-			"Waihorace"
+			"Waihorace",
+			"LNDDYL"
 		]
 	},
 	"usercredentials": "用戶資格",
-	"usercredentials-leg": "查找已驗證的用戶資格",
+	"usercredentials-leg": "尋找已驗證的使用者資格",
 	"usercredentials-user": "用戶名：",
 	"usercredentials-text": "下面是已選中用戶的有效資格。",
 	"usercredentials-leg-user": "使用者帳號",
@@ -26,5 +27,5 @@
 	"usercredentials-xff": "原始X-Forwarded-For：",
 	"usercredentials-agent": "原始使用者代理：",
 	"usercredentials-member": "權限：",
-	"usercredentials-badid": "沒有憑據找到該用戶。\n檢查名稱拼寫是否正確。"
+	"usercredentials-badid": "沒有憑據找到該使用者。\n檢查名稱拼寫是否正確。"
 }

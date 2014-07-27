@@ -3,11 +3,12 @@
 		"authors": [
 			"Mark85296341",
 			"Waihorace",
-			"Justincheng12345"
+			"Justincheng12345",
+			"LNDDYL"
 		]
 	},
 	"requestaccount": "請求帳戶",
-	"requestaccount-text": "'''完成並遞交以下的表格去請求一個用戶帳戶'''。\n\n請確認您在請求一個帳戶之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。\n\n一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:UserLogin|登入頁面]]中使用。",
+	"requestaccount-text": "'''完成並遞交以下的表格去請求一個使用者帳戶'''。\n\n請確認您在請求一個帳戶之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。\n\n一旦該帳戶獲得批准，您將會收到一個電郵通知訊息，該帳戶就可以在[[Special:UserLogin|登入頁面]]中使用。",
 	"requestaccount-page": "{{ns:project}}:服務條款",
 	"requestaccount-dup": "'''注意：您已經登入成一個已註冊的帳戶。'''",
 	"requestaccount-leg-user": "使用者帳號",
@@ -22,7 +23,7 @@
 	"requestaccount-bio-text-i": "'''你的簡履將會成為你的用戶頁的內容。'''\n請確保你可以發佈該等資訊。",
 	"requestaccount-real": "真實名字：",
 	"requestaccount-same": "（同真實名字）",
-	"requestaccount-email": "電郵地址：",
+	"requestaccount-email": "電郵位址：",
 	"requestaccount-reqtype": "位置",
 	"requestaccount-level-0": "作者",
 	"requestaccount-level-1": "編輯",
@@ -38,7 +39,7 @@
 	"requestaccount-resub": "出於安全原因，您的簡歷或履歷必須被重新選擇。\n若您不想再加入一個，請將此欄留空。",
 	"requestaccount-tos": "我已經閱讀以及同意持續遵守{{SITENAME}}的服務細則。",
 	"requestaccount-submit": "請求帳戶",
-	"requestaccount-sent": "您的帳戶請求已經成功發出，現正等候複審。\n一個確認電郵已發送至您的電郵。",
+	"requestaccount-sent": "您的帳戶請求已經成功發出，現正等候複審。\n一個確認電郵已傳送至您的電郵。",
 	"request-account-econf": "您的電郵位址已經確認，將會在您的帳戶口請求中列示。",
 	"requestaccount-email-subj": "{{SITENAME}}電郵位址確認",
 	"requestaccount-email-body": "有人，可能是您，由IP位址$1，在{{SITENAME}}中用這個電郵位址請求一個名叫\"$2\"的帳戶。\n\n要確認這個戶口真的屬於在{{SITENAME}}上面嘅您，就在您的瀏覽器中度開啟這個連結:\n\n$3\n\n如果該帳戶已經創建，只有您才會收到該電郵密碼。如果這個帳戶*不是*屬於您的話，不要點擊這個連結。\n呢個確認碼將會響$4過期。",
