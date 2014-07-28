@@ -4,7 +4,8 @@
 			"Bellayet",
 			"Ehsanulhb",
 			"Wikitanvir",
-			"Zaheen"
+			"Zaheen",
+			"Aftab1995"
 		]
 	},
 	"confirmaccounts": "অ্যাকাউন্ট অনুরোধ নিশ্চিত",
@@ -39,9 +40,9 @@
 	"confirmaccount-notes": "অতিরিক্ত মন্তব্য:",
 	"confirmaccount-urls": "ওয়েবসাইটের তালিকা:",
 	"confirmaccount-none-p": "(দেয়া হয়নি)",
-	"confirmaccount-confirm": "গ্রহণ, বর্জন, বা অপেক্ষা করতে নিচের অপশনগুলো ব্যবহার করুন:",
+	"confirmaccount-confirm": "এই অনুরোধ গ্রহণ, বর্জন, বা অপেক্ষায় রাখাতে নিচের অপশনগুলো ব্যবহার করুন:",
 	"confirmaccount-econf": "(নিশ্চিতকৃত)",
-	"confirmaccount-reject": "([[User:$1|$1]] দ্বারা বাতিলকৃত হয়েছে $2টার সময়)",
+	"confirmaccount-reject": "($3 $4টার সময় [[ব্যবহারকারী:$1|$1]] দ্বারা {{GENDER:$1|বাতিল হয়েছে}})",
 	"confirmaccount-noreason": "(কিছু নাই)",
 	"confirmaccount-autorej": "এই অনুরোধটি নিষ্ক্রিয়তার কারণে স্বয়ংক্রিয়ভাবে বাতিল হয়ে গেছে",
 	"confirmaccount-create": "গৃহীত (অ্যাকাউন্ট তৈরি)",
