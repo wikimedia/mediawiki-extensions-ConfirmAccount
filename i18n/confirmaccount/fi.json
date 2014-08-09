@@ -11,7 +11,8 @@
 			"Str4nd",
 			"Taleman",
 			"Varusmies",
-			"VezonThunder"
+			"VezonThunder",
+			"Pxos"
 		]
 	},
 	"confirmaccounts": "Myönnä käyttäjätunnuksia.",
@@ -62,7 +63,7 @@
 	"confirmaccount-confirm": "Hyväksy, hylkää tai pysäytä tämä pyyntö alla olevilla valinnoilla:",
 	"confirmaccount-econf": "(tarkistettu)",
 	"confirmaccount-withcv": "(CV liitteenä)",
-	"confirmaccount-reject": "(hylätty, hylkääjänä [[User:$1|$1]] osoitteesta $2)",
+	"confirmaccount-reject": "(hylännyt käyttäjä [[User:$1|$1]] $3 kello $4)",
 	"confirmaccount-rational": "Hakijalle kerrotut perustelut:",
 	"confirmaccount-noreason": "(ei mitään)",
 	"confirmaccount-autorej": "(tämä pyyntö on automaattisesti hylätty käyttämättömyyden vuoksi)",
