@@ -397,7 +397,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$blokip = SpecialPage::getTitleFor( 'Block' );
 			$link = Linker::makeKnownLinkObj(
 				$blokip,
-				$this->msg( 'blockip' )->escaped(),
+				$this->msg( 'confirmaccount-blockip' )->escaped(),
 				'ip=' . $accountReq->getIP() . '&wpCreateAccount=1'
 			);
 			$form .= '<fieldset>';

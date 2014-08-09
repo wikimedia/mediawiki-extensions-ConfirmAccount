@@ -55,6 +55,7 @@
     "confirmaccount-noreason": "(none)",
     "confirmaccount-autorej": "(this request has automatically been discarded due to inactivity)",
     "confirmaccount-held": "({{GENDER:$1|marked}} \"on hold\" by [[User:$1|$1]] on $3 at $4)",
+    "confirmaccount-blockip": "Block IP address",
     "confirmaccount-create": "Accept (create account)",
     "confirmaccount-deny": "Reject (delist)",
     "confirmaccount-hold": "Hold",
