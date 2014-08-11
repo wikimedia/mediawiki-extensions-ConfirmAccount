@@ -10,7 +10,8 @@
 			"Xiaomingyan",
 			"Yfdyh000",
 			"乌拉跨氪",
-			"Mywood"
+			"Mywood",
+			"Impersonator 1"
 		]
 	},
 	"confirmaccounts": "确认帐户请求",
@@ -66,6 +67,7 @@
 	"confirmaccount-noreason": "（无）",
 	"confirmaccount-autorej": "（此请求已因为无活动而自动被回绝）",
 	"confirmaccount-held": "（在$3 $4被[[User:$1|$1]]标记为“挂起”）",
+	"confirmaccount-blockip": "封禁IP地址",
 	"confirmaccount-create": "接受 （创建账户）",
 	"confirmaccount-deny": "拒绝 （反列示）",
 	"confirmaccount-hold": "挂起",

@@ -64,6 +64,7 @@
 	"confirmaccount-noreason": "(nenhum)",
 	"confirmaccount-autorej": "(este pedido foi automaticamente descartado devido a inactividade)",
 	"confirmaccount-held": "({{GENDER:$1|marcado}} como \"em espera\" por [[User:$1|$1]] em $3 às $4)",
+	"confirmaccount-blockip": "Bloquear endereço de IP",
 	"confirmaccount-create": "Aceitar (criar conta)",
 	"confirmaccount-deny": "Rejeitar (retirar da lista)",
 	"confirmaccount-hold": "Colocar em espera",

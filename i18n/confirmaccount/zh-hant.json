@@ -9,7 +9,8 @@
 			"Simon Shek",
 			"Waihorace",
 			"Xiaomingyan",
-			"LNDDYL"
+			"LNDDYL",
+			"Cwlin0416"
 		]
 	},
 	"confirmaccounts": "確認帳號請求",
@@ -81,7 +82,7 @@
 	"confirmaccount-acc": "帳戶請求已經成功確認；已經建立一個新的使用者帳號[[User:$1]]。",
 	"confirmaccount-rej": "帳戶請求已經成功拒絕。",
 	"confirmaccount-viewing": "（目前正由[[User:$1|$1]]瀏覽）",
-	"confirmaccount-summary": "創建新使用者的使用者頁面。",
+	"confirmaccount-summary": "建立新使用者的使用者頁面。",
 	"confirmaccount-welc": "'''歡迎來到''{{SITENAME}}''！'''\n我們希望您會作出更多更好的貢獻。\n您可能想先閱讀一下[{{MediaWiki:Helppage}} 說明頁面]。\n再次歡迎您，祝您愉快！",
 	"confirmaccount-wsum": "歡迎！",
 	"confirmaccount-email-subj": "{{SITENAME}}帳戶請求",

@@ -12,7 +12,8 @@
 			"Pertile",
 			"Sanbec",
 			"Translationista",
-			"VegaDark"
+			"VegaDark",
+			"Macofe"
 		]
 	},
 	"confirmaccounts": "Confirmar solicitudes de cuenta",
@@ -68,6 +69,7 @@
 	"confirmaccount-noreason": "(ninguna)",
 	"confirmaccount-autorej": "(esta solicitud ha sido automáticamente descartada debido a su inactividad)",
 	"confirmaccount-held": "({{GENDER:$1|marcado}} como «en espera» por [[User:$1|$1]] en $3 a las $4)",
+	"confirmaccount-blockip": "Bloquear dirección IP",
 	"confirmaccount-create": "Aceptar (crear cuenta)",
 	"confirmaccount-deny": "Rechazar (eliminar de lista)",
 	"confirmaccount-hold": "Mantener",

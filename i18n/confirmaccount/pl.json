@@ -10,7 +10,8 @@
 			"McMonster",
 			"Sp5uhe",
 			"ToSter",
-			"Wpedzich"
+			"Wpedzich",
+			"Chrumps"
 		]
 	},
 	"confirmaccounts": "Potwierdź wniosek o założenie konta użytkownika",
@@ -66,6 +67,7 @@
 	"confirmaccount-noreason": "(brak)",
 	"confirmaccount-autorej": "(wniosek został automatycznie odrzucony ze względu na brak aktywności)",
 	"confirmaccount-held": "(oznaczone jako „wstrzymane” przez użytkownika [[User:$1|$1]], z powodu $2)",
+	"confirmaccount-blockip": "Blokuj adres IP",
 	"confirmaccount-create": "Zaakceptuj (utwórz konto)",
 	"confirmaccount-deny": "Odrzuć (usuń z listy)",
 	"confirmaccount-hold": "Wstrzymaj",
