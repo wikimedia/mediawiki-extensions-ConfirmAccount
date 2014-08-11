@@ -58,6 +58,7 @@
 	"confirmaccount-noreason": "(нема)",
 	"confirmaccount-autorej": "(ова барање е автоматски отфрлено поради неактивност)",
 	"confirmaccount-held": "({{GENDER:$1|обележано}} како „на чекање“ од [[User:$1|$1]] на $3 во $4 ч.)",
+	"confirmaccount-blockip": "Блокирај IP-адреса",
 	"confirmaccount-create": "Прифати (создај сметка)",
 	"confirmaccount-deny": "Одбиј (отстрани од списокот)",
 	"confirmaccount-hold": "На чекање",

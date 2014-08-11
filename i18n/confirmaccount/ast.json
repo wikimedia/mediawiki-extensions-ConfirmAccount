@@ -57,6 +57,7 @@
 	"confirmaccount-noreason": "(nenguna)",
 	"confirmaccount-autorej": "(esta solicitú se descartó de mou automáticu por inactividá)",
 	"confirmaccount-held": "({{GENDER:$1|marcáu}} \"n'espera\" por [[User:$1|$1]] el $3 a les $4)",
+	"confirmaccount-blockip": "Bloquiar direición IP",
 	"confirmaccount-create": "Aceutar (crear cuenta)",
 	"confirmaccount-deny": "Refugar (quitar de la llista)",
 	"confirmaccount-hold": "N'espera",

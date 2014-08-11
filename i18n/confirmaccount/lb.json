@@ -57,6 +57,7 @@
 	"confirmaccount-noreason": "(keen)",
 	"confirmaccount-autorej": "(dës Ufro gouf automatesch wéint Inaktivitéit klasséiert)",
 	"confirmaccount-held": "(als \"am Gaang\" vum [[User:$1|Benotzer $1]] den $3 ëm $4 markéiert)",
+	"confirmaccount-blockip": "IP-Adress spären",
 	"confirmaccount-create": "Unhuelen (Benotzerkont opmaachen)",
 	"confirmaccount-deny": "Refuséieren (Benotzerkont gëtt geläscht)",
 	"confirmaccount-hold": "Ofwaarden",

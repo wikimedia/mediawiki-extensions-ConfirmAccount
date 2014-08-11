@@ -4,10 +4,12 @@
 			"Aksi great",
 			"Ashok modhvadia",
 			"Dineshjk",
-			"Dsvyas"
+			"Dsvyas",
+			"KartikMistry"
 		]
 	},
 	"confirmaccount-name": "સભ્ય નામ:",
+	"confirmaccount-blockip": "IP સરનામાં પર પ્રતિબંધ મૂકો",
 	"confirmaccount-summary": "નવા સભ્ય માટે સભ્ય પાનું બનાવી રહ્યા છો.",
 	"confirmaccount-wsum": "સુસ્વાગતમ્"
 }

@@ -68,6 +68,7 @@
 	"confirmaccount-noreason": "(nichts)",
 	"confirmaccount-autorej": "(dieser Antrag wurde automatisch wegen Inaktivität gestrichen)",
 	"confirmaccount-held": "({{GENDER:$1|markiert}} als „abwarten“ durch [[User:$1|$1]] am $3 um $4)",
+	"confirmaccount-blockip": "IP-Adresse sperren",
 	"confirmaccount-create": "Bestätigen (Konto anlegen)",
 	"confirmaccount-deny": "Ablehnen (Antrag löschen)",
 	"confirmaccount-hold": "Markiert mit „abwarten“",
