@@ -4,7 +4,8 @@
 			"Kaustubh",
 			"Kiranmayee",
 			"Siddhartha Ghai",
-			"आलोक"
+			"आलोक",
+			"संजीव कुमार"
 		]
 	},
 	"confirmaccounts": "खाते की माँग निश्चित करें",
@@ -53,6 +54,7 @@
 	"confirmaccount-noreason": "(बिल्कुल नहीं)",
 	"confirmaccount-autorej": "(यह माँग अकार्यक्षमता के चलते अपनेआप अस्वीकृत कर दी गई हैं)",
 	"confirmaccount-held": "([[User:$1|$1]] ने $2 पर \"प्रलंबित रखी हुई\" है)",
+	"confirmaccount-blockip": "आईपी पते को प्रतिबन्धित करें",
 	"confirmaccount-create": "स्वीकृती (खाता खोलें)",
 	"confirmaccount-deny": "अस्वीकृती (सूची से हटा दें)",
 	"confirmaccount-hold": "प्रलंबित रख्खें",

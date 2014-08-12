@@ -12,7 +12,8 @@
 			"M.M.S.",
 			"Najami",
 			"Per",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Lokal Profil"
 		]
 	},
 	"confirmaccounts": "Behandla kontoansökningar",
@@ -68,6 +69,7 @@
 	"confirmaccount-noreason": "(ingen)",
 	"confirmaccount-autorej": "(den här ansökningen har kasserats automatiskt på grund av inaktvitet)",
 	"confirmaccount-held": "({{GENDER:$1|markerad}} som \"avvaktande\" av [[User:$1|$1]] den $3 kl $4)",
+	"confirmaccount-blockip": "Blockera IP-adress",
 	"confirmaccount-create": "Godkänn (skapa konto)",
 	"confirmaccount-deny": "Avslå (stryk från listan)",
 	"confirmaccount-hold": "Avvakta",
