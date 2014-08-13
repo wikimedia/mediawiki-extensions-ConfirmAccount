@@ -12,7 +12,8 @@
 			"Rubin",
 			"Sasha Blashenkov",
 			"Александр Сигачёв",
-			"Rubin16"
+			"Rubin16",
+			"Okras"
 		]
 	},
 	"confirmaccounts": "Подтверждение запросов учётных записей",
@@ -68,6 +69,7 @@
 	"confirmaccount-noreason": "(нет)",
 	"confirmaccount-autorej": "(этот запрос был автоматически отвергнут из-за неактивности)",
 	"confirmaccount-held": "({{GENDER:$1|отложил|отложила}} [[User:$1|$1]], $3 в $4)",
+	"confirmaccount-blockip": "Блокировать IP-адрес",
 	"confirmaccount-create": "Утвердить (создать учётную запись)",
 	"confirmaccount-deny": "Отклонить (убрать из списка)",
 	"confirmaccount-hold": "Отложить",
