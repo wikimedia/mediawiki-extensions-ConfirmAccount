@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Pizza1016"
 		]
 	},
 	"confirmaccounts": "Sahkan permohonan akaun",
 	"confirmedit-desc": "Memberi birokrat kebolehan untuk mengesahkan permohonan akaun",
-	"confirmaccount-maintext": "'''Laman ini digunakan untuk mengesahkan permohonan akaun yang menunggu di ''{{SITENAME}}'''''.\n\nSetiap baris gilir permohonan akaun terdiri daripada tiga baris gilir kecil.\nSatu untuk permohonan terbuka, satu untuk permohonan yang digantung oleh pentadbir lain kerana menunggu maklumat lanjut, dan satu lagi untuk permohonan yang ditolak baru-baru ini.\n\nApabila membalas permohonan, sila kajinya dengan teliti, dan jika perlu, sahkan maklumat yang terkandung dalamnya.\nTindakan anda akan dilogkan secara rahsia.\nAnda juga dijangka mengkaji sebarang aktiviti yang berlaku di sini selain yang anda lakukan.",
+	"confirmaccount-maintext": "'''Laman ini digunakan untuk mengesahkan permohonan akaun yang menunggu di ''{{SITENAME}}'''''.\n\nSetiap baris gilir permohonan akaun terdiri daripada tiga baris gilir kecil.\nSatu untuk permohonan terbuka, satu untuk permohonan yang digantung oleh penyelia lain kerana menunggu maklumat lanjut, dan satu lagi untuk permohonan yang ditolak baru-baru ini.\n\nApabila sedang membalas sebuah permohonan, sila kajinya dengan teliti, dan jika perlu, sahkan maklumat yang terkandung dalamnya.\nTindakan anda akan dilogkan secara rahsia.\nAnda juga dijangka mengkaji sebarang aktiviti yang berlaku di sini selain yang anda sendiri lakukan.",
 	"confirmaccount-list": "Berikut ialah senarai permohonan akaun yang menunggu kelulusan.\nSebaik sahaja permohonan diterima atau ditolak, ia akan dipadamkan dari senarai ini.",
-	"confirmaccount-list2": "Berikut ialah senarai permohonan akaun yang ditolak baru-baru ini dan mungkin akan dihapuskan secara automatik selepas beberapa hari.\nIa masih boleh diluluskan menjadi akaun, tetapi anda harus berunding dengan pentadbir yang membuat penolakan terlebih dahulu sebelum berbuat demikian.",
+	"confirmaccount-list2": "Berikut ialah senarai permohonan akaun yang ditolak baru-baru ini dan mungkin akan dihapuskan secara automatik selepas beberapa hari.\nIa masih boleh diluluskan menjadi akaun, tetapi anda mungkin mahu berunding dengan penyelia yang membuat penolakan tersebut terlebih dahulu sebelum berbuat demikian.",
 	"confirmaccount-list3": "Berikut ialah senarai permohonan akaun luput yang mungkin akan dihapuskan secara automatik selepas beberapa hari.\nIa masih boleh diluluskan menjadi akaun.",
 	"confirmaccount-text": "Ini ialah permohonan akaun pengguna yang menunggu di '''{{SITENAME}}'''.\n\nSila kaji maklumat berikut secara teliti.\nJika anda ingin meluluskan permohoan ini, gunakan juntai bawah posisi untuk menetapkan status akaun pengguna.\nSuntingan yang dilakukan pada biografi aplikasi tidak akan mempengaruhi sebarang storan kelayakan yang kekal.\nIngat, anda boleh memilih untuk membuka akaun itu dengan nama pengguna yang lain.\nGunakan ini untuk mengelakkan percanggahan dengan nama lain sahaja.\n\nJika anda membiarkan laman ini begitu sahaja tanpa mengesahkan atau menolak permohonan ini, ia akan kekal menunggu.",
 	"confirmaccount-none-o": "Buat masa ini, tiada permohonan akaun menunggu yang terbuka dalam senarai ini.",

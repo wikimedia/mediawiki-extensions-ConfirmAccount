@@ -6,7 +6,8 @@
 			"Egmontaz",
 			"Glavkos",
 			"Omnipaedista",
-			"ZaDiak"
+			"ZaDiak",
+			"Geraki"
 		]
 	},
 	"confirmaccounts": "Επιβεβαίωση αιτήσεων λογαριασμών",
@@ -44,6 +45,7 @@
 	"confirmaccount-none-p": "(δεν παρέχεται)",
 	"confirmaccount-econf": "(επιβεβαιωμένοι)",
 	"confirmaccount-noreason": "(κανένα)",
+	"confirmaccount-blockip": "Φραγή διεύθυνσης IP",
 	"confirmaccount-create": "Αποδοχή (Δημιουργία λογαριασμού)",
 	"confirmaccount-deny": "Απόρριψη (αφαίρεση από τη λίστα)",
 	"confirmaccount-hold": "Κράτημα",
