@@ -61,6 +61,7 @@
 	"confirmaccount-noreason": "(hiçbiri)",
 	"confirmaccount-autorej": "(bu istek, etkin olmama nedeniyle otomatik olarak iptal edildi)",
 	"confirmaccount-held": "($2 tarihinde [[User:$1|$1]] tarafından \"askıda\" olarak işaretlendi)",
+	"confirmaccount-blockip": "IP adresini engelle",
 	"confirmaccount-create": "Kabul et (hesabı oluştur)",
 	"confirmaccount-deny": "Reddet (listeden çıkar)",
 	"confirmaccount-hold": "Askıya al",
