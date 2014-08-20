@@ -66,7 +66,7 @@
 	"confirmaccount-noreason": "Used if the reason is empty.\n\nThis message follows the message {{msg-mw|Confirmaccount-rational}}.\n{{Identical|None}}",
 	"confirmaccount-autorej": "Used as comment for the old stale request to explain why it has been rejected automatically.",
 	"confirmaccount-held": "Parameters:\n* $1 - username, can be used for GENDER\n* $2 - (Optional) timestamp (time and date)\n* $3 - date\n* $4 - time\nSee also:\n* {{msg-mw|Confirmaccount-reject}}",
-	"confirmaccount-blockip": "Used as a link to block requesting user's IP address during request review.",
+	"confirmaccount-blockip": "Used as a link to block requesting user's IP address during request review.\n\nThe link points to [[Special:Block]].",
 	"confirmaccount-create": "Used as label for the radiobox.\n{{Identical|Confirmaccount-submit}}",
 	"confirmaccount-deny": "Used as label for the radiobox.\n\n\"delist\" means about \"remove from the list\".\n{{Identical|Confirmaccount-submit}}",
 	"confirmaccount-hold": "Used as label for the radiobox.\n{{Identical|Confirmaccount-submit}}",

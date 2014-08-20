@@ -62,6 +62,7 @@
 	"confirmaccount-noreason": "(なし)",
 	"confirmaccount-autorej": "(この申請は活動停止のため自動的に廃棄されました)",
 	"confirmaccount-held": "([[User:$1|$1]]が$3$4に「保留」の{{GENDER:$1|判断}})",
+	"confirmaccount-blockip": "IP アドレスをブロック",
 	"confirmaccount-create": "承認 (アカウント作成)",
 	"confirmaccount-deny": "棄却 (一覧から削除)",
 	"confirmaccount-hold": "保留",
