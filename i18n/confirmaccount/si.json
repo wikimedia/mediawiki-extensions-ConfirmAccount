@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Indunil Chamara"
 		]
 	},
 	"confirmaccounts": "ගිණුම් අයදුම් තහවුරු කරන්න",
@@ -40,6 +41,7 @@
 	"confirmaccount-econf": "(තහවුරු කෙරිණි)",
 	"confirmaccount-withcv": "(CV අමුණා ඇත)",
 	"confirmaccount-noreason": "(කිසිවක් නොමැත)",
+	"confirmaccount-blockip": "මෙම IP address එක අවහිර කරන්න",
 	"confirmaccount-create": "පිළිගන්න (ගිණුම තනන්න)",
 	"confirmaccount-deny": "ප්‍රතික්ෂේප කරන්න (ලැයිස්තුගත නොකරන්න)",
 	"confirmaccount-hold": "රඳවාගන්න",

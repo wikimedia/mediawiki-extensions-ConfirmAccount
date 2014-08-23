@@ -59,6 +59,7 @@
 	"confirmaccount-noreason": "(hini ebet)",
 	"confirmaccount-autorej": "(distaolet eo bet ar goulenn-mañ ent emgefre abalamour d'an dioberiantiz)",
 	"confirmaccount-held": "({{GENDER:$1|merket}} \"miret\" gant [[User:$1|$1]] d'an $3 da $4)",
+	"confirmaccount-blockip": "Stankañ ar chomlec'h IP",
 	"confirmaccount-create": "Asantiñ (krouiñ ar gont)",
 	"confirmaccount-deny": "Disteurel (lemel eus ar roll)",
 	"confirmaccount-hold": "Mirout",

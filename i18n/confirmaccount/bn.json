@@ -45,6 +45,7 @@
 	"confirmaccount-reject": "($3 $4টার সময় [[ব্যবহারকারী:$1|$1]] দ্বারা {{GENDER:$1|বাতিল হয়েছে}})",
 	"confirmaccount-noreason": "(কিছু নাই)",
 	"confirmaccount-autorej": "এই অনুরোধটি নিষ্ক্রিয়তার কারণে স্বয়ংক্রিয়ভাবে বাতিল হয়ে গেছে",
+	"confirmaccount-blockip": "IP ঠিকানা অবরুদ্ধ করুন",
 	"confirmaccount-create": "গৃহীত (অ্যাকাউন্ট তৈরি)",
 	"confirmaccount-deny": "বাতিল (তালিকা থেকে বাতিল)",
 	"confirmaccount-hold": "অপেক্ষমান",

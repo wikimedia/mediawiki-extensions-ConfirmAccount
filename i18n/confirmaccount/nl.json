@@ -3,7 +3,8 @@
 		"authors": [
 			"Annabel",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"confirmaccounts": "Gebruikersaanvragen bevestigen",
@@ -59,6 +60,7 @@
 	"confirmaccount-noreason": "(geen)",
 	"confirmaccount-autorej": "(deze aanvraag is automatisch afgebroken wegens inactiviteit)",
 	"confirmaccount-held": "(\"{{GENDER:$1|aangehouden}}\" door [[User:$1|$1]] op $3 om $4)",
+	"confirmaccount-blockip": "IP-adres blokkeren",
 	"confirmaccount-create": "Toelaten (gebruiker aanmaken)",
 	"confirmaccount-deny": "Afwijzen (verwijderen)",
 	"confirmaccount-hold": "Aanhouden",
