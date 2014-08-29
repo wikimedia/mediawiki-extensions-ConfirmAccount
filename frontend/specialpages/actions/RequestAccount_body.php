@@ -351,7 +351,7 @@ class RequestAccountPage extends SpecialPage {
 	 * @return void
 	 */
 	protected function confirmEmailToken( $code ) {
-		global $wgConfirmAccountContact, $wgPasswordSender, $wgPasswordSenderName;
+		global $wgConfirmAccountContact, $wgPasswordSender;
 
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
@@ -372,7 +372,7 @@ class RequestAccountPage extends SpecialPage {
 						$title->getFullUrl() )->inContentLanguage()->escaped();
 				# Actually send the email...
 				if ( $wgConfirmAccountContact != '' ) {
-					$source = new MailAddress( $wgPasswordSender, $wgPasswordSenderName );
+					$source = new MailAddress( $wgPasswordSender, wfMessage( 'emailsender' )->text() );
 					$target = new MailAddress( $wgConfirmAccountContact );
 					$result = UserMailer::send( $target, $source, $subject, $body );
 					if ( !$result->isOK() ) {
