@@ -7,6 +7,7 @@
 		]
 	},
 	"requestaccount": "Goulenn ur gont implijer",
+	"requestaccount-login": "Goulenn ur gont",
 	"requestaccount-text": "'''Leugnit hag adkasit ar furmskird a-is evit goulenn ur gont implijer'''.\n\nHo pet sur da vezañ lennet mat [[{{MediaWiki:Requestaccount-page}}|Termenoù ar servij]] da gentañ a-raok goulenn krouiñ ur gont.\n\nUr wezh aprouet ar gont e vo kaset deoc'h ur gemennadenn der bostel hag e c'hallot implijout ho kont war [[Special:UserLogin|ar bajenn gevreañ]].",
 	"requestaccount-page": "{{ns:project}}: Amplegadoù implijout",
 	"requestaccount-dup": "'''Notenn : Kevreet oc'h dija gant ur gont marilhet.'''",
@@ -15,7 +16,7 @@
 	"requestaccount-leg-person": "Titouroù personel",
 	"requestaccount-leg-other": "Titouroù all",
 	"requestaccount-leg-tos": "Divizoù servij",
-	"requestaccount-acc-text": "Kaset e vo ur c'hemenn kadarnaat d'ho chomlec'h postel kerkent ha ma vo bet kaset ar goulenn.\nRespontit d'ar c'hemenn en ur glikañ war al liamm kadarnaat a gavot er postel.\nKaset e vo deoc'h ho ker-tremen dre bostel ivez pa vo bet krouet ho kont ganeoc'h.",
+	"requestaccount-acc-text": "Kaset e vo ur c'hemenn kadarnaat d'ho chomlec'h postel kerkent ha ma vo bet kaset ar goulenn. Ne vo ket mebannet ar chomlec'h.\nRespontit d'ar c'hemenn en ur glikañ war al liamm kadarnaat a gavot er postel.\nKaset e vo deoc'h ho ker-tremen dre bostel ivez pa vo bet krouet ho kont ganeoc'h.",
 	"requestaccount-areas-text": "Dibabit an tachennoù ma'z oc'h barrek da vat, pe ar re ma'z oc'h tuet da gemer perzh ar muiañ.",
 	"requestaccount-ext-text": "Prevez e chomo an titour da-heul ha n'hallo bezañ implijet nemet evit ar reked-mañ.\nGallout a rit rollañ darempredoù evel an niverennoù pellgomz evit kaout un tamm skoazell da gadarnaat piv oc'h.",
 	"requestaccount-bio-text": "Klaskit merkañ tammoù testenioù talvoudus diwar-benn ho puhezskrid amañ dindan.",
