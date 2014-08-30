@@ -458,7 +458,7 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'RequestAccount' => array( '請求帳戶' ),
-	'ConfirmAccounts' => array( '確認帳戶' ),
-	'UserCredentials' => array( '使用者憑據' ),
+	'RequestAccount' => array( '請求帳號' ),
+	'ConfirmAccounts' => array( '確認帳號' ),
+	'UserCredentials' => array( '使用者憑證' ),
 );
