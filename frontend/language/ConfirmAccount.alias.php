@@ -261,6 +261,12 @@ $specialPageAliases['lb'] = array(
 	'UserCredentials' => array( 'Benotzerinformatiounen' ),
 );
 
+/** Malagasy (Malagasy) */
+$specialPageAliases['mg'] = array(
+	'RequestAccount' => array( 'Hangataka_kaonty', 'HangatakaKaonty' ),
+	'ConfirmAccounts' => array( 'Hanamarina_kaonty', 'HanamarinaKaonty' ),
+);
+
 /** Minangkabau (Baso Minangkabau) */
 $specialPageAliases['min'] = array(
 	'RequestAccount' => array( 'PamintaanAkun' ),
