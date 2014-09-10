@@ -6,7 +6,8 @@
 			"Mach",
 			"Suelnur",
 			"Vito Genovese",
-			"Sayginer"
+			"Sayginer",
+			"Meelo"
 		]
 	},
 	"confirmaccounts": "Hesap isteklerini onayla",
@@ -77,7 +78,7 @@
 	"confirmaccount-viewing": "(şu an [[User:$1|$1]] tarafından inceleniyor)",
 	"confirmaccount-summary": "Yeni kullanıcının biyografisi ile kullanıcı sayfası oluşturuluyor.",
 	"confirmaccount-welc": "'''''{{SITENAME}}'' projesine hoş geldiniz!'''\nUzun sürede çok katkı yapmanızı umarız.\nMuhtemelen [{{MediaWiki:Helppage}} yardım sayfalarını] okumak isteyeceksiniz.\nTekrar hoş geldiniz, iyi eğlenceler!",
-	"confirmaccount-wsum": "Hoşgeldiniz!",
+	"confirmaccount-wsum": "Hoş geldiniz!",
 	"confirmaccount-email-subj": "{{SITENAME}} hesap isteği",
 	"confirmaccount-email-body": "{{SITENAME}} üzerindeki hesap isteğiniz onaylandı.\n\nHesap adı: $1\n\nParola: $2\n\nGüvenlik nedeniyleriyle ilk oturum açışınızda parolanızı değiştirmeniz gerekecek.\nOturum açmak için, lütfen {{fullurl:Special:UserLogin}} sayfasını ziyaret edin.",
 	"confirmaccount-email-body2": "{{SITENAME}} üzerindeki hesap isteğiniz onaylandı.\n\nHesap adı: $1\n\nParola: $2\n\n$3\n\nGüvenlik nedeniyle ilk oturum açışınızda parolanızı değiştirmeniz gerekecek.\nOturum açmak için lütfen {{fullurl:Special:UserLogin}} sayfasını ziyaret edin.",
