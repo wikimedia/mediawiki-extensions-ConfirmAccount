@@ -66,6 +66,7 @@
 	"confirmaccount-noreason": "(нема)",
 	"confirmaccount-autorej": "(цей запит було автоматично відкинуто через неактивність)",
 	"confirmaccount-held": "({{GENDER:$1|відклав|відклала}} [[User:$1|$1]] $3 о $4)",
+	"confirmaccount-blockip": "Заблокувати IP-адресу",
 	"confirmaccount-create": "Підтвердити (створити обліковий запис)",
 	"confirmaccount-deny": "Відхилити (вилучити зі списку)",
 	"confirmaccount-hold": "Відкласти",
