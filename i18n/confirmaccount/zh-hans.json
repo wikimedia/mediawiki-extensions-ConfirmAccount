@@ -25,7 +25,7 @@
 	"confirmaccount-none-h": "在当前列表中没有被挂起的帐号请求。",
 	"confirmaccount-none-r": "在当前列表中没有刚刚被拒绝的帐号请求。",
 	"confirmaccount-none-e": "该列表中目前没有过期的账户请求。",
-	"confirmaccount-real-q": "用户名",
+	"confirmaccount-real-q": "真实姓名",
 	"confirmaccount-email-q": "电子邮箱",
 	"confirmaccount-bio-q": "个人简介",
 	"confirmaccount-showopen": "开放的请求",

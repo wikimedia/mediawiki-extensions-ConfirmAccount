@@ -56,7 +56,7 @@
 	"confirmaccount-urls": "فهرست وبگاه‌ها:",
 	"confirmaccount-none-p": "(تامین نشده)",
 	"confirmaccount-confirm": "از گزینه‌های زیر برای قبول کردن،رد کردن، یا نگه داشتن این درخواست استفاده کنید:",
-	"confirmaccount-econf": "(تأیید شده)",
+	"confirmaccount-econf": "(تأییدشده)",
 	"confirmaccount-withcv": "(رزومه پیوست شده)",
 	"confirmaccount-reject": "({{GENDER:$1|rejected}} by [[User:$1|$1]] on $3 at $4)",
 	"confirmaccount-rational": "اصول و دلایل داده شده به متقاضی:",
