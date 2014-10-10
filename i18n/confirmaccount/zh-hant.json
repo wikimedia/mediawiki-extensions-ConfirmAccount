@@ -10,7 +10,8 @@
 			"Waihorace",
 			"Xiaomingyan",
 			"LNDDYL",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Liuxinyu970226"
 		]
 	},
 	"confirmaccounts": "確認帳號請求",
@@ -73,7 +74,7 @@
 	"confirmaccount-reason": "註解 （在電郵中使用）:",
 	"confirmaccount-ip": "IP位址：",
 	"confirmaccount-xff": "X-Forwarded-For:",
-	"confirmaccount-agent": "User-Agent:",
+	"confirmaccount-agent": "使用者-代理：",
 	"confirmaccount-legend": "批准/拒絕這個帳號",
 	"confirmaccount-submit": "確認",
 	"confirmaccount-needreason": "您必須在下方的評論欄闡述您的理由。",
