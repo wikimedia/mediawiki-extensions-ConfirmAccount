@@ -42,7 +42,7 @@
 	"requestaccount-sent": "Uw gebruikersaanvraag is verstuurd en wacht om nagekeken te worden.\nEr is ter bevestiging een e-mail naar uw e-mailadres gezonden.",
 	"request-account-econf": "Uw e-mailadres is bevestigd en wordt in uw gebruikersaanvraag opgenomen.",
 	"requestaccount-email-subj": "{{SITENAME}} bevestiging e-mailadres",
-	"requestaccount-email-body": "Iemand, waarschijnlijk u, heeft vanaf IP-adres $1 op {{SITENAME}} een aanvraag gedaan\nvoor het aanmaken van gebruiker \"$2\" met dit e-mailadres.\n\nOpen de onderstaande koppeling in uw browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij u hoort:\n\n$3\n\nAls de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, gebruik de koppeling dan *niet*. \nDeze link is geldig tot $4.",
+	"requestaccount-email-body": "Iemand, waarschijnlijk u, heeft vanaf IP-adres $1 op {{SITENAME}} een aanvraag gedaan\nvoor het aanmaken van gebruiker \"$2\" met dit e-mailadres.\n\nOpen de onderstaande koppeling in uw browser om te bevestigen dat deze gebruiker op {{SITENAME}} daadwerkelijk bij u hoort:\n\n$3\n\nAls de gebruiker is aangemaakt krijgt alleen u een e-mail met het wachtwoord. Als de aanvraag niet van u afkomstig is, gebruik de koppeling dan *niet*. \nDeze koppeling is geldig tot $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} gebruikersaanvragen",
 	"requestaccount-email-body-admin": "\"$1\" heeft een gebruiker aangevraagd en wacht op bevestiging.\nHet e-mailadres is bevestigd.\nU kunt de aanvraag hier \"$2\" bevestigen.",
 	"acct_request_throttle_hit": "U hebt al $1 {{PLURAL:$1|gebruikersaanvraag|gebruikersaanvragen}} gedaan.\nU kunt geen nieuwe aanvragen meer uitbrengen."
