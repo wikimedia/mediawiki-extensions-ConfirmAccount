@@ -8,6 +8,7 @@
 		]
 	},
 	"requestaccount": "Solicitare deschidere cont",
+	"requestaccount-login": "Cereți un cont",
 	"requestaccount-text": "'''Completează și aplică următorul formular pentru a cere deschiderea unui cont de utilizator'''.\n\nAsigură-te că ai citit [[{{MediaWiki:Requestaccount-page}}|Termenii]] înainte de a cere deschiderea unui cont.\n\nDupă ce contul va fi aprobat, vei fi anunțat printr-un mesaj trimis prin e-mail, iar contul va putea fi accesat apelând [[Special:UserLogin|autentificare]].",
 	"requestaccount-page": "{{ns:project}}:Termeni",
 	"requestaccount-dup": "'''Notă: Sunteţi deja autentificat cu un cont înregistrat.'''",

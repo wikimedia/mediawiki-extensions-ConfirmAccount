@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"HanV",
-			"Siebrand"
+			"Siebrand",
+			"Nemo bis"
 		]
 	},
 	"requestaccount-text": "'''Vul het onderstaande formulier in en sla het op om een gebruiker aan te vragen'''. \n\nZorg ervoor dat je eerst de [[{{MediaWiki:Requestaccount-page}}|voorwaarden]] leest voordat je een gebruiker aanvraagt.\n\nAls je aanvraag is goedgekeurd, krijg je een e-mail en daarna kan je je [[Special:UserLogin|aanmelden]].",

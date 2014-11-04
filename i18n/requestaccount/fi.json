@@ -10,7 +10,8 @@
 			"Str4nd",
 			"Taleman",
 			"Varusmies",
-			"Nedergard"
+			"Nedergard",
+			"Pxos"
 		]
 	},
 	"requestaccount": "Pyydä käyttäjätunnusta",
@@ -25,7 +26,7 @@
 	"requestaccount-acc-text": "Vahvistusviesti lähetetään sähköpostiisi, kun lähetät pyynnön. Osoitetta ei julkaista.\nVastaa napsauttamaalla vahvistuslinkkiä sähköpostissa.\nSaat salasanasi sähköpostitse, kun käyttäjätunnuksesi on luotu.",
 	"requestaccount-areas-text": "Valitse alta alueet, joissa olet asiantuntija tai joiden parissa haluaisit enimmäkseen työskennellä.",
 	"requestaccount-ext-text": "Seuraavat tiedot pidetään luottamuksellisina ja niitä käytetään vain tämän pyynnön käsittelyssä.\nHaluat ehkä antaa tunnistamista helpottavia yhteystietoja, puhelinnumeron esimerkiksi.",
-	"requestaccount-bio-text": "Kuvauksestasi tulee käyttäjäsivusi oletussisältö.\nKirjoita omiin tietoihisi erikoisosaamisistasi ja pätevyyksistäsi. Muista, että nämä tiedot julkaistaan.\nVoit muuttaa nimeäsi [[Special:Preferences|asetussivulla]].",
+	"requestaccount-bio-text": "Yritä kirjoittaa kaikki olennaiset tiedot itsestäsi omaelämäkertaasi eli kuvaukseesi itsestäsi.",
 	"requestaccount-real": "Oikea nimi:",
 	"requestaccount-same": "(sama kuin oikea nimi)",
 	"requestaccount-email": "Sähköpostiosoite:",
