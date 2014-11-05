@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Snakesteuben"
+			"Snakesteuben",
+			"Robin0van0der0vliet"
 		]
 	},
 	"confirmaccount-real-q": "Namme",
-	"confirmaccount-name": "Meidoggernamme",
+	"confirmaccount-email-q": "E-mail",
+	"confirmaccount-name": "Brûkersnamme",
 	"confirmaccount-real": "Namme:",
+	"confirmaccount-email": "E-mail:",
 	"confirmaccount-pos-0": "auteur",
 	"confirmaccount-pos-1": "redakteur",
 	"confirmaccount-noreason": "(gjin)"

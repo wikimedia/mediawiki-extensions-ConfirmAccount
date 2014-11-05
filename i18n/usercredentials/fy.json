@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Snakesteuben"
+			"Snakesteuben",
+			"Robin0van0der0vliet"
 		]
 	},
-	"usercredentials-user": "Meidoggernamme:"
+	"usercredentials-user": "Brûkersnamme:"
 }
