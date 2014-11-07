@@ -7,10 +7,12 @@
 	},
 	"confirmaccount-real-q": "Namme",
 	"confirmaccount-email-q": "E-mail",
+	"confirmaccount-bio-q": "Biografy",
 	"confirmaccount-name": "Brûkersnamme",
 	"confirmaccount-real": "Namme:",
 	"confirmaccount-email": "E-mail:",
 	"confirmaccount-pos-0": "auteur",
 	"confirmaccount-pos-1": "redakteur",
+	"confirmaccount-bio": "Biografy:",
 	"confirmaccount-noreason": "(gjin)"
 }
