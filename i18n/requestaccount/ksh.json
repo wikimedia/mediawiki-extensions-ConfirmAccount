@@ -5,6 +5,7 @@
 		]
 	},
 	"requestaccount": "Noh em Zojang als Metmaacher frore",
+	"requestaccount-login": "Noh enem Zojang als Metmaacher frore",
 	"requestaccount-text": "'''Donn dat Formblatt unge ußfölle un afschecke, öm noh enem Zohjang als Metmaacher ze froore.'''\n\nDonn op jede Fall eets de Sigg [[{{MediaWiki:Requestaccount-page}}|{{int:requestaccount-leg-tos}}]] lesse, ih dat De hee Ding Aanfrooch shtälls.\n\nSobald De ene Zohjang kräje häß, kriß De en <i lang=\"en\">e-mail</i> jescheck, un Do kanns Desch hee [[Special:UserLogin|enlogge]].",
 	"requestaccount-page": "{{ns:project}}:{{int:requestaccount-leg-tos}}",
 	"requestaccount-dup": "'''Opjepaß: Do bes ald enjelogg met enem zohjelohße Metmaacher-Name.'''",
