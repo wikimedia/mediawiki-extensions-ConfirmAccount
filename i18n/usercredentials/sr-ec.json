@@ -3,7 +3,8 @@
 		"authors": [
 			"Rancher",
 			"Sasa Stefanovic",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Milicevic01"
 		]
 	},
 	"usercredentials-user": "Корисничко име:",
@@ -18,6 +19,6 @@
 	"usercredentials-attach": "Резиме/CV:",
 	"usercredentials-notes": "Додатне напомене:",
 	"usercredentials-urls": "Списак вебсајтова:",
-	"usercredentials-ip": "Оригинална IP адреса:",
+	"usercredentials-ip": "Оригинална ИП адреса:",
 	"usercredentials-member": "Права:"
 }
