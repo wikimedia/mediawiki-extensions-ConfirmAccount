@@ -66,7 +66,7 @@
 	"confirmaccount-reason": "Коментар (ќе биде вклучен во е-поштата):",
 	"confirmaccount-ip": "IP-адреса:",
 	"confirmaccount-xff": "X-Forwarded-For:",
-	"confirmaccount-agent": "Кориснички извршител:",
+	"confirmaccount-agent": "Кориснички вршител:",
 	"confirmaccount-legend": "Прифати/одбиј ја оваа корисничка сметка",
 	"confirmaccount-submit": "Потврди",
 	"confirmaccount-needreason": "Морате да наведете причина во полето за коментар подолу.",
