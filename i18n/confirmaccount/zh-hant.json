@@ -67,6 +67,7 @@
 	"confirmaccount-noreason": "（無）",
 	"confirmaccount-autorej": "（此請求已因為無活動而自動被回絕）",
 	"confirmaccount-held": "(在$3 $4 被[[User:$1|$1]]{{GENDER:$1|標記}}為\"掛起\")",
+	"confirmaccount-blockip": "封禁IP地址",
 	"confirmaccount-create": "接受 （建立帳號）",
 	"confirmaccount-deny": "拒絕 （反列示）",
 	"confirmaccount-hold": "掛起",
