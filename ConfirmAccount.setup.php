@@ -38,6 +38,7 @@ class ConfirmAccountSetup {
 		$messagesFiles['RequestAccountPage'] = "$langDir/RequestAccountPage.i18n.php";
 		# UI to confirm accounts
 		$classes['ConfirmAccountsPage'] = "$spActionDir/ConfirmAccount_body.php";
+		$classes['ConfirmAccountsPager'] = "$spActionDir/ConfirmAccount_body.php";
 		$wgMessagesDirs['ConfirmAccountPage'] = __DIR__ . '/i18n/confirmaccount';
 		$messagesFiles['ConfirmAccountPage'] = "$langDir/ConfirmAccountPage.i18n.php";
 		# UI to see account credentials
