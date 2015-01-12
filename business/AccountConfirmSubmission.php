@@ -256,13 +256,14 @@ class AccountConfirmSubmission {
 		# Prepare a temporary password email...
 		if ( $this->reason != '' ) {
 			$msg = "confirmaccount-email-body2-pos{$this->type}";
+			$msgObj = $context->msg( $msg, $user->getName(), $p, $this->reason );
 			# If the user is in a group and there is a welcome for that group, use it
-			if ( $group && !wfEmptyMsg( $msg ) ) {
-				$ebody = $context->msg( $msg, $user->getName(), $p, $this->reason )->inContentLanguage()->text();
+			if ( $group && !$msgObj->isDisabled() ) {
+				$ebody = $msgObj->inContentLanguage()->text();
 			# Use standard if none found...
 			} else {
 				$ebody = $context->msg( 'confirmaccount-email-body2',
-					$user->getName(), $p, $this->reason )->inContentLanguage()->text();
+				       	$user->getName(), $p, $this->reason )->inContentLanguage()->text();
 			}
 		} else {
 			$msg = "confirmaccount-email-body-pos{$this->type}";
@@ -430,10 +431,10 @@ class AccountConfirmSubmission {
 		global $wgAutoWelcomeNewUsers;
 
 		if ( $wgAutoWelcomeNewUsers ) {
-			$msg = "confirmaccount-welc-pos{$this->type}";
-			$welcome = wfEmptyMsg( $msg )
+			$msgObj = wfMessage( "confirmaccount-welc-pos{$this->type}" );
+			$welcome = $msgObj->isDisabled()
 				? wfMessage( 'confirmaccount-welc' )->text()
-				: wfMessage( $msg )->text(); // custom message
+				: $msgObj->text(); // custom message
 			# Add user welcome message!
 			$article = new WikiPage( $user->getTalkPage() );
 			$article->doEdit(
