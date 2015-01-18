@@ -441,6 +441,7 @@ $specialPageAliases['uk'] = array(
 
 /** Urdu (اردو) */
 $specialPageAliases['ur'] = array(
+	'RequestAccount' => array( 'درخواست_کھاتہ' ),
 	'ConfirmAccounts' => array( 'تصدیق_کھاتہ_جات' ),
 );
 
