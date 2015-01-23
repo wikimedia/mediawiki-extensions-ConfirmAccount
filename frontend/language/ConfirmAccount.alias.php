@@ -36,6 +36,11 @@ $specialPageAliases['as'] = array(
 	'ConfirmAccounts' => array( 'একাউণ্ট_নিশ্চিত_কৰক' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'RequestAccount' => array( 'Запросить_учётную_запись' ),
+);
+
 /** Bashkir (башҡортса) */
 $specialPageAliases['ba'] = array(
 	'RequestAccount' => array( 'RequestAccount' ),
