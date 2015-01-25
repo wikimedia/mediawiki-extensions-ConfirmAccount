@@ -19,5 +19,6 @@
 	"requestaccount-loginnotice": "Um ein neues Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
 	"right-confirmaccount": "Die [[Special:ConfirmAccounts|Warteschlange der angefragten Benutzerkonten]] sehen",
 	"right-requestips": "Die IP-Adresse des Anfragers für ein Benutzerkonto sehen",
-	"right-lookupcredentials": "[[Special:UserCredentials|Benutzerempfehlungsschreiben]] sehen"
+	"right-lookupcredentials": "[[Special:UserCredentials|Benutzerempfehlungsschreiben]] sehen",
+	"action-confirmaccount": "Benutzerkonten zu überprüfen und zu akzeptieren"
 }
