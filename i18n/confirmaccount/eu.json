@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"An13sa",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Subi"
 		]
 	},
 	"confirmaccount-real-q": "Izena",
@@ -11,6 +12,8 @@
 	"confirmaccount-showopen": "irekitako eskariak",
 	"confirmaccount-showrej": "gaitzestutako eskariak",
 	"confirmaccount-showexp": "iraungitako eskariak",
+	"confirmaccount-all": "(erakutsi ilara guztiak)",
+	"confirmaccount-type": "Ilara:",
 	"confirmaccount-leg-user": "Erabiltzaile kontua",
 	"confirmaccount-leg-person": "Norberaren informazioa",
 	"confirmaccount-leg-other": "Bestelako informazioa",
