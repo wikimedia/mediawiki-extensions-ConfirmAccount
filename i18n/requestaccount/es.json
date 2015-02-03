@@ -48,7 +48,7 @@
 	"requestaccount-tos": "He leído y estoy de acuerdo con los [[{{MediaWiki:Requestaccount-page}}|términos del servicio]] de {{SITENAME}}. El nombre que especificado bajo \"Nombre real\" es de hecho mi propio nombre real.",
 	"requestaccount-submit": "Solicitar cuenta",
 	"requestaccount-sent": "Tu solicitud de cuenta ha sido exitosamente enviado y está ahora en una revisión pendiente.\nUn correo electrónico de confirmación ha sido enviado a tu dirección de correo electrónico.",
-	"request-account-econf": "Tu correo electrónico ha sido onfirmado y será listado como tal en tu solicitud de cuenta.",
+	"request-account-econf": "Tu correo electrónico ha sido confirmado y será listado como tal en tu solicitud de cuenta.",
 	"requestaccount-email-subj": "{{SITENAME}} confirmación de dirección de correo electrónico",
 	"requestaccount-email-body": "Alguien, probablemente tú con la dirección de IP $1, ha solicitado una cuenta \"$2\" con esta dirección de correo electrónico en {{SITENAME}}.\n\nAbre el siguiente vínculo en tu navegador para confirmar que realmente esta es tu cuenta en {{SITENAME}}:\n\n$3\n\nSi se crea la cuenta, se te enviará la contraseña sólo a ti.\nSi esta *no* es tu cuenta, no abras el vínculo.\nEste código de confirmación caducará el $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} solicitud de cuenta",
