@@ -82,7 +82,7 @@ $wgConfirmAccountFSRepos = array(
 	'accountreqs' => array( # Location of attached files for pending requests
 		'name'       => 'accountreqs',
 		'directory'  => isset( $wgFileStore['accountreqs'] ) ?
-			$wgFileStore['accountreqs']['directory'] : "{$IP}/images/accountreqs",
+			$wgFileStore['accountreqs']['directory'] : $wgUploadDirectory . "/accountreqs",
 		'url'        => isset( $wgFileStore['accountreqs'] ) ?
 			$wgFileStore['accountreqs']['url'] : null,
 		'hashLevels' => isset( $wgFileStore['accountreqs'] ) ?
@@ -91,7 +91,7 @@ $wgConfirmAccountFSRepos = array(
 	'accountcreds' => array( # Location of credential files
 		'name'       => 'accountcreds',
 		'directory'  => isset( $wgFileStore['accountcreds'] ) ?
-			$wgFileStore['accountcreds']['directory'] : "{$IP}/images/accountcreds",
+			$wgFileStore['accountcreds']['directory'] : $wgUploadDirectory . "/accountcreds",
 		'url'        => isset( $wgFileStore['accountcreds'] ) ?
 			$wgFileStore['accountcreds']['url'] : null,
 		'hashLevels' => isset( $wgFileStore['accountcreds'] ) ?
