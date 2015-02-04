@@ -4,7 +4,8 @@
 			"Alma",
 			"Elisardojm",
 			"Toliño",
-			"Xosé"
+			"Xosé",
+			"Banjo"
 		]
 	},
 	"confirmaccounts": "Confirmar solicitudes de contas",
@@ -60,6 +61,7 @@
 	"confirmaccount-noreason": "(ningún)",
 	"confirmaccount-autorej": "(esta solicitude foi descartada automaticamente debido á inactividade)",
 	"confirmaccount-held": "({{GENDER:$1|marcada}} \"en suspenso\" por [[User:$1|$1]] o $3 ás $4)",
+	"confirmaccount-blockip": "Bloquear enderezo IP",
 	"confirmaccount-create": "Aceptar (crear a conta)",
 	"confirmaccount-deny": "Rexeitar (eliminar da lista)",
 	"confirmaccount-hold": "Suspender",
