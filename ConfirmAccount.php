@@ -23,7 +23,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 ) ;
 }
 
-$wgExtensionCredits['specialpage'][] = array(
+$GLOBALS['wgExtensionCredits']['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Confirm User Accounts',
 	'descriptionmsg' => 'confirmaccount-desc',
@@ -36,34 +36,34 @@ require( dirname( __FILE__ ) . '/ConfirmAccount.config.php' );
 
 # Define were PHP files and i18n files are located
 require( dirname( __FILE__ ) . '/ConfirmAccount.setup.php' );
-ConfirmAccountSetup::defineSourcePaths( $wgAutoloadClasses, $wgMessagesDirs, $wgExtensionMessagesFiles  );
+ConfirmAccountSetup::defineSourcePaths( $GLOBALS['wgAutoloadClasses'], $GLOBALS['wgMessagesDirs'], $GLOBALS['wgExtensionMessagesFiles']  );
 
 # Define JS/CSS modules and file locations
-ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
+ConfirmAccountUISetup::defineResourceModules( $GLOBALS['wgResourceModules'] );
 
 # Let some users confirm account requests and view credentials for created accounts
-$wgAvailableRights[] = 'confirmaccount'; // user can confirm account requests
-$wgAvailableRights[] = 'requestips'; // user can see IPs in request queue
-$wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed users
+$GLOBALS['wgAvailableRights'][] = 'confirmaccount'; // user can confirm account requests
+$GLOBALS['wgAvailableRights'][] = 'requestips'; // user can see IPs in request queue
+$GLOBALS['wgAvailableRights'][] = 'lookupcredentials'; // user can lookup info on confirmed users
 
 # Actually register special pages
-ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages );
+ConfirmAccountUISetup::defineSpecialPages( $GLOBALS['wgSpecialPages'] );
 
 # ####### HOOK CALLBACK FUNCTIONS #########
 
 # UI-related hook handlers
-ConfirmAccountUISetup::defineHookHandlers( $wgHooks );
+ConfirmAccountUISetup::defineHookHandlers( $GLOBALS['wgHooks'] );
 
 # Check for account name collisions
-$wgHooks['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPending';
+$GLOBALS['wgHooks']['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPending';
 
 # Schema changes
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
+$GLOBALS['wgHooks']['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
 
 # ####### END HOOK CALLBACK FUNCTIONS #########
 
 # Load the extension after setup is finished
-$wgExtensionFunctions[] = 'efLoadConfirmAccount';
+$GLOBALS['wgExtensionFunctions'][] = 'efLoadConfirmAccount';
 
 /**
  * This function is for setup that has to happen in Setup.php
@@ -71,11 +71,10 @@ $wgExtensionFunctions[] = 'efLoadConfirmAccount';
  * @return void
  */
 function efLoadConfirmAccount() {
-	global $wgEnableEmail;
 	# This extension needs email enabled!
 	# Otherwise users can't get their passwords...
-	if ( !$wgEnableEmail ) {
-		echo "ConfirmAccount extension requires \$wgEnableEmail set to true.\n";
+	if ( !$GLOBALS['wgEnableEmail'] ) {
+		echo "ConfirmAccount extension requires \$GLOBALS['wgEnableEmail'] set to true.\n";
 		exit( 1 ) ;
 	}
 }
