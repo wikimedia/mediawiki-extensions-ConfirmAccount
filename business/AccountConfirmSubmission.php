@@ -419,12 +419,14 @@ class AccountConfirmSubmission {
 		}
 
 		# Create userpage!
-		$article = new WikiPage( $user->getUserPage() );
-		$article->doEdit(
-			$body,
-			wfMessage( 'confirmaccount-summary' )->inContentLanguage()->text(),
-			EDIT_MINOR
-		);
+		if ( $body !== '' ) {
+			$article = new WikiPage( $user->getUserPage() );
+			$article->doEdit(
+				$body,
+				wfMessage( 'confirmaccount-summary' )->inContentLanguage()->text(),
+				EDIT_MINOR
+			);
+		}
 	}
 
 	protected function createUserTalkPage( User $user ) {
