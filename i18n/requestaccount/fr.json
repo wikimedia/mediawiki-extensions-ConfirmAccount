@@ -14,7 +14,8 @@
 			"Sherbrooke",
 			"Urhixidur",
 			"Verdy p",
-			"Zetud"
+			"Zetud",
+			"Hercule"
 		]
 	},
 	"requestaccount": "Demande de compte utilisateur",
@@ -53,7 +54,7 @@
 	"requestaccount-sent": "Votre demande de compte utilisateur a été envoyée avec succès et a été mise dans la liste d’attente d’approbation.\nUn courriel de confirmation a été envoyé à votre adresse de courriel.",
 	"request-account-econf": "Votre adresse courriel a été confirmée et sera listée telle quelle dans votre demande de compte.",
 	"requestaccount-email-subj": "Confirmation de l'adresse de courriel pour {{SITENAME}}",
-	"requestaccount-email-body": "Quelqu’un, probablement vous, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur « $2 » avec cette adresse courriel sur {{SITENAME}}.\n\nPour confirmer que ce compte vous appartient réellement sur {{SITENAME}}, vous êtes prié{{GENDER:||e|(e)}} d’ouvrir ce lien dans votre navigateur :\n\n$3\n\nVotre mot de passe vous sera envoyé uniquement si votre compte est créé.\nSi tel n’était pas le cas, n’utilisez pas ce lien.\nCe code de confirmation expirera le $4.",
+	"requestaccount-email-body": "Quelqu’un, probablement vous, a formulé, depuis l’adresse IP $1, une demande de compte utilisateur « $2 » avec cette adresse courriel sur {{SITENAME}}.\n\nPour confirmer que ce compte vous appartient réellement sur {{SITENAME}}, veuillez ouvrir ce lien dans votre navigateur :\n\n$3\n\nVotre mot de passe vous sera envoyé uniquement si votre compte est créé.\nSi tel n’était pas le cas, n’utilisez pas ce lien.\nCe code de confirmation expirera le $4.",
 	"requestaccount-email-subj-admin": "Demande de compte sur {{SITENAME}}",
 	"requestaccount-email-body-admin": "« $1 » a demandé un compte et se trouve en attente de confirmation.\n\nL'adresse courriel a été confirmée. Vous pouvez approuver la demande ici « $2 ».",
 	"acct_request_throttle_hit": "Désolé, vous avez déjà demandé $1 compte{{PLURAL:$1||s}}.\nVous ne pouvez plus faire de demande."
