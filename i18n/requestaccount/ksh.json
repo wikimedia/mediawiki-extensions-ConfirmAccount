@@ -35,7 +35,7 @@
 	"requestaccount-emaildup": "En ander Aanfrooch noh enem Zohjang als Metmaacher hät de sellve <i lang=\"en\">e-mail</i>-Addräß.",
 	"requestaccount-exts": "Di Zoot Datei-Aanhang es nit zohjelohße.",
 	"requestaccount-resub": "Dinge Levvensverlouf moß norr_ens neu ußjewählt wäde, zor Sescherheit. Lohß dat Feld leddisch, wann De_n_nit mieh wigger dobei han wells.",
-	"requestaccount-tos": "Esch han jelesse, wat op dä Sigg „[[{{MediaWiki:Requestaccount-page}}|{{int:requestaccount-leg-tos}}]]“ övver {{GRAMMAR:Akkusativ|{{SITENAME}}}} shteiht, Un esch versescheren, dat wad esch unger „reschtijje Name“ aanjejovve hann, wörklesch minge reschtijje Name es.",
+	"requestaccount-tos": "Esch han jelässe, wat op dä Sigg „[[{{MediaWiki:Requestaccount-page}}|{{int:requestaccount-leg-tos}}]]“ övver {{GRAMMAR:Akkusativ|{{ucfirst:{{SITENAME}}}}}} shteiht, Un esch versescheren, dat wad esch onger „reschtijje Nahme“ aanjejovve hann, verhaftesch minge reschtijje Nahme es.",
 	"requestaccount-submit": "Noh enem Zojang als ene Metmaacher frore",
 	"requestaccount-sent": "Ding Aanfrooch es jäz op der Wääsch jebraat, un waadt drop, dat sesch Eine dröm kömmert.\nFör se ze beschtäätejje, es en <i lang=\"en\">e-mail</i> aan Ding aanjejovve Adräß ongerwähß.",
 	"request-account-econf": "Ding <i lang=\"en\">e-mail</i>-Addräß es beschtätesch un dat shteiht jetß och esu en Dinge Aanfrooch noh enem Zohjang als Metmaacher dren.",
