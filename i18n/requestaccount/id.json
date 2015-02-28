@@ -6,7 +6,8 @@
 			"IvanLanin",
 			"Iwan Novirion",
 			"Rex",
-			"Nemo bis"
+			"Nemo bis",
+			"Kenrick95"
 		]
 	},
 	"requestaccount": "Permintaan akun",
@@ -41,7 +42,7 @@
 	"requestaccount-resub": "Resume/CV Anda harus dipilih kembali atas alasan keamanan.\nTinggalkan kotak ini kosong jika Anda sudah tidak ingin untuk memasukkannya.",
 	"requestaccount-tos": "Saya telah membaca dan menyetujui [[{{MediaWiki:Requestaccount-page}}|Syarat Layanan]] {{SITENAME}}.\nNama yang saya tuliskan dalam \"Nama asli\" adalah benar-benar nama asli saya sendiri.",
 	"requestaccount-submit": "Permintaan akun",
-	"requestaccount-sent": "Permintaan akun Anda telah berhasil dikirimkan dan sekarang sedang dalam antrean untuk ditinjau.\nSebuah surat konfirmasi telah dikirimkan ke alamat surel Anda.",
+	"requestaccount-sent": "Permintaan akun Anda telah berhasil dikirimkan dan sekarang sedang dalam antrean untuk ditinjau.\nSebuah surel konfirmasi telah dikirimkan ke alamat surel Anda.",
 	"request-account-econf": "Alamat surel Anda telah dikonfirmasikan dan akan ditampilkan sebagaimana dalam permintaan akun Anda.",
 	"requestaccount-email-subj": "Konfirmasi alamat surel {{SITENAME}}",
 	"requestaccount-email-body": "Seseorang, mungkin Anda, dari alamat IP $1, telah mendaftarkan permintaan akun \"$2\" dengan alamat surel ini di {{SITENAME}}.\n\nUntuk mengkonfirmasikan bahwa akun ini benar dimiliki oleh Anda di {{SITENAME}}, ikuti pranala berikut pada penjelajah web Anda:\n\n$3\n\nSetelah akun ini dibuat, hanya Anda yang akan dikirim kata sandinya melalui surel.\nJika Anda merasa *tidak pernah* mendaftar, jangan ikuti pranala di atas.\nKode konfirmasi ini akan kedaluwarsa pada $4.",
