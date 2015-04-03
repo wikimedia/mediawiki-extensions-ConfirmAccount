@@ -266,6 +266,13 @@ $specialPageAliases['lb'] = array(
 	'UserCredentials' => array( 'Benotzerinformatiounen' ),
 );
 
+/** لوری (لوری) */
+$specialPageAliases['lrc'] = array(
+	'RequestAccount' => array( 'حاستن_حساو' ),
+	'ConfirmAccounts' => array( 'پشت_راسکاری_حساویا' ),
+	'UserCredentials' => array( 'اعتوار_کاریار' ),
+);
+
 /** Malagasy (Malagasy) */
 $specialPageAliases['mg'] = array(
 	'RequestAccount' => array( 'Hangataka_kaonty', 'HangatakaKaonty' ),
