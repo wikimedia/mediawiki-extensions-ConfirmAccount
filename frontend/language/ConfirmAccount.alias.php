@@ -46,6 +46,13 @@ $specialPageAliases['ba'] = array(
 	'RequestAccount' => array( 'RequestAccount' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'RequestAccount' => array( 'هیسابی_درخواست' ),
+	'ConfirmAccounts' => array( 'هیسابی_تائید' ),
+	'UserCredentials' => array( 'کارمرزوکی_شناسگ' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'RequestAccount' => array( 'Minta_akun' ),
