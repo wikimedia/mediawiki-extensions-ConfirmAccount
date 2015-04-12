@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Aelske",
-			"Pahles"
+			"Pahles",
+			"Robin0van0der0vliet"
 		]
 	},
 	"confirmaccount-real-q": "Naam",
@@ -49,5 +50,6 @@
 	"confirmaccount-spam": "Spam (geine e-mail sjikke)",
 	"confirmaccount-reason": "Opmirking (weurt toegeveug aan de e-mail)",
 	"confirmaccount-ip": "IP-adres:",
-	"confirmaccount-submit": "Kónfermere"
+	"confirmaccount-submit": "Kónfermere",
+	"confirmaccount-wsum": "Wilkóm!"
 }
