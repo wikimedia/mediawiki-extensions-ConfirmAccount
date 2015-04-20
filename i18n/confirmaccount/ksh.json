@@ -57,6 +57,7 @@
 	"confirmaccount-noreason": "(nix)",
 	"confirmaccount-autorej": "(di Aanfrooch wood automattesch fottjeschmeße, weil zoh lang Keine jet draan jedonn hät)",
 	"confirmaccount-held": "(aam $3 öm $4 Uhr {{GENDER:$1|fum|fum|fum Metmaacher|fum|fun dä}} [[User:$1|$1]] op „waade“ jesatz)",
+	"confirmaccount-blockip": "Don däm sing <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Internet Protocol\">IP</i>-Adräß schpärre",
 	"confirmaccount-create": "Aannämme, un dä Metmaacher aanlääje",
 	"confirmaccount-deny": "Aflehne, un uß dä Leß nämme",
 	"confirmaccount-hold": "Zeröckställe",
