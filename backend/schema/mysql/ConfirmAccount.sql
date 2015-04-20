@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS /*_*/account_requests (
 	acr_real_name varchar(255) binary NOT NULL default '',
 	-- Note: email should be restricted, not public info.
 	-- Same with passwords.
-	acr_email tinytext NOT NULL,
+	acr_email varchar(255) binary NOT NULL,
 	-- Initially NULL; when a user's e-mail address has been
 	-- validated by returning with a mailed token, this is
 	-- set to the current timestamp.
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS /*_*/account_requests (
 ) /*$wgDBTableOptions*/;
 
 CREATE UNIQUE INDEX /*i*/acr_name ON /*_*/account_requests (acr_name);
-CREATE UNIQUE INDEX /*i*/acr_email ON /*_*/account_requests (acr_email(255));
+CREATE INDEX /*i*/acr_email ON /*_*/account_requests (acr_email);
 CREATE INDEX /*i*/acr_email_token ON /*_*/account_requests (acr_email_token);
 CREATE INDEX /*i*/acr_type_del_reg ON /*_*/account_requests (acr_type,acr_deleted,acr_registration);
 
