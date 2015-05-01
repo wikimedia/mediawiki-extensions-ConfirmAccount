@@ -5,7 +5,7 @@
 		]
 	},
 	"confirmaccount-real-q": "ЦӀе",
-	"confirmaccount-email-q": "Электронан почта",
+	"confirmaccount-email-q": "Электронан пошт",
 	"confirmaccount-bio-q": "Биографи",
 	"confirmaccount-showopen": "делина дехарш",
 	"confirmaccount-showrej": "юхадаьхна дехарш",
@@ -18,7 +18,7 @@
 	"confirmaccount-q-open": "делина дехарш",
 	"confirmaccount-name": "Декъашхочун цӀе",
 	"confirmaccount-real": "ЦӀе:",
-	"confirmaccount-email": "Электронан почта:",
+	"confirmaccount-email": "Электронан пошт:",
 	"confirmaccount-reqtype": "Дарж:",
 	"confirmaccount-pos-0": "автор",
 	"confirmaccount-pos-1": "тадар",
