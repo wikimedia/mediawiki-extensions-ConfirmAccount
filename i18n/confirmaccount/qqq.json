@@ -14,7 +14,7 @@
 		]
 	},
 	"confirmaccounts": "{{doc-special|ConfirmAccounts}}",
-	"confirmedit-desc": "{{desc|name=Confirm Account|url=https://www.mediawiki.org/wiki/Extension:ConfirmAccont}}",
+	"confirmaccount-desc": "{{desc|name=Confirm Account|url=https://www.mediawiki.org/wiki/Extension:ConfirmAccont}}",
 	"confirmaccount-maintext": "This message is followed by the message {{msg-mw|confirmaccount-types}}.",
 	"confirmaccount-list": "This message is followed by a list of account requests.\n\nSee also:\n* {{msg-mw|Confirmaccount-list2}}\n* {{msg-mw|Confirmaccount-list3}}",
 	"confirmaccount-list2": "This message is followed by a list of account requests.\n\nSee also:\n* {{msg-mw|Confirmaccount-list}}\n* {{msg-mw|Confirmaccount-list3}}",

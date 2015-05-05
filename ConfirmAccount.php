@@ -26,7 +26,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Confirm User Accounts',
-	'descriptionmsg' => 'confirmedit-desc',
+	'descriptionmsg' => 'confirmaccount-desc',
 	'author'         => 'Aaron Schulz',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:ConfirmAccount',
 );
