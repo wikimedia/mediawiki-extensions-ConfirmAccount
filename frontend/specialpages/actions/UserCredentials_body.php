@@ -88,7 +88,7 @@ class UserCredentialsPage extends SpecialPage {
 
 		$form  = "<fieldset>";
 		$form .= '<legend>' . $this->msg( 'usercredentials-leg-user' )->escaped() . '</legend>';
-		$form .= '<table cellpadding=\'4\'>';
+		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . $this->msg( 'username' )->escaped() . "</td>";
 		$form .= "<td>" . Linker::makeLinkObj( $user->getUserPage(), htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
 
@@ -108,14 +108,14 @@ class UserCredentialsPage extends SpecialPage {
 			$form .= '<legend>' . $this->msg( 'confirmaccount-leg-areas' )->escaped() . '</legend>';
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
-			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
+			$form .= "<table style='border-spacing:5px; padding:0px; background-color:#f9f9f9;'><tr style='vertical-align: top;'>";
 			$count = 0;
 
 			$att = array( 'disabled' => 'disabled' );
 			foreach ( $userAreas as $name => $conf ) {
 				$count++;
 				if ( $count > 5 ) {
-					$form .= "</tr><tr valign='top'>";
+					$form .= "</tr><tr style='vertical-align: top;'>";
 					$count = 1;
 				}
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
@@ -137,7 +137,7 @@ class UserCredentialsPage extends SpecialPage {
 
 		$form .= '<fieldset>';
 		$form .= '<legend>' . $this->msg( 'usercredentials-leg-person' )->escaped() . '</legend>';
-		$form .= '<table cellpadding=\'4\'>';
+		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . $this->msg( 'usercredentials-real' )->escaped() . "</td>";
 		$form .= "<td>" . htmlspecialchars( $row->acd_real_name ) . "</td></tr>\n";
 		$form .= '</table>';
