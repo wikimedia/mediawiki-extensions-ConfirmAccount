@@ -17,7 +17,7 @@ class ConfirmAccountUpdaterHooks {
 			$updater->addExtensionField( 'account_requests', 'acr_filename', "$base/patch-acr_filename.sql" );
 			$updater->addExtensionTable( 'account_credentials', "$base/patch-account_credentials.sql" );
 			$updater->addExtensionField( 'account_requests', 'acr_areas', "$base/patch-acr_areas.sql" );
-			$updater->modifyExtensionField( 'account_requests', 'acr_email', "$base/patch-alter-acr_email-index.sql" );
+			$updater->modifyExtensionField( 'account_requests', 'acr_email', "$base/patch-acr_email-varchar.sql" );
 			$updater->addExtensionIndex( 'account_requests', 'acr_email', "$base/patch-email-index.sql" );
 			$updater->addExtensionField( 'account_requests', 'acr_agent', "$base/patch-acr_agent.sql" );
 			$updater->dropExtensionIndex( 'account_requests', 'acr_deleted_reg', "$base/patch-drop-acr_deleted_reg-index.sql" );
