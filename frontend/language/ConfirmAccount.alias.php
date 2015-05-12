@@ -23,7 +23,7 @@ $specialPageAliases['ar'] = array(
 	'UserCredentials' => array( 'شهادات_المستخدم' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'RequestAccount' => array( 'طلب_حساب' ),
 	'ConfirmAccounts' => array( 'تأكيد_الحساب' ),
@@ -144,7 +144,7 @@ $specialPageAliases['fr'] = array(
 	'ConfirmAccounts' => array( 'ConfirmerCompte', 'Confirmation_compte', 'ConfirmationCompte' ),
 );
 
-/** Franco-Provençal (arpetan) */
+/** Arpitan (arpetan) */
 $specialPageAliases['frp'] = array(
 	'RequestAccount' => array( 'Demandar_un_compto', 'DemandarUnCompto' ),
 	'ConfirmAccounts' => array( 'Confirmar_lo_compto', 'ConfirmarLoCompto', 'Confirmacion_de_compto', 'ConfirmacionDeCompto' ),
@@ -273,7 +273,7 @@ $specialPageAliases['lb'] = array(
 	'UserCredentials' => array( 'Benotzerinformatiounen' ),
 );
 
-/** لوری (لوری) */
+/** لوری مینجایی (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'RequestAccount' => array( 'حاستن_حساو' ),
 	'ConfirmAccounts' => array( 'پشت_راسکاری_حساویا' ),
