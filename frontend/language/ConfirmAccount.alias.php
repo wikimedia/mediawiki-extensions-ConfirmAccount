@@ -273,7 +273,7 @@ $specialPageAliases['lb'] = array(
 	'UserCredentials' => array( 'Benotzerinformatiounen' ),
 );
 
-/** لوری مینجایی (لوری مینجایی) */
+/** Northern Luri (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'RequestAccount' => array( 'حاستن_حساو' ),
 	'ConfirmAccounts' => array( 'پشت_راسکاری_حساویا' ),
