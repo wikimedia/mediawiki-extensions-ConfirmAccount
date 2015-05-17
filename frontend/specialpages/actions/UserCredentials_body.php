@@ -230,4 +230,8 @@ class UserCredentialsPage extends SpecialPage {
 			array( 'ORDER BY' => 'acd_user_id,acd_id ASC' ) );
 		return $row;
 	}
+
+	protected function getGroupName() {
+		return 'users';
+	}
 }

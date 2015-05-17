@@ -407,4 +407,8 @@ class RequestAccountPage extends SpecialPage {
 			}
 		}
 	}
+
+	protected function getGroupName() {
+		return 'login';
+	}
 }

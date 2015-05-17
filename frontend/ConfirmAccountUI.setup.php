@@ -23,18 +23,12 @@ class ConfirmAccountUISetup {
 	/**
 	 * Register ConfirmAccount special pages as needed.
 	 * @param $pages Array $wgSpecialPages (list of special pages)
-	 * @param $groups Array $wgSpecialPageGroups (assoc array of special page groups)
 	 * @return void
 	 */
-	public static function defineSpecialPages( array &$pages, array &$groups ) {
+	public static function defineSpecialPages( array &$pages ) {
 		$pages['RequestAccount'] = 'RequestAccountPage';
-		$groups['RequestAccount'] = 'login';
-
 		$pages['ConfirmAccounts'] = 'ConfirmAccountsPage';
-		$groups['ConfirmAccounts'] = 'users';
-
 		$pages['UserCredentials'] = 'UserCredentialsPage';
-		$groups['UserCredentials'] = 'users';
 	}
 
 	/**

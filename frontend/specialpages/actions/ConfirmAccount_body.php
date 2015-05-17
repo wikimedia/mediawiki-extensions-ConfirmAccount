@@ -742,6 +742,10 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		return $r;
 	}
+
+	protected function getGroupName() {
+		return 'users';
+	}
 }
 
 /**

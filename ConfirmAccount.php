@@ -47,7 +47,7 @@ $wgAvailableRights[] = 'requestips'; // user can see IPs in request queue
 $wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed users
 
 # Actually register special pages
-ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages, $wgSpecialPageGroups );
+ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages );
 
 # ####### HOOK CALLBACK FUNCTIONS #########
 
