@@ -8,10 +8,11 @@ class ConfirmAccountSetup {
 	 * This function must NOT depend on any config vars.
 	 *
 	 * @param $classes Array $classes
+	 * @param $messagesDirs Array $messagesDirs
 	 * @param $messagesFiles Array $messagesFiles
 	 * @return void
 	 */
-	public static function defineSourcePaths( array &$classes, array &$messagesFiles ) {
+	public static function defineSourcePaths( array &$classes, array &$messagesDirs, array &$messagesFiles ) {
 		$dir = dirname( __FILE__ );
 
 		# Basic directory layout
@@ -23,7 +24,7 @@ class ConfirmAccountSetup {
 		$spActionDir      = "$dir/frontend/specialpages/actions";
 
 		# Main i18n file and special page alias file
-		$wgMessagesDirs['ConfirmAccount'] = __DIR__ . '/i18n/core';
+		$messagesDirs['ConfirmAccount'] = __DIR__ . '/i18n/core';
 		$messagesFiles['ConfirmAccountAliases'] = "$langDir/ConfirmAccount.alias.php";
 
 		# UI setup class
@@ -33,14 +34,14 @@ class ConfirmAccountSetup {
 
 		# UI to request an account
 		$classes['RequestAccountPage'] = "$spActionDir/RequestAccount_body.php";
-		$wgMessagesDirs['RequestAccountPage'] = __DIR__ . '/i18n/requestaccount';
+		$messagesDirs['RequestAccountPage'] = __DIR__ . '/i18n/requestaccount';
 		# UI to confirm accounts
 		$classes['ConfirmAccountsPage'] = "$spActionDir/ConfirmAccount_body.php";
 		$classes['ConfirmAccountsPager'] = "$spActionDir/ConfirmAccount_body.php";
-		$wgMessagesDirs['ConfirmAccountPage'] = __DIR__ . '/i18n/confirmaccount';
+		$messagesDirs['ConfirmAccountPage'] = __DIR__ . '/i18n/confirmaccount';
 		# UI to see account credentials
 		$classes['UserCredentialsPage'] = "$spActionDir/UserCredentials_body.php";
-		$wgMessagesDirs['UserCredentialsPage'] = __DIR__ . '/i18n/usercredentials';
+		$messagesDirs['UserCredentialsPage'] = __DIR__ . '/i18n/usercredentials';
 
 		# Utility functions
 		$classes['ConfirmAccount'] = "$backendDir/ConfirmAccount.class.php";
