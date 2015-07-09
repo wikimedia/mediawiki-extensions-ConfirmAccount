@@ -8,7 +8,8 @@
 			"TianyinLee",
 			"Wilsonmess",
 			"Xiaomingyan",
-			"Bluedeck"
+			"Bluedeck",
+			"Liuxinyu970226"
 		]
 	},
 	"requestaccount": "请求账户",
@@ -47,7 +48,7 @@
 	"requestaccount-sent": "您的账户请求已经成功发出，现正等候复审。\n一封验证邮件已经发往您的邮箱，请前去查收。",
 	"request-account-econf": "您的电邮地址已经确认，将会在您的账户口请求中列示。",
 	"requestaccount-email-subj": "{{SITENAME}}电子邮件地址确认",
-	"requestaccount-email-body": "有人，可能是您，由IP地址$1，在{{SITENAME}}中用这个电邮地址请求一个名叫\"$2\"的账户。\n\n要确认这个户口真的属于在{{SITENAME}}上面?您，就在您的浏览器中度开启这个连结:\n\n$3\n\n如果该账户已经创建，只有您才会收到该电邮密码。如果这个账户*不是*属于您的话，不要点击这个连结。\n呢个确认码将会响$4过期。",
+	"requestaccount-email-body": "有人，可能是您，来自IP地址$1，在{{SITENAME}}使用此电子邮件地址请求了一个账户“$2”。\n\n要确认此{{SITENAME}}账户确实为您所有，请在浏览器打开此链接：\n\n$3\n\n如果账户已经创建，只有您才会收到该电邮密码。\n如果此账户*不*属于您，请不要点击此链接。\n此账户确认代码将于$4过期。",
 	"requestaccount-email-subj-admin": "{{SITENAME}}账户请求",
 	"requestaccount-email-body-admin": " \"$1\" 请求了一个账户并正在等待批准.\n电子邮件地址已确认. 要批准账户，请点击 \"$2\".",
 	"acct_request_throttle_hit": "抱歉，您已经请求了 $1 个账户。\n您不可以请求更多个账户。"
