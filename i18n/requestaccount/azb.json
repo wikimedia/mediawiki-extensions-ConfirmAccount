@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Ebrahimi-amir",
-			"Mousa"
+			"Mousa",
+			"Koroğlu"
 		]
 	},
 	"requestaccount": "حساب ایسته",
 	"requestaccount-text": "'''بیر ایستیفاده‌چی حسابی ایستمک اوچون آشاغیداکی فورمو دولدوروب و یول‌لایین'''.\n\nآرخایین اولون حساب ایسته‌مکدن قاباق [[{{MediaWiki:Requestaccount-page}}|ایشلتمک شرطلری]]نی اوخوموسونوز.\n\nحسابینیز تأیید اولاندان‌دا، سیز ایمیل ایله خبردار اولاجاقسیز و اوندان سونرا حسابینیزی [[Special:UserLogin|گیریش]]‌ده ایشلده بیلرسینیز.",
 	"requestaccount-page": "{{ns:project}}:ایشلتمک شرطلری",
 	"requestaccount-dup": "'''دیقت: سیز حال‌حاضیردا بیر یازدیریلمیش حساب ایله گیریش ائتمیسینیز.'''",
-	"requestaccount-leg-user": "ایستیفاده‌چی حسابی",
+	"requestaccount-leg-user": "ایشلدن حسابی",
 	"requestaccount-leg-areas": "اصلی ماراق حوزه‌لری",
 	"requestaccount-leg-person": "شخصی بیلگیلر",
 	"requestaccount-leg-other": "آیری بیلگیلر",
