@@ -295,7 +295,7 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		$form .= "<fieldset>";
 		$form .= '<legend>' . $this->msg( 'confirmaccount-leg-user' )->escaped() . '</legend>';
-		$form .= '<table cellpadding=\'4\'>';
+		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . Xml::label( $this->msg( 'username' )->text(), 'wpNewName' ) . "</td>";
 		$form .= "<td>" . Xml::input( 'wpNewName', 30, $this->reqUsername, array( 'id' => 'wpNewName' ) ) . "</td></tr>\n";
 		$econf = '';
@@ -324,7 +324,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$form .= '<legend>' . $this->msg( 'confirmaccount-leg-areas' )->escaped() . '</legend>';
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
-			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
+			$form .= "<table style='border-spacing:5px; padding:0; background-color:#f9f9f9;'><tr style='vertical-align:top;'>";
 			$count = 0;
 			foreach ( $userAreas as $name => $conf ) {
 				$count++;
@@ -353,7 +353,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . $this->msg( 'confirmaccount-leg-person' )->escaped() . '</legend>';
 			if ( $this->hasItem( 'RealName' ) ) {
-				$form .= '<table cellpadding=\'4\'>';
+				$form .= '<table style="padding:4px;">';
 				$form .= "<tr><td>" . $this->msg( 'confirmaccount-real' )->escaped() . "</td>";
 				$form .= "<td>" . htmlspecialchars( $accountReq->getRealName() ) . "</td></tr>\n";
 				$form .= '</table>';
@@ -426,7 +426,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= '<fieldset>';
 		$form .= '<legend>' . $this->msg( 'confirmaccount-legend' )->escaped() . '</legend>';
 		$form .= "<strong>" . $this->msg( 'confirmaccount-confirm' )->parse() . "</strong>\n";
-		$form .= "<table cellpadding='5'><tr>";
+		$form .= "<table style='padding:5px;'><tr>";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'accept', $this->submitType == 'accept',
 			array( 'id' => 'submitCreate', 'onclick' => 'document.getElementById("wpComment").style.display="block"' ) );
 		$form .= ' ' . Xml::label( $this->msg( 'confirmaccount-create' )->text(), 'submitCreate' ) . "</td>\n";
@@ -710,7 +710,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$r .= ' <b>' . $this->msg( 'confirmaccount-viewing', User::whoIs( $value ) )->parse() . '</b>';
 		}
 
-		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' cellspacing='1' cellpadding='3' border='1' width='100%'>";
+		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' style='border-spacing:1px; padding:3px; border:1px; width:100%;''>";
 		if ( $this->hasItem( 'UserName' ) ) {
 			$r .= '<tr><td><strong>' . $this->msg( 'confirmaccount-name' )->escaped() . '</strong></td><td width=\'100%\'>' .
 				htmlspecialchars( $row->acr_name ) . '</td></tr>';
@@ -735,7 +735,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$preview .= " . . .";
 		}
 		$r .= '<tr><td><strong>' . $this->msg( 'confirmaccount-bio-q' )->escaped() .
-			'</strong></td><td width=\'100%\'><i>' . $preview . '</i></td></tr>';
+			'</strong></td><td style="width:100%;"><i>' . $preview . '</i></td></tr>';
 		$r .= '</table>';
 
 		$r .= '</li>';

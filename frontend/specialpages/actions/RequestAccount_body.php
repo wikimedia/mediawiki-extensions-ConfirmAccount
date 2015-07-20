@@ -112,7 +112,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$form .= '<fieldset><legend>' . $this->msg( 'requestaccount-leg-user' )->escaped() . '</legend>';
 		$form .= $this->msg( 'requestaccount-acc-text' )->parseAsBlock() . "\n";
-		$form .= '<table cellpadding=\'4\'>';
+		$form .= '<table style="padding:4px;">';
 		if ( $this->hasItem( 'UserName' ) ) {
 			$form .= "<tr><td>" . Xml::label( $this->msg( 'username' )->text(), 'wpUsername' ) . "</td>";
 			$form .= "<td>" . Xml::input( 'wpUsername', 30, $this->mUsername, array( 'id' => 'wpUsername' ) ) . "</td></tr>\n";
@@ -143,12 +143,12 @@ class RequestAccountPage extends SpecialPage {
 			$form .=  $this->msg( 'requestaccount-areas-text' )->parseAsBlock() . "\n";
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
-			$form .= "<table cellspacing='5' cellpadding='0' style='background-color:#f9f9f9;'><tr valign='top'>";
+			$form .= "<table style='border-spacing:5px; padding:0px; background-color:#f9f9f9;'><tr valign='top'>";
 			$count = 0;
 			foreach ( $userAreas as $name => $conf ) {
 				$count++;
 				if ( $count > 5 ) {
-					$form .= "</tr><tr valign='top'>";
+					$form .= "</tr><tr style='vertical-align:top;'>";
 					$count = 1;
 				}
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
@@ -170,7 +170,7 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . $this->msg( 'requestaccount-leg-person' )->escaped() . '</legend>';
 			if ( $this->hasItem( 'RealName' ) ) {
-				$form .= '<table cellpadding=\'4\'>';
+				$form .= '<table style="padding:4px;">';
 				$form .= "<tr><td>" . Xml::label( $this->msg( 'requestaccount-real' )->text(), 'wpRealName' ) . "</td>";
 				$form .= "<td>" . Xml::input( 'wpRealName', 35, $this->mRealName, array( 'id' => 'wpRealName' ) ) . "</td></tr>\n";
 				$form .= '</table>';
