@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Srdjan m"
 		]
 	},
 	"usercredentials-user": "Korisničko ime:",
 	"usercredentials-leg-user": "Korisnički račun",
 	"usercredentials-leg-person": "Lične informacije",
 	"usercredentials-leg-other": "Ostale informacije",
-	"usercredentials-email": "E-mail:",
+	"usercredentials-email": "Adresa e-pošte:",
 	"usercredentials-real": "Pravo ime:",
 	"usercredentials-bio": "Biografija:",
 	"usercredentials-attach": "Biografija:",
