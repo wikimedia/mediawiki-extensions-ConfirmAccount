@@ -71,7 +71,7 @@
 	"confirmaccount-needreason": "Do moß ene Jrond en däm Feld unge endraare.",
 	"confirmaccount-canthold": "Di Aanfrooch es entweder zerökjeshtallt udder fottjeschmeße.",
 	"confirmaccount-badaction": "Ene jöltijje Opdraacht (Aannämme, Aflehne, {{int:Confirmaccount-hold}}) moß aanjejovve sin, öm heh wigger ze kumme.",
-	"confirmaccount-acc": "Di Aanfrooch es aajenumme, un beshtätesch, dä Metmaacher [[User:$1|$1]] wood aanjelaat.",
+	"confirmaccount-acc": "Di Aanfrohch es aajenumme, un beschtähtesch, dä Metmaacher [[User:$1|$1]] wood aanjelaat.",
 	"confirmaccount-rej": "Di Aanfrooch noh enem Zojang wood afjelehnt.",
 	"confirmaccount-viewing": "(Weed em Momang {{GENDER:$1|vum|vum|vum Metmaacher|vum|vun dä}} [[User:$1|$1]] aanjelohrt)",
 	"confirmaccount-summary": "Ben en Metmaachersigg met dä Levvensdaate vun däm neue Metmaacher am aanlääje.",
