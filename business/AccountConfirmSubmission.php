@@ -289,7 +289,7 @@ class AccountConfirmSubmission {
 		$ssUpdate->doUpdate();
 
 		# Safe to hook/log now...
-		wfRunHooks( 'AddNewAccount', array( $user, false /* not by email */ ) );
+		Hooks::run( 'AddNewAccount', array( $user, false /* not by email */ ) );
 		$user->addNewUserLogEntry();
 
 		# Clear cache for notice of how many account requests there are
