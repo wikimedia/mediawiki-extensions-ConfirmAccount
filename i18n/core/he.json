@@ -4,12 +4,14 @@
 			"Amire80",
 			"Rotemliss",
 			"StuB",
-			"YaronSh"
+			"YaronSh",
+			"Eburcat"
 		]
 	},
 	"confirmaccount-newrequests": "יש {{PLURAL:$1|[[Special:ConfirmAccounts|בקשה פתוחה ממתינה '''אחת''' לפתוח חשבון]], עם כתובת דואר אלקטרוני מאושרת שממתינה|'''$1''' [[Special:ConfirmAccounts|בקשות פתוחות לפתוח חשבונות]], עם כתובות דואר אלקטרוני מאושרות שממתינות}} לאישור. ''תשומת לבך נדרשת!''",
 	"requestaccount-loginnotice": "כדי לקבל חשבון משתמש, עליכם '''[[Special:RequestAccount|לבקש אחד כזה]]'''.",
 	"right-confirmaccount": "צפייה ב[[Special:ConfirmAccounts|תור עם החשבונות הדרושים]]",
 	"right-requestips": "לצפות בכתובות IP של המבקשים בזמן עיבוד בקשות לפתוח חשבון",
-	"right-lookupcredentials": "צפייה ב[[Special:UserCredentials|הרשאות המשתמש]]"
+	"right-lookupcredentials": "צפייה ב[[Special:UserCredentials|הרשאות המשתמש]]",
+	"action-confirmaccount": "סקור ואשר חשבונות"
 }
