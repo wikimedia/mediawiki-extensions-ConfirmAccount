@@ -9,6 +9,7 @@
 		]
 	},
 	"requestaccount": "درخواست حساب",
+	"requestaccount-login": "درخواست حساب",
 	"requestaccount-text": "'''فرم زیر را برای درخواست یک حساب کامل و ارائه کنید.'''\nمطمئن شوید که پیش از درخواست یک حساب،اول [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] را می‌خوانید.\nهنگامی که حساب تأیید شد، به شما یک پیغام اعلان ایمیل خواهد شد و حساب در [[Special:UserLogin|login]] قابل استفاده خواهد بود.",
 	"requestaccount-page": "{{ns:project}}: شرایط استفاده از خدمات",
 	"requestaccount-dup": "'''توجه: پیش از این شما با یک حساب ثبت‌نام شده وارد شده‌اید.",
