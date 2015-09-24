@@ -23,6 +23,7 @@
 	"confirmaccount-noreason": "(هېڅ)",
 	"confirmaccount-create": "گڼون (گڼون جوړول)",
 	"confirmaccount-ip": "IP پته:",
+	"confirmaccount-agent": "کارن-پلاوی:",
 	"confirmaccount-submit": "تاييد",
 	"confirmaccount-wsum": "ښه راغلئ!",
 	"confirmaccount-email-body": "په {{SITENAME}} باندې د يوه گڼون لپاره غوښتنه مو ومنل شوه .\n\nگڼون نوم: $1\n\nپټنوم: $2\n\nد تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:UserLogin}} ولاړ شی.",
