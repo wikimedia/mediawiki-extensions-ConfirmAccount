@@ -6,7 +6,8 @@
 			"JtFuruhata",
 			"Schu",
 			"Shirayuki",
-			"青子守歌"
+			"青子守歌",
+			"Sujiniku"
 		]
 	},
 	"requestaccount": "アカウント登録申請",
@@ -47,6 +48,6 @@
 	"requestaccount-email-subj": "{{SITENAME}} メールアドレスの確認",
 	"requestaccount-email-body": "誰か(おそらくあなた)が、IP アドレス $1 からこのメールアドレスで {{SITENAME}} のアカウント \"$2\" の作成を申請しました。\n\nこの {{SITENAME}}　のアカウントが本当にあなたのものか確認するために、以下のリンクをブラウザーで開いてください:\n\n$3\n\nアカウントが作成されると、あなたのみにパスワードをメールでお送りします。\nもしも、この申請があなたによるもの'''ではない'''場合、このリンクをクリックしないでください。\nこの確認手続きは $4 で期限切れになります。",
 	"requestaccount-email-subj-admin": "{{SITENAME}} のアカウント申請",
-	"requestaccount-email-body-admin": "「$1」によるアカウント申請が承認待ちになっています。\n申請メールアドレスは本人確認済みです。この申請への承認は、\"$2\" から行うことができます。",
+	"requestaccount-email-body-admin": "$1 によるアカウント申請が承認待ちになっています。\n申請メールアドレスは本人確認済みです。この申請への承認は、こちらから行うことができます:\n\n$2",
 	"acct_request_throttle_hit": "申し訳ありませんが、あなたは既に$1{{PLURAL:$1|アカウント}}を申請済みです。これ以上の申請はできません。"
 }
