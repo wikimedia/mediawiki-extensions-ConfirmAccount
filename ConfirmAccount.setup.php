@@ -12,8 +12,10 @@ class ConfirmAccountSetup {
 	 * @param $messagesFiles Array $messagesFiles
 	 * @return void
 	 */
-	public static function defineSourcePaths( array &$classes, array &$messagesDirs, array &$messagesFiles ) {
-		$dir = dirname( __FILE__ );
+	public static function defineSourcePaths(
+		array &$classes, array &$messagesDirs, array &$messagesFiles
+	) {
+		$dir = __DIR__;
 
 		# Basic directory layout
 		$backendDir       = "$dir/backend";

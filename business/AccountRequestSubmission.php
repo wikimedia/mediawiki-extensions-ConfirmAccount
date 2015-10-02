@@ -67,8 +67,7 @@ class AccountRequestSubmission {
 	 * @return array( true or error key string, html error msg or null )
 	 */
 	public function submit( IContextSource $context ) {
-		global $wgAuth, $wgAccountRequestThrottle, $wgMemc, $wgContLang;
-		global $wgConfirmAccountRequestFormItems;
+		global $wgAuth, $wgAccountRequestThrottle, $wgMemc, $wgConfirmAccountRequestFormItems;
 
 		$formConfig = $wgConfirmAccountRequestFormItems; // convience
 		$reqUser = $this->requester;

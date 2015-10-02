@@ -28,7 +28,8 @@ class UserAccountRequest {
 	protected $user;
 	protected $comment;
 
-	private function __construct() {}
+	private function __construct() {
+	}
 
 	/**
 	 * @param $row

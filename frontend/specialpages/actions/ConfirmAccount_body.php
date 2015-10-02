@@ -274,8 +274,10 @@ class ConfirmAccountsPage extends SpecialPage {
 			if ( $adminId ) {
 				$out->addHTML( '<p><b>' . $this->msg( 'confirmaccount-reject',
 					User::whoIs( $adminId ), $datim, $date, $time )->parse() . '</b></p>' );
-				$out->addHTML( '<p><strong>' . $this->msg( 'confirmaccount-rational' )->escaped() . '</strong><i> ' .
-					$reason . '</i></p>' );
+				$out->addHTML(
+					'<p><strong>' . $this->msg( 'confirmaccount-rational' )->escaped() . '</strong><i> ' .
+					$reason . '</i></p>'
+				);
 			} else {
 				$out->addHTML( "<p><i> $reason </i></p>" );
 			}
@@ -286,18 +288,22 @@ class ConfirmAccountsPage extends SpecialPage {
 
 			$out->addHTML( '<p><b>' . $this->msg( 'confirmaccount-held',
 				User::whoIs( $adminId ), $datim, $date, $time )->parse() . '</b></p>' );
-			$out->addHTML( '<p><strong>' . $this->msg( 'confirmaccount-rational' )->escaped() . '</strong><i> ' .
-				$reason . '</i></p>' );
+			$out->addHTML(
+				'<p><strong>' . $this->msg( 'confirmaccount-rational' )->escaped() . '</strong><i> ' .
+				$reason . '</i></p>'
+			);
 		}
 
-		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountconfirm',
+		$form = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountconfirm',
 			'action' => $titleObj->getLocalUrl() ) );
 
 		$form .= "<fieldset>";
 		$form .= '<legend>' . $this->msg( 'confirmaccount-leg-user' )->escaped() . '</legend>';
 		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . Xml::label( $this->msg( 'username' )->text(), 'wpNewName' ) . "</td>";
-		$form .= "<td>" . Xml::input( 'wpNewName', 30, $this->reqUsername, array( 'id' => 'wpNewName' ) ) . "</td></tr>\n";
+		$form .= "<td>" . Xml::input( 'wpNewName', 30, $this->reqUsername, array(
+			'id' => 'wpNewName'
+		) ) . "</td></tr>\n";
 		$econf = '';
 		if ( $accountReq->getEmailAuthTimestamp() ) {
 			$econf = ' <strong>' . $this->msg( 'confirmaccount-econf' )->escaped() . '</strong>';
@@ -306,10 +312,14 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= "<td>" . htmlspecialchars( $accountReq->getEmail() ) . $econf . "</td></tr>\n";
 		if ( count( $wgAccountRequestTypes ) > 1 ) {
 			$options = array();
-			$form .= "<tr><td><strong>" . $this->msg( 'confirmaccount-reqtype' )->escaped() . "</strong></td><td>";
+			$form .= "<tr><td><strong>" . $this->msg(
+				'confirmaccount-reqtype'
+			)->escaped() . "</strong></td><td>";
 			foreach ( $wgAccountRequestTypes as $i => $params ) {
 				// Give grep a chance to find the usages: confirmaccount-pos-0, confirmaccount-pos-1
-				$options[] = Xml::option( $this->msg( "confirmaccount-pos-$i" )->text(), $i, ( $i == $this->reqType ) );
+				$options[] = Xml::option( $this->msg(
+					"confirmaccount-pos-$i"
+				)->text(), $i, ( $i == $this->reqType ) );
 			}
 			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
 			$form .= implode( "\n", $options );
@@ -324,7 +334,8 @@ class ConfirmAccountsPage extends SpecialPage {
 			$form .= '<legend>' . $this->msg( 'confirmaccount-leg-areas' )->escaped() . '</legend>';
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
-			$form .= "<table style='border-spacing:5px; padding:0; background-color:#f9f9f9;'><tr style='vertical-align:top;'>";
+			$form .= "<table style='border-spacing: 5px; padding: 0; background-color: #f9f9f9;'>
+			<tr style='vertical-align:top;'>";
 			$count = 0;
 			foreach ( $userAreas as $name => $conf ) {
 				$count++;
@@ -360,7 +371,8 @@ class ConfirmAccountsPage extends SpecialPage {
 			}
 			if ( $this->hasItem( 'Biography' ) ) {
 				$form .= "<p>" . $this->msg( 'confirmaccount-bio' )->escaped() . "\n";
-				$form .= "<textarea tabindex='1' name='wpNewBio' id='wpNewBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
+				$form .= "<textarea tabindex='1' name='wpNewBio' id='wpNewBio' rows='12'
+					cols='80' style='width: 100%; background-color: #f9f9f9;'>" .
 					htmlspecialchars( $this->reqBio ) .
 					"</textarea></p>\n";
 			}
@@ -382,7 +394,8 @@ class ConfirmAccountsPage extends SpecialPage {
 			}
 			if ( $this->hasItem( 'Notes' ) ) {
 				$form .= "</p><p>" . $this->msg( 'confirmaccount-notes' )->escaped() . "\n";
-				$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+				$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes'
+					id='wpNotes' rows='3' cols='80' style='width: 100%'>" .
 					htmlspecialchars( $accountReq->getNotes() ) .
 					"</textarea></p>\n";
 			}
@@ -428,20 +441,42 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= "<strong>" . $this->msg( 'confirmaccount-confirm' )->parse() . "</strong>\n";
 		$form .= "<table style='padding:5px;'><tr>";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'accept', $this->submitType == 'accept',
-			array( 'id' => 'submitCreate', 'onclick' => 'document.getElementById("wpComment").style.display="block"' ) );
-		$form .= ' ' . Xml::label( $this->msg( 'confirmaccount-create' )->text(), 'submitCreate' ) . "</td>\n";
+			array(
+				'id' => 'submitCreate',
+				'onclick' => 'document.getElementById("wpComment").style.display="block"'
+			)
+		);
+		$form .= ' ' . Xml::label(
+			$this->msg( 'confirmaccount-create' )->text(), 'submitCreate'
+		) . "</td>\n";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'reject', $this->submitType == 'reject',
-			array( 'id' => 'submitDeny', 'onclick' => 'document.getElementById("wpComment").style.display="block"' ) );
-		$form .= ' ' . Xml::label( $this->msg( 'confirmaccount-deny' )->text(), 'submitDeny' ) . "</td>\n";
+			array(
+				'id' => 'submitDeny', 'onclick' => 'document.getElementById("wpComment").style.display="block"'
+			)
+		);
+		$form .= ' ' . Xml::label(
+			$this->msg( 'confirmaccount-deny' )->text(), 'submitDeny'
+		) . "</td>\n";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'hold', $this->submitType == 'hold',
-			array( 'id' => 'submitHold', 'onclick' => 'document.getElementById("wpComment").style.display="block"' ) );
-		$form .= ' ' . Xml::label( $this->msg( 'confirmaccount-hold' )->text(), 'submitHold' ) . "</td>\n";
+			array(
+				'id' => 'submitHold', 'onclick' => 'document.getElementById("wpComment").style.display="block"'
+			)
+		);
+		$form .= ' ' . Xml::label(
+			$this->msg( 'confirmaccount-hold' )->text(), 'submitHold'
+		) . "</td>\n";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'spam', $this->submitType == 'spam',
-			array( 'id' => 'submitSpam', 'onclick' => 'document.getElementById("wpComment").style.display="none"' ) );
-		$form .= ' ' . Xml::label( $this->msg( 'confirmaccount-spam' )->text(), 'submitSpam' ) . "</td>\n";
+			array(
+				'id' => 'submitSpam', 'onclick' => 'document.getElementById("wpComment").style.display="none"'
+			)
+		);
+		$form .= ' ' . Xml::label(
+			$this->msg( 'confirmaccount-spam' )->text(), 'submitSpam'
+		) . "</td>\n";
 		$form .= "</tr></table>";
 		$form .= "<div id='wpComment'><p>" . $this->msg( 'confirmaccount-reason' )->escaped() . "</p>\n";
-		$form .= "<p><textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
+		$form .= "<p>
+		<textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
 			htmlspecialchars( $this->reason ) . "</textarea></p></div>\n";
 		$form .= "<p>" . Xml::submitButton( $this->msg( 'confirmaccount-submit' )->text() ) . "</p>\n";
 		$form .= '</fieldset>';
@@ -696,12 +731,16 @@ class ConfirmAccountsPage extends SpecialPage {
 			$datim = $this->getLanguage()->timeanddate( wfTimestamp( TS_MW, $row->acr_rejected ), true );
 			$date = $this->getLanguage()->date( wfTimestamp( TS_MW, $row->acr_rejected ), true );
 			$time = $this->getLanguage()->time( wfTimestamp( TS_MW, $row->acr_rejected ), true );
-			$r .= ' <b>' . $this->msg( 'confirmaccount-reject', $row->user_name, $datim, $date, $time )->parse() . '</b>';
+			$r .= ' <b>' . $this->msg(
+				'confirmaccount-reject', $row->user_name, $datim, $date, $time
+			)->parse() . '</b>';
 		} elseif ( $row->acr_held && !$row->acr_rejected ) {
 			$datim = $this->getLanguage()->timeanddate( wfTimestamp( TS_MW, $row->acr_held ), true );
 			$date = $this->getLanguage()->date( wfTimestamp( TS_MW, $row->acr_held ), true );
 			$time = $this->getLanguage()->time( wfTimestamp( TS_MW, $row->acr_held ), true );
-			$r .= ' <b>' . $this->msg( 'confirmaccount-held', User::whoIs( $row->acr_user ), $datim, $date, $time )->parse() . '</b>';
+			$r .= ' <b>' . $this->msg(
+				'confirmaccount-held', User::whoIs( $row->acr_user ), $datim, $date, $time
+			)->parse() . '</b>';
 		}
 		# Check if someone is viewing this request
 		$key = wfMemcKey( 'acctrequest', 'view', $row->acr_id );
@@ -710,22 +749,29 @@ class ConfirmAccountsPage extends SpecialPage {
 			$r .= ' <b>' . $this->msg( 'confirmaccount-viewing', User::whoIs( $value ) )->parse() . '</b>';
 		}
 
-		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' style='border-spacing:1px; padding:3px; border:1px; width:100%;''>";
+		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}'
+			style='border-spacing:1px; padding:3px; border:1px; width:100%;''>";
 		if ( $this->hasItem( 'UserName' ) ) {
-			$r .= '<tr><td><strong>' . $this->msg( 'confirmaccount-name' )->escaped() . '</strong></td><td width=\'100%\'>' .
+			$r .= '<tr><td><strong>' . $this->msg(
+				'confirmaccount-name'
+			)->escaped() . '</strong></td><td width=\'100%\'>' .
 				htmlspecialchars( $row->acr_name ) . '</td></tr>';
 		}
 		if ( $this->hasItem( 'RealName' ) ) {
 			$hasCV = $row->acr_filename
 				? ' <strong>' . $this->msg( 'confirmaccount-withcv' )->escaped() . '</strong>'
 				: '';
-			$r .= '<tr><td><strong>' . $this->msg( 'confirmaccount-real-q' )->escaped() . '</strong></td><td width=\'100%\'>' .
+			$r .= '<tr><td><strong>' . $this->msg(
+				'confirmaccount-real-q'
+			)->escaped() . '</strong></td><td width=\'100%\'>' .
 				htmlspecialchars( $row->acr_real_name ) . $hasCV . '</td></tr>';
 		}
 		$econf = $row->acr_email_authenticated
 			? ' <strong>' . $this->msg( 'confirmaccount-econf' )->escaped() . '</strong>'
 			: '';
-		$r .= '<tr><td><strong>' . $this->msg( 'confirmaccount-email-q' )->escaped() . '</strong></td><td width=\'100%\'>' .
+		$r .= '<tr><td><strong>' . $this->msg(
+			'confirmaccount-email-q'
+		)->escaped() . '</strong></td><td width=\'100%\'>' .
 			htmlspecialchars( $row->acr_email ) . $econf . '</td></tr>';
 		# Truncate this, blah blah...
 		$bio = htmlspecialchars( $row->acr_bio );

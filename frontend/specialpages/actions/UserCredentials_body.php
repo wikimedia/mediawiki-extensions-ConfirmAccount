@@ -44,7 +44,9 @@ class UserCredentialsPage extends SpecialPage {
 		$out = $this->getOutput();
 
 		$username = str_replace( '_', ' ', $this->target );
-		$form = Xml::openElement( 'form', array( 'name' => 'stablization', 'action' => $wgScript, 'method' => 'get' ) );
+		$form = Xml::openElement(
+			'form', array( 'name' => 'stablization', 'action' => $wgScript, 'method' => 'get' )
+		);
 		$form .= "<fieldset><legend>" . $this->msg( 'usercredentials-leg' )->escaped() . "</legend>";
 		$form .= "<table><tr>";
 		$form .= "<td>" . Html::Hidden( 'title', $this->getPageTitle()->getPrefixedText() ) . "</td>";
@@ -83,16 +85,21 @@ class UserCredentialsPage extends SpecialPage {
 
 		$grouplist = '';
 		if ( count( $list ) > 0 ) {
-			$grouplist = '<tr><td>' . $this->msg( 'usercredentials-member' )->escaped() . '</td><td>' . implode( ', ', $list ) . '</td></tr>';
+			$grouplist = '<tr><td>' . $this->msg(
+				'usercredentials-member'
+			)->escaped() . '</td><td>' . implode( ', ', $list ) . '</td></tr>';
 		}
 
 		$form  = "<fieldset>";
 		$form .= '<legend>' . $this->msg( 'usercredentials-leg-user' )->escaped() . '</legend>';
 		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . $this->msg( 'username' )->escaped() . "</td>";
-		$form .= "<td>" . Linker::makeLinkObj( $user->getUserPage(), htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
+		$form .= "<td>" . Linker::makeLinkObj( $user->getUserPage(),
+			htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
 
-		$econf = $row->acd_email_authenticated ? ' <strong>' . $this->msg( 'confirmaccount-econf' )->escaped() . '</strong>' : '';
+		$econf = $row->acd_email_authenticated ? ' <strong>' . $this->msg(
+			'confirmaccount-econf'
+		)->escaped() . '</strong>' : '';
 		$form .= "<tr><td>" . $this->msg( 'usercredentials-email' )->escaped() . "</td>";
 		$form .= "<td>" . htmlspecialchars( $row->acd_email ) . $econf . "</td></tr>\n";
 
@@ -108,7 +115,8 @@ class UserCredentialsPage extends SpecialPage {
 			$form .= '<legend>' . $this->msg( 'confirmaccount-leg-areas' )->escaped() . '</legend>';
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
-			$form .= "<table style='border-spacing:5px; padding:0px; background-color:#f9f9f9;'><tr style='vertical-align: top;'>";
+			$form .= "<table style='border-spacing: 5px; padding: 0px; background-color: #f9f9f9;'>
+			<tr style='vertical-align: top;'>";
 			$count = 0;
 
 			$att = array( 'disabled' => 'disabled' );
@@ -142,7 +150,8 @@ class UserCredentialsPage extends SpecialPage {
 		$form .= "<td>" . htmlspecialchars( $row->acd_real_name ) . "</td></tr>\n";
 		$form .= '</table>';
 		$form .= "<p>" . $this->msg( 'usercredentials-bio' )->escaped() . "</p>";
-		$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpBio' id='wpNewBio' rows='10' cols='80' style='width:100%'>" .
+		$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpBio'
+		id='wpNewBio' rows='10' cols='80' style='width: 100%'>" .
 			htmlspecialchars( $row->acd_bio ) .
 			"</textarea></p>\n";
 		$form .= '</fieldset>';
@@ -158,7 +167,8 @@ class UserCredentialsPage extends SpecialPage {
 				$form .= $this->msg( 'confirmaccount-none-p' )->escaped();
 			}
 			$form .= "</p><p>" . $this->msg( 'usercredentials-notes' )->escaped() . "</p>\n";
-			$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%'>" .
+			$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpNotes'
+			id='wpNotes' rows='3' cols='80' style='width: 100%'>" .
 				htmlspecialchars( $row->acd_notes ) .
 				"</textarea></p>\n";
 			$form .= "<p>" . $this->msg( 'usercredentials-urls' )->escaped() . "</p>\n";

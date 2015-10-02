@@ -24,7 +24,9 @@ class ConfirmAccountUIHooks {
 	 * @param $skin
 	 * @return bool
 	 */
-	public static function setRequestLoginLinks( array &$personal_urls, Title $title, SkinTemplate $skin ) {
+	public static function setRequestLoginLinks(
+		array &$personal_urls, Title $title, SkinTemplate $skin
+	) {
 		# Add a link to Special:RequestAccount if a link exists for login
 		if ( isset( $personal_urls['login'] ) ) {
 			$personal_urls['createaccount'] = array(

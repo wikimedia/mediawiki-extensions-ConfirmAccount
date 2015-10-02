@@ -20,7 +20,7 @@
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo "ConfirmAccount extension\n";
-	exit( 1 ) ;
+	exit( 1 );
 }
 
 $wgExtensionCredits['specialpage'][] = array(
@@ -33,11 +33,13 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 # Load default config variables
-require( dirname( __FILE__ ) . '/ConfirmAccount.config.php' );
+require ( __DIR__ . '/ConfirmAccount.config.php' );
 
 # Define were PHP files and i18n files are located
-require( dirname( __FILE__ ) . '/ConfirmAccount.setup.php' );
-ConfirmAccountSetup::defineSourcePaths( $wgAutoloadClasses, $wgMessagesDirs, $wgExtensionMessagesFiles  );
+require ( __DIR__ . '/ConfirmAccount.setup.php' );
+ConfirmAccountSetup::defineSourcePaths(
+	$wgAutoloadClasses, $wgMessagesDirs, $wgExtensionMessagesFiles
+);
 
 # Define JS/CSS modules and file locations
 ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
@@ -77,6 +79,6 @@ function efLoadConfirmAccount() {
 	# Otherwise users can't get their passwords...
 	if ( !$wgEnableEmail ) {
 		echo "ConfirmAccount extension requires \$wgEnableEmail set to true.\n";
-		exit( 1 ) ;
+		exit( 1 );
 	}
 }

@@ -89,7 +89,9 @@ class AccountConfirmSubmission {
 			if ( !$result->isOk() ) {
 				$dbw->rollback();
 				return array( 'accountconf_mailerror',
-					$context->msg( 'mailerror' )->rawParams( $context->getOutput()->parse( $result->getWikiText() ) )->text() );
+					$context->msg( 'mailerror' )->rawParams(
+							$context->getOutput()->parse( $result->getWikiText() )
+						)->text() );
 			}
 			# Clear cache for notice of how many account requests there are
 			ConfirmAccount::clearAccountRequestCountCache();
@@ -106,7 +108,9 @@ class AccountConfirmSubmission {
 
 		# Pointless without a summary...
 		if ( $this->reason == '' ) {
-			return array( 'accountconf_needreason', $context->msg( 'confirmaccount-needreason' )->escaped() );
+			return array(
+				'accountconf_needreason', $context->msg( 'confirmaccount-needreason' )->escaped()
+			);
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
@@ -122,12 +126,16 @@ class AccountConfirmSubmission {
 		# Send out a request hold email...
 		$result = $u->sendMail(
 			$context->msg( 'confirmaccount-email-subj' )->inContentLanguage()->text(),
-			$context->msg( 'confirmaccount-email-body5', $u->getName(), $this->reason )->inContentLanguage()->text()
+			$context->msg(
+				'confirmaccount-email-body5', $u->getName(), $this->reason
+			)->inContentLanguage()->text()
 		);
 		if ( !$result->isOk() ) {
 			$dbw->rollback();
 			return array( 'accountconf_mailerror',
-				$context->msg( 'mailerror' )->rawParams( $context->getOutput()->parse( $result->getWikiText() ) )->text() );
+				$context->msg( 'mailerror' )->rawParams(
+						$context->getOutput()->parse( $result->getWikiText() )
+					)->text() );
 		}
 
 		# Clear cache for notice of how many account requests there are
@@ -138,7 +146,7 @@ class AccountConfirmSubmission {
 	}
 
 	protected function acceptRequest( IContextSource $context ) {
-		global $wgAuth, $wgAccountRequestTypes, $wgConfirmAccountSaveInfo;
+		global $wgAuth, $wgConfirmAccountSaveInfo;
 		global $wgConfirmAccountRequestFormItems, $wgConfirmAccountFSRepos;
 
 		$formConfig = $wgConfirmAccountRequestFormItems; // convience

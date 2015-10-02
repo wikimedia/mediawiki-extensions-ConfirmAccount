@@ -1,4 +1,5 @@
 <?php
+
 class ConfirmAccount {
 	/**
 	 * Move old stale requests to rejected list. Delete old rejected requests.
@@ -114,8 +115,8 @@ class ConfirmAccount {
 				$ip,
 				$user->getName(),
 				$url,
-				$wgContLang->timeanddate( $expiration, false ) ,
-				$wgContLang->date( $expiration, false ) ,
+				$wgContLang->timeanddate( $expiration, false ),
+				$wgContLang->date( $expiration, false ),
 				$wgContLang->time( $expiration, false )
 			)->inLanguage( $lang )->text()
 		);
@@ -217,7 +218,7 @@ class ConfirmAccount {
 		$mime = $magic->guessMimeType( $tmpfile, false );
 		# check mime type, if desired
 		if ( $wgVerifyMimeType ) {
-			wfDebug ( "\n\nmime: <$mime> extension: <$extension>\n\n" );
+			wfDebug( "\n\nmime: <$mime> extension: <$extension>\n\n" );
 			# Check mime type against file extension
 			if ( !UploadBase::verifyExtension( $mime, $extension ) ) {
 				return Status::newFatal( 'uploadcorrupt' );

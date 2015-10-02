@@ -107,7 +107,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$out->addWikiMsg( 'requestaccount-text' );
 
-		$form  = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
+		$form = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
 			'action' => $this->getPageTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
 
 		$form .= '<fieldset><legend>' . $this->msg( 'requestaccount-leg-user' )->escaped() . '</legend>';
@@ -115,19 +115,27 @@ class RequestAccountPage extends SpecialPage {
 		$form .= '<table style="padding:4px;">';
 		if ( $this->hasItem( 'UserName' ) ) {
 			$form .= "<tr><td>" . Xml::label( $this->msg( 'username' )->text(), 'wpUsername' ) . "</td>";
-			$form .= "<td>" . Xml::input( 'wpUsername', 30, $this->mUsername, array( 'id' => 'wpUsername' ) ) . "</td></tr>\n";
+			$form .= "<td>" . Xml::input(
+				'wpUsername', 30, $this->mUsername, array( 'id' => 'wpUsername' )
+			) . "</td></tr>\n";
 		} else {
 			$form .= "<tr><td>" . $this->msg( 'username' )->escaped() . "</td>";
 			$form .= "<td>" . $this->msg( 'requestaccount-same' )->escaped() . "</td></tr>\n";
 		}
-		$form .= "<tr><td>" . Xml::label( $this->msg( 'requestaccount-email' )->text(), 'wpEmail' ) . "</td>";
-		$form .= "<td>" . Xml::input( 'wpEmail', 30, $this->mEmail, array( 'id' => 'wpEmail' ) ) . "</td></tr>\n";
+		$form .= "<tr><td>" . Xml::label(
+			$this->msg( 'requestaccount-email' )->text(), 'wpEmail'
+		) . "</td>";
+		$form .= "<td>" . Xml::input(
+			'wpEmail', 30, $this->mEmail, array( 'id' => 'wpEmail' )
+		) . "</td></tr>\n";
 		if ( count( $wgAccountRequestTypes ) > 1 ) {
 			$form .= "<tr><td>" . $this->msg( 'requestaccount-reqtype' )->escaped() . "</td><td>";
 			$options = array();
 			foreach ( $wgAccountRequestTypes as $i => $params ) {
 				// Give grep a chance to find the usages: requestaccount-level-0, requestaccount-level-1
-				$options[] = Xml::option( $this->msg( "requestaccount-level-$i" )->text(), $i, ( $i == $this->mType ) );
+				$options[] = Xml::option(
+					$this->msg( "requestaccount-level-$i" )->text(), $i, ( $i == $this->mType )
+				);
 			}
 			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
 			$form .= implode( "\n", $options );
@@ -143,7 +151,8 @@ class RequestAccountPage extends SpecialPage {
 			$form .=  $this->msg( 'requestaccount-areas-text' )->parseAsBlock() . "\n";
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
-			$form .= "<table style='border-spacing:5px; padding:0px; background-color:#f9f9f9;'><tr valign='top'>";
+			$form .= "<table style='border-spacing: 5px; padding: 0px; background-color: #f9f9f9;'>
+			<tr valign='top'>";
 			$count = 0;
 			foreach ( $userAreas as $name => $conf ) {
 				$count++;
@@ -171,8 +180,12 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '<legend>' . $this->msg( 'requestaccount-leg-person' )->escaped() . '</legend>';
 			if ( $this->hasItem( 'RealName' ) ) {
 				$form .= '<table style="padding:4px;">';
-				$form .= "<tr><td>" . Xml::label( $this->msg( 'requestaccount-real' )->text(), 'wpRealName' ) . "</td>";
-				$form .= "<td>" . Xml::input( 'wpRealName', 35, $this->mRealName, array( 'id' => 'wpRealName' ) ) . "</td></tr>\n";
+				$form .= "<tr><td>" . Xml::label(
+					$this->msg( 'requestaccount-real' )->text(), 'wpRealName'
+				) . "</td>";
+				$form .= "<td>" . Xml::input(
+					'wpRealName', 35, $this->mRealName, array( 'id' => 'wpRealName' )
+				) . "</td></tr>\n";
 				$form .= '</table>';
 			}
 			if ( $this->hasItem( 'Biography' ) ) {
@@ -181,7 +194,8 @@ class RequestAccountPage extends SpecialPage {
 				}
 				$form .= $this->msg( 'requestaccount-bio-text' )->parseAsBlock() . "\n";
 				$form .= "<p>" . $this->msg( 'requestaccount-bio' )->parse() . "\n";
-				$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='12' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
+				$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='12' cols='80'
+				style='width: 100%; background-color: #f9f9f9;'>" .
 					htmlspecialchars( $this->mBio ) . "</textarea></p>\n";
 			}
 			$form .= '</fieldset>';
@@ -198,13 +212,15 @@ class RequestAccountPage extends SpecialPage {
 			}
 			if ( $this->hasItem( 'Notes' ) ) {
 				$form .= "<p>" . $this->msg( 'requestaccount-notes' )->escaped() . "\n";
-				$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80' style='width:100%;background-color:#f9f9f9;'>" .
+				$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80'
+				style='width: 100%; background-color: #f9f9f9;'>" .
 					htmlspecialchars( $this->mNotes ) .
 					"</textarea></p>\n";
 			}
 			if ( $this->hasItem( 'Links' ) ) {
 				$form .= "<p>" . $this->msg( 'requestaccount-urls' )->escaped() . "\n";
-				$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80' style='width:100%; background-color:#f9f9f9;'>" .
+				$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80'
+				style='width: 100%; background-color: #f9f9f9;'>" .
 					htmlspecialchars( $this->mUrls ) .
 					"</textarea></p>\n";
 			}
