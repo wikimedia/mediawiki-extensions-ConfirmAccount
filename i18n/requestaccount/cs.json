@@ -43,6 +43,6 @@
 	"requestaccount-email-subj": "{{SITENAME}}: Potvrzení e-mailové adresy",
 	"requestaccount-email-body": "Někdo (patrně vy, z IP adresy $1) na {{grammar:6sg|{{SITENAME}}}}\npožádal o uživatelský účet „$2“ pro tuto e-mailovou adresu.\n\nPro potvrzení, že tato adresa opravdu patří vám, přejděte svým\ninternetovým prohlížečem na následující adresu:\n\n$3\n\nPokud bude účet založen, bude heslo zasláno pouze vám.\nPokud jste to *nebyli* vy, neklikejte na odkaz.\nPlatnost tohoto potvrzovacího kódu vyprší $4.",
 	"requestaccount-email-subj-admin": "Žádost o účet na {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" požádal o účet a čeká na vaše schválení.\nE-mail byla ověřena. Žádost můžete schválit zde \"$2\".",
+	"requestaccount-email-body-admin": "$1 požádal o účet a čeká na vaše schválení.\nE-mailová adresa byla ověřena. Žádost můžete schválit zde:\n\n$2",
 	"acct_request_throttle_hit": "Promiňte, ale už jste {{gender:|požádal|požádala|požádali}} o vytvoření {{PLURAL:$1|1 účtu|$1 účtů}}.\nDalší žádost již není možná."
 }
