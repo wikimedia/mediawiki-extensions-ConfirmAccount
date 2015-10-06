@@ -45,6 +45,6 @@
 	"requestaccount-email-subj": "Confirmación do enderezo de correo electrónico de {{SITENAME}}",
 	"requestaccount-email-body": "Alguén, probabelmente vostede desde o enderezo IP $1, solicitou unha\nconta \"$2\" con este enderezo de correo electrónico en {{SITENAME}}.\n\nPara confirmar que esta conta lle pertence a vostede en {{SITENAME}}, abra esta ligazón no seu navegador:\n\n$3\n\nSe se crea a conta, só vostede recibirá o contrasinal. Se *non* se trata de vostede, non siga a ligazón.\nEste código de confirmación caducará o $4.",
 	"requestaccount-email-subj-admin": "Solicitude de conta en {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" solicitou unha conta e está pendente de confirmación.\nO enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aquí \"$2\".",
+	"requestaccount-email-body-admin": "$1 solicitou unha conta e está pendente de confirmación.\nO enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aquí: \n\n$2",
 	"acct_request_throttle_hit": "Sentímolo, xa solicitou {{PLURAL:$1|unha conta|$1 contas}}.\nNon pode facer máis solicitudes."
 }
