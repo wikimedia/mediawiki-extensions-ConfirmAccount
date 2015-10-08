@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Solicitar una cuenta",
@@ -42,6 +43,6 @@
 	"requestaccount-email-subj": "Confirmación de la direición de corréu de {{SITENAME}}",
 	"requestaccount-email-body": "Dalguién, probablemente vusté dende la direición IP $1, solicitó una cuenta \"$2\" con esta direición de corréu electrónicu en {{SITENAME}}.\n\nPa confirmar qu'esta cuenta ye daveres suya en {{SITENAME}}, abra esti enllaz nel so navegador:\n\n$3\n\nSe se crea la cuenta, sólo vusté recibirá la contraseña.\nSi esta persona *nun* ye vusté, nun siga l'enllaz.\nEsti códigu de confirmación caducará el $4.",
 	"requestaccount-email-subj-admin": "Solicitú de cuenta en {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" solicitó una cuenta y ta esperando confirmación.\nConfirmóse la direición de corréu electrónicu. Pue confirmar la solicitú equí \"$2\".",
+	"requestaccount-email-body-admin": "$1 solicitó una cuenta y ta esperando confirmación.\nConfirmóse la direición de corréu electrónicu. Pue confirmar la solicitú equí:\n\n$2",
 	"acct_request_throttle_hit": "Sentímoslo, yá solicitó {{PLURAL:$1|una cuenta|$1 cuentes}}.\nNun pue facer más solicitúes."
 }

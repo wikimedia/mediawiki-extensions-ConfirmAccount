@@ -10,7 +10,8 @@
 			"Najami",
 			"Per",
 			"WikiPhoenix",
-			"Lokal Profil"
+			"Lokal Profil",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Ansök om konto",
@@ -51,6 +52,6 @@
 	"requestaccount-email-subj": "Bekräftelse av e-postadress på {{SITENAME}}",
 	"requestaccount-email-body": "Någon, förmodligen du från IP-adressen $1, har ansökt om kontot \"$2\" med den här e-postadressen på {{SITENAME}}.\n\nFör att bekräfta att det är du som ansökt om detta konto på {{SITENAME}} så måste du öppna följande länk i din webbläsare:\n\n$3\n\nOm kontot skapas så kommer lösenordet skickas via e-post endast till dig. Om det *inte* är du som gjort ansökan, följ då inte länken.\nDen här bekräftelsekoden slutar gälla den $4.",
 	"requestaccount-email-subj-admin": "Ansökan om konto på {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" har ansökt om ett konto och väntar på att godkännas.\nE-postadressen har bekräftats. Du kan godkänna ansökan på\n$2",
+	"requestaccount-email-body-admin": "$1 har ansökt om ett konto och väntar på att godkännas.\nE-postadressen har bekräftats. Du kan godkänna ansökan på:\n\n$2",
 	"acct_request_throttle_hit": "Du har redan ansökt om {{PLURAL:$1|1 konto|$1 konton}}.\nDu kan inte göra fler ansökningar."
 }

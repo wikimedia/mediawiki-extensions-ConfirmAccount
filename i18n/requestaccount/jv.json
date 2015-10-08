@@ -3,7 +3,8 @@
 		"authors": [
 			"Meursault2004",
 			"Pras",
-			"Nemo bis"
+			"Nemo bis",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Nyuwun rékening (akun)",
@@ -33,6 +34,6 @@
 	"request-account-econf": "Alamat e-mail panjenengan wis dikonfirmasi lan bakal didokok ing daftar kaya ing panyuwunan rékening panjenengan.",
 	"requestaccount-email-subj": "Konfirmasi alamat e-mail {{SITENAME}}",
 	"requestaccount-email-subj-admin": "Panyuwunan rékening ing {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" wis nyuwun rékening lan saiki nunggu konfirmasi.\nAlamat e-mailé wis dikonfirmasi. Panjenengan bisa konfirmasi panyuwunan iki ing \"$2\".",
+	"requestaccount-email-body-admin": "$1 wis nyuwun rékening lan saiki nunggu konfirmasi.\nAlamat e-mailé wis dikonfirmasi. Panjenengan bisa konfirmasi panyuwunan iki ing:\n\n$2",
 	"acct_request_throttle_hit": "Nuwun sèwu, panjenengan wis nyuwun {{PLURAL:$1|1 akun|$1 akun}}.\nPanjenengan ora bisa nyuwun rékening anyar manèh."
 }

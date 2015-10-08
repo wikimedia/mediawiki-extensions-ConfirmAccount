@@ -8,7 +8,8 @@
 			"Jaideraf",
 			"Luckas",
 			"Luckas Blade",
-			"He7d3r"
+			"He7d3r",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Requisitar conta",
@@ -48,6 +49,6 @@
 	"requestaccount-email-subj": "Confirmação de endereço de e-mail para {{SITENAME}}",
 	"requestaccount-email-body": "Alguém, provavelmente você a partir do endereço IP $1, requisitou uma conta \"$2\" com este endereço de e-mail em {{SITENAME}}.\n\nPara confirmar que esta conta realmente lhe pertence em {{SITENAME}}, abra este link no seu navegador:\n\n$3\n\nSe a conta for criada, apenas a você será enviada a senha. \nSe esta pessoa *não* for você, não clique no link acima.\nEste código de confirmação expirará em $4.",
 	"requestaccount-email-subj-admin": "Requisição de conta em {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" requisitou uma conta e aguarda confirmação.\nO endereço de e-mail foi confirmado. Você pode confirmar a requisição aqui \"$2\".",
+	"requestaccount-email-body-admin": "$1 requisitou uma conta e aguarda confirmação.\nO endereço de e-mail foi confirmado. Você pode confirmar a requisição aqui:\n\n$2",
 	"acct_request_throttle_hit": "Desculpe, mas você já requisitou {{PLURAL:$1|1 conta|$1 contas}}.\nVocê não pode fazer mais pedidos."
 }

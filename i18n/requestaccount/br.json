@@ -3,7 +3,8 @@
 		"authors": [
 			"Fohanno",
 			"Fulup",
-			"Y-M D"
+			"Y-M D",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Goulenn ur gont implijer",
@@ -44,6 +45,6 @@
 	"requestaccount-email-subj": "Kadarnadenn chomlec'h postel evit {{SITENAME}}",
 	"requestaccount-email-body": "Unan bennak, c'hwi moarvat, gant ar chomlec'h IP $1, en deus goulennet sevel ur gont \"$2\" gant ar chomlec'h postel-mañ war {{SITENAME}}.\n\nEvit kadarnaat eo deoc'h ar gont-se war {{SITENAME}} e gwirionez, digorit al liamm-mañ en ho merdeer :\n\n$3\n\nMard eo bet krouet ar gont e vo kaset ar ger-tremen dre bostel deoc'h hepken\nMa n'eo ket gwir, *arabat* deoc'h implijout al liamm.\nMont a raio ar c'hod gwiriañ-mañ d'e dermen d'an $4.",
 	"requestaccount-email-subj-admin": "Goulenn kont evit {{SITENAME}}",
-	"requestaccount-email-body-admin": "« $1 » en deus goulennet ur gont ha zo o c'hortoz ar c'hadarnadur.\n\nKadarnaet eo bet ar chomlec'h postel. Gallout a rit kadarnaat ar goulenn amañ « $2 ».",
+	"requestaccount-email-body-admin": "$1 en deus goulennet ur gont ha zo o c'hortoz ar c'hadarnadur.\n\nKadarnaet eo bet ar chomlec'h postel. Gallout a rit kadarnaat ar goulenn amañ:\n\n$2",
 	"acct_request_throttle_hit": "Digarez, met goulennet hoc'h eus {{PLURAL:$1|1 gont|$1 kont}} dija.\nNe c'hallit ket ober goulennoù all."
 }

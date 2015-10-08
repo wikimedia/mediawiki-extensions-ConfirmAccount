@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Als-Chlämens",
-			"Als-Holder"
+			"Als-Holder",
+			"Macofe"
 		]
 	},
 	"requestaccount": "E Aatrag stelle uf e Benutzerkonto",
@@ -42,6 +43,6 @@
 	"requestaccount-email-subj": "{{SITENAME}} E-Mail-Adrässe-Priefig",
 	"requestaccount-email-body": "Eber mit dr IP Adräss $1, villicht Du, het bi {{SITENAME}} mit Dyynere E-Mail-Adräss e Aatrag uf s Benutzerkonto „$2“ gstellt.\n\nGo bstätigen, ass wirkli Du ne Aatrag uf des Konto bi {{SITENAME}} gstellt hesch, mach bitte in Dyynem Browser de Link uf:\n\n$3\n\nWänn s Benutzerkonto aagleit woren isch, chunnsch no ne E-Mail mit em Passwort iber.\n\nWänn Du *kei* Aatrag gstellt hesch uf s Benutzerkonto, mach de Link bitte nit uf!\n\nDää Bstätigungscode isch ab em $4 nimmi giltig.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} Benutzerkontenaatrag",
-	"requestaccount-email-body-admin": "„$1“ het e Aatrag uf e Benutzerkonto gstellt un wartet uf e Bstätigung.\nD E-Mail-Adräss isch bstätigt wore. Du chasch dr Aatrag do bstätige: „$2“.",
+	"requestaccount-email-body-admin": "$1 het e Aatrag uf e Benutzerkonto gstellt un wartet uf e Bstätigung.\nD E-Mail-Adräss isch bstätigt wore. Du chasch dr Aatrag do bstätige:\n\n$2",
 	"acct_request_throttle_hit": "Du hesch scho ne Aatrag uf {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonte}} gstellt, Du chasch zur Zyt fir keini meh ne Aatrag stelle."
 }

@@ -6,7 +6,8 @@
 			"Mach",
 			"Suelnur",
 			"Vito Genovese",
-			"Nemo bis"
+			"Nemo bis",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Hesap iste",
@@ -45,6 +46,6 @@
 	"requestaccount-email-subj": "{{SITENAME}} e-posta adresi doğrulaması",
 	"requestaccount-email-body": "$1 IP adresini kullanan biri (muhtemelen siz), {{SITENAME}} üzerinde bu e-posta adresiyle \"$2\" hesabını talep etti.\n\nBu hesabın {{SITENAME}} üzerinde gerçekten de size ait olduğunu onaylamak için, bu bağlantıyı tarayıcınızda açın:\n\n$3\n\nHesap oluşturulmuşsa sadece size e-posta ile parola gönderilecektir.\nBu siz *değilseniz*, bağlantıyı açmayın.\nBu onay kodu, $4 tarihinde geçerliliğini yitirecektir.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} hesap isteği",
-	"requestaccount-email-body-admin": "\"$1\" bir hesap isteğinde bulundu ve onay bekliyor.\nE-posta adresi doğrulandı. İsteği şuradan onaylayabilirsiniz: \"$2\".",
+	"requestaccount-email-body-admin": "$1 bir hesap isteğinde bulundu ve onay bekliyor.\nE-posta adresi doğrulandı. İsteği şuradan onaylayabilirsiniz:\n\n$2",
 	"acct_request_throttle_hit": "Üzgünüz, daha önce {{PLURAL:$1|1 hesap|$1 hesap}} isteğinde bulunmuşsunuz.\nDaha fazla istekte bulunamazsınız."
 }

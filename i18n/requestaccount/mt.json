@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrisportelli"
+			"Chrisportelli",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Itlob kont",
@@ -41,6 +42,6 @@
 	"requestaccount-email-subj": "Konferma tal-indirizz elettroniku għal {{SITENAME}}",
 	"requestaccount-email-body": "Xi ħadd, probabbilment int mill-indirizz IP $1, talab għall-kont \"$2\" b'dan l-indirizz tal-posta elettronika fuq {{SITENAME}}.\n\nBiex tikkonferma li dan il-kont tassew jappartjeni għalik, iftaħ il-ħolqa segwenti:\n\n$3\n\nMeta l-kont jiġi maħluq, il-password se tintbagħat lilek biss permezz tal-posta elettronika.\nJekk il-kont *mhuwiex* tiegħek, issegwix il-ħolqa.\nDan il-kodiċi ta' konferma se jiskadi fil-$4.",
 	"requestaccount-email-subj-admin": "Rikjesta għal kont fuq {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" talab kont u qiegħed jistenna konferma.\nL-indirizz elettroniku ġie kkonfermat. Tista' tikkonferma r-rikjesta hawnhekk \"$2\".",
+	"requestaccount-email-body-admin": "$1 talab kont u qiegħed jistenna konferma.\nL-indirizz elettroniku ġie kkonfermat. Tista' tikkonferma r-rikjesta hawnhekk:\n\n$2",
 	"acct_request_throttle_hit": "Jiddispjaċina, inti diġà tlabat għal {{PLURAL:$1|kont wieħed|$1 kontijiet}}.\nMa tistax tagħmel iktar rikjesti."
 }

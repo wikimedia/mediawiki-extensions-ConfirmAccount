@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helix84"
+			"Helix84",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Vyžiadať účet",
@@ -40,6 +41,6 @@
 	"requestaccount-email-subj": "potvrdenie e-mailovej adresy pre {{GRAMMAR:akuzatív|{{SITENAME}}}}",
 	"requestaccount-email-body": "Niekto, pravdepodobne vy z IP adresy $1, zaregistroval účet\n\"$2\" s touto e-mailovou adresou na {{GRAMMAR:lokál|{{SITENAME}}}}.\n\nPre potvrdenie, že tento účet skutočne patrí vám a pre aktivovanie\ne-mailových funkcií na {{GRAMMAR:lokál|{{SITENAME}}}}, otvorte tento odkaz vo vašom prehliadači:\n\n$3\n\nAk ste to *neboli* vy, neotvárajte odkaz. Tento potvrdzovací kód\nvyprší o $4.",
 	"requestaccount-email-subj-admin": "Žiadosť o účet vo {{GRAMMAR:lokál|{{SITENAME}}}}",
-	"requestaccount-email-body-admin": "„$1“ požiadal o účet a čaká na potvrdenie.\nEmailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu: „$2“.",
+	"requestaccount-email-body-admin": "$1 požiadal o účet a čaká na potvrdenie.\nEmailová adresa bola potvrdená. Požiadavku môžete potvrdiť tu:\n\n$2",
 	"acct_request_throttle_hit": "Prepáčte, už ste požiadali o vytvorenie {{PLURAL:$1|$1 účtu|$1 účtov}}.\nNemôžete odoslať viac žiadostí."
 }

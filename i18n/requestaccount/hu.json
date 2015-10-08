@@ -5,7 +5,8 @@
 			"Dj",
 			"Dorgan",
 			"Glanthor Reviol",
-			"Tgr"
+			"Tgr",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Felhasználói fiók kérése",
@@ -44,6 +45,6 @@
 	"requestaccount-email-subj": "{{SITENAME}} e-mail cím megerősítés",
 	"requestaccount-email-body": "Valaki, valószínűleg te, a $1 IP-címről kérte a \"$2\" nevű\nfelhasználói fiókot a(z) {{SITENAME}} wikin.\n\nAnnak érdekében, hogy megerősítsd, ez az azonosító valóban hozzád tartozik, nyisd meg az alábbi linket a böngésződben:\n\n$3\n\n\nHa a fiók elkészült, akkor elküldjük a jelszavadat. Ha ez *nem* te vagy, ne kattints a linkre.\nEnnek a megerősítésre szánt kódnak a felhasználhatósági ideje lejár: $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} felhasználói fiók kérelem",
-	"requestaccount-email-body-admin": "\"$1\" regisztrációja jóváhagyásra vár.\nAz e-mail cím ellenőrzése sikeres volt. Itt hagyhatod jóvá a kérést: \"$2\".",
+	"requestaccount-email-body-admin": "$1 regisztrációja jóváhagyásra vár.\nAz e-mail cím ellenőrzése sikeres volt. Itt hagyhatod jóvá a kérést:\n\n$2",
 	"acct_request_throttle_hit": "Sajnáljuk, de már kértél {{PLURAL:$1|egy|$1}} felhasználói fiókot.\nNem igényelhetsz újabbakat."
 }

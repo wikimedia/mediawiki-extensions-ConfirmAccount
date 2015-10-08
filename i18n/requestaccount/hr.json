@@ -5,7 +5,8 @@
 			"Dnik",
 			"Ex13",
 			"SpeedyGonsales",
-			"Nemo bis"
+			"Nemo bis",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Zatraži suradnički račun",
@@ -44,6 +45,6 @@
 	"requestaccount-email-subj": "{{SITENAME}} potvrda e-mail adrese",
 	"requestaccount-email-body": "Netko, vjerojatno s vaše IP adrese $1, je zatražio račun \"$2\" s ovom e-mail adresom na {{SITENAME}}.\n\nKako biste potvrdili da ovaj račun zaista pripada vama na {{SITENAME}}, otvorite ovaj link u svom pretraživaču:\n\n$3\n\nAko se račun otvori, samo vama će biti poslana lozinka.\nAko ovo *niste* vi, nemojte otvarati link.\nOvaj potvrdni kod će isteći $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} zahtjev suradničkog računa",
-	"requestaccount-email-body-admin": "\"$1\" je zatražio suradnički račun i čeka potvrdu.\nE-mail adresa je potvrđena. Možete potvrditi zahtjev ovdje \"$2\".",
+	"requestaccount-email-body-admin": "$1 je zatražio suradnički račun i čeka potvrdu.\nE-mail adresa je potvrđena. Možete potvrditi zahtjev ovdje:\n\n$2",
 	"acct_request_throttle_hit": "Žao nam je, već ste zatražili {{PLURAL:$1|1 suradnički račun|$1 suradničke račune}}. Ne možete postaviti nove zahtjeve."
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Purodha"
+			"Purodha",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Noh em Zojang als Metmaacher frore",
@@ -42,6 +43,6 @@
 	"requestaccount-email-subj": "{{ucfirst:{{GRAMMAR:Genitiv ier feminine|{{SITENAME}}}}}} <i lang=\"en\">e-mail</i>-Addräß Beschtätejung",
 	"requestaccount-email-body": "Daach,\n\nkünnt sin, Do woohß et sellver, jedenfalls hät eine vun dä IP-Address\n$1 en Aanfrooch noh enem Zohjang op {{GRAMMAR:Akkusativ|{{SITENAME}}}}\nals Metmaacher met däm Name „$2“ jeschtallt.\n\nJetz wulle mer vun Dier en Beschtäätejung, dat dat all ääsch es,\nun dat De dat och sellver wohß, un esu ene Zohjang han wells.\nZom Beschtäätejje, jangk met Dingem Web-Brauser op dä Lengk:\n\n$3\n\nWann Dinge Zohjang dann ennjerescht wood, kriß Do allein dat\nPasswoot doför zohjescheck.\n\nWann dat alles Kappes es, un De wells jaa nit {{GRAMMAR:em|{{SITENAME}}}}\nmetmaache, dann donn jaa nix. Aam $5 öm $6 Uhr verfällt dä Lengk\nbovve automattesch un vun janz allein.\n\nEne schööne Jrooß {{GRAMMAR:Genitiv vun|{{SITENAME}}}}",
 	"requestaccount-email-subj-admin": "Aanfrooch för Metmaacher {{GRAMMAR:von|{{SITENAME}}}} ze wääde.",
-	"requestaccount-email-body-admin": "{{GENDER:$1|Dä|Dat|Dä Metmaacher|Dat|De}} „$1“ well ene Zohjang han un es am waade, dä ze krijje. De aanjejovve <i lang=\"en\">e-mail</i>-Addräß es beschtätesch. Do kanns dämm dä Zohjang jevve op dä Sigg: $2",
+	"requestaccount-email-body-admin": "{{GENDER:$1|Dä|Dat|Dä Metmaacher|Dat|De}} $1 well ene Zohjang han un es am waade, dä ze krijje. De aanjejovve <i lang=\"en\">email</i>-Addräß es beschtätesch. Do kanns dämm dä Zohjang jevve op dä Sigg:\n\n$2",
 	"acct_request_throttle_hit": "Deihd uns leid, Do häs {{PLURAL:$1|ald|ald $1 Mohl|jaanit}} noh enem Zohjang jefrooch. Do kanns nit noch mih Aanfroore enreische."
 }

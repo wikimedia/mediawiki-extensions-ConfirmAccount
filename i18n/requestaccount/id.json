@@ -7,7 +7,8 @@
 			"Iwan Novirion",
 			"Rex",
 			"Nemo bis",
-			"Kenrick95"
+			"Kenrick95",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Permintaan akun",
@@ -47,6 +48,6 @@
 	"requestaccount-email-subj": "Konfirmasi alamat surel {{SITENAME}}",
 	"requestaccount-email-body": "Seseorang, mungkin Anda, dari alamat IP $1, telah mendaftarkan permintaan akun \"$2\" dengan alamat surel ini di {{SITENAME}}.\n\nUntuk mengkonfirmasikan bahwa akun ini benar dimiliki oleh Anda di {{SITENAME}}, ikuti pranala berikut pada penjelajah web Anda:\n\n$3\n\nSetelah akun ini dibuat, hanya Anda yang akan dikirim kata sandinya melalui surel.\nJika Anda merasa *tidak pernah* mendaftar, jangan ikuti pranala di atas.\nKode konfirmasi ini akan kedaluwarsa pada $4.",
 	"requestaccount-email-subj-admin": "Permintaan akun {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" telah mengajukan permintaan pembuatan akun dan sedang menunggu konfirmasi.\nSurel ini telah dikonfirmasi. Anda dapat memberikan konfirmasi atas permintaan tersebut di sini \"$2\".",
+	"requestaccount-email-body-admin": "$1 telah mengajukan permintaan pembuatan akun dan sedang menunggu konfirmasi.\nSurel ini telah dikonfirmasi. Anda dapat memberikan konfirmasi atas permintaan tersebut di sini:\n\n$2",
 	"acct_request_throttle_hit": "Anda telah meminta {{PLURAL:$1|1 akun|$1 akun}}.\nAnda tidak dapat lagi melakukan permintaan."
 }

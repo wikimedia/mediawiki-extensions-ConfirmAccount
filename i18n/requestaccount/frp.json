@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ChrisPtDe"
+			"ChrisPtDe",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Demanda de compto usanciér",
@@ -40,6 +41,6 @@
 	"requestaccount-email-subj": "Confirmacion de l’adrèce èlèctronica por {{SITENAME}}",
 	"requestaccount-email-body": "Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto usanciér « $2 » avouéc ceta adrèce èlèctronica sur lo seto {{SITENAME}}.\n\nPor confirmar que cél compto est franc a vos dessus {{SITENAME}}, vos éte preyê d’uvrir ceti lim dens voutron navigator :\n\n$3\n\nVoutron contresegno vos serat mandâ ren que se voutron compto usanciér est fêt.\nS’o ére *pas* lo câs, utilisâd pas cél lim.\nCeti code de confirmacion èxpirerat lo $4.",
 	"requestaccount-email-subj-admin": "Demanda de compto dessus {{SITENAME}}",
-	"requestaccount-email-body-admin": "« $1 » at demandâ un compto usanciér et sè trove en atenta de confirmacion.\nL’adrèce èlèctronica at étâ confirmâ. Vos pouede aprovar la demanda ique « $2 ».",
+	"requestaccount-email-body-admin": "$1 at demandâ un compto usanciér et sè trove en atenta de confirmacion.\nL’adrèce èlèctronica at étâ confirmâ. Vos pouede aprovar la demanda ique:\n\n$2",
 	"acct_request_throttle_hit": "Dèsolâ, vos éd ja demandâ $1 compto{{PLURAL:$1||s}} usanciér.\nVos pouede pas més fâre de demanda."
 }

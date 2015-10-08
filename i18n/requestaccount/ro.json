@@ -4,7 +4,8 @@
 			"KlaudiuMihaila",
 			"Mihai",
 			"Minisarm",
-			"Stelistcristi"
+			"Stelistcristi",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Solicitare deschidere cont",
@@ -35,5 +36,5 @@
 	"request-account-econf": "Adresa ta de e-mail a fost confirmată și va fi listată în cererea de deschidere de cont.",
 	"requestaccount-email-subj": "{{SITENAME}} confirmare adresă e-mail",
 	"requestaccount-email-body": "Cineva, probabil tu de la adresa IP $1, a cerut deschiderea unui cont \"$2\" cu această adresă de e-mail în {{SITENAME}}.\n\nPentru a confirma că într-adevăr adresa întrodusă în {{SITENAME}} îți aparține, deschide legătura următoare în programul tău de navigare pe internet:\n\n$3\n\nDacă acest cont a fost creat, doar ție îți va fi trimisă parola.\nDacă acest mesaj nu-ți este destinat, nu deschide legătura.\nCodul de confirmare expiră în $4.",
-	"requestaccount-email-body-admin": "\"$1\" a cerut deschiderea unui cont și așteaptă confirmarea.\nAdresa de e-mail a fost confirmată. Poți confirma cererea aici \"$2\"."
+	"requestaccount-email-body-admin": "$1 a cerut deschiderea unui cont și așteaptă confirmarea.\nAdresa de e-mail a fost confirmată. Poți confirma cererea aici:\n\n$2"
 }

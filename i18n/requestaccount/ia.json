@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"McDutchie"
+			"McDutchie",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Requestar conto",
@@ -42,6 +43,6 @@
 	"requestaccount-email-subj": "Confirmation del adresse de e-mail pro {{SITENAME}}",
 	"requestaccount-email-body": "Un persona, probabilemente tu, desde le adresse IP $1, ha requestate un conto \"$2\" con iste adresse de e-mail in {{SITENAME}}.\n\nPro confirmar que iste conto realmente pertine a te in {{SITENAME}}, visita iste ligamine in tu navigator del web:\n\n$3\n\nSi le conto es create, solmente tu recipera le contrasigno in e-mail.\nSi *non* es tu qui faceva iste requesta, non visita le ligamine.\nIste codice de confirmation expirara le $4.",
 	"requestaccount-email-subj-admin": "Requesta de conto in {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" ha requestate un conto e attende confirmation.\nLe adresse de e-mail ha essite confirmate. Tu pote confirmar le requesta hic: \"$2\".",
+	"requestaccount-email-body-admin": "$1 ha requestate un conto e attende confirmation.\nLe adresse de e-mail ha essite confirmate. Tu pote confirmar le requesta hic:\n\n$2",
 	"acct_request_throttle_hit": "Pardono, tu ha ja create {{PLURAL:$1|1 conto|$1 contos}}.\nTu non pote facer plus requestas."
 }

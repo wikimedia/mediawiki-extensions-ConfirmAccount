@@ -4,7 +4,8 @@
 			"Gunnernett",
 			"Harald Khan",
 			"Jon Harald Søby",
-			"Njardarlogar"
+			"Njardarlogar",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Be om konto",
@@ -43,6 +44,6 @@
 	"requestaccount-email-subj": "Stadfesting av E-postadressa hjå {{SITENAME}}",
 	"requestaccount-email-body": "Nokon, sannsynlegvis deg frå IP-adressa $1, har bede om ein konto «$2» med denne e-postadressa på {{SITENAME}}.\n\nOpna denne lekkja i nettlesaren din for å stadfesta at denne førespurnaden verkeleg kjem frå deg:\n\n$3\n\nOm kontoen vert oppretta vil berre du motta passordet.\nOm førespurnaden *ikkje* kjem frå deg, ikkje følg lekkja.\nDenne stadfestingskoden går ut $4.",
 	"requestaccount-email-subj-admin": "Kontoførespurnad på {{SITENAME}}",
-	"requestaccount-email-body-admin": "«$1» har bede om ein konto og ventar på godkjenning. E-postadressa er stadfesta. Du kan godkjenna førespurnaden her: «$2».",
+	"requestaccount-email-body-admin": "$1 har bede om ein konto og ventar på godkjenning.\nE-postadressa er stadfesta. Du kan godkjenna førespurnaden her:\n\n$2",
 	"acct_request_throttle_hit": "Du har alt bede om {{PLURAL:$1|éin konto|$1 kontoar}}.\nDu kan ikkje be om fleire."
 }

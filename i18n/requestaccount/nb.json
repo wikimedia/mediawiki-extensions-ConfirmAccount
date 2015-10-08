@@ -4,7 +4,8 @@
 			"Event",
 			"Harald Khan",
 			"Laaknor",
-			"Nghtwlkr"
+			"Nghtwlkr",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Etterspør konto",
@@ -44,6 +45,6 @@
 	"requestaccount-email-subj": "E-postbekreftelse hos {{SITENAME}}",
 	"requestaccount-email-body": "Noen, antageligvis deg fra IP-adressen $1, har etterspurt en konto «$2» med denne e-postadressen på {{SITENAME}}.\n\nÅpne denne lenken i nettleseren din for å bekrefte at denne forespørselen virkelig kommer fra deg:\n\n$3\n\nOm kontoen blir opprettet vil kun du motta passordet. Om forespørselen *ikke* kommer fra deg, ikke følg lenken. Denne bekreftelseskoden utløper $4.",
 	"requestaccount-email-subj-admin": "Kontoforespørsel på {{SITENAME}}",
-	"requestaccount-email-body-admin": "«$1» har etterspurt en konto og venter på godkjenning. E-postadressen er bekreftet. Du kan godkjenne forespørselen her: «$2».",
+	"requestaccount-email-body-admin": "$1 har etterspurt en konto og venter på godkjenning.\nE-postadressen er bekreftet. Du kan godkjenne forespørselen her:\n\n$2",
 	"acct_request_throttle_hit": "Beklager, du har allerede etterspurt {{PLURAL:$1|én konto|$1 kontoer}}. Du kan ikke etterspørre flere."
 }

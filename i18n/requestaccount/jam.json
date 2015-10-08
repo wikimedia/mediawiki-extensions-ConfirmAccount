@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yocahuna"
+			"Yocahuna",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Rikwes akount",
@@ -40,6 +41,6 @@
 	"requestaccount-email-subj": "{{SITENAME}} e-miel ajres kanfamieshan",
 	"requestaccount-email-body": "Smadi, prabli yu frahn IP ajres $1, rikwes a akount \"$2\" wid dis e-miel ajres pahn {{SITENAME}}.\n\nFi kanfoerm se dis akount riili bilangx tu yu pahn {{SITENAME}}, opn dis lingk ina yu brouza:\n\n$3\n\nEf di akount kriet, onngl yu wi get e-miel wid di paaswod.\nEf dis a *no* yu, no fala di lingk.\nDis kanfamieshan kuod wi expaya a $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} akount rikwes",
-	"requestaccount-email-body-admin": "\"$1\" rikwes a akount ahn a wiet fi kanfamieshan.\nDi e-miel ajres kanfoerm. Yu kiahn kanfoerm di rikwes yaso \"$2\".",
+	"requestaccount-email-body-admin": "$1 rikwes a akount ahn a wiet fi kanfamieshan.\nDi e-miel ajres kanfoerm. Yu kiahn kanfoerm di rikwes yaso:\n\n$2",
 	"acct_request_throttle_hit": "Sari yu aredi rikwes {{PLURAL:$1|1 akount|$1 akount}}.\nYu kyaahn mek no muo rikwes."
 }

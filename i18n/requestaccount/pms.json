@@ -3,7 +3,8 @@
 		"authors": [
 			"Borichèt",
 			"Bèrto 'd Sèra",
-			"Dragonòt"
+			"Dragonòt",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Ciamé un cont",
@@ -43,6 +44,6 @@
 	"requestaccount-email-subj": "Arcesta ëd conferma d'adrëssa ëd pòsta eletrònica da {{SITENAME}}",
 	"requestaccount-email-body": "Cheidun, ch'a l'é belfé ch'a sia chiel/chila, da 'nt l'adrëssa IP $1 a l'ha ciamà dë deurbe un cont antestà a \"$2\" ansima a {{SITENAME}} e a l'ha lassà st'adrëssa ëd pòsta eletrònica-sì. Për confermé che ës cont ansima a {{SITENAME}} a sarìa sò da bon, për piasì ch'a deurba ant sò navigator st'anliura-sì: $3\n\nQuand ël cont a vnirà creà, soa la ciav a sarà mandà mach a st'adrëssa-sì. Se për cas a fussa PA stait chiel/chila a fé la domanda, a basta ch'a n'arsponda nen d'autut. Ës còdes ëd conferma-sì a scad dël $4.",
 	"requestaccount-email-subj-admin": "arcesta ëd cont ëd {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" a l'ha ciamà un cont e a speta la conferma.\nL'adrëssa ëd pòsta eletrònica a l'é stàita confermà. A peul confermé l'arcesta ambelessì \"$2\".",
+	"requestaccount-email-body-admin": "$1 a l'ha ciamà un cont e a speta la conferma.\nL'adrëssa ëd pòsta eletrònica a l'é stàita confermà. A peul confermé l'arcesta ambelessì:\n\n$2",
 	"acct_request_throttle_hit": "A l'ha gia ciamà {{PLURAL:$1|1 cont|$1 cont}}. \nPër darmagi ant ës moment-sì i podoma nen aceté dj'àotre domande da chiel/chila."
 }

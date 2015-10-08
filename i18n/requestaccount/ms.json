@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Anakmalaysia",
-			"Nemo bis"
+			"Nemo bis",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Mohon akaun",
@@ -42,6 +43,6 @@
 	"requestaccount-email-subj": "Pengesahan alamat e-mel {{SITENAME}}",
 	"requestaccount-email-body": "Seseorang, mungkin anda dari alamat IP $1, telah memohon akaun \"$2\" dengan alamat e-mel ini di {{SITENAME}}.\n\nUntuk mengesahkan bahawa akaun ini benar-benar milik anda di {{SITENAME}}, buka pautan berikut dalam pelayar anda:\n\n$3\n\nJika akaun ini dibuka, hanya anda yang akan diberi kata laluan melalui e-mel.\nJika ini *bukan* anda, jangan ikut pautan ini.\nKod pengesahan ini akan luput pada $4.",
 	"requestaccount-email-subj-admin": "Permohonan akaun {{SITENAME}}",
-	"requestaccount-email-body-admin": "\"$1\" telah memohon akaun dan sedang menunggu pengesahan.\nAlamat e-mel ini telah disahkan. Anda boleh mengesahan permohonan di sini \"$2\".",
+	"requestaccount-email-body-admin": "$1 telah memohon akaun dan sedang menunggu pengesahan.\nAlamat e-mel ini telah disahkan. Anda boleh mengesahan permohonan di sini:\n\n$2",
 	"acct_request_throttle_hit": "Maaf, anda sudah memohon {{PLURAL:$1|1 akaun|$1 akaun}}.\nAnda tidak boleh membuat permohonan lagi."
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cedric31"
+			"Cedric31",
+			"Macofe"
 		]
 	},
 	"requestaccount": "Demanda de compte d'utilizaire",
@@ -40,6 +41,6 @@
 	"requestaccount-email-subj": "{{SITENAME}} confirmacion d’adreça de corrièr electronic.",
 	"requestaccount-email-body": "Qualqu’un, probablament vos, a formulat, dempuèi l’adreca IP $1, una demanda de compte d'utilizaire « $2 » amb aquesta adreça de corrièr electronic sus {{SITENAME}}.\n\nPer confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navigador Web :\n\n$3 \n\nVòstre senhal vos serà mandat unicament se vòstre compte es creat. Se èra pas lo cas, utilizetz pas aqueste ligam. \nAqueste còde de confirmacion expira lo $4.",
 	"requestaccount-email-subj-admin": "Demanda de compte sus {{SITENAME}}",
-	"requestaccount-email-body-admin": "« $1 » a demandat un compte e se tròba en espèra de confirmacion.\n\nL'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprovar la demanda aicí « $2 ».",
+	"requestaccount-email-body-admin": "$1 a demandat un compte e se tròba en espèra de confirmacion.\n\nL'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprovar la demanda aicí :\n\n$2",
 	"acct_request_throttle_hit": "O planhèm, ja avètz demandat {{PLURAL:$1|1 compte|$1 comptes}}.\nPodètz pas far mai de demanda."
 }
