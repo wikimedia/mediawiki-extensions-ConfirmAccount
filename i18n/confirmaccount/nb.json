@@ -8,7 +8,7 @@
 		]
 	},
 	"confirmaccounts": "Godkjenn kontoforespørsler",
-	"confirmedit-desc": "Gir byråkrater muligheten til å godkjenne kontoforespørsler.",
+	"confirmaccount-desc": "Gir byråkrater muligheten til å godkjenne kontoforespørsler.",
 	"confirmaccount-maintext": "'''Denne siden brukes for å bekrefte ventende kontoforespørsel på ''{{SITENAME}}'''''.\n\nHver kontoforespørselkø består av tre underkøer, én for åpne forespørsler, én for forespørsler som er satt på avventing av andre administratorer, og én for nylig avvise forespørsler.\n\nNår du reagerer på en forespørsel, gå gjennom den  og, om det er nødvendig, bekreft informasjonen som blir gitt. Handlingene dine vil logges privat. Det forventes også at du gjennomgår den aktiviteten som er her fra andre enn deg selv.",
 	"confirmaccount-list": "Under er en liste over kontoforespørsler som venter på godkjenning. Godkjente kontoer vil opprettes og fjernes fra denne listen. Avviste kontoer vil kun slettes fra listen.",
 	"confirmaccount-list2": "Nedenfor er en liste over nylig avviste kontoforespørsler, som vil slettes automatisk når de er et visst antall dager gamle.\nDe kan fortsatt godkjennes, men du burde først konferere med administratoren som avviste dem.",

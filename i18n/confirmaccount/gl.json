@@ -9,7 +9,7 @@
 		]
 	},
 	"confirmaccounts": "Confirmar solicitudes de contas",
-	"confirmedit-desc": "Dá aos burócratas a capacidade de confirmar as solicitudes de contas",
+	"confirmaccount-desc": "Dá aos burócratas a capacidade de confirmar as solicitudes de contas",
 	"confirmaccount-maintext": "'''Esta páxina úsase para confirmar as solicitudes de contas pendentes en ''{{SITENAME}}''.'''\n\nCada cola de solicitudes consiste en tres sublistas.\nUnha para abrir a solicitude, outra para aquelas que fosen postas por outros administradores en espera de máis información e unha última para as solicitudes rexeitadas recentemente.\n\nAo responder unha solicitude revísea con coidado e, se é necesario, confirme a información alí contida.\nAs súas accións quedarán rexistradas de maneira privada.\nAgárdase tamén que revise calquera actividade que teña lugar aquí á parte das súas propias.",
 	"confirmaccount-list": "A continuación está a lista de contas pendentes de aprobación.\nAs contas aprobadas crearanse e eliminaranse desta lista. As contas rexeitadas simplemente eliminaranse desta lista.",
 	"confirmaccount-list2": "A continuación está a lista de solicitudes de contas rexeitadas recentemente que poden eliminarse automaticamente unha vez que teñan varios días.\nPoden aínda ser aceptadas como contas, aínda que pode ser mellor que consulte primeiro co administrador que as rexeitou antes de facelo.",

@@ -9,7 +9,7 @@
 		]
 	},
 	"confirmaccounts": "Potvrdi zahtjeve za suradničkim računom",
-	"confirmedit-desc": "Daje birokratima pravo potvrditi zahtjeve za suradničkim računom",
+	"confirmaccount-desc": "Daje birokratima pravo potvrditi zahtjeve za suradničkim računom",
 	"confirmaccount-none-o": "Trenutačno nema otvorenih zahtjeva na ovom popisu.",
 	"confirmaccount-none-h": "Nema zahtjeva u popisu čekanja.",
 	"confirmaccount-none-r": "Nema nedavno odbijenih zahtjeva na popisu.",

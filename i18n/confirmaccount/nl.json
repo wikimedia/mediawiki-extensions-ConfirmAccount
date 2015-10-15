@@ -8,7 +8,7 @@
 		]
 	},
 	"confirmaccounts": "Gebruikersaanvragen bevestigen",
-	"confirmedit-desc": "Geeft bureaucraten de mogelijkheid om gebruikersaanvragen te behandelen",
+	"confirmaccount-desc": "Geeft bureaucraten de mogelijkheid om gebruikersaanvragen te behandelen",
 	"confirmaccount-maintext": "'''Deze pagina wordt gebruikt om openstaande gebruikersaanvragen te bevestigen op ''{{SITENAME}}'''''.\n\nElke lijst met gebruikersaanvragen bevat drie sublijsten: één voor openstaande aanvragen, één voor aanvragen die zijn gemarkeerd als \"in behandeling\" door andere beheerders wegens ontbrekende informatie en één voor recent geweigerde aanvragen.\n\nWanneer gereageerd wordt op een aanvraag, kijk die dan grondig na en bevestig indien nodig de informatie van de aanvragen. Uw handelingen worden niet publiek opgeslagen. Kijk ook de handelingen die niet van u afkomstig zijn na.",
 	"confirmaccount-list": "Hieronder staan de gebruikersaanvragen die op afhandeling wachten.\nAls een aanvraag is goed- of afgekeurd, wordt deze uit deze lijst verwijderd.",
 	"confirmaccount-list2": "Hieronder staan recentelijk afgewezen gebruikersaanvragen die die over een aantal dagen\tautomatisch worden verwijderd.\nZe kunnen nog steeds goedgekeurd worden, hoewel het verstandig is voorafgaand contact te zoeken met de beheerder die de aanvraag heeft afgewezen.",

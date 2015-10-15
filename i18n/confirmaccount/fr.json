@@ -17,7 +17,7 @@
 		]
 	},
 	"confirmaccounts": "Demande de confirmation de comptes",
-	"confirmedit-desc": "Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs",
+	"confirmaccount-desc": "Donne aux bureaucrates la possibilité de confirmer les demandes de comptes d’utilisateurs",
 	"confirmaccount-maintext": "'''Cette page est utilisée pour confirmer les demandes de compte utilisateur sur ''{{SITENAME}}'''''.\n\nChaque demande de compte utilisateur consiste en trois sous-listes : une pour les demandes non traitées, une pour les comptes réservés dans l'attente de plus amples informations, et une dernière pour les comptes récemment rejetés.\n\nLors de la réponse à une demande, vérifiez-la attentivement et, le cas échéant, confirmez les informations qui y sont mentionnées. Vos actions seront inscrites séparément dans un journal. Vous devez aussi vérifier l'activité sur {{SITENAME}} en plus de la vôtre.",
 	"confirmaccount-list": "Voici, ci-dessous, la liste des comptes en attente d’approbation. Les comptes acceptés seront créés et retirés de cette liste. Les comptes rejetés seront supprimés de cette même liste.",
 	"confirmaccount-list2": "Voici la liste des comptes récemment rejetés lesquels seront supprimés automatiquement après quelques jours. Ils peuvent encore être approuvés, aussi vous pouvez consulter les rejets avant de le faire.",

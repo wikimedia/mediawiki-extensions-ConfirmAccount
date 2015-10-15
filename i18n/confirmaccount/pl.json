@@ -15,7 +15,7 @@
 		]
 	},
 	"confirmaccounts": "Potwierdź wniosek o założenie konta użytkownika",
-	"confirmedit-desc": "Pozwala biurokratom akceptować wnioski o założenie konta użytkownika",
+	"confirmaccount-desc": "Pozwala biurokratom akceptować wnioski o założenie konta użytkownika",
 	"confirmaccount-maintext": "'''Na tej stronie można potwierdzać wnioski o utworzenie konta w ''{{GRAMMAR:D.lp|{{SITENAME}}}}'''''.\n\nKażda kolejka wniosków składa się z trzech kolejek podrzędnych: kolejka otwartych zapytań, kolejka zapytań, których realizacja została wstrzymana przez administratorów do czasu uzyskania przez nich większej ilości informacji, kolejka niedawno odrzuconych wniosków.\n\nOdpowiadając na wniosek przyjrzyj mu się dokładnie, a jeśli jest to konieczne, potwierdź zawarte w nim informacje.\nTwoje działania są zapisywane z poszanowaniem prywatności.\nOprócz podejmowania samodzielnych działań, przyjrzyj się też działaniom innych administratorów.",
 	"confirmaccount-list": "Poniżej znajduje się lista oczekujących wniosków o założenie konta.\nPo zaakceptowaniu lub odrzuceniu, wniosek zostanie usunięty z niniejszej listy.",
 	"confirmaccount-list2": "Poniżej znajduje się lista niedawno odrzuconych wniosków o założenie konta. Mogą one zostać automatycznie usunięte po kilku lub kilkunastu dniach.\nWnioski można nadal zrealizować, lecz zalecane jest wcześniejsze nawiązanie kontaktu z administratorem, który je odrzucił.",

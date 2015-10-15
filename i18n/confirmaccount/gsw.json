@@ -6,7 +6,7 @@
 		]
 	},
 	"confirmaccounts": "Benutzerkonto-Aaträg bstätige",
-	"confirmedit-desc": "Git Bürokrate d Megligkeit, Benutzerkontenaaträg z bstätige",
+	"confirmaccount-desc": "Git Bürokrate d Megligkeit, Benutzerkontenaaträg z bstätige",
 	"confirmaccount-maintext": "'''Die Syte dient dezue, hängigi Benutzerkontenaaträg fir ''{{SITENAME}}'' z bearbeite.'''\n\nJedi Benutzerkonte-Aatragswarteschlang bstoht us drej Unterwarteschlange. Eini fir ufigi Aafroge, eini fir Aaträg im „abwarte“-Status un eini Aafroge, wu letschti abglähnt wore sin.\n\nWänn Du uf e Aatrag Antwort gisch, iberprief d Informatione sorgfältig un bstätig d Informatione, wu s din het.\nDyy Aktione wäre niteffentlig protokolliert. S wird au vu Dir erwartet, ass Du Aktionen vu dr Andre iberpriefsch.",
 	"confirmaccount-list": "Unte findsch e Lischt vu Benutzerkontenaaträg, wu no mien bearbeitet wäre.\nWänn en Aatrag bstätigt oder zrugggwise woren isch, wird er us dr Lischt usegnuu.",
 	"confirmaccount-list2": "Unten isch e Lischt Aaträg, wu letschti zrugggwise wore sin. Si wäre automatisch glescht, wänn si ne paar Täg alt sin. Si chenne no gnähmigt wäre, Du sottsch aber zerscht sdr Ammann kontaktiere, wu dr Aatrag abglähnt het.",

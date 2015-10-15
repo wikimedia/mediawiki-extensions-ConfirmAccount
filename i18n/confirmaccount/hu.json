@@ -11,7 +11,7 @@
 		]
 	},
 	"confirmaccounts": "Felhasználói fiók-kérelem megerősítése",
-	"confirmedit-desc": "Lehetővé teszi a bürokraták számára a felhasználói fiók kérelmek megerősítését.",
+	"confirmaccount-desc": "Lehetővé teszi a bürokraták számára a felhasználói fiók kérelmek megerősítését.",
 	"confirmaccount-maintext": "'''Ezen a lapon lehet megerősíteni a felhasználói fiókokra vonatkozó kérelmeket'''.\n\nA várósor három részre oszlik: egy az új kérelmeket, egy azokat a kérelmeket, melyekhez további adatok szükségesek és egy a visszautasított kérelmeket tartalmazza.\n\nMikor egy kérelemre válaszolsz, gondosan nézd át, és ha szükséges, erősítsd meg a benne található információkat.\nAz általad végzett műveleteket titokban naplózzuk.",
 	"confirmaccount-list": "Itt található az elfogadásra váró kérések listája.\nAz elfogadott fiókok el lesznek készítve, és törlődnek a listáról. A visszautasított kérések egyszerűen törlődnek.",
 	"confirmaccount-list2": "Itt találhatóak a nem rég visszautasított kérelmek, melyek automatikusan törlődnek néhány nap után. Még mindig el lehet őket fogadni, de beszélj a visszautasító adminisztrátorral a művelet végrehajtása előtt.",

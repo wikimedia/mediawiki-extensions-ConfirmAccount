@@ -6,7 +6,7 @@
 		]
 	},
 	"confirmaccounts": "Rikjesti għall-konferma tal-kontijiet",
-	"confirmedit-desc": "Jagħti lill-burokrati l-possibilità li jikkonfermaw ir-rikjesti ta' kontijiet",
+	"confirmaccount-desc": "Jagħti lill-burokrati l-possibilità li jikkonfermaw ir-rikjesti ta' kontijiet",
 	"confirmaccount-maintext": "'''Din il-paġna hija wżata sabiex tikkonferma r-rikjesti ta' kontijiet pendenti fuq ''{{SITENAME}}'''''.\n\nKull kju ta' rikjesti għall-kontijiet huwa magħmul minn tliet sotto-kjuwijiet.\nWaħda għar-rikjesti miftuħa, oħra għal dawk li ġew posposti minn amministraturi oħra sabiex tasal iktar informazzjoni, u oħra għar-rikjesti rifjutati riċentament.\n\nMeta tirrispondi għal rikjesta, irrevedieha attentament u, jekk huwa neċessarju, ikkonferma l-informazzjoni li tinsab fiha.\nL-azzjonijiet tiegħek jiġu reġistrati fil-privat.\nInti wkoll mistenni li tirrevedi kwalunkwe attività li tieħu post hawnhekk minbarra dawk li tagħmel int.",
 	"confirmaccount-real-q": "Isem",
 	"confirmaccount-email-q": "E-mail",

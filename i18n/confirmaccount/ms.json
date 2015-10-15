@@ -6,7 +6,7 @@
 		]
 	},
 	"confirmaccounts": "Sahkan permohonan akaun",
-	"confirmedit-desc": "Memberi birokrat kebolehan untuk mengesahkan permohonan akaun",
+	"confirmaccount-desc": "Memberi birokrat kebolehan untuk mengesahkan permohonan akaun",
 	"confirmaccount-maintext": "'''Laman ini digunakan untuk mengesahkan permohonan akaun yang menunggu di ''{{SITENAME}}'''''.\n\nSetiap baris gilir permohonan akaun terdiri daripada tiga baris gilir kecil.\nSatu untuk permohonan terbuka, satu untuk permohonan yang digantung oleh penyelia lain kerana menunggu maklumat lanjut, dan satu lagi untuk permohonan yang ditolak baru-baru ini.\n\nApabila sedang membalas sebuah permohonan, sila kajinya dengan teliti, dan jika perlu, sahkan maklumat yang terkandung dalamnya.\nTindakan anda akan dilogkan secara rahsia.\nAnda juga dijangka mengkaji sebarang aktiviti yang berlaku di sini selain yang anda sendiri lakukan.",
 	"confirmaccount-list": "Berikut ialah senarai permohonan akaun yang menunggu kelulusan.\nSebaik sahaja permohonan diterima atau ditolak, ia akan dipadamkan dari senarai ini.",
 	"confirmaccount-list2": "Berikut ialah senarai permohonan akaun yang ditolak baru-baru ini dan mungkin akan dihapuskan secara automatik selepas beberapa hari.\nIa masih boleh diluluskan menjadi akaun, tetapi anda mungkin mahu berunding dengan penyelia yang membuat penolakan tersebut terlebih dahulu sebelum berbuat demikian.",

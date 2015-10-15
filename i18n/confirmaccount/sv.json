@@ -17,7 +17,7 @@
 		]
 	},
 	"confirmaccounts": "Behandla kontoansökningar",
-	"confirmedit-desc": "Gör att nya användare måste ansöka om ett konto och bekräftas av byråkrater",
+	"confirmaccount-desc": "Gör att nya användare måste ansöka om ett konto och bekräftas av byråkrater",
 	"confirmaccount-maintext": "'''Den här sidan används för att verifiera kontoansökningar på ''{{SITENAME}}'''''.\n\nVarje ansökningskö består av tre delköer, en för obehandlade ansökningar, en för ansökningar som avvaktar ytterligare information, och en för ansökningar som nyligen avslagits.\n\nGranska noggrant ansökningar du svarar på, och verifiera informationen om det behövs.\nDe åtgärder du utför här skrivs in i en privat logg. Du förväntas även kontrollera hur andra användare hanterar ansökningar.",
 	"confirmaccount-list": "Härunder finns en lista över kontoansökningar som väntar på att godkännas. När en ansökning godkänns eller avslås så tas den bort från den här listan.",
 	"confirmaccount-list2": "Härunder finns en lista över kontoansökningar som nyligen avslagits. De kan komma att raderas automatiskt efter ett visst antal dagar.\nDu kan fortfarande godkänna ansökningarna, men i så fall bör du först diskutera det med den administratör som avslog ansökningen.",

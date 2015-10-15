@@ -7,7 +7,7 @@
 		]
 	},
 	"confirmaccounts": "Tiyakin ang mga paghiling ng account",
-	"confirmedit-desc": "Nagbibigay sa mga burokrato ng kakayahang tiyakin ang mga paghiling ng account",
+	"confirmaccount-desc": "Nagbibigay sa mga burokrato ng kakayahang tiyakin ang mga paghiling ng account",
 	"confirmaccount-maintext": "'''Ginagamit ang pahinang ito upang tiyakin ang naghihintay na mga paghiling ng account sa ''{{SITENAME}}'''''.\n\nAng bawat isang pila ng kahilingan ng account ay binubuo ng tatlong kabahaging mga pila.\nIsa para sa bukas na paghiling, isa para sa mga ibininbin ng ibang mga tagapangasiwa habang naghihintay pa ng karagdagang kabatiran, at isa para sa mga kahilingang tinanggihan kamakailan lamang.\n\nKapag tumutugon sa isang paghiling, suriin itong may pag-iingat at, kung kinakailangan, tiyakin ang kabatirang nakapaloob dito.\n\nItatala bilang pribado ang iyong mga galaw.\nInaasahan din na susuriin mo ang anumang kaganapang mangyayari rito bukod pa sa kung ano ang mga gagawin mo.",
 	"confirmaccount-list": "Nasa ibaba ang isang talaan ng mga paghiling ng account na naghihintay ng pahintulot.\nTatanggalin na mula sa talaang ito ang isang kahilingang pinayagan na o tinanggihan.",
 	"confirmaccount-list2": "Nasa ibaba ang isang talaan ng mga paghiling ng account na tinanggihan kamakailan lamang, na maaaring kusang mabura kapag nagtagal na ng ilang mga araw.\nMaaari pa rin silang payagan upang maging mga account, bagaman maaaring naisin mong sumangguni muna sa tumangging tagapangasiwa bago gawin iyan.",

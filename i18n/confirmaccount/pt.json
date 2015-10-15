@@ -12,7 +12,7 @@
 		]
 	},
 	"confirmaccounts": "Confirmar pedidos de conta",
-	"confirmedit-desc": "Possibilita que burocratas confirmem pedidos de conta",
+	"confirmaccount-desc": "Possibilita que burocratas confirmem pedidos de conta",
 	"confirmaccount-maintext": "'''Esta página é usada para confirmar pedidos de conta pendentes em ''{{SITENAME}}'''''.\n\nCada fila de pedidos de conta consiste em três sub-filas, uma para pedidos em aberto, outra para pedidos colocados em espera por outros administradores à espera de mais informação e outra para pedidos recentemente rejeitados.\n\nQuando responder a um pedido, reveja-o cuidadosamente e, se necessário, confirme a informação nele contida.\nAs suas acções será registadas em privado. Também é esperado que reveja qualquer actividade que  ocorra aqui para além das suas próprias acções.",
 	"confirmaccount-list": "Abaixo encontra-se uma lista de pedidos de conta à espera de aprovação.\nContas aprovadas serão criadas e removidas desta lista. Contas rejeitadas serão simplesmente eliminadas desta lista.",
 	"confirmaccount-list2": "Abaixo encontra-se uma lista de pedidos de conta recentemente rejeitados que serão automaticamente eliminados após alguns dias.\nEstes podem ainda ser aprovados para novas contas, mas deverá verificar primeiro com o administrador que rejeitou o pedido antes de o aprovar.",

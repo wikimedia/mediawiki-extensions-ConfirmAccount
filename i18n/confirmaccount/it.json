@@ -11,7 +11,7 @@
 		]
 	},
 	"confirmaccounts": "Richieste conferma account",
-	"confirmedit-desc": "Dà ai burocrati la possibilità di confermare le richieste di account",
+	"confirmaccount-desc": "Dà ai burocrati la possibilità di confermare le richieste di account",
 	"confirmaccount-maintext": "'''Questa pagina è usata per confermare le richieste di account in attesa su ''{{SITENAME}}'''''.\n\nOgni coda di richieste account è composta da tre sotto-code.\nUna per le richieste aperte, una per quelle che sono state messe in attesa da parte di altri amministratori in attesa di ulteriori informazioni, e un'altra per le richieste respinte di recente.\n\nQuando si risponde ad una richiesta, verificarla attentamente e, se necessario, confermare le informazioni in essa contenute.\nLe tue azioni saranno privatamente registrate.\nPuoi anche verificare tutte le attività che si svolgono qui oltre a quelle svolte da te.",
 	"confirmaccount-list": "Di seguito è riportato un elenco di richieste di account in attesa di approvazione.\nQuando una richiesta è stata approvata o respinta sarà rimossa da questa lista.",
 	"confirmaccount-list2": "Di seguito è riportato un elenco di richieste respinte di recente che saranno automaticamente eliminate quando saranno vecchie di qualche giorno.\nPossono ancora essere approvate come account, anche se può essere utile prima consultare l'amministratore che l'ha rifiutata.",

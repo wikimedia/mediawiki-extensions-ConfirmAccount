@@ -5,7 +5,7 @@
 		]
 	},
 	"confirmaccounts": "Demanda de confirmacion de comptes",
-	"confirmedit-desc": "Balha als burocratas la possibilitat de confirmar las demandas de comptes d’utilizaires.",
+	"confirmaccount-desc": "Balha als burocratas la possibilitat de confirmar las demandas de comptes d’utilizaires.",
 	"confirmaccount-maintext": "'''Aquesta pagina es utilizada per confirmar las demandas de compte d'utilizaire sus ''{{SITENAME}}'''''.\n\nCada demanda de compte d'utilizaire consistís en tres soslistas : una per las demandas non tractadas, una pels comptes reservats dins l'espèra d'entresenhas mai amplas, e una darrièra pels comptes regetats recentament.\n\nAl moment de la responsa a una demanda, verificatz-la atentivament e, se fa mestèr, confirmatz las informaxions qu'i son mencionadas. Vòstras accions seràn inscrichas separadament dins un jornal. Tanben podètz esperar la verificacion de cada activitat que prendràn de plaça separadament per rapòrt a çò que faretz vos-meteis.",
 	"confirmaccount-list": "Vaquí, çaijós, la lista dels comptes en espèra d’aprobacion. Los comptes acceptats seràn creats e levats d'aquesta lista. Los comptes regetats seràn suprimits d'aquesta meteissa lista.",
 	"confirmaccount-list2": "Veire la lista dels comptes recentament regetats que seràn suprimits automaticament aprèp qualques jorns. Pòdon encara èsser aprobats, e mai podètz consultar los regets abans d'o far.",

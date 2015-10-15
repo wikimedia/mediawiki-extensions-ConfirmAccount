@@ -10,7 +10,7 @@
 		]
 	},
 	"confirmaccounts": "Konfirmasi permintaan akun",
-	"confirmedit-desc": "Memberikan fungsi teknis tambahan bagi birokrat untuk mengkonfirmasikan permintaan akun",
+	"confirmaccount-desc": "Memberikan fungsi teknis tambahan bagi birokrat untuk mengkonfirmasikan permintaan akun",
 	"confirmaccount-maintext": "'''Halaman ini digunakan untuk mengkonfirmasikan permintaan akun di ''{{SITENAME}}'''''.\n\nSetiap antrean permintaan akun memiliki tiga sub-antrean.\nSatu untuk permintaan yang belum ditinjau, satu untuk akun yang ditunda oleh pengurus lain karena menunggu informasi tambahan, dan terakhir untuk permintaan yang baru ditolak.\n\nJika Anda hendak meresponi sebuah permintaan, tinjau dengan hati-hati, dan jika diperlukan, konfirmasikan informasi yang disertakan.\nTindakan Anda akan dimasukkan ke dalam log privat.\nAnda juga perlu meninjau aktivitas apa pun yang dilakukan di sini di samping yang Anda lakukan sendiri.",
 	"confirmaccount-list": "Berikut adalah daftar permintaan akun yang menunggu persetujuan.\nJika disetujui ataupun ditolak, permintaan tersebut akan dikeluarkan dari daftar ini.",
 	"confirmaccount-list2": "Berikut adalah daftar permintaan akun yang baru ditolak dan akan dihapus secara otomatis setelah beberapa hari.\nPermintaan ini masih dapat disetujui untuk dijadikan akun, tetapi Anda mungkin perlu mendiskusikan terlebih dahulu dengan pengurus yang menolak permintaan tersebut sebelumnya.",

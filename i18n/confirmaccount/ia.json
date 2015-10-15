@@ -5,7 +5,7 @@
 		]
 	},
 	"confirmaccounts": "Confirmar requestas de conto",
-	"confirmedit-desc": "Concede al bureaucrates le capacitate de confirmar le requestas de conto",
+	"confirmaccount-desc": "Concede al bureaucrates le capacitate de confirmar le requestas de conto",
 	"confirmaccount-maintext": "'''Iste pagina es usate pro confirmar le requestas de conto pendente a ''{{SITENAME}}'''''.\n\nCata cauda de requestas de conto consiste de tres subcaudas.\nUn pro requestas aperte, un pro requestas suspendite per administratores pendente ulterior informationes, e un tertie pro requestas recentemente rejectate.\n\nQuando tu responde a un requesta, revide lo con caution e, si necessari, confirma le informationes continite in illo.\nTu actiones essera registrate privatemente.\nIn addition, es expectate que tu revide omne activitate que occurre hic, ultra tu proprie actiones.",
 	"confirmaccount-list": "Infra es un lista de requestas de conto attendente approbation.\nQuando un requesta es approbate o rejectate, illo se retirara de iste lista.",
 	"confirmaccount-list2": "Infra es un lista de requestas de conto recentemente rejectate le quales pote esser automaticamente delite post alcun dies.\nIllos pote ancora esser approbate como contos, sed es recommendate que tu consulta le administrator qui rejectava le requesta in question, ante que tu face isto.",

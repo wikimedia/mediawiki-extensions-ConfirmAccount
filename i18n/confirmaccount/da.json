@@ -8,7 +8,7 @@
 		]
 	},
 	"confirmaccounts": "Bekræft kontoanmodninger",
-	"confirmedit-desc": "Giver bureaukrater mulighed for at bekræfte kontoanmodninger",
+	"confirmaccount-desc": "Giver bureaukrater mulighed for at bekræfte kontoanmodninger",
 	"confirmaccount-maintext": "'''Siden anvendes til at bekræfte ventende kontoanmodninger på ''{{SITENAME}}'''''.\n\nHver kontoanmodningskø består af tre underkøer.\nEn med åbne anmodninger, en med anmodninger tilbageholdt af andre administratorer indtil der indkommer flere oplysninger, samt en tredje med nyligt afviste anmodninger.\n\nNår en anmodning behandles, så gå den omhyggeligt igennem, og bekræft om nødvendigt oplysningerne deri.\nDine handlinger logges privat.\nDu forventes også at gennemgå anden aktivitet, som finder sted her, ud over hvad du selv foretager dig.",
 	"confirmaccount-list": "Herunder en liste over kontoanmodninger, som venter på godkendelse.\nNår en anmodning enten godkendes eller afvises, vil den blive fjernet fra listen.",
 	"confirmaccount-list2": "Herunder en liste over nyligt afviste kontoanmodninger, som automatisk vil blive slettet, når der er gået et vist antal dage.\nAnmodningerne kan stadig godkendes, men i så fald bør du først konsultere den administrator, som afviste anmodningen.",

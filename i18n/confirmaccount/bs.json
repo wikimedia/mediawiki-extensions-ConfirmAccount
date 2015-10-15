@@ -5,7 +5,7 @@
 		]
 	},
 	"confirmaccounts": "Potvrdi zahtjeve za račun",
-	"confirmedit-desc": "Daje mogućnost birokratima da potvrde zahtjeve za računima",
+	"confirmaccount-desc": "Daje mogućnost birokratima da potvrde zahtjeve za računima",
 	"confirmaccount-list": "Ispod je spisak zahtjeva za računima koji čekaju na odobravanje.\nJednom podnesen zahtjev koji se odobri ili odbije će se ukloniti sa ovog spiska.",
 	"confirmaccount-none-o": "Trenutno nema otvorenih zahtjeva na račun na čekanju na ovom spisku.",
 	"confirmaccount-none-h": "Trenutno nema zadržanih zahtjeva na račun na čekanju na ovom spisku.",

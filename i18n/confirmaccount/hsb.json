@@ -5,7 +5,7 @@
 		]
 	},
 	"confirmaccounts": "Kontowe požadanja potwjerdźić",
-	"confirmedit-desc": "Dawa běrokratam móžnosć kontowe požadanja potwjerdźić",
+	"confirmaccount-desc": "Dawa běrokratam móžnosć kontowe požadanja potwjerdźić",
 	"confirmaccount-maintext": "'''Tuta strona wužiwa so, zo by njesčinjene kontowe požadanja na ''{{SITENAME}}'' potwjerdźiło'''.\n\nKóžde čakanski rynk kontowych požadanjow wobsteji z třoch čakanskich podrynkow, jedyn za wotewrjene požadanje, jedyn za te, kotrež buchu wot administratorow falowacych informacijow dla do čakanskeje sekle stajili a třeći za tuchwilu wotpokazane požadanja.\n\nWotmołwjejo na požadanje, pruwuj je starosćiwje a, jeli trjeba, potwjerdź w nim wobsahowane informacije.\nTwoje akcije so protokuluja. Wot tebje so wočakuje, zo by aktiwnosć pruwował, kotraž tu wotměwa, wothladajo to, štož sam činiš.",
 	"confirmaccount-list": "Deleka je lisćina wužiwarskich požadanjow, kotrež čakaja na přizwolenje. Potwjerdźene konta budu so wutworjeć a z lisćiny wotstronjeć. Wotpokazane konta so prosće z lisćiny šmórnu.",
 	"confirmaccount-list2": "Deleka je lisćina tuchwilu wotpokazanych kontowych požadanjow, kotrež hodźa so awtomatisce po někotrych dnjach šmórnyć. Móža so hišće za konta přizwolić, byrnjež ty najprjedy administratora konsultował, kiž je wotpokaza, prjedy hač činiš to.",

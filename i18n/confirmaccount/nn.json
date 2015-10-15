@@ -8,7 +8,7 @@
 		]
 	},
 	"confirmaccounts": "Godta kontoførespurnader",
-	"confirmedit-desc": "Gjev byråkratar moglegheita til å godta kontoførespurnader",
+	"confirmaccount-desc": "Gjev byråkratar moglegheita til å godta kontoførespurnader",
 	"confirmaccount-maintext": "'''Denne sida vert nytta for å stadfesta ventande kontoførespurnader på ''{{SITENAME}}'''''.\n\nKvar kø av kontoførespurnader er sett saman av tre underkøar, éin for opne førespurnader, éin for førespurnader som er sette på vent av andre administratorar og éin for nyleg avviste førespurnader.\n\nNår du reagerer på ein førespurnad, gå gjennom han og, om det er naudsynt, stadfest informasjonen som vert gjeven. Handlingane dine vil verta logga privat. Det er òg venta at du går gjennom aktiviteten som er her frå andre enn deg sjølv.",
 	"confirmaccount-list": "Under er ei lista over kontoførespurnader som ventar på godkjenning. Godkjende eller avviste kontoar vil verta fjerna frå lista.",
 	"confirmaccount-list2": "Nedanfor er ei lista over nyleg avviste kontoførespurnader, som vil verta sletta automatisk når dei er eit visst tal dagar gamle.\nDei kan enno verta godkjende, men du bør fyrst kontakta administratoren som avviste dei.",
