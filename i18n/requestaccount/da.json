@@ -5,7 +5,8 @@
 			"Christian List",
 			"Jon Harald Søby",
 			"Kaare",
-			"Macofe"
+			"Macofe",
+			"Poullindholm"
 		]
 	},
 	"requestaccount": "Anmod om konto",
@@ -45,6 +46,6 @@
 	"requestaccount-email-subj": "Bekræftelse af e-mailadresse hos {{SITENAME}}",
 	"requestaccount-email-body": "Nogen, formentlig dig, har fra IP-adressen $1, på {{SITENAME}} anmodet om kontoen \"$2\" med denne e-mailadresse.\n\nFor at bekræfte på {{SITENAME}}, at kontoen virkelig tilhører dig, bedes du åbne følgende link i din browser:\n\n$3\n\nHvis kontoen bliver oprettet, vil du modtage adgangskoden.\nHvis det *ikke* er dig, så benyt ikke linket.\nBekræftelseskoden udløber den $4.",
 	"requestaccount-email-subj-admin": "Anmod om konto på {{SITENAME}}",
-	"requestaccount-email-body-admin": "$1 har anmodet om en konto og venter på bekræftelse.\nE-mailadressen er blevet bekræftet. Du kan bekræfte anmodningen på:\n\n$2",
+	"requestaccount-email-body-admin": "$1 har anmodet om en konto og venter på bekræftelse.\nE-mailadressen er blevet bekræftet. Du kan bekræfte anmodningen her:\n\n$2",
 	"acct_request_throttle_hit": "Beklager, du har allerede anmodet om {{PLURAL:$1|en konto|$1 konti}}.\nDu kan ikke foretage flere anmodninger."
 }
