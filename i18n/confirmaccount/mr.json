@@ -58,7 +58,7 @@
 	"confirmaccount-rational": "अर्जदाराला दिलेले कारण (rationale):",
 	"confirmaccount-noreason": "(काहीही नाही)",
 	"confirmaccount-autorej": "(ही मागणी अकार्यक्षमतेमुळे आपोआप नाकारण्यात आलेली आहे)",
-	"confirmaccount-held": "([[User:$1|$1]] ने  $3वर $4 येथे \"({{GENDER:$1|जैसे-थे}}ठेवलेली आहे\")",
+	"confirmaccount-held": "([[User:$1|$1]] ने  $3वर $4 येथे \"{{GENDER:$1|जैसे-थे}}ठेवलेली आहे\")",
 	"confirmaccount-blockip": "अंकपत्ता प्रतिबंधित करा",
 	"confirmaccount-create": "मान्य करा (खाते तयार करा)",
 	"confirmaccount-deny": "नाकारा (यादीतून काढून टाका)",
