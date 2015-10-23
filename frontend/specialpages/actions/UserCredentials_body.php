@@ -230,8 +230,9 @@ class UserCredentialsPage extends SpecialPage {
 
 	function getAccountData() {
 		$uid = User::idFromName( $this->target );
-		if ( !$uid )
+		if ( !$uid ) {
 			return false;
+		}
 		# For now, just get the first revision...
 		$dbr = wfGetDB( DB_SLAVE );
 		$row = $dbr->selectRow( 'account_credentials', '*',

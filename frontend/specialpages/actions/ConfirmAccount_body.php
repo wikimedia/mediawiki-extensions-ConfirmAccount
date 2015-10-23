@@ -631,8 +631,9 @@ class ConfirmAccountsPage extends SpecialPage {
 				$linkList .= "<li><a href='$link'>$link</a>$extra</li>\n";
 			}
 			$count++;
-			if ( $count >= $max )
+			if ( $count >= $max ) {
 				break;
+			}
 		}
 		if ( $linkList == '' ) {
 			$linkList = wfMessage( 'confirmaccount-none-p' )->escaped();
