@@ -9,7 +9,6 @@
 	},
 	"requestaccount": "Hilingin ang account",
 	"requestaccount-text": "'''Punuan at ipasa ang sumusunod na form upang humiling ng isang account ng tagagamit'''.\n\nTiyaking nabasa mo na muna ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Serbisyo]] bago humiling ng isang account.\n\nKapag napahintulutan na ang account, padadalhan ka ng isang mensahe ng pagbibigay-alam sa pamamagitan ng isang e-mail at magagamit na ang account sa [[Special:UserLogin|pag-login]].",
-	"requestaccount-footer": "",
 	"requestaccount-page": "{{ns:project}}:Mga Patakaran ng Paglilingkod",
 	"requestaccount-dup": "'''Paunawa: Nakalagda ka na gamit ang isang nakatalang account.'''",
 	"requestaccount-leg-user": "Account ng tagagamit",
