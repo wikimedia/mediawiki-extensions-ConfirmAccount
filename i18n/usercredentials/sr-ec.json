@@ -4,7 +4,8 @@
 			"Rancher",
 			"Sasa Stefanovic",
 			"Михајло Анђелковић",
-			"Milicevic01"
+			"Milicevic01",
+			"Сербијана"
 		]
 	},
 	"usercredentials-user": "Корисничко име:",
@@ -13,7 +14,7 @@
 	"usercredentials-leg-person": "Лични подаци",
 	"usercredentials-leg-other": "Други подаци",
 	"usercredentials-leg-ip": "Подаци ИП адресе",
-	"usercredentials-email": "Е-пошта:",
+	"usercredentials-email": "Имејл адреса:",
 	"usercredentials-real": "Право име:",
 	"usercredentials-bio": "Животопис:",
 	"usercredentials-attach": "Резиме/CV:",

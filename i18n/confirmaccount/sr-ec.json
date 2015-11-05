@@ -3,7 +3,8 @@
 		"authors": [
 			"Rancher",
 			"Sasa Stefanovic",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Сербијана"
 		]
 	},
 	"confirmaccount-none-o": "Тренутно нема нерешених захтева у овом списку.",
@@ -11,7 +12,7 @@
 	"confirmaccount-none-r": "Тренутно нема скоро одбачених захтева у овом списку.",
 	"confirmaccount-none-e": "Тренутно нема застарелих захтева у овом списку.",
 	"confirmaccount-real-q": "Име",
-	"confirmaccount-email-q": "Е-пошта",
+	"confirmaccount-email-q": "Имејл",
 	"confirmaccount-bio-q": "Животопис",
 	"confirmaccount-showopen": "нерешени захтеви",
 	"confirmaccount-showrej": "одбачени захтеви",
@@ -34,7 +35,7 @@
 	"confirmaccount-leg-ip": "Подаци ИП адресе",
 	"confirmaccount-name": "Корисничко име",
 	"confirmaccount-real": "Име:",
-	"confirmaccount-email": "Е-пошта:",
+	"confirmaccount-email": "Имејл:",
 	"confirmaccount-reqtype": "Положај:",
 	"confirmaccount-pos-0": "аутор",
 	"confirmaccount-pos-1": "уређивач",
