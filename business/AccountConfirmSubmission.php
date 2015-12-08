@@ -53,7 +53,7 @@ class AccountConfirmSubmission {
 
 	protected function spamRequest( IContextSource $context ) {
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin();
+		$dbw->startAtomic( __METHOD__ );
 
 		$ok = $this->accountReq->markRejected( $this->admin, wfTimestampNow(), '' );
 		if ( $ok ) {
@@ -61,13 +61,13 @@ class AccountConfirmSubmission {
 			ConfirmAccount::clearAccountRequestCountCache();
 		}
 
-		$dbw->commit();
+		$dbw->endAtomic( __METHOD__ );
 		return array( true, null );
 	}
 
 	protected function rejectRequest( IContextSource $context ) {
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin();
+		$dbw->startAtomic( __METHOD__ );
 
 		$ok = $this->accountReq->markRejected( $this->admin, wfTimestampNow(), $this->reason );
 		if ( $ok ) {
@@ -90,14 +90,14 @@ class AccountConfirmSubmission {
 				$dbw->rollback();
 				return array( 'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
-							$context->getOutput()->parse( $result->getWikiText() )
-						)->text() );
+						$context->getOutput()->parse( $result->getWikiText() )
+					)->text() );
 			}
 			# Clear cache for notice of how many account requests there are
 			ConfirmAccount::clearAccountRequestCountCache();
 		}
 
-		$dbw->commit();
+		$dbw->endAtomic( __METHOD__ );
 		return array( true, null );
 	}
 
@@ -114,7 +114,7 @@ class AccountConfirmSubmission {
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin();
+		$dbw->startAtomic( __METHOD__ );
 
 		# If not already held or deleted, mark as held
 		$ok = $this->accountReq->markHeld( $this->admin, wfTimestampNow(), $this->reason );
@@ -134,14 +134,14 @@ class AccountConfirmSubmission {
 			$dbw->rollback();
 			return array( 'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
-						$context->getOutput()->parse( $result->getWikiText() )
-					)->text() );
+					$context->getOutput()->parse( $result->getWikiText() )
+				)->text() );
 		}
 
 		# Clear cache for notice of how many account requests there are
 		ConfirmAccount::clearAccountRequestCountCache();
 
-		$dbw->commit();
+		$dbw->endAtomic( __METHOD__ );
 		return array( true, null );
 	}
 
@@ -164,26 +164,26 @@ class AccountConfirmSubmission {
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin();
+		$dbw->startAtomic( __METHOD__ );
 
 		# Make a random password
-		$p = User::randomPassword();
+		$pass = User::randomPassword();
 
 		# Insert the new user into the DB...
 		$tokenExpires = $accReq->getEmailTokenExpires();
 		$authenticated = $accReq->getEmailAuthTimestamp();
 		$params = array(
 			# Set the user's real name
-			'real_name'           => $accReq->getRealName(),
+			'real_name' => $accReq->getRealName(),
 			# Set the temporary password
-			'newpassword'         => User::crypt( $p ),
+			'newpassword' => User::crypt( $pass ),
 			# VERY important to set email now. Otherwise the user
 			# will have to request a new password at the login screen...
-			'email'               => $accReq->getEmail(),
+			'email' => $accReq->getEmail(),
 			# Import email address confirmation status
 			'email_authenticated' => $dbw->timestampOrNull( $authenticated ),
 			'email_token_expires' => $dbw->timestamp( $tokenExpires ),
-			'email_token'         => $accReq->getEmailToken()
+			'email_token' => $accReq->getEmailToken()
 		);
 		$user = User::createNew( $user->getName(), $params );
 
@@ -219,24 +219,24 @@ class AccountConfirmSubmission {
 			# Move request data into a separate table
 			$dbw->insert( 'account_credentials',
 				array(
-					'acd_user_id'             => $user->getID(),
-					'acd_real_name'           => $accReq->getRealName(),
-					'acd_email'               => $accReq->getEmail(),
+					'acd_user_id' => $user->getID(),
+					'acd_real_name' => $accReq->getRealName(),
+					'acd_email' => $accReq->getEmail(),
 					'acd_email_authenticated' => $dbw->timestampOrNull( $authenticated ),
-					'acd_bio'                 => $accReq->getBio(),
-					'acd_notes'               => $accReq->getNotes(),
-					'acd_urls'                => $accReq->getUrls(),
-					'acd_ip'                  => $accReq->getIP(),
-					'acd_xff'                 => $accReq->getXFF(),
-					'acd_agent'               => $accReq->getAgent(),
-					'acd_filename'            => $accReq->getFileName(),
-					'acd_storage_key'         => $accReq->getFileStorageKey(),
-					'acd_areas'               => $accReq->getAreas( 'flat' ),
-					'acd_registration'        => $dbw->timestamp( $accReq->getRegistration() ),
-					'acd_accepted'            => $dbw->timestamp(),
-					'acd_user'                => $this->admin->getID(),
-					'acd_comment'             => $this->reason,
-					'acd_id'                  => $acd_id
+					'acd_bio' => $accReq->getBio(),
+					'acd_notes' => $accReq->getNotes(),
+					'acd_urls' => $accReq->getUrls(),
+					'acd_ip' => $accReq->getIP(),
+					'acd_xff' => $accReq->getXFF(),
+					'acd_agent' => $accReq->getAgent(),
+					'acd_filename' => $accReq->getFileName(),
+					'acd_storage_key' => $accReq->getFileStorageKey(),
+					'acd_areas' => $accReq->getAreas( 'flat' ),
+					'acd_registration' => $dbw->timestamp( $accReq->getRegistration() ),
+					'acd_accepted' => $dbw->timestamp(),
+					'acd_user' => $this->admin->getID(),
+					'acd_comment' => $this->reason,
+					'acd_id' => $acd_id
 				),
 				__METHOD__
 			);
@@ -246,7 +246,7 @@ class AccountConfirmSubmission {
 		}
 
 		# Add to global user login system (if there is one)
-		if ( !$wgAuth->addUser( $user, $p, $accReq->getEmail(), $accReq->getRealName() ) ) {
+		if ( !$wgAuth->addUser( $user, $pass, $accReq->getEmail(), $accReq->getRealName() ) ) {
 			$dbw->rollback();
 			# DELETE new rows in case there was a COMMIT somewhere
 			$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
@@ -259,35 +259,50 @@ class AccountConfirmSubmission {
 		# Commit this if we make past the CentralAuth system
 		# and the groups are added. Next step is sending out an
 		# email, which we cannot take back...
-		$dbw->commit();
+		$dbw->endAtomic( __METHOD__ );
+
+		$that = $this;
+		DeferredUpdates::addCallableUpdate(
+			function () use ( $that, $user, $context, $group, $pass, $accReq ) {
+				$that->doPostCommitNewUserUpdates( $user, $context, $group, $pass, $accReq );
+			}
+		);
+
+		return array( true, null );
+	}
+
+	public function doPostCommitNewUserUpdates(
+		User $user, IContextSource $context, $group, $pass, UserAccountRequest $accReq
+	) {
+		global $wgConfirmAccountRequestFormItems, $wgConfirmAccountFSRepos;
 
 		# Prepare a temporary password email...
 		if ( $this->reason != '' ) {
-			$msg = "confirmaccount-email-body2-pos{$this->type}";
-			$msgObj = $context->msg( $msg, $user->getName(), $p, $this->reason );
+			$msg = "confirmaccount-email-body2-pos {$this->type}";
+			$msgObj = $context->msg( $msg, $user->getName(), $pass, $this->reason );
 			# If the user is in a group and there is a welcome for that group, use it
 			if ( $group && !$msgObj->isDisabled() ) {
 				$ebody = $msgObj->inContentLanguage()->text();
-			# Use standard if none found...
+				# Use standard if none found...
 			} else {
 				$ebody = $context->msg( 'confirmaccount-email-body2',
-				       	$user->getName(), $p, $this->reason )->inContentLanguage()->text();
+					$user->getName(), $pass, $this->reason )->inContentLanguage()->text();
 			}
 		} else {
 			$msg = "confirmaccount-email-body-pos{$this->type}";
 			# If the user is in a group and there is a welcome for that group, use it
 			if ( $group && !$context->msg( $msg )->isDisabled() ) {
 				$ebody = $context->msg( $msg,
-					$user->getName(), $p, $this->reason )->inContentLanguage()->text();
-			# Use standard if none found...
+					$user->getName(), $pass, $this->reason )->inContentLanguage()->text();
+				# Use standard if none found...
 			} else {
 				$ebody = $context->msg( 'confirmaccount-email-body',
-					$user->getName(), $p, $this->reason )->inContentLanguage()->text();
+					$user->getName(), $pass, $this->reason )->inContentLanguage()->text();
 			}
 		}
 
 		# Actually send out the email (@TODO: rollback on failure including $wgAuth)
-		$result = $user->sendMail(
+		$user->sendMail(
 			$context->msg( 'confirmaccount-email-subj' )->inContentLanguage()->text(),
 			$ebody
 		);
@@ -304,7 +319,7 @@ class AccountConfirmSubmission {
 		ConfirmAccount::clearAccountRequestCountCache();
 
 		# Delete any attached file and don't stop the whole process if this fails
-		if ( $formConfig['CV']['enabled'] ) {
+		if ( $wgConfirmAccountRequestFormItems['CV']['enabled'] ) {
 			$key = $accReq->getFileStorageKey();
 			if ( $key ) {
 				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
@@ -322,8 +337,6 @@ class AccountConfirmSubmission {
 
 		# Greet the new user if set to do so.
 		$this->createUserTalkPage( $user );
-
-		return array( true, null );
 	}
 
 	/*
@@ -336,7 +349,7 @@ class AccountConfirmSubmission {
 	 * @return void
 	 */
 	protected function acceptRequest_rollback( DatabaseBase $dbw, $user_id, $acd_id ) {
-		$dbw->begin();
+		$dbw->startAtomic( __METHOD__ );
 		# DELETE the user in case something caused a COMMIT already somewhere.
 		if ( $user_id ) {
 			$dbw->delete( 'user', array( 'user_id' => $user_id ), __METHOD__ );
@@ -346,7 +359,7 @@ class AccountConfirmSubmission {
 		if ( $acd_id ) {
 			$dbw->delete( 'account_credentials', array( 'acd_id' => $acd_id ), __METHOD__ );
 		}
-		$dbw->commit();
+		$dbw->endAtomic( __METHOD__ );
 	}
 
 	protected static function getGroupFromType( $type ) {
@@ -403,8 +416,8 @@ class AccountConfirmSubmission {
 				}
 				# Message for users with this interested with the given account type
 				if ( isset( $conf['grpUserText'][$this->type] )
-					&& $conf['grpUserText'][$this->type] != '' )
-				{
+					&& $conf['grpUserText'][$this->type] != ''
+				) {
 					$body .= $conf['grpUserText'];
 				}
 			}

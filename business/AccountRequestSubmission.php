@@ -67,8 +67,9 @@ class AccountRequestSubmission {
 	 * @return array( true or error key string, html error msg or null )
 	 */
 	public function submit( IContextSource $context ) {
-		global $wgAuth, $wgAccountRequestThrottle, $wgMemc, $wgConfirmAccountRequestFormItems;
+		global $wgAuth, $wgAccountRequestThrottle, $wgConfirmAccountRequestFormItems;
 
+		$cache = ObjectCache::getLocalClusterInstance();
 		$formConfig = $wgConfirmAccountRequestFormItems; // convience
 		$reqUser = $this->requester;
 
@@ -94,7 +95,7 @@ class AccountRequestSubmission {
 		# No request spamming...
 		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
 			$key = wfMemcKey( 'acctrequest', 'ip', $this->ip );
-			$value = (int)$wgMemc->get( $key );
+			$value = (int)$cache->get( $key );
 			if ( $value > $wgAccountRequestThrottle ) {
 				return array(
 					'accountreq_throttled',
@@ -153,7 +154,7 @@ class AccountRequestSubmission {
 		$u->setRealName( $this->realName );
 
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin(); // ready to acquire locks
+		$dbw->startAtomic( __METHOD__ ); // ready to acquire locks
 		# Check pending accounts for name use
 		if ( !UserAccountRequest::acquireUsername( $u->getName() ) ) {
 			$dbw->rollback();
@@ -254,19 +255,24 @@ class AccountRequestSubmission {
 				'acct_request_mail_failed',
 				$context->msg( 'mailerror' )->rawParams( $param )->escaped() );
 		}
-		$dbw->commit();
 
-		# Clear cache for notice of how many account requests there are
-		ConfirmAccount::clearAccountRequestCountCache();
-		# No request spamming...
-		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
-			$ip = $context->getRequest()->getIP();
-			$key = wfMemcKey( 'acctrequest', 'ip', $ip );
-			$value = $wgMemc->incr( $key );
-			if ( !$value ) {
-				$wgMemc->set( $key, 1, 86400 );
+		$dbw->endAtomic( __METHOD__ );
+
+		DeferredUpdates::addCallableUpdate( function () use ( $context, $reqUser, $cache ) {
+			global $wgAccountRequestThrottle;
+			# Clear cache for notice of how many account requests there are
+			ConfirmAccount::clearAccountRequestCountCache();
+			# No request spamming...
+			if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
+				$ip = $context->getRequest()->getIP();
+				$key = wfMemcKey( 'acctrequest', 'ip', $ip );
+				$value = $cache->incr( $key );
+				if ( !$value ) {
+					$cache->set( $key, 1, 86400 );
+				}
 			}
-		}
+		} );
+
 		# Done!
 		return array( true, null );
 	}
