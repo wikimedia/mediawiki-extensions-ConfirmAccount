@@ -126,9 +126,10 @@ class ConfirmAccountsPage extends SpecialPage {
 		if ( $this->acrID || !$this->showHeld ) {
 			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
-				Linker::makeKnownLinkObj(
+				Linker::linkKnown(
 					$titleObj,
 					$this->msg( 'confirmaccount-showheld' )->escaped(),
+					array(),
 					'wpShowHeld=1'
 				)
 			) );
@@ -141,8 +142,10 @@ class ConfirmAccountsPage extends SpecialPage {
 		if ( $this->acrID || !$this->showRejects ) {
 			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
-				Linker::makeKnownLinkObj( $titleObj,
+				Linker::linkKnown(
+					$titleObj,
 					$this->msg( 'confirmaccount-showrej' )->escaped(),
+					array(),
 					'wpShowRejects=1'
 				)
 			) );
@@ -155,8 +158,10 @@ class ConfirmAccountsPage extends SpecialPage {
 		if ( $this->acrID || !$this->showStale ) {
 			$listLink = $this->getLanguage()->pipeList( array(
 				$listLink,
-				Linker::makeKnownLinkObj( $titleObj,
+				Linker::linkKnown(
+					$titleObj,
 					$this->msg( 'confirmaccount-showexp' )->escaped(),
+					array(),
 					'wpShowStale=1'
 				)
 			) );
@@ -169,8 +174,10 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		# Say what queue we are in...
 		if ( $this->queueType != -1 ) {
-			$viewall = Linker::makeKnownLinkObj(
-				$this->getPageTitle(), $this->msg( 'confirmaccount-all' )->escaped() );
+			$viewall = Linker::linkKnown(
+				$this->getPageTitle(),
+				$this->msg( 'confirmaccount-all' )->escaped()
+			);
 
 			// Give grep a chance to find the usages: confirmaccount-type-0, confirmaccount-type-1
 			$this->getOutput()->setSubtitle(
@@ -195,31 +202,35 @@ class ConfirmAccountsPage extends SpecialPage {
 			$counts = ConfirmAccount::getOpenRequestCount( $i );
 
 			$open = '<b>';
-			$open .= Linker::makeKnownLinkObj(
+			$open .= Linker::linkKnown(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-open' )->escaped(),
+				array(),
 				'wpShowHeld=0'
 			);
 			$open .= '</b> [' . $counts['open'] . ']';
 
-			$held = Linker::makeKnownLinkObj(
+			$held = Linker::linkKnown(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-held' )->escaped(),
+				array(),
 				'wpShowHeld=1'
 			);
 			$held .= ' [' . $counts['held'] . ']';
 
-			$rejects = Linker::makeKnownLinkObj(
+			$rejects = Linker::linkKnown(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-rej' )->escaped(),
+				array(),
 				'wpShowRejects=1'
 			);
 			$rejects .= ' [' . $counts['rejected'] . ']';
 
 			$stale = '<i>';
-			$stale .= Linker::makeKnownLinkObj(
+			$stale .= Linker::linkKnown(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-stale' )->escaped(),
+				array(),
 				'wpShowStale=1'
 			);
 			$stale .= '</i>';
@@ -385,9 +396,12 @@ class ConfirmAccountsPage extends SpecialPage {
 			if ( $this->hasItem( 'CV' ) ) {
 				$form .= '<p>' . $this->msg( 'confirmaccount-attach' )->escaped() . ' ';
 				if ( $accountReq->getFileName() !== null ) {
-					$form .= Linker::makeKnownLinkObj( $titleObj,
+					$form .= Linker::linkKnown(
+						$titleObj,
 						htmlspecialchars( $accountReq->getFileName() ),
-						'file=' . $accountReq->getFileStorageKey() );
+						array(),
+						'file=' . $accountReq->getFileStorageKey()
+					);
 				} else {
 					$form .= $this->msg( 'confirmaccount-none-p' )->escaped();
 				}
@@ -408,9 +422,10 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		if ( $reqUser->isAllowed( 'requestips' ) ) {
 			$blokip = SpecialPage::getTitleFor( 'Block' );
-			$link = Linker::makeKnownLinkObj(
+			$link = Linker::linkKnown(
 				$blokip,
 				$this->msg( 'confirmaccount-blockip' )->escaped(),
+				array(),
 				'ip=' . $accountReq->getIP() . '&wpCreateAccount=1'
 			);
 			$form .= '<fieldset>';
@@ -712,14 +727,16 @@ class ConfirmAccountsPage extends SpecialPage {
 		global $wgMemc;
 
 		if ( $this->showRejects || $this->showStale ) {
-			$link = Linker::makeKnownLinkObj(
+			$link = Linker::linkKnown(
 				$this->getFullTitle(),
 				$this->msg( 'confirmaccount-review' )->escaped(),
+				array(),
 				'acrid=' . (int)$row->acr_id . '&wpShowRejects=1' );
 		} else {
-			$link = Linker::makeKnownLinkObj(
+			$link = Linker::linkKnown(
 				$this->getFullTitle(),
 				$this->msg( 'confirmaccount-review' )->escaped(),
+				array(),
 				'acrid=' . (int)$row->acr_id );
 		}
 		$time = $this->getLanguage()->timeanddate( wfTimestamp( TS_MW, $row->acr_registration ), true );

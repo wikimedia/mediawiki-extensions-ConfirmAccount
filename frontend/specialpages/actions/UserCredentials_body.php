@@ -161,8 +161,12 @@ class UserCredentialsPage extends SpecialPage {
 		if ( $this->hasItem( 'CV' ) || $this->hasItem( 'Notes' ) || $this->hasItem( 'Links' ) ) {
 			$form .= '<p>' . $this->msg( 'usercredentials-attach' )->escaped() . ' ';
 			if ( $row->acd_filename ) {
-				$form .= Linker::makeKnownLinkObj( $titleObj, htmlspecialchars( $row->acd_filename ),
-					'file=' . $row->acd_storage_key );
+				$form .= Linker::linkKnown(
+					$titleObj,
+					htmlspecialchars( $row->acd_filename ),
+					array(),
+					'file=' . $row->acd_storage_key
+				);
 			} else {
 				$form .= $this->msg( 'confirmaccount-none-p' )->escaped();
 			}
