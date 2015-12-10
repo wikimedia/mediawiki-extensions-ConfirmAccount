@@ -13,7 +13,8 @@
 			"PieRRoMaN",
 			"Sherbrooke",
 			"Urhixidur",
-			"Zetud"
+			"Zetud",
+			"Linedwell"
 		]
 	},
 	"confirmaccounts": "Demande de confirmation de comptes",
@@ -44,7 +45,7 @@
 	"confirmaccount-q-held": "demandes mises en attente",
 	"confirmaccount-q-rej": "demandes rejetées récemment",
 	"confirmaccount-q-stale": "Requêtes expirées",
-	"confirmaccount-badid": "Il n’y a aucune demande en cours correspondant à l’ID indiqué. Il est possible qu‘il ait subi une maintenance.",
+	"confirmaccount-badid": "Il n’y a aucune demande en cours correspondant à l’ID indiqué. Il est possible qu‘il ait déjà été traité.",
 	"confirmaccount-leg-user": "Compte utilisateur",
 	"confirmaccount-leg-areas": "Centres d'intérêts principaux",
 	"confirmaccount-leg-person": "Informations personnelles",
