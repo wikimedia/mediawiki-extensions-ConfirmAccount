@@ -208,7 +208,7 @@ class AccountRequestSubmission {
 			$key = sha1_file( $this->attachmentTempPath ) . '.' . $finalExt;
 			$pathRel = UserAccountRequest::relPathFromKey( $key );
 			$triplet = array( $this->attachmentTempPath, 'public', $pathRel );
-			$status = $repo->storeBatch( array( $triplet ), FSRepo::OVERWRITE_SAME ); // save!
+			$status = $repo->storeBatch( array( $triplet ), FileRepo::OVERWRITE_SAME ); // save!
 			if ( !$status->isOk() ) {
 				$dbw->rollback();
 				return array( 'acct_request_file_store_error',
