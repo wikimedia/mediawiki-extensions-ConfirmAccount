@@ -5,10 +5,12 @@
 			"Priviet",
 			"Yjs5497",
 			"아라",
-			"Macofe"
+			"Macofe",
+			"Revi"
 		]
 	},
 	"requestaccount": "계정 요청",
+	"requestaccount-login": "계정 요청",
 	"requestaccount-text": "'''사용자 계정을 요청하려면 다음 양식을 작성하여 제출하세요'''.\n\n요청을 하기에 앞서서 [[{{MediaWiki:Requestaccount-page}}|서비스 이용 약관]]을 반드시 읽어주세요. \n\n계정이 승인되고 나면 알림 메시지 이메일을 받게 될것이면 해당 계정으로 [[Special:UserLogin|로그인]]할 수 있습니다.",
 	"requestaccount-page": "{{ns:project}}:이용 약관",
 	"requestaccount-dup": "'''참고: 이미 등록된 계정으로 로그인되어 있습니다.'''",
