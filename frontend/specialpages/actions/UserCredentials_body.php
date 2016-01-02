@@ -94,7 +94,7 @@ class UserCredentialsPage extends SpecialPage {
 		$form .= '<legend>' . $this->msg( 'usercredentials-leg-user' )->escaped() . '</legend>';
 		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . $this->msg( 'username' )->escaped() . "</td>";
-		$form .= "<td>" . Linker::makeLinkObj( $user->getUserPage(),
+		$form .= "<td>" . Linker::link( $user->getUserPage(),
 			htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
 
 		$econf = $row->acd_email_authenticated ? ' <strong>' . $this->msg(
