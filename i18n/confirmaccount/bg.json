@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"DCLXVI",
-			"Spiritia"
+			"Spiritia",
+			"Vodnokon4e"
 		]
 	},
 	"confirmaccounts": "Одобряване на заявките за потребителски сметки",
@@ -19,7 +20,7 @@
 	"confirmaccount-bio-q": "Биография",
 	"confirmaccount-showopen": "отворени заявки",
 	"confirmaccount-showrej": "отказани заявки",
-	"confirmaccount-showheld": "Преглед на списъка със задържани сметки",
+	"confirmaccount-showheld": "задържани заявки",
 	"confirmaccount-showexp": "изтекли заявки",
 	"confirmaccount-review": "Преглеждане",
 	"confirmaccount-all": "(показване на всички опашки)",
