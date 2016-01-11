@@ -87,7 +87,7 @@ class AccountConfirmSubmission {
 				$emailBody
 			);
 			if ( !$result->isOk() ) {
-				$dbw->rollback();
+				$dbw->rollback( __METHOD__ );
 				return array( 'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
 						$context->getOutput()->parse( $result->getWikiText() )
@@ -119,7 +119,7 @@ class AccountConfirmSubmission {
 		# If not already held or deleted, mark as held
 		$ok = $this->accountReq->markHeld( $this->admin, wfTimestampNow(), $this->reason );
 		if ( !$ok ) { // already held or deleted?
-			$dbw->rollback();
+			$dbw->rollback( __METHOD__ );
 			return array( 'accountconf_canthold', $context->msg( 'confirmaccount-canthold' )->escaped() );
 		}
 
@@ -131,7 +131,7 @@ class AccountConfirmSubmission {
 			)->inContentLanguage()->text()
 		);
 		if ( !$result->isOk() ) {
-			$dbw->rollback();
+			$dbw->rollback( __METHOD__ );
 			return array( 'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
 					$context->getOutput()->parse( $result->getWikiText() )
@@ -208,7 +208,7 @@ class AccountConfirmSubmission {
 				$triplet = array( $oldPath, 'public', $pathRel );
 				$status = $repoNew->storeBatch( array( $triplet ) ); // copy!
 				if ( !$status->isOK() ) {
-					$dbw->rollback();
+					$dbw->rollback( __METHOD__ );
 					# DELETE new rows in case there was a COMMIT somewhere
 					$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
 					return array( 'accountconf_copyfailed',
@@ -247,7 +247,7 @@ class AccountConfirmSubmission {
 
 		# Add to global user login system (if there is one)
 		if ( !$wgAuth->addUser( $user, $pass, $accReq->getEmail(), $accReq->getRealName() ) ) {
-			$dbw->rollback();
+			$dbw->rollback( __METHOD__ );
 			# DELETE new rows in case there was a COMMIT somewhere
 			$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
 			return array( 'accountconf_externaldberror', $context->msg( 'externaldberror' )->escaped() );

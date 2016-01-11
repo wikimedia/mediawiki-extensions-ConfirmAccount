@@ -157,7 +157,7 @@ class AccountRequestSubmission {
 		$dbw->startAtomic( __METHOD__ ); // ready to acquire locks
 		# Check pending accounts for name use
 		if ( !UserAccountRequest::acquireUsername( $u->getName() ) ) {
-			$dbw->rollback();
+			$dbw->rollback( __METHOD__ );
 			return array(
 				'accountreq_username_pending',
 				$context->msg( 'requestaccount-inuse' )->escaped()
@@ -165,7 +165,7 @@ class AccountRequestSubmission {
 		}
 		# Check if someone else has an account request with the same email
 		if ( !UserAccountRequest::acquireEmail( $u->getEmail() ) ) {
-			$dbw->rollback();
+			$dbw->rollback( __METHOD__ );
 			return array(
 				'acct_request_email_exists',
 				$context->msg( 'requestaccount-emaildup' )->escaped()
@@ -180,7 +180,7 @@ class AccountRequestSubmission {
 			# File must have size.
 			if ( trim( $this->attachmentSrcName ) == '' || empty( $this->attachmentSize ) ) {
 				$this->attachmentPrevName = '';
-				$dbw->rollback();
+				$dbw->rollback( __METHOD__ );
 				return array( 'acct_request_empty_file', $context->msg( 'emptyfile' )->escaped() );
 			}
 			# Look at the contents of the file; if we can recognize the
@@ -188,7 +188,7 @@ class AccountRequestSubmission {
 			# probably not accept it.
 			if ( !in_array( $finalExt, $wgAccountRequestExts ) ) {
 				$this->attachmentPrevName = '';
-				$dbw->rollback();
+				$dbw->rollback( __METHOD__ );
 				return array(
 					'acct_request_bad_file_ext',
 					$context->msg( 'requestaccount-exts' )->escaped()
@@ -197,7 +197,7 @@ class AccountRequestSubmission {
 			$veri = ConfirmAccount::verifyAttachment( $this->attachmentTempPath, $finalExt );
 			if ( !$veri->isGood() ) {
 				$this->attachmentPrevName = '';
-				$dbw->rollback();
+				$dbw->rollback( __METHOD__ );
 				return array(
 					'acct_request_corrupt_file',
 					$context->msg( 'verification-error' )->escaped()
@@ -210,7 +210,7 @@ class AccountRequestSubmission {
 			$triplet = array( $this->attachmentTempPath, 'public', $pathRel );
 			$status = $repo->storeBatch( array( $triplet ), FileRepo::OVERWRITE_SAME ); // save!
 			if ( !$status->isOk() ) {
-				$dbw->rollback();
+				$dbw->rollback( __METHOD__ );
 				return array( 'acct_request_file_store_error',
 					$context->msg( 'filecopyerror', $this->attachmentTempPath, $pathRel )->escaped() );
 			}
@@ -244,7 +244,7 @@ class AccountRequestSubmission {
 		# Send confirmation, required!
 		$result = ConfirmAccount::sendConfirmationMail( $u, $this->ip, $token, $expires );
 		if ( !$result->isOK() ) {
-			$dbw->rollback(); // nevermind
+			$dbw->rollback( __METHOD__ ); // nevermind
 			if ( isset( $repo ) && isset( $pathRel ) ) { // remove attachment
 				$repo->cleanupBatch( array( array( 'public', $pathRel ) ) );
 			}
