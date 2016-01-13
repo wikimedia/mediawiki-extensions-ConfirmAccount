@@ -90,7 +90,7 @@ class ConfirmAccount {
 
 		$expires = time() + $wgConfirmAccountRejectAge;
 		$expiration = wfTimestamp( TS_MW, $expires );
-		$token = $user->generateToken( $user->getName() . $user->getEmail() . $expires );
+		$token = MWCryptRand::generateHex( 32 );
 		return $token;
 	}
 
