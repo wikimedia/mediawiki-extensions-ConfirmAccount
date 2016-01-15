@@ -402,7 +402,7 @@ class RequestAccountPage extends SpecialPage {
 					}
 				}
 			}
-			$out->addWikiMsg( 'request-account-econf' );
+			$out->addWikiMsg( 'requestaccount-econf' );
 			$out->returnToMain();
 		} else {
 			# Maybe the user confirmed after account was created...

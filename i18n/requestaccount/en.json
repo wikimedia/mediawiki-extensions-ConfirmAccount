@@ -39,7 +39,7 @@
 	"requestaccount-tos": "I have read and agree to abide by the [[{{MediaWiki:Requestaccount-page}}|Terms of Service]] of {{SITENAME}}.\nThe name I have specified under \"Real name\" is in fact my own real name.",
 	"requestaccount-submit": "Request account",
 	"requestaccount-sent": "Your account request has successfully been sent and is now pending review.\n\tA confirmation email has been sent to your email address.",
-	"request-account-econf": "Your email address has been confirmed and will be listed as such in your account request.",
+	"requestaccount-econf": "Your email address has been confirmed and will be listed as such in your account request.",
 	"requestaccount-email-subj": "{{SITENAME}} email address confirmation",
 	"requestaccount-email-body": "Someone, probably you from IP address $1, has requested an account \"$2\" with this email address on {{SITENAME}}.\n\nTo confirm that this account really does belong to you on {{SITENAME}}, open this link in your browser:\n\n$3\n\nIf the account is created, only you will be emailed the password.\nIf this is *not* you, do not follow the link.\nThis confirmation code will expire at $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} account request",

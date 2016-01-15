@@ -50,7 +50,7 @@
 	"requestaccount-tos": "\"Real name\" should be exactly as {{msg-mw|Requestaccount-real}}, minus the colon.\n\nRefers to {{msg-mw|Requestaccount-page}}.",
 	"requestaccount-submit": "Used as label for the Submit button.\n{{Identical|Request account}}",
 	"requestaccount-sent": "Used as success message.\n\nThe page title for this message is {{msg-mw|Requestaccount}}.",
-	"request-account-econf": "Used as success message.\n\nThis message is followed by a link which points to the Main page.",
+	"requestaccount-econf": "Used as success message.\n\nThis message is followed by a link which points to the Main page.",
 	"requestaccount-email-subj": "{{Identical|SITENAME e-mail address confirmation}}",
 	"requestaccount-email-body": "This text is sent in an email. Parameters:\n* $1 - an IP address\n* $2 - a requested user name (no GENDER support)\n* $3 - a URL\n* $4 - a date/time\n* $5 - (Optional) a date\n* $6 - (Optional) a time",
 	"requestaccount-email-subj-admin": "{{Identical|SITENAME account request}}",
