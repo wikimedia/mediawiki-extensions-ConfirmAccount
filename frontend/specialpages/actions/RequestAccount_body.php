@@ -22,6 +22,10 @@ class RequestAccountPage extends SpecialPage {
 		parent::__construct( 'RequestAccount' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	function execute( $par ) {
 		global $wgAccountRequestTypes;
 

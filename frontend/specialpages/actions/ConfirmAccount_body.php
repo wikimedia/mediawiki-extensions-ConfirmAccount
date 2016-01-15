@@ -24,6 +24,10 @@ class ConfirmAccountsPage extends SpecialPage {
 		parent::__construct( 'ConfirmAccounts', 'confirmaccount' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	function execute( $par ) {
 		global $wgAccountRequestTypes;
 
