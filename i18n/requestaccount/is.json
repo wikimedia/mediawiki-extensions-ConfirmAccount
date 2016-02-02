@@ -4,7 +4,8 @@
 			"S.Örvarr.S",
 			"Snævar",
 			"Ævar Arnfjörð Bjarmason",
-			"Macofe"
+			"Macofe",
+			"Sveinki"
 		]
 	},
 	"requestaccount": "Sækja um aðgang",
@@ -22,10 +23,10 @@
 	"requestaccount-attach": "Ferilskrá (valfrjálst):",
 	"requestaccount-notes": "Viðbótarskýring:",
 	"requestaccount-urls": "Listi yfir vefsíður, ef einhverjar (aðskildu með línum):",
-	"requestaccount-tooshort": "Notendaupplýsingarnar þínar þurfa í minnsta lagi að vera $1 {{PLURAL:$1|orð}} að lengd.",
+	"requestaccount-tooshort": "Notandaupplýsingarnar þínar þurfa í minnsta lagi að vera $1 {{PLURAL:$1|orð}} að lengd.",
 	"requestaccount-submit": "Sækja um aðgang",
 	"requestaccount-sent": "Beðni þín um aðgang var móttekin og bíður nú yfirferðar hjá stjórnendum. Staðfestingarpóstur var sendur á netfangið þitt.",
-	"request-account-econf": "Netfangið þitt hefur verið staðfest og mun vera listað sem slíkt meðal aðgangsbeðna.",
+	"requestaccount-econf": "Netfangið þitt hefur verið staðfest og mun vera listað sem slíkt meðal aðgangsbeðna.",
 	"requestaccount-email-subj": "{{SITENAME}} netfangs-staðfesting",
 	"requestaccount-email-body": "Einhver með vistfangið „$1“ hefur beðið um að búa til aðganginn „$2“ með þessu netfangi á {{SITENAME}} vefnum.\n\nTil að steðfesta að þú viljir búa til þennan aðgang á {{SITENAME}} þarftu að opna þennan tengil í vafranum þínum:\n\n$3\n\nÞér verður sent lykilorð í pósti verði aðgangurinn búinn til. Þessi staðfestingarpóstur rennur út $4.",
 	"requestaccount-email-subj-admin": "Beðni um notanda a {{SITENAME}}",
