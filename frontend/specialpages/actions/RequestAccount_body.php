@@ -248,7 +248,7 @@ class RequestAccountPage extends SpecialPage {
 			# Hook point to add captchas
 			$form .= '<fieldset>';
 			$form .= $this->msg( 'captcha-createaccount' )->parseAsBlock();
-			$form .= $captcha->getForm();
+			$form .= $captcha->getForm( $out );
 			$form .= '</fieldset>';
 		}
 		$form .= Html::Hidden( 'title', $this->getPageTitle()->getPrefixedDBKey() ) . "\n";
