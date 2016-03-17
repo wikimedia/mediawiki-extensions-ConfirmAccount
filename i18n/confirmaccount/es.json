@@ -13,7 +13,8 @@
 			"Sanbec",
 			"Translationista",
 			"VegaDark",
-			"Macofe"
+			"Macofe",
+			"Matiia"
 		]
 	},
 	"confirmaccounts": "Confirmar solicitudes de cuenta",
@@ -83,8 +84,8 @@
 	"confirmaccount-needreason": "Debes proveer una razón en el cuadro de comentario a continuación.",
 	"confirmaccount-canthold": "Esta solicitud ya se encuentra retenida o eliminada.",
 	"confirmaccount-badaction": "Una acción válida (aceptar, rechazar, retener) debe especificarse para poder continuar.",
-	"confirmaccount-acc": "Solicitud de cuenta confirmada exitosamente;\ncreada nueva cuenta de usuario [[User:$1|$1]].",
-	"confirmaccount-rej": "Solicitud de cuenta rechazada exitosamente.",
+	"confirmaccount-acc": "Solicitud de cuenta confirmada;\ncreada nueva cuenta de usuario [[User:$1|$1]].",
+	"confirmaccount-rej": "Solicitud de cuenta rechazada.",
 	"confirmaccount-viewing": "(actualmente {{GENDER:$1|siendo}} visto por [[User:$1|$1]])",
 	"confirmaccount-summary": "Creación de página de usuario para un nuevo usuario.",
 	"confirmaccount-welc": "'''Te damos la bienvenida a ''{{SITENAME}}'''''\nEsperamos que contribuyas mucho y bien.\nProbablemente desearás leer las [{{MediaWiki:Helppage}} páginas de ayuda].\nNuevamente, te damos la bienvenida y diviértete.",
