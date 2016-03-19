@@ -4,12 +4,16 @@
 			"Imre",
 			"Kghbln",
 			"The Evil IP address",
-			"Umherirrender"
+			"Umherirrender",
+			"Andreas Plank"
 		]
 	},
 	"confirmaccount-maintext": "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}'' zu bearbeiten.'''\n\nJede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.\n\nWenn Sie auf einen Antrag antworten, überprüfen Sie die Informationen sorgfältig und bestätigen Sie die enthaltenen Informationen.\nIhre Aktionen werden nichtöffentlich protokolliert. Es wird auch von Ihnen erwartet, die Aktionen anderer zu überprüfen.",
+	"confirmaccount-list": "Unten finden Sie eine Liste von noch zu bestätigenden Benutzerkontoanträgen.\nSobald ein Antrag bestätigt oder zurückgewiesen wurde, wird er aus der Liste entfernt.",
 	"confirmaccount-list2": "Unten ist eine Liste kürzlich zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Sie können noch genehmigt werden, allerdings sollten Sie zuerst den ablehnenden Administrator kontaktieren.",
-	"confirmaccount-text": "Dies ist ein Antrag auf ein Benutzerkonto bei '''{{SITENAME}}'''.\n\nPrüfen Sie alle unten stehenden Informationen gründlich und bestätigen Sie die Informationen wenn möglich.\nBitte beachten Sie, dass Sie den Zugang bei Bedarf unter einem anderen Benutzernamen anlegen kannst.\nSie sollten dies nur nutzen, um Kollisionen mit anderen Namen zu vermeiden.\n\nWenn Sie diese Seite verlassen, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag offen stehen bleiben.",
+	"confirmaccount-list3": "Unten ist eine Liste zurückgewiesener Anträge, die automatisch gelöscht werden, sobald sie einige Tage alt sind. Als Benutzerkonten können diese noch genehmigt werden.",
+	"confirmaccount-text": "Dies ist ein unerledigter Benutzerkonto-Antrag bei '''{{SITENAME}}'''.\n\nPrüfen Sie sorgfältig alle unten stehenden Informationen. Falls Sie den Antrag bestätigen, nutzen Sie die Position in der Auswahlliste, um den Benutzerstatus zu setzten.\n\nModifikationen an Biographie führen zu keiner dauerhaften Änderung der Anmeldeinformationen beim Speichern.\nBeachten Sie, dass Sie bei Bedarf das Konto unter einem anderen Benutzernamen anlegen können.\nSie sollten dies nur anwenden, um Kollisionen mit anderen Namen zu vermeiden.\n\nFalls Sie diese Seite verlassen, ohne das Konto zu bestätigen oder abzulehnen, wird der Antrag weiter offen bleiben.",
+	"confirmaccount-none-o": "Momentan gibt es keine offenen Benutzeranträge in dieser Liste.",
 	"confirmaccount-confirm": "Nutzen Sie die folgende Auswahl, um den Antrag zu bestätigen, abzulehnen oder um noch abzuwarten.",
 	"confirmaccount-needreason": "Sie müssen eine Begründung eingeben.",
 	"confirmaccount-welc": "'''Willkommen bei ''{{SITENAME}}''!'''\nWir hoffen, dass Sie viele gute Informationen beisteuern.\nMöglicherweise möchten Sie zunächst die [{{MediaWiki:Helppage}} Ersten Schritte] lesen.\nNochmal: Willkommen und viel Spaß!",
