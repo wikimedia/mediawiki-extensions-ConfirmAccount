@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ләйсән"
+			"Ләйсән",
+			"Айсар"
 		]
 	},
 	"confirmaccount-showopen": "асыҡ һорауҙар",
@@ -26,5 +27,6 @@
 	"confirmaccount-none-p": "(күрһәтелмәгән)",
 	"confirmaccount-econf": "(раҫланған)",
 	"confirmaccount-noreason": "(юҡ)",
-	"confirmaccount-hold": "Ҡалдырып торорға"
+	"confirmaccount-hold": "Ҡалдырып торорға",
+	"confirmaccount-rej": "Иҫәп яҙмаһын һорау кире ҡағылды."
 }
