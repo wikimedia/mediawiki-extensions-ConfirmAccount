@@ -72,7 +72,7 @@ class ConfirmAccount {
 	 */
 	public static function confirmationTokenUrl( $token ) {
 		$title = SpecialPage::getTitleFor( 'RequestAccount' );
-		return $title->getFullUrl( [
+		return $title->getCanonicalURL( [
 			'action' => 'confirmemail',
 			'wpEmailToken' => $token
 		] );
