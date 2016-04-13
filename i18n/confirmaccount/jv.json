@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Meursault2004",
-			"Pras"
+			"Pras",
+			"NoiX180"
 		]
 	},
 	"confirmaccounts": "Konfirmasi panyuwunan rékening (akun)",
@@ -27,7 +28,7 @@
 	"confirmaccount-email": "E-mail:",
 	"confirmaccount-reqtype": "Posisi:",
 	"confirmaccount-pos-0": "pangripta",
-	"confirmaccount-pos-1": "panyunting",
+	"confirmaccount-pos-1": "sing besut",
 	"confirmaccount-bio": "Biografi:",
 	"confirmaccount-attach": "Babad slira/CV:",
 	"confirmaccount-notes": "Cathetan tambahan:",

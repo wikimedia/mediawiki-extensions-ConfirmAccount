@@ -4,7 +4,8 @@
 			"Meursault2004",
 			"Pras",
 			"Nemo bis",
-			"Macofe"
+			"Macofe",
+			"NoiX180"
 		]
 	},
 	"requestaccount": "Nyuwun rékening (akun)",
@@ -17,7 +18,7 @@
 	"requestaccount-email": "Alamat e-mail:",
 	"requestaccount-reqtype": "Posisi:",
 	"requestaccount-level-0": "pangripta",
-	"requestaccount-level-1": "panyunting",
+	"requestaccount-level-1": "sing besut",
 	"requestaccount-bio": "Babad slira pribadi:",
 	"requestaccount-attach": "Riwayat urip utawa CV (opsional):",
 	"requestaccount-notes": "Cathetan tambahan:",
@@ -31,7 +32,7 @@
 	"requestaccount-tos": "Aku wis maca lan sarujuk nuruti [[{{MediaWiki:Requestaccount-page}}|Sarat Paladènan (''Terms of Service'')]]-é {{SITENAME}}.\nJeneng sing tak-wènèhaké minangka \"Jeneng asli\" iku pancèn jenengku dhéwé.",
 	"requestaccount-submit": "Nyuwun rékening (akun)",
 	"requestaccount-sent": "Panyuwunan akun panjenengan wis kasil dikirim lan saiki lagi dipriksa.\nSawijining layang konfirmasi wis dikirim menyang alamat layang-e panjenengan.",
-	"request-account-econf": "Alamat e-mail panjenengan wis dikonfirmasi lan bakal didokok ing daftar kaya ing panyuwunan rékening panjenengan.",
+	"requestaccount-econf": "Alamat e-mail panjenengan wis dikonfirmasi lan bakal didokok ing daftar kaya ing panyuwunan rékening panjenengan.",
 	"requestaccount-email-subj": "Konfirmasi alamat e-mail {{SITENAME}}",
 	"requestaccount-email-subj-admin": "Panyuwunan rékening ing {{SITENAME}}",
 	"requestaccount-email-body-admin": "$1 wis nyuwun rékening lan saiki nunggu konfirmasi.\nAlamat e-mailé wis dikonfirmasi. Panjenengan bisa konfirmasi panyuwunan iki ing:\n\n$2",
