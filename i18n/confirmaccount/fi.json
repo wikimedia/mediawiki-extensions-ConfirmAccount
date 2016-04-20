@@ -12,7 +12,8 @@
 			"Taleman",
 			"Varusmies",
 			"VezonThunder",
-			"Pxos"
+			"Pxos",
+			"01miki10"
 		]
 	},
 	"confirmaccounts": "Myönnä käyttäjätunnuksia.",
@@ -67,13 +68,15 @@
 	"confirmaccount-rational": "Hakijalle kerrotut perustelut:",
 	"confirmaccount-noreason": "(ei mitään)",
 	"confirmaccount-autorej": "(tämä pyyntö on automaattisesti hylätty käyttämättömyyden vuoksi)",
-	"confirmaccount-held": "(\"pysäytetty\", pysäyttäjänä [[User:$1|$1]] osoitteessa $2)",
+	"confirmaccount-held": "(\"pysäytetty\", pysäyttäjänä [[User:$1|$1]] $3 kello $4)",
+	"confirmaccount-blockip": "Estä IP-osoite",
 	"confirmaccount-create": "Hyväksy (luo käyttäjätunnus)",
 	"confirmaccount-deny": "Hylkää (poista jonosta)",
 	"confirmaccount-hold": "Pysäytä",
 	"confirmaccount-spam": "Roskaa (sähköpostia ei lähetetä)",
 	"confirmaccount-reason": "Huomautus (liitetään sähköpostiin):",
 	"confirmaccount-ip": "IP-osoite:",
+	"confirmaccount-xff": "X-Forwarded-For:",
 	"confirmaccount-legend": "Vahvista tai hylkää tämä tunnus",
 	"confirmaccount-submit": "Vahvista",
 	"confirmaccount-needreason": "Alla olevaan huomautuslaatikkoon on kirjoitettava perustelu.",
