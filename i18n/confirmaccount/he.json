@@ -5,7 +5,8 @@
 			"Rotemliss",
 			"StuB",
 			"YaronSh",
-			"Yona b"
+			"Yona b",
+			"Guycn2"
 		]
 	},
 	"confirmaccounts": "אישור בקשות חשבון",
@@ -61,6 +62,7 @@
 	"confirmaccount-noreason": "(ללא)",
 	"confirmaccount-autorej": "(הבקשה הזאת נמחקה לאור חוסר פעילות)",
 	"confirmaccount-held": "(סומנה להמתנה על ידי [[User:$1|$1]] ב־$3 בשעה $4)",
+	"confirmaccount-blockip": "חסימת כתובת ה־IP",
 	"confirmaccount-create": "אישור (יצירת חשבון)",
 	"confirmaccount-deny": "דחייה (מחיקת הבקשה)",
 	"confirmaccount-hold": "עיכוב",
@@ -74,8 +76,8 @@
 	"confirmaccount-needreason": "יש לספק סיבה בתיבת התגובה למטה.",
 	"confirmaccount-canthold": "בקשה זו כבר נמצאת בהמתנה או מחוקה.",
 	"confirmaccount-badaction": "פעולה תקינה (קבלה, דחייה, החזקה) צריכה להיות מצוינת כדי להמשיך.",
-	"confirmaccount-acc": "בקשת החשבון אושרה בהצלחה; נוצר חשבון משתמש חדש בשם [[User:$1|$1]].",
-	"confirmaccount-rej": "בקשת החשבון נדחתה בהצלחה.",
+	"confirmaccount-acc": "בקשת החשבון אושרה; נוצר חשבון משתמש חדש בשם [[User:$1|$1]].",
+	"confirmaccount-rej": "בקשת החשבון נדחתה.",
 	"confirmaccount-viewing": "(הבקשה נצפית כרגע בידי [[User:$1|$1]])",
 	"confirmaccount-summary": "יצירת דף משתמש למשתמש חדש",
 	"confirmaccount-welc": "'''ברוכים הבאים לאתר ''{{SITENAME}}''!'''\nאנו מקווים שתרומותיכם יהיו רבות וטובות.\nכנראה כדאי שתקראו עכשיו את [{{MediaWiki:Helppage}} דפי העזרה].\nושוב, ברוכים הבאים, תיהנו!",
