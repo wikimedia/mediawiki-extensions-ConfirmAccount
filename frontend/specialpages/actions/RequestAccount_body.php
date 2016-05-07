@@ -389,7 +389,7 @@ class RequestAccountPage extends SpecialPage {
 					'requestaccount-email-subj-admin' )->inContentLanguage()->escaped();
 				$body = $this->msg(
 					'requestaccount-email-body-admin', $name )->params(
-						$title->getFullUrl() )->inContentLanguage()->text();
+						$title->getCanonicalURL() )->inContentLanguage()->text();
 				# Actually send the email...
 				if ( $wgConfirmAccountContact != '' ) {
 					$source = new MailAddress( $wgPasswordSender, wfMessage( 'emailsender' )->text() );
