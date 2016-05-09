@@ -23,7 +23,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit( 1 );
 }
 
-$wgExtensionCredits['specialpage'][] = array(
+$wgExtensionCredits['specialpage'][] = [
 	'path' => __FILE__,
 	'name' => 'Confirm User Accounts',
 	'namemsg' => 'confirmaccount-extensionname',
@@ -31,7 +31,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Aaron Schulz',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:ConfirmAccount',
 	'license-name' => 'GPL-2.0+'
-);
+];
 
 # Load default config variables
 require ( __DIR__ . '/ConfirmAccount.config.php' );

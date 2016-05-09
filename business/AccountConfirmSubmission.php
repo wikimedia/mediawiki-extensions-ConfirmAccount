@@ -34,9 +34,9 @@ class AccountConfirmSubmission {
 	public function submit( IContextSource $context ) {
 		# Make sure that basic permissions are checked
 		if ( !$this->admin->getID() || !$this->admin->isAllowed( 'confirmaccount' ) ) {
-			return array( 'accountconf_permission_denied', $context->msg( 'badaccess-group0' )->escaped() );
+			return [ 'accountconf_permission_denied', $context->msg( 'badaccess-group0' )->escaped() ];
 		} elseif ( wfReadOnly() ) {
-			return array( 'accountconf_readonly', $context->msg( 'badaccess-group0' )->escaped() );
+			return [ 'accountconf_readonly', $context->msg( 'badaccess-group0' )->escaped() ];
 		}
 		if ( $this->action === 'spam' ) {
 			return $this->spamRequest( $context );
@@ -47,7 +47,7 @@ class AccountConfirmSubmission {
 		} elseif ( $this->action === 'accept' ) {
 			return $this->acceptRequest( $context );
 		} else {
-			return array( 'accountconf_bad_action', $context->msg( 'confirmaccount-badaction' )->escaped() );
+			return [ 'accountconf_bad_action', $context->msg( 'confirmaccount-badaction' )->escaped() ];
 		}
 	}
 
@@ -62,7 +62,7 @@ class AccountConfirmSubmission {
 		}
 
 		$dbw->endAtomic( __METHOD__ );
-		return array( true, null );
+		return [ true, null ];
 	}
 
 	protected function rejectRequest( IContextSource $context ) {
@@ -88,17 +88,17 @@ class AccountConfirmSubmission {
 			);
 			if ( !$result->isOk() ) {
 				$dbw->rollback( __METHOD__ );
-				return array( 'accountconf_mailerror',
+				return [ 'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
 						$context->getOutput()->parse( $result->getWikiText() )
-					)->text() );
+					)->text() ];
 			}
 			# Clear cache for notice of how many account requests there are
 			ConfirmAccount::clearAccountRequestCountCache();
 		}
 
 		$dbw->endAtomic( __METHOD__ );
-		return array( true, null );
+		return [ true, null ];
 	}
 
 	protected function holdRequest( IContextSource $context ) {
@@ -108,9 +108,9 @@ class AccountConfirmSubmission {
 
 		# Pointless without a summary...
 		if ( $this->reason == '' ) {
-			return array(
+			return [
 				'accountconf_needreason', $context->msg( 'confirmaccount-needreason' )->escaped()
-			);
+			];
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
@@ -120,7 +120,7 @@ class AccountConfirmSubmission {
 		$ok = $this->accountReq->markHeld( $this->admin, wfTimestampNow(), $this->reason );
 		if ( !$ok ) { // already held or deleted?
 			$dbw->rollback( __METHOD__ );
-			return array( 'accountconf_canthold', $context->msg( 'confirmaccount-canthold' )->escaped() );
+			return [ 'accountconf_canthold', $context->msg( 'confirmaccount-canthold' )->escaped() ];
 		}
 
 		# Send out a request hold email...
@@ -132,17 +132,17 @@ class AccountConfirmSubmission {
 		);
 		if ( !$result->isOk() ) {
 			$dbw->rollback( __METHOD__ );
-			return array( 'accountconf_mailerror',
+			return [ 'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
 					$context->getOutput()->parse( $result->getWikiText() )
-				)->text() );
+				)->text() ];
 		}
 
 		# Clear cache for notice of how many account requests there are
 		ConfirmAccount::clearAccountRequestCountCache();
 
 		$dbw->endAtomic( __METHOD__ );
-		return array( true, null );
+		return [ true, null ];
 	}
 
 	protected function acceptRequest( IContextSource $context ) {
@@ -155,12 +155,12 @@ class AccountConfirmSubmission {
 		# Now create user and check if the name is valid
 		$user = User::newFromName( $this->userName, 'creatable' );
 		if ( !$user ) {
-			return array( 'accountconf_invalid_name', $context->msg( 'noname' )->escaped() );
+			return [ 'accountconf_invalid_name', $context->msg( 'noname' )->escaped() ];
 		}
 
 		# Check if account name is already in use
 		if ( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
-			return array( 'accountconf_user_exists', $context->msg( 'userexists' )->escaped() );
+			return [ 'accountconf_user_exists', $context->msg( 'userexists' )->escaped() ];
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
@@ -172,7 +172,7 @@ class AccountConfirmSubmission {
 		# Insert the new user into the DB...
 		$tokenExpires = $accReq->getEmailTokenExpires();
 		$authenticated = $accReq->getEmailAuthTimestamp();
-		$params = array(
+		$params = [
 			# Set the user's real name
 			'real_name' => $accReq->getRealName(),
 			# Set the temporary password
@@ -184,7 +184,7 @@ class AccountConfirmSubmission {
 			'email_authenticated' => $dbw->timestampOrNull( $authenticated ),
 			'email_token_expires' => $dbw->timestamp( $tokenExpires ),
 			'email_token' => $accReq->getEmailToken()
-		);
+		];
 		$user = User::createNew( $user->getName(), $params );
 
 		# Grant any necessary rights (exclude blank or dummy groups)
@@ -205,20 +205,20 @@ class AccountConfirmSubmission {
 				$pathRel = UserAccountRequest::relPathFromKey( $key );
 				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
 
-				$triplet = array( $oldPath, 'public', $pathRel );
-				$status = $repoNew->storeBatch( array( $triplet ) ); // copy!
+				$triplet = [ $oldPath, 'public', $pathRel ];
+				$status = $repoNew->storeBatch( [ $triplet ] ); // copy!
 				if ( !$status->isOK() ) {
 					$dbw->rollback( __METHOD__ );
 					# DELETE new rows in case there was a COMMIT somewhere
 					$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
-					return array( 'accountconf_copyfailed',
-						$context->getOutput()->parse( $status->getWikiText() ) );
+					return [ 'accountconf_copyfailed',
+						$context->getOutput()->parse( $status->getWikiText() ) ];
 				}
 			}
 			$acd_id = $dbw->nextSequenceValue( 'account_credentials_acd_id_seq' );
 			# Move request data into a separate table
 			$dbw->insert( 'account_credentials',
-				array(
+				[
 					'acd_user_id' => $user->getID(),
 					'acd_real_name' => $accReq->getRealName(),
 					'acd_email' => $accReq->getEmail(),
@@ -237,7 +237,7 @@ class AccountConfirmSubmission {
 					'acd_user' => $this->admin->getID(),
 					'acd_comment' => $this->reason,
 					'acd_id' => $acd_id
-				),
+				],
 				__METHOD__
 			);
 			if ( is_null( $acd_id ) ) {
@@ -250,7 +250,7 @@ class AccountConfirmSubmission {
 			$dbw->rollback( __METHOD__ );
 			# DELETE new rows in case there was a COMMIT somewhere
 			$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
-			return array( 'accountconf_externaldberror', $context->msg( 'externaldberror' )->escaped() );
+			return [ 'accountconf_externaldberror', $context->msg( 'externaldberror' )->escaped() ];
 		}
 
 		# OK, now remove the request from the queue
@@ -268,7 +268,7 @@ class AccountConfirmSubmission {
 			}
 		);
 
-		return array( true, null );
+		return [ true, null ];
 	}
 
 	public function doPostCommitNewUserUpdates(
@@ -312,7 +312,7 @@ class AccountConfirmSubmission {
 		$ssUpdate->doUpdate();
 
 		# Safe to hook/log now...
-		Hooks::run( 'AddNewAccount', array( $user, false /* not by email */ ) );
+		Hooks::run( 'AddNewAccount', [ $user, false /* not by email */ ] );
 		$user->addNewUserLogEntry();
 
 		# Clear cache for notice of how many account requests there are
@@ -326,7 +326,7 @@ class AccountConfirmSubmission {
 				$pathRel = UserAccountRequest::relPathFromKey( $key );
 				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
 				if ( $repoOld->fileExists( $oldPath ) ) {
-					$repoOld->getBackend()->delete( array( 'src' => $oldPath ) ); // delete!
+					$repoOld->getBackend()->delete( [ 'src' => $oldPath ] ); // delete!
 				}
 			}
 		}
@@ -352,12 +352,12 @@ class AccountConfirmSubmission {
 		$dbw->startAtomic( __METHOD__ );
 		# DELETE the user in case something caused a COMMIT already somewhere.
 		if ( $user_id ) {
-			$dbw->delete( 'user', array( 'user_id' => $user_id ), __METHOD__ );
-			$dbw->delete( 'user_groups', array( 'ug_user' => $user_id ), __METHOD__ );
+			$dbw->delete( 'user', [ 'user_id' => $user_id ], __METHOD__ );
+			$dbw->delete( 'user_groups', [ 'ug_user' => $user_id ], __METHOD__ );
 		}
 		# DELETE the new account_credentials row likewise.
 		if ( $acd_id ) {
-			$dbw->delete( 'account_credentials', array( 'acd_id' => $acd_id ), __METHOD__ );
+			$dbw->delete( 'account_credentials', [ 'acd_id' => $acd_id ], __METHOD__ );
 		}
 		$dbw->endAtomic( __METHOD__ );
 	}

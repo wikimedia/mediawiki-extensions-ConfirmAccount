@@ -24,27 +24,27 @@ $wgAccountRequestThrottle = 1;
 $wgAccountRequestWhileBlocked = false;
 
 # Which form elements to show at Special:RequestAccount
-$wgConfirmAccountRequestFormItems = array(
+$wgConfirmAccountRequestFormItems = [
 	# Let users make names other than their "real name"
-	'UserName'        => array( 'enabled' => true ),
+	'UserName'        => [ 'enabled' => true ],
 	# Real name of user
-	'RealName'        => array( 'enabled' => true ),
+	'RealName'        => [ 'enabled' => true ],
 	# Biographical info
-	'Biography'       => array( 'enabled' => true, 'minWords' => 50 ),
+	'Biography'       => [ 'enabled' => true, 'minWords' => 50 ],
 	# Interest checkboxes (defined in MediaWiki:requestaccount-areas)
-	'AreasOfInterest' => array( 'enabled' => true ),
+	'AreasOfInterest' => [ 'enabled' => true ],
 	# CV/resume attachment option
-	'CV'              => array( 'enabled' => true ),
+	'CV'              => [ 'enabled' => true ],
 	# Additional non-public info for reviewer
-	'Notes'           => array( 'enabled' => true ),
+	'Notes'           => [ 'enabled' => true ],
 	# Option to place web URLs that establish the user
-	'Links'           => array( 'enabled' => true ),
+	'Links'           => [ 'enabled' => true ],
 	# Terms of Service checkbox
-	'TermsOfService'  => array( 'enabled' => true ),
-);
+	'TermsOfService'  => [ 'enabled' => true ],
+];
 
 # If files can be attached, what types can be used? (MIME data is checked)
-$wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' );
+$wgAccountRequestExts = [ 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp', 'wpd', 'sxw' ];
 
 # Prospective account request types.
 # Format is an array of (integer => (subpage param,user group,autotext)) pairs.
@@ -53,9 +53,9 @@ $wgAccountRequestExts = array( 'txt', 'pdf', 'doc', 'latex', 'rtf', 'text', 'wp'
 # When a request of a certain type is approved, the new user:
 # (a) is placed in the <user group> group (if not User or *)
 # (b) has <autotext> appended to his or her user page
-$wgAccountRequestTypes = array(
-	0 => array( 'authors', 'user', null )
-);
+$wgAccountRequestTypes = [
+	0 => [ 'authors', 'user', null ]
+];
 
 # If set, will add {{DEFAULTSORT:sortkey}} to userpages for auto-categories.
 # The sortkey will be made by doing a regex search and replace on the title.
@@ -78,8 +78,8 @@ $wgConfirmAccountContact = false;
 $wgConfirmAccountCaptchas = true;
 
 # Storage repos. Has B/C for when this used FileStore.
-$wgConfirmAccountFSRepos = array(
-	'accountreqs' => array( # Location of attached files for pending requests
+$wgConfirmAccountFSRepos = [
+	'accountreqs' => [ # Location of attached files for pending requests
 		'name'       => 'accountreqs',
 		'directory'  => isset( $wgFileStore['accountreqs'] ) ?
 			$wgFileStore['accountreqs']['directory'] : $wgUploadDirectory . "/accountreqs",
@@ -87,8 +87,8 @@ $wgConfirmAccountFSRepos = array(
 			$wgFileStore['accountreqs']['url'] : null,
 		'hashLevels' => isset( $wgFileStore['accountreqs'] ) ?
 			$wgFileStore['accountreqs']['hash'] : 3
-	),
-	'accountcreds' => array( # Location of credential files
+	],
+	'accountcreds' => [ # Location of credential files
 		'name'       => 'accountcreds',
 		'directory'  => isset( $wgFileStore['accountcreds'] ) ?
 			$wgFileStore['accountcreds']['directory'] : $wgUploadDirectory . "/accountcreds",
@@ -96,8 +96,8 @@ $wgConfirmAccountFSRepos = array(
 			$wgFileStore['accountcreds']['url'] : null,
 		'hashLevels' => isset( $wgFileStore['accountcreds'] ) ?
 			$wgFileStore['accountcreds']['hash'] : 3
-	)
-);
+	]
+];
 
 # Restrict account creation
 $wgGroupPermissions['*']['createaccount'] = false;

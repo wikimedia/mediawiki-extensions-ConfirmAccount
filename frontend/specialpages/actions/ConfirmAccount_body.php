@@ -70,7 +70,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		// Showing or confirming an account request
 		} elseif ( $this->acrID ) {
 			# Load areas user plans to be active in...
-			$this->reqAreas = array();
+			$this->reqAreas = [];
 			foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
 				$this->reqAreas[$name] = $request->getInt( $formName, -1 );
@@ -128,52 +128,52 @@ class ConfirmAccountsPage extends SpecialPage {
 			$listLink = $this->msg( 'confirmaccount-showopen' )->escaped();
 		}
 		if ( $this->acrID || !$this->showHeld ) {
-			$listLink = $this->getLanguage()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
 				Linker::linkKnown(
 					$titleObj,
 					$this->msg( 'confirmaccount-showheld' )->escaped(),
-					array(),
+					[],
 					'wpShowHeld=1'
 				)
-			) );
+			] );
 		} else {
-			$listLink = $this->getLanguage()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
 				$this->msg( 'confirmaccount-showheld' )->escaped()
-			) );
+			] );
 		}
 		if ( $this->acrID || !$this->showRejects ) {
-			$listLink = $this->getLanguage()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
 				Linker::linkKnown(
 					$titleObj,
 					$this->msg( 'confirmaccount-showrej' )->escaped(),
-					array(),
+					[],
 					'wpShowRejects=1'
 				)
-			) );
+			] );
 		} else {
-			$listLink = $this->getLanguage()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
 				$this->msg( 'confirmaccount-showrej' )->escaped()
-			) );
+			] );
 		}
 		if ( $this->acrID || !$this->showStale ) {
-			$listLink = $this->getLanguage()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
 				Linker::linkKnown(
 					$titleObj,
 					$this->msg( 'confirmaccount-showexp' )->escaped(),
-					array(),
+					[],
 					'wpShowStale=1'
 				)
-			) );
+			] );
 		} else {
-			$listLink = $this->getLanguage()->pipeList( array(
+			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
 				$this->msg( 'confirmaccount-showexp' )->escaped()
-			) );
+			] );
 		}
 
 		# Say what queue we are in...
@@ -209,7 +209,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$open .= Linker::linkKnown(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-open' )->escaped(),
-				array(),
+				[],
 				'wpShowHeld=0'
 			);
 			$open .= '</b> [' . $counts['open'] . ']';
@@ -217,7 +217,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$held = Linker::linkKnown(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-held' )->escaped(),
-				array(),
+				[],
 				'wpShowHeld=1'
 			);
 			$held .= ' [' . $counts['held'] . ']';
@@ -225,7 +225,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$rejects = Linker::linkKnown(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-rej' )->escaped(),
-				array(),
+				[],
 				'wpShowRejects=1'
 			);
 			$rejects .= ' [' . $counts['rejected'] . ']';
@@ -234,7 +234,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$stale .= Linker::linkKnown(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-stale' )->escaped(),
-				array(),
+				[],
 				'wpShowStale=1'
 			);
 			$stale .= '</i>';
@@ -242,7 +242,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			// Give grep a chance to find the usages: confirmaccount-type-0, confirmaccount-type-1
 			$out->addHTML( "<li><i>" . $this->msg( "confirmaccount-type-$i" )->escaped() . "</i>" );
 			$out->addHTML( $this->msg( 'word-separator' )->plain() );
-			$params = $this->getLanguage()->pipeList( array( $open, $held, $rejects, $stale ) );
+			$params = $this->getLanguage()->pipeList( [ $open, $held, $rejects, $stale ] );
 			$out->addHTML( $this->msg( 'parentheses' )->rawParams( $params )->escaped() );
 			$out->addHTML( '</li>' );
 		}
@@ -309,16 +309,16 @@ class ConfirmAccountsPage extends SpecialPage {
 			);
 		}
 
-		$form = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountconfirm',
-			'action' => $titleObj->getLocalUrl() ) );
+		$form = Xml::openElement( 'form', [ 'method' => 'post', 'name' => 'accountconfirm',
+			'action' => $titleObj->getLocalUrl() ] );
 
 		$form .= "<fieldset>";
 		$form .= '<legend>' . $this->msg( 'confirmaccount-leg-user' )->escaped() . '</legend>';
 		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . Xml::label( $this->msg( 'username' )->text(), 'wpNewName' ) . "</td>";
-		$form .= "<td>" . Xml::input( 'wpNewName', 30, $this->reqUsername, array(
+		$form .= "<td>" . Xml::input( 'wpNewName', 30, $this->reqUsername, [
 			'id' => 'wpNewName'
-		) ) . "</td></tr>\n";
+		] ) . "</td></tr>\n";
 		$econf = '';
 		if ( $accountReq->getEmailAuthTimestamp() ) {
 			$econf = ' <strong>' . $this->msg( 'confirmaccount-econf' )->escaped() . '</strong>';
@@ -326,7 +326,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= "<tr><td>" . $this->msg( 'confirmaccount-email' )->escaped() . "</td>";
 		$form .= "<td>" . htmlspecialchars( $accountReq->getEmail() ) . $econf . "</td></tr>\n";
 		if ( count( $wgAccountRequestTypes ) > 1 ) {
-			$options = array();
+			$options = [];
 			$form .= "<tr><td><strong>" . $this->msg(
 				'confirmaccount-reqtype'
 			)->escaped() . "</strong></td><td>";
@@ -336,7 +336,7 @@ class ConfirmAccountsPage extends SpecialPage {
 					"confirmaccount-pos-$i"
 				)->text(), $i, ( $i == $this->reqType ) );
 			}
-			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
+			$form .= Xml::openElement( 'select', [ 'name' => "wpType" ] );
 			$form .= implode( "\n", $options );
 			$form .= Xml::closeElement( 'select' ) . "\n";
 			$form .= "</td></tr>\n";
@@ -403,7 +403,7 @@ class ConfirmAccountsPage extends SpecialPage {
 					$form .= Linker::linkKnown(
 						$titleObj,
 						htmlspecialchars( $accountReq->getFileName() ),
-						array(),
+						[],
 						'file=' . $accountReq->getFileStorageKey()
 					);
 				} else {
@@ -429,7 +429,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$link = Linker::linkKnown(
 				$blokip,
 				$this->msg( 'confirmaccount-blockip' )->escaped(),
-				array(),
+				[],
 				'ip=' . $accountReq->getIP() . '&wpCreateAccount=1'
 			);
 			$form .= '<fieldset>';
@@ -460,34 +460,34 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= "<strong>" . $this->msg( 'confirmaccount-confirm' )->parse() . "</strong>\n";
 		$form .= "<table style='padding:5px;'><tr>";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'accept', $this->submitType == 'accept',
-			array(
+			[
 				'id' => 'submitCreate',
 				'onclick' => 'document.getElementById("wpComment").style.display="block"'
-			)
+			]
 		);
 		$form .= ' ' . Xml::label(
 			$this->msg( 'confirmaccount-create' )->text(), 'submitCreate'
 		) . "</td>\n";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'reject', $this->submitType == 'reject',
-			array(
+			[
 				'id' => 'submitDeny', 'onclick' => 'document.getElementById("wpComment").style.display="block"'
-			)
+			]
 		);
 		$form .= ' ' . Xml::label(
 			$this->msg( 'confirmaccount-deny' )->text(), 'submitDeny'
 		) . "</td>\n";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'hold', $this->submitType == 'hold',
-			array(
+			[
 				'id' => 'submitHold', 'onclick' => 'document.getElementById("wpComment").style.display="block"'
-			)
+			]
 		);
 		$form .= ' ' . Xml::label(
 			$this->msg( 'confirmaccount-hold' )->text(), 'submitHold'
 		) . "</td>\n";
 		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'spam', $this->submitType == 'spam',
-			array(
+			[
 				'id' => 'submitSpam', 'onclick' => 'document.getElementById("wpComment").style.display="none"'
-			)
+			]
 		);
 		$form .= ' ' . Xml::label(
 			$this->msg( 'confirmaccount-spam' )->text(), 'submitSpam'
@@ -556,7 +556,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		}
 
 		# Build submission object...
-		$areaSet = array(); // make a simple list of interests
+		$areaSet = []; // make a simple list of interests
 		foreach ( $this->reqAreas as $area => $val ) {
 			if ( $val > 0 ) {
 				$areaSet[] = $area;
@@ -565,14 +565,14 @@ class ConfirmAccountsPage extends SpecialPage {
 		$submission = new AccountConfirmSubmission(
 			$this->getUser(),
 			$this->accountReq,
-			array(
+			[
 				'userName' => $this->reqUsername,
 				'bio'      => $this->reqBio,
 				'type'     => $this->reqType,
 				'areas'    => $areaSet,
 				'action'   => $this->submitType,
 				'reason'   => $this->reason
-			)
+			]
 		);
 
 		# Actually submit!
@@ -636,7 +636,7 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		$linkList = '';
 		# Normalize space characters
-		$text = str_replace( array( "\r", "\t" ), array( "\n", " " ), htmlspecialchars( $text ) );
+		$text = str_replace( [ "\r", "\t" ], [ "\n", " " ], htmlspecialchars( $text ) );
 		# Split out each line as a link
 		$lines = explode( "\n", $text );
 		foreach ( $lines as $line ) {
@@ -667,7 +667,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	 * @param $name string User name
 	 * @param $errors array
 	 */
-	protected function showSuccess( $submitType, $name = null, $errors = array() ) {
+	protected function showSuccess( $submitType, $name = null, $errors = [] ) {
 		$out = $this->getOutput();
 
 		$out->setPagetitle( $this->msg( 'actioncomplete' )->escaped() );
@@ -691,7 +691,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$out = $this->getOutput();
 
 		# Output the list
-		$pager = new ConfirmAccountsPager( $this, array(),
+		$pager = new ConfirmAccountsPager( $this, [],
 			$this->queueType, $this->showRejects, $this->showHeld, $this->showStale );
 
 		if ( $pager->getNumRows() ) {
@@ -734,13 +734,13 @@ class ConfirmAccountsPage extends SpecialPage {
 			$link = Linker::linkKnown(
 				$this->getFullTitle(),
 				$this->msg( 'confirmaccount-review' )->escaped(),
-				array(),
+				[],
 				'acrid=' . (int)$row->acr_id . '&wpShowRejects=1' );
 		} else {
 			$link = Linker::linkKnown(
 				$this->getFullTitle(),
 				$this->msg( 'confirmaccount-review' )->escaped(),
-				array(),
+				[],
 				'acrid=' . (int)$row->acr_id );
 		}
 		$time = $this->getLanguage()->timeanddate( wfTimestamp( TS_MW, $row->acr_registration ), true );
@@ -891,10 +891,10 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 	 */
 	function getQueryInfo() {
 		$conds = $this->mConds;
-		$tables = array( 'account_requests' );
-		$fields = array( 'acr_id', 'acr_name', 'acr_real_name', 'acr_registration', 'acr_held',
+		$tables = [ 'account_requests' ];
+		$fields = [ 'acr_id', 'acr_name', 'acr_real_name', 'acr_registration', 'acr_held',
 			'acr_user', 'acr_email', 'acr_email_authenticated', 'acr_bio', 'acr_notes',
-			'acr_urls', 'acr_filename', 'acr_type', 'acr_rejected' );
+			'acr_urls', 'acr_filename', 'acr_type', 'acr_rejected' ];
 		# Stale requests have a user ID of zero
 		if ( $this->stale ) {
 			$conds[] = 'acr_user = 0';
@@ -905,11 +905,11 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 			$fields[] = 'user_name';
 			$fields[] = 'acr_rejected';
 		}
-		return array(
+		return [
 			'tables' => $tables,
 			'fields' => $fields,
 			'conds' => $conds
-		);
+		];
 	}
 
 	/**

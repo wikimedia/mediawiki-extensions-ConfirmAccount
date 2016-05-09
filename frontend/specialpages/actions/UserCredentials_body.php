@@ -45,13 +45,13 @@ class UserCredentialsPage extends SpecialPage {
 
 		$username = str_replace( '_', ' ', $this->target );
 		$form = Xml::openElement(
-			'form', array( 'name' => 'stablization', 'action' => $wgScript, 'method' => 'get' )
+			'form', [ 'name' => 'stablization', 'action' => $wgScript, 'method' => 'get' ]
 		);
 		$form .= "<fieldset><legend>" . $this->msg( 'usercredentials-leg' )->escaped() . "</legend>";
 		$form .= "<table><tr>";
 		$form .= "<td>" . Html::Hidden( 'title', $this->getPageTitle()->getPrefixedText() ) . "</td>";
 		$form .= "<td>" . $this->msg( "usercredentials-user" )->escaped() . "</td>";
-		$form .= "<td>" . Xml::input( 'target', 35, $username, array( 'id' => 'wpUsername' ) ) . "</td>";
+		$form .= "<td>" . Xml::input( 'target', 35, $username, [ 'id' => 'wpUsername' ] ) . "</td>";
 		$form .= "<td>" . Xml::submitButton( $this->msg( 'go' )->text() ) . "</td>";
 		$form .= "</tr></table>";
 		$form .= "</fieldset></form>\n";
@@ -75,7 +75,7 @@ class UserCredentialsPage extends SpecialPage {
 
 		$user = User::newFromName( $this->target );
 
-		$list = array();
+		$list = [];
 		foreach ( $user->getGroups() as $group ) {
 			$list[] = User::makeGroupLinkHTML(
 				$group,
@@ -119,7 +119,7 @@ class UserCredentialsPage extends SpecialPage {
 			<tr style='vertical-align: top;'>";
 			$count = 0;
 
-			$att = array( 'disabled' => 'disabled' );
+			$att = [ 'disabled' => 'disabled' ];
 			foreach ( $userAreas as $name => $conf ) {
 				$count++;
 				if ( $count > 5 ) {
@@ -164,7 +164,7 @@ class UserCredentialsPage extends SpecialPage {
 				$form .= Linker::linkKnown(
 					$titleObj,
 					htmlspecialchars( $row->acd_filename ),
-					array(),
+					[],
 					'file=' . $row->acd_storage_key
 				);
 			} else {
@@ -240,9 +240,9 @@ class UserCredentialsPage extends SpecialPage {
 		# For now, just get the first revision...
 		$dbr = wfGetDB( DB_SLAVE );
 		$row = $dbr->selectRow( 'account_credentials', '*',
-			array( 'acd_user_id' => $uid ),
+			[ 'acd_user_id' => $uid ],
 			__METHOD__,
-			array( 'ORDER BY' => 'acd_user_id,acd_id ASC' ) );
+			[ 'ORDER BY' => 'acd_user_id,acd_id ASC' ] );
 		return $row;
 	}
 

@@ -64,7 +64,7 @@ class RequestAccountPage extends SpecialPage {
 		$this->mType = $request->getInt( 'wpType' );
 		$this->mType = isset( $wgAccountRequestTypes[$this->mType] ) ? $this->mType : 0;
 		# Load areas user plans to be active in...
-		$this->mAreas = array();
+		$this->mAreas = [];
 		if ( $this->hasItem( 'AreasOfInterest' ) ) {
 			foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
@@ -111,8 +111,8 @@ class RequestAccountPage extends SpecialPage {
 
 		$out->addWikiMsg( 'requestaccount-text' );
 
-		$form = Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'accountrequest',
-			'action' => $this->getPageTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ) );
+		$form = Xml::openElement( 'form', [ 'method' => 'post', 'name' => 'accountrequest',
+			'action' => $this->getPageTitle()->getLocalUrl(), 'enctype' => 'multipart/form-data' ] );
 
 		$form .= '<fieldset><legend>' . $this->msg( 'requestaccount-leg-user' )->escaped() . '</legend>';
 		$form .= $this->msg( 'requestaccount-acc-text' )->parseAsBlock() . "\n";
@@ -120,7 +120,7 @@ class RequestAccountPage extends SpecialPage {
 		if ( $this->hasItem( 'UserName' ) ) {
 			$form .= "<tr><td>" . Xml::label( $this->msg( 'username' )->text(), 'wpUsername' ) . "</td>";
 			$form .= "<td>" . Xml::input(
-				'wpUsername', 30, $this->mUsername, array( 'id' => 'wpUsername' )
+				'wpUsername', 30, $this->mUsername, [ 'id' => 'wpUsername' ]
 			) . "</td></tr>\n";
 		} else {
 			$form .= "<tr><td>" . $this->msg( 'username' )->escaped() . "</td>";
@@ -130,18 +130,18 @@ class RequestAccountPage extends SpecialPage {
 			$this->msg( 'requestaccount-email' )->text(), 'wpEmail'
 		) . "</td>";
 		$form .= "<td>" . Xml::input(
-			'wpEmail', 30, $this->mEmail, array( 'id' => 'wpEmail' )
+			'wpEmail', 30, $this->mEmail, [ 'id' => 'wpEmail' ]
 		) . "</td></tr>\n";
 		if ( count( $wgAccountRequestTypes ) > 1 ) {
 			$form .= "<tr><td>" . $this->msg( 'requestaccount-reqtype' )->escaped() . "</td><td>";
-			$options = array();
+			$options = [];
 			foreach ( $wgAccountRequestTypes as $i => $params ) {
 				// Give grep a chance to find the usages: requestaccount-level-0, requestaccount-level-1
 				$options[] = Xml::option(
 					$this->msg( "requestaccount-level-$i" )->text(), $i, ( $i == $this->mType )
 				);
 			}
-			$form .= Xml::openElement( 'select', array( 'name' => "wpType" ) );
+			$form .= Xml::openElement( 'select', [ 'name' => "wpType" ] );
 			$form .= implode( "\n", $options );
 			$form .= Xml::closeElement( 'select' ) . "\n";
 			$form .= '</td></tr>';
@@ -167,7 +167,7 @@ class RequestAccountPage extends SpecialPage {
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
 				if ( $conf['project'] != '' ) {
 					$pg = Linker::link( Title::newFromText( $conf['project'] ),
-						$this->msg( 'requestaccount-info' )->escaped(), array(), array(), "known" );
+						$this->msg( 'requestaccount-info' )->escaped(), [], [], "known" );
 				} else {
 					$pg = '';
 				}
@@ -188,7 +188,7 @@ class RequestAccountPage extends SpecialPage {
 					$this->msg( 'requestaccount-real' )->text(), 'wpRealName'
 				) . "</td>";
 				$form .= "<td>" . Xml::input(
-					'wpRealName', 35, $this->mRealName, array( 'id' => 'wpRealName' )
+					'wpRealName', 35, $this->mRealName, [ 'id' => 'wpRealName' ]
 				) . "</td></tr>\n";
 				$form .= '</table>';
 			}
@@ -212,7 +212,7 @@ class RequestAccountPage extends SpecialPage {
 			if ( $this->hasItem( 'CV' ) ) {
 				$form .= "<p>" . $this->msg( 'requestaccount-attach' )->escaped() . " ";
 				$form .= Xml::input( 'wpUploadFile', 35, '',
-					array( 'id' => 'wpUploadFile', 'type' => 'file' ) ) . "</p>\n";
+					[ 'id' => 'wpUploadFile', 'type' => 'file' ] ) . "</p>\n";
 			}
 			if ( $this->hasItem( 'Notes' ) ) {
 				$form .= "<p>" . $this->msg( 'requestaccount-notes' )->escaped() . "\n";
@@ -234,7 +234,7 @@ class RequestAccountPage extends SpecialPage {
 		if ( $this->hasItem( 'TermsOfService' ) ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . $this->msg( 'requestaccount-leg-tos' )->escaped() . '</legend>';
-			$form .= "<p>" . Xml::check( 'wpToS', $this->mToS, array( 'id' => 'wpToS' ) ) .
+			$form .= "<p>" . Xml::check( 'wpToS', $this->mToS, [ 'id' => 'wpToS' ] ) .
 				' <label for="wpToS">' . $this->msg( 'requestaccount-tos' )->parse() . "</label></p>\n";
 			$form .= '</fieldset>';
 		}
@@ -288,7 +288,7 @@ class RequestAccountPage extends SpecialPage {
 			$wgCaptchaTriggers['createaccount'] = false;
 		}
 		$abortError = '';
-		if ( !Hooks::run( 'AbortNewAccount', array( $u, &$abortError ) ) ) {
+		if ( !Hooks::run( 'AbortNewAccount', [ $u, &$abortError ] ) ) {
 			// Hook point to add extra creation throttles and blocks
 			wfDebug( "RequestAccount::doSubmit: a hook blocked creation\n" );
 			$this->showForm( $abortError );
@@ -300,7 +300,7 @@ class RequestAccountPage extends SpecialPage {
 		}
 
 		# Build submission object...
-		$areaSet = array(); // make a simple list of interests
+		$areaSet = []; // make a simple list of interests
 		foreach ( $this->mAreas as $area => $val ) {
 			if ( $val > 0 ) {
 				$areaSet[] = $area;
@@ -309,7 +309,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$submission = new AccountRequestSubmission(
 			$this->getUser(),
-			array(
+			[
 				'userName'                  => $name,
 				'realName'                  => $this->mRealName,
 				'tosAccepted'               => $this->mToS,
@@ -328,7 +328,7 @@ class RequestAccountPage extends SpecialPage {
 				'attachmentDidNotForget'    => $this->mForgotAttachment, // confusing name :)
 				'attachmentSize'            => $this->mFileSize,
 				'attachmentTempPath'        => $this->mTempPath
-			)
+			]
 		);
 
 		# Actually submit!

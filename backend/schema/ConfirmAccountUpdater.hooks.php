@@ -31,37 +31,37 @@ class ConfirmAccountUpdaterHooks {
 			$base = "$base/postgres";
 
 			$updater->addExtensionUpdate(
-				array( 'addTable', 'account_requests', "$base/ConfirmAccount.pg.sql", true )
+				[ 'addTable', 'account_requests', "$base/ConfirmAccount.pg.sql", true ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addPgField', 'account_requests', 'acr_held', "TIMESTAMPTZ" )
+				[ 'addPgField', 'account_requests', 'acr_held', "TIMESTAMPTZ" ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addPgField', 'account_requests', 'acr_filename', "TEXT" )
+				[ 'addPgField', 'account_requests', 'acr_filename', "TEXT" ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addPgField', 'account_requests', 'acr_storage_key', "TEXT" )
+				[ 'addPgField', 'account_requests', 'acr_storage_key', "TEXT" ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addPgField', 'account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" )
+				[ 'addPgField', 'account_requests', 'acr_comment', "TEXT NOT NULL DEFAULT ''" ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addPgField', 'account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" )
+				[ 'addPgField', 'account_requests', 'acr_type', "INTEGER NOT NULL DEFAULT 0" ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addTable', 'account_credentials', "$base/patch-account_credentials.sql", true )
+				[ 'addTable', 'account_credentials', "$base/patch-account_credentials.sql", true ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addPgField', 'account_requests', 'acr_areas', "TEXT" )
+				[ 'addPgField', 'account_requests', 'acr_areas', "TEXT" ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addPgField', 'account_credentials', 'acd_areas', "TEXT" )
+				[ 'addPgField', 'account_credentials', 'acd_areas', "TEXT" ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addIndex', 'account_requests', 'acr_email', "$base/patch-email-index.sql", true )
+				[ 'addIndex', 'account_requests', 'acr_email', "$base/patch-email-index.sql", true ]
 			);
 			$updater->addExtensionUpdate(
-				array( 'addPgField', 'account_requests', 'acr_agent', "$base/patch-acr_agent.sql", true )
+				[ 'addPgField', 'account_requests', 'acr_agent', "$base/patch-acr_agent.sql", true ]
 			);
 		}
 		return true;

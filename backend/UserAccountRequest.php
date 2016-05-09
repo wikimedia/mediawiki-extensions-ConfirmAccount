@@ -129,7 +129,7 @@ class UserAccountRequest {
 		$db = ( $from == 'dbmaster' )
 			? wfGetDB( DB_MASTER )
 			: wfGetDB( DB_SLAVE );
-		$row = $db->selectRow( 'account_requests', '*', array( 'acr_id' => $id ), __METHOD__ );
+		$row = $db->selectRow( 'account_requests', '*', [ 'acr_id' => $id ], __METHOD__ );
 		if ( !$row ) {
 			return null;
 		}
@@ -145,7 +145,7 @@ class UserAccountRequest {
 		$db = ( $master == 'dbmaster' )
 			? wfGetDB( DB_MASTER )
 			: wfGetDB( DB_SLAVE );
-		$row = $db->selectRow( 'account_requests', '*', array( 'acr_name' => $name ), __METHOD__ );
+		$row = $db->selectRow( 'account_requests', '*', [ 'acr_name' => $name ], __METHOD__ );
 		if ( !$row ) {
 			return null;
 		}
@@ -330,7 +330,7 @@ class UserAccountRequest {
 			: $dbw->nextSequenceValue( 'account_requests_acr_id_seq' );
 		# Insert into pending requests...
 		$dbw->insert( 'account_requests',
-			array(
+			[
 				'acr_id' 			=> $acr_id,
 				'acr_name' 			=> strval( $this->name ),
 				'acr_email' 		=> strval( $this->email ),
@@ -354,7 +354,7 @@ class UserAccountRequest {
 				'acr_deleted' 		=> (int)$this->deleted,
 				'acr_email_token' 	=> strval( $this->emailToken ), // MD5 of token
 				'acr_email_token_expires' => $dbw->timestamp( $this->emailTokenExpires ),
-			),
+			],
 			__METHOD__
 		);
 		$this->id = $acr_id; // set for accessors
@@ -372,12 +372,12 @@ class UserAccountRequest {
 	public function markRejected( User $admin, $timestamp, $reason = '' ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->update( 'account_requests',
-			array(
+			[
 				'acr_rejected' => $dbw->timestamp( $timestamp ),
 				'acr_user'     => $admin->getID(),
 				'acr_comment'  => $reason,
-				'acr_deleted'  => 1 ),
-			array( 'acr_id' => $this->id, 'acr_deleted' => 0 ),
+				'acr_deleted'  => 1 ],
+			[ 'acr_id' => $this->id, 'acr_deleted' => 0 ],
 			__METHOD__
 		);
 		return ( $dbw->affectedRows() > 0 );
@@ -393,11 +393,11 @@ class UserAccountRequest {
 	public function markHeld( User $admin, $timestamp, $reason = '' ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->update( 'account_requests',
-			array(
+			[
 				'acr_held'    => $dbw->timestamp( $timestamp ),
 				'acr_user'    => $admin->getID(),
-				'acr_comment' => $reason ),
-			array( 'acr_id' => $this->id, 'acr_held IS NULL', 'acr_deleted' => 0 ),
+				'acr_comment' => $reason ],
+			[ 'acr_id' => $this->id, 'acr_held IS NULL', 'acr_deleted' => 0 ],
 			__METHOD__
 		);
 		return ( $dbw->affectedRows() > 0 );
@@ -412,7 +412,7 @@ class UserAccountRequest {
 			throw new MWException( "Account request ID is not set." );
 		}
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->delete( 'account_requests', array( 'acr_id' => $this->id ), __METHOD__ );
+		$dbw->delete( 'account_requests', [ 'acr_id' => $this->id ], __METHOD__ );
 
 		return ( $dbw->affectedRows() > 0 );
 	}
@@ -423,12 +423,12 @@ class UserAccountRequest {
 	 */
 	public static function acquireUsername( $name ) {
 		$dbw = wfGetDB( DB_MASTER );
-		$conds = array( 'acr_name' => $name );
+		$conds = [ 'acr_name' => $name ];
 		if ( $dbw->selectField( 'account_requests', '1', $conds, __METHOD__ ) ) {
 			return false; // already in use
 		}
 		return !$dbw->selectField( 'account_requests', '1',
-			$conds, __METHOD__, array( 'FOR UPDATE' ) ); // acquire LOCK
+			$conds, __METHOD__, [ 'FOR UPDATE' ] ); // acquire LOCK
 	}
 
 	/**
@@ -437,12 +437,12 @@ class UserAccountRequest {
 	 */
 	public static function acquireEmail( $email ) {
 		$dbw = wfGetDB( DB_MASTER );
-		$conds = array( 'acr_email' => $email );
+		$conds = [ 'acr_email' => $email ];
 		if ( $dbw->selectField( 'account_requests', '1', $conds, __METHOD__ ) ) {
 			return false; // already in use
 		}
 		return !$dbw->selectField( 'account_requests', '1',
-			$conds, __METHOD__, array( 'FOR UPDATE' ) ); // acquire LOCK
+			$conds, __METHOD__, [ 'FOR UPDATE' ] ); // acquire LOCK
 	}
 
 	/**

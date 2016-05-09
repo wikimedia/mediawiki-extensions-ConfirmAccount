@@ -13,8 +13,8 @@ class ConfirmAccount {
 		# Select all items older than time $encCutoff
 		$encCutoff = $dbw->addQuotes( $dbw->timestamp( time() - $wgRejectedAccountMaxAge ) );
 		$res = $dbw->select( 'account_requests',
-			array( 'acr_id', 'acr_storage_key' ),
-			array( "acr_rejected < {$encCutoff}" ),
+			[ 'acr_id', 'acr_storage_key' ],
+			[ "acr_rejected < {$encCutoff}" ],
 			__METHOD__
 		);
 
@@ -28,20 +28,20 @@ class ConfirmAccount {
 					unlink( $path );
 				}
 			}
-			$dbw->delete( 'account_requests', array( 'acr_id' => $row->acr_id ), __METHOD__ );
+			$dbw->delete( 'account_requests', [ 'acr_id' => $row->acr_id ], __METHOD__ );
 		}
 
 		# Select all items older than time $encCutoff
 		$encCutoff = $dbw->addQuotes( $dbw->timestamp( time() - $wgConfirmAccountRejectAge ) );
 		# Old stale accounts will count as rejected. If the request was held, give it more time.
 		$dbw->update( 'account_requests',
-			array( 'acr_rejected' => $dbw->timestamp(),
+			[ 'acr_rejected' => $dbw->timestamp(),
 				'acr_user' => 0, // dummy
 				'acr_comment' => wfMessage( 'confirmaccount-autorej' )->inContentLanguage()->text(),
-				'acr_deleted' => 1 ),
-			array( "acr_rejected IS NULL",
+				'acr_deleted' => 1 ],
+			[ "acr_rejected IS NULL",
 				"acr_registration < {$encCutoff}",
-				"acr_held < {$encCutoff} OR acr_held IS NULL" ),
+				"acr_held < {$encCutoff} OR acr_held IS NULL" ],
 			__METHOD__
 		);
 
@@ -57,8 +57,8 @@ class ConfirmAccount {
 	public static function confirmEmail( $name ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->update( 'account_requests',
-			array( 'acr_email_authenticated' => $dbw->timestamp() ),
-			array( 'acr_name' => $name ),
+			[ 'acr_email_authenticated' => $dbw->timestamp() ],
+			[ 'acr_name' => $name ],
 			__METHOD__ );
 		# Clear cache for notice of how many account requests there are
 		self::clearAccountRequestCountCache();
@@ -72,10 +72,10 @@ class ConfirmAccount {
 	 */
 	public static function confirmationTokenUrl( $token ) {
 		$title = SpecialPage::getTitleFor( 'RequestAccount' );
-		return $title->getFullUrl( array(
+		return $title->getFullUrl( [
 			'action' => 'confirmemail',
 			'wpEmailToken' => $token
-		) );
+		] );
 	}
 
 	/**
@@ -132,10 +132,10 @@ class ConfirmAccount {
 		$dbr = wfGetDB( DB_SLAVE );
 		return $dbr->selectField( 'account_requests',
 			'acr_name',
-			array(
+			[
 				'acr_email_token' => md5( $code ),
 				'acr_email_token_expires > ' . $dbr->addQuotes( $dbr->timestamp() ),
-			)
+			]
 		);
 	}
 
@@ -147,18 +147,18 @@ class ConfirmAccount {
 	public static function getOpenRequestCount( $type ) {
 		$dbr = wfGetDB( DB_SLAVE );
 		$open = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
-			array( 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NULL' ),
+			[ 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NULL' ],
 			__METHOD__
 		);
 		$held = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
-			array( 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NOT NULL' ),
+			[ 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NOT NULL' ],
 			__METHOD__
 		);
 		$rej = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
-			array( 'acr_type' => $type, 'acr_deleted' => 1, 'acr_user != 0' ),
+			[ 'acr_type' => $type, 'acr_deleted' => 1, 'acr_user != 0' ],
 			__METHOD__
 		);
-		return array( 'open' => $open, 'held' => $held, 'rejected' => $rej );
+		return [ 'open' => $open, 'held' => $held, 'rejected' => $rej ];
 	}
 
 	/**
@@ -174,10 +174,10 @@ class ConfirmAccount {
 		$count = $wgMemc->get( $key );
 		# Only show message if there are any such requests
 		if ( $count === false ) {
-			$conds = array(
+			$conds = [
 				'acr_deleted' => 0, // not rejected
 				'acr_held IS NULL', // nor held
-				'acr_email_authenticated IS NOT NULL' ); // email confirmed
+				'acr_email_authenticated IS NOT NULL' ]; // email confirmed
 			if ( $type !== '*' ) {
 				$conds['acr_type'] = (int)$type;
 			}
@@ -258,7 +258,7 @@ class ConfirmAccount {
 		if ( $res !== null ) {
 			return $res;
 		}
-		$res = array();
+		$res = [];
 		// Message describing the areas a user can be interested in, the corresponding wiki page,
 		// and any text that is automatically appended to the userpage on account acceptance.
 		// Format is <name> | <wikipage> [| <text for all>] [| <text group0>] [| <text group1>] ...
@@ -269,7 +269,7 @@ class ConfirmAccount {
 				$set = explode( "|", $area );
 				if ( count( $set ) >= 2 ) {
 					$name = trim( str_replace( '_', ' ', $set[0] ) );
-					$res[$name] = array();
+					$res[$name] = [];
 
 					$res[$name]['project'] = trim( $set[1] ); // name => WikiProject mapping
 					if ( isset( $set[2] ) ) {
@@ -278,7 +278,7 @@ class ConfirmAccount {
 						$res[$name]['userText'] = '';
 					}
 
-					$res[$name]['grpUserText'] = array(); // userpage text for certain request types
+					$res[$name]['grpUserText'] = []; // userpage text for certain request types
 					$categories = array_slice( $set, 3 ); // keys start from 0 now in $categories
 					foreach ( $categories as $i => $cat ) {
 						$res[$name]['grpUserText'][$i] = trim( $cat ); // category for group $i
@@ -312,18 +312,18 @@ class ConfirmAccount {
 	public static function getAdminsToNotify() {
 		$groups = User::getGroupsWithPermission( 'confirmaccount-notify' );
 		if ( !count( $groups ) ) {
-			return UserArray::newFromResult( new FakeResultWrapper( array() ) );
+			return UserArray::newFromResult( new FakeResultWrapper( [] ) );
 		}
 		$dbr = wfGetDB( DB_SLAVE );
 		return UserArray::newFromResult( $dbr->select(
-			array( 'user' ),
-			array( '*' ),
-			array( 'EXISTS (' .
+			[ 'user' ],
+			[ '*' ],
+			[ 'EXISTS (' .
 				$dbr->selectSqlText( 'user_groups', '1',
-					array( 'ug_user = user_id', 'ug_group' => $groups ) ) .
-				')' ),
+					[ 'ug_user = user_id', 'ug_group' => $groups ] ) .
+				')' ],
 			__METHOD__,
-			array( 'LIMIT' => 200 ) // sanity
+			[ 'LIMIT' => 200 ] // sanity
 		) );
 	}
 }
