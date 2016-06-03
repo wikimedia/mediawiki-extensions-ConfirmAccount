@@ -37,9 +37,9 @@
 	"requestaccount-tos": "Ai legit e accèpti de respectar los [[{{MediaWiki:Requestaccount-page}}|tèrmes concernent las condicions d’utilizacion dels servicis]] de {{SITENAME}}.",
 	"requestaccount-submit": "Demanda de compte d'utilizaire.",
 	"requestaccount-sent": "Vòstra demanda de compte d'utilizaire es estada mandada amb succès e es estada mesa dins la lista d’espèra d’aprovacion.\nUn corrièl de confirmacion es estat mandat a vòstra adreça de corrièl.",
-	"request-account-econf": "Vòstra adreça de corrièr electronic es estada confirmada e serà listada tala coma es dins vòstra demanda de compte.",
+	"requestaccount-econf": "Vòstra adreça de corrièr electronic es estada confirmada e serà listada tala coma es dins vòstra demanda de compte.",
 	"requestaccount-email-subj": "{{SITENAME}} confirmacion d’adreça de corrièr electronic.",
-	"requestaccount-email-body": "Qualqu’un, probablament vos, a formulat, dempuèi l’adreca IP $1, una demanda de compte d'utilizaire « $2 » amb aquesta adreça de corrièr electronic sus {{SITENAME}}.\n\nPer confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navigador Web :\n\n$3 \n\nVòstre senhal vos serà mandat unicament se vòstre compte es creat. Se èra pas lo cas, utilizetz pas aqueste ligam. \nAqueste còde de confirmacion expira lo $4.",
+	"requestaccount-email-body": "Qualqu’un, probablament vos, a formulat, dempuèi l’adreca IP $1, una demanda de compte d'utilizaire « $2 » amb aquesta adreça de corrièr electronic sus {{SITENAME}}.\n\nPer confirmar qu'aqueste compte vos aparten vertadièrament sus {{SITENAME}}, sètz pregat de dobrir aqueste ligam dins vòstre navigador Web :\n\n$3 \n\nVòstre senhal vos serà mandat unicament se vòstre compte es creat. Se èra pas lo cas, utilizetz pas aqueste ligam. \nAqueste còdi de confirmacion expira lo $4.",
 	"requestaccount-email-subj-admin": "Demanda de compte sus {{SITENAME}}",
 	"requestaccount-email-body-admin": "$1 a demandat un compte e se tròba en espèra de confirmacion.\n\nL'adreça de corrièr electronic es estada confirmada. Podètz, d’ara endavant, aprovar la demanda aicí :\n\n$2",
 	"acct_request_throttle_hit": "O planhèm, ja avètz demandat {{PLURAL:$1|1 compte|$1 comptes}}.\nPodètz pas far mai de demanda."
