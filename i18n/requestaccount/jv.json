@@ -25,7 +25,7 @@
 	"requestaccount-urls": "Daftar situs-situs wèb, yèn ana (pisahen mawa garis-garis anyar):",
 	"requestaccount-agree": "Panjenengan kudu mastèkaké yèn jeneng asli panjenengan iku bener lan panjenengan sarujuk karo Sarat Paladènan (''Terms of Service'') kita.",
 	"requestaccount-inuse": "Jeneng panganggo iki wis dienggo lan saiki lagi ing tahap ''pending'' panyuwunan rékening.",
-	"requestaccount-tooshort": "Babad salira panjenengan minimal dawané kudu ngandhut $1 {{PLURAL:$1|tembung|tembung}}.",
+	"requestaccount-tooshort": "Biografiné sampéyan saora-orané isi $1 {{PLURAL:$1|tembung}}.",
 	"requestaccount-emaildup": "Sawijining panyuwunan rékening (akun) liyané sing lagi ''pending'' nganggo alamat e-mail sing padha",
 	"requestaccount-exts": "Jenis berkas lampiran (''attachment'') ora diparengaké.",
 	"requestaccount-resub": "Berkas CV/riwayat urip panjenengan kudu dipilih manèh amerga alesan kaslamatan.\nLirwakna lapangan iki kosong yèn panjenengan ora kepéngin manèh nglebokaké CV.",
