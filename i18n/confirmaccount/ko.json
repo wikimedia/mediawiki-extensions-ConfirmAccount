@@ -7,7 +7,8 @@
 			"Priviet",
 			"Yjs5497",
 			"아라",
-			"Revi"
+			"Revi",
+			"Ykhwong"
 		]
 	},
 	"confirmaccounts": "계정 요청 승인",
@@ -75,7 +76,7 @@
 	"confirmaccount-legend": "이 계정 확인/거부",
 	"confirmaccount-submit": "확인",
 	"confirmaccount-needreason": "아래의 의견 상자에 이유를 제공해야 합니다.",
-	"confirmaccount-canthold": "이 요청은 이미 보류 또는 삭제 되었습니다.",
+	"confirmaccount-canthold": "이 요청은 이미 보류 또는 삭제되었습니다.",
 	"confirmaccount-badaction": "유효한 작업 (허용, 거부, 보류) 진행 순서가 지정되어야 합니다.",
 	"confirmaccount-acc": "계정 요청이 성공적으로 승인되었습니다; 새 사용자 계정을 만들었습니다 [[User:$1|$1]]",
 	"confirmaccount-rej": "계정 요청이 성공적으로 거부되었습니다.",
