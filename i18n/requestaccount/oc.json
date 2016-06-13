@@ -8,7 +8,7 @@
 	"requestaccount": "Demanda de compte d'utilizaire",
 	"requestaccount-text": "'''Emplenatz e mandatz lo formulari çaijós per demandar un compte d’utilizaire.'''.\n\n\tAsseguratz-vos qu'avètz ja legit [[{{MediaWiki:Requestaccount-page}}|las condicions d’utilizacion]] abans de far vòstra demanda de compte.\n\n\tUn còp que lo compte es acceptat, recebretz un corrièr electronic que vos notificarà que vòstre compte poirà èsser utilizat sus\n\t[[Special:UserLogin]].",
 	"requestaccount-page": "{{ns:project}}:Condicions d'utilizacion",
-	"requestaccount-dup": "'''Nòta : Ja sètz sus una sesilha amb un compte enregistrat.'''",
+	"requestaccount-dup": "'''Nòta : Ja sètz sus una session amb un compte enregistrat.'''",
 	"requestaccount-leg-user": "Compte d'utilizaire",
 	"requestaccount-leg-areas": "Centres d'interès principals",
 	"requestaccount-leg-person": "Entresenhas personalas",
