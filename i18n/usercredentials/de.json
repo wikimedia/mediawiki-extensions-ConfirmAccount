@@ -14,12 +14,12 @@
 			"Umherirrender"
 		]
 	},
-	"usercredentials": "Benutzer-Berechtigungsnachweis",
-	"usercredentials-leg": "Bestätigte Benutzer-Berechtigungsnachweise nachsehen",
+	"usercredentials": "Anmeldedaten des Benutzers",
+	"usercredentials-leg": "Bestätigte Anmeldedaten eines Benutzers einsehen",
 	"usercredentials-user": "Benutzername:",
-	"usercredentials-text": "Es folgen die bestätigten Benutzer-Berechtigungsnachweise für das gewählte Benutzerkonto.",
+	"usercredentials-text": "Die bestätigten Anmeldedaten für das ausgewählte Benutzerkonto:",
 	"usercredentials-leg-user": "Benutzerkonto",
-	"usercredentials-leg-areas": "Haupt-Interessensgebiete",
+	"usercredentials-leg-areas": "Interessensgebiete",
 	"usercredentials-leg-person": "Persönliche Informationen",
 	"usercredentials-leg-other": "Weitere Informationen",
 	"usercredentials-leg-ip": "Daten der IP-Adresse",
@@ -30,8 +30,8 @@
 	"usercredentials-notes": "Zusätzliche Bemerkungen:",
 	"usercredentials-urls": "Liste der Webseiten:",
 	"usercredentials-ip": "Originale IP-Adresse:",
-	"usercredentials-xff": "Ursprünglicher X-Forwarded-For:",
+	"usercredentials-xff": "Ursprünglicher „X-Forwarded-For“ (XFF):",
 	"usercredentials-agent": "Ursprüngliches Zugriffsprogramm:",
 	"usercredentials-member": "Rechte:",
-	"usercredentials-badid": "Es wurden keinen Berechtigungsnachweis für diesen Benutzer gefunden. Bitte die Schreibweise prüfen."
+	"usercredentials-badid": "Es wurden keine Anmeldedaten für diesen Benutzer gefunden.\nBitte die Schreibweise des Benutzerkontos überprüfen."
 }
