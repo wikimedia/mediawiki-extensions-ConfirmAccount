@@ -86,7 +86,7 @@
 	"confirmaccount-wsum": "환영합니다!",
 	"confirmaccount-email-subj": "{{SITENAME}} 계정 요청",
 	"confirmaccount-email-body": "{{SITENAME}}에서 당신의 계정 만들기 요청이 승인되었습니다.\n\n계정 이름: $1\n\n비밀번호: $2\n\n보안상의 이유로 인해 첫 로그인 이후 비밀번호를 바꾸어야 합니다.\n로그인하시려면 {{fullurl:Special:UserLogin}} 을 이용해주십시오.",
-	"confirmaccount-email-body2": "{{SITENAME}}에서 당신의 계정 만들기 요청이 승인되었습니다.\n\n계정 이름: $1\n\n비밀번호: $2\n\n$3\n\n보안상의 이유로 인해 첫 로그인 이후 비밀번호를 바꾸어야 합니다.\n로그인하시려면 {{fullurl:Special:UserLogin}} 을 이용해주십시오.",
+	"confirmaccount-email-body2": "{{SITENAME}}에서 당신의 계정 만들기 요청이 승인되었습니다.\n\n계정 이름: $1\n\n비밀번호: $2\n\n$3\n\n보안 상의 이유로 인해 첫 로그인 이후 비밀번호를 바꾸어야 합니다.\n로그인하시려면 {{fullurl:Special:UserLogin}}을 이용해주십시오.",
 	"confirmaccount-email-body3": "죄송합니다. \"$1\" 계정에 대한 요청이 {{SITENAME}}에서 거절됐습니다.\n\n여기에는 몇 가지 이유가 있을 수 있을 수 있습니다.\n양식을 올바르게 채우지 않았거나, 충분한 길이의 답변을 제공하지 않았기 때문일 수도 있으며, 정책 기준을 충족하지 않았을 수도 있습니다.\n사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다.",
 	"confirmaccount-email-body4": "죄송합니다. \"$1\" 계정에 대한 요청이 {{SITENAME}}에서 거절됐습니다.\n\n$2\n\n사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다.",
 	"confirmaccount-email-body5": "\"$1\" 계정에 대한 요청이  {{SITENAME}}에서 승인되기 전에 추가적인 정보를 제공해주셔야 합니다.\n\n$2\n\n\n사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다."
