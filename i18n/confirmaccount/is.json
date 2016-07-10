@@ -34,7 +34,7 @@
 	"confirmaccount-hold": "Bíða",
 	"confirmaccount-ip": "Vistfang:",
 	"confirmaccount-submit": "Staðfesta",
-	"confirmaccount-rej": "Notandabeðninni var hafnað.",
+	"confirmaccount-rej": "Notandabeiðninni var hafnað.",
 	"confirmaccount-wsum": "Velkomin!",
 	"confirmaccount-email-body4": "Beðni þín um aðgang að {{SITENAME}} undir nafninu „$1“ á „$2“ hefur verið hafnað.\n\n$2\n\nÞað kann að vera netfang á síðunni sem þú getur haft samband við til að fá frekari upplýsingar."
 }
