@@ -209,8 +209,6 @@ class AccountConfirmSubmission {
 				$status = $repoNew->storeBatch( [ $triplet ] ); // copy!
 				if ( !$status->isOK() ) {
 					$dbw->rollback( __METHOD__ );
-					# DELETE new rows in case there was a COMMIT somewhere
-					$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
 					return [ 'accountconf_copyfailed',
 						$context->getOutput()->parse( $status->getWikiText() ) ];
 				}
@@ -248,8 +246,6 @@ class AccountConfirmSubmission {
 		# Add to global user login system (if there is one)
 		if ( !$wgAuth->addUser( $user, $pass, $accReq->getEmail(), $accReq->getRealName() ) ) {
 			$dbw->rollback( __METHOD__ );
-			# DELETE new rows in case there was a COMMIT somewhere
-			$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
 			return [ 'accountconf_externaldberror', $context->msg( 'externaldberror' )->escaped() ];
 		}
 
@@ -337,29 +333,6 @@ class AccountConfirmSubmission {
 
 		# Greet the new user if set to do so.
 		$this->createUserTalkPage( $user );
-	}
-
-	/*
-	 * Rollback an account acceptance *before* the request row and attachment are deleted.
-	 * This is mostly here for sanity in case of COMMITs triggered elsewhere.
-	 * http://bugs.mysql.com/bug.php?id=30767 behavoir assumed.
-	 * @param $dbw Database
-	 * @param $user_id int
-	 * @param $acd_id int
-	 * @return void
-	 */
-	protected function acceptRequest_rollback( DatabaseBase $dbw, $user_id, $acd_id ) {
-		$dbw->startAtomic( __METHOD__ );
-		# DELETE the user in case something caused a COMMIT already somewhere.
-		if ( $user_id ) {
-			$dbw->delete( 'user', [ 'user_id' => $user_id ], __METHOD__ );
-			$dbw->delete( 'user_groups', [ 'ug_user' => $user_id ], __METHOD__ );
-		}
-		# DELETE the new account_credentials row likewise.
-		if ( $acd_id ) {
-			$dbw->delete( 'account_credentials', [ 'acd_id' => $acd_id ], __METHOD__ );
-		}
-		$dbw->endAtomic( __METHOD__ );
 	}
 
 	protected static function getGroupFromType( $type ) {
