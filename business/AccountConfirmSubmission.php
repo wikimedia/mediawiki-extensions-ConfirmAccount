@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Auth\AuthManager;
+
 class AccountConfirmSubmission {
 	/* User making the confirmation */
 	protected $admin;
@@ -159,7 +161,7 @@ class AccountConfirmSubmission {
 		}
 
 		# Check if account name is already in use
-		if ( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
+		if ( 0 != $user->idForName() || AuthManager::singleton()->userExists( $user->getName() ) ) {
 			return [ 'accountconf_user_exists', $context->msg( 'userexists' )->escaped() ];
 		}
 
@@ -297,7 +299,7 @@ class AccountConfirmSubmission {
 			}
 		}
 
-		# Actually send out the email (@TODO: rollback on failure including $wgAuth)
+		# Actually send out the email
 		$user->sendMail(
 			$context->msg( 'confirmaccount-email-subj' )->inContentLanguage()->text(),
 			$ebody

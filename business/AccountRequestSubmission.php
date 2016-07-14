@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Auth\AuthManager;
+
 class AccountRequestSubmission {
 	/* User making the request */
 	protected $requester;
@@ -67,7 +69,7 @@ class AccountRequestSubmission {
 	 * @return array( true or error key string, html error msg or null )
 	 */
 	public function submit( IContextSource $context ) {
-		global $wgAuth, $wgAccountRequestThrottle, $wgConfirmAccountRequestFormItems;
+		global $wgAccountRequestThrottle, $wgConfirmAccountRequestFormItems;
 
 		$cache = ObjectCache::getLocalClusterInstance();
 		$formConfig = $wgConfirmAccountRequestFormItems; // convience
@@ -143,7 +145,7 @@ class AccountRequestSubmission {
 			}
 		}
 		# Check if already in use
-		if ( 0 != $u->idForName() || $wgAuth->userExists( $u->getName() ) ) {
+		if ( 0 != $u->idForName() || AuthManager::singleton()->userExists( $u->getName() ) ) {
 			return [
 				'accountreq_username_exists',
 				$context->msg( 'userexists' )->escaped()

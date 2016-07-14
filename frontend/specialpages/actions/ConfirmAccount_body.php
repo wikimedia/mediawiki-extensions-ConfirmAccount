@@ -79,7 +79,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$this->loadAccountRequest( $this->acrID, $request->wasPosted() );
 			if ( $request->wasPosted() ) {
 				# For renaming to alot for collisions with other local requests
-				# that were accepted and added to some global $wgAuth system first
+				# that were accepted and added to some global auth system first
 				$this->reqUsername = trim( $request->getText( 'wpNewName' ) );
 				# For changing the position recieved by requester
 				$this->reqType = $request->getIntOrNull( 'wpType' );
