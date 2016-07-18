@@ -12,7 +12,8 @@
 			"LNDDYL",
 			"Cwlin0416",
 			"Liuxinyu970226",
-			"飞舞回堂前"
+			"飞舞回堂前",
+			"Suchichi02"
 		]
 	},
 	"confirmaccounts": "確認帳號請求",
@@ -83,7 +84,7 @@
 	"confirmaccount-canthold": "該請求已被搁置，或已被刪除。",
 	"confirmaccount-badaction": "必須指定有效操作（接受，拒绝，搁置）才可繼續。",
 	"confirmaccount-acc": "帳戶請求已經成功確認；已經建立一個新的使用者帳號[[User:$1]]。",
-	"confirmaccount-rej": "帳號請求已經成功拒絕。",
+	"confirmaccount-rej": "帳號請求已經拒絕。",
 	"confirmaccount-viewing": "（目前正由[[User:$1|$1]]瀏覽）",
 	"confirmaccount-summary": "建立新使用者的使用者頁面。",
 	"confirmaccount-welc": "'''歡迎來到''{{SITENAME}}''！'''\n我們希望您會作出更多更好的貢獻。\n您可能想先閱讀一下[{{MediaWiki:Helppage}} 說明頁面]。\n再次歡迎您，祝您愉快！",
