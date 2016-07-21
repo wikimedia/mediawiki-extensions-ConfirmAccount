@@ -63,7 +63,7 @@
 	"confirmaccount-rational": "지원자에게 내린 판단:",
 	"confirmaccount-noreason": "(없음)",
 	"confirmaccount-autorej": "(이 요청은 활동이 없어 자동적으로 폐기되었습니다)",
-	"confirmaccount-held": "([[User:$1|$1]]사용자가 $3 $4에 \"보류\"로 {{GENDER:$1|표시함}})",
+	"confirmaccount-held": "([[User:$1|$1]]님이 $3 $4에 \"보류\"로 {{GENDER:$1|표시함}})",
 	"confirmaccount-blockip": "IP 주소 차단",
 	"confirmaccount-create": "승인 (계정 만들기)",
 	"confirmaccount-deny": "거부 (목록에서 제거)",
