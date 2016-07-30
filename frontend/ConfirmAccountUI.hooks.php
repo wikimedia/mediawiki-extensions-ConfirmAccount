@@ -38,23 +38,9 @@ class ConfirmAccountUIHooks {
 	}
 
 	/**
-	 * @param $user User
-	 * @param $abortError
-	 * @return bool
-	 */
-	public static function checkIfAccountNameIsPending( User $user, &$abortError ) {
-		# If an account is made with name X, and one is pending with name X
-		# we will have problems if the pending one is later confirmed
-		if ( !UserAccountRequest::acquireUsername( $user->getName() ) ) {
-			$abortError = wfMessage( 'requestaccount-inuse' )->escaped();
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * Add "x email-confirmed open account requests" notice
-	 * @param $notice
+	 * @param OutputPage $out
+	 * @param Skin $skin
 	 * @return bool
 	 */
 	public static function confirmAccountsNotice( OutputPage &$out, Skin &$skin ) {
@@ -98,6 +84,72 @@ class ConfirmAccountUIHooks {
 
 		$extensions_row->addItem( ALItem::newFromSpecialPage( 'ConfirmAccounts' ) );
 		$extensions_row->addItem( ALItem::newFromSpecialPage( 'UserCredentials' ) );
+
+		return true;
+	}
+
+	/**
+	 * @param array $requests
+	 * @param array $fieldInfo
+	 * @param array $formDescriptor
+	 * @param string $action
+	 * @return bool
+	 * @throws ErrorPageError
+	 */
+	public static function onAuthChangeFormFields(
+		$requests, $fieldInfo, array &$formDescriptor, $action
+	) {
+		if ( $action !== \MediaWiki\Auth\AuthManager::ACTION_CREATE ) {
+			return true;
+		}
+
+		$request = RequestContext::getMain()->getRequest();
+		$accReqId = $request->getInt( 'AccountRequestId' );
+		$isAllowed = RequestContext::getMain()->getUser()->isAllowed( 'confirmaccount' );
+		if ( $accReqId && $isAllowed ) {
+			$accReq = UserAccountRequest::newFromId( $accReqId );
+			if ( !$accReq ) {
+				throw new ErrorPageError( 'createacct-error', 'confirmaccount-badid' );
+			}
+		} else {
+			return true;
+		}
+
+		$formDescriptor['username']['default'] = $accReq->getName();
+
+		$formDescriptor['mailpassword']['default'] = 1;
+		$formDescriptor['mailpassword']['checked'] = true;
+		$formDescriptor['mailpassword']['readonly'] = true;
+		$formDescriptor['mailpassword']['validation-callback'] = function ( $v ) use ( $accReq ) {
+			return ( $v === true )
+				? true
+				: wfMessage( 'confirmaccount-mismatched' );
+		};
+
+		unset( $formDescriptor['password'] );
+		unset( $formDescriptor['retype'] );
+
+		$formDescriptor['email']['default'] = $accReq->getEmail();
+		$formDescriptor['email']['readonly'] = true;
+		$formDescriptor['email']['validation-callback'] = function ( $v ) use ( $accReq ) {
+			return ( $v === $accReq->getEmail() )
+				? true
+				: wfMessage( 'confirmaccount-mismatched' );
+		};
+
+		$formDescriptor['realname']['default'] = $accReq->getRealName();
+		$formDescriptor['realname']['readonly'] = true;
+		$formDescriptor['realname']['validation-callback'] = function ( $v ) use ( $accReq ) {
+			return ( $v === $accReq->getRealName() )
+				? true
+				: wfMessage( 'confirmaccount-mismatched' );
+		};
+
+		$formDescriptor['accountrequestid'] = [
+			'name' => 'AccountRequestId',
+			'type' => 'hidden',
+			'default' => $accReqId
+		];
 
 		return true;
 	}
