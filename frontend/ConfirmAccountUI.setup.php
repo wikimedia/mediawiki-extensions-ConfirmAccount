@@ -5,7 +5,7 @@
 class ConfirmAccountUISetup {
 	/**
 	 * Register ConfirmAccount hooks.
-	 * @param $hooks Array $wgHooks (assoc array of hooks and handlers)
+	 * @param $hooks array $wgHooks (assoc array of hooks and handlers)
 	 * @return void
 	 */
 	public static function defineHookHandlers( array &$hooks ) {
@@ -18,11 +18,13 @@ class ConfirmAccountUISetup {
 		$hooks['BeforePageDisplay'][] = 'ConfirmAccountUIHooks::confirmAccountsNotice';
 		# Register admin pages for AdminLinks extension.
 		$hooks['AdminLinks'][] = 'ConfirmAccountUIHooks::confirmAccountAdminLinks';
+		# Pre-fill/lock the form if its for an approval
+		$hooks['AuthChangeFormFields'][] = 'ConfirmAccountUIHooks::onAuthChangeFormFields';
 	}
 
 	/**
 	 * Register ConfirmAccount special pages as needed.
-	 * @param $pages Array $wgSpecialPages (list of special pages)
+	 * @param $pages array $wgSpecialPages (list of special pages)
 	 * @return void
 	 */
 	public static function defineSpecialPages( array &$pages ) {
@@ -33,7 +35,7 @@ class ConfirmAccountUISetup {
 
 	/**
 	 * Append ConfirmAccount resource module definitions
-	 * @param $modules Array $wgResourceModules
+	 * @param $modules array $wgResourceModules
 	 * @return void
 	 */
 	public static function defineResourceModules( array &$modules ) {

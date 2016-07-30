@@ -576,7 +576,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		);
 
 		# Actually submit!
-		list( $status, $msg ) = $submission->submit( $this->getContext() );
+		list( $status, $msg, $url ) = $submission->submit( $this->getContext() );
 
 		# Check for error messages
 		if ( $status !== true ) {
@@ -585,7 +585,11 @@ class ConfirmAccountsPage extends SpecialPage {
 		}
 
 		# Done!
-		$this->showSuccess( $this->submitType, $this->reqUsername, (array)$msg );
+		if ( $url ) {
+			$this->getOutput()->redirect( $url );
+		} else {
+			$this->showSuccess( $this->submitType, $this->reqUsername, (array)$msg );
+		}
 	}
 
 	/**

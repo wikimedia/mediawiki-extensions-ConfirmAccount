@@ -157,19 +157,19 @@ class AccountRequestSubmission {
 		$dbw->startAtomic( __METHOD__ ); // ready to acquire locks
 		# Check pending accounts for name use
 		if ( !UserAccountRequest::acquireUsername( $u->getName() ) ) {
-			$dbw->rollback( __METHOD__ );
-			return array(
+			$dbw->endAtomic( __METHOD__ );
+			return [
 				'accountreq_username_pending',
 				$context->msg( 'requestaccount-inuse' )->escaped()
-			);
+			];
 		}
 		# Check if someone else has an account request with the same email
 		if ( !UserAccountRequest::acquireEmail( $u->getEmail() ) ) {
-			$dbw->rollback( __METHOD__ );
-			return array(
+			$dbw->endAtomic( __METHOD__ );
+			return [
 				'acct_request_email_exists',
 				$context->msg( 'requestaccount-emaildup' )->escaped()
-			);
+			];
 		}
 		# Process upload...
 		if ( $allowFiles && $this->attachmentSrcName ) {
@@ -180,28 +180,28 @@ class AccountRequestSubmission {
 			# File must have size.
 			if ( trim( $this->attachmentSrcName ) == '' || empty( $this->attachmentSize ) ) {
 				$this->attachmentPrevName = '';
-				$dbw->rollback( __METHOD__ );
-				return array( 'acct_request_empty_file', $context->msg( 'emptyfile' )->escaped() );
+				$dbw->endAtomic( __METHOD__ );
+				return [ 'acct_request_empty_file', $context->msg( 'emptyfile' )->escaped() ];
 			}
 			# Look at the contents of the file; if we can recognize the
 			# type but it's corrupt or data of the wrong type, we should
 			# probably not accept it.
 			if ( !in_array( $finalExt, $wgAccountRequestExts ) ) {
 				$this->attachmentPrevName = '';
-				$dbw->rollback( __METHOD__ );
-				return array(
+				$dbw->endAtomic( __METHOD__ );
+				return [
 					'acct_request_bad_file_ext',
 					$context->msg( 'requestaccount-exts' )->escaped()
-				);
+				];
 			}
 			$veri = ConfirmAccount::verifyAttachment( $this->attachmentTempPath, $finalExt );
 			if ( !$veri->isGood() ) {
 				$this->attachmentPrevName = '';
-				$dbw->rollback( __METHOD__ );
-				return array(
+				$dbw->endAtomic( __METHOD__ );
+				return [
 					'acct_request_corrupt_file',
 					$context->msg( 'verification-error' )->escaped()
-				);
+				];
 			}
 			# Start a transaction, move file from temp to account request directory.
 			$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
@@ -210,9 +210,9 @@ class AccountRequestSubmission {
 			$triplet = array( $this->attachmentTempPath, 'public', $pathRel );
 			$status = $repo->storeBatch( array( $triplet ), FileRepo::OVERWRITE_SAME ); // save!
 			if ( !$status->isOk() ) {
-				$dbw->rollback( __METHOD__ );
-				return array( 'acct_request_file_store_error',
-					$context->msg( 'filecopyerror', $this->attachmentTempPath, $pathRel )->escaped() );
+				wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+				return [ 'acct_request_file_store_error',
+					$context->msg( 'filecopyerror', $this->attachmentTempPath, $pathRel )->escaped() ];
 			}
 		}
 		$expires = null; // passed by reference
@@ -244,7 +244,7 @@ class AccountRequestSubmission {
 		# Send confirmation, required!
 		$result = ConfirmAccount::sendConfirmationMail( $u, $this->ip, $token, $expires );
 		if ( !$result->isOK() ) {
-			$dbw->rollback( __METHOD__ ); // nevermind
+			wfGetLBFactory()->rollbackMasterChanges( __METHOD__ ); // nevermind
 			if ( isset( $repo ) && isset( $pathRel ) ) { // remove attachment
 				$repo->cleanupBatch( array( array( 'public', $pathRel ) ) );
 			}

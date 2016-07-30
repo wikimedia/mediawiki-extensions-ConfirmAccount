@@ -15,6 +15,9 @@ class AccountConfirmSubmission {
 	protected $action;
 	protected $reason;
 
+	/** @var bool Enable dummy "complete" action */
+	protected $allowComplete;
+
 	public function __construct( User $admin, UserAccountRequest $accReq, array $params ) {
 		$this->admin = $admin;
 		$this->accountReq = $accReq;
@@ -24,19 +27,28 @@ class AccountConfirmSubmission {
 		$this->areas = $params['areas'];
 		$this->action = $params['action'];
 		$this->reason = $params['reason'];
+		$this->allowComplete = !empty( $params['allowComplete'] );
 	}
 
 	/**
 	 * Attempt to validate and submit this data to the DB
 	 * @param $context IContextSource
-	 * @return array( true or error key string, html error msg or null )
+	 * @return array( true or error key string, html error msg or null, redirect URL )
 	 */
 	public function submit( IContextSource $context ) {
 		# Make sure that basic permissions are checked
 		if ( !$this->admin->getID() || !$this->admin->isAllowed( 'confirmaccount' ) ) {
-			return array( 'accountconf_permission_denied', $context->msg( 'badaccess-group0' )->escaped() );
+			return [
+				'accountconf_permission_denied',
+				$context->msg( 'badaccess-group0' )->escaped(),
+				null
+			];
 		} elseif ( wfReadOnly() ) {
-			return array( 'accountconf_readonly', $context->msg( 'badaccess-group0' )->escaped() );
+			return [
+				'accountconf_readonly',
+				$context->msg( 'badaccess-group0' )->escaped(),
+				null
+			];
 		}
 		if ( $this->action === 'spam' ) {
 			return $this->spamRequest( $context );
@@ -46,8 +58,14 @@ class AccountConfirmSubmission {
 			return $this->holdRequest( $context );
 		} elseif ( $this->action === 'accept' ) {
 			return $this->acceptRequest( $context );
+		} elseif ( $this->action === 'complete' && $this->allowComplete ) {
+			return $this->completeRequest( $context );
 		} else {
-			return array( 'accountconf_bad_action', $context->msg( 'confirmaccount-badaction' )->escaped() );
+			return [
+				'accountconf_bad_action',
+				$context->msg( 'confirmaccount-badaction' )->escaped(),
+				null
+			];
 		}
 	}
 
@@ -62,7 +80,7 @@ class AccountConfirmSubmission {
 		}
 
 		$dbw->endAtomic( __METHOD__ );
-		return array( true, null );
+		return [ true, null, null ];
 	}
 
 	protected function rejectRequest( IContextSource $context ) {
@@ -87,18 +105,21 @@ class AccountConfirmSubmission {
 				$emailBody
 			);
 			if ( !$result->isOk() ) {
-				$dbw->rollback( __METHOD__ );
-				return array( 'accountconf_mailerror',
+				wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+				return [
+					'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
 						$context->getOutput()->parse( $result->getWikiText() )
-					)->text() );
+					)->text(),
+					null
+				];
 			}
 			# Clear cache for notice of how many account requests there are
 			ConfirmAccount::clearAccountRequestCountCache();
 		}
 
 		$dbw->endAtomic( __METHOD__ );
-		return array( true, null );
+		return [ true, null, null ];
 	}
 
 	protected function holdRequest( IContextSource $context ) {
@@ -108,9 +129,11 @@ class AccountConfirmSubmission {
 
 		# Pointless without a summary...
 		if ( $this->reason == '' ) {
-			return array(
-				'accountconf_needreason', $context->msg( 'confirmaccount-needreason' )->escaped()
-			);
+			return [
+				'accountconf_needreason',
+				$context->msg( 'confirmaccount-needreason' )->escaped(),
+				null
+			];
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
@@ -119,8 +142,12 @@ class AccountConfirmSubmission {
 		# If not already held or deleted, mark as held
 		$ok = $this->accountReq->markHeld( $this->admin, wfTimestampNow(), $this->reason );
 		if ( !$ok ) { // already held or deleted?
-			$dbw->rollback( __METHOD__ );
-			return array( 'accountconf_canthold', $context->msg( 'confirmaccount-canthold' )->escaped() );
+			wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+			return [
+				'accountconf_canthold',
+				$context->msg( 'confirmaccount-canthold' )->escaped(),
+				null
+			];
 		}
 
 		# Send out a request hold email...
@@ -131,61 +158,55 @@ class AccountConfirmSubmission {
 			)->inContentLanguage()->text()
 		);
 		if ( !$result->isOk() ) {
-			$dbw->rollback( __METHOD__ );
-			return array( 'accountconf_mailerror',
+			wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+			return [
+				'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
 					$context->getOutput()->parse( $result->getWikiText() )
-				)->text() );
+				)->text(),
+				null
+			];
 		}
 
 		# Clear cache for notice of how many account requests there are
 		ConfirmAccount::clearAccountRequestCountCache();
 
 		$dbw->endAtomic( __METHOD__ );
-		return array( true, null );
+		return [ true, null, null ];
 	}
 
 	protected function acceptRequest( IContextSource $context ) {
-		global $wgAuth, $wgConfirmAccountSaveInfo;
+		global $wgAccountRequestTypes;
+
+		$id = $this->accountReq->getId();
+		$type = $wgAccountRequestTypes[$this->accountReq->getType()][0];
+		$redirTitle = SpecialPageFactory::getTitleForAlias( 'CreateAccount' );
+		$returnTitle = SpecialPageFactory::getTitleForAlias( "ConfirmAccounts/{$type}" );
+		$params = [
+			'AccountRequestId' => $id,
+			'wpName' => $this->userName,
+			'returnto' => $returnTitle->getPrefixedDBkey(),
+			'reason' => $this->reason
+		];
+
+		return [ true, null, $redirTitle->getFullURL( $params ) ];
+	}
+
+	protected function completeRequest( IContextSource $context ) {
+		global $wgConfirmAccountSaveInfo;
 		global $wgConfirmAccountRequestFormItems, $wgConfirmAccountFSRepos;
 
 		$formConfig = $wgConfirmAccountRequestFormItems; // convience
 		$accReq = $this->accountReq; // convenience
 
 		# Now create user and check if the name is valid
-		$user = User::newFromName( $this->userName, 'creatable' );
+		$user = User::newFromName( $this->userName, false );
 		if ( !$user ) {
-			return array( 'accountconf_invalid_name', $context->msg( 'noname' )->escaped() );
-		}
-
-		# Check if account name is already in use
-		if ( 0 != $user->idForName() || $wgAuth->userExists( $user->getName() ) ) {
-			return array( 'accountconf_user_exists', $context->msg( 'userexists' )->escaped() );
+			return [ 'accountconf_invalid_name', $context->msg( 'noname' )->escaped(), null ];
 		}
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
-
-		# Make a random password
-		$pass = User::randomPassword();
-
-		# Insert the new user into the DB...
-		$tokenExpires = $accReq->getEmailTokenExpires();
-		$authenticated = $accReq->getEmailAuthTimestamp();
-		$params = array(
-			# Set the user's real name
-			'real_name' => $accReq->getRealName(),
-			# Set the temporary password
-			'newpassword' => User::crypt( $pass ),
-			# VERY important to set email now. Otherwise the user
-			# will have to request a new password at the login screen...
-			'email' => $accReq->getEmail(),
-			# Import email address confirmation status
-			'email_authenticated' => $dbw->timestampOrNull( $authenticated ),
-			'email_token_expires' => $dbw->timestamp( $tokenExpires ),
-			'email_token' => $accReq->getEmailToken()
-		);
-		$user = User::createNew( $user->getName(), $params );
 
 		# Grant any necessary rights (exclude blank or dummy groups)
 		$group = self::getGroupFromType( $this->type );
@@ -208,11 +229,12 @@ class AccountConfirmSubmission {
 				$triplet = array( $oldPath, 'public', $pathRel );
 				$status = $repoNew->storeBatch( array( $triplet ) ); // copy!
 				if ( !$status->isOK() ) {
-					$dbw->rollback( __METHOD__ );
-					# DELETE new rows in case there was a COMMIT somewhere
-					$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
-					return array( 'accountconf_copyfailed',
-						$context->getOutput()->parse( $status->getWikiText() ) );
+					wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+					return [
+						'accountconf_copyfailed',
+						$context->getOutput()->parse( $status->getWikiText() ),
+						null
+					];
 				}
 			}
 			$acd_id = $dbw->nextSequenceValue( 'account_credentials_acd_id_seq' );
@@ -222,7 +244,8 @@ class AccountConfirmSubmission {
 					'acd_user_id' => $user->getID(),
 					'acd_real_name' => $accReq->getRealName(),
 					'acd_email' => $accReq->getEmail(),
-					'acd_email_authenticated' => $dbw->timestampOrNull( $authenticated ),
+					'acd_email_authenticated' =>
+						$dbw->timestampOrNull( $accReq->getEmailAuthTimestamp() ),
 					'acd_bio' => $accReq->getBio(),
 					'acd_notes' => $accReq->getNotes(),
 					'acd_urls' => $accReq->getUrls(),
@@ -240,17 +263,6 @@ class AccountConfirmSubmission {
 				),
 				__METHOD__
 			);
-			if ( is_null( $acd_id ) ) {
-				$acd_id = $dbw->insertId(); // set $acd_id to ID inserted
-			}
-		}
-
-		# Add to global user login system (if there is one)
-		if ( !$wgAuth->addUser( $user, $pass, $accReq->getEmail(), $accReq->getRealName() ) ) {
-			$dbw->rollback( __METHOD__ );
-			# DELETE new rows in case there was a COMMIT somewhere
-			$this->acceptRequest_rollback( $dbw, $user->getId(), $acd_id );
-			return array( 'accountconf_externaldberror', $context->msg( 'externaldberror' )->escaped() );
 		}
 
 		# OK, now remove the request from the queue
@@ -263,57 +275,18 @@ class AccountConfirmSubmission {
 
 		$that = $this;
 		DeferredUpdates::addCallableUpdate(
-			function () use ( $that, $user, $context, $group, $pass, $accReq ) {
-				$that->doPostCommitNewUserUpdates( $user, $context, $group, $pass, $accReq );
+			function () use ( $that, $user, $context, $group, $accReq ) {
+				$that->doPostCommitNewUserUpdates( $user, $context, $group, $accReq );
 			}
 		);
 
-		return array( true, null );
+		return [ true, null, null ];
 	}
 
 	public function doPostCommitNewUserUpdates(
-		User $user, IContextSource $context, $group, $pass, UserAccountRequest $accReq
+		User $user, IContextSource $context, $group, UserAccountRequest $accReq
 	) {
 		global $wgConfirmAccountRequestFormItems, $wgConfirmAccountFSRepos;
-
-		# Prepare a temporary password email...
-		if ( $this->reason != '' ) {
-			$msg = "confirmaccount-email-body2-pos {$this->type}";
-			$msgObj = $context->msg( $msg, $user->getName(), $pass, $this->reason );
-			# If the user is in a group and there is a welcome for that group, use it
-			if ( $group && !$msgObj->isDisabled() ) {
-				$ebody = $msgObj->inContentLanguage()->text();
-				# Use standard if none found...
-			} else {
-				$ebody = $context->msg( 'confirmaccount-email-body2',
-					$user->getName(), $pass, $this->reason )->inContentLanguage()->text();
-			}
-		} else {
-			$msg = "confirmaccount-email-body-pos{$this->type}";
-			# If the user is in a group and there is a welcome for that group, use it
-			if ( $group && !$context->msg( $msg )->isDisabled() ) {
-				$ebody = $context->msg( $msg,
-					$user->getName(), $pass, $this->reason )->inContentLanguage()->text();
-				# Use standard if none found...
-			} else {
-				$ebody = $context->msg( 'confirmaccount-email-body',
-					$user->getName(), $pass, $this->reason )->inContentLanguage()->text();
-			}
-		}
-
-		# Actually send out the email (@TODO: rollback on failure including $wgAuth)
-		$user->sendMail(
-			$context->msg( 'confirmaccount-email-subj' )->inContentLanguage()->text(),
-			$ebody
-		);
-
-		# Update user count
-		$ssUpdate = new SiteStatsUpdate( 0, 0, 0, 0, 1 );
-		$ssUpdate->doUpdate();
-
-		# Safe to hook/log now...
-		Hooks::run( 'AddNewAccount', array( $user, false /* not by email */ ) );
-		$user->addNewUserLogEntry();
 
 		# Clear cache for notice of how many account requests there are
 		ConfirmAccount::clearAccountRequestCountCache();
