@@ -47,6 +47,6 @@
 	"requestaccount-email-subj": "{{SITENAME}} 이메일 주소 인증",
 	"requestaccount-email-body": "당신일 수도 있는 $1 IP 주소를 사용하는 사용자가 이 이메일 주소로 {{SITENAME}}에 \"$2\" 계정 만들기를 요청하였습니다.\n\n{{SITENAME}}의 이 계정이 당신이 요청한 것이라면, 당신의 브라우저로 아래의 링크를 열어주세요:\n\n$3\n\n계정이 만들어지면, 비밀번호는 당신의 이메일로 전송될 것입니다.\n만약 당신의 것이 아니라면 위의 링크를 열지 마세요.\n이 확인 코드는 $4에 만료될 것입니다.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} 계정 요청",
-	"requestaccount-email-body-admin": "$1 사용자가 계정을 요청하고 확인을 기다리고 있습니다.\n이메일 주소는 확인되었습니다. 여기에서 요청을 확인하실수 있습니다:\n\n$2",
+	"requestaccount-email-body-admin": "$1님이 계정을 요청하고 확인을 기다리고 있습니다.\n이메일 주소는 확인되었습니다. 여기에서 요청을 확인하실수 있습니다:\n\n$2",
 	"acct_request_throttle_hit": "죄송합니다. 당신은 이미 {{PLURAL:$1|한 계정|$1개의 계정}}을 요청하셨습니다. 더 이상 요청을 하실 수 없습니다."
 }

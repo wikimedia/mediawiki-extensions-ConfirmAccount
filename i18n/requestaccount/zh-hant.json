@@ -12,6 +12,7 @@
 		]
 	},
 	"requestaccount": "請求帳號",
+	"requestaccount-login": "請求帳號",
 	"requestaccount-text": "'''完成並遞交以下的表格去請求一個使用者帳號'''。\n\n請確認您在請求一個帳號之前，先讀過[[{{MediaWiki:Requestaccount-page}}|服務細則]]。\n\n一旦該帳號獲得核准，您將會收到一個電子郵件通知訊息，該帳號就可以在[[Special:UserLogin|登入頁面]]中使用。",
 	"requestaccount-page": "{{ns:project}}:服務條款",
 	"requestaccount-dup": "'''注意：您已經登入成一個已註冊的帳戶。'''",
