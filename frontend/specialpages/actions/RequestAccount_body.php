@@ -245,10 +245,16 @@ class RequestAccountPage extends SpecialPage {
 			&& $wgCaptchaTriggers['createaccount'] && !$reqUser->isAllowed( 'skipcaptcha' ) )
 		{
 			$captcha = new $wgCaptchaClass;
+
+			$formInformation = $captcha->getFormInformation();
+			$formMetainfo = $formInformation;
+			unset( $formMetainfo['html'] );
+			$captcha->addFormInformationToOutput( $out, $formMetainfo );
+
 			# Hook point to add captchas
 			$form .= '<fieldset>';
 			$form .= $this->msg( 'captcha-createaccount' )->parseAsBlock();
-			$form .= $captcha->getForm( $out );
+			$form .= $formInformation['html'];
 			$form .= '</fieldset>';
 		}
 		$form .= Html::Hidden( 'title', $this->getPageTitle()->getPrefixedDBKey() ) . "\n";
