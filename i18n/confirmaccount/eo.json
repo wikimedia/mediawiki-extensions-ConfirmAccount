@@ -4,7 +4,8 @@
 			"Amikeco",
 			"ArnoLagrange",
 			"Michawiki",
-			"Yekrats"
+			"Yekrats",
+			"Robin van der Vliet"
 		]
 	},
 	"confirmaccounts": "Konfirmi petojn por kontoj",
@@ -26,7 +27,7 @@
 	"confirmaccount-leg-areas": "Ĉefaj fakoj de intereso",
 	"confirmaccount-leg-person": "Persona informo",
 	"confirmaccount-leg-other": "Alia informo",
-	"confirmaccount-name": "Salutnomo",
+	"confirmaccount-name": "Uzantnomo",
 	"confirmaccount-real": "Nomo:",
 	"confirmaccount-email": "Retadreso:",
 	"confirmaccount-reqtype": "Pozicio:",
