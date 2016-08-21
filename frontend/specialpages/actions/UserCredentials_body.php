@@ -94,7 +94,8 @@ class UserCredentialsPage extends SpecialPage {
 		$form .= '<legend>' . $this->msg( 'usercredentials-leg-user' )->escaped() . '</legend>';
 		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . $this->msg( 'username' )->escaped() . "</td>";
-		$form .= "<td>" . Linker::link( $user->getUserPage(),
+		$linkRenderer = $this->getLinkRenderer();
+		$form .= "<td>" . $linkRenderer->makeLink( $user->getUserPage(),
 			htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
 
 		$econf = $row->acd_email_authenticated ? ' <strong>' . $this->msg(
@@ -128,7 +129,8 @@ class UserCredentialsPage extends SpecialPage {
 				}
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
 				if ( $conf['project'] != '' ) {
-					$pg = Linker::linkKnown(
+					$linkRenderer = $this->getLinkRenderer();
+					$pg = $linkRenderer->makeKnownLink(
 						Title::newFromText( $name ),
 						$this->msg( 'requestaccount-info' )->escaped()
 					);
@@ -161,7 +163,8 @@ class UserCredentialsPage extends SpecialPage {
 		if ( $this->hasItem( 'CV' ) || $this->hasItem( 'Notes' ) || $this->hasItem( 'Links' ) ) {
 			$form .= '<p>' . $this->msg( 'usercredentials-attach' )->escaped() . ' ';
 			if ( $row->acd_filename ) {
-				$form .= Linker::linkKnown(
+				$linkRenderer = $this->getLinkRenderer();
+				$form .= $linkRenderer->makeKnownLink(
 					$titleObj,
 					htmlspecialchars( $row->acd_filename ),
 					[],

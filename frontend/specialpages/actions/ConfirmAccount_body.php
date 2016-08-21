@@ -127,10 +127,11 @@ class ConfirmAccountsPage extends SpecialPage {
 		} else {
 			$listLink = $this->msg( 'confirmaccount-showopen' )->escaped();
 		}
+		$linkRenderer = $this->getLinkRenderer();
 		if ( $this->acrID || !$this->showHeld ) {
 			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
-				Linker::linkKnown(
+				$linkRenderer->makeKnownLink(
 					$titleObj,
 					$this->msg( 'confirmaccount-showheld' )->escaped(),
 					[],
@@ -146,7 +147,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		if ( $this->acrID || !$this->showRejects ) {
 			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
-				Linker::linkKnown(
+				$linkRenderer->makeKnownLink(
 					$titleObj,
 					$this->msg( 'confirmaccount-showrej' )->escaped(),
 					[],
@@ -162,7 +163,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		if ( $this->acrID || !$this->showStale ) {
 			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
-				Linker::linkKnown(
+				$linkRenderer->makeKnownLink(
 					$titleObj,
 					$this->msg( 'confirmaccount-showexp' )->escaped(),
 					[],
