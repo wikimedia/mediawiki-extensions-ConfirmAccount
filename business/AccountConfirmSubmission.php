@@ -203,9 +203,6 @@ class AccountConfirmSubmission {
 
 		# Now create user and check if the name is valid
 		$user = User::newFromName( $this->userName, false );
-		if ( !$user ) {
-			return [ 'accountconf_invalid_name', $context->msg( 'noname' )->escaped(), null ];
-		}
 
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
