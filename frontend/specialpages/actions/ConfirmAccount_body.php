@@ -118,16 +118,17 @@ class ConfirmAccountsPage extends SpecialPage {
 	protected function addQueueSubtitleLinks() {
 		$titleObj = $this->getFullTitle();
 
+		$linkRenderer = $this->getLinkRenderer();
+
 		# Show other sub-queue links. Grey out the current one.
 		# When viewing a request, show them all.
 		if ( $this->acrID || $this->showStale || $this->showRejects || $this->showHeld ) {
-			$listLink = Linker::linkKnown(
+			$listLink = $linkRenderer->makeKnownLink(
 				$titleObj,
-				$this->msg( 'confirmaccount-showopen' )->escaped() );
+				$this->msg( 'confirmaccount-showopen' ) );
 		} else {
 			$listLink = $this->msg( 'confirmaccount-showopen' )->escaped();
 		}
-		$linkRenderer = $this->getLinkRenderer();
 		if ( $this->acrID || !$this->showHeld ) {
 			$listLink = $this->getLanguage()->pipeList( [
 				$listLink,
@@ -179,9 +180,9 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		# Say what queue we are in...
 		if ( $this->queueType != -1 ) {
-			$viewall = Linker::linkKnown(
+			$viewall = $linkRenderer->makeKnownLink(
 				$this->getPageTitle(),
-				$this->msg( 'confirmaccount-all' )->escaped()
+				$this->msg( 'confirmaccount-all' )
 			);
 
 			// Give grep a chance to find the usages: confirmaccount-type-0, confirmaccount-type-1
@@ -206,37 +207,39 @@ class ConfirmAccountsPage extends SpecialPage {
 			$titleObj = SpecialPage::getTitleFor( 'ConfirmAccounts', $params[0] );
 			$counts = ConfirmAccount::getOpenRequestCount( $i );
 
+			$linkRenderer = $this->getLinkRenderer();
+
 			$open = '<b>';
-			$open .= Linker::linkKnown(
+			$open .= $linkRenderer->makeKnownLink(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-open' )->escaped(),
 				[],
-				'wpShowHeld=0'
+				[ 'wpShowHeld' => 0 ]
 			);
 			$open .= '</b> [' . $counts['open'] . ']';
 
-			$held = Linker::linkKnown(
+			$held = $linkRenderer->makeKnownLink(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-held' )->escaped(),
 				[],
-				'wpShowHeld=1'
+				[ 'wpShowHeld' => 1 ]
 			);
 			$held .= ' [' . $counts['held'] . ']';
 
-			$rejects = Linker::linkKnown(
+			$rejects = $linkRenderer->makeKnownLink(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-rej' )->escaped(),
 				[],
-				'wpShowRejects=1'
+				[ 'wpShowRejects' => 1 ]
 			);
 			$rejects .= ' [' . $counts['rejected'] . ']';
 
 			$stale = '<i>';
-			$stale .= Linker::linkKnown(
+			$stale .= $linkRenderer->makeKnownLink(
 				$titleObj,
 				$this->msg( 'confirmaccount-q-stale' )->escaped(),
 				[],
-				'wpShowStale=1'
+				[ 'wpShowStale' => 1 ]
 			);
 			$stale .= '</i>';
 
