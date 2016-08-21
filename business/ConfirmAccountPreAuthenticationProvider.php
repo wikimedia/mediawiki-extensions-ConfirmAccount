@@ -33,10 +33,29 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 	 * @param array $reqs
 	 * @return bool
 	 * @throws MWException
+	 * @TODO: avoid using global WebRequest and use dedicate auth request class
 	 */
 	public function testForAccountCreation( $user, $creator, array $reqs ) {
-		if ( UserAccountRequest::acquireUsername( $user->getName() ) ) {
-			return StatusValue::newGood(); // no pending request for an account with this name
+		$request = RequestContext::getMain()->getRequest();
+		$accReqId = $request->getInt( 'AccountRequestId' );
+		# For normal account creations, just check if the name is free
+		if ( !$accReqId ) {
+			return UserAccountRequest::acquireUsername( $user->getName() )
+				? StatusValue::newGood() // no pending requests with this name
+				: StatusValue::newFatal( 'requestaccount-inuse' );
+		}
+
+		# User is doing a confirmation creation...
+
+		# Allow creations for account requests as long as the parameters match up.
+		# Always keep names reserved on API requests as there is no API support for now.
+		if ( !$creator->isAllowed( 'confirmaccount' ) || defined( 'MW_API' ) ) {
+			return StatusValue::newFatal( 'badaccess-group0' );
+		}
+
+		$accountReq = UserAccountRequest::newFromId( $accReqId );
+		if ( !$accountReq ) {
+			return StatusValue::newFatal( 'confirmaccount-badid' );
 		}
 
 		/** @var \MediaWiki\Auth\UserDataAuthenticationRequest $usrDataAuthReq */
@@ -45,19 +64,6 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 		/** @var \MediaWiki\Auth\TemporaryPasswordAuthenticationRequest $tmpPassAuthReq */
 		$tmpPassAuthReq = AuthenticationRequest::getRequestByClass(
 			$reqs, \MediaWiki\Auth\TemporaryPasswordAuthenticationRequest::class );
-
-		$request = RequestContext::getMain()->getRequest();
-		$accReqId = $request->getInt( 'AccountRequestId' );
-		# Allow creations for account requests as long as the parameters match up.
-		# Always keep names reserved on API requests as there is no API support for now.
-		if ( !$accReqId || !$creator->isAllowed( 'confirmaccount' ) || defined( 'MW_API' ) ) {
-			return StatusValue::newFatal( 'requestaccount-inuse' );
-		}
-
-		$accountReq = UserAccountRequest::newFromId( $accReqId );
-		if ( !$accountReq ) {
-			return StatusValue::newFatal( 'confirmaccount-badid' );
-		}
 
 		# Make sure certain field were left unchanged from the account request
 		if (
@@ -74,7 +80,7 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 			[
 				'accountRequestId' => $accountReq->getId(),
 				'confirmationParams' => [
-					'userName' => $user->getName(),
+					'userName' => $request->getVal( 'wpName', $user->getName() ),
 					'action' => 'complete',
 					'reason' => $request->getVal( 'wpReason', '' ),
 					// @TODO: make overridable in GUI
