@@ -95,8 +95,10 @@ class UserCredentialsPage extends SpecialPage {
 		$form .= '<table style="padding:4px;">';
 		$form .= "<tr><td>" . $this->msg( 'username' )->escaped() . "</td>";
 		$linkRenderer = $this->getLinkRenderer();
-		$form .= "<td>" . $linkRenderer->makeLink( $user->getUserPage(),
-			htmlspecialchars( $user->getUserPage()->getText() ) ) . "</td></tr>\n";
+		$form .= "<td>" . $linkRenderer->makeLink(
+			$user->getUserPage(),
+			$user->getUserPage()->getText()
+		) . "</td></tr>\n";
 
 		$econf = $row->acd_email_authenticated ? ' <strong>' . $this->msg(
 			'confirmaccount-econf'
@@ -132,7 +134,7 @@ class UserCredentialsPage extends SpecialPage {
 					$linkRenderer = $this->getLinkRenderer();
 					$pg = $linkRenderer->makeKnownLink(
 						Title::newFromText( $name ),
-						$this->msg( 'requestaccount-info' )->escaped()
+						$this->msg( 'requestaccount-info' )
 					);
 				} else {
 					$pg = '';
@@ -166,9 +168,9 @@ class UserCredentialsPage extends SpecialPage {
 				$linkRenderer = $this->getLinkRenderer();
 				$form .= $linkRenderer->makeKnownLink(
 					$titleObj,
-					htmlspecialchars( $row->acd_filename ),
+					$row->acd_filename,
 					[],
-					'file=' . $row->acd_storage_key
+					[ 'file' => $row->acd_storage_key ]
 				);
 			} else {
 				$form .= $this->msg( 'confirmaccount-none-p' )->escaped();

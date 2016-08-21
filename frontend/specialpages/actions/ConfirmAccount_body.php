@@ -133,9 +133,9 @@ class ConfirmAccountsPage extends SpecialPage {
 				$listLink,
 				$linkRenderer->makeKnownLink(
 					$titleObj,
-					$this->msg( 'confirmaccount-showheld' )->escaped(),
+					$this->msg( 'confirmaccount-showheld' ),
 					[],
-					'wpShowHeld=1'
+					[ 'wpShowHeld' => 1 ]
 				)
 			] );
 		} else {
@@ -149,9 +149,9 @@ class ConfirmAccountsPage extends SpecialPage {
 				$listLink,
 				$linkRenderer->makeKnownLink(
 					$titleObj,
-					$this->msg( 'confirmaccount-showrej' )->escaped(),
+					$this->msg( 'confirmaccount-showrej' ),
 					[],
-					'wpShowRejects=1'
+					[ 'wpShowRejects' => 1 ]
 				)
 			] );
 		} else {
@@ -165,9 +165,9 @@ class ConfirmAccountsPage extends SpecialPage {
 				$listLink,
 				$linkRenderer->makeKnownLink(
 					$titleObj,
-					$this->msg( 'confirmaccount-showexp' )->escaped(),
+					$this->msg( 'confirmaccount-showexp' ),
 					[],
-					'wpShowStale=1'
+					[ 'wpShowStale' => 1 ]
 				)
 			] );
 		} else {

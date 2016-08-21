@@ -167,8 +167,10 @@ class RequestAccountPage extends SpecialPage {
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
 				if ( $conf['project'] != '' ) {
 					$linkRenderer = $this->getLinkRenderer();
-					$pg = $linkRenderer->makeLink( Title::newFromText( $conf['project'] ),
-						$this->msg( 'requestaccount-info' )->escaped(), [], [], "known" );
+					$pg = $linkRenderer->makeLink(
+						Title::newFromText( $conf['project'] ),
+						$this->msg( 'requestaccount-info' )
+					);
 				} else {
 					$pg = '';
 				}
