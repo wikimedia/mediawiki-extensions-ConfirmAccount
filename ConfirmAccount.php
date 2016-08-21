@@ -58,8 +58,11 @@ ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages );
 # UI-related hook handlers
 ConfirmAccountUISetup::defineHookHandlers( $wgHooks );
 
-# Check for account name collisions
-$wgHooks['AbortNewAccount'][] = 'ConfirmAccountUIHooks::checkIfAccountNameIsPending';
+# Check for account name collisions and handle queue updates
+$wgAuthManagerAutoConfig['preauth'][ConfirmAccountPreAuthenticationProvider::class] = [
+	'class' => ConfirmAccountPreAuthenticationProvider::class,
+	'sort'  => 0
+];
 
 # Schema changes
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
