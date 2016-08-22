@@ -348,6 +348,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= '</table></fieldset>';
 
 		$userAreas = ConfirmAccount::getUserAreaConfig();
+		$linkRenderer = $this->getLinkRenderer();
 		if ( $this->hasItem( 'AreasOfInterest' ) && count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . $this->msg( 'confirmaccount-leg-areas' )->escaped() . '</legend>';
@@ -364,9 +365,9 @@ class ConfirmAccountsPage extends SpecialPage {
 				}
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
 				if ( $conf['project'] != '' ) {
-					$pg = Linker::linkKnown(
+					$pg = $linkRenderer->makeKnownLink(
 						Title::newFromText( $conf['project'] ),
-						$this->msg( 'requestaccount-info' )->escaped()
+						$this->msg( 'requestaccount-info' )->text()
 					);
 				} else {
 					$pg = '';
@@ -404,11 +405,11 @@ class ConfirmAccountsPage extends SpecialPage {
 			if ( $this->hasItem( 'CV' ) ) {
 				$form .= '<p>' . $this->msg( 'confirmaccount-attach' )->escaped() . ' ';
 				if ( $accountReq->getFileName() !== null ) {
-					$form .= Linker::linkKnown(
+					$form .= $linkRenderer->makeKnownLink(
 						$titleObj,
-						htmlspecialchars( $accountReq->getFileName() ),
+						$accountReq->getFileName(),
 						[],
-						'file=' . $accountReq->getFileStorageKey()
+						[ 'file' => $accountReq->getFileStorageKey() ]
 					);
 				} else {
 					$form .= $this->msg( 'confirmaccount-none-p' )->escaped();
@@ -430,11 +431,11 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		if ( $reqUser->isAllowed( 'requestips' ) ) {
 			$blokip = SpecialPage::getTitleFor( 'Block' );
-			$link = Linker::linkKnown(
+			$link = $linkRenderer->makeKnownLink(
 				$blokip,
-				$this->msg( 'confirmaccount-blockip' )->escaped(),
+				$this->msg( 'confirmaccount-blockip' ),
 				[],
-				'ip=' . $accountReq->getIP() . '&wpCreateAccount=1'
+				[ 'ip' => $accountReq->getIP(), '&wpCreateAccount' => 1 ]
 			);
 			$form .= '<fieldset>';
 			$form .= '<legend>' . $this->msg( 'confirmaccount-leg-ip' )->escaped() . '</legend>';
@@ -738,18 +739,20 @@ class ConfirmAccountsPage extends SpecialPage {
 	public function formatRow( $row ) {
 		global $wgMemc;
 
+		$linkRenderer = $this->getLinkRenderer();
+
 		if ( $this->showRejects || $this->showStale ) {
-			$link = Linker::linkKnown(
+			$link = $linkRenderer->makeKnownLink(
 				$this->getFullTitle(),
-				$this->msg( 'confirmaccount-review' )->escaped(),
+				$this->msg( 'confirmaccount-review' ),
 				[],
-				'acrid=' . (int)$row->acr_id . '&wpShowRejects=1' );
+				[ 'acrid' => (int)$row->acr_id, '&wpShowRejects' => 1 ] );
 		} else {
-			$link = Linker::linkKnown(
+			$link = $linkRenderer->makeKnownLink(
 				$this->getFullTitle(),
-				$this->msg( 'confirmaccount-review' )->escaped(),
+				$this->msg( 'confirmaccount-review' ),
 				[],
-				'acrid=' . (int)$row->acr_id );
+				[ 'acrid' => (int)$row->acr_id ] );
 		}
 		$time = $this->getLanguage()->timeanddate( wfTimestamp( TS_MW, $row->acr_registration ), true );
 
