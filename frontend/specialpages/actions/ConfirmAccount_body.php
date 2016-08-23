@@ -125,7 +125,8 @@ class ConfirmAccountsPage extends SpecialPage {
 		if ( $this->acrID || $this->showStale || $this->showRejects || $this->showHeld ) {
 			$listLink = $linkRenderer->makeKnownLink(
 				$titleObj,
-				$this->msg( 'confirmaccount-showopen' ) );
+				$this->msg( 'confirmaccount-showopen' )->text()
+			);
 		} else {
 			$listLink = $this->msg( 'confirmaccount-showopen' )->escaped();
 		}
@@ -134,7 +135,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				$listLink,
 				$linkRenderer->makeKnownLink(
 					$titleObj,
-					$this->msg( 'confirmaccount-showheld' ),
+					$this->msg( 'confirmaccount-showheld' )->text(),
 					[],
 					[ 'wpShowHeld' => 1 ]
 				)
@@ -150,7 +151,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				$listLink,
 				$linkRenderer->makeKnownLink(
 					$titleObj,
-					$this->msg( 'confirmaccount-showrej' ),
+					$this->msg( 'confirmaccount-showrej' )->text(),
 					[],
 					[ 'wpShowRejects' => 1 ]
 				)
@@ -166,7 +167,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				$listLink,
 				$linkRenderer->makeKnownLink(
 					$titleObj,
-					$this->msg( 'confirmaccount-showexp' ),
+					$this->msg( 'confirmaccount-showexp' )->text(),
 					[],
 					[ 'wpShowStale' => 1 ]
 				)
@@ -182,7 +183,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		if ( $this->queueType != -1 ) {
 			$viewall = $linkRenderer->makeKnownLink(
 				$this->getPageTitle(),
-				$this->msg( 'confirmaccount-all' )
+				$this->msg( 'confirmaccount-all' )->text()
 			);
 
 			// Give grep a chance to find the usages: confirmaccount-type-0, confirmaccount-type-1
@@ -212,7 +213,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$open = '<b>';
 			$open .= $linkRenderer->makeKnownLink(
 				$titleObj,
-				$this->msg( 'confirmaccount-q-open' )->escaped(),
+				$this->msg( 'confirmaccount-q-open' )->text(),
 				[],
 				[ 'wpShowHeld' => 0 ]
 			);
@@ -220,7 +221,7 @@ class ConfirmAccountsPage extends SpecialPage {
 
 			$held = $linkRenderer->makeKnownLink(
 				$titleObj,
-				$this->msg( 'confirmaccount-q-held' )->escaped(),
+				$this->msg( 'confirmaccount-q-held' )->text(),
 				[],
 				[ 'wpShowHeld' => 1 ]
 			);
@@ -228,7 +229,7 @@ class ConfirmAccountsPage extends SpecialPage {
 
 			$rejects = $linkRenderer->makeKnownLink(
 				$titleObj,
-				$this->msg( 'confirmaccount-q-rej' )->escaped(),
+				$this->msg( 'confirmaccount-q-rej' )->text(),
 				[],
 				[ 'wpShowRejects' => 1 ]
 			);
@@ -237,7 +238,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$stale = '<i>';
 			$stale .= $linkRenderer->makeKnownLink(
 				$titleObj,
-				$this->msg( 'confirmaccount-q-stale' )->escaped(),
+				$this->msg( 'confirmaccount-q-stale' )->text(),
 				[],
 				[ 'wpShowStale' => 1 ]
 			);
