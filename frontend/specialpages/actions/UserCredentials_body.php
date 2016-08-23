@@ -134,7 +134,7 @@ class UserCredentialsPage extends SpecialPage {
 					$linkRenderer = $this->getLinkRenderer();
 					$pg = $linkRenderer->makeKnownLink(
 						Title::newFromText( $name ),
-						$this->msg( 'requestaccount-info' )
+						$this->msg( 'requestaccount-info' )->text()
 					);
 				} else {
 					$pg = '';
