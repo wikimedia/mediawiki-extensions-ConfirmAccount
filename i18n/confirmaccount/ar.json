@@ -6,7 +6,8 @@
 			"Mido",
 			"OsamaK",
 			"Zanatos",
-			"ترجمان05"
+			"ترجمان05",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"confirmaccounts": "تأكيد طلبات الحسابات",
@@ -70,6 +71,7 @@
 	"confirmaccount-submit": "أكّد",
 	"confirmaccount-needreason": "يجب أن تحدد سببا في صندوق التعليق بالأسفل.",
 	"confirmaccount-canthold": "هذا الطلب بالفعل إما قيد الانتظار أو محذوف.",
+	"confirmaccount-mismatched": "يجب أن يطابق هذا الحقل مقابله في طلب الحساب الأصلي.",
 	"confirmaccount-acc": "طلب الحساب تم تأكيده بنجاح؛\nأنشأ حسابا جديدا [[User:$1|$1]].",
 	"confirmaccount-rej": "طلب الحساب تم رفضه بنجاح.",
 	"confirmaccount-viewing": "(حاليا يتم مراجعته بواسطة [[User:$1|$1]])",

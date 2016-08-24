@@ -68,7 +68,7 @@
 	"confirmaccount-deny": "Rifiuta (rimuovi dalla lista)",
 	"confirmaccount-hold": "Ferma",
 	"confirmaccount-spam": "Spam (non inviare e-mail)",
-	"confirmaccount-reason": "Commento (sarà incluso nell'e-mail):",
+	"confirmaccount-reason": "Commento (incluso nel rifiuto e nella email al proprietario):",
 	"confirmaccount-ip": "Indirizzo IP:",
 	"confirmaccount-xff": "X-Forwarded-For:",
 	"confirmaccount-agent": "User-Agent:",
