@@ -22,7 +22,7 @@ class ConfirmAccountSetup {
 		$schemaDir        = "$dir/backend/schema";
 		$businessDir      = "$dir/business";
 		$frontendDir      = "$dir/frontend";
-		$langDir          = "$dir/frontend/language/";
+		$langDir          = "$dir/frontend/language";
 		$spActionDir      = "$dir/frontend/specialpages/actions";
 
 		# Main i18n file and special page alias file
