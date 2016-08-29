@@ -7,7 +7,8 @@
 			"Glanthor Reviol",
 			"Misibacsi",
 			"Tgr",
-			"Csega"
+			"Csega",
+			"Tacsipacsi"
 		]
 	},
 	"confirmaccounts": "Felhasználói fiók-kérelem megerősítése",
@@ -58,11 +59,12 @@
 	"confirmaccount-confirm": "A lenti beállításokkal elfogadhatod, visszautasíthatod vagy visszatarthatod a kérelmet:",
 	"confirmaccount-econf": "(megerősítve)",
 	"confirmaccount-withcv": "(CV csatolva)",
-	"confirmaccount-reject": "(visszautasította [[User:$1|$1]] $2-kor)",
+	"confirmaccount-reject": "(visszautasította [[User:$1|$1]] $3, $4-kor)",
 	"confirmaccount-rational": "A jelentkezőnek adott magyarázat:",
 	"confirmaccount-noreason": "(nincs)",
 	"confirmaccount-autorej": "(ezt a kérelmet automatikusan elvetettük inaktivitás miatt)",
-	"confirmaccount-held": "(visszatartotta [[User:$1|$1]] $2-kor)",
+	"confirmaccount-held": "(visszatartotta [[User:$1|$1]] $3, $4-kor)",
+	"confirmaccount-blockip": "IP-cím blokkolása",
 	"confirmaccount-create": "Elfogadás (fiók elkészítése)",
 	"confirmaccount-deny": "Visszautasítás (törlés a listáról)",
 	"confirmaccount-hold": "Visszatartás",
