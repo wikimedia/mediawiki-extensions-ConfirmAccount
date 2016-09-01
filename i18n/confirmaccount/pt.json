@@ -78,6 +78,7 @@
 	"confirmaccount-needreason": "Deverá fornecer um motivo na caixa de comentário abaixo.",
 	"confirmaccount-canthold": "Este pedido já está em espera ou apagado.",
 	"confirmaccount-badaction": "Uma acção válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.",
+	"confirmaccount-mismatched": "Este campo deve coincidir com o respetivo pedido de conta original.",
 	"confirmaccount-acc": "Pedido de conta confirmado; foi criada a nova conta de utilizador [[User:$1|$1]].",
 	"confirmaccount-rej": "Pedido de conta rejeitado.",
 	"confirmaccount-viewing": "(a {{GENDER:$1|ser}} visto neste momento por [[User:$1|$1]])",
