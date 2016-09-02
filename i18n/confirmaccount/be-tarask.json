@@ -66,7 +66,7 @@
 	"confirmaccount-deny": "Адхіліць (выдаліць са сьпісу)",
 	"confirmaccount-hold": "Адкласьці",
 	"confirmaccount-spam": "Спам (не дасылаць лісты па электроннай пошце)",
-	"confirmaccount-reason": "Камэнтар (будзе ўключаны ў электронны ліст):",
+	"confirmaccount-reason": "Камэнтар (будзе ўключаны ў электронны ліст пра адхіленьне або затрымку):",
 	"confirmaccount-ip": "IP-адрас:",
 	"confirmaccount-xff": "X-Forwarded-For:",
 	"confirmaccount-agent": "User-Agent:",
