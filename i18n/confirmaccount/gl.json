@@ -76,6 +76,7 @@
 	"confirmaccount-canthold": "Esta solicitude está en espera ou foi borrada.",
 	"confirmaccount-badaction": "Cómpre especificar unha acción válida (aceptar, rexeitar, reter) para poder continuar.",
 	"confirmaccount-mismatched": "Este campo debe coincidir co da petición de conta orixinal.",
+	"confirmaccount-mismatched-general": "Pediuse ignorar e sustituír un valor nun campo da petición de conta orixinal que non está permitido ou non se definiu a opción de \"contrasinal de correo\".",
 	"confirmaccount-acc": "Confirmouse a solicitude de conta;\ncreouse a nova conta de usuario [[User:$1|$1]].",
 	"confirmaccount-rej": "Rexeitouse a solicitude de conta.",
 	"confirmaccount-viewing": "(actualmente sendo {{GENDER:$1|revisada}} por [[User:$1|$1]])",
