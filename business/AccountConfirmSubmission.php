@@ -391,8 +391,8 @@ class AccountConfirmSubmission {
 		# Create userpage!
 		if ( $body !== '' ) {
 			$article = new WikiPage( $user->getUserPage() );
-			$article->doEdit(
-				$body,
+			$article->doEditContent(
+				ContentHandler::makeContent( $body, $article->getTitle() ),
 				wfMessage( 'confirmaccount-summary' )->inContentLanguage()->text(),
 				EDIT_MINOR
 			);
@@ -409,8 +409,8 @@ class AccountConfirmSubmission {
 				: $msgObj->text(); // custom message
 			# Add user welcome message!
 			$article = new WikiPage( $user->getTalkPage() );
-			$article->doEdit(
-				"{$welcome} ~~~~",
+			$article->doEditContent(
+				ContentHandler::makeContent( "{$welcome} ~~~~", $article->getTitle() ),
 				wfMessage( 'confirmaccount-wsum' )->inContentLanguage()->text(),
 				EDIT_MINOR,
 				false,
