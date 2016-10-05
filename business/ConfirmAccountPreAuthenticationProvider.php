@@ -116,7 +116,7 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 		list( $status, $msg ) = $submission->submit( RequestContext::getMain() );
 		if ( $status !== true ) {
 			// ErrorPageError does not trigger rollback
-			$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+			$lbFactory = wfGetLBFactory();
 			$lbFactory->rollbackMasterChanges( __METHOD__ );
 			throw new ErrorPageError( 'createacct-error', new RawMessage( $msg ) );
 		}
