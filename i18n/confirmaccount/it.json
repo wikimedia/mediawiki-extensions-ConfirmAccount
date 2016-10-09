@@ -79,6 +79,7 @@
 	"confirmaccount-canthold": "Questa richiesta è già stata fermata o eliminata.",
 	"confirmaccount-badaction": "E' necessario selezionare un'azione valida (accetta, rifiuta, sospendi) per poter procedere.",
 	"confirmaccount-mismatched": "Questo campo deve corrispondere a quello dell'utenza originale richiesta.",
+	"confirmaccount-mismatched-general": "Un override è stato richiesto su un campo dell'account originale, la richiesta non è consentita o l'opzione \"mail password\" non è stata impostata.",
 	"confirmaccount-acc": "Richiesta utenza confermata;\n\tcreato nuovo utente [[User:$1|$1]].",
 	"confirmaccount-rej": "Richiesta utenza respinta.",
 	"confirmaccount-viewing": "(attualmente in osservazione da [[User:$1|$1]])",
