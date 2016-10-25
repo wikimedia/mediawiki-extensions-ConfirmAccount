@@ -4,7 +4,8 @@
 			"Michaello",
 			"Milicevic01",
 			"Rancher",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Сербијана"
 		]
 	},
 	"requestaccount-leg-user": "Korisnički nalog",
@@ -14,7 +15,7 @@
 	"requestaccount-leg-tos": "Uslovi korišćenja",
 	"requestaccount-real": "Pravo ime:",
 	"requestaccount-same": "(istovetno pravom imenu)",
-	"requestaccount-email": "E-pošta:",
+	"requestaccount-email": "Imejl adresa:",
 	"requestaccount-reqtype": "Pozicija:",
 	"requestaccount-level-0": "autor",
 	"requestaccount-level-1": "editor",
@@ -28,5 +29,5 @@
 	"requestaccount-tooshort": "Vaša biografija mora da sadrži najmanje $1 {{PLURAL:$1|reč|reči}}.",
 	"requestaccount-emaildup": "Drugi nalog, koji čeka odobrenje, već koristi ovu imejl adresu.",
 	"requestaccount-sent": "Vaš zahtev za nalogom je uspešno poslat i čeka na pregled.\nElektronska poruka za potvrdu je poslata na Vašu adresu Vaše elektronske pošte.",
-	"request-account-econf": "Vaša imejl adresa je bila potvrđena i biće prikazana kao takva u Vašem zahtevu za nalogom."
+	"requestaccount-econf": "Vaša imejl adresa je bila potvrđena i biće prikazana kao takva u Vašem zahtevu za nalogom."
 }
