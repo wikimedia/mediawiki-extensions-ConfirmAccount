@@ -3,7 +3,8 @@
 		"authors": [
 			"Michaello",
 			"Rancher",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Сербијана"
 		]
 	},
 	"usercredentials-user": "Korisničko ime:",
@@ -11,7 +12,7 @@
 	"usercredentials-leg-areas": "Glavne sfere interesovanja",
 	"usercredentials-leg-person": "Lični podaci",
 	"usercredentials-leg-other": "Druge informacije",
-	"usercredentials-email": "E-pošta:",
+	"usercredentials-email": "Imejl adresa:",
 	"usercredentials-real": "Pravo ime:",
 	"usercredentials-bio": "Životopis:",
 	"usercredentials-attach": "Rezime/CV:",

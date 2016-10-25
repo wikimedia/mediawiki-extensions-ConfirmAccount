@@ -3,7 +3,8 @@
 		"authors": [
 			"Michaello",
 			"Rancher",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Сербијана"
 		]
 	},
 	"confirmaccount-none-o": "Trenutno nema nerešenih zahteva u ovom spisku.",
@@ -11,7 +12,7 @@
 	"confirmaccount-none-r": "Trenutno nema skoro odbačenih zahteva u ovom spisku.",
 	"confirmaccount-none-e": "Trenutno nema zastarelih zahteva u ovom spisku.",
 	"confirmaccount-real-q": "Ime",
-	"confirmaccount-email-q": "E-pošta",
+	"confirmaccount-email-q": "Imejl",
 	"confirmaccount-bio-q": "Životopis",
 	"confirmaccount-showopen": "nerešeni zahtevi",
 	"confirmaccount-showrej": "odbačeni zahtevi",
@@ -32,7 +33,7 @@
 	"confirmaccount-leg-other": "Druge informacije",
 	"confirmaccount-name": "Korisničko ime",
 	"confirmaccount-real": "Ime:",
-	"confirmaccount-email": "E-pošta:",
+	"confirmaccount-email": "Imejl:",
 	"confirmaccount-reqtype": "Pozicija:",
 	"confirmaccount-pos-0": "autor",
 	"confirmaccount-pos-1": "editor",
