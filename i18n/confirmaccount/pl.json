@@ -11,7 +11,8 @@
 			"Sp5uhe",
 			"ToSter",
 			"Wpedzich",
-			"Chrumps"
+			"Chrumps",
+			"Woytecr"
 		]
 	},
 	"confirmaccounts": "Potwierdź wniosek o założenie konta użytkownika",
@@ -62,11 +63,11 @@
 	"confirmaccount-confirm": "Użyj poniższych opcji by przyjąć, odrzucić lub wstrzymać żądanie:",
 	"confirmaccount-econf": "(potwierdzono)",
 	"confirmaccount-withcv": "(załączone CV)",
-	"confirmaccount-reject": "(odrzucone przez użytkownika [[User:$1|$1]], z powodu $2)",
+	"confirmaccount-reject": "(odrzucone przez użytkownika [[User:$1|$1]], dnia $3 o $4)",
 	"confirmaccount-rational": "Uzasadnienie przesłane do wnioskodawcy:",
 	"confirmaccount-noreason": "(brak)",
 	"confirmaccount-autorej": "(wniosek został automatycznie odrzucony ze względu na brak aktywności)",
-	"confirmaccount-held": "(oznaczone jako „wstrzymane” przez użytkownika [[User:$1|$1]], z powodu $2)",
+	"confirmaccount-held": "(oznaczone jako „zawieszone” przez użytkownika [[User:$1|$1]], dnia $3 o $4)",
 	"confirmaccount-blockip": "Blokuj adres IP",
 	"confirmaccount-create": "Zaakceptuj (utwórz konto)",
 	"confirmaccount-deny": "Odrzuć (usuń z listy)",
@@ -83,7 +84,7 @@
 	"confirmaccount-badaction": "Prawidłowe działanie (przyjmij, odrzuć, wstrzymaj) musi być określone w celu przejścia dalej.",
 	"confirmaccount-acc": "Potwierdzono wniosek o założenie konta; utworzono konto dla użytkownika [[User:$1|$1]].",
 	"confirmaccount-rej": "Odrzucono wniosek o utworzenie konta.",
-	"confirmaccount-viewing": "(aktualnie przeglądany przez użytkownika [[User:$1|$1]])",
+	"confirmaccount-viewing": "(aktualnie przeglądane przez użytkownika [[User:$1|$1]])",
 	"confirmaccount-summary": "Tworznie strony użytkownika dla nowego użytkownika.",
 	"confirmaccount-welc": "'''Witaj w ''{{GRAMMAR:N.lp|{{SITENAME}}}}''!''' Mamy nadzieję, że włączysz się aktywnie w tworzenie {{GRAMMAR:D.lp|{{SITENAME}}}}.\nZacznij od zapoznania się ze [{{MediaWiki:Helppage}} stronami pomocy]. Jeszcze raz witamy i życzymy przyjemnej pracy!",
 	"confirmaccount-wsum": "Witaj!",
