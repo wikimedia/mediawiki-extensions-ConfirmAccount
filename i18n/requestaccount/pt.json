@@ -20,7 +20,7 @@
 	"requestaccount-leg-person": "Informação pessoal",
 	"requestaccount-leg-other": "Outras informações",
 	"requestaccount-leg-tos": "Termos de Serviço",
-	"requestaccount-acc-text": "Será enviada uma mensagem de confirmação para o seu endereço de correio electrónico assim que este pedido for submetido. O endereço não será divulgado.\nResponda clicando na ligação de confirmação fornecido na mensagem, por favor.\nA sua palavra-chave será enviada por correio electrónico quando a conta for criada.",
+	"requestaccount-acc-text": "Será enviada uma mensagem de confirmação para o seu endereço de correio eletrónico assim que este pedido for submetido. O endereço não será divulgado.\nResponda clicando a ligação de confirmação fornecida na mensagem, por favor.\nA sua palavra-passe será enviada por correio eletrónico quando a conta for criada.",
 	"requestaccount-areas-text": "Selecione abaixo as áreas em que possui experiência formal ou em que mais gostaria de trabalhar.",
 	"requestaccount-ext-text": "A seguinte informação será mantida privada e só será usada para este pedido.\nTalvez possa listar contactos, tais como o número de telefone, para ajudar na confirmação da identificação.",
 	"requestaccount-bio-text": "Tente incluir todas as credenciais relevantes na sua biografia abaixo.",
@@ -46,7 +46,7 @@
 	"requestaccount-sent": "O seu pedido de conta foi enviado e está agora pendente para aprovação.\nUma mensagem de confirmação foi enviada para o seu correio eletrónico.",
 	"requestaccount-econf": "O seu correio electrónico foi confirmado e será listado como tal no seu pedido de conta.",
 	"requestaccount-email-subj": "Confirmação de endereço electrónico para a {{SITENAME}}",
-	"requestaccount-email-body": "Alguém, provavelmente você a partir do endereço IP $1, solicitou uma conta \"$2\" com este endereço de correio electrónico na {{SITENAME}}.\n\nPara confirmar que esta conta realmente lhe pertence na {{SITENAME}}, siga este link no seu browser:\n\n$3\n\nSe a conta for criada, a palavra-chave só será enviada a si. Se este pedido *não* foi feito por si, não siga o link.\nEste código de confirmação irá expirar às $6 de $5.",
+	"requestaccount-email-body": "Alguém, provavelmente você a partir do endereço IP $1, solicitou uma conta \"$2\" com este endereço de correio eletrónico na wiki {{SITENAME}}.\n\nPara confirmar que esta conta realmente lhe pertence na wiki {{SITENAME}}, siga este link no seu browser:\n\n$3\n\nSe a conta for criada, a palavra-passe só será enviada a si.\nSe este pedido *não* foi feito por si, não siga o link.\nEste código de confirmação irá expirar em $4.",
 	"requestaccount-email-subj-admin": "Pedido de conta na {{SITENAME}}",
 	"requestaccount-email-body-admin": "\"$1\" pediu uma conta e aguarda confirmação.\nO endereço eletrónico foi confirmado. Pode confirmar o pedido aqui:\n\n\"$2\"",
 	"acct_request_throttle_hit": "Desculpe, mas já pediu {{PLURAL:$1|uma conta|$1 contas}}.\nNão pode fazer mais pedidos."
