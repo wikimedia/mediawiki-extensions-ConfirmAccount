@@ -41,13 +41,13 @@
 	"requestaccount-emaildup": "Um outro pedido de conta pendente usa o mesmo correio electrónico.",
 	"requestaccount-exts": "O tipo de ficheiro do anexo não é permitido.",
 	"requestaccount-resub": "O seu currículo deve ser selecionado novamente por razões de segurança. Deixe o campo em branco se já não desejar incluí-lo.",
-	"requestaccount-tos": "Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] da {{SITENAME}}.\nO nome que introduzi em \"Nome real\" é de facto o meu nome real.",
+	"requestaccount-tos": "Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] da wiki {{SITENAME}}.\nO nome que introduzi em \"Nome real\" é de facto o meu nome real.",
 	"requestaccount-submit": "Pedir conta",
 	"requestaccount-sent": "O seu pedido de conta foi enviado e está agora pendente para aprovação.\nUma mensagem de confirmação foi enviada para o seu correio eletrónico.",
 	"requestaccount-econf": "O seu correio electrónico foi confirmado e será listado como tal no seu pedido de conta.",
-	"requestaccount-email-subj": "Confirmação de endereço electrónico para a {{SITENAME}}",
+	"requestaccount-email-subj": "Confirmação de endereço eletrónico para a wiki {{SITENAME}}",
 	"requestaccount-email-body": "Alguém, provavelmente você a partir do endereço IP $1, solicitou uma conta \"$2\" com este endereço de correio eletrónico na wiki {{SITENAME}}.\n\nPara confirmar que esta conta realmente lhe pertence na wiki {{SITENAME}}, siga este link no seu browser:\n\n$3\n\nSe a conta for criada, a palavra-passe só será enviada a si.\nSe este pedido *não* foi feito por si, não siga o link.\nEste código de confirmação irá expirar em $4.",
-	"requestaccount-email-subj-admin": "Pedido de conta na {{SITENAME}}",
+	"requestaccount-email-subj-admin": "Pedido de conta na wiki {{SITENAME}}",
 	"requestaccount-email-body-admin": "\"$1\" pediu uma conta e aguarda confirmação.\nO endereço eletrónico foi confirmado. Pode confirmar o pedido aqui:\n\n\"$2\"",
 	"acct_request_throttle_hit": "Desculpe, mas já pediu {{PLURAL:$1|uma conta|$1 contas}}.\nNão pode fazer mais pedidos."
 }
