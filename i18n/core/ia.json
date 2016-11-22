@@ -8,5 +8,6 @@
 	"requestaccount-loginnotice": "Pro obtener un conto de usator, tu debe '''[[Special:RequestAccount|requestar un]]'''.",
 	"right-confirmaccount": "Vider le [[Special:ConfirmAccounts|cauda con requestas de conto]]",
 	"right-requestips": "Vider le adresses IP del requestatores durante le tractamento de requestas de conto",
-	"right-lookupcredentials": "Vider le [[Special:UserCredentials|credentiales de usatores]]"
+	"right-lookupcredentials": "Vider le [[Special:UserCredentials|credentiales de usatores]]",
+	"action-confirmaccount": "revider e acceptar contos"
 }
