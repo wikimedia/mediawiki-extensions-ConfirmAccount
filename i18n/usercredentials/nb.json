@@ -5,7 +5,8 @@
 			"Harald Khan",
 			"Laaknor",
 			"Nghtwlkr",
-			"Njardarlogar"
+			"Njardarlogar",
+			"Jon Harald Søby"
 		]
 	},
 	"usercredentials": "Brukerattester",
@@ -16,6 +17,7 @@
 	"usercredentials-leg-areas": "Hovedinteresser",
 	"usercredentials-leg-person": "Personlig informasjon",
 	"usercredentials-leg-other": "Annen informasjon",
+	"usercredentials-leg-ip": "IP-adressedata",
 	"usercredentials-email": "E-post:",
 	"usercredentials-real": "Virkelig navn:",
 	"usercredentials-bio": "Biografi:",
@@ -23,6 +25,8 @@
 	"usercredentials-notes": "Andre merknader:",
 	"usercredentials-urls": "Liste over nettsteder:",
 	"usercredentials-ip": "Opprinnelig IP-adresse:",
+	"usercredentials-xff": "Opprinnelig X-Forwrded-For:",
+	"usercredentials-agent": "Opprinnelig User-Agent:",
 	"usercredentials-member": "Rettigheter:",
 	"usercredentials-badid": "Ingen attester funnet for denne brukeren. Sjekk at navnet er stavet riktig."
 }

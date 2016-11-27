@@ -4,12 +4,14 @@
 			"Event",
 			"Harald Khan",
 			"Laaknor",
-			"Nghtwlkr"
+			"Nghtwlkr",
+			"Jon Harald Søby"
 		]
 	},
-	"confirmaccount-newrequests": "Det er foreløpig '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}.",
+	"confirmaccount-newrequests": "Det er '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}. '''Din oppmerksomhet kreves!'''",
 	"requestaccount-loginnotice": "For å få en brukerkonto må du '''[[Special:RequestAccount|etterspørre en]]'''.",
 	"right-confirmaccount": "Vis [[Special:ConfirmAccounts|køen av kontosøknader]]",
 	"right-requestips": "Vis søkerenes IP-adresser mens man behandler kontosøknadene",
-	"right-lookupcredentials": "Vis [[Special:UserCredentials|brukerattester]]"
+	"right-lookupcredentials": "Vis [[Special:UserCredentials|brukerattester]]",
+	"action-confirmaccount": "gå gjennom og godkjenne kontoer"
 }
