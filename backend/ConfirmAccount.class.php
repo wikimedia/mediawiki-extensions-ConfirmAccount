@@ -8,7 +8,7 @@ class ConfirmAccount {
 		global $wgRejectedAccountMaxAge, $wgConfirmAccountRejectAge, $wgConfirmAccountFSRepos;
 
 		$dbw = wfGetDB( DB_MASTER );
-		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+		$repo = self::getFileRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 
 		# Select all items older than time $encCutoff
 		$encCutoff = $dbw->addQuotes( $dbw->timestamp( time() - $wgRejectedAccountMaxAge ) );
@@ -325,5 +325,28 @@ class ConfirmAccount {
 			__METHOD__,
 			[ 'LIMIT' => 200 ] // sanity
 		) );
+	}
+
+	/**
+	 * @param array $info
+	 * @return FileRepo
+	 */
+	public static function getFileRepo( $info ) {
+		$repoName = $info['name'];
+		$directory = $info['directory'];
+		$info['backend'] = new FSFileBackend( [
+				'name' => $repoName . '-backend',
+				'wikiId' => wfWikiID(),
+				'lockManager' => LockManagerGroup::singleton( wfWikiID() )->get( 'fsLockManager' ),
+				'containerPaths' => [
+					"{$repoName}-public" => "{$directory}",
+					"{$repoName}-temp" => "{$directory}/temp",
+					"{$repoName}-thumb" => "{$directory}/thumb",
+				],
+				'fileMode' => 0644,
+				'tmpDirectory' => wfTempDir()
+			]
+		);
+		return new FileRepo( $info );
 	}
 }

@@ -77,27 +77,19 @@ $wgConfirmAccountContact = false;
 # inject catpchas for requests too?
 $wgConfirmAccountCaptchas = true;
 
-# Storage repos. Has B/C for when this used FileStore.
+# Storage repos.
 $wgConfirmAccountFSRepos = [
 	'accountreqs' => [ # Location of attached files for pending requests
 		'name'       => 'accountreqs',
-		'directory'  => isset( $wgFileStore['accountreqs'] )
-			? $wgFileStore['accountreqs']['directory']
-			: false,
-		'url'        => isset( $wgFileStore['accountreqs'] ) ?
-			$wgFileStore['accountreqs']['url'] : null,
-		'hashLevels' => isset( $wgFileStore['accountreqs'] ) ?
-			$wgFileStore['accountreqs']['hash'] : 3
+		'directory'  => false,
+		'url'        => null,
+		'hashLevels' => 3,
 	],
 	'accountcreds' => [ # Location of credential files
 		'name'       => 'accountcreds',
-		'directory'  => isset( $wgFileStore['accountcreds'] )
-			? $wgFileStore['accountcreds']['directory']
-			: false,
-		'url'        => isset( $wgFileStore['accountcreds'] ) ?
-			$wgFileStore['accountcreds']['url'] : null,
-		'hashLevels' => isset( $wgFileStore['accountcreds'] ) ?
-			$wgFileStore['accountcreds']['hash'] : 3
+		'directory'  => false,
+		'url'        => null,
+		'hashLevels' => 3,
 	]
 ];
 
