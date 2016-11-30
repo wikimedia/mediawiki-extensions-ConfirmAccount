@@ -214,7 +214,7 @@ class ConfirmAccount {
 	public static function verifyAttachment( $tmpfile, $extension ) {
 		global $wgVerifyMimeType, $wgMimeTypeBlacklist;
 
-		$magic =& MimeMagic::singleton(); // magically determine mime type
+		$magic = MimeMagic::singleton(); // magically determine mime type
 		$mime = $magic->guessMimeType( $tmpfile, false );
 		# check mime type, if desired
 		if ( $wgVerifyMimeType ) {
