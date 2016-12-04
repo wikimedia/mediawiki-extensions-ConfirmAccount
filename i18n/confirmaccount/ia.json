@@ -72,6 +72,7 @@
 	"confirmaccount-canthold": "Iste requesta ha ja essite suspendite o delite.",
 	"confirmaccount-badaction": "Un action valide (acceptar, refusar, retener) debe esser specificate pro continuar.",
 	"confirmaccount-mismatched": "Iste campo debe corresponder a illo del requesta de conto original.",
+	"confirmaccount-mismatched-general": "Un supplantamento non autorisate ha essite demandate pro un campo del requesta de conto original, o le option \"inviar contrasigno in e-mail\" non es active.",
 	"confirmaccount-acc": "Le requesta de conto ha essite confirmate;\n\tle nove conto de usator [[User:$1|$1]] ha essite create.",
 	"confirmaccount-rej": "Le requesta de conto ha essite rejectate.",
 	"confirmaccount-viewing": "(actualmente {{GENDER:$1|vidite}} per [[User:$1|$1]])",

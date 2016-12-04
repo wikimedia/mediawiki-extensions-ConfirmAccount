@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fluence"
+			"Fluence",
+			"Akapochtli"
 		]
 	},
 	"confirmaccount-real-q": "Tōcāitl",
 	"confirmaccount-email-q": "E-mail",
 	"confirmaccount-review": "Ticceppahuīz",
 	"confirmaccount-name": "Tlatequitiltilīltōcāitl",
-	"confirmaccount-real": "Tōcāitl:",
+	"confirmaccount-real": "Tocaitl:",
 	"confirmaccount-email": "E-mail:",
 	"confirmaccount-pos-0": "chīhualōni",
 	"confirmaccount-noreason": "(ahtlein)",
