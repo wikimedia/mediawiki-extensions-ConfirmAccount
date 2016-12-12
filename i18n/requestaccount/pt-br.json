@@ -9,10 +9,12 @@
 			"Luckas",
 			"Luckas Blade",
 			"He7d3r",
-			"Macofe"
+			"Macofe",
+			"!Silent"
 		]
 	},
 	"requestaccount": "Requisitar conta",
+	"requestaccount-login": "Solicitar uma conta",
 	"requestaccount-text": "'''Complete e submeta o seguinte formulário para pedir uma conta de usuário'''.\n\nCertifique-se de que leu primeiro os [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] antes de pedir uma conta.\n\nAssim que a conta for aprovada, você receberá um e-mail contendo uma mensagem de notificação e sua conta estará pronta para ser utilizada na [[Special:UserLogin|autenticação]].",
 	"requestaccount-page": "{{ns:project}}:Termos de Serviço",
 	"requestaccount-dup": "'''Nota: Você já está autenticado com uma conta registrada.'''",
@@ -44,8 +46,8 @@
 	"requestaccount-resub": "O seu Curriculum Vitae deve ser selecionado novamente por razões de segurança. \nDeixe o campo em branco se não desejar incluí-lo.",
 	"requestaccount-tos": "Li e concordo reger-me pelos [[{{MediaWiki:Requestaccount-page}}|Termos de Serviço]] de {{SITENAME}}.\nO nome que especifiquei em \"Nome real\" é de fato o meu nome real.",
 	"requestaccount-submit": "Requisitar conta",
-	"requestaccount-sent": "O seu pedido de conta foi enviado com sucesso e está agora com a confirmação pendente.\nUm e-mail de confirmação foi enviado para seu endereço de e-mail.",
-	"request-account-econf": "O seu endereço de e-mail foi confirmado e será listado como tal no seu pedido de conta.",
+	"requestaccount-sent": "Seu pedido de conta foi enviado com sucesso e está agora com a confirmação pendente.\nUma mensagem de confirmação foi enviada para seu endereço de e-mail.",
+	"requestaccount-econf": "O seu endereço de e-mail foi confirmado e será listado como tal no seu pedido de conta.",
 	"requestaccount-email-subj": "Confirmação de endereço de e-mail para {{SITENAME}}",
 	"requestaccount-email-body": "Alguém, provavelmente você a partir do endereço IP $1, requisitou uma conta \"$2\" com este endereço de e-mail em {{SITENAME}}.\n\nPara confirmar que esta conta realmente lhe pertence em {{SITENAME}}, abra este link no seu navegador:\n\n$3\n\nSe a conta for criada, apenas a você será enviada a senha. \nSe esta pessoa *não* for você, não clique no link acima.\nEste código de confirmação expirará em $4.",
 	"requestaccount-email-subj-admin": "Requisição de conta em {{SITENAME}}",

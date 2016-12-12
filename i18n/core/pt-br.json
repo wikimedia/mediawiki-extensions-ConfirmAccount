@@ -6,12 +6,14 @@
 			"Helder.wiki",
 			"Jaideraf",
 			"Luckas Blade",
-			"555"
+			"555",
+			"!Silent"
 		]
 	},
 	"confirmaccount-newrequests": "Há, neste momento, '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitação|solicitações}} pendentes de contas]]. '''Sua atenção é necessária!''",
 	"requestaccount-loginnotice": "Para ter uma conta de usuário, é necessário '''[[Special:RequestAccount|solicitá-la]]'''.",
 	"right-confirmaccount": "Ver a [[Special:ConfirmAccounts|fila de contas solicitadas]]",
 	"right-requestips": "Ver os endereços IP do requerente durante a gestão de contas pedidas",
-	"right-lookupcredentials": "Ver [[Special:UserCredentials|credenciais de usuário]]"
+	"right-lookupcredentials": "Ver [[Special:UserCredentials|credenciais de usuário]]",
+	"action-confirmaccount": "rever e aceitar contas"
 }
