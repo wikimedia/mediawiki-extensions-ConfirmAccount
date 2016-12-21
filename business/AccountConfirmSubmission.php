@@ -219,8 +219,8 @@ class AccountConfirmSubmission {
 			$key = $accReq->getFileStorageKey();
 			# Copy any attached files to new storage group
 			if ( $formConfig['CV']['enabled'] && $key ) {
-				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
-				$repoNew = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
+				$repoOld = ConfirmAccount::getFileRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+				$repoNew = ConfirmAccount::getFileRepo( $wgConfirmAccountFSRepos['accountcreds'] );
 
 				$pathRel = UserAccountRequest::relPathFromKey( $key );
 				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
@@ -294,7 +294,7 @@ class AccountConfirmSubmission {
 		if ( $wgConfirmAccountRequestFormItems['CV']['enabled'] ) {
 			$key = $accReq->getFileStorageKey();
 			if ( $key ) {
-				$repoOld = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+				$repoOld = ConfirmAccount::getFileRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 				$pathRel = UserAccountRequest::relPathFromKey( $key );
 				$oldPath = $repoOld->getZonePath( 'public' ) . '/' . $pathRel;
 				if ( $repoOld->fileExists( $oldPath ) ) {
