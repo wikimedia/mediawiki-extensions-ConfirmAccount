@@ -99,7 +99,7 @@ class RequestAccountPage extends SpecialPage {
 		$this->mForgotAttachment = $forgotFile;
 
 		$out = $this->getOutput();
-		$out->setPagetitle( $this->msg( "requestaccount" )->escaped() );
+		$out->setPagetTitle( $this->msg( "requestaccount" )->escaped() );
 		# Output failure message if any
 		if ( $msg ) {
 			$out->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
@@ -357,7 +357,7 @@ class RequestAccountPage extends SpecialPage {
 
 	protected function showSuccess() {
 		$out = $this->getOutput();
-		$out->setPagetitle( $this->msg( "requestaccount" )->escaped() );
+		$out->setPageTitle( $this->msg( "requestaccount" )->escaped() );
 		$out->addWikiMsg( 'requestaccount-sent' );
 		$out->returnToMain();
 	}

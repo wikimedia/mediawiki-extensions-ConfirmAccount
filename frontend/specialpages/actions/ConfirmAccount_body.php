@@ -680,7 +680,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	protected function showSuccess( $submitType, $name = null, $errors = [] ) {
 		$out = $this->getOutput();
 
-		$out->setPagetitle( $this->msg( 'actioncomplete' )->escaped() );
+		$out->setPageTitle( $this->msg( 'actioncomplete' )->escaped() );
 		if ( $this->submitType == 'accept' ) {
 			$out->addWikiMsg( 'confirmaccount-acc', $name );
 		} elseif ( $this->submitType == 'reject' || $this->submitType == 'spam' ) {
