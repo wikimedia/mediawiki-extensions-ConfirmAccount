@@ -5,11 +5,12 @@
 			"HanV",
 			"SPQRobin",
 			"Siebrand",
-			"Esketti"
+			"Esketti",
+			"Mainframe98"
 		]
 	},
 	"requestaccount": "Gebruiker aanvragen",
-	"requestaccount-login": "Aanvragen account",
+	"requestaccount-login": "Account aanvragen",
 	"requestaccount-text": "'''Vul het onderstaande formulier in en sla het op om een gebruiker aan te vragen'''. \n\nZorg ervoor dat u eerst de [[{{MediaWiki:Requestaccount-page}}|voorwaarden]] leest voordat u een gebruiker aanvraagt.\n\nAls uw aanvraag is goedgekeurd, krijgt u een e-mail en daarna kunt u zich [[Special:UserLogin|aanmelden]].",
 	"requestaccount-page": "{{ns:project}}:Gebruiksvoorwaarden",
 	"requestaccount-dup": "'''Let op: u bent al aangemeld met een geregistreerde gebruikersnaam.'''",
