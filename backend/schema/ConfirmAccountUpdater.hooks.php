@@ -10,7 +10,8 @@ class ConfirmAccountUpdaterHooks {
 	 */
 	public static function addSchemaUpdates( DatabaseUpdater $updater ) {
 		$base = __DIR__;
-		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
+		$type = $updater->getDB()->getType();
+		if ( $type === 'mysql' || $type === 'sqlite' ) {
 			$base = "$base/mysql";
 
 			$updater->addExtensionTable( 'account_requests', "$base/ConfirmAccount.sql" );
@@ -19,15 +20,17 @@ class ConfirmAccountUpdaterHooks {
 			);
 			$updater->addExtensionTable( 'account_credentials', "$base/patch-account_credentials.sql" );
 			$updater->addExtensionField( 'account_requests', 'acr_areas', "$base/patch-acr_areas.sql" );
-			$updater->modifyExtensionField(
-				'account_requests', 'acr_email', "$base/patch-acr_email-varchar.sql"
-			);
+			if ( $type !== 'sqlite' ) {
+				$updater->modifyExtensionField(
+					'account_requests', 'acr_email', "$base/patch-acr_email-varchar.sql"
+				);
+			}
 			$updater->addExtensionIndex( 'account_requests', 'acr_email', "$base/patch-email-index.sql" );
 			$updater->addExtensionField( 'account_requests', 'acr_agent', "$base/patch-acr_agent.sql" );
 			$updater->dropExtensionIndex(
 				'account_requests', 'acr_deleted_reg', "$base/patch-drop-acr_deleted_reg-index.sql"
 			);
-		} elseif ( $updater->getDB()->getType() == 'postgres' ) {
+		} elseif ( $type === 'postgres' ) {
 			$base = "$base/postgres";
 
 			$updater->addExtensionUpdate(
