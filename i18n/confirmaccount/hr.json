@@ -5,7 +5,8 @@
 			"Dnik",
 			"Ex13",
 			"Roberta F.",
-			"SpeedyGonsales"
+			"SpeedyGonsales",
+			"Bugoslav"
 		]
 	},
 	"confirmaccounts": "Potvrdi zahtjeve za suradničkim računom",
@@ -39,7 +40,7 @@
 	"confirmaccount-email": "E-pošta (''e-mail''):",
 	"confirmaccount-reqtype": "Mjesto:",
 	"confirmaccount-pos-0": "autor",
-	"confirmaccount-pos-1": "urednik",
+	"confirmaccount-pos-1": "uređivač",
 	"confirmaccount-bio": "Biografija:",
 	"confirmaccount-attach": "Biografija/CV:",
 	"confirmaccount-notes": "Dodatne bilješke:",
