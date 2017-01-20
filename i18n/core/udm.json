@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Irus"
+			"Irus",
+			"Wadorgurt"
 		]
 	},
-	"requestaccount-loginnotice": "Учётной книга басьтыны мед быгатозы шуыса, со тӥледлы кулэ [[Special:RequestAccount|курыса]]."
+	"requestaccount-loginnotice": "Учётной запись басьтыны вылысь, тӥледлы кулэ '''[[Special:RequestAccount|сое курыны]]'''."
 }
