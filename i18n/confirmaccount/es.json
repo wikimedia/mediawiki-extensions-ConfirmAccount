@@ -15,7 +15,8 @@
 			"VegaDark",
 			"Macofe",
 			"Matiia",
-			"Indiralena"
+			"Indiralena",
+			"Dgstranz"
 		]
 	},
 	"confirmaccounts": "Confirmar solicitudes de cuenta",
@@ -76,7 +77,7 @@
 	"confirmaccount-deny": "Rechazar (eliminar de lista)",
 	"confirmaccount-hold": "Retener",
 	"confirmaccount-spam": "Spam (no enviar correo electrónico)",
-	"confirmaccount-reason": "Comentario (será incluido en el correo electrónico):",
+	"confirmaccount-reason": "Comentario (se incluirá en correos electrónicos de rechazo y de conservación):",
 	"confirmaccount-ip": "Dirección IP:",
 	"confirmaccount-xff": "X-Forwarded-For (IP de origen):",
 	"confirmaccount-agent": "Agente de usuario:",
