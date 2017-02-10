@@ -35,7 +35,7 @@
 	"confirmaccount-badid": "I a pas cap de demanda en cors correspondent a l’ID indicat. Es possible que aja subit una mantenença.",
 	"confirmaccount-leg-user": "Compte d'utilizaire",
 	"confirmaccount-leg-areas": "Centres d'interès principals",
-	"confirmaccount-leg-person": "Entresenhas personalas",
+	"confirmaccount-leg-person": "Informacions personalas",
 	"confirmaccount-leg-other": "Autras entresenhas",
 	"confirmaccount-leg-ip": "donadas d'adreça IP",
 	"confirmaccount-name": "Nom d'utilizaire",
