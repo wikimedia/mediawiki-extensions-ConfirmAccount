@@ -99,7 +99,7 @@ class RequestAccountPage extends SpecialPage {
 		$this->mForgotAttachment = $forgotFile;
 
 		$out = $this->getOutput();
-		$out->setPagetTitle( $this->msg( "requestaccount" )->escaped() );
+		$out->setPageTitle( $this->msg( "requestaccount" )->escaped() );
 		# Output failure message if any
 		if ( $msg ) {
 			$out->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
