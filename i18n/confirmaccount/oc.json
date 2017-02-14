@@ -61,7 +61,7 @@
 	"confirmaccount-deny": "Regèt (suprimís lo compte)",
 	"confirmaccount-hold": "Detengut",
 	"confirmaccount-spam": "Spam (mandetz pas de corrièr electronic)",
-	"confirmaccount-reason": "Comentari (figurarà dins lo corrièr electronic) :",
+	"confirmaccount-reason": "Comentari (figurarà dins lo corrièr electronic de regèt e de conservacion) :",
 	"confirmaccount-ip": "Adreça IP :",
 	"confirmaccount-xff": "X-Forwarded-For :",
 	"confirmaccount-agent": "User-Agent :",
