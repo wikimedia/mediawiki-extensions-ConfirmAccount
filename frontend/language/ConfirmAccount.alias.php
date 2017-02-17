@@ -488,3 +488,10 @@ $specialPageAliases['zh-hant'] = array(
 	'ConfirmAccounts' => array( '確認帳號' ),
 	'UserCredentials' => array( '使用者憑證' ),
 );
+
+/** Czech (čeština) */
+$specialPageAliases['cs'] = array(
+	'RequestAccount' => array( 'PožádatOÚčet' ),
+	'ConfirmAccounts' => array( 'PotvrditÚčty' ),
+	'UserCredentials' => array( 'PřihlašovacíÚdaje' ),
+);
