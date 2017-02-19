@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Srdjan m"
 		]
 	},
 	"requestaccount": "Zahtjev za račun",
 	"requestaccount-page": "{{ns:project}}:Uslovi korištenja",
-	"requestaccount-dup": "'''Napomena: Već ste prijavljeni sa registrovanim računom.'''",
+	"requestaccount-dup": "'''Napomena: Već ste prijavljeni s registriranim računom.'''",
 	"requestaccount-leg-user": "Korisnički račun",
 	"requestaccount-leg-areas": "Glavna područja interesa",
 	"requestaccount-leg-person": "Lične informacije",
@@ -30,7 +31,7 @@
 	"requestaccount-exts": "Vrsta datoteke u privitku nije dopuštena.",
 	"requestaccount-submit": "Zahtjevaj račun",
 	"requestaccount-sent": "Vaš zahtjev za račun je uspješno poslan i sada očekuje provjeru.\nMail za potvrdu je poslan na Vašu e-mail adresu.",
-	"request-account-econf": "Vaša e-mail adresa je potvrđena i bit će prikazana kako je navedeno u Vašem zahjevu za račun.",
+	"requestaccount-econf": "Vaša e-mail adresa je potvrđena i bit će prikazana kako je navedeno u Vašem zahjevu za račun.",
 	"requestaccount-email-subj": "{{SITENAME}} e-mail adresa potvrde",
 	"requestaccount-email-subj-admin": "Zahtjev za račun na {{SITENAME}}",
 	"acct_request_throttle_hit": "Žao nam je, već ste zahtjevali otvaranje {{PLURAL:$1|1 računa|$1 računa}}.\nNe možete podnositi više zahtjeva."
