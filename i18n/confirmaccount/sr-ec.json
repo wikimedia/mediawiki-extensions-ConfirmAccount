@@ -62,7 +62,7 @@
 	"confirmaccount-canthold": "Овај захтев је већ стопиран или обрисан.",
 	"confirmaccount-acc": "Захтев за налогом успешно прихваћен:\nнаправљен је нови кориснички налог [[User:$1|$1]].",
 	"confirmaccount-rej": "Захтев за налогом успешно одбачен.",
-	"confirmaccount-viewing": "(тренутно прегледа [[User:$1|$1]])",
+	"confirmaccount-viewing": "(тренутно {{GENDER:$1|прегледа}} [[User:$1|$1]])",
 	"confirmaccount-summary": "Стварање корисничке странице за новог корисника.",
 	"confirmaccount-wsum": "Добро дошли!"
 }
