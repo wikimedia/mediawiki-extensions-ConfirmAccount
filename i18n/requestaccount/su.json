@@ -6,9 +6,9 @@
 			"Nemo bis"
 		]
 	},
-	"requestaccount": "Ménta rekening",
+	"requestaccount": "Ménta akun",
 	"requestaccount-dup": "'''CATETAN: Anjeun geus asup log migunakeun rekening nu geus kadaptar.'''",
-	"requestaccount-leg-user": "Rekening pamaké",
+	"requestaccount-leg-user": "Akun pamaké",
 	"requestaccount-leg-areas": "Widang pangaresep/minat",
 	"requestaccount-leg-person": "Émbaran pribadi",
 	"requestaccount-leg-other": "Émbaran lianna",
@@ -24,9 +24,9 @@
 	"requestaccount-urls": "Béréndélan ramatloka, mun aya (pisahkeun ku baris anyar):",
 	"requestaccount-tooshort": "Biografi anjeun sahanteuna kudu ngandung $1 {{PLURAL:$1|kecap|kecap}}.",
 	"requestaccount-exts": "Jenis lampiran nu dimuatkeun dipahing.",
-	"requestaccount-submit": "Pénta rekening",
+	"requestaccount-submit": "Pénta akun",
 	"requestaccount-sent": "Paménta rekening anjeun anggeus dikirim sarta rék dipariksa heula.",
-	"request-account-econf": "Alamat surélék anjeun geus dikonfirmasi sarta bakal ditambahkeun kana paménta rekening anjeun.",
+	"requestaccount-econf": "Alamat surélék anjeun geus dikonfirmasi sarta bakal ditambahkeun kana paménta akun anjeun.",
 	"requestaccount-email-subj": "Konfirmasi alamat surélék {{SITENAME}}",
-	"requestaccount-email-subj-admin": "Paménta rekening {{SITENAME}}"
+	"requestaccount-email-subj-admin": "Paménta akun {{SITENAME}}"
 }
