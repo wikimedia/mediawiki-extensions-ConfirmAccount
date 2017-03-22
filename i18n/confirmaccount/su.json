@@ -6,7 +6,7 @@
 		]
 	},
 	"confirmaccounts": "Konfirmasi paménta akun",
-	"confirmaccount-desc": "Leler birokrat kawenangan ngonfirmasi paménta rekening.",
+	"confirmaccount-desc": "Leler birokrat kawenangan ngonfirmasi paménta akun.",
 	"confirmaccount-real-q": "Ngaran",
 	"confirmaccount-email-q": "Surélék",
 	"confirmaccount-bio-q": "Biografi",
@@ -14,7 +14,7 @@
 	"confirmaccount-showrej": "paménta nu ditolak",
 	"confirmaccount-showheld": "paménta ngagantung",
 	"confirmaccount-showexp": "paménta kadaluwarsa",
-	"confirmaccount-types": "Pilih antrian konfirmasi rekening di handap:",
+	"confirmaccount-types": "Pilih antrian konfirmasi akun di handap:",
 	"confirmaccount-all": "(témbongkeun sakabéh antrian)",
 	"confirmaccount-type": "Antrian:",
 	"confirmaccount-leg-user": "Akun pamaké",
