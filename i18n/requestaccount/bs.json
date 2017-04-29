@@ -30,7 +30,7 @@
 	"requestaccount-emaildup": "Drugi zahtjev za račun na čekanju koristi istu e-mail adresu.",
 	"requestaccount-exts": "Vrsta datoteke u privitku nije dopuštena.",
 	"requestaccount-submit": "Zahtjevaj račun",
-	"requestaccount-sent": "Vaš zahtjev za račun je uspješno poslan i sada očekuje provjeru.\nMail za potvrdu je poslan na Vašu e-mail adresu.",
+	"requestaccount-sent": "Vaš zahtjev za račun uspješno je poslan i čeka pregled.\nPotvrdna e-poruka poslana je na Vašu adresu e-pošte.",
 	"requestaccount-econf": "Vaša e-mail adresa je potvrđena i bit će prikazana kako je navedeno u Vašem zahjevu za račun.",
 	"requestaccount-email-subj": "{{SITENAME}} e-mail adresa potvrde",
 	"requestaccount-email-subj-admin": "Zahtjev za račun na {{SITENAME}}",
