@@ -25,7 +25,9 @@
 	"confirmaccount-bio": "Biografia:",
 	"confirmaccount-attach": "Curriculuma:",
 	"confirmaccount-urls": "Webgune zerrenda:",
+	"confirmaccount-blockip": "Blokeatu IP helbidea",
 	"confirmaccount-create": "Onartu (kontua sortu)",
+	"confirmaccount-spam": "Spama (ez bidali mezu elektronikorik)",
 	"confirmaccount-ip": "IP helbidea:",
 	"confirmaccount-submit": "Baieztatu",
 	"confirmaccount-wsum": "Ongi etorri!"
