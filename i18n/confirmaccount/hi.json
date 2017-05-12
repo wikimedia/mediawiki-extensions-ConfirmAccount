@@ -5,7 +5,8 @@
 			"Kiranmayee",
 			"Siddhartha Ghai",
 			"आलोक",
-			"संजीव कुमार"
+			"संजीव कुमार",
+			"Sfic"
 		]
 	},
 	"confirmaccounts": "खाते की माँग निश्चित करें",
@@ -64,10 +65,10 @@
 	"confirmaccount-submit": "निश्चित करें",
 	"confirmaccount-needreason": "आपको नीचे दिये हुए टिप्पणी बक्सेमें टिप्पणी देना बंधनकारक हैं।",
 	"confirmaccount-canthold": "यह माँग पहले से ही प्रलंबित रखी या अस्वीकृत की गई हैं।",
-	"confirmaccount-acc": "खाते की माँग पूरी हो गई, [[User:$1|$1]] यह नया खाता खोल दिया गया हैं।",
-	"confirmaccount-rej": "खाते की माँग अस्वीकृत कर दी गई हैं।",
-	"confirmaccount-viewing": "([[User:$1|$1]] ने ध्यान रखा हैं)",
-	"confirmaccount-summary": "नये सदस्य के चरित्र के अनुसार सदस्य पृष्ठ बना रहें हैं।",
+	"confirmaccount-acc": "खाता अनुरोध पूरा हुआ;\n\tनया खाता [[User:$1|$1]] बनाया गया।",
+	"confirmaccount-rej": "खाता अनुरोध अस्वीकार कर दिया गया।",
+	"confirmaccount-viewing": "(अभी [[User:$1|$1]] {{GENDER:$1|द्वारा}} देखा जा रहा है।)",
+	"confirmaccount-summary": "नये सदस्य के लिए सदस्य पृष्ठ बना रहा।",
 	"confirmaccount-wsum": "सुस्वागतम्‌!",
 	"confirmaccount-email-subj": "{{SITENAME}} खाता माँग"
 }
