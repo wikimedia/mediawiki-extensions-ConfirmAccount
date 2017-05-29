@@ -10,7 +10,7 @@
 	},
 	"requestaccount": "Nyuwun akun",
 	"requestaccount-login": "Nyuwun akun",
-	"requestaccount-text": "'''Isènana kabèh lan tumpuken formulir ing ngisor iki saperlu nyuwun akun panganggo'''.\n\nPesthèkaké yèn panjenengan wis maca [[{{MediaWiki:Requestaccount-page}}|Aturan Layanan]]é dhisik sadurungé nyuwun akun.\n\nNalika akuné wis ditampa, panjenengan bakal dikirimi layang-èl wara-wara lan akuné bakal wis bisa dianggo nalika [[Special:UserLogin|mlebu log]].",
+	"requestaccount-text": "'''Isinen kabèh lan tumpuken formulir ing ngisor iki saperlu nyuwun akun panganggo'''.\n\nPesthèkaké yèn panjenengan wis maca [[{{MediaWiki:Requestaccount-page}}|Aturan Layanan]]é dhisik sadurungé nyuwun akun.\n\nNalika akuné wis ditampa, panjenengan bakal dikirimi layang-èl wara-wara lan akuné bakal wis bisa dianggo nalika [[Special:UserLogin|mlebu log]].",
 	"requestaccount-page": "{{ns:project}}:Aturan Layanan",
 	"requestaccount-dup": "'''Cathetan: Panjenengan wis mlebu log kanthi akun sing wis kadhaftar.'''",
 	"requestaccount-leg-user": "Akun panganggo",
