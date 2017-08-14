@@ -7,7 +7,8 @@
 			"OsamaK",
 			"Zanatos",
 			"ترجمان05",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"ديفيد"
 		]
 	},
 	"confirmaccounts": "تأكيد طلبات الحسابات",
@@ -65,15 +66,15 @@
 	"confirmaccount-deny": "ارفض (أزل من القائمة)",
 	"confirmaccount-hold": "أجّل",
 	"confirmaccount-spam": "سبام (لا ترسل البريد الإلكتروني)",
-	"confirmaccount-reason": "تعليق (سيضم في البريد الإلكتروني):",
+	"confirmaccount-reason": "تعليق (يتضمن البريد الإلكتروني المرفوض والمعلق):",
 	"confirmaccount-ip": "عنوان الأيبي:",
 	"confirmaccount-legend": "أكّد/ارفض هذا الحساب",
 	"confirmaccount-submit": "أكّد",
 	"confirmaccount-needreason": "يجب أن تحدد سببا في صندوق التعليق بالأسفل.",
 	"confirmaccount-canthold": "هذا الطلب بالفعل إما قيد الانتظار أو محذوف.",
 	"confirmaccount-mismatched": "يجب أن يطابق هذا الحقل مقابله في طلب الحساب الأصلي.",
-	"confirmaccount-acc": "طلب الحساب تم تأكيده بنجاح؛\nأنشأ حسابا جديدا [[User:$1|$1]].",
-	"confirmaccount-rej": "طلب الحساب تم رفضه بنجاح.",
+	"confirmaccount-acc": "طلب الحساب تم تأكيده؛\nأنشأت حسابا جديدا [[User:$1|$1]].",
+	"confirmaccount-rej": "طلب الحساب تم رفضه.",
 	"confirmaccount-viewing": "(حاليا يتم مراجعته بواسطة [[User:$1|$1]])",
 	"confirmaccount-summary": "إنشاء الصفحة الشخصية للمستخدم الجديد.",
 	"confirmaccount-welc": "'''مرحبا إلى ''{{SITENAME}}''!'''\nنأمل أن تساهم كثيرا وجيدا.\nعلى الأرجح ستريد قراءة [{{MediaWiki:Helppage}} البداية].\nمجددا، مرحبا واستمتع!",
