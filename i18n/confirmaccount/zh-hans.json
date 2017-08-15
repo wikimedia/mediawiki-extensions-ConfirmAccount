@@ -32,7 +32,7 @@
 	"confirmaccount-showrej": "被拒绝的请求",
 	"confirmaccount-showheld": "被挂起的请求",
 	"confirmaccount-showexp": "过期的请求",
-	"confirmaccount-review": "批准/拒绝",
+	"confirmaccount-review": "复查",
 	"confirmaccount-types": "在下面选择一个账户确认队列",
 	"confirmaccount-all": "（显示所有队列）",
 	"confirmaccount-type": "队列：",
