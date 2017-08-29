@@ -3,7 +3,8 @@
 		"authors": [
 			"Irwangatot",
 			"Kandar",
-			"Nemo bis"
+			"Nemo bis",
+			"Uchup19"
 		]
 	},
 	"requestaccount": "Ménta akun",
@@ -23,7 +24,7 @@
 	"requestaccount-notes": "Catetan panambih:",
 	"requestaccount-urls": "Béréndélan ramatloka, mun aya (pisahkeun ku baris anyar):",
 	"requestaccount-tooshort": "Biografi anjeun sahanteuna kudu ngandung $1 {{PLURAL:$1|kecap|kecap}}.",
-	"requestaccount-exts": "Jenis lampiran nu dimuatkeun dipahing.",
+	"requestaccount-exts": "Jinis lampiran nu dimuatkeun dipahing.",
 	"requestaccount-submit": "Pénta akun",
 	"requestaccount-sent": "Paménta rekening anjeun anggeus dikirim sarta rék dipariksa heula.",
 	"requestaccount-econf": "Alamat surélék anjeun geus dikonfirmasi sarta bakal ditambahkeun kana paménta akun anjeun.",
