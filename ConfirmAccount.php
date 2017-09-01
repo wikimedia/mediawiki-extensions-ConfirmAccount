@@ -34,10 +34,10 @@ $wgExtensionCredits['specialpage'][] = [
 ];
 
 # Load default config variables
-require ( __DIR__ . '/ConfirmAccount.config.php' );
+require __DIR__ . '/ConfirmAccount.config.php';
 
 # Define were PHP files and i18n files are located
-require ( __DIR__ . '/ConfirmAccount.setup.php' );
+require __DIR__ . '/ConfirmAccount.setup.php';
 ConfirmAccountSetup::defineSourcePaths(
 	$wgAutoloadClasses, $wgMessagesDirs, $wgExtensionMessagesFiles
 );

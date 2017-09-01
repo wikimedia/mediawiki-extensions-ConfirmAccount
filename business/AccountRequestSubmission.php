@@ -66,7 +66,7 @@ class AccountRequestSubmission {
 	/**
 	 * Attempt to validate and submit this data to the DB
 	 * @param $context IContextSource
-	 * @return array( true or error key string, html error msg or null )
+	 * @return array [ true or error key string, html error msg or null ]
 	 */
 	public function submit( IContextSource $context ) {
 		global $wgAccountRequestThrottle, $wgConfirmAccountRequestFormItems;
@@ -121,8 +121,7 @@ class AccountRequestSubmission {
 		}
 		# Check if biography is long enough
 		if ( $formConfig['Biography']['enabled']
-			&& str_word_count( $this->bio ) < $formConfig['Biography']['minWords'] )
-		{
+			&& str_word_count( $this->bio ) < $formConfig['Biography']['minWords'] ) {
 			$minWords = $formConfig['Biography']['minWords'];
 
 			return [

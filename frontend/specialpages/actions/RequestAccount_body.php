@@ -76,8 +76,7 @@ class RequestAccountPage extends SpecialPage {
 
 		$action = $request->getVal( 'action' );
 		if ( $request->wasPosted()
-			&& $reqUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) )
-		{
+			&& $reqUser->matchEditToken( $request->getVal( 'wpEditToken' ) ) ) {
 			$this->mPrevAttachment = $this->mPrevAttachment
 				? $this->mPrevAttachment
 				: $this->mSrcName;
@@ -152,7 +151,7 @@ class RequestAccountPage extends SpecialPage {
 		if ( $this->hasItem( 'AreasOfInterest' ) && count( $userAreas ) > 0 ) {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . $this->msg( 'requestaccount-leg-areas' )->escaped() . '</legend>';
-			$form .=  $this->msg( 'requestaccount-areas-text' )->parseAsBlock() . "\n";
+			$form .= $this->msg( 'requestaccount-areas-text' )->parseAsBlock() . "\n";
 
 			$form .= "<div style='height:150px; overflow:scroll; background-color:#f9f9f9;'>";
 			$form .= "<table style='border-spacing: 5px; padding: 0px; background-color: #f9f9f9;'>
@@ -245,8 +244,7 @@ class RequestAccountPage extends SpecialPage {
 		# FIXME: do this better...
 		global $wgConfirmAccountCaptchas, $wgCaptchaClass, $wgCaptchaTriggers;
 		if ( $wgConfirmAccountCaptchas && isset( $wgCaptchaClass )
-			&& $wgCaptchaTriggers['createaccount'] && !$reqUser->isAllowed( 'skipcaptcha' ) )
-		{
+			&& $wgCaptchaTriggers['createaccount'] && !$reqUser->isAllowed( 'skipcaptcha' ) ) {
 			$captcha = new $wgCaptchaClass;
 
 			$formInformation = $captcha->getFormInformation();

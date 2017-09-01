@@ -35,7 +35,7 @@ class AccountConfirmSubmission {
 	/**
 	 * Attempt to validate and submit this data to the DB
 	 * @param $context IContextSource
-	 * @return array( true or error key string, html error msg or null, redirect URL )
+	 * @return array [ true or error key string, html error msg or null, redirect URL ]
 	 */
 	public function submit( IContextSource $context ) {
 		# Make sure that basic permissions are checked
