@@ -129,7 +129,7 @@ class ConfirmAccount {
 	 * @return string|false
 	 */
 	public static function requestNameFromEmailToken( $code ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		return $dbr->selectField( 'account_requests',
 			'acr_name',
 			[
@@ -145,7 +145,7 @@ class ConfirmAccount {
 	 * @return Array Assosiative array with 'open', 'held', 'type' keys mapping to integers
 	 */
 	public static function getOpenRequestCount( $type ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$open = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
 			[ 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NULL' ],
 			__METHOD__
@@ -314,7 +314,7 @@ class ConfirmAccount {
 		if ( !count( $groups ) ) {
 			return UserArray::newFromResult( new FakeResultWrapper( [] ) );
 		}
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		return UserArray::newFromResult( $dbr->select(
 			[ 'user' ],
 			[ '*' ],

@@ -128,7 +128,7 @@ class UserAccountRequest {
 	public static function newFromId( $id, $from = null ) {
 		$db = ( $from == 'dbmaster' )
 			? wfGetDB( DB_MASTER )
-			: wfGetDB( DB_SLAVE );
+			: wfGetDB( DB_REPLICA );
 		$row = $db->selectRow( 'account_requests', '*', [ 'acr_id' => $id ], __METHOD__ );
 		if ( !$row ) {
 			return null;
@@ -144,7 +144,7 @@ class UserAccountRequest {
 	public static function newFromName( $name, $from = null ) {
 		$db = ( $master == 'dbmaster' )
 			? wfGetDB( DB_MASTER )
-			: wfGetDB( DB_SLAVE );
+			: wfGetDB( DB_REPLICA );
 		$row = $db->selectRow( 'account_requests', '*', [ 'acr_name' => $name ], __METHOD__ );
 		if ( !$row ) {
 			return null;

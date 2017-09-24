@@ -243,7 +243,7 @@ class UserCredentialsPage extends SpecialPage {
 			return false;
 		}
 		# For now, just get the first revision...
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$row = $dbr->selectRow( 'account_credentials', '*',
 			[ 'acd_user_id' => $uid ],
 			__METHOD__,

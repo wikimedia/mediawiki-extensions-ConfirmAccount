@@ -1,7 +1,5 @@
 <?php
 
-use MediaWiki\Auth\AuthManager;
-
 class AccountConfirmSubmission {
 	/* User making the confirmation */
 	protected $admin;
