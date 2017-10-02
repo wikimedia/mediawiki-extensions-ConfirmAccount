@@ -5,7 +5,8 @@
 			"Dj",
 			"Dorgan",
 			"Glanthor Reviol",
-			"Tgr"
+			"Tgr",
+			"Tacsipacsi"
 		]
 	},
 	"usercredentials": "Személyi adatok",
@@ -17,7 +18,7 @@
 	"usercredentials-leg-person": "Személyes információ",
 	"usercredentials-leg-other": "További információ:",
 	"usercredentials-leg-ip": "IP-cím adat",
-	"usercredentials-email": "E-mail cím:",
+	"usercredentials-email": "E-mail-cím:",
 	"usercredentials-real": "Valódi név:",
 	"usercredentials-bio": "Életrajz:",
 	"usercredentials-attach": "CV:",
