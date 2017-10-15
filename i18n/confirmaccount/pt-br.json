@@ -8,7 +8,8 @@
 			"Jaideraf",
 			"Luckas Blade",
 			"555",
-			"Rodrigo codignoli"
+			"Rodrigo codignoli",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"confirmaccounts": "Confirmar requisições de conta",
@@ -69,7 +70,7 @@
 	"confirmaccount-deny": "Rejeitar (retirar da lista)",
 	"confirmaccount-hold": "Colocar em espera",
 	"confirmaccount-spam": "Spam (não enviar e-mail)",
-	"confirmaccount-reason": "Comentário (será incluído no e-mail):",
+	"confirmaccount-reason": "Comentário (será incluído nos correios de rejeição ou espera):",
 	"confirmaccount-ip": "Endereço IP:",
 	"confirmaccount-xff": "X-Forwarded-For:",
 	"confirmaccount-agent": "User-Agent:",
@@ -78,8 +79,10 @@
 	"confirmaccount-needreason": "Você precisa fornecer um motivo na caixa de comentário abaixo.",
 	"confirmaccount-canthold": "Esta requisição já está em espera ou apagada.",
 	"confirmaccount-badaction": "Uma ação válida (aceitar, rejeitar, aguardar) deve ser especificada para poder prosseguir.",
-	"confirmaccount-acc": "Requisição de conta confirmada com sucesso; criada nova conta de usuário [[User:$1|$1]].",
-	"confirmaccount-rej": "Requisiçãode conta rejeitada com sucesso.",
+	"confirmaccount-mismatched": "Este campo deve coincidir com o respetivo pedido de conta original.",
+	"confirmaccount-mismatched-general": "Foi solicitada a substituição de um campo do pedido original da conta que não é permitido substituir, ou a opção \"enviar palavra-passe\" não foi selecionada.",
+	"confirmaccount-acc": "Pedido de conta confirmado;\n\tfoi criada a nova conta de usuário [[User:$1|$1]].",
+	"confirmaccount-rej": "Pedido de conta rejeitado.",
 	"confirmaccount-viewing": "(atualmente sendo visualizada {{GENDER:$1|pelo|pela|por}} [[User:$1|$1]])",
 	"confirmaccount-summary": "Criando a página de usuário para o usuário novo.",
 	"confirmaccount-welc": "'''Bem-vindo a ''{{SITENAME}}''!''' Esperamos que contribua muito e bem.\nProvavelmente você desejará ler as [{{MediaWiki:Helppage}} páginas de ajuda]. \nMais uma vez, seja bem-vindo e divirta-se!",
