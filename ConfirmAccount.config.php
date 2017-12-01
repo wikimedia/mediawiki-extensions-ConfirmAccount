@@ -30,7 +30,7 @@ $wgConfirmAccountRequestFormItems = [
 	# Real name of user
 	'RealName'        => [ 'enabled' => true ],
 	# Biographical info
-	'Biography'       => [ 'enabled' => true, 'minWords' => 50 ],
+	'Biography'       => [ 'enabled' => true, 'minWords' => 6 ],
 	# Interest checkboxes (defined in MediaWiki:requestaccount-areas)
 	'AreasOfInterest' => [ 'enabled' => true ],
 	# CV/resume attachment option
