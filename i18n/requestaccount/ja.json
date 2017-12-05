@@ -44,7 +44,7 @@
 	"requestaccount-tos": "私は {{SITENAME}} の[[{{MediaWiki:Requestaccount-page}}|サービス利用規約]]を既に熟読しており、これに同意し、遵守します。\n私が「本名」欄に記入した名前は、自分の本名であることに間違いありません。",
 	"requestaccount-submit": "アカウント申請",
 	"requestaccount-sent": "アカウント申請を送信しました。現在、承認を待っています。\nあなたのメールアドレスに確認メールをお送りしました。",
-	"request-account-econf": "あなたのメールアドレスを確認しました。アカウント申請にもそのように表示されます。",
+	"requestaccount-econf": "あなたのメールアドレスを確認しました。アカウント申請にもそのように表示されます。",
 	"requestaccount-email-subj": "{{SITENAME}} メールアドレスの確認",
 	"requestaccount-email-body": "誰か(おそらくあなた)が、IP アドレス $1 からこのメールアドレスで {{SITENAME}} のアカウント \"$2\" の作成を申請しました。\n\nこの {{SITENAME}}　のアカウントが本当にあなたのものか確認するために、以下のリンクをブラウザーで開いてください:\n\n$3\n\nアカウントが作成されると、あなたのみにパスワードをメールでお送りします。\nもしも、この申請があなたによるもの'''ではない'''場合、このリンクをクリックしないでください。\nこの確認手続きは $4 で期限切れになります。",
 	"requestaccount-email-subj-admin": "{{SITENAME}} のアカウント申請",

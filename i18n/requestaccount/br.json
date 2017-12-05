@@ -41,7 +41,7 @@
 	"requestaccount-tos": "Lennet em eus [[{{MediaWiki:Requestaccount-page}}|reolennoù implijout]] {{SITENAME}} hag asantiñ a ran doujañ outo.\nDa vat eo ma anv gwir an hini am eus merket dindan \"Anv gwir\".",
 	"requestaccount-submit": "Goulenn ur gont implijer",
 	"requestaccount-sent": "Kaset eo bet ervat ho koulenn krouiñ ur gont implijer; lakaet eo bet e roll gortoz ar goulennoù da vezañ aprouet.\nUr postel kadarnaat zo bet kaset d'ho chomlec'h postel.",
-	"request-account-econf": "Kadarnaet eo bet ho chomlec'h postel ha meneget e vo evel m'emañ en ho koulenn kont.",
+	"requestaccount-econf": "Kadarnaet eo bet ho chomlec'h postel ha meneget e vo evel m'emañ en ho koulenn kont.",
 	"requestaccount-email-subj": "Kadarnadenn chomlec'h postel evit {{SITENAME}}",
 	"requestaccount-email-body": "Unan bennak, c'hwi moarvat, gant ar chomlec'h IP $1, en deus goulennet sevel ur gont \"$2\" gant ar chomlec'h postel-mañ war {{SITENAME}}.\n\nEvit kadarnaat eo deoc'h ar gont-se war {{SITENAME}} e gwirionez, digorit al liamm-mañ en ho merdeer :\n\n$3\n\nMard eo bet krouet ar gont e vo kaset ar ger-tremen dre bostel deoc'h hepken\nMa n'eo ket gwir, *arabat* deoc'h implijout al liamm.\nMont a raio ar c'hod gwiriañ-mañ d'e dermen d'an $4.",
 	"requestaccount-email-subj-admin": "Goulenn kont evit {{SITENAME}}",

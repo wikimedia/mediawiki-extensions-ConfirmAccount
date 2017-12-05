@@ -37,7 +37,7 @@
 	"requestaccount-tos": "J’é liesu et pués j’accèpto les [[{{MediaWiki:Requestaccount-page}}|condicions d’usâjo]] de {{SITENAME}}.\nLo nom que j’é buchiê dens lo champ « Veré nom » est franc mon prôpro nom.",
 	"requestaccount-submit": "Demanda de compto usanciér",
 	"requestaccount-sent": "Voutra demanda de compto at étâ mandâ avouéc reusséta et pués at étâ betâ dens la lista d’atenta d’aprobacion.\nUn mèssâjo de confirmacion at étâ mandâ a voutra adrèce èlèctronica.",
-	"request-account-econf": "Voutra adrèce èlèctronica at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto usanciér.",
+	"requestaccount-econf": "Voutra adrèce èlèctronica at étâ confirmâ et serat listâ d’ense dens voutra demanda de compto usanciér.",
 	"requestaccount-email-subj": "Confirmacion de l’adrèce èlèctronica por {{SITENAME}}",
 	"requestaccount-email-body": "Quârqu’un, probâblament vos, at fêt, dês l’adrèce IP $1, una demanda de compto usanciér « $2 » avouéc ceta adrèce èlèctronica sur lo seto {{SITENAME}}.\n\nPor confirmar que cél compto est franc a vos dessus {{SITENAME}}, vos éte preyê d’uvrir ceti lim dens voutron navigator :\n\n$3\n\nVoutron contresegno vos serat mandâ ren que se voutron compto usanciér est fêt.\nS’o ére *pas* lo câs, utilisâd pas cél lim.\nCeti code de confirmacion èxpirerat lo $4.",
 	"requestaccount-email-subj-admin": "Demanda de compto dessus {{SITENAME}}",

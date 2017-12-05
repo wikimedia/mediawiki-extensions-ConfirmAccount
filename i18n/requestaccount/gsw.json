@@ -39,7 +39,7 @@
 	"requestaccount-tos": "Ich haa d [[{{MediaWiki:Requestaccount-page}}|Benutzigsbedingige]] vu {{SITENAME}} gläsen und akzeptier si.\nIch bstätige, ass dr Name, wun i unter „Realname“ aagee haa, myy wirklige Namen isch.",
 	"requestaccount-submit": "Aatrag stelle uf e Benutzerkonto",
 	"requestaccount-sent": "Dyy Aatrag isch erfolgryych verschickt wore un muess jetz no iberprieft wäre.\nE Bstetigungs-Mail isch an Dyy E-Mail-Adräss gschickt wore.",
-	"request-account-econf": "Dyy E-Mail-Adräss isch bstätigt woren un wird jetz as sonigi in Dyynem Benutzerkonte-Aatrag gfiert.",
+	"requestaccount-econf": "Dyy E-Mail-Adräss isch bstätigt woren un wird jetz as sonigi in Dyynem Benutzerkonte-Aatrag gfiert.",
 	"requestaccount-email-subj": "{{SITENAME}} E-Mail-Adrässe-Priefig",
 	"requestaccount-email-body": "Eber mit dr IP Adräss $1, villicht Du, het bi {{SITENAME}} mit Dyynere E-Mail-Adräss e Aatrag uf s Benutzerkonto „$2“ gstellt.\n\nGo bstätigen, ass wirkli Du ne Aatrag uf des Konto bi {{SITENAME}} gstellt hesch, mach bitte in Dyynem Browser de Link uf:\n\n$3\n\nWänn s Benutzerkonto aagleit woren isch, chunnsch no ne E-Mail mit em Passwort iber.\n\nWänn Du *kei* Aatrag gstellt hesch uf s Benutzerkonto, mach de Link bitte nit uf!\n\nDää Bstätigungscode isch ab em $4 nimmi giltig.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} Benutzerkontenaatrag",

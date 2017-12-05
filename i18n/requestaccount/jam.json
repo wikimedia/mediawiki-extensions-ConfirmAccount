@@ -37,7 +37,7 @@
 	"requestaccount-tos": "Mi riid ahn grii fi abaid bai di [[{{MediaWiki:Requestaccount-page}}|Toerm a Saabis]] a {{SITENAME}}.\nDi niem mi spesifai anda \"Riil niem\" a mi riil niem fi chuu.",
 	"requestaccount-submit": "Rikwes akount",
 	"requestaccount-sent": "Yu akount rikwes sen soksesfuli ahn nou pendin rivyuu.\nA kanfamieshan rivyuu sen tu yu e-miel ajres.",
-	"request-account-econf": "Yu e-miel ajres kanfoerm ahn wi lis az soch ina yu akount rejista.",
+	"requestaccount-econf": "Yu e-miel ajres kanfoerm ahn wi lis az soch ina yu akount rejista.",
 	"requestaccount-email-subj": "{{SITENAME}} e-miel ajres kanfamieshan",
 	"requestaccount-email-body": "Smadi, prabli yu frahn IP ajres $1, rikwes a akount \"$2\" wid dis e-miel ajres pahn {{SITENAME}}.\n\nFi kanfoerm se dis akount riili bilangx tu yu pahn {{SITENAME}}, opn dis lingk ina yu brouza:\n\n$3\n\nEf di akount kriet, onngl yu wi get e-miel wid di paaswod.\nEf dis a *no* yu, no fala di lingk.\nDis kanfamieshan kuod wi expaya a $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} akount rikwes",

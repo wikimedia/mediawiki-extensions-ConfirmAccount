@@ -40,7 +40,7 @@
 	"requestaccount-tos": "Ech hunn d'[[{{MediaWiki:Requestaccount-page}}|Benotzungsbedingunge]] vu(n) {{SITENAME}} gelies an akzeptzéieren se.\nDen Numm den ech bei \"Richtegen Numm\" uginn hunn, ass mäin eegene richtegen Numm.",
 	"requestaccount-submit": "Benotzerkont ufroen",
 	"requestaccount-sent": "Är Ufro fir e Benotzerkont gouf fortgeschéckt a muss elo nach akzeptéiert ginn.\nEng Konfirmatiounsmail gouf op Är E-mailadress geschéckt.",
-	"request-account-econf": "Är E-Mail-Adress gouf confirméiert a gëtt elo als E-Mail-Adress an är Ufro fir e Benotzerkont integréiert.",
+	"requestaccount-econf": "Är E-Mail-Adress gouf confirméiert a gëtt elo als E-Mail-Adress an är Ufro fir e Benotzerkont integréiert.",
 	"requestaccount-email-subj": "{{SITENAME}} Konfirmatioun vun der E-Mail-Adress",
 	"requestaccount-email-body": "Een, wahrscheinlech Dir vun der IP-Adress $1, huet e Benotzerkont \"$2\" mat dëser E-Mail-Adress op {{SITENAME}} ugefrot.\n\nFir ze confirméieren datt dëse Benotzerkont op {{SITENAME}} Iech wierklech gehéiert, klickt w.e.g. op dëse Link an Ärem Browser:\n\n$3\n\nWann De Benotzerkont ugeluecht ass, kritt Dir eleng d'Passwuert per E-Mail geschéckt.\nWann Dir et *net\" sidd, da klickt net op de Link.\nDës Confirmatioun ass just valabel bis $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} Ufro fir ee Benotzerkont",

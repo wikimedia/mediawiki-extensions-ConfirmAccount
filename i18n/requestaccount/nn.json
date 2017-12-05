@@ -40,7 +40,7 @@
 	"requestaccount-tos": "Eg har lese og vil fylgja [[{{MediaWiki:Requestaccount-page}}|tenestevilkåra]] til {{SITENAME}}. Namnet eg har gjeve under «Verkeleg namn» er det faktiske namnet mitt.",
 	"requestaccount-submit": "Be om konto",
 	"requestaccount-sent": "Kontoførespurnaden din er vorten sendt, og ventar no på godkjenning. Ein e-post med ei stadfesting av dette er vorten send til e-postadressa di.",
-	"request-account-econf": "E-postadressa di er no stadfest, og dette vil verta lista i kontoførespurnaden.",
+	"requestaccount-econf": "E-postadressa di er no stadfest, og dette vil verta lista i kontoførespurnaden.",
 	"requestaccount-email-subj": "Stadfesting av E-postadressa hjå {{SITENAME}}",
 	"requestaccount-email-body": "Nokon, sannsynlegvis deg frå IP-adressa $1, har bede om ein konto «$2» med denne e-postadressa på {{SITENAME}}.\n\nOpna denne lekkja i nettlesaren din for å stadfesta at denne førespurnaden verkeleg kjem frå deg:\n\n$3\n\nOm kontoen vert oppretta vil berre du motta passordet.\nOm førespurnaden *ikkje* kjem frå deg, ikkje følg lekkja.\nDenne stadfestingskoden går ut $4.",
 	"requestaccount-email-subj-admin": "Kontoførespurnad på {{SITENAME}}",

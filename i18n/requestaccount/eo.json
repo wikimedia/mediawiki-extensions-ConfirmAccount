@@ -27,7 +27,7 @@
 	"requestaccount-exts": "Dosiertipo de aldonaĵo estas malpermesita.",
 	"requestaccount-submit": "Peti konton",
 	"requestaccount-sent": "Via konta peto estas sukcese sendita kaj nun bezonas kontrolon.\nKonfirma retpoŝto estas sendita al via retpoŝtadreso.",
-	"request-account-econf": "Via retadreso estis konfirmita kaj estos listigita tiel en via konta peto.",
+	"requestaccount-econf": "Via retadreso estis konfirmita kaj estos listigita tiel en via konta peto.",
 	"requestaccount-email-subj": "{{SITENAME}} retpoŝta konfirmo",
 	"requestaccount-email-body": "Iu, verŝajne vi de IP-adreso $1, petis konton \"$2\" kun ĉi tiu retadreso ĉe {{SITENAME}}.\n\nKonfirmi ke ĉi tiu konto ja apartenas al vi ĉe {{SITENAME}}, malfermu ĉi tiun ligilon en via retumilo:\n\n$3\n\nSe la konto estas kreita, nur al vi estos retpoŝtita la pasvorto.\nSe ĉi tio ne devenas al vi, ne sekvu la ligilon.\nĈi tiu konfirmado findatiĝis je $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} peto por konto",

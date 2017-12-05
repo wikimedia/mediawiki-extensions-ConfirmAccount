@@ -26,7 +26,7 @@
 	"requestaccount-exts": "Nav'i zamimaviji parvanda noravost.",
 	"requestaccount-tos": "Man [[{{MediaWiki:Requestaccount-page}}|Şarthoi Xidmati]] dar {{SITENAME}} budaro xondam va bo onho vafodor hastam.\nNomi muşaxxaskardai man zeri \"Nomi Aslī\" dar haqiqat nomi asliji xudi man ast.",
 	"requestaccount-submit": "Darxosti hisob",
-	"request-account-econf": "Nişonai poctai elektroniji şumo tasdiq şud va hamin tavr dar darxosti hisobi şumo fehrist xohad şud.",
+	"requestaccount-econf": "Nişonai poctai elektroniji şumo tasdiq şud va hamin tavr dar darxosti hisobi şumo fehrist xohad şud.",
 	"requestaccount-email-subj": "{{SITENAME}} tasdiqi nişonai poctai elektronī",
 	"requestaccount-email-body": "Şaxse, ehtimolan şumo az nişonai IP $1, hisobi \"$2\" bo nişonai poctai elektronī dar {{SITENAME}} darxost kard.\n\nBaroi tasdiq, ki in hisob dar haqiqat ba şumo dar {{SITENAME}} taaluq dorad, in pajvandro dar mururgaraton boz kuned:\n\n$3\n\nAgar hisob eçod şuda boşad, tanho ba şumo kalimai ubur tariqi poctai elektronī firistoda xohad şud.\nAgar in şumo *nest*, pajvandro dunbol nakuned.\nIn kodi tasdiq dar $4 ba xotima xohad rasid.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} darxosti hisob",

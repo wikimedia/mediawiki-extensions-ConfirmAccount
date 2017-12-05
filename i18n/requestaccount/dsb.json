@@ -39,7 +39,7 @@
 	"requestaccount-tos": "Som pśecytał [[{{MediaWiki:Requestaccount-page}}|wužywańske wuměnjenja]] {{GRAMMAR:genitiw|{{SITENAME}}}} a lubim se jich źaržaś.\nMě, kótarež som pód \"napšawdne mě\" pódał, jo napšawdu mójo napšawdne mě.",
 	"requestaccount-submit": "Póžedanje na konto stajiś",
 	"requestaccount-sent": "Twójo póžedanje na konto jo se wuspěšnje wótpósłało a caka něnto na pśeglědanje. Wobkšuśeńska e-mail jo se pósłała na twóju e-mailowu adresu.",
-	"request-account-econf": "Twója e-mailowa adresa jo se wobkšuśiła a nalicyjo ako taka w twójim póžedanju na konto.",
+	"requestaccount-econf": "Twója e-mailowa adresa jo se wobkšuśiła a nalicyjo ako taka w twójim póžedanju na konto.",
 	"requestaccount-email-subj": "{{SITENAME}} wobkšuśenje e-mailoweje adrese",
 	"requestaccount-email-body": "Něchten, nejskerjej ty z IP-adrese $1, jo stajił póžedanje na konto \"$2\" z toś teju e-mailoweju adresu na {{GRAMMAR:lokatiw|{{SITENAME}}}}.\n\nAby wobkšuśił, až toś to konto napšawdu śi słuša na {{GRAMMAR:lokatiw|{{SITENAME}}}}, wócyń toś ten wótkaz w swójom wobglědowaku:\n\n$3\n\nJolic konto jo załožone, dostanjoš jano ty gronidło pśez e-mail.\nJolic konto śi *nje*słuša, njewócyń ten wótkaz.\nToś ten wobkšuśeński kod pśepadnjo $4.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} póžedanje na konto",

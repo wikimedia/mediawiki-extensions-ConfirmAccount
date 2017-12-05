@@ -38,7 +38,7 @@
 	"requestaccount-tos": "Jiena qrajt u qbilt li nirrispetta t-[[{{MediaWiki:Requestaccount-page}}|termini tas-servizz]] ta' {{SITENAME}}.\nL-isem li tajt taħt \"Isem proprju\" huwa fil-fatt il-veru isem tiegħi.",
 	"requestaccount-submit": "Itlob il-kont",
 	"requestaccount-sent": "Ir-rikjesa tiegħek għal kont intbagħet b'suċċess u issa qiegħdha tiġi verifikata.\nMessaġġ ta' konferma se tintbagħtlek fl-indirizz elettroniku tiegħek.",
-	"request-account-econf": "L-indirizz elettroniku tiegħek ġie kkonfermat u se jiġi mniżżel bħala tali fir-rikjesta tiegħek għal kont.",
+	"requestaccount-econf": "L-indirizz elettroniku tiegħek ġie kkonfermat u se jiġi mniżżel bħala tali fir-rikjesta tiegħek għal kont.",
 	"requestaccount-email-subj": "Konferma tal-indirizz elettroniku għal {{SITENAME}}",
 	"requestaccount-email-body": "Xi ħadd, probabbilment int mill-indirizz IP $1, talab għall-kont \"$2\" b'dan l-indirizz tal-posta elettronika fuq {{SITENAME}}.\n\nBiex tikkonferma li dan il-kont tassew jappartjeni għalik, iftaħ il-ħolqa segwenti:\n\n$3\n\nMeta l-kont jiġi maħluq, il-password se tintbagħat lilek biss permezz tal-posta elettronika.\nJekk il-kont *mhuwiex* tiegħek, issegwix il-ħolqa.\nDan il-kodiċi ta' konferma se jiskadi fil-$4.",
 	"requestaccount-email-subj-admin": "Rikjesta għal kont fuq {{SITENAME}}",

@@ -41,7 +41,7 @@
 	"requestaccount-tos": "Nabasa ko na at sumasang-ayong susundin ang [[{{MediaWiki:Requestaccount-page}}|Mga Patakaran ng Paglilingkod]] ng {{SITENAME}}.\nSa katunayan, ang pangalang tinukoy ko sa ilalim ng \"Totoong pangalan\" ay ang talagang sarili kong totoong pangalan.",
 	"requestaccount-submit": "Hilingin ang account",
 	"requestaccount-sent": "Matagumpay na naipadala ang paghiling mo ng account at naghihintay na ngayon ng pagsusuri.\nNagpadala na ng isang e-mail ng pagpapatotoo sa iyong email address.",
-	"request-account-econf": "Natiyak na ang iyong email address at itatala bilang ganyan sa loob ng paghiling mo ng account.",
+	"requestaccount-econf": "Natiyak na ang iyong email address at itatala bilang ganyan sa loob ng paghiling mo ng account.",
 	"requestaccount-email-subj": "Pagtitiyak ng {{SITENAME}} sa adres ng e-liham",
 	"requestaccount-email-body": "May isang tao, marahil ikaw na nagmula sa IP address na $1, ang humiling ng isang account na \"$2\" na may ganitong email address sa {{SITENAME}}.\n\nUpang patotohanan na talagang ikaw ang may-ari ng account na itong nasa {{SITENAME}}, buksan ang kawing na ito sa iyong browser:\n\n$3\n\nKapag nalikha na ang account, sa iyo lamang ipapadala ang password sa pamamagitan ng email.\nKung *hindi* ikaw ito, huwag sundan ang link.\nMawawalan ng bisa ang kodigo ng pagpapatotoong ito sa $4.",
 	"requestaccount-email-subj-admin": "Paghiling ng account sa {{SITENAME}}",

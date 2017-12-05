@@ -37,7 +37,7 @@
 	"requestaccount-tos": "Prečítal som a súhlasím, že budem dodržiavať [[{{MediaWiki:Requestaccount-page}}|Podmienky používania služby]] {{GRAMMAR:genitív|{{SITENAME}}}}. Meno, ktoré som uviedol ako „Skutočné meno“ je naozaj moje občianske meno.",
 	"requestaccount-submit": "Požiadať o účet",
 	"requestaccount-sent": "Vaša žiadosť o účet bola úspešne odoslaná a teraz sa čaká na jej kontrolu.\nNa vašu emailovú adresu vám bola odoslaná potvrdzujúca správa.",
-	"request-account-econf": "Vaša emailová adresa bola potvrdená a v takomto tvare sa uvedie vo vašej žiadosti o účet.",
+	"requestaccount-econf": "Vaša emailová adresa bola potvrdená a v takomto tvare sa uvedie vo vašej žiadosti o účet.",
 	"requestaccount-email-subj": "potvrdenie e-mailovej adresy pre {{GRAMMAR:akuzatív|{{SITENAME}}}}",
 	"requestaccount-email-body": "Niekto, pravdepodobne vy z IP adresy $1, zaregistroval účet\n\"$2\" s touto e-mailovou adresou na {{GRAMMAR:lokál|{{SITENAME}}}}.\n\nPre potvrdenie, že tento účet skutočne patrí vám a pre aktivovanie\ne-mailových funkcií na {{GRAMMAR:lokál|{{SITENAME}}}}, otvorte tento odkaz vo vašom prehliadači:\n\n$3\n\nAk ste to *neboli* vy, neotvárajte odkaz. Tento potvrdzovací kód\nvyprší o $4.",
 	"requestaccount-email-subj-admin": "Žiadosť o účet vo {{GRAMMAR:lokál|{{SITENAME}}}}",

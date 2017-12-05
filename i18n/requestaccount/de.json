@@ -50,7 +50,7 @@
 	"requestaccount-tos": "Ich habe die [[{{MediaWiki:Requestaccount-page}}|Nutzungsbedingungen]] von {{SITENAME}} gelesen und akzeptiere sie.\nIch bestätige, dass der Name, den ich unter „Bürgerlicher Name“ angegeben habe, mein wirklicher Name ist.",
 	"requestaccount-submit": "Benutzerkonto beantragen",
 	"requestaccount-sent": "Dein Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.\nEine Bestätigungs-E-Mail wurde an deine E-Mail-Adresse gesendet.",
-	"request-account-econf": "Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in deinem Antrag auf ein Benutzerkonto geführt.",
+	"requestaccount-econf": "Deine E-Mail-Adresse wurde bestätigt und wird nun als solche in deinem Antrag auf ein Benutzerkonto geführt.",
 	"requestaccount-email-subj": "[{{SITENAME}}] Bestätigung der E-Mail-Adresse",
 	"requestaccount-email-body": "Jemand, möglicherweise du mit der IP-Adresse $1, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit deiner E-Mail-Adresse beantragt.\n\nUm zu bestätigen, dass wirklich du dieses Konto bei {{SITENAME}} beantragt hast, öffne bitte folgenden Link in deinem Browser:\n\n$3\n\nWenn das Benutzerkonto erstellt wurde, bekommst du eine weitere E-Mail mit dem Passwort.\n\nWenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!\n\nZeitpunkt des Auslaufs des Bestätigungscodes: $4.",
 	"requestaccount-email-subj-admin": "[{{SITENAME}}] Antrag auf Benutzerkonto",

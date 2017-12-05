@@ -39,7 +39,7 @@
 	"requestaccount-tos": "Saya telah membaca dan bersetuju untuk mematuhi [[{{MediaWiki:Requestaccount-page}}|Syarat-Syarat Perkhidmatan]] {{SITENAME}}.\nNama yang saya nyatakan dalam ruangan \"Nama sebenar\" sememangnya nama sebenar saya sendiri.",
 	"requestaccount-submit": "Mohon akaun",
 	"requestaccount-sent": "Permohonan akaun anda berjaya dihantar dan sedang menunggu untuk dikaji.\n\tSatu pesanan e-mel pengesahan telah dihantar ke alamat e-mel anda.",
-	"request-account-econf": "Alamat e-mel anda telah disahkan dan akan disenaraikan dalam permohonan akaun anda.",
+	"requestaccount-econf": "Alamat e-mel anda telah disahkan dan akan disenaraikan dalam permohonan akaun anda.",
 	"requestaccount-email-subj": "Pengesahan alamat e-mel {{SITENAME}}",
 	"requestaccount-email-body": "Seseorang, mungkin anda dari alamat IP $1, telah memohon akaun \"$2\" dengan alamat e-mel ini di {{SITENAME}}.\n\nUntuk mengesahkan bahawa akaun ini benar-benar milik anda di {{SITENAME}}, buka pautan berikut dalam pelayar anda:\n\n$3\n\nJika akaun ini dibuka, hanya anda yang akan diberi kata laluan melalui e-mel.\nJika ini *bukan* anda, jangan ikut pautan ini.\nKod pengesahan ini akan luput pada $4.",
 	"requestaccount-email-subj-admin": "Permohonan akaun {{SITENAME}}",

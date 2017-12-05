@@ -35,7 +35,7 @@
 	"requestaccount-tos": "Iek hääbe do [[{{MediaWiki:Requestaccount-page}}|Benutsengsbedingengen]] fon {{SITENAME}} leesen un akzeptierje do.\nIek bestäätigje, dät die Noome, dän iek unner „Realname“ ounroat hääbe, min wuddelke Noome is.",
 	"requestaccount-submit": "Fräigje uum n Benutserkonto",
 	"requestaccount-sent": "Dien Andraach wuude mäd Ärfoulch fersoand un mout nu noch wröiged wäide.",
-	"request-account-econf": "Dien E-Mail-Adresse wuude bestäätiged un wäd nu as sodoane in dien  Account-Froage fierd.",
+	"requestaccount-econf": "Dien E-Mail-Adresse wuude bestäätiged un wäd nu as sodoane in dien  Account-Froage fierd.",
 	"requestaccount-email-subj": "{{SITENAME}} E-Mail-Adressen Wröich",
 	"requestaccount-email-body": "Wäl mäd ju IP-Adresse $1, muugelkerwiese du, häd bie {{SITENAME}} uum dät Benutserkonto \"$2\" mäd dien E-Mail Adresse fräiged.\n\nUum tou bestäätigjen, dät wuddelk du uum dit Konto bie {{SITENAME}} fräiged hääst, eepenje foulgjende Ferbiendenge in din Browser:\n\n$3\n\nWan dät Benutserkonto moaked wuude, krichst du ne E-Mail mäd dät Paaswoud.\n\nWan du *nit* uum dät Benutserkonto fräiged hääst, eepenje ju Ferbiendenge nit!\n\nDisse Bestäätigengscode wäd uum $4 uungultich.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} Benutserkontenandraach",
