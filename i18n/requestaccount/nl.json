@@ -6,7 +6,8 @@
 			"SPQRobin",
 			"Siebrand",
 			"Esketti",
-			"Mainframe98"
+			"Mainframe98",
+			"Mar(c)"
 		]
 	},
 	"requestaccount": "Gebruiker aanvragen",
@@ -19,7 +20,7 @@
 	"requestaccount-leg-person": "Persoonlijke gegevens",
 	"requestaccount-leg-other": "Overige informatie",
 	"requestaccount-leg-tos": "Gebruiksvoorwaarden",
-	"requestaccount-acc-text": "U ontvangt een e-mailbevestiging als uw aanvraag ontvangen is.\nReageer door te klikken op de koppeling in de e-mail.\nU krijgt een wachtwoord per e-mail toegestuurd als uw gebruiker is aangemaakt.",
+	"requestaccount-acc-text": "Er wordt een bevestigingsbericht naar uw e-mailadres verzonden zodra u dit verzoek indient. Het adres zal niet worden gepubliceerd.\nReageer door op de bevestigingskoppeling in de e-mail te klikken.\nUw wachtwoord wordt per e-mail naar u verzonden zodra uw account is aangemaakt.",
 	"requestaccount-areas-text": "Selecteer hieronder de onderwerpen waarmee u ervaring hebt of waar u denkt het meeste aan te gaan bijdragen.",
 	"requestaccount-ext-text": "De volgende informatie wordt vertrouwelijk behandeld en wordt alleen gebruikt voor deze aanvraag.\nU kunt contactgegevens zoals een telefoonnummer opgeven om te helpen bij het vaststellen van uw identiteit.",
 	"requestaccount-bio-text": "Probeer uw belangrijkste gegevens op te nemen.",
