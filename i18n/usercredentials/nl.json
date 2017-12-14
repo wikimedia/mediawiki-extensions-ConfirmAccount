@@ -3,13 +3,14 @@
 		"authors": [
 			"Annabel",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Mar(c)"
 		]
 	},
-	"usercredentials": "Referenties van gebruiker",
-	"usercredentials-leg": "Bevestigde referenties voor gebruiker",
+	"usercredentials": "Gebruikersgegevens",
+	"usercredentials-leg": "Bevestigde gebruikersgegevens bekijken",
 	"usercredentials-user": "Gebruikersnaam:",
-	"usercredentials-text": "Overzicht van de bevestigde referenties voor de geselecteerde gebruiker:",
+	"usercredentials-text": "Overzicht van bevestigde gegevens voor het geselecteerde gebruikersaccount:",
 	"usercredentials-leg-user": "Gebruikersaccount",
 	"usercredentials-leg-areas": "Interessegebieden",
 	"usercredentials-leg-person": "Persoonlijke gegevens",
@@ -25,5 +26,5 @@
 	"usercredentials-xff": "Oorspronkelijke X-Forwarded-For:",
 	"usercredentials-agent": "Oorspronkelijke User-Agent:",
 	"usercredentials-member": "Rechten:",
-	"usercredentials-badid": "Geen referenties gevonden voor deze gebruiker.\nKijk na of de naam correct gespeld is."
+	"usercredentials-badid": "Geen gegevens gevonden voor deze gebruiker.\nControleer of de naam correct gespeld is."
 }
