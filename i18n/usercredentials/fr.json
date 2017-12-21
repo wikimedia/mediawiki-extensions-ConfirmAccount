@@ -14,7 +14,8 @@
 			"Sherbrooke",
 			"Urhixidur",
 			"Verdy p",
-			"Zetud"
+			"Zetud",
+			"Tuxxic"
 		]
 	},
 	"usercredentials": "Références de l'utilisateur",
@@ -36,5 +37,5 @@
 	"usercredentials-xff": "X-Forwarded-For d'origine:",
 	"usercredentials-agent": "User-Agent d'origine:",
 	"usercredentials-member": "Droits :",
-	"usercredentials-badid": "Aucune référence trouvée pour cet utilisateur. Véfifiez que le nom soit bien rédigé."
+	"usercredentials-badid": "Aucune référence trouvée pour cet utilisateur. Vérifiez que le nom soit bien rédigé."
 }
