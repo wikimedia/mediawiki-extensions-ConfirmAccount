@@ -39,7 +39,7 @@ class ConfirmAccountSetup {
 		$messagesDirs['RequestAccountPage'] = __DIR__ . '/i18n/requestaccount';
 		# UI to confirm accounts
 		$classes['ConfirmAccountsPage'] = "$spActionDir/ConfirmAccount_body.php";
-		$classes['ConfirmAccountsPager'] = "$spActionDir/ConfirmAccount_body.php";
+		$classes['ConfirmAccountsPager'] = "$spActionDir/ConfirmAccountsPager.php";
 		$messagesDirs['ConfirmAccountPage'] = __DIR__ . '/i18n/confirmaccount';
 		# UI to see account credentials
 		$classes['UserCredentialsPage'] = "$spActionDir/UserCredentials_body.php";
