@@ -81,7 +81,7 @@
 	"confirmaccount-acc": "Accountaanvraag goedgekeurd;\ngebruikersaccount [[User:$1|$1]] is aangemaakt.",
 	"confirmaccount-rej": "Accountaanvraag afgewezen.",
 	"confirmaccount-viewing": "({{GENDER:$1|wordt}} op dit moment bekeken door [[User:$1|$1]])",
-	"confirmaccount-summary": "Gebruikerspagina aanmaken voor nieuwe gebruiker.",
+	"confirmaccount-summary": "Gebruikerspagina voor nieuwe gebruiker maken.",
 	"confirmaccount-welc": "'''Welkom bij ''{{SITENAME}}''!'''\nWe hopen dat u veel en goed gaat bijdragen.\nWellicht wilt u eerst de [{{MediaWiki:Helppage}} hulppagina's] lezen.\nNogmaals welkom en veel plezier!",
 	"confirmaccount-wsum": "Welkom!",
 	"confirmaccount-email-subj": "{{SITENAME}} accountaanvraag",
