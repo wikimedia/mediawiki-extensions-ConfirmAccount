@@ -1,6 +1,6 @@
 <?php
 /*
- (c) Aaron Schulz 2007, GPL-2.0+
+ (c) Aaron Schulz 2007, GPL-2.0-or-later
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ $wgExtensionCredits['specialpage'][] = [
 	'descriptionmsg' => 'confirmaccount-desc',
 	'author' => 'Aaron Schulz',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:ConfirmAccount',
-	'license-name' => 'GPL-2.0+'
+	'license-name' => 'GPL-2.0-or-later'
 ];
 
 # Load default config variables
