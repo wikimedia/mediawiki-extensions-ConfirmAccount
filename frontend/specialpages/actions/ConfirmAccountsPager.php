@@ -41,7 +41,7 @@ class ConfirmAccountsPager extends ReverseChronologicalPager {
 	}
 
 	/**
-	 * @param $row
+	 * @param stdClass $row
 	 * @return string
 	 */
 	function formatRow( $row ) {

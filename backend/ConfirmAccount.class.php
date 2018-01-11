@@ -82,7 +82,7 @@ class ConfirmAccount {
 	 * Generate, store, and return a new email confirmation code.
 	 * A hash (unsalted since it's used as a key) is stored.
 	 * @param User $user
-	 * @param string $expiration
+	 * @param string &$expiration
 	 * @return string
 	 */
 	public static function getConfirmationToken( $user, &$expiration ) {
@@ -125,7 +125,7 @@ class ConfirmAccount {
 	/**
 	 * Get a request name from an email confirmation token
 	 *
-	 * @param $code string
+	 * @param string $code
 	 * @return string|false
 	 */
 	public static function requestNameFromEmailToken( $code ) {
@@ -141,8 +141,8 @@ class ConfirmAccount {
 
 	/**
 	 * Get the number of account requests for a request type
-	 * @param $type int
-	 * @return Array Assosiative array with 'open', 'held', 'type' keys mapping to integers
+	 * @param int $type
+	 * @return array Assosiative array with 'open', 'held', 'type' keys mapping to integers
 	 */
 	public static function getOpenRequestCount( $type ) {
 		$dbr = wfGetDB( DB_REPLICA );
@@ -163,7 +163,7 @@ class ConfirmAccount {
 
 	/**
 	 * Get the number of open email-confirmed account requests for a request type
-	 * @param $type int|string A request type or '*' for all
+	 * @param int|string $type A request type or '*' for all
 	 * @return int
 	 */
 	public static function getOpenEmailConfirmedCount( $type = '*' ) {

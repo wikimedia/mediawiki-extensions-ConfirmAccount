@@ -65,7 +65,7 @@ class AccountRequestSubmission {
 
 	/**
 	 * Attempt to validate and submit this data to the DB
-	 * @param $context IContextSource
+	 * @param IContextSource $context
 	 * @return array [ true or error key string, html error msg or null ]
 	 */
 	public function submit( IContextSource $context ) {

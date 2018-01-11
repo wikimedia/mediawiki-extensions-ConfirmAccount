@@ -5,8 +5,7 @@
 class ConfirmAccountUISetup {
 	/**
 	 * Register ConfirmAccount hooks.
-	 * @param $hooks array $wgHooks (assoc array of hooks and handlers)
-	 * @return void
+	 * @param array &$hooks $wgHooks (assoc array of hooks and handlers)
 	 */
 	public static function defineHookHandlers( array &$hooks ) {
 		# Make sure "login / create account" notice still as "create account"
@@ -24,8 +23,7 @@ class ConfirmAccountUISetup {
 
 	/**
 	 * Register ConfirmAccount special pages as needed.
-	 * @param $pages array $wgSpecialPages (list of special pages)
-	 * @return void
+	 * @param array &$pages $wgSpecialPages (list of special pages)
 	 */
 	public static function defineSpecialPages( array &$pages ) {
 		$pages['RequestAccount'] = 'RequestAccountPage';
@@ -35,8 +33,7 @@ class ConfirmAccountUISetup {
 
 	/**
 	 * Append ConfirmAccount resource module definitions
-	 * @param $modules array $wgResourceModules
-	 * @return void
+	 * @param array &$modules $wgResourceModules
 	 */
 	public static function defineResourceModules( array &$modules ) {
 		$modules['ext.confirmAccount'] = [

@@ -256,7 +256,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	/**
-	 * @param $msg string
+	 * @param string $msg
 	 */
 	protected function showAccountConfirmForm( $msg = '' ) {
 		global $wgAccountRequestTypes;
@@ -530,7 +530,7 @@ class ConfirmAccountsPage extends SpecialPage {
 
 	/**
 	 * Show a private file requested by the visitor.
-	 * @param $key string
+	 * @param string $key
 	 */
 	protected function showFile( $key ) {
 		global $wgConfirmAccountFSRepos;
@@ -600,9 +600,8 @@ class ConfirmAccountsPage extends SpecialPage {
 
 	/**
 	 * Get requested account request row and load some fields
-	 * @param $id int
-	 * @param $wasPosted bool
-	 * @return void
+	 * @param int $id
+	 * @param bool $wasPosted
 	 */
 	protected function loadAccountRequest( $id, $wasPosted ) {
 		$from = $wasPosted ? 'dbmaster' : 'dbslave';
@@ -673,9 +672,9 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	/**
-	 * @param $submitType string
-	 * @param $name string User name
-	 * @param $errors array
+	 * @param string $submitType
+	 * @param string $name User name
+	 * @param array $errors
 	 */
 	protected function showSuccess( $submitType, $name = null, $errors = [] ) {
 		$out = $this->getOutput();
@@ -734,7 +733,7 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	/**
-	 * @param $row
+	 * @param stdClass $row
 	 * @return string
 	 */
 	public function formatRow( $row ) {

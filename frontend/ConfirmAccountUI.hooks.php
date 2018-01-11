@@ -4,7 +4,7 @@
  */
 class ConfirmAccountUIHooks {
 	/**
-	 * @param $template
+	 * @param SkinTemplate &$template
 	 * @return bool
 	 */
 	public static function addRequestLoginText( &$template ) {
@@ -19,9 +19,9 @@ class ConfirmAccountUIHooks {
 	}
 
 	/**
-	 * @param $personal_urls
-	 * @param $title
-	 * @param $skin
+	 * @param array &$personal_urls
+	 * @param Title $title
+	 * @param SkinTemplate $skin
 	 * @return bool
 	 */
 	public static function setRequestLoginLinks(
@@ -39,8 +39,8 @@ class ConfirmAccountUIHooks {
 
 	/**
 	 * Add "x email-confirmed open account requests" notice
-	 * @param OutputPage $out
-	 * @param Skin $skin
+	 * @param OutputPage &$out
+	 * @param Skin &$skin
 	 * @return bool
 	 */
 	public static function confirmAccountsNotice( OutputPage &$out, Skin &$skin ) {
@@ -70,7 +70,7 @@ class ConfirmAccountUIHooks {
 
 	/**
 	 * For AdminLinks extension
-	 * @param $admin_links_tree
+	 * @param ALTree &$admin_links_tree
 	 * @return bool
 	 */
 	public static function confirmAccountAdminLinks( &$admin_links_tree ) {
@@ -91,7 +91,7 @@ class ConfirmAccountUIHooks {
 	/**
 	 * @param array $requests
 	 * @param array $fieldInfo
-	 * @param array $formDescriptor
+	 * @param array &$formDescriptor
 	 * @param string $action
 	 * @return bool
 	 * @throws ErrorPageError

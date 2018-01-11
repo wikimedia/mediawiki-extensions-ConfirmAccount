@@ -362,7 +362,7 @@ class RequestAccountPage extends SpecialPage {
 
 	/**
 	 * Initialize the uploaded file from PHP data
-	 * @param $request WebRequest
+	 * @param WebRequest $request
 	 */
 	protected function initializeUpload( $request ) {
 		$file = new WebRequestUpload( $request, 'wpUploadFile' );
@@ -374,7 +374,7 @@ class RequestAccountPage extends SpecialPage {
 	/**
 	 * (a) Try to confirm an email address via a token
 	 * (b) Notify $wgConfirmAccountContact on success
-	 * @param $code string The token
+	 * @param string $code The token
 	 * @return void
 	 */
 	protected function confirmEmailToken( $code ) {

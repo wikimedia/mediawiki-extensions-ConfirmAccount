@@ -212,8 +212,7 @@ class UserCredentialsPage extends SpecialPage {
 
 	/**
 	 * Show a private file requested by the visitor.
-	 * @param $key string
-	 * @return void
+	 * @param string $key
 	 */
 	function showFile( $key ) {
 		global $wgConfirmAccountFSRepos;

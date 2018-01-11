@@ -7,10 +7,9 @@ class ConfirmAccountSetup {
 	 * Register source code paths.
 	 * This function must NOT depend on any config vars.
 	 *
-	 * @param $classes Array $classes
-	 * @param $messagesDirs Array $messagesDirs
-	 * @param $messagesFiles Array $messagesFiles
-	 * @return void
+	 * @param array &$classes
+	 * @param array &$messagesDirs
+	 * @param array &$messagesFiles
 	 */
 	public static function defineSourcePaths(
 		array &$classes, array &$messagesDirs, array &$messagesFiles

@@ -32,7 +32,7 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @param $row
+	 * @param stdClass $row
 	 * @return UserAccountRequest
 	 */
 	public static function newFromRow( $row ) {
@@ -68,7 +68,7 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @param $fields array
+	 * @param array $fields
 	 * @return UserAccountRequest
 	 */
 	public static function newFromArray( array $fields ) {
@@ -121,8 +121,8 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @param $id int
-	 * @param $from string|null 'dbmaster' to use DB master
+	 * @param int $id
+	 * @param string|null $from 'dbmaster' to use DB master
 	 * @return UserAccountRequest|null
 	 */
 	public static function newFromId( $id, $from = null ) {
@@ -137,8 +137,8 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @param $name string
-	 * @param $from string|null 'dbmaster' to use DB master
+	 * @param string $name
+	 * @param string|null $from 'dbmaster' to use DB master
 	 * @return UserAccountRequest|null
 	 */
 	public static function newFromName( $name, $from = null ) {
@@ -209,7 +209,7 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @param $flat string Use 'flat' to get a raw blob back
+	 * @param string $flat Use 'flat' to get a raw blob back
 	 * @return array|string Flat blob or array from expanded blob
 	 */
 	public function getAreas( $flat = 'expanded' ) {
@@ -364,9 +364,9 @@ class UserAccountRequest {
 
 	/**
 	 * Mark this request as rejected
-	 * @param $admin User
-	 * @param $timestamp string
-	 * @param $reason string
+	 * @param User $admin
+	 * @param string $timestamp
+	 * @param string $reason
 	 * @return bool Success
 	 */
 	public function markRejected( User $admin, $timestamp, $reason = '' ) {
@@ -385,9 +385,9 @@ class UserAccountRequest {
 
 	/**
 	 * Mark this request as held
-	 * @param $admin User
-	 * @param $timestamp string
-	 * @param $reason string
+	 * @param User $admin
+	 * @param string $timestamp
+	 * @param string $reason
 	 * @return bool Success
 	 */
 	public function markHeld( User $admin, $timestamp, $reason = '' ) {
@@ -419,6 +419,7 @@ class UserAccountRequest {
 
 	/**
 	 * Try to acquire a username in the request queue for insertion
+	 * @param string $name
 	 * @return bool
 	 */
 	public static function acquireUsername( $name ) {
@@ -433,6 +434,7 @@ class UserAccountRequest {
 
 	/**
 	 * Try to acquire an email address in the request queue for insertion
+	 * @param string $email
 	 * @return bool
 	 */
 	public static function acquireEmail( $email ) {
@@ -448,7 +450,7 @@ class UserAccountRequest {
 	/**
 	 * Flatten areas of interest array
 	 * Used by ConfirmAccountsPage
-	 * @param $areas Array
+	 * @param array $areas
 	 * @todo just serialize()
 	 * @return string
 	 */
@@ -463,7 +465,7 @@ class UserAccountRequest {
 	/**
 	 * Expand areas of interest to array
 	 * Used by ConfirmAccountsPage
-	 * @param $areas string
+	 * @param string $areas
 	 * @todo just unserialize()
 	 * @return Array
 	 */
@@ -479,7 +481,7 @@ class UserAccountRequest {
 	/**
 	 * Get path relative to zone for an account request attachment file.
 	 * This assures compatibility with the old FileStore sytem.
-	 * @param $key string File storage key
+	 * @param string $key File storage key
 	 * @return string
 	 */
 	public static function relPathFromKey( $key ) {
