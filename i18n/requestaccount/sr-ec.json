@@ -5,7 +5,8 @@
 			"Rancher",
 			"Sasa Stefanovic",
 			"Михајло Анђелковић",
-			"Сербијана"
+			"Сербијана",
+			"Acamicamacaraca"
 		]
 	},
 	"requestaccount-leg-user": "Кориснички налог",
@@ -21,7 +22,7 @@
 	"requestaccount-level-1": "уређивач",
 	"requestaccount-info": "(?)",
 	"requestaccount-bio": "Лична биографија (само прост текст):",
-	"requestaccount-attach": "Резиме или радна биографија (необавезно):",
+	"requestaccount-attach": "Опис или радна биографија (необавезно):",
 	"requestaccount-notes": "Додатне напомене:",
 	"requestaccount-urls": "Списак вебсајтова, ако их има (одвојени новим линијама):",
 	"requestaccount-agree": "Морате да потврдите да сте добро унели своје право име и да се сложите са условима коришћења.",

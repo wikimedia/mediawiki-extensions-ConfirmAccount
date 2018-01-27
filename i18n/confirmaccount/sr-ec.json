@@ -4,7 +4,8 @@
 			"Rancher",
 			"Sasa Stefanovic",
 			"Михајло Анђелковић",
-			"Сербијана"
+			"Сербијана",
+			"Acamicamacaraca"
 		]
 	},
 	"confirmaccount-none-o": "Тренутно нема нерешених захтева у овом списку.",
@@ -40,7 +41,7 @@
 	"confirmaccount-pos-0": "аутор",
 	"confirmaccount-pos-1": "уређивач",
 	"confirmaccount-bio": "Животопис:",
-	"confirmaccount-attach": "Резиме/CV:",
+	"confirmaccount-attach": "Опис/CV:",
 	"confirmaccount-notes": "Додатне напомене:",
 	"confirmaccount-urls": "Списак вебсајтова:",
 	"confirmaccount-none-p": "(није приложено)",

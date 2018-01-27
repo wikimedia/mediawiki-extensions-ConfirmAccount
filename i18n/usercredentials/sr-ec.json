@@ -5,7 +5,8 @@
 			"Sasa Stefanovic",
 			"Михајло Анђелковић",
 			"Milicevic01",
-			"Сербијана"
+			"Сербијана",
+			"Acamicamacaraca"
 		]
 	},
 	"usercredentials-user": "Корисничко име:",
@@ -17,9 +18,9 @@
 	"usercredentials-email": "Имејл адреса:",
 	"usercredentials-real": "Право име:",
 	"usercredentials-bio": "Животопис:",
-	"usercredentials-attach": "Резиме/CV:",
+	"usercredentials-attach": "Опис/CV:",
 	"usercredentials-notes": "Додатне напомене:",
 	"usercredentials-urls": "Списак вебсајтова:",
-	"usercredentials-ip": "Оригинална ИП адреса:",
+	"usercredentials-ip": "Оригинална IP адреса:",
 	"usercredentials-member": "Права:"
 }
