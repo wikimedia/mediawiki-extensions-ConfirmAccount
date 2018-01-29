@@ -5,7 +5,8 @@
 			"Sasa Stefanovic",
 			"Михајло Анђелковић",
 			"Сербијана",
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"Zoranzoki21"
 		]
 	},
 	"confirmaccount-none-o": "Тренутно нема нерешених захтева у овом списку.",
@@ -57,7 +58,7 @@
 	"confirmaccount-deny": "Одбаци (скини са списка)",
 	"confirmaccount-hold": "Заустави",
 	"confirmaccount-reason": "Коментар (биће укључен у поруци):",
-	"confirmaccount-ip": "ИП адреса:",
+	"confirmaccount-ip": "IP адреса:",
 	"confirmaccount-submit": "Потврди",
 	"confirmaccount-needreason": "Морате навести разлог у кутијици за коментаре испод.",
 	"confirmaccount-canthold": "Овај захтев је већ стопиран или обрисан.",
