@@ -7,7 +7,8 @@
 			"Luckas",
 			"Malafaya",
 			"Waldir",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Athena in Wonderland"
 		]
 	},
 	"usercredentials": "Credenciais do utilizador",
@@ -24,7 +25,7 @@
 	"usercredentials-bio": "Biografia:",
 	"usercredentials-attach": "Currículo:",
 	"usercredentials-notes": "Notas adicionais:",
-	"usercredentials-urls": "Lista de sites na internet:",
+	"usercredentials-urls": "Lista de sítios na internet:",
 	"usercredentials-ip": "Endereço IP original:",
 	"usercredentials-xff": "X-Forwarded-For original:",
 	"usercredentials-agent": "User-Agent original:",

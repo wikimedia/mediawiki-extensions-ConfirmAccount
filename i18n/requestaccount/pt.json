@@ -7,7 +7,8 @@
 			"Luckas",
 			"Malafaya",
 			"Waldir",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Athena in Wonderland"
 		]
 	},
 	"requestaccount": "Pedir conta",
@@ -34,7 +35,7 @@
 	"requestaccount-bio": "Biografia pessoal (só texto):",
 	"requestaccount-attach": "Currículo (opcional):",
 	"requestaccount-notes": "Notas adicionais:",
-	"requestaccount-urls": "Lista de sites na internet, se algum (um por linha):",
+	"requestaccount-urls": "Lista de sítios na internet, se algum (um por linha):",
 	"requestaccount-agree": "Deverá certificar-se que o seu nome real está correto e que concorda com os nossos termos de serviço.",
 	"requestaccount-inuse": "O nome de utilizador já está em uso num pedido de conta pendente.",
 	"requestaccount-tooshort": "A sua biografia tem que ter pelo menos $1 {{PLURAL:$1|palavra|palavras}}.",
