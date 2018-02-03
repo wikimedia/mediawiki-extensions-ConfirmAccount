@@ -77,10 +77,8 @@ class UserCredentialsPage extends SpecialPage {
 
 		$list = [];
 		foreach ( $user->getGroups() as $group ) {
-			$list[] = User::makeGroupLinkHTML(
-				$group,
-				User::getGroupMember( $group, $user->getName() )
-			);
+			$list[] = UserGroupMembership::getLink(
+				$group, $this->getContext(), 'html', $user->getName() );
 		}
 
 		$grouplist = '';
