@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class AccountConfirmSubmission {
 	/* User making the confirmation */
 	protected $admin;
@@ -84,7 +86,8 @@ class AccountConfirmSubmission {
 	}
 
 	protected function rejectRequest( IContextSource $context ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
 
 		$ok = $this->accountReq->markRejected( $this->admin, wfTimestampNow(), $this->reason );
@@ -105,7 +108,7 @@ class AccountConfirmSubmission {
 				$emailBody
 			);
 			if ( !$result->isOk() ) {
-				wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+				$lbFactory->rollbackMasterChanges( __METHOD__ );
 				return [
 					'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
@@ -136,13 +139,14 @@ class AccountConfirmSubmission {
 			];
 		}
 
-		$dbw = wfGetDB( DB_MASTER );
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
 
 		# If not already held or deleted, mark as held
 		$ok = $this->accountReq->markHeld( $this->admin, wfTimestampNow(), $this->reason );
 		if ( !$ok ) { // already held or deleted?
-			wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+			$lbFactory->rollbackMasterChanges( __METHOD__ );
 			return [
 				'accountconf_canthold',
 				$context->msg( 'confirmaccount-canthold' )->escaped(),
@@ -158,7 +162,7 @@ class AccountConfirmSubmission {
 			)->inContentLanguage()->text()
 		);
 		if ( !$result->isOk() ) {
-			wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+			$lbFactory->rollbackMasterChanges( __METHOD__ );
 			return [
 				'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
@@ -202,7 +206,8 @@ class AccountConfirmSubmission {
 		# Now create user and check if the name is valid
 		$user = User::newFromName( $this->userName, false );
 
-		$dbw = wfGetDB( DB_MASTER );
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
 
 		# Grant any necessary rights (exclude blank or dummy groups)
@@ -226,7 +231,7 @@ class AccountConfirmSubmission {
 				$triplet = [ $oldPath, 'public', $pathRel ];
 				$status = $repoNew->storeBatch( [ $triplet ] ); // copy!
 				if ( !$status->isOK() ) {
-					wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+					$lbFactory->rollbackMasterChanges( __METHOD__ );
 					return [
 						'accountconf_copyfailed',
 						$context->getOutput()->parse( $status->getWikiText() ),

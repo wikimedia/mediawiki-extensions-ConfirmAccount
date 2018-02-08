@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Auth\AuthManager;
+use MediaWiki\MediaWikiServices;
 
 class AccountRequestSubmission {
 	/* User making the request */
@@ -154,7 +155,8 @@ class AccountRequestSubmission {
 		$u->setEmail( $this->email );
 		$u->setRealName( $this->realName );
 
-		$dbw = wfGetDB( DB_MASTER );
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ ); // ready to acquire locks
 		# Check pending accounts for name use
 		if ( !UserAccountRequest::acquireUsername( $u->getName() ) ) {
@@ -211,7 +213,7 @@ class AccountRequestSubmission {
 			$triplet = [ $this->attachmentTempPath, 'public', $pathRel ];
 			$status = $repo->storeBatch( [ $triplet ], FileRepo::OVERWRITE_SAME ); // save!
 			if ( !$status->isOk() ) {
-				wfGetLBFactory()->rollbackMasterChanges( __METHOD__ );
+				$lbFactory->rollbackMasterChanges( __METHOD__ );
 				return [ 'acct_request_file_store_error',
 					$context->msg( 'filecopyerror', $this->attachmentTempPath, $pathRel )->escaped() ];
 			}
@@ -245,7 +247,7 @@ class AccountRequestSubmission {
 		# Send confirmation, required!
 		$result = ConfirmAccount::sendConfirmationMail( $u, $this->ip, $token, $expires );
 		if ( !$result->isOK() ) {
-			wfGetLBFactory()->rollbackMasterChanges( __METHOD__ ); // nevermind
+			$lbFactory->rollbackMasterChanges( __METHOD__ ); // nevermind
 			if ( isset( $repo ) && isset( $pathRel ) ) { // remove attachment
 				$repo->cleanupBatch( [ [ 'public', $pathRel ] ] );
 			}
