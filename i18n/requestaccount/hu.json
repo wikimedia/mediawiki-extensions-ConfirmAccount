@@ -7,10 +7,12 @@
 			"Glanthor Reviol",
 			"Tgr",
 			"Macofe",
-			"Tacsipacsi"
+			"Tacsipacsi",
+			"Bencemac"
 		]
 	},
 	"requestaccount": "Felhasználói fiók kérése",
+	"requestaccount-login": "Felhasználói fiók kérése",
 	"requestaccount-text": "'''Az alábbi űrlap kitöltésével kérhetsz felhasználói fiókot'''.\n\nMindenek előtt olvasd el a [[{{MediaWiki:Requestaccount-page}}|használat feltételeit]].\n\nHa a felhasználói fiókodat elfogadjuk, értesítve leszel e-mailben, ezután beléphetsz vele a [[Special:UserLogin|bejelentkezés]] lapon.",
 	"requestaccount-page": "{{ns:project}}:Használati feltételek",
 	"requestaccount-dup": "'''Megjegyzés: már be vagy jelentkezve egy regisztrált felhasználói fiókkal.'''",
