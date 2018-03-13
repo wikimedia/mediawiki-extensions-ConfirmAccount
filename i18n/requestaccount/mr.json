@@ -5,10 +5,12 @@
 			"Kaustubh",
 			"Mahitgar",
 			"Shantanoo",
-			"V.narsikar"
+			"V.narsikar",
+			"Sureshkhole"
 		]
 	},
 	"requestaccount": "खात्यासाठी विनंती करा",
+	"requestaccount-login": "खात्यासाठी विनंती करा",
 	"requestaccount-text": "'''खाते तयार करण्यासाठी खालील अर्ज भरून पाठवा'''.\n\nअर्ज पाठविण्यापूर्वी तुम्ही [[{{MediaWiki:Requestaccount-page}}|अटी व नियम]] वाचलेले असल्याची खात्री करा.\n\nएकदा का खाते तयार झाले की तुम्हाला तसा विपत्र संदेश येईल व तुम्ही [[Special:UserLogin]] मध्ये प्रवेश करू शकाल.",
 	"requestaccount-page": "{{ns:project}}:सेवाशर्ती",
 	"requestaccount-dup": "'''सूचना: तुम्ही अगोदरच नोंदीकृत खात्यामधून प्रवेश केलेला आहे.'''",
