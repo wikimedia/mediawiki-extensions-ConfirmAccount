@@ -13,7 +13,8 @@
 			"Cwlin0416",
 			"Liuxinyu970226",
 			"飞舞回堂前",
-			"Suchichi02"
+			"Suchichi02",
+			"Kly"
 		]
 	},
 	"confirmaccounts": "確認帳號請求",
@@ -74,7 +75,7 @@
 	"confirmaccount-deny": "拒絕 （反列示）",
 	"confirmaccount-hold": "掛起",
 	"confirmaccount-spam": "垃圾（請不要傳送電子郵件）",
-	"confirmaccount-reason": "註解 （在電郵中使用）:",
+	"confirmaccount-reason": "註解（包含在回退和擱置電郵裡）：",
 	"confirmaccount-ip": "IP位址：",
 	"confirmaccount-xff": "X-Forwarded-For:",
 	"confirmaccount-agent": "使用者-代理：",
@@ -83,6 +84,8 @@
 	"confirmaccount-needreason": "您必須在下方的評論欄闡述您的理由。",
 	"confirmaccount-canthold": "該請求已被搁置，或已被刪除。",
 	"confirmaccount-badaction": "必須指定有效操作（接受，拒绝，搁置）才可繼續。",
+	"confirmaccount-mismatched": "此欄位必須符合原有帳號請求。",
+	"confirmaccount-mismatched-general": "對原有帳戶請求欄位覆寫的請求未被允許，或是「電子郵件密碼」選項未被設定。",
 	"confirmaccount-acc": "帳戶請求已確認；已經建立一個新的使用者帳號[[User:$1]]。",
 	"confirmaccount-rej": "帳號請求已經拒絕。",
 	"confirmaccount-viewing": "（目前正由[[User:$1|$1]]瀏覽）",
