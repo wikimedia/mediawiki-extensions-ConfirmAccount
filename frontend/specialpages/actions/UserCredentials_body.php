@@ -44,19 +44,27 @@ class UserCredentialsPage extends SpecialPage {
 		$out = $this->getOutput();
 
 		$username = str_replace( '_', ' ', $this->target );
-		$form = Xml::openElement(
-			'form', [ 'name' => 'stablization', 'action' => $wgScript, 'method' => 'get' ]
-		);
-		$form .= "<fieldset><legend>" . $this->msg( 'usercredentials-leg' )->escaped() . "</legend>";
-		$form .= "<table><tr>";
-		$form .= "<td>" . Html::Hidden( 'title', $this->getPageTitle()->getPrefixedText() ) . "</td>";
-		$form .= "<td>" . $this->msg( "usercredentials-user" )->escaped() . "</td>";
-		$form .= "<td>" . Xml::input( 'target', 35, $username, [ 'id' => 'wpUsername' ] ) . "</td>";
-		$form .= "<td>" . Xml::submitButton( $this->msg( 'go' )->text() ) . "</td>";
-		$form .= "</tr></table>";
-		$form .= "</fieldset></form>\n";
+		$formDescriptor = [
+			'user' => [
+				'type' => 'user',
+				'id' => 'wpUsername',
+				'name' => 'target',
+				'label' => $this->msg( 'usercredentials-user' )->escaped(),
+				'size' => 35,
+				'value' => $username
+			]
+		];
 
-		$out->addHTML( $form );
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
+		$htmlForm
+			->addHiddenField( 'title', $this->getPageTitle()->getPrefixedText() )
+			->setAction( $wgScript )
+			->setMethod( 'get' )
+			->setName( 'stablization' )
+			->setSubmitTextMsg( 'go' )
+			->setWrapperLegend( $this->msg( 'usercredentials-leg' )->escaped() )
+			->prepareForm()
+			->displayForm( false );
 	}
 
 	function showCredentials() {
