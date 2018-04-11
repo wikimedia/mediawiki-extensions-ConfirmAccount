@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Тест"
+			"Тест",
+			"Artsiom91"
 		]
 	},
+	"confirmaccount-name": "Імя ўдзельніка",
 	"confirmaccount-pos-0": "аўтар",
 	"confirmaccount-submit": "Пацвердзіць"
 }
