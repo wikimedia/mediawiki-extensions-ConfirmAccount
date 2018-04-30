@@ -10,6 +10,7 @@
 		]
 	},
 	"requestaccount": "طلب حساب",
+	"requestaccount-login": "طلب حساب",
 	"requestaccount-text": "'''أكمل وابعث الاستمارة التالية لطلب حساب'''.\n\nتأكد أولا من قراءة [[{{MediaWiki:Requestaccount-page}}|شروط الخدمة]] قبل طلب حساب.\n\n\tمتى تمت الموافقة على الحساب، سيتم إرسال رسالة إخطار إليك والحساب سيصبح قابلا للاستخدام في\n[[Special:UserLogin|تسجيل الدخول]].",
 	"requestaccount-page": "{{ns:project}}:شروط الخدمة",
 	"requestaccount-dup": "'''ملاحظة: أنت مسجل الدخول بالفعل بحساب مسجل.'''",

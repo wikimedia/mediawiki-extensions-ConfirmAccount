@@ -4,7 +4,8 @@
 			"Ciphers",
 			"Meno25",
 			"OsamaK",
-			"ترجمان05"
+			"ترجمان05",
+			"ديفيد"
 		]
 	},
 	"usercredentials": "مؤهلات المستخدم",
@@ -15,6 +16,7 @@
 	"usercredentials-leg-areas": "الاهتمامات الرئيسية",
 	"usercredentials-leg-person": "المعلومات الشخصية",
 	"usercredentials-leg-other": "معلومات أخرى",
+	"usercredentials-leg-ip": "بيانات عنوان الآيبي",
 	"usercredentials-email": "البريد الإلكتروني:",
 	"usercredentials-real": "الاسم الحقيقي:",
 	"usercredentials-bio": "السيرة الشخصية:",
@@ -22,6 +24,8 @@
 	"usercredentials-notes": "ملاحظات إضافية:",
 	"usercredentials-urls": "قائمة مواقع الويب:",
 	"usercredentials-ip": "عنوان الأيبي الأصلي:",
+	"usercredentials-xff": "X-Forwarded-For الأصلي:",
+	"usercredentials-agent": "وكيل المستخدم الأصلي:",
 	"usercredentials-member": "الصلاحيات:",
 	"usercredentials-badid": "لا مؤهلات تم العثور عليها لهذا المستخدم.\nتأكد من أن الاسم مكتوب بطريقة صحيحة."
 }
