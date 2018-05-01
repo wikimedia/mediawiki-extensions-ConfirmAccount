@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"requestaccount-loginnotice": "Για να έχετε ένα λογαριασμό χρήστη, πρέπει να '''[[Special:RequestAccount|ζητήσετε ένα]]'''.",
+	"right-confirmaccount": "Προβολή της [[Special:ConfirmAccounts|ουράς με τους αιτούμενους λογαριασμούς]]",
+	"right-lookupcredentials": "Προβολή [[Special:UserCredentials|πιστοποιητικών χρήστη]]",
+	"action-confirmaccount": "θεώρηση και έγκριση λογαριασμών"
+}

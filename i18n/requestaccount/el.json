@@ -6,10 +6,12 @@
 			"Egmontaz",
 			"Omnipaedista",
 			"Tifa93",
-			"ZaDiak"
+			"ZaDiak",
+			"Nikosgranturismogt"
 		]
 	},
 	"requestaccount": "Αίτηση λογαριασμού",
+	"requestaccount-login": "Αίτηση λογαριασμού",
 	"requestaccount-page": "{{ns:project}}:Όροι Χρήσης",
 	"requestaccount-leg-user": "Λογαριασμός χρήστη",
 	"requestaccount-leg-areas": "Κύρια πεδία ενδιαφέροντος",
