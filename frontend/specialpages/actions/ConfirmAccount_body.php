@@ -673,7 +673,7 @@ class ConfirmAccountsPage extends SpecialPage {
 
 	/**
 	 * @param string $submitType
-	 * @param string $name User name
+	 * @param string|null $name User name
 	 * @param array $errors
 	 */
 	protected function showSuccess( $submitType, $name = null, $errors = [] ) {
