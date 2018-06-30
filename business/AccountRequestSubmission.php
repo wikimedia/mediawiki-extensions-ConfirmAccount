@@ -97,7 +97,7 @@ class AccountRequestSubmission {
 		}
 		# No request spamming...
 		if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
-			$key = wfMemcKey( 'acctrequest', 'ip', $this->ip );
+			$key = $cache->makeKey( 'acctrequest', 'ip', $this->ip );
 			$value = (int)$cache->get( $key );
 			if ( $value > $wgAccountRequestThrottle ) {
 				return [
@@ -268,7 +268,7 @@ class AccountRequestSubmission {
 			# No request spamming...
 			if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
 				$ip = $context->getRequest()->getIP();
-				$key = wfMemcKey( 'acctrequest', 'ip', $ip );
+				$key = $cache->makeKey( 'acctrequest', 'ip', $ip );
 				$value = $cache->incr( $key );
 				if ( !$value ) {
 					$cache->set( $key, 1, 86400 );

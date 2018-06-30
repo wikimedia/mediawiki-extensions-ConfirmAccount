@@ -518,7 +518,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		global $wgMemc;
 		# Set a key to who is looking at this request.
 		# Have it expire in 10 minutes...
-		$key = wfMemcKey( 'acctrequest', 'view', $accountReq->getId() );
+		$key = $wgMemc->makeKey( 'acctrequest', 'view', $accountReq->getId() );
 		$wgMemc->set( $key, $reqUser->getID(), 60 * 10 );
 	}
 
@@ -776,7 +776,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			)->parse() . '</b>';
 		}
 		# Check if someone is viewing this request
-		$key = wfMemcKey( 'acctrequest', 'view', $row->acr_id );
+		$key = $wgMemc->makeKey( 'acctrequest', 'view', $row->acr_id );
 		$value = $wgMemc->get( $key );
 		if ( $value ) {
 			$r .= ' <b>' . $this->msg( 'confirmaccount-viewing', User::whoIs( $value ) )->parse() . '</b>';

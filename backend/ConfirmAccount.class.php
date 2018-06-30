@@ -170,7 +170,7 @@ class ConfirmAccount {
 		global $wgMemc;
 
 		# Check cached results
-		$key = wfMemcKey( 'confirmaccount', 'econfopencount', $type );
+		$key = $wgMemc->makeKey( 'confirmaccount', 'econfopencount', $type );
 		$count = $wgMemc->get( $key );
 		# Only show message if there are any such requests
 		if ( $count === false ) {
@@ -199,7 +199,7 @@ class ConfirmAccount {
 		$types = array_keys( $wgAccountRequestTypes );
 		$types[] = '*'; // "all" types count
 		foreach ( $types as $type ) {
-			$key = wfMemcKey( 'confirmaccount', 'econfopencount', $type );
+			$key = $wgMemc->makeKey( 'confirmaccount', 'econfopencount', $type );
 			$wgMemc->delete( $key );
 		}
 	}
