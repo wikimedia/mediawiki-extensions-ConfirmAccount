@@ -52,7 +52,7 @@ class ConfirmAccount {
 	/**
 	 * Flag a user's email as confirmed in the db
 	 *
-	 * @param sring $name
+	 * @param string $name
 	 */
 	public static function confirmEmail( $name ) {
 		$dbw = wfGetDB( DB_MASTER );
@@ -250,7 +250,7 @@ class ConfirmAccount {
 	 * Get the text to add to this users page for describing editing topics
 	 * for each "area" a user can be in, as defined in MediaWiki:requestaccount-areas.
 	 *
-	 * @return Array Associative mapping of the format:
+	 * @return array Associative mapping of the format:
 	 *    (name => ('project' => x, 'userText' => y, 'grpUserText' => (request type => z)))
 	 * Any of the ultimate values can be the empty string
 	 */
@@ -315,7 +315,9 @@ class ConfirmAccount {
 		if ( !count( $groups ) ) {
 			return UserArray::newFromResult( new FakeResultWrapper( [] ) );
 		}
+
 		$dbr = wfGetDB( DB_REPLICA );
+
 		return UserArray::newFromResult( $dbr->select(
 			[ 'user' ],
 			[ '*' ],

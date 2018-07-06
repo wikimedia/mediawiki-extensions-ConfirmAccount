@@ -9,7 +9,7 @@ class RequestAccountPage extends SpecialPage {
 	protected $mUrls; // string
 	protected $mToS; // bool
 	protected $mType; // integer
-	/** @var Array */
+	/** @var array */
 	protected $mAreas;
 
 	protected $mPrevAttachment; // string
@@ -245,6 +245,7 @@ class RequestAccountPage extends SpecialPage {
 		global $wgConfirmAccountCaptchas, $wgCaptchaClass, $wgCaptchaTriggers;
 		if ( $wgConfirmAccountCaptchas && isset( $wgCaptchaClass )
 			&& $wgCaptchaTriggers['createaccount'] && !$reqUser->isAllowed( 'skipcaptcha' ) ) {
+			/** @var SimpleCaptcha $captcha */
 			$captcha = new $wgCaptchaClass;
 
 			$formInformation = $captcha->getFormInformation();
@@ -389,8 +390,9 @@ class RequestAccountPage extends SpecialPage {
 			ConfirmAccount::confirmEmail( $name );
 
 			$adminsNotify = ConfirmAccount::getAdminsToNotify();
+			$adminsNotify->rewind();
 			# Send an email to admin after email has been confirmed
-			if ( $adminsNotify->count() || $wgConfirmAccountContact != '' ) {
+			if ( $adminsNotify->valid() || $wgConfirmAccountContact != '' ) {
 				$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
 				$subject = $this->msg(
 					'requestaccount-email-subj-admin' )->inContentLanguage()->escaped();
