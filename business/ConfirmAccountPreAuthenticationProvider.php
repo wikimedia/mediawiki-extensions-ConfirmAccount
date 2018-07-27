@@ -33,7 +33,7 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 	 * @param array $reqs
 	 * @return bool
 	 * @throws MWException
-	 * @TODO: avoid using global WebRequest and use dedicate auth request class
+	 * @todo avoid using global WebRequest and use dedicate auth request class
 	 */
 	public function testForAccountCreation( $user, $creator, array $reqs ) {
 		$request = RequestContext::getMain()->getRequest();
