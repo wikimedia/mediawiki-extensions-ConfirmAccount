@@ -6,7 +6,8 @@
 			"Михајло Анђелковић",
 			"Сербијана",
 			"Acamicamacaraca",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"BadDog"
 		]
 	},
 	"confirmaccount-none-o": "Тренутно нема нерешених захтева у овом списку.",
@@ -54,7 +55,7 @@
 	"confirmaccount-noreason": "(нема)",
 	"confirmaccount-autorej": "(овај захтев је био аутоматски одбачен због неактивности)",
 	"confirmaccount-held": "(означено као \"стопирано\" од [[User:$1|$1]] на $2)",
-	"confirmaccount-create": "Прихвати (направи налог)",
+	"confirmaccount-create": "Прихвати (отвори налог)",
 	"confirmaccount-deny": "Одбаци (скини са списка)",
 	"confirmaccount-hold": "Заустави",
 	"confirmaccount-reason": "Коментар (биће укључен у поруци):",
