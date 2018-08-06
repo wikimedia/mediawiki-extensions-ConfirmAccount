@@ -13,6 +13,7 @@
 		]
 	},
 	"confirmaccounts": "Confirmar requisições de conta",
+	"confirmaccount-extensionname": "Confirme contas de usuário",
 	"confirmaccount-desc": "Possibilita aos burocratas confirmar requisições de conta",
 	"confirmaccount-maintext": "'''Esta página é usada para confirmar requisições de conta pendentes em ''{{SITENAME}}'''''.\n\nCada fila de requisições de conta consiste em três sub-filas, uma para requisições em aberto, outras para aquelas que foram colocadas em espera por outros administradores à espera de mais informação, e outra para requisições recentemente rejeitadas.\n\nQuando responder a uma requisição, reveja-a cuidadosamente e, se necessário, confirme a informação nela contida.\nAs suas ações serão registadas privadamente. Também é esperado que você reveja qualquer atividade que ocorra aqui além das suas próprias ações.",
 	"confirmaccount-list": "Abaixo encontra-se uma lista de requisições de conta à espera de aprovação.\nContas aprovadas serão criadas e removidas desta lista. Contas rejeitadas serão simplesmente eliminadas desta lista.",
