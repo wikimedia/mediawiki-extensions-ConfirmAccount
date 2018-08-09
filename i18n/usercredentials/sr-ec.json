@@ -6,7 +6,8 @@
 			"Михајло Анђелковић",
 			"Milicevic01",
 			"Сербијана",
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"BadDog"
 		]
 	},
 	"usercredentials-user": "Корисничко име:",
@@ -21,6 +22,6 @@
 	"usercredentials-attach": "Опис/CV:",
 	"usercredentials-notes": "Додатне напомене:",
 	"usercredentials-urls": "Списак вебсајтова:",
-	"usercredentials-ip": "Оригинална IP адреса:",
+	"usercredentials-ip": "Првобитна ИП адреса:",
 	"usercredentials-member": "Права:"
 }
