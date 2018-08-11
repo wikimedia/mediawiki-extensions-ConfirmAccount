@@ -6,12 +6,13 @@
 			"Sasa Stefanovic",
 			"Михајло Анђелковић",
 			"Сербијана",
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"BadDog"
 		]
 	},
 	"requestaccount-leg-user": "Кориснички налог",
 	"requestaccount-leg-areas": "Главне сфере интересовања",
-	"requestaccount-leg-person": "Лични подаци",
+	"requestaccount-leg-person": "Личне информације",
 	"requestaccount-leg-other": "Други подаци",
 	"requestaccount-leg-tos": "Услови коришћења",
 	"requestaccount-real": "Право име:",
