@@ -65,7 +65,7 @@ $wgConfirmAccountSortkey = false;
 # $wgConfirmAccountSortkey = array( '/^(.+) ([^ ]+)$/', '$2, $1' );
 
 # IMPORTANT: do we store the user's notes and credentials
-# for sucessful account request? This will be stored indefinetely
+# for successful account request? This will be stored indefinetely
 # and will be accessible to users with crediential lookup permissions
 $wgConfirmAccountSaveInfo = true;
 
