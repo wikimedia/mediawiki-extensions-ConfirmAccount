@@ -3,7 +3,8 @@
 		"authors": [
 			"Eitvys200",
 			"Homo",
-			"Tomasdd"
+			"Tomasdd",
+			"Manvydasz"
 		]
 	},
 	"confirmaccounts": "Patvirtinti paskyros prašymus",
@@ -52,7 +53,7 @@
 	"confirmaccount-rational": "Priežastis pateikta pareiškėjui:",
 	"confirmaccount-noreason": "(nėra)",
 	"confirmaccount-autorej": "(šis prašymas buvo automatiškai atmestas dėl neaktyvumo)",
-	"confirmaccount-held": "{{GENDER:$1|pažymėta}} „sulaikyta“ [[User:$1|$1]], $3 $4)",
+	"confirmaccount-held": "({{GENDER:$1|pažymėjo}} „sulaikyta“ [[User:$1|$1]], $3 $4)",
 	"confirmaccount-blockip": "Blokuoti IP adresą",
 	"confirmaccount-create": "Patvirtinti (kurti paskyrą)",
 	"confirmaccount-hold": "Vygdyti",
