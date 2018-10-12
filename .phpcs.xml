@@ -8,6 +8,9 @@
 		<exclude name="Squiz.PHP.NonExecutableCode.ReturnNotRequired" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
 	</rule>
+	<rule ref="Generic.Files.LineLength">
+		<exclude-pattern>ConfirmAccount\.*alias\.php</exclude-pattern>
+	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php,php5,inc"/>
 	<arg name="encoding" value="UTF-8"/>
