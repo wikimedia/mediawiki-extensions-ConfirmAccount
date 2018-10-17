@@ -72,6 +72,8 @@ class AccountRequestSubmission {
 	public function submit( IContextSource $context ) {
 		global $wgAccountRequestThrottle, $wgConfirmAccountRequestFormItems;
 
+		ConfirmAccount::runAutoMaintenance();
+
 		$cache = ObjectCache::getLocalClusterInstance();
 		$formConfig = $wgConfirmAccountRequestFormItems; // convience
 		$reqUser = $this->requester;

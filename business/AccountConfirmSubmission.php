@@ -38,6 +38,8 @@ class AccountConfirmSubmission {
 	 * @return array [ true or error key string, html error msg or null, redirect URL ]
 	 */
 	public function submit( IContextSource $context ) {
+		ConfirmAccount::runAutoMaintenance();
+
 		# Make sure that basic permissions are checked
 		if ( !$this->admin->getID() || !$this->admin->isAllowed( 'confirmaccount' ) ) {
 			return [

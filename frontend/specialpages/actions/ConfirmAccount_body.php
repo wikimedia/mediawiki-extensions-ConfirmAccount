@@ -725,11 +725,6 @@ class ConfirmAccountsPage extends SpecialPage {
 				$out->addWikiMsg( 'confirmaccount-none-o' );
 			}
 		}
-
-		# Every 30th view, prune old deleted items
-		if ( 0 == mt_rand( 0, 29 ) ) {
-			ConfirmAccount::runAutoMaintenance();
-		}
 	}
 
 	/**
