@@ -384,21 +384,22 @@ class RequestAccountPage extends SpecialPage {
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 		# Confirm if this token is in the pending requests
-		$name = ConfirmAccount::requestNameFromEmailToken( $code );
-		if ( $name !== false ) {
+		list( $bodyArguments, $name,
+			$email_authenticated ) = ConfirmAccount::requestInfoFromEmailToken( $code );
+		if ( $name && $email_authenticated === null ) {
 			# Send confirmation email to prospective user
 			ConfirmAccount::confirmEmail( $name );
 
 			$adminsNotify = ConfirmAccount::getAdminsToNotify();
 			$adminsNotify->rewind();
 			# Send an email to admin after email has been confirmed
-			if ( $adminsNotify->valid() || $wgConfirmAccountContact != '' ) {
+			if ( $adminsNotify->count() || $wgConfirmAccountContact != '' ) {
 				$title = SpecialPage::getTitleFor( 'ConfirmAccounts' );
 				$subject = $this->msg(
 					'requestaccount-email-subj-admin' )->inContentLanguage()->escaped();
 				$body = $this->msg(
-					'requestaccount-email-body-admin', $name )->params(
-						$title->getCanonicalURL() )->inContentLanguage()->text();
+					'requestaccount-email-body-admin', $name, $title->getCanonicalURL(),
+					...$bodyArguments )->inContentLanguage()->text();
 				# Actually send the email...
 				if ( $wgConfirmAccountContact != '' ) {
 					$source = new MailAddress( $wgPasswordSender, wfMessage( 'emailsender' )->text() );

@@ -123,20 +123,29 @@ class ConfirmAccount {
 	}
 
 	/**
-	 * Get a request name from an email confirmation token
+	 * Get request information from an email confirmation token
 	 *
 	 * @param string $code
 	 * @return string|false
 	 */
-	public static function requestNameFromEmailToken( $code ) {
+	public static function requestInfoFromEmailToken( $code ) {
+		global $wgConfirmAdminEmailExtraFields;
 		$dbr = wfGetDB( DB_REPLICA );
-		return $dbr->selectField( 'account_requests',
-			'acr_name',
+		# Create updated array with acr_ prepended because of database names
+		$acrAdminEmailFields = array_merge( array_map( function ( $fieldName ) {
+			return ( 'acr_' . $fieldName );
+		}, $wgConfirmAdminEmailExtraFields ), [ 'acr_name', 'acr_email_authenticated' ] );
+		# Get all specified user information from database
+		$reqUserInfo = $dbr->selectRow( 'account_requests',
+			$acrAdminEmailFields,
 			[
 				'acr_email_token' => md5( $code ),
 				'acr_email_token_expires > ' . $dbr->addQuotes( $dbr->timestamp() ),
-			]
-		);
+			] );
+		# Split the essential array values and the possible body arguments
+		$adminEmailBodyArguments = array_slice( (array)$reqUserInfo, 0, -2 );
+		return [ array_values( $adminEmailBodyArguments ), $reqUserInfo->acr_name,
+			$reqUserInfo->acr_email_authenticated ];
 	}
 
 	/**
