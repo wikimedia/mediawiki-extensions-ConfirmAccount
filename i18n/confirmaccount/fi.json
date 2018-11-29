@@ -13,12 +13,13 @@
 			"Varusmies",
 			"VezonThunder",
 			"Pxos",
-			"01miki10"
+			"01miki10",
+			"Valtlait"
 		]
 	},
 	"confirmaccounts": "Myönnä käyttäjätunnuksia.",
 	"confirmaccount-desc": "Byrokraatit saavat oikeuden myöntää käyttäjätunnuksia.",
-	"confirmaccount-maintext": "'''Tällä sivulla myönnetään käyttäjätunnuksia sivustolle \"{{SITENAME}}\"'''.\n\nJokaisessa pyyntöjonossa on kolme alijonoa, käsittelemättömille pyynnöille,\nmuiden byrokraattien lisätietoja odottamaan pysäyttämille pyynnöille ja\nkolmas hiljattain hylätyille pyynnöille.\n\nTarkista pyyntö huolellisesti ennen vastaamista ja vahvista pyynnön tiedot tarvittaessa.\nToimenpiteesi kirjoitetaan yksityiseen lokiin. Tarkoitus on valvoa kaikkia täällä tehtäviä\ntoimia omien puuhiesi lisäksi.",
+	"confirmaccount-maintext": "'''Tällä sivulla myönnetään käyttäjätunnuksia sivustolle ”{{SITENAME}}”'''.\n\nJokaisessa pyyntöjonossa on kolme alijonoa, käsittelemättömille pyynnöille,\nmuiden byrokraattien lisätietoja odottamaan pysäyttämille pyynnöille ja\nkolmas hiljattain hylätyille pyynnöille.\n\nTarkista pyyntö huolellisesti ennen vastaamista ja vahvista pyynnön tiedot tarvittaessa.\nToimenpiteesi kirjoitetaan yksityiseen lokiin. Tarkoitus on valvoa kaikkia täällä tehtäviä\ntoimia omien puuhiesi lisäksi.",
 	"confirmaccount-list": "Alla on luettelo hyväksymistä odottavista pyynnöistä.\nHyväksytyt käyttäjätunnukset luodaan ja poistetaan luettelosta. Hylätyt pyynnöt vain poistetaan luettelosta.",
 	"confirmaccount-list2": "Alla on luettelo hiljattain hylätyistä pyynnöistä jotka voidaan poistaa automaattisesti, kun ne ovat useiden päivien ikäisiä.\nNe voidaan vieläkin hyväksyä käyttäjätunnuksiksi, mutta neuvottelethan ensin hylkäyksen tehneen ylläpitäjän kanssa.",
 	"confirmaccount-list3": "Alla on luettelo vanhentuneista tunnuspyynnöistä, jotka poistetaan automaattisesti muutaman päivän kuluttua.\nNämä voidaan vielä hyväksyä tunnuksiksi.",
@@ -68,7 +69,7 @@
 	"confirmaccount-rational": "Hakijalle kerrotut perustelut:",
 	"confirmaccount-noreason": "(ei mitään)",
 	"confirmaccount-autorej": "(tämä pyyntö on automaattisesti hylätty käyttämättömyyden vuoksi)",
-	"confirmaccount-held": "(\"pysäytetty\", pysäyttäjänä [[User:$1|$1]] $3 kello $4)",
+	"confirmaccount-held": "(”pysäytetty”, pysäyttäjänä [[User:$1|$1]] $3 kello $4)$1",
 	"confirmaccount-blockip": "Estä IP-osoite",
 	"confirmaccount-create": "Hyväksy (luo käyttäjätunnus)",
 	"confirmaccount-deny": "Hylkää (poista jonosta)",
@@ -90,7 +91,7 @@
 	"confirmaccount-email-subj": "Käyttäjätunnuspyyntö sivustolle {{SITENAME}}",
 	"confirmaccount-email-body": "Pyytämäsi käyttäjätunnus sivulle {{SITENAME}} on hyväksytty.\n\nKäyttäjätunnus: $1\n\nSalasana: $2\n\nSalasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:UserLogin}}.",
 	"confirmaccount-email-body2": "Pyytämäsi käyttäjätunnus sivulle {{SITENAME}} on hyväksytty.\n\nKäyttäjätunnus: $1\n\nSalasana: $2\n\n$3\n\nSalasana on vaihdettava ensimmäisellä sisäänkirjautumiskerralla tietoturvasyistä. Kirjaudu sisään sivulla {{fullurl:Special:UserLogin}}.",
-	"confirmaccount-email-body3": "Valitettavasti pyyntösi käyttäjätunnuksesta \"$1\" sivulle {{SITENAME}} on hylätty.\n\nHylkäämisen mahdollisia syitä on useita.\nLomaketta ei ehkä ole täytetty oikein, kuvaus ei ollut tarpeeksi pitkä tai joku muu toimintaperiaatteen ehdoista jäi täyttämättä.\nJos haluat tietää enemmän toimintaperiaatteista käyttäjätunnusten myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.",
-	"confirmaccount-email-body4": "Valitettavasti pyyntösi käyttäjätunnuksesta \"$1\" sivulle {{SITENAME}} on hylätty.\n\n$2\n\nJos haluat tietää enemmän toimintaperiaatteista käyttäjätunnusten myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.",
-	"confirmaccount-email-body5": "Ennenkuin pyytämäsi käyttäjätunnus \"$1\" sivulle {{SITENAME}} voidaan hyväksyä tarvitaan lisätietoja.\n\n$2\n\nJos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista."
+	"confirmaccount-email-body3": "Valitettavasti pyyntösi käyttäjätunnuksesta ”$1” sivulle {{SITENAME}} on hylätty.\n\nHylkäämisen mahdollisia syitä on useita.\nLomaketta ei ehkä ole täytetty oikein, kuvaus ei ollut tarpeeksi pitkä tai joku muu toimintaperiaatteen ehdoista jäi täyttämättä.\nJos haluat tietää enemmän toimintaperiaatteista käyttäjätunnusten myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.",
+	"confirmaccount-email-body4": "Valitettavasti pyyntösi käyttäjätunnuksesta ”$1” sivulle {{SITENAME}} on hylätty.\n\n$2\n\nJos haluat tietää enemmän toimintaperiaatteista käyttäjätunnusten myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista.",
+	"confirmaccount-email-body5": "Ennenkuin pyytämäsi käyttäjätunnus ”$1” sivulle {{SITENAME}} voidaan hyväksyä tarvitaan lisätietoja.\n\n$2\n\nJos haluat tietää enemmän toimintaperiaatteista käyttäjätunnuksesta myöntämiseen saattaa sivuilla olla luettelo yhteystiedoista."
 }
