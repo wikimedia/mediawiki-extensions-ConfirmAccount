@@ -4,9 +4,12 @@
 			"Michaello",
 			"Rancher",
 			"Михајло Анђелковић",
-			"Сербијана"
+			"Сербијана",
+			"Zoranzoki21"
 		]
 	},
+	"confirmaccounts": "Prihvaćanje zahteva za naloge",
+	"confirmaccount-desc": "Pruža mogućnost birokratama da prihvataju zahteve za naloge",
 	"confirmaccount-none-o": "Trenutno nema nerešenih zahteva u ovom spisku.",
 	"confirmaccount-none-h": "Trenutno nema stopiranih zahteva u ovom spisku.",
 	"confirmaccount-none-r": "Trenutno nema skoro odbačenih zahteva u ovom spisku.",
