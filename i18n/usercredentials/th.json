@@ -4,7 +4,8 @@
 			"Ans",
 			"Harley Hartwell",
 			"Octahedron80",
-			"Passawuth"
+			"Passawuth",
+			"Geonuch"
 		]
 	},
 	"usercredentials": "การรับรองของผู้ใช้",
@@ -21,5 +22,5 @@
 	"usercredentials-notes": "รายละเอียดเพิ่มเติม:",
 	"usercredentials-urls": "รายชื่อเว็บไซต์:",
 	"usercredentials-ip": "ไอพีแอดเดรสดั้งเิดิม:",
-	"usercredentials-member": "สิทธิ:"
+	"usercredentials-member": "สิทธิ์:"
 }
