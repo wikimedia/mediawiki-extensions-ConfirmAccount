@@ -4,13 +4,14 @@
 			"S.Örvarr.S",
 			"Snævar",
 			"Ævar Arnfjörð Bjarmason",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Sveinn í Felli"
 		]
 	},
 	"confirmaccounts": "Staðfesta notandabeðnir",
 	"confirmaccount-real-q": "Nafn",
 	"confirmaccount-email-q": "Netfang",
-	"confirmaccount-bio-q": "Sjálfsævisaga",
+	"confirmaccount-bio-q": "Æviágrip",
 	"confirmaccount-review": "Yfirfara",
 	"confirmaccount-leg-user": "Aðgangur notanda",
 	"confirmaccount-leg-areas": "Aðal áhugamál",
@@ -22,7 +23,7 @@
 	"confirmaccount-reqtype": "Staða:",
 	"confirmaccount-pos-0": "höfundur",
 	"confirmaccount-pos-1": "ritstjóri",
-	"confirmaccount-bio": "Sjálfsævisaga:",
+	"confirmaccount-bio": "Æviágrip:",
 	"confirmaccount-attach": "Ferilskrá:",
 	"confirmaccount-notes": "Viðbótarskýring:",
 	"confirmaccount-urls": "Listi yfir vefsíður:",

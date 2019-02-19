@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"S.Örvarr.S",
-			"Ævar Arnfjörð Bjarmason"
+			"Ævar Arnfjörð Bjarmason",
+			"Sveinn í Felli"
 		]
 	},
 	"usercredentials-user": "Notandanafn:",
@@ -12,7 +13,7 @@
 	"usercredentials-leg-other": "Aðrar upplýsingar",
 	"usercredentials-email": "Netfang:",
 	"usercredentials-real": "Raunverulegt nafn:",
-	"usercredentials-bio": "Sjálfsævisaga:",
+	"usercredentials-bio": "Æviágrip:",
 	"usercredentials-attach": "Ferilskrá:",
 	"usercredentials-notes": "Viðbótarskýring:",
 	"usercredentials-urls": "Listi yfir vefsíður:",
