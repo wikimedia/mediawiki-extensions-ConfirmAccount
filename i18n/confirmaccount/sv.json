@@ -77,7 +77,7 @@
 	"confirmaccount-reason": "Kommentar (skickas som e-post):",
 	"confirmaccount-ip": "IP-adress:",
 	"confirmaccount-xff": "X-Forwarded-For:",
-	"confirmaccount-agent": "User-Agent:",
+	"confirmaccount-agent": "Användaragent:",
 	"confirmaccount-legend": "Bekräfta/avvisa detta konto",
 	"confirmaccount-submit": "Bekräfta",
 	"confirmaccount-needreason": "Du måste skriva en motivering i kommentarrutan nedan.",
