@@ -3,10 +3,11 @@
 		"authors": [
 			"Snakesteuben",
 			"Robin0van0der0vliet",
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"PiefPafPier"
 		]
 	},
-	"usercredentials-user": "Brûkersnamme:",
+	"usercredentials-user": "Meidochnamme:",
 	"usercredentials-email": "E-mailadres:",
 	"usercredentials-bio": "Biografy:"
 }

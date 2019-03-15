@@ -3,14 +3,15 @@
 		"authors": [
 			"Snakesteuben",
 			"Robin0van0der0vliet",
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"PiefPafPier"
 		]
 	},
 	"confirmaccount-real-q": "Namme",
 	"confirmaccount-email-q": "E-mail",
 	"confirmaccount-bio-q": "Biografy",
 	"confirmaccount-review": "Beoardielje",
-	"confirmaccount-name": "Brûkersnamme",
+	"confirmaccount-name": "Meidochnamme",
 	"confirmaccount-real": "Namme:",
 	"confirmaccount-email": "E-mail:",
 	"confirmaccount-pos-0": "auteur",
