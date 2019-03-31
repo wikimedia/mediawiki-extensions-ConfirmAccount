@@ -8,7 +8,8 @@
 			"Misibacsi",
 			"Tgr",
 			"Csega",
-			"Tacsipacsi"
+			"Tacsipacsi",
+			"R-Joe"
 		]
 	},
 	"confirmaccounts": "Felhasználói fiók-kérelem megerősítése",
@@ -78,7 +79,7 @@
 	"confirmaccount-needreason": "Meg kell adnod az okot a megjegyzés mezőben.",
 	"confirmaccount-canthold": "A kérelmet már visszatartották vagy törölték.",
 	"confirmaccount-acc": "A kérelem sikeresen meg lett erősítve; az új felhasználói fiók [[User:$1|$1]] néven lett elkészítve.",
-	"confirmaccount-rej": "A kérelem sikeresen visszautasítva.",
+	"confirmaccount-rej": "Fiók kérelem visszautasítva.",
 	"confirmaccount-viewing": "(jelenleg [[User:$1|$1]] nézi)",
 	"confirmaccount-summary": "Felhasználói lap elkészítése az új felhasználónak.",
 	"confirmaccount-welc": "'''Üdvözlet a(z) ''{{SITENAME}}'' wikin!''' Reméljük, hogy gyakran és hasznosan fogsz közreműködni.\nÉrdemes lesz elolvasnod a [{{MediaWiki:Helppage}} súgó oldalakat]. Üdvözlet még egyszer, és érezd jól magad!",
