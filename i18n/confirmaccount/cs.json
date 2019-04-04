@@ -12,6 +12,9 @@
 	"confirmaccounts": "Potvrdit žádosti o účet",
 	"confirmaccount-desc": "Dává byrokratům možnost potvrzovat žádosti o účet",
 	"confirmaccount-maintext": "'''Tato stránka se používá ke schvalování žádostí o uživatelský účet na ''{{SITENAME}}'''''.\n\nPro žádosti o založení uživatelského účtu jsou k dispozici tři fronty.\nJedna je pro otevřené žádosti. Druhá pro žádosti, jejichž schvalovací proces byl některým z administrátorů pozastaven, dokud žadatel nedodá upřesňující informace. A třetí pro zamítnuté žádosti.\n\nNež podanou žádost vyřídíte, řádně ji prostudujte a je-li to možné, ověřte si, že jsou podané informace pravdivé.\nVeškeré kroky schvalovacího procesu se logují.\nTaké se očekává, že i vy budete pečlivě kontrolovat veškeré kroky schvalovacího procesu, které udělá někdo jiný než vy.",
+	"confirmaccount-list": "Níže uvedený seznam obsahuje otevřené žádosti o uživatelský účet.\nŽádost, která bude schválena, nebo zamítnuta z něj bude odstraněna.",
+	"confirmaccount-list2": "Níže uvedený seznam zamítnutých žádostí se po několika dnech automaticky vyprázdní.\nPokud žadatel do té doby naváže kontakt s administrátorem který je zamítnul a dodá požadované informace, mohou být schváleny a uživatelský účet založen.",
+	"confirmaccount-list3": "Žádostem o uživatelský účet v níže uvedeném seznamu vypršel časový interval pro vyřízení ale stále mohou být kladně vyřízeny, dokud nebudou automaticky odstraněny.",
 	"confirmaccount-none-o": "V tomto seznamu nejsou žádné požadavky na schválení vytvořeného účtu.",
 	"confirmaccount-none-h": "V tomto seznamu nyní nejsou žádné pozastavené žádosti o vytvoření účtu.",
 	"confirmaccount-none-r": "V tomto seznamu nyní nejsou žádné zamítnuté žádosti o vytvoření účtu.",
@@ -73,6 +76,7 @@
 	"confirmaccount-badaction": "Aby bylo možné pokračovat, musí být zvolena platná operace (přijmout, zamítnout, pozastavit).",
 	"confirmaccount-acc": "Žádost o účet byla potvrzena; zakládám účet pro uživatele [[User:$1|$1]].",
 	"confirmaccount-rej": "Žádost o účet byla zamítnuta.",
+	"confirmaccount-summary": "Zakladám uživatelskou stránku pro nového uživatele.",
 	"confirmaccount-wsum": "Vítejte!",
 	"confirmaccount-email-subj": "Žádost o účet na {{SITENAME}}"
 }
