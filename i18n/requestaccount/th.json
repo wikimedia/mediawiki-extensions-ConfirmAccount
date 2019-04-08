@@ -6,11 +6,12 @@
 			"Octahedron80",
 			"Passawuth",
 			"Macofe",
-			"Patsagorn Y."
+			"Patsagorn Y.",
+			"Horus"
 		]
 	},
-	"requestaccount": "คำร้องบัญชี",
-	"requestaccount-login": "คำร้องบัญชี",
+	"requestaccount": "ขอสร้างบัญชี",
+	"requestaccount-login": "ขอสร้างบัญชี",
 	"requestaccount-text": "'''กรอกรายละเอียดทั้งหมดและกดส่ง เพื่อขอบัญชีผู้ใช้'''\n\nกรุณาตรวจสอบให้แน่ใจว่าคุณได้อ่าน[[{{MediaWiki:Requestaccount-page}}|ข้อตกลงการใช้งาน]]ก่อนที่จะทำการขอบัญชีผู้ใช้\n\nเมื่อบัญชีผู้ใช้ถูกสร้างแล้ว คุณจะได้รับข้อความทางอีเมล และสามารถใช้บัญชีได้เมื่่อ[[Special:UserLogin|ล็อกอิน]]",
 	"requestaccount-page": "{{ns:project}}:ข้อตกลงการใช้งาน",
 	"requestaccount-dup": "'''หมายเหตุ: คุณได้ล็อกอินด้วยบัญชีที่ลงทะเบียนแล้ว'''",
