@@ -19,6 +19,7 @@
 		]
 	},
 	"requestaccount": "Pyydä käyttäjätunnusta",
+	"requestaccount-login": "Pyydä käyttäjätunnusta",
 	"requestaccount-text": "'''Pyydä käyttäjätunnusta täyttämällä ja lähettämällä alla oleva lomake'''.\n\nMuista ennen käyttäjätunnuksen pyytämistä lukea [[{{MediaWiki:Requestaccount-page}}|käyttöehdot]].\n\nSaat sähköpostilla ilmoituksen, kun tunnus on hyväksytty ja sillä voi [[Special:UserLogin|kirjautua sisään]].",
 	"requestaccount-page": "{{ns:project}}:Käyttöehdot",
 	"requestaccount-dup": "'''Huomio: Olet jo kirjautuneena rekisteröidyllä käyttäjätunnuksella.'''",
@@ -51,8 +52,8 @@
 	"requestaccount-submit": "Pyydä käyttäjätunnusta",
 	"requestaccount-sent": "Käyttäjätunnuspyyntösi on lähetetty onnistuneesti ja odottaa nyt käsittelyä.\n\tVahvistusviesti on lähetetty sähköpostiosoitteeseesi.",
 	"requestaccount-econf": "Sähköpostiosoitteesi on tarkistettu ja merkitään tarkistetuksi käyttäjätunnuspyyntöösi.",
-	"requestaccount-email-subj": "{{SITENAME}}: sähköpostiosoitteen tarkistus",
-	"requestaccount-email-body": "Joku, luultavasti sinä itse IP-osoitteesta $1, on pyytänyt käyttäjätunnusta ”$2” sivustoon {{SITENAME}} ja käyttänyt tätä sähköpostiosoitetta.\n\nVahvista, että tämä käyttäjätunnus sivustolle {{SITENAME}} kuuluu sinulle avaamalla tämä osoite selaimessasi:\n\n$3\n\nJos käyttäjätunnus luodaan, salasana lähetetään vain sinulle. Jos et ole pyytänyt käyttäjätunnusa, *älä* avaa osoitetta.\nTämän vahvistuskoodi vanhenee $4.",
+	"requestaccount-email-subj": "{{GRAMMAR:genitive|{{SITENAME}}}} sähköpostiosoitteen tarkistus",
+	"requestaccount-email-body": "Joku, luultavasti sinä itse IP-osoitteesta $1, on pyytänyt käyttäjätunnusta ”$2” {{GRAMMAR:illative|{{SITENAME}}}} ja käyttänyt tätä sähköpostiosoitetta.\n\nVahvista, että tämä käyttäjätunnus {{GRAMMAR:illative|{{SITENAME}}}} kuuluu sinulle avaamalla tämä osoite selaimessasi:\n\n$3\n\nJos käyttäjätunnus luodaan, salasana lähetetään vain sinulle. Jos et ole pyytänyt käyttäjätunnusta, *älä* avaa osoitetta.\nTämän vahvistuskoodi vanhenee $4.",
 	"requestaccount-email-subj-admin": "{{GRAMMAR:genitive|{{SITENAME}}}} käyttäjätunnuspyyntö",
 	"requestaccount-email-body-admin": "$1 on pyytänyt käyttäjätunnusta ja odottaa vahvistusta.\nSähköpostiosoite on tarkistettu. Myönnä käyttäjätunnus tästä:\n\n$2",
 	"acct_request_throttle_hit": "Et voi tehdä enempää pyyntöjä, koska olet jo pyytänyt {{PLURAL:$1|yhden käyttäjätunnuksen|$1 käyttäjätunnusta}}."
