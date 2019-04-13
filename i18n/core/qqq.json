@@ -14,8 +14,10 @@
 	},
 	"confirmaccount-newrequests": "Notice for account reviewers when there are account requests from users with a confirmed email address.\n\nParameters:\n* $1 - the number of open account requests matching given criteria",
 	"requestaccount-loginnotice": "Used in notice message in the \"Create account\" form in [{{canonicalurl:Special:UserLogin|type=signup}} Special:UserLogin?type=signup], if the extension RequestAccount is enabled.",
+	"action-confirmaccount": "{{doc-action|confirmaccount}}",
 	"right-confirmaccount": "{{doc-right|confirmaccount}}",
+	"action-requestips": "{{doc-action|requestips}}",
 	"right-requestips": "{{doc-right|requestips}}",
-	"right-lookupcredentials": "{{doc-right|lookupcredentials}}",
-	"action-confirmaccount": "{{doc-action|confirmaccount}}"
+	"action-lookupcredentials": "{{doc-action|lookupcredentials}}",
+	"right-lookupcredentials": "{{doc-right|lookupcredentials}}"
 }
