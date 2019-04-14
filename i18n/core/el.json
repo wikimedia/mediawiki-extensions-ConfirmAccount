@@ -5,7 +5,7 @@
 		]
 	},
 	"requestaccount-loginnotice": "Για να έχετε ένα λογαριασμό χρήστη, πρέπει να '''[[Special:RequestAccount|ζητήσετε ένα]]'''.",
+	"action-confirmaccount": "θεώρηση και έγκριση λογαριασμών",
 	"right-confirmaccount": "Προβολή της [[Special:ConfirmAccounts|ουράς με τους αιτούμενους λογαριασμούς]]",
-	"right-lookupcredentials": "Προβολή [[Special:UserCredentials|πιστοποιητικών χρήστη]]",
-	"action-confirmaccount": "θεώρηση και έγκριση λογαριασμών"
+	"right-lookupcredentials": "Προβολή [[Special:UserCredentials|πιστοποιητικών χρήστη]]"
 }

@@ -15,8 +15,8 @@
 	},
 	"confirmaccount-newrequests": "'''$1''' {{PLURAL:$1|avoin sähköpostinsa vahvistanut|avointa sähköpostinsa vahvistanutta}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} on käsiteltävänä. '''Huomiotasi tarvitaan!'''",
 	"requestaccount-loginnotice": "Saadaksesi käyttäjätunnuksen on tehtävä '''[[Special:RequestAccount|käyttäjätunnuspyyntö]]'''.",
+	"action-confirmaccount": "tarkastaa ja hyväksyä tunnuksia",
 	"right-confirmaccount": "Nähdä [[Special:ConfirmAccounts|listan pyydetyistä tunnuksista]]",
 	"right-requestips": "Nähdä hakijan IP-osoitteet käyttäjätilejä käsiteltäessä",
-	"right-lookupcredentials": "Nähdä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]",
-	"action-confirmaccount": "tarkastaa ja hyväksyä tunnuksia"
+	"right-lookupcredentials": "Nähdä [[Special:UserCredentials|käyttäjän luotettavuustiedot]]"
 }
