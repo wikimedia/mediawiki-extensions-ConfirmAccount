@@ -15,7 +15,8 @@
 			"Zetud",
 			"Benjozork",
 			"Seb35",
-			"Pols12"
+			"Pols12",
+			"Wladek92"
 		]
 	},
 	"confirmaccount-newrequests": "Il y a actuellement '''$1''' [[Special:ConfirmAccounts|demande{{PLURAL:$1||s}} de compte]] en cours. '''Votre attention est nécessaire !'''",
@@ -24,6 +25,6 @@
 	"right-confirmaccount": "Voir la [[Special:ConfirmAccounts|file des demandes de compte]]",
 	"action-requestips": "voir les adresses IP des demandeurs lors du traitement des demandes de nouveau compte",
 	"right-requestips": "Voir les adresses IP des demandeurs lors du traitement des demandes de nouveau compte",
-	"action-lookupcredentials": "voir les identifiants des utilisateurs",
+	"action-lookupcredentials": "voir les certificats de l'utilisateur",
 	"right-lookupcredentials": "Voir les [[Special:UserCredentials|références des utilisateurs]]"
 }
