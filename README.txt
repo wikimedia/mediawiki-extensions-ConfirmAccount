@@ -1,5 +1,5 @@
 Complete online documenation:
-http://www.mediawiki.org/wiki/Extension:ConfirmAccount
+https://www.mediawiki.org/wiki/Extension:ConfirmAccount
 
 == Breaking changes ==
 === MediaWiki 1.20 ===
@@ -8,4 +8,4 @@ and $wgAllowAccountRequestFiles were all folded into a new variable called
 $wgConfirmAccountRequestFormItems.
 
 == Licensing ==
-© GPL, Aaron Schulz
+ï¿½ GPL, Aaron Schulz
