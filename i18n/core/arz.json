@@ -4,6 +4,6 @@
 			"Meno25"
 		]
 	},
-	"confirmaccount-newrequests": "{{PLURAL:$1|يوجد|يوجد}} حاليا '''$1'''\n{{PLURAL:$1|[[Special:ConfirmAccounts|طلب حساب]]|[[Special:ConfirmAccounts|طلب حساب]]}} مفتوح قيد الانتظار.",
+	"confirmaccount-newrequests": "{{PLURAL:$1|يوجد}} حاليا '''$1'''\n{{PLURAL:$1|[[Special:ConfirmAccounts|طلب حساب]]}} مفتوح قيد الانتظار.",
 	"requestaccount-loginnotice": "للحصول على حساب، يجب عليك '''[[Special:RequestAccount|طلب واحد]]'''."
 }

@@ -19,6 +19,8 @@
 	"requestaccount-loginnotice": "Um ein Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
 	"action-confirmaccount": "Benutzerkontenanträge zu überprüfen und zu akzeptieren",
 	"right-confirmaccount": "Die [[Special:ConfirmAccounts|Liste der Benutzerkontenanträge]] einsehen",
+	"action-requestips": "die IP-Adresse des Anfragenden beim Bearbeiten von Benutzerkontenanträgen einzusehen",
 	"right-requestips": "Die IP-Adresse des Anfragenden beim Bearbeiten von Benutzerkontenanträgen einsehen",
+	"action-lookupcredentials": "die Anmeldedaten einzusehen",
 	"right-lookupcredentials": "Die [[Special:UserCredentials|Anmeldedaten]] einsehen"
 }

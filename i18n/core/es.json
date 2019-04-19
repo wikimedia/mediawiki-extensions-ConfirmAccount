@@ -20,5 +20,6 @@
 	"action-confirmaccount": "revisar y confirmar cuentas de usuario",
 	"right-confirmaccount": "Ver la [[Special:ConfirmAccounts|cola de solicitudes de cuenta]]",
 	"right-requestips": "Ver la dirección IP del solicitante mientras se procesan las solicitudes de cuenta",
+	"action-lookupcredentials": "ver credenciales de usuarios",
 	"right-lookupcredentials": "Ver las [[Special:UserCredentials|credenciales del usuario]]"
 }
