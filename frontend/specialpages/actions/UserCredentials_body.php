@@ -235,11 +235,11 @@ class UserCredentialsPage extends SpecialPage {
 		$request->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
 		$request->response()->header( 'Pragma: no-cache' );
 
-		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountcreds'] );
+		$repo = ConfirmAccount::getFileRepo( $wgConfirmAccountFSRepos['accountcreds'] );
 		$path = $repo->getZonePath( 'public' ) . '/' .
 			UserAccountRequest::relPathFromKey( $key );
 
-		$repo->streamFile( $path );
+		$repo->streamFileWithStatus( $path );
 	}
 
 	function getAccountData() {
