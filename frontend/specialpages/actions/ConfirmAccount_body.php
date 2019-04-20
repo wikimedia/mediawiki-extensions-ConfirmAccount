@@ -548,11 +548,11 @@ class ConfirmAccountsPage extends SpecialPage {
 		$request->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
 		$request->response()->header( 'Pragma: no-cache' );
 
-		$repo = new FSRepo( $wgConfirmAccountFSRepos['accountreqs'] );
+		$repo = ConfirmAccount::getFileRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 		$path = $repo->getZonePath( 'public' ) . '/' .
 			UserAccountRequest::relPathFromKey( $key );
 
-		$repo->streamFile( $path );
+		$repo->streamFileWithStatus( $path );
 	}
 
 	protected function doAccountConfirmSubmit() {
