@@ -6,7 +6,7 @@ class AccountConfirmSubmission {
 	/* User making the confirmation */
 	protected $admin;
 	/** @var UserAccountRequest */
-	protected $accReq;
+	protected $accountReq;
 	/* Admin-overridable name and fields filled from request form */
 	protected $userName;
 	protected $bio;
@@ -73,6 +73,10 @@ class AccountConfirmSubmission {
 		}
 	}
 
+	/**
+	 * @param IContextSource $context
+	 * @return array
+	 */
 	protected function spamRequest( IContextSource $context ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
@@ -87,6 +91,11 @@ class AccountConfirmSubmission {
 		return [ true, null, null ];
 	}
 
+	/**
+	 * @param IContextSource $context
+	 * @return array
+	 * @throws MWException
+	 */
 	protected function rejectRequest( IContextSource $context ) {
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
@@ -127,6 +136,11 @@ class AccountConfirmSubmission {
 		return [ true, null, null ];
 	}
 
+	/**
+	 * @param IContextSource $context
+	 * @return array
+	 * @throws MWException
+	 */
 	protected function holdRequest( IContextSource $context ) {
 		# Make proxy user to email a message
 		$u = User::newFromName( $this->accountReq->getName(), false );
@@ -186,8 +200,10 @@ class AccountConfirmSubmission {
 
 		$id = $this->accountReq->getId();
 		$type = $wgAccountRequestTypes[$this->accountReq->getType()][0];
-		$redirTitle = SpecialPageFactory::getTitleForAlias( 'CreateAccount' );
-		$returnTitle = SpecialPageFactory::getTitleForAlias( "ConfirmAccounts/{$type}" );
+
+		$spFactory = MediaWikiServices::getInstance()->getSpecialPageFactory();
+		$redirTitle = $spFactory->getTitleForAlias( 'CreateAccount' );
+		$returnTitle = $spFactory->getTitleForAlias( "ConfirmAccounts/{$type}" );
 		$params = [
 			'AccountRequestId' => $id,
 			'wpName' => $this->userName,

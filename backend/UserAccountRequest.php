@@ -167,7 +167,7 @@ class UserAccountRequest {
 	}
 
 	/**
-	 * @return sting
+	 * @return string
 	 */
 	public function getRealName() {
 		return $this->realName;
@@ -467,7 +467,7 @@ class UserAccountRequest {
 	 * Used by ConfirmAccountsPage
 	 * @param string $areas
 	 * @todo just unserialize()
-	 * @return Array
+	 * @return array
 	 */
 	public static function expandAreas( $areas ) {
 		$list = explode( "\n", $areas );

@@ -1,5 +1,7 @@
 <?php
 
+use Wikimedia\Rdbms\FakeResultWrapper;
+
 class ConfirmAccount {
 	/**
 	 * Move old stale requests to rejected list. Delete old rejected requests.
@@ -126,7 +128,7 @@ class ConfirmAccount {
 	 * Get request information from an email confirmation token
 	 *
 	 * @param string $code
-	 * @return string|false
+	 * @return array
 	 */
 	public static function requestInfoFromEmailToken( $code ) {
 		global $wgConfirmAdminEmailExtraFields;
@@ -144,8 +146,11 @@ class ConfirmAccount {
 			] );
 		# Split the essential array values and the possible body arguments
 		$adminEmailBodyArguments = array_slice( (array)$reqUserInfo, 0, -2 );
-		return [ array_values( $adminEmailBodyArguments ), $reqUserInfo->acr_name,
-			$reqUserInfo->acr_email_authenticated ];
+		return [
+			array_values( $adminEmailBodyArguments ),
+			$reqUserInfo->acr_name,
+			$reqUserInfo->acr_email_authenticated
+		];
 	}
 
 	/**

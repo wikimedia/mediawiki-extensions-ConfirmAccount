@@ -15,7 +15,6 @@ class UserCredentialsPage extends SpecialPage {
 	function execute( $par ) {
 		$out = $this->getOutput();
 		$request = $this->getRequest();
-		$reqUser = $this->getUser();
 
 		if ( !$this->userCanExecute( $this->getUser() ) ) {
 			throw new PermissionsError( 'lookupcredentials' );
@@ -41,7 +40,6 @@ class UserCredentialsPage extends SpecialPage {
 
 	function showForm() {
 		global $wgScript;
-		$out = $this->getOutput();
 
 		$username = str_replace( '_', ' ', $this->target );
 		$formDescriptor = [

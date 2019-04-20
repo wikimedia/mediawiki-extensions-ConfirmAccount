@@ -19,10 +19,12 @@
  * @ingroup Auth
  */
 
-use \MediaWiki\Auth\AbstractPreAuthenticationProvider;
-use \MediaWiki\Auth\AuthenticationRequest;
-use \MediaWiki\Auth\AuthenticationResponse;
-use \MediaWiki\MediaWikiServices;
+use MediaWiki\Auth\AbstractPreAuthenticationProvider;
+use MediaWiki\Auth\AuthenticationRequest;
+use MediaWiki\Auth\AuthenticationResponse;
+use MediaWiki\Auth\TemporaryPasswordAuthenticationRequest;
+use MediaWiki\Auth\UserDataAuthenticationRequest;
+use MediaWiki\MediaWikiServices;
 
 class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationProvider {
 	const SESSION_INFO_KEY = 'ConfirmAccountRequestInfo';
@@ -31,7 +33,7 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 	 * @param \User $user
 	 * @param \User $creator
 	 * @param array $reqs
-	 * @return bool
+	 * @return StatusValue
 	 * @throws MWException
 	 * @todo avoid using global WebRequest and use dedicate auth request class
 	 */
@@ -58,12 +60,12 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 			return StatusValue::newFatal( 'confirmaccount-badid' );
 		}
 
-		/** @var \MediaWiki\Auth\UserDataAuthenticationRequest $usrDataAuthReq */
+		/** @var UserDataAuthenticationRequest $usrDataAuthReq */
 		$usrDataAuthReq = AuthenticationRequest::getRequestByClass(
-			$reqs, \MediaWiki\Auth\UserDataAuthenticationRequest::class );
-		/** @var \MediaWiki\Auth\TemporaryPasswordAuthenticationRequest $tmpPassAuthReq */
+			$reqs, UserDataAuthenticationRequest::class );
+		/** @var TemporaryPasswordAuthenticationRequest $tmpPassAuthReq */
 		$tmpPassAuthReq = AuthenticationRequest::getRequestByClass(
-			$reqs, \MediaWiki\Auth\TemporaryPasswordAuthenticationRequest::class );
+			$reqs, TemporaryPasswordAuthenticationRequest::class );
 
 		# Make sure certain field were left unchanged from the account request
 		if (
@@ -120,7 +122,5 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 			$lbFactory->rollbackMasterChanges( __METHOD__ );
 			throw new ErrorPageError( 'createacct-error', new RawMessage( $msg ) );
 		}
-
-		return;
 	}
 }
