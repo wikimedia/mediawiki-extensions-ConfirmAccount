@@ -12,5 +12,6 @@
 	"right-confirmaccount": "перегляд [[Special:ConfirmAccounts|черги запитів на створення облікових записів]]",
 	"action-requestips": "перегляд IP-адрес авторів запитів на створення облікових записів",
 	"right-requestips": "перегляд IP-адрес авторів запитів на створення облікових записів",
+	"action-lookupcredentials": "перегляд облікових даних користувача",
 	"right-lookupcredentials": "Перегляд [[Special:UserCredentials|удостовіряючої інформації про користувачів]]"
 }

@@ -18,5 +18,6 @@
 	"action-confirmaccount": "granska och godkänna konton",
 	"right-confirmaccount": "Visa [[Special:ConfirmAccounts|kön av kontoansökningar]]",
 	"right-requestips": "Visa sökandens IP-adress vid behandling av kontoansökningar",
+	"action-lookupcredentials": "visa inloggningsuppgifter för användare",
 	"right-lookupcredentials": "Visa [[Special:UserCredentials|användaruppgifter]]"
 }
