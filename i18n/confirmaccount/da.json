@@ -4,7 +4,8 @@
 			"Aka-miki",
 			"Christian List",
 			"Jon Harald Søby",
-			"Kaare"
+			"Kaare",
+			"Saederup92"
 		]
 	},
 	"confirmaccounts": "Bekræft kontoanmodninger",
@@ -60,6 +61,7 @@
 	"confirmaccount-noreason": "(ingen)",
 	"confirmaccount-autorej": "(denne anmodning er automatisk blevet smidt væk på grund af inaktivitet)",
 	"confirmaccount-held": "({{GENDER:$1|tilbageholdt}} af [[User:$1|$1]] den $3 kl. $4)",
+	"confirmaccount-blockip": "Bloker IP-adresse",
 	"confirmaccount-create": "Godkend (opret konto)",
 	"confirmaccount-deny": "Afvis (fjern fra listen)",
 	"confirmaccount-hold": "Tilbagehold",
