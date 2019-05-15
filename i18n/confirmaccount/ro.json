@@ -5,7 +5,8 @@
 			"KlaudiuMihaila",
 			"Mihai",
 			"Minisarm",
-			"Stelistcristi"
+			"Stelistcristi",
+			"Andrei Stroe"
 		]
 	},
 	"confirmaccounts": "Confirmă cererile de conturi",
@@ -46,7 +47,7 @@
 	"confirmaccount-deny": "Respinge (delist)",
 	"confirmaccount-hold": "Reține",
 	"confirmaccount-spam": "Spam (nu trimite e-mail)",
-	"confirmaccount-reason": "Comentariu (va fi inclus în e-mail):",
+	"confirmaccount-reason": "Comentariu (va fi inclus în e-mailurile de respingere și păstrare):",
 	"confirmaccount-ip": "Adresă IP:",
 	"confirmaccount-agent": "User-Agent:",
 	"confirmaccount-legend": "Confirmați/respingeți acest cont",
