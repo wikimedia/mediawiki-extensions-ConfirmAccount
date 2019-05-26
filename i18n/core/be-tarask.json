@@ -12,6 +12,7 @@
 	"requestaccount-loginnotice": "Каб атрымаць рахунак, Вам неабходна '''[[Special:RequestAccount|падаць запыт]]'''.",
 	"action-confirmaccount": "праверку і пацьверджаньне рахункаў",
 	"right-confirmaccount": "прагляд [[Special:ConfirmAccounts|запытаў на стварэньне рахункаў]]",
+	"action-requestips": "прагляд IP-адрасоў аўтараў запытаў пры апрацоўцы запытаных рахункаў",
 	"right-requestips": "прагляд IP-адрасоў з якіх паступалі запыты на стварэньне рахункаў",
 	"right-lookupcredentials": "прагляд [[Special:UserCredentials|пасьведчаньняў ўдзельнікаў]]"
 }
