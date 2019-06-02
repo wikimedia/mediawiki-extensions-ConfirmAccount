@@ -38,7 +38,7 @@
 	"requestaccount-resub": "Por motivos de seguridá, tien de volver a seleicionar el ficheru de currículu.\nDexe'l campu en blanco si yá nun quier incluilu.",
 	"requestaccount-tos": "Lleí y aceuto les [[{{MediaWiki:Requestaccount-page}}|condiciones de serviciu]] de {{SITENAME}}.\nEl nome qu'especifiqué como \"Nome real\" ye daveres el mio nome real.",
 	"requestaccount-submit": "Solicitar una cuenta",
-	"requestaccount-sent": "La solicitú de cuenta unvióse correutamente, y agora ta pendiente de revisión.\n\tUnvióse un corréu electrónicu de confirmación a la so direición de corréu electrónicu.",
+	"requestaccount-sent": "Unvióse la solicitú de cuenta, y agora ta pendiente de revisión.\n\tUnvióse un corréu electrónicu de confirmación a la so direición de corréu electrónicu.",
 	"requestaccount-econf": "Confirmóse la to direición de corréu electrónicu y apaecerá como tal na to solicitú de cuenta.",
 	"requestaccount-email-subj": "Confirmación de la direición de corréu de {{SITENAME}}",
 	"requestaccount-email-body": "Dalguién, probablemente vusté dende la direición IP $1, solicitó una cuenta \"$2\" con esta direición de corréu electrónicu en {{SITENAME}}.\n\nPa confirmar qu'esta cuenta ye daveres suya en {{SITENAME}}, abra esti enllaz nel so navegador:\n\n$3\n\nSe se crea la cuenta, sólo vusté recibirá la contraseña.\nSi esta persona *nun* ye vusté, nun siga l'enllaz.\nEsti códigu de confirmación caducará el $4.",
