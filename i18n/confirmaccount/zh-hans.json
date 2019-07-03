@@ -11,7 +11,8 @@
 			"Yfdyh000",
 			"乌拉跨氪",
 			"Mywood",
-			"Impersonator 1"
+			"Impersonator 1",
+			"神樂坂秀吉"
 		]
 	},
 	"confirmaccounts": "确认帐户请求",
@@ -79,7 +80,7 @@
 	"confirmaccount-legend": "批准/拒绝这个帐号",
 	"confirmaccount-submit": "确认",
 	"confirmaccount-needreason": "您必须在下方的评论栏阐述您的理由。",
-	"confirmaccount-canthold": "该请求已被挂起，或已被删除。",
+	"confirmaccount-canthold": "该请求已挂起或被删除。",
 	"confirmaccount-badaction": "必须指定有效的操作（接受，拒绝，搁置）才能继续进行。",
 	"confirmaccount-mismatched": "此字段必须匹配原始账户请求的字段。",
 	"confirmaccount-mismatched-general": "请求了对原始账户请求中不允许更改字段的覆盖请求，或“邮件密码”选项未被设置。",
