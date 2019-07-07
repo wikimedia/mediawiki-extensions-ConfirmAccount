@@ -10,7 +10,8 @@
 			"Xiaomingyan",
 			"Bluedeck",
 			"Liuxinyu970226",
-			"A Chinese Wikipedian"
+			"A Chinese Wikipedian",
+			"神樂坂秀吉"
 		]
 	},
 	"requestaccount": "请求账户",
@@ -25,7 +26,7 @@
 	"requestaccount-leg-tos": "服务条款",
 	"requestaccount-acc-text": "一旦您提交了请求，就会有一封确认信息发送到您的电邮地址。邮箱地址不会公开。请在该封电邮中点击确认链接来回应请求。最后，当您的账户被创建后，您的密码将会通过电邮发给您。",
 	"requestaccount-areas-text": "在下面选择您最专业的或者最感兴趣的话题。",
-	"requestaccount-ext-text": "以下的资料将会保密，而且只是会用在这次请求中。您可能需要列示联络资料，像电话号码等去帮助证明您的确认。",
+	"requestaccount-ext-text": "以下的资料将会保密，并且仅用于这次请求中。您可能需要列出电话号码等联络资料以帮助验证您的身份。",
 	"requestaccount-bio-text": "尝试在下方您的个人简介中包含任何相关凭据。",
 	"requestaccount-bio-text-i": "'''您的简履将会成为您的用户页的内容。'''请确保您可以发布该等资讯。",
 	"requestaccount-real": "真实姓名：",
