@@ -297,6 +297,7 @@ class UserAccountRequest {
 	public function getRejectTimestamp() {
 		return $this->rejectedTimestamp;
 	}
+
 	/**
 	 * @return string|null TS_MW timestamp
 	 */
