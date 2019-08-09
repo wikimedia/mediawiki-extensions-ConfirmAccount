@@ -271,10 +271,7 @@ class AccountRequestSubmission {
 			if ( $wgAccountRequestThrottle && $reqUser->isPingLimitable() ) {
 				$ip = $context->getRequest()->getIP();
 				$key = $cache->makeKey( 'acctrequest', 'ip', $ip );
-				$value = $cache->incr( $key );
-				if ( !$value ) {
-					$cache->set( $key, 1, 86400 );
-				}
+				$cache->incrWithInit( $key, $cache::TTL_DAY );
 			}
 		} );
 
