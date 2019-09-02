@@ -12,7 +12,8 @@
 			"ToSter",
 			"Wpedzich",
 			"Chrumps",
-			"Woytecr"
+			"Woytecr",
+			"Railfail536"
 		]
 	},
 	"confirmaccounts": "Potwierdź wniosek o założenie konta użytkownika",
@@ -82,7 +83,7 @@
 	"confirmaccount-needreason": "Musisz podać uzasadnienie w polu poniżej.",
 	"confirmaccount-canthold": "Ten wniosek został już wstrzymany lub usunięty.",
 	"confirmaccount-badaction": "Prawidłowe działanie (przyjmij, odrzuć, wstrzymaj) musi być określone w celu przejścia dalej.",
-	"confirmaccount-acc": "Potwierdzono wniosek o założenie konta; utworzono konto dla użytkownika [[User:$1|$1]].",
+	"confirmaccount-acc": "Potwierdzono wniosek o założenie konta;\nutworzono konto dla {{GENDER:$1|użytkownika|użytkowniczki}} [[User:$1|$1]].",
 	"confirmaccount-rej": "Odrzucono wniosek o utworzenie konta.",
 	"confirmaccount-viewing": "(aktualnie przeglądane przez użytkownika [[User:$1|$1]])",
 	"confirmaccount-summary": "Tworznie strony użytkownika dla nowego użytkownika.",
