@@ -15,7 +15,8 @@
 			"Urhixidur",
 			"Zetud",
 			"Linedwell",
-			"Wladek92"
+			"Wladek92",
+			"Thibaut120094"
 		]
 	},
 	"confirmaccounts": "Demande de confirmation de comptes",
@@ -86,7 +87,7 @@
 	"confirmaccount-canthold": "Cette requête est déjà, soit prise en compte, soit supprimée.",
 	"confirmaccount-badaction": "Une action valide (accepter, refuser, retenir) doit être spécifiée pour continuer.",
 	"confirmaccount-mismatched": "Ce champ doit correspondre à celui de la requête de compte d’origine.",
-	"confirmaccount-mismatched-general": "Un forçage non autorisé a été demandé sur un champ de la requête de compte originale, ou l’option « mot de passe de courriel » n’a pas été positionnée.",
+	"confirmaccount-mismatched-general": "Un forçage non autorisé a été demandé sur un champ de la requête de compte originale, ou l’option « mot de passe de courriel » n’a pas été positionnée.",
 	"confirmaccount-acc": "Demande de compte confirmée ;\n\tnouveau compte utilisat{{GENDER:$1|eur|rice}} créé [[User:$1|$1]].",
 	"confirmaccount-rej": "Demande de compte rejetée.",
 	"confirmaccount-viewing": "(actuellement en train d'être {{GENDER:$1|visionné}} par [[User:$1|$1]])",
