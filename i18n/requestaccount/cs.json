@@ -6,7 +6,8 @@
 			"Li-sung",
 			"Matěj Grabovský",
 			"Mormegil",
-			"Matěj Suchánek"
+			"Matěj Suchánek",
+			"MrJaroslavik"
 		]
 	},
 	"requestaccount": "Vyžádat účet",
@@ -19,7 +20,7 @@
 	"requestaccount-leg-tos": "Podmínky služby",
 	"requestaccount-acc-text": "Na Vaši e-mailovou adresu bude po odeslání žádosti zaslána potvrzující zpráva. Vaše adresa nebude publikována.\nProsím, reagujte na zprávu kliknutím na odkaz v ní.\nVaše heslo Vám bude zasláno ihned po vytvoření Vašeho účtu.",
 	"requestaccount-areas-text": "Níže zvolte tematické oblasti, ve kterých jste formálně expertem nebo byste v nich rádi vykonávali svoji práci.",
-	"requestaccount-bio-text": "Vaše bibliografie bude prvotním obsahem vaši uživatelské stránky. Pokuste se uvést všechny reference. Zvažte, zda jste ochotni zveřejnit tyto informace. Jméno si můžete změnit ve [[Special:Preferences|svém nastavení]].",
+	"requestaccount-bio-text": "Pokuste se do vašeho životopisu níže uvést všechny relevantní informace.",
 	"requestaccount-real": "Skutečné jméno:",
 	"requestaccount-same": "(stejné jako skutečné jméno)",
 	"requestaccount-email": "E-mailová adresa:",
@@ -38,7 +39,7 @@
 	"requestaccount-resub": "Váš soubor s CV/resumé je potřeba z bezpečnostních důvodů znovu vybrat. Nechejte pole prázdné, pokud jste se rozhodli žádný nepřiložit.",
 	"requestaccount-tos": "{{GENDER:|Přečetl|Přečetla}} jsem a souhlasím, že budu dodržovat [[{{MediaWiki:Requestaccount-page}}|Podmínky používání služby]] {{GRAMMAR:2sg|{{SITENAME}}}}. Jméno, které jsem {{GENDER:|uvedl|uvedla}} jako „Skutečné jméno“, je opravdu moje občanské jméno.",
 	"requestaccount-submit": "Požádat o účet",
-	"requestaccount-sent": "Vaše žádost o účet byla úspěšně odeslána a nyní se čeká na její zkontrolování.\nNa vaši emailovou adresu byl odeslán potvrzovací email.",
+	"requestaccount-sent": "Vaše žádost o účet byla odeslána a nyní se čeká na její zkontrolování.\nNa vaši emailovou adresu byl odeslán potvrzovací email.",
 	"requestaccount-econf": "Vaše e-mailová adresa byla potvrzena a v tomto tvaru se uvede ve vaší žádosti o účet.",
 	"requestaccount-email-subj": "{{SITENAME}}: Potvrzení e-mailové adresy",
 	"requestaccount-email-body": "Někdo (patrně vy, z IP adresy $1) na {{grammar:6sg|{{SITENAME}}}}\npožádal o uživatelský účet „$2“ pro tuto e-mailovou adresu.\n\nPro potvrzení, že tato adresa opravdu patří vám, přejděte svým\ninternetovým prohlížečem na následující adresu:\n\n$3\n\nPokud bude účet založen, bude heslo zasláno pouze vám.\nPokud jste to *nebyli* vy, neklikejte na odkaz.\nPlatnost tohoto potvrzovacího kódu vyprší $4.",
