@@ -5,11 +5,13 @@
 			"Karduelis",
 			"Mach",
 			"Suelnur",
-			"Vito Genovese"
+			"Vito Genovese",
+			"BaRaN6161 TURK"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' açık e-postası doğrulanmış [[Special:ConfirmAccounts|hesap {{PLURAL:$1|istek|istek}}]] beklemede",
 	"requestaccount-loginnotice": "Bir kullanıcı hesabı almak için, '''[[Special:RequestAccount|istekte bulunmanız]]''' gerekmektedir.",
+	"action-confirmaccount": "hesapları inceleyin ve kabul edin",
 	"right-confirmaccount": "[[Special:ConfirmAccounts|Hesap istekleri grubunu]] görür",
 	"right-requestips": "İstenen hesaplarla ilgili işlem yaparken istek sahibinin IP adresini görür",
 	"right-lookupcredentials": "[[Special:UserCredentials|Kullanıcı referanslarını]] görür"
