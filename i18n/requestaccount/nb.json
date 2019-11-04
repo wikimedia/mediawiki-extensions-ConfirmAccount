@@ -40,7 +40,7 @@
 	"requestaccount-emaildup": "En annen ventende kontoforespørsel bruker samme e-postadresse.",
 	"requestaccount-exts": "Filtypen på vedlegget er ikke tillatt.",
 	"requestaccount-resub": "CV-/resyme-filen din må velges på nytt av sikkerhetshensyn. La feltet være tomt om du ikke lenger ønsker å legge ved en.",
-	"requestaccount-tos": "Jeg har lest og vil følge [[{{MediaWiki:Requestaccount-page}}|tjenestevilkårene]] til {{SITENAME}}. Navnet jeg har oppgitt under «Virkelig navn» er mitt faktiske navn.",
+	"requestaccount-tos": "Jeg har lest og vil følge {{GRAMMAR:genitive|{{SITENAME}}}} [[{{MediaWiki:Requestaccount-page}}|tjenestevilkår]]. Navnet jeg har oppgitt under «Virkelig navn» er mitt faktiske navn.",
 	"requestaccount-submit": "Etterspør konto",
 	"requestaccount-sent": "Kontoforespørselen din har blitt sendt og venter på godkjenning.\nEn e-post med bekreftelse har blitt sendt til din e-postadresse.",
 	"requestaccount-econf": "E-postadressen din er nå bekreftet, og vil listes slik i kontoforespørselen.",
