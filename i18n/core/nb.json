@@ -12,6 +12,8 @@
 	"requestaccount-loginnotice": "For å få en brukerkonto må du '''[[Special:RequestAccount|etterspørre en]]'''.",
 	"action-confirmaccount": "gå gjennom og godkjenne kontoer",
 	"right-confirmaccount": "Vis [[Special:ConfirmAccounts|køen av kontosøknader]]",
+	"action-requestips": "vise IP-adressen til de som ber om konto",
 	"right-requestips": "Vis søkerenes IP-adresser mens man behandler kontosøknadene",
+	"action-lookupcredentials": "vise brukerdetaljer",
 	"right-lookupcredentials": "Vis [[Special:UserCredentials|brukerattester]]"
 }
