@@ -7,10 +7,10 @@
 			"YaronSh"
 		]
 	},
-	"usercredentials": "פרטי זיהוי המשתמש",
-	"usercredentials-leg": "פרטי זיהוי המשתמש שאושרו בתהליך האיתור",
+	"usercredentials": "נתוני ההאמנה של המשתמש",
+	"usercredentials-leg": "נתוני ההאמנה של המשתמש שאושרו בתהליך האיתור",
 	"usercredentials-user": "שם המשתמש:",
-	"usercredentials-text": "להלן פרטי הזיהוי המאומתים של חשבון המשתמש הנבחר.",
+	"usercredentials-text": "להלן נתוני ההאמנה המאומתים של חשבון המשתמש הנבחר.",
 	"usercredentials-leg-user": "חשבון משתמש",
 	"usercredentials-leg-areas": "תחומי עניין עיקריים",
 	"usercredentials-leg-person": "נתונים אישיים",
@@ -26,5 +26,5 @@
 	"usercredentials-xff": "X-Forwarded-For במקור:",
 	"usercredentials-agent": "User-Agent במקור:",
 	"usercredentials-member": "הרשאות:",
-	"usercredentials-badid": "לא נמצאו פרטי זיהוי עבור משתמש זה.\nאנא ודאו שהשם מאוית כראוי."
+	"usercredentials-badid": "לא נמצאו נתוני האמנה עבור משתמש זה.\nנא לוודא שהשם מאוית כראוי."
 }
