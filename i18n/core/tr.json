@@ -9,10 +9,12 @@
 			"BaRaN6161 TURK"
 		]
 	},
-	"confirmaccount-newrequests": "'''$1''' açık e-postası doğrulanmış [[Special:ConfirmAccounts|hesap {{PLURAL:$1|istek|istek}}]] beklemede",
+	"confirmaccount-newrequests": "'''$ 1''' açık e-posta onaylandı [[Special:ConfirmAccounts|hesap {{PLURAL:$1|istek beklemede|istek beklemede}}]]. '''Dikkatiniz gerekiyor!'''",
 	"requestaccount-loginnotice": "Bir kullanıcı hesabı almak için, '''[[Special:RequestAccount|istekte bulunmanız]]''' gerekmektedir.",
 	"action-confirmaccount": "hesapları inceleyin ve kabul edin",
 	"right-confirmaccount": "[[Special:ConfirmAccounts|Hesap istekleri grubunu]] görür",
+	"action-requestips": "istenen hesapları işlerken istek sahibinin IP adreslerini görüntüle",
 	"right-requestips": "İstenen hesaplarla ilgili işlem yaparken istek sahibinin IP adresini görür",
+	"action-lookupcredentials": "kullanıcı kimlik bilgilerini görüntüle",
 	"right-lookupcredentials": "[[Special:UserCredentials|Kullanıcı referanslarını]] görür"
 }
