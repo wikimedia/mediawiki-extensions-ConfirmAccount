@@ -14,7 +14,8 @@
 			"Liuxinyu970226",
 			"飞舞回堂前",
 			"Suchichi02",
-			"Kly"
+			"Kly",
+			"Xiplus"
 		]
 	},
 	"confirmaccounts": "確認帳號請求",
@@ -97,5 +98,5 @@
 	"confirmaccount-email-body2": "您請求的帳戶已經在{{SITENAME}}中批准。\n\n帳戶名稱: $1\n\n密碼: $2\n\n$3\n\n為了安全性的原故，您需要在一次登入時更改密碼。要登入，請前往{{fullurl:Special:Userlogin}}。",
 	"confirmaccount-email-body3": "抱歉，你在{{SITENAME}}請求的帳戶\"$1\"已經遭到拒絕。\n\n當中可能會有很多原因，會令到您嘅請求被拒絕。您可能沒有正確地填上整個表格，可能在您的回應中沒有足夠的長度，又可能未能符合到一些政策的條件。在這個網站中度提供了聯絡人列表，您可以用去知道更多用戶帳戶方針的資料。",
 	"confirmaccount-email-body4": "抱歉，你在{{SITENAME}}請求的帳戶\"$1\"已經遭到拒絕。\n\n$2\n\n在這個網站中度提供了聯絡人列表，您可以用去知道更多使用者帳號方針的資料。",
-	"confirmaccount-email-body5": "在你請求帳戶 \"$1\" 能在 {{SITENAME}} 被批准之前，你必須先提供一些附加資訊。\n\n$2\n\n如果你想知道更多有關帳戶政策的資訊，你可以使用網站中的聯繫列表。"
+	"confirmaccount-email-body5": "在你請求帳戶「$1」能在{{SITENAME}}被批准之前，你必須先提供一些附加資訊。\n\n$2\n\n如果你想知道更多有關帳戶政策的資訊，你可以使用網站中的聯繫列表。"
 }
