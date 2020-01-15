@@ -123,7 +123,7 @@ class AccountConfirmSubmission {
 				return [
 					'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
-						$context->getOutput()->parse( $result->getWikiText() )
+						$context->getOutput()->parseAsInterface( $result->getWikiText() )
 					)->text(),
 					null
 				];
@@ -182,7 +182,7 @@ class AccountConfirmSubmission {
 			return [
 				'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
-					$context->getOutput()->parse( $result->getWikiText() )
+					$context->getOutput()->parseAsInterface( $result->getWikiText() )
 				)->text(),
 				null
 			];
@@ -252,7 +252,7 @@ class AccountConfirmSubmission {
 					$lbFactory->rollbackMasterChanges( __METHOD__ );
 					return [
 						'accountconf_copyfailed',
-						$context->getOutput()->parse( $status->getWikiText() ),
+						$context->getOutput()->parseAsInterface( $status->getWikiText() ),
 						null
 					];
 				}

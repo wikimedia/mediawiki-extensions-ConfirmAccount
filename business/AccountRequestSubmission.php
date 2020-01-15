@@ -254,7 +254,7 @@ class AccountRequestSubmission {
 				$repo->cleanupBatch( [ [ 'public', $pathRel ] ] );
 			}
 
-			$param = $context->getOutput()->parse( $result->getWikiText() );
+			$param = $context->getOutput()->parseAsInterface( $result->getWikiText() );
 
 			return [
 				'acct_request_mail_failed',
