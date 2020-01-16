@@ -614,7 +614,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$this->reqBio = ( $this->reqBio != '' )
 				? $this->reqBio // overriden by admin
 				: $this->accountReq->getBio();
-			$this->reqType = !is_null( $this->reqType )
+			$this->reqType = $this->reqType !== null
 				? $this->reqType // overriden by admin
 				: $this->accountReq->getType();
 

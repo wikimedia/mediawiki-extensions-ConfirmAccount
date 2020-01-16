@@ -77,7 +77,7 @@ class ConfirmAccountUIHooks {
 		$users_section = $admin_links_tree->getSection( wfMessage( 'adminlinks_users' )->escaped() );
 		$extensions_row = $users_section->getRow( 'extensions' );
 
-		if ( is_null( $extensions_row ) ) {
+		if ( $extensions_row === null ) {
 			$extensions_row = new ALRow( 'extensions' );
 			$users_section->addRow( $extensions_row );
 		}

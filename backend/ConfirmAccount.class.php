@@ -239,7 +239,7 @@ class ConfirmAccount {
 				return Status::newFatal( 'uploadcorrupt' );
 			}
 			# Check mime type blacklist
-			if ( isset( $wgMimeTypeBlacklist ) && !is_null( $wgMimeTypeBlacklist )
+			if ( isset( $wgMimeTypeBlacklist ) && $wgMimeTypeBlacklist !== null
 				&& self::checkFileExtension( $mime, $wgMimeTypeBlacklist ) ) {
 				return Status::newFatal( 'filetype-badmime', $mime );
 			}

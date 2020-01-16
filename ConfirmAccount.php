@@ -97,11 +97,11 @@ function efLoadConfirmAccount() {
 }
 
 /**
-* Configuration for extra arguments that may be included in the admin email message.
-* Extra parameters that could be added:
-*  [ 'email', 'real_name', 'bio', 'notes', 'urls', 'ip' ]
-* The order you specify here is the order in which you can use the parameters.
-* $wgConfirmAdminEmailExtraFields is an array, the parameters 1 and 2 of the
-* message will always be: 1 - the username and 2 - the confirm url.
-*/
+ * Configuration for extra arguments that may be included in the admin email message.
+ * Extra parameters that could be added:
+ *  [ 'email', 'real_name', 'bio', 'notes', 'urls', 'ip' ]
+ * The order you specify here is the order in which you can use the parameters.
+ * $wgConfirmAdminEmailExtraFields is an array, the parameters 1 and 2 of the
+ * message will always be: 1 - the username and 2 - the confirm url.
+ */
 $wgConfirmAdminEmailExtraFields = [];
