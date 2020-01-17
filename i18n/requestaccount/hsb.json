@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Michawiki"
+			"Michawiki",
+			"J budissin"
 		]
 	},
 	"requestaccount": "Wužiwarske konto sej žadać",
@@ -23,7 +24,7 @@
 	"requestaccount-email": "E-mejlowa adresa:",
 	"requestaccount-reqtype": "Pozicija:",
 	"requestaccount-level-0": "awtor",
-	"requestaccount-level-1": "Wobdźěłowar",
+	"requestaccount-level-1": "Wobdźěłar",
 	"requestaccount-bio": "Wosobinska biografija (jenož luty tekst):",
 	"requestaccount-attach": "Žiwjenjoběh",
 	"requestaccount-notes": "Přidatne podaća:",

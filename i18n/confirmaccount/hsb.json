@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Michawiki"
+			"Michawiki",
+			"J budissin"
 		]
 	},
 	"confirmaccounts": "Kontowe požadanja potwjerdźić",
@@ -43,7 +44,7 @@
 	"confirmaccount-email": "E-mejl",
 	"confirmaccount-reqtype": "Pozicija:",
 	"confirmaccount-pos-0": "awtor",
-	"confirmaccount-pos-1": "Wobdźěłowar",
+	"confirmaccount-pos-1": "Wobdźěłar",
 	"confirmaccount-bio": "Biografija",
 	"confirmaccount-attach": "Žiwjenjoběh:",
 	"confirmaccount-notes": "Přidatne přispomnjenki:",
