@@ -236,7 +236,7 @@ class ConfirmAccount {
 			wfDebug( "\n\nmime: <$mime> extension: <$extension>\n\n" );
 			# Check mime type against file extension
 			if ( !UploadBase::verifyExtension( $mime, $extension ) ) {
-				return Status::newFatal( 'uploadcorrupt' );
+				return Status::newFatal( 'filetype-mime-mismatch', $extension, $mime );
 			}
 			# Check mime type blacklist
 			if ( isset( $wgMimeTypeBlacklist ) && $wgMimeTypeBlacklist !== null
