@@ -73,7 +73,7 @@
 	"confirmaccount-reason": "Yorum (reddedilme ve e-postalara dahil):",
 	"confirmaccount-ip": "IP adresi:",
 	"confirmaccount-xff": "X-Forwarded-For:",
-	"confirmaccount-agent": "Kullanıcı Ajanı:",
+	"confirmaccount-agent": "Kullanıcı Temsilcisi:",
 	"confirmaccount-legend": "Bu hesabı onayla/reddet",
 	"confirmaccount-submit": "Onayla",
 	"confirmaccount-needreason": "Aşağıdaki yorum kutusuna bir gerekçe girmelisiniz.",
