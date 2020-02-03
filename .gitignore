@@ -4,3 +4,4 @@ vendor/
 *~
 *.kate-swp
 .*.swp
+/.eslintcache
