@@ -13,6 +13,8 @@
 	},
 	"requestaccount": "Затражи налог",
 	"requestaccount-login": "Затражи налог",
+	"requestaccount-page": "{{ns:project}}:Услови коришћења",
+	"requestaccount-dup": "'''Напомена: Већ сте пријављени са регистрованим налогом.'''",
 	"requestaccount-leg-user": "Кориснички налог",
 	"requestaccount-leg-areas": "Главне сфере интересовања",
 	"requestaccount-leg-person": "Личне информације",
@@ -33,6 +35,8 @@
 	"requestaccount-inuse": "Корисничко име је већ у употреби и чека на одобрење.",
 	"requestaccount-tooshort": "Ваша биографија мора да садржи најмање $1 {{PLURAL:$1|реч|речи}}.",
 	"requestaccount-emaildup": "Исту адресу користи други захтев за налог који је на чекању.",
+	"requestaccount-submit": "Затражи налог",
 	"requestaccount-sent": "Ваш захтев за налогом је послат и чека на преглед.\nИмејл за потврду је послата на Вашу имејл адресу.",
-	"requestaccount-econf": "Ваша имејл адреса је потврђена и биће наведена као таква у вашем захтеву за налог."
+	"requestaccount-econf": "Ваша имејл адреса је потврђена и биће наведена као таква у вашем захтеву за налог.",
+	"requestaccount-email-subj": "{{SITENAME}} – потврда е-адресе"
 }
