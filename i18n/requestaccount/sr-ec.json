@@ -38,5 +38,5 @@
 	"requestaccount-submit": "Затражи налог",
 	"requestaccount-sent": "Ваш захтев за налогом је послат и чека на преглед.\nИмејл за потврду је послата на Вашу имејл адресу.",
 	"requestaccount-econf": "Ваша имејл адреса је потврђена и биће наведена као таква у вашем захтеву за налог.",
-	"requestaccount-email-subj": "{{SITENAME}} – потврда е-адресе"
+	"requestaccount-email-subj": "{{SITENAME}} — потврда имејл-адресе"
 }
