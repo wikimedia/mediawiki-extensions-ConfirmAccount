@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Les Meloures",
-			"Robby"
+			"Robby",
+			"Soued031"
 		]
 	},
 	"usercredentials": "Referenzen déi de Benotzer uginn huet:",
@@ -24,5 +25,5 @@
 	"usercredentials-xff": "Original X-Forwarded-For:",
 	"usercredentials-agent": "Original User-Agent:",
 	"usercredentials-member": "Rechter:",
-	"usercredentials-badid": "Et goufe keng Rechter fir dëse Benotzer fonnt.\nKuckt w.e.g. no op den Numm richteg geschriwwen ass."
+	"usercredentials-badid": "Et goufe keng Rechter fir dëse Benotzer fonnt.\nKuckt wgl. no op den Numm richteg geschriwwen ass."
 }
