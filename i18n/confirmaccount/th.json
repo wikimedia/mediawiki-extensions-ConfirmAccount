@@ -6,7 +6,8 @@
 			"Harley Hartwell",
 			"Octahedron80",
 			"Passawuth",
-			"Patsagorn Y."
+			"Patsagorn Y.",
+			"Aefgh39622"
 		]
 	},
 	"confirmaccounts": "ยืนยันคำขอบัญชีผู้ใช้",
@@ -20,6 +21,7 @@
 	"confirmaccount-real-q": "ชื่อ",
 	"confirmaccount-email-q": "อีเมล",
 	"confirmaccount-bio-q": "ชีวประวัติ",
+	"confirmaccount-showopen": "คำขอแบบเปิด",
 	"confirmaccount-showrej": "คำขอที่ถูกปฏิเสธ",
 	"confirmaccount-showheld": "คำขอที่ถูกพักไว้",
 	"confirmaccount-showexp": "คำขอที่หมดอายุความ",
@@ -27,7 +29,9 @@
 	"confirmaccount-types": "เลือกคิวการยืนยันบัญชีผู้ใช้จากด้านล่าง:",
 	"confirmaccount-all": "(แสดงคิวทั้งหมด)",
 	"confirmaccount-type": "คิว:",
+	"confirmaccount-type-0": "ผู้ที่มีแนวโน้มจะเป็นผู้สร้าง",
 	"confirmaccount-type-1": "ผู้แก้ไขที่คาดหวัง",
+	"confirmaccount-q-open": "คำขอแบบเปิด",
 	"confirmaccount-q-held": "คำขอที่ถูกพักไว้",
 	"confirmaccount-q-rej": "คำขอที่ถูกปฏิเสธใหม่",
 	"confirmaccount-q-stale": "คำขอที่หมดอายุความ",
@@ -35,6 +39,7 @@
 	"confirmaccount-leg-areas": "หัวข้อที่สนใจ",
 	"confirmaccount-leg-person": "ข้อมูลส่วนตัว",
 	"confirmaccount-leg-other": "ข้อมูลอื่น ๆ",
+	"confirmaccount-leg-ip": "ข้อมูลที่อยู่ไอพี",
 	"confirmaccount-name": "ชื่อผู้ใช้",
 	"confirmaccount-real": "ชื่อ:",
 	"confirmaccount-email": "อีเมล:",
@@ -51,6 +56,7 @@
 	"confirmaccount-noreason": "(ไม่มี)",
 	"confirmaccount-autorej": "(คำขอนี้ถูกลบทิ้งอัตโนมัติเนื่องจากไม่มีกิจกรรมใด ๆ เกิดขึ้น)",
 	"confirmaccount-held": "({{GENDER:$1|ถูกทำเครื่องหมาย}}\"รอ\"โดย[[User:$1|$1]]บน$3ที่$4)",
+	"confirmaccount-blockip": "บล็อกที่อยู่ไอพี",
 	"confirmaccount-create": "ยอมรับ (สร้างบัญชี)",
 	"confirmaccount-deny": "ปฏิเสธ (นำออกจากรายการ)",
 	"confirmaccount-hold": "พักไว้",
