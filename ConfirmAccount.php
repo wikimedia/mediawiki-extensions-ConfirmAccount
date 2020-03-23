@@ -18,90 +18,21 @@
  https://www.gnu.org/copyleft/gpl.html
 */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "ConfirmAccount extension\n";
-	exit( 1 );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'ConfirmAccount' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['ConfirmAccount'] = __DIR__ . '/i18n/core';
+	$wgMessagesDirs['ConfirmAccountPage'] = __DIR__ . '/i18n/confirmaccount';
+	$wgMessagesDirs['RequestAccountPage'] = __DIR__ . '/i18n/requestaccount';
+	$wgMessagesDirs['UserCredentialsPage'] = __DIR__ . '/i18n/usercredentials';
+	$wgExtensionMessagesFiles['ConfirmAccountAliases'] =
+		__DIR__ . '/frontend/language/ConfirmAccount.alias.php';
+	wfWarn(
+		'Deprecated PHP entry point used for ConfirmAccount extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the ConfirmAccount extension requires MediaWiki 1.35+' );
 }
-
-$wgExtensionCredits['specialpage'][] = [
-	'path' => __FILE__,
-	'name' => 'Confirm User Accounts',
-	'namemsg' => 'confirmaccount-extensionname',
-	'descriptionmsg' => 'confirmaccount-desc',
-	'author' => 'Aaron Schulz',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:ConfirmAccount',
-	'license-name' => 'GPL-2.0-or-later'
-];
-
-# Load default config variables
-require __DIR__ . '/ConfirmAccount.config.php';
-
-# Define were PHP files and i18n files are located
-require __DIR__ . '/ConfirmAccount.setup.php';
-ConfirmAccountSetup::defineSourcePaths(
-	$wgAutoloadClasses, $wgMessagesDirs, $wgExtensionMessagesFiles
-);
-
-# Define JS/CSS modules and file locations
-ConfirmAccountUISetup::defineResourceModules( $wgResourceModules );
-
-# Let some users confirm account requests and view credentials for created accounts
-$wgAvailableRights[] = 'confirmaccount'; // user can confirm account requests
-$wgAvailableRights[] = 'requestips'; // user can see IPs in request queue
-$wgAvailableRights[] = 'lookupcredentials'; // user can lookup info on confirmed users
-
-# Actually register special pages
-ConfirmAccountUISetup::defineSpecialPages( $wgSpecialPages );
-
-# ####### HOOK CALLBACK FUNCTIONS #########
-
-# UI-related hook handlers
-ConfirmAccountUISetup::defineHookHandlers( $wgHooks );
-
-# Check for account name collisions and handle queue updates
-$wgAuthManagerAutoConfig['preauth'][ConfirmAccountPreAuthenticationProvider::class] = [
-	'class' => ConfirmAccountPreAuthenticationProvider::class,
-	'sort'  => 0
-];
-
-# Schema changes
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'ConfirmAccountUpdaterHooks::addSchemaUpdates';
-
-# ####### END HOOK CALLBACK FUNCTIONS #########
-
-# Load the extension after setup is finished
-$wgExtensionFunctions[] = 'efLoadConfirmAccount';
-
-/**
- * This function is for setup that has to happen in Setup.php
- * when the functions in $wgExtensionFunctions get executed.
- * @return void
- */
-function efLoadConfirmAccount() {
-	global $wgEnableEmail, $wgConfirmAccountFSRepos, $wgUploadDirectory;
-	# This extension needs email enabled!
-	# Otherwise users can't get their passwords...
-	if ( !$wgEnableEmail ) {
-		echo "ConfirmAccount extension requires \$wgEnableEmail set to true.\n";
-		exit( 1 );
-	}
-
-	if ( $wgConfirmAccountFSRepos['accountreqs']['directory'] === false ) {
-		$wgConfirmAccountFSRepos['accountreqs']['directory'] =
-			$wgUploadDirectory . "/accountreqs";
-	}
-	if ( $wgConfirmAccountFSRepos['accountcreds']['directory'] === false ) {
-		$wgConfirmAccountFSRepos['accountcreds']['directory'] =
-			$wgUploadDirectory . "/accountcreds";
-	}
-}
-
-/**
- * Configuration for extra arguments that may be included in the admin email message.
- * Extra parameters that could be added:
- *  [ 'email', 'real_name', 'bio', 'notes', 'urls', 'ip' ]
- * The order you specify here is the order in which you can use the parameters.
- * $wgConfirmAdminEmailExtraFields is an array, the parameters 1 and 2 of the
- * message will always be: 1 - the username and 2 - the confirm url.
- */
-$wgConfirmAdminEmailExtraFields = [];

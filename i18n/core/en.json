@@ -6,6 +6,8 @@
 	"requestaccount-loginnotice": "To obtain a user account, you must '''[[Special:RequestAccount|request one]]'''.",
 	"action-confirmaccount": "review and accept accounts",
 	"right-confirmaccount": "View the [[Special:ConfirmAccounts|queue with requested accounts]]",
+	"action-confirmaccount-notify": "",
+	"right-confirmaccount-notify": "Be notified via email about newly approved account requests",
 	"action-requestips": "view requester's IP addresses while processing requested accounts",
 	"right-requestips": "View requester's IP addresses while processing requested accounts",
 	"action-lookupcredentials": "view user credentials",
