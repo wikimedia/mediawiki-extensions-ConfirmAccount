@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\FakeResultWrapper;
 
 class ConfirmAccount {
@@ -229,7 +230,7 @@ class ConfirmAccount {
 		global $wgVerifyMimeType, $wgMimeTypeBlacklist;
 
 		// magically determine mime type
-		$magic = MediaWiki\MediaWikiServices::getInstance()->getMimeAnalyzer();
+		$magic = MediaWikiServices::getInstance()->getMimeAnalyzer();
 		$mime = $magic->guessMimeType( $tmpfile, false );
 		# check mime type, if desired
 		if ( $wgVerifyMimeType ) {
@@ -351,10 +352,17 @@ class ConfirmAccount {
 	public static function getFileRepo( $info ) {
 		$repoName = $info['name'];
 		$directory = $info['directory'];
+		if ( method_exists( MediaWikiServices::class, 'getLockManagerGroupFactory' ) ) {
+			// MediaWiki 1.34+
+			$lockManagerGroup = MediaWikiServices::getInstance()->getLockManagerGroupFactory()
+				->getLockManagerGroup( wfWikiID() );
+		} else {
+			$lockManagerGroup = LockManagerGroup::singleton( wfWikiID() );
+		}
 		$info['backend'] = new FSFileBackend( [
 				'name' => $repoName . '-backend',
 				'wikiId' => wfWikiID(),
-				'lockManager' => LockManagerGroup::singleton( wfWikiID() )->get( 'fsLockManager' ),
+				'lockManager' => $lockManagerGroup->get( 'fsLockManager' ),
 				'containerPaths' => [
 					"{$repoName}-public" => "{$directory}",
 					"{$repoName}-temp" => "{$directory}/temp",
