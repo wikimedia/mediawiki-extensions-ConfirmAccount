@@ -146,8 +146,14 @@ class AccountRequestSubmission {
 				return [ false, $context->msg( 'requestaccount-resub' )->escaped() ];
 			}
 		}
+		if ( method_exists( MediaWikiServices::class, 'getAuthManager' ) ) {
+			// MediaWiki 1.35+
+			$authManager = MediaWikiServices::getInstance()->getAuthManager();
+		} else {
+			$authManager = AuthManager::singleton();
+		}
 		# Check if already in use
-		if ( 0 != $u->idForName() || AuthManager::singleton()->userExists( $u->getName() ) ) {
+		if ( 0 != $u->idForName() || $authManager->userExists( $u->getName() ) ) {
 			return [
 				'accountreq_username_exists',
 				$context->msg( 'userexists' )->escaped()
