@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Andreas Plank",
 			"Imre",
 			"Kghbln",
 			"The Evil IP address",
-			"Umherirrender",
-			"Andreas Plank"
+			"Umherirrender"
 		]
 	},
 	"confirmaccount-maintext": "'''Diese Seite dient dazu, wartende Benutzerkontenanträge für ''{{SITENAME}}'' zu bearbeiten.'''\n\nJede Benutzerkonten-Antragsqueue besteht aus drei Unterqueues. Eine für offene Anfrage, eine für Anträge im „abwarten“-Status und eine für kürzlich abgelehnte Anfragen.\n\nWenn Sie auf einen Antrag antworten, überprüfen Sie die Informationen sorgfältig und bestätigen Sie die enthaltenen Informationen.\nIhre Aktionen werden nichtöffentlich protokolliert. Es wird auch von Ihnen erwartet, die Aktionen anderer zu überprüfen.",

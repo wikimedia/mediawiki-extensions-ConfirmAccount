@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Benjozork",
 			"Crochet.david",
 			"Dereckson",
 			"Grondin",
@@ -10,13 +11,12 @@
 			"Meithal",
 			"Peter17",
 			"PieRRoMaN",
+			"Pols12",
+			"Seb35",
 			"Sherbrooke",
 			"Urhixidur",
-			"Zetud",
-			"Benjozork",
-			"Seb35",
-			"Pols12",
-			"Wladek92"
+			"Wladek92",
+			"Zetud"
 		]
 	},
 	"confirmaccount-newrequests": "Il y a actuellement '''$1''' [[Special:ConfirmAccounts|demande{{PLURAL:$1||s}} de compte]] en cours. '''Votre attention est nécessaire !'''",

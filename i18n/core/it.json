@@ -3,10 +3,10 @@
 		"authors": [
 			"Beta16",
 			"Darth Kule",
+			"Giacomo Checchin",
 			"Melos",
 			"Pietrodn",
-			"Stefano-c",
-			"Giacomo Checchin"
+			"Stefano-c"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' email per conferma [[Special:ConfirmAccounts|utenze {{PLURAL:$1|è|sono}} in attesa]]. '''È necessaria la tua attenzione!'''",

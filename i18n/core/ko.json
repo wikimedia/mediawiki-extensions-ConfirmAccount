@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"아라",
-			"Revi"
+			"Revi",
+			"아라"
 		]
 	},
 	"confirmaccount-newrequests": "이메일 확인 계정 {{PLURAL:$1|요청}} '''$1개'''가 [[Special:ConfirmAccounts|대기 중입니다]]. '''주의가 필요합니다!'''",

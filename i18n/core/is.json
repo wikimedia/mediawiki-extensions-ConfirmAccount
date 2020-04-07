@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"S.Örvarr.S",
-			"Ævar Arnfjörð Bjarmason",
-			"Snævar"
+			"Snævar",
+			"Ævar Arnfjörð Bjarmason"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' opin [[Special:ConfirmAccounts|{{PLURAL:$1|notandabeiðni|notandabeiðnir}}]] {{PLURAL:$1|með staðfest netfang bíður|með staðfest netföng bíða}} samþykkis.",

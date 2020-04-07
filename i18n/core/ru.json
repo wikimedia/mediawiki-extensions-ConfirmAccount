@@ -6,12 +6,12 @@
 			"Kaganer",
 			"Kv75",
 			"Lockal",
+			"Mailman",
 			"MaxSem",
+			"Okras",
 			"Rubin",
 			"Sasha Blashenkov",
-			"Александр Сигачёв",
-			"Okras",
-			"Mailman"
+			"Александр Сигачёв"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' {{PLURAL:$1|заявка|заявок|заявки}} на создание учётной записи с подтверждённым адресом эл. почты [[Special:ConfirmAccounts|{{PLURAL:$1|ожидает рассмотрения|ожидают рассмотрения}}]]. '''Требуется ваше внимание!'''",

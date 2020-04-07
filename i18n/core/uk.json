@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Base",
-			"Ата",
+			"Piramidion",
 			"Vlad5250",
-			"Piramidion"
+			"Ата"
 		]
 	},
 	"confirmaccount-newrequests": "[[Special:ConfirmAccounts|Очікують]] '''$1''' {{PLURAL:$1|запит|запити|запитів}} на обліковий запис від користувачів з підтвердженими адресами. '''Зверніть Вашу увагу!'''",

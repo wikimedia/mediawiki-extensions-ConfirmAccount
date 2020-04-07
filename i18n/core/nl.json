@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Annabel",
-			"SPQRobin",
-			"Siebrand",
 			"Esketti",
-			"Mainframe98"
+			"Mainframe98",
+			"SPQRobin",
+			"Siebrand"
 		]
 	},
 	"confirmaccount-newrequests": "Er staa{{PLURAL:$1|t|n}} '''$1''' gebruikersaanvraag[[Special:ConfirmAccounts|gebruikersaanvra{{PLURAL:$1|ag|gen}}]] open. '''Uw aandacht is nodig!'''",

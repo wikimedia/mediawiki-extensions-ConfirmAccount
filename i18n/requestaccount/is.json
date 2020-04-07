@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Macofe",
 			"S.Örvarr.S",
 			"Snævar",
-			"Ævar Arnfjörð Bjarmason",
-			"Macofe",
 			"Sveinki",
-			"Sveinn í Felli"
+			"Sveinn í Felli",
+			"Ævar Arnfjörð Bjarmason"
 		]
 	},
 	"requestaccount": "Sækja um aðgang",

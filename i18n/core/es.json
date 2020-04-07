@@ -6,13 +6,13 @@
 			"Crazymadlover",
 			"Fitoschido",
 			"Imre",
+			"Kroji",
 			"Lin linao",
 			"Locos epraix",
+			"Macofe",
 			"Pertile",
 			"Sanbec",
-			"Translationista",
-			"Kroji",
-			"Macofe"
+			"Translationista"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitud de cuenta pendiente|solicitudes de cuenta pendientes}}]] confirmada{{PLURAL:$1||s}} por correo electrónico.",

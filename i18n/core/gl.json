@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Alma",
+			"Banjo",
 			"Elisardojm",
 			"Toliño",
-			"Xosé",
-			"Banjo"
+			"Xosé"
 		]
 	},
 	"confirmaccount-newrequests": "Actualmente hai '''$1''' [[Special:ConfirmAccounts|{{PLURAL:$1|solicitude de conta pendente|solicitudes de contas pendentes}}]]. '''Cómpre a súa atención!'''",

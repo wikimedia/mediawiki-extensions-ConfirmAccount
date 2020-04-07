@@ -6,11 +6,11 @@
 			"Fluff",
 			"Jon Harald Søby",
 			"Lejonel",
+			"Lokal Profil",
 			"M.M.S.",
 			"Najami",
 			"Per",
-			"WikiPhoenix",
-			"Lokal Profil"
+			"WikiPhoenix"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' öppnade e-post bekräftade att [[Special:ConfirmAccounts|{{PLURAL:$1|kontoansökning väntar på att behandlas|kontoansökningar väntar på att behandlas}}]]. '''Din uppmärksamhet krävs!'''",

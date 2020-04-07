@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"01miki10",
 			"Centerlink",
 			"Cimon Avaro",
 			"Crt",
@@ -8,14 +9,13 @@
 			"Mobe",
 			"Nedergard",
 			"Nike",
+			"Pxos",
+			"Pyscowicz",
 			"Str4nd",
 			"Taleman",
-			"Varusmies",
-			"VezonThunder",
-			"Pxos",
-			"01miki10",
 			"Valtlait",
-			"Pyscowicz"
+			"Varusmies",
+			"VezonThunder"
 		]
 	},
 	"confirmaccounts": "Myönnä käyttäjätunnuksia.",

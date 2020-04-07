@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yejianfei",
 			"Chase me ladies, I'm the Cavalry",
-			"Mvolz"
+			"Mvolz",
+			"Yejianfei"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' open email confirmed [[Special:ConfirmAccounts|account {{PLURAL:$1|request is pending|requests are pending}}]]. '''Your attention is needed!'''",

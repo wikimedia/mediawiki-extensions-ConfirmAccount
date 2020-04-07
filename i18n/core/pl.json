@@ -7,12 +7,12 @@
 			"Maikking",
 			"Masti",
 			"McMonster",
+			"Rail",
+			"Railfail536",
 			"Sp5uhe",
 			"ToSter",
-			"Wpedzich",
 			"Woytecr",
-			"Railfail536",
-			"Rail"
+			"Wpedzich"
 		]
 	},
 	"confirmaccount-newrequests": "{{PLURAL:$1|Jest '''$1''' [[Special:ConfirmAccounts|oczekujący wniosek]]|Są '''$1''' [[Special:ConfirmAccounts|oczekujące wnioski]]|Jest '''$1''' [[Special:ConfirmAccounts|oczekujących wniosków]]}}, z potwierdzonym adresem e‐mail. '''Konieczna jest Twoja ingerencja!'''",

@@ -3,9 +3,9 @@
 		"authors": [
 			"Event",
 			"Harald Khan",
+			"Jon Harald Søby",
 			"Laaknor",
-			"Nghtwlkr",
-			"Jon Harald Søby"
+			"Nghtwlkr"
 		]
 	},
 	"confirmaccount-newrequests": "Det er '''$1''' {{PLURAL:$1|åpen [[Special:ConfirmAccounts|kontoforespørsel]]|åpne [[Special:ConfirmAccounts|kontoforespørsler]]}}. '''Din oppmerksomhet kreves!'''",

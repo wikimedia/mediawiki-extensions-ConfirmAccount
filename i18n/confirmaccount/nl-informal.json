@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand",
-			"Mar(c)"
+			"Mar(c)",
+			"Siebrand"
 		]
 	},
 	"confirmaccount-maintext": "'''Deze pagina wordt gebruikt om openstaande gebruikersaanvragen te bevestigen op ''{{SITENAME}}'''''.\n\nElke lijst met gebruikersaanvragen bevat drie sublijsten: één voor openstaande aanvragen, één voor aanvragen die zijn gemarkeerd als \"in behandeling\" door andere beheerders wegens ontbrekende informatie en één voor recent geweigerde aanvragen.\n\nWanneer gereageerd wordt op een aanvraag, kijk die dan grondig na en bevestig indien nodig de informatie van de aanvragen. Je handelingen worden niet publiek opgeslagen. Kijk ook de handelingen die niet van jou afkomstig zijn na.",

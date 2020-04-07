@@ -5,8 +5,8 @@
 			"Hamilton Abreu",
 			"Lijealso",
 			"Malafaya",
-			"Waldir",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Waldir"
 		]
 	},
 	"confirmaccount-newrequests": "Há {{PLURAL:$1|'''um''' [[Special:ConfirmAccounts|pedido de conta]]|'''$1''' [[Special:ConfirmAccounts|pedidos de conta]]}} em aberto com correio eletrónico confirmado. '''É necessária a sua atenção!'''",

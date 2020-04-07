@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Annabel",
-			"HanV",
-			"SPQRobin",
-			"Siebrand",
 			"Esketti",
+			"HanV",
 			"Mainframe98",
-			"Mar(c)"
+			"Mar(c)",
+			"SPQRobin",
+			"Siebrand"
 		]
 	},
 	"requestaccount": "Account aanvragen",

@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cwlin0416",
+			"Kly",
+			"LNDDYL",
 			"Mark85296341",
 			"Simon Shek",
-			"Waihorace",
-			"LNDDYL",
-			"Cwlin0416",
-			"Kly"
+			"Waihorace"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' 個開啟 Email 確認的[[Special:ConfirmAccounts|{{PLURAL:$1|帳號請求}}]]待審中。'''需要您注意！'''",

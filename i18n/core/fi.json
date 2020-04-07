@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"01miki10",
 			"Centerlink",
 			"Cimon Avaro",
 			"Crt",
@@ -9,8 +10,7 @@
 			"Nike",
 			"Str4nd",
 			"Taleman",
-			"Varusmies",
-			"01miki10"
+			"Varusmies"
 		]
 	},
 	"confirmaccount-newrequests": "'''$1''' {{PLURAL:$1|avoin sähköpostinsa vahvistanut|avointa sähköpostinsa vahvistanutta}} {{PLURAL:$1|[[Special:ConfirmAccounts|pyyntö]]|[[Special:ConfirmAccounts|pyyntöä]]}} on käsiteltävänä. '''Huomiotasi tarvitaan!'''",
