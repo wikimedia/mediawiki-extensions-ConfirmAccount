@@ -3,6 +3,7 @@
 		"authors": [
 			"Alma",
 			"Elisardojm",
+			"Iváns",
 			"Toliño",
 			"Xosé"
 		]
@@ -18,7 +19,7 @@
 	"requestaccount-leg-other": "Outra información",
 	"requestaccount-leg-tos": "Termos de servizo",
 	"requestaccount-acc-text": "Enviaráselle unha mensaxe de confirmación ao seu enderezo de correo electrónico unha vez enviada esta solicitude. O enderezo non será publicado.\nResponda premendo na ligazón de confirmación achegada no correo electrónico.\nFinalmente, enviaráselle o seu contrasinal cando se cree a conta.",
-	"requestaccount-areas-text": "Seleccione embaixo as áreas dos temas dos que é máis experto ou nos que lle gustaría traballar máis.",
+	"requestaccount-areas-text": "Selecciona embaixo as áreas dos temas dos que es máis experto ou nos que che gostaría traballar máis.",
 	"requestaccount-ext-text": "A seguinte información mantense en privado e só se usará para esta solicitude.\nTen a posibilidade listar contactos, como un número de teléfono, para axudar na confirmación da identidade.",
 	"requestaccount-bio-text": "Intente incluír algunhas credenciais relevantes na súa biografía.",
 	"requestaccount-bio-text-i": "'''A súa biografía quedará establecida como o contido inicial da súa páxina de usuario.'''\nAsegúrese de que se sinte cómodo publicando esa información.",
@@ -43,7 +44,7 @@
 	"requestaccount-sent": "A súa solicitude de conta foi enviada e agora está á espera de revisión.\nEnvióuselle un correo electrónico de confirmación ao seu enderezo de correo electrónico.",
 	"requestaccount-econf": "Confirmouse o seu enderezo de correo electrónico e listarase como tal na súa solicitude de conta.",
 	"requestaccount-email-subj": "Confirmación do enderezo de correo electrónico de {{SITENAME}}",
-	"requestaccount-email-body": "Alguén, probabelmente vostede desde o enderezo IP $1, solicitou unha\nconta \"$2\" con este enderezo de correo electrónico en {{SITENAME}}.\n\nPara confirmar que esta conta lle pertence a vostede en {{SITENAME}}, abra esta ligazón no seu navegador:\n\n$3\n\nSe se crea a conta, só vostede recibirá o contrasinal. Se *non* se trata de vostede, non siga a ligazón.\nEste código de confirmación caducará o $4.",
+	"requestaccount-email-body": "Alguén, probábelmente ti dende o enderezo IP $1, solicitou unha\nconta \"$2\" con este enderezo de correo electrónico en {{SITENAME}}.\n\nPara confirmar que esta conta che pertence a ti en {{SITENAME}}, abre esta ligazón no teu navegador:\n\n$3\n\nSe creas a conta, só ti recibirás o contrasinal. Se *non* se trata de ti, non sigas a ligazón.\nEste código de confirmación caducará o $4.",
 	"requestaccount-email-subj-admin": "Solicitude de conta en {{SITENAME}}",
 	"requestaccount-email-body-admin": "$1 solicitou unha conta e está pendente de confirmación.\nO enderezo de correo electrónico foi confirmado. Pode confirmar a solicitude aquí: \n\n$2",
 	"acct_request_throttle_hit": "Sentímolo, xa solicitou {{PLURAL:$1|unha conta|$1 contas}}.\nNon pode facer máis solicitudes."
