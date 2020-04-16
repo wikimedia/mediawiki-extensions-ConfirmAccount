@@ -35,9 +35,9 @@ class RequestAccountPage extends SpecialPage {
 		$block = ConfirmAccount::getAccountRequestBlock( $reqUser );
 		if ( $block ) {
 			throw new UserBlockedError( $block );
-		} elseif ( wfReadOnly() ) {
-			throw new ReadOnlyError();
 		}
+
+		$this->checkReadOnly();
 
 		$this->setHeaders();
 
