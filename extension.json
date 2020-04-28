@@ -32,21 +32,21 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"ConfirmAccountAliases": "frontend/language/ConfirmAccount.alias.php"
+		"ConfirmAccountAliases": "ConfirmAccount.alias.php"
 	},
 	"AutoloadClasses": {
-		"ConfirmAccountHooks": "ConfirmAccountHooks.php",
-		"ConfirmAccountUIHooks": "frontend/ConfirmAccountUI.hooks.php",
-		"ConfirmAccountsPage": "frontend/specialpages/actions/ConfirmAccount_body.php",
-		"ConfirmAccountsPager": "frontend/specialpages/actions/ConfirmAccountsPager.php",
-		"RequestAccountPage": "frontend/specialpages/actions/RequestAccount_body.php",
-		"UserCredentialsPage": "frontend/specialpages/actions/UserCredentials_body.php",
-		"ConfirmAccount": "backend/ConfirmAccount.class.php",
-		"UserAccountRequest": "backend/UserAccountRequest.php",
-		"AccountRequestSubmission": "business/AccountRequestSubmission.php",
-		"AccountConfirmSubmission": "business/AccountConfirmSubmission.php",
-		"ConfirmAccountPreAuthenticationProvider": "business/ConfirmAccountPreAuthenticationProvider.php",
-		"ConfirmAccountUpdaterHooks": "backend/schema/ConfirmAccountUpdater.hooks.php"
+		"ConfirmAccountHooks": "includes/ConfirmAccountHooks.php",
+		"ConfirmAccountUIHooks": "includes/frontend/ConfirmAccountUI.hooks.php",
+		"ConfirmAccountsPage": "includes/frontend/specialpages/actions/ConfirmAccount_body.php",
+		"ConfirmAccountsPager": "includes/frontend/specialpages/actions/ConfirmAccountsPager.php",
+		"RequestAccountPage": "includes/frontend/specialpages/actions/RequestAccount_body.php",
+		"UserCredentialsPage": "includes/frontend/specialpages/actions/UserCredentials_body.php",
+		"ConfirmAccount": "includes/backend/ConfirmAccount.class.php",
+		"UserAccountRequest": "includes/backend/UserAccountRequest.php",
+		"AccountRequestSubmission": "includes/business/AccountRequestSubmission.php",
+		"AccountConfirmSubmission": "includes/business/AccountConfirmSubmission.php",
+		"ConfirmAccountPreAuthenticationProvider": "includes/business/ConfirmAccountPreAuthenticationProvider.php",
+		"ConfirmAccountUpdaterHooks": "includes/backend/schema/ConfirmAccountUpdater.hooks.php"
 	},
 	"AuthManagerAutoConfig": {
 		"preauth": {
@@ -58,7 +58,7 @@
 	},
 	"ResourceModules": {
 		"ext.confirmAccount": {
-			"styles": "frontend/modules/confirmaccount.css"
+			"styles": "includes/frontend/modules/confirmaccount.css"
 		}
 	},
 	"ResourceFileModulePaths": {
