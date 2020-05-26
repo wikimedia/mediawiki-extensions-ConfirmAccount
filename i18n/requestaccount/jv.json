@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"Macofe",
 			"Meursault2004",
 			"Nemo bis",
@@ -10,10 +11,10 @@
 	},
 	"requestaccount": "Nyuwun akun",
 	"requestaccount-login": "Nyuwun akun",
-	"requestaccount-text": "'''Isinen kabèh lan tumpuken formulir ing ngisor iki saperlu nyuwun akun panganggo'''.\n\nPesthèkaké yèn panjenengan wis maca [[{{MediaWiki:Requestaccount-page}}|Aturan Layanan]]é dhisik sadurungé nyuwun akun.\n\nNalika akuné wis ditampa, panjenengan bakal dikirimi layang-èl wara-wara lan akuné bakal wis bisa dianggo nalika [[Special:UserLogin|mlebu log]].",
+	"requestaccount-text": "'''Isinen kabèh lan tumpuken formulir ing ngisor iki saperlu nyuwun akun naraguna'''.\n\nPesthèkaké yèn panjenengan wis maca [[{{MediaWiki:Requestaccount-page}}|Aturan Layanan]]é dhisik sadurungé nyuwun akun.\n\nNalika akuné wis ditampa, panjenengan bakal dikirimi layang-èl wara-wara lan akuné bakal wis bisa dianggo nalika [[Special:UserLogin|mlebu log]].",
 	"requestaccount-page": "{{ns:project}}:Aturan Layanan",
 	"requestaccount-dup": "'''Cathetan: Panjenengan wis mlebu log kanthi akun sing wis kadhaftar.'''",
-	"requestaccount-leg-user": "Akun panganggo",
+	"requestaccount-leg-user": "Akun naraguna",
 	"requestaccount-leg-areas": "Babagan kawigatèn sing pokok",
 	"requestaccount-leg-person": "Katerangan priangga",
 	"requestaccount-leg-other": "Katerangan liyané",
@@ -33,7 +34,7 @@
 	"requestaccount-notes": "Cathetan tambahan:",
 	"requestaccount-urls": "Daftar situs-situs wèb, yèn ana (pisahen mawa garis-garis anyar):",
 	"requestaccount-agree": "Panjenengan kudu mastèkaké yèn jeneng asli panjenengan iku bener lan panjenengan sarujuk karo Sarat Paladènan (''Terms of Service'') kita.",
-	"requestaccount-inuse": "Jeneng panganggo iki wis dienggo lan saiki lagi ing tahap ''pending'' panyuwunan rékening.",
+	"requestaccount-inuse": "Jeneng naraguna iki wis dienggo lan saiki lagi ing tahap ''pending'' panyuwunan akun.",
 	"requestaccount-tooshort": "Biografiné sampéyan saora-orané isi $1 {{PLURAL:$1|tembung}}.",
 	"requestaccount-emaildup": "Sawijining panyuwunan rékening (akun) liyané sing lagi ''pending'' nganggo alamat e-mail sing padha",
 	"requestaccount-exts": "Jenis berkas lampiran (''attachment'') ora diparengaké.",

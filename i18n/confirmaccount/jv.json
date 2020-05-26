@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"Meursault2004",
 			"NoiX180",
 			"Pras"
@@ -20,10 +21,10 @@
 	"confirmaccount-q-open": "panyuwu kang binuka",
 	"confirmaccount-q-rej": "panyuwun kang mentas tinolak",
 	"confirmaccount-q-stale": "panyuwunan-panyuwunan kadaluwarsa",
-	"confirmaccount-leg-user": "Akun panganggo",
+	"confirmaccount-leg-user": "Akun naraguna",
 	"confirmaccount-leg-person": "Katerangan priangga",
 	"confirmaccount-leg-other": "Informasi liya",
-	"confirmaccount-name": "Jeneng panganggo",
+	"confirmaccount-name": "Jeneng naraguna",
 	"confirmaccount-real": "Jeneng:",
 	"confirmaccount-email": "Layang-èl:",
 	"confirmaccount-reqtype": "Posisi:",

@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"Meursault2004",
 			"NoiX180",
 			"Pras"
 		]
 	},
-	"usercredentials-user": "Jeneng panganggo:",
-	"usercredentials-leg-user": "Akun panganggo",
+	"usercredentials-user": "Jeneng naraguna:",
+	"usercredentials-leg-user": "Akun naraguna",
 	"usercredentials-leg-person": "Katerangan priangga",
 	"usercredentials-leg-other": "Informasi liya",
 	"usercredentials-email": "Alamat layang-èl:",
