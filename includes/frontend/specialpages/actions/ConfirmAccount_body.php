@@ -741,7 +741,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				$this->getFullTitle(),
 				$this->msg( 'confirmaccount-review' ),
 				[],
-				[ 'acrid' => (int)$row->acr_id, '&wpShowRejects' => 1 ] );
+				[ 'acrid' => (int)$row->acr_id, 'wpShowRejects' => 1 ] );
 		} else {
 			$link = $linkRenderer->makeKnownLink(
 				$this->getFullTitle(),
