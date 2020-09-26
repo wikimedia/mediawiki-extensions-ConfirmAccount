@@ -26,7 +26,7 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 	$wgMessagesDirs['RequestAccountPage'] = __DIR__ . '/i18n/requestaccount';
 	$wgMessagesDirs['UserCredentialsPage'] = __DIR__ . '/i18n/usercredentials';
 	$wgExtensionMessagesFiles['ConfirmAccountAliases'] =
-		__DIR__ . '/frontend/language/ConfirmAccount.alias.php';
+		__DIR__ . '/ConfirmAccount.alias.php';
 	wfWarn(
 		'Deprecated PHP entry point used for ConfirmAccount extension. ' .
 		'Please use wfLoadExtension instead, ' .
