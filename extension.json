@@ -149,9 +149,9 @@
 				},
 				"TermsOfService": {
 					"enabled": true
-				},
-				"merge_strategy": "array_plus_2d"
-			}
+				}
+			},
+			"merge_strategy": "array_plus_2d"
 		},
 		"AccountRequestExts": {
 			"description": "If files can be attached, what types can be used? (MIME data is checked)",
@@ -174,9 +174,9 @@
 					"authors",
 					"user",
 					null
-				],
-				"merge_strategy": "array_plus"
-			}
+				]
+			},
+			"merge_strategy": "array_plus"
 		},
 		"ConfirmAccountSortkey": {
 			"description": "If set, will add {{DEFAULTSORT:sortkey}} to userpages for auto-categories. The sortkey will be made by doing a regex search and replace on the title. Set this variable to false to avoid sortkey use. For example, setting this variable to [ '/^(.+) ([^ ]+)$/', '$2, $1' ] will do {{DEFAULTSORT:firstname, lastname}}.",
@@ -208,9 +208,9 @@
 					"directory": false,
 					"url": false,
 					"hashLevels": 3
-				},
-				"merge_strategy": "array_plus_2d"
-			}
+				}
+			},
+			"merge_strategy": "array_plus_2d"
 		},
 		"ConfirmAccountNotice": {
 			"description": "Show notice for open requests to admins? This is cached, but still can be expensive on sites with thousands of requests.",
