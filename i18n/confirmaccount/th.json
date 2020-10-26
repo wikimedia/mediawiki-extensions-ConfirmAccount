@@ -63,6 +63,8 @@
 	"confirmaccount-spam": "สแปม (ไม่ส่งอีเมล)",
 	"confirmaccount-reason": "ความเห็น (จะถูกรวมอยู่ในอีเมล):",
 	"confirmaccount-ip": "หมายเลขไอพี:",
+	"confirmaccount-agent": "ตัวแทนผู้ใช้:",
+	"confirmaccount-legend": "ยืนยัน/ปฏิเสธบัญชีนี้",
 	"confirmaccount-submit": "ยืนยัน",
 	"confirmaccount-needreason": "คุณต้องระบุึเหตุผลในกล่องแสดงความคิดเห็นด้านล่าง",
 	"confirmaccount-canthold": "คำขอนี้ถูกพักไว้หรือถูกลบ",
