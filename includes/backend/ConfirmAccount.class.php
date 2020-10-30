@@ -182,11 +182,10 @@ class ConfirmAccount {
 	 * @return int
 	 */
 	public static function getOpenEmailConfirmedCount( $type = '*' ) {
-		global $wgMemc;
-
 		# Check cached results
-		$key = $wgMemc->makeKey( 'confirmaccount', 'econfopencount', $type );
-		$count = $wgMemc->get( $key );
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$key = $cache->makeKey( 'confirmaccount', 'econfopencount', $type );
+		$count = $cache->get( $key );
 		# Only show message if there are any such requests
 		if ( $count === false ) {
 			$conds = [
@@ -199,7 +198,7 @@ class ConfirmAccount {
 			$dbw = wfGetDB( DB_MASTER );
 			$count = (int)$dbw->selectField( 'account_requests', 'COUNT(*)', $conds, __METHOD__ );
 			# Cache results (invalidated on change )
-			$wgMemc->set( $key, $count, 3600 * 24 * 7 );
+			$cache->set( $key, $count, 3600 * 24 * 7 );
 		}
 		return $count;
 	}
@@ -209,13 +208,14 @@ class ConfirmAccount {
 	 * @return void
 	 */
 	public static function clearAccountRequestCountCache() {
-		global $wgAccountRequestTypes, $wgMemc;
+		global $wgAccountRequestTypes;
 
 		$types = array_keys( $wgAccountRequestTypes );
 		$types[] = '*'; // "all" types count
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		foreach ( $types as $type ) {
-			$key = $wgMemc->makeKey( 'confirmaccount', 'econfopencount', $type );
-			$wgMemc->delete( $key );
+			$key = $cache->makeKey( 'confirmaccount', 'econfopencount', $type );
+			$cache->delete( $key );
 		}
 	}
 
