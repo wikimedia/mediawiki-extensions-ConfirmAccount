@@ -338,7 +338,12 @@ class ConfirmAccount {
 			[ '*' ],
 			[ 'EXISTS (' .
 				$dbr->selectSqlText( 'user_groups', '1',
-					[ 'ug_user = user_id', 'ug_group' => $groups ] ) .
+					[
+						'ug_user = user_id',
+						'ug_group' => $groups,
+						'ug_expiry IS NULL OR ug_expiry >= ' . $dbr->addQuotes( $dbr->timestamp() )
+					]
+				) .
 				')' ],
 			__METHOD__,
 			[ 'LIMIT' => 200 ] // sanity
