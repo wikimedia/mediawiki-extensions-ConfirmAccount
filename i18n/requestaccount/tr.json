@@ -48,7 +48,7 @@
 	"requestaccount-sent": "Hesap isteğiniz gönderildi ve şimdi incelenmeyi bekliyor.\n\tE-posta adresinize bir onay e-postası gönderildi.",
 	"requestaccount-econf": "E-posta adresiniz doğrulandı ve hesap isteğinde bu şekilde listelenecek",
 	"requestaccount-email-subj": "{{SITENAME}} e-posta adresi onayı",
-	"requestaccount-email-body": "$1 IP adresini kullanan biri (muhtemelen siz), {{SITENAME}} sitesinde bu e-posta adresiyle \"$2\" hesabını talep etti.\n\nBu hesabın {{SITENAME}} sitesinde gerçekten de size ait olduğunu onaylamak için, bu bağlantıyı tarayıcınızda açın:\n\n$3\n\nHesap oluşturulmuşsa sadece size e-posta ile parola gönderilecektir.\nBu siz *değilseniz*, bağlantıyı açmayın.\nBu onay kodu, $4 tarihinde geçerliliğini yitirecektir.",
+	"requestaccount-email-body": "Birisi muhtemelen $1 IP adresinden siz, {{SITENAME}} sitesinde bu e-posta adresiyle \"$2\" hesabı talep etti.\n\nBu hesabın {{SITENAME}} sitesinde gerçekten size ait olduğunu doğrulamak için tarayıcınızda şu bağlantıyı açın:\n\n$3\n\nHesap oluşturulursa, parola yalnızca size e-posta ile gönderilecektir.\nBu *siz değilseniz*, bağlantıyı takip etmeyin.\nBu onay kodu $4 tarihinde bitirecektir.",
 	"requestaccount-email-subj-admin": "{{SITENAME}} hesap isteği",
 	"requestaccount-email-body-admin": "$1 bir hesap isteğinde bulundu ve onay bekliyor.\nE-posta adresi doğrulandı. İsteği şuradan onaylayabilirsiniz:\n\n$2",
 	"acct_request_throttle_hit": "Üzgünüz, daha önce {{PLURAL:$1|1 hesap|$1 hesap}} isteğinde bulunmuşsunuz.\nDaha fazla istekte bulunamazsınız."
