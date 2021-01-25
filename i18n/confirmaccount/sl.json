@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
-	"confirmaccount-name": "Uporabniško ime"
+	"confirmaccount-name": "Uporabniško ime",
+	"confirmaccount-pos-0": "avtor"
 }
