@@ -295,7 +295,7 @@ class AccountConfirmSubmission {
 
 		$that = $this;
 		DeferredUpdates::addCallableUpdate(
-			function () use ( $that, $user, $context, $group, $accReq ) {
+			static function () use ( $that, $user, $context, $group, $accReq ) {
 				$that->doPostCommitNewUserUpdates( $user, $context, $group, $accReq );
 			}
 		);

@@ -135,7 +135,7 @@ class ConfirmAccount {
 		global $wgConfirmAdminEmailExtraFields;
 		$dbr = wfGetDB( DB_REPLICA );
 		# Create updated array with acr_ prepended because of database names
-		$acrAdminEmailFields = array_merge( array_map( function ( $fieldName ) {
+		$acrAdminEmailFields = array_merge( array_map( static function ( $fieldName ) {
 			return ( 'acr_' . $fieldName );
 		}, $wgConfirmAdminEmailExtraFields ), [ 'acr_name', 'acr_email_authenticated' ] );
 		# Get all specified user information from database

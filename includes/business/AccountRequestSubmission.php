@@ -269,7 +269,7 @@ class AccountRequestSubmission {
 
 		$dbw->endAtomic( __METHOD__ );
 
-		DeferredUpdates::addCallableUpdate( function () use ( $context, $reqUser, $cache ) {
+		DeferredUpdates::addCallableUpdate( static function () use ( $context, $reqUser, $cache ) {
 			global $wgAccountRequestThrottle;
 			# Clear cache for notice of how many account requests there are
 			ConfirmAccount::clearAccountRequestCountCache();
