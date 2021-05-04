@@ -78,7 +78,7 @@ class AccountConfirmSubmission {
 	 * @return array
 	 */
 	protected function spamRequest( IContextSource $context ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 
 		$ok = $this->accountReq->markRejected( $this->admin, wfTimestampNow(), '' );
@@ -98,7 +98,7 @@ class AccountConfirmSubmission {
 	 */
 	protected function rejectRequest( IContextSource $context ) {
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
+		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 
 		$ok = $this->accountReq->markRejected( $this->admin, wfTimestampNow(), $this->reason );
@@ -156,7 +156,7 @@ class AccountConfirmSubmission {
 		}
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
+		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 
 		# If not already held or deleted, mark as held
@@ -225,7 +225,7 @@ class AccountConfirmSubmission {
 		$user = User::newFromName( $this->userName, false );
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
+		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 
 		# Grant any necessary rights (exclude blank or dummy groups)

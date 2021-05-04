@@ -164,7 +164,7 @@ class AccountRequestSubmission {
 		$u->setRealName( $this->realName );
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$dbw = $lbFactory->getMainLB()->getConnection( DB_MASTER );
+		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ ); // ready to acquire locks
 		# Check pending accounts for name use
 		if ( !UserAccountRequest::acquireUsername( $u->getName() ) ) {

@@ -10,7 +10,7 @@ class ConfirmAccount {
 	public static function runAutoMaintenance() {
 		global $wgRejectedAccountMaxAge, $wgConfirmAccountRejectAge, $wgConfirmAccountFSRepos;
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$repo = self::getFileRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 
 		# Select all items older than time $encCutoff
@@ -58,7 +58,7 @@ class ConfirmAccount {
 	 * @param string $name
 	 */
 	public static function confirmEmail( $name ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->update( 'account_requests',
 			[ 'acr_email_authenticated' => $dbw->timestamp() ],
 			[ 'acr_name' => $name ],
@@ -195,7 +195,7 @@ class ConfirmAccount {
 			if ( $type !== '*' ) {
 				$conds['acr_type'] = (int)$type;
 			}
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 			$count = (int)$dbw->selectField( 'account_requests', 'COUNT(*)', $conds, __METHOD__ );
 			# Cache results (invalidated on change )
 			$cache->set( $key, $count, 3600 * 24 * 7 );
