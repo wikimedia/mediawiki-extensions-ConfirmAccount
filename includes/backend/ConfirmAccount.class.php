@@ -108,19 +108,18 @@ class ConfirmAccount {
 	 * @return true|Status True on success, a Status object on failure.
 	 */
 	public static function sendConfirmationMail( User $user, $ip, $token, $expiration ) {
-		global $wgContLang;
-
 		$url = self::confirmationTokenUrl( $token );
 		$lang = $user->getOption( 'language' );
+		$contentLanguage = MediaWikiServices::getInstance()->getContentLanguage();
 		return $user->sendMail(
 			wfMessage( 'requestaccount-email-subj' )->inLanguage( $lang )->text(),
 			wfMessage( 'requestaccount-email-body',
 				$ip,
 				$user->getName(),
 				$url,
-				$wgContLang->timeanddate( $expiration, false ),
-				$wgContLang->date( $expiration, false ),
-				$wgContLang->time( $expiration, false )
+				$contentLanguage->timeanddate( $expiration, false ),
+				$contentLanguage->date( $expiration, false ),
+				$contentLanguage->time( $expiration, false )
 			)->inLanguage( $lang )->text()
 		);
 	}
