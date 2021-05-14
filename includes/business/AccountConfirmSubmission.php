@@ -293,10 +293,9 @@ class AccountConfirmSubmission {
 		# email, which we cannot take back...
 		$dbw->endAtomic( __METHOD__ );
 
-		$that = $this;
 		DeferredUpdates::addCallableUpdate(
-			static function () use ( $that, $user, $context, $group, $accReq ) {
-				$that->doPostCommitNewUserUpdates( $user, $context, $group, $accReq );
+			function () use ( $user, $context, $group, $accReq ) {
+				$this->doPostCommitNewUserUpdates( $user, $context, $group, $accReq );
 			}
 		);
 
