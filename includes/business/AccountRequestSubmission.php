@@ -1,6 +1,5 @@
 <?php
 
-use MediaWiki\Auth\AuthManager;
 use MediaWiki\MediaWikiServices;
 
 class AccountRequestSubmission {
@@ -146,12 +145,8 @@ class AccountRequestSubmission {
 				return [ false, $context->msg( 'requestaccount-resub' )->escaped() ];
 			}
 		}
-		if ( method_exists( MediaWikiServices::class, 'getAuthManager' ) ) {
-			// MediaWiki 1.35+
-			$authManager = MediaWikiServices::getInstance()->getAuthManager();
-		} else {
-			$authManager = AuthManager::singleton();
-		}
+
+		$authManager = MediaWikiServices::getInstance()->getAuthManager();
 		# Check if already in use
 		if ( $u->idForName() != 0 || $authManager->userExists( $u->getName() ) ) {
 			return [
