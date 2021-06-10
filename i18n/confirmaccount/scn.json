@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Aushulz"
 		]
 	},
 	"confirmaccount-real-q": "Nomu",
 	"confirmaccount-email-q": "Nnirizzu email",
+	"confirmaccount-name": "Nomu utenti",
 	"confirmaccount-real": "Nomu:",
 	"confirmaccount-email": "Nnirizzu email:",
 	"confirmaccount-noreason": "(nuddu)"
