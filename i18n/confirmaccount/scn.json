@@ -7,8 +7,10 @@
 	},
 	"confirmaccount-real-q": "Nomu",
 	"confirmaccount-email-q": "Nnirizzu email",
+	"confirmaccount-bio-q": "Biografìa",
 	"confirmaccount-name": "Nomu utenti",
 	"confirmaccount-real": "Nomu:",
 	"confirmaccount-email": "Nnirizzu email:",
+	"confirmaccount-bio": "Biografìa:",
 	"confirmaccount-noreason": "(nuddu)"
 }
