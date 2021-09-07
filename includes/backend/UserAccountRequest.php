@@ -122,7 +122,7 @@ class UserAccountRequest {
 
 	/**
 	 * @param int $id
-	 * @param string|null $from 'dbmaster' to use DB master
+	 * @param string|null $from 'dbmaster' to use primary DB
 	 * @return UserAccountRequest|null
 	 */
 	public static function newFromId( $id, $from = null ) {
@@ -138,7 +138,7 @@ class UserAccountRequest {
 
 	/**
 	 * @param string $name
-	 * @param string|null $from 'dbmaster' to use DB master
+	 * @param string|null $from 'dbmaster' to use primary DB
 	 * @return UserAccountRequest|null
 	 */
 	public static function newFromName( $name, $from = null ) {

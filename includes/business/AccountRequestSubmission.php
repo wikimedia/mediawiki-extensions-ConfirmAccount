@@ -216,7 +216,7 @@ class AccountRequestSubmission {
 			$triplet = [ $this->attachmentTempPath, 'public', $pathRel ];
 			$status = $repo->storeBatch( [ $triplet ], FileRepo::OVERWRITE_SAME ); // save!
 			if ( !$status->isOk() ) {
-				$lbFactory->rollbackMasterChanges( __METHOD__ );
+				$lbFactory->rollbackPrimaryChanges( __METHOD__ );
 				return [ 'acct_request_file_store_error',
 					$context->msg( 'filecopyerror', $this->attachmentTempPath, $pathRel )->escaped() ];
 			}
@@ -250,7 +250,7 @@ class AccountRequestSubmission {
 		# Send confirmation, required!
 		$result = ConfirmAccount::sendConfirmationMail( $u, $this->ip, $token, $expires );
 		if ( !$result->isOK() ) {
-			$lbFactory->rollbackMasterChanges( __METHOD__ ); // nevermind
+			$lbFactory->rollbackPrimaryChanges( __METHOD__ ); // nevermind
 			if ( isset( $repo ) && isset( $pathRel ) ) { // remove attachment
 				$repo->cleanupBatch( [ [ 'public', $pathRel ] ] );
 			}

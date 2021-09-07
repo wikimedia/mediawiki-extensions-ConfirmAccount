@@ -119,7 +119,7 @@ class AccountConfirmSubmission {
 				$emailBody
 			);
 			if ( !$result->isOk() ) {
-				$lbFactory->rollbackMasterChanges( __METHOD__ );
+				$lbFactory->rollbackPrimaryChanges( __METHOD__ );
 				return [
 					'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
@@ -162,7 +162,7 @@ class AccountConfirmSubmission {
 		# If not already held or deleted, mark as held
 		$ok = $this->accountReq->markHeld( $this->admin, wfTimestampNow(), $this->reason );
 		if ( !$ok ) { // already held or deleted?
-			$lbFactory->rollbackMasterChanges( __METHOD__ );
+			$lbFactory->rollbackPrimaryChanges( __METHOD__ );
 			return [
 				'accountconf_canthold',
 				$context->msg( 'confirmaccount-canthold' )->escaped(),
@@ -178,7 +178,7 @@ class AccountConfirmSubmission {
 			)->inContentLanguage()->text()
 		);
 		if ( !$result->isOk() ) {
-			$lbFactory->rollbackMasterChanges( __METHOD__ );
+			$lbFactory->rollbackPrimaryChanges( __METHOD__ );
 			return [
 				'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
@@ -249,7 +249,7 @@ class AccountConfirmSubmission {
 				$triplet = [ $oldPath, 'public', $pathRel ];
 				$status = $repoNew->storeBatch( [ $triplet ] ); // copy!
 				if ( !$status->isOK() ) {
-					$lbFactory->rollbackMasterChanges( __METHOD__ );
+					$lbFactory->rollbackPrimaryChanges( __METHOD__ );
 					return [
 						'accountconf_copyfailed',
 						$context->getOutput()->parseAsInterface( $status->getWikiText() ),
