@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"JSantos",
 			"Joao Xavier",
 			"Malafaya"
 		]
 	},
+	"confirmaccount-email-q": "E-posto",
 	"confirmaccount-review": "Revizar",
 	"confirmaccount-real": "Nomo:",
+	"confirmaccount-email": "E-postoː",
 	"confirmaccount-reqtype": "Poziciono:",
 	"confirmaccount-pos-0": "autoro",
 	"confirmaccount-pos-1": "redaktero",
