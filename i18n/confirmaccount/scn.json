@@ -12,7 +12,12 @@
 	"confirmaccount-name": "Nomu utenti",
 	"confirmaccount-real": "Nomu:",
 	"confirmaccount-email": "Nnirizzu email:",
+	"confirmaccount-reqtype": "Pusizzioni:",
+	"confirmaccount-pos-0": "auturi",
 	"confirmaccount-bio": "Biografìa:",
+	"confirmaccount-notes": "Àutri noti:",
 	"confirmaccount-noreason": "(nuddu)",
-	"confirmaccount-ip": "Nnirizzu IP:"
+	"confirmaccount-ip": "Nnirizzu IP:",
+	"confirmaccount-submit": "Cunferma",
+	"confirmaccount-wsum": "Bimminutu!"
 }
