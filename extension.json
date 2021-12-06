@@ -15,7 +15,12 @@
 	"SpecialPages": {
 		"RequestAccount": "RequestAccountPage",
 		"ConfirmAccounts": "ConfirmAccountsPage",
-		"UserCredentials": "UserCredentialsPage"
+		"UserCredentials": {
+			"class": "UserCredentialsPage",
+			"services": [
+				"UserGroupManager"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"ConfirmAccount": [
