@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aushulz"
+			"Aushulz",
+			"Ajeje Brazorf"
 		]
 	},
-	"usercredentials-email": "Nnirizzu email:"
+	"usercredentials-user": "Nomu utenti:",
+	"usercredentials-leg-person": "Nfurmazzioni pirsunali",
+	"usercredentials-leg-other": "Àutri nfurmazzioni",
+	"usercredentials-email": "Nnirizzu email:",
+	"usercredentials-bio": "Biografìa:",
+	"usercredentials-notes": "Àutri noti:",
+	"usercredentials-urls": "Elencu dî siti web:",
+	"usercredentials-ip": "Nnirizzu IP orìgginali:"
 }
