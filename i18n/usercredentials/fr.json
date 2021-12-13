@@ -15,7 +15,8 @@
 			"Tuxxic",
 			"Urhixidur",
 			"Verdy p",
-			"Zetud"
+			"Zetud",
+			"Thibaut120094"
 		]
 	},
 	"usercredentials": "Références de l'utilisateur",
@@ -28,7 +29,7 @@
 	"usercredentials-leg-other": "Autres informations",
 	"usercredentials-leg-ip": "données d'adresse IP",
 	"usercredentials-email": "Adresse de courriel :",
-	"usercredentials-real": "Nom réel :",
+	"usercredentials-real": "Vrai nom :",
 	"usercredentials-bio": "Biographie :",
 	"usercredentials-attach": "CV :",
 	"usercredentials-notes": "Notes supplémentaires :",
