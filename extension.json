@@ -13,7 +13,12 @@
 		"ConfirmAccountHooks::onExtensionFunctions"
 	],
 	"SpecialPages": {
-		"RequestAccount": "RequestAccountPage",
+		"RequestAccount": {
+			"class": "RequestAccountPage",
+			"services": [
+				"UserFactory"
+			]
+		},
 		"ConfirmAccounts": "ConfirmAccountsPage",
 		"UserCredentials": {
 			"class": "UserCredentialsPage",
