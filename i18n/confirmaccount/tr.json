@@ -8,6 +8,7 @@
 			"McAang",
 			"Meelo",
 			"MuratTheTurkish",
+			"SaldırganSincap",
 			"Sayginer",
 			"Suelnur",
 			"Vito Genovese"
@@ -52,7 +53,7 @@
 	"confirmaccount-email": "E-posta:",
 	"confirmaccount-reqtype": "Konum:",
 	"confirmaccount-pos-0": "yazar",
-	"confirmaccount-pos-1": "editör",
+	"confirmaccount-pos-1": "düzenleyici",
 	"confirmaccount-bio": "Biyografi:",
 	"confirmaccount-attach": "Özgeçmiş/CV:",
 	"confirmaccount-notes": "Ek notlar:",
