@@ -47,7 +47,7 @@ class AccountConfirmSubmission {
 				$context->msg( 'badaccess-group0' )->escaped(),
 				null
 			];
-		} elseif ( wfReadOnly() ) {
+		} elseif ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
 			return [
 				'accountconf_readonly',
 				$context->msg( 'badaccess-group0' )->escaped(),
