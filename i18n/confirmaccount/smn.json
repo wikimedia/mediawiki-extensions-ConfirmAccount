@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Seipinne",
 			"Yupik"
 		]
 	},
 	"confirmaccount-real-q": "Nommâ",
-	"confirmaccount-real": "Nommâ:"
+	"confirmaccount-real": "Nommâ:",
+	"confirmaccount-wsum": "Tiervâpuáttim!"
 }
