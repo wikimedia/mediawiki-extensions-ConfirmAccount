@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
-	"usercredentials-email": "Šleđgâpostâčujottâs:"
+	"usercredentials-email": "Šleđgâpostâčujottâs:",
+	"usercredentials-member": "Vuoigâdvuođah:"
 }
