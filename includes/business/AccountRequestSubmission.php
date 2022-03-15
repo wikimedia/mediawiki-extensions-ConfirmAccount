@@ -160,7 +160,7 @@ class AccountRequestSubmission {
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
-		$dbw->startAtomic( __METHOD__ ); // ready to acquire locks
+		$dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE ); // ready to acquire locks
 		# Check pending accounts for name use
 		if ( !UserAccountRequest::acquireUsername( $u->getName() ) ) {
 			$dbw->endAtomic( __METHOD__ );
@@ -216,7 +216,7 @@ class AccountRequestSubmission {
 			$triplet = [ $this->attachmentTempPath, 'public', $pathRel ];
 			$status = $repo->storeBatch( [ $triplet ], FileRepo::OVERWRITE_SAME ); // save!
 			if ( !$status->isOk() ) {
-				$lbFactory->rollbackPrimaryChanges( __METHOD__ );
+				$dbw->cancelAtomic( __METHOD__ );
 				return [ 'acct_request_file_store_error',
 					$context->msg( 'filecopyerror', $this->attachmentTempPath, $pathRel )->escaped() ];
 			}
@@ -250,7 +250,7 @@ class AccountRequestSubmission {
 		# Send confirmation, required!
 		$result = ConfirmAccount::sendConfirmationMail( $u, $this->ip, $token, $expires );
 		if ( !$result->isOK() ) {
-			$lbFactory->rollbackPrimaryChanges( __METHOD__ ); // nevermind
+			$dbw->cancelAtomic( __METHOD__ );
 			if ( isset( $repo ) && isset( $pathRel ) ) { // remove attachment
 				$repo->cleanupBatch( [ [ 'public', $pathRel ] ] );
 			}
