@@ -99,7 +99,7 @@ class AccountConfirmSubmission {
 	protected function rejectRequest( IContextSource $context ) {
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
-		$dbw->startAtomic( __METHOD__ );
+		$dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
 		$ok = $this->accountReq->markRejected( $this->admin, wfTimestampNow(), $this->reason );
 		if ( $ok ) {
@@ -119,7 +119,7 @@ class AccountConfirmSubmission {
 				$emailBody
 			);
 			if ( !$result->isOk() ) {
-				$lbFactory->rollbackPrimaryChanges( __METHOD__ );
+				$dbw->cancelAtomic( __METHOD__ );
 				return [
 					'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
@@ -157,12 +157,12 @@ class AccountConfirmSubmission {
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
-		$dbw->startAtomic( __METHOD__ );
+		$dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
 		# If not already held or deleted, mark as held
 		$ok = $this->accountReq->markHeld( $this->admin, wfTimestampNow(), $this->reason );
 		if ( !$ok ) { // already held or deleted?
-			$lbFactory->rollbackPrimaryChanges( __METHOD__ );
+			$dbw->cancelAtomic( __METHOD__ );
 			return [
 				'accountconf_canthold',
 				$context->msg( 'confirmaccount-canthold' )->escaped(),
@@ -178,7 +178,7 @@ class AccountConfirmSubmission {
 			)->inContentLanguage()->text()
 		);
 		if ( !$result->isOk() ) {
-			$lbFactory->rollbackPrimaryChanges( __METHOD__ );
+			$dbw->cancelAtomic( __METHOD__ );
 			return [
 				'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
@@ -226,7 +226,7 @@ class AccountConfirmSubmission {
 
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
-		$dbw->startAtomic( __METHOD__ );
+		$dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
 		# Grant any necessary rights (exclude blank or dummy groups)
 		$group = self::getGroupFromType( $this->type );
@@ -249,7 +249,7 @@ class AccountConfirmSubmission {
 				$triplet = [ $oldPath, 'public', $pathRel ];
 				$status = $repoNew->storeBatch( [ $triplet ] ); // copy!
 				if ( !$status->isOK() ) {
-					$lbFactory->rollbackPrimaryChanges( __METHOD__ );
+					$dbw->cancelAtomic( __METHOD__ );
 					return [
 						'accountconf_copyfailed',
 						$context->getOutput()->parseAsInterface( $status->getWikiText() ),
