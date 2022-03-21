@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Armin1392",
+			"Beginneruser",
 			"Ebraminio",
 			"Mjbmr",
 			"Reza1615",
@@ -26,6 +27,6 @@
 	"usercredentials-ip": "نشانی آی‌پی اصلی:",
 	"usercredentials-xff": "ایکس-فرستاده شد اصلی برای:",
 	"usercredentials-agent": "یوزر-ایجنت اصلی:",
-	"usercredentials-member": "دسترسی‌ها:",
+	"usercredentials-member": "امتیازات:",
 	"usercredentials-badid": "هیچ اعتبارنامه‌ای برای این کاربر پیدا نشد.\nاملای نام را به درستی بررسی کنید."
 }
