@@ -14,6 +14,6 @@
 	"right-confirmaccount-notify": "కొత్తగా ఆమోదించిన ఖాతా అభ్యర్థనల గురించి ఈమెయిలు గమనింపు పొందడం",
 	"action-requestips": "ఖాతా అభ్యర్థనలను ప్రాసెస్ చేసేటపుడు అభ్యర్థి ఐపీ చిరునామాను చూసే",
 	"right-requestips": "ఖాతా అభ్యర్థనలను ప్రాసెస్ చేసేటపుడు అభ్యర్థి ఐపీ చిరునామాను చూడడం",
-	"action-lookupcredentials": "వాడూకరి అర్హతలను చూసే",
-	"right-lookupcredentials": "[[Special:UserCredentials|వాడూకరి అర్హతలను]] చూడడం"
+	"action-lookupcredentials": "వాడుకరి అర్హతలను చూసే",
+	"right-lookupcredentials": "[[Special:UserCredentials|వాడుకరి అర్హతలను]] చూడడం"
 }
