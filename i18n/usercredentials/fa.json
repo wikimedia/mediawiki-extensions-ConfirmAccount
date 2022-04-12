@@ -27,6 +27,6 @@
 	"usercredentials-ip": "نشانی آی‌پی اصلی:",
 	"usercredentials-xff": "ایکس-فرستاده شد اصلی برای:",
 	"usercredentials-agent": "یوزر-ایجنت اصلی:",
-	"usercredentials-member": "امتیازات:",
+	"usercredentials-member": "اختیارات:",
 	"usercredentials-badid": "هیچ اعتبارنامه‌ای برای این کاربر پیدا نشد.\nاملای نام را به درستی بررسی کنید."
 }
