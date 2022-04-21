@@ -66,7 +66,7 @@
 	"confirmaccount-noreason": "(هیچ)",
 	"confirmaccount-autorej": "(این درخواست به دلیل عدم فعالیت به صورت خودکار رد شده‌است)",
 	"confirmaccount-held": "({{GENDER:$1|marked}} \"on hold\" by [[User:$1|$1]] on $3 at $4)",
-	"confirmaccount-blockip": "مسدودکردن نشانی آی‌پی",
+	"confirmaccount-blockip": "بستن نشانی آی‌پی",
 	"confirmaccount-create": "تأیید (ایجاد حساب)",
 	"confirmaccount-deny": "رد (حذف از فهرست)",
 	"confirmaccount-hold": "نگهدار",
