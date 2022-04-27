@@ -69,7 +69,7 @@
 	"confirmaccount-none-p": "(non précisé)",
 	"confirmaccount-confirm": "Utilisez les options ci-dessous pour accepter, rejeter ou placer en attente cette demande :",
 	"confirmaccount-econf": "(confirmé)",
-	"confirmaccount-withcv": "(CV joint)",
+	"confirmaccount-withcv": "(Curriculum vitæ ci-joint)",
 	"confirmaccount-reject": "(demande rejetée par {{GENDER:$1|}}[[User:$1|$1]] le $3 à $4)",
 	"confirmaccount-rational": "Motif donné au candidat :",
 	"confirmaccount-noreason": "(aucun)",
