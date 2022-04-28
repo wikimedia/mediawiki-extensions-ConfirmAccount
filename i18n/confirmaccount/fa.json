@@ -81,7 +81,7 @@
 	"confirmaccount-canthold": "این درخواست پیش از این یا نگه داشته شده یا حذف شده.",
 	"confirmaccount-badaction": "یک عمل معتبر (قبول،رد،نگه‌داشتن) باید به منظور ادامه دادن، تعیین شود.",
 	"confirmaccount-acc": "درخواست حساب تأیید شد؛\n\tایجاد حساب کاربری تازهٔ [[User:$1|$1]].",
-	"confirmaccount-rej": "درخواست حساب رد شد.",
+	"confirmaccount-rej": "درخواست حساب، رد شد.",
 	"confirmaccount-viewing": "(currently {{GENDER:$1|being}} مشاهده شده توسط [[User:$1|$1]])",
 	"confirmaccount-summary": "ایجاد صفحۀ کاربری برای کاربر جدید.",
 	"confirmaccount-welc": "'''به ''{{SITENAME}}'' خوش آمدید!'''\nامیدواریم که شما بیشتر و بهتر کمک شوید.\nممکن است شما بخواهید [{{MediaWiki:Helppage}} help pages] را بخوانید.\nمجدداً خوش آمدید و لحظات خوبی داشته باشید!",
