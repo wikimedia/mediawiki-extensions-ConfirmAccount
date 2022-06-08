@@ -257,7 +257,6 @@ class AccountConfirmSubmission {
 					];
 				}
 			}
-			$acd_id = $dbw->nextSequenceValue( 'account_credentials_acd_id_seq' );
 			# Move request data into a separate table
 			$dbw->insert( 'account_credentials',
 				[
@@ -278,8 +277,7 @@ class AccountConfirmSubmission {
 					'acd_registration' => $dbw->timestamp( $accReq->getRegistration() ),
 					'acd_accepted' => $dbw->timestamp(),
 					'acd_user' => $this->admin->getID(),
-					'acd_comment' => $this->reason,
-					'acd_id' => $acd_id
+					'acd_comment' => $this->reason
 				],
 				__METHOD__
 			);
