@@ -408,7 +408,7 @@ class AccountConfirmSubmission {
 
 		# Create userpage!
 		if ( $body !== '' ) {
-			$article = new WikiPage( $user->getUserPage() );
+			$article = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $user->getUserPage() );
 			$article->doUserEditContent(
 				ContentHandler::makeContent( $body, $article->getTitle() ),
 				$this->admin,
@@ -427,7 +427,7 @@ class AccountConfirmSubmission {
 				? wfMessage( 'confirmaccount-welc' )->text()
 				: $msgObj->text(); // custom message
 			# Add user welcome message!
-			$article = new WikiPage( $user->getTalkPage() );
+			$article = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $user->getTalkPage() );
 			$article->doUserEditContent(
 				ContentHandler::makeContent( "{$welcome} ~~~~", $article->getTitle() ),
 				$this->admin,
