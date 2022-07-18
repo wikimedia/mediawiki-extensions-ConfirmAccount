@@ -11,6 +11,7 @@
 			"SaldırganSincap",
 			"Sayginer",
 			"Suelnur",
+			"ToprakM",
 			"Vito Genovese"
 		]
 	},
@@ -53,7 +54,7 @@
 	"confirmaccount-email": "E-posta:",
 	"confirmaccount-reqtype": "Konum:",
 	"confirmaccount-pos-0": "yazar",
-	"confirmaccount-pos-1": "düzenleyici",
+	"confirmaccount-pos-1": "editör",
 	"confirmaccount-bio": "Biyografi:",
 	"confirmaccount-attach": "Özgeçmiş/CV:",
 	"confirmaccount-notes": "Ek notlar:",
