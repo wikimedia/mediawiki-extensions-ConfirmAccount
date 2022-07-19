@@ -10,7 +10,8 @@
 			"Nemo bis",
 			"Suelnur",
 			"Vito Genovese",
-			"SaldırganSincap"
+			"SaldırganSincap",
+			"ToprakM"
 		]
 	},
 	"requestaccount": "Hesap iste",
@@ -33,7 +34,7 @@
 	"requestaccount-email": "E-posta adresi:",
 	"requestaccount-reqtype": "Konum:",
 	"requestaccount-level-0": "yazar",
-	"requestaccount-level-1": "düzenleyici",
+	"requestaccount-level-1": "editör",
 	"requestaccount-bio": "Kişisel biyografi (yalnızca düz metin):",
 	"requestaccount-attach": "Özgeçmiş veya CV (isteğe bağlı):",
 	"requestaccount-notes": "Ek notlar:",
