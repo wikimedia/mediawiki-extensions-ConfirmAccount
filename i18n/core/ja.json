@@ -7,6 +7,7 @@
 			"Otokoume",
 			"Schu",
 			"Shirayuki",
+			"春春眠眠",
 			"青子守歌"
 		]
 	},
@@ -14,6 +15,7 @@
 	"requestaccount-loginnotice": "利用者アカウントを取得するには、'''[[Special:RequestAccount|アカウント登録申請]]'''をしてください。",
 	"action-confirmaccount": "アカウントの確認および承諾",
 	"right-confirmaccount": "[[Special:ConfirmAccounts|アカウント申請キュー]]を閲覧",
+	"right-confirmaccount-notify": "新しく承認されたアカウントリクエストについてメールで通知を受ける",
 	"action-requestips": "アカウント申請の処理中の、申請者のIPアドレスの閲覧",
 	"right-requestips": "アカウント申請の処理中に申請者のIPアドレスを閲覧",
 	"action-lookupcredentials": "利用者信頼情報の閲覧",
