@@ -76,7 +76,7 @@
 		"remoteExtPath": "ConfirmAccount"
 	},
 	"Hooks": {
-		"PersonalUrls": "ConfirmAccountUIHooks::setRequestLoginLinks",
+		"SkinTemplateNavigation::Universal": "ConfirmAccountUIHooks::setRequestLoginLinks",
 		"UserCreateForm": "ConfirmAccountUIHooks::addRequestLoginText",
 		"UserLoginForm": "ConfirmAccountUIHooks::addRequestLoginText",
 		"BeforePageDisplay": "ConfirmAccountUIHooks::confirmAccountsNotice",
