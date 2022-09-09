@@ -9,6 +9,11 @@
 	"requires": {
 		"MediaWiki": ">= 1.37.0"
 	},
+	"suggests": {
+		"extensions": {
+			"ConfirmEdit": "*"
+		}
+	},
 	"ExtensionFunctions": [
 		"ConfirmAccountHooks::onExtensionFunctions"
 	],
