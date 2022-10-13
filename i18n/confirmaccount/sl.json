@@ -9,7 +9,9 @@
 	"confirmaccount-real-q": "Ime",
 	"confirmaccount-name": "Uporabniško ime",
 	"confirmaccount-real": "Ime:",
+	"confirmaccount-reqtype": "Položaj:",
 	"confirmaccount-pos-0": "avtor",
+	"confirmaccount-pos-1": "urejevalec",
 	"confirmaccount-noreason": "(brez)",
 	"confirmaccount-agent": "User-Agent:",
 	"confirmaccount-wsum": "Pozdravljeni!"
