@@ -326,7 +326,8 @@ class ConfirmAccount {
 	 * @return UserArray
 	 */
 	public static function getAdminsToNotify() {
-		$groups = User::getGroupsWithPermission( 'confirmaccount-notify' );
+		$groups = MediaWikiServices::getInstance()->getGroupPermissionsLookup()
+			->getGroupsWithPermission( 'confirmaccount-notify' );
 		if ( !count( $groups ) ) {
 			return UserArray::newFromResult( new FakeResultWrapper( [] ) );
 		}
