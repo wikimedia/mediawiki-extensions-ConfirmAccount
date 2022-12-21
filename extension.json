@@ -28,7 +28,8 @@
 		"UserCredentials": {
 			"class": "UserCredentialsPage",
 			"services": [
-				"UserGroupManager"
+				"UserGroupManager",
+				"UserIdentityLookup"
 			]
 		}
 	},
