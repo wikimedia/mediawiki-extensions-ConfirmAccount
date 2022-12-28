@@ -25,6 +25,7 @@
 	"confirmaccount-pos-0": "avtor",
 	"confirmaccount-pos-1": "urejevalec",
 	"confirmaccount-noreason": "(brez)",
+	"confirmaccount-ip": "IP-naslov:",
 	"confirmaccount-agent": "User-Agent:",
 	"confirmaccount-wsum": "Pozdravljeni!"
 }
