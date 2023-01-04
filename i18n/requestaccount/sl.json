@@ -4,7 +4,11 @@
 			"Eleassar"
 		]
 	},
+	"requestaccount-leg-user": "Uporabniški račun",
+	"requestaccount-leg-areas": "Glavna področja zanimanja",
+	"requestaccount-leg-person": "Osebni podatki",
 	"requestaccount-leg-other": "Druge informacije",
 	"requestaccount-level-0": "avtor",
-	"requestaccount-level-1": "urejevalec"
+	"requestaccount-level-1": "urejevalec",
+	"requestaccount-notes": "Dodatne opombe:"
 }
