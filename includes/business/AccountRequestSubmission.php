@@ -69,7 +69,8 @@ class AccountRequestSubmission {
 	 * @return array [ true or error key string, html error msg or null ]
 	 */
 	public function submit( IContextSource $context ) {
-		global $wgAccountRequestThrottle, $wgConfirmAccountRequestFormItems;
+		global $wgAccountRequestThrottle, $wgConfirmAccountRequestFormItems, $wgConfirmAccountCaptchas;
+		global $wgCaptchaClass, $wgCaptchaTriggers;
 
 		ConfirmAccount::runAutoMaintenance();
 
@@ -86,6 +87,16 @@ class AccountRequestSubmission {
 			];
 		} elseif ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
 			return [ 'accountreq_readonly', $context->msg( 'badaccess-group0' )->escaped() ];
+		}
+
+		# Check for captcha validity
+		if ( $wgConfirmAccountCaptchas && isset( $wgCaptchaClass )
+			&& $wgCaptchaTriggers['createaccount'] && !$reqUser->isAllowed( 'skipcaptcha' ) ) {
+			/** @var SimpleCaptcha $captcha */
+			$captcha = new $wgCaptchaClass;
+			if ( !$captcha->passCaptchaLimitedFromRequest( $context->getRequest(), $reqUser ) ) {
+				return [ 'accountreq_bad_captcha', $context->msg( 'captcha-createaccount-fail' )->escaped() ];
+			}
 		}
 
 		# Now create a dummy user ($u) and check if it is valid
