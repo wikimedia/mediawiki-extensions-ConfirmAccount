@@ -305,7 +305,7 @@ class RequestAccountPage extends SpecialPage {
 			$wgCaptchaTriggers['createaccount'] = false;
 		}
 		$abortError = '';
-		if ( !Hooks::run( 'AbortNewAccount', [ $u, &$abortError ] ) ) {
+		if ( !$this->getHookContainer()->run( 'AbortNewAccount', [ $u, &$abortError ] ) ) {
 			// Hook point to add extra creation throttles and blocks
 			wfDebug( "RequestAccount::doSubmit: a hook blocked creation\n" );
 			$this->showForm( $abortError );
