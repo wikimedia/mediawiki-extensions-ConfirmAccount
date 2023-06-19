@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bosogo",
 			"Growingup"
 		]
 	},
+	"confirmaccount-pos-1": "түзөтүүчү",
 	"confirmaccount-noreason": "(жок)"
 }
