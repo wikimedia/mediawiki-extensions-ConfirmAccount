@@ -7,7 +7,9 @@
 	},
 	"confirmaccount-email-q": "Электрондук почта",
 	"confirmaccount-email": "Электрондук почта:",
+	"confirmaccount-pos-0": "автор",
 	"confirmaccount-pos-1": "түзөтүүчү",
 	"confirmaccount-noreason": "(жок)",
-	"confirmaccount-submit": "Ырастоо"
+	"confirmaccount-submit": "Ырастоо",
+	"confirmaccount-wsum": "Кош келиңиз !"
 }
