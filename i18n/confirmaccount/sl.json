@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Dbc334",
-			"Eleassar"
+			"Eleassar",
+			"Upwinxp"
 		]
 	},
 	"confirmaccounts": "Potrdite zahtevek za račun",
@@ -54,11 +55,11 @@
 	"confirmaccount-confirm": "Uporabite spodnje možnosti, da sprejmete, zavrnete ali zadržite ta zahtevek:",
 	"confirmaccount-econf": "(potrjen)",
 	"confirmaccount-withcv": "(življenjepis priložen)",
-	"confirmaccount-reject": "({{GENDER:$1|zavrnil_a}} [[User:$1|$1]] dne $3 ob $4)",
+	"confirmaccount-reject": "({{GENDER:$1|zavrnil/a}} [[User:$1|$1]] dne $3 ob $4)",
 	"confirmaccount-rational": "Utemeljitev za kandidata:",
 	"confirmaccount-noreason": "(brez)",
 	"confirmaccount-autorej": "(ta zahtevek je bil samodejno zavržen zaradi nedejavnosti)",
-	"confirmaccount-held": "([[User:$1|$1]] jo je $3 ob $4 {{GENDER:$1|označil|označila|označil_a}} kot čakajočega)",
+	"confirmaccount-held": "([[User:$1|$1]] jo je $3 ob $4 {{GENDER:$1|označil|označila|označil/a}} kot čakajočo)",
 	"confirmaccount-blockip": "Blokiraj IP-naslov",
 	"confirmaccount-create": "Sprejmi (ustvari račun)",
 	"confirmaccount-deny": "Zavrni (odstrani s seznama)",
