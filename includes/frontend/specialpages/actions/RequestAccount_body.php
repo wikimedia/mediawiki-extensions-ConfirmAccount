@@ -349,7 +349,7 @@ class RequestAccountPage extends SpecialPage {
 		);
 
 		# Actually submit!
-		list( $status, $msg ) = $submission->submit( $this->getContext() );
+		[ $status, $msg ] = $submission->submit( $this->getContext() );
 		# Account for state changes
 		$this->mForgotAttachment = $submission->getAttachmentDidNotForget();
 		$this->mPrevAttachment = $submission->getAttachtmentPrevName();
@@ -393,8 +393,8 @@ class RequestAccountPage extends SpecialPage {
 		$reqUser = $this->getUser();
 		$out = $this->getOutput();
 		# Confirm if this token is in the pending requests
-		list( $bodyArguments, $name,
-			$email_authenticated ) = ConfirmAccount::requestInfoFromEmailToken( $code );
+		[ $bodyArguments, $name,
+			$email_authenticated ] = ConfirmAccount::requestInfoFromEmailToken( $code );
 		if ( $name && $email_authenticated === null ) {
 			# Send confirmation email to prospective user
 			ConfirmAccount::confirmEmail( $name );

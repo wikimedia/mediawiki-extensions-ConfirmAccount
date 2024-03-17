@@ -584,7 +584,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		);
 
 		# Actually submit!
-		list( $status, $msg, $url ) = $submission->submit( $this->getContext() );
+		[ $status, $msg, $url ] = $submission->submit( $this->getContext() );
 
 		# Check for error messages
 		if ( $status !== true ) {
