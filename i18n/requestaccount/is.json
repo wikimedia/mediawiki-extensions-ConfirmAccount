@@ -23,7 +23,7 @@
 	"requestaccount-reqtype": "Staða:",
 	"requestaccount-level-0": "höfundur",
 	"requestaccount-level-1": "ritstjóri",
-	"requestaccount-bio": "Persónulegt æviágrip (aðeins hreinn texti):",
+	"requestaccount-bio": "Persónulegt æviágrip (venjulegur texti einungis):",
 	"requestaccount-attach": "Ferilskrá (valfrjálst):",
 	"requestaccount-notes": "Viðbótarskýring:",
 	"requestaccount-urls": "Listi yfir vefsíður, ef einhverjar (aðskildu með línum):",
