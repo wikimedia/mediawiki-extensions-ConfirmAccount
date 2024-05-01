@@ -133,14 +133,19 @@ class AccountRequestSubmission {
 			];
 		}
 		# Check if biography is long enough
-		if ( $formConfig['Biography']['enabled']
-			&& str_word_count( $this->bio ) < $formConfig['Biography']['minWords'] ) {
-			$minWords = $formConfig['Biography']['minWords'];
+		if ($formConfig['Biography']['enabled']) {
+    			// Using regex to split the string into words to include Unicode characters
+    			$words = preg_split('/\p{P}*\s+\p{P}*/u', $this->bio, -1, PREG_SPLIT_NO_EMPTY);
+    			$wordCount = count($words);  // Count the words
 
-			return [
-				'acct_request_short_bio',
-				$context->msg( 'requestaccount-tooshort' )->numParams( $minWords )->text()
-			];
+    			if ($wordCount < $formConfig['Biography']['minWords']) {
+        			$minWords = $formConfig['Biography']['minWords'];
+
+				return [
+					'acct_request_short_bio',
+					$context->msg('requestaccount-tooshort')->numParams($minWords)->text()
+				];
+    			}
 		}
 		# Per security reasons, file dir cannot be pulled from client,
 		# so ask them to resubmit it then...
