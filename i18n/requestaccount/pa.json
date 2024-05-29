@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Aalam",
-			"Babanwalia"
+			"Babanwalia",
+			"Cabal"
 		]
 	},
 	"requestaccount": "ਅਕਾਊਂਟ ਬੇਨਤੀ",
@@ -17,9 +18,9 @@
 	"requestaccount-same": "(ਅਸਲੀ ਨਾਂ ਵਾਂਗ ਹੀ)",
 	"requestaccount-email": "ਈਮੇਲ ਐਡਰੈੱਸ:",
 	"requestaccount-reqtype": "ਸਥਿਤੀ:",
-	"requestaccount-level-0": "ਲੇਖਕ",
+	"requestaccount-level-0": "ਲਿਖਾਰੀ",
 	"requestaccount-level-1": "ਐਡੀਟਰ",
-	"requestaccount-bio": "ਨਿੱਜੀ ਜਾਣਕਾਰੀ:",
+	"requestaccount-bio": "ਨਿੱਜੀ ਜੀਵਨੀ (ਸਿਰਫ਼ ਸਾਦਾ ਪਾਠ):",
 	"requestaccount-notes": "ਹੋਰ ਨੋਟ:",
 	"requestaccount-inuse": "ਵਰਤੋਂਕਾਰ-ਨਾਂ ਪਹਿਲੋਂ ਹੀ ਇੱਕ ਲਟਕਦੀ ਖਾਤਾ ਬੇਨਤੀ ਵਿੱਚ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।",
 	"requestaccount-submit": "ਅਕਾਊਂਟ ਬੇਨਤੀ",
