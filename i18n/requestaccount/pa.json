@@ -24,6 +24,6 @@
 	"requestaccount-notes": "ਹੋਰ ਨੋਟ:",
 	"requestaccount-inuse": "ਵਰਤੋਂਕਾਰ-ਨਾਂ ਪਹਿਲੋਂ ਹੀ ਇੱਕ ਲਟਕਦੀ ਖਾਤਾ ਬੇਨਤੀ ਵਿੱਚ ਵਰਤਿਆ ਜਾ ਰਿਹਾ ਹੈ।",
 	"requestaccount-submit": "ਅਕਾਊਂਟ ਬੇਨਤੀ",
-	"requestaccount-email-subj": "{{SITENAME}} ਈਮੇਲ ਐਡਰੈੱਸ ਪੁਸ਼ਟੀ",
+	"requestaccount-email-subj": "{{SITENAME}} ਈਮੇਲ ਪਤੇ ਦੀ ਤਸਦੀਕ",
 	"requestaccount-email-subj-admin": "{{SITENAME}} ਅਕਾਊਂਟ ਮੰਗ"
 }
