@@ -308,7 +308,7 @@ class ConfirmAccount {
 	/**
 	 * Get a block for this user if they are blocked from requesting accounts
 	 * @param User $user
-	 * @return Block|null
+	 * @return Block|false
 	 */
 	public static function getAccountRequestBlock( User $user ) {
 		global $wgAccountRequestWhileBlocked;
@@ -316,7 +316,18 @@ class ConfirmAccount {
 		$block = false;
 		# If a user cannot make accounts, don't let them request them either
 		if ( !$wgAccountRequestWhileBlocked ) {
-			$block = $user->isBlockedFromCreateAccount();
+			if ( method_exists( \MediaWiki\Block\BlockManager::class, 'getCreateAccountBlock' ) ) {
+				// MW 1.42+
+				$isExempt = $user->isAllowed( 'ipblock-exempt' );
+				$block = MediaWikiServices::getInstance()->getBlockManager()
+					->getCreateAccountBlock(
+						$user,
+						$isExempt ? null : $user->getRequest(),
+						false
+					) ?: false;
+			} else {
+				$block = $user->isBlockedFromCreateAccount();
+			}
 		}
 
 		return $block;
