@@ -288,6 +288,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			: $this->msg( 'confirmaccount-noreason' )->escaped();
 		$adminId = $accountReq->getHandlingUser();
 
+		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		if ( $rejectTimestamp ) {
 			$datim = $this->getLanguage()->timeanddate( $rejectTimestamp, true );
 			$date = $this->getLanguage()->date( $rejectTimestamp, true );
@@ -295,7 +296,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			# Auto-rejected requests have a user ID of zero
 			if ( $adminId ) {
 				$out->addHTML( '<p><b>' . $this->msg( 'confirmaccount-reject',
-					User::whoIs( $adminId ), $datim, $date, $time )->parse() . '</b></p>' );
+					$userFactory->newFromId( $adminId )->getName(), $datim, $date, $time )->parse() . '</b></p>' );
 				$out->addHTML(
 					'<p><strong>' . $this->msg( 'confirmaccount-rational' )->escaped() . '</strong><i> ' .
 					$reason . '</i></p>'
@@ -309,7 +310,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$time = $this->getLanguage()->time( $heldTimestamp, true );
 
 			$out->addHTML( '<p><b>' . $this->msg( 'confirmaccount-held',
-				User::whoIs( $adminId ), $datim, $date, $time )->parse() . '</b></p>' );
+				$userFactory->newFromId( $adminId )->getName(), $datim, $date, $time )->parse() . '</b></p>' );
 			$out->addHTML(
 				'<p><strong>' . $this->msg( 'confirmaccount-rational' )->escaped() . '</strong><i> ' .
 				$reason . '</i></p>'
@@ -754,6 +755,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$r = "<li class='mw-confirmaccount-type-{$this->queueType}'>";
 
 		$r .= $time . " (<strong>{$link}</strong>)";
+		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		# Auto-rejected accounts have a user ID of zero
 		if ( $row->acr_rejected && $row->acr_user ) {
 			$datim = $this->getLanguage()->timeanddate( wfTimestamp( TS_MW, $row->acr_rejected ), true );
@@ -767,7 +769,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$date = $this->getLanguage()->date( wfTimestamp( TS_MW, $row->acr_held ), true );
 			$time = $this->getLanguage()->time( wfTimestamp( TS_MW, $row->acr_held ), true );
 			$r .= ' <b>' . $this->msg(
-				'confirmaccount-held', User::whoIs( $row->acr_user ), $datim, $date, $time
+				'confirmaccount-held', $userFactory->newFromId( $row->acr_user )->getName(), $datim, $date, $time
 			)->parse() . '</b>';
 		}
 		# Check if someone is viewing this request
@@ -775,7 +777,8 @@ class ConfirmAccountsPage extends SpecialPage {
 		$key = $cache->makeKey( 'acctrequest', 'view', $row->acr_id );
 		$value = $cache->get( $key );
 		if ( $value ) {
-			$r .= ' <b>' . $this->msg( 'confirmaccount-viewing', User::whoIs( $value ) )->parse() . '</b>';
+			$r .= ' <b>' . $this->msg( 'confirmaccount-viewing', $userFactory->newFromId( $value )->getName() )
+				->parse() . '</b>';
 		}
 
 		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}'
