@@ -429,7 +429,7 @@ class RequestAccountPage extends SpecialPage {
 			$out->returnToMain();
 		} else {
 			# Maybe the user confirmed after account was created...
-			$user = $this->userFactory->newFromConfirmationCode( $code, UserFactory::READ_LATEST );
+			$user = $this->userFactory->newFromConfirmationCode( $code, IDBAccessObject::READ_LATEST );
 			if ( is_object( $user ) ) {
 				$user->confirmEmail();
 				$user->saveSettings();
