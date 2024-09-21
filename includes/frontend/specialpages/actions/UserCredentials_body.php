@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentityLookup;
 
@@ -268,7 +269,7 @@ class UserCredentialsPage extends SpecialPage {
 			return false;
 		}
 		# For now, just get the first revision...
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$row = $dbr->selectRow( 'account_credentials', '*',
 			[ 'acd_user_id' => $userIdentity->getId() ],
 			__METHOD__,

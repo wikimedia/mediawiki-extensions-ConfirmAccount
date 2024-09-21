@@ -10,7 +10,7 @@ class ConfirmAccount {
 	public static function runAutoMaintenance() {
 		global $wgRejectedAccountMaxAge, $wgConfirmAccountRejectAge, $wgConfirmAccountFSRepos;
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$repo = self::getFileRepo( $wgConfirmAccountFSRepos['accountreqs'] );
 
 		# Select all items older than time $encCutoff
@@ -58,7 +58,7 @@ class ConfirmAccount {
 	 * @param string $name
 	 */
 	public static function confirmEmail( $name ) {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->update( 'account_requests',
 			[ 'acr_email_authenticated' => $dbw->timestamp() ],
 			[ 'acr_name' => $name ],
@@ -133,7 +133,7 @@ class ConfirmAccount {
 	 */
 	public static function requestInfoFromEmailToken( $code ) {
 		global $wgConfirmAdminEmailExtraFields;
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		# Create updated array with acr_ prepended because of database names
 		$acrAdminEmailFields = array_merge( array_map( static function ( $fieldName ) {
 			return ( 'acr_' . $fieldName );
@@ -160,7 +160,7 @@ class ConfirmAccount {
 	 * @return array Assosiative array with 'open', 'held', 'type' keys mapping to integers
 	 */
 	public static function getOpenRequestCount( $type ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$open = (int)$dbr->selectField( 'account_requests', 'COUNT(*)',
 			[ 'acr_type' => $type, 'acr_deleted' => 0, 'acr_held IS NULL' ],
 			__METHOD__
@@ -195,7 +195,7 @@ class ConfirmAccount {
 			if ( $type !== '*' ) {
 				$conds['acr_type'] = (int)$type;
 			}
-			$dbw = wfGetDB( DB_PRIMARY );
+			$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 			$count = (int)$dbw->selectField( 'account_requests', 'COUNT(*)', $conds, __METHOD__ );
 			# Cache results (invalidated on change )
 			$cache->set( $key, $count, 3600 * 24 * 7 );
@@ -343,7 +343,7 @@ class ConfirmAccount {
 			return UserArray::newFromResult( new FakeResultWrapper( [] ) );
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		return UserArray::newFromResult( $dbr->select(
 			[ 'user' ],
