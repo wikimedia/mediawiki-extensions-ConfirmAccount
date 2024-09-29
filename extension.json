@@ -101,8 +101,6 @@
 	},
 	"Hooks": {
 		"SkinTemplateNavigation::Universal": "main",
-		"UserCreateForm": "ConfirmAccountUIHooks::addRequestLoginText",
-		"UserLoginForm": "ConfirmAccountUIHooks::addRequestLoginText",
 		"BeforePageDisplay": "main",
 		"AdminLinks": "main",
 		"AuthChangeFormFields": "main",

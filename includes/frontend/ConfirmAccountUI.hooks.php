@@ -8,21 +8,6 @@ class ConfirmAccountUIHooks implements
 	\MediaWiki\SpecialPage\Hook\AuthChangeFormFieldsHook
 {
 	/**
-	 * @param SkinTemplate &$template
-	 * @return bool
-	 */
-	public static function addRequestLoginText( &$template ) {
-		$context = RequestContext::getMain();
-		# Add a link to RequestAccount from UserLogin
-		if ( !$context->getUser()->isAllowed( 'createaccount' ) ) {
-			$template->set( 'header', $context->msg( 'requestaccount-loginnotice' )->parseAsBlock() );
-
-			$context->getOutput()->addModules( 'ext.confirmAccount' ); // CSS
-		}
-		return true;
-	}
-
-	/**
 	 * @param SkinTemplate $skin
 	 * @param array &$links
 	 * @return bool
