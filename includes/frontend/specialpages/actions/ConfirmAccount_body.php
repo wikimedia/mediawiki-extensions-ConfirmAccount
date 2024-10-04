@@ -268,7 +268,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$titleObj = $this->getFullTitle();
 
 		$accountReq = $this->accountReq; // convenience
-		if ( !$accountReq || $accountReq->isDeleted() && !$this->showRejects ) {
+		if ( !$accountReq || ( $accountReq->isDeleted() && !$this->showRejects ) ) {
 			$out->addHTML( $this->msg( 'confirmaccount-badid' )->escaped() );
 			$out->returnToMain( true, $titleObj );
 			return;
