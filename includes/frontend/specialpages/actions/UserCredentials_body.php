@@ -1,11 +1,13 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentityLookup;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 class UserCredentialsPage extends SpecialPage {
 	protected $target, $file;
+
+	private ILoadBalancer $loadBalancer;
 
 	/**
 	 * @var UserGroupManager
@@ -18,14 +20,17 @@ class UserCredentialsPage extends SpecialPage {
 	private $userIdentityLookup;
 
 	/**
+	 * @param ILoadBalancer $loadBalancer
 	 * @param UserGroupManager $userGroupManager
 	 * @param UserIdentityLookup $userIdentityLookup
 	 */
 	function __construct(
+		ILoadBalancer $loadBalancer,
 		UserGroupManager $userGroupManager,
 		UserIdentityLookup $userIdentityLookup
 	) {
 		parent::__construct( 'UserCredentials', 'lookupcredentials' );
+		$this->loadBalancer = $loadBalancer;
 		$this->userGroupManager = $userGroupManager;
 		$this->userIdentityLookup = $userIdentityLookup;
 	}
@@ -269,7 +274,7 @@ class UserCredentialsPage extends SpecialPage {
 			return false;
 		}
 		# For now, just get the first revision...
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$dbr = $this->loadBalancer->getConnection( DB_REPLICA );
 		$row = $dbr->selectRow( 'account_credentials', '*',
 			[ 'acd_user_id' => $userIdentity->getId() ],
 			__METHOD__,

@@ -24,10 +24,17 @@
 				"UserFactory"
 			]
 		},
-		"ConfirmAccounts": "ConfirmAccountsPage",
+		"ConfirmAccounts": {
+			"class": "ConfirmAccountsPage",
+			"services": [
+				"UserFactory",
+				"MainWANObjectCache"
+			]
+		},
 		"UserCredentials": {
 			"class": "UserCredentialsPage",
 			"services": [
+				"DBLoadBalancer",
 				"UserGroupManager",
 				"UserIdentityLookup"
 			]

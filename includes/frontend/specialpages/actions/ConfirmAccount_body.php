@@ -1,6 +1,6 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserFactory;
 
 class ConfirmAccountsPage extends SpecialPage {
 	protected $queueType = -1;
@@ -22,8 +22,16 @@ class ConfirmAccountsPage extends SpecialPage {
 	protected $submitType;
 	protected $reason;
 
-	function __construct() {
+	private UserFactory $userFactory;
+	private WANObjectCache $cache;
+
+	function __construct(
+		UserFactory $userFactory,
+		WANObjectCache $cache
+	) {
 		parent::__construct( 'ConfirmAccounts', 'confirmaccount' );
+		$this->userFactory = $userFactory;
+		$this->cache = $cache;
 	}
 
 	public function doesWrites() {
@@ -288,7 +296,6 @@ class ConfirmAccountsPage extends SpecialPage {
 			: $this->msg( 'confirmaccount-noreason' )->escaped();
 		$adminId = $accountReq->getHandlingUser();
 
-		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		if ( $rejectTimestamp ) {
 			$datim = $this->getLanguage()->timeanddate( $rejectTimestamp, true );
 			$date = $this->getLanguage()->date( $rejectTimestamp, true );
@@ -296,7 +303,11 @@ class ConfirmAccountsPage extends SpecialPage {
 			# Auto-rejected requests have a user ID of zero
 			if ( $adminId ) {
 				$out->addHTML( '<p><b>' . $this->msg( 'confirmaccount-reject',
-					$userFactory->newFromId( $adminId )->getName(), $datim, $date, $time )->parse() . '</b></p>' );
+					$this->userFactory->newFromId( $adminId )->getName(),
+					$datim,
+					$date,
+					$time
+				)->parse() . '</b></p>' );
 				$out->addHTML(
 					'<p><strong>' . $this->msg( 'confirmaccount-rational' )->escaped() . '</strong><i> ' .
 					$reason . '</i></p>'
@@ -310,7 +321,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$time = $this->getLanguage()->time( $heldTimestamp, true );
 
 			$out->addHTML( '<p><b>' . $this->msg( 'confirmaccount-held',
-				$userFactory->newFromId( $adminId )->getName(), $datim, $date, $time )->parse() . '</b></p>' );
+				$this->userFactory->newFromId( $adminId )->getName(), $datim, $date, $time )->parse() . '</b></p>' );
 			$out->addHTML(
 				'<p><strong>' . $this->msg( 'confirmaccount-rational' )->escaped() . '</strong><i> ' .
 				$reason . '</i></p>'
@@ -520,9 +531,8 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		# Set a key to who is looking at this request.
 		# Have it expire in 10 minutes...
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$key = $cache->makeKey( 'acctrequest', 'view', $accountReq->getId() );
-		$cache->set( $key, $reqUser->getID(), 60 * 10 );
+		$key = $this->cache->makeKey( 'acctrequest', 'view', $accountReq->getId() );
+		$this->cache->set( $key, $reqUser->getID(), 60 * 10 );
 	}
 
 	protected function hasItem( $name ) {
@@ -755,7 +765,6 @@ class ConfirmAccountsPage extends SpecialPage {
 		$r = "<li class='mw-confirmaccount-type-{$this->queueType}'>";
 
 		$r .= $time . " (<strong>{$link}</strong>)";
-		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		# Auto-rejected accounts have a user ID of zero
 		if ( $row->acr_rejected && $row->acr_user ) {
 			$datim = $this->getLanguage()->timeanddate( wfTimestamp( TS_MW, $row->acr_rejected ), true );
@@ -769,15 +778,14 @@ class ConfirmAccountsPage extends SpecialPage {
 			$date = $this->getLanguage()->date( wfTimestamp( TS_MW, $row->acr_held ), true );
 			$time = $this->getLanguage()->time( wfTimestamp( TS_MW, $row->acr_held ), true );
 			$r .= ' <b>' . $this->msg(
-				'confirmaccount-held', $userFactory->newFromId( $row->acr_user )->getName(), $datim, $date, $time
+				'confirmaccount-held', $this->userFactory->newFromId( $row->acr_user )->getName(), $datim, $date, $time
 			)->parse() . '</b>';
 		}
 		# Check if someone is viewing this request
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$key = $cache->makeKey( 'acctrequest', 'view', $row->acr_id );
-		$value = $cache->get( $key );
+		$key = $this->cache->makeKey( 'acctrequest', 'view', $row->acr_id );
+		$value = $this->cache->get( $key );
 		if ( $value ) {
-			$r .= ' <b>' . $this->msg( 'confirmaccount-viewing', $userFactory->newFromId( $value )->getName() )
+			$r .= ' <b>' . $this->msg( 'confirmaccount-viewing', $this->userFactory->newFromId( $value )->getName() )
 				->parse() . '</b>';
 		}
 
