@@ -4,11 +4,12 @@
 			"Jkjk",
 			"Li-sung",
 			"Matěj Grabovský",
+			"Matěj Suchánek",
 			"Mormegil",
 			"Nesuprachy"
 		]
 	},
-	"confirmaccount-newrequests": "Momentálně {{PLURAL:$1|je jedna otevřená|jsou '''$1''' otevřené|je '''$1''' otevřených}} [[Special:ConfirmAccounts|{{PLURAL:$1|žádost o účet|žádosti o účet|žádostí o účet}}]]. '''Je vyžadována Vaše pozornost!'''",
+	"confirmaccount-newrequests": "Momentálně {{PLURAL:$1|je otevřená '''jedna'''|jsou otevřené '''$1'''|je otevřeno '''$1'''}} [[Special:ConfirmAccounts|{{PLURAL:$1|žádost o účet|žádosti o účet|žádostí o účet}}]]. '''Je vyžadována vaše pozornost!'''",
 	"requestaccount-loginnotice": "Chcete-li získat uživatelský účet, je třeba o něj '''[[Special:RequestAccount|požádat]]'''.",
 	"action-confirmaccount": "kontrola a schvalování účtů",
 	"right-confirmaccount": "Zobrazit [[Special:ConfirmAccounts|frontu žádostí o účet]]",
