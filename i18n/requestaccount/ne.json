@@ -17,7 +17,6 @@
 	"requestaccount-reqtype": "स्थान:",
 	"requestaccount-level-0": "लेखक",
 	"requestaccount-level-1": "सम्पादक",
-	"requestaccount-info": "(?)",
 	"requestaccount-notes": "बैकल्पिक टिप्पणीहरू",
 	"requestaccount-submit": "खाता अनुरोध गर्नुहोस्",
 	"requestaccount-email-subj": "{{SITENAME}} डाँक ठेगानाको पुष्टि",
