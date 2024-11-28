@@ -5,6 +5,7 @@
  */
 class ConfirmAccountsPager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
+	public $rejects, $stale;
 
 	function __construct(
 		$form, $conds, $type, $rejects = false, $showHeld = false, $showStale = false
