@@ -2,7 +2,11 @@
 /**
  * Class containing hooked functions for a ConfirmAccount environment
  */
-class ConfirmAccountUIHooks {
+class ConfirmAccountUIHooks implements
+	\MediaWiki\Hook\BeforePageDisplayHook,
+	\MediaWiki\Hook\SkinTemplateNavigation__UniversalHook,
+	\MediaWiki\SpecialPage\Hook\AuthChangeFormFieldsHook
+{
 	/**
 	 * @param SkinTemplate &$template
 	 * @return bool
@@ -23,9 +27,7 @@ class ConfirmAccountUIHooks {
 	 * @param array &$links
 	 * @return bool
 	 */
-	public static function setRequestLoginLinks(
-		SkinTemplate $skin, array &$links
-	) {
+	public function onSkinTemplateNavigation__Universal( $skin, &$links ): void {
 		# Add a link to Special:RequestAccount if a link exists for login
 		if ( isset( $links['user-menu']['login'] ) || isset( $links['user-menu']['login-private'] ) ) {
 			$links['user-menu']['createaccount'] = [
@@ -33,26 +35,24 @@ class ConfirmAccountUIHooks {
 				'href' => SpecialPage::getTitleFor( 'RequestAccount' )->getLocalUrl()
 			];
 		}
-		return true;
 	}
 
 	/**
 	 * Add "x email-confirmed open account requests" notice
-	 * @param OutputPage &$out
-	 * @param Skin &$skin
-	 * @return bool
+	 * @param OutputPage $out
+	 * @param Skin $skin
 	 */
-	public static function confirmAccountsNotice( OutputPage &$out, Skin &$skin ) {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		global $wgConfirmAccountNotice;
 
 		$context = $out->getContext();
 		if ( !$wgConfirmAccountNotice || !$context->getUser()->isAllowed( 'confirmaccount' ) ) {
-			return true;
+			return;
 		}
 		# Only show on some special pages
 		$title = $context->getTitle();
 		if ( !$title->isSpecial( 'Recentchanges' ) && !$title->isSpecial( 'Watchlist' ) ) {
-			return true;
+			return;
 		}
 		$count = ConfirmAccount::getOpenEmailConfirmedCount( '*' );
 		if ( $count > 0 ) {
@@ -64,7 +64,6 @@ class ConfirmAccountUIHooks {
 
 			$out->addModules( 'ext.confirmAccount' ); // CSS
 		}
-		return true;
 	}
 
 	/**
@@ -72,7 +71,7 @@ class ConfirmAccountUIHooks {
 	 * @param ALTree &$admin_links_tree
 	 * @return bool
 	 */
-	public static function confirmAccountAdminLinks( &$admin_links_tree ) {
+	public function onAdminLinks( ALTree &$admin_links_tree ) {
 		$users_section = $admin_links_tree->getSection( wfMessage( 'adminlinks_users' )->escaped() );
 		$extensions_row = $users_section->getRow( 'extensions' );
 
@@ -95,8 +94,8 @@ class ConfirmAccountUIHooks {
 	 * @return bool
 	 * @throws ErrorPageError
 	 */
-	public static function onAuthChangeFormFields(
-		$requests, $fieldInfo, array &$formDescriptor, $action
+	public function onAuthChangeFormFields(
+		$requests, $fieldInfo, &$formDescriptor, $action
 	) {
 		if ( $action !== \MediaWiki\Auth\AuthManager::ACTION_CREATE ) {
 			return true;

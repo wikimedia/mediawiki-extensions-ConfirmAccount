@@ -1,6 +1,8 @@
 <?php
 
-class ConfirmAccountHooks {
+class ConfirmAccountHooks implements
+	\MediaWiki\SpecialPage\Hook\SpecialPageBeforeExecuteHook
+{
 
 	/**
 	 * This function is for setup that has to happen in Setup.php
@@ -34,7 +36,7 @@ class ConfirmAccountHooks {
 	 * @return false
 	 * @throws MWException
 	 */
-	public static function onSpecialPageBeforeExecute( $special, $subPage ) {
+	public function onSpecialPageBeforeExecute( $special, $subPage ) {
 		// Redirect direct visits on Special:CreateAccount to Special:RequestAccount
 		// for users not allowed to 'createaccount'
 		if ( $special->getName() === 'CreateAccount' && !$special->getUser()->isAllowed( 'createaccount' ) ) {
