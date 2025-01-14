@@ -6,7 +6,8 @@
 			"Rotemliss",
 			"StuB",
 			"YaronSh",
-			"Yona b"
+			"Yona b",
+			"Neriah"
 		]
 	},
 	"confirmaccounts": "אישור בקשות חשבון",
@@ -45,7 +46,7 @@
 	"confirmaccount-leg-ip": "נתוני כתובת IP",
 	"confirmaccount-name": "שם משתמש",
 	"confirmaccount-real": "שם:",
-	"confirmaccount-email": "דוא״ל:",
+	"confirmaccount-email": "דוא\"ל:",
 	"confirmaccount-reqtype": "משרה:",
 	"confirmaccount-pos-0": "מחבר",
 	"confirmaccount-pos-1": "עורך",
