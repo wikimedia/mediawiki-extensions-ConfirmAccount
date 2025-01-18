@@ -49,8 +49,8 @@ class UserAccountRequest {
 		$req->notes = $row->acr_notes;
 		$req->urls = $row->acr_urls;
 		$req->type = (int)$row->acr_type;
-		$req->areas = self::expandAreas( $row->acr_areas );
-		$req->fileName = strlen( $row->acr_filename )
+		$req->areas = self::expandAreas( $row->acr_areas ?? '' );
+		$req->fileName = strlen( $row->acr_filename ?? '' )
 			? $row->acr_filename
 			: null;
 		$req->fileStorageKey = $row->acr_storage_key;
@@ -87,37 +87,25 @@ class UserAccountRequest {
 		$req->notes = $fields['notes'];
 		$req->urls = $fields['urls'];
 		$req->type = (int)$fields['type'];
-		$req->areas = is_string( $fields['areas'] )
-			? self::expandAreas( $fields['areas'] ) // DB format
+		$req->areas = is_string( $fields['areas'] ?? '' )
+			? self::expandAreas( $fields['areas'] ?? '' ) // DB format
 			: $fields['areas']; // already expanded
-		$req->fileName = strlen( $fields['filename'] )
+		$req->fileName = strlen( $fields['filename'] ?? '' )
 			? $fields['filename']
 			: null;
-		$req->fileStorageKey = $fields['storage_key'];
-		$req->ip = $fields['ip'];
-		$req->xff = $fields['xff'];
-		$req->agent = $fields['agent'];
-		$req->emailToken = $fields['email_token']; // MD5 of token
-		$req->emailTokenExpires = wfTimestampOrNull( TS_MW, $fields['email_token_expires'] );
+		$req->fileStorageKey = $fields['storage_key'] ?? '';
+		$req->ip = $fields['ip'] ?? '';
+		$req->xff = $fields['xff'] ?? '';
+		$req->agent = $fields['agent'] ?? '';
+		$req->emailToken = $fields['email_token'] ?? ''; // MD5 of token
+		$req->emailTokenExpires = wfTimestampOrNull( TS_MW, $fields['email_token_expires'] ?? '' );
 		// These fields are typically left to default on insertion...
-		$req->emailAuthTimestamp = isset( $fields['email_authenticated'] )
-			? wfTimestampOrNull( TS_MW, $fields['email_authenticated'] )
-			: null;
-		$req->deleted = isset( $fields['deleted'] )
-			? $fields['deleted']
-			: false;
-		$req->rejectedTimestamp = isset( $fields['rejected'] )
-			? wfTimestampOrNull( TS_MW, $fields['rejected'] )
-			: null;
-		$req->heldTimestamp = isset( $fields['held'] )
-			? wfTimestampOrNull( TS_MW, $fields['held'] )
-			: null;
-		$req->user = isset( $fields['user'] )
-			? (int)$fields['user']
-			: 0;
-		$req->comment = isset( $fields['comment'] )
-			? $fields['comment']
-			: '';
+		$req->emailAuthTimestamp = wfTimestampOrNull( TS_MW, $fields['email_authenticated'] ?? null );
+		$req->deleted = $fields['deleted'] ?? false;
+		$req->rejectedTimestamp = wfTimestampOrNull( TS_MW, $fields['rejected'] ?? null );
+		$req->heldTimestamp = wfTimestampOrNull( TS_MW, $fields['held'] ?? null );
+		$req->user = (int)( $fields['user'] ?? 0 );
+		$req->comment = $fields['comment'] ?? '';
 
 		return $req;
 	}

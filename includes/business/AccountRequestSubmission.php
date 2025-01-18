@@ -1,10 +1,13 @@
 <?php
 
+use MediaWiki\Extension\ConfirmAccount\HookRunner;
 use MediaWiki\MediaWikiServices;
 
 class AccountRequestSubmission {
 	/* User making the request */
 	protected $requester;
+	/* Copy of the parameters for the hook */
+	protected $params;
 	/* Desired name and fields filled from form */
 	protected $userName;
 	protected $realName;
@@ -29,6 +32,7 @@ class AccountRequestSubmission {
 
 	public function __construct( User $requester, array $params ) {
 		$this->requester = $requester;
+		$this->params = $params;
 		$this->userName = trim( $params['userName'] );
 		$this->realName = trim( $params['realName'] );
 		$this->tosAccepted = $params['tosAccepted'];
@@ -232,6 +236,14 @@ class AccountRequestSubmission {
 					$context->msg( 'filecopyerror', $this->attachmentTempPath, $pathRel )->escaped() ];
 			}
 		}
+
+		$hookRunner = new HookRunner( MediaWikiServices::getInstance()->getHookContainer() );
+		$message = "";
+		if ( $hookRunner->onConfirmAccount__checkRequest( $u, $this->params, $message ) === false ) {
+			$dbw->cancelAtomic( __METHOD__ );
+			return [ 'acct_request_check_request_error', $message ];
+		}
+
 		$expires = null; // passed by reference
 		$token = ConfirmAccount::getConfirmationToken( $u, $expires );
 

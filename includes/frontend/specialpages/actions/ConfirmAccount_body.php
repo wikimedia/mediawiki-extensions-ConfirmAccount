@@ -516,7 +516,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= "<div id='wpComment'><p>" . $this->msg( 'confirmaccount-reason' )->escaped() . "</p>\n";
 		$form .= "<p>
 		<textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
-			htmlspecialchars( $this->reason ) . "</textarea></p></div>\n";
+			htmlspecialchars( $this->reason ?? '' ) . "</textarea></p></div>\n";
 		$form .= "<p>" . Xml::submitButton( $this->msg( 'confirmaccount-submit' )->text() ) . "</p>\n";
 		$form .= '</fieldset>';
 

@@ -57,6 +57,9 @@
 	"ExtensionMessagesFiles": {
 		"ConfirmAccountAliases": "ConfirmAccount.alias.php"
 	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ConfirmAccount\\": "src/"
+	},
 	"AutoloadClasses": {
 		"ConfirmAccountHooks": "includes/ConfirmAccountHooks.php",
 		"ConfirmAccountUIHooks": "includes/frontend/ConfirmAccountUI.hooks.php",
