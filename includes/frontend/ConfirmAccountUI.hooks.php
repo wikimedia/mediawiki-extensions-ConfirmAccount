@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\Skin\SkinComponentUtils;
+
 /**
  * Class containing hooked functions for a ConfirmAccount environment
  */
@@ -15,9 +18,11 @@ class ConfirmAccountUIHooks implements
 	public function onSkinTemplateNavigation__Universal( $skin, &$links ): void {
 		# Add a link to Special:RequestAccount if a link exists for login
 		if ( isset( $links['user-menu']['login'] ) || isset( $links['user-menu']['login-private'] ) ) {
-			$links['user-menu']['createaccount'] = [
-				'text' => wfMessage( 'requestaccount-login' )->text(),
-				'href' => SpecialPage::getTitleFor( 'RequestAccount' )->getLocalUrl()
+			$links['user-menu']['requestaccount'] = [
+				'text' => $skin->msg( 'requestaccount-login' )->text(),
+				'href' => SkinComponentUtils::makeSpecialUrl( 'RequestAccount' ),
+				'active' => $skin->getTitle()->isSpecial( 'RequestAccount' ),
+				'icon' => 'userAdd'
 			];
 		}
 	}
