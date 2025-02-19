@@ -20,6 +20,7 @@
 	"requestaccount-bio-text": "Try to include any relevant credentials in your biography below.",
 	"requestaccount-bio-text-i": "'''Your biography will be set as the initial content for your userpage.'''\nMake sure you are comfortable publishing such information.",
 	"requestaccount-real": "Real name (optional):",
+	"requestaccount-real-i": "Real name is optional. If you choose to provide it, this will be used for giving the user attribution for their work.",
 	"requestaccount-same": "(same as real name below)",
 	"requestaccount-email": "Email address:",
 	"requestaccount-reqtype": "Position:",
