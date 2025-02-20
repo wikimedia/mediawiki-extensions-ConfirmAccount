@@ -118,7 +118,7 @@ class AccountRequestSubmission {
 			if ( $value > $wgAccountRequestThrottle ) {
 				return [
 					'accountreq_throttled',
-					$context->msg( 'acct_request_throttle_hit', $wgAccountRequestThrottle )->text()
+					$context->msg( 'acct_request_throttle_hit', $wgAccountRequestThrottle )->escaped()
 				];
 			}
 		}
@@ -143,7 +143,7 @@ class AccountRequestSubmission {
 
 			return [
 				'acct_request_short_bio',
-				$context->msg( 'requestaccount-tooshort' )->numParams( $minWords )->text()
+				$context->msg( 'requestaccount-tooshort' )->numParams( $minWords )->escaped()
 			];
 		}
 		# Per security reasons, file dir cannot be pulled from client,
