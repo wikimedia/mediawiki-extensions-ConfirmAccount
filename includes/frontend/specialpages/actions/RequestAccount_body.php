@@ -112,7 +112,7 @@ class RequestAccountPage extends SpecialPage {
 		$out->setPageTitle( $this->msg( "requestaccount" )->escaped() );
 		# Output failure message if any
 		if ( $msg ) {
-			$out->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
+			$out->addHTML( Html::errorBox( $msg ) );
 		}
 		# Give notice to users that are logged in
 		if ( $reqUser->getID() ) {
