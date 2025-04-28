@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Html\Html;
+use MediaWiki\Request\WebRequestUpload;
 use MediaWiki\User\UserFactory;
 
 class RequestAccountPage extends SpecialPage {

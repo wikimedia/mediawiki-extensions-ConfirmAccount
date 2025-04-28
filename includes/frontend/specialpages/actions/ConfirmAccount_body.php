@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Html\Html;
 use MediaWiki\User\UserFactory;
 
 class ConfirmAccountsPage extends SpecialPage {
