@@ -32,6 +32,7 @@
 	"requestaccount-bio-text": "Versuche alle relevanten Informationen in deine untenstehende Biografie aufzunehmen.",
 	"requestaccount-bio-text-i": "'''Deine Biografie wird als die erste Version deiner Benutzerseite veröffentlicht.'''\nDu musst daher auch tatsächlich mit der Veröffentlichung dieser Daten einverstanden sein.",
 	"requestaccount-real": "Bürgerlicher Name (optional):",
+	"requestaccount-real-i": "Der echte Name ist optional. Wenn du ihn angibst, wird er für die Zuordnung der Beiträge verwendet.",
 	"requestaccount-same": "(wie mein bürgerlicher Name)",
 	"requestaccount-email": "E-Mail-Adresse:",
 	"requestaccount-reqtype": "Position:",
