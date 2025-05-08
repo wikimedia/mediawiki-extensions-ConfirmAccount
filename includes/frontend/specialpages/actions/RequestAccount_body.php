@@ -3,6 +3,7 @@
 use MediaWiki\Html\Html;
 use MediaWiki\Request\WebRequestUpload;
 use MediaWiki\User\UserFactory;
+use MediaWiki\Xml\Xml;
 
 class RequestAccountPage extends SpecialPage {
 	protected $mUsername; // string

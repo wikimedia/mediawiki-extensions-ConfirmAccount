@@ -2,6 +2,7 @@
 
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentityLookup;
+use MediaWiki\Xml\Xml;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class UserCredentialsPage extends SpecialPage {
