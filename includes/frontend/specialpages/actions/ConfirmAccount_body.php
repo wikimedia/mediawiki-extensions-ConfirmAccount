@@ -2,6 +2,7 @@
 
 use MediaWiki\Html\Html;
 use MediaWiki\User\UserFactory;
+use MediaWiki\Xml\Xml;
 
 class ConfirmAccountsPage extends SpecialPage {
 	protected $queueType = -1;
@@ -480,34 +481,41 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= '<legend>' . $this->msg( 'confirmaccount-legend' )->escaped() . '</legend>';
 		$form .= "<strong>" . $this->msg( 'confirmaccount-confirm' )->parse() . "</strong>\n";
 		$form .= "<table style='padding:5px;'><tr>";
-		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'accept', $this->submitType == 'accept',
+		$form .= "<td>" . Html::radio( 'wpSubmitType', $this->submitType == 'accept',
 			[
 				'id' => 'submitCreate',
+				'value' => 'accept',
 				'onclick' => 'document.getElementById("wpComment").style.display="block"'
 			]
 		);
 		$form .= ' ' . Xml::label(
 			$this->msg( 'confirmaccount-create' )->text(), 'submitCreate'
 		) . "</td>\n";
-		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'reject', $this->submitType == 'reject',
+		$form .= "<td>" . Html::radio( 'wpSubmitType', $this->submitType == 'reject',
 			[
-				'id' => 'submitDeny', 'onclick' => 'document.getElementById("wpComment").style.display="block"'
+				'id' => 'submitDeny',
+				'value' => 'reject',
+				'onclick' => 'document.getElementById("wpComment").style.display="block"'
 			]
 		);
 		$form .= ' ' . Xml::label(
 			$this->msg( 'confirmaccount-deny' )->text(), 'submitDeny'
 		) . "</td>\n";
-		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'hold', $this->submitType == 'hold',
+		$form .= "<td>" . Html::radio( 'wpSubmitType', $this->submitType == 'hold',
 			[
-				'id' => 'submitHold', 'onclick' => 'document.getElementById("wpComment").style.display="block"'
+				'id' => 'submitHold',
+				'value' => 'hold',
+				'onclick' => 'document.getElementById("wpComment").style.display="block"'
 			]
 		);
 		$form .= ' ' . Xml::label(
 			$this->msg( 'confirmaccount-hold' )->text(), 'submitHold'
 		) . "</td>\n";
-		$form .= "<td>" . Xml::radio( 'wpSubmitType', 'spam', $this->submitType == 'spam',
+		$form .= "<td>" . Html::radio( 'wpSubmitType', $this->submitType == 'spam',
 			[
-				'id' => 'submitSpam', 'onclick' => 'document.getElementById("wpComment").style.display="none"'
+				'id' => 'submitSpam',
+				'value' => 'spam',
+				'onclick' => 'document.getElementById("wpComment").style.display="none"'
 			]
 		);
 		$form .= ' ' . Xml::label(
