@@ -25,7 +25,7 @@
 	"requestaccount-bio-text": "Cerca di inserire tutte le credenziali e le informazioni rilevanti nella tua biografia.",
 	"requestaccount-bio-text-i": "'''La tua biografia sarà impostata come contenuto predefinito per la tua pagina utente.'''\nAssicurati di voler pubblicare tali informazioni.",
 	"requestaccount-real": "Nome reale (facoltativo):",
-	"requestaccount-real-i": "Il nome reale è facoltativo. Se scegli di fornirlo, verrà utilizzato per attribuire all'utente la paternità dei contenuti inviati.",
+	"requestaccount-real-i": "Il nome reale è facoltativo. Se scegli di fornirlo, verrà utilizzato per attribuirti la paternità dei contenuti che hai inviato.",
 	"requestaccount-same": "(uguale al vero nome)",
 	"requestaccount-email": "Indirizzo email:",
 	"requestaccount-reqtype": "Posizione:",
