@@ -2,7 +2,6 @@
 
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentityLookup;
-use MediaWiki\Xml\Xml;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class UserCredentialsPage extends SpecialPage {
@@ -172,9 +171,17 @@ class UserCredentialsPage extends SpecialPage {
 				} else {
 					$pg = '';
 				}
-				$form .= "<td>" .
-					Xml::checkLabel( $name, $formName, $formName, in_array( $formName, $areaSet ), $att ) .
-					" {$pg}</td>\n";
+				$isChecked = in_array( $formName, $areaSet );
+				$checkbox = Html::check(
+					$formName,
+					$isChecked,
+					[
+						'id' => $formName,
+						'disabled' => 'disabled'
+					]
+				);
+				$label = Html::label( $name, $formName );
+				$form .= "<td>" . $checkbox . ' ' . $label . " {$pg}</td>\n";
 			}
 			$form .= "</tr></table></div>";
 			$form .= '</fieldset>';

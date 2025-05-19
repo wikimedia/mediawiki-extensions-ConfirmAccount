@@ -2,7 +2,6 @@
 
 use MediaWiki\Html\Html;
 use MediaWiki\User\UserFactory;
-use MediaWiki\Xml\Xml;
 
 class ConfirmAccountsPage extends SpecialPage {
 	protected $queueType = -1;
@@ -330,15 +329,15 @@ class ConfirmAccountsPage extends SpecialPage {
 			);
 		}
 
-		$form = Xml::openElement( 'form', [ 'method' => 'post', 'name' => 'accountconfirm',
+		$form = Html::openElement( 'form', [ 'method' => 'post', 'name' => 'accountconfirm',
 			'action' => $titleObj->getLocalUrl() ] );
 
 		$form .= "<fieldset>";
 		$form .= '<legend>' . $this->msg( 'confirmaccount-leg-user' )->escaped() . '</legend>';
 		$form .= '<table style="padding:4px;">';
-		$form .= "<tr><td>" . Xml::label( $this->msg( 'username' )->text(), 'wpNewName' ) . "</td>";
-		$form .= "<td>" . Xml::input( 'wpNewName', 30, $this->reqUsername, [
-			'id' => 'wpNewName'
+		$form .= "<tr><td>" . Html::label( $this->msg( 'username' )->text(), 'wpNewName' ) . "</td>";
+		$form .= "<td>" . Html::input( 'wpNewName', $this->reqUsername, 'text', [
+			'id' => 'wpNewName', 'size' => 30
 		] ) . "</td></tr>\n";
 		$econf = '';
 		if ( $accountReq->getEmailAuthTimestamp() ) {
@@ -352,14 +351,13 @@ class ConfirmAccountsPage extends SpecialPage {
 				'confirmaccount-reqtype'
 			)->escaped() . "</strong></td><td>";
 			foreach ( $wgAccountRequestTypes as $i => $params ) {
-				// Give grep a chance to find the usages: confirmaccount-pos-0, confirmaccount-pos-1
-				$options[] = Xml::option( $this->msg(
-					"confirmaccount-pos-$i"
-				)->text(), $i, ( $i == $this->reqType ) );
+				$options[] = Html::element( 'option', [
+					'value' => $i, 'selected' => ( $i == $this->reqType ) ? 'selected' : null
+				], $this->msg( "confirmaccount-pos-$i" )->text() );
 			}
-			$form .= Xml::openElement( 'select', [ 'name' => "wpType" ] );
+			$form .= Html::openElement( 'select', [ 'name' => "wpType" ] );
 			$form .= implode( "\n", $options );
-			$form .= Xml::closeElement( 'select' ) . "\n";
+			$form .= Html::closeElement( 'select' ) . "\n";
 			$form .= "</td></tr>\n";
 		}
 		$form .= '</table></fieldset>';
@@ -389,9 +387,9 @@ class ConfirmAccountsPage extends SpecialPage {
 				} else {
 					$pg = '';
 				}
-				$form .= "<td>" .
-					Xml::checkLabel( $name, $formName, $formName, $this->reqAreas[$name] > 0 ) .
-					" {$pg}</td>\n";
+				$checkbox = Html::check( $formName, $this->reqAreas[$name] > 0, [ 'id' => $formName ] );
+				$label = Html::label( $name, $formName );
+				$form .= "<td>" . $checkbox . ' ' . $label . " {$pg}</td>\n";
 			}
 			$form .= "</tr></table></div>";
 			$form .= '</fieldset>';
@@ -488,7 +486,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				'onclick' => 'document.getElementById("wpComment").style.display="block"'
 			]
 		);
-		$form .= ' ' . Xml::label(
+		$form .= ' ' . Html::label(
 			$this->msg( 'confirmaccount-create' )->text(), 'submitCreate'
 		) . "</td>\n";
 		$form .= "<td>" . Html::radio( 'wpSubmitType', $this->submitType == 'reject',
@@ -498,7 +496,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				'onclick' => 'document.getElementById("wpComment").style.display="block"'
 			]
 		);
-		$form .= ' ' . Xml::label(
+		$form .= ' ' . Html::label(
 			$this->msg( 'confirmaccount-deny' )->text(), 'submitDeny'
 		) . "</td>\n";
 		$form .= "<td>" . Html::radio( 'wpSubmitType', $this->submitType == 'hold',
@@ -508,7 +506,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				'onclick' => 'document.getElementById("wpComment").style.display="block"'
 			]
 		);
-		$form .= ' ' . Xml::label(
+		$form .= ' ' . Html::label(
 			$this->msg( 'confirmaccount-hold' )->text(), 'submitHold'
 		) . "</td>\n";
 		$form .= "<td>" . Html::radio( 'wpSubmitType', $this->submitType == 'spam',
@@ -518,7 +516,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				'onclick' => 'document.getElementById("wpComment").style.display="none"'
 			]
 		);
-		$form .= ' ' . Xml::label(
+		$form .= ' ' . Html::label(
 			$this->msg( 'confirmaccount-spam' )->text(), 'submitSpam'
 		) . "</td>\n";
 		$form .= "</tr></table>";
@@ -526,7 +524,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= "<p>
 		<textarea name='wpReason' id='wpReason' rows='3' cols='80' style='width:80%; display=block;'>" .
 			htmlspecialchars( $this->reason ?? '' ) . "</textarea></p></div>\n";
-		$form .= "<p>" . Xml::submitButton( $this->msg( 'confirmaccount-submit' )->text() ) . "</p>\n";
+		$form .= "<p>" . Html::submitButton( $this->msg( 'confirmaccount-submit' )->text() ) . "</p>\n";
 		$form .= '</fieldset>';
 
 		$form .= Html::hidden( 'title', $titleObj->getPrefixedDBKey() ) . "\n";
@@ -534,7 +532,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$form .= Html::hidden( 'acrid', $accountReq->getId() );
 		$form .= Html::hidden( 'wpShowRejects', $this->showRejects );
 		$form .= Html::hidden( 'wpEditToken', $reqUser->getEditToken( $accountReq->getId() ) ) . "\n";
-		$form .= Xml::closeElement( 'form' );
+		$form .= Html::closeElement( 'form' );
 
 		$out->addHTML( $form );
 
