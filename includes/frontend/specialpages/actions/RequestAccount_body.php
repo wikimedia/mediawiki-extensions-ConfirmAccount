@@ -2,6 +2,7 @@
 
 use MediaWiki\Html\Html;
 use MediaWiki\Request\WebRequestUpload;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
 use MediaWiki\Xml\Xml;
 
