@@ -285,7 +285,7 @@ class ConfirmAccountsPage extends SpecialPage {
 
 		# Output any failure message
 		if ( $msg != '' ) {
-			$out->addHTML( '<div class="errorbox">' . $msg . '</div><div class="visualClear"></div>' );
+			$out->addHTML( Html::errorBox( $msg ) );
 		}
 
 		$out->addWikiMsg( 'confirmaccount-text' );
