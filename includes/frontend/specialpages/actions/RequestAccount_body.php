@@ -197,6 +197,7 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '<fieldset>';
 			$form .= '<legend>' . $this->msg( 'requestaccount-leg-person' )->escaped() . '</legend>';
 			if ( $this->hasItem( 'RealName' ) ) {
+				$form .= $this->msg( 'requestaccount-real-i' )->parseAsBlock() . "\n";
 				$form .= '<table style="padding:4px;">';
 				$form .= "<tr><td>" . Xml::label(
 					$this->msg( 'requestaccount-real' )->text(), 'wpRealName'
