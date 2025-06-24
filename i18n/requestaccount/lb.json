@@ -22,7 +22,7 @@
 	"requestaccount-ext-text": "Dës Informatioune gi vertraulech behandelt a gi just fir dës Ufro benotzt.\nDir kënnt Kontaktinformatiounen wéi eng Telefonsnummer uginn fir d'Identitéitskonfirmatioun ze vereinfachen.",
 	"requestaccount-bio-text": "Versicht all néideg Informatiounen an Ärer Biographie hei drënner unzeginn.",
 	"requestaccount-bio-text-i": "'''Är Biographie gëtt als éischt Versioun vun Ärer Benotzersäit verëffentlecht.'''\nIwwerleet Iech ob Dir domat averstane sidd datt sou Informatiounen iwwer Iech verëffentlecht ginn.",
-	"requestaccount-real": "Richtegen Numm:",
+	"requestaccount-real": "Richtegen Numm (fakultativ):",
 	"requestaccount-same": "(d'selwecht wéi de richtegen Numm)",
 	"requestaccount-email": "E-Mail-Adress:",
 	"requestaccount-reqtype": "Positioun:",

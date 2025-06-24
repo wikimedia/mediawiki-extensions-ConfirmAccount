@@ -23,7 +23,7 @@
 	"requestaccount-ext-text": "A seguinte información mantense en privado e só se usará para esta solicitude.\nTes a posibilidade listar contactos, como un número de teléfono, para axudar na confirmación da identidade.",
 	"requestaccount-bio-text": "Intenta incluír algunhas credenciais relevantes na túa biografía.",
 	"requestaccount-bio-text-i": "'''A túa biografía quedará establecida como o contido inicial da túa páxina de usuario.'''\nAsegúrate de que te sentes cómodo publicando esa información.",
-	"requestaccount-real": "Nome real:",
+	"requestaccount-real": "Nome real (opcional):",
 	"requestaccount-same": "(o mesmo que o nome real)",
 	"requestaccount-email": "Enderezo de correo electrónico:",
 	"requestaccount-reqtype": "Posición:",

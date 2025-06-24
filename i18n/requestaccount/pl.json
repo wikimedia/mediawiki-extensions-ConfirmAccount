@@ -30,7 +30,7 @@
 	"requestaccount-ext-text": "Następujące informacje nie będą udostępniane. Zostaną użyte tylko na potrzeby tego wniosku o założenie konta użytkownika.\nMożesz wyświetlić kontakty np. numer telefonu, by łatwiej zdecydować o zatwierdzeniu lub odrzuceniu wniosku.",
 	"requestaccount-bio-text": "Spróbuj zawrzeć w swojej poniższej biografii wszelkie istotne informacje.",
 	"requestaccount-bio-text-i": "'''Twoja biografia zostanie zamieszczona jako początkowa zawartość Twojej strony użytkownika.'''\nUpewnij się, czy na pewno chcesz opublikować te informacje.",
-	"requestaccount-real": "Imię i nazwisko:",
+	"requestaccount-real": "Imię i nazwisko (opcjonalnie):",
 	"requestaccount-same": "(prawdziwe imię i nazwisko)",
 	"requestaccount-email": "Adres e‐mail:",
 	"requestaccount-reqtype": "Stanowisko:",
