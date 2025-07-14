@@ -474,16 +474,28 @@ $specialPageAliases['yi'] = [
 	'RequestAccount' => [ 'בעטן_קאנטע' ],
 ];
 
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'RequestAccount' => [ 'RequestAccount' ],
+	'ConfirmAccounts' => [ 'ConfirmAccounts' ],
+	'UserCredentials' => [ 'UserCredentials' ],
+];
+
 /** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
-	'RequestAccount' => [ '申请账户' ],
-	'ConfirmAccounts' => [ '确认账户' ],
+	'RequestAccount' => [ '申请账号', '申请账户' ],
+	'ConfirmAccounts' => [ '确认账号', '确认账户' ],
 	'UserCredentials' => [ '用户凭据' ],
 ];
 
 /** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
-	'RequestAccount' => [ '請求帳號' ],
+	'RequestAccount' => [ '申請帳號', '請求帳號' ],
 	'ConfirmAccounts' => [ '確認帳號' ],
 	'UserCredentials' => [ '使用者憑證' ],
+];
+
+/** Chinese (Hong Kong) (中文（香港）) */
+$specialPageAliases['zh-hk'] = [
+	'UserCredentials' => [ '用戶憑證' ],
 ];
