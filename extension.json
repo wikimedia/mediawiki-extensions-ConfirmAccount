@@ -7,7 +7,7 @@
 	"type": "specialpage",
 	"license-name": "GPL-2.0-or-later",
 	"requires": {
-		"MediaWiki": ">= 1.40.0"
+		"MediaWiki": ">= 1.41.0"
 	},
 	"suggests": {
 		"extensions": {
@@ -85,6 +85,23 @@
 	"ResourceModules": {
 		"ext.confirmAccount": {
 			"styles": "includes/frontend/modules/confirmaccount.css"
+		},
+		"ext.confirmAccountSpam": {
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-windows",
+				"mediawiki.util",
+				"mediawiki.widgets"
+			],
+			"scripts": "resources/spam.js",
+			"styles": "resources/spam.css",
+			"messages": [
+				"confirmaccount-spam-link",
+				"confirmaccount-mark-request-spam",
+				"confirmaccount-cannot-load-review",
+				"confirmaccount-failed-to-mark",
+				"confirmaccount-cannot-find-form"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {

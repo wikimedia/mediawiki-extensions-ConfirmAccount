@@ -2,7 +2,8 @@
 	"name": "ConfirmAccount",
 	"private": true,
 	"scripts": {
-		"test": "grunt test"
+		"test": "grunt test",
+		"lint:fix": "grunt eslint:all --fix"
 	},
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.31.0",

@@ -1,0 +1,13 @@
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.4s forwards;
+}
+
+#confirmaccount-spam-link {
+	margin-left: 0.5em;
+}

@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Html\Html;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\User\UserFactory;
 
 class ConfirmAccountsPage extends SpecialPage {
@@ -123,7 +124,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		// Show what queue we are in and links to the others
 		$this->addQueueSubtitleLinks();
 
-		$this->getOutput()->addModules( 'ext.confirmAccount' ); // CSS
+		$this->getOutput()->addModules( [ 'ext.confirmAccount', 'ext.confirmAccountSpam' ] );
 	}
 
 	protected function addQueueSubtitleLinks() {
@@ -796,8 +797,8 @@ class ConfirmAccountsPage extends SpecialPage {
 				->parse() . '</b>';
 		}
 
-		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}'
-			style='border-spacing:1px; padding:3px; border:1px; width:100%;''>";
+		$r .= "<br /><table class='mw-confirmaccount-body-{$this->queueType}' "
+			. "style='border-spacing:1px; padding:3px; border:1px; width:100%;'>";
 		if ( $this->hasItem( 'UserName' ) ) {
 			$r .= '<tr><td><strong>' . $this->msg(
 				'confirmaccount-name'
