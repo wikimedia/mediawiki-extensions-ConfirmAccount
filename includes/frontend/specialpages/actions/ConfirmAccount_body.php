@@ -407,7 +407,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			}
 			if ( $this->hasItem( 'Biography' ) ) {
 				$form .= "<p>" . $this->msg( 'confirmaccount-bio' )->escaped() . "\n";
-				$form .= "<textarea tabindex='1' name='wpNewBio' id='wpNewBio' rows='12'
+				$form .= "<textarea name='wpNewBio' id='wpNewBio' rows='12'
 					cols='80' style='width: 100%; background-color: #f9f9f9;'>" .
 					htmlspecialchars( $this->reqBio ) .
 					"</textarea></p>\n";
@@ -433,7 +433,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			}
 			if ( $this->hasItem( 'Notes' ) ) {
 				$form .= "</p><p>" . $this->msg( 'confirmaccount-notes' )->escaped() . "\n";
-				$form .= "<textarea tabindex='1' readonly='readonly' name='wpNotes'
+				$form .= "<textarea readonly='readonly' name='wpNotes'
 					id='wpNotes' rows='3' cols='80' style='width: 100%'>" .
 					htmlspecialchars( $accountReq->getNotes() ) .
 					"</textarea></p>\n";

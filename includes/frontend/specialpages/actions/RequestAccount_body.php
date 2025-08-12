@@ -214,7 +214,7 @@ class RequestAccountPage extends SpecialPage {
 				}
 				$form .= $this->msg( 'requestaccount-bio-text' )->parseAsBlock() . "\n";
 				$form .= "<p>" . $this->msg( 'requestaccount-bio' )->parse() . "\n";
-				$form .= "<textarea tabindex='1' name='wpBio' id='wpBio' rows='12' cols='80'
+				$form .= "<textarea name='wpBio' id='wpBio' rows='12' cols='80'
 				style='width: 100%; background-color: #f9f9f9;'>" .
 					htmlspecialchars( $this->mBio ) . "</textarea></p>\n";
 			}
@@ -231,14 +231,14 @@ class RequestAccountPage extends SpecialPage {
 			}
 			if ( $this->hasItem( 'Notes' ) ) {
 				$form .= "<p>" . $this->msg( 'requestaccount-notes' )->escaped() . "\n";
-				$form .= "<textarea tabindex='1' name='wpNotes' id='wpNotes' rows='3' cols='80'
+				$form .= "<textarea name='wpNotes' id='wpNotes' rows='3' cols='80'
 				style='width: 100%; background-color: #f9f9f9;'>" .
 					htmlspecialchars( $this->mNotes ) .
 					"</textarea></p>\n";
 			}
 			if ( $this->hasItem( 'Links' ) ) {
 				$form .= "<p>" . $this->msg( 'requestaccount-urls' )->escaped() . "\n";
-				$form .= "<textarea tabindex='1' name='wpUrls' id='wpUrls' rows='2' cols='80'
+				$form .= "<textarea name='wpUrls' id='wpUrls' rows='2' cols='80'
 				style='width: 100%; background-color: #f9f9f9;'>" .
 					htmlspecialchars( $this->mUrls ) .
 					"</textarea></p>\n";

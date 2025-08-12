@@ -194,7 +194,7 @@ class UserCredentialsPage extends SpecialPage {
 		$form .= "<td>" . htmlspecialchars( $row->acd_real_name ) . "</td></tr>\n";
 		$form .= '</table>';
 		$form .= "<p>" . $this->msg( 'usercredentials-bio' )->escaped() . "</p>";
-		$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpBio'
+		$form .= "<p><textarea readonly='readonly' name='wpBio'
 		id='wpNewBio' rows='10' cols='80' style='width: 100%'>" .
 			htmlspecialchars( $row->acd_bio ) .
 			"</textarea></p>\n";
@@ -216,7 +216,7 @@ class UserCredentialsPage extends SpecialPage {
 				$form .= $this->msg( 'confirmaccount-none-p' )->escaped();
 			}
 			$form .= "</p><p>" . $this->msg( 'usercredentials-notes' )->escaped() . "</p>\n";
-			$form .= "<p><textarea tabindex='1' readonly='readonly' name='wpNotes'
+			$form .= "<p><textarea readonly='readonly' name='wpNotes'
 			id='wpNotes' rows='3' cols='80' style='width: 100%'>" .
 				htmlspecialchars( $row->acd_notes ) .
 				"</textarea></p>\n";
