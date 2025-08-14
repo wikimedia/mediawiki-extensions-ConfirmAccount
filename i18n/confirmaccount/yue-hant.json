@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"JeffreyKim",
 			"Winston Sung",
 			"Yueman"
 		]
@@ -35,5 +36,10 @@
 	"confirmaccount-email-body": "你請求嘅戶口已經響{{SITENAME}}度批准咗。\n\n戶口名: $1\n\n密碼: $2\n\n為咗安全性嘅原故，你需要響第一次登入嗰陣去改個密碼。要登入，請去{{fullurl:Special:Userlogin}}。",
 	"confirmaccount-email-body2": "你請求嘅戶口已經響{{SITENAME}}度批准咗。\n\n戶口名: $1\n\n密碼: $2\n\n$3\n\n為咗安全性嘅原故，你需要響第一次登入嗰陣去改個密碼。要登入，請去{{fullurl:Special:Userlogin}}。",
 	"confirmaccount-email-body3": "對唔住，你響{{SITENAME}}請求嘅戶口\"$1\"已經拒絕咗。\n\n當中可能會有好多個原因，令到你嘅請求被拒絕。你可能無正確噉填好晒個表格，可能響你嘅回應度無足夠嘅長度，又可能未能符合到一啲政策嘅條件。響呢個網站度提供咗聯絡人一覽，你可以用去知道更多用戶戶口政策嘅資料。",
-	"confirmaccount-email-body4": "對唔住，你響{{SITENAME}}請求嘅戶口\"$1\"已經拒絕咗。\n\n$2\n\n響呢個網站度提供咗聯絡人一覽，你可以用去知道更多用戶戶口政策嘅資料。"
+	"confirmaccount-email-body4": "對唔住，你響{{SITENAME}}請求嘅戶口\"$1\"已經拒絕咗。\n\n$2\n\n響呢個網站度提供咗聯絡人一覽，你可以用去知道更多用戶戶口政策嘅資料。",
+	"confirmaccount-spam-link": "垃圾內容",
+	"confirmaccount-mark-request-spam": "要求將#$1標記為垃圾郵件？",
+	"confirmaccount-cannot-load-review": "載入唔到個評論頁面。",
+	"confirmaccount-failed-to-mark": "未能標記為垃圾內容：$1",
+	"confirmaccount-cannot-find-form": "搵唔到個確認表格。"
 }
