@@ -1,11 +1,19 @@
 <?php
 
+namespace MediaWiki\Extension\ConfirmAccount\Page;
+
+use MediaWiki\Extension\ConfirmAccount\ConfirmAccount;
+use MediaWiki\Extension\ConfirmAccount\Pager;
+use MediaWiki\Extension\ConfirmAccount\Submission\AccountConfirm;
+use MediaWiki\Extension\ConfirmAccount\UserAccountRequest;
 use MediaWiki\Html\Html;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
+use PermissionsError;
+use Wikimedia\ObjectCache\WANObjectCache;
 
-class ConfirmAccountsPage extends SpecialPage {
+class ConfirmAccounts extends SpecialPage {
 	protected $queueType = -1;
 	protected $acrID = 0;
 	protected $file = '';
@@ -84,7 +92,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		} elseif ( $this->acrID ) {
 			# Load areas user plans to be active in...
 			$this->reqAreas = [];
-			foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
+			foreach ( array_keys( ConfirmAccount::getUserAreaConfig() ) as $name ) {
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
 				$this->reqAreas[$name] = $request->getInt( $formName, -1 );
 			}
@@ -352,7 +360,7 @@ class ConfirmAccountsPage extends SpecialPage {
 			$form .= "<tr><td><strong>" . $this->msg(
 				'confirmaccount-reqtype'
 			)->escaped() . "</strong></td><td>";
-			foreach ( $wgAccountRequestTypes as $i => $params ) {
+			foreach ( array_keys( $wgAccountRequestTypes ) as $i ) {
 				$options[] = Html::element( 'option', [
 					'value' => $i, 'selected' => ( $i == $this->reqType ) ? 'selected' : null
 				], $this->msg( "confirmaccount-pos-$i" )->text() );
@@ -590,7 +598,7 @@ class ConfirmAccountsPage extends SpecialPage {
 				$areaSet[] = $area;
 			}
 		}
-		$submission = new AccountConfirmSubmission(
+		$submission = new AccountConfirm(
 			$this->getUser(),
 			$this->accountReq,
 			[
@@ -616,7 +624,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		if ( $url ) {
 			$this->getOutput()->redirect( $url );
 		} else {
-			$this->showSuccess( $this->submitType, $this->reqUsername, (array)$msg );
+			$this->showSuccess( $this->reqUsername, (array)$msg );
 		}
 	}
 
@@ -694,11 +702,10 @@ class ConfirmAccountsPage extends SpecialPage {
 	}
 
 	/**
-	 * @param string $submitType
 	 * @param string|null $name User name
 	 * @param array $errors
 	 */
-	protected function showSuccess( $submitType, $name = null, $errors = [] ) {
+	protected function showSuccess( $name = null, $errors = [] ) {
 		$out = $this->getOutput();
 
 		$out->setPageTitle( $this->msg( 'actioncomplete' )->escaped() );
@@ -722,7 +729,7 @@ class ConfirmAccountsPage extends SpecialPage {
 		$out = $this->getOutput();
 
 		# Output the list
-		$pager = new ConfirmAccountsPager( $this, [],
+		$pager = new Pager( $this, [],
 			$this->queueType, $this->showRejects, $this->showHeld, $this->showStale );
 
 		if ( $pager->getNumRows() ) {

@@ -3,7 +3,7 @@
 	"private": true,
 	"scripts": {
 		"test": "grunt test",
-		"lint:fix": "grunt eslint:all --fix"
+		"fix": "grunt eslint:fix --fix"
 	},
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.31.0",

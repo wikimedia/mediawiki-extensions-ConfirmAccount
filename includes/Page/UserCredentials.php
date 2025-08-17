@@ -1,12 +1,20 @@
 <?php
+namespace MediaWiki\Extension\ConfirmAccount\Page;
 
+use MediaWiki\Extension\ConfirmAccount\ConfirmAccount;
+use MediaWiki\Extension\ConfirmAccount\UserAccountRequest;
 use MediaWiki\Html\Html;
+use MediaWiki\HTMLForm\HTMLForm;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use MediaWiki\User\UserGroupManager;
+use MediaWiki\User\UserGroupMembership;
 use MediaWiki\User\UserIdentityLookup;
+use PermissionsError;
 use Wikimedia\Rdbms\ILoadBalancer;
 
-class UserCredentialsPage extends SpecialPage {
+class UserCredentials extends SpecialPage {
 	protected $target, $file;
 
 	private ILoadBalancer $loadBalancer;
@@ -156,7 +164,6 @@ class UserCredentialsPage extends SpecialPage {
 			<tr style='vertical-align: top;'>";
 			$count = 0;
 
-			$att = [ 'disabled' => 'disabled' ];
 			foreach ( $userAreas as $name => $conf ) {
 				$count++;
 				if ( $count > 5 ) {

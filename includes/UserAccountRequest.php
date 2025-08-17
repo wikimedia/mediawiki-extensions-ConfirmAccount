@@ -1,6 +1,10 @@
 <?php
 
+namespace MediaWiki\Extension\ConfirmAccount;
+
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
+use MWException;
 
 class UserAccountRequest {
 	/* Initially supplied fields */
@@ -201,6 +205,7 @@ class UserAccountRequest {
 	/**
 	 * @param string $flat Use 'flat' to get a raw blob back
 	 * @return array|string Flat blob or array from expanded blob
+	 * @throws MWException
 	 */
 	public function getAreas( $flat = 'expanded' ) {
 		if ( $flat == 'expanded' ) {

@@ -1,19 +1,34 @@
 <?php
 
+namespace MediaWiki\Extension\ConfirmAccount\Hooks;
+
+use ALItem;
+use ALRow;
+use ALTree;
+use ErrorPageError;
+use MediaWiki\Auth\AuthManager;
+use MediaWiki\Context\RequestContext;
+use MediaWiki\Extension\ConfirmAccount\ConfirmAccount;
+use MediaWiki\Extension\ConfirmAccount\UserAccountRequest;
+use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
+use MediaWiki\Output\Hook\BeforePageDisplayHook;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\Skin\SkinComponentUtils;
+use MediaWiki\SpecialPage\Hook\AuthChangeFormFieldsHook;
+use Skin;
+use SkinTemplate;
 
 /**
  * Class containing hooked functions for a ConfirmAccount environment
  */
-class ConfirmAccountUIHooks implements
-	\MediaWiki\Hook\BeforePageDisplayHook,
-	\MediaWiki\Hook\SkinTemplateNavigation__UniversalHook,
-	\MediaWiki\SpecialPage\Hook\AuthChangeFormFieldsHook
+class UI implements
+	BeforePageDisplayHook,
+	SkinTemplateNavigation__UniversalHook,
+	AuthChangeFormFieldsHook
 {
 	/**
 	 * @param SkinTemplate $skin
 	 * @param array &$links
-	 * @return bool
 	 */
 	public function onSkinTemplateNavigation__Universal( $skin, &$links ): void {
 		# Add a link to Special:RequestAccount if a link exists for login
@@ -87,7 +102,7 @@ class ConfirmAccountUIHooks implements
 	public function onAuthChangeFormFields(
 		$requests, $fieldInfo, &$formDescriptor, $action
 	) {
-		if ( $action !== \MediaWiki\Auth\AuthManager::ACTION_CREATE ) {
+		if ( $action !== AuthManager::ACTION_CREATE ) {
 			return true;
 		}
 
@@ -108,7 +123,7 @@ class ConfirmAccountUIHooks implements
 		$formDescriptor['mailpassword']['default'] = 1;
 		$formDescriptor['mailpassword']['checked'] = true;
 		$formDescriptor['mailpassword']['readonly'] = true;
-		$formDescriptor['mailpassword']['validation-callback'] = static function ( $v ) use ( $accReq ) {
+		$formDescriptor['mailpassword']['validation-callback'] = static function ( $v ) {
 			return ( $v === true )
 				? true
 				: wfMessage( 'confirmaccount-mismatched' );

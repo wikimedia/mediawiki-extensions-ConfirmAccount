@@ -1,12 +1,27 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
+namespace MediaWiki\Extension\ConfirmAccount\Submission;
 
-class AccountConfirmSubmission {
+use MediaWiki\Content\ContentHandler;
+use MediaWiki\Context\IContextSource;
+use MediaWiki\Deferred\DeferredUpdates;
+use MediaWiki\Extension\ConfirmAccount\ConfirmAccount;
+use MediaWiki\Extension\ConfirmAccount\UserAccountRequest;
+use MediaWiki\Language\FormatterFactory;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
+use MediaWiki\User\UserFactory;
+use MediaWiki\User\UserRigorOptions;
+use Wikimedia\Rdbms\LBFactory;
+
+class AccountConfirm {
 	/* User making the confirmation */
 	protected $admin;
-	/** @var UserAccountRequest */
-	protected $accountReq;
+	protected UserAccountRequest $accountReq;
+	protected MediaWikiServices $mws;
+	protected LBFactory $lbFactory;
+	protected UserFactory $userFactory;
+	protected FormatterFactory $ff;
 	/* Admin-overridable name and fields filled from request form */
 	protected $userName;
 	protected $bio;
@@ -23,6 +38,10 @@ class AccountConfirmSubmission {
 	public function __construct( User $admin, UserAccountRequest $accReq, array $params ) {
 		$this->admin = $admin;
 		$this->accountReq = $accReq;
+		$this->mws = MediaWikiServices::getInstance();
+		$this->lbFactory = $this->mws->getDBLoadBalancerFactory();
+		$this->userFactory = $this->mws->getUserFactory();
+		$this->ff = $this->mws->getFormatterFactory();
 		$this->userName = trim( $params['userName'] );
 		$this->bio = trim( $params['bio'] );
 		$this->type = $params['type'];
@@ -47,7 +66,7 @@ class AccountConfirmSubmission {
 				$context->msg( 'badaccess-group0' )->escaped(),
 				null
 			];
-		} elseif ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
+		} elseif ( $this->mws->getReadOnlyMode()->isReadOnly() ) {
 			return [
 				'accountconf_readonly',
 				$context->msg( 'badaccess-group0' )->escaped(),
@@ -55,13 +74,13 @@ class AccountConfirmSubmission {
 			];
 		}
 		if ( $this->action === 'spam' ) {
-			return $this->spamRequest( $context );
+			return $this->spamRequest();
 		} elseif ( $this->action === 'reject' ) {
 			return $this->rejectRequest( $context );
 		} elseif ( $this->action === 'hold' ) {
 			return $this->holdRequest( $context );
 		} elseif ( $this->action === 'accept' ) {
-			return $this->acceptRequest( $context );
+			return $this->acceptRequest();
 		} elseif ( $this->action === 'complete' && $this->allowComplete ) {
 			return $this->completeRequest( $context );
 		} else {
@@ -74,11 +93,10 @@ class AccountConfirmSubmission {
 	}
 
 	/**
-	 * @param IContextSource $context
 	 * @return array
 	 */
-	protected function spamRequest( IContextSource $context ) {
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+	protected function spamRequest() {
+		$dbw = $this->mws->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 
 		$ok = $this->accountReq->markRejected( $this->admin, wfTimestampNow(), '' );
@@ -94,17 +112,15 @@ class AccountConfirmSubmission {
 	/**
 	 * @param IContextSource $context
 	 * @return array
-	 * @throws MWException
 	 */
 	protected function rejectRequest( IContextSource $context ) {
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
+		$dbw = $this->lbFactory->getMainLB()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
 		$ok = $this->accountReq->markRejected( $this->admin, wfTimestampNow(), $this->reason );
 		if ( $ok ) {
 			# Make proxy user to email a rejection message :(
-			$u = User::newFromName( $this->accountReq->getName(), false );
+			$u = $this->userFactory->newFromName( $this->accountReq->getName(), UserRigorOptions::RIGOR_NONE );
 			$u->setEmail( $this->accountReq->getEmail() );
 			# Send out a rejection email...
 			if ( $this->reason != '' ) {
@@ -123,7 +139,9 @@ class AccountConfirmSubmission {
 				return [
 					'accountconf_mailerror',
 					$context->msg( 'mailerror' )->rawParams(
-						$context->getOutput()->parseAsInterface( $result->getWikiText() )
+						$context->getOutput()->parseAsInterface(
+							$this->ff->getStatusFormatter( $context )->getWikiText( $result )
+						)
 					)->escaped(),
 					null
 				];
@@ -139,11 +157,10 @@ class AccountConfirmSubmission {
 	/**
 	 * @param IContextSource $context
 	 * @return array
-	 * @throws MWException
 	 */
 	protected function holdRequest( IContextSource $context ) {
 		# Make proxy user to email a message
-		$u = User::newFromName( $this->accountReq->getName(), false );
+		$u = $this->userFactory->newFromName( $this->accountReq->getName(), UserRigorOptions::RIGOR_NONE );
 		$u->setEmail( $this->accountReq->getEmail() );
 
 		# Pointless without a summary...
@@ -155,8 +172,7 @@ class AccountConfirmSubmission {
 			];
 		}
 
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
+		$dbw = $this->lbFactory->getMainLB()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
 		# If not already held or deleted, mark as held
@@ -182,7 +198,9 @@ class AccountConfirmSubmission {
 			return [
 				'accountconf_mailerror',
 				$context->msg( 'mailerror' )->rawParams(
-					$context->getOutput()->parseAsInterface( $result->getWikiText() )
+					$context->getOutput()->parseAsInterface(
+						$this->ff->getStatusFormatter( $context )->getWikiText( $result )
+					)
 				)->escaped(),
 				null
 			];
@@ -195,13 +213,13 @@ class AccountConfirmSubmission {
 		return [ true, null, null ];
 	}
 
-	protected function acceptRequest( IContextSource $context ) {
+	protected function acceptRequest() {
 		global $wgAccountRequestTypes;
 
 		$id = $this->accountReq->getId();
 		$type = $wgAccountRequestTypes[$this->accountReq->getType()][0];
 
-		$spFactory = MediaWikiServices::getInstance()->getSpecialPageFactory();
+		$spFactory = $this->mws->getSpecialPageFactory();
 		$redirTitle = $spFactory->getTitleForAlias( 'CreateAccount' );
 		$returnTitle = $spFactory->getTitleForAlias( "ConfirmAccounts/{$type}" );
 		$params = [
@@ -222,19 +240,17 @@ class AccountConfirmSubmission {
 		$accReq = $this->accountReq; // convenience
 
 		# Now create user and check if the name is valid
-		$user = User::newFromName( $this->userName, false );
+		$user = $this->userFactory->newFromName( $this->userName, UserRigorOptions::RIGOR_NONE );
 
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
+		$dbw = $this->lbFactory->getMainLB()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE );
 
 		# Grant any necessary rights (exclude blank or dummy groups)
 		$group = self::getGroupFromType( $this->type );
 		if ( $group != '' && $group != 'user' && $group != '*' ) {
-			MediaWikiServices::getInstance()->getUserGroupManager()->addUserToGroup( $user, $group );
+			$this->mws->getUserGroupManager()->addUserToGroup( $user, $group );
 		}
 
-		$acd_id = null; // used for rollback cleanup
 		# Save account request data to credentials system
 		if ( $wgConfirmAccountSaveInfo ) {
 			$key = $accReq->getFileStorageKey();
@@ -252,7 +268,9 @@ class AccountConfirmSubmission {
 					$dbw->cancelAtomic( __METHOD__ );
 					return [
 						'accountconf_copyfailed',
-						$context->getOutput()->parseAsInterface( $status->getWikiText() ),
+						$context->getOutput()->parseAsInterface(
+							$this->ff->getStatusFormatter( $context )->getWikiText( $status )
+						),
 						null
 					];
 				}
@@ -292,8 +310,8 @@ class AccountConfirmSubmission {
 		$dbw->endAtomic( __METHOD__ );
 
 		DeferredUpdates::addCallableUpdate(
-			function () use ( $user, $context, $group, $accReq ) {
-				$this->doPostCommitNewUserUpdates( $user, $context, $group, $accReq );
+			function () use ( $user, $accReq ) {
+				$this->doPostCommitNewUserUpdates( $user, $accReq );
 			}
 		);
 
@@ -301,7 +319,7 @@ class AccountConfirmSubmission {
 	}
 
 	public function doPostCommitNewUserUpdates(
-		User $user, IContextSource $context, $group, UserAccountRequest $accReq
+		User $user, UserAccountRequest $accReq
 	) {
 		global $wgConfirmAccountRequestFormItems, $wgConfirmAccountFSRepos;
 
@@ -400,7 +418,7 @@ class AccountConfirmSubmission {
 			);
 			$body .= "\n{{DEFAULTSORT:{$sortKey}}}";
 			# Clean up any other categories...
-			$catNS = MediaWikiServices::getInstance()->getContentLanguage()->getNSText( NS_CATEGORY );
+			$catNS = $this->mws->getContentLanguage()->getNSText( NS_CATEGORY );
 			$replace = '/\[\[' . preg_quote( $catNS ) . ':([^\]]+)\]\]/i'; // [[Category:x]]
 			$with = "[[{$catNS}:$1|" . str_replace( '$', '\$', $sortKey ) . "]]"; // [[Category:x|sortkey]]
 			$body = preg_replace( $replace, $with, $body );
@@ -408,7 +426,7 @@ class AccountConfirmSubmission {
 
 		# Create userpage!
 		if ( $body !== '' ) {
-			$article = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $user->getUserPage() );
+			$article = $this->mws->getWikiPageFactory()->newFromTitle( $user->getUserPage() );
 			$article->doUserEditContent(
 				ContentHandler::makeContent( $body, $article->getTitle() ),
 				$this->admin,
@@ -427,7 +445,7 @@ class AccountConfirmSubmission {
 				? wfMessage( 'confirmaccount-welc' )->text()
 				: $msgObj->text(); // custom message
 			# Add user welcome message!
-			$article = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $user->getTalkPage() );
+			$article = $this->mws->getWikiPageFactory()->newFromTitle( $user->getTalkPage() );
 			$article->doUserEditContent(
 				ContentHandler::makeContent( "{$welcome} ~~~~", $article->getTitle() ),
 				$this->admin,

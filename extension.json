@@ -15,24 +15,24 @@
 		}
 	},
 	"ExtensionFunctions": [
-		"ConfirmAccountHooks::onExtensionFunctions"
+		"MediaWiki\\Extension\\ConfirmAccount\\Hooks\\Special::onExtensionFunctions"
 	],
 	"SpecialPages": {
 		"RequestAccount": {
-			"class": "RequestAccountPage",
+			"class": "MediaWiki\\Extension\\ConfirmAccount\\Page\\RequestAccount",
 			"services": [
 				"UserFactory"
 			]
 		},
 		"ConfirmAccounts": {
-			"class": "ConfirmAccountsPage",
+			"class": "MediaWiki\\Extension\\ConfirmAccount\\Page\\ConfirmAccounts",
 			"services": [
 				"UserFactory",
 				"MainWANObjectCache"
 			]
 		},
 		"UserCredentials": {
-			"class": "UserCredentialsPage",
+			"class": "MediaWiki\\Extension\\ConfirmAccount\\Page\\UserCredentials",
 			"services": [
 				"DBLoadBalancer",
 				"UserGroupManager",
@@ -58,33 +58,19 @@
 		"ConfirmAccountAliases": "ConfirmAccount.alias.php"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\ConfirmAccount\\": "src/"
-	},
-	"AutoloadClasses": {
-		"ConfirmAccountHooks": "includes/ConfirmAccountHooks.php",
-		"ConfirmAccountUIHooks": "includes/frontend/ConfirmAccountUI.hooks.php",
-		"ConfirmAccountsPage": "includes/frontend/specialpages/actions/ConfirmAccount_body.php",
-		"ConfirmAccountsPager": "includes/frontend/specialpages/actions/ConfirmAccountsPager.php",
-		"RequestAccountPage": "includes/frontend/specialpages/actions/RequestAccount_body.php",
-		"UserCredentialsPage": "includes/frontend/specialpages/actions/UserCredentials_body.php",
-		"ConfirmAccount": "includes/backend/ConfirmAccount.class.php",
-		"UserAccountRequest": "includes/backend/UserAccountRequest.php",
-		"AccountRequestSubmission": "includes/business/AccountRequestSubmission.php",
-		"AccountConfirmSubmission": "includes/business/AccountConfirmSubmission.php",
-		"ConfirmAccountPreAuthenticationProvider": "includes/business/ConfirmAccountPreAuthenticationProvider.php",
-		"ConfirmAccountUpdaterHooks": "includes/backend/schema/ConfirmAccountUpdater.hooks.php"
+		"MediaWiki\\Extension\\ConfirmAccount\\": "includes/"
 	},
 	"AuthManagerAutoConfig": {
 		"preauth": {
-			"ConfirmAccountPreAuthenticationProvider": {
-				"class": "ConfirmAccountPreAuthenticationProvider",
+			"MediaWiki\\Extension\\ConfirmAccount\\PreAuthenticationProvider": {
+				"class": "MediaWiki\\Extension\\ConfirmAccount\\PreAuthenticationProvider",
 				"sort": 0
 			}
 		}
 	},
 	"ResourceModules": {
 		"ext.confirmAccount": {
-			"styles": "includes/frontend/modules/confirmaccount.css"
+			"styles": "resources/confirmaccount.css"
 		},
 		"ext.confirmAccountSpam": {
 			"dependencies": [
@@ -110,13 +96,13 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "ConfirmAccountUIHooks"
+			"class": "MediaWiki\\Extension\\ConfirmAccount\\Hooks\\UI"
 		},
 		"schema": {
-			"class": "ConfirmAccountUpdaterHooks"
+			"class": "MediaWiki\\Extension\\ConfirmAccount\\Hooks\\Updater"
 		},
 		"special": {
-			"class": "ConfirmAccountHooks"
+			"class": "MediaWiki\\Extension\\ConfirmAccount\\Hooks\\Special"
 		}
 	},
 	"Hooks": {

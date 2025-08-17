@@ -19,23 +19,31 @@
  * @ingroup Auth
  */
 
+namespace MediaWiki\Extension\ConfirmAccount;
+
+use ErrorPageError;
 use MediaWiki\Auth\AbstractPreAuthenticationProvider;
 use MediaWiki\Auth\AuthenticationRequest;
 use MediaWiki\Auth\AuthenticationResponse;
 use MediaWiki\Auth\TemporaryPasswordAuthenticationRequest;
 use MediaWiki\Auth\UserDataAuthenticationRequest;
+use MediaWiki\Context\RequestContext;
+use MediaWiki\Extension\ConfirmAccount\Submission\AccountConfirm;
 use MediaWiki\Language\RawMessage;
+use MediaWiki\User\User;
+use MWException;
+use StatusValue;
 
-class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationProvider {
+class PreAuthenticationProvider extends AbstractPreAuthenticationProvider {
 	const SESSION_INFO_KEY = 'ConfirmAccountRequestInfo';
 
 	/**
-	 * @param \User $user
-	 * @param \User $creator
+	 * @param User $user
+	 * @param User $creator
 	 * @param array $reqs
 	 * @return StatusValue
 	 * @throws MWException
-	 * @todo avoid using global WebRequest and use dedicate auth request class
+	 * @todo avoid using global WebRequest and use dedicated auth request class
 	 */
 	public function testForAccountCreation( $user, $creator, array $reqs ) {
 		$request = RequestContext::getMain()->getRequest();
@@ -85,10 +93,10 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 					'userName' => $request->getVal( 'wpName', $user->getName() ),
 					'action' => 'complete',
 					'reason' => $request->getVal( 'wpReason', '' ),
-					// @TODO: make overridable in GUI
+					// @TODO: make override-able in GUI
 					'bio' => $request->getText( 'wpNewBio', $accountReq->getBio() ),
 					'type' => $request->getInt( 'wpType', $accountReq->getType() ),
-					// @TODO: make overridable
+					// @TODO: make override-able
 					'areas' => $accountReq->getAreas(),
 					'allowComplete' => true // action not enabled via GUI
 				]
@@ -98,7 +106,7 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 		return StatusValue::newGood();
 	}
 
-	public function postAccountCreation( $user, $creator, AuthenticationResponse $response ) {
+	public function postAccountCreation( $_, $creator, AuthenticationResponse $response ) {
 		if ( $response->status === AuthenticationResponse::FAIL ) {
 			return; // nothing happened
 		}
@@ -108,7 +116,7 @@ class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationP
 			return; // wasn't for a pending account request
 		}
 
-		$submission = new AccountConfirmSubmission(
+		$submission = new AccountConfirm(
 			$creator,
 			UserAccountRequest::newFromId( $data['accountRequestId'], 'dbmaster' ),
 			$data['confirmationParams']

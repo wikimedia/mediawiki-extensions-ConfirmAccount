@@ -1,9 +1,14 @@
 <?php
 
+namespace MediaWiki\Extension\ConfirmAccount;
+
+use MediaWiki\Pager\ReverseChronologicalPager;
+use stdClass;
+
 /**
  * Query to list out pending accounts
  */
-class ConfirmAccountsPager extends ReverseChronologicalPager {
+class Pager extends ReverseChronologicalPager {
 	public $mForm, $mConds;
 	public $rejects, $stale;
 

@@ -1,7 +1,21 @@
 <?php
 
+namespace MediaWiki\Extension\ConfirmAccount;
+
+use ArrayIterator;
+use FileRepo;
+use MediaWiki\Block\Block;
+use MediaWiki\Block\BlockManager;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\Status\Status;
+use MediaWiki\User\User;
+use MediaWiki\User\UserArray;
+use MediaWiki\User\UserArrayFromResult;
 use MediaWiki\WikiMap\WikiMap;
+use MWCryptRand;
+use UploadBase;
+use Wikimedia\FileBackend\FSFileBackend;
 use Wikimedia\Rdbms\FakeResultWrapper;
 
 class ConfirmAccount {
@@ -85,11 +99,10 @@ class ConfirmAccount {
 	/**
 	 * Generate, store, and return a new email confirmation code.
 	 * A hash (unsalted since it's used as a key) is stored.
-	 * @param User $user
 	 * @param string &$expiration
 	 * @return string
 	 */
-	public static function getConfirmationToken( $user, &$expiration ) {
+	public static function getConfirmationToken( &$expiration ) {
 		global $wgConfirmAccountRejectAge;
 
 		$expires = time() + $wgConfirmAccountRejectAge;
@@ -282,7 +295,7 @@ class ConfirmAccount {
 		$msg = wfMessage( 'requestaccount-areas' )->inContentLanguage();
 		if ( $msg->exists() ) {
 			$areas = explode( "\n*", "\n" . $msg->text() );
-			foreach ( $areas as $n => $area ) {
+			foreach ( $areas as $area ) {
 				$set = explode( "|", $area );
 				if ( count( $set ) >= 2 ) {
 					$name = trim( str_replace( '_', ' ', $set[0] ) );
@@ -311,13 +324,13 @@ class ConfirmAccount {
 	 * @param User $user
 	 * @return Block|false
 	 */
-	public static function getAccountRequestBlock( User $user ) {
+	public static function getAccountRequestBlock( User $user ): Block|bool {
 		global $wgAccountRequestWhileBlocked;
 
 		$block = false;
 		# If a user cannot make accounts, don't let them request them either
 		if ( !$wgAccountRequestWhileBlocked ) {
-			if ( method_exists( \MediaWiki\Block\BlockManager::class, 'getCreateAccountBlock' ) ) {
+			if ( method_exists( BlockManager::class, 'getCreateAccountBlock' ) ) {
 				// MW 1.42+
 				$isExempt = $user->isAllowed( 'ipblock-exempt' );
 				$block = MediaWikiServices::getInstance()->getBlockManager()
@@ -327,6 +340,9 @@ class ConfirmAccount {
 						false
 					) ?: false;
 			} else {
+				/** @disregard P1013 Tell Intelephense to ignore this non-existant method since it is back-compat for
+				 *  older MediaWiki.
+				 */
 				$block = $user->isBlockedFromCreateAccount();
 			}
 		}
@@ -334,10 +350,7 @@ class ConfirmAccount {
 		return $block;
 	}
 
-	/**
-	 * @return UserArray
-	 */
-	public static function getAdminsToNotify() {
+	public static function getAdminsToNotify(): ArrayIterator|UserArrayFromResult {
 		$groups = MediaWikiServices::getInstance()->getGroupPermissionsLookup()
 			->getGroupsWithPermission( 'confirmaccount-notify' );
 		if ( !count( $groups ) ) {
@@ -370,13 +383,8 @@ class ConfirmAccount {
 	public static function getFileRepo( $info ) {
 		$repoName = $info['name'];
 		$directory = $info['directory'];
-		if ( method_exists( MediaWikiServices::class, 'getLockManagerGroupFactory' ) ) {
-			// MediaWiki 1.34+
-			$lockManagerGroup = MediaWikiServices::getInstance()->getLockManagerGroupFactory()
-				->getLockManagerGroup( WikiMap::getCurrentWikiId() );
-		} else {
-			$lockManagerGroup = LockManagerGroup::singleton( WikiMap::getCurrentWikiId() );
-		}
+		$lockManagerGroup = MediaWikiServices::getInstance()->getLockManagerGroupFactory()
+			->getLockManagerGroup( WikiMap::getCurrentWikiId() );
 		$info['backend'] = new FSFileBackend( [
 				'name' => $repoName . '-backend',
 				'wikiId' => WikiMap::getCurrentWikiId(),

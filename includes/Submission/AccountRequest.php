@@ -1,12 +1,24 @@
 <?php
 
+namespace MediaWiki\Extension\ConfirmAccount\Submission;
+
+use FileRepo;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Deferred\DeferredUpdates;
+use MediaWiki\Extension\ConfirmAccount\ConfirmAccount;
 use MediaWiki\Extension\ConfirmAccount\HookRunner;
+use MediaWiki\Extension\ConfirmAccount\UserAccountRequest;
 use MediaWiki\Extension\ConfirmEdit\CaptchaTriggers;
 use MediaWiki\Extension\ConfirmEdit\Hooks as CaptchaHooks;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Parser\Sanitizer;
+use MediaWiki\User\User;
+use MediaWiki\User\UserRigorOptions;
 
-class AccountRequestSubmission {
+class AccountRequest {
+	/* Reusable MWS instance. */
+	protected MediaWikiServices $mws;
 	/* User making the request */
 	protected $requester;
 	/* Copy of the parameters for the hook */
@@ -34,6 +46,7 @@ class AccountRequestSubmission {
 	protected $attachmentTempPath; // tmp path file was uploaded to FS
 
 	public function __construct( User $requester, array $params ) {
+		$this->mws = MediaWikiServices::getInstance();
 		$this->requester = $requester;
 		$this->params = $params;
 		$this->userName = trim( $params['userName'] );
@@ -80,7 +93,7 @@ class AccountRequestSubmission {
 
 		ConfirmAccount::runAutoMaintenance();
 
-		$cache = ObjectCache::getLocalClusterInstance();
+		$cache = $this->mws->getObjectCacheFactory()->getLocalClusterInstance();
 		$formConfig = $wgConfirmAccountRequestFormItems; // convience
 		$reqUser = $this->requester;
 
@@ -91,7 +104,7 @@ class AccountRequestSubmission {
 				'accountreq_permission_denied',
 				$context->msg( 'badaccess-group0' )->escaped()
 			];
-		} elseif ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
+		} elseif ( $this->mws->getReadOnlyMode()->isReadOnly() ) {
 			return [ 'accountreq_readonly', $context->msg( 'badaccess-group0' )->escaped() ];
 		}
 
@@ -114,7 +127,9 @@ class AccountRequestSubmission {
 		if ( $this->userName === '' ) {
 			return [ 'accountreq_no_name', $context->msg( 'noname' )->escaped() ];
 		}
-		$u = User::newFromName( $this->userName, 'creatable' );
+		$u = $this->mws->getUserFactory()->newFromName(
+			$this->userName, UserRigorOptions::RIGOR_CREATABLE
+		);
 		if ( !$u ) {
 			return [ 'accountreq_invalid_name', $context->msg( 'noname' )->escaped() ];
 		}
@@ -168,7 +183,7 @@ class AccountRequestSubmission {
 			}
 		}
 
-		$authManager = MediaWikiServices::getInstance()->getAuthManager();
+		$authManager = $this->mws->getAuthManager();
 		# Check if already in use
 		if ( $u->idForName() != 0 || $authManager->userExists( $u->getName() ) ) {
 			return [
@@ -180,7 +195,7 @@ class AccountRequestSubmission {
 		$u->setEmail( $this->email );
 		$u->setRealName( $this->realName );
 
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$lbFactory = $this->mws->getDBLoadBalancerFactory();
 		$dbw = $lbFactory->getMainLB()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__, $dbw::ATOMIC_CANCELABLE ); // ready to acquire locks
 		# Check pending accounts for name use
@@ -244,7 +259,7 @@ class AccountRequestSubmission {
 			}
 		}
 
-		$hookRunner = new HookRunner( MediaWikiServices::getInstance()->getHookContainer() );
+		$hookRunner = new HookRunner( $this->mws->getHookContainer() );
 		$message = "";
 		if ( $hookRunner->onConfirmAccount__checkRequest( $u, $this->params, $message ) === false ) {
 			$dbw->cancelAtomic( __METHOD__ );
@@ -252,7 +267,7 @@ class AccountRequestSubmission {
 		}
 
 		$expires = null; // passed by reference
-		$token = ConfirmAccount::getConfirmationToken( $u, $expires );
+		$token = ConfirmAccount::getConfirmationToken( $expires );
 
 		# Insert into pending requests...
 		$req = UserAccountRequest::newFromArray( [
@@ -285,7 +300,9 @@ class AccountRequestSubmission {
 				$repo->cleanupBatch( [ [ 'public', $pathRel ] ] );
 			}
 
-			$param = $context->getOutput()->parseAsInterface( $result->getWikiText() );
+			$param = $context->getOutput()->parseAsInterface(
+				$this->mws->getFormatterFactory()->getStatusFormatter( $context )->getWikiText( $result )
+			);
 
 			return [
 				'acct_request_mail_failed',

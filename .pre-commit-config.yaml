@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: grunt-test
+        name: Fix eslint problems
+        entry: grunt fix
+        language: system
+        files: '\.(js|ts|json)$'
+        pass_filenames: false
+

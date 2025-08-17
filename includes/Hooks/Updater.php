@@ -1,17 +1,21 @@
 <?php
+
+namespace MediaWiki\Extension\ConfirmAccount\Hooks;
+
+use MediaWiki\Installer\DatabaseUpdater;
+use MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook;
+
 /**
  * Class containing updater functions for a ConfirmAccount environment
  */
-class ConfirmAccountUpdaterHooks implements
-	\MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook
-{
+class Updater implements LoadExtensionSchemaUpdatesHook {
 
 	/**
 	 * @param DatabaseUpdater $updater
 	 * @return bool
 	 */
 	public function onLoadExtensionSchemaUpdates( $updater ) {
-		$base = __DIR__;
+		$base = dirname( dirname( __DIR__ ) ) . "/sql";
 		$type = $updater->getDB()->getType();
 		if ( $type === 'mysql' || $type === 'sqlite' ) {
 			$base = "$base/mysql";

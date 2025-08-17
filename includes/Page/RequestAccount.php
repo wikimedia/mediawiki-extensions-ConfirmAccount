@@ -1,14 +1,25 @@
 <?php
 
+namespace MediaWiki\Extension\ConfirmAccount\Page;
+
+use MailAddress;
+use MediaWiki\Extension\ConfirmAccount\ConfirmAccount;
+use MediaWiki\Extension\ConfirmAccount\Submission\AccountRequest;
 use MediaWiki\Extension\ConfirmEdit\CaptchaTriggers;
 use MediaWiki\Extension\ConfirmEdit\Hooks as CaptchaHooks;
 use MediaWiki\Html\Html;
 use MediaWiki\Registration\ExtensionRegistry;
+use MediaWiki\Request\WebRequest;
 use MediaWiki\Request\WebRequestUpload;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
+use MediaWiki\User\UserRigorOptions;
+use UserBlockedError;
+use UserMailer;
+use Wikimedia\Rdbms\IDBAccessObject;
 
-class RequestAccountPage extends SpecialPage {
+class RequestAccount extends SpecialPage {
 	protected $mUsername; // string
 	protected $mRealName; // string
 	protected $mEmail; // string
@@ -81,7 +92,7 @@ class RequestAccountPage extends SpecialPage {
 		# Load areas user plans to be active in...
 		$this->mAreas = [];
 		if ( $this->hasItem( 'AreasOfInterest' ) ) {
-			foreach ( ConfirmAccount::getUserAreaConfig() as $name => $conf ) {
+			foreach ( array_keys( ConfirmAccount::getUserAreaConfig() ) as $name ) {
 				$formName = "wpArea-" . htmlspecialchars( str_replace( ' ', '_', $name ) );
 				$this->mAreas[$name] = $request->getInt( $formName, -1 );
 			}
@@ -149,7 +160,7 @@ class RequestAccountPage extends SpecialPage {
 		if ( count( $wgAccountRequestTypes ) > 1 ) {
 			$form .= "<tr><td>" . $this->msg( 'requestaccount-reqtype' )->escaped() . "</td><td>";
 			$options = [];
-			foreach ( $wgAccountRequestTypes as $i => $params ) {
+			foreach ( array_keys( $wgAccountRequestTypes ) as $i ) {
 				$options[] = Html::element(
 					'option',
 					[ 'value' => $i, 'selected' => ( $i == $this->mType ) ? 'selected' : null ],
@@ -300,7 +311,7 @@ class RequestAccountPage extends SpecialPage {
 	protected function doSubmit() {
 		# Now create a dummy user ($u) and check if it is valid
 		$name = trim( $this->mUsername );
-		$u = User::newFromName( $name, 'creatable' );
+		$u = $this->userFactory->newFromName( $name, UserRigorOptions::RIGOR_CREATABLE );
 		if ( !$u ) {
 			$this->showForm( $this->msg( 'noname' )->escaped() );
 			return;
@@ -335,7 +346,7 @@ class RequestAccountPage extends SpecialPage {
 			}
 		}
 
-		$submission = new AccountRequestSubmission(
+		$submission = new AccountRequest(
 			$this->getUser(),
 			[
 				'userName'                  => $name,

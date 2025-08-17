@@ -15,10 +15,21 @@ module.exports = function ( grunt ) {
 				'**/*.{js,json}',
 				'!node_modules/**',
 				'!vendor/**'
-			]
+			],
+			fix: {
+				options: {
+					fix: true
+				},
+				src: [
+					'**/*.{js,json}',
+					'!node_modules/**',
+					'!vendor/**'
+				]
+			}
 		}
 	} );
 
-	grunt.registerTask( 'test', [ 'eslint', 'banana' ] );
+	grunt.registerTask( 'test', [ 'eslint:all', 'banana' ] );
+	grunt.registerTask( 'fix', [ 'eslint:fix' ] );
 	grunt.registerTask( 'default', 'test' );
 };
