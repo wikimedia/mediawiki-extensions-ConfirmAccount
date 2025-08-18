@@ -8,6 +8,7 @@
 			"Lijealso",
 			"Luckas",
 			"Malafaya",
+			"Mansil alfalb",
 			"Vitorvicentevalente",
 			"Waldir"
 		]
@@ -92,5 +93,6 @@
 	"confirmaccount-email-body2": "O seu pedido de conta foi aprovado na wiki {{SITENAME}}.\n\nNome da conta: $1\n\nPalavra-passe: $2\n\n$3\n\nPor questões de segurança, deverá mudar a sua palavra-passe após a primeira entrada. Para entrar, por favor vá a {{fullurl:{{ns:special}}:Userlogin}}.",
 	"confirmaccount-email-body3": "Desculpe, o seu pedido para a conta \"$1\" foi rejeitado na wiki {{SITENAME}}.\n\nHá várias razões para isto acontecer.\nPoderá não ter preenchido o formulário corretamente, não ter fornecido respostas de tamanho adequado, ou de outra forma não ter cumprido algumas normas e critérios.\nPodem existir listas de contacto no sítio que poderá usar se deseja saber mais sobre as normas para as contas de utilizador.",
 	"confirmaccount-email-body4": "Desculpe, o seu pedido para a conta \"$1\" foi rejeitado na wiki {{SITENAME}}.\n\n$2\n\nPode haver listas de contactos no sítio, que deve usar se quiser saber mais sobre as normas para contas de utilizador.",
-	"confirmaccount-email-body5": "Antes que o seu pedido para a conta \"$1\" seja aceite na wiki {{SITENAME}}, deverá fornecer alguma informação adicional.\n\n$2\n\nPode haver listas de contactos no sítio que deve usar se quiser saber mais sobre as normas para contas de utilizador."
+	"confirmaccount-email-body5": "Antes que o seu pedido para a conta \"$1\" seja aceite na wiki {{SITENAME}}, deverá fornecer alguma informação adicional.\n\n$2\n\nPode haver listas de contactos no sítio que deve usar se quiser saber mais sobre as normas para contas de utilizador.",
+	"confirmaccount-spam-link": "Lixo eletrónico"
 }

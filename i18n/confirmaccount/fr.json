@@ -102,5 +102,10 @@
 	"confirmaccount-email-body2": "Votre demande de compte utilisateur a été acceptée sur {{SITENAME}}.\n\nNom du compte utilisateur : $1\n\nMot de passe : $2\n\n$3\n\nPour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion.\nPour vous connecter, allez sur {{fullurl:Special:UserLogin}}.",
 	"confirmaccount-email-body3": "Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.\n\nPlusieurs raisons peuvent expliquer ce cas de figure.\nIl est possible que vous ayez mal rempli le formulaire, ou bien que vous n’ayez pas indiqué suffisamment d’informations dans vos réponses. Il est encore possible que vous ne remplissiez pas les critères d’éligibilité pour obtenir votre compte.\nIl peut y avoir des listes de contacts sur le site que vous pouvez utiliser si vous désirez en savoir plus à propos de la politique des comptes d’utilisateur.",
 	"confirmaccount-email-body4": "Désolé, votre demande de compte utilisateur « $1 » a été rejetée sur {{SITENAME}}.\n\n$2\n\nIl peut y avoir des listes de contacts sur le site que vous pouvez utiliser si vous voulez en savoir plus à propos de la politique des comptes d’utilisateur.",
-	"confirmaccount-email-body5": "Avant que votre requête pour le compte « $1 » ne puisse être acceptée sur {{SITENAME}}, vous devez fournir quelques informations supplémentaires.\n\n$2\n\nIl peut y avoir des listes de contacts sur le site que vous pouvez utiliser si vous voulez en savoir plus à propos de la politique des comptes d’utilisateur."
+	"confirmaccount-email-body5": "Avant que votre requête pour le compte « $1 » ne puisse être acceptée sur {{SITENAME}}, vous devez fournir quelques informations supplémentaires.\n\n$2\n\nIl peut y avoir des listes de contacts sur le site que vous pouvez utiliser si vous voulez en savoir plus à propos de la politique des comptes d’utilisateur.",
+	"confirmaccount-spam-link": "Indésirable",
+	"confirmaccount-mark-request-spam": "Marquer la demande nº $1 comme indésirable ?",
+	"confirmaccount-cannot-load-review": "Impossible de charger la page de passage en revue.",
+	"confirmaccount-failed-to-mark": "Échec du marquage comme indésirable : $1",
+	"confirmaccount-cannot-find-form": "Formulaire de confirmation introuvable."
 }

@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kaleem Bhatti"
+			"Kaleem Bhatti",
+			"Saraiki"
 		]
 	},
-	"confirmaccount-wsum": "ست بسم اللہ!"
+	"confirmaccount-wsum": "ست بسم اللہ!",
+	"confirmaccount-spam-link": "ردی"
 }

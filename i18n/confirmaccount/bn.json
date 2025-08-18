@@ -60,5 +60,6 @@
 	"confirmaccount-canthold": "এই অনুরোধটি ইতিমধ্যেই হয় অপেক্ষমান বা অপসারিত।",
 	"confirmaccount-rej": "অ্যাকাউন্ট অনুরোধ সফলভাবে বাতিল করা হয়েছে।",
 	"confirmaccount-viewing": "(বর্তমানে [[User:$1|$1]]-এর দ্বারা পরিদর্শিত হয়েছে)",
-	"confirmaccount-summary": "নতুন ব্যবহারকারীর জন্য ব্যবহারকারী পাতা তৈরি"
+	"confirmaccount-summary": "নতুন ব্যবহারকারীর জন্য ব্যবহারকারী পাতা তৈরি",
+	"confirmaccount-spam-link": "স্প্যাম"
 }
