@@ -13,6 +13,7 @@
 			"Liuxinyu970226",
 			"Mark85296341",
 			"Mywood",
+			"Peterxy12",
 			"Tranve",
 			"Wilsonmess",
 			"Xiaomingyan",
@@ -104,5 +105,10 @@
 	"confirmaccount-email-body2": "您在{{SITENAME}}的账号申请已获批准。\n\n账号名称：$1\n\n密码：$2\n\n$3\n\n出于安全考虑，您需要在首次登录时更改密码。\n要登录，请访问{{fullurl:Special:Userlogin}}。",
 	"confirmaccount-email-body3": "抱歉，您在{{SITENAME}}请求的账户“$1”已经遭到拒绝。\n\n这可能是因为以下一些原因：您可能没有正确地填上整个表格，可能在您的反应中没有足够的长度，又可能未能符合到一些政策的条件。在这个网站中度提供了联络人列表，您可以用去知道更多用户账户方针的资料。",
 	"confirmaccount-email-body4": "抱歉，你在{{SITENAME}}请求的账户\"$1\"已经遭到拒绝。\n\n$2\n\n在这个网站中度提供了联络人列表，您可以用去知道更多用户账户方针的资料。",
-	"confirmaccount-email-body5": "在您请求账户 \"$1\" 能在{{SITENAME}}被批准之前，您必须先提供一些附加信息。\n\n$2\n\n如果您想知道更多有关用户账户方针的信息，您可以使用网站中的联系列表。"
+	"confirmaccount-email-body5": "在您请求账户 \"$1\" 能在{{SITENAME}}被批准之前，您必须先提供一些附加信息。\n\n$2\n\n如果您想知道更多有关用户账户方针的信息，您可以使用网站中的联系列表。",
+	"confirmaccount-spam-link": "广告宣传",
+	"confirmaccount-mark-request-spam": "将请求#$1标记为垃圾邮件？",
+	"confirmaccount-cannot-load-review": "无法加载评论页面。",
+	"confirmaccount-failed-to-mark": "未能标记为垃圾邮件：$1",
+	"confirmaccount-cannot-find-form": "找不到确认表格。"
 }
