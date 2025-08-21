@@ -84,5 +84,10 @@
 	"confirmaccount-email-body2": "Tu requesta de un conto in {{SITENAME}} ha essite approbate.\n\nNomine del conto: $1\n\nContrasigno: $2\n\n$3\n\nPro motivos de securitate, tu debera cambiar tu contrasigno al prime apertura de session.\nPro aperir un session, per favor visita {{fullurl:Special:UserLogin}}.",
 	"confirmaccount-email-body3": "Pardono, tu requesta de un conto \"$1\" in {{SITENAME}} ha essite rejectate.\n\nExiste plure modos in que isto pote evenir.\nEs possibile que tu non completava le formulario correctemente, non dava responsas de longor adequate, o alteremente non te conformava a alcun criterio de politica.\nIl pote haber listas de contacto in le sito que tu pote usar si tu vole saper plus a proposito del politica de creation de contos.",
 	"confirmaccount-email-body4": "Pardono, tu requesta de un conto \"$1\" in {{SITENAME}} ha essite rejectate.\n\n$2\n\nIl pote haber listas de contacto in le sito que tu pote usar si tu vole saper plus a proposito del politica de creation de contos.",
-	"confirmaccount-email-body5": "Ante que tu requesta de un conto \"$1\" in {{SITENAME}} pote esser acceptate, tu debe primo fornir alcun informationes additional.\n\n$2\n\nIl pote haber listas de contacto in le sito que tu pote usar si tu vole saper plus a proposito del politica de creation de contos."
+	"confirmaccount-email-body5": "Ante que tu requesta de un conto \"$1\" in {{SITENAME}} pote esser acceptate, tu debe primo fornir alcun informationes additional.\n\n$2\n\nIl pote haber listas de contacto in le sito que tu pote usar si tu vole saper plus a proposito del politica de creation de contos.",
+	"confirmaccount-spam-link": "Spam",
+	"confirmaccount-mark-request-spam": "Marcar le requesta №$1 como spam?",
+	"confirmaccount-cannot-load-review": "Non poteva cargar le pagina de revision.",
+	"confirmaccount-failed-to-mark": "Fallimento de marcar como spam: $1",
+	"confirmaccount-cannot-find-form": "Non poteva trovar le formulario de confirmation."
 }
