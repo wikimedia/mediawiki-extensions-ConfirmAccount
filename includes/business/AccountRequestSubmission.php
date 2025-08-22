@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Extension\ConfirmEdit\CaptchaTriggers;
+use MediaWiki\Extension\ConfirmEdit\Hooks as CaptchaHooks;
 use MediaWiki\MediaWikiServices;
 
 class AccountRequestSubmission {
@@ -70,7 +72,6 @@ class AccountRequestSubmission {
 	 */
 	public function submit( IContextSource $context ) {
 		global $wgAccountRequestThrottle, $wgConfirmAccountRequestFormItems, $wgConfirmAccountCaptchas;
-		global $wgCaptchaClass, $wgCaptchaTriggers;
 
 		ConfirmAccount::runAutoMaintenance();
 
@@ -90,11 +91,16 @@ class AccountRequestSubmission {
 		}
 
 		# Check for captcha validity
-		if ( $wgConfirmAccountCaptchas && isset( $wgCaptchaClass )
-			&& $wgCaptchaTriggers['createaccount'] && !$reqUser->isAllowed( 'skipcaptcha' ) ) {
-			/** @var SimpleCaptcha $captcha */
-			$captcha = new $wgCaptchaClass;
-			if ( !$captcha->passCaptchaLimitedFromRequest( $context->getRequest(), $reqUser ) ) {
+		if (
+			$wgConfirmAccountCaptchas &&
+			ExtensionRegistry::getInstance()->isLoaded( 'ConfirmEdit' ) &&
+			!$reqUser->isAllowed( 'skipcaptcha' )
+		) {
+			$captcha = CaptchaHooks::getInstance( CaptchaTriggers::CREATE_ACCOUNT );
+			if (
+				$captcha->triggersCaptcha( CaptchaTriggers::CREATE_ACCOUNT ) &&
+				!$captcha->passCaptchaLimitedFromRequest( $context->getRequest(), $reqUser )
+			) {
 				return [ 'accountreq_bad_captcha', $context->msg( 'captcha-createaccount-fail' )->escaped() ];
 			}
 		}
