@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\ConfirmEdit\CaptchaTriggers;
 use MediaWiki\Extension\ConfirmEdit\Hooks as CaptchaHooks;
 use MediaWiki\MediaWikiServices;
@@ -93,11 +94,11 @@ class AccountRequestSubmission {
 		# Check for captcha validity
 		if (
 			$wgConfirmAccountCaptchas &&
-			ExtensionRegistry::getInstance()->isLoaded( 'ConfirmEdit' ) &&
-			!$reqUser->isAllowed( 'skipcaptcha' )
+			ExtensionRegistry::getInstance()->isLoaded( 'ConfirmEdit' )
 		) {
 			$captcha = CaptchaHooks::getInstance( CaptchaTriggers::CREATE_ACCOUNT );
 			if (
+				!$captcha->canSkipCaptcha( $reqUser, RequestContext::getMain()->getConfig() ) &&
 				$captcha->triggersCaptcha( CaptchaTriggers::CREATE_ACCOUNT ) &&
 				!$captcha->passCaptchaLimitedFromRequest( $context->getRequest(), $reqUser )
 			) {
