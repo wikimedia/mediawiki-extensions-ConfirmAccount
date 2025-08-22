@@ -257,13 +257,16 @@ class RequestAccountPage extends SpecialPage {
 			$form .= '</fieldset>';
 		}
 
+		$config = $this->getConfig();
 		if (
-			$this->getConfig()->get( 'ConfirmAccountCaptchas' ) &&
-			ExtensionRegistry::getInstance()->isLoaded( 'ConfirmEdit' ) &&
-			!$reqUser->isAllowed( 'skipcaptcha' )
+			$config->get( 'ConfirmAccountCaptchas' ) &&
+			ExtensionRegistry::getInstance()->isLoaded( 'ConfirmEdit' )
 		) {
 			$captcha = CaptchaHooks::getInstance( CaptchaTriggers::CREATE_ACCOUNT );
-			if ( $captcha->triggersCaptcha( CaptchaTriggers::CREATE_ACCOUNT ) ) {
+			if (
+				!$captcha->canSkipCaptcha( $reqUser, $config ) &&
+				$captcha->triggersCaptcha( CaptchaTriggers::CREATE_ACCOUNT )
+			) {
 				$formInformation = $captcha->getFormInformation();
 				$formMetainfo = $formInformation;
 				unset( $formMetainfo['html'] );
