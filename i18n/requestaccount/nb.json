@@ -26,6 +26,7 @@
 	"requestaccount-bio-text": "Ta med alle kunnskaps- og ferdighetsrelevante detaljer i biografien din under.",
 	"requestaccount-bio-text-i": "'''Biografien din blir satt som startinnholdet for brukersiden din.'''\nForsikre deg om at du synes det er greit å publisere denne informasjonen.",
 	"requestaccount-real": "Virkelig navn (valgfritt):",
+	"requestaccount-real-i": "Virkelig navn er valgfritt. Hvis du velger å angi det, vil det bli brukt til å kreditere deg for arbeidet ditt.",
 	"requestaccount-same": "(samme som virkelig navn)",
 	"requestaccount-email": "E-postadresse:",
 	"requestaccount-reqtype": "Stilling:",
