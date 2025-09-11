@@ -56,5 +56,5 @@
 	"requestaccount-email-body": "Jemand, möglicherweise du mit der IP-Adresse $1, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit deiner E-Mail-Adresse beantragt.\n\nUm zu bestätigen, dass wirklich du dieses Konto bei {{SITENAME}} beantragt hast, öffne bitte folgenden Link in deinem Browser:\n\n$3\n\nWenn das Benutzerkonto erstellt wurde, bekommst du eine weitere E-Mail mit dem Passwort.\n\nWenn du das Benutzerkonto *nicht* beantragt hast, öffne den Link bitte nicht!\n\nZeitpunkt des Auslaufs des Bestätigungscodes: $4.",
 	"requestaccount-email-subj-admin": "[{{SITENAME}}] Antrag auf Benutzerkonto",
 	"requestaccount-email-body-admin": "$1 hat ein Benutzerkonto beantragt und wartet auf die Bestätigung.\nDie E-Mail-Adresse wurde bestätigt. Du kannst den Antrag hier bestätigen:\n\n$2",
-	"acct_request_throttle_hit": "Du hast bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, du kannst momentan keine weiteren beantragen."
+	"acct_request_throttle_hit": "{{#FORMAL:Du hast|Sie haben}} bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, {{#FORMAL:du kannst|Sie können}} momentan keine weiteren beantragen."
 }
