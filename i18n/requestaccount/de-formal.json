@@ -22,6 +22,5 @@
 	"requestaccount-sent": "Ihr Antrag wurde erfolgreich verschickt und muss nun noch überprüft werden.\nEine Bestätigungs-E-Mail wurde an Ihre E-Mail-Adresse gesendet.",
 	"requestaccount-econf": "Ihre E-Mail-Adresse wurde bestätigt und wird nun als solche in Ihrem Antrag auf ein Benutzerkonto geführt.",
 	"requestaccount-email-body": "Jemand, möglicherweise Sie mit der IP-Adresse $1, hat bei {{SITENAME}} das Benutzerkonto „$2“ mit Ihrer E-Mail-Adresse beantragt.\n\nUm zu bestätigen, dass wirklich Sie dieses Konto bei {{SITENAME}} beantragt haben, öffnen Sie bitte folgenden Link in Ihrem Browser:\n\n$3\n\nWenn das Benutzerkonto erstellt wurde, bekommen Sie eine weitere E-Mail mit dem Passwort.\n\nWenn Sie das Benutzerkonto *nicht* beantragt haben, öffnen Sie den Link bitte nicht!\n\nDieser Bestätigungscode wird am $5 um $6 Uhr ungültig.",
-	"requestaccount-email-body-admin": "$1 hat ein Benutzerkonto beantragt und wartet auf Bestätigung.\nDie E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen:\n\n$2",
-	"acct_request_throttle_hit": "Sie haben bereits {{PLURAL:$1|1 Benutzerkonto|$1 Benutzerkonten}} beantragt, Sie können momentan keine weiteren beantragen."
+	"requestaccount-email-body-admin": "$1 hat ein Benutzerkonto beantragt und wartet auf Bestätigung.\nDie E-Mail-Adresse wurde bestätigt. Sie können den Antrag hier bestätigen:\n\n$2"
 }
