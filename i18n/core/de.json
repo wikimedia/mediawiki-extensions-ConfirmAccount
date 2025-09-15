@@ -17,7 +17,7 @@
 		]
 	},
 	"confirmaccount-newrequests": "[[Special:ConfirmAccounts|{{PLURAL:$1|Ein offener, per E-Mail bestätigter Benutzerkontenantrag wartet|$1 offene, per E-Mail bestätigte Benutzerkontenanträge warten}}]] auf Bearbeitung. '''Bitte {{#FORMAL:kümmere dich|kümmern Sie sich}} darum. Vielen Dank.'''",
-	"requestaccount-loginnotice": "Um ein Benutzerkonto zu erhalten, musst du es '''[[Special:RequestAccount|beantragen]]'''.",
+	"requestaccount-loginnotice": "Um ein Benutzerkonto zu erhalten, {{#FORMAL:musst du|müssen Sie}} es '''[[Special:RequestAccount|beantragen]]'''.",
 	"action-confirmaccount": "Benutzerkontenanträge zu überprüfen und zu akzeptieren",
 	"right-confirmaccount": "Die [[Special:ConfirmAccounts|Liste der Benutzerkontenanträge]] einsehen",
 	"right-confirmaccount-notify": "Per E-Mail über neu genehmigte Kontoanträge benachrichtigt werden",
