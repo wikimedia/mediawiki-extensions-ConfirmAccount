@@ -89,5 +89,9 @@
 	"confirmaccount-email-body2": "Din forespørsel om en konto på {{SITENAME}} har blitt godkjent.\n\nKontonavn: $1\n\nPassord: $2\n\n$3\n\nAv sikkerhetsgrunner må du endre passordet etter første innlogging. Gå til {{fullurl:Special:UserLogin}} for å logge inn.",
 	"confirmaccount-email-body3": "Beklager, din forespørsel om kontoen «$1» på {{SITENAME}} har blitt avvist.\n\nDet er flere mulige grunner til at dette har skjedd. Du har muligens ikke fylt inn skjemaet korrekt, har ikke svart utfyllende nok, eller møter på en annen måte ikke kriteriene. Det kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.",
 	"confirmaccount-email-body4": "Beklager, din forespørsel om å få en konto ($1) på {{SITENAME}} har blitt avvist.\n\n$2\n\nDet kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.",
-	"confirmaccount-email-body5": "Før din forespørsel om en konto «$1» på {{SITENAME}} kan godkjennes, må du oppgi mer informasjon.\n\n$2\n\nDet kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken."
+	"confirmaccount-email-body5": "Før din forespørsel om en konto «$1» på {{SITENAME}} kan godkjennes, må du oppgi mer informasjon.\n\n$2\n\nDet kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.",
+	"confirmaccount-spam-link": "Spam",
+	"confirmaccount-mark-request-spam": "Merk forespørsel #$1 som spam?",
+	"confirmaccount-failed-to-mark": "Kunne ikke merke som spam: $1",
+	"confirmaccount-cannot-find-form": "Kunne ikke finne bekreftelsesskjemaet."
 }
