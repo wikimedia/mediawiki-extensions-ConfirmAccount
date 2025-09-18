@@ -92,6 +92,7 @@
 	"confirmaccount-email-body5": "Før din forespørsel om en konto «$1» på {{SITENAME}} kan godkjennes, må du oppgi mer informasjon.\n\n$2\n\nDet kan være kontaktlister på siden som du kan bruke for å finne ut mer om kontopolitikken.",
 	"confirmaccount-spam-link": "Spam",
 	"confirmaccount-mark-request-spam": "Merk forespørsel #$1 som spam?",
+	"confirmaccount-cannot-load-review": "Kunne ikke laste gjennomgangssiden.",
 	"confirmaccount-failed-to-mark": "Kunne ikke merke som spam: $1",
 	"confirmaccount-cannot-find-form": "Kunne ikke finne bekreftelsesskjemaet."
 }
