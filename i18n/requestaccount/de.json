@@ -26,7 +26,7 @@
 	"requestaccount-leg-person": "Persönliche Informationen",
 	"requestaccount-leg-other": "Weitere Informationen",
 	"requestaccount-leg-tos": "Nutzungsbedingungen",
-	"requestaccount-acc-text": "Wenn du diese Anfrage ausführst, wird dir einmal eine Bestätigungsnachricht an deine E-Mail-Adresse gesandt. Die Adresse wird nicht veröffentlicht.\nBitte reagiere darauf, indem du auf den in dieser Mail enthaltenen Bestätigungslink klickst.\nZum Schluss wird dir dein Passwort per E-Mail zugeschickt, sobald dein Konto angelegt wurde.",
+	"requestaccount-acc-text": "Wenn {{#FORMAL:du|Sie}} diese Anfrage {{#FORMAL:ausführst|ausführen}}, wird {{#FORMAL:dir|Ihnen}} einmal eine Bestätigungsnachricht an {{#FORMAL:deine|Ihre}} E-Mail-Adresse gesandt. Die Adresse wird nicht veröffentlicht.\nBitte {{#FORMAL:reagiere|reagieren Sie}} darauf, indem {{#FORMAL:du|Sie}} auf den in dieser Mail enthaltenen Bestätigungslink {{#FORMAL:klickst|klicken}}.\nZum Schluss wird {{#FORMAL:dir dein|Ihnen Ihr}} Passwort per E-Mail zugeschickt, sobald {{#FORMAL:dein|Ihr}} Konto angelegt wurde.",
 	"requestaccount-areas-text": "{{#FORMAL:Wähle|Wählen Sie}} die Themengebiete aus, in denen {{#FORMAL:du|Sie}} das meiste Fachwissen {{#FORMAL:hast|haben}} oder wo {{#FORMAL:du|Sie}} am meisten involviert sein {{#FORMAL:wirst|werden}}.",
 	"requestaccount-ext-text": "Die folgenden Informationen werden vertraulich behandelt und ausschließlich für diesen Antrag verwendet.\n{{#FORMAL:Du kannst Kontakt-Angaben|Sie können Kontaktangaben}} wie eine Telefonnummer machen, um die Bearbeitung {{#FORMAL:deines|Ihres}} Antrags zu vereinfachen.",
 	"requestaccount-bio-text": "{{#FORMAL:Versuche|Versuchen Sie}} alle relevanten Informationen in {{#FORMAL:deine|Ihre}} untenstehende Biografie aufzunehmen.",
