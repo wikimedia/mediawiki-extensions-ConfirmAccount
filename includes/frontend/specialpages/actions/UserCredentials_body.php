@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Html\Html;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserGroupManager;
 use MediaWiki\User\UserIdentityLookup;
 use Wikimedia\Rdbms\ILoadBalancer;

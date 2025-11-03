@@ -24,6 +24,7 @@ use MediaWiki\Auth\AuthenticationRequest;
 use MediaWiki\Auth\AuthenticationResponse;
 use MediaWiki\Auth\TemporaryPasswordAuthenticationRequest;
 use MediaWiki\Auth\UserDataAuthenticationRequest;
+use MediaWiki\Language\RawMessage;
 
 class ConfirmAccountPreAuthenticationProvider extends AbstractPreAuthenticationProvider {
 	const SESSION_INFO_KEY = 'ConfirmAccountRequestInfo';

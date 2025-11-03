@@ -2,6 +2,7 @@
 
 use MediaWiki\Html\Html;
 use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
 
 class ConfirmAccountsPage extends SpecialPage {
