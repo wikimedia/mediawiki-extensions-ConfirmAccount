@@ -18,7 +18,7 @@ class ConfirmAccountUIHooks implements
 	public function onSkinTemplateNavigation__Universal( $skin, &$links ): void {
 		# Add a link to Special:RequestAccount if a link exists for login
 		if ( isset( $links['user-menu']['login'] ) || isset( $links['user-menu']['login-private'] ) ) {
-			$links['user-menu']['requestaccount'] = [
+			$links['user-menu']['createaccount'] = [ // overwrite the normal createaccount
 				'text' => $skin->msg( 'requestaccount-login' )->text(),
 				'href' => SkinComponentUtils::makeSpecialUrl( 'RequestAccount' ),
 				'active' => $skin->getTitle()->isSpecial( 'RequestAccount' ),
