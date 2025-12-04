@@ -16,7 +16,8 @@
 			"Wilsonmess",
 			"Xiaomingyan",
 			"予弦",
-			"神樂坂秀吉"
+			"神樂坂秀吉",
+			"Peterxy12"
 		]
 	},
 	"requestaccount": "请求账号",
@@ -35,6 +36,7 @@
 	"requestaccount-bio-text": "尝试在下方您的个人简介中包含任何相关凭据。",
 	"requestaccount-bio-text-i": "'''您的简履将会成为您的用户页的内容。'''请确保您可以发布该等资讯。",
 	"requestaccount-real": "真实姓名（可选）：",
+	"requestaccount-real-i": "真实姓名为可选字段。若您提供真实姓名，会注明在您的作品上。",
 	"requestaccount-same": "（下同真实姓名）",
 	"requestaccount-email": "邮件地址：",
 	"requestaccount-reqtype": "位置：",
