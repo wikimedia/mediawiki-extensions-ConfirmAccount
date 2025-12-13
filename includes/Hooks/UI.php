@@ -102,6 +102,8 @@ class UI implements
 	public function onAuthChangeFormFields(
 		$requests, $fieldInfo, &$formDescriptor, $action
 	) {
+		global $wgHiddenPrefs;
+
 		if ( $action !== AuthManager::ACTION_CREATE ) {
 			return true;
 		}
@@ -140,13 +142,17 @@ class UI implements
 				: wfMessage( 'confirmaccount-mismatched' );
 		};
 
-		$formDescriptor['realname']['default'] = $accReq->getRealName();
-		$formDescriptor['realname']['readonly'] = true;
-		$formDescriptor['realname']['validation-callback'] = static function ( $v ) use ( $accReq ) {
-			return ( $v === $accReq->getRealName() )
-				? true
-				: wfMessage( 'confirmaccount-mismatched' );
-		};
+		// Only do this if we have the real names feature enabled
+		// @see https://phabricator.wikimedia.org/T157984
+		if ( !in_array( 'realname', $wgHiddenPrefs ?? [], true ) ) {
+			$formDescriptor['realname']['default'] = $accReq->getRealName();
+			$formDescriptor['realname']['readonly'] = true;
+			$formDescriptor['realname']['validation-callback'] = static function ( $v ) use ( $accReq ) {
+				return ( $v === $accReq->getRealName() )
+					? true
+					: wfMessage( 'confirmaccount-mismatched' );
+			};
+		}
 
 		$formDescriptor['accountrequestid'] = [
 			'name' => 'AccountRequestId',

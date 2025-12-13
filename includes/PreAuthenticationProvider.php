@@ -46,6 +46,8 @@ class PreAuthenticationProvider extends AbstractPreAuthenticationProvider {
 	 * @todo avoid using global WebRequest and use dedicated auth request class
 	 */
 	public function testForAccountCreation( $user, $creator, array $reqs ) {
+		global $wgHiddenPrefs;
+
 		$request = RequestContext::getMain()->getRequest();
 		$accReqId = $request->getInt( 'AccountRequestId' );
 		# For normal account creations, just check if the name is free
@@ -75,11 +77,15 @@ class PreAuthenticationProvider extends AbstractPreAuthenticationProvider {
 		$tmpPassAuthReq = AuthenticationRequest::getRequestByClass(
 			$reqs, TemporaryPasswordAuthenticationRequest::class );
 
+		$realNameMismatch = !in_array( 'realname', $wgHiddenPrefs ?? [], true ) &&
+			$usrDataAuthReq->realname !== $accountReq->getRealName();
+
 		# Make sure certain field were left unchanged from the account request
 		if (
 			!$tmpPassAuthReq ||
 			$usrDataAuthReq->email !== $accountReq->getEmail() ||
 			$usrDataAuthReq->realname !== $accountReq->getRealName() ||
+			$realNameMismatch ||
 			!$tmpPassAuthReq->mailpassword
 		) {
 			return StatusValue::newFatal( 'confirmaccount-mismatched-general' );
