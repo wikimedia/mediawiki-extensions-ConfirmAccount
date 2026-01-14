@@ -12,7 +12,8 @@
 			"Najami",
 			"Per",
 			"WikiPhoenix",
-			"Yupik"
+			"Yupik",
+			"Stefan2255"
 		]
 	},
 	"requestaccount": "Ansök om konto",
@@ -31,6 +32,7 @@
 	"requestaccount-bio-text": "Försök att ange relevanta meriter och referenser i biografin nedan.",
 	"requestaccount-bio-text-i": "'''Din biografi kommer att anges som det ursprungliga innehållet för din användarsida.'''\nSe till att du känner dig bekväm med att publicera sådan information.",
 	"requestaccount-real": "Riktigt namn (valfritt):",
+	"requestaccount-real-i": "Riktigt namn är valfritt. Om du väljer att ange det kommer det att användas för att ge dig erkännande för ditt arbete.",
 	"requestaccount-same": "(samma som ditt riktiga namn)",
 	"requestaccount-email": "E-postadress:",
 	"requestaccount-reqtype": "Ställning:",
