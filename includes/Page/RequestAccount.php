@@ -278,6 +278,7 @@ class RequestAccount extends SpecialPage {
 				!$captcha->canSkipCaptcha( $reqUser, $config ) &&
 				$captcha->triggersCaptcha( CaptchaTriggers::CREATE_ACCOUNT )
 			) {
+				$this->getOutput()->enableOOUI();
 				$formInformation = $captcha->getFormInformation();
 				$formMetainfo = $formInformation;
 				unset( $formMetainfo['html'] );
