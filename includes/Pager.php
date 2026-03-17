@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\ConfirmAccount;
 
 use MediaWiki\Pager\ReverseChronologicalPager;
+use MediaWiki\Title\Title;
 use stdClass;
 
 /**

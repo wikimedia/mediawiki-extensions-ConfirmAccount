@@ -37,7 +37,6 @@ class Special implements SpecialPageBeforeExecuteHook {
 	 * @param string $_subPage
 	 *
 	 * @return false
-	 * @throws MWException
 	 */
 	public function onSpecialPageBeforeExecute( $special, $_subPage ) {
 		// Redirect direct visits on Special:CreateAccount to Special:RequestAccount
