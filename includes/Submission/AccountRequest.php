@@ -13,6 +13,7 @@ use MediaWiki\Extension\ConfirmEdit\CaptchaTriggers;
 use MediaWiki\Extension\ConfirmEdit\Hooks as CaptchaHooks;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Sanitizer;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\User\User;
 use MediaWiki\User\UserRigorOptions;
 
