@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -10,5 +11,5 @@
 	"right-confirmaccount-notify": "Primanje obavijesti putem e-pošte o novoodobrenim zahtjevima za račun",
 	"action-requestips": "pregledavanje IP adresa zahtijevatelja pri radu zahtjevanjh računa",
 	"right-requestips": "Pregledavanje IP adresa zahtijevatelja pri radu zahtjevanjh računa",
-	"action-lookupcredentials": "pregledavanje korisničkih ovlaštenja"
+	"action-lookupcredentials": "pregledate korisničke akreditive"
 }
