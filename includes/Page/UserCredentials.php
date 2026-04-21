@@ -39,10 +39,15 @@ class UserCredentials extends SpecialPage {
 		UserGroupManager $userGroupManager,
 		UserIdentityLookup $userIdentityLookup
 	) {
-		parent::__construct( 'UserCredentials', 'lookupcredentials' );
+		parent::__construct( 'UserCredentials' );
 		$this->loadBalancer = $loadBalancer;
 		$this->userGroupManager = $userGroupManager;
 		$this->userIdentityLookup = $userIdentityLookup;
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'lookupcredentials';
 	}
 
 	public function userCanExecute( User $user ) {

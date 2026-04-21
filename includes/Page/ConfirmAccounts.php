@@ -40,9 +40,14 @@ class ConfirmAccounts extends SpecialPage {
 		UserFactory $userFactory,
 		WANObjectCache $cache
 	) {
-		parent::__construct( 'ConfirmAccounts', 'confirmaccount' );
+		parent::__construct( 'ConfirmAccounts' );
 		$this->userFactory = $userFactory;
 		$this->cache = $cache;
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'confirmaccount';
 	}
 
 	public function doesWrites() {
