@@ -95,5 +95,9 @@
 	"confirmaccount-email-body3": "죄송합니다. \"$1\" 계정에 대한 요청이 {{SITENAME}}에서 거절됐습니다.\n\n여기에는 몇 가지 이유가 있을 수 있을 수 있습니다.\n양식을 올바르게 채우지 않았거나, 충분한 길이의 답변을 제공하지 않았기 때문일 수도 있으며, 정책 기준을 충족하지 않았을 수도 있습니다.\n사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다.",
 	"confirmaccount-email-body4": "죄송합니다. \"$1\" 계정에 대한 요청이 {{SITENAME}}에서 거절됐습니다.\n\n$2\n\n사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다.",
 	"confirmaccount-email-body5": "\"$1\" 계정에 대한 요청이  {{SITENAME}}에서 승인되기 전에 추가적인 정보를 제공해주셔야 합니다.\n\n$2\n\n\n사용자 정책에 대해서 더 알고 싶으시다면 아래에 사용할 수 있는 연락처 목록이 있습니다.",
-	"confirmaccount-spam-link": "스팸"
+	"confirmaccount-spam-link": "스팸",
+	"confirmaccount-mark-request-spam": "#$1 요청을 스팸으로 표시합니까?",
+	"confirmaccount-cannot-load-review": "검토 페이지를 불러오지 못했습니다.",
+	"confirmaccount-failed-to-mark": "스팸으로 표시하는데 실패: $1",
+	"confirmaccount-cannot-find-form": "승인 양식을 찾지 못했습니다."
 }
