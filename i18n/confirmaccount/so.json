@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Abshirdheere"
+			"Abshirdheere",
+			"AhmedG612"
 		]
 	},
-	"confirmaccount-name": "Magaca gudagalka"
+	"confirmaccount-name": "Magaca gudagalka",
+	"confirmaccount-spam-link": "Spam",
+	"confirmaccount-mark-request-spam": "Ma calaamadaynaysaa codsiga #$1 inuu yahay spam?",
+	"confirmaccount-cannot-load-review": "Lama soo shubi karin bogga dib u eegista.",
+	"confirmaccount-failed-to-mark": "Kuma guulaysan in loo calaamadiyo spam: $1",
+	"confirmaccount-cannot-find-form": "Lama helin foomka xaqiijinta."
 }
