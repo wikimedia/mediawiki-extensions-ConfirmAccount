@@ -11,7 +11,8 @@
 			"SaldırganSincap",
 			"Suelnur",
 			"ToprakM",
-			"Vito Genovese"
+			"Vito Genovese",
+			"HakanIST"
 		]
 	},
 	"requestaccount": "Hesap iste",
@@ -30,6 +31,7 @@
 	"requestaccount-bio-text": "Biyografinize aşağıdaki ilgili bilgileri eklemeyi deneyin.",
 	"requestaccount-bio-text-i": "'''Biyografiniz, kullanıcı sayfanız için ilk içerik olarak ayarlanacaktır.'''\nBu tür bilgileri yayınladığınızdan emin olun.",
 	"requestaccount-real": "Gerçek ad (isteğe bağlı):",
+	"requestaccount-real-i": "Gerçek adınız isteğe bağlıdır.\nEğer gerçek adınızı belirtirseniz, çalışmalarınıza atıfta bulunulması için de kullanılacaktır.",
 	"requestaccount-same": "(gerçek isim ile aynı)",
 	"requestaccount-email": "E-posta adresi:",
 	"requestaccount-reqtype": "Konum:",
