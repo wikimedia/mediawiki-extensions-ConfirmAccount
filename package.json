@@ -6,8 +6,8 @@
 		"lint:fix": "grunt eslint:all --fix"
 	},
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.31.0",
-		"grunt": "1.6.2",
+		"eslint-config-wikimedia": "0.32.4",
+		"grunt": "1.6.3",
 		"grunt-banana-checker": "0.13.0",
 		"grunt-eslint": "24.3.0"
 	}
