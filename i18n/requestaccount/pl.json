@@ -21,7 +21,7 @@
 	"requestaccount-login": "Złóż wniosek o konto",
 	"requestaccount-text": "'''Wypełnij i wyślij poniższy formularz jeśli chcesz mieć własne konto użytkownika'''.\n\nZanim jednak to zrobisz, zapoznaj się z [[{{MediaWiki:Requestaccount-page}}|zasadami korzystania z konta]]\n\nJeśli wniosek o założenie konta zostanie zaakceptowany, otrzymasz wiadomość e‐mail i będziesz mógł [[Special:UserLogin|się zalogować]].",
 	"requestaccount-page": "{{ns:project}}:Zasady użytkowania",
-	"requestaccount-dup": "'''Uwaga: Jesteś już zalogowany na zarejestrowane konto.'''",
+	"requestaccount-dup": "'''Uwaga: Zalogowano Cię już przy użyciu zarejestrowanego konta.'''",
 	"requestaccount-leg-user": "Konto użytkownika",
 	"requestaccount-leg-areas": "Główne obszary zainteresowań",
 	"requestaccount-leg-person": "Informacje osobiste",
