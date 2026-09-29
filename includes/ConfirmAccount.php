@@ -14,7 +14,6 @@ use MediaWiki\User\UserArray;
 use MediaWiki\User\UserArrayFromResult;
 use MediaWiki\WikiMap\WikiMap;
 use MWCryptRand;
-use UploadBase;
 use Wikimedia\FileBackend\FSFileBackend;
 use Wikimedia\Rdbms\FakeResultWrapper;
 
@@ -250,7 +249,9 @@ class ConfirmAccount {
 		if ( $wgVerifyMimeType ) {
 			wfDebug( "\n\nmime: <$mime> extension: <$extension>\n\n" );
 			# Check mime type against file extension
-			if ( !UploadBase::verifyExtension( $mime, $extension ) ) {
+			if ( !MediaWikiServices::getInstance()->getUploadVerification()
+				->verifyExtension( $mime, $extension )
+			) {
 				return Status::newFatal( 'filetype-mime-mismatch', $extension, $mime );
 			}
 			# Check mime type blacklist
