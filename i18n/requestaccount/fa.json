@@ -7,6 +7,7 @@
 			"Ebrahim",
 			"Ebraminio",
 			"Jeeputer",
+			"LProfo",
 			"Mjbmr",
 			"Reza1615"
 		]
@@ -28,7 +29,7 @@
 	"requestaccount-bio-text-i": "'''شرح‌حال شما به عنوان مضمون اولیه برای صفحهٔ کاربری‌تان تنظیم خواهد شد.'''\nمطمئن شوید که در انتشار از جمله اطلاعات آسوده هستید.",
 	"requestaccount-real": "نام واقعی:",
 	"requestaccount-same": "(همان نام واقعی)",
-	"requestaccount-email": "آدرس ایمیل:",
+	"requestaccount-email": "نشانی ایمیل:",
 	"requestaccount-reqtype": "موقعیت:",
 	"requestaccount-level-0": "مؤلف",
 	"requestaccount-level-1": "ویرایشگر",
