@@ -1,9 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
+	"confirmaccount-newrequests": "'''$1''' پرانېستی برېښليک تاييد شوی\n[[Special:ConfirmAccounts|گڼون {{PLURAL:$1|غوښتنه په تمه ده|غوښتنې په تمه دي}}]]. '''ستاسو پاملرنې ته اړتيا ده!'''",
+	"requestaccount-loginnotice": "د کارن گنون ترلاسه کولو لپاره تاسو بايد '''[[Special:RequestAccount|غوښتنه وکړئ]]'''.",
 	"action-confirmaccount": "گڼونونه بياکتل او منل",
-	"right-confirmaccount": "[[Special:ConfirmAccounts|ليکه د غوښتل شوي گڼونونو په مرسته]] کتل"
+	"right-confirmaccount": "[[Special:ConfirmAccounts|ليکه د غوښتل شوي گڼونونو په مرسته]] کتل",
+	"right-confirmaccount-notify": "د نويو منل‌شويو گڼون غوښتنو په اړه د برېښليک له لارې خبر شئ",
+	"action-requestips": "د غوښتل‌شويو گڼونونو د پروسس کولو پرمهال د غوښتونکي وېبپته کتل",
+	"right-requestips": "د غوښتل‌شويو گڼونونو د پروسس کولو پرمهال د غوښتونکي وېبپته کتل",
+	"action-lookupcredentials": "د کارن باورليکونه کتل",
+	"right-lookupcredentials": "د کارن [[Special:UserCredentials|باورليکونه]] کتل"
 }
