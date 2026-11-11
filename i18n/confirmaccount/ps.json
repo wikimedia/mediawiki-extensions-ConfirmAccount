@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ahmed-Najib-Biabani-Ibrahimkhel",
-			"شاه زمان پټان"
+			"شاه زمان پټان",
+			"باران"
 		]
 	},
 	"confirmaccounts": "گڼون غوښتنې تاييدول",
@@ -49,16 +50,17 @@
 	"confirmaccount-autorej": "(دا غوښتنه د ناکارندتيا له کبله په خپلکاري ډول ناگاره شوې ده)",
 	"confirmaccount-held": "د [[User:$1|$1]] له‌خوا په $3 نېټه $4 بجو \"په تمه‌شوې\" {{GENDER:$1|په‌نښه‌شوې}}",
 	"confirmaccount-blockip": "وېب پته باندې بنديز لگول",
-	"confirmaccount-create": "گڼون (گڼون جوړول)",
+	"confirmaccount-create": "منل (گڼون جوړول)",
 	"confirmaccount-deny": "ردول (له لړليکه ويستل)",
 	"confirmaccount-hold": "په تمه ساتل",
 	"confirmaccount-spam": "بې‌کارليک (برېښليک مه لېږئ)",
 	"confirmaccount-reason": "څرگندونه (د ردولو او برېښليکونو په‌تمه‌ساتلو په گډون)",
-	"confirmaccount-ip": "IP پته:",
-	"confirmaccount-agent": "کارن-پلاوی:",
+	"confirmaccount-ip": "وېب پته:",
+	"confirmaccount-xff": "X-لېږل شوی لپاره د:",
+	"confirmaccount-agent": "کارن پلاوی:",
 	"confirmaccount-submit": "تاييد",
 	"confirmaccount-rej": "د گڼون غوښتنه رد شوه.",
-	"confirmaccount-summary": "نوي کارن لپاهر کارن مخ جوړول.",
+	"confirmaccount-summary": "نوي کارن لپاره کارن مخ جوړول.",
 	"confirmaccount-wsum": "ښه راغلئ!",
 	"confirmaccount-email-subj": "د {{SITENAME}} د گڼون غوښتنه",
 	"confirmaccount-email-body": "په {{SITENAME}} باندې د يوه گڼون لپاره غوښتنه مو ومنل شوه .\n\nگڼون نوم: $1\n\nپټنوم: $2\n\nد تحفظ د سببونو لپاره تاسو ته پکار ده چې د وروسته له دې چې د لومړي ځل لپاره غونډال ته ننوتلی نو مهرباني وکړی خپل پټنوم بدل کړی. د دې لپاره چې غونډال ته ننوځی، مهرباني وکړی {{fullurl:Special:UserLogin}} ولاړ شی.",
